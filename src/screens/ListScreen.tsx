@@ -8,8 +8,9 @@ import {
   View,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation, useRoute, RouteProp } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { TabParamList } from '../navigation/types';
 import { Screen } from '../components/Screen';
 import { PlaceCard } from '../components/PlaceCard';
 import { EmptyState } from '../components/EmptyState';
@@ -25,9 +26,11 @@ import { distanceKm } from '../utils/geo';
 import { RootStackParamList } from '../navigation/types';
 
 type Nav = NativeStackNavigationProp<RootStackParamList>;
+type ListRoute = RouteProp<TabParamList, 'List'>;
 
 export function ListScreen() {
   const navigation = useNavigation<Nav>();
+  const route = useRoute<ListRoute>();
   const { filters, setFilter } = useFilters();
   const { places, loading, error, reload } = usePlaces(filters);
   const { location } = useSharedLocation();
@@ -39,6 +42,15 @@ export function ListScreen() {
   // Local input text — decoupled from filters.query so we can debounce.
   const [inputText, setInputText] = useState(filters.query ?? '');
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const searchRef = useRef<TextInput>(null);
+
+  // Auto-focus the search input when arriving from the Home search bar.
+  useEffect(() => {
+    if (route.params?.focus) {
+      const timer = setTimeout(() => searchRef.current?.focus(), 100);
+      return () => clearTimeout(timer);
+    }
+  }, [route.params?.focus]);
 
   useEffect(() => {
     if (debounceRef.current) clearTimeout(debounceRef.current);
@@ -112,6 +124,7 @@ export function ListScreen() {
           style={styles.searchInput}
           placeholder={t.list.searchPlaceholder}
           placeholderTextColor={colors.textMuted}
+          ref={searchRef}
           value={inputText}
           onChangeText={setInputText}
           textAlign="right"
