@@ -36,7 +36,9 @@ export function ListScreen() {
   const { location, status: locationStatus, request: requestLocation } = useSharedLocation();
 
   const [sheetOpen, setSheetOpen] = useState(false);
-  const [sortByDistance, setSortByDistance] = useState(false);
+  const [sortByDistance, setSortByDistance] = useState(
+    () => locationStatus === 'granted' && !!location,
+  );
   const [isRefreshing, setIsRefreshing] = useState(false);
 
   // Auto-enable distance sort when location becomes available
