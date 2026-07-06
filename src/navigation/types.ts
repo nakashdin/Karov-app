@@ -9,6 +9,8 @@ export type TabParamList = {
 
 /** Root stack routes (tabs + pushed screens). */
 export type RootStackParamList = {
+  Splash: undefined;
+  Login: undefined;
   Tabs: NavigatorScreenParams<TabParamList>;
   PlaceDetail: { id: string };
   Report: { placeId: string };

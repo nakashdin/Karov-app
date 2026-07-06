@@ -1,13 +1,18 @@
 {
   "expo": {
-    "name": "kosher-app",
+    "name": "קרוב",
     "slug": "kosher-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "scheme": "kosherapp",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.karov.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "האפליקציה משתמשת במיקום כדי להציג מקומות כשרים קרובים אליך."
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -16,10 +21,31 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.karov.app",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/favicon.png",
+      "name": "קרוב",
+      "shortName": "קרוב",
+      "description": "מוצא לך מקומות כשרים קרובים אליך",
+      "lang": "he",
+      "dir": "rtl",
+      "themeColor": "#1E7A46",
+      "backgroundColor": "#0F3D22"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "האפליקציה משתמשת במיקום כדי להציג מקומות כשרים קרובים אליך."
+        }
+      ],
+      "expo-font"
+    ]
   }
 }
