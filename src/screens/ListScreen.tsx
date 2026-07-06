@@ -159,20 +159,14 @@ export function ListScreen() {
         </Pressable>
       </View>
 
-      {/* Location denied banner */}
-      {locationStatus === 'denied' && (
-        <View style={styles.locationBanner}>
-          <Ionicons name="location-outline" size={16} color="#92400e" />
-          <Text style={styles.locationBannerText}>
-            כדי לראות מקומות קרובים, הפעל מיקום בהגדרות הטלפון ← פרטיות ← שירותי מיקום ← Safari
-          </Text>
-        </View>
-      )}
-      {locationStatus === 'idle' && (
+      {/* Location banner */}
+      {(locationStatus === 'denied' || locationStatus === 'idle') && (
         <Pressable style={styles.locationBanner} onPress={requestLocation}>
           <Ionicons name="location-outline" size={16} color="#92400e" />
           <Text style={styles.locationBannerText}>
-            הפעל שירותי מיקום כדי לראות מקומות קרובים אליך
+            {locationStatus === 'denied'
+              ? 'הפעלת מיקום בהגדרות? לחץ כאן לנסות שוב'
+              : 'הפעל שירותי מיקום כדי לראות מקומות קרובים אליך'}
           </Text>
           <Ionicons name="chevron-back" size={14} color="#92400e" />
         </Pressable>
