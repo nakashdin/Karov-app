@@ -61,7 +61,7 @@ export function HomeScreen() {
 
   const onWhatsAround = async () => {
     await request();
-    navigation.navigate('Tabs', { screen: 'Map' });
+    navigation.navigate('Tabs', { screen: 'List' });
   };
 
   const openType = (placeType: PlaceType) => {
