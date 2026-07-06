@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
-import * as Location from 'expo-location';
+import { Platform } from 'react-native';
 import { GeoPoint } from '../types';
 
 export type LocationStatus =
@@ -12,14 +12,41 @@ export type LocationStatus =
 interface UseLocationResult {
   status: LocationStatus;
   location: GeoPoint | null;
-  /** Ask for permission and fetch the current position. */
   request: () => Promise<void>;
 }
 
-/**
- * Foreground location permission + current position.
- * Works in Expo Go (basic foreground access is supported).
- */
+async function requestNative(
+  setStatus: (s: LocationStatus) => void,
+  setLocation: (g: GeoPoint) => void,
+) {
+  const Location = await import('expo-location');
+  const { status: perm } = await Location.requestForegroundPermissionsAsync();
+  if (perm !== 'granted') { setStatus('denied'); return; }
+  const pos = await Location.getCurrentPositionAsync({
+    accuracy: Location.Accuracy.Balanced,
+  });
+  setLocation({ latitude: pos.coords.latitude, longitude: pos.coords.longitude });
+  setStatus('granted');
+}
+
+async function requestWeb(
+  setStatus: (s: LocationStatus) => void,
+  setLocation: (g: GeoPoint) => void,
+) {
+  if (!navigator.geolocation) { setStatus('denied'); return; }
+  return new Promise<void>((resolve) => {
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        setLocation({ latitude: pos.coords.latitude, longitude: pos.coords.longitude });
+        setStatus('granted');
+        resolve();
+      },
+      () => { setStatus('denied'); resolve(); },
+      { enableHighAccuracy: false, timeout: 10000 },
+    );
+  });
+}
+
 export function useLocation(autoRequest = false): UseLocationResult {
   const [status, setStatus] = useState<LocationStatus>('idle');
   const [location, setLocation] = useState<GeoPoint | null>(null);
@@ -27,22 +54,11 @@ export function useLocation(autoRequest = false): UseLocationResult {
   const request = useCallback(async () => {
     try {
       setStatus('requesting');
-      const { status: perm } =
-        await Location.requestForegroundPermissionsAsync();
-
-      if (perm !== 'granted') {
-        setStatus('denied');
-        return;
+      if (Platform.OS === 'web') {
+        await requestWeb(setStatus, setLocation);
+      } else {
+        await requestNative(setStatus, setLocation);
       }
-
-      const pos = await Location.getCurrentPositionAsync({
-        accuracy: Location.Accuracy.Balanced,
-      });
-      setLocation({
-        latitude: pos.coords.latitude,
-        longitude: pos.coords.longitude,
-      });
-      setStatus('granted');
     } catch {
       setStatus('error');
     }
