@@ -1,24 +1,40 @@
-import React, { createContext, useContext, ReactNode } from 'react';
-import { useLocation } from '../hooks/useLocation';
+import React, { createContext, useContext, useState, ReactNode } from 'react';
 import { GeoPoint } from '../types';
-import { LocationStatus } from '../hooks/useLocation';
+
+export type LocationStatus = 'idle' | 'requesting' | 'granted' | 'denied' | 'error';
 
 interface LocationContextValue {
   status: LocationStatus;
   location: GeoPoint | null;
-  request: () => Promise<void>;
+  request: () => void;
 }
 
 const LocationContext = createContext<LocationContextValue | null>(null);
 
-/**
- * Shares a single location/permission state across all screens, so requesting
- * location on Home (e.g. "מה יש סביבי?") is reflected on Map, List and Detail.
- */
 export function LocationProvider({ children }: { children: ReactNode }) {
-  const value = useLocation(false);
+  const [status, setStatus] = useState<LocationStatus>('idle');
+  const [location, setLocation] = useState<GeoPoint | null>(null);
+
+  const request = () => {
+    if (!navigator.geolocation) {
+      setStatus('denied');
+      return;
+    }
+    setStatus('requesting');
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        setLocation({ latitude: pos.coords.latitude, longitude: pos.coords.longitude });
+        setStatus('granted');
+      },
+      () => {
+        setStatus('denied');
+      },
+      { enableHighAccuracy: false, timeout: 10000 },
+    );
+  };
+
   return (
-    <LocationContext.Provider value={value}>
+    <LocationContext.Provider value={{ status, location, request }}>
       {children}
     </LocationContext.Provider>
   );
@@ -26,8 +42,6 @@ export function LocationProvider({ children }: { children: ReactNode }) {
 
 export function useSharedLocation(): LocationContextValue {
   const ctx = useContext(LocationContext);
-  if (!ctx) {
-    throw new Error('useSharedLocation must be used within a LocationProvider');
-  }
+  if (!ctx) throw new Error('useSharedLocation must be used within LocationProvider');
   return ctx;
 }
