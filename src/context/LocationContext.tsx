@@ -16,7 +16,7 @@ const LocationContext = createContext<LocationContextValue | null>(null);
  * location on Home (e.g. "מה יש סביבי?") is reflected on Map, List and Detail.
  */
 export function LocationProvider({ children }: { children: ReactNode }) {
-  const value = useLocation(true); // auto-request on mount
+  const value = useLocation(false);
   return (
     <LocationContext.Provider value={value}>
       {children}
