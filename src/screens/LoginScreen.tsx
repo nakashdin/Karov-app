@@ -54,7 +54,7 @@ export function LoginScreen() {
       AUTH_KEY,
       JSON.stringify({ email: email.trim(), name: name.trim() || email.split('@')[0], type: 'user' }),
     );
-    navigation.replace('Tabs', { screen: 'Home' });
+    navigation.replace('LocationPermission');
   };
 
   const handleGoogle = () => {
@@ -69,7 +69,7 @@ export function LoginScreen() {
 
   const handleGuest = async () => {
     await AsyncStorage.setItem(AUTH_KEY, JSON.stringify({ type: 'guest', name: 'אורח' }));
-    navigation.replace('Tabs', { screen: 'Home' });
+    navigation.replace('LocationPermission');
   };
 
   return (

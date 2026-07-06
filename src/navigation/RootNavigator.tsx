@@ -9,6 +9,7 @@ import { ReportScreen } from '../screens/ReportScreen';
 import { FavoritesScreen } from '../screens/FavoritesScreen';
 import { SplashScreen } from '../screens/SplashScreen';
 import { LoginScreen } from '../screens/LoginScreen';
+import { LocationPermissionScreen } from '../screens/LocationPermissionScreen';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -33,6 +34,11 @@ export function RootNavigator() {
         name="Login"
         component={LoginScreen}
         options={{ headerShown: false, animation: 'fade' }}
+      />
+      <Stack.Screen
+        name="LocationPermission"
+        component={LocationPermissionScreen}
+        options={{ headerShown: false, animation: 'slide_from_left' }}
       />
       <Stack.Screen
         name="Tabs"

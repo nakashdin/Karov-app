@@ -11,6 +11,7 @@ export type TabParamList = {
 export type RootStackParamList = {
   Splash: undefined;
   Login: undefined;
+  LocationPermission: undefined;
   Tabs: NavigatorScreenParams<TabParamList>;
   PlaceDetail: { id: string };
   Report: { placeId: string };
