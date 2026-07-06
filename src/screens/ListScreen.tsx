@@ -36,17 +36,10 @@ export function ListScreen() {
   const { location, status: locationStatus, request: requestLocation } = useSharedLocation();
 
   const [sheetOpen, setSheetOpen] = useState(false);
-  const [sortByDistance, setSortByDistance] = useState(
-    () => locationStatus === 'granted' && !!location,
-  );
   const [isRefreshing, setIsRefreshing] = useState(false);
 
-  // Auto-enable distance sort when location becomes available
-  useEffect(() => {
-    if (locationStatus === 'granted' && location) {
-      setSortByDistance(true);
-    }
-  }, [locationStatus, location]);
+  // Always sort by distance when location is available
+  const sortByDistance = !!location;
 
   // Local input text — decoupled from filters.query so we can debounce.
   const [inputText, setInputText] = useState(filters.query ?? '');
@@ -174,15 +167,12 @@ export function ListScreen() {
         </Pressable>
       )}
 
-      {/* Result count + sort toggle */}
+      {/* Result count + sort indicator */}
       <View style={styles.metaRow}>
         <Text style={styles.resultCount}>
           {t.list.resultsCount(places.length)}
         </Text>
-        <Pressable
-          style={styles.sortToggle}
-          onPress={() => setSortByDistance((v) => !v)}
-        >
+        <View style={styles.sortToggle}>
           <Ionicons
             name={sortByDistance ? 'navigate' : 'text'}
             size={14}
@@ -191,7 +181,7 @@ export function ListScreen() {
           <Text style={styles.sortText}>
             {sortByDistance ? t.list.sortByDistance : t.list.sortByName}
           </Text>
-        </Pressable>
+        </View>
       </View>
 
       {loading && !isRefreshing && places.length === 0 ? (
