@@ -2,5 +2,6 @@
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "strict": true
-  }
+  },
+  "exclude": ["importers", "scripts", "research", "node_modules"]
 }

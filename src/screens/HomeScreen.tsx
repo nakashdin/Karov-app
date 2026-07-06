@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import {
   Pressable,
   ScrollView,
@@ -6,6 +6,7 @@ import {
   Text,
   View,
 } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Ionicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
@@ -23,8 +24,8 @@ import { RootStackParamList } from '../navigation/types';
 
 type Nav = NativeStackNavigationProp<RootStackParamList>;
 
-function getGreeting(): string {
-  const day = new Date().getDay(); // 0=Sun … 6=Sat
+function getDayGreeting(): string {
+  const day = new Date().getDay();
   return day === 5 || day === 6 ? 'שבת שלום' : 'שבוע טוב';
 }
 
@@ -33,6 +34,17 @@ export function HomeScreen() {
   const { places, loading } = usePlaces();
   const { status, location, request } = useSharedLocation();
   const { setFilters } = useFilters();
+  const [userName, setUserName] = useState<string | null>(null);
+
+  useEffect(() => {
+    AsyncStorage.getItem('@karov/auth').then((raw) => {
+      if (!raw) return;
+      try {
+        const auth = JSON.parse(raw);
+        if (auth.name && auth.type !== 'guest') setUserName(auth.name);
+      } catch {}
+    });
+  }, []);
 
   const nearby = useMemo(() => {
     const list = [...places];
@@ -63,14 +75,17 @@ export function HomeScreen() {
         contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}
       >
-        {/* Header — centered brand with bsd/greeting row above */}
+        {/* Header */}
         <View style={styles.header}>
           <View style={styles.headerTopRow}>
-            {/* bsd on LEFT, greeting on RIGHT */}
             <Text style={styles.bsd}>בס״ד</Text>
-            <Text style={styles.greeting}>{getGreeting()}</Text>
+            <Text style={styles.greeting}>{getDayGreeting()}</Text>
           </View>
-          <Text style={styles.title}>{t.home.title}</Text>
+          {userName ? (
+            <Text style={styles.title}>שלום, {userName} 👋</Text>
+          ) : (
+            <Text style={styles.title}>{t.home.title}</Text>
+          )}
           <Text style={styles.subtitle}>{t.home.subtitle}</Text>
         </View>
 

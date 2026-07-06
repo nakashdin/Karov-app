@@ -50,6 +50,15 @@ export function PlaceDetailScreen() {
   useEffect(() => {
     navigation.setOptions({
       title: place?.name ?? '',
+      headerLeft: () => (
+        <Pressable
+          onPress={() => navigation.goBack()}
+          hitSlop={12}
+          style={{ paddingEnd: 8 }}
+        >
+          <Ionicons name="chevron-forward" size={26} color={colors.primary} />
+        </Pressable>
+      ),
       headerRight: () => (
         <Pressable onPress={() => toggleFavorite(params.id)} hitSlop={10}>
           <Ionicons

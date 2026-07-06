@@ -33,11 +33,18 @@ export function ListScreen() {
   const route = useRoute<ListRoute>();
   const { filters, setFilter } = useFilters();
   const { places, loading, error, reload } = usePlaces(filters);
-  const { location } = useSharedLocation();
+  const { location, status: locationStatus, request: requestLocation } = useSharedLocation();
 
   const [sheetOpen, setSheetOpen] = useState(false);
   const [sortByDistance, setSortByDistance] = useState(false);
   const [isRefreshing, setIsRefreshing] = useState(false);
+
+  // Auto-enable distance sort when location becomes available
+  useEffect(() => {
+    if (locationStatus === 'granted' && location) {
+      setSortByDistance(true);
+    }
+  }, [locationStatus, location]);
 
   // Local input text — decoupled from filters.query so we can debounce.
   const [inputText, setInputText] = useState(filters.query ?? '');
@@ -102,18 +109,20 @@ export function ListScreen() {
 
   return (
     <Screen padded>
-      {filters.placeType ? (
-        <Pressable
-          style={styles.backRow}
-          onPress={() => navigation.navigate('Tabs', { screen: 'Home' })}
-          hitSlop={8}
-        >
-          <Ionicons name="chevron-forward" size={18} color={colors.primary} />
-          <Text style={styles.backText}>חזרה</Text>
-        </Pressable>
-      ) : null}
-
       <View style={styles.titleRow}>
+        {filters.placeType ? (
+          <Pressable
+            style={styles.backBtn}
+            onPress={() => {
+              setFilter('placeType', null);
+              navigation.navigate('Tabs', { screen: 'Home' });
+            }}
+            hitSlop={12}
+          >
+            <Ionicons name="chevron-forward" size={20} color={colors.primary} />
+            <Text style={styles.backText}>בית</Text>
+          </Pressable>
+        ) : <View />}
         <Text style={styles.title}>{screenTitle}</Text>
       </View>
 
@@ -149,6 +158,17 @@ export function ListScreen() {
           {activeCount > 0 && <View style={styles.filterDot} />}
         </Pressable>
       </View>
+
+      {/* Location denied banner */}
+      {locationStatus === 'denied' && (
+        <Pressable style={styles.locationBanner} onPress={requestLocation}>
+          <Ionicons name="location-outline" size={16} color="#92400e" />
+          <Text style={styles.locationBannerText}>
+            הפעל שירותי מיקום כדי לראות מקומות קרובים אליך
+          </Text>
+          <Ionicons name="chevron-back" size={14} color="#92400e" />
+        </Pressable>
+      )}
 
       {/* Result count + sort toggle */}
       <View style={styles.metaRow}>
@@ -209,22 +229,11 @@ export function ListScreen() {
 }
 
 const styles = StyleSheet.create({
-  backRow: {
+  titleRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    alignSelf: 'flex-start',
-    gap: 2,
+    justifyContent: 'space-between',
     paddingTop: spacing.md,
-    paddingBottom: spacing.sm,
-  },
-  backText: {
-    fontSize: 15,
-    fontWeight: '600',
-    color: colors.primary,
-  },
-
-  titleRow: {
-    paddingTop: spacing.xs,
     paddingBottom: spacing.lg,
   },
   title: {
@@ -233,6 +242,21 @@ const styles = StyleSheet.create({
     letterSpacing: -0.8,
     color: colors.text,
     textAlign: 'right',
+    flex: 1,
+  },
+  backBtn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 2,
+    backgroundColor: colors.primaryLight,
+    paddingVertical: 6,
+    paddingHorizontal: 10,
+    borderRadius: radius.pill,
+  },
+  backText: {
+    fontSize: 14,
+    fontWeight: '600',
+    color: colors.primary,
   },
 
   // ── Search pill ─────────────────────────────────────────
@@ -274,6 +298,27 @@ const styles = StyleSheet.create({
     backgroundColor: colors.primary,
     borderWidth: 1,
     borderColor: colors.surface,
+  },
+
+  // ── Location banner ─────────────────────────────────────
+  locationBanner: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    backgroundColor: '#fef3c7',
+    borderRadius: 10,
+    paddingVertical: 10,
+    paddingHorizontal: 14,
+    marginBottom: spacing.md,
+    borderWidth: 1,
+    borderColor: '#fde68a',
+  },
+  locationBannerText: {
+    flex: 1,
+    fontSize: 13,
+    fontWeight: '500',
+    color: '#92400e',
+    textAlign: 'right',
   },
 
   // ── Meta row ────────────────────────────────────────────
