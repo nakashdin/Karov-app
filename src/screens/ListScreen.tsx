@@ -161,6 +161,14 @@ export function ListScreen() {
 
       {/* Location denied banner */}
       {locationStatus === 'denied' && (
+        <View style={styles.locationBanner}>
+          <Ionicons name="location-outline" size={16} color="#92400e" />
+          <Text style={styles.locationBannerText}>
+            כדי לראות מקומות קרובים, הפעל מיקום בהגדרות הטלפון ← פרטיות ← שירותי מיקום ← Safari
+          </Text>
+        </View>
+      )}
+      {locationStatus === 'idle' && (
         <Pressable style={styles.locationBanner} onPress={requestLocation}>
           <Ionicons name="location-outline" size={16} color="#92400e" />
           <Text style={styles.locationBannerText}>
