@@ -7,6 +7,7 @@ interface LocationContextValue {
   status: LocationStatus;
   location: GeoPoint | null;
   request: () => void;
+  setGranted: (loc: GeoPoint) => void;
 }
 
 const LocationContext = createContext<LocationContextValue | null>(null);
@@ -33,8 +34,13 @@ export function LocationProvider({ children }: { children: ReactNode }) {
     );
   };
 
+  const setGranted = (loc: GeoPoint) => {
+    setLocation(loc);
+    setStatus('granted');
+  };
+
   return (
-    <LocationContext.Provider value={{ status, location, request }}>
+    <LocationContext.Provider value={{ status, location, request, setGranted }}>
       {children}
     </LocationContext.Provider>
   );

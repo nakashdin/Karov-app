@@ -11,14 +11,25 @@ type Nav = NativeStackNavigationProp<RootStackParamList>;
 
 export function LocationPermissionScreen() {
   const navigation = useNavigation<Nav>();
-  const { request } = useSharedLocation();
+  const { setGranted } = useSharedLocation();
   const [loading, setLoading] = useState(false);
 
-  const handleAllow = async () => {
+  const handleAllow = () => {
+    if (!navigator.geolocation) {
+      navigation.replace('Tabs', { screen: 'Home' });
+      return;
+    }
     setLoading(true);
-    await request();
-    setLoading(false);
-    navigation.replace('Tabs', { screen: 'Home' });
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        setGranted({ latitude: pos.coords.latitude, longitude: pos.coords.longitude });
+        navigation.replace('Tabs', { screen: 'Home' });
+      },
+      () => {
+        navigation.replace('Tabs', { screen: 'Home' });
+      },
+      { enableHighAccuracy: false, timeout: 10000 },
+    );
   };
 
   const handleSkip = () => {
