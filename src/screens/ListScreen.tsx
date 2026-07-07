@@ -41,6 +41,15 @@ const CATEGORY_TABS: Array<{ key: PlaceType | null; label: string; icon: string 
   { key: 'tzaddik_grave', label: 'קברי צדיקים', icon: 'flower-outline' },
 ];
 
+const CUISINE_TABS: Array<{ key: string; label: string; emoji: string }> = [
+  { key: 'coffee_shop', label: 'בית קפה', emoji: '☕' },
+  { key: 'burger',      label: 'בורגר',   emoji: '🍔' },
+  { key: 'pizza',       label: 'פיצה',    emoji: '🍕' },
+  { key: 'street_food', label: 'מזון רחוב', emoji: '🥙' },
+  { key: 'sushi',       label: 'סושי',    emoji: '🍣' },
+  { key: 'meat',        label: 'בשרים',   emoji: '🥩' },
+];
+
 async function geocodeAddress(query: string): Promise<GeoPoint | null> {
   try {
     const url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(query)}&format=json&limit=1&countrycodes=il`;
@@ -275,7 +284,11 @@ export function ListScreen() {
             <Pressable
               key={String(tab.key)}
               style={[styles.tab, active && styles.tabActive]}
-              onPress={() => setFilter('placeType', tab.key)}
+              onPress={() => {
+                setFilter('placeType', tab.key);
+                // clear cuisine sub-filter when switching main category
+                if (tab.key !== 'restaurant') setFilter('cuisineTag', null);
+              }}
             >
               <Ionicons
                 name={tab.icon as any}
@@ -289,6 +302,32 @@ export function ListScreen() {
           );
         })}
       </ScrollView>
+
+      {/* Cuisine sub-tabs — only when restaurant category is active */}
+      {filters.placeType === 'restaurant' && (
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          style={styles.tabsScroll}
+          contentContainerStyle={styles.tabsContent}
+        >
+          {CUISINE_TABS.map((tab) => {
+            const active = filters.cuisineTag === tab.key;
+            return (
+              <Pressable
+                key={tab.key}
+                style={[styles.tab, active && styles.tabActive]}
+                onPress={() => setFilter('cuisineTag', active ? null : tab.key)}
+              >
+                <Text style={styles.tabEmoji}>{tab.emoji}</Text>
+                <Text style={[styles.tabText, active && styles.tabTextActive]}>
+                  {tab.label}
+                </Text>
+              </Pressable>
+            );
+          })}
+        </ScrollView>
+      )}
 
       {/* Location banner — only if no location at all */}
       {locationMode === 'current' && (locationStatus === 'denied' || locationStatus === 'idle') && (
@@ -525,6 +564,9 @@ const styles = StyleSheet.create({
   },
   tabTextActive: {
     color: '#fff',
+  },
+  tabEmoji: {
+    fontSize: 13,
   },
 
   // Location banner

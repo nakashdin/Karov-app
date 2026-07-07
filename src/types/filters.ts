@@ -9,6 +9,8 @@ export interface PlaceFilters {
   category: KosherCategory | null;
   /** Free-text search over name + address + city. */
   query: string;
+  /** Filter restaurants by cuisine tag (e.g. 'burger', 'pizza'). */
+  cuisineTag: string | null;
 }
 
 export const emptyFilters: PlaceFilters = {
@@ -17,6 +19,7 @@ export const emptyFilters: PlaceFilters = {
   kosherType: null,
   category: null,
   query: '',
+  cuisineTag: null,
 };
 
 /**

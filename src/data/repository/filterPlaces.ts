@@ -7,12 +7,25 @@ const CITY_NAME_BY_ID: Record<string, string> = Object.fromEntries(
   CITIES_SEED.map((c) => [c.id, c.name]),
 );
 
+const CUISINE_TAG_GROUPS: Record<string, string[]> = {
+  coffee_shop: ['coffee_shop', 'coffee', 'cafe'],
+  burger: ['burger'],
+  pizza: ['pizza'],
+  street_food: ['shawarma', 'falafel', 'kebab', 'hummus', 'שווארמה', 'sandwich'],
+  sushi: ['sushi', 'japanese'],
+  meat: ['meat', 'Meat', 'steak_house', 'grill', 'barbecue'],
+};
+
 /** Exact-match filters only (no text search). */
 function matchesExactFilters(place: Place, f: Partial<PlaceFilters>): boolean {
   if (f.placeType && place.type !== f.placeType && !place.tags?.includes(f.placeType)) return false;
   if (f.cityId && place.cityId !== f.cityId) return false;
   if (f.kosherType && place.kosherType !== f.kosherType) return false;
   if (f.category && place.category !== f.category) return false;
+  if (f.cuisineTag) {
+    const group = CUISINE_TAG_GROUPS[f.cuisineTag] ?? [f.cuisineTag];
+    if (!place.tags?.some((tag) => group.includes(tag))) return false;
+  }
   return true;
 }
 
