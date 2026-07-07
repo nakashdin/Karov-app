@@ -175,36 +175,7 @@ export function ListScreen() {
         <Text style={styles.title}>{screenTitle}</Text>
       </View>
 
-      {/* Search pill */}
-      <View style={styles.searchPill}>
-        <Ionicons name="search" size={18} color={colors.textMuted} />
-        <TextInput
-          style={styles.searchInput}
-          placeholder={t.list.searchPlaceholder}
-          placeholderTextColor={colors.textMuted}
-          ref={searchRef}
-          value={inputText}
-          onChangeText={setInputText}
-          textAlign="right"
-          returnKeyType="search"
-        />
-        {inputText.length > 0 && (
-          <Pressable onPress={() => { setInputText(''); setFilter('query', ''); }} hitSlop={8}>
-            <Ionicons name="close-circle" size={18} color={colors.textMuted} />
-          </Pressable>
-        )}
-        <View style={styles.pillDivider} />
-        <Pressable style={styles.filterTrigger} onPress={() => setSheetOpen(true)} hitSlop={8}>
-          <Ionicons
-            name="options-outline"
-            size={20}
-            color={activeCount > 0 ? colors.primary : colors.textMuted}
-          />
-          {activeCount > 0 && <View style={styles.filterDot} />}
-        </Pressable>
-      </View>
-
-      {/* Location mode selector */}
+      {/* Location mode selector — above search */}
       <View style={styles.locationModeRow}>
         <Pressable
           style={[styles.modePill, locationMode === 'current' && styles.modePillActive]}
@@ -266,6 +237,35 @@ export function ListScreen() {
       {geocodeError ? (
         <Text style={styles.geocodeError}>{geocodeError}</Text>
       ) : null}
+
+      {/* Search pill */}
+      <View style={styles.searchPill}>
+        <Ionicons name="search" size={18} color={colors.textMuted} />
+        <TextInput
+          style={styles.searchInput}
+          placeholder={t.list.searchPlaceholder}
+          placeholderTextColor={colors.textMuted}
+          ref={searchRef}
+          value={inputText}
+          onChangeText={setInputText}
+          textAlign="right"
+          returnKeyType="search"
+        />
+        {inputText.length > 0 && (
+          <Pressable onPress={() => { setInputText(''); setFilter('query', ''); }} hitSlop={8}>
+            <Ionicons name="close-circle" size={18} color={colors.textMuted} />
+          </Pressable>
+        )}
+        <View style={styles.pillDivider} />
+        <Pressable style={styles.filterTrigger} onPress={() => setSheetOpen(true)} hitSlop={8}>
+          <Ionicons
+            name="options-outline"
+            size={20}
+            color={activeCount > 0 ? colors.primary : colors.textMuted}
+          />
+          {activeCount > 0 && <View style={styles.filterDot} />}
+        </Pressable>
+      </View>
 
       {/* Category tabs */}
       <ScrollView
@@ -492,6 +492,8 @@ const styles = StyleSheet.create({
   tabsScroll: {
     marginBottom: spacing.sm,
     flexGrow: 0,
+    flexShrink: 0,
+    height: 40,
   },
   tabsContent: {
     gap: 8,
