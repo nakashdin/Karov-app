@@ -11,37 +11,46 @@ type Nav = NativeStackNavigationProp<RootStackParamList>;
 
 export function LocationPermissionScreen() {
   const navigation = useNavigation<Nav>();
-  const { setGranted } = useSharedLocation();
+  const { status, location, setGranted } = useSharedLocation();
   const [loading, setLoading] = useState(false);
+  const [done, setDone] = useState(false);
 
+  // Navigate only after context state is confirmed updated
   useEffect(() => {
-    if (!navigator.geolocation) return;
+    if (done) {
+      navigation.replace('Tabs', { screen: 'Home' });
+    }
+  }, [done, status, location]);
+
+  const requestGeo = () => {
+    if (!navigator.geolocation) { setDone(true); return; }
     setLoading(true);
     navigator.geolocation.getCurrentPosition(
       (pos) => {
         setGranted({ latitude: pos.coords.latitude, longitude: pos.coords.longitude });
         setLoading(false);
-        navigation.replace('Tabs', { screen: 'Home' });
+        setDone(true);
       },
-      () => setLoading(false),
+      () => { setLoading(false); setDone(true); },
       { enableHighAccuracy: false, timeout: 10000 },
     );
-  }, []);
+  };
+
+  useEffect(() => { requestGeo(); }, []);
 
   const handleAllow = () => {
     if (!navigator.geolocation) {
-      navigation.replace('Tabs', { screen: 'Home' });
+      setDone(true);
       return;
     }
     setLoading(true);
     navigator.geolocation.getCurrentPosition(
       (pos) => {
         setGranted({ latitude: pos.coords.latitude, longitude: pos.coords.longitude });
-        navigation.replace('Tabs', { screen: 'Home' });
+        setLoading(false);
+        setDone(true);
       },
-      () => {
-        navigation.replace('Tabs', { screen: 'Home' });
-      },
+      () => { setLoading(false); },
       { enableHighAccuracy: false, timeout: 10000 },
     );
   };
