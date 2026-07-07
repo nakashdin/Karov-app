@@ -178,107 +178,89 @@ export function ListScreen() {
         </View>
       ) : null}
 
-      {/* Location mode selector — above search */}
+      {/* Location mode row */}
       <View style={styles.locationModeRow}>
+        {/* "סביבי" pill */}
         <Pressable
           style={[styles.modePill, locationMode === 'current' && styles.modePillActive]}
           onPress={switchToCurrentMode}
         >
-          <Ionicons
-            name="navigate"
-            size={13}
-            color={locationMode === 'current' ? '#fff' : colors.textMuted}
-          />
+          <Ionicons name="navigate" size={13} color={locationMode === 'current' ? '#fff' : colors.textMuted} />
           <Text style={[styles.modePillText, locationMode === 'current' && styles.modePillTextActive]}>
             סביבי
           </Text>
         </Pressable>
 
-        <Pressable
-          style={[styles.modePill, locationMode === 'other' && styles.modePillActive]}
-          onPress={switchToOtherMode}
-        >
-          <Ionicons
-            name="search"
-            size={13}
-            color={locationMode === 'other' ? '#fff' : colors.textMuted}
-          />
-          <Text style={[styles.modePillText, locationMode === 'other' && styles.modePillTextActive]}>
-            סביב מיקום אחר
-          </Text>
-        </Pressable>
-      </View>
-
-      {/* Search / address pill — adapts by location mode */}
-      <View style={styles.searchPill}>
-        {geocoding ? (
-          <ActivityIndicator size="small" color={colors.textMuted} />
+        {/* "סביב מיקום אחר" — collapses into inline input when active */}
+        {locationMode === 'other' ? (
+          <View style={styles.geocodeRow}>
+            <Pressable
+              style={[styles.geocodeSubmitBtn, geocoding && { opacity: 0.6 }]}
+              onPress={handleGeocode}
+              disabled={geocoding}
+            >
+              {geocoding
+                ? <ActivityIndicator size="small" color="#fff" />
+                : <Ionicons name="arrow-back" size={15} color="#fff" />}
+            </Pressable>
+            <TextInput
+              ref={addressInputRef}
+              style={styles.geocodeInput}
+              placeholder="עיר או כתובת..."
+              placeholderTextColor={colors.textMuted}
+              value={customAddress}
+              onChangeText={(v) => { setCustomAddress(v); setGeocodeError(''); setCustomLocation(null); }}
+              textAlign="right"
+              returnKeyType="search"
+              onSubmitEditing={handleGeocode}
+            />
+            {customLocation
+              ? <Ionicons name="checkmark-circle" size={16} color={colors.primary} />
+              : null}
+            <Pressable onPress={switchToCurrentMode} hitSlop={6}>
+              <Ionicons name="close" size={16} color={colors.textMuted} />
+            </Pressable>
+          </View>
         ) : (
-          <Ionicons name="search" size={18} color={colors.textMuted} />
+          <Pressable
+            style={styles.modePill}
+            onPress={switchToOtherMode}
+          >
+            <Ionicons name="search" size={13} color={colors.textMuted} />
+            <Text style={styles.modePillText}>סביב מיקום אחר</Text>
+          </Pressable>
         )}
+      </View>
+      {geocodeError ? <Text style={styles.geocodeError}>{geocodeError}</Text> : null}
+
+      {/* Search pill — always filters by name/address */}
+      <View style={styles.searchPill}>
+        <Ionicons name="search" size={18} color={colors.textMuted} />
         <TextInput
           style={styles.searchInput}
-          placeholder={locationMode === 'other' ? 'הקלד עיר, כתובת...' : t.list.searchPlaceholder}
+          placeholder={t.list.searchPlaceholder}
           placeholderTextColor={colors.textMuted}
-          ref={locationMode === 'other' ? addressInputRef : searchRef}
-          value={locationMode === 'other' ? customAddress : inputText}
-          onChangeText={(v) => {
-            if (locationMode === 'other') {
-              setCustomAddress(v);
-              setGeocodeError('');
-              setCustomLocation(null);
-            } else {
-              setInputText(v);
-            }
-          }}
+          ref={searchRef}
+          value={inputText}
+          onChangeText={setInputText}
           textAlign="right"
           returnKeyType="search"
-          onSubmitEditing={locationMode === 'other' ? handleGeocode : undefined}
         />
-        {(locationMode === 'other' ? customAddress : inputText).length > 0 && (
-          <Pressable
-            onPress={() => {
-              if (locationMode === 'other') {
-                setCustomAddress('');
-                setCustomLocation(null);
-                setGeocodeError('');
-              } else {
-                setInputText('');
-                setFilter('query', '');
-              }
-            }}
-            hitSlop={8}
-          >
+        {inputText.length > 0 && (
+          <Pressable onPress={() => { setInputText(''); setFilter('query', ''); }} hitSlop={8}>
             <Ionicons name="close-circle" size={18} color={colors.textMuted} />
           </Pressable>
         )}
-        {locationMode === 'other' && customLocation && (
-          <Ionicons name="checkmark-circle" size={18} color={colors.primary} />
-        )}
         <View style={styles.pillDivider} />
-        {locationMode === 'other' ? (
-          <Pressable
-            style={[styles.geocodeInlinBtn, geocoding && { opacity: 0.6 }]}
-            onPress={handleGeocode}
-            disabled={geocoding}
-            hitSlop={8}
-          >
-            <Ionicons name="arrow-back" size={20} color={colors.primary} />
-          </Pressable>
-        ) : (
-          <Pressable style={styles.filterTrigger} onPress={() => setSheetOpen(true)} hitSlop={8}>
-            <Ionicons
-              name="options-outline"
-              size={20}
-              color={activeCount > 0 ? colors.primary : colors.textMuted}
-            />
-            {activeCount > 0 && <View style={styles.filterDot} />}
-          </Pressable>
-        )}
+        <Pressable style={styles.filterTrigger} onPress={() => setSheetOpen(true)} hitSlop={8}>
+          <Ionicons
+            name="options-outline"
+            size={20}
+            color={activeCount > 0 ? colors.primary : colors.textMuted}
+          />
+          {activeCount > 0 && <View style={styles.filterDot} />}
+        </Pressable>
       </View>
-      {geocodeError ? (
-        <Text style={styles.geocodeError}>{geocodeError}</Text>
-      ) : null}
 
       {/* Category tabs */}
       <ScrollView
@@ -475,6 +457,33 @@ const styles = StyleSheet.create({
     color: '#fff',
   },
 
+  // Inline geocode input (expands inside the mode row)
+  geocodeRow: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+    backgroundColor: colors.surface,
+    borderRadius: radius.pill,
+    borderWidth: 1,
+    borderColor: colors.primary,
+    paddingVertical: 6,
+    paddingHorizontal: 10,
+  },
+  geocodeInput: {
+    flex: 1,
+    fontSize: 13,
+    color: colors.text,
+    paddingVertical: 0,
+  },
+  geocodeSubmitBtn: {
+    width: 24,
+    height: 24,
+    borderRadius: 12,
+    backgroundColor: colors.primary,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   geocodeError: {
     fontSize: 12,
     color: colors.danger,
