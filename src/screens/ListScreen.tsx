@@ -186,12 +186,14 @@ export function ListScreen() {
             <Ionicons name="chevron-forward" size={20} color={colors.primary} />
             <Text style={styles.backText}>בית</Text>
           </Pressable>
-          <Text style={styles.title}>{screenTitle}</Text>
-          {filters.placeType === 'restaurant' && (
-            <Pressable style={styles.birkatBtn} onPress={() => setBirkatOpen(true)}>
-              <Text style={styles.birkatBtnText}>📖 ברכת המזון</Text>
-            </Pressable>
-          )}
+          <View style={styles.titleBlock}>
+            <Text style={styles.title}>{screenTitle}</Text>
+            {filters.placeType === 'restaurant' && (
+              <Pressable onPress={() => setBirkatOpen(true)}>
+                <Text style={styles.birkatBtnText}>📖 ברכת המזון</Text>
+              </Pressable>
+            )}
+          </View>
         </View>
       ) : null}
 
@@ -279,40 +281,8 @@ export function ListScreen() {
         </Pressable>
       </View>
 
-      {/* Category tabs */}
-      <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        style={styles.tabsScroll}
-        contentContainerStyle={styles.tabsContent}
-      >
-        {CATEGORY_TABS.map((tab) => {
-          const active = filters.placeType === tab.key;
-          return (
-            <Pressable
-              key={String(tab.key)}
-              style={[styles.tab, active && styles.tabActive]}
-              onPress={() => {
-                setFilter('placeType', tab.key);
-                // clear cuisine sub-filter when switching main category
-                if (tab.key !== 'restaurant') setFilter('cuisineTag', null);
-              }}
-            >
-              <Ionicons
-                name={tab.icon as any}
-                size={14}
-                color={active ? '#fff' : colors.textMuted}
-              />
-              <Text style={[styles.tabText, active && styles.tabTextActive]}>
-                {tab.label}
-              </Text>
-            </Pressable>
-          );
-        })}
-      </ScrollView>
-
-      {/* Cuisine sub-tabs — only when restaurant category is active */}
-      {filters.placeType === 'restaurant' && (
+      {/* Category tabs — main tabs OR cuisine sub-tabs (not both) */}
+      {filters.placeType === 'restaurant' ? (
         <ScrollView
           horizontal
           showsHorizontalScrollIndicator={false}
@@ -328,6 +298,36 @@ export function ListScreen() {
                 onPress={() => setFilter('cuisineTag', active ? null : tab.key)}
               >
                 <Text style={styles.tabEmoji}>{tab.emoji}</Text>
+                <Text style={[styles.tabText, active && styles.tabTextActive]}>
+                  {tab.label}
+                </Text>
+              </Pressable>
+            );
+          })}
+        </ScrollView>
+      ) : (
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          style={styles.tabsScroll}
+          contentContainerStyle={styles.tabsContent}
+        >
+          {CATEGORY_TABS.map((tab) => {
+            const active = filters.placeType === tab.key;
+            return (
+              <Pressable
+                key={String(tab.key)}
+                style={[styles.tab, active && styles.tabActive]}
+                onPress={() => {
+                  setFilter('placeType', tab.key);
+                  setFilter('cuisineTag', null);
+                }}
+              >
+                <Ionicons
+                  name={tab.icon as any}
+                  size={14}
+                  color={active ? '#fff' : colors.textMuted}
+                />
                 <Text style={[styles.tabText, active && styles.tabTextActive]}>
                   {tab.label}
                 </Text>
@@ -430,16 +430,16 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     color: colors.primary,
   },
-  birkatBtn: {
-    backgroundColor: colors.primaryLight,
-    borderRadius: radius.pill,
-    paddingVertical: 5,
-    paddingHorizontal: 10,
+  titleBlock: {
+    flex: 1,
+    alignItems: 'flex-end',
+    gap: 2,
   },
   birkatBtnText: {
     fontSize: 12,
-    fontWeight: '700',
+    fontWeight: '600',
     color: colors.primary,
+    textAlign: 'right',
   },
 
   searchPill: {

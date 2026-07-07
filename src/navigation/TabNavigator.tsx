@@ -9,6 +9,7 @@ import { t } from '../i18n';
 import { HomeScreen } from '../screens/HomeScreen';
 import { MapScreen } from '../screens/MapScreen';
 import { ListScreen } from '../screens/ListScreen';
+import { BrachotScreen } from '../screens/BrachotScreen';
 
 const Tab = createBottomTabNavigator<TabParamList>();
 
@@ -18,6 +19,7 @@ const ICONS: Record<
 > = {
   Map: { on: 'map', off: 'map-outline' },
   List: { on: 'list', off: 'list-outline' },
+  Brachot: { on: 'book', off: 'book-outline' },
 };
 
 export function TabNavigator() {
@@ -71,6 +73,11 @@ export function TabNavigator() {
         name="Map"
         component={MapScreen}
         options={{ title: t.tabs.map }}
+      />
+      <Tab.Screen
+        name="Brachot"
+        component={BrachotScreen}
+        options={{ title: 'ברכות' }}
       />
       <Tab.Screen
         name="Home"
