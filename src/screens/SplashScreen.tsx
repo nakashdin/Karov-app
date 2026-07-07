@@ -60,7 +60,7 @@ export function SplashScreen() {
         // treat as unauthenticated
       }
       if (auth) {
-        navigation.replace('Tabs', { screen: 'Home' });
+        navigation.replace('LocationPermission');
       } else {
         navigation.replace('Login');
       }

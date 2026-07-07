@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
@@ -13,6 +13,20 @@ export function LocationPermissionScreen() {
   const navigation = useNavigation<Nav>();
   const { setGranted } = useSharedLocation();
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    if (!navigator.geolocation) return;
+    setLoading(true);
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        setGranted({ latitude: pos.coords.latitude, longitude: pos.coords.longitude });
+        setLoading(false);
+        navigation.replace('Tabs', { screen: 'Home' });
+      },
+      () => setLoading(false),
+      { enableHighAccuracy: false, timeout: 10000 },
+    );
+  }, []);
 
   const handleAllow = () => {
     if (!navigator.geolocation) {
