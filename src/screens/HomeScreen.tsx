@@ -59,8 +59,7 @@ export function HomeScreen() {
     return list.slice(0, 4);
   }, [places, location]);
 
-  const onWhatsAround = async () => {
-    await request();
+  const onWhatsAround = () => {
     navigation.navigate('Tabs', { screen: 'List' });
   };
 

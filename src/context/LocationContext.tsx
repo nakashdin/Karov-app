@@ -17,10 +17,8 @@ export function LocationProvider({ children }: { children: ReactNode }) {
   const [location, setLocation] = useState<GeoPoint | null>(null);
 
   const request = () => {
-    if (!navigator.geolocation) {
-      setStatus('denied');
-      return;
-    }
+    if (!navigator.geolocation) { setStatus('denied'); return; }
+    if (status === 'granted' && location) return; // already have location
     setStatus('requesting');
     navigator.geolocation.getCurrentPosition(
       (pos) => {
