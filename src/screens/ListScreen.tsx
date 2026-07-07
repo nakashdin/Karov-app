@@ -18,6 +18,7 @@ import { PlaceCard } from '../components/PlaceCard';
 import { EmptyState } from '../components/EmptyState';
 import { Loading } from '../components/Loading';
 import { FilterSheet } from '../components/FilterSheet';
+import { BirkatHamazonModal } from '../components/BirkatHamazonModal';
 import { colors, radius, shadow, spacing } from '../theme';
 import { t } from '../i18n';
 import { usePlaces } from '../hooks/usePlaces';
@@ -71,6 +72,7 @@ export function ListScreen() {
   const ctxOrCachedLocation = ctxLocation ?? getCachedLocation();
 
   const [sheetOpen, setSheetOpen] = useState(false);
+  const [birkatOpen, setBirkatOpen] = useState(false);
   const [isRefreshing, setIsRefreshing] = useState(false);
 
   // Location mode: use current GPS or a custom geocoded address
@@ -176,6 +178,7 @@ export function ListScreen() {
             style={styles.backBtn}
             onPress={() => {
               setFilter('placeType', null);
+              setFilter('cuisineTag', null);
               navigation.navigate('Tabs', { screen: 'Home' });
             }}
             hitSlop={12}
@@ -184,6 +187,11 @@ export function ListScreen() {
             <Text style={styles.backText}>בית</Text>
           </Pressable>
           <Text style={styles.title}>{screenTitle}</Text>
+          {filters.placeType === 'restaurant' && (
+            <Pressable style={styles.birkatBtn} onPress={() => setBirkatOpen(true)}>
+              <Text style={styles.birkatBtnText}>📖 ברכת המזון</Text>
+            </Pressable>
+          )}
         </View>
       ) : null}
 
@@ -387,6 +395,7 @@ export function ListScreen() {
       )}
 
       <FilterSheet visible={sheetOpen} onClose={() => setSheetOpen(false)} />
+      <BirkatHamazonModal visible={birkatOpen} onClose={() => setBirkatOpen(false)} />
     </Screen>
   );
 }
@@ -419,6 +428,17 @@ const styles = StyleSheet.create({
   backText: {
     fontSize: 14,
     fontWeight: '600',
+    color: colors.primary,
+  },
+  birkatBtn: {
+    backgroundColor: colors.primaryLight,
+    borderRadius: radius.pill,
+    paddingVertical: 5,
+    paddingHorizontal: 10,
+  },
+  birkatBtnText: {
+    fontSize: 12,
+    fontWeight: '700',
     color: colors.primary,
   },
 
