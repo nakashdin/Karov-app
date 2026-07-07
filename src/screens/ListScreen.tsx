@@ -70,7 +70,7 @@ export function ListScreen() {
   const [customLocation, setCustomLocation] = useState<GeoPoint | null>(null);
   const [geocoding, setGeocoding] = useState(false);
   const [geocodeError, setGeocodeError] = useState('');
-  const addressInputRef = useRef<TextInput>(null);
+  const addressInputRef = useRef<TextInput>(null); // reused as searchRef when in 'other' mode
 
   const location = locationMode === 'current' ? ctxOrCachedLocation : customLocation;
   const sortByDistance = !!location;
@@ -209,66 +209,76 @@ export function ListScreen() {
         </Pressable>
       </View>
 
-      {/* Address input when in "other location" mode */}
-      {locationMode === 'other' && (
-        <View style={styles.addressRow}>
-          <Pressable
-            style={[styles.geocodeBtn, geocoding && { opacity: 0.6 }]}
-            onPress={handleGeocode}
-            disabled={geocoding}
-          >
-            {geocoding
-              ? <ActivityIndicator size="small" color="#fff" />
-              : <Ionicons name="arrow-back" size={18} color="#fff" />}
-          </Pressable>
-          <TextInput
-            ref={addressInputRef}
-            style={styles.addressInput}
-            placeholder="עיר, רחוב, או מקום..."
-            placeholderTextColor={colors.textMuted}
-            value={customAddress}
-            onChangeText={(v) => { setCustomAddress(v); setGeocodeError(''); setCustomLocation(null); }}
-            textAlign="right"
-            returnKeyType="search"
-            onSubmitEditing={handleGeocode}
-          />
-          {customLocation && (
-            <Ionicons name="checkmark-circle" size={20} color={colors.primary} />
-          )}
-        </View>
-      )}
-      {geocodeError ? (
-        <Text style={styles.geocodeError}>{geocodeError}</Text>
-      ) : null}
-
-      {/* Search pill */}
+      {/* Search / address pill — adapts by location mode */}
       <View style={styles.searchPill}>
-        <Ionicons name="search" size={18} color={colors.textMuted} />
+        {geocoding ? (
+          <ActivityIndicator size="small" color={colors.textMuted} />
+        ) : (
+          <Ionicons name="search" size={18} color={colors.textMuted} />
+        )}
         <TextInput
           style={styles.searchInput}
-          placeholder={t.list.searchPlaceholder}
+          placeholder={locationMode === 'other' ? 'הקלד עיר, כתובת...' : t.list.searchPlaceholder}
           placeholderTextColor={colors.textMuted}
-          ref={searchRef}
-          value={inputText}
-          onChangeText={setInputText}
+          ref={locationMode === 'other' ? addressInputRef : searchRef}
+          value={locationMode === 'other' ? customAddress : inputText}
+          onChangeText={(v) => {
+            if (locationMode === 'other') {
+              setCustomAddress(v);
+              setGeocodeError('');
+              setCustomLocation(null);
+            } else {
+              setInputText(v);
+            }
+          }}
           textAlign="right"
           returnKeyType="search"
+          onSubmitEditing={locationMode === 'other' ? handleGeocode : undefined}
         />
-        {inputText.length > 0 && (
-          <Pressable onPress={() => { setInputText(''); setFilter('query', ''); }} hitSlop={8}>
+        {(locationMode === 'other' ? customAddress : inputText).length > 0 && (
+          <Pressable
+            onPress={() => {
+              if (locationMode === 'other') {
+                setCustomAddress('');
+                setCustomLocation(null);
+                setGeocodeError('');
+              } else {
+                setInputText('');
+                setFilter('query', '');
+              }
+            }}
+            hitSlop={8}
+          >
             <Ionicons name="close-circle" size={18} color={colors.textMuted} />
           </Pressable>
         )}
+        {locationMode === 'other' && customLocation && (
+          <Ionicons name="checkmark-circle" size={18} color={colors.primary} />
+        )}
         <View style={styles.pillDivider} />
-        <Pressable style={styles.filterTrigger} onPress={() => setSheetOpen(true)} hitSlop={8}>
-          <Ionicons
-            name="options-outline"
-            size={20}
-            color={activeCount > 0 ? colors.primary : colors.textMuted}
-          />
-          {activeCount > 0 && <View style={styles.filterDot} />}
-        </Pressable>
+        {locationMode === 'other' ? (
+          <Pressable
+            style={[styles.geocodeInlinBtn, geocoding && { opacity: 0.6 }]}
+            onPress={handleGeocode}
+            disabled={geocoding}
+            hitSlop={8}
+          >
+            <Ionicons name="arrow-back" size={20} color={colors.primary} />
+          </Pressable>
+        ) : (
+          <Pressable style={styles.filterTrigger} onPress={() => setSheetOpen(true)} hitSlop={8}>
+            <Ionicons
+              name="options-outline"
+              size={20}
+              color={activeCount > 0 ? colors.primary : colors.textMuted}
+            />
+            {activeCount > 0 && <View style={styles.filterDot} />}
+          </Pressable>
+        )}
       </View>
+      {geocodeError ? (
+        <Text style={styles.geocodeError}>{geocodeError}</Text>
+      ) : null}
 
       {/* Category tabs */}
       <ScrollView
@@ -430,6 +440,10 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: colors.surface,
   },
+  geocodeInlinBtn: {
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 
   // Location mode toggle
   locationModeRow: {
@@ -461,33 +475,6 @@ const styles = StyleSheet.create({
     color: '#fff',
   },
 
-  // Address input row
-  addressRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 8,
-    backgroundColor: colors.surface,
-    borderRadius: radius.md,
-    paddingVertical: 10,
-    paddingHorizontal: 12,
-    marginBottom: 4,
-    borderWidth: 0.5,
-    borderColor: colors.border,
-  },
-  addressInput: {
-    flex: 1,
-    fontSize: 14,
-    color: colors.text,
-    paddingVertical: 0,
-  },
-  geocodeBtn: {
-    width: 34,
-    height: 34,
-    borderRadius: radius.md,
-    backgroundColor: colors.primary,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
   geocodeError: {
     fontSize: 12,
     color: colors.danger,
