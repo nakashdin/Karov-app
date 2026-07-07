@@ -19,7 +19,7 @@ import { FilterSheet } from '../components/FilterSheet';
 import { colors, radius, shadow, spacing } from '../theme';
 import { t } from '../i18n';
 import { usePlaces } from '../hooks/usePlaces';
-import { useSharedLocation } from '../context/LocationContext';
+import { useSharedLocation, getCachedLocation } from '../context/LocationContext';
 import { useFilters } from '../context/FiltersContext';
 import { countActiveFilters } from '../types';
 import { distanceKm } from '../utils/geo';
@@ -33,7 +33,8 @@ export function ListScreen() {
   const route = useRoute<ListRoute>();
   const { filters, setFilter } = useFilters();
   const { places, loading, error, reload } = usePlaces(filters);
-  const { location, status: locationStatus, request: requestLocation } = useSharedLocation();
+  const { location: ctxLocation, status: locationStatus, request: requestLocation } = useSharedLocation();
+  const location = ctxLocation ?? getCachedLocation();
 
   const [sheetOpen, setSheetOpen] = useState(false);
   const [isRefreshing, setIsRefreshing] = useState(false);

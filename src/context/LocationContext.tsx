@@ -1,6 +1,10 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 import { GeoPoint } from '../types';
 
+// Module-level cache — survives React re-renders and navigation
+let _cachedLocation: GeoPoint | null = null;
+export function getCachedLocation(): GeoPoint | null { return _cachedLocation; }
+
 export type LocationStatus = 'idle' | 'requesting' | 'granted' | 'denied' | 'error';
 
 interface LocationContextValue {
@@ -33,6 +37,7 @@ export function LocationProvider({ children }: { children: ReactNode }) {
   };
 
   const setGranted = (loc: GeoPoint) => {
+    _cachedLocation = loc;
     setLocation(loc);
     setStatus('granted');
   };
