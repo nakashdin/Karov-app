@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import React, { useState } from 'react';
+import { StyleSheet, Text, View, Pressable } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
@@ -11,46 +11,31 @@ type Nav = NativeStackNavigationProp<RootStackParamList>;
 
 export function LocationPermissionScreen() {
   const navigation = useNavigation<Nav>();
-  const { status, location, setGranted } = useSharedLocation();
+  const { setGranted } = useSharedLocation();
   const [loading, setLoading] = useState(false);
-  const [done, setDone] = useState(false);
+  const [error, setError] = useState('');
 
-  // Navigate only after context state is confirmed updated
-  useEffect(() => {
-    if (done) {
-      navigation.replace('Tabs', { screen: 'Home' });
-    }
-  }, [done, status, location]);
-
-  const requestGeo = () => {
-    if (!navigator.geolocation) { setDone(true); return; }
-    setLoading(true);
-    navigator.geolocation.getCurrentPosition(
-      (pos) => {
-        setGranted({ latitude: pos.coords.latitude, longitude: pos.coords.longitude });
-        setLoading(false);
-        setDone(true);
-      },
-      () => { setLoading(false); setDone(true); },
-      { enableHighAccuracy: false, timeout: 10000 },
-    );
-  };
-
-  useEffect(() => { requestGeo(); }, []);
-
+  // This function is called ONLY from a direct button tap — required by iOS Safari
   const handleAllow = () => {
     if (!navigator.geolocation) {
-      setDone(true);
+      navigation.replace('Tabs', { screen: 'Home' });
       return;
     }
     setLoading(true);
+    setError('');
     navigator.geolocation.getCurrentPosition(
       (pos) => {
-        setGranted({ latitude: pos.coords.latitude, longitude: pos.coords.longitude });
-        setLoading(false);
-        setDone(true);
+        const loc = { latitude: pos.coords.latitude, longitude: pos.coords.longitude };
+        setGranted(loc);
+        // Small delay so React state update propagates before navigation
+        setTimeout(() => {
+          navigation.replace('Tabs', { screen: 'Home' });
+        }, 80);
       },
-      () => { setLoading(false); },
+      () => {
+        setLoading(false);
+        setError('לא הצלחנו לקבל מיקום. בדוק הגדרות → פרטיות → שירותי מיקום → Safari');
+      },
       { enableHighAccuracy: false, timeout: 10000 },
     );
   };
@@ -62,7 +47,6 @@ export function LocationPermissionScreen() {
   return (
     <View style={styles.root}>
       <View style={styles.content}>
-        {/* Icon */}
         <View style={styles.iconBox}>
           <Ionicons name="location" size={52} color={colors.primary} />
         </View>
@@ -80,16 +64,20 @@ export function LocationPermissionScreen() {
       </View>
 
       <View style={styles.buttons}>
-        {/* Use native HTML button so Safari recognises the user gesture */}
+        {error ? <Text style={styles.errorText}>{error}</Text> : null}
+
+        {/* Native HTML button — iOS Safari requires direct user gesture for geolocation */}
         <button
           onClick={handleAllow}
           disabled={loading}
           style={{
-            width: '100%', display: 'flex', flexDirection: 'row',
-            alignItems: 'center', justifyContent: 'center', gap: 10,
+            width: '100%',
             backgroundColor: loading ? '#5a9e72' : '#1E7A46',
-            border: 'none', borderRadius: 50, padding: '16px',
-            cursor: 'pointer', fontFamily: 'inherit',
+            border: 'none',
+            borderRadius: 50,
+            padding: '16px',
+            cursor: 'pointer',
+            fontFamily: 'inherit',
           } as any}
         >
           <Text style={styles.btnAllowText}>
@@ -98,15 +86,13 @@ export function LocationPermissionScreen() {
         </button>
 
         <Pressable
-          style={({ pressed }) => [styles.btnSkip, pressed && styles.pressed]}
+          style={({ pressed }) => [styles.btnSkip, pressed && { opacity: 0.7 }]}
           onPress={handleSkip}
         >
           <Text style={styles.btnSkipText}>אולי אחר כך</Text>
         </Pressable>
 
-        <Text style={styles.note}>
-          ניתן לשנות בכל עת בהגדרות הטלפון
-        </Text>
+        <Text style={styles.note}>ניתן לשנות בכל עת בהגדרות הטלפון</Text>
       </View>
     </View>
   );
@@ -183,16 +169,6 @@ const styles = StyleSheet.create({
     gap: 12,
     alignItems: 'center',
   },
-  btnAllow: {
-    width: '100%',
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: 10,
-    backgroundColor: colors.primary,
-    borderRadius: radius.pill,
-    paddingVertical: 16,
-  },
   btnAllowText: {
     fontSize: 16,
     fontWeight: '700',
@@ -207,12 +183,15 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     color: colors.textMuted,
   },
+  errorText: {
+    fontSize: 13,
+    color: colors.danger,
+    textAlign: 'center',
+    lineHeight: 20,
+  },
   note: {
     fontSize: 12,
     color: colors.textFaint,
     textAlign: 'center',
-  },
-  pressed: {
-    opacity: 0.82,
   },
 });
