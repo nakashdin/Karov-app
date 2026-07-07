@@ -43,11 +43,11 @@ const ZMANIM_DEFS: ZmanDef[] = [
   { key: 'alotHaShachar',  hebrew: 'עלות השחר',           icon: 'time-outline',  iconColor: colors.textMuted },
   { key: 'sunrise',        hebrew: 'הנץ החמה',            icon: 'sunny',         iconColor: '#f59e0b' },
   { key: 'sofZmanShmaMGA', hebrew: 'סוף זמן ק"ש (מג"א)', icon: 'book',          iconColor: colors.danger },
-  { key: 'sofZmanShmaGRA', hebrew: 'סוף זמן ק"ש (גר"א)', icon: 'book',          iconColor: colors.danger },
+  { key: 'sofZmanShma',    hebrew: 'סוף זמן ק"ש (גר"א)', icon: 'book',          iconColor: colors.danger },
   { key: 'chatzot',        hebrew: 'חצות היום',           icon: 'remove-circle-outline', iconColor: colors.text },
   { key: 'minchaGedola',   hebrew: 'מנחה גדולה',         icon: 'sunny-outline', iconColor: '#d97706' },
   { key: 'sunset',         hebrew: 'שקיעת החמה',         icon: 'sunny',         iconColor: '#ea580c' },
-  { key: 'tzeit42min',     hebrew: 'צאת הכוכבים',        icon: 'moon',          iconColor: '#7c3aed' },
+  { key: 'tzeit85deg',     hebrew: 'צאת הכוכבים',        icon: 'moon',          iconColor: '#7c3aed' },
 ];
 
 // ─── Date helpers ─────────────────────────────────────────────────────────────
@@ -71,10 +71,6 @@ function formatTime(iso: string): string {
 }
 
 const GREG_MONTHS = ['ינואר','פברואר','מרץ','אפריל','מאי','יוני','יולי','אוגוסט','ספטמבר','אוקטובר','נובמבר','דצמבר'];
-const HEB_MONTHS: Record<number, string> = {
-  1:'ניסן',2:'אייר',3:'סיון',4:'תמוז',5:'אב',6:'אלול',
-  7:'תשרי',8:'חשון',9:'כסלו',10:'טבת',11:'שבט',12:'אדר',13:'אדר ב׳',
-};
 
 // ─── API ──────────────────────────────────────────────────────────────────────
 
@@ -97,7 +93,8 @@ async function fetchZmanim(lat: number, lng: number, date: Date): Promise<Zmanim
     const zmJson = await zmRes.json();
     const convJson = await convRes.json();
 
-    const hebrewDate = `${convJson.hd} ${HEB_MONTHS[convJson.hm] ?? ''} ${convJson.hebrew?.split(' ').pop() ?? ''}`;
+    const { d: hebDay, m: hebMonth, y: hebYear } = convJson.heDateParts ?? {};
+    const hebrewDate = `${hebDay ?? ''} ב${hebMonth ?? ''} ${hebYear ?? ''}`;
     const gregDate = `${gd} ${GREG_MONTHS[gm - 1]} ${gy}`;
 
     return { times: zmJson.times ?? {}, hebrewDate, gregDate };
