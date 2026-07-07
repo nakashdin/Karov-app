@@ -167,6 +167,11 @@ export function ListScreen() {
         </Pressable>
       )}
 
+      {/* DEBUG - remove later */}
+      <Text style={{fontSize:11,color:'red',textAlign:'center',marginBottom:4}}>
+        {location ? `📍 ${location.latitude.toFixed(4)}, ${location.longitude.toFixed(4)}` : '❌ אין מיקום'}
+      </Text>
+
       {/* Result count + sort indicator */}
       <View style={styles.metaRow}>
         <Text style={styles.resultCount}>
