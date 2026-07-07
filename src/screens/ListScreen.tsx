@@ -154,12 +154,15 @@ export function ListScreen() {
     : filters.placeType === 'mikveh' ? t.home.mikvahs
     : filters.placeType === 'chabad_house' ? t.home.chabadHouses
     : filters.placeType === 'tzaddik_grave' ? t.home.tzadikGraves
-    : t.list.title;
+    : null;
+
+  // In "other location" mode, hide results until the user has geocoded an address
+  const showResults = locationMode === 'current' || customLocation !== null;
 
   return (
     <Screen padded>
-      <View style={styles.titleRow}>
-        {filters.placeType ? (
+      {screenTitle ? (
+        <View style={styles.titleRow}>
           <Pressable
             style={styles.backBtn}
             onPress={() => {
@@ -171,9 +174,9 @@ export function ListScreen() {
             <Ionicons name="chevron-forward" size={20} color={colors.primary} />
             <Text style={styles.backText}>בית</Text>
           </Pressable>
-        ) : <View />}
-        <Text style={styles.title}>{screenTitle}</Text>
-      </View>
+          <Text style={styles.title}>{screenTitle}</Text>
+        </View>
+      ) : null}
 
       {/* Location mode selector — above search */}
       <View style={styles.locationModeRow}>
@@ -308,22 +311,24 @@ export function ListScreen() {
         </Pressable>
       )}
 
-      {/* Result count + sort indicator */}
-      <View style={styles.metaRow}>
-        <Text style={styles.resultCount}>{t.list.resultsCount(places.length)}</Text>
-        <View style={styles.sortToggle}>
-          <Ionicons
-            name={sortByDistance ? 'navigate' : 'text'}
-            size={14}
-            color={colors.primary}
-          />
-          <Text style={styles.sortText}>
-            {sortByDistance ? t.list.sortByDistance : t.list.sortByName}
-          </Text>
-        </View>
-      </View>
-
-      {loading && !isRefreshing && places.length === 0 ? (
+      {!showResults ? (
+        <EmptyState
+          title="חפש מיקום"
+          hint="הקלד עיר, רחוב או שם מקום ולחץ על החץ"
+          icon="search-outline"
+        />
+      ) : (
+        <>
+          <View style={styles.metaRow}>
+            <Text style={styles.resultCount}>{t.list.resultsCount(places.length)}</Text>
+            <View style={styles.sortToggle}>
+              <Ionicons name={sortByDistance ? 'navigate' : 'text'} size={14} color={colors.primary} />
+              <Text style={styles.sortText}>
+                {sortByDistance ? t.list.sortByDistance : t.list.sortByName}
+              </Text>
+            </View>
+          </View>
+          {loading && !isRefreshing && places.length === 0 ? (
         <Loading />
       ) : error ? (
         <EmptyState title={t.common.error} hint={t.common.retry} icon="alert-circle-outline" />
@@ -346,6 +351,8 @@ export function ListScreen() {
             />
           )}
         />
+          )}
+        </>
       )}
 
       <FilterSheet visible={sheetOpen} onClose={() => setSheetOpen(false)} />
