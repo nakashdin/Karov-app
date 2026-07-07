@@ -71,16 +71,22 @@ export function LocationPermissionScreen() {
       </View>
 
       <View style={styles.buttons}>
-        <Pressable
-          style={({ pressed }) => [styles.btnAllow, pressed && styles.pressed]}
-          onPress={handleAllow}
+        {/* Use native HTML button so Safari recognises the user gesture */}
+        <button
+          onClick={handleAllow}
           disabled={loading}
+          style={{
+            width: '100%', display: 'flex', flexDirection: 'row',
+            alignItems: 'center', justifyContent: 'center', gap: 10,
+            backgroundColor: loading ? '#5a9e72' : '#1E7A46',
+            border: 'none', borderRadius: 50, padding: '16px',
+            cursor: 'pointer', fontFamily: 'inherit',
+          } as any}
         >
-          <Ionicons name="location" size={20} color="#fff" />
           <Text style={styles.btnAllowText}>
-            {loading ? 'מאשר...' : 'אפשר גישה למיקום'}
+            {loading ? '⏳ מאשר...' : '📍 אפשר גישה למיקום'}
           </Text>
-        </Pressable>
+        </button>
 
         <Pressable
           style={({ pressed }) => [styles.btnSkip, pressed && styles.pressed]}
