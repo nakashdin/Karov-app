@@ -7,6 +7,7 @@ export type TabParamList = {
   List: { focus?: boolean } | undefined;
   Brachot: undefined;
   Zmanim: undefined;
+  Community: undefined;
 };
 
 /** Root stack routes (tabs + pushed screens). */
@@ -18,6 +19,7 @@ export type RootStackParamList = {
   PlaceDetail: { id: string };
   Report: { placeId: string };
   Favorites: undefined;
+  AddPlace: undefined;
 };
 
 declare global {

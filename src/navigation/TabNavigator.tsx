@@ -11,6 +11,7 @@ import { MapScreen } from '../screens/MapScreen';
 import { ListScreen } from '../screens/ListScreen';
 import { BrachotScreen } from '../screens/BrachotScreen';
 import { ZmanimScreen } from '../screens/ZmanimScreen';
+import { CommunityScreen } from '../screens/CommunityScreen';
 
 const Tab = createBottomTabNavigator<TabParamList>();
 
@@ -22,6 +23,7 @@ const ICONS: Record<
   List: { on: 'list', off: 'list-outline' },
   Brachot: { on: 'book', off: 'book-outline' },
   Zmanim: { on: 'time', off: 'time-outline' },
+  Community: { on: 'people', off: 'people-outline' },
 };
 
 export function TabNavigator() {
@@ -85,6 +87,11 @@ export function TabNavigator() {
         name="Zmanim"
         component={ZmanimScreen}
         options={{ title: 'זמני היום' }}
+      />
+      <Tab.Screen
+        name="Community"
+        component={CommunityScreen}
+        options={{ title: 'קהילה' }}
       />
       <Tab.Screen
         name="Home"

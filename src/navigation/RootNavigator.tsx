@@ -7,6 +7,7 @@ import { TabNavigator } from './TabNavigator';
 import { PlaceDetailScreen } from '../screens/PlaceDetailScreen';
 import { ReportScreen } from '../screens/ReportScreen';
 import { FavoritesScreen } from '../screens/FavoritesScreen';
+import { AddPlaceScreen } from '../screens/AddPlaceScreen';
 import { SplashScreen } from '../screens/SplashScreen';
 import { LoginScreen } from '../screens/LoginScreen';
 import { LocationPermissionScreen } from '../screens/LocationPermissionScreen';
@@ -59,6 +60,11 @@ export function RootNavigator() {
         name="Favorites"
         component={FavoritesScreen}
         options={{ title: t.favorites.title }}
+      />
+      <Stack.Screen
+        name="AddPlace"
+        component={AddPlaceScreen}
+        options={{ headerShown: false, presentation: 'modal' }}
       />
     </Stack.Navigator>
   );
