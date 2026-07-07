@@ -13,100 +13,94 @@ import { Screen } from '../components/Screen';
 import { colors, radius, spacing } from '../theme';
 import { useSharedLocation, getCachedLocation } from '../context/LocationContext';
 
-// ─── City presets ────────────────────────────────────────────────────────────
+// ─── Cities ───────────────────────────────────────────────────────────────────
 
-interface City {
-  name: string;
-  lat: number;
-  lng: number;
-}
+interface City { name: string; lat: number; lng: number }
 
 const CITIES: City[] = [
-  { name: 'ירושלים',    lat: 31.7683, lng: 35.2137 },
-  { name: 'תל אביב',   lat: 32.0853, lng: 34.7818 },
-  { name: 'בני ברק',   lat: 32.0841, lng: 34.8337 },
-  { name: 'חיפה',      lat: 32.7940, lng: 34.9896 },
-  { name: 'אשדוד',     lat: 31.8044, lng: 34.6553 },
-  { name: 'פתח תקווה', lat: 32.0840, lng: 34.8878 },
-  { name: 'נתניה',     lat: 32.3215, lng: 34.8532 },
-  { name: 'באר שבע',   lat: 31.2518, lng: 34.7913 },
+  { name: 'ירושלים',      lat: 31.7683, lng: 35.2137 },
+  { name: 'תל אביב',     lat: 32.0853, lng: 34.7818 },
+  { name: 'בני ברק',     lat: 32.0841, lng: 34.8337 },
+  { name: 'חיפה',        lat: 32.7940, lng: 34.9896 },
+  { name: 'אשדוד',       lat: 31.8044, lng: 34.6553 },
+  { name: 'פתח תקווה',   lat: 32.0840, lng: 34.8878 },
+  { name: 'נתניה',       lat: 32.3215, lng: 34.8532 },
+  { name: 'באר שבע',     lat: 31.2518, lng: 34.7913 },
   { name: 'ראשון לציון', lat: 31.9730, lng: 34.7925 },
-  { name: 'רמת גן',    lat: 32.0698, lng: 34.8238 },
+  { name: 'רמת גן',      lat: 32.0698, lng: 34.8238 },
 ];
 
-// ─── Zman definition ──────────────────────────────────────────────────────────
+// ─── Zmanim — exactly as the user specified ───────────────────────────────────
 
 interface ZmanDef {
   key: string;
   hebrew: string;
-  english: string;
-  icon: string;
+  icon: keyof typeof Ionicons.glyphMap;
   iconColor: string;
-  iconBg: string;
 }
 
 const ZMANIM_DEFS: ZmanDef[] = [
-  { key: 'alotHaShachar',  hebrew: 'עלות השחר',           english: 'Alot HaShachar',    icon: 'time-outline',    iconColor: '#6366f1', iconBg: '#ede9fe' },
-  { key: 'sunrise',        hebrew: 'הנץ החמה',            english: 'Netz HaChama',       icon: 'sunny',           iconColor: '#f59e0b', iconBg: '#fef3c7' },
-  { key: 'sofZmanShmaMGA', hebrew: 'סוף זמן ק"ש (מג"א)', english: 'Latest Shema (M"A)', icon: 'book',            iconColor: '#dc2626', iconBg: '#fee2e2' },
-  { key: 'sofZmanShmaGRA', hebrew: 'סוף זמן ק"ש (גר"א)', english: 'Latest Shema (Gr"a)',icon: 'book',            iconColor: '#dc2626', iconBg: '#fee2e2' },
-  { key: 'chatzot',        hebrew: 'חצות היום',           english: 'Chatzot HaYom',      icon: 'remove',          iconColor: '#374151', iconBg: '#f3f4f6' },
-  { key: 'minchaGedola',   hebrew: 'מנחה גדולה',         english: 'Mincha Gedola',       icon: 'sunny-outline',   iconColor: '#d97706', iconBg: '#fef9ee' },
-  { key: 'minchaKetana',   hebrew: 'מנחה קטנה',          english: 'Mincha Ketana',       icon: 'sunny-outline',   iconColor: '#b45309', iconBg: '#fef3c7' },
-  { key: 'plagHaMincha',   hebrew: 'פלג המנחה',          english: 'Plag HaMincha',       icon: 'partly-sunny-outline', iconColor: '#92400e', iconBg: '#fde68a' },
-  { key: 'sunset',         hebrew: 'שקיעת החמה',         english: 'Shkiat HaChama',      icon: 'sunny',           iconColor: '#ea580c', iconBg: '#ffedd5' },
-  { key: 'tzeit42min',     hebrew: 'צאת הכוכבים',        english: 'Tzeit HaKochavim',    icon: 'moon',            iconColor: '#7c3aed', iconBg: '#ede9fe' },
+  { key: 'alotHaShachar',  hebrew: 'עלות השחר',           icon: 'time-outline',  iconColor: colors.textMuted },
+  { key: 'sunrise',        hebrew: 'הנץ החמה',            icon: 'sunny',         iconColor: '#f59e0b' },
+  { key: 'sofZmanShmaMGA', hebrew: 'סוף זמן ק"ש (מג"א)', icon: 'book',          iconColor: colors.danger },
+  { key: 'sofZmanShmaGRA', hebrew: 'סוף זמן ק"ש (גר"א)', icon: 'book',          iconColor: colors.danger },
+  { key: 'chatzot',        hebrew: 'חצות היום',           icon: 'remove-circle-outline', iconColor: colors.text },
+  { key: 'minchaGedola',   hebrew: 'מנחה גדולה',         icon: 'sunny-outline', iconColor: '#d97706' },
+  { key: 'sunset',         hebrew: 'שקיעת החמה',         icon: 'sunny',         iconColor: '#ea580c' },
+  { key: 'tzeit42min',     hebrew: 'צאת הכוכבים',        icon: 'moon',          iconColor: '#7c3aed' },
 ];
 
-// ─── API ──────────────────────────────────────────────────────────────────────
+// ─── Date helpers ─────────────────────────────────────────────────────────────
 
-interface ZmanimData {
-  times: Record<string, string>;
-  hdate: string;   // e.g. "כ"ב בְּתַמּוּז תשפ"ו"
-  gdate: string;   // e.g. "7 ביולי 2026"
-}
-
-function todayISO(): string {
-  const d = new Date();
+function dateToISO(d: Date): string {
   const y = d.getFullYear();
   const m = String(d.getMonth() + 1).padStart(2, '0');
   const day = String(d.getDate()).padStart(2, '0');
   return `${y}-${m}-${day}`;
 }
 
-function formatTime(iso: string): string {
-  const d = new Date(iso);
-  const hh = String(d.getHours()).padStart(2, '0');
-  const mm = String(d.getMinutes()).padStart(2, '0');
-  return `${hh}:${mm}`;
+function addDays(d: Date, n: number): Date {
+  const copy = new Date(d);
+  copy.setDate(copy.getDate() + n);
+  return copy;
 }
 
-async function fetchZmanim(lat: number, lng: number): Promise<ZmanimData | null> {
-  try {
-    const date = todayISO();
-    const url = `https://www.hebcal.com/zmanim?cfg=json&latitude=${lat}&longitude=${lng}&date=${date}&tzid=Asia/Jerusalem`;
-    const res = await fetch(url);
-    const json = await res.json();
+function formatTime(iso: string): string {
+  const d = new Date(iso);
+  return `${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`;
+}
 
-    // Hebrew date from converter
-    const [gy, gm, gd] = date.split('-').map(Number);
-    const convUrl = `https://www.hebcal.com/converter?cfg=json&gd=${gd}&gm=${gm}&gy=${gy}&g2h=1`;
-    const convRes = await fetch(convUrl);
+const GREG_MONTHS = ['ינואר','פברואר','מרץ','אפריל','מאי','יוני','יולי','אוגוסט','ספטמבר','אוקטובר','נובמבר','דצמבר'];
+const HEB_MONTHS: Record<number, string> = {
+  1:'ניסן',2:'אייר',3:'סיון',4:'תמוז',5:'אב',6:'אלול',
+  7:'תשרי',8:'חשון',9:'כסלו',10:'טבת',11:'שבט',12:'אדר',13:'אדר ב׳',
+};
+
+// ─── API ──────────────────────────────────────────────────────────────────────
+
+interface ZmanimData {
+  times: Record<string, string>;
+  hebrewDate: string;
+  gregDate: string;
+}
+
+async function fetchZmanim(lat: number, lng: number, date: Date): Promise<ZmanimData | null> {
+  try {
+    const iso = dateToISO(date);
+    const [gy, gm, gd] = iso.split('-').map(Number);
+
+    const [zmRes, convRes] = await Promise.all([
+      fetch(`https://www.hebcal.com/zmanim?cfg=json&latitude=${lat}&longitude=${lng}&date=${iso}&tzid=Asia/Jerusalem`),
+      fetch(`https://www.hebcal.com/converter?cfg=json&gd=${gd}&gm=${gm}&gy=${gy}&g2h=1`),
+    ]);
+
+    const zmJson = await zmRes.json();
     const convJson = await convRes.json();
 
-    const hebrewMonths: Record<number, string> = {
-      1:'ניסן',2:'אייר',3:'סיון',4:'תמוז',5:'אב',6:'אלול',
-      7:'תשרי',8:'חשון',9:'כסלו',10:'טבת',11:'שבט',12:'אדר',13:'אדר ב׳',
-    };
-    const heDay = convJson.hd;
-    const heMonth = hebrewMonths[convJson.hm] ?? '';
-    const heYear = convJson.hebrew?.split(' ').pop() ?? '';
-    const hdate = `${heDay} ${heMonth} ${heYear}`;
+    const hebrewDate = `${convJson.hd} ${HEB_MONTHS[convJson.hm] ?? ''} ${convJson.hebrew?.split(' ').pop() ?? ''}`;
+    const gregDate = `${gd} ${GREG_MONTHS[gm - 1]} ${gy}`;
 
-    const gregMonths = ['ינואר','פברואר','מרץ','אפריל','מאי','יוני','יולי','אוגוסט','ספטמבר','אוקטובר','נובמבר','דצמבר'];
-    const gdate = `${gd} ${gregMonths[gm - 1]} ${gy}`;
-
-    return { times: json.times ?? {}, hdate, gdate };
+    return { times: zmJson.times ?? {}, hebrewDate, gregDate };
   } catch {
     return null;
   }
@@ -118,7 +112,6 @@ export function ZmanimScreen() {
   const { location: ctxLoc } = useSharedLocation();
   const gpsLoc = ctxLoc ?? getCachedLocation();
 
-  // Default to nearest GPS city or Jerusalem
   const defaultCity = gpsLoc
     ? CITIES.reduce((best, c) => {
         const d = Math.abs(c.lat - gpsLoc.latitude) + Math.abs(c.lng - gpsLoc.longitude);
@@ -128,54 +121,85 @@ export function ZmanimScreen() {
     : CITIES[0];
 
   const [city, setCity] = useState<City>(defaultCity);
+  const [selectedDate, setSelectedDate] = useState<Date>(new Date());
   const [data, setData] = useState<ZmanimData | null>(null);
   const [loading, setLoading] = useState(true);
   const [cityPickerOpen, setCityPickerOpen] = useState(false);
 
+  const isToday = dateToISO(selectedDate) === dateToISO(new Date());
+
   const load = useCallback(async () => {
     setLoading(true);
-    const result = await fetchZmanim(city.lat, city.lng);
+    const result = await fetchZmanim(city.lat, city.lng, selectedDate);
     setData(result);
     setLoading(false);
-  }, [city]);
+  }, [city, selectedDate]);
 
   useEffect(() => { void load(); }, [load]);
 
-  const pickCity = (c: City) => {
-    setCity(c);
-    setCityPickerOpen(false);
-  };
+  const pickCity = (c: City) => { setCity(c); setCityPickerOpen(false); };
 
   return (
     <Screen padded>
-      {/* Header */}
-      <View style={styles.header}>
-        <View style={styles.dateBlock}>
+      {/* Title */}
+      <Text style={styles.screenTitle}>זמני היום</Text>
+
+      {/* Date row */}
+      <View style={styles.dateRow}>
+        {/* ← next day */}
+        <Pressable
+          style={styles.arrowBtn}
+          onPress={() => setSelectedDate(d => addDays(d, 1))}
+          hitSlop={10}
+        >
+          <Ionicons name="chevron-back" size={20} color={colors.primary} />
+        </Pressable>
+
+        {/* Date display */}
+        <View style={styles.dateCenter}>
           {data ? (
             <>
-              <Text style={styles.hebrewDate}>{data.hdate}</Text>
-              <Text style={styles.gregDate}>{data.gdate}</Text>
+              <Text style={styles.hebrewDate}>{data.hebrewDate}</Text>
+              <Text style={styles.gregDate}>{data.gregDate}</Text>
             </>
           ) : (
-            <Text style={styles.gregDate}>{todayISO()}</Text>
+            <Text style={styles.gregDate}>{dateToISO(selectedDate)}</Text>
+          )}
+          {!isToday && (
+            <Pressable onPress={() => setSelectedDate(new Date())} style={styles.todayPill}>
+              <Text style={styles.todayText}>חזור להיום</Text>
+            </Pressable>
           )}
         </View>
 
-        <Pressable style={styles.cityPicker} onPress={() => setCityPickerOpen(true)}>
-          <Ionicons name="location-outline" size={16} color={colors.primary} />
-          <Text style={styles.cityName}>{city.name}</Text>
-          <Ionicons name="chevron-down" size={14} color={colors.textMuted} />
+        {/* → prev day */}
+        <Pressable
+          style={styles.arrowBtn}
+          onPress={() => setSelectedDate(d => addDays(d, -1))}
+          hitSlop={10}
+        >
+          <Ionicons name="chevron-forward" size={20} color={colors.primary} />
         </Pressable>
       </View>
 
-      {/* Zmanim list */}
+      {/* City picker row */}
+      <Pressable style={styles.cityRow} onPress={() => setCityPickerOpen(true)}>
+        <Ionicons name="chevron-down" size={14} color={colors.textMuted} />
+        <Text style={styles.cityName}>{city.name}</Text>
+        <Ionicons name="location-outline" size={15} color={colors.primary} />
+      </Pressable>
+
+      {/* Divider */}
+      <View style={styles.divider} />
+
+      {/* Zmanim */}
       {loading ? (
-        <View style={styles.loadingBox}>
+        <View style={styles.center}>
           <ActivityIndicator size="large" color={colors.primary} />
           <Text style={styles.loadingText}>טוען זמנים...</Text>
         </View>
       ) : !data ? (
-        <View style={styles.loadingBox}>
+        <View style={styles.center}>
           <Text style={styles.errorText}>לא הצלחנו לטעון את הזמנים</Text>
           <Pressable style={styles.retryBtn} onPress={load}>
             <Text style={styles.retryText}>נסה שוב</Text>
@@ -186,23 +210,12 @@ export function ZmanimScreen() {
           {ZMANIM_DEFS.map((zman) => {
             const rawTime = data.times[zman.key];
             if (!rawTime) return null;
-            const time = formatTime(rawTime);
             return (
               <View key={zman.key} style={styles.card}>
-                {/* Icon */}
-                <View style={[styles.iconBox, { backgroundColor: zman.iconBg }]}>
-                  <Ionicons name={zman.icon as any} size={22} color={zman.iconColor} />
-                </View>
-
-                {/* Name */}
-                <View style={styles.nameBlock}>
-                  <Text style={styles.hebrewName}>{zman.hebrew}</Text>
-                  <Text style={styles.englishName}>{zman.english}</Text>
-                </View>
-
-                {/* Time pill */}
+                <Ionicons name={zman.icon} size={20} color={zman.iconColor} />
+                <Text style={styles.zmanName}>{zman.hebrew}</Text>
                 <View style={styles.timePill}>
-                  <Text style={styles.timeText}>{time}</Text>
+                  <Text style={styles.timeText}>{formatTime(rawTime)}</Text>
                 </View>
               </View>
             );
@@ -211,17 +224,12 @@ export function ZmanimScreen() {
         </ScrollView>
       )}
 
-      {/* City picker modal */}
-      <Modal
-        visible={cityPickerOpen}
-        transparent
-        animationType="slide"
-        onRequestClose={() => setCityPickerOpen(false)}
-      >
+      {/* City modal */}
+      <Modal visible={cityPickerOpen} transparent animationType="slide" onRequestClose={() => setCityPickerOpen(false)}>
         <Pressable style={styles.backdrop} onPress={() => setCityPickerOpen(false)} />
-        <View style={styles.pickerSheet}>
-          <View style={styles.pickerHeader}>
-            <Text style={styles.pickerTitle}>בחר עיר</Text>
+        <View style={styles.sheet}>
+          <View style={styles.sheetHeader}>
+            <Text style={styles.sheetTitle}>בחר עיר</Text>
             <Pressable onPress={() => setCityPickerOpen(false)} hitSlop={10}>
               <Ionicons name="close" size={22} color={colors.textMuted} />
             </Pressable>
@@ -230,15 +238,13 @@ export function ZmanimScreen() {
             {CITIES.map((c) => (
               <Pressable
                 key={c.name}
-                style={[styles.cityRow, c.name === city.name && styles.cityRowActive]}
+                style={[styles.cityOption, c.name === city.name && styles.cityOptionActive]}
                 onPress={() => pickCity(c)}
               >
-                <Text style={[styles.cityRowText, c.name === city.name && styles.cityRowTextActive]}>
+                <Text style={[styles.cityOptionText, c.name === city.name && styles.cityOptionTextActive]}>
                   {c.name}
                 </Text>
-                {c.name === city.name && (
-                  <Ionicons name="checkmark" size={18} color={colors.primary} />
-                )}
+                {c.name === city.name && <Ionicons name="checkmark" size={18} color={colors.primary} />}
               </Pressable>
             ))}
           </ScrollView>
@@ -249,39 +255,66 @@ export function ZmanimScreen() {
 }
 
 const styles = StyleSheet.create({
-  header: {
+  screenTitle: {
+    fontSize: 30,
+    fontWeight: '800',
+    color: colors.text,
+    textAlign: 'right',
     paddingTop: spacing.md,
     paddingBottom: spacing.lg,
-    gap: 10,
   },
-  dateBlock: {
+
+  // Date navigation
+  dateRow: {
+    flexDirection: 'row',
     alignItems: 'center',
-    gap: 4,
+    justifyContent: 'space-between',
+    marginBottom: 10,
+  },
+  arrowBtn: {
+    width: 36,
+    height: 36,
+    borderRadius: radius.md,
+    backgroundColor: colors.primaryLight,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  dateCenter: {
+    flex: 1,
+    alignItems: 'center',
+    gap: 3,
   },
   hebrewDate: {
-    fontSize: 22,
+    fontSize: 18,
     fontWeight: '800',
-    color: colors.primary,
+    color: colors.text,
     textAlign: 'center',
-    letterSpacing: -0.5,
   },
   gregDate: {
     fontSize: 13,
     color: colors.textMuted,
     textAlign: 'center',
   },
-  cityPicker: {
+  todayPill: {
+    marginTop: 4,
+    backgroundColor: colors.primaryLight,
+    borderRadius: radius.pill,
+    paddingVertical: 3,
+    paddingHorizontal: 12,
+  },
+  todayText: {
+    fontSize: 12,
+    fontWeight: '700',
+    color: colors.primary,
+  },
+
+  // City
+  cityRow: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    gap: 5,
-    alignSelf: 'center',
-    backgroundColor: colors.surface,
-    borderRadius: radius.pill,
-    paddingVertical: 7,
-    paddingHorizontal: 14,
-    borderWidth: 0.5,
-    borderColor: colors.border,
+    gap: 6,
+    marginBottom: 16,
   },
   cityName: {
     fontSize: 14,
@@ -289,99 +322,73 @@ const styles = StyleSheet.create({
     color: colors.text,
   },
 
-  // List
-  list: {
-    gap: 10,
-    paddingBottom: 20,
+  divider: {
+    height: 0.5,
+    backgroundColor: colors.border,
+    marginBottom: 12,
   },
+
+  // Cards
+  list: { gap: 8 },
   card: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 14,
+    gap: 12,
     backgroundColor: colors.surface,
     borderRadius: radius.lg,
-    padding: 14,
+    paddingVertical: 14,
+    paddingHorizontal: 16,
     borderWidth: 0.5,
     borderColor: colors.border,
   },
-  iconBox: {
-    width: 46,
-    height: 46,
-    borderRadius: radius.md,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  nameBlock: {
+  zmanName: {
     flex: 1,
-    alignItems: 'flex-end',
-  },
-  hebrewName: {
     fontSize: 15,
     fontWeight: '700',
     color: colors.text,
     textAlign: 'right',
   },
-  englishName: {
-    fontSize: 11,
-    color: colors.textMuted,
-    textAlign: 'right',
-    marginTop: 1,
-  },
   timePill: {
-    backgroundColor: '#1e3a5f',
+    backgroundColor: colors.primary,
     borderRadius: radius.md,
-    paddingVertical: 7,
+    paddingVertical: 5,
     paddingHorizontal: 12,
-    minWidth: 64,
+    minWidth: 60,
     alignItems: 'center',
   },
   timeText: {
-    fontSize: 16,
+    fontSize: 15,
     fontWeight: '800',
     color: '#fff',
     letterSpacing: 0.5,
   },
 
-  // Loading / error
-  loadingBox: {
+  // States
+  center: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
     gap: 12,
   },
-  loadingText: {
-    fontSize: 15,
-    color: colors.textMuted,
-  },
-  errorText: {
-    fontSize: 15,
-    color: colors.danger,
-    textAlign: 'center',
-  },
+  loadingText: { fontSize: 15, color: colors.textMuted },
+  errorText: { fontSize: 15, color: colors.danger, textAlign: 'center' },
   retryBtn: {
     backgroundColor: colors.primary,
     borderRadius: radius.pill,
     paddingVertical: 10,
     paddingHorizontal: 24,
   },
-  retryText: {
-    fontSize: 14,
-    fontWeight: '700',
-    color: '#fff',
-  },
+  retryText: { fontSize: 14, fontWeight: '700', color: '#fff' },
 
-  // City picker
-  backdrop: {
-    flex: 1,
-    backgroundColor: 'rgba(0,0,0,0.4)',
-  },
-  pickerSheet: {
+  // Modal
+  backdrop: { flex: 1, backgroundColor: colors.overlay },
+  sheet: {
     backgroundColor: colors.background,
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
     maxHeight: '60%',
   },
-  pickerHeader: {
+  sheetHeader: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
@@ -389,12 +396,8 @@ const styles = StyleSheet.create({
     borderBottomWidth: 0.5,
     borderBottomColor: colors.border,
   },
-  pickerTitle: {
-    fontSize: 17,
-    fontWeight: '700',
-    color: colors.text,
-  },
-  cityRow: {
+  sheetTitle: { fontSize: 17, fontWeight: '700', color: colors.text },
+  cityOption: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
@@ -403,16 +406,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 0.5,
     borderBottomColor: colors.border,
   },
-  cityRowActive: {
-    backgroundColor: colors.primaryLight,
-  },
-  cityRowText: {
-    fontSize: 16,
-    color: colors.text,
-    textAlign: 'right',
-  },
-  cityRowTextActive: {
-    fontWeight: '700',
-    color: colors.primary,
-  },
+  cityOptionActive: { backgroundColor: colors.primaryLight },
+  cityOptionText: { fontSize: 16, color: colors.text, textAlign: 'right' },
+  cityOptionTextActive: { fontWeight: '700', color: colors.primary },
 });
