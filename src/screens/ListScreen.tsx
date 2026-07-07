@@ -2,10 +2,12 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import {
   FlatList,
   Pressable,
+  ScrollView,
   StyleSheet,
   Text,
   TextInput,
   View,
+  ActivityIndicator,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useNavigation, useRoute, RouteProp } from '@react-navigation/native';
@@ -21,12 +23,35 @@ import { t } from '../i18n';
 import { usePlaces } from '../hooks/usePlaces';
 import { useSharedLocation, getCachedLocation } from '../context/LocationContext';
 import { useFilters } from '../context/FiltersContext';
-import { countActiveFilters } from '../types';
+import { countActiveFilters, GeoPoint, PlaceType } from '../types';
 import { distanceKm } from '../utils/geo';
 import { RootStackParamList } from '../navigation/types';
 
 type Nav = NativeStackNavigationProp<RootStackParamList>;
 type ListRoute = RouteProp<TabParamList, 'List'>;
+
+type LocationMode = 'current' | 'other';
+
+const CATEGORY_TABS: Array<{ key: PlaceType | null; label: string; icon: string }> = [
+  { key: null, label: 'הכל', icon: 'apps-outline' },
+  { key: 'restaurant', label: 'מסעדות', icon: 'restaurant-outline' },
+  { key: 'synagogue', label: 'בתי כנסת', icon: 'business-outline' },
+  { key: 'mikveh', label: 'מקוואות', icon: 'water-outline' },
+  { key: 'chabad_house', label: 'בתי חב"ד', icon: 'home-outline' },
+  { key: 'tzaddik_grave', label: 'קברי צדיקים', icon: 'flower-outline' },
+];
+
+async function geocodeAddress(query: string): Promise<GeoPoint | null> {
+  try {
+    const url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(query)}&format=json&limit=1&countrycodes=il`;
+    const res = await fetch(url, { headers: { 'User-Agent': 'KarovApp/1.0' } });
+    const data = await res.json();
+    if (data[0]) {
+      return { latitude: parseFloat(data[0].lat), longitude: parseFloat(data[0].lon) };
+    }
+  } catch {}
+  return null;
+}
 
 export function ListScreen() {
   const navigation = useNavigation<Nav>();
@@ -34,20 +59,27 @@ export function ListScreen() {
   const { filters, setFilter } = useFilters();
   const { places, loading, error, reload } = usePlaces(filters);
   const { location: ctxLocation, status: locationStatus, request: requestLocation } = useSharedLocation();
-  const location = ctxLocation ?? getCachedLocation();
+  const ctxOrCachedLocation = ctxLocation ?? getCachedLocation();
 
   const [sheetOpen, setSheetOpen] = useState(false);
   const [isRefreshing, setIsRefreshing] = useState(false);
 
-  // Always sort by distance when location is available
+  // Location mode: use current GPS or a custom geocoded address
+  const [locationMode, setLocationMode] = useState<LocationMode>('current');
+  const [customAddress, setCustomAddress] = useState('');
+  const [customLocation, setCustomLocation] = useState<GeoPoint | null>(null);
+  const [geocoding, setGeocoding] = useState(false);
+  const [geocodeError, setGeocodeError] = useState('');
+  const addressInputRef = useRef<TextInput>(null);
+
+  const location = locationMode === 'current' ? ctxOrCachedLocation : customLocation;
   const sortByDistance = !!location;
 
-  // Local input text — decoupled from filters.query so we can debounce.
+  // Local search input — debounced
   const [inputText, setInputText] = useState(filters.query ?? '');
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const searchRef = useRef<TextInput>(null);
 
-  // Auto-focus the search input when arriving from the Home search bar.
   useEffect(() => {
     if (route.params?.focus) {
       const timer = setTimeout(() => searchRef.current?.focus(), 100);
@@ -64,7 +96,6 @@ export function ListScreen() {
       } else if (trimmed.length >= 2) {
         setFilter('query', trimmed);
       }
-      // 1-char input: do nothing — wait for more characters
     }, 200);
     return () => { if (debounceRef.current) clearTimeout(debounceRef.current); };
   }, [inputText]);
@@ -74,14 +105,42 @@ export function ListScreen() {
     try { await reload(); } finally { setIsRefreshing(false); }
   }, [reload]);
 
+  const handleGeocode = async () => {
+    const q = customAddress.trim();
+    if (!q) return;
+    setGeocoding(true);
+    setGeocodeError('');
+    const loc = await geocodeAddress(q);
+    setGeocoding(false);
+    if (loc) {
+      setCustomLocation(loc);
+    } else {
+      setGeocodeError('לא מצאנו את המיקום, נסה שם עיר או כתובת אחרת');
+    }
+  };
+
+  const switchToOtherMode = () => {
+    setLocationMode('other');
+    setCustomLocation(null);
+    setCustomAddress('');
+    setGeocodeError('');
+    setTimeout(() => addressInputRef.current?.focus(), 150);
+  };
+
+  const switchToCurrentMode = () => {
+    setLocationMode('current');
+    setCustomLocation(null);
+    setCustomAddress('');
+    setGeocodeError('');
+  };
+
   const activeCount = countActiveFilters(filters);
 
   const sorted = useMemo(() => {
     const list = [...places];
     if (sortByDistance && location) {
       list.sort(
-        (a, b) =>
-          distanceKm(location, a.location) - distanceKm(location, b.location),
+        (a, b) => distanceKm(location, a.location) - distanceKm(location, b.location),
       );
     } else {
       list.sort((a, b) => a.name.localeCompare(b.name, 'he'));
@@ -89,19 +148,13 @@ export function ListScreen() {
     return list;
   }, [places, sortByDistance, location]);
 
-  // Title reflects the active place-type shortcut (set from Home).
   const screenTitle =
-    filters.placeType === 'synagogue'
-      ? t.home.synagogues
-      : filters.placeType === 'restaurant'
-        ? t.home.restaurants
-        : filters.placeType === 'mikveh'
-          ? t.home.mikvahs
-          : filters.placeType === 'chabad_house'
-            ? t.home.chabadHouses
-            : filters.placeType === 'tzaddik_grave'
-              ? t.home.tzadikGraves
-              : t.list.title;
+    filters.placeType === 'synagogue' ? t.home.synagogues
+    : filters.placeType === 'restaurant' ? t.home.restaurants
+    : filters.placeType === 'mikveh' ? t.home.mikvahs
+    : filters.placeType === 'chabad_house' ? t.home.chabadHouses
+    : filters.placeType === 'tzaddik_grave' ? t.home.tzadikGraves
+    : t.list.title;
 
   return (
     <Screen padded>
@@ -122,7 +175,7 @@ export function ListScreen() {
         <Text style={styles.title}>{screenTitle}</Text>
       </View>
 
-      {/* Search pill — functional TextInput + filter icon in one row */}
+      {/* Search pill */}
       <View style={styles.searchPill}>
         <Ionicons name="search" size={18} color={colors.textMuted} />
         <TextInput
@@ -141,11 +194,7 @@ export function ListScreen() {
           </Pressable>
         )}
         <View style={styles.pillDivider} />
-        <Pressable
-          style={styles.filterTrigger}
-          onPress={() => setSheetOpen(true)}
-          hitSlop={8}
-        >
+        <Pressable style={styles.filterTrigger} onPress={() => setSheetOpen(true)} hitSlop={8}>
           <Ionicons
             name="options-outline"
             size={20}
@@ -155,8 +204,99 @@ export function ListScreen() {
         </Pressable>
       </View>
 
-      {/* Location banner */}
-      {(locationStatus === 'denied' || locationStatus === 'idle') && (
+      {/* Location mode selector */}
+      <View style={styles.locationModeRow}>
+        <Pressable
+          style={[styles.modePill, locationMode === 'current' && styles.modePillActive]}
+          onPress={switchToCurrentMode}
+        >
+          <Ionicons
+            name="navigate"
+            size={13}
+            color={locationMode === 'current' ? '#fff' : colors.textMuted}
+          />
+          <Text style={[styles.modePillText, locationMode === 'current' && styles.modePillTextActive]}>
+            סביבי
+          </Text>
+        </Pressable>
+
+        <Pressable
+          style={[styles.modePill, locationMode === 'other' && styles.modePillActive]}
+          onPress={switchToOtherMode}
+        >
+          <Ionicons
+            name="search"
+            size={13}
+            color={locationMode === 'other' ? '#fff' : colors.textMuted}
+          />
+          <Text style={[styles.modePillText, locationMode === 'other' && styles.modePillTextActive]}>
+            סביב מיקום אחר
+          </Text>
+        </Pressable>
+      </View>
+
+      {/* Address input when in "other location" mode */}
+      {locationMode === 'other' && (
+        <View style={styles.addressRow}>
+          <Pressable
+            style={[styles.geocodeBtn, geocoding && { opacity: 0.6 }]}
+            onPress={handleGeocode}
+            disabled={geocoding}
+          >
+            {geocoding
+              ? <ActivityIndicator size="small" color="#fff" />
+              : <Ionicons name="arrow-back" size={18} color="#fff" />}
+          </Pressable>
+          <TextInput
+            ref={addressInputRef}
+            style={styles.addressInput}
+            placeholder="עיר, רחוב, או מקום..."
+            placeholderTextColor={colors.textMuted}
+            value={customAddress}
+            onChangeText={(v) => { setCustomAddress(v); setGeocodeError(''); setCustomLocation(null); }}
+            textAlign="right"
+            returnKeyType="search"
+            onSubmitEditing={handleGeocode}
+          />
+          {customLocation && (
+            <Ionicons name="checkmark-circle" size={20} color={colors.primary} />
+          )}
+        </View>
+      )}
+      {geocodeError ? (
+        <Text style={styles.geocodeError}>{geocodeError}</Text>
+      ) : null}
+
+      {/* Category tabs */}
+      <ScrollView
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        style={styles.tabsScroll}
+        contentContainerStyle={styles.tabsContent}
+      >
+        {CATEGORY_TABS.map((tab) => {
+          const active = filters.placeType === tab.key;
+          return (
+            <Pressable
+              key={String(tab.key)}
+              style={[styles.tab, active && styles.tabActive]}
+              onPress={() => setFilter('placeType', tab.key)}
+            >
+              <Ionicons
+                name={tab.icon as any}
+                size={14}
+                color={active ? '#fff' : colors.textMuted}
+              />
+              <Text style={[styles.tabText, active && styles.tabTextActive]}>
+                {tab.label}
+              </Text>
+            </Pressable>
+          );
+        })}
+      </ScrollView>
+
+      {/* Location banner — only if no location at all */}
+      {locationMode === 'current' && (locationStatus === 'denied' || locationStatus === 'idle') && (
         <Pressable style={styles.locationBanner} onPress={requestLocation}>
           <Ionicons name="location-outline" size={16} color="#92400e" />
           <Text style={styles.locationBannerText}>
@@ -168,16 +308,9 @@ export function ListScreen() {
         </Pressable>
       )}
 
-      {/* DEBUG - remove later */}
-      <Text style={{fontSize:11,color:'red',textAlign:'center',marginBottom:4}}>
-        {location ? `📍 ${location.latitude.toFixed(4)}, ${location.longitude.toFixed(4)}` : '❌ אין מיקום'}
-      </Text>
-
       {/* Result count + sort indicator */}
       <View style={styles.metaRow}>
-        <Text style={styles.resultCount}>
-          {t.list.resultsCount(places.length)}
-        </Text>
+        <Text style={styles.resultCount}>{t.list.resultsCount(places.length)}</Text>
         <View style={styles.sortToggle}>
           <Ionicons
             name={sortByDistance ? 'navigate' : 'text'}
@@ -193,11 +326,7 @@ export function ListScreen() {
       {loading && !isRefreshing && places.length === 0 ? (
         <Loading />
       ) : error ? (
-        <EmptyState
-          title={t.common.error}
-          hint={t.common.retry}
-          icon="alert-circle-outline"
-        />
+        <EmptyState title={t.common.error} hint={t.common.retry} icon="alert-circle-outline" />
       ) : (
         <FlatList
           data={sorted}
@@ -212,12 +341,8 @@ export function ListScreen() {
           renderItem={({ item }) => (
             <PlaceCard
               place={item}
-              distanceKm={
-                location ? distanceKm(location, item.location) : null
-              }
-              onPress={() =>
-                navigation.navigate('PlaceDetail', { id: item.id })
-              }
+              distanceKm={location ? distanceKm(location, item.location) : null}
+              onPress={() => navigation.navigate('PlaceDetail', { id: item.id })}
             />
           )}
         />
@@ -259,7 +384,6 @@ const styles = StyleSheet.create({
     color: colors.primary,
   },
 
-  // ── Search pill ─────────────────────────────────────────
   searchPill: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -268,7 +392,7 @@ const styles = StyleSheet.create({
     borderRadius: radius.pill,
     paddingVertical: 13,
     paddingHorizontal: spacing.lg,
-    marginBottom: spacing.md,
+    marginBottom: spacing.sm,
     borderWidth: 0.5,
     borderColor: colors.border,
     ...shadow.card,
@@ -300,7 +424,105 @@ const styles = StyleSheet.create({
     borderColor: colors.surface,
   },
 
-  // ── Location banner ─────────────────────────────────────
+  // Location mode toggle
+  locationModeRow: {
+    flexDirection: 'row',
+    gap: 8,
+    marginBottom: spacing.sm,
+  },
+  modePill: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 5,
+    paddingVertical: 7,
+    paddingHorizontal: 14,
+    borderRadius: radius.pill,
+    backgroundColor: colors.surface,
+    borderWidth: 1,
+    borderColor: colors.border,
+  },
+  modePillActive: {
+    backgroundColor: colors.primary,
+    borderColor: colors.primary,
+  },
+  modePillText: {
+    fontSize: 13,
+    fontWeight: '600',
+    color: colors.textMuted,
+  },
+  modePillTextActive: {
+    color: '#fff',
+  },
+
+  // Address input row
+  addressRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    backgroundColor: colors.surface,
+    borderRadius: radius.md,
+    paddingVertical: 10,
+    paddingHorizontal: 12,
+    marginBottom: 4,
+    borderWidth: 0.5,
+    borderColor: colors.border,
+  },
+  addressInput: {
+    flex: 1,
+    fontSize: 14,
+    color: colors.text,
+    paddingVertical: 0,
+  },
+  geocodeBtn: {
+    width: 34,
+    height: 34,
+    borderRadius: radius.md,
+    backgroundColor: colors.primary,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  geocodeError: {
+    fontSize: 12,
+    color: colors.danger,
+    textAlign: 'right',
+    marginBottom: spacing.sm,
+  },
+
+  // Category tabs
+  tabsScroll: {
+    marginBottom: spacing.sm,
+    flexGrow: 0,
+  },
+  tabsContent: {
+    gap: 8,
+    paddingRight: 2,
+    paddingLeft: 4,
+  },
+  tab: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 5,
+    paddingVertical: 7,
+    paddingHorizontal: 13,
+    borderRadius: radius.pill,
+    backgroundColor: colors.surface,
+    borderWidth: 1,
+    borderColor: colors.border,
+  },
+  tabActive: {
+    backgroundColor: colors.primary,
+    borderColor: colors.primary,
+  },
+  tabText: {
+    fontSize: 12,
+    fontWeight: '600',
+    color: colors.textMuted,
+  },
+  tabTextActive: {
+    color: '#fff',
+  },
+
+  // Location banner
   locationBanner: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -321,7 +543,6 @@ const styles = StyleSheet.create({
     textAlign: 'right',
   },
 
-  // ── Meta row ────────────────────────────────────────────
   metaRow: {
     flexDirection: 'row',
     alignItems: 'center',
