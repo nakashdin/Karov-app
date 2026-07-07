@@ -6,6 +6,7 @@ export type TabParamList = {
   Map: undefined;
   List: { focus?: boolean } | undefined;
   Brachot: undefined;
+  Zmanim: undefined;
 };
 
 /** Root stack routes (tabs + pushed screens). */
