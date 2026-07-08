@@ -90,19 +90,7 @@ export function HomeScreen() {
         {/* Header */}
         <View style={styles.header}>
           <View style={styles.headerTopRow}>
-            {/* ☰ Menu button — right side in RTL */}
-            <Pressable
-              onPress={() => setMenuOpen(true)}
-              hitSlop={12}
-              style={styles.globeBtn}
-            >
-              <Ionicons name="menu-outline" size={22} color={colors.textMuted} />
-            </Pressable>
-
-            {/* בס״ד — center */}
-            <Text style={styles.bsd}>בס״ד</Text>
-
-            {/* Greeting + Globe — left side in RTL */}
+            {/* Greeting + Globe — left in LTR web */}
             <View style={styles.greetingGroup}>
               <Text style={styles.greeting}>{getDayGreeting(t)}</Text>
               <Pressable
@@ -113,6 +101,18 @@ export function HomeScreen() {
                 <Ionicons name="globe-outline" size={19} color={colors.textMuted} />
               </Pressable>
             </View>
+
+            {/* בס״ד — center */}
+            <Text style={styles.bsd}>בס״ד</Text>
+
+            {/* ☰ Menu button — right in LTR web */}
+            <Pressable
+              onPress={() => setMenuOpen(true)}
+              hitSlop={12}
+              style={styles.globeBtn}
+            >
+              <Ionicons name="menu-outline" size={22} color={colors.textMuted} />
+            </Pressable>
           </View>
           {userName ? (
             <Text style={styles.title}>שלום, {userName} 👋</Text>
