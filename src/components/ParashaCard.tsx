@@ -1,20 +1,26 @@
 import React from 'react';
-import { Linking, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { colors, radius, shadow, spacing } from '../theme';
 import { ParashaData } from '../hooks/useParasha';
+import { RootStackParamList } from '../navigation/types';
+
+type Nav = NativeStackNavigationProp<RootStackParamList>;
 
 interface Props {
   parasha: ParashaData;
 }
 
 export function ParashaCard({ parasha }: Props) {
-  const openSefaria = () => Linking.openURL(parasha.sefariaUrl);
+  const navigation = useNavigation<Nav>();
+  const openDetail = () => navigation.navigate('ParashaDetail');
 
   return (
     <Pressable
       style={({ pressed }) => [styles.card, pressed && styles.pressed]}
-      onPress={openSefaria}
+      onPress={openDetail}
     >
       <Ionicons name="chevron-back" size={16} color={colors.border} />
       <View style={styles.textBlock}>

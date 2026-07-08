@@ -7,6 +7,7 @@ export interface ParashaData {
   date: string;
   hebrewDate: string;
   sefariaUrl: string;
+  topicSlug: string; // e.g. "parashat-matot-masei" for Sefaria topics API
 }
 
 const CACHE_KEY = '@karov/parasha';
@@ -78,6 +79,10 @@ function toSefariaUrl(title: string): string {
   return `https://www.sefaria.org/Parashat_${slug}?lang=he`;
 }
 
+function toTopicSlug(title: string): string {
+  return title.replace(/^Parashat\s+/i, 'parashat-').toLowerCase().replace(/\s+/g, '-');
+}
+
 export function useParasha() {
   const [parasha, setParasha] = useState<ParashaData | null>(null);
   const [loading, setLoading] = useState(true);
@@ -106,12 +111,14 @@ export function useParasha() {
 
         if (parashaItem) {
           const rawHdate: string = parashaItem.hdate ?? '';
+          const englishTitle: string = parashaItem.title_orig ?? parashaItem.title;
           const data: ParashaData = {
-            name: parashaItem.title_orig ?? parashaItem.title,
+            name: englishTitle,
             hebrewName: parashaItem.hebrew ?? parashaItem.title,
             date: parashaItem.date,
             hebrewDate: rawHdate ? translitToHebrew(rawHdate) : '',
-            sefariaUrl: toSefariaUrl(parashaItem.title_orig ?? parashaItem.title),
+            sefariaUrl: toSefariaUrl(englishTitle),
+            topicSlug: toTopicSlug(englishTitle),
           };
           await AsyncStorage.setItem(CACHE_KEY, JSON.stringify(data));
           if (!cancelled) setParasha(data);

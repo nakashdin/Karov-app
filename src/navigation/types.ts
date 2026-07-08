@@ -20,6 +20,8 @@ export type RootStackParamList = {
   Report: { placeId: string };
   List: { focus?: boolean } | undefined;
   AddPlace: undefined;
+  ParashaDetail: undefined;
+  KashruyotFilter: undefined;
 };
 
 declare global {

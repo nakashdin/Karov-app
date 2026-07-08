@@ -12,6 +12,8 @@ import { ListScreen } from '../screens/ListScreen';
 import { SplashScreen } from '../screens/SplashScreen';
 import { LoginScreen } from '../screens/LoginScreen';
 import { LocationPermissionScreen } from '../screens/LocationPermissionScreen';
+import { ParashaDetailScreen } from '../screens/ParashaDetailScreen';
+import { KashruyotFilterScreen } from '../screens/KashruyotFilterScreen';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -36,6 +38,8 @@ export function RootNavigator() {
       <Stack.Screen name="MapDetail"          component={MapDetailScreen}         options={{ headerShown: false, animation: 'slide_from_left' }} />
       <Stack.Screen name="Report"             component={ReportScreen}            options={{ title: t.report.title, presentation: 'modal' }} />
       <Stack.Screen name="AddPlace"           component={AddPlaceScreen}          options={{ headerShown: false, presentation: 'modal' }} />
+      <Stack.Screen name="ParashaDetail"      component={ParashaDetailScreen}     options={{ headerShown: false }} />
+      <Stack.Screen name="KashruyotFilter"   component={KashruyotFilterScreen}   options={{ headerShown: false }} />
     </Stack.Navigator>
   );
 }
