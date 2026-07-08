@@ -74,6 +74,7 @@ export function ListScreen() {
   const [sheetOpen, setSheetOpen] = useState(false);
   const [birkatOpen, setBirkatOpen] = useState(false);
   const [isRefreshing, setIsRefreshing] = useState(false);
+  const [radiusKm, setRadiusKm] = useState<number>(5);
 
   // Location mode: use current GPS or a custom geocoded address
   const [locationMode, setLocationMode] = useState<LocationMode>('current');
@@ -147,17 +148,18 @@ export function ListScreen() {
 
   const activeCount = countActiveFilters(filters);
 
+  const RADIUS_OPTIONS = [1, 3, 5, 10, 25, 50, 100];
+
   const sorted = useMemo(() => {
-    const list = [...places];
+    let list = [...places];
     if (sortByDistance && location) {
-      list.sort(
-        (a, b) => distanceKm(location, a.location) - distanceKm(location, b.location),
-      );
+      list = list.filter(p => distanceKm(location, p.location) <= radiusKm);
+      list.sort((a, b) => distanceKm(location, a.location) - distanceKm(location, b.location));
     } else {
       list.sort((a, b) => a.name.localeCompare(b.name, 'he'));
     }
     return list;
-  }, [places, sortByDistance, location]);
+  }, [places, sortByDistance, location, radiusKm]);
 
   const screenTitle =
     filters.placeType === 'synagogue'    ? t.listCategories.synagogue
@@ -260,6 +262,29 @@ export function ListScreen() {
         )}
       </View>
       {geocodeError ? <Text style={styles.geocodeError}>{geocodeError}</Text> : null}
+
+      {/* Radius chips — only when we have a location to sort by */}
+      {showResults && sortByDistance && (
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          style={styles.tabsScroll}
+          contentContainerStyle={styles.tabsContent}
+        >
+          {RADIUS_OPTIONS.map((r) => (
+            <Pressable
+              key={r}
+              style={[styles.tab, radiusKm === r && styles.tabActive]}
+              onPress={() => setRadiusKm(r)}
+            >
+              <Ionicons name="navigate-circle-outline" size={13} color={radiusKm === r ? '#fff' : colors.textMuted} />
+              <Text style={[styles.tabText, radiusKm === r && styles.tabTextActive]}>
+                {r} ק״מ
+              </Text>
+            </Pressable>
+          ))}
+        </ScrollView>
+      )}
 
       {/* Search pill — hidden in "other" mode until a location is geocoded */}
       {(locationMode === 'current' || customLocation !== null) && <View style={styles.searchPill}>
