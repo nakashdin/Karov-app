@@ -154,4 +154,14 @@ export const en = {
     chabad_house: 'Chabad Houses',
     tzaddik_grave: 'Tzaddik Graves',
   },
+
+  menu: {
+    title: 'Menu',
+    contact: 'Contact Us',
+    donate: 'Donate',
+    share: 'Share Karov',
+    about: 'About',
+    language: 'Language',
+    shareMessage: 'Karov – Everything a Jew needs, close to you:',
+  },
 } as const;

@@ -154,4 +154,14 @@ export const ru = {
     chabad_house: 'Дома Хабада',
     tzaddik_grave: 'Могилы праведников',
   },
+
+  menu: {
+    title: 'Меню',
+    contact: 'Связаться с нами',
+    donate: 'Пожертвовать',
+    share: 'Поделиться Каров',
+    about: 'О приложении',
+    language: 'Язык',
+    shareMessage: 'Каров – всё необходимое для еврея, рядом с тобой:',
+  },
 } as const;

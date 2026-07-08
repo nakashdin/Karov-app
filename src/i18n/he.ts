@@ -154,4 +154,14 @@ export const he = {
     chabad_house: 'בתי חב"ד',
     tzaddik_grave: 'קברי צדיקים',
   },
+
+  menu: {
+    title: 'תפריט',
+    contact: 'צור קשר',
+    donate: 'לתרומה',
+    share: 'שתף את קרוב',
+    about: 'אודות',
+    language: 'שפה',
+    shareMessage: 'קרוב – כל מה שיהודי צריך, קרוב אליך:',
+  },
 } as const;

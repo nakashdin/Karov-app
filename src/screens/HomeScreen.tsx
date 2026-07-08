@@ -41,7 +41,7 @@ export function HomeScreen() {
   const { status, location, request } = useSharedLocation();
   const { setFilters } = useFilters();
   const [userName, setUserName] = useState<string | null>(null);
-  const [pickerOpen, setPickerOpen] = useState(false);
+  const [langOpen, setLangOpen] = useState(false);
 
   useEffect(() => {
     AsyncStorage.getItem('@karov/auth').then((raw) => {
@@ -88,14 +88,23 @@ export function HomeScreen() {
         {/* Header */}
         <View style={styles.header}>
           <View style={styles.headerTopRow}>
-            {/* בס״ד — appears on the right in RTL */}
+            {/* ☰ Menu button — right side in RTL */}
+            <Pressable
+              onPress={() => navigation.navigate('Menu')}
+              hitSlop={12}
+              style={styles.globeBtn}
+            >
+              <Ionicons name="menu-outline" size={22} color={colors.textMuted} />
+            </Pressable>
+
+            {/* בס״ד — center */}
             <Text style={styles.bsd}>בס״ד</Text>
 
-            {/* Greeting + Globe button — appears on the left in RTL */}
+            {/* Greeting + Globe — left side in RTL */}
             <View style={styles.greetingGroup}>
               <Text style={styles.greeting}>{getDayGreeting(t)}</Text>
               <Pressable
-                onPress={() => setPickerOpen(true)}
+                onPress={() => setLangOpen(true)}
                 hitSlop={12}
                 style={styles.globeBtn}
               >
@@ -214,7 +223,7 @@ export function HomeScreen() {
         )}
       </ScrollView>
 
-      <LanguagePicker visible={pickerOpen} onClose={() => setPickerOpen(false)} />
+      <LanguagePicker visible={langOpen} onClose={() => setLangOpen(false)} />
     </Screen>
   );
 }

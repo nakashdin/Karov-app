@@ -154,4 +154,14 @@ export const fr = {
     chabad_house: 'Maisons Chabad',
     tzaddik_grave: 'Tombes des Tsadikim',
   },
+
+  menu: {
+    title: 'Menu',
+    contact: 'Nous contacter',
+    donate: 'Faire un don',
+    share: 'Partager Karov',
+    about: 'À propos',
+    language: 'Langue',
+    shareMessage: 'Karov – Tout ce dont un Juif a besoin, près de toi :',
+  },
 } as const;
