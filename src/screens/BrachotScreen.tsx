@@ -3,29 +3,54 @@ import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { Screen } from '../components/Screen';
 import { colors, radius, spacing } from '../theme';
-import { BIRKAT_HAMAZON, Nusach } from '../data/birkatHamazon';
+import { BRACHOT_CATEGORIES, Blessing } from '../data/brachot';
+import { Nusach } from '../data/birkatHamazon';
+
+type ViewState =
+  | { type: 'list' }
+  | { type: 'nusach'; blessing: Blessing }
+  | { type: 'text'; blessing: Blessing; nusach?: Nusach };
 
 export function BrachotScreen() {
-  const [nusach, setNusach] = useState<Nusach | null>(null);
+  const [view, setView] = useState<ViewState>({ type: 'list' });
 
-  if (nusach) {
-    const paragraphs = BIRKAT_HAMAZON[nusach];
+  if (view.type === 'text') {
+    const { blessing, nusach } = view;
+    const paragraphs = nusach
+      ? blessing.nusachim![nusach]
+      : blessing.paragraphs!;
+
     return (
       <Screen padded>
         <View style={styles.header}>
-          <Pressable onPress={() => setNusach(null)} style={styles.back} hitSlop={10}>
+          <Pressable
+            onPress={() =>
+              blessing.hasNusach
+                ? setView({ type: 'nusach', blessing })
+                : setView({ type: 'list' })
+            }
+            style={styles.back}
+            hitSlop={10}
+          >
             <Ionicons name="chevron-forward" size={22} color={colors.primary} />
-            <Text style={styles.backText}>ברכות</Text>
+            <Text style={styles.backText}>
+              {blessing.hasNusach ? blessing.title : 'ברכות'}
+            </Text>
           </Pressable>
-          <Text style={styles.headerTitle}>ברכת המזון</Text>
+          <Text style={styles.headerTitle}>{blessing.title}</Text>
           <View style={{ width: 60 }} />
         </View>
 
-        <Text style={styles.nusachLabel}>
-          {nusach === 'ashkenaz' ? '🕍 נוסח אשכנז' : '🕌 נוסח ספרד'}
-        </Text>
+        {nusach ? (
+          <Text style={styles.nusachLabel}>
+            {nusach === 'ashkenaz' ? '🕍 נוסח אשכנז' : '🕌 נוסח ספרד'}
+          </Text>
+        ) : null}
 
-        <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={styles.textContent}>
+        <ScrollView
+          showsVerticalScrollIndicator={false}
+          contentContainerStyle={styles.textContent}
+        >
           {paragraphs.map((para, i) => (
             <View key={i} style={styles.para}>
               {para.title ? (
@@ -40,32 +65,90 @@ export function BrachotScreen() {
     );
   }
 
+  if (view.type === 'nusach') {
+    const { blessing } = view;
+    return (
+      <Screen padded>
+        <View style={styles.header}>
+          <Pressable
+            onPress={() => setView({ type: 'list' })}
+            style={styles.back}
+            hitSlop={10}
+          >
+            <Ionicons name="chevron-forward" size={22} color={colors.primary} />
+            <Text style={styles.backText}>ברכות</Text>
+          </Pressable>
+          <Text style={styles.headerTitle}>{blessing.title}</Text>
+          <View style={{ width: 60 }} />
+        </View>
+
+        <View style={styles.nusachCards}>
+          <Pressable
+            style={styles.nusachCard}
+            onPress={() => setView({ type: 'text', blessing, nusach: 'ashkenaz' })}
+          >
+            <View style={styles.nusachIcon}><Text style={styles.emoji}>🕍</Text></View>
+            <View style={styles.nusachText}>
+              <Text style={styles.nusachTitle}>נוסח אשכנז</Text>
+              <Text style={styles.nusachSub}>מנהג אשכנז</Text>
+            </View>
+            <Ionicons name="chevron-back" size={18} color={colors.textMuted} />
+          </Pressable>
+
+          <Pressable
+            style={styles.nusachCard}
+            onPress={() => setView({ type: 'text', blessing, nusach: 'sfarad' })}
+          >
+            <View style={styles.nusachIcon}><Text style={styles.emoji}>🕌</Text></View>
+            <View style={styles.nusachText}>
+              <Text style={styles.nusachTitle}>נוסח ספרד</Text>
+              <Text style={styles.nusachSub}>מנהג ספרד ועדות המזרח</Text>
+            </View>
+            <Ionicons name="chevron-back" size={18} color={colors.textMuted} />
+          </Pressable>
+        </View>
+      </Screen>
+    );
+  }
+
   return (
     <Screen padded>
-      <Text style={styles.screenTitle}>ברכות</Text>
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <Text style={styles.screenTitle}>ברכות</Text>
 
-      {/* ברכת המזון card */}
-      <View style={styles.section}>
-        <Text style={styles.sectionTitle}>ברכת המזון</Text>
+        {BRACHOT_CATEGORIES.map((cat) => (
+          <View key={cat.id} style={styles.section}>
+            <Text style={styles.sectionTitle}>{cat.title}</Text>
 
-        <Pressable style={styles.nusachCard} onPress={() => setNusach('ashkenaz')}>
-          <View style={styles.nusachIcon}><Text style={styles.emoji}>🕍</Text></View>
-          <View style={styles.nusachText}>
-            <Text style={styles.nusachTitle}>נוסח אשכנז</Text>
-            <Text style={styles.nusachSub}>מנהג אשכנז</Text>
+            <View style={styles.cards}>
+              {cat.blessings.map((blessing) => (
+                <Pressable
+                  key={blessing.id}
+                  style={styles.card}
+                  onPress={() =>
+                    blessing.hasNusach
+                      ? setView({ type: 'nusach', blessing })
+                      : setView({ type: 'text', blessing })
+                  }
+                >
+                  <View style={styles.cardIcon}>
+                    <Text style={styles.emoji}>{blessing.emoji}</Text>
+                  </View>
+                  <View style={styles.cardText}>
+                    <Text style={styles.cardTitle}>{blessing.title}</Text>
+                    {blessing.subtitle ? (
+                      <Text style={styles.cardSub}>{blessing.subtitle}</Text>
+                    ) : null}
+                  </View>
+                  <Ionicons name="chevron-back" size={16} color={colors.textMuted} />
+                </Pressable>
+              ))}
+            </View>
           </View>
-          <Ionicons name="chevron-back" size={18} color={colors.textMuted} />
-        </Pressable>
+        ))}
 
-        <Pressable style={styles.nusachCard} onPress={() => setNusach('sfarad')}>
-          <View style={styles.nusachIcon}><Text style={styles.emoji}>🕌</Text></View>
-          <View style={styles.nusachText}>
-            <Text style={styles.nusachTitle}>נוסח ספרד</Text>
-            <Text style={styles.nusachSub}>מנהג ספרד ועדות המזרח</Text>
-          </View>
-          <Ionicons name="chevron-back" size={18} color={colors.textMuted} />
-        </Pressable>
-      </View>
+        <View style={{ height: 40 }} />
+      </ScrollView>
     </Screen>
   );
 }
@@ -80,49 +163,57 @@ const styles = StyleSheet.create({
     paddingBottom: spacing.xl,
   },
   section: {
-    gap: 10,
+    marginBottom: spacing.xl,
   },
   sectionTitle: {
-    fontSize: 16,
+    fontSize: 13,
     fontWeight: '700',
     color: colors.textMuted,
     textAlign: 'right',
-    marginBottom: 4,
+    marginBottom: spacing.sm,
+    textTransform: 'uppercase',
+    letterSpacing: 0.5,
   },
-  nusachCard: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 14,
-    backgroundColor: colors.surface,
+  cards: {
     borderRadius: radius.lg,
-    padding: spacing.lg,
+    overflow: 'hidden',
     borderWidth: 0.5,
     borderColor: colors.border,
   },
-  nusachIcon: {
-    width: 44,
-    height: 44,
-    borderRadius: 22,
+  card: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+    backgroundColor: colors.surface,
+    paddingVertical: spacing.md,
+    paddingHorizontal: spacing.lg,
+    borderBottomWidth: 0.5,
+    borderBottomColor: colors.border,
+  },
+  cardIcon: {
+    width: 38,
+    height: 38,
+    borderRadius: 10,
     backgroundColor: colors.primaryLight,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  emoji: { fontSize: 22 },
-  nusachText: { flex: 1 },
-  nusachTitle: {
-    fontSize: 16,
+  emoji: { fontSize: 20 },
+  cardText: { flex: 1 },
+  cardTitle: {
+    fontSize: 15,
     fontWeight: '700',
     color: colors.text,
     textAlign: 'right',
   },
-  nusachSub: {
+  cardSub: {
     fontSize: 12,
     color: colors.textMuted,
     textAlign: 'right',
     marginTop: 2,
   },
 
-  // Text view
+  // Header (text + nusach views)
   header: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -152,6 +243,45 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     marginBottom: spacing.lg,
   },
+
+  // Nusach picker
+  nusachCards: {
+    gap: 10,
+    marginTop: spacing.md,
+  },
+  nusachCard: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 14,
+    backgroundColor: colors.surface,
+    borderRadius: radius.lg,
+    padding: spacing.lg,
+    borderWidth: 0.5,
+    borderColor: colors.border,
+  },
+  nusachIcon: {
+    width: 44,
+    height: 44,
+    borderRadius: 22,
+    backgroundColor: colors.primaryLight,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  nusachText: { flex: 1 },
+  nusachTitle: {
+    fontSize: 16,
+    fontWeight: '700',
+    color: colors.text,
+    textAlign: 'right',
+  },
+  nusachSub: {
+    fontSize: 12,
+    color: colors.textMuted,
+    textAlign: 'right',
+    marginTop: 2,
+  },
+
+  // Text reader
   textContent: {
     paddingBottom: 20,
   },
@@ -159,9 +289,9 @@ const styles = StyleSheet.create({
     marginBottom: spacing.xl,
   },
   paraTitle: {
-    fontSize: 14,
+    fontSize: 13,
     fontWeight: '800',
-    color: colors.text,
+    color: colors.primary,
     textAlign: 'right',
     marginBottom: 8,
     borderRightWidth: 3,
@@ -169,8 +299,8 @@ const styles = StyleSheet.create({
     paddingRight: 8,
   },
   paraText: {
-    fontSize: 18,
-    lineHeight: 32,
+    fontSize: 19,
+    lineHeight: 34,
     color: colors.text,
     textAlign: 'right',
   },
