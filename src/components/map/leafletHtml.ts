@@ -25,6 +25,7 @@ function markerColor(place: Place): string {
 export function buildLeafletHtml(
   places: Place[],
   userLocation: GeoPoint | null,
+  options?: { initialCenter?: [number, number]; initialZoom?: number; highlightId?: string },
 ): string {
   const markers = places.map((p) => ({
     id: p.id,
@@ -34,10 +35,14 @@ export function buildLeafletHtml(
     color: markerColor(p),
   }));
 
-  const center = userLocation
-    ? [userLocation.latitude, userLocation.longitude]
-    : ISRAEL_CENTER;
-  const zoom = userLocation ? USER_ZOOM : DEFAULT_ZOOM;
+  const center = options?.initialCenter
+    ? options.initialCenter
+    : userLocation
+      ? [userLocation.latitude, userLocation.longitude]
+      : ISRAEL_CENTER;
+  const zoom = options?.initialZoom
+    ?? (userLocation ? USER_ZOOM : DEFAULT_ZOOM);
+  const highlightId = options?.highlightId ?? null;
   const user = userLocation
     ? [userLocation.latitude, userLocation.longitude]
     : null;
@@ -60,6 +65,7 @@ export function buildLeafletHtml(
   <script>
     var PLACES = ${JSON.stringify(markers)};
     var USER = ${JSON.stringify(user)};
+    var HIGHLIGHT_ID = ${JSON.stringify(highlightId)};
     var map = L.map('map', { zoomControl: false }).setView(${JSON.stringify(center)}, ${zoom});
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
@@ -78,11 +84,13 @@ export function buildLeafletHtml(
       maxClusterRadius: 60
     });
     PLACES.forEach(function (p) {
+      var isHL = HIGHLIGHT_ID && p.id === HIGHLIGHT_ID;
+      var size = isHL ? 34 : 24;
       var icon = L.divIcon({
         className: '',
-        html: '<div class="pin" style="background:' + p.color + '"></div>',
-        iconSize: [24, 24],
-        iconAnchor: [12, 12]
+        html: '<div class="pin" style="background:' + p.color + ';width:' + size + 'px;height:' + size + 'px;' + (isHL ? 'border-width:4px;box-shadow:0 0 0 2px rgba(0,0,0,0.25),0 4px 10px rgba(0,0,0,0.25)' : '') + '"></div>',
+        iconSize: [size, size],
+        iconAnchor: [size / 2, size / 2]
       });
       var mk = L.marker([p.lat, p.lng], { icon: icon });
       mk.on('click', function () { selectPlace(p.id); });

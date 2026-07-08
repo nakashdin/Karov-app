@@ -2,22 +2,19 @@ import React, { useEffect, useMemo } from 'react';
 import type { MapViewProps } from './MapView';
 import { buildLeafletHtml } from './leafletHtml';
 
-/**
- * Web map: the same Leaflet + OpenStreetMap document rendered in an <iframe>.
- * On web the React renderer is react-dom, so an intrinsic <iframe> works and
- * we avoid relying on react-native-webview's web support.
- */
 export function LeafletMap({
   places,
   userLocation,
   onSelectPlace,
+  initialCenter,
+  initialZoom,
+  highlightId,
 }: MapViewProps) {
   const html = useMemo(
-    () => buildLeafletHtml(places, userLocation ?? null),
-    [places, userLocation],
+    () => buildLeafletHtml(places, userLocation ?? null, { initialCenter, initialZoom, highlightId }),
+    [places, userLocation, initialCenter, initialZoom, highlightId],
   );
 
-  // Marker taps arrive as window postMessages from the iframe.
   useEffect(() => {
     const handler = (event: MessageEvent) => {
       try {

@@ -12,10 +12,13 @@ export function LeafletMap({
   places,
   userLocation,
   onSelectPlace,
+  initialCenter,
+  initialZoom,
+  highlightId,
 }: MapViewProps) {
   const html = useMemo(
-    () => buildLeafletHtml(places, userLocation ?? null),
-    [places, userLocation],
+    () => buildLeafletHtml(places, userLocation ?? null, { initialCenter, initialZoom, highlightId }),
+    [places, userLocation, initialCenter, initialZoom, highlightId],
   );
 
   return (

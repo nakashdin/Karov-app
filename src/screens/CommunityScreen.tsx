@@ -488,7 +488,7 @@ const styles = StyleSheet.create({
 
   // Modal overlay
   modalBackdrop: {
-    ...StyleSheet.absoluteFillObject,
+    ...StyleSheet.absoluteFill,
     backgroundColor: 'rgba(0,0,0,0.45)',
     justifyContent: 'flex-end',
     zIndex: 100,
