@@ -16,11 +16,13 @@ import { Loading } from '../components/Loading';
 import { colors, radius, shadow, spacing } from '../theme';
 import { t } from '../i18n';
 import { usePlaces } from '../hooks/usePlaces';
+import { useParasha } from '../hooks/useParasha';
 import { useSharedLocation } from '../context/LocationContext';
 import { useFilters } from '../context/FiltersContext';
 import { distanceKm } from '../utils/geo';
 import { emptyFilters, PlaceType } from '../types';
 import { RootStackParamList } from '../navigation/types';
+import { ParashaCard } from '../components/ParashaCard';
 
 type Nav = NativeStackNavigationProp<RootStackParamList>;
 
@@ -32,6 +34,7 @@ function getDayGreeting(): string {
 export function HomeScreen() {
   const navigation = useNavigation<Nav>();
   const { places, loading } = usePlaces();
+  const { parasha } = useParasha();
   const { status, location, request } = useSharedLocation();
   const { setFilters } = useFilters();
   const [userName, setUserName] = useState<string | null>(null);
@@ -120,6 +123,9 @@ export function HomeScreen() {
             <Ionicons name="navigate" size={22} color={colors.primary} />
           </View>
         </Pressable>
+
+        {/* Parasha card */}
+        {parasha && <ParashaCard parasha={parasha} />}
 
         {/* Shortcut grid */}
         <View style={styles.shortcutRow}>
