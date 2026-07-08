@@ -75,6 +75,7 @@ export function ListScreen() {
   const [birkatOpen, setBirkatOpen] = useState(false);
   const [isRefreshing, setIsRefreshing] = useState(false);
   const [radiusKm, setRadiusKm] = useState<number>(5);
+  const [radiusOpen, setRadiusOpen] = useState(false);
 
   // Location mode: use current GPS or a custom geocoded address
   const [locationMode, setLocationMode] = useState<LocationMode>('current');
@@ -263,29 +264,6 @@ export function ListScreen() {
       </View>
       {geocodeError ? <Text style={styles.geocodeError}>{geocodeError}</Text> : null}
 
-      {/* Radius chips — only when we have a location to sort by */}
-      {showResults && sortByDistance && (
-        <ScrollView
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          style={styles.tabsScroll}
-          contentContainerStyle={styles.tabsContent}
-        >
-          {RADIUS_OPTIONS.map((r) => (
-            <Pressable
-              key={r}
-              style={[styles.tab, radiusKm === r && styles.tabActive]}
-              onPress={() => setRadiusKm(r)}
-            >
-              <Ionicons name="navigate-circle-outline" size={13} color={radiusKm === r ? '#fff' : colors.textMuted} />
-              <Text style={[styles.tabText, radiusKm === r && styles.tabTextActive]}>
-                {r} ק״מ
-              </Text>
-            </Pressable>
-          ))}
-        </ScrollView>
-      )}
-
       {/* Search pill — hidden in "other" mode until a location is geocoded */}
       {(locationMode === 'current' || customLocation !== null) && <View style={styles.searchPill}>
         <Ionicons name="search" size={18} color={colors.textMuted} />
@@ -395,13 +373,44 @@ export function ListScreen() {
       ) : (
         <>
           <View style={styles.metaRow}>
-            <Text style={styles.resultCount}>{t.list.resultsCount(places.length)}</Text>
-            <View style={styles.sortToggle}>
-              <Ionicons name={sortByDistance ? 'navigate' : 'text'} size={14} color={colors.primary} />
-              <Text style={styles.sortText}>
-                {sortByDistance ? t.list.sortByDistance : t.list.sortByName}
-              </Text>
-            </View>
+            <Text style={styles.resultCount}>{t.list.resultsCount(sorted.length)}</Text>
+            {sortByDistance ? (
+              <View>
+                <Pressable
+                  style={styles.sortToggle}
+                  onPress={() => setRadiusOpen(o => !o)}
+                >
+                  <Ionicons name="navigate" size={14} color={colors.primary} />
+                  <Text style={styles.sortText}>לפי מרחק · {radiusKm} ק״מ</Text>
+                  <Ionicons
+                    name={radiusOpen ? 'chevron-up' : 'chevron-down'}
+                    size={13}
+                    color={colors.primary}
+                  />
+                </Pressable>
+                {radiusOpen && (
+                  <View style={styles.radiusDropdown}>
+                    {RADIUS_OPTIONS.map((r) => (
+                      <Pressable
+                        key={r}
+                        style={[styles.radiusOption, radiusKm === r && styles.radiusOptionActive]}
+                        onPress={() => { setRadiusKm(r); setRadiusOpen(false); }}
+                      >
+                        <Text style={[styles.radiusOptionText, radiusKm === r && styles.radiusOptionTextActive]}>
+                          {r} ק״מ
+                        </Text>
+                        {radiusKm === r && <Ionicons name="checkmark" size={14} color={colors.primary} />}
+                      </Pressable>
+                    ))}
+                  </View>
+                )}
+              </View>
+            ) : (
+              <View style={styles.sortToggle}>
+                <Ionicons name="text" size={14} color={colors.primary} />
+                <Text style={styles.sortText}>{t.list.sortByName}</Text>
+              </View>
+            )}
           </View>
           {loading && !isRefreshing && places.length === 0 ? (
         <Loading />
@@ -673,5 +682,40 @@ const styles = StyleSheet.create({
   listContent: {
     paddingBottom: spacing.xxl,
     flexGrow: 1,
+  },
+
+  radiusDropdown: {
+    position: 'absolute',
+    top: 32,
+    left: 0,
+    right: 0,
+    backgroundColor: colors.surface,
+    borderRadius: radius.lg,
+    borderWidth: 1,
+    borderColor: colors.border,
+    zIndex: 50,
+    overflow: 'hidden',
+    ...shadow.card,
+  },
+  radiusOption: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingVertical: 11,
+    paddingHorizontal: 16,
+    borderBottomWidth: 0.5,
+    borderBottomColor: colors.border,
+  },
+  radiusOptionActive: {
+    backgroundColor: colors.primaryLight,
+  },
+  radiusOptionText: {
+    fontSize: 14,
+    fontWeight: '600',
+    color: colors.text,
+    textAlign: 'right',
+  },
+  radiusOptionTextActive: {
+    color: colors.primary,
   },
 });
