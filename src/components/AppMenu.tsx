@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import {
-  Alert,
   Linking,
   Modal,
   Pressable,
@@ -11,6 +10,7 @@ import {
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { LanguagePicker } from './LanguagePicker';
+import { AboutModal } from './AboutModal';
 import { colors, radius, shadow, spacing } from '../theme';
 import { useLanguage } from '../context/LanguageContext';
 
@@ -26,10 +26,16 @@ interface Props {
 export function AppMenu({ visible, onClose }: Props) {
   const { t } = useLanguage();
   const [langOpen, setLangOpen] = useState(false);
+  const [aboutOpen, setAboutOpen] = useState(false);
 
   const openLang = () => {
     onClose();
     setTimeout(() => setLangOpen(true), 300);
+  };
+
+  const openAbout = () => {
+    onClose();
+    setTimeout(() => setAboutOpen(true), 300);
   };
 
   const rows = [
@@ -55,7 +61,7 @@ export function AppMenu({ visible, onClose }: Props) {
       key: 'about',
       icon: 'information-circle-outline' as const,
       label: t.menu.about,
-      onPress: () => { onClose(); Alert.alert('קרוב', 'גרסה 1.0\nכל מה שיהודי צריך, קרוב אליך.'); },
+      onPress: openAbout,
     },
     {
       key: 'language',
@@ -104,6 +110,7 @@ export function AppMenu({ visible, onClose }: Props) {
       </Modal>
 
       <LanguagePicker visible={langOpen} onClose={() => setLangOpen(false)} />
+      <AboutModal visible={aboutOpen} onClose={() => setAboutOpen(false)} />
     </>
   );
 }
