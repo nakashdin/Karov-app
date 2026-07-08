@@ -49,7 +49,8 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
         I18nManager.allowRTL(rtl);
         I18nManager.forceRTL(rtl);
         setLocaleState(l);
-        // A reload is required for the RTL change to take effect
+        setReady(true);
+        // Reload needed on native for RTL layout to take effect
         reloadApp();
         return;
       }
