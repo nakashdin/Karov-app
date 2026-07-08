@@ -8,7 +8,7 @@ import { MapView } from '../components/map/MapView';
 import { PlaceBottomCard } from '../components/map/PlaceBottomCard';
 import { FilterSheet } from '../components/FilterSheet';
 import { colors, radius, shadow, spacing } from '../theme';
-import { t } from '../i18n';
+import { useLanguage } from '../context/LanguageContext';
 import { usePlaces } from '../hooks/usePlaces';
 import { useSharedLocation } from '../context/LocationContext';
 import { useFilters } from '../context/FiltersContext';
@@ -18,6 +18,7 @@ import { RootStackParamList } from '../navigation/types';
 type Nav = NativeStackNavigationProp<RootStackParamList>;
 
 export function MapScreen() {
+  const { t } = useLanguage();
   const navigation = useNavigation<Nav>();
   const { filters } = useFilters();
   const { places } = usePlaces(filters);
@@ -34,17 +35,12 @@ export function MapScreen() {
 
   // Title reflects the active place-type shortcut (set from Home).
   const screenTitle =
-    filters.placeType === 'synagogue'
-      ? t.home.synagogues
-      : filters.placeType === 'restaurant'
-        ? t.home.restaurants
-        : filters.placeType === 'mikveh'
-          ? t.home.mikvahs
-          : filters.placeType === 'chabad_house'
-            ? t.home.chabadHouses
-            : filters.placeType === 'tzaddik_grave'
-              ? t.home.tzadikGraves
-              : t.map.title;
+    filters.placeType === 'synagogue'     ? t.listCategories.synagogue
+    : filters.placeType === 'restaurant'  ? t.listCategories.restaurant
+    : filters.placeType === 'mikveh'      ? t.listCategories.mikveh
+    : filters.placeType === 'chabad_house'   ? t.listCategories.chabad_house
+    : filters.placeType === 'tzaddik_grave'  ? t.listCategories.tzaddik_grave
+    : t.map.title;
 
   return (
     <SafeAreaView style={styles.container} edges={['top']}>

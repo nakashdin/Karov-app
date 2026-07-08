@@ -1,9 +1,10 @@
-/**
- * All user-facing Hebrew strings live here.
- * Centralizing them keeps screens clean and makes a future i18n library swap trivial.
- */
 export const he = {
   appName: 'קרוב – כל מה שיהודי צריך, קרוב אליך',
+
+  greeting: {
+    shabbat: 'שבת שלום',
+    weekday: 'שבוע טוב',
+  },
 
   tabs: {
     home: 'בית',
@@ -134,5 +135,23 @@ export const he = {
   permissions: {
     denied: 'הרשאת מיקום נדחתה',
     deniedHint: 'ניתן לאפשר מיקום בהגדרות המכשיר.',
+  },
+
+  cuisine: {
+    coffee_shop: 'בית קפה',
+    burger: 'בורגר',
+    pizza: 'פיצה',
+    street_food: 'מזון רחוב',
+    sushi: 'סושי',
+    meat: 'בשרים',
+  },
+
+  listCategories: {
+    all: 'הכל',
+    restaurant: 'מסעדות',
+    synagogue: 'בתי כנסת',
+    mikveh: 'מקוואות',
+    chabad_house: 'בתי חב"ד',
+    tzaddik_grave: 'קברי צדיקים',
   },
 } as const;

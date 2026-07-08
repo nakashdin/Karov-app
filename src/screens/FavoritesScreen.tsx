@@ -7,7 +7,7 @@ import { PlaceCard } from '../components/PlaceCard';
 import { EmptyState } from '../components/EmptyState';
 import { Loading } from '../components/Loading';
 import { spacing } from '../theme';
-import { t } from '../i18n';
+import { useLanguage } from '../context/LanguageContext';
 import { usePlaces } from '../hooks/usePlaces';
 import { useSharedLocation } from '../context/LocationContext';
 import { useFavorites } from '../context/FavoritesContext';
@@ -17,6 +17,7 @@ import { RootStackParamList } from '../navigation/types';
 type Nav = NativeStackNavigationProp<RootStackParamList>;
 
 export function FavoritesScreen() {
+  const { t } = useLanguage();
   const navigation = useNavigation<Nav>();
   const { places, loading } = usePlaces();
   const { location } = useSharedLocation();

@@ -1,5 +1,5 @@
 import { GeoPoint } from '../types';
-import { t } from '../i18n';
+import type { Strings } from '../i18n';
 
 const EARTH_RADIUS_KM = 6371;
 
@@ -18,8 +18,8 @@ export function distanceKm(a: GeoPoint, b: GeoPoint): number {
   return 2 * EARTH_RADIUS_KM * Math.asin(Math.sqrt(h));
 }
 
-/** Human-readable distance string in Hebrew (meters under 1km, else km). */
-export function formatDistance(km: number): string {
+/** Human-readable distance string (meters under 1km, else km). */
+export function formatDistance(km: number, t: Pick<Strings, 'common'>): string {
   if (km < 1) {
     const meters = Math.max(10, Math.round(km * 1000 / 10) * 10);
     return `${meters} ${t.common.meters}`;

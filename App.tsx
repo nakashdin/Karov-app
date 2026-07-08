@@ -12,13 +12,12 @@ import { RootNavigator } from './src/navigation/RootNavigator';
 import { FiltersProvider } from './src/context/FiltersContext';
 import { LocationProvider } from './src/context/LocationContext';
 import { FavoritesProvider } from './src/context/FavoritesContext';
+import { LanguageProvider } from './src/context/LanguageContext';
 import { colors } from './src/theme';
 import { HEEBO_FONTS, applyHeeboFont } from './src/theme/fonts';
 
-// Force right-to-left layout for the Hebrew UI.
-// (Takes full effect after the first reload; harmless to call every launch.)
+// Allow RTL (Hebrew default). LanguageContext manages forceRTL dynamically.
 I18nManager.allowRTL(true);
-I18nManager.forceRTL(true);
 
 // Apply Heebo to all text app-wide (per-weight family mapping).
 applyHeeboFont();
@@ -42,16 +41,18 @@ export default function App() {
 
   return (
     <SafeAreaProvider>
-      <LocationProvider>
-        <FavoritesProvider>
-          <FiltersProvider>
-            <NavigationContainer theme={navTheme}>
-              <StatusBar style="dark" />
-              <RootNavigator />
-            </NavigationContainer>
-          </FiltersProvider>
-        </FavoritesProvider>
-      </LocationProvider>
+      <LanguageProvider>
+        <LocationProvider>
+          <FavoritesProvider>
+            <FiltersProvider>
+              <NavigationContainer theme={navTheme}>
+                <StatusBar style="dark" />
+                <RootNavigator />
+              </NavigationContainer>
+            </FiltersProvider>
+          </FavoritesProvider>
+        </LocationProvider>
+      </LanguageProvider>
     </SafeAreaProvider>
   );
 }

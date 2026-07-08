@@ -1,14 +1,15 @@
 import React from 'react';
 import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
 import { colors, spacing } from '../theme';
-import { t } from '../i18n';
+import { useLanguage } from '../context/LanguageContext';
 
 /** Full-area loading indicator. */
-export function Loading({ label = t.common.loading }: { label?: string }) {
+export function Loading({ label }: { label?: string }) {
+  const { t } = useLanguage();
   return (
     <View style={styles.container}>
       <ActivityIndicator size="large" color={colors.primary} />
-      <Text style={styles.label}>{label}</Text>
+      <Text style={styles.label}>{label ?? t.common.loading}</Text>
     </View>
   );
 }

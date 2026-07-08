@@ -15,7 +15,7 @@ import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { Screen } from '../components/Screen';
 import { Chip } from '../components/Chip';
 import { colors, radius, sizes, spacing } from '../theme';
-import { t } from '../i18n';
+import { useLanguage } from '../context/LanguageContext';
 import { usePlace } from '../hooks/usePlace';
 import { placesRepository } from '../data/placesRepository';
 import { IssueType } from '../types';
@@ -34,6 +34,7 @@ const ISSUE_TYPES: IssueType[] = [
 type SubmitState = 'idle' | 'submitting' | 'success' | 'error';
 
 export function ReportScreen() {
+  const { t } = useLanguage();
   const navigation = useNavigation<Nav>();
   const { params } = useRoute<ReportRoute>();
   const { place } = usePlace(params.placeId);

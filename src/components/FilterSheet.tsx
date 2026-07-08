@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { colors, radius, sizes, spacing } from '../theme';
-import { t } from '../i18n';
+import { useLanguage } from '../context/LanguageContext';
 import { useFilters } from '../context/FiltersContext';
 import { useCities } from '../hooks/useCities';
 import { emptyFilters, KosherCategory, KosherType, PlaceFilters, PlaceType } from '../types';
@@ -26,6 +26,7 @@ interface FilterSheetProps {
 
 /** Bottom-sheet modal for city / kosher-type / category filters. */
 export function FilterSheet({ visible, onClose }: FilterSheetProps) {
+  const { t } = useLanguage();
   const { filters, setFilters, reset } = useFilters();
   const { cities } = useCities();
 

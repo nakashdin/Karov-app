@@ -12,7 +12,6 @@ import {
 import { Ionicons } from '@expo/vector-icons';
 import { useNavigation, useRoute, RouteProp } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
-import { TabParamList } from '../navigation/types';
 import { Screen } from '../components/Screen';
 import { PlaceCard } from '../components/PlaceCard';
 import { EmptyState } from '../components/EmptyState';
@@ -20,7 +19,7 @@ import { Loading } from '../components/Loading';
 import { FilterSheet } from '../components/FilterSheet';
 import { BirkatHamazonModal } from '../components/BirkatHamazonModal';
 import { colors, radius, shadow, spacing } from '../theme';
-import { t } from '../i18n';
+import { useLanguage } from '../context/LanguageContext';
 import { usePlaces } from '../hooks/usePlaces';
 import { useSharedLocation, getCachedLocation } from '../context/LocationContext';
 import { useFilters } from '../context/FiltersContext';
@@ -29,27 +28,9 @@ import { distanceKm } from '../utils/geo';
 import { RootStackParamList } from '../navigation/types';
 
 type Nav = NativeStackNavigationProp<RootStackParamList>;
-type ListRoute = RouteProp<TabParamList, 'List'>;
+type ListRoute = RouteProp<RootStackParamList, 'List'>;
 
 type LocationMode = 'current' | 'other';
-
-const CATEGORY_TABS: Array<{ key: PlaceType | null; label: string; icon: string }> = [
-  { key: null, label: 'הכל', icon: 'apps-outline' },
-  { key: 'restaurant', label: 'מסעדות', icon: 'restaurant-outline' },
-  { key: 'synagogue', label: 'בתי כנסת', icon: 'business-outline' },
-  { key: 'mikveh', label: 'מקוואות', icon: 'water-outline' },
-  { key: 'chabad_house', label: 'בתי חב"ד', icon: 'home-outline' },
-  { key: 'tzaddik_grave', label: 'קברי צדיקים', icon: 'flower-outline' },
-];
-
-const CUISINE_TABS: Array<{ key: string; label: string; emoji: string }> = [
-  { key: 'coffee_shop', label: 'בית קפה', emoji: '☕' },
-  { key: 'burger',      label: 'בורגר',   emoji: '🍔' },
-  { key: 'pizza',       label: 'פיצה',    emoji: '🍕' },
-  { key: 'street_food', label: 'מזון רחוב', emoji: '🥙' },
-  { key: 'sushi',       label: 'סושי',    emoji: '🍣' },
-  { key: 'meat',        label: 'בשרים',   emoji: '🥩' },
-];
 
 async function geocodeAddress(query: string): Promise<GeoPoint | null> {
   try {
@@ -64,9 +45,28 @@ async function geocodeAddress(query: string): Promise<GeoPoint | null> {
 }
 
 export function ListScreen() {
+  const { t } = useLanguage();
   const navigation = useNavigation<Nav>();
   const route = useRoute<ListRoute>();
   const { filters, setFilter } = useFilters();
+
+  const CATEGORY_TABS: Array<{ key: PlaceType | null; label: string; icon: string }> = [
+    { key: null,           label: t.listCategories.all,          icon: 'apps-outline' },
+    { key: 'restaurant',   label: t.listCategories.restaurant,   icon: 'restaurant-outline' },
+    { key: 'synagogue',    label: t.listCategories.synagogue,    icon: 'business-outline' },
+    { key: 'mikveh',       label: t.listCategories.mikveh,       icon: 'water-outline' },
+    { key: 'chabad_house', label: t.listCategories.chabad_house, icon: 'home-outline' },
+    { key: 'tzaddik_grave',label: t.listCategories.tzaddik_grave,icon: 'flower-outline' },
+  ];
+
+  const CUISINE_TABS: Array<{ key: string; label: string; emoji: string }> = [
+    { key: 'coffee_shop', label: t.cuisine.coffee_shop, emoji: '☕' },
+    { key: 'burger',      label: t.cuisine.burger,      emoji: '🍔' },
+    { key: 'pizza',       label: t.cuisine.pizza,       emoji: '🍕' },
+    { key: 'street_food', label: t.cuisine.street_food, emoji: '🥙' },
+    { key: 'sushi',       label: t.cuisine.sushi,       emoji: '🍣' },
+    { key: 'meat',        label: t.cuisine.meat,        emoji: '🥩' },
+  ];
   const { places, loading, error, reload } = usePlaces(filters);
   const { location: ctxLocation, status: locationStatus, request: requestLocation } = useSharedLocation();
   const ctxOrCachedLocation = ctxLocation ?? getCachedLocation();
@@ -160,11 +160,11 @@ export function ListScreen() {
   }, [places, sortByDistance, location]);
 
   const screenTitle =
-    filters.placeType === 'synagogue' ? t.home.synagogues
-    : filters.placeType === 'restaurant' ? t.home.restaurants
-    : filters.placeType === 'mikveh' ? t.home.mikvahs
-    : filters.placeType === 'chabad_house' ? t.home.chabadHouses
-    : filters.placeType === 'tzaddik_grave' ? t.home.tzadikGraves
+    filters.placeType === 'synagogue'    ? t.listCategories.synagogue
+    : filters.placeType === 'restaurant' ? t.listCategories.restaurant
+    : filters.placeType === 'mikveh'     ? t.listCategories.mikveh
+    : filters.placeType === 'chabad_house'  ? t.listCategories.chabad_house
+    : filters.placeType === 'tzaddik_grave' ? t.listCategories.tzaddik_grave
     : null;
 
   // In "other location" mode, hide results until the user has geocoded an address

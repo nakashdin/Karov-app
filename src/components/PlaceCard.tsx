@@ -2,7 +2,7 @@ import React from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { Place } from '../types';
 import { colors, radius, shadow, spacing } from '../theme';
-import { t } from '../i18n';
+import { useLanguage } from '../context/LanguageContext';
 import { categoryLabel, kosherTypeLabel } from '../utils/kosher';
 import { placeTypeLabel } from '../utils/placeType';
 import { formatDistance } from '../utils/geo';
@@ -93,6 +93,7 @@ interface PlaceCardProps {
 }
 
 export function PlaceCard({ place, distanceKm, onPress }: PlaceCardProps) {
+  const { t } = useLanguage();
   const emoji = PLACE_EMOJI[place.type];
   const chipColor = CHIP_COLOR[place.type];
   const [chip1, chip2] = getChips(place);
@@ -150,7 +151,7 @@ export function PlaceCard({ place, distanceKm, onPress }: PlaceCardProps) {
                 <StarRating value={place.rating} />
               )}
               {typeof distanceKm === 'number' && (
-                <Text style={styles.distance}>{formatDistance(distanceKm)}</Text>
+                <Text style={styles.distance}>{formatDistance(distanceKm, t)}</Text>
               )}
             </View>
           </View>
