@@ -5,10 +5,8 @@ import { Ionicons } from '@expo/vector-icons';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { TabParamList } from './types';
 import { colors, sizes } from '../theme';
-import { t } from '../i18n';
 import { HomeScreen } from '../screens/HomeScreen';
-import { MapScreen } from '../screens/MapScreen';
-import { ListScreen } from '../screens/ListScreen';
+import { FavoritesScreen } from '../screens/FavoritesScreen';
 import { BrachotScreen } from '../screens/BrachotScreen';
 import { ZmanimScreen } from '../screens/ZmanimScreen';
 import { CommunityScreen } from '../screens/CommunityScreen';
@@ -19,10 +17,9 @@ const ICONS: Record<
   Exclude<keyof TabParamList, 'Home'>,
   { on: keyof typeof Ionicons.glyphMap; off: keyof typeof Ionicons.glyphMap }
 > = {
-  Map: { on: 'map', off: 'map-outline' },
-  List: { on: 'list', off: 'list-outline' },
-  Brachot: { on: 'book', off: 'book-outline' },
-  Zmanim: { on: 'time', off: 'time-outline' },
+  Favorites: { on: 'heart',  off: 'heart-outline' },
+  Brachot:   { on: 'book',   off: 'book-outline' },
+  Zmanim:    { on: 'time',   off: 'time-outline' },
   Community: { on: 'people', off: 'people-outline' },
 };
 
@@ -67,37 +64,11 @@ export function TabNavigator() {
         },
       })}
     >
-      {/* RTL order: List (left) → Map (center) → Home (right) */}
-      <Tab.Screen
-        name="List"
-        component={ListScreen}
-        options={{ title: t.tabs.list }}
-      />
-      <Tab.Screen
-        name="Map"
-        component={MapScreen}
-        options={{ title: t.tabs.map }}
-      />
-      <Tab.Screen
-        name="Brachot"
-        component={BrachotScreen}
-        options={{ title: 'ברכות' }}
-      />
-      <Tab.Screen
-        name="Zmanim"
-        component={ZmanimScreen}
-        options={{ title: 'זמני היום' }}
-      />
-      <Tab.Screen
-        name="Community"
-        component={CommunityScreen}
-        options={{ title: 'קהילה' }}
-      />
-      <Tab.Screen
-        name="Home"
-        component={HomeScreen}
-        options={{ title: t.tabs.home }}
-      />
+      <Tab.Screen name="Favorites" component={FavoritesScreen} options={{ title: 'מועדפים' }} />
+      <Tab.Screen name="Brachot"   component={BrachotScreen}   options={{ title: 'ברכות' }} />
+      <Tab.Screen name="Zmanim"    component={ZmanimScreen}    options={{ title: 'זמני היום' }} />
+      <Tab.Screen name="Community" component={CommunityScreen} options={{ title: 'קהילה' }} />
+      <Tab.Screen name="Home"      component={HomeScreen}      options={{ title: 'בית' }} />
     </Tab.Navigator>
   );
 }

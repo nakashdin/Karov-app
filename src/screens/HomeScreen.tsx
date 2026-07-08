@@ -60,12 +60,12 @@ export function HomeScreen() {
   }, [places, location]);
 
   const onWhatsAround = () => {
-    navigation.navigate('Tabs', { screen: 'List' });
+    navigation.navigate('List', undefined);
   };
 
   const openType = (placeType: PlaceType) => {
     setFilters({ ...emptyFilters, placeType });
-    navigation.navigate('Tabs', { screen: 'List' });
+    navigation.navigate('List', undefined);
   };
 
   return (
@@ -91,7 +91,7 @@ export function HomeScreen() {
         {/* Search bar — pill shape, visual only */}
         <Pressable
           style={({ pressed }) => [styles.searchBar, pressed && styles.pressed]}
-          onPress={() => navigation.navigate('Tabs', { screen: 'List', params: { focus: true } })}
+          onPress={() => navigation.navigate('List', { focus: true })}
         >
           <Ionicons name="search-outline" size={18} color={colors.textMuted} />
           <Text style={styles.searchPlaceholder}>{t.home.homeSearchPlaceholder}</Text>
@@ -155,19 +155,13 @@ export function HomeScreen() {
             label={t.home.tzadikGraves}
             onPress={() => openType('tzaddik_grave')}
           />
-          <Shortcut
-            icon="heart"
-            color={colors.categoryFavorites}
-            label={t.home.favorites}
-            onPress={() => navigation.navigate('Favorites')}
-          />
         </View>
 
         {/* Section header */}
         <View style={styles.sectionHeader}>
           <Text style={styles.sectionTitle}>{t.home.nearbyTitle}</Text>
           <Pressable
-            onPress={() => navigation.navigate('Tabs', { screen: 'List' })}
+            onPress={() => navigation.navigate('List', undefined)}
             style={({ pressed }) => [styles.seeAllHitbox, pressed && styles.pressed]}
           >
             <Text style={styles.seeAll}>{t.home.seeAll}</Text>

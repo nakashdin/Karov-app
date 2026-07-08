@@ -3,8 +3,7 @@ import { NavigatorScreenParams } from '@react-navigation/native';
 /** Bottom-tab routes. */
 export type TabParamList = {
   Home: undefined;
-  Map: undefined;
-  List: { focus?: boolean } | undefined;
+  Favorites: undefined;
   Brachot: undefined;
   Zmanim: undefined;
   Community: undefined;
@@ -17,8 +16,9 @@ export type RootStackParamList = {
   LocationPermission: undefined;
   Tabs: NavigatorScreenParams<TabParamList>;
   PlaceDetail: { id: string };
+  MapDetail: { placeId: string };
   Report: { placeId: string };
-  Favorites: undefined;
+  List: { focus?: boolean } | undefined;
   AddPlace: undefined;
 };
 
