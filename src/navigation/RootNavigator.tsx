@@ -14,7 +14,6 @@ import { LoginScreen } from '../screens/LoginScreen';
 import { LocationPermissionScreen } from '../screens/LocationPermissionScreen';
 import { ParashaDetailScreen } from '../screens/ParashaDetailScreen';
 import { KashruyotFilterScreen } from '../screens/KashruyotFilterScreen';
-import { MenuScreen } from '../screens/MenuScreen';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -42,7 +41,6 @@ export function RootNavigator() {
       <Stack.Screen name="AddPlace"           component={AddPlaceScreen}          options={{ headerShown: false, presentation: 'modal' }} />
       <Stack.Screen name="ParashaDetail"      component={ParashaDetailScreen}     options={{ headerShown: false }} />
       <Stack.Screen name="KashruyotFilter"   component={KashruyotFilterScreen}   options={{ headerShown: false }} />
-      <Stack.Screen name="Menu"              component={MenuScreen}              options={{ title: '', presentation: 'modal' }} />
     </Stack.Navigator>
   );
 }

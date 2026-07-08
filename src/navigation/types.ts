@@ -22,7 +22,6 @@ export type RootStackParamList = {
   AddPlace: undefined;
   ParashaDetail: undefined;
   KashruyotFilter: undefined;
-  Menu: undefined;
 };
 
 declare global {

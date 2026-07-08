@@ -14,6 +14,7 @@ import { Screen } from '../components/Screen';
 import { PlaceCard } from '../components/PlaceCard';
 import { Loading } from '../components/Loading';
 import { LanguagePicker } from '../components/LanguagePicker';
+import { AppMenu } from '../components/AppMenu';
 import { colors, radius, shadow, spacing } from '../theme';
 import { useLanguage } from '../context/LanguageContext';
 import { usePlaces } from '../hooks/usePlaces';
@@ -42,6 +43,7 @@ export function HomeScreen() {
   const { setFilters } = useFilters();
   const [userName, setUserName] = useState<string | null>(null);
   const [langOpen, setLangOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     AsyncStorage.getItem('@karov/auth').then((raw) => {
@@ -90,7 +92,7 @@ export function HomeScreen() {
           <View style={styles.headerTopRow}>
             {/* ☰ Menu button — right side in RTL */}
             <Pressable
-              onPress={() => navigation.navigate('Menu')}
+              onPress={() => setMenuOpen(true)}
               hitSlop={12}
               style={styles.globeBtn}
             >
@@ -224,6 +226,7 @@ export function HomeScreen() {
       </ScrollView>
 
       <LanguagePicker visible={langOpen} onClose={() => setLangOpen(false)} />
+      <AppMenu visible={menuOpen} onClose={() => setMenuOpen(false)} />
     </Screen>
   );
 }
