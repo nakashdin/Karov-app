@@ -14,23 +14,28 @@ import { Screen } from '../components/Screen';
 import { colors, radius, shadow, spacing } from '../theme';
 import { useParasha } from '../hooks/useParasha';
 
-interface SefariaDescription {
-  he?: string;
-  en?: string;
+function stripHtml(html: string): string {
+  return html
+    .replace(/<[^>]+>/g, '')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
 }
 
 export function ParashaDetailScreen() {
   const navigation = useNavigation();
   const { parasha } = useParasha();
-  const [description, setDescription] = useState<SefariaDescription | null>(null);
+  const [explanation, setExplanation] = useState<string | null>(null);
   const [loadingDesc, setLoadingDesc] = useState(true);
 
   useEffect(() => {
     if (!parasha?.hebrewName) return;
     let cancelled = false;
 
-    // Wikipedia Hebrew REST API — free, reliable, one paragraph per parasha.
-    // For combined parashiyot (e.g. "פרשת מטות-מסעי") fall back to the first name.
     const baseName = parasha.hebrewName.replace(/^פרשת\s+/, '');
     const firstName = baseName.split(/[-־]/)[0].trim();
     const candidates = baseName !== firstName
@@ -39,13 +44,22 @@ export function ParashaDetailScreen() {
 
     const tryNext = (index: number) => {
       if (index >= candidates.length || cancelled) { setLoadingDesc(false); return; }
-      const title = candidates[index].replace(/\s+/g, '_');
-      fetch(`https://he.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title)}`)
+      const title = encodeURIComponent(candidates[index]);
+      // Use Wikipedia's extracts API to get the full article text (multiple sections)
+      fetch(
+        `https://he.wikipedia.org/w/api.php?action=query&prop=extracts&titles=${title}&format=json&origin=*&exsectionformat=plain`,
+      )
         .then((r) => r.json())
         .then((json) => {
           if (cancelled) return;
-          if (json.extract) { setDescription({ he: json.extract }); setLoadingDesc(false); }
-          else tryNext(index + 1);
+          const pages = json?.query?.pages ?? {};
+          const page = Object.values(pages)[0] as any;
+          if (page?.extract) {
+            setExplanation(stripHtml(page.extract));
+            setLoadingDesc(false);
+          } else {
+            tryNext(index + 1);
+          }
         })
         .catch(() => tryNext(index + 1));
     };
@@ -86,14 +100,14 @@ export function ParashaDetailScreen() {
           <Text style={styles.sectionTitle}>על הפרשה</Text>
           {loadingDesc ? (
             <ActivityIndicator color={colors.primary} style={{ marginTop: spacing.lg }} />
-          ) : description?.he ? (
-            <Text style={styles.descriptionText}>{description.he}</Text>
+          ) : explanation ? (
+            <Text style={styles.descriptionText}>{explanation}</Text>
           ) : (
             <Text style={styles.noDesc}>ההסבר אינו זמין כרגע</Text>
           )}
         </View>
 
-        {/* Read full parasha */}
+        {/* Read full parasha on Sefaria */}
         {parasha?.sefariaUrl ? (
           <Pressable
             style={({ pressed }) => [styles.sefariaBtn, pressed && { opacity: 0.8 }]}
@@ -105,7 +119,7 @@ export function ParashaDetailScreen() {
         ) : null}
 
         <Text style={styles.attribution}>
-          תוכן מסופק על ידי Sefaria בשיתוף Creative Commons
+          הסבר מתוך ויקיפדיה העברית · טקסט מ-Sefaria (Creative Commons)
         </Text>
       </ScrollView>
     </Screen>

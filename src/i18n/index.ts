@@ -1,8 +1,12 @@
 import { he } from './he';
+import { en } from './en';
+import { es } from './es';
+import { ru } from './ru';
+import { fr } from './fr';
 
-/**
- * Single translation namespace for the MVP (Hebrew only).
- * Screens import `t` so swapping in a real i18n engine later is a one-file change.
- */
-export const t = he;
+export type Locale = 'he' | 'en' | 'es' | 'ru' | 'fr';
 export type Strings = typeof he;
+
+export const locales: Record<Locale, Strings> = { he, en, es, ru, fr };
+
+export const t = he;
