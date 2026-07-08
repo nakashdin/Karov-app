@@ -16,10 +16,19 @@ export type KosherCategory = 'meat' | 'dairy' | 'parve';
  */
 export type KosherType =
   | 'rabanut'
+  | 'rabanut_beit_shean'
   | 'rabanut_mehadrin'
+  | 'rabanut_mehadrin_jerusalem'
+  | 'rabanut_mekomi'
+  | 'rabanut_afula'
+  | 'rabanut_tel_aviv'
   | 'mehadrin'
   | 'badatz_edah'
   | 'badatz_beit_yosef'
+  | 'badatz_rubin'
+  | 'badatz_kehilot'
+  | 'rav_landa'
+  | 'rav_machpud'
   | 'chatam_sofer'
   | 'other';
 

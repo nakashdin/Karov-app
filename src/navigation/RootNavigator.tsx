@@ -2,7 +2,7 @@ import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { RootStackParamList } from './types';
 import { colors } from '../theme';
-import { t } from '../i18n';
+import { useLanguage } from '../context/LanguageContext';
 import { TabNavigator } from './TabNavigator';
 import { PlaceDetailScreen } from '../screens/PlaceDetailScreen';
 import { ReportScreen } from '../screens/ReportScreen';
@@ -18,6 +18,7 @@ import { KashruyotFilterScreen } from '../screens/KashruyotFilterScreen';
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export function RootNavigator() {
+  const { t } = useLanguage();
   return (
     <Stack.Navigator
       initialRouteName="Splash"

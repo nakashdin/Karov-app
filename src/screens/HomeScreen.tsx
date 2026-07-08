@@ -13,8 +13,9 @@ import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { Screen } from '../components/Screen';
 import { PlaceCard } from '../components/PlaceCard';
 import { Loading } from '../components/Loading';
+import { LanguagePicker } from '../components/LanguagePicker';
 import { colors, radius, shadow, spacing } from '../theme';
-import { t } from '../i18n';
+import { useLanguage } from '../context/LanguageContext';
 import { usePlaces } from '../hooks/usePlaces';
 import { useParasha } from '../hooks/useParasha';
 import { useSharedLocation } from '../context/LocationContext';
@@ -23,21 +24,24 @@ import { distanceKm } from '../utils/geo';
 import { emptyFilters, PlaceType } from '../types';
 import { RootStackParamList } from '../navigation/types';
 import { ParashaCard } from '../components/ParashaCard';
+import type { Strings } from '../i18n';
 
 type Nav = NativeStackNavigationProp<RootStackParamList>;
 
-function getDayGreeting(): string {
+function getDayGreeting(t: Strings): string {
   const day = new Date().getDay();
-  return day === 5 || day === 6 ? 'שבת שלום' : 'שבוע טוב';
+  return day === 5 || day === 6 ? t.greeting.shabbat : t.greeting.weekday;
 }
 
 export function HomeScreen() {
   const navigation = useNavigation<Nav>();
+  const { t } = useLanguage();
   const { places, loading } = usePlaces();
   const { parasha } = useParasha();
   const { status, location, request } = useSharedLocation();
   const { setFilters } = useFilters();
   const [userName, setUserName] = useState<string | null>(null);
+  const [pickerOpen, setPickerOpen] = useState(false);
 
   useEffect(() => {
     AsyncStorage.getItem('@karov/auth').then((raw) => {
@@ -67,6 +71,10 @@ export function HomeScreen() {
   };
 
   const openType = (placeType: PlaceType) => {
+    if (placeType === 'restaurant') {
+      navigation.navigate('KashruyotFilter');
+      return;
+    }
     setFilters({ ...emptyFilters, placeType });
     navigation.navigate('List', undefined);
   };
@@ -80,8 +88,20 @@ export function HomeScreen() {
         {/* Header */}
         <View style={styles.header}>
           <View style={styles.headerTopRow}>
+            {/* בס״ד — appears on the right in RTL */}
             <Text style={styles.bsd}>בס״ד</Text>
-            <Text style={styles.greeting}>{getDayGreeting()}</Text>
+
+            {/* Greeting + Globe button — appears on the left in RTL */}
+            <View style={styles.greetingGroup}>
+              <Text style={styles.greeting}>{getDayGreeting(t)}</Text>
+              <Pressable
+                onPress={() => setPickerOpen(true)}
+                hitSlop={12}
+                style={styles.globeBtn}
+              >
+                <Ionicons name="globe-outline" size={19} color={colors.textMuted} />
+              </Pressable>
+            </View>
           </View>
           {userName ? (
             <Text style={styles.title}>שלום, {userName} 👋</Text>
@@ -193,6 +213,8 @@ export function HomeScreen() {
           ))
         )}
       </ScrollView>
+
+      <LanguagePicker visible={pickerOpen} onClose={() => setPickerOpen(false)} />
     </Screen>
   );
 }
@@ -242,11 +264,19 @@ const styles = StyleSheet.create({
     color: colors.textFaint,
     letterSpacing: 0.5,
   },
+  greetingGroup: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+  },
   greeting: {
     fontSize: 11,
     fontWeight: '500',
     color: colors.textMuted,
     letterSpacing: 0.3,
+  },
+  globeBtn: {
+    padding: 2,
   },
   title: {
     fontSize: 38,
