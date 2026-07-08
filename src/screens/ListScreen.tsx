@@ -167,35 +167,44 @@ export function ListScreen() {
     : filters.placeType === 'tzaddik_grave' ? t.listCategories.tzaddik_grave
     : null;
 
-  // In "other location" mode, hide results until the user has geocoded an address
-  const showResults = locationMode === 'current' || customLocation !== null;
+  // Hide results when: no geocoded address yet (other mode) OR no GPS location yet (current mode)
+  const hasCurrentLocation = locationMode === 'current' && !!location;
+  const hasOtherLocation = locationMode === 'other' && customLocation !== null;
+  const showResults = hasCurrentLocation || hasOtherLocation;
+
+  // Need location prompt when in current mode and no location
+  const needsLocation = locationMode === 'current' && !location;
 
   return (
     <Screen padded>
-      {screenTitle ? (
-        <View style={styles.titleRow}>
-          <Pressable
-            style={styles.backBtn}
-            onPress={() => {
-              setFilter('placeType', null);
-              setFilter('cuisineTag', null);
-              navigation.navigate('Tabs', { screen: 'Home' });
-            }}
-            hitSlop={12}
-          >
-            <Ionicons name="chevron-forward" size={20} color={colors.primary} />
-            <Text style={styles.backText}>בית</Text>
-          </Pressable>
-          <View style={styles.titleBlock}>
-            <Text style={styles.title}>{screenTitle}</Text>
-            {filters.placeType === 'restaurant' && (
-              <Pressable onPress={() => setBirkatOpen(true)}>
-                <Text style={styles.birkatBtnText}>📖 ברכת המזון</Text>
-              </Pressable>
-            )}
-          </View>
+      <View style={styles.titleRow}>
+        <Pressable
+          style={styles.backBtn}
+          onPress={() => {
+            setFilter('placeType', null);
+            setFilter('cuisineTag', null);
+            navigation.goBack();
+          }}
+          hitSlop={12}
+        >
+          <Ionicons name="chevron-forward" size={20} color={colors.primary} />
+          <Text style={styles.backText}>חזרה</Text>
+        </Pressable>
+        <View style={styles.titleBlock}>
+          {screenTitle ? (
+            <>
+              <Text style={styles.title}>{screenTitle}</Text>
+              {filters.placeType === 'restaurant' && (
+                <Pressable onPress={() => setBirkatOpen(true)}>
+                  <Text style={styles.birkatBtnText}>📖 ברכת המזון</Text>
+                </Pressable>
+              )}
+            </>
+          ) : (
+            <Text style={styles.title}>מה יש סביבי?</Text>
+          )}
         </View>
-      ) : null}
+      </View>
 
       {/* Location mode row */}
       <View style={styles.locationModeRow}>
@@ -252,8 +261,8 @@ export function ListScreen() {
       </View>
       {geocodeError ? <Text style={styles.geocodeError}>{geocodeError}</Text> : null}
 
-      {/* Search pill — always filters by name/address */}
-      <View style={styles.searchPill}>
+      {/* Search pill — hidden in "other" mode until a location is geocoded */}
+      {(locationMode === 'current' || customLocation !== null) && <View style={styles.searchPill}>
         <Ionicons name="search" size={18} color={colors.textMuted} />
         <TextInput
           style={styles.searchInput}
@@ -279,7 +288,7 @@ export function ListScreen() {
           />
           {activeCount > 0 && <View style={styles.filterDot} />}
         </Pressable>
-      </View>
+      </View>}
 
       {/* Category tabs — main tabs OR cuisine sub-tabs (not both) */}
       {filters.placeType === 'restaurant' ? (
@@ -337,8 +346,8 @@ export function ListScreen() {
         </ScrollView>
       )}
 
-      {/* Location banner — only if no location at all */}
-      {locationMode === 'current' && (locationStatus === 'denied' || locationStatus === 'idle') && (
+      {/* Location prompt — when no GPS location yet */}
+      {needsLocation && (
         <Pressable style={styles.locationBanner} onPress={requestLocation}>
           <Ionicons name="location-outline" size={16} color="#92400e" />
           <Text style={styles.locationBannerText}>
@@ -351,11 +360,13 @@ export function ListScreen() {
       )}
 
       {!showResults ? (
-        <EmptyState
-          title="חפש מיקום"
-          hint="הקלד עיר, רחוב או שם מקום ולחץ על החץ"
-          icon="search-outline"
-        />
+        needsLocation ? null : (
+          <EmptyState
+            title="חפש מיקום"
+            hint="הקלד עיר, רחוב או שם מקום ולחץ על החץ"
+            icon="search-outline"
+          />
+        )
       ) : (
         <>
           <View style={styles.metaRow}>

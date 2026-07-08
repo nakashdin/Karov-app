@@ -59,11 +59,21 @@ export function SplashScreen() {
       } catch {
         // treat as unauthenticated
       }
-      if (auth) {
-        navigation.replace('LocationPermission');
-      } else {
+      if (!auth) {
         navigation.replace('Login');
+        return;
       }
+      // Skip permission screen if browser already granted location
+      try {
+        if (typeof navigator !== 'undefined' && navigator.permissions) {
+          const result = await navigator.permissions.query({ name: 'geolocation' });
+          if (result.state === 'granted') {
+            navigation.replace('Tabs', { screen: 'Home' });
+            return;
+          }
+        }
+      } catch {}
+      navigation.replace('LocationPermission');
     }, 2500);
 
     return () => {
