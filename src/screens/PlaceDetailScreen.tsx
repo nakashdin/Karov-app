@@ -19,6 +19,7 @@ import { EmptyState } from '../components/EmptyState';
 import { SuggestEditModal } from '../components/SuggestEditModal';
 import { colors, radius, shadow, sizes, spacing } from '../theme';
 import { useLanguage } from '../context/LanguageContext';
+import { transliterateHebrew } from '../utils/transliterate';
 import { usePlace } from '../hooks/usePlace';
 import { useSharedLocation } from '../context/LocationContext';
 import { useFavorites } from '../context/FavoritesContext';
@@ -64,7 +65,8 @@ function buildChips(place: ReturnType<typeof usePlace>['place']): string[] {
 // ─── Main screen ─────────────────────────────────────────────────────────────
 
 export function PlaceDetailScreen() {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
+  const isHe = locale === 'he';
   const navigation = useNavigation<Nav>();
   const { params } = useRoute<DetailRoute>();
   const { place, loading, error } = usePlace(params.id);
@@ -77,7 +79,7 @@ export function PlaceDetailScreen() {
 
   useEffect(() => {
     navigation.setOptions({
-      title: place?.name ?? '',
+      title: place ? (isHe ? place.name : transliterateHebrew(place.name)) : '',
       headerLeft: () => (
         <Pressable onPress={() => navigation.goBack()} hitSlop={12} style={{ paddingEnd: 8 }}>
           <Ionicons name="chevron-forward" size={26} color={colors.primary} />
@@ -176,7 +178,12 @@ export function PlaceDetailScreen() {
 
         {/* Name card — overlaps hero */}
         <View style={styles.nameCard}>
-          <Text style={styles.placeName}>{place.name}</Text>
+          <Text style={styles.placeName}>
+            {isHe ? place.name : transliterateHebrew(place.name)}
+          </Text>
+          {!isHe && (
+            <Text style={styles.placeNameHe}>{place.name}</Text>
+          )}
 
           {/* Tags */}
           {chips.length > 0 && (
@@ -556,8 +563,14 @@ const styles = StyleSheet.create({
     fontWeight: '800',
     color: colors.text,
     textAlign: 'right',
-    marginBottom: spacing.sm,
+    marginBottom: 2,
     letterSpacing: -0.6,
+  },
+  placeNameHe: {
+    fontSize: 13,
+    color: colors.textMuted,
+    textAlign: 'right',
+    marginBottom: spacing.sm,
   },
   chipsRow: {
     flexDirection: 'row',

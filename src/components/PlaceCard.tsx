@@ -3,6 +3,7 @@ import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { Place } from '../types';
 import { colors, radius, shadow, spacing } from '../theme';
 import { useLanguage } from '../context/LanguageContext';
+import { transliterateHebrew } from '../utils/transliterate';
 import { categoryLabel, kosherTypeLabel } from '../utils/kosher';
 import { placeTypeLabel } from '../utils/placeType';
 import { formatDistance } from '../utils/geo';
@@ -93,7 +94,9 @@ interface PlaceCardProps {
 }
 
 export function PlaceCard({ place, distanceKm, onPress }: PlaceCardProps) {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
+  const isHe = locale === 'he';
+  const displayName = isHe ? place.name : transliterateHebrew(place.name);
   const emoji = PLACE_EMOJI[place.type];
   const chipColor = CHIP_COLOR[place.type];
   const [chip1, chip2] = getChips(place);
@@ -112,9 +115,10 @@ export function PlaceCard({ place, distanceKm, onPress }: PlaceCardProps) {
 
         {/* Main content */}
         <View style={styles.mainContent}>
-          <Text style={styles.name} numberOfLines={2}>
-            {place.name}
-          </Text>
+          <Text style={styles.name} numberOfLines={2}>{displayName}</Text>
+          {!isHe && (
+            <Text style={styles.nameHe} numberOfLines={1}>{place.name}</Text>
+          )}
 
           {/* Chips row */}
           <View style={styles.chipsRow}>
@@ -197,6 +201,12 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     letterSpacing: -0.4,
     color: colors.text,
+    textAlign: 'right',
+    marginBottom: 2,
+  },
+  nameHe: {
+    fontSize: 12,
+    color: colors.textMuted,
     textAlign: 'right',
     marginBottom: 6,
   },
