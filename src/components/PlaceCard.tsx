@@ -1,5 +1,5 @@
 import React from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Linking, Pressable, StyleSheet, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { Place } from '../types';
 import { colors, radius, shadow, spacing } from '../theme';
@@ -133,7 +133,7 @@ export function PlaceCard({ place, distanceKm, onPress }: PlaceCardProps) {
       {/* Stars row */}
       <StarRow rating={place.rating} />
 
-      {/* Address */}
+      {/* Address + navigate button */}
       <View style={styles.addressRow}>
         <Ionicons name="location-outline" size={12} color={colors.textMuted} />
         <Text style={styles.address} numberOfLines={2}>
@@ -141,6 +141,18 @@ export function PlaceCard({ place, distanceKm, onPress }: PlaceCardProps) {
             ? `${place.address} · ${t.detail.approxLocation}`
             : place.address}
         </Text>
+        <Pressable
+          style={styles.navBtn}
+          onPress={(e) => {
+            e.stopPropagation?.();
+            const { latitude, longitude } = place.location;
+            Linking.openURL(`https://waze.com/ul?ll=${latitude},${longitude}&navigate=yes`);
+          }}
+          hitSlop={8}
+        >
+          <Ionicons name="navigate" size={14} color={colors.primary} />
+          <Text style={styles.navText}>נווט</Text>
+        </Pressable>
       </View>
 
       {/* Certification */}
@@ -237,5 +249,21 @@ const styles = StyleSheet.create({
     fontSize: 11,
     color: colors.textMuted,
     textAlign: 'right',
+  },
+
+  navBtn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 3,
+    backgroundColor: colors.primaryLight,
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    borderRadius: radius.pill,
+    flexShrink: 0,
+  },
+  navText: {
+    fontSize: 11,
+    fontWeight: '700',
+    color: colors.primary,
   },
 });
