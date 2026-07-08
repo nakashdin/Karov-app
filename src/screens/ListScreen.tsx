@@ -293,7 +293,7 @@ export function ListScreen() {
         </Pressable>
       </View>}
 
-      {/* Category tabs — main tabs OR cuisine sub-tabs (not both) */}
+      {/* Category tabs — cuisine sub-tabs for restaurants, category tabs only when no type selected */}
       {filters.placeType === 'restaurant' ? (
         <ScrollView
           horizontal
@@ -317,7 +317,7 @@ export function ListScreen() {
             );
           })}
         </ScrollView>
-      ) : (
+      ) : filters.placeType === null ? (
         <ScrollView
           horizontal
           showsHorizontalScrollIndicator={false}
@@ -347,7 +347,7 @@ export function ListScreen() {
             );
           })}
         </ScrollView>
-      )}
+      ) : null}
 
       {/* Location prompt — when no GPS location yet */}
       {needsLocation && (
