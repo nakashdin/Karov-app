@@ -4,7 +4,7 @@
     "name": "ארומה",
     "type": "restaurant",
     "cityId": "נחף",
-    "address": "נחף",
+    "address": "מעלה כמון, כרמיאל",
     "location": {
       "latitude": 32.9270603,
       "longitude": 35.323458
@@ -38,7 +38,7 @@
     "name": "דודא",
     "type": "restaurant",
     "cityId": "אילת",
-    "address": "אילת",
+    "address": "תרשיש, אילת",
     "location": {
       "latitude": 29.551796,
       "longitude": 34.9565457
@@ -106,7 +106,7 @@
     "name": "Times Square",
     "type": "restaurant",
     "cityId": "אילת",
-    "address": "אילת",
+    "address": "טיילת השלום, אילת",
     "location": {
       "latitude": 29.5498371,
       "longitude": 34.9540435
@@ -122,7 +122,7 @@
     "name": "Denis Kingdom",
     "type": "restaurant",
     "cityId": "אילת",
-    "address": "אילת",
+    "address": "הים, אילת",
     "location": {
       "latitude": 29.5485325,
       "longitude": 34.9671531
@@ -155,7 +155,7 @@
     "name": "בורגרס בר",
     "type": "restaurant",
     "cityId": "אילת",
-    "address": "אילת",
+    "address": "טיילת השלום, אילת",
     "location": {
       "latitude": 29.5505559,
       "longitude": 34.9556208
@@ -170,7 +170,7 @@
     "name": "ארומה",
     "type": "restaurant",
     "cityId": "ירושלים",
-    "address": "ירושלים",
+    "address": "ממילא, ירושלים",
     "location": {
       "latitude": 31.7765121,
       "longitude": 35.2267096
@@ -200,7 +200,7 @@
     "name": "מרקש",
     "type": "restaurant",
     "cityId": "נתניה",
-    "address": "נתניה",
+    "address": "Bialik, נתניה",
     "location": {
       "latitude": 32.3320626,
       "longitude": 34.8509781
@@ -317,7 +317,7 @@
     "name": "ראנץ' האוס בר בורגר",
     "type": "restaurant",
     "cityId": "אילת",
-    "address": "אילת",
+    "address": "טיילת השלום, אילת",
     "location": {
       "latitude": 29.5492465,
       "longitude": 34.9629218
@@ -12945,7 +12945,7 @@
     "name": "ישיבת מרכז לתורה",
     "type": "synagogue",
     "cityId": "חיפה",
-    "address": "חיפה",
+    "address": "הרב רפאל אנקואה, חיפה",
     "location": {
       "latitude": 32.8183451,
       "longitude": 34.9592124
@@ -13171,7 +13171,7 @@
     "name": "ישיבת אור וישועה",
     "type": "synagogue",
     "cityId": "נשר",
-    "address": "נשר",
+    "address": "פיארברג (מרדכי זאב), חיפה",
     "location": {
       "latitude": 32.7853492,
       "longitude": 35.0171427
@@ -13184,7 +13184,7 @@
     "name": "ישיבת הסדר אור וישועה",
     "type": "synagogue",
     "cityId": "נשר",
-    "address": "נשר",
+    "address": "חניתה 96, חיפה",
     "location": {
       "latitude": 32.7858819,
       "longitude": 35.0172787
@@ -13507,7 +13507,7 @@
     "name": "ב\"כ שער השמים",
     "type": "synagogue",
     "cityId": "ירושלים",
-    "address": "ירושלים",
+    "address": "הרכבת 53, ירושלים",
     "location": {
       "latitude": 31.7599059,
       "longitude": 35.216843
@@ -13565,7 +13565,7 @@
     "name": "בית כנסת - מורשת רפאל",
     "type": "synagogue",
     "cityId": "חיפה",
-    "address": "חיפה",
+    "address": "ארלוזורוב 26, חיפה",
     "location": {
       "latitude": 32.8048196,
       "longitude": 34.9995787
@@ -13656,7 +13656,7 @@
     "name": "הכללי (ברסלב)",
     "type": "synagogue",
     "cityId": "ירושלים",
-    "address": "ירושלים",
+    "address": "טבי, ירושלים",
     "location": {
       "latitude": 31.76113,
       "longitude": 35.2098343
@@ -13707,7 +13707,7 @@
     "name": "בית הכנסת תפארת ישראל",
     "type": "synagogue",
     "cityId": "ירושלים",
-    "address": "ירושלים",
+    "address": "הקראים, ירושלים",
     "location": {
       "latitude": 31.7753805,
       "longitude": 35.2323212
@@ -13720,7 +13720,7 @@
     "name": "ביה\"כ הרמח\"ל",
     "type": "synagogue",
     "cityId": "עכו",
-    "address": "עכו",
+    "address": "רמח\"ל, עכו",
     "location": {
       "latitude": 32.9213294,
       "longitude": 35.0690758
@@ -25273,7 +25273,7 @@
     "name": "בית הכנסת המרכזי\nשלמה ויעקב פיצ'וטו",
     "type": "synagogue",
     "cityId": "טפחות",
-    "address": "טפחות",
+    "address": "החיטה, מועצה אזורית מרום הגליל",
     "location": {
       "latitude": 32.8683719,
       "longitude": 35.4222536
@@ -25380,7 +25380,7 @@
     "name": "שמחת מנשה",
     "type": "synagogue",
     "cityId": "שוהם",
-    "address": "שוהם",
+    "address": "הירדן, שוהם",
     "location": {
       "latitude": 32.0017734,
       "longitude": 34.9421761
@@ -25536,7 +25536,7 @@
     "name": "ישיבת ההסדר שעלבים",
     "type": "synagogue",
     "cityId": "שעלבים",
-    "address": "שעלבים",
+    "address": "נגב, שעלבים",
     "location": {
       "latitude": 31.8695445,
       "longitude": 34.9855868
@@ -25575,7 +25575,7 @@
     "name": "התנועה ליהדות מתקדמת",
     "type": "synagogue",
     "cityId": "אורנים",
-    "address": "אורנים",
+    "address": "יצחק רבין, קריית טבעון",
     "location": {
       "latitude": 32.7101635,
       "longitude": 35.1155576
@@ -25627,7 +25627,7 @@
     "name": "בית הכנסת שעלבים",
     "type": "synagogue",
     "cityId": "שעלבים",
-    "address": "שעלבים",
+    "address": "אלה, שעלבים",
     "location": {
       "latitude": 31.8690466,
       "longitude": 34.9818803
@@ -25653,7 +25653,7 @@
     "name": "בית כנסת ספרדי",
     "type": "synagogue",
     "cityId": "הושעיה",
-    "address": "הושעיה",
+    "address": "7920, מועצה אזורית עמק יזרעאל",
     "location": {
       "latitude": 32.758834,
       "longitude": 35.2909831
@@ -25666,7 +25666,7 @@
     "name": "פני מנחם",
     "type": "synagogue",
     "cityId": "מחניים",
-    "address": "מחניים",
+    "address": "91, מועצה אזורית גליל עליון",
     "location": {
       "latitude": 32.9893517,
       "longitude": 35.5691729
@@ -25679,7 +25679,7 @@
     "name": "בית כנסת רחובות הנהר",
     "type": "synagogue",
     "cityId": "אליפלט",
-    "address": "אליפלט",
+    "address": "נוף החולה, צפת",
     "location": {
       "latitude": 32.9460395,
       "longitude": 35.530552
@@ -25784,7 +25784,7 @@
     "name": "בית הכנסת המרכזי",
     "type": "synagogue",
     "cityId": "חיספין",
-    "address": "חיספין",
+    "address": "טיילת חיספין אבני איתן, מועצה אזורית גולן",
     "location": {
       "latitude": 32.845441,
       "longitude": 35.7899144
@@ -84052,7 +84052,7 @@
     "name": "תפילת חנה",
     "type": "synagogue",
     "cityId": "אשקלון",
-    "address": "אשקלון",
+    "address": "לוטוס, אשקלון",
     "location": {
       "latitude": 31.650043284644816,
       "longitude": 34.578342130916866
@@ -84069,7 +84069,7 @@
     "name": "בית חנניה",
     "type": "synagogue",
     "cityId": "אשקלון",
-    "address": "אשקלון",
+    "address": "HaSeora, אשקלון",
     "location": {
       "latitude": 31.67154642870153,
       "longitude": 34.56497515828561
@@ -84086,7 +84086,7 @@
     "name": "אגודת חב\"ד",
     "type": "synagogue",
     "cityId": "אשקלון",
-    "address": "אשקלון",
+    "address": "מעלה הגת 40, אשקלון",
     "location": {
       "latitude": 31.6935602247587,
       "longitude": 34.582338596014694
@@ -84103,7 +84103,7 @@
     "name": "חבד ברנע",
     "type": "synagogue",
     "cityId": "אשקלון",
-    "address": "אשקלון",
+    "address": "אדמונד דה רוטשילד 8, אשקלון",
     "location": {
       "latitude": 31.687463838138033,
       "longitude": 34.57908492667822
@@ -84120,7 +84120,7 @@
     "name": "בית יעקב לעולי טורקיה",
     "type": "synagogue",
     "cityId": "אשקלון",
-    "address": "אשקלון",
+    "address": "עמנואל, אשקלון",
     "location": {
       "latitude": 31.667833931995034,
       "longitude": 34.59178710795757
@@ -84137,7 +84137,7 @@
     "name": "נר ישראל אשקלון",
     "type": "synagogue",
     "cityId": "אשקלון",
-    "address": "אשקלון",
+    "address": "אלי כהן 37, אשקלון",
     "location": {
       "latitude": 31.669904748174808,
       "longitude": 34.578101825612045
@@ -84154,7 +84154,7 @@
     "name": "תרומה מהכלל",
     "type": "synagogue",
     "cityId": "אשקלון",
-    "address": "אשקלון",
+    "address": "כיכר המייסדים, אשקלון",
     "location": {
       "latitude": 31.660403598057982,
       "longitude": 34.55816494590311
