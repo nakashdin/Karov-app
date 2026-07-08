@@ -375,36 +375,18 @@ export function ListScreen() {
           <View style={styles.metaRow}>
             <Text style={styles.resultCount}>{t.list.resultsCount(sorted.length)}</Text>
             {sortByDistance ? (
-              <View>
-                <Pressable
-                  style={styles.sortToggle}
-                  onPress={() => setRadiusOpen(o => !o)}
-                >
-                  <Ionicons name="navigate" size={14} color={colors.primary} />
-                  <Text style={styles.sortText}>לפי מרחק · {radiusKm} ק״מ</Text>
-                  <Ionicons
-                    name={radiusOpen ? 'chevron-up' : 'chevron-down'}
-                    size={13}
-                    color={colors.primary}
-                  />
-                </Pressable>
-                {radiusOpen && (
-                  <View style={styles.radiusDropdown}>
-                    {RADIUS_OPTIONS.map((r) => (
-                      <Pressable
-                        key={r}
-                        style={[styles.radiusOption, radiusKm === r && styles.radiusOptionActive]}
-                        onPress={() => { setRadiusKm(r); setRadiusOpen(false); }}
-                      >
-                        <Text style={[styles.radiusOptionText, radiusKm === r && styles.radiusOptionTextActive]}>
-                          {r} ק״מ
-                        </Text>
-                        {radiusKm === r && <Ionicons name="checkmark" size={14} color={colors.primary} />}
-                      </Pressable>
-                    ))}
-                  </View>
-                )}
-              </View>
+              <Pressable
+                style={styles.sortToggle}
+                onPress={() => setRadiusOpen(o => !o)}
+              >
+                <Ionicons name="navigate" size={14} color={colors.primary} />
+                <Text style={styles.sortText}>לפי מרחק · {radiusKm} ק״מ</Text>
+                <Ionicons
+                  name={radiusOpen ? 'chevron-up' : 'chevron-down'}
+                  size={13}
+                  color={colors.primary}
+                />
+              </Pressable>
             ) : (
               <View style={styles.sortToggle}>
                 <Ionicons name="text" size={14} color={colors.primary} />
@@ -412,6 +394,39 @@ export function ListScreen() {
               </View>
             )}
           </View>
+
+          {/* Radius slider — shown below meta row when open */}
+          {sortByDistance && radiusOpen && (
+            <View style={styles.sliderCard}>
+              <View style={styles.sliderHeader}>
+                <Text style={styles.sliderLabel}>טווח חיפוש</Text>
+                <Text style={styles.sliderValue}>{radiusKm} ק״מ</Text>
+              </View>
+              <input
+                type="range"
+                min={1}
+                max={100}
+                value={radiusKm}
+                onChange={(e: any) => setRadiusKm(Number(e.target.value))}
+                style={{
+                  width: '100%',
+                  accentColor: colors.primary,
+                  height: 4,
+                  cursor: 'pointer',
+                  direction: 'ltr',
+                } as any}
+              />
+              <View style={styles.sliderTicks}>
+                {[1, 10, 25, 50, 75, 100].map(v => (
+                  <Pressable key={v} onPress={() => setRadiusKm(v)}>
+                    <Text style={[styles.sliderTick, radiusKm === v && styles.sliderTickActive]}>
+                      {v}
+                    </Text>
+                  </Pressable>
+                ))}
+              </View>
+            </View>
+          )}
           {loading && !isRefreshing && places.length === 0 ? (
         <Loading />
       ) : error ? (
@@ -684,38 +699,44 @@ const styles = StyleSheet.create({
     flexGrow: 1,
   },
 
-  radiusDropdown: {
-    position: 'absolute',
-    top: 32,
-    left: 0,
-    right: 0,
+  sliderCard: {
     backgroundColor: colors.surface,
     borderRadius: radius.lg,
     borderWidth: 1,
     borderColor: colors.border,
-    zIndex: 50,
-    overflow: 'hidden',
+    paddingVertical: 14,
+    paddingHorizontal: 16,
+    marginBottom: spacing.md,
+    gap: 10,
     ...shadow.card,
   },
-  radiusOption: {
+  sliderHeader: {
     flexDirection: 'row',
-    alignItems: 'center',
     justifyContent: 'space-between',
-    paddingVertical: 11,
-    paddingHorizontal: 16,
-    borderBottomWidth: 0.5,
-    borderBottomColor: colors.border,
+    alignItems: 'center',
   },
-  radiusOptionActive: {
-    backgroundColor: colors.primaryLight,
-  },
-  radiusOptionText: {
-    fontSize: 14,
+  sliderLabel: {
+    fontSize: 13,
     fontWeight: '600',
-    color: colors.text,
-    textAlign: 'right',
+    color: colors.textMuted,
   },
-  radiusOptionTextActive: {
+  sliderValue: {
+    fontSize: 16,
+    fontWeight: '800',
     color: colors.primary,
+  },
+  sliderTicks: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: 2,
+  },
+  sliderTick: {
+    fontSize: 11,
+    color: colors.textFaint,
+    fontWeight: '500',
+  },
+  sliderTickActive: {
+    color: colors.primary,
+    fontWeight: '700',
   },
 });
