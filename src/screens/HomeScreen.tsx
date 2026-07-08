@@ -89,49 +89,27 @@ export function HomeScreen() {
       >
         {/* Header */}
         <View style={styles.header}>
+          {/* Top bar: globe far left | בס״ד + ☰ far right */}
           <View style={styles.headerTopRow}>
-            {/* Greeting + Globe — left in LTR web */}
-            <View style={styles.greetingGroup}>
-              <Text style={styles.greeting}>{getDayGreeting(t)}</Text>
-              <Pressable
-                onPress={() => setLangOpen(true)}
-                hitSlop={12}
-                style={styles.globeBtn}
-              >
-                <Ionicons name="globe-outline" size={19} color={colors.textMuted} />
+            <Pressable onPress={() => setLangOpen(true)} hitSlop={12} style={styles.globeBtn}>
+              <Ionicons name="globe-outline" size={19} color={colors.textMuted} />
+            </Pressable>
+            <View style={styles.bsdMenuGroup}>
+              <Text style={styles.bsd}>בס״ד</Text>
+              <Pressable onPress={() => setMenuOpen(true)} hitSlop={12} style={styles.menuBtn}>
+                <Ionicons name="menu-outline" size={22} color={colors.textMuted} />
               </Pressable>
             </View>
-
-            {/* בס״ד — center */}
-            <Text style={styles.bsd}>בס״ד</Text>
-
-            {/* ☰ Menu button — right in LTR web */}
-            <Pressable
-              onPress={() => setMenuOpen(true)}
-              hitSlop={12}
-              style={styles.globeBtn}
-            >
-              <Ionicons name="menu-outline" size={22} color={colors.textMuted} />
-            </Pressable>
           </View>
-          {userName ? (
-            <Text style={styles.title}>שלום, {userName} 👋</Text>
-          ) : (
-            <Text style={styles.title}>{t.home.title}</Text>
+
+          {/* Greeting + title centered */}
+          <Text style={styles.greeting}>{getDayGreeting(t)}</Text>
+          {userName && (
+            <Text style={styles.userName}>שלום, {userName} 👋</Text>
           )}
+          <Text style={styles.title}>{t.home.title}</Text>
           <Text style={styles.subtitle}>{t.home.subtitle}</Text>
         </View>
-
-        {/* Search bar — pill shape, visual only */}
-        <Pressable
-          style={({ pressed }) => [styles.searchBar, pressed && styles.pressed]}
-          onPress={() => navigation.navigate('List', { focus: true })}
-        >
-          <Ionicons name="search-outline" size={18} color={colors.textMuted} />
-          <Text style={styles.searchPlaceholder}>{t.home.homeSearchPlaceholder}</Text>
-          <View style={styles.searchDivider} />
-          <Ionicons name="options-outline" size={17} color={colors.textMuted} />
-        </Pressable>
 
         {/* CTA — elevated presence */}
         <Pressable
@@ -270,25 +248,37 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: spacing.lg,
   },
+  bsdMenuGroup: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing.sm,
+  },
   bsd: {
     fontSize: 10,
     fontWeight: '500',
     color: colors.textFaint,
     letterSpacing: 0.5,
   },
-  greetingGroup: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 6,
-  },
-  greeting: {
-    fontSize: 11,
-    fontWeight: '500',
-    color: colors.textMuted,
-    letterSpacing: 0.3,
-  },
   globeBtn: {
     padding: 2,
+  },
+  menuBtn: {
+    padding: 2,
+  },
+  greeting: {
+    fontSize: 13,
+    fontWeight: '500',
+    color: colors.textMuted,
+    textAlign: 'center',
+    letterSpacing: 0.3,
+    marginBottom: 2,
+  },
+  userName: {
+    fontSize: 16,
+    fontWeight: '700',
+    color: colors.text,
+    textAlign: 'center',
+    marginBottom: spacing.sm,
   },
   title: {
     fontSize: 38,
@@ -296,7 +286,7 @@ const styles = StyleSheet.create({
     letterSpacing: -1.5,
     color: colors.primary,
     textAlign: 'center',
-    marginBottom: spacing.sm,
+    marginBottom: spacing.xs,
   },
   subtitle: {
     fontSize: 14,
