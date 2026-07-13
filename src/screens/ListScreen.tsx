@@ -75,7 +75,6 @@ export function ListScreen() {
   const [birkatOpen, setBirkatOpen] = useState(false);
   const [isRefreshing, setIsRefreshing] = useState(false);
   const [radiusKm, setRadiusKm] = useState<number>(5);
-  const [radiusOpen, setRadiusOpen] = useState(false);
 
   // Location mode: use current GPS or a custom geocoded address
   const [locationMode, setLocationMode] = useState<LocationMode>('current');
@@ -269,7 +268,7 @@ export function ListScreen() {
         <Ionicons name="search" size={18} color={colors.textMuted} />
         <TextInput
           style={styles.searchInput}
-          placeholder={t.list.searchPlaceholder}
+          placeholder="חיפוש לפי שם, רחוב או עיר..."
           placeholderTextColor={colors.textMuted}
           ref={searchRef}
           value={inputText}
@@ -372,61 +371,42 @@ export function ListScreen() {
         )
       ) : (
         <>
+          {/* Radius chips — same style as category tabs */}
+          {sortByDistance && (
+            <ScrollView
+              horizontal
+              showsHorizontalScrollIndicator={false}
+              style={styles.tabsScroll}
+              contentContainerStyle={styles.tabsContent}
+            >
+              {RADIUS_OPTIONS.map((r) => (
+                <Pressable
+                  key={r}
+                  style={[styles.tab, radiusKm === r && styles.tabActive]}
+                  onPress={() => setRadiusKm(r)}
+                >
+                  <Ionicons
+                    name="navigate-circle-outline"
+                    size={13}
+                    color={radiusKm === r ? '#fff' : colors.textMuted}
+                  />
+                  <Text style={[styles.tabText, radiusKm === r && styles.tabTextActive]}>
+                    {r} ק״מ
+                  </Text>
+                </Pressable>
+              ))}
+            </ScrollView>
+          )}
+
           <View style={styles.metaRow}>
             <Text style={styles.resultCount}>{t.list.resultsCount(sorted.length)}</Text>
-            {sortByDistance ? (
-              <Pressable
-                style={styles.sortToggle}
-                onPress={() => setRadiusOpen(o => !o)}
-              >
-                <Ionicons name="navigate" size={14} color={colors.primary} />
-                <Text style={styles.sortText}>לפי מרחק · {radiusKm} ק״מ</Text>
-                <Ionicons
-                  name={radiusOpen ? 'chevron-up' : 'chevron-down'}
-                  size={13}
-                  color={colors.primary}
-                />
-              </Pressable>
-            ) : (
-              <View style={styles.sortToggle}>
-                <Ionicons name="text" size={14} color={colors.primary} />
-                <Text style={styles.sortText}>{t.list.sortByName}</Text>
-              </View>
-            )}
-          </View>
-
-          {/* Radius slider — shown below meta row when open */}
-          {sortByDistance && radiusOpen && (
-            <View style={styles.sliderCard}>
-              <View style={styles.sliderHeader}>
-                <Text style={styles.sliderLabel}>טווח חיפוש</Text>
-                <Text style={styles.sliderValue}>{radiusKm} ק״מ</Text>
-              </View>
-              <input
-                type="range"
-                min={1}
-                max={100}
-                value={radiusKm}
-                onChange={(e: any) => setRadiusKm(Number(e.target.value))}
-                style={{
-                  width: '100%',
-                  accentColor: colors.primary,
-                  height: 4,
-                  cursor: 'pointer',
-                  direction: 'ltr',
-                } as any}
-              />
-              <View style={styles.sliderTicks}>
-                {[1, 10, 25, 50, 75, 100].map(v => (
-                  <Pressable key={v} onPress={() => setRadiusKm(v)}>
-                    <Text style={[styles.sliderTick, radiusKm === v && styles.sliderTickActive]}>
-                      {v}
-                    </Text>
-                  </Pressable>
-                ))}
-              </View>
+            <View style={styles.sortToggle}>
+              <Ionicons name={sortByDistance ? 'navigate' : 'text'} size={14} color={colors.primary} />
+              <Text style={styles.sortText}>
+                {sortByDistance ? t.list.sortByDistance : t.list.sortByName}
+              </Text>
             </View>
-          )}
+          </View>
           {loading && !isRefreshing && places.length === 0 ? (
         <Loading />
       ) : error ? (
@@ -699,44 +679,4 @@ const styles = StyleSheet.create({
     flexGrow: 1,
   },
 
-  sliderCard: {
-    backgroundColor: colors.surface,
-    borderRadius: radius.lg,
-    borderWidth: 1,
-    borderColor: colors.border,
-    paddingVertical: 14,
-    paddingHorizontal: 16,
-    marginBottom: spacing.md,
-    gap: 10,
-    ...shadow.card,
-  },
-  sliderHeader: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-  },
-  sliderLabel: {
-    fontSize: 13,
-    fontWeight: '600',
-    color: colors.textMuted,
-  },
-  sliderValue: {
-    fontSize: 16,
-    fontWeight: '800',
-    color: colors.primary,
-  },
-  sliderTicks: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    marginTop: 2,
-  },
-  sliderTick: {
-    fontSize: 11,
-    color: colors.textFaint,
-    fontWeight: '500',
-  },
-  sliderTickActive: {
-    color: colors.primary,
-    fontWeight: '700',
-  },
 });
