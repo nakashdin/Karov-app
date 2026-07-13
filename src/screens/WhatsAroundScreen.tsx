@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
@@ -30,30 +30,44 @@ const CATEGORIES: Array<{
   { key: 'tzaddik_grave',label: 'קברי צדיקים',   emoji: '🪦',  color: colors.tzaddik,            types: ['tzaddik_grave'] },
 ];
 
+const RADIUS_OPTIONS: Array<{ label: string; km: number | null }> = [
+  { label: 'הכל',  km: null },
+  { label: '1 ק"מ', km: 1 },
+  { label: '3 ק"מ', km: 3 },
+  { label: '5 ק"מ', km: 5 },
+  { label: '10 ק"מ', km: 10 },
+];
+
 export function WhatsAroundScreen() {
   const navigation = useNavigation<Nav>();
   const { places } = usePlaces();
   const { location } = useSharedLocation();
   const { setFilters } = useFilters();
+  const [radiusKm, setRadiusKm] = useState<number | null>(null);
+
+  const inRadius = useMemo(() => {
+    if (!location || radiusKm === null) return places;
+    return places.filter(p => distanceKm(location, p.location) <= radiusKm);
+  }, [places, location, radiusKm]);
 
   const counts = useMemo(() => {
     const map: Record<string, number> = {};
     for (const cat of CATEGORIES) {
-      map[cat.key] = places.filter(p => cat.types.includes(p.type)).length;
+      map[cat.key] = inRadius.filter(p => cat.types.includes(p.type)).length;
     }
     return map;
-  }, [places]);
+  }, [inRadius]);
 
   const nearest = useMemo(() => {
     const map: Record<string, number | null> = {};
     for (const cat of CATEGORIES) {
       if (!location) { map[cat.key] = null; continue; }
-      const inCat = places.filter(p => cat.types.includes(p.type));
+      const inCat = inRadius.filter(p => cat.types.includes(p.type));
       if (!inCat.length) { map[cat.key] = null; continue; }
       map[cat.key] = Math.min(...inCat.map(p => distanceKm(location, p.location)));
     }
     return map;
-  }, [places, location]);
+  }, [inRadius, location]);
 
   const handlePress = (cat: typeof CATEGORIES[0]) => {
     if (cat.key === 'food') {
@@ -84,9 +98,44 @@ export function WhatsAroundScreen() {
           </View>
         </View>
 
+        {/* Radius filter */}
+        <View style={styles.radiusSection}>
+          <Text style={styles.radiusLabel}>
+            <Ionicons name="radio-button-on-outline" size={13} color={colors.textMuted} />
+            {'  '}טווח חיפוש
+            {!location && <Text style={styles.noLocNote}> (הפעל מיקום לסינון)</Text>}
+          </Text>
+          <ScrollView
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={styles.radiusChips}
+          >
+            {RADIUS_OPTIONS.map(opt => {
+              const active = opt.km === radiusKm;
+              const disabled = opt.km !== null && !location;
+              return (
+                <Pressable
+                  key={opt.label}
+                  style={[
+                    styles.chip,
+                    active && styles.chipActive,
+                    disabled && styles.chipDisabled,
+                  ]}
+                  onPress={() => !disabled && setRadiusKm(opt.km)}
+                  disabled={disabled}
+                >
+                  <Text style={[styles.chipText, active && styles.chipTextActive, disabled && styles.chipTextDisabled]}>
+                    {opt.label}
+                  </Text>
+                </Pressable>
+              );
+            })}
+          </ScrollView>
+        </View>
+
         {/* Category cards */}
         {CATEGORIES.map(cat => {
-          const dist = nearest[cat.key];
+          const dist  = nearest[cat.key];
           const count = counts[cat.key] ?? 0;
           return (
             <Pressable
@@ -123,7 +172,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: spacing.md,
-    marginBottom: spacing.md,
+    marginBottom: spacing.sm,
   },
   backBtn: {
     width: 40,
@@ -152,6 +201,58 @@ const styles = StyleSheet.create({
   },
   pressed: { opacity: 0.85 },
 
+  // Radius filter
+  radiusSection: {
+    backgroundColor: colors.surface,
+    borderRadius: radius.lg,
+    padding: spacing.md,
+    gap: 8,
+    ...shadow.card,
+  },
+  radiusLabel: {
+    fontSize: 12,
+    fontWeight: '600',
+    color: colors.textMuted,
+    textAlign: 'right',
+  },
+  noLocNote: {
+    fontSize: 11,
+    color: colors.danger,
+    fontWeight: '400',
+  },
+  radiusChips: {
+    flexDirection: 'row',
+    gap: 8,
+    justifyContent: 'flex-end',
+  },
+  chip: {
+    borderRadius: radius.pill,
+    paddingHorizontal: 14,
+    paddingVertical: 7,
+    borderWidth: 1.5,
+    borderColor: colors.border,
+    backgroundColor: colors.background,
+  },
+  chipActive: {
+    borderColor: colors.primary,
+    backgroundColor: colors.primary,
+  },
+  chipDisabled: {
+    opacity: 0.35,
+  },
+  chipText: {
+    fontSize: 13,
+    fontWeight: '600',
+    color: colors.textMuted,
+  },
+  chipTextActive: {
+    color: '#fff',
+  },
+  chipTextDisabled: {
+    color: colors.textMuted,
+  },
+
+  // Category card
   card: {
     flexDirection: 'row',
     alignItems: 'center',

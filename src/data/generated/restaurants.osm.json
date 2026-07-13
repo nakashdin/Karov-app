@@ -1262,7 +1262,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-4501920591",
@@ -1390,7 +1391,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-5114974763",
@@ -1411,7 +1413,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-5115004882",
@@ -1538,7 +1541,8 @@
     "phone": "+972 50 202 2610;+972 50 549 8309",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-5143557202",
@@ -1870,7 +1874,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-5302040666",
@@ -1887,7 +1892,8 @@
     "openingHours": "Su-Th 08:00-18:00; Fr 08:00-14:00",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-5302063381",
@@ -1918,7 +1924,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-5498980275",
@@ -1969,7 +1976,8 @@
     "openingHours": "Su-Th 09:30-19:00; Fr unknown \"please inquire\"",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-5613756285",
@@ -2267,7 +2275,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-6014904184",
@@ -2471,7 +2480,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-6469411085",
@@ -3222,7 +3232,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-10723520074",
@@ -3433,7 +3444,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-10964969762",
@@ -4337,7 +4349,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-12140544814",
@@ -4520,7 +4533,8 @@
     "phone": "+972 25853555",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-12281652113",
@@ -5327,7 +5341,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-13073821956",
@@ -5505,7 +5520,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-13323181204",
@@ -5657,7 +5673,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-13372953517",
@@ -5713,7 +5730,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-13426948731",
@@ -5781,7 +5799,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-13474038328",
@@ -5846,7 +5865,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-13619434567",
@@ -5991,7 +6011,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-13884849098",
@@ -6179,7 +6200,8 @@
       "dataSource": "humus-eli-yahoo.com",
       "webKosherLabel": "מהדרין",
       "gpsSource": "nominatim_city"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "humus-eli-חומוס-אליהו-אלונים",
@@ -6288,7 +6310,8 @@
       "dataSource": "humus-eli-yahoo.com",
       "webKosherLabel": "מהדרין",
       "gpsSource": "nominatim_city"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "humus-eli-חומוס-אליהו-בנימינה",
@@ -6313,7 +6336,8 @@
       "dataSource": "humus-eli-yahoo.com",
       "webKosherLabel": "מהדרין",
       "gpsSource": "nominatim_city"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "humus-eli-חומוס-אליהו-בת-ים",
@@ -6338,7 +6362,8 @@
       "dataSource": "humus-eli-yahoo.com",
       "webKosherLabel": "מהדרין",
       "gpsSource": "nominatim_city"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "humus-eli-חומוס-אליהו-גוש-עציון",
@@ -6363,7 +6388,8 @@
       "dataSource": "humus-eli-yahoo.com",
       "webKosherLabel": "מהדרין",
       "gpsSource": "nominatim_city"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "humus-eli-חומוס-אליהו-גן-יבנה",
@@ -6388,7 +6414,8 @@
       "dataSource": "humus-eli-yahoo.com",
       "webKosherLabel": "מהדרין",
       "gpsSource": "nominatim_city"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "humus-eli-חומוס-אליהו-חדרה",
@@ -6413,7 +6440,8 @@
       "dataSource": "humus-eli-yahoo.com",
       "webKosherLabel": "מהדרין",
       "gpsSource": "nominatim_city"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "humus-eli-חומוס-אליהו-חולון",
@@ -6438,7 +6466,8 @@
       "dataSource": "humus-eli-yahoo.com",
       "webKosherLabel": "מהדרין",
       "gpsSource": "nominatim_city"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "humus-eli-חומוס-אליהו-לוד",
@@ -6463,7 +6492,8 @@
       "dataSource": "humus-eli-yahoo.com",
       "webKosherLabel": "מהדרין",
       "gpsSource": "nominatim_city"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "humus-eli-חומוס-אליהו-מודיעין-עילית",
@@ -6488,7 +6518,8 @@
       "dataSource": "humus-eli-yahoo.com",
       "webKosherLabel": "מהדרין",
       "gpsSource": "nominatim_city"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "humus-eli-חומוס-אליהו-מישור-אדומים",
@@ -6513,7 +6544,8 @@
       "dataSource": "humus-eli-yahoo.com",
       "webKosherLabel": "מהדרין",
       "gpsSource": "nominatim_city"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "humus-eli-חומוס-אליהו-מענית",
@@ -6538,7 +6570,8 @@
       "dataSource": "humus-eli-yahoo.com",
       "webKosherLabel": "מהדרין",
       "gpsSource": "nominatim_city"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "humus-eli-חומוס-אליהו-נס-ציונה",
@@ -6563,7 +6596,8 @@
       "dataSource": "humus-eli-yahoo.com",
       "webKosherLabel": "מהדרין",
       "gpsSource": "nominatim_city"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "humus-eli-חומוס-אליהו-נתיבות",
@@ -6588,7 +6622,8 @@
       "dataSource": "humus-eli-yahoo.com",
       "webKosherLabel": "מהדרין",
       "gpsSource": "nominatim_city"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "humus-eli-חומוס-אליהו-נתניה",
@@ -6613,7 +6648,8 @@
       "dataSource": "humus-eli-yahoo.com",
       "webKosherLabel": "רגיל",
       "gpsSource": "nominatim_city"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "humus-eli-חומוס-אליהו-עלי",
@@ -6638,7 +6674,8 @@
       "dataSource": "humus-eli-yahoo.com",
       "webKosherLabel": "מהדרין",
       "gpsSource": "nominatim_city"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "humus-eli-חומוס-אליהו-צמח",
@@ -6691,7 +6728,8 @@
       "dataSource": "humus-eli-yahoo.com",
       "webKosherLabel": "מהדרין",
       "gpsSource": "nominatim_city"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "humus-eli-חומוס-אליהו-קרית-מוצקין",
@@ -6716,7 +6754,8 @@
       "dataSource": "humus-eli-yahoo.com",
       "webKosherLabel": "מהדרין",
       "gpsSource": "nominatim_city"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "humus-eli-חומוס-אליהו-קרית-גת",
@@ -6741,7 +6780,8 @@
       "dataSource": "humus-eli-yahoo.com",
       "webKosherLabel": "מהדרין",
       "gpsSource": "nominatim_city"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "humus-eli-חומוס-אליהו-ראש-העין",
@@ -6766,7 +6806,8 @@
       "dataSource": "humus-eli-yahoo.com",
       "webKosherLabel": "מהדרין",
       "gpsSource": "nominatim_city"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "humus-eli-חומוס-אליהו-ראשלצ-קניון-הזהב",
@@ -6791,7 +6832,8 @@
       "dataSource": "humus-eli-yahoo.com",
       "webKosherLabel": "מהדרין",
       "gpsSource": "nominatim_city"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "humus-eli-חומוס-אליהו-ראשלצ-ראשונים",
@@ -6816,7 +6858,8 @@
       "dataSource": "humus-eli-yahoo.com",
       "webKosherLabel": "מהדרין",
       "gpsSource": "nominatim_city"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "humus-eli-חומוס-אליהו-שוהם",
@@ -6841,7 +6884,8 @@
       "dataSource": "humus-eli-yahoo.com",
       "webKosherLabel": "מהדרין",
       "gpsSource": "nominatim_city"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "humus-eli-qrny-shwmrwn",
@@ -6867,7 +6911,8 @@
       "webKosherLabel": "מהדרין",
       "gpsSource": "manual",
       "note": "קרני שומרון ליד אלפי מנשה, שומרון"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "humus-eli-חומוס-אליהו-באר-שבע-מצדה",
