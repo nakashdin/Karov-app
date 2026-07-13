@@ -69,10 +69,7 @@
       "longitude": 35.2270966
     },
     "source": "osm",
-    "category": "meat",
-    "phone": "02-6436778",
-    "openingHours": "Su-Fr 07:30-21:30",
-    "instagram": "https://www.instagram.com/levis.place/"
+    "category": "meat"
   },
   {
     "id": "osm-node-777400976",
@@ -118,6 +115,24 @@
     "phone": "+972-8-6341415",
     "tags": [
       "dairy"
+    ],
+    "category": "meat"
+  },
+  {
+    "id": "osm-node-1088081695",
+    "name": "Denis Kingdom",
+    "type": "restaurant",
+    "cityId": "אילת",
+    "address": "רחוב הים 6, אילת",
+    "location": {
+      "latitude": 29.5485325,
+      "longitude": 34.9671531
+    },
+    "source": "osm",
+    "phone": "+972-8-637-9898",
+    "tags": [
+      "fish",
+      "meat"
     ],
     "category": "meat"
   },
@@ -174,9 +189,7 @@
     "category": "dairy",
     "website": "https://www.aroma.co.il",
     "instagram": "https://www.instagram.com/aromaisrael",
-    "facebook": "https://www.facebook.com/AromaIsrael",
-    "phone": "02-6255365",
-    "openingHours": "Su-Sa 06:00-23:00"
+    "facebook": "https://www.facebook.com/AromaIsrael"
   },
   {
     "id": "osm-node-1477010459",
@@ -195,8 +208,7 @@
     "category": "dairy",
     "website": "https://www.coffix.co.il",
     "instagram": "https://www.instagram.com/coffix_israel",
-    "facebook": "https://www.facebook.com/coffix",
-    "openingHours": "Su-Th 09:00-21:30; Fr 09:00-16:00"
+    "facebook": "https://www.facebook.com/coffix"
   },
   {
     "id": "osm-node-1643352285",
@@ -212,16 +224,14 @@
     "tags": [
       "moroccan"
     ],
-    "category": "meat",
-    "phone": "09-8334797",
-    "openingHours": "Su-Th 12:00-24:00; Fr 12:00-14:30"
+    "category": "meat"
   },
   {
     "id": "osm-node-1667986371",
     "name": "ארומה",
     "type": "restaurant",
     "cityId": "באר שבע",
-    "address": "מרכז ביג, דרך חברון 21, באר שבע",
+    "address": "באר שבע",
     "location": {
       "latitude": 31.262549,
       "longitude": 34.7991456
@@ -234,8 +244,7 @@
     "category": "dairy",
     "website": "https://www.aroma.co.il",
     "instagram": "https://www.instagram.com/aromaisrael",
-    "facebook": "https://www.facebook.com/AromaIsrael",
-    "phone": "08-6652032"
+    "facebook": "https://www.facebook.com/AromaIsrael"
   },
   {
     "id": "osm-node-1675753858",
@@ -300,6 +309,19 @@
     "category": "meat"
   },
   {
+    "id": "osm-node-1741956267",
+    "name": "פופא",
+    "type": "restaurant",
+    "cityId": "בת ים",
+    "address": "רחוב לישנסקי יוסף 22, ראשון לציון",
+    "location": {
+      "latitude": 31.9947701,
+      "longitude": 34.7678117
+    },
+    "source": "osm",
+    "category": "meat"
+  },
+  {
     "id": "osm-node-1753285811",
     "name": "ביסטרו 56",
     "type": "restaurant",
@@ -331,10 +353,7 @@
     "tags": [
       "american"
     ],
-    "category": "meat",
-    "openingHours": "Su-Th 18:30-22:30; Sa 21:30-22:30",
-    "website": "https://www.ranchhouse.co.il",
-    "instagram": "https://www.instagram.com/ranch_house_eilat/"
+    "category": "meat"
   },
   {
     "id": "osm-node-1763010099",
@@ -351,8 +370,7 @@
     "tags": [
       "burger"
     ],
-    "category": "meat",
-    "openingHours": "Su-Th 19:00-23:00; Sa 21:00-23:00"
+    "category": "meat"
   },
   {
     "id": "osm-node-1763014171",
@@ -389,6 +407,40 @@
     "category": "meat"
   },
   {
+    "id": "osm-node-1763020169",
+    "name": "שיפודי הבוסתן",
+    "type": "restaurant",
+    "cityId": "אילת",
+    "address": "אילת",
+    "location": {
+      "latitude": 29.5480116,
+      "longitude": 34.9649056
+    },
+    "source": "osm",
+    "phone": "+972-(0)8-6362294",
+    "tags": [
+      "Meat"
+    ],
+    "category": "meat"
+  },
+  {
+    "id": "osm-node-1763027555",
+    "name": "שיפודי אילת",
+    "type": "restaurant",
+    "cityId": "אילת",
+    "address": "רחוב תרשיש 8, אילת",
+    "location": {
+      "latitude": 29.550197,
+      "longitude": 34.9581494
+    },
+    "source": "osm",
+    "phone": "+972-(0)8-6339933",
+    "tags": [
+      "Meat"
+    ],
+    "category": "meat"
+  },
+  {
     "id": "osm-node-1763031739",
     "name": "לורנס",
     "type": "restaurant",
@@ -403,10 +455,24 @@
     "tags": [
       "fish"
     ],
-    "category": "meat",
-    "openingHours": "Su-Th 18:30-22:30; Sa 20:30-00:00",
-    "website": "https://www.lawrence-eilat.co.il",
-    "instagram": "https://www.instagram.com/lawrence__eilat/"
+    "category": "meat"
+  },
+  {
+    "id": "osm-node-1763919142",
+    "name": "מרינה גריל",
+    "type": "restaurant",
+    "cityId": "אילת",
+    "address": "רחוב אנטיב 4, אילת",
+    "location": {
+      "latitude": 29.552574,
+      "longitude": 34.9620036
+    },
+    "source": "osm",
+    "phone": "+972-57-9442988",
+    "tags": [
+      "steak_house"
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-1763972919",
@@ -424,9 +490,24 @@
       "coffee_shop",
       "dairy"
     ],
-    "category": "dairy",
-    "openingHours": "Su-Th 10:00-21:00; Fr 09:00-16:00; Sa 12:00-21:00",
-    "website": "https://www.cafeboulevard.co.il"
+    "category": "dairy"
+  },
+  {
+    "id": "osm-node-1763987699",
+    "name": "יאקימונו",
+    "type": "restaurant",
+    "cityId": "אילת",
+    "address": "שביל פעמי השלום 19, אילת",
+    "location": {
+      "latitude": 29.5500895,
+      "longitude": 34.9616892
+    },
+    "source": "osm",
+    "phone": "+972-8-6306687",
+    "tags": [
+      "japanese"
+    ],
+    "category": "parve"
   },
   {
     "id": "osm-node-1764005156",
@@ -562,29 +643,42 @@
     "name": "קפה פורטיולי",
     "type": "restaurant",
     "cityId": "חצור הגלילית",
-    "address": "דרך הבנים 1, קניון הגליל העליון, חצור הגלילית",
+    "address": "חצור הגלילית",
     "location": {
       "latitude": 32.9808696,
       "longitude": 35.5561903
     },
     "source": "osm",
-    "category": "dairy",
-    "phone": "04-6930338",
-    "instagram": "https://www.instagram.com/portioli_restaurant"
+    "category": "dairy"
   },
   {
     "id": "osm-node-2078991174",
     "name": "שווארמה גולני",
     "type": "restaurant",
     "cityId": "חצור הגלילית",
-    "address": "דרך הבנים 1, חצור הגלילית",
+    "address": "חצור הגלילית",
     "location": {
       "latitude": 32.9807725,
       "longitude": 35.5557554
     },
     "source": "osm",
-    "category": "meat",
-    "phone": "04-6931829"
+    "category": "meat"
+  },
+  {
+    "id": "osm-node-2078991183",
+    "name": "פיצה ורונה",
+    "type": "restaurant",
+    "cityId": "חצור הגלילית",
+    "address": "חצור הגלילית",
+    "location": {
+      "latitude": 32.9809224,
+      "longitude": 35.55584
+    },
+    "source": "osm",
+    "tags": [
+      "pizza"
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-2079006787",
@@ -620,6 +714,19 @@
     "website": "https://www.pizzashemesh.co.il"
   },
   {
+    "id": "osm-node-2124580743",
+    "name": "ציקן & ביף",
+    "type": "restaurant",
+    "cityId": "אזור",
+    "address": "רחוב המצודה 10, אזור",
+    "location": {
+      "latitude": 32.0298291,
+      "longitude": 34.7975675
+    },
+    "source": "osm",
+    "category": "meat"
+  },
+  {
     "id": "osm-node-2131481387",
     "name": "קאסה דל פפה ת\"א",
     "type": "restaurant",
@@ -636,6 +743,44 @@
       "pizza"
     ],
     "category": "dairy"
+  },
+  {
+    "id": "osm-node-2144611932",
+    "name": "ארומה",
+    "type": "restaurant",
+    "cityId": "כפר חב\"ד",
+    "address": "כפר חב\"ד",
+    "location": {
+      "latitude": 31.9686019,
+      "longitude": 34.8430931
+    },
+    "source": "osm",
+    "tags": [
+      "coffee_shop"
+    ],
+    "category": "dairy",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "facebook": "https://www.facebook.com/AromaIsrael"
+  },
+  {
+    "id": "osm-node-2144611975",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "כפר חב\"ד",
+    "address": "כפר חב\"ד",
+    "location": {
+      "latitude": 31.9685611,
+      "longitude": 34.8427717
+    },
+    "source": "osm",
+    "tags": [
+      "burger"
+    ],
+    "category": "meat",
+    "website": "https://www.mcdonalds.co.il",
+    "instagram": "https://www.instagram.com/mcdonaldsisrael",
+    "facebook": "https://www.facebook.com/McDonaldsIsrael"
   },
   {
     "id": "osm-node-2144612020",
@@ -670,8 +815,7 @@
     "category": "meat",
     "website": "https://www.burgersbar.co.il",
     "instagram": "https://www.instagram.com/burgersbar",
-    "facebook": "https://www.facebook.com/BurgersBar",
-    "openingHours": "Su-Th 11:00-23:59"
+    "facebook": "https://www.facebook.com/BurgersBar"
   },
   {
     "id": "osm-node-2318762527",
@@ -764,9 +908,7 @@
       "pizza"
     ],
     "category": "dairy",
-    "website": "https://www.pizzashemesh.co.il",
-    "phone": "03-5531310",
-    "openingHours": "Su-Th 12:00-23:00"
+    "website": "https://www.pizzashemesh.co.il"
   },
   {
     "id": "osm-node-2577660818",
@@ -785,8 +927,7 @@
     "category": "meat",
     "website": "https://www.burgersbar.co.il",
     "instagram": "https://www.instagram.com/burgersbar",
-    "facebook": "https://www.facebook.com/BurgersBar",
-    "openingHours": "Su-Th 11:00-23:30; Fr 11:00-15:00"
+    "facebook": "https://www.facebook.com/BurgersBar"
   },
   {
     "id": "osm-node-2701869274",
@@ -945,10 +1086,7 @@
       "longitude": 34.7918571
     },
     "source": "osm",
-    "category": "dairy",
-    "phone": "03-6954459",
-    "openingHours": "Su-Th 06:00-22:00; Fr 06:00-15:00",
-    "website": "https://cake-art.co.il"
+    "category": "dairy"
   },
   {
     "id": "osm-node-4275386775",
@@ -997,9 +1135,7 @@
     "category": "dairy",
     "website": "https://www.roladin.co.il",
     "instagram": "https://www.instagram.com/roladin",
-    "facebook": "https://www.facebook.com/roladin",
-    "phone": "03-5039419",
-    "openingHours": "Su-Th 06:30-21:00; Fr 07:00-14:30"
+    "facebook": "https://www.facebook.com/roladin"
   },
   {
     "id": "osm-node-4421769054",
@@ -1075,11 +1211,30 @@
     "facebook": "https://www.facebook.com/AromaIsrael"
   },
   {
+    "id": "osm-node-4612610692",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "נטעים",
+    "address": "נטעים",
+    "location": {
+      "latitude": 31.9760627,
+      "longitude": 34.7741191
+    },
+    "source": "osm",
+    "tags": [
+      "burger"
+    ],
+    "category": "meat",
+    "website": "https://www.mcdonalds.co.il",
+    "instagram": "https://www.instagram.com/mcdonaldsisrael",
+    "facebook": "https://www.facebook.com/McDonaldsIsrael"
+  },
+  {
     "id": "osm-node-4818808608",
     "name": "קפה גרג",
     "type": "restaurant",
     "cityId": "כרמיאל",
-    "address": "קניון חוצות כרמיאל, כרמיאל",
+    "address": "כרמיאל",
     "location": {
       "latitude": 32.9134777,
       "longitude": 35.282161
@@ -1088,9 +1243,7 @@
     "category": "dairy",
     "website": "https://www.cafegreg.co.il",
     "instagram": "https://www.instagram.com/cafegreg",
-    "facebook": "https://www.facebook.com/CafeGreg",
-    "phone": "04-8578475",
-    "openingHours": "Su-Th 08:30-21:00; Fr 07:30-15:00"
+    "facebook": "https://www.facebook.com/CafeGreg"
   },
   {
     "id": "osm-node-4828911835",
@@ -1106,10 +1259,7 @@
     "tags": [
       "burger"
     ],
-    "category": "meat",
-    "phone": "03-9191891",
-    "openingHours": "Su-Th 12:00-23:00; Fr 12:00-14:30",
-    "website": "https://blackbarburger.co.il"
+    "category": "meat"
   },
   {
     "id": "osm-node-4916855022",
@@ -1128,9 +1278,7 @@
     "category": "parve",
     "website": "https://www.humuselihu.co.il",
     "instagram": "https://www.instagram.com/humus_elihu",
-    "facebook": "https://www.facebook.com/HumusElihu",
-    "phone": "08-6608711",
-    "openingHours": "Su-Th 07:30-19:30; Fr 09:00-13:00"
+    "facebook": "https://www.facebook.com/HumusElihu"
   },
   {
     "id": "osm-node-5114974763",
@@ -1179,8 +1327,7 @@
     "tags": [
       "shawarma"
     ],
-    "category": "meat",
-    "phone": "052-8754308"
+    "category": "meat"
   },
   {
     "id": "osm-node-5128936020",
@@ -1266,8 +1413,7 @@
     },
     "source": "osm",
     "phone": "+972 50 202 2610;+972 50 549 8309",
-    "category": "parve",
-    "openingHours": "Su-Th 07:00-18:00"
+    "category": "parve"
   },
   {
     "id": "osm-node-5143557202",
@@ -1284,8 +1430,7 @@
     "tags": [
       "burger"
     ],
-    "category": "meat",
-    "openingHours": "Su-Th 11:00-23:59"
+    "category": "meat"
   },
   {
     "id": "osm-node-5143582538",
@@ -1316,11 +1461,7 @@
     "tags": [
       "italian"
     ],
-    "category": "dairy",
-    "phone": "04-6997020",
-    "openingHours": "Su 10:00-21:00; Mo-Th 10:00-22:00; Fr 09:00-16:00",
-    "website": "https://www.pizzacenterks.co.il",
-    "instagram": "https://www.instagram.com/pizza_center1"
+    "category": "dairy"
   },
   {
     "id": "osm-node-5170599211",
@@ -1336,10 +1477,7 @@
     "tags": [
       "grill"
     ],
-    "category": "meat",
-    "phone": "03-5057632",
-    "openingHours": "Su-Th 11:00-20:30; Fr 11:00-14:30",
-    "website": "https://www.yashka.co.il"
+    "category": "meat"
   },
   {
     "id": "osm-node-5176327119",
@@ -1353,9 +1491,7 @@
     },
     "source": "osm",
     "phone": "+972 4 821 20 42",
-    "category": "meat",
-    "openingHours": "Su-Th 12:00-22:30; Fr 11:00-14:30",
-    "website": "https://hashnizelia.co.il"
+    "category": "meat"
   },
   {
     "id": "osm-node-5181482358",
@@ -1407,10 +1543,7 @@
     "tags": [
       "coffee_shop"
     ],
-    "category": "dairy",
-    "phone": "03-5036699",
-    "openingHours": "Su-Th 08:00-23:00; Fr 08:00-14:00",
-    "website": "https://www.cafecafe.co.il"
+    "category": "dairy"
   },
   {
     "id": "osm-node-5221319346",
@@ -1489,7 +1622,7 @@
     "name": "פיצה האט",
     "type": "restaurant",
     "cityId": "נשר",
-    "address": "טכניון, חיפה",
+    "address": "נשר",
     "location": {
       "latitude": 32.7764991,
       "longitude": 35.022555
@@ -1502,8 +1635,7 @@
     "category": "dairy",
     "website": "https://www.pizzahut.co.il",
     "instagram": "https://www.instagram.com/pizzahutisrael",
-    "facebook": "https://www.facebook.com/PizzaHutIsrael",
-    "phone": "1700-506070"
+    "facebook": "https://www.facebook.com/PizzaHutIsrael"
   },
   {
     "id": "osm-node-5298217097",
@@ -1569,15 +1701,14 @@
     "name": "אסתריקה",
     "type": "restaurant",
     "cityId": "קרית שמונה",
-    "address": "הברזל, קרית שמונה",
+    "address": "קרית שמונה",
     "location": {
       "latitude": 33.1986913,
       "longitude": 35.5764871
     },
     "source": "osm",
     "phone": "+972 4 652 5032",
-    "category": "dairy",
-    "openingHours": "Su-Th 10:00-20:00; Fr 09:00-13:00"
+    "category": "dairy"
   },
   {
     "id": "osm-node-5302021702",
@@ -1590,9 +1721,7 @@
       "longitude": 35.5451787
     },
     "source": "osm",
-    "category": "parve",
-    "phone": "052-5735301",
-    "openingHours": "Su-Th 08:30-20:30; Fr 08:00-13:00"
+    "category": "parve"
   },
   {
     "id": "osm-node-5302040666",
@@ -1614,7 +1743,7 @@
     "name": "השניצל המערבי",
     "type": "restaurant",
     "cityId": "חצור הגלילית",
-    "address": "ההסתדרות 20, חצור הגלילית",
+    "address": "חצור הגלילית",
     "location": {
       "latitude": 32.9808508,
       "longitude": 35.555757
@@ -1637,16 +1766,14 @@
     "category": "parve",
     "website": "https://www.humuselihu.co.il",
     "instagram": "https://www.instagram.com/humus_elihu",
-    "facebook": "https://www.facebook.com/HumusElihu",
-    "phone": "04-6390449",
-    "openingHours": "Su-Th 10:00-16:00; Fr 10:00-15:00"
+    "facebook": "https://www.facebook.com/HumusElihu"
   },
   {
     "id": "osm-node-5498980275",
     "name": "Best burger",
     "type": "restaurant",
     "cityId": "קרית שמונה",
-    "address": "ארלוזורוב 3, קרית שמונה",
+    "address": "קרית שמונה",
     "location": {
       "latitude": 33.2092084,
       "longitude": 35.5691085
@@ -1672,9 +1799,7 @@
     "category": "dairy",
     "website": "https://www.cafegreg.co.il",
     "instagram": "https://www.instagram.com/cafegreg",
-    "facebook": "https://www.facebook.com/CafeGreg",
-    "phone": "04-6801191",
-    "openingHours": "Su-Th 07:30-23:00; Fr 07:30-14:30"
+    "facebook": "https://www.facebook.com/CafeGreg"
   },
   {
     "id": "osm-node-5613754222",
@@ -1742,9 +1867,7 @@
       "longitude": 35.5484588
     },
     "source": "osm",
-    "category": "meat",
-    "phone": "04-9555109",
-    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-16:30"
+    "category": "meat"
   },
   {
     "id": "osm-node-5728427295",
@@ -1762,10 +1885,7 @@
       "japanese",
       "sushi"
     ],
-    "category": "parve",
-    "phone": "03-7236100",
-    "website": "https://japanika.net",
-    "instagram": "https://www.instagram.com/japanika.rosh.pinah/"
+    "category": "parve"
   },
   {
     "id": "osm-node-5728458069",
@@ -1869,10 +1989,7 @@
     "tags": [
       "pizza"
     ],
-    "category": "dairy",
-    "phone": "08-9100802",
-    "openingHours": "Su-We 11:00-22:00; Th 11:00-23:00",
-    "website": "https://casa-del-pepe.co.il"
+    "category": "dairy"
   },
   {
     "id": "osm-node-5917569185",
@@ -1893,6 +2010,23 @@
       "french"
     ],
     "category": "dairy"
+  },
+  {
+    "id": "osm-node-5920233936",
+    "name": "סומסה",
+    "type": "restaurant",
+    "cityId": "גבעתיים",
+    "address": "דרך מנחם בגין 4, רמת גן",
+    "location": {
+      "latitude": 32.0828111,
+      "longitude": 34.799941
+    },
+    "source": "osm",
+    "phone": "+972 037 526 222",
+    "tags": [
+      "mediterranean"
+    ],
+    "category": "parve"
   },
   {
     "id": "osm-node-5981044016",
@@ -1920,14 +2054,13 @@
     "name": "הערוק",
     "type": "restaurant",
     "cityId": "רמת השרון",
-    "address": "שדרות אהרון ירייב 1, רמת השרון",
+    "address": "רמת השרון",
     "location": {
       "latitude": 32.1431264,
       "longitude": 34.8179921
     },
     "source": "osm",
-    "category": "meat",
-    "phone": "054-6442010"
+    "category": "meat"
   },
   {
     "id": "osm-node-5997818140",
@@ -1941,8 +2074,7 @@
     },
     "source": "osm",
     "phone": "+972 50 600 9797",
-    "category": "meat",
-    "openingHours": "Su-We 11:00-23:00; Th 11:00-23:30"
+    "category": "meat"
   },
   {
     "id": "osm-node-6014902517",
@@ -1958,9 +2090,7 @@
     "tags": [
       "regional"
     ],
-    "category": "parve",
-    "phone": "052-6587051",
-    "openingHours": "Su-Th 07:30-19:30; Fr 09:00-13:00"
+    "category": "parve"
   },
   {
     "id": "osm-node-6014904184",
@@ -1973,8 +2103,7 @@
       "longitude": 35.5499571
     },
     "source": "osm",
-    "category": "meat",
-    "phone": "04-9506950"
+    "category": "meat"
   },
   {
     "id": "osm-node-6014908134",
@@ -1987,8 +2116,7 @@
       "longitude": 35.5498406
     },
     "source": "osm",
-    "category": "meat",
-    "phone": "04-6806806"
+    "category": "meat"
   },
   {
     "id": "osm-node-6015034147",
@@ -2076,9 +2204,7 @@
       "cake",
       "coffee_shop"
     ],
-    "category": "dairy",
-    "openingHours": "Su-Th 08:00-20:00; Fr 08:00-16:00",
-    "website": "https://delapaix.co.il"
+    "category": "dairy"
   },
   {
     "id": "osm-node-6195852402",
@@ -2139,8 +2265,20 @@
     "category": "dairy",
     "website": "https://www.pizzahut.co.il",
     "instagram": "https://www.instagram.com/pizzahutisrael",
-    "facebook": "https://www.facebook.com/PizzaHutIsrael",
-    "phone": "1700-506070"
+    "facebook": "https://www.facebook.com/PizzaHutIsrael"
+  },
+  {
+    "id": "osm-node-6354069186",
+    "name": "חומוס ברדיצ'ב",
+    "type": "restaurant",
+    "cityId": "נשר",
+    "address": "שדרות טרומפלדור 53, חיפה",
+    "location": {
+      "latitude": 32.7825976,
+      "longitude": 35.0145097
+    },
+    "source": "osm",
+    "category": "parve"
   },
   {
     "id": "osm-node-6469411085",
@@ -2216,7 +2354,7 @@
     "name": "קפה צפוני",
     "type": "restaurant",
     "cityId": "קרית שמונה",
-    "address": "שדרות תל חי 108, קרית שמונה",
+    "address": "קרית שמונה",
     "location": {
       "latitude": 33.217922,
       "longitude": 35.5872493
@@ -2225,8 +2363,7 @@
     "tags": [
       "cafe"
     ],
-    "category": "dairy",
-    "phone": "04-6905960"
+    "category": "dairy"
   },
   {
     "id": "osm-node-6526904599",
@@ -2246,6 +2383,19 @@
     "category": "parve"
   },
   {
+    "id": "osm-node-6531709739",
+    "name": "מפגש המזל",
+    "type": "restaurant",
+    "cityId": "שדה אליעזר",
+    "address": "שדה אליעזר",
+    "location": {
+      "latitude": 33.0452696,
+      "longitude": 35.5734823
+    },
+    "source": "osm",
+    "category": "meat"
+  },
+  {
     "id": "osm-node-6545190948",
     "name": "Mexicanas",
     "type": "restaurant",
@@ -2256,8 +2406,7 @@
       "longitude": 35.54863
     },
     "source": "osm",
-    "category": "parve",
-    "phone": "04-8556166"
+    "category": "parve"
   },
   {
     "id": "osm-node-6547411049",
@@ -2311,16 +2460,14 @@
     "tags": [
       "georgian"
     ],
-    "category": "dairy",
-    "phone": "053-5495189",
-    "openingHours": "Su-Tu 09:00-20:00; We 09:00-22:00; Th 09:00-23:00; Fr 09:00-14:30"
+    "category": "dairy"
   },
   {
     "id": "osm-node-6754297391",
     "name": "פיצה עגבניה",
     "type": "restaurant",
     "cityId": "רמת רחל",
-    "address": "דרך חברון 101, בית הנציב, ירושלים",
+    "address": "רמת רחל",
     "location": {
       "latitude": 31.7546878,
       "longitude": 35.221582
@@ -2329,17 +2476,14 @@
     "tags": [
       "pizza"
     ],
-    "category": "dairy",
-    "phone": "02-5321633",
-    "openingHours": "Su-Th 11:00-21:30; Fr 11:00-14:00",
-    "website": "https://agvania.co.il"
+    "category": "dairy"
   },
   {
     "id": "osm-node-6754328385",
     "name": "הבורגנים",
     "type": "restaurant",
     "cityId": "רמת רחל",
-    "address": "דרך חברון 101, תלפיות, ירושלים",
+    "address": "רמת רחל",
     "location": {
       "latitude": 31.7546103,
       "longitude": 35.2215368
@@ -2348,10 +2492,7 @@
     "tags": [
       "burger"
     ],
-    "category": "meat",
-    "phone": "02-3001644",
-    "openingHours": "Su-Th 11:00-22:00; Fr 10:00-14:00",
-    "website": "https://haburganim.com"
+    "category": "meat"
   },
   {
     "id": "osm-node-6854597174",
@@ -2367,10 +2508,7 @@
     "tags": [
       "burger"
     ],
-    "category": "meat",
-    "phone": "1700-704-110",
-    "openingHours": "Su-Th 12:00-23:00; Fr 12:00-15:00",
-    "website": "https://110burger.com"
+    "category": "meat"
   },
   {
     "id": "osm-node-7056388962",
@@ -2389,8 +2527,7 @@
     "category": "meat",
     "website": "https://www.mcdonalds.co.il",
     "instagram": "https://www.instagram.com/mcdonaldsisrael",
-    "facebook": "https://www.facebook.com/McDonaldsIsrael",
-    "openingHours": "Su-We 11:00-23:00; Th 11:00-23:59; Fr 10:30-16:00; Sa 21:30-23:59"
+    "facebook": "https://www.facebook.com/McDonaldsIsrael"
   },
   {
     "id": "osm-node-7064678724",
@@ -2438,8 +2575,7 @@
     "tags": [
       "kebab"
     ],
-    "category": "meat",
-    "openingHours": "Su-We 10:00-02:00; Th 10:00-04:00; Fr 10:00-14:30"
+    "category": "meat"
   },
   {
     "id": "osm-node-7620478217",
@@ -2495,7 +2631,7 @@
     "name": "בורגרים",
     "type": "restaurant",
     "cityId": "נתניה",
-    "address": "דרך הרכבת 14, נתניה",
+    "address": "נתניה",
     "location": {
       "latitude": 32.3211966,
       "longitude": 34.8673922
@@ -2507,9 +2643,7 @@
     "category": "meat",
     "website": "https://www.burgerim.co.il",
     "instagram": "https://www.instagram.com/burgerimisrael",
-    "facebook": "https://www.facebook.com/burgerimisrael",
-    "phone": "09-8344944",
-    "openingHours": "Su-Th 11:00-23:30; Fr 11:00-14:30"
+    "facebook": "https://www.facebook.com/burgerimisrael"
   },
   {
     "id": "osm-node-8142764996",
@@ -2583,10 +2717,7 @@
       "asian",
       "japanese"
     ],
-    "category": "parve",
-    "phone": "053-9386160",
-    "openingHours": "Su-Th 12:00-00:00; Fr 12:00-00:00; Sa 12:00-01:00",
-    "website": "https://japanika.net"
+    "category": "parve"
   },
   {
     "id": "osm-node-9570930731",
@@ -2796,9 +2927,7 @@
     "tags": [
       "poke"
     ],
-    "category": "parve",
-    "openingHours": "Su-Th 11:00-19:00",
-    "website": "https://pokeshop.co.il"
+    "category": "parve"
   },
   {
     "id": "osm-node-10682695046",
@@ -3499,9 +3628,7 @@
     "category": "meat",
     "website": "https://www.newdeli.co.il",
     "instagram": "https://www.instagram.com/newdeli_israel",
-    "facebook": "https://www.facebook.com/NewDeliIsrael",
-    "phone": "03-7786380",
-    "openingHours": "Su-Th 11:00-21:45; Fr 11:00-15:30"
+    "facebook": "https://www.facebook.com/NewDeliIsrael"
   },
   {
     "id": "osm-node-11716322614",
@@ -3518,9 +3645,7 @@
       "pizza"
     ],
     "category": "dairy",
-    "website": "https://www.pizzashemesh.co.il",
-    "phone": "08-6884050",
-    "openingHours": "Su-Th 10:00-23:30; Fr 08:30-15:00"
+    "website": "https://www.pizzashemesh.co.il"
   },
   {
     "id": "osm-node-11749994120",
@@ -3653,9 +3778,7 @@
       "pizza"
     ],
     "category": "dairy",
-    "website": "https://www.pizzashemesh.co.il",
-    "phone": "054-3945555",
-    "openingHours": "Su-Th 11:30-23:30"
+    "website": "https://www.pizzashemesh.co.il"
   },
   {
     "id": "osm-node-11922661782",
@@ -3719,9 +3842,7 @@
     },
     "source": "osm",
     "phone": "086981212",
-    "category": "dairy",
-    "openingHours": "Su-Th 09:00-23:30; Fr 09:00-14:30",
-    "website": "https://katsefet.co.il"
+    "category": "dairy"
   },
   {
     "id": "osm-node-12064685793",
@@ -4077,7 +4198,7 @@
     "name": "גולדה",
     "type": "restaurant",
     "cityId": "ראשון לציון",
-    "address": "גבעתי 1, ראשון לציון",
+    "address": "ראשון לציון",
     "location": {
       "latitude": 31.967546,
       "longitude": 34.8171501
@@ -4086,9 +4207,7 @@
     "category": "dairy",
     "website": "https://www.golda.co.il",
     "instagram": "https://www.instagram.com/golda_icecream",
-    "facebook": "https://www.facebook.com/goldaicecream",
-    "phone": "03-6099949",
-    "openingHours": "Su-Th 09:00-23:00; Fr 09:00-15:30"
+    "facebook": "https://www.facebook.com/goldaicecream"
   },
   {
     "id": "osm-node-12520425651",
@@ -4158,9 +4277,7 @@
     "category": "dairy",
     "website": "https://www.pizzahut.co.il",
     "instagram": "https://www.instagram.com/pizzahutisrael",
-    "facebook": "https://www.facebook.com/PizzaHutIsrael",
-    "phone": "1700-506070",
-    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-14:00"
+    "facebook": "https://www.facebook.com/PizzaHutIsrael"
   },
   {
     "id": "osm-node-12547329544",
@@ -4192,10 +4309,7 @@
     "tags": [
       "pizza"
     ],
-    "category": "dairy",
-    "phone": "03-9793320",
-    "openingHours": "Su-Th 11:00-22:30; Fr 11:00-14:00",
-    "website": "https://pizza-roma.co.il"
+    "category": "dairy"
   },
   {
     "id": "osm-node-12557322215",
@@ -4562,9 +4676,7 @@
     "category": "meat",
     "website": "https://www.newdeli.co.il",
     "instagram": "https://www.instagram.com/newdeli_israel",
-    "facebook": "https://www.facebook.com/NewDeliIsrael",
-    "phone": "03-7733114",
-    "openingHours": "Su-Th 11:00-22:00; Fr 11:00-15:30; Sa 21:30-23:00"
+    "facebook": "https://www.facebook.com/NewDeliIsrael"
   },
   {
     "id": "osm-node-12676686493",
@@ -4580,10 +4692,7 @@
     "tags": [
       "pizza"
     ],
-    "category": "dairy",
-    "phone": "03-9749745",
-    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00",
-    "website": "https://pazaz-shoham.co.il"
+    "category": "dairy"
   },
   {
     "id": "osm-node-12695181881",
@@ -4635,9 +4744,7 @@
     "category": "meat",
     "website": "https://www.burgerim.co.il",
     "instagram": "https://www.instagram.com/burgerimisrael",
-    "facebook": "https://www.facebook.com/burgerimisrael",
-    "phone": "03-5072979",
-    "openingHours": "Su-Th 11:00-23:00"
+    "facebook": "https://www.facebook.com/burgerimisrael"
   },
   {
     "id": "osm-node-12737103897",
@@ -4779,9 +4886,7 @@
       "pizza"
     ],
     "category": "dairy",
-    "website": "https://www.pizzashemesh.co.il",
-    "phone": "04-6722300",
-    "openingHours": "Su-Th 11:00-23:00"
+    "website": "https://www.pizzashemesh.co.il"
   },
   {
     "id": "osm-node-13137796250",
@@ -5214,9 +5319,7 @@
       "longitude": 35.2276729
     },
     "source": "osm",
-    "category": "dairy",
-    "phone": "02-6253722",
-    "website": "https://katsefet.co.il"
+    "category": "dairy"
   },
   {
     "id": "osm-node-13508662103",
@@ -105415,5408 +105518,5 @@
       "dataSource": "humus-eli-yahoo.com",
       "gpsSource": "nominatim_city"
     }
-  },
-  {
-    "id": "9000000",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "אופקים",
-    "address": "הרצל 26, אופקים",
-    "location": {
-      "latitude": 31.3097,
-      "longitude": 34.6196
-    },
-    "locationPrecision": "address",
-    "phone": "08-9305775",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "הרב לנדא",
-    "source": "manual"
-  },
-  {
-    "id": "9000001",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "הרצליה",
-    "address": "סוקולוב 31, הרצליה",
-    "location": {
-      "latitude": 32.1663,
-      "longitude": 34.8392
-    },
-    "locationPrecision": "address",
-    "phone": "09-3071444",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000002",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "אור יהודה",
-    "address": "ארבל 13, אור יהודה",
-    "location": {
-      "latitude": 32.0321,
-      "longitude": 34.8712
-    },
-    "locationPrecision": "address",
-    "phone": "03-5564644",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000003",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "אור יהודה",
-    "address": "בן פורת 79, אור יהודה",
-    "location": {
-      "latitude": 32.0321,
-      "longitude": 34.8712
-    },
-    "locationPrecision": "address",
-    "phone": "03-5330111",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000004",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "אזור",
-    "address": "שפינוזה 2, אזור",
-    "location": {
-      "latitude": 32.0207,
-      "longitude": 34.8028
-    },
-    "locationPrecision": "address",
-    "phone": "03-5492212",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000005",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "אילת",
-    "address": "התמרים 39, אילת",
-    "location": {
-      "latitude": 29.5581,
-      "longitude": 34.9482
-    },
-    "locationPrecision": "address",
-    "phone": "08-6337090",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000006",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "אלעד",
-    "address": "רבי יהודה הנשיא 94, אלעד",
-    "location": {
-      "latitude": 32.053,
-      "longitude": 34.9518
-    },
-    "locationPrecision": "address",
-    "phone": "03-9664481",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "ועד הרבנים החרדים",
-    "source": "manual"
-  },
-  {
-    "id": "9000007",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "אפרת",
-    "address": "מרכז אפרת, אפרת",
-    "location": {
-      "latitude": 31.6594,
-      "longitude": 35.1534
-    },
-    "locationPrecision": "address",
-    "phone": "02-5393963",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000008",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "אשדוד",
-    "address": "דב גור 11, אשדוד",
-    "location": {
-      "latitude": 31.804,
-      "longitude": 34.6553
-    },
-    "locationPrecision": "address",
-    "phone": "08-8688098",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "רבני הקריות",
-    "source": "manual"
-  },
-  {
-    "id": "9000009",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "אשדוד",
-    "address": "רוגוזין 3, אשדוד",
-    "location": {
-      "latitude": 31.804,
-      "longitude": 34.6553
-    },
-    "locationPrecision": "address",
-    "phone": "08-6900905",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000010",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "אשקלון",
-    "address": "ביאליק 32, אשקלון",
-    "location": {
-      "latitude": 31.6688,
-      "longitude": 34.5742
-    },
-    "locationPrecision": "address",
-    "phone": "08-9981848",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000011",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "אשקלון",
-    "address": "עמק רימון 3, אשקלון",
-    "location": {
-      "latitude": 31.6688,
-      "longitude": 34.5742
-    },
-    "locationPrecision": "address",
-    "phone": "08-6888809",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000012",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "אשקלון",
-    "address": "אמנים 36, אשקלון",
-    "location": {
-      "latitude": 31.6688,
-      "longitude": 34.5742
-    },
-    "locationPrecision": "address",
-    "phone": "08-9900021",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000013",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "באר יעקב",
-    "address": "יצחק שמיר 24, באר יעקב",
-    "location": {
-      "latitude": 31.9363,
-      "longitude": 34.8386
-    },
-    "locationPrecision": "address",
-    "phone": "08-8565139",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000014",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "באר שבע",
-    "address": "נחל פרת 20, באר שבע",
-    "location": {
-      "latitude": 31.2518,
-      "longitude": 34.7913
-    },
-    "locationPrecision": "address",
-    "phone": "08-8607771",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000015",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "באר שבע",
-    "address": "ראובן רובין 3, באר שבע",
-    "location": {
-      "latitude": 31.2518,
-      "longitude": 34.7913
-    },
-    "locationPrecision": "address",
-    "phone": "08-6331133",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000016",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "באר שבע",
-    "address": "ז'בוטינסקי 24, באר שבע",
-    "location": {
-      "latitude": 31.2518,
-      "longitude": 34.7913
-    },
-    "locationPrecision": "address",
-    "phone": "08-6339010",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000017",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "באר שבע",
-    "address": "שדרות רגר 185, באר שבע",
-    "location": {
-      "latitude": 31.2518,
-      "longitude": 34.7913
-    },
-    "locationPrecision": "address",
-    "phone": "08-6254688",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000018",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "בית שמש",
-    "address": "רבין 15, בית שמש",
-    "location": {
-      "latitude": 31.7458,
-      "longitude": 34.9926
-    },
-    "locationPrecision": "address",
-    "phone": "02-5869444",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "ועד הרבנים החרדים",
-    "source": "manual"
-  },
-  {
-    "id": "9000019",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "בית שמש",
-    "address": "יחזקאל הנביא 22, בית שמש",
-    "location": {
-      "latitude": 31.7458,
-      "longitude": 34.9926
-    },
-    "locationPrecision": "address",
-    "phone": "02-5433633",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "ועד הרבנים החרדים",
-    "source": "manual"
-  },
-  {
-    "id": "9000020",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "בית שמש",
-    "address": "אמוראים 35, בית שמש",
-    "location": {
-      "latitude": 31.7458,
-      "longitude": 34.9926
-    },
-    "locationPrecision": "address",
-    "phone": "02-6406286",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "ועד הרבנים החרדים",
-    "source": "manual"
-  },
-  {
-    "id": "9000021",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "ביתר עילית",
-    "address": "הרב ברימס 4, ביתר עילית",
-    "location": {
-      "latitude": 31.6944,
-      "longitude": 35.1202
-    },
-    "locationPrecision": "address",
-    "phone": "02-3740074",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "ועד הרבנים החרדים",
-    "source": "manual"
-  },
-  {
-    "id": "9000022",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "בני ברק",
-    "address": "ז'בוטינסקי 120, בני ברק",
-    "location": {
-      "latitude": 32.084,
-      "longitude": 34.834
-    },
-    "locationPrecision": "address",
-    "phone": "03-6576888",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "הרב לנדא",
-    "source": "manual"
-  },
-  {
-    "id": "9000023",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "בני ברק",
-    "address": "יצחק מאיר הכהן 4, בני ברק",
-    "location": {
-      "latitude": 32.084,
-      "longitude": 34.834
-    },
-    "locationPrecision": "address",
-    "phone": "03-6723621",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "ועד הרבנים החרדים",
-    "source": "manual"
-  },
-  {
-    "id": "9000024",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "בני ברק",
-    "address": "ירושלים 18, בני ברק",
-    "location": {
-      "latitude": 32.084,
-      "longitude": 34.834
-    },
-    "locationPrecision": "address",
-    "phone": "03-9543533",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "הרב לנדא",
-    "source": "manual"
-  },
-  {
-    "id": "9000025",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "בני ברק",
-    "address": "קהנמן 104, בני ברק",
-    "location": {
-      "latitude": 32.084,
-      "longitude": 34.834
-    },
-    "locationPrecision": "address",
-    "phone": "03-6197070",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "הרב לנדא",
-    "source": "manual"
-  },
-  {
-    "id": "9000026",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "בני ברק",
-    "address": "רבי עקיבא 122, בני ברק",
-    "location": {
-      "latitude": 32.084,
-      "longitude": 34.834
-    },
-    "locationPrecision": "address",
-    "phone": "03-6813838",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "ועד הרבנים החרדים",
-    "source": "manual"
-  },
-  {
-    "id": "9000027",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "בת ים",
-    "address": "אלי כהן 25, בת ים",
-    "location": {
-      "latitude": 32.0235,
-      "longitude": 34.7507
-    },
-    "locationPrecision": "address",
-    "phone": "03-6122182",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "ועד הרבנים החרדים",
-    "source": "manual"
-  },
-  {
-    "id": "9000028",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "בת ים",
-    "address": "סנדלר 4, בת ים",
-    "location": {
-      "latitude": 32.0235,
-      "longitude": 34.7507
-    },
-    "locationPrecision": "address",
-    "phone": "03-6594343",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "ועד הרבנים החרדים",
-    "source": "manual"
-  },
-  {
-    "id": "9000029",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "בת ים",
-    "address": "אוזיאל 25, בת ים",
-    "location": {
-      "latitude": 32.0235,
-      "longitude": 34.7507
-    },
-    "locationPrecision": "address",
-    "phone": "03-6138087",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000030",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "גבעתיים",
-    "address": "וייצמן 43, גבעתיים",
-    "location": {
-      "latitude": 32.068,
-      "longitude": 34.8126
-    },
-    "locationPrecision": "address",
-    "phone": "03-6554505",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000031",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "גדרה",
-    "address": "הרצל 10, גדרה",
-    "location": {
-      "latitude": 31.812,
-      "longitude": 34.776
-    },
-    "locationPrecision": "address",
-    "phone": "08-6141414",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000032",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "גן יבנה",
-    "address": "צה\"ל 28, גן יבנה",
-    "location": {
-      "latitude": 31.787,
-      "longitude": 34.7045
-    },
-    "locationPrecision": "address",
-    "phone": "08-6186686",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000033",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "גני תקווה",
-    "address": "עין גנים 7, גני תקווה",
-    "location": {
-      "latitude": 32.0605,
-      "longitude": 34.877
-    },
-    "locationPrecision": "address",
-    "phone": "03-6344000",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000034",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "דימונה",
-    "address": "העלייה 215, דימונה",
-    "location": {
-      "latitude": 31.0677,
-      "longitude": 35.0347
-    },
-    "locationPrecision": "address",
-    "phone": "08-3740077",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000035",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "חדרה",
-    "address": "הנשיא 59, חדרה",
-    "location": {
-      "latitude": 32.434,
-      "longitude": 34.9187
-    },
-    "locationPrecision": "address",
-    "phone": "04-8406664",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000036",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "חולון",
-    "address": "גולדה מאיר 8, חולון",
-    "location": {
-      "latitude": 32.0114,
-      "longitude": 34.7799
-    },
-    "locationPrecision": "address",
-    "phone": "03-6418882",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000037",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "חולון",
-    "address": "דב הוז 63, חולון",
-    "location": {
-      "latitude": 32.0114,
-      "longitude": 34.7799
-    },
-    "locationPrecision": "address",
-    "phone": "03-6316360",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000038",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "חולון",
-    "address": "הר הצופים 42, חולון",
-    "location": {
-      "latitude": 32.0114,
-      "longitude": 34.7799
-    },
-    "locationPrecision": "address",
-    "phone": "03-6330655",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000039",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "חיפה",
-    "address": "גאולה 31, חיפה",
-    "location": {
-      "latitude": 32.794,
-      "longitude": 34.9896
-    },
-    "locationPrecision": "address",
-    "phone": "04-6116565",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "ועד הרבנים החרדים",
-    "source": "manual"
-  },
-  {
-    "id": "9000040",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "חריש",
-    "address": "דרך ארץ 41, חריש",
-    "location": {
-      "latitude": 32.458,
-      "longitude": 35.0343
-    },
-    "locationPrecision": "address",
-    "phone": "04-6033233",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "ועד הרבנים החרדים",
-    "source": "manual"
-  },
-  {
-    "id": "9000041",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "יבנה",
-    "address": "אגוז 2, יבנה",
-    "location": {
-      "latitude": 31.8752,
-      "longitude": 34.7394
-    },
-    "locationPrecision": "address",
-    "phone": "08-6510000",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000042",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "יהוד",
-    "address": "וייצמן 44, יהוד",
-    "location": {
-      "latitude": 32.031,
-      "longitude": 34.889
-    },
-    "locationPrecision": "address",
-    "phone": "03-5664010",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000043",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "ירושלים",
-    "address": "פסגה 45, ירושלים",
-    "location": {
-      "latitude": 31.7683,
-      "longitude": 35.2137
-    },
-    "locationPrecision": "address",
-    "phone": "02-6783903",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "ועד הרבנים החרדים",
-    "source": "manual"
-  },
-  {
-    "id": "9000044",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "ירושלים",
-    "address": "יחזקאל 8, ירושלים",
-    "location": {
-      "latitude": 31.7683,
-      "longitude": 35.2137
-    },
-    "locationPrecision": "address",
-    "phone": "02-5002690",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "ועד הרבנים החרדים",
-    "source": "manual"
-  },
-  {
-    "id": "9000045",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "ירושלים",
-    "address": "מבשרת ציון, ירושלים",
-    "location": {
-      "latitude": 31.7683,
-      "longitude": 35.2137
-    },
-    "locationPrecision": "address",
-    "phone": "02-6514514",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000046",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "ירושלים",
-    "address": "משה דיין 164, ירושלים",
-    "location": {
-      "latitude": 31.7683,
-      "longitude": 35.2137
-    },
-    "locationPrecision": "address",
-    "phone": "02-5338585",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "ועד הרבנים החרדים",
-    "source": "manual"
-  },
-  {
-    "id": "9000047",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "ירושלים",
-    "address": "אגריפס 42, ירושלים",
-    "location": {
-      "latitude": 31.7683,
-      "longitude": 35.2137
-    },
-    "locationPrecision": "address",
-    "phone": "02-5430430",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000048",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "ירושלים",
-    "address": "גולדה מאיר 255, ירושלים",
-    "location": {
-      "latitude": 31.7683,
-      "longitude": 35.2137
-    },
-    "locationPrecision": "address",
-    "phone": "02-5302210",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "ועד הרבנים החרדים",
-    "source": "manual"
-  },
-  {
-    "id": "9000049",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "כפר חב\"ד",
-    "address": "אדמו\"ר הרש\"ב 2, כפר חב\"ד",
-    "location": {
-      "latitude": 32.0004,
-      "longitude": 34.8897
-    },
-    "locationPrecision": "address",
-    "phone": "03-5221212",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "ועד הרבנים החרדים",
-    "source": "manual"
-  },
-  {
-    "id": "9000050",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "כפר סבא",
-    "address": "טשרניחובסקי 24, כפר סבא",
-    "location": {
-      "latitude": 32.1781,
-      "longitude": 34.9075
-    },
-    "locationPrecision": "address",
-    "phone": "09-8828886",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000051",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "לוד",
-    "address": "בן גוריון 5, לוד",
-    "location": {
-      "latitude": 31.9516,
-      "longitude": 34.8942
-    },
-    "locationPrecision": "address",
-    "phone": "08-8600220",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "ועד הרבנים החרדים",
-    "source": "manual"
-  },
-  {
-    "id": "9000052",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "מודיעין",
-    "address": "חיים וייצמן 18, מודיעין",
-    "location": {
-      "latitude": 31.8966,
-      "longitude": 35.0102
-    },
-    "locationPrecision": "address",
-    "phone": "08-9918888",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000053",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "מודיעין עילית",
-    "address": "אבני זר 46, מודיעין עילית",
-    "location": {
-      "latitude": 31.928,
-      "longitude": 35.0486
-    },
-    "locationPrecision": "address",
-    "phone": "08-8629080",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "ועד הרבנים החרדים",
-    "source": "manual"
-  },
-  {
-    "id": "9000054",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "מצפה רמון",
-    "address": "נחל תרסים 1, מצפה רמון",
-    "location": {
-      "latitude": 30.6097,
-      "longitude": 34.8026
-    },
-    "locationPrecision": "address",
-    "phone": "08-8501111",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000055",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "נס ציונה",
-    "address": "נורדאו 6, נס ציונה",
-    "location": {
-      "latitude": 31.9285,
-      "longitude": 34.7982
-    },
-    "locationPrecision": "address",
-    "phone": "08-9248111",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000056",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "נתיבות",
-    "address": "יוסף סמילו 13, נתיבות",
-    "location": {
-      "latitude": 31.4228,
-      "longitude": 34.5878
-    },
-    "locationPrecision": "address",
-    "phone": "08-6884429",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000057",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "נתניה",
-    "address": "הרצל 51, נתניה",
-    "location": {
-      "latitude": 32.3215,
-      "longitude": 34.8532
-    },
-    "locationPrecision": "address",
-    "phone": "09-8333212",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "ועד הרבנים החרדים",
-    "source": "manual"
-  },
-  {
-    "id": "9000058",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "עפולה",
-    "address": "משה שרת 3, עפולה",
-    "location": {
-      "latitude": 32.6076,
-      "longitude": 35.2899
-    },
-    "locationPrecision": "address",
-    "phone": "04-6464777",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "ועד הרבנים החרדים",
-    "source": "manual"
-  },
-  {
-    "id": "9000059",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "ערד",
-    "address": "א. בן יאיר 35, ערד",
-    "location": {
-      "latitude": 31.2598,
-      "longitude": 35.2141
-    },
-    "locationPrecision": "address",
-    "phone": "077-2062600",
-    "website": "https://pizza-shemesh.co.il",
-    "category": "dairy",
-    "certifiedBy": "הרב לנדא",
-    "source": "manual"
-  },
-  {
-    "id": "9000060",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "פרדס חנה",
-    "address": "הרצל, פרדס חנה",
-    "location": {
-      "latitude": 32.4706,
-      "longitude": 34.9711
-    },
-    "locationPrecision": "address",
-    "phone": "04-6464937",
-    "website": "https://pizza-shemesh.co.il",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "openingHours": "Su-Th 11:00-23:00",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000061",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "קריית אתא",
-    "address": "העצמאות 47, קריית אתא",
-    "location": {
-      "latitude": 32.8056,
-      "longitude": 35.1048
-    },
-    "locationPrecision": "address",
-    "phone": "074-7132408",
-    "website": "https://pizza-shemesh.co.il",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "openingHours": "Su-Th 11:00-23:00",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ העדה החרדית",
-    "source": "manual"
-  },
-  {
-    "id": "9000062",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "תל מונד",
-    "address": "השקד 2, תל מונד",
-    "location": {
-      "latitude": 32.2572,
-      "longitude": 34.9267
-    },
-    "locationPrecision": "address",
-    "phone": "09-7676769",
-    "website": "https://pizza-shemesh.co.il",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "openingHours": "Su-Th 11:00-23:00",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000063",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "ראש העין",
-    "address": "שלמה המלך 2, ראש העין",
-    "location": {
-      "latitude": 32.0958,
-      "longitude": 34.9558
-    },
-    "locationPrecision": "address",
-    "phone": "03-5040408",
-    "website": "https://pizza-shemesh.co.il",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000064",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "ראש העין",
-    "address": "שבזי 201, ראש העין",
-    "location": {
-      "latitude": 32.0958,
-      "longitude": 34.9558
-    },
-    "locationPrecision": "address",
-    "phone": "03-5040408",
-    "website": "https://pizza-shemesh.co.il",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000065",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "אור עקיבא",
-    "address": "דוד המלך 40, אור עקיבא",
-    "location": {
-      "latitude": 32.504,
-      "longitude": 34.9156
-    },
-    "locationPrecision": "address",
-    "phone": "04-8767789",
-    "website": "https://pizza-shemesh.co.il",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "openingHours": "Su-Th 11:00-23:00",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000066",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "קריית מוצקין",
-    "address": "שי עגנון 16, קריית מוצקין",
-    "location": {
-      "latitude": 32.8367,
-      "longitude": 35.0831
-    },
-    "locationPrecision": "address",
-    "phone": "04-9041235",
-    "website": "https://pizza-shemesh.co.il",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "openingHours": "Su-Th 11:00-23:00",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000067",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "שוהם",
-    "address": "דקל 30, שוהם",
-    "location": {
-      "latitude": 31.5,
-      "longitude": 34.9
-    },
-    "locationPrecision": "address",
-    "phone": "03-6546050",
-    "website": "https://pizza-shemesh.co.il",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "openingHours": "Su-Th 11:00-23:00",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000068",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "תל אביב–יפו",
-    "address": "ישראל גורי 34, תל אביב",
-    "location": {
-      "latitude": 32.0853,
-      "longitude": 34.7818
-    },
-    "locationPrecision": "address",
-    "phone": "03-5444516",
-    "website": "https://pizza-shemesh.co.il",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "openingHours": "Su-Th 11:00-23:00",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000069",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "תל אביב–יפו",
-    "address": "נגבה 1, תל אביב",
-    "location": {
-      "latitude": 32.0853,
-      "longitude": 34.7818
-    },
-    "locationPrecision": "address",
-    "phone": "055-2221709",
-    "website": "https://pizza-shemesh.co.il",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "openingHours": "Su-Th 11:00-23:00",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000070",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "תל אביב–יפו",
-    "address": "צרעה 3, תל אביב",
-    "location": {
-      "latitude": 32.0853,
-      "longitude": 34.7818
-    },
-    "locationPrecision": "address",
-    "phone": "077-5060826",
-    "website": "https://pizza-shemesh.co.il",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "openingHours": "Su-Th 11:30-23:30",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000071",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "תל אביב–יפו",
-    "address": "בית אל 12, תל אביב",
-    "location": {
-      "latitude": 32.0853,
-      "longitude": 34.7818
-    },
-    "locationPrecision": "address",
-    "phone": "03-7479970",
-    "website": "https://pizza-shemesh.co.il",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "openingHours": "Su-Th 11:00-23:00",
-    "category": "dairy",
-    "certifiedBy": "הרב לנדא",
-    "source": "manual"
-  },
-  {
-    "id": "9000072",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "רמת גן",
-    "address": "תרצה 15, רמת גן",
-    "location": {
-      "latitude": 32.0682,
-      "longitude": 34.8243
-    },
-    "locationPrecision": "address",
-    "phone": "03-6436333",
-    "website": "https://pizza-shemesh.co.il",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "openingHours": "Su-Th 11:00-22:30",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000073",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "רמלה",
-    "address": "יוסף טל, רמלה",
-    "location": {
-      "latitude": 31.9245,
-      "longitude": 34.8706
-    },
-    "locationPrecision": "address",
-    "phone": "08-6639243",
-    "website": "https://pizza-shemesh.co.il",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "openingHours": "Su-Th 11:00-23:00",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000074",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "רמלה",
-    "address": "מבצע יהונתן, רמלה",
-    "location": {
-      "latitude": 31.9245,
-      "longitude": 34.8706
-    },
-    "locationPrecision": "address",
-    "phone": "08-6139999",
-    "website": "https://pizza-shemesh.co.il",
-    "instagram": "https://www.instagram.com/pizza.shemesh.mivza.yonatan",
-    "openingHours": "Su-Th 11:00-23:00",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000075",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "רחובות",
-    "address": "עזרא, רחובות",
-    "location": {
-      "latitude": 31.8928,
-      "longitude": 34.8113
-    },
-    "locationPrecision": "address",
-    "phone": "08-6140400",
-    "website": "https://pizza-shemesh.co.il",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "openingHours": "Su-Th 11:00-23:00",
-    "category": "dairy",
-    "certifiedBy": "הרב לנדא",
-    "source": "manual"
-  },
-  {
-    "id": "9000076",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "רחובות",
-    "address": "ששת הימים 95, רחובות",
-    "location": {
-      "latitude": 31.8928,
-      "longitude": 34.8113
-    },
-    "locationPrecision": "address",
-    "phone": "08-6170700",
-    "website": "https://pizza-shemesh.co.il",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "openingHours": "Su-Th 11:00-23:00",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ העדה החרדית",
-    "source": "manual"
-  },
-  {
-    "id": "9000077",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "ראשון לציון",
-    "address": "יהודה הנשיא 1, ראשון לציון",
-    "location": {
-      "latitude": 31.973,
-      "longitude": 34.7898
-    },
-    "locationPrecision": "address",
-    "phone": "03-5562100",
-    "website": "https://pizza-shemesh.co.il",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "openingHours": "Su-Th 11:30-23:30",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000078",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "ראשון לציון",
-    "address": "הרצל 28, ראשון לציון",
-    "location": {
-      "latitude": 31.973,
-      "longitude": 34.7898
-    },
-    "locationPrecision": "address",
-    "phone": "03-5252502",
-    "website": "https://pizza-shemesh.co.il",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "openingHours": "Su-Th 11:30-23:30",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000079",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "ראשון לציון",
-    "address": "יהודה לייב פינסקר 20, ראשון לציון",
-    "location": {
-      "latitude": 31.973,
-      "longitude": 34.7898
-    },
-    "locationPrecision": "address",
-    "phone": "03-5050930",
-    "website": "https://pizza-shemesh.co.il",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "openingHours": "Su-Th 11:00-23:00",
-    "category": "dairy",
-    "certifiedBy": "הרב לנדא",
-    "source": "manual"
-  },
-  {
-    "id": "9000080",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "ראשון לציון",
-    "address": "השירה העברית 10, ראשון לציון",
-    "location": {
-      "latitude": 31.973,
-      "longitude": 34.7898
-    },
-    "locationPrecision": "address",
-    "phone": "074-7132404",
-    "website": "https://pizza-shemesh.co.il",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "openingHours": "Su-Th 11:00-23:00",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000081",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "קרני שומרון",
-    "address": "הגפן 1, קרני שומרון",
-    "location": {
-      "latitude": 32.1542,
-      "longitude": 35.0517
-    },
-    "locationPrecision": "address",
-    "phone": "050-8307323",
-    "website": "https://pizza-shemesh.co.il",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "openingHours": "Su-Th 11:00-23:00",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000082",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "קרית שמונה",
-    "address": "תל חי 92, קרית שמונה",
-    "location": {
-      "latitude": 31.5,
-      "longitude": 34.9
-    },
-    "locationPrecision": "address",
-    "phone": "04-8169988",
-    "website": "https://pizza-shemesh.co.il",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "openingHours": "Su-Th 11:00-23:00",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000083",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "קריית גת",
-    "address": "לכיש 33, קריית גת",
-    "location": {
-      "latitude": 31.61,
-      "longitude": 34.7641
-    },
-    "locationPrecision": "address",
-    "phone": "08-6616532",
-    "website": "https://pizza-shemesh.co.il",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "openingHours": "Su-Th 11:00-23:00",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000084",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "קריית גת",
-    "address": "אסתר המלכה 13, קריית גת",
-    "location": {
-      "latitude": 31.61,
-      "longitude": 34.7641
-    },
-    "locationPrecision": "address",
-    "phone": "08-8692874",
-    "website": "https://pizza-shemesh.co.il",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "openingHours": "Su-Th 11:00-23:00",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000085",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "קריית אונו",
-    "address": "יעקב דורי 7, קריית אונו",
-    "location": {
-      "latitude": 32.0579,
-      "longitude": 34.8559
-    },
-    "locationPrecision": "address",
-    "phone": "03-6767303",
-    "website": "https://pizza-shemesh.co.il",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "openingHours": "Su-Th 11:00-23:00",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000086",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "קריית מלאכי",
-    "address": "רש\"י 11, קריית מלאכי",
-    "location": {
-      "latitude": 31.8645,
-      "longitude": 34.7441
-    },
-    "locationPrecision": "address",
-    "phone": "08-6427788",
-    "website": "https://pizza-shemesh.co.il",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "openingHours": "Su-Th 11:00-23:00",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ העדה החרדית",
-    "source": "manual"
-  },
-  {
-    "id": "9000087",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "קצרין",
-    "address": "שיון 1, קצרין",
-    "location": {
-      "latitude": 32.99,
-      "longitude": 35.69
-    },
-    "locationPrecision": "address",
-    "phone": "077-4512564",
-    "website": "https://pizza-shemesh.co.il",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "openingHours": "Su-Th 11:00-23:00",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000088",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "צפת",
-    "address": "ירושלים 81, צפת",
-    "location": {
-      "latitude": 32.965,
-      "longitude": 35.498
-    },
-    "locationPrecision": "address",
-    "phone": "04-6063131",
-    "website": "https://pizza-shemesh.co.il",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "openingHours": "Su-Th 11:00-23:00",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ העדה החרדית",
-    "source": "manual"
-  },
-  {
-    "id": "9000089",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "פתח תקווה",
-    "address": "ז'בוטינסקי 2, פתח תקווה",
-    "location": {
-      "latitude": 32.084,
-      "longitude": 34.8878
-    },
-    "locationPrecision": "address",
-    "phone": "03-6052025",
-    "website": "https://pizza-shemesh.co.il",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "openingHours": "Su-Th 11:00-23:00",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000090",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "בית קמה",
-    "address": "צומת בית קמה",
-    "location": {
-      "latitude": 31.408,
-      "longitude": 34.721
-    },
-    "locationPrecision": "address",
-    "phone": "08-9331212",
-    "website": "https://pizza-shemesh.co.il",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "openingHours": "Su-Th 11:00-23:00",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000091",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "אילת",
-    "address": "שדרות ארגמן 60, אילת",
-    "location": {
-      "latitude": 29.5581,
-      "longitude": 34.9482
-    },
-    "locationPrecision": "address",
-    "phone": "08-8503355",
-    "website": "https://pizza-shemesh.co.il",
-    "instagram": "https://www.instagram.com/pizzashemesh_eilat",
-    "openingHours": "Su-Th 11:00-23:00",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000092",
-    "name": "פיצה שמש",
-    "type": "restaurant",
-    "cityId": "מבשרת ציון",
-    "address": "מבשרת ציון",
-    "location": {
-      "latitude": 31.806,
-      "longitude": 35.1467
-    },
-    "locationPrecision": "address",
-    "phone": "02-6514514",
-    "website": "https://pizza-shemesh.co.il",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "openingHours": "Su-Th 11:00-23:00",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000093",
-    "name": "דומינו'ס",
-    "type": "restaurant",
-    "cityId": "תל אביב–יפו",
-    "address": "יורדי הסירה 10, נמל תל אביב",
-    "location": {
-      "latitude": 32.0853,
-      "longitude": 34.7818
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-70-70-70",
-    "website": "https://www.dominos.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000094",
-    "name": "דומינו'ס",
-    "type": "restaurant",
-    "cityId": "גבעתיים",
-    "address": "בורוכוב 54, גבעתיים",
-    "location": {
-      "latitude": 32.068,
-      "longitude": 34.8126
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-70-70-70",
-    "website": "https://www.dominos.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000095",
-    "name": "דומינו'ס",
-    "type": "restaurant",
-    "cityId": "פתח תקווה",
-    "address": "יהושע שטמפפר 73, פתח תקווה",
-    "location": {
-      "latitude": 32.084,
-      "longitude": 34.8878
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-70-70-70",
-    "website": "https://www.dominos.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000096",
-    "name": "דומינו'ס",
-    "type": "restaurant",
-    "cityId": "פתח תקווה",
-    "address": "העצמאות 65, פתח תקווה",
-    "location": {
-      "latitude": 32.084,
-      "longitude": 34.8878
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-70-70-70",
-    "website": "https://www.dominos.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000097",
-    "name": "דומינו'ס",
-    "type": "restaurant",
-    "cityId": "פתח תקווה",
-    "address": "ראשון לציון 1, פתח תקווה",
-    "location": {
-      "latitude": 32.084,
-      "longitude": 34.8878
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-70-70-70",
-    "website": "https://www.dominos.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000098",
-    "name": "דומינו'ס",
-    "type": "restaurant",
-    "cityId": "אשדוד",
-    "address": "הציונות 11, אשדוד",
-    "location": {
-      "latitude": 31.804,
-      "longitude": 34.6553
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-70-70-70",
-    "website": "https://www.dominos.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000099",
-    "name": "דומינו'ס",
-    "type": "restaurant",
-    "cityId": "אשקלון",
-    "address": "שדרות ירושלים 119, אשקלון",
-    "location": {
-      "latitude": 31.6688,
-      "longitude": 34.5742
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-70-70-70",
-    "website": "https://www.dominos.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000100",
-    "name": "דומינו'ס",
-    "type": "restaurant",
-    "cityId": "עפולה",
-    "address": "שדרות יצחק רבין 20, עפולה",
-    "location": {
-      "latitude": 32.6076,
-      "longitude": 35.2899
-    },
-    "locationPrecision": "address",
-    "phone": "076-8048963",
-    "website": "https://www.dominos.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000101",
-    "name": "דומינו'ס",
-    "type": "restaurant",
-    "cityId": "קריית ביאליק",
-    "address": "שדרות ירושלים 1, קריית ביאליק",
-    "location": {
-      "latitude": 32.8365,
-      "longitude": 35.0826
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-70-70-70",
-    "website": "https://www.dominos.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000102",
-    "name": "דומינו'ס",
-    "type": "restaurant",
-    "cityId": "חולון",
-    "address": "גן פרס נובל, חולון",
-    "location": {
-      "latitude": 32.0114,
-      "longitude": 34.7799
-    },
-    "locationPrecision": "address",
-    "phone": "076-8048974",
-    "website": "https://www.dominos.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000103",
-    "name": "פיצה סטורי",
-    "type": "restaurant",
-    "cityId": "ירושלים",
-    "address": "יד חרוצים 21, תלפיות, ירושלים",
-    "location": {
-      "latitude": 31.7683,
-      "longitude": 35.2137
-    },
-    "locationPrecision": "address",
-    "phone": "02-5000086",
-    "website": "https://pizza-story.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000104",
-    "name": "פיצה סטורי",
-    "type": "restaurant",
-    "cityId": "פתח תקווה",
-    "address": "יהושע שטמפפר 24, פתח תקווה",
-    "location": {
-      "latitude": 32.084,
-      "longitude": 34.8878
-    },
-    "locationPrecision": "address",
-    "phone": "03-5566516",
-    "website": "https://pizza-story.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000105",
-    "name": "פיצה סטורי",
-    "type": "restaurant",
-    "cityId": "באר שבע",
-    "address": "השלום 31, באר שבע",
-    "location": {
-      "latitude": 31.2518,
-      "longitude": 34.7913
-    },
-    "locationPrecision": "address",
-    "phone": "08-6222110",
-    "website": "https://pizza-story.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000106",
-    "name": "פיצה סטורי",
-    "type": "restaurant",
-    "cityId": "רמלה",
-    "address": "הרצל 45, רמלה",
-    "location": {
-      "latitude": 31.9245,
-      "longitude": 34.8706
-    },
-    "locationPrecision": "address",
-    "phone": "08-9935222",
-    "website": "https://pizza-story.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000107",
-    "name": "פיצה סטורי",
-    "type": "restaurant",
-    "cityId": "צפריה",
-    "address": "הארז 1, צפריה",
-    "location": {
-      "latitude": 31.947,
-      "longitude": 34.848
-    },
-    "locationPrecision": "address",
-    "phone": "03-6914999",
-    "website": "https://pizza-story.co.il",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9000108",
-    "name": "פיצה מילאנו",
-    "type": "restaurant",
-    "cityId": "רעננה",
-    "address": "בן גוריון 3, רעננה",
-    "location": {
-      "latitude": 32.1839,
-      "longitude": 34.8708
-    },
-    "locationPrecision": "address",
-    "phone": "09-7741919",
-    "instagram": "https://www.instagram.com/pizza_milan_k_a/",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ יורה דעה",
-    "source": "manual"
-  },
-  {
-    "id": "9000109",
-    "name": "פיצה מילאנו",
-    "type": "restaurant",
-    "cityId": "אילת",
-    "address": "קניון אייס מול, אילת",
-    "location": {
-      "latitude": 29.5581,
-      "longitude": 34.9482
-    },
-    "locationPrecision": "address",
-    "openingHours": "Su-Th 10:30-22:00; Fr 10:00-15:30",
-    "category": "dairy",
-    "certifiedBy": "רבנות",
-    "source": "manual"
-  },
-  {
-    "id": "9000110",
-    "name": "פיצה מילאנו",
-    "type": "restaurant",
-    "cityId": "רמלה",
-    "address": "הרצל 45, רמלה",
-    "location": {
-      "latitude": 31.9245,
-      "longitude": 34.8706
-    },
-    "locationPrecision": "address",
-    "facebook": "https://www.facebook.com/pizzamilanoramla/",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ יורה דעה",
-    "source": "manual"
-  },
-  {
-    "id": "9000111",
-    "name": "פיצה מילאנו",
-    "type": "restaurant",
-    "cityId": "קריית אתא",
-    "address": "העצמאות 37, קריית אתא",
-    "location": {
-      "latitude": 32.8056,
-      "longitude": 35.1048
-    },
-    "locationPrecision": "address",
-    "phone": "053-3888814",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ העדה החרדית",
-    "source": "manual"
-  },
-  {
-    "id": "9000112",
-    "name": "פיצה פצץ",
-    "type": "restaurant",
-    "cityId": "נתניה",
-    "address": "שד׳ טום לנטוס 26, נתניה",
-    "location": {
-      "latitude": 32.3215,
-      "longitude": 34.8532
-    },
-    "locationPrecision": "address",
-    "phone": "09-8988099",
-    "website": "https://www.piza-pazzaz.co.il",
-    "openingHours": "Su-Th 10:00-24:00",
-    "category": "dairy",
-    "certifiedBy": "רבנות נתניה",
-    "source": "manual"
-  },
-  {
-    "id": "9000113",
-    "name": "פיצה פצץ",
-    "type": "restaurant",
-    "cityId": "ראשון לציון",
-    "address": "החלמונית 22, ראשון לציון",
-    "location": {
-      "latitude": 31.973,
-      "longitude": 34.7898
-    },
-    "locationPrecision": "address",
-    "phone": "03-9410925",
-    "website": "https://www.piza-pazzaz.co.il",
-    "openingHours": "Su-Th 10:00-24:00; Fr 09:00-14:30",
-    "category": "dairy",
-    "certifiedBy": "כשר למהדרין",
-    "source": "manual"
-  },
-  {
-    "id": "9100000",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "באר יעקב",
-    "address": "יהלום 5, מרכז רוטשטיין צמרות, באר יעקב",
-    "location": {
-      "latitude": 31.9363,
-      "longitude": 34.8386
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-24:00; Fr 11:00-15:00; Sa 20:56-24:00",
-    "category": "dairy",
-    "certifiedBy": "כשרות רבנות ובד\"צ",
-    "source": "manual"
-  },
-  {
-    "id": "9100001",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "תל אביב",
-    "address": "קינג ג'ורג' 79, תל אביב",
-    "location": {
-      "latitude": 32.0853,
-      "longitude": 34.7818
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-14:00; Sa 20:56-01:30",
-    "category": "dairy",
-    "certifiedBy": "כשר מהדרין בד\"צ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9100002",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "מודיעין",
-    "address": "אריאל שרון 13, מודיעין",
-    "location": {
-      "latitude": 31.8966,
-      "longitude": 35.0102
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 20:56-23:30",
-    "category": "dairy",
-    "certifiedBy": "כשר למהדרין בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9100003",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "רמלה",
-    "address": "משה לוי 23, רמלה",
-    "location": {
-      "latitude": 31.9245,
-      "longitude": 34.8706
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-24:00; Fr 11:00-15:00; Sa 21:16-24:00",
-    "category": "dairy",
-    "certifiedBy": "כשרות בד\"ץ הרב רובין",
-    "source": "manual"
-  },
-  {
-    "id": "9100004",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "קריית מלאכי",
-    "address": "אסיף 1, אזור תעשיה באר טוביה, קריית מלאכי",
-    "location": {
-      "latitude": 31.8645,
-      "longitude": 34.7441
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-14:00; Sa 20:56-24:00",
-    "category": "dairy",
-    "certifiedBy": "כשר בד\"ץ בית יוסף מהדרין",
-    "source": "manual"
-  },
-  {
-    "id": "9100005",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "טירת הכרמל",
-    "address": "מנחם בגין 35, מתחם עסקים מתקדמים, טירת הכרמל",
-    "location": {
-      "latitude": 32.7606,
-      "longitude": 35.0073
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-24:00; Fr 11:00-15:00; Sa 20:56-24:00",
-    "category": "dairy",
-    "certifiedBy": "כשר בד\"ץ",
-    "source": "manual"
-  },
-  {
-    "id": "9100006",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "ביתר עלית",
-    "address": "הרב ברים 4, ביתר עלית",
-    "location": {
-      "latitude": 31.6944,
-      "longitude": 35.1202
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-24:00; Fr 11:00-15:00; Sa 21:16-01:00",
-    "category": "dairy",
-    "certifiedBy": "כשרות בד\"ץ הרב רובין",
-    "source": "manual"
-  },
-  {
-    "id": "9100007",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "ירושלים",
-    "address": "משה דיין 164, ירושלים",
-    "location": {
-      "latitude": 31.7683,
-      "longitude": 35.2137
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 10:00-24:00; Fr 10:00-15:00; Sa 21:06-01:00",
-    "category": "dairy",
-    "certifiedBy": "כשרות בד\"ץ הרב רובין",
-    "source": "manual"
-  },
-  {
-    "id": "9100008",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "קריית מוצקין",
-    "address": "שדרות ירושלים 1, קריית מוצקין",
-    "location": {
-      "latitude": 32.8367,
-      "longitude": 35.0831
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-24:00; Fr 11:00-15:00; Sa 21:06-24:00",
-    "category": "dairy",
-    "certifiedBy": "כשר",
-    "source": "manual"
-  },
-  {
-    "id": "9100009",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "תל אביב",
-    "address": "תוצרת הארץ 9, תל אביב",
-    "location": {
-      "latitude": 32.0853,
-      "longitude": 34.7818
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 20:45-24:00",
-    "category": "dairy",
-    "certifiedBy": "כשר מהדרין",
-    "source": "manual"
-  },
-  {
-    "id": "9100010",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "תל אביב",
-    "address": "יגאל אלון 51, תל אביב",
-    "location": {
-      "latitude": 32.0853,
-      "longitude": 34.7818
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 10:00-24:00; Fr 10:00-14:00; Sa 20:27-01:00",
-    "category": "dairy",
-    "certifiedBy": "כשר למהדרין בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9100011",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "תל אביב",
-    "address": "הנחושת 1, תל אביב",
-    "location": {
-      "latitude": 32.0853,
-      "longitude": 34.7818
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-22:45; Sa 20:56-22:45",
-    "category": "dairy",
-    "certifiedBy": "כשר למהדרין בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9100012",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "שוהם",
-    "address": "עמק איילון 161, שוהם",
-    "location": {
-      "latitude": 31.9957,
-      "longitude": 34.9373
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-14:00; Sa 20:56-23:00",
-    "category": "dairy",
-    "certifiedBy": "כשר מהדרין בד\"צ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9100013",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "שדרות",
-    "address": "דרך מנחם בגין מול 7, שדרות",
-    "location": {
-      "latitude": 31.523,
-      "longitude": 34.5966
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-14:30; Sa 21:00-23:30",
-    "category": "dairy",
-    "certifiedBy": "כשר מהדרין בד\"צ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9100014",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "רעננה",
-    "address": "אחוזה 110, רעננה",
-    "location": {
-      "latitude": 32.1839,
-      "longitude": 34.8708
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 10:30-23:15; Fr 10:30-15:00; Sa 20:27-23:15",
-    "category": "dairy",
-    "certifiedBy": "כשר למהדרין בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9100015",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "רמת ישי",
-    "address": "אקליפטוס 3, רמת ישי",
-    "location": {
-      "latitude": 32.7056,
-      "longitude": 35.1689
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-16:00; Sa 20:46-23:00",
-    "category": "dairy",
-    "certifiedBy": "כשר",
-    "source": "manual"
-  },
-  {
-    "id": "9100016",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "רמת השרון",
-    "address": "סוקולוב 41, רמת השרון",
-    "location": {
-      "latitude": 32.1465,
-      "longitude": 34.8406
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:30-24:00; Sa 20:46-24:00",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9100017",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "רמלה",
-    "address": "משה אדרת 1, רמלה",
-    "location": {
-      "latitude": 31.9245,
-      "longitude": 34.8706
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-24:00; Fr 11:00-15:00; Sa 21:16-24:00",
-    "category": "dairy",
-    "certifiedBy": "כשרות בד\"ץ הרב רובין",
-    "source": "manual"
-  },
-  {
-    "id": "9100018",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "רחובות",
-    "address": "בילו 2, רחובות",
-    "location": {
-      "latitude": 31.8928,
-      "longitude": 34.8113
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 10:00-01:00; Fr 10:45-16:00; Sa 20:36-01:00",
-    "category": "dairy",
-    "certifiedBy": "כשר בד\"ץ בית יוסף מהדרין",
-    "source": "manual"
-  },
-  {
-    "id": "9100019",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "ראשון לציון",
-    "address": "לישנסקי 6, ראשון לציון",
-    "location": {
-      "latitude": 31.973,
-      "longitude": 34.7898
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-24:00; Fr 11:00-16:00; Sa 20:41-01:00",
-    "category": "dairy",
-    "certifiedBy": "כשר למהדרין בד\"ץ",
-    "source": "manual"
-  },
-  {
-    "id": "9100020",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "ראש פינה",
-    "address": "גאוני 1, ראש פינה",
-    "location": {
-      "latitude": 32.9714,
-      "longitude": 35.5428
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-22:00; Sa 20:46-23:00",
-    "category": "dairy",
-    "certifiedBy": "כשר למהדרין",
-    "source": "manual"
-  },
-  {
-    "id": "9100021",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "ראשון לציון",
-    "address": "יעקב פריימן 1, ראשון לציון",
-    "location": {
-      "latitude": 31.973,
-      "longitude": 34.7898
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-16:00; Sa 20:27-24:00",
-    "category": "dairy",
-    "certifiedBy": "כשר למהדרין בד\"ץ",
-    "source": "manual"
-  },
-  {
-    "id": "9100022",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "ראש העין",
-    "address": "מתחם תחנת הדלק, כניסה לקיבוץ עינת, ראש העין",
-    "location": {
-      "latitude": 32.0958,
-      "longitude": 34.9558
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 20:26-24:00",
-    "category": "dairy",
-    "certifiedBy": "כשר בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9100023",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "קריית שמונה",
-    "address": "מרכז ביג, קריית שמונה",
-    "location": {
-      "latitude": 33.2076,
-      "longitude": 35.5709
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-22:00; Sa 20:36-23:00",
-    "category": "dairy",
-    "certifiedBy": "כשרות בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9100024",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "קריית גת",
-    "address": "מלכי ישראל 178, ישפרו סנטר, קריית גת",
-    "location": {
-      "latitude": 31.61,
-      "longitude": 34.7641
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-14:30; Sa 20:56-24:00",
-    "category": "dairy",
-    "certifiedBy": "כשר למהדרין בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9100025",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "פתח תקווה",
-    "address": "העצמאות 64, פתח תקווה",
-    "location": {
-      "latitude": 32.084,
-      "longitude": 34.8878
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 10:00-23:00; Fr 10:00-15:00; Sa 20:26-24:00",
-    "category": "dairy",
-    "certifiedBy": "כשר למהדרין בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9100026",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "פרדס חנה כרכור",
-    "address": "מתחם אלון, עין שמר, פרדס חנה כרכור",
-    "location": {
-      "latitude": 32.4706,
-      "longitude": 34.9711
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 20:56-23:00",
-    "category": "dairy",
-    "certifiedBy": "כשר למהדרין בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9100027",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "פארק אדיסון",
-    "address": "פארק אדיסון",
-    "location": {
-      "latitude": 31.9044,
-      "longitude": 34.799
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-23:00; Sa 20:46-23:00",
-    "category": "dairy",
-    "certifiedBy": "כשר למהדרין",
-    "source": "manual"
-  },
-  {
-    "id": "9100028",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "ערד",
-    "address": "צים סנטר, ערד",
-    "location": {
-      "latitude": 31.2598,
-      "longitude": 35.2141
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 10:30-22:00; Fr 10:30-14:00; Sa 20:56-22:00",
-    "category": "dairy",
-    "certifiedBy": "כשר בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9100029",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "עפולה",
-    "address": "חטיבה תשע 1, עפולה",
-    "location": {
-      "latitude": 32.6076,
-      "longitude": 35.2899
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 10:30-23:00; Fr 10:30-14:00; Sa 20:56-23:30",
-    "category": "dairy",
-    "certifiedBy": "כשר מהדרין בד\"צ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9100030",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "עכו",
-    "address": "שלום הגליל 1, עכו",
-    "location": {
-      "latitude": 32.9256,
-      "longitude": 35.0724
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-24:00; Fr 11:00-15:00; Sa 20:41-24:00",
-    "category": "dairy",
-    "certifiedBy": "כשר בד\"ץ",
-    "source": "manual"
-  },
-  {
-    "id": "9100031",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "נתניה",
-    "address": "גיבורי ישראל 22, נתניה",
-    "location": {
-      "latitude": 32.3215,
-      "longitude": 34.8532
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-01:00; Fr 11:00-14:30; Sa 20:56-02:00",
-    "category": "dairy",
-    "certifiedBy": "כשר בד\"ץ בית יוסף מהדרין",
-    "source": "manual"
-  },
-  {
-    "id": "9100032",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "נתניה",
-    "address": "כיכר העצמאות 3, נתניה",
-    "location": {
-      "latitude": 32.3215,
-      "longitude": 34.8532
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 20:56-24:00",
-    "category": "dairy",
-    "certifiedBy": "כשר מהדרין בד\"צ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9100033",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "נתיבות",
-    "address": "צים סנטר, נתיבות",
-    "location": {
-      "latitude": 31.4228,
-      "longitude": 34.5878
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 20:56-24:00",
-    "category": "dairy",
-    "certifiedBy": "כשר למהדרין",
-    "source": "manual"
-  },
-  {
-    "id": "9100034",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "נהריה",
-    "address": "ויצמן 63, נהריה",
-    "location": {
-      "latitude": 33.0045,
-      "longitude": 35.0955
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-01:00; Fr 11:00-17:00; Sa 20:31-01:00",
-    "category": "dairy",
-    "certifiedBy": "כשר מהדרין",
-    "source": "manual"
-  },
-  {
-    "id": "9100035",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "מצפה רמון",
-    "address": "שדרות בן גוריון 1, מצפה רמון",
-    "location": {
-      "latitude": 30.6097,
-      "longitude": 34.8026
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 09:00-22:45; Fr 09:00-15:00; Sa 20:56-22:45",
-    "category": "dairy",
-    "certifiedBy": "כשר למהדרין",
-    "source": "manual"
-  },
-  {
-    "id": "9100036",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "מעלות",
-    "address": "צים סנטר, מעלות",
-    "location": {
-      "latitude": 33.0137,
-      "longitude": 35.2687
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-We 11:00-21:00; Tu 12:00-21:00; Th 11:00-21:00; Fr 11:00-13:00; Sa 20:56-21:00",
-    "category": "dairy",
-    "certifiedBy": "כשר למהדרין",
-    "source": "manual"
-  },
-  {
-    "id": "9100037",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "מעלה אדומים",
-    "address": "קניון מעלה אדומים, מעלה אדומים",
-    "location": {
-      "latitude": 31.7731,
-      "longitude": 35.2955
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:30-22:00; Sa 20:56-22:00",
-    "category": "dairy",
-    "certifiedBy": "כשר למהדרין",
-    "source": "manual"
-  },
-  {
-    "id": "9100038",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "מבשרת ציון",
-    "address": "שדרות החוצבים 10, קניון מבשרת, מבשרת ציון",
-    "location": {
-      "latitude": 31.806,
-      "longitude": 35.1467
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 09:00-24:00; Fr 09:00-14:45; Sa 20:56-24:00",
-    "category": "dairy",
-    "certifiedBy": "כשר למהדרין",
-    "source": "manual"
-  },
-  {
-    "id": "9100039",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "כפר סבא",
-    "address": "ויצמן 47, כפר סבא",
-    "location": {
-      "latitude": 32.1781,
-      "longitude": 34.9075
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 10:00-24:00; Fr 10:00-15:30; Sa 20:26-24:00",
-    "category": "dairy",
-    "certifiedBy": "כשר",
-    "source": "manual"
-  },
-  {
-    "id": "9100040",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "כפר יונה",
-    "address": "דוד בן גוריון 1, קניון כפר יונה, כפר יונה",
-    "location": {
-      "latitude": 32.3175,
-      "longitude": 34.931
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-00:30; Fr 10:00-14:00; Sa 20:56-00:30",
-    "category": "dairy",
-    "certifiedBy": "כשר למהדרין",
-    "source": "manual"
-  },
-  {
-    "id": "9100041",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "ירושלים",
-    "address": "קניון רמות, ירושלים",
-    "location": {
-      "latitude": 31.7683,
-      "longitude": 35.2137
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 10:00-24:00; Fr 10:00-15:00; Sa 21:06-01:00",
-    "category": "dairy",
-    "certifiedBy": "כשרות בד\"ץ הרב רובין",
-    "source": "manual"
-  },
-  {
-    "id": "9100042",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "ירושלים",
-    "address": "יד חרוצים 18, ירושלים",
-    "location": {
-      "latitude": 31.7683,
-      "longitude": 35.2137
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 10:30-23:00; Fr 10:30-15:00; Sa 21:06-24:00",
-    "category": "dairy",
-    "certifiedBy": "כשר בד\"ץ מהדרין",
-    "source": "manual"
-  },
-  {
-    "id": "9100043",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "ירושלים",
-    "address": "יפו 228, תחנה מרכזית, ירושלים",
-    "location": {
-      "latitude": 31.7683,
-      "longitude": 35.2137
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 10:00-23:00; Fr 10:00-15:00; Sa 21:06-23:00",
-    "category": "dairy",
-    "certifiedBy": "בד\"צ מהדרין בראשות הרב רובין",
-    "source": "manual"
-  },
-  {
-    "id": "9100044",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "ירושלים",
-    "address": "אורוגוואי 1, ירושלים",
-    "location": {
-      "latitude": 31.7683,
-      "longitude": 35.2137
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 10:00-23:00; Fr 10:00-15:00; Sa 21:06-24:00",
-    "category": "dairy",
-    "certifiedBy": "כשרות בד\"ץ הרב רובין",
-    "source": "manual"
-  },
-  {
-    "id": "9100045",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "ירושלים",
-    "address": "זלמן שניאור 1, ירושלים",
-    "location": {
-      "latitude": 31.7683,
-      "longitude": 35.2137
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 10:30-01:30; Fr 10:30-15:00; Sa 21:16-01:00",
-    "category": "dairy",
-    "certifiedBy": "כשרות בד\"ץ הרב רובין",
-    "source": "manual"
-  },
-  {
-    "id": "9100046",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "ירושלים",
-    "address": "דרך אגודת ספורט בית\"ר 1, קניון מלחה, ירושלים",
-    "location": {
-      "latitude": 31.7683,
-      "longitude": 35.2137
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 10:00-22:00; Fr 10:00-14:00; Sa 21:06-23:30",
-    "category": "dairy",
-    "certifiedBy": "כשר בד\"ץ מהדרין הרב רובין",
-    "source": "manual"
-  },
-  {
-    "id": "9100047",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "ירושלים",
-    "address": "מרדכי בן הלל 15, ירושלים",
-    "location": {
-      "latitude": 31.7683,
-      "longitude": 35.2137
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 10:00-01:00; Fr 10:00-15:00; Sa 21:06-01:00",
-    "category": "dairy",
-    "certifiedBy": "כשרות בד\"ץ הרב רובין",
-    "source": "manual"
-  },
-  {
-    "id": "9100048",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "יקנעם",
-    "address": "התמר 2, קניון G, יקנעם",
-    "location": {
-      "latitude": 32.6575,
-      "longitude": 35.1004
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-22:00; Fr 11:00-14:00; Sa 20:56-23:00",
-    "category": "dairy",
-    "certifiedBy": "רבנות מקומית",
-    "source": "manual"
-  },
-  {
-    "id": "9100049",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "יבנה",
-    "address": "הנחשול 22, יבנה",
-    "location": {
-      "latitude": 31.8752,
-      "longitude": 34.7394
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 12:00-23:00; Sa 20:56-23:00",
-    "category": "dairy",
-    "certifiedBy": "כשר למהדרין",
-    "source": "manual"
-  },
-  {
-    "id": "9100050",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "טבריה",
-    "address": "הבנים 1, טבריה",
-    "location": {
-      "latitude": 32.7921,
-      "longitude": 35.5312
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-23:45; Fr 11:00-15:00; Sa 20:56-23:45",
-    "category": "dairy",
-    "certifiedBy": "כשר בד\"ץ",
-    "source": "manual"
-  },
-  {
-    "id": "9100051",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "חריש",
-    "address": "דרך ארץ 74, חריש",
-    "location": {
-      "latitude": 32.458,
-      "longitude": 35.0343
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-16:00; Sa 20:56-24:00",
-    "category": "dairy",
-    "certifiedBy": "כשר למהדרין",
-    "source": "manual"
-  },
-  {
-    "id": "9100052",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "חיפה",
-    "address": "הטכניון, חיפה",
-    "location": {
-      "latitude": 32.794,
-      "longitude": 34.9896
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 12:00-23:00; Sa 20:48-24:00",
-    "category": "dairy",
-    "certifiedBy": "כשר",
-    "source": "manual"
-  },
-  {
-    "id": "9100053",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "חולון",
-    "address": "דרך השבעה 20, חולון",
-    "location": {
-      "latitude": 32.0114,
-      "longitude": 34.7799
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 20:56-23:30",
-    "category": "dairy",
-    "certifiedBy": "כשר מהדרין בד\"צ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9100054",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "חדרה",
-    "address": "יצחק רבין 41, חדרה",
-    "location": {
-      "latitude": 32.434,
-      "longitude": 34.9187
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-14:00; Sa 21:25-23:00",
-    "category": "dairy",
-    "certifiedBy": "כשר למהדרין",
-    "source": "manual"
-  },
-  {
-    "id": "9100055",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "זכרון יעקב",
-    "address": "הנדיב 26, זכרון יעקב",
-    "location": {
-      "latitude": 32.568,
-      "longitude": 34.9556
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-24:00; Fr 11:00-14:30; Sa 20:41-24:00",
-    "category": "dairy",
-    "certifiedBy": "כשר מהדרין",
-    "source": "manual"
-  },
-  {
-    "id": "9100056",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "הרצליה",
-    "address": "בלינסון 1, הרצליה",
-    "location": {
-      "latitude": 32.1663,
-      "longitude": 34.8392
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 10:30-23:30; Fr 10:30-14:30; Sa 20:56-23:30",
-    "category": "dairy",
-    "certifiedBy": "כשר בד\"ץ",
-    "source": "manual"
-  },
-  {
-    "id": "9100057",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "הוד השרון",
-    "address": "מגדיאל 57, הוד השרון",
-    "location": {
-      "latitude": 32.1508,
-      "longitude": 34.8896
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 20:56-24:00",
-    "category": "dairy",
-    "certifiedBy": "כשר בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9100058",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "דימונה",
-    "address": "קניון פרץ, דימונה",
-    "location": {
-      "latitude": 31.0677,
-      "longitude": 35.0347
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 09:00-23:00; Fr 09:00-14:00; Sa 20:26-23:00",
-    "category": "dairy",
-    "certifiedBy": "כשר בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9100059",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "גדרה",
-    "address": "הבילויים 10, גדרה",
-    "location": {
-      "latitude": 31.812,
-      "longitude": 34.776
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 20:56-24:00",
-    "category": "dairy",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9100060",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "בת ים",
-    "address": "בן גוריון 134, בת ים",
-    "location": {
-      "latitude": 32.0235,
-      "longitude": 34.7507
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 10:30-00:15; Fr 10:30-17:00; Sa 20:33-00:30",
-    "category": "dairy",
-    "certifiedBy": "כשר בד\"ץ בית יוסף מהדרין",
-    "source": "manual"
-  },
-  {
-    "id": "9100061",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "בני דרור",
-    "address": "קניון דרורים, בני דרור",
-    "location": {
-      "latitude": 32.2735,
-      "longitude": 34.9152
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-22:45; Fr 11:00-14:00; Sa 21:26-22:45",
-    "category": "dairy",
-    "certifiedBy": "כשר למהדרין",
-    "source": "manual"
-  },
-  {
-    "id": "9100062",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "בני ברק",
-    "address": "זבוטינסקי 2, בני ברק",
-    "location": {
-      "latitude": 32.084,
-      "longitude": 34.834
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 10:30-24:00; Sa 20:56-24:00",
-    "category": "dairy",
-    "certifiedBy": "כשרות בד\"ץ הרב רובין",
-    "source": "manual"
-  },
-  {
-    "id": "9100063",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "בית שמש",
-    "address": "יצחק רבין 13, בית שמש",
-    "location": {
-      "latitude": 31.7458,
-      "longitude": 34.9926
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-24:00; Fr 11:00-14:30; Sa 21:26-24:00",
-    "category": "dairy",
-    "certifiedBy": "כשרות רובין",
-    "source": "manual"
-  },
-  {
-    "id": "9100064",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "בית שאן",
-    "address": "מרכז צים, מתחם האוכל, בית שאן",
-    "location": {
-      "latitude": 32.501,
-      "longitude": 35.5
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-22:00; Fr 11:00-14:00; Sa 20:56-22:30",
-    "category": "dairy",
-    "certifiedBy": "כשר בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9100065",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "קריית עקרון",
-    "address": "מתחם קניות עופר בילו סנטר, קריית עקרון",
-    "location": {
-      "latitude": 31.8596,
-      "longitude": 34.823
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 21:06-23:30",
-    "category": "dairy",
-    "certifiedBy": "רבנות מקומית מהדרין",
-    "source": "manual"
-  },
-  {
-    "id": "9100066",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "באר שבע",
-    "address": "שדרות רגר 53, מגדלי אביסרור, באר שבע",
-    "location": {
-      "latitude": 31.2518,
-      "longitude": 34.7913
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-24:00; Sa 21:00-01:00",
-    "category": "dairy",
-    "certifiedBy": "כשר למהדרין בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9100067",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "באר שבע",
-    "address": "MALL-7, ליד רמי לוי, באר שבע",
-    "location": {
-      "latitude": 31.2518,
-      "longitude": 34.7913
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 10:30-23:30; Fr 11:00-15:00; Sa 21:00-01:00",
-    "category": "dairy",
-    "certifiedBy": "כשר למהדרין בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9100068",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "באר שבע",
-    "address": "שדרות הערים התאומות 26, באר שבע",
-    "location": {
-      "latitude": 31.2518,
-      "longitude": 34.7913
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 20:46-24:00",
-    "category": "dairy",
-    "certifiedBy": "כשר למהדרין",
-    "source": "manual"
-  },
-  {
-    "id": "9100069",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "באר יעקב",
-    "address": "אסף הרופא, באר יעקב",
-    "location": {
-      "latitude": 31.9363,
-      "longitude": 34.8386
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-23:00; Sa 20:56-23:30",
-    "category": "dairy",
-    "certifiedBy": "כשרות בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9100070",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "אשקלון",
-    "address": "אלי כהן 21, אשקלון",
-    "location": {
-      "latitude": 31.6688,
-      "longitude": 34.5742
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 10:00-24:00; Fr 10:00-15:00; Sa 20:56-24:00",
-    "category": "dairy",
-    "certifiedBy": "כשר בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9100071",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "אשדוד",
-    "address": "הציונות 13/9, אשדוד",
-    "location": {
-      "latitude": 31.804,
-      "longitude": 34.6553
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 10:00-24:00; Fr 10:00-15:00; Sa 20:56-24:00",
-    "category": "dairy",
-    "certifiedBy": "כשר בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9100072",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "אילת",
-    "address": "התמרים 2, הקניון האדום, אילת",
-    "location": {
-      "latitude": 29.5581,
-      "longitude": 34.9482
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 20:45-24:00",
-    "category": "dairy",
-    "certifiedBy": "כשר מהדרין בד\"צ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9100073",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "אור עקיבא",
-    "address": "קניון אורות, אור עקיבא",
-    "location": {
-      "latitude": 31.5,
-      "longitude": 34.9
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 10:00-23:00; Fr 10:00-16:00; Sa 20:58-24:00",
-    "category": "dairy",
-    "certifiedBy": "כשר",
-    "source": "manual"
-  },
-  {
-    "id": "9100074",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "אופקים",
-    "address": "שדרות יהדות דרום אפריקה 14, אופקים",
-    "location": {
-      "latitude": 31.3097,
-      "longitude": 34.6196
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 12:00-23:00; Sa 21:11-24:00",
-    "category": "dairy",
-    "certifiedBy": "כשר למהדרין",
-    "source": "manual"
-  },
-  {
-    "id": "9100075",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "פתח תקווה",
-    "address": "מרדכי בן דרור 4, פתח תקווה",
-    "location": {
-      "latitude": 32.084,
-      "longitude": 34.8878
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 10:00-24:00; Fr 10:00-16:00; Sa 20:31-24:00",
-    "category": "dairy",
-    "certifiedBy": "כשר למהדרין בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9100076",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "רמת גן",
-    "address": "לנדאו 7, רמת גן",
-    "location": {
-      "latitude": 32.0682,
-      "longitude": 34.8243
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 10:00-22:45; Fr 10:00-15:00; Sa 20:56-23:00",
-    "category": "dairy",
-    "certifiedBy": "כשר למהדרין בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9100077",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "פתח תקווה",
-    "address": "עין גנים 96, פתח תקווה",
-    "location": {
-      "latitude": 32.084,
-      "longitude": 34.8878
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 10:30-24:00; Fr 10:30-15:00; Sa 20:27-24:00",
-    "category": "dairy",
-    "certifiedBy": "כשר למהדרין רובין בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9100078",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "גבעת שמואל",
-    "address": "מנחם בגין 30, גבעת שמואל",
-    "location": {
-      "latitude": 32.0782,
-      "longitude": 34.8458
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 15:00-22:30; Sa 20:26-23:30",
-    "category": "dairy",
-    "certifiedBy": "כשר למהדרין",
-    "source": "manual"
-  },
-  {
-    "id": "9100079",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "יהוד",
-    "address": "החורש 4, קריית הסביונים, יהוד",
-    "location": {
-      "latitude": 32.031,
-      "longitude": 34.889
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-14:00; Sa 20:56-23:00",
-    "category": "dairy",
-    "certifiedBy": "כשר מהדרין בד\"צ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9100080",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "גני תקווה",
-    "address": "הרי יהודה 56, גני תקווה",
-    "location": {
-      "latitude": 32.0605,
-      "longitude": 34.877
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-23:30; Fr 11:00-14:30; Sa 20:56-23:30",
-    "category": "dairy",
-    "certifiedBy": "כשר בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9100081",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "קריית אתא",
-    "address": "מתחם ביג, צומת קריית אתא, קריית אתא",
-    "location": {
-      "latitude": 32.8056,
-      "longitude": 35.1048
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-23:30; Fr 11:00-15:00; Sa 20:26-23:30",
-    "category": "dairy",
-    "certifiedBy": "כשר למהדרין בד\"ץ בית יוסף",
-    "source": "manual"
-  },
-  {
-    "id": "9100082",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "חיפה",
-    "address": "מוריה 13, חיפה",
-    "location": {
-      "latitude": 32.794,
-      "longitude": 34.9896
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 11:00-24:00; Fr 11:00-15:00; Sa 20:38-24:00",
-    "category": "dairy",
-    "certifiedBy": "כשר בד\"ץ",
-    "source": "manual"
-  },
-  {
-    "id": "9100083",
-    "name": "פיצה האט",
-    "type": "restaurant",
-    "cityId": "כרמיאל",
-    "address": "מעלה כמון 5, קניון חוצות כרמיאל, כרמיאל",
-    "location": {
-      "latitude": 32.9115,
-      "longitude": 35.2974
-    },
-    "locationPrecision": "address",
-    "phone": "1-700-50-60-70",
-    "website": "https://www.pizzahut.co.il",
-    "openingHours": "Su-Th 10:30-23:00; Fr 10:30-16:00; Sa 20:41-24:00",
-    "category": "dairy",
-    "certifiedBy": "כשר",
-    "source": "manual"
-  },
-  {
-    "id": "9200000",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "קדימה",
-    "address": "האופה 1, קדימה",
-    "location": {
-      "latitude": 32.282,
-      "longitude": 34.9163
-    },
-    "locationPrecision": "address",
-    "phone": "09-8660555",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-20:00; Fr 07:00-14:30",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200001",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "רעננה",
-    "address": "קניון רננים, רעננה",
-    "location": {
-      "latitude": 32.1839,
-      "longitude": 34.8708
-    },
-    "locationPrecision": "address",
-    "phone": "09-7444889",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-20:00; Fr 07:00-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200002",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "תל אביב",
-    "address": "יהודה מכבי 57, תל אביב",
-    "location": {
-      "latitude": 32.0853,
-      "longitude": 34.7818
-    },
-    "locationPrecision": "address",
-    "phone": "03-9388808",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-21:00; Fr 07:00-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200003",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "מודיעין",
-    "address": "קניון עזריאלי, מודיעין",
-    "location": {
-      "latitude": 31.8966,
-      "longitude": 35.0102
-    },
-    "locationPrecision": "address",
-    "phone": "08-9758680",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-19:00; Fr 07:00-14:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200004",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "חיפה",
-    "address": "חורב 18, חיפה",
-    "location": {
-      "latitude": 32.794,
-      "longitude": 34.9896
-    },
-    "locationPrecision": "address",
-    "phone": "04-8111445",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 06:00-21:00; Fr 06:00-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200005",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "פתח תקווה",
-    "address": "העצמאות 65, כפר גנים ג', פתח תקווה",
-    "location": {
-      "latitude": 32.084,
-      "longitude": 34.8878
-    },
-    "locationPrecision": "address",
-    "phone": "03-5355584",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-21:30; Fr 07:00-14:30",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200006",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "כפר סבא",
-    "address": "התע\"ש 23, כפר סבא",
-    "location": {
-      "latitude": 32.1781,
-      "longitude": 34.9075
-    },
-    "locationPrecision": "address",
-    "phone": "09-7677178",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-19:00; Fr 07:00-14:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200007",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "רעננה",
-    "address": "אחוזה 146, רעננה",
-    "location": {
-      "latitude": 32.1839,
-      "longitude": 34.8708
-    },
-    "locationPrecision": "address",
-    "phone": "09-7486117",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-19:30; Fr 07:00-14:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200008",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "הרצליה",
-    "address": "משכית 35, הרצליה",
-    "location": {
-      "latitude": 32.1663,
-      "longitude": 34.8392
-    },
-    "locationPrecision": "address",
-    "phone": "09-9577763",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 06:00-20:00; Fr 06:00-15:30",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200009",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "הוד השרון",
-    "address": "הבנים 15, הוד השרון",
-    "location": {
-      "latitude": 32.1508,
-      "longitude": 34.8896
-    },
-    "locationPrecision": "address",
-    "phone": "09-7739980",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-20:00; Fr 07:00-14:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200010",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "אשדוד",
-    "address": "מנגו 4, אשדוד",
-    "location": {
-      "latitude": 31.804,
-      "longitude": 34.6553
-    },
-    "locationPrecision": "address",
-    "phone": "08-6883353",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 08:00-22:00; Fr 08:00-15:00; Sa 20:00-22:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200011",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "גן יבנה",
-    "address": "המגינים 56, גן יבנה",
-    "location": {
-      "latitude": 31.787,
-      "longitude": 34.7045
-    },
-    "locationPrecision": "address",
-    "phone": "08-9401141",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-22:00; Fr 07:00-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200012",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "רמת גן",
-    "address": "אבא הילל 2, רמת גן",
-    "location": {
-      "latitude": 32.0682,
-      "longitude": 34.8243
-    },
-    "locationPrecision": "address",
-    "phone": "03-6131545",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-18:00; Fr 07:00-14:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200013",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "תל אביב",
-    "address": "אבא אחימאיר 19, תל אביב",
-    "location": {
-      "latitude": 32.0853,
-      "longitude": 34.7818
-    },
-    "locationPrecision": "address",
-    "phone": "03-6773221",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-20:00; Fr 07:00-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200014",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "תל אביב",
-    "address": "אבן גבירול 24, תל אביב",
-    "location": {
-      "latitude": 32.0853,
-      "longitude": 34.7818
-    },
-    "locationPrecision": "address",
-    "phone": "03-6966177",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-21:00; Fr 07:00-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200015",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "פתח תקווה",
-    "address": "רפאל איתן 3, פתח תקווה",
-    "location": {
-      "latitude": 32.084,
-      "longitude": 34.8878
-    },
-    "locationPrecision": "address",
-    "phone": "03-5355549",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-20:30; Fr 07:00-14:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200016",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "עפולה",
-    "address": "השוק 13, עפולה",
-    "location": {
-      "latitude": 32.6076,
-      "longitude": 35.2899
-    },
-    "locationPrecision": "address",
-    "phone": "04-6492333",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-21:00; Fr 07:00-14:30",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200017",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "תל אביב",
-    "address": "ברודצקי 43, תל אביב",
-    "location": {
-      "latitude": 32.0853,
-      "longitude": 34.7818
-    },
-    "locationPrecision": "address",
-    "phone": "03-6777581",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-21:00; Fr 07:00-16:00; Sa 07:00-21:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200018",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "ראשון לציון",
-    "address": "ירושלים 129, ראשון לציון",
-    "location": {
-      "latitude": 31.973,
-      "longitude": 34.7898
-    },
-    "locationPrecision": "address",
-    "phone": "03-7392825",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-21:30; Fr 06:30-16:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200019",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "באר שבע",
-    "address": "המשק 1/3, באר שבע",
-    "location": {
-      "latitude": 31.2518,
-      "longitude": 34.7913
-    },
-    "locationPrecision": "address",
-    "phone": "074-7588151",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:30-21:30; Fr 07:30-14:30",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200020",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "ירושלים",
-    "address": "יפו 110, ירושלים",
-    "location": {
-      "latitude": 31.7683,
-      "longitude": 35.2137
-    },
-    "locationPrecision": "address",
-    "phone": "02-6222021",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:30-19:00; Fr 07:30-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200021",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "חריש",
-    "address": "ספיר 1, חריש",
-    "location": {
-      "latitude": 32.458,
-      "longitude": 35.0343
-    },
-    "locationPrecision": "address",
-    "phone": "04-6555608",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:30-20:00; Fr 07:30-14:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200022",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "אשקלון",
-    "address": "המח\"ל 1, אשקלון",
-    "location": {
-      "latitude": 31.6688,
-      "longitude": 34.5742
-    },
-    "locationPrecision": "address",
-    "phone": "08-8668886",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:30-21:30; Fr 07:30-14:30",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200023",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "גבעת שמואל",
-    "address": "יוני נתניהו 23, גבעת שמואל",
-    "location": {
-      "latitude": 32.0782,
-      "longitude": 34.8458
-    },
-    "locationPrecision": "address",
-    "phone": "03-5324551",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 06:30-22:00; Fr 06:30-15:00; Sa 18:30-22:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200024",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "שוהם",
-    "address": "שוהם מרכז מסחרי, שוהם",
-    "location": {
-      "latitude": 31.9957,
-      "longitude": 34.9373
-    },
-    "locationPrecision": "address",
-    "phone": "03-5039419",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 06:30-21:00; Fr 07:00-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200025",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "כפר סבא",
-    "address": "רפפורט 3, כפר סבא",
-    "location": {
-      "latitude": 32.1781,
-      "longitude": 34.9075
-    },
-    "locationPrecision": "address",
-    "phone": "09-7745054",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 09:00-20:00; Fr 08:30-14:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200026",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "ירושלים",
-    "address": "קניון הדר, ירושלים",
-    "location": {
-      "latitude": 31.7683,
-      "longitude": 35.2137
-    },
-    "locationPrecision": "address",
-    "phone": "02-5330989",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 08:00-15:00; Fr 07:00-14:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200027",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "ראש פינה",
-    "address": "מתחם סנטר הגליל, ראש פינה",
-    "location": {
-      "latitude": 32.9714,
-      "longitude": 35.5428
-    },
-    "locationPrecision": "address",
-    "phone": "04-6385533",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-21:30; Fr 07:00-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200028",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "חדרה",
-    "address": "שדרות רוטשילד 40, חדרה",
-    "location": {
-      "latitude": 32.434,
-      "longitude": 34.9187
-    },
-    "locationPrecision": "address",
-    "phone": "054-9418289",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:30-21:30; Fr 07:30-14:30",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200029",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "תל אביב",
-    "address": "ויצמן 14, תל אביב",
-    "location": {
-      "latitude": 32.0853,
-      "longitude": 34.7818
-    },
-    "locationPrecision": "address",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 06:30-18:00; Fr 06:30-13:30",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200030",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "תל אביב",
-    "address": "ויצמן 6, תל אביב",
-    "location": {
-      "latitude": 32.0853,
-      "longitude": 34.7818
-    },
-    "locationPrecision": "address",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 06:30-21:00; Fr 06:30-14:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200031",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "קריית גת",
-    "address": "דרך הדרום 3, קריית גת",
-    "location": {
-      "latitude": 31.61,
-      "longitude": 34.7641
-    },
-    "locationPrecision": "address",
-    "phone": "08-9126663",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-22:00; Fr 07:00-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200032",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "ירושלים",
-    "address": "שדרות אלרוב ממילא, ירושלים",
-    "location": {
-      "latitude": 31.7683,
-      "longitude": 35.2137
-    },
-    "locationPrecision": "address",
-    "phone": "02-6231553",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:30-23:00; Fr 07:30-15:00; Sa 21:00-23:59",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200033",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "הרצליה",
-    "address": "יוסי שריד 11, הרצליה",
-    "location": {
-      "latitude": 32.1663,
-      "longitude": 34.8392
-    },
-    "locationPrecision": "address",
-    "phone": "055-5667871",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 06:30-20:30; Fr 06:30-15:30",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200034",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "גבעתיים",
-    "address": "בורוכוב 54, גבעתיים",
-    "location": {
-      "latitude": 32.068,
-      "longitude": 34.8126
-    },
-    "locationPrecision": "address",
-    "phone": "03-9195895",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-22:00; Fr 07:30-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200035",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "גני תקווה",
-    "address": "הדרים 7, גני תקווה",
-    "location": {
-      "latitude": 32.0605,
-      "longitude": 34.877
-    },
-    "locationPrecision": "address",
-    "phone": "03-5667171",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 06:00-21:00; Fr 06:00-14:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200036",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "כפר יונה",
-    "address": "שייקה אופיר 2, כפר יונה",
-    "location": {
-      "latitude": 32.3175,
-      "longitude": 34.931
-    },
-    "locationPrecision": "address",
-    "phone": "09-7963114",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:30-21:00; Fr 07:30-14:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200037",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "תל אביב",
-    "address": "דיזנגוף 50, תל אביב",
-    "location": {
-      "latitude": 32.0853,
-      "longitude": 34.7818
-    },
-    "locationPrecision": "address",
-    "phone": "03-6206611",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 06:30-20:00; Fr 06:30-15:30",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200038",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "חיפה",
-    "address": "נחום חת 5, חיפה",
-    "location": {
-      "latitude": 32.794,
-      "longitude": 34.9896
-    },
-    "locationPrecision": "address",
-    "phone": "04-8666620",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-20:00; Fr 07:30-14:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200039",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "נס ציונה",
-    "address": "הפטיש 6, נס ציונה",
-    "location": {
-      "latitude": 31.9285,
-      "longitude": 34.7982
-    },
-    "locationPrecision": "address",
-    "phone": "08-8506041",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-21:00; Fr 06:30-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200040",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "עין שמר",
-    "address": "צומת כרכור, עין שמר",
-    "location": {
-      "latitude": 32.455,
-      "longitude": 35.022
-    },
-    "locationPrecision": "address",
-    "phone": "04-8484875",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:30-20:00; Fr 07:30-14:30",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200041",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "ראש העין",
-    "address": "יגאל אלון 22, ראש העין",
-    "location": {
-      "latitude": 32.0958,
-      "longitude": 34.9558
-    },
-    "locationPrecision": "address",
-    "phone": "054-7049999",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-21:00; Fr 07:00-14:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200042",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "גדרה",
-    "address": "הרצל 10, גדרה",
-    "location": {
-      "latitude": 31.812,
-      "longitude": 34.776
-    },
-    "locationPrecision": "address",
-    "phone": "08-9380038",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 06:00-21:00; Fr 06:00-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200043",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "יוקנעם",
-    "address": "יצחק רבין 9, יוקנעם",
-    "location": {
-      "latitude": 32.6575,
-      "longitude": 35.1004
-    },
-    "locationPrecision": "address",
-    "phone": "04-8409034",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-22:00; Fr 07:00-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200044",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "שילת",
-    "address": "אזור תעשיה שילת",
-    "location": {
-      "latitude": 31.893,
-      "longitude": 35
-    },
-    "locationPrecision": "address",
-    "phone": "08-6643440",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 06:30-21:00; Fr 06:30-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200045",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "פתח תקווה",
-    "address": "מרכז שניידר לרפואת ילדים, פתח תקווה",
-    "location": {
-      "latitude": 32.084,
-      "longitude": 34.8878
-    },
-    "locationPrecision": "address",
-    "phone": "03-6998287",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 06:00-21:00; Fr 06:00-14:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200046",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "חולון",
-    "address": "אילון פנחס 13, חולון",
-    "location": {
-      "latitude": 32.0114,
-      "longitude": 34.7799
-    },
-    "locationPrecision": "address",
-    "phone": "03-5339430",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-20:30; Fr 07:30-14:30",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200047",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "נתניה",
-    "address": "הרצל 60, נתניה",
-    "location": {
-      "latitude": 32.3215,
-      "longitude": 34.8532
-    },
-    "locationPrecision": "address",
-    "phone": "09-9730750",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-21:30; Fr 07:00-15:00; Sa 21:00-22:30",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200048",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "קריית מוצקין",
-    "address": "משה גושן 12, קריית מוצקין",
-    "location": {
-      "latitude": 32.8367,
-      "longitude": 35.0831
-    },
-    "locationPrecision": "address",
-    "phone": "04-8815284",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-20:00; Fr 07:00-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200049",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "חדרה",
-    "address": "שכטמן 10, חדרה",
-    "location": {
-      "latitude": 32.434,
-      "longitude": 34.9187
-    },
-    "locationPrecision": "address",
-    "phone": "04-9092858",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 06:30-21:30; Fr 06:00-15:00; Sa 21:00-23:30",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200050",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "נהריה",
-    "address": "ויצמן 66, נהריה",
-    "location": {
-      "latitude": 33.0045,
-      "longitude": 35.0955
-    },
-    "locationPrecision": "address",
-    "phone": "04-8833727",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-20:30; Fr 07:00-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200051",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "כפר סבא",
-    "address": "קניון ערים, כפר סבא",
-    "location": {
-      "latitude": 32.1781,
-      "longitude": 34.9075
-    },
-    "locationPrecision": "address",
-    "phone": "09-9796080",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-21:00; Fr 07:00-16:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200052",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "מודיעין",
-    "address": "מתחם ישפרו סנטר, מודיעין",
-    "location": {
-      "latitude": 31.8966,
-      "longitude": 35.0102
-    },
-    "locationPrecision": "address",
-    "phone": "08-6672672",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-20:30; Fr 07:00-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200053",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "קריית אונו",
-    "address": "קניון אמות, קריית אונו",
-    "location": {
-      "latitude": 32.0579,
-      "longitude": 34.8559
-    },
-    "locationPrecision": "address",
-    "phone": "03-5258825",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 06:30-21:30; Fr 06:30-15:00; Sa 21:00-23:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200054",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "חולון",
-    "address": "הלוחמים 62, חולון",
-    "location": {
-      "latitude": 32.0114,
-      "longitude": 34.7799
-    },
-    "locationPrecision": "address",
-    "phone": "03-7432777",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 06:30-18:30; Fr 06:30-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200055",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "רחובות",
-    "address": "מוטי קינד 10, רחובות",
-    "location": {
-      "latitude": 31.8928,
-      "longitude": 34.8113
-    },
-    "locationPrecision": "address",
-    "phone": "08-6902727",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-21:00; Fr 06:30-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200056",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "תל אביב",
-    "address": "ז'בוטינסקי 24, תל אביב",
-    "location": {
-      "latitude": 32.0853,
-      "longitude": 34.7818
-    },
-    "locationPrecision": "address",
-    "phone": "03-9799592",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 06:00-19:00; Fr 06:00-16:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200057",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "רמת גן",
-    "address": "תרצה 19, רמת גן",
-    "location": {
-      "latitude": 32.0682,
-      "longitude": 34.8243
-    },
-    "locationPrecision": "address",
-    "phone": "03-5741456",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-20:00; Fr 07:00-14:30",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200058",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "בת ים",
-    "address": "בן גוריון 113, בת ים",
-    "location": {
-      "latitude": 32.0235,
-      "longitude": 34.7507
-    },
-    "locationPrecision": "address",
-    "phone": "050-6652012",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 06:00-22:30; Fr 06:00-17:00; Sa 06:00-22:30",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200059",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "רמת השרון",
-    "address": "סוקולוב 37, רמת השרון",
-    "location": {
-      "latitude": 32.1465,
-      "longitude": 34.8406
-    },
-    "locationPrecision": "address",
-    "phone": "03-5409324",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 06:00-20:00; Fr 06:00-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200060",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "מעלה אדומים",
-    "address": "דרך קדם 5, מעלה אדומים",
-    "location": {
-      "latitude": 31.7731,
-      "longitude": 35.2955
-    },
-    "locationPrecision": "address",
-    "phone": "02-6477038",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:30-21:30; Fr 07:30-14:00; Sa 21:00-22:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200061",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "מודיעין",
-    "address": "חיים ויצמן 22, מודיעין",
-    "location": {
-      "latitude": 31.8966,
-      "longitude": 35.0102
-    },
-    "locationPrecision": "address",
-    "phone": "08-9966065",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-21:00; Fr 07:00-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200062",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "רחובות",
-    "address": "אופנהיימר 2, רחובות",
-    "location": {
-      "latitude": 31.8928,
-      "longitude": 34.8113
-    },
-    "locationPrecision": "address",
-    "phone": "08-9365853",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 06:00-17:30; Fr 06:00-14:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200063",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "ירושלים",
-    "address": "דרך חברון 101א, ירושלים",
-    "location": {
-      "latitude": 31.7683,
-      "longitude": 35.2137
-    },
-    "locationPrecision": "address",
-    "phone": "02-5867371",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 06:00-20:30; Fr 07:00-14:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200064",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "קריית מוצקין",
-    "address": "שושנה דמארי 4, קריית מוצקין",
-    "location": {
-      "latitude": 32.8367,
-      "longitude": 35.0831
-    },
-    "locationPrecision": "address",
-    "phone": "04-9504253",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-21:00; Fr 07:00-16:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200065",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "תל אביב",
-    "address": "צבי גרינברג 25, תל אביב",
-    "location": {
-      "latitude": 32.0853,
-      "longitude": 34.7818
-    },
-    "locationPrecision": "address",
-    "phone": "03-6993360",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-19:00; Fr 07:00-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200066",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "חיפה",
-    "address": "הקיטור 4, חיפה",
-    "location": {
-      "latitude": 32.794,
-      "longitude": 34.9896
-    },
-    "locationPrecision": "address",
-    "phone": "052-5707020",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 06:30-21:00; Fr 06:30-14:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200067",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "רמת גן",
-    "address": "ביאליק 37, רמת גן",
-    "location": {
-      "latitude": 32.0682,
-      "longitude": 34.8243
-    },
-    "locationPrecision": "address",
-    "phone": "03-6701181",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:30-20:00; Fr 07:00-14:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200068",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "ירושלים",
-    "address": "קניון מלחה, ירושלים",
-    "location": {
-      "latitude": 31.7683,
-      "longitude": 35.2137
-    },
-    "locationPrecision": "address",
-    "phone": "02-6793225",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 08:00-22:00; Fr 08:00-15:00; Sa 21:00-22:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200069",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "כרמיאל",
-    "address": "קניון חוצות כרמיאל, כרמיאל",
-    "location": {
-      "latitude": 32.9115,
-      "longitude": 35.2974
-    },
-    "locationPrecision": "address",
-    "phone": "04-6030111",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 08:00-18:00; Fr 06:30-16:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200070",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "תל אביב",
-    "address": "ויצמן 14, תל אביב",
-    "location": {
-      "latitude": 32.0853,
-      "longitude": 34.7818
-    },
-    "locationPrecision": "address",
-    "phone": "03-6474692",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 06:30-21:00; Fr 06:30-14:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200071",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "יהוד",
-    "address": "קניון סביונים, יהוד",
-    "location": {
-      "latitude": 32.031,
-      "longitude": 34.889
-    },
-    "locationPrecision": "address",
-    "phone": "03-9101131",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-20:30; Fr 07:00-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200072",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "נתניה",
-    "address": "קניון עיר ימים, נתניה",
-    "location": {
-      "latitude": 32.3215,
-      "longitude": 34.8532
-    },
-    "locationPrecision": "address",
-    "phone": "052-7217774",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 08:00-15:00; Fr 13:00-18:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200073",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "תל אביב",
-    "address": "אופנהיימר 11, תל אביב",
-    "location": {
-      "latitude": 32.0853,
-      "longitude": 34.7818
-    },
-    "locationPrecision": "address",
-    "phone": "03-6762011",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-21:00; Fr 06:00-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200074",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "ראשון לציון",
-    "address": "רוטשילד 45, ראשון לציון",
-    "location": {
-      "latitude": 31.973,
-      "longitude": 34.7898
-    },
-    "locationPrecision": "address",
-    "phone": "03-6732129",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:30-20:00; Fr 07:30-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200075",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "ראשון לציון",
-    "address": "שדרות נים 3, ראשון לציון",
-    "location": {
-      "latitude": 31.973,
-      "longitude": 34.7898
-    },
-    "locationPrecision": "address",
-    "phone": "03-9194909",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 08:00-22:00; Fr 07:30-15:00; Sa 21:00-23:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200076",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "רמת גן",
-    "address": "אחד העם 62, רמת גן",
-    "location": {
-      "latitude": 32.0682,
-      "longitude": 34.8243
-    },
-    "locationPrecision": "address",
-    "phone": "03-5587098",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-22:00; Fr 07:00-14:00; Sa 07:00-22:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200077",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "קריית שמונה",
-    "address": "שדרות תל חי 77, קריית שמונה",
-    "location": {
-      "latitude": 33.2076,
-      "longitude": 35.5709
-    },
-    "locationPrecision": "address",
-    "phone": "04-6361140",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-18:00; Fr 07:00-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200078",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "מבשרת ציון",
-    "address": "קניון הראל, מבשרת ציון",
-    "location": {
-      "latitude": 31.806,
-      "longitude": 35.1467
-    },
-    "locationPrecision": "address",
-    "phone": "02-5700701",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-21:00; Fr 07:00-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200079",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "מבשרת ציון",
-    "address": "קניון מבשרת, מבשרת ציון",
-    "location": {
-      "latitude": 31.806,
-      "longitude": 35.1467
-    },
-    "locationPrecision": "address",
-    "phone": "02-5700703",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-20:00; Fr 07:00-14:00; Sa 21:00-21:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200080",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "גבעתיים",
-    "address": "קניון גבעתיים, גבעתיים",
-    "location": {
-      "latitude": 32.068,
-      "longitude": 34.8126
-    },
-    "locationPrecision": "address",
-    "phone": "03-9322040",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-21:30; Fr 07:00-15:00; Sa 21:00-23:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200081",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "בת ים",
-    "address": "יוספטל 92, בת ים",
-    "location": {
-      "latitude": 32.0235,
-      "longitude": 34.7507
-    },
-    "locationPrecision": "address",
-    "phone": "03-6777098",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-21:00; Fr 07:00-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200082",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "אשדוד",
-    "address": "הגדוד העברי 6, אשדוד",
-    "location": {
-      "latitude": 31.804,
-      "longitude": 34.6553
-    },
-    "locationPrecision": "address",
-    "phone": "08-8536612",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 09:00-22:00; Fr 08:00-15:00; Sa 21:00-23:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200083",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "הרצליה",
-    "address": "קניון 7 הכוכבים, הרצליה",
-    "location": {
-      "latitude": 32.1663,
-      "longitude": 34.8392
-    },
-    "locationPrecision": "address",
-    "phone": "09-9580955",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 08:00-20:00; Fr 08:00-15:00; Sa 09:00-21:30",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200084",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "רחובות",
-    "address": "ביל\"ו 2, רחובות",
-    "location": {
-      "latitude": 31.8928,
-      "longitude": 34.8113
-    },
-    "locationPrecision": "address",
-    "phone": "08-9708714",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-22:00; Fr 07:00-15:00; Sa 21:00-22:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200085",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "באר שבע",
-    "address": "שדרות טוביהו 125, באר שבע",
-    "location": {
-      "latitude": 31.2518,
-      "longitude": 34.7913
-    },
-    "locationPrecision": "address",
-    "phone": "050-2156608",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 08:30-21:30; Fr 08:30-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200086",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "פתח תקווה",
-    "address": "ז'בוטינסקי 72, פתח תקווה",
-    "location": {
-      "latitude": 32.084,
-      "longitude": 34.8878
-    },
-    "locationPrecision": "address",
-    "phone": "03-5356005",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 10:00-22:00; Fr 10:00-14:00; Sa 21:00-23:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200087",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "באר שבע",
-    "address": "יצחק רגר 2, באר שבע",
-    "location": {
-      "latitude": 31.2518,
-      "longitude": 34.7913
-    },
-    "locationPrecision": "address",
-    "phone": "08-9103955",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 08:00-21:00; Fr 08:00-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200088",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "חדרה",
-    "address": "תרנא 20, חדרה",
-    "location": {
-      "latitude": 32.434,
-      "longitude": 34.9187
-    },
-    "locationPrecision": "address",
-    "phone": "04-8416150",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-19:00; Fr 07:00-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200089",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "רמת גן",
-    "address": "קניון איילון, רמת גן",
-    "location": {
-      "latitude": 32.0682,
-      "longitude": 34.8243
-    },
-    "locationPrecision": "address",
-    "phone": "03-7764400",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:30-22:00; Fr 07:00-15:00; Sa 21:00-23:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200090",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "אילת",
-    "address": "חטיבת הנגב 9, אילת",
-    "location": {
-      "latitude": 29.5581,
-      "longitude": 34.9482
-    },
-    "locationPrecision": "address",
-    "phone": "08-6285641",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-21:00; Fr 07:00-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200091",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "קריית גת",
-    "address": "שד' לכיש 153, קריית גת",
-    "location": {
-      "latitude": 31.61,
-      "longitude": 34.7641
-    },
-    "locationPrecision": "address",
-    "phone": "077-3034040",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-22:00; Fr 07:00-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200092",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "חולון",
-    "address": "המשביר 1, חולון",
-    "location": {
-      "latitude": 32.0114,
-      "longitude": 34.7799
-    },
-    "locationPrecision": "address",
-    "phone": "03-9660780",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 06:30-20:00; Fr 06:30-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200093",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "הוד השרון",
-    "address": "סוקולוב 10, הוד השרון",
-    "location": {
-      "latitude": 32.1508,
-      "longitude": 34.8896
-    },
-    "locationPrecision": "address",
-    "phone": "09-8336191",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-20:30; Fr 07:00-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200094",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "באר יעקב",
-    "address": "יהלום 5, באר יעקב",
-    "location": {
-      "latitude": 31.9363,
-      "longitude": 34.8386
-    },
-    "locationPrecision": "address",
-    "phone": "08-6440322",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 06:30-21:00; Fr 06:30-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200095",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "רחובות",
-    "address": "כרמל 76, רחובות",
-    "location": {
-      "latitude": 31.8928,
-      "longitude": 34.8113
-    },
-    "locationPrecision": "address",
-    "phone": "053-3550555",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 06:30-21:00; Fr 06:30-16:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200096",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "אור עקיבא",
-    "address": "שדרות דוד המלך 38, אור עקיבא",
-    "location": {
-      "latitude": 32.504,
-      "longitude": 34.9156
-    },
-    "locationPrecision": "address",
-    "phone": "04-6401343",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-20:00; Fr 07:00-14:30",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200097",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "קריית אתא",
-    "address": "מתחם איקאה, קריית אתא",
-    "location": {
-      "latitude": 32.8056,
-      "longitude": 35.1048
-    },
-    "locationPrecision": "address",
-    "phone": "04-6315818",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 08:00-21:30; Fr 08:00-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200098",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "תל אביב",
-    "address": "קניון עזריאלי, תל אביב",
-    "location": {
-      "latitude": 32.0853,
-      "longitude": 34.7818
-    },
-    "locationPrecision": "address",
-    "phone": "052-8753324",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 06:30-22:00; Fr 06:30-14:45",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200099",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "ירושלים",
-    "address": "בית חולים הדסה עין כרם, ירושלים",
-    "location": {
-      "latitude": 31.7683,
-      "longitude": 35.2137
-    },
-    "locationPrecision": "address",
-    "phone": "02-5659772",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 06:30-20:00; Fr 06:30-14:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200100",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "חיפה",
-    "address": "ספיר 7, חיפה",
-    "location": {
-      "latitude": 32.794,
-      "longitude": 34.9896
-    },
-    "locationPrecision": "address",
-    "phone": "054-7877937",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-20:00; Fr 07:00-14:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200101",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "ירושלים",
-    "address": "יפו 224, ירושלים",
-    "location": {
-      "latitude": 31.7683,
-      "longitude": 35.2137
-    },
-    "locationPrecision": "address",
-    "phone": "050-8824698",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 05:30-20:00; Fr 05:30-15:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200102",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "בני ברק",
-    "address": "בן גוריון 9, בני ברק",
-    "location": {
-      "latitude": 32.084,
-      "longitude": 34.834
-    },
-    "locationPrecision": "address",
-    "phone": "03-5328269",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-20:00; Fr 07:00-14:00",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200103",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "נתניה",
-    "address": "טום לנטוס 26, נתניה",
-    "location": {
-      "latitude": 32.3215,
-      "longitude": 34.8532
-    },
-    "locationPrecision": "address",
-    "phone": "09-7498923",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-19:30; Fr 07:00-14:30",
-    "category": "dairy",
-    "source": "manual"
-  },
-  {
-    "id": "9200104",
-    "name": "רולדין",
-    "type": "cafe",
-    "cityId": "עפולה",
-    "address": "יוסף ברזילאי 5, עפולה",
-    "location": {
-      "latitude": 32.6076,
-      "longitude": 35.2899
-    },
-    "locationPrecision": "address",
-    "phone": "04-8878508",
-    "website": "https://roladin.co.il",
-    "instagram": "https://www.instagram.com/roladin_bakery",
-    "openingHours": "Su-Th 07:00-21:30; Fr 07:00-14:30",
-    "category": "dairy",
-    "source": "manual"
   }
 ]

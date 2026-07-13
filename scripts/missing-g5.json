@@ -1,0 +1,602 @@
+[
+  {
+    "id": "osm-node-1477010459",
+    "name": "קופיקס",
+    "city": "בת ים",
+    "address": "בת ים",
+    "phone": "",
+    "website": "https://www.coffix.co.il"
+  },
+  {
+    "id": "osm-node-1643352285",
+    "name": "מרקש",
+    "city": "נתניה",
+    "address": "נתניה",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-1741956267",
+    "name": "פופא",
+    "city": "בת ים",
+    "address": "בת ים",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-1938812801",
+    "name": "המרפסת",
+    "city": "בת ים",
+    "address": "בת ים",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-2124580743",
+    "name": "ציקן & ביף",
+    "city": "אזור",
+    "address": "אזור",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-2144611932",
+    "name": "ארומה",
+    "city": "כפר חב\"ד",
+    "address": "כפר חב\"ד",
+    "phone": "",
+    "website": "https://www.aroma.co.il"
+  },
+  {
+    "id": "osm-node-2144611975",
+    "name": "מקדונלד'ס",
+    "city": "כפר חב\"ד",
+    "address": "כפר חב\"ד",
+    "phone": "",
+    "website": "https://www.mcdonalds.co.il"
+  },
+  {
+    "id": "osm-node-2144612020",
+    "name": "Japan",
+    "city": "כפר חב\"ד",
+    "address": "כפר חב\"ד",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-2165350037",
+    "name": "בורגרס בר",
+    "city": "מודיעין-מכבים-רעות",
+    "address": "מודיעין-מכבים-רעות",
+    "phone": "",
+    "website": "https://www.burgersbar.co.il"
+  },
+  {
+    "id": "osm-node-2366076834",
+    "name": "Italy House",
+    "city": "נווה עמיאל",
+    "address": "נווה עמיאל",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-2394477277",
+    "name": "פיצה שמש",
+    "city": "בת ים",
+    "address": "בת ים",
+    "phone": "",
+    "website": "https://www.pizzashemesh.co.il"
+  },
+  {
+    "id": "osm-node-2577660818",
+    "name": "בורגרס בר",
+    "city": "תל אביב–יפו",
+    "address": "תל אביב–יפו",
+    "phone": "",
+    "website": "https://www.burgersbar.co.il"
+  },
+  {
+    "id": "osm-node-4161854779",
+    "name": "Cake Art",
+    "city": "תל אביב–יפו",
+    "address": "תל אביב–יפו",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-4275386775",
+    "name": "Cofix",
+    "city": "חולון",
+    "address": "חולון",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-4352401257",
+    "name": "קופיקס",
+    "city": "פתח תקווה",
+    "address": "חובבי ציון 10, פתח תקווה",
+    "phone": "",
+    "website": "https://www.coffix.co.il"
+  },
+  {
+    "id": "osm-node-4421769054",
+    "name": "300 גרם",
+    "city": "בצת",
+    "address": "בצת",
+    "phone": "+972-723951758â€‹",
+    "website": ""
+  },
+  {
+    "id": "osm-node-4612610692",
+    "name": "מקדונלד'ס",
+    "city": "נטעים",
+    "address": "נטעים",
+    "phone": "",
+    "website": "https://www.mcdonalds.co.il"
+  },
+  {
+    "id": "osm-node-4828911835",
+    "name": "בלאק",
+    "city": "פתח תקווה",
+    "address": "פתח תקווה",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-4916855022",
+    "name": "חומוס אליהו",
+    "city": "רחובות",
+    "address": "יעקב 1, רחובות",
+    "phone": "",
+    "website": "https://www.humuselihu.co.il"
+  },
+  {
+    "id": "osm-node-5170599211",
+    "name": "יאשקה",
+    "city": "רמת השרון",
+    "address": "רמת השרון",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-5202278925",
+    "name": "קפה קפה",
+    "city": "חולון",
+    "address": "חולון",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-5255495084",
+    "name": "פיצה האט",
+    "city": "נשר",
+    "address": "נשר",
+    "phone": "",
+    "website": "https://www.pizzahut.co.il"
+  },
+  {
+    "id": "osm-node-5613756285",
+    "name": "מפגש גולני",
+    "city": "עפולה",
+    "address": "עפולה",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-5894335311",
+    "name": "קאסה דל פפה",
+    "city": "רחובות",
+    "address": "רחובות",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-5995053444",
+    "name": "הערוק",
+    "city": "רמת השרון",
+    "address": "רמת השרון",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-6239725890",
+    "name": "פיצה האט",
+    "city": "יוקנעם המושבה",
+    "address": "התמר 2, יוקנעם המושבה",
+    "phone": "",
+    "website": "https://www.pizzahut.co.il"
+  },
+  {
+    "id": "osm-node-6354069186",
+    "name": "חומוס ברדיצ'ב",
+    "city": "נשר",
+    "address": "נשר",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-6526904599",
+    "name": "oshi",
+    "city": "רחובות",
+    "address": "רחובות",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-6570267096",
+    "name": "Pasta Basta",
+    "city": "רחובות",
+    "address": "רחובות",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-6854597174",
+    "name": "110 Burger",
+    "city": "בית שמש",
+    "address": "בית שמש",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-7620478217",
+    "name": "הטורטיה של מקור הבשר",
+    "city": "הרצליה",
+    "address": "הרצליה",
+    "phone": "+972 779610021",
+    "website": ""
+  },
+  {
+    "id": "osm-node-7899808751",
+    "name": "מסעדת הבית",
+    "city": "כפר נטר",
+    "address": "כפר נטר",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-8142743152",
+    "name": "בורגרים",
+    "city": "נתניה",
+    "address": "נתניה",
+    "phone": "",
+    "website": "https://www.burgerim.co.il"
+  },
+  {
+    "id": "osm-node-8142764996",
+    "name": "דבוש",
+    "city": "נתניה",
+    "address": "נתניה",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-9029057721",
+    "name": "ספייסי גריל בר",
+    "city": "רמת גן",
+    "address": "רמת גן",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-9190590717",
+    "name": "ג'פניקה",
+    "city": "גבעתיים",
+    "address": "זאב ז'בוטינסקי 2, גבעתיים",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-10548308215",
+    "name": "קזבלן",
+    "city": "רחובות",
+    "address": "רחובות",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-10682695046",
+    "name": "פלאפל פרישמן",
+    "city": "רעננה",
+    "address": "רעננה",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-10970907888",
+    "name": "פיצה האט",
+    "city": "גבעתיים",
+    "address": "גבעתיים",
+    "phone": "+972 1 700 50 60 70",
+    "website": "https://www.pizzahut.co.il"
+  },
+  {
+    "id": "osm-node-11015408972",
+    "name": "ליאתי",
+    "city": "תל אביב–יפו",
+    "address": "תל אביב–יפו",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-11163232373",
+    "name": "מיצלי",
+    "city": "תל אביב–יפו",
+    "address": "תל אביב–יפו",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-11226651758",
+    "name": "גריל street",
+    "city": "גבעתיים",
+    "address": "גבעתיים",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-11226656316",
+    "name": "שווארמה street",
+    "city": "גבעתיים",
+    "address": "גבעתיים",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-11226657264",
+    "name": "פאבלה",
+    "city": "גבעתיים",
+    "address": "ביאליק 77, גבעתיים",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-11397608290",
+    "name": "Hummus Elihau",
+    "city": "נוה ימין",
+    "address": "נוה ימין",
+    "phone": "",
+    "website": "https://www.humuselihu.co.il"
+  },
+  {
+    "id": "osm-node-11414872844",
+    "name": "Golda",
+    "city": "גיבתון",
+    "address": "גיבתון",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-11414907376",
+    "name": "Papa John's",
+    "city": "גיבתון",
+    "address": "גיבתון",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-11542534410",
+    "name": "ביגה",
+    "city": "כפר ביאליק",
+    "address": "כפר ביאליק",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-11711437812",
+    "name": "New Deli",
+    "city": "גבעתיים",
+    "address": "ביאליק 76, גבעתיים",
+    "phone": "",
+    "website": "https://www.newdeli.co.il"
+  },
+  {
+    "id": "osm-node-11793136463",
+    "name": "פיצה הוליווד",
+    "city": "אור יהודה",
+    "address": "אור יהודה",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-11843060618",
+    "name": "ג'ימי הגדול",
+    "city": "רמת השרון",
+    "address": "רמת השרון",
+    "phone": "+97235-402-788",
+    "website": ""
+  },
+  {
+    "id": "osm-node-11886042983",
+    "name": "פיצה שמש",
+    "city": "אור יהודה",
+    "address": "אור יהודה",
+    "phone": "",
+    "website": "https://www.pizzashemesh.co.il"
+  },
+  {
+    "id": "osm-node-12208598222",
+    "name": "קפה עלית אספרסו בר",
+    "city": "כפר גלים",
+    "address": "כפר גלים",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-12462916500",
+    "name": "זד בורגר",
+    "city": "ראשון לציון",
+    "address": "ראשון לציון",
+    "phone": "+972 35743333",
+    "website": ""
+  },
+  {
+    "id": "osm-node-12505424898",
+    "name": "גולדה",
+    "city": "ראשון לציון",
+    "address": "ראשון לציון",
+    "phone": "",
+    "website": "https://www.golda.co.il"
+  },
+  {
+    "id": "osm-node-12529700323",
+    "name": "תחנת האוכל",
+    "city": "גבעתיים",
+    "address": "נחלת יצחק 22, גבעתיים",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-12578960888",
+    "name": "סביחה",
+    "city": "גבעתיים",
+    "address": "גבעתיים",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-12593444378",
+    "name": "מי מה מו",
+    "city": "אור יהודה",
+    "address": "השדרה האקדמית, אור יהודה",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-12593458107",
+    "name": "Rebar",
+    "city": "אור יהודה",
+    "address": "השדרה האקדמית, אור יהודה",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-12673043882",
+    "name": "New Deli",
+    "city": "פתח תקווה",
+    "address": "פתח תקווה",
+    "phone": "",
+    "website": "https://www.newdeli.co.il"
+  },
+  {
+    "id": "osm-node-12809538406",
+    "name": "קירש קפה",
+    "city": "תל אביב–יפו",
+    "address": "דיזנגוף 189, תל אביב–יפו",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-13073821956",
+    "name": "פיצה שמש",
+    "city": "טבריה",
+    "address": "טבריה",
+    "phone": "",
+    "website": "https://www.pizzashemesh.co.il"
+  },
+  {
+    "id": "osm-node-13323181204",
+    "name": "גולדה",
+    "city": "אור יהודה",
+    "address": "אור יהודה",
+    "phone": "+972 3 779 7577",
+    "website": "https://www.golda.co.il"
+  },
+  {
+    "id": "osm-node-13324629585",
+    "name": "גולדה",
+    "city": "בית שמש",
+    "address": "בית שמש",
+    "phone": "+972 2 674 1544",
+    "website": "https://www.golda.co.il"
+  },
+  {
+    "id": "osm-node-13324750185",
+    "name": "גולדה",
+    "city": "בת ים",
+    "address": "בת ים",
+    "phone": "+972 3 604 6045",
+    "website": "https://www.golda.co.il"
+  },
+  {
+    "id": "osm-node-13377863599",
+    "name": "שווארמה קריטי",
+    "city": "רחובות",
+    "address": "רחובות",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-13377884604",
+    "name": "פלאפל שרעבי",
+    "city": "רחובות",
+    "address": "רחובות",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-13466794202",
+    "name": "פלאפל השכונה",
+    "city": "רחובות",
+    "address": "רחובות",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-13619434567",
+    "name": "יקי'ס",
+    "city": "גבעתיים",
+    "address": "ארלוזורוב 81, גבעתיים",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-13828231472",
+    "name": "כבשה שחורה",
+    "city": "נשר",
+    "address": "נשר",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-13864585863",
+    "name": "דנדוש פלאפל וסביח",
+    "city": "גני עם",
+    "address": "גני עם",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-13903561256",
+    "name": "סמאש איט",
+    "city": "נורדיה",
+    "address": "דגניה 47, נורדיה",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-node-13926659016",
+    "name": "ברבוניה",
+    "city": "אור יהודה",
+    "address": "אור יהודה",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-way-37771222",
+    "name": "Panorama",
+    "city": "נתניה",
+    "address": "נתניה",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "id": "osm-way-426439891",
+    "name": "קפה גן סיפור",
+    "city": "ירקונה",
+    "address": "הציונות 7, ירקונה",
+    "phone": "",
+    "website": ""
+  }
+]
