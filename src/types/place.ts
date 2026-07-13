@@ -15,6 +15,7 @@ export type KosherCategory = 'meat' | 'dairy' | 'parve';
  * These are stable string keys; human labels live in `utils/kosher.ts`.
  */
 export type KosherType =
+  | 'kosher'
   | 'rabanut'
   | 'rabanut_beit_shean'
   | 'rabanut_mehadrin'
