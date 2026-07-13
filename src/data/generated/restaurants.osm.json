@@ -12892,5 +12892,1790 @@
     "openingHours": "Su-Th 07:00-21:30; Fr 07:00-14:30",
     "category": "dairy",
     "source": "manual"
+  },
+  {
+    "id": "9300000",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "תל אביב",
+    "address": "אלנבי 49",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "phone": "03-5031814",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300001",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "תל אביב",
+    "address": "יגאל אלון 88",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "phone": "03-5612757",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300002",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "תל אביב",
+    "address": "אלנבי 1, מגדל האופרה",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "phone": "03-5165414",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300003",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "תל אביב",
+    "address": "יחזקאל קויפמן 2",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "phone": "03-5476035",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300004",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "תל אביב",
+    "address": "הירקון 145",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "phone": "03-6724298",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300005",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "תל אביב",
+    "address": "נחלת יצחק 18",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "phone": "03-5177870",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300006",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "תל אביב",
+    "address": "איינשטיין 40, רמת אביב",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "phone": "03-6414949",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300007",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "תל אביב",
+    "address": "הרצל 17",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "phone": "03-5169729",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300008",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "תל אביב",
+    "address": "דיזנגוף 55",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "phone": "03-6496991",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300009",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "תל אביב",
+    "address": "אבן גבירול 166",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "phone": "03-6020173",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300010",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "תל אביב",
+    "address": "מנחם בגין 132, קניון עזריאלי",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "phone": "03-6081424",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300011",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "תל אביב",
+    "address": "המסגר 9, יד חרוצים",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "phone": "03-6873457",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300012",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "תל אביב",
+    "address": "אהרון בקר 8",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "phone": "077-7180003",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300013",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "תל אביב",
+    "address": "אבן גבירול 30",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "phone": "03-6092005",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300014",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "תל אביב",
+    "address": "הברזל 25, רמת החייל",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "phone": "03-6489432",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300015",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "תל אביב",
+    "address": "קלאוזנר 8",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "phone": "03-6437774",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300016",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "תל אביב",
+    "address": "מנחם בגין 48",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "phone": "03-5099549",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300017",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "תל אביב",
+    "address": "החשמונאים 84",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "phone": "03-5461571",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300018",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "תל אביב",
+    "address": "יורדי הסירה 1, נמל תל אביב",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "phone": "03-5447047",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300019",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "תל אביב",
+    "address": "ויצמן 14, ויצמן סיטי",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "phone": "03-6916050",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300020",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "ירושלים",
+    "address": "יצחק קריב 6, מתחם ממילא",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "address",
+    "phone": "02-6241367",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300021",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "ירושלים",
+    "address": "אגודת ספורט ביתר 1, קניון ירושלים",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "address",
+    "phone": "02-6799154",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300022",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "ירושלים",
+    "address": "בית הדפוס 12, גבעת שאול",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "address",
+    "phone": "02-5326681",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300023",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "ירושלים",
+    "address": "בייט שמואל 12, גבעת מרדכי",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "address",
+    "phone": "02-6639000",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300024",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "ירושלים",
+    "address": "הלל 18",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "address",
+    "phone": "02-6255365",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300025",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "ירושלים",
+    "address": "עמק רפאים 43",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "address",
+    "phone": "02-5617236",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300026",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "ירושלים",
+    "address": "ישפרו סנטר הדסה עין כרם",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "address",
+    "phone": "02-6410222",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300027",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "ירושלים",
+    "address": "יפו 40",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "address",
+    "phone": "02-6241102",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300028",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "ירושלים",
+    "address": "המלך ג'ורג' 14",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "address",
+    "phone": "02-6259102",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300029",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "ירושלים",
+    "address": "פייר קניג 26, קניון הדר",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "address",
+    "phone": "02-6712228",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300030",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "ירושלים",
+    "address": "יפו 224, תחנה מרכזית",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "address",
+    "phone": "02-5388383",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300031",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "ירושלים",
+    "address": "מחנה יהודה",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "address",
+    "phone": "02-6222833",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300032",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "ירושלים",
+    "address": "שד' צ'רצ'יל",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "address",
+    "phone": "02-5324785",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300033",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "מבשרת ציון",
+    "address": "הראל 1, קניון הראל",
+    "location": {
+      "latitude": 31.806,
+      "longitude": 35.1467
+    },
+    "locationPrecision": "address",
+    "phone": "02-5335043",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300034",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "מעלה אדומים",
+    "address": "דרך קדם 5",
+    "location": {
+      "latitude": 31.7731,
+      "longitude": 35.2955
+    },
+    "locationPrecision": "address",
+    "phone": "02-5352670",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300035",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "שואבה",
+    "address": "צומת שואבה",
+    "location": {
+      "latitude": 31.8014,
+      "longitude": 35.065
+    },
+    "locationPrecision": "address",
+    "phone": "02-6526780",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300036",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "חיפה",
+    "address": "שד' ההסתדרות 248, ביג קריות",
+    "location": {
+      "latitude": 32.794,
+      "longitude": 34.9896
+    },
+    "locationPrecision": "address",
+    "phone": "04-8710111",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300037",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "חיפה",
+    "address": "שד' ההסתדרות 55, קניון סינמול",
+    "location": {
+      "latitude": 32.794,
+      "longitude": 34.9896
+    },
+    "locationPrecision": "address",
+    "phone": "04-8405088",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300038",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "חיפה",
+    "address": "פלימן משה 4, קניון חיפה",
+    "location": {
+      "latitude": 32.794,
+      "longitude": 34.9896
+    },
+    "locationPrecision": "address",
+    "phone": "053-8674761",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300039",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "חיפה",
+    "address": "דרך שמחה גולן 64, גרנד קניון",
+    "location": {
+      "latitude": 32.794,
+      "longitude": 34.9896
+    },
+    "locationPrecision": "address",
+    "phone": "04-8123965",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300040",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "חיפה",
+    "address": "שד' ההגנה, בת גלים",
+    "location": {
+      "latitude": 32.794,
+      "longitude": 34.9896
+    },
+    "locationPrecision": "address",
+    "phone": "04-8502450",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300041",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "חיפה",
+    "address": "העליה השניה 8, בת גלים",
+    "location": {
+      "latitude": 32.794,
+      "longitude": 34.9896
+    },
+    "locationPrecision": "address",
+    "phone": "04-8406155",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300042",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "חיפה",
+    "address": "השיש, צומת וולקן",
+    "location": {
+      "latitude": 32.794,
+      "longitude": 34.9896
+    },
+    "locationPrecision": "address",
+    "phone": "04-8408597",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300043",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "קריית ביאליק",
+    "address": "דרך עכו 144",
+    "location": {
+      "latitude": 32.8365,
+      "longitude": 35.0826
+    },
+    "locationPrecision": "address",
+    "phone": "053-4263603",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300044",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "קריית אתא",
+    "address": "העצמאות 37",
+    "location": {
+      "latitude": 32.8056,
+      "longitude": 35.1048
+    },
+    "locationPrecision": "address",
+    "phone": "053-9380852",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300045",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "כרמיאל",
+    "address": "מעלה כמון 2, ביג כרמיאל",
+    "location": {
+      "latitude": 32.9115,
+      "longitude": 35.2974
+    },
+    "locationPrecision": "address",
+    "phone": "04-9585828",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300046",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "נהריה",
+    "address": "שד' הגעתון 39",
+    "location": {
+      "latitude": 33.0045,
+      "longitude": 35.0955
+    },
+    "locationPrecision": "address",
+    "phone": "04-9000230",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300047",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "רמת ישי",
+    "address": "אקליפטוס 4",
+    "location": {
+      "latitude": 32.7056,
+      "longitude": 35.1689
+    },
+    "locationPrecision": "address",
+    "phone": "04-6444800",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300048",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "יקנעם עילית",
+    "address": "התמר 2, קניון דרכים יקנעם",
+    "location": {
+      "latitude": 32.6575,
+      "longitude": 35.1004
+    },
+    "locationPrecision": "address",
+    "phone": "04-9591055",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300049",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "מעלות-תרשיחא",
+    "address": "שלמה שרירא 12, קניון כוכב הצפון",
+    "location": {
+      "latitude": 33.0137,
+      "longitude": 35.2687
+    },
+    "locationPrecision": "address",
+    "phone": "04-6265808",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300050",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "נשר",
+    "address": "דרך בר יהודה 147",
+    "location": {
+      "latitude": 32.7745,
+      "longitude": 35.0489
+    },
+    "locationPrecision": "address",
+    "phone": "04-8218880",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300051",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "עין המפרץ",
+    "address": "עין המפרץ",
+    "location": {
+      "latitude": 32.92,
+      "longitude": 35.082
+    },
+    "locationPrecision": "address",
+    "phone": "04-9918989",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300052",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "בית שאן",
+    "address": "העמל 7",
+    "location": {
+      "latitude": 32.501,
+      "longitude": 35.5
+    },
+    "locationPrecision": "address",
+    "phone": "04-6077777",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300053",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "טבריה",
+    "address": "יהודה הלוי 4",
+    "location": {
+      "latitude": 32.7921,
+      "longitude": 35.5312
+    },
+    "locationPrecision": "address",
+    "phone": "04-8555555",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300054",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "צמח",
+    "address": "צומת צמח",
+    "location": {
+      "latitude": 32.7039,
+      "longitude": 35.5757
+    },
+    "locationPrecision": "address",
+    "phone": "04-6752222",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300055",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "בית ינאי",
+    "address": "צומת בית ינאי",
+    "location": {
+      "latitude": 32.3685,
+      "longitude": 34.8838
+    },
+    "locationPrecision": "address",
+    "phone": "09-8665136",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300056",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "נתניה",
+    "address": "רמת אפרים",
+    "location": {
+      "latitude": 32.3215,
+      "longitude": 34.8532
+    },
+    "locationPrecision": "address",
+    "phone": "09-8811275",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300057",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "נתניה",
+    "address": "הרצל 60, קניון השרון",
+    "location": {
+      "latitude": 32.3215,
+      "longitude": 34.8532
+    },
+    "locationPrecision": "address",
+    "phone": "09-8870906",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300058",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "נתניה",
+    "address": "שדרות גיבורי ישראל 17",
+    "location": {
+      "latitude": 32.3215,
+      "longitude": 34.8532
+    },
+    "locationPrecision": "address",
+    "phone": "09-8326950",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300059",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "כפר סבא",
+    "address": "טשרניחובסקי 57, בית חולים מאיר",
+    "location": {
+      "latitude": 32.1781,
+      "longitude": 34.9075
+    },
+    "locationPrecision": "address",
+    "phone": "09-7719111",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300060",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "כפר סבא",
+    "address": "ויצמן, מתחם G",
+    "location": {
+      "latitude": 32.1781,
+      "longitude": 34.9075
+    },
+    "locationPrecision": "address",
+    "phone": "09-7741555",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300061",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "הרצליה",
+    "address": "שדרות שבעת הכוכבים 130, קניון",
+    "location": {
+      "latitude": 32.1663,
+      "longitude": 34.8392
+    },
+    "locationPrecision": "address",
+    "phone": "09-9502247",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300062",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "הרצליה",
+    "address": "ביילינסון 2, הרצליה מרכז",
+    "location": {
+      "latitude": 32.1663,
+      "longitude": 34.8392
+    },
+    "locationPrecision": "address",
+    "phone": "09-9507300",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300063",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "חדרה",
+    "address": "צה\"ל 100",
+    "location": {
+      "latitude": 32.434,
+      "longitude": 34.9187
+    },
+    "locationPrecision": "address",
+    "phone": "04-6340100",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300064",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "חדרה",
+    "address": "ארבע האגודות 21, שערי חדרה",
+    "location": {
+      "latitude": 32.434,
+      "longitude": 34.9187
+    },
+    "locationPrecision": "address",
+    "phone": "04-6550200",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300065",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "פרדס חנה כרכור",
+    "address": "תדהר 2, ביג פרדס חנה",
+    "location": {
+      "latitude": 32.4706,
+      "longitude": 34.9711
+    },
+    "locationPrecision": "address",
+    "phone": "04-6390700",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300066",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "שפיים",
+    "address": "שפיים, צומת שפיים",
+    "location": {
+      "latitude": 32.2802,
+      "longitude": 34.8585
+    },
+    "locationPrecision": "address",
+    "phone": "09-9508833",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300067",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "רעננה",
+    "address": "המלאכה 2, קניון רננים",
+    "location": {
+      "latitude": 32.1839,
+      "longitude": 34.8708
+    },
+    "locationPrecision": "address",
+    "phone": "09-7415100",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300068",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "רעננה",
+    "address": "מדרשת רופין, מרכז אקדמי רופין",
+    "location": {
+      "latitude": 32.1839,
+      "longitude": 34.8708
+    },
+    "locationPrecision": "address",
+    "phone": "09-8987374",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300069",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "בית חרות",
+    "address": "בית חרות 1, פז חופית ויתקין",
+    "location": {
+      "latitude": 32.328,
+      "longitude": 34.9218
+    },
+    "locationPrecision": "address",
+    "phone": "09-8995500",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300070",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "בני דרור",
+    "address": "קניון דרורים",
+    "location": {
+      "latitude": 32.2735,
+      "longitude": 34.9152
+    },
+    "locationPrecision": "address",
+    "phone": "09-7961792",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300071",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "אור יהודה",
+    "address": "אליהו סעדון 120, עזריאלי אאוטלט",
+    "location": {
+      "latitude": 32.0321,
+      "longitude": 34.8712
+    },
+    "locationPrecision": "address",
+    "phone": "03-5333991",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300072",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "בת ים",
+    "address": "דרך בן גוריון 75, טיילת",
+    "location": {
+      "latitude": 32.0235,
+      "longitude": 34.7507
+    },
+    "locationPrecision": "address",
+    "phone": "03-5077543",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300073",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "בת ים",
+    "address": "רוטשילד 29",
+    "location": {
+      "latitude": 32.0235,
+      "longitude": 34.7507
+    },
+    "locationPrecision": "address",
+    "phone": "03-6593550",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300074",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "ראשון לציון",
+    "address": "ילדי טהרן 3, סינמה סיטי",
+    "location": {
+      "latitude": 31.973,
+      "longitude": 34.7898
+    },
+    "locationPrecision": "address",
+    "phone": "03-9512040",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300075",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "ראשון לציון",
+    "address": "דוד סחרוב 21, קניון הזהב",
+    "location": {
+      "latitude": 31.973,
+      "longitude": 34.7898
+    },
+    "locationPrecision": "address",
+    "phone": "054-3333693",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300076",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "גבעת שמואל",
+    "address": "שפינדל יונה 1",
+    "location": {
+      "latitude": 32.0782,
+      "longitude": 34.8458
+    },
+    "locationPrecision": "address",
+    "phone": "03-5368640",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300077",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "גבעתיים",
+    "address": "דרך יצחק רבין 53, קניון גבעתיים",
+    "location": {
+      "latitude": 32.068,
+      "longitude": 34.8126
+    },
+    "locationPrecision": "address",
+    "phone": "03-5722800",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300078",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "פתח תקווה",
+    "address": "ראשון לציון 1",
+    "location": {
+      "latitude": 32.084,
+      "longitude": 34.8878
+    },
+    "locationPrecision": "address",
+    "phone": "03-9191791",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300079",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "אזור",
+    "address": "העלייה השנייה 43",
+    "location": {
+      "latitude": 32.0207,
+      "longitude": 34.8028
+    },
+    "locationPrecision": "address",
+    "phone": "03-5509024",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300080",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "רמת גן",
+    "address": "ז'בוטינסקי 7, מתחם הבורסה",
+    "location": {
+      "latitude": 32.0682,
+      "longitude": 34.8243
+    },
+    "locationPrecision": "address",
+    "phone": "03-6124014",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300081",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "שוהם",
+    "address": "שד' עמק איילון 30",
+    "location": {
+      "latitude": 31.9957,
+      "longitude": 34.9373
+    },
+    "locationPrecision": "address",
+    "phone": "03-9772290",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300082",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "באר יעקב",
+    "address": "שא נס 17",
+    "location": {
+      "latitude": 31.9363,
+      "longitude": 34.8386
+    },
+    "locationPrecision": "address",
+    "phone": "08-6238000",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300083",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "נס ציונה",
+    "address": "הפטיש 6",
+    "location": {
+      "latitude": 31.9285,
+      "longitude": 34.7982
+    },
+    "locationPrecision": "address",
+    "phone": "08-9408441",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300084",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "רחובות",
+    "address": "ביל\"ו 2, קניון רחובות",
+    "location": {
+      "latitude": 31.8928,
+      "longitude": 34.8113
+    },
+    "locationPrecision": "address",
+    "phone": "08-9494102",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300085",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "צריפין",
+    "address": "צריפין",
+    "location": {
+      "latitude": 31.9627,
+      "longitude": 34.9113
+    },
+    "locationPrecision": "address",
+    "phone": "08-9243091",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300086",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "אשדוד",
+    "address": "הגדוד העברי 6, קניון סי מול",
+    "location": {
+      "latitude": 31.804,
+      "longitude": 34.6553
+    },
+    "locationPrecision": "address",
+    "phone": "08-6432185",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300087",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "אשקלון",
+    "address": "שד' בן גוריון 21, קניון גירון",
+    "location": {
+      "latitude": 31.6688,
+      "longitude": 34.5742
+    },
+    "locationPrecision": "address",
+    "phone": "08-6734142",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300088",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "אשקלון",
+    "address": "פאואר סנטר סילבר",
+    "location": {
+      "latitude": 31.6688,
+      "longitude": 34.5742
+    },
+    "locationPrecision": "address",
+    "phone": "08-6751772",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300089",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "באר שבע",
+    "address": "שד' דוד טוביהו 125",
+    "location": {
+      "latitude": 31.2518,
+      "longitude": 34.7913
+    },
+    "locationPrecision": "address",
+    "phone": "08-6444800",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300090",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "באר שבע",
+    "address": "שד' ירושלים 4",
+    "location": {
+      "latitude": 31.2518,
+      "longitude": 34.7913
+    },
+    "locationPrecision": "address",
+    "phone": "08-6104002",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300091",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "באר שבע",
+    "address": "שד' יצחק רגר, אוניברסיטת בן-גוריון",
+    "location": {
+      "latitude": 31.2518,
+      "longitude": 34.7913
+    },
+    "locationPrecision": "address",
+    "phone": "08-6209344",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300092",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "באר שבע",
+    "address": "דרך חברון 21, מקס אמות",
+    "location": {
+      "latitude": 31.2518,
+      "longitude": 34.7913
+    },
+    "locationPrecision": "address",
+    "phone": "08-6652032",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300093",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "באר שבע",
+    "address": "צומת אלי כהן",
+    "location": {
+      "latitude": 31.2518,
+      "longitude": 34.7913
+    },
+    "locationPrecision": "address",
+    "phone": "08-6654714",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300094",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "קריית גת",
+    "address": "ככר פז 3",
+    "location": {
+      "latitude": 31.61,
+      "longitude": 34.7641
+    },
+    "locationPrecision": "address",
+    "phone": "08-6814455",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300095",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "נתיבות",
+    "address": "בעלי המלאכה 2, גלובוס סנטר",
+    "location": {
+      "latitude": 31.4228,
+      "longitude": 34.5878
+    },
+    "locationPrecision": "address",
+    "phone": "08-9162522",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300096",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "דימונה",
+    "address": "פרץ סנטר 1",
+    "location": {
+      "latitude": 31.0677,
+      "longitude": 35.0347
+    },
+    "locationPrecision": "address",
+    "phone": "08-6571447",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300097",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "אילת",
+    "address": "הסתת 20, ביג אילת",
+    "location": {
+      "latitude": 29.5581,
+      "longitude": 34.9482
+    },
+    "locationPrecision": "address",
+    "phone": "08-6318445",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300098",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "אילת",
+    "address": "טיילת רויאל ביץ'",
+    "location": {
+      "latitude": 29.5581,
+      "longitude": 34.9482
+    },
+    "locationPrecision": "address",
+    "phone": "08-6332026",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300099",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "אילת",
+    "address": "קאמפן 8",
+    "location": {
+      "latitude": 29.5581,
+      "longitude": 34.9482
+    },
+    "locationPrecision": "address",
+    "phone": "08-9177111",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300100",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "עין חצבה",
+    "address": "עין חצבה, כביש 90",
+    "location": {
+      "latitude": 30.7697,
+      "longitude": 35.2355
+    },
+    "locationPrecision": "address",
+    "phone": "08-9975151",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300101",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "בית קמה",
+    "address": "צומת בית קמה",
+    "location": {
+      "latitude": 31.4419,
+      "longitude": 34.7233
+    },
+    "locationPrecision": "address",
+    "phone": "08-9919384",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300102",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "עין בוקק",
+    "address": "עין בוקק, ים המלח",
+    "location": {
+      "latitude": 31.1955,
+      "longitude": 35.365
+    },
+    "locationPrecision": "address",
+    "phone": "08-9954021",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300103",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "עין עבדת",
+    "address": "עין עבדת, כביש 40",
+    "location": {
+      "latitude": 30.8183,
+      "longitude": 34.7618
+    },
+    "locationPrecision": "address",
+    "phone": "08-6532111",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
+  },
+  {
+    "id": "9300104",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "מיתר",
+    "address": "מיתר",
+    "location": {
+      "latitude": 31.2747,
+      "longitude": 34.9168
+    },
+    "locationPrecision": "address",
+    "phone": "08-6231046",
+    "website": "https://www.aroma.co.il",
+    "instagram": "https://www.instagram.com/aromaisrael",
+    "category": "dairy",
+    "source": "manual"
   }
 ]
