@@ -68,10 +68,11 @@ function translitToHebrew(hdate: string): string {
   return `${dayToHebrew(day)} ${monthHe} ${yearToHebrew(year)}`;
 }
 
-function isSameWeek(isoA: string, isoB: string): boolean {
-  const a = new Date(isoA);
-  const b = new Date(isoB);
-  return Math.abs(a.getTime() - b.getTime()) < 7 * 24 * 60 * 60 * 1000;
+function isParashaStillValid(parashaDate: string): boolean {
+  const shabbat = new Date(parashaDate);
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  return shabbat >= today;
 }
 
 function toSefariaUrl(title: string): string {
@@ -95,7 +96,7 @@ export function useParasha() {
         const cached = await AsyncStorage.getItem(CACHE_KEY);
         if (cached) {
           const parsed: ParashaData = JSON.parse(cached);
-          if (isSameWeek(parsed.date, new Date().toISOString())) {
+          if (isParashaStillValid(parsed.date)) {
             if (!cancelled) setParasha(parsed);
             setLoading(false);
             return;

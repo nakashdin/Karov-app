@@ -5989,7 +5989,13 @@
       "longitude": 35.4793449
     },
     "source": "osm",
-    "lastVerifiedAt": "2026-06-17"
+    "lastVerifiedAt": "2026-07-09",
+    "tags": [
+      "tzaddik_grave"
+    ],
+    "extra": {
+      "wikidataId": "Q11680015"
+    }
   },
   {
     "id": "osm-node-1339426969",
@@ -11865,7 +11871,13 @@
       "longitude": 35.2292401
     },
     "source": "osm",
-    "lastVerifiedAt": "2026-06-17"
+    "tags": [
+      "tzaddik_grave"
+    ],
+    "extra": {
+      "wikidataId": "Q17992"
+    },
+    "lastVerifiedAt": "2026-07-09"
   },
   {
     "id": "osm-way-161143826",
@@ -102662,6 +102674,220 @@
       "confidenceReason": "seed ידני | בית העלמין הקדמי טבריה, מתחם הרמב\"ם | 2 מקורות תואמים | holy.org.il + nelech.co.il",
       "manualSeed": true,
       "isMustHave": false
+    }
+  },
+  {
+    "id": "tzaddik-wikidata-grave-Q311703",
+    "name": "קבר הרמח\"ל",
+    "type": "tzaddik_grave",
+    "cityId": "טבריה",
+    "address": "טבריה",
+    "location": {
+      "latitude": 32.7886,
+      "longitude": 35.5289
+    },
+    "source": "wikidata",
+    "lastVerifiedAt": "2026-07-09",
+    "tags": [
+      "tzaddik_grave"
+    ],
+    "extra": {
+      "wikidataId": "Q311703",
+      "confidenceScore": 80,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata ישות קבר | +שם עברי",
+      "manualSeed": true,
+      "isMustHave": true
+    }
+  },
+  {
+    "id": "tzaddik-wikidata-grave-Q5054952",
+    "name": "מערת אליהו הנביא",
+    "type": "tzaddik_grave",
+    "cityId": "חיפה",
+    "address": "חיפה",
+    "location": {
+      "latitude": 32.8298,
+      "longitude": 34.9696
+    },
+    "source": "wikidata",
+    "lastVerifiedAt": "2026-07-09",
+    "tags": [
+      "tzaddik_grave"
+    ],
+    "extra": {
+      "wikidataId": "Q5054952",
+      "confidenceScore": 80,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata ישות קבר | +שם עברי",
+      "manualSeed": true,
+      "isMustHave": true
+    }
+  },
+  {
+    "id": "tzaddik-wikidata-grave-Q6373413",
+    "name": "קבר יונה הנביא",
+    "type": "tzaddik_grave",
+    "cityId": "כפר משהד",
+    "address": "כפר משהד",
+    "location": {
+      "latitude": 32.7378,
+      "longitude": 35.3256
+    },
+    "source": "wikidata",
+    "lastVerifiedAt": "2026-07-09",
+    "tags": [
+      "tzaddik_grave"
+    ],
+    "extra": {
+      "wikidataId": "Q6373413",
+      "confidenceScore": 80,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata ישות קבר | +שם עברי",
+      "manualSeed": true,
+      "isMustHave": true
+    }
+  },
+  {
+    "id": "tzaddik-wikidata-grave-Q41365933",
+    "name": "קבר רבן גמליאל",
+    "type": "tzaddik_grave",
+    "cityId": "יבנה",
+    "address": "יבנה",
+    "location": {
+      "latitude": 31.8677,
+      "longitude": 34.7432
+    },
+    "source": "wikidata",
+    "lastVerifiedAt": "2026-07-09",
+    "tags": [
+      "tzaddik_grave"
+    ],
+    "extra": {
+      "wikidataId": "Q41365933",
+      "confidenceScore": 80,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata ישות קבר | +שם עברי",
+      "manualSeed": true,
+      "isMustHave": true
+    }
+  },
+  {
+    "id": "tzaddik-wikidata-grave-Q12411009",
+    "name": "קבר רבי חנינא בן דוסא",
+    "type": "tzaddik_grave",
+    "cityId": "עראבה",
+    "address": "עראבה",
+    "location": {
+      "latitude": 32.8486,
+      "longitude": 35.3358
+    },
+    "source": "wikidata",
+    "lastVerifiedAt": "2026-07-09",
+    "tags": [
+      "tzaddik_grave"
+    ],
+    "extra": {
+      "wikidataId": "Q12411009",
+      "confidenceScore": 80,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata ישות קבר | +שם עברי",
+      "manualSeed": true,
+      "isMustHave": true
+    }
+  },
+  {
+    "id": "tzaddik-manual-c14",
+    "name": "קבר רבי ישמעאל כהן גדול",
+    "type": "tzaddik_grave",
+    "cityId": "סאג'ור",
+    "address": "סאג'ור",
+    "location": {
+      "latitude": 32.9384,
+      "longitude": 35.3437
+    },
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-09",
+    "tags": [
+      "tzaddik_grave"
+    ],
+    "extra": {
+      "confidenceScore": 70,
+      "confidenceLevel": "medium",
+      "confidenceReason": "מקור ידני | +שם עברי",
+      "manualSeed": true,
+      "isMustHave": true
+    }
+  },
+  {
+    "id": "tzaddik-manual-c15",
+    "name": "קבר רבי שלמה אלקבץ",
+    "type": "tzaddik_grave",
+    "cityId": "צפת",
+    "address": "צפת",
+    "location": {
+      "latitude": 32.9684,
+      "longitude": 35.4887
+    },
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-09",
+    "tags": [
+      "tzaddik_grave"
+    ],
+    "extra": {
+      "confidenceScore": 70,
+      "confidenceLevel": "medium",
+      "confidenceReason": "מקור ידני | +שם עברי",
+      "manualSeed": true,
+      "isMustHave": true
+    }
+  },
+  {
+    "id": "tzaddik-wikidata-grave-Q12410948",
+    "name": "קבר ישי ורות",
+    "type": "tzaddik_grave",
+    "cityId": "חברון",
+    "address": "חברון",
+    "location": {
+      "latitude": 31.5244,
+      "longitude": 35.1017
+    },
+    "source": "wikidata",
+    "lastVerifiedAt": "2026-07-09",
+    "tags": [
+      "tzaddik_grave"
+    ],
+    "extra": {
+      "wikidataId": "Q12410948",
+      "confidenceScore": 80,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata ישות קבר | +שם עברי",
+      "manualSeed": true,
+      "isMustHave": true
+    }
+  },
+  {
+    "id": "tzaddik-wikidata-grave-Q56376617",
+    "name": "קבר כלב בן יפונה",
+    "type": "tzaddik_grave",
+    "cityId": "כיפל חריס",
+    "address": "כיפל חריס",
+    "location": {
+      "latitude": 32.1195,
+      "longitude": 35.1569
+    },
+    "source": "wikidata",
+    "lastVerifiedAt": "2026-07-09",
+    "tags": [
+      "tzaddik_grave"
+    ],
+    "extra": {
+      "wikidataId": "Q56376617",
+      "confidenceScore": 80,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata ישות קבר | +שם עברי",
+      "manualSeed": true,
+      "isMustHave": true
     }
   }
 ]
