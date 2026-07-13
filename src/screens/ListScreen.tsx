@@ -169,12 +169,10 @@ export function ListScreen() {
     : filters.placeType === 'tzaddik_grave' ? t.listCategories.tzaddik_grave
     : null;
 
-  // Hide results when: no geocoded address yet (other mode) OR no GPS location yet (current mode)
-  const hasCurrentLocation = locationMode === 'current' && !!location;
-  const hasOtherLocation = locationMode === 'other' && customLocation !== null;
-  const showResults = hasCurrentLocation || hasOtherLocation;
+  // Show results always in 'current' mode; in 'other' mode only after geocoding
+  const showResults = locationMode === 'current' || customLocation !== null;
 
-  // Need location prompt when in current mode and no location
+  // Show banner when in current mode but GPS not yet available
   const needsLocation = locationMode === 'current' && !location;
 
   return (
