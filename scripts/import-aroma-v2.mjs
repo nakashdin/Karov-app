@@ -79,6 +79,12 @@ function makeId() { return String(idCounter++); }
 
 const MISSING_URL = null; // ⚠️ יש להשלים את ה-URL מהאתר הרשמי
 
+function certToKosherType(certified) {
+  if (!certified) return 'rabanut_mekomi';
+  if (certified.includes('מהדרין')) return 'rabanut_mehadrin';
+  return 'rabanut_mekomi';
+}
+
 function buildEntry(r) {
   const coords = CITY_COORDS[r.city] || { lat: 31.5, lon: 34.9 };
   return {
@@ -93,6 +99,7 @@ function buildEntry(r) {
     website: r.url || 'https://www.aroma.co.il',
     openingHours: r.hours || undefined,
     category: 'dairy',
+    kosherType: certToKosherType(r.certified),
     certifiedBy: r.certified,
     source: 'manual',
   };
