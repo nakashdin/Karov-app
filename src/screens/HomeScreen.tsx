@@ -73,8 +73,8 @@ export function HomeScreen() {
   };
 
   const openType = (placeType: PlaceType) => {
-    if (placeType === 'restaurant') {
-      navigation.navigate('KashruyotFilter');
+    if (placeType === 'restaurant' || placeType === 'fast_food') {
+      navigation.navigate('KashruyotFilter', { placeType });
       return;
     }
     setFilters({ ...emptyFilters, placeType });
@@ -145,19 +145,25 @@ export function HomeScreen() {
             onPress={() => openType('restaurant')}
           />
           <Shortcut
+            icon="fast-food"
+            color={colors.categoryFastFood}
+            label="מזון מהיר"
+            onPress={() => openType('fast_food')}
+          />
+          <Shortcut
             icon="business"
             color={colors.categorySynagogue}
             label={t.home.synagogues}
             onPress={() => openType('synagogue')}
           />
+        </View>
+        <View style={[styles.shortcutRow, styles.shortcutRowLast]}>
           <Shortcut
             icon="water"
             color={colors.categoryMikveh}
             label={t.home.mikvahs}
             onPress={() => openType('mikveh')}
           />
-        </View>
-        <View style={[styles.shortcutRow, styles.shortcutRowLast]}>
           <Shortcut
             icon="home"
             color={colors.chabad}

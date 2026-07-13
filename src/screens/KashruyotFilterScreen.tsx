@@ -7,8 +7,8 @@ import {
   View,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { useNavigation } from '@react-navigation/native';
-import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { useNavigation, useRoute } from '@react-navigation/native';
+import { NativeStackNavigationProp, NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Screen } from '../components/Screen';
 import { colors, radius, shadow, spacing } from '../theme';
 import { useFilters } from '../context/FiltersContext';
@@ -17,6 +17,7 @@ import { KASHRUYOT_FILTER_TYPES, categoryLabel, kosherTypeLabel } from '../utils
 import { RootStackParamList } from '../navigation/types';
 
 type Nav = NativeStackNavigationProp<RootStackParamList>;
+type Route = NativeStackScreenProps<RootStackParamList, 'KashruyotFilter'>['route'];
 
 const CATEGORIES: Array<{ key: KosherCategory | null; label: string; emoji: string }> = [
   { key: null,    label: 'הכל',   emoji: '🍽️' },
@@ -29,6 +30,8 @@ const STEPS = ['קטגוריה', 'כשרות', 'תוצאות'];
 
 export function KashruyotFilterScreen() {
   const navigation = useNavigation<Nav>();
+  const route = useRoute<Route>();
+  const placeType = route.params?.placeType ?? 'restaurant';
   const { setFilters } = useFilters();
 
   const [step, setStep] = useState<0 | 1>(0);
@@ -50,7 +53,7 @@ export function KashruyotFilterScreen() {
   const handleShowResults = () => {
     setFilters({
       ...emptyFilters,
-      placeType: 'restaurant',
+      placeType,
       category: selectedCategory === '__unset__' ? null : selectedCategory,
       kosherType: selectedKosher === '__unset__' ? null : selectedKosher,
     });
