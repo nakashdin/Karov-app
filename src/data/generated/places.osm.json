@@ -14,7 +14,8 @@
     "openingHours": "06:30-22:00; Fr 06:30-16:00; Sa 09:00-23:00",
     "tags": [
       "coffee_shop"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-538830365",
@@ -31,7 +32,8 @@
     "openingHours": "Su-Th 08:00-21:00; Fr 08:00-14:30; Sa unknown \"please inquire\"",
     "tags": [
       "coffee_shop"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-540970749",
@@ -148,7 +150,8 @@
     "openingHours": "Mo-Su 08:00-24:00; Fr 08:00-15:00; Sa 18:00-24:00",
     "tags": [
       "italian"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-1299991556",
@@ -163,7 +166,8 @@
     "source": "osm",
     "tags": [
       "burger"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-1405933026",
@@ -178,7 +182,8 @@
     "source": "osm",
     "tags": [
       "coffee_shop"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-1477010459",
@@ -193,7 +198,8 @@
     "source": "osm",
     "tags": [
       "coffee_shop"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-1643352285",
@@ -224,7 +230,8 @@
     "openingHours": "Su-Th 07:30-19:00",
     "tags": [
       "coffee_shop"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-1675753858",
@@ -237,7 +244,8 @@
       "longitude": 34.8191292
     },
     "source": "osm",
-    "phone": "+972542547232"
+    "phone": "+972542547232",
+    "category": "dairy"
   },
   {
     "id": "osm-node-1703978185",
@@ -265,7 +273,8 @@
     "phone": "+97235011915",
     "tags": [
       "pizza"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-1741956261",
@@ -282,7 +291,8 @@
     "openingHours": "Mo-Su 12:00-24:00; Fr off; Sa 19:00-24:00",
     "tags": [
       "burger"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-1741956267",
@@ -326,7 +336,8 @@
     "phone": "+972-(0)57-9442741",
     "tags": [
       "american"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-1763010099",
@@ -342,7 +353,8 @@
     "phone": "+972-8-6306666",
     "tags": [
       "burger"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-1763014171",
@@ -358,7 +370,8 @@
     "phone": "+972-(0)8-6368989",
     "tags": [
       "steak_house"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-1763017985",
@@ -374,7 +387,8 @@
     "phone": "+972-(0)8-6338333",
     "tags": [
       "Meat"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-1763020169",
@@ -390,7 +404,8 @@
     "phone": "+972-(0)8-6362294",
     "tags": [
       "Meat"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-1763027555",
@@ -406,7 +421,8 @@
     "phone": "+972-(0)8-6339933",
     "tags": [
       "Meat"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-1763031739",
@@ -438,7 +454,8 @@
     "phone": "+972-57-9442988",
     "tags": [
       "steak_house"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-1763972919",
@@ -455,7 +472,8 @@
     "tags": [
       "coffee_shop",
       "dairy"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-1763987699",
@@ -471,7 +489,8 @@
     "phone": "+972-8-6306687",
     "tags": [
       "japanese"
-    ]
+    ],
+    "category": "parve"
   },
   {
     "id": "osm-node-1764005156",
@@ -503,7 +522,8 @@
     "phone": "+972-8-6383333",
     "tags": [
       "french"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-1820017020",
@@ -562,7 +582,8 @@
     "openingHours": "Mo-Th 00:00-00:30,11:30-24:00; Fr 11:30-17:00; Sa 19:00-24:00; Su 00:00-01:00,11:30-24:00",
     "tags": [
       "burger"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-2078969784",
@@ -574,7 +595,8 @@
       "latitude": 32.0671,
       "longitude": 34.786167
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "meat"
   },
   {
     "id": "osm-node-2078990448",
@@ -589,7 +611,8 @@
     "source": "osm",
     "tags": [
       "american"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-2078991165",
@@ -601,7 +624,8 @@
       "latitude": 32.9808696,
       "longitude": 35.5561903
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "dairy"
   },
   {
     "id": "osm-node-2078991174",
@@ -613,7 +637,8 @@
       "latitude": 32.9807725,
       "longitude": 35.5557554
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "meat"
   },
   {
     "id": "osm-node-2078991183",
@@ -628,7 +653,8 @@
     "source": "osm",
     "tags": [
       "pizza"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-2079006787",
@@ -658,7 +684,8 @@
     "phone": "03-730-28-78;1700-709-700",
     "tags": [
       "pizza"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-2124580743",
@@ -670,7 +697,8 @@
       "latitude": 32.0298291,
       "longitude": 34.7975675
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "meat"
   },
   {
     "id": "osm-node-2131481387",
@@ -702,7 +730,8 @@
     "source": "osm",
     "tags": [
       "coffee_shop"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-2144611975",
@@ -717,7 +746,8 @@
     "source": "osm",
     "tags": [
       "burger"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-2144612020",
@@ -732,7 +762,8 @@
     "source": "osm",
     "tags": [
       "japanese"
-    ]
+    ],
+    "category": "parve"
   },
   {
     "id": "osm-node-2165350037",
@@ -747,7 +778,8 @@
     "source": "osm",
     "tags": [
       "burger"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-2318762527",
@@ -764,7 +796,8 @@
     "openingHours": "Mo-Th, Su 11:00-22:30; Fr 11:00-16:00; Sa 20:20-22:30",
     "tags": [
       "pizza"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-2318762536",
@@ -781,7 +814,8 @@
     "openingHours": "Mo-Th, Su 11:00-23:00; Fr 11:00-14:30; Sa 18:00-23:00",
     "tags": [
       "sushi"
-    ]
+    ],
+    "category": "parve"
   },
   {
     "id": "osm-node-2322594231",
@@ -798,7 +832,8 @@
     "openingHours": "Su-Th 07:00-22:00; Fr 07:00-14:30; Sa (sunset+01:00)-03:00",
     "tags": [
       "coffee_shop"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-2366076834",
@@ -813,7 +848,8 @@
     "source": "osm",
     "tags": [
       "pizza"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-2394477277",
@@ -828,7 +864,8 @@
     "source": "osm",
     "tags": [
       "pizza"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-2577660818",
@@ -843,7 +880,8 @@
     "source": "osm",
     "tags": [
       "burger"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-2701869274",
@@ -872,7 +910,8 @@
     "phone": "+972747013545",
     "tags": [
       "coffee_shop"
-    ]
+    ],
+    "category": "parve"
   },
   {
     "id": "osm-node-2837962901",
@@ -887,7 +926,8 @@
     "source": "osm",
     "tags": [
       "hawaiian"
-    ]
+    ],
+    "category": "parve"
   },
   {
     "id": "osm-node-2862959843",
@@ -904,7 +944,8 @@
     "openingHours": "Su-Sa 19:00-05:00",
     "tags": [
       "burger"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-3220186203",
@@ -921,7 +962,8 @@
     "openingHours": "Su-Th 06:00-23:00; Fr 06:00-14:30; Sa unknown \"please inquire\"",
     "tags": [
       "coffee_shop"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-3260813346",
@@ -937,7 +979,8 @@
     "openingHours": "Su-We 10:00-21:00; Fr 10:00-15:00",
     "tags": [
       "burger"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-3731754512",
@@ -954,7 +997,8 @@
     "openingHours": "Su-Th 07:00-23:00; Fr 07:00-15:00",
     "tags": [
       "coffee_shop"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-3988589057",
@@ -969,7 +1013,8 @@
     "source": "osm",
     "tags": [
       "coffee_shop"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-4161854779",
@@ -981,7 +1026,8 @@
       "latitude": 32.0828989,
       "longitude": 34.7918571
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "dairy"
   },
   {
     "id": "osm-node-4275386775",
@@ -993,7 +1039,8 @@
       "latitude": 32.0080468,
       "longitude": 34.7918513
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "dairy"
   },
   {
     "id": "osm-node-4352401257",
@@ -1006,7 +1053,8 @@
       "longitude": 34.8827486
     },
     "source": "osm",
-    "openingHours": "Su-Th 06:30-21:00; Fr 06:30-(Sunset-02:00)"
+    "openingHours": "Su-Th 06:30-21:00; Fr 06:30-(Sunset-02:00)",
+    "category": "dairy"
   },
   {
     "id": "osm-node-4406510254",
@@ -1021,7 +1069,8 @@
     "source": "osm",
     "tags": [
       "coffee_shop"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-4421769054",
@@ -1035,7 +1084,8 @@
     },
     "source": "osm",
     "phone": "+972-723951758â€‹",
-    "openingHours": "Su-Th 12:30-22:00"
+    "openingHours": "Su-Th 12:30-22:00",
+    "category": "meat"
   },
   {
     "id": "osm-node-4460369993",
@@ -1103,7 +1153,8 @@
     "openingHours": "open; PH unknown",
     "tags": [
       "coffee_shop"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-4612610692",
@@ -1118,7 +1169,8 @@
     "source": "osm",
     "tags": [
       "burger"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-4818808608",
@@ -1130,7 +1182,8 @@
       "latitude": 32.9134777,
       "longitude": 35.282161
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "dairy"
   },
   {
     "id": "osm-node-4828911835",
@@ -1208,7 +1261,8 @@
     "source": "osm",
     "tags": [
       "shawarma"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-5128936020",
@@ -1225,7 +1279,8 @@
     "openingHours": "Su-Th 11:00-01:00, Sa 20:30-01:00",
     "tags": [
       "pizza"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-5128943561",
@@ -1243,7 +1298,8 @@
     "tags": [
       "coffee_shop",
       "sandwich"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-5137057777",
@@ -1303,7 +1359,8 @@
     "phone": "+972 77 403 0129",
     "tags": [
       "burger"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-5143582538",
@@ -1317,7 +1374,8 @@
     },
     "source": "osm",
     "phone": "+972 4 655 2555",
-    "openingHours": "Su-Th 12:00+"
+    "openingHours": "Su-Th 12:00+",
+    "category": "meat"
   },
   {
     "id": "osm-node-5143595379",
@@ -1332,7 +1390,8 @@
     "source": "osm",
     "tags": [
       "italian"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-5170599211",
@@ -1360,7 +1419,8 @@
       "longitude": 35.5690521
     },
     "source": "osm",
-    "phone": "+972 4 821 20 42"
+    "phone": "+972 4 821 20 42",
+    "category": "meat"
   },
   {
     "id": "osm-node-5181482358",
@@ -1377,7 +1437,8 @@
     "openingHours": "Su-Th 11:00-23:00; Fr, Sa unknown \"please inquire\"",
     "tags": [
       "meat"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-5186610427",
@@ -1391,7 +1452,8 @@
     },
     "source": "osm",
     "phone": "+972 4 638 5533",
-    "openingHours": "Su-Th 07:00-21:30; Fr unknown \"please inquire\""
+    "openingHours": "Su-Th 07:00-21:30; Fr unknown \"please inquire\"",
+    "category": "dairy"
   },
   {
     "id": "osm-node-5202278925",
@@ -1406,7 +1468,8 @@
     "source": "osm",
     "tags": [
       "coffee_shop"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-5221319346",
@@ -1423,7 +1486,8 @@
     "openingHours": "Su-Th 11:00-00:00, Fr 11:00-15:00, Sa unknown \"please inquire\"",
     "tags": [
       "burger"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-5221386692",
@@ -1440,7 +1504,8 @@
     "openingHours": "Su-Th 06:30-22:00; Fr 06:30-14:00",
     "tags": [
       "coffee_shop"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-5230853731",
@@ -1454,7 +1519,8 @@
     },
     "source": "osm",
     "phone": "+972 4 694 9287",
-    "openingHours": "Su-Th 09:00-19:15; Fr 08:00-15:15"
+    "openingHours": "Su-Th 09:00-19:15; Fr 08:00-15:15",
+    "category": "parve"
   },
   {
     "id": "osm-node-5245552326",
@@ -1484,7 +1550,8 @@
     "openingHours": "Su-Th 11:00-00:00 Fr 11:00-14:30 Sa 21:00-00:00",
     "tags": [
       "pizza"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-5298217097",
@@ -1523,7 +1590,8 @@
     "openingHours": "10:00-23:00; Fr 10:00-15:00; Sa 20:00-23:00",
     "tags": [
       "pizza"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-5299442042",
@@ -1540,7 +1608,8 @@
     "openingHours": "09:00-23:00; Fr 09:00-15:00; Sa 20:00-23:00",
     "tags": [
       "pizza"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-5299594181",
@@ -1594,7 +1663,8 @@
       "longitude": 35.555757
     },
     "source": "osm",
-    "phone": "+972 4 688 5777"
+    "phone": "+972 4 688 5777",
+    "category": "meat"
   },
   {
     "id": "osm-node-5392535276",
@@ -1620,7 +1690,8 @@
       "longitude": 35.5691085
     },
     "source": "osm",
-    "phone": "+972 77 201 6918"
+    "phone": "+972 77 201 6918",
+    "category": "meat"
   },
   {
     "id": "osm-node-5498992177",
@@ -1635,7 +1706,8 @@
     "source": "osm",
     "tags": [
       "coffee_shop"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-5613754222",
@@ -1682,7 +1754,8 @@
     "openingHours": "Su-Fr 08:00-21:00; Sa unknown \"please inquire\"",
     "tags": [
       "coffee_shop"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-5711545461",
@@ -1694,7 +1767,8 @@
       "latitude": 32.9681896,
       "longitude": 35.5484588
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "meat"
   },
   {
     "id": "osm-node-5728427295",
@@ -1711,7 +1785,8 @@
     "tags": [
       "japanese",
       "sushi"
-    ]
+    ],
+    "category": "parve"
   },
   {
     "id": "osm-node-5728458069",
@@ -1727,7 +1802,8 @@
     "openingHours": "Su 08:30-21:00; Mo-Th 09:00-21:00; Fr 08:30-15:30",
     "tags": [
       "burger"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-5746423221",
@@ -1739,7 +1815,8 @@
       "latitude": 31.2706384,
       "longitude": 34.7977633
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "meat"
   },
   {
     "id": "osm-node-5761235277",
@@ -1753,7 +1830,8 @@
     },
     "source": "osm",
     "phone": "+972 8 855 5428",
-    "openingHours": "Su-Th 11:00-23:00; Sa 19:00-23:00"
+    "openingHours": "Su-Th 11:00-23:00; Sa 19:00-23:00",
+    "category": "dairy"
   },
   {
     "id": "osm-node-5853761588",
@@ -1765,7 +1843,8 @@
       "latitude": 33.2241806,
       "longitude": 35.6148844
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "meat"
   },
   {
     "id": "osm-node-5890281794",
@@ -1824,7 +1903,8 @@
       "cake",
       "coffee_shop",
       "french"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-5920233936",
@@ -1857,7 +1937,8 @@
     "openingHours": "Su 09:00-21:00; Mo-We 10:00-21:00; Th 09:00-22:00; Fr 11:00-15:00",
     "tags": [
       "burger"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-5995053444",
@@ -1882,7 +1963,8 @@
       "longitude": 34.8321487
     },
     "source": "osm",
-    "phone": "+972 50 600 9797"
+    "phone": "+972 50 600 9797",
+    "category": "meat"
   },
   {
     "id": "osm-node-6014902517",
@@ -1910,7 +1992,8 @@
       "latitude": 32.9698413,
       "longitude": 35.5499571
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "meat"
   },
   {
     "id": "osm-node-6014908134",
@@ -1922,7 +2005,8 @@
       "latitude": 32.9701485,
       "longitude": 35.5498406
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "meat"
   },
   {
     "id": "osm-node-6015034147",
@@ -1935,7 +2019,8 @@
       "longitude": 35.5504718
     },
     "source": "osm",
-    "openingHours": "Su-Th 11:00-22:00; Fr 11:00-15:00; Sa (Sunset+01:00)-22:00"
+    "openingHours": "Su-Th 11:00-22:00; Fr 11:00-15:00; Sa (Sunset+01:00)-22:00",
+    "category": "meat"
   },
   {
     "id": "osm-node-6023052884",
@@ -1952,7 +2037,8 @@
     "openingHours": "Su-Th 08:00-23:00; Sa 08:00-16:00",
     "tags": [
       "regional"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-6023053936",
@@ -1988,7 +2074,8 @@
     "tags": [
       "coffee",
       "breakfast"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-6195004555",
@@ -2005,7 +2092,8 @@
     "tags": [
       "cake",
       "coffee_shop"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-6195852402",
@@ -2041,7 +2129,8 @@
     "tags": [
       "coffee",
       "breakfast"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-6239725890",
@@ -2057,7 +2146,8 @@
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-14:30; Sa 18:10-23:00; PH unknown",
     "tags": [
       "pizza"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-6354069186",
@@ -2100,7 +2190,8 @@
     "source": "osm",
     "tags": [
       "burger"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-6469411088",
@@ -2117,7 +2208,8 @@
     "openingHours": "Su-Th 08:00-22:00; Fr 08:00-14:00; Sa 20:15-23:00",
     "tags": [
       "coffee_shop"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-6473212377",
@@ -2129,7 +2221,8 @@
       "latitude": 32.0702993,
       "longitude": 34.7847786
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "meat"
   },
   {
     "id": "osm-node-6512849574",
@@ -2144,7 +2237,8 @@
     "source": "osm",
     "tags": [
       "cafe"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-6526904599",
@@ -2160,7 +2254,8 @@
     "openingHours": "Su-Th 11:00-22:40, Fr 11:00-14:00, Sa 19:00-10:40",
     "tags": [
       "sushi"
-    ]
+    ],
+    "category": "parve"
   },
   {
     "id": "osm-node-6531709739",
@@ -2184,7 +2279,8 @@
       "latitude": 32.9685487,
       "longitude": 35.54863
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "parve"
   },
   {
     "id": "osm-node-6547411049",
@@ -2201,7 +2297,8 @@
     "openingHours": "Su-Th 07:00-22:30; Fr 07:00-14:30; Sa (sunset+01:30)-22:30",
     "tags": [
       "coffee_shop"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-6570267096",
@@ -2217,7 +2314,8 @@
     "openingHours": "Su-Th 07:00-22:00; Fr 07:00-15:30; Sa off",
     "tags": [
       "noodle"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-6653239687",
@@ -2232,7 +2330,8 @@
     "source": "osm",
     "tags": [
       "georgian"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-6754297391",
@@ -2247,7 +2346,8 @@
     "source": "osm",
     "tags": [
       "pizza"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-6754328385",
@@ -2262,7 +2362,8 @@
     "source": "osm",
     "tags": [
       "burger"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-6854597174",
@@ -2277,7 +2378,8 @@
     "source": "osm",
     "tags": [
       "burger"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-7056388962",
@@ -2292,7 +2394,8 @@
     "source": "osm",
     "tags": [
       "burger"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-7064678724",
@@ -2322,7 +2425,8 @@
     "openingHours": "Su-Th 11:00-00:00",
     "tags": [
       "pizza"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-7551711368",
@@ -2337,7 +2441,8 @@
     "source": "osm",
     "tags": [
       "kebab"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-7620478217",
@@ -2353,7 +2458,8 @@
     "phone": "+972 779610021",
     "tags": [
       "grill"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-7832129531",
@@ -2371,7 +2477,8 @@
     "tags": [
       "local",
       "regional"
-    ]
+    ],
+    "category": "parve"
   },
   {
     "id": "osm-node-7899808751",
@@ -2398,7 +2505,8 @@
     "source": "osm",
     "tags": [
       "burger"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-8142764996",
@@ -2422,7 +2530,8 @@
       "latitude": 32.1669051,
       "longitude": 34.8129412
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "dairy"
   },
   {
     "id": "osm-node-8700929117",
@@ -2436,7 +2545,8 @@
     },
     "source": "osm",
     "phone": "+972 3 605 0061",
-    "openingHours": "Su-Th 11:00+; Sa (Sunset+01:00)+"
+    "openingHours": "Su-Th 11:00+; Sa (Sunset+01:00)+",
+    "category": "dairy"
   },
   {
     "id": "osm-node-9029057721",
@@ -2451,7 +2561,8 @@
     "source": "osm",
     "tags": [
       "burger"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-9190590717",
@@ -2467,7 +2578,8 @@
     "tags": [
       "asian",
       "japanese"
-    ]
+    ],
+    "category": "parve"
   },
   {
     "id": "osm-node-9570930731",
@@ -2483,7 +2595,8 @@
     "phone": "+972 9 765 3110",
     "tags": [
       "burger"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-9724648574",
@@ -2496,7 +2609,8 @@
       "longitude": 34.8094264
     },
     "source": "osm",
-    "phone": "+972 08 947 4293"
+    "phone": "+972 08 947 4293",
+    "category": "dairy"
   },
   {
     "id": "osm-node-9874070518",
@@ -2533,7 +2647,8 @@
       "noodle",
       "sushi",
       "thai"
-    ]
+    ],
+    "category": "parve"
   },
   {
     "id": "osm-node-9933397084",
@@ -2608,7 +2723,8 @@
     },
     "source": "osm",
     "phone": "072-3360999",
-    "openingHours": "Su-Th 08:00-00:00, Fr 08:00-13:00, Sa 19:30-00:00"
+    "openingHours": "Su-Th 08:00-00:00, Fr 08:00-13:00, Sa 19:30-00:00",
+    "category": "dairy"
   },
   {
     "id": "osm-node-10279205409",
@@ -2620,7 +2736,8 @@
       "latitude": 32.0619564,
       "longitude": 34.7739903
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "meat"
   },
   {
     "id": "osm-node-10279205509",
@@ -2632,7 +2749,8 @@
       "latitude": 32.0619796,
       "longitude": 34.7740876
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "meat"
   },
   {
     "id": "osm-node-10299385509",
@@ -2680,7 +2798,8 @@
     "source": "osm",
     "tags": [
       "poke"
-    ]
+    ],
+    "category": "parve"
   },
   {
     "id": "osm-node-10682695046",
@@ -2740,7 +2859,8 @@
       "latitude": 32.0773689,
       "longitude": 34.7889942
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "meat"
   },
   {
     "id": "osm-node-10812430078",
@@ -2772,7 +2892,8 @@
     "source": "osm",
     "tags": [
       "asian"
-    ]
+    ],
+    "category": "parve"
   },
   {
     "id": "osm-node-10814448811",
@@ -2816,7 +2937,8 @@
     "phone": "+97236206209",
     "tags": [
       "salad"
-    ]
+    ],
+    "category": "parve"
   },
   {
     "id": "osm-node-10814448820",
@@ -2840,7 +2962,8 @@
       "latitude": 32.0711539,
       "longitude": 34.7878682
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "meat"
   },
   {
     "id": "osm-node-10829562649",
@@ -2889,7 +3012,8 @@
     "openingHours": "Mo-Th,Su 11:00-22:00; Fr 11:00-15:00; Sa sunset-24:00",
     "tags": [
       "burger"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-10968175320",
@@ -2918,7 +3042,8 @@
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-14:00; Sa (sunset+00:30)-23:00",
     "tags": [
       "pizza"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-10978563605",
@@ -2953,7 +3078,8 @@
     "tags": [
       "regional",
       "middle_eastern"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-11015408972",
@@ -3021,7 +3147,8 @@
     "openingHours": "Su-Th 06:30-21:00; Fr 06:30-15:00",
     "tags": [
       "coffee_shop"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-11169886012",
@@ -3038,7 +3165,8 @@
     "openingHours": "Su-Th 06:30-22:00; Fr 06:30-16:30",
     "tags": [
       "coffee_shop"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-11199665737",
@@ -3055,7 +3183,8 @@
     "tags": [
       "salad",
       "regional"
-    ]
+    ],
+    "category": "parve"
   },
   {
     "id": "osm-node-11226651758",
@@ -3067,7 +3196,8 @@
       "latitude": 32.0854847,
       "longitude": 34.8107971
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "meat"
   },
   {
     "id": "osm-node-11226656316",
@@ -3079,7 +3209,8 @@
       "latitude": 32.0854529,
       "longitude": 34.8108509
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "meat"
   },
   {
     "id": "osm-node-11226657264",
@@ -3123,7 +3254,8 @@
     "source": "osm",
     "tags": [
       "noodle"
-    ]
+    ],
+    "category": "parve"
   },
   {
     "id": "osm-node-11330876274",
@@ -3138,7 +3270,8 @@
     "source": "osm",
     "tags": [
       "burger"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-11380388507",
@@ -3150,7 +3283,8 @@
       "latitude": 32.0665691,
       "longitude": 34.7888184
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "meat"
   },
   {
     "id": "osm-node-11395473947",
@@ -3192,7 +3326,8 @@
     "source": "osm",
     "tags": [
       "burger"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-11414872844",
@@ -3204,7 +3339,8 @@
       "latitude": 31.8946046,
       "longitude": 34.7896236
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "dairy"
   },
   {
     "id": "osm-node-11414907376",
@@ -3234,7 +3370,8 @@
     "source": "osm",
     "tags": [
       "kebab"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-11522749847",
@@ -3262,7 +3399,8 @@
       "longitude": 35.0550493
     },
     "source": "osm",
-    "openingHours": "Su-Th 08:30-22:30; Fr 08:00-15:00"
+    "openingHours": "Su-Th 08:30-22:30; Fr 08:00-15:00",
+    "category": "dairy"
   },
   {
     "id": "osm-node-11607487058",
@@ -3279,7 +3417,8 @@
       "cafe",
       "sushi",
       "burger"
-    ]
+    ],
+    "category": "parve"
   },
   {
     "id": "osm-node-11681572591",
@@ -3333,7 +3472,8 @@
     "source": "osm",
     "tags": [
       "pizza"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-11749994120",
@@ -3346,7 +3486,8 @@
       "longitude": 34.7863005
     },
     "source": "osm",
-    "phone": "+97236333721"
+    "phone": "+97236333721",
+    "category": "meat"
   },
   {
     "id": "osm-node-11793136463",
@@ -3361,7 +3502,8 @@
     "source": "osm",
     "tags": [
       "pizza"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-11802320072",
@@ -3378,7 +3520,8 @@
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-13:00; Sa (sunset+00:30)-00:59",
     "tags": [
       "pizza"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-11802322493",
@@ -3390,7 +3533,8 @@
       "latitude": 32.109676,
       "longitude": 34.8381858
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "dairy"
   },
   {
     "id": "osm-node-11818013490",
@@ -3407,7 +3551,8 @@
     "tags": [
       "pizza",
       "pasta"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-11843060618",
@@ -3424,7 +3569,8 @@
     "tags": [
       "barbecue",
       "mediterranean"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-11868727704",
@@ -3454,7 +3600,8 @@
     "source": "osm",
     "tags": [
       "pizza"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-11922661782",
@@ -3501,7 +3648,8 @@
     "phone": "089232203",
     "tags": [
       "pizza"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-11987921470",
@@ -3514,7 +3662,8 @@
       "longitude": 34.6399188
     },
     "source": "osm",
-    "phone": "086981212"
+    "phone": "086981212",
+    "category": "dairy"
   },
   {
     "id": "osm-node-12064685793",
@@ -3530,7 +3679,8 @@
     "phone": "+972 3 740 9797",
     "tags": [
       "regional"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-12078593856",
@@ -3572,7 +3722,8 @@
     "openingHours": "Su-Th 08:30-22:00; Fr 08:30-14:00; Sa 18:30-23:30",
     "tags": [
       "coffee_shop"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-12106426945",
@@ -3589,7 +3740,8 @@
     "openingHours": "Su-Th 10:00-22:00; Fr 10:00-15:00",
     "tags": [
       "turkish"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-12114477414",
@@ -3658,7 +3810,8 @@
     "openingHours": "Su-Th 11:00-22:30; Fr 11:00-14:00; Sa 20:15-23:00",
     "tags": [
       "pizza"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-12147771610",
@@ -3675,7 +3828,8 @@
     "openingHours": "SU-Th 08:30-16:00; Fr 08:00-13:00",
     "tags": [
       "coffee_shop"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-12147904324",
@@ -3692,7 +3846,8 @@
     "openingHours": "Su-We 11:00-01:00; Th 11:00-04:00",
     "tags": [
       "pizza"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-12159945050",
@@ -3722,7 +3877,8 @@
     "source": "osm",
     "tags": [
       "regional"
-    ]
+    ],
+    "category": "parve"
   },
   {
     "id": "osm-node-12187698113",
@@ -3764,7 +3920,8 @@
     "openingHours": "24/7",
     "tags": [
       "coffee_shop"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-12232451233",
@@ -3835,7 +3992,8 @@
     "phone": "+972 35743333",
     "tags": [
       "burger"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-12505424898",
@@ -3847,7 +4005,8 @@
       "latitude": 31.967546,
       "longitude": 34.8171501
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "dairy"
   },
   {
     "id": "osm-node-12520425651",
@@ -3892,7 +4051,8 @@
     "openingHours": "Su-Th 06:00-18:00; Fr 07:00-13:00",
     "tags": [
       "coffee_shop"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-12547329542",
@@ -3907,7 +4067,8 @@
     "source": "osm",
     "tags": [
       "pizza"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-12547329544",
@@ -3922,7 +4083,8 @@
     "source": "osm",
     "tags": [
       "pizza"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-12557310999",
@@ -3937,7 +4099,8 @@
     "source": "osm",
     "tags": [
       "pizza"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-12557322215",
@@ -3954,7 +4117,8 @@
       "frozen_yogurt",
       "ice_cream",
       "juice"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-12557322221",
@@ -3966,7 +4130,8 @@
       "latitude": 31.9992228,
       "longitude": 34.9466929
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "dairy"
   },
   {
     "id": "osm-node-12557322224",
@@ -3981,7 +4146,8 @@
     "source": "osm",
     "tags": [
       "burger"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-12578960888",
@@ -3993,7 +4159,8 @@
       "latitude": 32.0854553,
       "longitude": 34.8107501
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "parve"
   },
   {
     "id": "osm-node-12578972524",
@@ -4005,7 +4172,8 @@
       "latitude": 32.0938517,
       "longitude": 34.8235619
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "dairy"
   },
   {
     "id": "osm-node-12578978007",
@@ -4032,7 +4200,8 @@
     "source": "osm",
     "tags": [
       "shawarma"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-12588050745",
@@ -4107,7 +4276,8 @@
       "longitude": 34.7940983
     },
     "source": "osm",
-    "openingHours": "Su-Th 11:00-17:00"
+    "openingHours": "Su-Th 11:00-17:00",
+    "category": "meat"
   },
   {
     "id": "osm-node-12588119989",
@@ -4169,7 +4339,8 @@
     "openingHours": "Su-Th 08:30-21:30; Fr 08:30-15:00; Sa 19:00-23:00",
     "tags": [
       "juice"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-12596111450",
@@ -4214,7 +4385,8 @@
     "phone": "+972 25838712",
     "tags": [
       "pizza"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-12639636342",
@@ -4242,7 +4414,8 @@
       "latitude": 32.0621799,
       "longitude": 34.7722286
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "meat"
   },
   {
     "id": "osm-node-12668725563",
@@ -4254,7 +4427,8 @@
       "latitude": 32.0620069,
       "longitude": 34.7723116
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "meat"
   },
   {
     "id": "osm-node-12673043882",
@@ -4284,7 +4458,8 @@
     "source": "osm",
     "tags": [
       "pizza"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-12695181881",
@@ -4298,7 +4473,8 @@
     },
     "source": "osm",
     "phone": "+972 77 938 6244",
-    "openingHours": "Su-Th 11:30-22:00; Fr 11:30-15:00"
+    "openingHours": "Su-Th 11:30-22:00; Fr 11:30-15:00",
+    "category": "dairy"
   },
   {
     "id": "osm-node-12695193131",
@@ -4330,7 +4506,8 @@
     "source": "osm",
     "tags": [
       "burger"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-12737103897",
@@ -4359,7 +4536,8 @@
     "source": "osm",
     "tags": [
       "asian"
-    ]
+    ],
+    "category": "parve"
   },
   {
     "id": "osm-node-12809538406",
@@ -4375,7 +4553,8 @@
     "openingHours": "Su-Th 07:00-23:00; Fr 07:00+",
     "tags": [
       "breakfast"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-12943579300",
@@ -4435,7 +4614,8 @@
       "pasta",
       "salad",
       "bagel"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-13057613011",
@@ -4463,7 +4643,8 @@
     "source": "osm",
     "tags": [
       "pizza"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-13137796250",
@@ -4531,7 +4712,8 @@
     "openingHours": "08:30-23:00; Fr 08:00-24:00; Sa 09:00-23:00",
     "tags": [
       "coffee_shop"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-13155351119",
@@ -4549,7 +4731,8 @@
     "tags": [
       "shawarma",
       "kebab"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-13283836813",
@@ -4566,7 +4749,8 @@
     "openingHours": "11:00-23:00; Fr 11:00-15:00; Sa 17:30-23:00",
     "tags": [
       "asian"
-    ]
+    ],
+    "category": "parve"
   },
   {
     "id": "osm-node-13283836814",
@@ -4583,7 +4767,8 @@
     "openingHours": "Mo-We 11:30-23:00; Th-Sa 11:30-00:00; Su 11:30-24:00",
     "tags": [
       "burger"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-13286258733",
@@ -4614,7 +4799,8 @@
     },
     "source": "osm",
     "phone": "+972 3 779 7577",
-    "openingHours": "10:00-23:00; Fr 10:00-15:00; Sa 18:00-23:00"
+    "openingHours": "10:00-23:00; Fr 10:00-15:00; Sa 18:00-23:00",
+    "category": "dairy"
   },
   {
     "id": "osm-node-13323181210",
@@ -4628,7 +4814,8 @@
     },
     "source": "osm",
     "phone": "+972 8 860 0808",
-    "openingHours": "10:00-24:00; Fr 09:00-13:00; Sa off"
+    "openingHours": "10:00-24:00; Fr 09:00-13:00; Sa off",
+    "category": "dairy"
   },
   {
     "id": "osm-node-13324629584",
@@ -4642,7 +4829,8 @@
     },
     "source": "osm",
     "phone": "+972 8 955 5764",
-    "openingHours": "09:00-23:00; Fr 09:00-15:00; Sa 18:00-23:00"
+    "openingHours": "09:00-23:00; Fr 09:00-15:00; Sa 18:00-23:00",
+    "category": "dairy"
   },
   {
     "id": "osm-node-13324629585",
@@ -4656,7 +4844,8 @@
     },
     "source": "osm",
     "phone": "+972 2 674 1544",
-    "openingHours": "09:00-23:00; Fr 09:00-15:00; Sa 18:00-23:00"
+    "openingHours": "09:00-23:00; Fr 09:00-15:00; Sa 18:00-23:00",
+    "category": "dairy"
   },
   {
     "id": "osm-node-13324750185",
@@ -4670,7 +4859,8 @@
     },
     "source": "osm",
     "phone": "+972 3 604 6045",
-    "openingHours": "08:00-01:00; Fr 08:00-15:00; Sa 17:30-01:30"
+    "openingHours": "08:00-01:00; Fr 08:00-15:00; Sa 17:30-01:30",
+    "category": "dairy"
   },
   {
     "id": "osm-node-13324750186",
@@ -4684,7 +4874,8 @@
     },
     "source": "osm",
     "phone": "+972 3 777 5169",
-    "openingHours": "10:00-22:00; Fr 09:00-13:30; Sa 17:30-22:00"
+    "openingHours": "10:00-22:00; Fr 09:00-13:30; Sa 17:30-22:00",
+    "category": "dairy"
   },
   {
     "id": "osm-node-13338979218",
@@ -4696,7 +4887,8 @@
       "latitude": 32.0730799,
       "longitude": 34.7869102
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "dairy"
   },
   {
     "id": "osm-node-13339015829",
@@ -4709,7 +4901,8 @@
       "longitude": 34.7852926
     },
     "source": "osm",
-    "openingHours": "Su-Th 07:00-20:00; Fr 07:00-13:00"
+    "openingHours": "Su-Th 07:00-20:00; Fr 07:00-13:00",
+    "category": "dairy"
   },
   {
     "id": "osm-node-13371581520",
@@ -4746,7 +4939,8 @@
       "pastry",
       "salad",
       "cake"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-13377863599",
@@ -4761,7 +4955,8 @@
     "source": "osm",
     "tags": [
       "kebab"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-13377884604",
@@ -4803,7 +4998,8 @@
       "latitude": 31.8022841,
       "longitude": 35.222409
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "dairy"
   },
   {
     "id": "osm-node-13436566658",
@@ -4818,7 +5014,8 @@
     "source": "osm",
     "tags": [
       "bagel"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-13466794202",
@@ -4844,7 +5041,8 @@
       "longitude": 35.2190802
     },
     "source": "osm",
-    "phone": "+97225430166"
+    "phone": "+97225430166",
+    "category": "dairy"
   },
   {
     "id": "osm-node-13508662102",
@@ -4856,7 +5054,8 @@
       "latitude": 31.8008734,
       "longitude": 35.2276729
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "dairy"
   },
   {
     "id": "osm-node-13508662103",
@@ -4872,7 +5071,8 @@
     "phone": "+972 25327798",
     "tags": [
       "pizza"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-13594087491",
@@ -4916,7 +5116,8 @@
     "tags": [
       "pizza",
       "middle_eastern"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-13722760900",
@@ -4931,7 +5132,8 @@
     "source": "osm",
     "tags": [
       "meat"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-13783714633",
@@ -4979,7 +5181,8 @@
     "openingHours": "Su-Th 11:00-23:30",
     "tags": [
       "shawarma"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-13828231472",
@@ -5024,7 +5227,8 @@
     "openingHours": "Mo-Fr,Su 11:00-23:00",
     "tags": [
       "pizza"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-13903561256",
@@ -5039,7 +5243,8 @@
     "source": "osm",
     "tags": [
       "burger"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-13903561258",
@@ -5055,7 +5260,8 @@
     "phone": "+9721700708508",
     "tags": [
       "pizza"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-13926659016",
@@ -5067,7 +5273,8 @@
       "latitude": 32.0362682,
       "longitude": 34.8652322
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "dairy"
   },
   {
     "id": "osm-way-37771222",
@@ -5095,7 +5302,8 @@
       "latitude": 32.1465287,
       "longitude": 34.8859269
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "dairy"
   },
   {
     "id": "osm-way-873449738",
@@ -5127,7 +5335,8 @@
     "source": "osm",
     "tags": [
       "sushi"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-way-1447248358",

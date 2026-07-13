@@ -17,7 +17,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-538830365",
@@ -37,7 +38,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-540970749",
@@ -178,7 +180,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-1299991556",
@@ -196,7 +199,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-1405933026",
@@ -214,7 +218,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-1477010459",
@@ -232,7 +237,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-1643352285",
@@ -269,7 +275,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-1675753858",
@@ -285,7 +292,8 @@
     "phone": "+972542547232",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-1703978185",
@@ -319,7 +327,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-1741956261",
@@ -339,7 +348,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-1741956267",
@@ -392,7 +402,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-1763010099",
@@ -411,7 +422,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-1763014171",
@@ -430,7 +442,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-1763017985",
@@ -449,7 +462,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-1763020169",
@@ -468,7 +482,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-1763027555",
@@ -487,7 +502,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-1763031739",
@@ -525,7 +541,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-1763972919",
@@ -545,7 +562,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-1763987699",
@@ -564,7 +582,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-1764005156",
@@ -602,7 +621,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-1820017020",
@@ -673,7 +693,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-2078969784",
@@ -688,7 +709,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-2078990448",
@@ -706,7 +728,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-2078991165",
@@ -721,7 +744,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-2078991174",
@@ -736,7 +760,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-2078991183",
@@ -754,7 +779,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-2079006787",
@@ -790,7 +816,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-2124580743",
@@ -805,7 +832,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-2131481387",
@@ -843,7 +871,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-2144611975",
@@ -861,7 +890,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-2144612020",
@@ -879,7 +909,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-2165350037",
@@ -897,7 +928,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-2318762527",
@@ -917,7 +949,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-2318762536",
@@ -937,7 +970,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-2322594231",
@@ -957,7 +991,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-2366076834",
@@ -975,7 +1010,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-2394477277",
@@ -993,7 +1029,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-2577660818",
@@ -1011,7 +1048,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-2701869274",
@@ -1046,7 +1084,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-2837962901",
@@ -1064,7 +1103,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-2862959843",
@@ -1084,7 +1124,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-3220186203",
@@ -1104,7 +1145,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-3260813346",
@@ -1123,7 +1165,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-3731754512",
@@ -1143,7 +1186,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-3988589057",
@@ -1161,7 +1205,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-4161854779",
@@ -1176,7 +1221,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-4275386775",
@@ -1191,7 +1237,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-4352401257",
@@ -1207,7 +1254,8 @@
     "openingHours": "Su-Th 06:30-21:00; Fr 06:30-(Sunset-02:00)",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-4406510254",
@@ -1225,7 +1273,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-4421769054",
@@ -1242,7 +1291,8 @@
     "openingHours": "Su-Th 12:30-22:00",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-4460369993",
@@ -1322,7 +1372,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-4612610692",
@@ -1340,7 +1391,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-4818808608",
@@ -1355,7 +1407,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-4828911835",
@@ -1448,7 +1501,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-5128936020",
@@ -1468,7 +1522,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-5128943561",
@@ -1489,7 +1544,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-5137057777",
@@ -1561,7 +1617,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-5143582538",
@@ -1578,7 +1635,8 @@
     "openingHours": "Su-Th 12:00+",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-5143595379",
@@ -1596,7 +1654,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-5170599211",
@@ -1630,7 +1689,8 @@
     "phone": "+972 4 821 20 42",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-5181482358",
@@ -1650,7 +1710,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-5186610427",
@@ -1667,7 +1728,8 @@
     "openingHours": "Su-Th 07:00-21:30; Fr unknown \"please inquire\"",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-5202278925",
@@ -1685,7 +1747,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-5221319346",
@@ -1705,7 +1768,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-5221386692",
@@ -1725,7 +1789,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-5230853731",
@@ -1742,7 +1807,8 @@
     "openingHours": "Su-Th 09:00-19:15; Fr 08:00-15:15",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-5245552326",
@@ -1778,7 +1844,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-5298217097",
@@ -1823,7 +1890,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-5299442042",
@@ -1843,7 +1911,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-5299594181",
@@ -1909,7 +1978,8 @@
     "phone": "+972 4 688 5777",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-5392535276",
@@ -1941,7 +2011,8 @@
     "phone": "+972 77 201 6918",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-5498992177",
@@ -1959,7 +2030,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-5613754222",
@@ -2015,7 +2087,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-5711545461",
@@ -2030,7 +2103,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-5728427295",
@@ -2050,7 +2124,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-5728458069",
@@ -2069,7 +2144,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-5746423221",
@@ -2084,7 +2160,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-5761235277",
@@ -2101,7 +2178,8 @@
     "openingHours": "Su-Th 11:00-23:00; Sa 19:00-23:00",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-5853761588",
@@ -2116,7 +2194,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-5890281794",
@@ -2187,7 +2266,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-5920233936",
@@ -2226,7 +2306,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-5995053444",
@@ -2257,7 +2338,8 @@
     "phone": "+972 50 600 9797",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-6014902517",
@@ -2291,7 +2373,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-6014908134",
@@ -2306,7 +2389,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-6015034147",
@@ -2322,7 +2406,8 @@
     "openingHours": "Su-Th 11:00-22:00; Fr 11:00-15:00; Sa (Sunset+01:00)-22:00",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-6023052884",
@@ -2342,7 +2427,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-6023053936",
@@ -2384,7 +2470,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-6195004555",
@@ -2404,7 +2491,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-6195852402",
@@ -2446,7 +2534,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-6239725890",
@@ -2465,7 +2554,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-6354069186",
@@ -2517,7 +2607,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-6469411088",
@@ -2537,7 +2628,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-6473212377",
@@ -2552,7 +2644,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-6512849574",
@@ -2570,7 +2663,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-6526904599",
@@ -2589,7 +2683,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-6531709739",
@@ -2619,7 +2714,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-6547411049",
@@ -2639,7 +2735,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-6570267096",
@@ -2658,7 +2755,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-6653239687",
@@ -2676,7 +2774,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-6754297391",
@@ -2694,7 +2793,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-6754328385",
@@ -2712,7 +2812,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-6854597174",
@@ -2730,7 +2831,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-7056388962",
@@ -2748,7 +2850,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-7064678724",
@@ -2784,7 +2887,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-7551711368",
@@ -2802,7 +2906,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-7620478217",
@@ -2821,7 +2926,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-7832129531",
@@ -2842,7 +2948,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-7899808751",
@@ -2875,7 +2982,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-8142764996",
@@ -2905,7 +3013,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-8700929117",
@@ -2922,7 +3031,8 @@
     "openingHours": "Su-Th 11:00+; Sa (Sunset+01:00)+",
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-9029057721",
@@ -2940,7 +3050,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-9190590717",
@@ -2959,7 +3070,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-9570930731",
@@ -2978,7 +3090,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-9724648574",
@@ -2994,7 +3107,8 @@
     "phone": "+972 08 947 4293",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-9874070518",
@@ -3037,7 +3151,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-9933397084",
@@ -3127,7 +3242,8 @@
     "openingHours": "Su-Th 08:00-00:00, Fr 08:00-13:00, Sa 19:30-00:00",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-10279205409",
@@ -3142,7 +3258,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-10279205509",
@@ -3157,7 +3274,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-10299385509",
@@ -3214,7 +3332,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-10682695046",
@@ -3286,7 +3405,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-10812430078",
@@ -3324,7 +3444,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-10814448811",
@@ -3377,7 +3498,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-10814448820",
@@ -3407,7 +3529,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-10829562649",
@@ -3465,7 +3588,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-10968175320",
@@ -3500,7 +3624,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-10978563605",
@@ -3541,7 +3666,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-11015408972",
@@ -3624,7 +3750,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-11169886012",
@@ -3644,7 +3771,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-11199665737",
@@ -3664,7 +3792,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-11226651758",
@@ -3679,7 +3808,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-11226656316",
@@ -3694,7 +3824,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-11226657264",
@@ -3747,7 +3878,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-11330876274",
@@ -3765,7 +3897,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-11380388507",
@@ -3780,7 +3913,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-11395473947",
@@ -3831,7 +3965,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-11414872844",
@@ -3846,7 +3981,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-11414907376",
@@ -3882,7 +4018,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-11522749847",
@@ -3916,7 +4053,8 @@
     "openingHours": "Su-Th 08:30-22:30; Fr 08:00-15:00",
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-11607487058",
@@ -3936,7 +4074,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-11681572591",
@@ -4002,7 +4141,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-11749994120",
@@ -4018,7 +4158,8 @@
     "phone": "+97236333721",
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-11793136463",
@@ -4036,7 +4177,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-11802320072",
@@ -4056,7 +4198,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-11802322493",
@@ -4071,7 +4214,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-11818013490",
@@ -4091,7 +4235,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-11843060618",
@@ -4111,7 +4256,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-11868727704",
@@ -4147,7 +4293,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-11922661782",
@@ -4203,7 +4350,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-11987921470",
@@ -4219,7 +4367,8 @@
     "phone": "086981212",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-12064685793",
@@ -4238,7 +4387,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-12078593856",
@@ -4289,7 +4439,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-12106426945",
@@ -4309,7 +4460,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-12114477414",
@@ -4390,7 +4542,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-12147771610",
@@ -4410,7 +4563,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-12147904324",
@@ -4430,7 +4584,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-12159945050",
@@ -4466,7 +4621,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-12187698113",
@@ -4517,7 +4673,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-12232451233",
@@ -4603,7 +4760,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-12505424898",
@@ -4618,7 +4776,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-12520425651",
@@ -4672,7 +4831,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-12547329542",
@@ -4690,7 +4850,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-12547329544",
@@ -4708,7 +4869,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-12557310999",
@@ -4726,7 +4888,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-12557322215",
@@ -4746,7 +4909,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-12557322221",
@@ -4761,7 +4925,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-12557322224",
@@ -4779,7 +4944,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-12578960888",
@@ -4794,7 +4960,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-12578972524",
@@ -4809,7 +4976,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-12578978007",
@@ -4842,7 +5010,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-12588050745",
@@ -4932,7 +5101,8 @@
     "openingHours": "Su-Th 11:00-17:00",
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-12588119989",
@@ -5006,7 +5176,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-12596111450",
@@ -5060,7 +5231,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-12639636342",
@@ -5094,7 +5266,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-12668725563",
@@ -5109,7 +5282,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-12673043882",
@@ -5145,7 +5319,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-12695181881",
@@ -5162,7 +5337,8 @@
     "openingHours": "Su-Th 11:30-22:00; Fr 11:30-15:00",
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-12695193131",
@@ -5200,7 +5376,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-12737103897",
@@ -5235,7 +5412,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-12809538406",
@@ -5254,7 +5432,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-12943579300",
@@ -5326,7 +5505,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-13057613011",
@@ -5360,7 +5540,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-13137796250",
@@ -5440,7 +5621,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-13155351119",
@@ -5461,7 +5643,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-13283836813",
@@ -5481,7 +5664,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "parve"
   },
   {
     "id": "osm-node-13283836814",
@@ -5501,7 +5685,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-13286258733",
@@ -5538,7 +5723,8 @@
     "openingHours": "10:00-23:00; Fr 10:00-15:00; Sa 18:00-23:00",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-13323181210",
@@ -5555,7 +5741,8 @@
     "openingHours": "10:00-24:00; Fr 09:00-13:00; Sa off",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-13324629584",
@@ -5572,7 +5759,8 @@
     "openingHours": "09:00-23:00; Fr 09:00-15:00; Sa 18:00-23:00",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-13324629585",
@@ -5589,7 +5777,8 @@
     "openingHours": "09:00-23:00; Fr 09:00-15:00; Sa 18:00-23:00",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-13324750185",
@@ -5606,7 +5795,8 @@
     "openingHours": "08:00-01:00; Fr 08:00-15:00; Sa 17:30-01:30",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-13324750186",
@@ -5623,7 +5813,8 @@
     "openingHours": "10:00-22:00; Fr 09:00-13:30; Sa 17:30-22:00",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-13338979218",
@@ -5638,7 +5829,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-13339015829",
@@ -5654,7 +5846,8 @@
     "openingHours": "Su-Th 07:00-20:00; Fr 07:00-13:00",
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-13371581520",
@@ -5697,7 +5890,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-13377863599",
@@ -5715,7 +5909,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-13377884604",
@@ -5766,7 +5961,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-13436566658",
@@ -5784,7 +5980,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-13466794202",
@@ -5816,7 +6013,8 @@
     "phone": "+97225430166",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-13508662102",
@@ -5831,7 +6029,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-13508662103",
@@ -5850,7 +6049,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-13594087491",
@@ -5903,7 +6103,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-13722760900",
@@ -5921,7 +6122,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-13783714633",
@@ -5978,7 +6180,8 @@
     ],
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-13828231472",
@@ -6032,7 +6235,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-13903561256",
@@ -6050,7 +6254,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-13903561258",
@@ -6069,7 +6274,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-13926659016",
@@ -6084,7 +6290,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-way-37771222",
@@ -6118,7 +6325,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "only"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-way-873449738",
@@ -6156,7 +6364,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-way-1447248358",
