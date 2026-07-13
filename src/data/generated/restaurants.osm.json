@@ -13162,5 +13162,1419 @@
     "category": "dairy",
     "certifiedBy": "כשר",
     "source": "manual"
+  },
+  {
+    "id": "9400015",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "אילת",
+    "address": "הסתת 20, מרכז ביג, אילת",
+    "location": {
+      "latitude": 29.5581,
+      "longitude": 34.9482
+    },
+    "locationPrecision": "address",
+    "phone": "08-6318445",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 08:30-20:30; Fr 08:30-14:00; Sa 21:00-22:30",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9400016",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "גדרה",
+    "address": "שד׳ בן גוריון 105, ביג גדרה",
+    "location": {
+      "latitude": 31.812,
+      "longitude": 34.776
+    },
+    "locationPrecision": "address",
+    "phone": "08-6239915",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 07:30-22:00; Fr 07:30-14:30",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9400017",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "קסטינה",
+    "address": "ביג קסטינה, א.ת באר טוביה, צומת קסטינה",
+    "location": {
+      "latitude": 31.728,
+      "longitude": 34.745
+    },
+    "locationPrecision": "address",
+    "phone": "08-8504404",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 06:30-22:15; Fr 06:30-15:00; Sa 20:45-22:15",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9400018",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "באר שבע",
+    "address": "שדרות דוד טוביהו 125, באר שבע",
+    "location": {
+      "latitude": 31.2518,
+      "longitude": 34.7913
+    },
+    "locationPrecision": "address",
+    "phone": "08-6444800",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 08:45-21:00; Fr 08:00-14:00; Sa 18:30-22:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400019",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "דימונה",
+    "address": "פרץ סנטר, דימונה",
+    "location": {
+      "latitude": 31.0677,
+      "longitude": 35.0347
+    },
+    "locationPrecision": "address",
+    "phone": "08-6571447",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 07:00-22:00; Fr 07:00-14:00; Sa 21:00-23:30",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400020",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "כפר עזה",
+    "address": "צומת כפר עזה",
+    "location": {
+      "latitude": 31.491,
+      "longitude": 34.546
+    },
+    "locationPrecision": "address",
+    "phone": "08-6212330",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 08:00-20:00; Fr 08:00-13:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400021",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "אילת",
+    "address": "אנטיב 8, מלכת שבא, אילת",
+    "location": {
+      "latitude": 29.5581,
+      "longitude": 34.9482
+    },
+    "locationPrecision": "address",
+    "phone": "08-6888422",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 07:00-22:00; Fr 07:00-14:00",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9400022",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "נתיבות",
+    "address": "בעלי המלאכה 2, נתיבות",
+    "location": {
+      "latitude": 31.4228,
+      "longitude": 34.5878
+    },
+    "locationPrecision": "address",
+    "phone": "08-9162522",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 07:00-22:00; Fr 07:00-13:00",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9400023",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "אשדוד",
+    "address": "וויצמן פינת בן-גוריון, סטאר סנטר, אשדוד",
+    "location": {
+      "latitude": 31.804,
+      "longitude": 34.6553
+    },
+    "locationPrecision": "address",
+    "phone": "08-8568160",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 05:00-23:00; Fr 05:00-14:00; Sa 20:30-23:59",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400024",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "ערד",
+    "address": "שמיר 11, צים סנטר, ערד",
+    "location": {
+      "latitude": 31.2598,
+      "longitude": 35.2141
+    },
+    "locationPrecision": "address",
+    "phone": "08-6738313",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 07:00-21:00; Fr 07:00-15:00; Sa 20:30-22:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400025",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "אורים",
+    "address": "דור אלון, צומת אורים",
+    "location": {
+      "latitude": 31.35,
+      "longitude": 34.59
+    },
+    "locationPrecision": "address",
+    "phone": "08-6224047",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 08:00-19:30; Fr 08:00-13:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400026",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "אשקלון",
+    "address": "שד׳ בן-גוריון 21, קניון גירון, אשקלון",
+    "location": {
+      "latitude": 31.6688,
+      "longitude": 34.5742
+    },
+    "locationPrecision": "address",
+    "phone": "08-6734142",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 08:00-20:30; Fr 08:00-14:00; Sa 20:30-21:30",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400027",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "גן יבנה",
+    "address": "המגינים 56, גן יבנה",
+    "location": {
+      "latitude": 31.787,
+      "longitude": 34.7045
+    },
+    "locationPrecision": "address",
+    "phone": "08-9230700",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 07:00-22:00; Fr 07:00-14:00",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9400028",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "באר שבע",
+    "address": "קניון הנגב, צומת אלי כהן, באר שבע",
+    "location": {
+      "latitude": 31.2518,
+      "longitude": 34.7913
+    },
+    "locationPrecision": "address",
+    "phone": "08-6650016",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 08:30-20:00; Fr 08:30-13:30",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400029",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "אשדוד",
+    "address": "הגדוד העברי 6, קניון סימול, אשדוד",
+    "location": {
+      "latitude": 31.804,
+      "longitude": 34.6553
+    },
+    "locationPrecision": "address",
+    "phone": "08-6432185",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 08:00-21:00; Fr 08:00-14:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400030",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "קריית גת",
+    "address": "כיכר פז 3, קניון לב העיר, קריית גת",
+    "location": {
+      "latitude": 31.61,
+      "longitude": 34.7641
+    },
+    "locationPrecision": "address",
+    "phone": "08-6814455",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 07:30-21:00; Fr 07:30-13:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400031",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "באר שבע",
+    "address": "התקווה 4, קניון קריית הממשלה, באר שבע",
+    "location": {
+      "latitude": 31.2518,
+      "longitude": 34.7913
+    },
+    "locationPrecision": "address",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 08:00-19:00; Fr 08:00-14:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400032",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "באר שבע",
+    "address": "שד׳ יצחק רגר 57, באר שבע",
+    "location": {
+      "latitude": 31.2518,
+      "longitude": 34.7913
+    },
+    "locationPrecision": "address",
+    "phone": "08-6897095",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 07:30-20:00; Fr 07:30-13:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400033",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "באר שבע",
+    "address": "שדרות ירושלים 4, באר שבע",
+    "location": {
+      "latitude": 31.2518,
+      "longitude": 34.7913
+    },
+    "locationPrecision": "address",
+    "phone": "08-6104002",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 07:00-22:30; Fr 07:00-13:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400034",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "אשקלון",
+    "address": "פאואר סנטר סילבר, אשקלון",
+    "location": {
+      "latitude": 31.6688,
+      "longitude": 34.5742
+    },
+    "locationPrecision": "address",
+    "phone": "08-6751675",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 06:15-21:00; Fr 06:15-14:30",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9400035",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "באר שבע",
+    "address": "בן צבי 4, תחנה מרכזית, באר שבע",
+    "location": {
+      "latitude": 31.2518,
+      "longitude": 34.7913
+    },
+    "locationPrecision": "address",
+    "phone": "08-6861200",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 07:00-19:30; Fr 07:00-12:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400036",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "נהריה",
+    "address": "שד׳ בן צבי 1, קניון סטאר, נהריה",
+    "location": {
+      "latitude": 33.0045,
+      "longitude": 35.0955
+    },
+    "locationPrecision": "address",
+    "phone": "04-6001180",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 09:00-21:30; Fr 09:00-14:30; Sa 21:15-22:45",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9400037",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "מגדל העמק",
+    "address": "דרך העמק 1, ביג מגדל העמק",
+    "location": {
+      "latitude": 32.6795,
+      "longitude": 35.2392
+    },
+    "locationPrecision": "address",
+    "phone": "04-6602911",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 06:30-22:00; Fr 06:30-14:00; Sa 21:00-23:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400038",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "טבריה",
+    "address": "מרכז ביג פוריה, טבריה עילית",
+    "location": {
+      "latitude": 32.7921,
+      "longitude": 35.5312
+    },
+    "locationPrecision": "address",
+    "phone": "04-8555555",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 07:30-22:30; Fr 08:00-13:30; Sa 20:30-22:30",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400039",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "פרדס חנה כרכור",
+    "address": "תדהר 1, מרכז ביג, פרדס חנה",
+    "location": {
+      "latitude": 32.4706,
+      "longitude": 34.9711
+    },
+    "locationPrecision": "address",
+    "phone": "04-6724112",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 07:00-21:00; Fr 07:00-15:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400040",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "בית שאן",
+    "address": "העמל 7, צים סנטר, בית שאן",
+    "location": {
+      "latitude": 32.501,
+      "longitude": 35.5
+    },
+    "locationPrecision": "address",
+    "phone": "04-6077777",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 07:30-21:00; Fr 07:30-14:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400041",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "טבריה",
+    "address": "יהודה הלוי 4, מתחם בית בזלת, טבריה",
+    "location": {
+      "latitude": 32.7921,
+      "longitude": 35.5312
+    },
+    "locationPrecision": "address",
+    "phone": "04-8555555",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 07:00-22:00; Fr 07:00-13:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400042",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "מעלות-תרשיחא",
+    "address": "שלמה שרירא 12, מרכז צים, מעלות",
+    "location": {
+      "latitude": 33.0137,
+      "longitude": 35.2687
+    },
+    "locationPrecision": "address",
+    "phone": "04-6265808",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 08:00-20:30; Fr 08:00-13:30",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400043",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "אור עקיבא",
+    "address": "השיקמים 8, נוף ים סנטר, אור עקיבא",
+    "location": {
+      "latitude": 32.504,
+      "longitude": 34.9156
+    },
+    "locationPrecision": "address",
+    "phone": "04-6033100",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 07:00-21:00; Fr 07:00-14:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400044",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "עפולה",
+    "address": "יהושע חנקין 49, עפולה",
+    "location": {
+      "latitude": 32.6076,
+      "longitude": 35.2899
+    },
+    "locationPrecision": "address",
+    "phone": "04-6896050",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 07:00-22:00; Fr 07:00-14:00; Sa 20:45-23:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400045",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "טירת כרמל",
+    "address": "הרצל 82, טירת כרמל",
+    "location": {
+      "latitude": 32.7606,
+      "longitude": 35.0073
+    },
+    "locationPrecision": "address",
+    "phone": "04-6167546",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 06:30-22:00; Fr 06:30-15:00; Sa 21:00-23:30",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400046",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "אור עקיבא",
+    "address": "הנשיא 1, קניון אורות, אור עקיבא",
+    "location": {
+      "latitude": 32.504,
+      "longitude": 34.9156
+    },
+    "locationPrecision": "address",
+    "phone": "04-6261717",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 07:00-21:00; Fr 07:00-14:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400047",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "קריית אתא",
+    "address": "העצמאות 37, קריית אתא",
+    "location": {
+      "latitude": 32.8056,
+      "longitude": 35.1048
+    },
+    "locationPrecision": "address",
+    "phone": "04-6215016",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 07:30-21:30; Fr 07:30-14:00",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9400048",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "קריית ים",
+    "address": "שדרות ירושלים 99, קריית ים",
+    "location": {
+      "latitude": 32.8497,
+      "longitude": 35.0693
+    },
+    "locationPrecision": "address",
+    "phone": "04-6122862",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 07:30-22:30; Fr 07:30-15:00",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9400049",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "חדרה",
+    "address": "יהודי פקיעין 1, שערי חדרה",
+    "location": {
+      "latitude": 32.434,
+      "longitude": 34.9187
+    },
+    "locationPrecision": "address",
+    "phone": "04-6221333",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 07:00-22:00; Fr 07:00-15:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400050",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "רמת גן",
+    "address": "ביה\"ח לילדים ספרא, תל השומר",
+    "location": {
+      "latitude": 32.0682,
+      "longitude": 34.8243
+    },
+    "locationPrecision": "address",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 06:30-20:00; Fr 06:30-14:00",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9400051",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "רמת גן",
+    "address": "אבא הלל סילבר 301, קניון איילון, רמת גן",
+    "location": {
+      "latitude": 32.0682,
+      "longitude": 34.8243
+    },
+    "locationPrecision": "address",
+    "phone": "052-2096195",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 08:00-22:00; Fr 08:00-15:30; Sa 20:00-23:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400052",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "פתח תקווה",
+    "address": "ז'בוטינסקי 72, הקניון הגדול אבנת, פתח תקווה",
+    "location": {
+      "latitude": 32.084,
+      "longitude": 34.8878
+    },
+    "locationPrecision": "address",
+    "phone": "03-9192270",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 08:30-21:00; Fr 08:30-13:30",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400053",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "לוד",
+    "address": "אולם מקבלי הפנים, נתב\"ג",
+    "location": {
+      "latitude": 31.9516,
+      "longitude": 34.8942
+    },
+    "locationPrecision": "address",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 00:00-24:00; Fr 00:00-14:00; Sa 19:00-23:59",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9400054",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "פתח תקווה",
+    "address": "ראשון לציון 1, פתח תקווה",
+    "location": {
+      "latitude": 32.084,
+      "longitude": 34.8878
+    },
+    "locationPrecision": "address",
+    "phone": "03-9191791",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 07:00-21:00; Fr 07:00-14:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400055",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "רמת גן",
+    "address": "ז'בוטינסקי 7, מגדל משה אביב, בורסה",
+    "location": {
+      "latitude": 32.0682,
+      "longitude": 34.8243
+    },
+    "locationPrecision": "address",
+    "phone": "03-6114000",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 06:30-19:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400056",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "רמת גן",
+    "address": "קניון גימיון, ביה\"ח תל השומר",
+    "location": {
+      "latitude": 32.0682,
+      "longitude": 34.8243
+    },
+    "locationPrecision": "address",
+    "phone": "03-7362220",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 06:00-22:00; Fr 06:00-15:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400057",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "פתח תקווה",
+    "address": "יצחק רבין 1, גלובל טאוורס, פתח תקווה",
+    "location": {
+      "latitude": 32.084,
+      "longitude": 34.8878
+    },
+    "locationPrecision": "address",
+    "phone": "03-5186376",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 07:00-18:00; Fr 08:00-12:30",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400058",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "בת ים",
+    "address": "יוספטל 92, ביג פאשן, בת ים",
+    "location": {
+      "latitude": 32.0235,
+      "longitude": 34.7507
+    },
+    "locationPrecision": "address",
+    "phone": "03-5562002",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 07:00-21:00; Fr 07:00-14:30",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9400059",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "רמת השרון",
+    "address": "ביג פאשן גלילות, רמת השרון",
+    "location": {
+      "latitude": 32.1465,
+      "longitude": 34.8406
+    },
+    "locationPrecision": "address",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 08:30-21:00; Fr 08:30-15:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400060",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "בני ברק",
+    "address": "בן גוריון 1, מגדל בסר 2, בני ברק",
+    "location": {
+      "latitude": 32.084,
+      "longitude": 34.834
+    },
+    "locationPrecision": "address",
+    "phone": "03-6967200",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 06:30-19:00; Fr 06:30-13:00",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9400061",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "הוד השרון",
+    "address": "הרקון 2, מתחם מיקס שרונים, הוד השרון",
+    "location": {
+      "latitude": 32.1508,
+      "longitude": 34.8896
+    },
+    "locationPrecision": "address",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 09:00-20:00; Fr 09:00-14:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400062",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "כפר סבא",
+    "address": "ויצמן 207, מתחם G, כפר סבא",
+    "location": {
+      "latitude": 32.1781,
+      "longitude": 34.9075
+    },
+    "locationPrecision": "address",
+    "phone": "09-7680094",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 06:45-22:00; Fr 06:45-15:00; Sa 20:45-22:45",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400063",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "אור יהודה",
+    "address": "אליהו סעדון 120, עזריאלי אאוטלט, אור יהודה",
+    "location": {
+      "latitude": 32.0321,
+      "longitude": 34.8712
+    },
+    "locationPrecision": "address",
+    "phone": "03-5333991",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 07:30-21:00; Fr 08:00-14:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400064",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "גבעת שמואל",
+    "address": "שפינדל יונה 1, תחנת פז אורלי, גבעת שמואל",
+    "location": {
+      "latitude": 32.0782,
+      "longitude": 34.8458
+    },
+    "locationPrecision": "address",
+    "phone": "03-5368640",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 06:00-21:00; Fr 06:00-14:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400065",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "רעננה",
+    "address": "תחנת דלק פז, צומת רופין",
+    "location": {
+      "latitude": 32.1839,
+      "longitude": 34.8708
+    },
+    "locationPrecision": "address",
+    "phone": "09-8987374",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 06:15-21:00; Fr 06:15-15:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400066",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "גבעתיים",
+    "address": "דרך יצחק רבין 53, קניון גבעתיים",
+    "location": {
+      "latitude": 32.068,
+      "longitude": 34.8126
+    },
+    "locationPrecision": "address",
+    "phone": "03-5722800",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 07:15-21:30; Fr 07:15-15:30",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400067",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "חולון",
+    "address": "גולדה מאיר 7, קניון חולון",
+    "location": {
+      "latitude": 32.0114,
+      "longitude": 34.7799
+    },
+    "locationPrecision": "address",
+    "phone": "03-5176650",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 07:30-21:00; Fr 07:30-14:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400068",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "נתניה",
+    "address": "הרצל 60, קניון השרון, נתניה",
+    "location": {
+      "latitude": 32.3215,
+      "longitude": 34.8532
+    },
+    "locationPrecision": "address",
+    "phone": "09-8870906",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 07:00-21:00; Fr 07:00-14:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400069",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "נתניה",
+    "address": "שדרות טום לנטוס 60, קניון נעימי, נתניה",
+    "location": {
+      "latitude": 32.3215,
+      "longitude": 34.8532
+    },
+    "locationPrecision": "address",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 07:00-21:00; Fr 07:00-13:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400070",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "יהוד",
+    "address": "דרך משה דיין 3, קניון סביונים, יהוד",
+    "location": {
+      "latitude": 32.031,
+      "longitude": 34.889
+    },
+    "locationPrecision": "address",
+    "phone": "03-9343777",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 07:30-21:30; Fr 07:30-14:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400071",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "נתניה",
+    "address": "בני ברמן 2, קניון עיר ימים, נתניה",
+    "location": {
+      "latitude": 32.3215,
+      "longitude": 34.8532
+    },
+    "locationPrecision": "address",
+    "phone": "09-8326950",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 08:30-21:30; Fr 08:30-14:30; Sa 20:15-23:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400072",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "קריית אונו",
+    "address": "המלך שלמה 37, קניון קריית אונו",
+    "location": {
+      "latitude": 32.0579,
+      "longitude": 34.8559
+    },
+    "locationPrecision": "address",
+    "phone": "03-6093907",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 07:30-21:00; Fr 07:30-14:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400073",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "רעננה",
+    "address": "המלאכה 2, קניון רננים, רעננה",
+    "location": {
+      "latitude": 32.1839,
+      "longitude": 34.8708
+    },
+    "locationPrecision": "address",
+    "phone": "09-7415445",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 08:30-21:30; Fr 08:00-14:30; Sa 21:00-22:30",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400074",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "הרצליה",
+    "address": "בילינסון 2, שדרות חן, הרצליה",
+    "location": {
+      "latitude": 32.1663,
+      "longitude": 34.8392
+    },
+    "locationPrecision": "address",
+    "phone": "09-7660028",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 07:00-20:00; Fr 07:00-14:30",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400075",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "צריפין",
+    "address": "ביה\"ח אסף הרופא, שער יפו",
+    "location": {
+      "latitude": 31.9627,
+      "longitude": 34.9113
+    },
+    "locationPrecision": "address",
+    "phone": "08-9243091",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 06:30-21:00; Fr 06:30-13:30",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400076",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "ראשון לציון",
+    "address": "ישראל גלילי 5, מתחם בית המשפט, ראשון לציון",
+    "location": {
+      "latitude": 31.973,
+      "longitude": 34.7898
+    },
+    "locationPrecision": "address",
+    "phone": "03-9414883",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 07:00-18:30; Fr 07:30-13:30",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400077",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "רחובות",
+    "address": "דרך הים 1, מיקס רחובות",
+    "location": {
+      "latitude": 31.8928,
+      "longitude": 34.8113
+    },
+    "locationPrecision": "address",
+    "phone": "08-9477056",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 07:30-21:30; Fr 07:30-14:30",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400078",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "נס ציונה",
+    "address": "הפטיש 6, ישפרו סנטר, נס ציונה",
+    "location": {
+      "latitude": 31.9285,
+      "longitude": 34.7982
+    },
+    "locationPrecision": "address",
+    "phone": "08-9408441",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 07:00-20:00; Fr 07:00-13:30",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400079",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "רמלה",
+    "address": "שדרות דוד רזיאל 1, עזריאלי רמלה",
+    "location": {
+      "latitude": 31.9245,
+      "longitude": 34.8706
+    },
+    "locationPrecision": "address",
+    "phone": "08-6580951",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 08:00-22:00; Fr 08:00-15:00; Sa 20:15-23:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400080",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "באר יעקב",
+    "address": "שא נס 17, קניון באר יעקב",
+    "location": {
+      "latitude": 31.9363,
+      "longitude": 34.8386
+    },
+    "locationPrecision": "address",
+    "phone": "053-3788871",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 07:30-20:30; Fr 07:30-13:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400081",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "ראשון לציון",
+    "address": "סחרוב 21, קניון הזהב, ראשון לציון",
+    "location": {
+      "latitude": 31.973,
+      "longitude": 34.7898
+    },
+    "locationPrecision": "address",
+    "phone": "054-3333693",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 08:00-22:00; Fr 08:00-16:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400082",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "רחובות",
+    "address": "ביל\"ו 2, קניון רחובות",
+    "location": {
+      "latitude": 31.8928,
+      "longitude": 34.8113
+    },
+    "locationPrecision": "address",
+    "phone": "08-9494102",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 08:30-21:30; Fr 08:30-15:00; Sa 20:30-23:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400083",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "ראשון לציון",
+    "address": "גולדה מאיר 1 פינת ההסתדרות 6, שער ראשון",
+    "location": {
+      "latitude": 31.973,
+      "longitude": 34.7898
+    },
+    "locationPrecision": "address",
+    "phone": "03-9522613",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 07:30-19:30; Fr 07:30-14:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400084",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "תל אביב",
+    "address": "הברזל 12, אסותא רמת החייל, תל אביב",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "phone": "03-6155435",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 06:30-20:00; Fr 06:30-13:30",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9400085",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "תל אביב",
+    "address": "ג'ורג' וייז 20, תל אביב",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "phone": "03-5040603",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 06:30-20:00; Fr 06:30-13:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400086",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "תל אביב",
+    "address": "ויצמן 14, ויצמן סיטי, תל אביב",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "phone": "050-5998090",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 06:30-21:00; Fr 06:30-14:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400087",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "תל אביב",
+    "address": "החשמונאים 96, קניון TLV, תל אביב",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "phone": "03-7750775",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 08:00-21:30; Fr 08:00-15:30; Sa 20:30-23:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400088",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "תל אביב",
+    "address": "שדרות שאול המלך 2, תל אביב",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 07:00-21:00; Fr 07:00-14:30",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400089",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "תל אביב",
+    "address": "יגאל אלון 94, מגדלי אלון, תל אביב",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "phone": "050-8424555",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 06:30-20:00; Fr 06:30-14:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400090",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "תל אביב",
+    "address": "מנחם בגין 46, תל אביב",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "phone": "03-5099549",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 06:00-19:00; Fr 06:00-14:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400091",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "תל אביב",
+    "address": "מנחם בגין 132, קניון עזריאלי, תל אביב",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "phone": "03-5040970",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 08:30-21:00; Fr 08:30-13:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400092",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "תל אביב",
+    "address": "דבורה הנביאה 121, פארק עתידים, תל אביב",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 06:30-18:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9400093",
+    "name": "ארומה אספרסו בר",
+    "type": "cafe",
+    "cityId": "תל אביב",
+    "address": "הברזל 25, רמת החייל, תל אביב",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "phone": "03-6489432",
+    "website": "https://www.aroma.co.il",
+    "openingHours": "Su-Th 06:30-18:00; Fr 07:00-14:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
   }
 ]
