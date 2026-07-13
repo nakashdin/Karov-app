@@ -9492,5 +9492,1517 @@
     "category": "dairy",
     "certifiedBy": "כשר למהדרין",
     "source": "manual"
+  },
+  {
+    "id": "9100000",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "באר יעקב",
+    "address": "יהלום 5, מרכז רוטשטיין צמרות, באר יעקב",
+    "location": {
+      "latitude": 31.9363,
+      "longitude": 34.8386
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-24:00; Fr 11:00-15:00; Sa 20:56-24:00",
+    "category": "dairy",
+    "certifiedBy": "כשרות רבנות ובד\"צ",
+    "source": "manual"
+  },
+  {
+    "id": "9100001",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "קינג ג'ורג' 79, תל אביב",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-14:00; Sa 20:56-01:30",
+    "category": "dairy",
+    "certifiedBy": "כשר מהדרין בד\"צ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9100002",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "מודיעין",
+    "address": "אריאל שרון 13, מודיעין",
+    "location": {
+      "latitude": 31.8966,
+      "longitude": 35.0102
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 20:56-23:30",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9100003",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "רמלה",
+    "address": "משה לוי 23, רמלה",
+    "location": {
+      "latitude": 31.9245,
+      "longitude": 34.8706
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-24:00; Fr 11:00-15:00; Sa 21:16-24:00",
+    "category": "dairy",
+    "certifiedBy": "כשרות בד\"ץ הרב רובין",
+    "source": "manual"
+  },
+  {
+    "id": "9100004",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "קריית מלאכי",
+    "address": "אסיף 1, אזור תעשיה באר טוביה, קריית מלאכי",
+    "location": {
+      "latitude": 31.8645,
+      "longitude": 34.7441
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-14:00; Sa 20:56-24:00",
+    "category": "dairy",
+    "certifiedBy": "כשר בד\"ץ בית יוסף מהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9100005",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "טירת הכרמל",
+    "address": "מנחם בגין 35, מתחם עסקים מתקדמים, טירת הכרמל",
+    "location": {
+      "latitude": 32.7606,
+      "longitude": 35.0073
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-24:00; Fr 11:00-15:00; Sa 20:56-24:00",
+    "category": "dairy",
+    "certifiedBy": "כשר בד\"ץ",
+    "source": "manual"
+  },
+  {
+    "id": "9100006",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "ביתר עלית",
+    "address": "הרב ברים 4, ביתר עלית",
+    "location": {
+      "latitude": 31.6944,
+      "longitude": 35.1202
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-24:00; Fr 11:00-15:00; Sa 21:16-01:00",
+    "category": "dairy",
+    "certifiedBy": "כשרות בד\"ץ הרב רובין",
+    "source": "manual"
+  },
+  {
+    "id": "9100007",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "משה דיין 164, ירושלים",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 10:00-24:00; Fr 10:00-15:00; Sa 21:06-01:00",
+    "category": "dairy",
+    "certifiedBy": "כשרות בד\"ץ הרב רובין",
+    "source": "manual"
+  },
+  {
+    "id": "9100008",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "קריית מוצקין",
+    "address": "שדרות ירושלים 1, קריית מוצקין",
+    "location": {
+      "latitude": 32.8367,
+      "longitude": 35.0831
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-24:00; Fr 11:00-15:00; Sa 21:06-24:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9100009",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "תוצרת הארץ 9, תל אביב",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 20:45-24:00",
+    "category": "dairy",
+    "certifiedBy": "כשר מהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9100010",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "יגאל אלון 51, תל אביב",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 10:00-24:00; Fr 10:00-14:00; Sa 20:27-01:00",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9100011",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "הנחושת 1, תל אביב",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-22:45; Sa 20:56-22:45",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9100012",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "שוהם",
+    "address": "עמק איילון 161, שוהם",
+    "location": {
+      "latitude": 31.9957,
+      "longitude": 34.9373
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-14:00; Sa 20:56-23:00",
+    "category": "dairy",
+    "certifiedBy": "כשר מהדרין בד\"צ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9100013",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "שדרות",
+    "address": "דרך מנחם בגין מול 7, שדרות",
+    "location": {
+      "latitude": 31.523,
+      "longitude": 34.5966
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-14:30; Sa 21:00-23:30",
+    "category": "dairy",
+    "certifiedBy": "כשר מהדרין בד\"צ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9100014",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "רעננה",
+    "address": "אחוזה 110, רעננה",
+    "location": {
+      "latitude": 32.1839,
+      "longitude": 34.8708
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 10:30-23:15; Fr 10:30-15:00; Sa 20:27-23:15",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9100015",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "רמת ישי",
+    "address": "אקליפטוס 3, רמת ישי",
+    "location": {
+      "latitude": 32.7056,
+      "longitude": 35.1689
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-16:00; Sa 20:46-23:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9100016",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "רמת השרון",
+    "address": "סוקולוב 41, רמת השרון",
+    "location": {
+      "latitude": 32.1465,
+      "longitude": 34.8406
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:30-24:00; Sa 20:46-24:00",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9100017",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "רמלה",
+    "address": "משה אדרת 1, רמלה",
+    "location": {
+      "latitude": 31.9245,
+      "longitude": 34.8706
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-24:00; Fr 11:00-15:00; Sa 21:16-24:00",
+    "category": "dairy",
+    "certifiedBy": "כשרות בד\"ץ הרב רובין",
+    "source": "manual"
+  },
+  {
+    "id": "9100018",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "רחובות",
+    "address": "בילו 2, רחובות",
+    "location": {
+      "latitude": 31.8928,
+      "longitude": 34.8113
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 10:00-01:00; Fr 10:45-16:00; Sa 20:36-01:00",
+    "category": "dairy",
+    "certifiedBy": "כשר בד\"ץ בית יוסף מהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9100019",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "ראשון לציון",
+    "address": "לישנסקי 6, ראשון לציון",
+    "location": {
+      "latitude": 31.973,
+      "longitude": 34.7898
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-24:00; Fr 11:00-16:00; Sa 20:41-01:00",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין בד\"ץ",
+    "source": "manual"
+  },
+  {
+    "id": "9100020",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "ראש פינה",
+    "address": "גאוני 1, ראש פינה",
+    "location": {
+      "latitude": 32.9714,
+      "longitude": 35.5428
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-22:00; Sa 20:46-23:00",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9100021",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "ראשון לציון",
+    "address": "יעקב פריימן 1, ראשון לציון",
+    "location": {
+      "latitude": 31.973,
+      "longitude": 34.7898
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-16:00; Sa 20:27-24:00",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין בד\"ץ",
+    "source": "manual"
+  },
+  {
+    "id": "9100022",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "ראש העין",
+    "address": "מתחם תחנת הדלק, כניסה לקיבוץ עינת, ראש העין",
+    "location": {
+      "latitude": 32.0958,
+      "longitude": 34.9558
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 20:26-24:00",
+    "category": "dairy",
+    "certifiedBy": "כשר בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9100023",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "קריית שמונה",
+    "address": "מרכז ביג, קריית שמונה",
+    "location": {
+      "latitude": 33.2076,
+      "longitude": 35.5709
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-22:00; Sa 20:36-23:00",
+    "category": "dairy",
+    "certifiedBy": "כשרות בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9100024",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "קריית גת",
+    "address": "מלכי ישראל 178, ישפרו סנטר, קריית גת",
+    "location": {
+      "latitude": 31.61,
+      "longitude": 34.7641
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-14:30; Sa 20:56-24:00",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9100025",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "פתח תקווה",
+    "address": "העצמאות 64, פתח תקווה",
+    "location": {
+      "latitude": 32.084,
+      "longitude": 34.8878
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 10:00-23:00; Fr 10:00-15:00; Sa 20:26-24:00",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9100026",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "פרדס חנה כרכור",
+    "address": "מתחם אלון, עין שמר, פרדס חנה כרכור",
+    "location": {
+      "latitude": 32.4706,
+      "longitude": 34.9711
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 20:56-23:00",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9100027",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "פארק אדיסון",
+    "address": "פארק אדיסון",
+    "location": {
+      "latitude": 31.9044,
+      "longitude": 34.799
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-23:00; Sa 20:46-23:00",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9100028",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "ערד",
+    "address": "צים סנטר, ערד",
+    "location": {
+      "latitude": 31.2598,
+      "longitude": 35.2141
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 10:30-22:00; Fr 10:30-14:00; Sa 20:56-22:00",
+    "category": "dairy",
+    "certifiedBy": "כשר בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9100029",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "עפולה",
+    "address": "חטיבה תשע 1, עפולה",
+    "location": {
+      "latitude": 32.6076,
+      "longitude": 35.2899
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 10:30-23:00; Fr 10:30-14:00; Sa 20:56-23:30",
+    "category": "dairy",
+    "certifiedBy": "כשר מהדרין בד\"צ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9100030",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "עכו",
+    "address": "שלום הגליל 1, עכו",
+    "location": {
+      "latitude": 32.9256,
+      "longitude": 35.0724
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-24:00; Fr 11:00-15:00; Sa 20:41-24:00",
+    "category": "dairy",
+    "certifiedBy": "כשר בד\"ץ",
+    "source": "manual"
+  },
+  {
+    "id": "9100031",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "נתניה",
+    "address": "גיבורי ישראל 22, נתניה",
+    "location": {
+      "latitude": 32.3215,
+      "longitude": 34.8532
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-01:00; Fr 11:00-14:30; Sa 20:56-02:00",
+    "category": "dairy",
+    "certifiedBy": "כשר בד\"ץ בית יוסף מהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9100032",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "נתניה",
+    "address": "כיכר העצמאות 3, נתניה",
+    "location": {
+      "latitude": 32.3215,
+      "longitude": 34.8532
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 20:56-24:00",
+    "category": "dairy",
+    "certifiedBy": "כשר מהדרין בד\"צ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9100033",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "נתיבות",
+    "address": "צים סנטר, נתיבות",
+    "location": {
+      "latitude": 31.4228,
+      "longitude": 34.5878
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 20:56-24:00",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9100034",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "נהריה",
+    "address": "ויצמן 63, נהריה",
+    "location": {
+      "latitude": 33.0045,
+      "longitude": 35.0955
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-01:00; Fr 11:00-17:00; Sa 20:31-01:00",
+    "category": "dairy",
+    "certifiedBy": "כשר מהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9100035",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "מצפה רמון",
+    "address": "שדרות בן גוריון 1, מצפה רמון",
+    "location": {
+      "latitude": 30.6097,
+      "longitude": 34.8026
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 09:00-22:45; Fr 09:00-15:00; Sa 20:56-22:45",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9100036",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "מעלות",
+    "address": "צים סנטר, מעלות",
+    "location": {
+      "latitude": 33.0137,
+      "longitude": 35.2687
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-We 11:00-21:00; Tu 12:00-21:00; Th 11:00-21:00; Fr 11:00-13:00; Sa 20:56-21:00",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9100037",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "מעלה אדומים",
+    "address": "קניון מעלה אדומים, מעלה אדומים",
+    "location": {
+      "latitude": 31.7731,
+      "longitude": 35.2955
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:30-22:00; Sa 20:56-22:00",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9100038",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "מבשרת ציון",
+    "address": "שדרות החוצבים 10, קניון מבשרת, מבשרת ציון",
+    "location": {
+      "latitude": 31.806,
+      "longitude": 35.1467
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 09:00-24:00; Fr 09:00-14:45; Sa 20:56-24:00",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9100039",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "כפר סבא",
+    "address": "ויצמן 47, כפר סבא",
+    "location": {
+      "latitude": 32.1781,
+      "longitude": 34.9075
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 10:00-24:00; Fr 10:00-15:30; Sa 20:26-24:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9100040",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "כפר יונה",
+    "address": "דוד בן גוריון 1, קניון כפר יונה, כפר יונה",
+    "location": {
+      "latitude": 32.3175,
+      "longitude": 34.931
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-00:30; Fr 10:00-14:00; Sa 20:56-00:30",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9100041",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "קניון רמות, ירושלים",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 10:00-24:00; Fr 10:00-15:00; Sa 21:06-01:00",
+    "category": "dairy",
+    "certifiedBy": "כשרות בד\"ץ הרב רובין",
+    "source": "manual"
+  },
+  {
+    "id": "9100042",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "יד חרוצים 18, ירושלים",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 10:30-23:00; Fr 10:30-15:00; Sa 21:06-24:00",
+    "category": "dairy",
+    "certifiedBy": "כשר בד\"ץ מהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9100043",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "יפו 228, תחנה מרכזית, ירושלים",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 10:00-23:00; Fr 10:00-15:00; Sa 21:06-23:00",
+    "category": "dairy",
+    "certifiedBy": "בד\"צ מהדרין בראשות הרב רובין",
+    "source": "manual"
+  },
+  {
+    "id": "9100044",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "אורוגוואי 1, ירושלים",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 10:00-23:00; Fr 10:00-15:00; Sa 21:06-24:00",
+    "category": "dairy",
+    "certifiedBy": "כשרות בד\"ץ הרב רובין",
+    "source": "manual"
+  },
+  {
+    "id": "9100045",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "זלמן שניאור 1, ירושלים",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 10:30-01:30; Fr 10:30-15:00; Sa 21:16-01:00",
+    "category": "dairy",
+    "certifiedBy": "כשרות בד\"ץ הרב רובין",
+    "source": "manual"
+  },
+  {
+    "id": "9100046",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "דרך אגודת ספורט בית\"ר 1, קניון מלחה, ירושלים",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 10:00-22:00; Fr 10:00-14:00; Sa 21:06-23:30",
+    "category": "dairy",
+    "certifiedBy": "כשר בד\"ץ מהדרין הרב רובין",
+    "source": "manual"
+  },
+  {
+    "id": "9100047",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "מרדכי בן הלל 15, ירושלים",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 10:00-01:00; Fr 10:00-15:00; Sa 21:06-01:00",
+    "category": "dairy",
+    "certifiedBy": "כשרות בד\"ץ הרב רובין",
+    "source": "manual"
+  },
+  {
+    "id": "9100048",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "יקנעם",
+    "address": "התמר 2, קניון G, יקנעם",
+    "location": {
+      "latitude": 32.6575,
+      "longitude": 35.1004
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-22:00; Fr 11:00-14:00; Sa 20:56-23:00",
+    "category": "dairy",
+    "certifiedBy": "רבנות מקומית",
+    "source": "manual"
+  },
+  {
+    "id": "9100049",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "יבנה",
+    "address": "הנחשול 22, יבנה",
+    "location": {
+      "latitude": 31.8752,
+      "longitude": 34.7394
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 12:00-23:00; Sa 20:56-23:00",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9100050",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "טבריה",
+    "address": "הבנים 1, טבריה",
+    "location": {
+      "latitude": 32.7921,
+      "longitude": 35.5312
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-23:45; Fr 11:00-15:00; Sa 20:56-23:45",
+    "category": "dairy",
+    "certifiedBy": "כשר בד\"ץ",
+    "source": "manual"
+  },
+  {
+    "id": "9100051",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "חריש",
+    "address": "דרך ארץ 74, חריש",
+    "location": {
+      "latitude": 32.458,
+      "longitude": 35.0343
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-16:00; Sa 20:56-24:00",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9100052",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "חיפה",
+    "address": "הטכניון, חיפה",
+    "location": {
+      "latitude": 32.794,
+      "longitude": 34.9896
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 12:00-23:00; Sa 20:48-24:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9100053",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "חולון",
+    "address": "דרך השבעה 20, חולון",
+    "location": {
+      "latitude": 32.0114,
+      "longitude": 34.7799
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 20:56-23:30",
+    "category": "dairy",
+    "certifiedBy": "כשר מהדרין בד\"צ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9100054",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "חדרה",
+    "address": "יצחק רבין 41, חדרה",
+    "location": {
+      "latitude": 32.434,
+      "longitude": 34.9187
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-14:00; Sa 21:25-23:00",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9100055",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "זכרון יעקב",
+    "address": "הנדיב 26, זכרון יעקב",
+    "location": {
+      "latitude": 32.568,
+      "longitude": 34.9556
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-24:00; Fr 11:00-14:30; Sa 20:41-24:00",
+    "category": "dairy",
+    "certifiedBy": "כשר מהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9100056",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "הרצליה",
+    "address": "בלינסון 1, הרצליה",
+    "location": {
+      "latitude": 32.1663,
+      "longitude": 34.8392
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 10:30-23:30; Fr 10:30-14:30; Sa 20:56-23:30",
+    "category": "dairy",
+    "certifiedBy": "כשר בד\"ץ",
+    "source": "manual"
+  },
+  {
+    "id": "9100057",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "הוד השרון",
+    "address": "מגדיאל 57, הוד השרון",
+    "location": {
+      "latitude": 32.1508,
+      "longitude": 34.8896
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 20:56-24:00",
+    "category": "dairy",
+    "certifiedBy": "כשר בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9100058",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "דימונה",
+    "address": "קניון פרץ, דימונה",
+    "location": {
+      "latitude": 31.0677,
+      "longitude": 35.0347
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 09:00-23:00; Fr 09:00-14:00; Sa 20:26-23:00",
+    "category": "dairy",
+    "certifiedBy": "כשר בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9100059",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "גדרה",
+    "address": "הבילויים 10, גדרה",
+    "location": {
+      "latitude": 31.812,
+      "longitude": 34.776
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 20:56-24:00",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9100060",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "בת ים",
+    "address": "בן גוריון 134, בת ים",
+    "location": {
+      "latitude": 32.0235,
+      "longitude": 34.7507
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 10:30-00:15; Fr 10:30-17:00; Sa 20:33-00:30",
+    "category": "dairy",
+    "certifiedBy": "כשר בד\"ץ בית יוסף מהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9100061",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "בני דרור",
+    "address": "קניון דרורים, בני דרור",
+    "location": {
+      "latitude": 32.2735,
+      "longitude": 34.9152
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-22:45; Fr 11:00-14:00; Sa 21:26-22:45",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9100062",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "בני ברק",
+    "address": "זבוטינסקי 2, בני ברק",
+    "location": {
+      "latitude": 32.084,
+      "longitude": 34.834
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 10:30-24:00; Sa 20:56-24:00",
+    "category": "dairy",
+    "certifiedBy": "כשרות בד\"ץ הרב רובין",
+    "source": "manual"
+  },
+  {
+    "id": "9100063",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "בית שמש",
+    "address": "יצחק רבין 13, בית שמש",
+    "location": {
+      "latitude": 31.7458,
+      "longitude": 34.9926
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-24:00; Fr 11:00-14:30; Sa 21:26-24:00",
+    "category": "dairy",
+    "certifiedBy": "כשרות רובין",
+    "source": "manual"
+  },
+  {
+    "id": "9100064",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "בית שאן",
+    "address": "מרכז צים, מתחם האוכל, בית שאן",
+    "location": {
+      "latitude": 32.501,
+      "longitude": 35.5
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-22:00; Fr 11:00-14:00; Sa 20:56-22:30",
+    "category": "dairy",
+    "certifiedBy": "כשר בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9100065",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "קריית עקרון",
+    "address": "מתחם קניות עופר בילו סנטר, קריית עקרון",
+    "location": {
+      "latitude": 31.8596,
+      "longitude": 34.823
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 21:06-23:30",
+    "category": "dairy",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9100066",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "באר שבע",
+    "address": "שדרות רגר 53, מגדלי אביסרור, באר שבע",
+    "location": {
+      "latitude": 31.2518,
+      "longitude": 34.7913
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-24:00; Sa 21:00-01:00",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9100067",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "באר שבע",
+    "address": "MALL-7, ליד רמי לוי, באר שבע",
+    "location": {
+      "latitude": 31.2518,
+      "longitude": 34.7913
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 10:30-23:30; Fr 11:00-15:00; Sa 21:00-01:00",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9100068",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "באר שבע",
+    "address": "שדרות הערים התאומות 26, באר שבע",
+    "location": {
+      "latitude": 31.2518,
+      "longitude": 34.7913
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 20:46-24:00",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9100069",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "באר יעקב",
+    "address": "אסף הרופא, באר יעקב",
+    "location": {
+      "latitude": 31.9363,
+      "longitude": 34.8386
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-23:00; Sa 20:56-23:30",
+    "category": "dairy",
+    "certifiedBy": "כשרות בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9100070",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "אשקלון",
+    "address": "אלי כהן 21, אשקלון",
+    "location": {
+      "latitude": 31.6688,
+      "longitude": 34.5742
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 10:00-24:00; Fr 10:00-15:00; Sa 20:56-24:00",
+    "category": "dairy",
+    "certifiedBy": "כשר בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9100071",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "אשדוד",
+    "address": "הציונות 13/9, אשדוד",
+    "location": {
+      "latitude": 31.804,
+      "longitude": 34.6553
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 10:00-24:00; Fr 10:00-15:00; Sa 20:56-24:00",
+    "category": "dairy",
+    "certifiedBy": "כשר בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9100072",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "אילת",
+    "address": "התמרים 2, הקניון האדום, אילת",
+    "location": {
+      "latitude": 29.5581,
+      "longitude": 34.9482
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 20:45-24:00",
+    "category": "dairy",
+    "certifiedBy": "כשר מהדרין בד\"צ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9100073",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "אור עקיבא",
+    "address": "קניון אורות, אור עקיבא",
+    "location": {
+      "latitude": 31.5,
+      "longitude": 34.9
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 10:00-23:00; Fr 10:00-16:00; Sa 20:58-24:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9100074",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "אופקים",
+    "address": "שדרות יהדות דרום אפריקה 14, אופקים",
+    "location": {
+      "latitude": 31.3097,
+      "longitude": 34.6196
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 12:00-23:00; Sa 21:11-24:00",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9100075",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "פתח תקווה",
+    "address": "מרדכי בן דרור 4, פתח תקווה",
+    "location": {
+      "latitude": 32.084,
+      "longitude": 34.8878
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 10:00-24:00; Fr 10:00-16:00; Sa 20:31-24:00",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9100076",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "רמת גן",
+    "address": "לנדאו 7, רמת גן",
+    "location": {
+      "latitude": 32.0682,
+      "longitude": 34.8243
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 10:00-22:45; Fr 10:00-15:00; Sa 20:56-23:00",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9100077",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "פתח תקווה",
+    "address": "עין גנים 96, פתח תקווה",
+    "location": {
+      "latitude": 32.084,
+      "longitude": 34.8878
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 10:30-24:00; Fr 10:30-15:00; Sa 20:27-24:00",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין רובין בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9100078",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "גבעת שמואל",
+    "address": "מנחם בגין 30, גבעת שמואל",
+    "location": {
+      "latitude": 32.0782,
+      "longitude": 34.8458
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 15:00-22:30; Sa 20:26-23:30",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין",
+    "source": "manual"
+  },
+  {
+    "id": "9100079",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "יהוד",
+    "address": "החורש 4, קריית הסביונים, יהוד",
+    "location": {
+      "latitude": 32.031,
+      "longitude": 34.889
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-14:00; Sa 20:56-23:00",
+    "category": "dairy",
+    "certifiedBy": "כשר מהדרין בד\"צ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9100080",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "גני תקווה",
+    "address": "הרי יהודה 56, גני תקווה",
+    "location": {
+      "latitude": 32.0605,
+      "longitude": 34.877
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-23:30; Fr 11:00-14:30; Sa 20:56-23:30",
+    "category": "dairy",
+    "certifiedBy": "כשר בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9100081",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "קריית אתא",
+    "address": "מתחם ביג, צומת קריית אתא, קריית אתא",
+    "location": {
+      "latitude": 32.8056,
+      "longitude": 35.1048
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-23:30; Fr 11:00-15:00; Sa 20:26-23:30",
+    "category": "dairy",
+    "certifiedBy": "כשר למהדרין בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9100082",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "חיפה",
+    "address": "מוריה 13, חיפה",
+    "location": {
+      "latitude": 32.794,
+      "longitude": 34.9896
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 11:00-24:00; Fr 11:00-15:00; Sa 20:38-24:00",
+    "category": "dairy",
+    "certifiedBy": "כשר בד\"ץ",
+    "source": "manual"
+  },
+  {
+    "id": "9100083",
+    "name": "פיצה האט",
+    "type": "restaurant",
+    "cityId": "כרמיאל",
+    "address": "מעלה כמון 5, קניון חוצות כרמיאל, כרמיאל",
+    "location": {
+      "latitude": 32.9115,
+      "longitude": 35.2974
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-50-60-70",
+    "website": "https://www.pizzahut.co.il",
+    "openingHours": "Su-Th 10:30-23:00; Fr 10:30-16:00; Sa 20:41-24:00",
+    "category": "dairy",
+    "certifiedBy": "כשר",
+    "source": "manual"
   }
 ]
