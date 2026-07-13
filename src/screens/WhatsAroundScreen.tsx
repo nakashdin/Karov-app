@@ -23,7 +23,7 @@ const CATEGORIES: Array<{
   color: string;
   types: PlaceType[];
 }> = [
-  { key: 'food',         label: 'אוכל',         emoji: '🍽',  color: colors.categoryRestaurant, types: FOOD_TYPES },
+  { key: 'food',         label: 'לאכול',        emoji: '🍽',  color: colors.categoryRestaurant, types: FOOD_TYPES },
   { key: 'synagogue',    label: 'בתי כנסת',      emoji: '🕍',  color: colors.categorySynagogue,  types: ['synagogue'] },
   { key: 'mikveh',       label: 'מקוואות',       emoji: '💧',  color: colors.categoryMikveh,     types: ['mikveh'] },
   { key: 'chabad_house', label: 'בתי חב״ד',      emoji: '🕎',  color: colors.chabad,             types: ['chabad_house'] },
