@@ -10,20 +10,19 @@ import { colors, radius, shadow, spacing } from '../theme';
 import { usePlaces } from '../hooks/usePlaces';
 import { useSharedLocation } from '../context/LocationContext';
 import { distanceKm } from '../utils/geo';
-import { PlaceType } from '../types';
+import { KosherCategory, PlaceType } from '../types';
 import { RootStackParamList } from '../navigation/types';
 
 type Nav = NativeStackNavigationProp<RootStackParamList>;
-type FoodTab = 'all' | 'restaurant' | 'fast_food' | 'cafe' | 'coffee_cart';
+type FoodTab = 'all' | KosherCategory;
 
 const ALL_FOOD: PlaceType[] = ['restaurant', 'fast_food', 'cafe', 'coffee_cart'];
 
 const TABS: Array<{ key: FoodTab; label: string; emoji: string }> = [
-  { key: 'all',         label: 'הכל',       emoji: '🍽️' },
-  { key: 'restaurant',  label: 'מסעדות',    emoji: '🍽️' },
-  { key: 'fast_food',   label: 'מזון מהיר', emoji: '🍔' },
-  { key: 'cafe',        label: 'בתי קפה',   emoji: '☕' },
-  { key: 'coffee_cart', label: 'עגלות קפה', emoji: '🛒' },
+  { key: 'all',   label: 'הכל',    emoji: '🍽️' },
+  { key: 'meat',  label: 'בשרי',   emoji: '🥩' },
+  { key: 'dairy', label: 'חלבי',   emoji: '🧀' },
+  { key: 'parve', label: 'פרווה',  emoji: '🥗' },
 ];
 
 export function FoodListScreen() {
@@ -34,8 +33,10 @@ export function FoodListScreen() {
   const listRef = useRef<FlatList>(null);
 
   const filtered = useMemo(() => {
-    const types = activeTab === 'all' ? ALL_FOOD : [activeTab as PlaceType];
-    const result = places.filter(p => types.includes(p.type));
+    const foodPlaces = places.filter(p => ALL_FOOD.includes(p.type));
+    const result = activeTab === 'all'
+      ? foodPlaces
+      : foodPlaces.filter(p => p.category === activeTab);
     if (location) {
       return [...result].sort(
         (a, b) => distanceKm(location, a.location) - distanceKm(location, b.location),
