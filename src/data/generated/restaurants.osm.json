@@ -1025,29 +1025,6 @@
     "facebook": "https://www.facebook.com/AromaIsrael"
   },
   {
-    "id": "osm-node-3260813346",
-    "name": "מקדונלד'ס",
-    "type": "restaurant",
-    "cityId": "קרית שמונה",
-    "address": "טשרניחובסקי 4, קרית שמונה",
-    "location": {
-      "latitude": 33.2107826,
-      "longitude": 35.5689393
-    },
-    "source": "osm",
-    "openingHours": "Su-We 10:00-21:00; Fr 10:00-15:00",
-    "tags": [
-      "burger"
-    ],
-    "extra": {
-      "osmKosher": "only"
-    },
-    "category": "meat",
-    "website": "https://www.mcdonalds.co.il",
-    "instagram": "https://www.instagram.com/mcdonaldsisrael",
-    "facebook": "https://www.facebook.com/McDonaldsIsrael"
-  },
-  {
     "id": "osm-node-3731754512",
     "name": "ארומה",
     "type": "restaurant",
@@ -2068,29 +2045,6 @@
     "instagram": "https://www.instagram.com/japanika.rosh.pinah/"
   },
   {
-    "id": "osm-node-5728458069",
-    "name": "מקדונלד'ס",
-    "type": "restaurant",
-    "cityId": "באר שבע",
-    "address": "אילת 15, באר שבע",
-    "location": {
-      "latitude": 31.2432841,
-      "longitude": 34.7960241
-    },
-    "source": "osm",
-    "openingHours": "Su 08:30-21:00; Mo-Th 09:00-21:00; Fr 08:30-15:30",
-    "tags": [
-      "burger"
-    ],
-    "extra": {
-      "osmKosher": "yes"
-    },
-    "category": "meat",
-    "website": "https://www.mcdonalds.co.il",
-    "instagram": "https://www.instagram.com/mcdonaldsisrael",
-    "facebook": "https://www.facebook.com/McDonaldsIsrael"
-  },
-  {
     "id": "osm-node-5746423221",
     "name": "שיפודי אל הנגב",
     "type": "restaurant",
@@ -2217,30 +2171,6 @@
       "osmKosher": "yes"
     },
     "category": "dairy"
-  },
-  {
-    "id": "osm-node-5981044016",
-    "name": "מקדונלד'ס",
-    "type": "restaurant",
-    "cityId": "בית קמה",
-    "address": "בית קמה",
-    "location": {
-      "latitude": 31.4427419,
-      "longitude": 34.7643921
-    },
-    "source": "osm",
-    "phone": "+972 8 669 5137",
-    "openingHours": "Su 09:00-21:00; Mo-We 10:00-21:00; Th 09:00-22:00; Fr 11:00-15:00",
-    "tags": [
-      "burger"
-    ],
-    "extra": {
-      "osmKosher": "yes"
-    },
-    "category": "meat",
-    "website": "https://www.mcdonalds.co.il",
-    "instagram": "https://www.instagram.com/mcdonaldsisrael",
-    "facebook": "https://www.facebook.com/McDonaldsIsrael"
   },
   {
     "id": "osm-node-5995053444",
@@ -2776,29 +2706,6 @@
     "phone": "1700-704-110",
     "openingHours": "Su-Th 12:00-23:00; Fr 12:00-15:00",
     "website": "https://110burger.com"
-  },
-  {
-    "id": "osm-node-7056388962",
-    "name": "מקדונלד'ס",
-    "type": "restaurant",
-    "cityId": "ירושלים",
-    "address": "בן יהודה 7, ירושלים",
-    "location": {
-      "latitude": 31.7815495,
-      "longitude": 35.2183401
-    },
-    "source": "osm",
-    "tags": [
-      "burger"
-    ],
-    "extra": {
-      "osmKosher": "only"
-    },
-    "category": "meat",
-    "website": "https://www.mcdonalds.co.il",
-    "instagram": "https://www.instagram.com/mcdonaldsisrael",
-    "facebook": "https://www.facebook.com/McDonaldsIsrael",
-    "openingHours": "Su-We 11:00-23:00; Th 11:00-23:59; Fr 10:30-16:00; Sa 21:30-23:59"
   },
   {
     "id": "osm-node-7064678724",
@@ -14667,6 +14574,1409 @@
     "website": "https://www.aroma.co.il",
     "openingHours": "Su-Th 06:30-18:00; Fr 07:00-14:00",
     "category": "dairy",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500000",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "נתיבות",
+    "address": "בעלי המלאכה 203, נתיבות",
+    "location": {
+      "latitude": 31.4228,
+      "longitude": 34.5878
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=265",
+    "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-16:00; Su 11:00-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500001",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "אור יהודה",
+    "address": "שדרות יצחק רבין 5, נווה רבין, אור יהודה",
+    "location": {
+      "latitude": 32.0321,
+      "longitude": 34.8712
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=264",
+    "openingHours": "Mo 11:30-22:00; Tu 11:30-22:00; We 11:30-22:00; Th 11:30-22:00; Su 11:30-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500002",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "אופקים",
+    "address": "מנחם בגין 6, אופקים",
+    "location": {
+      "latitude": 31.3133,
+      "longitude": 34.6209
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=310",
+    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:30-16:00; Sa 22:00-23:00; Su 11:00-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500003",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "אור עקיבא",
+    "address": "שדרות הנשיא 4, אור עקיבא",
+    "location": {
+      "latitude": 32.504,
+      "longitude": 34.9156
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=304",
+    "openingHours": "Mo 11:00-22:45; Tu 11:00-22:45; We 11:00-22:45; Th 11:00-22:45; Fr 10:30-16:00; Sa 21:30-22:45; Su 11:00-22:45",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500004",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "אילת",
+    "address": "הסתת 20, אילת",
+    "location": {
+      "latitude": 29.5581,
+      "longitude": 34.9482
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=239",
+    "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:30; Fr 10:00-16:00; Sa 21:30-23:00; Su 11:00-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500005",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "בית שמש",
+    "address": "קניון BIG-Fashion, יגאל אלון, בית שמש",
+    "location": {
+      "latitude": 31.7458,
+      "longitude": 34.9926
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=82",
+    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:30-16:00; Sa 21:30-22:30; Su 11:00-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500006",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "יקנעם",
+    "address": "שדרות רבין 9, יקנעם",
+    "location": {
+      "latitude": 32.6575,
+      "longitude": 35.1004
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=245",
+    "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-16:00; Su 11:00-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500007",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "קריית גת",
+    "address": "שדרות לכיש 153, קרית גת",
+    "location": {
+      "latitude": 31.61,
+      "longitude": 34.7641
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=302",
+    "openingHours": "Mo 11:00-23:00; Tu 11:00-23:00; We 11:00-23:00; Th 11:00-23:00; Fr 10:30-16:00; Sa 21:45-23:00; Su 11:00-23:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500008",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "מגדל העמק",
+    "address": "שילת 1, מגדל העמק",
+    "location": {
+      "latitude": 32.6795,
+      "longitude": 35.2392
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=301",
+    "openingHours": "Mo 11:00-23:00; Tu 11:00-23:00; We 10:30-23:00; Th 10:30-23:00; Fr 10:30-15:30; Sa 22:00-23:00; Su 10:30-23:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500009",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "בת ים",
+    "address": "יוספטל 92, בת ים",
+    "location": {
+      "latitude": 32.0235,
+      "longitude": 34.7507
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=43",
+    "openingHours": "Mo 10:30-22:30; Tu 10:30-22:30; We 10:30-22:30; Th 10:30-22:30; Fr 10:30-16:00; Sa 21:30-23:00; Su 10:30-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500010",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "טבריה",
+    "address": "יהודה הלוי 7, טבריה",
+    "location": {
+      "latitude": 32.7921,
+      "longitude": 35.5312
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=206",
+    "openingHours": "Mo 10:30-22:45; Tu 10:30-22:45; We 10:30-22:45; Th 10:30-22:45; Fr 10:00-15:00; Sa 21:30-23:00; Su 10:30-22:45",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500011",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "טבריה",
+    "address": "המברג 1, טבריה",
+    "location": {
+      "latitude": 32.7921,
+      "longitude": 35.5312
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=257",
+    "openingHours": "Mo 11:00-23:00; Tu 11:00-23:00; We 11:00-23:00; Th 11:00-23:00; Fr 10:30-15:30; Sa 21:30-23:00; Su 11:00-23:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500012",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "באר יעקב",
+    "address": "מרכז מסחרי אסף סנטר, באר יעקב",
+    "location": {
+      "latitude": 31.9363,
+      "longitude": 34.8386
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=147",
+    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 11:00-16:00; Su 11:00-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500013",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "פתח תקווה",
+    "address": "בית חולים בילינסון-ז'בוטינסקי 39, פתח תקווה",
+    "location": {
+      "latitude": 32.084,
+      "longitude": 34.8878
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=136",
+    "openingHours": "Mo 10:30-22:00; Tu 10:30-22:00; We 10:30-22:00; Th 10:30-22:00; Su 10:30-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500014",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "כפר סבא",
+    "address": "טשרניחובסקי 59, כפר סבא",
+    "location": {
+      "latitude": 32.1781,
+      "longitude": 34.9075
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=167",
+    "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-14:00; Su 11:00-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500015",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "חיפה",
+    "address": "בית חולים רמב\"ם-העליה השנייה 8, חיפה",
+    "location": {
+      "latitude": 32.794,
+      "longitude": 34.9896
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=117",
+    "openingHours": "Mo 10:00-23:00; Tu 10:00-23:00; We 10:00-23:00; Th 10:00-23:00; Fr 10:00-16:30; Sa 21:30-23:30; Su 10:00-23:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500016",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "קריית אונו",
+    "address": "מרכז גימיון - בית חולים תל השומר, קריית אונו",
+    "location": {
+      "latitude": 32.0579,
+      "longitude": 34.8559
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=143",
+    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:30-16:00; Su 11:00-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500017",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "חולון",
+    "address": "רח' הבנאי פינת ירושלים, חולון",
+    "location": {
+      "latitude": 32.0114,
+      "longitude": 34.7799
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=225",
+    "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 11:00-16:00; Su 11:00-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500018",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "אביזוהר 8, ירושלים",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=131",
+    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:30-15:30; Su 11:00-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500019",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "בית קמה",
+    "address": "צומת בית קמה",
+    "location": {
+      "latitude": 31.529,
+      "longitude": 34.741
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=240",
+    "openingHours": "Mo 10:00-21:00; Tu 10:00-21:00; We 10:00-21:00; Th 10:00-21:00; Su 10:00-21:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500020",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "גן יבנה",
+    "address": "המגינים 56, גן יבנה",
+    "location": {
+      "latitude": 31.787,
+      "longitude": 34.7045
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=219",
+    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:30-16:00; Su 11:00-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500021",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "באר שבע",
+    "address": "שדרות דוד טוביהו 125, באר שבע",
+    "location": {
+      "latitude": 31.2518,
+      "longitude": 34.7913
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=204",
+    "openingHours": "Mo 10:30-23:00; Tu 10:30-23:00; We 10:30-23:00; Th 10:30-23:00; Fr 10:00-16:00; Sa 21:30-00:00; Su 10:00-23:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500022",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "חיפה",
+    "address": "דרך שמחה גולן 54, חיפה",
+    "location": {
+      "latitude": 32.794,
+      "longitude": 34.9896
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=271",
+    "openingHours": "Mo 10:30-22:30; Tu 10:30-22:30; We 10:30-23:15; Th 10:30-23:15; Fr 10:00-16:00; Sa 21:30-23:30; Su 10:30-23:15",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500023",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "דימונה",
+    "address": "פרץ סנטר - אזור תעשיה דרומי, דימונה",
+    "location": {
+      "latitude": 31.0677,
+      "longitude": 35.0347
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=139",
+    "openingHours": "Mo 10:00-21:30; Tu 10:00-21:30; We 10:00-21:30; Th 10:00-21:30; Fr 10:00-15:00; Sa 21:30-23:00; Su 10:00-21:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500024",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "גדרה",
+    "address": "מרכז המושבה דרך בן גוריון 105, גדרה",
+    "location": {
+      "latitude": 31.812,
+      "longitude": 34.776
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=145",
+    "openingHours": "Mo 11:00-22:15; Tu 11:00-22:15; We 11:00-22:15; Th 11:00-22:15; Fr 10:30-16:00; Su 11:00-22:15",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500025",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "פתח תקווה",
+    "address": "העצמאות 65, פתח תקווה",
+    "location": {
+      "latitude": 32.084,
+      "longitude": 34.8878
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=190",
+    "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-15:30; Su 11:00-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500026",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "כפר סבא",
+    "address": "ויצמן 207, כפר סבא",
+    "location": {
+      "latitude": 32.1781,
+      "longitude": 34.9075
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=177",
+    "openingHours": "Mo 10:30-22:30; Tu 10:30-22:30; We 10:30-22:30; Th 10:30-22:30; Fr 10:30-16:00; Su 10:30-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500027",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "בן יהודה 7, ירושלים",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=209",
+    "openingHours": "Mo 11:00-23:00; Tu 11:00-23:00; We 11:00-23:00; Th 11:00-23:59; Fr 10:30-16:00; Sa 21:30-23:59; Su 11:00-23:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500028",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "תל מונד",
+    "address": "הדקל 47, תל מונד",
+    "location": {
+      "latitude": 32.2612,
+      "longitude": 34.9197
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=193",
+    "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-15:00; Su 11:00-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500029",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "מודיעין",
+    "address": "חיים וייצמן 28, מודיעין",
+    "location": {
+      "latitude": 31.8966,
+      "longitude": 35.0102
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=299",
+    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 11:00-15:30; Su 11:00-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500030",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "רמת גן",
+    "address": "חיים לנדאו 7, רמת גן",
+    "location": {
+      "latitude": 32.0682,
+      "longitude": 34.8243
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=297",
+    "openingHours": "Mo 10:30-22:00; Tu 10:30-22:00; We 10:30-22:00; Th 10:30-22:00; Fr 10:30-16:00; Su 10:30-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500031",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "באר שבע",
+    "address": "יצחק נפחא 25, באר שבע",
+    "location": {
+      "latitude": 31.2518,
+      "longitude": 34.7913
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=146",
+    "openingHours": "Mo 10:30-23:00; Tu 10:30-23:00; We 10:30-23:00; Th 10:30-23:00; Fr 10:00-16:00; Sa 21:30-23:00; Su 10:30-23:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500032",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "רמת גן",
+    "address": "היצירה 3, רמת גן",
+    "location": {
+      "latitude": 32.0682,
+      "longitude": 34.8243
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=61",
+    "openingHours": "Mo 11:00-04:00; Tu 11:00-04:00; We 11:00-04:00; Th 11:00-04:00; Fr 10:30-15:00; Sa 21:30-04:00; Su 11:00-04:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500033",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "לוד",
+    "address": "טרמינל 3 אולם כניסה, שדה תעופה בן גוריון",
+    "location": {
+      "latitude": 31.9516,
+      "longitude": 34.8942
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=256",
+    "openingHours": "Mo 02:00-23:59; Tu 02:00-23:59; We 02:00-23:59; Th 02:00-23:59; Fr 02:00-17:00; Sa 21:00-23:59; Su 02:00-23:59",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500034",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "נהריה",
+    "address": "שדרות בן צבי 1, נהריה",
+    "location": {
+      "latitude": 33.0045,
+      "longitude": 35.0955
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=220",
+    "openingHours": "Mo 10:30-23:00; Tu 10:30-23:00; We 10:30-23:00; Th 10:30-23:00; Fr 10:00-15:30; Sa 21:30-23:00; Su 10:30-23:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500035",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "אשדוד",
+    "address": "ז'בוטינסקי 44/45, אשדוד",
+    "location": {
+      "latitude": 31.804,
+      "longitude": 34.6553
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=152",
+    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:30-16:00; Su 11:00-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500036",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "אשדוד",
+    "address": "הגדוד העברי 6, אשדוד",
+    "location": {
+      "latitude": 31.804,
+      "longitude": 34.6553
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=269",
+    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 11:00-16:00; Sa 21:30-23:00; Su 11:00-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500037",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "שדרות יצחק רבין 10, ירושלים",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=210",
+    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-23:00; Fr 10:30-15:30; Sa 21:30-23:00; Su 11:00-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500038",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "חיפה",
+    "address": "ההסתדרות 55, צומת לב המפרץ, חיפה",
+    "location": {
+      "latitude": 32.794,
+      "longitude": 34.9896
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=17",
+    "openingHours": "Mo 10:45-23:00; Tu 10:45-23:00; We 10:45-23:00; Th 10:45-23:00; Fr 10:00-16:00; Sa 21:30-23:00; Su 10:45-23:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500039",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "רמלה",
+    "address": "שד' דוד רזיאל פינת רחוב שמשון, רמלה",
+    "location": {
+      "latitude": 31.9245,
+      "longitude": 34.8706
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=217",
+    "openingHours": "Mo 10:45-23:00; Tu 10:45-23:00; We 10:45-23:00; Th 10:30-23:00; Fr 10:00-16:00; Sa 21:30-23:00; Su 11:00-23:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500040",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "פתח תקווה",
+    "address": "תוצרת הארץ 3, פתח תקווה",
+    "location": {
+      "latitude": 32.084,
+      "longitude": 34.8878
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=282",
+    "openingHours": "Mo 11:00-23:00; Tu 11:00-23:00; We 11:00-23:00; Th 11:00-23:00; Fr 10:30-16:00; Sa 21:30-23:59; Su 11:00-23:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500041",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "נתניה",
+    "address": "דוד דותן 10, נתניה",
+    "location": {
+      "latitude": 32.3215,
+      "longitude": 34.8532
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=263",
+    "openingHours": "Mo 10:30-22:30; Tu 10:30-22:30; We 10:30-22:30; Th 10:30-22:30; Fr 10:30-17:30; Sa 22:00-23:00; Su 10:30-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500042",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "פתח תקווה",
+    "address": "רוטשילד 182, פתח תקווה",
+    "location": {
+      "latitude": 32.084,
+      "longitude": 34.8878
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=80",
+    "openingHours": "Mo 11:00-23:00; Tu 11:00-23:00; We 11:00-23:00; Th 11:00-23:00; Fr 10:30-16:00; Su 11:00-23:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500043",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "בית שאן",
+    "address": "העמל 7 א.ת בית שאן",
+    "location": {
+      "latitude": 32.501,
+      "longitude": 35.5
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=234",
+    "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-15:30; Sa 21:30-22:30; Su 11:00-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500044",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "יבנה",
+    "address": "הקישון 9, יבנה",
+    "location": {
+      "latitude": 31.8785,
+      "longitude": 34.7444
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=226",
+    "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 11:00-16:00; Su 11:00-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500045",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "אור עקיבא",
+    "address": "קניון אורות - הנשיא 1, אור עקיבא",
+    "location": {
+      "latitude": 32.504,
+      "longitude": 34.9156
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=9",
+    "openingHours": "Mo 10:30-22:30; Tu 10:30-22:30; We 10:30-22:30; Th 10:30-22:30; Fr 10:30-16:00; Su 10:30-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500046",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "רמת גן",
+    "address": "אבא הלל 301, רמת גן",
+    "location": {
+      "latitude": 32.0682,
+      "longitude": 34.8243
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=129",
+    "openingHours": "Mo 11:00-23:00; Tu 11:00-23:00; We 11:00-23:00; Th 11:00-23:00; Fr 10:30-16:00; Sa 21:15-23:00; Su 11:00-23:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500047",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "רמת גן",
+    "address": "ביאליק 76 פינת ז'בוטינסקי, רמת גן",
+    "location": {
+      "latitude": 32.0682,
+      "longitude": 34.8243
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=73",
+    "openingHours": "Mo 11:00-22:15; Tu 11:00-22:15; We 11:00-22:15; Th 11:00-22:15; Fr 10:30-16:00; Su 11:00-22:15",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500048",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "אשקלון",
+    "address": "שדרות בן גוריון 21, אשקלון",
+    "location": {
+      "latitude": 31.6688,
+      "longitude": 34.5742
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=123",
+    "openingHours": "Mo 10:30-22:00; Tu 10:30-22:00; We 10:30-22:00; Th 10:30-22:00; Fr 10:30-16:00; Sa 21:30-23:00; Su 10:30-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500049",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "דימונה",
+    "address": "המעפיל פינת גולדה מאיר, דימונה",
+    "location": {
+      "latitude": 31.0677,
+      "longitude": 35.0347
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=276",
+    "openingHours": "Mo 10:30-23:00; Tu 10:30-23:00; We 10:30-23:00; Th 10:30-23:00; Fr 10:30-16:00; Sa 21:30-23:00; Su 10:30-23:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500050",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "ראשון לציון",
+    "address": "מורשת ישראל 15, ראשון לציון",
+    "location": {
+      "latitude": 31.973,
+      "longitude": 34.7898
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=197",
+    "openingHours": "Mo 11:00-21:30; Tu 11:00-21:30; We 11:00-21:30; Th 11:00-21:30; Fr 11:00-15:30; Su 11:00-21:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500051",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "גבעת שמואל",
+    "address": "קניון הגבעה, נתניהו 29, גבעת שמואל",
+    "location": {
+      "latitude": 32.0782,
+      "longitude": 34.8458
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=157",
+    "openingHours": "Mo 11:00-22:15; Tu 11:00-22:15; We 11:00-22:15; Th 11:00-22:15; Fr 10:30-16:00; Su 11:00-22:15",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500052",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "נתניה",
+    "address": "הרצל 60, נתניה",
+    "location": {
+      "latitude": 32.3215,
+      "longitude": 34.8532
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=284",
+    "openingHours": "Mo 10:30-22:30; Tu 10:30-22:30; We 10:30-22:30; Th 10:30-22:30; Fr 10:30-17:30; Sa 21:30-22:30; Su 10:30-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500053",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "ים המלח",
+    "address": "עין בוקק, ים המלח",
+    "location": {
+      "latitude": 31.2025,
+      "longitude": 35.3939
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=252",
+    "openingHours": "Mo 11:00-21:00; Tu 11:00-21:00; We 11:00-21:00; Th 11:00-21:00; Fr 10:30-16:00; Su 11:00-21:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500054",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "קריית גת",
+    "address": "קניון לב העיר - כיכר פז 3, קרית גת",
+    "location": {
+      "latitude": 31.61,
+      "longitude": 34.7641
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=120",
+    "openingHours": "Mo 10:30-22:00; Tu 10:30-22:00; We 10:30-22:00; Th 10:30-22:00; Fr 10:30-16:00; Su 10:30-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500055",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "חדרה",
+    "address": "שדרות רוטשילד 40, חדרה",
+    "location": {
+      "latitude": 32.434,
+      "longitude": 34.9187
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=175",
+    "openingHours": "Mo 10:30-21:30; Tu 10:30-21:30; We 10:30-21:30; Th 10:30-21:30; Fr 10:00-15:00; Su 10:30-21:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500056",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "מבשרת ציון",
+    "address": "החוצבים 10, מבשרת ציון",
+    "location": {
+      "latitude": 31.806,
+      "longitude": 35.1467
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=230",
+    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:30-15:30; Sa 21:30-23:00; Su 11:00-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500057",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "חדרה",
+    "address": "שכטמן 10, חדרה",
+    "location": {
+      "latitude": 32.434,
+      "longitude": 34.9187
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=286",
+    "openingHours": "Mo 10:30-23:15; Tu 10:30-23:15; We 11:00-23:15; Th 10:30-23:15; Fr 10:45-16:00; Sa 21:30-23:15; Su 11:00-23:15",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500058",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "אגודת ספורט ביתר 1, ירושלים",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=178",
+    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:00-16:00; Sa 21:30-22:30; Su 11:00-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500059",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "באר שבע",
+    "address": "צומת אלי כהן, באר שבע",
+    "location": {
+      "latitude": 31.2518,
+      "longitude": 34.7913
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=231",
+    "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:00-16:00; Sa 21:00-23:00; Su 11:00-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500060",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "חולון",
+    "address": "גולדה מאיר 7, חולון",
+    "location": {
+      "latitude": 32.0114,
+      "longitude": 34.7799
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=251",
+    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:30-15:00; Sa 21:30-23:00; Su 11:30-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500061",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "ראשון לציון",
+    "address": "שדרות נים 2, ראשון לציון",
+    "location": {
+      "latitude": 31.973,
+      "longitude": 34.7898
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=232",
+    "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-15:00; Sa 21:30-22:00; Su 11:00-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500062",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "מודיעין",
+    "address": "לב העיר 2, מודיעין",
+    "location": {
+      "latitude": 31.8966,
+      "longitude": 35.0102
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=156",
+    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:30-15:30; Sa 21:30-23:00; Su 11:00-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500063",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "נתניה",
+    "address": "בני ברמן 2, פולג, נתניה",
+    "location": {
+      "latitude": 32.3215,
+      "longitude": 34.8532
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=188",
+    "openingHours": "Mo 10:30-22:15; Tu 10:30-22:15; We 10:30-22:15; Th 10:30-22:15; Fr 10:00-15:30; Sa 21:30-23:15; Su 10:30-22:15",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500064",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "תל אביב-יפו",
+    "address": "איינשטיין 40 רמת אביב, תל אביב-יפו",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=47",
+    "openingHours": "Mo 10:30-22:00; Tu 10:30-22:00; We 10:30-22:00; Th 10:30-22:00; Fr 10:30-16:00; Sa 21:30-23:00; Su 10:30-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500065",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "רעננה",
+    "address": "המלאכה 2, קרית אתגרים, רעננה",
+    "location": {
+      "latitude": 32.1839,
+      "longitude": 34.8708
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=89",
+    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:00-16:00; Sa 21:30-23:00; Su 11:00-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500066",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "קריית שמונה",
+    "address": "טשרניחובסקי 4, קריית שמונה",
+    "location": {
+      "latitude": 33.2076,
+      "longitude": 35.5709
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=35",
+    "openingHours": "Mo 11:00-21:00; Tu 11:00-21:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-15:00; Su 11:00-21:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500067",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "קריית אתא",
+    "address": "דרך חיפה 30, קריית אתא",
+    "location": {
+      "latitude": 32.8056,
+      "longitude": 35.1048
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=215",
+    "openingHours": "Mo 10:30-22:30; Tu 10:30-22:30; We 10:30-22:30; Th 10:30-22:00; Fr 10:30-16:00; Sa 21:30-23:00; Su 10:30-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500068",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "נס ציונה",
+    "address": "האירוסים 53, נס ציונה",
+    "location": {
+      "latitude": 31.9285,
+      "longitude": 34.7982
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=293",
+    "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-15:30; Su 11:00-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500069",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "נתניה",
+    "address": "מרכז אלון - טום לנטוס 26, נתניה",
+    "location": {
+      "latitude": 32.3215,
+      "longitude": 34.8532
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=202",
+    "openingHours": "Mo 10:30-22:30; Tu 10:30-22:30; We 10:30-22:30; Th 10:30-22:30; Fr 10:30-16:00; Su 10:30-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500070",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "ראש העין",
+    "address": "בזק 1, נווה אפק, ראש העין",
+    "location": {
+      "latitude": 32.0958,
+      "longitude": 34.9558
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=98",
+    "openingHours": "Mo 11:00-22:15; Tu 11:00-22:15; We 11:00-22:15; Th 11:00-22:00; Fr 10:30-15:30; Su 11:00-22:15",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500071",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "אשדוד",
+    "address": "מנגו 4, אשדוד",
+    "location": {
+      "latitude": 31.804,
+      "longitude": 34.6553
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=307",
+    "openingHours": "Mo 11:00-23:59; Tu 11:00-23:59; We 11:00-23:59; Th 11:00-23:59; Fr 11:00-16:30; Sa 21:30-23:59; Su 11:00-23:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500072",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "שוהם",
+    "address": "שדרות עמק איילון 30, שוהם",
+    "location": {
+      "latitude": 31.9957,
+      "longitude": 34.9373
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=34",
+    "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-16:00; Su 11:00-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500073",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "באר שבע",
+    "address": "שמריהו לוין 4, באר שבע",
+    "location": {
+      "latitude": 31.2518,
+      "longitude": 34.7913
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=50",
+    "openingHours": "Mo 09:30-22:15; Tu 09:30-22:15; We 09:30-22:15; Th 08:00-22:15; Fr 09:30-16:00; Su 08:00-22:15",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500074",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "טבריה",
+    "address": "הירדן פינת השילוח, טבריה",
+    "location": {
+      "latitude": 32.7921,
+      "longitude": 35.5312
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=180",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500075",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "עפולה",
+    "address": "שפרינצק 2, עפולה",
+    "location": {
+      "latitude": 32.6076,
+      "longitude": 35.2899
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=268",
+    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 10:30-22:30; Fr 10:00-16:00; Su 10:30-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500076",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "נשר",
+    "address": "מרכז קניות תל חנן, בר יהודה 174, נשר",
+    "location": {
+      "latitude": 32.775,
+      "longitude": 35.0398
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=119",
+    "openingHours": "Mo 10:30-22:00; Tu 10:30-22:00; We 10:30-22:00; Th 10:30-22:00; Fr 10:30-16:00; Su 10:30-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500077",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "התנופה 12, ירושלים",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=308",
+    "openingHours": "Mo 10:30-23:00; Tu 10:30-23:00; We 10:30-23:00; Th 10:30-23:00; Fr 10:30-16:00; Su 10:30-23:00",
+    "category": "meat",
     "kosherType": "rabanut_mekomi",
     "certifiedBy": "כשר",
     "source": "manual"
