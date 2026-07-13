@@ -5,6 +5,11 @@ const DAY_MAP: Record<string, number> = {
   Mo: 1, Tu: 2, We: 3, Th: 4, Fr: 5, Sa: 6, Su: 0,
 };
 
+// Hebrew day abbreviations (Israeli week: Sun=א' … Sat=ש')
+const DAY_HE: Record<string, string> = {
+  Su: "א'", Mo: "ב'", Tu: "ג'", We: "ד'", Th: "ה'", Fr: "ו'", Sa: "ש'",
+};
+
 function expandDayRange(spec: string): number[] {
   spec = spec.trim();
   const parts = spec.split('-');
@@ -42,7 +47,6 @@ export function isCurrentlyOpen(hoursStr: string | undefined): boolean | null {
 
   for (const clause of s.split(';')) {
     const c = clause.trim();
-    // Match "Mo-Fr 09:00-21:00" or "Mo,We 10:00-18:00"
     const match = c.match(/^([A-Za-z,\-]+)\s+(\d{1,2}:\d{2})-(\d{1,2}:\d{2})$/);
     if (!match) continue;
 
@@ -63,11 +67,49 @@ export function isCurrentlyOpen(hoursStr: string | undefined): boolean | null {
   return null;
 }
 
-/** Returns a short display string for the card (first clause only). */
+/** Translate a single OSM day-range spec (e.g. "Su-Th") to Hebrew (e.g. "א'-ה'"). */
+function translateDaySpec(daySpec: string): string {
+  return daySpec
+    .split(',')
+    .map(part => {
+      const trimmed = part.trim();
+      const rangeParts = trimmed.split('-');
+      if (rangeParts.length === 2) {
+        const from = DAY_HE[rangeParts[0]] ?? rangeParts[0];
+        const to   = DAY_HE[rangeParts[1]] ?? rangeParts[1];
+        return `${from}-${to}`;
+      }
+      return DAY_HE[trimmed] ?? trimmed;
+    })
+    .join(', ');
+}
+
+/** Returns a short Hebrew display string for the card (first clause only). */
 export function shortHours(hoursStr: string | undefined): string | null {
   if (!hoursStr) return null;
   const s = hoursStr.trim();
   if (s === '24/7') return '24/7';
-  // Return first clause, trimmed
-  return s.split(';')[0].trim();
+
+  const clause = s.split(';')[0].trim();
+  const match  = clause.match(/^([A-Za-z,\-]+)\s+(.+)$/);
+  if (!match) return clause;
+
+  return `${translateDaySpec(match[1])} ${match[2]}`;
+}
+
+/** Returns full Hebrew hours string with all clauses separated by " | ". */
+export function fullHoursHebrew(hoursStr: string | undefined): string | null {
+  if (!hoursStr) return null;
+  const s = hoursStr.trim();
+  if (s === '24/7') return 'פתוח 24/7';
+
+  return s
+    .split(';')
+    .map(clause => {
+      const c = clause.trim();
+      const match = c.match(/^([A-Za-z,\-]+)\s+(.+)$/);
+      if (!match) return c;
+      return `${translateDaySpec(match[1])} ${match[2]}`;
+    })
+    .join(' | ');
 }

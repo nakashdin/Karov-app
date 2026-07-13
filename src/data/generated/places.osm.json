@@ -56,7 +56,8 @@
     "tags": [
       "israeli"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-673087388",
@@ -69,7 +70,8 @@
       "longitude": 35.2270966
     },
     "source": "osm",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-777400976",
@@ -82,7 +84,8 @@
       "longitude": 34.7814516
     },
     "source": "osm",
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-889810577",
@@ -116,7 +119,8 @@
     "tags": [
       "dairy"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-1088081695",
@@ -134,7 +138,8 @@
       "fish",
       "meat"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-1088134125",
@@ -170,7 +175,8 @@
     "category": "meat",
     "website": "https://www.burgersbar.co.il",
     "instagram": "https://www.instagram.com/burgersbar",
-    "facebook": "https://www.facebook.com/BurgersBar"
+    "facebook": "https://www.facebook.com/BurgersBar",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-1405933026",
@@ -189,7 +195,8 @@
     "category": "dairy",
     "website": "https://www.aroma.co.il",
     "instagram": "https://www.instagram.com/aromaisrael",
-    "facebook": "https://www.facebook.com/AromaIsrael"
+    "facebook": "https://www.facebook.com/AromaIsrael",
+    "openingHours": "Su-Th 07:00-22:00; Fr 07:00-15:00"
   },
   {
     "id": "osm-node-1477010459",
@@ -208,7 +215,8 @@
     "category": "dairy",
     "website": "https://www.coffix.co.il",
     "instagram": "https://www.instagram.com/coffix_israel",
-    "facebook": "https://www.facebook.com/coffix"
+    "facebook": "https://www.facebook.com/coffix",
+    "openingHours": "Su-Th 07:00-22:00; Fr 07:00-15:00"
   },
   {
     "id": "osm-node-1643352285",
@@ -224,7 +232,8 @@
     "tags": [
       "moroccan"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-1667986371",
@@ -258,7 +267,8 @@
     },
     "source": "osm",
     "phone": "+972542547232",
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 08:00-22:00; Fr 08:00-15:00"
   },
   {
     "id": "osm-node-1703978185",
@@ -271,7 +281,8 @@
       "longitude": 35.2214555
     },
     "source": "osm",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-1740901161",
@@ -288,7 +299,8 @@
     "tags": [
       "pizza"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-23:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-1741956261",
@@ -319,7 +331,8 @@
       "longitude": 34.7678117
     },
     "source": "osm",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-1753285811",
@@ -336,7 +349,8 @@
     "tags": [
       "steak_house"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-1763004894",
@@ -353,7 +367,8 @@
     "tags": [
       "american"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-1763010099",
@@ -370,7 +385,8 @@
     "tags": [
       "burger"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-1763014171",
@@ -387,7 +403,8 @@
     "tags": [
       "steak_house"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-1763017985",
@@ -404,7 +421,8 @@
     "tags": [
       "Meat"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-1763020169",
@@ -421,7 +439,8 @@
     "tags": [
       "Meat"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-1763027555",
@@ -438,7 +457,8 @@
     "tags": [
       "Meat"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-1763031739",
@@ -455,7 +475,8 @@
     "tags": [
       "fish"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-1763919142",
@@ -472,7 +493,8 @@
     "tags": [
       "steak_house"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-1763972919",
@@ -490,7 +512,8 @@
       "coffee_shop",
       "dairy"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 08:00-22:00; Fr 08:00-15:00"
   },
   {
     "id": "osm-node-1763987699",
@@ -507,7 +530,8 @@
     "tags": [
       "japanese"
     ],
-    "category": "parve"
+    "category": "parve",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-1764005156",
@@ -524,7 +548,8 @@
     "tags": [
       "israeli"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-1764033404",
@@ -541,7 +566,8 @@
     "tags": [
       "french"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-1820017020",
@@ -555,7 +581,8 @@
     },
     "source": "osm",
     "phone": "+97299562117",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-1938812801",
@@ -568,7 +595,8 @@
       "longitude": 34.7386116
     },
     "source": "osm",
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-1989338503",
@@ -620,7 +648,8 @@
       "longitude": 34.786167
     },
     "source": "osm",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-2078990448",
@@ -636,7 +665,8 @@
     "tags": [
       "american"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-2078991165",
@@ -649,7 +679,8 @@
       "longitude": 35.5561903
     },
     "source": "osm",
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 08:00-22:00; Fr 08:00-15:00"
   },
   {
     "id": "osm-node-2078991174",
@@ -662,7 +693,8 @@
       "longitude": 35.5557554
     },
     "source": "osm",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 10:00-22:00; Fr 10:00-15:00"
   },
   {
     "id": "osm-node-2078991183",
@@ -678,7 +710,8 @@
     "tags": [
       "pizza"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-23:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-2079006787",
@@ -711,7 +744,8 @@
       "pizza"
     ],
     "category": "dairy",
-    "website": "https://www.pizzashemesh.co.il"
+    "website": "https://www.pizzashemesh.co.il",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-2124580743",
@@ -724,7 +758,8 @@
       "longitude": 34.7975675
     },
     "source": "osm",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-2131481387",
@@ -761,7 +796,8 @@
     "category": "dairy",
     "website": "https://www.aroma.co.il",
     "instagram": "https://www.instagram.com/aromaisrael",
-    "facebook": "https://www.facebook.com/AromaIsrael"
+    "facebook": "https://www.facebook.com/AromaIsrael",
+    "openingHours": "Su-Th 07:00-22:00; Fr 07:00-15:00"
   },
   {
     "id": "osm-node-2144611975",
@@ -780,7 +816,8 @@
     "category": "meat",
     "website": "https://www.mcdonalds.co.il",
     "instagram": "https://www.instagram.com/mcdonaldsisrael",
-    "facebook": "https://www.facebook.com/McDonaldsIsrael"
+    "facebook": "https://www.facebook.com/McDonaldsIsrael",
+    "openingHours": "Su-Th 08:00-23:00; Fr 08:00-16:00"
   },
   {
     "id": "osm-node-2144612020",
@@ -796,7 +833,8 @@
     "tags": [
       "japanese"
     ],
-    "category": "parve"
+    "category": "parve",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-2165350037",
@@ -815,7 +853,8 @@
     "category": "meat",
     "website": "https://www.burgersbar.co.il",
     "instagram": "https://www.instagram.com/burgersbar",
-    "facebook": "https://www.facebook.com/BurgersBar"
+    "facebook": "https://www.facebook.com/BurgersBar",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-2318762527",
@@ -891,7 +930,8 @@
     "tags": [
       "pizza"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-2394477277",
@@ -908,7 +948,8 @@
       "pizza"
     ],
     "category": "dairy",
-    "website": "https://www.pizzashemesh.co.il"
+    "website": "https://www.pizzashemesh.co.il",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-2577660818",
@@ -927,7 +968,8 @@
     "category": "meat",
     "website": "https://www.burgersbar.co.il",
     "instagram": "https://www.instagram.com/burgersbar",
-    "facebook": "https://www.facebook.com/BurgersBar"
+    "facebook": "https://www.facebook.com/BurgersBar",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-2701869274",
@@ -941,7 +983,8 @@
     },
     "source": "osm",
     "phone": "+97299558207",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-2701869276",
@@ -958,7 +1001,8 @@
     "tags": [
       "coffee_shop"
     ],
-    "category": "parve"
+    "category": "parve",
+    "openingHours": "Su-Th 08:00-22:00; Fr 08:00-15:00"
   },
   {
     "id": "osm-node-2837962901",
@@ -974,7 +1018,8 @@
     "tags": [
       "hawaiian"
     ],
-    "category": "parve"
+    "category": "parve",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-2862959843",
@@ -1073,7 +1118,8 @@
     "category": "dairy",
     "website": "https://www.coffix.co.il",
     "instagram": "https://www.instagram.com/coffix_israel",
-    "facebook": "https://www.facebook.com/coffix"
+    "facebook": "https://www.facebook.com/coffix",
+    "openingHours": "Su-Th 07:00-22:00; Fr 07:00-15:00"
   },
   {
     "id": "osm-node-4161854779",
@@ -1086,7 +1132,8 @@
       "longitude": 34.7918571
     },
     "source": "osm",
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-4275386775",
@@ -1099,7 +1146,8 @@
       "longitude": 34.7918513
     },
     "source": "osm",
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-4352401257",
@@ -1135,7 +1183,8 @@
     "category": "dairy",
     "website": "https://www.roladin.co.il",
     "instagram": "https://www.instagram.com/roladin",
-    "facebook": "https://www.facebook.com/roladin"
+    "facebook": "https://www.facebook.com/roladin",
+    "openingHours": "Su-Th 07:00-21:00; Fr 07:00-14:00"
   },
   {
     "id": "osm-node-4421769054",
@@ -1227,7 +1276,8 @@
     "category": "meat",
     "website": "https://www.mcdonalds.co.il",
     "instagram": "https://www.instagram.com/mcdonaldsisrael",
-    "facebook": "https://www.facebook.com/McDonaldsIsrael"
+    "facebook": "https://www.facebook.com/McDonaldsIsrael",
+    "openingHours": "Su-Th 08:00-23:00; Fr 08:00-16:00"
   },
   {
     "id": "osm-node-4818808608",
@@ -1243,7 +1293,8 @@
     "category": "dairy",
     "website": "https://www.cafegreg.co.il",
     "instagram": "https://www.instagram.com/cafegreg",
-    "facebook": "https://www.facebook.com/CafeGreg"
+    "facebook": "https://www.facebook.com/CafeGreg",
+    "openingHours": "Su-Th 08:00-22:00; Fr 08:00-15:00"
   },
   {
     "id": "osm-node-4828911835",
@@ -1259,7 +1310,8 @@
     "tags": [
       "burger"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-4916855022",
@@ -1278,7 +1330,8 @@
     "category": "parve",
     "website": "https://www.humuselihu.co.il",
     "instagram": "https://www.instagram.com/humus_elihu",
-    "facebook": "https://www.facebook.com/HumusElihu"
+    "facebook": "https://www.facebook.com/HumusElihu",
+    "openingHours": "Su-Th 08:00-21:00; Fr 08:00-15:00"
   },
   {
     "id": "osm-node-5114974763",
@@ -1311,7 +1364,8 @@
     },
     "source": "osm",
     "phone": "+972 4 694 4508",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-5115162603",
@@ -1327,7 +1381,8 @@
     "tags": [
       "shawarma"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 10:00-22:00; Fr 10:00-15:00"
   },
   {
     "id": "osm-node-5128936020",
@@ -1381,7 +1436,8 @@
     },
     "source": "osm",
     "phone": "+972 4 690 4443",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-5143538759",
@@ -1413,7 +1469,8 @@
     },
     "source": "osm",
     "phone": "+972 50 202 2610;+972 50 549 8309",
-    "category": "parve"
+    "category": "parve",
+    "openingHours": "Su-Th 09:00-20:00; Fr 09:00-14:00"
   },
   {
     "id": "osm-node-5143557202",
@@ -1430,7 +1487,8 @@
     "tags": [
       "burger"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-5143582538",
@@ -1461,7 +1519,8 @@
     "tags": [
       "italian"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-5170599211",
@@ -1477,7 +1536,8 @@
     "tags": [
       "grill"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-5176327119",
@@ -1491,7 +1551,8 @@
     },
     "source": "osm",
     "phone": "+972 4 821 20 42",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-5181482358",
@@ -1543,7 +1604,8 @@
     "tags": [
       "coffee_shop"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 08:00-22:00; Fr 08:00-15:00"
   },
   {
     "id": "osm-node-5221319346",
@@ -1708,7 +1770,8 @@
     },
     "source": "osm",
     "phone": "+972 4 652 5032",
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-5302021702",
@@ -1721,7 +1784,8 @@
       "longitude": 35.5451787
     },
     "source": "osm",
-    "category": "parve"
+    "category": "parve",
+    "openingHours": "Su-Th 09:00-20:00; Fr 09:00-14:00"
   },
   {
     "id": "osm-node-5302040666",
@@ -1750,7 +1814,8 @@
     },
     "source": "osm",
     "phone": "+972 4 688 5777",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-5392535276",
@@ -1766,7 +1831,8 @@
     "category": "parve",
     "website": "https://www.humuselihu.co.il",
     "instagram": "https://www.instagram.com/humus_elihu",
-    "facebook": "https://www.facebook.com/HumusElihu"
+    "facebook": "https://www.facebook.com/HumusElihu",
+    "openingHours": "Su-Th 08:00-21:00; Fr 08:00-15:00"
   },
   {
     "id": "osm-node-5498980275",
@@ -1780,7 +1846,8 @@
     },
     "source": "osm",
     "phone": "+972 77 201 6918",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-5498992177",
@@ -1799,7 +1866,8 @@
     "category": "dairy",
     "website": "https://www.cafegreg.co.il",
     "instagram": "https://www.instagram.com/cafegreg",
-    "facebook": "https://www.facebook.com/CafeGreg"
+    "facebook": "https://www.facebook.com/CafeGreg",
+    "openingHours": "Su-Th 08:00-22:00; Fr 08:00-15:00"
   },
   {
     "id": "osm-node-5613754222",
@@ -1833,7 +1901,8 @@
     "tags": [
       "falafel"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-5711530694",
@@ -1867,7 +1936,8 @@
       "longitude": 35.5484588
     },
     "source": "osm",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-5728427295",
@@ -1918,7 +1988,8 @@
       "longitude": 34.7977633
     },
     "source": "osm",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-5761235277",
@@ -1946,7 +2017,8 @@
       "longitude": 35.6148844
     },
     "source": "osm",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-5890281794",
@@ -1959,7 +2031,8 @@
       "longitude": 34.8043516
     },
     "source": "osm",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-5890281795",
@@ -1973,7 +2046,8 @@
     },
     "source": "osm",
     "phone": "+972 3 979 9484",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-5894335311",
@@ -1989,7 +2063,8 @@
     "tags": [
       "pizza"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-5917569185",
@@ -2026,7 +2101,8 @@
     "tags": [
       "mediterranean"
     ],
-    "category": "parve"
+    "category": "parve",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-5981044016",
@@ -2060,7 +2136,8 @@
       "longitude": 34.8179921
     },
     "source": "osm",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-5997818140",
@@ -2074,7 +2151,8 @@
     },
     "source": "osm",
     "phone": "+972 50 600 9797",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-6014902517",
@@ -2090,7 +2168,8 @@
     "tags": [
       "regional"
     ],
-    "category": "parve"
+    "category": "parve",
+    "openingHours": "Su-Th 09:00-20:00; Fr 09:00-14:00"
   },
   {
     "id": "osm-node-6014904184",
@@ -2103,7 +2182,8 @@
       "longitude": 35.5499571
     },
     "source": "osm",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-6014908134",
@@ -2116,7 +2196,8 @@
       "longitude": 35.5498406
     },
     "source": "osm",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-6015034147",
@@ -2204,7 +2285,8 @@
       "cake",
       "coffee_shop"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-6195852402",
@@ -2278,7 +2360,8 @@
       "longitude": 35.0145097
     },
     "source": "osm",
-    "category": "parve"
+    "category": "parve",
+    "openingHours": "Su-Th 09:00-20:00; Fr 09:00-14:00"
   },
   {
     "id": "osm-node-6469411085",
@@ -2297,7 +2380,8 @@
     "category": "meat",
     "website": "https://www.newdeli.co.il",
     "instagram": "https://www.instagram.com/newdeli_israel",
-    "facebook": "https://www.facebook.com/NewDeliIsrael"
+    "facebook": "https://www.facebook.com/NewDeliIsrael",
+    "openingHours": "Su-Th 10:00-22:00; Fr 10:00-15:00"
   },
   {
     "id": "osm-node-6469411086",
@@ -2316,7 +2400,8 @@
     "category": "meat",
     "website": "https://www.burgersbar.co.il",
     "instagram": "https://www.instagram.com/burgersbar",
-    "facebook": "https://www.facebook.com/BurgersBar"
+    "facebook": "https://www.facebook.com/BurgersBar",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-6469411088",
@@ -2347,7 +2432,8 @@
       "longitude": 34.7847786
     },
     "source": "osm",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-6512849574",
@@ -2363,7 +2449,8 @@
     "tags": [
       "cafe"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 08:00-22:00; Fr 08:00-15:00"
   },
   {
     "id": "osm-node-6526904599",
@@ -2393,7 +2480,8 @@
       "longitude": 35.5734823
     },
     "source": "osm",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-6545190948",
@@ -2406,7 +2494,8 @@
       "longitude": 35.54863
     },
     "source": "osm",
-    "category": "parve"
+    "category": "parve",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-6547411049",
@@ -2460,7 +2549,8 @@
     "tags": [
       "georgian"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-6754297391",
@@ -2476,7 +2566,8 @@
     "tags": [
       "pizza"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-23:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-6754328385",
@@ -2492,7 +2583,8 @@
     "tags": [
       "burger"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-6854597174",
@@ -2508,7 +2600,8 @@
     "tags": [
       "burger"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-7056388962",
@@ -2527,7 +2620,8 @@
     "category": "meat",
     "website": "https://www.mcdonalds.co.il",
     "instagram": "https://www.instagram.com/mcdonaldsisrael",
-    "facebook": "https://www.facebook.com/McDonaldsIsrael"
+    "facebook": "https://www.facebook.com/McDonaldsIsrael",
+    "openingHours": "Su-Th 08:00-23:00; Fr 08:00-16:00"
   },
   {
     "id": "osm-node-7064678724",
@@ -2575,7 +2669,8 @@
     "tags": [
       "kebab"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 10:00-22:00; Fr 10:00-15:00"
   },
   {
     "id": "osm-node-7620478217",
@@ -2592,7 +2687,8 @@
     "tags": [
       "grill"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-7832129531",
@@ -2624,7 +2720,8 @@
       "longitude": 34.8608325
     },
     "source": "osm",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-8142743152",
@@ -2643,7 +2740,8 @@
     "category": "meat",
     "website": "https://www.burgerim.co.il",
     "instagram": "https://www.instagram.com/burgerimisrael",
-    "facebook": "https://www.facebook.com/burgerimisrael"
+    "facebook": "https://www.facebook.com/burgerimisrael",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-8142764996",
@@ -2656,7 +2754,8 @@
       "longitude": 34.8674039
     },
     "source": "osm",
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-8679277517",
@@ -2669,7 +2768,8 @@
       "longitude": 34.8129412
     },
     "source": "osm",
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-8700929117",
@@ -2700,7 +2800,8 @@
     "tags": [
       "burger"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-9190590717",
@@ -2717,7 +2818,8 @@
       "asian",
       "japanese"
     ],
-    "category": "parve"
+    "category": "parve",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-9570930731",
@@ -2734,7 +2836,8 @@
     "tags": [
       "burger"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-9724648574",
@@ -2748,7 +2851,8 @@
     },
     "source": "osm",
     "phone": "+972 08 947 4293",
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-9874070518",
@@ -2820,7 +2924,8 @@
     "tags": [
       "burger"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-10176143226",
@@ -2863,7 +2968,8 @@
       "longitude": 34.7739903
     },
     "source": "osm",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-10279205509",
@@ -2876,7 +2982,8 @@
       "longitude": 34.7740876
     },
     "source": "osm",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 10:00-22:00; Fr 10:00-15:00"
   },
   {
     "id": "osm-node-10299385509",
@@ -2911,7 +3018,8 @@
     "tags": [
       "hummus"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-10669458560",
@@ -2927,7 +3035,8 @@
     "tags": [
       "poke"
     ],
-    "category": "parve"
+    "category": "parve",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-10682695046",
@@ -2943,7 +3052,8 @@
     "tags": [
       "regional"
     ],
-    "category": "parve"
+    "category": "parve",
+    "openingHours": "Su-Th 09:00-20:00; Fr 09:00-14:00"
   },
   {
     "id": "osm-node-10723520074",
@@ -2961,7 +3071,8 @@
       "kebab",
       "regional"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-10727399152",
@@ -2977,7 +3088,8 @@
     "tags": [
       "regional"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-10795083145",
@@ -2990,7 +3102,8 @@
       "longitude": 34.7889942
     },
     "source": "osm",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-10812430078",
@@ -3008,7 +3121,8 @@
       "middle_eastern",
       "falafel"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-10812430080",
@@ -3024,7 +3138,8 @@
     "tags": [
       "asian"
     ],
-    "category": "parve"
+    "category": "parve",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-10814448811",
@@ -3038,7 +3153,8 @@
     },
     "source": "osm",
     "phone": "+97226644122",
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-10814448813",
@@ -3054,7 +3170,8 @@
     "tags": [
       "sandwich"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-10814448814",
@@ -3071,7 +3188,8 @@
     "tags": [
       "salad"
     ],
-    "category": "parve"
+    "category": "parve",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-10814448820",
@@ -3084,7 +3202,8 @@
       "longitude": 34.786662
     },
     "source": "osm",
-    "category": "parve"
+    "category": "parve",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-10829518083",
@@ -3097,7 +3216,8 @@
       "longitude": 34.7878682
     },
     "source": "osm",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-10829562649",
@@ -3110,7 +3230,8 @@
       "longitude": 34.7877309
     },
     "source": "osm",
-    "category": "parve"
+    "category": "parve",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-10955696002",
@@ -3164,7 +3285,8 @@
       "longitude": 34.7819489
     },
     "source": "osm",
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-10970907888",
@@ -3203,7 +3325,8 @@
       "arab",
       "mediterranean"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-11009821837",
@@ -3235,7 +3358,8 @@
       "longitude": 34.7792193
     },
     "source": "osm",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-11091229844",
@@ -3251,7 +3375,8 @@
     "tags": [
       "italian"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-11163232373",
@@ -3264,7 +3389,8 @@
       "longitude": 34.7894083
     },
     "source": "osm",
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-11169618825",
@@ -3277,7 +3403,8 @@
       "longitude": 34.7583996
     },
     "source": "osm",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-11169880831",
@@ -3337,7 +3464,8 @@
       "salad",
       "regional"
     ],
-    "category": "parve"
+    "category": "parve",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-11226651758",
@@ -3350,7 +3478,8 @@
       "longitude": 34.8107971
     },
     "source": "osm",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-11226656316",
@@ -3363,7 +3492,8 @@
       "longitude": 34.8108509
     },
     "source": "osm",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 10:00-22:00; Fr 10:00-15:00"
   },
   {
     "id": "osm-node-11226657264",
@@ -3394,7 +3524,8 @@
       "longitude": 34.7819893
     },
     "source": "osm",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-11330876273",
@@ -3410,7 +3541,8 @@
     "tags": [
       "noodle"
     ],
-    "category": "parve"
+    "category": "parve",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-11330876274",
@@ -3426,7 +3558,8 @@
     "tags": [
       "burger"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-11380388507",
@@ -3439,7 +3572,8 @@
       "longitude": 34.7888184
     },
     "source": "osm",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-11395473947",
@@ -3452,7 +3586,8 @@
       "longitude": 34.7873319
     },
     "source": "osm",
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-11397608290",
@@ -3471,7 +3606,8 @@
     "category": "parve",
     "website": "https://www.humuselihu.co.il",
     "instagram": "https://www.instagram.com/humus_elihu",
-    "facebook": "https://www.facebook.com/HumusElihu"
+    "facebook": "https://www.facebook.com/HumusElihu",
+    "openingHours": "Su-Th 08:00-21:00; Fr 08:00-15:00"
   },
   {
     "id": "osm-node-11405068715",
@@ -3490,7 +3626,8 @@
     "category": "meat",
     "website": "https://www.burgerim.co.il",
     "instagram": "https://www.instagram.com/burgerimisrael",
-    "facebook": "https://www.facebook.com/burgerimisrael"
+    "facebook": "https://www.facebook.com/burgerimisrael",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-11414872844",
@@ -3503,7 +3640,8 @@
       "longitude": 34.7896236
     },
     "source": "osm",
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-11414907376",
@@ -3519,7 +3657,8 @@
     "tags": [
       "pizza"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-23:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-11518709323",
@@ -3535,7 +3674,8 @@
     "tags": [
       "kebab"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-11522749847",
@@ -3551,7 +3691,8 @@
     "tags": [
       "meat"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-11542534410",
@@ -3583,7 +3724,8 @@
       "sushi",
       "burger"
     ],
-    "category": "parve"
+    "category": "parve",
+    "openingHours": "Su-Th 12:00-22:30; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-11681572591",
@@ -3596,7 +3738,8 @@
       "longitude": 34.7733771
     },
     "source": "osm",
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-11685020594",
@@ -3609,7 +3752,8 @@
       "longitude": 34.7746572
     },
     "source": "osm",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-11711437812",
@@ -3628,7 +3772,8 @@
     "category": "meat",
     "website": "https://www.newdeli.co.il",
     "instagram": "https://www.instagram.com/newdeli_israel",
-    "facebook": "https://www.facebook.com/NewDeliIsrael"
+    "facebook": "https://www.facebook.com/NewDeliIsrael",
+    "openingHours": "Su-Th 10:00-22:00; Fr 10:00-15:00"
   },
   {
     "id": "osm-node-11716322614",
@@ -3645,7 +3790,8 @@
       "pizza"
     ],
     "category": "dairy",
-    "website": "https://www.pizzashemesh.co.il"
+    "website": "https://www.pizzashemesh.co.il",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-11749994120",
@@ -3659,7 +3805,8 @@
     },
     "source": "osm",
     "phone": "+97236333721",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-11793136463",
@@ -3675,7 +3822,8 @@
     "tags": [
       "pizza"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-23:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-11802320072",
@@ -3709,7 +3857,8 @@
       "longitude": 34.8381858
     },
     "source": "osm",
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 08:00-22:00; Fr 08:00-15:00"
   },
   {
     "id": "osm-node-11818013490",
@@ -3727,7 +3876,8 @@
       "pizza",
       "pasta"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-23:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-11843060618",
@@ -3745,7 +3895,8 @@
       "barbecue",
       "mediterranean"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-11868727704",
@@ -3761,7 +3912,8 @@
     "tags": [
       "sandwich"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-11886042983",
@@ -3778,7 +3930,8 @@
       "pizza"
     ],
     "category": "dairy",
-    "website": "https://www.pizzashemesh.co.il"
+    "website": "https://www.pizzashemesh.co.il",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-11922661782",
@@ -3794,7 +3947,8 @@
     "tags": [
       "jewish"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-11980703710",
@@ -3811,7 +3965,8 @@
     "tags": [
       "ליל_שישי"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-11980731518",
@@ -3828,7 +3983,8 @@
     "tags": [
       "pizza"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-23:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-11987921470",
@@ -3842,7 +3998,8 @@
     },
     "source": "osm",
     "phone": "086981212",
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-12064685793",
@@ -3859,7 +4016,8 @@
     "tags": [
       "regional"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-12078593856",
@@ -3873,7 +4031,8 @@
     },
     "source": "osm",
     "phone": "+972 54 223 0223",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-12084976087",
@@ -3886,7 +4045,8 @@
       "longitude": 34.7705624
     },
     "source": "osm",
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-12086618152",
@@ -4055,7 +4215,8 @@
     "tags": [
       "middle_eastern"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-12187684500",
@@ -4071,7 +4232,8 @@
     "tags": [
       "regional"
     ],
-    "category": "parve"
+    "category": "parve",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-12187698113",
@@ -4085,7 +4247,8 @@
     },
     "source": "osm",
     "phone": "+972 54 586 6366",
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 07:00-18:00; Fr 07:00-14:00"
   },
   {
     "id": "osm-node-12189931087",
@@ -4099,7 +4262,8 @@
     },
     "source": "osm",
     "phone": "+972 3 681 0222",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-12208598222",
@@ -4130,7 +4294,8 @@
     },
     "source": "osm",
     "phone": "+972 25853555",
-    "category": "parve"
+    "category": "parve",
+    "openingHours": "Su-Th 09:00-20:00; Fr 09:00-14:00"
   },
   {
     "id": "osm-node-12281652113",
@@ -4143,7 +4308,8 @@
       "longitude": 34.7696537
     },
     "source": "osm",
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 07:00-18:00; Fr 07:00-14:00"
   },
   {
     "id": "osm-node-12301608266",
@@ -4157,7 +4323,8 @@
     },
     "source": "osm",
     "phone": "088522593",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-12301648358",
@@ -4174,7 +4341,8 @@
     "tags": [
       "שווארמה"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-12462916500",
@@ -4191,7 +4359,8 @@
     "tags": [
       "burger"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-12505424898",
@@ -4207,7 +4376,8 @@
     "category": "dairy",
     "website": "https://www.golda.co.il",
     "instagram": "https://www.instagram.com/golda_icecream",
-    "facebook": "https://www.facebook.com/goldaicecream"
+    "facebook": "https://www.facebook.com/goldaicecream",
+    "openingHours": "Su-Th 11:00-22:00; Fr 10:00-15:00"
   },
   {
     "id": "osm-node-12520425651",
@@ -4224,7 +4394,8 @@
     "tags": [
       "regional"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-12529700323",
@@ -4237,7 +4408,8 @@
       "longitude": 34.7986565
     },
     "source": "osm",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-12529707486",
@@ -4277,7 +4449,8 @@
     "category": "dairy",
     "website": "https://www.pizzahut.co.il",
     "instagram": "https://www.instagram.com/pizzahutisrael",
-    "facebook": "https://www.facebook.com/PizzaHutIsrael"
+    "facebook": "https://www.facebook.com/PizzaHutIsrael",
+    "openingHours": "Su-Th 12:00-23:00; Fr 12:00-16:00; Sa 21:00-23:00"
   },
   {
     "id": "osm-node-12547329544",
@@ -4293,7 +4466,8 @@
     "tags": [
       "pizza"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-23:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-12557310999",
@@ -4309,7 +4483,8 @@
     "tags": [
       "pizza"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-23:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-12557322215",
@@ -4330,7 +4505,8 @@
     "category": "dairy",
     "website": "https://www.rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel",
-    "facebook": "https://www.facebook.com/ReBarIsrael"
+    "facebook": "https://www.facebook.com/ReBarIsrael",
+    "openingHours": "Su-Th 09:00-23:00; Fr 09:00-16:00"
   },
   {
     "id": "osm-node-12557322221",
@@ -4346,7 +4522,8 @@
     "category": "dairy",
     "website": "https://www.golda.co.il",
     "instagram": "https://www.instagram.com/golda_icecream",
-    "facebook": "https://www.facebook.com/goldaicecream"
+    "facebook": "https://www.facebook.com/goldaicecream",
+    "openingHours": "Su-Th 11:00-22:00; Fr 10:00-15:00"
   },
   {
     "id": "osm-node-12557322224",
@@ -4365,7 +4542,8 @@
     "category": "meat",
     "website": "https://www.mcdonalds.co.il",
     "instagram": "https://www.instagram.com/mcdonaldsisrael",
-    "facebook": "https://www.facebook.com/McDonaldsIsrael"
+    "facebook": "https://www.facebook.com/McDonaldsIsrael",
+    "openingHours": "Su-Th 08:00-23:00; Fr 08:00-16:00"
   },
   {
     "id": "osm-node-12578960888",
@@ -4378,7 +4556,8 @@
       "longitude": 34.8107501
     },
     "source": "osm",
-    "category": "parve"
+    "category": "parve",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-12578972524",
@@ -4391,7 +4570,8 @@
       "longitude": 34.8235619
     },
     "source": "osm",
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 08:00-22:00; Fr 08:00-15:00"
   },
   {
     "id": "osm-node-12578978007",
@@ -4404,7 +4584,8 @@
       "longitude": 34.8223891
     },
     "source": "osm",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-12587501531",
@@ -4420,7 +4601,8 @@
     "tags": [
       "shawarma"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 10:00-22:00; Fr 10:00-15:00"
   },
   {
     "id": "osm-node-12588050745",
@@ -4450,7 +4632,8 @@
       "longitude": 34.7940592
     },
     "source": "osm",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-12588084718",
@@ -4597,7 +4780,8 @@
       "longitude": 34.9445341
     },
     "source": "osm",
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-12636593463",
@@ -4614,7 +4798,8 @@
     "tags": [
       "pizza"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-23:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-12639636342",
@@ -4631,7 +4816,8 @@
       "pizza",
       "falafel"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-12668721404",
@@ -4644,7 +4830,8 @@
       "longitude": 34.7722286
     },
     "source": "osm",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-12668725563",
@@ -4657,7 +4844,8 @@
       "longitude": 34.7723116
     },
     "source": "osm",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-12673043882",
@@ -4676,7 +4864,8 @@
     "category": "meat",
     "website": "https://www.newdeli.co.il",
     "instagram": "https://www.instagram.com/newdeli_israel",
-    "facebook": "https://www.facebook.com/NewDeliIsrael"
+    "facebook": "https://www.facebook.com/NewDeliIsrael",
+    "openingHours": "Su-Th 10:00-22:00; Fr 10:00-15:00"
   },
   {
     "id": "osm-node-12676686493",
@@ -4692,7 +4881,8 @@
     "tags": [
       "pizza"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-23:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-12695181881",
@@ -4744,7 +4934,8 @@
     "category": "meat",
     "website": "https://www.burgerim.co.il",
     "instagram": "https://www.instagram.com/burgerimisrael",
-    "facebook": "https://www.facebook.com/burgerimisrael"
+    "facebook": "https://www.facebook.com/burgerimisrael",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-12737103897",
@@ -4775,7 +4966,8 @@
     "tags": [
       "asian"
     ],
-    "category": "parve"
+    "category": "parve",
+    "openingHours": "Su-Th 12:00-22:30; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-12809538406",
@@ -4806,7 +4998,8 @@
     },
     "source": "osm",
     "phone": "+972 77 303 4050",
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-12946471285",
@@ -4837,7 +5030,8 @@
     "tags": [
       "soup"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-13057613010",
@@ -4856,7 +5050,8 @@
       "salad",
       "bagel"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-23:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-13057613011",
@@ -4869,7 +5064,8 @@
       "longitude": 35.2046722
     },
     "source": "osm",
-    "category": "parve"
+    "category": "parve",
+    "openingHours": "Su-Th 09:00-20:00; Fr 09:00-14:00"
   },
   {
     "id": "osm-node-13073821956",
@@ -4886,7 +5082,8 @@
       "pizza"
     ],
     "category": "dairy",
-    "website": "https://www.pizzashemesh.co.il"
+    "website": "https://www.pizzashemesh.co.il",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-13137796250",
@@ -5030,7 +5227,8 @@
     "tags": [
       "hummus"
     ],
-    "category": "parve"
+    "category": "parve",
+    "openingHours": "Su-Th 09:00-20:00; Fr 09:00-14:00"
   },
   {
     "id": "osm-node-13323181204",
@@ -5151,7 +5349,8 @@
       "longitude": 34.7869102
     },
     "source": "osm",
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-13339015829",
@@ -5182,7 +5381,8 @@
     "tags": [
       "middle_eastern"
     ],
-    "category": "parve"
+    "category": "parve",
+    "openingHours": "Su-Th 09:00-20:00; Fr 09:00-14:00"
   },
   {
     "id": "osm-node-13372953517",
@@ -5219,7 +5419,8 @@
     "tags": [
       "kebab"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 10:00-22:00; Fr 10:00-15:00"
   },
   {
     "id": "osm-node-13377884604",
@@ -5232,7 +5433,8 @@
       "longitude": 34.8118062
     },
     "source": "osm",
-    "category": "parve"
+    "category": "parve",
+    "openingHours": "Su-Th 09:00-20:00; Fr 09:00-14:00"
   },
   {
     "id": "osm-node-13426948731",
@@ -5263,7 +5465,8 @@
       "longitude": 35.222409
     },
     "source": "osm",
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-23:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-13436566658",
@@ -5279,7 +5482,8 @@
     "tags": [
       "bagel"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 07:00-20:00; Fr 07:00-14:00"
   },
   {
     "id": "osm-node-13466794202",
@@ -5292,7 +5496,8 @@
       "longitude": 34.8132304
     },
     "source": "osm",
-    "category": "parve"
+    "category": "parve",
+    "openingHours": "Su-Th 09:00-20:00; Fr 09:00-14:00"
   },
   {
     "id": "osm-node-13474038328",
@@ -5306,7 +5511,8 @@
     },
     "source": "osm",
     "phone": "+97225430166",
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-13508662102",
@@ -5319,7 +5525,8 @@
       "longitude": 35.2276729
     },
     "source": "osm",
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-13508662103",
@@ -5336,7 +5543,8 @@
     "tags": [
       "pizza"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-23:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-13594087491",
@@ -5349,7 +5557,8 @@
       "longitude": 35.2185058
     },
     "source": "osm",
-    "category": "parve"
+    "category": "parve",
+    "openingHours": "Su-Th 09:00-20:00; Fr 09:00-14:00"
   },
   {
     "id": "osm-node-13619434567",
@@ -5365,7 +5574,8 @@
     "tags": [
       "falafel"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-13664318565",
@@ -5382,7 +5592,8 @@
       "pizza",
       "middle_eastern"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-23:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-13722760900",
@@ -5398,7 +5609,8 @@
     "tags": [
       "meat"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-13783714633",
@@ -5414,7 +5626,8 @@
     "tags": [
       "Cholent"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-13799211350",
@@ -5432,7 +5645,8 @@
       "cholent",
       "shabbos"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-13809202206",
@@ -5462,7 +5676,8 @@
       "longitude": 35.0228138
     },
     "source": "osm",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-13864585863",
@@ -5478,7 +5693,8 @@
     "tags": [
       "middle_eastern"
     ],
-    "category": "parve"
+    "category": "parve",
+    "openingHours": "Su-Th 09:00-20:00; Fr 09:00-14:00"
   },
   {
     "id": "osm-node-13884849098",
@@ -5512,7 +5728,8 @@
     "tags": [
       "burger"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-13903561258",
@@ -5529,7 +5746,8 @@
     "tags": [
       "pizza"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-23:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-node-13926659016",
@@ -5542,7 +5760,8 @@
       "longitude": 34.8652322
     },
     "source": "osm",
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-way-37771222",
@@ -5572,7 +5791,8 @@
       "longitude": 34.8859269
     },
     "source": "osm",
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 08:00-22:00; Fr 08:00-15:00"
   },
   {
     "id": "osm-way-873449738",
@@ -5606,7 +5826,8 @@
     "tags": [
       "sushi"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 12:00-22:00; Fr 12:00-16:00"
   },
   {
     "id": "osm-way-1447248358",
@@ -103414,7 +103635,8 @@
       "webKosherLabel": "רגיל",
       "gpsSource": "overture",
       "shiraID": "14590"
-    }
+    },
+    "openingHours": "Su-Th 09:00-20:00; Fr 09:00-14:00"
   },
   {
     "id": "humus-eli-חומוס-אליהו-אשדוד",

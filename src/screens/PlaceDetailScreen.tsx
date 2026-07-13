@@ -27,6 +27,7 @@ import { distanceKm, formatDistance } from '../utils/geo';
 import { categoryLabel, kosherTypeLabel } from '../utils/kosher';
 import { placeTypeLabel } from '../utils/placeType';
 import { callPhone, openWaze } from '../utils/navigation';
+import { fullHoursHebrew, isCurrentlyOpen } from '../utils/openingHours';
 import { RootStackParamList } from '../navigation/types';
 
 type Nav = NativeStackNavigationProp<RootStackParamList>;
@@ -288,7 +289,7 @@ export function PlaceDetailScreen() {
               <DetailRow
                 icon="time-outline"
                 label="שעות פתיחה"
-                value={place.openingHours || '—'}
+                value={fullHoursHebrew(place.openingHours) || '—'}
                 accent={accent}
                 multiline={!!place.openingHours}
                 empty={!place.openingHours}
@@ -337,7 +338,7 @@ export function PlaceDetailScreen() {
                 <DetailRow icon="flower-outline" label="הנצחה" value={String(place.extra.buriedPerson)} accent={accent} />
               ) : null}
               {place.openingHours ? (
-                <DetailRow icon="time-outline" label="שעות פתיחה" value={place.openingHours} accent={accent} multiline />
+                <DetailRow icon="time-outline" label="שעות פתיחה" value={fullHoursHebrew(place.openingHours) || place.openingHours} accent={accent} multiline />
               ) : null}
               {place.certificateValidUntil ? (
                 <DetailRow icon="calendar-outline" label="תוקף תעודה" value={place.certificateValidUntil} accent={accent} />
