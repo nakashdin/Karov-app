@@ -49,7 +49,8 @@
     "phone": "+972-8-6330389",
     "tags": [
       "israeli"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-673087388",
@@ -61,7 +62,8 @@
       "latitude": 31.8007709,
       "longitude": 35.2270966
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "meat"
   },
   {
     "id": "osm-node-728976432",
@@ -85,7 +87,8 @@
       "latitude": 32.0795754,
       "longitude": 34.7814516
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "dairy"
   },
   {
     "id": "osm-node-889810577",
@@ -101,7 +104,8 @@
     "openingHours": "Mo-Su 12:00+;Fr 12:00-16:30;Sa off",
     "tags": [
       "burger"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-1085414330",
@@ -117,7 +121,8 @@
     "phone": "+972-8-6341415",
     "tags": [
       "dairy"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-1088081695",
@@ -134,7 +139,8 @@
     "tags": [
       "fish",
       "meat"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-1088134125",
@@ -214,7 +220,8 @@
     "source": "osm",
     "tags": [
       "moroccan"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-1667986371",
@@ -257,7 +264,8 @@
       "latitude": 31.7797168,
       "longitude": 35.2214555
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "meat"
   },
   {
     "id": "osm-node-1740901161",
@@ -304,7 +312,8 @@
       "latitude": 31.9947701,
       "longitude": 34.7678117
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "meat"
   },
   {
     "id": "osm-node-1753285811",
@@ -438,7 +447,8 @@
     "phone": "+972-(0)8-6380115",
     "tags": [
       "fish"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-1763919142",
@@ -506,7 +516,8 @@
     "phone": "+972-8-6383324",
     "tags": [
       "israeli"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-1764033404",
@@ -536,7 +547,8 @@
       "longitude": 34.8124429
     },
     "source": "osm",
-    "phone": "+97299562117"
+    "phone": "+97299562117",
+    "category": "meat"
   },
   {
     "id": "osm-node-1938812801",
@@ -548,7 +560,8 @@
       "latitude": 32.0186165,
       "longitude": 34.7386116
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "dairy"
   },
   {
     "id": "osm-node-1989338503",
@@ -565,7 +578,8 @@
     "openingHours": "Su-Th 11:00-18:00",
     "tags": [
       "meat"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-2069701110",
@@ -668,7 +682,8 @@
     },
     "source": "osm",
     "phone": "+97236091331",
-    "openingHours": "Su-Th 12:00-16:00,18:00-00:00"
+    "openingHours": "Su-Th 12:00-16:00,18:00-00:00",
+    "category": "meat"
   },
   {
     "id": "osm-node-2079186344",
@@ -715,7 +730,8 @@
     "openingHours": "Mo-Su 00:00-01:00,11:00-24:00; Fr 00:00-01:00; Sa 18:00-24:00",
     "tags": [
       "pizza"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-2144611932",
@@ -894,7 +910,8 @@
       "longitude": 34.8114328
     },
     "source": "osm",
-    "phone": "+97299558207"
+    "phone": "+97299558207",
+    "category": "meat"
   },
   {
     "id": "osm-node-2701869276",
@@ -1136,7 +1153,8 @@
     "tags": [
       "meat",
       "fish"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-4598271638",
@@ -1198,7 +1216,8 @@
     "source": "osm",
     "tags": [
       "burger"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-4916855022",
@@ -1246,7 +1265,8 @@
       "longitude": 35.5711736
     },
     "source": "osm",
-    "phone": "+972 4 694 4508"
+    "phone": "+972 4 694 4508",
+    "category": "meat"
   },
   {
     "id": "osm-node-5115162603",
@@ -1312,7 +1332,8 @@
       "longitude": 35.569519
     },
     "source": "osm",
-    "phone": "+972 4 690 4443"
+    "phone": "+972 4 690 4443",
+    "category": "meat"
   },
   {
     "id": "osm-node-5143538759",
@@ -1329,7 +1350,8 @@
     "openingHours": "Mo-Th, Su 11:00-22:30",
     "tags": [
       "chinese"
-    ]
+    ],
+    "category": "parve"
   },
   {
     "id": "osm-node-5143549585",
@@ -1406,7 +1428,8 @@
     "source": "osm",
     "tags": [
       "grill"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-5176327119",
@@ -1534,7 +1557,8 @@
     },
     "source": "osm",
     "phone": "026244725",
-    "openingHours": "Mo-Su 12:00-03:00"
+    "openingHours": "Mo-Su 12:00-03:00",
+    "category": "meat"
   },
   {
     "id": "osm-node-5255495084",
@@ -1573,7 +1597,8 @@
       "breakfast",
       "hot_dog",
       "sausage"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-5299442041",
@@ -1622,7 +1647,8 @@
       "longitude": 35.5764871
     },
     "source": "osm",
-    "phone": "+972 4 652 5032"
+    "phone": "+972 4 652 5032",
+    "category": "dairy"
   },
   {
     "id": "osm-node-5302021702",
@@ -1737,7 +1763,8 @@
     "source": "osm",
     "tags": [
       "falafel"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-5711530694",
@@ -1856,7 +1883,8 @@
       "latitude": 32.1462364,
       "longitude": 34.8043516
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "meat"
   },
   {
     "id": "osm-node-5890281795",
@@ -1869,7 +1897,8 @@
       "longitude": 34.8043657
     },
     "source": "osm",
-    "phone": "+972 3 979 9484"
+    "phone": "+972 3 979 9484",
+    "category": "meat"
   },
   {
     "id": "osm-node-5894335311",
@@ -1884,7 +1913,8 @@
     "source": "osm",
     "tags": [
       "pizza"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-5917569185",
@@ -1920,7 +1950,8 @@
     "phone": "+972 037 526 222",
     "tags": [
       "mediterranean"
-    ]
+    ],
+    "category": "parve"
   },
   {
     "id": "osm-node-5981044016",
@@ -1950,7 +1981,8 @@
       "latitude": 32.1431264,
       "longitude": 34.8179921
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "meat"
   },
   {
     "id": "osm-node-5997818140",
@@ -2056,7 +2088,8 @@
     "tags": [
       "burger",
       "meat"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-6181052482",
@@ -2111,7 +2144,8 @@
     "tags": [
       "meat",
       "fish"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-6205595674",
@@ -2175,7 +2209,8 @@
     "source": "osm",
     "tags": [
       "sandwich"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-6469411086",
@@ -2267,7 +2302,8 @@
       "latitude": 33.0452696,
       "longitude": 35.5734823
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "meat"
   },
   {
     "id": "osm-node-6545190948",
@@ -2408,7 +2444,8 @@
       "longitude": 34.8005646
     },
     "source": "osm",
-    "openingHours": "Su-Th 09:30-22:00; Fr 09:30-15:00"
+    "openingHours": "Su-Th 09:30-22:00; Fr 09:30-15:00",
+    "category": "parve"
   },
   {
     "id": "osm-node-7541798990",
@@ -2490,7 +2527,8 @@
       "latitude": 32.2783601,
       "longitude": 34.8608325
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "meat"
   },
   {
     "id": "osm-node-8142743152",
@@ -2518,7 +2556,8 @@
       "latitude": 32.3211386,
       "longitude": 34.8674039
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "dairy"
   },
   {
     "id": "osm-node-8679277517",
@@ -2627,7 +2666,8 @@
     "openingHours": "09:00-22:00; Th-Sa 09:00-23:00",
     "tags": [
       "italian"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-9933397079",
@@ -2664,7 +2704,8 @@
     "openingHours": "Su-Th 07:00-22:30; Fr 07:00-15:00; Sa (sunset+01:00)-23:00",
     "tags": [
       "italian"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-10020598395",
@@ -2679,7 +2720,8 @@
     "source": "osm",
     "tags": [
       "burger"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-10069419066",
@@ -2709,7 +2751,8 @@
     },
     "source": "osm",
     "phone": "+972 54 816 8618",
-    "openingHours": "Su-Th 10:00-19:00; Fr 08:00-16:30"
+    "openingHours": "Su-Th 10:00-19:00; Fr 08:00-16:30",
+    "category": "meat"
   },
   {
     "id": "osm-node-10244439955",
@@ -2768,7 +2811,8 @@
     "tags": [
       "cake",
       "coffee_shop"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-10548308215",
@@ -2783,7 +2827,8 @@
     "source": "osm",
     "tags": [
       "hummus"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-10669458560",
@@ -2832,7 +2877,8 @@
     "tags": [
       "kebab",
       "regional"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-10727399152",
@@ -2847,7 +2893,8 @@
     "source": "osm",
     "tags": [
       "regional"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-10795083145",
@@ -2877,7 +2924,8 @@
     "tags": [
       "middle_eastern",
       "falafel"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-10812430080",
@@ -2906,7 +2954,8 @@
       "longitude": 34.7867941
     },
     "source": "osm",
-    "phone": "+97226644122"
+    "phone": "+97226644122",
+    "category": "dairy"
   },
   {
     "id": "osm-node-10814448813",
@@ -2921,7 +2970,8 @@
     "source": "osm",
     "tags": [
       "sandwich"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-10814448814",
@@ -2950,7 +3000,8 @@
       "latitude": 32.0710719,
       "longitude": 34.786662
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "parve"
   },
   {
     "id": "osm-node-10829518083",
@@ -2975,7 +3026,8 @@
       "latitude": 32.0711394,
       "longitude": 34.7877309
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "parve"
   },
   {
     "id": "osm-node-10955696002",
@@ -3025,7 +3077,8 @@
       "latitude": 32.0750657,
       "longitude": 34.7819489
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "dairy"
   },
   {
     "id": "osm-node-10970907888",
@@ -3060,7 +3113,8 @@
     "tags": [
       "arab",
       "mediterranean"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-11009821837",
@@ -3091,7 +3145,8 @@
       "latitude": 32.0906682,
       "longitude": 34.7792193
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "meat"
   },
   {
     "id": "osm-node-11091229844",
@@ -3106,7 +3161,8 @@
     "source": "osm",
     "tags": [
       "italian"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-11163232373",
@@ -3118,7 +3174,8 @@
       "latitude": 32.0839689,
       "longitude": 34.7894083
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "dairy"
   },
   {
     "id": "osm-node-11169618825",
@@ -3130,7 +3187,8 @@
       "latitude": 32.0516814,
       "longitude": 34.7583996
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "meat"
   },
   {
     "id": "osm-node-11169880831",
@@ -3227,7 +3285,8 @@
     "tags": [
       "burger",
       "sandwich"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-11228725732",
@@ -3239,7 +3298,8 @@
       "latitude": 32.0736604,
       "longitude": 34.7819893
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "meat"
   },
   {
     "id": "osm-node-11330876273",
@@ -3296,7 +3356,8 @@
       "latitude": 32.0643315,
       "longitude": 34.7873319
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "dairy"
   },
   {
     "id": "osm-node-11397608290",
@@ -3311,7 +3372,8 @@
     "source": "osm",
     "tags": [
       "middle_eastern"
-    ]
+    ],
+    "category": "parve"
   },
   {
     "id": "osm-node-11405068715",
@@ -3355,7 +3417,8 @@
     "source": "osm",
     "tags": [
       "pizza"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-11518709323",
@@ -3386,7 +3449,8 @@
     "source": "osm",
     "tags": [
       "meat"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-11542534410",
@@ -3430,7 +3494,8 @@
       "latitude": 32.0693268,
       "longitude": 34.7733771
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "dairy"
   },
   {
     "id": "osm-node-11685020594",
@@ -3442,7 +3507,8 @@
       "latitude": 32.0642237,
       "longitude": 34.7746572
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "meat"
   },
   {
     "id": "osm-node-11711437812",
@@ -3457,7 +3523,8 @@
     "source": "osm",
     "tags": [
       "sandwich"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-11716322614",
@@ -3585,7 +3652,8 @@
     "source": "osm",
     "tags": [
       "sandwich"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-11886042983",
@@ -3616,7 +3684,8 @@
     "source": "osm",
     "tags": [
       "jewish"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-11980703710",
@@ -3632,7 +3701,8 @@
     "phone": "0584109032",
     "tags": [
       "ליל_שישי"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-11980731518",
@@ -3693,7 +3763,8 @@
       "longitude": 34.7679444
     },
     "source": "osm",
-    "phone": "+972 54 223 0223"
+    "phone": "+972 54 223 0223",
+    "category": "meat"
   },
   {
     "id": "osm-node-12084976087",
@@ -3705,7 +3776,8 @@
       "latitude": 32.0596304,
       "longitude": 34.7705624
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "dairy"
   },
   {
     "id": "osm-node-12086618152",
@@ -3758,7 +3830,8 @@
     "openingHours": "Su-Th 12:00-22:30; Sa (sunset+01:00)+",
     "tags": [
       "meat"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-12133763086",
@@ -3793,7 +3866,8 @@
     "openingHours": "Su-Th 12:00-01:00; Fr 11:00-17:00",
     "tags": [
       "ethiopian"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-12146589680",
@@ -3862,7 +3936,8 @@
     "source": "osm",
     "tags": [
       "middle_eastern"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-12187684500",
@@ -3891,7 +3966,8 @@
       "longitude": 34.7720078
     },
     "source": "osm",
-    "phone": "+972 54 586 6366"
+    "phone": "+972 54 586 6366",
+    "category": "dairy"
   },
   {
     "id": "osm-node-12189931087",
@@ -3904,7 +3980,8 @@
       "longitude": 34.7700546
     },
     "source": "osm",
-    "phone": "+972 3 681 0222"
+    "phone": "+972 3 681 0222",
+    "category": "meat"
   },
   {
     "id": "osm-node-12208598222",
@@ -3947,7 +4024,8 @@
       "latitude": 32.0568206,
       "longitude": 34.7696537
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "dairy"
   },
   {
     "id": "osm-node-12301608266",
@@ -3960,7 +4038,8 @@
       "longitude": 34.6582587
     },
     "source": "osm",
-    "phone": "088522593"
+    "phone": "088522593",
+    "category": "meat"
   },
   {
     "id": "osm-node-12301648358",
@@ -3976,7 +4055,8 @@
     "phone": "086902595",
     "tags": [
       "שווארמה"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-12462916500",
@@ -4022,7 +4102,8 @@
     "phone": "+972 33752178",
     "tags": [
       "regional"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-12529700323",
@@ -4034,7 +4115,8 @@
       "latitude": 32.074378,
       "longitude": 34.7986565
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "meat"
   },
   {
     "id": "osm-node-12529707486",
@@ -4185,7 +4267,8 @@
       "latitude": 32.0908785,
       "longitude": 34.8223891
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "meat"
   },
   {
     "id": "osm-node-12587501531",
@@ -4217,7 +4300,8 @@
     "openingHours": "Su-We 12:00-23:00; Th 12:00-02:00; Sa 19:00-00:00",
     "tags": [
       "burger"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-12588072063",
@@ -4229,7 +4313,8 @@
       "latitude": 32.06869,
       "longitude": 34.7940592
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "meat"
   },
   {
     "id": "osm-node-12588084718",
@@ -4246,7 +4331,8 @@
     "openingHours": "Su-Th 11:00-23:00",
     "tags": [
       "hawaiian"
-    ]
+    ],
+    "category": "parve"
   },
   {
     "id": "osm-node-12588113205",
@@ -4263,7 +4349,8 @@
     "openingHours": "Su-Th 11:00-23:00; Sa (sunset+01:00)-23:00",
     "tags": [
       "sushi"
-    ]
+    ],
+    "category": "parve"
   },
   {
     "id": "osm-node-12588118386",
@@ -4291,7 +4378,8 @@
     },
     "source": "osm",
     "phone": "+972 3 649 3932",
-    "openingHours": "Su-Th 17:00-23:00; Sa 19:00-23:30"
+    "openingHours": "Su-Th 17:00-23:00; Sa 19:00-23:30",
+    "category": "meat"
   },
   {
     "id": "osm-node-12588129401",
@@ -4307,7 +4395,8 @@
     "openingHours": "Su-Th 10:00-17:00",
     "tags": [
       "middle_eastern"
-    ]
+    ],
+    "category": "parve"
   },
   {
     "id": "osm-node-12593444378",
@@ -4323,7 +4412,8 @@
     "openingHours": "Su-Th 11:00-00:00, Fr 11:00-16:00, Sa 21:00-01:00",
     "tags": [
       "burger"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-12593458107",
@@ -4357,7 +4447,8 @@
     "openingHours": "Su-Th 10:00-22:45; Fr 12:00-15:00; Sa 18:00-23:00",
     "tags": [
       "pizza"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-12626437216",
@@ -4402,7 +4493,8 @@
     "tags": [
       "pizza",
       "falafel"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-12668721404",
@@ -4443,7 +4535,8 @@
     "source": "osm",
     "tags": [
       "sandwich"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-12676686493",
@@ -4491,7 +4584,8 @@
     "openingHours": "Su-We 11:00-03:00, Th 11:00-05:00, Fr 11:00-15:00, Sa (sunset+00:30)-03:00",
     "tags": [
       "pizza"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-12698940709",
@@ -4521,7 +4615,8 @@
     },
     "source": "osm",
     "phone": "+972 50 936 8492",
-    "openingHours": "Su-Th 10:00-20:00"
+    "openingHours": "Su-Th 10:00-20:00",
+    "category": "meat"
   },
   {
     "id": "osm-node-12802945060",
@@ -4567,7 +4662,8 @@
       "longitude": 34.7760103
     },
     "source": "osm",
-    "phone": "+972 77 303 4050"
+    "phone": "+972 77 303 4050",
+    "category": "dairy"
   },
   {
     "id": "osm-node-12946471285",
@@ -4581,7 +4677,8 @@
     },
     "source": "osm",
     "phone": "+972 50 527 2787",
-    "openingHours": "Su-Th 08:00-17:00; Fr 08:00-16:00"
+    "openingHours": "Su-Th 08:00-17:00; Fr 08:00-16:00",
+    "category": "meat"
   },
   {
     "id": "osm-node-13057613009",
@@ -4596,7 +4693,8 @@
     "source": "osm",
     "tags": [
       "soup"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-13057613010",
@@ -4661,7 +4759,8 @@
     "openingHours": "Su-Th 11:00-23:30; Fr 11:00-15:00",
     "tags": [
       "burger"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-13145926870",
@@ -4678,7 +4777,8 @@
     "openingHours": "12:00-24:00",
     "tags": [
       "pizza"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-13145926871",
@@ -4695,7 +4795,8 @@
     "openingHours": "12:00-22:00; Fr 12:00-15:00; Sa 21:00-23:00",
     "tags": [
       "burger"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-13155351118",
@@ -4986,7 +5087,8 @@
     "openingHours": "09:00-16:00; Fr 09:00-14:00; Sa off",
     "tags": [
       "breakfast"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-13431169858",
@@ -5100,7 +5202,8 @@
     "source": "osm",
     "tags": [
       "falafel"
-    ]
+    ],
+    "category": "dairy"
   },
   {
     "id": "osm-node-13664318565",
@@ -5148,7 +5251,8 @@
     "source": "osm",
     "tags": [
       "Cholent"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-13799211350",
@@ -5194,7 +5298,8 @@
       "latitude": 32.7763464,
       "longitude": 35.0228138
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "meat"
   },
   {
     "id": "osm-node-13864585863",
@@ -5290,7 +5395,8 @@
     "openingHours": "Su-Fr 09:00-24:00; Sa 09:00-15:00",
     "tags": [
       "italian"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-way-426439891",
@@ -5320,7 +5426,8 @@
     "openingHours": "We 11:00-23:00; Th 11:00-24:00; Fr 08:00-17:00",
     "tags": [
       "regional"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-way-1049269959",
@@ -5352,7 +5459,8 @@
     "openingHours": "09:00-22:00; Fr 09:00-16:00",
     "tags": [
       "juice"
-    ]
+    ],
+    "category": "parve"
   },
   {
     "id": "osm-node-305478462",
