@@ -5,6 +5,8 @@ import { PlaceType } from '../types';
 export const placeTypeLabel: Record<PlaceType, string> = {
   restaurant: 'מסעדה כשרה',
   fast_food: 'מזון מהיר',
+  cafe: 'בית קפה',
+  coffee_cart: 'עגלת קפה',
   synagogue: 'בית כנסת',
   mikveh: 'מקווה',
   chabad_house: 'בית חב״ד',
@@ -15,6 +17,8 @@ export const placeTypeLabel: Record<PlaceType, string> = {
 export const placeTypeIcon: Record<PlaceType, keyof typeof Ionicons.glyphMap> = {
   restaurant: 'restaurant',
   fast_food: 'fast-food',
+  cafe: 'cafe',
+  coffee_cart: 'cafe-outline',
   synagogue: 'business',
   mikveh: 'water',
   chabad_house: 'home',

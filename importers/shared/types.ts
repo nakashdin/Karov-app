@@ -14,7 +14,7 @@ import type { Place } from '../../src/types/place.ts';
  * 'synagogue' | 'restaurant'. 'mikveh' is imported ahead of app support — see
  * importers/mikvahs/README.md before wiring it into the app dataset.
  */
-export type ImportType = 'synagogue' | 'restaurant' | 'fast_food' | 'mikveh';
+export type ImportType = 'synagogue' | 'restaurant' | 'fast_food' | 'cafe' | 'coffee_cart' | 'mikveh';
 
 /** Where a record originated (for attribution / trust). */
 export type ImportSource = 'osm' | 'datagov' | 'seed';

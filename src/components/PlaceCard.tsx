@@ -11,6 +11,9 @@ import { formatDistance } from '../utils/geo';
 
 const PLACE_EMOJI: Record<Place['type'], string> = {
   restaurant:   '🍽️',
+  fast_food:    '🍔',
+  cafe:         '☕',
+  coffee_cart:  '🛒',
   synagogue:    '🕍',
   mikveh:       '💧',
   chabad_house: '🕎',
@@ -19,6 +22,9 @@ const PLACE_EMOJI: Record<Place['type'], string> = {
 
 const CHIP_COLOR: Record<Place['type'], string> = {
   restaurant:   colors.categoryRestaurant,
+  fast_food:    colors.categoryFastFood,
+  cafe:         colors.categoryCafe,
+  coffee_cart:  colors.categoryCoffeeCart,
   synagogue:    colors.categorySynagogue,
   mikveh:       colors.categoryMikveh,
   chabad_house: colors.chabad,
@@ -74,21 +80,21 @@ export function PlaceCard({ place, distanceKm, onPress }: PlaceCardProps) {
   const chipColor = CHIP_COLOR[place.type];
   const typeLabel = placeTypeLabel[place.type];
 
-  // Kashrut info for restaurants
-  const kosherLabel = place.type === 'restaurant' && place.kosherType
+  const isFoodType = ['restaurant', 'fast_food', 'cafe', 'coffee_cart'].includes(place.type);
+  const kosherLabel = isFoodType && place.kosherType
     ? kosherTypeLabel[place.kosherType]
     : null;
   const kosherColor = place.kosherType ? (KOSHER_COLOR[place.kosherType] ?? colors.primary) : colors.primary;
 
   // Second info chip (category / nusach)
   const subChip =
-    place.type === 'restaurant' && place.category ? categoryLabel[place.category]
+    isFoodType && place.category ? categoryLabel[place.category]
     : place.type === 'synagogue' && place.nusach ? place.nusach
     : place.type === 'mikveh' && place.mikvehGender ? place.mikvehGender
     : null;
 
   // Certification line
-  const certLine = place.type === 'restaurant' && place.certifiedBy ? place.certifiedBy : null;
+  const certLine = isFoodType && place.certifiedBy ? place.certifiedBy : null;
 
   return (
     <Pressable
@@ -123,7 +129,7 @@ export function PlaceCard({ place, distanceKm, onPress }: PlaceCardProps) {
             <Text style={[styles.chipText, { color: kosherColor }]}>{kosherLabel}</Text>
           </View>
         )}
-        {subChip && !kosherLabel && (
+        {subChip && (
           <View style={styles.chipSecondary}>
             <Text style={styles.chipSecondaryText} numberOfLines={1}>{subChip}</Text>
           </View>

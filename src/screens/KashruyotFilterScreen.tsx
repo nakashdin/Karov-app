@@ -18,6 +18,7 @@ import { RootStackParamList } from '../navigation/types';
 
 type Nav = NativeStackNavigationProp<RootStackParamList>;
 type Route = NativeStackScreenProps<RootStackParamList, 'KashruyotFilter'>['route'];
+type FoodPlaceType = 'restaurant' | 'fast_food' | 'cafe' | 'coffee_cart';
 
 const CATEGORIES: Array<{ key: KosherCategory | null; label: string; emoji: string }> = [
   { key: null,    label: 'הכל',   emoji: '🍽️' },
@@ -31,7 +32,7 @@ const STEPS = ['קטגוריה', 'כשרות', 'תוצאות'];
 export function KashruyotFilterScreen() {
   const navigation = useNavigation<Nav>();
   const route = useRoute<Route>();
-  const placeType = route.params?.placeType ?? 'restaurant';
+  const placeType: FoodPlaceType = route.params?.placeType ?? 'restaurant';
   const { setFilters } = useFilters();
 
   const [step, setStep] = useState<0 | 1>(0);

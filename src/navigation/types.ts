@@ -21,7 +21,7 @@ export type RootStackParamList = {
   List: { focus?: boolean } | undefined;
   AddPlace: undefined;
   ParashaDetail: undefined;
-  KashruyotFilter: { placeType: 'restaurant' | 'fast_food' };
+  KashruyotFilter: { placeType: 'restaurant' | 'fast_food' | 'cafe' | 'coffee_cart' };
 };
 
 declare global {

@@ -47,6 +47,8 @@ export const colors = {
   // Category icon accent colors — shortcut grid + PlaceCard type indicator
   categoryRestaurant: '#C97A1A',
   categoryFastFood: '#D44A12',
+  categoryCafe: '#7B5EA7',
+  categoryCoffeeCart: '#5C8B3E',
   categorySynagogue: '#2A6CA8',
   categoryMikveh: '#0288D1',
   categoryFavorites: '#C0394A',

@@ -20,11 +20,13 @@ export const CATEGORY_FILES: Record<ImportType, string> = {
   synagogue: 'synagogues.osm.json',
   restaurant: 'restaurants.osm.json',
   fast_food: 'fast-food.chains.json',
+  cafe: 'cafes.chains.json',
+  coffee_cart: 'coffee-carts.chains.json',
   mikveh: 'mikvahs.datagov.json',
 };
 
 /** Place types the app currently understands (others stay out of the dataset). */
-const APP_TYPES: ImportType[] = ['synagogue', 'restaurant', 'fast_food', 'mikveh'];
+const APP_TYPES: ImportType[] = ['synagogue', 'restaurant', 'fast_food', 'cafe', 'coffee_cart', 'mikveh'];
 
 export function writeJson(file: string, data: unknown): string {
   mkdirSync(GENERATED_DIR, { recursive: true });

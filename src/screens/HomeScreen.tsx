@@ -73,7 +73,7 @@ export function HomeScreen() {
   };
 
   const openType = (placeType: PlaceType) => {
-    if (placeType === 'restaurant' || placeType === 'fast_food') {
+    if (placeType === 'restaurant' || placeType === 'fast_food' || placeType === 'cafe' || placeType === 'coffee_cart') {
       navigation.navigate('KashruyotFilter', { placeType });
       return;
     }
@@ -136,46 +136,22 @@ export function HomeScreen() {
         {/* Parasha card */}
         {parasha && <ParashaCard parasha={parasha} />}
 
-        {/* Shortcut grid */}
+        {/* אוכל */}
+        <Text style={styles.sectionLabel}>🍽 אוכל כשר</Text>
         <View style={styles.shortcutRow}>
-          <Shortcut
-            icon="restaurant"
-            color={colors.categoryRestaurant}
-            label={t.home.restaurants}
-            onPress={() => openType('restaurant')}
-          />
-          <Shortcut
-            icon="fast-food"
-            color={colors.categoryFastFood}
-            label="מזון מהיר"
-            onPress={() => openType('fast_food')}
-          />
-          <Shortcut
-            icon="business"
-            color={colors.categorySynagogue}
-            label={t.home.synagogues}
-            onPress={() => openType('synagogue')}
-          />
+          <Shortcut icon="restaurant"    color={colors.categoryRestaurant} label="מסעדות"      onPress={() => openType('restaurant')} />
+          <Shortcut icon="fast-food"     color={colors.categoryFastFood}   label="מזון מהיר"   onPress={() => openType('fast_food')} />
+          <Shortcut icon="cafe"          color={colors.categoryCafe}       label="בתי קפה"     onPress={() => openType('cafe')} />
+          <Shortcut icon="cafe-outline"  color={colors.categoryCoffeeCart} label="עגלות קפה"   onPress={() => openType('coffee_cart')} />
         </View>
+
+        {/* קהילה */}
+        <Text style={styles.sectionLabel}>🕍 קהילה</Text>
         <View style={[styles.shortcutRow, styles.shortcutRowLast]}>
-          <Shortcut
-            icon="water"
-            color={colors.categoryMikveh}
-            label={t.home.mikvahs}
-            onPress={() => openType('mikveh')}
-          />
-          <Shortcut
-            icon="home"
-            color={colors.chabad}
-            label={t.home.chabadHouses}
-            onPress={() => openType('chabad_house')}
-          />
-          <Shortcut
-            icon="flower-outline"
-            color={colors.tzaddik}
-            label={t.home.tzadikGraves}
-            onPress={() => openType('tzaddik_grave')}
-          />
+          <Shortcut icon="business"      color={colors.categorySynagogue}  label={t.home.synagogues}   onPress={() => openType('synagogue')} />
+          <Shortcut icon="water"         color={colors.categoryMikveh}     label={t.home.mikvahs}      onPress={() => openType('mikveh')} />
+          <Shortcut icon="home"          color={colors.chabad}             label={t.home.chabadHouses} onPress={() => openType('chabad_house')} />
+          <Shortcut icon="flower-outline"color={colors.tzaddik}            label={t.home.tzadikGraves} onPress={() => openType('tzaddik_grave')} />
         </View>
 
         {/* Section header */}
@@ -373,10 +349,19 @@ const styles = StyleSheet.create({
   pressed: {
     opacity: 0.85,
   },
+  sectionLabel: {
+    fontSize: 13,
+    fontWeight: '700',
+    color: colors.textMuted,
+    textAlign: 'right',
+    marginBottom: 8,
+    marginTop: 4,
+    letterSpacing: 0.2,
+  },
   shortcutRow: {
     flexDirection: 'row',
-    gap: 10,
-    marginBottom: 10,
+    gap: 8,
+    marginBottom: 16,
   },
   shortcutRowLast: {
     marginBottom: 0,
