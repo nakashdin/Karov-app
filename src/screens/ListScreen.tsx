@@ -70,9 +70,9 @@ export function ListScreen() {
     { key: 'meat',        label: t.cuisine.meat,        emoji: '🥩' },
   ];
   const { places, loading, error, reload } = usePlaces(filters);
-  // Base places (placeType only) for computing available kosherTypes dynamically
   const isFoodType = ['restaurant', 'fast_food', 'cafe', 'coffee_cart'].includes(filters.placeType ?? '');
-  const { places: basePlaces } = usePlaces(isFoodType ? { placeType: filters.placeType } : {});
+  // Base places filtered by placeType only — used for kosherType chips + autocomplete
+  const { places: basePlaces } = usePlaces(filters.placeType ? { placeType: filters.placeType } : {});
   const availableKosherTypes = useMemo<KosherType[]>(() => {
     if (!isFoodType) return [];
     const seen = new Set<KosherType>();
@@ -105,8 +105,28 @@ export function ListScreen() {
 
   // Local search input — debounced
   const [inputText, setInputText] = useState(filters.query ?? '');
+  const [showSuggestions, setShowSuggestions] = useState(false);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const searchRef = useRef<TextInput>(null);
+
+  const suggestions = useMemo(() => {
+    const q = inputText.trim();
+    if (q.length < 1) return [];
+    const lq = q.toLowerCase();
+    const seen = new Set<string>();
+    const names: string[] = [];
+    const cities: string[] = [];
+    for (const p of basePlaces) {
+      if (p.name.includes(q) || p.name.toLowerCase().includes(lq)) {
+        if (!seen.has(p.name) && names.length < 5) { seen.add(p.name); names.push(p.name); }
+      }
+      const city = p.address?.split(',').slice(-1)[0]?.trim();
+      if (city && (city.includes(q) || city.toLowerCase().includes(lq))) {
+        if (!seen.has(city) && cities.length < 3) { seen.add(city); cities.push(city); }
+      }
+    }
+    return [...names, ...cities].slice(0, 6);
+  }, [inputText, basePlaces]);
 
   useEffect(() => {
     if (route.params?.focus) {
@@ -178,11 +198,14 @@ export function ListScreen() {
   }, [places, sortByDistance, location, radiusKm]);
 
   const screenTitle =
-    filters.placeType === 'synagogue'    ? t.listCategories.synagogue
-    : filters.placeType === 'restaurant' ? t.listCategories.restaurant
+    filters.placeType === 'restaurant'   ? t.listCategories.restaurant
+    : filters.placeType === 'fast_food'  ? 'מזון מהיר'
+    : filters.placeType === 'cafe'       ? 'בתי קפה'
+    : filters.placeType === 'coffee_cart'? 'עגלות קפה'
+    : filters.placeType === 'synagogue'  ? t.listCategories.synagogue
     : filters.placeType === 'mikveh'     ? t.listCategories.mikveh
-    : filters.placeType === 'chabad_house'  ? t.listCategories.chabad_house
-    : filters.placeType === 'tzaddik_grave' ? t.listCategories.tzaddik_grave
+    : filters.placeType === 'chabad_house'   ? t.listCategories.chabad_house
+    : filters.placeType === 'tzaddik_grave'  ? t.listCategories.tzaddik_grave
     : null;
 
   // Show results always in 'current' mode; in 'other' mode only after geocoding
@@ -279,33 +302,57 @@ export function ListScreen() {
       {geocodeError ? <Text style={styles.geocodeError}>{geocodeError}</Text> : null}
 
       {/* Search pill — hidden in "other" mode until a location is geocoded */}
-      {(locationMode === 'current' || customLocation !== null) && <View style={styles.searchPill}>
-        <Ionicons name="search" size={18} color={colors.textMuted} />
-        <TextInput
-          style={styles.searchInput}
-          placeholder="חיפוש לפי שם, רחוב או עיר..."
-          placeholderTextColor={colors.textMuted}
-          ref={searchRef}
-          value={inputText}
-          onChangeText={setInputText}
-          textAlign="right"
-          returnKeyType="search"
-        />
-        {inputText.length > 0 && (
-          <Pressable onPress={() => { setInputText(''); setFilter('query', ''); }} hitSlop={8}>
-            <Ionicons name="close-circle" size={18} color={colors.textMuted} />
-          </Pressable>
-        )}
-        <View style={styles.pillDivider} />
-        <Pressable style={styles.filterTrigger} onPress={() => setSheetOpen(true)} hitSlop={8}>
-          <Ionicons
-            name="options-outline"
-            size={20}
-            color={activeCount > 0 ? colors.primary : colors.textMuted}
-          />
-          {activeCount > 0 && <View style={styles.filterDot} />}
-        </Pressable>
-      </View>}
+      {(locationMode === 'current' || customLocation !== null) && (
+        <View>
+          <View style={styles.searchPill}>
+            <Ionicons name="search" size={18} color={colors.textMuted} />
+            <TextInput
+              style={styles.searchInput}
+              placeholder="חיפוש לפי שם, רחוב או עיר..."
+              placeholderTextColor={colors.textMuted}
+              ref={searchRef}
+              value={inputText}
+              onChangeText={(v) => { setInputText(v); setShowSuggestions(true); }}
+              onFocus={() => setShowSuggestions(true)}
+              onBlur={() => setTimeout(() => setShowSuggestions(false), 150)}
+              textAlign="right"
+              returnKeyType="search"
+            />
+            {inputText.length > 0 && (
+              <Pressable onPress={() => { setInputText(''); setFilter('query', ''); setShowSuggestions(false); }} hitSlop={8}>
+                <Ionicons name="close-circle" size={18} color={colors.textMuted} />
+              </Pressable>
+            )}
+            <View style={styles.pillDivider} />
+            <Pressable style={styles.filterTrigger} onPress={() => setSheetOpen(true)} hitSlop={8}>
+              <Ionicons
+                name="options-outline"
+                size={20}
+                color={activeCount > 0 ? colors.primary : colors.textMuted}
+              />
+              {activeCount > 0 && <View style={styles.filterDot} />}
+            </Pressable>
+          </View>
+          {showSuggestions && suggestions.length > 0 && (
+            <View style={styles.suggestionBox}>
+              {suggestions.map((s) => (
+                <Pressable
+                  key={s}
+                  style={styles.suggestionItem}
+                  onPress={() => {
+                    setInputText(s);
+                    setFilter('query', s);
+                    setShowSuggestions(false);
+                  }}
+                >
+                  <Ionicons name="search-outline" size={13} color={colors.textMuted} />
+                  <Text style={styles.suggestionText} numberOfLines={1}>{s}</Text>
+                </Pressable>
+              ))}
+            </View>
+          )}
+        </View>
+      )}
 
       {/* Category tabs — cuisine sub-tabs for restaurants, category tabs only when no type selected */}
       {filters.placeType === 'restaurant' ? (
@@ -571,6 +618,32 @@ const styles = StyleSheet.create({
   geocodeInlinBtn: {
     alignItems: 'center',
     justifyContent: 'center',
+  },
+
+  suggestionBox: {
+    backgroundColor: colors.surface,
+    borderRadius: radius.lg,
+    borderWidth: 1,
+    borderColor: colors.border,
+    marginTop: 4,
+    marginBottom: spacing.xs,
+    overflow: 'hidden',
+    ...shadow.card,
+  },
+  suggestionItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+    paddingVertical: 11,
+    paddingHorizontal: 16,
+    borderBottomWidth: 0.5,
+    borderBottomColor: colors.border,
+  },
+  suggestionText: {
+    flex: 1,
+    fontSize: 14,
+    color: colors.text,
+    textAlign: 'right',
   },
 
   // Location mode toggle
