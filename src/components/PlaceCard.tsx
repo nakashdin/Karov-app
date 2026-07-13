@@ -165,6 +165,21 @@ export function PlaceCard({ place, distanceKm, onPress }: PlaceCardProps) {
       {certLine && (
         <Text style={styles.cert} numberOfLines={1}>🏛 הכשר: {certLine}</Text>
       )}
+
+      {/* Website — food places only */}
+      {isFoodType && place.website && (
+        <Pressable
+          style={styles.websiteRow}
+          onPress={(e) => {
+            e.stopPropagation?.();
+            Linking.openURL(place.website!);
+          }}
+          hitSlop={6}
+        >
+          <Ionicons name="globe-outline" size={12} color={colors.primary} />
+          <Text style={styles.websiteText} numberOfLines={1}>{place.website}</Text>
+        </Pressable>
+      )}
     </Pressable>
   );
 }
@@ -254,6 +269,19 @@ const styles = StyleSheet.create({
   cert: {
     fontSize: 11,
     color: colors.textMuted,
+    textAlign: 'right',
+  },
+
+  websiteRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 5,
+    justifyContent: 'flex-end',
+  },
+  websiteText: {
+    fontSize: 11,
+    color: colors.primary,
+    flex: 1,
     textAlign: 'right',
   },
 

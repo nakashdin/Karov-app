@@ -22,6 +22,8 @@ export type RootStackParamList = {
   AddPlace: undefined;
   ParashaDetail: undefined;
   KashruyotFilter: { placeType: 'restaurant' | 'fast_food' | 'cafe' | 'coffee_cart' };
+  WhatsAround: undefined;
+  FoodList: undefined;
 };
 
 declare global {

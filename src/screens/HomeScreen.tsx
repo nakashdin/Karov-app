@@ -69,7 +69,7 @@ export function HomeScreen() {
   }, [places, location]);
 
   const onWhatsAround = () => {
-    navigation.navigate('List', undefined);
+    navigation.navigate('WhatsAround');
   };
 
   const openType = (placeType: PlaceType) => {
