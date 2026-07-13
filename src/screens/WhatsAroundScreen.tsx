@@ -31,7 +31,7 @@ const CATEGORIES: Array<{
   { key: 'tzaddik_grave',label: 'קברי צדיקים',   emoji: '🪦',  color: colors.tzaddik,            types: ['tzaddik_grave'] },
 ];
 
-const MAX_KM = 20;
+const MAX_KM = 100;
 
 export function WhatsAroundScreen() {
   const navigation = useNavigation<Nav>();
@@ -40,7 +40,7 @@ export function WhatsAroundScreen() {
   const { setFilters } = useFilters();
   // null = show all; number = filter by km
   const [radiusKm, setRadiusKm] = useState<number | null>(null);
-  const [sliderValue, setSliderValue] = useState(MAX_KM);
+  const [sliderValue, setSliderValue] = useState(0);
 
   const inRadius = useMemo(() => {
     if (!location || radiusKm === null) return places;
@@ -107,24 +107,27 @@ export function WhatsAroundScreen() {
               <Text style={styles.noLocNote}>· הפעל מיקום לסינון</Text>
             )}
           </View>
-          <Slider
-            style={styles.slider}
-            minimumValue={0.5}
-            maximumValue={MAX_KM}
-            step={0.5}
-            value={sliderValue}
-            disabled={!location}
-            minimumTrackTintColor={location ? colors.primary : colors.border}
-            maximumTrackTintColor={colors.border}
-            thumbTintColor={location ? colors.primary : colors.border}
-            onValueChange={v => {
-              setSliderValue(v);
-              setRadiusKm(v >= MAX_KM ? null : v);
-            }}
-          />
+          {/* Force LTR so slider goes 0 (left) → 100 (right) */}
+          <View style={{ direction: 'ltr' }}>
+            <Slider
+              style={styles.slider}
+              minimumValue={0}
+              maximumValue={MAX_KM}
+              step={1}
+              value={sliderValue}
+              disabled={!location}
+              minimumTrackTintColor={location ? colors.primary : colors.border}
+              maximumTrackTintColor={colors.border}
+              thumbTintColor={location ? colors.primary : colors.border}
+              onValueChange={v => {
+                setSliderValue(v);
+                setRadiusKm(v === 0 || v >= MAX_KM ? null : v);
+              }}
+            />
+          </View>
           <View style={styles.sliderLabels}>
-            <Text style={styles.sliderEnd}>20 ק"מ</Text>
-            <Text style={styles.sliderEnd}>0.5 ק"מ</Text>
+            <Text style={styles.sliderEnd}>100 ק"מ</Text>
+            <Text style={styles.sliderEnd}>0 ק"מ</Text>
           </View>
         </View>
 
