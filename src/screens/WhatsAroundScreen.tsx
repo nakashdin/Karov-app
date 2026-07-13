@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import Slider from '@react-native-community/slider';
 import { Ionicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
@@ -30,20 +31,16 @@ const CATEGORIES: Array<{
   { key: 'tzaddik_grave',label: 'קברי צדיקים',   emoji: '🪦',  color: colors.tzaddik,            types: ['tzaddik_grave'] },
 ];
 
-const RADIUS_OPTIONS: Array<{ label: string; km: number | null }> = [
-  { label: 'הכל',  km: null },
-  { label: '1 ק"מ', km: 1 },
-  { label: '3 ק"מ', km: 3 },
-  { label: '5 ק"מ', km: 5 },
-  { label: '10 ק"מ', km: 10 },
-];
+const MAX_KM = 20;
 
 export function WhatsAroundScreen() {
   const navigation = useNavigation<Nav>();
   const { places } = usePlaces();
   const { location } = useSharedLocation();
   const { setFilters } = useFilters();
+  // null = show all; number = filter by km
   const [radiusKm, setRadiusKm] = useState<number | null>(null);
+  const [sliderValue, setSliderValue] = useState(MAX_KM);
 
   const inRadius = useMemo(() => {
     if (!location || radiusKm === null) return places;
@@ -100,37 +97,35 @@ export function WhatsAroundScreen() {
 
         {/* Radius filter */}
         <View style={styles.radiusSection}>
-          <Text style={styles.radiusLabel}>
-            <Ionicons name="radio-button-on-outline" size={13} color={colors.textMuted} />
-            {'  '}טווח חיפוש
-            {!location && <Text style={styles.noLocNote}> (הפעל מיקום לסינון)</Text>}
-          </Text>
-          <ScrollView
-            horizontal
-            showsHorizontalScrollIndicator={false}
-            contentContainerStyle={styles.radiusChips}
-          >
-            {RADIUS_OPTIONS.map(opt => {
-              const active = opt.km === radiusKm;
-              const disabled = opt.km !== null && !location;
-              return (
-                <Pressable
-                  key={opt.label}
-                  style={[
-                    styles.chip,
-                    active && styles.chipActive,
-                    disabled && styles.chipDisabled,
-                  ]}
-                  onPress={() => !disabled && setRadiusKm(opt.km)}
-                  disabled={disabled}
-                >
-                  <Text style={[styles.chipText, active && styles.chipTextActive, disabled && styles.chipTextDisabled]}>
-                    {opt.label}
-                  </Text>
-                </Pressable>
-              );
-            })}
-          </ScrollView>
+          <View style={styles.radiusRow}>
+            <Ionicons name="radio-button-on-outline" size={14} color={colors.primary} />
+            <Text style={styles.radiusLabel}>טווח חיפוש</Text>
+            <Text style={styles.radiusValue}>
+              {radiusKm === null ? 'הכל' : `${radiusKm} ק"מ`}
+            </Text>
+            {!location && (
+              <Text style={styles.noLocNote}>· הפעל מיקום לסינון</Text>
+            )}
+          </View>
+          <Slider
+            style={styles.slider}
+            minimumValue={0.5}
+            maximumValue={MAX_KM}
+            step={0.5}
+            value={sliderValue}
+            disabled={!location}
+            minimumTrackTintColor={location ? colors.primary : colors.border}
+            maximumTrackTintColor={colors.border}
+            thumbTintColor={location ? colors.primary : colors.border}
+            onValueChange={v => {
+              setSliderValue(v);
+              setRadiusKm(v >= MAX_KM ? null : v);
+            }}
+          />
+          <View style={styles.sliderLabels}>
+            <Text style={styles.sliderEnd}>20 ק"מ</Text>
+            <Text style={styles.sliderEnd}>0.5 ק"מ</Text>
+          </View>
         </View>
 
         {/* Category cards */}
@@ -205,50 +200,46 @@ const styles = StyleSheet.create({
   radiusSection: {
     backgroundColor: colors.surface,
     borderRadius: radius.lg,
-    padding: spacing.md,
-    gap: 8,
+    paddingHorizontal: spacing.lg,
+    paddingTop: spacing.md,
+    paddingBottom: spacing.sm,
     ...shadow.card,
   },
+  radiusRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+    justifyContent: 'flex-end',
+  },
   radiusLabel: {
-    fontSize: 12,
-    fontWeight: '600',
-    color: colors.textMuted,
+    fontSize: 13,
+    fontWeight: '700',
+    color: colors.text,
+    flex: 1,
     textAlign: 'right',
+  },
+  radiusValue: {
+    fontSize: 14,
+    fontWeight: '800',
+    color: colors.primary,
+    minWidth: 56,
+    textAlign: 'left',
   },
   noLocNote: {
     fontSize: 11,
     color: colors.danger,
-    fontWeight: '400',
   },
-  radiusChips: {
+  slider: {
+    width: '100%',
+    height: 40,
+  },
+  sliderLabels: {
     flexDirection: 'row',
-    gap: 8,
-    justifyContent: 'flex-end',
+    justifyContent: 'space-between',
+    marginTop: -6,
   },
-  chip: {
-    borderRadius: radius.pill,
-    paddingHorizontal: 14,
-    paddingVertical: 7,
-    borderWidth: 1.5,
-    borderColor: colors.border,
-    backgroundColor: colors.background,
-  },
-  chipActive: {
-    borderColor: colors.primary,
-    backgroundColor: colors.primary,
-  },
-  chipDisabled: {
-    opacity: 0.35,
-  },
-  chipText: {
-    fontSize: 13,
-    fontWeight: '600',
-    color: colors.textMuted,
-  },
-  chipTextActive: {
-    color: '#fff',
-  },
-  chipTextDisabled: {
+  sliderEnd: {
+    fontSize: 11,
     color: colors.textMuted,
   },
 
