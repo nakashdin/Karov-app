@@ -8,6 +8,7 @@ import { transliterateHebrew } from '../utils/transliterate';
 import { categoryLabel, kosherTypeLabel } from '../utils/kosher';
 import { placeTypeLabel } from '../utils/placeType';
 import { formatDistance } from '../utils/geo';
+import { isCurrentlyOpen, shortHours } from '../utils/openingHours';
 
 const PLACE_EMOJI: Record<Place['type'], string> = {
   restaurant:   '🍽️',
@@ -81,6 +82,8 @@ export function PlaceCard({ place, distanceKm, onPress }: PlaceCardProps) {
   const typeLabel = placeTypeLabel[place.type];
 
   const isFoodType = ['restaurant', 'fast_food', 'cafe', 'coffee_cart'].includes(place.type);
+  const openStatus  = isCurrentlyOpen(place.openingHours);
+  const hoursShort  = shortHours(place.openingHours);
   const kosherLabel = isFoodType && place.kosherType
     ? kosherTypeLabel[place.kosherType]
     : null;
@@ -166,19 +169,14 @@ export function PlaceCard({ place, distanceKm, onPress }: PlaceCardProps) {
         <Text style={styles.cert} numberOfLines={1}>🏛 הכשר: {certLine}</Text>
       )}
 
-      {/* Website — food places only */}
-      {isFoodType && place.website && (
-        <Pressable
-          style={styles.websiteRow}
-          onPress={(e) => {
-            e.stopPropagation?.();
-            Linking.openURL(place.website!);
-          }}
-          hitSlop={6}
-        >
-          <Ionicons name="globe-outline" size={12} color={colors.primary} />
-          <Text style={styles.websiteText} numberOfLines={1}>{place.website}</Text>
-        </Pressable>
+      {/* Opening hours */}
+      {hoursShort && (
+        <View style={styles.hoursRow}>
+          <Ionicons name="time-outline" size={12} color={colors.textMuted} />
+          <Text style={styles.hoursText} numberOfLines={1}>{hoursShort}</Text>
+          {openStatus === true  && <View style={[styles.badge, styles.badgeOpen]}><Text style={styles.badgeText}>פתוח</Text></View>}
+          {openStatus === false && <View style={[styles.badge, styles.badgeClosed]}><Text style={styles.badgeText}>סגור</Text></View>}
+        </View>
       )}
     </Pressable>
   );
@@ -272,17 +270,30 @@ const styles = StyleSheet.create({
     textAlign: 'right',
   },
 
-  websiteRow: {
+  hoursRow: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 5,
     justifyContent: 'flex-end',
   },
-  websiteText: {
+  hoursText: {
     fontSize: 11,
-    color: colors.primary,
+    color: colors.textMuted,
     flex: 1,
     textAlign: 'right',
+  },
+  badge: {
+    borderRadius: 4,
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    flexShrink: 0,
+  },
+  badgeOpen:   { backgroundColor: '#dcfce7' },
+  badgeClosed: { backgroundColor: '#fee2e2' },
+  badgeText: {
+    fontSize: 10,
+    fontWeight: '700',
+    color: '#374151',
   },
 
   navBtn: {
