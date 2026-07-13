@@ -23,8 +23,9 @@ import { useLanguage } from '../context/LanguageContext';
 import { usePlaces } from '../hooks/usePlaces';
 import { useSharedLocation, getCachedLocation } from '../context/LocationContext';
 import { useFilters } from '../context/FiltersContext';
-import { countActiveFilters, GeoPoint, PlaceType } from '../types';
+import { countActiveFilters, GeoPoint, KosherType, PlaceType } from '../types';
 import { distanceKm } from '../utils/geo';
+import { kosherTypeLabel } from '../utils/kosher';
 import { RootStackParamList } from '../navigation/types';
 
 type Nav = NativeStackNavigationProp<RootStackParamList>;
@@ -68,6 +69,19 @@ export function ListScreen() {
     { key: 'meat',        label: t.cuisine.meat,        emoji: '🥩' },
   ];
   const { places, loading, error, reload } = usePlaces(filters);
+  // Base places (placeType only) for computing available kosherTypes dynamically
+  const isFoodType = ['restaurant', 'fast_food', 'cafe', 'coffee_cart'].includes(filters.placeType ?? '');
+  const { places: basePlaces } = usePlaces(isFoodType ? { placeType: filters.placeType } : {});
+  const availableKosherTypes = useMemo<KosherType[]>(() => {
+    if (!isFoodType) return [];
+    const seen = new Set<KosherType>();
+    for (const p of basePlaces) {
+      if (p.kosherType) seen.add(p.kosherType as KosherType);
+    }
+    return Array.from(seen).sort((a, b) =>
+      (kosherTypeLabel[a] ?? a).localeCompare(kosherTypeLabel[b] ?? b, 'he')
+    );
+  }, [basePlaces, isFoodType]);
   const { location: ctxLocation, status: locationStatus, request: requestLocation } = useSharedLocation();
   const ctxOrCachedLocation = ctxLocation ?? getCachedLocation();
 
@@ -183,6 +197,7 @@ export function ListScreen() {
           onPress={() => {
             setFilter('placeType', null);
             setFilter('cuisineTag', null);
+            setFilter('kosherType', null);
             navigation.goBack();
           }}
           hitSlop={12}
@@ -345,6 +360,34 @@ export function ListScreen() {
           })}
         </ScrollView>
       ) : null}
+
+      {/* Kashrut type chips — only for food categories, dynamic from data */}
+      {isFoodType && availableKosherTypes.length > 0 && (
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          style={styles.tabsScroll}
+          contentContainerStyle={styles.tabsContent}
+        >
+          <Pressable
+            style={[styles.tab, filters.kosherType === null && styles.tabActive]}
+            onPress={() => setFilter('kosherType', null)}
+          >
+            <Text style={[styles.tabText, filters.kosherType === null && styles.tabTextActive]}>הכל</Text>
+          </Pressable>
+          {availableKosherTypes.map((kt) => (
+            <Pressable
+              key={kt}
+              style={[styles.tab, filters.kosherType === kt && styles.tabActive]}
+              onPress={() => setFilter('kosherType', filters.kosherType === kt ? null : kt)}
+            >
+              <Text style={[styles.tabText, filters.kosherType === kt && styles.tabTextActive]}>
+                {kosherTypeLabel[kt] ?? kt}
+              </Text>
+            </Pressable>
+          ))}
+        </ScrollView>
+      )}
 
       {/* Location prompt — when no GPS location yet */}
       {needsLocation && (

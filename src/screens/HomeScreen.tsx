@@ -73,10 +73,6 @@ export function HomeScreen() {
   };
 
   const openType = (placeType: PlaceType) => {
-    if (placeType === 'restaurant' || placeType === 'fast_food' || placeType === 'cafe' || placeType === 'coffee_cart') {
-      navigation.navigate('KashruyotFilter', { placeType });
-      return;
-    }
     setFilters({ ...emptyFilters, placeType });
     navigation.navigate('List', undefined);
   };
