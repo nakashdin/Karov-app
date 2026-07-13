@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useRef, useState } from 'react';
 import { FlatList, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
@@ -31,6 +31,7 @@ export function FoodListScreen() {
   const { places, loading } = usePlaces();
   const { location } = useSharedLocation();
   const [activeTab, setActiveTab] = useState<FoodTab>('all');
+  const listRef = useRef<FlatList>(null);
 
   const filtered = useMemo(() => {
     const types = activeTab === 'all' ? ALL_FOOD : [activeTab as PlaceType];
@@ -43,9 +44,40 @@ export function FoodListScreen() {
     return result;
   }, [places, activeTab, location]);
 
+  const handleTabPress = (key: FoodTab) => {
+    setActiveTab(key);
+    listRef.current?.scrollToOffset({ offset: 0, animated: false });
+  };
+
+  // Sticky tab bar rendered as FlatList header
+  const TabBar = (
+    <ScrollView
+      horizontal
+      showsHorizontalScrollIndicator={false}
+      style={styles.tabsScroll}
+      contentContainerStyle={styles.tabsContent}
+    >
+      {TABS.map(tab => {
+        const active = activeTab === tab.key;
+        return (
+          <Pressable
+            key={tab.key}
+            style={[styles.tab, active && styles.tabActive]}
+            onPress={() => handleTabPress(tab.key)}
+          >
+            <Text style={styles.tabEmoji}>{tab.emoji}</Text>
+            <Text style={[styles.tabLabel, active && styles.tabLabelActive]}>
+              {tab.label}
+            </Text>
+          </Pressable>
+        );
+      })}
+    </ScrollView>
+  );
+
   return (
     <Screen style={styles.screen}>
-      {/* Header */}
+      {/* Header — always visible */}
       <View style={styles.header}>
         <Pressable
           style={({ pressed }) => [styles.backBtn, pressed && styles.pressed]}
@@ -57,37 +89,13 @@ export function FoodListScreen() {
         <Text style={styles.count}>{filtered.length}</Text>
       </View>
 
-      {/* Subcategory tabs */}
-      <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        style={styles.tabsScroll}
-        contentContainerStyle={styles.tabsContent}
-      >
-        {TABS.map(tab => {
-          const active = activeTab === tab.key;
-          return (
-            <Pressable
-              key={tab.key}
-              style={[styles.tab, active && styles.tabActive]}
-              onPress={() => setActiveTab(tab.key)}
-            >
-              <Text style={styles.tabEmoji}>{tab.emoji}</Text>
-              <Text style={[styles.tabLabel, active && styles.tabLabelActive]}>
-                {tab.label}
-              </Text>
-            </Pressable>
-          );
-        })}
-      </ScrollView>
-
-      {/* Place list */}
       {loading ? (
         <View style={styles.loadingBox}>
           <Loading />
         </View>
       ) : (
         <FlatList
+          ref={listRef}
           data={filtered}
           keyExtractor={item => item.id}
           renderItem={({ item }) => (
@@ -97,6 +105,9 @@ export function FoodListScreen() {
               onPress={() => navigation.navigate('PlaceDetail', { id: item.id })}
             />
           )}
+          // Tab bar as sticky header (index 0 → stays at top while scrolling)
+          ListHeaderComponent={TabBar}
+          stickyHeaderIndices={[0]}
           contentContainerStyle={styles.list}
           showsVerticalScrollIndicator={false}
           ListEmptyComponent={
@@ -145,14 +156,14 @@ const styles = StyleSheet.create({
   },
   pressed: { opacity: 0.85 },
 
+  // Tab bar — sticky header
   tabsScroll: {
-    flexGrow: 0,
+    backgroundColor: colors.background,
     borderBottomWidth: 1,
     borderBottomColor: colors.border,
   },
   tabsContent: {
     paddingHorizontal: spacing.lg,
-    paddingBottom: 0,
     gap: 6,
     flexDirection: 'row',
   },
