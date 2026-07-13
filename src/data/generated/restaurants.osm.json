@@ -81,7 +81,10 @@
     "extra": {
       "osmKosher": "yes"
     },
-    "category": "meat"
+    "category": "meat",
+    "phone": "02-6436778",
+    "openingHours": "Su-Fr 07:30-21:30",
+    "instagram": "https://www.instagram.com/levis.place/"
   },
   {
     "id": "osm-node-777400976",
@@ -140,27 +143,6 @@
     "category": "meat"
   },
   {
-    "id": "osm-node-1088081695",
-    "name": "Denis Kingdom",
-    "type": "restaurant",
-    "cityId": "אילת",
-    "address": "אילת",
-    "location": {
-      "latitude": 29.5485325,
-      "longitude": 34.9671531
-    },
-    "source": "osm",
-    "phone": "+972-8-637-9898",
-    "tags": [
-      "fish",
-      "meat"
-    ],
-    "extra": {
-      "osmKosher": "yes"
-    },
-    "category": "meat"
-  },
-  {
     "id": "osm-node-1088134125",
     "name": "IL PENTOLINO",
     "type": "restaurant",
@@ -207,7 +189,7 @@
     "name": "ארומה",
     "type": "restaurant",
     "cityId": "ירושלים",
-    "address": "ירושלים",
+    "address": "הלל 18, ירושלים",
     "location": {
       "latitude": 31.7765121,
       "longitude": 35.2267096
@@ -222,14 +204,16 @@
     "category": "dairy",
     "website": "https://www.aroma.co.il",
     "instagram": "https://www.instagram.com/aromaisrael",
-    "facebook": "https://www.facebook.com/AromaIsrael"
+    "facebook": "https://www.facebook.com/AromaIsrael",
+    "phone": "02-6255365",
+    "openingHours": "Su-Sa 06:00-23:00"
   },
   {
     "id": "osm-node-1477010459",
     "name": "קופיקס",
     "type": "restaurant",
     "cityId": "בת ים",
-    "address": "בת ים",
+    "address": "קניון בית ימון, בת ים",
     "location": {
       "latitude": 31.9905503,
       "longitude": 34.7655468
@@ -244,7 +228,8 @@
     "category": "dairy",
     "website": "https://www.coffix.co.il",
     "instagram": "https://www.instagram.com/coffix_israel",
-    "facebook": "https://www.facebook.com/coffix"
+    "facebook": "https://www.facebook.com/coffix",
+    "openingHours": "Su-Th 09:00-21:30; Fr 09:00-16:00"
   },
   {
     "id": "osm-node-1643352285",
@@ -270,7 +255,7 @@
     "name": "ארומה",
     "type": "restaurant",
     "cityId": "באר שבע",
-    "address": "באר שבע",
+    "address": "מרכז ביג, דרך חברון 21, באר שבע",
     "location": {
       "latitude": 31.262549,
       "longitude": 34.7991456
@@ -286,7 +271,8 @@
     "category": "dairy",
     "website": "https://www.aroma.co.il",
     "instagram": "https://www.instagram.com/aromaisrael",
-    "facebook": "https://www.facebook.com/AromaIsrael"
+    "facebook": "https://www.facebook.com/AromaIsrael",
+    "phone": "08-6652032"
   },
   {
     "id": "osm-node-1675753858",
@@ -403,7 +389,7 @@
     "name": "ראנץ' האוס בר בורגר",
     "type": "restaurant",
     "cityId": "אילת",
-    "address": "אילת",
+    "address": "טיילת רויאל ביץ', אילת",
     "location": {
       "latitude": 29.5492465,
       "longitude": 34.9629218
@@ -416,14 +402,17 @@
     "extra": {
       "osmKosher": "yes"
     },
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 18:30-22:30; Sa 21:30-22:30",
+    "website": "https://www.ranchhouse.co.il",
+    "instagram": "https://www.instagram.com/ranch_house_eilat/"
   },
   {
     "id": "osm-node-1763010099",
     "name": "Buffalo Steak House",
     "type": "restaurant",
     "cityId": "אילת",
-    "address": "אילת",
+    "address": "מלון הילטון מלכת שווא, החוף הצפוני, אילת",
     "location": {
       "latitude": 29.5504583,
       "longitude": 34.9616846
@@ -436,7 +425,8 @@
     "extra": {
       "osmKosher": "yes"
     },
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 19:00-23:00; Sa 21:00-23:00"
   },
   {
     "id": "osm-node-1763014171",
@@ -479,46 +469,6 @@
     "category": "meat"
   },
   {
-    "id": "osm-node-1763020169",
-    "name": "שיפודי הבוסתן",
-    "type": "restaurant",
-    "cityId": "אילת",
-    "address": "אילת",
-    "location": {
-      "latitude": 29.5480116,
-      "longitude": 34.9649056
-    },
-    "source": "osm",
-    "phone": "+972-(0)8-6362294",
-    "tags": [
-      "Meat"
-    ],
-    "extra": {
-      "osmKosher": "yes"
-    },
-    "category": "meat"
-  },
-  {
-    "id": "osm-node-1763027555",
-    "name": "שיפודי אילת",
-    "type": "restaurant",
-    "cityId": "אילת",
-    "address": "אילת",
-    "location": {
-      "latitude": 29.550197,
-      "longitude": 34.9581494
-    },
-    "source": "osm",
-    "phone": "+972-(0)8-6339933",
-    "tags": [
-      "Meat"
-    ],
-    "extra": {
-      "osmKosher": "yes"
-    },
-    "category": "meat"
-  },
-  {
     "id": "osm-node-1763031739",
     "name": "לורנס",
     "type": "restaurant",
@@ -536,34 +486,17 @@
     "extra": {
       "osmKosher": "yes"
     },
-    "category": "meat"
-  },
-  {
-    "id": "osm-node-1763919142",
-    "name": "מרינה גריל",
-    "type": "restaurant",
-    "cityId": "אילת",
-    "address": "אילת",
-    "location": {
-      "latitude": 29.552574,
-      "longitude": 34.9620036
-    },
-    "source": "osm",
-    "phone": "+972-57-9442988",
-    "tags": [
-      "steak_house"
-    ],
-    "extra": {
-      "osmKosher": "yes"
-    },
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 18:30-22:30; Sa 20:30-00:00",
+    "website": "https://www.lawrence-eilat.co.il",
+    "instagram": "https://www.instagram.com/lawrence__eilat/"
   },
   {
     "id": "osm-node-1763972919",
     "name": "קפה בולבארד",
     "type": "restaurant",
     "cityId": "אילת",
-    "address": "אילת",
+    "address": "שדרת לה בולבארד, מלון ישרוטל, אילת",
     "location": {
       "latitude": 29.5496947,
       "longitude": 34.964538
@@ -577,27 +510,9 @@
     "extra": {
       "osmKosher": "yes"
     },
-    "category": "dairy"
-  },
-  {
-    "id": "osm-node-1763987699",
-    "name": "יאקימונו",
-    "type": "restaurant",
-    "cityId": "אילת",
-    "address": "טיילת השלום 19, אילת",
-    "location": {
-      "latitude": 29.5500895,
-      "longitude": 34.9616892
-    },
-    "source": "osm",
-    "phone": "+972-8-6306687",
-    "tags": [
-      "japanese"
-    ],
-    "extra": {
-      "osmKosher": "yes"
-    },
-    "category": "parve"
+    "category": "dairy",
+    "openingHours": "Su-Th 10:00-21:00; Fr 09:00-16:00; Sa 12:00-21:00",
+    "website": "https://www.cafeboulevard.co.il"
   },
   {
     "id": "osm-node-1764005156",
@@ -880,50 +795,6 @@
     "category": "dairy"
   },
   {
-    "id": "osm-node-2144611932",
-    "name": "ארומה",
-    "type": "restaurant",
-    "cityId": "כפר חב\"ד",
-    "address": "כפר חב\"ד",
-    "location": {
-      "latitude": 31.9686019,
-      "longitude": 34.8430931
-    },
-    "source": "osm",
-    "tags": [
-      "coffee_shop"
-    ],
-    "extra": {
-      "osmKosher": "yes"
-    },
-    "category": "dairy",
-    "website": "https://www.aroma.co.il",
-    "instagram": "https://www.instagram.com/aromaisrael",
-    "facebook": "https://www.facebook.com/AromaIsrael"
-  },
-  {
-    "id": "osm-node-2144611975",
-    "name": "מקדונלד'ס",
-    "type": "restaurant",
-    "cityId": "כפר חב\"ד",
-    "address": "כפר חב\"ד",
-    "location": {
-      "latitude": 31.9685611,
-      "longitude": 34.8427717
-    },
-    "source": "osm",
-    "tags": [
-      "burger"
-    ],
-    "extra": {
-      "osmKosher": "yes"
-    },
-    "category": "meat",
-    "website": "https://www.mcdonalds.co.il",
-    "instagram": "https://www.instagram.com/mcdonaldsisrael",
-    "facebook": "https://www.facebook.com/McDonaldsIsrael"
-  },
-  {
     "id": "osm-node-2144612020",
     "name": "Japan",
     "type": "restaurant",
@@ -947,7 +818,7 @@
     "name": "בורגרס בר",
     "type": "restaurant",
     "cityId": "מודיעין-מכבים-רעות",
-    "address": "מודיעין-מכבים-רעות",
+    "address": "עמק דותן 23, מרכז מליבו סנטר, מודיעין",
     "location": {
       "latitude": 31.8989908,
       "longitude": 35.0210521
@@ -962,7 +833,8 @@
     "category": "meat",
     "website": "https://www.burgersbar.co.il",
     "instagram": "https://www.instagram.com/burgersbar",
-    "facebook": "https://www.facebook.com/BurgersBar"
+    "facebook": "https://www.facebook.com/BurgersBar",
+    "openingHours": "Su-Th 11:00-23:59"
   },
   {
     "id": "osm-node-2318762527",
@@ -1077,7 +949,7 @@
     "name": "בורגרס בר",
     "type": "restaurant",
     "cityId": "תל אביב–יפו",
-    "address": "תל אביב–יפו",
+    "address": "טאגור 30, תל אביב",
     "location": {
       "latitude": 32.1167648,
       "longitude": 34.7969694
@@ -1092,7 +964,8 @@
     "category": "meat",
     "website": "https://www.burgersbar.co.il",
     "instagram": "https://www.instagram.com/burgersbar",
-    "facebook": "https://www.facebook.com/BurgersBar"
+    "facebook": "https://www.facebook.com/BurgersBar",
+    "openingHours": "Su-Th 11:00-23:30; Fr 11:00-15:00"
   },
   {
     "id": "osm-node-2701869274",
@@ -1336,7 +1209,9 @@
     "category": "dairy",
     "website": "https://www.roladin.co.il",
     "instagram": "https://www.instagram.com/roladin",
-    "facebook": "https://www.facebook.com/roladin"
+    "facebook": "https://www.facebook.com/roladin",
+    "phone": "03-5039419",
+    "openingHours": "Su-Th 06:30-21:00; Fr 07:00-14:30"
   },
   {
     "id": "osm-node-4421769054",
@@ -1424,33 +1299,11 @@
     "facebook": "https://www.facebook.com/AromaIsrael"
   },
   {
-    "id": "osm-node-4612610692",
-    "name": "מקדונלד'ס",
-    "type": "restaurant",
-    "cityId": "נטעים",
-    "address": "נטעים",
-    "location": {
-      "latitude": 31.9760627,
-      "longitude": 34.7741191
-    },
-    "source": "osm",
-    "tags": [
-      "burger"
-    ],
-    "extra": {
-      "osmKosher": "yes"
-    },
-    "category": "meat",
-    "website": "https://www.mcdonalds.co.il",
-    "instagram": "https://www.instagram.com/mcdonaldsisrael",
-    "facebook": "https://www.facebook.com/McDonaldsIsrael"
-  },
-  {
     "id": "osm-node-4818808608",
     "name": "קפה גרג",
     "type": "restaurant",
     "cityId": "כרמיאל",
-    "address": "כרמיאל",
+    "address": "קניון חוצות כרמיאל, כרמיאל",
     "location": {
       "latitude": 32.9134777,
       "longitude": 35.282161
@@ -1462,7 +1315,9 @@
     "category": "dairy",
     "website": "https://www.cafegreg.co.il",
     "instagram": "https://www.instagram.com/cafegreg",
-    "facebook": "https://www.facebook.com/CafeGreg"
+    "facebook": "https://www.facebook.com/CafeGreg",
+    "phone": "04-8578475",
+    "openingHours": "Su-Th 08:30-21:00; Fr 07:30-15:00"
   },
   {
     "id": "osm-node-4828911835",
@@ -1503,7 +1358,9 @@
     "category": "parve",
     "website": "https://www.humuselihu.co.il",
     "instagram": "https://www.instagram.com/humus_elihu",
-    "facebook": "https://www.facebook.com/HumusElihu"
+    "facebook": "https://www.facebook.com/HumusElihu",
+    "phone": "08-6608711",
+    "openingHours": "Su-Th 07:30-19:30; Fr 09:00-13:00"
   },
   {
     "id": "osm-node-5114974763",
@@ -1804,7 +1661,7 @@
     "name": "קפה קפה",
     "type": "restaurant",
     "cityId": "חולון",
-    "address": "חולון",
+    "address": "סוקולוב 48, חולון",
     "location": {
       "latitude": 31.991014,
       "longitude": 34.771978
@@ -1816,7 +1673,10 @@
     "extra": {
       "osmKosher": "yes"
     },
-    "category": "dairy"
+    "category": "dairy",
+    "phone": "03-5036699",
+    "openingHours": "Su-Th 08:00-23:00; Fr 08:00-14:00",
+    "website": "https://www.cafecafe.co.il"
   },
   {
     "id": "osm-node-5221319346",
@@ -1907,7 +1767,7 @@
     "name": "פיצה האט",
     "type": "restaurant",
     "cityId": "נשר",
-    "address": "נשר",
+    "address": "טכניון, חיפה",
     "location": {
       "latitude": 32.7764991,
       "longitude": 35.022555
@@ -1923,7 +1783,8 @@
     "category": "dairy",
     "website": "https://www.pizzahut.co.il",
     "instagram": "https://www.instagram.com/pizzahutisrael",
-    "facebook": "https://www.facebook.com/PizzaHutIsrael"
+    "facebook": "https://www.facebook.com/PizzaHutIsrael",
+    "phone": "1700-506070"
   },
   {
     "id": "osm-node-5298217097",
@@ -2066,7 +1927,7 @@
     "name": "חומוס אליהו",
     "type": "restaurant",
     "cityId": "ראש פינה",
-    "address": "ראש פינה",
+    "address": "התפוח 3, סנטר הגליל, ראש פינה",
     "location": {
       "latitude": 32.9690461,
       "longitude": 35.5497109
@@ -2078,7 +1939,9 @@
     "category": "parve",
     "website": "https://www.humuselihu.co.il",
     "instagram": "https://www.instagram.com/humus_elihu",
-    "facebook": "https://www.facebook.com/HumusElihu"
+    "facebook": "https://www.facebook.com/HumusElihu",
+    "phone": "04-6390449",
+    "openingHours": "Su-Th 10:00-16:00; Fr 10:00-15:00"
   },
   {
     "id": "osm-node-5498980275",
@@ -2102,7 +1965,7 @@
     "name": "קפה גרג",
     "type": "restaurant",
     "cityId": "ראש פינה",
-    "address": "ראש פינה",
+    "address": "התפוח 5, מתחם סנטר הגליל, ראש פינה",
     "location": {
       "latitude": 32.9688559,
       "longitude": 35.5500188
@@ -2117,7 +1980,9 @@
     "category": "dairy",
     "website": "https://www.cafegreg.co.il",
     "instagram": "https://www.instagram.com/cafegreg",
-    "facebook": "https://www.facebook.com/CafeGreg"
+    "facebook": "https://www.facebook.com/CafeGreg",
+    "phone": "04-6801191",
+    "openingHours": "Su-Th 07:30-23:00; Fr 07:30-14:30"
   },
   {
     "id": "osm-node-5613754222",
@@ -2218,7 +2083,10 @@
     "extra": {
       "osmKosher": "yes"
     },
-    "category": "parve"
+    "category": "parve",
+    "phone": "03-7236100",
+    "website": "https://japanika.net",
+    "instagram": "https://www.instagram.com/japanika.rosh.pinah/"
   },
   {
     "id": "osm-node-5728458069",
@@ -2369,26 +2237,6 @@
     "category": "dairy"
   },
   {
-    "id": "osm-node-5920233936",
-    "name": "סומסה",
-    "type": "restaurant",
-    "cityId": "גבעתיים",
-    "address": "זאב ז'בוטינסקי 1, גבעתיים",
-    "location": {
-      "latitude": 32.0828111,
-      "longitude": 34.799941
-    },
-    "source": "osm",
-    "phone": "+972 037 526 222",
-    "tags": [
-      "mediterranean"
-    ],
-    "extra": {
-      "osmKosher": "yes"
-    },
-    "category": "parve"
-  },
-  {
     "id": "osm-node-5981044016",
     "name": "מקדונלד'ס",
     "type": "restaurant",
@@ -2443,7 +2291,8 @@
     "extra": {
       "osmKosher": "yes"
     },
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-We 11:00-23:00; Th 11:00-23:30"
   },
   {
     "id": "osm-node-6014902517",
@@ -2667,7 +2516,8 @@
     "category": "dairy",
     "website": "https://www.pizzahut.co.il",
     "instagram": "https://www.instagram.com/pizzahutisrael",
-    "facebook": "https://www.facebook.com/PizzaHutIsrael"
+    "facebook": "https://www.facebook.com/PizzaHutIsrael",
+    "phone": "1700-506070"
   },
   {
     "id": "osm-node-6354069186",
@@ -2962,7 +2812,7 @@
     "name": "מקדונלד'ס",
     "type": "restaurant",
     "cityId": "ירושלים",
-    "address": "ירושלים",
+    "address": "בן יהודה 7, ירושלים",
     "location": {
       "latitude": 31.7815495,
       "longitude": 35.2183401
@@ -2977,7 +2827,8 @@
     "category": "meat",
     "website": "https://www.mcdonalds.co.il",
     "instagram": "https://www.instagram.com/mcdonaldsisrael",
-    "facebook": "https://www.facebook.com/McDonaldsIsrael"
+    "facebook": "https://www.facebook.com/McDonaldsIsrael",
+    "openingHours": "Su-We 11:00-23:00; Th 11:00-23:59; Fr 10:30-16:00; Sa 21:30-23:59"
   },
   {
     "id": "osm-node-7064678724",
@@ -3099,7 +2950,7 @@
     "name": "בורגרים",
     "type": "restaurant",
     "cityId": "נתניה",
-    "address": "נתניה",
+    "address": "דרך הרכבת 14, נתניה",
     "location": {
       "latitude": 32.3211966,
       "longitude": 34.8673922
@@ -3114,7 +2965,9 @@
     "category": "meat",
     "website": "https://www.burgerim.co.il",
     "instagram": "https://www.instagram.com/burgerimisrael",
-    "facebook": "https://www.facebook.com/burgerimisrael"
+    "facebook": "https://www.facebook.com/burgerimisrael",
+    "phone": "09-8344944",
+    "openingHours": "Su-Th 11:00-23:30; Fr 11:00-14:30"
   },
   {
     "id": "osm-node-8142764996",
@@ -3203,7 +3056,10 @@
     "extra": {
       "osmKosher": "yes"
     },
-    "category": "parve"
+    "category": "parve",
+    "phone": "053-9386160",
+    "openingHours": "Su-Th 12:00-00:00; Fr 12:00-00:00; Sa 12:00-01:00",
+    "website": "https://japanika.net"
   },
   {
     "id": "osm-node-9570930731",
@@ -4285,7 +4141,9 @@
     "category": "meat",
     "website": "https://www.newdeli.co.il",
     "instagram": "https://www.instagram.com/newdeli_israel",
-    "facebook": "https://www.facebook.com/NewDeliIsrael"
+    "facebook": "https://www.facebook.com/NewDeliIsrael",
+    "phone": "03-7786380",
+    "openingHours": "Su-Th 11:00-21:45; Fr 11:00-15:30"
   },
   {
     "id": "osm-node-11716322614",
@@ -4957,7 +4815,7 @@
     "name": "גולדה",
     "type": "restaurant",
     "cityId": "ראשון לציון",
-    "address": "ראשון לציון",
+    "address": "גבעתי 1, ראשון לציון",
     "location": {
       "latitude": 31.967546,
       "longitude": 34.8171501
@@ -4969,7 +4827,9 @@
     "category": "dairy",
     "website": "https://www.golda.co.il",
     "instagram": "https://www.instagram.com/golda_icecream",
-    "facebook": "https://www.facebook.com/goldaicecream"
+    "facebook": "https://www.facebook.com/goldaicecream",
+    "phone": "03-6099949",
+    "openingHours": "Su-Th 09:00-23:00; Fr 09:00-15:30"
   },
   {
     "id": "osm-node-12520425651",
@@ -5510,7 +5370,7 @@
     "name": "New Deli",
     "type": "restaurant",
     "cityId": "פתח תקווה",
-    "address": "פתח תקווה",
+    "address": "ז'בוטינסקי 72, הקניון הגדול, פתח תקווה",
     "location": {
       "latitude": 32.0929566,
       "longitude": 34.8649532
@@ -5525,7 +5385,9 @@
     "category": "meat",
     "website": "https://www.newdeli.co.il",
     "instagram": "https://www.instagram.com/newdeli_israel",
-    "facebook": "https://www.facebook.com/NewDeliIsrael"
+    "facebook": "https://www.facebook.com/NewDeliIsrael",
+    "phone": "03-7733114",
+    "openingHours": "Su-Th 11:00-22:00; Fr 11:00-15:30; Sa 21:30-23:00"
   },
   {
     "id": "osm-node-12676686493",
@@ -5590,7 +5452,7 @@
     "name": "בורגרים",
     "type": "restaurant",
     "cityId": "שוהם",
-    "address": "שוהם",
+    "address": "שד' עמק איילון 161, שוהם",
     "location": {
       "latitude": 32.0056588,
       "longitude": 34.9467795
@@ -5605,7 +5467,9 @@
     "category": "meat",
     "website": "https://www.burgerim.co.il",
     "instagram": "https://www.instagram.com/burgerimisrael",
-    "facebook": "https://www.facebook.com/burgerimisrael"
+    "facebook": "https://www.facebook.com/burgerimisrael",
+    "phone": "03-5072979",
+    "openingHours": "Su-Th 11:00-23:00"
   },
   {
     "id": "osm-node-12737103897",
