@@ -1,7 +1,7 @@
 import React, { useMemo, useRef, useState } from 'react';
 import { FlatList, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation, useRoute, RouteProp } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { Screen } from '../components/Screen';
 import { PlaceCard } from '../components/PlaceCard';
@@ -14,6 +14,7 @@ import { KosherCategory, PlaceType } from '../types';
 import { RootStackParamList } from '../navigation/types';
 
 type Nav = NativeStackNavigationProp<RootStackParamList>;
+type FoodRoute = RouteProp<RootStackParamList, 'FoodList'>;
 type FoodTab = 'all' | KosherCategory;
 
 const ALL_FOOD: PlaceType[] = ['restaurant', 'fast_food', 'cafe', 'coffee_cart'];
@@ -27,13 +28,19 @@ const TABS: Array<{ key: FoodTab; label: string; emoji: string }> = [
 
 export function FoodListScreen() {
   const navigation = useNavigation<Nav>();
+  const route = useRoute<FoodRoute>();
+  const radiusKm = route.params?.radiusKm ?? null;
   const { places, loading } = usePlaces();
   const { location } = useSharedLocation();
   const [activeTab, setActiveTab] = useState<FoodTab>('all');
   const listRef = useRef<FlatList>(null);
 
   const filtered = useMemo(() => {
-    const foodPlaces = places.filter(p => ALL_FOOD.includes(p.type));
+    let foodPlaces = places.filter(p => ALL_FOOD.includes(p.type));
+    // Filter by radius if set and location is available
+    if (radiusKm && location) {
+      foodPlaces = foodPlaces.filter(p => distanceKm(location, p.location) <= radiusKm);
+    }
     const result = activeTab === 'all'
       ? foodPlaces
       : foodPlaces.filter(p => p.category === activeTab);
@@ -43,7 +50,7 @@ export function FoodListScreen() {
       );
     }
     return result;
-  }, [places, activeTab, location]);
+  }, [places, activeTab, location, radiusKm]);
 
   const handleTabPress = (key: FoodTab) => {
     setActiveTab(key);
@@ -87,7 +94,10 @@ export function FoodListScreen() {
           <Ionicons name="chevron-forward" size={22} color={colors.text} />
         </Pressable>
         <Text style={styles.title}>🍽 אוכל כשר</Text>
-        <Text style={styles.count}>{filtered.length}</Text>
+        <View style={styles.countBlock}>
+          <Text style={styles.count}>{filtered.length}</Text>
+          {radiusKm && <Text style={styles.radius}>{radiusKm} ק"מ</Text>}
+        </View>
       </View>
 
       {loading ? (
@@ -149,11 +159,20 @@ const styles = StyleSheet.create({
     color: colors.text,
     textAlign: 'right',
   },
+  countBlock: { flexDirection: 'row', alignItems: 'center', gap: 6, flexShrink: 0 },
   count: {
     fontSize: 13,
     fontWeight: '700',
     color: colors.textMuted,
-    flexShrink: 0,
+  },
+  radius: {
+    fontSize: 11,
+    fontWeight: '700',
+    color: colors.primary,
+    backgroundColor: colors.primaryLight,
+    paddingHorizontal: 7,
+    paddingVertical: 2,
+    borderRadius: 10,
   },
   pressed: { opacity: 0.85 },
 

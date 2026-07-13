@@ -68,11 +68,11 @@ export function WhatsAroundScreen() {
 
   const handlePress = (cat: typeof CATEGORIES[0]) => {
     if (cat.key === 'food') {
-      navigation.navigate('FoodList');
+      navigation.navigate('FoodList', radiusKm ? { radiusKm } : undefined);
       return;
     }
     setFilters({ ...emptyFilters, placeType: cat.types[0] });
-    navigation.navigate('List', undefined);
+    navigation.navigate('List', radiusKm ? { radiusKm } : undefined);
   };
 
   const formatDist = (d: number) =>
