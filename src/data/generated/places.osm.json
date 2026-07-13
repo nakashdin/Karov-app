@@ -972,21 +972,6 @@
     ]
   },
   {
-    "id": "osm-node-4127872290",
-    "name": "קפה קפה",
-    "type": "restaurant",
-    "cityId": "שוהם",
-    "address": "שדרות עמק איילון 32, שוהם",
-    "location": {
-      "latitude": 32.0001243,
-      "longitude": 34.9464532
-    },
-    "source": "osm",
-    "tags": [
-      "coffee_shop"
-    ]
-  },
-  {
     "id": "osm-node-4161854779",
     "name": "Cake Art",
     "type": "restaurant",
@@ -1028,10 +1013,10 @@
     "name": "רולדין",
     "type": "restaurant",
     "cityId": "שוהם",
-    "address": "רחוב חרמון 1א, שוהם",
+    "address": "שדרות עמק איילון 30, שוהם",
     "location": {
-      "latitude": 31.9984061,
-      "longitude": 34.9471462
+      "latitude": 31.9992228,
+      "longitude": 34.9466929
     },
     "source": "osm",
     "tags": [
@@ -3930,10 +3915,10 @@
     "name": "פיצה רומא",
     "type": "restaurant",
     "cityId": "שוהם",
-    "address": "שוהם",
+    "address": "שדרות עמק איילון 30, שוהם",
     "location": {
-      "latitude": 31.9993007,
-      "longitude": 34.9471794
+      "latitude": 31.9992228,
+      "longitude": 34.9466929
     },
     "source": "osm",
     "tags": [
@@ -3945,10 +3930,10 @@
     "name": "ReBar ריבר",
     "type": "restaurant",
     "cityId": "שוהם",
-    "address": "רחוב חרמון 1, שוהם",
+    "address": "שדרות עמק איילון 30, שוהם",
     "location": {
-      "latitude": 31.9983413,
-      "longitude": 34.9468517
+      "latitude": 31.9992228,
+      "longitude": 34.9466929
     },
     "source": "osm",
     "tags": [
@@ -3974,10 +3959,10 @@
     "name": "McDonald's מקדונלד'ס",
     "type": "restaurant",
     "cityId": "שוהם",
-    "address": "שוהם",
+    "address": "שדרות עמק איילון 30, שוהם",
     "location": {
-      "latitude": 31.9991838,
-      "longitude": 34.9470171
+      "latitude": 31.9992228,
+      "longitude": 34.9466929
     },
     "source": "osm",
     "tags": [
@@ -4198,18 +4183,6 @@
     "location": {
       "latitude": 32.0047196,
       "longitude": 34.9445341
-    },
-    "source": "osm"
-  },
-  {
-    "id": "osm-node-12628507149",
-    "name": "קפיטרית תיכון שוהם",
-    "type": "restaurant",
-    "cityId": "שוהם",
-    "address": "שדרות עמק איילון 61, שוהם",
-    "location": {
-      "latitude": 32.000304,
-      "longitude": 34.9451442
     },
     "source": "osm"
   },
