@@ -1,0 +1,1709 @@
+[
+  {
+    "id": "chabad-manual-7-ראש-העין-בית-חב-ד-ראש-העין-אלתרמן",
+    "name": "בית חב\"ד ראש העין אלתרמן",
+    "type": "chabad_house",
+    "cityId": "ראש העין",
+    "address": "נתן אלתרמן 10, ראש העין",
+    "location": {
+      "latitude": 32.08221,
+      "longitude": 34.9802
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-7-ראש-העין-בית-חב-ד-ראש-העין-אלתרמן"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    }
+  },
+  {
+    "id": "chabad-manual-16-לוד-בית-חב-ד-לוד",
+    "name": "בית חב\"ד לוד",
+    "type": "chabad_house",
+    "cityId": "לוד",
+    "address": "שדרות הציונות 1, לוד",
+    "location": {
+      "latitude": 31.94532,
+      "longitude": 34.89138
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-16-לוד-בית-חב-ד-לוד"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "0527707703"
+  },
+  {
+    "id": "chabad-manual-23-אשדוד-בית-חב-ד-רובע-ד-אשדוד",
+    "name": "בית חב\"ד רובע ד' אשדוד",
+    "type": "chabad_house",
+    "cityId": "אשדוד",
+    "address": "השייטים 3, אשדוד",
+    "location": {
+      "latitude": 31.80018,
+      "longitude": 34.63963
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-23-אשדוד-בית-חב-ד-רובע-ד-אשדוד"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "0774258369"
+  },
+  {
+    "id": "chabad-manual-24-אשדוד-בית-חב-ד-רובע-ב-אשדוד",
+    "name": "בית חב\"ד רובע ב אשדוד",
+    "type": "chabad_house",
+    "cityId": "אשדוד",
+    "address": "הנרייטה סולד 7, אשדוד",
+    "location": {
+      "latitude": 31.80418,
+      "longitude": 34.65279
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-24-אשדוד-בית-חב-ד-רובע-ב-אשדוד"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "0584770458"
+  },
+  {
+    "id": "chabad-manual-34-יהוד-מונוסון-בית-חב-ד-יהוד",
+    "name": "בית חב\"ד יהוד",
+    "type": "chabad_house",
+    "cityId": "יהוד-מונוסון",
+    "address": "צבי ישי 22, יהוד-מונוסון",
+    "location": {
+      "latitude": 32.03194,
+      "longitude": 34.88929
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-34-יהוד-מונוסון-בית-חב-ד-יהוד"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    }
+  },
+  {
+    "id": "chabad-manual-36-קריית-אונו-בית-חב-ד-קריית-אונו",
+    "name": "בית חב\"ד קריית אונו",
+    "type": "chabad_house",
+    "cityId": "קריית אונו",
+    "address": "יהואש 10, קריית אונו",
+    "location": {
+      "latitude": 32.05719,
+      "longitude": 34.86157
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-36-קריית-אונו-בית-חב-ד-קריית-אונו"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    }
+  },
+  {
+    "id": "chabad-manual-72-נהריה-בית-חב-ד-נהריה",
+    "name": "בית חב\"ד נהריה",
+    "type": "chabad_house",
+    "cityId": "נהריה",
+    "address": "שדרות הגעתון 43, נהריה",
+    "location": {
+      "latitude": 33.006314,
+      "longitude": 35.091339
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-72-נהריה-בית-חב-ד-נהריה"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "0557708270"
+  },
+  {
+    "id": "chabad-manual-99-מעלה-אדומים-בית-חב-ד-מעלה-אדומים",
+    "name": "בית חב\"ד מעלה אדומים",
+    "type": "chabad_house",
+    "cityId": "מעלה אדומים",
+    "address": "הנחלים 770, מעלה אדומים",
+    "location": {
+      "latitude": 31.778928,
+      "longitude": 35.3005806
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-99-מעלה-אדומים-בית-חב-ד-מעלה-אדומים"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "025354960"
+  },
+  {
+    "id": "chabad-manual-100-ירושלים-בית-חב-ד-תלפיות-מזרח",
+    "name": "בית חב\"ד תלפיות מזרח",
+    "type": "chabad_house",
+    "cityId": "ירושלים",
+    "address": "שלמה בן יוסף 207, ירושלים",
+    "location": {
+      "latitude": 31.745282,
+      "longitude": 35.2370232
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-100-ירושלים-בית-חב-ד-תלפיות-מזרח"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "026712865"
+  },
+  {
+    "id": "chabad-manual-101-ירושלים-בית-חב-ד-ארנונה-תלפיות",
+    "name": "בית חב\"ד ארנונה תלפיות",
+    "type": "chabad_house",
+    "cityId": "ירושלים",
+    "address": "עין גדי 10, ירושלים",
+    "location": {
+      "latitude": 31.7528037,
+      "longitude": 35.2209468
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-101-ירושלים-בית-חב-ד-ארנונה-תלפיות"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "0585249496"
+  },
+  {
+    "id": "chabad-manual-102-ירושלים-בית-חב-ד-אבו-טור",
+    "name": "בית חב\"ד אבו טור",
+    "type": "chabad_house",
+    "cityId": "ירושלים",
+    "address": "דרך חברון 53, ירושלים",
+    "location": {
+      "latitude": 31.7637776,
+      "longitude": 35.2248929
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-102-ירושלים-בית-חב-ד-אבו-טור"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    }
+  },
+  {
+    "id": "chabad-manual-103-ירושלים-בית-חב-ד-בקעה---יודאיקה",
+    "name": "בית חב\"ד בקעה - יודאיקה",
+    "type": "chabad_house",
+    "cityId": "ירושלים",
+    "address": "דרך בית לחם 82, ירושלים",
+    "location": {
+      "latitude": 31.7567534,
+      "longitude": 35.2202768
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-103-ירושלים-בית-חב-ד-בקעה---יודאיקה"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "0548305799"
+  },
+  {
+    "id": "chabad-manual-104-ירושלים-בית-חב-ד-קטמון-וגונן",
+    "name": "בית חב\"ד קטמון וגונן",
+    "type": "chabad_house",
+    "cityId": "ירושלים",
+    "address": "אמציה 2, ירושלים",
+    "location": {
+      "latitude": 31.7617732,
+      "longitude": 35.2146607
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-104-ירושלים-בית-חב-ד-קטמון-וגונן"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "025670770"
+  },
+  {
+    "id": "chabad-manual-105-ירושלים-בית-חב-ד-קבר-דוד-המלך",
+    "name": "בית חב\"ד קבר דוד המלך",
+    "type": "chabad_house",
+    "cityId": "ירושלים",
+    "address": "מעלה שז\"ך 2, ירושלים",
+    "location": {
+      "latitude": 31.7705823,
+      "longitude": 35.2291426
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-105-ירושלים-בית-חב-ד-קבר-דוד-המלך"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "0525454613"
+  },
+  {
+    "id": "chabad-manual-106-ירושלים-בית-חב-ד-הקארדו",
+    "name": "בית חב\"ד הקארדו",
+    "type": "chabad_house",
+    "cityId": "ירושלים",
+    "address": "הקארדו 1, ירושלים",
+    "location": {
+      "latitude": 31.7766218,
+      "longitude": 35.2310599
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-106-ירושלים-בית-חב-ד-הקארדו"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "026272217"
+  },
+  {
+    "id": "chabad-manual-107-ירושלים-בית-חב-ד-אוהל-אברהם",
+    "name": "בית חב\"ד אוהל אברהם",
+    "type": "chabad_house",
+    "cityId": "ירושלים",
+    "address": "משגב לדך 54, ירושלים",
+    "location": {
+      "latitude": 31.7742365,
+      "longitude": 35.2319903
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-107-ירושלים-בית-חב-ד-אוהל-אברהם"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "0523617703"
+  },
+  {
+    "id": "chabad-manual-108-ירושלים-בית-חב-ד-הבקעה---בית-לוי",
+    "name": "בית חב\"ד הבקעה - בית לוי",
+    "type": "chabad_house",
+    "cityId": "ירושלים",
+    "address": "מעשה חשוב 6, ירושלים",
+    "location": {
+      "latitude": 31.7514013,
+      "longitude": 35.2164956
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-108-ירושלים-בית-חב-ד-הבקעה---בית-לוי"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "0548305799"
+  },
+  {
+    "id": "chabad-manual-109-ירושלים-בית-חב-ד-מורדות-גילה",
+    "name": "בית חב\"ד מורדות גילה",
+    "type": "chabad_house",
+    "cityId": "ירושלים",
+    "address": "אבנר חי שקי 41, ירושלים",
+    "location": {
+      "latitude": 31.7311395,
+      "longitude": 35.1867748
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-109-ירושלים-בית-חב-ד-מורדות-גילה"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "0556877058"
+  },
+  {
+    "id": "chabad-manual-110-ירושלים-בית-חב-ד-רחביה",
+    "name": "בית חב\"ד רחביה",
+    "type": "chabad_house",
+    "cityId": "ירושלים",
+    "address": "המלך ג'ורג' 52, ירושלים",
+    "location": {
+      "latitude": 31.7760762,
+      "longitude": 35.2159497
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-110-ירושלים-בית-חב-ד-רחביה"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "028001717"
+  },
+  {
+    "id": "chabad-manual-111-ירושלים-בית-חב-ד-טלביה",
+    "name": "בית חב\"ד טלביה",
+    "type": "chabad_house",
+    "cityId": "ירושלים",
+    "address": "שלום עליכם 6, ירושלים",
+    "location": {
+      "latitude": 31.7717251,
+      "longitude": 35.2203232
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-111-ירושלים-בית-חב-ד-טלביה"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "025725545"
+  },
+  {
+    "id": "chabad-manual-112-ירושלים-בית-חב-ד-מרכז-ירושלים-נחלת-שבעה",
+    "name": "בית חב\"ד מרכז ירושלים נחלת שבעה",
+    "type": "chabad_house",
+    "cityId": "ירושלים",
+    "address": "נחלת שבעה 5, ירושלים",
+    "location": {
+      "latitude": 31.7804203,
+      "longitude": 35.2194994
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-112-ירושלים-בית-חב-ד-מרכז-ירושלים-נחלת-שבעה"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "0778201770"
+  },
+  {
+    "id": "chabad-manual-113-ירושלים-בית-חב-ד-מוסדות-חב-ד-גילה",
+    "name": "בית חב\"ד מוסדות חב\"ד גילה",
+    "type": "chabad_house",
+    "cityId": "ירושלים",
+    "address": "מרכז מסחרי חדש 800A, ירושלים",
+    "location": {
+      "latitude": 31.7315,
+      "longitude": 35.1875
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-113-ירושלים-בית-חב-ד-מוסדות-חב-ד-גילה"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "026760984"
+  },
+  {
+    "id": "chabad-manual-114-ירושלים-בית-חב-ד-קריית-הלאום",
+    "name": "בית חב\"ד קריית הלאום",
+    "type": "chabad_house",
+    "cityId": "ירושלים",
+    "address": "אבא אבן 18, ירושלים",
+    "location": {
+      "latitude": 31.7835922,
+      "longitude": 35.2034522
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-114-ירושלים-בית-חב-ד-קריית-הלאום"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "0527707476"
+  },
+  {
+    "id": "chabad-manual-115-ירושלים-בית-חב-ד-רמת-בית-הכרם",
+    "name": "בית חב\"ד רמת בית הכרם",
+    "type": "chabad_house",
+    "cityId": "ירושלים",
+    "address": "גבעת בית הכרם 4, ירושלים",
+    "location": {
+      "latitude": 31.7816283,
+      "longitude": 35.1911249
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-115-ירושלים-בית-חב-ד-רמת-בית-הכרם"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "0515290770"
+  },
+  {
+    "id": "chabad-manual-116-ירושלים-בית-חב-ד-הולי-לנד",
+    "name": "בית חב\"ד הולי לנד",
+    "type": "chabad_house",
+    "cityId": "ירושלים",
+    "address": "מיכאל אבי יונה 2, ירושלים",
+    "location": {
+      "latitude": 31.7554659,
+      "longitude": 35.1878286
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-116-ירושלים-בית-חב-ד-הולי-לנד"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "0543182770"
+  },
+  {
+    "id": "chabad-manual-117-ירושלים-בית-חב-ד-עיר-גנים",
+    "name": "בית חב\"ד עיר גנים",
+    "type": "chabad_house",
+    "cityId": "ירושלים",
+    "address": "אביבית 21, ירושלים",
+    "location": {
+      "latitude": 31.7556535,
+      "longitude": 35.1731258
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-117-ירושלים-בית-חב-ד-עיר-גנים"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "026431123"
+  },
+  {
+    "id": "chabad-manual-118-ירושלים-בית-חב-ד-גבעת-המשואה",
+    "name": "בית חב\"ד גבעת המשואה",
+    "type": "chabad_house",
+    "cityId": "ירושלים",
+    "address": "איסלנד 3, ירושלים",
+    "location": {
+      "latitude": 31.7576099,
+      "longitude": 35.1673694
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-118-ירושלים-בית-חב-ד-גבעת-המשואה"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "0772040054"
+  },
+  {
+    "id": "chabad-manual-119-ירושלים-בית-חב-ד-עין-כרם",
+    "name": "בית חב\"ד עין כרם",
+    "type": "chabad_house",
+    "cityId": "ירושלים",
+    "address": "עין כרם 6, ירושלים",
+    "location": {
+      "latitude": 31.7676367,
+      "longitude": 35.1639025
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-119-ירושלים-בית-חב-ד-עין-כרם"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "0547709651"
+  },
+  {
+    "id": "chabad-manual-120-ירושלים-בית-חב-ד-הר-נוף",
+    "name": "בית חב\"ד הר נוף",
+    "type": "chabad_house",
+    "cityId": "ירושלים",
+    "address": "האדמו\"ר מרוז'ין 17, ירושלים",
+    "location": {
+      "latitude": 31.7865507,
+      "longitude": 35.1713818
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-120-ירושלים-בית-חב-ד-הר-נוף"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    }
+  },
+  {
+    "id": "chabad-manual-121-ירושלים-בית-חב-ד-חב-ירושלים",
+    "name": "בית חב\"ד חב ירושלים",
+    "type": "chabad_house",
+    "cityId": "ירושלים",
+    "address": "בית הדפוס 11, ירושלים",
+    "location": {
+      "latitude": 31.7855333,
+      "longitude": 35.1879627
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-121-ירושלים-בית-חב-ד-חב-ירושלים"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "0504141653"
+  },
+  {
+    "id": "chabad-manual-122-ירושלים-בית-חב-ד-בבה",
+    "name": "בית חב\"ד בבה",
+    "type": "chabad_house",
+    "cityId": "ירושלים",
+    "address": "יפו 224, ירושלים",
+    "location": {
+      "latitude": 31.7884434,
+      "longitude": 35.2026367
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-122-ירושלים-בית-חב-ד-בבה"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "025807360"
+  },
+  {
+    "id": "chabad-manual-123-ירושלים-בית-חב-ד-ירושלים",
+    "name": "בית חב\"ד ירושלים",
+    "type": "chabad_house",
+    "cityId": "ירושלים",
+    "address": "אוריאל 5, ירושלים",
+    "location": {
+      "latitude": 31.7967711,
+      "longitude": 35.2197726
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-123-ירושלים-בית-חב-ד-ירושלים"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "025827224"
+  },
+  {
+    "id": "chabad-manual-124-ירושלים-בית-חב-ד-רמת-אשכול",
+    "name": "בית חב\"ד רמת אשכול",
+    "type": "chabad_house",
+    "cityId": "ירושלים",
+    "address": "שדרות לוי אשכול 26, ירושלים",
+    "location": {
+      "latitude": 31.7997465,
+      "longitude": 35.2253619
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-124-ירושלים-בית-חב-ד-רמת-אשכול"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "0525677049"
+  },
+  {
+    "id": "chabad-manual-125-ירושלים-בית-חב-ד-ארנונה",
+    "name": "בית חב\"ד ארנונה",
+    "type": "chabad_house",
+    "cityId": "ירושלים",
+    "address": "כפר עציון 8, ירושלים",
+    "location": {
+      "latitude": 31.7473807,
+      "longitude": 35.2228639
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-125-ירושלים-בית-חב-ד-ארנונה"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    }
+  },
+  {
+    "id": "chabad-manual-126-ירושלים-בית-חב-ד-מחנה-יהודה---הויודקה",
+    "name": "בית חב\"ד מחנה יהודה - הויודקה",
+    "type": "chabad_house",
+    "cityId": "ירושלים",
+    "address": "חפץ חיים 20, ירושלים",
+    "location": {
+      "latitude": 31.7867828,
+      "longitude": 35.2150993
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-126-ירושלים-בית-חב-ד-מחנה-יהודה---הויודקה"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "0547770769"
+  },
+  {
+    "id": "chabad-manual-127-ירושלים-בית-חב-ד-גבעת-מרדכי",
+    "name": "בית חב\"ד גבעת מרדכי",
+    "type": "chabad_house",
+    "cityId": "ירושלים",
+    "address": "חיים הלר 1, ירושלים",
+    "location": {
+      "latitude": 31.7655071,
+      "longitude": 35.1938286
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-127-ירושלים-בית-חב-ד-גבעת-מרדכי"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "026482770"
+  },
+  {
+    "id": "chabad-manual-128-מבשרת-ציון-בית-חב-ד-מבשרת-ציון",
+    "name": "בית חב\"ד מבשרת ציון",
+    "type": "chabad_house",
+    "cityId": "מבשרת ציון",
+    "address": "רקפת 9, מבשרת ציון",
+    "location": {
+      "latitude": 31.8016391,
+      "longitude": 35.1584185
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-128-מבשרת-ציון-בית-חב-ד-מבשרת-ציון"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "0505759779"
+  },
+  {
+    "id": "chabad-manual-129-גבעת-יערים-בית-חב-ד-גבעת-יערים",
+    "name": "בית חב\"ד גבעת יערים",
+    "type": "chabad_house",
+    "cityId": "גבעת יערים",
+    "address": "מרבד הקסמים 88, גבעת יערים",
+    "location": {
+      "latitude": 31.7859942,
+      "longitude": 35.092569
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-129-גבעת-יערים-בית-חב-ד-גבעת-יערים"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "0587704366"
+  },
+  {
+    "id": "chabad-manual-130-אבן-ספיר-בית-חב-ד-אבן-ספיר",
+    "name": "בית חב\"ד אבן ספיר",
+    "type": "chabad_house",
+    "cityId": "אבן ספיר",
+    "address": "שהם 58, אבן ספיר",
+    "location": {
+      "latitude": 31.7629815,
+      "longitude": 35.1351189
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-130-אבן-ספיר-בית-חב-ד-אבן-ספיר"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "0585886770"
+  },
+  {
+    "id": "chabad-manual-131-צור-הדסה-בית-חב-ד-צור-הדסה",
+    "name": "בית חב\"ד צור הדסה",
+    "type": "chabad_house",
+    "cityId": "צור הדסה",
+    "address": "דולב 31, צור הדסה",
+    "location": {
+      "latitude": 31.7156945,
+      "longitude": 35.0948306
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-131-צור-הדסה-בית-חב-ד-צור-הדסה"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "025335994"
+  },
+  {
+    "id": "chabad-manual-132-נווה-מיכאל-בית-חב-ד-נווה-מיכאל",
+    "name": "בית חב\"ד נווה מיכאל",
+    "type": "chabad_house",
+    "cityId": "נווה מיכאל",
+    "address": "הזית 228, נווה מיכאל",
+    "location": {
+      "latitude": 31.6729774,
+      "longitude": 35.0059119
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-132-נווה-מיכאל-בית-חב-ד-נווה-מיכאל"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "0587706554"
+  },
+  {
+    "id": "chabad-manual-133-בר-גיורא-בית-חב-ד-בר-גיורא",
+    "name": "בית חב\"ד בר גיורא",
+    "type": "chabad_house",
+    "cityId": "בר גיורא",
+    "address": "התמר 67, בר גיורא",
+    "location": {
+      "latitude": 31.726523,
+      "longitude": 35.0702564
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-133-בר-גיורא-בית-חב-ד-בר-גיורא"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "0524810048"
+  },
+  {
+    "id": "chabad-manual-134-מטע-בית-חב-ד-מטע",
+    "name": "בית חב\"ד מטע",
+    "type": "chabad_house",
+    "cityId": "מטע",
+    "address": "הזית 249, מטע",
+    "location": {
+      "latitude": 31.7169307,
+      "longitude": 35.0615698
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-134-מטע-בית-חב-ד-מטע"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "0546409770"
+  },
+  {
+    "id": "chabad-manual-135-בית-שמש-בית-חב-ד-רמת-בית-שמש-ב",
+    "name": "בית חב\"ד רמת בית שמש ב",
+    "type": "chabad_house",
+    "cityId": "בית שמש",
+    "address": "חבקוק הנביא 7, בית שמש",
+    "location": {
+      "latitude": 31.7054633,
+      "longitude": 34.9824498
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-135-בית-שמש-בית-חב-ד-רמת-בית-שמש-ב"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "0545939787"
+  },
+  {
+    "id": "chabad-manual-136-בית-שמש-בית-חב-ד-שכונת-המשקפיים",
+    "name": "בית חב\"ד שכונת המשקפיים",
+    "type": "chabad_house",
+    "cityId": "בית שמש",
+    "address": "הרב מרדכי אליהו 7, בית שמש",
+    "location": {
+      "latitude": 31.7092395,
+      "longitude": 35.0027853
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-136-בית-שמש-בית-חב-ד-שכונת-המשקפיים"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "0587704541"
+  },
+  {
+    "id": "chabad-manual-137-בית-שמש-בית-חב-ד-זנוח",
+    "name": "בית חב\"ד זנוח",
+    "type": "chabad_house",
+    "cityId": "בית שמש",
+    "address": "ריב\"ל 43, בית שמש",
+    "location": {
+      "latitude": 31.7229062,
+      "longitude": 34.9900354
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-137-בית-שמש-בית-חב-ד-זנוח"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    }
+  },
+  {
+    "id": "chabad-manual-138-בית-שמש-בית-חב-ד-שכונת-רמת-נריה",
+    "name": "בית חב\"ד שכונת רמת נריה",
+    "type": "chabad_house",
+    "cityId": "בית שמש",
+    "address": "שיטבנית 12, בית שמש",
+    "location": {
+      "latitude": 31.7160988,
+      "longitude": 34.9837032
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-138-בית-שמש-בית-חב-ד-שכונת-רמת-נריה"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "0559951818"
+  },
+  {
+    "id": "chabad-manual-139-בית-שמש-בית-חב-ד-בית-שמש",
+    "name": "בית חב\"ד בית שמש",
+    "type": "chabad_house",
+    "cityId": "בית שמש",
+    "address": "הנשיא 1, בית שמש",
+    "location": {
+      "latitude": 31.747865,
+      "longitude": 34.9852281
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-139-בית-שמש-בית-חב-ד-בית-שמש"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "0547770571"
+  },
+  {
+    "id": "chabad-manual-140-בית-שמש-בית-חב-ד-שכונת-חפציבה",
+    "name": "בית חב\"ד שכונת חפציבה",
+    "type": "chabad_house",
+    "cityId": "בית שמש",
+    "address": "בן איש חי 5, בית שמש",
+    "location": {
+      "latitude": 31.7452314,
+      "longitude": 34.9982569
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-140-בית-שמש-בית-חב-ד-שכונת-חפציבה"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "0527123028"
+  },
+  {
+    "id": "chabad-manual-141-אשתאול-בית-חב-ד-אשתאול",
+    "name": "בית חב\"ד אשתאול",
+    "type": "chabad_house",
+    "cityId": "אשתאול",
+    "address": "ד.נ. שמשון 61, אשתאול",
+    "location": {
+      "latitude": 31.7801952,
+      "longitude": 35.0097885
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-141-אשתאול-בית-חב-ד-אשתאול"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "029917891"
+  },
+  {
+    "id": "chabad-manual-142-אדרת-בית-חב-ד-אדרת",
+    "name": "בית חב\"ד אדרת",
+    "type": "chabad_house",
+    "cityId": "אדרת",
+    "address": "ד.נ. העלה, אדרת",
+    "location": {
+      "latitude": 31.6597433,
+      "longitude": 34.9956875
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-142-אדרת-בית-חב-ד-אדרת"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "029913456"
+  },
+  {
+    "id": "chabad-manual-143-ביתר-עילית-בית-חב-ד-מטה-יהודה",
+    "name": "בית חב\"ד מטה יהודה",
+    "type": "chabad_house",
+    "cityId": "ביתר עילית",
+    "address": "רבי עקיבא 3, ביתר עילית",
+    "location": {
+      "latitude": 31.6970553,
+      "longitude": 35.1205425
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-143-ביתר-עילית-בית-חב-ד-מטה-יהודה"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "0526111770"
+  },
+  {
+    "id": "chabad-manual-144-נווה-דניאל-בית-חב-ד-נווה-דניאל",
+    "name": "בית חב\"ד נווה דניאל",
+    "type": "chabad_house",
+    "cityId": "נווה דניאל",
+    "address": "מגדל עדר 4, נווה דניאל",
+    "location": {
+      "latitude": 31.6756856,
+      "longitude": 35.1439701
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-144-נווה-דניאל-בית-חב-ד-נווה-דניאל"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "0587706318"
+  },
+  {
+    "id": "chabad-manual-145-אפרת-בית-חב-ד-אפרת",
+    "name": "בית חב\"ד אפרת",
+    "type": "chabad_house",
+    "cityId": "אפרת",
+    "address": "העומר 29, אפרת",
+    "location": {
+      "latitude": 31.6816722,
+      "longitude": 35.1730301
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-145-אפרת-בית-חב-ד-אפרת"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "0547308983"
+  },
+  {
+    "id": "chabad-manual-146-תלם-בית-חב-ד-תלם",
+    "name": "בית חב\"ד תלם",
+    "type": "chabad_house",
+    "cityId": "תלם",
+    "address": "תלם 770, תלם",
+    "location": {
+      "latitude": 31.5627103,
+      "longitude": 35.0306528
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "manual"
+        ],
+        "sourceIds": [
+          "manual-146-תלם-בית-חב-ד-תלם"
+        ],
+        "coordSource": "native"
+      },
+      "license": "gov-open",
+      "likelyHouse": true
+    },
+    "phone": "0546239966"
+  },
+  {
+    "id": "chabad-32.08589_34.88185",
+    "name": "בית חב\"ד",
+    "type": "chabad_house",
+    "cityId": "פתח תקווה",
+    "address": "פתח תקווה",
+    "location": {
+      "latitude": 32.0858911,
+      "longitude": 34.8818525
+    },
+    "source": "osm",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "osm"
+        ],
+        "sourceIds": [
+          "osm-node-8097632056"
+        ],
+        "coordSource": "native"
+      },
+      "license": "ODbL",
+      "likelyHouse": true
+    },
+    "sourceUrl": "https://www.openstreetmap.org/node/8097632056",
+    "sourceName": "osm"
+  },
+  {
+    "id": "chabad-32.08123_34.80489",
+    "name": "בית חב\"ד",
+    "type": "chabad_house",
+    "cityId": "רמת גן",
+    "address": "שפירא 5, רמת גן",
+    "location": {
+      "latitude": 32.0812337,
+      "longitude": 34.8048857
+    },
+    "source": "osm",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "osm"
+        ],
+        "sourceIds": [
+          "osm-node-13619434561"
+        ],
+        "coordSource": "native"
+      },
+      "license": "ODbL",
+      "likelyHouse": true
+    },
+    "sourceUrl": "https://www.openstreetmap.org/node/13619434561",
+    "sourceName": "osm"
+  },
+  {
+    "id": "chabad-31.76431_35.22563",
+    "name": "בית חב\"ד",
+    "type": "chabad_house",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.7643128,
+      "longitude": 35.225626
+    },
+    "source": "osm",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "osm"
+        ],
+        "sourceIds": [
+          "osm-way-166574253"
+        ],
+        "coordSource": "native"
+      },
+      "license": "ODbL",
+      "likelyHouse": true
+    },
+    "sourceUrl": "https://www.openstreetmap.org/way/166574253",
+    "sourceName": "osm"
+  },
+  {
+    "id": "chabad-32.07612_34.84855",
+    "name": "בית חב\"ד",
+    "type": "chabad_house",
+    "cityId": "גבעת שמואל",
+    "address": "גבעת שמואל",
+    "location": {
+      "latitude": 32.0761236,
+      "longitude": 34.8485485
+    },
+    "source": "osm",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "osm"
+        ],
+        "sourceIds": [
+          "osm-way-358683946"
+        ],
+        "coordSource": "native"
+      },
+      "license": "ODbL",
+      "likelyHouse": true
+    },
+    "sourceUrl": "https://www.openstreetmap.org/way/358683946",
+    "sourceName": "osm"
+  },
+  {
+    "id": "chabad-32.96880_35.49244",
+    "name": "בית חב\"ד",
+    "type": "chabad_house",
+    "cityId": "צפת",
+    "address": "חת\"ם סופר, צפת",
+    "location": {
+      "latitude": 32.9687966,
+      "longitude": 35.4924375
+    },
+    "source": "osm",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "osm"
+        ],
+        "sourceIds": [
+          "osm-way-646389358"
+        ],
+        "coordSource": "native"
+      },
+      "license": "ODbL",
+      "likelyHouse": true
+    },
+    "sourceUrl": "https://www.openstreetmap.org/way/646389358",
+    "sourceName": "osm"
+  },
+  {
+    "id": "chabad-31.90559_34.82359",
+    "name": "בית חב\"ד",
+    "type": "chabad_house",
+    "cityId": "רחובות",
+    "address": "רחובות",
+    "location": {
+      "latitude": 31.9055928,
+      "longitude": 34.8235895
+    },
+    "source": "osm",
+    "locationPrecision": "address",
+    "lastVerifiedAt": "2026-06-25",
+    "extra": {
+      "provenance": {
+        "origins": [
+          "osm"
+        ],
+        "sourceIds": [
+          "osm-way-668772151"
+        ],
+        "coordSource": "native"
+      },
+      "license": "ODbL",
+      "likelyHouse": true
+    },
+    "sourceUrl": "https://www.openstreetmap.org/way/668772151",
+    "sourceName": "osm"
+  }
+]

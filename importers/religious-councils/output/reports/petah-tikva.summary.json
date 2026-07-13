@@ -1,0 +1,19 @@
+{
+  "council": "המועצה הדתית פתח תקווה",
+  "variant": "waze",
+  "expectedCount": 368,
+  "fetchedCount": 368,
+  "validCount": 367,
+  "rejectedCount": 1,
+  "coordSource": "waze",
+  "withNativeCoordinates": 368,
+  "missingCoordinates": 0,
+  "duplicateSourceIds": 0,
+  "enrichedFromCards": 0,
+  "ambiguousEnrich": 0,
+  "countMatches": true,
+  "pagesFetched": 3,
+  "dryRun": true,
+  "liveDataTouched": false,
+  "generatedAt": "2026-06-18"
+}

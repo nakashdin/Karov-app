@@ -1,0 +1,30 @@
+[
+  {
+    "id": "rc-mikvah-beer-sheva-h1yqrkj0",
+    "name": "מקווה נווה נוי",
+    "type": "mikveh",
+    "cityId": "באר שבע",
+    "address": "2 יסמין , באר שבע, Israel",
+    "location": {
+      "latitude": 31.231776,
+      "longitude": 34.79411
+    },
+    "source": "seed",
+    "sourceUrl": "https://mdb7.org.il/directory-mikvah/listing/מקווה-נווה-נוי/",
+    "sourceName": "המועצה הדתית באר שבע",
+    "extra": {
+      "council": "המועצה הדתית באר שבע",
+      "sourceVariant": "markers",
+      "locationPrecision": "exact",
+      "newnessConfidence": 0.8,
+      "cityInGov": true,
+      "classification": "new_record",
+      "provenance": {
+        "adapterId": "sabaiapps-mikvah-v1",
+        "sourceRecordId": "rc-mikvah-beer-sheva-h1yqrkj0",
+        "sourceUrl": "https://mdb7.org.il/directory-mikvah/listing/מקווה-נווה-נוי/",
+        "fetchedAt": "2026-06-19"
+      }
+    }
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "Q25490382",
+    "source": "Wikidata (SPARQL)",
+    "category": "synagogue",
+    "name": "בית הכנסת הקראי ברמלה",
+    "lat": 31.92216111,
+    "lng": 34.87755,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "item": {
+        "type": "uri",
+        "value": "http://www.wikidata.org/entity/Q25490382"
+      },
+      "coord": {
+        "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type": "literal",
+        "value": "Point(34.87755 31.92216111)"
+      },
+      "itemLabel": {
+        "xml:lang": "he",
+        "type": "literal",
+        "value": "בית הכנסת הקראי ברמלה"
+      }
+    }
+  },
+  {
+    "id": "Q42951922",
+    "source": "Wikidata (SPARQL)",
+    "category": "synagogue",
+    "name": "בושאייף",
+    "lat": 31.976333333,
+    "lng": 34.892722222,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "item": {
+        "type": "uri",
+        "value": "http://www.wikidata.org/entity/Q42951922"
+      },
+      "coord": {
+        "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type": "literal",
+        "value": "Point(34.892722222 31.976333333)"
+      },
+      "itemLabel": {
+        "xml:lang": "he",
+        "type": "literal",
+        "value": "בושאייף"
+      }
+    }
+  }
+]

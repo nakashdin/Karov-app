@@ -1,0 +1,2817 @@
+{
+  "summary": {
+    "generatedNote": "PHASE 11 — first-write apply PREVIEW (Tier A only). PREVIEW ONLY: no DB write, no publish. Awaiting human approval.",
+    "recordsInFirstWrite": 61,
+    "allSabaiApps": true,
+    "allHaveCoordinates": true,
+    "fieldsDroppedOnWrite": "NONE — B4 resolved: Place extended (mikvehGender, attendant, sourceUrl, sourceName, extra). All mikveh/provenance fields preserved.",
+    "publish": "BLOCKED — awaiting explicit human GO + the Phase-9 approval checklist. No publish performed."
+  },
+  "records": [
+    {
+      "place": {
+        "id": "rc-mikvah-petah-tikva-13598",
+        "name": "מקווה גברים מרכז העיר \"טהרת אשר\" - חיים עוזר",
+        "type": "mikveh",
+        "cityId": "פתח תקווה",
+        "address": "25 ההגנה, פתח תקווה, Israel",
+        "location": {
+          "latitude": 32.088566,
+          "longitude": 34.886133
+        },
+        "source": "seed",
+        "phone": "0555519522",
+        "openingHours": "בימות החול: א-ה 05:00-11:00 בערבי שבתות וחגים: 05:00-13:45",
+        "tags": [
+          "gender:גברים"
+        ],
+        "mikvehGender": "גברים",
+        "attendant": "חננאל כהן",
+        "sourceUrl": "https://mpt.org.il/directory-mikvah/listing/מקווה-גברים-מרכז-העיר-טהרת-אשר-חיים-עו/",
+        "sourceName": "המועצה הדתית פתח תקווה",
+        "extra": {
+          "council": "המועצה הדתית פתח תקווה",
+          "sourceVariant": "waze",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "gender": "גברים",
+          "balanit": "חננאל כהן",
+          "sourceFields": {
+            "field_balanit_name": "חננאל כהן",
+            "field_gabphone": "055-5519522",
+            "field_open_hours": "בימות החול: א-ה 05:00-11:00 בערבי שבתות וחגים: 05:00-13:45"
+          },
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-petah-tikva-13598",
+            "sourceUrl": "https://mpt.org.il/directory-mikvah/listing/מקווה-גברים-מרכז-העיר-טהרת-אשר-חיים-עו/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": "גברים",
+        "attendant": "חננאל כהן",
+        "sourceUrl": "https://mpt.org.il/directory-mikvah/listing/מקווה-גברים-מרכז-העיר-טהרת-אשר-חיים-עו/",
+        "sourceName": "המועצה הדתית פתח תקווה",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-petah-tikva-9647",
+        "name": "מקווה חן הצפון",
+        "type": "mikveh",
+        "cityId": "פתח תקווה",
+        "address": "1 שמואל הנגיד, פתח תקווה, Israel",
+        "location": {
+          "latitude": 32.09956,
+          "longitude": 34.900124
+        },
+        "source": "seed",
+        "phone": "0548433268",
+        "openingHours": "בימי החורף מחצי שעה לפני צאת הכוכבים ועד לשעה 22:00 ובימי הקיץ עד השעה 23:00",
+        "tags": [
+          "gender:נשים"
+        ],
+        "mikvehGender": "נשים",
+        "attendant": "מיכל חסן",
+        "sourceUrl": "https://mpt.org.il/directory-mikvah/listing/מקווה-חן-הצפון/",
+        "sourceName": "המועצה הדתית פתח תקווה",
+        "extra": {
+          "council": "המועצה הדתית פתח תקווה",
+          "sourceVariant": "waze",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "gender": "נשים",
+          "balanit": "מיכל חסן",
+          "hopePhone": "03-9348104",
+          "sourceFields": {
+            "field_balanit_name": "מיכל חסן",
+            "field_gabphone": "054-8433268",
+            "field_hopephone": "03-9348104",
+            "field_open_hours": "בימי החורף מחצי שעה לפני צאת הכוכבים ועד לשעה 22:00 ובימי הקיץ עד השעה 23:00"
+          },
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-petah-tikva-9647",
+            "sourceUrl": "https://mpt.org.il/directory-mikvah/listing/מקווה-חן-הצפון/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": "נשים",
+        "attendant": "מיכל חסן",
+        "sourceUrl": "https://mpt.org.il/directory-mikvah/listing/מקווה-חן-הצפון/",
+        "sourceName": "המועצה הדתית פתח תקווה",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-petah-tikva-9648",
+        "name": "מקווה מוסטובוי",
+        "type": "mikveh",
+        "cityId": "פתח תקווה",
+        "address": "11 מוסטובוי, פתח תקווה, Israel",
+        "location": {
+          "latitude": 32.082427,
+          "longitude": 34.877066
+        },
+        "source": "seed",
+        "phone": "039226792",
+        "openingHours": "בימי החורף מחצי שעה לפני צאת הכוכבים ועד לשעה 22:00 ובימי הקיץ עד השעה 23:00",
+        "tags": [
+          "gender:נשים"
+        ],
+        "mikvehGender": "נשים",
+        "sourceUrl": "https://mpt.org.il/directory-mikvah/listing/מקווה-מוסטובוי/",
+        "sourceName": "המועצה הדתית פתח תקווה",
+        "extra": {
+          "council": "המועצה הדתית פתח תקווה",
+          "sourceVariant": "waze",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "gender": "נשים",
+          "hopePhone": "03-9226792",
+          "sourceFields": {
+            "field_hopephone": "03-9226792",
+            "field_open_hours": "בימי החורף מחצי שעה לפני צאת הכוכבים ועד לשעה 22:00 ובימי הקיץ עד השעה 23:00"
+          },
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-petah-tikva-9648",
+            "sourceUrl": "https://mpt.org.il/directory-mikvah/listing/מקווה-מוסטובוי/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": "נשים",
+        "attendant": null,
+        "sourceUrl": "https://mpt.org.il/directory-mikvah/listing/מקווה-מוסטובוי/",
+        "sourceName": "המועצה הדתית פתח תקווה",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-petah-tikva-9649",
+        "name": "מקווה מעיין חנה - תורן",
+        "type": "mikveh",
+        "cityId": "פתח תקווה",
+        "address": "4 שבט גד, פתח תקווה, Israel",
+        "location": {
+          "latitude": 32.070275,
+          "longitude": 34.914808
+        },
+        "source": "seed",
+        "phone": "0527687074",
+        "openingHours": "בימי החורף מחצי שעה לפני צאת הכוכבים ועד לשעה 22:00 ובימי הקיץ עד השעה 23:00",
+        "tags": [
+          "gender:נשים"
+        ],
+        "mikvehGender": "נשים",
+        "attendant": "תקווה סיקרון",
+        "sourceUrl": "https://mpt.org.il/directory-mikvah/listing/מקווה-מעיין-חנה-תורן/",
+        "sourceName": "המועצה הדתית פתח תקווה",
+        "extra": {
+          "council": "המועצה הדתית פתח תקווה",
+          "sourceVariant": "waze",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "gender": "נשים",
+          "balanit": "תקווה סיקרון",
+          "hopePhone": "03-9324591",
+          "sourceFields": {
+            "field_balanit_name": "תקווה סיקרון",
+            "field_gabphone": "052-7687074",
+            "field_hopephone": "03-9324591",
+            "field_open_hours": "בימי החורף מחצי שעה לפני צאת הכוכבים ועד לשעה 22:00 ובימי הקיץ עד השעה 23:00"
+          },
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-petah-tikva-9649",
+            "sourceUrl": "https://mpt.org.il/directory-mikvah/listing/מקווה-מעיין-חנה-תורן/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": "נשים",
+        "attendant": "תקווה סיקרון",
+        "sourceUrl": "https://mpt.org.il/directory-mikvah/listing/מקווה-מעיין-חנה-תורן/",
+        "sourceName": "המועצה הדתית פתח תקווה",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-petah-tikva-9650",
+        "name": "מקווה פג'ה",
+        "type": "mikveh",
+        "cityId": "פתח תקווה",
+        "address": "54 דוד רמז, פתח תקווה, Israel",
+        "location": {
+          "latitude": 32.086008,
+          "longitude": 34.904752
+        },
+        "source": "seed",
+        "phone": "0547717580",
+        "openingHours": "בימי החורף מחצי שעה לפני צאת הכוכבים ועד לשעה 22:00 ובימי הקיץ עד השעה 23:00",
+        "tags": [
+          "gender:נשים"
+        ],
+        "mikvehGender": "נשים",
+        "attendant": "בת שבע נחבס",
+        "sourceUrl": "https://mpt.org.il/directory-mikvah/listing/מקווה-פגה/",
+        "sourceName": "המועצה הדתית פתח תקווה",
+        "extra": {
+          "council": "המועצה הדתית פתח תקווה",
+          "sourceVariant": "waze",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "gender": "נשים",
+          "balanit": "בת שבע נחבס",
+          "hopePhone": "03-9305437",
+          "sourceFields": {
+            "field_balanit_name": "בת שבע נחבס",
+            "field_gabphone": "054-7717580",
+            "field_hopephone": "03-9305437",
+            "field_open_hours": "בימי החורף מחצי שעה לפני צאת הכוכבים ועד לשעה 22:00 ובימי הקיץ עד השעה 23:00"
+          },
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-petah-tikva-9650",
+            "sourceUrl": "https://mpt.org.il/directory-mikvah/listing/מקווה-פגה/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": "נשים",
+        "attendant": "בת שבע נחבס",
+        "sourceUrl": "https://mpt.org.il/directory-mikvah/listing/מקווה-פגה/",
+        "sourceName": "המועצה הדתית פתח תקווה",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-petah-tikva-9651",
+        "name": "מקווה שעריה",
+        "type": "mikveh",
+        "cityId": "פתח תקווה",
+        "address": "18 השופטים, פתח תקווה, Israel",
+        "location": {
+          "latitude": 32.073906,
+          "longitude": 34.896039
+        },
+        "source": "seed",
+        "phone": "0527193502",
+        "openingHours": "בימי החורף מחצי שעה לפני צאת הכוכבים ועד לשעה 22:00 ובימי הקיץ עד השעה 23:00",
+        "tags": [
+          "gender:נשים"
+        ],
+        "mikvehGender": "נשים",
+        "attendant": "צברי זמירה",
+        "sourceUrl": "https://mpt.org.il/directory-mikvah/listing/מקווה-שעריה/",
+        "sourceName": "המועצה הדתית פתח תקווה",
+        "extra": {
+          "council": "המועצה הדתית פתח תקווה",
+          "sourceVariant": "waze",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "gender": "נשים",
+          "balanit": "צברי זמירה",
+          "hopePhone": "03-9324523",
+          "sourceFields": {
+            "field_balanit_name": "צברי זמירה",
+            "field_gabphone": "052-7193502",
+            "field_hopephone": "03-9324523",
+            "field_open_hours": "בימי החורף מחצי שעה לפני צאת הכוכבים ועד לשעה 22:00 ובימי הקיץ עד השעה 23:00"
+          },
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-petah-tikva-9651",
+            "sourceUrl": "https://mpt.org.il/directory-mikvah/listing/מקווה-שעריה/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": "נשים",
+        "attendant": "צברי זמירה",
+        "sourceUrl": "https://mpt.org.il/directory-mikvah/listing/מקווה-שעריה/",
+        "sourceName": "המועצה הדתית פתח תקווה",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-petah-tikva-9652",
+        "name": "מקווה חיים עוזר",
+        "type": "mikveh",
+        "cityId": "פתח תקווה",
+        "address": "8 חיים עוזר, פתח תקווה, Israel",
+        "location": {
+          "latitude": 32.088955,
+          "longitude": 34.886329
+        },
+        "source": "seed",
+        "phone": "0542884390",
+        "openingHours": "בימי החורף מחצי שעה לפני צאת הכוכבים ועד לשעה 22:00 ובימי הקיץ עד השעה 23:00",
+        "tags": [
+          "gender:נשים"
+        ],
+        "mikvehGender": "נשים",
+        "attendant": "כהן תקוה",
+        "sourceUrl": "https://mpt.org.il/directory-mikvah/listing/מקווה-חיים-עוזר-סגור-שיפוצים/",
+        "sourceName": "המועצה הדתית פתח תקווה",
+        "extra": {
+          "council": "המועצה הדתית פתח תקווה",
+          "sourceVariant": "waze",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "gender": "נשים",
+          "balanit": "כהן תקוה",
+          "hopePhone": "03-9344973",
+          "sourceFields": {
+            "field_balanit_name": "כהן תקוה",
+            "field_gabphone": "054-2884390",
+            "field_hopephone": "03-9344973",
+            "field_open_hours": "בימי החורף מחצי שעה לפני צאת הכוכבים ועד לשעה 22:00 ובימי הקיץ עד השעה 23:00"
+          },
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-petah-tikva-9652",
+            "sourceUrl": "https://mpt.org.il/directory-mikvah/listing/מקווה-חיים-עוזר-סגור-שיפוצים/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": "נשים",
+        "attendant": "כהן תקוה",
+        "sourceUrl": "https://mpt.org.il/directory-mikvah/listing/מקווה-חיים-עוזר-סגור-שיפוצים/",
+        "sourceName": "המועצה הדתית פתח תקווה",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-petah-tikva-9653",
+        "name": "מקווה נווה גן",
+        "type": "mikveh",
+        "cityId": "פתח תקווה",
+        "address": "13 אסירי ציון, פתח תקווה, Israel",
+        "location": {
+          "latitude": 32.094162,
+          "longitude": 34.873862
+        },
+        "source": "seed",
+        "phone": "0546535337",
+        "openingHours": "בימי החורף מחצי שעה לפני צאת הכוכבים ועד לשעה 22:00 ובימי הקיץ עד השעה 23:00",
+        "tags": [
+          "gender:נשים"
+        ],
+        "mikvehGender": "נשים",
+        "attendant": "לבנת סגס",
+        "sourceUrl": "https://mpt.org.il/directory-mikvah/listing/מקווה-נווה-גן/",
+        "sourceName": "המועצה הדתית פתח תקווה",
+        "extra": {
+          "council": "המועצה הדתית פתח תקווה",
+          "sourceVariant": "waze",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "gender": "נשים",
+          "balanit": "לבנת סגס",
+          "hopePhone": "03-9210463",
+          "sourceFields": {
+            "field_balanit_name": "לבנת סגס",
+            "field_gabphone": "054-6535337",
+            "field_hopephone": "03-9210463",
+            "field_open_hours": "בימי החורף מחצי שעה לפני צאת הכוכבים ועד לשעה 22:00 ובימי הקיץ עד השעה 23:00"
+          },
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-petah-tikva-9653",
+            "sourceUrl": "https://mpt.org.il/directory-mikvah/listing/מקווה-נווה-גן/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": "נשים",
+        "attendant": "לבנת סגס",
+        "sourceUrl": "https://mpt.org.il/directory-mikvah/listing/מקווה-נווה-גן/",
+        "sourceName": "המועצה הדתית פתח תקווה",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-petah-tikva-9654",
+        "name": "מקווה באר מרים",
+        "type": "mikveh",
+        "cityId": "פתח תקווה",
+        "address": "6 העצמאות, פתח תקווה, Israel",
+        "location": {
+          "latitude": 32.074645,
+          "longitude": 34.883151
+        },
+        "source": "seed",
+        "phone": "0502961056",
+        "openingHours": "בימי החורף מחצי שעה לפני צאת הכוכבים ועד לשעה 22:00 ובימי הקיץ עד השעה 23:00",
+        "tags": [
+          "gender:נשים"
+        ],
+        "mikvehGender": "נשים",
+        "attendant": "כוכבה עטיה",
+        "sourceUrl": "https://mpt.org.il/directory-mikvah/listing/מקווה-באר-מרים/",
+        "sourceName": "המועצה הדתית פתח תקווה",
+        "extra": {
+          "council": "המועצה הדתית פתח תקווה",
+          "sourceVariant": "waze",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "gender": "נשים",
+          "balanit": "כוכבה עטיה",
+          "hopePhone": "03-9336414",
+          "sourceFields": {
+            "field_balanit_name": "כוכבה עטיה",
+            "field_gabphone": "050-2961056",
+            "field_hopephone": "03-9336414",
+            "field_open_hours": "בימי החורף מחצי שעה לפני צאת הכוכבים ועד לשעה 22:00 ובימי הקיץ עד השעה 23:00"
+          },
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-petah-tikva-9654",
+            "sourceUrl": "https://mpt.org.il/directory-mikvah/listing/מקווה-באר-מרים/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": "נשים",
+        "attendant": "כוכבה עטיה",
+        "sourceUrl": "https://mpt.org.il/directory-mikvah/listing/מקווה-באר-מרים/",
+        "sourceName": "המועצה הדתית פתח תקווה",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-petah-tikva-9655",
+        "name": "מקווה מעיין חיים",
+        "type": "mikveh",
+        "cityId": "פתח תקווה",
+        "address": "30 דרך מנחם בגין, פתח תקווה, Israel",
+        "location": {
+          "latitude": 32.076584,
+          "longitude": 34.904986
+        },
+        "source": "seed",
+        "phone": "0547724916",
+        "openingHours": "בימי החורף מחצי שעה לפני צאת הכוכבים ועד לשעה 22:00 ובימי הקיץ עד השעה 23:00",
+        "tags": [
+          "gender:נשים"
+        ],
+        "mikvehGender": "נשים",
+        "attendant": "רונית שרעבי",
+        "sourceUrl": "https://mpt.org.il/directory-mikvah/listing/מקווה-מעיין-חיים/",
+        "sourceName": "המועצה הדתית פתח תקווה",
+        "extra": {
+          "council": "המועצה הדתית פתח תקווה",
+          "sourceVariant": "waze",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "gender": "נשים",
+          "balanit": "רונית שרעבי",
+          "hopePhone": "03-5716840",
+          "sourceFields": {
+            "field_balanit_name": "רונית שרעבי",
+            "field_gabphone": "054-7724916",
+            "field_hopephone": "03-5716840",
+            "field_open_hours": "בימי החורף מחצי שעה לפני צאת הכוכבים ועד לשעה 22:00 ובימי הקיץ עד השעה 23:00"
+          },
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-petah-tikva-9655",
+            "sourceUrl": "https://mpt.org.il/directory-mikvah/listing/מקווה-מעיין-חיים/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": "נשים",
+        "attendant": "רונית שרעבי",
+        "sourceUrl": "https://mpt.org.il/directory-mikvah/listing/מקווה-מעיין-חיים/",
+        "sourceName": "המועצה הדתית פתח תקווה",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-petah-tikva-9656",
+        "name": "מקווה נווה דקלים משכן שמעון",
+        "type": "mikveh",
+        "cityId": "פתח תקווה",
+        "address": "דורני שלום 5 , ליד בית הכנסת משכן שמעון, פתח תקווה, Israel",
+        "location": {
+          "latitude": 32.098385,
+          "longitude": 34.888966
+        },
+        "source": "seed",
+        "phone": "0547724936",
+        "openingHours": "בימי החורף מחצי שעה לפני צאת הכוכבים ועד לשעה 22:00 ובימי הקיץ עד השעה 23:00",
+        "tags": [
+          "gender:נשים"
+        ],
+        "mikvehGender": "נשים",
+        "attendant": "נירה משולם",
+        "sourceUrl": "https://mpt.org.il/directory-mikvah/listing/מקווה-נווה-דקלים-משכן-שמעון/",
+        "sourceName": "המועצה הדתית פתח תקווה",
+        "extra": {
+          "council": "המועצה הדתית פתח תקווה",
+          "sourceVariant": "waze",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "gender": "נשים",
+          "balanit": "נירה משולם",
+          "hopePhone": "03-5058891",
+          "sourceFields": {
+            "field_balanit_name": "נירה משולם",
+            "field_gabphone": "054-7724936",
+            "field_hopephone": "03-5058891",
+            "field_open_hours": "בימי החורף מחצי שעה לפני צאת הכוכבים ועד לשעה 22:00 ובימי הקיץ עד השעה 23:00"
+          },
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-petah-tikva-9656",
+            "sourceUrl": "https://mpt.org.il/directory-mikvah/listing/מקווה-נווה-דקלים-משכן-שמעון/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": "נשים",
+        "attendant": "נירה משולם",
+        "sourceUrl": "https://mpt.org.il/directory-mikvah/listing/מקווה-נווה-דקלים-משכן-שמעון/",
+        "sourceName": "המועצה הדתית פתח תקווה",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-petah-tikva-13597",
+        "name": "מקווה גברים כפר אברהם-חן הצפון",
+        "type": "mikveh",
+        "cityId": "פתח תקווה",
+        "address": "1 שמואל הנגיד, פתח תקווה, Israel",
+        "location": {
+          "latitude": 32.099533,
+          "longitude": 34.900087
+        },
+        "source": "seed",
+        "phone": "0556876069",
+        "openingHours": "בימות החול: א-ה 05:00-10:00 בערבי שבתות וחגים: 05:00-15:00 – סגירת דלתות ב- 14:45",
+        "tags": [
+          "gender:גברים"
+        ],
+        "mikvehGender": "גברים",
+        "attendant": "שלומי חלא",
+        "sourceUrl": "https://mpt.org.il/directory-mikvah/listing/מקווה-גברים-כפר-אברהם-חן-הצפון/",
+        "sourceName": "המועצה הדתית פתח תקווה",
+        "extra": {
+          "council": "המועצה הדתית פתח תקווה",
+          "sourceVariant": "waze",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "gender": "גברים",
+          "balanit": "שלומי חלא",
+          "sourceFields": {
+            "field_balanit_name": "שלומי חלא",
+            "field_gabphone": "055-6876069",
+            "field_open_hours": "בימות החול: א-ה 05:00-10:00 בערבי שבתות וחגים: 05:00-15:00 – סגירת דלתות ב- 14:45"
+          },
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-petah-tikva-13597",
+            "sourceUrl": "https://mpt.org.il/directory-mikvah/listing/מקווה-גברים-כפר-אברהם-חן-הצפון/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": "גברים",
+        "attendant": "שלומי חלא",
+        "sourceUrl": "https://mpt.org.il/directory-mikvah/listing/מקווה-גברים-כפר-אברהם-חן-הצפון/",
+        "sourceName": "המועצה הדתית פתח תקווה",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-netanya-12533",
+        "name": "מקווה רמת פולג",
+        "type": "mikveh",
+        "cityId": "נתניה",
+        "address": "6 תורמוס, נתניה, Israel",
+        "location": {
+          "latitude": 32.271107,
+          "longitude": 34.846166
+        },
+        "source": "seed",
+        "phone": "098782858",
+        "tags": [
+          "gender:נשים"
+        ],
+        "mikvehGender": "נשים",
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-רמת-פולג/",
+        "sourceName": "המועצה הדתית נתניה",
+        "extra": {
+          "council": "המועצה הדתית נתניה",
+          "sourceVariant": "waze",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "gender": "נשים",
+          "hopePhone": "09-8782858",
+          "sourceFields": {
+            "field_hopephone": "09-8782858"
+          },
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-netanya-12533",
+            "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-רמת-פולג/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": "נשים",
+        "attendant": null,
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-רמת-פולג/",
+        "sourceName": "המועצה הדתית נתניה",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-netanya-12536",
+        "name": "מקווה נשים קריית נורדאו",
+        "type": "mikveh",
+        "cityId": "נתניה",
+        "address": "אריה לוין 59, נתניה, Israel",
+        "location": {
+          "latitude": 32.278985,
+          "longitude": 34.854875
+        },
+        "source": "seed",
+        "phone": "098655341",
+        "tags": [
+          "gender:נשים"
+        ],
+        "mikvehGender": "נשים",
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-קריית-נורדאו/",
+        "sourceName": "המועצה הדתית נתניה",
+        "extra": {
+          "council": "המועצה הדתית נתניה",
+          "sourceVariant": "waze",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "gender": "נשים",
+          "hopePhone": "09-8655341",
+          "sourceFields": {
+            "field_hopephone": "09-8655341"
+          },
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-netanya-12536",
+            "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-קריית-נורדאו/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": "נשים",
+        "attendant": null,
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-קריית-נורדאו/",
+        "sourceName": "המועצה הדתית נתניה",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-netanya-12539",
+        "name": "מקווה נשים גבעת האירוסים",
+        "type": "mikveh",
+        "cityId": "נתניה",
+        "address": "חרצית 27, נתניה, Israel",
+        "location": {
+          "latitude": 32.28667,
+          "longitude": 34.85018
+        },
+        "source": "seed",
+        "phone": "097720069",
+        "tags": [
+          "gender:נשים"
+        ],
+        "mikvehGender": "נשים",
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-גבעת-האירוסים/",
+        "sourceName": "המועצה הדתית נתניה",
+        "extra": {
+          "council": "המועצה הדתית נתניה",
+          "sourceVariant": "waze",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "gender": "נשים",
+          "hopePhone": "09-7720069",
+          "sourceFields": {
+            "field_hopephone": "09-7720069"
+          },
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-netanya-12539",
+            "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-גבעת-האירוסים/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": "נשים",
+        "attendant": null,
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-גבעת-האירוסים/",
+        "sourceName": "המועצה הדתית נתניה",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-netanya-12541",
+        "name": "מקווה נשים שכונת אזורים",
+        "type": "mikveh",
+        "cityId": "נתניה",
+        "address": "8 אפרים אלנקווה, נתניה, Israel",
+        "location": {
+          "latitude": 32.294408,
+          "longitude": 34.84917
+        },
+        "source": "seed",
+        "phone": "098357282",
+        "tags": [
+          "gender:נשים"
+        ],
+        "mikvehGender": "נשים",
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-שכונת-אזורים/",
+        "sourceName": "המועצה הדתית נתניה",
+        "extra": {
+          "council": "המועצה הדתית נתניה",
+          "sourceVariant": "waze",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "gender": "נשים",
+          "hopePhone": "09-8357282",
+          "sourceFields": {
+            "field_hopephone": "09-8357282"
+          },
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-netanya-12541",
+            "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-שכונת-אזורים/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": "נשים",
+        "attendant": null,
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-שכונת-אזורים/",
+        "sourceName": "המועצה הדתית נתניה",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-netanya-12543",
+        "name": "מקווה נשים שכונת דורה",
+        "type": "mikveh",
+        "cityId": "נתניה",
+        "address": "10 שמואל, נתניה, Israel",
+        "location": {
+          "latitude": 32.299179,
+          "longitude": 34.857191
+        },
+        "source": "seed",
+        "phone": "098354814",
+        "tags": [
+          "gender:נשים"
+        ],
+        "mikvehGender": "נשים",
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-שכונת-דורה/",
+        "sourceName": "המועצה הדתית נתניה",
+        "extra": {
+          "council": "המועצה הדתית נתניה",
+          "sourceVariant": "waze",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "gender": "נשים",
+          "hopePhone": "09-8354814",
+          "sourceFields": {
+            "field_hopephone": "09-8354814"
+          },
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-netanya-12543",
+            "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-שכונת-דורה/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": "נשים",
+        "attendant": null,
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-שכונת-דורה/",
+        "sourceName": "המועצה הדתית נתניה",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-netanya-12559",
+        "name": "מקווה נשים סלע",
+        "type": "mikveh",
+        "cityId": "נתניה",
+        "address": "17 משה גליקסון, נתניה, Israel",
+        "location": {
+          "latitude": 32.330492,
+          "longitude": 34.865677
+        },
+        "source": "seed",
+        "phone": "098329238",
+        "tags": [
+          "gender:נשים"
+        ],
+        "mikvehGender": "נשים",
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-סלע/",
+        "sourceName": "המועצה הדתית נתניה",
+        "extra": {
+          "council": "המועצה הדתית נתניה",
+          "sourceVariant": "waze",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "gender": "נשים",
+          "hopePhone": "09-8329238",
+          "sourceFields": {
+            "field_hopephone": "09-8329238"
+          },
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-netanya-12559",
+            "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-סלע/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": "נשים",
+        "attendant": null,
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-סלע/",
+        "sourceName": "המועצה הדתית נתניה",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-netanya-12561",
+        "name": "מקווה נשים שכונת הפועל מזרחי",
+        "type": "mikveh",
+        "cityId": "נתניה",
+        "address": "40 משה שפירא, נתניה, Israel",
+        "location": {
+          "latitude": 32.336645,
+          "longitude": 34.864825
+        },
+        "source": "seed",
+        "phone": "098622561",
+        "tags": [
+          "gender:נשים"
+        ],
+        "mikvehGender": "נשים",
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-שכונת-הפועל-מזרחי/",
+        "sourceName": "המועצה הדתית נתניה",
+        "extra": {
+          "council": "המועצה הדתית נתניה",
+          "sourceVariant": "waze",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "gender": "נשים",
+          "hopePhone": "09-8622561",
+          "sourceFields": {
+            "field_hopephone": "09-8622561"
+          },
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-netanya-12561",
+            "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-שכונת-הפועל-מזרחי/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": "נשים",
+        "attendant": null,
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-שכונת-הפועל-מזרחי/",
+        "sourceName": "המועצה הדתית נתניה",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-netanya-12562",
+        "name": "מקווה נשים שכונת ותיקים",
+        "type": "mikveh",
+        "cityId": "נתניה",
+        "address": "הרב זוארץ 12, נתניה, Israel",
+        "location": {
+          "latitude": 32.326005,
+          "longitude": 34.859271
+        },
+        "source": "seed",
+        "phone": "098323492",
+        "tags": [
+          "gender:נשים"
+        ],
+        "mikvehGender": "נשים",
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-שכונת-ותיקים/",
+        "sourceName": "המועצה הדתית נתניה",
+        "extra": {
+          "council": "המועצה הדתית נתניה",
+          "sourceVariant": "waze",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "gender": "נשים",
+          "hopePhone": "09-8323492",
+          "sourceFields": {
+            "field_hopephone": "09-8323492"
+          },
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-netanya-12562",
+            "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-שכונת-ותיקים/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": "נשים",
+        "attendant": null,
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-שכונת-ותיקים/",
+        "sourceName": "המועצה הדתית נתניה",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-netanya-12563",
+        "name": "מקווה נשים שכונת משה''ב",
+        "type": "mikveh",
+        "cityId": "נתניה",
+        "address": "21 שפיגלמן, נתניה, Israel",
+        "location": {
+          "latitude": 32.30863,
+          "longitude": 34.873197
+        },
+        "source": "seed",
+        "phone": "098871071",
+        "tags": [
+          "gender:נשים"
+        ],
+        "mikvehGender": "נשים",
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-שכונת-משהב/",
+        "sourceName": "המועצה הדתית נתניה",
+        "extra": {
+          "council": "המועצה הדתית נתניה",
+          "sourceVariant": "waze",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "gender": "נשים",
+          "hopePhone": "09-8871071",
+          "sourceFields": {
+            "field_hopephone": "09-8871071"
+          },
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-netanya-12563",
+            "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-שכונת-משהב/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": "נשים",
+        "attendant": null,
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-שכונת-משהב/",
+        "sourceName": "המועצה הדתית נתניה",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-netanya-12545",
+        "name": "מקווה נשים שכונת רמת חן",
+        "type": "mikveh",
+        "cityId": "נתניה",
+        "address": "25 אלחריזי, נתניה, Israel",
+        "location": {
+          "latitude": 32.313084,
+          "longitude": 34.859543
+        },
+        "source": "seed",
+        "phone": "098652560",
+        "tags": [
+          "gender:נשים"
+        ],
+        "mikvehGender": "נשים",
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-שכונת-רמת-חן/",
+        "sourceName": "המועצה הדתית נתניה",
+        "extra": {
+          "council": "המועצה הדתית נתניה",
+          "sourceVariant": "waze",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "gender": "נשים",
+          "hopePhone": "09-8652560",
+          "sourceFields": {
+            "field_hopephone": "09-8652560"
+          },
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-netanya-12545",
+            "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-שכונת-רמת-חן/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": "נשים",
+        "attendant": null,
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-שכונת-רמת-חן/",
+        "sourceName": "המועצה הדתית נתניה",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-netanya-12547",
+        "name": "המקווה המרכזי נתניה",
+        "type": "mikveh",
+        "cityId": "נתניה",
+        "address": "אברהם שפירא 28, נתניה, Israel",
+        "location": {
+          "latitude": 32.322002,
+          "longitude": 34.857597
+        },
+        "source": "seed",
+        "phone": "098611839",
+        "tags": [
+          "gender:נשים"
+        ],
+        "mikvehGender": "נשים",
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/המקווה-המרכזי-נתניה/",
+        "sourceName": "המועצה הדתית נתניה",
+        "extra": {
+          "council": "המועצה הדתית נתניה",
+          "sourceVariant": "waze",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "gender": "נשים",
+          "hopePhone": "09-8611839",
+          "sourceFields": {
+            "field_hopephone": "09-8611839"
+          },
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-netanya-12547",
+            "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/המקווה-המרכזי-נתניה/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": "נשים",
+        "attendant": null,
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/המקווה-המרכזי-נתניה/",
+        "sourceName": "המועצה הדתית נתניה",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-netanya-12564",
+        "name": "מקווה גברים מרכזי:",
+        "type": "mikveh",
+        "cityId": "נתניה",
+        "address": "אברהם שפירא 28, נתניה, Israel",
+        "location": {
+          "latitude": 32.322002,
+          "longitude": 34.857597
+        },
+        "source": "seed",
+        "tags": [
+          "gender:גברים"
+        ],
+        "mikvehGender": "גברים",
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-גברים-מרכזי/",
+        "sourceName": "המועצה הדתית נתניה",
+        "extra": {
+          "council": "המועצה הדתית נתניה",
+          "sourceVariant": "waze",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "gender": "גברים",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-netanya-12564",
+            "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-גברים-מרכזי/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": "גברים",
+        "attendant": null,
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-גברים-מרכזי/",
+        "sourceName": "המועצה הדתית נתניה",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-netanya-12565",
+        "name": "מקווה גברים נורדאו",
+        "type": "mikveh",
+        "cityId": "נתניה",
+        "address": "59 אריה לוין, נתניה, Israel",
+        "location": {
+          "latitude": 32.279537,
+          "longitude": 34.85516
+        },
+        "source": "seed",
+        "tags": [
+          "gender:גברים"
+        ],
+        "mikvehGender": "גברים",
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-גברים-נורדאו/",
+        "sourceName": "המועצה הדתית נתניה",
+        "extra": {
+          "council": "המועצה הדתית נתניה",
+          "sourceVariant": "waze",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "gender": "גברים",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-netanya-12565",
+            "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-גברים-נורדאו/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": "גברים",
+        "attendant": null,
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-גברים-נורדאו/",
+        "sourceName": "המועצה הדתית נתניה",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-beer-sheva-h1yqrkj0",
+        "name": "מקווה נווה נוי",
+        "type": "mikveh",
+        "cityId": "באר שבע",
+        "address": "2 יסמין , באר שבע, Israel",
+        "location": {
+          "latitude": 31.231776,
+          "longitude": 34.79411
+        },
+        "source": "seed",
+        "sourceUrl": "https://mdb7.org.il/directory-mikvah/listing/מקווה-נווה-נוי/",
+        "sourceName": "המועצה הדתית באר שבע",
+        "extra": {
+          "council": "המועצה הדתית באר שבע",
+          "sourceVariant": "markers",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.8,
+          "cityInGov": true,
+          "classification": "new_record",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-beer-sheva-h1yqrkj0",
+            "sourceUrl": "https://mdb7.org.il/directory-mikvah/listing/מקווה-נווה-נוי/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": null,
+        "attendant": null,
+        "sourceUrl": "https://mdb7.org.il/directory-mikvah/listing/מקווה-נווה-נוי/",
+        "sourceName": "המועצה הדתית באר שבע",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-rosh-haayin-h1joer6o",
+        "name": "מקווה קרל וגרטי קורי",
+        "type": "mikveh",
+        "cityId": "ראש העין",
+        "address": "17 גרטי וקרל קורי , ראש העין, Israel",
+        "location": {
+          "latitude": 32.084076,
+          "longitude": 34.969519
+        },
+        "source": "seed",
+        "sourceUrl": "https://mdrh.org.il/directory-mikvah/listing/בקרוב-מקווה-גרטי-וקרל-קורי/",
+        "sourceName": "המועצה הדתית ראש העין",
+        "extra": {
+          "council": "המועצה הדתית ראש העין",
+          "sourceVariant": "markers",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.8,
+          "cityInGov": true,
+          "classification": "new_record",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-rosh-haayin-h1joer6o",
+            "sourceUrl": "https://mdrh.org.il/directory-mikvah/listing/בקרוב-מקווה-גרטי-וקרל-קורי/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": null,
+        "attendant": null,
+        "sourceUrl": "https://mdrh.org.il/directory-mikvah/listing/בקרוב-מקווה-גרטי-וקרל-קורי/",
+        "sourceName": "המועצה הדתית ראש העין",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-marom-galil-hxceif",
+        "name": "מקווה נשים שפר",
+        "type": "mikveh",
+        "cityId": "מרום גליל",
+        "address": "28 הברוש , שפר, Israel",
+        "location": {
+          "latitude": 32.943251,
+          "longitude": 35.438492
+        },
+        "source": "seed",
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-שפר/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": {
+          "council": "המועצה הדתית מרום גליל",
+          "sourceVariant": "markers",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-marom-galil-hxceif",
+            "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-שפר/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": null,
+        "attendant": null,
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-שפר/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-marom-galil-hvhdjz8",
+        "name": "מקווה נשים שזור",
+        "type": "mikveh",
+        "cityId": "מרום גליל",
+        "address": "שזור, Israel",
+        "location": {
+          "latitude": 32.933578,
+          "longitude": 35.352544
+        },
+        "source": "seed",
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-שזור/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": {
+          "council": "המועצה הדתית מרום גליל",
+          "sourceVariant": "markers",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-marom-galil-hvhdjz8",
+            "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-שזור/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": null,
+        "attendant": null,
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-שזור/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-marom-galil-h1ag9ex8",
+        "name": "מקווה נשים עלמה",
+        "type": "mikveh",
+        "cityId": "מרום גליל",
+        "address": "עלמה, Israel",
+        "location": {
+          "latitude": 33.05186,
+          "longitude": 35.499636
+        },
+        "source": "seed",
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-עלמה/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": {
+          "council": "המועצה הדתית מרום גליל",
+          "sourceVariant": "markers",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-marom-galil-h1ag9ex8",
+            "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-עלמה/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": null,
+        "attendant": null,
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-עלמה/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-marom-galil-h1sjikf",
+        "name": "מקווה נשים כפר חושן",
+        "type": "mikveh",
+        "cityId": "מרום גליל",
+        "address": "28 שוהם , ספסופה, Israel",
+        "location": {
+          "latitude": 33.011638,
+          "longitude": 35.440468
+        },
+        "source": "seed",
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-כפר-חושן/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": {
+          "council": "המועצה הדתית מרום גליל",
+          "sourceVariant": "markers",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-marom-galil-h1sjikf",
+            "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-כפר-חושן/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": null,
+        "attendant": null,
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-כפר-חושן/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-marom-galil-hk0wn6a",
+        "name": "מקווה נשים מירון",
+        "type": "mikveh",
+        "cityId": "מרום גליל",
+        "address": "מירון, Israel",
+        "location": {
+          "latitude": 32.986778,
+          "longitude": 35.440744
+        },
+        "source": "seed",
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-מירון/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": {
+          "council": "המועצה הדתית מרום גליל",
+          "sourceVariant": "markers",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-marom-galil-hk0wn6a",
+            "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-מירון/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": null,
+        "attendant": null,
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-מירון/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-marom-galil-h3hwsiz",
+        "name": "מקווה נשים לבנים",
+        "type": "mikveh",
+        "cityId": "מרום גליל",
+        "address": "ליבנים, Israel",
+        "location": {
+          "latitude": 32.86379,
+          "longitude": 35.497479
+        },
+        "source": "seed",
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-לבנים/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": {
+          "council": "המועצה הדתית מרום גליל",
+          "sourceVariant": "markers",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-marom-galil-h3hwsiz",
+            "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-לבנים/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": null,
+        "attendant": null,
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-לבנים/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-marom-galil-h1muz396",
+        "name": "מקווה נשים כפר שמאי",
+        "type": "mikveh",
+        "cityId": "מרום גליל",
+        "address": "כפר שמאי, Israel",
+        "location": {
+          "latitude": 32.955698,
+          "longitude": 35.457916
+        },
+        "source": "seed",
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-כפר-שמאי/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": {
+          "council": "המועצה הדתית מרום גליל",
+          "sourceVariant": "markers",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-marom-galil-h1muz396",
+            "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-כפר-שמאי/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": null,
+        "attendant": null,
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-כפר-שמאי/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-marom-galil-h6yvr4q",
+        "name": "מקווה נשים כפר חנניה",
+        "type": "mikveh",
+        "cityId": "מרום גליל",
+        "address": "170 האלון , כפר חנניה, Israel",
+        "location": {
+          "latitude": 32.916479,
+          "longitude": 35.42493
+        },
+        "source": "seed",
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-כפר-חנניה/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": {
+          "council": "המועצה הדתית מרום גליל",
+          "sourceVariant": "markers",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-marom-galil-h6yvr4q",
+            "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-כפר-חנניה/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": null,
+        "attendant": null,
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-כפר-חנניה/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-marom-galil-hbgp1pc",
+        "name": "מקווה נשים כלנית",
+        "type": "mikveh",
+        "cityId": "מרום גליל",
+        "address": "כלנית, Israel",
+        "location": {
+          "latitude": 32.875328,
+          "longitude": 35.453972
+        },
+        "source": "seed",
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-כלנית/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": {
+          "council": "המועצה הדתית מרום גליל",
+          "sourceVariant": "markers",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-marom-galil-hbgp1pc",
+            "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-כלנית/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": null,
+        "attendant": null,
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-כלנית/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-marom-galil-h1qqx2uk",
+        "name": "מקווה נשים כרם בן זמרה",
+        "type": "mikveh",
+        "cityId": "מרום גליל",
+        "address": "כרם בן זמרה, Israel",
+        "location": {
+          "latitude": 33.039224,
+          "longitude": 35.469889
+        },
+        "source": "seed",
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-כרם-בן-זמרה/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": {
+          "council": "המועצה הדתית מרום גליל",
+          "sourceVariant": "markers",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-marom-galil-h1qqx2uk",
+            "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-כרם-בן-זמרה/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": null,
+        "attendant": null,
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-כרם-בן-זמרה/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-marom-galil-h1o6lw0",
+        "name": "מקווה נשים טפחות",
+        "type": "mikveh",
+        "cityId": "מרום גליל",
+        "address": "טפחות, Israel",
+        "location": {
+          "latitude": 32.868562,
+          "longitude": 35.422204
+        },
+        "source": "seed",
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-טפחות/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": {
+          "council": "המועצה הדתית מרום גליל",
+          "sourceVariant": "markers",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-marom-galil-h1o6lw0",
+            "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-טפחות/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": null,
+        "attendant": null,
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-טפחות/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-marom-galil-hzckr7y",
+        "name": "מקווה נשים חזון",
+        "type": "mikveh",
+        "cityId": "מרום גליל",
+        "address": "חזון, Israel",
+        "location": {
+          "latitude": 32.906568,
+          "longitude": 35.397005
+        },
+        "source": "seed",
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-חזון/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": {
+          "council": "המועצה הדתית מרום גליל",
+          "sourceVariant": "markers",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-marom-galil-hzckr7y",
+            "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-חזון/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": null,
+        "attendant": null,
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-חזון/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-marom-galil-h1mm1b7q",
+        "name": "מקווה נשים דלתון",
+        "type": "mikveh",
+        "cityId": "מרום גליל",
+        "address": "דלתון, Israel",
+        "location": {
+          "latitude": 33.016553,
+          "longitude": 35.489911
+        },
+        "source": "seed",
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-דלתון/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": {
+          "council": "המועצה הדתית מרום גליל",
+          "sourceVariant": "markers",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-marom-galil-h1mm1b7q",
+            "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-דלתון/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": null,
+        "attendant": null,
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-דלתון/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-marom-galil-hckz2pu",
+        "name": "מקווה נשים דוב\"ב",
+        "type": "mikveh",
+        "cityId": "מרום גליל",
+        "address": "דוב\"ב, Israel",
+        "location": {
+          "latitude": 33.0508,
+          "longitude": 35.407747
+        },
+        "source": "seed",
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-דובב/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": {
+          "council": "המועצה הדתית מרום גליל",
+          "sourceVariant": "markers",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-marom-galil-hckz2pu",
+            "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-דובב/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": null,
+        "attendant": null,
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-דובב/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-marom-galil-hxif6ca",
+        "name": "מקווה נשים בר יוחאי",
+        "type": "mikveh",
+        "cityId": "מרום גליל",
+        "address": "בר יוחאי, Israel",
+        "location": {
+          "latitude": 32.997518,
+          "longitude": 35.447758
+        },
+        "source": "seed",
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-בר-יוחאי/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": {
+          "council": "המועצה הדתית מרום גליל",
+          "sourceVariant": "markers",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-marom-galil-hxif6ca",
+            "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-בר-יוחאי/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": null,
+        "attendant": null,
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-בר-יוחאי/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-marom-galil-hzqw5ka",
+        "name": "מקווה נשים ביריה",
+        "type": "mikveh",
+        "cityId": "מרום גליל",
+        "address": "ביריה, Israel",
+        "location": {
+          "latitude": 32.979591,
+          "longitude": 35.499674
+        },
+        "source": "seed",
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-ביריה/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": {
+          "council": "המועצה הדתית מרום גליל",
+          "sourceVariant": "markers",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-marom-galil-hzqw5ka",
+            "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-ביריה/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": null,
+        "attendant": null,
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-ביריה/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-marom-galil-h1q1sjli",
+        "name": "מקווה נשים אמירים",
+        "type": "mikveh",
+        "cityId": "מרום גליל",
+        "address": "6 הרימונים , אמירים, Israel",
+        "location": {
+          "latitude": 32.938785,
+          "longitude": 35.452074
+        },
+        "source": "seed",
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-אמירים/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": {
+          "council": "המועצה הדתית מרום גליל",
+          "sourceVariant": "markers",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-marom-galil-h1q1sjli",
+            "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-אמירים/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": null,
+        "attendant": null,
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-אמירים/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-marom-galil-hln61pk",
+        "name": "מקווה נשים אור הגנוז",
+        "type": "mikveh",
+        "cityId": "מרום גליל",
+        "address": "אור הגנוז, Israel",
+        "location": {
+          "latitude": 33.005247,
+          "longitude": 35.446043
+        },
+        "source": "seed",
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-אור-הגנוז/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": {
+          "council": "המועצה הדתית מרום גליל",
+          "sourceVariant": "markers",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-marom-galil-hln61pk",
+            "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-אור-הגנוז/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": null,
+        "attendant": null,
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-אור-הגנוז/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-marom-galil-h1x9tjda",
+        "name": "מקווה נשים אביבים",
+        "type": "mikveh",
+        "cityId": "מרום גליל",
+        "address": "אביבים, Israel",
+        "location": {
+          "latitude": 33.089381,
+          "longitude": 35.470338
+        },
+        "source": "seed",
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-אביבים/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": {
+          "council": "המועצה הדתית מרום גליל",
+          "sourceVariant": "markers",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-marom-galil-h1x9tjda",
+            "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-אביבים/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": null,
+        "attendant": null,
+        "sourceUrl": "https://mdmg.org.il/directory-mikvah/listing/מקווה-נשים-אביבים/",
+        "sourceName": "המועצה הדתית מרום גליל",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-merchavim-h16j9y9a",
+        "name": "מקווה בטחה",
+        "type": "mikveh",
+        "cityId": "מרחבים",
+        "address": "ביטחה, Israel",
+        "location": {
+          "latitude": 31.332506,
+          "longitude": 34.633359
+        },
+        "source": "seed",
+        "sourceUrl": "https://mdm.org.il/directory-mikvah/listing/מקווה-בטחה/",
+        "sourceName": "המועצה הדתית מרחבים",
+        "extra": {
+          "council": "המועצה הדתית מרחבים",
+          "sourceVariant": "markers",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-merchavim-h16j9y9a",
+            "sourceUrl": "https://mdm.org.il/directory-mikvah/listing/מקווה-בטחה/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": null,
+        "attendant": null,
+        "sourceUrl": "https://mdm.org.il/directory-mikvah/listing/מקווה-בטחה/",
+        "sourceName": "המועצה הדתית מרחבים",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-merchavim-h8apml1",
+        "name": "מקווה ניר עקיבא",
+        "type": "mikveh",
+        "cityId": "מרחבים",
+        "address": "ניר עקיבא, Israel",
+        "location": {
+          "latitude": 31.469984,
+          "longitude": 34.647843
+        },
+        "source": "seed",
+        "sourceUrl": "https://mdm.org.il/directory-mikvah/listing/מקווה-ניר-עקיבא/",
+        "sourceName": "המועצה הדתית מרחבים",
+        "extra": {
+          "council": "המועצה הדתית מרחבים",
+          "sourceVariant": "markers",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-merchavim-h8apml1",
+            "sourceUrl": "https://mdm.org.il/directory-mikvah/listing/מקווה-ניר-עקיבא/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": null,
+        "attendant": null,
+        "sourceUrl": "https://mdm.org.il/directory-mikvah/listing/מקווה-ניר-עקיבא/",
+        "sourceName": "המועצה הדתית מרחבים",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-merchavim-htbvx1f",
+        "name": "מקווה אשבול",
+        "type": "mikveh",
+        "cityId": "מרחבים",
+        "address": "אשבול, Israel",
+        "location": {
+          "latitude": 31.444939,
+          "longitude": 34.665629
+        },
+        "source": "seed",
+        "sourceUrl": "https://mdm.org.il/directory-mikvah/listing/מקווה-אשבול/",
+        "sourceName": "המועצה הדתית מרחבים",
+        "extra": {
+          "council": "המועצה הדתית מרחבים",
+          "sourceVariant": "markers",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-merchavim-htbvx1f",
+            "sourceUrl": "https://mdm.org.il/directory-mikvah/listing/מקווה-אשבול/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": null,
+        "attendant": null,
+        "sourceUrl": "https://mdm.org.il/directory-mikvah/listing/מקווה-אשבול/",
+        "sourceName": "המועצה הדתית מרחבים",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-merchavim-h9wg9n",
+        "name": "מקווה פעמי תש\"ז",
+        "type": "mikveh",
+        "cityId": "מרחבים",
+        "address": "פעמי תש\"ז, Israel",
+        "location": {
+          "latitude": 31.438725,
+          "longitude": 34.69474
+        },
+        "source": "seed",
+        "sourceUrl": "https://mdm.org.il/directory-mikvah/listing/מקווה-פעמי-תשז/",
+        "sourceName": "המועצה הדתית מרחבים",
+        "extra": {
+          "council": "המועצה הדתית מרחבים",
+          "sourceVariant": "markers",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-merchavim-h9wg9n",
+            "sourceUrl": "https://mdm.org.il/directory-mikvah/listing/מקווה-פעמי-תשז/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": null,
+        "attendant": null,
+        "sourceUrl": "https://mdm.org.il/directory-mikvah/listing/מקווה-פעמי-תשז/",
+        "sourceName": "המועצה הדתית מרחבים",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-merchavim-h10gje3l",
+        "name": "מקווה שדה צבי",
+        "type": "mikveh",
+        "cityId": "מרחבים",
+        "address": "15 השיטה , שדה צבי, Israel",
+        "location": {
+          "latitude": 31.448289,
+          "longitude": 34.713101
+        },
+        "source": "seed",
+        "sourceUrl": "https://mdm.org.il/directory-mikvah/listing/מקווה-שדה-צבי/",
+        "sourceName": "המועצה הדתית מרחבים",
+        "extra": {
+          "council": "המועצה הדתית מרחבים",
+          "sourceVariant": "markers",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-merchavim-h10gje3l",
+            "sourceUrl": "https://mdm.org.il/directory-mikvah/listing/מקווה-שדה-צבי/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": null,
+        "attendant": null,
+        "sourceUrl": "https://mdm.org.il/directory-mikvah/listing/מקווה-שדה-צבי/",
+        "sourceName": "המועצה הדתית מרחבים",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-merchavim-h6jdwpv",
+        "name": "מקווה פדויים",
+        "type": "mikveh",
+        "cityId": "מרחבים",
+        "address": "פדויים, Israel",
+        "location": {
+          "latitude": 31.326236,
+          "longitude": 34.611284
+        },
+        "source": "seed",
+        "sourceUrl": "https://mdm.org.il/directory-mikvah/listing/מקווה-פדויים/",
+        "sourceName": "המועצה הדתית מרחבים",
+        "extra": {
+          "council": "המועצה הדתית מרחבים",
+          "sourceVariant": "markers",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-merchavim-h6jdwpv",
+            "sourceUrl": "https://mdm.org.il/directory-mikvah/listing/מקווה-פדויים/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": null,
+        "attendant": null,
+        "sourceUrl": "https://mdm.org.il/directory-mikvah/listing/מקווה-פדויים/",
+        "sourceName": "המועצה הדתית מרחבים",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-merchavim-h1mztxon",
+        "name": "מקווה תפרח",
+        "type": "mikveh",
+        "cityId": "מרחבים",
+        "address": "תפרח, Israel",
+        "location": {
+          "latitude": 31.324286,
+          "longitude": 34.676887
+        },
+        "source": "seed",
+        "sourceUrl": "https://mdm.org.il/directory-mikvah/listing/מקווה-תפרח/",
+        "sourceName": "המועצה הדתית מרחבים",
+        "extra": {
+          "council": "המועצה הדתית מרחבים",
+          "sourceVariant": "markers",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-merchavim-h1mztxon",
+            "sourceUrl": "https://mdm.org.il/directory-mikvah/listing/מקווה-תפרח/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": null,
+        "attendant": null,
+        "sourceUrl": "https://mdm.org.il/directory-mikvah/listing/מקווה-תפרח/",
+        "sourceName": "המועצה הדתית מרחבים",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-givat-zeev-h1ib1png",
+        "name": "מקווה רמת גבעת זאב - אור חנה",
+        "type": "mikveh",
+        "cityId": "גבעת זאב",
+        "address": "גבעת זאב",
+        "location": {
+          "latitude": 31.857831,
+          "longitude": 35.15525
+        },
+        "source": "seed",
+        "sourceUrl": "https://mdgz.org/directory-mikvah/listing/מקווה-רמת-גבעת-זאב/",
+        "sourceName": "המועצה הדתית גבעת זאב",
+        "extra": {
+          "council": "המועצה הדתית גבעת זאב",
+          "sourceVariant": "markers",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.8,
+          "cityInGov": true,
+          "classification": "new_record",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-givat-zeev-h1ib1png",
+            "sourceUrl": "https://mdgz.org/directory-mikvah/listing/מקווה-רמת-גבעת-זאב/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": null,
+        "attendant": null,
+        "sourceUrl": "https://mdgz.org/directory-mikvah/listing/מקווה-רמת-גבעת-זאב/",
+        "sourceName": "המועצה הדתית גבעת זאב",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-givat-zeev-hubfbm3",
+        "name": "מקווה הר שמואל",
+        "type": "mikveh",
+        "cityId": "גבעת זאב",
+        "address": "גבעת זאב",
+        "location": {
+          "latitude": 31.835664,
+          "longitude": 35.170471
+        },
+        "source": "seed",
+        "sourceUrl": "https://mdgz.org/directory-mikvah/listing/מקווה-הר-שמואל/",
+        "sourceName": "המועצה הדתית גבעת זאב",
+        "extra": {
+          "council": "המועצה הדתית גבעת זאב",
+          "sourceVariant": "markers",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.8,
+          "cityInGov": true,
+          "classification": "new_record",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-givat-zeev-hubfbm3",
+            "sourceUrl": "https://mdgz.org/directory-mikvah/listing/מקווה-הר-שמואל/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": null,
+        "attendant": null,
+        "sourceUrl": "https://mdgz.org/directory-mikvah/listing/מקווה-הר-שמואל/",
+        "sourceName": "המועצה הדתית גבעת זאב",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-beit-shean-h17b0l15",
+        "name": "מקווה רבין - באר רחמים ומרים",
+        "type": "mikveh",
+        "cityId": "בית שאן",
+        "address": "8 שדרות יצחק רבין , בית שאן, Israel",
+        "location": {
+          "latitude": 32.488496,
+          "longitude": 35.491109
+        },
+        "source": "seed",
+        "sourceUrl": "https://rbs.org.il/directory-mikvah/listing/מקווה-רבין-באר-רחמים-ומרים/",
+        "sourceName": "המועצה הדתית בית שאן",
+        "extra": {
+          "council": "המועצה הדתית בית שאן",
+          "sourceVariant": "markers",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.8,
+          "cityInGov": true,
+          "classification": "new_record",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-beit-shean-h17b0l15",
+            "sourceUrl": "https://rbs.org.il/directory-mikvah/listing/מקווה-רבין-באר-רחמים-ומרים/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": null,
+        "attendant": null,
+        "sourceUrl": "https://rbs.org.il/directory-mikvah/listing/מקווה-רבין-באר-רחמים-ומרים/",
+        "sourceName": "המועצה הדתית בית שאן",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-ganei-tikva-2975",
+        "name": "מקווה מעיין גנים",
+        "type": "mikveh",
+        "cityId": "גני תקווה",
+        "address": "גני תקווה",
+        "location": {
+          "latitude": 32.06114,
+          "longitude": 34.873052
+        },
+        "source": "seed",
+        "sourceUrl": "https://mdgt.org.il/directory-mikvah/listing/מקווה-מעיין-גנים/",
+        "sourceName": "המועצה הדתית גני תקווה",
+        "extra": {
+          "council": "המועצה הדתית גני תקווה",
+          "sourceVariant": "waze",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-ganei-tikva-2975",
+            "sourceUrl": "https://mdgt.org.il/directory-mikvah/listing/מקווה-מעיין-גנים/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": null,
+        "attendant": null,
+        "sourceUrl": "https://mdgt.org.il/directory-mikvah/listing/מקווה-מעיין-גנים/",
+        "sourceName": "המועצה הדתית גני תקווה",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-kiryat-arba-hbdvsem",
+        "name": "מקווה \"אברהם אבינו\" חברון",
+        "type": "mikveh",
+        "cityId": "קרית ארבע",
+        "address": "47 יוני נתניהו",
+        "location": {
+          "latitude": 31.523967,
+          "longitude": 35.107761
+        },
+        "source": "seed",
+        "sourceUrl": "https://mdk4.org.il/directory-mikvah/listing/מקווה-אברהם-אבינו-חברון/",
+        "sourceName": "המועצה הדתית קרית ארבע",
+        "extra": {
+          "council": "המועצה הדתית קרית ארבע",
+          "sourceVariant": "markers",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-kiryat-arba-hbdvsem",
+            "sourceUrl": "https://mdk4.org.il/directory-mikvah/listing/מקווה-אברהם-אבינו-חברון/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": null,
+        "attendant": null,
+        "sourceUrl": "https://mdk4.org.il/directory-mikvah/listing/מקווה-אברהם-אבינו-חברון/",
+        "sourceName": "המועצה הדתית קרית ארבע",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-kiryat-arba-h1ftm32k",
+        "name": "מקווה רמת ממרא",
+        "type": "mikveh",
+        "cityId": "קרית ארבע",
+        "address": "47 יוני נתניהו , קרית ארבע",
+        "location": {
+          "latitude": 31.544866,
+          "longitude": 35.119183
+        },
+        "source": "seed",
+        "sourceUrl": "https://mdk4.org.il/directory-mikvah/listing/מקווה-רמת-ממרא/",
+        "sourceName": "המועצה הדתית קרית ארבע",
+        "extra": {
+          "council": "המועצה הדתית קרית ארבע",
+          "sourceVariant": "markers",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-kiryat-arba-h1ftm32k",
+            "sourceUrl": "https://mdk4.org.il/directory-mikvah/listing/מקווה-רמת-ממרא/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": null,
+        "attendant": null,
+        "sourceUrl": "https://mdk4.org.il/directory-mikvah/listing/מקווה-רמת-ממרא/",
+        "sourceName": "המועצה הדתית קרית ארבע",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-kiryat-arba-hortmzl",
+        "name": "מקווה עין שרה",
+        "type": "mikveh",
+        "cityId": "קרית ארבע",
+        "address": "16 יהושע בן נון , קרית ארבע",
+        "location": {
+          "latitude": 31.527688,
+          "longitude": 35.116886
+        },
+        "source": "seed",
+        "sourceUrl": "https://mdk4.org.il/directory-mikvah/listing/מקווה-עין-שרה/",
+        "sourceName": "המועצה הדתית קרית ארבע",
+        "extra": {
+          "council": "המועצה הדתית קרית ארבע",
+          "sourceVariant": "markers",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.9,
+          "cityInGov": false,
+          "classification": "new_record",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-kiryat-arba-hortmzl",
+            "sourceUrl": "https://mdk4.org.il/directory-mikvah/listing/מקווה-עין-שרה/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": null,
+        "attendant": null,
+        "sourceUrl": "https://mdk4.org.il/directory-mikvah/listing/מקווה-עין-שרה/",
+        "sourceName": "המועצה הדתית קרית ארבע",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    },
+    {
+      "place": {
+        "id": "rc-mikvah-sderot-hu3sxrx",
+        "name": "מקווה נשים הרב דוד בר חן",
+        "type": "mikveh",
+        "cityId": "שדרות",
+        "address": "5 משעול פעמונית , שדרות, Israel",
+        "location": {
+          "latitude": 31.520555,
+          "longitude": 34.590671
+        },
+        "source": "seed",
+        "sourceUrl": "https://mdsderot.org.il/directory-mikvah/listing/מקווה-נשים-הרב-דוד-בר-חן/",
+        "sourceName": "המועצה הדתית שדרות",
+        "extra": {
+          "council": "המועצה הדתית שדרות",
+          "sourceVariant": "markers",
+          "locationPrecision": "exact",
+          "newnessConfidence": 0.8,
+          "cityInGov": true,
+          "classification": "new_record",
+          "provenance": {
+            "adapterId": "sabaiapps-mikvah-v1",
+            "sourceRecordId": "rc-mikvah-sderot-hu3sxrx",
+            "sourceUrl": "https://mdsderot.org.il/directory-mikvah/listing/מקווה-נשים-הרב-דוד-בר-חן/",
+            "fetchedAt": "2026-06-19"
+          }
+        }
+      },
+      "preservedOnWrite": {
+        "mikvehGender": null,
+        "attendant": null,
+        "sourceUrl": "https://mdsderot.org.il/directory-mikvah/listing/מקווה-נשים-הרב-דוד-בר-חן/",
+        "sourceName": "המועצה הדתית שדרות",
+        "extra": "full source metadata retained"
+      },
+      "fieldsDropped": "none",
+      "sourceSystem": "sabaiapps",
+      "writeConfidence": 0.9,
+      "readyToWrite": true
+    }
+  ]
+}

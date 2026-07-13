@@ -1,0 +1,22 @@
+{
+  "source": "arcgis:nahariya",
+  "expectedCount": 71,
+  "fetchedCount": 71,
+  "droppedNoName": 0,
+  "validCount": 71,
+  "rejectedCount": 0,
+  "new": 68,
+  "enriched": 3,
+  "conflicts": 0,
+  "over300": 0,
+  "existingSynagogues": 2739,
+  "mergedSynagogues": 2807,
+  "coordinateSource": "ArcGIS server outSR=4326 (authoritative WGS84)",
+  "datumShiftFromPureItmMeters": {
+    "comparedCount": 0,
+    "maxMeters": 0,
+    "avgMeters": 0
+  },
+  "dryRun": true,
+  "liveDataTouched": false
+}

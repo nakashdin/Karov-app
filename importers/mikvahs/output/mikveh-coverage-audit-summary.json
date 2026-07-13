@@ -1,0 +1,227 @@
+{
+  "generatedNote": "PHASE 23 — mikveh coverage audit SUMMARY (read-only).",
+  "totalMikveh": 696,
+  "totalPlaces": 5461,
+  "distinctCities": 289,
+  "top10Cities": [
+    {
+      "city": "ירושלים",
+      "count": 42
+    },
+    {
+      "city": "בית שמש",
+      "count": 20
+    },
+    {
+      "city": "מרום גליל",
+      "count": 19
+    },
+    {
+      "city": "(ללא עיר)",
+      "count": 17
+    },
+    {
+      "city": "באר שבע",
+      "count": 16
+    },
+    {
+      "city": "עפולה",
+      "count": 15
+    },
+    {
+      "city": "תל אביב - יפו",
+      "count": 14
+    },
+    {
+      "city": "נתניה",
+      "count": 13
+    },
+    {
+      "city": "אשקלון",
+      "count": 12
+    },
+    {
+      "city": "בני ברק",
+      "count": 12
+    }
+  ],
+  "suspiciouslyLowTop10": [
+    {
+      "city": "ירושלים",
+      "popK": 981,
+      "kind": "haredi",
+      "live": 42,
+      "expectedMin": 164,
+      "gap": 122
+    },
+    {
+      "city": "אשדוד",
+      "popK": 225,
+      "kind": "haredi",
+      "live": 8,
+      "expectedMin": 38,
+      "gap": 30
+    },
+    {
+      "city": "בני ברק",
+      "popK": 208,
+      "kind": "haredi",
+      "live": 12,
+      "expectedMin": 35,
+      "gap": 23
+    },
+    {
+      "city": "מודיעין עילית",
+      "popK": 94,
+      "kind": "haredi",
+      "live": 9,
+      "expectedMin": 16,
+      "gap": 7
+    },
+    {
+      "city": "תל אביב - יפו",
+      "popK": 474,
+      "kind": "general",
+      "live": 18,
+      "expectedMin": 24,
+      "gap": 6
+    },
+    {
+      "city": "ביתר עילית",
+      "popK": 65,
+      "kind": "haredi",
+      "live": 5,
+      "expectedMin": 11,
+      "gap": 6
+    },
+    {
+      "city": "אלעד",
+      "popK": 50,
+      "kind": "haredi",
+      "live": 3,
+      "expectedMin": 8,
+      "gap": 5
+    },
+    {
+      "city": "חיפה",
+      "popK": 285,
+      "kind": "general",
+      "live": 10,
+      "expectedMin": 14,
+      "gap": 4
+    },
+    {
+      "city": "נתיבות",
+      "popK": 43,
+      "kind": "dati",
+      "live": 1,
+      "expectedMin": 4,
+      "gap": 3
+    },
+    {
+      "city": "ראשון לציון",
+      "popK": 254,
+      "kind": "general",
+      "live": 11,
+      "expectedMin": 13,
+      "gap": 2
+    }
+  ],
+  "duplicateRiskClusters": 58,
+  "fieldCoveragePct": {
+    "phone": 85.1,
+    "address": 76.3,
+    "gender": 18,
+    "sourceUrl": 31.2
+  },
+  "missingCounts": {
+    "phone": 104,
+    "address": 165,
+    "gender": 571,
+    "sourceUrl": 479
+  },
+  "approximateCoordCount": 178,
+  "emptyCityIdCount": 17,
+  "exhaustedSourcesStillLow": [
+    "אשדוד (8 live, ~30 residual — official source maxed)",
+    "בני ברק (12 live, ~23 residual — official source maxed)",
+    "מודיעין עילית (9 live, ~7 residual — official source maxed)",
+    "תל אביב - יפו (18 live, ~6 residual — official source maxed)",
+    "ביתר עילית (5 live, ~6 residual — official source maxed)",
+    "אלעד (3 live, ~5 residual — official source maxed)"
+  ],
+  "genderSplit": {
+    "נשים": 660,
+    "גברים": 26,
+    "כלים": 10
+  },
+  "locationPrecisionSplit": {
+    "city": 178,
+    "address": 347,
+    "native/exact": 171
+  },
+  "sourceFieldSplit": {
+    "(none)": 470,
+    "seed": 202,
+    "osm": 24
+  },
+  "topSourceNames": [
+    {
+      "name": "(none)",
+      "count": 470
+    },
+    {
+      "name": "המועצה הדתית ירושלים",
+      "count": 41
+    },
+    {
+      "name": "OpenStreetMap (ODbL)",
+      "count": 24
+    },
+    {
+      "name": "המועצה הדתית מרום גליל",
+      "count": 19
+    },
+    {
+      "name": "המועצה הדתית עפולה",
+      "count": 15
+    },
+    {
+      "name": "המועצה הדתית נתניה",
+      "count": 13
+    },
+    {
+      "name": "המועצה הדתית פתח תקווה",
+      "count": 12
+    },
+    {
+      "name": "הרבנות והמועצה הדתית חיפה",
+      "count": 10
+    },
+    {
+      "name": "עיריית מודיעין עילית",
+      "count": 9
+    },
+    {
+      "name": "המועצה הדתית אשדוד",
+      "count": 8
+    },
+    {
+      "name": "המועצה הדתית מרחבים",
+      "count": 7
+    },
+    {
+      "name": "מועצה דתית — בת ים",
+      "count": 6
+    }
+  ],
+  "recommendedNext10": [
+    "1. ירושלים (haredi, 42 live, ~122 gap)",
+    "2. נתיבות (dati, 1 live, ~3 gap)",
+    "3. אילת (general, 1 live, ~2 gap)",
+    "4. נס ציונה (general, 1 live, ~2 gap)",
+    "5. קרית אונו (general, 0 live, ~2 gap)",
+    "6. קרית מלאכי (dati, 0 live, ~2 gap)"
+  ],
+  "auditFile": "mikveh-coverage-audit.json"
+}

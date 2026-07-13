@@ -1,0 +1,958 @@
+[
+  {
+    "sourceRecordId": "arcgis:haifa:2",
+    "name": "אביר יעקב"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:3",
+    "name": "אברבנאל"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:4",
+    "name": "אגודת ישראל"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:5",
+    "name": "אהבת תורה- דחסידי ויז'ניץ"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:6",
+    "name": "אהל אברהם"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:7",
+    "name": "אהל אהרון"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:9",
+    "name": "אהל יעקב"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:10",
+    "name": "אהל יעקב בישיבת בעלז"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:12",
+    "name": "אהל משה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:13",
+    "name": "אהל משה, שאץ-ויזניץ"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:15",
+    "name": "אוהב ישראל"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:16",
+    "name": "אוהל יוסף"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:17",
+    "name": "אוהל יצחק (במתיבתא)"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:18",
+    "name": "אוהל תורה (הרב אסולין)"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:19",
+    "name": "אור אבנר"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:22",
+    "name": "אור התורה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:23",
+    "name": "אור ישראל"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:24",
+    "name": "אורח חיים"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:25",
+    "name": "איגוד אברכים ובני תורה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:27",
+    "name": "אליהו הנביא"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:28",
+    "name": "אליקים ‎(בבי\"ס) ע\"י חנוך בן חיים"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:29",
+    "name": "ארם צובא"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:30",
+    "name": "באבא סאלי – רינת אהרן"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:31",
+    "name": "בבי\"ח \"בני ציון\""
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:32",
+    "name": "בבי\"ח \"כרמל\""
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:33",
+    "name": "בבי\"ח \"פלימן\""
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:34",
+    "name": "בבית אבות הספרדי"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:35",
+    "name": "בבית אבות כרמל"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:36",
+    "name": "בבית דינה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:37",
+    "name": "בבית מלון דן כרמל"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:38",
+    "name": "בבית מלון דן פנורמה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:39",
+    "name": "ביאלה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:40",
+    "name": "ביהכנ\"ס ע\"ש יהודה מעטי"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:41",
+    "name": "ביכנ\"ס בי\"ס צרניחובסקי"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:42",
+    "name": "ביכנ\"ס קהל חסידים"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:43",
+    "name": "ביקור חולים"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:44",
+    "name": "בית אברהם"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:45",
+    "name": "בית אברהם יצחק"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:46",
+    "name": "בית אל"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:47",
+    "name": "בית אל"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:48",
+    "name": "בית יצחק - אהל חדוה/לידי סולומון יעקב"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:49",
+    "name": "בית כנסת החדש"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:50",
+    "name": "בית כנסת עידן"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:51",
+    "name": "בית לוי  - מגדל חיפה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:52",
+    "name": "בית מדרש כולל קצות החושן"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:53",
+    "name": "בית מרגלית"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:54",
+    "name": "בית נחמן"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:55",
+    "name": "בית רבנו"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:56",
+    "name": "בית רבנו ברסלב"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:57",
+    "name": "בית תפילה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:58",
+    "name": "ביתר אמונה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:59",
+    "name": "בני היכלא"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:60",
+    "name": "בני תורה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:61",
+    "name": "ברסלב"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:62",
+    "name": "גאולה - היכל מאיר"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:63",
+    "name": "גבורת ישראל"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:64",
+    "name": "גור צעירים"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:65",
+    "name": "גרצוולף -ביכנ\"ס מאור שאנן"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:66",
+    "name": "דון יצחק אברבנאל"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:67",
+    "name": "האמונה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:68",
+    "name": "הבית של חכם סאסי"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:70",
+    "name": "הדר עליון"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:71",
+    "name": "הוד הכרמל - ‎היכל שושנה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:73",
+    "name": "היכל אברהם ומכלה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:74",
+    "name": "היכל אברהם משה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:75",
+    "name": "היכל אוהבי תורתך"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:78",
+    "name": "היכל אליהו הנביא (ספרדי)"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:80",
+    "name": "היכל בנימין (אור וישועה)"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:81",
+    "name": "היכל בנימין זאב"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:82",
+    "name": "היכל דוד בית יוסף עטרת יצחק"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:83",
+    "name": "היכל התורה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:84",
+    "name": "היכל זוהרה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:85",
+    "name": "היכל חיים חביב"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:88",
+    "name": "היכל נתנאל"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:89",
+    "name": "היכל עוד יוסף חי"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:90",
+    "name": "היכל עמרם"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:91",
+    "name": "היכל קדושים"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:92",
+    "name": "היכל רג'ינה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:94",
+    "name": "היכל שלמה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:96",
+    "name": "היכל שלמה עובד"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:97",
+    "name": "היכל שמואל"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:98",
+    "name": "היכל שמשון"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:99",
+    "name": "היכל שרגא בבי\"ס יבנה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:100",
+    "name": "הכללי לעדה א'"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:101",
+    "name": "הכללי לעדה ס'"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:102",
+    "name": "המאיר לארץ"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:103",
+    "name": "המרכזי בהר הכרמל"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:104",
+    "name": "המרכזי ובימ\"ד בעלז"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:105",
+    "name": "המרכזי ורדיה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:106",
+    "name": "המרכזי ק' חיים"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:108",
+    "name": "המרכזי קרית אליהו"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:109",
+    "name": "המשמרת הצעירה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:110",
+    "name": "הספרדי באחוזה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:111",
+    "name": "הפוהמ\"ז האשכנזי"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:112",
+    "name": "הפועל המזרחי"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:113",
+    "name": "הרב יוסף חיים"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:114",
+    "name": "הרב צירלזון"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:115",
+    "name": "הרמה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:116",
+    "name": "הרשב\"י - היכל רפאל"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:118",
+    "name": "זיו ישראל - מנין אברכים שע\"י קהילת נחלת הלויים"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:119",
+    "name": "זכרון יעקב"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:120",
+    "name": "זכרון לאברהם"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:121",
+    "name": "חב\"ד"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:122",
+    "name": "חב\"ד"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:123",
+    "name": "חב\"ד"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:125",
+    "name": "חב\"ד"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:126",
+    "name": "חב\"ד"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:127",
+    "name": "חב\"ד"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:128",
+    "name": "חב\"ד"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:129",
+    "name": "חב\"ד"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:130",
+    "name": "חב\"ד  רמת הנשיא"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:131",
+    "name": "חב\"ד למסור ידנית לחב\"ד ברח' הרצל"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:132",
+    "name": "חב\"ד לעולים"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:133",
+    "name": "חיי שרה טבנקין"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:134",
+    "name": "חכם אברהם"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:135",
+    "name": "חכמת אליעזר"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:136",
+    "name": "חסד לאברהם"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:137",
+    "name": "חסידי באבוב"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:138",
+    "name": "חסידי גור"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:139",
+    "name": "חסידי נדבורנא"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:140",
+    "name": "חסידי סדיגורה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:141",
+    "name": "חסידי צאנז"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:143",
+    "name": "חסידי ראדזין"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:144",
+    "name": "יבנה - נצח ישראל"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:145",
+    "name": "יגדיל תורה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:146",
+    "name": "יגל יעקב"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:147",
+    "name": "יד לאחים  (חב\"ד)"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:148",
+    "name": "יוסף ה' עליכם"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:149",
+    "name": "יוצאי בבל"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:150",
+    "name": "יחד שבטי ישראל"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:151",
+    "name": "יחד שבטי ישראל (ע\"ש אלי כהן)"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:152",
+    "name": "יחווה דעת"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:153",
+    "name": "יצחק עבאדי, עבור  ביכנ\"ס  עולי סוריה והלבנון"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:154",
+    "name": "ישורון"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:156",
+    "name": "ישראל יאיר"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:157",
+    "name": "כנסת ישראל"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:161",
+    "name": "לברי מרק"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:162",
+    "name": "לגעת ברוח - תנופה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:163",
+    "name": "לעדה האשכנזית"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:164",
+    "name": "לעדות המזרח"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:165",
+    "name": "לשם שמים לידי דנינו שמעון"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:166",
+    "name": "מאור יהודה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:167",
+    "name": "מאור יצחק"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:168",
+    "name": "מאור שאנן"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:170",
+    "name": "מגדל התורה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:171",
+    "name": "מגדלי אלישע (חגים בלבד)"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:172",
+    "name": "מגן אברהם"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:173",
+    "name": "מגן אברהם"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:175",
+    "name": "מוריה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:176",
+    "name": "מורשה - מגן אברהם"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:177",
+    "name": "מורשת רפאל"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:178",
+    "name": "מנין בית  האבות הספרדי  לשעבר"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:179",
+    "name": "מנין נוער"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:180",
+    "name": "מנין קהילתי האקדמית שאנן"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:181",
+    "name": "מעונות גאולה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:182",
+    "name": "מעייני ישראל -חב\"ד"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:183",
+    "name": "מקור ברוך - סערט ויזניץ"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:184",
+    "name": "מקור חיים (בביה\"ס)"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:185",
+    "name": "משכן יעקב\" בישיבה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:186",
+    "name": "משכן משה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:187",
+    "name": "משכן שאנן"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:188",
+    "name": "משכנות גבורה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:189",
+    "name": "משכנות יצחק"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:190",
+    "name": "משכנות תפילה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:191",
+    "name": "נאות פרס"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:192",
+    "name": "נוה ציון (רח' נחמיה)"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:193",
+    "name": "נוה תפילה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:194",
+    "name": "נווה אברהם- נווה הדר"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:195",
+    "name": "נוסח - אשכנזי"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:196",
+    "name": "נחלת אשר"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:197",
+    "name": "נחלת בנימין"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:198",
+    "name": "נחלת הלויים"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:199",
+    "name": "נפש חיה – חב\"ד"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:200",
+    "name": "נצח ישראל"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:201",
+    "name": "נצח ישראל (רמבה\"נ)"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:202",
+    "name": "נתיב אברהם"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:203",
+    "name": "נתיב העליה  (לעולי צרפת)"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:204",
+    "name": "ע\"ש הרב קוך"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:205",
+    "name": "עבור ביכנ\"ס ר' ישראל אבוחצירא"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:207",
+    "name": "עדת ישראל"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:208",
+    "name": "עדת ישראל גאולה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:209",
+    "name": "עוד יוסף חי / רמב\"ם"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:210",
+    "name": "עטרת זקנים"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:211",
+    "name": "עקידת יצחק"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:212",
+    "name": "ערלוי"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:213",
+    "name": "פא\"י"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:214",
+    "name": "פאר ירושלים"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:216",
+    "name": "פאר ישראל"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:217",
+    "name": "פאר ישראל (בבי\"ס יזרעאליה)"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:218",
+    "name": "פינת החסד - זק\"א צפון"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:219",
+    "name": "פרחי אהרון בישיבה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:220",
+    "name": "צעירי אגודת ישראל"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:221",
+    "name": "קהילת יעקב"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:222",
+    "name": "קהילת קודש - תימן"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:223",
+    "name": "קובעי עיתים"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:224",
+    "name": "קול יעקב"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:225",
+    "name": "קול יעקב - מנין ירושלמי"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:226",
+    "name": "קופרשטוק ע\"ש הרב"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:227",
+    "name": "קרית שמואל ב'"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:228",
+    "name": "רבי חנניה כהן"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:229",
+    "name": "רבי יעקב אבוחצירא"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:230",
+    "name": "רבי עקיבא"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:231",
+    "name": "רמב\"ם"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:232",
+    "name": "רמבעה\"נ ע\"ש"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:233",
+    "name": "רמת אשכול (אשכנזי)"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:234",
+    "name": "רמת אשכול (ספרדי)"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:235",
+    "name": "רמת הדר"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:236",
+    "name": "רשב\"י"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:237",
+    "name": "רשב\"י"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:238",
+    "name": "רשב\"י"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:239",
+    "name": "רשב\"י ע\"ש אסתר גנון - לידי אזולאי שמעון"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:240",
+    "name": "שארית ישראל"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:241",
+    "name": "שבת אחים"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:242",
+    "name": "שבת אחים"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:243",
+    "name": "שבת אחים - המרכז ברוחני ליהדות"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:244",
+    "name": "שוחרי מסורת"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:245",
+    "name": "שוחרי תפילה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:246",
+    "name": "שוחרי תפילה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:247",
+    "name": "שוירץ"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:248",
+    "name": "שטיבל אברכים בעלז חיפה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:249",
+    "name": "שיטרית בית יעקב"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:250",
+    "name": "שלום יהודה(יגדיל תורה)"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:251",
+    "name": "שער הרחמים"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:252",
+    "name": "שער השמים"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:253",
+    "name": "שער השמים"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:254",
+    "name": "שערי זיו"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:255",
+    "name": "שערי ישועה ביהכנס הטוניסאי ע\"ש ר' ישעה בסיס"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:256",
+    "name": "שערי צדק הגליל"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:257",
+    "name": "שערי רחמים"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:258",
+    "name": "שערי רחמים (חאלב)"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:259",
+    "name": "שערי תורה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:261",
+    "name": "תורה ותפילה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:262",
+    "name": "תורת אמת"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:263",
+    "name": "תורת חיים"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:264",
+    "name": "תפארת ישראל (א)"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:265",
+    "name": "תפארת ישראל (ס)"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:266",
+    "name": "תפארת מנשה"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:267",
+    "name": "תפארת צבי"
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:268",
+    "name": "תפארת שאנן"
+  }
+]

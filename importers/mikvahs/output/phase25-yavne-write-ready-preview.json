@@ -1,0 +1,158 @@
+[
+  {
+    "id": "mikveh-yavne-w-31.87120_34.74469",
+    "name": "מקווה שבזי - באר מרים",
+    "type": "mikveh",
+    "cityId": "יבנה",
+    "address": "שבזי 40, יבנה",
+    "location": {
+      "latitude": 31.871204376220692,
+      "longitude": 34.74469375610352
+    },
+    "source": "seed",
+    "phone": "089160961",
+    "openingHours": "ימי חול א'-ה' 19:51–23:00 (שעון קיץ); ערב שבת/חג: מזמן הדלקת נרות עד שעה לאחר מכן; מוצ\"ש/חג: חצי שעה לאחר צאת השבת/חג עד שלוש שעות",
+    "mikvehGender": "נשים",
+    "sourceName": "המועצה הדתית יבנה",
+    "sourceUrl": "https://mdyv.org.il/mikve",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native(waze)",
+      "provenance": {
+        "sourceId": "council:yavne:mikvah",
+        "sourceUrl": "https://mdyv.org.il/mikve",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-yavne-w-31.87101_34.73879",
+    "name": "מקווה תורמוס",
+    "type": "mikveh",
+    "cityId": "יבנה",
+    "address": "תורמוס 5, יבנה",
+    "location": {
+      "latitude": 31.87101137422908,
+      "longitude": 34.738790988922126
+    },
+    "source": "seed",
+    "phone": "089154699",
+    "openingHours": "ימי חול א'-ה' 19:51–23:00 (שעון קיץ); ערב שבת/חג: מזמן הדלקת נרות עד שעה לאחר מכן; מוצ\"ש/חג: חצי שעה לאחר צאת השבת/חג עד שלוש שעות",
+    "mikvehGender": "נשים",
+    "sourceName": "המועצה הדתית יבנה",
+    "sourceUrl": "https://mdyv.org.il/mikve",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native(waze)",
+      "provenance": {
+        "sourceId": "council:yavne:mikvah",
+        "sourceUrl": "https://mdyv.org.il/mikve",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-yavne-w-31.87574_34.73785",
+    "name": "מקווה הדקל",
+    "type": "mikveh",
+    "cityId": "יבנה",
+    "address": "משעול הרב אברהם אשטמקר, יבנה",
+    "location": {
+      "latitude": 31.875740041145846,
+      "longitude": 34.737846851348884
+    },
+    "source": "seed",
+    "phone": "089431759",
+    "openingHours": "ימי חול א'-ה' 19:51–23:00 (שעון קיץ); ערב שבת/חג: מזמן הדלקת נרות עד שעה לאחר מכן; מוצ\"ש/חג: חצי שעה לאחר צאת השבת/חג עד שלוש שעות",
+    "mikvehGender": "נשים",
+    "sourceName": "המועצה הדתית יבנה",
+    "sourceUrl": "https://mdyv.org.il/mikve",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native(waze)",
+      "provenance": {
+        "sourceId": "council:yavne:mikvah",
+        "sourceUrl": "https://mdyv.org.il/mikve",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-yavne-w-31.86758_34.73754",
+    "name": "מקווה הצדף",
+    "type": "mikveh",
+    "cityId": "יבנה",
+    "address": "הצדף 7, יבנה",
+    "location": {
+      "latitude": 31.86757633300706,
+      "longitude": 34.73753571510316
+    },
+    "source": "seed",
+    "phone": "086532996",
+    "openingHours": "ימי חול א'-ה' 19:51–23:00 (שעון קיץ); ערב שבת/חג: מזמן הדלקת נרות עד שעה לאחר מכן; מוצ\"ש/חג: חצי שעה לאחר צאת השבת/חג עד שלוש שעות; שעון חורף עד 22:00",
+    "mikvehGender": "נשים",
+    "sourceName": "המועצה הדתית יבנה",
+    "sourceUrl": "https://mdyv.org.il/mikve",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native(waze)",
+      "provenance": {
+        "sourceId": "council:yavne:mikvah",
+        "sourceUrl": "https://mdyv.org.il/mikve",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-yavne-w-31.86619_34.72456",
+    "name": "מקווה נאות שמיר",
+    "type": "mikveh",
+    "cityId": "יבנה",
+    "address": "שי עגנון 17, יבנה",
+    "location": {
+      "latitude": 31.86618681340471,
+      "longitude": 34.72456049919129
+    },
+    "source": "seed",
+    "phone": "089345268",
+    "openingHours": "ימי חול א'-ה' 19:51–23:00 (שעון קיץ); ערב שבת/חג: מזמן הדלקת נרות עד שעה לאחר מכן; מוצ\"ש/חג: חצי שעה לאחר צאת השבת/חג עד שלוש שעות",
+    "mikvehGender": "נשים",
+    "sourceName": "המועצה הדתית יבנה",
+    "sourceUrl": "https://mdyv.org.il/mikve",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native(waze)",
+      "provenance": {
+        "sourceId": "council:yavne:mikvah",
+        "sourceUrl": "https://mdyv.org.il/mikve",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-yavne-m-31.87257_34.74759",
+    "name": "מקווה טהרה לגברים ע\"ש הרב אהרון אבוקרט זצ\"ל",
+    "type": "mikveh",
+    "cityId": "יבנה",
+    "address": "חבלבל, יבנה",
+    "location": {
+      "latitude": 31.8725694011164,
+      "longitude": 34.747588634490974
+    },
+    "source": "seed",
+    "phone": "0527675546",
+    "openingHours": "ימים א'-ה' 04:00–11:00 ו-16:00–19:45; שישי/ערב חג: מ-04:00 עד שעה לפני כניסת שבת",
+    "mikvehGender": "גברים",
+    "sourceName": "המועצה הדתית יבנה",
+    "sourceUrl": "https://mdyv.org.il/mikve",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native(waze)",
+      "provenance": {
+        "sourceId": "council:yavne:mikvah",
+        "sourceUrl": "https://mdyv.org.il/mikve",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  }
+]

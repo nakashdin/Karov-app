@@ -1,0 +1,1252 @@
+[
+  {
+    "source": "council:tel-aviv:mikvah",
+    "city": "תל אביב יפו",
+    "name": "מקווה צפון",
+    "address": "פקיעין 12",
+    "phone": "035464899",
+    "geocode": {
+      "precision": "address",
+      "location": {
+        "latitude": 32.089259652120134,
+        "longitude": 34.7765314052429
+      },
+      "govmapLabel": "פקיעין 12, תל אביב-יפו",
+      "note": "GovMap ADDR_V1 exact match, city-validated, ITM→WGS84"
+    },
+    "disposition": "duplicate",
+    "reason": "duplicate of live mikveh-601 (75m)",
+    "matchedLiveId": "mikveh-601"
+  },
+  {
+    "source": "council:tel-aviv:mikvah",
+    "city": "תל אביב יפו",
+    "name": "מקווה צפון",
+    "address": "צירלסון 10",
+    "phone": "035468893",
+    "geocode": {
+      "precision": "address",
+      "location": {
+        "latitude": 32.09292905638576,
+        "longitude": 34.793223923145256
+      },
+      "govmapLabel": "הרב צירלסון 10, תל אביב-יפו",
+      "note": "GovMap ADDR_V1 exact match, city-validated, ITM→WGS84"
+    },
+    "disposition": "duplicate",
+    "reason": "duplicate of live mikveh-602 (79m)",
+    "matchedLiveId": "mikveh-602"
+  },
+  {
+    "source": "council:tel-aviv:mikvah",
+    "city": "תל אביב יפו",
+    "name": "מקווה צפון עין מרים",
+    "address": "בן יהודה 86",
+    "phone": "035228188",
+    "geocode": {
+      "precision": "address",
+      "location": {
+        "latitude": 32.08086008740313,
+        "longitude": 34.77010763285771
+      },
+      "govmapLabel": "בן-יהודה 86, תל אביב-יפו",
+      "note": "GovMap ADDR_V1 exact match, city-validated, ITM→WGS84"
+    },
+    "disposition": "duplicate",
+    "reason": "duplicate of live mikveh-589 (77m)",
+    "matchedLiveId": "mikveh-589"
+  },
+  {
+    "source": "council:tel-aviv:mikvah",
+    "city": "תל אביב יפו",
+    "name": "מקווה רמת אביב",
+    "address": "טאגור 32",
+    "phone": "036439725",
+    "geocode": {
+      "precision": "address",
+      "location": {
+        "latitude": 32.11616076401301,
+        "longitude": 34.79609659745568
+      },
+      "govmapLabel": "רבינדרנת טאגור 32, תל אביב-יפו",
+      "note": "GovMap ADDR_V1 exact match, city-validated, ITM→WGS84"
+    },
+    "disposition": "duplicate",
+    "reason": "duplicate of live mikveh-tlv-16 (70m)",
+    "matchedLiveId": "mikveh-tlv-16"
+  },
+  {
+    "source": "council:tel-aviv:mikvah",
+    "city": "תל אביב יפו",
+    "name": "מקווה רמת החייל",
+    "address": null,
+    "phone": "036470623",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:tel-aviv:mikvah",
+    "city": "תל אביב יפו",
+    "name": "מקווה נוה שרת",
+    "address": "ראול ולנברג 37",
+    "phone": "036472626",
+    "geocode": {
+      "precision": "address",
+      "location": {
+        "latitude": 32.11618888319699,
+        "longitude": 34.841781851757105
+      },
+      "govmapLabel": "ראול ולנברג 37, תל אביב-יפו",
+      "note": "GovMap ADDR_V1 exact match, city-validated, ITM→WGS84"
+    },
+    "disposition": "duplicate",
+    "reason": "duplicate of live mikveh-598 (86m)",
+    "matchedLiveId": "mikveh-598"
+  },
+  {
+    "source": "council:tel-aviv:mikvah",
+    "city": "תל אביב יפו",
+    "name": "מקווה הדר יוסף",
+    "address": "מרק יעקב 3",
+    "phone": "036470960",
+    "geocode": {
+      "precision": "address",
+      "location": {
+        "latitude": 32.11080148205693,
+        "longitude": 34.816688646109036
+      },
+      "govmapLabel": "יעקב מרק 3, תל אביב-יפו",
+      "note": "GovMap ADDR_V1 exact match, city-validated, ITM→WGS84"
+    },
+    "disposition": "write_ready",
+    "reason": "high-confidence address geocode, not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:tel-aviv:mikvah",
+    "city": "תל אביב יפו",
+    "name": "מקווה 5בר כוכבא",
+    "address": "בר כוכבא 54",
+    "phone": "035288055",
+    "geocode": {
+      "precision": "address",
+      "location": {
+        "latitude": 32.076651068783576,
+        "longitude": 34.77433462743423
+      },
+      "govmapLabel": "בר-כוכבא 54, תל אביב-יפו",
+      "note": "GovMap ADDR_V1 exact match, city-validated, ITM→WGS84"
+    },
+    "disposition": "duplicate",
+    "reason": "duplicate of live mikveh-591 (79m)",
+    "matchedLiveId": "mikveh-591"
+  },
+  {
+    "source": "council:tel-aviv:mikvah",
+    "city": "תל אביב יפו",
+    "name": "מקווה מרכז",
+    "address": "יבנה 10",
+    "phone": "036296512",
+    "geocode": {
+      "precision": "address",
+      "location": {
+        "latitude": 32.06600829021149,
+        "longitude": 34.771880699814496
+      },
+      "govmapLabel": "יבנה 10, תל אביב-יפו",
+      "note": "GovMap ADDR_V1 exact match, city-validated, ITM→WGS84"
+    },
+    "disposition": "duplicate",
+    "reason": "duplicate of live mikveh-593 (71m)",
+    "matchedLiveId": "mikveh-593"
+  },
+  {
+    "source": "council:tel-aviv:mikvah",
+    "city": "תל אביב יפו",
+    "name": "מקווה נוה צדק",
+    "address": "פינס 24",
+    "phone": "035108677",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "GovMap: no exact in-city ADDR_V1 match → rejected (low confidence)"
+    },
+    "disposition": "excluded",
+    "reason": "GovMap: no exact in-city ADDR_V1 match → rejected (low confidence)",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:tel-aviv:mikvah",
+    "city": "תל אביב יפו",
+    "name": "מקווה קרית שלום",
+    "address": null,
+    "phone": "036817093",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:tel-aviv:mikvah",
+    "city": "תל אביב יפו",
+    "name": "מקווה שפירא",
+    "address": "חכמי ישראל 65",
+    "phone": "036880892",
+    "geocode": {
+      "precision": "address",
+      "location": {
+        "latitude": 32.05027586774581,
+        "longitude": 34.778112215107924
+      },
+      "govmapLabel": "שדרות חכמי ישראל 65, תל אביב-יפו",
+      "note": "GovMap ADDR_V1 exact match, city-validated, ITM→WGS84"
+    },
+    "disposition": "duplicate",
+    "reason": "duplicate of live mikveh-605 (79m)",
+    "matchedLiveId": "mikveh-605"
+  },
+  {
+    "source": "council:tel-aviv:mikvah",
+    "city": "תל אביב יפו",
+    "name": "מקווה כפיר",
+    "address": "בושם 59",
+    "phone": "036319535",
+    "geocode": {
+      "precision": "address",
+      "location": {
+        "latitude": 32.04368227629585,
+        "longitude": 34.80134547890276
+      },
+      "govmapLabel": "בושם 59, תל אביב-יפו",
+      "note": "GovMap ADDR_V1 exact match, city-validated, ITM→WGS84"
+    },
+    "disposition": "write_ready",
+    "reason": "high-confidence address geocode, not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:tel-aviv:mikvah",
+    "city": "תל אביב יפו",
+    "name": "מקווה בצרון",
+    "address": "שד' ההשכלה 10",
+    "phone": "035610089",
+    "geocode": {
+      "precision": "address",
+      "location": {
+        "latitude": 32.06540780451409,
+        "longitude": 34.79586937681548
+      },
+      "govmapLabel": "שדרות ההשכלה 10, תל אביב-יפו",
+      "note": "GovMap ADDR_V1 exact match, city-validated, ITM→WGS84"
+    },
+    "disposition": "write_ready",
+    "reason": "high-confidence address geocode, not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:tel-aviv:mikvah",
+    "city": "תל אביב יפו",
+    "name": "מקווה יד אליהו",
+    "address": null,
+    "phone": "035371256",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:tel-aviv:mikvah",
+    "city": "תל אביב יפו",
+    "name": "מקווה יפו",
+    "address": "שד' התחיה 4",
+    "phone": "036827142",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "GovMap: no exact in-city ADDR_V1 match → rejected (low confidence)"
+    },
+    "disposition": "excluded",
+    "reason": "GovMap: no exact in-city ADDR_V1 match → rejected (low confidence)",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:tel-aviv:mikvah",
+    "city": "תל אביב יפו",
+    "name": "מקווה תל",
+    "address": "כביר אוריאל יעקובוב 4",
+    "phone": "035187164",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "GovMap: no exact in-city ADDR_V1 match → rejected (low confidence)"
+    },
+    "disposition": "excluded",
+    "reason": "GovMap: no exact in-city ADDR_V1 match → rejected (low confidence)",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:tel-aviv:mikvah",
+    "city": "תל אביב יפו",
+    "name": "מקווה שכ' עזרא",
+    "address": "כסלו 23",
+    "phone": "036876211",
+    "geocode": {
+      "precision": "address",
+      "location": {
+        "latitude": 32.04649126246102,
+        "longitude": 34.788344095791004
+      },
+      "govmapLabel": "כסלו 23, תל אביב-יפו",
+      "note": "GovMap ADDR_V1 exact match, city-validated, ITM→WGS84"
+    },
+    "disposition": "duplicate",
+    "reason": "duplicate of live mikveh-600 (75m)",
+    "matchedLiveId": "mikveh-600"
+  },
+  {
+    "source": "council:tel-aviv:mikvah",
+    "city": "תל אביב יפו",
+    "name": "מקווה יפו",
+    "address": "סג'רה 9",
+    "phone": "036965166",
+    "geocode": {
+      "precision": "address",
+      "location": {
+        "latitude": 32.03964884565794,
+        "longitude": 34.757737595767516
+      },
+      "govmapLabel": "סג'רה 9, תל אביב-יפו",
+      "note": "GovMap ADDR_V1 exact match, city-validated, ITM→WGS84"
+    },
+    "disposition": "duplicate",
+    "reason": "duplicate of live mikveh-599 (78m)",
+    "matchedLiveId": "mikveh-599"
+  },
+  {
+    "source": "council:gush-etzion:mikvah",
+    "city": "איבי הנחל",
+    "name": "מקווה איבי הנחל",
+    "address": null,
+    "phone": "0525662740",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:gush-etzion:mikvah",
+    "city": "אלון שבות",
+    "name": "מקווה אלון שבות",
+    "address": null,
+    "phone": "029933228",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:gush-etzion:mikvah",
+    "city": "אלעזר",
+    "name": "מקווה אלעזר",
+    "address": null,
+    "phone": "029932964",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:gush-etzion:mikvah",
+    "city": "בת עין",
+    "name": "מקווה בת עין",
+    "address": null,
+    "phone": "029933508",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:gush-etzion:mikvah",
+    "city": "גבעות",
+    "name": "מקווה גבעות",
+    "address": null,
+    "phone": "029932964",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:gush-etzion:mikvah",
+    "city": "הר גילה",
+    "name": "מקווה הר גילה",
+    "address": null,
+    "phone": "0546699650",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:gush-etzion:mikvah",
+    "city": "כפר אלדד",
+    "name": "מקווה כפר אלדד",
+    "address": null,
+    "phone": "0507388846",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:gush-etzion:mikvah",
+    "city": "כפר עציון",
+    "name": "מקווה כפר עציון",
+    "address": null,
+    "phone": "029935132",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:gush-etzion:mikvah",
+    "city": "כרמי צור",
+    "name": "מקווה כרמי צור",
+    "address": null,
+    "phone": "029963379",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:gush-etzion:mikvah",
+    "city": "מגדל עוז",
+    "name": "מקווה מגדל עוז",
+    "address": null,
+    "phone": "029936421",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:gush-etzion:mikvah",
+    "city": "מיצד",
+    "name": "מקווה מיצד",
+    "address": null,
+    "phone": "029938861",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:gush-etzion:mikvah",
+    "city": "מעלה עמוס",
+    "name": "מקווה מעלה עמוס",
+    "address": null,
+    "phone": "029932129",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:gush-etzion:mikvah",
+    "city": "נוה דניאל",
+    "name": "מקווה נוה דניאל",
+    "address": null,
+    "phone": "029932760",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:gush-etzion:mikvah",
+    "city": "נוקדים",
+    "name": "מקווה נוקדים",
+    "address": null,
+    "phone": "029963729",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:gush-etzion:mikvah",
+    "city": "פני קדם",
+    "name": "מקווה פני קדם",
+    "address": null,
+    "phone": "0556610784",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:gush-etzion:mikvah",
+    "city": "קידר",
+    "name": "מקווה קידר",
+    "address": null,
+    "phone": "025902462",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:gush-etzion:mikvah",
+    "city": "ראש צורים",
+    "name": "מקווה ראש צורים",
+    "address": null,
+    "phone": "029935424",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:gush-etzion:mikvah",
+    "city": "תקוע",
+    "name": "מקווה תקוע",
+    "address": null,
+    "phone": "029964111",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:bat-yam:mikvah",
+    "city": "בת ים",
+    "name": "אוהל מועד",
+    "address": "ניצנה 2",
+    "phone": null,
+    "geocode": {
+      "precision": "address",
+      "location": {
+        "latitude": 32.026258245030746,
+        "longitude": 34.7582110208795
+      },
+      "govmapLabel": "ניצנה 2, בת ים",
+      "note": "GovMap ADDR_V1 exact match, city-validated, ITM→WGS84"
+    },
+    "disposition": "duplicate",
+    "reason": "duplicate of live mikveh-121 (68m)",
+    "matchedLiveId": "mikveh-121"
+  },
+  {
+    "source": "council:bat-yam:mikvah",
+    "city": "בת ים",
+    "name": "אוהל אברהם",
+    "address": "הצנחנים",
+    "phone": "0522835442",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "GovMap: no exact in-city ADDR_V1 match → rejected (low confidence)"
+    },
+    "disposition": "excluded",
+    "reason": "GovMap: no exact in-city ADDR_V1 match → rejected (low confidence)",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:bat-yam:mikvah",
+    "city": "בת ים",
+    "name": "באבוב",
+    "address": "האדמו\"ר מבאבוב 12",
+    "phone": "035518510",
+    "geocode": {
+      "precision": "address",
+      "location": {
+        "latitude": 32.00920086067025,
+        "longitude": 34.75192550370174
+      },
+      "govmapLabel": "האדמו\"ר מבאבוב 12, בת ים",
+      "note": "GovMap ADDR_V1 exact match, city-validated, ITM→WGS84"
+    },
+    "disposition": "write_ready",
+    "reason": "high-confidence address geocode, not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:bat-yam:mikvah",
+    "city": "בת ים",
+    "name": "נועם אלימלך",
+    "address": "ויצמן 9א",
+    "phone": null,
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "GovMap: no exact in-city ADDR_V1 match → rejected (low confidence)"
+    },
+    "disposition": "excluded",
+    "reason": "GovMap: no exact in-city ADDR_V1 match → rejected (low confidence)",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:bat-yam:mikvah",
+    "city": "בת ים",
+    "name": "שער ציון",
+    "address": "החשמונאים 27",
+    "phone": "0547713860",
+    "geocode": {
+      "precision": "address",
+      "location": {
+        "latitude": 32.019165253811124,
+        "longitude": 34.750678149958304
+      },
+      "govmapLabel": "החשמונאים 27, בת ים",
+      "note": "GovMap ADDR_V1 exact match, city-validated, ITM→WGS84"
+    },
+    "disposition": "write_ready",
+    "reason": "high-confidence address geocode, not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:bat-yam:mikvah",
+    "city": "בת ים",
+    "name": "אור החמה",
+    "address": "הנביאים 58",
+    "phone": null,
+    "geocode": {
+      "precision": "address",
+      "location": {
+        "latitude": 32.00856808370756,
+        "longitude": 34.74178364163824
+      },
+      "govmapLabel": "הנביאים 58, בת ים",
+      "note": "GovMap ADDR_V1 exact match, city-validated, ITM→WGS84"
+    },
+    "disposition": "write_ready",
+    "reason": "high-confidence address geocode, not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:bat-yam:mikvah",
+    "city": "בת ים",
+    "name": "חב\"ד",
+    "address": "העצמאות 66",
+    "phone": null,
+    "geocode": {
+      "precision": "address",
+      "location": {
+        "latitude": 32.02823137894804,
+        "longitude": 34.74896356629098
+      },
+      "govmapLabel": "שדרות העצמאות 66, בת ים",
+      "note": "GovMap ADDR_V1 exact match, city-validated, ITM→WGS84"
+    },
+    "disposition": "write_ready",
+    "reason": "high-confidence address geocode, not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:bat-yam:mikvah",
+    "city": "בת ים",
+    "name": "טהרת אסתר",
+    "address": "הלפר 38",
+    "phone": null,
+    "geocode": {
+      "precision": "address",
+      "location": {
+        "latitude": 32.02829189337109,
+        "longitude": 34.74690570683538
+      },
+      "govmapLabel": "הלפר 38, בת ים",
+      "note": "GovMap ADDR_V1 exact match, city-validated, ITM→WGS84"
+    },
+    "disposition": "write_ready",
+    "reason": "high-confidence address geocode, not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:bat-yam:mikvah",
+    "city": "בת ים",
+    "name": "עמידר",
+    "address": "החלוצים 9",
+    "phone": null,
+    "geocode": {
+      "precision": "address",
+      "location": {
+        "latitude": 32.02643692545987,
+        "longitude": 34.7578032110038
+      },
+      "govmapLabel": "החלוצים 9, בת ים",
+      "note": "GovMap ADDR_V1 exact match, city-validated, ITM→WGS84"
+    },
+    "disposition": "duplicate",
+    "reason": "duplicate of live mikveh-121 (49m)",
+    "matchedLiveId": "mikveh-121"
+  },
+  {
+    "source": "council:bat-yam:mikvah",
+    "city": "בת ים",
+    "name": "פאר יפית",
+    "address": "ליבורנו 36",
+    "phone": null,
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "GovMap: no exact in-city ADDR_V1 match → rejected (low confidence)"
+    },
+    "disposition": "excluded",
+    "reason": "GovMap: no exact in-city ADDR_V1 match → rejected (low confidence)",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:bat-yam:mikvah",
+    "city": "בת ים",
+    "name": "בית אל",
+    "address": "בן ציון ישראל 15",
+    "phone": null,
+    "geocode": {
+      "precision": "address",
+      "location": {
+        "latitude": 32.0156722553342,
+        "longitude": 34.746033358571154
+      },
+      "govmapLabel": "ישראל בן-ציון 15, בת ים",
+      "note": "GovMap ADDR_V1 exact match, city-validated, ITM→WGS84"
+    },
+    "disposition": "write_ready",
+    "reason": "high-confidence address geocode, not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:bat-yam:mikvah",
+    "city": "בת ים",
+    "name": "באבוב",
+    "address": "האדמו\"ר מבאבוב 12",
+    "phone": null,
+    "geocode": {
+      "precision": "address",
+      "location": {
+        "latitude": 32.00920086067025,
+        "longitude": 34.75192550370174
+      },
+      "govmapLabel": "האדמו\"ר מבאבוב 12, בת ים",
+      "note": "GovMap ADDR_V1 exact match, city-validated, ITM→WGS84"
+    },
+    "disposition": "duplicate",
+    "reason": "within-batch duplicate of באבוב",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:golan:mikvah",
+    "city": "בני יהודה",
+    "name": "מקווה בני יהודה",
+    "address": null,
+    "phone": "046762369",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:golan:mikvah",
+    "city": "אבני איתן",
+    "name": "מקווה אבני איתן",
+    "address": null,
+    "phone": "046763086",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:golan:mikvah",
+    "city": "נוב",
+    "name": "מקווה נוב",
+    "address": null,
+    "phone": "0506998601",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:golan:mikvah",
+    "city": "חיספין – מקווה נגיש",
+    "name": "מקווה חיספין – מקווה נגיש",
+    "address": null,
+    "phone": "046762599",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:golan:mikvah",
+    "city": "רמת מגשימים",
+    "name": "מקווה רמת מגשימים",
+    "address": null,
+    "phone": "046764323",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:golan:mikvah",
+    "city": "יונתן",
+    "name": "מקווה יונתן",
+    "address": null,
+    "phone": "046918401",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:golan:mikvah",
+    "city": "נטור",
+    "name": "מקווה נטור",
+    "address": null,
+    "phone": "046602529",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:golan:mikvah",
+    "city": "קשת",
+    "name": "מקווה קשת",
+    "address": null,
+    "phone": "046960551",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:golan:mikvah",
+    "city": "אלוני הבשן",
+    "name": "מקווה אלוני הבשן",
+    "address": null,
+    "phone": "046960017",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:golan:mikvah",
+    "city": "חד נס",
+    "name": "מקווה חד נס",
+    "address": null,
+    "phone": "046276953",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:netivot:mikvah",
+    "city": "נתיבות",
+    "name": "מעיין דורית",
+    "address": null,
+    "phone": "086345791",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:netivot:mikvah",
+    "city": "נתיבות",
+    "name": "מקווה הרמב\"ם",
+    "address": null,
+    "phone": "089945254",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:netivot:mikvah",
+    "city": "נתיבות",
+    "name": "מקווה זוהרה",
+    "address": null,
+    "phone": "089943189",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:netivot:mikvah",
+    "city": "נתיבות",
+    "name": "מקווה זכור לאברהם",
+    "address": null,
+    "phone": "089934917",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:netivot:mikvah",
+    "city": "נתיבות",
+    "name": "מקווה קרית מנחם",
+    "address": null,
+    "phone": "089932203",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:netivot:mikvah",
+    "city": "נתיבות",
+    "name": "מקווה טהרת רוני ובת שבע",
+    "address": null,
+    "phone": "0733669034",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:rehovot:mikvah",
+    "city": "רחובות",
+    "name": "מקווה מרמורק",
+    "address": "כיכר חשמונאים 3",
+    "phone": null,
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "GovMap: no exact in-city ADDR_V1 match → rejected (low confidence)"
+    },
+    "disposition": "excluded",
+    "reason": "GovMap: no exact in-city ADDR_V1 match → rejected (low confidence)",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:rehovot:mikvah",
+    "city": "רחובות",
+    "name": "מקווה קרית משה",
+    "address": null,
+    "phone": null,
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "no street address (settlement/phone-only) → GovMap address geocode not applicable"
+    },
+    "disposition": "excluded",
+    "reason": "no street address (settlement/phone-only) → GovMap address geocode not applicable",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:menashe:mikvah",
+    "city": "כפר פינס",
+    "name": "מקווה כפר פינס",
+    "address": "ליד בית הכנסת",
+    "phone": "0527710046",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "GovMap: no exact in-city ADDR_V1 match → rejected (low confidence)"
+    },
+    "disposition": "excluded",
+    "reason": "GovMap: no exact in-city ADDR_V1 match → rejected (low confidence)",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:menashe:mikvah",
+    "city": "מאור",
+    "name": "מקווה מאור",
+    "address": "רחוב גפן 3, ליד בית הכנסת",
+    "phone": "0508665295",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "GovMap: no exact in-city ADDR_V1 match → rejected (low confidence)"
+    },
+    "disposition": "excluded",
+    "reason": "GovMap: no exact in-city ADDR_V1 match → rejected (low confidence)",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:menashe:mikvah",
+    "city": "קציר",
+    "name": "מקווה קציר",
+    "address": "משעול המורן 2",
+    "phone": "0526436792",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "GovMap: no exact in-city ADDR_V1 match → rejected (low confidence)"
+    },
+    "disposition": "excluded",
+    "reason": "GovMap: no exact in-city ADDR_V1 match → rejected (low confidence)",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:menashe:mikvah",
+    "city": "מצפה אילן",
+    "name": "מקווה מצפה אילן",
+    "address": "ליד בית הכנסת",
+    "phone": "0508893704",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "GovMap: no exact in-city ADDR_V1 match → rejected (low confidence)"
+    },
+    "disposition": "excluded",
+    "reason": "GovMap: no exact in-city ADDR_V1 match → rejected (low confidence)",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:mazkeret-batya:mikvah",
+    "city": "מזכרת בתיה",
+    "name": "מקווה כלים",
+    "address": "מידן 18",
+    "phone": "0552240042",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "GovMap: no exact in-city ADDR_V1 match → rejected (low confidence)"
+    },
+    "disposition": "excluded",
+    "reason": "GovMap: no exact in-city ADDR_V1 match → rejected (low confidence)",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:mazkeret-batya:mikvah",
+    "city": "מזכרת בתיה",
+    "name": "מקווה גברים",
+    "address": "המייסדים 17",
+    "phone": "0547926770",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "GovMap: no exact in-city ADDR_V1 match → rejected (low confidence)"
+    },
+    "disposition": "excluded",
+    "reason": "GovMap: no exact in-city ADDR_V1 match → rejected (low confidence)",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:mazkeret-batya:mikvah",
+    "city": "מזכרת בתיה",
+    "name": "מקווה נשים",
+    "address": "מידן 18",
+    "phone": "0528566808",
+    "geocode": {
+      "precision": "none",
+      "location": null,
+      "govmapLabel": null,
+      "note": "GovMap: no exact in-city ADDR_V1 match → rejected (low confidence)"
+    },
+    "disposition": "excluded",
+    "reason": "GovMap: no exact in-city ADDR_V1 match → rejected (low confidence)",
+    "matchedLiveId": null
+  }
+]

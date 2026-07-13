@@ -1,0 +1,197 @@
+[
+  {
+    "id": "mikveh-kiryat-gat-31.61047_34.77229",
+    "name": "מקווה סטרומה",
+    "type": "mikveh",
+    "cityId": "קרית גת",
+    "address": "קרית גת",
+    "location": {
+      "latitude": 31.6104718,
+      "longitude": 34.7722948
+    },
+    "source": "seed",
+    "phone": "089957288",
+    "mikvehGender": "נשים",
+    "sourceName": "המועצה הדתית קרית גת",
+    "sourceUrl": "https://mdkg.org.il/mikve",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-embedded",
+      "provenance": {
+        "sourceId": "council:kiryat-gat:mikvah",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-kiryat-gat-31.61572_34.77019",
+    "name": "מקווה רפאל",
+    "type": "mikveh",
+    "cityId": "קרית גת",
+    "address": "קרית גת",
+    "location": {
+      "latitude": 31.615717,
+      "longitude": 34.7701881
+    },
+    "source": "seed",
+    "phone": "0508844913",
+    "mikvehGender": "נשים",
+    "sourceName": "המועצה הדתית קרית גת",
+    "sourceUrl": "https://mdkg.org.il/mikve",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-embedded",
+      "provenance": {
+        "sourceId": "council:kiryat-gat:mikvah",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-kiryat-gat-31.62235_34.77493",
+    "name": "מקווה כרמי גת",
+    "type": "mikveh",
+    "cityId": "קרית גת",
+    "address": "נופך 21, קריית גת",
+    "location": {
+      "latitude": 31.622346,
+      "longitude": 34.77493
+    },
+    "source": "seed",
+    "phone": "0533121731",
+    "mikvehGender": "נשים",
+    "sourceName": "המועצה הדתית קרית גת",
+    "sourceUrl": "https://mdkg.org.il/mikve",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-embedded",
+      "provenance": {
+        "sourceId": "council:kiryat-gat:mikvah",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-kiryat-gat-31.62996_34.76918",
+    "name": "מקווה כרמי גת לעסרי",
+    "type": "mikveh",
+    "cityId": "קרית גת",
+    "address": "הנרייטה סאלד 82, קרית גת",
+    "location": {
+      "latitude": 31.6299575,
+      "longitude": 34.7691787
+    },
+    "source": "seed",
+    "phone": "0504126427",
+    "mikvehGender": "נשים",
+    "sourceName": "המועצה הדתית קרית גת",
+    "sourceUrl": "https://mdkg.org.il/mikve",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-embedded",
+      "provenance": {
+        "sourceId": "council:kiryat-gat:mikvah",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-kiryat-gat-31.61418_34.76102",
+    "name": "מקווה התמר",
+    "type": "mikveh",
+    "cityId": "קרית גת",
+    "address": "קרית גת",
+    "location": {
+      "latitude": 31.6141812,
+      "longitude": 34.7610226
+    },
+    "source": "seed",
+    "phone": "0502122326",
+    "mikvehGender": "נשים",
+    "sourceName": "המועצה הדתית קרית גת",
+    "sourceUrl": "https://mdkg.org.il/mikve",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-embedded",
+      "provenance": {
+        "sourceId": "council:kiryat-gat:mikvah",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-beit-shemesh-31.72281_34.98859",
+    "name": "מקווה נשים בן זכאי",
+    "type": "mikveh",
+    "cityId": "בית שמש",
+    "address": "בן זכאי 30",
+    "location": {
+      "latitude": 31.722814385432713,
+      "longitude": 34.988585558293245
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "phone": "029998472",
+    "mikvehGender": "נשים",
+    "sourceName": "המועצה הדתית בית שמש",
+    "sourceUrl": "https://www.rabanutbs.co.il/רשימת-מקוואות/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "provenance": {
+        "sourceId": "council:beit-shemesh:mikvah",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-beit-shemesh-31.74360_34.99756",
+    "name": "מקווה נשים חפציבה",
+    "type": "mikveh",
+    "cityId": "בית שמש",
+    "address": "בן איש חי 15",
+    "location": {
+      "latitude": 31.743601478232872,
+      "longitude": 34.99756046467561
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "phone": "025393015",
+    "mikvehGender": "נשים",
+    "sourceName": "המועצה הדתית בית שמש",
+    "sourceUrl": "https://www.rabanutbs.co.il/רשימת-מקוואות/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "provenance": {
+        "sourceId": "council:beit-shemesh:mikvah",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-beit-shemesh-31.70499_34.99097",
+    "name": "מקווה נשים רמה ג' 2",
+    "type": "mikveh",
+    "cityId": "בית שמש",
+    "address": "נתן הנביא 4",
+    "location": {
+      "latitude": 31.704987069844165,
+      "longitude": 34.990965661701345
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "phone": "025372509",
+    "mikvehGender": "נשים",
+    "sourceName": "המועצה הדתית בית שמש",
+    "sourceUrl": "https://www.rabanutbs.co.il/רשימת-מקוואות/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "provenance": {
+        "sourceId": "council:beit-shemesh:mikvah",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  }
+]

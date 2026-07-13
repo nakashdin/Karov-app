@@ -1,0 +1,680 @@
+{
+  "generatedNote": "PHASE 17A PREVIEW — derived from live places.osm.json by classification. NOT the real dataset registry. No source files written to src/data/generated/sources/.",
+  "schemaVersion": 1,
+  "generatedFrom": "src/data/generated/places.osm.json",
+  "totalRecords": 4932,
+  "sourceCount": 38,
+  "sources": [
+    {
+      "sourceId": "osm:synagogues",
+      "file": "sources/osm__synagogues.preview.json",
+      "recordCount": 1590,
+      "types": [
+        "synagogue"
+      ],
+      "classificationMethods": [
+        "id-prefix+type"
+      ],
+      "kind": "osm",
+      "status": "preview",
+      "sampleIds": [
+        "osm-node-305478462",
+        "osm-node-305625740",
+        "osm-node-343668733"
+      ]
+    },
+    {
+      "sourceId": "datagov:mikve",
+      "file": "sources/datagov__mikve.preview.json",
+      "recordCount": 470,
+      "types": [
+        "mikveh"
+      ],
+      "classificationMethods": [
+        "id-prefix"
+      ],
+      "kind": "data-gov",
+      "status": "preview",
+      "sampleIds": [
+        "mikveh-1",
+        "mikveh-2",
+        "mikveh-3"
+      ]
+    },
+    {
+      "sourceId": "arcgis:tel-aviv:synagogues",
+      "file": "sources/arcgis__tel-aviv__synagogues.preview.json",
+      "recordCount": 445,
+      "types": [
+        "synagogue"
+      ],
+      "classificationMethods": [
+        "id-prefix"
+      ],
+      "kind": "arcgis",
+      "status": "preview",
+      "sampleIds": [
+        "arcgis:tel-aviv::568-2",
+        "arcgis:tel-aviv::568-3",
+        "arcgis:tel-aviv::568-4"
+      ]
+    },
+    {
+      "sourceId": "osm:restaurants",
+      "file": "sources/osm__restaurants.preview.json",
+      "recordCount": 346,
+      "types": [
+        "restaurant"
+      ],
+      "classificationMethods": [
+        "id-prefix+type"
+      ],
+      "kind": "osm",
+      "status": "preview",
+      "sampleIds": [
+        "osm-node-460324660",
+        "osm-node-538830365",
+        "osm-node-540970749"
+      ]
+    },
+    {
+      "sourceId": "council:petah-tikva:synagogues",
+      "file": "sources/council__petah-tikva__synagogues.preview.json",
+      "recordCount": 315,
+      "types": [
+        "synagogue"
+      ],
+      "classificationMethods": [
+        "id-prefix+slug-heuristic"
+      ],
+      "kind": "council-website",
+      "status": "preview",
+      "sampleIds": [
+        "rc-petah-tikva-9273",
+        "rc-petah-tikva-9274",
+        "rc-petah-tikva-9276"
+      ]
+    },
+    {
+      "sourceId": "arcgis:ashdod:synagogues",
+      "file": "sources/arcgis__ashdod__synagogues.preview.json",
+      "recordCount": 273,
+      "types": [
+        "synagogue"
+      ],
+      "classificationMethods": [
+        "id-prefix"
+      ],
+      "kind": "arcgis",
+      "status": "preview",
+      "sampleIds": [
+        "arcgis:ashdod::10",
+        "arcgis:ashdod::21",
+        "arcgis:ashdod::23"
+      ]
+    },
+    {
+      "sourceId": "arcgis:haifa:synagogues",
+      "file": "sources/arcgis__haifa__synagogues.preview.json",
+      "recordCount": 237,
+      "types": [
+        "synagogue"
+      ],
+      "classificationMethods": [
+        "id-prefix"
+      ],
+      "kind": "arcgis",
+      "status": "preview",
+      "sampleIds": [
+        "arcgis:haifa::2",
+        "arcgis:haifa::3",
+        "arcgis:haifa::4"
+      ]
+    },
+    {
+      "sourceId": "arcgis:ashkelon:synagogues",
+      "file": "sources/arcgis__ashkelon__synagogues.preview.json",
+      "recordCount": 177,
+      "types": [
+        "synagogue"
+      ],
+      "classificationMethods": [
+        "id-prefix"
+      ],
+      "kind": "arcgis",
+      "status": "preview",
+      "sampleIds": [
+        "arcgis:ashkelon::1",
+        "arcgis:ashkelon::2",
+        "arcgis:ashkelon::4"
+      ]
+    },
+    {
+      "sourceId": "council:beer-sheva:synagogues",
+      "file": "sources/council__beer-sheva__synagogues.preview.json",
+      "recordCount": 149,
+      "types": [
+        "synagogue"
+      ],
+      "classificationMethods": [
+        "id-prefix+slug-heuristic"
+      ],
+      "kind": "council-website",
+      "status": "preview",
+      "sampleIds": [
+        "rc-beer-sheva-h1rnrvii",
+        "rc-beer-sheva-h1uskz8l",
+        "rc-beer-sheva-h1rde7u6"
+      ]
+    },
+    {
+      "sourceId": "council:rosh-haayin:synagogues",
+      "file": "sources/council__rosh-haayin__synagogues.preview.json",
+      "recordCount": 126,
+      "types": [
+        "synagogue"
+      ],
+      "classificationMethods": [
+        "id-prefix+slug-heuristic"
+      ],
+      "kind": "council-website",
+      "status": "preview",
+      "sampleIds": [
+        "rc-rosh-haayin-h1s751i0",
+        "rc-rosh-haayin-h1yditxb",
+        "rc-rosh-haayin-hvivemw"
+      ]
+    },
+    {
+      "sourceId": "council:netanya:synagogues",
+      "file": "sources/council__netanya__synagogues.preview.json",
+      "recordCount": 121,
+      "types": [
+        "synagogue"
+      ],
+      "classificationMethods": [
+        "id-prefix+slug-heuristic"
+      ],
+      "kind": "council-website",
+      "status": "preview",
+      "sampleIds": [
+        "rc-netanya-12566",
+        "rc-netanya-12567",
+        "rc-netanya-12568"
+      ]
+    },
+    {
+      "sourceId": "council:hadera:synagogues",
+      "file": "sources/council__hadera__synagogues.preview.json",
+      "recordCount": 91,
+      "types": [
+        "synagogue"
+      ],
+      "classificationMethods": [
+        "id-prefix+slug-heuristic"
+      ],
+      "kind": "council-website",
+      "status": "preview",
+      "sampleIds": [
+        "rc-hadera-h1mlz59r",
+        "rc-hadera-h8tilj5",
+        "rc-hadera-h10whmyj"
+      ]
+    },
+    {
+      "sourceId": "council:lod:synagogues",
+      "file": "sources/council__lod__synagogues.preview.json",
+      "recordCount": 80,
+      "types": [
+        "synagogue"
+      ],
+      "classificationMethods": [
+        "id-prefix+slug-heuristic"
+      ],
+      "kind": "council-website",
+      "status": "preview",
+      "sampleIds": [
+        "rc-lod-hlmx33s",
+        "rc-lod-h1egpvd6",
+        "rc-lod-hlfa3r3"
+      ]
+    },
+    {
+      "sourceId": "arcgis:nahariya:synagogues",
+      "file": "sources/arcgis__nahariya__synagogues.preview.json",
+      "recordCount": 68,
+      "types": [
+        "synagogue"
+      ],
+      "classificationMethods": [
+        "id-prefix"
+      ],
+      "kind": "arcgis",
+      "status": "preview",
+      "sampleIds": [
+        "arcgis:nahariya::1",
+        "arcgis:nahariya::2",
+        "arcgis:nahariya::3"
+      ]
+    },
+    {
+      "sourceId": "council:beit-shean:synagogues",
+      "file": "sources/council__beit-shean__synagogues.preview.json",
+      "recordCount": 67,
+      "types": [
+        "synagogue"
+      ],
+      "classificationMethods": [
+        "id-prefix+slug-heuristic"
+      ],
+      "kind": "council-website",
+      "status": "preview",
+      "sampleIds": [
+        "rc-beit-shean-hl9yqf2",
+        "rc-beit-shean-h12ivepq",
+        "rc-beit-shean-hphg57a"
+      ]
+    },
+    {
+      "sourceId": "council:givat-zeev:synagogues",
+      "file": "sources/council__givat-zeev__synagogues.preview.json",
+      "recordCount": 62,
+      "types": [
+        "synagogue"
+      ],
+      "classificationMethods": [
+        "id-prefix+slug-heuristic"
+      ],
+      "kind": "council-website",
+      "status": "preview",
+      "sampleIds": [
+        "rc-givat-zeev-h121gi2t",
+        "rc-givat-zeev-h155jiw8",
+        "rc-givat-zeev-h1alnmzc"
+      ]
+    },
+    {
+      "sourceId": "arcgis:jerusalem:synagogues",
+      "file": "sources/arcgis__jerusalem__synagogues.preview.json",
+      "recordCount": 58,
+      "types": [
+        "synagogue"
+      ],
+      "classificationMethods": [
+        "id-prefix"
+      ],
+      "kind": "arcgis",
+      "status": "preview",
+      "sampleIds": [
+        "arcgis:jerusalem::10",
+        "arcgis:jerusalem::14",
+        "arcgis:jerusalem::16"
+      ]
+    },
+    {
+      "sourceId": "council:givat-shmuel:synagogues",
+      "file": "sources/council__givat-shmuel__synagogues.preview.json",
+      "recordCount": 27,
+      "types": [
+        "synagogue"
+      ],
+      "classificationMethods": [
+        "id-prefix+slug-heuristic"
+      ],
+      "kind": "council-website",
+      "status": "preview",
+      "sampleIds": [
+        "rc-givat-shmuel-11662",
+        "rc-givat-shmuel-11664",
+        "rc-givat-shmuel-11666"
+      ]
+    },
+    {
+      "sourceId": "council:yehud:synagogues",
+      "file": "sources/council__yehud__synagogues.preview.json",
+      "recordCount": 27,
+      "types": [
+        "synagogue"
+      ],
+      "classificationMethods": [
+        "id-prefix+slug-heuristic"
+      ],
+      "kind": "council-website",
+      "status": "preview",
+      "sampleIds": [
+        "rc-yehud-hmi5h6z",
+        "rc-yehud-hhwdr6x",
+        "rc-yehud-h1w1pyzz"
+      ]
+    },
+    {
+      "sourceId": "council:marom-galil:synagogues",
+      "file": "sources/council__marom-galil__synagogues.preview.json",
+      "recordCount": 25,
+      "types": [
+        "synagogue"
+      ],
+      "classificationMethods": [
+        "id-prefix+slug-heuristic"
+      ],
+      "kind": "council-website",
+      "status": "preview",
+      "sampleIds": [
+        "rc-marom-galil-hyv8qt4",
+        "rc-marom-galil-hpbuirp",
+        "rc-marom-galil-h18qndr4"
+      ]
+    },
+    {
+      "sourceId": "osm:mikvahs",
+      "file": "sources/osm__mikvahs.preview.json",
+      "recordCount": 24,
+      "types": [
+        "mikveh"
+      ],
+      "classificationMethods": [
+        "provenance"
+      ],
+      "kind": "osm",
+      "status": "preview",
+      "sampleIds": [
+        "mikveh-osm-node-1121963205",
+        "mikveh-osm-node-1121965571",
+        "mikveh-osm-node-1435545794"
+      ]
+    },
+    {
+      "sourceId": "council:merchavim:synagogues",
+      "file": "sources/council__merchavim__synagogues.preview.json",
+      "recordCount": 21,
+      "types": [
+        "synagogue"
+      ],
+      "classificationMethods": [
+        "id-prefix+slug-heuristic"
+      ],
+      "kind": "council-website",
+      "status": "preview",
+      "sampleIds": [
+        "rc-merchavim-h1as1t5c",
+        "rc-merchavim-h1lzi80t",
+        "rc-merchavim-h80pk05"
+      ]
+    },
+    {
+      "sourceId": "council:ganei-tikva:synagogues",
+      "file": "sources/council__ganei-tikva__synagogues.preview.json",
+      "recordCount": 19,
+      "types": [
+        "synagogue"
+      ],
+      "classificationMethods": [
+        "id-prefix+slug-heuristic"
+      ],
+      "kind": "council-website",
+      "status": "preview",
+      "sampleIds": [
+        "rc-ganei-tikva-h13dr6um",
+        "rc-ganei-tikva-h1szm0gf",
+        "rc-ganei-tikva-hcadivi"
+      ]
+    },
+    {
+      "sourceId": "council:kiryat-arba:synagogues",
+      "file": "sources/council__kiryat-arba__synagogues.preview.json",
+      "recordCount": 19,
+      "types": [
+        "synagogue"
+      ],
+      "classificationMethods": [
+        "id-prefix+slug-heuristic"
+      ],
+      "kind": "council-website",
+      "status": "preview",
+      "sampleIds": [
+        "rc-kiryat-arba-h2t11hy",
+        "rc-kiryat-arba-hc6jw6i",
+        "rc-kiryat-arba-h1ejjutw"
+      ]
+    },
+    {
+      "sourceId": "council:marom-galil:mikvah",
+      "file": "sources/council__marom-galil__mikvah.preview.json",
+      "recordCount": 19,
+      "types": [
+        "mikveh"
+      ],
+      "classificationMethods": [
+        "id-prefix+slug-heuristic"
+      ],
+      "kind": "council-website",
+      "status": "preview",
+      "sampleIds": [
+        "rc-mikvah-marom-galil-hxceif",
+        "rc-mikvah-marom-galil-hvhdjz8",
+        "rc-mikvah-marom-galil-h1ag9ex8"
+      ]
+    },
+    {
+      "sourceId": "arcgis:modiin:synagogues",
+      "file": "sources/arcgis__modiin__synagogues.preview.json",
+      "recordCount": 18,
+      "types": [
+        "synagogue"
+      ],
+      "classificationMethods": [
+        "id-prefix"
+      ],
+      "kind": "arcgis",
+      "status": "preview",
+      "sampleIds": [
+        "arcgis:modiin::205",
+        "arcgis:modiin::215",
+        "arcgis:modiin::216"
+      ]
+    },
+    {
+      "sourceId": "arcgis:nof-hagalil:synagogues",
+      "file": "sources/arcgis__nof-hagalil__synagogues.preview.json",
+      "recordCount": 15,
+      "types": [
+        "synagogue"
+      ],
+      "classificationMethods": [
+        "id-prefix"
+      ],
+      "kind": "arcgis",
+      "status": "preview",
+      "sampleIds": [
+        "arcgis:nof-hagalil::1",
+        "arcgis:nof-hagalil::2",
+        "arcgis:nof-hagalil::3"
+      ]
+    },
+    {
+      "sourceId": "council:netanya:mikvah",
+      "file": "sources/council__netanya__mikvah.preview.json",
+      "recordCount": 13,
+      "types": [
+        "mikveh"
+      ],
+      "classificationMethods": [
+        "id-prefix+slug-heuristic"
+      ],
+      "kind": "council-website",
+      "status": "preview",
+      "sampleIds": [
+        "rc-mikvah-netanya-12533",
+        "rc-mikvah-netanya-12536",
+        "rc-mikvah-netanya-12539"
+      ]
+    },
+    {
+      "sourceId": "council:petah-tikva:mikvah",
+      "file": "sources/council__petah-tikva__mikvah.preview.json",
+      "recordCount": 12,
+      "types": [
+        "mikveh"
+      ],
+      "classificationMethods": [
+        "id-prefix+slug-heuristic"
+      ],
+      "kind": "council-website",
+      "status": "preview",
+      "sampleIds": [
+        "rc-mikvah-petah-tikva-13598",
+        "rc-mikvah-petah-tikva-9647",
+        "rc-mikvah-petah-tikva-9648"
+      ]
+    },
+    {
+      "sourceId": "council:merchavim:mikvah",
+      "file": "sources/council__merchavim__mikvah.preview.json",
+      "recordCount": 7,
+      "types": [
+        "mikveh"
+      ],
+      "classificationMethods": [
+        "id-prefix+slug-heuristic"
+      ],
+      "kind": "council-website",
+      "status": "preview",
+      "sampleIds": [
+        "rc-mikvah-merchavim-h16j9y9a",
+        "rc-mikvah-merchavim-h8apml1",
+        "rc-mikvah-merchavim-htbvx1f"
+      ]
+    },
+    {
+      "sourceId": "council:kiryat-arba:mikvah",
+      "file": "sources/council__kiryat-arba__mikvah.preview.json",
+      "recordCount": 3,
+      "types": [
+        "mikveh"
+      ],
+      "classificationMethods": [
+        "id-prefix+slug-heuristic"
+      ],
+      "kind": "council-website",
+      "status": "preview",
+      "sampleIds": [
+        "rc-mikvah-kiryat-arba-hbdvsem",
+        "rc-mikvah-kiryat-arba-h1ftm32k",
+        "rc-mikvah-kiryat-arba-hortmzl"
+      ]
+    },
+    {
+      "sourceId": "council:givat-zeev:mikvah",
+      "file": "sources/council__givat-zeev__mikvah.preview.json",
+      "recordCount": 2,
+      "types": [
+        "mikveh"
+      ],
+      "classificationMethods": [
+        "id-prefix+slug-heuristic"
+      ],
+      "kind": "council-website",
+      "status": "preview",
+      "sampleIds": [
+        "rc-mikvah-givat-zeev-h1ib1png",
+        "rc-mikvah-givat-zeev-hubfbm3"
+      ]
+    },
+    {
+      "sourceId": "council:beer-sheva:mikvah",
+      "file": "sources/council__beer-sheva__mikvah.preview.json",
+      "recordCount": 1,
+      "types": [
+        "mikveh"
+      ],
+      "classificationMethods": [
+        "id-prefix+slug-heuristic"
+      ],
+      "kind": "council-website",
+      "status": "preview",
+      "sampleIds": [
+        "rc-mikvah-beer-sheva-h1yqrkj0"
+      ]
+    },
+    {
+      "sourceId": "council:rosh-haayin:mikvah",
+      "file": "sources/council__rosh-haayin__mikvah.preview.json",
+      "recordCount": 1,
+      "types": [
+        "mikveh"
+      ],
+      "classificationMethods": [
+        "id-prefix+slug-heuristic"
+      ],
+      "kind": "council-website",
+      "status": "preview",
+      "sampleIds": [
+        "rc-mikvah-rosh-haayin-h1joer6o"
+      ]
+    },
+    {
+      "sourceId": "council:beit-shean:mikvah",
+      "file": "sources/council__beit-shean__mikvah.preview.json",
+      "recordCount": 1,
+      "types": [
+        "mikveh"
+      ],
+      "classificationMethods": [
+        "id-prefix+slug-heuristic"
+      ],
+      "kind": "council-website",
+      "status": "preview",
+      "sampleIds": [
+        "rc-mikvah-beit-shean-h17b0l15"
+      ]
+    },
+    {
+      "sourceId": "council:ganei-tikva:mikvah",
+      "file": "sources/council__ganei-tikva__mikvah.preview.json",
+      "recordCount": 1,
+      "types": [
+        "mikveh"
+      ],
+      "classificationMethods": [
+        "id-prefix+slug-heuristic"
+      ],
+      "kind": "council-website",
+      "status": "preview",
+      "sampleIds": [
+        "rc-mikvah-ganei-tikva-2975"
+      ]
+    },
+    {
+      "sourceId": "council:sderot:mikvah",
+      "file": "sources/council__sderot__mikvah.preview.json",
+      "recordCount": 1,
+      "types": [
+        "mikveh"
+      ],
+      "classificationMethods": [
+        "id-prefix+slug-heuristic"
+      ],
+      "kind": "council-website",
+      "status": "preview",
+      "sampleIds": [
+        "rc-mikvah-sderot-hu3sxrx"
+      ]
+    },
+    {
+      "sourceId": "gis:tel-aviv:mikvaot",
+      "file": "sources/gis__tel-aviv__mikvaot.preview.json",
+      "recordCount": 1,
+      "types": [
+        "mikveh"
+      ],
+      "classificationMethods": [
+        "provenance"
+      ],
+      "kind": "municipal-gis",
+      "status": "preview",
+      "sampleIds": [
+        "mikveh-tlv-16"
+      ]
+    }
+  ]
+}

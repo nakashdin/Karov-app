@@ -1,0 +1,66 @@
+{
+  "generatedNote": "PHASE 3 DRY-RUN — staging only. No production write, no merge, no overwrite of government records, no geocoding. Additive new-candidate staging.",
+  "typeDecision": {
+    "sabaiAppsType": "mikvah",
+    "canonicalType": "mikveh",
+    "rule": "Mapped 'mikvah' → 'mikveh' because the app ImportType and the unified validator (VALID_TYPES) both use 'mikveh'. SabaiApps spelling is preserved in raw/provenance."
+  },
+  "batchId": "sabaiapps-mikvah-new-2026-06-19",
+  "adapterId": "sabaiapps-mikvah-v1",
+  "importDecision": "add_new_candidate",
+  "inputRecords": 120,
+  "newRecordCandidates": 72,
+  "stagedRecords": 72,
+  "excludedRecords": 48,
+  "excludedByClassification": {
+    "probable_match": 19,
+    "exact_match": 20,
+    "requires_manual_review": 5,
+    "ambiguous": 4
+  },
+  "recordsWithCoordinates": 71,
+  "recordsWithoutCoordinates": 1,
+  "recordsByCity": {
+    "פתח תקווה": 12,
+    "נתניה": 13,
+    "באר שבע": 1,
+    "ראש העין": 1,
+    "לוד": 1,
+    "מרום גליל": 19,
+    "מרחבים": 15,
+    "גבעת זאב": 2,
+    "בית שאן": 2,
+    "גני תקווה": 2,
+    "קרית ארבע": 3,
+    "שדרות": 1
+  },
+  "fieldCoverage": {
+    "name": 100,
+    "city": 100,
+    "address": 97,
+    "coordinates": 99,
+    "phone": 32,
+    "openingHours": 17,
+    "category": 35,
+    "balanit": 15,
+    "sourceUrl": 100
+  },
+  "validation": {
+    "validatedAgainst": "unified/pipeline/validation.ts runValidation (defaultRules)",
+    "passed": 72,
+    "failedWithErrors": 0,
+    "errorSamples": [],
+    "warnings": 2,
+    "warningsByRule": {
+      "address-present": 2
+    }
+  },
+  "readiness": {
+    "stagingStatus": "ingested",
+    "nextGate": "geocoding → deduplicated → pending_review",
+    "readyForReview": true,
+    "note": "All staged records passed automated validation; ready to enter the review queue (geocoding is a separate later gate)."
+  },
+  "dryRun": true,
+  "liveDataTouched": false
+}

@@ -1,0 +1,66 @@
+{
+  "generatedNote": "PHASE 18 DRY-RUN — no DB write, no publish, no rebuild. Compared against live 556 + full gov 606.",
+  "sourcesAttempted": 3,
+  "sourcesSuccessful": 3,
+  "recordsExtracted": 63,
+  "classification": {
+    "exact_match": 0,
+    "probable_match": 0,
+    "new_record": 49,
+    "enrichment_candidate": 14,
+    "manual_review": 0
+  },
+  "trulyNewMikvehs": 49,
+  "enrichmentOpportunities": 14,
+  "duplicates": 0,
+  "manualReview": 0,
+  "fieldCoverage": {
+    "name": 100,
+    "city": 100,
+    "address": 87,
+    "phone": 63,
+    "coordinates": 100,
+    "gender": 33
+  },
+  "newByCity": {
+    "ירושלים": 42,
+    "חולון": 4,
+    "לוד": 3
+  },
+  "bySource": [
+    {
+      "key": "jerusalem",
+      "name": "המועצה הדתית ירושלים (JSON API)",
+      "coords": true,
+      "ok": true,
+      "count": 42,
+      "new": 42
+    },
+    {
+      "key": "holon-gis",
+      "name": "עיריית חולון — GIS (מקוואות)",
+      "coords": true,
+      "ok": true,
+      "count": 13,
+      "new": 4
+    },
+    {
+      "key": "lod-gis",
+      "name": "עיריית לוד — GIS (מקוואות)",
+      "coords": true,
+      "ok": true,
+      "count": 8,
+      "new": 3
+    }
+  ],
+  "liveMikvehBefore": 556,
+  "estimatedTotalAfterPhase": 605,
+  "recommendedFirstWriteBatch": {
+    "coordBearingNew": 49,
+    "note": "coordinate-bearing new records are write-ready (additive append, like Phase-16c). Address-only sources in the catalog need geocoding first."
+  },
+  "dryRun": true,
+  "liveDataTouched": false,
+  "publishPerformed": false,
+  "rebuildTouched": false
+}

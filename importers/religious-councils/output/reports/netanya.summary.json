@@ -1,0 +1,19 @@
+{
+  "council": "המועצה הדתית נתניה",
+  "variant": "waze",
+  "expectedCount": 140,
+  "fetchedCount": 140,
+  "validCount": 140,
+  "rejectedCount": 0,
+  "coordSource": "waze",
+  "withNativeCoordinates": 140,
+  "missingCoordinates": 0,
+  "duplicateSourceIds": 0,
+  "enrichedFromCards": 0,
+  "ambiguousEnrich": 0,
+  "countMatches": true,
+  "pagesFetched": 1,
+  "dryRun": true,
+  "liveDataTouched": false,
+  "generatedAt": "2026-06-18"
+}

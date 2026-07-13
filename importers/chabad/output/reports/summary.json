@@ -1,0 +1,35 @@
+{
+  "generatedNote": "Chabad-house fallback importer — DRY-RUN. Open sources only (OSM ODbL + data.gov.il amutot + Wikidata CC0). GovMap address geocoding. No live data touched, no merge, no rebuildAppDataset.",
+  "date": "2026-06-25",
+  "rawBySource": {
+    "manual": 146,
+    "osm": 32,
+    "datagov": 24,
+    "wikidata": 67
+  },
+  "rawTotal": 269,
+  "clusters": 223,
+  "geocode": {
+    "tried": 21,
+    "resolved": 0
+  },
+  "classification": {
+    "new": 61,
+    "matchChabad": 92,
+    "overlapSynagogueHeld": 22,
+    "conflictHeld": 3,
+    "nonhouseExcluded": 7,
+    "coordlessExcluded": 38
+  },
+  "writeReady": 61,
+  "writeReadyWithCity": 61,
+  "withCoords": 185,
+  "nativeCoords": 185,
+  "govmapGeocoded": 0,
+  "nominatimGeocoded": 0,
+  "coverageNote": "legal-fallback ceiling; vs ~941 national total this is partial by design",
+  "dryRun": true,
+  "liveDataTouched": false,
+  "mergePerformed": false,
+  "rebuildTouched": false
+}

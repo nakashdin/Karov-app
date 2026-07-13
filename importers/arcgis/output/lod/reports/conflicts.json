@@ -1,0 +1,42 @@
+[
+  {
+    "sourceRecordId": "arcgis:lod:49",
+    "name": "בית כנסת מקור חוכמה",
+    "existingId": "rc-lod-h1yc2a90",
+    "existingName": "מקור חכמה",
+    "distanceM": 63,
+    "nameSim": 0.33
+  },
+  {
+    "sourceRecordId": "arcgis:lod:50",
+    "name": "בית כנסת ע\"ש חי טייב",
+    "existingId": "rc-lod-h1umrb5u",
+    "existingName": "חי טייב לא מת",
+    "distanceM": 42,
+    "nameSim": 0.4
+  },
+  {
+    "sourceRecordId": "arcgis:lod:58",
+    "name": "בית כנסת בית תפילה",
+    "existingId": "rc-lod-hf9uabl",
+    "existingName": "בית התפילה",
+    "distanceM": 47,
+    "nameSim": 0.33
+  },
+  {
+    "sourceRecordId": "arcgis:lod:71",
+    "name": "בית כנסת מגן דויד",
+    "existingId": "rc-lod-h1wafl4i",
+    "existingName": "מגן דוד",
+    "distanceM": 41,
+    "nameSim": 0.33
+  },
+  {
+    "sourceRecordId": "arcgis:lod:79",
+    "name": "בית כנסת תפארת אהרן",
+    "existingId": "rc-lod-hke1i04",
+    "existingName": "תפארת אהרון",
+    "distanceM": 49,
+    "nameSim": 0.33
+  }
+]

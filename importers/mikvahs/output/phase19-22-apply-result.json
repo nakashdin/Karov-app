@@ -1,0 +1,76 @@
+{
+  "status": "SUCCESS",
+  "scope": "81 accumulated official-council mikveh records (Phase 19–22). Additive append. rebuildAppDataset NOT run. Backlog untouched. No publish. All provenance/source fields preserved.",
+  "backups": {
+    "places": "C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\places.osm.pre-phase19-22.backup.json",
+    "cities": "C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\cities.osm.pre-phase19-22.backup.json"
+  },
+  "filesModified": [
+    "src/data/generated/places.osm.json",
+    "src/data/generated/cities.osm.json"
+  ],
+  "counts": {
+    "placesBefore": 5380,
+    "placesAfter": 5461,
+    "added": 81,
+    "mikvehBefore": 615,
+    "mikvehAfter": 696,
+    "existingLost": 0,
+    "existingModified": 0,
+    "idCollisions": 0
+  },
+  "sourceBreakdown": {
+    "byPhase": {
+      "phase19": 8,
+      "phase20": 8,
+      "phase21": 17,
+      "phase22": 48
+    },
+    "byCity": {
+      "קרית גת": 5,
+      "בית שמש": 3,
+      "אשדוד": 8,
+      "בני ברק": 1,
+      "מודיעין עילית": 9,
+      "ביתר עילית": 5,
+      "אלעד": 2,
+      "חיפה": 10,
+      "טבריה": 3,
+      "נהריה": 3,
+      "עפולה": 15,
+      "קרית מוצקין": 1,
+      "קרית ביאליק": 1,
+      "קרית ים": 1,
+      "כפר סבא": 5,
+      "רעננה": 4,
+      "הרצליה": 3,
+      "צפת": 2
+    },
+    "byGender": {
+      "נשים": 55,
+      "גברים": 16,
+      "כלים": 10
+    },
+    "byCoordSource": {
+      "record-embedded": 5,
+      "govmap-ADDR_V1": 45,
+      "record-native": 31
+    }
+  },
+  "citiesAdded": [
+    "ביתר עילית",
+    "קרית ים"
+  ],
+  "reconciliation": "EXACT: places 5380→5461 (+81); mikveh 615→696 (+81); 0 lost; 0 modified; 0 id collisions; 465→467 cities (+2, 0 lost).",
+  "rollback": [
+    "copy \"C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\places.osm.pre-phase19-22.backup.json\" → \"C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\places.osm.json\"",
+    "copy \"C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\cities.osm.pre-phase19-22.backup.json\" → \"C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\cities.osm.json\"",
+    "do NOT run rebuildAppDataset",
+    "verify: places returns to 5380, mikveh to 615, cities to 465"
+  ],
+  "dryRun": false,
+  "publishPerformed": false,
+  "additiveOnly": true,
+  "rebuildRun": false,
+  "backlogTouched": false
+}

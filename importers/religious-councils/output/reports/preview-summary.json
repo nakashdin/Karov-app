@@ -1,0 +1,12 @@
+{
+  "councilRecords": 744,
+  "existingSynagogues": 1590,
+  "newRecords": 667,
+  "matchedExisting": 67,
+  "enrichedMatches": 67,
+  "conflicts": 10,
+  "suspiciousDuplicates": 0,
+  "note": "PREVIEW ONLY — no live data touched, no merge, additive-only",
+  "dryRun": true,
+  "liveDataTouched": false
+}

@@ -1,0 +1,1252 @@
+[
+  {
+    "id": "mikveh-haifa-w-32.78770_34.98994",
+    "name": "מקווה אחוזה",
+    "type": "mikveh",
+    "cityId": "חיפה",
+    "address": "שדרות סיני 16, חיפה",
+    "location": {
+      "latitude": 32.7876967,
+      "longitude": 34.9899432
+    },
+    "source": "seed",
+    "phone": "046965773",
+    "mikvehGender": "נשים",
+    "attendant": "רחל עלמן; זהבה בן צור",
+    "sourceName": "הרבנות והמועצה הדתית חיפה",
+    "sourceUrl": "https://www.mdhaifa.org/מקווה-אחוזה",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native",
+      "accessibility": "מונגש",
+      "provenance": {
+        "sourceId": "council:haifa:mikvah",
+        "sourceUrl": "https://www.mdhaifa.org/מקווה-אחוזה",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-haifa-w-32.80465_34.98854",
+    "name": "מקווה מרכז הכרמל",
+    "type": "mikveh",
+    "cityId": "חיפה",
+    "address": "דרך הים 10, חיפה",
+    "location": {
+      "latitude": 32.80465,
+      "longitude": 34.9885397
+    },
+    "source": "seed",
+    "phone": "048387816",
+    "mikvehGender": "נשים",
+    "attendant": "יעל פייגנבאום; צופיה פרץ",
+    "sourceName": "הרבנות והמועצה הדתית חיפה",
+    "sourceUrl": "https://www.mdhaifa.org/מקווה-מרכז-הכרמל",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native",
+      "provenance": {
+        "sourceId": "council:haifa:mikvah",
+        "sourceUrl": "https://www.mdhaifa.org/מקווה-מרכז-הכרמל",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-haifa-w-32.82692_34.96533",
+    "name": "מקווה עין הים",
+    "type": "mikveh",
+    "cityId": "חיפה",
+    "address": "ההגה 7, חיפה",
+    "location": {
+      "latitude": 32.8269246,
+      "longitude": 34.9653287
+    },
+    "source": "seed",
+    "phone": "048539212",
+    "mikvehGender": "נשים",
+    "attendant": "אסתר שמואל",
+    "sourceName": "הרבנות והמועצה הדתית חיפה",
+    "sourceUrl": "https://www.mdhaifa.org/מקווה-עין-הים",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native",
+      "accessibility": "מונגש",
+      "provenance": {
+        "sourceId": "council:haifa:mikvah",
+        "sourceUrl": "https://www.mdhaifa.org/מקווה-עין-הים",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-haifa-w-32.80432_35.00161",
+    "name": "מקווה הדר",
+    "type": "mikveh",
+    "cityId": "חיפה",
+    "address": "בצלאל 2, חיפה",
+    "location": {
+      "latitude": 32.8043218,
+      "longitude": 35.0016076
+    },
+    "source": "seed",
+    "phone": "048629497",
+    "mikvehGender": "נשים",
+    "attendant": "זהבה אזולאי",
+    "sourceName": "הרבנות והמועצה הדתית חיפה",
+    "sourceUrl": "https://www.mdhaifa.org/מקווה-הדר",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native",
+      "accessibility": "מונגש לנכות (בתיאום מראש)",
+      "provenance": {
+        "sourceId": "council:haifa:mikvah",
+        "sourceUrl": "https://www.mdhaifa.org/מקווה-הדר",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-haifa-w-32.81571_35.05190",
+    "name": "מקווה קריית חיים",
+    "type": "mikveh",
+    "cityId": "חיפה",
+    "address": "הראשונים 55, חיפה",
+    "location": {
+      "latitude": 32.8157054,
+      "longitude": 35.0519023
+    },
+    "source": "seed",
+    "phone": "048490391",
+    "mikvehGender": "נשים",
+    "attendant": "אסנת בוטינסקי",
+    "sourceName": "הרבנות והמועצה הדתית חיפה",
+    "sourceUrl": "https://www.mdhaifa.org/מקווה-קריית-חיים",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native",
+      "accessibility": "מונגש",
+      "provenance": {
+        "sourceId": "council:haifa:mikvah",
+        "sourceUrl": "https://www.mdhaifa.org/מקווה-קריית-חיים",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-haifa-w-32.82625_34.98738",
+    "name": "מקווה קריית אליהו",
+    "type": "mikveh",
+    "cityId": "חיפה",
+    "address": "תל אביב 37, חיפה",
+    "location": {
+      "latitude": 32.826252,
+      "longitude": 34.9873756
+    },
+    "source": "seed",
+    "phone": "048516128",
+    "mikvehGender": "נשים",
+    "attendant": "פנינה ברדא; עליזה אזולאי",
+    "sourceName": "הרבנות והמועצה הדתית חיפה",
+    "sourceUrl": "https://www.mdhaifa.org/מקווה-קריית-אליהו",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native",
+      "provenance": {
+        "sourceId": "council:haifa:mikvah",
+        "sourceUrl": "https://www.mdhaifa.org/מקווה-קריית-אליהו",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-haifa-w-32.80777_34.96488",
+    "name": "מקווה נווה דוד",
+    "type": "mikveh",
+    "cityId": "חיפה",
+    "address": "ציקלג 8, חיפה",
+    "location": {
+      "latitude": 32.8077746,
+      "longitude": 34.9648804
+    },
+    "source": "seed",
+    "phone": "048101898",
+    "mikvehGender": "נשים",
+    "attendant": "אילנה לוי; שמחה טימסטית",
+    "sourceName": "הרבנות והמועצה הדתית חיפה",
+    "sourceUrl": "https://www.mdhaifa.org/מקווה-נווה-דוד",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native",
+      "provenance": {
+        "sourceId": "council:haifa:mikvah",
+        "sourceUrl": "https://www.mdhaifa.org/מקווה-נווה-דוד",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-haifa-w-32.78816_35.01896",
+    "name": "מקווה נווה שאנן - שאול",
+    "type": "mikveh",
+    "cityId": "חיפה",
+    "address": "שאול 22, חיפה",
+    "location": {
+      "latitude": 32.7881585,
+      "longitude": 35.0189591
+    },
+    "source": "seed",
+    "phone": "048664703",
+    "mikvehGender": "נשים",
+    "attendant": "רחל אלחרר",
+    "sourceName": "הרבנות והמועצה הדתית חיפה",
+    "sourceUrl": "https://www.mdhaifa.org/מקווה-נוה-שאנן-שאול",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native",
+      "accessibility": "בשבתות/ערבי חג בתיאום מראש",
+      "provenance": {
+        "sourceId": "council:haifa:mikvah",
+        "sourceUrl": "https://www.mdhaifa.org/מקווה-נוה-שאנן-שאול",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-haifa-w-32.79665_35.00903",
+    "name": "מקווה נווה שאנן - חסדי טהרה",
+    "type": "mikveh",
+    "cityId": "חיפה",
+    "address": "יד לבנים 212, חיפה",
+    "location": {
+      "latitude": 32.7966456,
+      "longitude": 35.0090269
+    },
+    "source": "seed",
+    "phone": "048222203",
+    "mikvehGender": "נשים",
+    "sourceName": "הרבנות והמועצה הדתית חיפה",
+    "sourceUrl": "https://www.mdhaifa.org/מקווה-נווה-שאנן-חסדי-טהרה",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native",
+      "accessibility": "בשבתות/ערבי חג בתיאום מראש",
+      "provenance": {
+        "sourceId": "council:haifa:mikvah",
+        "sourceUrl": "https://www.mdhaifa.org/מקווה-נווה-שאנן-חסדי-טהרה",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-haifa-w-32.83333_35.07010",
+    "name": "מקווה קריית שמואל",
+    "type": "mikveh",
+    "cityId": "חיפה",
+    "address": "נתיב הלולב, חיפה",
+    "location": {
+      "latitude": 32.8333305,
+      "longitude": 35.0701007
+    },
+    "source": "seed",
+    "phone": "048710198",
+    "mikvehGender": "נשים",
+    "attendant": "אביבית יצחק",
+    "sourceName": "הרבנות והמועצה הדתית חיפה",
+    "sourceUrl": "https://www.mdhaifa.org/מקווה-קריית-שמואל",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native",
+      "accessibility": "בשבתות/ערבי חג בתיאום מראש",
+      "provenance": {
+        "sourceId": "council:haifa:mikvah",
+        "sourceUrl": "https://www.mdhaifa.org/מקווה-קריית-שמואל",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-tiberias-w-32.79489_35.53224",
+    "name": "מקווה נשים קרית שמואל",
+    "type": "mikveh",
+    "cityId": "טבריה",
+    "address": "ורנר 5, קרית שמואל, טבריה",
+    "location": {
+      "latitude": 32.794885441610674,
+      "longitude": 35.532242924377684
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "mikvehGender": "נשים",
+    "sourceName": "המועצה הדתית טבריה",
+    "sourceUrl": "https://mdt.org.il/mikve/קרית-שמואל/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "provenance": {
+        "sourceId": "council:tiberias:mikvah",
+        "sourceUrl": "https://mdt.org.il/mikve/קרית-שמואל/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-tiberias-m-32.79489_35.53224",
+    "name": "מקווה גברים קרית שמואל",
+    "type": "mikveh",
+    "cityId": "טבריה",
+    "address": "ורנר 5, קרית שמואל, טבריה",
+    "location": {
+      "latitude": 32.794885441610674,
+      "longitude": 35.532242924377684
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "mikvehGender": "גברים",
+    "sourceName": "המועצה הדתית טבריה",
+    "sourceUrl": "https://mdt.org.il/mikve/קרית-שמואל-2/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "provenance": {
+        "sourceId": "council:tiberias:mikvah",
+        "sourceUrl": "https://mdt.org.il/mikve/קרית-שמואל-2/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-tiberias-w-32.78457_35.52883",
+    "name": "מקווה מורדות",
+    "type": "mikveh",
+    "cityId": "טבריה",
+    "address": "צאלון 33, מורדות, טבריה",
+    "location": {
+      "latitude": 32.78457492253673,
+      "longitude": 35.5288344770742
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "mikvehGender": "נשים",
+    "sourceName": "המועצה הדתית טבריה",
+    "sourceUrl": "https://mdt.org.il/mikve/מורדות/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "provenance": {
+        "sourceId": "council:tiberias:mikvah",
+        "sourceUrl": "https://mdt.org.il/mikve/מורדות/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-nahariya-w-33.00468_35.10530",
+    "name": "מקווה נשים נהריה הירוקה",
+    "type": "mikveh",
+    "cityId": "נהריה",
+    "address": "אשכול 47, נהריה",
+    "location": {
+      "latitude": 33.00467730489151,
+      "longitude": 35.105296141961254
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "phone": "049823860",
+    "mikvehGender": "נשים",
+    "attendant": "יפעת מלכה; אפרת לביא",
+    "sourceName": "המועצה הדתית נהריה",
+    "sourceUrl": "http://www.mdnahariya.co.il/מקווה-נשים-נהריה-הירוקה",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "provenance": {
+        "sourceId": "council:nahariya:mikvah",
+        "sourceUrl": "http://www.mdnahariya.co.il/מקווה-נשים-נהריה-הירוקה",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-nahariya-w-32.99046_35.09237",
+    "name": "מקווה פקודת אלעזר",
+    "type": "mikveh",
+    "cityId": "נהריה",
+    "address": "הלוטוס 97, נהריה",
+    "location": {
+      "latitude": 32.99046285394772,
+      "longitude": 35.092373000877394
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "phone": "049920385",
+    "mikvehGender": "נשים",
+    "attendant": "ענת פינטו",
+    "sourceName": "המועצה הדתית נהריה",
+    "sourceUrl": "http://www.mdnahariya.co.il/מקווה-פקודת-אלעזר",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "provenance": {
+        "sourceId": "council:nahariya:mikvah",
+        "sourceUrl": "http://www.mdnahariya.co.il/מקווה-פקודת-אלעזר",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-nahariya-w-33.01790_35.09488",
+    "name": "מקווה עמידר - נווה אלון",
+    "type": "mikveh",
+    "cityId": "נהריה",
+    "address": "יבנה 5, נהריה",
+    "location": {
+      "latitude": 33.0179027166751,
+      "longitude": 35.09487761294852
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "phone": "048602040",
+    "mikvehGender": "נשים",
+    "attendant": "יפעת מלכה",
+    "sourceName": "המועצה הדתית נהריה",
+    "sourceUrl": "http://www.mdnahariya.co.il/מקווה-עמידר--נווה-אלון",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "accessibility": "מונגש חלקית",
+      "provenance": {
+        "sourceId": "council:nahariya:mikvah",
+        "sourceUrl": "http://www.mdnahariya.co.il/מקווה-עמידר--נווה-אלון",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-afula-w-32.61505_35.30874",
+    "name": "מקווה באר ציפורה (רובע יזרעאל)",
+    "type": "mikveh",
+    "cityId": "עפולה",
+    "address": "ספיר 5, עפולה",
+    "location": {
+      "latitude": 32.615054,
+      "longitude": 35.308738
+    },
+    "source": "seed",
+    "phone": "048149030",
+    "mikvehGender": "נשים",
+    "attendant": "רינת חטב",
+    "sourceName": "המועצה הדתית עפולה",
+    "sourceUrl": "https://mdafula.org.il/hope/56",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native",
+      "accessibility": "אין נגישות",
+      "provenance": {
+        "sourceId": "council:afula:mikvah",
+        "sourceUrl": "https://mdafula.org.il/hope/56",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-afula-w-32.62470_35.33062",
+    "name": "מקווה באר משה (גבעת המורה)",
+    "type": "mikveh",
+    "cityId": "עפולה",
+    "address": "בן יהודה 19, עפולה",
+    "location": {
+      "latitude": 32.6247034,
+      "longitude": 35.330623
+    },
+    "source": "seed",
+    "phone": "046421617",
+    "mikvehGender": "נשים",
+    "attendant": "שושי קרץ",
+    "sourceName": "המועצה הדתית עפולה",
+    "sourceUrl": "https://mdafula.org.il/hope/55",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native",
+      "accessibility": "אין נגישות",
+      "provenance": {
+        "sourceId": "council:afula:mikvah",
+        "sourceUrl": "https://mdafula.org.il/hope/55",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-afula-w-32.61666_35.32704",
+    "name": "מקווה אוצרות יוסף (נוף יזרעאל)",
+    "type": "mikveh",
+    "cityId": "עפולה",
+    "address": "פעמונית 6, עפולה",
+    "location": {
+      "latitude": 32.6166634,
+      "longitude": 35.3270406
+    },
+    "source": "seed",
+    "phone": "046319792",
+    "mikvehGender": "נשים",
+    "attendant": "מעיין אביטן",
+    "sourceName": "המועצה הדתית עפולה",
+    "sourceUrl": "https://mdafula.org.il/hope/54",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native",
+      "accessibility": "נגיש",
+      "provenance": {
+        "sourceId": "council:afula:mikvah",
+        "sourceUrl": "https://mdafula.org.il/hope/54",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-afula-w-32.62866_35.32091",
+    "name": "מקווה עפולה עילית",
+    "type": "mikveh",
+    "cityId": "עפולה",
+    "address": "בורוכוב 19, עפולה",
+    "location": {
+      "latitude": 32.6286626,
+      "longitude": 35.3209133
+    },
+    "source": "seed",
+    "phone": "046594330",
+    "mikvehGender": "נשים",
+    "attendant": "ברכה שטיגליץ",
+    "sourceName": "המועצה הדתית עפולה",
+    "sourceUrl": "https://mdafula.org.il/hope/53",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native",
+      "accessibility": "אין נגישות",
+      "provenance": {
+        "sourceId": "council:afula:mikvah",
+        "sourceUrl": "https://mdafula.org.il/hope/53",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-afula-w-32.60310_35.28802",
+    "name": "מקווה אור מרגלית (קינמון)",
+    "type": "mikveh",
+    "cityId": "עפולה",
+    "address": "יעקב קינמון 25, עפולה",
+    "location": {
+      "latitude": 32.6031031,
+      "longitude": 35.2880188
+    },
+    "source": "seed",
+    "phone": "046597839",
+    "mikvehGender": "נשים",
+    "attendant": "מרגלית פרנקל",
+    "sourceName": "המועצה הדתית עפולה",
+    "sourceUrl": "https://mdafula.org.il/hope/52",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native",
+      "accessibility": "אין נגישות",
+      "provenance": {
+        "sourceId": "council:afula:mikvah",
+        "sourceUrl": "https://mdafula.org.il/hope/52",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-afula-w-32.60887_35.29716",
+    "name": "מקווה מעלות מיכל (כורש)",
+    "type": "mikveh",
+    "cityId": "עפולה",
+    "address": "כורש 16, עפולה",
+    "location": {
+      "latitude": 32.6088727,
+      "longitude": 35.2971565
+    },
+    "source": "seed",
+    "phone": "046400100",
+    "mikvehGender": "נשים",
+    "attendant": "רות כהן",
+    "sourceName": "המועצה הדתית עפולה",
+    "sourceUrl": "https://mdafula.org.il/hope/51",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native",
+      "accessibility": "נגיש",
+      "provenance": {
+        "sourceId": "council:afula:mikvah",
+        "sourceUrl": "https://mdafula.org.il/hope/51",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-afula-m-32.62866_35.32091",
+    "name": "מקווה גברים עפולה עילית",
+    "type": "mikveh",
+    "cityId": "עפולה",
+    "address": "בורוכוב 19, עפולה",
+    "location": {
+      "latitude": 32.6286626,
+      "longitude": 35.3209133
+    },
+    "source": "seed",
+    "mikvehGender": "גברים",
+    "attendant": "אלון כהן",
+    "sourceName": "המועצה הדתית עפולה",
+    "sourceUrl": "https://mdafula.org.il/hope/67",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native",
+      "accessibility": "אין נגישות",
+      "provenance": {
+        "sourceId": "council:afula:mikvah",
+        "sourceUrl": "https://mdafula.org.il/hope/67",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-afula-m-32.62470_35.33062",
+    "name": "מקווה גברים באר משה",
+    "type": "mikveh",
+    "cityId": "עפולה",
+    "address": "בן יהודה 19, עפולה",
+    "location": {
+      "latitude": 32.6247034,
+      "longitude": 35.330623
+    },
+    "source": "seed",
+    "mikvehGender": "גברים",
+    "attendant": "אלון כהן",
+    "sourceName": "המועצה הדתית עפולה",
+    "sourceUrl": "https://mdafula.org.il/hope/66",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native",
+      "accessibility": "אין נגישות",
+      "provenance": {
+        "sourceId": "council:afula:mikvah",
+        "sourceUrl": "https://mdafula.org.il/hope/66",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-afula-k-32.62574_35.32493",
+    "name": "מקווה כלים אהל יעקב",
+    "type": "mikveh",
+    "cityId": "עפולה",
+    "address": "אבן גבירול, עפולה",
+    "location": {
+      "latitude": 32.625736,
+      "longitude": 35.324934
+    },
+    "source": "seed",
+    "mikvehGender": "כלים",
+    "sourceName": "המועצה הדתית עפולה",
+    "sourceUrl": "https://mdafula.org.il/hope/82",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native",
+      "accessibility": "נגיש",
+      "provenance": {
+        "sourceId": "council:afula:mikvah",
+        "sourceUrl": "https://mdafula.org.il/hope/82",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-afula-k-32.62413_35.32467",
+    "name": "מקווה כלים רוטשילד",
+    "type": "mikveh",
+    "cityId": "עפולה",
+    "address": "השופטים 1, עפולה",
+    "location": {
+      "latitude": 32.62412719704328,
+      "longitude": 35.3246743135048
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "mikvehGender": "כלים",
+    "sourceName": "המועצה הדתית עפולה",
+    "sourceUrl": "https://mdafula.org.il/hope/81",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "accessibility": "נגיש",
+      "provenance": {
+        "sourceId": "council:afula:mikvah",
+        "sourceUrl": "https://mdafula.org.il/hope/81",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-afula-k-32.63657_35.31698",
+    "name": "מקווה כלים היכל השבעה",
+    "type": "mikveh",
+    "cityId": "עפולה",
+    "address": "האלה 3, עפולה",
+    "location": {
+      "latitude": 32.636571,
+      "longitude": 35.3169801
+    },
+    "source": "seed",
+    "mikvehGender": "כלים",
+    "sourceName": "המועצה הדתית עפולה",
+    "sourceUrl": "https://mdafula.org.il/hope/80",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native",
+      "accessibility": "נגיש",
+      "provenance": {
+        "sourceId": "council:afula:mikvah",
+        "sourceUrl": "https://mdafula.org.il/hope/80",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-afula-k-32.61427_35.29514",
+    "name": "מקווה כלים באר דוד",
+    "type": "mikveh",
+    "cityId": "עפולה",
+    "address": "דפנה 8, עפולה",
+    "location": {
+      "latitude": 32.614273,
+      "longitude": 35.2951404
+    },
+    "source": "seed",
+    "mikvehGender": "כלים",
+    "sourceName": "המועצה הדתית עפולה",
+    "sourceUrl": "https://mdafula.org.il/hope/78",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native",
+      "accessibility": "נגיש",
+      "provenance": {
+        "sourceId": "council:afula:mikvah",
+        "sourceUrl": "https://mdafula.org.il/hope/78",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-afula-k-32.63325_35.32913",
+    "name": "מקווה כלים עטרת יצחק",
+    "type": "mikveh",
+    "cityId": "עפולה",
+    "address": "צנחנים 8, עפולה",
+    "location": {
+      "latitude": 32.6332469,
+      "longitude": 35.3291309
+    },
+    "source": "seed",
+    "mikvehGender": "כלים",
+    "sourceName": "המועצה הדתית עפולה",
+    "sourceUrl": "https://mdafula.org.il/hope/72",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native",
+      "accessibility": "נגיש",
+      "provenance": {
+        "sourceId": "council:afula:mikvah",
+        "sourceUrl": "https://mdafula.org.il/hope/72",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-afula-k-32.62207_35.33067",
+    "name": "מקווה כלים שבת אחים",
+    "type": "mikveh",
+    "cityId": "עפולה",
+    "address": "שדמית 10, עפולה",
+    "location": {
+      "latitude": 32.622074,
+      "longitude": 35.330665
+    },
+    "source": "seed",
+    "mikvehGender": "כלים",
+    "sourceName": "המועצה הדתית עפולה",
+    "sourceUrl": "https://mdafula.org.il/hope/71",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native",
+      "accessibility": "נגיש",
+      "provenance": {
+        "sourceId": "council:afula:mikvah",
+        "sourceUrl": "https://mdafula.org.il/hope/71",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-afula-k-32.60636_35.28743",
+    "name": "מקווה כלים בית הכנסת הגדול",
+    "type": "mikveh",
+    "cityId": "עפולה",
+    "address": "יהושע חנקין 48, עפולה",
+    "location": {
+      "latitude": 32.6063567,
+      "longitude": 35.2874334
+    },
+    "source": "seed",
+    "mikvehGender": "כלים",
+    "sourceName": "המועצה הדתית עפולה",
+    "sourceUrl": "https://mdafula.org.il/hope/69",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native",
+      "accessibility": "נגיש",
+      "provenance": {
+        "sourceId": "council:afula:mikvah",
+        "sourceUrl": "https://mdafula.org.il/hope/69",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-kiryat-motzkin-m-32.82876_35.07198",
+    "name": "מקווה גברים עין ישעיהו",
+    "type": "mikveh",
+    "cityId": "קרית מוצקין",
+    "address": "גרושקביץ 1, קרית מוצקין",
+    "location": {
+      "latitude": 32.82876256464685,
+      "longitude": 35.07198382763226
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "phone": "048712525",
+    "mikvehGender": "גברים",
+    "attendant": "שלמה טמסוט; שלמה שר",
+    "sourceName": "המועצה הדתית קרית מוצקין",
+    "sourceUrl": "https://www.mdmotzkin.org/mikve-man",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "accessibility": "כניסה במפלס קרקע",
+      "provenance": {
+        "sourceId": "council:kiryat-motzkin:mikvah",
+        "sourceUrl": "https://www.mdmotzkin.org/mikve-man",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-kiryat-bialik-w-32.81931_35.07934",
+    "name": "מקווה קרן קיימת (ביאליק דרום)",
+    "type": "mikveh",
+    "cityId": "קרית ביאליק",
+    "address": "קק\"ל 75, קרית ביאליק",
+    "location": {
+      "latitude": 32.81931488132059,
+      "longitude": 35.079335497402
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "mikvehGender": "נשים",
+    "attendant": "חגית",
+    "sourceName": "המועצה הדתית קרית ביאליק",
+    "sourceUrl": "https://qbialik.org.il/דת_ומסורת",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "provenance": {
+        "sourceId": "council:kiryat-bialik:mikvah",
+        "sourceUrl": "https://qbialik.org.il/דת_ומסורת",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-kiryat-yam-w-32.84759_35.06852",
+    "name": "מקווה להמן",
+    "type": "mikveh",
+    "cityId": "קרית ים",
+    "address": "להמן 15, קרית ים",
+    "location": {
+      "latitude": 32.847585698584744,
+      "longitude": 35.06851824285526
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "phone": "0779019110",
+    "mikvehGender": "נשים",
+    "attendant": "תמר חמו; אסתר מזרחי",
+    "sourceName": "עיריית קרית ים",
+    "sourceUrl": "https://www.kiryat-yam.muni.il/153/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "provenance": {
+        "sourceId": "council:kiryat-yam:mikvah",
+        "sourceUrl": "https://www.kiryat-yam.muni.il/153/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-kfar-saba-w-32.17814_34.89361",
+    "name": "מקווה קפלן - נשים",
+    "type": "mikveh",
+    "cityId": "כפר סבא",
+    "address": "מרדכי 3, שכונת קפלן, כפר סבא",
+    "location": {
+      "latitude": 32.17813591632756,
+      "longitude": 34.89361104905115
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "phone": "097656667",
+    "mikvehGender": "נשים",
+    "attendant": "גילה נג'אתי; רות אליהו",
+    "sourceName": "עיריית כפר סבא — מחלקת מקוואות",
+    "sourceUrl": "https://www.kfar-saba.muni.il/מקווה-קפלן/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "accessibility": "נגיש לנשים עם מוגבלויות",
+      "provenance": {
+        "sourceId": "council:kfar-saba:mikvah",
+        "sourceUrl": "https://www.kfar-saba.muni.il/מקווה-קפלן/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-kfar-saba-m-32.17814_34.89361",
+    "name": "מקווה קפלן - גברים",
+    "type": "mikveh",
+    "cityId": "כפר סבא",
+    "address": "מרדכי 3, שכונת קפלן, כפר סבא",
+    "location": {
+      "latitude": 32.17813591632756,
+      "longitude": 34.89361104905115
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "phone": "097905600",
+    "mikvehGender": "גברים",
+    "sourceName": "עיריית כפר סבא — מחלקת מקוואות",
+    "sourceUrl": "https://www.kfar-saba.muni.il/מקווה-קפלן-גברים/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "provenance": {
+        "sourceId": "council:kfar-saba:mikvah",
+        "sourceUrl": "https://www.kfar-saba.muni.il/מקווה-קפלן-גברים/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-kfar-saba-w-32.17687_34.91406",
+    "name": "מקווה תל חי - נשים",
+    "type": "mikveh",
+    "cityId": "כפר סבא",
+    "address": "תל חי 67, כפר סבא",
+    "location": {
+      "latitude": 32.17687195548059,
+      "longitude": 34.91406471154148
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "phone": "097660802",
+    "mikvehGender": "נשים",
+    "attendant": "בלה קדוש; לאה ביטון; שירי כהן",
+    "sourceName": "עיריית כפר סבא — מחלקת מקוואות",
+    "sourceUrl": "https://www.kfar-saba.muni.il/מקווה-תל-חי/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "provenance": {
+        "sourceId": "council:kfar-saba:mikvah",
+        "sourceUrl": "https://www.kfar-saba.muni.il/מקווה-תל-חי/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-kfar-saba-w-32.17270_34.90558",
+    "name": "מקווה בן גוריון - נשים",
+    "type": "mikveh",
+    "cityId": "כפר סבא",
+    "address": "בן גוריון 23, כפר סבא",
+    "location": {
+      "latitude": 32.17270023818041,
+      "longitude": 34.90557765574875
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "phone": "097670802",
+    "mikvehGender": "נשים",
+    "attendant": "סוזי פוגל; תמר כהן אליהו",
+    "sourceName": "עיריית כפר סבא — מחלקת מקוואות",
+    "sourceUrl": "https://www.kfar-saba.muni.il/מקווה-בן-גוריון/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "provenance": {
+        "sourceId": "council:kfar-saba:mikvah",
+        "sourceUrl": "https://www.kfar-saba.muni.il/מקווה-בן-גוריון/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-kfar-saba-m-32.17270_34.90558",
+    "name": "מקווה בן גוריון - גברים",
+    "type": "mikveh",
+    "cityId": "כפר סבא",
+    "address": "בן גוריון 23, כפר סבא",
+    "location": {
+      "latitude": 32.17270023818041,
+      "longitude": 34.90557765574875
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "phone": "097905600",
+    "mikvehGender": "גברים",
+    "attendant": "זהר אהרון",
+    "sourceName": "עיריית כפר סבא — מחלקת מקוואות",
+    "sourceUrl": "https://www.kfar-saba.muni.il/מקווה-בן-גוריון-גברים/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "provenance": {
+        "sourceId": "council:kfar-saba:mikvah",
+        "sourceUrl": "https://www.kfar-saba.muni.il/מקווה-בן-גוריון-גברים/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-raanana-m-32.18100_34.86892",
+    "name": "מקווה גברים הרצל",
+    "type": "mikveh",
+    "cityId": "רעננה",
+    "address": "הרצל 3, רעננה",
+    "location": {
+      "latitude": 32.180995,
+      "longitude": 34.868921
+    },
+    "source": "seed",
+    "mikvehGender": "גברים",
+    "sourceName": "המועצה הדתית רעננה",
+    "sourceUrl": "https://mdrn.org.il/directory-mikvah/listing/מקווה-גברים-הרצל/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native",
+      "provenance": {
+        "sourceId": "council:raanana:mikvah",
+        "sourceUrl": "https://mdrn.org.il/directory-mikvah/listing/מקווה-גברים-הרצל/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-raanana-m-32.19333_34.85514",
+    "name": "מקווה גברים פרץ",
+    "type": "mikveh",
+    "cityId": "רעננה",
+    "address": "י.ל. פרץ 30, רעננה",
+    "location": {
+      "latitude": 32.193332,
+      "longitude": 34.855138
+    },
+    "source": "seed",
+    "mikvehGender": "גברים",
+    "sourceName": "המועצה הדתית רעננה",
+    "sourceUrl": "https://mdrn.org.il/directory-mikvah/listing/מקווה-גברים-פרץ/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native",
+      "provenance": {
+        "sourceId": "council:raanana:mikvah",
+        "sourceUrl": "https://mdrn.org.il/directory-mikvah/listing/מקווה-גברים-פרץ/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-raanana-m-32.19063_34.87194",
+    "name": "מקווה גברים אלפסי",
+    "type": "mikveh",
+    "cityId": "רעננה",
+    "address": "אלחריזי 12, רעננה",
+    "location": {
+      "latitude": 32.190631,
+      "longitude": 34.871944
+    },
+    "source": "seed",
+    "mikvehGender": "גברים",
+    "sourceName": "המועצה הדתית רעננה",
+    "sourceUrl": "https://mdrn.org.il/directory-mikvah/listing/מקווה-גברים-אלפסי/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native",
+      "provenance": {
+        "sourceId": "council:raanana:mikvah",
+        "sourceUrl": "https://mdrn.org.il/directory-mikvah/listing/מקווה-גברים-אלפסי/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-raanana-k-32.18383_34.88662",
+    "name": "מקווה כלים רבוצקי",
+    "type": "mikveh",
+    "cityId": "רעננה",
+    "address": "רבוצקי 72, רעננה",
+    "location": {
+      "latitude": 32.183829,
+      "longitude": 34.886623
+    },
+    "source": "seed",
+    "mikvehGender": "כלים",
+    "sourceName": "המועצה הדתית רעננה",
+    "sourceUrl": "https://mdrn.org.il/directory-mikvah/listing/מקווה-כלים-רבוצקי/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native",
+      "provenance": {
+        "sourceId": "council:raanana:mikvah",
+        "sourceUrl": "https://mdrn.org.il/directory-mikvah/listing/מקווה-כלים-רבוצקי/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-herzliya-m-32.17619_34.81098",
+    "name": "מקווה גברים - הרצליה פיתוח",
+    "type": "mikveh",
+    "cityId": "הרצליה",
+    "address": "אהרון קציר 2, הרצליה",
+    "location": {
+      "latitude": 32.176192,
+      "longitude": 34.810978
+    },
+    "source": "seed",
+    "mikvehGender": "גברים",
+    "sourceName": "המועצה הדתית הרצליה",
+    "sourceUrl": "https://mdh.org.il/directory-mikvah/listing/מקווה-גברים-הרצליה-פיתוח/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native",
+      "provenance": {
+        "sourceId": "council:herzliya:mikvah",
+        "sourceUrl": "https://mdh.org.il/directory-mikvah/listing/מקווה-גברים-הרצליה-פיתוח/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-herzliya-m-32.17706_34.85338",
+    "name": "מקווה גברים - שביב",
+    "type": "mikveh",
+    "cityId": "הרצליה",
+    "address": "זיסו 12, הרצליה",
+    "location": {
+      "latitude": 32.177055,
+      "longitude": 34.853384
+    },
+    "source": "seed",
+    "phone": "099567917",
+    "mikvehGender": "גברים",
+    "sourceName": "המועצה הדתית הרצליה",
+    "sourceUrl": "https://mdh.org.il/directory-mikvah/listing/מקווה-גברים-שביב/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native",
+      "provenance": {
+        "sourceId": "council:herzliya:mikvah",
+        "sourceUrl": "https://mdh.org.il/directory-mikvah/listing/מקווה-גברים-שביב/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-herzliya-m-32.16629_34.84318",
+    "name": "מקווה מרכזי - גברים",
+    "type": "mikveh",
+    "cityId": "הרצליה",
+    "address": "סירקין 4, הרצליה",
+    "location": {
+      "latitude": 32.166285,
+      "longitude": 34.843176
+    },
+    "source": "seed",
+    "phone": "099511064",
+    "mikvehGender": "גברים",
+    "sourceName": "המועצה הדתית הרצליה",
+    "sourceUrl": "https://mdh.org.il/directory-mikvah/listing/מקווה-מרכזי-גברים/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native",
+      "provenance": {
+        "sourceId": "council:herzliya:mikvah",
+        "sourceUrl": "https://mdh.org.il/directory-mikvah/listing/מקווה-מרכזי-גברים/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-tzfat-w-32.96527_35.48705",
+    "name": "מקווה מאור חיים",
+    "type": "mikveh",
+    "cityId": "צפת",
+    "address": "צה\"ל 4, צפת",
+    "location": {
+      "latitude": 32.96527177028419,
+      "longitude": 35.48705162783815
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "mikvehGender": "נשים",
+    "attendant": "אסתר לוי",
+    "sourceName": "המועצה הדתית צפת",
+    "sourceUrl": "https://mdzefat.co.il/mikveh/מקווה-מאור-חיים/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "provenance": {
+        "sourceId": "council:tzfat:mikvah",
+        "sourceUrl": "https://mdzefat.co.il/mikveh/מקווה-מאור-חיים/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-tzfat-k-32.96419_35.49003",
+    "name": "מקווה כלים פאר הנצח",
+    "type": "mikveh",
+    "cityId": "צפת",
+    "address": "צה\"ל 7, צפת",
+    "location": {
+      "latitude": 32.96419430947224,
+      "longitude": 35.49003417868639
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "mikvehGender": "כלים",
+    "sourceName": "המועצה הדתית צפת",
+    "sourceUrl": "https://mdzefat.co.il/mikveh/פאר-הנצח/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "provenance": {
+        "sourceId": "council:tzfat:mikvah",
+        "sourceUrl": "https://mdzefat.co.il/mikveh/פאר-הנצח/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  }
+]

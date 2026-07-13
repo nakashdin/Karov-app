@@ -1,0 +1,146 @@
+[
+  {
+    "sourceRecordId": "arcgis:tel-aviv:568-37",
+    "name": "אוהל שלום",
+    "city": "tel-aviv",
+    "existingId": "osm-way-247081522",
+    "existingName": "אהל שלום",
+    "distanceM": 5,
+    "nameSim": 0.33
+  },
+  {
+    "sourceRecordId": "arcgis:tel-aviv:568-166",
+    "name": "היכל אהרון",
+    "city": "tel-aviv",
+    "existingId": "osm-node-5550252126",
+    "existingName": "היכל דוד",
+    "distanceM": 59,
+    "nameSim": 0.33
+  },
+  {
+    "sourceRecordId": "arcgis:tel-aviv:568-183",
+    "name": "אביר יעקב - לזכר קדושי אנטופול",
+    "city": "tel-aviv",
+    "existingId": "osm-way-200997551",
+    "existingName": "בית הכנסת לזכר יוצאי אנטופול",
+    "distanceM": 10,
+    "nameSim": 0.33
+  },
+  {
+    "sourceRecordId": "arcgis:tel-aviv:568-201",
+    "name": "המרכזי - תל ברוך",
+    "city": "tel-aviv",
+    "existingId": "osm-way-99693833",
+    "existingName": "בית-כנסת תל ברוך",
+    "distanceM": 8,
+    "nameSim": 0.5
+  },
+  {
+    "sourceRecordId": "arcgis:tel-aviv:568-236",
+    "name": "חסידי בעלזא",
+    "city": "tel-aviv",
+    "existingId": "osm-way-149963404",
+    "existingName": "חסידי בלז",
+    "distanceM": 8,
+    "nameSim": 0.33
+  },
+  {
+    "sourceRecordId": "arcgis:tel-aviv:568-237",
+    "name": "חסידי גור",
+    "city": "tel-aviv",
+    "existingId": "osm-way-149963404",
+    "existingName": "חסידי בלז",
+    "distanceM": 68,
+    "nameSim": 0.33
+  },
+  {
+    "sourceRecordId": "arcgis:tel-aviv:568-243",
+    "name": "חסידי סקרנביץ",
+    "city": "tel-aviv",
+    "existingId": "osm-way-149749007",
+    "existingName": "חסידי סוכצ׳וב",
+    "distanceM": 142,
+    "nameSim": 0.33
+  },
+  {
+    "sourceRecordId": "arcgis:tel-aviv:568-288",
+    "name": "ישיבת רשב\"י",
+    "city": "tel-aviv",
+    "existingId": "osm-way-271227229",
+    "existingName": "בי\"כ רשב\"י",
+    "distanceM": 75,
+    "nameSim": 0.33
+  },
+  {
+    "sourceRecordId": "arcgis:tel-aviv:568-403",
+    "name": "רבינו יוסף חיים",
+    "city": "tel-aviv",
+    "existingId": "osm-node-1150584841",
+    "existingName": "בי\"כ יוסף חיים",
+    "distanceM": 24,
+    "nameSim": 0.5
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:8",
+    "name": "אהל ברכה",
+    "city": "haifa",
+    "existingId": "osm-way-172584753",
+    "existingName": "אוהל ברכה",
+    "distanceM": 28,
+    "nameSim": 0.33
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:11",
+    "name": "אהל יצחק",
+    "city": "haifa",
+    "existingId": "osm-way-1124797726",
+    "existingName": "אוהל יצחק",
+    "distanceM": 6,
+    "nameSim": 0.33
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:69",
+    "name": "הגדול ברמות רמז",
+    "city": "haifa",
+    "existingId": "osm-way-98888645",
+    "existingName": "בית כנסת - הגדול רמות רמז",
+    "distanceM": 1,
+    "nameSim": 0.5
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:87",
+    "name": "היכל חנינה",
+    "city": "haifa",
+    "existingId": "osm-way-182191964",
+    "existingName": "היכל חנה",
+    "distanceM": 8,
+    "nameSim": 0.33
+  },
+  {
+    "sourceRecordId": "arcgis:ashdod:1255",
+    "name": "בית יוסף",
+    "city": "ashdod",
+    "existingId": "osm-node-11980720899",
+    "existingName": "בית נפתלי",
+    "distanceM": 92,
+    "nameSim": 0.33
+  },
+  {
+    "sourceRecordId": "arcgis:ashkelon:105",
+    "name": "אשכולי פז",
+    "city": "ashkelon",
+    "existingId": "osm-way-536450405",
+    "existingName": "משכן פז",
+    "distanceM": 3,
+    "nameSim": 0.33
+  },
+  {
+    "sourceRecordId": "arcgis:ashkelon:418",
+    "name": "משכן בוקובזה",
+    "city": "ashkelon",
+    "existingId": "osm-way-536079717",
+    "existingName": "בית כנסת משכן נתן וחיה בוקובזה",
+    "distanceM": 1,
+    "nameSim": 0.5
+  }
+]

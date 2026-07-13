@@ -1,0 +1,136 @@
+[
+  {
+    "id": "mikveh-kiryat-ono-w-32.06460_34.85186",
+    "name": "מקווה שד' קק\"ל",
+    "type": "mikveh",
+    "cityId": "קרית אונו",
+    "address": "שד' קק\"ל 19, קרית אונו",
+    "location": {
+      "latitude": 32.06459824036917,
+      "longitude": 34.85186456585862
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "phone": "037431091",
+    "openingHours": "א'-ה' 20:00–22:00; ו' 20 דק' לאחר כניסת השבת/חג למשך חצי שעה; מוצ\"ש/חג חורף 20:00–21:00, קיץ 21:00–22:00",
+    "mikvehGender": "נשים",
+    "attendant": "שירה אשכנזי 050-6953333; מירי טרוסט 052-6226225; מוריה אליהו 050-8752835",
+    "sourceName": "עיריית קריית אונו",
+    "sourceUrl": "https://www.kiryatono.muni.il/מקוואות/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "provenance": {
+        "sourceId": "council:kiryat-ono:mikvah",
+        "sourceUrl": "https://www.kiryatono.muni.il/מקוואות/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-kiryat-ono-w-32.05359_34.86038",
+    "name": "מקווה הגפן",
+    "type": "mikveh",
+    "cityId": "קרית אונו",
+    "address": "הגפן 12, קרית אונו",
+    "location": {
+      "latitude": 32.05358632308585,
+      "longitude": 34.86038417394864
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "phone": "035350973",
+    "openingHours": "א'-ה' חורף 18:00–21:00, קיץ 19:00–22:00; ו' 20 דק' לאחר כניסת השבת למשך חצי שעה; מוצ\"ש/חג שעה לאחר צאת השבת למשך שעה",
+    "mikvehGender": "נשים",
+    "attendant": "שרה מתתיהו 050-4100514; מרים קאסר 050-8462299",
+    "sourceName": "עיריית קריית אונו",
+    "sourceUrl": "https://www.kiryatono.muni.il/מקוואות/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "provenance": {
+        "sourceId": "council:kiryat-ono:mikvah",
+        "sourceUrl": "https://www.kiryatono.muni.il/מקוואות/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-kiryat-ono-m-32.06487_34.85218",
+    "name": "מקווה גברים",
+    "type": "mikveh",
+    "cityId": "קרית אונו",
+    "address": "הרצל 34, קרית אונו (צמוד לבית הכנסת \"אור ציון\")",
+    "location": {
+      "latitude": 32.06487373463482,
+      "longitude": 34.85217502978923
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "mikvehGender": "גברים",
+    "attendant": "גיל אבישר 050-7958485",
+    "sourceName": "עיריית קריית אונו",
+    "sourceUrl": "https://www.kiryatono.muni.il/מקוואות/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "provenance": {
+        "sourceId": "council:kiryat-ono:mikvah",
+        "sourceUrl": "https://www.kiryatono.muni.il/מקוואות/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-kiryat-ono-k-32.06460_34.85186",
+    "name": "מקווה כלים שד' קק\"ל",
+    "type": "mikveh",
+    "cityId": "קרית אונו",
+    "address": "שד' קק\"ל 19, קרית אונו",
+    "location": {
+      "latitude": 32.06459824036917,
+      "longitude": 34.85186456585862
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "openingHours": "פתוח כל השבוע, כל שעות היממה (מהשקיעה — נשים בלבד, מטעמי צניעות)",
+    "mikvehGender": "כלים",
+    "sourceName": "עיריית קריית אונו",
+    "sourceUrl": "https://www.kiryatono.muni.il/מקוואות/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "provenance": {
+        "sourceId": "council:kiryat-ono:mikvah",
+        "sourceUrl": "https://www.kiryatono.muni.il/מקוואות/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-kiryat-ono-k-32.05359_34.86038",
+    "name": "מקווה כלים הגפן",
+    "type": "mikveh",
+    "cityId": "קרית אונו",
+    "address": "הגפן 12, קרית אונו",
+    "location": {
+      "latitude": 32.05358632308585,
+      "longitude": 34.86038417394864
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "openingHours": "פתוח כל השבוע, כל שעות היממה (מהשקיעה — נשים בלבד, מטעמי צניעות)",
+    "mikvehGender": "כלים",
+    "sourceName": "עיריית קריית אונו",
+    "sourceUrl": "https://www.kiryatono.muni.il/מקוואות/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "provenance": {
+        "sourceId": "council:kiryat-ono:mikvah",
+        "sourceUrl": "https://www.kiryatono.muni.il/מקוואות/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  }
+]

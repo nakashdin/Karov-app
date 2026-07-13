@@ -1,0 +1,59 @@
+{
+  "generatedNote": "PHASE 11 — SKIPPED backlog. Every mikveh candidate NOT in the first write, with the next action needed. Nothing here is lost.",
+  "firstWriteCount": 61,
+  "totalSkipped": 189,
+  "skippedByCategory": {
+    "manual-review": 14,
+    "enrichment-candidate": 65,
+    "geocoding-needed": 1,
+    "duplicate-conflict": 61,
+    "coordless-city-level": 31,
+    "coordless-failed": 17
+  },
+  "skippedByNextAction": {
+    "manual review": 14,
+    "enrichment decision": 65,
+    "manual coordinates": 18,
+    "duplicate confirmation": 61,
+    "address-level geocoding": 31
+  },
+  "skippedBySource": {
+    "sabaiapps": 59,
+    "municipal-phase6": 71,
+    "asbina-phase7": 59
+  },
+  "topCitiesInBacklog": {
+    "מודיעין עילית": 24,
+    "באר שבע": 13,
+    "מודיעין-מכבים-רעות": 12,
+    "מרחבים": 8,
+    "מעלה אדומים": 7,
+    "לוד": 6,
+    "חדרה": 6,
+    "גבעת שמואל": 6,
+    "הרצליה": 5,
+    "ראש העין": 4,
+    "גבעת זאב": 3,
+    "נוף הגליל": 3
+  },
+  "accounting": {
+    "sabaiappsTotal": 120,
+    "sabaiappsWritten": 61,
+    "sabaiappsBacklog": 59,
+    "municipalPhase6Total": 71,
+    "municipalPhase6Backlog": 71,
+    "asbinaPhase7Total": 59,
+    "asbinaPhase7Backlog": 59,
+    "note": "first write 61 (SabaiApps native-coord) + backlog covers the remaining 59 SabaiApps + all 71 municipal + all 59 א.ש בינה."
+  },
+  "nextActions": {
+    "address-level geocoding": "coordless city-level records → re-geocode with an Israeli street geocoder (GovMap/Google) to reach write-ready precision.",
+    "manual coordinates": "failed-geocoding + the SabaiApps geocoding-needed record → enter coordinates by hand (Waze/Maps).",
+    "manual review": "ambiguous / weak matches → human adjudication (same place vs distinct).",
+    "enrichment decision": "probable matches → confirm, then enrich the existing record (coords/sourceUrl/hours/balanit) instead of adding.",
+    "duplicate confirmation": "exact matches / post-geocode conflicts → confirm duplicate, then discard or enrich (never add)."
+  },
+  "dryRun": true,
+  "liveDataTouched": false,
+  "publishPerformed": false
+}

@@ -1,0 +1,19 @@
+{
+  "council": "המועצה הדתית גני תקווה",
+  "variant": "markers",
+  "expectedCount": 19,
+  "fetchedCount": 19,
+  "validCount": 19,
+  "rejectedCount": 0,
+  "coordSource": "markers",
+  "withNativeCoordinates": 19,
+  "missingCoordinates": 0,
+  "duplicateSourceIds": 0,
+  "enrichedFromCards": 19,
+  "ambiguousEnrich": 0,
+  "countMatches": true,
+  "pagesFetched": 1,
+  "dryRun": true,
+  "liveDataTouched": false,
+  "generatedAt": "2026-06-18"
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "sourceRecordId": "arcgis:tel-aviv:568-37",
+    "name": "אוהל שלום",
+    "existingId": "osm-way-247081522",
+    "existingName": "אהל שלום",
+    "distanceM": 5,
+    "nameSim": 0.33
+  },
+  {
+    "sourceRecordId": "arcgis:tel-aviv:568-166",
+    "name": "היכל אהרון",
+    "existingId": "osm-node-5550252126",
+    "existingName": "היכל דוד",
+    "distanceM": 59,
+    "nameSim": 0.33
+  },
+  {
+    "sourceRecordId": "arcgis:tel-aviv:568-183",
+    "name": "אביר יעקב - לזכר קדושי אנטופול",
+    "existingId": "osm-way-200997551",
+    "existingName": "בית הכנסת לזכר יוצאי אנטופול",
+    "distanceM": 10,
+    "nameSim": 0.33
+  },
+  {
+    "sourceRecordId": "arcgis:tel-aviv:568-201",
+    "name": "המרכזי - תל ברוך",
+    "existingId": "osm-way-99693833",
+    "existingName": "בית-כנסת תל ברוך",
+    "distanceM": 8,
+    "nameSim": 0.5
+  },
+  {
+    "sourceRecordId": "arcgis:tel-aviv:568-236",
+    "name": "חסידי בעלזא",
+    "existingId": "osm-way-149963404",
+    "existingName": "חסידי בלז",
+    "distanceM": 8,
+    "nameSim": 0.33
+  },
+  {
+    "sourceRecordId": "arcgis:tel-aviv:568-237",
+    "name": "חסידי גור",
+    "existingId": "osm-way-149963404",
+    "existingName": "חסידי בלז",
+    "distanceM": 68,
+    "nameSim": 0.33
+  },
+  {
+    "sourceRecordId": "arcgis:tel-aviv:568-243",
+    "name": "חסידי סקרנביץ",
+    "existingId": "osm-way-149749007",
+    "existingName": "חסידי סוכצ׳וב",
+    "distanceM": 142,
+    "nameSim": 0.33
+  },
+  {
+    "sourceRecordId": "arcgis:tel-aviv:568-288",
+    "name": "ישיבת רשב\"י",
+    "existingId": "osm-way-271227229",
+    "existingName": "בי\"כ רשב\"י",
+    "distanceM": 75,
+    "nameSim": 0.33
+  },
+  {
+    "sourceRecordId": "arcgis:tel-aviv:568-403",
+    "name": "רבינו יוסף חיים",
+    "existingId": "osm-node-1150584841",
+    "existingName": "בי\"כ יוסף חיים",
+    "distanceM": 24,
+    "nameSim": 0.5
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "rc-mikvah-givat-zeev-h1ib1png",
+    "name": "מקווה רמת גבעת זאב - אור חנה",
+    "type": "mikveh",
+    "cityId": "גבעת זאב",
+    "address": "גבעת זאב",
+    "location": {
+      "latitude": 31.857831,
+      "longitude": 35.15525
+    },
+    "source": "seed",
+    "sourceUrl": "https://mdgz.org/directory-mikvah/listing/מקווה-רמת-גבעת-זאב/",
+    "sourceName": "המועצה הדתית גבעת זאב",
+    "extra": {
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceVariant": "markers",
+      "locationPrecision": "exact",
+      "newnessConfidence": 0.8,
+      "cityInGov": true,
+      "classification": "new_record",
+      "provenance": {
+        "adapterId": "sabaiapps-mikvah-v1",
+        "sourceRecordId": "rc-mikvah-givat-zeev-h1ib1png",
+        "sourceUrl": "https://mdgz.org/directory-mikvah/listing/מקווה-רמת-גבעת-זאב/",
+        "fetchedAt": "2026-06-19"
+      }
+    }
+  },
+  {
+    "id": "rc-mikvah-givat-zeev-hubfbm3",
+    "name": "מקווה הר שמואל",
+    "type": "mikveh",
+    "cityId": "גבעת זאב",
+    "address": "גבעת זאב",
+    "location": {
+      "latitude": 31.835664,
+      "longitude": 35.170471
+    },
+    "source": "seed",
+    "sourceUrl": "https://mdgz.org/directory-mikvah/listing/מקווה-הר-שמואל/",
+    "sourceName": "המועצה הדתית גבעת זאב",
+    "extra": {
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceVariant": "markers",
+      "locationPrecision": "exact",
+      "newnessConfidence": 0.8,
+      "cityInGov": true,
+      "classification": "new_record",
+      "provenance": {
+        "adapterId": "sabaiapps-mikvah-v1",
+        "sourceRecordId": "rc-mikvah-givat-zeev-hubfbm3",
+        "sourceUrl": "https://mdgz.org/directory-mikvah/listing/מקווה-הר-שמואל/",
+        "fetchedAt": "2026-06-19"
+      }
+    }
+  }
+]

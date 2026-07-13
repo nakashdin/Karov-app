@@ -1,0 +1,22 @@
+{
+  "source": "arcgis:lod",
+  "expectedCount": 87,
+  "fetchedCount": 87,
+  "droppedNoName": 0,
+  "validCount": 87,
+  "rejectedCount": 0,
+  "new": 47,
+  "enriched": 35,
+  "conflicts": 5,
+  "over300": 4,
+  "existingSynagogues": 4030,
+  "mergedSynagogues": 4082,
+  "coordinateSource": "ArcGIS server outSR=4326 (authoritative WGS84)",
+  "datumShiftFromPureItmMeters": {
+    "comparedCount": 87,
+    "maxMeters": 77.35,
+    "avgMeters": 77.34
+  },
+  "dryRun": true,
+  "liveDataTouched": false
+}

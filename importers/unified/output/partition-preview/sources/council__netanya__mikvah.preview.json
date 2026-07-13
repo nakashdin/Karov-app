@@ -1,0 +1,486 @@
+[
+  {
+    "id": "rc-mikvah-netanya-12533",
+    "name": "מקווה רמת פולג",
+    "type": "mikveh",
+    "cityId": "נתניה",
+    "address": "6 תורמוס, נתניה, Israel",
+    "location": {
+      "latitude": 32.271107,
+      "longitude": 34.846166
+    },
+    "source": "seed",
+    "phone": "098782858",
+    "tags": [
+      "gender:נשים"
+    ],
+    "mikvehGender": "נשים",
+    "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-רמת-פולג/",
+    "sourceName": "המועצה הדתית נתניה",
+    "extra": {
+      "council": "המועצה הדתית נתניה",
+      "sourceVariant": "waze",
+      "locationPrecision": "exact",
+      "newnessConfidence": 0.9,
+      "cityInGov": false,
+      "classification": "new_record",
+      "gender": "נשים",
+      "hopePhone": "09-8782858",
+      "sourceFields": {
+        "field_hopephone": "09-8782858"
+      },
+      "provenance": {
+        "adapterId": "sabaiapps-mikvah-v1",
+        "sourceRecordId": "rc-mikvah-netanya-12533",
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-רמת-פולג/",
+        "fetchedAt": "2026-06-19"
+      }
+    }
+  },
+  {
+    "id": "rc-mikvah-netanya-12536",
+    "name": "מקווה נשים קריית נורדאו",
+    "type": "mikveh",
+    "cityId": "נתניה",
+    "address": "אריה לוין 59, נתניה, Israel",
+    "location": {
+      "latitude": 32.278985,
+      "longitude": 34.854875
+    },
+    "source": "seed",
+    "phone": "098655341",
+    "tags": [
+      "gender:נשים"
+    ],
+    "mikvehGender": "נשים",
+    "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-קריית-נורדאו/",
+    "sourceName": "המועצה הדתית נתניה",
+    "extra": {
+      "council": "המועצה הדתית נתניה",
+      "sourceVariant": "waze",
+      "locationPrecision": "exact",
+      "newnessConfidence": 0.9,
+      "cityInGov": false,
+      "classification": "new_record",
+      "gender": "נשים",
+      "hopePhone": "09-8655341",
+      "sourceFields": {
+        "field_hopephone": "09-8655341"
+      },
+      "provenance": {
+        "adapterId": "sabaiapps-mikvah-v1",
+        "sourceRecordId": "rc-mikvah-netanya-12536",
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-קריית-נורדאו/",
+        "fetchedAt": "2026-06-19"
+      }
+    }
+  },
+  {
+    "id": "rc-mikvah-netanya-12539",
+    "name": "מקווה נשים גבעת האירוסים",
+    "type": "mikveh",
+    "cityId": "נתניה",
+    "address": "חרצית 27, נתניה, Israel",
+    "location": {
+      "latitude": 32.28667,
+      "longitude": 34.85018
+    },
+    "source": "seed",
+    "phone": "097720069",
+    "tags": [
+      "gender:נשים"
+    ],
+    "mikvehGender": "נשים",
+    "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-גבעת-האירוסים/",
+    "sourceName": "המועצה הדתית נתניה",
+    "extra": {
+      "council": "המועצה הדתית נתניה",
+      "sourceVariant": "waze",
+      "locationPrecision": "exact",
+      "newnessConfidence": 0.9,
+      "cityInGov": false,
+      "classification": "new_record",
+      "gender": "נשים",
+      "hopePhone": "09-7720069",
+      "sourceFields": {
+        "field_hopephone": "09-7720069"
+      },
+      "provenance": {
+        "adapterId": "sabaiapps-mikvah-v1",
+        "sourceRecordId": "rc-mikvah-netanya-12539",
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-גבעת-האירוסים/",
+        "fetchedAt": "2026-06-19"
+      }
+    }
+  },
+  {
+    "id": "rc-mikvah-netanya-12541",
+    "name": "מקווה נשים שכונת אזורים",
+    "type": "mikveh",
+    "cityId": "נתניה",
+    "address": "8 אפרים אלנקווה, נתניה, Israel",
+    "location": {
+      "latitude": 32.294408,
+      "longitude": 34.84917
+    },
+    "source": "seed",
+    "phone": "098357282",
+    "tags": [
+      "gender:נשים"
+    ],
+    "mikvehGender": "נשים",
+    "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-שכונת-אזורים/",
+    "sourceName": "המועצה הדתית נתניה",
+    "extra": {
+      "council": "המועצה הדתית נתניה",
+      "sourceVariant": "waze",
+      "locationPrecision": "exact",
+      "newnessConfidence": 0.9,
+      "cityInGov": false,
+      "classification": "new_record",
+      "gender": "נשים",
+      "hopePhone": "09-8357282",
+      "sourceFields": {
+        "field_hopephone": "09-8357282"
+      },
+      "provenance": {
+        "adapterId": "sabaiapps-mikvah-v1",
+        "sourceRecordId": "rc-mikvah-netanya-12541",
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-שכונת-אזורים/",
+        "fetchedAt": "2026-06-19"
+      }
+    }
+  },
+  {
+    "id": "rc-mikvah-netanya-12543",
+    "name": "מקווה נשים שכונת דורה",
+    "type": "mikveh",
+    "cityId": "נתניה",
+    "address": "10 שמואל, נתניה, Israel",
+    "location": {
+      "latitude": 32.299179,
+      "longitude": 34.857191
+    },
+    "source": "seed",
+    "phone": "098354814",
+    "tags": [
+      "gender:נשים"
+    ],
+    "mikvehGender": "נשים",
+    "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-שכונת-דורה/",
+    "sourceName": "המועצה הדתית נתניה",
+    "extra": {
+      "council": "המועצה הדתית נתניה",
+      "sourceVariant": "waze",
+      "locationPrecision": "exact",
+      "newnessConfidence": 0.9,
+      "cityInGov": false,
+      "classification": "new_record",
+      "gender": "נשים",
+      "hopePhone": "09-8354814",
+      "sourceFields": {
+        "field_hopephone": "09-8354814"
+      },
+      "provenance": {
+        "adapterId": "sabaiapps-mikvah-v1",
+        "sourceRecordId": "rc-mikvah-netanya-12543",
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-שכונת-דורה/",
+        "fetchedAt": "2026-06-19"
+      }
+    }
+  },
+  {
+    "id": "rc-mikvah-netanya-12559",
+    "name": "מקווה נשים סלע",
+    "type": "mikveh",
+    "cityId": "נתניה",
+    "address": "17 משה גליקסון, נתניה, Israel",
+    "location": {
+      "latitude": 32.330492,
+      "longitude": 34.865677
+    },
+    "source": "seed",
+    "phone": "098329238",
+    "tags": [
+      "gender:נשים"
+    ],
+    "mikvehGender": "נשים",
+    "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-סלע/",
+    "sourceName": "המועצה הדתית נתניה",
+    "extra": {
+      "council": "המועצה הדתית נתניה",
+      "sourceVariant": "waze",
+      "locationPrecision": "exact",
+      "newnessConfidence": 0.9,
+      "cityInGov": false,
+      "classification": "new_record",
+      "gender": "נשים",
+      "hopePhone": "09-8329238",
+      "sourceFields": {
+        "field_hopephone": "09-8329238"
+      },
+      "provenance": {
+        "adapterId": "sabaiapps-mikvah-v1",
+        "sourceRecordId": "rc-mikvah-netanya-12559",
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-סלע/",
+        "fetchedAt": "2026-06-19"
+      }
+    }
+  },
+  {
+    "id": "rc-mikvah-netanya-12561",
+    "name": "מקווה נשים שכונת הפועל מזרחי",
+    "type": "mikveh",
+    "cityId": "נתניה",
+    "address": "40 משה שפירא, נתניה, Israel",
+    "location": {
+      "latitude": 32.336645,
+      "longitude": 34.864825
+    },
+    "source": "seed",
+    "phone": "098622561",
+    "tags": [
+      "gender:נשים"
+    ],
+    "mikvehGender": "נשים",
+    "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-שכונת-הפועל-מזרחי/",
+    "sourceName": "המועצה הדתית נתניה",
+    "extra": {
+      "council": "המועצה הדתית נתניה",
+      "sourceVariant": "waze",
+      "locationPrecision": "exact",
+      "newnessConfidence": 0.9,
+      "cityInGov": false,
+      "classification": "new_record",
+      "gender": "נשים",
+      "hopePhone": "09-8622561",
+      "sourceFields": {
+        "field_hopephone": "09-8622561"
+      },
+      "provenance": {
+        "adapterId": "sabaiapps-mikvah-v1",
+        "sourceRecordId": "rc-mikvah-netanya-12561",
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-שכונת-הפועל-מזרחי/",
+        "fetchedAt": "2026-06-19"
+      }
+    }
+  },
+  {
+    "id": "rc-mikvah-netanya-12562",
+    "name": "מקווה נשים שכונת ותיקים",
+    "type": "mikveh",
+    "cityId": "נתניה",
+    "address": "הרב זוארץ 12, נתניה, Israel",
+    "location": {
+      "latitude": 32.326005,
+      "longitude": 34.859271
+    },
+    "source": "seed",
+    "phone": "098323492",
+    "tags": [
+      "gender:נשים"
+    ],
+    "mikvehGender": "נשים",
+    "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-שכונת-ותיקים/",
+    "sourceName": "המועצה הדתית נתניה",
+    "extra": {
+      "council": "המועצה הדתית נתניה",
+      "sourceVariant": "waze",
+      "locationPrecision": "exact",
+      "newnessConfidence": 0.9,
+      "cityInGov": false,
+      "classification": "new_record",
+      "gender": "נשים",
+      "hopePhone": "09-8323492",
+      "sourceFields": {
+        "field_hopephone": "09-8323492"
+      },
+      "provenance": {
+        "adapterId": "sabaiapps-mikvah-v1",
+        "sourceRecordId": "rc-mikvah-netanya-12562",
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-שכונת-ותיקים/",
+        "fetchedAt": "2026-06-19"
+      }
+    }
+  },
+  {
+    "id": "rc-mikvah-netanya-12563",
+    "name": "מקווה נשים שכונת משה''ב",
+    "type": "mikveh",
+    "cityId": "נתניה",
+    "address": "21 שפיגלמן, נתניה, Israel",
+    "location": {
+      "latitude": 32.30863,
+      "longitude": 34.873197
+    },
+    "source": "seed",
+    "phone": "098871071",
+    "tags": [
+      "gender:נשים"
+    ],
+    "mikvehGender": "נשים",
+    "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-שכונת-משהב/",
+    "sourceName": "המועצה הדתית נתניה",
+    "extra": {
+      "council": "המועצה הדתית נתניה",
+      "sourceVariant": "waze",
+      "locationPrecision": "exact",
+      "newnessConfidence": 0.9,
+      "cityInGov": false,
+      "classification": "new_record",
+      "gender": "נשים",
+      "hopePhone": "09-8871071",
+      "sourceFields": {
+        "field_hopephone": "09-8871071"
+      },
+      "provenance": {
+        "adapterId": "sabaiapps-mikvah-v1",
+        "sourceRecordId": "rc-mikvah-netanya-12563",
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-שכונת-משהב/",
+        "fetchedAt": "2026-06-19"
+      }
+    }
+  },
+  {
+    "id": "rc-mikvah-netanya-12545",
+    "name": "מקווה נשים שכונת רמת חן",
+    "type": "mikveh",
+    "cityId": "נתניה",
+    "address": "25 אלחריזי, נתניה, Israel",
+    "location": {
+      "latitude": 32.313084,
+      "longitude": 34.859543
+    },
+    "source": "seed",
+    "phone": "098652560",
+    "tags": [
+      "gender:נשים"
+    ],
+    "mikvehGender": "נשים",
+    "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-שכונת-רמת-חן/",
+    "sourceName": "המועצה הדתית נתניה",
+    "extra": {
+      "council": "המועצה הדתית נתניה",
+      "sourceVariant": "waze",
+      "locationPrecision": "exact",
+      "newnessConfidence": 0.9,
+      "cityInGov": false,
+      "classification": "new_record",
+      "gender": "נשים",
+      "hopePhone": "09-8652560",
+      "sourceFields": {
+        "field_hopephone": "09-8652560"
+      },
+      "provenance": {
+        "adapterId": "sabaiapps-mikvah-v1",
+        "sourceRecordId": "rc-mikvah-netanya-12545",
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-נשים-שכונת-רמת-חן/",
+        "fetchedAt": "2026-06-19"
+      }
+    }
+  },
+  {
+    "id": "rc-mikvah-netanya-12547",
+    "name": "המקווה המרכזי נתניה",
+    "type": "mikveh",
+    "cityId": "נתניה",
+    "address": "אברהם שפירא 28, נתניה, Israel",
+    "location": {
+      "latitude": 32.322002,
+      "longitude": 34.857597
+    },
+    "source": "seed",
+    "phone": "098611839",
+    "tags": [
+      "gender:נשים"
+    ],
+    "mikvehGender": "נשים",
+    "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/המקווה-המרכזי-נתניה/",
+    "sourceName": "המועצה הדתית נתניה",
+    "extra": {
+      "council": "המועצה הדתית נתניה",
+      "sourceVariant": "waze",
+      "locationPrecision": "exact",
+      "newnessConfidence": 0.9,
+      "cityInGov": false,
+      "classification": "new_record",
+      "gender": "נשים",
+      "hopePhone": "09-8611839",
+      "sourceFields": {
+        "field_hopephone": "09-8611839"
+      },
+      "provenance": {
+        "adapterId": "sabaiapps-mikvah-v1",
+        "sourceRecordId": "rc-mikvah-netanya-12547",
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/המקווה-המרכזי-נתניה/",
+        "fetchedAt": "2026-06-19"
+      }
+    }
+  },
+  {
+    "id": "rc-mikvah-netanya-12564",
+    "name": "מקווה גברים מרכזי:",
+    "type": "mikveh",
+    "cityId": "נתניה",
+    "address": "אברהם שפירא 28, נתניה, Israel",
+    "location": {
+      "latitude": 32.322002,
+      "longitude": 34.857597
+    },
+    "source": "seed",
+    "tags": [
+      "gender:גברים"
+    ],
+    "mikvehGender": "גברים",
+    "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-גברים-מרכזי/",
+    "sourceName": "המועצה הדתית נתניה",
+    "extra": {
+      "council": "המועצה הדתית נתניה",
+      "sourceVariant": "waze",
+      "locationPrecision": "exact",
+      "newnessConfidence": 0.9,
+      "cityInGov": false,
+      "classification": "new_record",
+      "gender": "גברים",
+      "provenance": {
+        "adapterId": "sabaiapps-mikvah-v1",
+        "sourceRecordId": "rc-mikvah-netanya-12564",
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-גברים-מרכזי/",
+        "fetchedAt": "2026-06-19"
+      }
+    }
+  },
+  {
+    "id": "rc-mikvah-netanya-12565",
+    "name": "מקווה גברים נורדאו",
+    "type": "mikveh",
+    "cityId": "נתניה",
+    "address": "59 אריה לוין, נתניה, Israel",
+    "location": {
+      "latitude": 32.279537,
+      "longitude": 34.85516
+    },
+    "source": "seed",
+    "tags": [
+      "gender:גברים"
+    ],
+    "mikvehGender": "גברים",
+    "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-גברים-נורדאו/",
+    "sourceName": "המועצה הדתית נתניה",
+    "extra": {
+      "council": "המועצה הדתית נתניה",
+      "sourceVariant": "waze",
+      "locationPrecision": "exact",
+      "newnessConfidence": 0.9,
+      "cityInGov": false,
+      "classification": "new_record",
+      "gender": "גברים",
+      "provenance": {
+        "adapterId": "sabaiapps-mikvah-v1",
+        "sourceRecordId": "rc-mikvah-netanya-12565",
+        "sourceUrl": "https://mdn.org.il/directory-mikvah/listing/מקווה-גברים-נורדאו/",
+        "fetchedAt": "2026-06-19"
+      }
+    }
+  }
+]

@@ -1,0 +1,21 @@
+[
+  {
+    "id": "osm-node-10069419066",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "kosher_business",
+    "name": "דוגמה",
+    "lat": 31.9441902,
+    "lng": 34.8743637,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "restaurant",
+      "cuisine": "burger;regional",
+      "diet:kosher": "yes",
+      "name": "דוגמה",
+      "name:he": "דוגמה",
+      "website": "yuumybox.com"
+    }
+  }
+]

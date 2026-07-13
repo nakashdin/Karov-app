@@ -1,0 +1,1082 @@
+[
+  {
+    "id": "rc-givat-zeev-h121gi2t",
+    "name": "תפארת אליהו",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "גבעת זאב",
+    "location": {
+      "latitude": 31.866885,
+      "longitude": 35.169691
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "rc-givat-zeev-h155jiw8",
+    "name": "שבת אחים",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "גבעת זאב",
+    "location": {
+      "latitude": 31.863743,
+      "longitude": 35.151288
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/שבת-אחים/"
+    }
+  },
+  {
+    "id": "rc-givat-zeev-h1alnmzc",
+    "name": "קהל חסידים",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "גבעת זאב",
+    "location": {
+      "latitude": 31.837646,
+      "longitude": 35.169691
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/קהל-חסידים/"
+    },
+    "nusach": "חסידי"
+  },
+  {
+    "id": "rc-givat-zeev-h1h7kg1q",
+    "name": "קהילת בני ישראל",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "78 אבני החושן , גבעת זאב",
+    "location": {
+      "latitude": 31.835489,
+      "longitude": 35.170392
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/קהילת-בני-ישראל/"
+    },
+    "nusach": "אשכנז"
+  },
+  {
+    "id": "rc-givat-zeev-hpkcmf3",
+    "name": "משכן מרגלית",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "גבעת זאב",
+    "location": {
+      "latitude": 31.863743,
+      "longitude": 35.151288
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/משכן-מרגלית/"
+    }
+  },
+  {
+    "id": "rc-givat-zeev-h103t646",
+    "name": "משכן אריה",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "12 כלנית , גבעת זאב",
+    "location": {
+      "latitude": 31.858038,
+      "longitude": 35.15648
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/משכן-אריה/"
+    }
+  },
+  {
+    "id": "rc-givat-zeev-hxz6zqo",
+    "name": "מניין אברכים",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "גבעת זאב",
+    "location": {
+      "latitude": 31.865156,
+      "longitude": 35.152955
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/מניין-אברכים/"
+    }
+  },
+  {
+    "id": "rc-givat-zeev-h116zyj1",
+    "name": "חפץ חיים",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "גבעת זאב",
+    "location": {
+      "latitude": 31.862634,
+      "longitude": 35.171346
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/חפץ-חיים/"
+    }
+  },
+  {
+    "id": "rc-givat-zeev-h1o63b80",
+    "name": "חזון עובדיה",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "גבעת זאב",
+    "location": {
+      "latitude": 31.862994,
+      "longitude": 35.152558
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/חזון-עובדיה/"
+    }
+  },
+  {
+    "id": "rc-givat-zeev-h3uzucq",
+    "name": "זכרון שמואל",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "9 הראם , גבעת זאב",
+    "location": {
+      "latitude": 31.865664,
+      "longitude": 35.149395
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/זכרון-שמואל/"
+    }
+  },
+  {
+    "id": "rc-givat-zeev-h1nasckt",
+    "name": "דרכי שלום",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "גבעת זאב",
+    "location": {
+      "latitude": 31.862533,
+      "longitude": 35.171239
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/דרכי-שלום/"
+    },
+    "nusach": "ספרדי"
+  },
+  {
+    "id": "rc-givat-zeev-h1qgko8v",
+    "name": "דרכי אבות",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "12 כלנית , גבעת זאב",
+    "location": {
+      "latitude": 31.85811,
+      "longitude": 35.156232
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/דרכי-אבות/"
+    }
+  },
+  {
+    "id": "rc-givat-zeev-hy6vl6e",
+    "name": "בני עקיבא",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "70 רח' אתרוג , גבעת זאב",
+    "location": {
+      "latitude": 31.86192,
+      "longitude": 35.171336
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/בני-עקיבא/"
+    },
+    "nusach": "ספרדי"
+  },
+  {
+    "id": "rc-givat-zeev-h1642mh5",
+    "name": "בית יוסף",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "32 קרית יערים , גבעת זאב",
+    "location": {
+      "latitude": 31.857267,
+      "longitude": 35.165825
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/בית-יוסף/"
+    }
+  },
+  {
+    "id": "rc-givat-zeev-h1yi33iu",
+    "name": "אוהל אברהם",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "גבעת זאב",
+    "location": {
+      "latitude": 31.858991,
+      "longitude": 35.158264
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "rc-givat-zeev-h17jr9cq",
+    "name": "אור החיים הקדוש",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "גבעת זאב",
+    "location": {
+      "latitude": 31.837822,
+      "longitude": 35.169686
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/אור-החיים-הקדוש/"
+    },
+    "nusach": "ספרדי, ירושלמי"
+  },
+  {
+    "id": "rc-givat-zeev-hwuelxa",
+    "name": "מרכז רוחני דתי",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "8 עמק איילון , גבעת זאב",
+    "location": {
+      "latitude": 31.861628,
+      "longitude": 35.165294
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/מרכז-רוחני-דתי/"
+    },
+    "nusach": "ספרדי"
+  },
+  {
+    "id": "rc-givat-zeev-hgpjhyj",
+    "name": "זכור לאברהם",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "גבעת זאב",
+    "location": {
+      "latitude": 31.863552,
+      "longitude": 35.160472
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/זכור-לאברהם/"
+    },
+    "nusach": "ספרדי מרוקאי"
+  },
+  {
+    "id": "rc-givat-zeev-h1wm8y04",
+    "name": "אוהל יצחק",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "42 רחוב המכבים , גבעת זאב",
+    "location": {
+      "latitude": 31.866522,
+      "longitude": 35.168116
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/אוהל-יצחק/"
+    },
+    "nusach": "ספרדי"
+  },
+  {
+    "id": "rc-givat-zeev-hu8ir9z",
+    "name": "בית אל",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "130 עלמון , גבעת זאב",
+    "location": {
+      "latitude": 31.853465,
+      "longitude": 35.164808
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/בית-אל-2/"
+    }
+  },
+  {
+    "id": "rc-givat-zeev-h10kuleb",
+    "name": "פקודת אלעזר",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "57 קרית יערים , גבעת זאב",
+    "location": {
+      "latitude": 31.856306,
+      "longitude": 35.166443
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/פקודת-אלעזר/"
+    }
+  },
+  {
+    "id": "rc-givat-zeev-htab7pk",
+    "name": "תורה וחיים",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "42 רחוב המכבים , גבעת זאב",
+    "location": {
+      "latitude": 31.866253,
+      "longitude": 35.168477
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/תורה-וחיים/"
+    },
+    "nusach": "ספרדי"
+  },
+  {
+    "id": "rc-givat-zeev-htdz47s",
+    "name": "אוהל יעקב",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "12 כלנית , גבעת זאב",
+    "location": {
+      "latitude": 31.857839,
+      "longitude": 35.155197
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/אוהל-יעקב/"
+    }
+  },
+  {
+    "id": "rc-givat-zeev-h109uirz",
+    "name": "ראשית חכמה",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "גבעת זאב",
+    "location": {
+      "latitude": 31.864463,
+      "longitude": 35.167536
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/ראשית-חכמה/"
+    }
+  },
+  {
+    "id": "rc-givat-zeev-h106bdx1",
+    "name": "בית מלכיאל",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "גבעת זאב",
+    "location": {
+      "latitude": 31.858992,
+      "longitude": 35.158239
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/בית-מלכיאל/"
+    }
+  },
+  {
+    "id": "rc-givat-zeev-hu1y4gx",
+    "name": "ישא ברכה",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "גבעת זאב",
+    "location": {
+      "latitude": 31.848741,
+      "longitude": 35.171649
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/ישא-ברכה/"
+    }
+  },
+  {
+    "id": "rc-givat-zeev-hmj29pr",
+    "name": "תפילת חנה",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "18 יהלום , גבעת זאב",
+    "location": {
+      "latitude": 31.833584,
+      "longitude": 35.172935
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/תפילת-חנה/"
+    }
+  },
+  {
+    "id": "rc-givat-zeev-hrsrpbm",
+    "name": "שערי חיים",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "29 אבני החושן , גבעת זאב",
+    "location": {
+      "latitude": 31.834429,
+      "longitude": 35.172247
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/שערי-חיים/"
+    }
+  },
+  {
+    "id": "rc-givat-zeev-h1592pm",
+    "name": "שמואל ברמה",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "גבעת זאב",
+    "location": {
+      "latitude": 31.861189,
+      "longitude": 35.167252
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/שמואל-ברמה/"
+    }
+  },
+  {
+    "id": "rc-givat-zeev-hlvq2ih",
+    "name": "אהבת ישראל",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "78 אבני החושן , גבעת זאב",
+    "location": {
+      "latitude": 31.834996,
+      "longitude": 35.170131
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/אהבת-ישראל/"
+    },
+    "nusach": "ספרדי"
+  },
+  {
+    "id": "rc-givat-zeev-h1qi1tsb",
+    "name": "אוהל לוי",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "7 לשם , גבעת זאב",
+    "location": {
+      "latitude": 31.837475,
+      "longitude": 35.167138
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/אוהל-לוי/"
+    }
+  },
+  {
+    "id": "rc-givat-zeev-h1c6vtmr",
+    "name": "עטרת עידו מרדכי",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "גבעת זאב",
+    "location": {
+      "latitude": 31.863257,
+      "longitude": 35.175912
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/עטרת-עידו-מרדכי/"
+    }
+  },
+  {
+    "id": "rc-givat-zeev-h3mio0b",
+    "name": "שבחי בנים",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "1 קדרון , גבעת זאב",
+    "location": {
+      "latitude": 31.862944,
+      "longitude": 35.174863
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/שבחי-בנים/"
+    }
+  },
+  {
+    "id": "rc-givat-zeev-hhqb7b1",
+    "name": "נווה הגבעה",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "19 רחוב ערוגות , גבעת זאב",
+    "location": {
+      "latitude": 31.862545,
+      "longitude": 35.176755
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/נווה-הגבעה/"
+    },
+    "nusach": "אשכנזי"
+  },
+  {
+    "id": "rc-givat-zeev-h172py33",
+    "name": "מצפה שמואל",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "21 רחוב ערוגות , גבעת זאב",
+    "location": {
+      "latitude": 31.862694,
+      "longitude": 35.17686
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/מצפה-שמואל/"
+    },
+    "nusach": "ספרדי"
+  },
+  {
+    "id": "rc-givat-zeev-hx7yqup",
+    "name": "מאורות הגבעה",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "1 קדרון , גבעת זאב",
+    "location": {
+      "latitude": 31.862936,
+      "longitude": 35.174908
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/מאורות-הגבעה/"
+    }
+  },
+  {
+    "id": "rc-givat-zeev-h1otfn2j",
+    "name": "עטרת יהושוע דז'יקוב",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "16 הכפיר , גבעת זאב",
+    "location": {
+      "latitude": 31.864736,
+      "longitude": 35.144426
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/עטרת-יהושוע-דזיקוב/"
+    }
+  },
+  {
+    "id": "rc-givat-zeev-h12v2ual",
+    "name": "משכן שלמה",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "5 הדישון , גבעת זאב",
+    "location": {
+      "latitude": 31.865926,
+      "longitude": 35.154477
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/משכן-שלמה/"
+    },
+    "nusach": "מרוקאי"
+  },
+  {
+    "id": "rc-givat-zeev-h1te0n0n",
+    "name": "משכן דוד ואהרון",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "2 האיילות , גבעת זאב",
+    "location": {
+      "latitude": 31.864532,
+      "longitude": 35.143354
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/משכן-דוד-ואהרון/"
+    }
+  },
+  {
+    "id": "rc-givat-zeev-h1x6vtpn",
+    "name": "היכל אהרון",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "גבעת זאב",
+    "location": {
+      "latitude": 31.863743,
+      "longitude": 35.151288
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/היכל-אהרון/"
+    },
+    "nusach": "ספרדי, ירושלמי"
+  },
+  {
+    "id": "rc-givat-zeev-hw4ofyk",
+    "name": "בית אליהו - חניכי הישיבות חברון",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "2 האיילות , גבעת זאב",
+    "location": {
+      "latitude": 31.864532,
+      "longitude": 35.143354
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/בית-אליהו-חניכי-הישיבות-חברון/"
+    }
+  },
+  {
+    "id": "rc-givat-zeev-h1ex0mt2",
+    "name": "בעל\"ז- ספרד חסידי",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "גבעת זאב",
+    "location": {
+      "latitude": 31.864876,
+      "longitude": 35.15145
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/בעלז-ספרד-חסידי/"
+    },
+    "nusach": "חסידי"
+  },
+  {
+    "id": "rc-givat-zeev-hs9fvav",
+    "name": "בני הישיבות",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "28 האיילות , גבעת זאב",
+    "location": {
+      "latitude": 31.866458,
+      "longitude": 35.148699
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/בני-הישיבות-אשכנז/"
+    },
+    "nusach": "אשכנזי"
+  },
+  {
+    "id": "rc-givat-zeev-h1imq7r3",
+    "name": "אדרת אליהו- אשכנז",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "5 הדישון , גבעת זאב",
+    "location": {
+      "latitude": 31.865926,
+      "longitude": 35.154477
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/אדרת-אליהו-אשכנז/"
+    },
+    "nusach": "אשכנזי"
+  },
+  {
+    "id": "rc-givat-zeev-h103psjj",
+    "name": "שבט בנימין - אשכנז",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "55 רחוב המכבים , גבעת זאב",
+    "location": {
+      "latitude": 31.861655,
+      "longitude": 35.165496
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/שבט-בנימין-אשכנז/"
+    },
+    "nusach": "אשכנזי"
+  },
+  {
+    "id": "rc-givat-zeev-h1uidiue",
+    "name": "קרלין סטולין",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "89 האתרוג , גבעת זאב",
+    "location": {
+      "latitude": 31.858479,
+      "longitude": 35.16879
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/קרלין-סטולין/"
+    }
+  },
+  {
+    "id": "rc-givat-zeev-h1sdmd6y",
+    "name": "נווה שלום",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "27 רחוב המכבים , גבעת זאב",
+    "location": {
+      "latitude": 31.86482,
+      "longitude": 35.16937
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/נווה-שלום/"
+    },
+    "nusach": "תימני"
+  },
+  {
+    "id": "rc-givat-zeev-hjgh27f",
+    "name": "משכן אלירז",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "גבעת זאב",
+    "location": {
+      "latitude": 31.86366,
+      "longitude": 35.158684
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/משכן-אלירז/"
+    },
+    "nusach": "אשכנזי"
+  },
+  {
+    "id": "rc-givat-zeev-h1ya3kxn",
+    "name": "משכן יוסף",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "9 מצפה , גבעת זאב",
+    "location": {
+      "latitude": 31.856903,
+      "longitude": 35.167473
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/משכן-יוסף/"
+    }
+  },
+  {
+    "id": "rc-givat-zeev-h111vcnl",
+    "name": "משכן אתרוג",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "גבעת זאב",
+    "location": {
+      "latitude": 31.862442,
+      "longitude": 35.170973
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/משכן-אתרוג/"
+    },
+    "nusach": "אשכנזי"
+  },
+  {
+    "id": "rc-givat-zeev-hzk1tnf",
+    "name": "מניין צעירי חב\"ד",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "5 רחוב התאנה , גבעת זאב",
+    "location": {
+      "latitude": 31.864432,
+      "longitude": 35.166368
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/מניין-צעירי-חבד/"
+    },
+    "nusach": "חב\"ד"
+  },
+  {
+    "id": "rc-givat-zeev-heau9y9",
+    "name": "כתר בנימין",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "2 רח' אתרוג , גבעת זאב",
+    "location": {
+      "latitude": 31.861686,
+      "longitude": 35.17144
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/כתר-בנימין/"
+    },
+    "nusach": "ספרדי"
+  },
+  {
+    "id": "rc-givat-zeev-hipxra9",
+    "name": "חב\"ד - בית מנחם (במקלט)",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "48 רחוב המכבים , גבעת זאב",
+    "location": {
+      "latitude": 31.864795,
+      "longitude": 35.167662
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/חבד-בית-מנחם-במקלט/"
+    },
+    "nusach": "חב\"ד"
+  },
+  {
+    "id": "rc-givat-zeev-hamg0w0",
+    "name": "חב\"ד - מורשת מנחם",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "גבע , גבעת זאב",
+    "location": {
+      "latitude": 31.856191,
+      "longitude": 35.167675
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/חבד-מורשת-מנחם/"
+    },
+    "nusach": "חב\"ד"
+  },
+  {
+    "id": "rc-givat-zeev-h12ocxw3",
+    "name": "היכל המלך",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "גבעת זאב",
+    "location": {
+      "latitude": 31.861883,
+      "longitude": 35.16744
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/היכל-המלך/"
+    }
+  },
+  {
+    "id": "rc-givat-zeev-h1pr85ti",
+    "name": "הדר יוסף",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "Harimon Street , Giv'at Ze'ev",
+    "location": {
+      "latitude": 31.856305,
+      "longitude": 35.170767
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/הדר-יוסף/"
+    }
+  },
+  {
+    "id": "rc-givat-zeev-hxyxsqy",
+    "name": "דרכי נועם",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "גבעת זאב",
+    "location": {
+      "latitude": 31.864725,
+      "longitude": 35.169521
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/דרכי-נועם/"
+    }
+  },
+  {
+    "id": "rc-givat-zeev-h1enxv1v",
+    "name": "ברכות שמואל",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "גבע , גבעת זאב",
+    "location": {
+      "latitude": 31.856191,
+      "longitude": 35.167675
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/ברכות-שמואל/"
+    }
+  },
+  {
+    "id": "rc-givat-zeev-hcf9rp",
+    "name": "הגיא צעירים",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "גבעת זאב",
+    "location": {
+      "latitude": 31.862569,
+      "longitude": 35.170984
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/הגיא-צעירים/"
+    },
+    "nusach": "ספרדי"
+  },
+  {
+    "id": "rc-givat-zeev-h6ci9d8",
+    "name": "איילת השחר",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "9 מצפה , גבעת זאב",
+    "location": {
+      "latitude": 31.856903,
+      "longitude": 35.167473
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": "https://mdgz.org/directory-synagogues/listing/איילת-השחר/"
+    }
+  },
+  {
+    "id": "rc-givat-zeev-h1v928s",
+    "name": "אוהל אברהם",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "2 חרצית , גבעת זאב",
+    "location": {
+      "latitude": 31.863397,
+      "longitude": 35.158676
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "rc-givat-zeev-hv2y5hs",
+    "name": "תפארת אליהו",
+    "type": "synagogue",
+    "cityId": "גבעת זאב",
+    "address": "42 רחוב המכבים , גבעת זאב",
+    "location": {
+      "latitude": 31.866132,
+      "longitude": 35.168358
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גבעת זאב",
+      "sourceUrl": null
+    }
+  }
+]

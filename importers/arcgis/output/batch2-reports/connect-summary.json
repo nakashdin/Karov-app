@@ -1,0 +1,31 @@
+{
+  "batch": [
+    "jerusalem",
+    "nahariya",
+    "modiin",
+    "nof-hagalil"
+  ],
+  "cityIdUsed": {
+    "jerusalem": "ירושלים",
+    "nahariya": "נהריה",
+    "modiin": "מודיעין-מכבים-רעות",
+    "nof-hagalil": "נוף הגליל"
+  },
+  "beforeSynagogues": 3871,
+  "addedNew": 159,
+  "enrichedExisting": 28,
+  "afterSynagogues": 4030,
+  "beforeTotal": 4748,
+  "afterTotal": 4907,
+  "heldConflicts": 1,
+  "heldOver300": 1,
+  "deletions": 0,
+  "mikvehBefore": 531,
+  "mikvehAfter": 531,
+  "restaurantBefore": 346,
+  "restaurantAfter": 346,
+  "batch1ArcgisBefore": 1132,
+  "batch1ArcgisAfter": 1132,
+  "backupCreated": "C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\places.osm.pre-arcgis-batch2.backup.json",
+  "citiesFileTouched": false
+}

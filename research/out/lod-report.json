@@ -1,0 +1,52 @@
+{
+  "city": "לוד",
+  "generatedFor": "PoC inspection",
+  "sources": [
+    {
+      "source": "OpenStreetMap (Overpass)",
+      "records": 70,
+      "byCategory": {
+        "synagogue": 69,
+        "kosher_business": 1
+      },
+      "availableFields": {
+        "amenity": 70,
+        "religion": 69,
+        "building": 68,
+        "name": 57,
+        "name:he": 47,
+        "name:en": 32,
+        "addr:street": 11,
+        "addr:city": 10,
+        "addr:housenumber": 5,
+        "alt_name:en": 3,
+        "cuisine": 1,
+        "diet:kosher": 1,
+        "website": 1,
+        "name:ru": 1,
+        "note": 1,
+        "denomination": 1
+      },
+      "reliability": "Crowd-sourced. Existence + coordinates: good for synagogues, partial for kosher businesses (diet:kosher is under-tagged). Names usually present; addresses/phone/hours sparse. No official kosher-certification data.",
+      "license": "ODbL 1.0 — free; requires attribution (\"© OpenStreetMap contributors\") and share-alike on derived databases. Tile usage policy applies separately."
+    },
+    {
+      "source": "Wikidata (SPARQL)",
+      "records": 2,
+      "byCategory": {
+        "synagogue": 2,
+        "kosher_business": 0
+      },
+      "availableFields": {
+        "id": 2,
+        "source": 2,
+        "category": 2,
+        "name": 2,
+        "lat": 2,
+        "lng": 2
+      },
+      "reliability": "Authoritative but very sparse for local POIs — mainly notable/landmark synagogues, almost no everyday businesses or kosher details. Good for cross-referencing, not for coverage.",
+      "license": "CC0 1.0 — public domain, no restrictions (attribution appreciated, not required)."
+    }
+  ]
+}

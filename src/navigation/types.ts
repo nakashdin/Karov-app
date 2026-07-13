@@ -18,13 +18,12 @@ export type RootStackParamList = {
   PlaceDetail: { id: string };
   MapDetail: { placeId: string };
   Report: { placeId: string };
-  List: { focus?: boolean } | undefined;
+  List: { focus?: boolean; radiusKm?: number } | undefined;
   AddPlace: undefined;
   ParashaDetail: undefined;
   KashruyotFilter: { placeType: 'restaurant' | 'fast_food' | 'cafe' | 'coffee_cart' };
   WhatsAround: undefined;
   FoodList: { radiusKm?: number } | undefined;
-  List: { focus?: boolean; radiusKm?: number } | undefined;
 };
 
 declare global {

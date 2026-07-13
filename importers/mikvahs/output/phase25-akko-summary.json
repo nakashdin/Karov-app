@@ -1,0 +1,35 @@
+{
+  "generatedNote": "PHASE 25 DRY-RUN — Akko only (mdakko.org). NATIVE Waze coordinates only (no GovMap). Gender-aware dedup vs live. No write, no publish, no rebuild.",
+  "source": {
+    "name": "המועצה הדתית והרבנות עכו",
+    "url": "https://www.mdakko.org/mikooaot2",
+    "type": "Wix (index + per-mikvah subpages /mikooaot3..7)",
+    "parsed": 5
+  },
+  "totalParsed": 5,
+  "liveAkkoBefore": 0,
+  "duplicates": 0,
+  "excluded": 0,
+  "writeReady": 5,
+  "writeReadyByGender": {
+    "נשים": 4,
+    "גברים": 1
+  },
+  "idCollisions": 0,
+  "duplicateAppIds": 0,
+  "finalRecommendedWriteCount": 5,
+  "liveMikvehBefore": 696,
+  "estimatedTotalAfterWrite": 701,
+  "notes": [
+    "Akko had 0 live mikvehs under exact cityId=\"עכו\" (prior audit count of 1 was a substring false-match: \"דרך עכו 55\" is a Kiryat Motzkin record).",
+    "מקווה גברים (/mikooaot7): its own Waze link is the COUNCIL OFFICE fallback (יהושפט 29); reassigned to its real address דרך הארבעה 57 = וולפסון building native coord. Flagged in extra.coordNote."
+  ],
+  "rollbackPlan": [
+    "Backup places.osm.json (+cities) before any write",
+    "Additive append only; do NOT run rebuildAppDataset"
+  ],
+  "dryRun": true,
+  "liveDataTouched": false,
+  "publishPerformed": false,
+  "rebuildTouched": false
+}

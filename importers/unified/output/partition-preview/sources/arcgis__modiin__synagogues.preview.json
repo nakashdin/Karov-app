@@ -1,0 +1,308 @@
+[
+  {
+    "id": "arcgis:modiin::205",
+    "name": "בית כנסת קול יעקב",
+    "type": "synagogue",
+    "cityId": "מודיעין-מכבים-רעות",
+    "address": "נביאים 22",
+    "location": {
+      "latitude": 31.91167085715457,
+      "longitude": 35.00770068442183
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:modiin",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://webgis.modiin.muni.il/arcgis/rest/services/GeoInterestPoints/MapServer/0"
+    }
+  },
+  {
+    "id": "arcgis:modiin::215",
+    "name": "בית כנסת מנורת אבנר",
+    "type": "synagogue",
+    "cityId": "מודיעין-מכבים-רעות",
+    "address": "נחל צלמון 21",
+    "location": {
+      "latitude": 31.890913232755935,
+      "longitude": 35.009192927863126
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:modiin",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://webgis.modiin.muni.il/arcgis/rest/services/GeoInterestPoints/MapServer/0"
+    }
+  },
+  {
+    "id": "arcgis:modiin::216",
+    "name": "בית כנסת אודיה",
+    "type": "synagogue",
+    "cityId": "מודיעין-מכבים-רעות",
+    "address": "נהר הירדן פינת נחל זוהר",
+    "location": {
+      "latitude": 31.895007867865356,
+      "longitude": 35.00363472742169
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:modiin",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://webgis.modiin.muni.il/arcgis/rest/services/GeoInterestPoints/MapServer/0"
+    }
+  },
+  {
+    "id": "arcgis:modiin::225",
+    "name": "בית כנסת קיפודן",
+    "type": "synagogue",
+    "cityId": "מודיעין-מכבים-רעות",
+    "address": "קיפודן",
+    "location": {
+      "latitude": 31.904025240476642,
+      "longitude": 35.00887982506781
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:modiin",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://webgis.modiin.muni.il/arcgis/rest/services/GeoInterestPoints/MapServer/0"
+    }
+  },
+  {
+    "id": "arcgis:modiin::228",
+    "name": "בית כנסת קול יהודה",
+    "type": "synagogue",
+    "cityId": "מודיעין-מכבים-רעות",
+    "address": "יעל הגיבורה 64",
+    "location": {
+      "latitude": 31.88277778888121,
+      "longitude": 35.00854422667779
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:modiin",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://webgis.modiin.muni.il/arcgis/rest/services/GeoInterestPoints/MapServer/0"
+    }
+  },
+  {
+    "id": "arcgis:modiin::229",
+    "name": "בית כנסת אדיר במרום",
+    "type": "synagogue",
+    "cityId": "מודיעין-מכבים-רעות",
+    "address": "דן 20",
+    "location": {
+      "latitude": 31.890335926241583,
+      "longitude": 35.00331719214962
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:modiin",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://webgis.modiin.muni.il/arcgis/rest/services/GeoInterestPoints/MapServer/0"
+    }
+  },
+  {
+    "id": "arcgis:modiin::239",
+    "name": "בית כנסת אהל רחל",
+    "type": "synagogue",
+    "cityId": "מודיעין-מכבים-רעות",
+    "address": "בדולח 10",
+    "location": {
+      "latitude": 31.903569803935618,
+      "longitude": 34.99472545391897
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:modiin",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://webgis.modiin.muni.il/arcgis/rest/services/GeoInterestPoints/MapServer/0"
+    }
+  },
+  {
+    "id": "arcgis:modiin::250",
+    "name": "בית כנסת מוריה",
+    "type": "synagogue",
+    "cityId": "מודיעין-מכבים-רעות",
+    "address": "אסתר המלכה 27/3",
+    "location": {
+      "latitude": 31.88354446685107,
+      "longitude": 35.008627158759154
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:modiin",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://webgis.modiin.muni.il/arcgis/rest/services/GeoInterestPoints/MapServer/0"
+    }
+  },
+  {
+    "id": "arcgis:modiin::251",
+    "name": "בית כנסת צעירי מודיעין",
+    "type": "synagogue",
+    "cityId": "מודיעין-מכבים-רעות",
+    "address": "נחל פארן 12",
+    "location": {
+      "latitude": 31.895339077691077,
+      "longitude": 35.01985993104115
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:modiin",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://webgis.modiin.muni.il/arcgis/rest/services/GeoInterestPoints/MapServer/0"
+    }
+  },
+  {
+    "id": "arcgis:modiin::256",
+    "name": "בית כנסת אלעד",
+    "type": "synagogue",
+    "cityId": "מודיעין-מכבים-רעות",
+    "address": "מודיעין-מכבים-רעות",
+    "location": {
+      "latitude": 31.880863328612204,
+      "longitude": 35.00686780953868
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:modiin",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://webgis.modiin.muni.il/arcgis/rest/services/GeoInterestPoints/MapServer/0"
+    }
+  },
+  {
+    "id": "arcgis:modiin::318",
+    "name": "בית כנסת צעירי הגבעה",
+    "type": "synagogue",
+    "cityId": "מודיעין-מכבים-רעות",
+    "address": "נחל שורק 52",
+    "location": {
+      "latitude": 31.89338059330053,
+      "longitude": 35.00684109191528
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:modiin",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://webgis.modiin.muni.il/arcgis/rest/services/GeoInterestPoints/MapServer/0"
+    }
+  },
+  {
+    "id": "arcgis:modiin::342",
+    "name": "בית כנסת אהבת ישראל",
+    "type": "synagogue",
+    "cityId": "מודיעין-מכבים-רעות",
+    "address": "הנביאים 4",
+    "location": {
+      "latitude": 31.911212383505802,
+      "longitude": 35.008642607522255
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:modiin",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://webgis.modiin.muni.il/arcgis/rest/services/GeoInterestPoints/MapServer/0"
+    }
+  },
+  {
+    "id": "arcgis:modiin::346",
+    "name": "בית הכנסת אהבת חינם",
+    "type": "synagogue",
+    "cityId": "מודיעין-מכבים-רעות",
+    "address": "רח' הלוח העברי 42",
+    "location": {
+      "latitude": 31.88861652882143,
+      "longitude": 35.02337196371546
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:modiin",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://webgis.modiin.muni.il/arcgis/rest/services/GeoInterestPoints/MapServer/0"
+    }
+  },
+  {
+    "id": "arcgis:modiin::347",
+    "name": "בית הכנסת בן פורת יוסף",
+    "type": "synagogue",
+    "cityId": "מודיעין-מכבים-רעות",
+    "address": "רח' חשוון 10",
+    "location": {
+      "latitude": 31.8866224940739,
+      "longitude": 35.02266769810284
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:modiin",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://webgis.modiin.muni.il/arcgis/rest/services/GeoInterestPoints/MapServer/0"
+    }
+  },
+  {
+    "id": "arcgis:modiin::348",
+    "name": "בית הכנסת הבן איש חי",
+    "type": "synagogue",
+    "cityId": "מודיעין-מכבים-רעות",
+    "address": "רח' סיון 9",
+    "location": {
+      "latitude": 31.886829625705108,
+      "longitude": 35.02246646776681
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:modiin",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://webgis.modiin.muni.il/arcgis/rest/services/GeoInterestPoints/MapServer/0"
+    }
+  },
+  {
+    "id": "arcgis:modiin::349",
+    "name": "מעלה לירן אלמוסנינו",
+    "type": "synagogue",
+    "cityId": "מודיעין-מכבים-רעות",
+    "address": "רח' מעלה המור-מגדל המים רעות",
+    "location": {
+      "latitude": 31.888682152213427,
+      "longitude": 35.01884792864337
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:modiin",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://webgis.modiin.muni.il/arcgis/rest/services/GeoInterestPoints/MapServer/0"
+    }
+  },
+  {
+    "id": "arcgis:modiin::354",
+    "name": "בית כנסת איילת השחר",
+    "type": "synagogue",
+    "cityId": "מודיעין-מכבים-רעות",
+    "address": "רח' שש משזר 6",
+    "location": {
+      "latitude": 31.901189784967258,
+      "longitude": 35.00075648894299
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:modiin",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://webgis.modiin.muni.il/arcgis/rest/services/GeoInterestPoints/MapServer/0"
+    }
+  },
+  {
+    "id": "arcgis:modiin::356",
+    "name": "בית הכנסת תיתורה",
+    "type": "synagogue",
+    "cityId": "מודיעין-מכבים-רעות",
+    "address": "נחל תנינים 8",
+    "location": {
+      "latitude": 31.89721830841969,
+      "longitude": 35.02224519487392
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:modiin",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://webgis.modiin.muni.il/arcgis/rest/services/GeoInterestPoints/MapServer/0"
+    }
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "name": "מקווה שבזי - באר מרים",
+    "address": "שבזי 40, יבנה",
+    "phone": "089160961",
+    "gender": "נשים",
+    "coordSource": "record-native(waze)",
+    "location": {
+      "latitude": 31.871204376220692,
+      "longitude": 34.74469375610352
+    },
+    "disposition": "write_ready",
+    "reason": "native Waze coordinate, not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "name": "מקווה תורמוס",
+    "address": "תורמוס 5, יבנה",
+    "phone": "089154699",
+    "gender": "נשים",
+    "coordSource": "record-native(waze)",
+    "location": {
+      "latitude": 31.87101137422908,
+      "longitude": 34.738790988922126
+    },
+    "disposition": "write_ready",
+    "reason": "native Waze coordinate, not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "name": "מקווה הדקל",
+    "address": "משעול הרב אברהם אשטמקר, יבנה",
+    "phone": "089431759",
+    "gender": "נשים",
+    "coordSource": "record-native(waze)",
+    "location": {
+      "latitude": 31.875740041145846,
+      "longitude": 34.737846851348884
+    },
+    "disposition": "write_ready",
+    "reason": "native Waze coordinate, not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "name": "מקווה הצדף",
+    "address": "הצדף 7, יבנה",
+    "phone": "086532996",
+    "gender": "נשים",
+    "coordSource": "record-native(waze)",
+    "location": {
+      "latitude": 31.86757633300706,
+      "longitude": 34.73753571510316
+    },
+    "disposition": "write_ready",
+    "reason": "native Waze coordinate, not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "name": "מקווה נאות שמיר",
+    "address": "שי עגנון 17, יבנה",
+    "phone": "089345268",
+    "gender": "נשים",
+    "coordSource": "record-native(waze)",
+    "location": {
+      "latitude": 31.86618681340471,
+      "longitude": 34.72456049919129
+    },
+    "disposition": "write_ready",
+    "reason": "native Waze coordinate, not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "name": "מקווה טהרה לגברים ע\"ש הרב אהרון אבוקרט זצ\"ל",
+    "address": "חבלבל, יבנה",
+    "phone": "0527675546",
+    "gender": "גברים",
+    "coordSource": "record-native(waze)",
+    "location": {
+      "latitude": 31.8725694011164,
+      "longitude": 34.747588634490974
+    },
+    "disposition": "write_ready",
+    "reason": "native Waze coordinate, not a duplicate",
+    "matchedLiveId": null
+  }
+]

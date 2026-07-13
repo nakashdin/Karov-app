@@ -1,0 +1,48 @@
+{
+  "total": 270,
+  "fields": [
+    "Id",
+    "neighborho",
+    "street",
+    "HouseNumbe",
+    "name",
+    "OtherName",
+    "lat",
+    "lon"
+  ],
+  "sample": [
+    {
+      "_id": 1,
+      "Id": 1,
+      "neighborho": "רמות",
+      "street": "הר תבור",
+      "HouseNumbe": 6,
+      "name": "בית כנסת רמות הר חברון",
+      "OtherName": null,
+      "lat": 31.276709943712785,
+      "lon": 34.81121341920268
+    },
+    {
+      "_id": 2,
+      "Id": 4,
+      "neighborho": "רמות",
+      "street": "הר רמון",
+      "HouseNumbe": 74,
+      "name": "בית כנסת רמות אור- בנוי",
+      "OtherName": "רמות אור",
+      "lat": 31.277171055510156,
+      "lon": 34.807419992110674
+    },
+    {
+      "_id": 3,
+      "Id": 7,
+      "neighborho": "רמות",
+      "street": "גבריאל",
+      "HouseNumbe": 10,
+      "name": "זוהר הרקיע  מקלט",
+      "OtherName": null,
+      "lat": 31.27567844921577,
+      "lon": 34.80264382677888
+    }
+  ]
+}

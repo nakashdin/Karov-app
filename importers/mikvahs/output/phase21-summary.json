@@ -1,0 +1,74 @@
+{
+  "generatedNote": "PHASE 21 DRY-RUN — Tier-1 haredi councils (Bnei Brak, Modiin Illit, Beitar Illit, Elad) + Ashdod-continue (0 additional, source exhausted). Address-level coords only (GovMap ADDR_V1). No Nominatim, no settlement-level. No DB write, no publish, no rebuild.",
+  "sources": {
+    "בני ברק": {
+      "url": "https://www.bnei-brak.muni.il/mikvahs/",
+      "parsed": 12,
+      "duplicateVsLive": 10,
+      "withinBatchDup": 0,
+      "excluded": 1,
+      "writeReady": 1
+    },
+    "מודיעין עילית": {
+      "url": "https://www.modil.org.il/רשימת-המקוואות/",
+      "parsed": 12,
+      "duplicateVsLive": 0,
+      "withinBatchDup": 1,
+      "excluded": 2,
+      "writeReady": 9
+    },
+    "ביתר עילית": {
+      "url": "https://www.betar-illit.muni.il/מקוואות/",
+      "parsed": 8,
+      "duplicateVsLive": 1,
+      "withinBatchDup": 0,
+      "excluded": 2,
+      "writeReady": 5
+    },
+    "אלעד": {
+      "url": "https://www.elad.muni.il/Departments/Pages/Religion.aspx",
+      "parsed": 6,
+      "duplicateVsLive": 0,
+      "withinBatchDup": 0,
+      "excluded": 4,
+      "writeReady": 2
+    }
+  },
+  "ashdodContinue": {
+    "url": "https://ashdodmd.org/mikvaot/",
+    "additionalFound": 0,
+    "note": "VERIFIED: men/keilim/extra-quarters are image-only on the council site; no additional machine-readable records. Commercial aggregators excluded by golden rules."
+  },
+  "totalParsed": 38,
+  "duplicatesVsLive": 11,
+  "withinBatchDuplicates": 1,
+  "excluded": 9,
+  "writeReady": 17,
+  "writeReadyByCity": {
+    "בני ברק": 1,
+    "מודיעין עילית": 9,
+    "ביתר עילית": 5,
+    "אלעד": 2
+  },
+  "idCollisions": 0,
+  "duplicateAppIds": 0,
+  "finalRecommendedWriteCount": 17,
+  "liveMikvehBefore": 615,
+  "estimatedTotalAfterWrite": 632,
+  "keyFinding": "מודיעין עילית was the real gap (0 live → distinct buildings geocoded). ביתר עילית + אלעד add several. בני ברק official source caps at ~12 (already ~live) — the speculated 40-60 exists only on forbidden commercial aggregators. אשדוד source exhausted (0 additional).",
+  "carryOver": {
+    "phase19": 8,
+    "phase20": 8,
+    "note": "Phase 19 (Beit Shemesh+Kiryat Gat) + Phase 20 (Ashdod) write-ready — still NOT written."
+  },
+  "accumulatedWriteReadyForNextWrite": 33,
+  "accumulatedNote": "Phase 19 (8) + Phase 20 (8) + Phase 21 (17) = 33 records ready for ONE additive write when authorized.",
+  "rollbackPlan": [
+    "Backup places.osm.json → places.osm.pre-phaseNN.backup.json (+cities) before any write",
+    "Additive append only; do NOT run rebuildAppDataset"
+  ],
+  "dryRun": true,
+  "liveDataTouched": false,
+  "publishPerformed": false,
+  "rebuildTouched": false
+}

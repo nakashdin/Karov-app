@@ -1,0 +1,3661 @@
+[
+  {
+    "primaryId": "chabad-manual-1-שוהם-בית-חב-ד-שוהם",
+    "name": "בית חב\"ד שוהם",
+    "city": "שוהם",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-1-שוהם-בית-חב-ד-שוהם",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד שוהם",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-2-שוהם-בית-כנסת-חב-ד-שוהם",
+    "name": "בית כנסת חב\"ד שוהם",
+    "city": "שוהם",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-2-שוהם-בית-כנסת-חב-ד-שוהם",
+    "matchedType": "chabad_house",
+    "matchedName": "בית כנסת חב\"ד שוהם",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-3-מודיעין-מכבים-רעות-בית-חב-ד-מודיעין",
+    "name": "בית חב\"ד מודיעין",
+    "city": "מודיעין-מכבים-רעות",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-3-מודיעין-מכבים-רעות-בית-חב-ד-מודיעין",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד מודיעין",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-4-ראש-העין-בית-חב-ד-ראש-העין-יהודה-הלוי",
+    "name": "בית חב\"ד ראש העין יהודה הלוי",
+    "city": "ראש העין",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "conflict",
+    "reason": "near an existing place but uncertain → HELD for manual review",
+    "matchedId": "rc-rosh-haayin-h1kc3o8i",
+    "matchedType": "synagogue",
+    "matchedName": "בית חב\"ד ראש העין",
+    "distanceM": 99,
+    "nameSim": 0.85
+  },
+  {
+    "primaryId": "chabad-manual-5-ראש-העין-בית-חב-ד-ראש-העין-זכריה-הנביא",
+    "name": "בית חב\"ד ראש העין זכריה הנביא",
+    "city": "ראש העין",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-5-ראש-העין-בית-חב-ד-ראש-העין-זכריה-הנביא",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד ראש העין זכריה הנביא",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-6-ראש-העין-בית-חב-ד-ראש-העין-עגנון",
+    "name": "בית חב\"ד ראש העין עגנון",
+    "city": "ראש העין",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-6-ראש-העין-בית-חב-ד-ראש-העין-עגנון",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד ראש העין עגנון",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-7-ראש-העין-בית-חב-ד-ראש-העין-אלתרמן",
+    "name": "בית חב\"ד ראש העין אלתרמן",
+    "city": "ראש העין",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "chabad-manual-9-ראש-העין-בית-חב-ד-ראש-העין-הרצוג",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד ראש העין הרצוג",
+    "distanceM": 200,
+    "nameSim": 0.5
+  },
+  {
+    "primaryId": "chabad-manual-8-ראש-העין-בית-חב-ד-ראש-העין-קורי",
+    "name": "בית חב\"ד ראש העין קורי",
+    "city": "ראש העין",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-8-ראש-העין-בית-חב-ד-ראש-העין-קורי",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד ראש העין קורי",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-9-ראש-העין-בית-חב-ד-ראש-העין-הרצוג",
+    "name": "בית חב\"ד ראש העין הרצוג",
+    "city": "ראש העין",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-9-ראש-העין-בית-חב-ד-ראש-העין-הרצוג",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד ראש העין הרצוג",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-10-ראש-העין-בית-חב-ד-ראש-העין-ה-באייר",
+    "name": "בית חב\"ד ראש העין ה' באייר",
+    "city": "ראש העין",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-10-ראש-העין-בית-חב-ד-ראש-העין-ה-באייר",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד ראש העין ה' באייר",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-11-אלעד-בית-כנסת-חב-ד-אלעד",
+    "name": "בית כנסת חב\"ד אלעד",
+    "city": "אלעד",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-11-אלעד-בית-כנסת-חב-ד-אלעד",
+    "matchedType": "chabad_house",
+    "matchedName": "בית כנסת חב\"ד אלעד",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-12-אלעד-בית-חב-ד-אלעד",
+    "name": "בית חב\"ד אלעד",
+    "city": "אלעד",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-12-אלעד-בית-חב-ד-אלעד",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד אלעד",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-13-קריית-שדה-התעופה-בית-חב-ד-קריית-שדה-התעו",
+    "name": "בית חב\"ד קריית שדה התעופה",
+    "city": "קריית שדה התעופה",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-13-קריית-שדה-התעופה-בית-חב-ד-קריית-שדה-התעו",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד קריית שדה התעופה",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-14-לוד-בית-הכנסת-חב-ד",
+    "name": "בית הכנסת חב\"ד",
+    "city": "לוד",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-14-לוד-בית-הכנסת-חב-ד",
+    "matchedType": "chabad_house",
+    "matchedName": "בית הכנסת חב\"ד",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-15-רמלה-בית-חב-ד-רמלה",
+    "name": "בית חב\"ד רמלה",
+    "city": "רמלה",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-15-רמלה-בית-חב-ד-רמלה",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד רמלה",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-16-לוד-בית-חב-ד-לוד",
+    "name": "בית חב\"ד לוד",
+    "city": "לוד",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "rc-lod-h1j2cze4",
+    "matchedType": "synagogue",
+    "matchedName": "המלאך מיכאל",
+    "distanceM": 59,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-manual-17-אשדוד-בית-חב-ד-רובע-ט-ו-אשדוד",
+    "name": "בית חב\"ד רובע ט\"ו אשדוד",
+    "city": "אשדוד",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-17-אשדוד-בית-חב-ד-רובע-ט-ו-אשדוד",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד רובע ט\"ו אשדוד",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-18-אשדוד-חב-ד-אשדוד",
+    "name": "חב\"ד אשדוד",
+    "city": "אשדוד",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-18-אשדוד-חב-ד-אשדוד",
+    "matchedType": "chabad_house",
+    "matchedName": "חב\"ד אשדוד",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-19-אשדוד-בית-חב-ד-רובע-הקריה-אשדוד",
+    "name": "בית חב\"ד רובע הקריה אשדוד",
+    "city": "אשדוד",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-19-אשדוד-בית-חב-ד-רובע-הקריה-אשדוד",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד רובע הקריה אשדוד",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-20-אשדוד-בית-חב-ד-רובע-יא-אשדוד",
+    "name": "בית חב\"ד רובע יא אשדוד",
+    "city": "אשדוד",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-20-אשדוד-בית-חב-ד-רובע-יא-אשדוד",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד רובע יא אשדוד",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-21-אשדוד-בית-חב-ד-אשדוד",
+    "name": "בית חב\"ד אשדוד",
+    "city": "אשדוד",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-21-אשדוד-בית-חב-ד-אשדוד",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד אשדוד",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-22-אשדוד-בית-חב-ד-בעליה-אשדוד",
+    "name": "בית חב\"ד בעליה אשדוד",
+    "city": "אשדוד",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-22-אשדוד-בית-חב-ד-בעליה-אשדוד",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד בעליה אשדוד",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-23-אשדוד-בית-חב-ד-רובע-ד-אשדוד",
+    "name": "בית חב\"ד רובע ד' אשדוד",
+    "city": "אשדוד",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "arcgis:ashdod::65",
+    "matchedType": "synagogue",
+    "matchedName": "אהבת ישראל",
+    "distanceM": 54,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-manual-24-אשדוד-בית-חב-ד-רובע-ב-אשדוד",
+    "name": "בית חב\"ד רובע ב אשדוד",
+    "city": "אשדוד",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "arcgis:ashdod::906",
+    "matchedType": "synagogue",
+    "matchedName": "אוצרות חיים",
+    "distanceM": 26,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-manual-25-שדרות-בית-חב-ד-לסטודנטים-שדרות",
+    "name": "בית חב\"ד לסטודנטים שדרות",
+    "city": "שדרות",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-25-שדרות-בית-חב-ד-לסטודנטים-שדרות",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד לסטודנטים שדרות",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-26-שדרות-בית-חבד-שדרות",
+    "name": "בית חבד שדרות",
+    "city": "שדרות",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-26-שדרות-בית-חבד-שדרות",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חבד שדרות",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-27-אשקלון-בית-חב-ד-אשקלון",
+    "name": "בית חב\"ד אשקלון",
+    "city": "אשקלון",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-27-אשקלון-בית-חב-ד-אשקלון",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד אשקלון",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-28-אשקלון-Russian-Speakers-Chabad-House-of-",
+    "name": "Russian Speakers Chabad House of Ashkelon",
+    "city": "אשקלון",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-28-אשקלון-Russian-Speakers-Chabad-House-of-",
+    "matchedType": "chabad_house",
+    "matchedName": "Russian Speakers Chabad House of Ashkelon",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-29-אשקלון-בית-חב-ד-הלוז-אפרידר-אשקלון",
+    "name": "בית חב\"ד הלוז אפרידר אשקלון",
+    "city": "אשקלון",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-29-אשקלון-בית-חב-ד-הלוז-אפרידר-אשקלון",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד הלוז אפרידר אשקלון",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-30-אשקלון-בית-חב-ד-מרכז-העיר-אשקלון",
+    "name": "בית חב\"ד מרכז העיר אשקלון",
+    "city": "אשקלון",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-30-אשקלון-בית-חב-ד-מרכז-העיר-אשקלון",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד מרכז העיר אשקלון",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-31-אשקלון-אגודת-חב-ד-אשקלון",
+    "name": "אגודת חב\"ד אשקלון",
+    "city": "אשקלון",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-31-אשקלון-אגודת-חב-ד-אשקלון",
+    "matchedType": "chabad_house",
+    "matchedName": "אגודת חב\"ד אשקלון",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-32-אשקלון-בית-חב-ד-עיר-היין-אשקלון",
+    "name": "בית חב\"ד עיר היין אשקלון",
+    "city": "אשקלון",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-32-אשקלון-בית-חב-ד-עיר-היין-אשקלון",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד עיר היין אשקלון",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-33-אשקלון-בית-חבד-ברנע-מעלה-הגת",
+    "name": "בית חבד ברנע מעלה הגת",
+    "city": "אשקלון",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-33-אשקלון-בית-חבד-ברנע-מעלה-הגת",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חבד ברנע מעלה הגת",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-34-יהוד-מונוסון-בית-חב-ד-יהוד",
+    "name": "בית חב\"ד יהוד",
+    "city": "יהוד-מונוסון",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "osm-node-8281773511",
+    "matchedType": "synagogue",
+    "matchedName": "קבר יהודה",
+    "distanceM": 204,
+    "nameSim": 0.85
+  },
+  {
+    "primaryId": "chabad-manual-36-קריית-אונו-בית-חב-ד-קריית-אונו",
+    "name": "בית חב\"ד קריית אונו",
+    "city": "קריית אונו",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "osm-way-361002494",
+    "matchedType": "synagogue",
+    "matchedName": "בית כנסת אהל מועד",
+    "distanceM": 28,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-manual-37-רמת-גן-בית-חב-ד-רמת-גן",
+    "name": "בית חב\"ד רמת גן",
+    "city": "רמת גן",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-37-רמת-גן-בית-חב-ד-רמת-גן",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד רמת גן",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-38-ראשון-לציון-בית-חב-ד-נווה-חוף-ראשון-לציו",
+    "name": "בית חב\"ד נווה חוף ראשון לציון",
+    "city": "ראשון לציון",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-38-ראשון-לציון-בית-חב-ד-נווה-חוף-ראשון-לציו",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד נווה חוף ראשון לציון",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-39-פתח-תקווה-בית-חב-ד-כנסת-ישראל-פתח-תקווה",
+    "name": "בית חב\"ד כנסת ישראל פתח תקווה",
+    "city": "פתח תקווה",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-39-פתח-תקווה-בית-חב-ד-כנסת-ישראל-פתח-תקווה",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד כנסת ישראל פתח תקווה",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-40-הרצליה-בית-חב-ד-אזור-התעשייה-הרצליה",
+    "name": "בית חב\"ד אזור התעשייה הרצליה",
+    "city": "הרצליה",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-40-הרצליה-בית-חב-ד-אזור-התעשייה-הרצליה",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד אזור התעשייה הרצליה",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-41-באר-אורה-בית-חב-ד-באר-אורה",
+    "name": "בית חב\"ד באר אורה",
+    "city": "באר אורה",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-41-באר-אורה-בית-חב-ד-באר-אורה",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד באר אורה",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-42-מצפה-רמון-בית-חב-ד-מצפה-רמון",
+    "name": "בית חב\"ד מצפה רמון",
+    "city": "מצפה רמון",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-42-מצפה-רמון-בית-חב-ד-מצפה-רמון",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד מצפה רמון",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-43-ספיר-בית-חב-ד-ספיר",
+    "name": "בית חב\"ד ספיר",
+    "city": "ספיר",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-43-ספיר-בית-חב-ד-ספיר",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד ספיר",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-44-ירוחם-בית-חב-ד-ירוחם",
+    "name": "בית חב\"ד ירוחם",
+    "city": "ירוחם",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-44-ירוחם-בית-חב-ד-ירוחם",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד ירוחם",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-45-אשלים-בית-חב-ד-אשלים",
+    "name": "בית חב\"ד אשלים",
+    "city": "אשלים",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-45-אשלים-בית-חב-ד-אשלים",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד אשלים",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-46-דימונה-בית-חב-ד-נווה-חורש-ותשלוז-דימונה",
+    "name": "בית חב\"ד נווה חורש ותשלוז דימונה",
+    "city": "דימונה",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-46-דימונה-בית-חב-ד-נווה-חורש-ותשלוז-דימונה",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד נווה חורש ותשלוז דימונה",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-47-דימונה-בית-חב-ד-דימונה",
+    "name": "בית חב\"ד דימונה",
+    "city": "דימונה",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-47-דימונה-בית-חב-ד-דימונה",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד דימונה",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-48-דימונה-בית-חב-ד-דימונה",
+    "name": "בית חב\"ד דימונה",
+    "city": "דימונה",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-48-דימונה-בית-חב-ד-דימונה",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד דימונה",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-49-עין-בוקק-בית-חב-ד-חוף-ים-המלח",
+    "name": "בית חב\"ד חוף ים המלח",
+    "city": "עין בוקק",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-49-עין-בוקק-בית-חב-ד-חוף-ים-המלח",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד חוף ים המלח",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-50-עומר-בית-חב-ד-עומר",
+    "name": "בית חב\"ד עומר",
+    "city": "עומר",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-50-עומר-בית-חב-ד-עומר",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד עומר",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-51-באר-שבע-בית-חב-ד-שכונת-דרום-באר-שבע",
+    "name": "בית חב\"ד שכונת דרום באר שבע",
+    "city": "באר שבע",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-51-באר-שבע-בית-חב-ד-שכונת-דרום-באר-שבע",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד שכונת דרום באר שבע",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-52-באר-שבע-בית-חב-ד-נווה-זאב-באר-שבע",
+    "name": "בית חב\"ד נווה זאב באר שבע",
+    "city": "באר שבע",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-52-באר-שבע-בית-חב-ד-נווה-זאב-באר-שבע",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד נווה זאב באר שבע",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-53-באר-שבע-בית-חב-ד-המרכזי-באר-שבע",
+    "name": "בית חב\"ד המרכזי באר שבע",
+    "city": "באר שבע",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-53-באר-שבע-בית-חב-ד-המרכזי-באר-שבע",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד המרכזי באר שבע",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-54-באר-שבע-בית-חב-ד-נאות-לון-באר-שבע",
+    "name": "בית חב\"ד נאות לון באר שבע",
+    "city": "באר שבע",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "conflict",
+    "reason": "near an existing place but uncertain → HELD for manual review",
+    "matchedId": "rc-beer-sheva-h1pkiypb",
+    "matchedType": "synagogue",
+    "matchedName": "בית חב\"ד נאות לון",
+    "distanceM": 117,
+    "nameSim": 0.85
+  },
+  {
+    "primaryId": "chabad-manual-55-באר-שבע-בית-חב-ד-שכונה-ה-באר-שבע",
+    "name": "בית חב\"ד שכונה ה' באר שבע",
+    "city": "באר שבע",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-55-באר-שבע-בית-חב-ד-שכונה-ה-באר-שבע",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד שכונה ה' באר שבע",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-56-באר-שבע-בית-חב-ד-נווה-נוי-באר-שבע",
+    "name": "בית חב\"ד נווה נוי באר שבע",
+    "city": "באר שבע",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-56-באר-שבע-בית-חב-ד-נווה-נוי-באר-שבע",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד נווה נוי באר שבע",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-57-באר-שבע-בית-חב-ד-שכונת-הפארק-באר-שבע",
+    "name": "בית חב\"ד שכונת הפארק באר שבע",
+    "city": "באר שבע",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-57-באר-שבע-בית-חב-ד-שכונת-הפארק-באר-שבע",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד שכונת הפארק באר שבע",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-58-מיתר-בית-חב-ד-מיתר",
+    "name": "בית חב\"ד מיתר",
+    "city": "מיתר",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-58-מיתר-בית-חב-ד-מיתר",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד מיתר",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-59-טנא-בית-חב-ד-טנא-עומרים",
+    "name": "בית חב\"ד טנא עומרים",
+    "city": "טנא",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-59-טנא-בית-חב-ד-טנא-עומרים",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד טנא עומרים",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-60-עתניאל-בית-חב-ד-עתניאל",
+    "name": "בית חב\"ד עתניאל",
+    "city": "עתניאל",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-60-עתניאל-בית-חב-ד-עתניאל",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד עתניאל",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-61-מטולה-בית-חב-ד-מטולה",
+    "name": "בית חב\"ד מטולה",
+    "city": "מטולה",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-61-מטולה-בית-חב-ד-מטולה",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד מטולה",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-62-מעיין-ברוך-בית-חב-ד-מעיין-ברוך",
+    "name": "בית חב\"ד מעיין ברוך",
+    "city": "מעיין ברוך",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-62-מעיין-ברוך-בית-חב-ד-מעיין-ברוך",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד מעיין ברוך",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-63-קרית-שמונה-בית-חב-ד-קריית-שמונה",
+    "name": "בית חב\"ד קריית שמונה",
+    "city": "קרית שמונה",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-63-קרית-שמונה-בית-חב-ד-קריית-שמונה",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד קריית שמונה",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-64-עלמה-בית-חב-ד-עלמה",
+    "name": "בית חב\"ד עלמה",
+    "city": "עלמה",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "conflict",
+    "reason": "near an existing place but uncertain → HELD for manual review",
+    "matchedId": "rc-marom-galil-h1lclx9g",
+    "matchedType": "synagogue",
+    "matchedName": "שלג עלמה",
+    "distanceM": 83,
+    "nameSim": 0.85
+  },
+  {
+    "primaryId": "chabad-manual-65-חצור-הגלילית-בית-חב-ד-חצור-הגלילית",
+    "name": "בית חב\"ד חצור הגלילית",
+    "city": "חצור הגלילית",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-65-חצור-הגלילית-בית-חב-ד-חצור-הגלילית",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד חצור הגלילית",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-66-מעלות-תרשיחא-בית-חב-ד-מעלות-תרשיחא",
+    "name": "בית חב\"ד מעלות תרשיחא",
+    "city": "מעלות-תרשיחא",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-66-מעלות-תרשיחא-בית-חב-ד-מעלות-תרשיחא",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד מעלות תרשיחא",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-67-קדימה-צורן-בית-חב-ד-צורן-תרשיחא",
+    "name": "בית חב\"ד צורן תרשיחא",
+    "city": "קדימה-צורן",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-67-קדימה-צורן-בית-חב-ד-צורן-תרשיחא",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד צורן תרשיחא",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-68-שתולה-בית-חב-ד-שתולה",
+    "name": "בית חב\"ד שתולה",
+    "city": "שתולה",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-68-שתולה-בית-חב-ד-שתולה",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד שתולה",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-69-נווה-זיו-בית-חב-ד-נווה-זיו",
+    "name": "בית חב\"ד נווה זיו",
+    "city": "נווה זיו",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-69-נווה-זיו-בית-חב-ד-נווה-זיו",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד נווה זיו",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-70-שלומי-בית-חב-ד-שלומי",
+    "name": "בית חב\"ד שלומי",
+    "city": "שלומי",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-70-שלומי-בית-חב-ד-שלומי",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד שלומי",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-71-לימן-בית-חב-ד-לימן",
+    "name": "בית חב\"ד לימן",
+    "city": "לימן",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-71-לימן-בית-חב-ד-לימן",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד לימן",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-72-נהריה-בית-חב-ד-נהריה",
+    "name": "בית חב\"ד נהריה",
+    "city": "נהריה",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "arcgis:nahariya::49",
+    "matchedType": "synagogue",
+    "matchedName": "משכנות יובל",
+    "distanceM": 22,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-manual-73-עכו-בית-חב-ד-עכו-שיכון",
+    "name": "בית חב\"ד עכו שיכון",
+    "city": "עכו",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-73-עכו-בית-חב-ד-עכו-שיכון",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד עכו שיכון",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-74-עכו-בית-חב-ד-עכו",
+    "name": "בית חב\"ד עכו",
+    "city": "עכו",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-74-עכו-בית-חב-ד-עכו",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד עכו",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-75-קריית-ביאליק-בית-חב-ד-גבעת-הרקפות-קריית-",
+    "name": "בית חב\"ד גבעת הרקפות קריית ביאליק",
+    "city": "קריית ביאליק",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-75-קריית-ביאליק-בית-חב-ד-גבעת-הרקפות-קריית-",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד גבעת הרקפות קריית ביאליק",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-76-מגדל-בית-חב-ד-מגדל",
+    "name": "בית חב\"ד מגדל",
+    "city": "מגדל",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-76-מגדל-בית-חב-ד-מגדל",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד מגדל",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-77-ארבל-בית-חב-ד-ארבל",
+    "name": "בית חב\"ד ארבל",
+    "city": "ארבל",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-77-ארבל-בית-חב-ד-ארבל",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד ארבל",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-78-טבריה-בית-חב-ד-טבריה",
+    "name": "בית חב\"ד טבריה",
+    "city": "טבריה",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-78-טבריה-בית-חב-ד-טבריה",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד טבריה",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-79-טבריה-בית-חב-ד-מרכז-העיר-טבריה",
+    "name": "בית חב\"ד מרכז העיר טבריה",
+    "city": "טבריה",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-79-טבריה-בית-חב-ד-מרכז-העיר-טבריה",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד מרכז העיר טבריה",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-80-יבנאל-בית-חב-ד-יבנאל",
+    "name": "בית חב\"ד יבנאל",
+    "city": "יבנאל",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-80-יבנאל-בית-חב-ד-יבנאל",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד יבנאל",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-81-מנחמיה-בית-חב-ד-מנחמיה",
+    "name": "בית חב\"ד מנחמיה",
+    "city": "מנחמיה",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-81-מנחמיה-בית-חב-ד-מנחמיה",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד מנחמיה",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-82-חיספין-בית-חב-ד-חיספין",
+    "name": "בית חב\"ד חיספין",
+    "city": "חיספין",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-82-חיספין-בית-חב-ד-חיספין",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד חיספין",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-83-אניעם-בית-חב-ד-אניעם",
+    "name": "בית חב\"ד אניעם",
+    "city": "אניעם",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-83-אניעם-בית-חב-ד-אניעם",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד אניעם",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-84-קצרין-בית-חב-ד-קצרין",
+    "name": "בית חב\"ד קצרין",
+    "city": "קצרין",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-84-קצרין-בית-חב-ד-קצרין",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד קצרין",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-85-אמנון-בית-חב-ד-אמנון",
+    "name": "בית חב\"ד אמנון",
+    "city": "אמנון",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-85-אמנון-בית-חב-ד-אמנון",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד אמנון",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-86-צפת-בית-חב-ד-שפר-צפת",
+    "name": "בית חב\"ד שפר צפת",
+    "city": "צפת",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-86-צפת-בית-חב-ד-שפר-צפת",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד שפר צפת",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-87-צפת-בית-חב-ד-העיר-העתיקה-צפת",
+    "name": "בית חב\"ד העיר העתיקה צפת",
+    "city": "צפת",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-87-צפת-בית-חב-ד-העיר-העתיקה-צפת",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד העיר העתיקה צפת",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-88-צפת-בית-חב-ד-אוצר-הסת-ם",
+    "name": "בית חב\"ד אוצר הסת\"ם",
+    "city": "צפת",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-88-צפת-בית-חב-ד-אוצר-הסת-ם",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד אוצר הסת\"ם",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-89-צפת-בית-חב-ד-מרום-כנען",
+    "name": "בית חב\"ד מרום כנען",
+    "city": "צפת",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-89-צפת-בית-חב-ד-מרום-כנען",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד מרום כנען",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-90-גבעת-אבני-בית-חב-ד-גבעת-אבני",
+    "name": "בית חב\"ד גבעת אבני",
+    "city": "גבעת אבני",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-90-גבעת-אבני-בית-חב-ד-גבעת-אבני",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד גבעת אבני",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-91-אילניה-בית-חב-ד-אילניה",
+    "name": "בית חב\"ד אילניה",
+    "city": "אילניה",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-91-אילניה-בית-חב-ד-אילניה",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד אילניה",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-92-שרונה-בית-חב-ד-שרונה",
+    "name": "בית חב\"ד שרונה",
+    "city": "שרונה",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-92-שרונה-בית-חב-ד-שרונה",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד שרונה",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-93-בית-שאן-בית-חב-ד-עמק-המעיינות-בית-שאן",
+    "name": "בית חב\"ד עמק המעיינות בית שאן",
+    "city": "בית שאן",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-93-בית-שאן-בית-חב-ד-עמק-המעיינות-בית-שאן",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד עמק המעיינות בית שאן",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-94-בית-שאן-בית-חב-ד-בית-שאן",
+    "name": "בית חב\"ד בית שאן",
+    "city": "בית שאן",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-94-בית-שאן-בית-חב-ד-בית-שאן",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד בית שאן",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-95-רוויה-בית-חב-ד-יישובי-ביכורה-רוויה",
+    "name": "בית חב\"ד יישובי ביכורה רוויה",
+    "city": "רוויה",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-95-רוויה-בית-חב-ד-יישובי-ביכורה-רוויה",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד יישובי ביכורה רוויה",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-96-מעלה-אפרים-בית-חב-ד-מעלה-אפריים",
+    "name": "בית חב\"ד מעלה אפריים",
+    "city": "מעלה אפרים",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-96-מעלה-אפרים-בית-חב-ד-מעלה-אפריים",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד מעלה אפריים",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-97-עפרה-בית-חב-ד-עפרה",
+    "name": "בית חב\"ד עפרה",
+    "city": "עפרה",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-97-עפרה-בית-חב-ד-עפרה",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד עפרה",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-98-מצפה-יריחו-בית-חב-ד-יישובי-חבל-יריחו",
+    "name": "בית חב\"ד יישובי חבל יריחו",
+    "city": "מצפה יריחו",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-manual-98-מצפה-יריחו-בית-חב-ד-יישובי-חבל-יריחו",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד יישובי חבל יריחו",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-99-מעלה-אדומים-בית-חב-ד-מעלה-אדומים",
+    "name": "בית חב\"ד מעלה אדומים",
+    "city": "מעלה אדומים",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate"
+  },
+  {
+    "primaryId": "chabad-manual-100-ירושלים-בית-חב-ד-תלפיות-מזרח",
+    "name": "בית חב\"ד תלפיות מזרח",
+    "city": "ירושלים",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "osm-way-204022513",
+    "matchedType": "synagogue",
+    "matchedName": "תפארת משה ורחל",
+    "distanceM": 409,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-manual-101-ירושלים-בית-חב-ד-ארנונה-תלפיות",
+    "name": "בית חב\"ד ארנונה תלפיות",
+    "city": "ירושלים",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "osm-way-183472442",
+    "matchedType": "synagogue",
+    "matchedName": "בית כנסת החורשה",
+    "distanceM": 196,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-manual-102-ירושלים-בית-חב-ד-אבו-טור",
+    "name": "בית חב\"ד אבו טור",
+    "city": "ירושלים",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "osm-way-166574253",
+    "matchedType": "synagogue",
+    "matchedName": "בית חב\"ד",
+    "distanceM": 91,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-manual-103-ירושלים-בית-חב-ד-בקעה---יודאיקה",
+    "name": "בית חב\"ד בקעה - יודאיקה",
+    "city": "ירושלים",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "osm-way-186485359",
+    "matchedType": "synagogue",
+    "matchedName": "היכל ברוך",
+    "distanceM": 82,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-manual-104-ירושלים-בית-חב-ד-קטמון-וגונן",
+    "name": "בית חב\"ד קטמון וגונן",
+    "city": "ירושלים",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "osm-way-163367220",
+    "matchedType": "synagogue",
+    "matchedName": "פאר ירושלים",
+    "distanceM": 81,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-manual-105-ירושלים-בית-חב-ד-קבר-דוד-המלך",
+    "name": "בית חב\"ד קבר דוד המלך",
+    "city": "ירושלים",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "osm-way-161058978",
+    "matchedType": "synagogue",
+    "matchedName": "קבר דוד המלך",
+    "distanceM": 130,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-manual-106-ירושלים-בית-חב-ד-הקארדו",
+    "name": "בית חב\"ד הקארדו",
+    "city": "ירושלים",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "arcgis:jerusalem::78",
+    "matchedType": "synagogue",
+    "matchedName": "בי''כ הרב דוד בן שמעון",
+    "distanceM": 47,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-manual-107-ירושלים-בית-חב-ד-אוהל-אברהם",
+    "name": "בית חב\"ד אוהל אברהם",
+    "city": "ירושלים",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "osm-way-499223566",
+    "matchedType": "synagogue",
+    "matchedName": "אוהל יצחק",
+    "distanceM": 378,
+    "nameSim": 0.33
+  },
+  {
+    "primaryId": "chabad-manual-108-ירושלים-בית-חב-ד-הבקעה---בית-לוי",
+    "name": "בית חב\"ד הבקעה - בית לוי",
+    "city": "ירושלים",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "arcgis:jerusalem::38",
+    "matchedType": "synagogue",
+    "matchedName": "בי''כ בית שלמה",
+    "distanceM": 217,
+    "nameSim": 0.2
+  },
+  {
+    "primaryId": "chabad-manual-109-ירושלים-בית-חב-ד-מורדות-גילה",
+    "name": "בית חב\"ד מורדות גילה",
+    "city": "ירושלים",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "arcgis:jerusalem::10",
+    "matchedType": "synagogue",
+    "matchedName": "בי''כ בית אל",
+    "distanceM": 146,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-manual-110-ירושלים-בית-חב-ד-רחביה",
+    "name": "בית חב\"ד רחביה",
+    "city": "ירושלים",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "osm-way-119441045",
+    "matchedType": "synagogue",
+    "matchedName": "בית הכנסת הגדול",
+    "distanceM": 70,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-manual-111-ירושלים-בית-חב-ד-טלביה",
+    "name": "בית חב\"ד טלביה",
+    "city": "ירושלים",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "osm-way-158018710",
+    "matchedType": "synagogue",
+    "matchedName": "מרכז וייס",
+    "distanceM": 107,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-manual-112-ירושלים-בית-חב-ד-מרכז-ירושלים-נחלת-שבעה",
+    "name": "בית חב\"ד מרכז ירושלים נחלת שבעה",
+    "city": "ירושלים",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "osm-way-158154188",
+    "matchedType": "synagogue",
+    "matchedName": "נחלת יעקב",
+    "distanceM": 92,
+    "nameSim": 0.2
+  },
+  {
+    "primaryId": "chabad-manual-113-ירושלים-בית-חב-ד-מוסדות-חב-ד-גילה",
+    "name": "בית חב\"ד מוסדות חב\"ד גילה",
+    "city": "ירושלים",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "arcgis:jerusalem::10",
+    "matchedType": "synagogue",
+    "matchedName": "בי''כ בית אל",
+    "distanceM": 207,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-manual-114-ירושלים-בית-חב-ד-קריית-הלאום",
+    "name": "בית חב\"ד קריית הלאום",
+    "city": "ירושלים",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "osm-node-13120190078",
+    "matchedType": "synagogue",
+    "matchedName": "בית כנסת בראשי",
+    "distanceM": 564,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-manual-115-ירושלים-בית-חב-ד-רמת-בית-הכרם",
+    "name": "בית חב\"ד רמת בית הכרם",
+    "city": "ירושלים",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "osm-way-252685228",
+    "matchedType": "synagogue",
+    "matchedName": "המרכזי בית הכרם",
+    "distanceM": 134,
+    "nameSim": 0.5
+  },
+  {
+    "primaryId": "chabad-manual-116-ירושלים-בית-חב-ד-הולי-לנד",
+    "name": "בית חב\"ד הולי לנד",
+    "city": "ירושלים",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "osm-way-240171033",
+    "matchedType": "synagogue",
+    "matchedName": "זכות אבות",
+    "distanceM": 427,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-manual-117-ירושלים-בית-חב-ד-עיר-גנים",
+    "name": "בית חב\"ד עיר גנים",
+    "city": "ירושלים",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "osm-way-221848456",
+    "matchedType": "synagogue",
+    "matchedName": "צעירי גנים",
+    "distanceM": 378,
+    "nameSim": 0.33
+  },
+  {
+    "primaryId": "chabad-manual-118-ירושלים-בית-חב-ד-גבעת-המשואה",
+    "name": "בית חב\"ד גבעת המשואה",
+    "city": "ירושלים",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "osm-way-229400740",
+    "matchedType": "synagogue",
+    "matchedName": "קדושי עלייה",
+    "distanceM": 95,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-manual-119-ירושלים-בית-חב-ד-עין-כרם",
+    "name": "בית חב\"ד עין כרם",
+    "city": "ירושלים",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "arcgis:jerusalem::155",
+    "matchedType": "synagogue",
+    "matchedName": "בי''כ תקוותנו",
+    "distanceM": 282,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-manual-120-ירושלים-בית-חב-ד-הר-נוף",
+    "name": "בית חב\"ד הר נוף",
+    "city": "ירושלים",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "osm-way-257618780",
+    "matchedType": "synagogue",
+    "matchedName": "אברהם יגל",
+    "distanceM": 32,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-manual-121-ירושלים-בית-חב-ד-חב-ירושלים",
+    "name": "בית חב\"ד חב ירושלים",
+    "city": "ירושלים",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "osm-way-255422575",
+    "matchedType": "synagogue",
+    "matchedName": "ישיבת תכלת אדם",
+    "distanceM": 494,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-manual-122-ירושלים-בית-חב-ד-בבה",
+    "name": "בית חב\"ד בבה",
+    "city": "ירושלים",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "osm-node-4869856615",
+    "matchedType": "synagogue",
+    "matchedName": "עץ חיים",
+    "distanceM": 206,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-manual-123-ירושלים-בית-חב-ד-ירושלים",
+    "name": "בית חב\"ד ירושלים",
+    "city": "ירושלים",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "arcgis:jerusalem::50",
+    "matchedType": "synagogue",
+    "matchedName": "בי''כ זכרון יחיאל",
+    "distanceM": 117,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-manual-124-ירושלים-בית-חב-ד-רמת-אשכול",
+    "name": "בית חב\"ד רמת אשכול",
+    "city": "ירושלים",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "osm-way-280398703",
+    "matchedType": "synagogue",
+    "matchedName": "בית הכנסת אהבת ישראל",
+    "distanceM": 142,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-manual-125-ירושלים-בית-חב-ד-ארנונה",
+    "name": "בית חב\"ד ארנונה",
+    "city": "ירושלים",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "osm-way-183962527",
+    "matchedType": "synagogue",
+    "matchedName": "בית כנסת ע״ש שי עגנון",
+    "distanceM": 24,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-manual-126-ירושלים-בית-חב-ד-מחנה-יהודה---הויודקה",
+    "name": "בית חב\"ד מחנה יהודה - הויודקה",
+    "city": "ירושלים",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "osm-node-13929949141",
+    "matchedType": "synagogue",
+    "matchedName": "בית יהודה",
+    "distanceM": 383,
+    "nameSim": 0.25
+  },
+  {
+    "primaryId": "chabad-manual-127-ירושלים-בית-חב-ד-גבעת-מרדכי",
+    "name": "בית חב\"ד גבעת מרדכי",
+    "city": "ירושלים",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "osm-way-204849113",
+    "matchedType": "synagogue",
+    "matchedName": "בית כנסת עץ יוסף",
+    "distanceM": 465,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-manual-128-מבשרת-ציון-בית-חב-ד-מבשרת-ציון",
+    "name": "בית חב\"ד מבשרת ציון",
+    "city": "מבשרת ציון",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "osm-node-10114599177",
+    "matchedType": "synagogue",
+    "matchedName": "משכן האמהות רחל ולאה",
+    "distanceM": 74,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-manual-129-גבעת-יערים-בית-חב-ד-גבעת-יערים",
+    "name": "בית חב\"ד גבעת יערים",
+    "city": "גבעת יערים",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate"
+  },
+  {
+    "primaryId": "chabad-manual-130-אבן-ספיר-בית-חב-ד-אבן-ספיר",
+    "name": "בית חב\"ד אבן ספיר",
+    "city": "אבן ספיר",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate"
+  },
+  {
+    "primaryId": "chabad-manual-131-צור-הדסה-בית-חב-ד-צור-הדסה",
+    "name": "בית חב\"ד צור הדסה",
+    "city": "צור הדסה",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "osm-way-665203231",
+    "matchedType": "synagogue",
+    "matchedName": "מקווה טהרה צור הדסה",
+    "distanceM": 584,
+    "nameSim": 0.85
+  },
+  {
+    "primaryId": "chabad-manual-132-נווה-מיכאל-בית-חב-ד-נווה-מיכאל",
+    "name": "בית חב\"ד נווה מיכאל",
+    "city": "נווה מיכאל",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate"
+  },
+  {
+    "primaryId": "chabad-manual-133-בר-גיורא-בית-חב-ד-בר-גיורא",
+    "name": "בית חב\"ד בר גיורא",
+    "city": "בר גיורא",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate"
+  },
+  {
+    "primaryId": "chabad-manual-134-מטע-בית-חב-ד-מטע",
+    "name": "בית חב\"ד מטע",
+    "city": "מטע",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "osm-way-965720644",
+    "matchedType": "synagogue",
+    "matchedName": "מגדל דוד",
+    "distanceM": 305,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-manual-135-בית-שמש-בית-חב-ד-רמת-בית-שמש-ב",
+    "name": "בית חב\"ד רמת בית שמש ב",
+    "city": "בית שמש",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "osm-node-12232010525",
+    "matchedType": "synagogue",
+    "matchedName": "בית אביי",
+    "distanceM": 287,
+    "nameSim": 0.25
+  },
+  {
+    "primaryId": "chabad-manual-136-בית-שמש-בית-חב-ד-שכונת-המשקפיים",
+    "name": "בית חב\"ד שכונת המשקפיים",
+    "city": "בית שמש",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "osm-way-585485712",
+    "matchedType": "synagogue",
+    "matchedName": "קהילות איש קדש",
+    "distanceM": 171,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-manual-137-בית-שמש-בית-חב-ד-זנוח",
+    "name": "בית חב\"ד זנוח",
+    "city": "בית שמש",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate"
+  },
+  {
+    "primaryId": "chabad-manual-138-בית-שמש-בית-חב-ד-שכונת-רמת-נריה",
+    "name": "בית חב\"ד שכונת רמת נריה",
+    "city": "בית שמש",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "osm-node-8990526867",
+    "matchedType": "synagogue",
+    "matchedName": "חב\"ד",
+    "distanceM": 569,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-manual-139-בית-שמש-בית-חב-ד-בית-שמש",
+    "name": "בית חב\"ד בית שמש",
+    "city": "בית שמש",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "osm-node-13771132767",
+    "matchedType": "synagogue",
+    "matchedName": "בית הכנסת שערי רחמים ושלום",
+    "distanceM": 174,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-manual-140-בית-שמש-בית-חב-ד-שכונת-חפציבה",
+    "name": "בית חב\"ד שכונת חפציבה",
+    "city": "בית שמש",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate"
+  },
+  {
+    "primaryId": "chabad-manual-141-אשתאול-בית-חב-ד-אשתאול",
+    "name": "בית חב\"ד אשתאול",
+    "city": "אשתאול",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate"
+  },
+  {
+    "primaryId": "chabad-manual-142-אדרת-בית-חב-ד-אדרת",
+    "name": "בית חב\"ד אדרת",
+    "city": "אדרת",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate"
+  },
+  {
+    "primaryId": "chabad-manual-143-ביתר-עילית-בית-חב-ד-מטה-יהודה",
+    "name": "בית חב\"ד מטה יהודה",
+    "city": "ביתר עילית",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate"
+  },
+  {
+    "primaryId": "chabad-manual-144-נווה-דניאל-בית-חב-ד-נווה-דניאל",
+    "name": "בית חב\"ד נווה דניאל",
+    "city": "נווה דניאל",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate"
+  },
+  {
+    "primaryId": "chabad-manual-145-אפרת-בית-חב-ד-אפרת",
+    "name": "בית חב\"ד אפרת",
+    "city": "אפרת",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate"
+  },
+  {
+    "primaryId": "chabad-manual-146-תלם-בית-חב-ד-תלם",
+    "name": "בית חב\"ד תלם",
+    "city": "תלם",
+    "origins": [
+      "manual"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate"
+  },
+  {
+    "primaryId": "chabad-osm-node-4796536524",
+    "name": "בית כנסת חב\"ד ליובאוויטש",
+    "city": "ירושלים",
+    "origins": [
+      "osm"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "overlap_synagogue",
+    "reason": "clearly the same place as an existing synagogue → will add chabad_house tag to existing record",
+    "matchedId": "osm-node-4796536524",
+    "matchedType": "synagogue",
+    "matchedName": "בית כנסת חב\"ד ליובאוויטש",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-osm-node-5705135087",
+    "name": "בית כנסת חב\"ד נווה אחיעזר",
+    "city": "בני ברק",
+    "origins": [
+      "osm"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "overlap_synagogue",
+    "reason": "clearly the same place as an existing synagogue → will add chabad_house tag to existing record",
+    "matchedId": "osm-node-5705135087",
+    "matchedType": "synagogue",
+    "matchedName": "בית כנסת חב\"ד נווה אחיעזר",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-osm-node-5705135090",
+    "name": "בית כנסת חב\"ד רש\"י",
+    "city": "בני ברק",
+    "origins": [
+      "osm"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "overlap_synagogue",
+    "reason": "clearly the same place as an existing synagogue → will add chabad_house tag to existing record",
+    "matchedId": "osm-node-5705135090",
+    "matchedType": "synagogue",
+    "matchedName": "בית כנסת חב\"ד רש\"י",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-osm-node-5721949433",
+    "name": "Bet Haknesset Chabad Bnei Romi",
+    "city": "נתניה",
+    "origins": [
+      "osm"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "overlap_synagogue",
+    "reason": "clearly the same place as an existing synagogue → will add chabad_house tag to existing record",
+    "matchedId": "osm-node-5721949433",
+    "matchedType": "synagogue",
+    "matchedName": "Bet Haknesset Chabad Bnei Romi",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-osm-node-8097632056",
+    "name": "בית חב\"ד",
+    "city": "פתח תקווה",
+    "origins": [
+      "osm"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "osm-node-8097632056",
+    "matchedType": "synagogue",
+    "matchedName": "בית חב\"ד",
+    "distanceM": 0,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-osm-node-8990526867",
+    "name": "חב\"ד",
+    "city": "זנוח",
+    "origins": [
+      "osm"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "overlap_synagogue",
+    "reason": "clearly the same place as an existing synagogue → will add chabad_house tag to existing record",
+    "matchedId": "osm-node-8990526867",
+    "matchedType": "synagogue",
+    "matchedName": "חב\"ד",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-osm-node-9493902465",
+    "name": "חב\"ד",
+    "city": "רמת רחל",
+    "origins": [
+      "osm"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "overlap_synagogue",
+    "reason": "clearly the same place as an existing synagogue → will add chabad_house tag to existing record",
+    "matchedId": "osm-node-9493902465",
+    "matchedType": "synagogue",
+    "matchedName": "חב\"ד",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-osm-node-11983041668",
+    "name": "בית כנסת - בית חב\"ד",
+    "city": "חדרה",
+    "origins": [
+      "osm"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "overlap_synagogue",
+    "reason": "clearly the same place as an existing synagogue → will add chabad_house tag to existing record",
+    "matchedId": "osm-node-11983041668",
+    "matchedType": "synagogue",
+    "matchedName": "בית כנסת - בית חב\"ד",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-osm-node-12328679577",
+    "name": "בית חב\"ד פארק המדע",
+    "city": "נס ציונה",
+    "origins": [
+      "osm"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "overlap_synagogue",
+    "reason": "clearly the same place as an existing synagogue → will add chabad_house tag to existing record",
+    "matchedId": "osm-node-12328679577",
+    "matchedType": "synagogue",
+    "matchedName": "בית חב\"ד פארק המדע",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-osm-node-12369790179",
+    "name": "בית חב\"ד מזרח",
+    "city": "צופית",
+    "origins": [
+      "osm"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "overlap_synagogue",
+    "reason": "clearly the same place as an existing synagogue → will add chabad_house tag to existing record",
+    "matchedId": "osm-node-12369790179",
+    "matchedType": "synagogue",
+    "matchedName": "בית חב\"ד מזרח",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-osm-node-12393905845",
+    "name": "בית כנסת חב\"ד",
+    "city": "כפר חושן",
+    "origins": [
+      "osm"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "overlap_synagogue",
+    "reason": "clearly the same place as an existing synagogue → will add chabad_house tag to existing record",
+    "matchedId": "osm-node-12393905845",
+    "matchedType": "synagogue",
+    "matchedName": "בית כנסת חב\"ד",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-osm-node-13619434561",
+    "name": "בית חב\"ד",
+    "city": "רמת גן",
+    "origins": [
+      "osm"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "osm-node-13619434561",
+    "matchedType": "synagogue",
+    "matchedName": "בית חב\"ד",
+    "distanceM": 0,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-osm-way-166574253",
+    "name": "בית חב\"ד",
+    "city": "ירושלים",
+    "origins": [
+      "osm"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "osm-way-166574253",
+    "matchedType": "synagogue",
+    "matchedName": "בית חב\"ד",
+    "distanceM": 0,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-osm-way-184473585",
+    "name": "חב\"ד קרית שרת",
+    "city": "חולון",
+    "origins": [
+      "osm"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "overlap_synagogue",
+    "reason": "clearly the same place as an existing synagogue → will add chabad_house tag to existing record",
+    "matchedId": "osm-way-184473585",
+    "matchedType": "synagogue",
+    "matchedName": "חב\"ד קרית שרת",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-osm-way-186965161",
+    "name": "בית כנסת - חב\"ד",
+    "city": "חיפה",
+    "origins": [
+      "osm"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "overlap_synagogue",
+    "reason": "clearly the same place as an existing synagogue → will add chabad_house tag to existing record",
+    "matchedId": "osm-way-186965161",
+    "matchedType": "synagogue",
+    "matchedName": "בית כנסת - חב\"ד",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-osm-way-221848477",
+    "name": "ישראל - חב\"ד",
+    "city": "אורה",
+    "origins": [
+      "osm"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "overlap_synagogue",
+    "reason": "clearly the same place as an existing synagogue → will add chabad_house tag to existing record",
+    "matchedId": "osm-way-221848477",
+    "matchedType": "synagogue",
+    "matchedName": "ישראל - חב\"ד",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-osm-way-253196684",
+    "name": "חב\"ד",
+    "city": "זכרון יעקב",
+    "origins": [
+      "osm"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "overlap_synagogue",
+    "reason": "clearly the same place as an existing synagogue → will add chabad_house tag to existing record",
+    "matchedId": "osm-way-253196684",
+    "matchedType": "synagogue",
+    "matchedName": "חב\"ד",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-osm-way-309684684",
+    "name": "בית חב\"ד כרמיאל",
+    "city": "כרמיאל",
+    "origins": [
+      "osm"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "overlap_synagogue",
+    "reason": "clearly the same place as an existing synagogue → will add chabad_house tag to existing record",
+    "matchedId": "osm-way-309684684",
+    "matchedType": "synagogue",
+    "matchedName": "בית חב\"ד כרמיאל",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-osm-way-339913671",
+    "name": "חב\"ד ד",
+    "city": "ירושלים",
+    "origins": [
+      "osm"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-osm-way-339913671",
+    "matchedType": "chabad_house",
+    "matchedName": "חב\"ד ד",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-osm-way-339914099",
+    "name": "חב\"ד ב",
+    "city": "ירושלים",
+    "origins": [
+      "osm"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-osm-way-339914099",
+    "matchedType": "chabad_house",
+    "matchedName": "חב\"ד ב",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-osm-way-358683946",
+    "name": "בית חב\"ד",
+    "city": "גבעת שמואל",
+    "origins": [
+      "osm"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "osm-way-358683946",
+    "matchedType": "synagogue",
+    "matchedName": "בית חב\"ד",
+    "distanceM": 0,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-osm-way-424985680",
+    "name": "חב\"ד",
+    "city": "אזור",
+    "origins": [
+      "osm"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "overlap_synagogue",
+    "reason": "clearly the same place as an existing synagogue → will add chabad_house tag to existing record",
+    "matchedId": "osm-way-424985680",
+    "matchedType": "synagogue",
+    "matchedName": "חב\"ד",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-osm-way-579265395",
+    "name": "בית חב\"ד אור מנחם",
+    "city": "קרית שמונה",
+    "origins": [
+      "osm"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "overlap_synagogue",
+    "reason": "clearly the same place as an existing synagogue → will add chabad_house tag to existing record",
+    "matchedId": "osm-way-579265395",
+    "matchedType": "synagogue",
+    "matchedName": "בית חב\"ד אור מנחם",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-osm-way-586222579",
+    "name": "חב\"ד",
+    "city": "ביריה",
+    "origins": [
+      "osm"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "overlap_synagogue",
+    "reason": "clearly the same place as an existing synagogue → will add chabad_house tag to existing record",
+    "matchedId": "osm-way-586222579",
+    "matchedType": "synagogue",
+    "matchedName": "חב\"ד",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-osm-way-624115097",
+    "name": "חב\"ד",
+    "city": "נוף הגליל",
+    "origins": [
+      "osm"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-osm-way-624115097",
+    "matchedType": "chabad_house",
+    "matchedName": "חב\"ד",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-osm-way-646389358",
+    "name": "בית חב\"ד",
+    "city": "צפת",
+    "origins": [
+      "osm"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "chabad-osm-way-646389358",
+    "matchedType": "chabad_house",
+    "matchedName": "בית חב\"ד",
+    "distanceM": 0,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-osm-way-665941018",
+    "name": "חב\"ד",
+    "city": "מגדל העמק",
+    "origins": [
+      "osm"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "overlap_synagogue",
+    "reason": "clearly the same place as an existing synagogue → will add chabad_house tag to existing record",
+    "matchedId": "osm-way-665941018",
+    "matchedType": "synagogue",
+    "matchedName": "חב\"ד",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-osm-way-668772151",
+    "name": "בית חב\"ד",
+    "city": "רחובות",
+    "origins": [
+      "osm"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "new",
+    "reason": "new chabad_house candidate",
+    "matchedId": "osm-way-668772151",
+    "matchedType": "synagogue",
+    "matchedName": "בית חב\"ד",
+    "distanceM": 0,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-osm-way-673449492",
+    "name": "חב\"ד",
+    "city": "מעלות תרשיחא",
+    "origins": [
+      "osm"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "overlap_synagogue",
+    "reason": "clearly the same place as an existing synagogue → will add chabad_house tag to existing record",
+    "matchedId": "osm-way-673449492",
+    "matchedType": "synagogue",
+    "matchedName": "חב\"ד",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-osm-way-1230688119",
+    "name": "בית הכנסת חב\"ד",
+    "city": "צפת",
+    "origins": [
+      "osm"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "overlap_synagogue",
+    "reason": "clearly the same place as an existing synagogue → will add chabad_house tag to existing record",
+    "matchedId": "osm-way-1230688119",
+    "matchedType": "synagogue",
+    "matchedName": "בית הכנסת חב\"ד",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-osm-way-1240412084",
+    "name": "בית כנסת חב\"ד",
+    "city": "אחיסמך",
+    "origins": [
+      "osm"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "overlap_synagogue",
+    "reason": "clearly the same place as an existing synagogue → will add chabad_house tag to existing record",
+    "matchedId": "osm-way-1240412084",
+    "matchedType": "synagogue",
+    "matchedName": "בית כנסת חב\"ד",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-wd-Q339967",
+    "name": "תחנת הרכבת כפר חב\"ד",
+    "city": "כפר חב״ד",
+    "origins": [
+      "wikidata"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "nonhouse_excluded",
+    "reason": "Chabad-named but not a physical house (geographic feature / institution) → excluded from write-ready",
+    "matchedId": "chabad-wd-Q47465673",
+    "matchedType": "chabad_house",
+    "matchedName": "בית הכנסת בית מנחם (כפר חב\"ד)",
+    "distanceM": 362,
+    "nameSim": 0.33
+  },
+  {
+    "primaryId": "chabad-wd-Q5456742",
+    "name": "נשי ובנות חב\"ד",
+    "origins": [
+      "wikidata"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "no street address → not geocodable"
+  },
+  {
+    "primaryId": "chabad-wd-Q737685",
+    "name": "חסידות חב\"ד",
+    "origins": [
+      "wikidata"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "no street address → not geocodable"
+  },
+  {
+    "primaryId": "chabad-wd-Q2897080",
+    "name": "הוצאת ספרים קה\"ת",
+    "origins": [
+      "wikidata"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "no street address → not geocodable"
+  },
+  {
+    "primaryId": "chabad-wd-Q6332810",
+    "name": "בית דין רבני חב\"ד",
+    "origins": [
+      "wikidata"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "no street address → not geocodable"
+  },
+  {
+    "primaryId": "chabad-wd-Q6262165",
+    "name": "ישיבת בית דוד (חב\"ד)",
+    "city": "קריית גת",
+    "origins": [
+      "wikidata"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "nonhouse_excluded",
+    "reason": "Chabad-named but not a physical house (geographic feature / institution) → excluded from write-ready"
+  },
+  {
+    "primaryId": "chabad-wd-Q6262673",
+    "name": "כפר חב\"ד (שבועון)",
+    "origins": [
+      "wikidata"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "no street address → not geocodable"
+  },
+  {
+    "primaryId": "chabad-wd-Q6381441",
+    "name": "צעירי אגודת חב\"ד בישראל",
+    "origins": [
+      "wikidata"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "no street address → not geocodable"
+  },
+  {
+    "primaryId": "chabad-wd-Q6381481",
+    "name": "רשת חינוך חב\"ד",
+    "origins": [
+      "wikidata"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "no street address → not geocodable"
+  },
+  {
+    "primaryId": "chabad-wd-Q2570492",
+    "name": "כפר חב״ד",
+    "city": "מועצה אזורית שדות דן",
+    "origins": [
+      "wikidata"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-wd-Q47465673",
+    "matchedType": "chabad_house",
+    "matchedName": "בית הכנסת בית מנחם (כפר חב\"ד)",
+    "distanceM": 340,
+    "nameSim": 0.85
+  },
+  {
+    "primaryId": "chabad-wd-Q11830670",
+    "name": "שיכון חב\"ד בירושלים",
+    "city": "ירושלים",
+    "origins": [
+      "wikidata"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "nonhouse_excluded",
+    "reason": "Chabad-named but not a physical house (geographic feature / institution) → excluded from write-ready",
+    "matchedId": "osm-way-157908833",
+    "matchedType": "synagogue",
+    "matchedName": "ביהמ\"ד קול מנחם קאליב",
+    "distanceM": 71,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-wd-Q16129043",
+    "name": "רחוב חב\"ד",
+    "city": "ירושלים",
+    "origins": [
+      "wikidata"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "nonhouse_excluded",
+    "reason": "Chabad-named but not a physical house (geographic feature / institution) → excluded from write-ready",
+    "matchedId": "arcgis:jerusalem::150",
+    "matchedType": "synagogue",
+    "matchedName": "בי''כ חב''ד",
+    "distanceM": 18,
+    "nameSim": 0.33
+  },
+  {
+    "primaryId": "chabad-wd-Q30527029",
+    "name": "תורת חב\"ד לבני הישיבות",
+    "origins": [
+      "wikidata"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "no street address → not geocodable"
+  },
+  {
+    "primaryId": "chabad-wd-Q56523454",
+    "name": "מחלף חב\"ד",
+    "city": "כפר חב\"ד",
+    "origins": [
+      "wikidata"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "nonhouse_excluded",
+    "reason": "Chabad-named but not a physical house (geographic feature / institution) → excluded from write-ready"
+  },
+  {
+    "primaryId": "chabad-wd-Q47465673",
+    "name": "בית הכנסת בית מנחם (כפר חב\"ד)",
+    "city": "כפר חב״ד",
+    "origins": [
+      "wikidata"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "match_chabad",
+    "reason": "matches an existing chabad_house → enrich empty fields only (no new pin)",
+    "matchedId": "chabad-wd-Q47465673",
+    "matchedType": "chabad_house",
+    "matchedName": "בית הכנסת בית מנחם (כפר חב\"ד)",
+    "distanceM": 0,
+    "nameSim": 1
+  },
+  {
+    "primaryId": "chabad-wd-Q92154429",
+    "name": "בית המדרש החב\"די",
+    "city": "תל אביב-יפו",
+    "origins": [
+      "wikidata"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "nonhouse_excluded",
+    "reason": "Chabad-named but not a physical house (geographic feature / institution) → excluded from write-ready",
+    "matchedId": "arcgis:tel-aviv::568-229",
+    "matchedType": "synagogue",
+    "matchedName": "חברת ש\"ס",
+    "distanceM": 58,
+    "nameSim": 0
+  },
+  {
+    "primaryId": "chabad-wd-Q83380747",
+    "name": "בניין 770 בכפר חב\"ד",
+    "city": "מועצה אזורית שדות דן",
+    "origins": [
+      "wikidata"
+    ],
+    "hasCoords": true,
+    "coordSource": "native",
+    "locationPrecision": "address",
+    "classification": "nonhouse_excluded",
+    "reason": "Chabad-named but not a physical house (geographic feature / institution) → excluded from write-ready",
+    "matchedId": "chabad-wd-Q47465673",
+    "matchedType": "chabad_house",
+    "matchedName": "בית הכנסת בית מנחם (כפר חב\"ד)",
+    "distanceM": 293,
+    "nameSim": 0.14
+  },
+  {
+    "primaryId": "chabad-wd-Q109171364",
+    "name": "אשל חב\"ד",
+    "origins": [
+      "wikidata"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "no street address → not geocodable"
+  },
+  {
+    "primaryId": "chabad-wd-Q102185246",
+    "name": "חב\"ד און ליין",
+    "origins": [
+      "wikidata"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "no street address → not geocodable"
+  },
+  {
+    "primaryId": "chabad-wd-Q126364300",
+    "name": "מכון הלכה חב\"ד",
+    "origins": [
+      "wikidata"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "no street address → not geocodable"
+  },
+  {
+    "primaryId": "chabad-wd-Q134100894",
+    "name": "בית חב\"ד 770 המשיחיסטי",
+    "origins": [
+      "wikidata"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "no street address → not geocodable"
+  },
+  {
+    "primaryId": "chabad-wd-Q123662916",
+    "name": "נוער חב\"ד",
+    "origins": [
+      "wikidata"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "no street address → not geocodable"
+  },
+  {
+    "primaryId": "chabad-wd-Q135485375",
+    "name": "ארגון הגג למוסדות חב\"ד",
+    "origins": [
+      "wikidata"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "no street address → not geocodable"
+  },
+  {
+    "primaryId": "chabad-amuta-580807139",
+    "name": "בית כנסת חבד נווה דניאל (ע~ר)",
+    "city": "נווה דניאל",
+    "origins": [
+      "datagov"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "GovMap could not resolve an exact in-city address"
+  },
+  {
+    "primaryId": "chabad-amuta-580012664",
+    "name": "ישיבת תומכי תמימים ליובאוויטש חבד (ע~ר)",
+    "city": "לוד",
+    "origins": [
+      "datagov"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "GovMap could not resolve an exact in-city address"
+  },
+  {
+    "primaryId": "chabad-amuta-580779601",
+    "name": "צעירי חבד עפולה מערבית (ע~ר)",
+    "city": "עפולה",
+    "origins": [
+      "datagov"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "GovMap could not resolve an exact in-city address"
+  },
+  {
+    "primaryId": "chabad-amuta-580078301",
+    "name": "~בית חבד~ שע~י אגודת חב~ד לוד",
+    "city": "לוד",
+    "origins": [
+      "datagov"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "no street address → not geocodable"
+  },
+  {
+    "primaryId": "chabad-amuta-580012730",
+    "name": "אגודת חסידי חבד בארצנו הקדושה",
+    "city": "כפר חב~ד",
+    "origins": [
+      "datagov"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "GovMap could not resolve an exact in-city address"
+  },
+  {
+    "primaryId": "chabad-amuta-580079424",
+    "name": "מוסדות ~צמח צדק~ חב~ד ליובאוויטש ירושלים (ע~ר) THEMACH TZEDEK INS. CHABAD LUBAVITCH (R.A.)",
+    "city": "ירושלים",
+    "origins": [
+      "datagov"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "GovMap could not resolve an exact in-city address"
+  },
+  {
+    "primaryId": "chabad-amuta-580018778",
+    "name": "הסמינר למורות ובי~ס מקצועי בית רבקה כפר חבד ב' (ע~ר)",
+    "city": "כפר חב~ד",
+    "origins": [
+      "datagov"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "GovMap could not resolve an exact in-city address"
+  },
+  {
+    "primaryId": "chabad-amuta-580804169",
+    "name": "בית חבד כרמיאל רמת נבון - גבעת רם (ע~ר)",
+    "city": "כרמיאל",
+    "origins": [
+      "datagov"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "GovMap could not resolve an exact in-city address"
+  },
+  {
+    "primaryId": "chabad-amuta-580773711",
+    "name": "בית חבד חבל יתיר (ע~ר)",
+    "city": "טנא",
+    "origins": [
+      "datagov"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "GovMap could not resolve an exact in-city address"
+  },
+  {
+    "primaryId": "chabad-amuta-580746857",
+    "name": "בית חבד נופי בן שמן~ לוד שעל ידי צעירי אגודת חבד (ע~ר)",
+    "city": "לוד",
+    "origins": [
+      "datagov"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "GovMap could not resolve an exact in-city address"
+  },
+  {
+    "primaryId": "chabad-amuta-580757722",
+    "name": "ועד קהילת חבד לוד-רמלה (ע~ר)",
+    "city": "לוד",
+    "origins": [
+      "datagov"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "GovMap could not resolve an exact in-city address"
+  },
+  {
+    "primaryId": "chabad-amuta-580013241",
+    "name": "תלמוד תורה לוי יצחק שכון חבד לוד",
+    "city": "לוד",
+    "origins": [
+      "datagov"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "GovMap could not resolve an exact in-city address"
+  },
+  {
+    "primaryId": "chabad-amuta-580018786",
+    "name": "אהל שרה מרכז ליהדות כפר חבד ב'",
+    "city": "כפר חב~ד",
+    "origins": [
+      "datagov"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "no street address → not geocodable"
+  },
+  {
+    "primaryId": "chabad-amuta-580174654",
+    "name": "נחלה - נשי חבד לעזרת העולים קרית מלאכי שע~י צעירי אגודת חב~ד",
+    "city": "קריית מלאכי",
+    "origins": [
+      "datagov"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "no street address → not geocodable"
+  },
+  {
+    "primaryId": "chabad-amuta-580413144",
+    "name": "ידידי חב~ד קפריסין בישראל (ע~ר) (.FRIENDS OF CHABAD CYPRUS IN ISRAEL (R.A",
+    "city": "קריית מלאכי",
+    "origins": [
+      "datagov"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "GovMap could not resolve an exact in-city address"
+  },
+  {
+    "primaryId": "chabad-amuta-580813509",
+    "name": "חבד על הדרך (ע~ר)",
+    "city": "יקנעם עילית",
+    "origins": [
+      "datagov"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "GovMap could not resolve an exact in-city address"
+  },
+  {
+    "primaryId": "chabad-amuta-580788941",
+    "name": "חבד ווסט (ע~ר)",
+    "city": "לוד",
+    "origins": [
+      "datagov"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "GovMap could not resolve an exact in-city address"
+  },
+  {
+    "primaryId": "chabad-amuta-580676443",
+    "name": "הבית - חבד נווה יהושע (ע~ר)",
+    "city": "רמת גן",
+    "origins": [
+      "datagov"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "GovMap could not resolve an exact in-city address"
+  },
+  {
+    "primaryId": "chabad-amuta-580134146",
+    "name": "בית הכנסת ליובאוויטש - חבד - היכל לוי יצחק - תל ארזה ירושלים (ע~ר)",
+    "city": "ירושלים",
+    "origins": [
+      "datagov"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "GovMap could not resolve an exact in-city address"
+  },
+  {
+    "primaryId": "chabad-amuta-580715886",
+    "name": "חבד לנוער לוד (ע~ר)",
+    "city": "לוד",
+    "origins": [
+      "datagov"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "GovMap could not resolve an exact in-city address"
+  },
+  {
+    "primaryId": "chabad-amuta-580014389",
+    "name": "מרכז חבד ליובאוויטש חיפה העמותה נמחקה",
+    "city": "חיפה",
+    "origins": [
+      "datagov"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "GovMap could not resolve an exact in-city address"
+  },
+  {
+    "primaryId": "chabad-amuta-580633964",
+    "name": "מוסדות חבד אור יהודה (ע''ר)",
+    "city": "אור יהודה",
+    "origins": [
+      "datagov"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "GovMap could not resolve an exact in-city address"
+  },
+  {
+    "primaryId": "chabad-amuta-580798684",
+    "name": "מרכז חבד יפו (ע~ר)",
+    "city": "תל אביב - יפו",
+    "origins": [
+      "datagov"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "GovMap could not resolve an exact in-city address"
+  },
+  {
+    "primaryId": "chabad-amuta-580763316",
+    "name": "קופת העיר חבד (ע~ר)",
+    "city": "ירושלים",
+    "origins": [
+      "datagov"
+    ],
+    "hasCoords": false,
+    "classification": "coordless",
+    "reason": "GovMap could not resolve an exact in-city address"
+  }
+]

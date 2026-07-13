@@ -1,0 +1,57 @@
+Starting project at C:\Users\User\Desktop\claude plane\kosher-app
+Starting Metro Bundler
+
+Waiting on http://localhost:8081
+Logs for your project will appear below.
+Web Bundled 874ms index.ts (700 modules)
+Web Bundled 1422ms index.ts (705 modules)
+Web  INFO  %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+Web  WARN  "shadow*" style props are deprecated. Use "boxShadow".
+Web  LOG  Running application "main" with appParams:
+ {"hydrate": undefined, "rootTag": "#root"} 
+Development-level warnings: ON.
+Performance optimizations: OFF.
+Web  WARN  props.pointerEvents is deprecated. Use style.pointerEvents
+Web Bundled 2962ms index.ts (1 module)
+Web Bundled 54ms index.ts (1 module)
+Web  INFO  %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+Web  WARN  "shadow*" style props are deprecated. Use "boxShadow".
+Web  LOG  Running application "main" with appParams:
+ {"hydrate": undefined, "rootTag": "#root"} 
+Development-level warnings: ON.
+Performance optimizations: OFF.
+Web  WARN  props.pointerEvents is deprecated. Use style.pointerEvents
+Web Bundled 146ms index.ts (1 module)
+Web  ERROR  [SyntaxError: Unexpected token ';'] 
+
+Code: HMRClient.js
+[0m [90m  7 |[39m     global[33m.[39mglobalEvalWithSourceUrl(code[33m,[39m sourceURL)[33m;[39m
+ [90m  8 |[39m   } [36melse[39m {
+[31m[1m>[22m[39m[90m  9 |[39m     eval(code)[33m;[39m
+ [90m    |[39m          [31m[1m^[22m[39m
+ [90m 10 |[39m   }
+ [90m 11 |[39m }[33m;[39m
+ [90m 12 |[39m [36mconst[39m injectUpdate [33m=[39m (update) [33m=>[39m {[0m
+Call Stack
+  inject (node_modules\metro-runtime\src\modules\HMRClient.js:9:10)
+  Array.forEach (<anonymous>)
+  injectUpdate (node_modules\metro-runtime\src\modules\HMRClient.js:14:19)
+  on$argument_1 (node_modules\metro-runtime\src\modules\HMRClient.js:68:9)
+  emit (node_modules\metro-runtime\src\modules\vendor\eventemitter3.js:104:27)
+  _ws.onmessage (node_modules\metro-runtime\src\modules\HMRClient.js:51:16)
+Web Bundled 90ms index.ts (1 module)
+Web  INFO  %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+Web  WARN  "shadow*" style props are deprecated. Use "boxShadow".
+Web  LOG  Running application "main" with appParams:
+ {"hydrate": undefined, "rootTag": "#root"} 
+Development-level warnings: ON.
+Performance optimizations: OFF.
+Web  WARN  props.pointerEvents is deprecated. Use style.pointerEvents
+Web Bundled 58ms index.ts (1 module)
+Web  INFO  %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+Web  WARN  "shadow*" style props are deprecated. Use "boxShadow".
+Web  LOG  Running application "main" with appParams:
+ {"hydrate": undefined, "rootTag": "#root"} 
+Development-level warnings: ON.
+Performance optimizations: OFF.
+Web  WARN  props.pointerEvents is deprecated. Use style.pointerEvents

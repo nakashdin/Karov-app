@@ -1,0 +1,39 @@
+{
+  "generatedNote": "GovMap address geocoding for official address-only mikveh sources — DRY-RUN. No DB write, no rebuild. GovMap only (Nominatim rejected). Compared vs live 606.",
+  "geocoder": "GovMap es.govmap.gov.il DetailsByQuery (ADDR_V1, ResultType 1, city-in-label, ITM→WGS84). Nominatim NOT used.",
+  "inputRecords": 74,
+  "bySourceTotals": {
+    "telAviv": 19,
+    "gushEtzion": 18,
+    "batYam": 12,
+    "netivot": 6,
+    "menashe": 4,
+    "mazkeretBatya": 3,
+    "rehovot": 2,
+    "golan": 10
+  },
+  "geocoded": 22,
+  "notGeocodable": 52,
+  "writeReady": 9,
+  "duplicates": 13,
+  "excluded": 52,
+  "writeReadyBySource": {
+    "tel-aviv": 3,
+    "bat-yam": 6
+  },
+  "beitShemeshNote": "rabanutbs.co.il/mikvaot/ returned HTTP 404 (bot-blocked) — could not extract; needs a browser fetch.",
+  "gushEtzionNote": "settlement-only table (no street addresses) → GovMap cannot reach ADDR_V1; not write-ready via address geocode.",
+  "idCollisions": 0,
+  "duplicateAppIds": 0,
+  "finalRecommendedWriteCount": 9,
+  "liveMikvehBefore": 606,
+  "estimatedTotalAfterWrite": 615,
+  "rollbackPlan": [
+    "Backup places.osm.json → places.osm.pre-govmap-councils.backup.json (+cities) before any write",
+    "Additive append only; rollback = restore backups; do NOT run rebuildAppDataset"
+  ],
+  "dryRun": true,
+  "liveDataTouched": false,
+  "publishPerformed": false,
+  "rebuildTouched": false
+}

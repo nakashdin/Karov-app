@@ -1,0 +1,84 @@
+{
+  "verifiedAt": "2026-06-19T16:14:32.982Z",
+  "total": 4907,
+  "byType": {
+    "restaurant": 346,
+    "synagogue": 4030,
+    "mikveh": 531
+  },
+  "arcgisRecords": 1291,
+  "arcgisCities": [
+    "ashdod",
+    "ashkelon",
+    "haifa",
+    "jerusalem",
+    "modiin",
+    "nahariya",
+    "nof-hagalil",
+    "tel-aviv"
+  ],
+  "councils": 14,
+  "allPass": true,
+  "checks": [
+    {
+      "name": "no duplicate ids (all)",
+      "pass": true,
+      "detail": "dups=0"
+    },
+    {
+      "name": "no duplicate ids within ArcGIS",
+      "pass": true,
+      "detail": "dups=0"
+    },
+    {
+      "name": "no phone=\"0\"",
+      "pass": true,
+      "detail": "count=0"
+    },
+    {
+      "name": "no coords outside Israel",
+      "pass": true,
+      "detail": "count=0"
+    },
+    {
+      "name": "no new/unexpected ArcGIS cityId",
+      "pass": true,
+      "detail": "all cityIds pre-existed"
+    },
+    {
+      "name": "mikvah count preserved",
+      "pass": true,
+      "detail": "531/531"
+    },
+    {
+      "name": "restaurant count preserved",
+      "pass": true,
+      "detail": "346/346"
+    },
+    {
+      "name": "synagogue count as expected",
+      "pass": true,
+      "detail": "4030/4030"
+    },
+    {
+      "name": "ArcGIS record count as expected",
+      "pass": true,
+      "detail": "1291/1291"
+    },
+    {
+      "name": "ArcGIS city count as expected",
+      "pass": true,
+      "detail": "8/8"
+    },
+    {
+      "name": "council count as expected",
+      "pass": true,
+      "detail": "14/14"
+    },
+    {
+      "name": "all ArcGIS records have provenance",
+      "pass": true,
+      "detail": "missing=0"
+    }
+  ]
+}

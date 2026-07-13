@@ -1,0 +1,22 @@
+{
+  "source": "arcgis:kiryat-ono",
+  "expectedCount": 13,
+  "fetchedCount": 13,
+  "droppedNoName": 0,
+  "validCount": 13,
+  "rejectedCount": 0,
+  "new": 9,
+  "enriched": 3,
+  "conflicts": 1,
+  "over300": 0,
+  "existingSynagogues": 4030,
+  "mergedSynagogues": 4040,
+  "coordinateSource": "ArcGIS server outSR=4326 (authoritative WGS84)",
+  "datumShiftFromPureItmMeters": {
+    "comparedCount": 0,
+    "maxMeters": 0,
+    "avgMeters": 0
+  },
+  "dryRun": true,
+  "liveDataTouched": false
+}

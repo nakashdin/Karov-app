@@ -1,0 +1,22 @@
+{
+  "source": "arcgis:holon",
+  "expectedCount": 100,
+  "fetchedCount": 111,
+  "droppedNoName": 0,
+  "validCount": 111,
+  "rejectedCount": 0,
+  "new": 102,
+  "enriched": 7,
+  "conflicts": 2,
+  "over300": 0,
+  "existingSynagogues": 4030,
+  "mergedSynagogues": 4134,
+  "coordinateSource": "ArcGIS server outSR=4326 (authoritative WGS84)",
+  "datumShiftFromPureItmMeters": {
+    "comparedCount": 111,
+    "maxMeters": 77.39,
+    "avgMeters": 77.38
+  },
+  "dryRun": true,
+  "liveDataTouched": false
+}

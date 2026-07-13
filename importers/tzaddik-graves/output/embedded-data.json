@@ -1,0 +1,985 @@
+{
+  "records": [
+    {
+      "sourceId": "osm-osm-node-3808058083",
+      "source": "osm",
+      "name": "קבר האימהות",
+      "lat": 32.8020131,
+      "lng": 35.5227215,
+      "city": "טבריה",
+      "address": "טבריה",
+      "osmId": "node/3808058083",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "osmType": "node",
+        "osmTags": {
+          "historic": "tomb",
+          "name": "קבר האימהות",
+          "name:en": "Ha'imahot tomb",
+          "name:he": "קבר האימהות",
+          "religion": "jewish"
+        }
+      }
+    },
+    {
+      "sourceId": "osm-osm-node-7556407165",
+      "source": "osm",
+      "name": "Mahanayim cemetery",
+      "lat": 32.9850038,
+      "lng": 35.5711881,
+      "city": "מחניים",
+      "address": "מחניים",
+      "osmId": "node/7556407165",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "osmType": "node",
+        "osmTags": {
+          "amenity": "grave_yard",
+          "landuse": "cemetery",
+          "name": "Mahanayim cemetery",
+          "name:en": "Mahanayim cemetery",
+          "religion": "jewish"
+        }
+      }
+    },
+    {
+      "sourceId": "osm-osm-node-9315565017",
+      "source": "osm",
+      "name": "קבר מתתיהו",
+      "lat": 31.9348867,
+      "lng": 34.9941342,
+      "city": "מבוא מודיעים",
+      "address": "מבוא מודיעים",
+      "osmId": "node/9315565017",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "osmType": "node",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "historic": "tomb",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/6/66/IHM_קבר_מתתיהו.jpeg",
+          "name": "קבר מתתיהו",
+          "name:he": "קבר מתתיהו",
+          "religion": "jewish"
+        }
+      }
+    },
+    {
+      "sourceId": "osm-osm-node-13013702461",
+      "source": "osm",
+      "name": "בית עלמין בית אורן",
+      "lat": 32.7281841,
+      "lng": 35.003162,
+      "city": "בית אורן",
+      "address": "בית אורן",
+      "osmId": "node/13013702461",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "osmType": "node",
+        "osmTags": {
+          "amenity": "grave_yard",
+          "name": "בית עלמין בית אורן",
+          "religion": "jewish"
+        }
+      }
+    },
+    {
+      "sourceId": "osm-osm-way-48421997",
+      "source": "osm",
+      "name": "בית עלמין יהוד",
+      "lat": 32.0233393,
+      "lng": 34.8916169,
+      "city": "יהוד מונוסון",
+      "address": "יהוד מונוסון",
+      "osmId": "way/48421997",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "osmType": "way",
+        "osmTags": {
+          "amenity": "grave_yard",
+          "name": "בית עלמין יהוד",
+          "name:en": "Yahood Military Cemetery",
+          "name:he": "בית עלמין יהוד",
+          "religion": "jewish"
+        }
+      }
+    },
+    {
+      "sourceId": "osm-osm-way-66943235",
+      "source": "osm",
+      "name": "בית עלמין אלישמע",
+      "lat": 32.1573999,
+      "lng": 34.9359204,
+      "city": "שדי חמד",
+      "address": "שדי חמד",
+      "osmId": "way/66943235",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "osmType": "way",
+        "osmTags": {
+          "amenity": "grave_yard",
+          "name": "בית עלמין אלישמע",
+          "name:en": "Elishema cemetery",
+          "name:he": "בית עלמין אלישמע",
+          "religion": "jewish"
+        }
+      }
+    },
+    {
+      "sourceId": "osm-osm-way-119016170",
+      "source": "osm",
+      "name": "בית עלמין הושעיה",
+      "lat": 32.7531561,
+      "lng": 35.3014017,
+      "city": "הושעיה",
+      "address": "הושעיה",
+      "osmId": "way/119016170",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "osmType": "way",
+        "osmTags": {
+          "amenity": "grave_yard",
+          "name": "בית עלמין הושעיה",
+          "name:en": "Hoshaya Cemetery",
+          "name:fr": "Cimetière Hoshaya",
+          "name:he": "בית עלמין הושעיה",
+          "religion": "jewish"
+        }
+      }
+    },
+    {
+      "sourceId": "osm-osm-way-315453672",
+      "source": "osm",
+      "name": "בית עלמין טירת כרמל",
+      "lat": 32.75263,
+      "lng": 34.9733854,
+      "city": "טירת כרמל",
+      "address": "טירת כרמל",
+      "osmId": "way/315453672",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "osmType": "way",
+        "osmTags": {
+          "amenity": "grave_yard",
+          "name": "בית עלמין טירת כרמל",
+          "name:en": "Tirat Hacarmel cemetery",
+          "name:he": "בית עלמין טירת כרמל",
+          "religion": "jewish"
+        }
+      }
+    },
+    {
+      "sourceId": "osm-osm-way-373387141",
+      "source": "osm",
+      "name": "בית עלמין קיבוץ אלונים",
+      "lat": 32.7237265,
+      "lng": 35.1425232,
+      "city": "אלונים",
+      "address": "אלונים",
+      "osmId": "way/373387141",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "osmType": "way",
+        "osmTags": {
+          "amenity": "grave_yard",
+          "name": "בית עלמין קיבוץ אלונים",
+          "name:en": "Alonim Cemetery",
+          "name:he": "בית עלמין קיבוץ אלונים",
+          "religion": "jewish"
+        }
+      }
+    },
+    {
+      "sourceId": "osm-osm-way-493703983",
+      "source": "osm",
+      "name": "קבר רבי שמעון בר יוחאי",
+      "lat": 32.9807885,
+      "lng": 35.4405621,
+      "city": "מירון",
+      "address": "מירון",
+      "osmId": "way/493703983",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "osmType": "way",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "historic": "tomb",
+          "name": "קבר רבי שמעון בר יוחאי",
+          "name:en": "Rabbi Shimon Bar Yochay tomb",
+          "name:he": "קבר רבי שמעון בר יוחאי",
+          "religion": "jewish",
+          "wikidata": "Q5371188"
+        }
+      }
+    },
+    {
+      "sourceId": "osm-osm-way-514139736",
+      "source": "osm",
+      "name": "קבר חוצפית המתורגמן",
+      "lat": 32.971223,
+      "lng": 35.4821327,
+      "city": "ביריה",
+      "address": "ביריה",
+      "osmId": "way/514139736",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "osmType": "way",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "historic": "tomb",
+          "name": "קבר חוצפית המתורגמן",
+          "name:en": "Chootzpit the translator tomb",
+          "name:he": "קבר חוצפית המתורגמן",
+          "religion": "jewish"
+        }
+      }
+    },
+    {
+      "sourceId": "osm-osm-way-647373211",
+      "source": "osm",
+      "name": "קבר רבי יהודה בר עילאי",
+      "lat": 32.9845232,
+      "lng": 35.4903947,
+      "city": "ביריה",
+      "address": "ביריה",
+      "osmId": "way/647373211",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "osmType": "way",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "description": "קבר ר' יהודה בר אילעי ואביו. במקום חניה גדולה. יש כולל פעיל בקומה השניה.",
+          "description:he": "קבר ר' יהודה בר אילעי ואביו. במקום חניה גדולה. יש כולל פעיל בקומה השניה.",
+          "historic": "tomb",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/IHM_קבר_רבי_יהודה_בר_עילאי.jpeg",
+          "name": "קבר רבי יהודה בר עילאי",
+          "name:en": "Rabi Yehuda bar Elai Tomb",
+          "name:he": "קבר רבי יהודה בר עילאי",
+          "religion": "jewish",
+          "website": "http://nelech.co.il/2020/05/05/%d7%a6%d7%99%d7%95%d7%9f-%d7%a7%d7%91%d7%a8-%d7%a8%d7%91%d7%99-%d7%99%d7%94%d7%95%d7%93%d7%94-%d7%91%d7%a8-%d7%90%d7%9c%d7%a2%d7%90%d7%99/"
+        }
+      }
+    },
+    {
+      "sourceId": "osm-osm-way-1419318492",
+      "source": "osm",
+      "name": "בית העלמין שאר ישוב",
+      "lat": 33.2323111,
+      "lng": 35.6555175,
+      "city": "דן",
+      "address": "דן",
+      "osmId": "way/1419318492",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "osmType": "way",
+        "osmTags": {
+          "amenity": "grave_yard",
+          "name": "בית העלמין שאר ישוב",
+          "name:he": "בית העלמין שאר ישוב",
+          "religion": "jewish"
+        }
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q111305015",
+      "source": "wikidata",
+      "name": "הלוויית הרב חיים קניבסקי",
+      "lat": 32.0725,
+      "lng": 34.833888888,
+      "wikidataId": "Q111305015",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "graves",
+        "wikidataUri": "http://www.wikidata.org/entity/Q111305015"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q6843724",
+      "source": "wikidata",
+      "name": "קברי המהנדסים בשער יפו",
+      "lat": 31.77668889,
+      "lng": 35.22785,
+      "wikidataId": "Q6843724",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "graves",
+        "wikidataUri": "http://www.wikidata.org/entity/Q6843724"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q6682025",
+      "source": "wikidata",
+      "name": "נבי סבלאן",
+      "lat": 33.011606111,
+      "lng": 35.341473182,
+      "wikidataId": "Q6682025",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "graves",
+        "wikidataUri": "http://www.wikidata.org/entity/Q6682025"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q6588897",
+      "source": "wikidata",
+      "name": "נבי יעפורי",
+      "lat": 33.24138889,
+      "lng": 35.76833333,
+      "wikidataId": "Q6588897",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "graves",
+        "wikidataUri": "http://www.wikidata.org/entity/Q6588897"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q2590976",
+      "source": "wikidata",
+      "name": "מתחם נבי שועייב",
+      "lat": 32.80525,
+      "lng": 35.45046,
+      "wikidataId": "Q2590976",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "graves",
+        "wikidataUri": "http://www.wikidata.org/entity/Q2590976"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q1177668",
+      "source": "wikidata",
+      "name": "קבר דוד המלך",
+      "lat": 31.771638888,
+      "lng": 35.229013888,
+      "wikidataId": "Q1177668",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "graves",
+        "wikidataUri": "http://www.wikidata.org/entity/Q1177668"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q3117130",
+      "source": "wikidata",
+      "name": "מערת יהושפט",
+      "lat": 31.777277777,
+      "lng": 35.238888888,
+      "wikidataId": "Q3117130",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "graves",
+        "wikidataUri": "http://www.wikidata.org/entity/Q3117130"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q6653557",
+      "source": "wikidata",
+      "name": "קבר רבי מאיר בעל הנס",
+      "lat": 32.76621111,
+      "lng": 35.54981944,
+      "wikidataId": "Q6653557",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "graves",
+        "wikidataUri": "http://www.wikidata.org/entity/Q6653557"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q540882",
+      "source": "wikidata",
+      "name": "מערת תלפיות",
+      "lat": 31.751402777,
+      "lng": 35.235197222,
+      "wikidataId": "Q540882",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "graves",
+        "wikidataUri": "http://www.wikidata.org/entity/Q540882"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q124030938",
+      "source": "wikidata",
+      "name": "בית הקברות של אשדוד ים",
+      "lat": 31.776467089,
+      "lng": 34.622969193,
+      "wikidataId": "Q124030938",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "graves",
+        "wikidataUri": "http://www.wikidata.org/entity/Q124030938"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q125395543",
+      "source": "wikidata",
+      "name": "קבר יונתן בן עוזיאל",
+      "lat": 32.998080555,
+      "lng": 35.524811111,
+      "wikidataId": "Q125395543",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "graves",
+        "wikidataUri": "http://www.wikidata.org/entity/Q125395543"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q6581399",
+      "source": "wikidata",
+      "name": "קבר סית מנע",
+      "lat": 31.89081,
+      "lng": 35.023358,
+      "wikidataId": "Q6581399",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "graves",
+        "wikidataUri": "http://www.wikidata.org/entity/Q6581399"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q6582124",
+      "source": "wikidata",
+      "name": "קבר נבי יהודה",
+      "lat": 33.214888888,
+      "lng": 35.65475,
+      "wikidataId": "Q6582124",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "graves",
+        "wikidataUri": "http://www.wikidata.org/entity/Q6582124"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q137656514",
+      "source": "wikidata",
+      "name": "מקאם נבי אל-ח'דר",
+      "lat": 32.953555555,
+      "lng": 35.166916666,
+      "wikidataId": "Q137656514",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "graves",
+        "wikidataUri": "http://www.wikidata.org/entity/Q137656514"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q120411618",
+      "source": "wikidata",
+      "name": "קבר אלישע",
+      "lat": 32.827130142,
+      "lng": 34.970081271,
+      "wikidataId": "Q120411618",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "graves",
+        "wikidataUri": "http://www.wikidata.org/entity/Q120411618"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q335336",
+      "source": "wikidata",
+      "name": "הר המנוחות",
+      "lat": 31.798133333,
+      "lng": 35.177727777,
+      "buriedPerson": "נאוה שאן",
+      "wikidataId": "Q335336",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "persons",
+        "personQid": "Q1559621",
+        "burialPlaceQid": "Q335336",
+        "wikidataPersonUri": "http://www.wikidata.org/entity/Q1559621"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q206161",
+      "source": "wikidata",
+      "name": "הר הרצל",
+      "lat": 31.774117,
+      "lng": 35.180567,
+      "buriedPerson": "בנימין זאב הרצל",
+      "wikidataId": "Q206161",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "persons",
+        "personQid": "Q44003",
+        "burialPlaceQid": "Q206161",
+        "wikidataPersonUri": "http://www.wikidata.org/entity/Q44003"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q205976",
+      "source": "wikidata",
+      "name": "הר הזיתים",
+      "lat": 31.777946,
+      "lng": 35.245686,
+      "buriedPerson": "שמואל דביר",
+      "wikidataId": "Q205976",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "persons",
+        "personQid": "Q123939041",
+        "burialPlaceQid": "Q205976",
+        "wikidataPersonUri": "http://www.wikidata.org/entity/Q123939041"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q207350",
+      "source": "wikidata",
+      "name": "רחובות",
+      "lat": 31.891388888,
+      "lng": 34.807777777,
+      "buriedPerson": "עמוס דה-שליט",
+      "wikidataId": "Q207350",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "persons",
+        "personQid": "Q474344",
+        "burialPlaceQid": "Q207350",
+        "wikidataPersonUri": "http://www.wikidata.org/entity/Q474344"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q33935",
+      "source": "wikidata",
+      "name": "תל אביב-יפו",
+      "lat": 32.08,
+      "lng": 34.78,
+      "buriedPerson": "זויה ריילייבה",
+      "wikidataId": "Q33935",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "persons",
+        "personQid": "Q4401930",
+        "burialPlaceQid": "Q33935",
+        "wikidataPersonUri": "http://www.wikidata.org/entity/Q4401930"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q41621",
+      "source": "wikidata",
+      "name": "חיפה",
+      "lat": 32.819166666,
+      "lng": 34.999166666,
+      "buriedPerson": "Robert Piesen",
+      "wikidataId": "Q41621",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "persons",
+        "personQid": "Q12049521",
+        "burialPlaceQid": "Q41621",
+        "wikidataPersonUri": "http://www.wikidata.org/entity/Q12049521"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q41843",
+      "source": "wikidata",
+      "name": "באר שבע",
+      "lat": 31.252222222,
+      "lng": 34.786666666,
+      "buriedPerson": "אברהם סילברט",
+      "wikidataId": "Q41843",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "persons",
+        "personQid": "Q6694091",
+        "burialPlaceQid": "Q41843",
+        "wikidataPersonUri": "http://www.wikidata.org/entity/Q6694091"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q126084",
+      "source": "wikidata",
+      "name": "עכו",
+      "lat": 32.926111111,
+      "lng": 35.083888888,
+      "buriedPerson": "Frederick VI, Duke of Swabia",
+      "wikidataId": "Q126084",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "persons",
+        "personQid": "Q504733",
+        "burialPlaceQid": "Q126084",
+        "wikidataPersonUri": "http://www.wikidata.org/entity/Q504733"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q60956",
+      "source": "wikidata",
+      "name": "אשקלון",
+      "lat": 31.665833333,
+      "lng": 34.566388888,
+      "buriedPerson": "Q130243730",
+      "wikidataId": "Q60956",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "persons",
+        "personQid": "Q130243730",
+        "burialPlaceQid": "Q60956",
+        "wikidataPersonUri": "http://www.wikidata.org/entity/Q130243730"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q104028",
+      "source": "wikidata",
+      "name": "יהודה",
+      "lat": 31.698889,
+      "lng": 35.306389,
+      "buriedPerson": "אגריפס השני",
+      "wikidataId": "Q104028",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "persons",
+        "personQid": "Q313419",
+        "burialPlaceQid": "Q104028",
+        "wikidataPersonUri": "http://www.wikidata.org/entity/Q313419"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q48175",
+      "source": "wikidata",
+      "name": "ארץ הקודש",
+      "lat": 31.778333333,
+      "lng": 35.229722222,
+      "buriedPerson": "William de Percy",
+      "wikidataId": "Q48175",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "persons",
+        "personQid": "Q3120417",
+        "burialPlaceQid": "Q48175",
+        "wikidataPersonUri": "http://www.wikidata.org/entity/Q3120417"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q201051",
+      "source": "wikidata",
+      "name": "ראשון לציון",
+      "lat": 31.95,
+      "lng": 34.8,
+      "buriedPerson": "אשר בלוט",
+      "wikidataId": "Q201051",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "persons",
+        "personQid": "Q16128839",
+        "burialPlaceQid": "Q201051",
+        "wikidataPersonUri": "http://www.wikidata.org/entity/Q16128839"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q192225",
+      "source": "wikidata",
+      "name": "נתניה",
+      "lat": 32.328611111,
+      "lng": 34.856666666,
+      "buriedPerson": "אנטולי גולדברג",
+      "wikidataId": "Q192225",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "persons",
+        "personQid": "Q4752149",
+        "burialPlaceQid": "Q192225",
+        "wikidataPersonUri": "http://www.wikidata.org/entity/Q4752149"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q198399",
+      "source": "wikidata",
+      "name": "זכרון יעקב",
+      "lat": 32.570833333,
+      "lng": 34.951666666,
+      "buriedPerson": "יצחק יחזקאל (קברניט)",
+      "wikidataId": "Q198399",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "persons",
+        "personQid": "Q135450929",
+        "burialPlaceQid": "Q198399",
+        "wikidataPersonUri": "http://www.wikidata.org/entity/Q135450929"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q188336",
+      "source": "wikidata",
+      "name": "צפת",
+      "lat": 32.965833333,
+      "lng": 35.498333333,
+      "buriedPerson": "Gavriil Zapolyansky",
+      "wikidataId": "Q188336",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "persons",
+        "personQid": "Q4186825",
+        "burialPlaceQid": "Q188336",
+        "wikidataPersonUri": "http://www.wikidata.org/entity/Q4186825"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q187702",
+      "source": "wikidata",
+      "name": "כנסיית הקבר",
+      "lat": 31.778444444,
+      "lng": 35.22975,
+      "buriedPerson": "בלדווין החמישי, מלך ירושלים",
+      "wikidataId": "Q187702",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "persons",
+        "personQid": "Q345687",
+        "burialPlaceQid": "Q187702",
+        "wikidataPersonUri": "http://www.wikidata.org/entity/Q345687"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q192213",
+      "source": "wikidata",
+      "name": "חולון",
+      "lat": 32.016666666,
+      "lng": 34.766666666,
+      "buriedPerson": "אלימלך אפשטיין הלוי",
+      "wikidataId": "Q192213",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "persons",
+        "personQid": "Q47034782",
+        "burialPlaceQid": "Q192213",
+        "wikidataPersonUri": "http://www.wikidata.org/entity/Q47034782"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q205333",
+      "source": "wikidata",
+      "name": "גת שמנים",
+      "lat": 31.779419,
+      "lng": 35.239425,
+      "buriedPerson": "Seraphim Kuznetsov",
+      "wikidataId": "Q205333",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "persons",
+        "personQid": "Q105871543",
+        "burialPlaceQid": "Q205333",
+        "wikidataPersonUri": "http://www.wikidata.org/entity/Q105871543"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q190828",
+      "source": "wikidata",
+      "name": "פתח תקווה",
+      "lat": 32.083333333,
+      "lng": 34.883333333,
+      "buriedPerson": "Mina Yuditskaya",
+      "wikidataId": "Q190828",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "persons",
+        "personQid": "Q130298303",
+        "burialPlaceQid": "Q190828",
+        "wikidataPersonUri": "http://www.wikidata.org/entity/Q130298303"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q192807",
+      "source": "wikidata",
+      "name": "רמת גן",
+      "lat": 32.070007,
+      "lng": 34.823541,
+      "buriedPerson": "מנשה שהרבני",
+      "wikidataId": "Q192807",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "persons",
+        "personQid": "Q29883913",
+        "burialPlaceQid": "Q192807",
+        "wikidataPersonUri": "http://www.wikidata.org/entity/Q29883913"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q193785",
+      "source": "wikidata",
+      "name": "הר תבור",
+      "lat": 32.68625,
+      "lng": 35.392916666,
+      "buriedPerson": "צ'ארלס וינטרס",
+      "wikidataId": "Q193785",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "persons",
+        "personQid": "Q5083663",
+        "burialPlaceQid": "Q193785",
+        "wikidataPersonUri": "http://www.wikidata.org/entity/Q5083663"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q187499",
+      "source": "wikidata",
+      "name": "אל-באהג'ה",
+      "lat": 32.943473304,
+      "lng": 35.091877235,
+      "buriedPerson": "בהאא אללה",
+      "wikidataId": "Q187499",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "persons",
+        "personQid": "Q101054",
+        "burialPlaceQid": "Q187499",
+        "wikidataPersonUri": "http://www.wikidata.org/entity/Q101054"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q152436",
+      "source": "wikidata",
+      "name": "כפר סבא",
+      "lat": 32.185783333,
+      "lng": 34.907683333,
+      "buriedPerson": "גנדי ריגר",
+      "wikidataId": "Q152436",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "persons",
+        "personQid": "Q2901947",
+        "burialPlaceQid": "Q152436",
+        "wikidataPersonUri": "http://www.wikidata.org/entity/Q2901947"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q151920",
+      "source": "wikidata",
+      "name": "טבריה",
+      "lat": 32.775458,
+      "lng": 35.542011,
+      "buriedPerson": "יוסף צבי הלוי",
+      "wikidataId": "Q151920",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "persons",
+        "personQid": "Q8055910",
+        "burialPlaceQid": "Q151920",
+        "wikidataPersonUri": "http://www.wikidata.org/entity/Q8055910"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q152396",
+      "source": "wikidata",
+      "name": "דימונה",
+      "lat": 31.07,
+      "lng": 35.03,
+      "buriedPerson": "יצחק ג'קי אדרי",
+      "wikidataId": "Q152396",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "persons",
+        "personQid": "Q7044225",
+        "burialPlaceQid": "Q152396",
+        "wikidataPersonUri": "http://www.wikidata.org/entity/Q7044225"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q152467",
+      "source": "wikidata",
+      "name": "בני ברק",
+      "lat": 32.08074,
+      "lng": 34.8338,
+      "buriedPerson": "מרדכי לנדינסקי",
+      "wikidataId": "Q152467",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "persons",
+        "personQid": "Q27990264",
+        "burialPlaceQid": "Q152467",
+        "wikidataPersonUri": "http://www.wikidata.org/entity/Q27990264"
+      }
+    },
+    {
+      "sourceId": "wikidata-grave-Q152379",
+      "source": "wikidata",
+      "name": "הוד השרון",
+      "lat": 32.15,
+      "lng": 34.883333333,
+      "buriedPerson": "ויקטור תייר",
+      "wikidataId": "Q152379",
+      "verifiedAt": "2026-06-30",
+      "extra": {
+        "sparqlQuery": "persons",
+        "personQid": "Q7926382",
+        "burialPlaceQid": "Q152379",
+        "wikidataPersonUri": "http://www.wikidata.org/entity/Q7926382"
+      }
+    }
+  ],
+  "rejected": [
+    {
+      "sourceId": "osm-osm-node-8588068403",
+      "name": null,
+      "reason": "שם חסר"
+    },
+    {
+      "sourceId": "osm-osm-way-119385758",
+      "name": null,
+      "reason": "שם חסר"
+    },
+    {
+      "sourceId": "osm-osm-way-245189798",
+      "name": null,
+      "reason": "שם חסר"
+    },
+    {
+      "sourceId": "osm-osm-way-522483195",
+      "name": null,
+      "reason": "שם חסר"
+    },
+    {
+      "sourceId": "osm-osm-way-734399812",
+      "name": null,
+      "reason": "שם חסר"
+    },
+    {
+      "sourceId": "osm-osm-way-751105340",
+      "name": null,
+      "reason": "שם חסר"
+    },
+    {
+      "sourceId": "osm-osm-way-818127518",
+      "name": null,
+      "reason": "שם חסר"
+    },
+    {
+      "sourceId": "osm-osm-way-1040505629",
+      "name": null,
+      "reason": "שם חסר"
+    },
+    {
+      "sourceId": "osm-osm-way-1158338456",
+      "name": null,
+      "reason": "שם חסר"
+    },
+    {
+      "sourceId": "osm-osm-way-1181075135",
+      "name": null,
+      "reason": "שם חסר"
+    }
+  ],
+  "totals": {
+    "fetched": 65,
+    "accepted": 55,
+    "rejected": 10,
+    "duplicates": 0,
+    "merged": 0,
+    "final": 55
+  },
+  "sources": {
+    "osm": {
+      "fetched": 23,
+      "accepted": 13
+    },
+    "wikidata": {
+      "fetched": 42,
+      "accepted": 42
+    }
+  },
+  "runDate": "2026-06-30T16:59:47.768Z"
+}

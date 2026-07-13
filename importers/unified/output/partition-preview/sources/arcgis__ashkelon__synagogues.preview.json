@@ -1,0 +1,3011 @@
+[
+  {
+    "id": "arcgis:ashkelon::1",
+    "name": "שערי צדק",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "האורים",
+    "location": {
+      "latitude": 31.665818928245752,
+      "longitude": 34.591136284317635
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::2",
+    "name": "אוהל אברהם",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "האורים",
+    "location": {
+      "latitude": 31.66585343480101,
+      "longitude": 34.59092927202039
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::4",
+    "name": "אהבת ציון",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "בן דוד",
+    "location": {
+      "latitude": 31.6683442810866,
+      "longitude": 34.59059352973685
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::5",
+    "name": "מגדל עוז",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "יחיא קאפח",
+    "location": {
+      "latitude": 31.666917611766575,
+      "longitude": 34.59197953905666
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::6",
+    "name": "נצח ישראל",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אהרון קאפח",
+    "location": {
+      "latitude": 31.66656365382562,
+      "longitude": 34.592932990082275
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::7",
+    "name": "קהילת יעקב -עוזרי",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "חננאל",
+    "location": {
+      "latitude": 31.667853798130157,
+      "longitude": 34.59274054573934
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::8",
+    "name": "נווה צדק",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "שמאי",
+    "location": {
+      "latitude": 31.66855062093405,
+      "longitude": 34.59304984945643
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::10",
+    "name": "כנסת ישראל",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אבן עזרא",
+    "location": {
+      "latitude": 31.669898847217954,
+      "longitude": 34.59022821949758
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::14",
+    "name": "חתם סופר",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "דוד רמז",
+    "location": {
+      "latitude": 31.667723692353515,
+      "longitude": 34.58409183782711
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::18",
+    "name": "נר מאיר",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "יהדות ספרד 26",
+    "location": {
+      "latitude": 31.676160580756584,
+      "longitude": 34.582174004592
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::19",
+    "name": "ברית שלום",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "כסלו",
+    "location": {
+      "latitude": 31.67173621390348,
+      "longitude": 34.57884774461134
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::20",
+    "name": "מאורות שמעון",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "פקיעין",
+    "location": {
+      "latitude": 31.663908459231077,
+      "longitude": 34.57635160059244
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::21",
+    "name": "משכן אביחי",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "לכיש",
+    "location": {
+      "latitude": 31.66638514421413,
+      "longitude": 34.58166917681259
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::24",
+    "name": "עמרם שלום",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "הנביאים",
+    "location": {
+      "latitude": 31.65972327550022,
+      "longitude": 34.581805626897804
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::25",
+    "name": "אוהל יוסף",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "הנביאים",
+    "location": {
+      "latitude": 31.65973716825009,
+      "longitude": 34.58204803002442
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::26",
+    "name": "מצמיח ישועה",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "בוקרא",
+    "location": {
+      "latitude": 31.65865998671108,
+      "longitude": 34.581000920592246
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::27",
+    "name": "לומדי תורה-ברדא",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "בוקרא",
+    "location": {
+      "latitude": 31.658784404485797,
+      "longitude": 34.58172154625076
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::28",
+    "name": "אוהבי ישראל",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "שיבת ציון",
+    "location": {
+      "latitude": 31.657977947091037,
+      "longitude": 34.57862633156292
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::29",
+    "name": "ארם נהריים",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "מיכה",
+    "location": {
+      "latitude": 31.65806595467505,
+      "longitude": 34.582631772006685
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::30",
+    "name": "עולי בבל",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "שיבת ציון",
+    "location": {
+      "latitude": 31.65716884810441,
+      "longitude": 34.58368858831128
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::31",
+    "name": "אליהו הנביא",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "כיכר ברק",
+    "location": {
+      "latitude": 31.653579580866108,
+      "longitude": 34.582436150638095
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::32",
+    "name": "שערי שמים",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "ברוך סבג",
+    "location": {
+      "latitude": 31.651986522437156,
+      "longitude": 34.58236917555101
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::33",
+    "name": "מרום ציון",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "ברוך סבג",
+    "location": {
+      "latitude": 31.65173652258672,
+      "longitude": 34.58247347068954
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::34",
+    "name": "עץ חיים",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אליהו הנביא",
+    "location": {
+      "latitude": 31.660063548321695,
+      "longitude": 34.58708496844037
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::35",
+    "name": "שבזי+הלוי",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אליהו הנביא",
+    "location": {
+      "latitude": 31.65981405346504,
+      "longitude": 34.586518860496746
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::36",
+    "name": "סיאני",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "חגי",
+    "location": {
+      "latitude": 31.65961185201825,
+      "longitude": 34.58612215536222
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::37",
+    "name": "עזרת אחים",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "חגי",
+    "location": {
+      "latitude": 31.659391231586657,
+      "longitude": 34.58607779808659
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::38",
+    "name": "תפארת ציון",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "חגי",
+    "location": {
+      "latitude": 31.659156383386808,
+      "longitude": 34.58601734877466
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::39",
+    "name": "אלי כהן",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אפרים",
+    "location": {
+      "latitude": 31.65417282205344,
+      "longitude": 34.585709003826196
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::40",
+    "name": "סוכת לויתן",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אפרים",
+    "location": {
+      "latitude": 31.654049111614693,
+      "longitude": 34.58545167967389
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::41",
+    "name": "פועלי צדק",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אפרים",
+    "location": {
+      "latitude": 31.653723327468438,
+      "longitude": 34.58520830219994
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::42",
+    "name": "שבת אחים -עופרי",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אסתר המלכה",
+    "location": {
+      "latitude": 31.65388067608349,
+      "longitude": 34.5873153465228
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::43",
+    "name": "נחלי מים",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "יהודית",
+    "location": {
+      "latitude": 31.651682118994348,
+      "longitude": 34.587677066443014
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::44",
+    "name": "רשבי",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "השבטים",
+    "location": {
+      "latitude": 31.649548032126727,
+      "longitude": 34.583665460094245
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::45",
+    "name": "הרמב\"ם",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "גדעון",
+    "location": {
+      "latitude": 31.65542169119897,
+      "longitude": 34.58208551726898
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::47",
+    "name": "נר ליאיר הכהן",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "המרד",
+    "location": {
+      "latitude": 31.659110606888948,
+      "longitude": 34.57552129637482
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::49",
+    "name": "משכן שמעון",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אורי  אליאב",
+    "location": {
+      "latitude": 31.65213513299157,
+      "longitude": 34.577736155801446
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::50",
+    "name": "נפשנו חכתה לה'",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "דפנה",
+    "location": {
+      "latitude": 31.651646824411806,
+      "longitude": 34.57781084101721
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::51",
+    "name": "אוריאל",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "דפנה",
+    "location": {
+      "latitude": 31.65210903332212,
+      "longitude": 34.577863529199476
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::52",
+    "name": "נווה שלום",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "קרן היסוד",
+    "location": {
+      "latitude": 31.65829438585105,
+      "longitude": 34.56883314543566
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::53",
+    "name": "המרז הרוחני ע\"ש קס עזרייה",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "קרן היסוד",
+    "location": {
+      "latitude": 31.65806266865582,
+      "longitude": 34.56867157808172
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::54",
+    "name": "השער לדוד",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "הסוחר",
+    "location": {
+      "latitude": 31.66058342768703,
+      "longitude": 34.56702181600817
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::55",
+    "name": "שערי צדק",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "הסוחר",
+    "location": {
+      "latitude": 31.6603968509141,
+      "longitude": 34.566460789158036
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::56",
+    "name": "אוהל יוסף",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "חמד",
+    "location": {
+      "latitude": 31.662199309792342,
+      "longitude": 34.56609901937317
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::57",
+    "name": "חמדת ישראל",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "שפינוזה",
+    "location": {
+      "latitude": 31.66218660339904,
+      "longitude": 34.56646991965092
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::58",
+    "name": "יעקב ודוד",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "דיבולט",
+    "location": {
+      "latitude": 31.662834262797695,
+      "longitude": 34.56349176932976
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::59",
+    "name": "שארית הפליטה",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "הארי",
+    "location": {
+      "latitude": 31.661160286691963,
+      "longitude": 34.56496521955356
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::60",
+    "name": "אהבת התורה ע. סופר",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "הארי",
+    "location": {
+      "latitude": 31.661162205204864,
+      "longitude": 34.564463849564206
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::61",
+    "name": "מגן דוד לעולי הודו",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "בעש\"ט",
+    "location": {
+      "latitude": 31.659565677910855,
+      "longitude": 34.56274636215573
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::62",
+    "name": "אגודת בית דוד",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "טרייורס",
+    "location": {
+      "latitude": 31.658961118386394,
+      "longitude": 34.563994032065175
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::63",
+    "name": "בית הלוי",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "טרייורס",
+    "location": {
+      "latitude": 31.65856815429311,
+      "longitude": 34.564657450472666
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::64",
+    "name": "שערי רחמים ויוסף",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "מ.מ. ספרים",
+    "location": {
+      "latitude": 31.656963617271956,
+      "longitude": 34.56545784356879
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::65",
+    "name": "עולי אלג'יר",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "טשרנחובסקי",
+    "location": {
+      "latitude": 31.656448079455576,
+      "longitude": 34.56110266737889
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::66",
+    "name": "עוזיאל",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "ארצ'י שרמן",
+    "location": {
+      "latitude": 31.655210672917352,
+      "longitude": 34.56454652128411
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::67",
+    "name": "אור חדש",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "ארצ'י שרמן",
+    "location": {
+      "latitude": 31.65536468171195,
+      "longitude": 34.56480545059279
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::68",
+    "name": "אהבת שלום",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אפרים צור",
+    "location": {
+      "latitude": 31.654841993795475,
+      "longitude": 34.56447639101288
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::70",
+    "name": "באר חיים",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "הרב מימון",
+    "location": {
+      "latitude": 31.654298471680253,
+      "longitude": 34.56441883957197
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::71",
+    "name": "בני ציון",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "קורצ'אק",
+    "location": {
+      "latitude": 31.652955793766168,
+      "longitude": 34.56182656190605
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::72",
+    "name": "אור ישראל",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "קורצ'אק",
+    "location": {
+      "latitude": 31.652804462100764,
+      "longitude": 34.56162676250859
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::73",
+    "name": "ספר תיסלית",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "תיסלית",
+    "location": {
+      "latitude": 31.650790669050984,
+      "longitude": 34.55916233072555
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::74",
+    "name": "לזכר המקדש",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "דוד ברגר",
+    "location": {
+      "latitude": 31.653522796948174,
+      "longitude": 34.557986307558764
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::75",
+    "name": "שערי ציון",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "דוד ברגר",
+    "location": {
+      "latitude": 31.65272986931294,
+      "longitude": 34.55799819100859
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::76",
+    "name": "אוהל יעקב",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "דוד ברגר",
+    "location": {
+      "latitude": 31.652905733645014,
+      "longitude": 34.55796359207266
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::77",
+    "name": "אוהל מועד",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "דוד ברגר",
+    "location": {
+      "latitude": 31.65265655086274,
+      "longitude": 34.55765559590804
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::78",
+    "name": "משכן חיים",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "בוטראשוילי",
+    "location": {
+      "latitude": 31.652443208395294,
+      "longitude": 34.55793322845201
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::79",
+    "name": "לעולי אתיופייה",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "עמיעוז",
+    "location": {
+      "latitude": 31.65034845575798,
+      "longitude": 34.55613081463356
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::80",
+    "name": "עטרת ציון",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "קדושי קהיר",
+    "location": {
+      "latitude": 31.65037702350115,
+      "longitude": 34.55512343223336
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::82",
+    "name": "לב אבות",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "קדושי קהיר",
+    "location": {
+      "latitude": 31.650425077507247,
+      "longitude": 34.55466791565961
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::83",
+    "name": "היכל דוד",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "קדושי קהיר",
+    "location": {
+      "latitude": 31.650620078028393,
+      "longitude": 34.5549280357636
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::84",
+    "name": "בית יוסף",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "א. חביב",
+    "location": {
+      "latitude": 31.653787379435915,
+      "longitude": 34.553890021848424
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::85",
+    "name": "בית לחם יהודה",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "א. חביב",
+    "location": {
+      "latitude": 31.65395679672963,
+      "longitude": 34.553773775107665
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::86",
+    "name": "אם הבנים",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "עולי הגרדום",
+    "location": {
+      "latitude": 31.653229736341952,
+      "longitude": 34.55220190144146
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::87",
+    "name": "תפילה למשה",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "עולי הגרדום",
+    "location": {
+      "latitude": 31.64915095765569,
+      "longitude": 34.553755149739615
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::88",
+    "name": "הרשב\"י",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "שפירא",
+    "location": {
+      "latitude": 31.65521652672019,
+      "longitude": 34.552601618418144
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::90",
+    "name": "מרכז רוחני תורה ותפילה",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "שפירא",
+    "location": {
+      "latitude": 31.65978642124047,
+      "longitude": 34.554813238139324
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::91",
+    "name": "ברית אברהם אהבת ציון",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "משה",
+    "location": {
+      "latitude": 31.656173735497376,
+      "longitude": 34.5539010007635
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::92",
+    "name": "בית דוד",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "ההסתדרות",
+    "location": {
+      "latitude": 31.65711905198718,
+      "longitude": 34.556136597829166
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::93",
+    "name": "בית אהרון",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "ש.י. עגנון",
+    "location": {
+      "latitude": 31.659180835318608,
+      "longitude": 34.55927036111539
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::94",
+    "name": "תורת חיים",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "ש.י. עגנון",
+    "location": {
+      "latitude": 31.65938446404164,
+      "longitude": 34.559091718076594
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::97",
+    "name": "נועם יצחק",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "הקיקיון",
+    "location": {
+      "latitude": 31.666914565541653,
+      "longitude": 34.567033690410234
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::101",
+    "name": "תפארת ישראל",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "יוהנסבורג",
+    "location": {
+      "latitude": 31.676556807437567,
+      "longitude": 34.567329470717056
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::103",
+    "name": "תפארת יוחאי",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "קרייתי",
+    "location": {
+      "latitude": 31.681627026812848,
+      "longitude": 34.566835099809936
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::110",
+    "name": "ישמח משה",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "בר כוכבא",
+    "location": {
+      "latitude": 31.684246194707587,
+      "longitude": 34.56806955154881
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::111",
+    "name": "מרכזי ברנע",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "יפתח הגלעדי",
+    "location": {
+      "latitude": 31.68250612502011,
+      "longitude": 34.57190083760029
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::112",
+    "name": "משכן ברנע",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "עתניאל",
+    "location": {
+      "latitude": 31.684896834871974,
+      "longitude": 34.5707059379888
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::113",
+    "name": "פורת יוסף",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "איילון",
+    "location": {
+      "latitude": 31.689298870631422,
+      "longitude": 34.57201216010503
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::114",
+    "name": "תורת משה",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "ברנשטיין",
+    "location": {
+      "latitude": 31.680707293208986,
+      "longitude": 34.57555566895169
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::115",
+    "name": "יד מיכאל",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "משה שרת",
+    "location": {
+      "latitude": 31.6846154665586,
+      "longitude": 34.57763870752611
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::116",
+    "name": "פנינת אפרידר",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "המציל היהודי",
+    "location": {
+      "latitude": 31.6786681389171,
+      "longitude": 34.57832372587782
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::118",
+    "name": "שובה ישראל",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "בלפור",
+    "location": {
+      "latitude": 31.68873993245403,
+      "longitude": 34.57983488314023
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::119",
+    "name": "משכן חיה",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "הציונות",
+    "location": {
+      "latitude": 31.687535579091428,
+      "longitude": 34.579588182939766
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::120",
+    "name": "תפארת ראובן",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "הציונות",
+    "location": {
+      "latitude": 31.68694083450358,
+      "longitude": 34.579951441134085
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::122",
+    "name": "גאולת ישראל",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "תירוש",
+    "location": {
+      "latitude": 31.694058617042266,
+      "longitude": 34.57994163228632
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::123",
+    "name": "אל רייאבה",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "מעלה הגת",
+    "location": {
+      "latitude": 31.69226146047406,
+      "longitude": 34.579216253708964
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::247",
+    "name": "אבוחצירה",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אפרים צור",
+    "location": {
+      "latitude": 31.65474783601173,
+      "longitude": 34.5643724124066
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::248",
+    "name": "אגודת אחים",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.655524543764894,
+      "longitude": 34.56509336274071
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::254",
+    "name": "אהל ברוך",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.65871703286325,
+      "longitude": 34.56648859076023
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::255",
+    "name": "אהלי משה צלאת אל חורי",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.658744286762243,
+      "longitude": 34.5612369840011
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::258",
+    "name": "אוהל יוסף",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.66255892438896,
+      "longitude": 34.566594696539596
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::267",
+    "name": "אמא שואבה",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.668174865746813,
+      "longitude": 34.591236812753834
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::268",
+    "name": "אמנואל",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.666815672501752,
+      "longitude": 34.58961443802137
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::272",
+    "name": "בית דוד ע'ש צדיק",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.65803471571078,
+      "longitude": 34.56125300538591
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::273",
+    "name": "בית הלוי",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.65882505129853,
+      "longitude": 34.562552929405406
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::274",
+    "name": "בית הלוי",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.65674051992694,
+      "longitude": 34.557562880156816
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::277",
+    "name": "בית ישראל",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.658518723198437,
+      "longitude": 34.56478217036445
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::279",
+    "name": "בית פנחס",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.65572660970037,
+      "longitude": 34.56118048321457
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::283",
+    "name": "ברית שלום",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.675434882331935,
+      "longitude": 34.58191829781416
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::284",
+    "name": "בת אל",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.665257392256535,
+      "longitude": 34.58555924649489
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::286",
+    "name": "דוד המלך",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.65486526697645,
+      "longitude": 34.56665466178953
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::290",
+    "name": "הספרדי",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.654553243324205,
+      "longitude": 34.56614531192654
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::298",
+    "name": "חבד",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.68303716321841,
+      "longitude": 34.57189325894008
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::299",
+    "name": "חבד",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.674019626480398,
+      "longitude": 34.56258818507824
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::300",
+    "name": "חבד",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.67802465030855,
+      "longitude": 34.5869506332583
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::305",
+    "name": "ישורון",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.666563826360914,
+      "longitude": 34.58937503399328
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::306",
+    "name": "ישיבת אשקלון",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.669229505594757,
+      "longitude": 34.56749503742572
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::308",
+    "name": "ישני חברון",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.654108762672713,
+      "longitude": 34.58311437132151
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::310",
+    "name": "הרב שלום שבזי",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.66165292641288,
+      "longitude": 34.56773193503859
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::317",
+    "name": "מרכז רוחני דגל מחנה ראובן",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.6622341929358,
+      "longitude": 34.58267119401585
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::324",
+    "name": "משכן יעקוב",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.678607626715145,
+      "longitude": 34.575522613189484
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::330",
+    "name": "נצח ישראל",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.681763082185277,
+      "longitude": 34.566000330711525
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::334",
+    "name": "נתיב שמואל",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.6563132980235,
+      "longitude": 34.551821267720236
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::337",
+    "name": "עוזר יוסף",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.660945230187096,
+      "longitude": 34.564582996408696
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::341",
+    "name": "עטרת ראובן",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.65868637362838,
+      "longitude": 34.562230729289915
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::347",
+    "name": "פולני",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.662535098628695,
+      "longitude": 34.587531964931244
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::350",
+    "name": "קורבנות השואה",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.65851767238697,
+      "longitude": 34.56457253242986
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::351",
+    "name": "רבי מאיר בעל הנס",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.65018475649551,
+      "longitude": 34.55472059732281
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::356",
+    "name": "שבנו ציון",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.653371103986046,
+      "longitude": 34.58804826752548
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::365",
+    "name": "תפארת יוסף",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.66101690989713,
+      "longitude": 34.5680685900085
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::367",
+    "name": "תפילה למשה",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.666918732852256,
+      "longitude": 34.591406513358194
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::370",
+    "name": "בית אבות הלפרין",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.654434160978028,
+      "longitude": 34.551187330658024
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::371",
+    "name": "אור הזוהר",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.676118638680983,
+      "longitude": 34.58193334779904
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::372",
+    "name": "אמרי בנימין",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.676216785912327,
+      "longitude": 34.58238972243956
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::390",
+    "name": "נשמת העליה",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.659991497748784,
+      "longitude": 34.570074766166826
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::391",
+    "name": "מיכאל הקטן",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.652650690304455,
+      "longitude": 34.55667041996992
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::392",
+    "name": "שערי תימן",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.651929437852278,
+      "longitude": 34.57813704320066
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::399",
+    "name": "קרן בנימין",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.66304121597848,
+      "longitude": 34.578717309369566
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::401",
+    "name": "שובה ישראל",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.66786487024334,
+      "longitude": 34.563730350233214
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::403",
+    "name": "עטרת ראובן גמליאל",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.679935733321827,
+      "longitude": 34.58304125332988
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::404",
+    "name": "בית אליהו",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.674245832608523,
+      "longitude": 34.558276098069044
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::405",
+    "name": "רבי חי טייב",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.668169169621677,
+      "longitude": 34.58451047870861
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::406",
+    "name": "שערי ישועה",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.668253783780365,
+      "longitude": 34.584769814282026
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::408",
+    "name": "אביר יעקב",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.6593604653972,
+      "longitude": 34.57580690671977
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::409",
+    "name": "תפילת ראובן",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.66583171233679,
+      "longitude": 34.5628493291013
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::410",
+    "name": "עץ החיים",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.67229555778813,
+      "longitude": 34.58878163153752
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::411",
+    "name": "אמת לדוד",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.654114777257664,
+      "longitude": 34.55485000312889
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::412",
+    "name": "אוהל יצחק ומשה",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.666859666204555,
+      "longitude": 34.5874005317074
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::413",
+    "name": "שערי נצחון",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.666093259148184,
+      "longitude": 34.58510922235893
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::414",
+    "name": "אוהל יעקב ויצחק",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.666831097725076,
+      "longitude": 34.587512594747295
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::415",
+    "name": "מקדש מלך",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.654885307430717,
+      "longitude": 34.55148846926196
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::416",
+    "name": "תפארת ישראל",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.663216464997397,
+      "longitude": 34.58569168060897
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::421",
+    "name": "בני עקיבה",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.671690586387523,
+      "longitude": 34.56630879224167
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::424",
+    "name": "רשבי",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.649592790853273,
+      "longitude": 34.58239655553723
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::425",
+    "name": "נווה שלום",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.65960448383958,
+      "longitude": 34.58623344550012
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::426",
+    "name": "מגן דוד",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.690816908412646,
+      "longitude": 34.5743163862431
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::429",
+    "name": "אבן ספיר",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.653338679149307,
+      "longitude": 34.588053443003744
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::431",
+    "name": "טולדנו",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.658426235244715,
+      "longitude": 34.56466637153155
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::434",
+    "name": "בני ציון עולי אירן",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.65118788765971,
+      "longitude": 34.55742541396262
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::436",
+    "name": "תפילת חנה",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.650043284644816,
+      "longitude": 34.578342130916866
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::438",
+    "name": "בית חנניה",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.67154642870153,
+      "longitude": 34.56497515828561
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::440",
+    "name": "אגודת חב\"ד",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.6935602247587,
+      "longitude": 34.582338596014694
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::441",
+    "name": "חבד ברנע",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.687463838138033,
+      "longitude": 34.57908492667822
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::443",
+    "name": "בית יעקב לעולי טורקיה",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.667833931995034,
+      "longitude": 34.59178710795757
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::446",
+    "name": "נר ישראל אשקלון",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.669904748174808,
+      "longitude": 34.578101825612045
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::448",
+    "name": "תרומה מהכלל",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.660403598057982,
+      "longitude": 34.55816494590311
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::450",
+    "name": "עטרת ציון",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.653114256862626,
+      "longitude": 34.552604629396996
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::452",
+    "name": "מקלט_בית מדרש ובית כנסת",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.65660743244835,
+      "longitude": 34.56280524066072
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::453",
+    "name": "באר חיים",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.654498651718036,
+      "longitude": 34.56351411234751
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::454",
+    "name": "בית כנסת",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.698764208238025,
+      "longitude": 34.583328274722874
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::458",
+    "name": "בית אחיעזר",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.658775477829746,
+      "longitude": 34.557682835318346
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::459",
+    "name": "תפארת באבאי",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.658515093486816,
+      "longitude": 34.57899408131668
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::460",
+    "name": "אהבת תורה",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.66123987295302,
+      "longitude": 34.56367609416123
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::461",
+    "name": "עזרא הסופר",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.65961441566528,
+      "longitude": 34.56427230381717
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::462",
+    "name": "ר' יצחק בן ואליד",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.652783581179005,
+      "longitude": 34.56391844758931
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::463",
+    "name": "ר' מאיר בעל הנס",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.655680652810535,
+      "longitude": 34.5507084977869
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::464",
+    "name": "צדיקי ספי",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.653628599250315,
+      "longitude": 34.55337937761997
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::465",
+    "name": "בית אברהם",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.65825530894315,
+      "longitude": 34.55451215585159
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::466",
+    "name": "בית אל",
+    "type": "synagogue",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "location": {
+      "latitude": 31.657001791808938,
+      "longitude": 34.55466966479554
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashkelon",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0"
+    }
+  }
+]

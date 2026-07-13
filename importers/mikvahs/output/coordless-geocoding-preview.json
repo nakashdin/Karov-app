@@ -1,0 +1,985 @@
+[
+  {
+    "id": "municipal:modiin-illit:mikvah::modiin-illit--5",
+    "sourceSystem": "municipal-phase6",
+    "name": "מקווה חפציבה",
+    "city": "מודיעין עילית",
+    "address": "אלישיב 23",
+    "gender": "נשים",
+    "geocode": {
+      "location": {
+        "latitude": 32.7961796,
+        "longitude": 35.5334249
+      },
+      "precision": "city",
+      "confidence": 0.5,
+      "query": "אלישיב 23, מודיעין עילית",
+      "note": "free-text city center (unvalidated, coarse)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "low_confidence_manual"
+  },
+  {
+    "id": "municipal:modiin-illit:mikvah::modiin-illit--6",
+    "sourceSystem": "municipal-phase6",
+    "name": "מקווה נאות הפסגה",
+    "city": "מודיעין עילית",
+    "address": "הריטב&rdquo;א 4",
+    "gender": "נשים",
+    "geocode": {
+      "location": {
+        "latitude": 32.7961796,
+        "longitude": 35.5334249
+      },
+      "precision": "city",
+      "confidence": 0.5,
+      "query": "הריטב&rdquo;א 4, מודיעין עילית",
+      "note": "free-text city center (unvalidated, coarse)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "low_confidence_manual"
+  },
+  {
+    "id": "municipal:modiin-illit:mikvah::modiin-illit--2",
+    "sourceSystem": "municipal-phase6",
+    "name": "מקווה קרית ספר (גברים)",
+    "city": "מודיעין עילית",
+    "address": "'זכרון דוד'- שדי חמד 13",
+    "gender": "גברים",
+    "geocode": {
+      "location": {
+        "latitude": 32.7961796,
+        "longitude": 35.5334249
+      },
+      "precision": "city",
+      "confidence": 0.5,
+      "query": "'זכרון דוד'- שדי חמד 13, מודיעין עילית",
+      "note": "free-text city center (unvalidated, coarse)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "low_confidence_manual"
+  },
+  {
+    "id": "municipal:modiin-illit:mikvah::modiin-illit--3",
+    "sourceSystem": "municipal-phase6",
+    "name": "מקווה קרית ספר (גברים)",
+    "city": "מודיעין עילית",
+    "address": "'זכרון משה'- נתיבות המשפט 40",
+    "gender": "גברים",
+    "geocode": {
+      "location": {
+        "latitude": 32.7961796,
+        "longitude": 35.5334249
+      },
+      "precision": "city",
+      "confidence": 0.5,
+      "query": "'זכרון משה'- נתיבות המשפט 40, מודיעין עילית",
+      "note": "free-text city center (unvalidated, coarse)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "low_confidence_manual"
+  },
+  {
+    "id": "municipal:modiin-illit:mikvah::modiin-illit--7",
+    "sourceSystem": "municipal-phase6",
+    "name": "מקווה ברכפלד (גברים)",
+    "city": "מודיעין עילית",
+    "address": "'היכל יהושע'- ירוסלב- רשב&rdquo;י 21",
+    "gender": "גברים",
+    "geocode": {
+      "location": {
+        "latitude": 32.7961796,
+        "longitude": 35.5334249
+      },
+      "precision": "city",
+      "confidence": 0.5,
+      "query": "'היכל יהושע'- ירוסלב- רשב&rdquo;י 21, מודיעין עילית",
+      "note": "free-text city center (unvalidated, coarse)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "low_confidence_manual"
+  },
+  {
+    "id": "municipal:modiin-illit:mikvah::modiin-illit--10",
+    "sourceSystem": "municipal-phase6",
+    "name": "מקווה נאות הפסגה (גברים)",
+    "city": "מודיעין עילית",
+    "address": "הריטב&rdquo;א 4",
+    "gender": "גברים",
+    "geocode": {
+      "location": {
+        "latitude": 32.7961796,
+        "longitude": 35.5334249
+      },
+      "precision": "city",
+      "confidence": 0.5,
+      "query": "הריטב&rdquo;א 4, מודיעין עילית",
+      "note": "free-text city center (unvalidated, coarse)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "low_confidence_manual"
+  },
+  {
+    "id": "municipal:modiin-illit:mikvah::modiin-illit--3",
+    "sourceSystem": "municipal-phase6",
+    "name": "מקווה קרית ספר (כלים)",
+    "city": "מודיעין עילית",
+    "address": "חזון דוד 19 - נגישות לרכבים מרחוב שערי תשובה",
+    "gender": "כלים",
+    "geocode": {
+      "location": {
+        "latitude": 32.7961796,
+        "longitude": 35.5334249
+      },
+      "precision": "city",
+      "confidence": 0.5,
+      "query": "חזון דוד 19 - נגישות לרכבים מרחוב שערי תשובה, מודיעין עילית",
+      "note": "free-text city center (unvalidated, coarse)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "low_confidence_manual"
+  },
+  {
+    "id": "municipal:modiin-illit:mikvah::modiin-illit--7",
+    "sourceSystem": "municipal-phase6",
+    "name": "מקווה נאות הפסגה (כלים)",
+    "city": "מודיעין עילית",
+    "address": "הריטב&rdquo;א 4",
+    "gender": "כלים",
+    "geocode": {
+      "location": {
+        "latitude": 32.7961796,
+        "longitude": 35.5334249
+      },
+      "precision": "city",
+      "confidence": 0.5,
+      "query": "הריטב&rdquo;א 4, מודיעין עילית",
+      "note": "free-text city center (unvalidated, coarse)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "low_confidence_manual"
+  },
+  {
+    "id": "municipal:maale-adumim:mikvah::maale-adumim--6",
+    "sourceSystem": "municipal-phase6",
+    "name": "מקווה גבעת המייסדים",
+    "city": "מעלה אדומים",
+    "address": "מקווה \"באר מיכל\" - בתיאום עם הבלנית חנה 0506658783 או אסתר אבילחק 0548440007",
+    "gender": "נשים",
+    "geocode": {
+      "location": {
+        "latitude": 31.802886,
+        "longitude": 35.2526186
+      },
+      "precision": "city",
+      "confidence": 0.5,
+      "query": "מקווה \"באר מיכל\" - בתיאום עם הבלנית חנה 0506658783 או אסתר אבילחק 0548440007, מעלה אדומים",
+      "note": "free-text city center (unvalidated, coarse)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "low_confidence_manual"
+  },
+  {
+    "id": "municipal:maale-adumim:mikvah::maale-adumim--7",
+    "sourceSystem": "municipal-phase6",
+    "name": "מקווה לבקשה מיוחדת ולבירורים ניתן לפנות לאחראית המקוואות גב' מיכל בינימין ניי: 050-8296225",
+    "city": "מעלה אדומים",
+    "address": null,
+    "gender": "נשים",
+    "geocode": {
+      "location": {
+        "latitude": 31.802886,
+        "longitude": 35.2526186
+      },
+      "precision": "city",
+      "confidence": 0.5,
+      "query": "מעלה אדומים",
+      "note": "free-text city center (unvalidated, coarse)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "low_confidence_manual"
+  },
+  {
+    "id": "municipal:shomron:mikvah::shomron--4",
+    "sourceSystem": "municipal-phase6",
+    "name": "מקווה ברוכין - מונגש",
+    "city": "ברוכין - מונגש",
+    "address": null,
+    "gender": "נשים",
+    "geocode": {
+      "location": null,
+      "precision": "failed",
+      "confidence": 0,
+      "query": "ברוכין - מונגש",
+      "note": "no geocode (city + address both unresolved)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "failed"
+  },
+  {
+    "id": "municipal:shomron:mikvah::shomron--6",
+    "sourceSystem": "municipal-phase6",
+    "name": "מקווה הר ברכה",
+    "city": "הר ברכה",
+    "address": null,
+    "gender": "נשים",
+    "geocode": {
+      "location": {
+        "latitude": 32.0894791,
+        "longitude": 34.8587048
+      },
+      "precision": "city",
+      "confidence": 0.5,
+      "query": "הר ברכה",
+      "note": "free-text city center (unvalidated, coarse)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "low_confidence_manual"
+  },
+  {
+    "id": "municipal:shomron:mikvah::shomron--7",
+    "sourceSystem": "municipal-phase6",
+    "name": "מקווה חוות גלעד",
+    "city": "חוות גלעד",
+    "address": null,
+    "gender": "נשים",
+    "geocode": {
+      "location": null,
+      "precision": "failed",
+      "confidence": 0,
+      "query": "חוות גלעד",
+      "note": "no geocode (city + address both unresolved)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "failed"
+  },
+  {
+    "id": "municipal:shomron:mikvah::shomron--8",
+    "sourceSystem": "municipal-phase6",
+    "name": "מקווה חוות יאיר",
+    "city": "חוות יאיר",
+    "address": null,
+    "gender": "נשים",
+    "geocode": {
+      "location": null,
+      "precision": "failed",
+      "confidence": 0,
+      "query": "חוות יאיר",
+      "note": "no geocode (city + address both unresolved)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "failed"
+  },
+  {
+    "id": "municipal:shomron:mikvah::shomron--11",
+    "sourceSystem": "municipal-phase6",
+    "name": "מקווה טל מנשה",
+    "city": "טל מנשה",
+    "address": null,
+    "gender": "נשים",
+    "geocode": {
+      "location": {
+        "latitude": 32.482077,
+        "longitude": 35.0194158
+      },
+      "precision": "city",
+      "confidence": 0.5,
+      "query": "טל מנשה",
+      "note": "free-text city center (unvalidated, coarse)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "low_confidence_manual"
+  },
+  {
+    "id": "municipal:shomron:mikvah::shomron--15",
+    "sourceSystem": "municipal-phase6",
+    "name": "מקווה לשם",
+    "city": "לשם",
+    "address": null,
+    "gender": "נשים",
+    "geocode": {
+      "location": {
+        "latitude": 31.7291741,
+        "longitude": 35.1885894
+      },
+      "precision": "city",
+      "confidence": 0.5,
+      "query": "לשם",
+      "note": "free-text city center (unvalidated, coarse)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "low_confidence_manual"
+  },
+  {
+    "id": "municipal:shomron:mikvah::shomron--16",
+    "sourceSystem": "municipal-phase6",
+    "name": "מקווה מבוא דותן",
+    "city": "מבוא דותן",
+    "address": null,
+    "gender": "נשים",
+    "geocode": {
+      "location": {
+        "latitude": 32.2295846,
+        "longitude": 35.0085279
+      },
+      "precision": "city",
+      "confidence": 0.5,
+      "query": "מבוא דותן",
+      "note": "free-text city center (unvalidated, coarse)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "low_confidence_manual"
+  },
+  {
+    "id": "municipal:shomron:mikvah::shomron--18",
+    "sourceSystem": "municipal-phase6",
+    "name": "מקווה נופי נחמיה",
+    "city": "נופי נחמיה",
+    "address": null,
+    "gender": "נשים",
+    "geocode": {
+      "location": null,
+      "precision": "failed",
+      "confidence": 0,
+      "query": "נופי נחמיה",
+      "note": "no geocode (city + address both unresolved)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "failed"
+  },
+  {
+    "id": "municipal:shomron:mikvah::shomron--22",
+    "sourceSystem": "municipal-phase6",
+    "name": "מקווה פדואל - מונגש",
+    "city": "פדואל - מונגש",
+    "address": null,
+    "gender": "נשים",
+    "geocode": {
+      "location": null,
+      "precision": "failed",
+      "confidence": 0,
+      "query": "פדואל - מונגש",
+      "note": "no geocode (city + address both unresolved)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "failed"
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-1",
+    "sourceSystem": "asbina-phase7",
+    "name": "מקווה אדם",
+    "city": "אדם",
+    "address": "רחוב לבונה 6/2 יש מרחב מוגן",
+    "gender": "לא צוין",
+    "geocode": {
+      "location": {
+        "latitude": 31.7481919,
+        "longitude": 35.2308841
+      },
+      "precision": "city",
+      "confidence": 0.5,
+      "query": "רחוב לבונה 6/2 יש מרחב מוגן, אדם",
+      "note": "free-text city center (unvalidated, coarse)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "low_confidence_manual"
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-3",
+    "sourceSystem": "asbina-phase7",
+    "name": "מקווה אחיה",
+    "city": "אחיה",
+    "address": null,
+    "gender": "לא צוין",
+    "geocode": {
+      "location": {
+        "latitude": 32.1279762,
+        "longitude": 34.8033381
+      },
+      "precision": "city",
+      "confidence": 0.5,
+      "query": "אחיה",
+      "note": "free-text city center (unvalidated, coarse)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "low_confidence_manual"
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-5",
+    "sourceSystem": "asbina-phase7",
+    "name": "מקווה אש קודש",
+    "city": "אש קודש",
+    "address": null,
+    "gender": "לא צוין",
+    "geocode": {
+      "location": {
+        "latitude": 31.7853015,
+        "longitude": 35.236125
+      },
+      "precision": "city",
+      "confidence": 0.5,
+      "query": "אש קודש",
+      "note": "free-text city center (unvalidated, coarse)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "low_confidence_manual"
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-7",
+    "sourceSystem": "asbina-phase7",
+    "name": "מקווה אלון",
+    "city": "אלון",
+    "address": null,
+    "gender": "לא צוין",
+    "geocode": {
+      "location": {
+        "latitude": 32.1469516,
+        "longitude": 34.843991
+      },
+      "precision": "city",
+      "confidence": 0.6,
+      "query": "אלון",
+      "note": "validated city/settlement center",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "low_confidence_manual"
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-11",
+    "sourceSystem": "asbina-phase7",
+    "name": "מקווה בני אדם",
+    "city": "בני אדם",
+    "address": null,
+    "gender": "לא צוין",
+    "geocode": {
+      "location": null,
+      "precision": "failed",
+      "confidence": 0,
+      "query": "בני אדם",
+      "note": "no geocode (city + address both unresolved)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "failed"
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-15",
+    "sourceSystem": "asbina-phase7",
+    "name": "מקווה גבעת אסף",
+    "city": "גבעת אסף",
+    "address": null,
+    "gender": "לא צוין",
+    "geocode": {
+      "location": null,
+      "precision": "failed",
+      "confidence": 0,
+      "query": "גבעת אסף",
+      "note": "no geocode (city + address both unresolved)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "failed"
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-17",
+    "sourceSystem": "asbina-phase7",
+    "name": "מקווה גבעת הרואה",
+    "city": "גבעת הרואה",
+    "address": null,
+    "gender": "לא צוין",
+    "geocode": {
+      "location": null,
+      "precision": "failed",
+      "confidence": 0,
+      "query": "גבעת הרואה",
+      "note": "no geocode (city + address both unresolved)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "failed"
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-19",
+    "sourceSystem": "asbina-phase7",
+    "name": "מקווה גבעת הראל",
+    "city": "גבעת הראל",
+    "address": null,
+    "gender": "לא צוין",
+    "geocode": {
+      "location": null,
+      "precision": "failed",
+      "confidence": 0,
+      "query": "גבעת הראל",
+      "note": "no geocode (city + address both unresolved)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "failed"
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-25",
+    "sourceSystem": "asbina-phase7",
+    "name": "מקווה חרשה",
+    "city": "חרשה",
+    "address": null,
+    "gender": "לא צוין",
+    "geocode": {
+      "location": {
+        "latitude": 33.046635,
+        "longitude": 35.4395495
+      },
+      "precision": "city",
+      "confidence": 0.5,
+      "query": "חרשה",
+      "note": "free-text city center (unvalidated, coarse)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "low_confidence_manual"
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-27",
+    "sourceSystem": "asbina-phase7",
+    "name": "מקווה חשמונאים",
+    "city": "חשמונאים",
+    "address": "רחוב הדקל יש מרחב מוגן",
+    "gender": "לא צוין",
+    "geocode": {
+      "location": {
+        "latitude": 32.0823307,
+        "longitude": 34.8113141
+      },
+      "precision": "city",
+      "confidence": 0.6,
+      "query": "רחוב הדקל יש מרחב מוגן, חשמונאים",
+      "note": "validated city/settlement center",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": {
+      "class": "conflict",
+      "matchedId": "mikveh-339",
+      "matchedName": "שולמית חשמונאים",
+      "distanceM": 0
+    },
+    "writeReadiness": "duplicate_review"
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-33",
+    "sourceSystem": "asbina-phase7",
+    "name": "מקווה כוכב יעקב",
+    "city": "כוכב יעקב",
+    "address": null,
+    "gender": "לא צוין",
+    "geocode": {
+      "location": null,
+      "precision": "failed",
+      "confidence": 0,
+      "query": "כוכב יעקב",
+      "note": "no geocode (city + address both unresolved)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "failed"
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-37",
+    "sourceSystem": "asbina-phase7",
+    "name": "מקווה כרם רעים",
+    "city": "כרם רעים",
+    "address": "יש מרחב מוגן",
+    "gender": "לא צוין",
+    "geocode": {
+      "location": null,
+      "precision": "failed",
+      "confidence": 0,
+      "query": "יש מרחב מוגן, כרם רעים",
+      "note": "no geocode (city + address both unresolved)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "failed"
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-41",
+    "sourceSystem": "asbina-phase7",
+    "name": "מקווה מגרון",
+    "city": "מגרון",
+    "address": null,
+    "gender": "לא צוין",
+    "geocode": {
+      "location": null,
+      "precision": "failed",
+      "confidence": 0,
+      "query": "מגרון",
+      "note": "no geocode (city + address both unresolved)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "failed"
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-43",
+    "sourceSystem": "asbina-phase7",
+    "name": "מקווה מכמש",
+    "city": "מכמש",
+    "address": null,
+    "gender": "לא צוין",
+    "geocode": {
+      "location": {
+        "latitude": 31.8273912,
+        "longitude": 35.2435659
+      },
+      "precision": "city",
+      "confidence": 0.5,
+      "query": "מכמש",
+      "note": "free-text city center (unvalidated, coarse)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "low_confidence_manual"
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-45",
+    "sourceSystem": "asbina-phase7",
+    "name": "מקווה מעלה לבונה",
+    "city": "מעלה לבונה",
+    "address": null,
+    "gender": "לא צוין",
+    "geocode": {
+      "location": null,
+      "precision": "failed",
+      "confidence": 0,
+      "query": "מעלה לבונה",
+      "note": "no geocode (city + address both unresolved)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "failed"
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-49",
+    "sourceSystem": "asbina-phase7",
+    "name": "מקווה מתתיהו",
+    "city": "מתתיהו",
+    "address": null,
+    "gender": "לא צוין",
+    "geocode": {
+      "location": {
+        "latitude": 31.7861447,
+        "longitude": 35.2135213
+      },
+      "precision": "city",
+      "confidence": 0.5,
+      "query": "מתתיהו",
+      "note": "free-text city center (unvalidated, coarse)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "low_confidence_manual"
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-51",
+    "sourceSystem": "asbina-phase7",
+    "name": "מקווה נווה צוף",
+    "city": "נווה צוף",
+    "address": null,
+    "gender": "לא צוין",
+    "geocode": {
+      "location": null,
+      "precision": "failed",
+      "confidence": 0,
+      "query": "נווה צוף",
+      "note": "no geocode (city + address both unresolved)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "failed"
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-59",
+    "sourceSystem": "asbina-phase7",
+    "name": "מקווה נריה",
+    "city": "נריה",
+    "address": null,
+    "gender": "לא צוין",
+    "geocode": {
+      "location": {
+        "latitude": 31.7372591,
+        "longitude": 34.9862465
+      },
+      "precision": "city",
+      "confidence": 0.6,
+      "query": "נריה",
+      "note": "validated city/settlement center",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "low_confidence_manual"
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-61",
+    "sourceSystem": "asbina-phase7",
+    "name": "מקווה עדי עד",
+    "city": "עדי עד",
+    "address": null,
+    "gender": "לא צוין",
+    "geocode": {
+      "location": {
+        "latitude": 32.0832715,
+        "longitude": 34.7998541
+      },
+      "precision": "city",
+      "confidence": 0.5,
+      "query": "עדי עד",
+      "note": "free-text city center (unvalidated, coarse)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "low_confidence_manual"
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-63",
+    "sourceSystem": "asbina-phase7",
+    "name": "מקווה עטרת",
+    "city": "עטרת",
+    "address": null,
+    "gender": "לא צוין",
+    "geocode": {
+      "location": {
+        "latitude": 33.0046638,
+        "longitude": 35.6278005
+      },
+      "precision": "city",
+      "confidence": 0.5,
+      "query": "עטרת",
+      "note": "free-text city center (unvalidated, coarse)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "low_confidence_manual"
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-65",
+    "sourceSystem": "asbina-phase7",
+    "name": "מקווה עלי מרכז",
+    "city": "עלי מרכז",
+    "address": null,
+    "gender": "לא צוין",
+    "geocode": {
+      "location": {
+        "latitude": 31.985288,
+        "longitude": 34.808144
+      },
+      "precision": "city",
+      "confidence": 0.5,
+      "query": "עלי מרכז",
+      "note": "free-text city center (unvalidated, coarse)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "low_confidence_manual"
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-67",
+    "sourceSystem": "asbina-phase7",
+    "name": "מקווה עלי שכונת היובל",
+    "city": "עלי שכונת היובל",
+    "address": null,
+    "gender": "לא צוין",
+    "geocode": {
+      "location": null,
+      "precision": "failed",
+      "confidence": 0,
+      "query": "עלי שכונת היובל",
+      "note": "no geocode (city + address both unresolved)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "failed"
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-69",
+    "sourceSystem": "asbina-phase7",
+    "name": "מקווה עלי פלגי מים",
+    "city": "עלי פלגי מים",
+    "address": "יש מרחב מוגן",
+    "gender": "לא צוין",
+    "geocode": {
+      "location": null,
+      "precision": "failed",
+      "confidence": 0,
+      "query": "יש מרחב מוגן, עלי פלגי מים",
+      "note": "no geocode (city + address both unresolved)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "failed"
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-73",
+    "sourceSystem": "asbina-phase7",
+    "name": "מקווה עפרה",
+    "city": "עפרה",
+    "address": null,
+    "gender": "לא צוין",
+    "geocode": {
+      "location": {
+        "latitude": 31.7741785,
+        "longitude": 35.2382315
+      },
+      "precision": "city",
+      "confidence": 0.5,
+      "query": "עפרה",
+      "note": "free-text city center (unvalidated, coarse)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "low_confidence_manual"
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-75",
+    "sourceSystem": "asbina-phase7",
+    "name": "מקווה פסגות",
+    "city": "פסגות",
+    "address": null,
+    "gender": "לא צוין",
+    "geocode": {
+      "location": {
+        "latitude": 31.7478646,
+        "longitude": 34.9959199
+      },
+      "precision": "city",
+      "confidence": 0.6,
+      "query": "פסגות",
+      "note": "validated city/settlement center",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "low_confidence_manual"
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-77",
+    "sourceSystem": "asbina-phase7",
+    "name": "מקווה קידה",
+    "city": "קידה",
+    "address": null,
+    "gender": "לא צוין",
+    "geocode": {
+      "location": {
+        "latitude": 29.5618964,
+        "longitude": 34.9365777
+      },
+      "precision": "city",
+      "confidence": 0.5,
+      "query": "קידה",
+      "note": "free-text city center (unvalidated, coarse)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "low_confidence_manual"
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-79",
+    "sourceSystem": "asbina-phase7",
+    "name": "מקווה רימונים",
+    "city": "רימונים",
+    "address": null,
+    "gender": "לא צוין",
+    "geocode": {
+      "location": {
+        "latitude": 32.6896127,
+        "longitude": 35.4222377
+      },
+      "precision": "city",
+      "confidence": 0.6,
+      "query": "רימונים",
+      "note": "validated city/settlement center",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "low_confidence_manual"
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-81",
+    "sourceSystem": "asbina-phase7",
+    "name": "מקווה שבות רחל",
+    "city": "שבות רחל",
+    "address": null,
+    "gender": "לא צוין",
+    "geocode": {
+      "location": null,
+      "precision": "failed",
+      "confidence": 0,
+      "query": "שבות רחל",
+      "note": "no geocode (city + address both unresolved)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "failed"
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-85",
+    "sourceSystem": "asbina-phase7",
+    "name": "מקווה תל ציון",
+    "city": "תל ציון",
+    "address": "יש מרחב מוגן",
+    "gender": "לא צוין",
+    "geocode": {
+      "location": {
+        "latitude": 32.794402,
+        "longitude": 35.536815
+      },
+      "precision": "city",
+      "confidence": 0.5,
+      "query": "יש מרחב מוגן, תל ציון",
+      "note": "free-text city center (unvalidated, coarse)",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "low_confidence_manual"
+  },
+  {
+    "id": "municipal:sdot-negev:mikvah::sdot-negev-15",
+    "sourceSystem": "asbina-phase7",
+    "name": "מקווה מעגלים",
+    "city": "מעגלים",
+    "address": null,
+    "gender": "לא צוין",
+    "geocode": {
+      "location": {
+        "latitude": 31.3974042,
+        "longitude": 34.5983178
+      },
+      "precision": "city",
+      "confidence": 0.6,
+      "query": "מעגלים",
+      "note": "validated city/settlement center",
+      "geocodedAt": "2026-06-19"
+    },
+    "duplicate": null,
+    "writeReadiness": "low_confidence_manual"
+  }
+]

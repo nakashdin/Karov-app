@@ -1,0 +1,2058 @@
+[
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-1",
+    "type": "mikveh",
+    "name": "מקווה אדם",
+    "address": "רחוב לבונה 6/2 יש מרחב מוגן",
+    "cityHint": "אדם",
+    "phone": "025913906",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-1",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "אדם",
+          "לאה מור יוסף קשאני נייד: 058-6202235",
+          "02-5913906",
+          "רחוב לבונה 6/2 יש מרחב מוגן"
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "אדם",
+      "balanit": "לאה מור יוסף קשאני נייד: 058-6202235"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-3",
+    "type": "mikveh",
+    "name": "מקווה אחיה",
+    "cityHint": "אחיה",
+    "phone": "025913936",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-3",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "אחיה",
+          "גנץ ליאת נייד: 052-4672344 יהודית שור נייד: 052-8375709",
+          "02-5913936",
+          ""
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "אחיה",
+      "balanit": "גנץ ליאת נייד: 052-4672344 יהודית שור נייד: 052-8375709"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-5",
+    "type": "mikveh",
+    "name": "מקווה אש קודש",
+    "cityHint": "אש קודש",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-5",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "אש קודש",
+          "תחיה גץ נייד: 050-9259907 אפרת שטרן נייד: 054-8095995 אתאל כהן נייד: 050-9273168",
+          "",
+          ""
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "אש קודש",
+      "balanit": "תחיה גץ נייד: 050-9259907 אפרת שטרן נייד: 054-8095995 אתאל כהן נייד: 050-9273168"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-7",
+    "type": "mikveh",
+    "name": "מקווה אלון",
+    "cityHint": "אלון",
+    "phone": "025913907",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-7",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "אלון",
+          "אנאל קרוגליאק נייד: 050-3913553",
+          "02-5913907",
+          ""
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "אלון",
+      "balanit": "אנאל קרוגליאק נייד: 050-3913553"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-9",
+    "type": "mikveh",
+    "name": "מקווה בית חורון",
+    "cityHint": "בית חורון",
+    "phone": "025913908",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-9",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "בית חורון",
+          "רבקה צ'יקוטאי נייד: 050-2070121, בית: 08-9265353 ענת אוחנה בית: 02-5363160 דליה קיסר לינס נגר נייד: 052-4368930",
+          "02-5913908",
+          ""
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "בית חורון",
+      "balanit": "רבקה צ'יקוטאי נייד: 050-2070121, בית: 08-9265353 ענת אוחנה בית: 02-5363160 דליה קיסר לינס נגר נייד: 052-4368930"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-11",
+    "type": "mikveh",
+    "name": "מקווה בני אדם",
+    "cityHint": "בני אדם",
+    "phone": "025913600",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-11",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "בני אדם",
+          "רעות גואטה נייד: 052-5547091 ספיר דהרי נייד: 050-3512135 מירב רייבי נייד: 054-3374564 עטרה זיידמן נייד: 054-5446973",
+          "02-5913600",
+          ""
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "בני אדם",
+      "balanit": "רעות גואטה נייד: 052-5547091 ספיר דהרי נייד: 050-3512135 מירב רייבי נייד: 054-3374564 עטרה זיידמן נייד: 054-5446973"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-13",
+    "type": "mikveh",
+    "name": "מקווה גבעון החדשה",
+    "address": "רחוב כליל החורש",
+    "cityHint": "גבעון החדשה",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-13",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "גבעון החדשה",
+          "שלומית מרדכי נייד: 054-5604694 אוולין בן חמו 050-6409764",
+          "",
+          "רחוב כליל החורש"
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "גבעון החדשה",
+      "balanit": "שלומית מרדכי נייד: 054-5604694 אוולין בן חמו 050-6409764"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-15",
+    "type": "mikveh",
+    "name": "מקווה גבעת אסף",
+    "cityHint": "גבעת אסף",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-15",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "גבעת אסף",
+          "שיראל מעטוף נייד: 050-4848469",
+          "",
+          ""
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "גבעת אסף",
+      "balanit": "שיראל מעטוף נייד: 050-4848469"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-17",
+    "type": "mikveh",
+    "name": "מקווה גבעת הרואה",
+    "cityHint": "גבעת הרואה",
+    "phone": "025913934",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-17",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "גבעת הרואה",
+          "רבקה לרנר נייד: 052-6881773 יעל אהרוני נייד: 052-4727224",
+          "02-5913934",
+          ""
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "גבעת הרואה",
+      "balanit": "רבקה לרנר נייד: 052-6881773 יעל אהרוני נייד: 052-4727224"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-19",
+    "type": "mikveh",
+    "name": "מקווה גבעת הראל",
+    "cityHint": "גבעת הראל",
+    "phone": "0506473545",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-19",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "גבעת הראל",
+          "אמונה קינן נייד: 054-5610803 שרונה רובינשטיין נייד: 054-4962875",
+          "050-6473545",
+          ""
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "גבעת הראל",
+      "balanit": "אמונה קינן נייד: 054-5610803 שרונה רובינשטיין נייד: 054-4962875"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-21",
+    "type": "mikveh",
+    "name": "מקווה גני מודיעין",
+    "address": "רחוב מהרי קאפח 15/2 יש מרחב מוגן",
+    "cityHint": "גני מודיעין",
+    "phone": "025770249",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-21",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "גני מודיעין",
+          "ליאת אסולין נייד: 050-4263969 רחל אדרי נייד: 055-6656594 אורלי פרץ נייד: 050-4112885",
+          "02-5770249",
+          "רחוב מהרי קאפח 15/2 יש מרחב מוגן"
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "גני מודיעין",
+      "balanit": "ליאת אסולין נייד: 050-4263969 רחל אדרי נייד: 055-6656594 אורלי פרץ נייד: 050-4112885"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-23",
+    "type": "mikveh",
+    "name": "מקווה דולב",
+    "cityHint": "דולב",
+    "phone": "025913909",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-23",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "דולב",
+          "חני אוזן נייד: 054-8615059, בית: 02-9974329 חגית רפאל נייד: 054-7683195 דינה לייבמן נייד: 054-3074770",
+          "02-5913909",
+          ""
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "דולב",
+      "balanit": "חני אוזן נייד: 054-8615059, בית: 02-9974329 חגית רפאל נייד: 054-7683195 דינה לייבמן נייד: 054-3074770"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-25",
+    "type": "mikveh",
+    "name": "מקווה חרשה",
+    "cityHint": "חרשה",
+    "phone": "025913910",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-25",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "חרשה",
+          "נורית חניה בית: 02-9975136 לאה פרוור נייד: 054-8110058",
+          "02-5913910",
+          ""
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "חרשה",
+      "balanit": "נורית חניה בית: 02-9975136 לאה פרוור נייד: 054-8110058"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-27",
+    "type": "mikveh",
+    "name": "מקווה חשמונאים",
+    "address": "רחוב הדקל יש מרחב מוגן",
+    "cityHint": "חשמונאים",
+    "phone": "025913925",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-27",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "חשמונאים",
+          "אילנית אלגבי נייד: 054-8456516 נעמי דוד נייד: 050-4143645",
+          "02-5913925",
+          "רחוב הדקל יש מרחב מוגן"
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "חשמונאים",
+      "balanit": "אילנית אלגבי נייד: 054-8456516 נעמי דוד נייד: 050-4143645"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-29",
+    "type": "mikveh",
+    "name": "מקווה טלמון",
+    "cityHint": "טלמון",
+    "phone": "025913911",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-29",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "טלמון",
+          "לאה האריס נייד: 054-8110908 שושנה רוזנפלד נייד: 054-6577313 אפרת פלס נייד: 052-8320999",
+          "02-5913911",
+          ""
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "טלמון",
+      "balanit": "לאה האריס נייד: 054-8110908 שושנה רוזנפלד נייד: 054-6577313 אפרת פלס נייד: 052-8320999"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-31",
+    "type": "mikveh",
+    "name": "מקווה כוכב השחר",
+    "cityHint": "כוכב השחר",
+    "phone": "025913912",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-31",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "כוכב השחר",
+          "ג'נט פרידמן נייד: 052-3993248 יעל פניגשטין נייד: 0523003641 אורלי מנור נייד: 054-9392361 דברת דומן נייד: 052-7710698",
+          "02-5913912",
+          ""
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "כוכב השחר",
+      "balanit": "ג'נט פרידמן נייד: 052-3993248 יעל פניגשטין נייד: 0523003641 אורלי מנור נייד: 054-9392361 דברת דומן נייד: 052-7710698"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-33",
+    "type": "mikveh",
+    "name": "מקווה כוכב יעקב",
+    "cityHint": "כוכב יעקב",
+    "phone": "025913913",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-33",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "כוכב יעקב",
+          "אסנת אילוס נייד: 052-5665340 פנינה שרביטמ נייד: 055-6620302 דבורה מזרחי נייד: 050-4145489",
+          "02-5913913",
+          ""
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "כוכב יעקב",
+      "balanit": "אסנת אילוס נייד: 052-5665340 פנינה שרביטמ נייד: 055-6620302 דבורה מזרחי נייד: 050-4145489"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-35",
+    "type": "mikveh",
+    "name": "מקווה כפר אדומים",
+    "cityHint": "כפר אדומים",
+    "phone": "025913924",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-35",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "כפר אדומים",
+          "לאה דובנסקי נייד: 054-6327705 שרון גריאניסטי נייד: 052-8478459",
+          "02-5913924",
+          ""
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "כפר אדומים",
+      "balanit": "לאה דובנסקי נייד: 054-6327705 שרון גריאניסטי נייד: 052-8478459"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-37",
+    "type": "mikveh",
+    "name": "מקווה כרם רעים",
+    "address": "יש מרחב מוגן",
+    "cityHint": "כרם רעים",
+    "phone": "025913935",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-37",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "כרם רעים",
+          "שירה פלד נייד: 055-9910008 רחל יצחקי נייד: 052-4481269 ניקול אוברמן נייד: 058-6220954",
+          "02-5913935",
+          "יש מרחב מוגן"
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "כרם רעים",
+      "balanit": "שירה פלד נייד: 055-9910008 רחל יצחקי נייד: 052-4481269 ניקול אוברמן נייד: 058-6220954"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-39",
+    "type": "mikveh",
+    "name": "מקווה מבוא חורון",
+    "address": "יש מרחב מוגן",
+    "cityHint": "מבוא חורון",
+    "phone": "025913914",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-39",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "מבוא חורון",
+          "אושרית גובי נייד: 050-2050902 תרצה כהן נייד: 052-5836879 לורי פרלמוטר נייד: 052-4612841",
+          "02-5913914",
+          "יש מרחב מוגן"
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "מבוא חורון",
+      "balanit": "אושרית גובי נייד: 050-2050902 תרצה כהן נייד: 052-5836879 לורי פרלמוטר נייד: 052-4612841"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-41",
+    "type": "mikveh",
+    "name": "מקווה מגרון",
+    "cityHint": "מגרון",
+    "phone": "025913937",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-41",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "מגרון",
+          "אפלבוים יפעת נייד: 052-4231951",
+          "02-5913937",
+          ""
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "מגרון",
+      "balanit": "אפלבוים יפעת נייד: 052-4231951"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-43",
+    "type": "mikveh",
+    "name": "מקווה מכמש",
+    "cityHint": "מכמש",
+    "phone": "025913915",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-43",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "מכמש",
+          "דינה שפילמן נייד: 052-8993243 טוני בלאו נייד: 054-3068606 יהודית רוטנברג",
+          "02-5913915",
+          ""
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "מכמש",
+      "balanit": "דינה שפילמן נייד: 052-8993243 טוני בלאו נייד: 054-3068606 יהודית רוטנברג"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-45",
+    "type": "mikveh",
+    "name": "מקווה מעלה לבונה",
+    "cityHint": "מעלה לבונה",
+    "phone": "025913916",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-45",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "מעלה לבונה",
+          "סופי ביסמוט נייד: 054-6949849 חנה לדרר נייד: 052-5666319",
+          "02-5913916",
+          ""
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "מעלה לבונה",
+      "balanit": "סופי ביסמוט נייד: 054-6949849 חנה לדרר נייד: 052-5666319"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-47",
+    "type": "mikveh",
+    "name": "מקווה מצפה יריחו",
+    "cityHint": "מצפה יריחו",
+    "phone": "025913917",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-47",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "מצפה יריחו",
+          "אסנת כהן נייד: 050-3138135 שולי גמליאל נייד: 050-8755360 רות וייס נייד: 052-3003252",
+          "02-5913917",
+          ""
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "מצפה יריחו",
+      "balanit": "אסנת כהן נייד: 050-3138135 שולי גמליאל נייד: 050-8755360 רות וייס נייד: 052-3003252"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-49",
+    "type": "mikveh",
+    "name": "מקווה מתתיהו",
+    "cityHint": "מתתיהו",
+    "phone": "025913918",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-49",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "מתתיהו",
+          "בתיה ג'יקובס נייד: 054-6720249 רבקה לף נייד: 054-6020249",
+          "02-5913918",
+          ""
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "מתתיהו",
+      "balanit": "בתיה ג'יקובס נייד: 054-6720249 רבקה לף נייד: 054-6020249"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-51",
+    "type": "mikveh",
+    "name": "מקווה נווה צוף",
+    "cityHint": "נווה צוף",
+    "phone": "025913919",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-51",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "נווה צוף",
+          "חגית כהן נייד: 050-8619771 אורטל טובי נייד: 054-9247476",
+          "02-5913919",
+          ""
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "נווה צוף",
+      "balanit": "חגית כהן נייד: 050-8619771 אורטל טובי נייד: 054-9247476"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-53",
+    "type": "mikveh",
+    "name": "מקווה נופי פרת",
+    "cityHint": "נופי פרת",
+    "phone": "025913920",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-53",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "נופי פרת",
+          "דסי בן לולו נייד- 050-4072288 מיכל שקד נייד: 058-5903590 טלי הכהן נייד: 050-9057052",
+          "02-5913920",
+          ""
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "נופי פרת",
+      "balanit": "דסי בן לולו נייד- 050-4072288 מיכל שקד נייד: 058-5903590 טלי הכהן נייד: 050-9057052"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-55",
+    "type": "mikveh",
+    "name": "מקווה נחליאל",
+    "cityHint": "נחליאל",
+    "phone": "025913921",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-55",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "נחליאל",
+          "נאוה הרשקוביץ נייד:058-4232135 מירי דנציגר נייד: 052-5802399 ברכה היימן נייד: 058-4604422 מלכי ברנר נייד: 050-6500201",
+          "02-5913921",
+          ""
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "נחליאל",
+      "balanit": "נאוה הרשקוביץ נייד:058-4232135 מירי דנציגר נייד: 052-5802399 ברכה היימן נייד: 058-4604422 מלכי ברנר נייד: 050-6500201"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-57",
+    "type": "mikveh",
+    "name": "מקווה נעלה",
+    "address": "הטופז 13 יש מרחב מוגן",
+    "cityHint": "נעלה",
+    "phone": "025913601",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-57",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "נעלה",
+          "אילה קליימן נייד:054-7641908 יש לתאם מראש עם הבלנית",
+          "02-5913601",
+          "הטופז 13 יש מרחב מוגן"
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "נעלה",
+      "balanit": "אילה קליימן נייד:054-7641908 יש לתאם מראש עם הבלנית"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-59",
+    "type": "mikveh",
+    "name": "מקווה נריה",
+    "cityHint": "נריה",
+    "phone": "025913923",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-59",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "נריה",
+          "פויכטונגר רבקה נייד: 052-4488461 אוריאל טובה מ\"מ נייד: 054-3040965 סיגל כדורי נייד: 058-4399479",
+          "02-5913923",
+          ""
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "נריה",
+      "balanit": "פויכטונגר רבקה נייד: 052-4488461 אוריאל טובה מ\"מ נייד: 054-3040965 סיגל כדורי נייד: 058-4399479"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-61",
+    "type": "mikveh",
+    "name": "מקווה עדי עד",
+    "cityHint": "עדי עד",
+    "phone": "025913940",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-61",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "עדי עד",
+          "שירן מנדס נייד: 052-7044086",
+          "02-5913940",
+          ""
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "עדי עד",
+      "balanit": "שירן מנדס נייד: 052-7044086"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-63",
+    "type": "mikveh",
+    "name": "מקווה עטרת",
+    "cityHint": "עטרת",
+    "phone": "025913929",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-63",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "עטרת",
+          "אורלי שלמה נייד: 052-5666549 רינה פרוס נייד: 054-7767565",
+          "02-5913929",
+          ""
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "עטרת",
+      "balanit": "אורלי שלמה נייד: 052-5666549 רינה פרוס נייד: 054-7767565"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-65",
+    "type": "mikveh",
+    "name": "מקווה עלי מרכז",
+    "cityHint": "עלי מרכז",
+    "phone": "025913922",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-65",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "עלי מרכז",
+          "מרים וולף נייד: 054-5464407 סלבי מסלטי נייד: 058-6272197",
+          "02-5913922",
+          ""
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "עלי מרכז",
+      "balanit": "מרים וולף נייד: 054-5464407 סלבי מסלטי נייד: 058-6272197"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-67",
+    "type": "mikveh",
+    "name": "מקווה עלי שכונת היובל",
+    "cityHint": "עלי שכונת היובל",
+    "phone": "025913938",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-67",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "עלי שכונת היובל",
+          "יעל ניקר נייד: 050-5262625",
+          "02-5913938",
+          ""
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "עלי שכונת היובל",
+      "balanit": "יעל ניקר נייד: 050-5262625"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-69",
+    "type": "mikveh",
+    "name": "מקווה עלי פלגי מים",
+    "address": "יש מרחב מוגן",
+    "cityHint": "עלי פלגי מים",
+    "phone": "025913933",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-69",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "עלי פלגי מים",
+          "פסל ליאת נייד: 050-7247259 חן חדד נייד: 052-5803075 חגית ארלן נייד: 054-5883646",
+          "02-5913933",
+          "יש מרחב מוגן"
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "עלי פלגי מים",
+      "balanit": "פסל ליאת נייד: 050-7247259 חן חדד נייד: 052-5803075 חגית ארלן נייד: 054-5883646"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-71",
+    "type": "mikveh",
+    "name": "מקווה עמיחי",
+    "address": "יש מרחב מוגן",
+    "cityHint": "עמיחי",
+    "phone": "026278371",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-71",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "עמיחי",
+          "גילה גרינברג נייד: 050-6656822 עטרת מובשוביץ נייד: 055-6693479",
+          "02-6278371",
+          "יש מרחב מוגן"
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "עמיחי",
+      "balanit": "גילה גרינברג נייד: 050-6656822 עטרת מובשוביץ נייד: 055-6693479"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-73",
+    "type": "mikveh",
+    "name": "מקווה עפרה",
+    "cityHint": "עפרה",
+    "phone": "025913904",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-73",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "עפרה",
+          "לונגה סטפני נייד:054-4766163 עטרה אופן נייד 050-6517405 מרים אסייג נייד: 054-5454148",
+          "02-5913904",
+          ""
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "עפרה",
+      "balanit": "לונגה סטפני נייד:054-4766163 עטרה אופן נייד 050-6517405 מרים אסייג נייד: 054-5454148"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-75",
+    "type": "mikveh",
+    "name": "מקווה פסגות",
+    "cityHint": "פסגות",
+    "phone": "025913928",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-75",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "פסגות",
+          "צאלית הורוביץ בית: 02-9973920 מרים אמרופל נייד: 054-7474724 מלכה פרנק נייד: 054-8004046",
+          "02-5913928",
+          ""
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "פסגות",
+      "balanit": "צאלית הורוביץ בית: 02-9973920 מרים אמרופל נייד: 054-7474724 מלכה פרנק נייד: 054-8004046"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-77",
+    "type": "mikveh",
+    "name": "מקווה קידה",
+    "cityHint": "קידה",
+    "phone": "025913939",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-77",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "קידה",
+          "אילנה וייסברג נייד: 054-6328656 חני אפיריון נייד: 054-6737336 דקלה כרמל נייד: 052-6845624",
+          "02-5913939",
+          ""
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "קידה",
+      "balanit": "אילנה וייסברג נייד: 054-6328656 חני אפיריון נייד: 054-6737336 דקלה כרמל נייד: 052-6845624"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-79",
+    "type": "mikveh",
+    "name": "מקווה רימונים",
+    "cityHint": "רימונים",
+    "phone": "025913930",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-79",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "רימונים",
+          "אנני דהן נייד: 050-6235629 גלית אומר נייד: 055-6609304",
+          "02-5913930",
+          ""
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "רימונים",
+      "balanit": "אנני דהן נייד: 050-6235629 גלית אומר נייד: 055-6609304"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-81",
+    "type": "mikveh",
+    "name": "מקווה שבות רחל",
+    "cityHint": "שבות רחל",
+    "phone": "025913931",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-81",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "שבות רחל",
+          "רבקה אייזנהמר נייד: 052-6071430 תמר גורדון נייד: 054-2038266",
+          "02-5913931",
+          ""
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "שבות רחל",
+      "balanit": "רבקה אייזנהמר נייד: 052-6071430 תמר גורדון נייד: 054-2038266"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-83",
+    "type": "mikveh",
+    "name": "מקווה שילה",
+    "cityHint": "שילה",
+    "phone": "025913927",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-83",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "שילה",
+          "תמר צוויבל נייד: 054-5474766 פרקר ג'ולי נייד: 054-8014824 עדי רוט נייד: 052-4581936",
+          "02-5913927",
+          ""
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "שילה",
+      "balanit": "תמר צוויבל נייד: 054-5474766 פרקר ג'ולי נייד: 054-8014824 עדי רוט נייד: 052-4581936"
+    }
+  },
+  {
+    "id": "municipal:mate-binyamin:mikvah::mate-binyamin-85",
+    "type": "mikveh",
+    "name": "מקווה תל ציון",
+    "address": "יש מרחב מוגן",
+    "cityHint": "תל ציון",
+    "phone": "025913932",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:mate-binyamin:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "mate-binyamin-85",
+      "sourceUrl": "https://www.binyamin.org.il/547/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "תל ציון",
+          "שושנה גדג' נייד: 052-7663101 רונית לוי נייד: 054-8478519 שולמית אביגדור נייד: 052-7135714 עליזה חורי נייד: 052-7560219 רויטל שחר נייד: 050-4165410",
+          "02-5913932",
+          "יש מרחב מוגן"
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "מועצה אזורית מטה בנימין",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "תל ציון",
+      "balanit": "שושנה גדג' נייד: 052-7663101 רונית לוי נייד: 054-8478519 שולמית אביגדור נייד: 052-7135714 עליזה חורי נייד: 052-7560219 רויטל שחר נייד: 050-4165410"
+    }
+  },
+  {
+    "id": "municipal:sdot-negev:mikvah::sdot-negev-1",
+    "type": "mikveh",
+    "name": "מקווה בית הגדי",
+    "cityHint": "בית הגדי",
+    "phone": "0587925212",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:sdot-negev:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "sdot-negev-1",
+      "sourceUrl": "https://www.sdotnegev.org.il/124/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "בית הגדי",
+          "מימי מימון",
+          "0587-925212"
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "המועצה הדתית שדות נגב",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "בית הגדי",
+      "balanit": "מימי מימון"
+    }
+  },
+  {
+    "id": "municipal:sdot-negev:mikvah::sdot-negev-3",
+    "type": "mikveh",
+    "name": "מקווה גבעולים",
+    "cityHint": "גבעולים",
+    "phone": "0503299908",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:sdot-negev:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "sdot-negev-3",
+      "sourceUrl": "https://www.sdotnegev.org.il/124/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "גבעולים",
+          "שמחה רצון",
+          "0503-299908"
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "המועצה הדתית שדות נגב",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "גבעולים",
+      "balanit": "שמחה רצון"
+    }
+  },
+  {
+    "id": "municipal:sdot-negev:mikvah::sdot-negev-5",
+    "type": "mikveh",
+    "name": "מקווה זמרת",
+    "cityHint": "זמרת",
+    "phone": "0548489733",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:sdot-negev:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "sdot-negev-5",
+      "sourceUrl": "https://www.sdotnegev.org.il/124/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "זמרת",
+          "ביתיה אשוש",
+          "054-848-9733"
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "המועצה הדתית שדות נגב",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "זמרת",
+      "balanit": "ביתיה אשוש"
+    }
+  },
+  {
+    "id": "municipal:sdot-negev:mikvah::sdot-negev-7",
+    "type": "mikveh",
+    "name": "מקווה זרועה",
+    "cityHint": "זרועה",
+    "phone": "0542240198",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:sdot-negev:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "sdot-negev-7",
+      "sourceUrl": "https://www.sdotnegev.org.il/124/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "זרועה",
+          "חנה אלבז",
+          "0542-240198"
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "המועצה הדתית שדות נגב",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "זרועה",
+      "balanit": "חנה אלבז"
+    }
+  },
+  {
+    "id": "municipal:sdot-negev:mikvah::sdot-negev-9",
+    "type": "mikveh",
+    "name": "מקווה יושיביה",
+    "cityHint": "יושיביה",
+    "phone": "0545580561",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:sdot-negev:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "sdot-negev-9",
+      "sourceUrl": "https://www.sdotnegev.org.il/124/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "יושיביה",
+          "חנה טויטו",
+          "0545-580561"
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "המועצה הדתית שדות נגב",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "יושיביה",
+      "balanit": "חנה טויטו"
+    }
+  },
+  {
+    "id": "municipal:sdot-negev:mikvah::sdot-negev-11",
+    "type": "mikveh",
+    "name": "מקווה כפר מימון",
+    "cityHint": "כפר מימון",
+    "phone": "0527203504",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:sdot-negev:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "sdot-negev-11",
+      "sourceUrl": "https://www.sdotnegev.org.il/124/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "כפר מימון",
+          "הלל צילה הינדה",
+          "0527-203504"
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "המועצה הדתית שדות נגב",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "כפר מימון",
+      "balanit": "הלל צילה הינדה"
+    }
+  },
+  {
+    "id": "municipal:sdot-negev:mikvah::sdot-negev-13",
+    "type": "mikveh",
+    "name": "מקווה מלילות",
+    "cityHint": "מלילות",
+    "phone": "0548361999",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:sdot-negev:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "sdot-negev-13",
+      "sourceUrl": "https://www.sdotnegev.org.il/124/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "מלילות",
+          "עליזה מלכה",
+          "0548-361999"
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "המועצה הדתית שדות נגב",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "מלילות",
+      "balanit": "עליזה מלכה"
+    }
+  },
+  {
+    "id": "municipal:sdot-negev:mikvah::sdot-negev-15",
+    "type": "mikveh",
+    "name": "מקווה מעגלים",
+    "cityHint": "מעגלים",
+    "phone": "05463441030544641725",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:sdot-negev:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "sdot-negev-15",
+      "sourceUrl": "https://www.sdotnegev.org.il/124/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "מעגלים",
+          "לבנה דמרי יוכבדת יצחקי",
+          "0546-344103 0544-641725"
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "המועצה הדתית שדות נגב",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "מעגלים",
+      "balanit": "לבנה דמרי יוכבדת יצחקי"
+    }
+  },
+  {
+    "id": "municipal:sdot-negev:mikvah::sdot-negev-17",
+    "type": "mikveh",
+    "name": "מקווה תקומה",
+    "cityHint": "תקומה",
+    "phone": "0546380439",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:sdot-negev:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "sdot-negev-17",
+      "sourceUrl": "https://www.sdotnegev.org.il/124/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "תקומה",
+          "מושקוביץ אילנה",
+          "0546-380439"
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "המועצה הדתית שדות נגב",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "תקומה",
+      "balanit": "מושקוביץ אילנה"
+    }
+  },
+  {
+    "id": "municipal:sdot-negev:mikvah::sdot-negev-19",
+    "type": "mikveh",
+    "name": "מקווה סעד",
+    "cityHint": "סעד",
+    "phone": "0525454860",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:sdot-negev:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "sdot-negev-19",
+      "sourceUrl": "https://www.sdotnegev.org.il/124/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "סעד",
+          "אורלי וידס",
+          "0525-454860"
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "המועצה הדתית שדות נגב",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "סעד",
+      "balanit": "אורלי וידס"
+    }
+  },
+  {
+    "id": "municipal:sdot-negev:mikvah::sdot-negev-21",
+    "type": "mikveh",
+    "name": "מקווה עלומים",
+    "cityHint": "עלומים",
+    "phone": "0547792892",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:sdot-negev:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "sdot-negev-21",
+      "sourceUrl": "https://www.sdotnegev.org.il/124/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "עלומים",
+          "רוני הונוולד",
+          "0547-792892"
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "המועצה הדתית שדות נגב",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "עלומים",
+      "balanit": "רוני הונוולד"
+    }
+  },
+  {
+    "id": "municipal:sdot-negev:mikvah::sdot-negev-23",
+    "type": "mikveh",
+    "name": "מקווה שובה",
+    "cityHint": "שובה",
+    "phone": "0548450073",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:sdot-negev:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "sdot-negev-23",
+      "sourceUrl": "https://www.sdotnegev.org.il/124/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "שובה",
+          "בובה (אילנית) שוקרון",
+          "0548-450073"
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "המועצה הדתית שדות נגב",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "שובה",
+      "balanit": "בובה (אילנית) שוקרון"
+    }
+  },
+  {
+    "id": "municipal:sdot-negev:mikvah::sdot-negev-25",
+    "type": "mikveh",
+    "name": "מקווה שוקדה",
+    "cityHint": "שוקדה",
+    "phone": "0508378148",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:sdot-negev:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "sdot-negev-25",
+      "sourceUrl": "https://www.sdotnegev.org.il/124/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "שוקדה",
+          "אולגה דרעי",
+          "0508-378148"
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "המועצה הדתית שדות נגב",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "שוקדה",
+      "balanit": "אולגה דרעי"
+    }
+  },
+  {
+    "id": "municipal:sdot-negev:mikvah::sdot-negev-27",
+    "type": "mikveh",
+    "name": "מקווה שיבולים",
+    "cityHint": "שיבולים",
+    "phone": "0506051330",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:sdot-negev:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "sdot-negev-27",
+      "sourceUrl": "https://www.sdotnegev.org.il/124/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "שיבולים",
+          "בת-שבע אלעזרא",
+          "050-6051330"
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "המועצה הדתית שדות נגב",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "שיבולים",
+      "balanit": "בת-שבע אלעזרא"
+    }
+  },
+  {
+    "id": "municipal:sdot-negev:mikvah::sdot-negev-29",
+    "type": "mikveh",
+    "name": "מקווה שרשרת",
+    "cityHint": "שרשרת",
+    "phone": "0548426024",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:sdot-negev:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "sdot-negev-29",
+      "sourceUrl": "https://www.sdotnegev.org.il/124/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "שרשרת",
+          "עדי בוכריס",
+          "0548-426024"
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "המועצה הדתית שדות נגב",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "שרשרת",
+      "balanit": "עדי בוכריס"
+    }
+  },
+  {
+    "id": "municipal:sdot-negev:mikvah::sdot-negev-31",
+    "type": "mikveh",
+    "name": "מקווה תושיה",
+    "cityHint": "תושיה",
+    "phone": "0584496840",
+    "tags": [
+      "gender:לא צוין"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:sdot-negev:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "sdot-negev-31",
+      "sourceUrl": "https://www.sdotnegev.org.il/124/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "תושיה",
+          "צבן בריג'יט רן (נעמי)",
+          "0584-496840"
+        ]
+      }
+    },
+    "extra": {
+      "municipality": "המועצה הדתית שדות נגב",
+      "gender": "לא צוין",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "platform": "a.ש בינה",
+      "settlement": "תושיה",
+      "balanit": "צבן בריג'יט רן (נעמי)"
+    }
+  }
+]

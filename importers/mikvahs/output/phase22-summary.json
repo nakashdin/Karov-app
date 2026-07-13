@@ -1,0 +1,148 @@
+{
+  "generatedNote": "PHASE 22 DRY-RUN — 12 official Tier-2 city councils. GENDER-AWARE dedup (men/כלים are distinct records from women, matching the live data convention). Address-level coords only (native council coord bbox-validated OR GovMap ADDR_V1). No Nominatim. No write, no publish, no rebuild.",
+  "sources": {
+    "חיפה": {
+      "url": "https://www.mdhaifa.org",
+      "parsed": 10,
+      "duplicateVsLive": 0,
+      "withinBatchDup": 0,
+      "excluded": 0,
+      "writeReady": 10
+    },
+    "טבריה": {
+      "url": "https://mdt.org.il",
+      "parsed": 7,
+      "duplicateVsLive": 0,
+      "withinBatchDup": 0,
+      "excluded": 4,
+      "writeReady": 3
+    },
+    "נהריה": {
+      "url": "http://www.mdnahariya.co.il",
+      "parsed": 9,
+      "duplicateVsLive": 0,
+      "withinBatchDup": 0,
+      "excluded": 6,
+      "writeReady": 3
+    },
+    "עפולה": {
+      "url": "https://mdafula.org.il",
+      "parsed": 15,
+      "duplicateVsLive": 0,
+      "withinBatchDup": 0,
+      "excluded": 0,
+      "writeReady": 15
+    },
+    "קרית מוצקין": {
+      "url": "https://www.mdmotzkin.org",
+      "parsed": 3,
+      "duplicateVsLive": 2,
+      "withinBatchDup": 0,
+      "excluded": 0,
+      "writeReady": 1
+    },
+    "קרית ביאליק": {
+      "url": "https://qbialik.org.il",
+      "parsed": 3,
+      "duplicateVsLive": 2,
+      "withinBatchDup": 0,
+      "excluded": 0,
+      "writeReady": 1
+    },
+    "קרית ים": {
+      "url": "https://www.kiryat-yam.muni.il",
+      "parsed": 2,
+      "duplicateVsLive": 0,
+      "withinBatchDup": 0,
+      "excluded": 1,
+      "writeReady": 1
+    },
+    "כפר סבא": {
+      "url": "https://www.kfar-saba.muni.il",
+      "parsed": 6,
+      "duplicateVsLive": 0,
+      "withinBatchDup": 0,
+      "excluded": 1,
+      "writeReady": 5
+    },
+    "רעננה": {
+      "url": "https://mdrn.org.il",
+      "parsed": 8,
+      "duplicateVsLive": 4,
+      "withinBatchDup": 0,
+      "excluded": 0,
+      "writeReady": 4
+    },
+    "הרצליה": {
+      "url": "https://mdh.org.il",
+      "parsed": 8,
+      "duplicateVsLive": 5,
+      "withinBatchDup": 0,
+      "excluded": 0,
+      "writeReady": 3
+    },
+    "נתניה": {
+      "url": "https://mdn.org.il",
+      "parsed": 13,
+      "duplicateVsLive": 13,
+      "withinBatchDup": 0,
+      "excluded": 0,
+      "writeReady": 0
+    },
+    "צפת": {
+      "url": "https://mdzefat.co.il",
+      "parsed": 12,
+      "duplicateVsLive": 4,
+      "withinBatchDup": 0,
+      "excluded": 6,
+      "writeReady": 2
+    }
+  },
+  "totalParsed": 96,
+  "duplicatesVsLive": 30,
+  "withinBatchDuplicates": 0,
+  "excluded": 18,
+  "writeReady": 48,
+  "writeReadyByCity": {
+    "חיפה": 10,
+    "טבריה": 3,
+    "נהריה": 3,
+    "עפולה": 15,
+    "קרית מוצקין": 1,
+    "קרית ביאליק": 1,
+    "קרית ים": 1,
+    "כפר סבא": 5,
+    "רעננה": 4,
+    "הרצליה": 3,
+    "צפת": 2
+  },
+  "writeReadyByGender": {
+    "נשים": 27,
+    "גברים": 12,
+    "כלים": 9
+  },
+  "nativeCoordCount": 31,
+  "govmapCount": 17,
+  "idCollisions": 0,
+  "duplicateAppIds": 0,
+  "finalRecommendedWriteCount": 48,
+  "liveMikvehBefore": 615,
+  "estimatedTotalAfterWrite": 663,
+  "keyFinding": "חיפה (0 live → 10, native coords) and עפולה (0 live → many, native) are the big wins. נתניה: all 13 official records already live (completeness CONFIRMED; rich attendant/hours/accessibility = enrichment candidates). Men/כלים mikvahs at buildings where only women existed are now captured as distinct records.",
+  "excludedNote": "Excluded = addresses GovMap could not resolve to ADDR_V1 (old-city/intersection/landmark addresses with no house number, e.g. Tzfat old city, Tiberias/Nahariya intersections) — per address-level policy, no street-centroid/Nominatim/fabrication; candidates for manual coordinates.",
+  "carryOver": {
+    "phase19": 8,
+    "phase20": 8,
+    "phase21": 17
+  },
+  "accumulatedWriteReadyForNextWrite": 81,
+  "accumulatedNote": "P19 8 + P20 8 + P21 17 + P22 48 = 81 records ready for ONE additive write when authorized.",
+  "rollbackPlan": [
+    "Backup places.osm.json → places.osm.pre-phaseNN.backup.json (+cities) before any write",
+    "Additive append only; do NOT run rebuildAppDataset"
+  ],
+  "dryRun": true,
+  "liveDataTouched": false,
+  "publishPerformed": false,
+  "rebuildTouched": false
+}

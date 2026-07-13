@@ -1,0 +1,2160 @@
+[
+  {
+    "id": "arcgis:herzliya::1",
+    "type": "synagogue",
+    "name": "בית כנסת-היכל מרדכי",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.17489175757731,
+      "longitude": 34.80828568405756
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:1",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 1,
+        "Name": " בית כנסת-היכל מרדכי",
+        "hangasha": "",
+        "address": "הנשיא יצחק בן צבי 134",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "הנשיא יצחק בן צבי 134"
+  },
+  {
+    "id": "arcgis:herzliya::2",
+    "type": "synagogue",
+    "name": "בית כנסת-אהל משה",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.17493955747406,
+      "longitude": 34.80787705720785
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:2",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 2,
+        "Name": " בית כנסת-אהל משה",
+        "hangasha": "",
+        "address": "יהושע בן נון 54",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "יהושע בן נון 54"
+  },
+  {
+    "id": "arcgis:herzliya::3",
+    "type": "synagogue",
+    "name": "בית כנסת היכל משה - אשכנז",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.1547445070594,
+      "longitude": 34.841832987964686
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:3",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 3,
+        "Name": "בית כנסת היכל משה - אשכנז",
+        "hangasha": "",
+        "address": "חב\"ד 3",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "חב\"ד 3"
+  },
+  {
+    "id": "arcgis:herzliya::4",
+    "type": "synagogue",
+    "name": "בית כנסת תפארת שלמה",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.16129144351162,
+      "longitude": 34.86191857501079
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:4",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 4,
+        "Name": "בית כנסת תפארת שלמה",
+        "hangasha": "",
+        "address": "מנורה 40 ",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "מנורה 40"
+  },
+  {
+    "id": "arcgis:herzliya::5",
+    "type": "synagogue",
+    "name": "בית כנסת תפארת ישראל - עדות המזרח",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.16297416282255,
+      "longitude": 34.86172634126708
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:5",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 5,
+        "Name": "בית כנסת תפארת ישראל - עדות המזרח",
+        "hangasha": "",
+        "address": "אלעזר דוד 6",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "אלעזר דוד 6"
+  },
+  {
+    "id": "arcgis:herzliya::6",
+    "type": "synagogue",
+    "name": "בית כנסת ברית שלום - מרוקו",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.166121931582886,
+      "longitude": 34.862203461851124
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:6",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 6,
+        "Name": "בית כנסת ברית שלום - מרוקו",
+        "hangasha": "",
+        "address": "פורצי הדרך 75",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "פורצי הדרך 75"
+  },
+  {
+    "id": "arcgis:herzliya::7",
+    "type": "synagogue",
+    "name": "בית כנסת בית אלעזר - מרוקו",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.16022950537046,
+      "longitude": 34.857906527312316
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:7",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 7,
+        "Name": "בית כנסת בית אלעזר - מרוקו",
+        "hangasha": "",
+        "address": "פנקס 56",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "פנקס 56"
+  },
+  {
+    "id": "arcgis:herzliya::8",
+    "type": "synagogue",
+    "name": "בית כנסת בית שלום - תימן",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.16060084067012,
+      "longitude": 34.85817754564462
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:8",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 8,
+        "Name": "בית כנסת בית שלום - תימן",
+        "hangasha": "",
+        "address": "פנקס 39",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "פנקס 39"
+  },
+  {
+    "id": "arcgis:herzliya::9",
+    "type": "synagogue",
+    "name": "בית כנסת שערי צדק - תימן",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.16073518912632,
+      "longitude": 34.85795201656166
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:9",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 9,
+        "Name": " בית כנסת שערי צדק - תימן",
+        "hangasha": "",
+        "address": "פנקס 41",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "פנקס 41"
+  },
+  {
+    "id": "arcgis:herzliya::10",
+    "type": "synagogue",
+    "name": "בית כנסת עולי ארם נהריים - עדות המזרח",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.16163901698294,
+      "longitude": 34.85822999086592
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:10",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 10,
+        "Name": "בית כנסת עולי ארם נהריים - עדות המזרח",
+        "hangasha": "מונגש",
+        "address": "י.ל. פרץ",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "י.ל. פרץ"
+  },
+  {
+    "id": "arcgis:herzliya::11",
+    "type": "synagogue",
+    "name": "בית כנסת סולם יעקב-שומר אמונים",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.163498511461114,
+      "longitude": 34.859274376327996
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:11",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 11,
+        "Name": "בית כנסת סולם יעקב-שומר אמונים",
+        "hangasha": "מונגש",
+        "address": "כצנלסון 92",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "כצנלסון 92"
+  },
+  {
+    "id": "arcgis:herzliya::12",
+    "type": "synagogue",
+    "name": "בית כנסת תפארת צעירים - תימני בלדי",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.164059530682614,
+      "longitude": 34.859005664832516
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:12",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 12,
+        "Name": "בית כנסת תפארת צעירים - תימני בלדי",
+        "hangasha": "",
+        "address": "גיבורי עציון 25",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "גיבורי עציון 25"
+  },
+  {
+    "id": "arcgis:herzliya::13",
+    "type": "synagogue",
+    "name": "בית כנסת בית ישראל - עדות אשכנז",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.16797665270228,
+      "longitude": 34.859368235050866
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:13",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 13,
+        "Name": "בית כנסת בית ישראל - עדות אשכנז",
+        "hangasha": "",
+        "address": "מולדת פינת התקוה",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "מולדת פינת התקוה"
+  },
+  {
+    "id": "arcgis:herzliya::14",
+    "type": "synagogue",
+    "name": "בית כנסת נחלת צבי - תימני בלדי",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.16547466989034,
+      "longitude": 34.85617266874691
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:14",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 14,
+        "Name": "בית כנסת נחלת צבי - תימני בלדי",
+        "hangasha": "",
+        "address": "שוחט ישראל 44",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "שוחט ישראל 44"
+  },
+  {
+    "id": "arcgis:herzliya::15",
+    "type": "synagogue",
+    "name": "בית כנסת מקדש מלך - ספרדי",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.16561310026779,
+      "longitude": 34.849379660902535
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:15",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 15,
+        "Name": "בית כנסת מקדש מלך - ספרדי ",
+        "hangasha": "",
+        "address": "העצמאות 93 סמטת מקדש המלך",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "העצמאות 93 סמטת מקדש המלך"
+  },
+  {
+    "id": "arcgis:herzliya::16",
+    "type": "synagogue",
+    "name": "בית כנסת קדוש לבנה",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.169978458180324,
+      "longitude": 34.84721414064928
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:16",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 16,
+        "Name": "בית כנסת קדוש לבנה",
+        "hangasha": "",
+        "address": "סולץ אלכסנדר 9",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "סולץ אלכסנדר 9"
+  },
+  {
+    "id": "arcgis:herzliya::17",
+    "type": "synagogue",
+    "name": "בית כנסת עקדת יצחק - מרוקו",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.16562543866628,
+      "longitude": 34.843673942036716
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:17",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 17,
+        "Name": "בית כנסת עקדת יצחק - מרוקו",
+        "hangasha": "",
+        "address": "הגליל 8",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "הגליל 8"
+  },
+  {
+    "id": "arcgis:herzliya::18",
+    "type": "synagogue",
+    "name": "בית כנסת שער השמים - עדות המזרח",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.16140179785744,
+      "longitude": 34.84185292198676
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:18",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 18,
+        "Name": "בית כנסת שער השמים - עדות המזרח",
+        "hangasha": "מונגש",
+        "address": "הרב קוק 6",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "הרב קוק 6"
+  },
+  {
+    "id": "arcgis:herzliya::19",
+    "type": "synagogue",
+    "name": "בית כנסת תפארת ישראל - תימן",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.17117608843034,
+      "longitude": 34.833491283116345
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:19",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 19,
+        "Name": "בית כנסת תפארת ישראל - תימן",
+        "hangasha": "",
+        "address": "שד\"ל 8",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "שד\"ל 8"
+  },
+  {
+    "id": "arcgis:herzliya::20",
+    "type": "synagogue",
+    "name": "בית כנסת עץ החיים - תימן",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.16798818972705,
+      "longitude": 34.8609265179771
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:20",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 20,
+        "Name": "בית כנסת עץ החיים - תימן",
+        "hangasha": "",
+        "address": "יציאת אירופה 23",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "יציאת אירופה 23"
+  },
+  {
+    "id": "arcgis:herzliya::21",
+    "type": "synagogue",
+    "name": "בית כנסת יד שלום - תימני בלדי",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.16145300024056,
+      "longitude": 34.86010924523677
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:21",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 21,
+        "Name": "בית כנסת יד שלום - תימני בלדי",
+        "hangasha": "",
+        "address": "רבן גמליאל 7",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "רבן גמליאל 7"
+  },
+  {
+    "id": "arcgis:herzliya::22",
+    "type": "synagogue",
+    "name": "בית כנסת אשכנזים-אור לישראל",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.16253159030289,
+      "longitude": 34.855470913189535
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:22",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 22,
+        "Name": "בית כנסת אשכנזים-אור לישראל",
+        "hangasha": "מונגש",
+        "address": "פרץ 7",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "פרץ 7"
+  },
+  {
+    "id": "arcgis:herzliya::23",
+    "type": "synagogue",
+    "name": "בית כנסת אחדות - עדות אשכנז",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.16428234608407,
+      "longitude": 34.84780005517253
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:23",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 23,
+        "Name": "בית כנסת אחדות - עדות אשכנז",
+        "hangasha": "",
+        "address": "הכוזרי 3",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "הכוזרי 3"
+  },
+  {
+    "id": "arcgis:herzliya::24",
+    "type": "synagogue",
+    "name": "בית כנסת הרב קוק - אשכנז",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.16249149823221,
+      "longitude": 34.83095867988935
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:24",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 24,
+        "Name": "בית כנסת הרב קוק - אשכנז",
+        "hangasha": "",
+        "address": "הרב קוק 89",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "הרב קוק 89"
+  },
+  {
+    "id": "arcgis:herzliya::25",
+    "type": "synagogue",
+    "name": "בית כנסת כתר תורה - מרוקו",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.17196519114849,
+      "longitude": 34.85971088874762
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:25",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 25,
+        "Name": "בית כנסת כתר תורה - מרוקו",
+        "hangasha": " ",
+        "address": "רחל 11",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "רחל 11"
+  },
+  {
+    "id": "arcgis:herzliya::26",
+    "type": "synagogue",
+    "name": "בית כנסת האר\"י - עדות המזרח",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.1765071046877,
+      "longitude": 34.8530428157502
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:26",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 26,
+        "Name": "בית כנסת האר\"י - עדות המזרח",
+        "hangasha": "",
+        "address": "הרי גולן 2",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "הרי גולן 2"
+  },
+  {
+    "id": "arcgis:herzliya::27",
+    "type": "synagogue",
+    "name": "בית כנסת אברהם אבינו",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.176182489491325,
+      "longitude": 34.853053593078556
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:27",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 27,
+        "Name": "בית כנסת אברהם אבינו",
+        "hangasha": "",
+        "address": "הרי גולן 4א",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "הרי גולן 4א"
+  },
+  {
+    "id": "arcgis:herzliya::28",
+    "type": "synagogue",
+    "name": "בית כנסת אור חיים - עדות המזרח",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.17349903263895,
+      "longitude": 34.85562707379876
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:28",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 28,
+        "Name": "בית כנסת אור חיים - עדות המזרח",
+        "hangasha": "",
+        "address": "הר סיני 32א",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "הר סיני 32א"
+  },
+  {
+    "id": "arcgis:herzliya::29",
+    "type": "synagogue",
+    "name": "בית כנסת תפארת בחורים - אשכנז",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.17221474197069,
+      "longitude": 34.84168863104885
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:29",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 29,
+        "Name": "בית כנסת תפארת בחורים - אשכנז",
+        "hangasha": "",
+        "address": "גיסין 6",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "גיסין 6"
+  },
+  {
+    "id": "arcgis:herzliya::30",
+    "type": "synagogue",
+    "name": "בית כנסת בית דוד - תימני-בלדי",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.184162839633764,
+      "longitude": 34.836315834506514
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:30",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 30,
+        "Name": "בית כנסת בית דוד - תימני-בלדי",
+        "hangasha": "",
+        "address": "שרעבי 7",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "שרעבי 7"
+  },
+  {
+    "id": "arcgis:herzliya::31",
+    "type": "synagogue",
+    "name": "בית כנסת ברכת יונה הנביא - פרס",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.17783291918029,
+      "longitude": 34.847017016644095
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:31",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 31,
+        "Name": "בית כנסת ברכת יונה הנביא - פרס",
+        "hangasha": "",
+        "address": "הצברים 14",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "הצברים 14"
+  },
+  {
+    "id": "arcgis:herzliya::32",
+    "type": "synagogue",
+    "name": "בית כנסת שערי רחמים - תימן",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.17796954453622,
+      "longitude": 34.847038049714925
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:32",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 32,
+        "Name": "בית כנסת שערי רחמים - תימן",
+        "hangasha": "",
+        "address": "האילנות 58",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "האילנות 58"
+  },
+  {
+    "id": "arcgis:herzliya::33",
+    "type": "synagogue",
+    "name": "בית כנסת שערי תפילה - עדות המזרח",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.17673930744833,
+      "longitude": 34.84840725555135
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:33",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 33,
+        "Name": "בית כנסת שערי תפילה - עדות המזרח",
+        "hangasha": "",
+        "address": "יסוד העלה 20",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "יסוד העלה 20"
+  },
+  {
+    "id": "arcgis:herzliya::34",
+    "type": "synagogue",
+    "name": "בית כנסת שארית ישראל - אשכנז",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.176936931172115,
+      "longitude": 34.84718370953799
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:34",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 34,
+        "Name": "בית כנסת שארית ישראל - אשכנז",
+        "hangasha": "מונגש",
+        "address": "הזיתים 1",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "הזיתים 1"
+  },
+  {
+    "id": "arcgis:herzliya::35",
+    "type": "synagogue",
+    "name": "בית כנסת רבנו יוסף חיים - עדות המזרח",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.17500012988358,
+      "longitude": 34.85395776749948
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:35",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 35,
+        "Name": "בית כנסת רבנו יוסף חיים - עדות המזרח",
+        "hangasha": "",
+        "address": "הרי גלעד 14",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "הרי גלעד 14"
+  },
+  {
+    "id": "arcgis:herzliya::36",
+    "type": "synagogue",
+    "name": "בית כנסת אור החיים",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.17499818683706,
+      "longitude": 34.85419689878098
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:36",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 36,
+        "Name": "בית כנסת אור החיים",
+        "hangasha": "",
+        "address": "הרי גלעד 16",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "הרי גלעד 16"
+  },
+  {
+    "id": "arcgis:herzliya::37",
+    "type": "synagogue",
+    "name": "בית כנסת היכל שלמה",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.17484262831555,
+      "longitude": 34.85415254590355
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:37",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 37,
+        "Name": "בית כנסת היכל שלמה",
+        "hangasha": "",
+        "address": "הרי גלעד 16א",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "הרי גלעד 16א"
+  },
+  {
+    "id": "arcgis:herzliya::38",
+    "type": "synagogue",
+    "name": "בית כנסת תורה וחיים - מרוקו",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.1750098970386,
+      "longitude": 34.854423603370144
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:38",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 38,
+        "Name": "בית כנסת תורה וחיים - מרוקו",
+        "hangasha": "",
+        "address": "הרי גלעד 18",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "הרי גלעד 18"
+  },
+  {
+    "id": "arcgis:herzliya::39",
+    "type": "synagogue",
+    "name": "בית כנסת אוהל יוסף",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.17768411631292,
+      "longitude": 34.856081570320534
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:39",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 39,
+        "Name": "בית כנסת אוהל יוסף",
+        "hangasha": "",
+        "address": "הר שומרון 22",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "הר שומרון 22"
+  },
+  {
+    "id": "arcgis:herzliya::40",
+    "type": "synagogue",
+    "name": "מקווה מרכזי",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.1662929310907,
+      "longitude": 34.84301027551033
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:40",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 40,
+        "Name": "מקווה מרכזי",
+        "hangasha": null,
+        "address": "סירקין 4",
+        "type": "מקווה"
+      }
+    },
+    "address": "סירקין 4"
+  },
+  {
+    "id": "arcgis:herzliya::41",
+    "type": "synagogue",
+    "name": "מקווה יד התשעה",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.17704016837635,
+      "longitude": 34.85341733722181
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:41",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 41,
+        "Name": "מקווה יד התשעה",
+        "hangasha": null,
+        "address": "זיסו 12",
+        "type": "מקווה"
+      }
+    },
+    "address": "זיסו 12"
+  },
+  {
+    "id": "arcgis:herzliya::42",
+    "type": "synagogue",
+    "name": "מקווה נווה עמל",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.16011774702515,
+      "longitude": 34.857675115246366
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:42",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 42,
+        "Name": "מקווה נווה עמל",
+        "hangasha": null,
+        "address": "פנקס 54",
+        "type": "מקווה"
+      }
+    },
+    "address": "פנקס 54"
+  },
+  {
+    "id": "arcgis:herzliya::43",
+    "type": "synagogue",
+    "name": "מקווה מערב העיר",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.172326061986894,
+      "longitude": 34.81555939517122
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:43",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 43,
+        "Name": "מקווה מערב העיר",
+        "hangasha": null,
+        "address": "היתד 20",
+        "type": "מקווה"
+      }
+    },
+    "address": "היתד 20"
+  },
+  {
+    "id": "arcgis:herzliya::44",
+    "type": "synagogue",
+    "name": "בניין מרכזים 2001",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.161559373470695,
+      "longitude": 34.810298935956915
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:44",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 44,
+        "Name": "בניין מרכזים 2001",
+        "hangasha": null,
+        "address": "משכית 15",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "משכית 15"
+  },
+  {
+    "id": "arcgis:herzliya::45",
+    "type": "synagogue",
+    "name": "בית כנסת ע\"ש חללי מינכן - מרוקו",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.17488614244553,
+      "longitude": 34.85661118200069
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:45",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 45,
+        "Name": "בית כנסת ע\"ש חללי מינכן - מרוקו",
+        "hangasha": null,
+        "address": "הר סיני 13",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "הר סיני 13"
+  },
+  {
+    "id": "arcgis:herzliya::46",
+    "type": "synagogue",
+    "name": "בית כנסת בית הלוי - תימני-שאמי",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.16964742616846,
+      "longitude": 34.85981429633897
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:46",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 46,
+        "Name": "בית כנסת בית הלוי - תימני-שאמי",
+        "hangasha": null,
+        "address": "הפרטיזנים 32",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "הפרטיזנים 32"
+  },
+  {
+    "id": "arcgis:herzliya::47",
+    "type": "synagogue",
+    "name": "בית הכנסת נוף ים - אשכנז",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.18968018738344,
+      "longitude": 34.81328242213396
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:47",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 47,
+        "Name": "בית הכנסת נוף ים - אשכנז",
+        "hangasha": null,
+        "address": "שפרינצק 4",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "שפרינצק 4"
+  },
+  {
+    "id": "arcgis:herzliya::48",
+    "type": "synagogue",
+    "name": "בית כנסת יוסף אלישע - עדות המזרח",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.18959651683726,
+      "longitude": 34.809926531692504
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:48",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 48,
+        "Name": "בית כנסת יוסף אלישע - עדות המזרח",
+        "hangasha": null,
+        "address": "נתיב הל\"ה 10",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "נתיב הל\"ה 10"
+  },
+  {
+    "id": "arcgis:herzliya::49",
+    "type": "synagogue",
+    "name": "מקווה פיתוח",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.17634150974141,
+      "longitude": 34.810914002377864
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:49",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 49,
+        "Name": "מקווה פיתוח",
+        "hangasha": "מונגש",
+        "address": "שלמה המלך 34",
+        "type": "מקווה"
+      }
+    },
+    "address": "שלמה המלך 34"
+  },
+  {
+    "id": "arcgis:herzliya::50",
+    "type": "synagogue",
+    "name": "אהל יעקב",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.18497595783296,
+      "longitude": 34.839181416876265
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:50",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 50,
+        "Name": "אהל יעקב",
+        "hangasha": null,
+        "address": "אלחריזי 5",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "אלחריזי 5"
+  },
+  {
+    "id": "arcgis:herzliya::51",
+    "type": "synagogue",
+    "name": "בית כנסת אבי דוד",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.16225020645194,
+      "longitude": 34.851078215497644
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:51",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 51,
+        "Name": "בית כנסת אבי דוד",
+        "hangasha": null,
+        "address": "מובשוביץ בנימין 16",
+        "type": null
+      }
+    },
+    "address": "מובשוביץ בנימין 16"
+  },
+  {
+    "id": "arcgis:herzliya::52",
+    "type": "synagogue",
+    "name": "בית כנסת אברהם אבינו-עדות מזרח",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.15564424246072,
+      "longitude": 34.835755063991044
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:52",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 52,
+        "Name": "בית כנסת אברהם אבינו-עדות מזרח",
+        "hangasha": null,
+        "address": "כסופים 12",
+        "type": null
+      }
+    },
+    "address": "כסופים 12"
+  },
+  {
+    "id": "arcgis:herzliya::53",
+    "type": "synagogue",
+    "name": "בית כנסת אהבה ואחווה - עדות המזרח",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.16562626402694,
+      "longitude": 34.8594813144978
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:53",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 53,
+        "Name": "בית כנסת אהבה ואחווה - עדות המזרח",
+        "hangasha": null,
+        "address": "כצנלסון 53",
+        "type": null
+      }
+    },
+    "address": "כצנלסון 53"
+  },
+  {
+    "id": "arcgis:herzliya::54",
+    "type": "synagogue",
+    "name": "בית כנסת אהבת ישראל - מרוקו",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.15529439653896,
+      "longitude": 34.83626256466235
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:54",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 54,
+        "Name": "בית כנסת אהבת ישראל - מרוקו",
+        "hangasha": null,
+        "address": "סעדיה גאון 14",
+        "type": null
+      }
+    },
+    "address": "סעדיה גאון 14"
+  },
+  {
+    "id": "arcgis:herzliya::55",
+    "type": "synagogue",
+    "name": "אהל מועד - עדות המזרח",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.165769749333286,
+      "longitude": 34.836677044062036
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:55",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 55,
+        "Name": "אהל מועד - עדות המזרח",
+        "hangasha": null,
+        "address": "ויצמן 31",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "ויצמן 31"
+  },
+  {
+    "id": "arcgis:herzliya::56",
+    "type": "synagogue",
+    "name": "בית כנסת אור לישראל - עדות אשכנז",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.162503283648796,
+      "longitude": 34.85543566571709
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:56",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 56,
+        "Name": "בית כנסת אור לישראל - עדות אשכנז",
+        "hangasha": null,
+        "address": "שח\"ל 2",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "שח\"ל 2"
+  },
+  {
+    "id": "arcgis:herzliya::57",
+    "type": "synagogue",
+    "name": "בית כנסת אחים - תימני-בלדי",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.16386220941732,
+      "longitude": 34.8520410591784
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:57",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 57,
+        "Name": "בית כנסת אחים - תימני-בלדי",
+        "hangasha": null,
+        "address": "הבנים 77",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "הבנים 77"
+  },
+  {
+    "id": "arcgis:herzliya::58",
+    "type": "synagogue",
+    "name": "בית כנסת בי\"ס הנדיב - כללי",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.170338219939325,
+      "longitude": 34.83354987459224
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:58",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 58,
+        "Name": "בית כנסת בי\"ס הנדיב - כללי",
+        "hangasha": null,
+        "address": "הנדיב 61",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "הנדיב 61"
+  },
+  {
+    "id": "arcgis:herzliya::59",
+    "type": "synagogue",
+    "name": "בית כנסת בית אל - עדות המזרח",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.18488969454835,
+      "longitude": 34.813827090091955
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:59",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 59,
+        "Name": "בית כנסת בית אל - עדות המזרח",
+        "hangasha": null,
+        "address": "העירית 6",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "העירית 6"
+  },
+  {
+    "id": "arcgis:herzliya::60",
+    "type": "synagogue",
+    "name": "בית כנסת בית אל חלמיש - לוב",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.16914479117511,
+      "longitude": 34.86174408914099
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:60",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 60,
+        "Name": "בית כנסת בית אל חלמיש - לוב",
+        "hangasha": null,
+        "address": "יציאת אירופה 45",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "יציאת אירופה 45"
+  },
+  {
+    "id": "arcgis:herzliya::61",
+    "type": "synagogue",
+    "name": "בית כנסת בית יואל - אשכנז",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.17229624278525,
+      "longitude": 34.81530826364694
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:61",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 61,
+        "Name": "בית כנסת בית יואל - אשכנז",
+        "hangasha": null,
+        "address": "הרב פישמן 8",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "הרב פישמן 8"
+  },
+  {
+    "id": "arcgis:herzliya::62",
+    "type": "synagogue",
+    "name": "בית כנסת בית יוליאנה - אשכנז",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.15639896320642,
+      "longitude": 34.848027094409034
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:62",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 62,
+        "Name": "בית כנסת בית יוליאנה - אשכנז",
+        "hangasha": null,
+        "address": "רזיאל דוד 22",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "רזיאל דוד 22"
+  },
+  {
+    "id": "arcgis:herzliya::63",
+    "type": "synagogue",
+    "name": "בית כנסת יוסף בבלי - עדות המזרח",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.15534209242146,
+      "longitude": 34.836598400275406
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:63",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 63,
+        "Name": "בית כנסת יוסף בבלי - עדות המזרח",
+        "hangasha": null,
+        "address": "סעדיה גאון 11",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "סעדיה גאון 11"
+  },
+  {
+    "id": "arcgis:herzliya::64",
+    "type": "synagogue",
+    "name": "בית כנסת בית פרוטיאה - כללי",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.1707172653833,
+      "longitude": 34.83778380443305
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:64",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 64,
+        "Name": "בית כנסת בית פרוטיאה - כללי",
+        "hangasha": null,
+        "address": "אשר ברש 5",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "אשר ברש 5"
+  },
+  {
+    "id": "arcgis:herzliya::65",
+    "type": "synagogue",
+    "name": "בית כנסת בן גוריון - עדות המזרח",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.16489036277975,
+      "longitude": 34.83018013706161
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:65",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 65,
+        "Name": "בית כנסת בן גוריון - עדות המזרח",
+        "hangasha": null,
+        "address": "אבן עזרא 13",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "אבן עזרא 13"
+  },
+  {
+    "id": "arcgis:herzliya::66",
+    "type": "synagogue",
+    "name": "בית כנסת הגדול - אשכנז",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.16679279539399,
+      "longitude": 34.84313524063874
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:66",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 66,
+        "Name": "בית כנסת הגדול - אשכנז",
+        "hangasha": null,
+        "address": "בן גוריון 1",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "בן גוריון 1"
+  },
+  {
+    "id": "arcgis:herzliya::67",
+    "type": "synagogue",
+    "name": "בית כנסת היכל יהושע - עדות המזרח",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.17495049490202,
+      "longitude": 34.816175574713434
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:67",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 67,
+        "Name": "בית כנסת היכל יהושע - עדות המזרח",
+        "hangasha": null,
+        "address": "נורדאו 67ב",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "נורדאו 67ב"
+  },
+  {
+    "id": "arcgis:herzliya::68",
+    "type": "synagogue",
+    "name": "בית כנסת חג\"י - תימני-בלדי",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.16578299228426,
+      "longitude": 34.83997701253529
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:68",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 68,
+        "Name": "בית כנסת חג\"י - תימני-בלדי",
+        "hangasha": null,
+        "address": "בר אילן 14",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "בר אילן 14"
+  },
+  {
+    "id": "arcgis:herzliya::69",
+    "type": "synagogue",
+    "name": "בית כנסת ישמח ישראל - אשכנז",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.152487327048334,
+      "longitude": 34.84312931842232
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:69",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 69,
+        "Name": "בית כנסת ישמח ישראל - אשכנז",
+        "hangasha": null,
+        "address": "הגאון מוילנה 14",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "הגאון מוילנה 14"
+  },
+  {
+    "id": "arcgis:herzliya::70",
+    "type": "synagogue",
+    "name": "בית כנסת מגן אברהם - תימן",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.16178367029894,
+      "longitude": 34.863123294185904
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:70",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 70,
+        "Name": "בית כנסת מגן אברהם - תימן",
+        "hangasha": null,
+        "address": "גיל 41",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "גיל 41"
+  },
+  {
+    "id": "arcgis:herzliya::71",
+    "type": "synagogue",
+    "name": "מגן צעירים - תימן",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.15999810367642,
+      "longitude": 34.850102036811194
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:71",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 71,
+        "Name": "מגן צעירים - תימן",
+        "hangasha": null,
+        "address": "פתח תקוה 24",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "פתח תקוה 24"
+  },
+  {
+    "id": "arcgis:herzliya::72",
+    "type": "synagogue",
+    "name": "נר קדושים - ירושלמי",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.155499602912435,
+      "longitude": 34.83568865857121
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:72",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 72,
+        "Name": "נר קדושים - ירושלמי",
+        "hangasha": null,
+        "address": "כסופים 10",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "כסופים 10"
+  },
+  {
+    "id": "arcgis:herzliya::73",
+    "type": "synagogue",
+    "name": "בית כנסת קהילת תורת חיים",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.15429594804256,
+      "longitude": 34.84723801048016
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:73",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 73,
+        "Name": "בית כנסת קהילת תורת חיים",
+        "hangasha": null,
+        "address": "יהודה הנשיא 52",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "יהודה הנשיא 52"
+  },
+  {
+    "id": "arcgis:herzliya::74",
+    "type": "synagogue",
+    "name": "בית כנסת שבזי ע\"ש צנעני - תימן",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.16481941867173,
+      "longitude": 34.85900645765851
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:74",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 74,
+        "Name": "בית כנסת שבזי ע\"ש צנעני - תימן",
+        "hangasha": null,
+        "address": "יצחק שדה 40",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "יצחק שדה 40"
+  },
+  {
+    "id": "arcgis:herzliya::75",
+    "type": "synagogue",
+    "name": "שומר אמונים - תימן",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.16364828690258,
+      "longitude": 34.85926539736722
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:75",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 75,
+        "Name": "שומר אמונים - תימן",
+        "hangasha": null,
+        "address": "כצנלסון 90",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "כצנלסון 90"
+  },
+  {
+    "id": "arcgis:herzliya::76",
+    "type": "synagogue",
+    "name": "בית כנסת שוקרלה-אלי כהן - עדות המזרח",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.16534526951149,
+      "longitude": 34.834148964328854
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:76",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 76,
+        "Name": "בית כנסת שוקרלה-אלי כהן - עדות המזרח",
+        "hangasha": null,
+        "address": "אבן גבירול 34",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "אבן גבירול 34"
+  },
+  {
+    "id": "arcgis:herzliya::77",
+    "type": "synagogue",
+    "name": "בית כנסת שערי תפילה",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.155887287205275,
+      "longitude": 34.83637159082053
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:77",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 77,
+        "Name": "בית כנסת שערי תפילה",
+        "hangasha": null,
+        "address": "סעדיה גאון 6",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "סעדיה גאון 6"
+  },
+  {
+    "id": "arcgis:herzliya::78",
+    "type": "synagogue",
+    "name": "בית כנסת חדש",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.166724754563965,
+      "longitude": 34.830676098907446
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:78",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 78,
+        "Name": "בית כנסת חדש",
+        "hangasha": null,
+        "address": "חנה רובינא 1",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "חנה רובינא 1"
+  },
+  {
+    "id": "arcgis:herzliya::79",
+    "type": "synagogue",
+    "name": "בית כנסת-היכל יהודה",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.157290408063794,
+      "longitude": 34.848525596992694
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:79",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 79,
+        "Name": "בית כנסת-היכל יהודה",
+        "hangasha": null,
+        "address": "מרבד הקסמים 6",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "מרבד הקסמים 6"
+  },
+  {
+    "id": "arcgis:herzliya::80",
+    "type": "synagogue",
+    "name": "ביכ\"נ זמני גליל ים",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.157201152110325,
+      "longitude": 34.81642321242928
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:80",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 80,
+        "Name": "ביכ\"נ זמני גליל ים",
+        "hangasha": null,
+        "address": "מוטה גור 30",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "מוטה גור 30"
+  },
+  {
+    "id": "arcgis:herzliya::81",
+    "type": "synagogue",
+    "name": "בית מדרש יאמר ליעקב – מדרשית נווה עמל",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.160569309444114,
+      "longitude": 34.85782718357175
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:81",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 81,
+        "Name": "בית מדרש יאמר ליעקב – מדרשית נווה עמל",
+        "hangasha": null,
+        "address": "פנקס 37",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "פנקס 37"
+  },
+  {
+    "id": "arcgis:herzliya::82",
+    "type": "synagogue",
+    "name": "בית כנסת ישורון",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.161296347387676,
+      "longitude": 34.85813120079825
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:82",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 82,
+        "Name": "בית כנסת ישורון",
+        "hangasha": null,
+        "address": "מורי עופרי 4",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "מורי עופרי 4"
+  },
+  {
+    "id": "arcgis:herzliya::83",
+    "type": "synagogue",
+    "name": "בית כנסת \"נצח ישראל",
+    "cityHint": "הרצליה",
+    "location": {
+      "latitude": 32.17975794714586,
+      "longitude": 34.811319273442685
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:herzliya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:herzliya:83",
+      "sourceUrl": "https://services3.arcgis.com/9qGhZGtb39XMVQyR/arcgis/rest/services/בתי_כנסת/FeatureServer/22",
+      "fetchedAt": "2026-06-21T06:39:59.329Z",
+      "raw": {
+        "OBJECTID": 83,
+        "Name": "בית כנסת \"נצח ישראל",
+        "hangasha": null,
+        "address": "הנשיא יצחק בן צבי 79א",
+        "type": "בית כנסת"
+      }
+    },
+    "address": "הנשיא יצחק בן צבי 79א"
+  }
+]

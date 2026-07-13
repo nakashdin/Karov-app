@@ -1,0 +1,555 @@
+[
+  {
+    "id": "mikveh-osm-node-1121963205",
+    "name": "מקווה ראובן",
+    "type": "mikveh",
+    "cityId": "",
+    "address": "",
+    "location": {
+      "latitude": 31.7395926,
+      "longitude": 34.9860115
+    },
+    "source": "osm",
+    "sourceUrl": "https://www.openstreetmap.org/node/1121963205",
+    "sourceName": "OpenStreetMap (ODbL)",
+    "extra": {
+      "license": "ODbL-1.0",
+      "attribution": "© OpenStreetMap contributors (ODbL)",
+      "provenance": {
+        "sourceId": "osm:mikvahs",
+        "sourceRecordId": "osm-node-1121963205",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-osm-node-1121965571",
+    "name": "מקווה גבעת שרת",
+    "type": "mikveh",
+    "cityId": "",
+    "address": "",
+    "location": {
+      "latitude": 31.7397348,
+      "longitude": 34.9765988
+    },
+    "source": "osm",
+    "sourceUrl": "https://www.openstreetmap.org/node/1121965571",
+    "sourceName": "OpenStreetMap (ODbL)",
+    "extra": {
+      "license": "ODbL-1.0",
+      "attribution": "© OpenStreetMap contributors (ODbL)",
+      "provenance": {
+        "sourceId": "osm:mikvahs",
+        "sourceRecordId": "osm-node-1121965571",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-osm-node-1435545794",
+    "name": "מקווה טהרה",
+    "type": "mikveh",
+    "cityId": "",
+    "address": "",
+    "location": {
+      "latitude": 32.639768,
+      "longitude": 35.0835463
+    },
+    "source": "osm",
+    "sourceUrl": "https://www.openstreetmap.org/node/1435545794",
+    "sourceName": "OpenStreetMap (ODbL)",
+    "extra": {
+      "license": "ODbL-1.0",
+      "attribution": "© OpenStreetMap contributors (ODbL)",
+      "provenance": {
+        "sourceId": "osm:mikvahs",
+        "sourceRecordId": "osm-node-1435545794",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-osm-node-1683994241",
+    "name": "המקווה",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "שושן 4",
+    "location": {
+      "latitude": 31.7793819,
+      "longitude": 35.2235229
+    },
+    "source": "osm",
+    "sourceUrl": "https://www.openstreetmap.org/node/1683994241",
+    "sourceName": "OpenStreetMap (ODbL)",
+    "extra": {
+      "license": "ODbL-1.0",
+      "attribution": "© OpenStreetMap contributors (ODbL)",
+      "provenance": {
+        "sourceId": "osm:mikvahs",
+        "sourceRecordId": "osm-node-1683994241",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-osm-node-5652127422",
+    "name": "מקווה נשים",
+    "type": "mikveh",
+    "cityId": "",
+    "address": "",
+    "location": {
+      "latitude": 32.8034392,
+      "longitude": 35.3840025
+    },
+    "source": "osm",
+    "sourceUrl": "https://www.openstreetmap.org/node/5652127422",
+    "sourceName": "OpenStreetMap (ODbL)",
+    "extra": {
+      "license": "ODbL-1.0",
+      "attribution": "© OpenStreetMap contributors (ODbL)",
+      "provenance": {
+        "sourceId": "osm:mikvahs",
+        "sourceRecordId": "osm-node-5652127422",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-osm-node-5723976421",
+    "name": "מקווה אלונים",
+    "type": "mikveh",
+    "cityId": "",
+    "address": "",
+    "location": {
+      "latitude": 32.7131861,
+      "longitude": 35.1427015
+    },
+    "source": "osm",
+    "sourceUrl": "https://www.openstreetmap.org/node/5723976421",
+    "sourceName": "OpenStreetMap (ODbL)",
+    "extra": {
+      "license": "ODbL-1.0",
+      "attribution": "© OpenStreetMap contributors (ODbL)",
+      "provenance": {
+        "sourceId": "osm:mikvahs",
+        "sourceRecordId": "osm-node-5723976421",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-osm-node-13196183468",
+    "name": "מקווה עירוני",
+    "type": "mikveh",
+    "cityId": "",
+    "address": "",
+    "location": {
+      "latitude": 32.8045028,
+      "longitude": 34.9992019
+    },
+    "source": "osm",
+    "sourceUrl": "https://www.openstreetmap.org/node/13196183468",
+    "sourceName": "OpenStreetMap (ODbL)",
+    "extra": {
+      "license": "ODbL-1.0",
+      "attribution": "© OpenStreetMap contributors (ODbL)",
+      "provenance": {
+        "sourceId": "osm:mikvahs",
+        "sourceRecordId": "osm-node-13196183468",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-osm-way-229587998",
+    "name": "מקווה",
+    "type": "mikveh",
+    "cityId": "",
+    "address": "",
+    "location": {
+      "latitude": 31.7546586,
+      "longitude": 35.1659669
+    },
+    "source": "osm",
+    "sourceUrl": "https://www.openstreetmap.org/way/229587998",
+    "sourceName": "OpenStreetMap (ODbL)",
+    "extra": {
+      "license": "ODbL-1.0",
+      "attribution": "© OpenStreetMap contributors (ODbL)",
+      "provenance": {
+        "sourceId": "osm:mikvahs",
+        "sourceRecordId": "osm-way-229587998",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-osm-way-283843467",
+    "name": "מקוה טהרה נשים טהרת ציון",
+    "type": "mikveh",
+    "cityId": "",
+    "address": "",
+    "location": {
+      "latitude": 32.4306858,
+      "longitude": 34.9254548
+    },
+    "source": "osm",
+    "sourceUrl": "https://www.openstreetmap.org/way/283843467",
+    "sourceName": "OpenStreetMap (ODbL)",
+    "extra": {
+      "license": "ODbL-1.0",
+      "attribution": "© OpenStreetMap contributors (ODbL)",
+      "provenance": {
+        "sourceId": "osm:mikvahs",
+        "sourceRecordId": "osm-way-283843467",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-osm-way-413557572",
+    "name": "מקווה האר\"י",
+    "type": "mikveh",
+    "cityId": "",
+    "address": "",
+    "location": {
+      "latitude": 32.9672366,
+      "longitude": 35.4906161
+    },
+    "source": "osm",
+    "sourceUrl": "https://www.openstreetmap.org/way/413557572",
+    "sourceName": "OpenStreetMap (ODbL)",
+    "extra": {
+      "license": "ODbL-1.0",
+      "attribution": "© OpenStreetMap contributors (ODbL)",
+      "provenance": {
+        "sourceId": "osm:mikvahs",
+        "sourceRecordId": "osm-way-413557572",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-osm-way-481476350",
+    "name": "מקווה נשים בת חפר",
+    "type": "mikveh",
+    "cityId": "בת חפר",
+    "address": "בת חפר",
+    "location": {
+      "latitude": 32.334849,
+      "longitude": 35.010538
+    },
+    "source": "osm",
+    "sourceUrl": "https://www.openstreetmap.org/way/481476350",
+    "sourceName": "OpenStreetMap (ODbL)",
+    "extra": {
+      "license": "ODbL-1.0",
+      "attribution": "© OpenStreetMap contributors (ODbL)",
+      "provenance": {
+        "sourceId": "osm:mikvahs",
+        "sourceRecordId": "osm-way-481476350",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-osm-way-586227560",
+    "name": "מקווה - מי מנחם",
+    "type": "mikveh",
+    "cityId": "",
+    "address": "",
+    "location": {
+      "latitude": 32.9860919,
+      "longitude": 35.5083327
+    },
+    "source": "osm",
+    "sourceUrl": "https://www.openstreetmap.org/way/586227560",
+    "sourceName": "OpenStreetMap (ODbL)",
+    "extra": {
+      "license": "ODbL-1.0",
+      "attribution": "© OpenStreetMap contributors (ODbL)",
+      "provenance": {
+        "sourceId": "osm:mikvahs",
+        "sourceRecordId": "osm-way-586227560",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-osm-way-662211701",
+    "name": "בית כנסת ומקווה גברים",
+    "type": "mikveh",
+    "cityId": "",
+    "address": "",
+    "location": {
+      "latitude": 32.4687411,
+      "longitude": 35.0373821
+    },
+    "source": "osm",
+    "sourceUrl": "https://www.openstreetmap.org/way/662211701",
+    "sourceName": "OpenStreetMap (ODbL)",
+    "extra": {
+      "license": "ODbL-1.0",
+      "attribution": "© OpenStreetMap contributors (ODbL)",
+      "provenance": {
+        "sourceId": "osm:mikvahs",
+        "sourceRecordId": "osm-way-662211701",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-osm-way-665203231",
+    "name": "מקווה טהרה צור הדסה",
+    "type": "mikveh",
+    "cityId": "צור הדסה",
+    "address": "שלדג",
+    "location": {
+      "latitude": 31.7126059,
+      "longitude": 35.0998209
+    },
+    "source": "osm",
+    "phone": "97225435177",
+    "sourceUrl": "https://www.openstreetmap.org/way/665203231",
+    "sourceName": "OpenStreetMap (ODbL)",
+    "extra": {
+      "license": "ODbL-1.0",
+      "attribution": "© OpenStreetMap contributors (ODbL)",
+      "provenance": {
+        "sourceId": "osm:mikvahs",
+        "sourceRecordId": "osm-way-665203231",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-osm-way-802113505",
+    "name": "מקווה נשים",
+    "type": "mikveh",
+    "cityId": "",
+    "address": "",
+    "location": {
+      "latitude": 33.0424315,
+      "longitude": 35.838026
+    },
+    "source": "osm",
+    "sourceUrl": "https://www.openstreetmap.org/way/802113505",
+    "sourceName": "OpenStreetMap (ODbL)",
+    "extra": {
+      "license": "ODbL-1.0",
+      "attribution": "© OpenStreetMap contributors (ODbL)",
+      "provenance": {
+        "sourceId": "osm:mikvahs",
+        "sourceRecordId": "osm-way-802113505",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-osm-way-929238001",
+    "name": "מקווה טריסק",
+    "type": "mikveh",
+    "cityId": "",
+    "address": "",
+    "location": {
+      "latitude": 32.9690813,
+      "longitude": 35.4925636
+    },
+    "source": "osm",
+    "sourceUrl": "https://www.openstreetmap.org/way/929238001",
+    "sourceName": "OpenStreetMap (ODbL)",
+    "extra": {
+      "license": "ODbL-1.0",
+      "attribution": "© OpenStreetMap contributors (ODbL)",
+      "provenance": {
+        "sourceId": "osm:mikvahs",
+        "sourceRecordId": "osm-way-929238001",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-osm-way-938753239",
+    "name": "מקווה טדגי",
+    "type": "mikveh",
+    "cityId": "",
+    "address": "",
+    "location": {
+      "latitude": 32.9813998,
+      "longitude": 35.4425553
+    },
+    "source": "osm",
+    "sourceUrl": "https://www.openstreetmap.org/way/938753239",
+    "sourceName": "OpenStreetMap (ODbL)",
+    "extra": {
+      "license": "ODbL-1.0",
+      "attribution": "© OpenStreetMap contributors (ODbL)",
+      "provenance": {
+        "sourceId": "osm:mikvahs",
+        "sourceRecordId": "osm-way-938753239",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-osm-way-1011987473",
+    "name": "מקווה נשים",
+    "type": "mikveh",
+    "cityId": "",
+    "address": "",
+    "location": {
+      "latitude": 31.6284152,
+      "longitude": 34.9530498
+    },
+    "source": "osm",
+    "sourceUrl": "https://www.openstreetmap.org/way/1011987473",
+    "sourceName": "OpenStreetMap (ODbL)",
+    "extra": {
+      "license": "ODbL-1.0",
+      "attribution": "© OpenStreetMap contributors (ODbL)",
+      "provenance": {
+        "sourceId": "osm:mikvahs",
+        "sourceRecordId": "osm-way-1011987473",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-osm-way-1173527134",
+    "name": "מקווה מים חיים",
+    "type": "mikveh",
+    "cityId": "בית שמש",
+    "address": "נחל לוז 16",
+    "location": {
+      "latitude": 31.7093828,
+      "longitude": 34.9934587
+    },
+    "source": "osm",
+    "sourceUrl": "https://www.openstreetmap.org/way/1173527134",
+    "sourceName": "OpenStreetMap (ODbL)",
+    "extra": {
+      "license": "ODbL-1.0",
+      "attribution": "© OpenStreetMap contributors (ODbL)",
+      "provenance": {
+        "sourceId": "osm:mikvahs",
+        "sourceRecordId": "osm-way-1173527134",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-osm-way-1183352242",
+    "name": "מקווה גברים",
+    "type": "mikveh",
+    "cityId": "יסודות",
+    "address": "חבקוק",
+    "location": {
+      "latitude": 31.8166269,
+      "longitude": 34.8668849
+    },
+    "source": "osm",
+    "sourceUrl": "https://www.openstreetmap.org/way/1183352242",
+    "sourceName": "OpenStreetMap (ODbL)",
+    "extra": {
+      "license": "ODbL-1.0",
+      "attribution": "© OpenStreetMap contributors (ODbL)",
+      "provenance": {
+        "sourceId": "osm:mikvahs",
+        "sourceRecordId": "osm-way-1183352242",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-osm-way-1188588550",
+    "name": "מקווה נשים רמת פנקס",
+    "type": "mikveh",
+    "cityId": "",
+    "address": "",
+    "location": {
+      "latitude": 32.0339731,
+      "longitude": 34.8397463
+    },
+    "source": "osm",
+    "sourceUrl": "https://www.openstreetmap.org/way/1188588550",
+    "sourceName": "OpenStreetMap (ODbL)",
+    "extra": {
+      "license": "ODbL-1.0",
+      "attribution": "© OpenStreetMap contributors (ODbL)",
+      "provenance": {
+        "sourceId": "osm:mikvahs",
+        "sourceRecordId": "osm-way-1188588550",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-osm-way-1230686459",
+    "name": "מקווה גברים",
+    "type": "mikveh",
+    "cityId": "",
+    "address": "",
+    "location": {
+      "latitude": 32.9584378,
+      "longitude": 35.4920699
+    },
+    "source": "osm",
+    "sourceUrl": "https://www.openstreetmap.org/way/1230686459",
+    "sourceName": "OpenStreetMap (ODbL)",
+    "extra": {
+      "license": "ODbL-1.0",
+      "attribution": "© OpenStreetMap contributors (ODbL)",
+      "provenance": {
+        "sourceId": "osm:mikvahs",
+        "sourceRecordId": "osm-way-1230686459",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-osm-way-1425760922",
+    "name": "מקווה אמשינאוו",
+    "type": "mikveh",
+    "cityId": "בית שמש",
+    "address": "רב פפא 3",
+    "location": {
+      "latitude": 31.7058074,
+      "longitude": 34.9732743
+    },
+    "source": "osm",
+    "sourceUrl": "https://www.openstreetmap.org/way/1425760922",
+    "sourceName": "OpenStreetMap (ODbL)",
+    "extra": {
+      "license": "ODbL-1.0",
+      "attribution": "© OpenStreetMap contributors (ODbL)",
+      "provenance": {
+        "sourceId": "osm:mikvahs",
+        "sourceRecordId": "osm-way-1425760922",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-osm-way-1476566482",
+    "name": "מקוה טהרה",
+    "type": "mikveh",
+    "cityId": "אלעד",
+    "address": "רב ניסים גאון 45",
+    "location": {
+      "latitude": 32.0522691,
+      "longitude": 34.9529239
+    },
+    "source": "osm",
+    "sourceUrl": "https://www.openstreetmap.org/way/1476566482",
+    "sourceName": "OpenStreetMap (ODbL)",
+    "extra": {
+      "license": "ODbL-1.0",
+      "attribution": "© OpenStreetMap contributors (ODbL)",
+      "provenance": {
+        "sourceId": "osm:mikvahs",
+        "sourceRecordId": "osm-way-1476566482",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  }
+]

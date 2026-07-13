@@ -1,0 +1,2018 @@
+[
+  {
+    "councilName": "אבן-יהודה",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "אופקים",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "אור עקיבא",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "אור-יהודה",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "אורנית",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "אזור",
+    "domain": "azor.muni.il",
+    "confidence": 0.9,
+    "evidenceUrl": "https://azor.muni.il/",
+    "cms": "custom",
+    "hasSynagogueDirectory": true,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": true,
+      "directoryAllowed": true
+    },
+    "nextAction": "needs-adapter:custom"
+  },
+  {
+    "councilName": "אזורית עמק המעינות",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "אזורית- עמק חפר",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "אילת",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "אליכין",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "אלפי מנשה",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "אלקנה",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "אפרת",
+    "domain": "efrat.muni.il",
+    "confidence": 0.9,
+    "evidenceUrl": "https://efrat.muni.il/",
+    "cms": "custom",
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": true,
+      "directoryAllowed": true
+    },
+    "nextAction": "no-directory"
+  },
+  {
+    "councilName": "אריאל",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "אשדוד",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "אשקלון",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "באר-יעקב",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "באר-שבע",
+    "domain": "mdb7.org.il",
+    "confidence": 1,
+    "evidenceUrl": "https://mdb7.org.il/",
+    "cms": "SabaiApps",
+    "hasSynagogueDirectory": true,
+    "supportedByCurrentParser": true,
+    "variant": "markers",
+    "estimatedCount": 233,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": true
+    },
+    "nextAction": "merged"
+  },
+  {
+    "councilName": "בית-דגן",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "בית-שאן",
+    "domain": "rbs.org.il",
+    "confidence": 1,
+    "evidenceUrl": "https://rbs.org.il/",
+    "cms": "SabaiApps",
+    "hasSynagogueDirectory": true,
+    "supportedByCurrentParser": true,
+    "variant": "markers",
+    "estimatedCount": 73,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": true
+    },
+    "nextAction": "merged"
+  },
+  {
+    "councilName": "בית-שמש",
+    "domain": "rabanutbs.co.il",
+    "confidence": 0.9,
+    "evidenceUrl": "https://rabanutbs.co.il/",
+    "cms": "custom",
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": true,
+      "directoryAllowed": true
+    },
+    "nextAction": "no-directory"
+  },
+  {
+    "councilName": "ביתר עילית",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "בני-ברק",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "בני-עייש",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "בנימינה וגבעת עדה",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "בקעת הירדן",
+    "domain": "datit-bh.org.il",
+    "confidence": 1,
+    "evidenceUrl": "https://datit-bh.org.il/",
+    "cms": "Wix",
+    "hasSynagogueDirectory": true,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "needs-adapter:Wix"
+  },
+  {
+    "councilName": "בת-ים",
+    "domain": "mdby.org.il",
+    "confidence": 0.5,
+    "evidenceUrl": "https://mdby.org.il/",
+    "cms": "custom",
+    "hasSynagogueDirectory": true,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": true,
+      "directoryAllowed": true
+    },
+    "nextAction": "needs-adapter:custom"
+  },
+  {
+    "councilName": "גבעת זאב",
+    "domain": "mdgz.org",
+    "confidence": 1,
+    "evidenceUrl": "https://mdgz.org/",
+    "cms": "SabaiApps",
+    "hasSynagogueDirectory": true,
+    "supportedByCurrentParser": true,
+    "variant": "markers",
+    "estimatedCount": 62,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": true
+    },
+    "nextAction": "ready-to-import"
+  },
+  {
+    "councilName": "גבעת שמואל",
+    "domain": "mdgs.org.il",
+    "confidence": 1,
+    "evidenceUrl": "https://mdgs.org.il/",
+    "cms": "SabaiApps",
+    "hasSynagogueDirectory": true,
+    "supportedByCurrentParser": true,
+    "variant": "waze",
+    "estimatedCount": 40,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": true
+    },
+    "nextAction": "merged"
+  },
+  {
+    "councilName": "גבעתיים",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "גדרה",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "גוש עציון",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "גליל תחתון",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "גן-יבנה",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "גני-תקוה",
+    "domain": "mdgt.org.il",
+    "confidence": 1,
+    "evidenceUrl": "https://mdgt.org.il/",
+    "cms": "SabaiApps",
+    "hasSynagogueDirectory": true,
+    "supportedByCurrentParser": true,
+    "variant": "markers",
+    "estimatedCount": 19,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": true
+    },
+    "nextAction": "merged"
+  },
+  {
+    "councilName": "דימונה",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "הוד-השרון",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "הר חברון",
+    "domain": "hrhevron.co.il",
+    "confidence": 0.9,
+    "evidenceUrl": "https://hrhevron.co.il/",
+    "cms": "custom",
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": true,
+      "directoryAllowed": true
+    },
+    "nextAction": "no-directory"
+  },
+  {
+    "councilName": "הרצליה",
+    "domain": "mdh.org.il",
+    "confidence": 1,
+    "evidenceUrl": "https://mdh.org.il/",
+    "cms": "SabaiApps",
+    "hasSynagogueDirectory": true,
+    "supportedByCurrentParser": false,
+    "variant": "needs-variant",
+    "estimatedCount": 0,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": true
+    },
+    "nextAction": "needs-variant"
+  },
+  {
+    "councilName": "זכרון יעקב",
+    "domain": "mdzy.org.il",
+    "confidence": 1,
+    "evidenceUrl": "https://mdzy.org.il/",
+    "cms": "custom",
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "needs-adapter:custom"
+  },
+  {
+    "councilName": "חבל יבנה",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "חבל מודיעין",
+    "domain": "modiin-region.muni.il",
+    "confidence": 0.9,
+    "evidenceUrl": "https://modiin-region.muni.il/",
+    "cms": "custom",
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": true,
+      "directoryAllowed": true
+    },
+    "nextAction": "no-directory"
+  },
+  {
+    "councilName": "חדרה",
+    "domain": "haderamd.org.il",
+    "confidence": 1,
+    "evidenceUrl": "https://haderamd.org.il/directory-synagogues/",
+    "cms": "SabaiApps",
+    "hasSynagogueDirectory": true,
+    "supportedByCurrentParser": true,
+    "variant": "markers",
+    "estimatedCount": 125,
+    "robots": {
+      "fetched": true,
+      "directoryAllowed": true
+    },
+    "nextAction": "ready-to-import"
+  },
+  {
+    "councilName": "חולון",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "חיפה",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "חצור הגלילית",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "טבריה",
+    "domain": "mdt.org.il",
+    "confidence": 0.5,
+    "evidenceUrl": "https://mdt.org.il/",
+    "cms": "WordPress-other",
+    "hasSynagogueDirectory": true,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": true,
+      "directoryAllowed": true
+    },
+    "nextAction": "needs-adapter:WordPress-other"
+  },
+  {
+    "councilName": "טירת הכרמל",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "יבנאל",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "יבנה",
+    "domain": "mdyv.org.il",
+    "confidence": 0.9,
+    "evidenceUrl": "https://mdyv.org.il/",
+    "cms": "custom",
+    "hasSynagogueDirectory": true,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": true,
+      "directoryAllowed": true
+    },
+    "nextAction": "needs-adapter:custom"
+  },
+  {
+    "councilName": "יהוד",
+    "domain": "ydat.org.il",
+    "confidence": 1,
+    "evidenceUrl": "https://ydat.org.il/",
+    "cms": "SabaiApps",
+    "hasSynagogueDirectory": true,
+    "supportedByCurrentParser": true,
+    "variant": "waze",
+    "estimatedCount": 29,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": true
+    },
+    "nextAction": "merged"
+  },
+  {
+    "councilName": "יקנעם",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "ירוחם",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "ירושלים",
+    "domain": "rabanut.org.il",
+    "confidence": 1,
+    "evidenceUrl": "https://rabanut.org.il/",
+    "cms": "WordPress-other",
+    "hasSynagogueDirectory": true,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "needs-adapter:WordPress-other"
+  },
+  {
+    "councilName": "כוכב יאיר-צור יגאל",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "כנרות",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "כפר יונה",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "כפר פינס",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "כפר תבור",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "כפר-סבא",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "כרמיאל",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "לוד",
+    "domain": "mdlod.org.il",
+    "confidence": 1,
+    "evidenceUrl": "https://mdlod.org.il/",
+    "cms": "SabaiApps",
+    "hasSynagogueDirectory": true,
+    "supportedByCurrentParser": true,
+    "variant": "markers",
+    "estimatedCount": 109,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": true
+    },
+    "nextAction": "merged"
+  },
+  {
+    "councilName": "לכיש",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "מבשרת ציון",
+    "domain": "mdmzion.org.il",
+    "confidence": 1,
+    "evidenceUrl": "https://mdmzion.org.il/",
+    "cms": "custom",
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "needs-adapter:custom"
+  },
+  {
+    "councilName": "מגדל",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "מגדל-העמק",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "מזכרת בתיה",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "מטה בנימין",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "מטולה",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "מיתר",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "מעלה אדומים",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "מעלה יוסף",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "מעלות",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "מצפה רמון",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "מרום הגליל",
+    "domain": "mdmg.org.il",
+    "confidence": 1,
+    "evidenceUrl": "https://mdmg.org.il/",
+    "cms": "SabaiApps",
+    "hasSynagogueDirectory": true,
+    "supportedByCurrentParser": true,
+    "variant": "markers",
+    "estimatedCount": 31,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": true
+    },
+    "nextAction": "merged"
+  },
+  {
+    "councilName": "מרחבים",
+    "domain": "mdm.org.il",
+    "confidence": 1,
+    "evidenceUrl": "https://mdm.org.il/",
+    "cms": "SabaiApps",
+    "hasSynagogueDirectory": true,
+    "supportedByCurrentParser": true,
+    "variant": "markers",
+    "estimatedCount": 21,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": true
+    },
+    "nextAction": "merged"
+  },
+  {
+    "councilName": "נהריה",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "נוה מונוסון",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "נס-ציונה",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "נצרת עילית",
+    "domain": "mdnh.org.il",
+    "confidence": 0.4,
+    "evidenceUrl": "https://mdnh.org.il/",
+    "cms": "WordPress-other",
+    "hasSynagogueDirectory": true,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": true,
+      "directoryAllowed": true
+    },
+    "nextAction": "needs-adapter:WordPress-other"
+  },
+  {
+    "councilName": "נשר",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "נתיבות",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "נתניה",
+    "domain": "mdn.org.il",
+    "confidence": 1,
+    "evidenceUrl": "https://mdn.org.il/",
+    "cms": "SabaiApps",
+    "hasSynagogueDirectory": true,
+    "supportedByCurrentParser": true,
+    "variant": "waze",
+    "estimatedCount": 140,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": true
+    },
+    "nextAction": "merged"
+  },
+  {
+    "councilName": "סביון",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "עכו",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "עמנואל",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "עמק לוד",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "עפולה",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "עתלית",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "פרדס-חנה כרכור",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "פרדסיה",
+    "domain": "pardesia.muni.il",
+    "confidence": 0.9,
+    "evidenceUrl": "https://pardesia.muni.il/",
+    "cms": "custom",
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": true,
+      "directoryAllowed": true
+    },
+    "nextAction": "no-directory"
+  },
+  {
+    "councilName": "פתח-תקוה",
+    "domain": "mpt.org.il",
+    "confidence": 1,
+    "evidenceUrl": "https://mpt.org.il/",
+    "cms": "SabaiApps",
+    "hasSynagogueDirectory": true,
+    "supportedByCurrentParser": true,
+    "variant": "waze",
+    "estimatedCount": 368,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": true
+    },
+    "nextAction": "merged"
+  },
+  {
+    "councilName": "צפת",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "קדומים",
+    "domain": "kedumim.org.il",
+    "confidence": 0.9,
+    "evidenceUrl": "https://kedumim.org.il/",
+    "cms": "custom",
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": true,
+      "directoryAllowed": true
+    },
+    "nextAction": "no-directory"
+  },
+  {
+    "councilName": "קדימה",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "קצרין",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "קריית מוצקין",
+    "domain": "mdmotzkin.org",
+    "confidence": 1,
+    "evidenceUrl": "https://mdmotzkin.org/",
+    "cms": "Wix",
+    "hasSynagogueDirectory": true,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "needs-adapter:Wix"
+  },
+  {
+    "councilName": "קרית ארבע",
+    "domain": "mdk4.org.il",
+    "confidence": 1,
+    "evidenceUrl": "https://mdk4.org.il/",
+    "cms": "SabaiApps",
+    "hasSynagogueDirectory": true,
+    "supportedByCurrentParser": true,
+    "variant": "markers",
+    "estimatedCount": 21,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": true
+    },
+    "nextAction": "merged"
+  },
+  {
+    "councilName": "קרית אתא",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "קרית טבעון",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "קרית ים",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "קרית יערים- טלז -סטון",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "קרית מלאכי",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "קרית עקרון",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "קרית שמונה",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "קרית-אונו",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "קרית-ביאליק",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "קרית-גת",
+    "domain": "mdkg.org.il",
+    "confidence": 0.5,
+    "evidenceUrl": "https://mdkg.org.il/",
+    "cms": "custom",
+    "hasSynagogueDirectory": true,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": true,
+      "directoryAllowed": true
+    },
+    "nextAction": "needs-adapter:custom"
+  },
+  {
+    "councilName": "קרני שומרון",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "ראש העין",
+    "domain": "mdrh.org.il",
+    "confidence": 1,
+    "evidenceUrl": "https://mdrh.org.il/",
+    "cms": "SabaiApps",
+    "hasSynagogueDirectory": true,
+    "supportedByCurrentParser": true,
+    "variant": "markers",
+    "estimatedCount": 135,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": true
+    },
+    "nextAction": "merged"
+  },
+  {
+    "councilName": "ראשון לציון",
+    "domain": "mdrl.org.il",
+    "confidence": 0.5,
+    "evidenceUrl": "https://mdrl.org.il/",
+    "cms": "WordPress-other",
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": true,
+      "directoryAllowed": true
+    },
+    "nextAction": "no-directory"
+  },
+  {
+    "councilName": "רחובות",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "רכסים",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "רמלה",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "רמת השרון",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "רמת ישי",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "רמת-גן",
+    "domain": "mdrg.org.il",
+    "confidence": 0.9,
+    "evidenceUrl": "https://mdrg.org.il/",
+    "cms": "WordPress-other",
+    "hasSynagogueDirectory": true,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": true,
+      "directoryAllowed": true
+    },
+    "nextAction": "needs-adapter:WordPress-other"
+  },
+  {
+    "councilName": "רמת-הגולן",
+    "domain": "golan.org.il",
+    "confidence": 1,
+    "evidenceUrl": "https://golan.org.il/",
+    "cms": "custom",
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "needs-adapter:custom"
+  },
+  {
+    "councilName": "רעננה",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "שדות נגב",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "שדרות",
+    "domain": "mdsderot.org.il",
+    "confidence": 0.9,
+    "evidenceUrl": "https://mdsderot.org.il/",
+    "cms": "WordPress-other",
+    "hasSynagogueDirectory": true,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": true,
+      "directoryAllowed": true
+    },
+    "nextAction": "needs-adapter:WordPress-other"
+  },
+  {
+    "councilName": "שומרון",
+    "domain": "shomron.org.il",
+    "confidence": 0.9,
+    "evidenceUrl": "https://shomron.org.il/",
+    "cms": "custom",
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": true,
+      "directoryAllowed": true
+    },
+    "nextAction": "no-directory"
+  },
+  {
+    "councilName": "שלומי",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "שפיר",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  },
+  {
+    "councilName": "תל אביב יפו",
+    "domain": "rabanut.co.il",
+    "confidence": 1,
+    "evidenceUrl": "https://rabanut.co.il/",
+    "cms": "WordPress-other",
+    "hasSynagogueDirectory": true,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "needs-adapter:WordPress-other"
+  },
+  {
+    "councilName": "תל מונד",
+    "domain": null,
+    "confidence": 0,
+    "evidenceUrl": null,
+    "cms": null,
+    "hasSynagogueDirectory": false,
+    "supportedByCurrentParser": false,
+    "variant": null,
+    "estimatedCount": null,
+    "robots": {
+      "fetched": false,
+      "directoryAllowed": null
+    },
+    "nextAction": "manual-search"
+  }
+]

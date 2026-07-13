@@ -1,0 +1,301 @@
+[
+  {
+    "id": "arcgis:kiryat-ono::1",
+    "type": "synagogue",
+    "name": "בית חבד",
+    "cityHint": "קרית אונו",
+    "location": {
+      "latitude": 32.05842778306698,
+      "longitude": 34.86252740197402
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:kiryat-ono",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:kiryat-ono:1",
+      "sourceUrl": "https://services7.arcgis.com/RQWNqXGAp7bCmIsb/arcgis/rest/services/בתי_כנסת_קריית_אונו/FeatureServer/0",
+      "fetchedAt": "2026-06-21T06:40:02.702Z",
+      "raw": {
+        "OBJECTID": 1,
+        "GlobalID": "91c0e547-6769-4a93-a044-6af2b4db51d1",
+        "Synagogue": "בית חבד"
+      }
+    }
+  },
+  {
+    "id": "arcgis:kiryat-ono::2",
+    "type": "synagogue",
+    "name": "צעירי ישראל",
+    "cityHint": "קרית אונו",
+    "location": {
+      "latitude": 32.054685916576084,
+      "longitude": 34.861741389737084
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:kiryat-ono",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:kiryat-ono:2",
+      "sourceUrl": "https://services7.arcgis.com/RQWNqXGAp7bCmIsb/arcgis/rest/services/בתי_כנסת_קריית_אונו/FeatureServer/0",
+      "fetchedAt": "2026-06-21T06:40:02.702Z",
+      "raw": {
+        "OBJECTID": 2,
+        "GlobalID": "670280e0-63cf-4f59-ae42-972ba9aa30e9",
+        "Synagogue": "צעירי ישראל"
+      }
+    }
+  },
+  {
+    "id": "arcgis:kiryat-ono::4",
+    "type": "synagogue",
+    "name": "בית כנסת הגדול קראון",
+    "cityHint": "קרית אונו",
+    "location": {
+      "latitude": 32.05413979354072,
+      "longitude": 34.861215831863724
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:kiryat-ono",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:kiryat-ono:4",
+      "sourceUrl": "https://services7.arcgis.com/RQWNqXGAp7bCmIsb/arcgis/rest/services/בתי_כנסת_קריית_אונו/FeatureServer/0",
+      "fetchedAt": "2026-06-21T06:40:02.702Z",
+      "raw": {
+        "OBJECTID": 4,
+        "GlobalID": "0a9f450b-84fe-4c58-a1fa-b5f85455923b",
+        "Synagogue": "בית כנסת הגדול קראון"
+      }
+    }
+  },
+  {
+    "id": "arcgis:kiryat-ono::6",
+    "type": "synagogue",
+    "name": "אור ציון",
+    "cityHint": "קרית אונו",
+    "location": {
+      "latitude": 32.06525781930011,
+      "longitude": 34.85294926367921
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:kiryat-ono",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:kiryat-ono:6",
+      "sourceUrl": "https://services7.arcgis.com/RQWNqXGAp7bCmIsb/arcgis/rest/services/בתי_כנסת_קריית_אונו/FeatureServer/0",
+      "fetchedAt": "2026-06-21T06:40:02.702Z",
+      "raw": {
+        "OBJECTID": 6,
+        "GlobalID": "883a803f-c25e-445a-a262-fd62c22871f1",
+        "Synagogue": "אור ציון"
+      }
+    }
+  },
+  {
+    "id": "arcgis:kiryat-ono::9",
+    "type": "synagogue",
+    "name": "אוהל מועד",
+    "cityHint": "קרית אונו",
+    "location": {
+      "latitude": 32.057035097066795,
+      "longitude": 34.86173835864015
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:kiryat-ono",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:kiryat-ono:9",
+      "sourceUrl": "https://services7.arcgis.com/RQWNqXGAp7bCmIsb/arcgis/rest/services/בתי_כנסת_קריית_אונו/FeatureServer/0",
+      "fetchedAt": "2026-06-21T06:40:02.702Z",
+      "raw": {
+        "OBJECTID": 9,
+        "GlobalID": "9ebd4eae-b5b6-461d-b7c7-42f423020832",
+        "Synagogue": "אוהל מועד"
+      }
+    }
+  },
+  {
+    "id": "arcgis:kiryat-ono::10",
+    "type": "synagogue",
+    "name": "אליהו הנביא",
+    "cityHint": "קרית אונו",
+    "location": {
+      "latitude": 32.06403356868989,
+      "longitude": 34.86013108090559
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:kiryat-ono",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:kiryat-ono:10",
+      "sourceUrl": "https://services7.arcgis.com/RQWNqXGAp7bCmIsb/arcgis/rest/services/בתי_כנסת_קריית_אונו/FeatureServer/0",
+      "fetchedAt": "2026-06-21T06:40:02.702Z",
+      "raw": {
+        "OBJECTID": 10,
+        "GlobalID": "38f4d1ca-9983-4eaf-b950-34bcb289b483",
+        "Synagogue": "אליהו הנביא"
+      }
+    }
+  },
+  {
+    "id": "arcgis:kiryat-ono::11",
+    "type": "synagogue",
+    "name": "אור החיים",
+    "cityHint": "קרית אונו",
+    "location": {
+      "latitude": 32.0492674890296,
+      "longitude": 34.865607917756954
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:kiryat-ono",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:kiryat-ono:11",
+      "sourceUrl": "https://services7.arcgis.com/RQWNqXGAp7bCmIsb/arcgis/rest/services/בתי_כנסת_קריית_אונו/FeatureServer/0",
+      "fetchedAt": "2026-06-21T06:40:02.702Z",
+      "raw": {
+        "OBJECTID": 11,
+        "GlobalID": "06300063-2097-4a9e-b556-af19decb09ad",
+        "Synagogue": "אור החיים"
+      }
+    }
+  },
+  {
+    "id": "arcgis:kiryat-ono::12",
+    "type": "synagogue",
+    "name": "אמונה ודעת",
+    "cityHint": "קרית אונו",
+    "location": {
+      "latitude": 32.066007088395644,
+      "longitude": 34.855389069608734
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:kiryat-ono",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:kiryat-ono:12",
+      "sourceUrl": "https://services7.arcgis.com/RQWNqXGAp7bCmIsb/arcgis/rest/services/בתי_כנסת_קריית_אונו/FeatureServer/0",
+      "fetchedAt": "2026-06-21T06:40:02.702Z",
+      "raw": {
+        "OBJECTID": 12,
+        "GlobalID": "00882d4c-0e0d-4a12-9783-ae480c25192c",
+        "Synagogue": "אמונה ודעת"
+      }
+    }
+  },
+  {
+    "id": "arcgis:kiryat-ono::13",
+    "type": "synagogue",
+    "name": "אין שם",
+    "cityHint": "קרית אונו",
+    "location": {
+      "latitude": 32.06580933689646,
+      "longitude": 34.85520399718677
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:kiryat-ono",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:kiryat-ono:13",
+      "sourceUrl": "https://services7.arcgis.com/RQWNqXGAp7bCmIsb/arcgis/rest/services/בתי_כנסת_קריית_אונו/FeatureServer/0",
+      "fetchedAt": "2026-06-21T06:40:02.702Z",
+      "raw": {
+        "OBJECTID": 13,
+        "GlobalID": "9d971886-41fd-409d-a99c-26589ec061bb",
+        "Synagogue": "אין שם"
+      }
+    }
+  },
+  {
+    "id": "arcgis:kiryat-ono::15",
+    "type": "synagogue",
+    "name": "שיבת ציון",
+    "cityHint": "קרית אונו",
+    "location": {
+      "latitude": 32.06470546738245,
+      "longitude": 34.85996713889998
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:kiryat-ono",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:kiryat-ono:15",
+      "sourceUrl": "https://services7.arcgis.com/RQWNqXGAp7bCmIsb/arcgis/rest/services/בתי_כנסת_קריית_אונו/FeatureServer/0",
+      "fetchedAt": "2026-06-21T06:40:02.702Z",
+      "raw": {
+        "OBJECTID": 15,
+        "GlobalID": "7b6f8b45-7955-4e9a-8b93-e103c7c24494",
+        "Synagogue": "שיבת ציון"
+      }
+    }
+  },
+  {
+    "id": "arcgis:kiryat-ono::17",
+    "type": "synagogue",
+    "name": "שרעבי",
+    "cityHint": "קרית אונו",
+    "location": {
+      "latitude": 32.06503505695482,
+      "longitude": 34.85942533267914
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:kiryat-ono",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:kiryat-ono:17",
+      "sourceUrl": "https://services7.arcgis.com/RQWNqXGAp7bCmIsb/arcgis/rest/services/בתי_כנסת_קריית_אונו/FeatureServer/0",
+      "fetchedAt": "2026-06-21T06:40:02.702Z",
+      "raw": {
+        "OBJECTID": 17,
+        "GlobalID": "2cf25592-7c96-4d24-ab57-2b6c09943d60",
+        "Synagogue": "שרעבי"
+      }
+    }
+  },
+  {
+    "id": "arcgis:kiryat-ono::19",
+    "type": "synagogue",
+    "name": "בית הכנסת המרככזי",
+    "cityHint": "קרית אונו",
+    "location": {
+      "latitude": 32.06215508585013,
+      "longitude": 34.85384365572086
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:kiryat-ono",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:kiryat-ono:19",
+      "sourceUrl": "https://services7.arcgis.com/RQWNqXGAp7bCmIsb/arcgis/rest/services/בתי_כנסת_קריית_אונו/FeatureServer/0",
+      "fetchedAt": "2026-06-21T06:40:02.702Z",
+      "raw": {
+        "OBJECTID": 19,
+        "GlobalID": "45170626-613a-43de-86ab-a5c282ad1c16",
+        "Synagogue": "בית הכנסת המרככזי"
+      }
+    }
+  },
+  {
+    "id": "arcgis:kiryat-ono::21",
+    "type": "synagogue",
+    "name": "נשלסק",
+    "cityHint": "קרית אונו",
+    "location": {
+      "latitude": 32.06402527494408,
+      "longitude": 34.8512474895693
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:kiryat-ono",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:kiryat-ono:21",
+      "sourceUrl": "https://services7.arcgis.com/RQWNqXGAp7bCmIsb/arcgis/rest/services/בתי_כנסת_קריית_אונו/FeatureServer/0",
+      "fetchedAt": "2026-06-21T06:40:02.702Z",
+      "raw": {
+        "OBJECTID": 21,
+        "GlobalID": "a7e34ce8-75b1-45c7-b127-d0e42096779c",
+        "Synagogue": "נשלסק"
+      }
+    }
+  }
+]

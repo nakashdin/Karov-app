@@ -66,18 +66,6 @@
     "category": "meat"
   },
   {
-    "id": "osm-node-728976432",
-    "name": "פז",
-    "type": "restaurant",
-    "cityId": "משמר איילון",
-    "address": "המכונאי, משמר איילון",
-    "location": {
-      "latitude": 31.8893652,
-      "longitude": 34.9600372
-    },
-    "source": "osm"
-  },
-  {
     "id": "osm-node-777400976",
     "name": "דבוש",
     "type": "restaurant",
@@ -329,7 +317,8 @@
     "phone": "+972 9 956 5181;+972 72 393 9464",
     "tags": [
       "steak_house"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-1763004894",
@@ -1121,21 +1110,6 @@
       "mediterranean"
     ],
     "category": "parve"
-  },
-  {
-    "id": "osm-node-4501920591",
-    "name": "Bistro 60",
-    "type": "restaurant",
-    "cityId": "בת ים",
-    "address": "רחוב שערי ניקנור 23, תל אביב יפו",
-    "location": {
-      "latitude": 32.0489852,
-      "longitude": 34.7500115
-    },
-    "source": "osm",
-    "tags": [
-      "arab"
-    ]
   },
   {
     "id": "osm-node-4511310889",
@@ -2722,22 +2696,6 @@
       "burger"
     ],
     "category": "meat"
-  },
-  {
-    "id": "osm-node-10069419066",
-    "name": "דוגמה",
-    "type": "restaurant",
-    "cityId": "לוד",
-    "address": "לוד",
-    "location": {
-      "latitude": 31.9441902,
-      "longitude": 34.8743637
-    },
-    "source": "osm",
-    "tags": [
-      "burger",
-      "regional"
-    ]
   },
   {
     "id": "osm-node-10176143226",
@@ -4460,7 +4418,8 @@
       "latitude": 32.0047196,
       "longitude": 34.9445341
     },
-    "source": "osm"
+    "source": "osm",
+    "category": "dairy"
   },
   {
     "id": "osm-node-12636593463",
@@ -5269,7 +5228,8 @@
     "tags": [
       "cholent",
       "shabbos"
-    ]
+    ],
+    "category": "meat"
   },
   {
     "id": "osm-node-13809202206",

@@ -1,0 +1,297 @@
+{
+  "generatedNote": "PHASE 16b — apply PREVIEW for the 51 write-ready new mikveh records. DRY-RUN: exact Place payloads, NOTHING written. No publish.",
+  "inputCandidates": 51,
+  "included": 25,
+  "excluded": 26,
+  "excludedByReason": {
+    "bare-generic": 17,
+    "archaeological": 6,
+    "live-duplicate": 3
+  },
+  "excludedDetail": [
+    {
+      "sourceRecordId": "osm-node-2913935719",
+      "name": "מקווה",
+      "city": "",
+      "source": "osm:mikvahs",
+      "reason": "bare unnamed \"מקווה\" node — no specific name, no ritual_bath tag, no city → unverifiable",
+      "flags": [
+        "bare-generic"
+      ]
+    },
+    {
+      "sourceRecordId": "osm-node-5468367713",
+      "name": "מקווה",
+      "city": "",
+      "source": "osm:mikvahs",
+      "reason": "bare unnamed \"מקווה\" node — no specific name, no ritual_bath tag, no city → unverifiable",
+      "flags": [
+        "bare-generic"
+      ]
+    },
+    {
+      "sourceRecordId": "osm-node-7632376385",
+      "name": "מקווה",
+      "city": "",
+      "source": "osm:mikvahs",
+      "reason": "bare unnamed \"מקווה\" node — no specific name, no ritual_bath tag, no city → unverifiable",
+      "flags": [
+        "bare-generic"
+      ]
+    },
+    {
+      "sourceRecordId": "osm-node-9296351378",
+      "name": "מקווה",
+      "city": "",
+      "source": "osm:mikvahs",
+      "reason": "bare unnamed \"מקווה\" node — no specific name, no ritual_bath tag, no city → unverifiable",
+      "flags": [
+        "bare-generic"
+      ]
+    },
+    {
+      "sourceRecordId": "osm-node-9351431749",
+      "name": "שרידי מקווה",
+      "city": "",
+      "source": "osm:mikvahs",
+      "reason": "archaeological/ruins or water-cistern (not an operating mikvah)",
+      "flags": [
+        "archaeological"
+      ]
+    },
+    {
+      "sourceRecordId": "osm-node-9782328123",
+      "name": "מקוה",
+      "city": "",
+      "source": "osm:mikvahs",
+      "reason": "archaeological/ruins or water-cistern (not an operating mikvah)",
+      "flags": [
+        "archaeological"
+      ]
+    },
+    {
+      "sourceRecordId": "osm-node-11612973423",
+      "name": "מקווה \\ בור מים",
+      "city": "",
+      "source": "osm:mikvahs",
+      "reason": "archaeological/ruins or water-cistern (not an operating mikvah)",
+      "flags": [
+        "archaeological"
+      ]
+    },
+    {
+      "sourceRecordId": "osm-node-13263815801",
+      "name": "מקווה",
+      "city": "",
+      "source": "osm:mikvahs",
+      "reason": "archaeological/ruins or water-cistern (not an operating mikvah)",
+      "flags": [
+        "archaeological"
+      ]
+    },
+    {
+      "sourceRecordId": "osm-way-160664280",
+      "name": "מקווה",
+      "city": "",
+      "source": "osm:mikvahs",
+      "reason": "bare unnamed \"מקווה\" node — no specific name, no ritual_bath tag, no city → unverifiable",
+      "flags": [
+        "bare-generic"
+      ]
+    },
+    {
+      "sourceRecordId": "osm-way-239177060",
+      "name": "מקווה",
+      "city": "",
+      "source": "osm:mikvahs",
+      "reason": "bare unnamed \"מקווה\" node — no specific name, no ritual_bath tag, no city → unverifiable",
+      "flags": [
+        "bare-generic"
+      ]
+    },
+    {
+      "sourceRecordId": "osm-way-242831525",
+      "name": "מקווה",
+      "city": "",
+      "source": "osm:mikvahs",
+      "reason": "bare unnamed \"מקווה\" node — no specific name, no ritual_bath tag, no city → unverifiable",
+      "flags": [
+        "bare-generic"
+      ]
+    },
+    {
+      "sourceRecordId": "osm-way-253769067",
+      "name": "מקווה",
+      "city": "",
+      "source": "osm:mikvahs",
+      "reason": "bare unnamed \"מקווה\" node — no specific name, no ritual_bath tag, no city → unverifiable",
+      "flags": [
+        "bare-generic"
+      ]
+    },
+    {
+      "sourceRecordId": "osm-way-331298995",
+      "name": "מקווה",
+      "city": "",
+      "source": "osm:mikvahs",
+      "reason": "bare unnamed \"מקווה\" node — no specific name, no ritual_bath tag, no city → unverifiable",
+      "flags": [
+        "bare-generic"
+      ]
+    },
+    {
+      "sourceRecordId": "osm-way-386787573",
+      "name": "מקווה טהרה",
+      "city": "",
+      "source": "osm:mikvahs",
+      "reason": "duplicate of live mikveh-185 (84m)",
+      "flags": [
+        "live-duplicate"
+      ]
+    },
+    {
+      "sourceRecordId": "osm-way-437953452",
+      "name": "מקווה",
+      "city": "",
+      "source": "osm:mikvahs",
+      "reason": "bare unnamed \"מקווה\" node — no specific name, no ritual_bath tag, no city → unverifiable",
+      "flags": [
+        "bare-generic"
+      ]
+    },
+    {
+      "sourceRecordId": "osm-way-439374762",
+      "name": "מקווה",
+      "city": "",
+      "source": "osm:mikvahs",
+      "reason": "bare unnamed \"מקווה\" node — no specific name, no ritual_bath tag, no city → unverifiable",
+      "flags": [
+        "bare-generic"
+      ]
+    },
+    {
+      "sourceRecordId": "osm-way-445893283",
+      "name": "מקווה",
+      "city": "",
+      "source": "osm:mikvahs",
+      "reason": "bare unnamed \"מקווה\" node — no specific name, no ritual_bath tag, no city → unverifiable",
+      "flags": [
+        "bare-generic"
+      ]
+    },
+    {
+      "sourceRecordId": "osm-way-497983659",
+      "name": "מקווה",
+      "city": "",
+      "source": "osm:mikvahs",
+      "reason": "bare unnamed \"מקווה\" node — no specific name, no ritual_bath tag, no city → unverifiable",
+      "flags": [
+        "bare-generic"
+      ]
+    },
+    {
+      "sourceRecordId": "osm-way-499211223",
+      "name": "מקווה דוד",
+      "city": "",
+      "source": "osm:mikvahs",
+      "reason": "archaeological/ruins or water-cistern (not an operating mikvah)",
+      "flags": [
+        "archaeological"
+      ]
+    },
+    {
+      "sourceRecordId": "osm-way-499921343",
+      "name": "מקווה",
+      "city": "",
+      "source": "osm:mikvahs",
+      "reason": "bare unnamed \"מקווה\" node — no specific name, no ritual_bath tag, no city → unverifiable",
+      "flags": [
+        "bare-generic"
+      ]
+    },
+    {
+      "sourceRecordId": "osm-way-702364699",
+      "name": "מקוה",
+      "city": "",
+      "source": "osm:mikvahs",
+      "reason": "bare unnamed \"מקווה\" node — no specific name, no ritual_bath tag, no city → unverifiable",
+      "flags": [
+        "bare-generic"
+      ]
+    },
+    {
+      "sourceRecordId": "osm-way-1056629893",
+      "name": "מקווה",
+      "city": "",
+      "source": "osm:mikvahs",
+      "reason": "bare unnamed \"מקווה\" node — no specific name, no ritual_bath tag, no city → unverifiable",
+      "flags": [
+        "bare-generic"
+      ]
+    },
+    {
+      "sourceRecordId": "osm-way-1067934263",
+      "name": "מקווה",
+      "city": "",
+      "source": "osm:mikvahs",
+      "reason": "bare unnamed \"מקווה\" node — no specific name, no ritual_bath tag, no city → unverifiable",
+      "flags": [
+        "bare-generic"
+      ]
+    },
+    {
+      "sourceRecordId": "osm-way-1078746385",
+      "name": "מקווה",
+      "city": "",
+      "source": "osm:mikvahs",
+      "reason": "archaeological/ruins or water-cistern (not an operating mikvah)",
+      "flags": [
+        "archaeological"
+      ]
+    },
+    {
+      "sourceRecordId": "osm-way-1187559197",
+      "name": "מקווה נשים",
+      "city": "",
+      "source": "osm:mikvahs",
+      "reason": "duplicate of live mikveh-190 (86m)",
+      "flags": [
+        "live-duplicate"
+      ]
+    },
+    {
+      "sourceRecordId": "osm-way-1304860844",
+      "name": "מקווה טהרה",
+      "city": "",
+      "source": "osm:mikvahs",
+      "reason": "duplicate of live mikveh-426 (78m)",
+      "flags": [
+        "live-duplicate"
+      ]
+    }
+  ],
+  "duplicatesFound": 3,
+  "includedBySource": {
+    "osm": 24,
+    "seed": 1
+  },
+  "licensePreserved": {
+    "osm": "ODbL-1.0 (attribution: © OpenStreetMap contributors)",
+    "telAvivGis": "municipal-open (Tel Aviv-Yafo Municipality GIS)"
+  },
+  "idCollisionsWithLive": 0,
+  "allIncludedHaveValidLocation": true,
+  "finalRecommendedWriteCount": 25,
+  "liveMikvehBefore": 531,
+  "estimatedTotalAfterWrite": 556,
+  "rollbackPlan": [
+    "Additive-only: each new id is fresh (mikveh-osm-* / mikveh-tlv-*), 0 existing ids touched.",
+    "Before write: copy src/data/generated/places.osm.json → places.osm.pre-phase16-open.backup.json (and cities.osm.json).",
+    "Rollback: restore both files from those backups; new records vanish, existing 531+others unchanged.",
+    "Verify rollback: record count returns to pre-write value and no existing id changed."
+  ],
+  "nextStep": "On human GO, append the included Place payloads with the same additive guarded writer used for Tier A (apply-tier-a.ts pattern). Spot-check OSM generic-name records on a map first if desired.",
+  "dryRun": true,
+  "liveDataTouched": false,
+  "publishPerformed": false
+}

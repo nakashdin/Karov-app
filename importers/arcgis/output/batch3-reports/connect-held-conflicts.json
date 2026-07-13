@@ -1,0 +1,92 @@
+[
+  {
+    "sourceRecordId": "arcgis:holon:464",
+    "name": "ביכ\"נ גבעת",
+    "city": "holon",
+    "existingId": "osm-node-2118045276",
+    "existingName": "בית כנסת גבעת רפאל",
+    "distanceM": 26,
+    "nameSim": 0.33
+  },
+  {
+    "sourceRecordId": "arcgis:holon:495",
+    "name": "זכור לאברהם - מקבצאל",
+    "city": "holon",
+    "existingId": "osm-way-330294319",
+    "existingName": "בי\"כ זכור לאברהם",
+    "distanceM": 3,
+    "nameSim": 0.5
+  },
+  {
+    "sourceRecordId": "arcgis:herzliya:35",
+    "name": "בית כנסת רבנו יוסף חיים - עדות המזרח",
+    "city": "herzliya",
+    "existingId": "osm-way-388128340",
+    "existingName": "רבינו יוסף חיים",
+    "distanceM": 2,
+    "nameSim": 0.33
+  },
+  {
+    "sourceRecordId": "arcgis:herzliya:57",
+    "name": "בית כנסת אחים - תימני-בלדי",
+    "city": "herzliya",
+    "existingId": "osm-way-384892245",
+    "existingName": "שכונת אחים",
+    "distanceM": 6,
+    "nameSim": 0.33
+  },
+  {
+    "sourceRecordId": "arcgis:kiryat-ono:9",
+    "name": "אוהל מועד",
+    "city": "kiryat-ono",
+    "existingId": "osm-way-361002494",
+    "existingName": "בית כנסת אהל מועד",
+    "distanceM": 5,
+    "nameSim": 0.33
+  },
+  {
+    "sourceRecordId": "arcgis:lod:49",
+    "name": "בית כנסת מקור חוכמה",
+    "city": "lod",
+    "existingId": "rc-lod-h1yc2a90",
+    "existingName": "מקור חכמה",
+    "distanceM": 63,
+    "nameSim": 0.33
+  },
+  {
+    "sourceRecordId": "arcgis:lod:50",
+    "name": "בית כנסת ע\"ש חי טייב",
+    "city": "lod",
+    "existingId": "rc-lod-h1umrb5u",
+    "existingName": "חי טייב לא מת",
+    "distanceM": 42,
+    "nameSim": 0.4
+  },
+  {
+    "sourceRecordId": "arcgis:lod:58",
+    "name": "בית כנסת בית תפילה",
+    "city": "lod",
+    "existingId": "rc-lod-hf9uabl",
+    "existingName": "בית התפילה",
+    "distanceM": 47,
+    "nameSim": 0.33
+  },
+  {
+    "sourceRecordId": "arcgis:lod:71",
+    "name": "בית כנסת מגן דויד",
+    "city": "lod",
+    "existingId": "rc-lod-h1wafl4i",
+    "existingName": "מגן דוד",
+    "distanceM": 41,
+    "nameSim": 0.33
+  },
+  {
+    "sourceRecordId": "arcgis:lod:79",
+    "name": "בית כנסת תפארת אהרן",
+    "city": "lod",
+    "existingId": "rc-lod-hke1i04",
+    "existingName": "תפארת אהרון",
+    "distanceM": 49,
+    "nameSim": 0.33
+  }
+]

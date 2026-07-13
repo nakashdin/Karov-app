@@ -1,0 +1,79 @@
+{
+  "generatedNote": "PHASE 18b — apply PREVIEW for the 49 write-ready Phase-18 records. DRY-RUN: exact Place payloads, NOTHING written. No publish, rebuildAppDataset NOT touched.",
+  "inputCandidates": 49,
+  "included": 46,
+  "excluded": 3,
+  "excludedDetail": [
+    {
+      "id": "council:jerusalem:mikvah::jlm---317544",
+      "name": "קרית מנחם",
+      "city": "ירושלים",
+      "source": "council:jerusalem:mikvah",
+      "reason": "duplicate of live mikveh-osm-way-229587998 (85m)",
+      "flags": [
+        "live-duplicate"
+      ]
+    },
+    {
+      "id": "gis:holon:mikvaot::-531",
+      "name": "מקווה טהרה בריאות",
+      "city": "חולון",
+      "source": "gis:holon:mikvaot",
+      "reason": "within-batch duplicate of חולון-463 (0m)",
+      "flags": [
+        "batch-duplicate"
+      ]
+    },
+    {
+      "id": "gis:lod:mikvaot::-68",
+      "name": "מקווה טהרה",
+      "city": "לוד",
+      "source": "gis:lod:mikvaot",
+      "reason": "duplicate of live mikveh-262 (80m)",
+      "flags": [
+        "live-duplicate"
+      ]
+    }
+  ],
+  "duplicatesFound": 3,
+  "includedBySource": {
+    "המועצה הדתית ירושלים": 41,
+    "עיריית חולון — GIS": 3,
+    "עיריית לוד — GIS": 2
+  },
+  "spotCheck": {
+    "allValidIsraelCoords": true,
+    "bareUnnamedOfficialGisPoints": 1,
+    "note": "bare-unnamed records are kept ONLY because they come from official municipal GIS mikvah layers (coordinate-verified), unlike crowd-sourced OSM."
+  },
+  "licensePreserved": {
+    "jerusalem": "council-public (rabanut.org.il)",
+    "holon": "municipal-open (Holon GIS)",
+    "lod": "municipal-open (Lod GIS)"
+  },
+  "fieldsPreserved": [
+    "sourceUrl",
+    "sourceName",
+    "license",
+    "provenance",
+    "mikvehGender",
+    "phone",
+    "address"
+  ],
+  "idCollisionsWithLive": 0,
+  "duplicateAppIdsInBatch": 0,
+  "finalRecommendedWriteCount": 46,
+  "liveMikvehBefore": 556,
+  "estimatedTotalAfterWrite": 602,
+  "rollbackPlan": [
+    "Additive-only: every new id is fresh (mikveh-jlm-* / mikveh-holon-* / mikveh-lod-*); 0 existing ids touched.",
+    "Before write: copy src/data/generated/places.osm.json → places.osm.pre-phase18.backup.json (and cities.osm.json).",
+    "Rollback: restore both files from those backups; the new records vanish, existing 556+others unchanged. Do NOT run rebuildAppDataset.",
+    "Verify rollback: record count returns to pre-write value; no existing id changed."
+  ],
+  "nextStep": "On explicit human GO, append the included Place payloads with the additive guarded writer (apply-phase16-open.ts pattern). Never rebuild.",
+  "dryRun": true,
+  "liveDataTouched": false,
+  "publishPerformed": false,
+  "rebuildTouched": false
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "sourceRecordId": "arcgis:ashkelon:105",
+    "name": "אשכולי פז",
+    "existingId": "osm-way-536450405",
+    "existingName": "משכן פז",
+    "distanceM": 3,
+    "nameSim": 0.33
+  },
+  {
+    "sourceRecordId": "arcgis:ashkelon:418",
+    "name": "משכן בוקובזה",
+    "existingId": "osm-way-536079717",
+    "existingName": "בית כנסת משכן נתן וחיה בוקובזה",
+    "distanceM": 1,
+    "nameSim": 0.5
+  }
+]

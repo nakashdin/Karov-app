@@ -1,0 +1,4 @@
+{
+  "//": "Marks the importers as ES modules for Node + tsc, without affecting the Expo app.",
+  "type": "module"
+}

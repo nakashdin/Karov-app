@@ -1,0 +1,4553 @@
+[
+  {
+    "id": "arcgis:holon::412",
+    "type": "synagogue",
+    "name": "גבורת ישראל חב\"ד",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.007081082405975,
+      "longitude": 34.79426155616697
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:412",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 412,
+        "Name": "גבורת ישראל חב\"ד",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 971,
+        "Street": "רייק חביבה",
+        "House": "20",
+        "Address": "חביבה רייק 20",
+        "Service_Zone": "קרית שרת מזרח",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "חביבה רייק 20",
+    "extra": {
+      "neighborhood": "קרית שרת מזרח"
+    }
+  },
+  {
+    "id": "arcgis:holon::413",
+    "type": "synagogue",
+    "name": "אור ציון",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.01478945616071,
+      "longitude": 34.780862352894346
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:413",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 413,
+        "Name": "אור ציון",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 357,
+        "Street": "התחיה",
+        "House": "14",
+        "Address": "התחיה 14",
+        "Service_Zone": "נאות שושנים",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "התחיה 14",
+    "extra": {
+      "neighborhood": "נאות שושנים"
+    }
+  },
+  {
+    "id": "arcgis:holon::414",
+    "type": "synagogue",
+    "name": "בית אל",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.012560774781754,
+      "longitude": 34.786724375510246
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:414",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 414,
+        "Name": "בית אל",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 350,
+        "Street": "שטרוק",
+        "House": "8",
+        "Address": "שטרוק 8",
+        "Service_Zone": "רסקו ב'",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "שטרוק 8",
+    "extra": {
+      "neighborhood": "רסקו ב'"
+    }
+  },
+  {
+    "id": "arcgis:holon::415",
+    "type": "synagogue",
+    "name": "בית הכנסת המרכזי תל גיבורים",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.03072432797466,
+      "longitude": 34.76484447751162
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:415",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 415,
+        "Name": "בית הכנסת המרכזי תל גיבורים",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 611,
+        "Street": "הגבעול",
+        "House": "3",
+        "Address": "הגבעול 3",
+        "Service_Zone": "תל גיבורים",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "הגבעול 3",
+    "extra": {
+      "neighborhood": "תל גיבורים"
+    }
+  },
+  {
+    "id": "arcgis:holon::416",
+    "type": "synagogue",
+    "name": "אור חיים",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.032986536565666,
+      "longitude": 34.76167479840036
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:416",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 416,
+        "Name": "אור חיים",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 605,
+        "Street": "החצב",
+        "House": "3",
+        "Address": "החצב 3 (מקלט)",
+        "Service_Zone": "תל גיבורים",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "החצב 3 (מקלט)",
+    "extra": {
+      "neighborhood": "תל גיבורים"
+    }
+  },
+  {
+    "id": "arcgis:holon::417",
+    "type": "synagogue",
+    "name": "מעוז יעקב",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.0213243597461,
+      "longitude": 34.76188816899724
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:417",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 417,
+        "Name": "מעוז יעקב",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 748,
+        "Street": "צאלים",
+        "House": "34",
+        "Address": "צאלים 34",
+        "Service_Zone": "נאות רחל",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "צאלים 34",
+    "extra": {
+      "neighborhood": "נאות רחל"
+    }
+  },
+  {
+    "id": "arcgis:holon::418",
+    "type": "synagogue",
+    "name": "בית דוד",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.02270714994414,
+      "longitude": 34.76777869869325
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:418",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 418,
+        "Name": "בית דוד",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 705,
+        "Street": "ברדיצ'בסקי מיכה",
+        "House": "11",
+        "Address": "ברדיצ'בסקי 9",
+        "Service_Zone": "נאות רחל",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "ברדיצ'בסקי 9",
+    "extra": {
+      "neighborhood": "נאות רחל"
+    }
+  },
+  {
+    "id": "arcgis:holon::419",
+    "type": "synagogue",
+    "name": "אבי דוד",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.02293102348284,
+      "longitude": 34.76838563937299
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:419",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 419,
+        "Name": "אבי דוד",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 703,
+        "Street": "נג'ארה ישראל",
+        "House": "5",
+        "Address": "נאג'רה 5",
+        "Service_Zone": "נאות רחל",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "נאג'רה 5",
+    "extra": {
+      "neighborhood": "נאות רחל"
+    }
+  },
+  {
+    "id": "arcgis:holon::422",
+    "type": "synagogue",
+    "name": "אורח חיים",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.01558110374126,
+      "longitude": 34.79262314470574
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:422",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 422,
+        "Name": "אורח חיים",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 201,
+        "Street": "הנביאים",
+        "House": "37",
+        "Address": "הנביאים 37",
+        "Service_Zone": "נאות יהודית ונווה ארזים",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "הנביאים 37",
+    "extra": {
+      "neighborhood": "נאות יהודית ונווה ארזים"
+    }
+  },
+  {
+    "id": "arcgis:holon::423",
+    "type": "synagogue",
+    "name": "שיבת ציון",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.01890565911054,
+      "longitude": 34.785761665472556
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:423",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 423,
+        "Name": "שיבת ציון",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 346,
+        "Street": "שכטר",
+        "House": "7",
+        "Address": "שכטר 7",
+        "Service_Zone": "רסקו א'",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "שכטר 7",
+    "extra": {
+      "neighborhood": "רסקו א'"
+    }
+  },
+  {
+    "id": "arcgis:holon::424",
+    "type": "synagogue",
+    "name": "אבי שלום יצחק הלוי",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.01827159100831,
+      "longitude": 34.787047068429445
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:424",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 424,
+        "Name": "אבי שלום יצחק הלוי",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 343,
+        "Street": "השיטה",
+        "House": "37",
+        "Address": "השיטה 37",
+        "Service_Zone": "רסקו א'",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "השיטה 37",
+    "extra": {
+      "neighborhood": "רסקו א'"
+    }
+  },
+  {
+    "id": "arcgis:holon::425",
+    "type": "synagogue",
+    "name": "היכל משה",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.009492691483565,
+      "longitude": 34.786675891486325
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:425",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 425,
+        "Name": "היכל משה",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 959,
+        "Street": "שער ציון",
+        "House": "25",
+        "Address": "שער ציון 25",
+        "Service_Zone": "קרית שרת מערב",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "שער ציון 25",
+    "extra": {
+      "neighborhood": "קרית שרת מערב"
+    }
+  },
+  {
+    "id": "arcgis:holon::426",
+    "type": "synagogue",
+    "name": "זכור לאברהם",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.005498759138405,
+      "longitude": 34.786326989188815
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:426",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 426,
+        "Name": "זכור לאברהם",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 942,
+        "Street": "מפרץ שלמה",
+        "House": "100",
+        "Address": "מפרץ שלמה 100",
+        "Service_Zone": "קרית שרת מערב",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "מפרץ שלמה 100",
+    "extra": {
+      "neighborhood": "קרית שרת מערב"
+    }
+  },
+  {
+    "id": "arcgis:holon::427",
+    "type": "synagogue",
+    "name": "רמב\"ם",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.02697255934033,
+      "longitude": 34.76535364419734
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:427",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 427,
+        "Name": "רמב\"ם",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 533,
+        "Street": "רמב\"ם",
+        "House": "23",
+        "Address": "רמב\"ם 23",
+        "Service_Zone": "תל גיבורים",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "רמב\"ם 23",
+    "extra": {
+      "neighborhood": "תל גיבורים"
+    }
+  },
+  {
+    "id": "arcgis:holon::428",
+    "type": "synagogue",
+    "name": "רבי מאיר בעל הנס",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.030045595959024,
+      "longitude": 34.76134862717801
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:428",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 428,
+        "Name": "רבי מאיר בעל הנס",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 642,
+        "Street": "התותחנים",
+        "House": "8",
+        "Address": "התותחנים 8",
+        "Service_Zone": "תל גיבורים",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "התותחנים 8",
+    "extra": {
+      "neighborhood": "תל גיבורים"
+    }
+  },
+  {
+    "id": "arcgis:holon::429",
+    "type": "synagogue",
+    "name": "ע\"ש חללי מערכות ישראל",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.02726217674963,
+      "longitude": 34.76811047676893
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:429",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 429,
+        "Name": "ע\"ש חללי מערכות ישראל",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 532,
+        "Street": "החשמונאים",
+        "House": "51",
+        "Address": "החשמונאים 51",
+        "Service_Zone": "גרין ועם",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "החשמונאים 51",
+    "extra": {
+      "neighborhood": "גרין ועם"
+    }
+  },
+  {
+    "id": "arcgis:holon::430",
+    "type": "synagogue",
+    "name": "דרכי נועם",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 31.999576453323687,
+      "longitude": 34.765733261921014
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:430",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 430,
+        "Name": "דרכי נועם",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 797,
+        "Street": "לנדאו חיים",
+        "House": "12",
+        "Address": "לנדאו 12",
+        "Service_Zone": "קרית בן גוריון",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "לנדאו 12",
+    "extra": {
+      "neighborhood": "קרית בן גוריון"
+    }
+  },
+  {
+    "id": "arcgis:holon::431",
+    "type": "synagogue",
+    "name": "מחנה אפרים",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.00423171184252,
+      "longitude": 34.76430110001454
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:431",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 431,
+        "Name": "מחנה אפרים",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 807,
+        "Street": "הסנהדרין",
+        "House": "21",
+        "Address": "הסנהדרין 21",
+        "Service_Zone": "ג'סי כהן וקרית מיכה",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "הסנהדרין 21",
+    "extra": {
+      "neighborhood": "ג'סי כהן וקרית מיכה"
+    }
+  },
+  {
+    "id": "arcgis:holon::432",
+    "type": "synagogue",
+    "name": "שער שמים",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.00876485840446,
+      "longitude": 34.763350598949366
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:432",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 432,
+        "Name": "שער שמים",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 802,
+        "Street": "עין גדי",
+        "House": "18",
+        "Address": "עין גדי 18",
+        "Service_Zone": "ג'סי כהן וקרית מיכה",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "עין גדי 18",
+    "extra": {
+      "neighborhood": "ג'סי כהן וקרית מיכה"
+    }
+  },
+  {
+    "id": "arcgis:holon::433",
+    "type": "synagogue",
+    "name": "היכל אליהו",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.02766292062006,
+      "longitude": 34.772689151345546
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:433",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 433,
+        "Name": "היכל אליהו",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 505,
+        "Street": "שד' קוגל",
+        "House": "10",
+        "Address": "שדרות קוגל 10",
+        "Service_Zone": "גרין ועם",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "שדרות קוגל 10",
+    "extra": {
+      "neighborhood": "גרין ועם"
+    }
+  },
+  {
+    "id": "arcgis:holon::434",
+    "type": "synagogue",
+    "name": "עובדיה",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.023006866315995,
+      "longitude": 34.769422548420685
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:434",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 434,
+        "Name": "עובדיה",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 713,
+        "Street": "המעורר",
+        "House": "4",
+        "Address": "המעורר 4",
+        "Service_Zone": "נאות רחל",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "המעורר 4",
+    "extra": {
+      "neighborhood": "נאות רחל"
+    }
+  },
+  {
+    "id": "arcgis:holon::435",
+    "type": "synagogue",
+    "name": "משכן מאיר - נצח ישראל",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.001860551992564,
+      "longitude": 34.764937703212595
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:435",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 435,
+        "Name": "משכן מאיר - נצח ישראל",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 812,
+        "Street": "זרובבל",
+        "House": "7",
+        "Address": "זרובבל 7",
+        "Service_Zone": "ג'סי כהן וקרית מיכה",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "זרובבל 7",
+    "extra": {
+      "neighborhood": "ג'סי כהן וקרית מיכה"
+    }
+  },
+  {
+    "id": "arcgis:holon::436",
+    "type": "synagogue",
+    "name": "נתנאל",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.02226174726044,
+      "longitude": 34.76163391586383
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:436",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 436,
+        "Name": "נתנאל",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 743,
+        "Street": "הגר\"א",
+        "House": "34",
+        "Address": "הגר\"א 34",
+        "Service_Zone": "נאות רחל",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "הגר\"א 34",
+    "extra": {
+      "neighborhood": "נאות רחל"
+    }
+  },
+  {
+    "id": "arcgis:holon::437",
+    "type": "synagogue",
+    "name": "משכן אברהם",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.02269496911484,
+      "longitude": 34.76738637658216
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:437",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 437,
+        "Name": "משכן אברהם",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 705,
+        "Street": "ברדיצ'בסקי מיכה",
+        "House": "10",
+        "Address": "ברדיצ'בסקי 10",
+        "Service_Zone": "נאות רחל",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "ברדיצ'בסקי 10",
+    "extra": {
+      "neighborhood": "נאות רחל"
+    }
+  },
+  {
+    "id": "arcgis:holon::438",
+    "type": "synagogue",
+    "name": "ללוש רחל",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.02167920512042,
+      "longitude": 34.772679059263346
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:438",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 438,
+        "Name": "ללוש רחל",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 702,
+        "Street": "ויצמן חיים",
+        "House": "14",
+        "Address": "ויצמן 14",
+        "Service_Zone": "קרית עבודה",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "ויצמן 14",
+    "extra": {
+      "neighborhood": "קרית עבודה"
+    }
+  },
+  {
+    "id": "arcgis:holon::439",
+    "type": "synagogue",
+    "name": "מגן דוד",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.02646687313043,
+      "longitude": 34.76171714223852
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:439",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 439,
+        "Name": "מגן דוד",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 627,
+        "Street": "החי\"ם",
+        "House": "19",
+        "Address": "החי\"ם 19",
+        "Service_Zone": "תל גיבורים",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "החי\"ם 19",
+    "extra": {
+      "neighborhood": "תל גיבורים"
+    }
+  },
+  {
+    "id": "arcgis:holon::440",
+    "type": "synagogue",
+    "name": "עטרת חכמים",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.02737711426472,
+      "longitude": 34.7613879307313
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:440",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 440,
+        "Name": "עטרת חכמים",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 627,
+        "Street": "החי\"ם",
+        "House": "4",
+        "Address": "החי\"ם 4",
+        "Service_Zone": "תל גיבורים",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "החי\"ם 4",
+    "extra": {
+      "neighborhood": "תל גיבורים"
+    }
+  },
+  {
+    "id": "arcgis:holon::441",
+    "type": "synagogue",
+    "name": "רבי יוחנן",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.024642570799585,
+      "longitude": 34.766076232750734
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:441",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 441,
+        "Name": "רבי יוחנן",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 530,
+        "Street": "סעדיה גאון",
+        "House": "21",
+        "Address": "סעדיה גאון 21",
+        "Service_Zone": "גרין ועם",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "סעדיה גאון 21",
+    "extra": {
+      "neighborhood": "גרין ועם"
+    }
+  },
+  {
+    "id": "arcgis:holon::442",
+    "type": "synagogue",
+    "name": "סוכת שלום",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.02472369903083,
+      "longitude": 34.769220296076796
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:442",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 442,
+        "Name": "סוכת שלום",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 522,
+        "Street": "ברנר יוסף חיים",
+        "House": "10",
+        "Address": "ברנר 10",
+        "Service_Zone": "גרין ועם",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "ברנר 10",
+    "extra": {
+      "neighborhood": "גרין ועם"
+    }
+  },
+  {
+    "id": "arcgis:holon::443",
+    "type": "synagogue",
+    "name": "שלום שבזי",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.02728028187041,
+      "longitude": 34.76613339926384
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:443",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 443,
+        "Name": "שלום שבזי",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 529,
+        "Street": "המעפילים",
+        "House": "45",
+        "Address": "המעפילים 45",
+        "Service_Zone": "תל גיבורים",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "המעפילים 45",
+    "extra": {
+      "neighborhood": "תל גיבורים"
+    }
+  },
+  {
+    "id": "arcgis:holon::444",
+    "type": "synagogue",
+    "name": "ביה\"כ המועצה הדתית",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.01230080701629,
+      "longitude": 34.78668536839369
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:444",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 444,
+        "Name": "ביה\"כ המועצה הדתית",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 350,
+        "Street": "שטרוק",
+        "House": "8",
+        "Address": "שטרוק 8",
+        "Service_Zone": "רסקו ב'",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "שטרוק 8",
+    "extra": {
+      "neighborhood": "רסקו ב'"
+    }
+  },
+  {
+    "id": "arcgis:holon::445",
+    "type": "synagogue",
+    "name": "שחל",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.019946703670925,
+      "longitude": 34.7740206017632
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:445",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 445,
+        "Name": "שחל",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 704,
+        "Street": "חומה ומגדל",
+        "House": "18",
+        "Address": "חומה ומגדל 18",
+        "Service_Zone": "קרית עבודה",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "חומה ומגדל 18",
+    "extra": {
+      "neighborhood": "קרית עבודה"
+    }
+  },
+  {
+    "id": "arcgis:holon::446",
+    "type": "synagogue",
+    "name": "קדושי צה\"ל",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.02401557560865,
+      "longitude": 34.77791720729851
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:446",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 446,
+        "Name": "קדושי צה\"ל",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 417,
+        "Street": "הפלמ\"ח",
+        "House": "4",
+        "Address": "הפלמ\"ח 4",
+        "Service_Zone": "אגרובנק",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "הפלמ\"ח 4",
+    "extra": {
+      "neighborhood": "אגרובנק"
+    }
+  },
+  {
+    "id": "arcgis:holon::447",
+    "type": "synagogue",
+    "name": "בית הכנסת שלום שבזי",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.016908241498214,
+      "longitude": 34.79559352959862
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:447",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 447,
+        "Name": "בית הכנסת שלום שבזי",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 201,
+        "Street": "הנביאים",
+        "House": "68",
+        "Address": "הנביאים 68",
+        "Service_Zone": "נאות יהודית ונווה ארזים",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "הנביאים 68",
+    "extra": {
+      "neighborhood": "נאות יהודית ונווה ארזים"
+    }
+  },
+  {
+    "id": "arcgis:holon::448",
+    "type": "synagogue",
+    "name": "עמותת קרן אור",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.022452750697774,
+      "longitude": 34.76378082119294
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:448",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 448,
+        "Name": "עמותת קרן אור",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 741,
+        "Street": "בעל שם טוב",
+        "House": "13",
+        "Address": "בעל שם טוב 13",
+        "Service_Zone": "נאות רחל",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "בעל שם טוב 13",
+    "extra": {
+      "neighborhood": "נאות רחל"
+    }
+  },
+  {
+    "id": "arcgis:holon::449",
+    "type": "synagogue",
+    "name": "משכן אליהו",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.006322100129445,
+      "longitude": 34.7654553623908
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:449",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 449,
+        "Name": "משכן אליהו",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 936,
+        "Street": "הדקל",
+        "House": "5",
+        "Address": "הדקל 5",
+        "Service_Zone": "שיכון ותיקים",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "הדקל 5",
+    "extra": {
+      "neighborhood": "שיכון ותיקים"
+    }
+  },
+  {
+    "id": "arcgis:holon::450",
+    "type": "synagogue",
+    "name": "שבות עם",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.02007415599348,
+      "longitude": 34.78084569492236
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:450",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 450,
+        "Name": "שבות עם",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 442,
+        "Street": "הרב הרצוג",
+        "House": "17",
+        "Address": "הרב הרצוג 17",
+        "Service_Zone": "רסקו א'",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "הרב הרצוג 17",
+    "extra": {
+      "neighborhood": "רסקו א'"
+    }
+  },
+  {
+    "id": "arcgis:holon::451",
+    "type": "synagogue",
+    "name": "ביה\"כ של השומרונים",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.012802480704416,
+      "longitude": 34.79696069071064
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:451",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 451,
+        "Name": "ביה\"כ של השומרונים",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 279,
+        "Street": "בן עמרם",
+        "House": "11",
+        "Address": "שכונת השומרונים",
+        "Service_Zone": "נאות יהודית ונווה ארזים",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "שכונת השומרונים",
+    "extra": {
+      "neighborhood": "נאות יהודית ונווה ארזים"
+    }
+  },
+  {
+    "id": "arcgis:holon::452",
+    "type": "synagogue",
+    "name": "המועצה הדתית חולון",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.02090983612335,
+      "longitude": 34.77995317810034
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:452",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 452,
+        "Name": "המועצה הדתית חולון",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 407,
+        "Street": "הרב קוק",
+        "House": "9",
+        "Address": "הרב קוק 9",
+        "Service_Zone": "קרית שרת מזרח",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "הרב קוק 9",
+    "extra": {
+      "neighborhood": "קרית שרת מזרח"
+    }
+  },
+  {
+    "id": "arcgis:holon::453",
+    "type": "synagogue",
+    "name": "עץ חיים",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.02291825979162,
+      "longitude": 34.76342561447412
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:453",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 453,
+        "Name": "עץ חיים",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 742,
+        "Street": "אברבנאל דון יצחק",
+        "House": "3",
+        "Address": "אברבנאל 3",
+        "Service_Zone": "נאות רחל",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "אברבנאל 3",
+    "extra": {
+      "neighborhood": "נאות רחל"
+    }
+  },
+  {
+    "id": "arcgis:holon::454",
+    "type": "synagogue",
+    "name": "סיני",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.02129854465298,
+      "longitude": 34.792366801036984
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:454",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 454,
+        "Name": "סיני",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 259,
+        "Street": "השחף",
+        "House": "2",
+        "Address": "השחף 2",
+        "Service_Zone": "מפדה אזרחי",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "השחף 2",
+    "extra": {
+      "neighborhood": "מפדה אזרחי"
+    }
+  },
+  {
+    "id": "arcgis:holon::455",
+    "type": "synagogue",
+    "name": "אורות הצחצחות",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.033076432192054,
+      "longitude": 34.763755511169734
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:455",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 455,
+        "Name": "אורות הצחצחות",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 607,
+        "Street": "הניצנים",
+        "House": "5",
+        "Address": "הניצנים 5",
+        "Service_Zone": "תל גיבורים",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "הניצנים 5",
+    "extra": {
+      "neighborhood": "תל גיבורים"
+    }
+  },
+  {
+    "id": "arcgis:holon::456",
+    "type": "synagogue",
+    "name": "גבורת יצחק",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.00318071255329,
+      "longitude": 34.768265998891906
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:456",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 456,
+        "Name": "גבורת יצחק",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 985,
+        "Street": "נרקיס עוזי",
+        "House": "4",
+        "Address": "נרקיס עוזי 4",
+        "Service_Zone": "קרית רבין",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "נרקיס עוזי 4",
+    "extra": {
+      "neighborhood": "קרית רבין"
+    }
+  },
+  {
+    "id": "arcgis:holon::457",
+    "type": "synagogue",
+    "name": "לוי יחזקאל",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.01595295499296,
+      "longitude": 34.780885084790704
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:457",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 457,
+        "Name": "לוי יחזקאל",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 325,
+        "Street": "ראש פינה",
+        "House": "9",
+        "Address": "ראש פינה 9",
+        "Service_Zone": "נאות שושנים",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "ראש פינה 9",
+    "extra": {
+      "neighborhood": "נאות שושנים"
+    }
+  },
+  {
+    "id": "arcgis:holon::458",
+    "type": "synagogue",
+    "name": "עברי גדעון",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.011558371523314,
+      "longitude": 34.79067877169042
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:458",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 458,
+        "Name": "עברי גדעון",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 305,
+        "Street": "ברנדיס לואי",
+        "House": "6",
+        "Address": "ברנדיס 6",
+        "Service_Zone": "רסקו ב'",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "ברנדיס 6",
+    "extra": {
+      "neighborhood": "רסקו ב'"
+    }
+  },
+  {
+    "id": "arcgis:holon::459",
+    "type": "synagogue",
+    "name": "דברי שלום ואמת",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.026908584268455,
+      "longitude": 34.778373399670734
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:459",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 459,
+        "Name": "דברי שלום ואמת",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 439,
+        "Street": "השומר",
+        "House": "19",
+        "Address": "השומר 19",
+        "Service_Zone": "אגרובנק",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "השומר 19",
+    "extra": {
+      "neighborhood": "אגרובנק"
+    }
+  },
+  {
+    "id": "arcgis:holon::460",
+    "type": "synagogue",
+    "name": "שערי ישועה",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.019981300487466,
+      "longitude": 34.7668770639578
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:460",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 460,
+        "Name": "שערי ישועה",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 707,
+        "Street": "תרצ\"ו",
+        "House": "31",
+        "Address": "תרצ\"ו 31",
+        "Service_Zone": "נאות רחל",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "תרצ\"ו 31",
+    "extra": {
+      "neighborhood": "נאות רחל"
+    }
+  },
+  {
+    "id": "arcgis:holon::461",
+    "type": "synagogue",
+    "name": "ביכ\"נ לצעירים היכל רפאל",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.00997607025485,
+      "longitude": 34.78957527430883
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:461",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 461,
+        "Name": "ביכ\"נ לצעירים היכל רפאל",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 941,
+        "Street": "אלופי צה\"ל",
+        "House": "37",
+        "Address": "אלופי צה\"ל 37",
+        "Service_Zone": "קרית שרת מערב",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "אלופי צה\"ל 37",
+    "extra": {
+      "neighborhood": "קרית שרת מערב"
+    }
+  },
+  {
+    "id": "arcgis:holon::464",
+    "type": "synagogue",
+    "name": "ביכ\"נ גבעת",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.021645903969905,
+      "longitude": 34.76185751043811
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:464",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 464,
+        "Name": "ביכ\"נ גבעת",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": null,
+        "Street": "אורים",
+        "House": "2",
+        "Address": "אורים 2",
+        "Service_Zone": "נאות רחל",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "אורים 2",
+    "extra": {
+      "neighborhood": "נאות רחל"
+    }
+  },
+  {
+    "id": "arcgis:holon::465",
+    "type": "synagogue",
+    "name": "סולם יעקב",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 31.997566874165486,
+      "longitude": 34.770493575898996
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:465",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 465,
+        "Name": "סולם יעקב",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 799,
+        "Street": "מקלף מרדכי",
+        "House": "17",
+        "Address": "מקלף 17",
+        "Service_Zone": "קרית בן גוריון",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "מקלף 17",
+    "extra": {
+      "neighborhood": "קרית בן גוריון"
+    }
+  },
+  {
+    "id": "arcgis:holon::466",
+    "type": "synagogue",
+    "name": "צעירי אירן",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.01002533331624,
+      "longitude": 34.789193935219394
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:466",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 466,
+        "Name": "צעירי אירן",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 941,
+        "Street": "אלופי צה\"ל",
+        "House": "39",
+        "Address": "אלופי צהל 39",
+        "Service_Zone": "קרית שרת מערב",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "אלופי צהל 39",
+    "extra": {
+      "neighborhood": "קרית שרת מערב"
+    }
+  },
+  {
+    "id": "arcgis:holon::467",
+    "type": "synagogue",
+    "name": "אביר יעקב",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.01601090677501,
+      "longitude": 34.796912824775646
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:467",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 467,
+        "Name": "אביר יעקב",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 205,
+        "Street": "נחמיה",
+        "House": "15",
+        "Address": "נחמיה 15",
+        "Service_Zone": "נאות יהודית ונווה ארזים",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "נחמיה 15",
+    "extra": {
+      "neighborhood": "נאות יהודית ונווה ארזים"
+    }
+  },
+  {
+    "id": "arcgis:holon::468",
+    "type": "synagogue",
+    "name": "אחווה ורעות",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.018468025335,
+      "longitude": 34.79066313775012
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:468",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 468,
+        "Name": "אחווה ורעות",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 201,
+        "Street": "הנביאים",
+        "House": "5",
+        "Address": "הנביאים 5",
+        "Service_Zone": "נאות יהודית ונווה ארזים",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "הנביאים 5",
+    "extra": {
+      "neighborhood": "נאות יהודית ונווה ארזים"
+    }
+  },
+  {
+    "id": "arcgis:holon::469",
+    "type": "synagogue",
+    "name": "הר ציון",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.014916203874726,
+      "longitude": 34.79586636987012
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:469",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 469,
+        "Name": "הר ציון",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 205,
+        "Street": "נחמיה",
+        "House": "1",
+        "Address": "נחמיה 1",
+        "Service_Zone": "נאות יהודית ונווה ארזים",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "נחמיה 1",
+    "extra": {
+      "neighborhood": "נאות יהודית ונווה ארזים"
+    }
+  },
+  {
+    "id": "arcgis:holon::470",
+    "type": "synagogue",
+    "name": "הרמב\"ם",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.00592913240659,
+      "longitude": 34.797687507299
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:470",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 470,
+        "Name": "הרמב\"ם",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 826,
+        "Street": "השילוח",
+        "House": "23",
+        "Address": "השילוח 23",
+        "Service_Zone": "קרית שרת מזרח",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "השילוח 23",
+    "extra": {
+      "neighborhood": "קרית שרת מזרח"
+    }
+  },
+  {
+    "id": "arcgis:holon::471",
+    "type": "synagogue",
+    "name": "חב\"ד",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.007482983576075,
+      "longitude": 34.796495986177355
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:471",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 471,
+        "Name": "חב\"ד",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 823,
+        "Street": "השילוח",
+        "House": "7",
+        "Address": "השילוח 7",
+        "Service_Zone": "קרית שרת מזרח",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "השילוח 7",
+    "extra": {
+      "neighborhood": "קרית שרת מזרח"
+    }
+  },
+  {
+    "id": "arcgis:holon::472",
+    "type": "synagogue",
+    "name": "גאולת ישראל",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.0102231138373,
+      "longitude": 34.79343091579872
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:472",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 472,
+        "Name": "גאולת ישראל",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 941,
+        "Street": "אלופי צה\"ל",
+        "House": "10",
+        "Address": "אלופי צה\"ל 10",
+        "Service_Zone": "קרית שרת מזרח",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "אלופי צה\"ל 10",
+    "extra": {
+      "neighborhood": "קרית שרת מזרח"
+    }
+  },
+  {
+    "id": "arcgis:holon::473",
+    "type": "synagogue",
+    "name": "בית יצחק",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.02266626281372,
+      "longitude": 34.791548463114324
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:473",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 473,
+        "Name": "בית יצחק",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 220,
+        "Street": "ניסבאום הרב",
+        "House": "10",
+        "Address": "ניסנבאום 8",
+        "Service_Zone": "מפדה אזרחי",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "ניסנבאום 8",
+    "extra": {
+      "neighborhood": "מפדה אזרחי"
+    }
+  },
+  {
+    "id": "arcgis:holon::474",
+    "type": "synagogue",
+    "name": "בן פורת יוסף",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.01927739490787,
+      "longitude": 34.78523196179842
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:474",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 474,
+        "Name": "בן פורת יוסף",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 333,
+        "Street": "מוהליבר",
+        "House": "15",
+        "Address": "מוהליבר 15",
+        "Service_Zone": "רסקו א'",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "מוהליבר 15",
+    "extra": {
+      "neighborhood": "רסקו א'"
+    }
+  },
+  {
+    "id": "arcgis:holon::475",
+    "type": "synagogue",
+    "name": "ארם נהריים",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.02424529564084,
+      "longitude": 34.76880746261724
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:475",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 475,
+        "Name": "ארם נהריים",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 522,
+        "Street": "ברנר יוסף חיים",
+        "House": "9",
+        "Address": "ברנר 11",
+        "Service_Zone": "גרין ועם",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "ברנר 11",
+    "extra": {
+      "neighborhood": "גרין ועם"
+    }
+  },
+  {
+    "id": "arcgis:holon::477",
+    "type": "synagogue",
+    "name": "מעוז יעקב",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.0213243597461,
+      "longitude": 34.76188816899724
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:477",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 477,
+        "Name": "מעוז יעקב",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 748,
+        "Street": "צאלים",
+        "House": "34",
+        "Address": "צאלים 34",
+        "Service_Zone": "נאות רחל",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "צאלים 34",
+    "extra": {
+      "neighborhood": "נאות רחל"
+    }
+  },
+  {
+    "id": "arcgis:holon::478",
+    "type": "synagogue",
+    "name": "בית הכנסת הגדול",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.011662638210844,
+      "longitude": 34.7705046841897
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:478",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 478,
+        "Name": "בית הכנסת הגדול",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 907,
+        "Street": "העליה השניה",
+        "House": "37",
+        "Address": "העליה השניה 37",
+        "Service_Zone": "נווה רמז",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "העליה השניה 37",
+    "extra": {
+      "neighborhood": "נווה רמז"
+    }
+  },
+  {
+    "id": "arcgis:holon::479",
+    "type": "synagogue",
+    "name": "זכר קדושים",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.02096718552156,
+      "longitude": 34.79052971530975
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:479",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 479,
+        "Name": "זכר קדושים",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 217,
+        "Street": "יעבץ זאב",
+        "House": "9",
+        "Address": "יעבץ 9",
+        "Service_Zone": "מפדה אזרחי",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "יעבץ 9",
+    "extra": {
+      "neighborhood": "מפדה אזרחי"
+    }
+  },
+  {
+    "id": "arcgis:holon::480",
+    "type": "synagogue",
+    "name": "גאולי תימן",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.01504666814052,
+      "longitude": 34.795997824411735
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:480",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 480,
+        "Name": "גאולי תימן",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 205,
+        "Street": "נחמיה",
+        "House": "3",
+        "Address": "נחמיה 3",
+        "Service_Zone": "נאות יהודית ונווה ארזים",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "נחמיה 3",
+    "extra": {
+      "neighborhood": "נאות יהודית ונווה ארזים"
+    }
+  },
+  {
+    "id": "arcgis:holon::482",
+    "type": "synagogue",
+    "name": "אחים ורעים",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.014982888203804,
+      "longitude": 34.78091187067445
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:482",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 482,
+        "Name": "אחים ורעים",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 357,
+        "Street": "התחיה",
+        "House": "14",
+        "Address": "התחיה 14",
+        "Service_Zone": "נאות שושנים",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "התחיה 14",
+    "extra": {
+      "neighborhood": "נאות שושנים"
+    }
+  },
+  {
+    "id": "arcgis:holon::483",
+    "type": "synagogue",
+    "name": "אהבת חיים",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.017079817637054,
+      "longitude": 34.786600898054196
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:483",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 483,
+        "Name": "אהבת חיים",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 322,
+        "Street": "הקונגרס",
+        "House": "32",
+        "Address": "הקונגרס 32",
+        "Service_Zone": "רסקו ב'",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "הקונגרס 32",
+    "extra": {
+      "neighborhood": "רסקו ב'"
+    }
+  },
+  {
+    "id": "arcgis:holon::484",
+    "type": "synagogue",
+    "name": "זכור לאברהם",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.005498759138405,
+      "longitude": 34.786326989188815
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:484",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 484,
+        "Name": "זכור לאברהם",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 942,
+        "Street": "מפרץ שלמה",
+        "House": "100",
+        "Address": "מפרץ שלמה 100",
+        "Service_Zone": "קרית שרת מערב",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "מפרץ שלמה 100",
+    "extra": {
+      "neighborhood": "קרית שרת מערב"
+    }
+  },
+  {
+    "id": "arcgis:holon::485",
+    "type": "synagogue",
+    "name": "ע\"ש חללי מערכות ישראל",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.02726217674963,
+      "longitude": 34.76811047676893
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:485",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 485,
+        "Name": "ע\"ש חללי מערכות ישראל",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 532,
+        "Street": "החשמונאים",
+        "House": "51",
+        "Address": "החשמונאים 51",
+        "Service_Zone": "גרין ועם",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "החשמונאים 51",
+    "extra": {
+      "neighborhood": "גרין ועם"
+    }
+  },
+  {
+    "id": "arcgis:holon::486",
+    "type": "synagogue",
+    "name": "אברהם אבינו",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.028655574780366,
+      "longitude": 34.76813093627349
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:486",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 486,
+        "Name": "אברהם אבינו",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 531,
+        "Street": "יצחק הלוי",
+        "House": "80",
+        "Address": "יצחק הלוי 80",
+        "Service_Zone": "גרין ועם",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "יצחק הלוי 80",
+    "extra": {
+      "neighborhood": "גרין ועם"
+    }
+  },
+  {
+    "id": "arcgis:holon::487",
+    "type": "synagogue",
+    "name": "חללי צהל",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.03161041401333,
+      "longitude": 34.76770345376508
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:487",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 487,
+        "Name": "חללי צהל",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 615,
+        "Street": "סביון",
+        "House": "7",
+        "Address": "סביון 7",
+        "Service_Zone": "תל גיבורים",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "סביון 7",
+    "extra": {
+      "neighborhood": "תל גיבורים"
+    }
+  },
+  {
+    "id": "arcgis:holon::488",
+    "type": "synagogue",
+    "name": "חסד ואמת",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.02907298139015,
+      "longitude": 34.76963548589796
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:488",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 488,
+        "Name": "חסד ואמת",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 548,
+        "Street": "רחבעם זאבי",
+        "House": "24",
+        "Address": "רחבעם זאבי 24",
+        "Service_Zone": "גרין ועם",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "רחבעם זאבי 24",
+    "extra": {
+      "neighborhood": "גרין ועם"
+    }
+  },
+  {
+    "id": "arcgis:holon::489",
+    "type": "synagogue",
+    "name": "מחנה אפרים",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.00423171184252,
+      "longitude": 34.76430110001454
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:489",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 489,
+        "Name": "מחנה אפרים",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 807,
+        "Street": "הסנהדרין",
+        "House": "21",
+        "Address": "הסנהדרין 21",
+        "Service_Zone": "ג'סי כהן וקרית מיכה",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "הסנהדרין 21",
+    "extra": {
+      "neighborhood": "ג'סי כהן וקרית מיכה"
+    }
+  },
+  {
+    "id": "arcgis:holon::490",
+    "type": "synagogue",
+    "name": "אהבה ואחוה",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.01000472404828,
+      "longitude": 34.77023926484208
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:490",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 490,
+        "Name": "אהבה ואחוה",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 921,
+        "Street": "לבון פנחס",
+        "House": "1",
+        "Address": "לבון פנחס 1",
+        "Service_Zone": "נווה רמז",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "לבון פנחס 1",
+    "extra": {
+      "neighborhood": "נווה רמז"
+    }
+  },
+  {
+    "id": "arcgis:holon::491",
+    "type": "synagogue",
+    "name": "ותיקים",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.011662638210844,
+      "longitude": 34.7705046841897
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:491",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 491,
+        "Name": "ותיקים",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 907,
+        "Street": "העליה השניה",
+        "House": "37",
+        "Address": "העליה השניה 37",
+        "Service_Zone": "נווה רמז",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "העליה השניה 37",
+    "extra": {
+      "neighborhood": "נווה רמז"
+    }
+  },
+  {
+    "id": "arcgis:holon::492",
+    "type": "synagogue",
+    "name": "זכרון קדושים",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.0227814459704,
+      "longitude": 34.770556926745286
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:492",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 492,
+        "Name": "זכרון קדושים",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 719,
+        "Street": "20250132",
+        "House": "5",
+        "Address": "הצפירה 5",
+        "Service_Zone": "קרית עבודה",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "הצפירה 5",
+    "extra": {
+      "neighborhood": "קרית עבודה"
+    }
+  },
+  {
+    "id": "arcgis:holon::493",
+    "type": "synagogue",
+    "name": "חסד אברהם - תורת משה",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.02229287274825,
+      "longitude": 34.7647096412183
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:493",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 493,
+        "Name": "חסד אברהם - תורת משה",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 726,
+        "Street": "אבן עזרא אברהם",
+        "House": "3",
+        "Address": "אבן עזרא 3",
+        "Service_Zone": "נאות רחל",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "אבן עזרא 3",
+    "extra": {
+      "neighborhood": "נאות רחל"
+    }
+  },
+  {
+    "id": "arcgis:holon::494",
+    "type": "synagogue",
+    "name": "בית מדרש אלי כהן",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.00741646001188,
+      "longitude": 34.76031786953701
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:494",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 494,
+        "Name": "בית מדרש אלי כהן",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 815,
+        "Street": "החמניה",
+        "House": "4",
+        "Address": "החמניה 4",
+        "Service_Zone": "ג'סי כהן וקרית מיכה",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "החמניה 4",
+    "extra": {
+      "neighborhood": "ג'סי כהן וקרית מיכה"
+    }
+  },
+  {
+    "id": "arcgis:holon::495",
+    "type": "synagogue",
+    "name": "זכור לאברהם - מקבצאל",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.005323445084876,
+      "longitude": 34.78627883147877
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:495",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 495,
+        "Name": "זכור לאברהם - מקבצאל",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 942,
+        "Street": "מפרץ שלמה",
+        "House": "100",
+        "Address": "מפרץ שלמה 100",
+        "Service_Zone": "קרית שרת מערב",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "מפרץ שלמה 100",
+    "extra": {
+      "neighborhood": "קרית שרת מערב"
+    }
+  },
+  {
+    "id": "arcgis:holon::496",
+    "type": "synagogue",
+    "name": "בית כנסת לעדה התמנית - יד הבנים",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.001773975704715,
+      "longitude": 34.76481687952835
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:496",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 496,
+        "Name": "בית כנסת לעדה התמנית - יד הבנים",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 875,
+        "Street": "מסילת העולים",
+        "House": "4",
+        "Address": "מסילת העולים 4",
+        "Service_Zone": "ג'סי כהן וקרית מיכה",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "מסילת העולים 4",
+    "extra": {
+      "neighborhood": "ג'סי כהן וקרית מיכה"
+    }
+  },
+  {
+    "id": "arcgis:holon::497",
+    "type": "synagogue",
+    "name": "כתר תורה",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.00421264597465,
+      "longitude": 34.76407210417209
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:497",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 497,
+        "Name": "כתר תורה",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 807,
+        "Street": "הסנהדרין",
+        "House": "23",
+        "Address": "הסנהדרין 23",
+        "Service_Zone": "ג'סי כהן וקרית מיכה",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "הסנהדרין 23",
+    "extra": {
+      "neighborhood": "ג'סי כהן וקרית מיכה"
+    }
+  },
+  {
+    "id": "arcgis:holon::498",
+    "type": "synagogue",
+    "name": "ללוש רחל",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.02167920512042,
+      "longitude": 34.772679059263346
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:498",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 498,
+        "Name": "ללוש רחל",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 702,
+        "Street": "ויצמן חיים",
+        "House": "14",
+        "Address": "ויצמן 14",
+        "Service_Zone": "קרית עבודה",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "ויצמן 14",
+    "extra": {
+      "neighborhood": "קרית עבודה"
+    }
+  },
+  {
+    "id": "arcgis:holon::499",
+    "type": "synagogue",
+    "name": "מגן דוד",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.02646687313043,
+      "longitude": 34.76171714223852
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:499",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 499,
+        "Name": "מגן דוד",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 627,
+        "Street": "החי\"ם",
+        "House": "19",
+        "Address": "החי\"ם 19",
+        "Service_Zone": "תל גיבורים",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "החי\"ם 19",
+    "extra": {
+      "neighborhood": "תל גיבורים"
+    }
+  },
+  {
+    "id": "arcgis:holon::500",
+    "type": "synagogue",
+    "name": "שערי אורה ותפילה",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.02731716254478,
+      "longitude": 34.76092438365754
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:500",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 500,
+        "Name": "שערי אורה ותפילה",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 627,
+        "Street": "החי\"ם",
+        "House": "2",
+        "Address": "החי\"ם",
+        "Service_Zone": "תל גיבורים",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "החי\"ם",
+    "extra": {
+      "neighborhood": "תל גיבורים"
+    }
+  },
+  {
+    "id": "arcgis:holon::501",
+    "type": "synagogue",
+    "name": "עטרת חכמים",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.02737711426472,
+      "longitude": 34.7613879307313
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:501",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 501,
+        "Name": "עטרת חכמים",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 627,
+        "Street": "החי\"ם",
+        "House": "4",
+        "Address": "החי\"ם 4",
+        "Service_Zone": "תל גיבורים",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "החי\"ם 4",
+    "extra": {
+      "neighborhood": "תל גיבורים"
+    }
+  },
+  {
+    "id": "arcgis:holon::502",
+    "type": "synagogue",
+    "name": "סוכת שלום",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.02472369903083,
+      "longitude": 34.769220296076796
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:502",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 502,
+        "Name": "סוכת שלום",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 522,
+        "Street": "ברנר יוסף חיים",
+        "House": "10",
+        "Address": "ברנר 10",
+        "Service_Zone": "גרין ועם",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "ברנר 10",
+    "extra": {
+      "neighborhood": "גרין ועם"
+    }
+  },
+  {
+    "id": "arcgis:holon::503",
+    "type": "synagogue",
+    "name": "בית כנסת עובדיה סודאי",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.023927007967764,
+      "longitude": 34.77211948829098
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:503",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 503,
+        "Name": "בית כנסת עובדיה סודאי",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 512,
+        "Street": "רוטשילד",
+        "House": "12",
+        "Address": "רוטשילד 12",
+        "Service_Zone": "גרין ועם",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "רוטשילד 12",
+    "extra": {
+      "neighborhood": "גרין ועם"
+    }
+  },
+  {
+    "id": "arcgis:holon::504",
+    "type": "synagogue",
+    "name": "אהל בן שלם",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.019030967980584,
+      "longitude": 34.77775037918154
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:504",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 504,
+        "Name": "אהל בן שלם",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 409,
+        "Street": "ביל\"ו",
+        "House": "20",
+        "Address": "ביל\"ו 20",
+        "Service_Zone": "קרית עבודה",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "ביל\"ו 20",
+    "extra": {
+      "neighborhood": "קרית עבודה"
+    }
+  },
+  {
+    "id": "arcgis:holon::505",
+    "type": "synagogue",
+    "name": "שערי ציון",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.01856630831592,
+      "longitude": 34.79079994740463
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:505",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 505,
+        "Name": "שערי ציון",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 201,
+        "Street": "הנביאים",
+        "House": "5",
+        "Address": "הנביאים 5",
+        "Service_Zone": "נאות יהודית ונווה ארזים",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "הנביאים 5",
+    "extra": {
+      "neighborhood": "נאות יהודית ונווה ארזים"
+    }
+  },
+  {
+    "id": "arcgis:holon::506",
+    "type": "synagogue",
+    "name": "זכריש מתיתיהו",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.02281889122252,
+      "longitude": 34.777721892024964
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:506",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 506,
+        "Name": "זכריש מתיתיהו",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 401,
+        "Street": "סוקולוב",
+        "House": "71",
+        "Address": "סוקולוב 71",
+        "Service_Zone": "אגרובנק",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "סוקולוב 71",
+    "extra": {
+      "neighborhood": "אגרובנק"
+    }
+  },
+  {
+    "id": "arcgis:holon::508",
+    "type": "synagogue",
+    "name": "שערי רצון",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.019814494939524,
+      "longitude": 34.773811458800225
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:508",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 508,
+        "Name": "שערי רצון",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 503,
+        "Street": "ביאליק",
+        "House": "29",
+        "Address": "ביאליק 29",
+        "Service_Zone": "קרית עבודה",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "ביאליק 29",
+    "extra": {
+      "neighborhood": "קרית עבודה"
+    }
+  },
+  {
+    "id": "arcgis:holon::509",
+    "type": "synagogue",
+    "name": "אגודת עץ חיים",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.0241731451344,
+      "longitude": 34.767904445659234
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:509",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 509,
+        "Name": "אגודת עץ חיים",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 518,
+        "Street": "ש\"ץ צבי",
+        "House": "12",
+        "Address": "ש\"ץ צבי 12",
+        "Service_Zone": "גרין ועם",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "ש\"ץ צבי 12",
+    "extra": {
+      "neighborhood": "גרין ועם"
+    }
+  },
+  {
+    "id": "arcgis:holon::510",
+    "type": "synagogue",
+    "name": "בית כנסת שערי תורה ותפילה",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.02817518637926,
+      "longitude": 34.761085746936075
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:510",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 510,
+        "Name": "בית כנסת שערי תורה ותפילה",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 627,
+        "Street": "החי\"ם",
+        "House": "2",
+        "Address": "החי\"ם 2",
+        "Service_Zone": "תל גיבורים",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "החי\"ם 2",
+    "extra": {
+      "neighborhood": "תל גיבורים"
+    }
+  },
+  {
+    "id": "arcgis:holon::511",
+    "type": "synagogue",
+    "name": "כנפי נשרים",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.01014007168455,
+      "longitude": 34.77029082130123
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:511",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 511,
+        "Name": "כנפי נשרים",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 921,
+        "Street": "לבון פנחס",
+        "House": "1",
+        "Address": "לבון פנחס 1",
+        "Service_Zone": "נווה רמז",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "לבון פנחס 1",
+    "extra": {
+      "neighborhood": "נווה רמז"
+    }
+  },
+  {
+    "id": "arcgis:holon::512",
+    "type": "synagogue",
+    "name": "בית כנסת ובית מדרש נחלת שלום",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.026254975621136,
+      "longitude": 34.771468118978525
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:512",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 512,
+        "Name": "בית כנסת ובית מדרש נחלת שלום",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 517,
+        "Street": "נחלת שלום",
+        "House": "2",
+        "Address": "נחלת שלום 2",
+        "Service_Zone": "גרין ועם",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "נחלת שלום 2",
+    "extra": {
+      "neighborhood": "גרין ועם"
+    }
+  },
+  {
+    "id": "arcgis:holon::513",
+    "type": "synagogue",
+    "name": "אגודת אבי",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.02299298321894,
+      "longitude": 34.768341608037716
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:513",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 513,
+        "Name": "אגודת אבי",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 703,
+        "Street": "נג'ארה ישראל",
+        "House": "3",
+        "Address": "נג'ארה ישראל 3",
+        "Service_Zone": "נאות רחל",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "נג'ארה ישראל 3",
+    "extra": {
+      "neighborhood": "נאות רחל"
+    }
+  },
+  {
+    "id": "arcgis:holon::514",
+    "type": "synagogue",
+    "name": "בית כורש",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.03302622258312,
+      "longitude": 34.76756055577653
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:514",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 514,
+        "Name": "בית כורש",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 608,
+        "Street": "הפרדס",
+        "House": "1",
+        "Address": "המצודה 1",
+        "Service_Zone": "תל גיבורים",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "המצודה 1",
+    "extra": {
+      "neighborhood": "תל גיבורים"
+    }
+  },
+  {
+    "id": "arcgis:holon::515",
+    "type": "synagogue",
+    "name": "סיני",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.02129854465298,
+      "longitude": 34.792366801036984
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:515",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 515,
+        "Name": "סיני",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 259,
+        "Street": "השחף",
+        "House": "2",
+        "Address": "השחף 2",
+        "Service_Zone": "מפדה אזרחי",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "השחף 2",
+    "extra": {
+      "neighborhood": "מפדה אזרחי"
+    }
+  },
+  {
+    "id": "arcgis:holon::516",
+    "type": "synagogue",
+    "name": "בית חבד חולון",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.02183363140981,
+      "longitude": 34.78527981207518
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:516",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 516,
+        "Name": "בית חבד חולון",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 348,
+        "Street": "התומר",
+        "House": "5",
+        "Address": "התומר 5",
+        "Service_Zone": "רסקו א'",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "התומר 5",
+    "extra": {
+      "neighborhood": "רסקו א'"
+    }
+  },
+  {
+    "id": "arcgis:holon::517",
+    "type": "synagogue",
+    "name": "בית כנסת מגן דוד לעולי ארם צובא",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.014164458535944,
+      "longitude": 34.76759547284439
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:517",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 517,
+        "Name": "בית כנסת מגן דוד לעולי ארם צובא",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 930,
+        "Street": "הופיין אליעזר",
+        "House": "17",
+        "Address": "הופיין 17",
+        "Service_Zone": "קרית עבודה",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "הופיין 17",
+    "extra": {
+      "neighborhood": "קרית עבודה"
+    }
+  },
+  {
+    "id": "arcgis:holon::518",
+    "type": "synagogue",
+    "name": "הרב עובדיה",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.02308167653363,
+      "longitude": 34.76519336174822
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:518",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 518,
+        "Name": "הרב עובדיה",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 911,
+        "Street": "אילת",
+        "House": "2",
+        "Address": "אילת 2",
+        "Service_Zone": "נאות רחל",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "אילת 2",
+    "extra": {
+      "neighborhood": "נאות רחל"
+    }
+  },
+  {
+    "id": "arcgis:holon::519",
+    "type": "synagogue",
+    "name": "בן ציון קזקוב מקלט 4",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.03282361210349,
+      "longitude": 34.76272054161121
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:519",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 519,
+        "Name": "בן ציון קזקוב מקלט 4",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 606,
+        "Street": "הצפורן",
+        "House": "6",
+        "Address": "הצפורן 6",
+        "Service_Zone": "תל גיבורים",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "הצפורן 6",
+    "extra": {
+      "neighborhood": "תל גיבורים"
+    }
+  },
+  {
+    "id": "arcgis:holon::520",
+    "type": "synagogue",
+    "name": "כאייל תערוג הפצת תורה וחסד",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.01370442732395,
+      "longitude": 34.796045937893346
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:520",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 520,
+        "Name": "כאייל תערוג הפצת תורה וחסד",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 225,
+        "Street": "עמוס",
+        "House": "31",
+        "Address": "עמוס 31",
+        "Service_Zone": "נאות יהודית ונווה ארזים",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "עמוס 31",
+    "extra": {
+      "neighborhood": "נאות יהודית ונווה ארזים"
+    }
+  },
+  {
+    "id": "arcgis:holon::521",
+    "type": "synagogue",
+    "name": "לוי יחזקאל",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.01595295499296,
+      "longitude": 34.780885084790704
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:521",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 521,
+        "Name": "לוי יחזקאל",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 325,
+        "Street": "ראש פינה",
+        "House": "9",
+        "Address": "ראש פינה 9",
+        "Service_Zone": "נאות שושנים",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "ראש פינה 9",
+    "extra": {
+      "neighborhood": "נאות שושנים"
+    }
+  },
+  {
+    "id": "arcgis:holon::522",
+    "type": "synagogue",
+    "name": "בית כנסת עושה שלום",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.01453200129427,
+      "longitude": 34.78765885286685
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:522",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 522,
+        "Name": "בית כנסת עושה שלום",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 308,
+        "Street": "רבי עקיבא",
+        "House": "5",
+        "Address": "רבי עקיבא 5",
+        "Service_Zone": "רסקו ב'",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "רבי עקיבא 5",
+    "extra": {
+      "neighborhood": "רסקו ב'"
+    }
+  },
+  {
+    "id": "arcgis:holon::523",
+    "type": "synagogue",
+    "name": "עברי גדעון",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.011558371523314,
+      "longitude": 34.79067877169042
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:523",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 523,
+        "Name": "עברי גדעון",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 305,
+        "Street": "ברנדיס לואי",
+        "House": "6",
+        "Address": "ברנדיס 6",
+        "Service_Zone": "רסקו ב'",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "ברנדיס 6",
+    "extra": {
+      "neighborhood": "רסקו ב'"
+    }
+  },
+  {
+    "id": "arcgis:holon::524",
+    "type": "synagogue",
+    "name": "תפארת בחורים",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.00635303746834,
+      "longitude": 34.762443857415775
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:524",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 524,
+        "Name": "תפארת בחורים",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 802,
+        "Street": "עין גדי",
+        "House": "1",
+        "Address": "עין גדי 1",
+        "Service_Zone": "ג'סי כהן וקרית מיכה",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "עין גדי 1",
+    "extra": {
+      "neighborhood": "ג'סי כהן וקרית מיכה"
+    }
+  },
+  {
+    "id": "arcgis:holon::526",
+    "type": "synagogue",
+    "name": "הרב יוסף שעשוע",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.0280296605334,
+      "longitude": 34.766943772267744
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:526",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 526,
+        "Name": "הרב יוסף שעשוע",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 535,
+        "Street": "אלחריזי",
+        "House": "13",
+        "Address": "אלחריזי 13",
+        "Service_Zone": "גרין ועם",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "אלחריזי 13",
+    "extra": {
+      "neighborhood": "גרין ועם"
+    }
+  },
+  {
+    "id": "arcgis:holon::530",
+    "type": "synagogue",
+    "name": "בית כנסת גן רווה",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.00996009126425,
+      "longitude": 34.783537324727355
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:530",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 530,
+        "Name": "בית כנסת גן רווה",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 991,
+        "Street": "החרצית",
+        "House": "5",
+        "Address": "החרצית 5",
+        "Service_Zone": "קרית אילון",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "החרצית 5",
+    "extra": {
+      "neighborhood": "קרית אילון"
+    }
+  },
+  {
+    "id": "arcgis:holon::533",
+    "type": "synagogue",
+    "name": "תשועת עולמים",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.00385256802794,
+      "longitude": 34.76828571127624
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:533",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 533,
+        "Name": "תשועת עולמים",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": null,
+        "Street": "אהרונוביץ ",
+        "House": "9",
+        "Address": "אהרונוביץ 91",
+        "Service_Zone": "ג'סי כהן וקרית מיכה",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "אהרונוביץ 91",
+    "extra": {
+      "neighborhood": "ג'סי כהן וקרית מיכה"
+    }
+  },
+  {
+    "id": "arcgis:holon::534",
+    "type": "synagogue",
+    "name": "בית כנסת בבית אבות",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.01933038875649,
+      "longitude": 34.773452244537594
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:534",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 534,
+        "Name": "בית כנסת בבית אבות",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": 503,
+        "Street": "ביאליק ",
+        "House": "33",
+        "Address": "ביאליק 33",
+        "Service_Zone": "קרית עבודה",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "ביאליק 33",
+    "extra": {
+      "neighborhood": "קרית עבודה"
+    }
+  },
+  {
+    "id": "arcgis:holon::535",
+    "type": "synagogue",
+    "name": "בית כנסת גאולת תימן",
+    "cityHint": "חולון",
+    "location": {
+      "latitude": 32.01518687048461,
+      "longitude": 34.79529871661595
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:holon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:holon:535",
+      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+      "fetchedAt": "2026-06-21T06:39:57.003Z",
+      "raw": {
+        "OBJECTID": 535,
+        "Name": "בית כנסת גאולת תימן",
+        "Inst_Type": "בית כנסת/מדרש",
+        "Category": "קהילה ורווחה",
+        "Str_code": null,
+        "Street": "דבורה הנביאה",
+        "House": "5",
+        "Address": "דבורה הנביאה 5",
+        "Service_Zone": "נאות יהודית ונווה ארזים",
+        "Telephone1": null,
+        "Telephone2": null,
+        "Megama_code": null,
+        "Megama_name": null,
+        "semel": null,
+        "zone": null,
+        "zone_manager": null,
+        "special_edu": null
+      }
+    },
+    "address": "דבורה הנביאה 5",
+    "extra": {
+      "neighborhood": "נאות יהודית ונווה ארזים"
+    }
+  }
+]

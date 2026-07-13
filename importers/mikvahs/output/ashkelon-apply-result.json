@@ -1,0 +1,56 @@
+{
+  "status": "SUCCESS",
+  "scope": "4 Ashkelon mikveh records (3 native Waze + 1 GovMap address geocode), additive append. rebuildAppDataset NOT run. Backlog untouched. No publish.",
+  "backups": {
+    "places": "C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\places.osm.pre-ashkelon.backup.json",
+    "cities": "C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\cities.osm.pre-ashkelon.backup.json"
+  },
+  "filesModified": [
+    "src/data/generated/places.osm.json",
+    "src/data/generated/cities.osm.json"
+  ],
+  "counts": {
+    "placesBefore": 5367,
+    "placesAfter": 5371,
+    "added": 4,
+    "mikvehBefore": 602,
+    "mikvehAfter": 606,
+    "existingLost": 0,
+    "existingModified": 0
+  },
+  "added": [
+    {
+      "id": "mikveh-ashkelon-31.66761_34.56738",
+      "name": "אפרידר - נורמה רות",
+      "precision": "native"
+    },
+    {
+      "id": "mikveh-ashkelon-31.65307_34.56358",
+      "name": "אפרים צור - מקוה בשיפוץ",
+      "precision": "native"
+    },
+    {
+      "id": "mikveh-ashkelon-31.67767_34.57695",
+      "name": "ברנע",
+      "precision": "native"
+    },
+    {
+      "id": "mikveh-ashkelon-31.68643_34.59436",
+      "name": "מקוה עיר היין",
+      "precision": "address"
+    }
+  ],
+  "license": "council-public (המועצה הדתית אשקלון, mdas.org.il)",
+  "reconciliation": "EXACT: places 5367→5371 (+4); mikveh 602→606 (+4); 0 lost; 0 modified.",
+  "rollback": [
+    "copy C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\places.osm.pre-ashkelon.backup.json → C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\places.osm.json",
+    "copy C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\cities.osm.pre-ashkelon.backup.json → C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\cities.osm.json",
+    "do NOT run rebuildAppDataset",
+    "verify: places returns to 5367, mikveh to 602"
+  ],
+  "dryRun": false,
+  "publishPerformed": false,
+  "additiveOnly": true,
+  "rebuildRun": false,
+  "backlogTouched": false
+}

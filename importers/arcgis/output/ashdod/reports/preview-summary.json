@@ -1,0 +1,22 @@
+{
+  "source": "arcgis:ashdod",
+  "expectedCount": 290,
+  "fetchedCount": 290,
+  "droppedNoName": 11,
+  "validCount": 279,
+  "rejectedCount": 0,
+  "new": 273,
+  "enriched": 5,
+  "conflicts": 1,
+  "over300": 0,
+  "existingSynagogues": 2739,
+  "mergedSynagogues": 3013,
+  "coordinateSource": "ArcGIS server outSR=4326 (authoritative WGS84)",
+  "datumShiftFromPureItmMeters": {
+    "comparedCount": 279,
+    "maxMeters": 77.51,
+    "avgMeters": 77.49
+  },
+  "dryRun": true,
+  "liveDataTouched": false
+}

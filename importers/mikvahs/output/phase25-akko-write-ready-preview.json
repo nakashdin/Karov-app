@@ -1,0 +1,135 @@
+[
+  {
+    "id": "mikveh-akko-w-32.92656_35.08863",
+    "name": "מקווה שדליץ",
+    "type": "mikveh",
+    "cityId": "עכו",
+    "address": "הרב לופס 3, עכו",
+    "location": {
+      "latitude": 32.9265608,
+      "longitude": 35.0886284
+    },
+    "source": "seed",
+    "phone": "049911067",
+    "openingHours": "שעון קיץ: א'-ה' משקיעת החמה עד 22:00; שעון חורף: א'-ה' משקיעת החמה עד 20:00-21:00; ערב שבת/חג מכניסת השבת; מוצ\"ש בתיאום",
+    "mikvehGender": "נשים",
+    "attendant": "סימי בונן 058-3214961",
+    "sourceName": "המועצה הדתית והרבנות עכו",
+    "sourceUrl": "https://www.mdakko.org/mikooaot3",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native(waze)",
+      "provenance": {
+        "sourceId": "council:akko:mikvah",
+        "sourceUrl": "https://www.mdakko.org/mikooaot3",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-akko-w-32.94007_35.07625",
+    "name": "מקווה כרם",
+    "type": "mikveh",
+    "cityId": "עכו",
+    "address": "כרם 2, עכו",
+    "location": {
+      "latitude": 32.9400717,
+      "longitude": 35.0762529
+    },
+    "source": "seed",
+    "phone": "049917554",
+    "openingHours": "שעון קיץ: א'-ה' משקיעת החמה עד 22:00; שעון חורף: א'-ה' משקיעת החמה עד 20:00-21:00; ערב שבת/חג מכניסת השבת; מוצ\"ש בתיאום",
+    "mikvehGender": "נשים",
+    "attendant": "רמונד כהן 054-9134540",
+    "sourceName": "המועצה הדתית והרבנות עכו",
+    "sourceUrl": "https://www.mdakko.org/mikooaot4",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native(waze)",
+      "provenance": {
+        "sourceId": "council:akko:mikvah",
+        "sourceUrl": "https://www.mdakko.org/mikooaot4",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-akko-w-32.93076_35.08086",
+    "name": "מקווה וולפסון",
+    "type": "mikveh",
+    "cityId": "עכו",
+    "address": "דרך הארבעה 57, עכו",
+    "location": {
+      "latitude": 32.9307645,
+      "longitude": 35.0808648
+    },
+    "source": "seed",
+    "phone": "049913493",
+    "openingHours": "שעון קיץ: א'-ה' משקיעת החמה עד 22:00; שעון חורף: א'-ה' משקיעת החמה עד 20:00-21:00; ערב שבת/חג מכניסת השבת; מוצ\"ש בתיאום",
+    "mikvehGender": "נשים",
+    "attendant": "מרים אבו 050-5757324",
+    "sourceName": "המועצה הדתית והרבנות עכו",
+    "sourceUrl": "https://www.mdakko.org/mikooaot5",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native(waze)",
+      "provenance": {
+        "sourceId": "council:akko:mikvah",
+        "sourceUrl": "https://www.mdakko.org/mikooaot5",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-akko-w-32.91778_35.09041",
+    "name": "מקווה גבעת התמרים",
+    "type": "mikveh",
+    "cityId": "עכו",
+    "address": "עליית הנוער 1, עכו",
+    "location": {
+      "latitude": 32.9177823,
+      "longitude": 35.0904099
+    },
+    "source": "seed",
+    "phone": "046577898",
+    "openingHours": "שעון קיץ: א'-ה' משקיעת החמה עד 22:00; שעון חורף: א'-ה' משקיעת החמה עד 20:00-21:00; ערב שבת/חג מכניסת השבת; מוצ\"ש בתיאום",
+    "mikvehGender": "נשים",
+    "attendant": "פנינה כהן 054-8596230",
+    "sourceName": "המועצה הדתית והרבנות עכו",
+    "sourceUrl": "https://www.mdakko.org/mikooaot6",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native(waze)",
+      "provenance": {
+        "sourceId": "council:akko:mikvah",
+        "sourceUrl": "https://www.mdakko.org/mikooaot6",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-akko-m-32.93076_35.08086",
+    "name": "מקווה גברים",
+    "type": "mikveh",
+    "cityId": "עכו",
+    "address": "דרך הארבעה 57, עכו",
+    "location": {
+      "latitude": 32.9307645,
+      "longitude": 35.0808648
+    },
+    "source": "seed",
+    "mikvehGender": "גברים",
+    "sourceName": "המועצה הדתית והרבנות עכו",
+    "sourceUrl": "https://www.mdakko.org/mikooaot7",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "record-native(waze, co-located building)",
+      "provenance": {
+        "sourceId": "council:akko:mikvah",
+        "sourceUrl": "https://www.mdakko.org/mikooaot7",
+        "fetchedAt": "2026-06-22"
+      },
+      "coordNote": "men's page Waze pointed to council office (יהושפט 29); reassigned to its real address דרך הארבעה 57 = וולפסון building native coord"
+    }
+  }
+]

@@ -1,0 +1,898 @@
+[
+  {
+    "name": "מקווה חפציבה",
+    "city": "מודיעין עילית",
+    "source": "municipal-phase6",
+    "address": "אלישיב 23",
+    "currentIssue": "large-city street address; city-center too coarse to place precisely",
+    "proposedCoordinates": {
+      "latitude": 32.7961796,
+      "longitude": 35.5334249
+    },
+    "confidence": 0.4,
+    "locationPrecision": "city",
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה חפציבה אלישיב 23 מודיעין עילית ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה נאות הפסגה",
+    "city": "מודיעין עילית",
+    "source": "municipal-phase6",
+    "address": "הריטב&rdquo;א 4",
+    "currentIssue": "large-city street address; city-center too coarse to place precisely",
+    "proposedCoordinates": {
+      "latitude": 32.7961796,
+      "longitude": 35.5334249
+    },
+    "confidence": 0.4,
+    "locationPrecision": "city",
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה נאות הפסגה הריטב&rdquo;א 4 מודיעין עילית ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה קרית ספר (גברים)",
+    "city": "מודיעין עילית",
+    "source": "municipal-phase6",
+    "address": "'זכרון דוד'- שדי חמד 13",
+    "currentIssue": "large-city street address; city-center too coarse to place precisely",
+    "proposedCoordinates": {
+      "latitude": 32.7961796,
+      "longitude": 35.5334249
+    },
+    "confidence": 0.4,
+    "locationPrecision": "city",
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה קרית ספר (גברים) 'זכרון דוד'- שדי חמד 13 מודיעין עילית ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה קרית ספר (גברים)",
+    "city": "מודיעין עילית",
+    "source": "municipal-phase6",
+    "address": "'זכרון משה'- נתיבות המשפט 40",
+    "currentIssue": "large-city street address; city-center too coarse to place precisely",
+    "proposedCoordinates": {
+      "latitude": 32.7961796,
+      "longitude": 35.5334249
+    },
+    "confidence": 0.4,
+    "locationPrecision": "city",
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה קרית ספר (גברים) 'זכרון משה'- נתיבות המשפט 40 מודיעין עילית ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה ברכפלד (גברים)",
+    "city": "מודיעין עילית",
+    "source": "municipal-phase6",
+    "address": "'היכל יהושע'- ירוסלב- רשב&rdquo;י 21",
+    "currentIssue": "large-city street address; city-center too coarse to place precisely",
+    "proposedCoordinates": {
+      "latitude": 32.7961796,
+      "longitude": 35.5334249
+    },
+    "confidence": 0.4,
+    "locationPrecision": "city",
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה ברכפלד (גברים) 'היכל יהושע'- ירוסלב- רשב&rdquo;י 21 מודיעין עילית ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה נאות הפסגה (גברים)",
+    "city": "מודיעין עילית",
+    "source": "municipal-phase6",
+    "address": "הריטב&rdquo;א 4",
+    "currentIssue": "large-city street address; city-center too coarse to place precisely",
+    "proposedCoordinates": {
+      "latitude": 32.7961796,
+      "longitude": 35.5334249
+    },
+    "confidence": 0.4,
+    "locationPrecision": "city",
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה נאות הפסגה (גברים) הריטב&rdquo;א 4 מודיעין עילית ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה קרית ספר (כלים)",
+    "city": "מודיעין עילית",
+    "source": "municipal-phase6",
+    "address": "חזון דוד 19 - נגישות לרכבים מרחוב שערי תשובה",
+    "currentIssue": "large-city street address; city-center too coarse to place precisely",
+    "proposedCoordinates": {
+      "latitude": 32.7961796,
+      "longitude": 35.5334249
+    },
+    "confidence": 0.4,
+    "locationPrecision": "city",
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה קרית ספר (כלים) חזון דוד 19 - נגישות לרכבים מרחוב שערי תשובה מודיעין עילית ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה נאות הפסגה (כלים)",
+    "city": "מודיעין עילית",
+    "source": "municipal-phase6",
+    "address": "הריטב&rdquo;א 4",
+    "currentIssue": "large-city street address; city-center too coarse to place precisely",
+    "proposedCoordinates": {
+      "latitude": 32.7961796,
+      "longitude": 35.5334249
+    },
+    "confidence": 0.4,
+    "locationPrecision": "city",
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה נאות הפסגה (כלים) הריטב&rdquo;א 4 מודיעין עילית ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה גבעת המייסדים",
+    "city": "מעלה אדומים",
+    "source": "municipal-phase6",
+    "address": "מקווה \"באר מיכל\" - בתיאום עם הבלנית חנה 0506658783 או אסתר אבילחק 0548440007",
+    "currentIssue": "large-city street address; city-center too coarse to place precisely",
+    "proposedCoordinates": {
+      "latitude": 31.802886,
+      "longitude": 35.2526186
+    },
+    "confidence": 0.4,
+    "locationPrecision": "city",
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה גבעת המייסדים מקווה \"באר מיכל\" - בתיאום עם הבלנית חנה 0506658783 או אסתר אבילחק 0548440007 מעלה אדומים ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה לבקשה מיוחדת ולבירורים ניתן לפנות לאחראית המקוואות גב' מיכל בינימין ניי: 050-8296225",
+    "city": "מעלה אדומים",
+    "source": "municipal-phase6",
+    "address": null,
+    "currentIssue": "large-city street address; city-center too coarse to place precisely",
+    "proposedCoordinates": {
+      "latitude": 31.802886,
+      "longitude": 35.2526186
+    },
+    "confidence": 0.4,
+    "locationPrecision": "city",
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה לבקשה מיוחדת ולבירורים ניתן לפנות לאחראית המקוואות גב' מיכל בינימין ניי: 050-8296225 מעלה אדומים ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה ברוכין - מונגש",
+    "city": "ברוכין - מונגש",
+    "source": "municipal-phase6",
+    "address": null,
+    "currentIssue": "settlement not found by any geocoder",
+    "proposedCoordinates": null,
+    "confidence": 0,
+    "locationPrecision": null,
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה ברוכין - מונגש ברוכין - מונגש ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה הר ברכה",
+    "city": "הר ברכה",
+    "source": "municipal-phase6",
+    "address": null,
+    "currentIssue": "geocode landed outside the council region (32.089,34.859) — Nominatim name-collision, unreliable",
+    "proposedCoordinates": null,
+    "confidence": 0,
+    "locationPrecision": null,
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה הר ברכה הר ברכה ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה חוות גלעד",
+    "city": "חוות גלעד",
+    "source": "municipal-phase6",
+    "address": null,
+    "currentIssue": "settlement not found by any geocoder",
+    "proposedCoordinates": null,
+    "confidence": 0,
+    "locationPrecision": null,
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה חוות גלעד חוות גלעד ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה חוות יאיר",
+    "city": "חוות יאיר",
+    "source": "municipal-phase6",
+    "address": null,
+    "currentIssue": "settlement not found by any geocoder",
+    "proposedCoordinates": null,
+    "confidence": 0,
+    "locationPrecision": null,
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה חוות יאיר חוות יאיר ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה טל מנשה",
+    "city": "טל מנשה",
+    "source": "municipal-phase6",
+    "address": null,
+    "currentIssue": "no native coordinates (settlement-level entry)",
+    "proposedCoordinates": {
+      "latitude": 32.482077,
+      "longitude": 35.0194158
+    },
+    "confidence": 0.6,
+    "locationPrecision": "city",
+    "writeReady": true,
+    "verifyBeforePublish": true,
+    "resolutionPath": "reused Phase-10 settlement center (region-validated, approximate)"
+  },
+  {
+    "name": "מקווה לשם",
+    "city": "לשם",
+    "source": "municipal-phase6",
+    "address": null,
+    "currentIssue": "geocode landed outside the council region (31.729,35.189) — Nominatim name-collision, unreliable",
+    "proposedCoordinates": null,
+    "confidence": 0,
+    "locationPrecision": null,
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה לשם לשם ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה מבוא דותן",
+    "city": "מבוא דותן",
+    "source": "municipal-phase6",
+    "address": null,
+    "currentIssue": "no native coordinates (settlement-level entry)",
+    "proposedCoordinates": {
+      "latitude": 32.2295846,
+      "longitude": 35.0085279
+    },
+    "confidence": 0.6,
+    "locationPrecision": "city",
+    "writeReady": true,
+    "verifyBeforePublish": true,
+    "resolutionPath": "reused Phase-10 settlement center (region-validated, approximate)"
+  },
+  {
+    "name": "מקווה נופי נחמיה",
+    "city": "נופי נחמיה",
+    "source": "municipal-phase6",
+    "address": null,
+    "currentIssue": "settlement not found by any geocoder",
+    "proposedCoordinates": null,
+    "confidence": 0,
+    "locationPrecision": null,
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה נופי נחמיה נופי נחמיה ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה פדואל - מונגש",
+    "city": "פדואל - מונגש",
+    "source": "municipal-phase6",
+    "address": null,
+    "currentIssue": "settlement not found by any geocoder",
+    "proposedCoordinates": null,
+    "confidence": 0,
+    "locationPrecision": null,
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה פדואל - מונגש פדואל - מונגש ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה אדם",
+    "city": "אדם",
+    "source": "asbina-phase7",
+    "address": "רחוב לבונה 6/2 יש מרחב מוגן",
+    "currentIssue": "no native coordinates (settlement-level entry)",
+    "proposedCoordinates": {
+      "latitude": 31.7481919,
+      "longitude": 35.2308841
+    },
+    "confidence": 0.6,
+    "locationPrecision": "city",
+    "writeReady": true,
+    "verifyBeforePublish": true,
+    "resolutionPath": "reused Phase-10 settlement center (region-validated, approximate)"
+  },
+  {
+    "name": "מקווה אחיה",
+    "city": "אחיה",
+    "source": "asbina-phase7",
+    "address": null,
+    "currentIssue": "geocode landed outside the council region (32.128,34.803) — Nominatim name-collision, unreliable",
+    "proposedCoordinates": null,
+    "confidence": 0,
+    "locationPrecision": null,
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה אחיה אחיה ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה אש קודש",
+    "city": "אש קודש",
+    "source": "asbina-phase7",
+    "address": null,
+    "currentIssue": "no native coordinates (settlement-level entry)",
+    "proposedCoordinates": {
+      "latitude": 31.7853015,
+      "longitude": 35.236125
+    },
+    "confidence": 0.6,
+    "locationPrecision": "city",
+    "writeReady": true,
+    "verifyBeforePublish": true,
+    "resolutionPath": "reused Phase-10 settlement center (region-validated, approximate)"
+  },
+  {
+    "name": "מקווה אלון",
+    "city": "אלון",
+    "source": "asbina-phase7",
+    "address": null,
+    "currentIssue": "geocode landed outside the council region (32.147,34.844) — Nominatim name-collision, unreliable",
+    "proposedCoordinates": null,
+    "confidence": 0,
+    "locationPrecision": null,
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה אלון אלון ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה בני אדם",
+    "city": "בני אדם",
+    "source": "asbina-phase7",
+    "address": null,
+    "currentIssue": "settlement not found by any geocoder",
+    "proposedCoordinates": null,
+    "confidence": 0,
+    "locationPrecision": null,
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה בני אדם בני אדם ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה גבעת אסף",
+    "city": "גבעת אסף",
+    "source": "asbina-phase7",
+    "address": null,
+    "currentIssue": "settlement not found by any geocoder",
+    "proposedCoordinates": null,
+    "confidence": 0,
+    "locationPrecision": null,
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה גבעת אסף גבעת אסף ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה גבעת הרואה",
+    "city": "גבעת הרואה",
+    "source": "asbina-phase7",
+    "address": null,
+    "currentIssue": "settlement not found by any geocoder",
+    "proposedCoordinates": null,
+    "confidence": 0,
+    "locationPrecision": null,
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה גבעת הרואה גבעת הרואה ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה גבעת הראל",
+    "city": "גבעת הראל",
+    "source": "asbina-phase7",
+    "address": null,
+    "currentIssue": "settlement not found by any geocoder",
+    "proposedCoordinates": null,
+    "confidence": 0,
+    "locationPrecision": null,
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה גבעת הראל גבעת הראל ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה חרשה",
+    "city": "חרשה",
+    "source": "asbina-phase7",
+    "address": null,
+    "currentIssue": "geocode landed outside the council region (33.047,35.440) — Nominatim name-collision, unreliable",
+    "proposedCoordinates": null,
+    "confidence": 0,
+    "locationPrecision": null,
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה חרשה חרשה ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה כוכב יעקב",
+    "city": "כוכב יעקב",
+    "source": "asbina-phase7",
+    "address": null,
+    "currentIssue": "settlement not found by any geocoder",
+    "proposedCoordinates": null,
+    "confidence": 0,
+    "locationPrecision": null,
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה כוכב יעקב כוכב יעקב ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה כרם רעים",
+    "city": "כרם רעים",
+    "source": "asbina-phase7",
+    "address": "יש מרחב מוגן",
+    "currentIssue": "settlement not found by any geocoder",
+    "proposedCoordinates": null,
+    "confidence": 0,
+    "locationPrecision": null,
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה כרם רעים יש מרחב מוגן כרם רעים ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה מגרון",
+    "city": "מגרון",
+    "source": "asbina-phase7",
+    "address": null,
+    "currentIssue": "settlement not found by any geocoder",
+    "proposedCoordinates": null,
+    "confidence": 0,
+    "locationPrecision": null,
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה מגרון מגרון ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה מכמש",
+    "city": "מכמש",
+    "source": "asbina-phase7",
+    "address": null,
+    "currentIssue": "no native coordinates (settlement-level entry)",
+    "proposedCoordinates": {
+      "latitude": 31.8273912,
+      "longitude": 35.2435659
+    },
+    "confidence": 0.6,
+    "locationPrecision": "city",
+    "writeReady": true,
+    "verifyBeforePublish": true,
+    "resolutionPath": "reused Phase-10 settlement center (region-validated, approximate)"
+  },
+  {
+    "name": "מקווה מעלה לבונה",
+    "city": "מעלה לבונה",
+    "source": "asbina-phase7",
+    "address": null,
+    "currentIssue": "settlement not found by any geocoder",
+    "proposedCoordinates": null,
+    "confidence": 0,
+    "locationPrecision": null,
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה מעלה לבונה מעלה לבונה ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה מתתיהו",
+    "city": "מתתיהו",
+    "source": "asbina-phase7",
+    "address": null,
+    "currentIssue": "no native coordinates (settlement-level entry)",
+    "proposedCoordinates": {
+      "latitude": 31.7861447,
+      "longitude": 35.2135213
+    },
+    "confidence": 0.6,
+    "locationPrecision": "city",
+    "writeReady": true,
+    "verifyBeforePublish": true,
+    "resolutionPath": "reused Phase-10 settlement center (region-validated, approximate)"
+  },
+  {
+    "name": "מקווה נווה צוף",
+    "city": "נווה צוף",
+    "source": "asbina-phase7",
+    "address": null,
+    "currentIssue": "settlement not found by any geocoder",
+    "proposedCoordinates": null,
+    "confidence": 0,
+    "locationPrecision": null,
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה נווה צוף נווה צוף ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה נריה",
+    "city": "נריה",
+    "source": "asbina-phase7",
+    "address": null,
+    "currentIssue": "geocode landed outside the council region (31.737,34.986) — Nominatim name-collision, unreliable",
+    "proposedCoordinates": null,
+    "confidence": 0,
+    "locationPrecision": null,
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה נריה נריה ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה עדי עד",
+    "city": "עדי עד",
+    "source": "asbina-phase7",
+    "address": null,
+    "currentIssue": "geocode landed outside the council region (32.083,34.800) — Nominatim name-collision, unreliable",
+    "proposedCoordinates": null,
+    "confidence": 0,
+    "locationPrecision": null,
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה עדי עד עדי עד ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה עטרת",
+    "city": "עטרת",
+    "source": "asbina-phase7",
+    "address": null,
+    "currentIssue": "geocode landed outside the council region (33.005,35.628) — Nominatim name-collision, unreliable",
+    "proposedCoordinates": null,
+    "confidence": 0,
+    "locationPrecision": null,
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה עטרת עטרת ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה עלי מרכז",
+    "city": "עלי מרכז",
+    "source": "asbina-phase7",
+    "address": null,
+    "currentIssue": "geocode landed outside the council region (31.985,34.808) — Nominatim name-collision, unreliable",
+    "proposedCoordinates": null,
+    "confidence": 0,
+    "locationPrecision": null,
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה עלי מרכז עלי מרכז ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה עלי שכונת היובל",
+    "city": "עלי שכונת היובל",
+    "source": "asbina-phase7",
+    "address": null,
+    "currentIssue": "geocode landed outside the council region (32.772,35.154) — Nominatim name-collision, unreliable",
+    "proposedCoordinates": null,
+    "confidence": 0,
+    "locationPrecision": null,
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה עלי שכונת היובל עלי שכונת היובל ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה עלי פלגי מים",
+    "city": "עלי פלגי מים",
+    "source": "asbina-phase7",
+    "address": "יש מרחב מוגן",
+    "currentIssue": "settlement not found by any geocoder",
+    "proposedCoordinates": null,
+    "confidence": 0,
+    "locationPrecision": null,
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה עלי פלגי מים יש מרחב מוגן עלי פלגי מים ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה עפרה",
+    "city": "עפרה",
+    "source": "asbina-phase7",
+    "address": null,
+    "currentIssue": "no native coordinates (settlement-level entry)",
+    "proposedCoordinates": {
+      "latitude": 31.7741785,
+      "longitude": 35.2382315
+    },
+    "confidence": 0.6,
+    "locationPrecision": "city",
+    "writeReady": true,
+    "verifyBeforePublish": true,
+    "resolutionPath": "reused Phase-10 settlement center (region-validated, approximate)"
+  },
+  {
+    "name": "מקווה פסגות",
+    "city": "פסגות",
+    "source": "asbina-phase7",
+    "address": null,
+    "currentIssue": "geocode landed outside the council region (31.748,34.996) — Nominatim name-collision, unreliable",
+    "proposedCoordinates": null,
+    "confidence": 0,
+    "locationPrecision": null,
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה פסגות פסגות ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה קידה",
+    "city": "קידה",
+    "source": "asbina-phase7",
+    "address": null,
+    "currentIssue": "geocode landed outside the council region (29.562,34.937) — Nominatim name-collision, unreliable",
+    "proposedCoordinates": null,
+    "confidence": 0,
+    "locationPrecision": null,
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה קידה קידה ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה רימונים",
+    "city": "רימונים",
+    "source": "asbina-phase7",
+    "address": null,
+    "currentIssue": "geocode landed outside the council region (32.690,35.422) — Nominatim name-collision, unreliable",
+    "proposedCoordinates": null,
+    "confidence": 0,
+    "locationPrecision": null,
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה רימונים רימונים ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה שבות רחל",
+    "city": "שבות רחל",
+    "source": "asbina-phase7",
+    "address": null,
+    "currentIssue": "settlement not found by any geocoder",
+    "proposedCoordinates": null,
+    "confidence": 0,
+    "locationPrecision": null,
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה שבות רחל שבות רחל ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה תל ציון",
+    "city": "תל ציון",
+    "source": "asbina-phase7",
+    "address": "יש מרחב מוגן",
+    "currentIssue": "geocode landed outside the council region (32.794,35.537) — Nominatim name-collision, unreliable",
+    "proposedCoordinates": null,
+    "confidence": 0,
+    "locationPrecision": null,
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה תל ציון יש מרחב מוגן תל ציון ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  },
+  {
+    "name": "מקווה מעגלים",
+    "city": "מעגלים",
+    "source": "asbina-phase7",
+    "address": null,
+    "currentIssue": "no native coordinates (settlement-level entry)",
+    "proposedCoordinates": {
+      "latitude": 31.3974042,
+      "longitude": 34.5983178
+    },
+    "confidence": 0.6,
+    "locationPrecision": "city",
+    "writeReady": true,
+    "verifyBeforePublish": true,
+    "resolutionPath": "reused Phase-10 settlement center (region-validated, approximate)"
+  },
+  {
+    "name": "מקווה ישמח משה",
+    "city": "גני תקווה",
+    "source": "sabaiapps",
+    "address": "7 הר נבו",
+    "currentIssue": "large-city street address; city-center too coarse to place precisely",
+    "proposedCoordinates": null,
+    "confidence": 0,
+    "locationPrecision": null,
+    "writeReady": false,
+    "resolutionPath": "manual-coordinates",
+    "manualEntry": {
+      "lat": null,
+      "lng": null,
+      "mapsQuery": "מקווה ישמח משה 7 הר נבו גני תקווה ישראל",
+      "note": "enter exact coordinates from Waze/Google Maps"
+    }
+  }
+]

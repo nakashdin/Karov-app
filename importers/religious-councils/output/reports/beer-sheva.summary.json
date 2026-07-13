@@ -1,0 +1,19 @@
+{
+  "council": "המועצה הדתית באר שבע",
+  "variant": "markers",
+  "expectedCount": 233,
+  "fetchedCount": 176,
+  "validCount": 165,
+  "rejectedCount": 11,
+  "coordSource": "markers",
+  "withNativeCoordinates": 176,
+  "missingCoordinates": 0,
+  "duplicateSourceIds": 11,
+  "enrichedFromCards": 165,
+  "ambiguousEnrich": 11,
+  "countMatches": false,
+  "pagesFetched": 1,
+  "dryRun": true,
+  "liveDataTouched": false,
+  "generatedAt": "2026-06-18"
+}

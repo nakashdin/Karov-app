@@ -1,0 +1,1271 @@
+[
+  {
+    "id": "osm-node-3663531018",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "אלקטר",
+    "lat": 31.9335182,
+    "lng": 34.8728798,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "name": "אלקטר",
+      "name:en": "Elkatar",
+      "name:he": "אלקטר",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-331227531",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "שארית יצחק",
+    "lat": 31.9288958,
+    "lng": 34.8632451,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "שארית יצחק",
+      "name:en": "She'erit Yitzchak",
+      "name:he": "שארית יצחק",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-331227544",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "אוהל יוסף",
+    "lat": 31.9293724,
+    "lng": 34.8640549,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "אוהל יוסף",
+      "name:en": "Ohel Yossef",
+      "name:he": "אוהל יוסף",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-331296944",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": null,
+    "lat": 31.9325077,
+    "lng": 34.861728,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-334743144",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "רשב\"י",
+    "lat": 31.934843,
+    "lng": 34.857316,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "רשב\"י",
+      "name:en": "Rashbi",
+      "name:he": "רשב\"י",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-337179449",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "סוכת שלום",
+    "lat": 31.9338885,
+    "lng": 34.8629165,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "סוכת שלום",
+      "name:en": "Sukkat Shalom",
+      "name:he": "סוכת שלום",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-337179450",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "קדושי השואה",
+    "lat": 31.9339898,
+    "lng": 34.8631403,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "קדושי השואה",
+      "name:en": "Kdoshei Hashoah",
+      "name:he": "קדושי השואה",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-337186061",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "אשל אברהם",
+    "lat": 31.9327621,
+    "lng": 34.8665065,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "אשל אברהם",
+      "name:en": "Eshel Avraham",
+      "name:he": "אשל אברהם",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-337190375",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "קהילות יעקב",
+    "lat": 31.9325345,
+    "lng": 34.8678161,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "קהילות יעקב",
+      "name:en": "Kehilot Ya'akov",
+      "name:he": "קהילות יעקב",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-337451891",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "רשב\"ם",
+    "lat": 31.939336,
+    "lng": 34.8609747,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "רשב\"ם",
+      "name:en": "Rashbam",
+      "name:he": "רשב\"ם",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-337459571",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "עץ החיים",
+    "lat": 31.9351623,
+    "lng": 34.8615449,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "עץ החיים",
+      "name:en": "Etz Hahaim",
+      "name:he": "עץ החיים",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-337466341",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "בית ישראל",
+    "lat": 31.9383316,
+    "lng": 34.8654289,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "alt_name:en": "Beit Yisrael",
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "בית ישראל",
+      "name:en": "Beit Israel",
+      "name:he": "בית ישראל",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-337609381",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "זכור לאברהם",
+    "lat": 31.9376352,
+    "lng": 34.8667308,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "זכור לאברהם",
+      "name:en": "Zechor L'Avraham",
+      "name:he": "זכור לאברהם",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-337610999",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "שארית הפליטה",
+    "lat": 31.9368916,
+    "lng": 34.868042,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "שארית הפליטה",
+      "name:en": "She'erit Ha'pleta",
+      "name:he": "שארית הפליטה",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-342593026",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "שערי צדק",
+    "lat": 31.922254,
+    "lng": 34.8728151,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "שערי צדק",
+      "name:en": "Sha'arei Tzedek",
+      "name:he": "שערי צדק",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-356602504",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "אוהל שרה",
+    "lat": 31.9244891,
+    "lng": 34.8701571,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "אוהל שרה",
+      "name:en": "Ohel Sarah",
+      "name:he": "אוהל שרה",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-356604096",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": null,
+    "lat": 31.9234845,
+    "lng": 34.8725839,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-356604493",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "גאולי תימן",
+    "lat": 31.9237374,
+    "lng": 34.8683937,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "גאולי תימן",
+      "name:en": "Ge'ulei Teyman",
+      "name:he": "גאולי תימן",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-358546023",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "אחדות ישראל",
+    "lat": 31.9320933,
+    "lng": 34.8725103,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "אחדות ישראל",
+      "name:en": "Achdut Yisrael",
+      "name:he": "אחדות ישראל",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-358952800",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "אלהודא",
+    "lat": 31.9232694,
+    "lng": 34.8763274,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "אלהודא",
+      "name:en": "Elhuda",
+      "name:he": "אלהודא",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-359634712",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "עץ חיים",
+    "lat": 31.9230894,
+    "lng": 34.8735805,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "עץ חיים",
+      "name:en": "Etz Haim",
+      "name:he": "עץ חיים",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-359667124",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "חסד ואמת",
+    "lat": 31.9241058,
+    "lng": 34.870779,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "חסד ואמת",
+      "name:en": "Chesed Ve'emet",
+      "name:he": "חסד ואמת",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-360066885",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "משכן אברהם",
+    "lat": 31.9378261,
+    "lng": 34.8727813,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "משכן אברהם",
+      "name:en": "Mishkan Avraham",
+      "name:he": "משכן אברהם",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-360601692",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "קרית מנחם בגין",
+    "lat": 31.9378641,
+    "lng": 34.876582,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "קרית מנחם בגין",
+      "name:en": "Kiryat Menachem Begin",
+      "name:he": "קרית מנחם בגין",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-384801556",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "היכל ברוך",
+    "lat": 31.9601845,
+    "lng": 34.8764218,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "היכל ברוך",
+      "name:he": "היכל ברוך",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-398890739",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "היכל יונתן",
+    "lat": 31.9601038,
+    "lng": 34.8788986,
+    "address": "תלמים 8, לוד",
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "addr:city": "לוד",
+      "addr:housenumber": "8",
+      "addr:street": "תלמים",
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "היכל יונתן",
+      "name:he": "היכל יונתן",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-416151941",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "בית כנסת של יהודי גיאורגיה",
+    "lat": 31.9519395,
+    "lng": 34.886286,
+    "address": "אלי כהן, Lod",
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "addr:city": "Lod",
+      "addr:street": "אלי כהן",
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "בית כנסת של יהודי גיאורגיה",
+      "name:he": "בית כנסת של יהודי גיאורגיה",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-416151942",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": null,
+    "lat": 31.9523047,
+    "lng": 34.8861453,
+    "address": "אלי כהן, Lod",
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "addr:city": "Lod",
+      "addr:street": "אלי כהן",
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-416151943",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": null,
+    "lat": 31.9525955,
+    "lng": 34.8862099,
+    "address": "אלי כהן, Lod",
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "addr:city": "Lod",
+      "addr:street": "אלי כהן",
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-416151944",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "בית כנסת של עולי הודו",
+    "lat": 31.95267,
+    "lng": 34.8869472,
+    "address": "אלי כהן, Lod",
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "addr:city": "Lod",
+      "addr:street": "אלי כהן",
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "בית כנסת של עולי הודו",
+      "name:he": "בית כנסת של עולי הודו",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-416170421",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": null,
+    "lat": 31.9471262,
+    "lng": 34.8911844,
+    "address": "שדרות דוד המלך 3א, Lod",
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "addr:city": "Lod",
+      "addr:housenumber": "3א",
+      "addr:street": "שדרות דוד המלך",
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-416655224",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": null,
+    "lat": 31.9519648,
+    "lng": 34.8923412,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-417164595",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": null,
+    "lat": 31.9530501,
+    "lng": 34.8924242,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-418126678",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": null,
+    "lat": 31.9492396,
+    "lng": 34.8904994,
+    "address": "אלי כהן, לוד",
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "addr:city": "לוד",
+      "addr:street": "אלי כהן",
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-431954018",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "בית מדרש",
+    "lat": 31.9551239,
+    "lng": 34.9001391,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "בית מדרש",
+      "name:en": "Beit Midrash",
+      "name:he": "בית מדרש",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-431954203",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "ישועה בקרוב",
+    "lat": 31.9447203,
+    "lng": 34.8954404,
+    "address": "גלעד 13, לוד",
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "addr:city": "לוד",
+      "addr:housenumber": "13",
+      "addr:street": "גלעד",
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "ישועה בקרוב",
+      "name:en": "Yeshua Bekarov",
+      "name:he": "ישועה בקרוב",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-431954305",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "שומר ישראל",
+    "lat": 31.9536833,
+    "lng": 34.9029346,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "שומר ישראל",
+      "name:en": "Shomer Israel",
+      "name:he": "שומר ישראל",
+      "name:ru": "Шомер Исраэль",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-431961500",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "אור המזרח",
+    "lat": 31.9539839,
+    "lng": 34.8990408,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "אור המזרח",
+      "name:en": "Or Hamizrach",
+      "name:he": "אור המזרח",
+      "note": "Synagogue of immigrants from India",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-432471041",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "שערי שמים",
+    "lat": 31.9525183,
+    "lng": 34.8999253,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "שערי שמים",
+      "name:en": "Shaarei Shamayim",
+      "name:he": "שערי שמים",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-432817166",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "ההודי",
+    "lat": 31.944545,
+    "lng": 34.8861055,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "ההודי",
+      "name:he": "ההודי",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-432817172",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "מרוקאי-אור החיים",
+    "lat": 31.945025,
+    "lng": 34.8863628,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "מרוקאי-אור החיים",
+      "name:he": "מרוקאי-אור החיים",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-432817182",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "אשכנזי-זכור לאברהם",
+    "lat": 31.9447635,
+    "lng": 34.8862034,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "אשכנזי-זכור לאברהם",
+      "name:he": "אשכנזי-זכור לאברהם",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-432817207",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": null,
+    "lat": 31.9455257,
+    "lng": 34.886405,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-432817233",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "ברסלב",
+    "lat": 31.9458254,
+    "lng": 34.8862261,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "ברסלב",
+      "name:he": "ברסלב",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-432817258",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": null,
+    "lat": 31.9454024,
+    "lng": 34.8862024,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-432817273",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "העיראקי",
+    "lat": 31.9452707,
+    "lng": 34.8864447,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "העיראקי",
+      "name:he": "העיראקי",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-432817308",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "אלגריבה",
+    "lat": 31.9440684,
+    "lng": 34.8853522,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "אלגריבה",
+      "name:he": "אלגריבה",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-434055905",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "בית אריה",
+    "lat": 31.9424747,
+    "lng": 34.8755206,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "בית אריה",
+      "name:he": "בית אריה",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-434760948",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "שבת אחים",
+    "lat": 31.9419153,
+    "lng": 34.8920443,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "alt_name:en": "Shabat Akhim;Shabat Achim",
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "שבת אחים",
+      "name:en": "Shabat Ahim",
+      "name:he": "שבת אחים",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-434761002",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "משכנות ישראל",
+    "lat": 31.9443058,
+    "lng": 34.8916479,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "משכנות ישראל",
+      "name:en": "Mashkenot Israel",
+      "name:he": "משכנות ישראל",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-434761211",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "בת קול",
+    "lat": 31.9417833,
+    "lng": 34.8917675,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "בת קול",
+      "name:en": "Bat Kol",
+      "name:he": "בת קול",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-443083601",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "בית ישראל",
+    "lat": 31.9522232,
+    "lng": 34.896282,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "alt_name:en": "Beit Yisrael",
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "בית ישראל",
+      "name:en": "Beit Israel",
+      "name:he": "בית ישראל",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-448975730",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "בית יוסף",
+    "lat": 31.9437404,
+    "lng": 34.9010143,
+    "address": "בן שמן 4, לוד",
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "addr:city": "לוד",
+      "addr:housenumber": "4",
+      "addr:street": "בן שמן",
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "בית יוסף",
+      "name:en": "Beit Yosef",
+      "name:he": "בית יוסף",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-690148661",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": null,
+    "lat": 31.9400521,
+    "lng": 34.8834213,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-860322834",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "בית המדרש הגדול חניכי הישיבות",
+    "lat": 31.9337304,
+    "lng": 34.898296,
+    "address": "הרב אלישיב 1, לוד",
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "addr:city": "לוד",
+      "addr:housenumber": "1",
+      "addr:street": "הרב אלישיב",
+      "amenity": "place_of_worship",
+      "building": "synagogue",
+      "denomination": "ליטאי_ישיבתי",
+      "name": "בית המדרש הגדול חניכי הישיבות",
+      "name:he": "בית המדרש הגדול חניכי הישיבות",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-921815562",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": null,
+    "lat": 31.9523116,
+    "lng": 34.8595655,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-958583350",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "בית הכנסת בושאייף",
+    "lat": 31.9759004,
+    "lng": 34.8921304,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "בית הכנסת בושאייף",
+      "name:he": "בית הכנסת בושאייף",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-1240412072",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "בית כנסת הספרדי המרכזי - בית כנסת יוצאי חברון",
+    "lat": 31.9344136,
+    "lng": 34.8992339,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "בית כנסת הספרדי המרכזי - בית כנסת יוצאי חברון",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-1240412076",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "בית כנסת \"המרכזי\"",
+    "lat": 31.9339361,
+    "lng": 34.8976681,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "בית כנסת \"המרכזי\"",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-1240412078",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "בית כנסת אוהל ראובן (עדות המזרח)",
+    "lat": 31.9341142,
+    "lng": 34.8974158,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "בית כנסת אוהל ראובן (עדות המזרח)",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-1240412079",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "בית כנסת פרושים",
+    "lat": 31.9338273,
+    "lng": 34.8973332,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "בית כנסת פרושים",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-1240412080",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "בית כנסת דרכי שמואל (עץ)",
+    "lat": 31.9336651,
+    "lng": 34.8972197,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "בית כנסת דרכי שמואל (עץ)",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-1240412081",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "בית כנסת שערי תורה (עדות המזרח)",
+    "lat": 31.9336133,
+    "lng": 34.8973499,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "בית כנסת שערי תורה (עדות המזרח)",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-1240412082",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "בית כנסת שובה ישראל",
+    "lat": 31.9336048,
+    "lng": 34.8975263,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "בית כנסת שובה ישראל",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-1240412083",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "בית כנסת כתר תורה (אברמוב)",
+    "lat": 31.9337307,
+    "lng": 34.8976055,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "בית כנסת כתר תורה (אברמוב)",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-1240412084",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "בית כנסת חב\"ד",
+    "lat": 31.9335166,
+    "lng": 34.8974865,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "בית כנסת חב\"ד",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-1333176568",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": null,
+    "lat": 31.9642652,
+    "lng": 34.9162345,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-1380988057",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "בית הכנסת הגדול תורה ותפילה",
+    "lat": 31.9389852,
+    "lng": 34.9016838,
+    "address": "שבט זבולון",
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "addr:street": "שבט זבולון",
+      "amenity": "place_of_worship",
+      "building": "synagogue",
+      "name": "בית הכנסת הגדול תורה ותפילה",
+      "name:he": "בית הכנסת הגדול תורה ותפילה",
+      "religion": "jewish"
+    }
+  },
+  {
+    "id": "osm-way-1435501143",
+    "source": "OpenStreetMap (Overpass)",
+    "category": "synagogue",
+    "name": "בית כנסת עץ חיים (תימנים)",
+    "lat": 31.9339763,
+    "lng": 34.8973783,
+    "address": null,
+    "phone": null,
+    "openingHours": null,
+    "raw": {
+      "amenity": "place_of_worship",
+      "building": "yes",
+      "name": "בית כנסת עץ חיים (תימנים)",
+      "religion": "jewish"
+    }
+  }
+]

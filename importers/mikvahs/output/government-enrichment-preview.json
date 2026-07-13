@@ -1,0 +1,642 @@
+[
+  {
+    "govSourceId": "mikveh-51",
+    "govName": "מקווה רמות 1",
+    "govCity": "באר שבע",
+    "matchedBy": "address-partial",
+    "matchedSabId": "rc-mikvah-beer-sheva-hx587lr",
+    "confidence": 0.8,
+    "fields": [
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://mdb7.org.il/directory-mikvah/listing/מקווה-רמות-1/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-53",
+    "govName": "רמות 2",
+    "govCity": "באר שבע",
+    "matchedBy": "address-exact",
+    "matchedSabId": "rc-mikvah-beer-sheva-h1uwfhwb",
+    "confidence": 0.92,
+    "fields": [
+      {
+        "field": "coordinates",
+        "current": "31.2457442,34.7925181 (city)",
+        "proposed": "31.284363,34.804724"
+      },
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://mdb7.org.il/directory-mikvah/listing/מקווה-רמות-2/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-48",
+    "govName": "מקווה מי מרום",
+    "govCity": "באר שבע",
+    "matchedBy": "address-exact",
+    "matchedSabId": "rc-mikvah-beer-sheva-hcgzkwf",
+    "confidence": 0.92,
+    "fields": [
+      {
+        "field": "coordinates",
+        "current": "31.2457442,34.7925181 (city)",
+        "proposed": "31.238527,34.764432"
+      },
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://mdb7.org.il/directory-mikvah/listing/מקווה-מי-מרום/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-47",
+    "govName": "מקווה כלניות",
+    "govCity": "באר שבע",
+    "matchedBy": "address-exact",
+    "matchedSabId": "rc-mikvah-beer-sheva-ho2ro6h",
+    "confidence": 0.92,
+    "fields": [
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://mdb7.org.il/directory-mikvah/listing/מקווה-כלניות/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-45",
+    "govName": "מקווה חצרים",
+    "govCity": "באר שבע",
+    "matchedBy": "address-exact",
+    "matchedSabId": "rc-mikvah-beer-sheva-hm7wszh",
+    "confidence": 0.92,
+    "fields": [
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://mdb7.org.il/directory-mikvah/listing/מקווה-חצרים/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-49",
+    "govName": "מקווה נאות לון",
+    "govCity": "באר שבע",
+    "matchedBy": "address-partial",
+    "matchedSabId": "rc-mikvah-beer-sheva-h1hrduj4",
+    "confidence": 0.8,
+    "fields": [
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://mdb7.org.il/directory-mikvah/listing/מקווה-נאות-לון/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-52",
+    "govName": "מקווה שאול המלך",
+    "govCity": "באר שבע",
+    "matchedBy": "address-exact",
+    "matchedSabId": "rc-mikvah-beer-sheva-h6je8am",
+    "confidence": 0.92,
+    "fields": [
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://mdb7.org.il/directory-mikvah/listing/מקווה-שאול-המלך/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-46",
+    "govName": "מקווה י\"א",
+    "govCity": "באר שבע",
+    "matchedBy": "address-exact",
+    "matchedSabId": "rc-mikvah-beer-sheva-hsxwc55",
+    "confidence": 0.92,
+    "fields": [
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://mdb7.org.il/directory-mikvah/listing/מקווה-יא/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-43",
+    "govName": "מקווה ה",
+    "govCity": "באר שבע",
+    "matchedBy": "address-partial",
+    "matchedSabId": "rc-mikvah-beer-sheva-hm5zchq",
+    "confidence": 0.8,
+    "fields": [
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://mdb7.org.il/directory-mikvah/listing/מקווה-ה/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-41",
+    "govName": "מקווה ד מרכז",
+    "govCity": "באר שבע",
+    "matchedBy": "address-partial",
+    "matchedSabId": "rc-mikvah-beer-sheva-h1byn29v",
+    "confidence": 0.8,
+    "fields": [
+      {
+        "field": "coordinates",
+        "current": "31.2457442,34.7925181 (city)",
+        "proposed": "31.260925,34.795742"
+      },
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://mdb7.org.il/directory-mikvah/listing/מקווה-ד-מרכז/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-42",
+    "govName": "מקווה ד צפון",
+    "govCity": "באר שבע",
+    "matchedBy": "address-partial",
+    "matchedSabId": "rc-mikvah-beer-sheva-hzgszqm",
+    "confidence": 0.8,
+    "fields": [
+      {
+        "field": "coordinates",
+        "current": "31.2457442,34.7925181 (city)",
+        "proposed": "31.271662,34.791974"
+      },
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://mdb7.org.il/directory-mikvah/listing/מקווה-ד-צפון/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-39",
+    "govName": "מקווה א",
+    "govCity": "באר שבע",
+    "matchedBy": "address-exact",
+    "matchedSabId": "rc-mikvah-beer-sheva-h9ys06e",
+    "confidence": 0.92,
+    "fields": [
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://mdb7.org.il/directory-mikvah/listing/מקווה-א/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-479",
+    "govName": "מקווה רש\"י",
+    "govCity": "ראש העין",
+    "matchedBy": "name",
+    "matchedSabId": "rc-mikvah-rosh-haayin-hv400s6",
+    "confidence": 0.75,
+    "fields": [
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://mdrh.org.il/directory-mikvah/listing/מקווה-רשי/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-477",
+    "govName": "מקווה הרש\"ש",
+    "govCity": "ראש העין",
+    "matchedBy": "coords-exact",
+    "matchedSabId": "rc-mikvah-rosh-haayin-h17kuhm3",
+    "confidence": 0.95,
+    "fields": [
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://mdrh.org.il/directory-mikvah/listing/מקווה-הרשש/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-265",
+    "govName": "גני יער",
+    "govCity": "לוד",
+    "matchedBy": "coords-near",
+    "matchedSabId": "rc-mikvah-lod-h12jfuoh",
+    "confidence": 0.85,
+    "fields": [
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://mdlod.org.il/directory-mikvah/listing/מקווה-נשים-גני-יער/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-266",
+    "govName": "חב\"ד",
+    "govCity": "לוד",
+    "matchedBy": "name",
+    "matchedSabId": "rc-mikvah-lod-hfo6nr",
+    "confidence": 0.75,
+    "fields": [
+      {
+        "field": "coordinates",
+        "current": "31.9489012,34.8884857 (city)",
+        "proposed": "31.942892,34.877522"
+      },
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://mdlod.org.il/directory-mikvah/listing/מקווה-נשים-חבד/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-264",
+    "govName": "גני אביב",
+    "govCity": "לוד",
+    "matchedBy": "coords-exact",
+    "matchedSabId": "rc-mikvah-lod-hi49m5",
+    "confidence": 0.95,
+    "fields": [
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://mdlod.org.il/directory-mikvah/listing/מקווה-נשים-גני-אביב/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-267",
+    "govName": "נאות יצחק",
+    "govCity": "לוד",
+    "matchedBy": "coords-exact",
+    "matchedSabId": "rc-mikvah-lod-h10zhdmv",
+    "confidence": 0.95,
+    "fields": [
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://mdlod.org.il/directory-mikvah/listing/מקווה-נשים-נאות-יצחק/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-263",
+    "govName": "גבעת זיתים",
+    "govCity": "לוד",
+    "matchedBy": "coords-exact",
+    "matchedSabId": "rc-mikvah-lod-hqdn69v",
+    "confidence": 0.95,
+    "fields": [
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://mdlod.org.il/directory-mikvah/listing/מקווה-נשים-גבעת-הזיתים/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-212",
+    "govName": "טהרת ציון (הפארק)",
+    "govCity": "חדרה",
+    "matchedBy": "address-exact",
+    "matchedSabId": "rc-mikvah-hadera-hw76yh",
+    "confidence": 0.92,
+    "fields": [
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://haderamd.org.il/directory-mikvah/listing/מקווה-נשים-טהרת-ציון-הפארק/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-213",
+    "govName": "מעלות אסתר (נווה חיים חדרה)",
+    "govCity": "חדרה",
+    "matchedBy": "address-exact",
+    "matchedSabId": "rc-mikvah-hadera-hpwzt9g",
+    "confidence": 0.92,
+    "fields": [
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://haderamd.org.il/directory-mikvah/listing/מקווה-נשים-גני-אביב/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-215",
+    "govName": "מקווה גבעת אולגה",
+    "govCity": "חדרה",
+    "matchedBy": "coords-near",
+    "matchedSabId": "rc-mikvah-hadera-htowmf7",
+    "confidence": 0.85,
+    "fields": [
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://haderamd.org.il/directory-mikvah/listing/מקווה-נשים-נאות-יצחק/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-208",
+    "govName": "בית אליעזר",
+    "govCity": "חדרה",
+    "matchedBy": "coords-near",
+    "matchedSabId": "rc-mikvah-hadera-h11thfz8",
+    "confidence": 0.85,
+    "fields": [
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://haderamd.org.il/directory-mikvah/listing/מקווה-נשים-בית-אליעזר/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-217",
+    "govName": "מקווה מרכזי חדרה",
+    "govCity": "חדרה",
+    "matchedBy": "coords-exact",
+    "matchedSabId": "rc-mikvah-hadera-h1766xat",
+    "confidence": 0.95,
+    "fields": [
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://haderamd.org.il/directory-mikvah/listing/מקווה-נשים-גבעת-הזיתים/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-184",
+    "govName": "מקווה פיתוח",
+    "govCity": "הרצליה",
+    "matchedBy": "coords-exact",
+    "matchedSabId": "rc-mikvah-herzliya-h1jkcwkz",
+    "confidence": 0.95,
+    "fields": [
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://mdh.org.il/directory-mikvah/listing/מקווה-הרצליה-פיתוח-נשים/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-181",
+    "govName": "מקווה יתד",
+    "govCity": "הרצליה",
+    "matchedBy": "coords-exact",
+    "matchedSabId": "rc-mikvah-herzliya-hczt1iw",
+    "confidence": 0.95,
+    "fields": [
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://mdh.org.il/directory-mikvah/listing/מקווה-הרצליה-ב-נשים/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-183",
+    "govName": "מקווה נווה עמל",
+    "govCity": "הרצליה",
+    "matchedBy": "coords-near",
+    "matchedSabId": "rc-mikvah-herzliya-hfu1yqr",
+    "confidence": 0.85,
+    "fields": [
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://mdh.org.il/directory-mikvah/listing/מקווה-נווה-עמל-נשים/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-185",
+    "govName": "שביב",
+    "govCity": "הרצליה",
+    "matchedBy": "coords-near",
+    "matchedSabId": "rc-mikvah-herzliya-h1t42g70",
+    "confidence": 0.85,
+    "fields": [
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://mdh.org.il/directory-mikvah/listing/מקווה-שביב-נשים/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-182",
+    "govName": "מקווה מרכזי סירקין",
+    "govCity": "הרצליה",
+    "matchedBy": "address-partial",
+    "matchedSabId": "rc-mikvah-herzliya-hauy55h",
+    "confidence": 0.8,
+    "fields": [
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://mdh.org.il/directory-mikvah/listing/מקווה-מרכזי-נשים/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-123",
+    "govName": "גבעון",
+    "govCity": "גבעת זאב",
+    "matchedBy": "name",
+    "matchedSabId": "rc-mikvah-givat-zeev-htj9kyo",
+    "confidence": 0.75,
+    "fields": [
+      {
+        "field": "coordinates",
+        "current": null,
+        "proposed": "31.848827,35.1716"
+      },
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://mdgz.org/directory-mikvah/listing/מקווה-גבעון/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-124",
+    "govName": "נווה מנחם",
+    "govCity": "גבעת זאב",
+    "matchedBy": "name",
+    "matchedSabId": "rc-mikvah-givat-zeev-hed7xe9",
+    "confidence": 0.75,
+    "fields": [
+      {
+        "field": "coordinates",
+        "current": null,
+        "proposed": "31.863161,35.177175"
+      },
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://mdgz.org/directory-mikvah/listing/מקווה-נווה-מנחם/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-125",
+    "govName": "עמק איילון",
+    "govCity": "גבעת זאב",
+    "matchedBy": "name",
+    "matchedSabId": "rc-mikvah-givat-zeev-hbozdz4",
+    "confidence": 0.75,
+    "fields": [
+      {
+        "field": "coordinates",
+        "current": null,
+        "proposed": "31.861781,35.165688"
+      },
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://mdgz.org/directory-mikvah/listing/מקווה-עמק-איילון/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-126",
+    "govName": "הולצברג",
+    "govCity": "גבעת שמואל",
+    "matchedBy": "coords-exact",
+    "matchedSabId": "rc-mikvah-givat-shmuel-11792",
+    "confidence": 0.95,
+    "fields": [
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://mdgs.org.il/directory-mikvah/listing/מקווה-כלים-הולצברג/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-127",
+    "govName": "נימרובר",
+    "govCity": "גבעת שמואל",
+    "matchedBy": "phone+context",
+    "matchedSabId": "rc-mikvah-givat-shmuel-11705",
+    "confidence": 0.97,
+    "fields": [
+      {
+        "field": "coordinates",
+        "current": "32.0769463,34.8524656 (city)",
+        "proposed": "32.077299,34.849206"
+      },
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://mdgs.org.il/directory-mikvah/listing/מקווה-נימרובר/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-127",
+    "govName": "נימרובר",
+    "govCity": "גבעת שמואל",
+    "matchedBy": "address-partial",
+    "matchedSabId": "rc-mikvah-givat-shmuel-11791",
+    "confidence": 0.8,
+    "fields": [
+      {
+        "field": "coordinates",
+        "current": "32.0769463,34.8524656 (city)",
+        "proposed": "32.076266,34.848339"
+      },
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://mdgs.org.il/directory-mikvah/listing/מקווה-כלים-נימרובר/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-126",
+    "govName": "הולצברג",
+    "govCity": "גבעת שמואל",
+    "matchedBy": "phone+context",
+    "matchedSabId": "rc-mikvah-givat-shmuel-11703",
+    "confidence": 0.97,
+    "fields": [
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://mdgs.org.il/directory-mikvah/listing/מקווה-שמחה-הולצברג/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-126",
+    "govName": "הולצברג",
+    "govCity": "גבעת שמואל",
+    "matchedBy": "coords-exact",
+    "matchedSabId": "rc-mikvah-givat-shmuel-11783",
+    "confidence": 0.95,
+    "fields": [
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://mdgs.org.il/directory-mikvah/listing/מקווה-גברים/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-553",
+    "govName": "הברוש",
+    "govCity": "שדרות",
+    "matchedBy": "coords-near",
+    "matchedSabId": "rc-mikvah-sderot-h1f7jrl1",
+    "confidence": 0.85,
+    "fields": [
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://mdsderot.org.il/directory-mikvah/listing/מקווה-נשים-הרב-יורם-אברגל/"
+      }
+    ]
+  },
+  {
+    "govSourceId": "mikveh-554",
+    "govName": "מקווה רחל אמנו",
+    "govCity": "שדרות",
+    "matchedBy": "name",
+    "matchedSabId": "rc-mikvah-sderot-hplfo7o",
+    "confidence": 0.75,
+    "fields": [
+      {
+        "field": "coordinates",
+        "current": "31.526474,34.5969696 (city)",
+        "proposed": "31.527315,34.601558"
+      },
+      {
+        "field": "sourceUrl",
+        "current": null,
+        "proposed": "https://mdsderot.org.il/directory-mikvah/listing/מקווה-נשים-גבעת-הזיתים/"
+      }
+    ]
+  }
+]

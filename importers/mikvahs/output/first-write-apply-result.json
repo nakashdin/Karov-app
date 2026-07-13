@@ -1,0 +1,42 @@
+{
+  "status": "SUCCESS",
+  "writtenAt": "(local generated app data only; no external publish)",
+  "backups": {
+    "places": "C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\places.osm.pre-council-mikveh.backup.json",
+    "cities": "C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\cities.osm.pre-council-mikveh.backup.json"
+  },
+  "filesModified": [
+    "src/data/generated/places.osm.json",
+    "src/data/generated/cities.osm.json",
+    "importers/shared/database.ts (APP_TYPES += mikveh)",
+    "src/types/place.ts (Phase 12, prior)"
+  ],
+  "counts": {
+    "placesBefore": 3555,
+    "placesAfter": 3616,
+    "added": 61,
+    "mikvehBefore": 470,
+    "mikvehAfter": 531,
+    "existingLost": 0,
+    "existingModified": 0
+  },
+  "newRecordsPreservedFields": {
+    "mikvehGender": 25,
+    "attendant": 11,
+    "sourceUrl": 61,
+    "sourceName": 61,
+    "extra": 61
+  },
+  "citiesBefore": 463,
+  "citiesAfter": 463,
+  "reconciliation": "EXACT: before + 61 = after; 0 existing lost; 0 existing modified.",
+  "rollback": [
+    "copy C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\places.osm.pre-council-mikveh.backup.json → C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\places.osm.json",
+    "copy C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\cities.osm.pre-council-mikveh.backup.json → C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\cities.osm.json",
+    "revert database.ts APP_TYPES (remove 'mikveh')",
+    "(src/types/place.ts change is additive/optional — safe to keep or revert)"
+  ],
+  "dryRun": false,
+  "publishPerformed": false,
+  "additiveOnly": true
+}

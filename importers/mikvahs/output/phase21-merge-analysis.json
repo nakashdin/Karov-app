@@ -1,0 +1,569 @@
+[
+  {
+    "cityKey": "bneibrak",
+    "name": "מקווה ויז'ניץ",
+    "address": "רבינא 14, בני ברק",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-85 (ויזניץ) by street \"רבינא 14\"",
+    "matchedLiveId": "mikveh-85"
+  },
+  {
+    "cityKey": "bneibrak",
+    "name": "מקווה זכרון מאיר",
+    "address": "חפץ חיים 7, בני ברק",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-86 (חפץ חיים) by street \"חפץ חיים 7\"",
+    "matchedLiveId": "mikveh-86"
+  },
+  {
+    "cityKey": "bneibrak",
+    "name": "מקווה מי נחת",
+    "address": "אחיה השילוני 4, בני ברק",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-83 (אחיה השילוני) by street \"אחיה השילוני 4\"",
+    "matchedLiveId": "mikveh-83"
+  },
+  {
+    "cityKey": "bneibrak",
+    "name": "מקווה מרכז",
+    "address": "קאליש 14, בני ברק",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-91 (קאליש) by street \"קאליש 14\"",
+    "matchedLiveId": "mikveh-91"
+  },
+  {
+    "cityKey": "bneibrak",
+    "name": "מקווה נווה אחיעזר",
+    "address": "נחשוני 28, בני ברק",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-88 (נווה אחיעזר) by street \"נחשוני 28\"",
+    "matchedLiveId": "mikveh-88"
+  },
+  {
+    "cityKey": "bneibrak",
+    "name": "מקווה קריית הרצוג",
+    "address": "נויפלד 15, בני ברק",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-89 (נויפלד) by street \"נויפלד 15\"",
+    "matchedLiveId": "mikveh-89"
+  },
+  {
+    "cityKey": "bneibrak",
+    "name": "מקווה רמת אלחנן",
+    "address": "אבני נזר 13, בני ברק",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-92 (רמת אלחנן) by name token [רמת,אלחנן]",
+    "matchedLiveId": "mikveh-92"
+  },
+  {
+    "cityKey": "bneibrak",
+    "name": "מקווה שיכון ג'",
+    "address": "בארי 7, בני ברק",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-84 (בארי) by street \"בארי 7\"",
+    "matchedLiveId": "mikveh-84"
+  },
+  {
+    "cityKey": "bneibrak",
+    "name": "מקווה סוקולוב",
+    "address": "אבן שפרוט 4, בני ברק",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-90 (סוקולוב) by street \"אבן שפרוט 4\"",
+    "matchedLiveId": "mikveh-90"
+  },
+  {
+    "cityKey": "beitarillit",
+    "name": "מקווה אמרי סופר",
+    "address": "אמרי סופר 3, ביתר עילית",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-75 (אמרי סופר) by street \"אמרי סופר 3\"",
+    "matchedLiveId": "mikveh-75"
+  },
+  {
+    "cityKey": "bneibrak",
+    "name": "מקווה פרדס כץ",
+    "address": "דנגור 12, בני ברק",
+    "geo": "דנגור 12, בני ברק",
+    "phone": "035790636",
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.09588255314052,
+      "longitude": 34.830919289393506
+    },
+    "disposition": "duplicate",
+    "reason": "geo-duplicate of live mikveh-87 (114m)",
+    "matchedLiveId": "mikveh-87"
+  },
+  {
+    "cityKey": "bneibrak",
+    "name": "מקווה שיכון ה'",
+    "address": "זבולון המר 13, בני ברק",
+    "geo": "זבולון המר 13, בני ברק",
+    "phone": "035794661",
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.089623293857734,
+      "longitude": 34.84232790410763
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "cityKey": "bneibrak",
+    "name": "מקווה הסופרים",
+    "address": "רחוב הסופרים (מתחת לגשר), בני ברק",
+    "geo": "הסופרים, בני ברק",
+    "phone": "0533121976",
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "no-house-number",
+    "hasCoords": false,
+    "location": null,
+    "disposition": "excluded",
+    "reason": "no address-level coordinate (no-house-number)",
+    "matchedLiveId": null
+  },
+  {
+    "cityKey": "modiinillit",
+    "name": "מקווה נשים מסילת יוסף",
+    "address": "מסילת יוסף 13, מודיעין עילית",
+    "geo": "מסילת יוסף 13, מודיעין עילית",
+    "phone": "089741758",
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.928839039655603,
+      "longitude": 35.04276133301252
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "cityKey": "modiinillit",
+    "name": "מקווה נשים אבני נזר",
+    "address": "אבני נזר 14, מודיעין עילית",
+    "geo": "אבני נזר 14, מודיעין עילית",
+    "phone": "089740156",
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.934464750801887,
+      "longitude": 35.04198222949125
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "cityKey": "modiinillit",
+    "name": "מקווה נשים שדרות יחזקאל",
+    "address": "שדרות יחזקאל 33, מודיעין עילית",
+    "geo": "יחזקאל 33, מודיעין עילית",
+    "phone": "089743656",
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "govmap-no-match",
+    "hasCoords": false,
+    "location": null,
+    "disposition": "excluded",
+    "reason": "no address-level coordinate (govmap-no-match)",
+    "matchedLiveId": null
+  },
+  {
+    "cityKey": "modiinillit",
+    "name": "מקווה נשים יהודה הנשיא",
+    "address": "יהודה הנשיא 26 א, מודיעין עילית",
+    "geo": "יהודה הנשיא 26, מודיעין עילית",
+    "phone": "089742091",
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.93818058627961,
+      "longitude": 35.044859006242696
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "cityKey": "modiinillit",
+    "name": "מקווה נשים אלישיב",
+    "address": "אלישיב 23, מודיעין עילית",
+    "geo": "אלישיב 23, מודיעין עילית",
+    "phone": "089740578",
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "govmap-no-match",
+    "hasCoords": false,
+    "location": null,
+    "disposition": "excluded",
+    "reason": "no address-level coordinate (govmap-no-match)",
+    "matchedLiveId": null
+  },
+  {
+    "cityKey": "modiinillit",
+    "name": "מקווה נשים נאות הפסגה",
+    "address": "הריטב\"א 4, מודיעין עילית",
+    "geo": "הריטבא 4, מודיעין עילית",
+    "phone": "089745035",
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.92745980974869,
+      "longitude": 35.04552037548291
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "cityKey": "modiinillit",
+    "name": "מקווה נשים חזון דוד",
+    "address": "חזון דוד 19, מודיעין עילית",
+    "geo": "חזון דוד 19, מודיעין עילית",
+    "phone": "089741839",
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.924023646656934,
+      "longitude": 35.04054753093898
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "cityKey": "modiinillit",
+    "name": "מקווה גברים אבני נזר",
+    "address": "אבני נזר 16, מודיעין עילית",
+    "geo": "אבני נזר 16, מודיעין עילית",
+    "phone": null,
+    "gender": "גברים",
+    "accessibility": null,
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.934426201040527,
+      "longitude": 35.041893085193095
+    },
+    "disposition": "duplicate",
+    "reason": "within-batch same building as \"מקווה נשים אבני נזר\" (gender variant collapsed)",
+    "matchedLiveId": null
+  },
+  {
+    "cityKey": "modiinillit",
+    "name": "מקווה גברים קהילות יעקב",
+    "address": "קהילות יעקב 1, מודיעין עילית",
+    "geo": "קהילות יעקב 1, מודיעין עילית",
+    "phone": null,
+    "gender": "גברים",
+    "accessibility": null,
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.922594572990285,
+      "longitude": 35.05037542031131
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "cityKey": "modiinillit",
+    "name": "מקווה גברים זכרון דוד",
+    "address": "שדי חמד 13, מודיעין עילית",
+    "geo": "שדי חמד 13, מודיעין עילית",
+    "phone": null,
+    "gender": "גברים",
+    "accessibility": null,
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.933329207912497,
+      "longitude": 35.04206271018249
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "cityKey": "modiinillit",
+    "name": "מקווה גברים היכל יהושע",
+    "address": "רשב\"י 21, מודיעין עילית",
+    "geo": "רבי שמעון בר יוחאי 21, מודיעין עילית",
+    "phone": null,
+    "gender": "גברים",
+    "accessibility": null,
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.937615342530112,
+      "longitude": 35.04093697816328
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "cityKey": "modiinillit",
+    "name": "מקווה כלים אבני נזר 46",
+    "address": "אבני נזר 46, מודיעין עילית",
+    "geo": "אבני נזר 46, מודיעין עילית",
+    "phone": null,
+    "gender": "כלים",
+    "accessibility": null,
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.929805192965382,
+      "longitude": 35.03796806482275
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "cityKey": "beitarillit",
+    "name": "מקווה הבעש\"ט",
+    "address": "הבעש\"ט 8, ביתר עילית",
+    "geo": "הבעשט 8, ביתר עילית",
+    "phone": "025806059",
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.696481327355254,
+      "longitude": 35.122231968646624
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "cityKey": "beitarillit",
+    "name": "מקווה אריאלי",
+    "address": "אריאלי 3, ביתר עילית",
+    "geo": "אריאלי 3, ביתר עילית",
+    "phone": "025808444",
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.69421178724213,
+      "longitude": 35.118651504150826
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "cityKey": "beitarillit",
+    "name": "מקווה קנייבסקי",
+    "address": "קנייבסקי 9, ביתר עילית",
+    "geo": "קנייבסקי 9, ביתר עילית",
+    "phone": "025725649",
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.694122639086686,
+      "longitude": 35.10984908632962
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "cityKey": "beitarillit",
+    "name": "מקווה ברים",
+    "address": "ברים 7, ביתר עילית",
+    "geo": "ברים 7, ביתר עילית",
+    "phone": "025800669",
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.703317393278397,
+      "longitude": 35.115802936637714
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "cityKey": "beitarillit",
+    "name": "מקווה מוצפי",
+    "address": "מוצפי 35, ביתר עילית",
+    "geo": "מוצפי 35, ביתר עילית",
+    "phone": "026507450",
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "govmap-no-match",
+    "hasCoords": false,
+    "location": null,
+    "disposition": "excluded",
+    "reason": "no address-level coordinate (govmap-no-match)",
+    "matchedLiveId": null
+  },
+  {
+    "cityKey": "beitarillit",
+    "name": "מקווה הרב שך",
+    "address": "הרב שך 80, ביתר עילית",
+    "geo": "הרב שך 80, ביתר עילית",
+    "phone": "025488352",
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.69818972255456,
+      "longitude": 35.09588941499567
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "cityKey": "beitarillit",
+    "name": "מקווה קדושת לוי",
+    "address": "קדושת לוי, ביתר עילית",
+    "geo": "קדושת לוי, ביתר עילית",
+    "phone": "025807722",
+    "gender": "נשים",
+    "accessibility": "מונגש לבעלי מוגבלויות (בתיאום מראש)",
+    "coordSource": "no-house-number",
+    "hasCoords": false,
+    "location": null,
+    "disposition": "excluded",
+    "reason": "no address-level coordinate (no-house-number)",
+    "matchedLiveId": null
+  },
+  {
+    "cityKey": "elad",
+    "name": "מקווה חוני המעגל",
+    "address": "חוני המעגל 8, אלעד",
+    "geo": "חוני המעגל 8, אלעד",
+    "phone": "039096319",
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "govmap-no-match",
+    "hasCoords": false,
+    "location": null,
+    "disposition": "excluded",
+    "reason": "flagged closed for renovations by the council",
+    "matchedLiveId": null
+  },
+  {
+    "cityKey": "elad",
+    "name": "מקווה ניסים גאון",
+    "address": "ניסים גאון 39, אלעד",
+    "geo": "ניסים גאון 39, אלעד",
+    "phone": "039095079",
+    "gender": "נשים",
+    "accessibility": "נגיש",
+    "coordSource": "govmap-no-match",
+    "hasCoords": false,
+    "location": null,
+    "disposition": "excluded",
+    "reason": "no address-level coordinate (govmap-no-match)",
+    "matchedLiveId": null
+  },
+  {
+    "cityKey": "elad",
+    "name": "מקווה בן עוזיאל",
+    "address": "בן עוזיאל 13, אלעד",
+    "geo": "בן עוזיאל 13, אלעד",
+    "phone": "039090513",
+    "gender": "נשים",
+    "accessibility": "נגיש",
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.04906986659931,
+      "longitude": 34.9578359897811
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "cityKey": "elad",
+    "name": "מקווה הרי\"ף",
+    "address": "הרי\"ף 31, אלעד",
+    "geo": "הריף 31, אלעד",
+    "phone": "039325733",
+    "gender": "נשים",
+    "accessibility": "נגיש",
+    "coordSource": "govmap-no-match",
+    "hasCoords": false,
+    "location": null,
+    "disposition": "excluded",
+    "reason": "no address-level coordinate (govmap-no-match)",
+    "matchedLiveId": null
+  },
+  {
+    "cityKey": "elad",
+    "name": "מקווה אבטליון",
+    "address": "אבטליון 14, אלעד",
+    "geo": "אבטליון 14, אלעד",
+    "phone": "039095744",
+    "gender": "נשים",
+    "accessibility": "נגיש + מעלון",
+    "coordSource": "govmap-no-match",
+    "hasCoords": false,
+    "location": null,
+    "disposition": "excluded",
+    "reason": "no address-level coordinate (govmap-no-match)",
+    "matchedLiveId": null
+  },
+  {
+    "cityKey": "elad",
+    "name": "מקווה גברים ר' מאיר",
+    "address": "ר' מאיר 17, אלעד",
+    "geo": "מאיר 17, אלעד",
+    "phone": null,
+    "gender": "גברים",
+    "accessibility": null,
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.05002900112115,
+      "longitude": 34.95607628379309
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  }
+]

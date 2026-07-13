@@ -1,0 +1,2256 @@
+[
+  {
+    "id": "rc-netanya-12566",
+    "name": "אגודת ישראל",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "7 מאירוביץ', נתניה, Israel",
+    "location": {
+      "latitude": 32.326591,
+      "longitude": 34.85673
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/אגודת-ישראל/"
+    },
+    "phone": "0522778536",
+    "nusach": "אשכנז"
+  },
+  {
+    "id": "rc-netanya-12567",
+    "name": "אהבת ציון",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "12 טשרניחובסקי, נתניה, Israel",
+    "location": {
+      "latitude": 32.321644,
+      "longitude": 34.853781
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/אהבת-ציון/"
+    },
+    "phone": "0544208191",
+    "nusach": "אשכנז"
+  },
+  {
+    "id": "rc-netanya-12568",
+    "name": "אהבת שלום",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "הביכורים, נתניה, Israel",
+    "location": {
+      "latitude": 32.350082,
+      "longitude": 34.857597
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/אהבת-שלום/"
+    },
+    "phone": "0526605641",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12569",
+    "name": "אהל בנימין",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "תשרי, נתניה, Israel",
+    "location": {
+      "latitude": 32.296121,
+      "longitude": 34.870988
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/אהל-בנימין/"
+    },
+    "phone": "0528523403"
+  },
+  {
+    "id": "rc-netanya-12570",
+    "name": "אהל משה - עדות מזרחם",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "4 חת\"ם סופר, נתניה, Israel",
+    "location": {
+      "latitude": 32.312136,
+      "longitude": 34.856791
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/אהל-משה-עדות-מזרחם/"
+    },
+    "phone": "0524340206",
+    "nusach": "ירושלמי"
+  },
+  {
+    "id": "rc-netanya-12571",
+    "name": "אהל משה - תימנים",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "חת\"ם סופר, נתניה, Israel",
+    "location": {
+      "latitude": 32.311567,
+      "longitude": 34.857838
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/אהל-משה-תימנים/"
+    },
+    "phone": "0528628259",
+    "nusach": "תימני"
+  },
+  {
+    "id": "rc-netanya-12573",
+    "name": "אהל עמרם",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "13 הבונים, נתניה, Israel",
+    "location": {
+      "latitude": 32.279547,
+      "longitude": 34.863086
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/אהל-עמרם/"
+    },
+    "phone": "0507608811",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12574",
+    "name": "אהל שלמה - חב\"ד",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "1 הזית, נתניה, Israel",
+    "location": {
+      "latitude": 32.349991,
+      "longitude": 34.862711
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/אהל-שלמה-חבד/"
+    },
+    "phone": "0556644725",
+    "nusach": "אשכנז"
+  },
+  {
+    "id": "rc-netanya-12575",
+    "name": "אהל יונתן",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "6 אייזיק רמבה, נתניה, Israel",
+    "location": {
+      "latitude": 32.321458,
+      "longitude": 34.853196
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/אהל-יונתן/"
+    },
+    "phone": "0528531010"
+  },
+  {
+    "id": "rc-netanya-12576",
+    "name": "אור הדרך",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "37 הרטום, נתניה, Israel",
+    "location": {
+      "latitude": 32.310628,
+      "longitude": 34.871615
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/אור-הדרך/"
+    },
+    "phone": "0546363813"
+  },
+  {
+    "id": "rc-netanya-12578",
+    "name": "אורות קרית השרון",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "זבולון, נתניה, Israel",
+    "location": {
+      "latitude": 32.300356,
+      "longitude": 34.871517
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/אורות-קרית-השרון/"
+    },
+    "phone": "0524578859",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12579",
+    "name": "אור לציון",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "4 הגר\"א, נתניה, Israel",
+    "location": {
+      "latitude": 32.309555,
+      "longitude": 34.85595
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/אור-לציון/"
+    },
+    "phone": "0542450005"
+  },
+  {
+    "id": "rc-netanya-12580",
+    "name": "אחים עמרני",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "8 חיים ארלוזורוב, נתניה, Israel",
+    "location": {
+      "latitude": 32.311778,
+      "longitude": 34.879506
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/אחים-עמרני/"
+    },
+    "phone": "0543456483",
+    "nusach": "תימני"
+  },
+  {
+    "id": "rc-netanya-12581",
+    "name": "אלי כהן",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "אריה לוין, נתניה, Israel",
+    "location": {
+      "latitude": 32.278985,
+      "longitude": 34.854875
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/אלי-כהן/"
+    },
+    "phone": "0506617684",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12582",
+    "name": "אם הבנים",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "2 ליאון רייך, נתניה, Israel",
+    "location": {
+      "latitude": 32.340552,
+      "longitude": 34.858321
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/אם-הבנים/"
+    },
+    "phone": "0522763072",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12584",
+    "name": "אמרי חיים ויזניץ",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "12 אברהם שפירא, נתניה, Israel",
+    "location": {
+      "latitude": 32.32344,
+      "longitude": 34.858324
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/אמרי-חיים-ויזניץ/"
+    },
+    "phone": "0548421273"
+  },
+  {
+    "id": "rc-netanya-12585",
+    "name": "תפארת פנחס",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "12 אברהם שפירא, נתניה, Israel",
+    "location": {
+      "latitude": 32.32344,
+      "longitude": 34.858324
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/תפארת-פנחס/"
+    },
+    "phone": "0544285468"
+  },
+  {
+    "id": "rc-netanya-12586",
+    "name": "אשל אברהם",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "8 עזרא, נתניה, Israel",
+    "location": {
+      "latitude": 32.299058,
+      "longitude": 34.858898
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/אשל-אברהם/"
+    },
+    "phone": "0524447084",
+    "nusach": "תימני"
+  },
+  {
+    "id": "rc-netanya-12587",
+    "name": "באר חיה - חב\"ד",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "1 מאיר בר אילן, נתניה, Israel",
+    "location": {
+      "latitude": 32.337805,
+      "longitude": 34.861302
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/באר-חיה-חבד/"
+    },
+    "phone": "0548167709",
+    "nusach": "אשכנזי"
+  },
+  {
+    "id": "rc-netanya-12589",
+    "name": "באר חנה",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "מעפילי אגוז, נתניה, Israel",
+    "location": {
+      "latitude": 32.274331,
+      "longitude": 34.848553
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/באר-חנה/"
+    },
+    "phone": "0505985222",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12590",
+    "name": "בושאיוף",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "29 עזרא, נתניה, Israel",
+    "location": {
+      "latitude": 32.297577,
+      "longitude": 34.857728
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/בושאיוף/"
+    },
+    "phone": "0523543648",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12591",
+    "name": "בית אל",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "4 אברהם קריניצי, נתניה, Israel",
+    "location": {
+      "latitude": 32.293909,
+      "longitude": 34.849664
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/בית-אל/"
+    },
+    "phone": "0502758351",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12592",
+    "name": "בית אל-2",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "ההסתדרות, נתניה, Israel",
+    "location": {
+      "latitude": 32.334162,
+      "longitude": 34.855743
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/בית-אל-2/"
+    },
+    "phone": "0577601600"
+  },
+  {
+    "id": "rc-netanya-12593",
+    "name": "בית אל-3",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "23 יהודה הלוי, נתניה, Israel",
+    "location": {
+      "latitude": 32.322162,
+      "longitude": 34.857122
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/בית-אל-3/"
+    },
+    "phone": "0544332745",
+    "nusach": "מרוקאי"
+  },
+  {
+    "id": "rc-netanya-12594",
+    "name": "בית אל-4",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "24 ישעיהו, נתניה, Israel",
+    "location": {
+      "latitude": 32.299263,
+      "longitude": 34.854293
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/בית-אל-4/"
+    },
+    "phone": "0522804664",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12596",
+    "name": "בית אליהו",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "19 לבונטין, נתניה, Israel",
+    "location": {
+      "latitude": 32.322313,
+      "longitude": 34.859339
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/בית-אליהו/"
+    },
+    "phone": "0503335202",
+    "nusach": "אשכנזי"
+  },
+  {
+    "id": "rc-netanya-12597",
+    "name": "בית דוד-1",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "26 גדליהו בובליק, נתניה, Israel",
+    "location": {
+      "latitude": 32.318529,
+      "longitude": 34.889325
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/בית-דוד-1/"
+    },
+    "phone": "0525112555",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12599",
+    "name": "בית יוסף",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "20 אלכסנדר זייד, נתניה, Israel",
+    "location": {
+      "latitude": 32.312889,
+      "longitude": 34.881056
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/בית-יוסף/"
+    },
+    "nusach": "תימני, עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12600",
+    "name": "בית יוסף-2",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "7 יהושע שטמפפר, נתניה, Israel",
+    "location": {
+      "latitude": 32.328687,
+      "longitude": 34.855111
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/בית-יוסף-2/"
+    },
+    "phone": "0509510105",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12601",
+    "name": "בית ינוקא",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "2 אלון צבי, נתניה, Israel",
+    "location": {
+      "latitude": 32.326623,
+      "longitude": 34.858071
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/בית-ינוקא/"
+    },
+    "phone": "0577527468",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12604",
+    "name": "בית עמי",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "41 שלמה המלך, נתניה, Israel",
+    "location": {
+      "latitude": 32.338981,
+      "longitude": 34.854117
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/בית-עמי/"
+    },
+    "phone": "0506229332",
+    "nusach": "אשכנז"
+  },
+  {
+    "id": "rc-netanya-12605",
+    "name": "בר יוחאי",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "19 שמואל דיין, נתניה, Israel",
+    "location": {
+      "latitude": 32.312825,
+      "longitude": 34.877941
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/בר-יוחאי/"
+    },
+    "phone": "0523700761",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12607",
+    "name": "ברכת אברהם חי",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "26 ש\"י עגנון, נתניה, Israel",
+    "location": {
+      "latitude": 32.282792,
+      "longitude": 34.84956
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/ברכת-אברהם-חי/"
+    },
+    "phone": "0526329681",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12608",
+    "name": "גינת אגוז",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "1 חת\"ם סופר, נתניה, Israel",
+    "location": {
+      "latitude": 32.31161,
+      "longitude": 34.856863
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/גינת-אגוז/"
+    },
+    "phone": "0503588855",
+    "nusach": "תימני"
+  },
+  {
+    "id": "rc-netanya-12609",
+    "name": "דביר קודשו",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "7 החסידה, נתניה, Israel",
+    "location": {
+      "latitude": 32.304638,
+      "longitude": 34.88224
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/דביר-קודשו/"
+    },
+    "phone": "0523996270"
+  },
+  {
+    "id": "rc-netanya-12610",
+    "name": "דקר",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "15 משה גליקסון, נתניה, Israel",
+    "location": {
+      "latitude": 32.330747,
+      "longitude": 34.865477
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/דקר/"
+    },
+    "phone": "0522311703",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12611",
+    "name": "האדמו\"ר מצאנז",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "12 סעדיה גאון, נתניה, Israel",
+    "location": {
+      "latitude": 32.344073,
+      "longitude": 34.858258
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/האדמור-מצאנז/"
+    },
+    "phone": "0504161951"
+  },
+  {
+    "id": "rc-netanya-12613",
+    "name": "היכל דוד ומשה",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "1 רד\"ק, נתניה, Israel",
+    "location": {
+      "latitude": 32.317204,
+      "longitude": 34.857871
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/היכל-דוד-ומשה/"
+    },
+    "phone": "0526067327"
+  },
+  {
+    "id": "rc-netanya-12614",
+    "name": "היכל יעקב",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "22 מרדכי אנילביץ', נתניה, Israel",
+    "location": {
+      "latitude": 32.320863,
+      "longitude": 34.864922
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/היכל-יעקב/"
+    },
+    "phone": "0528966706",
+    "nusach": "תימני"
+  },
+  {
+    "id": "rc-netanya-12615",
+    "name": "היכל מנחם",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "9 אחד העם, נתניה, Israel",
+    "location": {
+      "latitude": 32.3269,
+      "longitude": 34.85958
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/היכל-מנחם/"
+    },
+    "phone": "0543977628",
+    "nusach": "אשכנז"
+  },
+  {
+    "id": "rc-netanya-12616",
+    "name": "היכל משה",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "9 טשרניחובסקי, נתניה, Israel",
+    "location": {
+      "latitude": 32.321912,
+      "longitude": 34.853217
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/היכל-משה/"
+    },
+    "phone": "0506894440",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12618",
+    "name": "היכל רבי מאיר-3",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "38 סמילנסקי, נתניה, Israel",
+    "location": {
+      "latitude": 32.325006,
+      "longitude": 34.852202
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/היכל-רבי-מאיר-3/"
+    },
+    "phone": "098616645",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12620",
+    "name": "היכל שלמה",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "37 נווה שלום, נתניה, Israel",
+    "location": {
+      "latitude": 32.34725,
+      "longitude": 34.859892
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/היכל-שלמה/"
+    },
+    "phone": "0523264556",
+    "nusach": "תימני"
+  },
+  {
+    "id": "rc-netanya-12621",
+    "name": "היכל שלמה-1",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "5 ירמיהו, נתניה, Israel",
+    "location": {
+      "latitude": 32.300807,
+      "longitude": 34.855522
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/היכל-שלמה-1/"
+    },
+    "phone": "0507717151",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12622",
+    "name": "הרב לנדמן דוד",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "75 פתח תקווה, נתניה, Israel",
+    "location": {
+      "latitude": 32.317743,
+      "longitude": 34.858417
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/הרב-לנדמן-דוד/"
+    },
+    "phone": "0522809504"
+  },
+  {
+    "id": "rc-netanya-12623",
+    "name": "הרב שלום גדז'",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "6 אברהם קריניצי, נתניה, Israel",
+    "location": {
+      "latitude": 32.293784,
+      "longitude": 34.849854
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/הרב-שלום-גדז/"
+    },
+    "phone": "0525318770",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12624",
+    "name": "הרי\"ף",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "801 החפץ חיים, נתניה, Israel",
+    "location": {
+      "latitude": 32.295529,
+      "longitude": 34.845811
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/הריף/"
+    },
+    "phone": "0547648248",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12625",
+    "name": "זכור ליוסף",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "18 לילינבלום, נתניה, Israel",
+    "location": {
+      "latitude": 32.324987,
+      "longitude": 34.859287
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/זכור-ליוסף/"
+    },
+    "phone": "0526999369",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12627",
+    "name": "חב\"ד – מרכז",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "13 סמילנסקי, נתניה, Israel",
+    "location": {
+      "latitude": 32.327219,
+      "longitude": 34.855082
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/חבד-מרכז/"
+    },
+    "phone": "0528119726",
+    "nusach": "אשכנזי, חב\"ד"
+  },
+  {
+    "id": "rc-netanya-12629",
+    "name": "חסד ואמת",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "12 יצחק קצנלסון, נתניה, Israel",
+    "location": {
+      "latitude": 32.285409,
+      "longitude": 34.853404
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/חסד-ואמת/"
+    },
+    "phone": "0523964974",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12630",
+    "name": "חפץ חיים",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "9 נעמן בלקינד, נתניה, Israel",
+    "location": {
+      "latitude": 32.327575,
+      "longitude": 34.866906
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/חפץ-חיים/"
+    },
+    "phone": "0504210404"
+  },
+  {
+    "id": "rc-netanya-12631",
+    "name": "יד אהרן",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "19 שדרות חיים וייצמן, נתניה, Israel",
+    "location": {
+      "latitude": 32.330717,
+      "longitude": 34.858561
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/יד-אהרן/"
+    },
+    "phone": "0525507835",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12632",
+    "name": "יד לגיבורים",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "11 אחד העם, נתניה, Israel",
+    "location": {
+      "latitude": 32.326656,
+      "longitude": 34.859401
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/יד-לגיבורים/"
+    },
+    "phone": "0505616012",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12633",
+    "name": "ישורון",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "23 מרים, נתניה, Israel",
+    "location": {
+      "latitude": 32.297131,
+      "longitude": 34.860153
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/ישורון/"
+    },
+    "phone": "0507503981"
+  },
+  {
+    "id": "rc-netanya-12634",
+    "name": "ישורון-1",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "32 שמואל הנציב, נתניה, Israel",
+    "location": {
+      "latitude": 32.331054,
+      "longitude": 34.856772
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/ישורון-1/"
+    },
+    "phone": "0525230326",
+    "nusach": "אשכנז"
+  },
+  {
+    "id": "rc-netanya-12637",
+    "name": "ישראל הצעיר",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "10 ד\"ר שרייבר מרדכי, נתניה, Israel",
+    "location": {
+      "latitude": 32.323049,
+      "longitude": 34.858559
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/ישראל-הצעיר/"
+    },
+    "phone": "0552562042",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12638",
+    "name": "ישראל הצעיר",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "הנורית, נתניה, Israel",
+    "location": {
+      "latitude": 32.27014,
+      "longitude": 34.840157
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/ישראל-הצעיר-2/"
+    },
+    "nusach": "אשכנזי"
+  },
+  {
+    "id": "rc-netanya-12640",
+    "name": "לאוין",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "הרב גד מכלוף, נתניה, Israel",
+    "location": {
+      "latitude": 32.321458,
+      "longitude": 34.853196
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/לאוין/"
+    },
+    "phone": "0505612184"
+  },
+  {
+    "id": "rc-netanya-12641",
+    "name": "מאיר חקק הלוי",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "שדרות טום לנטוס, נתניה, Israel",
+    "location": {
+      "latitude": 32.303643,
+      "longitude": 34.869629
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/מאיר-חקק-הלוי/"
+    },
+    "phone": "0506276444"
+  },
+  {
+    "id": "rc-netanya-12643",
+    "name": "מדרש אליהו",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "13 הבונים, נתניה, Israel",
+    "location": {
+      "latitude": 32.279547,
+      "longitude": 34.863086
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/מדרש-אליהו/"
+    },
+    "phone": "0508445303"
+  },
+  {
+    "id": "rc-netanya-12644",
+    "name": "מוריה",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "שמואל ברוד, נתניה, Israel",
+    "location": {
+      "latitude": 32.311291,
+      "longitude": 34.853079
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/מוריה/"
+    }
+  },
+  {
+    "id": "rc-netanya-12645",
+    "name": "מצמיח ישועה",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "42 יחזקאל בן בוזי, נתניה, Israel",
+    "location": {
+      "latitude": 32.297788,
+      "longitude": 34.855459
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/מצמיח-ישועה/"
+    },
+    "phone": "0508755551"
+  },
+  {
+    "id": "rc-netanya-12646",
+    "name": "מקדש מרדכי",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "12 אברהם שפירא, נתניה, Israel",
+    "location": {
+      "latitude": 32.32344,
+      "longitude": 34.858324
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/מקדש-מרדכי/"
+    },
+    "phone": "0527646199",
+    "nusach": "אשכנז"
+  },
+  {
+    "id": "rc-netanya-12648",
+    "name": "אוהל דניאל",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "28 גד מכנס, נתניה, Israel",
+    "location": {
+      "latitude": 32.325708,
+      "longitude": 34.849436
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/אוהל-דניאל/"
+    },
+    "phone": "0528712030"
+  },
+  {
+    "id": "rc-netanya-12649",
+    "name": "מקור בנימין",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "57 אליעזר קפלן, נתניה, Israel",
+    "location": {
+      "latitude": 32.319771,
+      "longitude": 34.887954
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/מקור-בנימין/"
+    },
+    "phone": "0508876067",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12651",
+    "name": "מקור חיים",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "25 עובדיה בן שלום, נתניה, Israel",
+    "location": {
+      "latitude": 32.313653,
+      "longitude": 34.856304
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/מקור-חיים/"
+    },
+    "phone": "0526085991",
+    "nusach": "תימני"
+  },
+  {
+    "id": "rc-netanya-12652",
+    "name": "נווה דוד",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "4 ליאון רייך, נתניה, Israel",
+    "location": {
+      "latitude": 32.340645,
+      "longitude": 34.857286
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/נווה-דוד/"
+    },
+    "phone": "0506724723",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12653",
+    "name": "נחלי אלון",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "16 עובדיה בן שלום, נתניה, Israel",
+    "location": {
+      "latitude": 32.315917,
+      "longitude": 34.857002
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/נחלי-אלון/"
+    },
+    "phone": "0572249499",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12655",
+    "name": "נצח ישראל",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "23 פתח תקווה, נתניה, Israel",
+    "location": {
+      "latitude": 32.324355,
+      "longitude": 34.860852
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/נצח-ישראל/"
+    },
+    "phone": "0528122323"
+  },
+  {
+    "id": "rc-netanya-12656",
+    "name": "נועם עובדיה",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "5 שמואל ברוד, נתניה, Israel",
+    "location": {
+      "latitude": 32.311461,
+      "longitude": 34.853118
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/נועם-עובדיה/"
+    },
+    "phone": "0527170292"
+  },
+  {
+    "id": "rc-netanya-12657",
+    "name": "נר אברהם",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "12 בני בנימין, נתניה, Israel",
+    "location": {
+      "latitude": 32.298278,
+      "longitude": 34.84293
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/נר-אברהם/"
+    },
+    "phone": "0525653636",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12658",
+    "name": "נר רחמים",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "4 אברהם אבן עזרא, נתניה, Israel",
+    "location": {
+      "latitude": 32.314026,
+      "longitude": 34.856708
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/נר-רחמים/"
+    },
+    "phone": "0525386666",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12659",
+    "name": "סגולה",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "9 אבן גבירול, נתניה, Israel",
+    "location": {
+      "latitude": 32.313063,
+      "longitude": 34.856877
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/סגולה/"
+    },
+    "phone": "0547686322",
+    "nusach": "תימני, בלאדי"
+  },
+  {
+    "id": "rc-netanya-12660",
+    "name": "סוכת שלום",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "22 עובדיה בן שלום, נתניה, Israel",
+    "location": {
+      "latitude": 32.315206,
+      "longitude": 34.856666
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/סוכת-שלום/"
+    },
+    "phone": "0505750135",
+    "nusach": "תימני"
+  },
+  {
+    "id": "rc-netanya-12661",
+    "name": "סוכת שלום",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "35 יפתח הגלעדי, נתניה, Israel",
+    "location": {
+      "latitude": 32.335241,
+      "longitude": 34.870761
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/סוכת-שלום-2/"
+    },
+    "phone": "0525213633",
+    "nusach": "תימני"
+  },
+  {
+    "id": "rc-netanya-12662",
+    "name": "עליית שבטים",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "29 התנועה הציונית, נתניה, Israel",
+    "location": {
+      "latitude": 32.344845,
+      "longitude": 34.865851
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/עליית-שבטים/"
+    },
+    "phone": "0525775966",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12665",
+    "name": "עץ חיים",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "8 יעקב שיפר, נתניה, Israel",
+    "location": {
+      "latitude": 32.280978,
+      "longitude": 34.848233
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/עץ-חיים/"
+    },
+    "phone": "05235735010522224066",
+    "nusach": "תימני"
+  },
+  {
+    "id": "rc-netanya-12666",
+    "name": "עץ חיים",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "4 אברהם אבן עזרא, נתניה, Israel",
+    "location": {
+      "latitude": 32.314026,
+      "longitude": 34.856708
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/עץ-חיים-2/"
+    },
+    "phone": "0525516112",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12667",
+    "name": "עץ חיים",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "13 סמילנסקי, נתניה, Israel",
+    "location": {
+      "latitude": 32.327219,
+      "longitude": 34.855082
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/עץ-חיים-3/"
+    },
+    "phone": "0523317070",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12668",
+    "name": "פועלי אגודת ישראל",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "2 יוסף ספיר, נתניה, Israel",
+    "location": {
+      "latitude": 32.328372,
+      "longitude": 34.85948
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/פועלי-אגודת-ישראל/"
+    },
+    "phone": "0506747218",
+    "nusach": "אשכנז"
+  },
+  {
+    "id": "rc-netanya-12671",
+    "name": "פחד יצחק",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "4 הרב קוק, נתניה, Israel",
+    "location": {
+      "latitude": 32.33037,
+      "longitude": 34.853293
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/פחד-יצחק/"
+    },
+    "phone": "0544976123"
+  },
+  {
+    "id": "rc-netanya-12672",
+    "name": "קהילת השרון",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "9 שבטי ישראל, נתניה, Israel",
+    "location": {
+      "latitude": 32.302161,
+      "longitude": 34.871258
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/קהילת-השרון/"
+    },
+    "phone": "0502001392",
+    "nusach": "אשכנז"
+  },
+  {
+    "id": "rc-netanya-12673",
+    "name": "קיבוץ גלויות",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "16 פנחס רוטנברג, נתניה, Israel",
+    "location": {
+      "latitude": 32.280257,
+      "longitude": 34.85365
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/קיבוץ-גלויות/"
+    },
+    "phone": "0522787343",
+    "nusach": "אשכנז"
+  },
+  {
+    "id": "rc-netanya-12674",
+    "name": "קרית השרון",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "נתניה, Israel",
+    "location": {
+      "latitude": 32.300266,
+      "longitude": 34.875013
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/קרית-השרון/"
+    },
+    "phone": "0577896641",
+    "nusach": "מרוקאי"
+  },
+  {
+    "id": "rc-netanya-12676",
+    "name": "רבינוביץ זיאמה",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "129 רותם, נתניה, Israel",
+    "location": {
+      "latitude": 32.285642,
+      "longitude": 34.850827
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/רבינוביץ-זיאמה/"
+    },
+    "phone": "0523316190",
+    "nusach": "אשכנזי"
+  },
+  {
+    "id": "rc-netanya-12677",
+    "name": "רינת ציון",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "33 יהודה הלוי, נתניה, Israel",
+    "location": {
+      "latitude": 32.320803,
+      "longitude": 34.857031
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/רינת-ציון/"
+    },
+    "phone": "0542525048",
+    "nusach": "אשכנז"
+  },
+  {
+    "id": "rc-netanya-12678",
+    "name": "שבטי ישראל",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "1 שמואל, נתניה, Israel",
+    "location": {
+      "latitude": 32.299942,
+      "longitude": 34.859237
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/שבטי-ישראל/"
+    },
+    "phone": "0547325540",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12679",
+    "name": "שבי ציון",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "30 אברהם אבן עזרא, נתניה, Israel",
+    "location": {
+      "latitude": 32.313596,
+      "longitude": 34.859593
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/שבי-ציון/"
+    },
+    "phone": "0505933829",
+    "nusach": "תימני, בלאדי"
+  },
+  {
+    "id": "rc-netanya-12680",
+    "name": "שבת אחים",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "38 נורדאו מקס, נתניה, Israel",
+    "location": {
+      "latitude": 32.281106,
+      "longitude": 34.856094
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/שבת-אחים/"
+    },
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12683",
+    "name": "שונה הלכות",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "2 הרצל, נתניה, Israel",
+    "location": {
+      "latitude": 32.330148,
+      "longitude": 34.852522
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/שונה-הלכות/"
+    },
+    "phone": "0522240415",
+    "nusach": "אשכנז"
+  },
+  {
+    "id": "rc-netanya-12684",
+    "name": "שיבת ציון",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "51 יוסף אהרונוביץ', נתניה, Israel",
+    "location": {
+      "latitude": 32.316742,
+      "longitude": 34.885916
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/שיבת-ציון/"
+    },
+    "phone": "0526233060",
+    "nusach": "תימני"
+  },
+  {
+    "id": "rc-netanya-12685",
+    "name": "שירת עמית",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "37 הרטום, נתניה, Israel",
+    "location": {
+      "latitude": 32.310628,
+      "longitude": 34.871615
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/שירת-עמית/"
+    },
+    "phone": "0522844764",
+    "nusach": "אשכנזי"
+  },
+  {
+    "id": "rc-netanya-12686",
+    "name": "שלום שבזי",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "13 שדרות שמשון, נתניה, Israel",
+    "location": {
+      "latitude": 32.33451,
+      "longitude": 34.869616
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/שלום-שבזי/"
+    },
+    "phone": "0528201044",
+    "nusach": "תימני"
+  },
+  {
+    "id": "rc-netanya-12687",
+    "name": "שערי רחמים",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "יאיר רוזנבלום, נתניה, Israel",
+    "location": {
+      "latitude": 32.321458,
+      "longitude": 34.853196
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/שערי-רחמים/"
+    },
+    "phone": "0528749774",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12689",
+    "name": "שערי ירושלים",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "4 אברהם קריניצי, נתניה, Israel",
+    "location": {
+      "latitude": 32.293909,
+      "longitude": 34.849664
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/שערי-ירושלים/"
+    },
+    "phone": "0524732267",
+    "nusach": "אתיופי"
+  },
+  {
+    "id": "rc-netanya-12690",
+    "name": "שפעת רביבים",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "51 נורדאו מקס, נתניה, Israel",
+    "location": {
+      "latitude": 32.279669,
+      "longitude": 34.855775
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/שפעת-רביבים/"
+    },
+    "phone": "0502275103"
+  },
+  {
+    "id": "rc-netanya-12691",
+    "name": "תורה ושלום",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "5 מיכאל הלפרין, נתניה, Israel",
+    "location": {
+      "latitude": 32.31456,
+      "longitude": 34.88291
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/תורה-ושלום/"
+    },
+    "nusach": "תימני"
+  },
+  {
+    "id": "rc-netanya-12692",
+    "name": "תפארת ישראל",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "12 נחמיה, נתניה, Israel",
+    "location": {
+      "latitude": 32.2984,
+      "longitude": 34.859471
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/תפארת-ישראל/"
+    },
+    "phone": "0522926867",
+    "nusach": "תימני"
+  },
+  {
+    "id": "rc-netanya-12694",
+    "name": "תפארת שלום",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "14 אחד העם, נתניה, Israel",
+    "location": {
+      "latitude": 32.326109,
+      "longitude": 34.859034
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/תפארת-שלום/"
+    },
+    "phone": "0544795377",
+    "nusach": "תימני"
+  },
+  {
+    "id": "rc-netanya-12695",
+    "name": "בבי\"ס אוסישקין",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "7 התנאים, נתניה, Israel",
+    "location": {
+      "latitude": 32.338785,
+      "longitude": 34.868012
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/בביס-אוסישקין/"
+    },
+    "phone": "0578291505"
+  },
+  {
+    "id": "rc-netanya-12696",
+    "name": "חסדי שלמה",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "29 הרצל, נתניה, Israel",
+    "location": {
+      "latitude": 32.328554,
+      "longitude": 34.857713
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/חסדי-שלמה/"
+    },
+    "phone": "0542666821"
+  },
+  {
+    "id": "rc-netanya-12697",
+    "name": "תהילת אשר",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "25 שמואל, נתניה, Israel",
+    "location": {
+      "latitude": 32.297829,
+      "longitude": 34.857028
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/תהילת-אשר/"
+    },
+    "phone": "0506223666"
+  },
+  {
+    "id": "rc-netanya-12698",
+    "name": "תהילת ישי",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "1 החינוך העברי, נתניה, Israel",
+    "location": {
+      "latitude": 32.307595,
+      "longitude": 34.877052
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/תהילת-ישי/"
+    },
+    "phone": "0545711873"
+  },
+  {
+    "id": "rc-netanya-12699",
+    "name": "שלומקו",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "10 חיים ארלוזורוב, נתניה, Israel",
+    "location": {
+      "latitude": 32.312172,
+      "longitude": 34.879651
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/שלומקו/"
+    },
+    "phone": "0522805691"
+  },
+  {
+    "id": "rc-netanya-12700",
+    "name": "היכל רפאל",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "53 יוסף שפרינצק, נתניה, Israel",
+    "location": {
+      "latitude": 32.311753,
+      "longitude": 34.882068
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/היכל-רפאל-2/"
+    },
+    "phone": "0502323231"
+  },
+  {
+    "id": "rc-netanya-12702",
+    "name": "אור הגנוז",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "7 אבא אחימאיר, נתניה, Israel",
+    "location": {
+      "latitude": 32.321458,
+      "longitude": 34.853196
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/אור-הגנוז/"
+    },
+    "phone": "0522578564"
+  },
+  {
+    "id": "rc-netanya-12703",
+    "name": "היכל שלמה",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "נתניה, Israel",
+    "location": {
+      "latitude": 32.321458,
+      "longitude": 34.853196
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/היכל-שלמה-2/"
+    },
+    "phone": "0546216625"
+  },
+  {
+    "id": "rc-netanya-12704",
+    "name": "אדאדי",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "נתניה, Israel",
+    "location": {
+      "latitude": 32.321458,
+      "longitude": 34.853196
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/אדאדי/"
+    },
+    "phone": "0545351242"
+  },
+  {
+    "id": "rc-netanya-12705",
+    "name": "יהודה לביא",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "60 יוסף אהרונוביץ', נתניה, Israel",
+    "location": {
+      "latitude": 32.316534,
+      "longitude": 34.885682
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/יהודה-לביא/"
+    },
+    "phone": "0506740678"
+  },
+  {
+    "id": "rc-netanya-12706",
+    "name": "בית אל",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "יוסף שפרינצק, נתניה, Israel",
+    "location": {
+      "latitude": 32.314553,
+      "longitude": 34.885263
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/בית-אל-5/"
+    },
+    "phone": "0547396867"
+  },
+  {
+    "id": "rc-netanya-12707",
+    "name": "זרחה השמש ליעקב (בית מדרש)",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "42 יחזקאל בן בוזי, נתניה, Israel",
+    "location": {
+      "latitude": 32.297788,
+      "longitude": 34.855459
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/זרחה-השמש-ליעקב-בית-מדרש/"
+    },
+    "phone": "0508755551"
+  },
+  {
+    "id": "rc-netanya-12708",
+    "name": "נחלת שמואל הישנה",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "4 הגר\"א, נתניה, Israel",
+    "location": {
+      "latitude": 32.309555,
+      "longitude": 34.85595
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/נחלת-שמואל-הישנה/"
+    },
+    "phone": "0548444477"
+  },
+  {
+    "id": "rc-netanya-12709",
+    "name": "נחלת שמואל החדשה",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "4 הגר\"א, נתניה, Israel",
+    "location": {
+      "latitude": 32.309555,
+      "longitude": 34.85595
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/נחלת-שמואל-החדשה/"
+    },
+    "phone": "0542450005"
+  },
+  {
+    "id": "rc-netanya-12710",
+    "name": "בריסק",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "נתניה, Israel",
+    "location": {
+      "latitude": 32.321458,
+      "longitude": 34.853196
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/בריסק/"
+    },
+    "phone": "0533104045"
+  },
+  {
+    "id": "rc-netanya-12711",
+    "name": "בית יהודה",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "18 רבי עקיבא, נתניה, Israel",
+    "location": {
+      "latitude": 32.343058,
+      "longitude": 34.858497
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/בית-יהודה/"
+    },
+    "phone": "0522444027"
+  },
+  {
+    "id": "rc-netanya-12712",
+    "name": "אור לנתיבתי",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "חת\"ם סופר, נתניה, Israel",
+    "location": {
+      "latitude": 32.311567,
+      "longitude": 34.857838
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/אור-לנתיבתי/"
+    },
+    "phone": "0548497774"
+  },
+  {
+    "id": "rc-netanya-12713",
+    "name": "אהל יצחק",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "59 ניל\"י, נתניה, Israel",
+    "location": {
+      "latitude": 32.317939,
+      "longitude": 34.861633
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/אהל-יצחק/"
+    },
+    "phone": "0506776842",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12716",
+    "name": "כנסת מרדכי",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "15 שרעבי, נתניה, Israel",
+    "location": {
+      "latitude": 32.314817,
+      "longitude": 34.8575
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/כנסת-מרדכי/"
+    },
+    "phone": "0508741881",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12719",
+    "name": "אגודת אחים",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "47 שדרות ז'בוטינסקי, נתניה, Israel",
+    "location": {
+      "latitude": 32.319878,
+      "longitude": 34.848432
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/אגודת-אחים/"
+    },
+    "phone": "0523771364",
+    "nusach": "אשכנז"
+  },
+  {
+    "id": "rc-netanya-12721",
+    "name": "אהל שם - נר שרה",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "38 ניל\"י, נתניה, Israel",
+    "location": {
+      "latitude": 32.319259,
+      "longitude": 34.861533
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/אהל-שם-נר-שרה/"
+    },
+    "phone": "0502360033",
+    "nusach": "עדות המזרח"
+  },
+  {
+    "id": "rc-netanya-12722",
+    "name": "אגודת אחים יוצאי תימן",
+    "type": "synagogue",
+    "cityId": "נתניה",
+    "address": "60 יוסף אהרונוביץ', נתניה, Israel",
+    "location": {
+      "latitude": 32.316534,
+      "longitude": 34.885682
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית נתניה",
+      "sourceUrl": "https://mdn.org.il/directory-synagogues/listing/אגודת-אחים-יוצאי-תימן/"
+    },
+    "phone": "0505361645",
+    "nusach": "תימני"
+  }
+]

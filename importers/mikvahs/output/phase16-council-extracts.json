@@ -1,0 +1,44 @@
+{
+  "_note": "Agent-extracted records for the non-table council sites (Netivot/Rehovot/Menashe/Mazkeret). Bat Yam + Golan are parsed programmatically by the importer (HTML tables). Read-only, no fabrication.",
+  "councils": [
+    {
+      "id": "netivot", "council": "המועצה הדתית נתיבות", "city": "נתיבות", "regional": false,
+      "url": "https://www.mdnetivot.org/מקוואות", "license": "council-public",
+      "records": [
+        { "name": "מעיין דורית", "city": "נתיבות", "address": null, "phone": "08-6345791", "hours": null, "gender": null, "attendant": null },
+        { "name": "מקווה הרמב\"ם", "city": "נתיבות", "address": null, "phone": "08-9945254", "hours": null, "gender": null, "attendant": null },
+        { "name": "מקווה זוהרה", "city": "נתיבות", "address": null, "phone": "08-9943189", "hours": null, "gender": null, "attendant": null },
+        { "name": "מקווה זכור לאברהם", "city": "נתיבות", "address": null, "phone": "08-9934917", "hours": null, "gender": null, "attendant": null },
+        { "name": "מקווה קרית מנחם", "city": "נתיבות", "address": null, "phone": "08-9932203", "hours": null, "gender": null, "attendant": null },
+        { "name": "מקווה טהרת רוני ובת שבע", "city": "נתיבות", "address": null, "phone": "073-3669034", "hours": null, "gender": null, "attendant": null }
+      ]
+    },
+    {
+      "id": "rehovot", "council": "המועצה הדתית רחובות", "city": "רחובות", "regional": false,
+      "url": "https://dat-rehovot.co.il/mikveh/", "license": "council-public", "statedTotal": "7 נשים + 2 גברים (only 2 named on page)",
+      "records": [
+        { "name": "מקווה מרמורק", "city": "רחובות", "address": "כיכר חשמונאים 3", "phone": null, "hours": null, "gender": "נשים", "attendant": null, "accessibility": "מעלון למוגבלות תנועה" },
+        { "name": "מקווה קרית משה", "city": "רחובות", "address": null, "phone": null, "hours": "שעון קיץ: 20:00-22:00; שעון חורף: 19:00-21:00; ערב שבת/חג: כ-20 דקות אחרי הדלקת נרות למשך כשעה", "gender": "נשים", "attendant": null }
+      ]
+    },
+    {
+      "id": "menashe", "council": "המועצה הדתית האזורית מנשה", "city": "מנשה", "regional": true,
+      "url": "https://md-menashe.org.il/רשימת-מקוואות/", "license": "council-public",
+      "records": [
+        { "name": "מקווה כפר פינס", "city": "כפר פינס", "address": "ליד בית הכנסת", "phone": "052-7710046", "hours": null, "gender": "נשים", "attendant": "יעל שוורץ", "notes": "פעיל כל ימות השבוע כולל שבת/חג בתיאום מראש" },
+        { "name": "מקווה מאור", "city": "מאור", "address": "רחוב גפן 3, ליד בית הכנסת", "phone": "050-8665295", "hours": null, "gender": "נשים", "attendant": "אילנה קוממי" },
+        { "name": "מקווה קציר", "city": "קציר", "address": "משעול המורן 2", "phone": "052-6436792", "hours": null, "gender": "נשים", "attendant": "ציפורה דניאל" },
+        { "name": "מקווה מצפה אילן", "city": "מצפה אילן", "address": "ליד בית הכנסת", "phone": "050-8893704", "hours": null, "gender": "נשים", "attendant": "שירה שמעון" }
+      ]
+    },
+    {
+      "id": "mazkeret-batya", "council": "המועצה הדתית מזכרת בתיה", "city": "מזכרת בתיה", "regional": false,
+      "url": "https://moazadatit-mb.org.il/services/mikvaot/", "license": "council-public",
+      "records": [
+        { "name": "מקווה כלים", "city": "מזכרת בתיה", "address": "מידן 18", "phone": "055-2240042", "hours": "הגעה בשעות היום בלבד", "gender": "כלים", "attendant": "יהודה זקן" },
+        { "name": "מקווה גברים", "city": "מזכרת בתיה", "address": "המייסדים 17", "phone": "054-7926770", "hours": "תיאום מראש בלבד", "gender": "גברים", "attendant": null, "notes": "מופעל ע\"י חב\"ד" },
+        { "name": "מקווה נשים", "city": "מזכרת בתיה", "address": "מידן 18", "phone": "052-8566808", "hours": "חול חורף: 17:30-21:00; חול קיץ: 19:30-22:30; שבת/חג: מהדלקת נרות למשך שעה וחצי; מוצ\"ש: חצי שעה אחרי צה\"כ למשך שעתיים", "gender": "נשים", "attendant": "עפרה גואטה", "notes": "כולל חדר כלה" }
+      ]
+    }
+  ]
+}

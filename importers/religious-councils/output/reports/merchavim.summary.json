@@ -1,0 +1,19 @@
+{
+  "council": "המועצה הדתית מרחבים",
+  "variant": "markers",
+  "expectedCount": 21,
+  "fetchedCount": 21,
+  "validCount": 21,
+  "rejectedCount": 0,
+  "coordSource": "markers",
+  "withNativeCoordinates": 21,
+  "missingCoordinates": 0,
+  "duplicateSourceIds": 0,
+  "enrichedFromCards": 21,
+  "ambiguousEnrich": 0,
+  "countMatches": true,
+  "pagesFetched": 1,
+  "dryRun": true,
+  "liveDataTouched": false,
+  "generatedAt": "2026-06-18"
+}

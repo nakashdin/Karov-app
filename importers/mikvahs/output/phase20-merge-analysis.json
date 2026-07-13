@@ -1,0 +1,524 @@
+[
+  {
+    "cityKey": "rishon",
+    "name": "מקווה רבי עקיבא",
+    "address": "בן אהרון אורפלי 4, ראשון לציון",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-489 (מקווה רבי עקיבא (אורפלי)) by street \"בן אהרון אורפלי 4\"",
+    "matchedLiveId": "mikveh-489"
+  },
+  {
+    "cityKey": "rishon",
+    "name": "מקווה הטהורים (כרמים)",
+    "address": "היוגבים 4, ראשון לציון",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-486 (מקווה טהורים (כרמים)) by street \"היוגבים 4\"",
+    "matchedLiveId": "mikveh-486"
+  },
+  {
+    "cityKey": "rishon",
+    "name": "מקווה ג'נט (נווה דקלים)",
+    "address": "החלוצים 45, ראשון לציון",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-483 (מקווה גנט ( נווה דקלים)) by name token [נווה,דקלים]",
+    "matchedLiveId": "mikveh-483"
+  },
+  {
+    "cityKey": "rishon",
+    "name": "מקווה החידא (הרצל)",
+    "address": "החידא 4, ראשון לציון",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-485 (מקווה החידא (הרצל)) by name token [החידא,הרצל]",
+    "matchedLiveId": "mikveh-485"
+  },
+  {
+    "cityKey": "rishon",
+    "name": "מקווה טהרת מלכה",
+    "address": "יוסף הנשיא 5, ראשון לציון",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-488 (מקווה טהרת מלכה(שיכון)) by street \"יוסף הנשיא 5\"",
+    "matchedLiveId": "mikveh-488"
+  },
+  {
+    "cityKey": "rishon",
+    "name": "מקווה הבן איש חי (נחלת יהודה)",
+    "address": "לוז 30, ראשון לציון",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-482 (מקווה בן איש חי (נחלת)) by street \"לוז 30\"",
+    "matchedLiveId": "mikveh-482"
+  },
+  {
+    "cityKey": "rishon",
+    "name": "מקווה הבעש\"ט (נאות אשלים)",
+    "address": "התזמורת 51, ראשון לציון",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-484 (מקווה הבעל שם טוב (אשלים)) by street \"התזמורת 51\"",
+    "matchedLiveId": "mikveh-484"
+  },
+  {
+    "cityKey": "rishon",
+    "name": "מקווה אור החיים (פופל)",
+    "address": "פופל 20, ראשון לציון",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-481 (מקווה אור החיים ( גני אסתר)) by street \"פופל 20\"",
+    "matchedLiveId": "mikveh-481"
+  },
+  {
+    "cityKey": "rishon",
+    "name": "מקווה טהרת לאה (נווה חוף)",
+    "address": "הארגמן 10, ראשון לציון",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-483 (מקווה גנט ( נווה דקלים)) by name token [נווה]",
+    "matchedLiveId": "mikveh-483"
+  },
+  {
+    "cityKey": "rishon",
+    "name": "מקווה רשב\"י (רמת אליהו)",
+    "address": "אנילביץ פינת חנה סנש, ראשון לציון",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-490 (מקווה רשב\"י (רמת אליהו)) by street \"אנילביץ\"",
+    "matchedLiveId": "mikveh-490"
+  },
+  {
+    "cityKey": "rishon",
+    "name": "מקווה בובה",
+    "address": "קפאח 2, ראשון לציון",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-491 (מקווה שקמה ( בובה)) by street \"קפאח 2\"",
+    "matchedLiveId": "mikveh-491"
+  },
+  {
+    "cityKey": "rishon",
+    "name": "מקווה רבי עקיבא (גברים)",
+    "address": "בן אהרון אורפלי 4, ראשון לציון",
+    "gender": "גברים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-489 (מקווה רבי עקיבא (אורפלי)) by street \"בן אהרון אורפלי 4\"",
+    "matchedLiveId": "mikveh-489"
+  },
+  {
+    "cityKey": "rishon",
+    "name": "מקווה הבן איש חי (גברים)",
+    "address": "לוז 30, ראשון לציון",
+    "gender": "גברים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-482 (מקווה בן איש חי (נחלת)) by street \"לוז 30\"",
+    "matchedLiveId": "mikveh-482"
+  },
+  {
+    "cityKey": "rishon",
+    "name": "מקווה רשב\"י (גברים)",
+    "address": "אנילביץ פינת חנה סנש, ראשון לציון",
+    "gender": "גברים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-490 (מקווה רשב\"י (רמת אליהו)) by street \"אנילביץ\"",
+    "matchedLiveId": "mikveh-490"
+  },
+  {
+    "cityKey": "rishon",
+    "name": "מקווה הבעש\"ט (גברים)",
+    "address": "התזמורת 51, ראשון לציון",
+    "gender": "גברים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-484 (מקווה הבעל שם טוב (אשלים)) by street \"התזמורת 51\"",
+    "matchedLiveId": "mikveh-484"
+  },
+  {
+    "cityKey": "rishon",
+    "name": "מקווה טהרת לאה (גברים)",
+    "address": "הארגמן 10, ראשון לציון",
+    "gender": "גברים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-487 (מקווה טהרת לאה ( נווה חוף)) by street \"הארגמן 10\"",
+    "matchedLiveId": "mikveh-487"
+  },
+  {
+    "cityKey": "rishon",
+    "name": "מקווה אור החיים (גברים)",
+    "address": "פופל 20, ראשון לציון",
+    "gender": "גברים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-481 (מקווה אור החיים ( גני אסתר)) by street \"פופל 20\"",
+    "matchedLiveId": "mikveh-481"
+  },
+  {
+    "cityKey": "ramatgan",
+    "name": "מקווה רמת השקמה",
+    "address": "עזריאל 24, רמת גן",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-508 (רמת אפעל) by name token [רמת]",
+    "matchedLiveId": "mikveh-508"
+  },
+  {
+    "cityKey": "ramatgan",
+    "name": "מקווה רמת יצחק",
+    "address": "עוזיאל 5, רמת גן",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-508 (רמת אפעל) by name token [רמת]",
+    "matchedLiveId": "mikveh-508"
+  },
+  {
+    "cityKey": "ramatgan",
+    "name": "מקווה רמת עמידר",
+    "address": "מבצע עין 7, רמת גן",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-506 (עמידר) by street \"מבצע עין 7\"",
+    "matchedLiveId": "mikveh-506"
+  },
+  {
+    "cityKey": "ramatgan",
+    "name": "מקווה קריית קריניצי",
+    "address": "גילדסגיים 12, רמת גן",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-507 (קרית קריניצי) by street \"גילדסגיים 12\"",
+    "matchedLiveId": "mikveh-507"
+  },
+  {
+    "cityKey": "ramatgan",
+    "name": "מקווה רמת אפעל",
+    "address": "החוגה 2, רמת גן",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-508 (רמת אפעל) by name token [רמת,אפעל]",
+    "matchedLiveId": "mikveh-508"
+  },
+  {
+    "cityKey": "ramatgan",
+    "name": "מקווה שכון ותיקים",
+    "address": "העם הצרפתי 34, רמת גן",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-513 (שדרות העם הצרפתי) by street \"העם הצרפתי 34\"",
+    "matchedLiveId": "mikveh-513"
+  },
+  {
+    "cityKey": "ramatgan",
+    "name": "מקווה שדרות הגיבורים",
+    "address": "שדרות הגיבורים 7, רמת גן",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-512 (שדרות הגיבורים) by street \"שדרות הגיבורים 7\"",
+    "matchedLiveId": "mikveh-512"
+  },
+  {
+    "cityKey": "ramatgan",
+    "name": "מקווה גברים רמת השקמה",
+    "address": "עזריאל 24, רמת גן",
+    "gender": "גברים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-508 (רמת אפעל) by name token [רמת]",
+    "matchedLiveId": "mikveh-508"
+  },
+  {
+    "cityKey": "ramatgan",
+    "name": "מקווה גברים רמת יצחק",
+    "address": "עוזיאל 5, רמת גן",
+    "gender": "גברים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-508 (רמת אפעל) by name token [רמת]",
+    "matchedLiveId": "mikveh-508"
+  },
+  {
+    "cityKey": "ramatgan",
+    "name": "מקווה גברים רמת עמידר",
+    "address": "מבצע עין 7, רמת גן",
+    "gender": "גברים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-506 (עמידר) by street \"מבצע עין 7\"",
+    "matchedLiveId": "mikveh-506"
+  },
+  {
+    "cityKey": "ramatgan",
+    "name": "מקווה כלים רמת שקמה",
+    "address": "עזריאל 24, רמת גן",
+    "gender": "כלים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-508 (רמת אפעל) by name token [רמת]",
+    "matchedLiveId": "mikveh-508"
+  },
+  {
+    "cityKey": "ramatgan",
+    "name": "מקווה כלים רמת אפעל",
+    "address": "החוגה 2, רמת גן",
+    "gender": "כלים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-508 (רמת אפעל) by name token [רמת,אפעל]",
+    "matchedLiveId": "mikveh-508"
+  },
+  {
+    "cityKey": "givatayim",
+    "name": "מקווה גברים טייבר",
+    "address": "טייבר 55, גבעתיים",
+    "gender": "גברים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-129 (טייבר) by name token [טייבר]",
+    "matchedLiveId": "mikveh-129"
+  },
+  {
+    "cityKey": "givatayim",
+    "name": "מקווה נשים טייבר",
+    "address": "טייבר 55, גבעתיים",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-129 (טייבר) by name token [טייבר]",
+    "matchedLiveId": "mikveh-129"
+  },
+  {
+    "cityKey": "givatayim",
+    "name": "מקווה נשים מנרה",
+    "address": "מנרה 2, גבעתיים",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-130 (מנרה) by street \"מנרה 2\"",
+    "matchedLiveId": "mikveh-130"
+  },
+  {
+    "cityKey": "kiryatata",
+    "name": "מקווה גבעת רם",
+    "address": "רחוב האלה (פינת אלמוג), קרית אתא",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-463 (גבעת רם) by name token [גבעת]",
+    "matchedLiveId": "mikveh-463"
+  },
+  {
+    "cityKey": "kiryatata",
+    "name": "מקווה נווה אברהם (שכונת התימנים)",
+    "address": "אלשייך 12, קרית אתא",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-468 (שכונת התימנים) by name token [התימנים]",
+    "matchedLiveId": "mikveh-468"
+  },
+  {
+    "cityKey": "kiryatata",
+    "name": "מקווה מרכזי",
+    "address": "המייסדים 16, קרית אתא",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-466 (מרכזי מייסדים) by street \"המייסדים 16\"",
+    "matchedLiveId": "mikveh-466"
+  },
+  {
+    "cityKey": "kiryatata",
+    "name": "מקווה קרית פרוסטיג/בנימין",
+    "address": "קיבוץ גלויות 62, קרית אתא",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-465 (מקווה פרוסטיג) by name token [פרוסטיג]",
+    "matchedLiveId": "mikveh-465"
+  },
+  {
+    "cityKey": "kiryatata",
+    "name": "מקווה שיכונים",
+    "address": "רחוב יבניאלי, קרית אתא",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-467 (שיכונים יבניאלי) by name token [שיכונים]",
+    "matchedLiveId": "mikveh-467"
+  },
+  {
+    "cityKey": "ashdod",
+    "name": "מקווה רובע א'",
+    "address": "רחוב משמר הירדן (צמוד לבית הכנסת זכרון קדושים), רובע א', אשדוד",
+    "geo": "משמר הירדן, אשדוד",
+    "phone": null,
+    "gender": "נשים",
+    "accessibility": "אין נגישות",
+    "coordSource": "no-house-number",
+    "hasCoords": false,
+    "location": null,
+    "disposition": "excluded",
+    "reason": "no address-level coordinate (no-house-number)",
+    "matchedLiveId": null
+  },
+  {
+    "cityKey": "ashdod",
+    "name": "מקווה רובע ג'",
+    "address": "רחוב הפלמ\"ח 25, רובע ג', אשדוד",
+    "geo": "הפלמח 25, אשדוד",
+    "phone": null,
+    "gender": "נשים",
+    "accessibility": "אין נגישות",
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.79860927121238,
+      "longitude": 34.66235066185275
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "cityKey": "ashdod",
+    "name": "מקווה רובע ד'",
+    "address": "רחוב הרב שאולי 5 (צמוד לבית הכנסת מגן אברהם), רובע ד', אשדוד",
+    "geo": "הרב שאולי 5, אשדוד",
+    "phone": null,
+    "gender": "נשים",
+    "accessibility": "יש כניסה נגישה, חדר נגיש, ללא מעלון",
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.79800617277564,
+      "longitude": 34.64248596192412
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "cityKey": "ashdod",
+    "name": "מקווה רובע ו'",
+    "address": "רחוב ירמיהו הלפרין 5, רובע ו', אשדוד",
+    "geo": "ירמיהו הלפרין 5, אשדוד",
+    "phone": null,
+    "gender": "נשים",
+    "accessibility": "אין נגישות",
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.79151638506877,
+      "longitude": 34.65731411180846
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "cityKey": "ashdod",
+    "name": "מקווה רובע ח'",
+    "address": "רחוב האתרוג 5 (פינת הכלנית), רובע ח', אשדוד",
+    "geo": "האתרוג 5, אשדוד",
+    "phone": null,
+    "gender": "נשים",
+    "accessibility": "אין נגישות",
+    "coordSource": "govmap-no-match",
+    "hasCoords": false,
+    "location": null,
+    "disposition": "excluded",
+    "reason": "no address-level coordinate (govmap-no-match)",
+    "matchedLiveId": null
+  },
+  {
+    "cityKey": "ashdod",
+    "name": "מקווה רובע ט'",
+    "address": "רחוב הגר\"א 35, רובע ט', אשדוד",
+    "geo": "הגרא 35, אשדוד",
+    "phone": null,
+    "gender": "נשים",
+    "accessibility": "יש כניסה נגישה, חדר נגיש, ללא מעלון",
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.784298372454213,
+      "longitude": 34.665910878061176
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "cityKey": "ashdod",
+    "name": "מקווה רובע יא'",
+    "address": "רחוב הר חרמון 5 (צמוד לטיפת חלב), רובע יא', אשדוד",
+    "geo": "הר חרמון 5, אשדוד",
+    "phone": null,
+    "gender": "נשים",
+    "accessibility": "יש כניסה נגישה, חדר נגיש, ללא מעלון",
+    "coordSource": "govmap-no-match",
+    "hasCoords": false,
+    "location": null,
+    "disposition": "excluded",
+    "reason": "no address-level coordinate (govmap-no-match)",
+    "matchedLiveId": null
+  },
+  {
+    "cityKey": "ashdod",
+    "name": "מקווה רובע יב'",
+    "address": "רחוב שבט דן 26, רובע יב', אשדוד",
+    "geo": "שבט דן 26, אשדוד",
+    "phone": null,
+    "gender": "נשים",
+    "accessibility": "יש כניסה נגישה, חדר נגיש, ללא מעלון",
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.776949279739974,
+      "longitude": 34.63250625929644
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "cityKey": "ashdod",
+    "name": "מקווה רובע יג'",
+    "address": "רחוב המלך שלמה 20, רובע יג', אשדוד",
+    "geo": "המלך שלמה 20, אשדוד",
+    "phone": null,
+    "gender": "נשים",
+    "accessibility": "אין נגישות",
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.775040501112944,
+      "longitude": 34.64629491131196
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "cityKey": "ashdod",
+    "name": "מקווה רובע טו'",
+    "address": "רחוב ברוריה 5 (צמוד לבית הכנסת), רובע טו', אשדוד",
+    "geo": "ברוריה 5, אשדוד",
+    "phone": null,
+    "gender": "נשים",
+    "accessibility": "אין נגישות",
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.773722227471744,
+      "longitude": 34.62776128174645
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "cityKey": "ashdod",
+    "name": "מקווה רובע הסיטי",
+    "address": "רחוב העצמאות 39, רובע הסיטי, אשדוד",
+    "geo": "העצמאות 39, אשדוד",
+    "phone": "0732654684",
+    "gender": "נשים",
+    "accessibility": "נגישות מלאה כולל מנוף (בתיאום מראש)",
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.790794719565344,
+      "longitude": 34.64644568636741
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  }
+]

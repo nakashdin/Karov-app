@@ -1,0 +1,1763 @@
+[
+  {
+    "source": "sabaiapps",
+    "city": "לוד",
+    "name": "מקווה נשים באר ציון ואוהל שרה (אלפעל לשעבר) - מקווה תורן",
+    "reasonSkipped": "SabaiApps decision: manual_review_required",
+    "category": "manual-review",
+    "whatIsNeededNext": "manual review",
+    "matchedId": "mikveh-262",
+    "detail": "Name-similar (sim 0.85, 100m) but addresses conflict (staged \"10 נתן שוורץ , לוד, Israel\" vs gov \"אלפעל 3\") — possible false match; needs a human."
+  },
+  {
+    "source": "sabaiapps",
+    "city": "מרחבים",
+    "name": "מקווה גילת",
+    "reasonSkipped": "SabaiApps decision: manual_review_required",
+    "category": "manual-review",
+    "whatIsNeededNext": "manual review",
+    "matchedId": "mikveh-390",
+    "detail": "Same location (120m) but divergent names (sim 0.33) — same facility under a different name vs a distinct nearby mikvah is unclear; needs a human."
+  },
+  {
+    "source": "sabaiapps",
+    "city": "מרחבים",
+    "name": "מקווה מסלול",
+    "reasonSkipped": "SabaiApps record matches an existing gov mikvah (regional council under settlement name) — enriches it",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-403",
+    "detail": "Likely the same mikvah (name sim 0.67, 144m, address agrees). Phase-2 missed it because this regional council keys the council name as the city while the gov record is stored under the settlement name (matched gov: \"מקווה מושב מסלול\"). Enriches: coordinates, sourceUrl."
+  },
+  {
+    "source": "sabaiapps",
+    "city": "מרחבים",
+    "name": "מקווה שבי דרום",
+    "reasonSkipped": "SabaiApps record matches an existing gov mikvah (regional council under settlement name) — enriches it",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-407",
+    "detail": "Strong match (name sim 0.85, address agrees, 285m) — same facility the gov dataset already has. SabaiApps enriches: coordinates, sourceUrl."
+  },
+  {
+    "source": "sabaiapps",
+    "city": "מרחבים",
+    "name": "מקווה קלחים",
+    "reasonSkipped": "SabaiApps decision: manual_review_required",
+    "category": "manual-review",
+    "whatIsNeededNext": "manual review",
+    "matchedId": "mikveh-397",
+    "detail": "Same location (92m) but divergent names (sim 0.33) — same facility under a different name vs a distinct nearby mikvah is unclear; needs a human."
+  },
+  {
+    "source": "sabaiapps",
+    "city": "מרחבים",
+    "name": "מקווה ניר משה",
+    "reasonSkipped": "SabaiApps record matches an existing gov mikvah (regional council under settlement name) — enriches it",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-385",
+    "detail": "Likely the same mikvah (name sim 0.75, 60m, address agrees). Phase-2 missed it because this regional council keys the council name as the city while the gov record is stored under the settlement name (matched gov: \"מקווה מושב ניר משה\"). Enriches: coordinates, sourceUrl."
+  },
+  {
+    "source": "sabaiapps",
+    "city": "מרחבים",
+    "name": "מקווה מבועים",
+    "reasonSkipped": "SabaiApps record matches an existing gov mikvah (regional council under settlement name) — enriches it",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-402",
+    "detail": "Likely the same mikvah (name sim 0.67, 116m). Phase-2 missed it because this regional council keys the council name as the city while the gov record is stored under the settlement name (matched gov: \"מקווה מושב מבועים\"). Enriches: coordinates, sourceUrl."
+  },
+  {
+    "source": "sabaiapps",
+    "city": "מרחבים",
+    "name": "מקווה תלמי בילו",
+    "reasonSkipped": "SabaiApps decision: manual_review_required",
+    "category": "manual-review",
+    "whatIsNeededNext": "manual review",
+    "matchedId": "mikveh-408",
+    "detail": "Name-similar (sim 0.85, 33m) but addresses conflict (staged \"תלמי בילו 28, Israel\" vs gov \"תלמי ביל\"ו\") — possible false match; needs a human."
+  },
+  {
+    "source": "sabaiapps",
+    "city": "מרחבים",
+    "name": "מקווה פטיש",
+    "reasonSkipped": "SabaiApps record matches an existing gov mikvah (regional council under settlement name) — enriches it",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-405",
+    "detail": "Likely the same mikvah (name sim 0.67, 127m). Phase-2 missed it because this regional council keys the council name as the city while the gov record is stored under the settlement name (matched gov: \"מקווה מושב פטיש\"). Enriches: coordinates, sourceUrl."
+  },
+  {
+    "source": "sabaiapps",
+    "city": "בית שאן",
+    "name": "מקווה ג' ע\"ש ר ישראל קבלו ז\"ל",
+    "reasonSkipped": "SabaiApps decision: manual_review_required",
+    "category": "manual-review",
+    "whatIsNeededNext": "manual review",
+    "matchedId": "mikveh-59",
+    "detail": "Same location (63m) but divergent names (sim 0.33) — same facility under a different name vs a distinct nearby mikvah is unclear; needs a human."
+  },
+  {
+    "source": "sabaiapps",
+    "city": "גני תקווה",
+    "name": "מקווה ישמח משה",
+    "reasonSkipped": "SabaiApps record has no coordinates — cannot place",
+    "category": "geocoding-needed",
+    "whatIsNeededNext": "manual coordinates",
+    "matchedId": null,
+    "detail": "No native coordinates — cannot be deduplicated or placed yet. Resolve coordinates (geocoder or manual), then re-run dedup before deciding add vs enrich."
+  },
+  {
+    "source": "sabaiapps",
+    "city": "באר שבע",
+    "name": "מקווה רמות 1",
+    "reasonSkipped": "SabaiApps record probably matches a gov mikvah — confirm, then enrich (coords/sourceUrl)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-51"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "באר שבע",
+    "name": "מקווה רמות 2",
+    "reasonSkipped": "SabaiApps record is an exact match of an existing gov mikvah",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-53"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "באר שבע",
+    "name": "מקווה מי מרום",
+    "reasonSkipped": "SabaiApps record is an exact match of an existing gov mikvah",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-48"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "באר שבע",
+    "name": "מקווה כלניות",
+    "reasonSkipped": "SabaiApps record is an exact match of an existing gov mikvah",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-47"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "באר שבע",
+    "name": "מקווה חצרים",
+    "reasonSkipped": "SabaiApps record is an exact match of an existing gov mikvah",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-45"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "באר שבע",
+    "name": "מקווה נאות לון",
+    "reasonSkipped": "SabaiApps record probably matches a gov mikvah — confirm, then enrich (coords/sourceUrl)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-49"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "באר שבע",
+    "name": "מקווה שאול המלך",
+    "reasonSkipped": "SabaiApps record is an exact match of an existing gov mikvah",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-52"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "באר שבע",
+    "name": "מקווה י\"א - סגור עקב שיפוצים",
+    "reasonSkipped": "SabaiApps record is an exact match of an existing gov mikvah",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-46"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "באר שבע",
+    "name": "מקווה ה'",
+    "reasonSkipped": "SabaiApps record probably matches a gov mikvah — confirm, then enrich (coords/sourceUrl)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-43"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "באר שבע",
+    "name": "מקווה ד' מרכז",
+    "reasonSkipped": "SabaiApps record probably matches a gov mikvah — confirm, then enrich (coords/sourceUrl)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-41"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "באר שבע",
+    "name": "מקווה ד' צפון",
+    "reasonSkipped": "SabaiApps record probably matches a gov mikvah — confirm, then enrich (coords/sourceUrl)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-42"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "באר שבע",
+    "name": "מקווה ג'",
+    "reasonSkipped": "SabaiApps vs gov: requires_manual_review",
+    "category": "manual-review",
+    "whatIsNeededNext": "manual review",
+    "matchedId": "mikveh-40"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "באר שבע",
+    "name": "מקווה א'",
+    "reasonSkipped": "SabaiApps record is an exact match of an existing gov mikvah",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-39"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "ראש העין",
+    "name": "מקווה רש\"י",
+    "reasonSkipped": "SabaiApps record probably matches a gov mikvah — confirm, then enrich (coords/sourceUrl)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-479"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "ראש העין",
+    "name": "מקווה הטייס - סגור לשיפוצים",
+    "reasonSkipped": "SabaiApps vs gov: requires_manual_review",
+    "category": "manual-review",
+    "whatIsNeededNext": "manual review",
+    "matchedId": "mikveh-476"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "ראש העין",
+    "name": "מקווה מבצע דני - סגור לשיפוצים",
+    "reasonSkipped": "SabaiApps vs gov: requires_manual_review",
+    "category": "manual-review",
+    "whatIsNeededNext": "manual review",
+    "matchedId": "mikveh-478"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "ראש העין",
+    "name": "מקווה הרש\"ש",
+    "reasonSkipped": "SabaiApps record is an exact match of an existing gov mikvah",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-477"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "לוד",
+    "name": "מקווה נשים גני יער",
+    "reasonSkipped": "SabaiApps record probably matches a gov mikvah — confirm, then enrich (coords/sourceUrl)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-265"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "לוד",
+    "name": "מקווה נשים חב\"ד",
+    "reasonSkipped": "SabaiApps record probably matches a gov mikvah — confirm, then enrich (coords/sourceUrl)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-266"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "לוד",
+    "name": "מקווה נשים גני אביב",
+    "reasonSkipped": "SabaiApps record is an exact match of an existing gov mikvah",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-264"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "לוד",
+    "name": "מקווה נשים נאות יצחק",
+    "reasonSkipped": "SabaiApps record is an exact match of an existing gov mikvah",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-267"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "לוד",
+    "name": "מקווה נשים גבעת הזיתים",
+    "reasonSkipped": "SabaiApps record is an exact match of an existing gov mikvah",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-263"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "חדרה",
+    "name": "מקווה חבד מרכזי",
+    "reasonSkipped": "SabaiApps vs gov: ambiguous",
+    "category": "manual-review",
+    "whatIsNeededNext": "manual review",
+    "matchedId": "mikveh-210"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "חדרה",
+    "name": "מקווה נשים טהרת ציון - הפארק",
+    "reasonSkipped": "SabaiApps record is an exact match of an existing gov mikvah",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-212"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "חדרה",
+    "name": "מקווה נשים נווה חיים",
+    "reasonSkipped": "SabaiApps record is an exact match of an existing gov mikvah",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-213"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "חדרה",
+    "name": "מקווה נשים אולגה",
+    "reasonSkipped": "SabaiApps record probably matches a gov mikvah — confirm, then enrich (coords/sourceUrl)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-215"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "חדרה",
+    "name": "מקווה נשים בית אליעזר",
+    "reasonSkipped": "SabaiApps record probably matches a gov mikvah — confirm, then enrich (coords/sourceUrl)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-208"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "חדרה",
+    "name": "מקווה מרכזי חדרה",
+    "reasonSkipped": "SabaiApps record is an exact match of an existing gov mikvah",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-217"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "הרצליה",
+    "name": "מקווה הרצליה פיתוח - נשים ♿",
+    "reasonSkipped": "SabaiApps record is an exact match of an existing gov mikvah",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-184"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "הרצליה",
+    "name": "מקווה הרצליה ב' - נשים",
+    "reasonSkipped": "SabaiApps record is an exact match of an existing gov mikvah",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-181"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "הרצליה",
+    "name": "מקווה נווה עמל - נשים",
+    "reasonSkipped": "SabaiApps record probably matches a gov mikvah — confirm, then enrich (coords/sourceUrl)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-183"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "הרצליה",
+    "name": "מקווה שביב - נשים",
+    "reasonSkipped": "SabaiApps record probably matches a gov mikvah — confirm, then enrich (coords/sourceUrl)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-185"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "הרצליה",
+    "name": "מקווה מרכזי - נשים",
+    "reasonSkipped": "SabaiApps record probably matches a gov mikvah — confirm, then enrich (coords/sourceUrl)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-182"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "גבעת זאב",
+    "name": "מקווה גבעון",
+    "reasonSkipped": "SabaiApps record probably matches a gov mikvah — confirm, then enrich (coords/sourceUrl)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-123"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "גבעת זאב",
+    "name": "מקווה נווה מנחם",
+    "reasonSkipped": "SabaiApps record probably matches a gov mikvah — confirm, then enrich (coords/sourceUrl)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-124"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "גבעת זאב",
+    "name": "מקווה עמק איילון",
+    "reasonSkipped": "SabaiApps record probably matches a gov mikvah — confirm, then enrich (coords/sourceUrl)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-125"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "גבעת שמואל",
+    "name": "מקווה כלים - הולצברג",
+    "reasonSkipped": "SabaiApps record is an exact match of an existing gov mikvah",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-126"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "גבעת שמואל",
+    "name": "מקווה עגנון",
+    "reasonSkipped": "SabaiApps vs gov: requires_manual_review",
+    "category": "manual-review",
+    "whatIsNeededNext": "manual review",
+    "matchedId": "mikveh-128"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "גבעת שמואל",
+    "name": "מקווה נימרובר",
+    "reasonSkipped": "SabaiApps record is an exact match of an existing gov mikvah",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-127"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "גבעת שמואל",
+    "name": "מקווה כלים - נימרובר",
+    "reasonSkipped": "SabaiApps record probably matches a gov mikvah — confirm, then enrich (coords/sourceUrl)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-127"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "גבעת שמואל",
+    "name": "מקווה שמחה הולצברג",
+    "reasonSkipped": "SabaiApps record is an exact match of an existing gov mikvah",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-126"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "גבעת שמואל",
+    "name": "מקווה גברים",
+    "reasonSkipped": "SabaiApps record is an exact match of an existing gov mikvah",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-126"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "בית שאן",
+    "name": "מקווה נשים אליהו - ע\"ש יהושוע אביטן ז\"ל",
+    "reasonSkipped": "SabaiApps vs gov: requires_manual_review",
+    "category": "manual-review",
+    "whatIsNeededNext": "manual review",
+    "matchedId": "mikveh-58"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "שדרות",
+    "name": "מקווה נשים הרב יורם אברג'ל",
+    "reasonSkipped": "SabaiApps record probably matches a gov mikvah — confirm, then enrich (coords/sourceUrl)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-553"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "שדרות",
+    "name": "מקווה רחל אמנו",
+    "reasonSkipped": "SabaiApps record probably matches a gov mikvah — confirm, then enrich (coords/sourceUrl)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-554"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "נוף הגליל",
+    "name": "מקווה מלכות דוד",
+    "reasonSkipped": "SabaiApps vs gov: ambiguous",
+    "category": "manual-review",
+    "whatIsNeededNext": "manual review",
+    "matchedId": "mikveh-412"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "נוף הגליל",
+    "name": "מקווה צפוני",
+    "reasonSkipped": "SabaiApps vs gov: ambiguous",
+    "category": "manual-review",
+    "whatIsNeededNext": "manual review",
+    "matchedId": "mikveh-415"
+  },
+  {
+    "source": "sabaiapps",
+    "city": "נוף הגליל",
+    "name": "מקווה דרומי",
+    "reasonSkipped": "SabaiApps vs gov: ambiguous",
+    "category": "manual-review",
+    "whatIsNeededNext": "manual review",
+    "matchedId": "mikveh-411"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מודיעין עילית",
+    "name": "מקווה חפציבה",
+    "reasonSkipped": "only a city/settlement-center coordinate resolved (low confidence) — not write-ready",
+    "category": "coordless-city-level",
+    "whatIsNeededNext": "address-level geocoding",
+    "matchedId": null,
+    "detail": "free-text city center (unvalidated, coarse)"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מודיעין עילית",
+    "name": "מקווה נאות הפסגה",
+    "reasonSkipped": "only a city/settlement-center coordinate resolved (low confidence) — not write-ready",
+    "category": "coordless-city-level",
+    "whatIsNeededNext": "address-level geocoding",
+    "matchedId": null,
+    "detail": "free-text city center (unvalidated, coarse)"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מודיעין עילית",
+    "name": "מקווה קרית ספר (גברים)",
+    "reasonSkipped": "only a city/settlement-center coordinate resolved (low confidence) — not write-ready",
+    "category": "coordless-city-level",
+    "whatIsNeededNext": "address-level geocoding",
+    "matchedId": null,
+    "detail": "free-text city center (unvalidated, coarse)"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מודיעין עילית",
+    "name": "מקווה קרית ספר (גברים)",
+    "reasonSkipped": "only a city/settlement-center coordinate resolved (low confidence) — not write-ready",
+    "category": "coordless-city-level",
+    "whatIsNeededNext": "address-level geocoding",
+    "matchedId": null,
+    "detail": "free-text city center (unvalidated, coarse)"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מודיעין עילית",
+    "name": "מקווה ברכפלד (גברים)",
+    "reasonSkipped": "only a city/settlement-center coordinate resolved (low confidence) — not write-ready",
+    "category": "coordless-city-level",
+    "whatIsNeededNext": "address-level geocoding",
+    "matchedId": null,
+    "detail": "free-text city center (unvalidated, coarse)"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מודיעין עילית",
+    "name": "מקווה נאות הפסגה (גברים)",
+    "reasonSkipped": "only a city/settlement-center coordinate resolved (low confidence) — not write-ready",
+    "category": "coordless-city-level",
+    "whatIsNeededNext": "address-level geocoding",
+    "matchedId": null,
+    "detail": "free-text city center (unvalidated, coarse)"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מודיעין עילית",
+    "name": "מקווה קרית ספר (כלים)",
+    "reasonSkipped": "only a city/settlement-center coordinate resolved (low confidence) — not write-ready",
+    "category": "coordless-city-level",
+    "whatIsNeededNext": "address-level geocoding",
+    "matchedId": null,
+    "detail": "free-text city center (unvalidated, coarse)"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מודיעין עילית",
+    "name": "מקווה נאות הפסגה (כלים)",
+    "reasonSkipped": "only a city/settlement-center coordinate resolved (low confidence) — not write-ready",
+    "category": "coordless-city-level",
+    "whatIsNeededNext": "address-level geocoding",
+    "matchedId": null,
+    "detail": "free-text city center (unvalidated, coarse)"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מעלה אדומים",
+    "name": "מקווה גבעת המייסדים",
+    "reasonSkipped": "only a city/settlement-center coordinate resolved (low confidence) — not write-ready",
+    "category": "coordless-city-level",
+    "whatIsNeededNext": "address-level geocoding",
+    "matchedId": null,
+    "detail": "free-text city center (unvalidated, coarse)"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מעלה אדומים",
+    "name": "מקווה לבקשה מיוחדת ולבירורים ניתן לפנות לאחראית המקוואות גב' מיכל בינימין ניי: 050-8296225",
+    "reasonSkipped": "only a city/settlement-center coordinate resolved (low confidence) — not write-ready",
+    "category": "coordless-city-level",
+    "whatIsNeededNext": "address-level geocoding",
+    "matchedId": null,
+    "detail": "free-text city center (unvalidated, coarse)"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "ברוכין - מונגש",
+    "name": "מקווה ברוכין - מונגש",
+    "reasonSkipped": "geocoding failed (settlement/street not in Nominatim)",
+    "category": "coordless-failed",
+    "whatIsNeededNext": "manual coordinates",
+    "matchedId": null,
+    "detail": "no geocode (city + address both unresolved)"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "הר ברכה",
+    "name": "מקווה הר ברכה",
+    "reasonSkipped": "only a city/settlement-center coordinate resolved (low confidence) — not write-ready",
+    "category": "coordless-city-level",
+    "whatIsNeededNext": "address-level geocoding",
+    "matchedId": null,
+    "detail": "free-text city center (unvalidated, coarse)"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "חוות גלעד",
+    "name": "מקווה חוות גלעד",
+    "reasonSkipped": "geocoding failed (settlement/street not in Nominatim)",
+    "category": "coordless-failed",
+    "whatIsNeededNext": "manual coordinates",
+    "matchedId": null,
+    "detail": "no geocode (city + address both unresolved)"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "חוות יאיר",
+    "name": "מקווה חוות יאיר",
+    "reasonSkipped": "geocoding failed (settlement/street not in Nominatim)",
+    "category": "coordless-failed",
+    "whatIsNeededNext": "manual coordinates",
+    "matchedId": null,
+    "detail": "no geocode (city + address both unresolved)"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "טל מנשה",
+    "name": "מקווה טל מנשה",
+    "reasonSkipped": "only a city/settlement-center coordinate resolved (low confidence) — not write-ready",
+    "category": "coordless-city-level",
+    "whatIsNeededNext": "address-level geocoding",
+    "matchedId": null,
+    "detail": "free-text city center (unvalidated, coarse)"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "לשם",
+    "name": "מקווה לשם",
+    "reasonSkipped": "only a city/settlement-center coordinate resolved (low confidence) — not write-ready",
+    "category": "coordless-city-level",
+    "whatIsNeededNext": "address-level geocoding",
+    "matchedId": null,
+    "detail": "free-text city center (unvalidated, coarse)"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מבוא דותן",
+    "name": "מקווה מבוא דותן",
+    "reasonSkipped": "only a city/settlement-center coordinate resolved (low confidence) — not write-ready",
+    "category": "coordless-city-level",
+    "whatIsNeededNext": "address-level geocoding",
+    "matchedId": null,
+    "detail": "free-text city center (unvalidated, coarse)"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "נופי נחמיה",
+    "name": "מקווה נופי נחמיה",
+    "reasonSkipped": "geocoding failed (settlement/street not in Nominatim)",
+    "category": "coordless-failed",
+    "whatIsNeededNext": "manual coordinates",
+    "matchedId": null,
+    "detail": "no geocode (city + address both unresolved)"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "פדואל - מונגש",
+    "name": "מקווה פדואל - מונגש",
+    "reasonSkipped": "geocoding failed (settlement/street not in Nominatim)",
+    "category": "coordless-failed",
+    "whatIsNeededNext": "manual coordinates",
+    "matchedId": null,
+    "detail": "no geocode (city + address both unresolved)"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "אדם",
+    "name": "מקווה אדם",
+    "reasonSkipped": "only a city/settlement-center coordinate resolved (low confidence) — not write-ready",
+    "category": "coordless-city-level",
+    "whatIsNeededNext": "address-level geocoding",
+    "matchedId": null,
+    "detail": "free-text city center (unvalidated, coarse)"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "אחיה",
+    "name": "מקווה אחיה",
+    "reasonSkipped": "only a city/settlement-center coordinate resolved (low confidence) — not write-ready",
+    "category": "coordless-city-level",
+    "whatIsNeededNext": "address-level geocoding",
+    "matchedId": null,
+    "detail": "free-text city center (unvalidated, coarse)"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "אש קודש",
+    "name": "מקווה אש קודש",
+    "reasonSkipped": "only a city/settlement-center coordinate resolved (low confidence) — not write-ready",
+    "category": "coordless-city-level",
+    "whatIsNeededNext": "address-level geocoding",
+    "matchedId": null,
+    "detail": "free-text city center (unvalidated, coarse)"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "אלון",
+    "name": "מקווה אלון",
+    "reasonSkipped": "only a city/settlement-center coordinate resolved (low confidence) — not write-ready",
+    "category": "coordless-city-level",
+    "whatIsNeededNext": "address-level geocoding",
+    "matchedId": null,
+    "detail": "validated city/settlement center"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "בני אדם",
+    "name": "מקווה בני אדם",
+    "reasonSkipped": "geocoding failed (settlement/street not in Nominatim)",
+    "category": "coordless-failed",
+    "whatIsNeededNext": "manual coordinates",
+    "matchedId": null,
+    "detail": "no geocode (city + address both unresolved)"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "גבעת אסף",
+    "name": "מקווה גבעת אסף",
+    "reasonSkipped": "geocoding failed (settlement/street not in Nominatim)",
+    "category": "coordless-failed",
+    "whatIsNeededNext": "manual coordinates",
+    "matchedId": null,
+    "detail": "no geocode (city + address both unresolved)"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "גבעת הרואה",
+    "name": "מקווה גבעת הרואה",
+    "reasonSkipped": "geocoding failed (settlement/street not in Nominatim)",
+    "category": "coordless-failed",
+    "whatIsNeededNext": "manual coordinates",
+    "matchedId": null,
+    "detail": "no geocode (city + address both unresolved)"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "גבעת הראל",
+    "name": "מקווה גבעת הראל",
+    "reasonSkipped": "geocoding failed (settlement/street not in Nominatim)",
+    "category": "coordless-failed",
+    "whatIsNeededNext": "manual coordinates",
+    "matchedId": null,
+    "detail": "no geocode (city + address both unresolved)"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "חרשה",
+    "name": "מקווה חרשה",
+    "reasonSkipped": "only a city/settlement-center coordinate resolved (low confidence) — not write-ready",
+    "category": "coordless-city-level",
+    "whatIsNeededNext": "address-level geocoding",
+    "matchedId": null,
+    "detail": "free-text city center (unvalidated, coarse)"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "חשמונאים",
+    "name": "מקווה חשמונאים",
+    "reasonSkipped": "once placed (city-level), coincides with live mikveh-339 (conflict)",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-339",
+    "detail": "validated city/settlement center"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "כוכב יעקב",
+    "name": "מקווה כוכב יעקב",
+    "reasonSkipped": "geocoding failed (settlement/street not in Nominatim)",
+    "category": "coordless-failed",
+    "whatIsNeededNext": "manual coordinates",
+    "matchedId": null,
+    "detail": "no geocode (city + address both unresolved)"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "כרם רעים",
+    "name": "מקווה כרם רעים",
+    "reasonSkipped": "geocoding failed (settlement/street not in Nominatim)",
+    "category": "coordless-failed",
+    "whatIsNeededNext": "manual coordinates",
+    "matchedId": null,
+    "detail": "no geocode (city + address both unresolved)"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "מגרון",
+    "name": "מקווה מגרון",
+    "reasonSkipped": "geocoding failed (settlement/street not in Nominatim)",
+    "category": "coordless-failed",
+    "whatIsNeededNext": "manual coordinates",
+    "matchedId": null,
+    "detail": "no geocode (city + address both unresolved)"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "מכמש",
+    "name": "מקווה מכמש",
+    "reasonSkipped": "only a city/settlement-center coordinate resolved (low confidence) — not write-ready",
+    "category": "coordless-city-level",
+    "whatIsNeededNext": "address-level geocoding",
+    "matchedId": null,
+    "detail": "free-text city center (unvalidated, coarse)"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "מעלה לבונה",
+    "name": "מקווה מעלה לבונה",
+    "reasonSkipped": "geocoding failed (settlement/street not in Nominatim)",
+    "category": "coordless-failed",
+    "whatIsNeededNext": "manual coordinates",
+    "matchedId": null,
+    "detail": "no geocode (city + address both unresolved)"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "מתתיהו",
+    "name": "מקווה מתתיהו",
+    "reasonSkipped": "only a city/settlement-center coordinate resolved (low confidence) — not write-ready",
+    "category": "coordless-city-level",
+    "whatIsNeededNext": "address-level geocoding",
+    "matchedId": null,
+    "detail": "free-text city center (unvalidated, coarse)"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "נווה צוף",
+    "name": "מקווה נווה צוף",
+    "reasonSkipped": "geocoding failed (settlement/street not in Nominatim)",
+    "category": "coordless-failed",
+    "whatIsNeededNext": "manual coordinates",
+    "matchedId": null,
+    "detail": "no geocode (city + address both unresolved)"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "נריה",
+    "name": "מקווה נריה",
+    "reasonSkipped": "only a city/settlement-center coordinate resolved (low confidence) — not write-ready",
+    "category": "coordless-city-level",
+    "whatIsNeededNext": "address-level geocoding",
+    "matchedId": null,
+    "detail": "validated city/settlement center"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "עדי עד",
+    "name": "מקווה עדי עד",
+    "reasonSkipped": "only a city/settlement-center coordinate resolved (low confidence) — not write-ready",
+    "category": "coordless-city-level",
+    "whatIsNeededNext": "address-level geocoding",
+    "matchedId": null,
+    "detail": "free-text city center (unvalidated, coarse)"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "עטרת",
+    "name": "מקווה עטרת",
+    "reasonSkipped": "only a city/settlement-center coordinate resolved (low confidence) — not write-ready",
+    "category": "coordless-city-level",
+    "whatIsNeededNext": "address-level geocoding",
+    "matchedId": null,
+    "detail": "free-text city center (unvalidated, coarse)"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "עלי מרכז",
+    "name": "מקווה עלי מרכז",
+    "reasonSkipped": "only a city/settlement-center coordinate resolved (low confidence) — not write-ready",
+    "category": "coordless-city-level",
+    "whatIsNeededNext": "address-level geocoding",
+    "matchedId": null,
+    "detail": "free-text city center (unvalidated, coarse)"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "עלי שכונת היובל",
+    "name": "מקווה עלי שכונת היובל",
+    "reasonSkipped": "geocoding failed (settlement/street not in Nominatim)",
+    "category": "coordless-failed",
+    "whatIsNeededNext": "manual coordinates",
+    "matchedId": null,
+    "detail": "no geocode (city + address both unresolved)"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "עלי פלגי מים",
+    "name": "מקווה עלי פלגי מים",
+    "reasonSkipped": "geocoding failed (settlement/street not in Nominatim)",
+    "category": "coordless-failed",
+    "whatIsNeededNext": "manual coordinates",
+    "matchedId": null,
+    "detail": "no geocode (city + address both unresolved)"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "עפרה",
+    "name": "מקווה עפרה",
+    "reasonSkipped": "only a city/settlement-center coordinate resolved (low confidence) — not write-ready",
+    "category": "coordless-city-level",
+    "whatIsNeededNext": "address-level geocoding",
+    "matchedId": null,
+    "detail": "free-text city center (unvalidated, coarse)"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "פסגות",
+    "name": "מקווה פסגות",
+    "reasonSkipped": "only a city/settlement-center coordinate resolved (low confidence) — not write-ready",
+    "category": "coordless-city-level",
+    "whatIsNeededNext": "address-level geocoding",
+    "matchedId": null,
+    "detail": "validated city/settlement center"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "קידה",
+    "name": "מקווה קידה",
+    "reasonSkipped": "only a city/settlement-center coordinate resolved (low confidence) — not write-ready",
+    "category": "coordless-city-level",
+    "whatIsNeededNext": "address-level geocoding",
+    "matchedId": null,
+    "detail": "free-text city center (unvalidated, coarse)"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "רימונים",
+    "name": "מקווה רימונים",
+    "reasonSkipped": "only a city/settlement-center coordinate resolved (low confidence) — not write-ready",
+    "category": "coordless-city-level",
+    "whatIsNeededNext": "address-level geocoding",
+    "matchedId": null,
+    "detail": "validated city/settlement center"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "שבות רחל",
+    "name": "מקווה שבות רחל",
+    "reasonSkipped": "geocoding failed (settlement/street not in Nominatim)",
+    "category": "coordless-failed",
+    "whatIsNeededNext": "manual coordinates",
+    "matchedId": null,
+    "detail": "no geocode (city + address both unresolved)"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "תל ציון",
+    "name": "מקווה תל ציון",
+    "reasonSkipped": "only a city/settlement-center coordinate resolved (low confidence) — not write-ready",
+    "category": "coordless-city-level",
+    "whatIsNeededNext": "address-level geocoding",
+    "matchedId": null,
+    "detail": "free-text city center (unvalidated, coarse)"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "מעגלים",
+    "name": "מקווה מעגלים",
+    "reasonSkipped": "only a city/settlement-center coordinate resolved (low confidence) — not write-ready",
+    "category": "coordless-city-level",
+    "whatIsNeededNext": "address-level geocoding",
+    "matchedId": null,
+    "detail": "validated city/settlement center"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מודיעין עילית",
+    "name": "מקווה קרית ספר",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-295"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מודיעין עילית",
+    "name": "מקווה קרית ספר",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-293"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מודיעין עילית",
+    "name": "מקווה ברכפלד",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-299"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מודיעין עילית",
+    "name": "מקווה ברכפלד",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-297"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מודיעין עילית",
+    "name": "מקווה חזון דוד",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-294"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מודיעין עילית",
+    "name": "מקווה קרית ספר (גברים)",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-293"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מודיעין עילית",
+    "name": "מקווה קרית ספר (גברים)",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-295"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מודיעין עילית",
+    "name": "מקווה קרית ספר (גברים)",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-294"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מודיעין עילית",
+    "name": "מקווה ברכפלד (גברים)",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-299"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מודיעין עילית",
+    "name": "מקווה ברכפלד (גברים)",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-297"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מודיעין עילית",
+    "name": "מקווה חפציבה (גברים)",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-296"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מודיעין עילית",
+    "name": "מקווה קרית ספר (כלים)",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-293"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מודיעין עילית",
+    "name": "מקווה קרית ספר (כלים)",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-293"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מודיעין עילית",
+    "name": "מקווה ברכפלד (כלים)",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-299"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מודיעין עילית",
+    "name": "מקווה ברכפלד (כלים)",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-297"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מודיעין עילית",
+    "name": "מקווה חפציבה (כלים)",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-296"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מעלה אדומים",
+    "name": "מקווה מצפה נבו",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-379"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מעלה אדומים",
+    "name": "מקווה הנחלים",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-378"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מעלה אדומים",
+    "name": "מקווה פרי מגדים (03)",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-381"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מעלה אדומים",
+    "name": "מקווה צמח השדה (06)",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-376"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מעלה אדומים",
+    "name": "מקווה נופי הסלע",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-380"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "אבני חפץ",
+    "name": "מקווה אבני חפץ",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-558"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "איתמר",
+    "name": "מקווה איתמר",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-559"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "אלון מורה",
+    "name": "מקווה אלון מורה",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-560"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "ברקן",
+    "name": "מקווה ברקן",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-562"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "חיננית",
+    "name": "מקווה חיננית",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-563"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "חרמש",
+    "name": "מקווה חרמש",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-564"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "יצהר",
+    "name": "מקווה יצהר",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-565"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "יקיר",
+    "name": "מקווה יקיר",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-566"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "כפר תפוח",
+    "name": "מקווה כפר תפוח",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-567"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מגדלים",
+    "name": "מקווה מגדלים",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-569"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "נופים",
+    "name": "מקווה נופים",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-570"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "ענב",
+    "name": "מקווה ענב",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-585"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "עלי זהב",
+    "name": "מקווה עלי זהב",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-571"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "צופים",
+    "name": "מקווה צופים",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-573"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "קרית נטפים",
+    "name": "מקווה קרית נטפים",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-574"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "רבבה",
+    "name": "מקווה רבבה",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-575"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "רחלים",
+    "name": "מקווה רחלים",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-576"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "שבי שומרון",
+    "name": "מקווה שבי שומרון",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-577"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "שקד",
+    "name": "מקווה שקד",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-578"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מודיעין-מכבים-רעות",
+    "name": "מקווה כלים (כלים)",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-290"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מודיעין-מכבים-רעות",
+    "name": "מקווה כלים (כלים)",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-291"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מודיעין-מכבים-רעות",
+    "name": "מקווה כלים (כלים)",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-289"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מודיעין-מכבים-רעות",
+    "name": "מקווה כלים (כלים)",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-292"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מודיעין-מכבים-רעות",
+    "name": "מקווה כלים (כלים)",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-288"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מודיעין-מכבים-רעות",
+    "name": "מקווה נשים",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-290"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מודיעין-מכבים-רעות",
+    "name": "מקווה נשים",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-291"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מודיעין-מכבים-רעות",
+    "name": "מקווה נשים",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-289"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מודיעין-מכבים-רעות",
+    "name": "מקווה נשים",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-292"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מודיעין-מכבים-רעות",
+    "name": "מקווה נשים",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-288"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מודיעין-מכבים-רעות",
+    "name": "מקווה גברים",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-291"
+  },
+  {
+    "source": "municipal-phase6",
+    "city": "מודיעין-מכבים-רעות",
+    "name": "מקווה נשים",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-287"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "בית חורון",
+    "name": "מקווה בית חורון",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-312"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "גבעון החדשה",
+    "name": "מקווה גבעון החדשה",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-319"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "גני מודיעין",
+    "name": "מקווה גני מודיעין",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-329"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "דולב",
+    "name": "מקווה דולב",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-306"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "טלמון",
+    "name": "מקווה טלמון",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-321"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "כוכב השחר",
+    "name": "מקווה כוכב השחר",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-322"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "כפר אדומים",
+    "name": "מקווה כפר אדומים",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-307"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "מבוא חורון",
+    "name": "מקווה מבוא חורון",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-325"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "מצפה יריחו",
+    "name": "מקווה מצפה יריחו",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-327"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "נופי פרת",
+    "name": "מקווה נופי פרת",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-331"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "נחליאל",
+    "name": "מקווה נחליאל",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-332"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "נעלה",
+    "name": "מקווה נעלה",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-333"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "עמיחי",
+    "name": "מקווה עמיחי",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-337"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "שילה",
+    "name": "מקווה שילה",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-340"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "בית הגדי",
+    "name": "מקווה בית הגדי",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-540"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "גבעולים",
+    "name": "מקווה גבעולים",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-537"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "זמרת",
+    "name": "מקווה זמרת",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-538"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "זרועה",
+    "name": "מקווה זרועה",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-539"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "יושיביה",
+    "name": "מקווה יושיביה",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-542"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "כפר מימון",
+    "name": "מקווה כפר מימון",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-543"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "מלילות",
+    "name": "מקווה מלילות",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-544"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "תקומה",
+    "name": "מקווה תקומה",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-552"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "סעד",
+    "name": "מקווה סעד",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-546"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "עלומים",
+    "name": "מקווה עלומים",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-547"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "שובה",
+    "name": "מקווה שובה",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-548"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "שוקדה",
+    "name": "מקווה שוקדה",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-549"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "שיבולים",
+    "name": "מקווה שיבולים",
+    "reasonSkipped": "municipal record probably matches an existing record — confirm, then enrich (hours/balanit)",
+    "category": "enrichment-candidate",
+    "whatIsNeededNext": "enrichment decision",
+    "matchedId": "mikveh-536"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "שרשרת",
+    "name": "מקווה שרשרת",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-550"
+  },
+  {
+    "source": "asbina-phase7",
+    "city": "תושיה",
+    "name": "מקווה תושיה",
+    "reasonSkipped": "municipal record exactly matches an existing record",
+    "category": "duplicate-conflict",
+    "whatIsNeededNext": "duplicate confirmation",
+    "matchedId": "mikveh-551"
+  }
+]

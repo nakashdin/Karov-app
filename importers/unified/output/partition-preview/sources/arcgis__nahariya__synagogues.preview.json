@@ -1,0 +1,1158 @@
+[
+  {
+    "id": "arcgis:nahariya::1",
+    "name": "אברהם אבינו",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "שקד 31",
+    "location": {
+      "latitude": 32.98822933468792,
+      "longitude": 35.08552474843723
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::2",
+    "name": "אברהם אבינו \\גרוזינים",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "נהריה",
+    "location": {
+      "latitude": 32.98822933468792,
+      "longitude": 35.08552474843723
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::3",
+    "name": "אהבת חיים",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "יפה נוף 44",
+    "location": {
+      "latitude": 33.00079550292159,
+      "longitude": 35.10092282239344
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::4",
+    "name": "אהבת שלום \\גרוזינים",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "קיבוץ גךויות 61",
+    "location": {
+      "latitude": 33.01317493577177,
+      "longitude": 35.10506651804459
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::5",
+    "name": "אהל חיים",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "עזרא 8",
+    "location": {
+      "latitude": 33.00177263563472,
+      "longitude": 35.10345301985363
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::6",
+    "name": "אהרון הכהן",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "אפריים שריר 1",
+    "location": {
+      "latitude": 32.996192303103676,
+      "longitude": 35.09811325468743
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::8",
+    "name": "אור החיים",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "יהודה המכבי 11",
+    "location": {
+      "latitude": 33.02473304173749,
+      "longitude": 35.10812318004796
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::9",
+    "name": "אלי כהן",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "קיבוץ גלויות 53",
+    "location": {
+      "latitude": 33.012086377347956,
+      "longitude": 35.104526866401116
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::10",
+    "name": "אליהו הנביא",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "מבצע אנטבה 13",
+    "location": {
+      "latitude": 33.01254509193846,
+      "longitude": 35.09962476321785
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::11",
+    "name": "אמת",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "יהודה המכבי 19",
+    "location": {
+      "latitude": 33.02503906251367,
+      "longitude": 35.10765264564884
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::12",
+    "name": "ארז הלבנון",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "שטיינהרט 3",
+    "location": {
+      "latitude": 32.999974064037815,
+      "longitude": 35.09334286857184
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::13",
+    "name": "באתי לגני",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "שביל הגנים \\ גולומב 6",
+    "location": {
+      "latitude": 33.00834061720716,
+      "longitude": 35.09488002114668
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::14",
+    "name": "בית חב\"ד",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "דרך יחיאם פינת חנה סנש",
+    "location": {
+      "latitude": 33.00750697498474,
+      "longitude": 35.101492107003516
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::15",
+    "name": "בית חולים",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "דרך בן צבי",
+    "location": {
+      "latitude": 33.00940636925289,
+      "longitude": 35.116909644549516
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::16",
+    "name": "בית יעקב",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "אחד העם 6",
+    "location": {
+      "latitude": 33.004800637162575,
+      "longitude": 35.09431585311959
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::17",
+    "name": "בית ישראל",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "שביל זיסו 2",
+    "location": {
+      "latitude": 33.00769470296707,
+      "longitude": 35.10193224884688
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::18",
+    "name": "בית מאיר",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "גרינבאום 15/12",
+    "location": {
+      "latitude": 33.01488405000947,
+      "longitude": 35.09556618360247
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::19",
+    "name": "בית קיי",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "שד' בית קיי 11",
+    "location": {
+      "latitude": 32.99762926624897,
+      "longitude": 35.09271792354099
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::20",
+    "name": "בן איש חי",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "עזרא 8",
+    "location": {
+      "latitude": 33.00183116676626,
+      "longitude": 35.10369243318961
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::21",
+    "name": "גואל ישראל",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "המייסדים 30",
+    "location": {
+      "latitude": 33.00978203605911,
+      "longitude": 35.095313151817116
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::22",
+    "name": "היכל אליהו",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "יוסף לוי 3",
+    "location": {
+      "latitude": 33.0098349705053,
+      "longitude": 35.09532089880406
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::23",
+    "name": "היכל דניאל",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "רמז 29",
+    "location": {
+      "latitude": 33.00270341257158,
+      "longitude": 35.090945588321944
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::24",
+    "name": "היכל פנחס יצחק",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "דוד בן גאון 31",
+    "location": {
+      "latitude": 33.02688203842289,
+      "longitude": 35.09641714957077
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::25",
+    "name": "הראל גרעין",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "ויצמן 89",
+    "location": {
+      "latitude": 33.00262496477465,
+      "longitude": 35.09213903302338
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::26",
+    "name": "ואהבת לרעך",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "ארלוזוב 43",
+    "location": {
+      "latitude": 33.02192617472477,
+      "longitude": 35.09469497110071
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::27",
+    "name": "חב\"ד סוקולוב",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "סוקולוב 34",
+    "location": {
+      "latitude": 33.00066362173561,
+      "longitude": 35.08767064160913
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::28",
+    "name": "חזון עובדיה",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "עמק יזראל 8",
+    "location": {
+      "latitude": 33.00602054280333,
+      "longitude": 35.104778973628505
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::29",
+    "name": "טמזרת",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "יחיעם 11",
+    "location": {
+      "latitude": 33.00763274445019,
+      "longitude": 35.10191498434984
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::31",
+    "name": "יד לאחים",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "יפה נוף 28",
+    "location": {
+      "latitude": 32.99921943472649,
+      "longitude": 35.10097473986088
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::32",
+    "name": "יצחק אבינו",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "האיריס 63",
+    "location": {
+      "latitude": 32.994188179531285,
+      "longitude": 35.090260150372224
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::33",
+    "name": "ישועת ישראל",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "זבוטינסקי 9",
+    "location": {
+      "latitude": 33.00946768620085,
+      "longitude": 35.09142812842151
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::34",
+    "name": "ישורון",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "אביר יעקב 35",
+    "location": {
+      "latitude": 33.0097758675584,
+      "longitude": 35.10464462006212
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::35",
+    "name": "ישיבת נהר דעה",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "יפה נוף 44",
+    "location": {
+      "latitude": 33.000862884450925,
+      "longitude": 35.101500999204774
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::36",
+    "name": "ישמח ישראל",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "החלוץ 66",
+    "location": {
+      "latitude": 33.02146079280695,
+      "longitude": 35.1054382518239
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::37",
+    "name": "כולל היכל אליהו",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "יוסף לוי 2",
+    "location": {
+      "latitude": 33.00971873651305,
+      "longitude": 35.09613842835624
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::38",
+    "name": "למען שמו באהבה",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "ההגנה 22",
+    "location": {
+      "latitude": 33.019980825855086,
+      "longitude": 35.09696070549183
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::39",
+    "name": "מגינים [ יצחק ירנן]",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "רמז 23",
+    "location": {
+      "latitude": 33.00355151022871,
+      "longitude": 35.09113497739458
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::40",
+    "name": "מגן דוד",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "הזמיר 92",
+    "location": {
+      "latitude": 33.004332783202955,
+      "longitude": 35.10680356042084
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::41",
+    "name": "מיים חיים",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "סטרומה 2",
+    "location": {
+      "latitude": 33.00781498860633,
+      "longitude": 35.103821111714325
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::42",
+    "name": "מנחת יהודה",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "סילבר 24",
+    "location": {
+      "latitude": 33.0141813901039,
+      "longitude": 35.09311947299962
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::43",
+    "name": "מניין צעירים",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "זבוטינסקי 4/3",
+    "location": {
+      "latitude": 33.00748074850608,
+      "longitude": 35.09149390647133
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::44",
+    "name": "מקור חיים",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "ווינסבורג 3",
+    "location": {
+      "latitude": 33.00713903232034,
+      "longitude": 35.10130579723001
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::45",
+    "name": "מקלט בית ראסל",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "נחלת אשר 25",
+    "location": {
+      "latitude": 33.010739914332156,
+      "longitude": 35.10173845073407
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::47",
+    "name": "משה רבנו",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "שפרינצק 1",
+    "location": {
+      "latitude": 33.002793404841654,
+      "longitude": 35.10570051108256
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::48",
+    "name": "משכן דוד",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "יפה נוף 44",
+    "location": {
+      "latitude": 33.00082715550875,
+      "longitude": 35.10103663880289
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::49",
+    "name": "משכנות יובל",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "רמז 2",
+    "location": {
+      "latitude": 33.006509386064465,
+      "longitude": 35.091394874027635
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::50",
+    "name": "נץ החמה",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "מקלט ליד בי\"ס רמבם",
+    "location": {
+      "latitude": 33.01050746360104,
+      "longitude": 35.10417677529641
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::51",
+    "name": "עין שרה מרכזי",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "שזר 23",
+    "location": {
+      "latitude": 32.98910668163402,
+      "longitude": 35.08979443411352
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::52",
+    "name": "עץ החיים",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "סטרומה 14",
+    "location": {
+      "latitude": 33.0081365359329,
+      "longitude": 35.10564501219068
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::53",
+    "name": "פורת יוסף",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "פרופ שאשא 2",
+    "location": {
+      "latitude": 33.01778040682074,
+      "longitude": 35.11144531886358
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::54",
+    "name": "פקודת אלעזר",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "הלוטוס 101",
+    "location": {
+      "latitude": 32.99227699676502,
+      "longitude": 35.093651775278545
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::55",
+    "name": "צפון עמידר נווה אלון",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "יבנה 2",
+    "location": {
+      "latitude": 33.01825828183978,
+      "longitude": 35.09528912110917
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::56",
+    "name": "קודש [עולי אירן]",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "המצובה 8",
+    "location": {
+      "latitude": 33.008729542423005,
+      "longitude": 35.1069988349082
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::57",
+    "name": "ר' חיים פנטו",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "קיבוץ גלויות 50",
+    "location": {
+      "latitude": 33.01181235933731,
+      "longitude": 35.10554310014679
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::58",
+    "name": "רסקו גאולה",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "שביל הגאולה 2",
+    "location": {
+      "latitude": 33.02482575446956,
+      "longitude": 35.10104941401249
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::59",
+    "name": "רשבי",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "דוד בהמלך 11",
+    "location": {
+      "latitude": 32.99574024397308,
+      "longitude": 35.10127390221554
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::60",
+    "name": "שאול המלך",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "שלמה המלך 1",
+    "location": {
+      "latitude": 32.99780843915434,
+      "longitude": 35.1022045482959
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::61",
+    "name": "שארית הפליטה",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "שביל הדליה 4",
+    "location": {
+      "latitude": 33.02224864078725,
+      "longitude": 35.096489158844925
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::62",
+    "name": "שבי צפון",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "השקד 31",
+    "location": {
+      "latitude": 32.98790506211688,
+      "longitude": 35.08567946189702
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::63",
+    "name": "שבת אחים",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "רמז 21",
+    "location": {
+      "latitude": 33.003507674802606,
+      "longitude": 35.09111898217989
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::64",
+    "name": "שומרי שבת",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "שביל בר כוכבא",
+    "location": {
+      "latitude": 33.01997850734021,
+      "longitude": 35.106757853157056
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::65",
+    "name": "שלמה המלך",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "הצנחנים 2",
+    "location": {
+      "latitude": 33.01400260620705,
+      "longitude": 35.11203661434851
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::66",
+    "name": "שערי צדק",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "ויינסבורג 3",
+    "location": {
+      "latitude": 33.007224034209194,
+      "longitude": 35.101057428716175
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::67",
+    "name": "שערי ציון",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "יפה נוף 22",
+    "location": {
+      "latitude": 32.99719979184516,
+      "longitude": 35.101518091742335
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::68",
+    "name": "תהילה לדוד [ממעמקים קראתיך ה'",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "שביל הגנים \\ גולומב 6",
+    "location": {
+      "latitude": 33.008195951637894,
+      "longitude": 35.09483600320654
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::69",
+    "name": "תהילים",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "רמב\"ם 2",
+    "location": {
+      "latitude": 33.00904387823057,
+      "longitude": 35.10736619279365
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::70",
+    "name": "תפילה לדוד",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "החשמונים 20",
+    "location": {
+      "latitude": 33.01881063448798,
+      "longitude": 35.106133462223475
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::71",
+    "name": "תקוותנו \\אור אליהו",
+    "type": "synagogue",
+    "cityId": "נהריה",
+    "address": "אחד העם 6",
+    "location": {
+      "latitude": 33.004829716968075,
+      "longitude": 35.094368251828875
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:nahariya",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
+    }
+  }
+]

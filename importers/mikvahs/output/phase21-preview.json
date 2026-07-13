@@ -1,0 +1,591 @@
+[
+  {
+    "cityKey": "bneibrak",
+    "name": "מקווה ויז'ניץ",
+    "address": "רבינא 14, בני ברק",
+    "geo": "רבינא 14, בני ברק",
+    "phone": "035744870",
+    "hours": null,
+    "attendant": null,
+    "accessibility": null,
+    "gender": "נשים",
+    "location": null,
+    "coordSource": "pending",
+    "pageUrl": "https://www.bnei-brak.muni.il/mikvahs/"
+  },
+  {
+    "cityKey": "bneibrak",
+    "name": "מקווה זכרון מאיר",
+    "address": "חפץ חיים 7, בני ברק",
+    "geo": "חפץ חיים 7, בני ברק",
+    "phone": "036187479",
+    "hours": null,
+    "attendant": null,
+    "accessibility": null,
+    "gender": "נשים",
+    "location": null,
+    "coordSource": "pending",
+    "pageUrl": "https://www.bnei-brak.muni.il/mikvahs/"
+  },
+  {
+    "cityKey": "bneibrak",
+    "name": "מקווה מי נחת",
+    "address": "אחיה השילוני 4, בני ברק",
+    "geo": "אחיה השילוני 4, בני ברק",
+    "phone": "035709617",
+    "hours": null,
+    "attendant": null,
+    "accessibility": null,
+    "gender": "נשים",
+    "location": null,
+    "coordSource": "pending",
+    "pageUrl": "https://www.bnei-brak.muni.il/mikvahs/"
+  },
+  {
+    "cityKey": "bneibrak",
+    "name": "מקווה מרכז",
+    "address": "קאליש 14, בני ברק",
+    "geo": "קאליש 14, בני ברק",
+    "phone": "035794489",
+    "hours": null,
+    "attendant": null,
+    "accessibility": null,
+    "gender": "נשים",
+    "location": null,
+    "coordSource": "pending",
+    "pageUrl": "https://www.bnei-brak.muni.il/mikvahs/"
+  },
+  {
+    "cityKey": "bneibrak",
+    "name": "מקווה נווה אחיעזר",
+    "address": "נחשוני 28, בני ברק",
+    "geo": "נחשוני 28, בני ברק",
+    "phone": "035744869",
+    "hours": null,
+    "attendant": null,
+    "accessibility": null,
+    "gender": "נשים",
+    "location": null,
+    "coordSource": "pending",
+    "pageUrl": "https://www.bnei-brak.muni.il/mikvahs/"
+  },
+  {
+    "cityKey": "bneibrak",
+    "name": "מקווה פרדס כץ",
+    "address": "דנגור 12, בני ברק",
+    "geo": "דנגור 12, בני ברק",
+    "phone": "035790636",
+    "hours": null,
+    "attendant": null,
+    "accessibility": null,
+    "gender": "נשים",
+    "location": {
+      "latitude": 32.09588255314052,
+      "longitude": 34.830919289393506
+    },
+    "coordSource": "govmap-ADDR_V1",
+    "pageUrl": "https://www.bnei-brak.muni.il/mikvahs/"
+  },
+  {
+    "cityKey": "bneibrak",
+    "name": "מקווה קריית הרצוג",
+    "address": "נויפלד 15, בני ברק",
+    "geo": "נויפלד 15, בני ברק",
+    "phone": "036196867",
+    "hours": null,
+    "attendant": null,
+    "accessibility": null,
+    "gender": "נשים",
+    "location": null,
+    "coordSource": "pending",
+    "pageUrl": "https://www.bnei-brak.muni.il/mikvahs/"
+  },
+  {
+    "cityKey": "bneibrak",
+    "name": "מקווה רמת אלחנן",
+    "address": "אבני נזר 13, בני ברק",
+    "geo": "אבני נזר 13, בני ברק",
+    "phone": "035705417",
+    "hours": null,
+    "attendant": null,
+    "accessibility": null,
+    "gender": "נשים",
+    "location": null,
+    "coordSource": "pending",
+    "pageUrl": "https://www.bnei-brak.muni.il/mikvahs/"
+  },
+  {
+    "cityKey": "bneibrak",
+    "name": "מקווה שיכון ג'",
+    "address": "בארי 7, בני ברק",
+    "geo": "בארי 7, בני ברק",
+    "phone": "035744868",
+    "hours": null,
+    "attendant": null,
+    "accessibility": null,
+    "gender": "נשים",
+    "location": null,
+    "coordSource": "pending",
+    "pageUrl": "https://www.bnei-brak.muni.il/mikvahs/"
+  },
+  {
+    "cityKey": "bneibrak",
+    "name": "מקווה שיכון ה'",
+    "address": "זבולון המר 13, בני ברק",
+    "geo": "זבולון המר 13, בני ברק",
+    "phone": "035794661",
+    "hours": null,
+    "attendant": null,
+    "accessibility": null,
+    "gender": "נשים",
+    "location": {
+      "latitude": 32.089623293857734,
+      "longitude": 34.84232790410763
+    },
+    "coordSource": "govmap-ADDR_V1",
+    "pageUrl": "https://www.bnei-brak.muni.il/mikvahs/"
+  },
+  {
+    "cityKey": "bneibrak",
+    "name": "מקווה סוקולוב",
+    "address": "אבן שפרוט 4, בני ברק",
+    "geo": "אבן שפרוט 4, בני ברק",
+    "phone": "039608182",
+    "hours": null,
+    "attendant": null,
+    "accessibility": null,
+    "gender": "נשים",
+    "location": null,
+    "coordSource": "pending",
+    "pageUrl": "https://www.bnei-brak.muni.il/mikvahs/"
+  },
+  {
+    "cityKey": "bneibrak",
+    "name": "מקווה הסופרים",
+    "address": "רחוב הסופרים (מתחת לגשר), בני ברק",
+    "geo": "הסופרים, בני ברק",
+    "phone": "0533121976",
+    "hours": null,
+    "attendant": null,
+    "accessibility": null,
+    "gender": "נשים",
+    "location": null,
+    "coordSource": "no-house-number",
+    "pageUrl": "https://www.bnei-brak.muni.il/mikvahs/"
+  },
+  {
+    "cityKey": "modiinillit",
+    "name": "מקווה נשים מסילת יוסף",
+    "address": "מסילת יוסף 13, מודיעין עילית",
+    "geo": "מסילת יוסף 13, מודיעין עילית",
+    "phone": "089741758",
+    "hours": null,
+    "attendant": "גב' טובים",
+    "accessibility": null,
+    "gender": "נשים",
+    "location": {
+      "latitude": 31.928839039655603,
+      "longitude": 35.04276133301252
+    },
+    "coordSource": "govmap-ADDR_V1",
+    "pageUrl": "https://www.modil.org.il/רשימת-המקוואות/"
+  },
+  {
+    "cityKey": "modiinillit",
+    "name": "מקווה נשים אבני נזר",
+    "address": "אבני נזר 14, מודיעין עילית",
+    "geo": "אבני נזר 14, מודיעין עילית",
+    "phone": "089740156",
+    "hours": null,
+    "attendant": "גב' בן שמחון",
+    "accessibility": null,
+    "gender": "נשים",
+    "location": {
+      "latitude": 31.934464750801887,
+      "longitude": 35.04198222949125
+    },
+    "coordSource": "govmap-ADDR_V1",
+    "pageUrl": "https://www.modil.org.il/רשימת-המקוואות/"
+  },
+  {
+    "cityKey": "modiinillit",
+    "name": "מקווה נשים שדרות יחזקאל",
+    "address": "שדרות יחזקאל 33, מודיעין עילית",
+    "geo": "יחזקאל 33, מודיעין עילית",
+    "phone": "089743656",
+    "hours": null,
+    "attendant": "גב' שמואלי",
+    "accessibility": null,
+    "gender": "נשים",
+    "location": null,
+    "coordSource": "govmap-no-match",
+    "pageUrl": "https://www.modil.org.il/רשימת-המקוואות/"
+  },
+  {
+    "cityKey": "modiinillit",
+    "name": "מקווה נשים יהודה הנשיא",
+    "address": "יהודה הנשיא 26 א, מודיעין עילית",
+    "geo": "יהודה הנשיא 26, מודיעין עילית",
+    "phone": "089742091",
+    "hours": null,
+    "attendant": "גב' גיאת",
+    "accessibility": null,
+    "gender": "נשים",
+    "location": {
+      "latitude": 31.93818058627961,
+      "longitude": 35.044859006242696
+    },
+    "coordSource": "govmap-ADDR_V1",
+    "pageUrl": "https://www.modil.org.il/רשימת-המקוואות/"
+  },
+  {
+    "cityKey": "modiinillit",
+    "name": "מקווה נשים אלישיב",
+    "address": "אלישיב 23, מודיעין עילית",
+    "geo": "אלישיב 23, מודיעין עילית",
+    "phone": "089740578",
+    "hours": null,
+    "attendant": "גב' תורג'מן",
+    "accessibility": null,
+    "gender": "נשים",
+    "location": null,
+    "coordSource": "govmap-no-match",
+    "pageUrl": "https://www.modil.org.il/רשימת-המקוואות/"
+  },
+  {
+    "cityKey": "modiinillit",
+    "name": "מקווה נשים נאות הפסגה",
+    "address": "הריטב\"א 4, מודיעין עילית",
+    "geo": "הריטבא 4, מודיעין עילית",
+    "phone": "089745035",
+    "hours": null,
+    "attendant": "גב' רוזנבלום",
+    "accessibility": null,
+    "gender": "נשים",
+    "location": {
+      "latitude": 31.92745980974869,
+      "longitude": 35.04552037548291
+    },
+    "coordSource": "govmap-ADDR_V1",
+    "pageUrl": "https://www.modil.org.il/רשימת-המקוואות/"
+  },
+  {
+    "cityKey": "modiinillit",
+    "name": "מקווה נשים חזון דוד",
+    "address": "חזון דוד 19, מודיעין עילית",
+    "geo": "חזון דוד 19, מודיעין עילית",
+    "phone": "089741839",
+    "hours": null,
+    "attendant": "גב' שניר",
+    "accessibility": null,
+    "gender": "נשים",
+    "location": {
+      "latitude": 31.924023646656934,
+      "longitude": 35.04054753093898
+    },
+    "coordSource": "govmap-ADDR_V1",
+    "pageUrl": "https://www.modil.org.il/רשימת-המקוואות/"
+  },
+  {
+    "cityKey": "modiinillit",
+    "name": "מקווה גברים אבני נזר",
+    "address": "אבני נזר 16, מודיעין עילית",
+    "geo": "אבני נזר 16, מודיעין עילית",
+    "phone": null,
+    "hours": "א'-ה' בבוקר עד 10:30",
+    "attendant": "הרב מרדכי דוד אדלר",
+    "accessibility": null,
+    "gender": "גברים",
+    "location": {
+      "latitude": 31.934426201040527,
+      "longitude": 35.041893085193095
+    },
+    "coordSource": "govmap-ADDR_V1",
+    "pageUrl": "https://www.modil.org.il/רשימת-המקוואות/"
+  },
+  {
+    "cityKey": "modiinillit",
+    "name": "מקווה גברים קהילות יעקב",
+    "address": "קהילות יעקב 1, מודיעין עילית",
+    "geo": "קהילות יעקב 1, מודיעין עילית",
+    "phone": null,
+    "hours": "א'-ה' בבוקר עד 10:30",
+    "attendant": "הרב מרדכי דוד אדלר",
+    "accessibility": null,
+    "gender": "גברים",
+    "location": {
+      "latitude": 31.922594572990285,
+      "longitude": 35.05037542031131
+    },
+    "coordSource": "govmap-ADDR_V1",
+    "pageUrl": "https://www.modil.org.il/רשימת-המקוואות/"
+  },
+  {
+    "cityKey": "modiinillit",
+    "name": "מקווה גברים זכרון דוד",
+    "address": "שדי חמד 13, מודיעין עילית",
+    "geo": "שדי חמד 13, מודיעין עילית",
+    "phone": null,
+    "hours": null,
+    "attendant": null,
+    "accessibility": null,
+    "gender": "גברים",
+    "location": {
+      "latitude": 31.933329207912497,
+      "longitude": 35.04206271018249
+    },
+    "coordSource": "govmap-ADDR_V1",
+    "pageUrl": "https://www.modil.org.il/רשימת-המקוואות/"
+  },
+  {
+    "cityKey": "modiinillit",
+    "name": "מקווה גברים היכל יהושע",
+    "address": "רשב\"י 21, מודיעין עילית",
+    "geo": "רבי שמעון בר יוחאי 21, מודיעין עילית",
+    "phone": null,
+    "hours": null,
+    "attendant": null,
+    "accessibility": null,
+    "gender": "גברים",
+    "location": {
+      "latitude": 31.937615342530112,
+      "longitude": 35.04093697816328
+    },
+    "coordSource": "govmap-ADDR_V1",
+    "pageUrl": "https://www.modil.org.il/רשימת-המקוואות/"
+  },
+  {
+    "cityKey": "modiinillit",
+    "name": "מקווה כלים אבני נזר 46",
+    "address": "אבני נזר 46, מודיעין עילית",
+    "geo": "אבני נזר 46, מודיעין עילית",
+    "phone": null,
+    "hours": null,
+    "attendant": null,
+    "accessibility": null,
+    "gender": "כלים",
+    "location": {
+      "latitude": 31.929805192965382,
+      "longitude": 35.03796806482275
+    },
+    "coordSource": "govmap-ADDR_V1",
+    "pageUrl": "https://www.modil.org.il/רשימת-המקוואות/"
+  },
+  {
+    "cityKey": "beitarillit",
+    "name": "מקווה הבעש\"ט",
+    "address": "הבעש\"ט 8, ביתר עילית",
+    "geo": "הבעשט 8, ביתר עילית",
+    "phone": "025806059",
+    "hours": "א'-ה' עד 22:00 / ליל שבת חצי שעה אחרי הדלקת נרות / מוצ\"ש 22:30",
+    "attendant": null,
+    "accessibility": null,
+    "gender": "נשים",
+    "location": {
+      "latitude": 31.696481327355254,
+      "longitude": 35.122231968646624
+    },
+    "coordSource": "govmap-ADDR_V1",
+    "pageUrl": "https://www.betar-illit.muni.il/מקוואות/"
+  },
+  {
+    "cityKey": "beitarillit",
+    "name": "מקווה אריאלי",
+    "address": "אריאלי 3, ביתר עילית",
+    "geo": "אריאלי 3, ביתר עילית",
+    "phone": "025808444",
+    "hours": "א'-ה' עד 23:00 / ליל שבת חצי שעה אחרי הדלקת נרות / מוצ\"ש 23:00",
+    "attendant": null,
+    "accessibility": null,
+    "gender": "נשים",
+    "location": {
+      "latitude": 31.69421178724213,
+      "longitude": 35.118651504150826
+    },
+    "coordSource": "govmap-ADDR_V1",
+    "pageUrl": "https://www.betar-illit.muni.il/מקוואות/"
+  },
+  {
+    "cityKey": "beitarillit",
+    "name": "מקווה קנייבסקי",
+    "address": "קנייבסקי 9, ביתר עילית",
+    "geo": "קנייבסקי 9, ביתר עילית",
+    "phone": "025725649",
+    "hours": "א'-ה' עד 22:00 / מוצ\"ש 22:30",
+    "attendant": null,
+    "accessibility": null,
+    "gender": "נשים",
+    "location": {
+      "latitude": 31.694122639086686,
+      "longitude": 35.10984908632962
+    },
+    "coordSource": "govmap-ADDR_V1",
+    "pageUrl": "https://www.betar-illit.muni.il/מקוואות/"
+  },
+  {
+    "cityKey": "beitarillit",
+    "name": "מקווה ברים",
+    "address": "ברים 7, ביתר עילית",
+    "geo": "ברים 7, ביתר עילית",
+    "phone": "025800669",
+    "hours": "א'-ה' עד 22:00 / מוצ\"ש 22:30 / שישי הכנות 12:00-13:00",
+    "attendant": null,
+    "accessibility": null,
+    "gender": "נשים",
+    "location": {
+      "latitude": 31.703317393278397,
+      "longitude": 35.115802936637714
+    },
+    "coordSource": "govmap-ADDR_V1",
+    "pageUrl": "https://www.betar-illit.muni.il/מקוואות/"
+  },
+  {
+    "cityKey": "beitarillit",
+    "name": "מקווה מוצפי",
+    "address": "מוצפי 35, ביתר עילית",
+    "geo": "מוצפי 35, ביתר עילית",
+    "phone": "026507450",
+    "hours": "א'-ה' עד 22:00 / מוצ\"ש 22:30",
+    "attendant": null,
+    "accessibility": null,
+    "gender": "נשים",
+    "location": null,
+    "coordSource": "govmap-no-match",
+    "pageUrl": "https://www.betar-illit.muni.il/מקוואות/"
+  },
+  {
+    "cityKey": "beitarillit",
+    "name": "מקווה אמרי סופר",
+    "address": "אמרי סופר 3, ביתר עילית",
+    "geo": "אמרי סופר 3, ביתר עילית",
+    "phone": "025824827",
+    "hours": "א'-ה' עד 22:00 / מוצ\"ש 22:30",
+    "attendant": null,
+    "accessibility": null,
+    "gender": "נשים",
+    "location": null,
+    "coordSource": "pending",
+    "pageUrl": "https://www.betar-illit.muni.il/מקוואות/"
+  },
+  {
+    "cityKey": "beitarillit",
+    "name": "מקווה הרב שך",
+    "address": "הרב שך 80, ביתר עילית",
+    "geo": "הרב שך 80, ביתר עילית",
+    "phone": "025488352",
+    "hours": "א'-ה' עד 22:00 / מוצ\"ש 22:30",
+    "attendant": null,
+    "accessibility": null,
+    "gender": "נשים",
+    "location": {
+      "latitude": 31.69818972255456,
+      "longitude": 35.09588941499567
+    },
+    "coordSource": "govmap-ADDR_V1",
+    "pageUrl": "https://www.betar-illit.muni.il/מקוואות/"
+  },
+  {
+    "cityKey": "beitarillit",
+    "name": "מקווה קדושת לוי",
+    "address": "קדושת לוי, ביתר עילית",
+    "geo": "קדושת לוי, ביתר עילית",
+    "phone": "025807722",
+    "hours": "א'-ה' עד 23:00 / מוצ\"ש 23:00",
+    "attendant": "בתיאום מראש",
+    "accessibility": "מונגש לבעלי מוגבלויות (בתיאום מראש)",
+    "gender": "נשים",
+    "location": null,
+    "coordSource": "no-house-number",
+    "pageUrl": "https://www.betar-illit.muni.il/מקוואות/"
+  },
+  {
+    "cityKey": "elad",
+    "name": "מקווה חוני המעגל",
+    "address": "חוני המעגל 8, אלעד",
+    "geo": "חוני המעגל 8, אלעד",
+    "phone": "039096319",
+    "hours": null,
+    "attendant": "מלכה יעקובזון",
+    "accessibility": null,
+    "gender": "נשים",
+    "location": null,
+    "coordSource": "govmap-no-match",
+    "pageUrl": "https://www.elad.muni.il/Departments/Pages/Religion.aspx"
+  },
+  {
+    "cityKey": "elad",
+    "name": "מקווה ניסים גאון",
+    "address": "ניסים גאון 39, אלעד",
+    "geo": "ניסים גאון 39, אלעד",
+    "phone": "039095079",
+    "hours": "חצי שעה לפני השקיעה עד 22:00 חורף / 23:00 קיץ",
+    "attendant": "מלכה יעקובזון",
+    "accessibility": "נגיש",
+    "gender": "נשים",
+    "location": null,
+    "coordSource": "govmap-no-match",
+    "pageUrl": "https://www.elad.muni.il/Departments/Pages/Religion.aspx"
+  },
+  {
+    "cityKey": "elad",
+    "name": "מקווה בן עוזיאל",
+    "address": "בן עוזיאל 13, אלעד",
+    "geo": "בן עוזיאל 13, אלעד",
+    "phone": "039090513",
+    "hours": "חצי שעה לפני השקיעה עד 22:00 חורף / 23:00 קיץ",
+    "attendant": "מלכה יעקובזון",
+    "accessibility": "נגיש",
+    "gender": "נשים",
+    "location": {
+      "latitude": 32.04906986659931,
+      "longitude": 34.9578359897811
+    },
+    "coordSource": "govmap-ADDR_V1",
+    "pageUrl": "https://www.elad.muni.il/Departments/Pages/Religion.aspx"
+  },
+  {
+    "cityKey": "elad",
+    "name": "מקווה הרי\"ף",
+    "address": "הרי\"ף 31, אלעד",
+    "geo": "הריף 31, אלעד",
+    "phone": "039325733",
+    "hours": "חצי שעה לפני השקיעה עד 22:00 חורף / 23:00 קיץ",
+    "attendant": "מלכה יעקובזון",
+    "accessibility": "נגיש",
+    "gender": "נשים",
+    "location": null,
+    "coordSource": "govmap-no-match",
+    "pageUrl": "https://www.elad.muni.il/Departments/Pages/Religion.aspx"
+  },
+  {
+    "cityKey": "elad",
+    "name": "מקווה אבטליון",
+    "address": "אבטליון 14, אלעד",
+    "geo": "אבטליון 14, אלעד",
+    "phone": "039095744",
+    "hours": "חצי שעה לפני השקיעה עד 22:00 חורף / 23:00 קיץ",
+    "attendant": "מלכה יעקובזון",
+    "accessibility": "נגיש + מעלון",
+    "gender": "נשים",
+    "location": null,
+    "coordSource": "govmap-no-match",
+    "pageUrl": "https://www.elad.muni.il/Departments/Pages/Religion.aspx"
+  },
+  {
+    "cityKey": "elad",
+    "name": "מקווה גברים ר' מאיר",
+    "address": "ר' מאיר 17, אלעד",
+    "geo": "מאיר 17, אלעד",
+    "phone": null,
+    "hours": "א'-ה' 04:00-10:30",
+    "attendant": null,
+    "accessibility": null,
+    "gender": "גברים",
+    "location": {
+      "latitude": 32.05002900112115,
+      "longitude": 34.95607628379309
+    },
+    "coordSource": "govmap-ADDR_V1",
+    "pageUrl": "https://www.elad.muni.il/Departments/Pages/Religion.aspx"
+  }
+]

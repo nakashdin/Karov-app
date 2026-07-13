@@ -1,0 +1,33 @@
+{
+  "generatedNote": "PHASE 17B — V2 rebuild parity proof. READ-ONLY. Live places.osm.json NOT modified.",
+  "totals": {
+    "current": 4932,
+    "candidate": 4932,
+    "equal": true
+  },
+  "idSet": {
+    "missingFromCandidate": 0,
+    "extraInCandidate": 0,
+    "missingSample": [],
+    "extraSample": []
+  },
+  "deepEqual": {
+    "matched": 4932,
+    "mismatched": 0,
+    "mismatchSample": []
+  },
+  "duplicateIdsDuringMerge": 0,
+  "serializationOrder": {
+    "legacyOrder": "append-order (the live file)",
+    "candidateOrder": "deterministic stable id-sort (v2 canonical)",
+    "positionsMatching": 0,
+    "ofTotal": 4932,
+    "note": "Order DIFFERS by design (v2 canonicalizes to id-sort). This is a serialization/order difference, not a content/parity failure. The app reads Place[] and re-sorts by distance/rating, so order is not runtime-significant.",
+    "exactOrderReproducible": true,
+    "exactOrderNote": "Reordering the candidate to the legacy id-order reproduces the live file deep-equal at every position → exact-file reproduction is possible if ever required."
+  },
+  "contentHashCanonical": "2fd48d6b44f6f949",
+  "deterministic": "contentHashCanonical is a pure function of the source files (no clock/randomness) — re-running reproduces it.",
+  "parityExact": true,
+  "verdict": "PARITY EXACT — candidate is set+content identical to the live dataset (order canonicalized)."
+}

@@ -1,0 +1,219 @@
+[
+  {
+    "id": "mikveh-ashdod-31.79861_34.66235",
+    "name": "מקווה רובע ג'",
+    "type": "mikveh",
+    "cityId": "אשדוד",
+    "address": "רחוב הפלמ\"ח 25, רובע ג', אשדוד",
+    "location": {
+      "latitude": 31.79860927121238,
+      "longitude": 34.66235066185275
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "mikvehGender": "נשים",
+    "attendant": "בלנית",
+    "sourceName": "המועצה הדתית אשדוד",
+    "sourceUrl": "https://ashdodmd.org/mikvaot/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "accessibility": "אין נגישות",
+      "provenance": {
+        "sourceId": "council:ashdod:mikvah",
+        "sourceUrl": "https://ashdodmd.org/mikvaot/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-ashdod-31.79801_34.64249",
+    "name": "מקווה רובע ד'",
+    "type": "mikveh",
+    "cityId": "אשדוד",
+    "address": "רחוב הרב שאולי 5 (צמוד לבית הכנסת מגן אברהם), רובע ד', אשדוד",
+    "location": {
+      "latitude": 31.79800617277564,
+      "longitude": 34.64248596192412
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "mikvehGender": "נשים",
+    "attendant": "בלנית",
+    "sourceName": "המועצה הדתית אשדוד",
+    "sourceUrl": "https://ashdodmd.org/mikvaot/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "accessibility": "יש כניסה נגישה, חדר נגיש, ללא מעלון",
+      "provenance": {
+        "sourceId": "council:ashdod:mikvah",
+        "sourceUrl": "https://ashdodmd.org/mikvaot/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-ashdod-31.79152_34.65731",
+    "name": "מקווה רובע ו'",
+    "type": "mikveh",
+    "cityId": "אשדוד",
+    "address": "רחוב ירמיהו הלפרין 5, רובע ו', אשדוד",
+    "location": {
+      "latitude": 31.79151638506877,
+      "longitude": 34.65731411180846
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "mikvehGender": "נשים",
+    "attendant": "בלנית",
+    "sourceName": "המועצה הדתית אשדוד",
+    "sourceUrl": "https://ashdodmd.org/mikvaot/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "accessibility": "אין נגישות",
+      "provenance": {
+        "sourceId": "council:ashdod:mikvah",
+        "sourceUrl": "https://ashdodmd.org/mikvaot/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-ashdod-31.78430_34.66591",
+    "name": "מקווה רובע ט'",
+    "type": "mikveh",
+    "cityId": "אשדוד",
+    "address": "רחוב הגר\"א 35, רובע ט', אשדוד",
+    "location": {
+      "latitude": 31.784298372454213,
+      "longitude": 34.665910878061176
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "mikvehGender": "נשים",
+    "attendant": "בלנית",
+    "sourceName": "המועצה הדתית אשדוד",
+    "sourceUrl": "https://ashdodmd.org/mikvaot/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "accessibility": "יש כניסה נגישה, חדר נגיש, ללא מעלון",
+      "provenance": {
+        "sourceId": "council:ashdod:mikvah",
+        "sourceUrl": "https://ashdodmd.org/mikvaot/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-ashdod-31.77695_34.63251",
+    "name": "מקווה רובע יב'",
+    "type": "mikveh",
+    "cityId": "אשדוד",
+    "address": "רחוב שבט דן 26, רובע יב', אשדוד",
+    "location": {
+      "latitude": 31.776949279739974,
+      "longitude": 34.63250625929644
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "mikvehGender": "נשים",
+    "attendant": "בלנית",
+    "sourceName": "המועצה הדתית אשדוד",
+    "sourceUrl": "https://ashdodmd.org/mikvaot/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "accessibility": "יש כניסה נגישה, חדר נגיש, ללא מעלון",
+      "provenance": {
+        "sourceId": "council:ashdod:mikvah",
+        "sourceUrl": "https://ashdodmd.org/mikvaot/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-ashdod-31.77504_34.64629",
+    "name": "מקווה רובע יג'",
+    "type": "mikveh",
+    "cityId": "אשדוד",
+    "address": "רחוב המלך שלמה 20, רובע יג', אשדוד",
+    "location": {
+      "latitude": 31.775040501112944,
+      "longitude": 34.64629491131196
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "mikvehGender": "נשים",
+    "attendant": "בלנית",
+    "sourceName": "המועצה הדתית אשדוד",
+    "sourceUrl": "https://ashdodmd.org/mikvaot/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "accessibility": "אין נגישות",
+      "provenance": {
+        "sourceId": "council:ashdod:mikvah",
+        "sourceUrl": "https://ashdodmd.org/mikvaot/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-ashdod-31.77372_34.62776",
+    "name": "מקווה רובע טו'",
+    "type": "mikveh",
+    "cityId": "אשדוד",
+    "address": "רחוב ברוריה 5 (צמוד לבית הכנסת), רובע טו', אשדוד",
+    "location": {
+      "latitude": 31.773722227471744,
+      "longitude": 34.62776128174645
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "mikvehGender": "נשים",
+    "attendant": "בלנית",
+    "sourceName": "המועצה הדתית אשדוד",
+    "sourceUrl": "https://ashdodmd.org/mikvaot/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "accessibility": "אין נגישות",
+      "provenance": {
+        "sourceId": "council:ashdod:mikvah",
+        "sourceUrl": "https://ashdodmd.org/mikvaot/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-ashdod-31.79079_34.64645",
+    "name": "מקווה רובע הסיטי",
+    "type": "mikveh",
+    "cityId": "אשדוד",
+    "address": "רחוב העצמאות 39, רובע הסיטי, אשדוד",
+    "location": {
+      "latitude": 31.790794719565344,
+      "longitude": 34.64644568636741
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "phone": "0732654684",
+    "mikvehGender": "נשים",
+    "attendant": "בלנית",
+    "sourceName": "המועצה הדתית אשדוד",
+    "sourceUrl": "https://ashdodmd.org/mikvaot/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "accessibility": "נגישות מלאה כולל מנוף (בתיאום מראש)",
+      "provenance": {
+        "sourceId": "council:ashdod:mikvah",
+        "sourceUrl": "https://ashdodmd.org/mikvaot/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  }
+]

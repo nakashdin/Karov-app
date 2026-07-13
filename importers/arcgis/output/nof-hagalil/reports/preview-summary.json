@@ -1,0 +1,22 @@
+{
+  "source": "arcgis:nof-hagalil",
+  "expectedCount": 15,
+  "fetchedCount": 15,
+  "droppedNoName": 0,
+  "validCount": 15,
+  "rejectedCount": 0,
+  "new": 15,
+  "enriched": 0,
+  "conflicts": 0,
+  "over300": 0,
+  "existingSynagogues": 2739,
+  "mergedSynagogues": 2754,
+  "coordinateSource": "ArcGIS server outSR=4326 (authoritative WGS84)",
+  "datumShiftFromPureItmMeters": {
+    "comparedCount": 0,
+    "maxMeters": 0,
+    "avgMeters": 0
+  },
+  "dryRun": true,
+  "liveDataTouched": false
+}

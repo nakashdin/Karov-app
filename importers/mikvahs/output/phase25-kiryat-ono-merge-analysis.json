@@ -1,0 +1,95 @@
+[
+  {
+    "name": "מקווה שד' קק\"ל",
+    "address": "שד' קק\"ל 19, קרית אונו",
+    "geo": "קק\"ל 19, קרית אונו",
+    "phone": "037431091",
+    "attendant": "שירה אשכנזי 050-6953333; מירי טרוסט 052-6226225; מוריה אליהו 050-8752835",
+    "gender": "נשים",
+    "coordSource": "govmap-ADDR_V1",
+    "location": {
+      "latitude": 32.06459824036917,
+      "longitude": 34.85186456585862
+    },
+    "disposition": "write_ready",
+    "reason": "GovMap ADDR_V1 coordinate, not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "name": "מקווה הגפן",
+    "address": "הגפן 12, קרית אונו",
+    "geo": "הגפן 12, קרית אונו",
+    "phone": "035350973",
+    "attendant": "שרה מתתיהו 050-4100514; מרים קאסר 050-8462299",
+    "gender": "נשים",
+    "coordSource": "govmap-ADDR_V1",
+    "location": {
+      "latitude": 32.05358632308585,
+      "longitude": 34.86038417394864
+    },
+    "disposition": "write_ready",
+    "reason": "GovMap ADDR_V1 coordinate, not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "name": "מקווה ש\"י עגנון",
+    "address": "ש\"י עגנון 1, קרית אונו",
+    "geo": "עגנון 1, קרית אונו",
+    "phone": "035355028",
+    "attendant": "צילה יוסף 052-8317458",
+    "gender": "נשים",
+    "coordSource": "govmap-no-match",
+    "location": null,
+    "disposition": "excluded",
+    "reason": "GovMap could not resolve to ADDR_V1 (street exists but house-number not in address layer; native-only/address-level policy → no street-centroid, no fabrication)",
+    "matchedLiveId": null
+  },
+  {
+    "name": "מקווה גברים",
+    "address": "הרצל 34, קרית אונו (צמוד לבית הכנסת \"אור ציון\")",
+    "geo": "הרצל 34, קרית אונו",
+    "phone": null,
+    "attendant": "גיל אבישר 050-7958485",
+    "gender": "גברים",
+    "coordSource": "govmap-ADDR_V1",
+    "location": {
+      "latitude": 32.06487373463482,
+      "longitude": 34.85217502978923
+    },
+    "disposition": "write_ready",
+    "reason": "GovMap ADDR_V1 coordinate, not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "name": "מקווה כלים שד' קק\"ל",
+    "address": "שד' קק\"ל 19, קרית אונו",
+    "geo": "קק\"ל 19, קרית אונו",
+    "phone": null,
+    "attendant": null,
+    "gender": "כלים",
+    "coordSource": "govmap-ADDR_V1",
+    "location": {
+      "latitude": 32.06459824036917,
+      "longitude": 34.85186456585862
+    },
+    "disposition": "write_ready",
+    "reason": "GovMap ADDR_V1 coordinate, not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "name": "מקווה כלים הגפן",
+    "address": "הגפן 12, קרית אונו",
+    "geo": "הגפן 12, קרית אונו",
+    "phone": null,
+    "attendant": null,
+    "gender": "כלים",
+    "coordSource": "govmap-ADDR_V1",
+    "location": {
+      "latitude": 32.05358632308585,
+      "longitude": 34.86038417394864
+    },
+    "disposition": "write_ready",
+    "reason": "GovMap ADDR_V1 coordinate, not a duplicate",
+    "matchedLiveId": null
+  }
+]

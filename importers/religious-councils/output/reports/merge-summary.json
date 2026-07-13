@@ -1,0 +1,15 @@
+{
+  "existingTotal": 3402,
+  "existingSynagogues": 2586,
+  "councilRecords": 187,
+  "enrichedExisting": 28,
+  "newRecords": 154,
+  "conflicts": 5,
+  "matchesOver300m": 1,
+  "rejected": 0,
+  "mergedTotal": 3561,
+  "mergedSynagogues": 2745,
+  "note": "PREVIEW ONLY — additive, no live data touched, no real merge",
+  "dryRun": true,
+  "liveDataTouched": false
+}

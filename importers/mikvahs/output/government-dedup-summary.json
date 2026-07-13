@@ -1,0 +1,39 @@
+{
+  "generatedNote": "PHASE 2 DRY-RUN — government vs SabaiApps merge analysis. REPORTS ONLY. No DB write, no merge, no geocoding, no mutation of source datasets.",
+  "typeTagNote": "Gov dataset uses type 'mikveh'; SabaiApps preview uses 'mikvah'. Reconcile in the Unified-Importer phase (Phase 3).",
+  "governmentRecords": 606,
+  "sabaiAppsRecords": 120,
+  "exactMatches": 20,
+  "probableMatches": 19,
+  "trulyNewMikvahs": 72,
+  "ambiguous": 4,
+  "requiresManualReview": 5,
+  "govRecordsEnrichable": 39,
+  "averageMatchConfidence": 0.871,
+  "fieldsImproved": {
+    "phone": 0,
+    "openingHours": 0,
+    "gender": 0,
+    "balanit": 0,
+    "coordinates": 11,
+    "notes": 0,
+    "sourceUrl": 39
+  },
+  "citiesAbsentFromGov": [
+    "פתח תקווה",
+    "נתניה",
+    "מרום גליל",
+    "מרחבים",
+    "גני תקווה",
+    "קרית ארבע"
+  ],
+  "matchingStrategy": [
+    "native-coordinates(address-precision)",
+    "normalized-address",
+    "normalized-name",
+    "phone",
+    "city+address-similarity"
+  ],
+  "dryRun": true,
+  "liveDataTouched": false
+}

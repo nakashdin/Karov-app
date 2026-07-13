@@ -1,0 +1,27 @@
+[
+  {
+    "id": "mikveh-tlv-16",
+    "name": "רמת אביב",
+    "type": "mikveh",
+    "cityId": "תל אביב יפו",
+    "address": "טאגור  32",
+    "location": {
+      "latitude": 32.11651679460236,
+      "longitude": 34.796706522598654
+    },
+    "source": "seed",
+    "phone": "036439725",
+    "mikvehGender": "נשים/גברים",
+    "sourceUrl": "https://gisn.tel-aviv.gov.il",
+    "sourceName": "עיריית תל אביב-יפו — GIS",
+    "extra": {
+      "license": "municipal-open",
+      "attribution": "Tel Aviv-Yafo Municipality GIS",
+      "provenance": {
+        "sourceId": "gis:tel-aviv:mikvaot",
+        "sourceRecordId": "tlv-16",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  }
+]

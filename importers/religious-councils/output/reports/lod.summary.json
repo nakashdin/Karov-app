@@ -1,0 +1,19 @@
+{
+  "council": "המועצה הדתית לוד",
+  "variant": "markers",
+  "expectedCount": 109,
+  "fetchedCount": 97,
+  "validCount": 97,
+  "rejectedCount": 0,
+  "coordSource": "markers",
+  "withNativeCoordinates": 97,
+  "missingCoordinates": 0,
+  "duplicateSourceIds": 3,
+  "enrichedFromCards": 92,
+  "ambiguousEnrich": 5,
+  "countMatches": false,
+  "pagesFetched": 1,
+  "dryRun": true,
+  "liveDataTouched": false,
+  "generatedAt": "2026-06-18"
+}

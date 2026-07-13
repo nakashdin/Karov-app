@@ -1,0 +1,29 @@
+{
+  "batch": [
+    "tel-aviv",
+    "haifa",
+    "ashdod",
+    "ashkelon"
+  ],
+  "cityIdUsed": {
+    "tel-aviv": "תל אביב–יפו",
+    "haifa": "חיפה",
+    "ashdod": "אשדוד",
+    "ashkelon": "אשקלון"
+  },
+  "beforeSynagogues": 2739,
+  "addedNew": 1132,
+  "enrichedExisting": 71,
+  "afterSynagogues": 3871,
+  "beforeTotal": 3616,
+  "afterTotal": 4748,
+  "heldConflicts": 16,
+  "heldOver300": 2,
+  "deletions": 0,
+  "mikvehBefore": 531,
+  "mikvehAfter": 531,
+  "restaurantBefore": 346,
+  "restaurantAfter": 346,
+  "backupCreated": "C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\places.osm.pre-arcgis-batch1.backup.json",
+  "citiesFileTouched": false
+}

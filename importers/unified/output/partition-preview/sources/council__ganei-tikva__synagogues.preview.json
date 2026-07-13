@@ -1,0 +1,361 @@
+[
+  {
+    "id": "rc-ganei-tikva-h13dr6um",
+    "name": "תפארת בנים",
+    "type": "synagogue",
+    "cityId": "גני תקווה",
+    "address": "33 הרי יהודה , גני תקווה, Israel",
+    "location": {
+      "latitude": 32.061086,
+      "longitude": 34.873063
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גני תקווה",
+      "sourceUrl": "https://mdgt.org.il/directory-synagogues/listing/תפארת-בנים/"
+    },
+    "phone": "0507888728",
+    "nusach": "תימני שאמי"
+  },
+  {
+    "id": "rc-ganei-tikva-h1szm0gf",
+    "name": "תורת חיים",
+    "type": "synagogue",
+    "cityId": "גני תקווה",
+    "address": "7 הרמה , גני תקווה, Israel",
+    "location": {
+      "latitude": 32.060406,
+      "longitude": 34.869731
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גני תקווה",
+      "sourceUrl": "https://mdgt.org.il/directory-synagogues/listing/תורת-חיים/"
+    },
+    "phone": "0547712969",
+    "nusach": "ספרדי מרוקאי"
+  },
+  {
+    "id": "rc-ganei-tikva-hcadivi",
+    "name": "שבת אחים",
+    "type": "synagogue",
+    "cityId": "גני תקווה",
+    "address": "24 סמטת עמק זבולון , גני תקווה, Israel",
+    "location": {
+      "latitude": 32.058965,
+      "longitude": 34.872155
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גני תקווה",
+      "sourceUrl": "https://mdgt.org.il/directory-synagogues/listing/שבת-אחים/"
+    },
+    "phone": "0525375027",
+    "nusach": "ספרדי מרוקאי"
+  },
+  {
+    "id": "rc-ganei-tikva-hpshoew",
+    "name": "שער השמים",
+    "type": "synagogue",
+    "cityId": "גני תקווה",
+    "address": "1 סמטת הר סיני , גני תקווה, Israel",
+    "location": {
+      "latitude": 32.059804,
+      "longitude": 34.877131
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גני תקווה",
+      "sourceUrl": "https://mdgt.org.il/directory-synagogues/listing/שער-השמים/"
+    },
+    "phone": "0522237316",
+    "nusach": "כללי"
+  },
+  {
+    "id": "rc-ganei-tikva-hb7gm4k",
+    "name": "ציון שיח שפתותנו",
+    "type": "synagogue",
+    "cityId": "גני תקווה",
+    "address": "19 סמטת הר סיני , גני תקווה, Israel",
+    "location": {
+      "latitude": 32.059784,
+      "longitude": 34.875112
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גני תקווה",
+      "sourceUrl": "https://mdgt.org.il/directory-synagogues/listing/ציון-שיח-שפתותנו/"
+    },
+    "phone": "0524230266",
+    "nusach": "כללי"
+  },
+  {
+    "id": "rc-ganei-tikva-h19opv4a",
+    "name": "נץ דוד",
+    "type": "synagogue",
+    "cityId": "גני תקווה",
+    "address": "5 עין גנים , גני תקווה, Israel",
+    "location": {
+      "latitude": 32.060174,
+      "longitude": 34.868193
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גני תקווה",
+      "sourceUrl": "https://mdgt.org.il/directory-synagogues/listing/נץ-דוד/"
+    },
+    "phone": "0504131414",
+    "nusach": "ספרדי"
+  },
+  {
+    "id": "rc-ganei-tikva-h13qf869",
+    "name": "משכן עזרא",
+    "type": "synagogue",
+    "cityId": "גני תקווה",
+    "address": "70 הגולן , גני תקווה, Israel",
+    "location": {
+      "latitude": 32.05583,
+      "longitude": 34.871276
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גני תקווה",
+      "sourceUrl": "https://mdgt.org.il/directory-synagogues/listing/משכן-עזרא/"
+    },
+    "phone": "0506356886",
+    "nusach": "אשכנז"
+  },
+  {
+    "id": "rc-ganei-tikva-h1nry0vx",
+    "name": "נווה שלום",
+    "type": "synagogue",
+    "cityId": "גני תקווה",
+    "address": "3 הר נבו , גני תקווה, Israel",
+    "location": {
+      "latitude": 32.061219,
+      "longitude": 34.874261
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גני תקווה",
+      "sourceUrl": "https://mdgt.org.il/directory-synagogues/listing/נווה-שלום/"
+    },
+    "phone": "0508360085",
+    "nusach": "ספרדי"
+  },
+  {
+    "id": "rc-ganei-tikva-h3b4hka",
+    "name": "משכן יוסף",
+    "type": "synagogue",
+    "cityId": "גני תקווה",
+    "address": "13 עין חנוך , גני תקווה, Israel",
+    "location": {
+      "latitude": 32.061871,
+      "longitude": 34.868169
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גני תקווה",
+      "sourceUrl": "https://mdgt.org.il/directory-synagogues/listing/משכן-יוסף/"
+    },
+    "phone": "0546355932",
+    "nusach": "ספרד"
+  },
+  {
+    "id": "rc-ganei-tikva-hce4qpv",
+    "name": "משכן דאר",
+    "type": "synagogue",
+    "cityId": "גני תקווה",
+    "address": "13 עין חנוך , גני תקווה, Israel",
+    "location": {
+      "latitude": 32.061871,
+      "longitude": 34.868169
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גני תקווה",
+      "sourceUrl": "https://mdgt.org.il/directory-synagogues/listing/משכן-דאר/"
+    },
+    "phone": "052555215",
+    "nusach": "תימני בלדי"
+  },
+  {
+    "id": "rc-ganei-tikva-hv0yb3o",
+    "name": "מאור התקווה",
+    "type": "synagogue",
+    "cityId": "גני תקווה",
+    "address": "1 הר נבו , גני תקווה, Israel",
+    "location": {
+      "latitude": 32.061249,
+      "longitude": 34.874254
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גני תקווה",
+      "sourceUrl": "https://mdgt.org.il/directory-synagogues/listing/מאור-התקווה/"
+    },
+    "nusach": "אשכנז"
+  },
+  {
+    "id": "rc-ganei-tikva-hxqqsew",
+    "name": "מגן דוד",
+    "type": "synagogue",
+    "cityId": "גני תקווה",
+    "address": "9 הר נבו , גני תקווה, Israel",
+    "location": {
+      "latitude": 32.061129,
+      "longitude": 34.874283
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גני תקווה",
+      "sourceUrl": "https://mdgt.org.il/directory-synagogues/listing/מגן-דוד/"
+    },
+    "phone": "0503013667",
+    "nusach": "תימני שאמי"
+  },
+  {
+    "id": "rc-ganei-tikva-h1g8hqrj",
+    "name": "חניכי הישיבות",
+    "type": "synagogue",
+    "cityId": "גני תקווה",
+    "address": "34 עין גנים , גני תקווה, Israel",
+    "location": {
+      "latitude": 32.060026,
+      "longitude": 34.868106
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גני תקווה",
+      "sourceUrl": "https://mdgt.org.il/directory-synagogues/listing/חניכי-הישיבות/"
+    },
+    "phone": "0543979600",
+    "nusach": "אשכנז"
+  },
+  {
+    "id": "rc-ganei-tikva-hbxbia8",
+    "name": "המרכזי נוף סביון",
+    "type": "synagogue",
+    "cityId": "גני תקווה",
+    "address": "11 עין חנוך , גני תקווה, Israel",
+    "location": {
+      "latitude": 32.061533,
+      "longitude": 34.867693
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גני תקווה",
+      "sourceUrl": "https://mdgt.org.il/directory-synagogues/listing/המרכזי-נוף-סביון/"
+    },
+    "phone": "0549002337",
+    "nusach": "אשכנז"
+  },
+  {
+    "id": "rc-ganei-tikva-h1wtbcyw",
+    "name": "ברכי נפשי",
+    "type": "synagogue",
+    "cityId": "גני תקווה",
+    "address": "11 עין חנוך , גני תקווה, Israel",
+    "location": {
+      "latitude": 32.061533,
+      "longitude": 34.867693
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גני תקווה",
+      "sourceUrl": "https://mdgt.org.il/directory-synagogues/listing/ברכי-נפשי/"
+    },
+    "phone": "0543343694",
+    "nusach": "ירושלמי"
+  },
+  {
+    "id": "rc-ganei-tikva-h1cejcfu",
+    "name": "המרכזי - סאסוב",
+    "type": "synagogue",
+    "cityId": "גני תקווה",
+    "address": "77 הרי יהודה , קרית אונו, Israel",
+    "location": {
+      "latitude": 32.060305,
+      "longitude": 34.867074
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גני תקווה",
+      "sourceUrl": "https://mdgt.org.il/directory-synagogues/listing/המרכזי-סאסוב/"
+    },
+    "phone": "0543021915",
+    "nusach": "אשכנז"
+  },
+  {
+    "id": "rc-ganei-tikva-h12mavdz",
+    "name": "בית יוסף שלום",
+    "type": "synagogue",
+    "cityId": "גני תקווה",
+    "address": "5 עין גנים , גני תקווה, Israel",
+    "location": {
+      "latitude": 32.060174,
+      "longitude": 34.868193
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גני תקווה",
+      "sourceUrl": "https://mdgt.org.il/directory-synagogues/listing/בית-יוסף-שלום/"
+    },
+    "phone": "0525444274",
+    "nusach": "ירושלמי"
+  },
+  {
+    "id": "rc-ganei-tikva-h17xl4xq",
+    "name": "בית חב\"ד",
+    "type": "synagogue",
+    "cityId": "גני תקווה",
+    "address": "3 דרך המשי , גני תקווה, Israel",
+    "location": {
+      "latitude": 32.063042,
+      "longitude": 34.867275
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גני תקווה",
+      "sourceUrl": "https://mdgt.org.il/directory-synagogues/listing/בית-חבד/"
+    },
+    "nusach": "כללי"
+  },
+  {
+    "id": "rc-ganei-tikva-hbkpkjv",
+    "name": "אוהל שם",
+    "type": "synagogue",
+    "cityId": "גני תקווה",
+    "address": "14 עין גדי , גני תקווה, Israel",
+    "location": {
+      "latitude": 32.060969,
+      "longitude": 34.877915
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית גני תקווה",
+      "sourceUrl": "https://mdgt.org.il/directory-synagogues/listing/אוהל-שם/"
+    },
+    "phone": "0525581461",
+    "nusach": "תימני שאמי"
+  }
+]

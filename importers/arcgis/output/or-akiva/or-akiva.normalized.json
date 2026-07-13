@@ -1,0 +1,1212 @@
+[
+  {
+    "id": "arcgis:or-akiva::1",
+    "type": "synagogue",
+    "name": "(קדושים) ‎בית הכנסת האשכנזי הגדול",
+    "cityHint": "אור עקיבא",
+    "location": {
+      "latitude": 32.50913503776143,
+      "longitude": 34.91820807273341
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:or-akiva",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:or-akiva:1",
+      "sourceUrl": "https://services9.arcgis.com/kStxd97qYN1pEumt/arcgis/rest/services/בית_כנסת/FeatureServer/7",
+      "fetchedAt": "2026-06-21T06:40:01.220Z",
+      "raw": {
+        "OBJECTID": 1,
+        "Shem": "(קדושים) ‎בית הכנסת האשכנזי הגדול",
+        "Address": "בן יהודה",
+        "ContactName": "הרב אליעזר שמולביץ",
+        "Phone": "054-5402047",
+        "AmutaNumber": "580485639",
+        "Zchut": "תכנונית  (הוראת החכרה בתוכנית)",
+        "Siduri": 10,
+        "LayerDate": "19/11/2019",
+        "X": 192560,
+        "Y": 712814,
+        "GUSH": 10622,
+        "PARCELL": 111
+      }
+    },
+    "address": "בן יהודה",
+    "phone": "054-5402047",
+    "extra": {
+      "gabbai": "הרב אליעזר שמולביץ"
+    }
+  },
+  {
+    "id": "arcgis:or-akiva::2",
+    "type": "synagogue",
+    "name": "בית הכנסת \"בית יוסף\"",
+    "cityHint": "אור עקיבא",
+    "location": {
+      "latitude": 32.50890005297386,
+      "longitude": 34.91790310407669
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:or-akiva",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:or-akiva:2",
+      "sourceUrl": "https://services9.arcgis.com/kStxd97qYN1pEumt/arcgis/rest/services/בית_כנסת/FeatureServer/7",
+      "fetchedAt": "2026-06-21T06:40:01.220Z",
+      "raw": {
+        "OBJECTID": 2,
+        "Shem": "בית הכנסת \"בית יוסף\"",
+        "Address": "הרב מלול",
+        "ContactName": "פחימה חיים",
+        "Phone": "04-6363329",
+        "AmutaNumber": null,
+        "Zchut": "חכירה 49 שנים",
+        "Siduri": 9,
+        "LayerDate": "19/11/2019",
+        "X": 192531,
+        "Y": 712788,
+        "GUSH": 10622,
+        "PARCELL": 82
+      }
+    },
+    "address": "הרב מלול",
+    "phone": "04-6363329",
+    "extra": {
+      "gabbai": "פחימה חיים"
+    }
+  },
+  {
+    "id": "arcgis:or-akiva::3",
+    "type": "synagogue",
+    "name": "בית הכנסת לעולי הקווקז (בייעוד שצ\"פ) יקותיאל אדם",
+    "cityHint": "אור עקיבא",
+    "location": {
+      "latitude": 32.51229290572928,
+      "longitude": 34.916913085832135
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:or-akiva",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:or-akiva:3",
+      "sourceUrl": "https://services9.arcgis.com/kStxd97qYN1pEumt/arcgis/rest/services/בית_כנסת/FeatureServer/7",
+      "fetchedAt": "2026-06-21T06:40:01.220Z",
+      "raw": {
+        "OBJECTID": 3,
+        "Shem": "בית הכנסת לעולי הקווקז (בייעוד שצ\"פ) יקותיאל אדם",
+        "Address": "יאנסן עליזה",
+        "ContactName": "איסקוב יששכר",
+        "Phone": "050-8216787",
+        "AmutaNumber": "580495752",
+        "Zchut": "חכירה 49 שנים",
+        "Siduri": 12,
+        "LayerDate": "19/11/2019",
+        "X": 192439,
+        "Y": 713165,
+        "GUSH": 10650,
+        "PARCELL": 58
+      }
+    },
+    "address": "יאנסן עליזה",
+    "phone": "050-8216787",
+    "extra": {
+      "gabbai": "איסקוב יששכר"
+    }
+  },
+  {
+    "id": "arcgis:or-akiva::4",
+    "type": "synagogue",
+    "name": "‎בית הכנסת \"שערי צדקה\"",
+    "cityHint": "אור עקיבא",
+    "location": {
+      "latitude": 32.51225411958622,
+      "longitude": 34.916629906857416
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:or-akiva",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:or-akiva:4",
+      "sourceUrl": "https://services9.arcgis.com/kStxd97qYN1pEumt/arcgis/rest/services/בית_כנסת/FeatureServer/7",
+      "fetchedAt": "2026-06-21T06:40:01.220Z",
+      "raw": {
+        "OBJECTID": 4,
+        "Shem": "‎בית הכנסת \"שערי צדקה\"",
+        "Address": "יאנסן עליזה",
+        "ContactName": "שלום דניאל",
+        "Phone": "052-2797125",
+        "AmutaNumber": null,
+        "Zchut": "חכירה 49 שנים",
+        "Siduri": 13,
+        "LayerDate": "19/11/2019",
+        "X": 192412,
+        "Y": 713160,
+        "GUSH": 10650,
+        "PARCELL": 89
+      }
+    },
+    "address": "יאנסן עליזה",
+    "phone": "052-2797125",
+    "extra": {
+      "gabbai": "שלום דניאל"
+    }
+  },
+  {
+    "id": "arcgis:or-akiva::5",
+    "type": "synagogue",
+    "name": "‎בית הכנסת ע\"ש רבי דוד ומשה",
+    "cityHint": "אור עקיבא",
+    "location": {
+      "latitude": 32.510887305436114,
+      "longitude": 34.91541778538149
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:or-akiva",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:or-akiva:5",
+      "sourceUrl": "https://services9.arcgis.com/kStxd97qYN1pEumt/arcgis/rest/services/בית_כנסת/FeatureServer/7",
+      "fetchedAt": "2026-06-21T06:40:01.220Z",
+      "raw": {
+        "OBJECTID": 5,
+        "Shem": "‎בית הכנסת ע\"ש רבי דוד ומשה",
+        "Address": "וייסנברג יחיאל(צמוד למרכז צעירים)",
+        "ContactName": "חיים אשרף",
+        "Phone": "050-4426020",
+        "AmutaNumber": "580041630",
+        "Zchut": "תכנונית  (הוראת החכרה בתוכנית)",
+        "Siduri": 14,
+        "LayerDate": "19/11/2019",
+        "X": 192298,
+        "Y": 713009,
+        "GUSH": 10650,
+        "PARCELL": 103
+      }
+    },
+    "address": "וייסנברג יחיאל(צמוד למרכז צעירים)",
+    "phone": "050-4426020",
+    "extra": {
+      "gabbai": "חיים אשרף"
+    }
+  },
+  {
+    "id": "arcgis:or-akiva::6",
+    "type": "synagogue",
+    "name": "בית הכנסת \"אהבת שלום\"",
+    "cityHint": "אור עקיבא",
+    "location": {
+      "latitude": 32.510979242554065,
+      "longitude": 34.91878699694489
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:or-akiva",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:or-akiva:6",
+      "sourceUrl": "https://services9.arcgis.com/kStxd97qYN1pEumt/arcgis/rest/services/בית_כנסת/FeatureServer/7",
+      "fetchedAt": "2026-06-21T06:40:01.220Z",
+      "raw": {
+        "OBJECTID": 6,
+        "Shem": "בית הכנסת \"אהבת שלום\"",
+        "Address": "ויסנברג יחיאל ",
+        "ContactName": "יוסף תורג'מן",
+        "Phone": "04-6362618",
+        "AmutaNumber": "580530962",
+        "Zchut": "תכנונית  (הוראת החכרה בתוכנית)",
+        "Siduri": 18,
+        "LayerDate": "19/11/2019",
+        "X": 192615,
+        "Y": 713018,
+        "GUSH": 10650,
+        "PARCELL": 56
+      }
+    },
+    "address": "ויסנברג יחיאל",
+    "phone": "04-6362618",
+    "extra": {
+      "gabbai": "יוסף תורג'מן"
+    }
+  },
+  {
+    "id": "arcgis:or-akiva::7",
+    "type": "synagogue",
+    "name": "שערי רחמים (בית ספר עציון)",
+    "cityHint": "אור עקיבא",
+    "location": {
+      "latitude": 32.51138453026382,
+      "longitude": 34.91689179495857
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:or-akiva",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:or-akiva:7",
+      "sourceUrl": "https://services9.arcgis.com/kStxd97qYN1pEumt/arcgis/rest/services/בית_כנסת/FeatureServer/7",
+      "fetchedAt": "2026-06-21T06:40:01.220Z",
+      "raw": {
+        "OBJECTID": 7,
+        "Shem": "שערי רחמים (בית ספר עציון)",
+        "Address": "ויסנברג יחיאל ",
+        "ContactName": "אוחנונה אברהם",
+        "Phone": "050-7359706",
+        "AmutaNumber": null,
+        "Zchut": "ממוקם בתוך מתחם עציון- תכנונית הוראת הפקעה בתכנית.",
+        "Siduri": 25,
+        "LayerDate": "19/11/2019",
+        "X": 192437,
+        "Y": 713064,
+        "GUSH": 10650,
+        "PARCELL": 53
+      }
+    },
+    "address": "ויסנברג יחיאל",
+    "phone": "050-7359706",
+    "extra": {
+      "gabbai": "אוחנונה אברהם"
+    }
+  },
+  {
+    "id": "arcgis:or-akiva::8",
+    "type": "synagogue",
+    "name": "בית חב\"ד",
+    "cityHint": "אור עקיבא",
+    "location": {
+      "latitude": 32.49689488957178,
+      "longitude": 34.92373379242438
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:or-akiva",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:or-akiva:8",
+      "sourceUrl": "https://services9.arcgis.com/kStxd97qYN1pEumt/arcgis/rest/services/בית_כנסת/FeatureServer/7",
+      "fetchedAt": "2026-06-21T06:40:01.220Z",
+      "raw": {
+        "OBJECTID": 8,
+        "Shem": "בית חב\"ד",
+        "Address": "התמר",
+        "ContactName": "יואל מן",
+        "Phone": "054-5409838",
+        "AmutaNumber": "580140689",
+        "Zchut": "תכנונית  (הוראת הפקעה בתוכנית)",
+        "Siduri": 26,
+        "LayerDate": "19/11/2019",
+        "X": 193075,
+        "Y": 711455,
+        "GUSH": 12797,
+        "PARCELL": 101
+      }
+    },
+    "address": "התמר",
+    "phone": "054-5409838",
+    "extra": {
+      "gabbai": "יואל מן"
+    }
+  },
+  {
+    "id": "arcgis:or-akiva::9",
+    "type": "synagogue",
+    "name": "בית כנסת אהבת אליהו",
+    "cityHint": "אור עקיבא",
+    "location": {
+      "latitude": 32.50616317047362,
+      "longitude": 34.922851333095224
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:or-akiva",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:or-akiva:9",
+      "sourceUrl": "https://services9.arcgis.com/kStxd97qYN1pEumt/arcgis/rest/services/בית_כנסת/FeatureServer/7",
+      "fetchedAt": "2026-06-21T06:40:01.220Z",
+      "raw": {
+        "OBJECTID": 9,
+        "Shem": "בית כנסת אהבת אליהו",
+        "Address": "זבוטינסקי 8",
+        "ContactName": "אדי בן שמחון",
+        "Phone": "050-5715986",
+        "AmutaNumber": null,
+        "Zchut": "ממוקם בתוך בית הספר אופק-תכנונית הוראת הפקעה בתוכנ",
+        "Siduri": 27,
+        "LayerDate": "19/11/2019",
+        "X": 192995,
+        "Y": 712483,
+        "GUSH": 10646,
+        "PARCELL": 242
+      }
+    },
+    "address": "זבוטינסקי 8",
+    "phone": "050-5715986",
+    "extra": {
+      "gabbai": "אדי בן שמחון"
+    }
+  },
+  {
+    "id": "arcgis:or-akiva::10",
+    "type": "synagogue",
+    "name": "דרור",
+    "cityHint": "אור עקיבא",
+    "location": {
+      "latitude": 32.517316411105426,
+      "longitude": 34.91556090537866
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:or-akiva",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:or-akiva:10",
+      "sourceUrl": "https://services9.arcgis.com/kStxd97qYN1pEumt/arcgis/rest/services/בית_כנסת/FeatureServer/7",
+      "fetchedAt": "2026-06-21T06:40:01.220Z",
+      "raw": {
+        "OBJECTID": 10,
+        "Shem": "דרור",
+        "Address": "שדרות ירושלים",
+        "ContactName": "עופר זקיאן",
+        "Phone": "052-3283430",
+        "AmutaNumber": null,
+        "Zchut": "ממוקם בתוך בית הספר דרור-חכירה 49 שנים.",
+        "Siduri": 28,
+        "LayerDate": "19/11/2019",
+        "X": 192313,
+        "Y": 713722,
+        "GUSH": 12612,
+        "PARCELL": 18
+      }
+    },
+    "address": "שדרות ירושלים",
+    "phone": "052-3283430",
+    "extra": {
+      "gabbai": "עופר זקיאן"
+    }
+  },
+  {
+    "id": "arcgis:or-akiva::11",
+    "type": "synagogue",
+    "name": "בית הכנסת לבני העדה הבוכרית ע\"ש יוסף בן יעקוב ז\"ל",
+    "cityHint": "אור עקיבא",
+    "location": {
+      "latitude": 32.508721306896675,
+      "longitude": 34.91414074362188
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:or-akiva",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:or-akiva:11",
+      "sourceUrl": "https://services9.arcgis.com/kStxd97qYN1pEumt/arcgis/rest/services/בית_כנסת/FeatureServer/7",
+      "fetchedAt": "2026-06-21T06:40:01.220Z",
+      "raw": {
+        "OBJECTID": 11,
+        "Shem": "בית הכנסת לבני העדה הבוכרית ע\"ש יוסף בן יעקוב ז\"ל",
+        "Address": "רחוב שלמה דרששתי",
+        "ContactName": "יצחק ברגיג",
+        "Phone": "052-3759325",
+        "AmutaNumber": "580353415",
+        "Zchut": "בעלות",
+        "Siduri": 20,
+        "LayerDate": "19/11/2019",
+        "X": 192177,
+        "Y": 712769,
+        "GUSH": 10615,
+        "PARCELL": 164
+      }
+    },
+    "address": "רחוב שלמה דרששתי",
+    "phone": "052-3759325",
+    "extra": {
+      "gabbai": "יצחק ברגיג"
+    }
+  },
+  {
+    "id": "arcgis:or-akiva::12",
+    "type": "synagogue",
+    "name": "ברסלב בית מוהר\"ן",
+    "cityHint": "אור עקיבא",
+    "location": {
+      "latitude": 32.5132881524464,
+      "longitude": 34.918165689062576
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:or-akiva",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:or-akiva:12",
+      "sourceUrl": "https://services9.arcgis.com/kStxd97qYN1pEumt/arcgis/rest/services/בית_כנסת/FeatureServer/7",
+      "fetchedAt": "2026-06-21T06:40:01.220Z",
+      "raw": {
+        "OBJECTID": 12,
+        "Shem": "ברסלב בית מוהר\"ן",
+        "Address": "עליזה יאנסן(בין הבניינים)",
+        "ContactName": "מאיר כנפו",
+        "Phone": null,
+        "AmutaNumber": null,
+        "Zchut": null,
+        "Siduri": 31,
+        "LayerDate": "19/11/2019",
+        "X": 192557,
+        "Y": 713275,
+        "GUSH": 10650,
+        "PARCELL": 12
+      }
+    },
+    "address": "עליזה יאנסן(בין הבניינים)",
+    "extra": {
+      "gabbai": "מאיר כנפו"
+    }
+  },
+  {
+    "id": "arcgis:or-akiva::13",
+    "type": "synagogue",
+    "name": "בית הכנסת \"תורת חכם\" (מקלט)",
+    "cityHint": "אור עקיבא",
+    "location": {
+      "latitude": 32.50520299307855,
+      "longitude": 34.921448873377095
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:or-akiva",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:or-akiva:13",
+      "sourceUrl": "https://services9.arcgis.com/kStxd97qYN1pEumt/arcgis/rest/services/בית_כנסת/FeatureServer/7",
+      "fetchedAt": "2026-06-21T06:40:01.220Z",
+      "raw": {
+        "OBJECTID": 13,
+        "Shem": "בית הכנסת \"תורת חכם\" (מקלט)",
+        "Address": "חללי דקר",
+        "ContactName": "אברהם גבאי",
+        "Phone": "0509416565",
+        "AmutaNumber": null,
+        "Zchut": null,
+        "Siduri": 30,
+        "LayerDate": "19/11/2019",
+        "X": 192863,
+        "Y": 712377,
+        "GUSH": 10646,
+        "PARCELL": 217
+      }
+    },
+    "address": "חללי דקר",
+    "phone": "0509416565",
+    "extra": {
+      "gabbai": "אברהם גבאי"
+    }
+  },
+  {
+    "id": "arcgis:or-akiva::14",
+    "type": "synagogue",
+    "name": "קול יעקב (בית ספר רוטשילד)",
+    "cityHint": "אור עקיבא",
+    "location": {
+      "latitude": 32.50903419910565,
+      "longitude": 34.91863901077751
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:or-akiva",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:or-akiva:14",
+      "sourceUrl": "https://services9.arcgis.com/kStxd97qYN1pEumt/arcgis/rest/services/בית_כנסת/FeatureServer/7",
+      "fetchedAt": "2026-06-21T06:40:01.220Z",
+      "raw": {
+        "OBJECTID": 14,
+        "Shem": "קול יעקב (בית ספר רוטשילד)",
+        "Address": "רחוב בלפור",
+        "ContactName": "אייל מסיקה",
+        "Phone": "058-3233278",
+        "AmutaNumber": "580633527",
+        "Zchut": "ממוקם בתוך מתחם אגף הנדסה ושפ\"ע-חכירה 49 שנים.",
+        "Siduri": 24,
+        "LayerDate": "19/11/2019",
+        "X": 192600,
+        "Y": 712803,
+        "GUSH": 10622,
+        "PARCELL": 47
+      }
+    },
+    "address": "רחוב בלפור",
+    "phone": "058-3233278",
+    "extra": {
+      "gabbai": "אייל מסיקה"
+    }
+  },
+  {
+    "id": "arcgis:or-akiva::15",
+    "type": "synagogue",
+    "name": "עץ חיים (הרב גולן)",
+    "cityHint": "אור עקיבא",
+    "location": {
+      "latitude": 32.50851001659052,
+      "longitude": 34.914619131429916
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:or-akiva",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:or-akiva:15",
+      "sourceUrl": "https://services9.arcgis.com/kStxd97qYN1pEumt/arcgis/rest/services/בית_כנסת/FeatureServer/7",
+      "fetchedAt": "2026-06-21T06:40:01.220Z",
+      "raw": {
+        "OBJECTID": 15,
+        "Shem": "עץ חיים (הרב גולן)",
+        "Address": "רחוב שלמה דרדשתי(תחילת רחוב)",
+        "ContactName": "הרב גולן/סימון נח",
+        "Phone": "054-8529327",
+        "AmutaNumber": "580063303",
+        "Zchut": "ממוקם בתוך בית הספר רבי עקיבא-תכנונית הוראת הפקעה ",
+        "Siduri": 22,
+        "LayerDate": "19/11/2019",
+        "X": 192224,
+        "Y": 712746,
+        "GUSH": 10615,
+        "PARCELL": 163
+      }
+    },
+    "address": "רחוב שלמה דרדשתי(תחילת רחוב)",
+    "phone": "054-8529327",
+    "extra": {
+      "gabbai": "הרב גולן/סימון נח"
+    }
+  },
+  {
+    "id": "arcgis:or-akiva::16",
+    "type": "synagogue",
+    "name": "אור שלום מרדכי",
+    "cityHint": "אור עקיבא",
+    "location": {
+      "latitude": 32.510055204633346,
+      "longitude": 34.91872345764293
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:or-akiva",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:or-akiva:16",
+      "sourceUrl": "https://services9.arcgis.com/kStxd97qYN1pEumt/arcgis/rest/services/בית_כנסת/FeatureServer/7",
+      "fetchedAt": "2026-06-21T06:40:01.220Z",
+      "raw": {
+        "OBJECTID": 16,
+        "Shem": "אור שלום מרדכי",
+        "Address": "הרצל",
+        "ContactName": "לחייני דניאל",
+        "Phone": "077-9611646",
+        "AmutaNumber": null,
+        "Zchut": "תכנית ג/556 -אין הוראת הפקעה בתכנית, טיפול איתי",
+        "Siduri": 21,
+        "LayerDate": "19/11/2019",
+        "X": 192608,
+        "Y": 712916,
+        "GUSH": 10622,
+        "PARCELL": 43
+      }
+    },
+    "address": "הרצל",
+    "phone": "077-9611646",
+    "extra": {
+      "gabbai": "לחייני דניאל"
+    }
+  },
+  {
+    "id": "arcgis:or-akiva::17",
+    "type": "synagogue",
+    "name": "בית כנסת היכל אברהם",
+    "cityHint": "אור עקיבא",
+    "location": {
+      "latitude": 32.520739796409316,
+      "longitude": 34.91809195535751
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:or-akiva",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:or-akiva:17",
+      "sourceUrl": "https://services9.arcgis.com/kStxd97qYN1pEumt/arcgis/rest/services/בית_כנסת/FeatureServer/7",
+      "fetchedAt": "2026-06-21T06:40:01.220Z",
+      "raw": {
+        "OBJECTID": 17,
+        "Shem": "בית כנסת היכל אברהם",
+        "Address": "הר מירון",
+        "ContactName": "עזרא יצחק",
+        "Phone": null,
+        "AmutaNumber": null,
+        "Zchut": "תכנונית  (הוראת הפקעה בתוכנית)",
+        "Siduri": 19,
+        "LayerDate": "19/11/2019",
+        "X": 192552,
+        "Y": 714101,
+        "GUSH": 12611,
+        "PARCELL": 115
+      }
+    },
+    "address": "הר מירון",
+    "extra": {
+      "gabbai": "עזרא יצחק"
+    }
+  },
+  {
+    "id": "arcgis:or-akiva::18",
+    "type": "synagogue",
+    "name": "בית הכנסת \"תפארת יעקב\"",
+    "cityHint": "אור עקיבא",
+    "location": {
+      "latitude": 32.50017710458099,
+      "longitude": 34.922776057817615
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:or-akiva",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:or-akiva:18",
+      "sourceUrl": "https://services9.arcgis.com/kStxd97qYN1pEumt/arcgis/rest/services/בית_כנסת/FeatureServer/7",
+      "fetchedAt": "2026-06-21T06:40:01.220Z",
+      "raw": {
+        "OBJECTID": 18,
+        "Shem": "בית הכנסת \"תפארת יעקב\"",
+        "Address": "התמר",
+        "ContactName": "כהן דוד",
+        "Phone": "054-7728450",
+        "AmutaNumber": "580320505",
+        "Zchut": "תכנונית  (הוראת הפקעה בתוכנית)",
+        "Siduri": 17,
+        "LayerDate": "19/11/2019",
+        "X": 192986,
+        "Y": 711820,
+        "GUSH": 12797,
+        "PARCELL": 104
+      }
+    },
+    "address": "התמר",
+    "phone": "054-7728450",
+    "extra": {
+      "gabbai": "כהן דוד"
+    }
+  },
+  {
+    "id": "arcgis:or-akiva::19",
+    "type": "synagogue",
+    "name": "בית הכנסת המרכזי היכל דוד",
+    "cityHint": "אור עקיבא",
+    "location": {
+      "latitude": 32.50695732765788,
+      "longitude": 34.916188255304064
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:or-akiva",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:or-akiva:19",
+      "sourceUrl": "https://services9.arcgis.com/kStxd97qYN1pEumt/arcgis/rest/services/בית_כנסת/FeatureServer/7",
+      "fetchedAt": "2026-06-21T06:40:01.220Z",
+      "raw": {
+        "OBJECTID": 19,
+        "Shem": "בית הכנסת המרכזי היכל דוד",
+        "Address": "מנחם ציוני",
+        "ContactName": "מיכה מורסיאנו",
+        "Phone": "052-2156734",
+        "AmutaNumber": null,
+        "Zchut": "תכנונית  (הוראת הפקעה בתוכנית)",
+        "Siduri": 16,
+        "LayerDate": "19/11/2019",
+        "X": 192369,
+        "Y": 712573,
+        "GUSH": 10639,
+        "PARCELL": 21
+      }
+    },
+    "address": "מנחם ציוני",
+    "phone": "052-2156734",
+    "extra": {
+      "gabbai": "מיכה מורסיאנו"
+    }
+  },
+  {
+    "id": "arcgis:or-akiva::20",
+    "type": "synagogue",
+    "name": "בית הכנסת \"מיזוג גלויות\"",
+    "cityHint": "אור עקיבא",
+    "location": {
+      "latitude": 32.50654617483529,
+      "longitude": 34.92259103351452
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:or-akiva",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:or-akiva:20",
+      "sourceUrl": "https://services9.arcgis.com/kStxd97qYN1pEumt/arcgis/rest/services/בית_כנסת/FeatureServer/7",
+      "fetchedAt": "2026-06-21T06:40:01.220Z",
+      "raw": {
+        "OBJECTID": 20,
+        "Shem": "בית הכנסת \"מיזוג גלויות\"",
+        "Address": "הרב קוק",
+        "ContactName": "אילוז אברהם",
+        "Phone": "04-6362416",
+        "AmutaNumber": null,
+        "Zchut": "תכנונית  (הוראת החכרה בתוכנית)",
+        "Siduri": 15,
+        "LayerDate": "19/11/2019",
+        "X": 192971,
+        "Y": 712526,
+        "GUSH": 10646,
+        "PARCELL": 242
+      }
+    },
+    "address": "הרב קוק",
+    "phone": "04-6362416",
+    "extra": {
+      "gabbai": "אילוז אברהם"
+    }
+  },
+  {
+    "id": "arcgis:or-akiva::21",
+    "type": "synagogue",
+    "name": "‎בית הכנסת ע\"ש התנאים רבי עקיבא והרשב\"י",
+    "cityHint": "אור עקיבא",
+    "location": {
+      "latitude": 32.512101041515834,
+      "longitude": 34.92041767397229
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:or-akiva",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:or-akiva:21",
+      "sourceUrl": "https://services9.arcgis.com/kStxd97qYN1pEumt/arcgis/rest/services/בית_כנסת/FeatureServer/7",
+      "fetchedAt": "2026-06-21T06:40:01.220Z",
+      "raw": {
+        "OBJECTID": 21,
+        "Shem": "‎בית הכנסת ע\"ש התנאים רבי עקיבא והרשב\"י",
+        "Address": "חי טייב",
+        "ContactName": "שלומי בן לולו",
+        "Phone": "050-2836242",
+        "AmutaNumber": "580005783",
+        "Zchut": "בעלות",
+        "Siduri": 11,
+        "LayerDate": "19/11/2019",
+        "X": 192768,
+        "Y": 713142,
+        "GUSH": 10635,
+        "PARCELL": 149
+      }
+    },
+    "address": "חי טייב",
+    "phone": "050-2836242",
+    "extra": {
+      "gabbai": "שלומי בן לולו"
+    }
+  },
+  {
+    "id": "arcgis:or-akiva::22",
+    "type": "synagogue",
+    "name": "‎בית הכנסת \"זכור אברהם\"",
+    "cityHint": "אור עקיבא",
+    "location": {
+      "latitude": 32.50837513630831,
+      "longitude": 34.92223146302951
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:or-akiva",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:or-akiva:22",
+      "sourceUrl": "https://services9.arcgis.com/kStxd97qYN1pEumt/arcgis/rest/services/בית_כנסת/FeatureServer/7",
+      "fetchedAt": "2026-06-21T06:40:01.220Z",
+      "raw": {
+        "OBJECTID": 22,
+        "Shem": "‎בית הכנסת \"זכור אברהם\"",
+        "Address": "הלל",
+        "ContactName": "סייג שלמה",
+        "Phone": "052-8637657",
+        "AmutaNumber": null,
+        "Zchut": "בעלות",
+        "Siduri": 8,
+        "LayerDate": "19/11/2019",
+        "X": 192938,
+        "Y": 712729,
+        "GUSH": 12310,
+        "PARCELL": 35
+      }
+    },
+    "address": "הלל",
+    "phone": "052-8637657",
+    "extra": {
+      "gabbai": "סייג שלמה"
+    }
+  },
+  {
+    "id": "arcgis:or-akiva::23",
+    "type": "synagogue",
+    "name": "‎בית הכנסת \"אהבת אחים\"",
+    "cityHint": "אור עקיבא",
+    "location": {
+      "latitude": 32.508430320453286,
+      "longitude": 34.92194409572292
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:or-akiva",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:or-akiva:23",
+      "sourceUrl": "https://services9.arcgis.com/kStxd97qYN1pEumt/arcgis/rest/services/בית_כנסת/FeatureServer/7",
+      "fetchedAt": "2026-06-21T06:40:01.220Z",
+      "raw": {
+        "OBJECTID": 23,
+        "Shem": "‎בית הכנסת \"אהבת אחים\"",
+        "Address": "הלל",
+        "ContactName": "ניסים בן שבת",
+        "Phone": "052-3354003",
+        "AmutaNumber": "580530285",
+        "Zchut": "בעלות",
+        "Siduri": 6,
+        "LayerDate": "19/11/2019",
+        "X": 192911,
+        "Y": 712735,
+        "GUSH": 12310,
+        "PARCELL": 35
+      }
+    },
+    "address": "הלל",
+    "phone": "052-3354003",
+    "extra": {
+      "gabbai": "ניסים בן שבת"
+    }
+  },
+  {
+    "id": "arcgis:or-akiva::24",
+    "type": "synagogue",
+    "name": "בית הכנסת \"בית יעקב\"(עולי בבל) ‎",
+    "cityHint": "אור עקיבא",
+    "location": {
+      "latitude": 32.50880421515737,
+      "longitude": 34.922070860035475
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:or-akiva",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:or-akiva:24",
+      "sourceUrl": "https://services9.arcgis.com/kStxd97qYN1pEumt/arcgis/rest/services/בית_כנסת/FeatureServer/7",
+      "fetchedAt": "2026-06-21T06:40:01.220Z",
+      "raw": {
+        "OBJECTID": 24,
+        "Shem": " בית הכנסת \"בית יעקב\"(עולי בבל) ‎",
+        "Address": "הלל",
+        "ContactName": "כדורי אליהו",
+        "Phone": "054-4889097",
+        "AmutaNumber": null,
+        "Zchut": "בעלות",
+        "Siduri": 4,
+        "LayerDate": "19/11/2019",
+        "X": 192923,
+        "Y": 712776,
+        "GUSH": 12310,
+        "PARCELL": 35
+      }
+    },
+    "address": "הלל",
+    "phone": "054-4889097",
+    "extra": {
+      "gabbai": "כדורי אליהו"
+    }
+  },
+  {
+    "id": "arcgis:or-akiva::25",
+    "type": "synagogue",
+    "name": "בית הכנסת \"נצח אליהו\"",
+    "cityHint": "אור עקיבא",
+    "location": {
+      "latitude": 32.50855395632044,
+      "longitude": 34.92175910669298
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:or-akiva",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:or-akiva:25",
+      "sourceUrl": "https://services9.arcgis.com/kStxd97qYN1pEumt/arcgis/rest/services/בית_כנסת/FeatureServer/7",
+      "fetchedAt": "2026-06-21T06:40:01.220Z",
+      "raw": {
+        "OBJECTID": 25,
+        "Shem": "בית הכנסת \"נצח אליהו\"",
+        "Address": "הלל",
+        "ContactName": "חיימי אליהו",
+        "Phone": "054-8442570",
+        "AmutaNumber": null,
+        "Zchut": "בעלות",
+        "Siduri": 7,
+        "LayerDate": "19/11/2019",
+        "X": 192893,
+        "Y": 712749,
+        "GUSH": 12310,
+        "PARCELL": 35
+      }
+    },
+    "address": "הלל",
+    "phone": "054-8442570",
+    "extra": {
+      "gabbai": "חיימי אליהו"
+    }
+  },
+  {
+    "id": "arcgis:or-akiva::26",
+    "type": "synagogue",
+    "name": "‎בית הכנסת \"ישמח ישראל\"",
+    "cityHint": "אור עקיבא",
+    "location": {
+      "latitude": 32.50860530199999,
+      "longitude": 34.922142774021395
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:or-akiva",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:or-akiva:26",
+      "sourceUrl": "https://services9.arcgis.com/kStxd97qYN1pEumt/arcgis/rest/services/בית_כנסת/FeatureServer/7",
+      "fetchedAt": "2026-06-21T06:40:01.220Z",
+      "raw": {
+        "OBJECTID": 26,
+        "Shem": "‎בית הכנסת \"ישמח ישראל\"",
+        "Address": "הלל",
+        "ContactName": "סויסה ניסים",
+        "Phone": "052-2450333",
+        "AmutaNumber": null,
+        "Zchut": "בעלות",
+        "Siduri": 5,
+        "LayerDate": "19/11/2019",
+        "X": 192929,
+        "Y": 712754,
+        "GUSH": 12310,
+        "PARCELL": 35
+      }
+    },
+    "address": "הלל",
+    "phone": "052-2450333",
+    "extra": {
+      "gabbai": "סויסה ניסים"
+    }
+  },
+  {
+    "id": "arcgis:or-akiva::27",
+    "type": "synagogue",
+    "name": "בית הכנסת \"עדת ישורון\"",
+    "cityHint": "אור עקיבא",
+    "location": {
+      "latitude": 32.50901585190726,
+      "longitude": 34.92201309680238
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:or-akiva",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:or-akiva:27",
+      "sourceUrl": "https://services9.arcgis.com/kStxd97qYN1pEumt/arcgis/rest/services/בית_כנסת/FeatureServer/7",
+      "fetchedAt": "2026-06-21T06:40:01.220Z",
+      "raw": {
+        "OBJECTID": 27,
+        "Shem": "בית הכנסת \"עדת ישורון\"",
+        "Address": "הלל",
+        "ContactName": "ביטון יוסף",
+        "Phone": "054-7728436",
+        "AmutaNumber": null,
+        "Zchut": "בעלות",
+        "Siduri": 3,
+        "LayerDate": "19/11/2019",
+        "X": 192917,
+        "Y": 712800,
+        "GUSH": 12310,
+        "PARCELL": 35
+      }
+    },
+    "address": "הלל",
+    "phone": "054-7728436",
+    "extra": {
+      "gabbai": "ביטון יוסף"
+    }
+  },
+  {
+    "id": "arcgis:or-akiva::28",
+    "type": "synagogue",
+    "name": "בית הכנסת \"עטרת יצחק\"",
+    "cityHint": "אור עקיבא",
+    "location": {
+      "latitude": 32.51027275643589,
+      "longitude": 34.92139591121929
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:or-akiva",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:or-akiva:28",
+      "sourceUrl": "https://services9.arcgis.com/kStxd97qYN1pEumt/arcgis/rest/services/בית_כנסת/FeatureServer/7",
+      "fetchedAt": "2026-06-21T06:40:01.220Z",
+      "raw": {
+        "OBJECTID": 28,
+        "Shem": "בית הכנסת \"עטרת יצחק\"",
+        "Address": "הגיבורים(סוף הרחוב)",
+        "ContactName": "מנחם אדרי",
+        "Phone": "052-3997942",
+        "AmutaNumber": null,
+        "Zchut": "בעלות",
+        "Siduri": 2,
+        "LayerDate": "19/11/2019",
+        "X": 192860,
+        "Y": 712939,
+        "GUSH": 12310,
+        "PARCELL": 31
+      }
+    },
+    "address": "הגיבורים(סוף הרחוב)",
+    "phone": "052-3997942",
+    "extra": {
+      "gabbai": "מנחם אדרי"
+    }
+  },
+  {
+    "id": "arcgis:or-akiva::29",
+    "type": "synagogue",
+    "name": "בית הכנסת \"שיח יצחק\"",
+    "cityHint": "אור עקיבא",
+    "location": {
+      "latitude": 32.510139239076864,
+      "longitude": 34.92068536931964
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:or-akiva",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:or-akiva:29",
+      "sourceUrl": "https://services9.arcgis.com/kStxd97qYN1pEumt/arcgis/rest/services/בית_כנסת/FeatureServer/7",
+      "fetchedAt": "2026-06-21T06:40:01.220Z",
+      "raw": {
+        "OBJECTID": 29,
+        "Shem": "בית הכנסת \"שיח יצחק\"",
+        "Address": "הגיבורים",
+        "ContactName": "משה אבועזיז",
+        "Phone": "054-6470686",
+        "AmutaNumber": "580121606",
+        "Zchut": "בעלות",
+        "Siduri": 1,
+        "LayerDate": "19/11/2019",
+        "X": 192793,
+        "Y": 712925,
+        "GUSH": 12310,
+        "PARCELL": 28
+      }
+    },
+    "address": "הגיבורים",
+    "phone": "054-6470686",
+    "extra": {
+      "gabbai": "משה אבועזיז"
+    }
+  },
+  {
+    "id": "arcgis:or-akiva::30",
+    "type": "synagogue",
+    "name": "כולל - ברסלב",
+    "cityHint": "אור עקיבא",
+    "location": {
+      "latitude": 32.50871723209947,
+      "longitude": 34.91409976143317
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:or-akiva",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:or-akiva:30",
+      "sourceUrl": "https://services9.arcgis.com/kStxd97qYN1pEumt/arcgis/rest/services/בית_כנסת/FeatureServer/7",
+      "fetchedAt": "2026-06-21T06:40:01.220Z",
+      "raw": {
+        "OBJECTID": 30,
+        "Shem": "כולל - ברסלב",
+        "Address": "שלמה דרדשתי",
+        "ContactName": "הרב יגודייב",
+        "Phone": "0503115327",
+        "AmutaNumber": null,
+        "Zchut": null,
+        "Siduri": 29,
+        "LayerDate": "19/11/2019",
+        "X": 192174,
+        "Y": 712769,
+        "GUSH": 10615,
+        "PARCELL": 164
+      }
+    },
+    "address": "שלמה דרדשתי",
+    "phone": "0503115327",
+    "extra": {
+      "gabbai": "הרב יגודייב"
+    }
+  },
+  {
+    "id": "arcgis:or-akiva::31",
+    "type": "synagogue",
+    "name": "צעירים",
+    "cityHint": "אור עקיבא",
+    "location": {
+      "latitude": 32.50872589304701,
+      "longitude": 34.91418293520487
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:or-akiva",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:or-akiva:31",
+      "sourceUrl": "https://services9.arcgis.com/kStxd97qYN1pEumt/arcgis/rest/services/בית_כנסת/FeatureServer/7",
+      "fetchedAt": "2026-06-21T06:40:01.220Z",
+      "raw": {
+        "OBJECTID": 31,
+        "Shem": "צעירים ",
+        "Address": "רחוב שלמה דרדשתי",
+        "ContactName": "יחיא בן חמו",
+        "Phone": "04-6100349",
+        "AmutaNumber": null,
+        "Zchut": null,
+        "Siduri": 23,
+        "LayerDate": "19/11/2019",
+        "X": 192181,
+        "Y": 712770,
+        "GUSH": 10615,
+        "PARCELL": 164
+      }
+    },
+    "address": "רחוב שלמה דרדשתי",
+    "phone": "04-6100349",
+    "extra": {
+      "gabbai": "יחיא בן חמו"
+    }
+  },
+  {
+    "id": "arcgis:or-akiva::32",
+    "type": "synagogue",
+    "name": "עזרת אחים",
+    "cityHint": "אור עקיבא",
+    "location": {
+      "latitude": 32.509849766646795,
+      "longitude": 34.91436092007073
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:or-akiva",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:or-akiva:32",
+      "sourceUrl": "https://services9.arcgis.com/kStxd97qYN1pEumt/arcgis/rest/services/בית_כנסת/FeatureServer/7",
+      "fetchedAt": "2026-06-21T06:40:01.220Z",
+      "raw": {
+        "OBJECTID": 32,
+        "Shem": "עזרת אחים",
+        "Address": "הרצל 30א",
+        "ContactName": null,
+        "Phone": null,
+        "AmutaNumber": null,
+        "Zchut": null,
+        "Siduri": null,
+        "LayerDate": null,
+        "X": null,
+        "Y": 712894,
+        "GUSH": 10615,
+        "PARCELL": 5
+      }
+    },
+    "address": "הרצל 30א"
+  }
+]

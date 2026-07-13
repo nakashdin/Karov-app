@@ -1,0 +1,30 @@
+[
+  {
+    "id": "rc-mikvah-beit-shean-h17b0l15",
+    "name": "מקווה רבין - באר רחמים ומרים",
+    "type": "mikveh",
+    "cityId": "בית שאן",
+    "address": "8 שדרות יצחק רבין , בית שאן, Israel",
+    "location": {
+      "latitude": 32.488496,
+      "longitude": 35.491109
+    },
+    "source": "seed",
+    "sourceUrl": "https://rbs.org.il/directory-mikvah/listing/מקווה-רבין-באר-רחמים-ומרים/",
+    "sourceName": "המועצה הדתית בית שאן",
+    "extra": {
+      "council": "המועצה הדתית בית שאן",
+      "sourceVariant": "markers",
+      "locationPrecision": "exact",
+      "newnessConfidence": 0.8,
+      "cityInGov": true,
+      "classification": "new_record",
+      "provenance": {
+        "adapterId": "sabaiapps-mikvah-v1",
+        "sourceRecordId": "rc-mikvah-beit-shean-h17b0l15",
+        "sourceUrl": "https://rbs.org.il/directory-mikvah/listing/מקווה-רבין-באר-רחמים-ומרים/",
+        "fetchedAt": "2026-06-19"
+      }
+    }
+  }
+]

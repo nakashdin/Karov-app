@@ -1,0 +1,95 @@
+{
+  "generatedNote": "PHASE 16 DRY-RUN — open/official sources only. No DB write, no publish, no app-data change. Commercial aggregators NOT used.",
+  "legallySafeOnly": "gov-il-open (data.gov.il 2018), ODbL (OSM), municipal-open (TLV GIS), council-public (official council pages).",
+  "sourcesAttempted": 6,
+  "sourcesSuccessful": 6,
+  "bySource": [
+    {
+      "key": "datagov-2018",
+      "name": "data.gov.il 2018 (CKAN)",
+      "ok": true,
+      "count": 693
+    },
+    {
+      "key": "osm",
+      "name": "OpenStreetMap (Overpass)",
+      "ok": true,
+      "count": 59
+    },
+    {
+      "key": "tlv-gis",
+      "name": "Tel Aviv GIS layer 545",
+      "ok": true,
+      "count": 19
+    },
+    {
+      "key": "bat-yam",
+      "name": "מועצה דתית בת ים",
+      "ok": true,
+      "count": 12
+    },
+    {
+      "key": "golan",
+      "name": "מועצה דתית גולן",
+      "ok": true,
+      "count": 10
+    },
+    {
+      "key": "councils-extracted",
+      "name": "Netivot/Rehovot/Menashe/Mazkeret (verified extracts)",
+      "ok": true,
+      "count": 15
+    }
+  ],
+  "recordsExtracted": 808,
+  "classification": {
+    "exact_match": 131,
+    "probable_match": 150,
+    "new_record": 74,
+    "enrichment_candidate": 45,
+    "manual_review": 408
+  },
+  "trulyNewMikvehs": 74,
+  "enrichmentOpportunities": 45,
+  "duplicates": 281,
+  "manualReview": 408,
+  "fieldCoverage": {
+    "name": 100,
+    "city": 93,
+    "address": 92,
+    "phone": 86,
+    "openingHours": 59,
+    "coordinates": 10,
+    "gender": 6,
+    "attendant": 2
+  },
+  "newByCity": {
+    "?": 43,
+    "ירושלים": 1,
+    "בת חפר": 1,
+    "צור הדסה": 1,
+    "בית שמש": 2,
+    "יסודות": 1,
+    "אלעד": 1,
+    "תל אביב יפו": 1,
+    "בת ים": 10,
+    "חיספין – מקווה נגיש": 1,
+    "נתיבות": 5,
+    "רחובות": 1,
+    "כפר פינס": 1,
+    "מאור": 1,
+    "קציר": 1,
+    "מצפה אילן": 1,
+    "מזכרת בתיה": 2
+  },
+  "liveMikvehBefore": 531,
+  "estimatedTotalAfterPhase": 605,
+  "recommendedFirstWriteBatch": {
+    "criteria": "new_record with native coordinates (write-ready) OR (city present + high confidence). Address-only new records need geocoding first (Phase-14 workflow).",
+    "coordBearingNew": 51,
+    "note": "OSM + Tel Aviv GIS new records carry coordinates → write-ready. data.gov.il 2018 + council new records are address-only → geocode before writing."
+  },
+  "dryRun": true,
+  "liveDataTouched": false,
+  "publishPerformed": false
+}

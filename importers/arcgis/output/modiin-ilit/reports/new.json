@@ -1,0 +1,622 @@
+[
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:1",
+    "name": "אבי עזרי - עטרת יוסף"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:2",
+    "name": "אביר יעקב"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:3",
+    "name": "אהל יוסף מאיר (חפץ חיים)"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:4",
+    "name": "אהל יעקב"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:5",
+    "name": "אהל ישראל"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:6",
+    "name": "אהל מנחם"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:7",
+    "name": "זכור לאברהם (אהל תורה)"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:8",
+    "name": "אהל דב"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:9",
+    "name": "אהלי ספר"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:10",
+    "name": "אורחות תורה"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:11",
+    "name": "אחדות ישראל"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:12",
+    "name": "בית המדרש קהילת החסידים"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:13",
+    "name": "ארמון יהודה שע\"י קהילת אנשי י-ם"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:14",
+    "name": "בית אבא"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:15",
+    "name": "בית אהרון (ברסלב)"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:16",
+    "name": "בית אליהו"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:17",
+    "name": "בית יצחק"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:18",
+    "name": "בית המדרש המרכזי"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:19",
+    "name": "בית תפילה"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:20",
+    "name": "בן איש חי"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:21",
+    "name": "ברית יצחק"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:22",
+    "name": "ברכת התורה"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:23",
+    "name": "אהל יוסף (דרומה לשעבר)"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:24",
+    "name": "היכל יצחק"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:25",
+    "name": "היכל שלום (תימנים)"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:26",
+    "name": "זכרון דוד"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:27",
+    "name": "זכרון מאיר"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:28",
+    "name": "זכרון משה"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:29",
+    "name": "חניכי הישיבות (הרב ברזל)"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:30",
+    "name": "חניכי הישיבות גבעה דרומית  (הרב דומב)"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:31",
+    "name": "חניכי הישיבות חיי אברהם"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:32",
+    "name": "יוצאי חברון"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:33",
+    "name": "יוצאי חדרה"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:34",
+    "name": "יחל ישראל"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:35",
+    "name": "שיר ושבחה"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:36",
+    "name": "מאור חיים"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:37",
+    "name": "מנין אברכים ג\"ד"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:38",
+    "name": "נאות שמחה"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:39",
+    "name": "מרומי שדה"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:40",
+    "name": "משובב נתיבות"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:41",
+    "name": "משכן אהרון (פוניבז' ג\"ד)"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:42",
+    "name": "נרות זכריה"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:43",
+    "name": "סלבודקא"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:44",
+    "name": "עץ חיים"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:45",
+    "name": "פונוביז'"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:46",
+    "name": "פעולת צדיק"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:47",
+    "name": "צרפתים מש\"ח"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:48",
+    "name": "קהילות יעקב"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:50",
+    "name": "קול יעקב"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:51",
+    "name": "קול תורה"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:52",
+    "name": "קהילת משך חכמה"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:53",
+    "name": "קהילת קצות החושן"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:54",
+    "name": "שאגת אריה"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:55",
+    "name": "שיח יצחק"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:56",
+    "name": "תורה ותפילה"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:57",
+    "name": "חזון דוד"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:58",
+    "name": "מאור ישראל"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:59",
+    "name": "בית ישראל"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:60",
+    "name": "עטרת שלמה"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:61",
+    "name": "נצח ישראל"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:62",
+    "name": "זכרון נחום"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:63",
+    "name": "היכל הגרי\"ש"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:64",
+    "name": "שפתי חיים"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:65",
+    "name": "מסילת ישרים"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:66",
+    "name": "אור אליהו"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:67",
+    "name": "בית דוד ושלמה"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:68",
+    "name": "הגר\"א"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:69",
+    "name": "שירה חדשה"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:70",
+    "name": "עטרת חיים"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:71",
+    "name": "אברכי כנסת הגדולה"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:72",
+    "name": "נפש החיים (הרב קלופט)"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:73",
+    "name": "זכרון שמואל"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:74",
+    "name": "אהל תורה"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:75",
+    "name": "אור יוסף"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:76",
+    "name": "היכל התורה"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:77",
+    "name": "קרעטשניף"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:78",
+    "name": "אור יחזקאל"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:79",
+    "name": "אלכסנדר"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:80",
+    "name": "בוהוש"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:81",
+    "name": "ביאלא"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:82",
+    "name": "תורה ותפילה"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:83",
+    "name": "לומדי תורה"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:84",
+    "name": "בית ישראל"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:85",
+    "name": "ברסלב"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:86",
+    "name": "קהילת שדרות יחזקאל"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:87",
+    "name": "תפארת ברדוגו"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:88",
+    "name": "ויז'ניץ - אמרי חיים"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:89",
+    "name": "חזון אי\"ש- היכל מרדכי"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:90",
+    "name": "חניכי הישיבות - רשב\"י"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:91",
+    "name": "חניכי הישיבות הגר\"מ ברכה"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:92",
+    "name": "חסדי אבות"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:93",
+    "name": "ירוסלב"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:94",
+    "name": "ישועת דוד - דרכי איש"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:95",
+    "name": "מודז'יץ"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:96",
+    "name": "אהבת תורה"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:97",
+    "name": "קהילת  ר\"ע"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:98",
+    "name": "משכן התורה"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:100",
+    "name": "נפש החיים"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:101",
+    "name": "סדיגורא"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:102",
+    "name": "חדוות יעקב"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:103",
+    "name": "עטרת שלמה"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:104",
+    "name": "פינסק קרלין"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:105",
+    "name": "פרושים"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:106",
+    "name": "היכל שמואל אהרן - צאנז"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:107",
+    "name": "קהילת בני הישיבות"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:108",
+    "name": "קהילת שערי תפילה"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:109",
+    "name": "קרלין"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:110",
+    "name": "שבט הלוי"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:111",
+    "name": "חניכי הישיבות שיח יצחק"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:112",
+    "name": "שתילי זיתים - שאמי"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:113",
+    "name": "תוצאות חיים"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:114",
+    "name": "מנין אברכים שע\"י ישיבת הר\"ן"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:115",
+    "name": "אמשינוב"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:116",
+    "name": "לקח טוב"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:117",
+    "name": "אונגוואר"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:118",
+    "name": "באיאן"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:119",
+    "name": "בני הישיבות גרין פארק"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:120",
+    "name": "בני תורה ספרדים חפציבה"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:121",
+    "name": "הגר\"א"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:122",
+    "name": "המרכזי חפציבה"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:123",
+    "name": "זכרון גבריאל"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:124",
+    "name": "זכרון מאיר"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:125",
+    "name": "חסד לאברהם - חניכי הישיבות"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:126",
+    "name": "יוצאי תימן"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:127",
+    "name": "ישועות משה - ויזניץ"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:128",
+    "name": "קהילות החסידים"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:129",
+    "name": "קרית אביעזרי"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:130",
+    "name": "קהילת חזו\"א"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:131",
+    "name": "אהל אברהם ארחות תורה"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:132",
+    "name": "אהל רחל"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:133",
+    "name": "פרושים"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:134",
+    "name": "תפילת חנה - ברסלב"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:135",
+    "name": "קהל עדת ירושלים - מתמידים"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:136",
+    "name": "ברכת חיים שלום - רחמסטריוקא"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:137",
+    "name": "בית אהרן וישראל דחסידי קרלין סטולין"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:138",
+    "name": "היכל הגרי\"מ"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:139",
+    "name": "המרכזי נאות הפסגה"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:140",
+    "name": "אהל אסתר"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:141",
+    "name": "עטרת שלום (תימני)"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:142",
+    "name": "קהל חסידים"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:143",
+    "name": "פתחי שערים"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:144",
+    "name": "קהילת נתיבות שלום"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:145",
+    "name": "היכל נפתלי"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:146",
+    "name": "חניכי כנסת הגדולה"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:147",
+    "name": "המרכזי נאות עילית"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:148",
+    "name": "איילת השחר"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:149",
+    "name": "בית המדרש \"בית יוסף ספרא\""
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:150",
+    "name": "קהילת הרמב\"ם"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:151",
+    "name": "בית הכנסת \"המרכזי\" גן הדסים"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:152",
+    "name": "קהילת רשב\"א"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:153",
+    "name": "אהבת שלום"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:154",
+    "name": "עטרת תפארת"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:155",
+    "name": "שבט הלוי"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:156",
+    "name": "קרלין"
+  },
+  {
+    "sourceRecordId": "arcgis:modiin-ilit:157",
+    "name": "קהילת אשכנז"
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "council": "המועצה הדתית גבעת שמואל",
+  "variant": "waze",
+  "expectedCount": 40,
+  "fetchedCount": 40,
+  "validCount": 40,
+  "rejectedCount": 0,
+  "coordSource": "waze",
+  "withNativeCoordinates": 40,
+  "missingCoordinates": 0,
+  "duplicateSourceIds": 0,
+  "enrichedFromCards": 0,
+  "ambiguousEnrich": 0,
+  "countMatches": true,
+  "pagesFetched": 1,
+  "dryRun": true,
+  "liveDataTouched": false,
+  "generatedAt": "2026-06-18"
+}

@@ -1,0 +1,75 @@
+{
+  "generatedNote": "RESEARCH catalog — DISCOVERY ONLY. No mikvah records pulled, no live data touched, no geocoding, no import, no merge. Modeled on the religious-councils synagogue discovery.",
+  "stage": "discovery",
+  "totalSources": 46,
+  "officialSources": 34,
+  "byCategory": {
+    "gov-dataset": 6,
+    "national-org": 8,
+    "religious-council": 21,
+    "municipality": 7,
+    "crowd-map": 4
+  },
+  "byClassification": {
+    "ready": 6,
+    "needs-variant": 19,
+    "needs-adapter": 11,
+    "no-structured-data": 3,
+    "manual-review": 7
+  },
+  "byOwnership": {
+    "ministry": 6,
+    "religious-council": 21,
+    "municipal": 6,
+    "regional-council": 1,
+    "NGO": 6,
+    "community": 3,
+    "commercial": 3
+  },
+  "sabaiAppsReusableCouncils": 16,
+  "coverage": {
+    "authoritativeGovBaseline": 606,
+    "aggregatorCeilingClaimed": 1470,
+    "dedupedOperationalEstimate": "700-900 women's mikvahs nationwide (operational)",
+    "structuredLocalRecordsDiscovered": 227,
+    "note": "Gov data.gov.il dataset = 606 records (authoritative national floor). Community aggregators (mikveh.co.il ~1,470) include men's + vessel-immersion + diaspora, so they overstate Israeli operational women's mikvahs. Religious councils + municipalities add ~227 structured local records with richer fields (hours, attendant, accessibility) that the gov dataset often lacks — strongest value is enrichment + verification, not raw count."
+  },
+  "mostValuableSources": [
+    "data.gov.il 'mikve' (ready, 606, national, already wired) — canonical baseline",
+    "16 SabaiApps religious councils via /directory-mikvah/ (needs-variant) — reuse the synagogue parser with a slug swap; ~119 records with hours/attendant",
+    "mikve.net + mikveh.co.il (needs-adapter, WordPress) — largest Hebrew aggregators for cross-reference/enrichment (licensing permission required)",
+    "4x 'א.ש בינה' municipal tables: Modiin Illit, Maale Adumim, Modiin, Shomron regional (ready) — one HTML adapter covers all four; ~59 records",
+    "Wikidata Q211351 (ready, CC0) — small but cleanest-licensed enrichment"
+  ],
+  "adaptersLikelyRequired": [
+    "mikvah SabaiApps variant (trivial: reuse synagogue parser, post type 'mikvah_dir_ltg', URL /directory-mikvah/, REST wp-json/wp/v2/mikvah_dir_ltg)",
+    "'א.ש בינה' municipal HTML-table adapter (covers Modiin Illit, Maale Adumim, Shomron; Modiin ASP.NET is similar)",
+    "WordPress aggregator adapter for mikve.net / mikveh.co.il / ketertora (WP-REST or sitemap) — pending licensing",
+    "WooCommerce/custom HTML adapter for Jerusalem rabanut + Rehovot + Mezkeret Batya",
+    "muni.il GovTech fetch-variant (custom headers / rendered fetch) to bypass 403 for Jerusalem + Netanya municipal pages",
+    "Overpass/SPARQL adapters for OSM + Wikidata (low yield, clean licensing)",
+    "probe adapter for the new '*.md.gov.il' unified council CMS"
+  ],
+  "recommendedImportPriority": [
+    "1. data.gov.il 'mikve' — already done; treat as the spine (ROI: highest, zero new work)",
+    "2. SabaiApps mikvah variant across the 16 councils — highest NEW-data ROI; near-trivial reuse of existing synagogue importer",
+    "3. The 4 'א.ש בינה'/ASP municipal tables (Modiin Illit, Maale Adumim, Modiin, Shomron) — one adapter, clean structured rows",
+    "4. Unblock Jerusalem (muni.il fetch-variant) — single highest-value city (~40)",
+    "5. National aggregators mikve.net / mikveh.co.il — broad cross-reference/enrichment, AFTER securing licensing permission",
+    "6. Wikidata + OSM — low yield, do last as clean-license enrichment"
+  ],
+  "dataQualityCatches": [
+    "mdh.org.il (Herzliya): 0 synagogues in the synagogue catalog but 5 mikvaot — mikvah is its usable dataset",
+    "mdsderot.org.il + mdnh.org.il: tagged 'WordPress-other/needs-adapter' for synagogues but expose the standard SabaiApps /directory-mikvah/ — re-check their synagogue classification",
+    "dat-rehovot.co.il + moazadatit-mb.org.il: religious-council mikvah sites whose domains are NOT in the existing council catalog (council domain was null) — feed these back to the council discovery"
+  ],
+  "licensingFlags": [
+    "data.gov.il: Open (clean)",
+    "Wikidata: CC0 (clean)",
+    "OSM: ODbL 1.0 (attribution + share-alike)",
+    "mikve.net / mikveh.co.il / mikvah.org / yoatzot / ketertora: 'all rights reserved' — reuse requires permission",
+    "Google Places: ToS forbids bulk export/caching — live-lookup enrichment only, DO NOT scrape",
+    "Religious-council + municipal pages: public official data; scraping low-risk but confirm robots before any fetch"
+  ],
+  "scopeGuardrails": "Several gov.il / muni.il sources return HTTP 403 to automated fetch (Akamai/WAF). Robots/CMS were classified from search metadata + homepages only; NO mikvah records were extracted from any source in this stage."
+}

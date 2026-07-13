@@ -1,0 +1,5080 @@
+[
+  {
+    "sourceId": "rc-petah-tikva-9272",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אבא יוסף",
+    "classification": "match",
+    "matchedId": "osm-node-9296351361",
+    "matchedName": "בית כנסת אבא יוסף",
+    "distanceM": 43,
+    "nameSim": 0.85,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9273",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אבי עזרי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9274",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אבי עזרי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9275",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אברהם ושמואל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9276",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אגודת אחים (שבזי)",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9277",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אגודת בני ישראל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9278",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אגודת חברת אחים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9279",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אגודת ישראל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9280",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אגודת עולי הודו- שערי אחדות",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9281",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אגודת עזרא",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9282",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אדמונד ספרא",
+    "classification": "match",
+    "matchedId": "osm-way-210580127",
+    "matchedName": "בית הכנסת אדמונד ספרא",
+    "distanceM": 38,
+    "nameSim": 1,
+    "enrichFields": [
+      "nusach",
+      "phone"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9283",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אור החיים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9284",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אהבת חיים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9285",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אוהל אברהם",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9286",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אהבת שלום",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9287",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אהבת תורה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9288",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אוהל אברהם",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9289",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אוהל חיים",
+    "classification": "match",
+    "matchedId": "osm-way-173087681",
+    "matchedName": "בית הכנסת אוהל חיים החדש",
+    "distanceM": 44,
+    "nameSim": 0.85,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9290",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בית חב\"ד שוק",
+    "classification": "match",
+    "matchedId": "osm-node-8097632056",
+    "matchedName": "בית חב\"ד",
+    "distanceM": 594,
+    "nameSim": 0.85,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9291",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אוהל יעקב",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9292",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אוהל יצחק",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9293",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אוהל יצחק (בניטה)",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9294",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אוהל ציון (ברהום)",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9295",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אוהל שלום",
+    "classification": "match",
+    "matchedId": "osm-way-208618363",
+    "matchedName": "בית הכנסת אוהל שלום",
+    "distanceM": 431,
+    "nameSim": 1,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9296",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אהלו של רמבה\"נ",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9297",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אוצרות חיים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9298",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אור התפילה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9299",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אור ישראל-גדולה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9300",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אור ישראל-קטנה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9301",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אור ישראל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9302",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אור ישרים (מישקולץ)",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9303",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אור מאיר",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9304",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אור מאיר",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9305",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אורים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9306",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אחוות אחים",
+    "classification": "match",
+    "matchedId": "osm-way-184751176",
+    "matchedName": "בית הכנסת אחוות אחים",
+    "distanceM": 19,
+    "nameSim": 1,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9307",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אחים ורעים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9308",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אחים ורעים",
+    "classification": "match",
+    "matchedId": "osm-way-350787205",
+    "matchedName": "אחים ורעים",
+    "distanceM": 13,
+    "nameSim": 1,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9309",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אחים ישראלית",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9310",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "איחוד הספרדים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9311",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אין עוד מלבדו",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9312",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אלי כהן",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9313",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "תפארת אליהו הנביא",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9314",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אליהו הנביא",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9315",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אהבת ה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9316",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אם המושבות",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9317",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אמונים צעירים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9318",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אמרי יוסף",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9319",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אקדמאים יוצאי בוכרה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9320",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "ארזי הלבנון",
+    "classification": "match",
+    "matchedId": "osm-way-171417205",
+    "matchedName": "בית הכנסת ארזי הלבנון",
+    "distanceM": 56,
+    "nameSim": 1,
+    "enrichFields": [
+      "nusach"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9321",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "ארחות חיים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9322",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אתיופים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9323",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בינה לעיתים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9324",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "הספריה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9325",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בית אל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9326",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בית אל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9327",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בית אל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9328",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בית אל קרית יוספטל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9329",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "רקאנטי (בית אבות)",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9331",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בית הדקל בית אבות",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9332",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בית אבות מונטפיורי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9333",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בית אברהם",
+    "classification": "match",
+    "matchedId": "osm-way-207517752",
+    "matchedName": "בית אברהם",
+    "distanceM": 6,
+    "nameSim": 1,
+    "enrichFields": [
+      "nusach",
+      "phone"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9334",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בית אברהם -חניכי הישיבות",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9335",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בית אהרן בעלז",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9336",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בית בלומה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9337",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בית רבקה (בית חולים)",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9338",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בית יוסף",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9339",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בית יוסף",
+    "classification": "match",
+    "matchedId": "osm-node-9296351379",
+    "matchedName": "בית כנסת בית יוסף",
+    "distanceM": 169,
+    "nameSim": 0.85,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9340",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בית יוסף",
+    "classification": "match",
+    "matchedId": "osm-way-172912429",
+    "matchedName": "בית הכנסת בית יוסף",
+    "distanceM": 4,
+    "nameSim": 1,
+    "enrichFields": [
+      "nusach",
+      "phone"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9341",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בית יוסף",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9342",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בית יעקב - הגדול",
+    "classification": "match",
+    "matchedId": "osm-way-172912836",
+    "matchedName": "בית הכנסת הגדול",
+    "distanceM": 21,
+    "nameSim": 0.85,
+    "enrichFields": [
+      "nusach",
+      "phone"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9343",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בית יעקב",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9344",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בית יעקב לומז'ה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9345",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "ר' מאיר בעל הנס",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9346",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בית יעקב שערי רחמים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9347",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בית ישראל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9348",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בית ישראל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9349",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בית לחם יהודה",
+    "classification": "match",
+    "matchedId": "osm-way-1007648958",
+    "matchedName": "בית כנסת בית לחם יהודה",
+    "distanceM": 62,
+    "nameSim": 0.85,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9350",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בית מאיר",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9351",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בני הישיבות דגל ראובן",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9352",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בעל שם טוב",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9353",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "ברית שלום",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9354",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "דביר יעקב",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9355",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בן איש חי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9356",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "דברי חיים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9357",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "דברי חיים צאנז",
+    "classification": "match",
+    "matchedId": "osm-way-489748377",
+    "matchedName": "דברי חיים",
+    "distanceM": 10,
+    "nameSim": 0.85,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9358",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "רבי דוד ומשה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9359",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "דוד ושלמה",
+    "classification": "match",
+    "matchedId": "osm-way-184753290",
+    "matchedName": "בית הכנסת דוד ושלמה",
+    "distanceM": 40,
+    "nameSim": 1,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9360",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בית לאה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9361",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "הדר מנחם חב\"\"ד",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9362",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "היכל דוד ויזניץ",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9363",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "היכל חנה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9364",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "היכל יונה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9365",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "היכל יעקב",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9366",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "היכל מאיר",
+    "classification": "match",
+    "matchedId": "osm-way-208637494",
+    "matchedName": "בית הכנסת היכל מאיר",
+    "distanceM": 14,
+    "nameSim": 1,
+    "enrichFields": [
+      "nusach",
+      "phone"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9367",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "היכל משה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9368",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "הכהנים עולי פרס",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9369",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "הראל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9370",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "רינת אשר",
+    "classification": "match",
+    "matchedId": "osm-way-229082477",
+    "matchedName": "בית כנסת רינת אשר",
+    "distanceM": 8,
+    "nameSim": 0.85,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9371",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "השלום",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9372",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "התקווה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9373",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "ולאשר אמר",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9374",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "זכור לאברהם",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9375",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "זכר חיים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9376",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "זכרון ברוך דינוביץ'",
+    "classification": "match",
+    "matchedId": "osm-way-183781890",
+    "matchedName": "בית הכנסת זכרון ברוך",
+    "distanceM": 15,
+    "nameSim": 0.85,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9377",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "נווה גן",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9378",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "חב\"ד צמח צדק",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9379",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "חוג חתם סופר",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9380",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "החושן זכור לאברהם",
+    "classification": "match",
+    "matchedId": "osm-way-564474355",
+    "matchedName": "זכור לאברהם",
+    "distanceM": 178,
+    "nameSim": 0.85,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9381",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "חזון עובדיה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9382",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "חי טייב עולי לוב וטוניס",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9383",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "חיבת ישראל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9384",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "חן הצפון",
+    "classification": "match",
+    "matchedId": "osm-way-235891163",
+    "matchedName": "בית כנסת חן הצפון",
+    "distanceM": 33,
+    "nameSim": 0.85,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9385",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "חניכי הישיבות",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9386",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "חסד ואמת",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9387",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "חסד לאברהם",
+    "classification": "conflict",
+    "matchedId": "osm-way-302101814",
+    "matchedName": "תורת חסד",
+    "distanceM": 140,
+    "nameSim": 0.33
+  },
+  {
+    "sourceId": "rc-petah-tikva-9388",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "חסידי רדזין",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9389",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "חפץ חיים",
+    "classification": "match",
+    "matchedId": "osm-way-208788952",
+    "matchedName": "בית הכנסת חפץ חיים",
+    "distanceM": 6,
+    "nameSim": 1,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9390",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "טרופ ישראל וסוניה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9391",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "יבנה - ביה\"ס",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9392",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "יד דניאל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9393",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "יד הרמב\"ם",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9394",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "יהודי הררי",
+    "classification": "match",
+    "matchedId": "osm-node-4362836390",
+    "matchedName": "יהודי הררי וטוניסיה",
+    "distanceM": 6,
+    "nameSim": 0.85,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9395",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "יוצאי חברון",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9396",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "יחזקאל בכור",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9397",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "ישועת צדיקים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9398",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "ישורון",
+    "classification": "match",
+    "matchedId": "osm-way-208793393",
+    "matchedName": "בית הכנסת ישורון",
+    "distanceM": 50,
+    "nameSim": 1,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9399",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "ישורון כפר גנים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9400",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "ישורון עמישב",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9401",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "ישמח משה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9402",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "ישמח משה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9403",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "ישראל הצעיר",
+    "classification": "match",
+    "matchedId": "osm-way-207885024",
+    "matchedName": "ישראל הצעיר",
+    "distanceM": 16,
+    "nameSim": 1,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9404",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בית אבא",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9405",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "כולל ע\"ש הרב ישראל מאיר",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9406",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "כולל רצון יהודה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9407",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "כולל תורת ארץ ישראל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9408",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "כל ישראל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9409",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "כנסת ישראל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9410",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בת גנים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9411",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "שלהבת כפר גנים ג'",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9412",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "דה חסידים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9413",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "כפר מעש מזרח",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9414",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "כפר מעש מערב",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9415",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "כפר סירקין",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9416",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "לוריא",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9417",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "מאור האבות",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9418",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "מגדל עוז",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9419",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "מגן אברהם",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9420",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "מרכז הספורט אמסטרדם",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9421",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "דעת ותבונה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9422",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "משכן שלום",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9423",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "מוריה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9424",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "מורשה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9425",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "מטה יהודה אפגניסטן",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9426",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "מנחת יהודה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9427",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "מנין בוגרי בני\"ע רעות",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9428",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "מעלות קדושים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9429",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "משכן כדורי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9430",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "מקדש משה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9431",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "מקור חיים",
+    "classification": "match",
+    "matchedId": "osm-way-208635328",
+    "matchedName": "מקור חיים",
+    "distanceM": 19,
+    "nameSim": 1,
+    "enrichFields": [
+      "nusach",
+      "phone"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9432",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "מרום ציון",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9433",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "משכן אליהו",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9434",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "משכן שמעון",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9435",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "משכן גנים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9436",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "משכן יונה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9437",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "משכן יוסף פא\"י",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9438",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "משכן ישראל",
+    "classification": "match",
+    "matchedId": "osm-way-228898846",
+    "matchedName": "משכן ישראל",
+    "distanceM": 7,
+    "nameSim": 1,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9439",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "משכן שלום",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9440",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "משכנות יעקב",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9441",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "משכנות ישרים",
+    "classification": "match",
+    "matchedId": "osm-way-235888233",
+    "matchedName": "בית כנסת משכנות ישרים",
+    "distanceM": 54,
+    "nameSim": 0.85,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9442",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "נאות דוד",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9443",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "נוה חיים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9444",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "משכן יצחק",
+    "classification": "match",
+    "matchedId": "osm-way-206657658",
+    "matchedName": "בית כנסת משכן יצחק",
+    "distanceM": 82,
+    "nameSim": 0.85,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9445",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "נוה קודשך",
+    "classification": "conflict",
+    "matchedId": "osm-way-208618376",
+    "matchedName": "בית הכנסת נווה קודשך",
+    "distanceM": 35,
+    "nameSim": 0.33
+  },
+  {
+    "sourceId": "rc-petah-tikva-9446",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "נחלי יוסף",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9447",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "נחלי משה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9448",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "משכן שלמה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9449",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "נחלת זאב",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9450",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "נחלת ישראל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9451",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "נחלת ראובן",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9452",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "נחלת רדבז",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9453",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "נעם אלימלך",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9454",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "נעם",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9455",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "מניין ותיקין",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9456",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "נצח שלמה",
+    "classification": "match",
+    "matchedId": "osm-way-223055010",
+    "matchedName": "נצח שלמה",
+    "distanceM": 53,
+    "nameSim": 1,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9457",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "נר אברהם",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9458",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "סוכת שלום",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9459",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "סוכת שלום",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9460",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "עמי עולמי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9461",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "על שם רשב\"\"י",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9462",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "עדות לישראל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9463",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "עוד יוסף חי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9464",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "עולי הודו",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9465",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "עולי רומניה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9466",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "עין גנים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9467",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "עלומים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9468",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "ענף החיים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9469",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "עץ חיים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9470",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "עץ חיים",
+    "classification": "match",
+    "matchedId": "osm-way-182390213",
+    "matchedName": "בית הכנסת עץ חיים",
+    "distanceM": 4,
+    "nameSim": 1,
+    "enrichFields": [
+      "nusach",
+      "phone"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9471",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "עץ חיים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9472",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "עץ חיים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9473",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "קהילת תורת חיים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9474",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "עץ חיים עולי אירן",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9475",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "עשהאל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9476",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "פאר הרש\"ש",
+    "classification": "match",
+    "matchedId": "osm-way-235884344",
+    "matchedName": "בית כנסת פאר הרשש",
+    "distanceM": 10,
+    "nameSim": 0.85,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9477",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "ישיבת פאר משה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9478",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "פורת יוסף",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9479",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "פני דוד",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9480",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "פנינת גנים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9481",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "פנינת גנים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9482",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "צא\"י",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9483",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "צהלת חן",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9484",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "צמח דוד",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9485",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "צעירי הציונות הדתית",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9486",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "צעירי פא\"י",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9487",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "צרור המור",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9488",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "קהילות ישראל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9489",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "קהל חסידים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9490",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "קהל חסידים כפר גנים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9491",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "קהל עדת יעקב",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9492",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "קיבוץ גלויות",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9493",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "שירת הים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9494",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "רני ושמחי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9495",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "רננים כפר גנים ג'",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9496",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "רפאל המלאך",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9497",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "שארית ישראל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9498",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "שבת אחים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9499",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "שבת אחים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9500",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "רמב\"ם כפר אברהם",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9501",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "שוועת עניים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9502",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "שונה הלכות",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9503",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "שיבת ציון",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9504",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "שירת מרים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9505",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "שלום שבזי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9506",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "שערי צדק",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9507",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "שערי ציון",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9508",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "שערי ציון",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9509",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "שערי רחמים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9510",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "שערי שלווה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9511",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "שערי תורה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9512",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "שערי תפילה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9513",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "עולי בבל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9514",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "שרש חיים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9515",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "שתילי זיתים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9516",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "תהילות ה'",
+    "classification": "match",
+    "matchedId": "osm-way-502208383",
+    "matchedName": "תהילות ה'",
+    "distanceM": 64,
+    "nameSim": 1,
+    "enrichFields": [
+      "nusach",
+      "phone"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9517",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "תורה ועבודה המרכזי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9518",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "תפארה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9519",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "תפארת בנימין",
+    "classification": "match",
+    "matchedId": "osm-way-223055005",
+    "matchedName": "תפארת בנימין",
+    "distanceM": 9,
+    "nameSim": 1,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9520",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "תפארת ישראל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9521",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "תפארת ישראל",
+    "classification": "match",
+    "matchedId": "osm-way-313989925",
+    "matchedName": "תפארת ישראל",
+    "distanceM": 10,
+    "nameSim": 1,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9522",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "תפארת מרדכי (מועדון תורני)",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9523",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "תפארת צבי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9524",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "תפארת צבי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9525",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "תפארת שלום",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9526",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "תפארת שעריה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9527",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "תשועת ישראל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9528",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "נעם יצחק",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9529",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "מניין ותיקין",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9530",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "מבראשית",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9531",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אוהל דן",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9532",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "מאור יהודה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9533",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "ע\"ש ע\"ג הנופלים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9534",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בינת נבונים (מונקאשט)",
+    "classification": "match",
+    "matchedId": "osm-way-225730793",
+    "matchedName": "בינת נבונים",
+    "distanceM": 14,
+    "nameSim": 0.85,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9535",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בלינסון בית חולים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9536",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בית אל מחנה יהודה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9537",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בית אליהו",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9538",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בית כנסת הפתוח חב\"ד",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9539",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בני תורה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9540",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "גאולת ישראל השלימה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9541",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "היכל אברהם",
+    "classification": "match",
+    "matchedId": "osm-way-207748674",
+    "matchedName": "היכל אברהם",
+    "distanceM": 11,
+    "nameSim": 1,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9542",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "עטרת אליהו",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9543",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "הפועל המזרחי",
+    "classification": "match",
+    "matchedId": "osm-node-4111210577",
+    "matchedName": "בית כנסת מרכזי הפועל המזרחי",
+    "distanceM": 16,
+    "nameSim": 0.85,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9544",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "משכן משה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9545",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "חסידי גור",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9546",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אהבת דניאל",
+    "classification": "match",
+    "matchedId": "osm-way-1254543601",
+    "matchedName": "בית כנסת אהבת דניאל",
+    "distanceM": 46,
+    "nameSim": 0.85,
+    "enrichFields": [
+      "nusach",
+      "phone"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9547",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "חתם סופר",
+    "classification": "match",
+    "matchedId": "osm-way-221508399",
+    "matchedName": "חתם סופר",
+    "distanceM": 504,
+    "nameSim": 1,
+    "enrichFields": [
+      "nusach",
+      "phone"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9548",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "כפר גנים - ישיבה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9549",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "היכל שמיר",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9550",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "הישראלי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9551",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "השופר",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9552",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "חצרות גנים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9553",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "ירושלמי נחלים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9554",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "קהילת יחדיו",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9555",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "ישראל הצעיר",
+    "classification": "match",
+    "matchedId": "osm-way-225492830",
+    "matchedName": "בית כנסת ישראל הצעיר",
+    "distanceM": 2,
+    "nameSim": 0.85,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9556",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "חסד לאברהם",
+    "classification": "conflict",
+    "matchedId": "osm-way-302101814",
+    "matchedName": "תורת חסד",
+    "distanceM": 114,
+    "nameSim": 0.33
+  },
+  {
+    "sourceId": "rc-petah-tikva-9557",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "תפארת פסקל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9558",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "צאנז",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9559",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "משכן מאיר",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9560",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "ניגוני חיים",
+    "classification": "match",
+    "matchedId": "osm-way-226927445",
+    "matchedName": "ניגוני חיים",
+    "distanceM": 6,
+    "nameSim": 1,
+    "enrichFields": [
+      "nusach",
+      "phone"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9561",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אוהל יצחק (פנינת גנים)",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9562",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "עם כלביא יקום",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9563",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "עמוד האש",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9564",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "צעירי כפר גנים ג",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9565",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "צעירי כפר גנים 2011",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9566",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "רננים כפר גנים ג",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9567",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "רשב\"י",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9568",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "שארית ישראל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9569",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "שוהם",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9570",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "שמחת אהרון",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9571",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "תפארת רימון",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9572",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "תפילה למשה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9573",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "תורת אבות",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9574",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "הר חסד א.כ.י.ר",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9575",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אוהל יצחק (פנינת גנים)",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9576",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "קהל חסידים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9577",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "יד יוסף",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9578",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "מצודת ציון",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9579",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "שבת אחים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9580",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בית כנסת ירושלמי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9581",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "ספרדי דתי לאומי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9582",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "תוניס ג'רבה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9583",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "צעירי הדר גנים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9584",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בראשית",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9585",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "מעיין גנים (מעיין רבקה)",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9586",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "נווה עוז הירוקה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9587",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "ושבו בנים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9588",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "שיבת ציון",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9589",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "משכן בית אל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9590",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "שערי ירושלים - מרכז רוחני",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9591",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "היכל יצחק",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9592",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "קהילת עוז והדר",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9593",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "דרכי אבות",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9594",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "צעירי חברון הדר גנים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9595",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "קהילת קדם",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9596",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "נווה אברהם",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9597",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "טללי חיים ע\"ש החלבן",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9598",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "התקווה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9599",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "היכל יוסף",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9600",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בית אבא",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9601",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "שלום רעות ואחווה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9602",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אמית בר אילן",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9603",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "היכל גבריאל",
+    "classification": "match",
+    "matchedId": "osm-way-1381687599",
+    "matchedName": "היכל גבריאל",
+    "distanceM": 15,
+    "nameSim": 1,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9604",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "היכל יחזקאל חברון - מרכז העיר",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9605",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בחצרות קדשך",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9606",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "עין גנים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9607",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "מגן אברהם",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9608",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אחווה ורעות",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9609",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אבי עזרי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9610",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אהבת ישראל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9611",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אורחות חיים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9612",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אילת השחר",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9613",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "שוק עירוני",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9614",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "יוצאי חברון הספרדי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9615",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בית הלל - מורשה הדר גנים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9616",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בית חולים השרון",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9617",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בית חנה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9618",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "היכל שרה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9619",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "קהילת מרכז העיר, ברכת יעקב",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9620",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "קהילת מרכז עמישב",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9621",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "קהילת קודש תימן עמישב",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9622",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "שורש חיים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9623",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "שערי ציון נוסח שאמי תימני",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9624",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "היכל השושנים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9625",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "דרך עץ החיים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9626",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בסר סיטי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9627",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "מניין בני תורה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9628",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "קהילת קדש תימן",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9629",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בני הישיבות",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9630",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "שער אחדות",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9631",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אהבת ציון",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9632",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "קהילת ישי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9633",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "משכנות ישרים",
+    "classification": "match",
+    "matchedId": "osm-way-235888233",
+    "matchedName": "בית כנסת משכנות ישרים",
+    "distanceM": 30,
+    "nameSim": 0.85,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-petah-tikva-9634",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "חצרות השם",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9635",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בראשית",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9636",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בני הישיבות ק\"ק תימן",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9637",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "ציון ישראל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9638",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "אוהל יוסף",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-petah-tikva-9639",
+    "council": "המועצה הדתית פתח תקווה",
+    "name": "בית כנסת ע\"ש ר' יוסף יצחק שניארסון",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12566",
+    "council": "המועצה הדתית נתניה",
+    "name": "אגודת ישראל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12567",
+    "council": "המועצה הדתית נתניה",
+    "name": "אהבת ציון",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12568",
+    "council": "המועצה הדתית נתניה",
+    "name": "אהבת שלום",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12569",
+    "council": "המועצה הדתית נתניה",
+    "name": "אהל בנימין",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12570",
+    "council": "המועצה הדתית נתניה",
+    "name": "אהל משה - עדות מזרחם",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12571",
+    "council": "המועצה הדתית נתניה",
+    "name": "אהל משה - תימנים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12572",
+    "council": "המועצה הדתית נתניה",
+    "name": "אוהל נחמיה",
+    "classification": "match",
+    "matchedId": "osm-way-109981912",
+    "matchedName": "אוהל נחמיה",
+    "distanceM": 8,
+    "nameSim": 1,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-netanya-12573",
+    "council": "המועצה הדתית נתניה",
+    "name": "אהל עמרם",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12574",
+    "council": "המועצה הדתית נתניה",
+    "name": "אהל שלמה - חב\"ד",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12575",
+    "council": "המועצה הדתית נתניה",
+    "name": "אהל יונתן",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12576",
+    "council": "המועצה הדתית נתניה",
+    "name": "אור הדרך",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12577",
+    "council": "המועצה הדתית נתניה",
+    "name": "אור החיים",
+    "classification": "match",
+    "matchedId": "osm-node-662973086",
+    "matchedName": "אור החיים",
+    "distanceM": 18,
+    "nameSim": 1,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-netanya-12578",
+    "council": "המועצה הדתית נתניה",
+    "name": "אורות קרית השרון",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12579",
+    "council": "המועצה הדתית נתניה",
+    "name": "אור לציון",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12580",
+    "council": "המועצה הדתית נתניה",
+    "name": "אחים עמרני",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12581",
+    "council": "המועצה הדתית נתניה",
+    "name": "אלי כהן",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12582",
+    "council": "המועצה הדתית נתניה",
+    "name": "אם הבנים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12583",
+    "council": "המועצה הדתית נתניה",
+    "name": "אם כל חיל",
+    "classification": "conflict",
+    "matchedId": "osm-way-1067098768",
+    "matchedName": "בית כנסת אם כל חי",
+    "distanceM": 57,
+    "nameSim": 0.33
+  },
+  {
+    "sourceId": "rc-netanya-12584",
+    "council": "המועצה הדתית נתניה",
+    "name": "אמרי חיים ויזניץ",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12585",
+    "council": "המועצה הדתית נתניה",
+    "name": "תפארת פנחס",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12586",
+    "council": "המועצה הדתית נתניה",
+    "name": "אשל אברהם",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12587",
+    "council": "המועצה הדתית נתניה",
+    "name": "באר חיה - חב\"ד",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12589",
+    "council": "המועצה הדתית נתניה",
+    "name": "באר חנה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12590",
+    "council": "המועצה הדתית נתניה",
+    "name": "בושאיוף",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12591",
+    "council": "המועצה הדתית נתניה",
+    "name": "בית אל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12592",
+    "council": "המועצה הדתית נתניה",
+    "name": "בית אל-2",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12593",
+    "council": "המועצה הדתית נתניה",
+    "name": "בית אל-3",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12594",
+    "council": "המועצה הדתית נתניה",
+    "name": "בית אל-4",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12596",
+    "council": "המועצה הדתית נתניה",
+    "name": "בית אליהו",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12597",
+    "council": "המועצה הדתית נתניה",
+    "name": "בית דוד-1",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12599",
+    "council": "המועצה הדתית נתניה",
+    "name": "בית יוסף",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12600",
+    "council": "המועצה הדתית נתניה",
+    "name": "בית יוסף-2",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12601",
+    "council": "המועצה הדתית נתניה",
+    "name": "בית ינוקא",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12602",
+    "council": "המועצה הדתית נתניה",
+    "name": "בית ישראל",
+    "classification": "match",
+    "matchedId": "osm-node-615659244",
+    "matchedName": "בית ישראל",
+    "distanceM": 22,
+    "nameSim": 1,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-netanya-12603",
+    "council": "המועצה הדתית נתניה",
+    "name": "בית מאיר",
+    "classification": "conflict",
+    "matchedId": "osm-node-582029977",
+    "matchedName": "בית מיר",
+    "distanceM": 19,
+    "nameSim": 0.33
+  },
+  {
+    "sourceId": "rc-netanya-12604",
+    "council": "המועצה הדתית נתניה",
+    "name": "בית עמי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12605",
+    "council": "המועצה הדתית נתניה",
+    "name": "בר יוחאי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12607",
+    "council": "המועצה הדתית נתניה",
+    "name": "ברכת אברהם חי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12608",
+    "council": "המועצה הדתית נתניה",
+    "name": "גינת אגוז",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12609",
+    "council": "המועצה הדתית נתניה",
+    "name": "דביר קודשו",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12610",
+    "council": "המועצה הדתית נתניה",
+    "name": "דקר",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12611",
+    "council": "המועצה הדתית נתניה",
+    "name": "האדמו\"ר מצאנז",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12613",
+    "council": "המועצה הדתית נתניה",
+    "name": "היכל דוד ומשה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12614",
+    "council": "המועצה הדתית נתניה",
+    "name": "היכל יעקב",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12615",
+    "council": "המועצה הדתית נתניה",
+    "name": "היכל מנחם",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12616",
+    "council": "המועצה הדתית נתניה",
+    "name": "היכל משה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12618",
+    "council": "המועצה הדתית נתניה",
+    "name": "היכל רבי מאיר-3",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12619",
+    "council": "המועצה הדתית נתניה",
+    "name": "היכל רפאל",
+    "classification": "match",
+    "matchedId": "osm-way-44917859",
+    "matchedName": "היכל רפאל",
+    "distanceM": 4,
+    "nameSim": 1,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-netanya-12620",
+    "council": "המועצה הדתית נתניה",
+    "name": "היכל שלמה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12621",
+    "council": "המועצה הדתית נתניה",
+    "name": "היכל שלמה-1",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12622",
+    "council": "המועצה הדתית נתניה",
+    "name": "הרב לנדמן דוד",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12623",
+    "council": "המועצה הדתית נתניה",
+    "name": "הרב שלום גדז'",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12624",
+    "council": "המועצה הדתית נתניה",
+    "name": "הרי\"ף",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12625",
+    "council": "המועצה הדתית נתניה",
+    "name": "זכור ליוסף",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12627",
+    "council": "המועצה הדתית נתניה",
+    "name": "חב\"ד – מרכז",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12628",
+    "council": "המועצה הדתית נתניה",
+    "name": "חובבי ציון",
+    "classification": "match",
+    "matchedId": "osm-way-167450764",
+    "matchedName": "בית כנסת חובבי ציון",
+    "distanceM": 0,
+    "nameSim": 0.85,
+    "enrichFields": [
+      "nusach",
+      "phone"
+    ]
+  },
+  {
+    "sourceId": "rc-netanya-12629",
+    "council": "המועצה הדתית נתניה",
+    "name": "חסד ואמת",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12630",
+    "council": "המועצה הדתית נתניה",
+    "name": "חפץ חיים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12631",
+    "council": "המועצה הדתית נתניה",
+    "name": "יד אהרן",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12632",
+    "council": "המועצה הדתית נתניה",
+    "name": "יד לגיבורים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12633",
+    "council": "המועצה הדתית נתניה",
+    "name": "ישורון",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12634",
+    "council": "המועצה הדתית נתניה",
+    "name": "ישורון-1",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12635",
+    "council": "המועצה הדתית נתניה",
+    "name": "ישמח ישראל",
+    "classification": "match",
+    "matchedId": "osm-node-662973010",
+    "matchedName": "ישמח ישראל",
+    "distanceM": 50,
+    "nameSim": 1,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-netanya-12637",
+    "council": "המועצה הדתית נתניה",
+    "name": "ישראל הצעיר",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12638",
+    "council": "המועצה הדתית נתניה",
+    "name": "ישראל הצעיר",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12639",
+    "council": "המועצה הדתית נתניה",
+    "name": "ישראל הצעיר-1",
+    "classification": "match",
+    "matchedId": "osm-way-104334054",
+    "matchedName": "ישראל הצעיר",
+    "distanceM": 13,
+    "nameSim": 0.85,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-netanya-12640",
+    "council": "המועצה הדתית נתניה",
+    "name": "לאוין",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12641",
+    "council": "המועצה הדתית נתניה",
+    "name": "מאיר חקק הלוי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12642",
+    "council": "המועצה הדתית נתניה",
+    "name": "מגן אברהם",
+    "classification": "match",
+    "matchedId": "osm-node-662973050",
+    "matchedName": "מגן אברהם",
+    "distanceM": 40,
+    "nameSim": 1,
+    "enrichFields": [
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-netanya-12643",
+    "council": "המועצה הדתית נתניה",
+    "name": "מדרש אליהו",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12644",
+    "council": "המועצה הדתית נתניה",
+    "name": "מוריה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12645",
+    "council": "המועצה הדתית נתניה",
+    "name": "מצמיח ישועה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12646",
+    "council": "המועצה הדתית נתניה",
+    "name": "מקדש מרדכי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12648",
+    "council": "המועצה הדתית נתניה",
+    "name": "אוהל דניאל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12649",
+    "council": "המועצה הדתית נתניה",
+    "name": "מקור בנימין",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12651",
+    "council": "המועצה הדתית נתניה",
+    "name": "מקור חיים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12652",
+    "council": "המועצה הדתית נתניה",
+    "name": "נווה דוד",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12653",
+    "council": "המועצה הדתית נתניה",
+    "name": "נחלי אלון",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12655",
+    "council": "המועצה הדתית נתניה",
+    "name": "נצח ישראל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12656",
+    "council": "המועצה הדתית נתניה",
+    "name": "נועם עובדיה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12657",
+    "council": "המועצה הדתית נתניה",
+    "name": "נר אברהם",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12658",
+    "council": "המועצה הדתית נתניה",
+    "name": "נר רחמים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12659",
+    "council": "המועצה הדתית נתניה",
+    "name": "סגולה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12660",
+    "council": "המועצה הדתית נתניה",
+    "name": "סוכת שלום",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12661",
+    "council": "המועצה הדתית נתניה",
+    "name": "סוכת שלום",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12662",
+    "council": "המועצה הדתית נתניה",
+    "name": "עליית שבטים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12664",
+    "council": "המועצה הדתית נתניה",
+    "name": "עמית",
+    "classification": "match",
+    "matchedId": "osm-way-106180952",
+    "matchedName": "עמית",
+    "distanceM": 20,
+    "nameSim": 1,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-netanya-12665",
+    "council": "המועצה הדתית נתניה",
+    "name": "עץ חיים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12666",
+    "council": "המועצה הדתית נתניה",
+    "name": "עץ חיים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12667",
+    "council": "המועצה הדתית נתניה",
+    "name": "עץ חיים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12668",
+    "council": "המועצה הדתית נתניה",
+    "name": "פועלי אגודת ישראל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12669",
+    "council": "המועצה הדתית נתניה",
+    "name": "פועלי צדק",
+    "classification": "match",
+    "matchedId": "osm-way-109982092",
+    "matchedName": "בית כנסת - פועלי צדק",
+    "distanceM": 11,
+    "nameSim": 0.85,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-netanya-12671",
+    "council": "המועצה הדתית נתניה",
+    "name": "פחד יצחק",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12672",
+    "council": "המועצה הדתית נתניה",
+    "name": "קהילת השרון",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12673",
+    "council": "המועצה הדתית נתניה",
+    "name": "קיבוץ גלויות",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12674",
+    "council": "המועצה הדתית נתניה",
+    "name": "קרית השרון",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12675",
+    "council": "המועצה הדתית נתניה",
+    "name": "ר' דוד בן ברוך",
+    "classification": "conflict",
+    "matchedId": "osm-node-7024053363",
+    "matchedName": "בית הכנסת ע\"ש רבי דוד בן ברוך הכהן",
+    "distanceM": 35,
+    "nameSim": 0.5
+  },
+  {
+    "sourceId": "rc-netanya-12676",
+    "council": "המועצה הדתית נתניה",
+    "name": "רבינוביץ זיאמה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12677",
+    "council": "המועצה הדתית נתניה",
+    "name": "רינת ציון",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12678",
+    "council": "המועצה הדתית נתניה",
+    "name": "שבטי ישראל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12679",
+    "council": "המועצה הדתית נתניה",
+    "name": "שבי ציון",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12680",
+    "council": "המועצה הדתית נתניה",
+    "name": "שבת אחים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12681",
+    "council": "המועצה הדתית נתניה",
+    "name": "שבת אחים לעולי גרוזיה",
+    "classification": "match",
+    "matchedId": "osm-way-107681278",
+    "matchedName": "בית הכנסת שבת אחים",
+    "distanceM": 13,
+    "nameSim": 0.85,
+    "enrichFields": [
+      "nusach",
+      "phone"
+    ]
+  },
+  {
+    "sourceId": "rc-netanya-12683",
+    "council": "המועצה הדתית נתניה",
+    "name": "שונה הלכות",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12684",
+    "council": "המועצה הדתית נתניה",
+    "name": "שיבת ציון",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12685",
+    "council": "המועצה הדתית נתניה",
+    "name": "שירת עמית",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12686",
+    "council": "המועצה הדתית נתניה",
+    "name": "שלום שבזי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12687",
+    "council": "המועצה הדתית נתניה",
+    "name": "שערי רחמים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12688",
+    "council": "המועצה הדתית נתניה",
+    "name": "שערי צדק",
+    "classification": "match",
+    "matchedId": "osm-way-557798935",
+    "matchedName": "בית כנסת שערי צדק",
+    "distanceM": 179,
+    "nameSim": 0.85,
+    "enrichFields": [
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-netanya-12689",
+    "council": "המועצה הדתית נתניה",
+    "name": "שערי ירושלים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12690",
+    "council": "המועצה הדתית נתניה",
+    "name": "שפעת רביבים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12691",
+    "council": "המועצה הדתית נתניה",
+    "name": "תורה ושלום",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12692",
+    "council": "המועצה הדתית נתניה",
+    "name": "תפארת ישראל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12693",
+    "council": "המועצה הדתית נתניה",
+    "name": "תפארת ישראל",
+    "classification": "match",
+    "matchedId": "osm-node-565448141",
+    "matchedName": "תפארת ישראל",
+    "distanceM": 21,
+    "nameSim": 1,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-netanya-12694",
+    "council": "המועצה הדתית נתניה",
+    "name": "תפארת שלום",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12695",
+    "council": "המועצה הדתית נתניה",
+    "name": "בבי\"ס אוסישקין",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12696",
+    "council": "המועצה הדתית נתניה",
+    "name": "חסדי שלמה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12697",
+    "council": "המועצה הדתית נתניה",
+    "name": "תהילת אשר",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12698",
+    "council": "המועצה הדתית נתניה",
+    "name": "תהילת ישי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12699",
+    "council": "המועצה הדתית נתניה",
+    "name": "שלומקו",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12700",
+    "council": "המועצה הדתית נתניה",
+    "name": "היכל רפאל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12701",
+    "council": "המועצה הדתית נתניה",
+    "name": "ישמח משה",
+    "classification": "match",
+    "matchedId": "osm-node-305478462",
+    "matchedName": "בית הכנסת ישמח משה",
+    "distanceM": 42,
+    "nameSim": 1,
+    "enrichFields": [
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-netanya-12702",
+    "council": "המועצה הדתית נתניה",
+    "name": "אור הגנוז",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12703",
+    "council": "המועצה הדתית נתניה",
+    "name": "היכל שלמה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12704",
+    "council": "המועצה הדתית נתניה",
+    "name": "אדאדי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12705",
+    "council": "המועצה הדתית נתניה",
+    "name": "יהודה לביא",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12706",
+    "council": "המועצה הדתית נתניה",
+    "name": "בית אל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12707",
+    "council": "המועצה הדתית נתניה",
+    "name": "זרחה השמש ליעקב (בית מדרש)",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12708",
+    "council": "המועצה הדתית נתניה",
+    "name": "נחלת שמואל הישנה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12709",
+    "council": "המועצה הדתית נתניה",
+    "name": "נחלת שמואל החדשה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12710",
+    "council": "המועצה הדתית נתניה",
+    "name": "בריסק",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12711",
+    "council": "המועצה הדתית נתניה",
+    "name": "בית יהודה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12712",
+    "council": "המועצה הדתית נתניה",
+    "name": "אור לנתיבתי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12713",
+    "council": "המועצה הדתית נתניה",
+    "name": "אהל יצחק",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12714",
+    "council": "המועצה הדתית נתניה",
+    "name": "אהל יצחק",
+    "classification": "conflict",
+    "matchedId": "osm-way-414244649",
+    "matchedName": "אוהל יצחק",
+    "distanceM": 6,
+    "nameSim": 0.33
+  },
+  {
+    "sourceId": "rc-netanya-12716",
+    "council": "המועצה הדתית נתניה",
+    "name": "כנסת מרדכי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12717",
+    "council": "המועצה הדתית נתניה",
+    "name": "אבות ובנים",
+    "classification": "conflict",
+    "matchedId": "osm-node-662973019",
+    "matchedName": "אבות רבנים",
+    "distanceM": 80,
+    "nameSim": 0.33
+  },
+  {
+    "sourceId": "rc-netanya-12719",
+    "council": "המועצה הדתית נתניה",
+    "name": "אגודת אחים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12721",
+    "council": "המועצה הדתית נתניה",
+    "name": "אהל שם - נר שרה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-netanya-12722",
+    "council": "המועצה הדתית נתניה",
+    "name": "אגודת אחים יוצאי תימן",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11660",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "אהבת אחים ספרדי",
+    "classification": "match",
+    "matchedId": "osm-way-358683961",
+    "matchedName": "בית הכנסת אהבת אחים",
+    "distanceM": 140,
+    "nameSim": 0.85,
+    "enrichFields": [
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11661",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "אהבה ואחווה ספרדי",
+    "classification": "conflict",
+    "matchedId": "osm-way-358680914",
+    "matchedName": "בית כנסת - אהבה ואחווה",
+    "distanceM": 113,
+    "nameSim": 0.4
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11662",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "אור-ישראל ספרדי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11663",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "בית-אל ספרדי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11664",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "שלום ורעות ספרדי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11665",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "שבת אחים ספרדי",
+    "classification": "conflict",
+    "matchedId": "osm-way-358658161",
+    "matchedName": "בית כנסת - שבת אחים",
+    "distanceM": 29,
+    "nameSim": 0.4
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11666",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "משכן שלמה ויוסף ספרדי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11667",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "הריף - ספרדי נוסח מרוקאי (צרפתים)",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11668",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "שפתי רננות -ספרדי נוסח טוניס לוב",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11669",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "נתיבי אמת",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11670",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "משכן אברהם ויצחק",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11671",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "אוהל יצחק ואסתר ספרדי -נוסח מרוקאי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11673",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "קהילת אבני החושן - מרכז תורני פתאל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11674",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "רינת הדר - אשכנזי (נצר אחרון)",
+    "classification": "match",
+    "matchedId": "osm-way-358653467",
+    "matchedName": "רינת הדר",
+    "distanceM": 71,
+    "nameSim": 0.85,
+    "enrichFields": [
+      "phone"
+    ]
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11675",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "בית מתתיהו- אשכנזי",
+    "classification": "match",
+    "matchedId": "osm-way-358682823",
+    "matchedName": "בית מתתיה",
+    "distanceM": 62,
+    "nameSim": 0.85,
+    "enrichFields": [
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11676",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "היכל יהודה- אשכנזי",
+    "classification": "match",
+    "matchedId": "osm-way-358682786",
+    "matchedName": "היכל יהודה",
+    "distanceM": 28,
+    "nameSim": 0.85,
+    "enrichFields": [
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11677",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "המרכזי- אשכנזי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11678",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "קרליבך \" לכו נרננה\"- אשכנז",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11679",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "רמת אילן-אשכנז",
+    "classification": "match",
+    "matchedId": "osm-way-93704312",
+    "matchedName": "בית הכנסת רמת אילן",
+    "distanceM": 64,
+    "nameSim": 0.85,
+    "enrichFields": [
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11680",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "תפארת ישראל-אשכנז חב\"ד",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11681",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "מנין צעירי הגבעה-אשכנז",
+    "classification": "match",
+    "matchedId": "osm-way-358680894",
+    "matchedName": "צעירי הגבעה",
+    "distanceM": 8,
+    "nameSim": 0.85,
+    "enrichFields": [
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11682",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "שירת אהרון (אשכנזי) נוסח ספרד",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11683",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "נווה שמואל/ זכור לאברהם-אשכנז",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11684",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "נאוה תהילה-אשכנז",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11685",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "היכל רחמים-אשכנז",
+    "classification": "match",
+    "matchedId": "osm-way-358653491",
+    "matchedName": "היכל רחמים",
+    "distanceM": 16,
+    "nameSim": 0.85,
+    "enrichFields": [
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11686",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "בית יוסף חיים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11687",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "קהילת אהבת ישראל-אשכנז",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11688",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "צעירי הדר- אשכנז",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11689",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "אהבת איתן- אשכנז",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11690",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "היכל זרח- אשכנז",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11692",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "בית המדרש הקהילתי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11693",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "קול אביתר- ספרדי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11694",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "\"אור חיים\"- נוסח תימן (שאמי-בלדי)",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11695",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "קהילת העולים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11696",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "מניין סביוני אפריקה- נוסח ספרד",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11697",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "אחדות ישראל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11698",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "תפילת אבות- נוסח תימני בלאדי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11699",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "אוהל אליהו ומרדכי- אשכנזי וספרדי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11691",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "קהילת הצעירים גבעת שמואל - אשכנז",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-givat-shmuel-11672",
+    "council": "המועצה הדתית גבעת שמואל",
+    "name": "רינת ישראל- ספרדי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-yehud-hmi5h6z",
+    "council": "המועצה הדתית יהוד",
+    "name": "אוהל חנה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-yehud-hhwdr6x",
+    "council": "המועצה הדתית יהוד",
+    "name": "אור אבנר",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-yehud-h1w1pyzz",
+    "council": "המועצה הדתית יהוד",
+    "name": "אור לשבים (טורצ'ין)",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-yehud-hpnjx6l",
+    "council": "המועצה הדתית יהוד",
+    "name": "אחדות ישי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-yehud-h3acbix",
+    "council": "המועצה הדתית יהוד",
+    "name": "באור ה' לבני ישראל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-yehud-h128czap",
+    "council": "המועצה הדתית יהוד",
+    "name": "בילו",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-yehud-hkdy2d2",
+    "council": "המועצה הדתית יהוד",
+    "name": "בית אל (מרקו)",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-yehud-hhuvzsq",
+    "council": "המועצה הדתית יהוד",
+    "name": "בית אל (נימני)",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-yehud-hgg8kax",
+    "council": "המועצה הדתית יהוד",
+    "name": "בית הלוי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-yehud-h1xbtt6t",
+    "council": "המועצה הדתית יהוד",
+    "name": "בית יוסף",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-yehud-hchznmz",
+    "council": "המועצה הדתית יהוד",
+    "name": "בית ישראל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-yehud-hb9w4kn",
+    "council": "המועצה הדתית יהוד",
+    "name": "בית מאיר",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-yehud-hs5l253",
+    "council": "המועצה הדתית יהוד",
+    "name": "היכל אלעזר",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-yehud-h9hw3d2",
+    "council": "המועצה הדתית יהוד",
+    "name": "היכל חיים(מונוסון)",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-yehud-h1imon64",
+    "council": "המועצה הדתית יהוד",
+    "name": "הראל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-yehud-h1fapmnv",
+    "council": "המועצה הדתית יהוד",
+    "name": "השלום",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-yehud-h12co0fs",
+    "council": "המועצה הדתית יהוד",
+    "name": "חזון עובדיה (כורש)",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-yehud-hm1kp1k",
+    "council": "המועצה הדתית יהוד",
+    "name": "חזון עובדיה(נר ישראל)",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-yehud-h1vrepw8",
+    "council": "המועצה הדתית יהוד",
+    "name": "ישורון(טלבים)",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-yehud-h11ntk9",
+    "council": "המועצה הדתית יהוד",
+    "name": "מגן דוד",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-yehud-hl1tvsf",
+    "council": "המועצה הדתית יהוד",
+    "name": "מוהליבר שמואל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-yehud-h1hthlmt",
+    "council": "המועצה הדתית יהוד",
+    "name": "מזמור לדוד (חב\"ד)",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-yehud-h1l3zv8g",
+    "council": "המועצה הדתית יהוד",
+    "name": "עולי בוכרה",
+    "classification": "match",
+    "matchedId": "osm-way-364816255",
+    "matchedName": "בית הכנסת עולי בוכרה",
+    "distanceM": 52,
+    "nameSim": 1,
+    "enrichFields": [
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-yehud-h19rrhmp",
+    "council": "המועצה הדתית יהוד",
+    "name": "עץ החיים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-yehud-h1iyfx40",
+    "council": "המועצה הדתית יהוד",
+    "name": "ר' יוסף חיים(מונוסון)",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-yehud-h1exz4lr",
+    "council": "המועצה הדתית יהוד",
+    "name": "ר' שלום שבזי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-yehud-h1e624di",
+    "council": "המועצה הדתית יהוד",
+    "name": "שבת אחים(ריעני)",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-yehud-h1nj8ige",
+    "council": "המועצה הדתית יהוד",
+    "name": "שערי אלקנה(הודים)",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-yehud-h16dexeo",
+    "council": "המועצה הדתית יהוד",
+    "name": "שערי צדק(לוזון)",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-merchavim-h1as1t5c",
+    "council": "המועצה הדתית מרחבים",
+    "name": "בית כנסת ישורון פדויים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-merchavim-h1lzi80t",
+    "council": "המועצה הדתית מרחבים",
+    "name": "בית כנסת אשל הנשיא",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-merchavim-h80pk05",
+    "council": "המועצה הדתית מרחבים",
+    "name": "בית כנסת המייסדים גילת",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-merchavim-hg5t8r1",
+    "council": "המועצה הדתית מרחבים",
+    "name": "בית כנסת רנן",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-merchavim-htwt9c1",
+    "council": "המועצה הדתית מרחבים",
+    "name": "בית כנסת ביטחה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-merchavim-haq13je",
+    "council": "המועצה הדתית מרחבים",
+    "name": "בית כנסת בית יוסף תפרח",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-merchavim-h1na5iy",
+    "council": "המועצה הדתית מרחבים",
+    "name": "בית הכנסת אהל יעקב וחיה תפרח",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-merchavim-h1px3pkb",
+    "council": "המועצה הדתית מרחבים",
+    "name": "בית כנסת המרכזי אשכנזי תפרח",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-merchavim-hdpei93",
+    "council": "המועצה הדתית מרחבים",
+    "name": "בית כנסת שבי דרום",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-merchavim-h119unas",
+    "council": "המועצה הדתית מרחבים",
+    "name": "בית כנסת אהבת חיים ניר עקיבא",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-merchavim-h15ardl8",
+    "council": "המועצה הדתית מרחבים",
+    "name": "בית כנסת מושב מסלול",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-merchavim-h6rlxkx",
+    "council": "המועצה הדתית מרחבים",
+    "name": "בית כנסת תלמי ביל\"ו",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-merchavim-h1u7ep7w",
+    "council": "המועצה הדתית מרחבים",
+    "name": "בית כנסת מושב ניר משה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-merchavim-hzf3lm2",
+    "council": "המועצה הדתית מרחבים",
+    "name": "בית כנסת מושב אשבול",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-merchavim-h20dan5",
+    "council": "המועצה הדתית מרחבים",
+    "name": "בית כנסת פעמי תש\"ז",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-merchavim-h6pgfao",
+    "council": "המועצה הדתית מרחבים",
+    "name": "בית כנסת אליהו הנביא שדה צבי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-merchavim-h4dknz7",
+    "council": "המועצה הדתית מרחבים",
+    "name": "בית כנסת אוהל יעקב שדה צבי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-merchavim-h16nbu",
+    "council": "המועצה הדתית מרחבים",
+    "name": "בית כנסת היכל מאיר קלחים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-merchavim-h1036o6y",
+    "council": "המועצה הדתית מרחבים",
+    "name": "מושב פטיש - בית כנסת מרכזי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-merchavim-h1jwzsj2",
+    "council": "המועצה הדתית מרחבים",
+    "name": "רינת אבות - מבועים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-merchavim-hkv6n12",
+    "council": "המועצה הדתית מרחבים",
+    "name": "היכל מנשה מבועים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1s751i0",
+    "council": "המועצה הדתית ראש העין",
+    "name": "אביר יעקב",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1yditxb",
+    "council": "המועצה הדתית ראש העין",
+    "name": "אבן העזר",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hvivemw",
+    "council": "המועצה הדתית ראש העין",
+    "name": "אדמונד ספרא",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-httfgsb",
+    "council": "המועצה הדתית ראש העין",
+    "name": "אהבת אחים - פסגות",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1w4vzhk",
+    "council": "המועצה הדתית ראש העין",
+    "name": "אהבת חינם",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hnwlh2d",
+    "council": "המועצה הדתית ראש העין",
+    "name": "אהבת ישראל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hu1ol3z",
+    "council": "המועצה הדתית ראש העין",
+    "name": "אהבת שלום",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1gs0p13",
+    "council": "המועצה הדתית ראש העין",
+    "name": "אוהל מועד",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1th0j0g",
+    "council": "המועצה הדתית ראש העין",
+    "name": "אוהל משה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1lcwsn6",
+    "council": "המועצה הדתית ראש העין",
+    "name": "אוהל משה ועמנואל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hq37eoh",
+    "council": "המועצה הדתית ראש העין",
+    "name": "אוהל צדוק",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-ht22r8s",
+    "council": "המועצה הדתית ראש העין",
+    "name": "אור אברהם",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hffl7o8",
+    "council": "המועצה הדתית ראש העין",
+    "name": "אור זרוע",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h19k83nb",
+    "council": "המועצה הדתית ראש העין",
+    "name": "אחוות אחים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1m1tb9n",
+    "council": "המועצה הדתית ראש העין",
+    "name": "אחים ורעים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hihiuwf",
+    "council": "המועצה הדתית ראש העין",
+    "name": "אלבום",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h7o8ryi",
+    "council": "המועצה הדתית ראש העין",
+    "name": "אליעזר",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h17tn05x",
+    "council": "המועצה הדתית ראש העין",
+    "name": "אמרי יוסף",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h21c1od",
+    "council": "המועצה הדתית ראש העין",
+    "name": "אפיקי מים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hehw409",
+    "council": "המועצה הדתית ראש העין",
+    "name": "אפיקי תימן",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hl4ab43",
+    "council": "המועצה הדתית ראש העין",
+    "name": "אפריון שלמה - ספרדי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hbq9w90",
+    "council": "המועצה הדתית ראש העין",
+    "name": "אפריון שלמה - תימני",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1p0eohs",
+    "council": "המועצה הדתית ראש העין",
+    "name": "בי״ס צומח",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h17wza3h",
+    "council": "המועצה הדתית ראש העין",
+    "name": "בית אהרון ושמואל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hy8hrac",
+    "council": "המועצה הדתית ראש העין",
+    "name": "בית אל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1kc3o8i",
+    "council": "המועצה הדתית ראש העין",
+    "name": "בית חב\"ד ראש העין",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1dve7xm",
+    "council": "המועצה הדתית ראש העין",
+    "name": "בית חבד צעירים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1u9kh7h",
+    "council": "המועצה הדתית ראש העין",
+    "name": "בית יהודה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h14lzt4d",
+    "council": "המועצה הדתית ראש העין",
+    "name": "בית יעקב",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-httyp2a",
+    "council": "המועצה הדתית ראש העין",
+    "name": "בית יעקב נחלת יוסף",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1c6100j",
+    "council": "המועצה הדתית ראש העין",
+    "name": "בית יעקב ע״ש מוסא יהודה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1uish7k",
+    "council": "המועצה הדתית ראש העין",
+    "name": "בית כנסת הספרדי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hut30uv",
+    "council": "המועצה הדתית ראש העין",
+    "name": "בית כנסת חדש",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h18fn5fd",
+    "council": "המועצה הדתית ראש העין",
+    "name": "בית מנחם",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hmjb920",
+    "council": "המועצה הדתית ראש העין",
+    "name": "בית רפאל ברסלב",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hhu4otq",
+    "council": "המועצה הדתית ראש העין",
+    "name": "בית תפילה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1lkz3ra",
+    "council": "המועצה הדתית ראש העין",
+    "name": "בני עקיבא",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hrumm62",
+    "council": "המועצה הדתית ראש העין",
+    "name": "ברהו סרקה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1q13xm9",
+    "council": "המועצה הדתית ראש העין",
+    "name": "דברי קהלת",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1cgsnx",
+    "council": "המועצה הדתית ראש העין",
+    "name": "היכל דוד",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1i6jbzg",
+    "council": "המועצה הדתית ראש העין",
+    "name": "היכל הקודש",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1k9idj4",
+    "council": "המועצה הדתית ראש העין",
+    "name": "היכל יד ושם",
+    "classification": "match",
+    "matchedId": "osm-way-516638290",
+    "matchedName": "היכל יד ושם",
+    "distanceM": 19,
+    "nameSim": 1,
+    "enrichFields": [
+      "nusach",
+      "phone",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hsohfx0",
+    "council": "המועצה הדתית ראש העין",
+    "name": "היכל מאיר ניסים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hrv1qyh",
+    "council": "המועצה הדתית ראש העין",
+    "name": "היכל נוריאל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-htqzvfs",
+    "council": "המועצה הדתית ראש העין",
+    "name": "היכל צדוק דעוס",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-htpvfz4",
+    "council": "המועצה הדתית ראש העין",
+    "name": "היכל קדושים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h5fuvgx",
+    "council": "המועצה הדתית ראש העין",
+    "name": "היכל שילה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hj0bddh",
+    "council": "המועצה הדתית ראש העין",
+    "name": "היכל שלום",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1pb8xf4",
+    "council": "המועצה הדתית ראש העין",
+    "name": "היכל שלמה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1nu033b",
+    "council": "המועצה הדתית ראש העין",
+    "name": "המרכז הרוחני ליהדות תימן",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hcd0f4",
+    "council": "המועצה הדתית ראש העין",
+    "name": "המרכזי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h18o5zz5",
+    "council": "המועצה הדתית ראש העין",
+    "name": "הספרדי מצפה אפק",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1i8bop8",
+    "council": "המועצה הדתית ראש העין",
+    "name": "הספרדי פסגות אפק (מאור ישראל)",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1mx8v8e",
+    "council": "המועצה הדתית ראש העין",
+    "name": "זכור לאברהם",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hvnju6j",
+    "council": "המועצה הדתית ראש העין",
+    "name": "חזון עובדיה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1sg26bb",
+    "council": "המועצה הדתית ראש העין",
+    "name": "חמדת הימים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h41p9v",
+    "council": "המועצה הדתית ראש העין",
+    "name": "חסד לאברהם",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h15oa47u",
+    "council": "המועצה הדתית ראש העין",
+    "name": "חסדי אברהם",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hqmlhqu",
+    "council": "המועצה הדתית ראש העין",
+    "name": "חפץ חיים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1d8weos",
+    "council": "המועצה הדתית ראש העין",
+    "name": "חפץ חיים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h39puas",
+    "council": "המועצה הדתית ראש העין",
+    "name": "יד הרמב\"ם",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1c1lhzl",
+    "council": "המועצה הדתית ראש העין",
+    "name": "יד לחללי צה\"ל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hc06gxu",
+    "council": "המועצה הדתית ראש העין",
+    "name": "יד רמה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1bbomsd",
+    "council": "המועצה הדתית ראש העין",
+    "name": "יד שמואל מקייטן",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h14ur0xy",
+    "council": "המועצה הדתית ראש העין",
+    "name": "ימין משה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h106pe59",
+    "council": "המועצה הדתית ראש העין",
+    "name": "יריעות שלמה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1i4lk4n",
+    "council": "המועצה הדתית ראש העין",
+    "name": "ישורון",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1f5jbac",
+    "council": "המועצה הדתית ראש העין",
+    "name": "ישורון",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1194gy3",
+    "council": "המועצה הדתית ראש העין",
+    "name": "ישיבת אחים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1mi9h52",
+    "council": "המועצה הדתית ראש העין",
+    "name": "ישיבת צדק ושלום",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h16ibhns",
+    "council": "המועצה הדתית ראש העין",
+    "name": "כנפי יונה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h15jpzkl",
+    "council": "המועצה הדתית ראש העין",
+    "name": "מגדל עוז",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hvs599t",
+    "council": "המועצה הדתית ראש העין",
+    "name": "מגן אברהם",
+    "classification": "match",
+    "matchedId": "osm-way-516638271",
+    "matchedName": "מגן אברהם",
+    "distanceM": 16,
+    "nameSim": 1,
+    "enrichFields": [
+      "nusach",
+      "address"
+    ]
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1m5s86e",
+    "council": "המועצה הדתית ראש העין",
+    "name": "מגן דוד",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1vusitm",
+    "council": "המועצה הדתית ראש העין",
+    "name": "מדרש יחיאל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-horkmh2",
+    "council": "המועצה הדתית ראש העין",
+    "name": "מניין אברכים ובני תורה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hegn95j",
+    "council": "המועצה הדתית ראש העין",
+    "name": "מקלט",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h2c4zj5",
+    "council": "המועצה הדתית ראש העין",
+    "name": "מרום ציון",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h4mq330",
+    "council": "המועצה הדתית ראש העין",
+    "name": "מרכז רוחני משכן משה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hzx6e2h",
+    "council": "המועצה הדתית ראש העין",
+    "name": "משאת בנימין",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hvgqdnc",
+    "council": "המועצה הדתית ראש העין",
+    "name": "משכן אפק",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hv5eon9",
+    "council": "המועצה הדתית ראש העין",
+    "name": "משכן דוד",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1b9z4in",
+    "council": "המועצה הדתית ראש העין",
+    "name": "משכן שמעון",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h7kfemq",
+    "council": "המועצה הדתית ראש העין",
+    "name": "משכנות אחים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h15fgtuo",
+    "council": "המועצה הדתית ראש העין",
+    "name": "נביאי תימן",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1i8d9bl",
+    "council": "המועצה הדתית ראש העין",
+    "name": "נוה אפיריון",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1prgc6u",
+    "council": "המועצה הדתית ראש העין",
+    "name": "נוה אפריון",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hqpsx1u",
+    "council": "המועצה הדתית ראש העין",
+    "name": "נוה צדק",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hvy9prd",
+    "council": "המועצה הדתית ראש העין",
+    "name": "נוה קודש",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1dianc6",
+    "council": "המועצה הדתית ראש העין",
+    "name": "נווה שלום",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hticy0r",
+    "council": "המועצה הדתית ראש העין",
+    "name": "נחלת אחים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hj3afga",
+    "council": "המועצה הדתית ראש העין",
+    "name": "נחלת יוסף",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1x34pr",
+    "council": "המועצה הדתית ראש העין",
+    "name": "נחלת ישורון",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-ht1nxl5",
+    "council": "המועצה הדתית ראש העין",
+    "name": "נחלת עמרם",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1ukk2s8",
+    "council": "המועצה הדתית ראש העין",
+    "name": "נחלת ששון",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hu6t07y",
+    "council": "המועצה הדתית ראש העין",
+    "name": "נצח ישראל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hsy2bmz",
+    "council": "המועצה הדתית ראש העין",
+    "name": "נצח ישראל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hn4t2c3",
+    "council": "המועצה הדתית ראש העין",
+    "name": "נתן אברהם (שוקר)",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1x0thby",
+    "council": "המועצה הדתית ראש העין",
+    "name": "סוכת שלום",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-htwgayr",
+    "council": "המועצה הדתית ראש העין",
+    "name": "סוכת שלום",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h99zo9n",
+    "council": "המועצה הדתית ראש העין",
+    "name": "סוכת שלום שרעבי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1ln023a",
+    "council": "המועצה הדתית ראש העין",
+    "name": "ע\"ש מארי סלימן",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h10o8nv",
+    "council": "המועצה הדתית ראש העין",
+    "name": "ע\"ש פרחי יחיא",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h17j02at",
+    "council": "המועצה הדתית ראש העין",
+    "name": "ע״ש אמנון בן יחיא",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h5l8zua",
+    "council": "המועצה הדתית ראש העין",
+    "name": "עוד יוסף חי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h23ymll",
+    "council": "המועצה הדתית ראש העין",
+    "name": "עץ חיים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1qi339q",
+    "council": "המועצה הדתית ראש העין",
+    "name": "פסגות אפק A (ביה\"ס צומח)",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hsoektf",
+    "council": "המועצה הדתית ראש העין",
+    "name": "פסגות אפק- שערי שמים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1yf61oo",
+    "council": "המועצה הדתית ראש העין",
+    "name": "צעירי פסגות אפק",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hawtosc",
+    "council": "המועצה הדתית ראש העין",
+    "name": "קהילת מתפללי מצפה אפק",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1iezvbr",
+    "council": "המועצה הדתית ראש העין",
+    "name": "רמב\"ם - לב אחים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h8sugy4",
+    "council": "המועצה הדתית ראש העין",
+    "name": "שארית הפליטה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1sgqfp9",
+    "council": "המועצה הדתית ראש העין",
+    "name": "שבת אחים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hznajqm",
+    "council": "המועצה הדתית ראש העין",
+    "name": "שבת אחים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1svpz0g",
+    "council": "המועצה הדתית ראש העין",
+    "name": "שועת עניים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1asibvc",
+    "council": "המועצה הדתית ראש העין",
+    "name": "שיבת ציון",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h8tr66",
+    "council": "המועצה הדתית ראש העין",
+    "name": "שם ועבר",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hnje0om",
+    "council": "המועצה הדתית ראש העין",
+    "name": "שער השמים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1xtkigx",
+    "council": "המועצה הדתית ראש העין",
+    "name": "שערי צדק",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hrh83sr",
+    "council": "המועצה הדתית ראש העין",
+    "name": "שערי רחמים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1g408qp",
+    "council": "המועצה הדתית ראש העין",
+    "name": "שערי רחמים וג'ימה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h6a5u5r",
+    "council": "המועצה הדתית ראש העין",
+    "name": "שערי שמים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hvgfd0x",
+    "council": "המועצה הדתית ראש העין",
+    "name": "תורת חיים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1onu1q7",
+    "council": "המועצה הדתית ראש העין",
+    "name": "תפארת ישראל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-htmungq",
+    "council": "המועצה הדתית ראש העין",
+    "name": "תפארת ישראל",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1urmfhp",
+    "council": "המועצה הדתית ראש העין",
+    "name": "תפארת נתן שאול",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-h1w33orh",
+    "council": "המועצה הדתית ראש העין",
+    "name": "תפארת עמרם",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-rosh-haayin-hgkjg6b",
+    "council": "המועצה הדתית ראש העין",
+    "name": "תפארת שלום",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-ganei-tikva-h13dr6um",
+    "council": "המועצה הדתית גני תקווה",
+    "name": "תפארת בנים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-ganei-tikva-h1szm0gf",
+    "council": "המועצה הדתית גני תקווה",
+    "name": "תורת חיים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-ganei-tikva-hcadivi",
+    "council": "המועצה הדתית גני תקווה",
+    "name": "שבת אחים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-ganei-tikva-hpshoew",
+    "council": "המועצה הדתית גני תקווה",
+    "name": "שער השמים",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-ganei-tikva-hb7gm4k",
+    "council": "המועצה הדתית גני תקווה",
+    "name": "ציון שיח שפתותנו",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-ganei-tikva-h19opv4a",
+    "council": "המועצה הדתית גני תקווה",
+    "name": "נץ דוד",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-ganei-tikva-h13qf869",
+    "council": "המועצה הדתית גני תקווה",
+    "name": "משכן עזרא",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-ganei-tikva-h1nry0vx",
+    "council": "המועצה הדתית גני תקווה",
+    "name": "נווה שלום",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-ganei-tikva-h3b4hka",
+    "council": "המועצה הדתית גני תקווה",
+    "name": "משכן יוסף",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-ganei-tikva-hce4qpv",
+    "council": "המועצה הדתית גני תקווה",
+    "name": "משכן דאר",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-ganei-tikva-hv0yb3o",
+    "council": "המועצה הדתית גני תקווה",
+    "name": "מאור התקווה",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-ganei-tikva-hxqqsew",
+    "council": "המועצה הדתית גני תקווה",
+    "name": "מגן דוד",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-ganei-tikva-h1g8hqrj",
+    "council": "המועצה הדתית גני תקווה",
+    "name": "חניכי הישיבות",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-ganei-tikva-hbxbia8",
+    "council": "המועצה הדתית גני תקווה",
+    "name": "המרכזי נוף סביון",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-ganei-tikva-h1wtbcyw",
+    "council": "המועצה הדתית גני תקווה",
+    "name": "ברכי נפשי",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-ganei-tikva-h1cejcfu",
+    "council": "המועצה הדתית גני תקווה",
+    "name": "המרכזי - סאסוב",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-ganei-tikva-h12mavdz",
+    "council": "המועצה הדתית גני תקווה",
+    "name": "בית יוסף שלום",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-ganei-tikva-h17xl4xq",
+    "council": "המועצה הדתית גני תקווה",
+    "name": "בית חב\"ד",
+    "classification": "new"
+  },
+  {
+    "sourceId": "rc-ganei-tikva-hbkpkjv",
+    "council": "המועצה הדתית גני תקווה",
+    "name": "אוהל שם",
+    "classification": "new"
+  }
+]

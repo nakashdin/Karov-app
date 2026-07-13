@@ -1,0 +1,55 @@
+/**
+ * Kosher-restaurant importer — OpenStreetMap (Overpass), all of Israel.
+ *
+ * Run:  npm run import:restaurants  (or: node importers/kosher-restaurants/importer.ts)
+ * Out:  src/data/generated/restaurants.osm.json  (+ rebuilds the app dataset)
+ *
+ * Source notes + the open coverage gap live in this folder's README.md.
+ */
+import type { NormalizedPlace } from '../shared/types.ts';
+import { dedupeById, fetchLocalities, fetchOverpass, fillRate, isMain } from '../shared/utils.ts';
+import { CATEGORY_FILES, rebuildAppDataset, writeJson } from '../shared/database.ts';
+import { transformRestaurant } from './transform.ts';
+import { validateRestaurants } from './validate.ts';
+
+const QUERY = `[out:json][timeout:180];
+area["ISO3166-1"="IL"][admin_level=2]->.il;
+(
+  nwr["diet:kosher"~"yes|only|designated"]["amenity"](area.il);
+);
+out center tags;`;
+
+/** Fetch → transform → validate → write the restaurant category file. */
+export async function importRestaurants(): Promise<NormalizedPlace[]> {
+  const localities = await fetchLocalities();
+
+  const data = await fetchOverpass(QUERY, 'restaurants');
+  const elements = data.elements || [];
+  console.log(`Raw kosher elements: ${elements.length}`);
+
+  const normalized = dedupeById(
+    elements
+      .map((el: any) => transformRestaurant(el, localities))
+      .filter((p: NormalizedPlace | null): p is NormalizedPlace => p !== null),
+  );
+
+  const { valid, rejected } = validateRestaurants(normalized);
+  const path = writeJson(CATEGORY_FILES.restaurant, valid);
+
+  console.log(`\nKosher restaurants: ${valid.length} valid, ${rejected.length} rejected`);
+  console.log(`Field fill: name ${fillRate(valid, 'name')}% · address ${fillRate(valid, 'address')}% · phone ${fillRate(valid, 'phone')}% · hours ${fillRate(valid, 'openingHours')}%`);
+  console.log(`Wrote → ${path}`);
+  return valid;
+}
+
+if (isMain(import.meta.url)) {
+  importRestaurants()
+    .then(() => {
+      const r = rebuildAppDataset();
+      console.log(`App dataset rebuilt: ${r.places} places · ${r.cities} cities`);
+    })
+    .catch((e) => {
+      console.error('Failed:', e);
+      process.exit(1);
+    });
+}

@@ -1,0 +1,6566 @@
+[
+  {
+    "id": "arcgis:ashkelon::1",
+    "type": "synagogue",
+    "name": "שערי צדק",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.665818928245752,
+      "longitude": 34.591136284317635
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:1",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 1,
+        "OBJECTID": 1,
+        "X": 161399.918618,
+        "Y": 619293.001311,
+        "תיק": 7104,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": "שערי צדק",
+        "סיווג": "בית כנסת",
+        "כתובת": "האורים",
+        "gush": 1215,
+        "helka": 66,
+        "בעלות": "עירייה 19",
+        "name": "שערי צדק"
+      }
+    },
+    "address": "האורים"
+  },
+  {
+    "id": "arcgis:ashkelon::2",
+    "type": "synagogue",
+    "name": "אוהל אברהם",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.66585343480101,
+      "longitude": 34.59092927202039
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:2",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 2,
+        "OBJECTID": 2,
+        "X": 161399.918618,
+        "Y": 619293.001311,
+        "תיק": 7105,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": "אוהל אברהם",
+        "סיווג": "בית כנסת",
+        "כתובת": "האורים",
+        "gush": 1215,
+        "helka": 66,
+        "בעלות": "עירייה 19",
+        "name": "אוהל אברהם"
+      }
+    },
+    "address": "האורים"
+  },
+  {
+    "id": "arcgis:ashkelon::4",
+    "type": "synagogue",
+    "name": "אהבת ציון",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.6683442810866,
+      "longitude": 34.59059352973685
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:4",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 3,
+        "OBJECTID": 4,
+        "X": 161243.260178,
+        "Y": 619706.665281,
+        "תיק": 7106,
+        "מגרש": 906,
+        "גודל": " ",
+        "מוחזק": "אהבת ציון",
+        "סיווג": "בית כנסת",
+        "כתובת": "בן דוד",
+        "gush": 2383,
+        "helka": 19,
+        "בעלות": "ר.מ.י",
+        "name": "אהבת ציון"
+      }
+    },
+    "address": "בן דוד"
+  },
+  {
+    "id": "arcgis:ashkelon::5",
+    "type": "synagogue",
+    "name": "מגדל עוז",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.666917611766575,
+      "longitude": 34.59197953905666
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:5",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 4,
+        "OBJECTID": 5,
+        "X": 161373.815106,
+        "Y": 619547.730253,
+        "תיק": 7101,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": "מגדל עוז",
+        "סיווג": "בית כנסת",
+        "כתובת": "יחיא קאפח",
+        "gush": 1994,
+        "helka": 36,
+        "בעלות": "עירייה",
+        "name": "מגדל עוז"
+      }
+    },
+    "address": "יחיא קאפח"
+  },
+  {
+    "id": "arcgis:ashkelon::6",
+    "type": "synagogue",
+    "name": "נצח ישראל",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.66656365382562,
+      "longitude": 34.592932990082275
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:6",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 5,
+        "OBJECTID": 6,
+        "X": 161464.017394,
+        "Y": 619507.9746,
+        "תיק": 7102,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": "נצח ישראל",
+        "סיווג": "בית כנסת",
+        "כתובת": "אהרון קאפח",
+        "gush": 1994,
+        "helka": 33,
+        "בעלות": "ר.מ.י",
+        "name": "נצח ישראל"
+      }
+    },
+    "address": "אהרון קאפח"
+  },
+  {
+    "id": "arcgis:ashkelon::7",
+    "type": "synagogue",
+    "name": "קהילת יעקב -עוזרי",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.667853798130157,
+      "longitude": 34.59274054573934
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:7",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 6,
+        "OBJECTID": 7,
+        "X": 161446.568282,
+        "Y": 619651.134799,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": "קהילת יעקב -עוזרי",
+        "סיווג": "בית כנסת",
+        "כתובת": "חננאל",
+        "gush": 1994,
+        "helka": 30,
+        "בעלות": "ר.מ.י",
+        "name": "קהילת יעקב -עוזרי"
+      }
+    },
+    "address": "חננאל"
+  },
+  {
+    "id": "arcgis:ashkelon::8",
+    "type": "synagogue",
+    "name": "נווה צדק",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.66855062093405,
+      "longitude": 34.59304984945643
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:8",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 7,
+        "OBJECTID": 8,
+        "X": 161476.334214,
+        "Y": 619728.237772,
+        "תיק": 7108,
+        "מגרש": 904,
+        "גודל": " ",
+        "מוחזק": " נווה צדק",
+        "סיווג": "בית כנסת",
+        "כתובת": "שמאי",
+        "gush": 2383,
+        "helka": 48,
+        "בעלות": "ר.מ.י",
+        "name": " נווה צדק"
+      }
+    },
+    "address": "שמאי"
+  },
+  {
+    "id": "arcgis:ashkelon::10",
+    "type": "synagogue",
+    "name": "כנסת ישראל",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.669898847217954,
+      "longitude": 34.59022821949758
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:10",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 8,
+        "OBJECTID": 10,
+        "X": 161193.84328,
+        "Y": 619868.126207,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": "עמנואל",
+        "סיווג": "בית כנסת",
+        "כתובת": "אבן עזרא",
+        "gush": 2881,
+        "helka": 17,
+        "בעלות": " ",
+        "name": "כנסת ישראל"
+      }
+    },
+    "address": "אבן עזרא"
+  },
+  {
+    "id": "arcgis:ashkelon::14",
+    "type": "synagogue",
+    "name": "חתם סופר",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.667723692353515,
+      "longitude": 34.58409183782711
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:14",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 9,
+        "OBJECTID": 14,
+        "X": 160626.278947,
+        "Y": 619641.337378,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": "חתם סופר",
+        "סיווג": "בית כנסת",
+        "כתובת": "דוד רמז",
+        "gush": 1234,
+        "helka": 75,
+        "בעלות": " ",
+        "name": "חתם סופר"
+      }
+    },
+    "address": "דוד רמז"
+  },
+  {
+    "id": "arcgis:ashkelon::18",
+    "type": "synagogue",
+    "name": "נר מאיר",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.676160580756584,
+      "longitude": 34.582174004592
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:18",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 10,
+        "OBJECTID": 18,
+        "X": 160449.73367,
+        "Y": 620577.900463,
+        "תיק": 7506,
+        "מגרש": 416,
+        "גודל": "חולק",
+        "מוחזק": "נר מאיר",
+        "סיווג": "בית כנסת",
+        "כתובת": "יהדות ספרד 26",
+        "gush": 3051,
+        "helka": 66,
+        "בעלות": "עירייה 19",
+        "name": "נר מאיר"
+      }
+    },
+    "address": "יהדות ספרד 26"
+  },
+  {
+    "id": "arcgis:ashkelon::19",
+    "type": "synagogue",
+    "name": "ברית שלום",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.67173621390348,
+      "longitude": 34.57884774461134
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:19",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 11,
+        "OBJECTID": 19,
+        "X": 160131.50043,
+        "Y": 620089.106149,
+        "תיק": 7505,
+        "מגרש": 550,
+        "גודל": "961",
+        "מוחזק": " ברית שלום",
+        "סיווג": "בית כנסת",
+        "כתובת": "כסלו",
+        "gush": 1353,
+        "helka": 84,
+        "בעלות": "עירייה 19",
+        "name": " ברית שלום"
+      }
+    },
+    "address": "כסלו"
+  },
+  {
+    "id": "arcgis:ashkelon::20",
+    "type": "synagogue",
+    "name": "מאורות שמעון",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.663908459231077,
+      "longitude": 34.57635160059244
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:20",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 12,
+        "OBJECTID": 20,
+        "X": 159891.061085,
+        "Y": 619245.183519,
+        "תיק": 7503,
+        "מגרש": 0,
+        "גודל": "700",
+        "מוחזק": "מאורות שמעון",
+        "סיווג": "בית כנסת",
+        "כתובת": "פקיעין",
+        "gush": 2507,
+        "helka": 20,
+        "בעלות": "עירייה 19",
+        "name": "מאורות שמעון"
+      }
+    },
+    "address": "פקיעין"
+  },
+  {
+    "id": "arcgis:ashkelon::21",
+    "type": "synagogue",
+    "name": "משכן אביחי",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.66638514421413,
+      "longitude": 34.58166917681259
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:21",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 13,
+        "OBJECTID": 21,
+        "X": 160395.676457,
+        "Y": 619494.220549,
+        "תיק": 7504,
+        "מגרש": 0,
+        "גודל": "750",
+        "מוחזק": "משכן אביחי",
+        "סיווג": "בית כנסת",
+        "כתובת": "לכיש",
+        "gush": 2508,
+        "helka": 32,
+        "בעלות": "עירייה 19",
+        "name": "משכן אביחי"
+      }
+    },
+    "address": "לכיש"
+  },
+  {
+    "id": "arcgis:ashkelon::22",
+    "type": "synagogue",
+    "name": "שבות ישראל",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.662611245962456,
+      "longitude": 34.577393151252856
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:22",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 14,
+        "OBJECTID": 22,
+        "X": 159978.502637,
+        "Y": 619074.991538,
+        "תיק": 7502,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " שבות ישראל",
+        "סיווג": "בית כנסת",
+        "כתובת": "נווה שלום 14",
+        "gush": 1296,
+        "helka": 22,
+        "בעלות": "עירייה 19",
+        "name": " שבות ישראל"
+      }
+    },
+    "address": "נווה שלום 14"
+  },
+  {
+    "id": "arcgis:ashkelon::24",
+    "type": "synagogue",
+    "name": "עמרם שלום",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65972327550022,
+      "longitude": 34.581805626897804
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:24",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 15,
+        "OBJECTID": 24,
+        "X": 160404.403524,
+        "Y": 618755.443654,
+        "תיק": 0,
+        "מגרש": 902,
+        "גודל": "582",
+        "מוחזק": "עמרם שלום",
+        "סיווג": "בית כנסת",
+        "כתובת": "הנביאים",
+        "gush": 1653,
+        "helka": 32,
+        "בעלות": "ר.מ.י",
+        "name": "עמרם שלום"
+      }
+    },
+    "address": "הנביאים"
+  },
+  {
+    "id": "arcgis:ashkelon::25",
+    "type": "synagogue",
+    "name": "אוהל יוסף",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65973716825009,
+      "longitude": 34.58204803002442
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:25",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 16,
+        "OBJECTID": 25,
+        "X": 160427.402759,
+        "Y": 618756.853118,
+        "תיק": 7203,
+        "מגרש": 903,
+        "גודל": "717",
+        "מוחזק": " אוהל יוסף",
+        "סיווג": "בית כנסת",
+        "כתובת": "הנביאים",
+        "gush": 1653,
+        "helka": 33,
+        "בעלות": "ר.מ.י",
+        "name": " אוהל יוסף"
+      }
+    },
+    "address": "הנביאים"
+  },
+  {
+    "id": "arcgis:ashkelon::26",
+    "type": "synagogue",
+    "name": "מצמיח ישועה",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65865998671108,
+      "longitude": 34.581000920592246
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:26",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 17,
+        "OBJECTID": 26,
+        "X": 160364.687896,
+        "Y": 618660.775332,
+        "תיק": 7204,
+        "מגרש": 904,
+        "גודל": "491",
+        "מוחזק": "מצמיח ישועה",
+        "סיווג": "בית כנסת",
+        "כתובת": "בוקרא",
+        "gush": 1653,
+        "helka": 42,
+        "בעלות": "עירייה 19",
+        "name": "מצמיח ישועה"
+      }
+    },
+    "address": "בוקרא"
+  },
+  {
+    "id": "arcgis:ashkelon::27",
+    "type": "synagogue",
+    "name": "לומדי תורה-ברדא",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.658784404485797,
+      "longitude": 34.58172154625076
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:27",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 18,
+        "OBJECTID": 27,
+        "X": 160395.835082,
+        "Y": 618651.382303,
+        "תיק": 0,
+        "מגרש": 905,
+        "גודל": "740",
+        "מוחזק": "לומדי תורה-ברדא",
+        "סיווג": "בית כנסת",
+        "כתובת": "בוקרא",
+        "gush": 1653,
+        "helka": 43,
+        "בעלות": "עירייה 19",
+        "name": "לומדי תורה-ברדא"
+      }
+    },
+    "address": "בוקרא"
+  },
+  {
+    "id": "arcgis:ashkelon::28",
+    "type": "synagogue",
+    "name": "אוהבי ישראל",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.657977947091037,
+      "longitude": 34.57862633156292
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:28",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 19,
+        "OBJECTID": 28,
+        "X": 160101.756504,
+        "Y": 618563.636793,
+        "תיק": 7205,
+        "מגרש": 907,
+        "גודל": "1,220",
+        "מוחזק": "אוהבי ישראל",
+        "סיווג": "בית כנסת",
+        "כתובת": "שיבת ציון",
+        "gush": 1654,
+        "helka": 92,
+        "בעלות": "עירייה 19",
+        "name": "אוהבי ישראל"
+      }
+    },
+    "address": "שיבת ציון"
+  },
+  {
+    "id": "arcgis:ashkelon::29",
+    "type": "synagogue",
+    "name": "ארם נהריים",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65806595467505,
+      "longitude": 34.582631772006685
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:29",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 20,
+        "OBJECTID": 29,
+        "X": 160481.711795,
+        "Y": 618571.224827,
+        "תיק": 0,
+        "מגרש": 911,
+        "גודל": "806",
+        "מוחזק": "ארם נהריים",
+        "סיווג": "בית כנסת",
+        "כתובת": "מיכה",
+        "gush": 1653,
+        "helka": 79,
+        "בעלות": "ר.מ.י",
+        "name": "ארם נהריים"
+      }
+    },
+    "address": "מיכה"
+  },
+  {
+    "id": "arcgis:ashkelon::30",
+    "type": "synagogue",
+    "name": "עולי בבל",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65716884810441,
+      "longitude": 34.58368858831128
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:30",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 21,
+        "OBJECTID": 30,
+        "X": 160581.380811,
+        "Y": 618471.178595,
+        "תיק": 0,
+        "מגרש": 915,
+        "גודל": "982",
+        "מוחזק": "עולי בבל",
+        "סיווג": "בית כנסת",
+        "כתובת": "שיבת ציון",
+        "gush": 1653,
+        "helka": 112,
+        "בעלות": "עירייה 19",
+        "name": "עולי בבל"
+      }
+    },
+    "address": "שיבת ציון"
+  },
+  {
+    "id": "arcgis:ashkelon::31",
+    "type": "synagogue",
+    "name": "אליהו הנביא",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.653579580866108,
+      "longitude": 34.582436150638095
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:31",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 22,
+        "OBJECTID": 31,
+        "X": 160460.323776,
+        "Y": 618073.858379,
+        "תיק": 7208,
+        "מגרש": 917,
+        "גודל": "829",
+        "מוחזק": "אליהו הנביא",
+        "סיווג": "בית כנסת",
+        "כתובת": "כיכר ברק",
+        "gush": 1656,
+        "helka": 31,
+        "בעלות": "עירייה 19",
+        "name": "אליהו הנביא"
+      }
+    },
+    "address": "כיכר ברק"
+  },
+  {
+    "id": "arcgis:ashkelon::32",
+    "type": "synagogue",
+    "name": "שערי שמים",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.651986522437156,
+      "longitude": 34.58236917555101
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:32",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 23,
+        "OBJECTID": 32,
+        "X": 160460.108582,
+        "Y": 617901.217006,
+        "תיק": 7209,
+        "מגרש": 918,
+        "גודל": "882",
+        "מוחזק": "שערי שמים",
+        "סיווג": "בית כנסת",
+        "כתובת": "ברוך סבג",
+        "gush": 1657,
+        "helka": 25,
+        "בעלות": "עירייה 19",
+        "name": "שערי שמים"
+      }
+    },
+    "address": "ברוך סבג"
+  },
+  {
+    "id": "arcgis:ashkelon::33",
+    "type": "synagogue",
+    "name": "מרום ציון",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65173652258672,
+      "longitude": 34.58247347068954
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:33",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 24,
+        "OBJECTID": 33,
+        "X": 160462.699467,
+        "Y": 617869.470617,
+        "תיק": 7210,
+        "מגרש": 919,
+        "גודל": "619",
+        "מוחזק": " מרום ציון",
+        "סיווג": "בית כנסת",
+        "כתובת": "ברוך סבג",
+        "gush": 1657,
+        "helka": 26,
+        "בעלות": "עירייה 19",
+        "name": " מרום ציון"
+      }
+    },
+    "address": "ברוך סבג"
+  },
+  {
+    "id": "arcgis:ashkelon::34",
+    "type": "synagogue",
+    "name": "עץ חיים",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.660063548321695,
+      "longitude": 34.58708496844037
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:34",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 25,
+        "OBJECTID": 34,
+        "X": 160905.331368,
+        "Y": 618790.331244,
+        "תיק": 7211,
+        "מגרש": 920,
+        "גודל": "614",
+        "מוחזק": " עץ חיים",
+        "סיווג": "בית כנסת",
+        "כתובת": "אליהו הנביא",
+        "gush": 1208,
+        "helka": 126,
+        "בעלות": "ר.מ.י",
+        "name": " עץ חיים"
+      }
+    },
+    "address": "אליהו הנביא"
+  },
+  {
+    "id": "arcgis:ashkelon::35",
+    "type": "synagogue",
+    "name": "שבזי+הלוי",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65981405346504,
+      "longitude": 34.586518860496746
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:35",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 26,
+        "OBJECTID": 35,
+        "X": 160851.482996,
+        "Y": 618762.969656,
+        "תיק": 0,
+        "מגרש": 921,
+        "גודל": "3,847",
+        "מוחזק": "שבזי+הלוי",
+        "סיווג": "בית כנסת",
+        "כתובת": "אליהו הנביא",
+        "gush": 1208,
+        "helka": 128,
+        "בעלות": "ר.מ.י",
+        "name": "שבזי+הלוי"
+      }
+    },
+    "address": "אליהו הנביא"
+  },
+  {
+    "id": "arcgis:ashkelon::36",
+    "type": "synagogue",
+    "name": "סיאני",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65961185201825,
+      "longitude": 34.58612215536222
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:36",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 27,
+        "OBJECTID": 36,
+        "X": 160817.42797,
+        "Y": 618740.761628,
+        "תיק": 0,
+        "מגרש": 922,
+        "גודל": "638",
+        "מוחזק": "סיאני",
+        "סיווג": "בית כנסת",
+        "כתובת": "חגי",
+        "gush": 1208,
+        "helka": 129,
+        "בעלות": "ר.מ.י",
+        "name": "סיאני"
+      }
+    },
+    "address": "חגי"
+  },
+  {
+    "id": "arcgis:ashkelon::37",
+    "type": "synagogue",
+    "name": "עזרת אחים",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.659391231586657,
+      "longitude": 34.58607779808659
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:37",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 28,
+        "OBJECTID": 37,
+        "X": 160809.385327,
+        "Y": 618716.321913,
+        "תיק": 0,
+        "מגרש": 923,
+        "גודל": "1,177",
+        "מוחזק": "עזרת אחים",
+        "סיווג": "בית כנסת",
+        "כתובת": "חגי",
+        "gush": 1208,
+        "helka": 130,
+        "בעלות": "ר.מ.י",
+        "name": "עזרת אחים"
+      }
+    },
+    "address": "חגי"
+  },
+  {
+    "id": "arcgis:ashkelon::38",
+    "type": "synagogue",
+    "name": "תפארת ציון",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.659156383386808,
+      "longitude": 34.58601734877466
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:38",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 29,
+        "OBJECTID": 38,
+        "X": 160803.504511,
+        "Y": 618690.313221,
+        "תיק": 0,
+        "מגרש": 924,
+        "גודל": "999",
+        "מוחזק": "תפארת ציון",
+        "סיווג": "בית כנסת",
+        "כתובת": "חגי",
+        "gush": 1208,
+        "helka": 131,
+        "בעלות": "ר.מ.י",
+        "name": "תפארת ציון"
+      }
+    },
+    "address": "חגי"
+  },
+  {
+    "id": "arcgis:ashkelon::39",
+    "type": "synagogue",
+    "name": "אלי כהן",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65417282205344,
+      "longitude": 34.585709003826196
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:39",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 30,
+        "OBJECTID": 39,
+        "X": 160771.127903,
+        "Y": 618137.876217,
+        "תיק": 0,
+        "מגרש": 930,
+        "גודל": "811",
+        "מוחזק": "אלי כהן",
+        "סיווג": "בית כנסת",
+        "כתובת": "אפרים",
+        "gush": 1207,
+        "helka": 210,
+        "בעלות": "ר.מ.י",
+        "name": "אלי כהן"
+      }
+    },
+    "address": "אפרים"
+  },
+  {
+    "id": "arcgis:ashkelon::40",
+    "type": "synagogue",
+    "name": "סוכת לויתן",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.654049111614693,
+      "longitude": 34.58545167967389
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:40",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 31,
+        "OBJECTID": 40,
+        "X": 160746.642992,
+        "Y": 618124.29689,
+        "תיק": 7217,
+        "מגרש": 931,
+        "גודל": "559",
+        "מוחזק": "סוכת לויתן",
+        "סיווג": "בית כנסת",
+        "כתובת": "אפרים",
+        "gush": 1207,
+        "helka": 209,
+        "בעלות": "ר.מ.י עמיגור",
+        "name": "סוכת לויתן"
+      }
+    },
+    "address": "אפרים"
+  },
+  {
+    "id": "arcgis:ashkelon::41",
+    "type": "synagogue",
+    "name": "פועלי צדק",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.653723327468438,
+      "longitude": 34.58520830219994
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:41",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 32,
+        "OBJECTID": 41,
+        "X": 160723.353829,
+        "Y": 618088.303205,
+        "תיק": 0,
+        "מגרש": 932,
+        "גודל": "1,454",
+        "מוחזק": " פועלי צדק",
+        "סיווג": "בית כנסת",
+        "כתובת": "אפרים",
+        "gush": 1207,
+        "helka": 208,
+        "בעלות": "ר.מ.י",
+        "name": " פועלי צדק"
+      }
+    },
+    "address": "אפרים"
+  },
+  {
+    "id": "arcgis:ashkelon::42",
+    "type": "synagogue",
+    "name": "שבת אחים -עופרי",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65388067608349,
+      "longitude": 34.5873153465228
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:42",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 33,
+        "OBJECTID": 42,
+        "X": 160923.305982,
+        "Y": 618104.61934,
+        "תיק": 0,
+        "מגרש": 933,
+        "גודל": "544",
+        "מוחזק": " שבט אחים -עופרי",
+        "סיווג": "בית כנסת",
+        "כתובת": "אסתר המלכה",
+        "gush": 1207,
+        "helka": 213,
+        "בעלות": "ר.מ.י עמיגור",
+        "name": " שבת אחים -עופרי"
+      }
+    },
+    "address": "אסתר המלכה"
+  },
+  {
+    "id": "arcgis:ashkelon::43",
+    "type": "synagogue",
+    "name": "נחלי מים",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.651682118994348,
+      "longitude": 34.587677066443014
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:43",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 34,
+        "OBJECTID": 43,
+        "X": 160956.238076,
+        "Y": 617860.63839,
+        "תיק": 7220,
+        "מגרש": 934,
+        "גודל": "1,530",
+        "מוחזק": "ביכ\"נ נחלי מים",
+        "סיווג": "בית כנסת",
+        "כתובת": "יהודית",
+        "gush": 1658,
+        "helka": 81,
+        "בעלות": "עירייה 19",
+        "name": "נחלי מים"
+      }
+    },
+    "address": "יהודית"
+  },
+  {
+    "id": "arcgis:ashkelon::44",
+    "type": "synagogue",
+    "name": "רשבי",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.649548032126727,
+      "longitude": 34.583665460094245
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:44",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 35,
+        "OBJECTID": 44,
+        "X": 160528.742071,
+        "Y": 617583.293779,
+        "תיק": 7221,
+        "מגרש": 935,
+        "גודל": "1,725",
+        "מוחזק": "ביכ\"נ רשב\"י",
+        "סיווג": "בית כנסת",
+        "כתובת": "השבטים",
+        "gush": 1467,
+        "helka": 108,
+        "בעלות": "ר.מ.י",
+        "name": "רשבי"
+      }
+    },
+    "address": "השבטים"
+  },
+  {
+    "id": "arcgis:ashkelon::45",
+    "type": "synagogue",
+    "name": "הרמב\"ם",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65542169119897,
+      "longitude": 34.58208551726898
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:45",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 36,
+        "OBJECTID": 45,
+        "X": 160428.230448,
+        "Y": 618278.310537,
+        "תיק": 0,
+        "מגרש": 163,
+        "גודל": "639",
+        "מוחזק": "הרמב\"ם",
+        "סיווג": "בית כנסת",
+        "כתובת": "גדעון",
+        "gush": 1655,
+        "helka": 113,
+        "בעלות": "עירייה 19",
+        "name": "הרמב\"ם"
+      }
+    },
+    "address": "גדעון"
+  },
+  {
+    "id": "arcgis:ashkelon::47",
+    "type": "synagogue",
+    "name": "נר ליאיר הכהן",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.659110606888948,
+      "longitude": 34.57552129637482
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:47",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 37,
+        "OBJECTID": 47,
+        "X": 159842.706565,
+        "Y": 618700.846316,
+        "תיק": 7224,
+        "מגרש": 0,
+        "גודל": "5,822",
+        "מוחזק": "נר ליאיר הכהן",
+        "סיווג": "בית כנסת",
+        "כתובת": "המרד",
+        "gush": 1225,
+        "helka": 34,
+        "בעלות": "עירייה 19",
+        "name": "נר ליאיר הכהן"
+      }
+    },
+    "address": "המרד"
+  },
+  {
+    "id": "arcgis:ashkelon::49",
+    "type": "synagogue",
+    "name": "משכן שמעון",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65213513299157,
+      "longitude": 34.577736155801446
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:49",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 38,
+        "OBJECTID": 49,
+        "X": 160028.424803,
+        "Y": 617889.146395,
+        "תיק": 7226,
+        "מגרש": 0,
+        "גודל": "900",
+        "מוחזק": "משכן שמעון",
+        "סיווג": "בית כנסת",
+        "כתובת": "אורי  אליאב",
+        "gush": 2847,
+        "helka": 40,
+        "בעלות": "עירייה 19",
+        "name": "משכן שמעון"
+      }
+    },
+    "address": "אורי  אליאב"
+  },
+  {
+    "id": "arcgis:ashkelon::50",
+    "type": "synagogue",
+    "name": "נפשנו חכתה לה'",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.651646824411806,
+      "longitude": 34.57781084101721
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:50",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 39,
+        "OBJECTID": 50,
+        "X": 160028.424803,
+        "Y": 617889.146395,
+        "תיק": 7227,
+        "מגרש": 0,
+        "גודל": "950",
+        "מוחזק": "נפשנו חכתה לה'",
+        "סיווג": "בית כנסת",
+        "כתובת": "דפנה",
+        "gush": 2847,
+        "helka": 40,
+        "בעלות": "עירייה 19",
+        "name": "נפשנו חכתה לה'"
+      }
+    },
+    "address": "דפנה"
+  },
+  {
+    "id": "arcgis:ashkelon::51",
+    "type": "synagogue",
+    "name": "אוריאל",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65210903332212,
+      "longitude": 34.577863529199476
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:51",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 40,
+        "OBJECTID": 51,
+        "X": 160028.424803,
+        "Y": 617889.146395,
+        "תיק": 7228,
+        "מגרש": 0,
+        "גודל": "700",
+        "מוחזק": "אוריאל",
+        "סיווג": "בית כנסת",
+        "כתובת": "דפנה",
+        "gush": 2847,
+        "helka": 40,
+        "בעלות": "עירייה 19",
+        "name": "אוריאל"
+      }
+    },
+    "address": "דפנה"
+  },
+  {
+    "id": "arcgis:ashkelon::52",
+    "type": "synagogue",
+    "name": "נווה שלום",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65829438585105,
+      "longitude": 34.56883314543566
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:52",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 41,
+        "OBJECTID": 52,
+        "X": 159173.116428,
+        "Y": 618604.091343,
+        "תיק": 7301,
+        "מגרש": 326,
+        "גודל": "620",
+        "מוחזק": "נווה שלום",
+        "סיווג": "בית כנסת",
+        "כתובת": "קרן היסוד",
+        "gush": 2391,
+        "helka": 37,
+        "בעלות": "עירייה 19",
+        "name": "נווה שלום"
+      }
+    },
+    "address": "קרן היסוד"
+  },
+  {
+    "id": "arcgis:ashkelon::53",
+    "type": "synagogue",
+    "name": "המרז הרוחני ע\"ש קס עזרייה",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65806266865582,
+      "longitude": 34.56867157808172
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:53",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 42,
+        "OBJECTID": 53,
+        "X": 159157.642752,
+        "Y": 618578.486453,
+        "תיק": 7302,
+        "מגרש": 327,
+        "גודל": "1,297",
+        "מוחזק": "קס עזריה",
+        "סיווג": "בית כנסת",
+        "כתובת": "קרן היסוד",
+        "gush": 2391,
+        "helka": 38,
+        "בעלות": "עירייה 19",
+        "name": "המרז הרוחני ע\"ש קס עזרייה"
+      }
+    },
+    "address": "קרן היסוד"
+  },
+  {
+    "id": "arcgis:ashkelon::54",
+    "type": "synagogue",
+    "name": "השער לדוד",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.66058342768703,
+      "longitude": 34.56702181600817
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:54",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 43,
+        "OBJECTID": 54,
+        "X": 159002.801564,
+        "Y": 618858.914072,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": "804",
+        "מוחזק": "זה השער לה'",
+        "סיווג": "בית כנסת",
+        "כתובת": "הסוחר",
+        "gush": 1963,
+        "helka": 54,
+        "בעלות": "עירייה 19",
+        "name": "השער לדוד"
+      }
+    },
+    "address": "הסוחר"
+  },
+  {
+    "id": "arcgis:ashkelon::55",
+    "type": "synagogue",
+    "name": "שערי צדק",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.6603968509141,
+      "longitude": 34.566460789158036
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:55",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 44,
+        "OBJECTID": 55,
+        "X": 158949.471015,
+        "Y": 618838.536295,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": "935",
+        "מוחזק": "שערי צדק",
+        "סיווג": "בית כנסת",
+        "כתובת": "הסוחר",
+        "gush": 1963,
+        "helka": 56,
+        "בעלות": "עירייה 19",
+        "name": "שערי צדק"
+      }
+    },
+    "address": "הסוחר"
+  },
+  {
+    "id": "arcgis:ashkelon::56",
+    "type": "synagogue",
+    "name": "אוהל יוסף",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.662199309792342,
+      "longitude": 34.56609901937317
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:56",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 45,
+        "OBJECTID": 56,
+        "X": 158916.32816,
+        "Y": 619038.603208,
+        "תיק": 7306,
+        "מגרש": 0,
+        "גודל": "1,016",
+        "מוחזק": "אוהל יוסף",
+        "סיווג": "בית כנסת",
+        "כתובת": "חמד",
+        "gush": 1963,
+        "helka": 71,
+        "בעלות": "עירייה (5)",
+        "name": "אוהל יוסף"
+      }
+    },
+    "address": "חמד"
+  },
+  {
+    "id": "arcgis:ashkelon::57",
+    "type": "synagogue",
+    "name": "חמדת ישראל",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.66218660339904,
+      "longitude": 34.56646991965092
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:57",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 46,
+        "OBJECTID": 57,
+        "X": 158944.882246,
+        "Y": 619031.366247,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": "363",
+        "מוחזק": "חמדת ישראל",
+        "סיווג": "בית כנסת",
+        "כתובת": "שפינוזה",
+        "gush": 1963,
+        "helka": 113,
+        "בעלות": "עירייה 19",
+        "name": "חמדת ישראל"
+      }
+    },
+    "address": "שפינוזה"
+  },
+  {
+    "id": "arcgis:ashkelon::58",
+    "type": "synagogue",
+    "name": "יעקב ודוד",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.662834262797695,
+      "longitude": 34.56349176932976
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:58",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 47,
+        "OBJECTID": 58,
+        "X": 158674.386745,
+        "Y": 619124.111714,
+        "תיק": 7308,
+        "מגרש": 0,
+        "גודל": "556",
+        "מוחזק": "יעקב ודוד",
+        "סיווג": "בית כנסת",
+        "כתובת": "דיבולט",
+        "gush": 1962,
+        "helka": 109,
+        "בעלות": "עירייה 19",
+        "name": "יעקב ודוד"
+      }
+    },
+    "address": "דיבולט"
+  },
+  {
+    "id": "arcgis:ashkelon::59",
+    "type": "synagogue",
+    "name": "שארית הפליטה",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.661160286691963,
+      "longitude": 34.56496521955356
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:59",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 48,
+        "OBJECTID": 59,
+        "X": 158768.837364,
+        "Y": 618895.866601,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": "733",
+        "מוחזק": "שארית הפליטה",
+        "סיווג": "בית כנסת",
+        "כתובת": "הארי",
+        "gush": 1962,
+        "helka": 67,
+        "בעלות": "ר.מ.י",
+        "name": "שארית הפליטה"
+      }
+    },
+    "address": "הארי"
+  },
+  {
+    "id": "arcgis:ashkelon::60",
+    "type": "synagogue",
+    "name": "אהבת התורה ע. סופר",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.661162205204864,
+      "longitude": 34.564463849564206
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:60",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 49,
+        "OBJECTID": 60,
+        "X": 158761.788715,
+        "Y": 618918.849443,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": "744",
+        "מוחזק": "אהבת התורה ע. סופר",
+        "סיווג": "בית כנסת",
+        "כתובת": "הארי",
+        "gush": 1962,
+        "helka": 68,
+        "בעלות": "ר.מ.י",
+        "name": "אהבת התורה ע. סופר"
+      }
+    },
+    "address": "הארי"
+  },
+  {
+    "id": "arcgis:ashkelon::61",
+    "type": "synagogue",
+    "name": "מגן דוד לעולי הודו",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.659565677910855,
+      "longitude": 34.56274636215573
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:61",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 50,
+        "OBJECTID": 61,
+        "X": 158584.623854,
+        "Y": 618752.74953,
+        "תיק": 7311,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": "מגן דוד לעולי הודו",
+        "סיווג": "בית כנסת",
+        "כתובת": "בעש\"ט",
+        "gush": 1962,
+        "helka": 30,
+        "בעלות": "עירייה 19",
+        "name": "מגן דוד לעולי הודו"
+      }
+    },
+    "address": "בעש\"ט"
+  },
+  {
+    "id": "arcgis:ashkelon::62",
+    "type": "synagogue",
+    "name": "אגודת בית דוד",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.658961118386394,
+      "longitude": 34.563994032065175
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:62",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 51,
+        "OBJECTID": 62,
+        "X": 158728.550891,
+        "Y": 618674.777808,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": "930",
+        "מוחזק": "אגודת בית דוד",
+        "סיווג": "בית כנסת",
+        "כתובת": "טרייורס",
+        "gush": 1962,
+        "helka": 122,
+        "בעלות": "עירייה (5)",
+        "name": "אגודת בית דוד"
+      }
+    },
+    "address": "טרייורס"
+  },
+  {
+    "id": "arcgis:ashkelon::63",
+    "type": "synagogue",
+    "name": "בית הלוי",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65856815429311,
+      "longitude": 34.564657450472666
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:63",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 52,
+        "OBJECTID": 63,
+        "X": 158777.247474,
+        "Y": 618636.761572,
+        "תיק": 7313,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": "בית הלוי",
+        "סיווג": "בית כנסת",
+        "כתובת": "טרייורס",
+        "gush": 1962,
+        "helka": 121,
+        "בעלות": "עירייה (5)",
+        "name": "בית הלוי"
+      }
+    },
+    "address": "טרייורס"
+  },
+  {
+    "id": "arcgis:ashkelon::64",
+    "type": "synagogue",
+    "name": "שערי רחמים ויוסף",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.656963617271956,
+      "longitude": 34.56545784356879
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:64",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 53,
+        "OBJECTID": 64,
+        "X": 158852.119794,
+        "Y": 618458.397418,
+        "תיק": 7314,
+        "מגרש": 16,
+        "גודל": "907",
+        "מוחזק": "שערי רחמים ויוסף",
+        "סיווג": "בית כנסת",
+        "כתובת": "מ.מ. ספרים",
+        "gush": 1964,
+        "helka": 113,
+        "בעלות": "ר.מ.י",
+        "name": "שערי רחמים ויוסף"
+      }
+    },
+    "address": "מ.מ. ספרים"
+  },
+  {
+    "id": "arcgis:ashkelon::65",
+    "type": "synagogue",
+    "name": "עולי אלג'יר",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.656448079455576,
+      "longitude": 34.56110266737889
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:65",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 54,
+        "OBJECTID": 65,
+        "X": 158438.707055,
+        "Y": 618403.657701,
+        "תיק": 7315,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": "לעולי אלג'יר",
+        "סיווג": "בית כנסת",
+        "כתובת": "טשרנחובסקי",
+        "gush": 1964,
+        "helka": 78,
+        "בעלות": "עירייה (5)",
+        "name": "עולי אלג'יר"
+      }
+    },
+    "address": "טשרנחובסקי"
+  },
+  {
+    "id": "arcgis:ashkelon::66",
+    "type": "synagogue",
+    "name": "עוזיאל",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.655210672917352,
+      "longitude": 34.56454652128411
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:66",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 55,
+        "OBJECTID": 66,
+        "X": 158789.203473,
+        "Y": 618281.461338,
+        "תיק": 7316,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": "עוזיאל",
+        "סיווג": "בית כנסת",
+        "כתובת": "ארצ'י שרמן",
+        "gush": 1965,
+        "helka": 33,
+        "בעלות": "עירייה 19",
+        "name": "עוזיאל"
+      }
+    },
+    "address": "ארצ'י שרמן"
+  },
+  {
+    "id": "arcgis:ashkelon::67",
+    "type": "synagogue",
+    "name": "אור חדש",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65536468171195,
+      "longitude": 34.56480545059279
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:67",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 56,
+        "OBJECTID": 67,
+        "X": 158789.203473,
+        "Y": 618281.461338,
+        "תיק": 7317,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": "אור חדש",
+        "סיווג": "בית כנסת",
+        "כתובת": "ארצ'י שרמן",
+        "gush": 1965,
+        "helka": 33,
+        "בעלות": "עירייה 19",
+        "name": "אור חדש"
+      }
+    },
+    "address": "ארצ'י שרמן"
+  },
+  {
+    "id": "arcgis:ashkelon::68",
+    "type": "synagogue",
+    "name": "אהבת שלום",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.654841993795475,
+      "longitude": 34.56447639101288
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:68",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 57,
+        "OBJECTID": 68,
+        "X": 158750.253355,
+        "Y": 618183.557585,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": "אהבת שלום",
+        "סיווג": "בית כנסת",
+        "כתובת": "אפרים צור",
+        "gush": 1965,
+        "helka": 36,
+        "בעלות": "ר.מ.י",
+        "name": "אהבת שלום"
+      }
+    },
+    "address": "אפרים צור"
+  },
+  {
+    "id": "arcgis:ashkelon::70",
+    "type": "synagogue",
+    "name": "באר חיים",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.654298471680253,
+      "longitude": 34.56441883957197
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:70",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 58,
+        "OBJECTID": 70,
+        "X": 158750.253355,
+        "Y": 618183.557585,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": "באר חיים",
+        "סיווג": "בית כנסת",
+        "כתובת": "הרב מימון",
+        "gush": 1965,
+        "helka": 36,
+        "בעלות": "ר.מ.י",
+        "name": "באר חיים"
+      }
+    },
+    "address": "הרב מימון"
+  },
+  {
+    "id": "arcgis:ashkelon::71",
+    "type": "synagogue",
+    "name": "בני ציון",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.652955793766168,
+      "longitude": 34.56182656190605
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:71",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 59,
+        "OBJECTID": 71,
+        "X": 158475.71881,
+        "Y": 617979.100701,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": "*860",
+        "מוחזק": "בני ציון",
+        "סיווג": "בית כנסת",
+        "כתובת": "קורצ'אק",
+        "gush": 1996,
+        "helka": 51,
+        "בעלות": "עירייה",
+        "name": "בני ציון"
+      }
+    },
+    "address": "קורצ'אק"
+  },
+  {
+    "id": "arcgis:ashkelon::72",
+    "type": "synagogue",
+    "name": "אור ישראל",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.652804462100764,
+      "longitude": 34.56162676250859
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:72",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 60,
+        "OBJECTID": 72,
+        "X": 158475.71881,
+        "Y": 617979.100701,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": "*860",
+        "מוחזק": "ביכ\"נ אור ישראל",
+        "סיווג": "בית כנסת",
+        "כתובת": "קורצ'אק",
+        "gush": 1996,
+        "helka": 51,
+        "בעלות": "עירייה",
+        "name": "אור ישראל"
+      }
+    },
+    "address": "קורצ'אק"
+  },
+  {
+    "id": "arcgis:ashkelon::73",
+    "type": "synagogue",
+    "name": "ספר תיסלית",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.650790669050984,
+      "longitude": 34.55916233072555
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:73",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 61,
+        "OBJECTID": 73,
+        "X": 158285.888417,
+        "Y": 617815.520188,
+        "תיק": 7322,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": "ביכ\"נ ספר תיסלית",
+        "סיווג": "בית כנסת",
+        "כתובת": "תיסלית",
+        "gush": 1997,
+        "helka": 60,
+        "בעלות": "עירייה 19",
+        "name": "ספר תיסלית"
+      }
+    },
+    "address": "תיסלית"
+  },
+  {
+    "id": "arcgis:ashkelon::74",
+    "type": "synagogue",
+    "name": "לזכר המקדש",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.653522796948174,
+      "longitude": 34.557986307558764
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:74",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 62,
+        "OBJECTID": 74,
+        "X": 158176.132201,
+        "Y": 617951.651234,
+        "תיק": 7323,
+        "מגרש": 0,
+        "גודל": "750",
+        "מוחזק": "ביכ\"נ לזכר המקדש",
+        "סיווג": "בית כנסת",
+        "כתובת": "דוד ברגר",
+        "gush": 1997,
+        "helka": 57,
+        "בעלות": "עירייה 19",
+        "name": "לזכר המקדש"
+      }
+    },
+    "address": "דוד ברגר"
+  },
+  {
+    "id": "arcgis:ashkelon::75",
+    "type": "synagogue",
+    "name": "שערי ציון",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65272986931294,
+      "longitude": 34.55799819100859
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:75",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 63,
+        "OBJECTID": 75,
+        "X": 158119.191812,
+        "Y": 618055.014721,
+        "תיק": 7324,
+        "מגרש": 0,
+        "גודל": "585",
+        "מוחזק": "ביכ\"נ שערי ציון",
+        "סיווג": "בית כנסת",
+        "כתובת": "דוד ברגר",
+        "gush": 1998,
+        "helka": 2,
+        "בעלות": "ר.מ.י",
+        "name": "שערי ציון"
+      }
+    },
+    "address": "דוד ברגר"
+  },
+  {
+    "id": "arcgis:ashkelon::76",
+    "type": "synagogue",
+    "name": "אוהל יעקב",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.652905733645014,
+      "longitude": 34.55796359207266
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:76",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 64,
+        "OBJECTID": 76,
+        "X": 158119.191812,
+        "Y": 618055.014721,
+        "תיק": 7325,
+        "מגרש": 0,
+        "גודל": "663",
+        "מוחזק": "ביכ\"נ אוהל יעקב",
+        "סיווג": "בית כנסת",
+        "כתובת": "דוד ברגר",
+        "gush": 1998,
+        "helka": 2,
+        "בעלות": "ר.מ.י",
+        "name": " אוהל יעקב"
+      }
+    },
+    "address": "דוד ברגר"
+  },
+  {
+    "id": "arcgis:ashkelon::77",
+    "type": "synagogue",
+    "name": "אוהל מועד",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65265655086274,
+      "longitude": 34.55765559590804
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:77",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 65,
+        "OBJECTID": 77,
+        "X": 158119.191812,
+        "Y": 618055.014721,
+        "תיק": 7326,
+        "מגרש": 0,
+        "גודל": "1,110",
+        "מוחזק": "ביכ\"נ אוהל מועד",
+        "סיווג": "בית כנסת",
+        "כתובת": "דוד ברגר",
+        "gush": 1998,
+        "helka": 2,
+        "בעלות": "ר.מ.י",
+        "name": " אוהל מועד"
+      }
+    },
+    "address": "דוד ברגר"
+  },
+  {
+    "id": "arcgis:ashkelon::78",
+    "type": "synagogue",
+    "name": "משכן חיים",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.652443208395294,
+      "longitude": 34.55793322845201
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:78",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 66,
+        "OBJECTID": 78,
+        "X": 158119.191812,
+        "Y": 618055.014721,
+        "תיק": 7327,
+        "מגרש": 0,
+        "גודל": "827",
+        "מוחזק": "ביכ\"נ משכן חיים",
+        "סיווג": "בית כנסת",
+        "כתובת": "בוטראשוילי",
+        "gush": 1998,
+        "helka": 2,
+        "בעלות": "ר.מ.י",
+        "name": "משכן חיים"
+      }
+    },
+    "address": "בוטראשוילי"
+  },
+  {
+    "id": "arcgis:ashkelon::79",
+    "type": "synagogue",
+    "name": "לעולי אתיופייה",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65034845575798,
+      "longitude": 34.55613081463356
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:79",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 67,
+        "OBJECTID": 79,
+        "X": 157945.924503,
+        "Y": 617658.650837,
+        "תיק": 7328,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": "ביכ\"נ לעולי אתיופייה",
+        "סיווג": "בית כנסת",
+        "כתובת": "עמיעוז",
+        "gush": 2843,
+        "helka": 14,
+        "בעלות": "עירייה 19",
+        "name": "לעולי אתיופייה"
+      }
+    },
+    "address": "עמיעוז"
+  },
+  {
+    "id": "arcgis:ashkelon::80",
+    "type": "synagogue",
+    "name": "עטרת ציון",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65037702350115,
+      "longitude": 34.55512343223336
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:80",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 68,
+        "OBJECTID": 80,
+        "X": 157867.587233,
+        "Y": 617733.823866,
+        "תיק": 7329,
+        "מגרש": 608,
+        "גודל": "768",
+        "מוחזק": "ביכ\"נ עטרת ציון",
+        "סיווג": "בית כנסת",
+        "כתובת": "קדושי קהיר",
+        "gush": 2843,
+        "helka": 8,
+        "בעלות": "עירייה 19",
+        "name": "עטרת ציון"
+      }
+    },
+    "address": "קדושי קהיר"
+  },
+  {
+    "id": "arcgis:ashkelon::82",
+    "type": "synagogue",
+    "name": "לב אבות",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.650425077507247,
+      "longitude": 34.55466791565961
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:82",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 69,
+        "OBJECTID": 82,
+        "X": 157824.411382,
+        "Y": 617739.409437,
+        "תיק": 7331,
+        "מגרש": 611,
+        "גודל": "1,727",
+        "מוחזק": "ביכ\"נ לב אבות",
+        "סיווג": "בית כנסת",
+        "כתובת": "קדושי קהיר",
+        "gush": 2843,
+        "helka": 5,
+        "בעלות": "עירייה 19",
+        "name": "לב אבות"
+      }
+    },
+    "address": "קדושי קהיר"
+  },
+  {
+    "id": "arcgis:ashkelon::83",
+    "type": "synagogue",
+    "name": "היכל דוד",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.650620078028393,
+      "longitude": 34.5549280357636
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:83",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 70,
+        "OBJECTID": 83,
+        "X": 157849.213396,
+        "Y": 617760.885335,
+        "תיק": 7332,
+        "מגרש": 612,
+        "גודל": "1,527",
+        "מוחזק": "ביכ\"נ היכל דוד",
+        "סיווג": "בית כנסת",
+        "כתובת": "קדושי קהיר",
+        "gush": 2843,
+        "helka": 4,
+        "בעלות": "עירייה 19",
+        "name": "היכל דוד"
+      }
+    },
+    "address": "קדושי קהיר"
+  },
+  {
+    "id": "arcgis:ashkelon::84",
+    "type": "synagogue",
+    "name": "בית יוסף",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.653787379435915,
+      "longitude": 34.553890021848424
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:84",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 71,
+        "OBJECTID": 84,
+        "X": 157740.278813,
+        "Y": 618115.65534,
+        "תיק": 7333,
+        "מגרש": 614,
+        "גודל": "825",
+        "מוחזק": "ביכ\"נ בית יוסף",
+        "סיווג": "בית כנסת",
+        "כתובת": "א. חביב",
+        "gush": 3013,
+        "helka": 21,
+        "בעלות": "עירייה 7,5",
+        "name": " בית יוסף"
+      }
+    },
+    "address": "א. חביב"
+  },
+  {
+    "id": "arcgis:ashkelon::85",
+    "type": "synagogue",
+    "name": "בית לחם יהודה",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65395679672963,
+      "longitude": 34.553773775107665
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:85",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 72,
+        "OBJECTID": 85,
+        "X": 157740.278813,
+        "Y": 618115.65534,
+        "תיק": 7334,
+        "מגרש": 615,
+        "גודל": "830",
+        "מוחזק": "ביכ\"נ בית לחם יהודה",
+        "סיווג": "בית כנסת",
+        "כתובת": "א. חביב",
+        "gush": 3013,
+        "helka": 21,
+        "בעלות": "ר.מ.י",
+        "name": "בית לחם יהודה"
+      }
+    },
+    "address": "א. חביב"
+  },
+  {
+    "id": "arcgis:ashkelon::86",
+    "type": "synagogue",
+    "name": "אם הבנים",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.653229736341952,
+      "longitude": 34.55220190144146
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:86",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 73,
+        "OBJECTID": 86,
+        "X": 157642.959937,
+        "Y": 618053.122438,
+        "תיק": 7335,
+        "מגרש": 913,
+        "גודל": "800",
+        "מוחזק": "ביכ\"נ אם הבנים",
+        "סיווג": "בית כנסת",
+        "כתובת": "עולי הגרדום",
+        "gush": 3013,
+        "helka": 17,
+        "בעלות": "עירייה (5)",
+        "name": "אם הבנים"
+      }
+    },
+    "address": "עולי הגרדום"
+  },
+  {
+    "id": "arcgis:ashkelon::87",
+    "type": "synagogue",
+    "name": "תפילה למשה",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.64915095765569,
+      "longitude": 34.553755149739615
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:87",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 74,
+        "OBJECTID": 87,
+        "X": 157736.990212,
+        "Y": 617598.643834,
+        "תיק": 7336,
+        "מגרש": 0,
+        "גודל": "774",
+        "מוחזק": "ביכ\"נ תפילה למשה",
+        "סיווג": "בית כנסת",
+        "כתובת": "עולי הגרדום",
+        "gush": 3012,
+        "helka": 51,
+        "בעלות": "ר.מ.י",
+        "name": "תפילה למשה"
+      }
+    },
+    "address": "עולי הגרדום"
+  },
+  {
+    "id": "arcgis:ashkelon::88",
+    "type": "synagogue",
+    "name": "הרשב\"י",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65521652672019,
+      "longitude": 34.552601618418144
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:88",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 75,
+        "OBJECTID": 88,
+        "X": 157631.587042,
+        "Y": 618271.879111,
+        "תיק": 7337,
+        "מגרש": 17,
+        "גודל": "784",
+        "מוחזק": "ביכ\"נ הרשב\"י",
+        "סיווג": "בית כנסת",
+        "כתובת": "שפירא",
+        "gush": 3014,
+        "helka": 18,
+        "בעלות": "עירייה 19",
+        "name": " הרשב\"י"
+      }
+    },
+    "address": "שפירא"
+  },
+  {
+    "id": "arcgis:ashkelon::90",
+    "type": "synagogue",
+    "name": "מרכז רוחני תורה ותפילה",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65978642124047,
+      "longitude": 34.554813238139324
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:90",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 76,
+        "OBJECTID": 90,
+        "X": 157844.372066,
+        "Y": 618777.363527,
+        "תיק": 7339,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": "מרכז רוחני תורה ותפילה",
+        "סיווג": "בית כנסת",
+        "כתובת": "שפירא",
+        "gush": 3015,
+        "helka": 13,
+        "בעלות": "עירייה 19",
+        "name": "מרכז רוחני תורה ותפילה"
+      }
+    },
+    "address": "שפירא"
+  },
+  {
+    "id": "arcgis:ashkelon::91",
+    "type": "synagogue",
+    "name": "ברית אברהם אהבת ציון",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.656173735497376,
+      "longitude": 34.5539010007635
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:91",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 77,
+        "OBJECTID": 91,
+        "X": 157755.464482,
+        "Y": 618377.284496,
+        "תיק": 0,
+        "מגרש": 939,
+        "גודל": "480",
+        "מוחזק": "ביכ\"נ ברית אברהם [א. ציון]",
+        "סיווג": "בית כנסת",
+        "כתובת": "משה",
+        "gush": 3020,
+        "helka": 15,
+        "בעלות": "עירייה (5)",
+        "name": "ברית אברהם אהבת ציון"
+      }
+    },
+    "address": "משה"
+  },
+  {
+    "id": "arcgis:ashkelon::92",
+    "type": "synagogue",
+    "name": "בית דוד",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65711905198718,
+      "longitude": 34.556136597829166
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:92",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 78,
+        "OBJECTID": 92,
+        "X": 157968.128838,
+        "Y": 618480.845009,
+        "תיק": 7342,
+        "מגרש": 0,
+        "גודל": "1,726",
+        "מוחזק": "ביכ\"נ בית דוד",
+        "סיווג": "בית כנסת",
+        "כתובת": "ההסתדרות",
+        "gush": 3019,
+        "helka": 51,
+        "בעלות": "ר.מ.י",
+        "name": " בית דוד"
+      }
+    },
+    "address": "ההסתדרות"
+  },
+  {
+    "id": "arcgis:ashkelon::93",
+    "type": "synagogue",
+    "name": "בית אהרון",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.659180835318608,
+      "longitude": 34.55927036111539
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:93",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 79,
+        "OBJECTID": 93,
+        "X": 158338.651813,
+        "Y": 618714.979207,
+        "תיק": 7343,
+        "מגרש": 943,
+        "גודל": " ",
+        "מוחזק": "ביכ\"נ בית אהרון",
+        "סיווג": "בית כנסת",
+        "כתובת": "ש.י. עגנון",
+        "gush": 1929,
+        "helka": 275,
+        "בעלות": "עירייה 19",
+        "name": "בית אהרון"
+      }
+    },
+    "address": "ש.י. עגנון"
+  },
+  {
+    "id": "arcgis:ashkelon::94",
+    "type": "synagogue",
+    "name": "תורת חיים",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65938446404164,
+      "longitude": 34.559091718076594
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:94",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 80,
+        "OBJECTID": 94,
+        "X": 158338.651813,
+        "Y": 618714.979207,
+        "תיק": 7344,
+        "מגרש": 943,
+        "גודל": " ",
+        "מוחזק": "ביכ\"נ תורת חיים",
+        "סיווג": "בית כנסת",
+        "כתובת": "ש.י. עגנון",
+        "gush": 1929,
+        "helka": 275,
+        "בעלות": "עירייה 19",
+        "name": "תורת חיים"
+      }
+    },
+    "address": "ש.י. עגנון"
+  },
+  {
+    "id": "arcgis:ashkelon::97",
+    "type": "synagogue",
+    "name": "נועם יצחק",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.666914565541653,
+      "longitude": 34.567033690410234
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:97",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 81,
+        "OBJECTID": 97,
+        "X": 159008.027347,
+        "Y": 619560.938271,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": "ביכ\"נ נועם יצחק",
+        "סיווג": "בית כנסת",
+        "כתובת": "הקיקיון",
+        "gush": 1942,
+        "helka": 152,
+        "בעלות": "חב' אפרידר",
+        "name": "נועם יצחק"
+      }
+    },
+    "address": "הקיקיון"
+  },
+  {
+    "id": "arcgis:ashkelon::98",
+    "type": "synagogue",
+    "name": "פאר ישראל",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.667395511525143,
+      "longitude": 34.567351214364926
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:98",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 82,
+        "OBJECTID": 98,
+        "X": 159038.451561,
+        "Y": 619643.361258,
+        "תיק": 7402,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": "ביכ\"נ פאר ישראל",
+        "סיווג": "בית כנסת",
+        "כתובת": "הקיקיון",
+        "gush": 1942,
+        "helka": 148,
+        "בעלות": "חב' אפרידר",
+        "name": "פאר ישראל"
+      }
+    },
+    "address": "הקיקיון"
+  },
+  {
+    "id": "arcgis:ashkelon::99",
+    "type": "synagogue",
+    "name": "גיבורי ישראל",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.671348006033806,
+      "longitude": 34.56775635074137
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:99",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 83,
+        "OBJECTID": 99,
+        "X": 159146.119207,
+        "Y": 620127.124896,
+        "תיק": 7403,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": "ביכ\"נ גיבורי ישראל",
+        "סיווג": "בית כנסת",
+        "כתובת": "אורט",
+        "gush": 1932,
+        "helka": 69,
+        "בעלות": "עירייה 19",
+        "name": "גיבורי ישראל"
+      }
+    },
+    "address": "אורט"
+  },
+  {
+    "id": "arcgis:ashkelon::100",
+    "type": "synagogue",
+    "name": "שבות יעקב",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.67162847245481,
+      "longitude": 34.56729826841124
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:100",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 84,
+        "OBJECTID": 100,
+        "X": 159146.119207,
+        "Y": 620127.124896,
+        "תיק": 7404,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": "ביכ\"נ שבות יעקב",
+        "סיווג": "בית כנסת",
+        "כתובת": "אורט",
+        "gush": 1932,
+        "helka": 69,
+        "בעלות": "עירייה 19",
+        "name": "שבות יעקב"
+      }
+    },
+    "address": "אורט"
+  },
+  {
+    "id": "arcgis:ashkelon::101",
+    "type": "synagogue",
+    "name": "תפארת ישראל",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.676556807437567,
+      "longitude": 34.567329470717056
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:101",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 85,
+        "OBJECTID": 101,
+        "X": 159071.424419,
+        "Y": 620632.605472,
+        "תיק": 7406,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": "ביכ\"נ תפארת ישראל",
+        "סיווג": "בית כנסת",
+        "כתובת": "יוהנסבורג",
+        "gush": 1960,
+        "helka": 218,
+        "בעלות": "עירייה",
+        "name": "תפארת ישראל"
+      }
+    },
+    "address": "יוהנסבורג"
+  },
+  {
+    "id": "arcgis:ashkelon::102",
+    "type": "synagogue",
+    "name": "המרכזי",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.677417803327586,
+      "longitude": 34.566877521587585
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:102",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 86,
+        "OBJECTID": 102,
+        "X": 159000.021037,
+        "Y": 620725.682073,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": "ביכ\"נ המרכזי",
+        "סיווג": "בית כנסת",
+        "כתובת": "זונאבנד",
+        "gush": 1959,
+        "helka": 143,
+        "בעלות": "עירייה",
+        "name": "המרכזי"
+      }
+    },
+    "address": "זונאבנד"
+  },
+  {
+    "id": "arcgis:ashkelon::103",
+    "type": "synagogue",
+    "name": "תפארת יוחאי",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.681627026812848,
+      "longitude": 34.566835099809936
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:103",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 87,
+        "OBJECTID": 103,
+        "X": 158982.396906,
+        "Y": 621168.108824,
+        "תיק": 7408,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": "ביכ\"נ תפארת יוחאי",
+        "סיווג": "בית כנסת",
+        "כתובת": "קרייתי",
+        "gush": 2871,
+        "helka": 100,
+        "בעלות": "עירייה 19",
+        "name": "תפארת יוחאי"
+      }
+    },
+    "address": "קרייתי"
+  },
+  {
+    "id": "arcgis:ashkelon::105",
+    "type": "synagogue",
+    "name": "אשכולי פז",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.669811773257962,
+      "longitude": 34.560703198676045
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:105",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 88,
+        "OBJECTID": 105,
+        "X": 158543.833737,
+        "Y": 619517.948665,
+        "תיק": 7411,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": "ביכ\"נ אשכולי פז",
+        "סיווג": "בית כנסת",
+        "כתובת": "הפרדס",
+        "gush": 1942,
+        "helka": 172,
+        "בעלות": "עירייה 19",
+        "name": " אשכולי פז"
+      }
+    },
+    "address": "הפרדס"
+  },
+  {
+    "id": "arcgis:ashkelon::106",
+    "type": "synagogue",
+    "name": "מגן אברהם",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.667447948691926,
+      "longitude": 34.55909052730565
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:106",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 89,
+        "OBJECTID": 106,
+        "X": 158255.071332,
+        "Y": 619624.509476,
+        "תיק": 7412,
+        "מגרש": 61,
+        "גודל": "1,000",
+        "מוחזק": "ביכ\"נ מגן אברהם",
+        "סיווג": "בית כנסת",
+        "כתובת": "אשתאול",
+        "gush": 2869,
+        "helka": 36,
+        "בעלות": "עירייה 19",
+        "name": "מגן אברהם"
+      }
+    },
+    "address": "אשתאול"
+  },
+  {
+    "id": "arcgis:ashkelon::107",
+    "type": "synagogue",
+    "name": "סוד השבת",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.668689925842468,
+      "longitude": 34.55818513251997
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:107",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 90,
+        "OBJECTID": 107,
+        "X": 158170.022309,
+        "Y": 619762.734853,
+        "תיק": 7413,
+        "מגרש": 62,
+        "גודל": "590",
+        "מוחזק": "ביכ\"נ סוד השבת",
+        "סיווג": "בית כנסת",
+        "כתובת": "גבע",
+        "gush": 2869,
+        "helka": 24,
+        "בעלות": "עירייה 19",
+        "name": "סוד השבת"
+      }
+    },
+    "address": "גבע"
+  },
+  {
+    "id": "arcgis:ashkelon::110",
+    "type": "synagogue",
+    "name": "ישמח משה",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.684246194707587,
+      "longitude": 34.56806955154881
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:110",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 91,
+        "OBJECTID": 110,
+        "X": 159179.650356,
+        "Y": 621446.47431,
+        "תיק": 7601,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": "ביכ\"נ ישמח משה",
+        "סיווג": "בית כנסת",
+        "כתובת": "בר כוכבא",
+        "gush": 1933,
+        "helka": 72,
+        "בעלות": "עירייה",
+        "name": "ישמח משה"
+      }
+    },
+    "address": "בר כוכבא"
+  },
+  {
+    "id": "arcgis:ashkelon::111",
+    "type": "synagogue",
+    "name": "מרכזי ברנע",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.68250612502011,
+      "longitude": 34.57190083760029
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:111",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 92,
+        "OBJECTID": 111,
+        "X": 159535.061067,
+        "Y": 621102.037271,
+        "תיק": 7602,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": "ביכ\"נ מרכזי + גן",
+        "סיווג": "בית כנסת",
+        "כתובת": "יפתח הגלעדי",
+        "gush": 1933,
+        "helka": 76,
+        "בעלות": "עירייה",
+        "name": "מרכזי ברנע"
+      }
+    },
+    "address": "יפתח הגלעדי"
+  },
+  {
+    "id": "arcgis:ashkelon::112",
+    "type": "synagogue",
+    "name": "משכן ברנע",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.684896834871974,
+      "longitude": 34.5707059379888
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:112",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 93,
+        "OBJECTID": 112,
+        "X": 159361.402658,
+        "Y": 621564.284099,
+        "תיק": 7603,
+        "מגרש": 0,
+        "גודל": "2,142",
+        "מוחזק": "ביכ\"נ קדש ברנע",
+        "סיווג": "בית כנסת",
+        "כתובת": "עתניאל",
+        "gush": 1937,
+        "helka": 378,
+        "בעלות": "ר.מ.י",
+        "name": "משכן ברנע"
+      }
+    },
+    "address": "עתניאל"
+  },
+  {
+    "id": "arcgis:ashkelon::113",
+    "type": "synagogue",
+    "name": "פורת יוסף",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.689298870631422,
+      "longitude": 34.57201216010503
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:113",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 94,
+        "OBJECTID": 113,
+        "X": 159509.961592,
+        "Y": 622027.656962,
+        "תיק": 7604,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": "ביכ\"נ פורת יוסף",
+        "סיווג": "בית כנסת",
+        "כתובת": "איילון",
+        "gush": 1937,
+        "helka": 374,
+        "בעלות": "חב' אפרידר",
+        "name": "פורת יוסף"
+      }
+    },
+    "address": "איילון"
+  },
+  {
+    "id": "arcgis:ashkelon::114",
+    "type": "synagogue",
+    "name": "תורת משה",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.680707293208986,
+      "longitude": 34.57555566895169
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:114",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 95,
+        "OBJECTID": 114,
+        "X": 159825.039601,
+        "Y": 621085.663387,
+        "תיק": 7605,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": "ביכ\"נ תורת משה",
+        "סיווג": "בית כנסת",
+        "כתובת": "ברנשטיין",
+        "gush": 2878,
+        "helka": 71,
+        "בעלות": "עירייה(מכר)",
+        "name": "תורת משה"
+      }
+    },
+    "address": "ברנשטיין"
+  },
+  {
+    "id": "arcgis:ashkelon::115",
+    "type": "synagogue",
+    "name": "יד מיכאל",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.6846154665586,
+      "longitude": 34.57763870752611
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:115",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 96,
+        "OBJECTID": 115,
+        "X": 160025.049061,
+        "Y": 621517.886996,
+        "תיק": 7606,
+        "מגרש": 529,
+        "גודל": "1,348",
+        "מוחזק": "ביכ\"נ יד מיכאל",
+        "סיווג": "בית כנסת",
+        "כתובת": "משה שרת",
+        "gush": 1934,
+        "helka": 111,
+        "בעלות": "עירייה 19",
+        "name": "יד מיכאל"
+      }
+    },
+    "address": "משה שרת"
+  },
+  {
+    "id": "arcgis:ashkelon::116",
+    "type": "synagogue",
+    "name": "פנינת אפרידר",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.6786681389171,
+      "longitude": 34.57832372587782
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:116",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 97,
+        "OBJECTID": 116,
+        "X": 159997.105255,
+        "Y": 620808.087632,
+        "תיק": 7607,
+        "מגרש": 0,
+        "גודל": "700***",
+        "מוחזק": "ביכ\"נ פנינת אפרידר",
+        "סיווג": "בית כנסת",
+        "כתובת": "המציל היהודי",
+        "gush": 1240,
+        "helka": 20,
+        "בעלות": "עירייה 19",
+        "name": "פנינת אפרידר"
+      }
+    },
+    "address": "המציל היהודי"
+  },
+  {
+    "id": "arcgis:ashkelon::117",
+    "type": "synagogue",
+    "name": "משכן אריאל",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.687550381233912,
+      "longitude": 34.57606372113685
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:117",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 98,
+        "OBJECTID": 117,
+        "X": 159888.676679,
+        "Y": 621861.131389,
+        "תיק": 7608,
+        "מגרש": 0,
+        "גודל": "700",
+        "מוחזק": "ביכ\"נ משכן אריאל",
+        "סיווג": "בית כנסת",
+        "כתובת": "בלפור",
+        "gush": 2556,
+        "helka": 28,
+        "בעלות": "עירייה 19",
+        "name": "משכן אריאל"
+      }
+    },
+    "address": "בלפור"
+  },
+  {
+    "id": "arcgis:ashkelon::118",
+    "type": "synagogue",
+    "name": "שובה ישראל",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.68873993245403,
+      "longitude": 34.57983488314023
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:118",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 99,
+        "OBJECTID": 118,
+        "X": 160273.94061,
+        "Y": 622025.630719,
+        "תיק": 0,
+        "מגרש": 908,
+        "גודל": "531",
+        "מוחזק": "(ביכ\"נ שובה ישראל)",
+        "סיווג": "בית כנסת",
+        "כתובת": "בלפור",
+        "gush": 2557,
+        "helka": 54,
+        "בעלות": "עירייה 19",
+        "name": "שובה ישראל"
+      }
+    },
+    "address": "בלפור"
+  },
+  {
+    "id": "arcgis:ashkelon::119",
+    "type": "synagogue",
+    "name": "משכן חיה",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.687535579091428,
+      "longitude": 34.579588182939766
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:119",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 100,
+        "OBJECTID": 119,
+        "X": 160284.180676,
+        "Y": 621762.573047,
+        "תיק": 7610,
+        "מגרש": 0,
+        "גודל": "700",
+        "מוחזק": "ביכ\"נ משכן חיה",
+        "סיווג": "בית כנסת",
+        "כתובת": "הציונות",
+        "gush": 2557,
+        "helka": 59,
+        "בעלות": "עירייה 19",
+        "name": "משכן חיה"
+      }
+    },
+    "address": "הציונות"
+  },
+  {
+    "id": "arcgis:ashkelon::120",
+    "type": "synagogue",
+    "name": "תפארת ראובן",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.68694083450358,
+      "longitude": 34.579951441134085
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:120",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 101,
+        "OBJECTID": 120,
+        "X": 160284.180676,
+        "Y": 621762.573047,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": "854",
+        "מוחזק": "(ביכ\"נ תפארת ראובן)",
+        "סיווג": "בית כנסת",
+        "כתובת": "הציונות",
+        "gush": 2557,
+        "helka": 59,
+        "בעלות": "עירייה 19",
+        "name": "תפארת ראובן"
+      }
+    },
+    "address": "הציונות"
+  },
+  {
+    "id": "arcgis:ashkelon::122",
+    "type": "synagogue",
+    "name": "גאולת ישראל",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.694058617042266,
+      "longitude": 34.57994163228632
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:122",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 102,
+        "OBJECTID": 122,
+        "X": 160249.404892,
+        "Y": 622563.74519,
+        "תיק": 7613,
+        "מגרש": 805,
+        "גודל": "730",
+        "מוחזק": "(ביכ\"נ גאולת ישראל)",
+        "סיווג": "בית כנסת",
+        "כתובת": "תירוש",
+        "gush": 2753,
+        "helka": 122,
+        "בעלות": "עירייה 19",
+        "name": "גאולת ישראל"
+      }
+    },
+    "address": "תירוש"
+  },
+  {
+    "id": "arcgis:ashkelon::123",
+    "type": "synagogue",
+    "name": "אל רייאבה",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.69226146047406,
+      "longitude": 34.579216253708964
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:123",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 103,
+        "OBJECTID": 123,
+        "X": 160089.200711,
+        "Y": 622311.943289,
+        "תיק": 7614,
+        "מגרש": 813,
+        "גודל": "1,080",
+        "מוחזק": "ביכ\"נ אל רייאבה",
+        "סיווג": "בית כנסת",
+        "כתובת": "מעלה הגת",
+        "gush": 2753,
+        "helka": 148,
+        "בעלות": "עירייה 19",
+        "name": "אל רייאבה"
+      }
+    },
+    "address": "מעלה הגת"
+  },
+  {
+    "id": "arcgis:ashkelon::247",
+    "type": "synagogue",
+    "name": "אבוחצירה",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65474783601173,
+      "longitude": 34.5643724124066
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:247",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 104,
+        "OBJECTID": 247,
+        "X": 158747.729411,
+        "Y": 618213.302902,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": "בית כנסת",
+        "כתובת": "אפרים צור",
+        "gush": 1965,
+        "helka": 36,
+        "בעלות": "ר.מ.י",
+        "name": "אבוחצירה"
+      }
+    },
+    "address": "אפרים צור"
+  },
+  {
+    "id": "arcgis:ashkelon::248",
+    "type": "synagogue",
+    "name": "אגודת אחים",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.655524543764894,
+      "longitude": 34.56509336274071
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:248",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 105,
+        "OBJECTID": 248,
+        "X": 158816.615371,
+        "Y": 618299.027652,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "אגודת אחים"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::250",
+    "type": "synagogue",
+    "name": "אהבת אחים",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.686826789064188,
+      "longitude": 34.58121336558209
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:250",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 106,
+        "OBJECTID": 250,
+        "X": 160365.394983,
+        "Y": 621761.148967,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "אהבת אחים"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::254",
+    "type": "synagogue",
+    "name": "אהל ברוך",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65871703286325,
+      "longitude": 34.56648859076023
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:254",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 107,
+        "OBJECTID": 254,
+        "X": 158951.019324,
+        "Y": 618652.25369,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "אהל ברוך"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::255",
+    "type": "synagogue",
+    "name": "אהלי משה צלאת אל חורי",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.658744286762243,
+      "longitude": 34.5612369840011
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:255",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 108,
+        "OBJECTID": 255,
+        "X": 158452.946802,
+        "Y": 618658.198401,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "אהלי משה צלאת אל חורי"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::258",
+    "type": "synagogue",
+    "name": "אוהל יוסף",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.66255892438896,
+      "longitude": 34.566594696539596
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:258",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 109,
+        "OBJECTID": 258,
+        "X": 158963.572085,
+        "Y": 619078.204396,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "אוהל יוסף"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::267",
+    "type": "synagogue",
+    "name": "אמא שואבה",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.668174865746813,
+      "longitude": 34.591236812753834
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:267",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 110,
+        "OBJECTID": 267,
+        "X": 161304.160584,
+        "Y": 619687.536731,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "אמא שואבה"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::268",
+    "type": "synagogue",
+    "name": "אמנואל",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.666815672501752,
+      "longitude": 34.58961443802137
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:268",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 111,
+        "OBJECTID": 268,
+        "X": 161149.45287,
+        "Y": 619537.687801,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "אמנואל"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::272",
+    "type": "synagogue",
+    "name": "בית דוד ע'ש צדיק",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65803471571078,
+      "longitude": 34.56125300538591
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:272",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 112,
+        "OBJECTID": 272,
+        "X": 158454.002788,
+        "Y": 618579.50844,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "בית דוד ע'ש צדיק"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::273",
+    "type": "synagogue",
+    "name": "בית הלוי",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65882505129853,
+      "longitude": 34.562552929405406
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:273",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 113,
+        "OBJECTID": 273,
+        "X": 158577.810711,
+        "Y": 618666.419437,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "בית הלוי"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::274",
+    "type": "synagogue",
+    "name": "בית הלוי",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65674051992694,
+      "longitude": 34.557562880156816
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:274",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 114,
+        "OBJECTID": 274,
+        "X": 158103.158746,
+        "Y": 618438.068865,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "בית הלוי"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::277",
+    "type": "synagogue",
+    "name": "בית ישראל",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.658518723198437,
+      "longitude": 34.56478217036445
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:277",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 115,
+        "OBJECTID": 277,
+        "X": 158789.044506,
+        "Y": 618631.211057,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "בית ישראל"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::279",
+    "type": "synagogue",
+    "name": "בית פנחס",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65572660970037,
+      "longitude": 34.56118048321457
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:279",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 116,
+        "OBJECTID": 279,
+        "X": 158429.287371,
+        "Y": 618313.75478,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "בית פנחס"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::283",
+    "type": "synagogue",
+    "name": "ברית שלום",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.675434882331935,
+      "longitude": 34.58191829781416
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:283",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 117,
+        "OBJECTID": 283,
+        "X": 160425.02656,
+        "Y": 620497.569421,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "ברית שלום"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::284",
+    "type": "synagogue",
+    "name": "בת אל",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.665257392256535,
+      "longitude": 34.58555924649489
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:284",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 118,
+        "OBJECTID": 284,
+        "X": 160763.891381,
+        "Y": 619367.070976,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "בת אל"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::286",
+    "type": "synagogue",
+    "name": "דוד המלך",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65486526697645,
+      "longitude": 34.56665466178953
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:286",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 119,
+        "OBJECTID": 286,
+        "X": 158949.794893,
+        "Y": 618254.634478,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "דוד המלך"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::290",
+    "type": "synagogue",
+    "name": "הספרדי",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.654553243324205,
+      "longitude": 34.56614531192654
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:290",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 120,
+        "OBJECTID": 290,
+        "X": 158903.437769,
+        "Y": 618201.832378,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "הספרדי"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::298",
+    "type": "synagogue",
+    "name": "חבד",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.68303716321841,
+      "longitude": 34.57189325894008
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:298",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 121,
+        "OBJECTID": 298,
+        "X": 159480.527209,
+        "Y": 621277.281334,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "חבד"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::299",
+    "type": "synagogue",
+    "name": "חבד",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.674019626480398,
+      "longitude": 34.56258818507824
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:299",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 122,
+        "OBJECTID": 299,
+        "X": 158640.010645,
+        "Y": 620238.544888,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "חבד"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::300",
+    "type": "synagogue",
+    "name": "חבד",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.67802465030855,
+      "longitude": 34.5869506332583
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:300",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 123,
+        "OBJECTID": 300,
+        "X": 160903.858754,
+        "Y": 620782.02546,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "חבד"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::303",
+    "type": "synagogue",
+    "name": "יד עמוס",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.671850441402444,
+      "longitude": 34.567467068068844
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:303",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 124,
+        "OBJECTID": 303,
+        "X": 159059.876541,
+        "Y": 620101.109074,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "יד עמוס"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::305",
+    "type": "synagogue",
+    "name": "ישורון",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.666563826360914,
+      "longitude": 34.58937503399328
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:305",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 125,
+        "OBJECTID": 305,
+        "X": 161126.591219,
+        "Y": 619509.889743,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "ישורון"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::306",
+    "type": "synagogue",
+    "name": "ישיבת אשקלון",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.669229505594757,
+      "longitude": 34.56749503742572
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:306",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 126,
+        "OBJECTID": 306,
+        "X": 159053.278099,
+        "Y": 619817.376074,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "ישיבת אשקלון"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::308",
+    "type": "synagogue",
+    "name": "ישני חברון",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.654108762672713,
+      "longitude": 34.58311437132151
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:308",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 127,
+        "OBJECTID": 308,
+        "X": 160524.987171,
+        "Y": 618132.170549,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "ישני חברון"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::310",
+    "type": "synagogue",
+    "name": "הרב שלום שבזי",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.66165292641288,
+      "longitude": 34.56773193503859
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:310",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 128,
+        "OBJECTID": 310,
+        "X": 159070.84341,
+        "Y": 618977.112766,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "הרב שלום שבזי"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::317",
+    "type": "synagogue",
+    "name": "מרכז רוחני דגל מחנה ראובן",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.6622341929358,
+      "longitude": 34.58267119401585
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:317",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 129,
+        "OBJECTID": 317,
+        "X": 160488.083272,
+        "Y": 619033.39942,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "מרכז רוחני דגל מחנה ראובן"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::321",
+    "type": "synagogue",
+    "name": "משכן בכור",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.676548895173134,
+      "longitude": 34.56192663128194
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:321",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 130,
+        "OBJECTID": 321,
+        "X": 158529.97898,
+        "Y": 620632.086512,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "משכן בכור"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::324",
+    "type": "synagogue",
+    "name": "משכן יעקוב",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.678607626715145,
+      "longitude": 34.575522613189484
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:324",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 131,
+        "OBJECTID": 324,
+        "X": 159898.827003,
+        "Y": 620904.293844,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "משכן יעקוב"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::330",
+    "type": "synagogue",
+    "name": "נצח ישראל",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.681763082185277,
+      "longitude": 34.566000330711525
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:330",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 132,
+        "OBJECTID": 330,
+        "X": 158919.659652,
+        "Y": 621207.997695,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "נצח ישראל"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::334",
+    "type": "synagogue",
+    "name": "נתיב שמואל",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.6563132980235,
+      "longitude": 34.551821267720236
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:334",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 133,
+        "OBJECTID": 334,
+        "X": 157558.298507,
+        "Y": 618393.937196,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "נתיב שמואל"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::337",
+    "type": "synagogue",
+    "name": "עוזר יוסף",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.660945230187096,
+      "longitude": 34.564582996408696
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:337",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 134,
+        "OBJECTID": 337,
+        "X": 158767.6298,
+        "Y": 618925.124485,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "עוזר יוסף"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::341",
+    "type": "synagogue",
+    "name": "עטרת ראובן",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65868637362838,
+      "longitude": 34.562230729289915
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:341",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 135,
+        "OBJECTID": 341,
+        "X": 158547.161109,
+        "Y": 618651.221753,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "עטרת ראובן"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::347",
+    "type": "synagogue",
+    "name": "פולני",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.662535098628695,
+      "longitude": 34.587531964931244
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:347",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 136,
+        "OBJECTID": 347,
+        "X": 160949.274985,
+        "Y": 619064.149795,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "פולני"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::350",
+    "type": "synagogue",
+    "name": "קורבנות השואה",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65851767238697,
+      "longitude": 34.56457253242986
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:350",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 137,
+        "OBJECTID": 350,
+        "X": 158769.160599,
+        "Y": 618631.211057,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "קורבנות השואה"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::351",
+    "type": "synagogue",
+    "name": "רבי מאיר בעל הנס",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65018475649551,
+      "longitude": 34.55472059732281
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:351",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 138,
+        "OBJECTID": 351,
+        "X": 157829.249949,
+        "Y": 617712.731595,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "רבי מאיר בעל הנס"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::356",
+    "type": "synagogue",
+    "name": "שבנו ציון",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.653371103986046,
+      "longitude": 34.58804826752548
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:356",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 139,
+        "OBJECTID": 356,
+        "X": 160992.504637,
+        "Y": 618047.722707,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "שבנו ציון"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::365",
+    "type": "synagogue",
+    "name": "תפארת יוסף",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.66101690989713,
+      "longitude": 34.5680685900085
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:365",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 140,
+        "OBJECTID": 365,
+        "X": 159102.361384,
+        "Y": 618906.40168,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "תפארת יוסף"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::367",
+    "type": "synagogue",
+    "name": "תפילה למשה",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.666918732852256,
+      "longitude": 34.591406513358194
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:367",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 141,
+        "OBJECTID": 367,
+        "X": 161319.471906,
+        "Y": 619548.159721,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "תפילה למשה"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::370",
+    "type": "synagogue",
+    "name": "בית אבות הלפרין",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.654434160978028,
+      "longitude": 34.551187330658024
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:370",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 142,
+        "OBJECTID": 370,
+        "X": 157570.372713,
+        "Y": 618185.5046,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "בית אבות הלפרין"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::371",
+    "type": "synagogue",
+    "name": "אור הזוהר",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.676118638680983,
+      "longitude": 34.58193334779904
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:371",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 143,
+        "OBJECTID": 371,
+        "X": 160425.14009,
+        "Y": 620498.132236,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "אור הזוהר"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::372",
+    "type": "synagogue",
+    "name": "אמרי בנימין",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.676216785912327,
+      "longitude": 34.58238972243956
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:372",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 144,
+        "OBJECTID": 372,
+        "X": 160425.14009,
+        "Y": 620498.132236,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "אמרי בנימין"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::390",
+    "type": "synagogue",
+    "name": "נשמת העליה",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.659991497748784,
+      "longitude": 34.570074766166826
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:390",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 145,
+        "OBJECTID": 390,
+        "X": 159259.93222,
+        "Y": 618719.060339,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "נשמת העליה"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::391",
+    "type": "synagogue",
+    "name": "מיכאל הקטן",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.652650690304455,
+      "longitude": 34.55667041996992
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:391",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 146,
+        "OBJECTID": 391,
+        "X": 158015.820622,
+        "Y": 617985.068618,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "מיכאל הקטן"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::392",
+    "type": "synagogue",
+    "name": "שערי תימן",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.651929437852278,
+      "longitude": 34.57813704320066
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:392",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 147,
+        "OBJECTID": 392,
+        "X": 159988.221363,
+        "Y": 617904.613046,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "שערי תימן"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::399",
+    "type": "synagogue",
+    "name": "קרן בנימין",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.66304121597848,
+      "longitude": 34.578717309369566
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:399",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 148,
+        "OBJECTID": 399,
+        "X": 160118.048501,
+        "Y": 619048.193928,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "קרן בנימין"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::401",
+    "type": "synagogue",
+    "name": "שובה ישראל",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.66786487024334,
+      "longitude": 34.563730350233214
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:401",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 149,
+        "OBJECTID": 401,
+        "X": 158725.529693,
+        "Y": 619622.586291,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "שובה ישראל"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::403",
+    "type": "synagogue",
+    "name": "עטרת ראובן גמליאל",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.679935733321827,
+      "longitude": 34.58304125332988
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:403",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 150,
+        "OBJECTID": 403,
+        "X": 160544.940096,
+        "Y": 621082.401668,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "עטרת ראובן גמליאל"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::404",
+    "type": "synagogue",
+    "name": "בית אליהו",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.674245832608523,
+      "longitude": 34.558276098069044
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:404",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 151,
+        "OBJECTID": 404,
+        "X": 158206.426847,
+        "Y": 620402.672375,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "בית אליהו"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::405",
+    "type": "synagogue",
+    "name": "רבי חי טייב",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.668169169621677,
+      "longitude": 34.58451047870861
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:405",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 152,
+        "OBJECTID": 405,
+        "X": 160690.909178,
+        "Y": 619699.751496,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "רבי חי טייב"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::406",
+    "type": "synagogue",
+    "name": "שערי ישועה",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.668253783780365,
+      "longitude": 34.584769814282026
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:406",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 153,
+        "OBJECTID": 406,
+        "X": 160690.909178,
+        "Y": 619699.751496,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "שערי ישועה"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::408",
+    "type": "synagogue",
+    "name": "אביר יעקב",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.6593604653972,
+      "longitude": 34.57580690671977
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:408",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 154,
+        "OBJECTID": 408,
+        "X": 159835.228249,
+        "Y": 618725.7501,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "אביר יעקב"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::409",
+    "type": "synagogue",
+    "name": "תפילת ראובן",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.66583171233679,
+      "longitude": 34.5628493291013
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:409",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 155,
+        "OBJECTID": 409,
+        "X": 158609.520743,
+        "Y": 619428.667585,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "תפילת ראובן"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::410",
+    "type": "synagogue",
+    "name": "עץ החיים",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.67229555778813,
+      "longitude": 34.58878163153752
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:410",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 156,
+        "OBJECTID": 410,
+        "X": 161036.312352,
+        "Y": 620105.411366,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "עץ החיים"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::411",
+    "type": "synagogue",
+    "name": "אמת לדוד",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.654114777257664,
+      "longitude": 34.55485000312889
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:411",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 157,
+        "OBJECTID": 411,
+        "X": 157844.11712,
+        "Y": 618148.44021,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "אמת לדוד"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::412",
+    "type": "synagogue",
+    "name": "אוהל יצחק ומשה",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.666859666204555,
+      "longitude": 34.5874005317074
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:412",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 158,
+        "OBJECTID": 412,
+        "X": 160905.574349,
+        "Y": 619572.325974,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "אוהל יצחק ומשה"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::413",
+    "type": "synagogue",
+    "name": "שערי נצחון",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.666093259148184,
+      "longitude": 34.58510922235893
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:413",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 159,
+        "OBJECTID": 413,
+        "X": 160718.761134,
+        "Y": 619478.850044,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "שערי נצחון"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::414",
+    "type": "synagogue",
+    "name": "אוהל יעקב ויצחק",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.666831097725076,
+      "longitude": 34.587512594747295
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:414",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 160,
+        "OBJECTID": 414,
+        "X": 160905.574349,
+        "Y": 619572.325974,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "אוהל יעקב ויצחק"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::415",
+    "type": "synagogue",
+    "name": "מקדש מלך",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.654885307430717,
+      "longitude": 34.55148846926196
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:415",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 161,
+        "OBJECTID": 415,
+        "X": 157425.244454,
+        "Y": 618136.894352,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "מקדש מלך"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::416",
+    "type": "synagogue",
+    "name": "תפארת ישראל",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.663216464997397,
+      "longitude": 34.58569168060897
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:416",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 162,
+        "OBJECTID": 416,
+        "X": 160698.968219,
+        "Y": 619076.727902,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": " תפארת ישראל"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::418",
+    "type": "synagogue",
+    "name": "משכן בוקובזה",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.686812160114087,
+      "longitude": 34.580432739453684
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:418",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 163,
+        "OBJECTID": 418,
+        "X": 160289.385024,
+        "Y": 621734.483785,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "משכן בוקובזה"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::421",
+    "type": "synagogue",
+    "name": "בני עקיבה",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.671690586387523,
+      "longitude": 34.56630879224167
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:421",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 164,
+        "OBJECTID": 421,
+        "X": 158942.376682,
+        "Y": 620090.931525,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "בני עקיבה"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::424",
+    "type": "synagogue",
+    "name": "רשבי",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.649592790853273,
+      "longitude": 34.58239655553723
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:424",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 165,
+        "OBJECTID": 424,
+        "X": 160441.417903,
+        "Y": 617642.587702,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "רשבי"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::425",
+    "type": "synagogue",
+    "name": "נווה שלום",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65960448383958,
+      "longitude": 34.58623344550012
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:425",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 166,
+        "OBJECTID": 425,
+        "X": 160819.352019,
+        "Y": 618740.809106,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "נווה שלום"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::426",
+    "type": "synagogue",
+    "name": "מגן דוד",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.690816908412646,
+      "longitude": 34.5743163862431
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:426",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 167,
+        "OBJECTID": 426,
+        "X": 159655.159101,
+        "Y": 622162.215277,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "מגן דוד"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::429",
+    "type": "synagogue",
+    "name": "אבן ספיר",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.653338679149307,
+      "longitude": 34.588053443003744
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:429",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 168,
+        "OBJECTID": 429,
+        "X": 161005.040228,
+        "Y": 618070.159566,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "אבן ספיר"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::431",
+    "type": "synagogue",
+    "name": "טולדנו",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.658426235244715,
+      "longitude": 34.56466637153155
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:431",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 169,
+        "OBJECTID": 431,
+        "X": 158802.978154,
+        "Y": 618599.006493,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "טולדנו"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::434",
+    "type": "synagogue",
+    "name": "בני ציון עולי אירן",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65118788765971,
+      "longitude": 34.55742541396262
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:434",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 170,
+        "OBJECTID": 434,
+        "X": 158086.471842,
+        "Y": 617822.440653,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "בני ציון עולי אירן"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::436",
+    "type": "synagogue",
+    "name": "תפילת חנה",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.650043284644816,
+      "longitude": 34.578342130916866
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:436",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 171,
+        "OBJECTID": 436,
+        "X": 160069.755965,
+        "Y": 617683.955253,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "תפילת חנה"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::438",
+    "type": "synagogue",
+    "name": "בית חנניה",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.67154642870153,
+      "longitude": 34.56497515828561
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:438",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 172,
+        "OBJECTID": 438,
+        "X": 158758.132425,
+        "Y": 620124.899425,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "בית חנניה"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::440",
+    "type": "synagogue",
+    "name": "אגודת חב\"ד",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.6935602247587,
+      "longitude": 34.582338596014694
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:440",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 173,
+        "OBJECTID": 440,
+        "X": 160461.527297,
+        "Y": 622478.395054,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "אגודת חב\"ד"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::441",
+    "type": "synagogue",
+    "name": "חבד ברנע",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.687463838138033,
+      "longitude": 34.57908492667822
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:441",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 174,
+        "OBJECTID": 441,
+        "X": 160192.563699,
+        "Y": 621889.564506,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "חבד ברנע"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::443",
+    "type": "synagogue",
+    "name": "בית יעקב לעולי טורקיה",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.667833931995034,
+      "longitude": 34.59178710795757
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:443",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 175,
+        "OBJECTID": 443,
+        "X": 161356.1359,
+        "Y": 619649.439134,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "בית יעקב לעולי טורקיה"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::446",
+    "type": "synagogue",
+    "name": "נר ישראל אשקלון",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.669904748174808,
+      "longitude": 34.578101825612045
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:446",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 176,
+        "OBJECTID": 446,
+        "X": 160131.432444,
+        "Y": 620089.629407,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "נר ישראל אשקלון"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::448",
+    "type": "synagogue",
+    "name": "תרומה מהכלל",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.660403598057982,
+      "longitude": 34.55816494590311
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:448",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 177,
+        "OBJECTID": 448,
+        "X": 158207.977561,
+        "Y": 618706.990445,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "תרומה מהכלל"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::450",
+    "type": "synagogue",
+    "name": "עטרת ציון",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.653114256862626,
+      "longitude": 34.552604629396996
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:450",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 178,
+        "OBJECTID": 450,
+        "X": 157606.800649,
+        "Y": 617835.830562,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "עטרת ציון"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::452",
+    "type": "synagogue",
+    "name": "מקלט_בית מדרש ובית כנסת",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65660743244835,
+      "longitude": 34.56280524066072
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:452",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 179,
+        "OBJECTID": 452,
+        "X": 158601.142652,
+        "Y": 618382.700509,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "מקלט_בית מדרש ובית כנסת"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::453",
+    "type": "synagogue",
+    "name": "באר חיים",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.654498651718036,
+      "longitude": 34.56351411234751
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:453",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 180,
+        "OBJECTID": 453,
+        "X": 158659.379934,
+        "Y": 618164.582978,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "באר חיים"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::454",
+    "type": "synagogue",
+    "name": "בית כנסת",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.698764208238025,
+      "longitude": 34.583328274722874
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:454",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 181,
+        "OBJECTID": 454,
+        "X": 160488.119716,
+        "Y": 622974.937727,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "בית כנסת"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::458",
+    "type": "synagogue",
+    "name": "בית אחיעזר",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.658775477829746,
+      "longitude": 34.557682835318346
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:458",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 182,
+        "OBJECTID": 458,
+        "X": 158243.865313,
+        "Y": 618727.479469,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "בית אחיעזר"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::459",
+    "type": "synagogue",
+    "name": "תפארת באבאי",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.658515093486816,
+      "longitude": 34.57899408131668
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:459",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 183,
+        "OBJECTID": 459,
+        "X": 160136.977348,
+        "Y": 618622.998481,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "תפארת באבאי"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::460",
+    "type": "synagogue",
+    "name": "אהבת תורה",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.66123987295302,
+      "longitude": 34.56367609416123
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:460",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 184,
+        "OBJECTID": 460,
+        "X": 158685.909202,
+        "Y": 618933.561974,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "אהבת תורה"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::461",
+    "type": "synagogue",
+    "name": "עזרא הסופר",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65961441566528,
+      "longitude": 34.56427230381717
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:461",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 185,
+        "OBJECTID": 461,
+        "X": 158702.107715,
+        "Y": 618769.659558,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "עזרא הסופר"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::462",
+    "type": "synagogue",
+    "name": "ר' יצחק בן ואליד",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.652783581179005,
+      "longitude": 34.56391844758931
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:462",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 186,
+        "OBJECTID": 462,
+        "X": 158703.393377,
+        "Y": 617995.748455,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "ר' יצחק בן ואליד"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::463",
+    "type": "synagogue",
+    "name": "ר' מאיר בעל הנס",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.655680652810535,
+      "longitude": 34.5507084977869
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:463",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 187,
+        "OBJECTID": 463,
+        "X": 157460.213318,
+        "Y": 618184.594661,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "ר' מאיר בעל הנס"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::464",
+    "type": "synagogue",
+    "name": "צדיקי ספי",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.653628599250315,
+      "longitude": 34.55337937761997
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:464",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 188,
+        "OBJECTID": 464,
+        "X": 157549.128235,
+        "Y": 618101.711039,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "צדיקי ספי"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::465",
+    "type": "synagogue",
+    "name": "בית אברהם",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65825530894315,
+      "longitude": 34.55451215585159
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:465",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 189,
+        "OBJECTID": 465,
+        "X": 157753.845265,
+        "Y": 618651.358839,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "בית אברהם"
+      }
+    }
+  },
+  {
+    "id": "arcgis:ashkelon::466",
+    "type": "synagogue",
+    "name": "בית אל",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.657001791808938,
+      "longitude": 34.55466966479554
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:ashkelon",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:ashkelon:466",
+      "sourceUrl": "https://services2.arcgis.com/5gNmRQS5QY72VLq4/arcgis/rest/services/synagogue/FeatureServer/0",
+      "fetchedAt": "2026-06-19T15:48:51.983Z",
+      "raw": {
+        "FID": 190,
+        "OBJECTID": 466,
+        "X": 157758.008751,
+        "Y": 618540.848201,
+        "תיק": 0,
+        "מגרש": 0,
+        "גודל": " ",
+        "מוחזק": " ",
+        "סיווג": " ",
+        "כתובת": " ",
+        "gush": 0,
+        "helka": 0,
+        "בעלות": " ",
+        "name": "בית אל"
+      }
+    }
+  }
+]

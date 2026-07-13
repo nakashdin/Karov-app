@@ -1,0 +1,226 @@
+[
+  {
+    "id": "mikveh-tel-aviv-32.11080_34.81669",
+    "name": "מקווה הדר יוסף",
+    "type": "mikveh",
+    "cityId": "תל אביב יפו",
+    "address": "מרק יעקב 3",
+    "location": {
+      "latitude": 32.11080148205693,
+      "longitude": 34.816688646109036
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "phone": "036470960",
+    "mikvehGender": "נשים",
+    "attendant": "אסתר מסטשי",
+    "sourceName": "מועצה דתית — תל אביב יפו",
+    "extra": {
+      "license": "council-public",
+      "geocodeSource": "govmap-ADDR_V1",
+      "geocodeLabel": "יעקב מרק 3, תל אביב-יפו",
+      "provenance": {
+        "sourceId": "council:tel-aviv:mikvah",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-tel-aviv-32.04368_34.80135",
+    "name": "מקווה כפיר",
+    "type": "mikveh",
+    "cityId": "תל אביב יפו",
+    "address": "בושם 59",
+    "location": {
+      "latitude": 32.04368227629585,
+      "longitude": 34.80134547890276
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "phone": "036319535",
+    "mikvehGender": "נשים",
+    "attendant": "אילנה יעקב פור",
+    "sourceName": "מועצה דתית — תל אביב יפו",
+    "extra": {
+      "license": "council-public",
+      "geocodeSource": "govmap-ADDR_V1",
+      "geocodeLabel": "בושם 59, תל אביב-יפו",
+      "provenance": {
+        "sourceId": "council:tel-aviv:mikvah",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-tel-aviv-32.06541_34.79587",
+    "name": "מקווה בצרון",
+    "type": "mikveh",
+    "cityId": "תל אביב יפו",
+    "address": "שד' ההשכלה 10",
+    "location": {
+      "latitude": 32.06540780451409,
+      "longitude": 34.79586937681548
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "phone": "035610089",
+    "mikvehGender": "נשים",
+    "attendant": "רבקה זעפראני",
+    "sourceName": "מועצה דתית — תל אביב יפו",
+    "extra": {
+      "license": "council-public",
+      "geocodeSource": "govmap-ADDR_V1",
+      "geocodeLabel": "שדרות ההשכלה 10, תל אביב-יפו",
+      "provenance": {
+        "sourceId": "council:tel-aviv:mikvah",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-bat-yam-32.00920_34.75193",
+    "name": "באבוב",
+    "type": "mikveh",
+    "cityId": "בת ים",
+    "address": "האדמו\"ר מבאבוב 12",
+    "location": {
+      "latitude": 32.00920086067025,
+      "longitude": 34.75192550370174
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "phone": "035518510",
+    "mikvehGender": "נשים",
+    "sourceName": "מועצה דתית — בת ים",
+    "extra": {
+      "license": "council-public",
+      "geocodeSource": "govmap-ADDR_V1",
+      "geocodeLabel": "האדמו\"ר מבאבוב 12, בת ים",
+      "provenance": {
+        "sourceId": "council:bat-yam:mikvah",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-bat-yam-32.01917_34.75068",
+    "name": "שער ציון",
+    "type": "mikveh",
+    "cityId": "בת ים",
+    "address": "החשמונאים 27",
+    "location": {
+      "latitude": 32.019165253811124,
+      "longitude": 34.750678149958304
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "phone": "0547713860",
+    "mikvehGender": "נשים",
+    "sourceName": "מועצה דתית — בת ים",
+    "extra": {
+      "license": "council-public",
+      "geocodeSource": "govmap-ADDR_V1",
+      "geocodeLabel": "החשמונאים 27, בת ים",
+      "provenance": {
+        "sourceId": "council:bat-yam:mikvah",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-bat-yam-32.00857_34.74178",
+    "name": "אור החמה",
+    "type": "mikveh",
+    "cityId": "בת ים",
+    "address": "הנביאים 58",
+    "location": {
+      "latitude": 32.00856808370756,
+      "longitude": 34.74178364163824
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "mikvehGender": "נשים",
+    "sourceName": "מועצה דתית — בת ים",
+    "extra": {
+      "license": "council-public",
+      "geocodeSource": "govmap-ADDR_V1",
+      "geocodeLabel": "הנביאים 58, בת ים",
+      "provenance": {
+        "sourceId": "council:bat-yam:mikvah",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-bat-yam-32.02823_34.74896",
+    "name": "חב\"ד",
+    "type": "mikveh",
+    "cityId": "בת ים",
+    "address": "העצמאות 66",
+    "location": {
+      "latitude": 32.02823137894804,
+      "longitude": 34.74896356629098
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "mikvehGender": "נשים",
+    "sourceName": "מועצה דתית — בת ים",
+    "extra": {
+      "license": "council-public",
+      "geocodeSource": "govmap-ADDR_V1",
+      "geocodeLabel": "שדרות העצמאות 66, בת ים",
+      "provenance": {
+        "sourceId": "council:bat-yam:mikvah",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-bat-yam-32.02829_34.74691",
+    "name": "טהרת אסתר",
+    "type": "mikveh",
+    "cityId": "בת ים",
+    "address": "הלפר 38",
+    "location": {
+      "latitude": 32.02829189337109,
+      "longitude": 34.74690570683538
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "mikvehGender": "נשים",
+    "sourceName": "מועצה דתית — בת ים",
+    "extra": {
+      "license": "council-public",
+      "geocodeSource": "govmap-ADDR_V1",
+      "geocodeLabel": "הלפר 38, בת ים",
+      "provenance": {
+        "sourceId": "council:bat-yam:mikvah",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-bat-yam-32.01567_34.74603",
+    "name": "בית אל",
+    "type": "mikveh",
+    "cityId": "בת ים",
+    "address": "בן ציון ישראל 15",
+    "location": {
+      "latitude": 32.0156722553342,
+      "longitude": 34.746033358571154
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "mikvehGender": "נשים",
+    "sourceName": "מועצה דתית — בת ים",
+    "extra": {
+      "license": "council-public",
+      "geocodeSource": "govmap-ADDR_V1",
+      "geocodeLabel": "ישראל בן-ציון 15, בת ים",
+      "provenance": {
+        "sourceId": "council:bat-yam:mikvah",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  }
+]

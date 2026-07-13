@@ -1,0 +1,59 @@
+{
+  "generatedNote": "PHASE 4 DRY-RUN — full unified pipeline replay. No DB write, no publish, no overwrite of government records, additive-only. Terminus = pending_review.",
+  "pipelineFlow": "ingested → validated → geocoded → deduplicated → pending_review",
+  "canonicalType": "mikveh",
+  "inputRecords": 72,
+  "validatedRecords": 72,
+  "rejectedRecords": 0,
+  "geocoding": {
+    "strategy": "offline NullGeocoder (no external calls)",
+    "skippedHadNativeCoords": 71,
+    "neededMissingCoords": 1,
+    "resolvedNow": 0,
+    "note": "1 record(s) lack coordinates; deferred to a later geocoding gate (NullGeocoder returned 'failed' offline). No external geocoding performed."
+  },
+  "deduplication": {
+    "crossLiveChecked": true,
+    "candidatePool": 470,
+    "candidateSource": "places.mikvahs.app.json (existing gov-derived mikveh places)",
+    "duplicatesSuspected": 10,
+    "matches": 7,
+    "conflicts": 3,
+    "newRecords": 62
+  },
+  "notableFindings": {
+    "crossLiveRecoveredMatches": 10,
+    "flaggedByCity": {
+      "לוד": 1,
+      "מרחבים": 8,
+      "בית שאן": 1
+    },
+    "interpretation": "Cross-live geo-dedup flagged records Phase-2 had called new_record. These concentrate in the regional council Merhavim (and a few in Lod/Beit-Shean): Phase 2 keyed the council name as city, but the gov dataset stores these mikvahs under SETTLEMENT names (מושב גילת, מושב מסלול…). They are likely ENRICHMENT candidates, not new — the review queue resolves them.",
+    "provisionalNewAwaitingGeocode": 1,
+    "provisionalNote": "1 record(s) lack coordinates and were classified 'new' only because they could not be deduplicated; this is PROVISIONAL until geocoded."
+  },
+  "pendingReviewCandidates": 72,
+  "reviewQueue": 10,
+  "autoApprovable": 62,
+  "warnings": 2,
+  "warningsByRule": {
+    "address-present": 2
+  },
+  "sourceRegistryStatus": {
+    "councilsRegistered": 12,
+    "kind": "council-website",
+    "produces": [
+      "mikveh"
+    ],
+    "simulated": true,
+    "note": "12 council sources (those contributing new_record candidates) simulated as active registry entries for the run; the full SabaiApps mikvah family is 16. Not persisted to a durable source_registry."
+  },
+  "readiness": {
+    "allReachedPendingReview": true,
+    "readyForManualReview": true,
+    "note": "All 72 records passed validation + dedup and are in pending_review, ready for the manual review queue."
+  },
+  "dryRun": true,
+  "liveDataTouched": false,
+  "publishPerformed": false
+}

@@ -1,0 +1,64 @@
+{
+  "generatedNote": "PHASE 18 — official/open coordinate-bearing mikveh sources. Dry-run; no DB write/publish/rebuild. Commercial aggregators NOT used.",
+  "importedSources": [
+    {
+      "key": "jerusalem",
+      "name": "המועצה הדתית ירושלים (JSON API)",
+      "coords": true,
+      "ok": true,
+      "count": 42
+    },
+    {
+      "key": "holon-gis",
+      "name": "עיריית חולון — GIS (מקוואות)",
+      "coords": true,
+      "ok": true,
+      "count": 13
+    },
+    {
+      "key": "lod-gis",
+      "name": "עיריית לוד — GIS (מקוואות)",
+      "coords": true,
+      "ok": true,
+      "count": 8
+    }
+  ],
+  "addressOnlyOfficialBacklog": [
+    {
+      "source": "council:ashkelon (mdas.org.il)",
+      "count": 9,
+      "coords": true,
+      "status": "VERIFIED — 9 Waze lat/lng confirmed, but Elementor card name-parse unreliable via regex → targeted parser or browser extraction (agent already cleanly read 5/9). High value (coords)."
+    },
+    {
+      "source": "council:tel-aviv (rabanut.co.il)",
+      "count": 19,
+      "coords": false,
+      "status": "verified, address-only → geocode before import"
+    },
+    {
+      "source": "council:beit-shemesh (rabanutbs.co.il)",
+      "count": 10,
+      "coords": false,
+      "status": "verified, א.ש בינה CMS (reuse adapter), bot-blocked → browser fetch + geocode"
+    },
+    {
+      "source": "council:kiryat-gat (mdkg.org.il)",
+      "count": null,
+      "coords": false,
+      "status": "Next.js CSR → needs headless or internal API"
+    },
+    {
+      "source": "Phase-16 councils (Bat Yam/Golan/Netivot/Rehovot/Menashe/Mazkeret)",
+      "count": 37,
+      "coords": false,
+      "status": "extracted, address-only → geocode"
+    },
+    {
+      "source": "gush-etzion (baitisraeli.co.il)",
+      "count": 18,
+      "coords": false,
+      "status": "WB regional council table; confirm WB scope"
+    }
+  ]
+}

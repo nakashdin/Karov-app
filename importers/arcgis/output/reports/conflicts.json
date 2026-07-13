@@ -1,0 +1,34 @@
+[
+  {
+    "sourceRecordId": "arcgis:haifa:8",
+    "name": "אהל ברכה",
+    "existingId": "osm-way-172584753",
+    "existingName": "אוהל ברכה",
+    "distanceM": 28,
+    "nameSim": 0.33
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:11",
+    "name": "אהל יצחק",
+    "existingId": "osm-way-1124797726",
+    "existingName": "אוהל יצחק",
+    "distanceM": 6,
+    "nameSim": 0.33
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:69",
+    "name": "הגדול ברמות רמז",
+    "existingId": "osm-way-98888645",
+    "existingName": "בית כנסת - הגדול רמות רמז",
+    "distanceM": 1,
+    "nameSim": 0.5
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:87",
+    "name": "היכל חנינה",
+    "existingId": "osm-way-182191964",
+    "existingName": "היכל חנה",
+    "distanceM": 8,
+    "nameSim": 0.33
+  }
+]

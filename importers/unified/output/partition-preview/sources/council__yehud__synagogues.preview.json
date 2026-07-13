@@ -1,0 +1,461 @@
+[
+  {
+    "id": "rc-yehud-hmi5h6z",
+    "name": "אוהל חנה",
+    "type": "synagogue",
+    "cityId": "יהוד-מונוסון",
+    "address": "המעפילים 2 יהוד",
+    "location": {
+      "latitude": 32.030383,
+      "longitude": 34.891291
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית יהוד",
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "rc-yehud-hhwdr6x",
+    "name": "אור אבנר",
+    "type": "synagogue",
+    "cityId": "יהוד-מונוסון",
+    "address": "משה דיין 11 קרית הסביונים יהוד",
+    "location": {
+      "latitude": 32.035464,
+      "longitude": 34.881049
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית יהוד",
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "rc-yehud-h1w1pyzz",
+    "name": "אור לשבים (טורצ'ין)",
+    "type": "synagogue",
+    "cityId": "יהוד-מונוסון",
+    "address": "ויצמן 83 יהוד",
+    "location": {
+      "latitude": 32.037123,
+      "longitude": 34.892032
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית יהוד",
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "rc-yehud-hpnjx6l",
+    "name": "אחדות ישי",
+    "type": "synagogue",
+    "cityId": "יהוד-מונוסון",
+    "address": "ככר שדה 14 יהוד",
+    "location": {
+      "latitude": 32.029956,
+      "longitude": 34.883937
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית יהוד",
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "rc-yehud-h3acbix",
+    "name": "באור ה' לבני ישראל",
+    "type": "synagogue",
+    "cityId": "יהוד-מונוסון",
+    "address": "הרא\"ה 17, יהוד מונוסון, ישראל",
+    "location": {
+      "latitude": 32.036544,
+      "longitude": 34.891374
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית יהוד",
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "rc-yehud-h128czap",
+    "name": "בילו",
+    "type": "synagogue",
+    "cityId": "יהוד-מונוסון",
+    "address": "זבוטינסקי 2 יהוד",
+    "location": {
+      "latitude": 32.026333,
+      "longitude": 34.863153
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית יהוד",
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "rc-yehud-hkdy2d2",
+    "name": "בית אל (מרקו)",
+    "type": "synagogue",
+    "cityId": "יהוד-מונוסון",
+    "address": "ביקובסקי 5 יהוד",
+    "location": {
+      "latitude": 32.03284,
+      "longitude": 34.889462
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית יהוד",
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "rc-yehud-hhuvzsq",
+    "name": "בית אל (נימני)",
+    "type": "synagogue",
+    "cityId": "יהוד-מונוסון",
+    "address": "הרצל 23 יהוד",
+    "location": {
+      "latitude": 32.034235,
+      "longitude": 34.885918
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית יהוד",
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "rc-yehud-hgg8kax",
+    "name": "בית הלוי",
+    "type": "synagogue",
+    "cityId": "יהוד-מונוסון",
+    "address": "הרצל 21 יהוד",
+    "location": {
+      "latitude": 32.033559,
+      "longitude": 34.885563
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית יהוד",
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "rc-yehud-h1xbtt6t",
+    "name": "בית יוסף",
+    "type": "synagogue",
+    "cityId": "יהוד-מונוסון",
+    "address": "ביקובסקי 1 יהוד",
+    "location": {
+      "latitude": 32.032478,
+      "longitude": 34.889622
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית יהוד",
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "rc-yehud-hchznmz",
+    "name": "בית ישראל",
+    "type": "synagogue",
+    "cityId": "יהוד-מונוסון",
+    "address": "ביקובסקי 3 יהוד",
+    "location": {
+      "latitude": 32.03267,
+      "longitude": 34.889437
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית יהוד",
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "rc-yehud-hb9w4kn",
+    "name": "בית מאיר",
+    "type": "synagogue",
+    "cityId": "יהוד-מונוסון",
+    "address": "בילו 3 יהוד",
+    "location": {
+      "latitude": 32.028832,
+      "longitude": 34.888114
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית יהוד",
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "rc-yehud-hs5l253",
+    "name": "היכל אלעזר",
+    "type": "synagogue",
+    "cityId": "יהוד-מונוסון",
+    "address": "יהודה הלוי 46 יהוד",
+    "location": {
+      "latitude": 32.031475,
+      "longitude": 34.89133
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית יהוד",
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "rc-yehud-h1imon64",
+    "name": "הראל",
+    "type": "synagogue",
+    "cityId": "יהוד-מונוסון",
+    "address": "נורדאו 9 יהוד",
+    "location": {
+      "latitude": 32.029133,
+      "longitude": 34.894242
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית יהוד",
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "rc-yehud-h1fapmnv",
+    "name": "השלום",
+    "type": "synagogue",
+    "cityId": "יהוד-מונוסון",
+    "address": "קדושי מצרים 25 יהוד",
+    "location": {
+      "latitude": 32.034289,
+      "longitude": 34.890528
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית יהוד",
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "rc-yehud-h12co0fs",
+    "name": "חזון עובדיה (כורש)",
+    "type": "synagogue",
+    "cityId": "יהוד-מונוסון",
+    "address": "רמז 29 יהוד",
+    "location": {
+      "latitude": 32.037834,
+      "longitude": 34.887904
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית יהוד",
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "rc-yehud-hm1kp1k",
+    "name": "חזון עובדיה(נר ישראל)",
+    "type": "synagogue",
+    "cityId": "יהוד-מונוסון",
+    "address": "קדושי מצרים 25 יהוד",
+    "location": {
+      "latitude": 32.034289,
+      "longitude": 34.890528
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית יהוד",
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "rc-yehud-h1vrepw8",
+    "name": "ישורון(טלבים)",
+    "type": "synagogue",
+    "cityId": "יהוד-מונוסון",
+    "address": "אברבנל פינה קדושי מצרים 18 יהוד",
+    "location": {
+      "latitude": 32.034313,
+      "longitude": 34.889843
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית יהוד",
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "rc-yehud-h11ntk9",
+    "name": "מגן דוד",
+    "type": "synagogue",
+    "cityId": "יהוד-מונוסון",
+    "address": "קדושי מצרים 6 יהוד",
+    "location": {
+      "latitude": 32.033927,
+      "longitude": 34.887008
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית יהוד",
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "rc-yehud-hl1tvsf",
+    "name": "מוהליבר שמואל",
+    "type": "synagogue",
+    "cityId": "יהוד-מונוסון",
+    "address": "מלמד 1 יהוד",
+    "location": {
+      "latitude": 32.038682,
+      "longitude": 34.894998
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית יהוד",
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "rc-yehud-h1hthlmt",
+    "name": "מזמור לדוד (חב\"ד)",
+    "type": "synagogue",
+    "cityId": "יהוד-מונוסון",
+    "address": "צבי ישי 16, יהוד מונוסון, ישראל",
+    "location": {
+      "latitude": 32.032375,
+      "longitude": 34.889404
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית יהוד",
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "rc-yehud-h19rrhmp",
+    "name": "עץ החיים",
+    "type": "synagogue",
+    "cityId": "יהוד-מונוסון",
+    "address": "סעדיה חתוכה 20 יהוד",
+    "location": {
+      "latitude": 32.030274,
+      "longitude": 34.888937
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית יהוד",
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "rc-yehud-h1iyfx40",
+    "name": "ר' יוסף חיים(מונוסון)",
+    "type": "synagogue",
+    "cityId": "יהוד-מונוסון",
+    "address": "ספיר 3 נוה אפרים מונוסון",
+    "location": {
+      "latitude": 32.028644,
+      "longitude": 34.870268
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית יהוד",
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "rc-yehud-h1exz4lr",
+    "name": "ר' שלום שבזי",
+    "type": "synagogue",
+    "cityId": "יהוד-מונוסון",
+    "address": "סעדיה חתוכה 36 יהוד",
+    "location": {
+      "latitude": 32.031229,
+      "longitude": 34.888638
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית יהוד",
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "rc-yehud-h1e624di",
+    "name": "שבת אחים(ריעני)",
+    "type": "synagogue",
+    "cityId": "יהוד-מונוסון",
+    "address": "שפירא 13 יהוד",
+    "location": {
+      "latitude": 32.038216,
+      "longitude": 34.887727
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית יהוד",
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "rc-yehud-h1nj8ige",
+    "name": "שערי אלקנה(הודים)",
+    "type": "synagogue",
+    "cityId": "יהוד-מונוסון",
+    "address": "בן צבי 11 יהוד",
+    "location": {
+      "latitude": 32.030643,
+      "longitude": 34.895606
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית יהוד",
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "rc-yehud-h16dexeo",
+    "name": "שערי צדק(לוזון)",
+    "type": "synagogue",
+    "cityId": "יהוד-מונוסון",
+    "address": "צבי ישי 16 יהוד",
+    "location": {
+      "latitude": 32.032375,
+      "longitude": 34.889404
+    },
+    "lastVerifiedAt": "2026-06-18",
+    "provenance": {
+      "source": "religious-council",
+      "council": "המועצה הדתית יהוד",
+      "sourceUrl": null
+    }
+  }
+]

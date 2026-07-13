@@ -1,0 +1,1406 @@
+[
+  {
+    "city": "קרית מוצקין",
+    "name": "מקווה עין דורה",
+    "address": "דקר 70, קרית מוצקין",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-474 (עין דורא) by name token [עין] + gender",
+    "matchedLiveId": "mikveh-474"
+  },
+  {
+    "city": "קרית מוצקין",
+    "name": "מקווה נשים עין ישעיהו",
+    "address": "גרושקביץ 1, קרית מוצקין",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-474 (עין דורא) by name token [עין] + gender",
+    "matchedLiveId": "mikveh-474"
+  },
+  {
+    "city": "קרית ביאליק",
+    "name": "מקווה טהרה צור שלום",
+    "address": "ש\"י עגנון 18, קרית ביאליק",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-469 (צור שלום) by name token [צור,שלום] + gender",
+    "matchedLiveId": "mikveh-469"
+  },
+  {
+    "city": "קרית ביאליק",
+    "name": "מקווה קרית שמריהו - ראובן",
+    "address": "ראובן 15, קרית ביאליק",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-471 (ראובן) by street \"ראובן 15\" + gender",
+    "matchedLiveId": "mikveh-471"
+  },
+  {
+    "city": "רעננה",
+    "name": "מקווה אלפסי",
+    "address": "שמואל הנגיד פינת אלחריזי, רעננה",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-525 (אלפסי) by name token [אלפסי] + gender",
+    "matchedLiveId": "mikveh-525"
+  },
+  {
+    "city": "רעננה",
+    "name": "מקווה רבוצקי",
+    "address": "רבוצקי 72, רעננה",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-528 (רבוצקי) by name token [רבוצקי] + gender",
+    "matchedLiveId": "mikveh-528"
+  },
+  {
+    "city": "רעננה",
+    "name": "מקווה הרצל",
+    "address": "הרצל 3, רעננה",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-526 (הרצל) by street \"הרצל 3\" + gender",
+    "matchedLiveId": "mikveh-526"
+  },
+  {
+    "city": "רעננה",
+    "name": "מקווה קרית שרת",
+    "address": "י.ל. פרץ 53, רעננה",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-527 (פרץ קרית שרת) by street \"י ל פרץ 53\" + gender",
+    "matchedLiveId": "mikveh-527"
+  },
+  {
+    "city": "הרצליה",
+    "name": "מקווה הרצליה ב' - נשים",
+    "address": "היתד 20, הרצליה",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-181 (מקווה יתד) by street \"היתד 20\" + gender",
+    "matchedLiveId": "mikveh-181"
+  },
+  {
+    "city": "הרצליה",
+    "name": "מקווה הרצליה פיתוח - נשים",
+    "address": "שלמה המלך 34, הרצליה",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-184 (מקווה פיתוח) by street \"שלמה המלך 34\" + gender",
+    "matchedLiveId": "mikveh-184"
+  },
+  {
+    "city": "הרצליה",
+    "name": "מקווה מרכזי - נשים",
+    "address": "סירקין 4, הרצליה",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-182 (מקווה מרכזי סירקין) by street \"סירקין 4\" + gender",
+    "matchedLiveId": "mikveh-182"
+  },
+  {
+    "city": "הרצליה",
+    "name": "מקווה נווה עמל - נשים",
+    "address": "פנקס 54, הרצליה",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-183 (מקווה נווה עמל) by street \"פנקס 54\" + gender",
+    "matchedLiveId": "mikveh-183"
+  },
+  {
+    "city": "הרצליה",
+    "name": "מקווה שביב - נשים",
+    "address": "זיסו 12, הרצליה",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-185 (שביב) by street \"זיסו 12\" + gender",
+    "matchedLiveId": "mikveh-185"
+  },
+  {
+    "city": "נתניה",
+    "name": "מקווה רמת פולג",
+    "address": "תורמוס 6, נתניה",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live rc-mikvah-netanya-12533 (מקווה רמת פולג) by street \"תורמוס 6\" + gender",
+    "matchedLiveId": "rc-mikvah-netanya-12533"
+  },
+  {
+    "city": "נתניה",
+    "name": "מקווה נשים קריית נורדאו",
+    "address": "אריה לוין 59, נתניה",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live rc-mikvah-netanya-12536 (מקווה נשים קריית נורדאו) by street \"אריה לוין 59\" + gender",
+    "matchedLiveId": "rc-mikvah-netanya-12536"
+  },
+  {
+    "city": "נתניה",
+    "name": "מקווה נשים גבעת האירוסים",
+    "address": "חרצית 27, נתניה",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live rc-mikvah-netanya-12539 (מקווה נשים גבעת האירוסים) by street \"חרצית 27\" + gender",
+    "matchedLiveId": "rc-mikvah-netanya-12539"
+  },
+  {
+    "city": "נתניה",
+    "name": "מקווה נשים שכונת אזורים",
+    "address": "אפרים אלנקווה 8, נתניה",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live rc-mikvah-netanya-12541 (מקווה נשים שכונת אזורים) by street \"אפרים אלנקווה 8\" + gender",
+    "matchedLiveId": "rc-mikvah-netanya-12541"
+  },
+  {
+    "city": "נתניה",
+    "name": "מקווה נשים שכונת דורה",
+    "address": "שמואל 10, נתניה",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live rc-mikvah-netanya-12543 (מקווה נשים שכונת דורה) by street \"שמואל 10\" + gender",
+    "matchedLiveId": "rc-mikvah-netanya-12543"
+  },
+  {
+    "city": "נתניה",
+    "name": "מקווה נשים שכונת רמת חן",
+    "address": "אלחריזי 25, נתניה",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live rc-mikvah-netanya-12533 (מקווה רמת פולג) by name token [רמת] + gender",
+    "matchedLiveId": "rc-mikvah-netanya-12533"
+  },
+  {
+    "city": "נתניה",
+    "name": "המקווה המרכזי נתניה",
+    "address": "אברהם שפירא 28, נתניה",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live rc-mikvah-netanya-12547 (המקווה המרכזי נתניה) by street \"אברהם שפירא 28\" + gender",
+    "matchedLiveId": "rc-mikvah-netanya-12547"
+  },
+  {
+    "city": "נתניה",
+    "name": "מקווה נשים סלע",
+    "address": "משה גליקסון 17, נתניה",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live rc-mikvah-netanya-12559 (מקווה נשים סלע) by street \"משה גליקסון 17\" + gender",
+    "matchedLiveId": "rc-mikvah-netanya-12559"
+  },
+  {
+    "city": "נתניה",
+    "name": "מקווה נשים שכונת הפועל מזרחי",
+    "address": "משה שפירא 40, נתניה",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live rc-mikvah-netanya-12561 (מקווה נשים שכונת הפועל מזרחי) by street \"משה שפירא 40\" + gender",
+    "matchedLiveId": "rc-mikvah-netanya-12561"
+  },
+  {
+    "city": "נתניה",
+    "name": "מקווה נשים שכונת ותיקים",
+    "address": "הרב זוארץ 12, נתניה",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live rc-mikvah-netanya-12562 (מקווה נשים שכונת ותיקים) by street \"הרב זוארץ 12\" + gender",
+    "matchedLiveId": "rc-mikvah-netanya-12562"
+  },
+  {
+    "city": "נתניה",
+    "name": "מקווה נשים שכונת משה\"ב",
+    "address": "שפיגלמן 21, נתניה",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live rc-mikvah-netanya-12563 (מקווה נשים שכונת משה''ב) by street \"שפיגלמן 21\" + gender",
+    "matchedLiveId": "rc-mikvah-netanya-12563"
+  },
+  {
+    "city": "נתניה",
+    "name": "מקווה גברים מרכזי",
+    "address": "אברהם שפירא 28, נתניה",
+    "gender": "גברים",
+    "disposition": "duplicate",
+    "reason": "matches live rc-mikvah-netanya-12564 (מקווה גברים מרכזי:) by street \"אברהם שפירא 28\" + gender",
+    "matchedLiveId": "rc-mikvah-netanya-12564"
+  },
+  {
+    "city": "נתניה",
+    "name": "מקווה גברים נורדאו",
+    "address": "אריה לוין 59, נתניה",
+    "gender": "גברים",
+    "disposition": "duplicate",
+    "reason": "matches live rc-mikvah-netanya-12565 (מקווה גברים נורדאו) by street \"אריה לוין 59\" + gender",
+    "matchedLiveId": "rc-mikvah-netanya-12565"
+  },
+  {
+    "city": "צפת",
+    "name": "מקווה נוף כנרת",
+    "address": "נוף כנרת 11, צפת",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-460 (נוף כנרת) by name token [נוף,כנרת] + gender",
+    "matchedLiveId": "mikveh-460"
+  },
+  {
+    "city": "צפת",
+    "name": "מקווה איביקור",
+    "address": "הנשרים, שכונת איביקור, צפת",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-457 (איביקור) by street \"הנשרים\" + gender",
+    "matchedLiveId": "mikveh-457"
+  },
+  {
+    "city": "צפת",
+    "name": "מקווה רמת רזים",
+    "address": "התבור, צפת",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-461 (רמת רזים) by street \"התבור\" + gender",
+    "matchedLiveId": "mikveh-461"
+  },
+  {
+    "city": "צפת",
+    "name": "מקווה דרום",
+    "address": "הרצל, צפת",
+    "gender": "נשים",
+    "disposition": "duplicate",
+    "reason": "matches live mikveh-459 (מקווה הרצל דרום) by street \"הרצל\" + gender",
+    "matchedLiveId": "mikveh-459"
+  },
+  {
+    "city": "חיפה",
+    "name": "מקווה אחוזה",
+    "address": "שדרות סיני 16, חיפה",
+    "geo": "שדרות סיני 16, חיפה",
+    "phone": "046965773",
+    "gender": "נשים",
+    "accessibility": "מונגש",
+    "coordSource": "record-native",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.7876967,
+      "longitude": 34.9899432
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (record-native), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "חיפה",
+    "name": "מקווה מרכז הכרמל",
+    "address": "דרך הים 10, חיפה",
+    "geo": "דרך הים 10, חיפה",
+    "phone": "048387816",
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "record-native",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.80465,
+      "longitude": 34.9885397
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (record-native), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "חיפה",
+    "name": "מקווה עין הים",
+    "address": "ההגה 7, חיפה",
+    "geo": "ההגה 7, חיפה",
+    "phone": "048539212",
+    "gender": "נשים",
+    "accessibility": "מונגש",
+    "coordSource": "record-native",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.8269246,
+      "longitude": 34.9653287
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (record-native), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "חיפה",
+    "name": "מקווה הדר",
+    "address": "בצלאל 2, חיפה",
+    "geo": "בצלאל 2, חיפה",
+    "phone": "048629497",
+    "gender": "נשים",
+    "accessibility": "מונגש לנכות (בתיאום מראש)",
+    "coordSource": "record-native",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.8043218,
+      "longitude": 35.0016076
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (record-native), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "חיפה",
+    "name": "מקווה קריית חיים",
+    "address": "הראשונים 55, חיפה",
+    "geo": "הראשונים 55, חיפה",
+    "phone": "048490391",
+    "gender": "נשים",
+    "accessibility": "מונגש",
+    "coordSource": "record-native",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.8157054,
+      "longitude": 35.0519023
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (record-native), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "חיפה",
+    "name": "מקווה קריית אליהו",
+    "address": "תל אביב 37, חיפה",
+    "geo": "תל אביב 37, חיפה",
+    "phone": "048516128",
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "record-native",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.826252,
+      "longitude": 34.9873756
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (record-native), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "חיפה",
+    "name": "מקווה נווה דוד",
+    "address": "ציקלג 8, חיפה",
+    "geo": "ציקלג 8, חיפה",
+    "phone": "048101898",
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "record-native",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.8077746,
+      "longitude": 34.9648804
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (record-native), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "חיפה",
+    "name": "מקווה נווה שאנן - שאול",
+    "address": "שאול 22, חיפה",
+    "geo": "שאול 22, חיפה",
+    "phone": "048664703",
+    "gender": "נשים",
+    "accessibility": "בשבתות/ערבי חג בתיאום מראש",
+    "coordSource": "record-native",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.7881585,
+      "longitude": 35.0189591
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (record-native), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "חיפה",
+    "name": "מקווה נווה שאנן - חסדי טהרה",
+    "address": "יד לבנים 212, חיפה",
+    "geo": "יד לבנים 212, חיפה",
+    "phone": "048222203",
+    "gender": "נשים",
+    "accessibility": "בשבתות/ערבי חג בתיאום מראש",
+    "coordSource": "record-native",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.7966456,
+      "longitude": 35.0090269
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (record-native), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "חיפה",
+    "name": "מקווה קריית שמואל",
+    "address": "נתיב הלולב, חיפה",
+    "geo": "נתיב הלולב, חיפה",
+    "phone": "048710198",
+    "gender": "נשים",
+    "accessibility": "בשבתות/ערבי חג בתיאום מראש",
+    "coordSource": "record-native",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.8333305,
+      "longitude": 35.0701007
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (record-native), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "טבריה",
+    "name": "מקווה נשים שיכון ד'",
+    "address": "הנשיא ויצמן פינת חזון איש, שיכון ד', טבריה",
+    "geo": "הנשיא ויצמן, טבריה",
+    "phone": null,
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "no-house-number",
+    "hasCoords": false,
+    "location": null,
+    "disposition": "excluded",
+    "reason": "no address-level coordinate (no-house-number)",
+    "matchedLiveId": null
+  },
+  {
+    "city": "טבריה",
+    "name": "מקווה גברים שיכון ד'",
+    "address": "הנשיא ויצמן פינת חזון איש, שיכון ד', טבריה",
+    "geo": "הנשיא ויצמן, טבריה",
+    "phone": null,
+    "gender": "גברים",
+    "accessibility": null,
+    "coordSource": "no-house-number",
+    "hasCoords": false,
+    "location": null,
+    "disposition": "excluded",
+    "reason": "no address-level coordinate (no-house-number)",
+    "matchedLiveId": null
+  },
+  {
+    "city": "טבריה",
+    "name": "מקווה נשים קרית שמואל",
+    "address": "ורנר 5, קרית שמואל, טבריה",
+    "geo": "ורנר 5, טבריה",
+    "phone": null,
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.794885441610674,
+      "longitude": 35.532242924377684
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "טבריה",
+    "name": "מקווה גברים קרית שמואל",
+    "address": "ורנר 5, קרית שמואל, טבריה",
+    "geo": "ורנר 5, טבריה",
+    "phone": null,
+    "gender": "גברים",
+    "accessibility": null,
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.794885441610674,
+      "longitude": 35.532242924377684
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "טבריה",
+    "name": "מקווה מורדות",
+    "address": "צאלון 33, מורדות, טבריה",
+    "geo": "צאלון 33, טבריה",
+    "phone": null,
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.78457492253673,
+      "longitude": 35.5288344770742
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "טבריה",
+    "name": "מקווה שיכון ב'",
+    "address": "רמח\"ל 58, שיכון ב, טבריה",
+    "geo": "רמחל 58, טבריה",
+    "phone": null,
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "govmap-no-match",
+    "hasCoords": false,
+    "location": null,
+    "disposition": "excluded",
+    "reason": "no address-level coordinate (govmap-no-match)",
+    "matchedLiveId": null
+  },
+  {
+    "city": "טבריה",
+    "name": "מקווה שיכון א'",
+    "address": "השילוח 95, שיכון א, טבריה",
+    "geo": "השילוח 95, טבריה",
+    "phone": null,
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "govmap-no-match",
+    "hasCoords": false,
+    "location": null,
+    "disposition": "excluded",
+    "reason": "no address-level coordinate (govmap-no-match)",
+    "matchedLiveId": null
+  },
+  {
+    "city": "נהריה",
+    "name": "מקווה מרכזי נשים",
+    "address": "ישורון 9, נהריה",
+    "geo": "ישורון 9, נהריה",
+    "phone": "049511398",
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "govmap-no-match",
+    "hasCoords": false,
+    "location": null,
+    "disposition": "excluded",
+    "reason": "no address-level coordinate (govmap-no-match)",
+    "matchedLiveId": null
+  },
+  {
+    "city": "נהריה",
+    "name": "מקווה נשים עין שרה",
+    "address": "גרניום 10, שכונת עין שרה, נהריה",
+    "geo": "גרניום 10, נהריה",
+    "phone": "046890110",
+    "gender": "נשים",
+    "accessibility": "מונגש חלקית",
+    "coordSource": "govmap-no-match",
+    "hasCoords": false,
+    "location": null,
+    "disposition": "excluded",
+    "reason": "no address-level coordinate (govmap-no-match)",
+    "matchedLiveId": null
+  },
+  {
+    "city": "נהריה",
+    "name": "מקווה נשים טרומפלדור",
+    "address": "החלוץ (מרכז מסחרי טרומפלדור), נהריה",
+    "geo": "החלוץ, נהריה",
+    "phone": "049828535",
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "no-house-number",
+    "hasCoords": false,
+    "location": null,
+    "disposition": "excluded",
+    "reason": "no address-level coordinate (no-house-number)",
+    "matchedLiveId": null
+  },
+  {
+    "city": "נהריה",
+    "name": "מקווה נשים נהריה הירוקה",
+    "address": "אשכול 47, נהריה",
+    "geo": "אשכול 47, נהריה",
+    "phone": "049823860",
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 33.00467730489151,
+      "longitude": 35.105296141961254
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "נהריה",
+    "name": "מקווה נשים אוסישקין",
+    "address": "דוד המלך (ליד מגרש הטניס), נהריה",
+    "geo": "דוד המלך, נהריה",
+    "phone": "049821844",
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "no-house-number",
+    "hasCoords": false,
+    "location": null,
+    "disposition": "excluded",
+    "reason": "no address-level coordinate (no-house-number)",
+    "matchedLiveId": null
+  },
+  {
+    "city": "נהריה",
+    "name": "מקווה פקודת אלעזר",
+    "address": "הלוטוס 97, נהריה",
+    "geo": "הלוטוס 97, נהריה",
+    "phone": "049920385",
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.99046285394772,
+      "longitude": 35.092373000877394
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "נהריה",
+    "name": "מקווה עמידר - נווה אלון",
+    "address": "יבנה 5, נהריה",
+    "geo": "יבנה 5, נהריה",
+    "phone": "048602040",
+    "gender": "נשים",
+    "accessibility": "מונגש חלקית",
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 33.0179027166751,
+      "longitude": 35.09487761294852
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "נהריה",
+    "name": "מקווה גברים מרכזי",
+    "address": "ישורון 9, נהריה",
+    "geo": "ישורון 9, נהריה",
+    "phone": null,
+    "gender": "גברים",
+    "accessibility": null,
+    "coordSource": "govmap-no-match",
+    "hasCoords": false,
+    "location": null,
+    "disposition": "excluded",
+    "reason": "no address-level coordinate (govmap-no-match)",
+    "matchedLiveId": null
+  },
+  {
+    "city": "נהריה",
+    "name": "מקווה גברים טרומפלדור",
+    "address": "החשמונאים (מרכז מסחרי טרומפלדור), נהריה",
+    "geo": "החשמונאים, נהריה",
+    "phone": null,
+    "gender": "גברים",
+    "accessibility": null,
+    "coordSource": "no-house-number",
+    "hasCoords": false,
+    "location": null,
+    "disposition": "excluded",
+    "reason": "no address-level coordinate (no-house-number)",
+    "matchedLiveId": null
+  },
+  {
+    "city": "עפולה",
+    "name": "מקווה באר ציפורה (רובע יזרעאל)",
+    "address": "ספיר 5, עפולה",
+    "geo": "ספיר 5, עפולה",
+    "phone": "048149030",
+    "gender": "נשים",
+    "accessibility": "אין נגישות",
+    "coordSource": "record-native",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.615054,
+      "longitude": 35.308738
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (record-native), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "עפולה",
+    "name": "מקווה באר משה (גבעת המורה)",
+    "address": "בן יהודה 19, עפולה",
+    "geo": "בן יהודה 19, עפולה",
+    "phone": "046421617",
+    "gender": "נשים",
+    "accessibility": "אין נגישות",
+    "coordSource": "record-native",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.6247034,
+      "longitude": 35.330623
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (record-native), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "עפולה",
+    "name": "מקווה אוצרות יוסף (נוף יזרעאל)",
+    "address": "פעמונית 6, עפולה",
+    "geo": "פעמונית 6, עפולה",
+    "phone": "046319792",
+    "gender": "נשים",
+    "accessibility": "נגיש",
+    "coordSource": "record-native",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.6166634,
+      "longitude": 35.3270406
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (record-native), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "עפולה",
+    "name": "מקווה עפולה עילית",
+    "address": "בורוכוב 19, עפולה",
+    "geo": "בורוכוב 19, עפולה",
+    "phone": "046594330",
+    "gender": "נשים",
+    "accessibility": "אין נגישות",
+    "coordSource": "record-native",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.6286626,
+      "longitude": 35.3209133
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (record-native), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "עפולה",
+    "name": "מקווה אור מרגלית (קינמון)",
+    "address": "יעקב קינמון 25, עפולה",
+    "geo": "יעקב קינמון 25, עפולה",
+    "phone": "046597839",
+    "gender": "נשים",
+    "accessibility": "אין נגישות",
+    "coordSource": "record-native",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.6031031,
+      "longitude": 35.2880188
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (record-native), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "עפולה",
+    "name": "מקווה מעלות מיכל (כורש)",
+    "address": "כורש 16, עפולה",
+    "geo": "כורש 16, עפולה",
+    "phone": "046400100",
+    "gender": "נשים",
+    "accessibility": "נגיש",
+    "coordSource": "record-native",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.6088727,
+      "longitude": 35.2971565
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (record-native), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "עפולה",
+    "name": "מקווה גברים עפולה עילית",
+    "address": "בורוכוב 19, עפולה",
+    "geo": "בורוכוב 19, עפולה",
+    "phone": null,
+    "gender": "גברים",
+    "accessibility": "אין נגישות",
+    "coordSource": "record-native",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.6286626,
+      "longitude": 35.3209133
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (record-native), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "עפולה",
+    "name": "מקווה גברים באר משה",
+    "address": "בן יהודה 19, עפולה",
+    "geo": "בן יהודה 19, עפולה",
+    "phone": null,
+    "gender": "גברים",
+    "accessibility": "אין נגישות",
+    "coordSource": "record-native",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.6247034,
+      "longitude": 35.330623
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (record-native), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "עפולה",
+    "name": "מקווה כלים אהל יעקב",
+    "address": "אבן גבירול, עפולה",
+    "geo": "אבן גבירול, עפולה",
+    "phone": null,
+    "gender": "כלים",
+    "accessibility": "נגיש",
+    "coordSource": "record-native",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.625736,
+      "longitude": 35.324934
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (record-native), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "עפולה",
+    "name": "מקווה כלים רוטשילד",
+    "address": "השופטים 1, עפולה",
+    "geo": "השופטים 1, עפולה",
+    "phone": null,
+    "gender": "כלים",
+    "accessibility": "נגיש",
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.62412719704328,
+      "longitude": 35.3246743135048
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "עפולה",
+    "name": "מקווה כלים היכל השבעה",
+    "address": "האלה 3, עפולה",
+    "geo": "האלה 3, עפולה",
+    "phone": null,
+    "gender": "כלים",
+    "accessibility": "נגיש",
+    "coordSource": "record-native",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.636571,
+      "longitude": 35.3169801
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (record-native), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "עפולה",
+    "name": "מקווה כלים באר דוד",
+    "address": "דפנה 8, עפולה",
+    "geo": "דפנה 8, עפולה",
+    "phone": null,
+    "gender": "כלים",
+    "accessibility": "נגיש",
+    "coordSource": "record-native",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.614273,
+      "longitude": 35.2951404
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (record-native), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "עפולה",
+    "name": "מקווה כלים עטרת יצחק",
+    "address": "צנחנים 8, עפולה",
+    "geo": "צנחנים 8, עפולה",
+    "phone": null,
+    "gender": "כלים",
+    "accessibility": "נגיש",
+    "coordSource": "record-native",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.6332469,
+      "longitude": 35.3291309
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (record-native), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "עפולה",
+    "name": "מקווה כלים שבת אחים",
+    "address": "שדמית 10, עפולה",
+    "geo": "שדמית 10, עפולה",
+    "phone": null,
+    "gender": "כלים",
+    "accessibility": "נגיש",
+    "coordSource": "record-native",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.622074,
+      "longitude": 35.330665
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (record-native), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "עפולה",
+    "name": "מקווה כלים בית הכנסת הגדול",
+    "address": "יהושע חנקין 48, עפולה",
+    "geo": "יהושע חנקין 48, עפולה",
+    "phone": null,
+    "gender": "כלים",
+    "accessibility": "נגיש",
+    "coordSource": "record-native",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.6063567,
+      "longitude": 35.2874334
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (record-native), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "קרית מוצקין",
+    "name": "מקווה גברים עין ישעיהו",
+    "address": "גרושקביץ 1, קרית מוצקין",
+    "geo": "גרושקביץ 1, קרית מוצקין",
+    "phone": "048712525",
+    "gender": "גברים",
+    "accessibility": "כניסה במפלס קרקע",
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.82876256464685,
+      "longitude": 35.07198382763226
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "קרית ביאליק",
+    "name": "מקווה קרן קיימת (ביאליק דרום)",
+    "address": "קק\"ל 75, קרית ביאליק",
+    "geo": "קקל 75, קרית ביאליק",
+    "phone": null,
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.81931488132059,
+      "longitude": 35.079335497402
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "קרית ים",
+    "name": "מקווה מעיין דוד - סביוני ים",
+    "address": "האגוזים פינת האילנות, קרית ים",
+    "geo": "האגוזים, קרית ים",
+    "phone": "0779019101",
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "no-house-number",
+    "hasCoords": false,
+    "location": null,
+    "disposition": "excluded",
+    "reason": "no address-level coordinate (no-house-number)",
+    "matchedLiveId": null
+  },
+  {
+    "city": "קרית ים",
+    "name": "מקווה להמן",
+    "address": "להמן 15, קרית ים",
+    "geo": "להמן 15, קרית ים",
+    "phone": "0779019110",
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.847585698584744,
+      "longitude": 35.06851824285526
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "כפר סבא",
+    "name": "מקווה קפלן - נשים",
+    "address": "מרדכי 3, שכונת קפלן, כפר סבא",
+    "geo": "מרדכי אנילביץ 3, כפר סבא",
+    "phone": "097656667",
+    "gender": "נשים",
+    "accessibility": "נגיש לנשים עם מוגבלויות",
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.17813591632756,
+      "longitude": 34.89361104905115
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "כפר סבא",
+    "name": "מקווה קפלן - גברים",
+    "address": "מרדכי 3, שכונת קפלן, כפר סבא",
+    "geo": "מרדכי אנילביץ 3, כפר סבא",
+    "phone": "097905600",
+    "gender": "גברים",
+    "accessibility": null,
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.17813591632756,
+      "longitude": 34.89361104905115
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "כפר סבא",
+    "name": "מקווה תל חי - נשים",
+    "address": "תל חי 67, כפר סבא",
+    "geo": "תל חי 67, כפר סבא",
+    "phone": "097660802",
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.17687195548059,
+      "longitude": 34.91406471154148
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "כפר סבא",
+    "name": "מקווה בן גוריון - נשים",
+    "address": "בן גוריון 23, כפר סבא",
+    "geo": "בן גוריון 23, כפר סבא",
+    "phone": "097670802",
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.17270023818041,
+      "longitude": 34.90557765574875
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "כפר סבא",
+    "name": "מקווה בן גוריון - גברים",
+    "address": "בן גוריון 23, כפר סבא",
+    "geo": "בן גוריון 23, כפר סבא",
+    "phone": "097905600",
+    "gender": "גברים",
+    "accessibility": null,
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.17270023818041,
+      "longitude": 34.90557765574875
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "כפר סבא",
+    "name": "מקווה עלייה - נשים",
+    "address": "האחדות 16, שכונת עליה, כפר סבא",
+    "geo": "האחדות 16, כפר סבא",
+    "phone": "098652819",
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "govmap-no-match",
+    "hasCoords": false,
+    "location": null,
+    "disposition": "excluded",
+    "reason": "no address-level coordinate (govmap-no-match)",
+    "matchedLiveId": null
+  },
+  {
+    "city": "רעננה",
+    "name": "מקווה גברים הרצל",
+    "address": "הרצל 3, רעננה",
+    "geo": "הרצל 3, רעננה",
+    "phone": null,
+    "gender": "גברים",
+    "accessibility": null,
+    "coordSource": "record-native",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.180995,
+      "longitude": 34.868921
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (record-native), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "רעננה",
+    "name": "מקווה גברים פרץ",
+    "address": "י.ל. פרץ 30, רעננה",
+    "geo": "י.ל. פרץ 30, רעננה",
+    "phone": null,
+    "gender": "גברים",
+    "accessibility": null,
+    "coordSource": "record-native",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.193332,
+      "longitude": 34.855138
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (record-native), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "רעננה",
+    "name": "מקווה גברים אלפסי",
+    "address": "אלחריזי 12, רעננה",
+    "geo": "אלחריזי 12, רעננה",
+    "phone": null,
+    "gender": "גברים",
+    "accessibility": null,
+    "coordSource": "record-native",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.190631,
+      "longitude": 34.871944
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (record-native), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "רעננה",
+    "name": "מקווה כלים רבוצקי",
+    "address": "רבוצקי 72, רעננה",
+    "geo": "רבוצקי 72, רעננה",
+    "phone": null,
+    "gender": "כלים",
+    "accessibility": null,
+    "coordSource": "record-native",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.183829,
+      "longitude": 34.886623
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (record-native), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "הרצליה",
+    "name": "מקווה גברים - הרצליה פיתוח",
+    "address": "אהרון קציר 2, הרצליה",
+    "geo": "אהרון קציר 2, הרצליה",
+    "phone": null,
+    "gender": "גברים",
+    "accessibility": null,
+    "coordSource": "record-native",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.176192,
+      "longitude": 34.810978
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (record-native), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "הרצליה",
+    "name": "מקווה גברים - שביב",
+    "address": "זיסו 12, הרצליה",
+    "geo": "זיסו 12, הרצליה",
+    "phone": "099567917",
+    "gender": "גברים",
+    "accessibility": null,
+    "coordSource": "record-native",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.177055,
+      "longitude": 34.853384
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (record-native), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "הרצליה",
+    "name": "מקווה מרכזי - גברים",
+    "address": "סירקין 4, הרצליה",
+    "geo": "סירקין 4, הרצליה",
+    "phone": "099511064",
+    "gender": "גברים",
+    "accessibility": null,
+    "coordSource": "record-native",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.166285,
+      "longitude": 34.843176
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (record-native), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "צפת",
+    "name": "מקווה גברים איביקור",
+    "address": "הנשרים, צפת",
+    "geo": "הנשרים, צפת",
+    "phone": null,
+    "gender": "גברים",
+    "accessibility": null,
+    "coordSource": "no-house-number",
+    "hasCoords": false,
+    "location": null,
+    "disposition": "excluded",
+    "reason": "no address-level coordinate (no-house-number)",
+    "matchedLiveId": null
+  },
+  {
+    "city": "צפת",
+    "name": "מקווה גברים דרום",
+    "address": "הרצל, צפת",
+    "geo": "הרצל, צפת",
+    "phone": null,
+    "gender": "גברים",
+    "accessibility": null,
+    "coordSource": "no-house-number",
+    "hasCoords": false,
+    "location": null,
+    "disposition": "excluded",
+    "reason": "no address-level coordinate (no-house-number)",
+    "matchedLiveId": null
+  },
+  {
+    "city": "צפת",
+    "name": "מקווה ברסלב",
+    "address": "האר\"י, עיר עתיקה, צפת",
+    "geo": "הארי, צפת",
+    "phone": null,
+    "gender": "נשים",
+    "accessibility": "מונגש לנכות",
+    "coordSource": "no-house-number",
+    "hasCoords": false,
+    "location": null,
+    "disposition": "excluded",
+    "reason": "no address-level coordinate (no-house-number)",
+    "matchedLiveId": null
+  },
+  {
+    "city": "צפת",
+    "name": "מקווה חב\"ד",
+    "address": "קרית חב\"ד, צפת",
+    "geo": "קרית חבד, צפת",
+    "phone": "046973321",
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "no-house-number",
+    "hasCoords": false,
+    "location": null,
+    "disposition": "excluded",
+    "reason": "no address-level coordinate (no-house-number)",
+    "matchedLiveId": null
+  },
+  {
+    "city": "צפת",
+    "name": "מקווה מאור חיים",
+    "address": "צה\"ל 4, צפת",
+    "geo": "צהל 4, צפת",
+    "phone": null,
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.96527177028419,
+      "longitude": 35.48705162783815
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "צפת",
+    "name": "מקווה צאנז",
+    "address": "תרפ\"ט, עיר עתיקה, צפת",
+    "geo": "תרפט, צפת",
+    "phone": null,
+    "gender": "נשים",
+    "accessibility": null,
+    "coordSource": "no-house-number",
+    "hasCoords": false,
+    "location": null,
+    "disposition": "excluded",
+    "reason": "no address-level coordinate (no-house-number)",
+    "matchedLiveId": null
+  },
+  {
+    "city": "צפת",
+    "name": "מקווה כלים פאר הנצח",
+    "address": "צה\"ל 7, צפת",
+    "geo": "צהל 7, צפת",
+    "phone": null,
+    "gender": "כלים",
+    "accessibility": null,
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 32.96419430947224,
+      "longitude": 35.49003417868639
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "city": "צפת",
+    "name": "מקווה כלים היכל מוהר\"ן",
+    "address": "האצ\"ל 122, צפת",
+    "geo": "האצל 122, צפת",
+    "phone": null,
+    "gender": "כלים",
+    "accessibility": null,
+    "coordSource": "govmap-no-match",
+    "hasCoords": false,
+    "location": null,
+    "disposition": "excluded",
+    "reason": "no address-level coordinate (govmap-no-match)",
+    "matchedLiveId": null
+  }
+]

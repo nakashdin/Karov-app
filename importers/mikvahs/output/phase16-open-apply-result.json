@@ -1,0 +1,40 @@
+{
+  "status": "SUCCESS",
+  "scope": "25 Phase-16b open-source mikveh records (OSM 24 + Tel Aviv GIS 1), additive append. Backlog records untouched. Local generated app data only; no publish.",
+  "backups": {
+    "places": "C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\places.osm.pre-phase16-open.backup.json",
+    "cities": "C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\cities.osm.pre-phase16-open.backup.json"
+  },
+  "filesModified": [
+    "src/data/generated/places.osm.json",
+    "src/data/generated/cities.osm.json"
+  ],
+  "counts": {
+    "placesBefore": 4907,
+    "placesAfter": 4932,
+    "added": 25,
+    "mikvehBefore": 531,
+    "mikvehAfter": 556,
+    "existingLost": 0,
+    "existingModified": 0
+  },
+  "bySource": {
+    "osm": 24,
+    "telAvivGis": 1
+  },
+  "licenses": {
+    "osm": "ODbL-1.0 (© OpenStreetMap contributors)",
+    "telAvivGis": "municipal-open (Tel Aviv-Yafo Municipality GIS)"
+  },
+  "reconciliation": "EXACT: places 4907→4932 (+25); mikveh 531→556 (+25); 0 lost; 0 modified.",
+  "rollback": [
+    "copy C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\places.osm.pre-phase16-open.backup.json → C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\places.osm.json",
+    "copy C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\cities.osm.pre-phase16-open.backup.json → C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\cities.osm.json",
+    "(no code/schema change in this write — nothing else to revert)",
+    "verify: places.osm.json returns to 4907 records, mikveh to 531"
+  ],
+  "dryRun": false,
+  "publishPerformed": false,
+  "additiveOnly": true,
+  "backlogTouched": false
+}

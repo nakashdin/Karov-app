@@ -1,0 +1,22 @@
+{
+  "source": "arcgis:haifa",
+  "expectedCount": 268,
+  "fetchedCount": 268,
+  "droppedNoName": 0,
+  "validCount": 268,
+  "rejectedCount": 0,
+  "new": 239,
+  "enriched": 25,
+  "conflicts": 4,
+  "over300": 2,
+  "existingSynagogues": 2739,
+  "mergedSynagogues": 2982,
+  "coordinateSource": "ArcGIS server outSR=4326 (authoritative WGS84)",
+  "datumShiftFromPureItmMeters": {
+    "comparedCount": 268,
+    "maxMeters": 77.12,
+    "avgMeters": 77.09
+  },
+  "dryRun": true,
+  "liveDataTouched": false
+}

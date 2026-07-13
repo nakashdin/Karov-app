@@ -1,0 +1,36 @@
+{
+  "generatedNote": "PHASE 25 DRY-RUN — Kiryat Ono only (kiryatono.muni.il). GovMap ADDR_V1 (no native coords on source). Gender-aware dedup vs live. No write, no publish, no rebuild.",
+  "source": {
+    "name": "עיריית קריית אונו",
+    "url": "https://www.kiryatono.muni.il/מקוואות/",
+    "type": "municipal (server-rendered)",
+    "parsed": 6
+  },
+  "totalParsed": 6,
+  "liveCityBefore": 0,
+  "duplicates": 0,
+  "excluded": 1,
+  "writeReady": 5,
+  "writeReadyByGender": {
+    "נשים": 2,
+    "גברים": 1,
+    "כלים": 2
+  },
+  "idCollisions": 0,
+  "duplicateAppIds": 0,
+  "finalRecommendedWriteCount": 5,
+  "liveMikvehBefore": 696,
+  "estimatedTotalAfterWrite": 701,
+  "notes": [
+    "Kiryat Ono had 0 live mikvehs (cityId=\"קרית אונו\"). Source has no coordinates → GovMap ADDR_V1.",
+    "ש\"י עגנון 1: street exists in GovMap but house-number 1 not in the ADDR_V1 layer → excluded (no street-centroid/fabrication). Candidate for manual coordinate."
+  ],
+  "rollbackPlan": [
+    "Backup places.osm.json (+cities) before any write",
+    "Additive append only; do NOT run rebuildAppDataset"
+  ],
+  "dryRun": true,
+  "liveDataTouched": false,
+  "publishPerformed": false,
+  "rebuildTouched": false
+}

@@ -1,0 +1,74 @@
+{
+  "generatedNote": "PHASE 20 DRY-RUN — 5 official street-address councils (Rishon LeZion, Ramat Gan, Givatayim, Kiryat Ata, Ashdod). Address-level coords only (Waze bbox-validated OR GovMap ADDR_V1). No Nominatim, no settlement-level. No DB write, no publish, no rebuild.",
+  "sources": {
+    "ראשון לציון": {
+      "url": "https://mdrl.org.il/מקוואות/",
+      "parsed": 17,
+      "duplicateVsLive": 17,
+      "withinBatchDup": 0,
+      "excluded": 0,
+      "writeReady": 0
+    },
+    "רמת גן": {
+      "url": "https://mdrg.org.il/women-mikve/",
+      "parsed": 12,
+      "duplicateVsLive": 12,
+      "withinBatchDup": 0,
+      "excluded": 0,
+      "writeReady": 0
+    },
+    "גבעתיים": {
+      "url": "https://mdgiva.org/מקוואות/",
+      "parsed": 3,
+      "duplicateVsLive": 3,
+      "withinBatchDup": 0,
+      "excluded": 0,
+      "writeReady": 0
+    },
+    "קרית אתא": {
+      "url": "https://www.kiryat-ata.org.il/residentservice/religiousservices/מקוואות/",
+      "parsed": 5,
+      "duplicateVsLive": 5,
+      "withinBatchDup": 0,
+      "excluded": 0,
+      "writeReady": 0
+    },
+    "אשדוד": {
+      "url": "https://ashdodmd.org/mikvaot/",
+      "parsed": 11,
+      "duplicateVsLive": 0,
+      "withinBatchDup": 0,
+      "excluded": 3,
+      "writeReady": 8
+    }
+  },
+  "totalParsed": 48,
+  "duplicatesVsLive": 37,
+  "withinBatchDuplicates": 0,
+  "excludedNoAddressCoord": 3,
+  "writeReady": 8,
+  "writeReadyByCity": {
+    "אשדוד": 8
+  },
+  "idCollisions": 0,
+  "duplicateAppIds": 0,
+  "finalRecommendedWriteCount": 8,
+  "liveMikvehBefore": 615,
+  "estimatedTotalAfterWrite": 623,
+  "keyFinding": "Of the 5 cities, only אשדוד was a real gap (0 live). ראשון לציון / רמת גן / גבעתיים / קרית אתא are already covered in the live 615 (recon records dedup against existing buildings). Net-new = Ashdod address-geocoded mikvahs.",
+  "enrichmentOpportunity": "Many live records in the 4 covered cities lack attendant/hours/accessibility that these councils publish — a future ENRICHMENT pass (fill-empty-only, per golden rules) could backfill them. Not done here.",
+  "phase19CarryOver": {
+    "writeReadyRecords": 8,
+    "note": "Phase 19 (Beit Shemesh + Kiryat Gat) write-ready — still NOT written."
+  },
+  "accumulatedWriteReadyForNextWrite": 16,
+  "accumulatedNote": "Phase 19 (8) + Phase 20 (8) = 16 records ready for ONE additive write when authorized.",
+  "rollbackPlan": [
+    "Backup places.osm.json → places.osm.pre-phase20.backup.json (+cities) before any write",
+    "Additive append only; do NOT run rebuildAppDataset"
+  ],
+  "dryRun": true,
+  "liveDataTouched": false,
+  "publishPerformed": false,
+  "rebuildTouched": false
+}

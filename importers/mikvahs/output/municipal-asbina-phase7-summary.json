@@ -1,0 +1,84 @@
+{
+  "generatedNote": "PHASE 7 DRY-RUN — additional א.ש בינה municipalities. Preview only. No DB write, no merge, no geocode, no publish. Additive. Stopped when the candidate list was exhausted.",
+  "platformFingerprint": "footer credit \"א.ש בינה\" / \"א.ש. בינה\" OR content/template.css|js (developer: binaa.co.il)",
+  "candidatesEvaluated": 10,
+  "sitesPlatformConfirmed": 5,
+  "sitesWithMikvahTable": 2,
+  "municipalitiesIntegrated": 2,
+  "municipalitiesIntegratedList": [
+    "מועצה אזורית מטה בנימין (43)",
+    "המועצה הדתית שדות נגב (16)"
+  ],
+  "candidatesNeedingManualUrl": [
+    "עיריית קרית גת",
+    "מועצה מקומית גדרה",
+    "מועצה אזורית באר טוביה",
+    "עיריית אילת"
+  ],
+  "candidatesNoStructuredTable": [
+    "עיריית כפר סבא [no-structured-table]",
+    "מועצה מקומית קדומים [no-structured-table]",
+    "מועצה אזורית מטה יהודה [fetch-failed (404)]",
+    "מועצה מקומית אזור [no-structured-table]"
+  ],
+  "recordsExtracted": 59,
+  "classification": {
+    "exact_match": 14,
+    "probable_match": 15,
+    "new_record": 30,
+    "manual_review": 0
+  },
+  "trulyNewMikvahs": 30,
+  "duplicates": 29,
+  "coverageByCity": {
+    "אדם": 1,
+    "אחיה": 1,
+    "אש קודש": 1,
+    "אלון": 1,
+    "בני אדם": 1,
+    "גבעת אסף": 1,
+    "גבעת הרואה": 1,
+    "גבעת הראל": 1,
+    "חרשה": 1,
+    "חשמונאים": 1,
+    "כוכב יעקב": 1,
+    "כרם רעים": 1,
+    "מגרון": 1,
+    "מכמש": 1,
+    "מעלה לבונה": 1,
+    "מתתיהו": 1,
+    "נווה צוף": 1,
+    "נריה": 1,
+    "עדי עד": 1,
+    "עטרת": 1,
+    "עלי מרכז": 1,
+    "עלי שכונת היובל": 1,
+    "עלי פלגי מים": 1,
+    "עפרה": 1,
+    "פסגות": 1,
+    "קידה": 1,
+    "רימונים": 1,
+    "שבות רחל": 1,
+    "תל ציון": 1,
+    "מעגלים": 1
+  },
+  "fieldCoverage": {
+    "name": 100,
+    "city": 100,
+    "address": 17,
+    "phone": 95,
+    "openingHours": 0,
+    "balanit": 100
+  },
+  "validation": {
+    "passed": 59,
+    "errors": 0,
+    "warnings": 50
+  },
+  "baselineUniqueBeforePhase7": 687,
+  "estimatedNationalTotalAfterPhase7": "~687 + 30 new = ~717 unique",
+  "stoppingCondition": "candidate list (developer portfolio + footer fingerprint) exhausted — no further א.ש בינה municipalities pending. Did NOT proceed to national aggregators.",
+  "dryRun": true,
+  "liveDataTouched": false,
+  "publishPerformed": false
+}

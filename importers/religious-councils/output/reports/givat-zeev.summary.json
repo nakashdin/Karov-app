@@ -1,0 +1,19 @@
+{
+  "council": "המועצה הדתית גבעת זאב",
+  "variant": "markers",
+  "expectedCount": 62,
+  "fetchedCount": 62,
+  "validCount": 62,
+  "rejectedCount": 0,
+  "coordSource": "markers",
+  "withNativeCoordinates": 62,
+  "missingCoordinates": 0,
+  "duplicateSourceIds": 0,
+  "enrichedFromCards": 58,
+  "ambiguousEnrich": 4,
+  "countMatches": true,
+  "pagesFetched": 1,
+  "dryRun": true,
+  "liveDataTouched": false,
+  "generatedAt": "2026-06-18"
+}

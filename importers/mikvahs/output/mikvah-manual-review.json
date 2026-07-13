@@ -1,0 +1,58 @@
+[
+  {
+    "sourceName": "data.gov.il — מקוואות טהרה 2018 (archive)",
+    "domain": "data.gov.il",
+    "category": "gov-dataset",
+    "confidence": 0.85,
+    "classification": "manual-review",
+    "reason": "Older XLS snapshot superseded by the live 'mikve' dataset. Decide whether to keep as historical change-detection cross-reference."
+  },
+  {
+    "sourceName": "Kipa — מאגר המקוואות",
+    "domain": "kipa.co.il",
+    "category": "national-org",
+    "confidence": 0.55,
+    "classification": "manual-review",
+    "reason": "Commercial portal claims a 'largest mikvah database' but structure/coverage/depth unverified. Inspect directory before deciding."
+  },
+  {
+    "sourceName": "מועצה דתית יהוד — מקוואות",
+    "domain": "ydat.org.il",
+    "category": "religious-council",
+    "confidence": 0.5,
+    "classification": "manual-review",
+    "reason": "Search indexes /directory-mikvah/ (SabaiApps) but direct fetch 404'd twice. Re-verify the real slug/URL manually; synagogue dir is confirmed SabaiApps 'waze'."
+  },
+  {
+    "sourceName": "פלטפורמת *.md.gov.il — מקוואות",
+    "domain": "md.gov.il",
+    "category": "religious-council",
+    "confidence": 0.4,
+    "classification": "manual-review",
+    "reason": "New unified gov CMS hosting several councils (Yokneam, Emek Hefer, Zichron Yaakov, Givatayim, Mevaseret, Gush Etzion, Maale Adumim) at /home/mikve/. Unclear if pages are structured per-mikvah. Host was flaky. One adapter could cover many councils — worth a dedicated probe."
+  },
+  {
+    "sourceName": "עיריית בני ברק — מחלקת מקוואות",
+    "domain": "bnei-brak.muni.il",
+    "category": "municipality",
+    "confidence": 0.5,
+    "classification": "manual-review",
+    "reason": "SharePoint page appears to be department contact info, not a structured location list; returns 403. Very high-density city — manually check whether a real per-mikvah list exists elsewhere on the site or via the religious council."
+  },
+  {
+    "sourceName": "Google Maps / Places API — 'מקווה' POIs",
+    "domain": "maps.google.com",
+    "category": "crowd-map",
+    "confidence": 0.5,
+    "classification": "manual-review",
+    "reason": "Best practical operational coverage but ToS forbids bulk export/caching. Decision: use only as a paid live-lookup/enrichment layer for verification, never as an ingested dataset. DO NOT scrape."
+  },
+  {
+    "sourceName": "Mikvah Online app (מקווה אונליין)",
+    "domain": "play.google.com",
+    "category": "crowd-map",
+    "confidence": 0.35,
+    "classification": "manual-review",
+    "reason": "Closed booking app with an internal DB of participating mikvahs but no public API. Treat as a potential B2B/partnership data source, not an open dataset."
+  }
+]

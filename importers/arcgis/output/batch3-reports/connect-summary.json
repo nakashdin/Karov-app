@@ -1,0 +1,34 @@
+{
+  "batch": [
+    "holon",
+    "herzliya",
+    "or-akiva",
+    "kiryat-ono",
+    "lod"
+  ],
+  "held_modiin_ilit": "no existing cityId — held this batch",
+  "cityIdUsed": {
+    "holon": "חולון",
+    "herzliya": "הרצליה",
+    "or-akiva": "אור עקיבא",
+    "kiryat-ono": "קריית אונו",
+    "lod": "לוד"
+  },
+  "beforeSynagogues": 4030,
+  "addedNew": 234,
+  "enrichedExisting": 78,
+  "afterSynagogues": 4264,
+  "heldConflicts": 10,
+  "heldOver300": 4,
+  "beforeTotal": 4932,
+  "afterTotal": 5166,
+  "deletions": 0,
+  "mikvehBefore": 556,
+  "mikvehAfter": 556,
+  "restaurantBefore": 346,
+  "restaurantAfter": 346,
+  "arcgisBefore": 1291,
+  "arcgisAfter": 1525,
+  "backupCreated": "C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\places.osm.pre-arcgis-batch3.backup.json",
+  "citiesFileTouched": false
+}

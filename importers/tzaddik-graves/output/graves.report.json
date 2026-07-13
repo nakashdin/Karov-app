@@ -1,0 +1,4138 @@
+{
+  "runDate": "2026-07-05T09:14:51.141Z",
+  "phase": "phase-4",
+  "sources": {
+    "osm": {
+      "fetched": 31,
+      "accepted": 30
+    },
+    "wikidata": {
+      "fetched": 40,
+      "accepted": 39
+    }
+  },
+  "totals": {
+    "fetched": 71,
+    "accepted": 76,
+    "rejected": 2,
+    "duplicates": 0,
+    "merged": 6,
+    "final": 70
+  },
+  "confidence": {
+    "high": 22,
+    "medium": 9,
+    "low": 0
+  },
+  "mustHaveCheck": [
+    {
+      "name": "קבר רחל",
+      "found": true,
+      "foundAs": "קבר רחל",
+      "sourceId": "manual-kever-rachel",
+      "confirmedBy": [
+        "qid",
+        "coords",
+        "name"
+      ],
+      "expectedArea": {
+        "latMin": 31.69,
+        "latMax": 31.76,
+        "lngMin": 35.17,
+        "lngMax": 35.24
+      }
+    },
+    {
+      "name": "מערת המכפלה",
+      "found": true,
+      "foundAs": "מערת המכפלה",
+      "sourceId": "manual-machpelah",
+      "confirmedBy": [
+        "qid",
+        "coords",
+        "name"
+      ],
+      "expectedArea": {
+        "latMin": 31.5,
+        "latMax": 31.55,
+        "lngMin": 35.08,
+        "lngMax": 35.14
+      }
+    },
+    {
+      "name": "קבר יוסף",
+      "found": true,
+      "foundAs": "קבר יוסף",
+      "sourceId": "manual-kever-yosef",
+      "confirmedBy": [
+        "qid",
+        "coords",
+        "name"
+      ],
+      "expectedArea": {
+        "latMin": 32.19,
+        "latMax": 32.24,
+        "lngMin": 35.26,
+        "lngMax": 35.31
+      }
+    },
+    {
+      "name": "קבר רבי שמעון בר יוחאי (רשב\"י)",
+      "found": true,
+      "foundAs": "קבר רבי שמעון בר יוחאי",
+      "sourceId": "osm-osm-way-493703983",
+      "confirmedBy": [
+        "qid",
+        "name"
+      ],
+      "expectedArea": {
+        "latMin": 32.97,
+        "latMax": 33.01,
+        "lngMin": 35.45,
+        "lngMax": 35.52
+      }
+    },
+    {
+      "name": "קבר רבי מאיר בעל הנס",
+      "found": true,
+      "foundAs": "קבר רבי מאיר בעל הנס",
+      "sourceId": "wikidata-grave-Q6653557",
+      "confirmedBy": [
+        "qid",
+        "name"
+      ],
+      "expectedArea": {
+        "latMin": 32.77,
+        "latMax": 32.82,
+        "lngMin": 35.52,
+        "lngMax": 35.57
+      }
+    },
+    {
+      "name": "קבר רבי עקיבא",
+      "found": true,
+      "foundAs": "קבר רבי עקיבא",
+      "sourceId": "manual-kever-akiva",
+      "confirmedBy": [
+        "coords",
+        "name"
+      ],
+      "expectedArea": {
+        "latMin": 32.76,
+        "latMax": 32.81,
+        "lngMin": 35.51,
+        "lngMax": 35.55
+      }
+    },
+    {
+      "name": "קבר האר\"י הקדוש",
+      "found": true,
+      "foundAs": "קבר האר\"י הקדוש",
+      "sourceId": "manual-kever-ari",
+      "confirmedBy": [
+        "coords",
+        "name"
+      ],
+      "expectedArea": {
+        "latMin": 32.95,
+        "latMax": 32.98,
+        "lngMin": 35.48,
+        "lngMax": 35.51
+      }
+    },
+    {
+      "name": "קבר רבי נחמן מברסלב",
+      "found": false,
+      "note": "מחוץ לגבולות ישראל (אומן, אוקראינה) — מחוץ לסקופ הנוכחי",
+      "expectedArea": {
+        "latMin": 48.7,
+        "latMax": 48.8,
+        "lngMin": 30.2,
+        "lngMax": 30.3
+      }
+    }
+  ],
+  "rejected": [
+    {
+      "sourceId": "osm-osm-node-8588068403",
+      "name": null,
+      "reason": "שם חסר"
+    },
+    {
+      "sourceId": "wikidata-grave-Q1084424",
+      "name": "Massac",
+      "reason": "קואורדינטות מחוץ לישראל (45.8664, -0.2217)"
+    }
+  ],
+  "merged": [
+    {
+      "kept": {
+        "sourceId": "manual-machpelah",
+        "source": "manual",
+        "name": "מערת המכפלה",
+        "lat": 31.5244,
+        "lng": 35.1103,
+        "city": "חברון",
+        "buriedPerson": "האבות: אברהם, יצחק, יעקב, שרה, רבקה, לאה",
+        "wikidataId": "Q204200",
+        "verifiedAt": "2026-07-05",
+        "confidenceScore": 100,
+        "confidenceLevel": "high",
+        "confidenceReason": "seed ידני | Q204200 | קואורדינטות מאומתות | +אימות מקור שני | +אימות מקור שני",
+        "extra": {
+          "isMustHave": true,
+          "manualSeed": true
+        }
+      },
+      "dropped": {
+        "sourceId": "wikidata-grave-Q204200",
+        "source": "wikidata",
+        "name": "מערת המכפלה",
+        "lat": 31.524672222,
+        "lng": 35.110758333,
+        "wikidataId": "Q204200",
+        "verifiedAt": "2026-07-05",
+        "extra": {
+          "sparqlQuery": "musthave",
+          "wikidataUri": "http://www.wikidata.org/entity/Q204200",
+          "isMustHave": true
+        },
+        "confidenceScore": 70,
+        "confidenceLevel": "high",
+        "confidenceReason": "Wikidata איש דת | +שם מכיל מילת קבר | +שם עברי"
+      }
+    },
+    {
+      "kept": {
+        "sourceId": "manual-machpelah",
+        "source": "manual",
+        "name": "מערת המכפלה",
+        "lat": 31.5244,
+        "lng": 35.1103,
+        "city": "חברון",
+        "buriedPerson": "האבות: אברהם, יצחק, יעקב, שרה, רבקה, לאה",
+        "wikidataId": "Q204200",
+        "verifiedAt": "2026-07-05",
+        "confidenceScore": 100,
+        "confidenceLevel": "high",
+        "confidenceReason": "seed ידני | Q204200 | קואורדינטות מאומתות | +אימות מקור שני | +אימות מקור שני",
+        "extra": {
+          "isMustHave": true,
+          "manualSeed": true
+        }
+      },
+      "dropped": {
+        "sourceId": "wikidata-grave-Q6732917",
+        "source": "wikidata",
+        "name": "קבר אבנר בן נר",
+        "lat": 31.524472222,
+        "lng": 35.109972222,
+        "wikidataId": "Q6732917",
+        "verifiedAt": "2026-07-05",
+        "extra": {
+          "sparqlQuery": "musthave",
+          "wikidataUri": "http://www.wikidata.org/entity/Q6732917",
+          "isMustHave": true
+        },
+        "confidenceScore": 70,
+        "confidenceLevel": "high",
+        "confidenceReason": "Wikidata איש דת | +שם מכיל מילת קבר | +שם עברי"
+      }
+    },
+    {
+      "kept": {
+        "sourceId": "manual-kever-yosef",
+        "source": "manual",
+        "name": "קבר יוסף",
+        "lat": 32.2124,
+        "lng": 35.2845,
+        "city": "שכם",
+        "buriedPerson": "יוסף הצדיק",
+        "wikidataId": "Q1297538",
+        "verifiedAt": "2026-07-05",
+        "confidenceScore": 98,
+        "confidenceLevel": "high",
+        "confidenceReason": "seed ידני | Q1297538 | קואורדינטות מאומתות | +אימות מקור שני",
+        "extra": {
+          "isMustHave": true,
+          "manualSeed": true
+        }
+      },
+      "dropped": {
+        "sourceId": "wikidata-grave-Q1297538",
+        "source": "wikidata",
+        "name": "קבר יוסף",
+        "lat": 32.2126898,
+        "lng": 35.2854733,
+        "wikidataId": "Q1297538",
+        "verifiedAt": "2026-07-05",
+        "extra": {
+          "sparqlQuery": "musthave",
+          "wikidataUri": "http://www.wikidata.org/entity/Q1297538",
+          "isMustHave": true
+        },
+        "confidenceScore": 70,
+        "confidenceLevel": "high",
+        "confidenceReason": "Wikidata איש דת | +שם מכיל מילת קבר | +שם עברי"
+      }
+    },
+    {
+      "kept": {
+        "sourceId": "osm-osm-way-161058945",
+        "source": "osm",
+        "name": "קבר דוד",
+        "lat": 31.7714992,
+        "lng": 35.2291,
+        "city": "ירושלים",
+        "address": "ירושלים",
+        "osmId": "way/161058945",
+        "verifiedAt": "2026-07-05",
+        "extra": {
+          "osmType": "way",
+          "osmSubtype": "worship",
+          "osmQuery": "worship-filtered",
+          "osmTags": {
+            "addr:city": "Jerusalem",
+            "alt_name:br": "Bez Dewi",
+            "amenity": "place_of_worship",
+            "building": "yes",
+            "denomination": "orthodox",
+            "name": "David's Tomb",
+            "name:ar": "مقام النبي داود",
+            "name:br": "Bez David",
+            "name:en": "David's Tomb",
+            "name:he": "קבר דוד",
+            "name:ml": "ദാവീദിന്റെ ശവകുടീരം",
+            "religion": "jewish",
+            "wikidata": "Q1177668",
+            "wikipedia": "en:David's Tomb"
+          },
+          "wikidataTag": "Q1177668"
+        },
+        "confidenceScore": 77,
+        "confidenceLevel": "high",
+        "confidenceReason": "OSM אחר | +שם מכיל מילת קבר | +OSM wikidata tag | +שם עברי | +OSM+Wikidata match",
+        "manual_review_required": true,
+        "manual_review_reason": "מקור יחיד ללא Wikidata",
+        "wikidataId": "Q1177668"
+      },
+      "dropped": {
+        "sourceId": "wikidata-grave-Q1177668",
+        "source": "wikidata",
+        "name": "קבר דוד המלך",
+        "lat": 31.771638888,
+        "lng": 35.229013888,
+        "wikidataId": "Q1177668",
+        "verifiedAt": "2026-07-05",
+        "extra": {
+          "sparqlQuery": "graves",
+          "wikidataUri": "http://www.wikidata.org/entity/Q1177668"
+        },
+        "confidenceScore": 80,
+        "confidenceLevel": "high",
+        "confidenceReason": "Wikidata ישות קבר | +שם מכיל מילת קבר | +שם עברי"
+      }
+    },
+    {
+      "kept": {
+        "sourceId": "osm-osm-node-1339404829",
+        "source": "osm",
+        "name": "ציונו של חבקוק הנביא",
+        "lat": 32.8897121,
+        "lng": 35.4793449,
+        "city": "קדרים",
+        "address": "קדרים",
+        "buriedPerson": "חבקוק",
+        "osmId": "node/1339404829",
+        "verifiedAt": "2026-07-05",
+        "extra": {
+          "osmType": "node",
+          "osmSubtype": "worship",
+          "osmQuery": "worship-filtered",
+          "osmTags": {
+            "amenity": "place_of_worship",
+            "name": "ציונו של חבקוק הנביא",
+            "name:en": "Havakuk HaNavi",
+            "name:he": "ציונו של חבקוק הנביא",
+            "religion": "jewish"
+          }
+        },
+        "confidenceScore": 42,
+        "confidenceLevel": "low",
+        "confidenceReason": "OSM אחר | +שם עברי | -אין מילת קבר ואין שם קבור | +OSM+Wikidata match",
+        "manual_review_required": true,
+        "manual_review_reason": "אמינות נמוכה | מקור יחיד ללא Wikidata | שם לא מזהה קבר ואין שם קבור",
+        "wikidataId": "Q18192136"
+      },
+      "dropped": {
+        "sourceId": "wikidata-grave-Q18192136",
+        "source": "wikidata",
+        "name": "קבר חבקוק",
+        "lat": 32.889472222,
+        "lng": 35.479194444,
+        "buriedPerson": "חבקוק",
+        "wikidataId": "Q18192136",
+        "verifiedAt": "2026-07-05",
+        "extra": {
+          "sparqlQuery": "rabbis",
+          "personQid": "Q135106",
+          "burialPlaceQid": "Q18192136",
+          "occupation": "Q42857",
+          "burialPlacePersonCount": 1
+        },
+        "confidenceScore": 80,
+        "confidenceLevel": "high",
+        "confidenceReason": "Wikidata איש דת | +שם מכיל מילת קבר | +שם קבור ידוע | +שם עברי"
+      }
+    },
+    {
+      "kept": {
+        "sourceId": "osm-osm-way-493703983",
+        "source": "osm",
+        "name": "קבר רבי שמעון בר יוחאי",
+        "lat": 32.9807885,
+        "lng": 35.4405621,
+        "city": "מירון",
+        "address": "מירון",
+        "buriedPerson": "שמעון בר יוחאי",
+        "osmId": "way/493703983",
+        "verifiedAt": "2026-07-05",
+        "extra": {
+          "osmType": "way",
+          "osmSubtype": "tomb",
+          "osmQuery": "tomb",
+          "osmTags": {
+            "amenity": "place_of_worship",
+            "building": "yes",
+            "historic": "tomb",
+            "name": "קבר רבי שמעון בר יוחאי",
+            "name:en": "Rabbi Shimon Bar Yochay tomb",
+            "name:he": "קבר רבי שמעון בר יוחאי",
+            "religion": "jewish",
+            "wikidata": "Q5371188"
+          },
+          "wikidataTag": "Q5371188"
+        },
+        "confidenceScore": 100,
+        "confidenceLevel": "high",
+        "confidenceReason": "OSM tomb | +שם מכיל מילת קבר | +OSM wikidata tag | +שם עברי | +OSM+Wikidata match",
+        "manual_review_required": true,
+        "manual_review_reason": "מקור יחיד ללא Wikidata",
+        "wikidataId": "Q5371188"
+      },
+      "dropped": {
+        "sourceId": "wikidata-grave-Q5371188",
+        "source": "wikidata",
+        "name": "קבר רבי שמעון בר יוחאי",
+        "lat": 32.980883249,
+        "lng": 35.440641069,
+        "buriedPerson": "שמעון בר יוחאי",
+        "wikidataId": "Q5371188",
+        "verifiedAt": "2026-07-05",
+        "extra": {
+          "sparqlQuery": "rabbis",
+          "personQid": "Q557405",
+          "burialPlaceQid": "Q5371188",
+          "occupation": "Q2259532",
+          "burialPlacePersonCount": 1
+        },
+        "confidenceScore": 80,
+        "confidenceLevel": "high",
+        "confidenceReason": "Wikidata איש דת | +שם מכיל מילת קבר | +שם קבור ידוע | +שם עברי"
+      }
+    }
+  ],
+  "records": [
+    {
+      "sourceId": "osm-osm-node-3808058083",
+      "source": "osm",
+      "name": "קבר האימהות",
+      "lat": 32.8020131,
+      "lng": 35.5227215,
+      "city": "טבריה",
+      "address": "טבריה",
+      "osmId": "node/3808058083",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "node",
+        "osmSubtype": "tomb",
+        "osmQuery": "tomb",
+        "osmTags": {
+          "historic": "tomb",
+          "name": "קבר האימהות",
+          "name:en": "Ha'imahot tomb",
+          "name:he": "קבר האימהות",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 85,
+      "confidenceLevel": "high",
+      "confidenceReason": "OSM tomb | +שם מכיל מילת קבר | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "מקור יחיד ללא Wikidata"
+    },
+    {
+      "sourceId": "osm-osm-node-9315565017",
+      "source": "osm",
+      "name": "קבר מתתיהו",
+      "lat": 31.9348867,
+      "lng": 34.9941342,
+      "city": "מבוא מודיעים",
+      "address": "מבוא מודיעים",
+      "osmId": "node/9315565017",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "node",
+        "osmSubtype": "tomb",
+        "osmQuery": "tomb",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "historic": "tomb",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/6/66/IHM_קבר_מתתיהו.jpeg",
+          "name": "קבר מתתיהו",
+          "name:he": "קבר מתתיהו",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 85,
+      "confidenceLevel": "high",
+      "confidenceReason": "OSM tomb | +שם מכיל מילת קבר | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "מקור יחיד ללא Wikidata"
+    },
+    {
+      "sourceId": "osm-osm-way-493703983",
+      "source": "osm",
+      "name": "קבר רבי שמעון בר יוחאי",
+      "lat": 32.9807885,
+      "lng": 35.4405621,
+      "city": "מירון",
+      "address": "מירון",
+      "buriedPerson": "שמעון בר יוחאי",
+      "osmId": "way/493703983",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "tomb",
+        "osmQuery": "tomb",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "historic": "tomb",
+          "name": "קבר רבי שמעון בר יוחאי",
+          "name:en": "Rabbi Shimon Bar Yochay tomb",
+          "name:he": "קבר רבי שמעון בר יוחאי",
+          "religion": "jewish",
+          "wikidata": "Q5371188"
+        },
+        "wikidataTag": "Q5371188"
+      },
+      "confidenceScore": 100,
+      "confidenceLevel": "high",
+      "confidenceReason": "OSM tomb | +שם מכיל מילת קבר | +OSM wikidata tag | +שם עברי | +OSM+Wikidata match",
+      "manual_review_required": true,
+      "manual_review_reason": "מקור יחיד ללא Wikidata",
+      "wikidataId": "Q5371188"
+    },
+    {
+      "sourceId": "osm-osm-way-514139736",
+      "source": "osm",
+      "name": "קבר חוצפית המתורגמן",
+      "lat": 32.971223,
+      "lng": 35.4821327,
+      "city": "ביריה",
+      "address": "ביריה",
+      "osmId": "way/514139736",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "tomb",
+        "osmQuery": "tomb",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "historic": "tomb",
+          "name": "קבר חוצפית המתורגמן",
+          "name:en": "Chootzpit the translator tomb",
+          "name:he": "קבר חוצפית המתורגמן",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 85,
+      "confidenceLevel": "high",
+      "confidenceReason": "OSM tomb | +שם מכיל מילת קבר | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "מקור יחיד ללא Wikidata"
+    },
+    {
+      "sourceId": "osm-osm-way-647373211",
+      "source": "osm",
+      "name": "קבר רבי יהודה בר עילאי",
+      "lat": 32.9845232,
+      "lng": 35.4903947,
+      "city": "ביריה",
+      "address": "ביריה",
+      "osmId": "way/647373211",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "tomb",
+        "osmQuery": "tomb",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "description": "קבר ר' יהודה בר אילעי ואביו. במקום חניה גדולה. יש כולל פעיל בקומה השניה.",
+          "description:he": "קבר ר' יהודה בר אילעי ואביו. במקום חניה גדולה. יש כולל פעיל בקומה השניה.",
+          "historic": "tomb",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/IHM_קבר_רבי_יהודה_בר_עילאי.jpeg",
+          "name": "קבר רבי יהודה בר עילאי",
+          "name:en": "Rabi Yehuda bar Elai Tomb",
+          "name:he": "קבר רבי יהודה בר עילאי",
+          "religion": "jewish",
+          "website": "http://nelech.co.il/2020/05/05/%d7%a6%d7%99%d7%95%d7%9f-%d7%a7%d7%91%d7%a8-%d7%a8%d7%91%d7%99-%d7%99%d7%94%d7%95%d7%93%d7%94-%d7%91%d7%a8-%d7%90%d7%9c%d7%a2%d7%90%d7%99/"
+        }
+      },
+      "confidenceScore": 85,
+      "confidenceLevel": "high",
+      "confidenceReason": "OSM tomb | +שם מכיל מילת קבר | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "מקור יחיד ללא Wikidata"
+    },
+    {
+      "sourceId": "osm-osm-node-8626554287",
+      "source": "osm",
+      "name": "רבי יהודה בר עילאי",
+      "lat": 32.984543,
+      "lng": 35.4904373,
+      "city": "ביריה",
+      "address": "ביריה",
+      "osmId": "node/8626554287",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "node",
+        "osmSubtype": "other",
+        "osmQuery": "shrine",
+        "osmTags": {
+          "historic": "wayside_shrine",
+          "name": "רבי יהודה בר עילאי",
+          "name:he": "רבי יהודה בר עילאי",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 30,
+      "confidenceLevel": "low",
+      "confidenceReason": "OSM אחר | +שם עברי | -אין מילת קבר ואין שם קבור",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | מקור יחיד ללא Wikidata | שם לא מזהה קבר ואין שם קבור"
+    },
+    {
+      "sourceId": "osm-osm-node-8626554294",
+      "source": "osm",
+      "name": "רבי יוסי סראגוסי",
+      "lat": 32.9824365,
+      "lng": 35.4900965,
+      "city": "ביריה",
+      "address": "ביריה",
+      "osmId": "node/8626554294",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "node",
+        "osmSubtype": "other",
+        "osmQuery": "shrine",
+        "osmTags": {
+          "historic": "wayside_shrine",
+          "name": "רבי יוסי סראגוסי",
+          "name:he": "רבי יוסי סראגוסי",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 30,
+      "confidenceLevel": "low",
+      "confidenceReason": "OSM אחר | +שם עברי | -אין מילת קבר ואין שם קבור",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | מקור יחיד ללא Wikidata | שם לא מזהה קבר ואין שם קבור"
+    },
+    {
+      "sourceId": "osm-osm-node-1156237259",
+      "source": "osm",
+      "name": "קבר דן בן יעקב",
+      "lat": 31.7855666,
+      "lng": 34.9987936,
+      "city": "אשתאול",
+      "address": "אשתאול",
+      "osmId": "node/1156237259",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "node",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "historic": "ruins",
+          "name": "קבר דן בן יעקב",
+          "name:en": "Dan Ben Yakov Grave",
+          "name:he": "קבר דן בן יעקב",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 60,
+      "confidenceLevel": "medium",
+      "confidenceReason": "OSM אחר | +שם מכיל מילת קבר | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "מקור יחיד ללא Wikidata"
+    },
+    {
+      "sourceId": "osm-osm-node-1339404829",
+      "source": "osm",
+      "name": "ציונו של חבקוק הנביא",
+      "lat": 32.8897121,
+      "lng": 35.4793449,
+      "city": "קדרים",
+      "address": "קדרים",
+      "buriedPerson": "חבקוק",
+      "osmId": "node/1339404829",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "node",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "name": "ציונו של חבקוק הנביא",
+          "name:en": "Havakuk HaNavi",
+          "name:he": "ציונו של חבקוק הנביא",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 42,
+      "confidenceLevel": "low",
+      "confidenceReason": "OSM אחר | +שם עברי | -אין מילת קבר ואין שם קבור | +OSM+Wikidata match",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | מקור יחיד ללא Wikidata | שם לא מזהה קבר ואין שם קבור",
+      "wikidataId": "Q18192136"
+    },
+    {
+      "sourceId": "osm-osm-node-1339426969",
+      "source": "osm",
+      "name": "קברי התנאים בצומת חנניה",
+      "lat": 32.921319,
+      "lng": 35.4213799,
+      "city": "כפר חנניה",
+      "address": "כפר חנניה",
+      "osmId": "node/1339426969",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "node",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "name": "קברי התנאים בצומת חנניה",
+          "name:en": "HaTanaim Toombs in Hananya Junction",
+          "name:he": "קברי התנאים בצומת חנניה",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 60,
+      "confidenceLevel": "medium",
+      "confidenceReason": "OSM אחר | +שם מכיל מילת קבר | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "מקור יחיד ללא Wikidata"
+    },
+    {
+      "sourceId": "osm-osm-node-1339520311",
+      "source": "osm",
+      "name": "קבר שמעיה ואבטליון",
+      "lat": 33.022226,
+      "lng": 35.4452732,
+      "city": "ג'ש",
+      "address": "ג'ש",
+      "osmId": "node/1339520311",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "node",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "name": "קבר שמעיה ואבטליון",
+          "name:ar": "قبر شيميا وأفتاليون",
+          "name:en": "Shmaaya and Avtalyon",
+          "name:he": "קבר שמעיה ואבטליון",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 60,
+      "confidenceLevel": "medium",
+      "confidenceReason": "OSM אחר | +שם מכיל מילת קבר | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "מקור יחיד ללא Wikidata"
+    },
+    {
+      "sourceId": "osm-osm-node-4453179605",
+      "source": "osm",
+      "name": "מערת הסנהדרין הקטנה",
+      "lat": 31.7920426,
+      "lng": 35.2304935,
+      "city": "ירושלים",
+      "address": "ירושלים",
+      "osmId": "node/4453179605",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "node",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "name": "מערת הסנהדרין הקטנה",
+          "name:en": "Cave of the Minor Sanhedrin",
+          "name:he": "מערת הסנהדרין הקטנה",
+          "religion": "jewish",
+          "wikidata": "Q16133028"
+        },
+        "wikidataTag": "Q16133028"
+      },
+      "confidenceScore": 65,
+      "confidenceLevel": "medium",
+      "confidenceReason": "OSM אחר | +שם מכיל מילת קבר | +OSM wikidata tag | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "מקור יחיד ללא Wikidata"
+    },
+    {
+      "sourceId": "osm-osm-node-4488634668",
+      "source": "osm",
+      "name": "אליהו הנביא",
+      "lat": 32.2732089,
+      "lng": 34.9356635,
+      "city": "עין שריד",
+      "address": "עין שריד",
+      "osmId": "node/4488634668",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "node",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "name": "אליהו הנביא",
+          "name:en": "Eliyahu HaNavi",
+          "name:he": "אליהו הנביא",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 30,
+      "confidenceLevel": "low",
+      "confidenceReason": "OSM אחר | +שם עברי | -אין מילת קבר ואין שם קבור",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | מקור יחיד ללא Wikidata | שם לא מזהה קבר ואין שם קבור"
+    },
+    {
+      "sourceId": "osm-osm-node-7417569686",
+      "source": "osm",
+      "name": "ציון התנא רבי יהודה בן בבא",
+      "lat": 32.7999816,
+      "lng": 35.1580846,
+      "city": "שפרעם",
+      "address": "שפרעם",
+      "osmId": "node/7417569686",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "node",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "description": "רבי יהודה בן בבא יצא לסמוך 5 רבנים בין אושא לשפרעם על אף איסור ההסמכה ולימוד התורה שהטילו הרומאים. בין הרבנים שהוסמכו, רבי שמעון בר יוחאי.",
+          "description:he": "רבי יהודה בן בבא יצא לסמוך 5 רבנים בין אושא לשפרעם על אף איסור ההסמכה ולימוד התורה שהטילו הרומאים. בין הרבנים שהוסמכו, רבי שמעון בר יוחאי.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/Israel_Hiking_Map_שפרעם_-_ציון_קבר_רבי_יהודה_בן_בבא.jpeg",
+          "name": "ציון התנא רבי יהודה בן בבא",
+          "name:ar": "صهيون تانا الحاخام يهودا بن بابا",
+          "name:he": "ציון התנא רבי יהודה בן בבא",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 60,
+      "confidenceLevel": "medium",
+      "confidenceReason": "OSM אחר | +שם מכיל מילת קבר | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "מקור יחיד ללא Wikidata"
+    },
+    {
+      "sourceId": "osm-osm-node-8281773511",
+      "source": "osm",
+      "name": "קבר יהודה",
+      "lat": 32.0308736,
+      "lng": 34.8875279,
+      "city": "יהוד מונוסון",
+      "address": "יהוד מונוסון",
+      "osmId": "node/8281773511",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "node",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/e/eb/The_Tomb_of_Judah_Jacob%27s_Son_ap_007.jpg",
+          "name": "קבר יהודה",
+          "name:ar": "مقام النبي هودا",
+          "name:en": "Tomb of Judah",
+          "name:he": "קבר יהודה",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 60,
+      "confidenceLevel": "medium",
+      "confidenceReason": "OSM אחר | +שם מכיל מילת קבר | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "מקור יחיד ללא Wikidata"
+    },
+    {
+      "sourceId": "osm-osm-node-10866619321",
+      "source": "osm",
+      "name": "בית הכנסת אליהו הנביא",
+      "lat": 32.059521,
+      "lng": 34.7726947,
+      "city": "קריית מאיר",
+      "address": "קריית מאיר",
+      "osmId": "node/10866619321",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "node",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "check_date": "2025-12-01",
+          "name": "בית הכנסת אליהו הנביא",
+          "name:he": "בית הכנסת אליהו הנביא",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 30,
+      "confidenceLevel": "low",
+      "confidenceReason": "OSM אחר | +שם עברי | -אין מילת קבר ואין שם קבור",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | מקור יחיד ללא Wikidata | שם לא מזהה קבר ואין שם קבור"
+    },
+    {
+      "sourceId": "osm-osm-way-161058945",
+      "source": "osm",
+      "name": "קבר דוד",
+      "lat": 31.7714992,
+      "lng": 35.2291,
+      "city": "ירושלים",
+      "address": "ירושלים",
+      "osmId": "way/161058945",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "addr:city": "Jerusalem",
+          "alt_name:br": "Bez Dewi",
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "denomination": "orthodox",
+          "name": "David's Tomb",
+          "name:ar": "مقام النبي داود",
+          "name:br": "Bez David",
+          "name:en": "David's Tomb",
+          "name:he": "קבר דוד",
+          "name:ml": "ദാവീദിന്റെ ശവകുടീരം",
+          "religion": "jewish",
+          "wikidata": "Q1177668",
+          "wikipedia": "en:David's Tomb"
+        },
+        "wikidataTag": "Q1177668"
+      },
+      "confidenceScore": 77,
+      "confidenceLevel": "high",
+      "confidenceReason": "OSM אחר | +שם מכיל מילת קבר | +OSM wikidata tag | +שם עברי | +OSM+Wikidata match",
+      "manual_review_required": true,
+      "manual_review_reason": "מקור יחיד ללא Wikidata",
+      "wikidataId": "Q1177668"
+    },
+    {
+      "sourceId": "osm-osm-way-161058978",
+      "source": "osm",
+      "name": "קבר דוד המלך",
+      "lat": 31.7717503,
+      "lng": 35.2292401,
+      "city": "ירושלים",
+      "address": "ירושלים",
+      "osmId": "way/161058978",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "addr:city": "Jerusalem",
+          "amenity": "place_of_worship",
+          "building": "synagogue",
+          "denomination": "orthodox",
+          "name": "קבר דוד המלך",
+          "name:ar": "قبر داود",
+          "name:br": "Bez David",
+          "name:de": "Davidsgrab",
+          "name:en": "David's Tomb",
+          "name:fi": "Daavidin hauta",
+          "name:he": "קבר דוד המלך",
+          "name:hu": "Dávid sírja",
+          "name:it": "Tomba di Davide",
+          "name:ro": "Mormântul Regelui David",
+          "religion": "jewish",
+          "wikidata": "Q1177668",
+          "wikipedia": "en:David's Tomb",
+          "wikipedia:en": "David's Tomb"
+        },
+        "wikidataTag": "Q1177668"
+      },
+      "confidenceScore": 65,
+      "confidenceLevel": "medium",
+      "confidenceReason": "OSM אחר | +שם מכיל מילת קבר | +OSM wikidata tag | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "מקור יחיד ללא Wikidata"
+    },
+    {
+      "sourceId": "osm-osm-way-166098884",
+      "source": "osm",
+      "name": "שמעון הצדיק",
+      "lat": 31.7580765,
+      "lng": 35.205976,
+      "city": "רמת רחל",
+      "address": "רמת רחל",
+      "osmId": "way/166098884",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "name": "שמעון הצדיק",
+          "name:en": "Shimon Ha'Tzadik",
+          "name:he": "שמעון הצדיק",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 30,
+      "confidenceLevel": "low",
+      "confidenceReason": "OSM אחר | +שם עברי | -אין מילת קבר ואין שם קבור",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | מקור יחיד ללא Wikidata | שם לא מזהה קבר ואין שם קבור"
+    },
+    {
+      "sourceId": "osm-osm-way-166389921",
+      "source": "osm",
+      "name": "אליהו הנביא",
+      "lat": 31.7537904,
+      "lng": 35.1937923,
+      "city": "רמת רחל",
+      "address": "רמת רחל",
+      "osmId": "way/166389921",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "name": "אליהו הנביא",
+          "name:en": "Eliyahu HaNavi",
+          "name:he": "אליהו הנביא",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 30,
+      "confidenceLevel": "low",
+      "confidenceReason": "OSM אחר | +שם עברי | -אין מילת קבר ואין שם קבור",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | מקור יחיד ללא Wikidata | שם לא מזהה קבר ואין שם קבור"
+    },
+    {
+      "sourceId": "osm-osm-way-183194389",
+      "source": "osm",
+      "name": "אליהו הנביא",
+      "lat": 31.7564903,
+      "lng": 35.2095927,
+      "city": "רמת רחל",
+      "address": "רמת רחל",
+      "osmId": "way/183194389",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "name": "אליהו הנביא",
+          "name:en": "Eliyahu HaNavi",
+          "name:he": "אליהו הנביא",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 30,
+      "confidenceLevel": "low",
+      "confidenceReason": "OSM אחר | +שם עברי | -אין מילת קבר ואין שם קבור",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | מקור יחיד ללא Wikidata | שם לא מזהה קבר ואין שם קבור"
+    },
+    {
+      "sourceId": "osm-osm-way-229650644",
+      "source": "osm",
+      "name": "הצדיק האלקי",
+      "lat": 31.7535408,
+      "lng": 35.1664502,
+      "city": "אורה",
+      "address": "אורה",
+      "osmId": "way/229650644",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "name": "הצדיק האלקי",
+          "name:en": "Ha'Tzadik Ha'Eloki",
+          "name:he": "הצדיק האלקי",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 30,
+      "confidenceLevel": "low",
+      "confidenceReason": "OSM אחר | +שם עברי | -אין מילת קבר ואין שם קבור",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | מקור יחיד ללא Wikidata | שם לא מזהה קבר ואין שם קבור"
+    },
+    {
+      "sourceId": "osm-osm-way-350440903",
+      "source": "osm",
+      "name": "קבר שמעון הצדיק",
+      "lat": 31.7918894,
+      "lng": 35.2309489,
+      "city": "ירושלים",
+      "address": "ירושלים",
+      "osmId": "way/350440903",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "alt_name:en": "Tomb of Shimon Hatzadik",
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "name": "קבר שמעון הצדיק",
+          "name:ar": "قبر الشيخ السعدي",
+          "name:en": "Tomb of Simeon the Just",
+          "name:he": "קבר שמעון הצדיק",
+          "religion": "jewish",
+          "wikidata": "Q12071211",
+          "wikipedia": "he:קבר שמעון הצדיק",
+          "wikipedia:he": "קבר שמעון הצדיק"
+        },
+        "wikidataTag": "Q12071211"
+      },
+      "confidenceScore": 65,
+      "confidenceLevel": "medium",
+      "confidenceReason": "OSM אחר | +שם מכיל מילת קבר | +OSM wikidata tag | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "מקור יחיד ללא Wikidata"
+    },
+    {
+      "sourceId": "osm-osm-way-364023176",
+      "source": "osm",
+      "name": "אליהו הנביא",
+      "lat": 31.246329,
+      "lng": 34.7939783,
+      "city": "באר שבע",
+      "address": "באר שבע",
+      "osmId": "way/364023176",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "name": "אליהו הנביא",
+          "name:en": "Eliyahu HaNavi",
+          "name:he": "אליהו הנביא",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 30,
+      "confidenceLevel": "low",
+      "confidenceReason": "OSM אחר | +שם עברי | -אין מילת קבר ואין שם קבור",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | מקור יחיד ללא Wikidata | שם לא מזהה קבר ואין שם קבור"
+    },
+    {
+      "sourceId": "osm-osm-way-501662566",
+      "source": "osm",
+      "name": "קבר נחום איש גמזו",
+      "lat": 32.9603636,
+      "lng": 35.4968813,
+      "city": "צפת",
+      "address": "צפת",
+      "osmId": "way/501662566",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "name": "קבר נחום איש גמזו",
+          "name:he": "קבר נחום איש גמזו",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 60,
+      "confidenceLevel": "medium",
+      "confidenceReason": "OSM אחר | +שם מכיל מילת קבר | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "מקור יחיד ללא Wikidata"
+    },
+    {
+      "sourceId": "osm-osm-way-506420098",
+      "source": "osm",
+      "name": "קבר בנימין הצדיק",
+      "lat": 32.9584866,
+      "lng": 35.4996938,
+      "city": "צפת",
+      "address": "צפת",
+      "osmId": "way/506420098",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "name": "קבר בנימין הצדיק",
+          "name:he": "קבר בנימין הצדיק",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 60,
+      "confidenceLevel": "medium",
+      "confidenceReason": "OSM אחר | +שם מכיל מילת קבר | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "מקור יחיד ללא Wikidata"
+    },
+    {
+      "sourceId": "osm-osm-way-511100004",
+      "source": "osm",
+      "name": "בית הכנסת היכל הצדיק ברסלב",
+      "lat": 32.0474739,
+      "lng": 34.9551962,
+      "city": "אלעד",
+      "address": "אלעד",
+      "osmId": "way/511100004",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "name": "בית הכנסת היכל הצדיק ברסלב",
+          "name:en": "Haichal Hatzadik Breslav synagogue",
+          "name:he": "בית הכנסת היכל הצדיק ברסלב",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 30,
+      "confidenceLevel": "low",
+      "confidenceReason": "OSM אחר | +שם עברי | -אין מילת קבר ואין שם קבור",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | מקור יחיד ללא Wikidata | שם לא מזהה קבר ואין שם קבור"
+    },
+    {
+      "sourceId": "osm-osm-way-614928920",
+      "source": "osm",
+      "name": "קבר יונתן בן עוזיאל",
+      "lat": 33.0054081,
+      "lng": 35.519041,
+      "city": "עמוקה",
+      "address": "עמוקה",
+      "osmId": "way/614928920",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "name": "קבר יונתן בן עוזיאל",
+          "name:en": "Jonathan ben Uzziel tomb",
+          "name:he": "קבר יונתן בן עוזיאל",
+          "religion": "jewish",
+          "wikidata": "Q125395543"
+        },
+        "wikidataTag": "Q125395543"
+      },
+      "confidenceScore": 65,
+      "confidenceLevel": "medium",
+      "confidenceReason": "OSM אחר | +שם מכיל מילת קבר | +OSM wikidata tag | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "מקור יחיד ללא Wikidata"
+    },
+    {
+      "sourceId": "osm-osm-way-784153750",
+      "source": "osm",
+      "name": "אליהו הנביא",
+      "lat": 32.6926183,
+      "lng": 35.1084084,
+      "city": "כפר תקווה",
+      "address": "כפר תקווה",
+      "osmId": "way/784153750",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "addr:city": "קריית טבעון - קריית חרושת",
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "name": "אליהו הנביא",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 30,
+      "confidenceLevel": "low",
+      "confidenceReason": "OSM אחר | +שם עברי | -אין מילת קבר ואין שם קבור",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | מקור יחיד ללא Wikidata | שם לא מזהה קבר ואין שם קבור"
+    },
+    {
+      "sourceId": "osm-osm-way-816571299",
+      "source": "osm",
+      "name": "מערת אבא חלקיה וחנן הנחבא",
+      "lat": 32.9824178,
+      "lng": 35.5378063,
+      "city": "חצור הגלילית",
+      "address": "מעלה חוני המעגל, חצור הגלילית",
+      "osmId": "way/816571299",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "addr:city": "חצור הגלילית",
+          "addr:street": "מעלה חוני המעגל",
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "name": "מערת אבא חלקיה וחנן הנחבא",
+          "name:en": "Aba Khilkiya VeKhananHaNekhba Cave",
+          "name:he": "מערת אבא חלקיה וחנן הנחבא",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 68,
+      "confidenceLevel": "medium",
+      "confidenceReason": "OSM אחר | +שם מכיל מילת קבר | +כתובת מדויקת | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "מקור יחיד ללא Wikidata"
+    },
+    {
+      "sourceId": "wikidata-grave-Q111305015",
+      "source": "wikidata",
+      "name": "הלוויית הרב חיים קניבסקי",
+      "lat": 32.0725,
+      "lng": 34.833888888,
+      "wikidataId": "Q111305015",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "graves",
+        "wikidataUri": "http://www.wikidata.org/entity/Q111305015"
+      },
+      "confidenceScore": 50,
+      "confidenceLevel": "medium",
+      "confidenceReason": "Wikidata ישות קבר | +שם עברי | -אין מילת קבר ואין שם קבור",
+      "manual_review_required": true,
+      "manual_review_reason": "שם לא מזהה קבר ואין שם קבור"
+    },
+    {
+      "sourceId": "wikidata-grave-Q6843724",
+      "source": "wikidata",
+      "name": "קברי המהנדסים בשער יפו",
+      "lat": 31.77668889,
+      "lng": 35.22785,
+      "wikidataId": "Q6843724",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "graves",
+        "wikidataUri": "http://www.wikidata.org/entity/Q6843724"
+      },
+      "confidenceScore": 80,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata ישות קבר | +שם מכיל מילת קבר | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "סומן לבדיקה ידנית בביקורת Phase 4"
+    },
+    {
+      "sourceId": "wikidata-grave-Q6682025",
+      "source": "wikidata",
+      "name": "נבי סבלאן",
+      "lat": 33.011606111,
+      "lng": 35.341473182,
+      "wikidataId": "Q6682025",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "graves",
+        "wikidataUri": "http://www.wikidata.org/entity/Q6682025"
+      },
+      "confidenceScore": 50,
+      "confidenceLevel": "medium",
+      "confidenceReason": "Wikidata ישות קבר | +שם עברי | -אין מילת קבר ואין שם קבור",
+      "manual_review_required": true,
+      "manual_review_reason": "שם לא מזהה קבר ואין שם קבור"
+    },
+    {
+      "sourceId": "wikidata-grave-Q6588897",
+      "source": "wikidata",
+      "name": "נבי יעפורי",
+      "lat": 33.24138889,
+      "lng": 35.76833333,
+      "wikidataId": "Q6588897",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "graves",
+        "wikidataUri": "http://www.wikidata.org/entity/Q6588897"
+      },
+      "confidenceScore": 50,
+      "confidenceLevel": "medium",
+      "confidenceReason": "Wikidata ישות קבר | +שם עברי | -אין מילת קבר ואין שם קבור",
+      "manual_review_required": true,
+      "manual_review_reason": "שם לא מזהה קבר ואין שם קבור"
+    },
+    {
+      "sourceId": "wikidata-grave-Q2590976",
+      "source": "wikidata",
+      "name": "מתחם נבי שועייב",
+      "lat": 32.80525,
+      "lng": 35.45046,
+      "wikidataId": "Q2590976",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "graves",
+        "wikidataUri": "http://www.wikidata.org/entity/Q2590976"
+      },
+      "confidenceScore": 50,
+      "confidenceLevel": "medium",
+      "confidenceReason": "Wikidata ישות קבר | +שם עברי | -אין מילת קבר ואין שם קבור",
+      "manual_review_required": true,
+      "manual_review_reason": "שם לא מזהה קבר ואין שם קבור"
+    },
+    {
+      "sourceId": "wikidata-grave-Q3117130",
+      "source": "wikidata",
+      "name": "מערת יהושפט",
+      "lat": 31.777277777,
+      "lng": 35.238888888,
+      "wikidataId": "Q3117130",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "graves",
+        "wikidataUri": "http://www.wikidata.org/entity/Q3117130"
+      },
+      "confidenceScore": 80,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata ישות קבר | +שם מכיל מילת קבר | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "סומן לבדיקה ידנית בביקורת Phase 4"
+    },
+    {
+      "sourceId": "wikidata-grave-Q6653557",
+      "source": "wikidata",
+      "name": "קבר רבי מאיר בעל הנס",
+      "lat": 32.76621111,
+      "lng": 35.54981944,
+      "wikidataId": "Q6653557",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "graves",
+        "wikidataUri": "http://www.wikidata.org/entity/Q6653557"
+      },
+      "confidenceScore": 80,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata ישות קבר | +שם מכיל מילת קבר | +שם עברי"
+    },
+    {
+      "sourceId": "wikidata-grave-Q540882",
+      "source": "wikidata",
+      "name": "מערת תלפיות",
+      "lat": 31.751402777,
+      "lng": 35.235197222,
+      "buriedPerson": "ישו",
+      "wikidataId": "Q540882",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "graves",
+        "wikidataUri": "http://www.wikidata.org/entity/Q540882",
+        "additionalPerson": "ישו"
+      },
+      "confidenceScore": 90,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata ישות קבר | +שם מכיל מילת קבר | +שם קבור ידוע | +שם עברי"
+    },
+    {
+      "sourceId": "wikidata-grave-Q124030938",
+      "source": "wikidata",
+      "name": "בית הקברות של אשדוד ים",
+      "lat": 31.776467089,
+      "lng": 34.622969193,
+      "wikidataId": "Q124030938",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "graves",
+        "wikidataUri": "http://www.wikidata.org/entity/Q124030938"
+      },
+      "confidenceScore": 80,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata ישות קבר | +שם מכיל מילת קבר | +שם עברי"
+    },
+    {
+      "sourceId": "wikidata-grave-Q125395543",
+      "source": "wikidata",
+      "name": "קבר יונתן בן עוזיאל",
+      "lat": 32.998080555,
+      "lng": 35.524811111,
+      "wikidataId": "Q125395543",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "graves",
+        "wikidataUri": "http://www.wikidata.org/entity/Q125395543"
+      },
+      "confidenceScore": 80,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata ישות קבר | +שם מכיל מילת קבר | +שם עברי"
+    },
+    {
+      "sourceId": "wikidata-grave-Q6581399",
+      "source": "wikidata",
+      "name": "קבר סית מנע",
+      "lat": 31.89081,
+      "lng": 35.023358,
+      "wikidataId": "Q6581399",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "graves",
+        "wikidataUri": "http://www.wikidata.org/entity/Q6581399"
+      },
+      "confidenceScore": 80,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata ישות קבר | +שם מכיל מילת קבר | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "סומן לבדיקה ידנית בביקורת Phase 4"
+    },
+    {
+      "sourceId": "wikidata-grave-Q6582124",
+      "source": "wikidata",
+      "name": "קבר נבי יהודה",
+      "lat": 33.214888888,
+      "lng": 35.65475,
+      "wikidataId": "Q6582124",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "graves",
+        "wikidataUri": "http://www.wikidata.org/entity/Q6582124"
+      },
+      "confidenceScore": 80,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata ישות קבר | +שם מכיל מילת קבר | +שם עברי"
+    },
+    {
+      "sourceId": "wikidata-grave-Q137656514",
+      "source": "wikidata",
+      "name": "מקאם נבי אל-ח'דר",
+      "lat": 32.953555555,
+      "lng": 35.166916666,
+      "wikidataId": "Q137656514",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "graves",
+        "wikidataUri": "http://www.wikidata.org/entity/Q137656514"
+      },
+      "confidenceScore": 80,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata ישות קבר | +שם מכיל מילת קבר | +שם עברי"
+    },
+    {
+      "sourceId": "wikidata-grave-Q120411618",
+      "source": "wikidata",
+      "name": "קבר אלישע",
+      "lat": 32.827130142,
+      "lng": 34.970081271,
+      "wikidataId": "Q120411618",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "graves",
+        "wikidataUri": "http://www.wikidata.org/entity/Q120411618"
+      },
+      "confidenceScore": 80,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata ישות קבר | +שם מכיל מילת קבר | +שם עברי"
+    },
+    {
+      "sourceId": "wikidata-grave-Q1218",
+      "source": "wikidata",
+      "name": "ירושלים",
+      "lat": 31.776679,
+      "lng": 35.234156,
+      "buriedPerson": "דוד",
+      "wikidataId": "Q1218",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "rabbis",
+        "personQid": "Q41370",
+        "burialPlaceQid": "Q1218",
+        "occupation": "Q116",
+        "burialPlacePersonCount": 6
+      },
+      "confidenceScore": 55,
+      "confidenceLevel": "medium",
+      "confidenceReason": "Wikidata איש דת | +שם קבור ידוע | +שם עברי | -מקום קבורה משותף (6 אישים)"
+    },
+    {
+      "sourceId": "wikidata-grave-Q205976",
+      "source": "wikidata",
+      "name": "הר הזיתים",
+      "lat": 31.777946,
+      "lng": 35.245686,
+      "buriedPerson": "עדין אבן־ישראל (שטיינזלץ)",
+      "wikidataId": "Q205976",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "rabbis",
+        "personQid": "Q357304",
+        "burialPlaceQid": "Q205976",
+        "occupation": "Q4964182",
+        "burialPlacePersonCount": 1
+      },
+      "confidenceScore": 65,
+      "confidenceLevel": "medium",
+      "confidenceReason": "Wikidata איש דת | +שם קבור ידוע | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "סומן לבדיקה ידנית בביקורת Phase 4"
+    },
+    {
+      "sourceId": "wikidata-grave-Q1177750",
+      "source": "wikidata",
+      "name": "עיר דוד",
+      "lat": 31.773037025,
+      "lng": 35.23481082,
+      "buriedPerson": "יהורם",
+      "wikidataId": "Q1177750",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "rabbis",
+        "personQid": "Q313215",
+        "burialPlaceQid": "Q1177750",
+        "occupation": "Q116",
+        "burialPlacePersonCount": 6
+      },
+      "confidenceScore": 55,
+      "confidenceLevel": "medium",
+      "confidenceReason": "Wikidata איש דת | +שם קבור ידוע | +שם עברי | -מקום קבורה משותף (6 אישים)"
+    },
+    {
+      "sourceId": "wikidata-grave-Q2889806",
+      "source": "wikidata",
+      "name": "געש",
+      "lat": 32.2293,
+      "lng": 34.825897222,
+      "buriedPerson": "גרשון ויילר",
+      "wikidataId": "Q2889806",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "rabbis",
+        "personQid": "Q59531472",
+        "burialPlaceQid": "Q2889806",
+        "occupation": "Q4964182",
+        "burialPlacePersonCount": 1
+      },
+      "confidenceScore": 65,
+      "confidenceLevel": "medium",
+      "confidenceReason": "Wikidata איש דת | +שם קבור ידוע | +שם עברי"
+    },
+    {
+      "sourceId": "wikidata-grave-Q2916378",
+      "source": "wikidata",
+      "name": "קריית ענבים",
+      "lat": 31.8107,
+      "lng": 35.1199,
+      "buriedPerson": "עדנה אולמן-מרגלית",
+      "wikidataId": "Q2916378",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "rabbis",
+        "personQid": "Q7037635",
+        "burialPlaceQid": "Q2916378",
+        "occupation": "Q4964182",
+        "burialPlacePersonCount": 1
+      },
+      "confidenceScore": 65,
+      "confidenceLevel": "medium",
+      "confidenceReason": "Wikidata איש דת | +שם קבור ידוע | +שם עברי"
+    },
+    {
+      "sourceId": "wikidata-grave-Q1026840",
+      "source": "wikidata",
+      "name": "נען",
+      "lat": 31.885,
+      "lng": 34.858611111,
+      "buriedPerson": "סיני אוקו",
+      "wikidataId": "Q1026840",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "rabbis",
+        "personQid": "Q40235428",
+        "burialPlaceQid": "Q1026840",
+        "occupation": "Q4964182",
+        "burialPlacePersonCount": 1
+      },
+      "confidenceScore": 65,
+      "confidenceLevel": "medium",
+      "confidenceReason": "Wikidata איש דת | +שם קבור ידוע | +שם עברי"
+    },
+    {
+      "sourceId": "wikidata-grave-Q2371396",
+      "source": "wikidata",
+      "name": "דגניה א",
+      "lat": 32.7081,
+      "lng": 35.574897222,
+      "buriedPerson": "אהרן דוד גורדון",
+      "wikidataId": "Q2371396",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "rabbis",
+        "personQid": "Q399986",
+        "burialPlaceQid": "Q2371396",
+        "occupation": "Q4964182",
+        "burialPlacePersonCount": 2
+      },
+      "confidenceScore": 65,
+      "confidenceLevel": "medium",
+      "confidenceReason": "Wikidata איש דת | +שם קבור ידוע | +שם עברי"
+    },
+    {
+      "sourceId": "wikidata-grave-Q2632879",
+      "source": "wikidata",
+      "name": "כפר יאסיף",
+      "lat": 32.954722222,
+      "lng": 35.165277777,
+      "buriedPerson": "רמח\"ל",
+      "wikidataId": "Q2632879",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "rabbis",
+        "personQid": "Q982845",
+        "burialPlaceQid": "Q2632879",
+        "occupation": "Q4964182",
+        "burialPlacePersonCount": 1
+      },
+      "confidenceScore": 65,
+      "confidenceLevel": "medium",
+      "confidenceReason": "Wikidata איש דת | +שם קבור ידוע | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "סומן לבדיקה ידנית בביקורת Phase 4"
+    },
+    {
+      "sourceId": "wikidata-grave-Q2777361",
+      "source": "wikidata",
+      "name": "פרוד",
+      "lat": 32.932297222,
+      "lng": 35.433797222,
+      "buriedPerson": "רבי ישמעאל",
+      "wikidataId": "Q2777361",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "rabbis",
+        "personQid": "Q1391069",
+        "burialPlaceQid": "Q2777361",
+        "occupation": "Q4964182",
+        "burialPlacePersonCount": 1
+      },
+      "confidenceScore": 65,
+      "confidenceLevel": "medium",
+      "confidenceReason": "Wikidata איש דת | +שם קבור ידוע | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "סומן לבדיקה ידנית בביקורת Phase 4"
+    },
+    {
+      "sourceId": "wikidata-grave-Q1018884",
+      "source": "wikidata",
+      "name": "כאבול",
+      "lat": 32.868333333,
+      "lng": 35.211388888,
+      "buriedPerson": "אברהם אבן עזרא",
+      "wikidataId": "Q1018884",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "rabbis",
+        "personQid": "Q270670",
+        "burialPlaceQid": "Q1018884",
+        "occupation": "Q4964182",
+        "burialPlacePersonCount": 1
+      },
+      "confidenceScore": 65,
+      "confidenceLevel": "medium",
+      "confidenceReason": "Wikidata איש דת | +שם קבור ידוע | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "סומן לבדיקה ידנית בביקורת Phase 4"
+    },
+    {
+      "sourceId": "wikidata-grave-Q1708945",
+      "source": "wikidata",
+      "name": "קבר בני חזיר",
+      "lat": 31.776447222,
+      "lng": 35.239130555,
+      "wikidataId": "Q1708945",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "musthave",
+        "wikidataUri": "http://www.wikidata.org/entity/Q1708945",
+        "isMustHave": true
+      },
+      "confidenceScore": 70,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata איש דת | +שם מכיל מילת קבר | +שם עברי"
+    },
+    {
+      "sourceId": "wikidata-grave-Q12410947",
+      "source": "wikidata",
+      "name": "קבר רבי יהודה הנשיא",
+      "lat": 32.70324,
+      "lng": 35.12873,
+      "wikidataId": "Q12410947",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "musthave",
+        "wikidataUri": "http://www.wikidata.org/entity/Q12410947",
+        "isMustHave": true
+      },
+      "confidenceScore": 70,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata איש דת | +שם מכיל מילת קבר | +שם עברי"
+    },
+    {
+      "sourceId": "wikidata-grave-Q331729",
+      "source": "wikidata",
+      "name": "יד אבשלום",
+      "lat": 31.776958333,
+      "lng": 35.238958333,
+      "wikidataId": "Q331729",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "musthave",
+        "wikidataUri": "http://www.wikidata.org/entity/Q331729",
+        "isMustHave": true
+      },
+      "confidenceScore": 40,
+      "confidenceLevel": "low",
+      "confidenceReason": "Wikidata איש דת | +שם עברי | -אין מילת קבר ואין שם קבור",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | שם לא מזהה קבר ואין שם קבור"
+    },
+    {
+      "sourceId": "wikidata-grave-Q492091",
+      "source": "wikidata",
+      "name": "קבר זכריה",
+      "lat": 31.776236111,
+      "lng": 35.239119444,
+      "wikidataId": "Q492091",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "musthave",
+        "wikidataUri": "http://www.wikidata.org/entity/Q492091",
+        "isMustHave": true
+      },
+      "confidenceScore": 70,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata איש דת | +שם מכיל מילת קבר | +שם עברי"
+    },
+    {
+      "sourceId": "wikidata-grave-Q5216485",
+      "source": "wikidata",
+      "name": "קבר הבאבא סאלי",
+      "lat": 31.43035,
+      "lng": 34.58551111,
+      "wikidataId": "Q5216485",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "musthave",
+        "wikidataUri": "http://www.wikidata.org/entity/Q5216485",
+        "isMustHave": true
+      },
+      "confidenceScore": 70,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata איש דת | +שם מכיל מילת קבר | +שם עברי"
+    },
+    {
+      "sourceId": "wikidata-grave-Q2907254",
+      "source": "wikidata",
+      "name": "קבר שמואל הנביא",
+      "lat": 31.8327,
+      "lng": 35.1801,
+      "wikidataId": "Q2907254",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "musthave",
+        "wikidataUri": "http://www.wikidata.org/entity/Q2907254",
+        "isMustHave": true
+      },
+      "confidenceScore": 85,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata Q2907254 | שם תוקן מ\"נבי סמואל\" | קואורדינטות מאומתות",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | שם לא מזהה קבר ואין שם קבור",
+      "buriedPerson": "שמואל הנביא"
+    },
+    {
+      "sourceId": "wikidata-grave-Q119719894",
+      "source": "wikidata",
+      "name": "קבר עמוס",
+      "lat": 31.636416,
+      "lng": 35.20981,
+      "wikidataId": "Q119719894",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "musthave",
+        "wikidataUri": "http://www.wikidata.org/entity/Q119719894",
+        "isMustHave": true
+      },
+      "confidenceScore": 70,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata איש דת | +שם מכיל מילת קבר | +שם עברי"
+    },
+    {
+      "sourceId": "wikidata-grave-Q6970838",
+      "source": "wikidata",
+      "name": "קבר יהושע בן נון",
+      "lat": 32.118617,
+      "lng": 35.15695,
+      "wikidataId": "Q6970838",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "musthave",
+        "wikidataUri": "http://www.wikidata.org/entity/Q6970838",
+        "isMustHave": true
+      },
+      "confidenceScore": 70,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata איש דת | +שם מכיל מילת קבר | +שם עברי"
+    },
+    {
+      "sourceId": "wikidata-grave-Q625219",
+      "source": "wikidata",
+      "name": "קבר הרמב\"ם",
+      "lat": 32.79,
+      "lng": 35.5372,
+      "wikidataId": "Q625219",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "musthave",
+        "wikidataUri": "http://www.wikidata.org/entity/Q625219",
+        "isMustHave": true
+      },
+      "confidenceScore": 70,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata איש דת | +שם מכיל מילת קבר | +שם עברי"
+    },
+    {
+      "sourceId": "manual-kever-rachel",
+      "source": "manual",
+      "name": "קבר רחל",
+      "lat": 31.7226,
+      "lng": 35.2037,
+      "city": "בית לחם",
+      "buriedPerson": "רחל אמנו",
+      "wikidataId": "Q1302541",
+      "verifiedAt": "2026-07-05",
+      "confidenceScore": 95,
+      "confidenceLevel": "high",
+      "confidenceReason": "seed ידני | Q1302541 | קואורדינטות מאומתות",
+      "extra": {
+        "isMustHave": true,
+        "manualSeed": true
+      }
+    },
+    {
+      "sourceId": "manual-machpelah",
+      "source": "manual",
+      "name": "מערת המכפלה",
+      "lat": 31.5244,
+      "lng": 35.1103,
+      "city": "חברון",
+      "buriedPerson": "האבות: אברהם, יצחק, יעקב, שרה, רבקה, לאה",
+      "wikidataId": "Q204200",
+      "verifiedAt": "2026-07-05",
+      "confidenceScore": 100,
+      "confidenceLevel": "high",
+      "confidenceReason": "seed ידני | Q204200 | קואורדינטות מאומתות | +אימות מקור שני | +אימות מקור שני",
+      "extra": {
+        "isMustHave": true,
+        "manualSeed": true
+      }
+    },
+    {
+      "sourceId": "manual-kever-yosef",
+      "source": "manual",
+      "name": "קבר יוסף",
+      "lat": 32.2124,
+      "lng": 35.2845,
+      "city": "שכם",
+      "buriedPerson": "יוסף הצדיק",
+      "wikidataId": "Q1297538",
+      "verifiedAt": "2026-07-05",
+      "confidenceScore": 98,
+      "confidenceLevel": "high",
+      "confidenceReason": "seed ידני | Q1297538 | קואורדינטות מאומתות | +אימות מקור שני",
+      "extra": {
+        "isMustHave": true,
+        "manualSeed": true
+      }
+    },
+    {
+      "sourceId": "manual-kever-akiva",
+      "source": "manual",
+      "name": "קבר רבי עקיבא",
+      "lat": 32.7948,
+      "lng": 35.5346,
+      "city": "טבריה",
+      "buriedPerson": "רבי עקיבא בן יוסף",
+      "verifiedAt": "2026-07-05",
+      "confidenceScore": 90,
+      "confidenceLevel": "high",
+      "confidenceReason": "seed ידני | בית העלמין הקדמי, טבריה | קואורדינטות מאומתות",
+      "extra": {
+        "isMustHave": true,
+        "manualSeed": true
+      }
+    },
+    {
+      "sourceId": "manual-kever-ari",
+      "source": "manual",
+      "name": "קבר האר\"י הקדוש",
+      "lat": 32.9636,
+      "lng": 35.4967,
+      "city": "צפת",
+      "buriedPerson": "רבי יצחק לוריא (האר\"י)",
+      "verifiedAt": "2026-07-05",
+      "confidenceScore": 92,
+      "confidenceLevel": "high",
+      "confidenceReason": "seed ידני | בית העלמין העתיק, צפת | קואורדינטות מאומתות",
+      "extra": {
+        "isMustHave": true,
+        "manualSeed": true
+      }
+    },
+    {
+      "sourceId": "manual-kever-shimshon",
+      "source": "manual",
+      "name": "קבר שמשון הגיבור",
+      "lat": 31.774065,
+      "lng": 34.985227,
+      "city": "צרעה",
+      "buriedPerson": "שמשון הגיבור",
+      "verifiedAt": "2026-07-05",
+      "confidenceScore": 82,
+      "confidenceLevel": "high",
+      "confidenceReason": "seed ידני | תל צרעה, בין צרעה לאשתאול | 2 מקורות תואמים (<10מ׳) | מסורת מקובלת",
+      "extra": {
+        "manualSeed": true
+      }
+    },
+    {
+      "sourceId": "manual-kever-shelah",
+      "source": "manual",
+      "name": "קבר השל\"ה הקדוש",
+      "lat": 32.7897691,
+      "lng": 35.5398467,
+      "city": "טבריה",
+      "buriedPerson": "רבי ישעיהו הלוי הורוביץ (השל\"ה הקדוש)",
+      "verifiedAt": "2026-07-05",
+      "confidenceScore": 85,
+      "confidenceLevel": "high",
+      "confidenceReason": "seed ידני | בית העלמין הקדמי טבריה, מתחם הרמב\"ם | 2 מקורות תואמים | holy.org.il + nelech.co.il",
+      "extra": {
+        "manualSeed": true
+      }
+    }
+  ],
+  "suspicious": [
+    {
+      "sourceId": "osm-osm-node-8626554287",
+      "source": "osm",
+      "name": "רבי יהודה בר עילאי",
+      "lat": 32.984543,
+      "lng": 35.4904373,
+      "city": "ביריה",
+      "address": "ביריה",
+      "osmId": "node/8626554287",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "node",
+        "osmSubtype": "other",
+        "osmQuery": "shrine",
+        "osmTags": {
+          "historic": "wayside_shrine",
+          "name": "רבי יהודה בר עילאי",
+          "name:he": "רבי יהודה בר עילאי",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 30,
+      "confidenceLevel": "low",
+      "confidenceReason": "OSM אחר | +שם עברי | -אין מילת קבר ואין שם קבור",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | מקור יחיד ללא Wikidata | שם לא מזהה קבר ואין שם קבור"
+    },
+    {
+      "sourceId": "osm-osm-node-8626554294",
+      "source": "osm",
+      "name": "רבי יוסי סראגוסי",
+      "lat": 32.9824365,
+      "lng": 35.4900965,
+      "city": "ביריה",
+      "address": "ביריה",
+      "osmId": "node/8626554294",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "node",
+        "osmSubtype": "other",
+        "osmQuery": "shrine",
+        "osmTags": {
+          "historic": "wayside_shrine",
+          "name": "רבי יוסי סראגוסי",
+          "name:he": "רבי יוסי סראגוסי",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 30,
+      "confidenceLevel": "low",
+      "confidenceReason": "OSM אחר | +שם עברי | -אין מילת קבר ואין שם קבור",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | מקור יחיד ללא Wikidata | שם לא מזהה קבר ואין שם קבור"
+    },
+    {
+      "sourceId": "osm-osm-node-1339404829",
+      "source": "osm",
+      "name": "ציונו של חבקוק הנביא",
+      "lat": 32.8897121,
+      "lng": 35.4793449,
+      "city": "קדרים",
+      "address": "קדרים",
+      "buriedPerson": "חבקוק",
+      "osmId": "node/1339404829",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "node",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "name": "ציונו של חבקוק הנביא",
+          "name:en": "Havakuk HaNavi",
+          "name:he": "ציונו של חבקוק הנביא",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 42,
+      "confidenceLevel": "low",
+      "confidenceReason": "OSM אחר | +שם עברי | -אין מילת קבר ואין שם קבור | +OSM+Wikidata match",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | מקור יחיד ללא Wikidata | שם לא מזהה קבר ואין שם קבור",
+      "wikidataId": "Q18192136"
+    },
+    {
+      "sourceId": "osm-osm-node-4488634668",
+      "source": "osm",
+      "name": "אליהו הנביא",
+      "lat": 32.2732089,
+      "lng": 34.9356635,
+      "city": "עין שריד",
+      "address": "עין שריד",
+      "osmId": "node/4488634668",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "node",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "name": "אליהו הנביא",
+          "name:en": "Eliyahu HaNavi",
+          "name:he": "אליהו הנביא",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 30,
+      "confidenceLevel": "low",
+      "confidenceReason": "OSM אחר | +שם עברי | -אין מילת קבר ואין שם קבור",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | מקור יחיד ללא Wikidata | שם לא מזהה קבר ואין שם קבור"
+    },
+    {
+      "sourceId": "osm-osm-node-10866619321",
+      "source": "osm",
+      "name": "בית הכנסת אליהו הנביא",
+      "lat": 32.059521,
+      "lng": 34.7726947,
+      "city": "קריית מאיר",
+      "address": "קריית מאיר",
+      "osmId": "node/10866619321",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "node",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "check_date": "2025-12-01",
+          "name": "בית הכנסת אליהו הנביא",
+          "name:he": "בית הכנסת אליהו הנביא",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 30,
+      "confidenceLevel": "low",
+      "confidenceReason": "OSM אחר | +שם עברי | -אין מילת קבר ואין שם קבור",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | מקור יחיד ללא Wikidata | שם לא מזהה קבר ואין שם קבור"
+    },
+    {
+      "sourceId": "osm-osm-way-166098884",
+      "source": "osm",
+      "name": "שמעון הצדיק",
+      "lat": 31.7580765,
+      "lng": 35.205976,
+      "city": "רמת רחל",
+      "address": "רמת רחל",
+      "osmId": "way/166098884",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "name": "שמעון הצדיק",
+          "name:en": "Shimon Ha'Tzadik",
+          "name:he": "שמעון הצדיק",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 30,
+      "confidenceLevel": "low",
+      "confidenceReason": "OSM אחר | +שם עברי | -אין מילת קבר ואין שם קבור",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | מקור יחיד ללא Wikidata | שם לא מזהה קבר ואין שם קבור"
+    },
+    {
+      "sourceId": "osm-osm-way-166389921",
+      "source": "osm",
+      "name": "אליהו הנביא",
+      "lat": 31.7537904,
+      "lng": 35.1937923,
+      "city": "רמת רחל",
+      "address": "רמת רחל",
+      "osmId": "way/166389921",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "name": "אליהו הנביא",
+          "name:en": "Eliyahu HaNavi",
+          "name:he": "אליהו הנביא",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 30,
+      "confidenceLevel": "low",
+      "confidenceReason": "OSM אחר | +שם עברי | -אין מילת קבר ואין שם קבור",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | מקור יחיד ללא Wikidata | שם לא מזהה קבר ואין שם קבור"
+    },
+    {
+      "sourceId": "osm-osm-way-183194389",
+      "source": "osm",
+      "name": "אליהו הנביא",
+      "lat": 31.7564903,
+      "lng": 35.2095927,
+      "city": "רמת רחל",
+      "address": "רמת רחל",
+      "osmId": "way/183194389",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "name": "אליהו הנביא",
+          "name:en": "Eliyahu HaNavi",
+          "name:he": "אליהו הנביא",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 30,
+      "confidenceLevel": "low",
+      "confidenceReason": "OSM אחר | +שם עברי | -אין מילת קבר ואין שם קבור",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | מקור יחיד ללא Wikidata | שם לא מזהה קבר ואין שם קבור"
+    },
+    {
+      "sourceId": "osm-osm-way-229650644",
+      "source": "osm",
+      "name": "הצדיק האלקי",
+      "lat": 31.7535408,
+      "lng": 35.1664502,
+      "city": "אורה",
+      "address": "אורה",
+      "osmId": "way/229650644",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "name": "הצדיק האלקי",
+          "name:en": "Ha'Tzadik Ha'Eloki",
+          "name:he": "הצדיק האלקי",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 30,
+      "confidenceLevel": "low",
+      "confidenceReason": "OSM אחר | +שם עברי | -אין מילת קבר ואין שם קבור",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | מקור יחיד ללא Wikidata | שם לא מזהה קבר ואין שם קבור"
+    },
+    {
+      "sourceId": "osm-osm-way-364023176",
+      "source": "osm",
+      "name": "אליהו הנביא",
+      "lat": 31.246329,
+      "lng": 34.7939783,
+      "city": "באר שבע",
+      "address": "באר שבע",
+      "osmId": "way/364023176",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "name": "אליהו הנביא",
+          "name:en": "Eliyahu HaNavi",
+          "name:he": "אליהו הנביא",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 30,
+      "confidenceLevel": "low",
+      "confidenceReason": "OSM אחר | +שם עברי | -אין מילת קבר ואין שם קבור",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | מקור יחיד ללא Wikidata | שם לא מזהה קבר ואין שם קבור"
+    },
+    {
+      "sourceId": "osm-osm-way-511100004",
+      "source": "osm",
+      "name": "בית הכנסת היכל הצדיק ברסלב",
+      "lat": 32.0474739,
+      "lng": 34.9551962,
+      "city": "אלעד",
+      "address": "אלעד",
+      "osmId": "way/511100004",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "name": "בית הכנסת היכל הצדיק ברסלב",
+          "name:en": "Haichal Hatzadik Breslav synagogue",
+          "name:he": "בית הכנסת היכל הצדיק ברסלב",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 30,
+      "confidenceLevel": "low",
+      "confidenceReason": "OSM אחר | +שם עברי | -אין מילת קבר ואין שם קבור",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | מקור יחיד ללא Wikidata | שם לא מזהה קבר ואין שם קבור"
+    },
+    {
+      "sourceId": "osm-osm-way-784153750",
+      "source": "osm",
+      "name": "אליהו הנביא",
+      "lat": 32.6926183,
+      "lng": 35.1084084,
+      "city": "כפר תקווה",
+      "address": "כפר תקווה",
+      "osmId": "way/784153750",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "addr:city": "קריית טבעון - קריית חרושת",
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "name": "אליהו הנביא",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 30,
+      "confidenceLevel": "low",
+      "confidenceReason": "OSM אחר | +שם עברי | -אין מילת קבר ואין שם קבור",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | מקור יחיד ללא Wikidata | שם לא מזהה קבר ואין שם קבור"
+    },
+    {
+      "sourceId": "wikidata-grave-Q331729",
+      "source": "wikidata",
+      "name": "יד אבשלום",
+      "lat": 31.776958333,
+      "lng": 35.238958333,
+      "wikidataId": "Q331729",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "musthave",
+        "wikidataUri": "http://www.wikidata.org/entity/Q331729",
+        "isMustHave": true
+      },
+      "confidenceScore": 40,
+      "confidenceLevel": "low",
+      "confidenceReason": "Wikidata איש דת | +שם עברי | -אין מילת קבר ואין שם קבור",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | שם לא מזהה קבר ואין שם קבור"
+    }
+  ],
+  "approved": [
+    {
+      "sourceId": "osm-osm-node-3808058083",
+      "source": "osm",
+      "name": "קבר האימהות",
+      "lat": 32.8020131,
+      "lng": 35.5227215,
+      "city": "טבריה",
+      "address": "טבריה",
+      "osmId": "node/3808058083",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "node",
+        "osmSubtype": "tomb",
+        "osmQuery": "tomb",
+        "osmTags": {
+          "historic": "tomb",
+          "name": "קבר האימהות",
+          "name:en": "Ha'imahot tomb",
+          "name:he": "קבר האימהות",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 85,
+      "confidenceLevel": "high",
+      "confidenceReason": "OSM tomb | +שם מכיל מילת קבר | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "מקור יחיד ללא Wikidata"
+    },
+    {
+      "sourceId": "osm-osm-node-9315565017",
+      "source": "osm",
+      "name": "קבר מתתיהו",
+      "lat": 31.9348867,
+      "lng": 34.9941342,
+      "city": "מבוא מודיעים",
+      "address": "מבוא מודיעים",
+      "osmId": "node/9315565017",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "node",
+        "osmSubtype": "tomb",
+        "osmQuery": "tomb",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "historic": "tomb",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/6/66/IHM_קבר_מתתיהו.jpeg",
+          "name": "קבר מתתיהו",
+          "name:he": "קבר מתתיהו",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 85,
+      "confidenceLevel": "high",
+      "confidenceReason": "OSM tomb | +שם מכיל מילת קבר | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "מקור יחיד ללא Wikidata"
+    },
+    {
+      "sourceId": "osm-osm-way-493703983",
+      "source": "osm",
+      "name": "קבר רבי שמעון בר יוחאי",
+      "lat": 32.9807885,
+      "lng": 35.4405621,
+      "city": "מירון",
+      "address": "מירון",
+      "buriedPerson": "שמעון בר יוחאי",
+      "osmId": "way/493703983",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "tomb",
+        "osmQuery": "tomb",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "historic": "tomb",
+          "name": "קבר רבי שמעון בר יוחאי",
+          "name:en": "Rabbi Shimon Bar Yochay tomb",
+          "name:he": "קבר רבי שמעון בר יוחאי",
+          "religion": "jewish",
+          "wikidata": "Q5371188"
+        },
+        "wikidataTag": "Q5371188"
+      },
+      "confidenceScore": 100,
+      "confidenceLevel": "high",
+      "confidenceReason": "OSM tomb | +שם מכיל מילת קבר | +OSM wikidata tag | +שם עברי | +OSM+Wikidata match",
+      "manual_review_required": true,
+      "manual_review_reason": "מקור יחיד ללא Wikidata",
+      "wikidataId": "Q5371188"
+    },
+    {
+      "sourceId": "osm-osm-way-514139736",
+      "source": "osm",
+      "name": "קבר חוצפית המתורגמן",
+      "lat": 32.971223,
+      "lng": 35.4821327,
+      "city": "ביריה",
+      "address": "ביריה",
+      "osmId": "way/514139736",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "tomb",
+        "osmQuery": "tomb",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "historic": "tomb",
+          "name": "קבר חוצפית המתורגמן",
+          "name:en": "Chootzpit the translator tomb",
+          "name:he": "קבר חוצפית המתורגמן",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 85,
+      "confidenceLevel": "high",
+      "confidenceReason": "OSM tomb | +שם מכיל מילת קבר | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "מקור יחיד ללא Wikidata"
+    },
+    {
+      "sourceId": "osm-osm-way-647373211",
+      "source": "osm",
+      "name": "קבר רבי יהודה בר עילאי",
+      "lat": 32.9845232,
+      "lng": 35.4903947,
+      "city": "ביריה",
+      "address": "ביריה",
+      "osmId": "way/647373211",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "tomb",
+        "osmQuery": "tomb",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "description": "קבר ר' יהודה בר אילעי ואביו. במקום חניה גדולה. יש כולל פעיל בקומה השניה.",
+          "description:he": "קבר ר' יהודה בר אילעי ואביו. במקום חניה גדולה. יש כולל פעיל בקומה השניה.",
+          "historic": "tomb",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/IHM_קבר_רבי_יהודה_בר_עילאי.jpeg",
+          "name": "קבר רבי יהודה בר עילאי",
+          "name:en": "Rabi Yehuda bar Elai Tomb",
+          "name:he": "קבר רבי יהודה בר עילאי",
+          "religion": "jewish",
+          "website": "http://nelech.co.il/2020/05/05/%d7%a6%d7%99%d7%95%d7%9f-%d7%a7%d7%91%d7%a8-%d7%a8%d7%91%d7%99-%d7%99%d7%94%d7%95%d7%93%d7%94-%d7%91%d7%a8-%d7%90%d7%9c%d7%a2%d7%90%d7%99/"
+        }
+      },
+      "confidenceScore": 85,
+      "confidenceLevel": "high",
+      "confidenceReason": "OSM tomb | +שם מכיל מילת קבר | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "מקור יחיד ללא Wikidata"
+    },
+    {
+      "sourceId": "osm-osm-node-1156237259",
+      "source": "osm",
+      "name": "קבר דן בן יעקב",
+      "lat": 31.7855666,
+      "lng": 34.9987936,
+      "city": "אשתאול",
+      "address": "אשתאול",
+      "osmId": "node/1156237259",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "node",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "historic": "ruins",
+          "name": "קבר דן בן יעקב",
+          "name:en": "Dan Ben Yakov Grave",
+          "name:he": "קבר דן בן יעקב",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 60,
+      "confidenceLevel": "medium",
+      "confidenceReason": "OSM אחר | +שם מכיל מילת קבר | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "מקור יחיד ללא Wikidata"
+    },
+    {
+      "sourceId": "osm-osm-node-1339426969",
+      "source": "osm",
+      "name": "קברי התנאים בצומת חנניה",
+      "lat": 32.921319,
+      "lng": 35.4213799,
+      "city": "כפר חנניה",
+      "address": "כפר חנניה",
+      "osmId": "node/1339426969",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "node",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "name": "קברי התנאים בצומת חנניה",
+          "name:en": "HaTanaim Toombs in Hananya Junction",
+          "name:he": "קברי התנאים בצומת חנניה",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 60,
+      "confidenceLevel": "medium",
+      "confidenceReason": "OSM אחר | +שם מכיל מילת קבר | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "מקור יחיד ללא Wikidata"
+    },
+    {
+      "sourceId": "osm-osm-node-1339520311",
+      "source": "osm",
+      "name": "קבר שמעיה ואבטליון",
+      "lat": 33.022226,
+      "lng": 35.4452732,
+      "city": "ג'ש",
+      "address": "ג'ש",
+      "osmId": "node/1339520311",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "node",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "name": "קבר שמעיה ואבטליון",
+          "name:ar": "قبر شيميا وأفتاليون",
+          "name:en": "Shmaaya and Avtalyon",
+          "name:he": "קבר שמעיה ואבטליון",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 60,
+      "confidenceLevel": "medium",
+      "confidenceReason": "OSM אחר | +שם מכיל מילת קבר | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "מקור יחיד ללא Wikidata"
+    },
+    {
+      "sourceId": "osm-osm-node-4453179605",
+      "source": "osm",
+      "name": "מערת הסנהדרין הקטנה",
+      "lat": 31.7920426,
+      "lng": 35.2304935,
+      "city": "ירושלים",
+      "address": "ירושלים",
+      "osmId": "node/4453179605",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "node",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "name": "מערת הסנהדרין הקטנה",
+          "name:en": "Cave of the Minor Sanhedrin",
+          "name:he": "מערת הסנהדרין הקטנה",
+          "religion": "jewish",
+          "wikidata": "Q16133028"
+        },
+        "wikidataTag": "Q16133028"
+      },
+      "confidenceScore": 65,
+      "confidenceLevel": "medium",
+      "confidenceReason": "OSM אחר | +שם מכיל מילת קבר | +OSM wikidata tag | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "מקור יחיד ללא Wikidata"
+    },
+    {
+      "sourceId": "osm-osm-way-350440903",
+      "source": "osm",
+      "name": "קבר שמעון הצדיק",
+      "lat": 31.7918894,
+      "lng": 35.2309489,
+      "city": "ירושלים",
+      "address": "ירושלים",
+      "osmId": "way/350440903",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "alt_name:en": "Tomb of Shimon Hatzadik",
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "name": "קבר שמעון הצדיק",
+          "name:ar": "قبر الشيخ السعدي",
+          "name:en": "Tomb of Simeon the Just",
+          "name:he": "קבר שמעון הצדיק",
+          "religion": "jewish",
+          "wikidata": "Q12071211",
+          "wikipedia": "he:קבר שמעון הצדיק",
+          "wikipedia:he": "קבר שמעון הצדיק"
+        },
+        "wikidataTag": "Q12071211"
+      },
+      "confidenceScore": 65,
+      "confidenceLevel": "medium",
+      "confidenceReason": "OSM אחר | +שם מכיל מילת קבר | +OSM wikidata tag | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "מקור יחיד ללא Wikidata"
+    },
+    {
+      "sourceId": "osm-osm-way-501662566",
+      "source": "osm",
+      "name": "קבר נחום איש גמזו",
+      "lat": 32.9603636,
+      "lng": 35.4968813,
+      "city": "צפת",
+      "address": "צפת",
+      "osmId": "way/501662566",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "name": "קבר נחום איש גמזו",
+          "name:he": "קבר נחום איש גמזו",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 60,
+      "confidenceLevel": "medium",
+      "confidenceReason": "OSM אחר | +שם מכיל מילת קבר | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "מקור יחיד ללא Wikidata"
+    },
+    {
+      "sourceId": "osm-osm-way-506420098",
+      "source": "osm",
+      "name": "קבר בנימין הצדיק",
+      "lat": 32.9584866,
+      "lng": 35.4996938,
+      "city": "צפת",
+      "address": "צפת",
+      "osmId": "way/506420098",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "name": "קבר בנימין הצדיק",
+          "name:he": "קבר בנימין הצדיק",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 60,
+      "confidenceLevel": "medium",
+      "confidenceReason": "OSM אחר | +שם מכיל מילת קבר | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "מקור יחיד ללא Wikidata"
+    },
+    {
+      "sourceId": "osm-osm-way-614928920",
+      "source": "osm",
+      "name": "קבר יונתן בן עוזיאל",
+      "lat": 33.0054081,
+      "lng": 35.519041,
+      "city": "עמוקה",
+      "address": "עמוקה",
+      "osmId": "way/614928920",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "name": "קבר יונתן בן עוזיאל",
+          "name:en": "Jonathan ben Uzziel tomb",
+          "name:he": "קבר יונתן בן עוזיאל",
+          "religion": "jewish",
+          "wikidata": "Q125395543"
+        },
+        "wikidataTag": "Q125395543"
+      },
+      "confidenceScore": 65,
+      "confidenceLevel": "medium",
+      "confidenceReason": "OSM אחר | +שם מכיל מילת קבר | +OSM wikidata tag | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "מקור יחיד ללא Wikidata"
+    },
+    {
+      "sourceId": "osm-osm-way-816571299",
+      "source": "osm",
+      "name": "מערת אבא חלקיה וחנן הנחבא",
+      "lat": 32.9824178,
+      "lng": 35.5378063,
+      "city": "חצור הגלילית",
+      "address": "מעלה חוני המעגל, חצור הגלילית",
+      "osmId": "way/816571299",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "addr:city": "חצור הגלילית",
+          "addr:street": "מעלה חוני המעגל",
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "name": "מערת אבא חלקיה וחנן הנחבא",
+          "name:en": "Aba Khilkiya VeKhananHaNekhba Cave",
+          "name:he": "מערת אבא חלקיה וחנן הנחבא",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 68,
+      "confidenceLevel": "medium",
+      "confidenceReason": "OSM אחר | +שם מכיל מילת קבר | +כתובת מדויקת | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "מקור יחיד ללא Wikidata"
+    },
+    {
+      "sourceId": "wikidata-grave-Q6653557",
+      "source": "wikidata",
+      "name": "קבר רבי מאיר בעל הנס",
+      "lat": 32.76621111,
+      "lng": 35.54981944,
+      "wikidataId": "Q6653557",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "graves",
+        "wikidataUri": "http://www.wikidata.org/entity/Q6653557"
+      },
+      "confidenceScore": 80,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata ישות קבר | +שם מכיל מילת קבר | +שם עברי"
+    },
+    {
+      "sourceId": "wikidata-grave-Q120411618",
+      "source": "wikidata",
+      "name": "קבר אלישע",
+      "lat": 32.827130142,
+      "lng": 34.970081271,
+      "wikidataId": "Q120411618",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "graves",
+        "wikidataUri": "http://www.wikidata.org/entity/Q120411618"
+      },
+      "confidenceScore": 80,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata ישות קבר | +שם מכיל מילת קבר | +שם עברי"
+    },
+    {
+      "sourceId": "wikidata-grave-Q1708945",
+      "source": "wikidata",
+      "name": "קבר בני חזיר",
+      "lat": 31.776447222,
+      "lng": 35.239130555,
+      "wikidataId": "Q1708945",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "musthave",
+        "wikidataUri": "http://www.wikidata.org/entity/Q1708945",
+        "isMustHave": true
+      },
+      "confidenceScore": 70,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata איש דת | +שם מכיל מילת קבר | +שם עברי"
+    },
+    {
+      "sourceId": "wikidata-grave-Q12410947",
+      "source": "wikidata",
+      "name": "קבר רבי יהודה הנשיא",
+      "lat": 32.70324,
+      "lng": 35.12873,
+      "wikidataId": "Q12410947",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "musthave",
+        "wikidataUri": "http://www.wikidata.org/entity/Q12410947",
+        "isMustHave": true
+      },
+      "confidenceScore": 70,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata איש דת | +שם מכיל מילת קבר | +שם עברי"
+    },
+    {
+      "sourceId": "wikidata-grave-Q492091",
+      "source": "wikidata",
+      "name": "קבר זכריה",
+      "lat": 31.776236111,
+      "lng": 35.239119444,
+      "wikidataId": "Q492091",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "musthave",
+        "wikidataUri": "http://www.wikidata.org/entity/Q492091",
+        "isMustHave": true
+      },
+      "confidenceScore": 70,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata איש דת | +שם מכיל מילת קבר | +שם עברי"
+    },
+    {
+      "sourceId": "wikidata-grave-Q5216485",
+      "source": "wikidata",
+      "name": "קבר הבאבא סאלי",
+      "lat": 31.43035,
+      "lng": 34.58551111,
+      "wikidataId": "Q5216485",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "musthave",
+        "wikidataUri": "http://www.wikidata.org/entity/Q5216485",
+        "isMustHave": true
+      },
+      "confidenceScore": 70,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata איש דת | +שם מכיל מילת קבר | +שם עברי"
+    },
+    {
+      "sourceId": "wikidata-grave-Q2907254",
+      "source": "wikidata",
+      "name": "קבר שמואל הנביא",
+      "lat": 31.8327,
+      "lng": 35.1801,
+      "wikidataId": "Q2907254",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "musthave",
+        "wikidataUri": "http://www.wikidata.org/entity/Q2907254",
+        "isMustHave": true
+      },
+      "confidenceScore": 85,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata Q2907254 | שם תוקן מ\"נבי סמואל\" | קואורדינטות מאומתות",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | שם לא מזהה קבר ואין שם קבור",
+      "buriedPerson": "שמואל הנביא"
+    },
+    {
+      "sourceId": "wikidata-grave-Q119719894",
+      "source": "wikidata",
+      "name": "קבר עמוס",
+      "lat": 31.636416,
+      "lng": 35.20981,
+      "wikidataId": "Q119719894",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "musthave",
+        "wikidataUri": "http://www.wikidata.org/entity/Q119719894",
+        "isMustHave": true
+      },
+      "confidenceScore": 70,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata איש דת | +שם מכיל מילת קבר | +שם עברי"
+    },
+    {
+      "sourceId": "wikidata-grave-Q6970838",
+      "source": "wikidata",
+      "name": "קבר יהושע בן נון",
+      "lat": 32.118617,
+      "lng": 35.15695,
+      "wikidataId": "Q6970838",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "musthave",
+        "wikidataUri": "http://www.wikidata.org/entity/Q6970838",
+        "isMustHave": true
+      },
+      "confidenceScore": 70,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata איש דת | +שם מכיל מילת קבר | +שם עברי"
+    },
+    {
+      "sourceId": "wikidata-grave-Q625219",
+      "source": "wikidata",
+      "name": "קבר הרמב\"ם",
+      "lat": 32.79,
+      "lng": 35.5372,
+      "wikidataId": "Q625219",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "musthave",
+        "wikidataUri": "http://www.wikidata.org/entity/Q625219",
+        "isMustHave": true
+      },
+      "confidenceScore": 70,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata איש דת | +שם מכיל מילת קבר | +שם עברי"
+    },
+    {
+      "sourceId": "manual-kever-rachel",
+      "source": "manual",
+      "name": "קבר רחל",
+      "lat": 31.7226,
+      "lng": 35.2037,
+      "city": "בית לחם",
+      "buriedPerson": "רחל אמנו",
+      "wikidataId": "Q1302541",
+      "verifiedAt": "2026-07-05",
+      "confidenceScore": 95,
+      "confidenceLevel": "high",
+      "confidenceReason": "seed ידני | Q1302541 | קואורדינטות מאומתות",
+      "extra": {
+        "isMustHave": true,
+        "manualSeed": true
+      }
+    },
+    {
+      "sourceId": "manual-machpelah",
+      "source": "manual",
+      "name": "מערת המכפלה",
+      "lat": 31.5244,
+      "lng": 35.1103,
+      "city": "חברון",
+      "buriedPerson": "האבות: אברהם, יצחק, יעקב, שרה, רבקה, לאה",
+      "wikidataId": "Q204200",
+      "verifiedAt": "2026-07-05",
+      "confidenceScore": 100,
+      "confidenceLevel": "high",
+      "confidenceReason": "seed ידני | Q204200 | קואורדינטות מאומתות | +אימות מקור שני | +אימות מקור שני",
+      "extra": {
+        "isMustHave": true,
+        "manualSeed": true
+      }
+    },
+    {
+      "sourceId": "manual-kever-yosef",
+      "source": "manual",
+      "name": "קבר יוסף",
+      "lat": 32.2124,
+      "lng": 35.2845,
+      "city": "שכם",
+      "buriedPerson": "יוסף הצדיק",
+      "wikidataId": "Q1297538",
+      "verifiedAt": "2026-07-05",
+      "confidenceScore": 98,
+      "confidenceLevel": "high",
+      "confidenceReason": "seed ידני | Q1297538 | קואורדינטות מאומתות | +אימות מקור שני",
+      "extra": {
+        "isMustHave": true,
+        "manualSeed": true
+      }
+    },
+    {
+      "sourceId": "manual-kever-akiva",
+      "source": "manual",
+      "name": "קבר רבי עקיבא",
+      "lat": 32.7948,
+      "lng": 35.5346,
+      "city": "טבריה",
+      "buriedPerson": "רבי עקיבא בן יוסף",
+      "verifiedAt": "2026-07-05",
+      "confidenceScore": 90,
+      "confidenceLevel": "high",
+      "confidenceReason": "seed ידני | בית העלמין הקדמי, טבריה | קואורדינטות מאומתות",
+      "extra": {
+        "isMustHave": true,
+        "manualSeed": true
+      }
+    },
+    {
+      "sourceId": "manual-kever-ari",
+      "source": "manual",
+      "name": "קבר האר\"י הקדוש",
+      "lat": 32.9636,
+      "lng": 35.4967,
+      "city": "צפת",
+      "buriedPerson": "רבי יצחק לוריא (האר\"י)",
+      "verifiedAt": "2026-07-05",
+      "confidenceScore": 92,
+      "confidenceLevel": "high",
+      "confidenceReason": "seed ידני | בית העלמין העתיק, צפת | קואורדינטות מאומתות",
+      "extra": {
+        "isMustHave": true,
+        "manualSeed": true
+      }
+    },
+    {
+      "sourceId": "manual-kever-shimshon",
+      "source": "manual",
+      "name": "קבר שמשון הגיבור",
+      "lat": 31.774065,
+      "lng": 34.985227,
+      "city": "צרעה",
+      "buriedPerson": "שמשון הגיבור",
+      "verifiedAt": "2026-07-05",
+      "confidenceScore": 82,
+      "confidenceLevel": "high",
+      "confidenceReason": "seed ידני | תל צרעה, בין צרעה לאשתאול | 2 מקורות תואמים (<10מ׳) | מסורת מקובלת",
+      "extra": {
+        "manualSeed": true
+      }
+    },
+    {
+      "sourceId": "manual-kever-shelah",
+      "source": "manual",
+      "name": "קבר השל\"ה הקדוש",
+      "lat": 32.7897691,
+      "lng": 35.5398467,
+      "city": "טבריה",
+      "buriedPerson": "רבי ישעיהו הלוי הורוביץ (השל\"ה הקדוש)",
+      "verifiedAt": "2026-07-05",
+      "confidenceScore": 85,
+      "confidenceLevel": "high",
+      "confidenceReason": "seed ידני | בית העלמין הקדמי טבריה, מתחם הרמב\"ם | 2 מקורות תואמים | holy.org.il + nelech.co.il",
+      "extra": {
+        "manualSeed": true
+      }
+    }
+  ],
+  "manualReview": [
+    {
+      "sourceId": "osm-osm-node-8626554294",
+      "source": "osm",
+      "name": "רבי יוסי סראגוסי",
+      "lat": 32.9824365,
+      "lng": 35.4900965,
+      "city": "ביריה",
+      "address": "ביריה",
+      "osmId": "node/8626554294",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "node",
+        "osmSubtype": "other",
+        "osmQuery": "shrine",
+        "osmTags": {
+          "historic": "wayside_shrine",
+          "name": "רבי יוסי סראגוסי",
+          "name:he": "רבי יוסי סראגוסי",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 30,
+      "confidenceLevel": "low",
+      "confidenceReason": "OSM אחר | +שם עברי | -אין מילת קבר ואין שם קבור",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | מקור יחיד ללא Wikidata | שם לא מזהה קבר ואין שם קבור"
+    },
+    {
+      "sourceId": "osm-osm-node-1339404829",
+      "source": "osm",
+      "name": "ציונו של חבקוק הנביא",
+      "lat": 32.8897121,
+      "lng": 35.4793449,
+      "city": "קדרים",
+      "address": "קדרים",
+      "buriedPerson": "חבקוק",
+      "osmId": "node/1339404829",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "node",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "name": "ציונו של חבקוק הנביא",
+          "name:en": "Havakuk HaNavi",
+          "name:he": "ציונו של חבקוק הנביא",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 42,
+      "confidenceLevel": "low",
+      "confidenceReason": "OSM אחר | +שם עברי | -אין מילת קבר ואין שם קבור | +OSM+Wikidata match",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | מקור יחיד ללא Wikidata | שם לא מזהה קבר ואין שם קבור",
+      "wikidataId": "Q18192136"
+    },
+    {
+      "sourceId": "osm-osm-node-4488634668",
+      "source": "osm",
+      "name": "אליהו הנביא",
+      "lat": 32.2732089,
+      "lng": 34.9356635,
+      "city": "עין שריד",
+      "address": "עין שריד",
+      "osmId": "node/4488634668",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "node",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "name": "אליהו הנביא",
+          "name:en": "Eliyahu HaNavi",
+          "name:he": "אליהו הנביא",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 30,
+      "confidenceLevel": "low",
+      "confidenceReason": "OSM אחר | +שם עברי | -אין מילת קבר ואין שם קבור",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | מקור יחיד ללא Wikidata | שם לא מזהה קבר ואין שם קבור"
+    },
+    {
+      "sourceId": "osm-osm-node-7417569686",
+      "source": "osm",
+      "name": "ציון התנא רבי יהודה בן בבא",
+      "lat": 32.7999816,
+      "lng": 35.1580846,
+      "city": "שפרעם",
+      "address": "שפרעם",
+      "osmId": "node/7417569686",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "node",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "description": "רבי יהודה בן בבא יצא לסמוך 5 רבנים בין אושא לשפרעם על אף איסור ההסמכה ולימוד התורה שהטילו הרומאים. בין הרבנים שהוסמכו, רבי שמעון בר יוחאי.",
+          "description:he": "רבי יהודה בן בבא יצא לסמוך 5 רבנים בין אושא לשפרעם על אף איסור ההסמכה ולימוד התורה שהטילו הרומאים. בין הרבנים שהוסמכו, רבי שמעון בר יוחאי.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/Israel_Hiking_Map_שפרעם_-_ציון_קבר_רבי_יהודה_בן_בבא.jpeg",
+          "name": "ציון התנא רבי יהודה בן בבא",
+          "name:ar": "صهيون تانا الحاخام يهودا بن بابا",
+          "name:he": "ציון התנא רבי יהודה בן בבא",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 60,
+      "confidenceLevel": "medium",
+      "confidenceReason": "OSM אחר | +שם מכיל מילת קבר | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "מקור יחיד ללא Wikidata"
+    },
+    {
+      "sourceId": "osm-osm-node-8281773511",
+      "source": "osm",
+      "name": "קבר יהודה",
+      "lat": 32.0308736,
+      "lng": 34.8875279,
+      "city": "יהוד מונוסון",
+      "address": "יהוד מונוסון",
+      "osmId": "node/8281773511",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "node",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/e/eb/The_Tomb_of_Judah_Jacob%27s_Son_ap_007.jpg",
+          "name": "קבר יהודה",
+          "name:ar": "مقام النبي هودا",
+          "name:en": "Tomb of Judah",
+          "name:he": "קבר יהודה",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 60,
+      "confidenceLevel": "medium",
+      "confidenceReason": "OSM אחר | +שם מכיל מילת קבר | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "מקור יחיד ללא Wikidata"
+    },
+    {
+      "sourceId": "osm-osm-way-161058978",
+      "source": "osm",
+      "name": "קבר דוד המלך",
+      "lat": 31.7717503,
+      "lng": 35.2292401,
+      "city": "ירושלים",
+      "address": "ירושלים",
+      "osmId": "way/161058978",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "addr:city": "Jerusalem",
+          "amenity": "place_of_worship",
+          "building": "synagogue",
+          "denomination": "orthodox",
+          "name": "קבר דוד המלך",
+          "name:ar": "قبر داود",
+          "name:br": "Bez David",
+          "name:de": "Davidsgrab",
+          "name:en": "David's Tomb",
+          "name:fi": "Daavidin hauta",
+          "name:he": "קבר דוד המלך",
+          "name:hu": "Dávid sírja",
+          "name:it": "Tomba di Davide",
+          "name:ro": "Mormântul Regelui David",
+          "religion": "jewish",
+          "wikidata": "Q1177668",
+          "wikipedia": "en:David's Tomb",
+          "wikipedia:en": "David's Tomb"
+        },
+        "wikidataTag": "Q1177668"
+      },
+      "confidenceScore": 65,
+      "confidenceLevel": "medium",
+      "confidenceReason": "OSM אחר | +שם מכיל מילת קבר | +OSM wikidata tag | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "מקור יחיד ללא Wikidata"
+    },
+    {
+      "sourceId": "osm-osm-way-166098884",
+      "source": "osm",
+      "name": "שמעון הצדיק",
+      "lat": 31.7580765,
+      "lng": 35.205976,
+      "city": "רמת רחל",
+      "address": "רמת רחל",
+      "osmId": "way/166098884",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "name": "שמעון הצדיק",
+          "name:en": "Shimon Ha'Tzadik",
+          "name:he": "שמעון הצדיק",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 30,
+      "confidenceLevel": "low",
+      "confidenceReason": "OSM אחר | +שם עברי | -אין מילת קבר ואין שם קבור",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | מקור יחיד ללא Wikidata | שם לא מזהה קבר ואין שם קבור"
+    },
+    {
+      "sourceId": "osm-osm-way-166389921",
+      "source": "osm",
+      "name": "אליהו הנביא",
+      "lat": 31.7537904,
+      "lng": 35.1937923,
+      "city": "רמת רחל",
+      "address": "רמת רחל",
+      "osmId": "way/166389921",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "name": "אליהו הנביא",
+          "name:en": "Eliyahu HaNavi",
+          "name:he": "אליהו הנביא",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 30,
+      "confidenceLevel": "low",
+      "confidenceReason": "OSM אחר | +שם עברי | -אין מילת קבר ואין שם קבור",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | מקור יחיד ללא Wikidata | שם לא מזהה קבר ואין שם קבור"
+    },
+    {
+      "sourceId": "osm-osm-way-183194389",
+      "source": "osm",
+      "name": "אליהו הנביא",
+      "lat": 31.7564903,
+      "lng": 35.2095927,
+      "city": "רמת רחל",
+      "address": "רמת רחל",
+      "osmId": "way/183194389",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "name": "אליהו הנביא",
+          "name:en": "Eliyahu HaNavi",
+          "name:he": "אליהו הנביא",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 30,
+      "confidenceLevel": "low",
+      "confidenceReason": "OSM אחר | +שם עברי | -אין מילת קבר ואין שם קבור",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | מקור יחיד ללא Wikidata | שם לא מזהה קבר ואין שם קבור"
+    },
+    {
+      "sourceId": "osm-osm-way-229650644",
+      "source": "osm",
+      "name": "הצדיק האלקי",
+      "lat": 31.7535408,
+      "lng": 35.1664502,
+      "city": "אורה",
+      "address": "אורה",
+      "osmId": "way/229650644",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "name": "הצדיק האלקי",
+          "name:en": "Ha'Tzadik Ha'Eloki",
+          "name:he": "הצדיק האלקי",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 30,
+      "confidenceLevel": "low",
+      "confidenceReason": "OSM אחר | +שם עברי | -אין מילת קבר ואין שם קבור",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | מקור יחיד ללא Wikidata | שם לא מזהה קבר ואין שם קבור"
+    },
+    {
+      "sourceId": "osm-osm-way-364023176",
+      "source": "osm",
+      "name": "אליהו הנביא",
+      "lat": 31.246329,
+      "lng": 34.7939783,
+      "city": "באר שבע",
+      "address": "באר שבע",
+      "osmId": "way/364023176",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "name": "אליהו הנביא",
+          "name:en": "Eliyahu HaNavi",
+          "name:he": "אליהו הנביא",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 30,
+      "confidenceLevel": "low",
+      "confidenceReason": "OSM אחר | +שם עברי | -אין מילת קבר ואין שם קבור",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | מקור יחיד ללא Wikidata | שם לא מזהה קבר ואין שם קבור"
+    },
+    {
+      "sourceId": "osm-osm-way-784153750",
+      "source": "osm",
+      "name": "אליהו הנביא",
+      "lat": 32.6926183,
+      "lng": 35.1084084,
+      "city": "כפר תקווה",
+      "address": "כפר תקווה",
+      "osmId": "way/784153750",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "osmType": "way",
+        "osmSubtype": "worship",
+        "osmQuery": "worship-filtered",
+        "osmTags": {
+          "addr:city": "קריית טבעון - קריית חרושת",
+          "amenity": "place_of_worship",
+          "building": "yes",
+          "name": "אליהו הנביא",
+          "religion": "jewish"
+        }
+      },
+      "confidenceScore": 30,
+      "confidenceLevel": "low",
+      "confidenceReason": "OSM אחר | +שם עברי | -אין מילת קבר ואין שם קבור",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | מקור יחיד ללא Wikidata | שם לא מזהה קבר ואין שם קבור"
+    },
+    {
+      "sourceId": "wikidata-grave-Q6843724",
+      "source": "wikidata",
+      "name": "קברי המהנדסים בשער יפו",
+      "lat": 31.77668889,
+      "lng": 35.22785,
+      "wikidataId": "Q6843724",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "graves",
+        "wikidataUri": "http://www.wikidata.org/entity/Q6843724"
+      },
+      "confidenceScore": 80,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata ישות קבר | +שם מכיל מילת קבר | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "סומן לבדיקה ידנית בביקורת Phase 4"
+    },
+    {
+      "sourceId": "wikidata-grave-Q3117130",
+      "source": "wikidata",
+      "name": "מערת יהושפט",
+      "lat": 31.777277777,
+      "lng": 35.238888888,
+      "wikidataId": "Q3117130",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "graves",
+        "wikidataUri": "http://www.wikidata.org/entity/Q3117130"
+      },
+      "confidenceScore": 80,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata ישות קבר | +שם מכיל מילת קבר | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "סומן לבדיקה ידנית בביקורת Phase 4"
+    },
+    {
+      "sourceId": "wikidata-grave-Q6581399",
+      "source": "wikidata",
+      "name": "קבר סית מנע",
+      "lat": 31.89081,
+      "lng": 35.023358,
+      "wikidataId": "Q6581399",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "graves",
+        "wikidataUri": "http://www.wikidata.org/entity/Q6581399"
+      },
+      "confidenceScore": 80,
+      "confidenceLevel": "high",
+      "confidenceReason": "Wikidata ישות קבר | +שם מכיל מילת קבר | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "סומן לבדיקה ידנית בביקורת Phase 4"
+    },
+    {
+      "sourceId": "wikidata-grave-Q205976",
+      "source": "wikidata",
+      "name": "הר הזיתים",
+      "lat": 31.777946,
+      "lng": 35.245686,
+      "buriedPerson": "עדין אבן־ישראל (שטיינזלץ)",
+      "wikidataId": "Q205976",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "rabbis",
+        "personQid": "Q357304",
+        "burialPlaceQid": "Q205976",
+        "occupation": "Q4964182",
+        "burialPlacePersonCount": 1
+      },
+      "confidenceScore": 65,
+      "confidenceLevel": "medium",
+      "confidenceReason": "Wikidata איש דת | +שם קבור ידוע | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "סומן לבדיקה ידנית בביקורת Phase 4"
+    },
+    {
+      "sourceId": "wikidata-grave-Q2632879",
+      "source": "wikidata",
+      "name": "כפר יאסיף",
+      "lat": 32.954722222,
+      "lng": 35.165277777,
+      "buriedPerson": "רמח\"ל",
+      "wikidataId": "Q2632879",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "rabbis",
+        "personQid": "Q982845",
+        "burialPlaceQid": "Q2632879",
+        "occupation": "Q4964182",
+        "burialPlacePersonCount": 1
+      },
+      "confidenceScore": 65,
+      "confidenceLevel": "medium",
+      "confidenceReason": "Wikidata איש דת | +שם קבור ידוע | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "סומן לבדיקה ידנית בביקורת Phase 4"
+    },
+    {
+      "sourceId": "wikidata-grave-Q2777361",
+      "source": "wikidata",
+      "name": "פרוד",
+      "lat": 32.932297222,
+      "lng": 35.433797222,
+      "buriedPerson": "רבי ישמעאל",
+      "wikidataId": "Q2777361",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "rabbis",
+        "personQid": "Q1391069",
+        "burialPlaceQid": "Q2777361",
+        "occupation": "Q4964182",
+        "burialPlacePersonCount": 1
+      },
+      "confidenceScore": 65,
+      "confidenceLevel": "medium",
+      "confidenceReason": "Wikidata איש דת | +שם קבור ידוע | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "סומן לבדיקה ידנית בביקורת Phase 4"
+    },
+    {
+      "sourceId": "wikidata-grave-Q1018884",
+      "source": "wikidata",
+      "name": "כאבול",
+      "lat": 32.868333333,
+      "lng": 35.211388888,
+      "buriedPerson": "אברהם אבן עזרא",
+      "wikidataId": "Q1018884",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "rabbis",
+        "personQid": "Q270670",
+        "burialPlaceQid": "Q1018884",
+        "occupation": "Q4964182",
+        "burialPlacePersonCount": 1
+      },
+      "confidenceScore": 65,
+      "confidenceLevel": "medium",
+      "confidenceReason": "Wikidata איש דת | +שם קבור ידוע | +שם עברי",
+      "manual_review_required": true,
+      "manual_review_reason": "סומן לבדיקה ידנית בביקורת Phase 4"
+    },
+    {
+      "sourceId": "wikidata-grave-Q331729",
+      "source": "wikidata",
+      "name": "יד אבשלום",
+      "lat": 31.776958333,
+      "lng": 35.238958333,
+      "wikidataId": "Q331729",
+      "verifiedAt": "2026-07-05",
+      "extra": {
+        "sparqlQuery": "musthave",
+        "wikidataUri": "http://www.wikidata.org/entity/Q331729",
+        "isMustHave": true
+      },
+      "confidenceScore": 40,
+      "confidenceLevel": "low",
+      "confidenceReason": "Wikidata איש דת | +שם עברי | -אין מילת קבר ואין שם קבור",
+      "manual_review_required": true,
+      "manual_review_reason": "אמינות נמוכה | שם לא מזהה קבר ואין שם קבור"
+    }
+  ],
+  "qualityRejected": [
+    {
+      "record": {
+        "sourceId": "osm-osm-node-8626554287",
+        "source": "osm",
+        "name": "רבי יהודה בר עילאי",
+        "lat": 32.984543,
+        "lng": 35.4904373,
+        "city": "ביריה",
+        "address": "ביריה",
+        "osmId": "node/8626554287",
+        "verifiedAt": "2026-07-05",
+        "extra": {
+          "osmType": "node",
+          "osmSubtype": "other",
+          "osmQuery": "shrine",
+          "osmTags": {
+            "historic": "wayside_shrine",
+            "name": "רבי יהודה בר עילאי",
+            "name:he": "רבי יהודה בר עילאי",
+            "religion": "jewish"
+          }
+        },
+        "confidenceScore": 30,
+        "confidenceLevel": "low",
+        "confidenceReason": "OSM אחר | +שם עברי | -אין מילת קבר ואין שם קבור",
+        "manual_review_required": true,
+        "manual_review_reason": "אמינות נמוכה | מקור יחיד ללא Wikidata | שם לא מזהה קבר ואין שם קבור"
+      },
+      "reason": "כפילות — רבי יהודה בר עילאי node (ציון 30); way-647373211 נשמר"
+    },
+    {
+      "record": {
+        "sourceId": "osm-osm-node-10866619321",
+        "source": "osm",
+        "name": "בית הכנסת אליהו הנביא",
+        "lat": 32.059521,
+        "lng": 34.7726947,
+        "city": "קריית מאיר",
+        "address": "קריית מאיר",
+        "osmId": "node/10866619321",
+        "verifiedAt": "2026-07-05",
+        "extra": {
+          "osmType": "node",
+          "osmSubtype": "worship",
+          "osmQuery": "worship-filtered",
+          "osmTags": {
+            "amenity": "place_of_worship",
+            "check_date": "2025-12-01",
+            "name": "בית הכנסת אליהו הנביא",
+            "name:he": "בית הכנסת אליהו הנביא",
+            "religion": "jewish"
+          }
+        },
+        "confidenceScore": 30,
+        "confidenceLevel": "low",
+        "confidenceReason": "OSM אחר | +שם עברי | -אין מילת קבר ואין שם קבור",
+        "manual_review_required": true,
+        "manual_review_reason": "אמינות נמוכה | מקור יחיד ללא Wikidata | שם לא מזהה קבר ואין שם קבור"
+      },
+      "reason": "בית כנסת אליהו הנביא"
+    },
+    {
+      "record": {
+        "sourceId": "osm-osm-way-161058945",
+        "source": "osm",
+        "name": "קבר דוד",
+        "lat": 31.7714992,
+        "lng": 35.2291,
+        "city": "ירושלים",
+        "address": "ירושלים",
+        "osmId": "way/161058945",
+        "verifiedAt": "2026-07-05",
+        "extra": {
+          "osmType": "way",
+          "osmSubtype": "worship",
+          "osmQuery": "worship-filtered",
+          "osmTags": {
+            "addr:city": "Jerusalem",
+            "alt_name:br": "Bez Dewi",
+            "amenity": "place_of_worship",
+            "building": "yes",
+            "denomination": "orthodox",
+            "name": "David's Tomb",
+            "name:ar": "مقام النبي داود",
+            "name:br": "Bez David",
+            "name:en": "David's Tomb",
+            "name:he": "קבר דוד",
+            "name:ml": "ദാവീദിന്റെ ശവകുടീരം",
+            "religion": "jewish",
+            "wikidata": "Q1177668",
+            "wikipedia": "en:David's Tomb"
+          },
+          "wikidataTag": "Q1177668"
+        },
+        "confidenceScore": 77,
+        "confidenceLevel": "high",
+        "confidenceReason": "OSM אחר | +שם מכיל מילת קבר | +OSM wikidata tag | +שם עברי | +OSM+Wikidata match",
+        "manual_review_required": true,
+        "manual_review_reason": "מקור יחיד ללא Wikidata",
+        "wikidataId": "Q1177668"
+      },
+      "reason": "כפילות — קבר דוד המלך (way-161058978) נשמר; שם מלא מועדף"
+    },
+    {
+      "record": {
+        "sourceId": "osm-osm-way-511100004",
+        "source": "osm",
+        "name": "בית הכנסת היכל הצדיק ברסלב",
+        "lat": 32.0474739,
+        "lng": 34.9551962,
+        "city": "אלעד",
+        "address": "אלעד",
+        "osmId": "way/511100004",
+        "verifiedAt": "2026-07-05",
+        "extra": {
+          "osmType": "way",
+          "osmSubtype": "worship",
+          "osmQuery": "worship-filtered",
+          "osmTags": {
+            "amenity": "place_of_worship",
+            "building": "yes",
+            "name": "בית הכנסת היכל הצדיק ברסלב",
+            "name:en": "Haichal Hatzadik Breslav synagogue",
+            "name:he": "בית הכנסת היכל הצדיק ברסלב",
+            "religion": "jewish"
+          }
+        },
+        "confidenceScore": 30,
+        "confidenceLevel": "low",
+        "confidenceReason": "OSM אחר | +שם עברי | -אין מילת קבר ואין שם קבור",
+        "manual_review_required": true,
+        "manual_review_reason": "אמינות נמוכה | מקור יחיד ללא Wikidata | שם לא מזהה קבר ואין שם קבור"
+      },
+      "reason": "בית כנסת היכל הצדיק ברסלב"
+    },
+    {
+      "record": {
+        "sourceId": "wikidata-grave-Q111305015",
+        "source": "wikidata",
+        "name": "הלוויית הרב חיים קניבסקי",
+        "lat": 32.0725,
+        "lng": 34.833888888,
+        "wikidataId": "Q111305015",
+        "verifiedAt": "2026-07-05",
+        "extra": {
+          "sparqlQuery": "graves",
+          "wikidataUri": "http://www.wikidata.org/entity/Q111305015"
+        },
+        "confidenceScore": 50,
+        "confidenceLevel": "medium",
+        "confidenceReason": "Wikidata ישות קבר | +שם עברי | -אין מילת קבר ואין שם קבור",
+        "manual_review_required": true,
+        "manual_review_reason": "שם לא מזהה קבר ואין שם קבור"
+      },
+      "reason": "הלוויה — לא קבר"
+    },
+    {
+      "record": {
+        "sourceId": "wikidata-grave-Q6682025",
+        "source": "wikidata",
+        "name": "נבי סבלאן",
+        "lat": 33.011606111,
+        "lng": 35.341473182,
+        "wikidataId": "Q6682025",
+        "verifiedAt": "2026-07-05",
+        "extra": {
+          "sparqlQuery": "graves",
+          "wikidataUri": "http://www.wikidata.org/entity/Q6682025"
+        },
+        "confidenceScore": 50,
+        "confidenceLevel": "medium",
+        "confidenceReason": "Wikidata ישות קבר | +שם עברי | -אין מילת קבר ואין שם קבור",
+        "manual_review_required": true,
+        "manual_review_reason": "שם לא מזהה קבר ואין שם קבור"
+      },
+      "reason": "נבי סבלאן — אתר דרוזי/מוסלמי"
+    },
+    {
+      "record": {
+        "sourceId": "wikidata-grave-Q6588897",
+        "source": "wikidata",
+        "name": "נבי יעפורי",
+        "lat": 33.24138889,
+        "lng": 35.76833333,
+        "wikidataId": "Q6588897",
+        "verifiedAt": "2026-07-05",
+        "extra": {
+          "sparqlQuery": "graves",
+          "wikidataUri": "http://www.wikidata.org/entity/Q6588897"
+        },
+        "confidenceScore": 50,
+        "confidenceLevel": "medium",
+        "confidenceReason": "Wikidata ישות קבר | +שם עברי | -אין מילת קבר ואין שם קבור",
+        "manual_review_required": true,
+        "manual_review_reason": "שם לא מזהה קבר ואין שם קבור"
+      },
+      "reason": "נבי יעפורי — מקאם מוסלמי"
+    },
+    {
+      "record": {
+        "sourceId": "wikidata-grave-Q2590976",
+        "source": "wikidata",
+        "name": "מתחם נבי שועייב",
+        "lat": 32.80525,
+        "lng": 35.45046,
+        "wikidataId": "Q2590976",
+        "verifiedAt": "2026-07-05",
+        "extra": {
+          "sparqlQuery": "graves",
+          "wikidataUri": "http://www.wikidata.org/entity/Q2590976"
+        },
+        "confidenceScore": 50,
+        "confidenceLevel": "medium",
+        "confidenceReason": "Wikidata ישות קבר | +שם עברי | -אין מילת קבר ואין שם קבור",
+        "manual_review_required": true,
+        "manual_review_reason": "שם לא מזהה קבר ואין שם קבור"
+      },
+      "reason": "מתחם נבי שועייב — אתר דרוזי"
+    },
+    {
+      "record": {
+        "sourceId": "wikidata-grave-Q540882",
+        "source": "wikidata",
+        "name": "מערת תלפיות",
+        "lat": 31.751402777,
+        "lng": 35.235197222,
+        "buriedPerson": "ישו",
+        "wikidataId": "Q540882",
+        "verifiedAt": "2026-07-05",
+        "extra": {
+          "sparqlQuery": "graves",
+          "wikidataUri": "http://www.wikidata.org/entity/Q540882",
+          "additionalPerson": "ישו"
+        },
+        "confidenceScore": 90,
+        "confidenceLevel": "high",
+        "confidenceReason": "Wikidata ישות קבר | +שם מכיל מילת קבר | +שם קבור ידוע | +שם עברי"
+      },
+      "reason": "מערת תלפיות — ייחוס נוצרי (ישו)"
+    },
+    {
+      "record": {
+        "sourceId": "wikidata-grave-Q124030938",
+        "source": "wikidata",
+        "name": "בית הקברות של אשדוד ים",
+        "lat": 31.776467089,
+        "lng": 34.622969193,
+        "wikidataId": "Q124030938",
+        "verifiedAt": "2026-07-05",
+        "extra": {
+          "sparqlQuery": "graves",
+          "wikidataUri": "http://www.wikidata.org/entity/Q124030938"
+        },
+        "confidenceScore": 80,
+        "confidenceLevel": "high",
+        "confidenceReason": "Wikidata ישות קבר | +שם מכיל מילת קבר | +שם עברי"
+      },
+      "reason": "בית קברות כללי"
+    },
+    {
+      "record": {
+        "sourceId": "wikidata-grave-Q125395543",
+        "source": "wikidata",
+        "name": "קבר יונתן בן עוזיאל",
+        "lat": 32.998080555,
+        "lng": 35.524811111,
+        "wikidataId": "Q125395543",
+        "verifiedAt": "2026-07-05",
+        "extra": {
+          "sparqlQuery": "graves",
+          "wikidataUri": "http://www.wikidata.org/entity/Q125395543"
+        },
+        "confidenceScore": 80,
+        "confidenceLevel": "high",
+        "confidenceReason": "Wikidata ישות קבר | +שם מכיל מילת קבר | +שם עברי"
+      },
+      "reason": "כפילות — קבר יונתן בן עוזיאל (Wikidata); OSM נשמר"
+    },
+    {
+      "record": {
+        "sourceId": "wikidata-grave-Q6582124",
+        "source": "wikidata",
+        "name": "קבר נבי יהודה",
+        "lat": 33.214888888,
+        "lng": 35.65475,
+        "wikidataId": "Q6582124",
+        "verifiedAt": "2026-07-05",
+        "extra": {
+          "sparqlQuery": "graves",
+          "wikidataUri": "http://www.wikidata.org/entity/Q6582124"
+        },
+        "confidenceScore": 80,
+        "confidenceLevel": "high",
+        "confidenceReason": "Wikidata ישות קבר | +שם מכיל מילת קבר | +שם עברי"
+      },
+      "reason": "קבר נבי יהודה — מוסלמי (לבנון)"
+    },
+    {
+      "record": {
+        "sourceId": "wikidata-grave-Q137656514",
+        "source": "wikidata",
+        "name": "מקאם נבי אל-ח'דר",
+        "lat": 32.953555555,
+        "lng": 35.166916666,
+        "wikidataId": "Q137656514",
+        "verifiedAt": "2026-07-05",
+        "extra": {
+          "sparqlQuery": "graves",
+          "wikidataUri": "http://www.wikidata.org/entity/Q137656514"
+        },
+        "confidenceScore": 80,
+        "confidenceLevel": "high",
+        "confidenceReason": "Wikidata ישות קבר | +שם מכיל מילת קבר | +שם עברי"
+      },
+      "reason": "מקאם נבי אל-ח'דר — מוסלמי"
+    },
+    {
+      "record": {
+        "sourceId": "wikidata-grave-Q1218",
+        "source": "wikidata",
+        "name": "ירושלים",
+        "lat": 31.776679,
+        "lng": 35.234156,
+        "buriedPerson": "דוד",
+        "wikidataId": "Q1218",
+        "verifiedAt": "2026-07-05",
+        "extra": {
+          "sparqlQuery": "rabbis",
+          "personQid": "Q41370",
+          "burialPlaceQid": "Q1218",
+          "occupation": "Q116",
+          "burialPlacePersonCount": 6
+        },
+        "confidenceScore": 55,
+        "confidenceLevel": "medium",
+        "confidenceReason": "Wikidata איש דת | +שם קבור ידוע | +שם עברי | -מקום קבורה משותף (6 אישים)"
+      },
+      "reason": "ירושלים — עיר שלמה"
+    },
+    {
+      "record": {
+        "sourceId": "wikidata-grave-Q1177750",
+        "source": "wikidata",
+        "name": "עיר דוד",
+        "lat": 31.773037025,
+        "lng": 35.23481082,
+        "buriedPerson": "יהורם",
+        "wikidataId": "Q1177750",
+        "verifiedAt": "2026-07-05",
+        "extra": {
+          "sparqlQuery": "rabbis",
+          "personQid": "Q313215",
+          "burialPlaceQid": "Q1177750",
+          "occupation": "Q116",
+          "burialPlacePersonCount": 6
+        },
+        "confidenceScore": 55,
+        "confidenceLevel": "medium",
+        "confidenceReason": "Wikidata איש דת | +שם קבור ידוע | +שם עברי | -מקום קבורה משותף (6 אישים)"
+      },
+      "reason": "עיר דוד — אזור ארכאולוגי"
+    },
+    {
+      "record": {
+        "sourceId": "wikidata-grave-Q2889806",
+        "source": "wikidata",
+        "name": "געש",
+        "lat": 32.2293,
+        "lng": 34.825897222,
+        "buriedPerson": "גרשון ויילר",
+        "wikidataId": "Q2889806",
+        "verifiedAt": "2026-07-05",
+        "extra": {
+          "sparqlQuery": "rabbis",
+          "personQid": "Q59531472",
+          "burialPlaceQid": "Q2889806",
+          "occupation": "Q4964182",
+          "burialPlacePersonCount": 1
+        },
+        "confidenceScore": 65,
+        "confidenceLevel": "medium",
+        "confidenceReason": "Wikidata איש דת | +שם קבור ידוע | +שם עברי"
+      },
+      "reason": "געש — קיבוץ"
+    },
+    {
+      "record": {
+        "sourceId": "wikidata-grave-Q2916378",
+        "source": "wikidata",
+        "name": "קריית ענבים",
+        "lat": 31.8107,
+        "lng": 35.1199,
+        "buriedPerson": "עדנה אולמן-מרגלית",
+        "wikidataId": "Q2916378",
+        "verifiedAt": "2026-07-05",
+        "extra": {
+          "sparqlQuery": "rabbis",
+          "personQid": "Q7037635",
+          "burialPlaceQid": "Q2916378",
+          "occupation": "Q4964182",
+          "burialPlacePersonCount": 1
+        },
+        "confidenceScore": 65,
+        "confidenceLevel": "medium",
+        "confidenceReason": "Wikidata איש דת | +שם קבור ידוע | +שם עברי"
+      },
+      "reason": "קריית ענבים — יישוב (פילוסופית, לא צדיקה)"
+    },
+    {
+      "record": {
+        "sourceId": "wikidata-grave-Q1026840",
+        "source": "wikidata",
+        "name": "נען",
+        "lat": 31.885,
+        "lng": 34.858611111,
+        "buriedPerson": "סיני אוקו",
+        "wikidataId": "Q1026840",
+        "verifiedAt": "2026-07-05",
+        "extra": {
+          "sparqlQuery": "rabbis",
+          "personQid": "Q40235428",
+          "burialPlaceQid": "Q1026840",
+          "occupation": "Q4964182",
+          "burialPlacePersonCount": 1
+        },
+        "confidenceScore": 65,
+        "confidenceLevel": "medium",
+        "confidenceReason": "Wikidata איש דת | +שם קבור ידוע | +שם עברי"
+      },
+      "reason": "נען — קיבוץ (לא צדיק)"
+    },
+    {
+      "record": {
+        "sourceId": "wikidata-grave-Q2371396",
+        "source": "wikidata",
+        "name": "דגניה א",
+        "lat": 32.7081,
+        "lng": 35.574897222,
+        "buriedPerson": "אהרן דוד גורדון",
+        "wikidataId": "Q2371396",
+        "verifiedAt": "2026-07-05",
+        "extra": {
+          "sparqlQuery": "rabbis",
+          "personQid": "Q399986",
+          "burialPlaceQid": "Q2371396",
+          "occupation": "Q4964182",
+          "burialPlacePersonCount": 2
+        },
+        "confidenceScore": 65,
+        "confidenceLevel": "medium",
+        "confidenceReason": "Wikidata איש דת | +שם קבור ידוע | +שם עברי"
+      },
+      "reason": "דגניה א — קיבוץ (א.ד. גורדון)"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "generatedNote": "PHASE 10 DRY-RUN — geocoding the coordless candidates. No DB write, no publish, no app-data change. Used the project geocoder (Nominatim, cached). Only the geocoder cache + these preview files were written.",
+  "geocoder": "importers/mikvahs/geocoder.ts (Nominatim, 1 req/sec, disk-cached)",
+  "inputCoordlessRecords": 49,
+  "successfullyGeocoded": 32,
+  "byPrecision": {
+    "address": 0,
+    "city": 32,
+    "failed": 17
+  },
+  "failedGeocoding": 17,
+  "highConfidenceWriteReady": 0,
+  "lowConfidenceManualReview": 31,
+  "newDuplicatesFoundAfterGeocoding": 1,
+  "duplicateReviewRecords": 1,
+  "writeReadyBySystem": {},
+  "lowConfidenceBySystem": {
+    "municipal-phase6": 14,
+    "asbina-phase7": 17
+  },
+  "rule": "write-ready = address-precision geocode (conf ≥ 0.8) AND not a duplicate of a live place. City-center precision is treated as low-confidence and NOT write-ready, per requirements.",
+  "updatedCountReadyForFirstWrite": {
+    "previousTierA": 61,
+    "newlyGeocodedWriteReady": 0,
+    "totalReadyForFirstWrite": 61
+  },
+  "stillDeferred": {
+    "lowConfidenceCityLevel": 31,
+    "duplicates": 1,
+    "failed": 17,
+    "note": "low-confidence city-level + duplicates + failed stay out of the first write; revisit with manual placement or enrich/discard decisions."
+  },
+  "dryRun": true,
+  "liveDataTouched": false,
+  "publishPerformed": false
+}

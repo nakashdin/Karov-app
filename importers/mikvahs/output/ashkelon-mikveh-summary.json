@@ -1,0 +1,65 @@
+{
+  "generatedNote": "ASHKELON dedicated parser — DRY-RUN. No DB write, no publish, no rebuild. Compared vs live 602 + gov 606.",
+  "source": {
+    "name": "המועצה הדתית אשקלון",
+    "url": "https://www.mdas.org.il/ניווט-לסניפי-מקוואות/",
+    "license": "council-public",
+    "platform": "WordPress/Elementor (cards + Waze)"
+  },
+  "parsed": 9,
+  "classification": {
+    "exact_match": 1,
+    "probable_match": 3,
+    "new_record": 5,
+    "enrichment_candidate": 0,
+    "manual_review": 0
+  },
+  "writeReadyIncluded": 4,
+  "excluded": 5,
+  "excludedDetail": [
+    {
+      "name": "פארק אלון",
+      "reason": "exact_match (matched mikveh-25)"
+    },
+    {
+      "name": "שפירא - מעין רות",
+      "reason": "duplicate of live mikveh-27"
+    },
+    {
+      "name": "רמת אשכול",
+      "reason": "probable_match (matched mikveh-26)"
+    },
+    {
+      "name": "מעיין תמר",
+      "reason": "probable_match (matched mikveh-23)"
+    },
+    {
+      "name": "מקוה אגמים",
+      "reason": "probable_match (matched mikveh-20)"
+    }
+  ],
+  "duplicatesFound": 1,
+  "idCollisions": 0,
+  "duplicateAppIds": 0,
+  "fieldCoverage": {
+    "name": 100,
+    "address": 100,
+    "phone": 100,
+    "attendant": 78,
+    "coordinates": 100
+  },
+  "notes": [
+    "אפרים צור - מקוה בשיפוץ: closed-for-renovation"
+  ],
+  "finalRecommendedWriteCount": 4,
+  "liveMikvehBefore": 602,
+  "estimatedTotalAfterWrite": 606,
+  "rollbackPlan": [
+    "Backup places.osm.json → places.osm.pre-ashkelon.backup.json (+cities) before write",
+    "Additive append only; rollback = restore backups; do NOT run rebuildAppDataset"
+  ],
+  "dryRun": true,
+  "liveDataTouched": false,
+  "publishPerformed": false,
+  "rebuildTouched": false
+}

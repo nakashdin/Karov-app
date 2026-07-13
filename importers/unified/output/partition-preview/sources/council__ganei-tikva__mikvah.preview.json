@@ -1,0 +1,30 @@
+[
+  {
+    "id": "rc-mikvah-ganei-tikva-2975",
+    "name": "מקווה מעיין גנים",
+    "type": "mikveh",
+    "cityId": "גני תקווה",
+    "address": "גני תקווה",
+    "location": {
+      "latitude": 32.06114,
+      "longitude": 34.873052
+    },
+    "source": "seed",
+    "sourceUrl": "https://mdgt.org.il/directory-mikvah/listing/מקווה-מעיין-גנים/",
+    "sourceName": "המועצה הדתית גני תקווה",
+    "extra": {
+      "council": "המועצה הדתית גני תקווה",
+      "sourceVariant": "waze",
+      "locationPrecision": "exact",
+      "newnessConfidence": 0.9,
+      "cityInGov": false,
+      "classification": "new_record",
+      "provenance": {
+        "adapterId": "sabaiapps-mikvah-v1",
+        "sourceRecordId": "rc-mikvah-ganei-tikva-2975",
+        "sourceUrl": "https://mdgt.org.il/directory-mikvah/listing/מקווה-מעיין-גנים/",
+        "fetchedAt": "2026-06-19"
+      }
+    }
+  }
+]

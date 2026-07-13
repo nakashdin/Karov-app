@@ -1,0 +1,18 @@
+[
+  {
+    "sourceRecordId": "arcgis:haifa:177",
+    "name": "מורשת רפאל",
+    "city": "haifa",
+    "existingName": "בית כנסת - מורשת רפאל",
+    "distanceM": 381,
+    "nameSim": 1
+  },
+  {
+    "sourceRecordId": "arcgis:haifa:182",
+    "name": "מעייני ישראל -חב\"ד",
+    "city": "haifa",
+    "existingName": "בית כנסת - חב\"ד",
+    "distanceM": 375,
+    "nameSim": 0.85
+  }
+]

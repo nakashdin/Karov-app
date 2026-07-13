@@ -1,0 +1,111 @@
+{
+  "generatedNote": "DISCOVERY of additional OFFICIAL mikveh sources NOT yet integrated (beyond the live 615). Research + verification only — no importer, no DB write. All entries verified reachable (live HTTP, browser UA where noted). All council sites are street-address (no coords) → GovMap ADDR_V1 geocodable, except the GIS layer which has native coords.",
+  "currentLive": 615,
+  "alreadyIntegratedExcluded": ["data.gov.il gov", "SabaiApps councils", "א.ש בינה municipal", "Jerusalem council JSON API (42)", "Tel Aviv 545 GIS + council", "Holon/Lod GIS", "Ashkelon council", "Bat Yam GovMap", "Beit Shemesh + Kiryat Gat (Phase-19 preview, pending write)"],
+
+  "sources": [
+    {
+      "id": "gis:jerusalem:mikvaot", "name": "עיריית ירושלים — שכבת מקוואות (GIS BaseLayers/67)",
+      "url": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/67",
+      "platform": "Esri ArcGIS MapServer", "format": "ArcGIS REST (JSON), WGS84",
+      "recordCount": 45, "fields": ["address", "misparbeit(house#)", "shchona(neighborhood)", "tel", "women_men(gender)", "banuy_not(built)"],
+      "hasStreetAddresses": true, "hasCoordinates": true, "license": "municipal-open",
+      "difficulty": "easy", "geocodeNeeded": false,
+      "estimatedNetNewBeyond615": 3,
+      "priority": "medium",
+      "note": "45 Jerusalem mikvahs with NATIVE coords — but ~42 overlap the already-written Jerusalem council set (same mikvahs: ארנונה/יצחק בן דור, בית הכרם/שחר). Value = ~3 net-new + ENRICHMENT (official municipal coords + women_men/banuy fields) for the existing 42. Verified: count=45, sample coords valid."
+    },
+    {
+      "id": "ministry:protected-mikvahs", "name": "המשרד לשירותי דת — רשימת מקוואות ממוגנים (national)",
+      "url": "https://hebrew.yoatzot.org/wp-content/uploads/2026/03/רשימת-מקוואות-ממוגנים-המשרד-לשירותי-דת-גיליון1.pdf",
+      "platform": "Ministry PDF (13pp, 96KB)", "format": "PDF table — Hebrew tokens char-REVERSED (de-obfuscate by reversing each token)",
+      "recordCount": 123, "fields": ["area", "city", "mikvah-name", "street", "house#", "attendant", "phone"],
+      "hasStreetAddresses": true, "hasCoordinates": false, "license": "gov-il (Ministry official)",
+      "difficulty": "medium-hard", "geocodeNeeded": true,
+      "estimatedNetNewBeyond615": 25,
+      "priority": "high",
+      "note": "MOST CROSS-CITY value: official Ministry list, ~123 entries with street addresses + attendants + phones. CAVEAT: only the 'protected/bomb-shelter' subset (not full per-city totals). Net-new mainly for UNCOVERED cities: Bnei Brak (9), Elad (5), Rakhasim (3), Ofakim (4), Tzfat (2), + cross-check for others. Extraction: PDF + reverse each whitespace-token; then GovMap-geocode. Verified HTTP 200, application/pdf."
+    },
+    {
+      "id": "council:rishon-lezion:mikvah", "name": "המועצה הדתית ראשון לציון",
+      "url": "https://mdrl.org.il/מקוואות/", "platform": "WordPress (div/cards, no <table>)", "format": "HTML cards",
+      "recordCount": 13, "fields": ["name", "address", "neighborhood", "gender", "accessibility"],
+      "hasStreetAddresses": true, "hasCoordinates": false, "license": "council-public",
+      "difficulty": "medium", "geocodeNeeded": true, "estimatedNetNewBeyond615": 10, "priority": "high",
+      "note": "13 mikvahs, full street addresses + neighborhood + accessibility. Verified reachable (39 מקווה, 27 addr patterns). No phones on main table. GovMap-geocode the streets."
+    },
+    {
+      "id": "council:ashdod:mikvah", "name": "המועצה הדתית אשדוד",
+      "url": "https://ashdodmd.org/mikvaot/", "platform": "WordPress (browser UA; 403 to plain fetch)", "format": "HTML prose (by רובע/quarter)",
+      "recordCount": 11, "fields": ["name(quarter)", "address", "accessibility", "phone(partial)"],
+      "hasStreetAddresses": true, "hasCoordinates": false, "license": "council-public",
+      "difficulty": "medium", "geocodeNeeded": true, "estimatedNetNewBeyond615": 7, "priority": "high",
+      "note": "11 mikvahs by city-quarter with street addresses. Needs browser UA (verified 200 w/ browser UA). Ministry PDF adds attendant+phone for 8."
+    },
+    {
+      "id": "council:ramat-gan:mikvah", "name": "המועצה הדתית רמת גן",
+      "url": "https://mdrg.org.il/women-mikve/", "platform": "WordPress (cards)", "format": "HTML cards",
+      "recordCount": 7, "fields": ["name", "address", "phone", "hours", "attendant", "gender"],
+      "hasStreetAddresses": true, "hasCoordinates": false, "license": "council-public",
+      "difficulty": "medium", "geocodeNeeded": true, "estimatedNetNewBeyond615": 6, "priority": "high",
+      "note": "7 women's mikvahs with full address+phone+hours+attendant; separate men's page exists. Verified (27 מקווה, 36 addr). Richest fields."
+    },
+    {
+      "id": "council:kiryat-ata:mikvah", "name": "מועצה דתית קרית אתא",
+      "url": "https://www.kiryat-ata.org.il/residentservice/religiousservices/מקוואות/", "platform": "Municipal CMS (browser UA)", "format": "HTML cards",
+      "recordCount": 5, "fields": ["name", "address", "phone", "hours", "attendant", "landmarks"],
+      "hasStreetAddresses": true, "hasCoordinates": false, "license": "council-public",
+      "difficulty": "medium", "geocodeNeeded": true, "estimatedNetNewBeyond615": 5, "priority": "high",
+      "note": "5 mikvahs, RICHEST per-record detail (address/phone/hours/attendant/landmarks). Needs browser UA."
+    },
+    {
+      "id": "council:raanana:mikvah", "name": "המועצה הדתית רעננה",
+      "url": "https://mdrn.org.il/mikvaot/", "platform": "WordPress (detail subpages JS-rendered)", "format": "HTML + JS",
+      "recordCount": 4, "fields": ["name", "address", "phone", "attendant"],
+      "hasStreetAddresses": true, "hasCoordinates": false, "license": "council-public",
+      "difficulty": "medium-hard", "geocodeNeeded": true, "estimatedNetNewBeyond615": 4, "priority": "medium",
+      "note": "4 mikvahs; landing page is categories+pricelist, addresses in JS subpages OR recoverable via Ministry PDF. GovMap-geocode."
+    },
+    {
+      "id": "council:givatayim:mikvah", "name": "המועצה הדתית גבעתיים",
+      "url": "https://mdgiva.org/מקוואות/", "platform": "WordPress", "format": "HTML",
+      "recordCount": 3, "fields": ["name", "address", "phone", "hours", "attendant", "gender"],
+      "hasStreetAddresses": true, "hasCoordinates": false, "license": "council-public",
+      "difficulty": "easy-medium", "geocodeNeeded": true, "estimatedNetNewBeyond615": 3, "priority": "medium",
+      "note": "3 mikvahs (2 locations), full fields. Verified reachable."
+    },
+    {
+      "id": "council:beitar-illit:mikvah", "name": "עיריית ביתר עילית — מקוואות",
+      "url": "https://www.betar-illit.muni.il/מקוואות/", "platform": "Municipal CMS (JS-rendered table)", "format": "JS table",
+      "recordCount": 8, "fields": ["name", "address", "phone", "accessibility"],
+      "hasStreetAddresses": true, "hasCoordinates": false, "license": "council-public",
+      "difficulty": "hard", "geocodeNeeded": true, "estimatedNetNewBeyond615": 8, "priority": "medium",
+      "note": "8 mikvahs; table is JS-rendered (needs CSR handling like Phase-19 Kiryat Gat). Addresses also in Ministry PDF. GovMap-geocode."
+    },
+    {
+      "id": "council:tiberias:mikvah", "name": "המועצה הדתית טבריה",
+      "url": "https://mdt.org.il/מחלקת-מקוואות/", "platform": "WordPress (JS-rendered table)", "format": "JS table",
+      "recordCount": 7, "fields": ["name", "address", "phone"],
+      "hasStreetAddresses": true, "hasCoordinates": false, "license": "council-public",
+      "difficulty": "hard", "geocodeNeeded": true, "estimatedNetNewBeyond615": 7, "priority": "medium",
+      "note": "~7 mikvahs in a JS-rendered table (CSR handling needed). NOT in the Ministry PDF. GovMap-geocode."
+    }
+  ],
+
+  "bneiBrakNote": "Bnei Brak (one of Israel's most mikvah-dense cities, true total 40-80+) has NO complete structured official list — the muni 'מקוואות' page (ID=161) is only a department contact card. Only 9 protected mikvahs are available officially (Ministry PDF). Full Bnei Brak coverage would require the EXCLUDED commercial aggregators or on-site browser scraping — out of scope for official-only.",
+
+  "summary": {
+    "newOfficialSourcesFound": 10,
+    "allStreetAddressGeocodable": "9 of 10 need GovMap geocoding (street addresses, no coords); Jerusalem GIS-67 has native coords.",
+    "estimatedTotalNetNewBeyond615": "≈ 70-80 (sum of per-source estimates, before dedup overlap between the Ministry PDF and the council sites)",
+    "recommendedImportOrder": [
+      "1. Council sites with clean HTML + street addresses → GovMap-geocode → high-confidence: Rishon (13), Ramat Gan (7), Givatayim (3), Kiryat Ata (5, browser UA), Ashdod (11, browser UA).",
+      "2. Raanana (4) — landing JS, recover via Ministry PDF.",
+      "3. JS-rendered (CSR handling like Phase-19): Beitar Illit (8), Tiberias (7).",
+      "4. Ministry protected-mikvahs PDF (~123) — parse (reverse tokens) → GovMap-geocode; net-new mainly Bnei Brak 9, Elad 5, Rakhasim 3, Ofakim 4, Tzfat 2 + cross-check.",
+      "5. Jerusalem GIS-67 (45) — cross-check/enrich the existing 42 (~3 net-new + official coords)."
+    ],
+    "method": "All would use the established additive pipeline: extract → GovMap ADDR_V1 geocode (validated city/bbox) → dedup vs live → write-ready preview → guarded additive append. Never rebuildAppDataset."
+  },
+  "dryRun": true, "importerWritten": false, "dbWrite": false
+}

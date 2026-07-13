@@ -1,0 +1,23 @@
+{
+  "source": "arcgis:haifa",
+  "endpoint": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10",
+  "expectedCount": 268,
+  "fetchedCount": 268,
+  "validCount": 268,
+  "rejectedCount": 0,
+  "new": 239,
+  "enriched": 25,
+  "conflicts": 4,
+  "over300": 2,
+  "existingSynagogues": 2739,
+  "mergedSynagogues": 2982,
+  "coordinateSource": "ArcGIS server outSR=4326 (authoritative WGS84, incl. Israeli datum shift)",
+  "datumShiftFromPureItmMeters": {
+    "comparedCount": 268,
+    "maxMeters": 77.12,
+    "avgMeters": 77.09
+  },
+  "dryRun": true,
+  "liveDataTouched": false,
+  "note": "DRY-RUN preview only — additive, native coordinates only, no geocoding, places.osm.json untouched."
+}

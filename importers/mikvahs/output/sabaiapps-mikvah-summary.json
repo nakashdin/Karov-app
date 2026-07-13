@@ -1,0 +1,386 @@
+{
+  "generatedNote": "PHASE 1 DRY-RUN — mikvah SabaiApps variant. No app DB write, no merge, no geocoding, no deletion. Public directory pages scraped read-only.",
+  "typeTagNote": "Records use type:'mikvah' per the Phase-1 spec; the data.gov.il pipeline uses 'mikveh'. Reconcile the spelling in the Unified-Importer phase.",
+  "restCountNote": "expectedRest (REST x-wp-total) is an inflated UPPER BOUND that over-counts post statuses/categories; capturedAllVisible compares against the listings actually shown on the directory page (the real denominator).",
+  "generatedAt": "2026-06-19",
+  "sourcesAttempted": 16,
+  "sourcesSuccessful": 16,
+  "sourcesFailed": 0,
+  "councilsFullyCaptured": 16,
+  "totalRecords": 120,
+  "withCoordinates": 119,
+  "withoutCoordinates": 1,
+  "suspectedDuplicateGroups": 5,
+  "suspectedDuplicateRecords": 12,
+  "fieldCoverage": {
+    "name": 100,
+    "city": 100,
+    "address": 98,
+    "phone": 24,
+    "openingHours": 18,
+    "coordinates": 99,
+    "category": 28,
+    "sourceUrl": 100
+  },
+  "bySource": [
+    {
+      "id": "petah-tikva",
+      "council": "המועצה הדתית פתח תקווה",
+      "city": "פתח תקווה",
+      "ok": true,
+      "expectedRest": 12,
+      "visibleCards": 12,
+      "pagesFetched": 1,
+      "capturedAllVisible": true,
+      "parsed": 12,
+      "records": 12,
+      "coordFlagged": 0,
+      "variant": "waze"
+    },
+    {
+      "id": "netanya",
+      "council": "המועצה הדתית נתניה",
+      "city": "נתניה",
+      "ok": true,
+      "expectedRest": 13,
+      "visibleCards": 13,
+      "pagesFetched": 1,
+      "capturedAllVisible": true,
+      "parsed": 13,
+      "records": 13,
+      "coordFlagged": 0,
+      "variant": "waze"
+    },
+    {
+      "id": "beer-sheva",
+      "council": "המועצה הדתית באר שבע",
+      "city": "באר שבע",
+      "ok": true,
+      "expectedRest": 24,
+      "visibleCards": 14,
+      "pagesFetched": 1,
+      "capturedAllVisible": true,
+      "parsed": 14,
+      "records": 14,
+      "coordFlagged": 0,
+      "variant": "markers"
+    },
+    {
+      "id": "rosh-haayin",
+      "council": "המועצה הדתית ראש העין",
+      "city": "ראש העין",
+      "ok": true,
+      "expectedRest": 5,
+      "visibleCards": 5,
+      "pagesFetched": 1,
+      "capturedAllVisible": true,
+      "parsed": 5,
+      "records": 5,
+      "coordFlagged": 0,
+      "variant": "markers"
+    },
+    {
+      "id": "lod",
+      "council": "המועצה הדתית לוד",
+      "city": "לוד",
+      "ok": true,
+      "expectedRest": 9,
+      "visibleCards": 6,
+      "pagesFetched": 1,
+      "capturedAllVisible": true,
+      "parsed": 6,
+      "records": 6,
+      "coordFlagged": 0,
+      "variant": "markers"
+    },
+    {
+      "id": "hadera",
+      "council": "המועצה הדתית חדרה",
+      "city": "חדרה",
+      "ok": true,
+      "expectedRest": 8,
+      "visibleCards": 6,
+      "pagesFetched": 1,
+      "capturedAllVisible": true,
+      "parsed": 6,
+      "records": 6,
+      "coordFlagged": 0,
+      "variant": "markers"
+    },
+    {
+      "id": "marom-galil",
+      "council": "המועצה הדתית מרום גליל",
+      "city": "מרום גליל",
+      "ok": true,
+      "expectedRest": 19,
+      "visibleCards": 19,
+      "pagesFetched": 1,
+      "capturedAllVisible": true,
+      "parsed": 19,
+      "records": 19,
+      "coordFlagged": 0,
+      "variant": "markers"
+    },
+    {
+      "id": "merchavim",
+      "council": "המועצה הדתית מרחבים",
+      "city": "מרחבים",
+      "ok": true,
+      "expectedRest": 15,
+      "visibleCards": 15,
+      "pagesFetched": 1,
+      "capturedAllVisible": true,
+      "parsed": 15,
+      "records": 15,
+      "coordFlagged": 0,
+      "variant": "markers"
+    },
+    {
+      "id": "herzliya",
+      "council": "המועצה הדתית הרצליה",
+      "city": "הרצליה",
+      "ok": true,
+      "expectedRest": 10,
+      "visibleCards": 5,
+      "pagesFetched": 1,
+      "capturedAllVisible": true,
+      "parsed": 5,
+      "records": 5,
+      "coordFlagged": 0,
+      "variant": "markers"
+    },
+    {
+      "id": "givat-zeev",
+      "council": "המועצה הדתית גבעת זאב",
+      "city": "גבעת זאב",
+      "ok": true,
+      "expectedRest": 7,
+      "visibleCards": 5,
+      "pagesFetched": 1,
+      "capturedAllVisible": true,
+      "parsed": 5,
+      "records": 5,
+      "coordFlagged": 0,
+      "variant": "markers"
+    },
+    {
+      "id": "givat-shmuel",
+      "council": "המועצה הדתית גבעת שמואל",
+      "city": "גבעת שמואל",
+      "ok": true,
+      "expectedRest": 6,
+      "visibleCards": 6,
+      "pagesFetched": 1,
+      "capturedAllVisible": true,
+      "parsed": 6,
+      "records": 6,
+      "coordFlagged": 0,
+      "variant": "waze"
+    },
+    {
+      "id": "beit-shean",
+      "council": "המועצה הדתית בית שאן",
+      "city": "בית שאן",
+      "ok": true,
+      "expectedRest": 5,
+      "visibleCards": 3,
+      "pagesFetched": 1,
+      "capturedAllVisible": true,
+      "parsed": 3,
+      "records": 3,
+      "coordFlagged": 0,
+      "variant": "markers"
+    },
+    {
+      "id": "ganei-tikva",
+      "council": "המועצה הדתית גני תקווה",
+      "city": "גני תקווה",
+      "ok": true,
+      "expectedRest": 4,
+      "visibleCards": 2,
+      "pagesFetched": 1,
+      "capturedAllVisible": true,
+      "parsed": 2,
+      "records": 2,
+      "coordFlagged": 0,
+      "variant": "waze"
+    },
+    {
+      "id": "kiryat-arba",
+      "council": "המועצה הדתית קרית ארבע",
+      "city": "קרית ארבע",
+      "ok": true,
+      "expectedRest": 5,
+      "visibleCards": 3,
+      "pagesFetched": 1,
+      "capturedAllVisible": true,
+      "parsed": 3,
+      "records": 3,
+      "coordFlagged": 0,
+      "variant": "markers"
+    },
+    {
+      "id": "sderot",
+      "council": "המועצה הדתית שדרות",
+      "city": "שדרות",
+      "ok": true,
+      "expectedRest": 3,
+      "visibleCards": 3,
+      "pagesFetched": 1,
+      "capturedAllVisible": true,
+      "parsed": 3,
+      "records": 3,
+      "coordFlagged": 0,
+      "variant": "markers"
+    },
+    {
+      "id": "nof-hagalil",
+      "council": "המועצה הדתית נוף הגליל",
+      "city": "נוף הגליל",
+      "ok": true,
+      "expectedRest": 3,
+      "visibleCards": 3,
+      "pagesFetched": 1,
+      "capturedAllVisible": true,
+      "parsed": 3,
+      "records": 3,
+      "coordFlagged": 0,
+      "variant": "waze"
+    }
+  ],
+  "suspectedDuplicates": [
+    {
+      "key": "פתח תקווה|1 שמואל הנגיד, פתח תקווה, israel",
+      "reason": "same-address",
+      "count": 2,
+      "members": [
+        {
+          "sourceId": "rc-mikvah-petah-tikva-9647",
+          "council": "המועצה הדתית פתח תקווה",
+          "name": "מקווה חן הצפון",
+          "address": "1 שמואל הנגיד, פתח תקווה, Israel",
+          "phone": "0548433268",
+          "category": "נשים"
+        },
+        {
+          "sourceId": "rc-mikvah-petah-tikva-13597",
+          "council": "המועצה הדתית פתח תקווה",
+          "name": "מקווה גברים כפר אברהם-חן הצפון",
+          "address": "1 שמואל הנגיד, פתח תקווה, Israel",
+          "phone": "0556876069",
+          "category": "גברים"
+        }
+      ]
+    },
+    {
+      "key": "נתניה|אברהם שפירא 28, נתניה, israel",
+      "reason": "same-address",
+      "count": 2,
+      "members": [
+        {
+          "sourceId": "rc-mikvah-netanya-12547",
+          "council": "המועצה הדתית נתניה",
+          "name": "המקווה המרכזי נתניה",
+          "address": "אברהם שפירא 28, נתניה, Israel",
+          "phone": "098611839",
+          "category": "נשים"
+        },
+        {
+          "sourceId": "rc-mikvah-netanya-12564",
+          "council": "המועצה הדתית נתניה",
+          "name": "מקווה גברים מרכזי:",
+          "address": "אברהם שפירא 28, נתניה, Israel",
+          "phone": null,
+          "category": "גברים"
+        }
+      ]
+    },
+    {
+      "key": "חדרה|9 לבוצקין , חדרה, israel",
+      "reason": "same-address",
+      "count": 2,
+      "members": [
+        {
+          "sourceId": "rc-mikvah-hadera-h280lwq",
+          "council": "המועצה הדתית חדרה",
+          "name": "מקווה חבד מרכזי",
+          "address": "9 לבוצקין , חדרה, Israel",
+          "phone": null,
+          "category": null
+        },
+        {
+          "sourceId": "rc-mikvah-hadera-h1766xat",
+          "council": "המועצה הדתית חדרה",
+          "name": "מקווה מרכזי חדרה",
+          "address": "9 לבוצקין , חדרה, Israel",
+          "phone": null,
+          "category": null
+        }
+      ]
+    },
+    {
+      "key": "גבעת זאב|גבעת זאב",
+      "reason": "same-address",
+      "count": 3,
+      "members": [
+        {
+          "sourceId": "rc-mikvah-givat-zeev-hubfbm3",
+          "council": "המועצה הדתית גבעת זאב",
+          "name": "מקווה הר שמואל",
+          "address": "גבעת זאב",
+          "phone": null,
+          "category": null
+        },
+        {
+          "sourceId": "rc-mikvah-givat-zeev-htj9kyo",
+          "council": "המועצה הדתית גבעת זאב",
+          "name": "מקווה גבעון",
+          "address": "גבעת זאב",
+          "phone": null,
+          "category": null
+        },
+        {
+          "sourceId": "rc-mikvah-givat-zeev-hbozdz4",
+          "council": "המועצה הדתית גבעת זאב",
+          "name": "מקווה עמק איילון",
+          "address": "גבעת זאב",
+          "phone": null,
+          "category": null
+        }
+      ]
+    },
+    {
+      "key": "0504711338",
+      "reason": "same-phone",
+      "count": 3,
+      "members": [
+        {
+          "sourceId": "rc-mikvah-givat-shmuel-11704",
+          "council": "המועצה הדתית גבעת שמואל",
+          "name": "מקווה עגנון",
+          "address": "סמטת ש\"י עגנון 4, גבעת שמואל, Israel",
+          "phone": "0504711338",
+          "category": "נשים"
+        },
+        {
+          "sourceId": "rc-mikvah-givat-shmuel-11705",
+          "council": "המועצה הדתית גבעת שמואל",
+          "name": "מקווה נימרובר",
+          "address": "נימרובר 2 , גבעת שמואל, ישראל",
+          "phone": "0504711338",
+          "category": "נשים"
+        },
+        {
+          "sourceId": "rc-mikvah-givat-shmuel-11703",
+          "council": "המועצה הדתית גבעת שמואל",
+          "name": "מקווה שמחה הולצברג",
+          "address": "שמחה הולצברג 3, גבעת שמואל, ישראל",
+          "phone": "0504711338",
+          "category": "נשים"
+        }
+      ]
+    }
+  ],
+  "dryRun": true,
+  "liveDataTouched": false
+}

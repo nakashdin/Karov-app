@@ -1,0 +1,30 @@
+[
+  {
+    "id": "rc-mikvah-sderot-hu3sxrx",
+    "name": "מקווה נשים הרב דוד בר חן",
+    "type": "mikveh",
+    "cityId": "שדרות",
+    "address": "5 משעול פעמונית , שדרות, Israel",
+    "location": {
+      "latitude": 31.520555,
+      "longitude": 34.590671
+    },
+    "source": "seed",
+    "sourceUrl": "https://mdsderot.org.il/directory-mikvah/listing/מקווה-נשים-הרב-דוד-בר-חן/",
+    "sourceName": "המועצה הדתית שדרות",
+    "extra": {
+      "council": "המועצה הדתית שדרות",
+      "sourceVariant": "markers",
+      "locationPrecision": "exact",
+      "newnessConfidence": 0.8,
+      "cityInGov": true,
+      "classification": "new_record",
+      "provenance": {
+        "adapterId": "sabaiapps-mikvah-v1",
+        "sourceRecordId": "rc-mikvah-sderot-hu3sxrx",
+        "sourceUrl": "https://mdsderot.org.il/directory-mikvah/listing/מקווה-נשים-הרב-דוד-בר-חן/",
+        "fetchedAt": "2026-06-19"
+      }
+    }
+  }
+]

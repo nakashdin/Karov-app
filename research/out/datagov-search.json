@@ -1,0 +1,247 @@
+[
+  {
+    "query": "כשרות",
+    "title": "רשימת מוצרי מזון וחומרי גלם מיובאים",
+    "name": "mazon",
+    "org": "הרבנות הראשית לישראל",
+    "license": "אחר (פתוח)",
+    "notes": "רשימת מוצרי מזון וחומרי גלם מיובאים המאושרים על ידי הרבנות הראשית לישראל",
+    "resources": [
+      {
+        "id": "4cc6c561-5975-4bac-904f-c06489ceeb6d",
+        "format": "CSV",
+        "datastore": true
+      }
+    ]
+  },
+  {
+    "query": "כשרות",
+    "title": "רשימת מומחים לבתי משפט",
+    "name": "court_specialists",
+    "org": "משרד הרווחה והביטחון החברתי",
+    "license": "אחר (פתוח)",
+    "notes": "כאשר מתנהל סכסוך משפחתי בתהליך הגירושין, בעת הצורך ולפי דרישת בית המשפט, מעמידות יחידות הסיוע לרשות הציבור ובתי המשפט רשימות מומחים למתן חוות דעת בתחומי העבודה הסוציאלית, הפסיכולוגיה, הפסיכיאטריה ורפואת ילדים, בעניינים כגון: שאלות בדבר קביעת משמורת חלוקת זמני השהות של הילדים הקטינים עם מי מהוריהם, כ",
+    "resources": [
+      {
+        "id": "ebe7b0fa-42c8-4195-8b40-b0b0e73cc494",
+        "format": "CSV",
+        "datastore": true
+      },
+      {
+        "id": "fe3b2f13-08b4-498a-a4cb-8b35a3b66b4d",
+        "format": "PDF",
+        "datastore": false
+      }
+    ]
+  },
+  {
+    "query": "כשרות",
+    "title": "בתי עסק המחזיקים בתעודת כשרות",
+    "name": "kosherbusiness",
+    "org": "המשרד לשירותי דת",
+    "license": "אחר (פתוח)",
+    "notes": "רשימת בתי עסק המחזיקים בתעודת כשרות רגילה או מהדרין ",
+    "resources": [
+      {
+        "id": "c54032cb-5306-4be9-a20d-a0be0ba49cc1",
+        "format": "CSV",
+        "datastore": true
+      }
+    ]
+  },
+  {
+    "query": "בתי כנסת",
+    "title": "בתי כנסת בעיר באר-שבע",
+    "name": "synagogues-br7",
+    "org": "עיריית באר שבע",
+    "license": "אחר (פתוח)",
+    "notes": "סימון נקודתי של בתי הכנסת הקיימים ברחבי העיר, שכונה, רחוב, מספר בית ושם בית הכנסת. עבור חלק מבתי הכנסת קיים גם שם נוסף.\r\n\r\n",
+    "resources": [
+      {
+        "id": "b1c5f975-1ba2-4b4e-b581-b0e6b0b99d72",
+        "format": "GeoJSON",
+        "datastore": false
+      },
+      {
+        "id": "40de91c6-1eb3-4f12-9cea-5c44484377d7",
+        "format": "CSV",
+        "datastore": true
+      },
+      {
+        "id": "b4c02d86-2bd0-4f03-9cb0-ceb681d31f67",
+        "format": "XML",
+        "datastore": false
+      },
+      {
+        "id": "45321883-2fb3-4e91-9fdf-036e856ea79b",
+        "format": "ZIP",
+        "datastore": false
+      },
+      {
+        "id": "8ca705da-997d-4b11-aef9-2eb1b3511e8e",
+        "format": "XLSX",
+        "datastore": true
+      },
+      {
+        "id": "a09cdd72-1a41-4896-9108-767a334b5858",
+        "format": "JSON",
+        "datastore": false
+      },
+      {
+        "id": "9e1fa658-eb3e-4641-8dad-53dee2142e70",
+        "format": "XML",
+        "datastore": false
+      },
+      {
+        "id": "88f48433-52cc-40a5-a739-750a0c7edb08",
+        "format": "KML",
+        "datastore": false
+      },
+      {
+        "id": "18fe60dc-f757-4569-ad51-14a41b55d711",
+        "format": "GeoJSON",
+        "datastore": false
+      },
+      {
+        "id": "af7e71bb-886d-4c29-91a6-01f2b06dc470",
+        "format": "CSV",
+        "datastore": true
+      },
+      {
+        "id": "d81e75ed-6496-40e2-b83c-1a32b7f6c4cd",
+        "format": "XML",
+        "datastore": false
+      },
+      {
+        "id": "2c3e8f06-377f-47f3-b12e-be36ebbd1fd4",
+        "format": "KML",
+        "datastore": false
+      },
+      {
+        "id": "6767ae7a-9b0b-46eb-aef5-ff5937d178f1",
+        "format": "XLSX",
+        "datastore": true
+      },
+      {
+        "id": "2aeb9c48-b62d-4937-8c79-e2c213613473",
+        "format": "JSON",
+        "datastore": false
+      },
+      {
+        "id": "2039a95c-b6ff-4553-af69-2d88743574a3",
+        "format": "XML",
+        "datastore": false
+      }
+    ]
+  },
+  {
+    "query": "בתי כנסת",
+    "title": "בתי כנסת בעיר פתח תקווה",
+    "name": "synagogues",
+    "org": "עיריית פתח תקוה",
+    "license": "unknown",
+    "notes": "",
+    "resources": [
+      {
+        "id": "b10bb9e1-7100-464e-a6cf-b2115d20f709",
+        "format": "XLSX",
+        "datastore": true
+      }
+    ]
+  },
+  {
+    "query": "בתי כנסת",
+    "title": "בתי כנסת בחיפה",
+    "name": "943",
+    "org": "עיריית חיפה",
+    "license": "unknown",
+    "notes": "רשימת בתי כנסת בחיפה. מתעדכנת בתדירות חודשית.",
+    "resources": [
+      {
+        "id": "29b0e043-706d-47d3-b1b4-b6d57c27c450",
+        "format": "XLS",
+        "datastore": true
+      }
+    ]
+  },
+  {
+    "query": "מקוואות",
+    "title": "מקוואות טהרה",
+    "name": "mikve",
+    "org": "המשרד לשירותי דת",
+    "license": "אחר (פתוח)",
+    "notes": "רשימת מקוואות טהרה, פרטי קשר ושעות פתיחה",
+    "resources": [
+      {
+        "id": "e80a5e59-3b0f-4be9-983a-dc0971907626",
+        "format": "CSV",
+        "datastore": true
+      }
+    ]
+  },
+  {
+    "query": "מקוואות",
+    "title": "מקוואות טהרה 2018",
+    "name": "2018",
+    "org": "המשרד לשירותי דת",
+    "license": "Other (Open)",
+    "notes": "מקוואות טהרה בישראל, כתובות, פרטי קשר ושעות פעילות",
+    "resources": [
+      {
+        "id": "9a939c58-d149-4c07-b37f-77dbf0d50e35",
+        "format": "XLS",
+        "datastore": true
+      }
+    ]
+  },
+  {
+    "query": "בתי עסק",
+    "title": "עסקים במסגרת החזר מעמ לתייר - VAT Refund Stores",
+    "name": "vat-refund-stores",
+    "org": "משרד התיירות",
+    "license": "unknown",
+    "notes": "פירוט בתי עסק המשתתפים במסגרת ההסדר להחזר מע\"מ לתייר.",
+    "resources": [
+      {
+        "id": "9ebbb336-454d-4b9e-991b-484c57852ecd",
+        "format": "DOCX",
+        "datastore": false
+      },
+      {
+        "id": "5555edc5-532d-46b5-8415-01a54d5a5b73",
+        "format": "XLSX",
+        "datastore": true
+      },
+      {
+        "id": "905e6597-6b7b-4110-aa34-8ff68b955f43",
+        "format": "XLSX",
+        "datastore": true
+      },
+      {
+        "id": "c2c73c67-c6e2-411f-8ff8-c7b1517cd64d",
+        "format": "CSV",
+        "datastore": true
+      },
+      {
+        "id": "b2a6567c-b6d9-439e-9044-7874f4480797",
+        "format": "CSV",
+        "datastore": true
+      }
+    ]
+  },
+  {
+    "query": "בתי עסק",
+    "title": "בתי עסק המחזיקים בתעודת כשרות",
+    "name": "kosherbusiness",
+    "org": "המשרד לשירותי דת",
+    "license": "אחר (פתוח)",
+    "notes": "רשימת בתי עסק המחזיקים בתעודת כשרות רגילה או מהדרין ",
+    "resources": [
+      {
+        "id": "c54032cb-5306-4be9-a20d-a0be0ba49cc1",
+        "format": "CSV",
+        "datastore": true
+      }
+    ]
+  }
+]

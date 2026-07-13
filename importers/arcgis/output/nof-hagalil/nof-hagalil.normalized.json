@@ -1,0 +1,467 @@
+[
+  {
+    "id": "arcgis:nof-hagalil::1",
+    "type": "synagogue",
+    "name": "בית הכנסת הספרדי ברית שלום",
+    "cityHint": "נוף הגליל",
+    "location": {
+      "latitude": 32.694319475727106,
+      "longitude": 35.31711281055142
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nof-hagalil",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nof-hagalil:1",
+      "sourceUrl": "https://services1.arcgis.com/aNzvrLxjvQddMgHb/arcgis/rest/services/city_map/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:57.845Z",
+      "raw": {
+        "FID": 1,
+        "Join_Count": 1,
+        "Id": 0,
+        "Remarks": "בית הכנסת הספרדי ברית שלום",
+        "Str_Code": 147,
+        "build_new": "2",
+        "THICKNESS": 178330018,
+        "GAR_KEY": 178330018,
+        "Shape_Leng": 149.64073688,
+        "Full_Str_N": "העליה"
+      }
+    },
+    "address": "העליה"
+  },
+  {
+    "id": "arcgis:nof-hagalil::2",
+    "type": "synagogue",
+    "name": "בית הכנסת המרכזי אור הצפון",
+    "cityHint": "נוף הגליל",
+    "location": {
+      "latitude": 32.69166130044885,
+      "longitude": 35.31604401409507
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nof-hagalil",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nof-hagalil:2",
+      "sourceUrl": "https://services1.arcgis.com/aNzvrLxjvQddMgHb/arcgis/rest/services/city_map/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:57.845Z",
+      "raw": {
+        "FID": 2,
+        "Join_Count": 1,
+        "Id": 0,
+        "Remarks": "בית הכנסת המרכזי אור הצפון",
+        "Str_Code": 146,
+        "build_new": "3א",
+        "THICKNESS": 178350037,
+        "GAR_KEY": 178350037,
+        "Shape_Leng": 321.572707647,
+        "Full_Str_N": "החצב"
+      }
+    },
+    "address": "החצב"
+  },
+  {
+    "id": "arcgis:nof-hagalil::3",
+    "type": "synagogue",
+    "name": "בית הכנסת נווה שלום",
+    "cityHint": "נוף הגליל",
+    "location": {
+      "latitude": 32.6922860689479,
+      "longitude": 35.31434830218358
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nof-hagalil",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nof-hagalil:3",
+      "sourceUrl": "https://services1.arcgis.com/aNzvrLxjvQddMgHb/arcgis/rest/services/city_map/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:57.845Z",
+      "raw": {
+        "FID": 3,
+        "Join_Count": 1,
+        "Id": 0,
+        "Remarks": "בית הכנסת נווה שלום",
+        "Str_Code": 146,
+        "build_new": "6ב'",
+        "THICKNESS": 178340016,
+        "GAR_KEY": 178340016,
+        "Shape_Leng": 142.85113845,
+        "Full_Str_N": "החצב"
+      }
+    },
+    "address": "החצב"
+  },
+  {
+    "id": "arcgis:nof-hagalil::4",
+    "type": "synagogue",
+    "name": "בית הכנסת \"משכן משה\" ליהדות גאורגיה",
+    "cityHint": "נוף הגליל",
+    "location": {
+      "latitude": 32.69216470041946,
+      "longitude": 35.31373464869714
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nof-hagalil",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nof-hagalil:4",
+      "sourceUrl": "https://services1.arcgis.com/aNzvrLxjvQddMgHb/arcgis/rest/services/city_map/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:57.845Z",
+      "raw": {
+        "FID": 4,
+        "Join_Count": 1,
+        "Id": 0,
+        "Remarks": "בית הכנסת \"משכן משה\" ליהדות גאורגיה",
+        "Str_Code": 146,
+        "build_new": "8ב'",
+        "THICKNESS": 178340017,
+        "GAR_KEY": 178340017,
+        "Shape_Leng": 143.158861197,
+        "Full_Str_N": "החצב"
+      }
+    },
+    "address": "החצב"
+  },
+  {
+    "id": "arcgis:nof-hagalil::5",
+    "type": "synagogue",
+    "name": "בית כנסת",
+    "cityHint": "נוף הגליל",
+    "location": {
+      "latitude": 32.688162344115774,
+      "longitude": 35.313100170935456
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nof-hagalil",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nof-hagalil:5",
+      "sourceUrl": "https://services1.arcgis.com/aNzvrLxjvQddMgHb/arcgis/rest/services/city_map/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:57.845Z",
+      "raw": {
+        "FID": 5,
+        "Join_Count": 1,
+        "Id": 0,
+        "Remarks": "בית כנסת",
+        "Str_Code": 165,
+        "build_new": "2א'",
+        "THICKNESS": 165552185,
+        "GAR_KEY": 165552185,
+        "Shape_Leng": 350.203816163,
+        "Full_Str_N": "יעל"
+      }
+    },
+    "address": "יעל"
+  },
+  {
+    "id": "arcgis:nof-hagalil::6",
+    "type": "synagogue",
+    "name": "בית \"אורות עילית\".  מדרשת \"שירת דבורה\"",
+    "cityHint": "נוף הגליל",
+    "location": {
+      "latitude": 32.68988790750976,
+      "longitude": 35.31349897008136
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nof-hagalil",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nof-hagalil:6",
+      "sourceUrl": "https://services1.arcgis.com/aNzvrLxjvQddMgHb/arcgis/rest/services/city_map/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:57.845Z",
+      "raw": {
+        "FID": 6,
+        "Join_Count": 1,
+        "Id": 0,
+        "Remarks": "בית \"אורות עילית\".  מדרשת \"שירת דבורה\"",
+        "Str_Code": 164,
+        "build_new": "1א'",
+        "THICKNESS": 178350012,
+        "GAR_KEY": 178350012,
+        "Shape_Leng": 141.127813348,
+        "Full_Str_N": "השקמה"
+      }
+    },
+    "address": "השקמה"
+  },
+  {
+    "id": "arcgis:nof-hagalil::7",
+    "type": "synagogue",
+    "name": "בית הכנסת \"תפארת ישראל\" - מתוכננים ברחוב 6 בניינים חדשים - לכן קיבל את המספר 14",
+    "cityHint": "נוף הגליל",
+    "location": {
+      "latitude": 32.69644915666039,
+      "longitude": 35.31994390816217
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nof-hagalil",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nof-hagalil:7",
+      "sourceUrl": "https://services1.arcgis.com/aNzvrLxjvQddMgHb/arcgis/rest/services/city_map/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:57.845Z",
+      "raw": {
+        "FID": 7,
+        "Join_Count": 1,
+        "Id": 0,
+        "Remarks": "בית הכנסת \"תפארת ישראל\" - מתוכננים ברחוב 6 בניינים חדשים - לכן קיבל את המספר 14",
+        "Str_Code": 167,
+        "build_new": "14",
+        "THICKNESS": 178330057,
+        "GAR_KEY": 178330057,
+        "Shape_Leng": 89.6315003129,
+        "Full_Str_N": "חרוב"
+      }
+    },
+    "address": "חרוב"
+  },
+  {
+    "id": "arcgis:nof-hagalil::8",
+    "type": "synagogue",
+    "name": "בית הכנסת / ישיבה תומכי תמימים",
+    "cityHint": "נוף הגליל",
+    "location": {
+      "latitude": 32.6927916398616,
+      "longitude": 35.31320414794762
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nof-hagalil",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nof-hagalil:8",
+      "sourceUrl": "https://services1.arcgis.com/aNzvrLxjvQddMgHb/arcgis/rest/services/city_map/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:57.845Z",
+      "raw": {
+        "FID": 8,
+        "Join_Count": 1,
+        "Id": 0,
+        "Remarks": "בית הכנסת / ישיבה תומכי תמימים",
+        "Str_Code": 145,
+        "build_new": "17ב'",
+        "THICKNESS": 178340003,
+        "GAR_KEY": 178340003,
+        "Shape_Leng": 170.211502157,
+        "Full_Str_N": "דרך אריאל שרון"
+      }
+    },
+    "address": "דרך אריאל שרון"
+  },
+  {
+    "id": "arcgis:nof-hagalil::9",
+    "type": "synagogue",
+    "name": "בית הכנסת לעדה האתיופית \"תורת משה\"",
+    "cityHint": "נוף הגליל",
+    "location": {
+      "latitude": 32.696018074651036,
+      "longitude": 35.31315526341788
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nof-hagalil",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nof-hagalil:9",
+      "sourceUrl": "https://services1.arcgis.com/aNzvrLxjvQddMgHb/arcgis/rest/services/city_map/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:57.845Z",
+      "raw": {
+        "FID": 9,
+        "Join_Count": 1,
+        "Id": 0,
+        "Remarks": "בית הכנסת לעדה האתיופית \"תורת משה\"",
+        "Str_Code": 202,
+        "build_new": "9א",
+        "THICKNESS": 177450030,
+        "GAR_KEY": 177450030,
+        "Shape_Leng": 568.496269124,
+        "Full_Str_N": "השושנים"
+      }
+    },
+    "address": "השושנים"
+  },
+  {
+    "id": "arcgis:nof-hagalil::10",
+    "type": "synagogue",
+    "name": "בית כנסת האור הגדול",
+    "cityHint": "נוף הגליל",
+    "location": {
+      "latitude": 32.69377415637814,
+      "longitude": 35.31088057115476
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nof-hagalil",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nof-hagalil:10",
+      "sourceUrl": "https://services1.arcgis.com/aNzvrLxjvQddMgHb/arcgis/rest/services/city_map/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:57.845Z",
+      "raw": {
+        "FID": 10,
+        "Join_Count": 1,
+        "Id": 0,
+        "Remarks": "בית כנסת האור הגדול",
+        "Str_Code": 202,
+        "build_new": "25א",
+        "THICKNESS": 177440028,
+        "GAR_KEY": 177440028,
+        "Shape_Leng": 121.130534761,
+        "Full_Str_N": "השושנים"
+      }
+    },
+    "address": "השושנים"
+  },
+  {
+    "id": "arcgis:nof-hagalil::11",
+    "type": "synagogue",
+    "name": "בית כנסת - ניתנה כתובת חדשה",
+    "cityHint": "נוף הגליל",
+    "location": {
+      "latitude": 32.70721432641273,
+      "longitude": 35.32024495070801
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nof-hagalil",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nof-hagalil:11",
+      "sourceUrl": "https://services1.arcgis.com/aNzvrLxjvQddMgHb/arcgis/rest/services/city_map/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:57.845Z",
+      "raw": {
+        "FID": 11,
+        "Join_Count": 1,
+        "Id": 0,
+        "Remarks": "בית כנסת - ניתנה כתובת חדשה",
+        "Str_Code": 105,
+        "build_new": "6",
+        "THICKNESS": 177340067,
+        "GAR_KEY": 177340067,
+        "Shape_Leng": 88.7026450377,
+        "Full_Str_N": "כלניות"
+      }
+    },
+    "address": "כלניות"
+  },
+  {
+    "id": "arcgis:nof-hagalil::12",
+    "type": "synagogue",
+    "name": "בית חב\"ד מליבו וגם מקלט",
+    "cityHint": "נוף הגליל",
+    "location": {
+      "latitude": 32.700770427633486,
+      "longitude": 35.32563301946958
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nof-hagalil",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nof-hagalil:12",
+      "sourceUrl": "https://services1.arcgis.com/aNzvrLxjvQddMgHb/arcgis/rest/services/city_map/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:57.845Z",
+      "raw": {
+        "FID": 12,
+        "Join_Count": 0,
+        "Id": 0,
+        "Remarks": "בית חב\"ד מליבו וגם מקלט",
+        "Str_Code": 277,
+        "build_new": "36א'",
+        "THICKNESS": 0,
+        "GAR_KEY": 0,
+        "Shape_Leng": 0,
+        "Full_Str_N": "ורדים"
+      }
+    },
+    "address": "ורדים"
+  },
+  {
+    "id": "arcgis:nof-hagalil::13",
+    "type": "synagogue",
+    "name": "בית כנסת - אחדות ישראל",
+    "cityHint": "נוף הגליל",
+    "location": {
+      "latitude": 32.69739229334342,
+      "longitude": 35.31126848710085
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nof-hagalil",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nof-hagalil:13",
+      "sourceUrl": "https://services1.arcgis.com/aNzvrLxjvQddMgHb/arcgis/rest/services/city_map/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:57.845Z",
+      "raw": {
+        "FID": 13,
+        "Join_Count": 0,
+        "Id": 0,
+        "Remarks": "בית כנסת - אחדות ישראל",
+        "Str_Code": 209,
+        "build_new": "2א",
+        "THICKNESS": 0,
+        "GAR_KEY": 0,
+        "Shape_Leng": 0,
+        "Full_Str_N": "צבעוני"
+      }
+    },
+    "address": "צבעוני"
+  },
+  {
+    "id": "arcgis:nof-hagalil::14",
+    "type": "synagogue",
+    "name": "בית כנסת \"יונה הנביא\" / מקלט",
+    "cityHint": "נוף הגליל",
+    "location": {
+      "latitude": 32.722234452912176,
+      "longitude": 35.33162980658952
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nof-hagalil",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nof-hagalil:14",
+      "sourceUrl": "https://services1.arcgis.com/aNzvrLxjvQddMgHb/arcgis/rest/services/city_map/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:57.845Z",
+      "raw": {
+        "FID": 14,
+        "Join_Count": 0,
+        "Id": 0,
+        "Remarks": "בית כנסת \"יונה הנביא\" / מקלט",
+        "Str_Code": 263,
+        "build_new": "19א",
+        "THICKNESS": 0,
+        "GAR_KEY": 0,
+        "Shape_Leng": 0,
+        "Full_Str_N": "ניצן"
+      }
+    },
+    "address": "ניצן"
+  },
+  {
+    "id": "arcgis:nof-hagalil::15",
+    "type": "synagogue",
+    "name": "בית כנסת בית-אל הר-יונה",
+    "cityHint": "נוף הגליל",
+    "location": {
+      "latitude": 32.72991286651431,
+      "longitude": 35.33315224833265
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nof-hagalil",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nof-hagalil:15",
+      "sourceUrl": "https://services1.arcgis.com/aNzvrLxjvQddMgHb/arcgis/rest/services/city_map/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:57.845Z",
+      "raw": {
+        "FID": 15,
+        "Join_Count": 0,
+        "Id": 0,
+        "Remarks": "בית כנסת בית-אל הר-יונה",
+        "Str_Code": 312,
+        "build_new": "7",
+        "THICKNESS": 0,
+        "GAR_KEY": 0,
+        "Shape_Leng": 0,
+        "Full_Str_N": "סייפן"
+      }
+    },
+    "address": "סייפן"
+  }
+]

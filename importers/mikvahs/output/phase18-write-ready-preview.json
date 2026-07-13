@@ -1,0 +1,1145 @@
+[
+  {
+    "id": "mikveh-jlm-31.75394_35.22679",
+    "name": "ארנונה",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "יצחק בן דור 15, ירושלים",
+    "location": {
+      "latitude": 31.7539373,
+      "longitude": 35.2267873
+    },
+    "source": "seed",
+    "phone": "026255404",
+    "attendant": "רחל אהרוני",
+    "sourceUrl": "https://rabanut.org.il/%d7%90%d7%a8%d7%a0%d7%95%d7%a0%d7%94/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-ארנונה-31.7539",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.78061_35.19458",
+    "name": "בית הכרם",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "שחר 21, ירושלים",
+    "location": {
+      "latitude": 31.78061485443,
+      "longitude": 35.194576351235
+    },
+    "source": "seed",
+    "phone": "026256903",
+    "attendant": "רונית שטרן",
+    "sourceUrl": "https://rabanut.org.il/%d7%91%d7%99%d7%aa-%d7%94%d7%9b%d7%a8%d7%9d/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-בית הכרם-31.7806",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.78927_35.22150",
+    "name": "בית ישראל",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "כפר השלוח, ירושלים",
+    "location": {
+      "latitude": 31.789270062833,
+      "longitude": 35.221504199413
+    },
+    "source": "seed",
+    "phone": "025370931",
+    "attendant": "מרים כהן",
+    "sourceUrl": "https://rabanut.org.il/%d7%91%d7%99%d7%aa-%d7%99%d7%a9%d7%a8%d7%90%d7%9c/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-בית ישראל-31.7893",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.78211_35.21382",
+    "name": "בתי ראנד",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "הנציב 8, ירושלים",
+    "location": {
+      "latitude": 31.782109989683,
+      "longitude": 35.213820028684
+    },
+    "source": "seed",
+    "phone": "026255560",
+    "attendant": "אסתר בן זקן",
+    "sourceUrl": "https://rabanut.org.il/%d7%91%d7%aa%d7%99-%d7%a8%d7%90%d7%a0%d7%93/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-בתי ראנד-31.7821",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.76249_35.19781",
+    "name": "גבעת מרדכי",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.762491,
+      "longitude": 35.197814
+    },
+    "source": "seed",
+    "phone": "026788374",
+    "attendant": "אורלי בידני",
+    "sourceUrl": "https://rabanut.org.il/%d7%92%d7%91%d7%a2%d7%aa-%d7%9e%d7%a8%d7%93%d7%9b%d7%99/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-גבעת מרדכי-31.7625",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.80375_35.23695",
+    "name": "גבעה צרפתית",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "ההגנה 15, ירושלים",
+    "location": {
+      "latitude": 31.803751108287,
+      "longitude": 35.236954568962
+    },
+    "source": "seed",
+    "phone": "025811715",
+    "attendant": "לאה לוי",
+    "sourceUrl": "https://rabanut.org.il/%d7%92%d7%91%d7%a2%d7%94-%d7%a6%d7%a8%d7%a4%d7%aa%d7%99%d7%aa/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-גבעה צרפתית-31.8038",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.73873_35.17734",
+    "name": "גוש 80",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "יהושע ברוכי 14, ירושלים",
+    "location": {
+      "latitude": 31.738729994622,
+      "longitude": 35.177339974408
+    },
+    "source": "seed",
+    "phone": "025002714",
+    "attendant": "יפה אפלבוים",
+    "sourceUrl": "https://rabanut.org.il/%d7%92%d7%95%d7%a9-80/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-גוש 80-31.7387",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.73467_35.20134",
+    "name": "גילה א'",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "אפרסמון 40, ירושלים",
+    "location": {
+      "latitude": 31.734666758869,
+      "longitude": 35.201336054024
+    },
+    "source": "seed",
+    "phone": "026766202",
+    "attendant": "אפרת בן ישי",
+    "sourceUrl": "https://rabanut.org.il/%d7%92%d7%99%d7%9c%d7%94-%d7%90/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-גילה א'-31.7347",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.73146_35.18613",
+    "name": "גילה ב'",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "סנונית 3, ירושלים",
+    "location": {
+      "latitude": 31.731459992813,
+      "longitude": 35.186129992449
+    },
+    "source": "seed",
+    "phone": "026767779",
+    "attendant": "שמחה חביב",
+    "sourceUrl": "https://rabanut.org.il/%d7%92%d7%99%d7%9c%d7%94-%d7%91/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-גילה ב'-31.7315",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.75587_35.20195",
+    "name": "דבאח-גונן – בשיפוצים",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "יהודה הנשיא 15, ירושלים",
+    "location": {
+      "latitude": 31.755869980788,
+      "longitude": 35.201949996502
+    },
+    "source": "seed",
+    "phone": "026782352",
+    "attendant": "לאה לוי",
+    "sourceUrl": "https://rabanut.org.il/%d7%93%d7%91%d7%90%d7%97-%d7%92%d7%95%d7%a0%d7%9f/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-דבאח-גונן – בשיפוצים-31.7559",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.77633_35.23215",
+    "name": "העיר העתיקה",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "העומר, ירושלים",
+    "location": {
+      "latitude": 31.776325051569,
+      "longitude": 35.232150077462
+    },
+    "source": "seed",
+    "phone": "026283715",
+    "attendant": "רותי חודידה",
+    "sourceUrl": "https://rabanut.org.il/%d7%94%d7%a2%d7%99%d7%a8-%d7%94%d7%a2%d7%aa%d7%99%d7%a7%d7%94/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-העיר העתיקה-31.7763",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.72696_35.22064",
+    "name": "הר חומה",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "הממציא 17, ירושלים",
+    "location": {
+      "latitude": 31.726960000455,
+      "longitude": 35.220639964203
+    },
+    "source": "seed",
+    "phone": "026452431",
+    "attendant": "שני בן חקון",
+    "sourceUrl": "https://rabanut.org.il/%d7%94%d7%a8-%d7%97%d7%95%d7%9e%d7%94/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-הר חומה-31.7270",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.72181_35.22498",
+    "name": "הר חומה ב'",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "הרב מן ההר 6, ירושלים",
+    "location": {
+      "latitude": 31.721809991506,
+      "longitude": 35.224980029848
+    },
+    "source": "seed",
+    "phone": "026259755",
+    "attendant": "תרצה סלומון",
+    "sourceUrl": "https://rabanut.org.il/%d7%94%d7%a8-%d7%97%d7%95%d7%9e%d7%94-%d7%91/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-הר חומה ב'-31.7218",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.72155_35.23046",
+    "name": "הר חומה ג'",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "הבבא סאלי 28, ירושלים",
+    "location": {
+      "latitude": 31.721549984869,
+      "longitude": 35.230460034325
+    },
+    "source": "seed",
+    "phone": "026360766",
+    "attendant": "בתיה דריין",
+    "sourceUrl": "https://rabanut.org.il/%d7%94%d7%a8-%d7%97%d7%95%d7%9e%d7%94-%d7%92/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-הר חומה ג'-31.7215",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.78500_35.17478",
+    "name": "הר נוף",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "הרב שמעון אגסי 10, ירושלים",
+    "location": {
+      "latitude": 31.784999986079,
+      "longitude": 35.17477997354
+    },
+    "source": "seed",
+    "phone": "026526903",
+    "attendant": "מרים עמר",
+    "sourceUrl": "https://rabanut.org.il/%d7%94%d7%a8-%d7%a0%d7%95%d7%a3/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-הר נוף-31.7850",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.78287_35.17363",
+    "name": "הר נוף ב'",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "הרב שמואל שאולזון 82, ירושלים",
+    "location": {
+      "latitude": 31.782870419212,
+      "longitude": 35.17362678538
+    },
+    "source": "seed",
+    "phone": "025363830",
+    "attendant": "יפה אפלבוים",
+    "sourceUrl": "https://rabanut.org.il/%d7%94%d7%a8-%d7%a0%d7%95%d7%a3-%d7%91/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-הר נוף ב'-31.7829",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.75988_35.22029",
+    "name": "טל – בקעה",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "גדעון 7, ירושלים",
+    "location": {
+      "latitude": 31.759880008995,
+      "longitude": 35.220290019745
+    },
+    "source": "seed",
+    "phone": "026717597",
+    "attendant": "יפה אליאסזדה",
+    "sourceUrl": "https://rabanut.org.il/%d7%98%d7%9c-%d7%91%d7%a7%d7%a2%d7%94/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-טל – בקעה-31.7599",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.75546_35.20562",
+    "name": "לרזה-גונן",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "אנטיגנוס 30, ירושלים",
+    "location": {
+      "latitude": 31.755459979994,
+      "longitude": 35.205620012807
+    },
+    "source": "seed",
+    "phone": "026482534",
+    "attendant": "שושנה גריידי",
+    "sourceUrl": "https://rabanut.org.il/%d7%9c%d7%a8%d7%96%d7%94-%d7%92%d7%95%d7%a0%d7%9f/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-לרזה-גונן-31.7555",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.78087_35.22596",
+    "name": "מורשה-מקוה לנכות",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "אלישע 10, ירושלים",
+    "location": {
+      "latitude": 31.780870012837,
+      "longitude": 35.225959958148
+    },
+    "source": "seed",
+    "phone": "026272008",
+    "attendant": "רבקה גוליאן",
+    "sourceUrl": "https://rabanut.org.il/%d7%9e%d7%95%d7%a8%d7%a9%d7%94-%d7%9e%d7%a7%d7%95%d7%94-%d7%9c%d7%a0%d7%9b%d7%95%d7%aa/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-מורשה-מקוה לנכות-31.7809",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.77215_35.24098",
+    "name": "מעלה הזיתים",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "מעלה זיתים 1",
+    "location": {
+      "latitude": 31.7721452,
+      "longitude": 35.2409846
+    },
+    "source": "seed",
+    "phone": "029708921",
+    "attendant": "אפרת גפנית יצחקי",
+    "sourceUrl": "https://rabanut.org.il/%d7%9e%d7%a2%d7%9c%d7%94-%d7%94%d7%96%d7%99%d7%aa%d7%99%d7%9d/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-מעלה הזיתים-31.7721",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.84437_35.24201",
+    "name": "נוה יעקב מרכז",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "מאיר בלבן 4, ירושלים",
+    "location": {
+      "latitude": 31.844370012099,
+      "longitude": 35.242009961625
+    },
+    "source": "seed",
+    "phone": "025851355",
+    "attendant": "אורנה אהרונוב",
+    "sourceUrl": "https://rabanut.org.il/%d7%a0%d7%95%d7%94-%d7%99%d7%a2%d7%a7%d7%91-%d7%9e%d7%a8%d7%9b%d7%96/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-נוה יעקב מרכז-31.8444",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.84077_35.24803",
+    "name": "נוה יעקב מזרח",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "הרב שלמה יוסף זווין 2, ירושלים",
+    "location": {
+      "latitude": 31.840767989458,
+      "longitude": 35.248032012365
+    },
+    "source": "seed",
+    "phone": "025849889",
+    "attendant": "עופרה מימון",
+    "sourceUrl": "https://rabanut.org.il/%d7%a0%d7%95%d7%94-%d7%99%d7%a2%d7%a7%d7%91-%d7%9e%d7%96%d7%a8%d7%97/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-נוה יעקב מזרח-31.8408",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.76709_35.16130",
+    "name": "עין כרם",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "דרך האחיות 7, ירושלים",
+    "location": {
+      "latitude": 31.767089996378,
+      "longitude": 35.161300029215
+    },
+    "source": "seed",
+    "phone": "026436787",
+    "attendant": "רונה מולכו",
+    "sourceUrl": "https://rabanut.org.il/%d7%a2%d7%99%d7%9f-%d7%9b%d7%a8%d7%9d/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-עין כרם-31.7671",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.82996_35.24385",
+    "name": "פסגת זאב מרכז",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "סיירת גולני 9, ירושלים",
+    "location": {
+      "latitude": 31.829960011798,
+      "longitude": 35.243850040829
+    },
+    "source": "seed",
+    "phone": "025858246",
+    "attendant": "חנה חנוכה",
+    "sourceUrl": "https://rabanut.org.il/%d7%a4%d7%a1%d7%92%d7%aa-%d7%96%d7%90%d7%91-%d7%9e%d7%a8%d7%9b%d7%96/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-פסגת זאב מרכז-31.8300",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.76292_35.20336",
+    "name": "פסגת זאב מזרח",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "מבוא בנין 26, ירושלים",
+    "location": {
+      "latitude": 31.762919999549,
+      "longitude": 35.203360000254
+    },
+    "source": "seed",
+    "phone": "025856990",
+    "attendant": "מיכל ברזני",
+    "sourceUrl": "https://rabanut.org.il/%d7%a4%d7%a1%d7%92%d7%aa-%d7%96%d7%90%d7%91-%d7%9e%d7%96%d7%a8%d7%97/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-פסגת זאב מזרח-31.7629",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.83584_35.23631",
+    "name": "פסגת זאב צפון",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "מזל טלה, ירושלים",
+    "location": {
+      "latitude": 31.835838967535,
+      "longitude": 35.236306647642
+    },
+    "source": "seed",
+    "phone": "026561951",
+    "attendant": "חוה בן הרוש",
+    "sourceUrl": "https://rabanut.org.il/%d7%a4%d7%a1%d7%92%d7%aa-%d7%96%d7%90%d7%91-%d7%a6%d7%a4%d7%95%d7%9f/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-פסגת זאב צפון-31.8358",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.82275_35.25650",
+    "name": "פסגת זאב דרום",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "זלמן צורף, ירושלים",
+    "location": {
+      "latitude": 31.822751124234,
+      "longitude": 35.256504270449
+    },
+    "source": "seed",
+    "phone": "029701736",
+    "attendant": "אסתר חיימוב",
+    "sourceUrl": "https://rabanut.org.il/%d7%a4%d7%a1%d7%92%d7%aa-%d7%96%d7%90%d7%91-%d7%93%d7%a8%d7%95%d7%9d/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-פסגת זאב דרום-31.8228",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.78671_35.21149",
+    "name": "קומונה",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "נתיב יצחק & אהל שלמה, ירושלים",
+    "location": {
+      "latitude": 31.786707610774,
+      "longitude": 35.211488864859
+    },
+    "source": "seed",
+    "phone": "025023508",
+    "attendant": "יפה ברגיג",
+    "sourceUrl": "https://rabanut.org.il/%d7%a7%d7%95%d7%9e%d7%95%d7%a0%d7%94/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-קומונה-31.7867",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.76340_35.20732",
+    "name": "קטמון הותיקה",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "המצור 7, ירושלים",
+    "location": {
+      "latitude": 31.763399989234,
+      "longitude": 35.20732003041
+    },
+    "source": "seed",
+    "phone": "025635174",
+    "attendant": "יעל בר אושר",
+    "sourceUrl": "https://rabanut.org.il/%d7%a7%d7%98%d7%9e%d7%95%d7%9f-%d7%94%d7%95%d7%aa%d7%99%d7%a7%d7%94/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-קטמון הותיקה-31.7634",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.76044_35.17217",
+    "name": "קרית יובל",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "פלורנטין 3, ירושלים",
+    "location": {
+      "latitude": 31.760440003947,
+      "longitude": 35.172170016529
+    },
+    "source": "seed",
+    "phone": "026417110",
+    "attendant": "כוכבה אוחיון",
+    "sourceUrl": "https://rabanut.org.il/%d7%a7%d7%a8%d7%99%d7%aa-%d7%99%d7%95%d7%91%d7%9c/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-קרית יובל-31.7604",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.78885_35.19188",
+    "name": "קרית משה",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "הרב חיים ויטל 37, ירושלים",
+    "location": {
+      "latitude": 31.788850003755,
+      "longitude": 35.191879978027
+    },
+    "source": "seed",
+    "phone": "026521577",
+    "attendant": "אורנה שחרטון",
+    "sourceUrl": "https://rabanut.org.il/%d7%a7%d7%a8%d7%99%d7%aa-%d7%9e%d7%a9%d7%94/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-קרית משה-31.7889",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.77169_35.21391",
+    "name": "רחביה",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "האר\"י 5, ירושלים",
+    "location": {
+      "latitude": 31.771689984841,
+      "longitude": 35.213909966505
+    },
+    "source": "seed",
+    "phone": "025632783",
+    "attendant": "כוכבה אוחיון",
+    "sourceUrl": "https://rabanut.org.il/%d7%a8%d7%97%d7%91%d7%99%d7%94/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-רחביה-31.7717",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.81674_35.20019",
+    "name": "רמות 01",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "שירת הים 5, ירושלים",
+    "location": {
+      "latitude": 31.816741046073,
+      "longitude": 35.200191487534
+    },
+    "source": "seed",
+    "phone": "025868890",
+    "attendant": "פריבה ראקוב",
+    "sourceUrl": "https://rabanut.org.il/%d7%a8%d7%9e%d7%95%d7%aa-01/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-רמות 01-31.8167",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.81066_35.19270",
+    "name": "רמות 02",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "משעול הקורנית 3, ירושלים",
+    "location": {
+      "latitude": 31.810660009184,
+      "longitude": 35.192699979615
+    },
+    "source": "seed",
+    "phone": "025864556",
+    "attendant": "אילנית דיין",
+    "sourceUrl": "https://rabanut.org.il/%d7%a8%d7%9e%d7%95%d7%aa-02/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-רמות 02-31.8107",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.82081_35.18876",
+    "name": "רמות 03",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "סיון שלום 7, ירושלים",
+    "location": {
+      "latitude": 31.820813601611,
+      "longitude": 35.188755431153
+    },
+    "source": "seed",
+    "phone": "025866357",
+    "attendant": "שרה גירון",
+    "sourceUrl": "https://rabanut.org.il/%d7%a8%d7%9e%d7%95%d7%aa-03/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-רמות 03-31.8208",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.82142_35.19627",
+    "name": "רמות 04-אונגוואר מקוה תורן",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "הרב שבתאי חזקיה 12, ירושלים",
+    "location": {
+      "latitude": 31.821419984019,
+      "longitude": 35.196269999815
+    },
+    "source": "seed",
+    "phone": "025863176",
+    "attendant": "חני ירקוני",
+    "sourceUrl": "https://rabanut.org.il/%d7%a8%d7%9e%d7%95%d7%aa-04-%d7%90%d7%95%d7%a0%d7%92%d7%95%d7%95%d7%90%d7%a8-%d7%9e%d7%a7%d7%95%d7%94-%d7%aa%d7%95%d7%a8%d7%9f/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-רמות 04-אונגוואר מקוה תו-31.8214",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.80145_35.22830",
+    "name": "רמת אשכול",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "פארן 6, ירושלים",
+    "location": {
+      "latitude": 31.801450015885,
+      "longitude": 35.228300017877
+    },
+    "source": "seed",
+    "attendant": "שרה אהרוני",
+    "sourceUrl": "https://rabanut.org.il/%d7%a8%d7%9e%d7%aa-%d7%90%d7%a9%d7%9b%d7%95%d7%9c/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-רמת אשכול-31.8015",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.77128_35.19376",
+    "name": "רמת בית הכרם",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "משה אהרן טוב 18, ירושלים",
+    "location": {
+      "latitude": 31.7712811,
+      "longitude": 35.1937572
+    },
+    "source": "seed",
+    "phone": "025633428",
+    "attendant": "איטל ביטון",
+    "sourceUrl": "https://rabanut.org.il/%d7%a8%d7%9e%d7%aa-%d7%91%d7%99%d7%aa-%d7%94%d7%9b%d7%a8%d7%9d/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-רמת בית הכרם-31.7713",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.80891_35.22064",
+    "name": "רמת שלמה",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "הרב יוסף שלמה כהנמן 16, ירושלים",
+    "location": {
+      "latitude": 31.808911603504,
+      "longitude": 35.220644019037
+    },
+    "source": "seed",
+    "phone": "025863121",
+    "attendant": "מזל בוחבוט",
+    "sourceUrl": "https://rabanut.org.il/%d7%a8%d7%9e%d7%aa-%d7%a9%d7%9c%d7%9e%d7%94/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-רמת שלמה-31.8089",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.75135_35.23873",
+    "name": "תלפיות מזרח",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "אבשלום חביב, ירושלים",
+    "location": {
+      "latitude": 31.75134965528,
+      "longitude": 35.238726816222
+    },
+    "source": "seed",
+    "attendant": "יעל אוזן",
+    "sourceUrl": "https://rabanut.org.il/%d7%aa%d7%9c%d7%a4%d7%99%d7%95%d7%aa-%d7%9e%d7%96%d7%a8%d7%97/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-תלפיות מזרח-31.7513",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-jlm-31.81494_35.21892",
+    "name": "רמת שלמה פתאל",
+    "type": "mikveh",
+    "cityId": "ירושלים",
+    "address": "הרב פתאל 2, ירושלים",
+    "location": {
+      "latitude": 31.8149378,
+      "longitude": 35.2189205
+    },
+    "source": "seed",
+    "phone": "025665057",
+    "attendant": "יעל אוזן",
+    "sourceUrl": "https://rabanut.org.il/%d7%a8%d7%9e%d7%aa-%d7%a9%d7%9c%d7%9e%d7%94-%d7%a4%d7%aa%d7%90%d7%9c/",
+    "sourceName": "המועצה הדתית ירושלים",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית ירושלים (rabanut.org.il)",
+      "provenance": {
+        "sourceId": "council:jerusalem:mikvah",
+        "sourceRecordId": "jlm-רמת שלמה פתאל-31.8149",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-holon-463",
+    "name": "מקווה טהרה בריאות",
+    "type": "mikveh",
+    "cityId": "חולון",
+    "address": "הסנהדרין 23",
+    "location": {
+      "latitude": 32.00403442666332,
+      "longitude": 34.76421404294934
+    },
+    "source": "seed",
+    "mikvehGender": "נשים",
+    "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+    "sourceName": "עיריית חולון — GIS",
+    "extra": {
+      "license": "municipal-open",
+      "attribution": "Holon Municipality GIS",
+      "provenance": {
+        "sourceId": "gis:holon:mikvaot",
+        "sourceRecordId": "חולון-463",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-holon-525",
+    "name": "מקווה נווה רמז",
+    "type": "mikveh",
+    "cityId": "חולון",
+    "address": "העליה השניה 37",
+    "location": {
+      "latitude": 32.011764119194616,
+      "longitude": 34.770508383530355
+    },
+    "source": "seed",
+    "mikvehGender": "נשים",
+    "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+    "sourceName": "עיריית חולון — GIS",
+    "extra": {
+      "license": "municipal-open",
+      "attribution": "Holon Municipality GIS",
+      "provenance": {
+        "sourceId": "gis:holon:mikvaot",
+        "sourceRecordId": "חולון-525",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-holon-528",
+    "name": "מקווה תל גיבורים",
+    "type": "mikveh",
+    "cityId": "חולון",
+    "address": "חזית חמש 10",
+    "location": {
+      "latitude": 32.029770248634875,
+      "longitude": 34.76195510707593
+    },
+    "source": "seed",
+    "mikvehGender": "נשים",
+    "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4",
+    "sourceName": "עיריית חולון — GIS",
+    "extra": {
+      "license": "municipal-open",
+      "attribution": "Holon Municipality GIS",
+      "provenance": {
+        "sourceId": "gis:holon:mikvaot",
+        "sourceRecordId": "חולון-528",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-lod-1",
+    "name": "מקווה",
+    "type": "mikveh",
+    "cityId": "לוד",
+    "address": "לוד",
+    "location": {
+      "latitude": 31.934071486956878,
+      "longitude": 34.89085585703929
+    },
+    "source": "seed",
+    "mikvehGender": "נשים",
+    "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+    "sourceName": "עיריית לוד — GIS",
+    "extra": {
+      "license": "municipal-open",
+      "attribution": "Lod Municipality GIS",
+      "provenance": {
+        "sourceId": "gis:lod:mikvaot",
+        "sourceRecordId": "לוד-1",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  },
+  {
+    "id": "mikveh-lod-14",
+    "name": "מקוווה חב\"ד נשים",
+    "type": "mikveh",
+    "cityId": "לוד",
+    "address": "לוד",
+    "location": {
+      "latitude": 31.943006034599886,
+      "longitude": 34.87719520897222
+    },
+    "source": "seed",
+    "mikvehGender": "נשים",
+    "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+    "sourceName": "עיריית לוד — GIS",
+    "extra": {
+      "license": "municipal-open",
+      "attribution": "Lod Municipality GIS",
+      "provenance": {
+        "sourceId": "gis:lod:mikvaot",
+        "sourceRecordId": "לוד-14",
+        "fetchedAt": "2026-06-21"
+      }
+    }
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "generatedNote": "PHASE 25 DRY-RUN — Yavne only (mdyv.org.il). NATIVE Waze coordinates only (no GovMap, no geocoding). Gender-aware dedup vs live. No write, no publish, no rebuild.",
+  "source": {
+    "name": "המועצה הדתית יבנה",
+    "url": "https://mdyv.org.il/mikve",
+    "type": "Vue SSR single page",
+    "parsed": 6
+  },
+  "totalParsed": 6,
+  "liveYavneBefore": 0,
+  "duplicates": 0,
+  "excluded": 0,
+  "writeReady": 6,
+  "writeReadyByGender": {
+    "נשים": 5,
+    "גברים": 1
+  },
+  "idCollisions": 0,
+  "duplicateAppIds": 0,
+  "finalRecommendedWriteCount": 6,
+  "liveMikvehBefore": 696,
+  "estimatedTotalAfterWrite": 702,
+  "note": "Yavne had 0 live mikvehs under exact cityId=\"יבנה\" (prior audit counts were inflated by substring matches to גן יבנה / נהריה). All 6 council records carry native Waze coords → high confidence, no geocoding needed.",
+  "rollbackPlan": [
+    "Backup places.osm.json (+cities) before any write",
+    "Additive append only; do NOT run rebuildAppDataset"
+  ],
+  "dryRun": true,
+  "liveDataTouched": false,
+  "publishPerformed": false,
+  "rebuildTouched": false
+}

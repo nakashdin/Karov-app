@@ -1,0 +1,111 @@
+[
+  {
+    "id": "mikveh-ashkelon-31.66761_34.56738",
+    "name": "אפרידר - נורמה רות",
+    "type": "mikveh",
+    "cityId": "אשקלון",
+    "address": "סמטת הקיקיון 9 - ע\"י בי\"כ נועם יצחק",
+    "location": {
+      "latitude": 31.6676124,
+      "longitude": 34.5673778
+    },
+    "source": "seed",
+    "phone": "086734135",
+    "mikvehGender": "נשים",
+    "sourceUrl": "https://www.mdas.org.il/ניווט-לסניפי-מקוואות/",
+    "sourceName": "המועצה הדתית אשקלון",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית אשקלון (mdas.org.il)",
+      "provenance": {
+        "sourceId": "council:ashkelon:mikvah",
+        "sourceRecordId": "ashkelon-אפרידר נורמה רות-31.6676",
+        "fetchedAt": "2026-06-21"
+      },
+      "hasVessel": true
+    }
+  },
+  {
+    "id": "mikveh-ashkelon-31.65307_34.56358",
+    "name": "אפרים צור - מקוה בשיפוץ",
+    "type": "mikveh",
+    "cityId": "אשקלון",
+    "address": "רח' אפרים צור 55, שכונת עתיקות",
+    "location": {
+      "latitude": 31.65307,
+      "longitude": 34.5635837
+    },
+    "source": "seed",
+    "phone": "086752638",
+    "mikvehGender": "נשים",
+    "attendant": "זהבה סעדון",
+    "sourceUrl": "https://www.mdas.org.il/ניווט-לסניפי-מקוואות/",
+    "sourceName": "המועצה הדתית אשקלון",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית אשקלון (mdas.org.il)",
+      "provenance": {
+        "sourceId": "council:ashkelon:mikvah",
+        "sourceRecordId": "ashkelon-אפרים צור בשיפוץ-31.6531",
+        "fetchedAt": "2026-06-21"
+      },
+      "status": "closed-for-renovation"
+    }
+  },
+  {
+    "id": "mikveh-ashkelon-31.67767_34.57695",
+    "name": "ברנע",
+    "type": "mikveh",
+    "cityId": "אשקלון",
+    "address": "רח' מעלות אשר 9, שכונת ברנע",
+    "location": {
+      "latitude": 31.6776715,
+      "longitude": 34.5769452
+    },
+    "source": "seed",
+    "phone": "086781192",
+    "mikvehGender": "נשים",
+    "sourceUrl": "https://www.mdas.org.il/ניווט-לסניפי-מקוואות/",
+    "sourceName": "המועצה הדתית אשקלון",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית אשקלון (mdas.org.il)",
+      "provenance": {
+        "sourceId": "council:ashkelon:mikvah",
+        "sourceRecordId": "ashkelon-ברנע-31.6777",
+        "fetchedAt": "2026-06-21"
+      },
+      "hasVessel": true
+    }
+  },
+  {
+    "id": "mikveh-ashkelon-31.68643_34.59436",
+    "name": "מקוה עיר היין",
+    "type": "mikveh",
+    "cityId": "אשקלון",
+    "address": "שפייה 25",
+    "location": {
+      "latitude": 31.68643190556438,
+      "longitude": 34.5943648466776
+    },
+    "source": "seed",
+    "phone": "086904692",
+    "mikvehGender": "נשים",
+    "attendant": "מיטל אלבז",
+    "locationPrecision": "address",
+    "sourceUrl": "https://www.mdas.org.il/ניווט-לסניפי-מקוואות/",
+    "sourceName": "המועצה הדתית אשקלון",
+    "extra": {
+      "license": "council-public",
+      "attribution": "המועצה הדתית אשקלון (mdas.org.il)",
+      "provenance": {
+        "sourceId": "council:ashkelon:mikvah",
+        "sourceRecordId": "ashkelon-עיר היין-31.6864",
+        "fetchedAt": "2026-06-21"
+      },
+      "geocodeSource": "govmap-ADDR_V1",
+      "geocodeLabel": "שפיה 25, אשקלון",
+      "hasVessel": true
+    }
+  }
+]

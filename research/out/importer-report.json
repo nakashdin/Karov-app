@@ -1,0 +1,31 @@
+{
+  "city": "לוד",
+  "sources": [
+    {
+      "source": "OpenStreetMap",
+      "records": 70,
+      "byCategory": {
+        "synagogue": 69,
+        "kosher_business": 1
+      },
+      "license": "ODbL 1.0 (attribution + share-alike)",
+      "reliability": "Good for synagogue existence/location; kosher businesses barely tagged; phone/hours rare."
+    },
+    {
+      "source": "data.gov.il (מקוואות טהרה)",
+      "records": 6,
+      "byCategory": {
+        "mikveh": 6
+      },
+      "license": "Open (data.gov.il)",
+      "reliability": "Official, high fill (phone/hours/address) — but NO coordinates (needs geocoding)."
+    },
+    {
+      "source": "data.gov.il (בתי עסק כשרות)",
+      "records": 0,
+      "byCategory": {},
+      "license": "Open (data.gov.il)",
+      "reliability": "Ideal schema (kosher type, meat/dairy/parve, supervisor) but tiny coverage (63 nationwide, pilot)."
+    }
+  ]
+}

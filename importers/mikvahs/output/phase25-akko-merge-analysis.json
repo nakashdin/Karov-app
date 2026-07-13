@@ -1,0 +1,77 @@
+[
+  {
+    "name": "מקווה שדליץ",
+    "address": "הרב לופס 3, עכו",
+    "phone": "049911067",
+    "attendant": "סימי בונן 058-3214961",
+    "gender": "נשים",
+    "coordSource": "record-native(waze)",
+    "location": {
+      "latitude": 32.9265608,
+      "longitude": 35.0886284
+    },
+    "disposition": "write_ready",
+    "reason": "native Waze coordinate, not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "name": "מקווה כרם",
+    "address": "כרם 2, עכו",
+    "phone": "049917554",
+    "attendant": "רמונד כהן 054-9134540",
+    "gender": "נשים",
+    "coordSource": "record-native(waze)",
+    "location": {
+      "latitude": 32.9400717,
+      "longitude": 35.0762529
+    },
+    "disposition": "write_ready",
+    "reason": "native Waze coordinate, not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "name": "מקווה וולפסון",
+    "address": "דרך הארבעה 57, עכו",
+    "phone": "049913493",
+    "attendant": "מרים אבו 050-5757324",
+    "gender": "נשים",
+    "coordSource": "record-native(waze)",
+    "location": {
+      "latitude": 32.9307645,
+      "longitude": 35.0808648
+    },
+    "disposition": "write_ready",
+    "reason": "native Waze coordinate, not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "name": "מקווה גבעת התמרים",
+    "address": "עליית הנוער 1, עכו",
+    "phone": "046577898",
+    "attendant": "פנינה כהן 054-8596230",
+    "gender": "נשים",
+    "coordSource": "record-native(waze)",
+    "location": {
+      "latitude": 32.9177823,
+      "longitude": 35.0904099
+    },
+    "disposition": "write_ready",
+    "reason": "native Waze coordinate, not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "name": "מקווה גברים",
+    "address": "דרך הארבעה 57, עכו",
+    "phone": null,
+    "attendant": null,
+    "gender": "גברים",
+    "coordSource": "record-native(waze, co-located building)",
+    "location": {
+      "latitude": 32.9307645,
+      "longitude": 35.0808648
+    },
+    "disposition": "write_ready",
+    "reason": "native Waze coordinate, not a duplicate (men's page Waze pointed to council office (יהושפט 29); reassigned to its real address דרך הארבעה 57 = וולפסון building native coord)",
+    "matchedLiveId": null
+  }
+]

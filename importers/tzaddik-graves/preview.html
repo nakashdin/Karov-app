@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>קברי צדיקים — Preview Phase 6</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Heebo',sans-serif;background:#0f172a;color:#e2e8f0;font-size:14px;line-height:1.6}
+  a{color:#60a5fa;text-decoration:none}
+  .hdr{background:linear-gradient(135deg,#1e293b 0%,#0f172a 100%);border-bottom:1px solid #334155;padding:18px 28px}
+  .hdr h1{font-size:22px;font-weight:700;color:#f1f5f9}
+  .hdr .sub{color:#94a3b8;font-size:13px;margin-top:4px}
+  main{max-width:1440px;margin:0 auto;padding:22px 20px;display:grid;gap:18px}
+  .card{background:#1e293b;border:1px solid #334155;border-radius:12px;overflow:hidden}
+  .card-hdr{padding:12px 18px;border-bottom:1px solid #334155;display:flex;align-items:center;gap:8px}
+  .card-hdr h2{font-size:14px;font-weight:600;color:#f1f5f9}
+  .card-body{padding:16px}
+
+  /* Stats grid */
+  .sg{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px}
+  .sb{background:#0f172a;border:1px solid #334155;border-radius:8px;padding:12px;text-align:center}
+  .sb .n{font-size:26px;font-weight:700;color:#f1f5f9}
+  .sb .l{font-size:11px;color:#64748b;margin-top:2px}
+  .sb.g .n{color:#34d399}.sb.y .n{color:#fbbf24}.sb.r .n{color:#f87171}.sb.b .n{color:#60a5fa}.sb.p .n{color:#a78bfa}
+
+  /* Tabs */
+  .tabs{display:flex;gap:0;border-bottom:2px solid #334155;margin-bottom:16px}
+  .tab{padding:10px 22px;cursor:pointer;font-size:13px;font-weight:600;color:#94a3b8;border-bottom:3px solid transparent;margin-bottom:-2px;transition:all .15s}
+  .tab:hover{color:#e2e8f0}
+  .tab.active-approved{color:#34d399;border-color:#34d399}
+  .tab.active-review{color:#fbbf24;border-color:#fbbf24}
+  .tab.active-rejected{color:#f87171;border-color:#f87171}
+  .tab-panel{display:none}.tab-panel.active{display:block}
+
+  /* Must-have checklist */
+  .mh{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:8px}
+  .mhi{background:#0f172a;border:1px solid #334155;border-radius:8px;padding:10px 14px;display:flex;align-items:flex-start;gap:10px}
+  .mhi .ico{font-size:18px;flex-shrink:0;margin-top:1px}
+  .mhi .info .name{font-size:13px;font-weight:600;color:#f1f5f9}
+  .mhi .info .detail{font-size:11px;color:#64748b;margin-top:2px}
+  .mhi .sigs{margin-top:5px;display:flex;gap:4px;flex-wrap:wrap}
+  .sig{font-size:10px;padding:1px 6px;border-radius:9999px;background:#1e3a5f;color:#93c5fd}
+
+  /* Confidence bars */
+  .cr{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+  .cr .lbl{width:50px;font-size:12px;color:#94a3b8;text-align:left}
+  .cr .bar{flex:1;height:8px;background:#0f172a;border-radius:4px;overflow:hidden}
+  .cr .fill{height:100%;border-radius:4px;transition:width .3s}
+  .cr .cnt{width:28px;font-size:12px;color:#94a3b8;text-align:right}
+  .fill-g{background:#34d399}.fill-y{background:#fbbf24}.fill-r{background:#f87171}
+
+  /* Map */
+  #map{height:400px;border-radius:0}
+
+  /* Table */
+  .tbl-wrap{overflow-x:auto}
+  table{width:100%;border-collapse:collapse;font-size:12px}
+  th{background:#0f172a;color:#94a3b8;padding:8px 10px;text-align:right;font-weight:600;white-space:nowrap;position:sticky;top:0;z-index:1}
+  td{padding:8px 10px;border-bottom:1px solid #1e293b;vertical-align:top}
+  tr:hover td{background:#1a2744}
+  .badge{display:inline-block;padding:2px 7px;border-radius:9999px;font-size:10px;font-weight:600}
+  .badge-h{background:#065f46;color:#6ee7b7}
+  .badge-m{background:#92400e;color:#fde68a}
+  .badge-l{background:#7f1d1d;color:#fca5a5}
+  .badge-o{background:#1d4ed8;color:#bfdbfe}
+  .badge-w{background:#5b21b6;color:#ddd6fe}
+  .badge-manual{background:#1c1917;color:#d6d3d1;border:1px solid #44403c}
+  .badge-warn{background:#713f12;color:#fde68a}
+  .badge-rej{background:#450a0a;color:#fca5a5}
+  .score{display:inline-block;padding:1px 6px;border-radius:4px;font-size:11px;font-weight:700}
+  .score-h{color:#34d399}.score-m{color:#fbbf24}.score-l{color:#f87171}
+  .source-manual{color:#a78bfa}
+  .rej-reason{font-size:11px;color:#f87171;margin-top:2px}
+  .rev-reason{font-size:11px;color:#fbbf24;margin-top:2px}
+
+  /* Filters */
+  .filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+  .flt{padding:5px 12px;border-radius:9999px;border:1px solid #334155;background:#0f172a;color:#94a3b8;cursor:pointer;font-size:12px;font-family:inherit}
+  .flt:hover{background:#1e293b;color:#e2e8f0}
+  .flt.active{background:#1d4ed8;border-color:#3b82f6;color:#bfdbfe}
+  .search{padding:6px 12px;border-radius:8px;border:1px solid #334155;background:#0f172a;color:#e2e8f0;font-size:13px;font-family:inherit;min-width:220px}
+  .search:focus{outline:none;border-color:#3b82f6}
+
+  .empty{color:#64748b;padding:20px;text-align:center}
+</style>
+</head>
+<body>
+
+<div class="hdr">
+  <h1>⚰️ קברי צדיקים — Phase 6: Clean Dataset</h1>
+  <div class="sub">DRY RUN בלבד | אין כתיבה למסד הנתונים | <span id="runDate">טוען...</span></div>
+</div>
+
+<main>
+
+<!-- Stats -->
+<div class="card">
+  <div class="card-hdr"><h2>📊 סטטיסטיקות</h2></div>
+  <div class="card-body">
+    <div class="sg" id="statsGrid">
+      <div class="sb"><div class="n">…</div><div class="l">טוען</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- Must-have checklist -->
+<div class="card">
+  <div class="card-hdr"><h2>✅ Must-Have Checklist</h2></div>
+  <div class="card-body">
+    <div class="mh" id="mustHaveList"><div class="empty">טוען...</div></div>
+  </div>
+</div>
+
+<!-- Confidence (approved only) -->
+<div class="card">
+  <div class="card-hdr"><h2>📈 חלוקת ודאות — approved בלבד</h2></div>
+  <div class="card-body" id="confBars"><div class="empty">טוען...</div></div>
+</div>
+
+<!-- Map -->
+<div class="card">
+  <div class="card-hdr"><h2>🗺️ מפה</h2></div>
+  <div id="map"></div>
+</div>
+
+<!-- Tabs -->
+<div class="card">
+  <div class="card-body" style="padding-bottom:0">
+    <div class="tabs">
+      <div class="tab active-approved" id="tab-approved" onclick="switchTab('approved')">✅ מאושרות ל-live <span id="cnt-approved"></span></div>
+      <div class="tab" id="tab-review" onclick="switchTab('review')">⚠️ לבדיקה ידנית <span id="cnt-review"></span></div>
+      <div class="tab" id="tab-rejected" onclick="switchTab('rejected')">❌ נדחו <span id="cnt-rejected"></span></div>
+    </div>
+  </div>
+
+  <!-- Tab: Approved -->
+  <div id="panel-approved" class="tab-panel active card-body">
+    <div class="filters">
+      <input class="search" id="search-approved" placeholder="חפש שם / עיר..." oninput="filterTable('approved')">
+      <button class="flt active" onclick="filterSource('approved','all',this)">הכל</button>
+      <button class="flt" onclick="filterSource('approved','osm',this)">OSM</button>
+      <button class="flt" onclick="filterSource('approved','wikidata',this)">Wikidata</button>
+      <button class="flt" onclick="filterSource('approved','manual',this)">⭐ ידני</button>
+      <button class="flt" onclick="filterTier('max',this)">🔒 ודאות מקסימלית</button>
+      <button class="flt" onclick="filterTier('high',this)">✓ ודאות גבוהה</button>
+    </div>
+    <div class="tbl-wrap"><table id="tbl-approved">
+      <thead><tr>
+        <th>#</th><th>שם</th><th>קבור</th><th>עיר</th><th>מקור</th><th>ודאות</th><th>ציון</th><th>קואורדינטות</th><th>Q-ID</th>
+      </tr></thead>
+      <tbody id="tbody-approved"></tbody>
+    </table></div>
+  </div>
+
+  <!-- Tab: Manual Review -->
+  <div id="panel-review" class="tab-panel card-body">
+    <div class="filters">
+      <input class="search" id="search-review" placeholder="חפש שם / עיר..." oninput="filterTable('review')">
+    </div>
+    <div class="tbl-wrap"><table id="tbl-review">
+      <thead><tr>
+        <th>#</th><th>שם</th><th>קבור</th><th>עיר</th><th>מקור</th><th>ציון</th><th>סיבת בדיקה</th>
+      </tr></thead>
+      <tbody id="tbody-review"></tbody>
+    </table></div>
+  </div>
+
+  <!-- Tab: Rejected -->
+  <div id="panel-rejected" class="tab-panel card-body">
+    <div class="filters">
+      <input class="search" id="search-rejected" placeholder="חפש שם..." oninput="filterTable('rejected')">
+    </div>
+    <div class="tbl-wrap"><table id="tbl-rejected">
+      <thead><tr>
+        <th>#</th><th>שם</th><th>מקור</th><th>סיבת דחייה</th>
+      </tr></thead>
+      <tbody id="tbody-rejected"></tbody>
+    </table></div>
+  </div>
+</div>
+
+</main>
+
+<script>
+let report = null;
+let map = null;
+let sourceFilter = { approved: 'all' };
+
+async function loadData() {
+  try {
+    const res = await fetch('./output/graves.report.json');
+    report = await res.json();
+    renderAll();
+  } catch(e) {
+    document.querySelector('main').innerHTML = '<div class="card card-body" style="padding:30px;color:#f87171">שגיאה בטעינה: ' + e.message + '</div>';
+  }
+}
+
+function renderAll() {
+  document.getElementById('runDate').textContent = 'הרצה: ' + (report.runDate||'').slice(0,10);
+
+  const approved = report.approved || [];
+  const review   = report.manualReview || [];
+  const rejected = report.qualityRejected || [];
+  const mh       = report.mustHaveCheck || [];
+  const conf     = report.confidence || {};
+
+  // Stats
+  const statsGrid = document.getElementById('statsGrid');
+  const total = approved.length + review.length + rejected.length;
+  const tierMax  = approved.filter(r=>(r.confidenceScore||0)>=80).length;
+  const tierHigh = approved.filter(r=>(r.confidenceScore||0)>=55&&(r.confidenceScore||0)<80).length;
+  statsGrid.innerHTML = [
+    { n: approved.length, l: '✅ מאושרות ל-live', cls:'g' },
+    { n: tierMax,         l: '🔒 ודאות מקסימלית (≥80)', cls:'g' },
+    { n: tierHigh,        l: '✓ ודאות גבוהה (55–79)', cls:'b' },
+    { n: review.length,   l: '⚠️ דורש בדיקה ידנית', cls:'y' },
+    { n: rejected.length, l: '❌ נדחו', cls:'r' },
+    { n: total,           l: 'סה"כ עובדו', cls:'b' },
+    { n: mh.filter(c=>c.found).length + '/' + mh.length, l: 'Must-Have נמצאו', cls:'p' },
+  ].map(s=>`<div class="sb ${s.cls}"><div class="n">${s.n}</div><div class="l">${s.l}</div></div>`).join('');
+
+  // Tab counters
+  document.getElementById('cnt-approved').textContent = '(' + approved.length + ')';
+  document.getElementById('cnt-review').textContent   = '(' + review.length + ')';
+  document.getElementById('cnt-rejected').textContent = '(' + rejected.length + ')';
+
+  // Must-have
+  const mhList = document.getElementById('mustHaveList');
+  mhList.innerHTML = mh.map(c => {
+    const sigs = (c.confirmedBy||[]).map(s=>
+      `<span class="sig">${s==='qid'?'Q-ID':s==='coords'?'קואורדינטות':'שם'}</span>`
+    ).join('');
+    return `<div class="mhi">
+      <div class="ico">${c.found ? '✅' : c.note ? '⚪' : '❌'}</div>
+      <div class="info">
+        <div class="name">${c.name}</div>
+        <div class="detail">${c.found ? (c.foundAs||'') : c.note||'לא נמצא'}</div>
+        ${sigs ? '<div class="sigs">' + sigs + '</div>' : ''}
+      </div>
+    </div>`;
+  }).join('');
+
+  // Confidence / certainty tier bars
+  const total_approved = approved.length || 1;
+  document.getElementById('confBars').innerHTML = [
+    { cls:'fill-g', lbl:'🔒 מקסימלית (≥80)', cnt: tierMax },
+    { cls:'fill-y', lbl:'✓ גבוהה (55–79)', cnt: tierHigh },
+    { cls:'fill-r', lbl:'⚠️ בדיקה ידנית', cnt: review.length },
+  ].map(b=>`<div class="cr">
+    <div class="lbl" style="width:130px">${b.lbl}</div>
+    <div class="bar"><div class="fill ${b.cls}" style="width:${(b.cnt/total_approved*100).toFixed(1)}%"></div></div>
+    <div class="cnt">${b.cnt}</div>
+  </div>`).join('');
+
+  // Map
+  initMap(approved, review);
+
+  // Tables
+  renderApproved(approved);
+  renderReview(review);
+  renderRejected(rejected);
+}
+
+function initMap(approved, review) {
+  if (map) { map.remove(); }
+  map = L.map('map').setView([31.7, 35.1], 7);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution:'© OpenStreetMap contributors', maxZoom:18
+  }).addTo(map);
+
+  const greenIcon = L.divIcon({className:'',html:'<div style="background:#34d399;border:2px solid #065f46;border-radius:50%;width:12px;height:12px"></div>'});
+  const purpleIcon = L.divIcon({className:'',html:'<div style="background:#a78bfa;border:2px solid #5b21b6;border-radius:50%;width:16px;height:16px;font-size:10px;display:flex;align-items:center;justify-content:center">⭐</div>'});
+  const yellowIcon = L.divIcon({className:'',html:'<div style="background:#fbbf24;border:2px solid #92400e;border-radius:50%;width:11px;height:11px"></div>'});
+
+  for (const r of approved) {
+    if (r.lat==null||r.lng==null) continue;
+    const icon = r.source==='manual' ? purpleIcon : greenIcon;
+    L.marker([r.lat,r.lng],{icon}).addTo(map)
+      .bindPopup(`<b>${r.name||'?'}</b><br>${r.buriedPerson||''}<br><small>${r.city||''} | ${r.source} | ${r.confidenceScore||0}</small>`);
+  }
+  for (const r of review) {
+    if (r.lat==null||r.lng==null) continue;
+    L.marker([r.lat,r.lng],{icon:yellowIcon}).addTo(map)
+      .bindPopup(`<b>⚠️ ${r.name||'?'}</b><br>${r.buriedPerson||''}<br><small>${r.manual_review_reason||''}</small>`);
+  }
+}
+
+function scoreClass(s) {
+  if (s>=70) return 'score-h'; if (s>=45) return 'score-m'; return 'score-l';
+}
+function srcBadge(s) {
+  if (s==='manual') return '<span class="badge badge-manual">⭐ ידני</span>';
+  if (s==='osm')    return '<span class="badge badge-o">OSM</span>';
+  return '<span class="badge badge-w">WD</span>';
+}
+
+let _approvedData = [], _reviewData = [], _rejectedData = [];
+let _tierFilter = 'all';
+
+function tierBadge(score) {
+  if (score >= 80) return '<span class="badge" style="background:#064e3b;color:#6ee7b7;border:1px solid #065f46">🔒 מקסימלית</span>';
+  if (score >= 55) return '<span class="badge" style="background:#1e3a5f;color:#93c5fd;border:1px solid #1d4ed8">✓ גבוהה</span>';
+  return '<span class="badge badge-warn">⚠️ חלקית</span>';
+}
+
+function tierOf(score) {
+  if (score >= 80) return 'max';
+  if (score >= 55) return 'high';
+  return 'low';
+}
+
+function rowBg(score) {
+  if (score >= 80) return 'background:rgba(6,78,59,0.12)';
+  if (score >= 55) return 'background:rgba(30,58,95,0.12)';
+  return '';
+}
+
+function renderApproved(data) {
+  _approvedData = data;
+  buildApproved(data);
+}
+function buildApproved(data) {
+  const tbody = document.getElementById('tbody-approved');
+  const filtered = _tierFilter === 'all' ? data : data.filter(r => tierOf(r.confidenceScore||0) === _tierFilter);
+  if (!filtered.length) { tbody.innerHTML = '<tr><td colspan="9" class="empty">אין רשומות</td></tr>'; return; }
+  tbody.innerHTML = filtered.map((r,i)=>{
+    const sc = r.confidenceScore||0;
+    return `<tr data-source="${r.source||''}" style="${rowBg(sc)}">
+    <td style="color:#64748b">${i+1}</td>
+    <td><b>${r.name||'—'}</b></td>
+    <td style="color:#94a3b8">${r.buriedPerson||'—'}</td>
+    <td>${r.city||'—'}</td>
+    <td>${srcBadge(r.source)}</td>
+    <td>${tierBadge(sc)}</td>
+    <td><span class="score ${scoreClass(sc)}">${sc}</span></td>
+    <td style="color:#64748b;font-size:11px">${r.lat!=null?r.lat.toFixed(4)+'° '+r.lng.toFixed(4)+'°':'—'}</td>
+    <td style="font-size:11px">${r.wikidataId?'<a href="https://www.wikidata.org/wiki/'+r.wikidataId+'" target="_blank">'+r.wikidataId+'</a>':'—'}</td>
+  </tr>`;}).join('');
+}
+
+function filterTier(tier, btn) {
+  _tierFilter = _tierFilter === tier ? 'all' : tier;
+  document.querySelectorAll('#panel-approved .flt').forEach(b=>b.classList.remove('active'));
+  if (_tierFilter !== 'all') btn.classList.add('active');
+  else document.querySelector('#panel-approved .flt').classList.add('active');
+  buildApproved(_approvedData);
+}
+
+function renderReview(data) {
+  _reviewData = data;
+  const tbody = document.getElementById('tbody-review');
+  if (!data.length) { tbody.innerHTML = '<tr><td colspan="7" class="empty">אין רשומות לבדיקה</td></tr>'; return; }
+  tbody.innerHTML = data.map((r,i)=>`<tr>
+    <td style="color:#64748b">${i+1}</td>
+    <td><b>${r.name||'—'}</b></td>
+    <td style="color:#94a3b8">${r.buriedPerson||'—'}</td>
+    <td>${r.city||'—'}</td>
+    <td>${srcBadge(r.source)}</td>
+    <td><span class="score ${scoreClass(r.confidenceScore||0)}">${r.confidenceScore||0}</span></td>
+    <td><span class="rev-reason">${r.manual_review_reason||'—'}</span></td>
+  </tr>`).join('');
+}
+
+function renderRejected(data) {
+  _rejectedData = data;
+  buildRejected(data);
+}
+function buildRejected(data) {
+  const tbody = document.getElementById('tbody-rejected');
+  if (!data.length) { tbody.innerHTML = '<tr><td colspan="4" class="empty">אין נדחות</td></tr>'; return; }
+  tbody.innerHTML = data.map((r,i)=>`<tr>
+    <td style="color:#64748b">${i+1}</td>
+    <td><b>${r.record?.name||'—'}</b></td>
+    <td>${srcBadge(r.record?.source)}</td>
+    <td><span class="rej-reason">${r.reason||'—'}</span></td>
+  </tr>`).join('');
+}
+
+function switchTab(tab) {
+  ['approved','review','rejected'].forEach(t=>{
+    document.getElementById('panel-'+t).classList.toggle('active', t===tab);
+    const el = document.getElementById('tab-'+t);
+    el.className = 'tab' + (t===tab ? ' active-'+t : '');
+  });
+}
+
+function filterSource(tab, src, btn) {
+  sourceFilter[tab] = src;
+  document.querySelectorAll('#panel-' + tab + ' .flt').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  filterTable(tab);
+}
+
+function filterTable(tab) {
+  const search = (document.getElementById('search-'+tab)?.value||'').toLowerCase();
+  const src = sourceFilter[tab] || 'all';
+  if (tab==='approved') {
+    buildApproved(_approvedData.filter(r=>{
+      const matchSrc = src==='all' || r.source===src;
+      const matchTier = _tierFilter==='all' || tierOf(r.confidenceScore||0)===_tierFilter;
+      const matchSearch = !search || (r.name||'').toLowerCase().includes(search) || (r.city||'').toLowerCase().includes(search) || (r.buriedPerson||'').toLowerCase().includes(search);
+      return matchSrc && matchTier && matchSearch;
+    }));
+  } else if (tab==='rejected') {
+    buildRejected(_rejectedData.filter(r=>{
+      const name = (r.record?.name||'').toLowerCase();
+      return !search || name.includes(search) || (r.reason||'').toLowerCase().includes(search);
+    }));
+  } else if (tab==='review') {
+    const tbody = document.getElementById('tbody-review');
+    const rows = Array.from(document.querySelectorAll('#tbody-review tr'));
+    // re-render from data
+    const filtered = _reviewData.filter(r=>
+      !search || (r.name||'').toLowerCase().includes(search) || (r.city||'').toLowerCase().includes(search)
+    );
+    renderReview(filtered);
+  }
+}
+
+loadData();
+</script>
+</body>
+</html>

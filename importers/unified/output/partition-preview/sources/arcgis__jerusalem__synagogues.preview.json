@@ -1,0 +1,988 @@
+[
+  {
+    "id": "arcgis:jerusalem::10",
+    "name": "בי''כ בית אל",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.729848617391642,
+      "longitude": 35.18650022669825
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::14",
+    "name": "בי''כ בית יעקב",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.75731963096983,
+      "longitude": 35.20725045730025
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::16",
+    "name": "בי''כ היכל יוסף",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.775937238745275,
+      "longitude": 35.221152684491365
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::17",
+    "name": "בי''כ נחום",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.787366713043077,
+      "longitude": 35.21994041442757
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::18",
+    "name": "בי''כ ישועת ישראל",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.765177082679774,
+      "longitude": 35.21624549868717
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::23",
+    "name": "בי''כ משכן ישראל",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.828196941453818,
+      "longitude": 35.245235655161444
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::25",
+    "name": "בי''כ נצח אברהם",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.841483050761337,
+      "longitude": 35.250268437080635
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::27",
+    "name": "בי''כ חיי אדם",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.8388322439659,
+      "longitude": 35.23951132265471
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::28",
+    "name": "בי''כ מקדש יעקב",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.836311950569524,
+      "longitude": 35.23527285059191
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::30",
+    "name": "בי''כ נהר המטהר",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.756819681424606,
+      "longitude": 35.19913587956994
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::32",
+    "name": "בי''כ הרמב''ם",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.75246061564313,
+      "longitude": 35.20210591602059
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::33",
+    "name": "בי''כ לעדה האתיופית",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.75307240273792,
+      "longitude": 35.19611545880091
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::34",
+    "name": "בי''כ היכל יעקב",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.753004646381964,
+      "longitude": 35.1939199752953
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::35",
+    "name": "בי''כ רמה",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.757607467080746,
+      "longitude": 35.21012799345694
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::37",
+    "name": "בי''כ הגר''א",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.75962327299733,
+      "longitude": 35.211584174815854
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::38",
+    "name": "בי''כ בית שלמה",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.752261704975414,
+      "longitude": 35.218555962602
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::43",
+    "name": "בי''כ עזרא דבאח",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.787112450215986,
+      "longitude": 35.214014573661615
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::44",
+    "name": "בי''כ סתהון",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.786305739623,
+      "longitude": 35.21280362968865
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::47",
+    "name": "בי''כ יד לשלום",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.79648531852318,
+      "longitude": 35.22416285693616
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::50",
+    "name": "בי''כ זכרון יחיאל",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.797649138540702,
+      "longitude": 35.219090428971164
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::51",
+    "name": "בי''כ שערי ניסים",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.79937912242131,
+      "longitude": 35.2200642251899
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::52",
+    "name": "בי''כ שאגת אריה",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.822776804265985,
+      "longitude": 35.186131497218454
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::53",
+    "name": "בי''כ תפארת יוסף",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.82249028680795,
+      "longitude": 35.18655665304474
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::54",
+    "name": "בי''כ רחמים ודבורה",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.819058779224424,
+      "longitude": 35.19048099218995
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::55",
+    "name": "בי''כ בני הרמה",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.81538458390997,
+      "longitude": 35.19119474029976
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::56",
+    "name": "בי''כ בית אהרון",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.80882454233134,
+      "longitude": 35.19430580437647
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::58",
+    "name": "בי''כ קהילת חורש רמות",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.810060032011787,
+      "longitude": 35.20229109908249
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::60",
+    "name": "בי''כ תפארת רמות",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.811890397834272,
+      "longitude": 35.19931613390128
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::62",
+    "name": "בי''כ ענתבי",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.783350695201058,
+      "longitude": 35.178458953822066
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::63",
+    "name": "בי''כ בית עזריאל",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.790042724454324,
+      "longitude": 35.17326402165438
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::64",
+    "name": "בי''כ עם ר''ם",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.760326049821664,
+      "longitude": 35.189819176651596
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::65",
+    "name": "בי''כ ריטמן",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.76018477501215,
+      "longitude": 35.18234061791705
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::66",
+    "name": "בי''כ פניני דוד",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.772195710677938,
+      "longitude": 35.18321497710976
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::67",
+    "name": "בי''כ מדרש שאול",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.76218062042688,
+      "longitude": 35.18833762307268
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::69",
+    "name": "בי''כ קהילת בני שמואל",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.77262472599009,
+      "longitude": 35.18438899474278
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::70",
+    "name": "בי''כ בית שמואל",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.75779522777286,
+      "longitude": 35.16335734336821
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::74",
+    "name": "בי''כ חב''ד גל עד",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.765206933089207,
+      "longitude": 35.172363633363865
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::76",
+    "name": "בי''כ אבן העזר",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.763202152551838,
+      "longitude": 35.17033692479289
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::78",
+    "name": "בי''כ הרב דוד בן שמעון",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.776355549459755,
+      "longitude": 35.231441476099874
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::79",
+    "name": "בי''כ שטיבלך",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.761045010905917,
+      "longitude": 35.209756059295145
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::92",
+    "name": "בי''כ בית יצחק",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.82067244915293,
+      "longitude": 35.24898586901916
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::108",
+    "name": "בי''כ נועם פת",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.749146692277222,
+      "longitude": 35.202017981871855
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::110",
+    "name": "בי''כ זכור לאברהם",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.749955698003784,
+      "longitude": 35.180124937301045
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::141",
+    "name": "בי''כ הגדול תפארת ישראל",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.79100125706011,
+      "longitude": 35.21020000824371
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::146",
+    "name": "בי''כ שומרי החומות",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.777239234265085,
+      "longitude": 35.23366053636398
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::147",
+    "name": "בי''כ עת לחנניה",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.777795944132546,
+      "longitude": 35.22977865134412
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::148",
+    "name": "בי''כ ניסן ב''ק הרוס",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.77537257816049,
+      "longitude": 35.23234639597532
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::150",
+    "name": "בי''כ חב''ד",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.775068661494934,
+      "longitude": 35.23087764741531
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::152",
+    "name": "בי''כ הקראים",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.775371763381784,
+      "longitude": 35.23216285673742
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::153",
+    "name": "בי''כ גולדשטיין",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.769933472734333,
+      "longitude": 35.19790641245293
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::154",
+    "name": "בי''כ בית אל מקובלים",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.77491379391103,
+      "longitude": 35.23156156004616
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::155",
+    "name": "בי''כ תקוותנו",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.76792095709705,
+      "longitude": 35.160933885466484
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::158",
+    "name": "בי''כ מנחם ציון",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.775756857161703,
+      "longitude": 35.23145729041415
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::160",
+    "name": "בי''כ חסידי ברסלב",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.774282040180616,
+      "longitude": 35.23291205604425
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::163",
+    "name": "בי''כ חורבת הרב יהודה החסיד",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.775364328718428,
+      "longitude": 35.23120308159495
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::169",
+    "name": "בי''כ אור החיים",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.775147693776777,
+      "longitude": 35.23025308167393
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::281",
+    "name": "בי''כ כתר תורה",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.753198681401386,
+      "longitude": 35.2019111448108
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  },
+  {
+    "id": "arcgis:jerusalem::356",
+    "name": "בי''כ אדמונד ספרא",
+    "type": "synagogue",
+    "cityId": "ירושלים",
+    "address": "ירושלים",
+    "location": {
+      "latitude": 31.810341199699984,
+      "longitude": 35.22191230404314
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:jerusalem",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisviewer.jerusalem.muni.il/arcgis/rest/services/BaseLayers/MapServer/66"
+    }
+  }
+]

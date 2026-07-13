@@ -1,0 +1,30 @@
+[
+  {
+    "id": "rc-mikvah-rosh-haayin-h1joer6o",
+    "name": "מקווה קרל וגרטי קורי",
+    "type": "mikveh",
+    "cityId": "ראש העין",
+    "address": "17 גרטי וקרל קורי , ראש העין, Israel",
+    "location": {
+      "latitude": 32.084076,
+      "longitude": 34.969519
+    },
+    "source": "seed",
+    "sourceUrl": "https://mdrh.org.il/directory-mikvah/listing/בקרוב-מקווה-גרטי-וקרל-קורי/",
+    "sourceName": "המועצה הדתית ראש העין",
+    "extra": {
+      "council": "המועצה הדתית ראש העין",
+      "sourceVariant": "markers",
+      "locationPrecision": "exact",
+      "newnessConfidence": 0.8,
+      "cityInGov": true,
+      "classification": "new_record",
+      "provenance": {
+        "adapterId": "sabaiapps-mikvah-v1",
+        "sourceRecordId": "rc-mikvah-rosh-haayin-h1joer6o",
+        "sourceUrl": "https://mdrh.org.il/directory-mikvah/listing/בקרוב-מקווה-גרטי-וקרל-קורי/",
+        "fetchedAt": "2026-06-19"
+      }
+    }
+  }
+]

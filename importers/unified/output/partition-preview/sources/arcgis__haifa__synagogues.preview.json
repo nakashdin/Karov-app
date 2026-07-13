@@ -1,0 +1,4467 @@
+[
+  {
+    "id": "arcgis:haifa::2",
+    "name": "אביר יעקב",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "ערד 35",
+    "location": {
+      "latitude": 32.792919103256324,
+      "longitude": 35.020245263127336
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-2911572",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::3",
+    "name": "אברבנאל",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "אברבנאל 36",
+    "location": {
+      "latitude": 32.83170389906476,
+      "longitude": 35.05727149590725
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-8437062",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::4",
+    "name": "אגודת ישראל",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "ארלוזורוב 10",
+    "location": {
+      "latitude": 32.80609140585821,
+      "longitude": 35.000607862357526
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "8620502, 8620012",
+    "nusach": "א"
+  },
+  {
+    "id": "arcgis:haifa::5",
+    "name": "אהבת תורה- דחסידי ויז'ניץ",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "הרצל 60",
+    "location": {
+      "latitude": 32.80651989417166,
+      "longitude": 35.00177741943899
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "053-3140313",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::6",
+    "name": "אהל אברהם",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "קדושי השואה",
+    "location": {
+      "latitude": 32.84151273719905,
+      "longitude": 35.069516535570735
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-9406226",
+    "nusach": "עדה אתיופית"
+  },
+  {
+    "id": "arcgis:haifa::7",
+    "name": "אהל אהרון",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "קרית הטכניון",
+    "location": {
+      "latitude": 32.781438457070706,
+      "longitude": 35.02009594048691
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-2063245, 050-5214118",
+    "nusach": "ס,א"
+  },
+  {
+    "id": "arcgis:haifa::9",
+    "name": "אהל יעקב",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "נפתלי אימבר 16 \\ סוקולוב 21",
+    "location": {
+      "latitude": 32.8085301064341,
+      "longitude": 35.0033168192732
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-2601709",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::10",
+    "name": "אהל יעקב בישיבת בעלז",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "התשעה 27",
+    "location": {
+      "latitude": 32.790049937228765,
+      "longitude": 35.023200884548885
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::12",
+    "name": "אהל משה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "גדליהו 1",
+    "location": {
+      "latitude": 32.78293427085769,
+      "longitude": 35.0262721659862
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-6630363",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::13",
+    "name": "אהל משה, שאץ-ויזניץ",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "הרצל 60",
+    "location": {
+      "latitude": 32.80651989417166,
+      "longitude": 35.00177741943899
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "053-3166263",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::15",
+    "name": "אוהב ישראל",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "עבאס 14",
+    "location": {
+      "latitude": 32.815683124156315,
+      "longitude": 34.989434690245574
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-7355890",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::16",
+    "name": "אוהל יוסף",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "בעל התניא 5",
+    "location": {
+      "latitude": 32.8384686244579,
+      "longitude": 35.069420310798854
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-8619893",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::17",
+    "name": "אוהל יצחק (במתיבתא)",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "מיכאל 20",
+    "location": {
+      "latitude": 32.8041991781027,
+      "longitude": 35.00220399362123
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::18",
+    "name": "אוהל תורה (הרב אסולין)",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "השילוח 19",
+    "location": {
+      "latitude": 32.802652217424,
+      "longitude": 35.002094215059735
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-7648406",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::19",
+    "name": "אור אבנר",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "אח\"י אילת 55",
+    "location": {
+      "latitude": 32.8185971195445,
+      "longitude": 35.074821062586494
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-6502083",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::22",
+    "name": "אור התורה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "ישראל לבנון 8",
+    "location": {
+      "latitude": 32.84008765520704,
+      "longitude": 35.07354292849916
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "053-7548517",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::23",
+    "name": "אור ישראל",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "קבוץ גלויות 28",
+    "location": {
+      "latitude": 32.81067769346078,
+      "longitude": 35.00405828156443
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-3485523",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::24",
+    "name": "אורח חיים",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "צייטלין 45",
+    "location": {
+      "latitude": 32.81746811709417,
+      "longitude": 35.06786899144784
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-2662117",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::25",
+    "name": "איגוד אברכים ובני תורה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "השילוח 6",
+    "location": {
+      "latitude": 32.80397834365407,
+      "longitude": 35.00025266110724
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "053-3199926",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::27",
+    "name": "אליהו הנביא",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "גוש חלב 5",
+    "location": {
+      "latitude": 32.809483192613946,
+      "longitude": 35.000100201505866
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "055-9855260",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::28",
+    "name": "אליקים ‎(בבי\"ס) ע\"י חנוך בן חיים",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "שד' הרא\"ה 16",
+    "location": {
+      "latitude": 32.834288550749385,
+      "longitude": 35.067241302314024
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-3746699",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::29",
+    "name": "ארם צובא",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "סירקין 29",
+    "location": {
+      "latitude": 32.80920556218002,
+      "longitude": 35.00143103482419
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-5603592",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::30",
+    "name": "באבא סאלי – רינת אהרן",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "דרך יד לבנים 210/28",
+    "location": {
+      "latitude": 32.79666425252467,
+      "longitude": 35.006822176548845
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-6563159",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::31",
+    "name": "בבי\"ח \"בני ציון\"",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "גולומב 47",
+    "location": {
+      "latitude": 32.80539633791564,
+      "longitude": 34.99339510311648
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-7646716",
+    "nusach": "עמ,ס,א"
+  },
+  {
+    "id": "arcgis:haifa::32",
+    "name": "בבי\"ח \"כרמל\"",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "רחוב הרופא 30",
+    "location": {
+      "latitude": 32.785152429067615,
+      "longitude": 34.9788059208394
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-8441020",
+    "nusach": "עמ,ס,א"
+  },
+  {
+    "id": "arcgis:haifa::33",
+    "name": "בבי\"ח \"פלימן\"",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "זלמן שניאור",
+    "location": {
+      "latitude": 32.781036943685464,
+      "longitude": 35.00128147702041
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "עמ,ס,א"
+  },
+  {
+    "id": "arcgis:haifa::34",
+    "name": "בבית אבות הספרדי",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "גדליהו 1",
+    "location": {
+      "latitude": 32.78293427085769,
+      "longitude": 35.0262721659862
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-2794970",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::35",
+    "name": "בבית אבות כרמל",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "אידר 12",
+    "location": {
+      "latitude": 32.78046326114522,
+      "longitude": 34.99031709374869
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "עמ,ס,א"
+  },
+  {
+    "id": "arcgis:haifa::36",
+    "name": "בבית דינה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "אדם הכהן 3",
+    "location": {
+      "latitude": 32.78139907184226,
+      "longitude": 35.017390955727265
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "עמ,ס,א"
+  },
+  {
+    "id": "arcgis:haifa::37",
+    "name": "בבית מלון דן כרמל",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "שד' הנשיא 87",
+    "location": {
+      "latitude": 32.80979349471436,
+      "longitude": 34.985034246336994
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-8571968",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::38",
+    "name": "בבית מלון דן פנורמה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "שד' הנשיא 107",
+    "location": {
+      "latitude": 32.80650367754265,
+      "longitude": 34.98757238142083
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-9371339",
+    "nusach": "עמ,ס,א"
+  },
+  {
+    "id": "arcgis:haifa::39",
+    "name": "ביאלה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "מיכאל 1",
+    "location": {
+      "latitude": 32.80622819947431,
+      "longitude": 35.001000360901536
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-7646680",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::40",
+    "name": "ביהכנ\"ס ע\"ש יהודה מעטי",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "הירדן 19",
+    "location": {
+      "latitude": 32.80165696592664,
+      "longitude": 35.008916763678535
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "עמ,ס"
+  },
+  {
+    "id": "arcgis:haifa::41",
+    "name": "ביכנ\"ס בי\"ס צרניחובסקי",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "טשרניחובסקי 34 (בבי\"ס)",
+    "location": {
+      "latitude": 32.82112334008191,
+      "longitude": 34.9744691579744
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-9191936",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::42",
+    "name": "ביכנ\"ס קהל חסידים",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "מיכאל 1",
+    "location": {
+      "latitude": 32.80622819947431,
+      "longitude": 35.001000360901536
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-7101616",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::43",
+    "name": "ביקור חולים",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "בי\"ח רמב\"ם, ת\"ד 9602",
+    "location": {
+      "latitude": 32.83283460328078,
+      "longitude": 34.98568839897632
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "עמ,ס,א"
+  },
+  {
+    "id": "arcgis:haifa::44",
+    "name": "בית אברהם",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "אברבנאל 54",
+    "location": {
+      "latitude": 32.833444152046226,
+      "longitude": 35.054906767893016
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-7224454",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::45",
+    "name": "בית אברהם יצחק",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "ביל\"ו 1",
+    "location": {
+      "latitude": 32.80595781078655,
+      "longitude": 35.00196340916637
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-7658023",
+    "nusach": "א"
+  },
+  {
+    "id": "arcgis:haifa::46",
+    "name": "בית אל",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "הראשונים 108",
+    "location": {
+      "latitude": 32.82906421644023,
+      "longitude": 35.06902987878797
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-4209715, 053-7519152",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::47",
+    "name": "בית אל",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "משה חיים שפירא 16",
+    "location": {
+      "latitude": 32.83822480294425,
+      "longitude": 35.06858307865681
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "053-2210060",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::48",
+    "name": "בית יצחק - אהל חדוה/לידי סולומון יעקב",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "שד' דגניה 69/3",
+    "location": {
+      "latitude": 32.83228270339664,
+      "longitude": 35.052896770355126
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::49",
+    "name": "בית כנסת החדש",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "הרצוג 7",
+    "location": {
+      "latitude": 32.80650972204467,
+      "longitude": 35.00162080888702
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-7695086",
+    "nusach": "א"
+  },
+  {
+    "id": "arcgis:haifa::50",
+    "name": "בית כנסת עידן",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "פל ים 8",
+    "location": {
+      "latitude": 32.81524420244377,
+      "longitude": 35.00049802203808
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-6265735",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::51",
+    "name": "בית לוי  - מגדל חיפה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "הרצל 63",
+    "location": {
+      "latitude": 32.80779863673815,
+      "longitude": 35.001087434191376
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-4143905",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::52",
+    "name": "בית מדרש כולל קצות החושן",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "גאולה 1",
+    "location": {
+      "latitude": 32.80455128481098,
+      "longitude": 34.99871355694672
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-7601290",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::53",
+    "name": "בית מרגלית",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "ר' עקיבא 20",
+    "location": {
+      "latitude": 32.80258065251815,
+      "longitude": 34.99905270195063
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-4453343",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::54",
+    "name": "בית נחמן",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "נתיב אליעזר 5",
+    "location": {
+      "latitude": 32.79966083776366,
+      "longitude": 35.00341599356885
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-4151955",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::55",
+    "name": "בית רבנו",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "פיק\"א 8",
+    "location": {
+      "latitude": 32.7853078186726,
+      "longitude": 34.98781222370921
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::56",
+    "name": "בית רבנו ברסלב",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "קדושי השואה 13",
+    "location": {
+      "latitude": 32.84111104338557,
+      "longitude": 35.07053186614997
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-9406226",
+    "nusach": "א"
+  },
+  {
+    "id": "arcgis:haifa::57",
+    "name": "בית תפילה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "שביל האמונה 3",
+    "location": {
+      "latitude": 32.83097709958176,
+      "longitude": 35.06431236141796
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::58",
+    "name": "ביתר אמונה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "תרייג 1",
+    "location": {
+      "latitude": 32.83067789937105,
+      "longitude": 35.06461657275185
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "א"
+  },
+  {
+    "id": "arcgis:haifa::59",
+    "name": "בני היכלא",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "מקור ברוך 2",
+    "location": {
+      "latitude": 32.79853788651192,
+      "longitude": 35.00247303807258
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-7136136",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::60",
+    "name": "בני תורה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "ארלוזרוב 11",
+    "location": {
+      "latitude": 32.806349853978254,
+      "longitude": 35.00089939858333
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "04-8642824",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::61",
+    "name": "ברסלב",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "מיכאל 27",
+    "location": {
+      "latitude": 32.80406903829695,
+      "longitude": 35.00263531258303
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-7642148",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::62",
+    "name": "גאולה - היכל מאיר",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "בצלאל 5",
+    "location": {
+      "latitude": 32.80357559532081,
+      "longitude": 34.999839679980404
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "053-3109447",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::63",
+    "name": "גבורת ישראל",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "שביל נילי 8",
+    "location": {
+      "latitude": 32.824219300778104,
+      "longitude": 34.97973416086184
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-6210763",
+    "nusach": "ס,א"
+  },
+  {
+    "id": "arcgis:haifa::64",
+    "name": "גור צעירים",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "הרצל 73",
+    "location": {
+      "latitude": 32.80673192575099,
+      "longitude": 35.00197179663352
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-8529934",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::65",
+    "name": "גרצוולף -ביכנ\"ס מאור שאנן",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "הגליל 19",
+    "location": {
+      "latitude": 32.79531994732621,
+      "longitude": 35.01223030895228
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::66",
+    "name": "דון יצחק אברבנאל",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "אברבנאל 67",
+    "location": {
+      "latitude": 32.831353847296754,
+      "longitude": 35.057027925528175
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-4444969",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::67",
+    "name": "האמונה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "שביל האמונה  3 א'",
+    "location": {
+      "latitude": 32.83097709958176,
+      "longitude": 35.06431236141796
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-8609246",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::68",
+    "name": "הבית של חכם סאסי",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "הגליל 49",
+    "location": {
+      "latitude": 32.79278532120248,
+      "longitude": 35.01563345139547
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-9853469",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::70",
+    "name": "הדר עליון",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "מדרגות טוביה דוניה 7 ,",
+    "location": {
+      "latitude": 32.80455967971547,
+      "longitude": 34.99363810237292
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-3240243",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::71",
+    "name": "הוד הכרמל - ‎היכל שושנה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "חוף השנהב 43",
+    "location": {
+      "latitude": 32.76691759745911,
+      "longitude": 35.00052032753983
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-3202400",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::73",
+    "name": "היכל אברהם ומכלה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "מימון 21",
+    "location": {
+      "latitude": 32.78488891510101,
+      "longitude": 35.02314463231537
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-2080143",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::74",
+    "name": "היכל אברהם משה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "אלנבי 10 (פינת הבנקים, המגינים 33), ת\"ד 5198",
+    "location": {
+      "latitude": 32.81882290967481,
+      "longitude": 34.99659749497129
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-7690656",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::75",
+    "name": "היכל אוהבי תורתך",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "דולצ'ין 3",
+    "location": {
+      "latitude": 32.79150053406013,
+      "longitude": 35.01879532175921
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-2812657, 052-2483093",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::78",
+    "name": "היכל אליהו הנביא (ספרדי)",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "סטרומה 5",
+    "location": {
+      "latitude": 32.822819330663854,
+      "longitude": 34.9624389379163
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-5488388",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::80",
+    "name": "היכל בנימין (אור וישועה)",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "חניתה 96 (פינת טרומפלדור)",
+    "location": {
+      "latitude": 32.78595786929833,
+      "longitude": 35.01731493871083
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-3767002",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::81",
+    "name": "היכל בנימין זאב",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "הרופא 30 א'",
+    "location": {
+      "latitude": 32.785152429067615,
+      "longitude": 34.9788059208394
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-2613189, 054-4995581",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::82",
+    "name": "היכל דוד בית יוסף עטרת יצחק",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "מולדת 10",
+    "location": {
+      "latitude": 32.83827827623625,
+      "longitude": 35.070089973301236
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::83",
+    "name": "היכל התורה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "מקור ברוך 2",
+    "location": {
+      "latitude": 32.79853788651192,
+      "longitude": 35.00247303807258
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-7435411",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::84",
+    "name": "היכל זוהרה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "חנה סנש 23",
+    "location": {
+      "latitude": 32.80088581451814,
+      "longitude": 34.99723562030095
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-4331926",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::85",
+    "name": "היכל חיים חביב",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "דרך אלנבי 126",
+    "location": {
+      "latitude": 32.82432849960448,
+      "longitude": 34.979457909213565
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-3777130",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::88",
+    "name": "היכל נתנאל",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "הרצל 43",
+    "location": {
+      "latitude": 32.80936920393625,
+      "longitude": 34.99931887073139
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-2614007",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::89",
+    "name": "היכל עוד יוסף חי",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "אנקווה 5",
+    "location": {
+      "latitude": 32.81836386440906,
+      "longitude": 34.95925696275703
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-9252587",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::90",
+    "name": "היכל עמרם",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "החשמונאים 6",
+    "location": {
+      "latitude": 32.80510857862557,
+      "longitude": 34.99193731007749
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-8480590",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::91",
+    "name": "היכל קדושים",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "ההגה 7",
+    "location": {
+      "latitude": 32.82675723082997,
+      "longitude": 34.963117946144436
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "058-5544125",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::92",
+    "name": "היכל רג'ינה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "חסן שוקרי 4",
+    "location": {
+      "latitude": 32.814272655257646,
+      "longitude": 34.99765368196234
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::94",
+    "name": "היכל שלמה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "תורה ועבודה 11",
+    "location": {
+      "latitude": 32.83280660498965,
+      "longitude": 35.0671697403516
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-3995908",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::96",
+    "name": "היכל שלמה עובד",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "מנדל זינגר 21, סביוני דניה",
+    "location": {
+      "latitude": 32.76744884476671,
+      "longitude": 35.01450123198901
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-8115334",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::97",
+    "name": "היכל שמואל",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "דרך יד לבנים 97 (בבי\"ס)",
+    "location": {
+      "latitude": 32.79398783471804,
+      "longitude": 35.01924995616143
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-7690656",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::98",
+    "name": "היכל שמשון",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "נתיב חן 27",
+    "location": {
+      "latitude": 32.796005951614276,
+      "longitude": 35.01258113657277
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "8223033, 8224644",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::99",
+    "name": "היכל שרגא בבי\"ס יבנה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "אליעזר אלתר 34",
+    "location": {
+      "latitude": 32.77363299953794,
+      "longitude": 35.01246008207372
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-3794800",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::100",
+    "name": "הכללי לעדה א'",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "כספי 11",
+    "location": {
+      "latitude": 32.832549631645705,
+      "longitude": 34.97936177956931
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-7246264",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::101",
+    "name": "הכללי לעדה ס'",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "יונתן 5",
+    "location": {
+      "latitude": 32.83317056321695,
+      "longitude": 34.97857723887183
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "055-9687620",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::102",
+    "name": "המאיר לארץ",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "השילוח 23",
+    "location": {
+      "latitude": 32.802235544655716,
+      "longitude": 35.002247836740324
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-8461710",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::103",
+    "name": "המרכזי בהר הכרמל",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "דרך הים 12 ת\"ד 6057",
+    "location": {
+      "latitude": 32.80482739162161,
+      "longitude": 34.985889067528475
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "8377294 , 054-4280934",
+    "nusach": "עמ,ס"
+  },
+  {
+    "id": "arcgis:haifa::104",
+    "name": "המרכזי ובימ\"ד בעלז",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "הרצוג  5",
+    "location": {
+      "latitude": 32.80670346126396,
+      "longitude": 35.001425992298984
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-8597267",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::105",
+    "name": "המרכזי ורדיה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "ורדיה 24",
+    "location": {
+      "latitude": 32.79458543472217,
+      "longitude": 34.99844953976808
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-8480590",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::106",
+    "name": "המרכזי ק' חיים",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "הראשונים 55",
+    "location": {
+      "latitude": 32.82510549535618,
+      "longitude": 35.06701459818803
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "8722828",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::108",
+    "name": "המרכזי קרית אליהו",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "תל אביב 37-39",
+    "location": {
+      "latitude": 32.82617712475342,
+      "longitude": 34.98453187901308
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-6644770",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::109",
+    "name": "המשמרת הצעירה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "משה חיים שפירא 15",
+    "location": {
+      "latitude": 32.83801180595936,
+      "longitude": 35.067819824813505
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-7887336",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::110",
+    "name": "הספרדי באחוזה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "אידר 25 ת\"ד 7176",
+    "location": {
+      "latitude": 32.77947880708123,
+      "longitude": 34.99154449446387
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-3985578",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::111",
+    "name": "הפוהמ\"ז האשכנזי",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "משה חיים שפירא 20",
+    "location": {
+      "latitude": 32.83924426596492,
+      "longitude": 35.069048147040476
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-2263500",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::112",
+    "name": "הפועל המזרחי",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "רודנר 40",
+    "location": {
+      "latitude": 32.826710026998775,
+      "longitude": 34.98506791932981
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-6644770",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::113",
+    "name": "הרב יוסף חיים",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "המלך דוד 22",
+    "location": {
+      "latitude": 32.809225357788215,
+      "longitude": 34.96020212241462
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-4386071",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::114",
+    "name": "הרב צירלזון",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "המלך דוד 24",
+    "location": {
+      "latitude": 32.809536616948165,
+      "longitude": 34.95983033525291
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-7691653",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::115",
+    "name": "הרמה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "קדושי השואה 13",
+    "location": {
+      "latitude": 32.84111104338557,
+      "longitude": 35.07053186614997
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-9406226",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::116",
+    "name": "הרשב\"י - היכל רפאל",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "מ\"ח שפירא 20",
+    "location": {
+      "latitude": 32.83924426596492,
+      "longitude": 35.069048147040476
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-2823649",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::118",
+    "name": "זיו ישראל - מנין אברכים שע\"י קהילת נחלת הלויים",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "רחבת בן ארצי 27",
+    "location": {
+      "latitude": 32.78458163972315,
+      "longitude": 35.01445736756831
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-F1477634767",
+    "nusach": "א"
+  },
+  {
+    "id": "arcgis:haifa::119",
+    "name": "זכרון יעקב",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "גאולה 3 (למכתבים גאולה 20)",
+    "location": {
+      "latitude": 32.80428718684423,
+      "longitude": 34.99904781743983
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-7671617",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::120",
+    "name": "זכרון לאברהם",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "מיכאל 37",
+    "location": {
+      "latitude": 32.80355306971262,
+      "longitude": 35.00290265045704
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-2252644",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::121",
+    "name": "חב\"ד",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "פרויד 4",
+    "location": {
+      "latitude": 32.7830864841831,
+      "longitude": 34.98692170931573
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "057-8162683",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::122",
+    "name": "חב\"ד",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "העליה השניה 14",
+    "location": {
+      "latitude": 32.832477169134364,
+      "longitude": 34.98368414971949
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::123",
+    "name": "חב\"ד",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "הקלעים 4",
+    "location": {
+      "latitude": 32.83168461192949,
+      "longitude": 34.97595987921253
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::125",
+    "name": "חב\"ד",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "ארלוזרוב 6",
+    "location": {
+      "latitude": 32.80690371089462,
+      "longitude": 35.00053468507195
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "058-6111770",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::126",
+    "name": "חב\"ד",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "יהושע 3",
+    "location": {
+      "latitude": 32.80664199750853,
+      "longitude": 35.00050858963353
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-6279467",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::127",
+    "name": "חב\"ד",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "טשרניחובסקי 69",
+    "location": {
+      "latitude": 32.82460895685488,
+      "longitude": 34.97048007914111
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::128",
+    "name": "חב\"ד",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "בניין קדמן חנקין  28",
+    "location": {
+      "latitude": 32.782446528442506,
+      "longitude": 35.01011502302742
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::129",
+    "name": "חב\"ד",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "פרישמן 1",
+    "location": {
+      "latitude": 32.806573057742675,
+      "longitude": 35.00037238919441
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "058-6111770",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::130",
+    "name": "חב\"ד  רמת הנשיא",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "שונית 12",
+    "location": {
+      "latitude": 32.8124390650395,
+      "longitude": 34.9610790595731
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "058-4770999",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::131",
+    "name": "חב\"ד למסור ידנית לחב\"ד ברח' הרצל",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "חנקין 58",
+    "location": {
+      "latitude": 32.78247002304151,
+      "longitude": 35.007544944304286
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-7825081",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::132",
+    "name": "חב\"ד לעולים",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "הרצוג 3",
+    "location": {
+      "latitude": 32.806857796577525,
+      "longitude": 35.001244715622214
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-4791171",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::133",
+    "name": "חיי שרה טבנקין",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "טבנקין 18",
+    "location": {
+      "latitude": 32.7973566734404,
+      "longitude": 35.009967227450886
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-2144168",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::134",
+    "name": "חכם אברהם",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "המלך עוזיהו 6",
+    "location": {
+      "latitude": 32.81037996076774,
+      "longitude": 34.95991867915104
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-6581324",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::135",
+    "name": "חכמת אליעזר",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "קניאל 7",
+    "location": {
+      "latitude": 32.797915408978895,
+      "longitude": 35.00105633609971
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-7627007",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::136",
+    "name": "חסד לאברהם",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "קליבנוב 27",
+    "location": {
+      "latitude": 32.79234549745881,
+      "longitude": 35.01080438024078
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-2820128",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::137",
+    "name": "חסידי באבוב",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "מיכאל  41",
+    "location": {
+      "latitude": 32.80299037397207,
+      "longitude": 35.00315823934614
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-7108686",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::138",
+    "name": "חסידי גור",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "ארלוזורוב 27",
+    "location": {
+      "latitude": 32.80456885953223,
+      "longitude": 34.99920315939739
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "053-3123030",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::139",
+    "name": "חסידי נדבורנא",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "מיכאל 17",
+    "location": {
+      "latitude": 32.804785342951156,
+      "longitude": 35.002132625889935
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-7181601",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::140",
+    "name": "חסידי סדיגורה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "חרמון 31",
+    "location": {
+      "latitude": 32.80332778365155,
+      "longitude": 35.002260311049056
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::141",
+    "name": "חסידי צאנז",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "מיכאל 32א",
+    "location": {
+      "latitude": 32.80331134346653,
+      "longitude": 35.002744860557996
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-8531096",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::143",
+    "name": "חסידי ראדזין",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "גאולה 22",
+    "location": {
+      "latitude": 32.802693932977256,
+      "longitude": 34.999344875839476
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "058-3271212",
+    "nusach": "א"
+  },
+  {
+    "id": "arcgis:haifa::144",
+    "name": "יבנה - נצח ישראל",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "ר' עקיבא 40 (בביה\"ס)",
+    "location": {
+      "latitude": 32.80379619527802,
+      "longitude": 34.9973920126822
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-8428944",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::145",
+    "name": "יגדיל תורה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "ביל\"ו 7",
+    "location": {
+      "latitude": 32.80630167089116,
+      "longitude": 35.00260581908309
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "053-15289132",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::146",
+    "name": "יגל יעקב",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "אבן עזרא 14",
+    "location": {
+      "latitude": 32.81157074046734,
+      "longitude": 34.99354452405694
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "8624613  8620231",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::147",
+    "name": "יד לאחים  (חב\"ד)",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "בר כוכבא 11",
+    "location": {
+      "latitude": 32.80455188750409,
+      "longitude": 35.001631279209576
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::148",
+    "name": "יוסף ה' עליכם",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "מקור ברוך 20 (באולם הסמינר)",
+    "location": {
+      "latitude": 32.79791440354288,
+      "longitude": 35.00333707723635
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-4155157",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::149",
+    "name": "יוצאי בבל",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "המלך דוד 24",
+    "location": {
+      "latitude": 32.809536616948165,
+      "longitude": 34.95983033525291
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-2618739",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::150",
+    "name": "יחד שבטי ישראל",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "חטיבת כרמלי 46 א'",
+    "location": {
+      "latitude": 32.79466862998988,
+      "longitude": 35.01970568005798
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "04-8234139",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::151",
+    "name": "יחד שבטי ישראל (ע\"ש אלי כהן)",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "דרך יד לבנים 57 (במדרגות)",
+    "location": {
+      "latitude": 32.797484692166506,
+      "longitude": 35.0152838109239
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::152",
+    "name": "יחווה דעת",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "הים התיכון 2",
+    "location": {
+      "latitude": 32.83629958291166,
+      "longitude": 35.066580705133866
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-4614113",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::153",
+    "name": "יצחק עבאדי, עבור  ביכנ\"ס  עולי סוריה והלבנון",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "הרב אוחנה 35",
+    "location": {
+      "latitude": 32.810136514482444,
+      "longitude": 35.00313551519645
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-2686614",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::154",
+    "name": "ישורון",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "חפציבה 26",
+    "location": {
+      "latitude": 32.834224217212444,
+      "longitude": 35.058665838826144
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-8437062",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::156",
+    "name": "ישראל יאיר",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "אהוד 18",
+    "location": {
+      "latitude": 32.7917115513594,
+      "longitude": 34.9897990806149
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-6812578",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::157",
+    "name": "כנסת ישראל",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "רש\"י 1",
+    "location": {
+      "latitude": 32.80502857455099,
+      "longitude": 34.996164080693596
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-7134955",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::161",
+    "name": "לברי מרק",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "מרק לברי 17",
+    "location": {
+      "latitude": 32.801049353294346,
+      "longitude": 35.00106948732444
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-5770395",
+    "nusach": "א"
+  },
+  {
+    "id": "arcgis:haifa::162",
+    "name": "לגעת ברוח - תנופה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "גלבוע 43 - שלום עליכם 9",
+    "location": {
+      "latitude": 32.782574824328464,
+      "longitude": 35.015948239448036
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-8575933",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::163",
+    "name": "לעדה האשכנזית",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "ברנר 15",
+    "location": {
+      "latitude": 32.780282183756135,
+      "longitude": 35.00676851568349
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-7631679",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::164",
+    "name": "לעדות המזרח",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "ברנר 15, ת\"ד 8345",
+    "location": {
+      "latitude": 32.780282183756135,
+      "longitude": 35.00676851568349
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-6245146",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::165",
+    "name": "לשם שמים לידי דנינו שמעון",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "דרך יד לבנים 202/19",
+    "location": {
+      "latitude": 32.79795449700019,
+      "longitude": 35.00694402004841
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::166",
+    "name": "מאור יהודה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "בליטנטל 13",
+    "location": {
+      "latitude": 32.77679077651293,
+      "longitude": 35.00210984824679
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::167",
+    "name": "מאור יצחק",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "יואב 17",
+    "location": {
+      "latitude": 32.8287637696939,
+      "longitude": 34.975906910843854
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-2415209",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::168",
+    "name": "מאור שאנן",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "התיכון 39 (מעל א' הספורט)",
+    "location": {
+      "latitude": 32.790481687831196,
+      "longitude": 35.0162418962629
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-2257404",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::170",
+    "name": "מגדל התורה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "הגליל 79",
+    "location": {
+      "latitude": 32.78998366182599,
+      "longitude": 35.018888038126384
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-8595250",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::171",
+    "name": "מגדלי אלישע (חגים בלבד)",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "יאיר כץ 12",
+    "location": {
+      "latitude": 32.800963738170786,
+      "longitude": 34.99245035057871
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "8256366, 054-9996943",
+    "nusach": "עמ,ס,א"
+  },
+  {
+    "id": "arcgis:haifa::172",
+    "name": "מגן אברהם",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "מסדה 8 (בבי\"ס בסמ\"ת)",
+    "location": {
+      "latitude": 32.80910701699705,
+      "longitude": 34.994598759408255
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::173",
+    "name": "מגן אברהם",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "הרצל 80",
+    "location": {
+      "latitude": 32.80478509873033,
+      "longitude": 35.003044116232246
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-2794970",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::175",
+    "name": "מוריה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "הירדן  52",
+    "location": {
+      "latitude": 32.79970165405466,
+      "longitude": 35.011539305353374
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-6848223",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::176",
+    "name": "מורשה - מגן אברהם",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "השילוח 6",
+    "location": {
+      "latitude": 32.80397834365407,
+      "longitude": 35.00025266110724
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-4125366",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::178",
+    "name": "מנין בית  האבות הספרדי  לשעבר",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "הגליל 100",
+    "location": {
+      "latitude": 32.78717630233088,
+      "longitude": 35.020461785292184
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "053-7548463",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::179",
+    "name": "מנין נוער",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "התיכון 39 (מרכז ת' דתי)",
+    "location": {
+      "latitude": 32.790481687831196,
+      "longitude": 35.0162418962629
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-2265644",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::180",
+    "name": "מנין קהילתי האקדמית שאנן",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "הים התיכון 7",
+    "location": {
+      "latitude": 32.83583519219213,
+      "longitude": 35.069206943232686
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-4039909",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::181",
+    "name": "מעונות גאולה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "השילוח 27",
+    "location": {
+      "latitude": 32.801967190612864,
+      "longitude": 35.002409020099115
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-6752014",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::183",
+    "name": "מקור ברוך - סערט ויזניץ",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "מקור ברוך 5",
+    "location": {
+      "latitude": 32.79920218065526,
+      "longitude": 35.00371830974665
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-8452190",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::184",
+    "name": "מקור חיים (בביה\"ס)",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "נחמיה 21",
+    "location": {
+      "latitude": 32.78874761872704,
+      "longitude": 35.01815872461038
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::185",
+    "name": "משכן יעקב\" בישיבה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "בליטנטל 41",
+    "location": {
+      "latitude": 32.77420850107841,
+      "longitude": 35.00486672756146
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "04-8254987",
+    "nusach": "א"
+  },
+  {
+    "id": "arcgis:haifa::186",
+    "name": "משכן משה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "ריינס 18, ק' שמואל",
+    "location": {
+      "latitude": 32.83177441372581,
+      "longitude": 35.065806654597154
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-4102048",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::187",
+    "name": "משכן שאנן",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "התיכון 39",
+    "location": {
+      "latitude": 32.790481687831196,
+      "longitude": 35.0162418962629
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-3205218",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::188",
+    "name": "משכנות גבורה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "שטרן 9",
+    "location": {
+      "latitude": 32.839897761825235,
+      "longitude": 35.070307140068834
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::189",
+    "name": "משכנות יצחק",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "רודנר 18",
+    "location": {
+      "latitude": 32.82667192002662,
+      "longitude": 34.985075227026876
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-2061454",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::190",
+    "name": "משכנות תפילה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "שטרן 7",
+    "location": {
+      "latitude": 32.83969441743223,
+      "longitude": 35.07004298005139
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-2574501",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::191",
+    "name": "נאות פרס",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "זוהר (בביה\"ס)",
+    "location": {
+      "latitude": 32.786435025527865,
+      "longitude": 34.96864890716005
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-2423201",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::192",
+    "name": "נוה ציון (רח' נחמיה)",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "נחמיה 39",
+    "location": {
+      "latitude": 32.79075176281446,
+      "longitude": 35.0164944369236
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-5225798",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::193",
+    "name": "נוה תפילה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "התיכון 39 (במרכז ת' דתי)",
+    "location": {
+      "latitude": 32.790481687831196,
+      "longitude": 35.0162418962629
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "077-6633117.  053-7548721",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::194",
+    "name": "נווה אברהם- נווה הדר",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "הנגב 1",
+    "location": {
+      "latitude": 32.80364110678795,
+      "longitude": 35.0050068484983
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-4149644",
+    "nusach": "א"
+  },
+  {
+    "id": "arcgis:haifa::195",
+    "name": "נוסח - אשכנזי",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "החיד\"א (בגנים של הרב הכרמי)",
+    "location": {
+      "latitude": 32.83903931269997,
+      "longitude": 35.07210798424131
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "058-3225011",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::196",
+    "name": "נחלת אשר",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "הגליל 53 א'",
+    "location": {
+      "latitude": 32.79226968712972,
+      "longitude": 35.016381929421065
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-8468886",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::197",
+    "name": "נחלת בנימין",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "שטרן 3",
+    "location": {
+      "latitude": 32.83996304075438,
+      "longitude": 35.069465153068975
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::198",
+    "name": "נחלת הלויים",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "רחבת בן ארצי 27",
+    "location": {
+      "latitude": 32.78458163972315,
+      "longitude": 35.01445736756831
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-6413011",
+    "nusach": "א"
+  },
+  {
+    "id": "arcgis:haifa::199",
+    "name": "נפש חיה – חב\"ד",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "בר אילן 29",
+    "location": {
+      "latitude": 32.83373114200663,
+      "longitude": 35.0697458624141
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::200",
+    "name": "נצח ישראל",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "שד' בן-גוריון 57",
+    "location": {
+      "latitude": 32.81771994094821,
+      "longitude": 34.98937607269267
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::201",
+    "name": "נצח ישראל (רמבה\"נ)",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "המלך דוד 4",
+    "location": {
+      "latitude": 32.80694960698735,
+      "longitude": 34.96100251421082
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-25258516",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::202",
+    "name": "נתיב אברהם",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "ציון 12 פינת התיכון",
+    "location": {
+      "latitude": 32.79089586461553,
+      "longitude": 35.01528262981825
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "*"
+  },
+  {
+    "id": "arcgis:haifa::203",
+    "name": "נתיב העליה  (לעולי צרפת)",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "טרומפלדור 35 ק\"ב",
+    "location": {
+      "latitude": 32.78404421112362,
+      "longitude": 35.01635706988866
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-2144160",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::204",
+    "name": "ע\"ש הרב קוך",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "השילוח 12",
+    "location": {
+      "latitude": 32.803641900760475,
+      "longitude": 35.00084812872953
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-7157819",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::205",
+    "name": "עבור ביכנ\"ס ר' ישראל אבוחצירא",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "דרך יד לבנים 210/28",
+    "location": {
+      "latitude": 32.79666425252467,
+      "longitude": 35.006822176548845
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-229220",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::207",
+    "name": "עדת ישראל",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "מאפו 6",
+    "location": {
+      "latitude": 32.78743143583673,
+      "longitude": 34.98457270302736
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::208",
+    "name": "עדת ישראל גאולה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "ארלוזרוב 19 בכולל דעת יואל",
+    "location": {
+      "latitude": 32.805046693552676,
+      "longitude": 35.00082207725051
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-7622176",
+    "nusach": "א"
+  },
+  {
+    "id": "arcgis:haifa::209",
+    "name": "עוד יוסף חי / רמב\"ם",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "הרב דוד אסף 3-5",
+    "location": {
+      "latitude": 32.774328103646795,
+      "longitude": 34.99286556167465
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "053-3133940",
+    "nusach": "עמ,ס,א"
+  },
+  {
+    "id": "arcgis:haifa::210",
+    "name": "עטרת זקנים",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "הרב הרצוג 3",
+    "location": {
+      "latitude": 32.806857796577525,
+      "longitude": 35.001244715622214
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-3244000, 052-2696614,",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::211",
+    "name": "עקידת יצחק",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "ש\"י עגנון 21 (בגן הילדים)",
+    "location": {
+      "latitude": 32.82069987174223,
+      "longitude": 34.981200761531795
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-7132008",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::212",
+    "name": "ערלוי",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "יל\"ג 11",
+    "location": {
+      "latitude": 32.8068136278945,
+      "longitude": 35.003039862866125
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "058-3275562",
+    "nusach": "א"
+  },
+  {
+    "id": "arcgis:haifa::213",
+    "name": "פא\"י",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "מיכאל 1",
+    "location": {
+      "latitude": 32.80622819947431,
+      "longitude": 35.001000360901536
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-7675090",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::214",
+    "name": "פאר ירושלים",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "גורדון 1",
+    "location": {
+      "latitude": 32.78248986745256,
+      "longitude": 35.013199793377176
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-7549952",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::216",
+    "name": "פאר ישראל",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "הירדן 52",
+    "location": {
+      "latitude": 32.79970165405466,
+      "longitude": 35.011539305353374
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-7690656",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::217",
+    "name": "פאר ישראל (בבי\"ס יזרעאליה)",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "צ'רניחובסקי 20",
+    "location": {
+      "latitude": 32.79129629280238,
+      "longitude": 35.01186148214684
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "עמ,ס"
+  },
+  {
+    "id": "arcgis:haifa::218",
+    "name": "פינת החסד - זק\"א צפון",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "עקיבא 3",
+    "location": {
+      "latitude": 32.80155390148254,
+      "longitude": 35.00115663382356
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-3759947",
+    "nusach": "עמ,ס,א"
+  },
+  {
+    "id": "arcgis:haifa::219",
+    "name": "פרחי אהרון בישיבה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "הים התיכון",
+    "location": {
+      "latitude": 32.83589654167988,
+      "longitude": 35.06733207215626
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-6318801",
+    "nusach": "עמ,ס"
+  },
+  {
+    "id": "arcgis:haifa::220",
+    "name": "צעירי אגודת ישראל",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "ביתר 1",
+    "location": {
+      "latitude": 32.80426262096897,
+      "longitude": 35.001290123411394
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-4869867",
+    "nusach": "א"
+  },
+  {
+    "id": "arcgis:haifa::221",
+    "name": "קהילת יעקב",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "חורב 20/22, בבית אבות בני ברית",
+    "location": {
+      "latitude": 32.78386394351081,
+      "longitude": 34.98656894920482
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-4401935",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::222",
+    "name": "קהילת קודש - תימן",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "יל\"ג 28",
+    "location": {
+      "latitude": 32.80479554408326,
+      "longitude": 35.00410345814759
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-8468618",
+    "nusach": "בלדי"
+  },
+  {
+    "id": "arcgis:haifa::223",
+    "name": "קובעי עיתים",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "ארלוזרוב 10",
+    "location": {
+      "latitude": 32.80609140585821,
+      "longitude": 35.000607862357526
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-6232540",
+    "nusach": "א"
+  },
+  {
+    "id": "arcgis:haifa::224",
+    "name": "קול יעקב",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "הלל 51",
+    "location": {
+      "latitude": 32.81088626484654,
+      "longitude": 34.99009170292566
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-4988770",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::225",
+    "name": "קול יעקב - מנין ירושלמי",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "דב פרומר 15",
+    "location": {
+      "latitude": 32.83939327914514,
+      "longitude": 35.071672513491784
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "יצחק גץ.6 כתובת הבית  050-7497045",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::226",
+    "name": "קופרשטוק ע\"ש הרב",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "צפת 5",
+    "location": {
+      "latitude": 32.8111033046282,
+      "longitude": 34.993973696355184
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-5862151",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::227",
+    "name": "קרית שמואל ב'",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "משה חיים שפירא 15",
+    "location": {
+      "latitude": 32.83801180595936,
+      "longitude": 35.067819824813505
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-2004352",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::228",
+    "name": "רבי חנניה כהן",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "דרך יד לבנים 188/22",
+    "location": {
+      "latitude": 32.79902723179545,
+      "longitude": 35.00820027158215
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-5335995",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::229",
+    "name": "רבי יעקב אבוחצירא",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "סעדיה גאון 25",
+    "location": {
+      "latitude": 32.81863796630412,
+      "longitude": 34.963533187405055
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-6211207",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::230",
+    "name": "רבי עקיבא",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "רבי עקיבא 19",
+    "location": {
+      "latitude": 32.80206494874165,
+      "longitude": 34.99931194116352
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-3403620",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::231",
+    "name": "רמב\"ם",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "התיכון 39א",
+    "location": {
+      "latitude": 32.790481687831196,
+      "longitude": 35.0162418962629
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-5908528",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::232",
+    "name": "רמבעה\"נ ע\"ש",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "צידון 3",
+    "location": {
+      "latitude": 32.813708355835544,
+      "longitude": 34.99584656288935
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-8475218",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::233",
+    "name": "רמת אשכול (אשכנזי)",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "ראול ולנברג 11",
+    "location": {
+      "latitude": 32.780149436543006,
+      "longitude": 34.98479471207166
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-5275825",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::234",
+    "name": "רמת אשכול (ספרדי)",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "ראול ולנברג 11",
+    "location": {
+      "latitude": 32.78003918762436,
+      "longitude": 34.98474095766485
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::235",
+    "name": "רמת הדר",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "לאון בלום 2",
+    "location": {
+      "latitude": 32.7994082733212,
+      "longitude": 34.99553596537917
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-7607801",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::236",
+    "name": "רשב\"י",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "השומר 4",
+    "location": {
+      "latitude": 32.808044910219806,
+      "longitude": 35.00350240530985
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "04-8640335",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::237",
+    "name": "רשב\"י",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "יהודה הלוי 56",
+    "location": {
+      "latitude": 32.80427408153637,
+      "longitude": 35.00779284664483
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-8948322",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::238",
+    "name": "רשב\"י",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "המלך עוזיהו 6",
+    "location": {
+      "latitude": 32.81037996076774,
+      "longitude": 34.95991867915104
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::239",
+    "name": "רשב\"י ע\"ש אסתר גנון - לידי אזולאי שמעון",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "צה\"ל 8",
+    "location": {
+      "latitude": 32.824242666093085,
+      "longitude": 34.98229848572494
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "04-8533204",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::240",
+    "name": "שארית ישראל",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "אילת 4",
+    "location": {
+      "latitude": 32.795236664397635,
+      "longitude": 35.010846798373926
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-8381776",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::241",
+    "name": "שבת אחים",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "הגיבורים 71",
+    "location": {
+      "latitude": 32.80071374282529,
+      "longitude": 35.013204568007865
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-3200460",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::242",
+    "name": "שבת אחים",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "אנילביץ' 26 (בבי\"ס מוריה)",
+    "location": {
+      "latitude": 32.82160785115058,
+      "longitude": 34.98770591764226
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-2799927",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::243",
+    "name": "שבת אחים - המרכז ברוחני ליהדות",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "הרצל 70",
+    "location": {
+      "latitude": 32.80550407060782,
+      "longitude": 35.0025729199285
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-7640001",
+    "nusach": "עמ,ס"
+  },
+  {
+    "id": "arcgis:haifa::244",
+    "name": "שוחרי מסורת",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "לויק 1 ת\"ד 1017",
+    "location": {
+      "latitude": 32.8317578222144,
+      "longitude": 35.06298401817167
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-7959202",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::245",
+    "name": "שוחרי תפילה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "יבניאלי 14",
+    "location": {
+      "latitude": 32.817974191228686,
+      "longitude": 35.07408675136231
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-5277726",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::246",
+    "name": "שוחרי תפילה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "התיכון 39 (בבי\"ס רמב\"ם)",
+    "location": {
+      "latitude": 32.790481687831196,
+      "longitude": 35.0162418962629
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::247",
+    "name": "שוירץ",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "שד' הנשיא 67",
+    "location": {
+      "latitude": 32.811965173945445,
+      "longitude": 34.983267715740034
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-3809910",
+    "nusach": "עמ,ס"
+  },
+  {
+    "id": "arcgis:haifa::248",
+    "name": "שטיבל אברכים בעלז חיפה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "ברזילי 5",
+    "location": {
+      "latitude": 32.80731714890633,
+      "longitude": 35.00338680541567
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-8573633",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::249",
+    "name": "שיטרית בית יעקב",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "הרב מרכוס 3",
+    "location": {
+      "latitude": 32.812485113692915,
+      "longitude": 35.00143788807532
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-8558454",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::250",
+    "name": "שלום יהודה(יגדיל תורה)",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "ר' עקיבא 7",
+    "location": {
+      "latitude": 32.80195693049345,
+      "longitude": 35.00052900171699
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "053-3177077",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::251",
+    "name": "שער הרחמים",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "סעדיה פז 36",
+    "location": {
+      "latitude": 32.815034899508575,
+      "longitude": 34.958061601974876
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-6146166",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::252",
+    "name": "שער השמים",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "ביאליק 8",
+    "location": {
+      "latitude": 32.81195459254554,
+      "longitude": 34.998805204713115
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::253",
+    "name": "שער השמים",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "העוגן 25",
+    "location": {
+      "latitude": 32.826049166065125,
+      "longitude": 34.96360214527677
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::254",
+    "name": "שערי זיו",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "גלבוע 43",
+    "location": {
+      "latitude": 32.782574824328464,
+      "longitude": 35.015948239448036
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-6999661",
+    "nusach": "א"
+  },
+  {
+    "id": "arcgis:haifa::255",
+    "name": "שערי ישועה ביהכנס הטוניסאי ע\"ש ר' ישעה בסיס",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "נתיב בעל התניא 10",
+    "location": {
+      "latitude": 32.838202005097074,
+      "longitude": 35.070100875907634
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-6528411",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::256",
+    "name": "שערי צדק הגליל",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "חסן שוקרי 18",
+    "location": {
+      "latitude": 32.81234886067829,
+      "longitude": 34.999881156671094
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-4304319, 054-4910038",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::257",
+    "name": "שערי רחמים",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "הרב רפאל אלנקווה 7",
+    "location": {
+      "latitude": 32.81836386440906,
+      "longitude": 34.95925696275703
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-5833048",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::258",
+    "name": "שערי רחמים (חאלב)",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "השומר 13",
+    "location": {
+      "latitude": 32.807232016218286,
+      "longitude": 35.004392257883765
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::259",
+    "name": "שערי תורה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "הגיבורים 29 (בבית הנג'אדה)",
+    "location": {
+      "latitude": 32.803175339276436,
+      "longitude": 35.00840565572022
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-3815328",
+    "nusach": "עמ,ס"
+  },
+  {
+    "id": "arcgis:haifa::261",
+    "name": "תורה ותפילה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "הקלעים 8",
+    "location": {
+      "latitude": 32.831114914868756,
+      "longitude": 34.975755854308574
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "050-9301115",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::262",
+    "name": "תורת אמת",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "בן-בבא 4 (בביה\"ס)",
+    "location": {
+      "latitude": 32.803528918445025,
+      "longitude": 35.002351782937154
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-5426684",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::263",
+    "name": "תורת חיים",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "המלך דוד 4",
+    "location": {
+      "latitude": 32.80694960698735,
+      "longitude": 34.96100251421082
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-4386071",
+    "nusach": "עמ"
+  },
+  {
+    "id": "arcgis:haifa::264",
+    "name": "תפארת ישראל (א)",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "גאולה 1",
+    "location": {
+      "latitude": 32.80455128481098,
+      "longitude": 34.99871355694672
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-7165415",
+    "nusach": "א"
+  },
+  {
+    "id": "arcgis:haifa::265",
+    "name": "תפארת ישראל (ס)",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "גאולה 1",
+    "location": {
+      "latitude": 32.80455128481098,
+      "longitude": 34.99871355694672
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-7661512",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::266",
+    "name": "תפארת מנשה",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "בר גיורא 10",
+    "location": {
+      "latitude": 32.80728483948159,
+      "longitude": 34.99323347327267
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "054-3675437",
+    "nusach": "עמ,ס,א"
+  },
+  {
+    "id": "arcgis:haifa::267",
+    "name": "תפארת צבי",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "לבונטין 20",
+    "location": {
+      "latitude": 32.81404738910883,
+      "longitude": 34.993102476047454
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-7153670",
+    "nusach": "ס"
+  },
+  {
+    "id": "arcgis:haifa::268",
+    "name": "תפארת שאנן",
+    "type": "synagogue",
+    "cityId": "חיפה",
+    "address": "השל 2",
+    "location": {
+      "latitude": 32.78840612191728,
+      "longitude": 35.014539122645886
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:haifa",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
+    },
+    "phone": "052-3573733",
+    "nusach": "עמ"
+  }
+]

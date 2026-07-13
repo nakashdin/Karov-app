@@ -1,0 +1,2344 @@
+[
+  {
+    "id": "arcgis:nahariya::1",
+    "type": "synagogue",
+    "name": "אברהם אבינו",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 32.98822933468792,
+      "longitude": 35.08552474843723
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:1",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 1,
+        "biet_kneset_name": "אברהם אבינו ",
+        "adress": "שקד 31 ",
+        "gabai1": "רן 0535247502",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 208341.58,
+        "Y": 765916.21
+      }
+    },
+    "address": "שקד 31",
+    "extra": {
+      "gabbai": "רן 0535247502"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::2",
+    "type": "synagogue",
+    "name": "אברהם אבינו \\גרוזינים",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 32.98822933468792,
+      "longitude": 35.08552474843723
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:2",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 2,
+        "biet_kneset_name": "אברהם אבינו \\גרוזינים ",
+        "adress": null,
+        "gabai1": "רומני 0506448486",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 208341.58,
+        "Y": 765916.21
+      }
+    },
+    "extra": {
+      "gabbai": "רומני 0506448486"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::3",
+    "type": "synagogue",
+    "name": "אהבת חיים",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.00079550292159,
+      "longitude": 35.10092282239344
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:3",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 3,
+        "biet_kneset_name": "אהבת חיים ",
+        "adress": "יפה נוף 44 ",
+        "gabai1": "רוני כנפו 0528011937",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 209782.16,
+        "Y": 767308.35
+      }
+    },
+    "address": "יפה נוף 44",
+    "extra": {
+      "gabbai": "רוני כנפו 0528011937"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::4",
+    "type": "synagogue",
+    "name": "אהבת שלום \\גרוזינים",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.01317493577177,
+      "longitude": 35.10506651804459
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:4",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 4,
+        "biet_kneset_name": "אהבת שלום \\גרוזינים ",
+        "adress": "קיבוץ גךויות 61",
+        "gabai1": "עובדיה 0526542555",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 210170.7,
+        "Y": 768680.93
+      }
+    },
+    "address": "קיבוץ גךויות 61",
+    "extra": {
+      "gabbai": "עובדיה 0526542555"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::5",
+    "type": "synagogue",
+    "name": "אהל חיים",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.00177263563472,
+      "longitude": 35.10345301985363
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:5",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 5,
+        "biet_kneset_name": "אהל חיים ",
+        "adress": "עזרא 8",
+        "gabai1": "דוד וקנין 0503777449",
+        "gabai2": "ששון 0549552626",
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 210018.72,
+        "Y": 767416.49
+      }
+    },
+    "address": "עזרא 8",
+    "extra": {
+      "gabbai": "דוד וקנין 0503777449"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::6",
+    "type": "synagogue",
+    "name": "אהרון הכהן",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 32.996192303103676,
+      "longitude": 35.09811325468743
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:6",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 6,
+        "biet_kneset_name": "אהרון הכהן ",
+        "adress": "אפריים שריר 1",
+        "gabai1": "ארמונד אלגבלי 0504076238",
+        "gabai2": "מורדכי קורקוס 0525586615",
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 209519.08,
+        "Y": 766798.09
+      }
+    },
+    "address": "אפריים שריר 1",
+    "extra": {
+      "gabbai": "ארמונד אלגבלי 0504076238"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::7",
+    "type": "synagogue",
+    "name": "אוצר התורה",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.02380945429823,
+      "longitude": 35.10822062079624
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:7",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 7,
+        "biet_kneset_name": "אוצר התורה ",
+        "adress": "זמנהוף 1",
+        "gabai1": "עופר אלקיים 0525620363",
+        "gabai2": "גבאי רפאל 0544799105",
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 210466.5,
+        "Y": 769860.09
+      }
+    },
+    "address": "זמנהוף 1",
+    "extra": {
+      "gabbai": "עופר אלקיים 0525620363"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::8",
+    "type": "synagogue",
+    "name": "אור החיים",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.02473304173749,
+      "longitude": 35.10812318004796
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:8",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 8,
+        "biet_kneset_name": "אור החיים ",
+        "adress": "יהודה המכבי 11",
+        "gabai1": "ליבו אלימלך 0502424043",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 210457.49,
+        "Y": 769962.53
+      }
+    },
+    "address": "יהודה המכבי 11",
+    "extra": {
+      "gabbai": "ליבו אלימלך 0502424043"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::9",
+    "type": "synagogue",
+    "name": "אלי כהן",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.012086377347956,
+      "longitude": 35.104526866401116
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:9",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 9,
+        "biet_kneset_name": "אלי כהן ",
+        "adress": "קיבוץ גלויות 53",
+        "gabai1": "שטרית יעקב 0505867557",
+        "gabai2": null,
+        "praying_time": "מנחה 17:15 ערבית 17:50",
+        "praying_time_weekend": "שחרית 7:30 מנחה 16:15 ערבית צאת שבת ",
+        "X": 210120.16,
+        "Y": 768560.25
+      }
+    },
+    "address": "קיבוץ גלויות 53",
+    "extra": {
+      "gabbai": "שטרית יעקב 0505867557"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::10",
+    "type": "synagogue",
+    "name": "אליהו הנביא",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.01254509193846,
+      "longitude": 35.09962476321785
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:10",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 10,
+        "biet_kneset_name": "אליהו הנביא ",
+        "adress": "מבצע אנטבה 13",
+        "gabai1": "אבי ועקנין 0524555666",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 209662.15,
+        "Y": 768611.57
+      }
+    },
+    "address": "מבצע אנטבה 13",
+    "extra": {
+      "gabbai": "אבי ועקנין 0524555666"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::11",
+    "type": "synagogue",
+    "name": "אמת",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.02503906251367,
+      "longitude": 35.10765264564884
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:11",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 11,
+        "biet_kneset_name": "אמת ",
+        "adress": "יהודה המכבי 19",
+        "gabai1": "ישראל 0506255409",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 210413.56,
+        "Y": 769996.51
+      }
+    },
+    "address": "יהודה המכבי 19",
+    "extra": {
+      "gabbai": "ישראל 0506255409"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::12",
+    "type": "synagogue",
+    "name": "ארז הלבנון",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 32.999974064037815,
+      "longitude": 35.09334286857184
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:12",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 12,
+        "biet_kneset_name": "ארז הלבנון ",
+        "adress": "שטיינהרט 3",
+        "gabai1": "לוי יוסף 05628792855",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 209073.69,
+        "Y": 767217.97
+      }
+    },
+    "address": "שטיינהרט 3",
+    "extra": {
+      "gabbai": "לוי יוסף 05628792855"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::13",
+    "type": "synagogue",
+    "name": "באתי לגני",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.00834061720716,
+      "longitude": 35.09488002114668
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:13",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 13,
+        "biet_kneset_name": "באתי לגני ",
+        "adress": "שביל הגנים \\ גולומב 6",
+        "gabai1": "דוד בן שבת 0546316138",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 209218.31,
+        "Y": 768145.72
+      }
+    },
+    "address": "שביל הגנים \\ גולומב 6",
+    "extra": {
+      "gabbai": "דוד בן שבת 0546316138"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::14",
+    "type": "synagogue",
+    "name": "בית חב\"ד",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.00750697498474,
+      "longitude": 35.101492107003516
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:14",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 14,
+        "biet_kneset_name": "בית חב\"ד ",
+        "adress": "דרך יחיאם פינת חנה סנש",
+        "gabai1": "הרב ויליהלם 0547770816",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 209836.09,
+        "Y": 768052.64
+      }
+    },
+    "address": "דרך יחיאם פינת חנה סנש",
+    "extra": {
+      "gabbai": "הרב ויליהלם 0547770816"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::15",
+    "type": "synagogue",
+    "name": "בית חולים",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.00940636925289,
+      "longitude": 35.116909644549516
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:15",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 15,
+        "biet_kneset_name": "בית חולים ",
+        "adress": "דרך בן צבי ",
+        "gabai1": "אליקו 0525797926",
+        "gabai2": null,
+        "praying_time": "מנחה 13:00",
+        "praying_time_weekend": "שחרית 7:30 מנחה 13:00 ערבית צאת שבת ",
+        "X": 211276.98,
+        "Y": 768261.99
+      }
+    },
+    "address": "דרך בן צבי",
+    "extra": {
+      "gabbai": "אליקו 0525797926"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::16",
+    "type": "synagogue",
+    "name": "בית יעקב",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.004800637162575,
+      "longitude": 35.09431585311959
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:16",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 16,
+        "biet_kneset_name": "בית יעקב ",
+        "adress": "אחד העם 6",
+        "gabai1": "בובליל ינון 0502612997",
+        "gabai2": "אהרון -0505478722",
+        "praying_time": "שחרית -6 מנחה -17:05 ערבית -17:45 ",
+        "praying_time_weekend": "שחרית -7:25 מנחה -16:25 ערבית 17:50",
+        "X": 209165.18,
+        "Y": 767753.17
+      }
+    },
+    "address": "אחד העם 6",
+    "extra": {
+      "gabbai": "בובליל ינון 0502612997"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::17",
+    "type": "synagogue",
+    "name": "בית ישראל",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.00769470296707,
+      "longitude": 35.10193224884688
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:17",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 17,
+        "biet_kneset_name": "בית ישראל ",
+        "adress": "שביל זיסו 2",
+        "gabai1": "אהוד חן 0505372418",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 209877.24,
+        "Y": 768073.42
+      }
+    },
+    "address": "שביל זיסו 2",
+    "extra": {
+      "gabbai": "אהוד חן 0505372418"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::18",
+    "type": "synagogue",
+    "name": "בית מאיר",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.01488405000947,
+      "longitude": 35.09556618360247
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:18",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 18,
+        "biet_kneset_name": "בית מאיר ",
+        "adress": "גרינבאום 15/12",
+        "gabai1": "ישראל 0505287465",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 209283.18,
+        "Y": 768871.36
+      }
+    },
+    "address": "גרינבאום 15/12",
+    "extra": {
+      "gabbai": "ישראל 0505287465"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::19",
+    "type": "synagogue",
+    "name": "בית קיי",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 32.99762926624897,
+      "longitude": 35.09271792354099
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:19",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 19,
+        "biet_kneset_name": "בית קיי ",
+        "adress": "שד' בית קיי 11",
+        "gabai1": "תומר סודאי 0524232684",
+        "gabai2": "קורש אבנר 0526821910",
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 209015.01,
+        "Y": 766957.98
+      }
+    },
+    "address": "שד' בית קיי 11",
+    "extra": {
+      "gabbai": "תומר סודאי 0524232684"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::20",
+    "type": "synagogue",
+    "name": "בן איש חי",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.00183116676626,
+      "longitude": 35.10369243318961
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:20",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 20,
+        "biet_kneset_name": "בן איש חי ",
+        "adress": "עזרא 8 ",
+        "gabai1": "עזריה זכאי 0506267728",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 210041.1,
+        "Y": 767422.96
+      }
+    },
+    "address": "עזרא 8",
+    "extra": {
+      "gabbai": "עזריה זכאי 0506267728"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::21",
+    "type": "synagogue",
+    "name": "גואל ישראל",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.00978203605911,
+      "longitude": 35.095313151817116
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:21",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 21,
+        "biet_kneset_name": "גואל ישראל ",
+        "adress": "המייסדים 30",
+        "gabai1": "ויקטור שושן 0504156552",
+        "gabai2": "בני כנפו 0546638534",
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 209258.95,
+        "Y": 768305.54
+      }
+    },
+    "address": "המייסדים 30",
+    "extra": {
+      "gabbai": "ויקטור שושן 0504156552"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::22",
+    "type": "synagogue",
+    "name": "היכל אליהו",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.0098349705053,
+      "longitude": 35.09532089880406
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:22",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 22,
+        "biet_kneset_name": "היכל אליהו ",
+        "adress": "יוסף לוי 3",
+        "gabai1": "רוני מור  0505078324",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 209259.68,
+        "Y": 768311.41
+      }
+    },
+    "address": "יוסף לוי 3",
+    "extra": {
+      "gabbai": "רוני מור  0505078324"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::23",
+    "type": "synagogue",
+    "name": "היכל דניאל",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.00270341257158,
+      "longitude": 35.090945588321944
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:23",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 23,
+        "biet_kneset_name": "היכל דניאל ",
+        "adress": "רמז 29",
+        "gabai1": "מוטי בוכריס 0546050587",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 208849.98,
+        "Y": 767520.91
+      }
+    },
+    "address": "רמז 29",
+    "extra": {
+      "gabbai": "מוטי בוכריס 0546050587"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::24",
+    "type": "synagogue",
+    "name": "היכל פנחס יצחק",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.02688203842289,
+      "longitude": 35.09641714957077
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:24",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 24,
+        "biet_kneset_name": "היכל פנחס יצחק ",
+        "adress": "דוד בן גאון 31",
+        "gabai1": "מאיר עברי 0503200670",
+        "gabai2": "ניסן רווח 0547967447",
+        "praying_time": "שחרית 6:30 מנחה 17:10 ערבית 17:35",
+        "praying_time_weekend": "שחרית 7:30 מנחה 16:40 ערבית שקיעה ",
+        "X": 209364.06,
+        "Y": 770201.93
+      }
+    },
+    "address": "דוד בן גאון 31",
+    "extra": {
+      "gabbai": "מאיר עברי 0503200670"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::25",
+    "type": "synagogue",
+    "name": "הראל גרעין",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.00262496477465,
+      "longitude": 35.09213903302338
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:25",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 25,
+        "biet_kneset_name": "הראל גרעין ",
+        "adress": "ויצמן 89 ",
+        "gabai1": "גדי כהן 0528288420",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 208961.5,
+        "Y": 767512.09
+      }
+    },
+    "address": "ויצמן 89",
+    "extra": {
+      "gabbai": "גדי כהן 0528288420"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::26",
+    "type": "synagogue",
+    "name": "ואהבת לרעך",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.02192617472477,
+      "longitude": 35.09469497110071
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:26",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 26,
+        "biet_kneset_name": "ואהבת לרעך ",
+        "adress": "ארלוזוב 43 ",
+        "gabai1": "עזרא עומר 0504095558",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 209202.59,
+        "Y": 769652.46
+      }
+    },
+    "address": "ארלוזוב 43",
+    "extra": {
+      "gabbai": "עזרא עומר 0504095558"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::27",
+    "type": "synagogue",
+    "name": "חב\"ד סוקולוב",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.00066362173561,
+      "longitude": 35.08767064160913
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:27",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 27,
+        "biet_kneset_name": "חב\"ד סוקולוב ",
+        "adress": "סוקולוב 34",
+        "gabai1": "דן גוהר 0523761440",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 208543.68,
+        "Y": 767295.02
+      }
+    },
+    "address": "סוקולוב 34",
+    "extra": {
+      "gabbai": "דן גוהר 0523761440"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::28",
+    "type": "synagogue",
+    "name": "חזון עובדיה",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.00602054280333,
+      "longitude": 35.104778973628505
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:28",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 28,
+        "biet_kneset_name": "חזון עובדיה ",
+        "adress": "עמק יזראל 8",
+        "gabai1": "אלי לוי 0509113835",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 210143.08,
+        "Y": 767887.49
+      }
+    },
+    "address": "עמק יזראל 8",
+    "extra": {
+      "gabbai": "אלי לוי 0509113835"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::29",
+    "type": "synagogue",
+    "name": "טמזרת",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.00763274445019,
+      "longitude": 35.10191498434984
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:29",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 29,
+        "biet_kneset_name": "טמזרת ",
+        "adress": "יחיעם 11",
+        "gabai1": "רפי בוכריס 0525583980",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 209875.62,
+        "Y": 768066.55
+      }
+    },
+    "address": "יחיעם 11",
+    "extra": {
+      "gabbai": "רפי בוכריס 0525583980"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::30",
+    "type": "synagogue",
+    "name": "יגל יעקב",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.02033816364178,
+      "longitude": 35.106621102176234
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:30",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 30,
+        "biet_kneset_name": "יגל יעקב ",
+        "adress": "בר כוכבא 3",
+        "gabai1": "חתן עופר 0522265083",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 210316.7,
+        "Y": 769475.24
+      }
+    },
+    "address": "בר כוכבא 3",
+    "extra": {
+      "gabbai": "חתן עופר 0522265083"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::31",
+    "type": "synagogue",
+    "name": "יד לאחים",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 32.99921943472649,
+      "longitude": 35.10097473986088
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:31",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 31,
+        "biet_kneset_name": "יד לאחים ",
+        "adress": "יפה נוף 28",
+        "gabai1": "יעקב יוסף 0545801132",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 209786.84,
+        "Y": 767133.55
+      }
+    },
+    "address": "יפה נוף 28",
+    "extra": {
+      "gabbai": "יעקב יוסף 0545801132"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::32",
+    "type": "synagogue",
+    "name": "יצחק אבינו",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 32.994188179531285,
+      "longitude": 35.090260150372224
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:32",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 32,
+        "biet_kneset_name": "יצחק אבינו ",
+        "adress": "האיריס 63",
+        "gabai1": "משה אלמליך 0546090359",
+        "gabai2": "מרדכי 0525777242",
+        "praying_time": "שחרית 1-5:10 שחרית 2- 6:30 מנחה 17:05 ערבית 17:50",
+        "praying_time_weekend": "שחרית 1- 5:20 שחרית 2 7:15 מנחה 12:30 16:40 ערבית 17:55",
+        "X": 208784.9,
+        "Y": 766576.59
+      }
+    },
+    "address": "האיריס 63",
+    "extra": {
+      "gabbai": "משה אלמליך 0546090359"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::33",
+    "type": "synagogue",
+    "name": "ישועת ישראל",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.00946768620085,
+      "longitude": 35.09142812842151
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:33",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 33,
+        "biet_kneset_name": "ישועת ישראל ",
+        "adress": "זבוטינסקי 9",
+        "gabai1": "עשאל לוי 0584223299",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 208895.88,
+        "Y": 768271.06
+      }
+    },
+    "address": "זבוטינסקי 9",
+    "extra": {
+      "gabbai": "עשאל לוי 0584223299"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::34",
+    "type": "synagogue",
+    "name": "ישורון",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.0097758675584,
+      "longitude": 35.10464462006212
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:34",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 34,
+        "biet_kneset_name": "ישורון ",
+        "adress": "אביר יעקב 35",
+        "gabai1": "זרח זרחיה 0503823084",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 210130.92,
+        "Y": 768303.99
+      }
+    },
+    "address": "אביר יעקב 35",
+    "extra": {
+      "gabbai": "זרח זרחיה 0503823084"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::35",
+    "type": "synagogue",
+    "name": "ישיבת נהר דעה",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.000862884450925,
+      "longitude": 35.101500999204774
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:35",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 35,
+        "biet_kneset_name": "ישיבת נהר דעה ",
+        "adress": "יפה נוף 44",
+        "gabai1": "דורון איטח 0526606958",
+        "gabai2": "שי 0533404717 ",
+        "praying_time": "שחרית 7:30 מנחה 16:00 ערבית 19:30",
+        "praying_time_weekend": "שחרית 8:00 מנחה שעה וחצי לפני שקיעה ערבית בשקיעה ",
+        "X": 209836.2,
+        "Y": 767315.77
+      }
+    },
+    "address": "יפה נוף 44",
+    "extra": {
+      "gabbai": "דורון איטח 0526606958"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::36",
+    "type": "synagogue",
+    "name": "ישמח ישראל",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.02146079280695,
+      "longitude": 35.1054382518239
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:36",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 36,
+        "biet_kneset_name": "ישמח ישראל ",
+        "adress": "החלוץ 66",
+        "gabai1": "ביטון משה 0524239147",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 210206.3,
+        "Y": 769599.85
+      }
+    },
+    "address": "החלוץ 66",
+    "extra": {
+      "gabbai": "ביטון משה 0524239147"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::37",
+    "type": "synagogue",
+    "name": "כולל היכל אליהו",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.00971873651305,
+      "longitude": 35.09613842835624
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:37",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 37,
+        "biet_kneset_name": "כולל היכל אליהו",
+        "adress": "יוסף לוי 2",
+        "gabai1": "רוני מור 0505078324",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 209336.06,
+        "Y": 768298.44
+      }
+    },
+    "address": "יוסף לוי 2",
+    "extra": {
+      "gabbai": "רוני מור 0505078324"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::38",
+    "type": "synagogue",
+    "name": "למען שמו באהבה",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.019980825855086,
+      "longitude": 35.09696070549183
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:38",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 38,
+        "biet_kneset_name": "למען שמו באהבה ",
+        "adress": "ההגנה 22",
+        "gabai1": "יאיר וקנין 0525200670",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 209414.06,
+        "Y": 769436.49
+      }
+    },
+    "address": "ההגנה 22",
+    "extra": {
+      "gabbai": "יאיר וקנין 0525200670"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::39",
+    "type": "synagogue",
+    "name": "מגינים [ יצחק ירנן]",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.00355151022871,
+      "longitude": 35.09113497739458
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:39",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 39,
+        "biet_kneset_name": "מגינים [ יצחק ירנן]",
+        "adress": "רמז 23",
+        "gabai1": "חנניה ברדוגו 0549001168",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 208867.78,
+        "Y": 767614.95
+      }
+    },
+    "address": "רמז 23",
+    "extra": {
+      "gabbai": "חנניה ברדוגו 0549001168"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::40",
+    "type": "synagogue",
+    "name": "מגן דוד",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.004332783202955,
+      "longitude": 35.10680356042084
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:40",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 40,
+        "biet_kneset_name": "מגן דוד ",
+        "adress": "הזמיר 92",
+        "gabai1": "ישראל ואנונו 0503773331",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 210332.1,
+        "Y": 767700.13
+      }
+    },
+    "address": "הזמיר 92",
+    "extra": {
+      "gabbai": "ישראל ואנונו 0503773331"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::41",
+    "type": "synagogue",
+    "name": "מיים חיים",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.00781498860633,
+      "longitude": 35.103821111714325
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:41",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 41,
+        "biet_kneset_name": "מיים חיים ",
+        "adress": "סטרומה 2",
+        "gabai1": "יוסי מימון 0523602750",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 210053.76,
+        "Y": 768086.59
+      }
+    },
+    "address": "סטרומה 2",
+    "extra": {
+      "gabbai": "יוסי מימון 0523602750"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::42",
+    "type": "synagogue",
+    "name": "מנחת יהודה",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.0141813901039,
+      "longitude": 35.09311947299962
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:42",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 42,
+        "biet_kneset_name": "מנחת יהודה ",
+        "adress": "סילבר 24",
+        "gabai1": "מישל בניסטי 0523944913",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 209054.48,
+        "Y": 768793.67
+      }
+    },
+    "address": "סילבר 24",
+    "extra": {
+      "gabbai": "מישל בניסטי 0523944913"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::43",
+    "type": "synagogue",
+    "name": "מניין צעירים",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.00748074850608,
+      "longitude": 35.09149390647133
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:43",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 43,
+        "biet_kneset_name": "מניין צעירים ",
+        "adress": "זבוטינסקי 4/3",
+        "gabai1": "אלי זנתי 0502004332",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 208901.79,
+        "Y": 768050.69
+      }
+    },
+    "address": "זבוטינסקי 4/3",
+    "extra": {
+      "gabbai": "אלי זנתי 0502004332"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::44",
+    "type": "synagogue",
+    "name": "מקור חיים",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.00713903232034,
+      "longitude": 35.10130579723001
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:44",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 44,
+        "biet_kneset_name": "מקור חיים ",
+        "adress": "ווינסבורג 3 ",
+        "gabai1": "גילה 0528400582",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 209818.64,
+        "Y": 768011.85
+      }
+    },
+    "address": "ווינסבורג 3",
+    "extra": {
+      "gabbai": "גילה 0528400582"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::45",
+    "type": "synagogue",
+    "name": "מקלט בית ראסל",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.010739914332156,
+      "longitude": 35.10173845073407
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:45",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 45,
+        "biet_kneset_name": "מקלט בית ראסל ",
+        "adress": "נחלת אשר 25 ",
+        "gabai1": "ערן כהן 0527184137",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 209859.46,
+        "Y": 768411.17
+      }
+    },
+    "address": "נחלת אשר 25",
+    "extra": {
+      "gabbai": "ערן כהן 0527184137"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::46",
+    "type": "synagogue",
+    "name": "מרכזי היכל אהרון",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.00513675887971,
+      "longitude": 35.09429446156469
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:46",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 46,
+        "biet_kneset_name": "מרכזי היכל אהרון ",
+        "adress": "ישורון 9 ",
+        "gabai1": "תלמאי 0545640749",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 209163.22,
+        "Y": 767790.45
+      }
+    },
+    "address": "ישורון 9",
+    "extra": {
+      "gabbai": "תלמאי 0545640749"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::47",
+    "type": "synagogue",
+    "name": "משה רבנו",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.002793404841654,
+      "longitude": 35.10570051108256
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:47",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 47,
+        "biet_kneset_name": "משה רבנו ",
+        "adress": "שפרינצק 1",
+        "gabai1": "יניב איטח 0523761981",
+        "gabai2": "שמעון עברי 0545675759",
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 210228.86,
+        "Y": 767529.5
+      }
+    },
+    "address": "שפרינצק 1",
+    "extra": {
+      "gabbai": "יניב איטח 0523761981"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::48",
+    "type": "synagogue",
+    "name": "משכן דוד",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.00082715550875,
+      "longitude": 35.10103663880289
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:48",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 48,
+        "biet_kneset_name": "משכן דוד ",
+        "adress": "יפה נוף 44",
+        "gabai1": "איתן 0534322936",
+        "gabai2": null,
+        "praying_time": "שחרית נץ מנחה - 40 לפני שקיעה  ערבית בשקיעה ",
+        "praying_time_weekend": "שחרית נץ מנחה 15:30 ערבית צאת שבת ",
+        "X": 209792.8,
+        "Y": 767311.85
+      }
+    },
+    "address": "יפה נוף 44",
+    "extra": {
+      "gabbai": "איתן 0534322936"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::49",
+    "type": "synagogue",
+    "name": "משכנות יובל",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.006509386064465,
+      "longitude": 35.091394874027635
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:49",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 49,
+        "biet_kneset_name": "משכנות יובל ",
+        "adress": "רמז 2",
+        "gabai1": "יוסף לוי 0506862088",
+        "gabai2": null,
+        "praying_time": "שחרית נץ מנחה +ערבית חצי שעה לפני שקיעה ",
+        "praying_time_weekend": "שחרית 7:20",
+        "X": 208892.42,
+        "Y": 767942.97
+      }
+    },
+    "address": "רמז 2",
+    "extra": {
+      "gabbai": "יוסף לוי 0506862088"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::50",
+    "type": "synagogue",
+    "name": "נץ החמה",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.01050746360104,
+      "longitude": 35.10417677529641
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:50",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 50,
+        "biet_kneset_name": "נץ החמה ",
+        "adress": "מקלט ליד בי\"ס רמבם ",
+        "gabai1": "משה לוי 0525481313",
+        "gabai2": "סיאן ארז 0526160608",
+        "praying_time": "שחרית נץ מנחה 13:30 וצמוד לערבית ערבית בשקיעה ",
+        "praying_time_weekend": "שחרית נץ מנחה 13:30 ערבית 15 דק לפני ",
+        "X": 210087.28,
+        "Y": 768385.17
+      }
+    },
+    "address": "מקלט ליד בי\"ס רמבם",
+    "extra": {
+      "gabbai": "משה לוי 0525481313"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::51",
+    "type": "synagogue",
+    "name": "עין שרה מרכזי",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 32.98910668163402,
+      "longitude": 35.08979443411352
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:51",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 51,
+        "biet_kneset_name": "עין שרה מרכזי ",
+        "adress": "שזר 23",
+        "gabai1": "שרגא 0529468874",
+        "gabai2": "אושר טובול 0502489587",
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 208740.76,
+        "Y": 766013.07
+      }
+    },
+    "address": "שזר 23",
+    "extra": {
+      "gabbai": "שרגא 0529468874"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::52",
+    "type": "synagogue",
+    "name": "עץ החיים",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.0081365359329,
+      "longitude": 35.10564501219068
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:52",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 52,
+        "biet_kneset_name": "עץ החיים ",
+        "adress": "סטרומה 14",
+        "gabai1": "דוד יוסף 0524890005",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 210224.23,
+        "Y": 768122.09
+      }
+    },
+    "address": "סטרומה 14",
+    "extra": {
+      "gabbai": "דוד יוסף 0524890005"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::53",
+    "type": "synagogue",
+    "name": "פורת יוסף",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.01778040682074,
+      "longitude": 35.11144531886358
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:53",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 53,
+        "biet_kneset_name": "פורת יוסף ",
+        "adress": "פרופ שאשא 2",
+        "gabai1": "שלמה 0534265161",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 210767.19,
+        "Y": 769191.16
+      }
+    },
+    "address": "פרופ שאשא 2",
+    "extra": {
+      "gabbai": "שלמה 0534265161"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::54",
+    "type": "synagogue",
+    "name": "פקודת אלעזר",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 32.99227699676502,
+      "longitude": 35.093651775278545
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:54",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 54,
+        "biet_kneset_name": "פקודת אלעזר ",
+        "adress": "הלוטוס 101",
+        "gabai1": "שחר ניסים 0505073959",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 209101.66,
+        "Y": 766364.29
+      }
+    },
+    "address": "הלוטוס 101",
+    "extra": {
+      "gabbai": "שחר ניסים 0505073959"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::55",
+    "type": "synagogue",
+    "name": "צפון עמידר נווה אלון",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.01825828183978,
+      "longitude": 35.09528912110917
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:55",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 55,
+        "biet_kneset_name": "צפון עמידר נווה אלון ",
+        "adress": "יבנה 2 ",
+        "gabai1": "אליעזר קוך 0545215392",
+        "gabai2": "דרור וללוורד 0502106654",
+        "praying_time": "שחרית 5:50 מנחה 15 דרות לפני שקיעה ערבית אחרי ",
+        "praying_time_weekend": "שחרית 8:00 מנחה חורף 12:45 + 35 דק' לפני שקיעה ערבית בשקיעה ",
+        "X": 209257.68,
+        "Y": 769245.61
+      }
+    },
+    "address": "יבנה 2",
+    "extra": {
+      "gabbai": "אליעזר קוך 0545215392"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::56",
+    "type": "synagogue",
+    "name": "קודש [עולי אירן]",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.008729542423005,
+      "longitude": 35.1069988349082
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:56",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 56,
+        "biet_kneset_name": "קודש [עולי אירן] ",
+        "adress": "המצובה 8",
+        "gabai1": "אשר שמואלי 0542556902",
+        "gabai2": "שמעון שטרית 0525530900",
+        "praying_time": "שחרית 07:00 מנחה 17:00 שיעור וישר ערבית ",
+        "praying_time_weekend": "שחרית 7:30 מנחה 15:30 ערבית צאת שבת  ",
+        "X": 210350.8,
+        "Y": 768187.74
+      }
+    },
+    "address": "המצובה 8",
+    "extra": {
+      "gabbai": "אשר שמואלי 0542556902"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::57",
+    "type": "synagogue",
+    "name": "ר' חיים פנטו",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.01181235933731,
+      "longitude": 35.10554310014679
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:57",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 57,
+        "biet_kneset_name": "ר' חיים פנטו ",
+        "adress": "קיבוץ גלויות 50",
+        "gabai1": "לוי יעקב 0505278447",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 210215.09,
+        "Y": 768529.77
+      }
+    },
+    "address": "קיבוץ גלויות 50",
+    "extra": {
+      "gabbai": "לוי יעקב 0505278447"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::58",
+    "type": "synagogue",
+    "name": "רסקו גאולה",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.02482575446956,
+      "longitude": 35.10104941401249
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:58",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 58,
+        "biet_kneset_name": "רסקו גאולה ",
+        "adress": "שביל הגאולה 2",
+        "gabai1": "עמוס גלעדי 0522226877",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 209796.61,
+        "Y": 769973.44
+      }
+    },
+    "address": "שביל הגאולה 2",
+    "extra": {
+      "gabbai": "עמוס גלעדי 0522226877"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::59",
+    "type": "synagogue",
+    "name": "רשבי",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 32.99574024397308,
+      "longitude": 35.10127390221554
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:59",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 59,
+        "biet_kneset_name": "רשבי ",
+        "adress": "דוד בהמלך 11",
+        "gabai1": "עופר מאמא 0545220632",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 209814.42,
+        "Y": 766747.66
+      }
+    },
+    "address": "דוד בהמלך 11",
+    "extra": {
+      "gabbai": "עופר מאמא 0545220632"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::60",
+    "type": "synagogue",
+    "name": "שאול המלך",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 32.99780843915434,
+      "longitude": 35.1022045482959
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:60",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 60,
+        "biet_kneset_name": "שאול המלך ",
+        "adress": "שלמה המלך 1",
+        "gabai1": "שמעון רואש 0528548881",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 209901.62,
+        "Y": 766976.95
+      }
+    },
+    "address": "שלמה המלך 1",
+    "extra": {
+      "gabbai": "שמעון רואש 0528548881"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::61",
+    "type": "synagogue",
+    "name": "שארית הפליטה",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.02224864078725,
+      "longitude": 35.096489158844925
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:61",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 61,
+        "biet_kneset_name": "שארית הפליטה ",
+        "adress": "שביל הדליה 4",
+        "gabai1": "דניאל גרינברג 0525420499",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 209370.26,
+        "Y": 769688.05
+      }
+    },
+    "address": "שביל הדליה 4",
+    "extra": {
+      "gabbai": "דניאל גרינברג 0525420499"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::62",
+    "type": "synagogue",
+    "name": "שבי צפון",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 32.98790506211688,
+      "longitude": 35.08567946189702
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:62",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 62,
+        "biet_kneset_name": "שבי צפון ",
+        "adress": "השקד 31",
+        "gabai1": "בבר [עין שרה ] 0522187668",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 208356,
+        "Y": 765880.23
+      }
+    },
+    "address": "השקד 31",
+    "extra": {
+      "gabbai": "בבר [עין שרה ] 0522187668"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::63",
+    "type": "synagogue",
+    "name": "שבת אחים",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.003507674802606,
+      "longitude": 35.09111898217989
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:63",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 63,
+        "biet_kneset_name": "שבת אחים ",
+        "adress": "רמז 21",
+        "gabai1": "שאול 0504272588",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 208866.28,
+        "Y": 767610.09
+      }
+    },
+    "address": "רמז 21",
+    "extra": {
+      "gabbai": "שאול 0504272588"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::64",
+    "type": "synagogue",
+    "name": "שומרי שבת",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.01997850734021,
+      "longitude": 35.106757853157056
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:64",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 64,
+        "biet_kneset_name": "שומרי שבת ",
+        "adress": "שביל בר כוכבא ",
+        "gabai1": "מיכה אדרי 0544991030",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 210329.44,
+        "Y": 769435.34
+      }
+    },
+    "address": "שביל בר כוכבא",
+    "extra": {
+      "gabbai": "מיכה אדרי 0544991030"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::65",
+    "type": "synagogue",
+    "name": "שלמה המלך",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.01400260620705,
+      "longitude": 35.11203661434851
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:65",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 65,
+        "biet_kneset_name": "שלמה המלך ",
+        "adress": "הצנחנים 2",
+        "gabai1": "אורן כנפו 0547466625",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 210822.07,
+        "Y": 768772.13
+      }
+    },
+    "address": "הצנחנים 2",
+    "extra": {
+      "gabbai": "אורן כנפו 0547466625"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::66",
+    "type": "synagogue",
+    "name": "שערי צדק",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.007224034209194,
+      "longitude": 35.101057428716175
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:66",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 66,
+        "biet_kneset_name": "שערי צדק ",
+        "adress": "ויינסבורג 3",
+        "gabai1": "ששון אילן 0524290430",
+        "gabai2": "חדד מיכאל 0539912388",
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 209795.44,
+        "Y": 768021.3
+      }
+    },
+    "address": "ויינסבורג 3",
+    "extra": {
+      "gabbai": "ששון אילן 0524290430"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::67",
+    "type": "synagogue",
+    "name": "שערי ציון",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 32.99719979184516,
+      "longitude": 35.101518091742335
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:67",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 67,
+        "biet_kneset_name": "שערי ציון ",
+        "adress": "יפה נוף 22",
+        "gabai1": "רמי שרעבי 0522668714",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 209837.4,
+        "Y": 766909.51
+      }
+    },
+    "address": "יפה נוף 22",
+    "extra": {
+      "gabbai": "רמי שרעבי 0522668714"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::68",
+    "type": "synagogue",
+    "name": "תהילה לדוד [ממעמקים קראתיך ה'",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.008195951637894,
+      "longitude": 35.09483600320654
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:68",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 68,
+        "biet_kneset_name": "תהילה לדוד [ממעמקים קראתיך ה'",
+        "adress": "שביל הגנים \\ גולומב 6",
+        "gabai1": "רונן שמואלי 0525619323",
+        "gabai2": "אברהם 0547235998",
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 209214.18,
+        "Y": 768129.68
+      }
+    },
+    "address": "שביל הגנים \\ גולומב 6",
+    "extra": {
+      "gabbai": "רונן שמואלי 0525619323"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::69",
+    "type": "synagogue",
+    "name": "תהילים",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.00904387823057,
+      "longitude": 35.10736619279365
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:69",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 69,
+        "biet_kneset_name": "תהילים ",
+        "adress": "רמב\"ם 2",
+        "gabai1": "ניסים כהן 0525981963",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 210385.16,
+        "Y": 768222.57
+      }
+    },
+    "address": "רמב\"ם 2",
+    "extra": {
+      "gabbai": "ניסים כהן 0525981963"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::70",
+    "type": "synagogue",
+    "name": "תפילה לדוד",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.01881063448798,
+      "longitude": 35.106133462223475
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:70",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 70,
+        "biet_kneset_name": "תפילה לדוד ",
+        "adress": "החשמונים 20",
+        "gabai1": "מאיר אבורמד 0527253954",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 210270.98,
+        "Y": 769305.87
+      }
+    },
+    "address": "החשמונים 20",
+    "extra": {
+      "gabbai": "מאיר אבורמד 0527253954"
+    }
+  },
+  {
+    "id": "arcgis:nahariya::71",
+    "type": "synagogue",
+    "name": "תקוותנו \\אור אליהו",
+    "cityHint": "נהריה",
+    "location": {
+      "latitude": 33.004829716968075,
+      "longitude": 35.094368251828875
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:nahariya",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:nahariya:71",
+      "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1",
+      "fetchedAt": "2026-06-19T15:48:54.036Z",
+      "raw": {
+        "OBJECTID": 71,
+        "biet_kneset_name": "תקוותנו \\אור אליהו ",
+        "adress": "אחד העם 6",
+        "gabai1": "אפי פרץ 0507586808",
+        "gabai2": null,
+        "praying_time": null,
+        "praying_time_weekend": null,
+        "X": 209170.08,
+        "Y": 767756.39
+      }
+    },
+    "address": "אחד העם 6",
+    "extra": {
+      "gabbai": "אפי פרץ 0507586808"
+    }
+  }
+]

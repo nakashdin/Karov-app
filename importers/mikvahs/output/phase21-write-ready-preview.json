@@ -1,0 +1,455 @@
+[
+  {
+    "id": "mikveh-bnei-brak-32.08962_34.84233",
+    "name": "מקווה שיכון ה'",
+    "type": "mikveh",
+    "cityId": "בני ברק",
+    "address": "זבולון המר 13, בני ברק",
+    "location": {
+      "latitude": 32.089623293857734,
+      "longitude": 34.84232790410763
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "phone": "035794661",
+    "mikvehGender": "נשים",
+    "sourceName": "עיריית בני ברק — מחלקת מקוואות",
+    "sourceUrl": "https://www.bnei-brak.muni.il/mikvahs/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "provenance": {
+        "sourceId": "council:bnei-brak:mikvah",
+        "sourceUrl": "https://www.bnei-brak.muni.il/mikvahs/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-modiin-illit-31.92884_35.04276",
+    "name": "מקווה נשים מסילת יוסף",
+    "type": "mikveh",
+    "cityId": "מודיעין עילית",
+    "address": "מסילת יוסף 13, מודיעין עילית",
+    "location": {
+      "latitude": 31.928839039655603,
+      "longitude": 35.04276133301252
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "phone": "089741758",
+    "mikvehGender": "נשים",
+    "attendant": "גב' טובים",
+    "sourceName": "עיריית מודיעין עילית",
+    "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "provenance": {
+        "sourceId": "council:modiin-illit:mikvah",
+        "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-modiin-illit-31.93446_35.04198",
+    "name": "מקווה נשים אבני נזר",
+    "type": "mikveh",
+    "cityId": "מודיעין עילית",
+    "address": "אבני נזר 14, מודיעין עילית",
+    "location": {
+      "latitude": 31.934464750801887,
+      "longitude": 35.04198222949125
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "phone": "089740156",
+    "mikvehGender": "נשים",
+    "attendant": "גב' בן שמחון",
+    "sourceName": "עיריית מודיעין עילית",
+    "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "provenance": {
+        "sourceId": "council:modiin-illit:mikvah",
+        "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-modiin-illit-31.93818_35.04486",
+    "name": "מקווה נשים יהודה הנשיא",
+    "type": "mikveh",
+    "cityId": "מודיעין עילית",
+    "address": "יהודה הנשיא 26 א, מודיעין עילית",
+    "location": {
+      "latitude": 31.93818058627961,
+      "longitude": 35.044859006242696
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "phone": "089742091",
+    "mikvehGender": "נשים",
+    "attendant": "גב' גיאת",
+    "sourceName": "עיריית מודיעין עילית",
+    "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "provenance": {
+        "sourceId": "council:modiin-illit:mikvah",
+        "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-modiin-illit-31.92746_35.04552",
+    "name": "מקווה נשים נאות הפסגה",
+    "type": "mikveh",
+    "cityId": "מודיעין עילית",
+    "address": "הריטב\"א 4, מודיעין עילית",
+    "location": {
+      "latitude": 31.92745980974869,
+      "longitude": 35.04552037548291
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "phone": "089745035",
+    "mikvehGender": "נשים",
+    "attendant": "גב' רוזנבלום",
+    "sourceName": "עיריית מודיעין עילית",
+    "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "provenance": {
+        "sourceId": "council:modiin-illit:mikvah",
+        "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-modiin-illit-31.92402_35.04055",
+    "name": "מקווה נשים חזון דוד",
+    "type": "mikveh",
+    "cityId": "מודיעין עילית",
+    "address": "חזון דוד 19, מודיעין עילית",
+    "location": {
+      "latitude": 31.924023646656934,
+      "longitude": 35.04054753093898
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "phone": "089741839",
+    "mikvehGender": "נשים",
+    "attendant": "גב' שניר",
+    "sourceName": "עיריית מודיעין עילית",
+    "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "provenance": {
+        "sourceId": "council:modiin-illit:mikvah",
+        "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-modiin-illit-31.92259_35.05038",
+    "name": "מקווה גברים קהילות יעקב",
+    "type": "mikveh",
+    "cityId": "מודיעין עילית",
+    "address": "קהילות יעקב 1, מודיעין עילית",
+    "location": {
+      "latitude": 31.922594572990285,
+      "longitude": 35.05037542031131
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "openingHours": "א'-ה' בבוקר עד 10:30",
+    "mikvehGender": "גברים",
+    "attendant": "הרב מרדכי דוד אדלר",
+    "sourceName": "עיריית מודיעין עילית",
+    "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "provenance": {
+        "sourceId": "council:modiin-illit:mikvah",
+        "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-modiin-illit-31.93333_35.04206",
+    "name": "מקווה גברים זכרון דוד",
+    "type": "mikveh",
+    "cityId": "מודיעין עילית",
+    "address": "שדי חמד 13, מודיעין עילית",
+    "location": {
+      "latitude": 31.933329207912497,
+      "longitude": 35.04206271018249
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "mikvehGender": "גברים",
+    "sourceName": "עיריית מודיעין עילית",
+    "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "provenance": {
+        "sourceId": "council:modiin-illit:mikvah",
+        "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-modiin-illit-31.93762_35.04094",
+    "name": "מקווה גברים היכל יהושע",
+    "type": "mikveh",
+    "cityId": "מודיעין עילית",
+    "address": "רשב\"י 21, מודיעין עילית",
+    "location": {
+      "latitude": 31.937615342530112,
+      "longitude": 35.04093697816328
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "mikvehGender": "גברים",
+    "sourceName": "עיריית מודיעין עילית",
+    "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "provenance": {
+        "sourceId": "council:modiin-illit:mikvah",
+        "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-modiin-illit-31.92981_35.03797",
+    "name": "מקווה כלים אבני נזר 46",
+    "type": "mikveh",
+    "cityId": "מודיעין עילית",
+    "address": "אבני נזר 46, מודיעין עילית",
+    "location": {
+      "latitude": 31.929805192965382,
+      "longitude": 35.03796806482275
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "mikvehGender": "כלים",
+    "sourceName": "עיריית מודיעין עילית",
+    "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "provenance": {
+        "sourceId": "council:modiin-illit:mikvah",
+        "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-beitar-illit-31.69648_35.12223",
+    "name": "מקווה הבעש\"ט",
+    "type": "mikveh",
+    "cityId": "ביתר עילית",
+    "address": "הבעש\"ט 8, ביתר עילית",
+    "location": {
+      "latitude": 31.696481327355254,
+      "longitude": 35.122231968646624
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "phone": "025806059",
+    "openingHours": "א'-ה' עד 22:00 / ליל שבת חצי שעה אחרי הדלקת נרות / מוצ\"ש 22:30",
+    "mikvehGender": "נשים",
+    "sourceName": "עיריית ביתר עילית",
+    "sourceUrl": "https://www.betar-illit.muni.il/מקוואות/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "provenance": {
+        "sourceId": "council:beitar-illit:mikvah",
+        "sourceUrl": "https://www.betar-illit.muni.il/מקוואות/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-beitar-illit-31.69421_35.11865",
+    "name": "מקווה אריאלי",
+    "type": "mikveh",
+    "cityId": "ביתר עילית",
+    "address": "אריאלי 3, ביתר עילית",
+    "location": {
+      "latitude": 31.69421178724213,
+      "longitude": 35.118651504150826
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "phone": "025808444",
+    "openingHours": "א'-ה' עד 23:00 / ליל שבת חצי שעה אחרי הדלקת נרות / מוצ\"ש 23:00",
+    "mikvehGender": "נשים",
+    "sourceName": "עיריית ביתר עילית",
+    "sourceUrl": "https://www.betar-illit.muni.il/מקוואות/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "provenance": {
+        "sourceId": "council:beitar-illit:mikvah",
+        "sourceUrl": "https://www.betar-illit.muni.il/מקוואות/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-beitar-illit-31.69412_35.10985",
+    "name": "מקווה קנייבסקי",
+    "type": "mikveh",
+    "cityId": "ביתר עילית",
+    "address": "קנייבסקי 9, ביתר עילית",
+    "location": {
+      "latitude": 31.694122639086686,
+      "longitude": 35.10984908632962
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "phone": "025725649",
+    "openingHours": "א'-ה' עד 22:00 / מוצ\"ש 22:30",
+    "mikvehGender": "נשים",
+    "sourceName": "עיריית ביתר עילית",
+    "sourceUrl": "https://www.betar-illit.muni.il/מקוואות/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "provenance": {
+        "sourceId": "council:beitar-illit:mikvah",
+        "sourceUrl": "https://www.betar-illit.muni.il/מקוואות/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-beitar-illit-31.70332_35.11580",
+    "name": "מקווה ברים",
+    "type": "mikveh",
+    "cityId": "ביתר עילית",
+    "address": "ברים 7, ביתר עילית",
+    "location": {
+      "latitude": 31.703317393278397,
+      "longitude": 35.115802936637714
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "phone": "025800669",
+    "openingHours": "א'-ה' עד 22:00 / מוצ\"ש 22:30 / שישי הכנות 12:00-13:00",
+    "mikvehGender": "נשים",
+    "sourceName": "עיריית ביתר עילית",
+    "sourceUrl": "https://www.betar-illit.muni.il/מקוואות/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "provenance": {
+        "sourceId": "council:beitar-illit:mikvah",
+        "sourceUrl": "https://www.betar-illit.muni.il/מקוואות/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-beitar-illit-31.69819_35.09589",
+    "name": "מקווה הרב שך",
+    "type": "mikveh",
+    "cityId": "ביתר עילית",
+    "address": "הרב שך 80, ביתר עילית",
+    "location": {
+      "latitude": 31.69818972255456,
+      "longitude": 35.09588941499567
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "phone": "025488352",
+    "openingHours": "א'-ה' עד 22:00 / מוצ\"ש 22:30",
+    "mikvehGender": "נשים",
+    "sourceName": "עיריית ביתר עילית",
+    "sourceUrl": "https://www.betar-illit.muni.il/מקוואות/",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "provenance": {
+        "sourceId": "council:beitar-illit:mikvah",
+        "sourceUrl": "https://www.betar-illit.muni.il/מקוואות/",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-elad-32.04907_34.95784",
+    "name": "מקווה בן עוזיאל",
+    "type": "mikveh",
+    "cityId": "אלעד",
+    "address": "בן עוזיאל 13, אלעד",
+    "location": {
+      "latitude": 32.04906986659931,
+      "longitude": 34.9578359897811
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "phone": "039090513",
+    "openingHours": "חצי שעה לפני השקיעה עד 22:00 חורף / 23:00 קיץ",
+    "mikvehGender": "נשים",
+    "attendant": "מלכה יעקובזון",
+    "sourceName": "עיריית אלעד — מחלקת דת",
+    "sourceUrl": "https://www.elad.muni.il/Departments/Pages/Religion.aspx",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "accessibility": "נגיש",
+      "provenance": {
+        "sourceId": "council:elad:mikvah",
+        "sourceUrl": "https://www.elad.muni.il/Departments/Pages/Religion.aspx",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  },
+  {
+    "id": "mikveh-elad-32.05003_34.95608",
+    "name": "מקווה גברים ר' מאיר",
+    "type": "mikveh",
+    "cityId": "אלעד",
+    "address": "ר' מאיר 17, אלעד",
+    "location": {
+      "latitude": 32.05002900112115,
+      "longitude": 34.95607628379309
+    },
+    "source": "seed",
+    "locationPrecision": "address",
+    "openingHours": "א'-ה' 04:00-10:30",
+    "mikvehGender": "גברים",
+    "sourceName": "עיריית אלעד — מחלקת דת",
+    "sourceUrl": "https://www.elad.muni.il/Departments/Pages/Religion.aspx",
+    "extra": {
+      "license": "council-public",
+      "coordSource": "govmap-ADDR_V1",
+      "provenance": {
+        "sourceId": "council:elad:mikvah",
+        "sourceUrl": "https://www.elad.muni.il/Departments/Pages/Religion.aspx",
+        "fetchedAt": "2026-06-22"
+      }
+    }
+  }
+]

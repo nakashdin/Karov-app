@@ -1,0 +1,2657 @@
+[
+  {
+    "id": "municipal:modiin-illit:mikvah::modiin-illit--1",
+    "type": "mikveh",
+    "name": "מקווה קרית ספר",
+    "address": "מסילת יוסף 13",
+    "cityHint": "מודיעין עילית",
+    "phone": "089741758",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:modiin-illit:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "modiin-illit-נשים-1",
+      "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "קרית ספר",
+          "מסילת יוסף 13",
+          "08-9741758",
+          "גב' טובים",
+          "נתיבות המשפט 58 0527161300"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מודיעין עילית",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "neighborhood": "קרית ספר",
+      "balanit": "גב' טובים"
+    }
+  },
+  {
+    "id": "municipal:modiin-illit:mikvah::modiin-illit--2",
+    "type": "mikveh",
+    "name": "מקווה קרית ספר",
+    "address": "אבני נזר 14",
+    "cityHint": "מודיעין עילית",
+    "phone": "089740156",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:modiin-illit:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "modiin-illit-נשים-2",
+      "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "קרית ספר",
+          "אבני נזר 14",
+          "08-9740156",
+          "גב' בן שמחון",
+          "שדי חמד 9 0527688003"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מודיעין עילית",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "neighborhood": "קרית ספר",
+      "balanit": "גב' בן שמחון"
+    }
+  },
+  {
+    "id": "municipal:modiin-illit:mikvah::modiin-illit--3",
+    "type": "mikveh",
+    "name": "מקווה ברכפלד",
+    "address": "שד' יחזקאל 33",
+    "cityHint": "מודיעין עילית",
+    "phone": "089743656",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:modiin-illit:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "modiin-illit-נשים-3",
+      "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "ברכפלד",
+          "שד' יחזקאל 33",
+          "08-9743656",
+          "גב' שמואלי מ\"מ גב' שוורץ",
+          "חפץ חיים 12 0504104385"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מודיעין עילית",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "neighborhood": "ברכפלד",
+      "balanit": "גב' שמואלי מ\"מ גב' שוורץ"
+    }
+  },
+  {
+    "id": "municipal:modiin-illit:mikvah::modiin-illit--4",
+    "type": "mikveh",
+    "name": "מקווה ברכפלד",
+    "address": "יהודה הנשיא 26 א'",
+    "cityHint": "מודיעין עילית",
+    "phone": "089742091",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:modiin-illit:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "modiin-illit-נשים-4",
+      "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "ברכפלד",
+          "יהודה הנשיא 26 א'",
+          "08-9742091",
+          "גב' גיאת",
+          "ברשב\"י 46/9 0533149307"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מודיעין עילית",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "neighborhood": "ברכפלד",
+      "balanit": "גב' גיאת"
+    }
+  },
+  {
+    "id": "municipal:modiin-illit:mikvah::modiin-illit--5",
+    "type": "mikveh",
+    "name": "מקווה חפציבה",
+    "address": "אלישיב 23",
+    "cityHint": "מודיעין עילית",
+    "phone": "089740578",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:modiin-illit:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "modiin-illit-נשים-5",
+      "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "חפציבה",
+          "אלישיב 23",
+          "08-9740578",
+          "גב' תורג'מן",
+          "הריטב\"א 16 0527670128"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מודיעין עילית",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "neighborhood": "חפציבה",
+      "balanit": "גב' תורג'מן"
+    }
+  },
+  {
+    "id": "municipal:modiin-illit:mikvah::modiin-illit--6",
+    "type": "mikveh",
+    "name": "מקווה נאות הפסגה",
+    "address": "הריטב&rdquo;א 4",
+    "cityHint": "מודיעין עילית",
+    "phone": "089745035",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:modiin-illit:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "modiin-illit-נשים-6",
+      "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "נאות הפסגה",
+          "הריטב&rdquo;א 4",
+          "08-9745035",
+          "גב' רוזנבלום",
+          "ריטב\"א 5 0533184869"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מודיעין עילית",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "neighborhood": "נאות הפסגה",
+      "balanit": "גב' רוזנבלום"
+    }
+  },
+  {
+    "id": "municipal:modiin-illit:mikvah::modiin-illit--7",
+    "type": "mikveh",
+    "name": "מקווה חזון דוד",
+    "address": "חזון דוד 19",
+    "cityHint": "מודיעין עילית",
+    "phone": "089741839",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:modiin-illit:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "modiin-illit-נשים-7",
+      "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "חזון דוד",
+          "חזון דוד 19",
+          "08-9741839",
+          "גב' שניר",
+          "משך חכמה 18 0527173850"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מודיעין עילית",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "neighborhood": "חזון דוד",
+      "balanit": "גב' שניר"
+    }
+  },
+  {
+    "id": "municipal:modiin-illit:mikvah::modiin-illit--1",
+    "type": "mikveh",
+    "name": "מקווה קרית ספר (גברים)",
+    "address": "אבני נזר 16",
+    "cityHint": "מודיעין עילית",
+    "tags": [
+      "gender:גברים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:modiin-illit:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "modiin-illit-גברים-1",
+      "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "קרית ספר",
+          "אבני נזר 16"
+        ],
+        "table": 1
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מודיעין עילית",
+      "gender": "גברים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "neighborhood": "קרית ספר"
+    }
+  },
+  {
+    "id": "municipal:modiin-illit:mikvah::modiin-illit--2",
+    "type": "mikveh",
+    "name": "מקווה קרית ספר (גברים)",
+    "address": "'זכרון דוד'- שדי חמד 13",
+    "cityHint": "מודיעין עילית",
+    "tags": [
+      "gender:גברים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:modiin-illit:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "modiin-illit-גברים-2",
+      "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "קרית ספר",
+          "'זכרון דוד'- שדי חמד 13"
+        ],
+        "table": 1
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מודיעין עילית",
+      "gender": "גברים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "neighborhood": "קרית ספר"
+    }
+  },
+  {
+    "id": "municipal:modiin-illit:mikvah::modiin-illit--3",
+    "type": "mikveh",
+    "name": "מקווה קרית ספר (גברים)",
+    "address": "'זכרון משה'- נתיבות המשפט 40",
+    "cityHint": "מודיעין עילית",
+    "tags": [
+      "gender:גברים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:modiin-illit:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "modiin-illit-גברים-3",
+      "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "קרית ספר",
+          "'זכרון משה'- נתיבות המשפט 40"
+        ],
+        "table": 1
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מודיעין עילית",
+      "gender": "גברים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "neighborhood": "קרית ספר"
+    }
+  },
+  {
+    "id": "municipal:modiin-illit:mikvah::modiin-illit--4",
+    "type": "mikveh",
+    "name": "מקווה קרית ספר (גברים)",
+    "address": "מסילת יוסף 13",
+    "cityHint": "מודיעין עילית",
+    "tags": [
+      "gender:גברים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:modiin-illit:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "modiin-illit-גברים-4",
+      "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "קרית ספר",
+          "מסילת יוסף 13"
+        ],
+        "table": 1
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מודיעין עילית",
+      "gender": "גברים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "neighborhood": "קרית ספר"
+    }
+  },
+  {
+    "id": "municipal:modiin-illit:mikvah::modiin-illit--5",
+    "type": "mikveh",
+    "name": "מקווה קרית ספר (גברים)",
+    "address": "חזון דוד 19",
+    "cityHint": "מודיעין עילית",
+    "tags": [
+      "gender:גברים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:modiin-illit:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "modiin-illit-גברים-5",
+      "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "קרית ספר",
+          "חזון דוד 19"
+        ],
+        "table": 1
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מודיעין עילית",
+      "gender": "גברים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "neighborhood": "קרית ספר"
+    }
+  },
+  {
+    "id": "municipal:modiin-illit:mikvah::modiin-illit--6",
+    "type": "mikveh",
+    "name": "מקווה ברכפלד (גברים)",
+    "address": "שד' יחזקאל 33",
+    "cityHint": "מודיעין עילית",
+    "tags": [
+      "gender:גברים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:modiin-illit:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "modiin-illit-גברים-6",
+      "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "ברכפלד",
+          "שד' יחזקאל 33"
+        ],
+        "table": 1
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מודיעין עילית",
+      "gender": "גברים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "neighborhood": "ברכפלד"
+    }
+  },
+  {
+    "id": "municipal:modiin-illit:mikvah::modiin-illit--7",
+    "type": "mikveh",
+    "name": "מקווה ברכפלד (גברים)",
+    "address": "'היכל יהושע'- ירוסלב- רשב&rdquo;י 21",
+    "cityHint": "מודיעין עילית",
+    "tags": [
+      "gender:גברים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:modiin-illit:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "modiin-illit-גברים-7",
+      "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "ברכפלד",
+          "'היכל יהושע'- ירוסלב- רשב&rdquo;י 21"
+        ],
+        "table": 1
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מודיעין עילית",
+      "gender": "גברים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "neighborhood": "ברכפלד"
+    }
+  },
+  {
+    "id": "municipal:modiin-illit:mikvah::modiin-illit--8",
+    "type": "mikveh",
+    "name": "מקווה ברכפלד (גברים)",
+    "address": "יהודה הנשיא 26א'",
+    "cityHint": "מודיעין עילית",
+    "tags": [
+      "gender:גברים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:modiin-illit:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "modiin-illit-גברים-8",
+      "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "ברכפלד",
+          "יהודה הנשיא 26א'"
+        ],
+        "table": 1
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מודיעין עילית",
+      "gender": "גברים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "neighborhood": "ברכפלד"
+    }
+  },
+  {
+    "id": "municipal:modiin-illit:mikvah::modiin-illit--9",
+    "type": "mikveh",
+    "name": "מקווה חפציבה (גברים)",
+    "address": "קהילות יעקב",
+    "cityHint": "מודיעין עילית",
+    "tags": [
+      "gender:גברים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:modiin-illit:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "modiin-illit-גברים-9",
+      "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "חפציבה",
+          "קהילות יעקב"
+        ],
+        "table": 1
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מודיעין עילית",
+      "gender": "גברים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "neighborhood": "חפציבה"
+    }
+  },
+  {
+    "id": "municipal:modiin-illit:mikvah::modiin-illit--10",
+    "type": "mikveh",
+    "name": "מקווה נאות הפסגה (גברים)",
+    "address": "הריטב&rdquo;א 4",
+    "cityHint": "מודיעין עילית",
+    "tags": [
+      "gender:גברים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:modiin-illit:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "modiin-illit-גברים-10",
+      "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "נאות הפסגה",
+          "הריטב&rdquo;א 4"
+        ],
+        "table": 1
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מודיעין עילית",
+      "gender": "גברים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "neighborhood": "נאות הפסגה"
+    }
+  },
+  {
+    "id": "municipal:modiin-illit:mikvah::modiin-illit--1",
+    "type": "mikveh",
+    "name": "מקווה קרית ספר (כלים)",
+    "address": "אבני נזר 14",
+    "cityHint": "מודיעין עילית",
+    "tags": [
+      "gender:כלים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:modiin-illit:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "modiin-illit-כלים-1",
+      "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "קרית ספר",
+          "אבני נזר 14"
+        ],
+        "table": 2
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מודיעין עילית",
+      "gender": "כלים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "neighborhood": "קרית ספר"
+    }
+  },
+  {
+    "id": "municipal:modiin-illit:mikvah::modiin-illit--2",
+    "type": "mikveh",
+    "name": "מקווה קרית ספר (כלים)",
+    "address": "אבני נזר 46 - חצר אחורית",
+    "cityHint": "מודיעין עילית",
+    "tags": [
+      "gender:כלים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:modiin-illit:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "modiin-illit-כלים-2",
+      "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "קרית ספר",
+          "אבני נזר 46 - חצר אחורית"
+        ],
+        "table": 2
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מודיעין עילית",
+      "gender": "כלים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "neighborhood": "קרית ספר"
+    }
+  },
+  {
+    "id": "municipal:modiin-illit:mikvah::modiin-illit--3",
+    "type": "mikveh",
+    "name": "מקווה קרית ספר (כלים)",
+    "address": "חזון דוד 19 - נגישות לרכבים מרחוב שערי תשובה",
+    "cityHint": "מודיעין עילית",
+    "tags": [
+      "gender:כלים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:modiin-illit:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "modiin-illit-כלים-3",
+      "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "קרית ספר",
+          "חזון דוד 19 - נגישות לרכבים מרחוב שערי תשובה"
+        ],
+        "table": 2
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מודיעין עילית",
+      "gender": "כלים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "neighborhood": "קרית ספר"
+    }
+  },
+  {
+    "id": "municipal:modiin-illit:mikvah::modiin-illit--4",
+    "type": "mikveh",
+    "name": "מקווה ברכפלד (כלים)",
+    "address": "שד' יחזקאל 33",
+    "cityHint": "מודיעין עילית",
+    "tags": [
+      "gender:כלים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:modiin-illit:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "modiin-illit-כלים-4",
+      "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "ברכפלד",
+          "שד' יחזקאל 33"
+        ],
+        "table": 2
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מודיעין עילית",
+      "gender": "כלים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "neighborhood": "ברכפלד"
+    }
+  },
+  {
+    "id": "municipal:modiin-illit:mikvah::modiin-illit--5",
+    "type": "mikveh",
+    "name": "מקווה ברכפלד (כלים)",
+    "address": "יהודה הנשיא 26 א'",
+    "cityHint": "מודיעין עילית",
+    "tags": [
+      "gender:כלים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:modiin-illit:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "modiin-illit-כלים-5",
+      "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "ברכפלד",
+          "יהודה הנשיא 26 א'"
+        ],
+        "table": 2
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מודיעין עילית",
+      "gender": "כלים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "neighborhood": "ברכפלד"
+    }
+  },
+  {
+    "id": "municipal:modiin-illit:mikvah::modiin-illit--6",
+    "type": "mikveh",
+    "name": "מקווה חפציבה (כלים)",
+    "address": "קהילות יעקב 1",
+    "cityHint": "מודיעין עילית",
+    "tags": [
+      "gender:כלים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:modiin-illit:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "modiin-illit-כלים-6",
+      "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "חפציבה",
+          "קהילות יעקב 1"
+        ],
+        "table": 2
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מודיעין עילית",
+      "gender": "כלים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "neighborhood": "חפציבה"
+    }
+  },
+  {
+    "id": "municipal:modiin-illit:mikvah::modiin-illit--7",
+    "type": "mikveh",
+    "name": "מקווה נאות הפסגה (כלים)",
+    "address": "הריטב&rdquo;א 4",
+    "cityHint": "מודיעין עילית",
+    "tags": [
+      "gender:כלים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:modiin-illit:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "modiin-illit-כלים-7",
+      "sourceUrl": "https://www.modil.org.il/רשימת-המקוואות/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "נאות הפסגה",
+          "הריטב&rdquo;א 4"
+        ],
+        "table": 2
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מודיעין עילית",
+      "gender": "כלים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "neighborhood": "נאות הפסגה"
+    }
+  },
+  {
+    "id": "municipal:maale-adumim:mikvah::maale-adumim--1",
+    "type": "mikveh",
+    "name": "מקווה מצפה נבו",
+    "address": "מצפה נבו 96",
+    "cityHint": "מעלה אדומים",
+    "phone": "025351732",
+    "openingHours": "חורף: ימים א'-ה': 18:30-22:00 קיץ : ימים א'-ה': 19:30-22:30 | שישי/ערב חג: 30 דק' לאחר כניסת השבת או החג למשך שעה ועשר דק' | מוצ\"ש/חג: שעון חורף: 19:00-22:00 שעון קיץ: שעה לאחר צאת השבת למשך שעה וחצי",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:maale-adumim:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "maale-adumim-נשים-1",
+      "sourceUrl": "https://maale-adummim.muni.il/מקוואות/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "מצפה נבו",
+          "מצפה נבו 96",
+          "02-5351732",
+          "חורף: ימים א'-ה': 18:30-22:00 קיץ : ימים א'-ה': 19:30-22:30",
+          "30 דק' לאחר כניסת השבת או החג למשך שעה ועשר דק'",
+          "שעון חורף: 19:00-22:00 שעון קיץ: שעה לאחר צאת השבת למשך שעה וחצי"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מעלה אדומים",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "neighborhood": "מצפה נבו",
+      "hoursShabbatEve": "30 דק' לאחר כניסת השבת או החג למשך שעה ועשר דק'",
+      "hoursMotzashSham": "שעון חורף: 19:00-22:00 שעון קיץ: שעה לאחר צאת השבת למשך שעה וחצי"
+    }
+  },
+  {
+    "id": "municipal:maale-adumim:mikvah::maale-adumim--2",
+    "type": "mikveh",
+    "name": "מקווה הנחלים",
+    "address": "הנחלים 96",
+    "cityHint": "מעלה אדומים",
+    "phone": "025352007",
+    "openingHours": "חורף: ימים א'-ה': 18:30-22:00 קיץ : ימים א'-ה': 18:30-22:00 | שישי/ערב חג: 30 דק' לאחר כניסת השבת או החג למשך שעה ועשר דק' | מוצ\"ש/חג: שעון חורף: 19:00-22:00 שעון קיץ: שעה לאחר צאת השבת למשך שעה וחצי",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:maale-adumim:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "maale-adumim-נשים-2",
+      "sourceUrl": "https://maale-adummim.muni.il/מקוואות/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "הנחלים",
+          "הנחלים 96",
+          "02-5352007",
+          "חורף: ימים א'-ה': 18:30-22:00 קיץ : ימים א'-ה': 18:30-22:00",
+          "30 דק' לאחר כניסת השבת או החג למשך שעה ועשר דק'",
+          "שעון חורף: 19:00-22:00 שעון קיץ: שעה לאחר צאת השבת למשך שעה וחצי"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מעלה אדומים",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "neighborhood": "הנחלים",
+      "hoursShabbatEve": "30 דק' לאחר כניסת השבת או החג למשך שעה ועשר דק'",
+      "hoursMotzashSham": "שעון חורף: 19:00-22:00 שעון קיץ: שעה לאחר צאת השבת למשך שעה וחצי"
+    }
+  },
+  {
+    "id": "municipal:maale-adumim:mikvah::maale-adumim--3",
+    "type": "mikveh",
+    "name": "מקווה פרי מגדים (03)",
+    "address": "פרי מגדים 105",
+    "cityHint": "מעלה אדומים",
+    "phone": "025901022",
+    "openingHours": "חורף: ימים א'-ה': 17:30-21:00 קיץ : ימים א'-ה': 19:30-22:30 | שישי/ערב חג: 30 דק' לאחר כניסת השבת או החג למשך שעה ועשר דק' | מוצ\"ש/חג: שעון חורף: 19:00-22:00 שעון קיץ: שעה לאחר צאת השבת למשך שעה וחצי",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:maale-adumim:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "maale-adumim-נשים-3",
+      "sourceUrl": "https://maale-adummim.muni.il/מקוואות/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "פרי מגדים (03)",
+          "פרי מגדים 105",
+          "02-5901022",
+          "חורף: ימים א'-ה': 17:30-21:00 קיץ : ימים א'-ה': 19:30-22:30",
+          "30 דק' לאחר כניסת השבת או החג למשך שעה ועשר דק'",
+          "שעון חורף: 19:00-22:00 שעון קיץ: שעה לאחר צאת השבת למשך שעה וחצי"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מעלה אדומים",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "neighborhood": "פרי מגדים (03)",
+      "hoursShabbatEve": "30 דק' לאחר כניסת השבת או החג למשך שעה ועשר דק'",
+      "hoursMotzashSham": "שעון חורף: 19:00-22:00 שעון קיץ: שעה לאחר צאת השבת למשך שעה וחצי"
+    }
+  },
+  {
+    "id": "municipal:maale-adumim:mikvah::maale-adumim--4",
+    "type": "mikveh",
+    "name": "מקווה צמח השדה (06)",
+    "address": "הערבה 3",
+    "cityHint": "מעלה אדומים",
+    "phone": "025909385",
+    "openingHours": "חורף: ימים א'-ה': 18:30-22:00 קיץ : ימים א'-ה': 19:30-22:30 | שישי/ערב חג: 30 דק' לאחר כניסת השבת או החג למשך שעה ועשר דק' | מוצ\"ש/חג: שעון חורף: 19:00-22:00 שעון קיץ: שעה לאחר צאת השבת למשך שעה וחצי",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:maale-adumim:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "maale-adumim-נשים-4",
+      "sourceUrl": "https://maale-adummim.muni.il/מקוואות/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "צמח השדה (06)",
+          "הערבה 3",
+          "02-5909385",
+          "חורף: ימים א'-ה': 18:30-22:00 קיץ : ימים א'-ה': 19:30-22:30",
+          "30 דק' לאחר כניסת השבת או החג למשך שעה ועשר דק'",
+          "שעון חורף: 19:00-22:00 שעון קיץ: שעה לאחר צאת השבת למשך שעה וחצי"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מעלה אדומים",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "neighborhood": "צמח השדה (06)",
+      "hoursShabbatEve": "30 דק' לאחר כניסת השבת או החג למשך שעה ועשר דק'",
+      "hoursMotzashSham": "שעון חורף: 19:00-22:00 שעון קיץ: שעה לאחר צאת השבת למשך שעה וחצי"
+    }
+  },
+  {
+    "id": "municipal:maale-adumim:mikvah::maale-adumim--5",
+    "type": "mikveh",
+    "name": "מקווה נופי הסלע",
+    "address": "השיש 35",
+    "cityHint": "מעלה אדומים",
+    "phone": "025905632",
+    "openingHours": "חורף: ימים א'-ה': 18:30-22:00 קיץ : ימים א'-ה': 19:30-22:30 | שישי/ערב חג: 30 דק' לאחר כניסת השבת או החג למשך שעה ועשר דק' | מוצ\"ש/חג: שעון חורף: 19:00-22:00 שעון קיץ: שעה לאחר צאת השבת למשך שעה וחצי",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:maale-adumim:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "maale-adumim-נשים-5",
+      "sourceUrl": "https://maale-adummim.muni.il/מקוואות/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "נופי הסלע",
+          "השיש 35",
+          "02-5905632",
+          "חורף: ימים א'-ה': 18:30-22:00 קיץ : ימים א'-ה': 19:30-22:30",
+          "30 דק' לאחר כניסת השבת או החג למשך שעה ועשר דק'",
+          "שעון חורף: 19:00-22:00 שעון קיץ: שעה לאחר צאת השבת למשך שעה וחצי"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מעלה אדומים",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "neighborhood": "נופי הסלע",
+      "hoursShabbatEve": "30 דק' לאחר כניסת השבת או החג למשך שעה ועשר דק'",
+      "hoursMotzashSham": "שעון חורף: 19:00-22:00 שעון קיץ: שעה לאחר צאת השבת למשך שעה וחצי"
+    }
+  },
+  {
+    "id": "municipal:maale-adumim:mikvah::maale-adumim--6",
+    "type": "mikveh",
+    "name": "מקווה גבעת המייסדים",
+    "address": "מקווה \"באר מיכל\" - בתיאום עם הבלנית חנה 0506658783 או אסתר אבילחק 0548440007",
+    "cityHint": "מעלה אדומים",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:maale-adumim:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "maale-adumim-נשים-6",
+      "sourceUrl": "https://maale-adummim.muni.il/מקוואות/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "גבעת המייסדים",
+          "מקווה \"באר מיכל\" - בתיאום עם הבלנית חנה 0506658783 או אסתר אבילחק 0548440007"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מעלה אדומים",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "neighborhood": "גבעת המייסדים"
+    }
+  },
+  {
+    "id": "municipal:maale-adumim:mikvah::maale-adumim--7",
+    "type": "mikveh",
+    "name": "מקווה לבקשה מיוחדת ולבירורים ניתן לפנות לאחראית המקוואות גב' מיכל בינימין ניי: 050-8296225",
+    "cityHint": "מעלה אדומים",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:maale-adumim:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "maale-adumim-נשים-7",
+      "sourceUrl": "https://maale-adummim.muni.il/מקוואות/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "לבקשה מיוחדת ולבירורים ניתן לפנות לאחראית המקוואות גב' מיכל בינימין ניי: 050-8296225"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מעלה אדומים",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "neighborhood": "לבקשה מיוחדת ולבירורים ניתן לפנות לאחראית המקוואות גב' מיכל בינימין ניי: 050-8296225"
+    }
+  },
+  {
+    "id": "municipal:shomron:mikvah::shomron--1",
+    "type": "mikveh",
+    "name": "מקווה אבני חפץ",
+    "cityHint": "אבני חפץ",
+    "phone": "098946297",
+    "openingHours": "קיץ - 21:00 - 22:00 חורף - 20:30-21:30 | שישי/ערב חג: 50 דקות לאחר הדלקת נרות למשך 20 דקות | מוצ\"ש/חג: קיץ - 21:30 - 22: חורף - 20:30 - 21:30",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:shomron:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "shomron-נשים-1",
+      "sourceUrl": "https://www.shomron.org.il/379/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "אבני חפץ",
+          "חנה גוטמן",
+          "09-8946297",
+          "050-9947651",
+          "קיץ - 21:00 - 22:00 חורף - 20:30-21:30",
+          "50 דקות לאחר הדלקת נרות למשך 20 דקות",
+          "קיץ - 21:30 - 22: חורף - 20:30 - 21:30"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "המועצה האזורית שומרון",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "settlement": "אבני חפץ",
+      "balanit": "חנה גוטמן",
+      "hoursShabbatEve": "50 דקות לאחר הדלקת נרות למשך 20 דקות",
+      "hoursMotzashSham": "קיץ - 21:30 - 22: חורף - 20:30 - 21:30"
+    }
+  },
+  {
+    "id": "municipal:shomron:mikvah::shomron--2",
+    "type": "mikveh",
+    "name": "מקווה איתמר",
+    "cityHint": "איתמר",
+    "phone": "029975730",
+    "openingHours": "קיץ - 20:30 - 21:30 חורף - 20:00 - 21:00 | שישי/ערב חג: משאירים הודעה בתא קולי במקווה והפתיחה בהתאם לצורך | מוצ\"ש/חג: משאירים הודעה בתא קולי במקווה והפתיחה בהתאם לצורך",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:shomron:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "shomron-נשים-2",
+      "sourceUrl": "https://www.shomron.org.il/379/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "איתמר",
+          "רחל גורדון",
+          "02-9975730",
+          "058-7123137",
+          "קיץ - 20:30 - 21:30 חורף - 20:00 - 21:00",
+          "משאירים הודעה בתא קולי במקווה והפתיחה בהתאם לצורך",
+          "משאירים הודעה בתא קולי במקווה והפתיחה בהתאם לצורך"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "המועצה האזורית שומרון",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "settlement": "איתמר",
+      "balanit": "רחל גורדון",
+      "hoursShabbatEve": "משאירים הודעה בתא קולי במקווה והפתיחה בהתאם לצורך",
+      "hoursMotzashSham": "משאירים הודעה בתא קולי במקווה והפתיחה בהתאם לצורך"
+    }
+  },
+  {
+    "id": "municipal:shomron:mikvah::shomron--3",
+    "type": "mikveh",
+    "name": "מקווה אלון מורה",
+    "cityHint": "אלון מורה",
+    "phone": "0584973616",
+    "openingHours": "קיץ - 21:00 - 21:45 חורף- 20:30 - 21:15 | שישי/ערב חג: 45 דקות לאחר הדלקת נרות למשך חצי שעה | מוצ\"ש/חג: קיץ - 21:00 - 21:45 חורף- 20:30 - 21:15",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:shomron:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "shomron-נשים-3",
+      "sourceUrl": "https://www.shomron.org.il/379/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "אלון מורה",
+          "יונת ראטה",
+          "",
+          "058-4973616",
+          "קיץ - 21:00 - 21:45 חורף- 20:30 - 21:15",
+          "45 דקות לאחר הדלקת נרות למשך חצי שעה",
+          "קיץ - 21:00 - 21:45 חורף- 20:30 - 21:15"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "המועצה האזורית שומרון",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "settlement": "אלון מורה",
+      "balanit": "יונת ראטה",
+      "hoursShabbatEve": "45 דקות לאחר הדלקת נרות למשך חצי שעה",
+      "hoursMotzashSham": "קיץ - 21:00 - 21:45 חורף- 20:30 - 21:15"
+    }
+  },
+  {
+    "id": "municipal:shomron:mikvah::shomron--4",
+    "type": "mikveh",
+    "name": "מקווה ברוכין - מונגש",
+    "cityHint": "ברוכין - מונגש",
+    "phone": "035287270",
+    "openingHours": "20:40 - 21:15 | שישי/ערב חג: בתיאום מראש | מוצ\"ש/חג: בתיאום מראש",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:shomron:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "shomron-נשים-4",
+      "sourceUrl": "https://www.shomron.org.il/379/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "ברוכין - מונגש",
+          "נעמה גברא",
+          "03-5287270",
+          "054-5447429",
+          "20:40 - 21:15",
+          "בתיאום מראש",
+          "בתיאום מראש"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "המועצה האזורית שומרון",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "settlement": "ברוכין - מונגש",
+      "balanit": "נעמה גברא",
+      "hoursShabbatEve": "בתיאום מראש",
+      "hoursMotzashSham": "בתיאום מראש"
+    }
+  },
+  {
+    "id": "municipal:shomron:mikvah::shomron--5",
+    "type": "mikveh",
+    "name": "מקווה ברקן",
+    "cityHint": "ברקן",
+    "phone": "0524660853",
+    "openingHours": "בתיאום מראש | שישי/ערב חג: בתיאום מראש | מוצ\"ש/חג: בתיאום מראש",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:shomron:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "shomron-נשים-5",
+      "sourceUrl": "https://www.shomron.org.il/379/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "ברקן",
+          "עידית אפרים",
+          "",
+          "052-4660853",
+          "בתיאום מראש",
+          "בתיאום מראש",
+          "בתיאום מראש"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "המועצה האזורית שומרון",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "settlement": "ברקן",
+      "balanit": "עידית אפרים",
+      "hoursShabbatEve": "בתיאום מראש",
+      "hoursMotzashSham": "בתיאום מראש"
+    }
+  },
+  {
+    "id": "municipal:shomron:mikvah::shomron--6",
+    "type": "mikveh",
+    "name": "מקווה הר ברכה",
+    "cityHint": "הר ברכה",
+    "phone": "029974232",
+    "openingHours": "20:00 - 21:00 | שישי/ערב חג: 12 דקות לאחר השקיעה למשך חצי שעה | מוצ\"ש/חג: קיץ - 22:00 - 21:00 חורף - 21:00 - 20:00",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:shomron:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "shomron-נשים-6",
+      "sourceUrl": "https://www.shomron.org.il/379/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "הר ברכה",
+          "רות משומר",
+          "02-9974232",
+          "053-7760452",
+          "20:00 - 21:00",
+          "12 דקות לאחר השקיעה למשך חצי שעה",
+          "קיץ - 22:00 - 21:00 חורף - 21:00 - 20:00"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "המועצה האזורית שומרון",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "settlement": "הר ברכה",
+      "balanit": "רות משומר",
+      "hoursShabbatEve": "12 דקות לאחר השקיעה למשך חצי שעה",
+      "hoursMotzashSham": "קיץ - 22:00 - 21:00 חורף - 21:00 - 20:00"
+    }
+  },
+  {
+    "id": "municipal:shomron:mikvah::shomron--7",
+    "type": "mikveh",
+    "name": "מקווה חוות גלעד",
+    "cityHint": "חוות גלעד",
+    "phone": "0546566347",
+    "openingHours": "בתיאום מראש",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:shomron:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "shomron-נשים-7",
+      "sourceUrl": "https://www.shomron.org.il/379/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "חוות גלעד",
+          "שרה שטרנליב",
+          "",
+          "054-656-6347",
+          "בתיאום מראש",
+          "",
+          ""
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "המועצה האזורית שומרון",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "settlement": "חוות גלעד",
+      "balanit": "שרה שטרנליב"
+    }
+  },
+  {
+    "id": "municipal:shomron:mikvah::shomron--8",
+    "type": "mikveh",
+    "name": "מקווה חוות יאיר",
+    "cityHint": "חוות יאיר",
+    "phone": "0505790223",
+    "openingHours": "בתיאום מראש",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:shomron:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "shomron-נשים-8",
+      "sourceUrl": "https://www.shomron.org.il/379/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "חוות יאיר",
+          "רויטל בן צור",
+          "",
+          "050-579-0223",
+          "בתיאום מראש",
+          "",
+          ""
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "המועצה האזורית שומרון",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "settlement": "חוות יאיר",
+      "balanit": "רויטל בן צור"
+    }
+  },
+  {
+    "id": "municipal:shomron:mikvah::shomron--9",
+    "type": "mikveh",
+    "name": "מקווה חיננית",
+    "cityHint": "חיננית",
+    "phone": "0523138866",
+    "openingHours": "בתיאום מראש",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:shomron:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "shomron-נשים-9",
+      "sourceUrl": "https://www.shomron.org.il/379/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "חיננית",
+          "אסתר רפאלוביץ",
+          "",
+          "052-313-8866",
+          "בתיאום מראש",
+          "",
+          ""
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "המועצה האזורית שומרון",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "settlement": "חיננית",
+      "balanit": "אסתר רפאלוביץ"
+    }
+  },
+  {
+    "id": "municipal:shomron:mikvah::shomron--10",
+    "type": "mikveh",
+    "name": "מקווה חרמש",
+    "cityHint": "חרמש",
+    "phone": "0523795008",
+    "openingHours": "בתיאום מראש | שישי/ערב חג: בתיאום מראש | מוצ\"ש/חג: בתיאום מראש",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:shomron:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "shomron-נשים-10",
+      "sourceUrl": "https://www.shomron.org.il/379/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "חרמש",
+          "איריס בקר",
+          "052-3795008",
+          "",
+          "בתיאום מראש",
+          "בתיאום מראש",
+          "בתיאום מראש"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "המועצה האזורית שומרון",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "settlement": "חרמש",
+      "balanit": "איריס בקר",
+      "hoursShabbatEve": "בתיאום מראש",
+      "hoursMotzashSham": "בתיאום מראש"
+    }
+  },
+  {
+    "id": "municipal:shomron:mikvah::shomron--11",
+    "type": "mikveh",
+    "name": "מקווה טל מנשה",
+    "cityHint": "טל מנשה",
+    "phone": "0525665909",
+    "openingHours": "בתיאום מראש | שישי/ערב חג: בתיאום מראש | מוצ\"ש/חג: בתיאום מראש",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:shomron:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "shomron-נשים-11",
+      "sourceUrl": "https://www.shomron.org.il/379/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "טל מנשה",
+          "אסתר גלסברג",
+          "052-5665909",
+          "052-3723262",
+          "בתיאום מראש",
+          "בתיאום מראש",
+          "בתיאום מראש"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "המועצה האזורית שומרון",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "settlement": "טל מנשה",
+      "balanit": "אסתר גלסברג",
+      "hoursShabbatEve": "בתיאום מראש",
+      "hoursMotzashSham": "בתיאום מראש"
+    }
+  },
+  {
+    "id": "municipal:shomron:mikvah::shomron--12",
+    "type": "mikveh",
+    "name": "מקווה יצהר",
+    "cityHint": "יצהר",
+    "phone": "0526051151",
+    "openingHours": "20:45 - 21:30 | שישי/ערב חג: החל מהשקיעה למשך חצי שעה | מוצ\"ש/חג: חורף - 20:30 - 21:15 קיץ - 21:30 - 22:15",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:shomron:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "shomron-נשים-12",
+      "sourceUrl": "https://www.shomron.org.il/379/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "יצהר",
+          "בתיה שטרן",
+          "",
+          "052-6051151",
+          "20:45 - 21:30",
+          "החל מהשקיעה למשך חצי שעה",
+          "חורף - 20:30 - 21:15 קיץ - 21:30 - 22:15"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "המועצה האזורית שומרון",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "settlement": "יצהר",
+      "balanit": "בתיה שטרן",
+      "hoursShabbatEve": "החל מהשקיעה למשך חצי שעה",
+      "hoursMotzashSham": "חורף - 20:30 - 21:15 קיץ - 21:30 - 22:15"
+    }
+  },
+  {
+    "id": "municipal:shomron:mikvah::shomron--13",
+    "type": "mikveh",
+    "name": "מקווה יקיר",
+    "cityHint": "יקיר",
+    "phone": "097923385",
+    "openingHours": "20:30 - 21:30 | שישי/ערב חג: 20 דקות לאחר הדלקת נרות למשך חצי שעה | מוצ\"ש/חג: 21:00 - 22:00",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:shomron:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "shomron-נשים-13",
+      "sourceUrl": "https://www.shomron.org.il/379/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "יקיר",
+          "יפה רסט",
+          "09-7923385",
+          "054-4923043",
+          "20:30 - 21:30",
+          "20 דקות לאחר הדלקת נרות למשך חצי שעה",
+          "21:00 - 22:00"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "המועצה האזורית שומרון",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "settlement": "יקיר",
+      "balanit": "יפה רסט",
+      "hoursShabbatEve": "20 דקות לאחר הדלקת נרות למשך חצי שעה",
+      "hoursMotzashSham": "21:00 - 22:00"
+    }
+  },
+  {
+    "id": "municipal:shomron:mikvah::shomron--14",
+    "type": "mikveh",
+    "name": "מקווה כפר תפוח",
+    "cityHint": "כפר תפוח",
+    "phone": "039368361",
+    "openingHours": "קיץ - 20:30 - 21:15 חורף - 20:00 - 20:45 | שישי/ערב חג: בתיאום מראש | מוצ\"ש/חג: קיץ - 21:30 - 22:15 חורף - 20:00 - 20:45",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:shomron:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "shomron-נשים-14",
+      "sourceUrl": "https://www.shomron.org.il/379/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "כפר תפוח",
+          "רינת גסנר",
+          "03-9368361",
+          "054-5672338",
+          "קיץ - 20:30 - 21:15 חורף - 20:00 - 20:45",
+          "בתיאום מראש",
+          "קיץ - 21:30 - 22:15 חורף - 20:00 - 20:45"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "המועצה האזורית שומרון",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "settlement": "כפר תפוח",
+      "balanit": "רינת גסנר",
+      "hoursShabbatEve": "בתיאום מראש",
+      "hoursMotzashSham": "קיץ - 21:30 - 22:15 חורף - 20:00 - 20:45"
+    }
+  },
+  {
+    "id": "municipal:shomron:mikvah::shomron--15",
+    "type": "mikveh",
+    "name": "מקווה לשם",
+    "cityHint": "לשם",
+    "phone": "0542262313",
+    "openingHours": "20:30 - 21:15 | שישי/ערב חג: חצי שעה אחרי הדלקת נרות למשך חצי שעה | מוצ\"ש/חג: 20:30 - 21:15",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:shomron:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "shomron-נשים-15",
+      "sourceUrl": "https://www.shomron.org.il/379/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "לשם",
+          "יעל שגיב",
+          "",
+          "054-2262313",
+          "20:30 - 21:15",
+          "חצי שעה אחרי הדלקת נרות למשך חצי שעה",
+          "20:30 - 21:15"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "המועצה האזורית שומרון",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "settlement": "לשם",
+      "balanit": "יעל שגיב",
+      "hoursShabbatEve": "חצי שעה אחרי הדלקת נרות למשך חצי שעה",
+      "hoursMotzashSham": "20:30 - 21:15"
+    }
+  },
+  {
+    "id": "municipal:shomron:mikvah::shomron--16",
+    "type": "mikveh",
+    "name": "מקווה מבוא דותן",
+    "cityHint": "מבוא דותן",
+    "phone": "046325328",
+    "openingHours": "בתיאום מראש | שישי/ערב חג: בתיאום מראש | מוצ\"ש/חג: בתיאום מראש",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:shomron:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "shomron-נשים-16",
+      "sourceUrl": "https://www.shomron.org.il/379/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "מבוא דותן",
+          "לימור גרבר",
+          "04-6325328",
+          "054-4971523",
+          "בתיאום מראש",
+          "בתיאום מראש",
+          "בתיאום מראש"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "המועצה האזורית שומרון",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "settlement": "מבוא דותן",
+      "balanit": "לימור גרבר",
+      "hoursShabbatEve": "בתיאום מראש",
+      "hoursMotzashSham": "בתיאום מראש"
+    }
+  },
+  {
+    "id": "municipal:shomron:mikvah::shomron--17",
+    "type": "mikveh",
+    "name": "מקווה מגדלים",
+    "cityHint": "מגדלים",
+    "phone": "0587354222",
+    "openingHours": "בתיאום מראש | שישי/ערב חג: בתיאום מראש | מוצ\"ש/חג: בתיאום מראש",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:shomron:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "shomron-נשים-17",
+      "sourceUrl": "https://www.shomron.org.il/379/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "מגדלים",
+          "יעל שילה",
+          "",
+          "058-7354222",
+          "בתיאום מראש",
+          "בתיאום מראש",
+          "בתיאום מראש"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "המועצה האזורית שומרון",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "settlement": "מגדלים",
+      "balanit": "יעל שילה",
+      "hoursShabbatEve": "בתיאום מראש",
+      "hoursMotzashSham": "בתיאום מראש"
+    }
+  },
+  {
+    "id": "municipal:shomron:mikvah::shomron--18",
+    "type": "mikveh",
+    "name": "מקווה נופי נחמיה",
+    "cityHint": "נופי נחמיה",
+    "phone": "0525808920",
+    "openingHours": "בתיאום מראש | שישי/ערב חג: בתיאום מראש | מוצ\"ש/חג: בתיאום מראש",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:shomron:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "shomron-נשים-18",
+      "sourceUrl": "https://www.shomron.org.il/379/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "נופי נחמיה",
+          "איילה סעצ'י",
+          "",
+          "052-5808920",
+          "בתיאום מראש",
+          "בתיאום מראש",
+          "בתיאום מראש"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "המועצה האזורית שומרון",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "settlement": "נופי נחמיה",
+      "balanit": "איילה סעצ'י",
+      "hoursShabbatEve": "בתיאום מראש",
+      "hoursMotzashSham": "בתיאום מראש"
+    }
+  },
+  {
+    "id": "municipal:shomron:mikvah::shomron--19",
+    "type": "mikveh",
+    "name": "מקווה נופים",
+    "cityHint": "נופים",
+    "phone": "0524753854",
+    "openingHours": "053-3378262 | שישי/ערב חג: בתיאום מראש | מוצ\"ש/חג: חורף - 20:30 - 21:00 קיץ - 21:15 - 21:45",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:shomron:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "shomron-נשים-19",
+      "sourceUrl": "https://www.shomron.org.il/379/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "נופים",
+          "אביטל וובנובוי",
+          "052-4753854",
+          "054-3532606",
+          "053-3378262",
+          "בתיאום מראש",
+          "חורף - 20:30 - 21:00 קיץ - 21:15 - 21:45"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "המועצה האזורית שומרון",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "settlement": "נופים",
+      "balanit": "אביטל וובנובוי",
+      "hoursShabbatEve": "בתיאום מראש",
+      "hoursMotzashSham": "חורף - 20:30 - 21:00 קיץ - 21:15 - 21:45"
+    }
+  },
+  {
+    "id": "municipal:shomron:mikvah::shomron--20",
+    "type": "mikveh",
+    "name": "מקווה ענב",
+    "cityHint": "ענב",
+    "phone": "0504611168",
+    "openingHours": "חורף - 20:00 - 20:30 קיץ - 20:30 - 21:00 | שישי/ערב חג: בתיאום מראש | מוצ\"ש/חג: בתיאום מראש",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:shomron:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "shomron-נשים-20",
+      "sourceUrl": "https://www.shomron.org.il/379/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "ענב",
+          "אופירה ארגוב",
+          "",
+          "050-4611168",
+          "חורף - 20:00 - 20:30 קיץ - 20:30 - 21:00",
+          "בתיאום מראש",
+          "בתיאום מראש"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "המועצה האזורית שומרון",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "settlement": "ענב",
+      "balanit": "אופירה ארגוב",
+      "hoursShabbatEve": "בתיאום מראש",
+      "hoursMotzashSham": "בתיאום מראש"
+    }
+  },
+  {
+    "id": "municipal:shomron:mikvah::shomron--21",
+    "type": "mikveh",
+    "name": "מקווה עלי זהב",
+    "cityHint": "עלי זהב",
+    "phone": "039097408",
+    "openingHours": "20:30 - 21:15 | שישי/ערב חג: בתיאום מראש | מוצ\"ש/חג: קיץ - 21:00 - 21:45 חורף - 20:30 - 21:15",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:shomron:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "shomron-נשים-21",
+      "sourceUrl": "https://www.shomron.org.il/379/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "עלי זהב",
+          "הודיה מקמל",
+          "03-9097408",
+          "0548056977",
+          "20:30 - 21:15",
+          "בתיאום מראש",
+          "קיץ - 21:00 - 21:45 חורף - 20:30 - 21:15"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "המועצה האזורית שומרון",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "settlement": "עלי זהב",
+      "balanit": "הודיה מקמל",
+      "hoursShabbatEve": "בתיאום מראש",
+      "hoursMotzashSham": "קיץ - 21:00 - 21:45 חורף - 20:30 - 21:15"
+    }
+  },
+  {
+    "id": "municipal:shomron:mikvah::shomron--22",
+    "type": "mikveh",
+    "name": "מקווה פדואל - מונגש",
+    "cityHint": "פדואל - מונגש",
+    "phone": "0523251786",
+    "openingHours": "20:30 - 21:30 | שישי/ערב חג: חצי שעה אחרי הדלקת נרות לחצי שעה | מוצ\"ש/חג: 21:00 - 22:00",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:shomron:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "shomron-נשים-22",
+      "sourceUrl": "https://www.shomron.org.il/379/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "פדואל - מונגש",
+          "רחל לרנר",
+          "052-3251786",
+          "052-5665741",
+          "20:30 - 21:30",
+          "חצי שעה אחרי הדלקת נרות לחצי שעה",
+          "21:00 - 22:00"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "המועצה האזורית שומרון",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "settlement": "פדואל - מונגש",
+      "balanit": "רחל לרנר",
+      "hoursShabbatEve": "חצי שעה אחרי הדלקת נרות לחצי שעה",
+      "hoursMotzashSham": "21:00 - 22:00"
+    }
+  },
+  {
+    "id": "municipal:shomron:mikvah::shomron--23",
+    "type": "mikveh",
+    "name": "מקווה צופים",
+    "cityHint": "צופים",
+    "phone": "0524753845",
+    "openingHours": "20:45 - 21:30 | שישי/ערב חג: בתיאום מראש | מוצ\"ש/חג: 20:45 - 21:30",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:shomron:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "shomron-נשים-23",
+      "sourceUrl": "https://www.shomron.org.il/379/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "צופים",
+          "חנה מהדיזדה",
+          "052-4753845",
+          "054-2215103",
+          "20:45 - 21:30",
+          "בתיאום מראש",
+          "20:45 - 21:30"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "המועצה האזורית שומרון",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "settlement": "צופים",
+      "balanit": "חנה מהדיזדה",
+      "hoursShabbatEve": "בתיאום מראש",
+      "hoursMotzashSham": "20:45 - 21:30"
+    }
+  },
+  {
+    "id": "municipal:shomron:mikvah::shomron--24",
+    "type": "mikveh",
+    "name": "מקווה קרית נטפים",
+    "cityHint": "קרית נטפים",
+    "phone": "0532464845",
+    "openingHours": "20:00 - 20:45 | שישי/ערב חג: בתיאום מראש | מוצ\"ש/חג: קיץ - 21:00 - 21:45 חורף - 20:00 - 20:45",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:shomron:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "shomron-נשים-24",
+      "sourceUrl": "https://www.shomron.org.il/379/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "קרית נטפים",
+          "שימרית מקוננט",
+          "",
+          "053-2464845",
+          "20:00 - 20:45",
+          "בתיאום מראש",
+          "קיץ - 21:00 - 21:45 חורף - 20:00 - 20:45"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "המועצה האזורית שומרון",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "settlement": "קרית נטפים",
+      "balanit": "שימרית מקוננט",
+      "hoursShabbatEve": "בתיאום מראש",
+      "hoursMotzashSham": "קיץ - 21:00 - 21:45 חורף - 20:00 - 20:45"
+    }
+  },
+  {
+    "id": "municipal:shomron:mikvah::shomron--25",
+    "type": "mikveh",
+    "name": "מקווה רבבה",
+    "cityHint": "רבבה",
+    "phone": "039068681",
+    "openingHours": "20:30 - 21:30 | שישי/ערב חג: בתיאום מראש | מוצ\"ש/חג: חורף - 20:30 - 21:30 קיץ - שעה לאחר צאת שבת למשך שעה",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:shomron:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "shomron-נשים-25",
+      "sourceUrl": "https://www.shomron.org.il/379/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "רבבה",
+          "אפרת חוזה",
+          "03-9068681",
+          "050-9364191",
+          "20:30 - 21:30",
+          "בתיאום מראש",
+          "חורף - 20:30 - 21:30 קיץ - שעה לאחר צאת שבת למשך שעה"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "המועצה האזורית שומרון",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "settlement": "רבבה",
+      "balanit": "אפרת חוזה",
+      "hoursShabbatEve": "בתיאום מראש",
+      "hoursMotzashSham": "חורף - 20:30 - 21:30 קיץ - שעה לאחר צאת שבת למשך שעה"
+    }
+  },
+  {
+    "id": "municipal:shomron:mikvah::shomron--26",
+    "type": "mikveh",
+    "name": "מקווה רחלים",
+    "cityHint": "רחלים",
+    "phone": "029409559",
+    "openingHours": "20:30 - 21:15 | שישי/ערב חג: בתיאום מראש | מוצ\"ש/חג: 20:15 - 21:00",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:shomron:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "shomron-נשים-26",
+      "sourceUrl": "https://www.shomron.org.il/379/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "רחלים",
+          "אסתר הכהן פארן",
+          "02-9409559",
+          "050-5731508",
+          "20:30 - 21:15",
+          "בתיאום מראש",
+          "20:15 - 21:00"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "המועצה האזורית שומרון",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "settlement": "רחלים",
+      "balanit": "אסתר הכהן פארן",
+      "hoursShabbatEve": "בתיאום מראש",
+      "hoursMotzashSham": "20:15 - 21:00"
+    }
+  },
+  {
+    "id": "municipal:shomron:mikvah::shomron--27",
+    "type": "mikveh",
+    "name": "מקווה שבי שומרון",
+    "cityHint": "שבי שומרון",
+    "phone": "098841593",
+    "openingHours": "21:00 - 20:20 | שישי/ערב חג: 40 דקות אחרי הדלקת נרות למשך חצי שעה | מוצ\"ש/חג: אחרי צאת השבת/חג למשך 40 דקות",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:shomron:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "shomron-נשים-27",
+      "sourceUrl": "https://www.shomron.org.il/379/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "שבי שומרון",
+          "אביבה קבדה",
+          "09-8841593",
+          "050-3911421",
+          "21:00 - 20:20",
+          "40 דקות אחרי הדלקת נרות למשך חצי שעה",
+          "אחרי צאת השבת/חג למשך 40 דקות"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "המועצה האזורית שומרון",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "settlement": "שבי שומרון",
+      "balanit": "אביבה קבדה",
+      "hoursShabbatEve": "40 דקות אחרי הדלקת נרות למשך חצי שעה",
+      "hoursMotzashSham": "אחרי צאת השבת/חג למשך 40 דקות"
+    }
+  },
+  {
+    "id": "municipal:shomron:mikvah::shomron--28",
+    "type": "mikveh",
+    "name": "מקווה שקד",
+    "cityHint": "שקד",
+    "phone": "0526149624",
+    "openingHours": "בתיאום מראש | שישי/ערב חג: בתיאום מראש | מוצ\"ש/חג: בתיאום מראש",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:shomron:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "shomron-נשים-28",
+      "sourceUrl": "https://www.shomron.org.il/379/",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "שקד",
+          "יונית בראל",
+          "",
+          "052-6149624",
+          "בתיאום מראש",
+          "בתיאום מראש",
+          "בתיאום מראש"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "המועצה האזורית שומרון",
+      "gender": "נשים",
+      "cms": "asbina",
+      "locationPrecision": "none",
+      "settlement": "שקד",
+      "balanit": "יונית בראל",
+      "hoursShabbatEve": "בתיאום מראש",
+      "hoursMotzashSham": "בתיאום מראש"
+    }
+  },
+  {
+    "id": "municipal:modiin-maccabim-reut:mikvah::modiin-maccabim-reut--1",
+    "type": "mikveh",
+    "name": "מקווה כלים (כלים)",
+    "address": "אליהו הנביא 14",
+    "cityHint": "מודיעין-מכבים-רעות",
+    "phone": "089715759",
+    "openingHours": "עד השקיעה",
+    "tags": [
+      "gender:כלים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:modiin-maccabim-reut:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "modiin-maccabim-reut-כלים-1",
+      "sourceUrl": "https://www.modiin.muni.il/ModiinWebSite/ArticlePage.aspx?PageID=145_374",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "שם מקווה מקווה כלים",
+          "כתובת אליהו הנביא 14",
+          "טלפון 08-9715759",
+          "ימי שעות וקבלה עד השקיעה"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מודיעין-מכבים-רעות",
+      "gender": "כלים",
+      "cms": "aspnet",
+      "locationPrecision": "none"
+    }
+  },
+  {
+    "id": "municipal:modiin-maccabim-reut:mikvah::modiin-maccabim-reut--2",
+    "type": "mikveh",
+    "name": "מקווה כלים (כלים)",
+    "address": "עמק דותן 35",
+    "cityHint": "מודיעין-מכבים-רעות",
+    "phone": "089707133",
+    "openingHours": "עד השקיעה",
+    "tags": [
+      "gender:כלים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:modiin-maccabim-reut:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "modiin-maccabim-reut-כלים-2",
+      "sourceUrl": "https://www.modiin.muni.il/ModiinWebSite/ArticlePage.aspx?PageID=145_374",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "שם מקווה מקווה כלים",
+          "כתובת עמק דותן 35",
+          "טלפון 08-9707133",
+          "ימי שעות וקבלה עד השקיעה"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מודיעין-מכבים-רעות",
+      "gender": "כלים",
+      "cms": "aspnet",
+      "locationPrecision": "none"
+    }
+  },
+  {
+    "id": "municipal:modiin-maccabim-reut:mikvah::modiin-maccabim-reut--3",
+    "type": "mikveh",
+    "name": "מקווה כלים (כלים)",
+    "address": "אבני החושן 24",
+    "cityHint": "מודיעין-מכבים-רעות",
+    "phone": "089704870",
+    "openingHours": "עד השקיעה",
+    "tags": [
+      "gender:כלים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:modiin-maccabim-reut:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "modiin-maccabim-reut-כלים-3",
+      "sourceUrl": "https://www.modiin.muni.il/ModiinWebSite/ArticlePage.aspx?PageID=145_374",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "שם מקווה מקווה כלים",
+          "כתובת אבני החושן 24",
+          "טלפון 08-9704870",
+          "ימי שעות וקבלה עד השקיעה"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מודיעין-מכבים-רעות",
+      "gender": "כלים",
+      "cms": "aspnet",
+      "locationPrecision": "none"
+    }
+  },
+  {
+    "id": "municipal:modiin-maccabim-reut:mikvah::modiin-maccabim-reut--4",
+    "type": "mikveh",
+    "name": "מקווה כלים (כלים)",
+    "address": "גבעת הלבונה 2, רעות",
+    "cityHint": "מודיעין-מכבים-רעות",
+    "phone": "089262876",
+    "openingHours": "עד השקיעה",
+    "tags": [
+      "gender:כלים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:modiin-maccabim-reut:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "modiin-maccabim-reut-כלים-4",
+      "sourceUrl": "https://www.modiin.muni.il/ModiinWebSite/ArticlePage.aspx?PageID=145_374",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "שם מקווה מקווה כלים",
+          "כתובת גבעת הלבונה 2, רעות",
+          "טלפון 08-9262876",
+          "ימי שעות וקבלה עד השקיעה"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מודיעין-מכבים-רעות",
+      "gender": "כלים",
+      "cms": "aspnet",
+      "locationPrecision": "none"
+    }
+  },
+  {
+    "id": "municipal:modiin-maccabim-reut:mikvah::modiin-maccabim-reut--5",
+    "type": "mikveh",
+    "name": "מקווה כלים (כלים)",
+    "address": "יעל הגיבורה 62",
+    "cityHint": "מודיעין-מכבים-רעות",
+    "phone": "086517908",
+    "openingHours": "עד השקיעה",
+    "tags": [
+      "gender:כלים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:modiin-maccabim-reut:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "modiin-maccabim-reut-כלים-5",
+      "sourceUrl": "https://www.modiin.muni.il/ModiinWebSite/ArticlePage.aspx?PageID=145_374",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "שם מקווה מקווה כלים",
+          "כתובת יעל הגיבורה 62",
+          "טלפון 08-6517908",
+          "ימי שעות וקבלה עד השקיעה"
+        ],
+        "table": 0
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מודיעין-מכבים-רעות",
+      "gender": "כלים",
+      "cms": "aspnet",
+      "locationPrecision": "none"
+    }
+  },
+  {
+    "id": "municipal:modiin-maccabim-reut:mikvah::modiin-maccabim-reut--1",
+    "type": "mikveh",
+    "name": "מקווה נשים",
+    "address": "אליהו הנביא 14",
+    "cityHint": "מודיעין-מכבים-רעות",
+    "phone": "089715759",
+    "openingHours": "18:00- 22:00 | שישי/ערב חג: 10 דק לאחר הדלקת הנרות למשך שעה | מוצ\"ש/חג: שעה לאחר צאת השבת למשך שעתיים",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:modiin-maccabim-reut:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "modiin-maccabim-reut-נשים-1",
+      "sourceUrl": "https://www.modiin.muni.il/ModiinWebSite/ArticlePage.aspx?PageID=145_374",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "סוג נשים",
+          "כתובת אליהו הנביא 14",
+          "טלפון 08-9715759",
+          "ימים א'-ה' 18:00- 22:00",
+          "יום ו' / ערב חג 10 דק לאחר הדלקת הנרות למשך שעה",
+          "מוצאי שבת / חג שעה לאחר צאת השבת למשך שעתיים"
+        ],
+        "table": 1
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מודיעין-מכבים-רעות",
+      "gender": "נשים",
+      "cms": "aspnet",
+      "locationPrecision": "none",
+      "hoursShabbatEve": "10 דק לאחר הדלקת הנרות למשך שעה",
+      "hoursMotzashSham": "שעה לאחר צאת השבת למשך שעתיים"
+    }
+  },
+  {
+    "id": "municipal:modiin-maccabim-reut:mikvah::modiin-maccabim-reut--2",
+    "type": "mikveh",
+    "name": "מקווה נשים",
+    "address": "עמק דותן 37",
+    "cityHint": "מודיעין-מכבים-רעות",
+    "phone": "089707133",
+    "openingHours": "18:00- 22:00 | שישי/ערב חג: 10 דק לאחר הדלקת הנרות למשך שעה | מוצ\"ש/חג: שעה לאחר צאת השבת למשך שעתיים",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:modiin-maccabim-reut:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "modiin-maccabim-reut-נשים-2",
+      "sourceUrl": "https://www.modiin.muni.il/ModiinWebSite/ArticlePage.aspx?PageID=145_374",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "סוג נשים",
+          "כתובת עמק דותן 37",
+          "טלפון 08-9707133",
+          "ימים א'-ה' 18:00- 22:00",
+          "יום ו' / ערב חג 10 דק לאחר הדלקת הנרות למשך שעה",
+          "מוצאי שבת / חג שעה לאחר צאת השבת למשך שעתיים"
+        ],
+        "table": 1
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מודיעין-מכבים-רעות",
+      "gender": "נשים",
+      "cms": "aspnet",
+      "locationPrecision": "none",
+      "hoursShabbatEve": "10 דק לאחר הדלקת הנרות למשך שעה",
+      "hoursMotzashSham": "שעה לאחר צאת השבת למשך שעתיים"
+    }
+  },
+  {
+    "id": "municipal:modiin-maccabim-reut:mikvah::modiin-maccabim-reut--3",
+    "type": "mikveh",
+    "name": "מקווה נשים",
+    "address": "אבני החושן 24",
+    "cityHint": "מודיעין-מכבים-רעות",
+    "phone": "089704870",
+    "openingHours": "18:00- 22:30 | שישי/ערב חג: 10 דק לאחר הדלקת נרות למשך שעה | מוצ\"ש/חג: שעתיים לאחר יציאת השבת למשך שעתיים",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:modiin-maccabim-reut:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "modiin-maccabim-reut-נשים-3",
+      "sourceUrl": "https://www.modiin.muni.il/ModiinWebSite/ArticlePage.aspx?PageID=145_374",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "סוג נשים",
+          "כתובת אבני החושן 24",
+          "טלפון 08-9704870",
+          "ימים א'-ה' 18:00- 22:30",
+          "יום ו' / ערב חג 10 דק לאחר הדלקת נרות למשך שעה",
+          "מוצאי שבת / חג שעתיים לאחר יציאת השבת למשך שעתיים"
+        ],
+        "table": 1
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מודיעין-מכבים-רעות",
+      "gender": "נשים",
+      "cms": "aspnet",
+      "locationPrecision": "none",
+      "hoursShabbatEve": "10 דק לאחר הדלקת נרות למשך שעה",
+      "hoursMotzashSham": "שעתיים לאחר יציאת השבת למשך שעתיים"
+    }
+  },
+  {
+    "id": "municipal:modiin-maccabim-reut:mikvah::modiin-maccabim-reut--4",
+    "type": "mikveh",
+    "name": "מקווה נשים",
+    "address": "גבעת הלבונה 2 רעות",
+    "cityHint": "מודיעין-מכבים-רעות",
+    "phone": "089262876",
+    "openingHours": "18:00- 22:00 | שישי/ערב חג: 10 דק לאחר הדלקת הנרות למשך שעה | מוצ\"ש/חג: שעה לאחר צאת השבת למשך שעתיים",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:modiin-maccabim-reut:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "modiin-maccabim-reut-נשים-4",
+      "sourceUrl": "https://www.modiin.muni.il/ModiinWebSite/ArticlePage.aspx?PageID=145_374",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "סוג נשים",
+          "כתובת גבעת הלבונה 2 רעות",
+          "טלפון 08-9262876",
+          "ימים א'-ה' 18:00- 22:00",
+          "יום ו' / ערב חג 10 דק לאחר הדלקת הנרות למשך שעה",
+          "מוצאי שבת / חג שעה לאחר צאת השבת למשך שעתיים"
+        ],
+        "table": 1
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מודיעין-מכבים-רעות",
+      "gender": "נשים",
+      "cms": "aspnet",
+      "locationPrecision": "none",
+      "hoursShabbatEve": "10 דק לאחר הדלקת הנרות למשך שעה",
+      "hoursMotzashSham": "שעה לאחר צאת השבת למשך שעתיים"
+    }
+  },
+  {
+    "id": "municipal:modiin-maccabim-reut:mikvah::modiin-maccabim-reut--5",
+    "type": "mikveh",
+    "name": "מקווה נשים",
+    "address": "* יעל הגיבורה 62",
+    "cityHint": "מודיעין-מכבים-רעות",
+    "phone": "086517908",
+    "openingHours": "19:00- 23:00 | שישי/ערב חג: 10 דק לאחר הדלקת נרות למשך שעה | מוצ\"ש/חג: שעתיים לאחר יציאת השבת למשך שעתיים",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:modiin-maccabim-reut:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "modiin-maccabim-reut-נשים-5",
+      "sourceUrl": "https://www.modiin.muni.il/ModiinWebSite/ArticlePage.aspx?PageID=145_374",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "סוג נשים",
+          "כתובת * יעל הגיבורה 62",
+          "טלפון 08-6517908",
+          "ימים א'-ה' 19:00- 23:00",
+          "יום ו' / ערב חג 10 דק לאחר הדלקת נרות למשך שעה",
+          "מוצאי שבת / חג שעתיים לאחר יציאת השבת למשך שעתיים"
+        ],
+        "table": 1
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מודיעין-מכבים-רעות",
+      "gender": "נשים",
+      "cms": "aspnet",
+      "locationPrecision": "none",
+      "hoursShabbatEve": "10 דק לאחר הדלקת נרות למשך שעה",
+      "hoursMotzashSham": "שעתיים לאחר יציאת השבת למשך שעתיים"
+    }
+  },
+  {
+    "id": "municipal:modiin-maccabim-reut:mikvah::modiin-maccabim-reut--6",
+    "type": "mikveh",
+    "name": "מקווה גברים",
+    "address": "עמק דותן 35",
+    "cityHint": "מודיעין-מכבים-רעות",
+    "phone": "089707133",
+    "openingHours": "04:00 -12:00 | שישי/ערב חג: 12:00-15:00 | מוצ\"ש/חג: -",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:modiin-maccabim-reut:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "modiin-maccabim-reut-נשים-6",
+      "sourceUrl": "https://www.modiin.muni.il/ModiinWebSite/ArticlePage.aspx?PageID=145_374",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "סוג גברים",
+          "כתובת עמק דותן 35",
+          "טלפון 08-9707133",
+          "ימים א'-ה' 04:00 -12:00",
+          "יום ו' / ערב חג 12:00-15:00",
+          "מוצאי שבת / חג -"
+        ],
+        "table": 1
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מודיעין-מכבים-רעות",
+      "gender": "נשים",
+      "cms": "aspnet",
+      "locationPrecision": "none",
+      "hoursShabbatEve": "12:00-15:00",
+      "hoursMotzashSham": "-"
+    }
+  },
+  {
+    "id": "municipal:modiin-maccabim-reut:mikvah::modiin-maccabim-reut--7",
+    "type": "mikveh",
+    "name": "מקווה נשים",
+    "address": "רחוב סיוון 8",
+    "cityHint": "מודיעין-מכבים-רעות",
+    "phone": "089153419",
+    "openingHours": "19:00- 23:00 | שישי/ערב חג: 10 דק לאחר הדלקת הנרות למשך שעה | מוצ\"ש/חג: שעה לאחר צאת השבת למשך שעתיים",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "municipal:modiin-maccabim-reut:mikvah",
+      "adapterId": "municipal-asbina-v1",
+      "sourceRecordId": "modiin-maccabim-reut-נשים-7",
+      "sourceUrl": "https://www.modiin.muni.il/ModiinWebSite/ArticlePage.aspx?PageID=145_374",
+      "fetchedAt": "2026-06-19",
+      "raw": {
+        "cells": [
+          "סוג נשים",
+          "כתובת רחוב סיוון 8",
+          "טלפון 08-9153419",
+          "ימים א'-ה' 19:00- 23:00",
+          "יום ו' / ערב חג 10 דק לאחר הדלקת הנרות למשך שעה",
+          "מוצאי שבת / חג שעה לאחר צאת השבת למשך שעתיים"
+        ],
+        "table": 1
+      }
+    },
+    "extra": {
+      "municipality": "עיריית מודיעין-מכבים-רעות",
+      "gender": "נשים",
+      "cms": "aspnet",
+      "locationPrecision": "none",
+      "hoursShabbatEve": "10 דק לאחר הדלקת הנרות למשך שעה",
+      "hoursMotzashSham": "שעה לאחר צאת השבת למשך שעתיים"
+    }
+  }
+]

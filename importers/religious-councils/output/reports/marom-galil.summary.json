@@ -1,0 +1,19 @@
+{
+  "council": "המועצה הדתית מרום גליל",
+  "variant": "markers",
+  "expectedCount": 31,
+  "fetchedCount": 28,
+  "validCount": 28,
+  "rejectedCount": 0,
+  "coordSource": "markers",
+  "withNativeCoordinates": 28,
+  "missingCoordinates": 0,
+  "duplicateSourceIds": 0,
+  "enrichedFromCards": 28,
+  "ambiguousEnrich": 0,
+  "countMatches": false,
+  "pagesFetched": 1,
+  "dryRun": true,
+  "liveDataTouched": false,
+  "generatedAt": "2026-06-18"
+}

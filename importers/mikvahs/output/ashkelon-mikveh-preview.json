@@ -1,0 +1,391 @@
+[
+  {
+    "id": "council:ashkelon:mikvah::ashkelon----316676",
+    "type": "mikveh",
+    "name": "אפרידר - נורמה רות",
+    "address": "סמטת הקיקיון 9 - ע\"י בי\"כ נועם יצחק",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.6676124,
+      "longitude": 34.5673778
+    },
+    "phone": "086734135",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "council:ashkelon:mikvah",
+      "adapterId": "ashkelon-dedicated-v1",
+      "sourceRecordId": "ashkelon-אפרידר נורמה רות-31.6676",
+      "sourceUrl": "https://www.mdas.org.il/ניווט-לסניפי-מקוואות/",
+      "fetchedAt": "2026-06-21"
+    },
+    "extra": {
+      "sourceLicense": "council-public",
+      "gender": "נשים",
+      "hasVessel": true
+    },
+    "_src": {
+      "name": "אפרידר - נורמה רות",
+      "address": "סמטת הקיקיון 9 - ע\"י בי\"כ נועם יצחק",
+      "phone": "086734135",
+      "attendant": null,
+      "hours": null,
+      "gender": "נשים",
+      "hasVessel": true,
+      "status": null,
+      "location": {
+        "latitude": 31.6676124,
+        "longitude": 34.5673778
+      }
+    }
+  },
+  {
+    "id": "council:ashkelon:mikvah::ashkelon---316595",
+    "type": "mikveh",
+    "name": "פארק אלון",
+    "address": "משה כלפון הכהן (גבעת ציון, שיכונים)",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.6595219,
+      "longitude": 34.5759312
+    },
+    "phone": "086726127",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "council:ashkelon:mikvah",
+      "adapterId": "ashkelon-dedicated-v1",
+      "sourceRecordId": "ashkelon-פארק אלון-31.6595",
+      "sourceUrl": "https://www.mdas.org.il/ניווט-לסניפי-מקוואות/",
+      "fetchedAt": "2026-06-21"
+    },
+    "extra": {
+      "sourceLicense": "council-public",
+      "gender": "נשים",
+      "attendant": "דפנה כהן",
+      "hasVessel": true
+    },
+    "_src": {
+      "name": "פארק אלון",
+      "address": "משה כלפון הכהן (גבעת ציון, שיכונים)",
+      "phone": "086726127",
+      "attendant": "דפנה כהן",
+      "hours": null,
+      "gender": "נשים",
+      "hasVessel": true,
+      "status": null,
+      "location": {
+        "latitude": 31.6595219,
+        "longitude": 34.5759312
+      }
+    }
+  },
+  {
+    "id": "council:ashkelon:mikvah::ashkelon----316574",
+    "type": "mikveh",
+    "name": "שפירא - מעין רות",
+    "address": "רח' משה יוליש 21/א, שכונת שפירא",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.6573514,
+      "longitude": 34.5537831
+    },
+    "phone": "086761732",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "council:ashkelon:mikvah",
+      "adapterId": "ashkelon-dedicated-v1",
+      "sourceRecordId": "ashkelon-שפירא מעין רות-31.6574",
+      "sourceUrl": "https://www.mdas.org.il/ניווט-לסניפי-מקוואות/",
+      "fetchedAt": "2026-06-21"
+    },
+    "extra": {
+      "sourceLicense": "council-public",
+      "gender": "נשים",
+      "attendant": "אוסנת לוי זהבה סעדון -",
+      "hasVessel": true
+    },
+    "_src": {
+      "name": "שפירא - מעין רות",
+      "address": "רח' משה יוליש 21/א, שכונת שפירא",
+      "phone": "086761732",
+      "attendant": "אוסנת לוי זהבה סעדון -",
+      "hours": null,
+      "gender": "נשים",
+      "hasVessel": true,
+      "status": null,
+      "location": {
+        "latitude": 31.6573514,
+        "longitude": 34.5537831
+      }
+    }
+  },
+  {
+    "id": "council:ashkelon:mikvah::ashkelon----316531",
+    "type": "mikveh",
+    "name": "אפרים צור - מקוה בשיפוץ",
+    "address": "רח' אפרים צור 55, שכונת עתיקות",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.65307,
+      "longitude": 34.5635837
+    },
+    "phone": "086752638",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "council:ashkelon:mikvah",
+      "adapterId": "ashkelon-dedicated-v1",
+      "sourceRecordId": "ashkelon-אפרים צור בשיפוץ-31.6531",
+      "sourceUrl": "https://www.mdas.org.il/ניווט-לסניפי-מקוואות/",
+      "fetchedAt": "2026-06-21"
+    },
+    "extra": {
+      "sourceLicense": "council-public",
+      "gender": "נשים",
+      "attendant": "זהבה סעדון",
+      "status": "closed-for-renovation"
+    },
+    "_src": {
+      "name": "אפרים צור - מקוה בשיפוץ",
+      "address": "רח' אפרים צור 55, שכונת עתיקות",
+      "phone": "086752638",
+      "attendant": "זהבה סעדון",
+      "hours": null,
+      "gender": "נשים",
+      "hasVessel": false,
+      "status": "closed-for-renovation",
+      "location": {
+        "latitude": 31.65307,
+        "longitude": 34.5635837
+      }
+    }
+  },
+  {
+    "id": "council:ashkelon:mikvah::ashkelon--316777",
+    "type": "mikveh",
+    "name": "ברנע",
+    "address": "רח' מעלות אשר 9, שכונת ברנע",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.6776715,
+      "longitude": 34.5769452
+    },
+    "phone": "086781192",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "council:ashkelon:mikvah",
+      "adapterId": "ashkelon-dedicated-v1",
+      "sourceRecordId": "ashkelon-ברנע-31.6777",
+      "sourceUrl": "https://www.mdas.org.il/ניווט-לסניפי-מקוואות/",
+      "fetchedAt": "2026-06-21"
+    },
+    "extra": {
+      "sourceLicense": "council-public",
+      "gender": "נשים",
+      "hasVessel": true
+    },
+    "_src": {
+      "name": "ברנע",
+      "address": "רח' מעלות אשר 9, שכונת ברנע",
+      "phone": "086781192",
+      "attendant": null,
+      "hours": null,
+      "gender": "נשים",
+      "hasVessel": true,
+      "status": null,
+      "location": {
+        "latitude": 31.6776715,
+        "longitude": 34.5769452
+      }
+    }
+  },
+  {
+    "id": "council:ashkelon:mikvah::ashkelon---316683",
+    "type": "mikveh",
+    "name": "רמת אשכול",
+    "address": "רח' דוד רזיאל 37, שכונת רמת אשכול",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.6683259,
+      "longitude": 34.5939702
+    },
+    "phone": "086755645",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "council:ashkelon:mikvah",
+      "adapterId": "ashkelon-dedicated-v1",
+      "sourceRecordId": "ashkelon-רמת אשכול-31.6683",
+      "sourceUrl": "https://www.mdas.org.il/ניווט-לסניפי-מקוואות/",
+      "fetchedAt": "2026-06-21"
+    },
+    "extra": {
+      "sourceLicense": "council-public",
+      "gender": "נשים",
+      "attendant": "דגנית אידה",
+      "hasVessel": true
+    },
+    "_src": {
+      "name": "רמת אשכול",
+      "address": "רח' דוד רזיאל 37, שכונת רמת אשכול",
+      "phone": "086755645",
+      "attendant": "דגנית אידה",
+      "hours": null,
+      "gender": "נשים",
+      "hasVessel": true,
+      "status": null,
+      "location": {
+        "latitude": 31.6683259,
+        "longitude": 34.5939702
+      }
+    }
+  },
+  {
+    "id": "council:ashkelon:mikvah::ashkelon---316871",
+    "type": "mikveh",
+    "name": "מעיין תמר",
+    "address": "רח' בלפור 2, שכונת ברנע",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.6870532,
+      "longitude": 34.5761454
+    },
+    "phone": "086845208",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "council:ashkelon:mikvah",
+      "adapterId": "ashkelon-dedicated-v1",
+      "sourceRecordId": "ashkelon-מעיין תמר-31.6871",
+      "sourceUrl": "https://www.mdas.org.il/ניווט-לסניפי-מקוואות/",
+      "fetchedAt": "2026-06-21"
+    },
+    "extra": {
+      "sourceLicense": "council-public",
+      "gender": "נשים",
+      "attendant": "זהבה סעדון",
+      "hasVessel": true
+    },
+    "_src": {
+      "name": "מעיין תמר",
+      "address": "רח' בלפור 2, שכונת ברנע",
+      "phone": "086845208",
+      "attendant": "זהבה סעדון",
+      "hours": null,
+      "gender": "נשים",
+      "hasVessel": true,
+      "status": null,
+      "location": {
+        "latitude": 31.6870532,
+        "longitude": 34.5761454
+      }
+    }
+  },
+  {
+    "id": "council:ashkelon:mikvah::ashkelon--316871",
+    "type": "mikveh",
+    "name": "מקוה אגמים",
+    "address": "מפל התנור 6",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.6870532,
+      "longitude": 34.5761454
+    },
+    "phone": "086904692",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "council:ashkelon:mikvah",
+      "adapterId": "ashkelon-dedicated-v1",
+      "sourceRecordId": "ashkelon-אגמים-31.6871",
+      "sourceUrl": "https://www.mdas.org.il/ניווט-לסניפי-מקוואות/",
+      "fetchedAt": "2026-06-21"
+    },
+    "extra": {
+      "sourceLicense": "council-public",
+      "gender": "נשים",
+      "attendant": "קרן קקון",
+      "hasVessel": true
+    },
+    "_src": {
+      "name": "מקוה אגמים",
+      "address": "מפל התנור 6",
+      "phone": "086904692",
+      "attendant": "קרן קקון",
+      "hours": null,
+      "gender": "נשים",
+      "hasVessel": true,
+      "status": null,
+      "location": {
+        "latitude": 31.6870532,
+        "longitude": 34.5761454
+      }
+    }
+  },
+  {
+    "id": "council:ashkelon:mikvah::ashkelon---316864",
+    "type": "mikveh",
+    "name": "מקוה עיר היין",
+    "address": "שפייה 25",
+    "cityHint": "אשקלון",
+    "location": {
+      "latitude": 31.68643190556438,
+      "longitude": 34.5943648466776
+    },
+    "phone": "086904692",
+    "tags": [
+      "gender:נשים"
+    ],
+    "confidence": "medium",
+    "provenance": {
+      "sourceId": "council:ashkelon:mikvah",
+      "adapterId": "ashkelon-dedicated-v1",
+      "sourceRecordId": "ashkelon-עיר היין-31.6864",
+      "sourceUrl": "https://www.mdas.org.il/ניווט-לסניפי-מקוואות/",
+      "fetchedAt": "2026-06-21"
+    },
+    "extra": {
+      "sourceLicense": "council-public",
+      "gender": "נשים",
+      "attendant": "מיטל אלבז",
+      "hasVessel": true
+    },
+    "_src": {
+      "name": "מקוה עיר היין",
+      "address": "שפייה 25",
+      "phone": "086904692",
+      "attendant": "מיטל אלבז",
+      "hours": null,
+      "gender": "נשים",
+      "hasVessel": true,
+      "status": null,
+      "location": {
+        "latitude": 31.68643190556438,
+        "longitude": 34.5943648466776
+      },
+      "geocoded": {
+        "source": "govmap-ADDR_V1",
+        "label": "שפיה 25, אשקלון"
+      }
+    }
+  }
+]

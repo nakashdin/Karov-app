@@ -1,0 +1,43 @@
+{
+  "status": "SUCCESS",
+  "scope": "46 Phase-18b official/open mikveh records (Jerusalem 41 + Holon 3 + Lod 2), additive append. rebuildAppDataset NOT run. Backlog untouched. Local generated app data only; no publish.",
+  "backups": {
+    "places": "C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\places.osm.pre-phase18.backup.json",
+    "cities": "C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\cities.osm.pre-phase18.backup.json"
+  },
+  "filesModified": [
+    "src/data/generated/places.osm.json",
+    "src/data/generated/cities.osm.json"
+  ],
+  "counts": {
+    "placesBefore": 5321,
+    "placesAfter": 5367,
+    "added": 46,
+    "mikvehBefore": 556,
+    "mikvehAfter": 602,
+    "existingLost": 0,
+    "existingModified": 0
+  },
+  "bySource": {
+    "jerusalem": 41,
+    "holon": 3,
+    "lod": 2
+  },
+  "licenses": {
+    "jerusalem": "council-public (rabanut.org.il)",
+    "holon": "municipal-open (Holon GIS)",
+    "lod": "municipal-open (Lod GIS)"
+  },
+  "reconciliation": "EXACT: places 5321→5367 (+46); mikveh 556→602 (+46); 0 lost; 0 modified.",
+  "rollback": [
+    "copy C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\places.osm.pre-phase18.backup.json → C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\places.osm.json",
+    "copy C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\cities.osm.pre-phase18.backup.json → C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\cities.osm.json",
+    "do NOT run rebuildAppDataset",
+    "verify: places.osm.json returns to 5321, mikveh to 556"
+  ],
+  "dryRun": false,
+  "publishPerformed": false,
+  "additiveOnly": true,
+  "rebuildRun": false,
+  "backlogTouched": false
+}

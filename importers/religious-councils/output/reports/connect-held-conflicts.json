@@ -1,0 +1,47 @@
+[
+  {
+    "sourceId": "rc-hadera-h1thsd13",
+    "name": "לב לאחים",
+    "council": "המועצה הדתית חדרה",
+    "existingId": "osm-way-283741622",
+    "existingName": "בית כנסת - לב אחים",
+    "distanceM": 15,
+    "nameSim": 0.33
+  },
+  {
+    "sourceId": "rc-hadera-h4ynxxa",
+    "name": "זכרון קדושים",
+    "council": "המועצה הדתית חדרה",
+    "existingId": "osm-way-283843412",
+    "existingName": "בית כנסת - זכרון הקדושים",
+    "distanceM": 16,
+    "nameSim": 0.33
+  },
+  {
+    "sourceId": "rc-hadera-hiubc6n",
+    "name": "בית הנשיא",
+    "council": "המועצה הדתית חדרה",
+    "existingId": "osm-node-11983041668",
+    "existingName": "בית כנסת - בית חב\"ד",
+    "distanceM": 111,
+    "nameSim": 0.33
+  },
+  {
+    "sourceId": "rc-hadera-h1punp2o",
+    "name": "אהלי אשר",
+    "council": "המועצה הדתית חדרה",
+    "existingId": "osm-way-585713498",
+    "existingName": "בית כנסת - אוהלי אשר",
+    "distanceM": 12,
+    "nameSim": 0.33
+  },
+  {
+    "sourceId": "rc-hadera-h1hnry36",
+    "name": "משיבת נפש",
+    "council": "המועצה הדתית חדרה",
+    "existingId": "osm-way-1134011623",
+    "existingName": "בית כנסת - משיבת ציון",
+    "distanceM": 9,
+    "nameSim": 0.33
+  }
+]

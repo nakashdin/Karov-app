@@ -1,0 +1,19 @@
+{
+  "council": "המועצה הדתית ראש העין",
+  "variant": "markers",
+  "expectedCount": 135,
+  "fetchedCount": 128,
+  "validCount": 128,
+  "rejectedCount": 0,
+  "coordSource": "markers",
+  "withNativeCoordinates": 128,
+  "missingCoordinates": 0,
+  "duplicateSourceIds": 0,
+  "enrichedFromCards": 116,
+  "ambiguousEnrich": 12,
+  "countMatches": false,
+  "pagesFetched": 1,
+  "dryRun": true,
+  "liveDataTouched": false,
+  "generatedAt": "2026-06-18"
+}

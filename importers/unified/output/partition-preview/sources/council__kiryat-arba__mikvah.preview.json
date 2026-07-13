@@ -1,0 +1,86 @@
+[
+  {
+    "id": "rc-mikvah-kiryat-arba-hbdvsem",
+    "name": "מקווה \"אברהם אבינו\" חברון",
+    "type": "mikveh",
+    "cityId": "קרית ארבע",
+    "address": "47 יוני נתניהו",
+    "location": {
+      "latitude": 31.523967,
+      "longitude": 35.107761
+    },
+    "source": "seed",
+    "sourceUrl": "https://mdk4.org.il/directory-mikvah/listing/מקווה-אברהם-אבינו-חברון/",
+    "sourceName": "המועצה הדתית קרית ארבע",
+    "extra": {
+      "council": "המועצה הדתית קרית ארבע",
+      "sourceVariant": "markers",
+      "locationPrecision": "exact",
+      "newnessConfidence": 0.9,
+      "cityInGov": false,
+      "classification": "new_record",
+      "provenance": {
+        "adapterId": "sabaiapps-mikvah-v1",
+        "sourceRecordId": "rc-mikvah-kiryat-arba-hbdvsem",
+        "sourceUrl": "https://mdk4.org.il/directory-mikvah/listing/מקווה-אברהם-אבינו-חברון/",
+        "fetchedAt": "2026-06-19"
+      }
+    }
+  },
+  {
+    "id": "rc-mikvah-kiryat-arba-h1ftm32k",
+    "name": "מקווה רמת ממרא",
+    "type": "mikveh",
+    "cityId": "קרית ארבע",
+    "address": "47 יוני נתניהו , קרית ארבע",
+    "location": {
+      "latitude": 31.544866,
+      "longitude": 35.119183
+    },
+    "source": "seed",
+    "sourceUrl": "https://mdk4.org.il/directory-mikvah/listing/מקווה-רמת-ממרא/",
+    "sourceName": "המועצה הדתית קרית ארבע",
+    "extra": {
+      "council": "המועצה הדתית קרית ארבע",
+      "sourceVariant": "markers",
+      "locationPrecision": "exact",
+      "newnessConfidence": 0.9,
+      "cityInGov": false,
+      "classification": "new_record",
+      "provenance": {
+        "adapterId": "sabaiapps-mikvah-v1",
+        "sourceRecordId": "rc-mikvah-kiryat-arba-h1ftm32k",
+        "sourceUrl": "https://mdk4.org.il/directory-mikvah/listing/מקווה-רמת-ממרא/",
+        "fetchedAt": "2026-06-19"
+      }
+    }
+  },
+  {
+    "id": "rc-mikvah-kiryat-arba-hortmzl",
+    "name": "מקווה עין שרה",
+    "type": "mikveh",
+    "cityId": "קרית ארבע",
+    "address": "16 יהושע בן נון , קרית ארבע",
+    "location": {
+      "latitude": 31.527688,
+      "longitude": 35.116886
+    },
+    "source": "seed",
+    "sourceUrl": "https://mdk4.org.il/directory-mikvah/listing/מקווה-עין-שרה/",
+    "sourceName": "המועצה הדתית קרית ארבע",
+    "extra": {
+      "council": "המועצה הדתית קרית ארבע",
+      "sourceVariant": "markers",
+      "locationPrecision": "exact",
+      "newnessConfidence": 0.9,
+      "cityInGov": false,
+      "classification": "new_record",
+      "provenance": {
+        "adapterId": "sabaiapps-mikvah-v1",
+        "sourceRecordId": "rc-mikvah-kiryat-arba-hortmzl",
+        "sourceUrl": "https://mdk4.org.il/directory-mikvah/listing/מקווה-עין-שרה/",
+        "fetchedAt": "2026-06-19"
+      }
+    }
+  }
+]

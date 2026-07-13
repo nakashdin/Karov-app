@@ -1,0 +1,93 @@
+{
+  "generatedNote": "PHASE 24 — NEW SOURCE DISCOVERY ONLY. No extraction, no import, no write, no rebuild. Official sources only (no commercial aggregators). Counts are glance-estimates to be confirmed at extraction time.",
+  "date": "2026-06-22",
+  "liveStateAtDiscovery": { "totalMikveh": 696, "totalPlaces": 5461 },
+
+  "jerusalem": {
+    "priority": "highest (audit gap ~122)",
+    "sources": [
+      {
+        "name": "המועצה הדתית ירושלים — rabanut.org.il (CURRENT)",
+        "endpoint": "POST https://rabanut.org.il/wp-admin/admin-ajax.php  body: action=rabanut_mikve_map_filter",
+        "type": "WordPress JSON-API",
+        "rendering": "API (single response)",
+        "count": 42,
+        "coords": true, "address": true,
+        "fields": ["name", "address", "lat", "lng", "phone", "attendant×2"],
+        "status": "EXHAUSTED for women's — endpoint ignores filters, returns the same 42 (all women's). Men's + keilim NOT exposed here.",
+        "netNew": 0
+      },
+      {
+        "name": "GovMap national map — layer 27 'מקוואות'",
+        "endpoint": "https://www.govmap.gov.il/?lay=27  (token-gated layers-catalog API)",
+        "type": "ArcGIS-style feature layer behind token",
+        "rendering": "SPA, access-denied without runtime token",
+        "count": "unknown (Jerusalem-inclusive, coord-bearing)",
+        "coords": true, "address": "likely",
+        "status": "BEST UNKNOWN — requires browser/network capture (Chrome MCP) to grab the bearer token + layer-27 feature query, then replayable via node like the existing GovMap geocoder.",
+        "netNewEstimate": "+30 to +100"
+      },
+      {
+        "name": "data.gov.il 2018 archive (covers Jerusalem)",
+        "resourceId": "9a939c58-d149-4c07-b37f-77dbf0d50e35",
+        "type": "CKAN datastore (XLS)", "count": 693, "jerusalemRows": 40,
+        "coords": false, "address": true, "gender": false,
+        "freshness": "STALE (2018-06-28)",
+        "status": "Only government source with Jerusalem (40) + Ashdod (11). Coordless → needs GovMap geocoding; stale → verify still-open before import.",
+        "netNewEstimate": "Jerusalem +up-to-40 (after geocode + dedup vs 42)"
+      },
+      {
+        "name": "Jerusalem municipality + jergisng GIS",
+        "url": "https://www.jerusalem.muni.il/.../mikvaot/  ; jergisng.jerusalem.muni.il",
+        "status": "static pages = informational only (no list). GIS viewer layer catalog is token-gated. Low priority.",
+        "netNew": 0
+      }
+    ],
+    "bottomLine": "Best next target = GovMap layer 27 (browser capture). Secondary = rabanut men's/keilim categories + data.gov.il 2018 (Jerusalem 40, geocode). Realistic net-new toward 120-180 target: +60 to +120 once layer-27 token is captured."
+  },
+
+  "nationalGovFeed": {
+    "priority": "high (alternative for exhausted-council cities + nationwide)",
+    "primary": {
+      "name": "data.gov.il 'מקוואות טהרה' (Ministry of Religious Services)",
+      "resourceId": "e80a5e59-3b0f-4be9-983a-dc0971907626",
+      "endpoint": "https://data.gov.il/api/3/action/datastore_search?resource_id=e80a5e59-3b0f-4be9-983a-dc0971907626&limit=1000",
+      "type": "CKAN datastore (CSV)", "count": 606, "freshness": "2026-03-24 (freshest)",
+      "license": "other-open",
+      "coords": false, "address": "581/606", "gender": "explicit flags (women/men/dishes)",
+      "fields": ["councilName", "mikveName", "city", "address", "hours(summer/winter/shabbat)", "accessibility", "shelter", "onDuty", "responsibleWorker", "phone", "brideRoom", "forWomen/forMen/forDishes"],
+      "gapCityCoverage": { "ירושלים": 0, "אשדוד": 0, "אלעד": 0, "בני ברק": 11, "מודיעין עילית": 7, "ביתר עילית": 8 },
+      "status": "Coordless → all rows need GovMap geocoding. Viable ALTERNATIVE for Modiin Illit / Beitar Illit residual; useless for Jerusalem/Ashdod/Elad (absent)."
+    },
+    "secondary": {
+      "name": "data.gov.il 2018 archive",
+      "resourceId": "9a939c58-d149-4c07-b37f-77dbf0d50e35",
+      "count": 693, "freshness": "STALE 2018", "coords": false, "gender": false,
+      "gapCityCoverage": { "ירושלים": 40, "אשדוד": 11, "בני ברק": 10 },
+      "status": "Complementary — has Jerusalem+Ashdod that the 2026 set dropped. Lower priority (stale, coordless, gender-less)."
+    },
+    "bottomLine": "National feed is coordless (geocode required). Use 2026 set for Modiin Illit/Beitar residual; 2018 set as additive low-priority for Jerusalem/Ashdod. Elad has NO national fallback (0/0)."
+  },
+
+  "smallCities": [
+    { "city": "קרית אונו", "live": 0, "source": "https://www.kiryatono.muni.il/מקוואות/", "type": "municipal", "rendering": "SSR", "count": "~4 (+2 כלים)", "coords": false, "address": true, "fields": ["name","address","hours","attendant×n","phone","gender"], "verdict": "TARGET", "note": "0 live → strong fill; richest small source (hours + multiple attendant phones). Geocode addresses." },
+    { "city": "עכו", "live": 1, "source": "https://www.mdakko.org/mikooaot2", "type": "Wix (per-subpage)", "rendering": "SSR", "count": "~5", "coords": true, "address": true, "fields": ["name","address","phone","hours","attendant"], "verdict": "TARGET", "note": "Waze ll= coords per subpage (WGS84). Needs ~5 subpage fetches." },
+    { "city": "אור יהודה", "live": 2, "source": "https://www.oryehudat.co.il/מקוואות/", "type": "WordPress (per-subpage)", "rendering": "SSR", "count": "~6", "coords": false, "address": true, "fields": ["name","address","phone","hours","attendant"], "verdict": "TARGET", "note": "No coords → geocode. ~6 subpage fetches." },
+    { "city": "יבנה", "live": 5, "source": "https://mdyv.org.il/mikve", "type": "custom (single page)", "rendering": "SSR", "count": 6, "coords": true, "address": true, "fields": ["name","address","phone","hours"], "verdict": "TARGET", "note": "CLEANEST — one page, Waze latlng= coords + full addresses. ~1 net-new after dedup vs 5." },
+    { "city": "ראש העין", "live": 6, "source": "https://mdrh.org.il/directory-mikvah/", "type": "WP drts-display (per-listing)", "rendering": "SSR", "count": "~4-5", "coords": true, "address": true, "fields": ["name","address","phone","hours","attendant"], "verdict": "TARGET", "note": "Same engine as prior imports; JSON lat/lng per listing (ignore placeholder 40.69/-73.95 & 31.5/34.75). Exclude 'coming-soon'." },
+    { "city": "גבעת שמואל", "live": 3, "source": "https://mdgs.org.il/directory-mikvah/", "type": "WP drts-display (per-listing)", "rendering": "SSR", "count": "~4-6", "coords": true, "address": true, "fields": ["name","address","phone","hours","attendant"], "verdict": "TARGET", "note": "Same drts engine; JSON coords. Decide on כלים inclusion." },
+    { "city": "נתיבות", "live": 1, "source": "https://www.mdnetivot.org/מקוואות", "type": "Wix (per-subpage)", "rendering": "SSR", "count": "~6", "coords": false, "address": "per-subpage", "fields": ["name","phone","gender","address(subpage)"], "verdict": "TARGET", "note": "Addresses on individual Wix subpages; geocode needed." },
+    { "city": "נס ציונה", "live": 1, "source": "https://www.moatzanz.co.il/שירותי-המועצה/מקוואות/", "type": "WordPress", "rendering": "SSR", "count": "2 (+2 כלים)", "coords": false, "address": true, "fields": ["name","address","attendant","phone","hours","gender"], "verdict": "TARGET", "note": "Full addr+attendant+hours; geocode." },
+    { "city": "קרית מלאכי", "live": 0, "source": "https://www.md-malachi.co.il/מקוואות", "type": "Wix", "rendering": "SSR", "count": 1, "coords": false, "address": true, "fields": ["name","address","phone","hours","gender"], "verdict": "TARGET", "note": "0 live → clean fill. Domain is HYPHENATED (md-malachi.co.il). Geocode." },
+    { "city": "אילת", "live": 1, "source": "https://datiteilat.co.il/מקוואות (api.datiteilat.co.il)", "type": "CRA + Leaflet + backend API", "rendering": "CSR (blocked to fetch)", "count": "~2", "coords": "likely (Leaflet)", "address": "n/a via fetch", "verdict": "DEFER", "note": "Official but CSR-only; needs browser/network capture to read API. Coords likely available there." }
+  ],
+
+  "recommendedSequencing": [
+    "Phase 25A (quick wins, mostly native coords, SSR): יבנה, ראש העין, גבעת שמואל, עכו (Waze/JSON coords) + קרית אונו, קרית מלאכי, נס ציונה, אור יהודה, נתיבות (GovMap geocode). Est net-new ~25-30.",
+    "Phase 25B (national feed): data.gov.il 2026 (resource e80a5e59) for מודיעין עילית/ביתר residual + nationwide small-town gap-fill, geocoded via GovMap; data.gov.il 2018 (resource 9a939c58) additive for ירושלים(40)/אשדוד(11).",
+    "Phase 25C (Jerusalem deep-dive, needs browser): GovMap layer 27 token capture (Chrome MCP) + rabanut.org.il men's/keilim categories. Highest single-city yield (+60-120).",
+    "Phase 25D (browser, low): אילת CSR API via network capture."
+  ],
+  "sourceRule": "Official religious-council / municipal / government only. Commercial aggregators (mikve.net, mikveh.co.il, oin, b144, kipa, taharat) excluded per golden rules.",
+  "noActionTaken": { "extraction": false, "import": false, "write": false, "rebuild": false, "publish": false }
+}

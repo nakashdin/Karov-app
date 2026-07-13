@@ -1,0 +1,42 @@
+{
+  "generatedNote": "PHASE 19 DRY-RUN — Beit Shemesh + Kiryat Gat (CSR sites, browser UA). Address-level coords only (record-coord bbox-validated OR GovMap ADDR_V1). No Nominatim, no settlement-level. No DB write, no rebuild.",
+  "sources": {
+    "kiryatGat": {
+      "url": "https://mdkg.org.il/mikve",
+      "parsed": 7,
+      "withRecordCoords": 5,
+      "govmapGeocoded": 0
+    },
+    "beitShemesh": {
+      "url": "https://www.rabanutbs.co.il/רשימת-מקוואות/",
+      "parsed": 15,
+      "govmapGeocoded": 10
+    }
+  },
+  "totalParsed": 22,
+  "addressLevelResolved": 15,
+  "notResolvable": 7,
+  "writeReady": 8,
+  "duplicates": 7,
+  "writeReadyBySource": {
+    "kiryat-gat": 5,
+    "beit-shemesh": 3
+  },
+  "idCollisions": 0,
+  "duplicateAppIds": 0,
+  "finalRecommendedWriteCount": 8,
+  "liveMikvehBefore": 615,
+  "estimatedTotalAfterWrite": 623,
+  "notes": [
+    "Kiryat Gat ids 69 & 88 had WRONG embedded coords (Tel-Aviv / north) → bbox-rejected; 69 recovered via GovMap (has address), 88 excluded (no usable address).",
+    "Settlement-level geocoding intentionally NOT used."
+  ],
+  "rollbackPlan": [
+    "Backup places.osm.json → places.osm.pre-phase19.backup.json (+cities) before write",
+    "Additive append only; do NOT run rebuildAppDataset"
+  ],
+  "dryRun": true,
+  "liveDataTouched": false,
+  "publishPerformed": false,
+  "rebuildTouched": false
+}

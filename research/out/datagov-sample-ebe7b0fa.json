@@ -1,0 +1,66 @@
+{
+  "title": "רשימת מומחים לבתי משפט",
+  "fields": [
+    "_id",
+    "district",
+    "employer",
+    "expert",
+    "adress",
+    "authority",
+    "phone",
+    "profession",
+    "opinion",
+    "cell_phone",
+    "payment",
+    "notes",
+    "languages"
+  ],
+  "total": 132,
+  "sample": [
+    {
+      "_id": 1,
+      "district": "באר שבע והדרום",
+      "employer": "מכון ממדים",
+      "expert": "אבי סויסה",
+      "adress": "העצמאות 85 אשדוד",
+      "authority": "אשדוד",
+      "phone": "08-8659837",
+      "profession": "פסיכולוגיה",
+      "opinion": "כן",
+      "cell_phone": "052-2294588",
+      "payment": "500 שקלים",
+      "notes": "פסיכותרפיה פרטנית וזוגית למבוגרים וילדים, מומחה בכתיבת חוות דעת בתחום מסוגלות הורית , אימוץ ואבחונים פסיכודיאגנוסטיים",
+      "languages": "עברית"
+    },
+    {
+      "_id": 2,
+      "district": "ירושלים, תל אביב והמרכז",
+      "employer": "",
+      "expert": "אביבה חיים",
+      "adress": "אשר 12 מודיעין-מכבים-רעות",
+      "authority": "",
+      "phone": "08-9713230",
+      "profession": "עבודה סוציאלית",
+      "opinion": "כן",
+      "cell_phone": "053-7592724",
+      "payment": "500 שקלים",
+      "notes": "טיפול במשפחות בגירושין וילדים בסיכון, חוות דעת במשפחות בסכסוך משפחתי",
+      "languages": "עברית"
+    },
+    {
+      "_id": 3,
+      "district": "צפון",
+      "employer": "",
+      "expert": "אביבה יהלומי",
+      "adress": "שארית הפליטה 21",
+      "authority": "חיפה",
+      "phone": "04-8342311",
+      "profession": "עבודה סוציאלית",
+      "opinion": "כן",
+      "cell_phone": "054-7869126",
+      "payment": "250 שקלים",
+      "notes": "אין נסיון באבחון",
+      "languages": "עברית"
+    }
+  ]
+}

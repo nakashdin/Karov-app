@@ -1,0 +1,19 @@
+{
+  "council": "המועצה הדתית בית שאן",
+  "variant": "markers",
+  "expectedCount": 73,
+  "fetchedCount": 69,
+  "validCount": 69,
+  "rejectedCount": 0,
+  "coordSource": "markers",
+  "withNativeCoordinates": 69,
+  "missingCoordinates": 0,
+  "duplicateSourceIds": 0,
+  "enrichedFromCards": 69,
+  "ambiguousEnrich": 0,
+  "countMatches": false,
+  "pagesFetched": 1,
+  "dryRun": true,
+  "liveDataTouched": false,
+  "generatedAt": "2026-06-18"
+}

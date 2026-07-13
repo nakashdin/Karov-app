@@ -1,0 +1,355 @@
+[
+  {
+    "source": "council:kiryat-gat:mikvah",
+    "city": "קרית גת",
+    "name": "מקווה סטרומה",
+    "address": null,
+    "phone": "089957288",
+    "gender": "נשים",
+    "coordSource": "record-embedded",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.6104718,
+      "longitude": 34.7722948
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (record-embedded), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:kiryat-gat:mikvah",
+    "city": "קרית גת",
+    "name": "מקווה השושן",
+    "address": "משעול השושן 11, קרית גת",
+    "phone": "0543264432",
+    "gender": "נשים",
+    "coordSource": "govmap-no-match",
+    "hasCoords": false,
+    "location": null,
+    "disposition": "excluded",
+    "reason": "no address-level coordinate (govmap-no-match)",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:kiryat-gat:mikvah",
+    "city": "קרית גת",
+    "name": "מקווה רפאל",
+    "address": null,
+    "phone": "0508844913",
+    "gender": "נשים",
+    "coordSource": "record-embedded",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.615717,
+      "longitude": 34.7701881
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (record-embedded), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:kiryat-gat:mikvah",
+    "city": "קרית גת",
+    "name": "מקווה כרמי גת",
+    "address": "נופך 21, קריית גת",
+    "phone": "0533121731",
+    "gender": "נשים",
+    "coordSource": "record-embedded",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.622346,
+      "longitude": 34.77493
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (record-embedded), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:kiryat-gat:mikvah",
+    "city": "קרית גת",
+    "name": "מקווה כרמי גת לעסרי",
+    "address": "הנרייטה סאלד 82, קרית גת",
+    "phone": "0504126427",
+    "gender": "נשים",
+    "coordSource": "record-embedded",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.6299575,
+      "longitude": 34.7691787
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (record-embedded), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:kiryat-gat:mikvah",
+    "city": "קרית גת",
+    "name": "מקווה התמר",
+    "address": null,
+    "phone": "0502122326",
+    "gender": "נשים",
+    "coordSource": "record-embedded",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.6141812,
+      "longitude": 34.7610226
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (record-embedded), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:kiryat-gat:mikvah",
+    "city": "קרית גת",
+    "name": "מקווה גור",
+    "address": null,
+    "phone": null,
+    "gender": "גברים",
+    "coordSource": "none (no street address)",
+    "hasCoords": false,
+    "location": null,
+    "disposition": "excluded",
+    "reason": "no address-level coordinate (none (no street address))",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:beit-shemesh:mikvah",
+    "city": "בית שמש",
+    "name": "מקווה נשים המשלט",
+    "address": "המשלט 12",
+    "phone": "050777103",
+    "gender": "נשים",
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.75049159044632,
+      "longitude": 34.99078063840651
+    },
+    "disposition": "duplicate",
+    "reason": "duplicate of live mikveh-62 (95m)",
+    "matchedLiveId": "mikveh-62"
+  },
+  {
+    "source": "council:beit-shemesh:mikvah",
+    "city": "בית שמש",
+    "name": "מקווה נשים הרקפת",
+    "address": "הרקפת 42",
+    "phone": "029925536",
+    "gender": "נשים",
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.73963247984924,
+      "longitude": 34.976105733478114
+    },
+    "disposition": "duplicate",
+    "reason": "duplicate of live mikveh-osm-node-1121965571 (48m)",
+    "matchedLiveId": "mikveh-osm-node-1121965571"
+  },
+  {
+    "source": "council:beit-shemesh:mikvah",
+    "city": "בית שמש",
+    "name": "מקווה נשים ראובן",
+    "address": "ראובן 20",
+    "phone": "029952016",
+    "gender": "נשים",
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.73920955151542,
+      "longitude": 34.98535454700496
+    },
+    "disposition": "duplicate",
+    "reason": "duplicate of live mikveh-osm-node-1121963205 (75m)",
+    "matchedLiveId": "mikveh-osm-node-1121963205"
+  },
+  {
+    "source": "council:beit-shemesh:mikvah",
+    "city": "בית שמש",
+    "name": "מקווה נשים שביל האשל",
+    "address": "שביל האשל 24",
+    "phone": "029917488",
+    "gender": "נשים",
+    "coordSource": "govmap-no-match",
+    "hasCoords": false,
+    "location": null,
+    "disposition": "excluded",
+    "reason": "no address-level coordinate (govmap-no-match)",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:beit-shemesh:mikvah",
+    "city": "בית שמש",
+    "name": "מקווה נשים לכיש",
+    "address": "נחל לכיש 24",
+    "phone": "029912442",
+    "gender": "נשים",
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.71255463336033,
+      "longitude": 34.990607091500365
+    },
+    "disposition": "duplicate",
+    "reason": "duplicate of live mikveh-66 (72m)",
+    "matchedLiveId": "mikveh-66"
+  },
+  {
+    "source": "council:beit-shemesh:mikvah",
+    "city": "בית שמש",
+    "name": "מקווה נשים בן זכאי",
+    "address": "בן זכאי 30",
+    "phone": "029998472",
+    "gender": "נשים",
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.722814385432713,
+      "longitude": 34.988585558293245
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:beit-shemesh:mikvah",
+    "city": "בית שמש",
+    "name": "מקווה נשים דולב",
+    "address": "דולב 30",
+    "phone": "029925213",
+    "gender": "נשים",
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.712966069726857,
+      "longitude": 34.99659140002586
+    },
+    "disposition": "duplicate",
+    "reason": "duplicate of live mikveh-61 (73m)",
+    "matchedLiveId": "mikveh-61"
+  },
+  {
+    "source": "council:beit-shemesh:mikvah",
+    "city": "בית שמש",
+    "name": "מקווה נשים חפציבה",
+    "address": "בן איש חי 15",
+    "phone": "025393015",
+    "gender": "נשים",
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.743601478232872,
+      "longitude": 34.99756046467561
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:beit-shemesh:mikvah",
+    "city": "בית שמש",
+    "name": "מקווה נשים רמה ג' 1",
+    "address": "יואל הנביא 3",
+    "phone": "029417877",
+    "gender": "נשים",
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.70576715636574,
+      "longitude": 34.982077608240225
+    },
+    "disposition": "duplicate",
+    "reason": "duplicate of live mikveh-65 (75m)",
+    "matchedLiveId": "mikveh-65"
+  },
+  {
+    "source": "council:beit-shemesh:mikvah",
+    "city": "בית שמש",
+    "name": "מקווה נשים רמה ג' 2",
+    "address": "נתן הנביא 4",
+    "phone": "025372509",
+    "gender": "נשים",
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.704987069844165,
+      "longitude": 34.990965661701345
+    },
+    "disposition": "write_ready",
+    "reason": "address-level coordinate (govmap-ADDR_V1), not a duplicate",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:beit-shemesh:mikvah",
+    "city": "בית שמש",
+    "name": "מקווה נשים רמה ד' 1",
+    "address": "רב עולא 1",
+    "phone": "026780274",
+    "gender": "נשים",
+    "coordSource": "govmap-no-match",
+    "hasCoords": false,
+    "location": null,
+    "disposition": "excluded",
+    "reason": "no address-level coordinate (govmap-no-match)",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:beit-shemesh:mikvah",
+    "city": "בית שמש",
+    "name": "מקווה נשים רמה ד' 3",
+    "address": "תלמוד בבלי 3",
+    "phone": "025387409",
+    "gender": "נשים",
+    "coordSource": "govmap-no-match",
+    "hasCoords": false,
+    "location": null,
+    "disposition": "excluded",
+    "reason": "no address-level coordinate (govmap-no-match)",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:beit-shemesh:mikvah",
+    "city": "בית שמש",
+    "name": "מקווה נשים שכונת המשקפיים",
+    "address": "הרב קוק 24",
+    "phone": "025351409",
+    "gender": "נשים",
+    "coordSource": "govmap-ADDR_V1",
+    "hasCoords": true,
+    "location": {
+      "latitude": 31.708242278459885,
+      "longitude": 35.00195103056689
+    },
+    "disposition": "duplicate",
+    "reason": "duplicate of live mikveh-67 (77m)",
+    "matchedLiveId": "mikveh-67"
+  },
+  {
+    "source": "council:beit-shemesh:mikvah",
+    "city": "בית שמש",
+    "name": "מקווה נשים רב חנן, ד' 2",
+    "address": null,
+    "phone": "054852602",
+    "gender": "נשים",
+    "coordSource": "none (no street address)",
+    "hasCoords": false,
+    "location": null,
+    "disposition": "excluded",
+    "reason": "no address-level coordinate (none (no street address))",
+    "matchedLiveId": null
+  },
+  {
+    "source": "council:beit-shemesh:mikvah",
+    "city": "בית שמש",
+    "name": "מקווה נשים נווה שמיר",
+    "address": null,
+    "phone": "050416331",
+    "gender": "נשים",
+    "coordSource": "none (no street address)",
+    "hasCoords": false,
+    "location": null,
+    "disposition": "excluded",
+    "reason": "no address-level coordinate (none (no street address))",
+    "matchedLiveId": null
+  }
+]

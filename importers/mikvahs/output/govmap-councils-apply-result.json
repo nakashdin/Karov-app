@@ -1,0 +1,90 @@
+{
+  "status": "SUCCESS",
+  "scope": "9 GovMap-geocoded official mikveh records (Tel Aviv 3 + Bat Yam 6), all locationPrecision=address. additive append. rebuildAppDataset NOT run. Backlog untouched. No publish.",
+  "backups": {
+    "places": "C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\places.osm.pre-govmap-councils.backup.json",
+    "cities": "C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\cities.osm.pre-govmap-councils.backup.json"
+  },
+  "filesModified": [
+    "src/data/generated/places.osm.json",
+    "src/data/generated/cities.osm.json"
+  ],
+  "counts": {
+    "placesBefore": 5371,
+    "placesAfter": 5380,
+    "added": 9,
+    "mikvehBefore": 606,
+    "mikvehAfter": 615,
+    "existingLost": 0,
+    "existingModified": 0
+  },
+  "added": [
+    {
+      "id": "mikveh-tel-aviv-32.11080_34.81669",
+      "name": "מקווה הדר יוסף",
+      "city": "תל אביב יפו",
+      "geocode": "יעקב מרק 3, תל אביב-יפו"
+    },
+    {
+      "id": "mikveh-tel-aviv-32.04368_34.80135",
+      "name": "מקווה כפיר",
+      "city": "תל אביב יפו",
+      "geocode": "בושם 59, תל אביב-יפו"
+    },
+    {
+      "id": "mikveh-tel-aviv-32.06541_34.79587",
+      "name": "מקווה בצרון",
+      "city": "תל אביב יפו",
+      "geocode": "שדרות ההשכלה 10, תל אביב-יפו"
+    },
+    {
+      "id": "mikveh-bat-yam-32.00920_34.75193",
+      "name": "באבוב",
+      "city": "בת ים",
+      "geocode": "האדמו\"ר מבאבוב 12, בת ים"
+    },
+    {
+      "id": "mikveh-bat-yam-32.01917_34.75068",
+      "name": "שער ציון",
+      "city": "בת ים",
+      "geocode": "החשמונאים 27, בת ים"
+    },
+    {
+      "id": "mikveh-bat-yam-32.00857_34.74178",
+      "name": "אור החמה",
+      "city": "בת ים",
+      "geocode": "הנביאים 58, בת ים"
+    },
+    {
+      "id": "mikveh-bat-yam-32.02823_34.74896",
+      "name": "חב\"ד",
+      "city": "בת ים",
+      "geocode": "שדרות העצמאות 66, בת ים"
+    },
+    {
+      "id": "mikveh-bat-yam-32.02829_34.74691",
+      "name": "טהרת אסתר",
+      "city": "בת ים",
+      "geocode": "הלפר 38, בת ים"
+    },
+    {
+      "id": "mikveh-bat-yam-32.01567_34.74603",
+      "name": "בית אל",
+      "city": "בת ים",
+      "geocode": "ישראל בן-ציון 15, בת ים"
+    }
+  ],
+  "license": "council-public; coordinates via GovMap ADDR_V1 (official Israeli address DB), ITM→WGS84",
+  "reconciliation": "EXACT: places 5371→5380 (+9); mikveh 606→615 (+9); 0 lost; 0 modified.",
+  "rollback": [
+    "copy C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\places.osm.pre-govmap-councils.backup.json → C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\places.osm.json",
+    "copy C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\cities.osm.pre-govmap-councils.backup.json → C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\cities.osm.json",
+    "do NOT run rebuildAppDataset",
+    "verify: places returns to 5371, mikveh to 606"
+  ],
+  "dryRun": false,
+  "publishPerformed": false,
+  "additiveOnly": true,
+  "rebuildRun": false,
+  "backlogTouched": false
+}

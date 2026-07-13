@@ -1,0 +1,22 @@
+{
+  "source": "arcgis:ashkelon",
+  "expectedCount": 190,
+  "fetchedCount": 190,
+  "droppedNoName": 0,
+  "validCount": 190,
+  "rejectedCount": 0,
+  "new": 177,
+  "enriched": 11,
+  "conflicts": 2,
+  "over300": 0,
+  "existingSynagogues": 2739,
+  "mergedSynagogues": 2918,
+  "coordinateSource": "ArcGIS server outSR=4326 (authoritative WGS84)",
+  "datumShiftFromPureItmMeters": {
+    "comparedCount": 0,
+    "maxMeters": 0,
+    "avgMeters": 0
+  },
+  "dryRun": true,
+  "liveDataTouched": false
+}

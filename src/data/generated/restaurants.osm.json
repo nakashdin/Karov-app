@@ -78,21 +78,6 @@
     "category": "meat"
   },
   {
-    "id": "osm-node-728976432",
-    "name": "פז",
-    "type": "restaurant",
-    "cityId": "משמר איילון",
-    "address": "המכונאי, משמר איילון",
-    "location": {
-      "latitude": 31.8893652,
-      "longitude": 34.9600372
-    },
-    "source": "osm",
-    "extra": {
-      "osmKosher": "yes"
-    }
-  },
-  {
     "id": "osm-node-777400976",
     "name": "דבוש",
     "type": "restaurant",
@@ -392,7 +377,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-1763004894",
@@ -1331,24 +1317,6 @@
       "osmKosher": "yes"
     },
     "category": "parve"
-  },
-  {
-    "id": "osm-node-4501920591",
-    "name": "Bistro 60",
-    "type": "restaurant",
-    "cityId": "בת ים",
-    "address": "בת ים",
-    "location": {
-      "latitude": 32.0489852,
-      "longitude": 34.7500115
-    },
-    "source": "osm",
-    "tags": [
-      "arab"
-    ],
-    "extra": {
-      "osmKosher": "yes"
-    }
   },
   {
     "id": "osm-node-4511310889",
@@ -3232,25 +3200,6 @@
       "osmKosher": "yes"
     },
     "category": "meat"
-  },
-  {
-    "id": "osm-node-10069419066",
-    "name": "דוגמה",
-    "type": "restaurant",
-    "cityId": "לוד",
-    "address": "לוד",
-    "location": {
-      "latitude": 31.9441902,
-      "longitude": 34.8743637
-    },
-    "source": "osm",
-    "tags": [
-      "burger",
-      "regional"
-    ],
-    "extra": {
-      "osmKosher": "yes"
-    }
   },
   {
     "id": "osm-node-10176143226",
@@ -5303,7 +5252,8 @@
     "source": "osm",
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "dairy"
   },
   {
     "id": "osm-node-12636593463",
@@ -6265,7 +6215,8 @@
     ],
     "extra": {
       "osmKosher": "yes"
-    }
+    },
+    "category": "meat"
   },
   {
     "id": "osm-node-13809202206",

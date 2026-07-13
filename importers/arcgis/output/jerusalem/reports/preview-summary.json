@@ -1,0 +1,22 @@
+{
+  "source": "arcgis:jerusalem",
+  "expectedCount": 357,
+  "fetchedCount": 357,
+  "droppedNoName": 277,
+  "validCount": 80,
+  "rejectedCount": 0,
+  "new": 59,
+  "enriched": 21,
+  "conflicts": 0,
+  "over300": 1,
+  "existingSynagogues": 2739,
+  "mergedSynagogues": 2798,
+  "coordinateSource": "ArcGIS server outSR=4326 (authoritative WGS84)",
+  "datumShiftFromPureItmMeters": {
+    "comparedCount": 80,
+    "maxMeters": 77.24,
+    "avgMeters": 77.21
+  },
+  "dryRun": true,
+  "liveDataTouched": false
+}

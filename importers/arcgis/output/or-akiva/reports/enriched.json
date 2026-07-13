@@ -1,0 +1,55 @@
+[
+  {
+    "existingId": "osm-way-528637525",
+    "existingName": "אהבת שלום",
+    "fields": [
+      "phone",
+      "address"
+    ],
+    "distanceM": 4
+  },
+  {
+    "existingId": "osm-node-3162494934",
+    "existingName": "בית כנסת אהבת אליהו",
+    "fields": [
+      "phone",
+      "address"
+    ],
+    "distanceM": 160
+  },
+  {
+    "existingId": "osm-node-4474606915",
+    "existingName": "בית כנסת מרכזי",
+    "fields": [
+      "phone",
+      "address"
+    ],
+    "distanceM": 18
+  },
+  {
+    "existingId": "osm-node-4363446782",
+    "existingName": "מיזוג גלויות",
+    "fields": [
+      "phone",
+      "address"
+    ],
+    "distanceM": 8
+  },
+  {
+    "existingId": "osm-way-630554240",
+    "existingName": "עדת ישורון",
+    "fields": [
+      "phone",
+      "address"
+    ],
+    "distanceM": 29
+  },
+  {
+    "existingId": "osm-way-667264307",
+    "existingName": "עזרת אחים",
+    "fields": [
+      "address"
+    ],
+    "distanceM": 17
+  }
+]

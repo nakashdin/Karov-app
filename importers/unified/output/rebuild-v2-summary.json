@@ -1,0 +1,20 @@
+{
+  "generatedNote": "PHASE 17B — V2 rebuild parity summary. Read-only; no live data touched; rebuildAppDataset NOT switched.",
+  "sourcesLoaded": 38,
+  "recordsMerged": 4932,
+  "candidateCount": 4932,
+  "currentCount": 4932,
+  "parityExact": true,
+  "missingIds": 0,
+  "extraIds": 0,
+  "deepEqualMatched": 4932,
+  "deepEqualMismatched": 0,
+  "duplicateIds": 0,
+  "orderDiffers": true,
+  "exactOrderReproducible": true,
+  "contentHash": "2fd48d6b44f6f949",
+  "conclusion": "V2 rebuild reconstructs the dataset losslessly from the 38 source files: same count, same id-set, every record deep-equal. Safe basis for Phase 17C (safety rails) and a future cutover. Order is canonicalized to a deterministic id-sort (non-runtime-significant); exact legacy-order reproduction is also possible.",
+  "dryRun": true,
+  "liveDataTouched": false,
+  "rebuildSwitched": false
+}

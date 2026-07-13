@@ -1,0 +1,4643 @@
+[
+  {
+    "id": "arcgis:ashdod::10",
+    "name": "קהילת עולי תימן",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "רוגוזין 44",
+    "location": {
+      "latitude": 31.80493623383672,
+      "longitude": 34.64384356421493
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::21",
+    "name": "שבט אחים",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הראשונים 37",
+    "location": {
+      "latitude": 31.805211232693107,
+      "longitude": 34.645026804270316
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::23",
+    "name": "בית צור ברוך",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הגפן 9",
+    "location": {
+      "latitude": 31.806795426913308,
+      "longitude": 34.643304230476446
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::29",
+    "name": "אוהל שמואל",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "המפרש 12",
+    "location": {
+      "latitude": 31.802690800762687,
+      "longitude": 34.64006239064626
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::46",
+    "name": "אור החיים הקדוש",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הרב שאולי 10",
+    "location": {
+      "latitude": 31.795965876265377,
+      "longitude": 34.641775965901346
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::60",
+    "name": "אוהל חיים",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "המפרש 15",
+    "location": {
+      "latitude": 31.802143689803934,
+      "longitude": 34.6396736250908
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::65",
+    "name": "אהבת ישראל",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הגולשים 1 א",
+    "location": {
+      "latitude": 31.799748122783306,
+      "longitude": 34.63937731106262
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::66",
+    "name": "תהילה לציון",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הגולשים 12 א",
+    "location": {
+      "latitude": 31.79856472961899,
+      "longitude": 34.63815835734808
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::85",
+    "name": "רשב\"י",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "גלעד 4",
+    "location": {
+      "latitude": 31.784278073002778,
+      "longitude": 34.62871734144697
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::89",
+    "name": "מגן אברהם",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הרב שאולי 3",
+    "location": {
+      "latitude": 31.79863385347556,
+      "longitude": 34.6434136802312
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::100",
+    "name": "בית יצחק אוהל אליהו",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "השייטים 14",
+    "location": {
+      "latitude": 31.799008290569557,
+      "longitude": 34.64118317764693
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::125",
+    "name": "משכנות שמואל",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "אייר 2",
+    "location": {
+      "latitude": 31.78362258849601,
+      "longitude": 34.63760903247712
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::142",
+    "name": "אהבה ואחווה ,בית המדרש \"אור תורה וחיים\"+ יוצאי מצ",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "ההגנה 24",
+    "location": {
+      "latitude": 31.804810286818178,
+      "longitude": 34.64561710047123
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::144",
+    "name": "לבדוק",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "ההגנה 24",
+    "location": {
+      "latitude": 31.804802938473532,
+      "longitude": 34.64548082525753
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::164",
+    "name": "יג' קדושי אשדוד",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "חטיבת הנגב 25",
+    "location": {
+      "latitude": 31.801450190763095,
+      "longitude": 34.66480562060118
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::172",
+    "name": "כבוד השמחה+ יד הרשב\"א",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "אליעזר בן הורקונס 20",
+    "location": {
+      "latitude": 31.79363271517685,
+      "longitude": 34.66207333199637
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::174",
+    "name": "אוהל אברהם",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "עקיבא בן מהללאל 2",
+    "location": {
+      "latitude": 31.792868322288715,
+      "longitude": 34.6625775638167
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::175",
+    "name": "גור מהללאל",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "עקיבא בן מהללאל 2",
+    "location": {
+      "latitude": 31.792721951441028,
+      "longitude": 34.662533928331335
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::176",
+    "name": "קהל עדת ישורון",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "אליעזר בן הורקנוס 8",
+    "location": {
+      "latitude": 31.790715944157622,
+      "longitude": 34.66115326288604
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::252",
+    "name": "אחדות עמנו",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "נחל שניר 5",
+    "location": {
+      "latitude": 31.78171375954837,
+      "longitude": 34.634431055019384
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::273",
+    "name": "ברכת עמליה",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "ירמוך 5",
+    "location": {
+      "latitude": 31.78134478006654,
+      "longitude": 34.62941281035786
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::283",
+    "name": "היכל נפתלי",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "ברוריה 7",
+    "location": {
+      "latitude": 31.773991119738305,
+      "longitude": 34.62802532450469
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::289",
+    "name": "שאר ישוב",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "שד' מונטיפיורי",
+    "location": {
+      "latitude": 31.771627533593946,
+      "longitude": 34.625313464136795
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::297",
+    "name": "אילה הנביא וינון",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "קק\"ל 17",
+    "location": {
+      "latitude": 31.783530246945194,
+      "longitude": 34.64649340419787
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::307",
+    "name": "אור החיים הקדוש",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "קק\"ל 70",
+    "location": {
+      "latitude": 31.779711646507614,
+      "longitude": 34.6479197510139
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::345",
+    "name": "חב\"ד",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "המלך דוד 11",
+    "location": {
+      "latitude": 31.77778185712091,
+      "longitude": 34.64327286916576
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::346",
+    "name": "היכל יצחק",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "המלך יהוא 10",
+    "location": {
+      "latitude": 31.776378810162374,
+      "longitude": 34.64416526321056
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::371",
+    "name": "רינת זכריה",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "ברנר 15",
+    "location": {
+      "latitude": 31.79679698517326,
+      "longitude": 34.65120735811553
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::398",
+    "name": "בני קדושים",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "טשרניחובסקי 3",
+    "location": {
+      "latitude": 31.796251982491334,
+      "longitude": 34.6503983074017
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::411",
+    "name": "חסידי גור ע\"ש פרלמן",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "היסמין 3",
+    "location": {
+      "latitude": 31.790166500498994,
+      "longitude": 34.64986669659517
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::440",
+    "name": "קלרה קראקו",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "אחד העם 26",
+    "location": {
+      "latitude": 31.800568072700838,
+      "longitude": 34.64714966303031
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::445",
+    "name": "ענן הנשיא",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "האצ\"ל 7",
+    "location": {
+      "latitude": 31.810274894642145,
+      "longitude": 34.64489108925717
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::473",
+    "name": "תפילה למשה",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "משמר הירדן 11",
+    "location": {
+      "latitude": 31.810479542879644,
+      "longitude": 34.65062469185703
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::474",
+    "name": "טוניסאי \"זכרון יוסף\"",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "סטרומה 5",
+    "location": {
+      "latitude": 31.804731091891345,
+      "longitude": 34.650915637662926
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::476",
+    "name": "משיבי חיים",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "סטרומה 5",
+    "location": {
+      "latitude": 31.80503679775116,
+      "longitude": 34.650626212806166
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::477",
+    "name": "לעדה האתיופית",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "סטרומה 5",
+    "location": {
+      "latitude": 31.804782068709823,
+      "longitude": 34.65066216451258
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::482",
+    "name": "שער ציון",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "חיבת ציון 14",
+    "location": {
+      "latitude": 31.80952447402242,
+      "longitude": 34.64632306607121
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::484",
+    "name": "תורה וחיים",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "חיבת ציון 12",
+    "location": {
+      "latitude": 31.809853687520427,
+      "longitude": 34.646274033610204
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::485",
+    "name": "רבי חיים חורי",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "חיבת ציון 12",
+    "location": {
+      "latitude": 31.809773521110372,
+      "longitude": 34.646393281031074
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::501",
+    "name": "הרב שאולי",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "ההסתדרות 15",
+    "location": {
+      "latitude": 31.809635009348394,
+      "longitude": 34.64931358932814
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::503",
+    "name": "צויירא",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "רזיאל דוד 8",
+    "location": {
+      "latitude": 31.80949927101551,
+      "longitude": 34.650094128721435
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::509",
+    "name": "היכל אליהו",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "אח\"י אילת 19",
+    "location": {
+      "latitude": 31.805226553419406,
+      "longitude": 34.64820255499559
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::513",
+    "name": "זכרון קדושים",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "ההסתדרות 23",
+    "location": {
+      "latitude": 31.808371764384795,
+      "longitude": 34.650024965151815
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::515",
+    "name": "רמב\"ם תפארת חיים",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "המעפילים 37",
+    "location": {
+      "latitude": 31.804868191271872,
+      "longitude": 34.6499102441593
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::518",
+    "name": "אוהל יצחק",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "אח\"י אילת 10",
+    "location": {
+      "latitude": 31.806213371360858,
+      "longitude": 34.648023199856645
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::526",
+    "name": "אביר יעקב",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הראשונים 19",
+    "location": {
+      "latitude": 31.808257724577132,
+      "longitude": 34.647590856535096
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::537",
+    "name": "עולי מקנס",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "קדש 6",
+    "location": {
+      "latitude": 31.80458870677358,
+      "longitude": 34.646889347144615
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::542",
+    "name": "אוהל יעקב",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "המעפילים 37",
+    "location": {
+      "latitude": 31.804925387717983,
+      "longitude": 34.649911169770526
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::546",
+    "name": "נצח ישראל",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "סטרומה 1",
+    "location": {
+      "latitude": 31.80464364229879,
+      "longitude": 34.65009044481691
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::706",
+    "name": "זכור לאברהם הרי\"ף",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הרי\"ף 26",
+    "location": {
+      "latitude": 31.785428785902315,
+      "longitude": 34.66637458002632
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::727",
+    "name": "חי טייב",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "שלמה בן יוסף",
+    "location": {
+      "latitude": 31.7938353752294,
+      "longitude": 34.65847321554374
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::728",
+    "name": "חזון אבנר",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "שלמה בן יוסף",
+    "location": {
+      "latitude": 31.793881835764275,
+      "longitude": 34.658225416949506
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::729",
+    "name": "חדר הרב",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "יצחק הנשיא 0",
+    "location": {
+      "latitude": 31.797347035947613,
+      "longitude": 34.65761199482183
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::734",
+    "name": "קול יהודה",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "חורי חיים13",
+    "location": {
+      "latitude": 31.79471479310893,
+      "longitude": 34.656076627672945
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::736",
+    "name": "ברית יצחק",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "שלמה בן יוסף",
+    "location": {
+      "latitude": 31.79396921677658,
+      "longitude": 34.657925916508724
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::738",
+    "name": "בית מיכאל(מיכאל הקטן)",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "חורי חיים 7",
+    "location": {
+      "latitude": 31.79599394675447,
+      "longitude": 34.65707795841322
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::740",
+    "name": "סוכת שלום",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "חורי חיים 7",
+    "location": {
+      "latitude": 31.796110574150138,
+      "longitude": 34.656936047971634
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::747",
+    "name": "אליהו הנביא",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "גור דב 24",
+    "location": {
+      "latitude": 31.790982388120934,
+      "longitude": 34.65592684344537
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::750",
+    "name": "קהל חסידים",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "אליעזר בן הורקנוס 5",
+    "location": {
+      "latitude": 31.791608813211667,
+      "longitude": 34.660093064592154
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::751",
+    "name": "רשב\"י",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "בן יוסף שלמה",
+    "location": {
+      "latitude": 31.79383020281789,
+      "longitude": 34.65530395450123
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::753",
+    "name": "אש דת",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הלפרין ירמיהו 5",
+    "location": {
+      "latitude": 31.791764235651232,
+      "longitude": 34.65814151357674
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::756",
+    "name": "אמרי חיים",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "מאיר בעל הנס 14",
+    "location": {
+      "latitude": 31.78985030207519,
+      "longitude": 34.65981804403755
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::759",
+    "name": "חדוות החסידות",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "מאיר בעל הנס 16",
+    "location": {
+      "latitude": 31.789337987744393,
+      "longitude": 34.6597301947122
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::761",
+    "name": "תפארת יהודה",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הצבעוני 2",
+    "location": {
+      "latitude": 31.790033664037068,
+      "longitude": 34.64986376876701
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::762",
+    "name": "שי עולמות",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "מבוא הדודאים 1",
+    "location": {
+      "latitude": 31.78808051697161,
+      "longitude": 34.65744209047015
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::763",
+    "name": "בית אליהו",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "מיכשוילי 23",
+    "location": {
+      "latitude": 31.790159920492968,
+      "longitude": 34.65741982110685
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::772",
+    "name": "מגן יוסף",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "שדרות ראשון לציון 8",
+    "location": {
+      "latitude": 31.78195102521437,
+      "longitude": 34.66019077940245
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::775",
+    "name": "הרמ\"א (רפאל משה אלבז)",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "אלבז נתן 12",
+    "location": {
+      "latitude": 31.795951147359247,
+      "longitude": 34.65407927861515
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::789",
+    "name": "שומרי ישראל",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "בן יוסף שלמה 18",
+    "location": {
+      "latitude": 31.79352360393471,
+      "longitude": 34.65477370826627
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::801",
+    "name": "גואל ישראל",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "מבוא השרביטן 8",
+    "location": {
+      "latitude": 31.78772588709598,
+      "longitude": 34.65407328323099
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::805",
+    "name": "\"זכר יצחק\" פיטסבורג",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "מבוא השרביטן 7",
+    "location": {
+      "latitude": 31.787781570700208,
+      "longitude": 34.6545686347978
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::839",
+    "name": "מגן חסידים",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "מבוא מבצע חורב 5",
+    "location": {
+      "latitude": 31.79914624326525,
+      "longitude": 34.6622155721209
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::880",
+    "name": "נועם התורה נהרדעה",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הרב רוזובסקי 3",
+    "location": {
+      "latitude": 31.803429738782846,
+      "longitude": 34.66016234244106
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::883",
+    "name": "קהילת מבקשי תורה",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הרב רוזובסקי 0",
+    "location": {
+      "latitude": 31.80208318593886,
+      "longitude": 34.658266297560836
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::886",
+    "name": "עוז התורה",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הרב אבן דנן 2",
+    "location": {
+      "latitude": 31.797963006051788,
+      "longitude": 34.660055429872
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::891",
+    "name": "זהר שלום",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "חפץ חיים 12",
+    "location": {
+      "latitude": 31.79875869001995,
+      "longitude": 34.65762195719148
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::896",
+    "name": "החיד\"א",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "צדקת יוסף 4",
+    "location": {
+      "latitude": 31.79786876578964,
+      "longitude": 34.656563903742054
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::901",
+    "name": "שבטי ישראל",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הרב הרצוג 11",
+    "location": {
+      "latitude": 31.803289486324203,
+      "longitude": 34.65366006129701
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::902",
+    "name": "קהילת ספרו",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הרב הרצוג 17",
+    "location": {
+      "latitude": 31.80364679829555,
+      "longitude": 34.65433664069313
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::905",
+    "name": "ישועת יעקב",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "רמב\"ם 6",
+    "location": {
+      "latitude": 31.804517722367297,
+      "longitude": 34.653641617748484
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::906",
+    "name": "אוצרות חיים",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "סולד הנריטה 5",
+    "location": {
+      "latitude": 31.80403501621403,
+      "longitude": 34.65300546518558
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::908",
+    "name": "דעת ותבונה",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הנרייטה סולד 7",
+    "location": {
+      "latitude": 31.80363482122089,
+      "longitude": 34.65308513782235
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::946",
+    "name": "בן ציון",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "חטיבת גבעתי 5",
+    "location": {
+      "latitude": 31.802938190033746,
+      "longitude": 34.66335212434735
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::949",
+    "name": "בית אל",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "חטיבת כרמלי 6",
+    "location": {
+      "latitude": 31.804161075696733,
+      "longitude": 34.66192268772698
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::952",
+    "name": "אהבת ישראל",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "פלמח 11",
+    "location": {
+      "latitude": 31.802200669936894,
+      "longitude": 34.662854659990494
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::966",
+    "name": "עולי אירן",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הרב קוק 11",
+    "location": {
+      "latitude": 31.809361006426137,
+      "longitude": 34.65266423147791
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::975",
+    "name": "יצחק ירנן",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "ילין דוד 1",
+    "location": {
+      "latitude": 31.807141919213787,
+      "longitude": 34.65463864053698
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::1135",
+    "name": "אורות חיים ומשה",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "האדמו\"ר מבעלז 43",
+    "location": {
+      "latitude": 31.804651022494472,
+      "longitude": 34.664485286395056
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::1178",
+    "name": "תפארת רפאל",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "המאבק 6",
+    "location": {
+      "latitude": 31.78400944417459,
+      "longitude": 34.64275433105446
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::1229",
+    "name": "זרע אברהם",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "ההסתדרות 15",
+    "location": {
+      "latitude": 31.80965136538401,
+      "longitude": 34.64933008127148
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::1231",
+    "name": "בני אסרף",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "העצמאות 3",
+    "location": {
+      "latitude": 31.7925890407059,
+      "longitude": 34.64357046042239
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::1239",
+    "name": "הרמח\"ל",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "האצ\"ל 17",
+    "location": {
+      "latitude": 31.809194683240197,
+      "longitude": 34.644908062788566
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::1247",
+    "name": "מבט לעתיד",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "אליאשוילי 4",
+    "location": {
+      "latitude": 31.794655965367998,
+      "longitude": 34.64725985376978
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::1249",
+    "name": "אֹהֶל רחֵל - אַבַּרבְָּנאֵל",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "מבוא מבצע נחשון 5",
+    "location": {
+      "latitude": 31.798436764709667,
+      "longitude": 34.66085843649651
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::1252",
+    "name": "עטרת משה",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "התלמוד 15",
+    "location": {
+      "latitude": 31.79123962681381,
+      "longitude": 34.66420565601659
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::1253",
+    "name": "זכרון חיים אלחנן",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "יוסי בר חלפתא 1",
+    "location": {
+      "latitude": 31.791135591194497,
+      "longitude": 34.66447278264621
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::1254",
+    "name": "בֵּית הֲחסִידִים דְּגוּר - בֶּן זַכַּאי",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "התלמוד 13",
+    "location": {
+      "latitude": 31.79140150361132,
+      "longitude": 34.66423943238333
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::1268",
+    "name": "אוהל יעקב",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "שמואל הנגיד 11",
+    "location": {
+      "latitude": 31.799721295706323,
+      "longitude": 34.648845708701266
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::1270",
+    "name": "רבי חיים פינטו",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "ברנר 28",
+    "location": {
+      "latitude": 31.79583389981438,
+      "longitude": 34.65048908909773
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::1273",
+    "name": "דוד בן ברוך",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הרב קוק 20",
+    "location": {
+      "latitude": 31.807756838739788,
+      "longitude": 34.65628476719195
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::1278",
+    "name": "מגדל עוז",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "בורוכוב 26",
+    "location": {
+      "latitude": 31.801205855798653,
+      "longitude": 34.6517991857589
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::1282",
+    "name": "עולי רומניה",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "מורדי הגטאות 0",
+    "location": {
+      "latitude": 31.80581442900751,
+      "longitude": 34.65885233680761
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::1313",
+    "name": "רבי שמעון בר יוחאי",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "חטיבת הנגב 11",
+    "location": {
+      "latitude": 31.80297354256863,
+      "longitude": 34.66470941288155
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::1314",
+    "name": "יגדיל תורה",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "שד עוזיהו 3",
+    "location": {
+      "latitude": 31.80302377209267,
+      "longitude": 34.661275591079544
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::1397",
+    "name": "אור יצחק",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הציונות 12",
+    "location": {
+      "latitude": 31.786800866127205,
+      "longitude": 34.64310279009004
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2639",
+    "name": "תהילה לדוד",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "ההסתדרות 17",
+    "location": {
+      "latitude": 31.809440070757606,
+      "longitude": 34.64900225083507
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2640",
+    "name": "ילדי שגיא",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "אח\"י אילת 4",
+    "location": {
+      "latitude": 31.807024711006513,
+      "longitude": 34.64867379083233
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2642",
+    "name": "מגן דוד",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הראשונים 39",
+    "location": {
+      "latitude": 31.80523253550414,
+      "longitude": 34.64486716890567
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2644",
+    "name": "נר מרדכי",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הרב מימון 7 א",
+    "location": {
+      "latitude": 31.802246724104155,
+      "longitude": 34.65329601574312
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2645",
+    "name": "רבי שלום אמזלג",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "המעפילים 38",
+    "location": {
+      "latitude": 31.805363234154303,
+      "longitude": 34.64980520645832
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2646",
+    "name": "אוהל שם",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "ברקת 4",
+    "location": {
+      "latitude": 31.769588892110413,
+      "longitude": 34.623038776811775
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2647",
+    "name": "חכם אהרון בוטרשוילי",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "שבזי 5",
+    "location": {
+      "latitude": 31.798434127180347,
+      "longitude": 34.64788583536658
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2648",
+    "name": "בית דוד הכהן",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "חיים חורי 11",
+    "location": {
+      "latitude": 31.794774211502652,
+      "longitude": 34.65586080715761
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2649",
+    "name": "צמח צדיק מוסדות",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הרותם 29",
+    "location": {
+      "latitude": 31.789357787770385,
+      "longitude": 34.65155455530959
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2650",
+    "name": "מעליץ",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הרותם 29",
+    "location": {
+      "latitude": 31.789268762539628,
+      "longitude": 34.65180714991073
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2651",
+    "name": "זוהר התורה",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "מבוא הדמומית 4",
+    "location": {
+      "latitude": 31.78596059021628,
+      "longitude": 34.65330585548095
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2652",
+    "name": "אוהל דב",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הנרקיס 1",
+    "location": {
+      "latitude": 31.78635700426269,
+      "longitude": 34.6493886536225
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2653",
+    "name": "חפץ חיים",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "מבוא הגומא 6",
+    "location": {
+      "latitude": 31.78753145265924,
+      "longitude": 34.65037484505444
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2654",
+    "name": "קריית חינוך",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הרקפת 14",
+    "location": {
+      "latitude": 31.785747050320435,
+      "longitude": 34.65443536498178
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2655",
+    "name": "ויז'ניץ(לב אריה) שיח יצחק",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הרותם 29",
+    "location": {
+      "latitude": 31.78956194036526,
+      "longitude": 34.65164477069345
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2656",
+    "name": "הרב אפריים לוי",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הרותם 29",
+    "location": {
+      "latitude": 31.789482537862707,
+      "longitude": 34.65190537302456
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2657",
+    "name": "ברכת אברהם",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "ענבים 3",
+    "location": {
+      "latitude": 31.76989898115102,
+      "longitude": 34.64001410045109
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2658",
+    "name": "פורת יוסף ומנחת שי",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "פורצי הדרך 19",
+    "location": {
+      "latitude": 31.780648456673728,
+      "longitude": 34.64867123973824
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2659",
+    "name": "אוהל יעקב",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "ברקת 4",
+    "location": {
+      "latitude": 31.769517440948817,
+      "longitude": 34.62300047645518
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2660",
+    "name": "אור מנחם",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "אגת שבו 1",
+    "location": {
+      "latitude": 31.76648463653939,
+      "longitude": 34.62782476199869
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2661",
+    "name": "בית מאיר",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "העצמאות 39 ג",
+    "location": {
+      "latitude": 31.791405447471522,
+      "longitude": 34.647006493605446
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2662",
+    "name": "הסיטי",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הציונות 107",
+    "location": {
+      "latitude": 31.785494119352045,
+      "longitude": 34.639659065997265
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2663",
+    "name": "נר דוד ואוהל רחמה",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "פתח תקווה 15",
+    "location": {
+      "latitude": 31.782789096928997,
+      "longitude": 34.66351492827501
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2664",
+    "name": "אוהל משה",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "תש\"ח 5",
+    "location": {
+      "latitude": 31.787769708290625,
+      "longitude": 34.64514517507184
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2665",
+    "name": "פניני דוד פינטו",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הקליטה 3",
+    "location": {
+      "latitude": 31.78757421528422,
+      "longitude": 34.64290792641228
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2666",
+    "name": "יכל בני אדרי",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "אקסודוס 14",
+    "location": {
+      "latitude": 31.794704020627258,
+      "longitude": 34.633590849042164
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2668",
+    "name": "שערי עליה",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הנביא יחזקאל 10",
+    "location": {
+      "latitude": 31.780805971374868,
+      "longitude": 34.64621436470552
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2669",
+    "name": "קהל יראים",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "האר\"י הקדוש 3",
+    "location": {
+      "latitude": 31.78567832379729,
+      "longitude": 34.662984548226554
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2670",
+    "name": "סולם יעקב",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "ברוריה 1",
+    "location": {
+      "latitude": 31.774214088388636,
+      "longitude": 34.62906668702737
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2671",
+    "name": "אוהל משה",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "שד' תל חי 9",
+    "location": {
+      "latitude": 31.77076408283929,
+      "longitude": 34.62449614002319
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2672",
+    "name": "מייסדי החצר",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "אוסישקין מנחם",
+    "location": {
+      "latitude": 31.77296391394559,
+      "longitude": 34.634694426956685
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2674",
+    "name": "היכל בן יהודה",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "ירמוך 3",
+    "location": {
+      "latitude": 31.781525722504114,
+      "longitude": 34.62893768962474
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2675",
+    "name": "ברכת ה'",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "כנרת 67",
+    "location": {
+      "latitude": 31.78337184275622,
+      "longitude": 34.63368899957791
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2676",
+    "name": "אהבת עולם",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "כנרת 5",
+    "location": {
+      "latitude": 31.78554412624516,
+      "longitude": 34.631752280498596
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2677",
+    "name": "זכרון אברהם",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "כנרת 67",
+    "location": {
+      "latitude": 31.783877790048326,
+      "longitude": 34.633615360060226
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2679",
+    "name": "בעל הסולם",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הבשור 15",
+    "location": {
+      "latitude": 31.788393466148626,
+      "longitude": 34.62895471019141
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2680",
+    "name": "בית כנסת חב\"ד",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "אדר 4",
+    "location": {
+      "latitude": 31.78098851156657,
+      "longitude": 34.63878623983576
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2681",
+    "name": "שירה חדשה",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "אב 10",
+    "location": {
+      "latitude": 31.77988758785723,
+      "longitude": 34.63704795193893
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2682",
+    "name": "בית מאור ואוהל יצחק ישיבת פינטו",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "שבט לוי 16",
+    "location": {
+      "latitude": 31.778229821804697,
+      "longitude": 34.63564495690071
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2683",
+    "name": "פיסבורג אמונת אברהם",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "צדקת יוסף",
+    "location": {
+      "latitude": 31.79826457409979,
+      "longitude": 34.65561187735808
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2684",
+    "name": "אוהלי שם",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "אחיעזר 4",
+    "location": {
+      "latitude": 31.799428578603184,
+      "longitude": 34.65876290887482
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2685",
+    "name": "בית אהרון",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הפלמ\"ח 20",
+    "location": {
+      "latitude": 31.800486187757773,
+      "longitude": 34.66237013980063
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2686",
+    "name": "בעלז",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הרב אבוחצירה 20",
+    "location": {
+      "latitude": 31.7964562890378,
+      "longitude": 34.660447221480425
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2687",
+    "name": "ברכת בצלאל",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "האדמו\"ר מבעלז",
+    "location": {
+      "latitude": 31.805555220208635,
+      "longitude": 34.66253289584091
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2688",
+    "name": "קהילת בני תורה",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הרב רוזובסקי",
+    "location": {
+      "latitude": 31.802514213534785,
+      "longitude": 34.65804023641779
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2689",
+    "name": "בְֶּרסְַלב חֲטִיבַת",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "חטיבת גולני",
+    "location": {
+      "latitude": 31.80430775386273,
+      "longitude": 34.662380213756855
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2690",
+    "name": "בוגרי הישיבה",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "חטיבת הנגב 27",
+    "location": {
+      "latitude": 31.801296113804348,
+      "longitude": 34.66445292133361
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2691",
+    "name": "בית אהרון",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "שד הפלמ\"ח 20",
+    "location": {
+      "latitude": 31.800336177596233,
+      "longitude": 34.662603486496
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2692",
+    "name": "בית יוסף",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "חפץ חיים 8",
+    "location": {
+      "latitude": 31.798801641951343,
+      "longitude": 34.65780196132301
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2693",
+    "name": "בית שמעיה",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "האדמו\"ר מבעלז",
+    "location": {
+      "latitude": 31.805588508294917,
+      "longitude": 34.662639932092986
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2694",
+    "name": "זוהר השלום",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "חפץ חיים 12",
+    "location": {
+      "latitude": 31.79885335850353,
+      "longitude": 34.65765176769341
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2697",
+    "name": "ישיבת כנסת ישראל",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "חטיבת הנגהב 25 קומה א",
+    "location": {
+      "latitude": 31.801369424986945,
+      "longitude": 34.66466379009397
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2698",
+    "name": "מורשה צור שלום",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הרב רוזובסקי 3",
+    "location": {
+      "latitude": 31.803412913168355,
+      "longitude": 34.66021942581455
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2699",
+    "name": "נֹעַם הַתּוֹרָה",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "האב רוזובסקי 3",
+    "location": {
+      "latitude": 31.803312734215087,
+      "longitude": 34.660109012003105
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2701",
+    "name": "נר מערבי",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "חטיבת הנגב 9",
+    "location": {
+      "latitude": 31.804207166612446,
+      "longitude": 34.66463686157364
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2702",
+    "name": "עֹז הַתּוֹרָה",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הרב אבן דנן",
+    "location": {
+      "latitude": 31.797761114528434,
+      "longitude": 34.65985272012929
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2703",
+    "name": "אוהל דינה",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "בעל הנס 42",
+    "location": {
+      "latitude": 31.788561395901226,
+      "longitude": 34.663197239287754
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2704",
+    "name": "אור מאיר",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "התלמוד 17",
+    "location": {
+      "latitude": 31.790779452530245,
+      "longitude": 34.66419881355425
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2705",
+    "name": "אוצרות הגדולים",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "התלמוד 3",
+    "location": {
+      "latitude": 31.791861332183498,
+      "longitude": 34.66435953342384
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2706",
+    "name": "שִׂמְַחת יְהוּדָה",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "התלמוד 4",
+    "location": {
+      "latitude": 31.79180771140253,
+      "longitude": 34.663979406455454
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2707",
+    "name": "עֲטֶֶרת צְבִי",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "האדמו\"ר מגור 5",
+    "location": {
+      "latitude": 31.791633315469607,
+      "longitude": 34.664933890725436
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2708",
+    "name": "חֲסִידֵי גּוּר",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "התלמוד 5",
+    "location": {
+      "latitude": 31.791612175581573,
+      "longitude": 34.66426329883207
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2709",
+    "name": "חסידי באבוב",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "אליעזר בן הורקנוס 8",
+    "location": {
+      "latitude": 31.791216725817716,
+      "longitude": 34.66100542192926
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2710",
+    "name": "בעלז קרית חסידים ב.י .א",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "מאיר בעל הנס 38",
+    "location": {
+      "latitude": 31.78833057533864,
+      "longitude": 34.662207369844175
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2711",
+    "name": "בית פנחס",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "ינאי 9",
+    "location": {
+      "latitude": 31.787440008611778,
+      "longitude": 34.66666559311741
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2712",
+    "name": "חסידי טשרנוביל",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "רב ינאי 34",
+    "location": {
+      "latitude": 31.786979916320806,
+      "longitude": 34.666660067249914
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2713",
+    "name": "ברסלב ז'",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הלל 5/5",
+    "location": {
+      "latitude": 31.792553814306512,
+      "longitude": 34.66656538421183
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2714",
+    "name": "חניכי הישיבות",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "אור לציון 7",
+    "location": {
+      "latitude": 31.79028975749485,
+      "longitude": 34.66361884600109
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2715",
+    "name": "ריב\"ז",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "אור לציון 7",
+    "location": {
+      "latitude": 31.790447324863536,
+      "longitude": 34.663626550789665
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2716",
+    "name": "חֲסִידֵי סְלָאנִים",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "אֱלִיעֶזֶר בֶּן הוֹרְקְנוּס 18",
+    "location": {
+      "latitude": 31.792981123903672,
+      "longitude": 34.66166915890898
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2717",
+    "name": "עֲטֶרת שְׁלמֹה",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "אֱלִיעֶזֶר בֶּן הוֹרְקְנוּס 20",
+    "location": {
+      "latitude": 31.79333771313426,
+      "longitude": 34.66189015576417
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2718",
+    "name": "שבט הלוי (בּוֹגְרֵי לוּבְּלִין)",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "אֱלִיעֶזֶר בֶּן הוֹרְקְנוּס 8",
+    "location": {
+      "latitude": 31.791030856482394,
+      "longitude": 34.66125791379922
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2720",
+    "name": "נֶעשְׁכִיז יוֹסִי",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "יוסי בר חלפתא 7",
+    "location": {
+      "latitude": 31.795124776750974,
+      "longitude": 34.66150310236661
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2721",
+    "name": "חלקת יהושע",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "התלמוד 5",
+    "location": {
+      "latitude": 31.791705065422782,
+      "longitude": 34.66429423504781
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2723",
+    "name": "בֵּית הֲחסִידִים",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "דְּגוּר בֶּן שֶׁטַח/יְהוּדָה הַָנּשִׂיא",
+    "location": {
+      "latitude": 31.792264493275464,
+      "longitude": 34.66570871183548
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2724",
+    "name": "יְשִׁיבַת אַחִים חֶנצְִ'יְנסְקִי",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "רַשְׁבִּ\"י 42",
+    "location": {
+      "latitude": 31.788861258647756,
+      "longitude": 34.66610030980493
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2725",
+    "name": "מִפְעֲלֵי גְּבוּרָה שֶַׁבֶּחסֶד רַ",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "רַשְׁבִּ\"י 42",
+    "location": {
+      "latitude": 31.788721046221074,
+      "longitude": 34.66604145624263
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2726",
+    "name": "אַהֲבת ישְָׂראֵל",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "רַשְׁבִּ\"י 40",
+    "location": {
+      "latitude": 31.788838104706663,
+      "longitude": 34.66567751488079
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2727",
+    "name": "בֵּית יוֹסֵף שְׁלמֹה - בֶּעלְז",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "רבי יהודה הנשיא 12",
+    "location": {
+      "latitude": 31.790643431463938,
+      "longitude": 34.66571931424065
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2728",
+    "name": "דּוֹבֵר שָׁלוֹם",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "רבי יהודה הנשיא 6",
+    "location": {
+      "latitude": 31.79177568034346,
+      "longitude": 34.66542278769336
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2729",
+    "name": "בית שלום בלעז",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "מאיר בעל הנס 38",
+    "location": {
+      "latitude": 31.78804218743108,
+      "longitude": 34.662176699374406
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2730",
+    "name": "הַָרשַׁ\"ש (אַהֲַבת שָׁלוֹם)",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "מאיר בעל הנס 36",
+    "location": {
+      "latitude": 31.788169260534467,
+      "longitude": 34.66187014583866
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2731",
+    "name": "משכן שלום ורינה",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "מאיר בעל הנס 40",
+    "location": {
+      "latitude": 31.788504857205567,
+      "longitude": 34.66298320614469
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2732",
+    "name": "תְּפִָלּה לְמֹשֶׁה (ז)",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "מאיר בעל הנס 44",
+    "location": {
+      "latitude": 31.788769831187917,
+      "longitude": 34.66377724803471
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2733",
+    "name": "שׁוֹמְרֵי אֱמוּנִים",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "מאיר בעל הנס 48",
+    "location": {
+      "latitude": 31.788200108289892,
+      "longitude": 34.66320660489445
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2734",
+    "name": "בֵּית אֲבִישַׁי",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "רב חיסדא 10",
+    "location": {
+      "latitude": 31.787714612858068,
+      "longitude": 34.66685813917699
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2735",
+    "name": "ברכת אליקים",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "מאיר בעל הנס 14",
+    "location": {
+      "latitude": 31.789676933017997,
+      "longitude": 34.659738701415485
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2736",
+    "name": "עבודת השם",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "ר' יוֹחָנָן בֶּן זַכַּאי 7",
+    "location": {
+      "latitude": 31.791533398762265,
+      "longitude": 34.66325100063375
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2737",
+    "name": "נתיבי התורה",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "יונתן בן זכאי 9",
+    "location": {
+      "latitude": 31.790693519481426,
+      "longitude": 34.663128636841385
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::2738",
+    "name": "דורשי אמת (בית ברלינר)",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "התלמוד 7",
+    "location": {
+      "latitude": 31.791350796366054,
+      "longitude": 34.66454381592769
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5081",
+    "name": "תהלה לדוד",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "ההסתדרות 15 א",
+    "location": {
+      "latitude": 31.809609003856547,
+      "longitude": 34.649325635091294
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5082",
+    "name": "כתר שלום שבזי",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הראשונים 44",
+    "location": {
+      "latitude": 31.80481083602388,
+      "longitude": 34.64407257395139
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5085",
+    "name": "הרב יאיר ברוך",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "סטרומה 5ג",
+    "location": {
+      "latitude": 31.805182961545214,
+      "longitude": 34.650752016424185
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5086",
+    "name": "רבי שלום אמזלג זצ\"ל",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "יצחק שדה 5",
+    "location": {
+      "latitude": 31.80608479856476,
+      "longitude": 34.65465865756181
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5087",
+    "name": "חסידי ישראל",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "סטרומה 5",
+    "location": {
+      "latitude": 31.804405315406136,
+      "longitude": 34.65075096931972
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5088",
+    "name": "עולי בבל ג",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "אחיעזר 2",
+    "location": {
+      "latitude": 31.79961306311497,
+      "longitude": 34.658798510795485
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5089",
+    "name": "מוסדות פיטסבורג צדקת יוסף",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "צדקת יוסף 3",
+    "location": {
+      "latitude": 31.797636219342497,
+      "longitude": 34.65746911105724
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5091",
+    "name": "תורה וחסד",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "חטיבת הנגב 11",
+    "location": {
+      "latitude": 31.803057631089523,
+      "longitude": 34.66406228789156
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5092",
+    "name": "תפארת דוד שאול",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "חטיבת הנגב 11",
+    "location": {
+      "latitude": 31.80318525029646,
+      "longitude": 34.664000041972265
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5093",
+    "name": "שער התורה",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "אחיעזר 6",
+    "location": {
+      "latitude": 31.79915258915759,
+      "longitude": 34.658685441083165
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5094",
+    "name": "בית בנימין",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "חטיבת הנגב 9",
+    "location": {
+      "latitude": 31.80375310339765,
+      "longitude": 34.66392461410256
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5095",
+    "name": "הנר המערבי",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "חטיבת הנגב 9",
+    "location": {
+      "latitude": 31.803737344725803,
+      "longitude": 34.66388121656399
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5100",
+    "name": "בכ ישיבת אשדוד",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הרב אבן דנן  2",
+    "location": {
+      "latitude": 31.797937310794325,
+      "longitude": 34.6600430549939
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5101",
+    "name": "מעגלי צדק",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "שערי יושר 5",
+    "location": {
+      "latitude": 31.799935716318856,
+      "longitude": 34.65840202397132
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5102",
+    "name": "יוסף לקח",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "זלמן ארן 15",
+    "location": {
+      "latitude": 31.801381551696753,
+      "longitude": 34.64551015899023
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5103",
+    "name": "ביכנ\"ס הסיטי",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הציונות 113",
+    "location": {
+      "latitude": 31.7862509044803,
+      "longitude": 34.63876768806838
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5104",
+    "name": "נסח אחיד",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "העצמאות 3",
+    "location": {
+      "latitude": 31.792569347135018,
+      "longitude": 34.64350523246723
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5105",
+    "name": "בית מנחם חב\"ד",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "העצמאות 93",
+    "location": {
+      "latitude": 31.78925693933907,
+      "longitude": 34.641676200052714
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5108",
+    "name": "בית כנסת מרינה - היכל בני אדרי",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "אגוז 11",
+    "location": {
+      "latitude": 31.79362811087703,
+      "longitude": 34.632446477805736
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5109",
+    "name": "הדור הרביעי",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הנביא יחזקאל 10",
+    "location": {
+      "latitude": 31.78079670255481,
+      "longitude": 34.64619689828941
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5110",
+    "name": "יחד שבטי ישראל",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "17 קק\"ל",
+    "location": {
+      "latitude": 31.783541363862376,
+      "longitude": 34.64633989717196
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5111",
+    "name": "עטרת ראובן",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "106 קק\"ל",
+    "location": {
+      "latitude": 31.78214378849732,
+      "longitude": 34.65253899437563
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5112",
+    "name": "היכל דוד",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "שדרות תל חי 29",
+    "location": {
+      "latitude": 31.76950370288971,
+      "longitude": 34.62700351698072
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5113",
+    "name": "האר\"י הקדוש",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "שדרות תל חי 53",
+    "location": {
+      "latitude": 31.767927612687192,
+      "longitude": 34.630126314107855
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5115",
+    "name": "אור החיים הקדוש",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "אור החיים 9",
+    "location": {
+      "latitude": 31.78535721482049,
+      "longitude": 34.66448844135346
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5116",
+    "name": "עולם חסד ייבנה",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "שדרות ראשון לציון 8",
+    "location": {
+      "latitude": 31.78190387811924,
+      "longitude": 34.660238305703295
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5117",
+    "name": "המניין המרכזי רובע ט",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "בן דיוואן עמרם 17",
+    "location": {
+      "latitude": 31.780967972315242,
+      "longitude": 34.66383976988307
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5118",
+    "name": "אהבת שלום",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "אליאשוילי 4",
+    "location": {
+      "latitude": 31.794690786752426,
+      "longitude": 34.647306714639974
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5119",
+    "name": "רבי שלום זאווי",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "פן אלכסנדר 2",
+    "location": {
+      "latitude": 31.79259644589604,
+      "longitude": 34.64733415651458
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5120",
+    "name": "אוהל מועד - אתיופים",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "אליאשוילי 4",
+    "location": {
+      "latitude": 31.794699742241757,
+      "longitude": 34.647320826831596
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5121",
+    "name": "קול יעקב",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "שמואל הנגיד 10",
+    "location": {
+      "latitude": 31.800108096906534,
+      "longitude": 34.649251183420816
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5123",
+    "name": "מעינות יונתן",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "כנרת 67",
+    "location": {
+      "latitude": 31.78338928580482,
+      "longitude": 34.633753206591244
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5124",
+    "name": "ברכת השם",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "כנרת 67",
+    "location": {
+      "latitude": 31.783337818811244,
+      "longitude": 34.63372037688577
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5125",
+    "name": "משכנות שמואל",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "אייר 2",
+    "location": {
+      "latitude": 31.783684309509756,
+      "longitude": 34.6375307168928
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5127",
+    "name": "כתר התורה",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "תשרי 9",
+    "location": {
+      "latitude": 31.781836911316173,
+      "longitude": 34.642324990286475
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5128",
+    "name": "מורשת מנחם",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "תשרי 9",
+    "location": {
+      "latitude": 31.781887546539025,
+      "longitude": 34.64236355990792
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5129",
+    "name": "היהדות הקראית העולמית",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "תשרי 9",
+    "location": {
+      "latitude": 31.781850061683958,
+      "longitude": 34.642406732429514
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5130",
+    "name": "רינת יצחק",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "שבט ראובן 3",
+    "location": {
+      "latitude": 31.778005604103214,
+      "longitude": 34.636653824009414
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5131",
+    "name": "בית חב\"ת לדוברי צרפתית",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "שבט לוי 14",
+    "location": {
+      "latitude": 31.777693453725178,
+      "longitude": 34.63663473823108
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5132",
+    "name": "עולי בוכרה יוסף",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "בן יוסף שלמה",
+    "location": {
+      "latitude": 31.794169068029028,
+      "longitude": 34.65725346092177
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5133",
+    "name": "בית יעקב",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "חיים חורי 3",
+    "location": {
+      "latitude": 31.796180617407153,
+      "longitude": 34.65686448653241
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5134",
+    "name": "אהבת ציון(פרסי)",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "מיכשוילי 17",
+    "location": {
+      "latitude": 31.79091833833392,
+      "longitude": 34.65573912436252
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5135",
+    "name": "בית יוסף החרצית",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "מבוא השרביטן 7",
+    "location": {
+      "latitude": 31.787788671631173,
+      "longitude": 34.6546292062588
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5136",
+    "name": "מוסדות רבותינו",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הרותם 35",
+    "location": {
+      "latitude": 31.789307526879064,
+      "longitude": 34.65098991588697
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5137",
+    "name": "שיח צדיק",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "היסמין 2",
+    "location": {
+      "latitude": 31.790661514118113,
+      "longitude": 34.650582398006684
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5138",
+    "name": "קהילת ישראל",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הרותם 29",
+    "location": {
+      "latitude": 31.789359312605484,
+      "longitude": 34.6518306473917
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5139",
+    "name": "בכ א.צ.רותה )קלופמן",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הנרקיס  2",
+    "location": {
+      "latitude": 31.786617458530664,
+      "longitude": 34.64900378251048
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5140",
+    "name": "מסורת רבותנו",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הצבעוני  14/3",
+    "location": {
+      "latitude": 31.788664642612122,
+      "longitude": 34.649118913713025
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5144",
+    "name": "חבד לדוברי רוסית אשדוד",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הסייפן  10",
+    "location": {
+      "latitude": 31.784741684567965,
+      "longitude": 34.651380229193585
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5145",
+    "name": "לשקוד על דלתותי אשדוד",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "גור דב  25",
+    "location": {
+      "latitude": 31.79256346514814,
+      "longitude": 34.6545709794145
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5147",
+    "name": "דרכי איש",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הצבעוני 19",
+    "location": {
+      "latitude": 31.787979325973915,
+      "longitude": 34.650042739212694
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5149",
+    "name": "אור החיים הקדוש",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "מיכשוילי 23",
+    "location": {
+      "latitude": 31.790101758717068,
+      "longitude": 34.65734787619777
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5150",
+    "name": "מגן אבות",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "חיים חורי 9",
+    "location": {
+      "latitude": 31.79577813840707,
+      "longitude": 34.656357988032305
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5151",
+    "name": "היכל דב",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הצבעוני 12",
+    "location": {
+      "latitude": 31.78883074261499,
+      "longitude": 34.64925045817391
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5152",
+    "name": "היכל מרדכי",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "מבוא השרביטן 5",
+    "location": {
+      "latitude": 31.788168925457803,
+      "longitude": 34.65425232472998
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5153",
+    "name": "אהלי יששכר",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הכלנית 19",
+    "location": {
+      "latitude": 31.78648033491075,
+      "longitude": 34.64969608684196
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5155",
+    "name": "זכות אריה",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "רב ינאי 7",
+    "location": {
+      "latitude": 31.787477011787644,
+      "longitude": 34.6661397568194
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5156",
+    "name": "זכר אברהם - סלאנים זֵכֶר",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "אליעזר בן הורקנוס 16",
+    "location": {
+      "latitude": 31.792491203243568,
+      "longitude": 34.66128333266449
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5157",
+    "name": "חסידי סדיגורה",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "יוחנן בן זכאי 7",
+    "location": {
+      "latitude": 31.791543538794553,
+      "longitude": 34.66320006485486
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5158",
+    "name": "כנסת ישראל",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "מאיר בעל הנס 48",
+    "location": {
+      "latitude": 31.788210332516844,
+      "longitude": 34.66317823658041
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5159",
+    "name": "כנסת מהרי\"ץ",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "מאיר בעל הנס 40",
+    "location": {
+      "latitude": 31.788502799335596,
+      "longitude": 34.66286530862228
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5160",
+    "name": "חסד לאביעד",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "הלל 6",
+    "location": {
+      "latitude": 31.792094400654403,
+      "longitude": 34.66676210870388
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5161",
+    "name": "מפעלי גבורה שבחסד/חנצ'נסקי",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "רשב\"י 42",
+    "location": {
+      "latitude": 31.788895637406544,
+      "longitude": 34.6660076165463
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5162",
+    "name": "מאקאווא",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "התלמוד 7",
+    "location": {
+      "latitude": 31.791724083146637,
+      "longitude": 34.66451988826396
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5163",
+    "name": "נפש החיים",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "האדמו\"ר מויזניץ  7",
+    "location": {
+      "latitude": 31.79101528924175,
+      "longitude": 34.664904083207524
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5164",
+    "name": "בית שלום",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "מאיר בעל הנס 48",
+    "location": {
+      "latitude": 31.78820955181544,
+      "longitude": 34.663217556847016
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5165",
+    "name": "דוד אמסלם",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "מאיר בעל הנס 40",
+    "location": {
+      "latitude": 31.788502642604186,
+      "longitude": 34.66285368910054
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5166",
+    "name": "דעת התורה",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "2 האדמו\"ר מויז'ניץ",
+    "location": {
+      "latitude": 31.791034679869618,
+      "longitude": 34.663064697634155
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5168",
+    "name": "חב\"ד מעייני ישראל",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "5 האדמו\"ר מויז'ניץ",
+    "location": {
+      "latitude": 31.791083694517486,
+      "longitude": 34.66444332180322
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5169",
+    "name": "מרדכי חמי",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "מאיר בעל הנס 7",
+    "location": {
+      "latitude": 31.789030443711646,
+      "longitude": 34.660909517853206
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5170",
+    "name": "סערט ויזניץ",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "מאיר בעל הנס 44",
+    "location": {
+      "latitude": 31.788734511181286,
+      "longitude": 34.66366102931294
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5171",
+    "name": "פני מנחם",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "מאיר בעל הנס 42",
+    "location": {
+      "latitude": 31.788574917021048,
+      "longitude": 34.663223577339316
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5172",
+    "name": "כבוד שמחה כולל",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "20 אליעזר בן הורקנוס",
+    "location": {
+      "latitude": 31.793413818771302,
+      "longitude": 34.66153618365182
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5173",
+    "name": "אהל יצחק עש ווסרמן",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "8 אליעזר בן הורקנוס",
+    "location": {
+      "latitude": 31.791359144267172,
+      "longitude": 34.66115890585746
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5179",
+    "name": "מוסדות עטרת צדיקים",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "אביי  14",
+    "location": {
+      "latitude": 31.790061646215744,
+      "longitude": 34.66655872206636
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5180",
+    "name": "קהל בית יוסף צבי",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "רב ינאי  32",
+    "location": {
+      "latitude": 31.786788749657678,
+      "longitude": 34.66624073508837
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5181",
+    "name": "בית ישראל ואוהל דב (ישיבה)",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "יוחנן בן זכאי 3",
+    "location": {
+      "latitude": 31.792569107353724,
+      "longitude": 34.663558049083896
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  },
+  {
+    "id": "arcgis:ashdod::5182",
+    "name": "אברכים ז",
+    "type": "synagogue",
+    "cityId": "אשדוד",
+    "address": "רבי מאיר בעל הנס 38",
+    "location": {
+      "latitude": 31.788331482480043,
+      "longitude": 34.662184474257145
+    },
+    "lastVerifiedAt": "2026-06-19",
+    "provenance": {
+      "source": "arcgis:ashdod",
+      "by": "arcgis-municipal",
+      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
+    }
+  }
+]

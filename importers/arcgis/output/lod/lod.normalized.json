@@ -1,0 +1,2786 @@
+[
+  {
+    "id": "arcgis:lod::2",
+    "type": "synagogue",
+    "name": "בית כנסת תפילה למשה",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.934121931556035,
+      "longitude": 34.89077033162136
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:2",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 2,
+        "name": "בית כנסת תפילה למשה",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "לוד הצעירה",
+        "מס_שכונה": 6,
+        "רובע": 4,
+        "מזהה": 1001,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "לוד הצעירה"
+    }
+  },
+  {
+    "id": "arcgis:lod::4",
+    "type": "synagogue",
+    "name": "בית כנסת",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.937373405794585,
+      "longitude": 34.887606355580374
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:4",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 4,
+        "name": "בית כנסת",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "לוד הצעירה",
+        "מס_שכונה": 6,
+        "רובע": 4,
+        "מזהה": 1003,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "לוד הצעירה"
+    }
+  },
+  {
+    "id": "arcgis:lod::5",
+    "type": "synagogue",
+    "name": "בית כנסת מושיע ישראל",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.937373405794585,
+      "longitude": 34.887606355580374
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:5",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 5,
+        "name": "בית כנסת מושיע ישראל",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "לוד הצעירה",
+        "מס_שכונה": 6,
+        "רובע": 4,
+        "מזהה": 1004,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "לוד הצעירה"
+    }
+  },
+  {
+    "id": "arcgis:lod::7",
+    "type": "synagogue",
+    "name": "בית כנסת בת קול",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.941787706392745,
+      "longitude": 34.891757946984335
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:7",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 7,
+        "name": "בית כנסת בת קול",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "לוד הצעירה",
+        "מס_שכונה": 6,
+        "רובע": 4,
+        "מזהה": 1006,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "לוד הצעירה"
+    }
+  },
+  {
+    "id": "arcgis:lod::8",
+    "type": "synagogue",
+    "name": "בית כנסת שבת אחים",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.941863398443846,
+      "longitude": 34.89208465563344
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:8",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 8,
+        "name": "בית כנסת שבת אחים",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "לוד הצעירה",
+        "מס_שכונה": 6,
+        "רובע": 4,
+        "מזהה": 1007,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "לוד הצעירה"
+    }
+  },
+  {
+    "id": "arcgis:lod::9",
+    "type": "synagogue",
+    "name": "בית כנסת חב\"ד בית אריה ע\"",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.942462069085916,
+      "longitude": 34.875527186980435
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:9",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 9,
+        "name": "בית כנסת חב\"ד בית אריה ע\"",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "חב\"ד",
+        "מס_שכונה": 4,
+        "רובע": 4,
+        "מזהה": 1008,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "חב\"ד"
+    }
+  },
+  {
+    "id": "arcgis:lod::11",
+    "type": "synagogue",
+    "name": "בית כנסת",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.942634386684173,
+      "longitude": 34.87699861090176
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:11",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 11,
+        "name": "בית כנסת",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "חב\"ד",
+        "מס_שכונה": 4,
+        "רובע": 4,
+        "מזהה": 1010,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "חב\"ד"
+    }
+  },
+  {
+    "id": "arcgis:lod::12",
+    "type": "synagogue",
+    "name": "בית כנסת בית אוהלי מנחם",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.94287782776118,
+      "longitude": 34.87574818562213
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:12",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 12,
+        "name": "בית כנסת בית אוהלי מנחם",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "חב\"ד",
+        "מס_שכונה": 4,
+        "רובע": 4,
+        "מזהה": 1011,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "חב\"ד"
+    }
+  },
+  {
+    "id": "arcgis:lod::13",
+    "type": "synagogue",
+    "name": "בית כנסת אוהל יוסף יצחק",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.942970401895312,
+      "longitude": 34.87555363156899
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:13",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 13,
+        "name": " בית כנסת אוהל יוסף יצחק",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "חב\"ד",
+        "מס_שכונה": 4,
+        "רובע": 4,
+        "מזהה": 1012,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "חב\"ד"
+    }
+  },
+  {
+    "id": "arcgis:lod::15",
+    "type": "synagogue",
+    "name": "בית הכנסת הספרדי אוהל י",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.943098450207366,
+      "longitude": 34.87581258060781
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:15",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 15,
+        "name": " בית הכנסת הספרדי אוהל י",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "חב\"ד",
+        "מס_שכונה": 4,
+        "רובע": 4,
+        "מזהה": 1014,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "חב\"ד"
+    }
+  },
+  {
+    "id": "arcgis:lod::18",
+    "type": "synagogue",
+    "name": "בית כנסת בית יוסף",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.943757149561925,
+      "longitude": 34.90098576458404
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:18",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 18,
+        "name": "בית כנסת בית יוסף",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "גני יער",
+        "מס_שכונה": 7,
+        "רובע": 3,
+        "מזהה": 1017,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "גני יער"
+    }
+  },
+  {
+    "id": "arcgis:lod::20",
+    "type": "synagogue",
+    "name": "בית כנסת מצמיח ישועה",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.943839574217407,
+      "longitude": 34.87975533139261
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:20",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 20,
+        "name": "בית כנסת מצמיח ישועה",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "חב\"ד",
+        "מס_שכונה": 4,
+        "רובע": 4,
+        "מזהה": 1019,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "חב\"ד"
+    }
+  },
+  {
+    "id": "arcgis:lod::21",
+    "type": "synagogue",
+    "name": "בית יהדות גרוזיה חבד",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.943841708776464,
+      "longitude": 34.878079609687916
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:21",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 21,
+        "name": "בית יהדות גרוזיה חבד",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית חב\"ד",
+        "שכונה": "חב\"ד",
+        "מס_שכונה": 4,
+        "רובע": 4,
+        "מזהה": 1020,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "חב\"ד"
+    }
+  },
+  {
+    "id": "arcgis:lod::22",
+    "type": "synagogue",
+    "name": "בית כנסת",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.944004952220702,
+      "longitude": 34.88533134610899
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:22",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 22,
+        "name": "בית כנסת",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "נווה זית",
+        "מס_שכונה": 5,
+        "רובע": 4,
+        "מזהה": 1021,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "נווה זית"
+    }
+  },
+  {
+    "id": "arcgis:lod::23",
+    "type": "synagogue",
+    "name": "בית כנסת",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.94416483015989,
+      "longitude": 34.88537311846442
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:23",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 23,
+        "name": "בית כנסת",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "נווה זית",
+        "מס_שכונה": 5,
+        "רובע": 4,
+        "מזהה": 1022,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "נווה זית"
+    }
+  },
+  {
+    "id": "arcgis:lod::24",
+    "type": "synagogue",
+    "name": "בית כנסת גבריאל המלאך",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.944197641863727,
+      "longitude": 34.88298787013374
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:24",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 24,
+        "name": "בית כנסת גבריאל המלאך",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "רסקו",
+        "מס_שכונה": 3,
+        "רובע": 4,
+        "מזהה": 1023,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "רסקו"
+    }
+  },
+  {
+    "id": "arcgis:lod::25",
+    "type": "synagogue",
+    "name": "בית כנסת משכנות ישראל",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.944353840825006,
+      "longitude": 34.891589658887895
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:25",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 25,
+        "name": "בית כנסת משכנות ישראל",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "לוד הצעירה",
+        "מס_שכונה": 6,
+        "רובע": 4,
+        "מזהה": 1024,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "לוד הצעירה"
+    }
+  },
+  {
+    "id": "arcgis:lod::26",
+    "type": "synagogue",
+    "name": "בית כנסת משכנות ישראל",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.944353840825006,
+      "longitude": 34.891589658887895
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:26",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 26,
+        "name": "בית כנסת משכנות ישראל",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "לוד הצעירה",
+        "מס_שכונה": 6,
+        "רובע": 4,
+        "מזהה": 1025,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "לוד הצעירה"
+    }
+  },
+  {
+    "id": "arcgis:lod::27",
+    "type": "synagogue",
+    "name": "בית כנסת עוד יוסף חי",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.944443056164463,
+      "longitude": 34.901702789476104
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:27",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 27,
+        "name": "בית כנסת עוד יוסף חי",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "גני יער",
+        "מס_שכונה": 7,
+        "רובע": 3,
+        "מזהה": 1026,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "גני יער"
+    }
+  },
+  {
+    "id": "arcgis:lod::28",
+    "type": "synagogue",
+    "name": "בית כנסת אוהל אברהם",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.944552694058327,
+      "longitude": 34.88607443269395
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:28",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 28,
+        "name": " בית כנסת אוהל אברהם",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "נווה זית",
+        "מס_שכונה": 5,
+        "רובע": 4,
+        "מזהה": 1027,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "נווה זית"
+    }
+  },
+  {
+    "id": "arcgis:lod::29",
+    "type": "synagogue",
+    "name": "בית כנסת ישועה בקרוב",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.944736220595853,
+      "longitude": 34.89542508670067
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:29",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 29,
+        "name": "בית כנסת ישועה בקרוב",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "נווה נוף",
+        "מס_שכונה": 8,
+        "רובע": 2,
+        "מזהה": 1028,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "נווה נוף"
+    }
+  },
+  {
+    "id": "arcgis:lod::30",
+    "type": "synagogue",
+    "name": "בית כנסת אוהל אברהם",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.9448211429335,
+      "longitude": 34.88624410848441
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:30",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 30,
+        "name": "בית כנסת אוהל אברהם",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "נווה זית",
+        "מס_שכונה": 5,
+        "רובע": 4,
+        "מזהה": 1029,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "נווה זית"
+    }
+  },
+  {
+    "id": "arcgis:lod::31",
+    "type": "synagogue",
+    "name": "בית כנסת אור החיים",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.94503431922922,
+      "longitude": 34.88634378193465
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:31",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 31,
+        "name": "בית כנסת אור החיים",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "נווה זית",
+        "מס_שכונה": 5,
+        "רובע": 4,
+        "מזהה": 1030,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "נווה זית"
+    }
+  },
+  {
+    "id": "arcgis:lod::32",
+    "type": "synagogue",
+    "name": "בית כנסת חסדי משה",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.94504506506001,
+      "longitude": 34.878732229164804
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:32",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 32,
+        "name": "בית כנסת חסדי משה",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "רסקו",
+        "מס_שכונה": 3,
+        "רובע": 4,
+        "מזהה": 1031,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "רסקו"
+    }
+  },
+  {
+    "id": "arcgis:lod::33",
+    "type": "synagogue",
+    "name": "בית כנסת אוהב ורודף שלו",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.945222061585085,
+      "longitude": 34.890426765522975
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:33",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 33,
+        "name": " בית כנסת אוהב ורודף שלו",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "רסקו",
+        "מס_שכונה": 3,
+        "רובע": 4,
+        "מזהה": 1032,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "רסקו"
+    }
+  },
+  {
+    "id": "arcgis:lod::34",
+    "type": "synagogue",
+    "name": "בית כנסת תפארת ציון",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.945289078186153,
+      "longitude": 34.88642049533992
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:34",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 34,
+        "name": "בית כנסת תפארת ציון",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "נווה זית",
+        "מס_שכונה": 5,
+        "רובע": 4,
+        "מזהה": 1033,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "נווה זית"
+    }
+  },
+  {
+    "id": "arcgis:lod::35",
+    "type": "synagogue",
+    "name": "בית כנסת ע\"ש שי בלקר",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.945297953516,
+      "longitude": 34.885189120845574
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:35",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 35,
+        "name": "בית כנסת ע\"ש שי בלקר",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "נווה זית",
+        "מס_שכונה": 5,
+        "רובע": 4,
+        "מזהה": 1034,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "נווה זית"
+    }
+  },
+  {
+    "id": "arcgis:lod::36",
+    "type": "synagogue",
+    "name": "בית כנסת דת משה וישראל",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.945317050873292,
+      "longitude": 34.8776086473166
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:36",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 36,
+        "name": "בית כנסת דת משה וישראל",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "רסקו",
+        "מס_שכונה": 3,
+        "רובע": 4,
+        "מזהה": 1035,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "רסקו"
+    }
+  },
+  {
+    "id": "arcgis:lod::37",
+    "type": "synagogue",
+    "name": "בית כנסת הישועה",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.945344274814374,
+      "longitude": 34.88730505365753
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:37",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 37,
+        "name": "בית כנסת הישועה",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "נווה זית",
+        "מס_שכונה": 5,
+        "רובע": 4,
+        "מזהה": 1036,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "נווה זית"
+    }
+  },
+  {
+    "id": "arcgis:lod::38",
+    "type": "synagogue",
+    "name": "בית כנסת הרמב\"ם",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.9454409451269,
+      "longitude": 34.879394937773505
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:38",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 38,
+        "name": "בית כנסת הרמב\"ם",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "רסקו",
+        "מס_שכונה": 3,
+        "רובע": 4,
+        "מזהה": 1037,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "רסקו"
+    }
+  },
+  {
+    "id": "arcgis:lod::39",
+    "type": "synagogue",
+    "name": "בית כנסת אלי כהן",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.945465341210788,
+      "longitude": 34.88123060058012
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:39",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 39,
+        "name": "בית כנסת אלי כהן",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "רסקו",
+        "מס_שכונה": 3,
+        "רובע": 4,
+        "מזהה": 1038,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "רסקו"
+    }
+  },
+  {
+    "id": "arcgis:lod::40",
+    "type": "synagogue",
+    "name": "בית כנסת עולי עדן",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.945536286866208,
+      "longitude": 34.886455676524804
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:40",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 40,
+        "name": "בית כנסת עולי עדן",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "נווה זית",
+        "מס_שכונה": 5,
+        "רובע": 4,
+        "מזהה": 1039,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "נווה זית"
+    }
+  },
+  {
+    "id": "arcgis:lod::41",
+    "type": "synagogue",
+    "name": "בית כנסת",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.9456924801229,
+      "longitude": 34.894380146890214
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:41",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 41,
+        "name": "בית כנסת",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "נווה נוף",
+        "מס_שכונה": 8,
+        "רובע": 2,
+        "מזהה": 1040,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "נווה נוף"
+    }
+  },
+  {
+    "id": "arcgis:lod::42",
+    "type": "synagogue",
+    "name": "בית כנסת",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.945691537427447,
+      "longitude": 34.8860230494745
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:42",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 42,
+        "name": "בית כנסת",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "נווה זית",
+        "מס_שכונה": 5,
+        "רובע": 4,
+        "מזהה": 1041,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "נווה זית"
+    }
+  },
+  {
+    "id": "arcgis:lod::43",
+    "type": "synagogue",
+    "name": "בית כנסת חזון עובדיה",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.945793912826307,
+      "longitude": 34.88794588170099
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:43",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 43,
+        "name": "בית כנסת חזון עובדיה",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "נווה זית",
+        "מס_שכונה": 5,
+        "רובע": 4,
+        "מזהה": 1042,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "נווה זית"
+    }
+  },
+  {
+    "id": "arcgis:lod::44",
+    "type": "synagogue",
+    "name": "בית כנסת",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.94585471434813,
+      "longitude": 34.88619597626085
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:44",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 44,
+        "name": "בית כנסת",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "נווה זית",
+        "מס_שכונה": 5,
+        "רובע": 4,
+        "מזהה": 1043,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "נווה זית"
+    }
+  },
+  {
+    "id": "arcgis:lod::45",
+    "type": "synagogue",
+    "name": "בית כנסת בית ברוך",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.945878369086472,
+      "longitude": 34.887955952861205
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:45",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 45,
+        "name": "בית כנסת בית ברוך",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "נווה זית",
+        "מס_שכונה": 5,
+        "רובע": 4,
+        "מזהה": 1044,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "נווה זית"
+    }
+  },
+  {
+    "id": "arcgis:lod::46",
+    "type": "synagogue",
+    "name": "בית כנסת קול מרדכי",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.946059034051355,
+      "longitude": 34.880642510412855
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:46",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 46,
+        "name": " בית כנסת קול מרדכי",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "רסקו",
+        "מס_שכונה": 3,
+        "רובע": 4,
+        "מזהה": 1046,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "רסקו"
+    }
+  },
+  {
+    "id": "arcgis:lod::47",
+    "type": "synagogue",
+    "name": "בית כנסת תפארת יצחק",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.94617082949263,
+      "longitude": 34.880644538295634
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:47",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 47,
+        "name": "בית כנסת תפארת יצחק",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "רסקו",
+        "מס_שכונה": 3,
+        "רובע": 4,
+        "מזהה": 1047,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "רסקו"
+    }
+  },
+  {
+    "id": "arcgis:lod::48",
+    "type": "synagogue",
+    "name": "בית כנסת שיבת ציון",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.946449130165124,
+      "longitude": 34.89956244041883
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:48",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 48,
+        "name": "בית כנסת שיבת ציון",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "נווה נוף",
+        "מס_שכונה": 8,
+        "רובע": 2,
+        "מזהה": 1048,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "נווה נוף"
+    }
+  },
+  {
+    "id": "arcgis:lod::49",
+    "type": "synagogue",
+    "name": "בית כנסת מקור חוכמה",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.94644292939125,
+      "longitude": 34.89577444255384
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:49",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 49,
+        "name": "בית כנסת מקור חוכמה",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "נווה נוף",
+        "מס_שכונה": 8,
+        "רובע": 2,
+        "מזהה": 1049,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "נווה נוף"
+    }
+  },
+  {
+    "id": "arcgis:lod::50",
+    "type": "synagogue",
+    "name": "בית כנסת ע\"ש חי טייב",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.946509942171822,
+      "longitude": 34.880800684342226
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:50",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 50,
+        "name": "בית כנסת ע\"ש חי טייב",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "רסקו",
+        "מס_שכונה": 3,
+        "רובע": 4,
+        "מזהה": 1050,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "רסקו"
+    }
+  },
+  {
+    "id": "arcgis:lod::51",
+    "type": "synagogue",
+    "name": "בית כנסת אהבת חינם",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.946568551732042,
+      "longitude": 34.8912823643507
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:51",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 51,
+        "name": "בית כנסת אהבת חינם",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "רסקו",
+        "מס_שכונה": 3,
+        "רובע": 4,
+        "מזהה": 1051,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "רסקו"
+    }
+  },
+  {
+    "id": "arcgis:lod::52",
+    "type": "synagogue",
+    "name": "בית כנסת",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.94667592735406,
+      "longitude": 34.8942055917985
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:52",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 52,
+        "name": "בית כנסת",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "נווה נוף",
+        "מס_שכונה": 8,
+        "רובע": 2,
+        "מזהה": 1052,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "נווה נוף"
+    }
+  },
+  {
+    "id": "arcgis:lod::53",
+    "type": "synagogue",
+    "name": "בית כנסת גאולה",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.946700329139603,
+      "longitude": 34.89441598468994
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:53",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 53,
+        "name": "בית כנסת גאולה",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "נווה נוף",
+        "מס_שכונה": 8,
+        "רובע": 2,
+        "מזהה": 1053,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "נווה נוף"
+    }
+  },
+  {
+    "id": "arcgis:lod::54",
+    "type": "synagogue",
+    "name": "בית כנסת הרמ\"א",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.94676204698784,
+      "longitude": 34.89420274719828
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:54",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 54,
+        "name": "בית כנסת הרמ\"א",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "נווה נוף",
+        "מס_שכונה": 8,
+        "רובע": 2,
+        "מזהה": 1054,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "נווה נוף"
+    }
+  },
+  {
+    "id": "arcgis:lod::55",
+    "type": "synagogue",
+    "name": "בית כנסת",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.946799019866482,
+      "longitude": 34.894341775596686
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:55",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 55,
+        "name": "בית כנסת",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "נווה נוף",
+        "מס_שכונה": 8,
+        "רובע": 2,
+        "מזהה": 1055,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "נווה נוף"
+    }
+  },
+  {
+    "id": "arcgis:lod::57",
+    "type": "synagogue",
+    "name": "בית כנסת חזון עובדיה",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.946849884022726,
+      "longitude": 34.88596842571289
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:57",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 57,
+        "name": "בית כנסת חזון עובדיה",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "נווה זית",
+        "מס_שכונה": 5,
+        "רובע": 4,
+        "מזהה": 1057,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "נווה זית"
+    }
+  },
+  {
+    "id": "arcgis:lod::58",
+    "type": "synagogue",
+    "name": "בית כנסת בית תפילה",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.946930864975986,
+      "longitude": 34.8943068122294
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:58",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 58,
+        "name": "בית כנסת בית תפילה",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "נווה נוף",
+        "מס_שכונה": 8,
+        "רובע": 2,
+        "מזהה": 1058,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "נווה נוף"
+    }
+  },
+  {
+    "id": "arcgis:lod::59",
+    "type": "synagogue",
+    "name": "בית כנסת-תפארת ישראל",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.946960957188107,
+      "longitude": 34.896563417394674
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:59",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 59,
+        "name": "בית כנסת-תפארת ישראל",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "נווה נוף",
+        "מס_שכונה": 8,
+        "רובע": 2,
+        "מזהה": 1059,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "נווה נוף"
+    }
+  },
+  {
+    "id": "arcgis:lod::60",
+    "type": "synagogue",
+    "name": "בית כנסת בית אל",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.94702572043033,
+      "longitude": 34.88416744721146
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:60",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 60,
+        "name": "בית כנסת בית אל",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "רסקו",
+        "מס_שכונה": 3,
+        "רובע": 4,
+        "מזהה": 1060,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "רסקו"
+    }
+  },
+  {
+    "id": "arcgis:lod::61",
+    "type": "synagogue",
+    "name": "בית כנסת על שם רבי יעקב ס",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.947171100115625,
+      "longitude": 34.891143272529796
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:61",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 61,
+        "name": "בית כנסת על שם רבי יעקב ס",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "רסקו",
+        "מס_שכונה": 3,
+        "רובע": 4,
+        "מזהה": 1061,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "רסקו"
+    }
+  },
+  {
+    "id": "arcgis:lod::62",
+    "type": "synagogue",
+    "name": "בית כנסת אדרת אליהו הנבי",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.94744972541303,
+      "longitude": 34.890715787574614
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:62",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 62,
+        "name": "בית כנסת אדרת אליהו הנבי",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "רסקו",
+        "מס_שכונה": 3,
+        "רובע": 4,
+        "מזהה": 1062,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "רסקו"
+    }
+  },
+  {
+    "id": "arcgis:lod::63",
+    "type": "synagogue",
+    "name": "בית כנסת אוהל יעקב",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.947940908336456,
+      "longitude": 34.88524921370679
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:63",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 63,
+        "name": "בית כנסת אוהל יעקב",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "רסקו",
+        "מס_שכונה": 3,
+        "רובע": 4,
+        "מזהה": 1063,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "רסקו"
+    }
+  },
+  {
+    "id": "arcgis:lod::64",
+    "type": "synagogue",
+    "name": "בית כנסת אליהו הנביא",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.948034910541892,
+      "longitude": 34.88217938366051
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:64",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 64,
+        "name": "בית כנסת אליהו הנביא",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "רסקו",
+        "מס_שכונה": 3,
+        "רובע": 4,
+        "מזהה": 1064,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "רסקו"
+    }
+  },
+  {
+    "id": "arcgis:lod::65",
+    "type": "synagogue",
+    "name": "בית כנסת",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.94889412584117,
+      "longitude": 34.89808704134697
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:65",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 65,
+        "name": "בית כנסת",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "נווה נוף",
+        "מס_שכונה": 8,
+        "רובע": 2,
+        "מזהה": 1065,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "נווה נוף"
+    }
+  },
+  {
+    "id": "arcgis:lod::66",
+    "type": "synagogue",
+    "name": "בית כנסת בית ניסן",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.948868267999643,
+      "longitude": 34.88506832770784
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:66",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 66,
+        "name": "בית כנסת בית ניסן",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "רסקו",
+        "מס_שכונה": 3,
+        "רובע": 4,
+        "מזהה": 1066,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "רסקו"
+    }
+  },
+  {
+    "id": "arcgis:lod::67",
+    "type": "synagogue",
+    "name": "בית כנסת בית אהרון",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.948922544763654,
+      "longitude": 34.88509789333858
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:67",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 67,
+        "name": "בית כנסת בית אהרון",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "רסקו",
+        "מס_שכונה": 3,
+        "רובע": 4,
+        "מזהה": 1067,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "רסקו"
+    }
+  },
+  {
+    "id": "arcgis:lod::69",
+    "type": "synagogue",
+    "name": "בית כנסת ע\"ש אבוחצירה",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.949183870994904,
+      "longitude": 34.88599530022428
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:69",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 69,
+        "name": "בית כנסת ע\"ש אבוחצירה",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "רסקו",
+        "מס_שכונה": 3,
+        "רובע": 4,
+        "מזהה": 1069,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "רסקו"
+    }
+  },
+  {
+    "id": "arcgis:lod::70",
+    "type": "synagogue",
+    "name": "בית כנסת יפה נוף",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.94923986970427,
+      "longitude": 34.904328789445735
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:70",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 70,
+        "name": "בית כנסת יפה נוף",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "נווה נוף",
+        "מס_שכונה": 8,
+        "רובע": 2,
+        "מזהה": 1070,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "נווה נוף"
+    }
+  },
+  {
+    "id": "arcgis:lod::71",
+    "type": "synagogue",
+    "name": "בית כנסת מגן דויד",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.94923336886376,
+      "longitude": 34.890450999916794
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:71",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 71,
+        "name": "בית כנסת מגן דויד",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "רסקו",
+        "מס_שכונה": 3,
+        "רובע": 4,
+        "מזהה": 1071,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "רסקו"
+    }
+  },
+  {
+    "id": "arcgis:lod::72",
+    "type": "synagogue",
+    "name": "בית כנסת על שם חיים חטב",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.94984515646566,
+      "longitude": 34.88295488422331
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:72",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 72,
+        "name": "בית כנסת על שם חיים חטב",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "רסקו",
+        "מס_שכונה": 3,
+        "רובע": 4,
+        "מזהה": 1072,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "רסקו"
+    }
+  },
+  {
+    "id": "arcgis:lod::73",
+    "type": "synagogue",
+    "name": "בית כנסת",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.95011919768072,
+      "longitude": 34.869669654177244
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:73",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 73,
+        "name": "בית כנסת",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "הרכבת",
+        "מס_שכונה": 2,
+        "רובע": 5,
+        "מזהה": 1073,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "הרכבת"
+    }
+  },
+  {
+    "id": "arcgis:lod::74",
+    "type": "synagogue",
+    "name": "בית כנסת הצעירים",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.950382876387778,
+      "longitude": 34.89369096319197
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:74",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 74,
+        "name": "בית כנסת הצעירים",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "רמת אלישיב",
+        "מס_שכונה": 10,
+        "רובע": 2,
+        "מזהה": 1074,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "רמת אלישיב"
+    }
+  },
+  {
+    "id": "arcgis:lod::75",
+    "type": "synagogue",
+    "name": "בית כנסת בית ישראל",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.950897704152293,
+      "longitude": 34.89107156188017
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:75",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 75,
+        "name": "בית כנסת בית ישראל",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "רמת אלישיב",
+        "מס_שכונה": 10,
+        "רובע": 2,
+        "מזהה": 1075,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "רמת אלישיב"
+    }
+  },
+  {
+    "id": "arcgis:lod::76",
+    "type": "synagogue",
+    "name": "בית כנסת בני שושן",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.951184009680833,
+      "longitude": 34.88896881748624
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:76",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 76,
+        "name": "בית כנסת בני שושן",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "רסקו",
+        "מס_שכונה": 3,
+        "רובע": 4,
+        "מזהה": 1076,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "רסקו"
+    }
+  },
+  {
+    "id": "arcgis:lod::77",
+    "type": "synagogue",
+    "name": "בית כנסת שערי עלייה",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.951351292231294,
+      "longitude": 34.903075211814354
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:77",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 77,
+        "name": " בית כנסת שערי עלייה",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "נווה נוף",
+        "מס_שכונה": 8,
+        "רובע": 2,
+        "מזהה": 1077,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "נווה נוף"
+    }
+  },
+  {
+    "id": "arcgis:lod::79",
+    "type": "synagogue",
+    "name": "בית כנסת תפארת אהרן",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.951924227493382,
+      "longitude": 34.88627884695661
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:79",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 79,
+        "name": "בית כנסת תפארת אהרן",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "רסקו",
+        "מס_שכונה": 3,
+        "רובע": 4,
+        "מזהה": 1079,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "רסקו"
+    }
+  },
+  {
+    "id": "arcgis:lod::80",
+    "type": "synagogue",
+    "name": "בית כנסת ישורון",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.951985311853846,
+      "longitude": 34.89232879269404
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:80",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 80,
+        "name": "בית כנסת ישורון",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "רמת אלישיב",
+        "מס_שכונה": 10,
+        "רובע": 2,
+        "מזהה": 1080,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "רמת אלישיב"
+    }
+  },
+  {
+    "id": "arcgis:lod::81",
+    "type": "synagogue",
+    "name": "בית כנסת ע\"ש גדעון מולטו",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.95200870689839,
+      "longitude": 34.892531903438545
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:81",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 81,
+        "name": "בית כנסת ע\"ש גדעון מולטו",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "רמת אלישיב",
+        "מס_שכונה": 10,
+        "רובע": 2,
+        "מזהה": 1081,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "רמת אלישיב"
+    }
+  },
+  {
+    "id": "arcgis:lod::82",
+    "type": "synagogue",
+    "name": "בית כנסת",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.952245555282826,
+      "longitude": 34.89636464824376
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:82",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 82,
+        "name": "בית כנסת",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "רמת אשכול",
+        "מס_שכונה": 9,
+        "רובע": 2,
+        "מזהה": 1082,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "רמת אשכול"
+    }
+  },
+  {
+    "id": "arcgis:lod::83",
+    "type": "synagogue",
+    "name": "בית מדרש אשכול הכופר",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.952394688720617,
+      "longitude": 34.89359850979805
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:83",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 83,
+        "name": "בית מדרש אשכול הכופר",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית מדרש",
+        "שכונה": "רמת אלישיב",
+        "מס_שכונה": 10,
+        "רובע": 2,
+        "מזהה": 1083,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "רמת אלישיב"
+    }
+  },
+  {
+    "id": "arcgis:lod::84",
+    "type": "synagogue",
+    "name": "בית כנסת שערי שמיים",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.952572185753187,
+      "longitude": 34.899928645253596
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:84",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 84,
+        "name": "בית כנסת שערי שמיים",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "רמת אשכול",
+        "מס_שכונה": 9,
+        "רובע": 2,
+        "מזהה": 1084,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "רמת אשכול"
+    }
+  },
+  {
+    "id": "arcgis:lod::85",
+    "type": "synagogue",
+    "name": "בית כנסת בית אל",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.95260021221184,
+      "longitude": 34.88619696038323
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:85",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 85,
+        "name": "בית כנסת בית אל",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "רסקו",
+        "מס_שכונה": 3,
+        "רובע": 4,
+        "מזהה": 1085,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "רסקו"
+    }
+  },
+  {
+    "id": "arcgis:lod::86",
+    "type": "synagogue",
+    "name": "בית כנסת שערי שלום",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.95263364989501,
+      "longitude": 34.8869454763012
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:86",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 86,
+        "name": "בית כנסת שערי שלום",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "רסקו",
+        "מס_שכונה": 3,
+        "רובע": 4,
+        "מזהה": 1086,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "רסקו"
+    }
+  },
+  {
+    "id": "arcgis:lod::91",
+    "type": "synagogue",
+    "name": "בית כנסת הרמ\"א",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.953390797197322,
+      "longitude": 34.89265168153842
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:91",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 91,
+        "name": "בית כנסת הרמ\"א",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "רמת אלישיב",
+        "מס_שכונה": 10,
+        "רובע": 2,
+        "מזהה": 1091,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "רמת אלישיב"
+    }
+  },
+  {
+    "id": "arcgis:lod::92",
+    "type": "synagogue",
+    "name": "בית כנסת",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.95367230496942,
+      "longitude": 34.89689928759044
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:92",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 92,
+        "name": "בית כנסת",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "רמת אשכול",
+        "מס_שכונה": 9,
+        "רובע": 2,
+        "מזהה": 1092,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "רמת אשכול"
+    }
+  },
+  {
+    "id": "arcgis:lod::93",
+    "type": "synagogue",
+    "name": "בית כנסת שומר ישראל",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.953724592475183,
+      "longitude": 34.90285236311742
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:93",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 93,
+        "name": "בית כנסת שומר ישראל",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "רמת אשכול",
+        "מס_שכונה": 9,
+        "רובע": 2,
+        "מזהה": 1093,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "רמת אשכול"
+    }
+  },
+  {
+    "id": "arcgis:lod::94",
+    "type": "synagogue",
+    "name": "בית כנסת",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.954012441883528,
+      "longitude": 34.89898934512646
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:94",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 94,
+        "name": "בית כנסת",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "רמת אשכול",
+        "מס_שכונה": 9,
+        "רובע": 2,
+        "מזהה": 1094,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "רמת אשכול"
+    }
+  },
+  {
+    "id": "arcgis:lod::96",
+    "type": "synagogue",
+    "name": "בית כנסת אביר יעקב",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.956225214575326,
+      "longitude": 34.89778814891445
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:96",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 96,
+        "name": "בית כנסת אביר יעקב",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "רמת אשכול",
+        "מס_שכונה": 9,
+        "רובע": 2,
+        "מזהה": 1096,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "רמת אשכול"
+    }
+  },
+  {
+    "id": "arcgis:lod::98",
+    "type": "synagogue",
+    "name": "בית כנסת ישועת ה",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.95659427894018,
+      "longitude": 34.899102391633335
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:98",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 98,
+        "name": "בית כנסת ישועת ה",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "רמת אשכול",
+        "מס_שכונה": 9,
+        "רובע": 2,
+        "מזהה": 1098,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "רמת אשכול"
+    }
+  },
+  {
+    "id": "arcgis:lod::100",
+    "type": "synagogue",
+    "name": "בית כנסת דוסא",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.956914400086205,
+      "longitude": 34.901812813511775
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:100",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 100,
+        "name": "בית כנסת דוסא",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "נווה ירק",
+        "מס_שכונה": 11,
+        "רובע": 1,
+        "מזהה": 1100,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "נווה ירק"
+    }
+  },
+  {
+    "id": "arcgis:lod::101",
+    "type": "synagogue",
+    "name": "בית כנסת",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.956974366139693,
+      "longitude": 34.89770635958353
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:101",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 101,
+        "name": "בית כנסת",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "נווה ירק",
+        "מס_שכונה": 11,
+        "רובע": 1,
+        "מזהה": 1101,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "נווה ירק"
+    }
+  },
+  {
+    "id": "arcgis:lod::102",
+    "type": "synagogue",
+    "name": "בית כנסת אור אבנר",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.95740858531802,
+      "longitude": 34.88159386345029
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:102",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 102,
+        "name": "בית כנסת אור אבנר",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "גני אביב",
+        "מס_שכונה": 1,
+        "רובע": 6,
+        "מזהה": 1102,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "גני אביב"
+    }
+  },
+  {
+    "id": "arcgis:lod::104",
+    "type": "synagogue",
+    "name": "בית כנסת-היכל יהונתן חב\"",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.96010676309825,
+      "longitude": 34.87844986785435
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:104",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 104,
+        "name": "בית כנסת-היכל יהונתן חב\"",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "גני אביב",
+        "מס_שכונה": 1,
+        "רובע": 6,
+        "מזהה": 1104,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "גני אביב"
+    }
+  },
+  {
+    "id": "arcgis:lod::105",
+    "type": "synagogue",
+    "name": "בית כנסת היכל יונתן ספרד",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.960178424048,
+      "longitude": 34.87871505072789
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:105",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 105,
+        "name": "בית כנסת היכל יונתן ספרד",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "גני אביב",
+        "מס_שכונה": 1,
+        "רובע": 6,
+        "מזהה": 1105,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "גני אביב"
+    }
+  },
+  {
+    "id": "arcgis:lod::106",
+    "type": "synagogue",
+    "name": "בית כנסת היכל ברוך",
+    "cityHint": "לוד",
+    "location": {
+      "latitude": 31.96017974115133,
+      "longitude": 34.87639780942701
+    },
+    "confidence": "high",
+    "provenance": {
+      "sourceId": "arcgis:lod",
+      "adapterId": "arcgis-rest",
+      "sourceRecordId": "arcgis:lod:106",
+      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1",
+      "fetchedAt": "2026-06-21T06:40:04.057Z",
+      "raw": {
+        "OBJECTID": 106,
+        "name": "בית כנסת היכל ברוך",
+        "קטגוריה": "דת",
+        "תת_קטגוריה": "בית כנסת",
+        "שכונה": "גני אביב",
+        "מס_שכונה": 1,
+        "רובע": 6,
+        "מזהה": 1106,
+        "Field": null
+      }
+    },
+    "extra": {
+      "neighborhood": "גני אביב"
+    }
+  }
+]

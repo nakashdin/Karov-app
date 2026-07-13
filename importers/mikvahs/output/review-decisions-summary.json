@@ -1,0 +1,67 @@
+{
+  "generatedNote": "PHASE 5 DRY-RUN — review-decision preview. Advisory only. No DB write, no publish, no merge. A human approves each decision.",
+  "inputRecords": 72,
+  "decisions": {
+    "approve_add_new": 61,
+    "enrich_existing": 5,
+    "discard_duplicate": 0,
+    "manual_review_required": 5,
+    "geocoding_needed": 1
+  },
+  "enrichmentFieldsByType": {
+    "coordinates": 5,
+    "sourceUrl": 5
+  },
+  "byCity": {
+    "פתח תקווה": {
+      "approve_add_new": 12
+    },
+    "נתניה": {
+      "approve_add_new": 13
+    },
+    "באר שבע": {
+      "approve_add_new": 1
+    },
+    "ראש העין": {
+      "approve_add_new": 1
+    },
+    "לוד": {
+      "manual_review_required": 1
+    },
+    "מרום גליל": {
+      "approve_add_new": 19
+    },
+    "מרחבים": {
+      "manual_review_required": 3,
+      "approve_add_new": 7,
+      "enrich_existing": 5
+    },
+    "גבעת זאב": {
+      "approve_add_new": 2
+    },
+    "בית שאן": {
+      "approve_add_new": 1,
+      "manual_review_required": 1
+    },
+    "גני תקווה": {
+      "geocoding_needed": 1,
+      "approve_add_new": 1
+    },
+    "קרית ארבע": {
+      "approve_add_new": 3
+    },
+    "שדרות": {
+      "approve_add_new": 1
+    }
+  },
+  "finalEstimatedTrulyNewMikvehs": {
+    "low": 61,
+    "likely": 62,
+    "high": 67
+  },
+  "coverageNote": "Gov canonical 606 + ~62 truly-new SabaiApps = ~668 (down from the Phase-2 estimate of 678: 5 are gov-existing under settlement names → enrich, 5 await manual adjudication).",
+  "interpretation": "enrich_existing concentrates in the regional council Merhavim — Phase-2 classified these new because it keyed the council name as city, but the gov dataset stores them under settlement names; geo-dedup (Phase 4) recovered the overlap.",
+  "dryRun": true,
+  "liveDataTouched": false,
+  "publishPerformed": false
+}

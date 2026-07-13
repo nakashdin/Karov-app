@@ -1,0 +1,40 @@
+[
+  {
+    "existingId": "osm-way-445103988",
+    "existingName": "בית כנסת משכן מאיר",
+    "fields": [
+      "address"
+    ],
+    "distanceM": 7
+  },
+  {
+    "existingId": "osm-way-553337033",
+    "existingName": "בית כנסת אברהם אבינו",
+    "fields": [
+      "address"
+    ],
+    "distanceM": 10
+  },
+  {
+    "existingId": "osm-way-168583055",
+    "existingName": "תפארת משה",
+    "fields": [
+      "address"
+    ],
+    "distanceM": 6
+  },
+  {
+    "existingId": "osm-way-237767112",
+    "existingName": "אחוות ישראל",
+    "fields": [],
+    "distanceM": 41
+  },
+  {
+    "existingId": "osm-node-11980720899",
+    "existingName": "בית נפתלי",
+    "fields": [
+      "address"
+    ],
+    "distanceM": 2
+  }
+]

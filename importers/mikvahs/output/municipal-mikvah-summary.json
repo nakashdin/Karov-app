@@ -1,0 +1,166 @@
+{
+  "generatedNote": "PHASE 6 DRY-RUN — municipal א.ש בינה tables. Preview only. No DB write, no merge, no geocoding, no publish. Additive.",
+  "municipalitiesProcessed": 4,
+  "municipalitiesOk": 4,
+  "recordsExtracted": 71,
+  "classification": {
+    "exact_match": 26,
+    "probable_match": 26,
+    "new_record": 19,
+    "enrichment_candidate": 0,
+    "manual_review": 0
+  },
+  "trulyNewMikvahs": 19,
+  "enrichmentOpportunities": 0,
+  "duplicates": 52,
+  "coverageByCity": {
+    "מודיעין עילית": {
+      "exact_match": 8,
+      "probable_match": 8,
+      "new_record": 8
+    },
+    "מעלה אדומים": {
+      "probable_match": 3,
+      "exact_match": 2,
+      "new_record": 2
+    },
+    "אבני חפץ": {
+      "probable_match": 1
+    },
+    "איתמר": {
+      "probable_match": 1
+    },
+    "אלון מורה": {
+      "exact_match": 1
+    },
+    "ברוכין - מונגש": {
+      "new_record": 1
+    },
+    "ברקן": {
+      "exact_match": 1
+    },
+    "הר ברכה": {
+      "new_record": 1
+    },
+    "חוות גלעד": {
+      "new_record": 1
+    },
+    "חוות יאיר": {
+      "new_record": 1
+    },
+    "חיננית": {
+      "exact_match": 1
+    },
+    "חרמש": {
+      "exact_match": 1
+    },
+    "טל מנשה": {
+      "new_record": 1
+    },
+    "יצהר": {
+      "probable_match": 1
+    },
+    "יקיר": {
+      "probable_match": 1
+    },
+    "כפר תפוח": {
+      "probable_match": 1
+    },
+    "לשם": {
+      "new_record": 1
+    },
+    "מבוא דותן": {
+      "new_record": 1
+    },
+    "מגדלים": {
+      "exact_match": 1
+    },
+    "נופי נחמיה": {
+      "new_record": 1
+    },
+    "נופים": {
+      "probable_match": 1
+    },
+    "ענב": {
+      "probable_match": 1
+    },
+    "עלי זהב": {
+      "probable_match": 1
+    },
+    "פדואל - מונגש": {
+      "new_record": 1
+    },
+    "צופים": {
+      "probable_match": 1
+    },
+    "קרית נטפים": {
+      "exact_match": 1
+    },
+    "רבבה": {
+      "probable_match": 1
+    },
+    "רחלים": {
+      "probable_match": 1
+    },
+    "שבי שומרון": {
+      "probable_match": 1
+    },
+    "שקד": {
+      "exact_match": 1
+    },
+    "מודיעין-מכבים-רעות": {
+      "exact_match": 9,
+      "probable_match": 3
+    }
+  },
+  "fieldCoverage": {
+    "name": 100,
+    "city": 100,
+    "address": 59,
+    "phone": 73,
+    "openingHours": 63,
+    "gender": 100,
+    "balanit": 49
+  },
+  "bySource": [
+    {
+      "id": "modiin-illit",
+      "municipality": "עיריית מודיעין עילית",
+      "ok": true,
+      "tablesFound": 3,
+      "extracted": 24
+    },
+    {
+      "id": "maale-adumim",
+      "municipality": "עיריית מעלה אדומים",
+      "ok": true,
+      "tablesFound": 1,
+      "extracted": 7
+    },
+    {
+      "id": "shomron",
+      "municipality": "המועצה האזורית שומרון",
+      "ok": true,
+      "tablesFound": 1,
+      "extracted": 28
+    },
+    {
+      "id": "modiin-maccabim-reut",
+      "municipality": "עיריית מודיעין-מכבים-רעות",
+      "ok": true,
+      "tablesFound": 4,
+      "extracted": 12
+    }
+  ],
+  "validation": {
+    "passed": 71,
+    "errors": 0,
+    "warnings": 29
+  },
+  "coordinatesNote": "No native coordinates in these tables — all records are un-geocoded; matching is text-based (city + address + phone + name).",
+  "estimatedAdditionalUniqueBeyond668": 19,
+  "nationalCoverageEstimateAfter": "~668 + 19 new municipal = ~687 unique (plus 0 enrichment opportunities for existing records).",
+  "dryRun": true,
+  "liveDataTouched": false,
+  "publishPerformed": false
+}
