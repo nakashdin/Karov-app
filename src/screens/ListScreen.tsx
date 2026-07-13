@@ -9,6 +9,7 @@ import {
   View,
   ActivityIndicator,
 } from 'react-native';
+import Slider from '@react-native-community/slider';
 import { Ionicons } from '@expo/vector-icons';
 import { useNavigation, useRoute, RouteProp } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
@@ -89,6 +90,7 @@ export function ListScreen() {
   const [birkatOpen, setBirkatOpen] = useState(false);
   const [isRefreshing, setIsRefreshing] = useState(false);
   const [radiusKm, setRadiusKm] = useState<number>(5);
+  const [radiusOpen, setRadiusOpen] = useState(false);
 
   // Location mode: use current GPS or a custom geocoded address
   const [locationMode, setLocationMode] = useState<LocationMode>('current');
@@ -412,31 +414,35 @@ export function ListScreen() {
         )
       ) : (
         <>
-          {/* Radius chips — same style as category tabs */}
+          {/* Radius toggle + slider */}
           {sortByDistance && (
-            <ScrollView
-              horizontal
-              showsHorizontalScrollIndicator={false}
-              style={styles.tabsScroll}
-              contentContainerStyle={styles.tabsContent}
-            >
-              {RADIUS_OPTIONS.map((r) => (
-                <Pressable
-                  key={r}
-                  style={[styles.tab, radiusKm === r && styles.tabActive]}
-                  onPress={() => setRadiusKm(r)}
-                >
-                  <Ionicons
-                    name="navigate-circle-outline"
-                    size={13}
-                    color={radiusKm === r ? '#fff' : colors.textMuted}
+            <View style={styles.radiusBlock}>
+              <Pressable style={styles.radiusTrigger} onPress={() => setRadiusOpen(o => !o)}>
+                <Ionicons name="navigate-circle-outline" size={15} color={colors.primary} />
+                <Text style={styles.radiusTriggerText}>טווח חיפוש · {radiusKm} ק״מ</Text>
+                <Ionicons name={radiusOpen ? 'chevron-up' : 'chevron-down'} size={14} color={colors.primary} />
+              </Pressable>
+              {radiusOpen && (
+                <View style={styles.sliderBox}>
+                  <Slider
+                    style={styles.slider}
+                    minimumValue={1}
+                    maximumValue={100}
+                    step={1}
+                    value={radiusKm}
+                    onValueChange={(v) => setRadiusKm(Math.round(v))}
+                    minimumTrackTintColor={colors.primary}
+                    maximumTrackTintColor={colors.border}
+                    thumbTintColor={colors.primary}
                   />
-                  <Text style={[styles.tabText, radiusKm === r && styles.tabTextActive]}>
-                    {r} ק״מ
-                  </Text>
-                </Pressable>
-              ))}
-            </ScrollView>
+                  <View style={styles.sliderLabels}>
+                    <Text style={styles.sliderLabel}>100 ק״מ</Text>
+                    <Text style={styles.sliderValue}>{radiusKm} ק״מ</Text>
+                    <Text style={styles.sliderLabel}>1 ק״מ</Text>
+                  </View>
+                </View>
+              )}
+            </View>
           )}
 
           <View style={styles.metaRow}>
@@ -718,6 +724,53 @@ const styles = StyleSheet.create({
   listContent: {
     paddingBottom: spacing.xxl,
     flexGrow: 1,
+  },
+
+  radiusBlock: {
+    marginBottom: spacing.sm,
+  },
+  radiusTrigger: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+    alignSelf: 'flex-start',
+    backgroundColor: colors.primaryLight,
+    paddingVertical: 7,
+    paddingHorizontal: 14,
+    borderRadius: radius.pill,
+  },
+  radiusTriggerText: {
+    fontSize: 13,
+    fontWeight: '700',
+    color: colors.primary,
+  },
+  sliderBox: {
+    marginTop: 10,
+    backgroundColor: colors.surface,
+    borderRadius: radius.lg,
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+    borderWidth: 1,
+    borderColor: colors.border,
+  },
+  slider: {
+    width: '100%',
+    height: 36,
+  },
+  sliderLabels: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginTop: 2,
+  },
+  sliderLabel: {
+    fontSize: 11,
+    color: colors.textMuted,
+  },
+  sliderValue: {
+    fontSize: 15,
+    fontWeight: '800',
+    color: colors.primary,
   },
 
 });
