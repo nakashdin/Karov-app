@@ -221,6 +221,12 @@ export function PlaceDetailScreen() {
           {place.website
             ? <QuickAction icon="globe-outline" label="אתר" color={accent} onPress={() => Linking.openURL(place.website!)} />
             : <QuickAction icon="globe-outline" label="אתר" color={accent} disabled />}
+          {place.instagram && (
+            <QuickAction icon="logo-instagram" label="אינסטגרם" color={accent} onPress={() => Linking.openURL(place.instagram!)} />
+          )}
+          {place.facebook && (
+            <QuickAction icon="logo-facebook" label="פייסבוק" color={accent} onPress={() => Linking.openURL(place.facebook!)} />
+          )}
           <QuickAction icon="share-outline" label="שתף" color={accent} onPress={handleShare} />
         </View>
 
@@ -305,6 +311,12 @@ export function PlaceDetailScreen() {
               ) : null}
               {place.website ? (
                 <DetailRow icon="globe-outline" label="אתר" value={place.website} accent={accent} tappable onPress={() => Linking.openURL(place.website!)} link />
+              ) : null}
+              {place.instagram ? (
+                <DetailRow icon="logo-instagram" label="אינסטגרם" value={place.instagram.replace('https://www.instagram.com/', '@').replace(/\/$/, '')} accent={accent} tappable onPress={() => Linking.openURL(place.instagram!)} link />
+              ) : null}
+              {place.facebook ? (
+                <DetailRow icon="logo-facebook" label="פייסבוק" value="עמוד רשמי" accent={accent} tappable onPress={() => Linking.openURL(place.facebook!)} link />
               ) : null}
               {place.nusach ? (
                 <DetailRow icon="book-outline" label="נוסח" value={`נוסח ${place.nusach}`} accent={accent} />
