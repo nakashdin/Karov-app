@@ -212,7 +212,9 @@
     "tags": [
       "moroccan"
     ],
-    "category": "meat"
+    "category": "meat",
+    "phone": "09-8334797",
+    "openingHours": "Su-Th 12:00-24:00; Fr 12:00-14:30"
   },
   {
     "id": "osm-node-1667986371",
@@ -295,19 +297,6 @@
     "tags": [
       "burger"
     ],
-    "category": "meat"
-  },
-  {
-    "id": "osm-node-1741956267",
-    "name": "פופא",
-    "type": "restaurant",
-    "cityId": "בת ים",
-    "address": "רחוב לישנסקי יוסף 22, ראשון לציון",
-    "location": {
-      "latitude": 31.9947701,
-      "longitude": 34.7678117
-    },
-    "source": "osm",
     "category": "meat"
   },
   {
@@ -573,42 +562,29 @@
     "name": "קפה פורטיולי",
     "type": "restaurant",
     "cityId": "חצור הגלילית",
-    "address": "חצור הגלילית",
+    "address": "דרך הבנים 1, קניון הגליל העליון, חצור הגלילית",
     "location": {
       "latitude": 32.9808696,
       "longitude": 35.5561903
     },
     "source": "osm",
-    "category": "dairy"
+    "category": "dairy",
+    "phone": "04-6930338",
+    "instagram": "https://www.instagram.com/portioli_restaurant"
   },
   {
     "id": "osm-node-2078991174",
     "name": "שווארמה גולני",
     "type": "restaurant",
     "cityId": "חצור הגלילית",
-    "address": "חצור הגלילית",
+    "address": "דרך הבנים 1, חצור הגלילית",
     "location": {
       "latitude": 32.9807725,
       "longitude": 35.5557554
     },
     "source": "osm",
-    "category": "meat"
-  },
-  {
-    "id": "osm-node-2078991183",
-    "name": "פיצה ורונה",
-    "type": "restaurant",
-    "cityId": "חצור הגלילית",
-    "address": "חצור הגלילית",
-    "location": {
-      "latitude": 32.9809224,
-      "longitude": 35.55584
-    },
-    "source": "osm",
-    "tags": [
-      "pizza"
-    ],
-    "category": "dairy"
+    "category": "meat",
+    "phone": "04-6931829"
   },
   {
     "id": "osm-node-2079006787",
@@ -642,19 +618,6 @@
     ],
     "category": "dairy",
     "website": "https://www.pizzashemesh.co.il"
-  },
-  {
-    "id": "osm-node-2124580743",
-    "name": "ציקן & ביף",
-    "type": "restaurant",
-    "cityId": "אזור",
-    "address": "רחוב המצודה 10, אזור",
-    "location": {
-      "latitude": 32.0298291,
-      "longitude": 34.7975675
-    },
-    "source": "osm",
-    "category": "meat"
   },
   {
     "id": "osm-node-2131481387",
@@ -801,7 +764,9 @@
       "pizza"
     ],
     "category": "dairy",
-    "website": "https://www.pizzashemesh.co.il"
+    "website": "https://www.pizzashemesh.co.il",
+    "phone": "03-5531310",
+    "openingHours": "Su-Th 12:00-23:00"
   },
   {
     "id": "osm-node-2577660818",
@@ -980,7 +945,10 @@
       "longitude": 34.7918571
     },
     "source": "osm",
-    "category": "dairy"
+    "category": "dairy",
+    "phone": "03-6954459",
+    "openingHours": "Su-Th 06:00-22:00; Fr 06:00-15:00",
+    "website": "https://cake-art.co.il"
   },
   {
     "id": "osm-node-4275386775",
@@ -1138,7 +1106,10 @@
     "tags": [
       "burger"
     ],
-    "category": "meat"
+    "category": "meat",
+    "phone": "03-9191891",
+    "openingHours": "Su-Th 12:00-23:00; Fr 12:00-14:30",
+    "website": "https://blackbarburger.co.il"
   },
   {
     "id": "osm-node-4916855022",
@@ -1208,7 +1179,8 @@
     "tags": [
       "shawarma"
     ],
-    "category": "meat"
+    "category": "meat",
+    "phone": "052-8754308"
   },
   {
     "id": "osm-node-5128936020",
@@ -1294,7 +1266,8 @@
     },
     "source": "osm",
     "phone": "+972 50 202 2610;+972 50 549 8309",
-    "category": "parve"
+    "category": "parve",
+    "openingHours": "Su-Th 07:00-18:00"
   },
   {
     "id": "osm-node-5143557202",
@@ -1311,7 +1284,8 @@
     "tags": [
       "burger"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 11:00-23:59"
   },
   {
     "id": "osm-node-5143582538",
@@ -1342,7 +1316,11 @@
     "tags": [
       "italian"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "phone": "04-6997020",
+    "openingHours": "Su 10:00-21:00; Mo-Th 10:00-22:00; Fr 09:00-16:00",
+    "website": "https://www.pizzacenterks.co.il",
+    "instagram": "https://www.instagram.com/pizza_center1"
   },
   {
     "id": "osm-node-5170599211",
@@ -1358,7 +1336,10 @@
     "tags": [
       "grill"
     ],
-    "category": "meat"
+    "category": "meat",
+    "phone": "03-5057632",
+    "openingHours": "Su-Th 11:00-20:30; Fr 11:00-14:30",
+    "website": "https://www.yashka.co.il"
   },
   {
     "id": "osm-node-5176327119",
@@ -1372,7 +1353,9 @@
     },
     "source": "osm",
     "phone": "+972 4 821 20 42",
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-Th 12:00-22:30; Fr 11:00-14:30",
+    "website": "https://hashnizelia.co.il"
   },
   {
     "id": "osm-node-5181482358",
@@ -1586,14 +1569,15 @@
     "name": "אסתריקה",
     "type": "restaurant",
     "cityId": "קרית שמונה",
-    "address": "קרית שמונה",
+    "address": "הברזל, קרית שמונה",
     "location": {
       "latitude": 33.1986913,
       "longitude": 35.5764871
     },
     "source": "osm",
     "phone": "+972 4 652 5032",
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 10:00-20:00; Fr 09:00-13:00"
   },
   {
     "id": "osm-node-5302021702",
@@ -1606,7 +1590,9 @@
       "longitude": 35.5451787
     },
     "source": "osm",
-    "category": "parve"
+    "category": "parve",
+    "phone": "052-5735301",
+    "openingHours": "Su-Th 08:30-20:30; Fr 08:00-13:00"
   },
   {
     "id": "osm-node-5302040666",
@@ -1628,7 +1614,7 @@
     "name": "השניצל המערבי",
     "type": "restaurant",
     "cityId": "חצור הגלילית",
-    "address": "חצור הגלילית",
+    "address": "ההסתדרות 20, חצור הגלילית",
     "location": {
       "latitude": 32.9808508,
       "longitude": 35.555757
@@ -1660,7 +1646,7 @@
     "name": "Best burger",
     "type": "restaurant",
     "cityId": "קרית שמונה",
-    "address": "קרית שמונה",
+    "address": "ארלוזורוב 3, קרית שמונה",
     "location": {
       "latitude": 33.2092084,
       "longitude": 35.5691085
@@ -1756,7 +1742,9 @@
       "longitude": 35.5484588
     },
     "source": "osm",
-    "category": "meat"
+    "category": "meat",
+    "phone": "04-9555109",
+    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-16:30"
   },
   {
     "id": "osm-node-5728427295",
@@ -1881,7 +1869,10 @@
     "tags": [
       "pizza"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "phone": "08-9100802",
+    "openingHours": "Su-We 11:00-22:00; Th 11:00-23:00",
+    "website": "https://casa-del-pepe.co.il"
   },
   {
     "id": "osm-node-5917569185",
@@ -1929,13 +1920,14 @@
     "name": "הערוק",
     "type": "restaurant",
     "cityId": "רמת השרון",
-    "address": "רמת השרון",
+    "address": "שדרות אהרון ירייב 1, רמת השרון",
     "location": {
       "latitude": 32.1431264,
       "longitude": 34.8179921
     },
     "source": "osm",
-    "category": "meat"
+    "category": "meat",
+    "phone": "054-6442010"
   },
   {
     "id": "osm-node-5997818140",
@@ -1966,7 +1958,9 @@
     "tags": [
       "regional"
     ],
-    "category": "parve"
+    "category": "parve",
+    "phone": "052-6587051",
+    "openingHours": "Su-Th 07:30-19:30; Fr 09:00-13:00"
   },
   {
     "id": "osm-node-6014904184",
@@ -1979,7 +1973,8 @@
       "longitude": 35.5499571
     },
     "source": "osm",
-    "category": "meat"
+    "category": "meat",
+    "phone": "04-9506950"
   },
   {
     "id": "osm-node-6014908134",
@@ -1992,7 +1987,8 @@
       "longitude": 35.5498406
     },
     "source": "osm",
-    "category": "meat"
+    "category": "meat",
+    "phone": "04-6806806"
   },
   {
     "id": "osm-node-6015034147",
@@ -2080,7 +2076,9 @@
       "cake",
       "coffee_shop"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 08:00-20:00; Fr 08:00-16:00",
+    "website": "https://delapaix.co.il"
   },
   {
     "id": "osm-node-6195852402",
@@ -2143,19 +2141,6 @@
     "instagram": "https://www.instagram.com/pizzahutisrael",
     "facebook": "https://www.facebook.com/PizzaHutIsrael",
     "phone": "1700-506070"
-  },
-  {
-    "id": "osm-node-6354069186",
-    "name": "חומוס ברדיצ'ב",
-    "type": "restaurant",
-    "cityId": "נשר",
-    "address": "שדרות טרומפלדור 53, חיפה",
-    "location": {
-      "latitude": 32.7825976,
-      "longitude": 35.0145097
-    },
-    "source": "osm",
-    "category": "parve"
   },
   {
     "id": "osm-node-6469411085",
@@ -2231,7 +2216,7 @@
     "name": "קפה צפוני",
     "type": "restaurant",
     "cityId": "קרית שמונה",
-    "address": "קרית שמונה",
+    "address": "שדרות תל חי 108, קרית שמונה",
     "location": {
       "latitude": 33.217922,
       "longitude": 35.5872493
@@ -2240,7 +2225,8 @@
     "tags": [
       "cafe"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "phone": "04-6905960"
   },
   {
     "id": "osm-node-6526904599",
@@ -2260,19 +2246,6 @@
     "category": "parve"
   },
   {
-    "id": "osm-node-6531709739",
-    "name": "מפגש המזל",
-    "type": "restaurant",
-    "cityId": "שדה אליעזר",
-    "address": "שדה אליעזר",
-    "location": {
-      "latitude": 33.0452696,
-      "longitude": 35.5734823
-    },
-    "source": "osm",
-    "category": "meat"
-  },
-  {
     "id": "osm-node-6545190948",
     "name": "Mexicanas",
     "type": "restaurant",
@@ -2283,7 +2256,8 @@
       "longitude": 35.54863
     },
     "source": "osm",
-    "category": "parve"
+    "category": "parve",
+    "phone": "04-8556166"
   },
   {
     "id": "osm-node-6547411049",
@@ -2337,14 +2311,16 @@
     "tags": [
       "georgian"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "phone": "053-5495189",
+    "openingHours": "Su-Tu 09:00-20:00; We 09:00-22:00; Th 09:00-23:00; Fr 09:00-14:30"
   },
   {
     "id": "osm-node-6754297391",
     "name": "פיצה עגבניה",
     "type": "restaurant",
     "cityId": "רמת רחל",
-    "address": "רמת רחל",
+    "address": "דרך חברון 101, בית הנציב, ירושלים",
     "location": {
       "latitude": 31.7546878,
       "longitude": 35.221582
@@ -2353,14 +2329,17 @@
     "tags": [
       "pizza"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "phone": "02-5321633",
+    "openingHours": "Su-Th 11:00-21:30; Fr 11:00-14:00",
+    "website": "https://agvania.co.il"
   },
   {
     "id": "osm-node-6754328385",
     "name": "הבורגנים",
     "type": "restaurant",
     "cityId": "רמת רחל",
-    "address": "רמת רחל",
+    "address": "דרך חברון 101, תלפיות, ירושלים",
     "location": {
       "latitude": 31.7546103,
       "longitude": 35.2215368
@@ -2369,7 +2348,10 @@
     "tags": [
       "burger"
     ],
-    "category": "meat"
+    "category": "meat",
+    "phone": "02-3001644",
+    "openingHours": "Su-Th 11:00-22:00; Fr 10:00-14:00",
+    "website": "https://haburganim.com"
   },
   {
     "id": "osm-node-6854597174",
@@ -2385,7 +2367,10 @@
     "tags": [
       "burger"
     ],
-    "category": "meat"
+    "category": "meat",
+    "phone": "1700-704-110",
+    "openingHours": "Su-Th 12:00-23:00; Fr 12:00-15:00",
+    "website": "https://110burger.com"
   },
   {
     "id": "osm-node-7056388962",
@@ -2453,7 +2438,8 @@
     "tags": [
       "kebab"
     ],
-    "category": "meat"
+    "category": "meat",
+    "openingHours": "Su-We 10:00-02:00; Th 10:00-04:00; Fr 10:00-14:30"
   },
   {
     "id": "osm-node-7620478217",
@@ -2810,7 +2796,9 @@
     "tags": [
       "poke"
     ],
-    "category": "parve"
+    "category": "parve",
+    "openingHours": "Su-Th 11:00-19:00",
+    "website": "https://pokeshop.co.il"
   },
   {
     "id": "osm-node-10682695046",
@@ -3530,7 +3518,9 @@
       "pizza"
     ],
     "category": "dairy",
-    "website": "https://www.pizzashemesh.co.il"
+    "website": "https://www.pizzashemesh.co.il",
+    "phone": "08-6884050",
+    "openingHours": "Su-Th 10:00-23:30; Fr 08:30-15:00"
   },
   {
     "id": "osm-node-11749994120",
@@ -3663,7 +3653,9 @@
       "pizza"
     ],
     "category": "dairy",
-    "website": "https://www.pizzashemesh.co.il"
+    "website": "https://www.pizzashemesh.co.il",
+    "phone": "054-3945555",
+    "openingHours": "Su-Th 11:30-23:30"
   },
   {
     "id": "osm-node-11922661782",
@@ -3727,7 +3719,9 @@
     },
     "source": "osm",
     "phone": "086981212",
-    "category": "dairy"
+    "category": "dairy",
+    "openingHours": "Su-Th 09:00-23:30; Fr 09:00-14:30",
+    "website": "https://katsefet.co.il"
   },
   {
     "id": "osm-node-12064685793",
@@ -4164,7 +4158,9 @@
     "category": "dairy",
     "website": "https://www.pizzahut.co.il",
     "instagram": "https://www.instagram.com/pizzahutisrael",
-    "facebook": "https://www.facebook.com/PizzaHutIsrael"
+    "facebook": "https://www.facebook.com/PizzaHutIsrael",
+    "phone": "1700-506070",
+    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-14:00"
   },
   {
     "id": "osm-node-12547329544",
@@ -4196,7 +4192,10 @@
     "tags": [
       "pizza"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "phone": "03-9793320",
+    "openingHours": "Su-Th 11:00-22:30; Fr 11:00-14:00",
+    "website": "https://pizza-roma.co.il"
   },
   {
     "id": "osm-node-12557322215",
@@ -4581,7 +4580,10 @@
     "tags": [
       "pizza"
     ],
-    "category": "dairy"
+    "category": "dairy",
+    "phone": "03-9749745",
+    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00",
+    "website": "https://pazaz-shoham.co.il"
   },
   {
     "id": "osm-node-12695181881",
@@ -4777,7 +4779,9 @@
       "pizza"
     ],
     "category": "dairy",
-    "website": "https://www.pizzashemesh.co.il"
+    "website": "https://www.pizzashemesh.co.il",
+    "phone": "04-6722300",
+    "openingHours": "Su-Th 11:00-23:00"
   },
   {
     "id": "osm-node-13137796250",
@@ -5210,7 +5214,9 @@
       "longitude": 35.2276729
     },
     "source": "osm",
-    "category": "dairy"
+    "category": "dairy",
+    "phone": "02-6253722",
+    "website": "https://katsefet.co.il"
   },
   {
     "id": "osm-node-13508662103",

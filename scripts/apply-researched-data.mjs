@@ -198,12 +198,20 @@ const BATCH3 = [
 ];
 RESEARCHED.push(...BATCH3);
 
-// שגיאות OSM — מקומות שלא קיימים בפועל לפי אתרים רשמיים
+// שגיאות OSM — מקומות שלא קיימים בפועל לפי אתרים רשמיים / לא נמצאו בחיפוש
 const WRONG_ENTRIES = [
   { name: 'ארומה',        city: "כפר חב\"ד" },  // אין ארומה בכפר חב"ד
   { name: "מקדונלד'ס",   city: "כפר חב\"ד" },  // אין מקדונלד'ס בכפר חב"ד
   { name: "מקדונלד'ס",   city: 'נטעים' },       // אין מקדונלד'ס בנטעים
   { name: "McDonald's מקדונלד'ס", city: 'נטעים' },
+  // Batch 7 — not_found after web research
+  { name: 'וופלדין',              city: 'שוהם' },          // לא נמצא בשוהם
+  { name: 'פיצה ורונה',          city: 'חצור הגלילית' },   // לא נמצא
+  { name: 'מפגש המזל',           city: 'שדה אליעזר' },     // לא נמצא
+  { name: 'השיפודיה',            city: 'גן הגושרים' },     // לא נמצא
+  { name: 'פופא',                city: 'בת ים' },           // לא נמצא
+  { name: 'חומוס ברדיצ\'ב',      city: 'נשר' },            // לא נמצא בנשר
+  { name: 'ציקן & ביף',          city: 'אזור' },           // לא נמצא
 ];
 
 // ── Batch 4 – agent a771c6a41a6a8aa5a (Roladin, Golda, Burgers Bar) ─────────
@@ -251,6 +259,136 @@ const BATCH5 = [
   },
 ];
 RESEARCHED.push(...BATCH5);
+
+// ── Batch 6 – agent a09d234d4b819a051 (Jerusalem/Shoham/center) ──────────────
+const BATCH6 = [
+  {
+    name: "חצ'אפוריה שוק מחנה יהודה", city: 'ירושלים',
+    address: 'השקמה 5, שוק מחנה יהודה, ירושלים',
+    phone: '053-5495189',
+    openingHours: 'Su-Tu 09:00-20:00; We 09:00-22:00; Th 09:00-23:00; Fr 09:00-14:30',
+  },
+  {
+    name: 'פיצה עגבניה', city: 'רמת רחל',
+    address: 'דרך חברון 101, בית הנציב, ירושלים',
+    phone: '02-5321633',
+    openingHours: 'Su-Th 11:00-21:30; Fr 11:00-14:00',
+    website: 'https://agvania.co.il',
+  },
+  {
+    name: 'הבורגנים', city: 'רמת רחל',
+    address: 'דרך חברון 101, תלפיות, ירושלים',
+    phone: '02-3001644',
+    openingHours: 'Su-Th 11:00-22:00; Fr 10:00-14:00',
+    website: 'https://haburganim.com',
+  },
+  {
+    name: 'קצפת', city: 'אשדוד',
+    address: 'שדרות הפלמ"ח 20, אשדוד',
+    phone: '08-6440439',
+    openingHours: 'Su-Th 09:00-23:30; Fr 09:00-14:30',
+    website: 'https://katsefet.co.il',
+  },
+  {
+    name: 'קצפת', city: 'ירושלים',
+    address: 'בן יהודה 2, ירושלים',
+    phone: '02-6253722',
+    website: 'https://katsefet.co.il',
+  },
+  {
+    name: 'קאסה דל פפה', city: 'רחובות',
+    address: 'ש. בן ציון 50, רחובות',
+    phone: '08-9100802',
+    openingHours: 'Su-We 11:00-22:00; Th 11:00-23:00',
+    website: 'https://casa-del-pepe.co.il',
+  },
+  {
+    name: 'דה לה פה', city: 'רחובות',
+    address: 'יעקב 26, רחובות',
+    phone: '08-9390792',
+    openingHours: 'Su-Th 08:00-20:00; Fr 08:00-16:00',
+    website: 'https://delapaix.co.il',
+  },
+  {
+    name: 'מרקש', city: 'נתניה',
+    address: 'דוד המלך 5, נתניה',
+    phone: '09-8334797',
+    openingHours: 'Su-Th 12:00-24:00; Fr 12:00-14:30',
+  },
+  {
+    name: 'פיצה שמש', city: 'אור יהודה',
+    address: 'שדרות מרדכי בן פורת 79, אור יהודה',
+    phone: '054-3945555',
+    openingHours: 'Su-Th 11:30-23:30',
+    website: 'https://pizza-shemesh.co.il',
+  },
+  {
+    name: 'פיצה שמש', city: 'בת ים',
+    address: 'הרצל 75, בת ים',
+    phone: '03-5531310',
+    openingHours: 'Su-Th 12:00-23:00',
+    website: 'https://pizza-shemesh.co.il',
+  },
+  {
+    name: 'פיצה שמש', city: 'שדרות',
+    address: 'הרצל 31, שדרות',
+    phone: '08-6884050',
+    openingHours: 'Su-Th 10:00-23:30; Fr 08:30-15:00',
+    website: 'https://pizza-shemesh.co.il',
+  },
+  {
+    name: 'פיצה שמש', city: 'טבריה',
+    address: 'העצמאות 3, טבריה',
+    phone: '04-6722300',
+    openingHours: 'Su-Th 11:00-23:00',
+    website: 'https://pizza-shemesh.co.il',
+  },
+  {
+    name: '110 Burger', city: 'בית שמש',
+    address: 'יגאל אלון 6, בית שמש',
+    phone: '1700-704-110',
+    openingHours: 'Su-Th 12:00-23:00; Fr 12:00-15:00',
+    website: 'https://110burger.com',
+  },
+  {
+    name: 'השבעה שוורמה', city: 'אשדוד',
+    address: 'הבנאים 4, אשדוד',
+    openingHours: 'Su-We 10:00-02:00; Th 10:00-04:00; Fr 10:00-14:30',
+  },
+];
+RESEARCHED.push(...BATCH6);
+
+// ── Batch 7 – agents abc8b82b651f54bdc + a09d234d4b819a051 (north + shoham + center) ──
+const BATCH7 = [
+  { name: 'קייטרינג תדמית',   city: 'קרית שמונה', phone: '04-6950916' },
+  { name: 'השווארמה של ציון', city: 'קרית שמונה', phone: '052-8754308' },
+  { name: "סנדוויצ'ה",        city: 'קרית שמונה', address: 'מרכז צבי, קרית שמונה', phone: '04-6904443' },
+  { name: 'פלאפל בנימין',     city: 'קרית שמונה', address: 'כיכר צה"ל 150, קרית שמונה', phone: '050-5498309', openingHours: 'Su-Th 07:00-18:00' },
+  { name: 'בורגר בומבה',      city: 'קרית שמונה', address: 'כיכר צה"ל 20, קרית שמונה', phone: '053-9425382', openingHours: 'Su-Th 11:00-23:59' },
+  { name: 'איטליה הקטנה',     city: 'קרית שמונה', address: 'הנשיא 4, קניון נחמיה, קרית שמונה', phone: '04-6997020', openingHours: 'Su 10:00-21:00; Mo-Th 10:00-22:00; Fr 09:00-16:00', website: 'https://www.pizzacenterks.co.il', instagram: 'https://www.instagram.com/pizza_center1' },
+  { name: 'השניצליה',         city: 'קרית שמונה', address: 'שדרות תל חי 83, קרית שמונה', phone: '053-9841909', openingHours: 'Su-Th 12:00-22:30; Fr 11:00-14:30', website: 'https://hashnizelia.co.il' },
+  { name: 'אסתריקה',          city: 'קרית שמונה', address: 'הברזל, קרית שמונה', phone: '055-4578238', openingHours: 'Su-Th 10:00-20:00; Fr 09:00-13:00' },
+  { name: 'Best burger',      city: 'קרית שמונה', address: 'ארלוזורוב 3, קרית שמונה', phone: '077-2016918' },
+  { name: 'קפה צפוני',        city: 'קרית שמונה', address: 'שדרות תל חי 108, קרית שמונה', phone: '04-6905960' },
+  { name: 'שיפודי רחמים שמחה ובניו', city: 'ראש פינה', address: 'דרך הגליל 515, סנטר הגליל, ראש פינה', phone: '04-9555109', openingHours: 'Su-Th 11:00-23:00; Fr 11:00-16:30' },
+  { name: 'חומוס ששי',        city: 'ראש פינה', address: 'דרך הגליל 46, סנטר הגליל, ראש פינה', phone: '052-6587051', openingHours: 'Su-Th 07:30-19:30; Fr 09:00-13:00' },
+  { name: 'השניצליה',         city: 'ראש פינה', address: 'דרך הגליל 1, ראש פינה', phone: '04-9506950' },
+  { name: 'שיפודיM',          city: 'ראש פינה', address: 'דרך הגליל, ראש פינה', phone: '04-6806806' },
+  { name: 'Mexicanas',        city: 'ראש פינה', address: 'מעלה גיא אוני 1, חאן ראש פינה', phone: '04-8556166' },
+  { name: 'קפה פורטיולי',     city: 'חצור הגלילית', address: 'דרך הבנים 1, קניון הגליל העליון, חצור הגלילית', phone: '04-6930338', instagram: 'https://www.instagram.com/portioli_restaurant' },
+  { name: 'שווארמה גולני',    city: 'חצור הגלילית', address: 'דרך הבנים 1, חצור הגלילית', phone: '04-6931829' },
+  { name: 'פלאפל שווארה אמסלם', city: 'חצור הגלילית', address: 'יצחק שמיר 19, חצור הגלילית', phone: '052-5735301', openingHours: 'Su-Th 08:30-20:30; Fr 08:00-13:00' },
+  { name: 'השניצל המערבי',    city: 'חצור הגלילית', address: 'ההסתדרות 20, חצור הגלילית', phone: '077-4410427' },
+  { name: 'פיצה רומא',        city: 'שוהם', address: 'שדרות עמק איילון 30, שוהם', phone: '03-9793320', openingHours: 'Su-Th 11:00-22:30; Fr 11:00-14:00', website: 'https://pizza-roma.co.il' },
+  { name: 'פיצה פצץ',         city: 'שוהם', address: 'שדרות עמק איילון 161, שוהם', phone: '03-9749745', openingHours: 'Su-Th 11:00-23:00; Fr 11:00-15:00', website: 'https://pazaz-shoham.co.il' },
+  { name: 'Pizza Hut',        city: 'שוהם', address: 'שדרות עמק איילון 161, שוהם', phone: '1700-506070', openingHours: 'Su-Th 11:00-23:00; Fr 11:00-14:00', website: 'https://www.pizzahut.co.il' },
+  { name: 'יאשקה',            city: 'רמת השרון', address: 'טרומפלדור 5, רמת השרון', phone: '03-5057632', openingHours: 'Su-Th 11:00-20:30; Fr 11:00-14:30', website: 'https://www.yashka.co.il' },
+  { name: 'הערוק',            city: 'רמת השרון', address: 'שדרות אהרון ירייב 1, רמת השרון', phone: '054-6442010' },
+  { name: 'בלאק',             city: 'פתח תקווה', address: 'הסיבים 18, פתח תקווה', phone: '03-9191891', openingHours: 'Su-Th 12:00-23:00; Fr 12:00-14:30', website: 'https://blackbarburger.co.il' },
+  { name: 'PokeShop',         city: 'בני ברק', address: 'בר כוכבא 16, בני ברק', openingHours: 'Su-Th 11:00-19:00', website: 'https://pokeshop.co.il' },
+  { name: 'Cake Art',         city: 'תל אביב–יפו', address: 'ארלוזורוב 188, תל אביב', phone: '03-6954459', openingHours: 'Su-Th 06:00-22:00; Fr 06:00-15:00', website: 'https://cake-art.co.il' },
+];
+RESEARCHED.push(...BATCH7);
 
 // ── Confirmed CLOSED restaurants (delete from DB) ─────────────────────────
 const CONFIRMED_CLOSED = [
