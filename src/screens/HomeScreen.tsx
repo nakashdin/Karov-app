@@ -139,6 +139,7 @@ export function HomeScreen() {
           <Shortcut icon="fast-food"     color={colors.categoryFastFood}   label="מזון מהיר"   onPress={() => openType('fast_food')} />
           <Shortcut icon="cafe"          color={colors.categoryCafe}       label="בתי קפה"     onPress={() => openType('cafe')} />
           <Shortcut icon="cafe-outline"  color={colors.categoryCoffeeCart} label="עגלות קפה"   onPress={() => openType('coffee_cart')} />
+          <Shortcut icon="wine"          color={colors.categoryWinery}     label="ייקבים"      onPress={() => openType('winery')} />
         </View>
 
         {/* קהילה */}

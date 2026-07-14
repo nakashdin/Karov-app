@@ -51,6 +51,7 @@ export const colors = {
   categoryCoffeeCart: '#5C8B3E',
   categorySynagogue: '#2A6CA8',
   categoryMikveh: '#0288D1',
+  categoryWinery: '#7D1E3D',
   categoryFavorites: '#C0394A',
 } as const;
 

@@ -35,6 +35,7 @@ type DetailRoute = RouteProp<RootStackParamList, 'PlaceDetail'>;
 
 const TYPE_COLOR: Record<string, string> = {
   restaurant:   colors.categoryRestaurant,
+  winery:       colors.categoryWinery,
   synagogue:    colors.categorySynagogue,
   mikveh:       colors.categoryMikveh,
   chabad_house: colors.chabad,
@@ -43,6 +44,7 @@ const TYPE_COLOR: Record<string, string> = {
 
 const TYPE_EMOJI: Record<string, string> = {
   restaurant:   '🍽️',
+  winery:       '🍷',
   synagogue:    '🕍',
   mikveh:       '💧',
   chabad_house: '🕎',
