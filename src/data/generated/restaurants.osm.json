@@ -163,28 +163,6 @@
     "cityId": "אילת"
   },
   {
-    "facebook": "https://www.facebook.com/BurgersBar",
-    "tags": [
-      "burger"
-    ],
-    "type": "restaurant",
-    "source": "osm",
-    "name": "בורגרס בר",
-    "extra": {
-      "osmKosher": "yes"
-    },
-    "website": "https://www.burgersbar.co.il",
-    "cityId": "אילת",
-    "address": "אילת",
-    "instagram": "https://www.instagram.com/burgersbar",
-    "category": "meat",
-    "id": "osm-node-1299991556",
-    "location": {
-      "latitude": 29.5505559,
-      "longitude": 34.9556208
-    }
-  },
-  {
     "facebook": "https://www.facebook.com/AromaIsrael",
     "openingHours": "Su-Sa 06:00-23:00",
     "tags": [
@@ -769,29 +747,6 @@
     "cityId": "כפר חב\"ד"
   },
   {
-    "facebook": "https://www.facebook.com/BurgersBar",
-    "openingHours": "Su-Th 11:00-23:59",
-    "tags": [
-      "burger"
-    ],
-    "type": "restaurant",
-    "source": "osm",
-    "name": "בורגרס בר",
-    "extra": {
-      "osmKosher": "yes"
-    },
-    "website": "https://www.burgersbar.co.il",
-    "cityId": "מודיעין-מכבים-רעות",
-    "address": "עמק דותן 23, מרכז מליבו סנטר, מודיעין",
-    "instagram": "https://www.instagram.com/burgersbar",
-    "category": "meat",
-    "id": "osm-node-2165350037",
-    "location": {
-      "latitude": 31.8989908,
-      "longitude": 35.0210521
-    }
-  },
-  {
     "facebook": "https://www.facebook.com/PizzaHutIsrael",
     "tags": [
       "pizza"
@@ -900,29 +855,6 @@
       "longitude": 34.7635041
     },
     "phone": "03-5531310"
-  },
-  {
-    "facebook": "https://www.facebook.com/BurgersBar",
-    "openingHours": "Su-Th 11:00-23:30; Fr 11:00-15:00",
-    "tags": [
-      "burger"
-    ],
-    "type": "restaurant",
-    "source": "osm",
-    "name": "בורגרס בר",
-    "extra": {
-      "osmKosher": "yes"
-    },
-    "website": "https://www.burgersbar.co.il",
-    "cityId": "תל אביב–יפו",
-    "address": "טאגור 30, תל אביב",
-    "instagram": "https://www.instagram.com/burgersbar",
-    "category": "meat",
-    "id": "osm-node-2577660818",
-    "location": {
-      "latitude": 32.1167648,
-      "longitude": 34.7969694
-    }
   },
   {
     "source": "osm",
@@ -1105,26 +1037,6 @@
       "longitude": 34.7918513
     },
     "cityId": "חולון"
-  },
-  {
-    "facebook": "https://www.facebook.com/coffix",
-    "id": "osm-node-4352401257",
-    "type": "restaurant",
-    "openingHours": "Su-Th 06:30-21:00; Fr 06:30-(Sunset-02:00)",
-    "name": "קופיקס",
-    "extra": {
-      "osmKosher": "yes"
-    },
-    "website": "https://www.coffix.co.il",
-    "cityId": "פתח תקווה",
-    "address": "חובבי ציון 10, פתח תקווה",
-    "instagram": "https://www.instagram.com/coffix_israel",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.0878526,
-      "longitude": 34.8827486
-    },
-    "source": "osm"
   },
   {
     "facebook": "https://www.facebook.com/roladin",
@@ -19093,6 +19005,486 @@
     "openingHours": "א'-ה' 11:00-23:00 | ו' סגור | מוצ\"ש חצי שעה מצאת השבת עד 23:00",
     "category": "dairy",
     "kosherType": "badatz_edah",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "burgersbar-c0ae94d5",
+    "name": "בורגרס בר הר חומה",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "אליהו קורן 27, ירושלים",
+    "location": {
+      "latitude": 31.7218,
+      "longitude": 35.2337
+    },
+    "website": "https://burgersbar.co.il",
+    "openingHours": "א'-ד': 11:00-00:00 | ה': 11:00-00:00 | ו': 11:00-15:00 | מוצ\"ש: חצי שעה לאחר צאת השבת ועד 00:00",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "burgersbar-8e986587",
+    "name": "בורגרס בר מחנה יהודה",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "עץ חיים 68, ירושלים",
+    "location": {
+      "latitude": 31.7842,
+      "longitude": 35.2082
+    },
+    "website": "https://burgersbar.co.il",
+    "openingHours": "א'-ד': 11:00-00:00 | ה': 11:00-03:00 | ו': 11:00-15:45 | מוצ\"ש: חצי שעה לאחר צאת השבת ועד 00:00",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "burgersbar-71b69ef0",
+    "name": "בורגרס בר יפו 36",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "יפו 36, ירושלים",
+    "location": {
+      "latitude": 31.7798,
+      "longitude": 35.2229
+    },
+    "website": "https://burgersbar.co.il",
+    "openingHours": "א'-ד': 11:00-23:30 | ה': 11:00-23:30 | ו': 11:00-15:00 | מוצ\"ש: שעה לאחר צאת השבת ועד 23:30",
+    "category": "meat",
+    "kosherType": "badatz_beit_yosef",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "burgersbar-fbccb6b0",
+    "name": "בורגרס בר הרובע היהודי",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "תפארת ישראל 12, ירושלים",
+    "location": {
+      "latitude": 31.7754,
+      "longitude": 35.2294
+    },
+    "website": "https://burgersbar.co.il",
+    "openingHours": "א'-ד': 11:00-23:00 | ה': 11:00-23:00 | ו': 10:30-15:00 | מוצ\"ש: שעה וחצי לאחר צאת השבת ועד 00:00",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "burgersbar-be293537",
+    "name": "בורגרס בר המושבה הגרמנית",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "עמק רפאים 31, ירושלים",
+    "location": {
+      "latitude": 31.7671,
+      "longitude": 35.2203
+    },
+    "website": "https://burgersbar.co.il",
+    "openingHours": "א'-ד': 11:00-00:00 | ה': 11:00-00:00 | ו': 11:00-15:00 | מוצ\"ש: חצי שעה לאחר צאת השבת ועד 00:00",
+    "category": "meat",
+    "kosherType": "badatz_beit_yosef",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "burgersbar-0b78072a",
+    "name": "בורגרס בר הגבעה הצרפתית",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "ההגנה 21, ירושלים",
+    "location": {
+      "latitude": 31.8073,
+      "longitude": 35.2327
+    },
+    "website": "https://burgersbar.co.il",
+    "openingHours": "א'-ד': 11:30-23:30 | ה': 11:30-23:00 | ו': סגור | מוצ\"ש: שעה וחצי לאחר צאת השבת ועד 23:30",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "burgersbar-20544f4b",
+    "name": "בורגרס בר גילה",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "הגננת 216, ירושלים",
+    "location": {
+      "latitude": 31.7388,
+      "longitude": 35.1875
+    },
+    "website": "https://burgersbar.co.il",
+    "openingHours": "א'-ד': 11:00-23:00 | ה': 11:00-00:00 | ו': סגור | מוצ\"ש: חצי שעה לאחר צאת השבת ועד 00:00",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "burgersbar-fdcd37b2",
+    "name": "בורגרס בר גבעת שאול",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "בית הדפוס 12, ירושלים",
+    "location": {
+      "latitude": 31.7964,
+      "longitude": 35.1888
+    },
+    "website": "https://burgersbar.co.il",
+    "openingHours": "א'-ד': 11:00-23:00 | ה': 11:00-23:00 | ו': סגור | מוצ\"ש: סגור",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "burgersbar-b0fda7d8",
+    "name": "בורגרס בר בן יהודה",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "בן יהודה 2, ירושלים",
+    "location": {
+      "latitude": 31.7808,
+      "longitude": 35.2224
+    },
+    "website": "https://burgersbar.co.il",
+    "openingHours": "א'-ד': 11:00-23:00 | ה': 11:00-00:00 | ו': 11:00-15:00 | מוצ\"ש: שעה לאחר צאת השבת ועד 23:30",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "burgersbar-ca68fc3c",
+    "name": "בורגרס בר באר יעקב",
+    "type": "restaurant",
+    "cityId": "באר יעקב",
+    "address": "עמק 2, באר יעקב",
+    "location": {
+      "latitude": 31.9428,
+      "longitude": 34.8378
+    },
+    "website": "https://burgersbar.co.il",
+    "openingHours": "א'-ד': 11:00-23:00 | ה': 11:00-00:00 | ו': 11:00-15:00 | מוצ\"ש: חצי שעה לאחר צאת השבת ועד 00:00",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "burgersbar-8a8db08b",
+    "name": "בורגרס בר חולון",
+    "type": "restaurant",
+    "cityId": "חולון",
+    "address": "גולדה מאיר 7, חולון",
+    "location": {
+      "latitude": 32.0236,
+      "longitude": 34.7763
+    },
+    "website": "https://burgersbar.co.il",
+    "openingHours": "א'-ד': 11:00-22:30 | ה': 11:00-22:30 | ו': 11:00-15:00 | מוצ\"ש: שעה לאחר צאת השבת ועד 23:00",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "burgersbar-417e6b61",
+    "name": "בורגרס בר הרצליה",
+    "type": "restaurant",
+    "cityId": "הרצליה",
+    "address": "ביילינסון 1, הרצליה",
+    "location": {
+      "latitude": 32.1655,
+      "longitude": 34.8438
+    },
+    "website": "https://burgersbar.co.il",
+    "openingHours": "א'-ד': 10:00-23:00 | ה': 10:00-23:30 | ו': 11:00-15:00 | מוצ\"ש: שעה לאחר צאת השבת ועד 23:30",
+    "category": "meat",
+    "kosherType": "badatz_beit_yosef",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "burgersbar-a7096850",
+    "name": "בורגרס בר גבעתיים",
+    "type": "restaurant",
+    "cityId": "גבעתיים",
+    "address": "דרך יצחק רבין 53, גבעתיים",
+    "location": {
+      "latitude": 32.0693,
+      "longitude": 34.8135
+    },
+    "website": "https://burgersbar.co.il",
+    "openingHours": "א'-ד': 10:00-22:30 | ה': 10:00-22:30 | ו': 10:00-15:30 | מוצ\"ש: שעה לאחר צאת השבת ועד 23:00",
+    "category": "meat",
+    "kosherType": "badatz_beit_yosef",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "burgersbar-6da47c9c",
+    "name": "בורגרס בר נתניה פיאנו",
+    "type": "restaurant",
+    "cityId": "נתניה",
+    "address": "שושנה דמארי 30, מתחם פיאנו, נתניה",
+    "location": {
+      "latitude": 32.3295,
+      "longitude": 34.8581
+    },
+    "website": "https://burgersbar.co.il",
+    "openingHours": "א'-ד': 11:00-23:30 | ה': 11:00-23:30 | ו': 11:00-15:00 | מוצ\"ש: חצי שעה לאחר צאת השבת ועד 23:30",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "burgersbar-47c25dd8",
+    "name": "בורגרס בר עזריאלי רמלה",
+    "type": "restaurant",
+    "cityId": "רמלה",
+    "address": "שדרות דוד רזיאל 1, קניון עזריאלי, רמלה",
+    "location": {
+      "latitude": 31.9296,
+      "longitude": 34.8699
+    },
+    "website": "https://burgersbar.co.il",
+    "openingHours": "א'-ד': 10:30-22:30 | ה': 10:30-23:00 | ו': 11:00-15:30 | מוצ\"ש: שעה לאחר צאת השבת ועד 23:00",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "burgersbar-f0f2c420",
+    "name": "בורגרס בר פתח תקווה",
+    "type": "restaurant",
+    "cityId": "פתח תקווה",
+    "address": "רוטשילד 89, פתח תקווה",
+    "location": {
+      "latitude": 32.0935,
+      "longitude": 34.8807
+    },
+    "website": "https://burgersbar.co.il",
+    "openingHours": "א'-ד': 11:30-00:00 | ה': 11:30-00:00 | ו': סגור | מוצ\"ש: שעה לאחר צאת השבת ועד 00:00",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "burgersbar-f5d9de6e",
+    "name": "בורגרס בר ראשון לציון קניון הזהב",
+    "type": "restaurant",
+    "cityId": "ראשון לציון",
+    "address": "קניון הזהב, ראשון לציון",
+    "location": {
+      "latitude": 31.9699,
+      "longitude": 34.7889
+    },
+    "locationPrecision": "city",
+    "website": "https://burgersbar.co.il",
+    "openingHours": "א'-ד': 11:00-22:30 | ה': 11:00-22:30 | ו': 11:00-15:00 | מוצ\"ש: חצי שעה לאחר צאת השבת ועד 23:30",
+    "category": "meat",
+    "kosherType": "badatz_beit_yosef",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "burgersbar-e0361b76",
+    "name": "בורגרס בר רמת אביב",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "מרכז טאגור 30, תל אביב",
+    "location": {
+      "latitude": 32.1135,
+      "longitude": 34.8022
+    },
+    "website": "https://burgersbar.co.il",
+    "openingHours": "א'-ד': 11:00-23:00 | ה': 11:00-23:30 | ו': 11:00-15:00 | מוצ\"ש: שעה לאחר צאת השבת ועד 23:30",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "burgersbar-e785eafc",
+    "name": "בורגרס בר רעננה",
+    "type": "restaurant",
+    "cityId": "רעננה",
+    "address": "אחוזה 184, רעננה",
+    "location": {
+      "latitude": 32.1874,
+      "longitude": 34.8717
+    },
+    "website": "https://burgersbar.co.il",
+    "openingHours": "א'-ד': 11:00-23:00 | ה': 11:00-00:00 | ו': 11:00-15:00 | מוצ\"ש: שעה לאחר צאת השבת ועד 00:00",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "burgersbar-d9af30d9",
+    "name": "בורגרס בר תל אביב עזריאלי",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "קניון עזריאלי, תל אביב",
+    "location": {
+      "latitude": 32.0742,
+      "longitude": 34.7924
+    },
+    "locationPrecision": "city",
+    "website": "https://burgersbar.co.il",
+    "openingHours": "א'-ד': 09:30-22:00 | ה': 09:30-22:00 | ו': 09:30-15:30 | מוצ\"ש: שעה לאחר צאת השבת ועד 23:00",
+    "category": "meat",
+    "kosherType": "badatz_beit_yosef",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "burgersbar-e1596d55",
+    "name": "בורגרס בר גבעת שמואל",
+    "type": "restaurant",
+    "cityId": "גבעת שמואל",
+    "address": "האורנים 1, גבעת שמואל",
+    "location": {
+      "latitude": 32.0773,
+      "longitude": 34.8524
+    },
+    "website": "https://burgersbar.co.il",
+    "openingHours": "א'-ד': 11:00-23:30 | ה': 11:00-00:00 | ו': 11:00-15:00 | מוצ\"ש: חצי שעה לאחר צאת השבת ועד 00:00",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "burgersbar-28d8ca5f",
+    "name": "בורגרס בר מצפה רמון",
+    "type": "restaurant",
+    "cityId": "מצפה רמון",
+    "address": "שדרות בן גוריון 2, מצפה רמון",
+    "location": {
+      "latitude": 30.6096,
+      "longitude": 34.802
+    },
+    "website": "https://burgersbar.co.il",
+    "openingHours": "א'-ד': 10:30-23:00 | ה': 10:30-23:00 | ו': 10:00-15:00 | מוצ\"ש: חצי שעה לאחר צאת השבת ועד 23:00",
+    "category": "meat",
+    "kosherType": "badatz_beit_yosef",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "burgersbar-74ae9f7d",
+    "name": "בורגרס בר נתיבות",
+    "type": "restaurant",
+    "cityId": "נתיבות",
+    "address": "בעלי המלאכה 3, פריז סנטר, נתיבות",
+    "location": {
+      "latitude": 31.4173,
+      "longitude": 34.5871
+    },
+    "website": "https://burgersbar.co.il",
+    "openingHours": "א'-ד': 11:00-23:00 | ה': 11:00-23:00 | ו': סגור | מוצ\"ש: שעה לאחר צאת השבת ועד 00:00",
+    "category": "meat",
+    "kosherType": "badatz_beit_yosef",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "burgersbar-eb6780e1",
+    "name": "בורגרס בר שדרות",
+    "type": "restaurant",
+    "cityId": "שדרות",
+    "address": "ההסתדרות 10, שדרות",
+    "location": {
+      "latitude": 31.5264,
+      "longitude": 34.5962
+    },
+    "website": "https://burgersbar.co.il",
+    "openingHours": "א'-ד': 11:30-23:00 | ה': 11:30-00:00 | ו': סגור | מוצ\"ש: שעה לאחר צאת השבת ועד 00:00",
+    "category": "meat",
+    "kosherType": "badatz_beit_yosef",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "burgersbar-83561c98",
+    "name": "בורגרס בר באר שבע גראנד קניון",
+    "type": "restaurant",
+    "cityId": "באר שבע",
+    "address": "שדרות דוד טוביהו 125, גראנד קניון, באר שבע",
+    "location": {
+      "latitude": 31.2503,
+      "longitude": 34.7854
+    },
+    "locationPrecision": "city",
+    "website": "https://burgersbar.co.il",
+    "openingHours": "א'-ד': 11:00-21:30 | ה': 11:00-21:30 | ו': 11:00-15:00 | מוצ\"ש: שעה לאחר צאת השבת ועד 22:30",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "burgersbar-1f17fca3",
+    "name": "בורגרס בר אילת דן",
+    "type": "restaurant",
+    "cityId": "אילת",
+    "address": "החוף הצפוני, דן אילת",
+    "location": {
+      "latitude": 29.5606,
+      "longitude": 34.951
+    },
+    "locationPrecision": "city",
+    "website": "https://burgersbar.co.il",
+    "openingHours": "א'-ד': 10:30-00:00 | ה': 10:30-00:00 | ו': 10:30-17:00 | מוצ\"ש: חצי שעה לאחר צאת השבת ועד 00:00",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "burgersbar-85a13288",
+    "name": "בורגרס בר אילת ביג",
+    "type": "restaurant",
+    "cityId": "אילת",
+    "address": "הסתת 20, מרכז ביג, אילת",
+    "location": {
+      "latitude": 29.5558,
+      "longitude": 34.947
+    },
+    "website": "https://burgersbar.co.il",
+    "openingHours": "א'-ד': 11:00-22:00 | ה': 11:00-22:00 | ו': 11:00-15:00 | מוצ\"ש: חצי שעה לאחר צאת השבת ועד 23:00",
+    "category": "meat",
+    "kosherType": "badatz_beit_yosef",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "burgersbar-87223019",
+    "name": "בורגרס בר אילת פנינת אילת",
+    "type": "restaurant",
+    "cityId": "אילת",
+    "address": "דרבן 4, מרכז פנינה, אילת",
+    "location": {
+      "latitude": 29.5481,
+      "longitude": 34.9466
+    },
+    "website": "https://burgersbar.co.il",
+    "openingHours": "א'-ד': 10:30-02:00 | ה': 10:30-02:00 | ו': 10:30-17:00 | מוצ\"ש: חצי שעה לאחר צאת השבת ועד 02:00",
+    "category": "meat",
+    "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   }
