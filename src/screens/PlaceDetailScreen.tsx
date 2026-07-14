@@ -350,9 +350,7 @@ export function PlaceDetailScreen() {
             <DetailRow icon="checkmark-done-outline" label="אומת לאחרונה" value={place.lastVerifiedAt} accent={accent} />
           ) : null}
 
-          {place.sourceUrl ? (
-            <DetailRow icon="link-outline" label="מקור" value={place.sourceName ?? place.sourceUrl} accent={accent} tappable onPress={() => Linking.openURL(place.sourceUrl!)} link />
-          ) : null}
+          {/* sourceUrl / sourceName retained in data for admin panel only */}
 
           {place.locationPrecision === 'city' ? (
             <View style={styles.approxNote}>
