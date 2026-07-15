@@ -120400,5 +120400,112 @@
     "kosherType": "kosher",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "agadir-7f4986df",
+    "name": "אגאדיר בני ברק",
+    "type": "restaurant",
+    "cityId": "בני ברק",
+    "address": "מצדה 7, בסר 4, בני ברק",
+    "phone": "*5690",
+    "location": {
+      "latitude": 32.0843,
+      "longitude": 34.8248
+    },
+    "website": "https://agadirkosher.com",
+    "openingHours": "א'-ד' 12:00-00:00 | ה' 12:00-01:00 | ו' סגור | ש' 19:30-01:00",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "lechembasar-6d4cc2b0",
+    "name": "לחם בשר נמל תל אביב",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "יורדי הסירה 1, נמל תל אביב",
+    "phone": "03-525-2558",
+    "location": {
+      "latitude": 32.098,
+      "longitude": 34.7831
+    },
+    "website": "https://lechembasartlv.co.il",
+    "openingHours": "א'-ד' 12:00-23:00 | ה' 12:00-00:00 | ו' 11:00-16:00 | ש' שעה מצאת שבת עד 01:00",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "lechembasar-bcd9030b",
+    "name": "לחם בשר פתח תקווה",
+    "type": "restaurant",
+    "cityId": "פתח תקווה",
+    "address": "תוצרת הארץ 3, פתח תקווה",
+    "phone": "077-230-7114",
+    "location": {
+      "latitude": 32.0908,
+      "longitude": 34.8828
+    },
+    "website": "https://www.lechembasarpt.co.il",
+    "openingHours": "א'-ד' 12:00-23:00 | ה' 12:00-23:30",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "lechembasar-38f7d23e",
+    "name": "לחם בשר הרצליה",
+    "type": "restaurant",
+    "cityId": "הרצליה",
+    "address": "השונית 2, מרינה, הרצליה פיתוח",
+    "phone": "077-230-7592",
+    "location": {
+      "latitude": 32.1595,
+      "longitude": 34.8065
+    },
+    "website": "https://www.lechembasarhrz.co.il",
+    "openingHours": "א'-ה' 12:00-24:00 | ו' 12:00 עד שעתיים לפני כניסת שבת | ש' שעה מצאת שבת עד 24:00",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "lechembasar-79d932e6",
+    "name": "לחם בשר ראשון לציון",
+    "type": "restaurant",
+    "cityId": "ראשון לציון",
+    "address": "משה בקר 13, הרובע, ראשון לציון",
+    "phone": "03-9555511",
+    "location": {
+      "latitude": 31.963,
+      "longitude": 34.8035
+    },
+    "website": "https://lechembasar-rishon.co.il",
+    "openingHours": "א'-ד' 12:00-23:30 | ה' 12:00-01:00 | ו' סגור | מוצ\"ש חצי שעה מצאת שבת עד 00:30",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "lechembasar-2455d1ef",
+    "name": "לחם בשר ירושלים",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "דוד רמז 4, התחנה הראשונה, ירושלים",
+    "phone": "02-624-4808",
+    "location": {
+      "latitude": 31.7778,
+      "longitude": 35.221
+    },
+    "website": "https://lehembasar-jerusalem.co.il",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
   }
 ]
