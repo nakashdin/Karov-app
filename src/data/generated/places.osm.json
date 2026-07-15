@@ -121049,5 +121049,105 @@
     "kosherType": "kosher",
     "source": "manual",
     "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "hummusneri-55f310c0",
+    "name": "חומוס נרי ראש העין",
+    "type": "restaurant",
+    "cityId": "ראש העין",
+    "address": "הרב שלום שבזי 60, ראש העין",
+    "phone": "077-300-7200",
+    "location": {
+      "latitude": 32.096,
+      "longitude": 34.9567
+    },
+    "website": "https://www.instagram.com/hummus_neri/",
+    "category": "parve",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "hummusneri-9f095951",
+    "name": "חומוס נרי בני ברק",
+    "type": "restaurant",
+    "cityId": "בני ברק",
+    "address": "מצדה 9, בני ברק",
+    "location": {
+      "latitude": 32.0835,
+      "longitude": 34.8248
+    },
+    "website": "https://www.instagram.com/hummus_neri/",
+    "category": "parve",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "hummusneri-5756c65b",
+    "name": "חומוס נרי שוהם",
+    "type": "restaurant",
+    "cityId": "שוהם",
+    "address": "דקל 30, שוהם",
+    "location": {
+      "latitude": 31.9962,
+      "longitude": 34.9396
+    },
+    "website": "https://www.instagram.com/hummus_neri/",
+    "category": "parve",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "hummusneri-8b88cc09",
+    "name": "חומוס נרי קריית אונו",
+    "type": "restaurant",
+    "cityId": "קריית אונו",
+    "address": "דובדבן 9, מרכז דובדבן, קריית אונו",
+    "location": {
+      "latitude": 32.0536,
+      "longitude": 34.8721
+    },
+    "website": "https://www.instagram.com/hummus_neri/",
+    "category": "parve",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "hummusneri-8e3b3a55",
+    "name": "חומוס נרי הוד השרון",
+    "type": "restaurant",
+    "cityId": "הוד השרון",
+    "address": "סוקולוב 2, הוד השרון",
+    "phone": "09-740-0400",
+    "location": {
+      "latitude": 32.1501,
+      "longitude": 34.8899
+    },
+    "website": "https://www.instagram.com/hummus_neri/",
+    "openingHours": "א'-ה' 09:00-17:00 | ו' 08:00-15:00 | ש' סגור",
+    "category": "parve",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "hummusneri-2d720afa",
+    "name": "חומוס נרי רמת גן",
+    "type": "restaurant",
+    "cityId": "רמת גן",
+    "address": "תובל 36, מתחם הבורסה, רמת גן",
+    "phone": "03-613-6636",
+    "location": {
+      "latitude": 32.087,
+      "longitude": 34.834
+    },
+    "website": "https://hummusneri.co.il",
+    "category": "parve",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
   }
 ]
