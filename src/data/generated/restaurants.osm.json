@@ -19487,5 +19487,315 @@
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "pastabasta-1e5e8321",
+    "name": "פסטה בסטה עזריאלי תל אביב",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "קניון עזריאלי, תל אביב",
+    "location": {
+      "latitude": 32.0742,
+      "longitude": 34.7924
+    },
+    "locationPrecision": "city",
+    "website": "https://pastabasta.co.il",
+    "openingHours": "א' 10:30-22:00 | ב'-ה' 11:30-22:30 | ו' 11:30 עד כניסת שבת | מוצ\"ש לאחר צאת שבת עד 23:00",
+    "category": "dairy",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "pastabasta-fd54e843",
+    "name": "פסטה בסטה TLV תל אביב",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "חשמונאים 96, תל אביב",
+    "location": {
+      "latitude": 32.0782,
+      "longitude": 34.7782
+    },
+    "website": "https://pastabasta.co.il",
+    "openingHours": "א'-ה' 11:00-23:00 | ו' 11:00-15:00 | ש' 20:30-23:00",
+    "category": "dairy",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "pastabasta-cfeb5301",
+    "name": "פסטה בסטה קניון איילון רמת גן",
+    "type": "restaurant",
+    "cityId": "רמת גן",
+    "address": "אבא הלל סילבר 301, קניון איילון, רמת גן",
+    "location": {
+      "latitude": 32.0849,
+      "longitude": 34.8222
+    },
+    "website": "https://pastabasta.co.il",
+    "openingHours": "א'-ה' 11:00-22:00 | ו' 11:00-15:00 | ש' 18:30-22:00",
+    "category": "dairy",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "pastabasta-8d90b752",
+    "name": "פסטה בסטה קניון ביאליק גבעתיים",
+    "type": "restaurant",
+    "cityId": "גבעתיים",
+    "address": "ביאליק 76, רמת גן",
+    "location": {
+      "latitude": 32.0756,
+      "longitude": 34.8156
+    },
+    "website": "https://pastabasta.co.il",
+    "openingHours": "א'-ה' 10:00-22:00 | ו' 10:00-15:00 | מוצ\"ש 21:00-00:00",
+    "category": "dairy",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "pastabasta-64f0afa5",
+    "name": "פסטה בסטה גני תקווה",
+    "type": "restaurant",
+    "cityId": "גני תקווה",
+    "address": "הדרים 7, מתחם אורבן צים, גני תקווה",
+    "location": {
+      "latitude": 32.0583,
+      "longitude": 34.8774
+    },
+    "website": "https://pastabasta.co.il",
+    "openingHours": "א'-ה' 10:00-22:00 | ו' 10:00-15:30 | מוצ\"ש חצי שעה אחרי צאת השבת עד 22:30",
+    "category": "dairy",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "pastabasta-42b1185a",
+    "name": "פסטה בסטה כפר סבא",
+    "type": "restaurant",
+    "cityId": "כפר סבא",
+    "address": "פפורט 3, כפר סבא",
+    "location": {
+      "latitude": 32.178,
+      "longitude": 34.9077
+    },
+    "website": "https://pastabasta.co.il",
+    "openingHours": "א'-ה' 11:00-21:00 | ו' 11:00-15:00 | ש' סגור",
+    "category": "dairy",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "pastabasta-cc4f3c90",
+    "name": "פסטה בסטה ראשון לציון",
+    "type": "restaurant",
+    "cityId": "ראשון לציון",
+    "address": "עלי יבלון 7, ראשון לציון",
+    "location": {
+      "latitude": 31.9689,
+      "longitude": 34.806
+    },
+    "website": "https://pastabasta.co.il",
+    "openingHours": "א'-ה' 11:00-23:00 | ו' 11:00-15:00 | מוצ\"ש עד 23:00",
+    "category": "dairy",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "pastabasta-0cc3e35c",
+    "name": "פסטה בסטה חולון",
+    "type": "restaurant",
+    "cityId": "חולון",
+    "address": "רוקמים 26, חולון",
+    "location": {
+      "latitude": 32.0075,
+      "longitude": 34.7762
+    },
+    "website": "https://pastabasta.co.il",
+    "openingHours": "א'-ה' 11:00-21:00 | ו' 11:00-14:30",
+    "category": "dairy",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "pastabasta-3de42359",
+    "name": "פסטה בסטה מחנה יהודה ירושלים",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "ממטה התות 8, שוק מחנה יהודה, ירושלים",
+    "location": {
+      "latitude": 31.784,
+      "longitude": 35.2095
+    },
+    "website": "https://pastabasta.co.il",
+    "openingHours": "א'-ה' 11:00-00:00 | ו' וערבי חג 10:00-15:00 | מוצ\"ש שעה וחצי אחרי צאת שבת עד 01:00",
+    "category": "dairy",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "pastabasta-0eb9ec3b",
+    "name": "פסטה בסטה ירושלים מרכז העיר",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "יפו 36, ירושלים",
+    "location": {
+      "latitude": 31.7793,
+      "longitude": 35.2215
+    },
+    "website": "https://pastabasta.co.il",
+    "openingHours": "א'-ד' 11:00-22:30 | ה' 11:00-00:00 | ו' 11:00-15:30 | ש' 21:15-23:30",
+    "category": "dairy",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "pastabasta-706e9bc8",
+    "name": "פסטה בסטה מבשרת ציון",
+    "type": "restaurant",
+    "cityId": "מבשרת ציון",
+    "address": "קניון הראל, מבשרת ציון",
+    "location": {
+      "latitude": 31.806,
+      "longitude": 35.1393
+    },
+    "locationPrecision": "city",
+    "website": "https://pastabasta.co.il",
+    "openingHours": "א'-ה' 11:00-23:00 | ו' 11:00-14:00",
+    "category": "dairy",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "pastabasta-c626dda7",
+    "name": "פסטה בסטה הדסה עין כרם",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "גן קלמן 1, קניון ישפרו הדסה עין כרם, ירושלים",
+    "location": {
+      "latitude": 31.753,
+      "longitude": 35.1515
+    },
+    "website": "https://pastabasta.co.il",
+    "openingHours": "א'-ה' 10:30-21:00 | ו' סגור | מוצ\"ש שעה מצאת השבת עד 23:00",
+    "category": "dairy",
+    "kosherType": "badatz_beit_yosef",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "pastabasta-9d344276",
+    "name": "פסטה בסטה מודיעין",
+    "type": "restaurant",
+    "cityId": "מודיעין",
+    "address": "דם המכבים 5, מרכז העיר, מודיעין",
+    "location": {
+      "latitude": 31.8984,
+      "longitude": 35.0105
+    },
+    "website": "https://pastabasta.co.il",
+    "openingHours": "א'-ה' 10:30-23:00 | ו' 10:30-14:00 | מוצ\"ש 18:00-23:00",
+    "category": "dairy",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "pastabasta-05bf925b",
+    "name": "פסטה בסטה מעלה אדומים",
+    "type": "restaurant",
+    "cityId": "מעלה אדומים",
+    "address": "קניון עופר, קומה 2, מעלה אדומים",
+    "location": {
+      "latitude": 31.7813,
+      "longitude": 35.2936
+    },
+    "locationPrecision": "city",
+    "website": "https://pastabasta.co.il",
+    "openingHours": "א'-ה' 11:00-23:00 | ו' 11:00-15:00 | מוצ\"ש עד 23:00",
+    "category": "dairy",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "pastabasta-6e481285",
+    "name": "פסטה בסטה רחובות",
+    "type": "restaurant",
+    "cityId": "רחובות",
+    "address": "הרצל 219, רחובות",
+    "location": {
+      "latitude": 31.8943,
+      "longitude": 34.8033
+    },
+    "website": "https://pastabasta.co.il",
+    "openingHours": "א'-ה' 11:00-23:00 | ו'/ש' לפי כניסת ויציאת שבת",
+    "category": "dairy",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "pastabasta-6d36273f",
+    "name": "פסטה בסטה באר שבע מרכז",
+    "type": "restaurant",
+    "cityId": "באר שבע",
+    "address": "מתחם ביג, באר שבע",
+    "location": {
+      "latitude": 31.2472,
+      "longitude": 34.7997
+    },
+    "locationPrecision": "city",
+    "website": "https://pastabasta.co.il",
+    "openingHours": "א'-ה' 11:00-23:00 | ו'/ש' לפי כניסת ויציאת שבת",
+    "category": "dairy",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "pastabasta-70343528",
+    "name": "פסטה בסטה באר שבע",
+    "type": "restaurant",
+    "cityId": "באר שבע",
+    "address": "ז'ינגלבלום 19, באר שבע",
+    "location": {
+      "latitude": 31.2589,
+      "longitude": 34.802
+    },
+    "website": "https://pastabasta.co.il",
+    "openingHours": "א'-ה' 11:00-23:00 | ו' 11:00-15:00 | מוצ\"ש חצי שעה מצאת שבת עד 00:00",
+    "category": "dairy",
+    "kosherType": "badatz_beit_yosef",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
+  },
+  {
+    "id": "pastabasta-23fface6",
+    "name": "פסטה בסטה קריית מוצקין",
+    "type": "restaurant",
+    "cityId": "קריית מוצקין",
+    "address": "שושנה דמארי 4, מתחם גשם, קרית מוצקין",
+    "location": {
+      "latitude": 32.8355,
+      "longitude": 35.0701
+    },
+    "website": "https://pastabasta.co.il",
+    "openingHours": "א'-ה' 11:00-22:00 | ו' 10:00-14:00 | מוצ\"ש 18:30-23:00",
+    "category": "dairy",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-14"
   }
 ]
