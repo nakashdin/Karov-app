@@ -19904,5 +19904,547 @@
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "bbb-196d299f",
+    "name": "BBB ראש פינה",
+    "type": "restaurant",
+    "cityId": "ראש פינה",
+    "address": "התפוח 3, סנטר הגליל, ראש פינה",
+    "location": {
+      "latitude": 32.9738,
+      "longitude": 35.5512
+    },
+    "website": "https://burgus.co.il",
+    "openingHours": "א'-ה' 12:00-00:00 | ו' 11:30 עד שלוש שעות לפני כניסת שבת | ש' שעה מצאת שבת עד 23:00",
+    "category": "meat",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "bbb-d607e031",
+    "name": "BBB קריית גת",
+    "type": "restaurant",
+    "cityId": "קריית גת",
+    "address": "דרך הדרום 3, ביג סנטר, קריית גת",
+    "location": {
+      "latitude": 31.6098,
+      "longitude": 34.7671
+    },
+    "website": "https://burgus.co.il",
+    "openingHours": "א'-ה' 12:00-22:00 | ו' סגור | מוצ\"ש חצי שעה מצאת שבת עד 22:00",
+    "category": "meat",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "mosesshop-a59268a5",
+    "name": "מוזס שופ תל אביב",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "דרך מנחם בגין 144, תל אביב",
+    "location": {
+      "latitude": 32.0791,
+      "longitude": 34.7907
+    },
+    "website": "https://moses-shop.com",
+    "openingHours": "א'-ה' 11:00-23:00 | ו' 11:30-17:30 | ש' חצי שעה מצאת שבת עד 24:00",
+    "category": "meat",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "mosesshop-f2b30542",
+    "name": "מוזס שופ בת ים",
+    "type": "restaurant",
+    "cityId": "בת ים",
+    "address": "אריק איינשטיין 3, בת ים",
+    "location": {
+      "latitude": 32.0173,
+      "longitude": 34.7509
+    },
+    "website": "https://moses-shop.com",
+    "openingHours": "א'-ה' 11:30-23:30 | ו' סגור | ש' חצי שעה מצאת שבת עד 01:00",
+    "category": "meat",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "mosesshop-ce6c18ed",
+    "name": "מוזס שופ חולון",
+    "type": "restaurant",
+    "cityId": "חולון",
+    "address": "פנחס איילון 13, חולון",
+    "location": {
+      "latitude": 32.0106,
+      "longitude": 34.7707
+    },
+    "website": "https://moses-shop.com",
+    "openingHours": "א'-ה' 11:30-24:00 | ו' 11:30-15:00 | ש' חצי שעה מצאת שבת עד 24:00",
+    "category": "meat",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "mosesshop-ec2c6c86",
+    "name": "מוזס שופ ראשון לציון",
+    "type": "restaurant",
+    "cityId": "ראשון לציון",
+    "address": "רבי יהודה הנשיא 1, ראשון לציון",
+    "location": {
+      "latitude": 31.9707,
+      "longitude": 34.7898
+    },
+    "website": "https://moses-shop.com",
+    "openingHours": "א'-ג' 11:00-23:30 | ד'-ה' 11:00-24:00 | ו' 11:00-16:00 | ש' 20:00-24:00",
+    "category": "meat",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "mosesshop-c4b9fcb4",
+    "name": "מוזס שופ סביון",
+    "type": "restaurant",
+    "cityId": "סביון",
+    "address": "השקמה 1, סביון",
+    "location": {
+      "latitude": 32.0332,
+      "longitude": 34.8816
+    },
+    "website": "https://moses-shop.com",
+    "openingHours": "א'-ה' 11:00-23:30 | ו' 11:00-17:30 | ש' חצי שעה מצאת שבת עד 01:00",
+    "category": "meat",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "mosesshop-8b6f127f",
+    "name": "מוזס שופ ראש העין",
+    "type": "restaurant",
+    "cityId": "ראש העין",
+    "address": "יגאל אלון 22, מרכז שפיר, ראש העין",
+    "location": {
+      "latitude": 32.0951,
+      "longitude": 34.96
+    },
+    "website": "https://moses-shop.com",
+    "openingHours": "א'-ה' 11:30-24:00 | ו' 11:30-16:00 | ש' חצי שעה מצאת שבת עד 24:00",
+    "category": "meat",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "mosesshop-2d73ba8d",
+    "name": "מוזס שופ הוד השרון",
+    "type": "restaurant",
+    "cityId": "הוד השרון",
+    "address": "זבוטינסקי 3, הוד השרון",
+    "location": {
+      "latitude": 32.1512,
+      "longitude": 34.8944
+    },
+    "website": "https://moses-shop.com",
+    "openingHours": "א'-ד' 11:00-23:00 | ה' 11:00-24:00 | ו' 11:00-17:00 | ש' מצאת שבת עד 24:00",
+    "category": "meat",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "mosesshop-f01bc4ac",
+    "name": "מוזס שופ רעננה",
+    "type": "restaurant",
+    "cityId": "רעננה",
+    "address": "סשה ארגוב 23, רעננה",
+    "location": {
+      "latitude": 32.1877,
+      "longitude": 34.8706
+    },
+    "website": "https://moses-shop.com",
+    "openingHours": "א'-ה' 11:00-24:30 | ו' 11:00-15:00 | ש' חצי שעה מצאת שבת עד 24:30",
+    "category": "meat",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "mosesshop-414adc62",
+    "name": "מוזס שופ הרצליה",
+    "type": "restaurant",
+    "cityId": "הרצליה",
+    "address": "אריק איינשטיין 1, הרצליה",
+    "location": {
+      "latitude": 32.1655,
+      "longitude": 34.8386
+    },
+    "website": "https://moses-shop.com",
+    "openingHours": "א'-ג' 11:00-01:00 | ד'-ה' 11:00-02:00 | ו' 11:00-15:00 | ש' שעה מצאת שבת עד 02:00",
+    "category": "meat",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "mosesshop-f5c2dd8a",
+    "name": "מוזס שופ צורן",
+    "type": "restaurant",
+    "cityId": "צורן",
+    "address": "שדרות יצחק רבין 38, מרכז רוטשטיין, צורן",
+    "location": {
+      "latitude": 32.2153,
+      "longitude": 34.9247
+    },
+    "website": "https://moses-shop.com",
+    "openingHours": "א'-ג' 11:30-23:00 | ד'-ה' 11:30-23:30 | ו' 11:00-16:00 | ש' חצי שעה מצאת שבת עד 01:00",
+    "category": "meat",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "mosesshop-35f79753",
+    "name": "מוזס שופ חדרה",
+    "type": "restaurant",
+    "cityId": "חדרה",
+    "address": "גמלא 3, סנטר פארק, חדרה",
+    "location": {
+      "latitude": 32.4419,
+      "longitude": 34.9174
+    },
+    "website": "https://moses-shop.com",
+    "openingHours": "א'-ה' 11:30-01:00 | ו' 11:30-16:00 | ש' שעה מצאת שבת עד 01:00",
+    "category": "meat",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "mosesshop-89734acd",
+    "name": "מוזס שופ קריית אתא",
+    "type": "restaurant",
+    "cityId": "קריית אתא",
+    "address": "דרך חיפה 32, קניון שער הצפון, קריית אתא",
+    "location": {
+      "latitude": 32.8114,
+      "longitude": 35.1077
+    },
+    "website": "https://moses-shop.com",
+    "openingHours": "א'-ה' 11:00-22:30 | ו' 11:00-14:30 | ש' חצי שעה מצאת שבת עד 22:30",
+    "category": "meat",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "mosesshop-16c5f92d",
+    "name": "מוזס שופ אשדוד",
+    "type": "restaurant",
+    "cityId": "אשדוד",
+    "address": "מנגו 4, אשדוד",
+    "location": {
+      "latitude": 31.8067,
+      "longitude": 34.6579
+    },
+    "website": "https://moses-shop.com",
+    "openingHours": "א'-ד' 11:00-23:00 | ה' 11:00-23:30 | ו' 11:00-14:30 | ש' חצי שעה מצאת שבת עד 24:30",
+    "category": "meat",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "mosesshop-42867636",
+    "name": "מוזס שופ דימונה",
+    "type": "restaurant",
+    "cityId": "דימונה",
+    "address": "פרץ סנטר 1, דימונה",
+    "location": {
+      "latitude": 31.0699,
+      "longitude": 35.0327
+    },
+    "website": "https://moses-shop.com",
+    "openingHours": "א'-ד' 11:00-23:30 | ה' 11:00-24:00 | ו' 11:00-15:00 | ש' מצאת שבת עד 24:00",
+    "category": "meat",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "mosesshop-f3a0a414",
+    "name": "מוזס שופ באר שבע",
+    "type": "restaurant",
+    "cityId": "באר שבע",
+    "address": "ראובן רובין 1, באר שבע",
+    "location": {
+      "latitude": 31.2415,
+      "longitude": 34.8038
+    },
+    "website": "https://moses-shop.com",
+    "openingHours": "א'-ד' 11:00-00:00 | ה' 11:00-01:00 | ו' 11:00-16:00 | ש' חצי שעה מצאת שבת עד 01:00",
+    "category": "meat",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "cafecafe-4c5adc4c",
+    "name": "קפה קפה גבעת שמואל",
+    "type": "restaurant",
+    "cityId": "גבעת שמואל",
+    "address": "קניון גבעת שמואל, גבעת שמואל",
+    "phone": "03-717-2454",
+    "location": {
+      "latitude": 32.0811,
+      "longitude": 34.8548
+    },
+    "website": "https://cafecafe.co.il",
+    "openingHours": "א'-ה' 08:30-23:00 | ו' 08:00 עד שלוש שעות לפני כניסת שבת | מוצ\"ש שעה וחצי לאחר צאת שבת עד 24:00",
+    "category": "dairy",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "cafecafe-62b8584d",
+    "name": "קפה קפה תל אביב עזריאלי",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "מגדלי עזריאלי, דרך מנחם בגין 132, תל אביב",
+    "phone": "03-609-4770",
+    "location": {
+      "latitude": 32.0742,
+      "longitude": 34.7924
+    },
+    "website": "https://cafecafe.co.il",
+    "openingHours": "א'-ה' 09:00-21:00 | ו' 08:00-15:00 | מוצ\"ש שעה לאחר צאת שבת עד 23:00",
+    "category": "dairy",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "cafecafe-5c2f2139",
+    "name": "קפה קפה בת ים טיילת",
+    "type": "restaurant",
+    "cityId": "בת ים",
+    "address": "בן גוריון 81, טיילת, בת ים",
+    "phone": "054-644-4825",
+    "location": {
+      "latitude": 32.0168,
+      "longitude": 34.7521
+    },
+    "website": "https://cafecafe.co.il",
+    "openingHours": "א'-ה' 08:00-00:00 | ו' 08:00 עד שעתיים לפני כניסת שבת | מוצ\"ש שעה לאחר יציאת שבת עד 00:00",
+    "category": "dairy",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "cafecafe-4ffa66b3",
+    "name": "קפה קפה אשדוד ביג פאשן",
+    "type": "restaurant",
+    "cityId": "אשדוד",
+    "address": "מתחם ביג פאשן, אשדוד",
+    "phone": "08-915-9656",
+    "location": {
+      "latitude": 31.8018,
+      "longitude": 34.6597
+    },
+    "website": "https://cafecafe.co.il",
+    "openingHours": "א'-ה' 09:30 עד אחרון הלקוחות | ו' 08:30-13:30 | ש' שעה לאחר צאת שבת עד אחרון הלקוחות",
+    "category": "dairy",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "cafecafe-f4d3714f",
+    "name": "קפה קפה מגדל העמק",
+    "type": "restaurant",
+    "cityId": "מגדל העמק",
+    "address": "שאול עמור 77, מתחם פרץ סנטר, מגדל העמק",
+    "phone": "04-602-3535",
+    "location": {
+      "latitude": 32.6781,
+      "longitude": 35.2385
+    },
+    "website": "https://cafecafe.co.il",
+    "openingHours": "א'-ה' 08:00-00:00 | ו' 08:00 עד שעה לפני כניסת שבת | מוצ\"ש שעה לאחר צאת שבת עד אחרון הלקוחות",
+    "category": "dairy",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "cafecafe-51daae8d",
+    "name": "קפה קפה נתיבות",
+    "type": "restaurant",
+    "cityId": "נתיבות",
+    "address": "בעלי המלאכה 203, נתיבות",
+    "phone": "08-992-0808",
+    "location": {
+      "latitude": 31.4218,
+      "longitude": 34.5882
+    },
+    "website": "https://cafecafe.co.il",
+    "openingHours": "א'-ה' 08:00-00:00 | ו' 08:00-15:00 | ש' שעה לאחר כניסת שבת עד אחרון הלקוחות",
+    "category": "dairy",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "cafecafe-888f4111",
+    "name": "קפה קפה דימונה",
+    "type": "restaurant",
+    "cityId": "דימונה",
+    "address": "קניון פרץ סנטר 14, דימונה",
+    "phone": "08-669-8040",
+    "location": {
+      "latitude": 31.0695,
+      "longitude": 35.0335
+    },
+    "website": "https://cafecafe.co.il",
+    "openingHours": "א'-ה' 08:00 עד אחרון הלקוחות | ו' 08:00 עד שלוש שעות לפני כניסת שבת | מוצ\"ש שעה לאחר צאת שבת עד אחרון הלקוחות",
+    "category": "dairy",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "cafecafe-f2d1ffaf",
+    "name": "קפה קפה נהריה",
+    "type": "restaurant",
+    "cityId": "נהריה",
+    "address": "הגעתון 35, נהריה",
+    "phone": "04-951-2350",
+    "location": {
+      "latitude": 33.0077,
+      "longitude": 35.0965
+    },
+    "website": "https://cafecafe.co.il",
+    "openingHours": "א'-ה' 08:00 עד אחרון הסועדים | ו' 08:00 עד שעה לפני כניסת שבת | ש' חצי שעה לאחר צאת שבת עד אחרון הסועדים",
+    "category": "dairy",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "cafecafe-ce29d0fc",
+    "name": "קפה קפה קריית ים",
+    "type": "restaurant",
+    "cityId": "קריית ים",
+    "address": "האירוס 1, ליד תחנת דלק סונול, קריית ים",
+    "phone": "04-870-4296",
+    "location": {
+      "latitude": 32.85,
+      "longitude": 35.07
+    },
+    "website": "https://cafecafe.co.il",
+    "openingHours": "א'-ה' 07:30 עד אחרון הלקוחות | ו' 07:30 עד שעה לפני כניסת שבת | ש' חצי שעה לאחר צאת שבת עד אחרון הלקוחות",
+    "category": "dairy",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "cafecafe-ebc5d550",
+    "name": "קפה קפה חולון וולפסון",
+    "type": "restaurant",
+    "cityId": "חולון",
+    "address": "בית חולים וולפסון, מרכז GO, חולון",
+    "phone": "054-477-8245",
+    "location": {
+      "latitude": 32.0228,
+      "longitude": 34.7793
+    },
+    "website": "https://cafecafe.co.il",
+    "openingHours": "א'-ה' 06:00-23:00 | ו' 06:00-16:00 | ש' סגור",
+    "category": "dairy",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "cafecafe-1f024114",
+    "name": "קפה קפה בקעת הירדן",
+    "type": "restaurant",
+    "cityId": "בקעת הירדן",
+    "address": "מפגש הבקעה, כביש 90, בקעת הירדן",
+    "phone": "02-940-0808",
+    "location": {
+      "latitude": 32.4,
+      "longitude": 35.55
+    },
+    "locationPrecision": "city",
+    "website": "https://cafecafe.co.il",
+    "openingHours": "א'-ה' 08:00-21:00 | ו' 08:00-15:00 | ש' סגור",
+    "category": "dairy",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "cafecafe-1378bb13",
+    "name": "קפה קפה באר שבע ONE PLAZA",
+    "type": "restaurant",
+    "cityId": "באר שבע",
+    "address": "דרך חברון 133, מתחם ONE PLAZA, באר שבע",
+    "phone": "08-662-8983",
+    "location": {
+      "latitude": 31.259,
+      "longitude": 34.8048
+    },
+    "website": "https://cafecafe.co.il",
+    "openingHours": "א'-ה' 08:30-22:00 | ו' 08:00-13:30 | מוצ\"ש שעה לאחר צאת שבת עד 01:00",
+    "category": "dairy",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "cafecafe-000c1e00",
+    "name": "קפה קפה עכו",
+    "type": "restaurant",
+    "cityId": "עכו",
+    "address": "החרושת 2, קניון עזריאלי, עכו",
+    "phone": "04-850-7294",
+    "location": {
+      "latitude": 32.9281,
+      "longitude": 35.0839
+    },
+    "website": "https://cafecafe.co.il",
+    "openingHours": "א'-ה' 08:30 עד אחרון הלקוחות | ו' 08:00 עד שלוש שעות לפני כניסת שבת | ש' שעה לאחר יציאת שבת עד אחרון הלקוחות",
+    "category": "dairy",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "cafecafe-7abe4d67",
+    "name": "קפה קפה טבריה",
+    "type": "restaurant",
+    "cityId": "טבריה",
+    "address": "יהודה הלוי 1, ביג פאשן, טבריה",
+    "phone": "04-672-3400",
+    "location": {
+      "latitude": 32.7876,
+      "longitude": 35.53
+    },
+    "website": "https://cafecafe.co.il",
+    "openingHours": "א'-ה' 08:30-22:00 | ו' 09:00-14:30 | ש' שעה לאחר צאת שבת עד 23:00",
+    "category": "dairy",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
   }
 ]
