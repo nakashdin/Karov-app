@@ -125770,5 +125770,1144 @@
     "kosherType": "mehadrin",
     "openingHours": "א'-ד' 12:00-23:00",
     "source": "manual"
+  },
+  {
+    "id": "etzelhaturky-e6f0ab23",
+    "name": "אצל הטורקי אור יהודה",
+    "type": "restaurant",
+    "cityId": "אור יהודה",
+    "address": "הראשונים 2, אור יהודה",
+    "phone": "03-5331352",
+    "location": {
+      "latitude": 32.0337,
+      "longitude": 34.8591
+    },
+    "website": "https://etzelhaturky.com",
+    "openingHours": "א'-ה' 11:00-00:00 | ו' 11:00-14:00 | ש' מוצ\"ש עד 00:00",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-19"
+  },
+  {
+    "id": "turkishgrill-7b1fd1d3",
+    "name": "טורקיש גריל אור יהודה",
+    "type": "restaurant",
+    "cityId": "אור יהודה",
+    "address": "העבודה 2, אור יהודה",
+    "phone": "053-6354094",
+    "location": {
+      "latitude": 32.0319,
+      "longitude": 34.8553
+    },
+    "website": "https://www.turkishgrill.co.il",
+    "openingHours": "א'-ה' 11:00-00:00 | ו' 09:00-13:00 | ש' מוצ\"ש עד 00:00",
+    "category": "meat",
+    "kosherType": "badatz_beit_yosef",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-19"
+  },
+  {
+    "id": "ovedbakfar-80495590",
+    "name": "אצל עובד בכפר אור יהודה",
+    "type": "restaurant",
+    "cityId": "אור יהודה",
+    "address": "חטיבת אלכסנדרוני 2, אור יהודה",
+    "phone": "03-6346005",
+    "location": {
+      "latitude": 32.029,
+      "longitude": 34.8565
+    },
+    "website": "https://ovedbakfar.co.il",
+    "openingHours": "א'-ה' 11:00-00:00 | ו' 11:00-15:30 | ש' מוצ\"ש עד 01:00",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-19"
+  },
+  {
+    "id": "yashka-c302ea8e",
+    "name": "יאשקה דיזנגוף תל אביב",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "דיזנגוף 105, תל אביב",
+    "phone": "03-5057632",
+    "location": {
+      "latitude": 32.0797,
+      "longitude": 34.7736
+    },
+    "website": "https://www.yashka.co.il",
+    "openingHours": "א'-ה' 11:30-00:00 | ו' 11:30-16:00 | ש' מוצ\"ש עד 01:00",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-19"
+  },
+  {
+    "id": "yashka-b45d90bc",
+    "name": "יאשקה יהודה המכבי תל אביב",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "יהודה המכבי 62, תל אביב",
+    "phone": "03-7392212",
+    "location": {
+      "latitude": 32.088,
+      "longitude": 34.777
+    },
+    "website": "https://www.yashka.co.il",
+    "openingHours": "א'-ה' 11:00-21:00 | ו' 11:00-15:30 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-19"
+  },
+  {
+    "id": "yashka-7ee9482e",
+    "name": "יאשקה רמת אפעל",
+    "type": "restaurant",
+    "cityId": "רמת גן",
+    "address": "דרך שיבא 14, רמת אפעל",
+    "phone": "03-5057632",
+    "location": {
+      "latitude": 32.0613,
+      "longitude": 34.8695
+    },
+    "website": "https://www.yashka.co.il",
+    "openingHours": "א'-ה' 11:00-23:00 | ו' 11:00-16:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-19"
+  },
+  {
+    "id": "yashka-ad76505d",
+    "name": "יאשקה רמת השרון",
+    "type": "restaurant",
+    "cityId": "רמת השרון",
+    "address": "טרומפלדור 5, רמת השרון",
+    "phone": "03-5057632",
+    "location": {
+      "latitude": 32.1456,
+      "longitude": 34.8359
+    },
+    "website": "https://www.yashka.co.il",
+    "openingHours": "א'-ה' 11:00-20:30 | ו' 11:00-14:30 | ש' מוצ\"ש עד 23:00",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-19"
+  },
+  {
+    "id": "yashka-8cabda86",
+    "name": "יאשקה רעננה",
+    "type": "restaurant",
+    "cityId": "רעננה",
+    "address": "מרכז נווה זמר, רעננה",
+    "phone": "03-5057632",
+    "location": {
+      "latitude": 32.179,
+      "longitude": 34.865
+    },
+    "website": "https://www.yashka.co.il",
+    "openingHours": "א'-ה' 11:00-22:00 | ו' 10:00-15:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-19"
+  },
+  {
+    "id": "yashka-5da6b584",
+    "name": "יאשקה כפר סבא",
+    "type": "restaurant",
+    "cityId": "כפר סבא",
+    "address": "גלגלי הפלדה 4, כפר סבא",
+    "phone": "03-5057632",
+    "location": {
+      "latitude": 32.173,
+      "longitude": 34.887
+    },
+    "website": "https://www.yashka.co.il",
+    "openingHours": "א'-ה' 11:00-00:00 | ו' 10:30-15:30 | ש' מוצ\"ש עד 01:30",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-19"
+  },
+  {
+    "id": "yashka-3b44620d",
+    "name": "יאשקה פתח תקווה",
+    "type": "restaurant",
+    "cityId": "פתח תקווה",
+    "address": "גיסין 15, פתח תקווה",
+    "phone": "03-5057632",
+    "location": {
+      "latitude": 32.0817,
+      "longitude": 34.891
+    },
+    "website": "https://www.yashka.co.il",
+    "openingHours": "א'-ד' 11:00-23:00 | ה' 11:00-00:00 | ו' 11:00-15:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-19"
+  },
+  {
+    "id": "yashka-80b8737d",
+    "name": "יאשקה ראשון לציון",
+    "type": "restaurant",
+    "cityId": "ראשון לציון",
+    "address": "הסוכה 14, ראשון לציון",
+    "phone": "03-5057632",
+    "location": {
+      "latitude": 31.9716,
+      "longitude": 34.8098
+    },
+    "website": "https://www.yashka.co.il",
+    "openingHours": "א'-ה' 11:00-23:00 | ו' סגור | ש' מוצ\"ש עד 23:30",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-19"
+  },
+  {
+    "id": "yashka-f02f5cce",
+    "name": "יאשקה נתניה",
+    "type": "restaurant",
+    "cityId": "נתניה",
+    "address": "קניון אלון, קריית השרון, נתניה",
+    "phone": "03-5057632",
+    "location": {
+      "latitude": 32.2945,
+      "longitude": 34.8585
+    },
+    "website": "https://www.yashka.co.il",
+    "openingHours": "א'-ה' 11:00-19:30 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-19"
+  },
+  {
+    "id": "manual-falafel-baribua-ashdod",
+    "name": "פלאפל בריבוע",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "מנגו 4, אשדוד",
+    "cityId": "אשדוד",
+    "location": {
+      "latitude": 31.8093,
+      "longitude": 34.6508
+    },
+    "phone": "077-3034158",
+    "website": "https://falafelbaribua.co.il",
+    "instagram": "https://www.instagram.com/falafel_baribua",
+    "facebook": "https://www.facebook.com/falafelbaribua",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 10:00-21:00; ו' 10:00-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-falafel-baribua-beit-oved",
+    "name": "פלאפל בריבוע בית עובד",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "צומת בית עובד, תחנת דלק סונול",
+    "cityId": "בית עובד",
+    "location": {
+      "latitude": 31.8978,
+      "longitude": 34.8127
+    },
+    "phone": "08-6989253",
+    "website": "https://falafelbaribua.co.il",
+    "instagram": "https://www.instagram.com/falafel_baribua",
+    "facebook": "https://www.facebook.com/falafelbaribua",
+    "certifiedBy": "כשרות מקומית",
+    "kosherType": "regular",
+    "openingHours": "א'-ה' 09:00-21:00; ו' 09:00-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-falafel-baribua-givat-shmuel",
+    "name": "פלאפל בריבוע גבעת שמואל",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "יוני נתניהו 23, גבעת שמואל",
+    "cityId": "גבעת שמואל",
+    "location": {
+      "latitude": 32.0773,
+      "longitude": 34.8438
+    },
+    "phone": "03-5320033",
+    "website": "https://falafelbaribua.co.il",
+    "instagram": "https://www.instagram.com/falafel_baribua",
+    "facebook": "https://www.facebook.com/falafelbaribua",
+    "certifiedBy": "מועצה דתית גבעת שמואל",
+    "kosherType": "regular",
+    "openingHours": "א'-ה' 09:30-21:00; ו' 09:00-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-falafel-baribua-holon",
+    "name": "פלאפל בריבוע חולון",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "פנחס איילון 13, חולון",
+    "cityId": "חולון",
+    "location": {
+      "latitude": 32.0143,
+      "longitude": 34.7682
+    },
+    "phone": "03-6474737",
+    "website": "https://falafelbaribua.co.il",
+    "instagram": "https://www.instagram.com/falafel_baribua",
+    "facebook": "https://www.facebook.com/falafelbaribua",
+    "certifiedBy": "כשרות מקומית",
+    "kosherType": "regular",
+    "openingHours": "א'-ה' 10:00-21:00; ו' 09:30-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-falafel-baribua-yavne",
+    "name": "פלאפל בריבוע יבנה",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "הדוגית 16, מרכז רוגובין, יבנה",
+    "cityId": "יבנה",
+    "location": {
+      "latitude": 31.8728,
+      "longitude": 34.741
+    },
+    "phone": "08-9400062",
+    "website": "https://falafelbaribua.co.il",
+    "instagram": "https://www.instagram.com/falafel_baribua",
+    "facebook": "https://www.facebook.com/falafelbaribua",
+    "certifiedBy": "כשרות מקומית",
+    "kosherType": "regular",
+    "openingHours": "א'-ה' 10:00-21:00; ו' 10:00-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-falafel-baribua-ramat-gan",
+    "name": "פלאפל בריבוע רמת גן",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "קניון מרום נווה, רמת גן",
+    "cityId": "רמת גן",
+    "location": {
+      "latitude": 32.0764,
+      "longitude": 34.8218
+    },
+    "phone": "077-9386255",
+    "website": "https://falafelbaribua.co.il",
+    "instagram": "https://www.instagram.com/falafel_baribua",
+    "facebook": "https://www.facebook.com/falafelbaribua",
+    "certifiedBy": "כשרות מקומית",
+    "kosherType": "regular",
+    "openingHours": "א'-ה' 10:00-21:00; ו' 10:00-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-falafel-baribua-netanya",
+    "name": "פלאפל בריבוע נתניה",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "טום לנטוס 26, מרכז אלון, נתניה",
+    "cityId": "נתניה",
+    "location": {
+      "latitude": 32.3187,
+      "longitude": 34.8568
+    },
+    "phone": "054-9440505",
+    "website": "https://falafelbaribua.co.il",
+    "instagram": "https://www.instagram.com/falafel_baribua",
+    "facebook": "https://www.facebook.com/falafelbaribua",
+    "certifiedBy": "כשרות מקומית",
+    "kosherType": "regular",
+    "openingHours": "א'-ה' 10:00-21:00; ו' 10:00-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-falafel-baribua-rishon-factory",
+    "name": "פלאפל בריבוע מפעל ראשון לציון",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "אליהו איתן 3, ביתן 141, ראשון לציון",
+    "cityId": "ראשון לציון",
+    "location": {
+      "latitude": 31.9698,
+      "longitude": 34.8035
+    },
+    "phone": "03-9699033",
+    "website": "https://falafelbaribua.co.il",
+    "instagram": "https://www.instagram.com/falafel_baribua",
+    "facebook": "https://www.facebook.com/falafelbaribua",
+    "certifiedBy": "מועצה דתית ראשון לציון",
+    "kosherType": "regular",
+    "openingHours": "א'-ה' 10:00-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-falafel-baribua-shoham",
+    "name": "פלאפל בריבוע שוהם",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "הדקל 30, שוהם",
+    "cityId": "שוהם",
+    "location": {
+      "latitude": 31.9967,
+      "longitude": 34.9434
+    },
+    "phone": "03-9475775",
+    "website": "https://falafelbaribua.co.il",
+    "instagram": "https://www.instagram.com/falafel_baribua",
+    "facebook": "https://www.facebook.com/falafelbaribua",
+    "certifiedBy": "כשרות מקומית",
+    "kosherType": "regular",
+    "openingHours": "א'-ה' 10:00-20:00; ו' 10:00-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-falafel-baribua-rosh-haayin",
+    "name": "פלאפל בריבוע ראש העין",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "בזק 1, ראש העין",
+    "cityId": "ראש העין",
+    "location": {
+      "latitude": 32.097,
+      "longitude": 34.9575
+    },
+    "phone": "03-9014450",
+    "website": "https://falafelbaribua.co.il",
+    "instagram": "https://www.instagram.com/falafel_baribua",
+    "facebook": "https://www.facebook.com/falafelbaribua",
+    "certifiedBy": "מועצה דתית ראש העין",
+    "kosherType": "regular",
+    "openingHours": "א'-ה' 09:30-20:00; ו' 09:30-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-falafel-baribua-rishon-rothschild",
+    "name": "פלאפל בריבוע ראשון לציון",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "רוטשילד 85, ראשון לציון",
+    "cityId": "ראשון לציון",
+    "location": {
+      "latitude": 31.964,
+      "longitude": 34.796
+    },
+    "phone": "03-9666736",
+    "website": "https://falafelbaribua.co.il",
+    "instagram": "https://www.instagram.com/falafel_baribua",
+    "facebook": "https://www.facebook.com/falafelbaribua",
+    "certifiedBy": "מועצה דתית ראשון לציון",
+    "kosherType": "regular",
+    "openingHours": "א'-ה' 09:00-21:00; ו' 09:00-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-falafel-baribua-rehovot",
+    "name": "פלאפל בריבוע רחובות",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "הכרמל 76, אחוזת הנשיא, רחובות",
+    "cityId": "רחובות",
+    "location": {
+      "latitude": 31.8992,
+      "longitude": 34.8073
+    },
+    "phone": "077-9386118",
+    "website": "https://falafelbaribua.co.il",
+    "instagram": "https://www.instagram.com/falafel_baribua",
+    "facebook": "https://www.facebook.com/falafelbaribua",
+    "certifiedBy": "מועצה דתית רחובות",
+    "kosherType": "regular",
+    "openingHours": "א'-ה' 10:00-21:00; ו' 10:00-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-falafel-baribua-ramat-hasharon",
+    "name": "פלאפל בריבוע רמת השרון",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "סוקולוב 34, רמת השרון",
+    "cityId": "רמת השרון",
+    "location": {
+      "latitude": 32.1491,
+      "longitude": 34.8329
+    },
+    "phone": "03-5490779",
+    "website": "https://falafelbaribua.co.il",
+    "instagram": "https://www.instagram.com/falafel_baribua",
+    "facebook": "https://www.facebook.com/falafelbaribua",
+    "certifiedBy": "כשרות מקומית",
+    "kosherType": "regular",
+    "openingHours": "א'-ה' 09:30-21:00; ו' 09:30-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-falafel-baribua-tzoran",
+    "name": "פלאפל בריבוע צורן",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "שדרות יצחק רבין 38, מרכז מסחרי, צורן",
+    "cityId": "צורן",
+    "location": {
+      "latitude": 32.2112,
+      "longitude": 34.9345
+    },
+    "phone": "077-9386313",
+    "website": "https://falafelbaribua.co.il",
+    "instagram": "https://www.instagram.com/falafel_baribua",
+    "facebook": "https://www.facebook.com/falafelbaribua",
+    "certifiedBy": "כשרות מקומית",
+    "kosherType": "regular",
+    "openingHours": "א'-ה' 09:30-21:00; ו' 09:00-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-falafel-baribua-paz-rupin",
+    "name": "פלאפל בריבוע פז רופין",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "תחנת פז רופין, כביש חדרה-בית ליד",
+    "cityId": "רופין",
+    "location": {
+      "latitude": 32.2478,
+      "longitude": 34.9512
+    },
+    "phone": "050-7825257",
+    "website": "https://falafelbaribua.co.il",
+    "instagram": "https://www.instagram.com/falafel_baribua",
+    "facebook": "https://www.facebook.com/falafelbaribua",
+    "certifiedBy": "כשרות מקומית",
+    "kosherType": "regular",
+    "openingHours": "א'-ה' 09:00-21:00; ו' 09:00-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-falafel-baribua-kfar-yarok",
+    "name": "פלאפל בריבוע הכפר הירוק",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "משה סנה 199, הכפר הירוק, רמת השרון",
+    "cityId": "רמת השרון",
+    "location": {
+      "latitude": 32.1643,
+      "longitude": 34.8512
+    },
+    "website": "https://falafelbaribua.co.il",
+    "instagram": "https://www.instagram.com/falafel_baribua",
+    "facebook": "https://www.facebook.com/falafelbaribua",
+    "certifiedBy": "כשרות מקומית",
+    "kosherType": "regular",
+    "openingHours": "א'-ה' 09:00-21:00; ו' 09:00-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-falafel-baribua-paz-nachlat-yehuda",
+    "name": "פלאפל בריבוע פז נחלת יהודה",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "תחנת פז נחלת יהודה, ראשון לציון",
+    "cityId": "ראשון לציון",
+    "location": {
+      "latitude": 31.978,
+      "longitude": 34.812
+    },
+    "phone": "052-8311020",
+    "website": "https://falafelbaribua.co.il",
+    "instagram": "https://www.instagram.com/falafel_baribua",
+    "facebook": "https://www.facebook.com/falafelbaribua",
+    "certifiedBy": "כשרות מקומית",
+    "kosherType": "regular",
+    "openingHours": "א'-ה' 10:00-17:00; ו' 10:00-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-4teamim-pt",
+    "name": "פלאפל 4 טעמים",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "בר כוכבא 41, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.0875,
+      "longitude": 34.8762
+    },
+    "phone": "053-7763253",
+    "website": "https://falafel4flavors.co.il",
+    "instagram": "https://www.instagram.com/falafel4flavors",
+    "facebook": "https://www.facebook.com/Falafel4Flavors",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-4teamim-yavne",
+    "name": "פלאפל 4 טעמים יבנה",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "העצמאות 9, יבנה",
+    "cityId": "יבנה",
+    "location": {
+      "latitude": 31.8737,
+      "longitude": 34.7397
+    },
+    "phone": "050-7588078",
+    "website": "https://falafel4flavors.co.il",
+    "instagram": "https://www.instagram.com/falafel4flavors",
+    "facebook": "https://www.facebook.com/Falafel4Flavors",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-4teamim-jrm-avizur",
+    "name": "פלאפל 4 טעמים ירושלים",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "אביזוהר 8, קניון רמת בית הכרם, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7601,
+      "longitude": 35.1701
+    },
+    "phone": "02-6797107",
+    "website": "https://falafel4flavors.co.il",
+    "instagram": "https://www.instagram.com/falafel4flavors",
+    "certifiedBy": "מועצה דתית ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 10:00-22:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-4teamim-jrm-givat-shaul",
+    "name": "פלאפל 4 טעמים גבעת שאול",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "בית הדפוס 12, גבעת שאול, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7752,
+      "longitude": 35.1812
+    },
+    "phone": "053-9438647",
+    "website": "https://falafel4flavors.co.il",
+    "certifiedBy": "הרב רובין מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-4teamim-rishon",
+    "name": "פלאפל 4 טעמים ראשון לציון",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "רוטשילד 68, ראשון לציון",
+    "cityId": "ראשון לציון",
+    "location": {
+      "latitude": 31.965,
+      "longitude": 34.7965
+    },
+    "phone": "03-6092265",
+    "website": "https://falafel4flavors.co.il",
+    "facebook": "https://www.facebook.com/100080331092562",
+    "certifiedBy": "מועצה דתית ראשון לציון מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-4teamim-rehovot",
+    "name": "פלאפל 4 טעמים רחובות",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "הרצל 192, רחובות",
+    "cityId": "רחובות",
+    "location": {
+      "latitude": 31.9008,
+      "longitude": 34.8048
+    },
+    "phone": "08-9466066",
+    "website": "https://falafel4flavors.co.il",
+    "certifiedBy": "כשר למהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 07:30-19:30; ו' 09:00-13:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-4teamim-tlv-yehuda-halevi",
+    "name": "פלאפל 4 טעמים תל אביב",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "יהודה הלוי 49, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0645,
+      "longitude": 34.7758
+    },
+    "phone": "052-7474346",
+    "website": "https://falafel4flavors.co.il",
+    "instagram": "https://www.instagram.com/falafel4flavors_yehudahalevi49",
+    "certifiedBy": "רבנות תל אביב",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-4teamim-tlv-ibn-gavirol",
+    "name": "פלאפל 4 טעמים אבן גבירול",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "אבן גבירול 93, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0857,
+      "longitude": 34.7806
+    },
+    "phone": "050-5560007",
+    "website": "https://falafel4flavors.co.il",
+    "facebook": "https://www.facebook.com/FALAFEL4",
+    "certifiedBy": "רבנות תל אביב",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-4teamim-tlv-karlbach",
+    "name": "פלאפל 4 טעמים קרליבך",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "קרליבך 7, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0683,
+      "longitude": 34.7876
+    },
+    "website": "https://falafel4flavors.co.il",
+    "certifiedBy": "רבנות תל אביב",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-4teamim-nes-tziona",
+    "name": "פלאפל 4 טעמים נס ציונה",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "ויצמן 6, נס ציונה",
+    "cityId": "נס ציונה",
+    "location": {
+      "latitude": 31.9297,
+      "longitude": 34.8003
+    },
+    "phone": "054-6212096",
+    "website": "https://falafel4flavors.co.il",
+    "facebook": "https://www.facebook.com/4teamimnessziona",
+    "instagram": "https://www.instagram.com/falafel4teamimnessziona",
+    "certifiedBy": "כשרות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-4teamim-raanana",
+    "name": "פלאפל 4 טעמים רעננה",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "אחוזה 80, רעננה",
+    "cityId": "רעננה",
+    "location": {
+      "latitude": 32.1831,
+      "longitude": 34.8695
+    },
+    "phone": "054-4249169",
+    "website": "https://falafel4flavors.co.il",
+    "certifiedBy": "כשרות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-4teamim-givatayim",
+    "name": "פלאפל 4 טעמים גבעתיים",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "כצנלסון 61, גבעתיים",
+    "cityId": "גבעתיים",
+    "location": {
+      "latitude": 32.0648,
+      "longitude": 34.807
+    },
+    "phone": "054-237-3511",
+    "website": "https://falafel4flavors.co.il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-falafel-hatuka-bat-yam",
+    "name": "פלאפל חתוכה",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "בלפור 122, בת ים",
+    "cityId": "בת ים",
+    "location": {
+      "latitude": 32.018,
+      "longitude": 34.7512
+    },
+    "phone": "03-5525576",
+    "instagram": "https://www.instagram.com/falafelhatuka",
+    "facebook": "https://www.facebook.com/theoriginalfalafelhatuka",
+    "certifiedBy": "רבנות בת ים מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-falafel-hatuka-pt-hahistadrut",
+    "name": "פלאפל חתוכה פתח תקווה",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "ההסתדרות 4, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.0878,
+      "longitude": 34.8785
+    },
+    "phone": "03-9308283",
+    "instagram": "https://www.instagram.com/falafelhatuka",
+    "facebook": "https://www.facebook.com/theoriginalfalafelhatuka",
+    "certifiedBy": "רבנות פתח תקווה",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-falafel-hatuka-pt-lev-hair",
+    "name": "פלאפל חתוכה פתח תקווה לב העיר",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "חיים עוזר 10, קניון לב העיר, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.084,
+      "longitude": 34.886
+    },
+    "phone": "03-9319292",
+    "instagram": "https://www.instagram.com/falafelhatuka",
+    "facebook": "https://www.facebook.com/theoriginalfalafelhatuka",
+    "certifiedBy": "רבנות פתח תקווה",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-falafel-hatuka-rosh-haayin",
+    "name": "פלאפל חתוכה ראש העין",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "וולפסון 17, ראש העין",
+    "cityId": "ראש העין",
+    "location": {
+      "latitude": 32.0965,
+      "longitude": 34.958
+    },
+    "phone": "03-9380866",
+    "instagram": "https://www.instagram.com/falafelhatuka",
+    "facebook": "https://www.facebook.com/theoriginalfalafelhatuka",
+    "certifiedBy": "מועצה דתית ראש העין",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-falafel-hatuka-raanana",
+    "name": "פלאפל חתוכה רעננה",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "אחוזה 102, רעננה",
+    "cityId": "רעננה",
+    "location": {
+      "latitude": 32.1835,
+      "longitude": 34.8685
+    },
+    "phone": "09-7402924",
+    "instagram": "https://www.instagram.com/falafelhatuka",
+    "facebook": "https://www.facebook.com/theoriginalfalafelhatuka",
+    "certifiedBy": "מועצה דתית רעננה",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-falafel-hatuka-rishon",
+    "name": "פלאפל חתוכה ראשון לציון",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "ז'בוטינסקי 16, ראשון לציון",
+    "cityId": "ראשון לציון",
+    "location": {
+      "latitude": 31.968,
+      "longitude": 34.7985
+    },
+    "phone": "03-9670631",
+    "instagram": "https://www.instagram.com/falafelhatuka",
+    "facebook": "https://www.facebook.com/theoriginalfalafelhatuka",
+    "certifiedBy": "רבנות ראשון לציון",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-falafel-hatuka-shoham",
+    "name": "פלאפל חתוכה שוהם",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "שדרות עמק איילון 30, שוהם",
+    "cityId": "שוהם",
+    "location": {
+      "latitude": 31.9967,
+      "longitude": 34.9434
+    },
+    "phone": "03-9794761",
+    "instagram": "https://www.instagram.com/falafelhatuka",
+    "facebook": "https://www.facebook.com/theoriginalfalafelhatuka",
+    "certifiedBy": "כשרות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-falafel-hatuka-tlv",
+    "name": "פלאפל חתוכה תל אביב",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "דיזינגוף 77, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0782,
+      "longitude": 34.7738
+    },
+    "phone": "03-5241740",
+    "instagram": "https://www.instagram.com/falafelhatuka",
+    "facebook": "https://www.facebook.com/theoriginalfalafelhatuka",
+    "certifiedBy": "רבנות תל אביב",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-biton-falafel-beer-yaakov",
+    "name": "הפלאפל של ביטון",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "יהלום 3, באר יעקב",
+    "cityId": "באר יעקב",
+    "location": {
+      "latitude": 31.9377,
+      "longitude": 34.8373
+    },
+    "phone": "08-617-4955",
+    "instagram": "https://www.instagram.com/hafalafel.shel.biton",
+    "facebook": "https://www.facebook.com/falafelbiton",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 10:00-20:00; ו' 10:00-14:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-falafel-zion-yehud",
+    "name": "פלאפל ציון יהוד",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "צבי ישי 14, יהוד-מונוסון",
+    "cityId": "יהוד",
+    "location": {
+      "latitude": 32.033,
+      "longitude": 34.885
+    },
+    "phone": "03-6323050",
+    "certifiedBy": "כשרות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-falafel-kaduri-hod-1",
+    "name": "פלאפל כדורי",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "דרך רמתיים 59, הוד השרון",
+    "cityId": "הוד השרון",
+    "location": {
+      "latitude": 32.1491,
+      "longitude": 34.8967
+    },
+    "phone": "050-5776158",
+    "instagram": "https://www.instagram.com/falafel.kaduri",
+    "facebook": "https://www.facebook.com/falafel.hasharon",
+    "certifiedBy": "כשרות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-falafel-kaduri-hod-2",
+    "name": "פלאפל כדורי דוד",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "דרך רמתיים 72, הוד השרון",
+    "cityId": "הוד השרון",
+    "location": {
+      "latitude": 32.1501,
+      "longitude": 34.898
+    },
+    "phone": "09-7407777",
+    "website": "https://www.falafelkaduri.com",
+    "instagram": "https://www.instagram.com/falafelkaduri",
+    "facebook": "https://www.facebook.com/falafalkaduri",
+    "certifiedBy": "כשרות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-kapao-pt",
+    "name": "קפאו",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "תוצרת הארץ 3, מתחם BSR City, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.0831,
+      "longitude": 34.8771
+    },
+    "phone": "077-3622222",
+    "website": "https://www.kapao.co.il",
+    "instagram": "https://www.instagram.com/kapao_thai_food",
+    "facebook": "https://www.facebook.com/kapaothaifood",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 12:00-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-kapao-beit-shemesh",
+    "name": "קפאו בית שמש",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "שדרות יגאל אלון 6, מתחם שערי העיר, בית שמש",
+    "cityId": "בית שמש",
+    "location": {
+      "latitude": 31.743,
+      "longitude": 34.9912
+    },
+    "phone": "02-9949080",
+    "website": "https://www.kapao.co.il",
+    "instagram": "https://www.instagram.com/kapao_thai_food",
+    "facebook": "https://www.facebook.com/kapaothaifood",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-atza-jrm-romema",
+    "name": "אצה סושי בר ירושלים",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "ירמיהו 9, רוממה, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7898,
+      "longitude": 35.2025
+    },
+    "phone": "02-5026232",
+    "website": "https://atza.co.il",
+    "instagram": "https://www.instagram.com/atza_sushi_bar",
+    "facebook": "https://www.facebook.com/atzaisrael",
+    "certifiedBy": "בד\"ץ מהדרין הרב רובין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-atza-jrm-pisgat-zeev",
+    "name": "אצה סושי בר פסגת זאב",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "משה דיין 170, פסגת זאב, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.8278,
+      "longitude": 35.239
+    },
+    "phone": "02-6466622",
+    "website": "https://atza.co.il",
+    "instagram": "https://www.instagram.com/atza_sushi_bar",
+    "facebook": "https://www.facebook.com/atzaisrael",
+    "certifiedBy": "בד\"ץ מהדרין הרב רובין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-atza-afula",
+    "name": "אצה סושי בר עפולה",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "יהושע חנקין 14, עפולה",
+    "cityId": "עפולה",
+    "location": {
+      "latitude": 32.6062,
+      "longitude": 35.2886
+    },
+    "phone": "04-6401885",
+    "website": "https://atza.co.il",
+    "instagram": "https://www.instagram.com/atza_sushi_bar",
+    "facebook": "https://www.facebook.com/atzaisrael",
+    "certifiedBy": "רבנות עפולה מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-atza-beit-shemesh",
+    "name": "אצה סושי בר בית שמש",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "יגאל אלון 1, ביג סנטר, בית שמש",
+    "cityId": "בית שמש",
+    "location": {
+      "latitude": 31.7404,
+      "longitude": 34.9893
+    },
+    "phone": "052-8350988",
+    "website": "https://atza.co.il",
+    "instagram": "https://www.instagram.com/atza_sushi_bar",
+    "facebook": "https://www.facebook.com/atzaisrael",
+    "certifiedBy": "רבנות בית שמש מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-atza-tsur-hadassah",
+    "name": "אצה סושי בר צור הדסה",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "דרור 2, צור הדסה",
+    "cityId": "צור הדסה",
+    "location": {
+      "latitude": 31.6819,
+      "longitude": 35.1217
+    },
+    "phone": "02-5447447",
+    "website": "https://atza.co.il",
+    "instagram": "https://www.instagram.com/atza_sushi_bar",
+    "facebook": "https://www.facebook.com/atzaisrael",
+    "certifiedBy": "רבנות מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-atza-ashdod",
+    "name": "אצה סושי בר אשדוד",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "הגדוד העברי 1, מתחם גן העיר, אשדוד",
+    "cityId": "אשדוד",
+    "location": {
+      "latitude": 31.8161,
+      "longitude": 34.645
+    },
+    "phone": "08-6340404",
+    "website": "https://atza.co.il",
+    "instagram": "https://www.instagram.com/atza_sushi_bar",
+    "facebook": "https://www.facebook.com/atzaisrael",
+    "certifiedBy": "רבנות אשדוד מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
   }
 ]
