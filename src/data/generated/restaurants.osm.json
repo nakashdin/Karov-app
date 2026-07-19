@@ -20546,5 +20546,1481 @@
     "kosherType": "kosher",
     "source": "manual",
     "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-3eb6dde2",
+    "name": "חומוס אליהו אור יהודה",
+    "type": "restaurant",
+    "cityId": "אור יהודה",
+    "address": "המפעל 13, אור יהודה",
+    "phone": "03-5098537",
+    "location": {
+      "latitude": 32.0361,
+      "longitude": 34.8579
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "badatz_beit_yosef",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-2dd8a1d1",
+    "name": "חומוס אליהו אזור",
+    "type": "restaurant",
+    "cityId": "אזור",
+    "address": "רחוב המצודה 8, אזור",
+    "phone": "03-7731713",
+    "location": {
+      "latitude": 31.9979,
+      "longitude": 34.8234
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-28d38008",
+    "name": "חומוס אליהו אילת",
+    "type": "restaurant",
+    "cityId": "אילת",
+    "address": "הבורסקאי 9, אזה\"ת אילת",
+    "phone": "08-9217177",
+    "location": {
+      "latitude": 29.5577,
+      "longitude": 34.9519
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-80c53ef6",
+    "name": "חומוס אליהו אלונים",
+    "type": "restaurant",
+    "cityId": "אלונים",
+    "address": "חוצות אלונים, צומת אלונים",
+    "phone": "04-6206309",
+    "location": {
+      "latitude": 32.6875,
+      "longitude": 35.1553
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-066e9f5e",
+    "name": "חומוס אליהו אריאל",
+    "type": "restaurant",
+    "cityId": "אריאל",
+    "address": "רמת הגולן 29, אריאל",
+    "phone": "077-6495160",
+    "location": {
+      "latitude": 32.1056,
+      "longitude": 35.168
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-9683773f",
+    "name": "חומוס אליהו אשדוד",
+    "type": "restaurant",
+    "cityId": "אשדוד",
+    "address": "הבנאים 7, אשדוד",
+    "phone": "08-6636368",
+    "location": {
+      "latitude": 31.8041,
+      "longitude": 34.6553
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-3cdeb1d7",
+    "name": "חומוס אליהו אשקלון",
+    "type": "restaurant",
+    "cityId": "אשקלון",
+    "address": "מרינה אשקלון",
+    "phone": "08-6166444",
+    "location": {
+      "latitude": 31.6696,
+      "longitude": 34.5714
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "rav_landa",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-027b19bf",
+    "name": "חומוס אליהו באר טוביה",
+    "type": "restaurant",
+    "cityId": "באר טוביה",
+    "address": "א. תעשייה באר טוביה, R Center",
+    "phone": "08-6536330",
+    "location": {
+      "latitude": 31.7256,
+      "longitude": 34.7408
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-fe27ceaf",
+    "name": "חומוס אליהו באר יעקב",
+    "type": "restaurant",
+    "cityId": "באר יעקב",
+    "address": "שא נס 17, קניון, באר יעקב",
+    "phone": "08-6271990",
+    "location": {
+      "latitude": 31.9364,
+      "longitude": 34.8388
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-d9b43591",
+    "name": "חומוס אליהו באר שבע מצדה",
+    "type": "restaurant",
+    "cityId": "באר שבע",
+    "address": "דרך מצדה 6, מרכז הנגב, באר שבע",
+    "phone": "077-4015344",
+    "location": {
+      "latitude": 31.253,
+      "longitude": 34.7915
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-be0ac172",
+    "name": "חומוס אליהו באר שבע פז צפון",
+    "type": "restaurant",
+    "cityId": "באר שבע",
+    "address": "שדרות ירושלים 2, שכונה ט', באר שבע",
+    "phone": "08-9246661",
+    "location": {
+      "latitude": 31.26,
+      "longitude": 34.798
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-b699ec7d",
+    "name": "חומוס אליהו בית השיטה",
+    "type": "restaurant",
+    "cityId": "בית השיטה",
+    "address": "תחנת דלק דור אלון, כניסה לקיבוץ בית השיטה",
+    "phone": "04-6332290",
+    "location": {
+      "latitude": 32.5564,
+      "longitude": 35.4292
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-8c9c4317",
+    "name": "חומוס אליהו בית שאן",
+    "type": "restaurant",
+    "cityId": "בית שאן",
+    "address": "היצירה 4, בית שאן",
+    "phone": "04-6737373",
+    "location": {
+      "latitude": 32.4983,
+      "longitude": 35.4967
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-972893cb",
+    "name": "חומוס אליהו בית שמש",
+    "type": "restaurant",
+    "cityId": "בית שמש",
+    "address": "שד' יגאל אלון 2, תחנת דלק פז, בית שמש",
+    "phone": "02-5782197",
+    "location": {
+      "latitude": 31.7523,
+      "longitude": 34.9902
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-b0e47fd5",
+    "name": "חומוס אליהו בית שמש סאן מול",
+    "type": "restaurant",
+    "cityId": "בית שמש",
+    "address": "האמוראים 2, סאן מול, בית שמש",
+    "phone": "052-5118990",
+    "location": {
+      "latitude": 31.745,
+      "longitude": 34.995
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-a78cdd62",
+    "name": "חומוס אליהו בני ברק",
+    "type": "restaurant",
+    "cityId": "בני ברק",
+    "address": "הירקון 10, בני ברק",
+    "phone": "03-5229909",
+    "location": {
+      "latitude": 32.0835,
+      "longitude": 34.8338
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-0d264ccb",
+    "name": "חומוס אליהו בנימינה",
+    "type": "restaurant",
+    "cityId": "בנימינה",
+    "address": "השריג 2, מתחם \"הפיל\", בנימינה",
+    "phone": "04-6561516",
+    "location": {
+      "latitude": 32.5206,
+      "longitude": 34.944
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-7812319a",
+    "name": "חומוס אליהו בת ים",
+    "type": "restaurant",
+    "cityId": "בת ים",
+    "address": "הרב ניסנבאום 37, בת ים",
+    "phone": "03-5093683",
+    "location": {
+      "latitude": 32.0157,
+      "longitude": 34.7524
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-431e1473",
+    "name": "חומוס אליהו גבעת שאול ירושלים",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "כנפי נשרים 24, גבעת שאול, ירושלים",
+    "phone": "077-2302445",
+    "location": {
+      "latitude": 31.7864,
+      "longitude": 35.1878
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-88c52b4b",
+    "name": "חומוס אליהו גוש עציון",
+    "type": "restaurant",
+    "cityId": "גוש עציון",
+    "address": "צומת גוש עציון",
+    "phone": "02-5821655",
+    "location": {
+      "latitude": 31.63,
+      "longitude": 35.1125
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-35942b8e",
+    "name": "חומוס אליהו גן יבנה",
+    "type": "restaurant",
+    "cityId": "גן יבנה",
+    "address": "תחנת דלק דור אלון, גן יבנה",
+    "phone": "054-5852397",
+    "location": {
+      "latitude": 31.7916,
+      "longitude": 34.7066
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-31a46eb5",
+    "name": "חומוס אליהו גשר הזיו",
+    "type": "restaurant",
+    "cityId": "גשר הזיו",
+    "address": "תחנת דלק דור אלון, כניסה לקיבוץ גשר הזיו",
+    "phone": "04-6475581",
+    "location": {
+      "latitude": 33.04,
+      "longitude": 35.26
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-3d7591e7",
+    "name": "חומוס אליהו דימונה",
+    "type": "restaurant",
+    "cityId": "דימונה",
+    "address": "קניון פרץ סנטר, דימונה",
+    "phone": "08-8666900",
+    "location": {
+      "latitude": 31.0699,
+      "longitude": 35.0327
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "badatz_beit_yosef",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-0f76a36b",
+    "name": "חומוס אליהו הרצליה פיתוח",
+    "type": "restaurant",
+    "cityId": "הרצליה",
+    "address": "משכית 32, הרצליה פיתוח",
+    "phone": "09-9736397",
+    "location": {
+      "latitude": 32.1655,
+      "longitude": 34.8381
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-ac534296",
+    "name": "חומוס אליהו הרצליה שער העיר",
+    "type": "restaurant",
+    "cityId": "הרצליה",
+    "address": "בן גוריון 22, שער העיר, הרצליה",
+    "phone": "09-8877846",
+    "location": {
+      "latitude": 32.168,
+      "longitude": 34.845
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-5f8b63b1",
+    "name": "חומוס אליהו חדרה",
+    "type": "restaurant",
+    "cityId": "חדרה",
+    "address": "מתחם מול החוף וילג', חדרה",
+    "phone": "04-9080809",
+    "location": {
+      "latitude": 32.4331,
+      "longitude": 34.9188
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-cde55b5a",
+    "name": "חומוס אליהו חולון",
+    "type": "restaurant",
+    "cityId": "חולון",
+    "address": "גולדה מאיר 7, קניון עזריאלי, חולון",
+    "phone": "03-5088849",
+    "location": {
+      "latitude": 32.0167,
+      "longitude": 34.7781
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-990ffffa",
+    "name": "חומוס אליהו טבריה עלית",
+    "type": "restaurant",
+    "cityId": "טבריה",
+    "address": "הניאון 4, תחנת הדלק ארזים, טבריה עילית",
+    "phone": "04-6999778",
+    "location": {
+      "latitude": 32.76,
+      "longitude": 35.525
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-09016a67",
+    "name": "חומוס אליהו טבריה הגליל",
+    "type": "restaurant",
+    "cityId": "טבריה",
+    "address": "רחוב הגליל 10, טבריה",
+    "phone": "04-6277888",
+    "location": {
+      "latitude": 32.7946,
+      "longitude": 35.5303
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-b9ae2913",
+    "name": "חומוס אליהו טירת הכרמל",
+    "type": "restaurant",
+    "cityId": "טירת הכרמל",
+    "address": "קרן היסוד 2, טירת הכרמל",
+    "phone": "04-6951549",
+    "location": {
+      "latitude": 32.77,
+      "longitude": 34.97
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-9de799e4",
+    "name": "חומוס אליהו יוקנעם",
+    "type": "restaurant",
+    "cityId": "יוקנעם",
+    "address": "תחנת דלק, פארק תעשייה יוקנעם",
+    "phone": "04-9890916",
+    "location": {
+      "latitude": 32.6567,
+      "longitude": 35.1073
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-1093a397",
+    "name": "חומוס אליהו ים המלח עין בוקק",
+    "type": "restaurant",
+    "cityId": "ים המלח",
+    "address": "קניונית עין בוקק, ים המלח",
+    "phone": "08-6143083",
+    "location": {
+      "latitude": 31.18,
+      "longitude": 35.35
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-9da28f48",
+    "name": "חומוס אליהו ירושלים הדר תלפיות",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "גנרל פייר קניג 26, קניון הדר, ירושלים",
+    "phone": "02-6754455",
+    "location": {
+      "latitude": 31.75,
+      "longitude": 35.23
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-b0706e38",
+    "name": "חומוס אליהו ירושלים מבשרת ציון",
+    "type": "restaurant",
+    "cityId": "מבשרת ציון",
+    "address": "הראל 1, מבשרת ציון",
+    "phone": "050-9232233",
+    "location": {
+      "latitude": 31.8015,
+      "longitude": 35.1507
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-b7e53ccb",
+    "name": "חומוס אליהו ירושלים שורש",
+    "type": "restaurant",
+    "cityId": "שורש",
+    "address": "שואבה 1, שורש",
+    "phone": "077-9800380",
+    "location": {
+      "latitude": 31.79,
+      "longitude": 35.07
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-c99812ca",
+    "name": "חומוס אליהו ירושלים מחנה יהודה",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "השזיף 10, שוק מחנה יהודה, ירושלים",
+    "phone": "02-5492353",
+    "location": {
+      "latitude": 31.7844,
+      "longitude": 35.2129
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-68fbb40a",
+    "name": "חומוס אליהו ירושלים פסגת זאב",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "משה דיין 106, קניון לב הפסגה, ירושלים",
+    "phone": "02-5666882",
+    "location": {
+      "latitude": 31.8244,
+      "longitude": 35.246
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-56f3e9e9",
+    "name": "חומוס אליהו ירושלים יפו 33",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "רחוב יפו 33, ירושלים",
+    "phone": "077-9386235",
+    "location": {
+      "latitude": 31.781,
+      "longitude": 35.22
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-a37f94fe",
+    "name": "חומוס אליהו ירושלים הר חוצבים",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "קרית המדע 3, הר חוצבים, ירושלים",
+    "phone": "02-6200405",
+    "location": {
+      "latitude": 31.7975,
+      "longitude": 35.229
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-e80eee42",
+    "name": "חומוס אליהו ירושלים מלחה",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "קניון עזריאלי מלחה, ירושלים",
+    "phone": "02-6634577",
+    "location": {
+      "latitude": 31.746,
+      "longitude": 35.182
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-066bc2f1",
+    "name": "חומוס אליהו ירושלים סנטר 1",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "ירמיהו 43, קניון סנטר 1, ירושלים",
+    "phone": "077-4170400",
+    "location": {
+      "latitude": 31.797,
+      "longitude": 35.208
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-ef682c46",
+    "name": "חומוס אליהו ירושלים קניון רמות",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "שדרות גולדה מאיר 255, קניון רמות, ירושלים",
+    "phone": "073-3962571",
+    "location": {
+      "latitude": 31.816,
+      "longitude": 35.186
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-f94cf7a9",
+    "name": "חומוס אליהו ישפרו סנטר מודיעין",
+    "type": "restaurant",
+    "cityId": "מודיעין",
+    "address": "שדרות המלאכות 121, ישפרו סנטר, מודיעין",
+    "phone": "08-6665959",
+    "location": {
+      "latitude": 31.8966,
+      "longitude": 35.0026
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-cd50f9b0",
+    "name": "חומוס אליהו כפר יונה",
+    "type": "restaurant",
+    "cityId": "כפר יונה",
+    "address": "דוד בן גוריון 1, קניון כפר יונה",
+    "phone": "077-9386471",
+    "location": {
+      "latitude": 32.3162,
+      "longitude": 34.9375
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-f64c1d8d",
+    "name": "חומוס אליהו כפר סבא עתיר ידע",
+    "type": "restaurant",
+    "cityId": "כפר סבא",
+    "address": "עתיר ידע 6, תחנת דלק TEN, כפר סבא",
+    "phone": "09-8877265",
+    "location": {
+      "latitude": 32.1748,
+      "longitude": 34.9058
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-d54f17f8",
+    "name": "חומוס אליהו כפר סבא הירוקה",
+    "type": "restaurant",
+    "cityId": "כפר סבא",
+    "address": "אנגל 78, כפר סבא",
+    "phone": "09-7436666",
+    "location": {
+      "latitude": 32.18,
+      "longitude": 34.91
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-eb608932",
+    "name": "חומוס אליהו לוד",
+    "type": "restaurant",
+    "cityId": "לוד",
+    "address": "אליעזר בן הורקנוס 3, לוד",
+    "phone": "08-6608876",
+    "location": {
+      "latitude": 31.9505,
+      "longitude": 34.889
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-94b60b46",
+    "name": "חומוס אליהו מודיעין עילית",
+    "type": "restaurant",
+    "cityId": "מודיעין עילית",
+    "address": "אבני נזר 46, מתחם גרין, מודיעין עילית",
+    "phone": "079-6966969",
+    "location": {
+      "latitude": 31.931,
+      "longitude": 35.053
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "badatz_beit_yosef",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-a791df97",
+    "name": "חומוס אליהו מודיעין קייזר",
+    "type": "restaurant",
+    "cityId": "מודיעין",
+    "address": "עמק זבולון 24, קייזר סנטר, מודיעין",
+    "phone": "053-3444515",
+    "location": {
+      "latitude": 31.896,
+      "longitude": 35.009
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "badatz_beit_yosef",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-8e66d127",
+    "name": "חומוס אליהו מישור אדומים",
+    "type": "restaurant",
+    "cityId": "מעלה אדומים",
+    "address": "דקלה 5, מתחם צרפתי, מעלה אדומים",
+    "phone": "02-6455499",
+    "location": {
+      "latitude": 31.7756,
+      "longitude": 35.2966
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-58e99103",
+    "name": "חומוס אליהו מענית",
+    "type": "restaurant",
+    "cityId": "מענית",
+    "address": "תחנת דלק דור אלון, מענית",
+    "phone": "04-6712552",
+    "location": {
+      "latitude": 32.47,
+      "longitude": 35
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-ca231f87",
+    "name": "חומוס אליהו נס ציונה",
+    "type": "restaurant",
+    "cityId": "נס ציונה",
+    "address": "אברהם פצורניק 5, פארק המדע, נס ציונה",
+    "phone": "077-9386474",
+    "location": {
+      "latitude": 31.9283,
+      "longitude": 34.7975
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-f4c7b3d3",
+    "name": "חומוס אליהו נשר",
+    "type": "restaurant",
+    "cityId": "נשר",
+    "address": "המסילה 17, נשר",
+    "phone": "04-6055552",
+    "location": {
+      "latitude": 32.77,
+      "longitude": 35.04
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-c936bd02",
+    "name": "חומוס אליהו נתיבות",
+    "type": "restaurant",
+    "cityId": "נתיבות",
+    "address": "בעלי המלאכה 7ב, בית זגורי, נתיבות",
+    "phone": "08-6644133",
+    "location": {
+      "latitude": 31.4213,
+      "longitude": 34.5873
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-3555af25",
+    "name": "חומוס אליהו נתניה",
+    "type": "restaurant",
+    "cityId": "נתניה",
+    "address": "שכטרמן 9, אזור התעשייה הישן, נתניה",
+    "phone": "09-8992155",
+    "location": {
+      "latitude": 32.3215,
+      "longitude": 34.8532
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-eda8ce5d",
+    "name": "חומוס אליהו עלי",
+    "type": "restaurant",
+    "cityId": "עלי",
+    "address": "מתחם תחנת הדלק, עלי",
+    "phone": "055-9499368",
+    "location": {
+      "latitude": 32.068,
+      "longitude": 35.29
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-3b22651e",
+    "name": "חומוס אליהו פתח תקווה",
+    "type": "restaurant",
+    "cityId": "פתח תקווה",
+    "address": "תוצרת הארץ 3, פתח תקווה",
+    "phone": "077-9386212",
+    "location": {
+      "latitude": 32.0908,
+      "longitude": 34.8828
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-4abc73c0",
+    "name": "חומוס אליהו צמח טבריה",
+    "type": "restaurant",
+    "cityId": "צמח",
+    "address": "צומת צמח",
+    "phone": "04-8555100",
+    "location": {
+      "latitude": 32.71,
+      "longitude": 35.57
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-9b2415fc",
+    "name": "חומוס אליהו צפת",
+    "type": "restaurant",
+    "cityId": "צפת",
+    "address": "דרך השוקולד 6, צפת",
+    "phone": "04-7791937",
+    "location": {
+      "latitude": 32.9647,
+      "longitude": 35.4956
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-31ffb381",
+    "name": "חומוס אליהו קדימה",
+    "type": "restaurant",
+    "cityId": "קדימה",
+    "address": "המעלית 2, קדימה",
+    "phone": "09-8933040",
+    "location": {
+      "latitude": 32.27,
+      "longitude": 34.91
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-b2047b0e",
+    "name": "חומוס אליהו קריית מוצקין",
+    "type": "restaurant",
+    "cityId": "קריית מוצקין",
+    "address": "מתחם האומנים, קריית מוצקין",
+    "phone": "077-3034157",
+    "location": {
+      "latitude": 32.8338,
+      "longitude": 35.0809
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-07d070c3",
+    "name": "חומוס אליהו קריית אונו",
+    "type": "restaurant",
+    "cityId": "קריית אונו",
+    "address": "השדרה האקדמאית 1, קריית אונו",
+    "phone": "03-6438467",
+    "location": {
+      "latitude": 32.0539,
+      "longitude": 34.8681
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-7aad520c",
+    "name": "חומוס אליהו קריית אתא",
+    "type": "restaurant",
+    "cityId": "קריית אתא",
+    "address": "העצמאות 28, קריית אתא",
+    "phone": "04-9075555",
+    "location": {
+      "latitude": 32.8094,
+      "longitude": 35.1044
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-44000812",
+    "name": "חומוס אליהו קריית גת",
+    "type": "restaurant",
+    "cityId": "קריית גת",
+    "address": "שדרות צורן, ליד HP, קריית גת",
+    "phone": "08-8607706",
+    "location": {
+      "latitude": 31.6093,
+      "longitude": 34.7699
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-6135ef42",
+    "name": "חומוס אליהו קריית שמונה",
+    "type": "restaurant",
+    "cityId": "קריית שמונה",
+    "address": "שד' תל-חי 61, קריית שמונה",
+    "phone": "04-6217602",
+    "location": {
+      "latitude": 33.2073,
+      "longitude": 35.5706
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-a52a0220",
+    "name": "חומוס אליהו קרני שומרון",
+    "type": "restaurant",
+    "cityId": "קרני שומרון",
+    "address": "קניון קרני שומרון, שדרות רחבעם",
+    "phone": "077-9386463",
+    "location": {
+      "latitude": 32.1719,
+      "longitude": 35.1233
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-f9f8b629",
+    "name": "חומוס אליהו ראש העין",
+    "type": "restaurant",
+    "cityId": "ראש העין",
+    "address": "זהרה אלפסיה 3, שפיר סנטר, ראש העין",
+    "phone": "077-9800491",
+    "location": {
+      "latitude": 32.0951,
+      "longitude": 34.9479
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-89bfc582",
+    "name": "חומוס אליהו ראש פינה",
+    "type": "restaurant",
+    "cityId": "ראש פינה",
+    "address": "התפוח 3, ראש פינה",
+    "phone": "04-8583310",
+    "location": {
+      "latitude": 32.9722,
+      "longitude": 35.5469
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-b36aaa34",
+    "name": "חומוס אליהו ראשון לציון קניון הזהב",
+    "type": "restaurant",
+    "cityId": "ראשון לציון",
+    "address": "קניון הזהב, קומה 2, ראשון לציון",
+    "phone": "03-6893499",
+    "location": {
+      "latitude": 31.98,
+      "longitude": 34.8125
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "badatz_beit_yosef",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-cbfda644",
+    "name": "חומוס אליהו ראשון לציון ראשונים",
+    "type": "restaurant",
+    "cityId": "ראשון לציון",
+    "address": "שדרות נים 2, קניון עזריאלי ראשונים, ראשון לציון",
+    "phone": "03-9615677",
+    "location": {
+      "latitude": 31.973,
+      "longitude": 34.8075
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-94a9f491",
+    "name": "חומוס אליהו רחובות",
+    "type": "restaurant",
+    "cityId": "רחובות",
+    "address": "קניון עופר, רחובות",
+    "phone": "077-3034049",
+    "location": {
+      "latitude": 31.8928,
+      "longitude": 34.8113
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "badatz_beit_yosef",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-1c38b42f",
+    "name": "חומוס אליהו רמלה",
+    "type": "restaurant",
+    "cityId": "רמלה",
+    "address": "שדרות דוד רזיאל 1, קניון עזריאלי, רמלה",
+    "phone": "08-6216216",
+    "location": {
+      "latitude": 31.9293,
+      "longitude": 34.8724
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-1486cd29",
+    "name": "חומוס אליהו רמת גן קניון איילון",
+    "type": "restaurant",
+    "cityId": "רמת גן",
+    "address": "קניון איילון, רמת גן",
+    "phone": "03-6441163",
+    "location": {
+      "latitude": 32.084,
+      "longitude": 34.826
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-10fbda3f",
+    "name": "חומוס אליהו רמת גן בורסה",
+    "type": "restaurant",
+    "cityId": "רמת גן",
+    "address": "שלום זיסמן 3, מתחם הבורסה, רמת גן",
+    "phone": "03-7755731",
+    "location": {
+      "latitude": 32.087,
+      "longitude": 34.834
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-57d2d2fe",
+    "name": "חומוס אליהו רעננה",
+    "type": "restaurant",
+    "cityId": "רעננה",
+    "address": "התעשייה 3, רעננה",
+    "phone": "09-8877013",
+    "location": {
+      "latitude": 32.1848,
+      "longitude": 34.8715
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-6afe8ed0",
+    "name": "חומוס אליהו שדרות",
+    "type": "restaurant",
+    "cityId": "שדרות",
+    "address": "פריז 2, שדרות",
+    "phone": "077-9386450",
+    "location": {
+      "latitude": 31.529,
+      "longitude": 34.601
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "badatz_beit_yosef",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-4855b0b9",
+    "name": "חומוס אליהו שוהם",
+    "type": "restaurant",
+    "cityId": "שוהם",
+    "address": "עמק איילון 32, בית התרבות, שוהם",
+    "phone": "03-7756882",
+    "location": {
+      "latitude": 31.9951,
+      "longitude": 34.9398
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-c6391682",
+    "name": "חומוס אליהו תל אביב היכל מנורה",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "יגאל אלון 51, תל אביב",
+    "phone": "050-4020507",
+    "location": {
+      "latitude": 32.062,
+      "longitude": 34.7898
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "badatz_beit_yosef",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-4fc45a3e",
+    "name": "חומוס אליהו תל אביב שוק הפשפשים",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "עמיעד 14, שוק הפשפשים, תל אביב",
+    "phone": "03-9599188",
+    "location": {
+      "latitude": 32.0564,
+      "longitude": 34.7581
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-6bc66df6",
+    "name": "חומוס אליהו תל אביב דיזינגוף סנטר",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "דיזינגוף סנטר, בניין A קומה -1, תל אביב",
+    "phone": "03-6358509",
+    "location": {
+      "latitude": 32.0756,
+      "longitude": 34.7735
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-5f4d4a7d",
+    "name": "חומוס אליהו תל אביב פלורנטין",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "מעון 4, פלורנטין, תל אביב",
+    "phone": "03-6967700",
+    "location": {
+      "latitude": 32.056,
+      "longitude": 34.7724
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuseliyahu-cdd2c353",
+    "name": "חומוס אליהו תל אביב שרונה",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "מגן קלמן אלוף 5, שרונה מרקט, תל אביב",
+    "phone": "054-5723838",
+    "location": {
+      "latitude": 32.0699,
+      "longitude": 34.788
+    },
+    "locationPrecision": "city",
+    "website": "https://www.humus-eli-yahoo.com",
+    "category": "parve",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
   }
 ]
