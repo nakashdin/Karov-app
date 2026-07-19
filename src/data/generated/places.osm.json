@@ -124100,5 +124100,374 @@
     "kosherType": "mehadrin",
     "openingHours": "א'-ה' 10:00-21:00",
     "source": "manual"
+  },
+  {
+    "id": "manual-hayekev-netanya",
+    "name": "היקב",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "גד מכנס 9, נתניה",
+    "cityId": "נתניה",
+    "location": {
+      "latitude": 32.3315,
+      "longitude": 34.8481
+    },
+    "phone": "09-8622220",
+    "website": "https://www.hayekev.co.il",
+    "instagram": "https://www.instagram.com/hayekev.netanya",
+    "facebook": "https://www.facebook.com/hayekev.il",
+    "certifiedBy": "רבנות נתניה מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 08:30-23:00; ו' 08:30-שעתיים לפני שבת",
+    "source": "manual"
+  },
+  {
+    "id": "manual-alonzo-netanya",
+    "name": "אלונזו",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "כיכר העצמאות 13, נתניה",
+    "cityId": "נתניה",
+    "location": {
+      "latitude": 32.3298,
+      "longitude": 34.8559
+    },
+    "phone": "09-7996267",
+    "website": "https://www.alonzo-kikar.com",
+    "instagram": "https://www.instagram.com/alonzo_netanya",
+    "facebook": "https://www.facebook.com/alonzonetanya",
+    "certifiedBy": "רבנות נתניה מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 12:00-22:00; ו' 12:00-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-the-view-netanya",
+    "name": "The View",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "גד מכנס 6, נתניה",
+    "cityId": "נתניה",
+    "location": {
+      "latitude": 32.3313,
+      "longitude": 34.8478
+    },
+    "phone": "09-7404477",
+    "website": "https://www.theview.co.il",
+    "instagram": "https://www.instagram.com/the_view_rest",
+    "certifiedBy": "רבנות נתניה מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-mehadrin-al-haesh-netanya",
+    "name": "מהדרין על האש",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "לילנבלום 9, נתניה",
+    "cityId": "נתניה",
+    "location": {
+      "latitude": 32.3308,
+      "longitude": 34.8565
+    },
+    "phone": "09-7717056",
+    "certifiedBy": "כשרות הרב מחפוד",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 09:00-18:00; ו' 09:00-13:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-just-meat-netanya",
+    "name": "Just Meat",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "הארזים 25, מרכז יהלום, נתניה",
+    "cityId": "נתניה",
+    "location": {
+      "latitude": 32.3228,
+      "longitude": 34.8645
+    },
+    "phone": "054-4516830",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-mifgash-haarazim-netanya",
+    "name": "מפגש הארזים",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "פתח תקווה 82, נתניה",
+    "cityId": "נתניה",
+    "location": {
+      "latitude": 32.3127,
+      "longitude": 34.865
+    },
+    "phone": "09-8872078",
+    "certifiedBy": "רבנות נתניה מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-la-toscana-raanana",
+    "name": "לה טוסקנה",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "השוק 2, רעננה",
+    "cityId": "רעננה",
+    "location": {
+      "latitude": 32.1829,
+      "longitude": 34.8702
+    },
+    "phone": "077-7005851",
+    "website": "https://www.la-toscana.co.il",
+    "instagram": "https://www.instagram.com/latoscana_israel",
+    "facebook": "https://www.facebook.com/latoscana.israel",
+    "certifiedBy": "רבנות רעננה מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ד' 12:30-23:00; ה' 12:30-00:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hatemaniya-raanana",
+    "name": "התימניה",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "החרושת 2, א.ת. רעננה",
+    "cityId": "רעננה",
+    "location": {
+      "latitude": 32.1808,
+      "longitude": 34.8755
+    },
+    "phone": "09-7486647",
+    "website": "https://hatemaniya.co.il",
+    "certifiedBy": "כשרות הרב מחפוד",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hummus-eliyahu-raanana",
+    "name": "חומוס אליהו רעננה",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "התעשייה 3, א.ת. רעננה",
+    "cityId": "רעננה",
+    "location": {
+      "latitude": 32.18,
+      "longitude": 34.8761
+    },
+    "phone": "09-8877013",
+    "certifiedBy": "רבנות רעננה מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-luzzatto-raanana",
+    "name": "לוצאטו איטלקי",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "אחוזה 77, רעננה",
+    "cityId": "רעננה",
+    "location": {
+      "latitude": 32.1841,
+      "longitude": 34.869
+    },
+    "phone": "09-8900081",
+    "certifiedBy": "רבנות רעננה מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-nobo-herzliya",
+    "name": "נובו NOBO",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "וינגייט 42, הרצליה",
+    "cityId": "הרצליה",
+    "location": {
+      "latitude": 32.1697,
+      "longitude": 34.8338
+    },
+    "phone": "077-7296368",
+    "website": "https://nobo-sushi.co.il",
+    "instagram": "https://www.instagram.com/nobo_herzliya",
+    "facebook": "https://www.facebook.com/share/189uNpUhsD",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ד' 15:00-23:00; ה' 15:00-00:00; ו' 11:00-שעה לפני שבת",
+    "source": "manual"
+  },
+  {
+    "id": "manual-sunset-kitchen-herzliya",
+    "name": "סאנסט קיטשן",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "אלי לנדאו 60, הרצליה פיתוח",
+    "cityId": "הרצליה",
+    "location": {
+      "latitude": 32.1669,
+      "longitude": 34.8312
+    },
+    "phone": "09-3813813",
+    "website": "https://sunsetkitchen.co.il",
+    "instagram": "https://www.instagram.com/sunsetkitchen__",
+    "facebook": "https://www.facebook.com/sunset.kitchen.herzliya",
+    "certifiedBy": "רבנות הרצליה מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 13:00-23:00; ו' 12:00-16:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-al-hamayim-herzliya",
+    "name": "על המים",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "רמת ים 2, הרצליה",
+    "cityId": "הרצליה",
+    "location": {
+      "latitude": 32.1637,
+      "longitude": 34.8268
+    },
+    "phone": "073-2241513",
+    "certifiedBy": "רבנות הרצליה מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 13:00-22:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-arianna-kfar-saba",
+    "name": "אריאנה בשר ויין",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "עתיר ידע 4, כפר סבא",
+    "cityId": "כפר סבא",
+    "location": {
+      "latitude": 32.1783,
+      "longitude": 34.9098
+    },
+    "phone": "077-4447039",
+    "website": "https://arianna.co.il",
+    "instagram": "https://www.instagram.com/arianna.rest",
+    "certifiedBy": "רבנות כפר סבא מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ד' 17:00-00:00; ה' 17:00-00:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-sabino-kfar-saba",
+    "name": "סטקיית סבינו",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "רמז 18, כפר סבא",
+    "cityId": "כפר סבא",
+    "location": {
+      "latitude": 32.1801,
+      "longitude": 34.907
+    },
+    "phone": "09-7602647",
+    "certifiedBy": "רבנות כפר סבא מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 11:30-22:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-king-meat-hod-hasharon",
+    "name": "קינג מיט",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "דרך רמתיים 65, הוד השרון",
+    "cityId": "הוד השרון",
+    "location": {
+      "latitude": 32.1491,
+      "longitude": 34.896
+    },
+    "instagram": "https://www.instagram.com/king_meat_hds",
+    "certifiedBy": "רבנות הוד השרון מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-tabunbon-hod-hasharon",
+    "name": "הטאבון בון בון",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "דרך רמתיים 90, הוד השרון",
+    "cityId": "הוד השרון",
+    "location": {
+      "latitude": 32.1476,
+      "longitude": 34.897
+    },
+    "phone": "09-7401168",
+    "website": "https://tabunbon.com",
+    "certifiedBy": "רבנות הוד השרון מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 11:00-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-b12prime-rosh-haayin",
+    "name": "B12 Prime",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "שלמה המלך 2, ראש העין",
+    "cityId": "ראש העין",
+    "location": {
+      "latitude": 32.0957,
+      "longitude": 34.9575
+    },
+    "phone": "050-7690099",
+    "website": "https://b12prime.co.il",
+    "certifiedBy": "רבנות ראש העין מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 11:00-23:00; ו' 08:00-13:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pizza-story-rosh-haayin",
+    "name": "פיצה סטורי ראש העין",
+    "type": "fast_food",
+    "category": "dairy",
+    "address": "הרב שלום שבזי 30, ראש העין",
+    "cityId": "ראש העין",
+    "location": {
+      "latitude": 32.0959,
+      "longitude": 34.958
+    },
+    "certifiedBy": "רבנות ראש העין מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-tzarum-ramat-hasharon",
+    "name": "צארום",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "סוקולוב 35, רמת השרון",
+    "cityId": "רמת השרון",
+    "location": {
+      "latitude": 32.148,
+      "longitude": 34.834
+    },
+    "phone": "055-4577158",
+    "certifiedBy": "רבנות הרצליה מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 11:00-19:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-jimmy-hagadol-ramat-hasharon",
+    "name": "ג'ימי הגדול",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "שבטי ישראל 102, רמת השרון",
+    "cityId": "רמת השרון",
+    "location": {
+      "latitude": 32.152,
+      "longitude": 34.8383
+    },
+    "certifiedBy": "רבנות רמת השרון מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 11:00-18:00",
+    "source": "manual"
   }
 ]
