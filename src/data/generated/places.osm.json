@@ -124469,5 +124469,898 @@
     "kosherType": "mehadrin",
     "openingHours": "א'-ה' 11:00-18:00",
     "source": "manual"
+  },
+  {
+    "id": "manual-hacaverim-pt",
+    "name": "החברים",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "ז'בוטינסקי 61, בסר סיטי, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.084,
+      "longitude": 34.887
+    },
+    "phone": "077-9386161",
+    "website": "https://hahaverim.co.il",
+    "instagram": "https://www.instagram.com/hahaverim_grill",
+    "facebook": "https://www.facebook.com/Hahaverim.Jerusalem",
+    "certifiedBy": "כשרות הרב מחפוד",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 12:00-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-campania-rishon",
+    "name": "קמפניה",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "ברשבסקי 8, ראשון לציון",
+    "cityId": "ראשון לציון",
+    "location": {
+      "latitude": 31.964,
+      "longitude": 34.798
+    },
+    "phone": "03-9037667",
+    "website": "https://campania.rest.co.il",
+    "instagram": "https://www.instagram.com/campania_restaurant",
+    "facebook": "https://www.facebook.com/CAMPANIARestaurant",
+    "certifiedBy": "כשרות הרב מחפוד",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-vsavata-tlv",
+    "name": "ושבעת וברכת",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "אצ\"ל 47, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.085,
+      "longitude": 34.773
+    },
+    "phone": "03-639-0677",
+    "website": "https://savata.co.il",
+    "certifiedBy": "כשרות הרב מחפוד",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-schnitzel-volano-bnei-brak",
+    "name": "שניצל וולנו",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "מצדה 6, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.0833,
+      "longitude": 34.834
+    },
+    "phone": "058-7999457",
+    "certifiedBy": "כשרות הרב לנדא",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hummus-eliyahu-bnei-brak",
+    "name": "חומוס אליהו",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "הירקון 10, תחנת דלק אמיר, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.0795,
+      "longitude": 34.8265
+    },
+    "phone": "03-5229909",
+    "website": "https://www.humus-eli-yahoo.com",
+    "instagram": "https://www.instagram.com/hummus.eliyahu.official",
+    "facebook": "https://www.facebook.com/hummus.eliyahu",
+    "certifiedBy": "כשרות הרב מחפוד",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 10:00-22:00; ו' 09:00-14:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-halo-teman-jabotinsky-bb",
+    "name": "הלו תימן",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "ז'בוטינסקי 108, פינת סוקולוב, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.088,
+      "longitude": 34.827
+    },
+    "phone": "03-6777105",
+    "certifiedBy": "כשרות הרב מחפוד",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-burgerim-givat-shmuel",
+    "name": "בורגרים",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "מנחם בגין 38, גבעת שמואל",
+    "cityId": "גבעת שמואל",
+    "location": {
+      "latitude": 32.0741,
+      "longitude": 34.8482
+    },
+    "phone": "03-7705656",
+    "website": "https://www.iburgerim.co.il",
+    "instagram": "https://www.instagram.com/burgerim_il",
+    "facebook": "https://www.facebook.com/iBurgerim",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-burgerim-yehud",
+    "name": "בורגרים יהוד",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "אברהם גירון 28, יהוד",
+    "cityId": "יהוד",
+    "location": {
+      "latitude": 32.031,
+      "longitude": 34.887
+    },
+    "phone": "03-6006223",
+    "website": "https://www.iburgerim.co.il",
+    "instagram": "https://www.instagram.com/burgerim_il",
+    "facebook": "https://www.facebook.com/iBurgerim",
+    "certifiedBy": "כשרות הרב מחפוד",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-memphis-pt",
+    "name": "ממפיס פתח תקווה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "תוצרת הארץ 17, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.0831,
+      "longitude": 34.8771
+    },
+    "phone": "077-980-0311",
+    "website": "https://www.memphis.co.il",
+    "instagram": "https://www.instagram.com/memphis_burger",
+    "facebook": "https://www.facebook.com/memphiskosherburger",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ד' 12:00-23:00; ה' 12:00-01:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-gan-sipur-cafe-pt",
+    "name": "קפה גן סיפור",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "בזל 2, פארק בילינסון, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.095,
+      "longitude": 34.875
+    },
+    "phone": "072-3360999",
+    "website": "https://www.gansipur.co.il",
+    "instagram": "https://www.instagram.com/cafe_gan_sipur",
+    "facebook": "https://www.facebook.com/cafegansipur",
+    "certifiedBy": "רבנות פתח תקווה מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 12:00-24:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-mucha-bnei-brak",
+    "name": "מוצ'ה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "בן גוריון 13, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.079,
+      "longitude": 34.8295
+    },
+    "phone": "03-6575251",
+    "website": "https://mucha.co.il",
+    "instagram": "https://www.instagram.com/muchapizza.il",
+    "facebook": "https://www.facebook.com/MuchaPizzail",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 11:00-24:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-mucha-pt",
+    "name": "מוצ'ה פתח תקווה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "שחם 17, יכין סנטר, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.084,
+      "longitude": 34.88
+    },
+    "website": "https://mucha.co.il",
+    "instagram": "https://www.instagram.com/muchapizza.il",
+    "facebook": "https://www.facebook.com/MuchaPizzail",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ד' 10:45-23:00; ה' 10:45-23:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-habakeria-holon",
+    "name": "הבייקריה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "חיים ויצמן 58, חולון",
+    "cityId": "חולון",
+    "location": {
+      "latitude": 32.009,
+      "longitude": 34.775
+    },
+    "phone": "03-6414260",
+    "instagram": "https://www.instagram.com/bakeria_holon",
+    "facebook": "https://www.facebook.com/bakeriaholon",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 09:00-22:00; ו' 08:00-14:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-sorrento-rishon",
+    "name": "סורנטו",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "ברשבסקי 8, ראשון לציון",
+    "cityId": "ראשון לציון",
+    "location": {
+      "latitude": 31.964,
+      "longitude": 34.7978
+    },
+    "phone": "03-6543207",
+    "website": "https://sorento.rest.co.il",
+    "instagram": "https://www.instagram.com/sorento_restaurant",
+    "facebook": "https://www.facebook.com/sorentorest",
+    "certifiedBy": "חתם סופר פתח תקווה",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 12:00-23:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aresto-caesarea",
+    "name": "ארסטו",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "נמל קיסריה, קיסריה",
+    "cityId": "קיסריה",
+    "location": {
+      "latitude": 32.498,
+      "longitude": 34.902
+    },
+    "phone": "04-6363456",
+    "website": "https://aresto-restaurant.co.il",
+    "instagram": "https://www.instagram.com/aresto.restaurant",
+    "facebook": "https://www.facebook.com/Arestorest",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 09:00-23:00; ו' 09:00-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-brunchos-kiryat-ekron",
+    "name": "בראנצ'וס קריית עקרון",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "אברהם יאיר שטרן, קריית עקרון",
+    "cityId": "קריית עקרון",
+    "location": {
+      "latitude": 31.862,
+      "longitude": 34.818
+    },
+    "phone": "03-6404544",
+    "website": "https://brunchos.rest.co.il",
+    "instagram": "https://www.instagram.com/brunchos_restaurant",
+    "facebook": "https://www.facebook.com/Brunchosil",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 10:00-24:00; ו' 09:00-13:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-buono-yehud",
+    "name": "בואנו",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "מוהליבר 2ב, בית השחף, יהוד",
+    "cityId": "יהוד",
+    "location": {
+      "latitude": 32.033,
+      "longitude": 34.883
+    },
+    "phone": "03-5361522",
+    "website": "https://www.bueno-rest.co.il",
+    "instagram": "https://www.instagram.com/bueno_yahud",
+    "facebook": "https://www.facebook.com/buenoyahud",
+    "certifiedBy": "בד\"ץ אגודת ישראל",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 19:00-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-taboon-maya-bb",
+    "name": "הטאבון של מאיה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "ז'בוטינסקי 88, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.0862,
+      "longitude": 34.8282
+    },
+    "phone": "03-6185577",
+    "instagram": "https://www.instagram.com/maya_bakery_il",
+    "certifiedBy": "כשרות הרב לנדא",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 07:00-01:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-cafe-itamar-givat-shmuel",
+    "name": "קפה איתמר",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "הנשיא 77, גבעת שמואל",
+    "cityId": "גבעת שמואל",
+    "location": {
+      "latitude": 32.0744,
+      "longitude": 34.8502
+    },
+    "phone": "053-9377664",
+    "instagram": "https://www.instagram.com/itamarcafe",
+    "facebook": "https://www.facebook.com/itamarcafe",
+    "certifiedBy": "בד\"ץ אגודת ישראל",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-cafe-hola-pt",
+    "name": "קפה הולה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "העלייה השנייה 1, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.0868,
+      "longitude": 34.876
+    },
+    "phone": "03-9097701",
+    "website": "https://www.cafehola.co.il",
+    "instagram": "https://www.instagram.com/cafe.hola1",
+    "facebook": "https://www.facebook.com/p/Cafe-Hola-61568943681336",
+    "certifiedBy": "כשרות הרב מחפוד",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 08:00-24:00; ו' 08:00-14:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-bon-cafe-bb",
+    "name": "בון קפה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "ז'בוטינסקי 9, מגדל הכשרת הישוב, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.0816,
+      "longitude": 34.8324
+    },
+    "phone": "03-651-1806",
+    "website": "https://boncafe.co.il",
+    "instagram": "https://www.instagram.com/boncafebb",
+    "certifiedBy": "בד\"ץ קהילות",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 09:00-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-biscotti-bb",
+    "name": "ביסקוטי בני ברק",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "הירקון 67, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.0812,
+      "longitude": 34.8264
+    },
+    "phone": "03-5704015",
+    "website": "https://www.biscotti.co.il",
+    "instagram": "https://www.instagram.com/biscotti_il",
+    "facebook": "https://www.facebook.com/BiscottiTastes",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 07:00-21:00; ו' 07:00-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-biscotti-pt",
+    "name": "ביסקוטי פתח תקווה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "העצמאות 104, נווה עוז, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.084,
+      "longitude": 34.881
+    },
+    "phone": "03-9444149",
+    "website": "https://www.biscotti.co.il",
+    "instagram": "https://www.instagram.com/biscotti_il",
+    "facebook": "https://www.facebook.com/BiscottiTastes",
+    "certifiedBy": "רבנות פתח תקווה מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 07:30-22:00; ו' 07:30-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-kitkat-tlv",
+    "name": "קיטקט",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "שארית ישראל 31, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.062,
+      "longitude": 34.777
+    },
+    "phone": "03-5555039",
+    "instagram": "https://www.instagram.com/kitkat.fairytale",
+    "facebook": "https://www.facebook.com/kitkat.fairytale",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 08:00-21:00; ו' 08:00-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-cafe-lion-or-yehuda",
+    "name": "קפה ליון",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "יצחק רבין 5, מתחם מיני, אור יהודה",
+    "cityId": "אור יהודה",
+    "location": {
+      "latitude": 32.027,
+      "longitude": 34.856
+    },
+    "phone": "03-721-4979",
+    "instagram": "https://www.instagram.com/cafelyon.oryehuda",
+    "facebook": "https://www.facebook.com/Lyon.OR.YEHUDA",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 09:00-19:30; ו' 09:00-13:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-maafiyat-amit-beerot-yitzhak",
+    "name": "מאפיית עמית",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "בארות יצחק",
+    "cityId": "בארות יצחק",
+    "location": {
+      "latitude": 32.016,
+      "longitude": 34.918
+    },
+    "phone": "053-3535841",
+    "website": "https://www.amit-pastry.com",
+    "instagram": "https://www.instagram.com/amit_bakery_",
+    "facebook": "https://www.facebook.com/amitbakery1",
+    "certifiedBy": "כשרות הרב לנדא",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 08:00-22:00; ו' 06:30-14:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-waffle-bar-rosh-haayin",
+    "name": "וופל בר ראש העין",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "העבודה 14, ראש העין",
+    "cityId": "ראש העין",
+    "location": {
+      "latitude": 32.0966,
+      "longitude": 34.9582
+    },
+    "phone": "03-6404544",
+    "website": "https://www.waffle-bar.co.il",
+    "instagram": "https://www.instagram.com/wafflebar_official",
+    "facebook": "https://www.facebook.com/MainWaffleBar",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 10:00-24:00; ו' 09:00-13:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-cafe-111-ramat-hasharon",
+    "name": "קפה 111",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "סוקולוב 111, רמת השרון",
+    "cityId": "רמת השרון",
+    "location": {
+      "latitude": 32.1512,
+      "longitude": 34.8351
+    },
+    "phone": "03-5402227",
+    "website": "https://cafe111.co.il",
+    "instagram": "https://www.instagram.com/_cafe111_",
+    "facebook": "https://www.facebook.com/cafe111",
+    "certifiedBy": "חתם סופר פתח תקווה",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 08:00-24:00; ו' 08:00-שעה לפני שבת",
+    "source": "manual"
+  },
+  {
+    "id": "manual-cafe-joe-yehud",
+    "name": "קפה ג'ו",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "דרך משה דיין 3, סביונים, יהוד",
+    "cityId": "יהוד",
+    "location": {
+      "latitude": 32.0283,
+      "longitude": 34.887
+    },
+    "phone": "03-5360643",
+    "website": "https://www.joe.co.il",
+    "instagram": "https://www.instagram.com/cafejoe",
+    "facebook": "https://www.facebook.com/cafejoe",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 08:00-21:30; ו' 08:00-14:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-biga-pt-kfar-ganim",
+    "name": "ביגה פ\"ת כפר גנים",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "העצמאות 63, קניון כפר גנים, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.0895,
+      "longitude": 34.8897
+    },
+    "phone": "03-750-8555",
+    "website": "https://biga-bakery.co.il",
+    "instagram": "https://www.instagram.com/biga_il",
+    "facebook": "https://www.facebook.com/Biga.Bakery.Coffee",
+    "certifiedBy": "רבנות פתח תקווה מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 07:00-22:00; ו' 07:00-13:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-biga-pt-hagadol",
+    "name": "ביגה פ\"ת קניון הגדול",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "ז'בוטינסקי 72, קניון הגדול, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.083,
+      "longitude": 34.89
+    },
+    "phone": "03-633-1312",
+    "website": "https://biga-bakery.co.il",
+    "instagram": "https://www.instagram.com/biga_il",
+    "facebook": "https://www.facebook.com/Biga.Bakery.Coffee",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 08:00-23:00; ו' 08:00-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-biga-holon",
+    "name": "ביגה חולון",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "גולדה מאיר 7, קניון עזריאלי, חולון",
+    "cityId": "חולון",
+    "location": {
+      "latitude": 32.0093,
+      "longitude": 34.7772
+    },
+    "phone": "03-7297896",
+    "website": "https://biga-bakery.co.il",
+    "instagram": "https://www.instagram.com/biga_il",
+    "facebook": "https://www.facebook.com/Biga.Bakery.Coffee",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 08:00-22:30; ו' 08:00-שעה לפני שבת",
+    "source": "manual"
+  },
+  {
+    "id": "manual-biga-tlv-sarona",
+    "name": "ביגה תל אביב שרונה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "אליעזר קפלן 26, מרכז שרונה, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0632,
+      "longitude": 34.7907
+    },
+    "phone": "03-624-4652",
+    "website": "https://biga-bakery.co.il",
+    "instagram": "https://www.instagram.com/biga_il",
+    "facebook": "https://www.facebook.com/Biga.Bakery.Coffee",
+    "certifiedBy": "רבנות תל אביב מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 09:00-22:00; ו' 09:00-13:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-biga-rishon",
+    "name": "ביגה ראשון לציון",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "שדרות יוסף לישנסקי 4, קניון שבעת הכוכבים, ראשון לציון",
+    "cityId": "ראשון לציון",
+    "location": {
+      "latitude": 31.959,
+      "longitude": 34.802
+    },
+    "phone": "03-7788544",
+    "website": "https://biga-bakery.co.il",
+    "instagram": "https://www.instagram.com/biga_il",
+    "facebook": "https://www.facebook.com/Biga.Bakery.Coffee",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 08:00-23:00; ו' 08:00-13:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-sushi-time-bb",
+    "name": "סושי טיים",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "הירקון, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.0795,
+      "longitude": 34.8265
+    },
+    "phone": "03-5661535",
+    "website": "https://sushitime.co.il",
+    "instagram": "https://www.instagram.com/sushitime_restaurant",
+    "facebook": "https://www.facebook.com/sushitime1000",
+    "certifiedBy": "כשרות הרב לנדא",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 11:00-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-tokyo-sushi-ramat-gan",
+    "name": "טוקיו סושי",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "תובל 21, מתחם הבורסה, רמת גן",
+    "cityId": "רמת גן",
+    "location": {
+      "latitude": 32.068,
+      "longitude": 34.81
+    },
+    "phone": "054-2988099",
+    "website": "https://tokyosushi.co.il",
+    "instagram": "https://www.instagram.com/tokyo_sushi_bar_",
+    "certifiedBy": "רבנות רמת גן מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ד' 11:30-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-sushik26-bb",
+    "name": "סושיק 26",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "כהנמן 22, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.0804,
+      "longitude": 34.8318
+    },
+    "phone": "053-4293424",
+    "certifiedBy": "כשר למהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 11:00-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-atza-sushi-pt",
+    "name": "אצה סושי בר",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "העצמאות 65, קניון גנים, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.0901,
+      "longitude": 34.891
+    },
+    "phone": "04-3028354",
+    "website": "https://atza.co.il/pt",
+    "instagram": "https://www.instagram.com/atza_pt",
+    "facebook": "https://www.facebook.com/atzapetachtiqva",
+    "certifiedBy": "כשר למהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 12:00-22:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-jetlak-pt",
+    "name": "ג'ט לק",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "תוצרת הארץ 3, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.0831,
+      "longitude": 34.8771
+    },
+    "phone": "051-515-0046",
+    "website": "https://jetlek.co.il",
+    "instagram": "https://www.instagram.com/jetlekofficial",
+    "facebook": "https://www.facebook.com/JetLek.co.il",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ד' 12:00-00:00; ה' 12:00-01:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-golda-rosh-haayin",
+    "name": "גלידה גולדה ראש העין",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "שבזי 10, ראש העין",
+    "cityId": "ראש העין",
+    "location": {
+      "latitude": 32.0953,
+      "longitude": 34.9578
+    },
+    "phone": "03-9024405",
+    "website": "https://www.goldaglida.co.il",
+    "instagram": "https://www.instagram.com/golda.glida",
+    "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 09:00-23:00; ו' 09:00-שעה לפני שבת",
+    "source": "manual"
+  },
+  {
+    "id": "manual-golda-tlv-azrieli",
+    "name": "גלידה גולדה עזריאלי",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "מנחם בגין 132, קניון עזריאלי, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.072,
+      "longitude": 34.7912
+    },
+    "phone": "03-6960405",
+    "website": "https://www.goldaglida.co.il",
+    "instagram": "https://www.instagram.com/golda.glida",
+    "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 07:45-23:30; ו' 07:45-שעה לפני שבת",
+    "source": "manual"
+  },
+  {
+    "id": "manual-golda-tlv-yafo",
+    "name": "גלידה גולדה יפו",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "בן צבי 76, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.045,
+      "longitude": 34.758
+    },
+    "phone": "03-5211815",
+    "website": "https://www.goldaglida.co.il",
+    "instagram": "https://www.instagram.com/golda.glida",
+    "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 10:00-22:00; ו' 10:00-שעה לפני שבת",
+    "source": "manual"
+  },
+  {
+    "id": "manual-golda-or-yehuda",
+    "name": "גלידה גולדה אור יהודה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "אריק איינשטיין 1, אור יהודה",
+    "cityId": "אור יהודה",
+    "location": {
+      "latitude": 32.027,
+      "longitude": 34.858
+    },
+    "phone": "03-7797577",
+    "website": "https://www.goldaglida.co.il",
+    "instagram": "https://www.instagram.com/golda.glida",
+    "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 10:00-00:00; ו' 10:00-שעה לפני שבת",
+    "source": "manual"
+  },
+  {
+    "id": "manual-golda-ramat-gan-ayalon",
+    "name": "גלידה גולדה קניון אילון",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "דרך אבא הלל 301, קניון אילון, רמת גן",
+    "cityId": "רמת גן",
+    "location": {
+      "latitude": 32.0724,
+      "longitude": 34.8224
+    },
+    "phone": "03-5106604",
+    "website": "https://www.goldaglida.co.il",
+    "instagram": "https://www.instagram.com/golda.glida",
+    "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 08:00-23:00; ו' 09:00-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-golda-lod",
+    "name": "גלידה גולדה לוד",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "הנשיא 2, לוד",
+    "cityId": "לוד",
+    "location": {
+      "latitude": 31.9508,
+      "longitude": 34.891
+    },
+    "phone": "08-6716969",
+    "website": "https://www.goldaglida.co.il",
+    "instagram": "https://www.instagram.com/golda.glida",
+    "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 09:00-23:30; ו' 09:00-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-cremerie-de-leclair-givat-shmuel",
+    "name": "קרמרי דה ל'אקלר",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "שדרות מנחם בגין 38, קניון רוגבין, גבעת שמואל",
+    "cityId": "גבעת שמואל",
+    "location": {
+      "latitude": 32.0741,
+      "longitude": 34.8482
+    },
+    "phone": "03-517-1735",
+    "website": "https://cremeriedeleclair.co.il",
+    "instagram": "https://www.instagram.com/cremerie_de_leclair",
+    "facebook": "https://www.facebook.com/cremeriedeleclair",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 08:00-23:45; ו' 08:00-15:30",
+    "source": "manual"
   }
 ]
