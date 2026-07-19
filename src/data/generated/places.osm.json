@@ -125362,5 +125362,413 @@
     "kosherType": "mehadrin",
     "openingHours": "א'-ה' 08:00-23:45; ו' 08:00-15:30",
     "source": "manual"
+  },
+  {
+    "id": "abdalla-5b71b982",
+    "name": "עבדאלה גריל בשרים כשר",
+    "type": "restaurant",
+    "cityId": "אור יהודה",
+    "address": "המפעל 17, אור יהודה",
+    "phone": "03-5336622",
+    "location": {
+      "latitude": 32.0333,
+      "longitude": 34.8563
+    },
+    "website": "https://abdalla.co.il",
+    "openingHours": "א'-ה' 12:00-00:00 | ו' סגור | ש' מוצ\"ש עד 00:00",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-19"
+  },
+  {
+    "id": "shipudichen-7d2b6a7e",
+    "name": "שיפודי חן גבעתיים",
+    "type": "restaurant",
+    "cityId": "גבעתיים",
+    "address": "דרך השלום 53, גבעתיים",
+    "phone": "03-6717141",
+    "location": {
+      "latitude": 32.0713,
+      "longitude": 34.8132
+    },
+    "website": "https://shipudei-chen.co.il",
+    "openingHours": "א'-ה' 11:00-00:00 | ו' סגור | ש' מוצ\"ש עד 00:00",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-19"
+  },
+  {
+    "id": "shipudichen-82c4972b",
+    "name": "שיפודי חן פתח תקווה",
+    "type": "restaurant",
+    "cityId": "פתח תקווה",
+    "address": "מוטה גור 7, פתח תקווה",
+    "phone": "03-9591122",
+    "location": {
+      "latitude": 32.0836,
+      "longitude": 34.8878
+    },
+    "website": "https://shipudei-chen.co.il",
+    "openingHours": "א'-ה' 11:00-22:00 | ו' סגור | ש' מוצ\"ש עד 22:00",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-19"
+  },
+  {
+    "id": "tzahibsarim-67b0db9a",
+    "name": "צחי בשרים תל אביב",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "דרך קיבוץ גלויות 106, תל אביב",
+    "phone": "*2006",
+    "location": {
+      "latitude": 32.0461,
+      "longitude": 34.7675
+    },
+    "website": "https://tzahib.co.il",
+    "openingHours": "א'-ה' 11:00-23:00 | ו' סגור | ש' מוצ\"ש עד 00:00",
+    "category": "meat",
+    "kosherType": "badatz_beit_yosef",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-19"
+  },
+  {
+    "id": "tzahibsarim-f3e57fae",
+    "name": "צחי בשרים בת ים",
+    "type": "restaurant",
+    "cityId": "בת ים",
+    "address": "הרצל 82, בת ים",
+    "phone": "*2006",
+    "location": {
+      "latitude": 32.0143,
+      "longitude": 34.7517
+    },
+    "website": "https://tzahib.co.il",
+    "openingHours": "א'-ה' 10:00-23:00 | ו' סגור | ש' מוצ\"ש עד 00:00",
+    "category": "meat",
+    "kosherType": "badatz_beit_yosef",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-19"
+  },
+  {
+    "id": "dabush-9a61b90a",
+    "name": "דבוש שווארמה בני ברק",
+    "type": "restaurant",
+    "cityId": "בני ברק",
+    "address": "בן גוריון 1, מגדל BSR 2, בני ברק",
+    "phone": "03-6912175",
+    "location": {
+      "latitude": 32.08,
+      "longitude": 34.8347
+    },
+    "website": "https://www.dabush.co.il",
+    "openingHours": "א'-ה' 11:00-18:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-19"
+  },
+  {
+    "id": "dabush-cb70dd22",
+    "name": "דבוש שווארמה קרליבך תל אביב",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "קרליבך 1, תל אביב",
+    "phone": "052-7961919",
+    "location": {
+      "latitude": 32.0701,
+      "longitude": 34.7927
+    },
+    "website": "https://www.dabush.co.il",
+    "openingHours": "א'-ה' 11:00-22:00 | ו' סגור | ש' מוצ\"ש עד 22:00",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-19"
+  },
+  {
+    "id": "dabush-17b852d3",
+    "name": "דבוש שווארמה אבן גבירול תל אביב",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "אבן גבירול 64, תל אביב",
+    "phone": "03-6912175",
+    "location": {
+      "latitude": 32.0813,
+      "longitude": 34.781
+    },
+    "website": "https://www.dabush.co.il",
+    "openingHours": "א'-ה' 11:00-02:00 | ו' סגור | ש' מוצ\"ש עד 02:00",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-19"
+  },
+  {
+    "id": "dabush-7091d952",
+    "name": "דבוש שווארמה פתח תקווה",
+    "type": "restaurant",
+    "cityId": "פתח תקווה",
+    "address": "דרך יצחק רבין 2, פתח תקווה",
+    "phone": "052-7961919",
+    "location": {
+      "latitude": 32.0843,
+      "longitude": 34.8823
+    },
+    "website": "https://www.dabush.co.il",
+    "openingHours": "א'-ה' 11:00-22:00 | ו' סגור | ש' מוצ\"ש עד 22:00",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-19"
+  },
+  {
+    "id": "dabush-e696730e",
+    "name": "דבוש שווארמה נתניה",
+    "type": "restaurant",
+    "cityId": "נתניה",
+    "address": "הרכבת 7, נתניה",
+    "phone": "03-6912175",
+    "location": {
+      "latitude": 32.3285,
+      "longitude": 34.8568
+    },
+    "website": "https://www.dabush.co.il",
+    "openingHours": "א'-ה' 11:00-00:00 | ו' סגור | ש' מוצ\"ש עד 00:00",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-19"
+  },
+  {
+    "id": "dabush-b75376ce",
+    "name": "דבוש שווארמה חולון",
+    "type": "restaurant",
+    "cityId": "חולון",
+    "address": "דרך השבעה 20, חולון",
+    "phone": "052-7961919",
+    "location": {
+      "latitude": 32.0083,
+      "longitude": 34.779
+    },
+    "website": "https://www.dabush.co.il",
+    "openingHours": "א'-ה' 11:00-00:00 | ו' סגור | ש' מוצ\"ש עד 22:00",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-19"
+  },
+  {
+    "id": "tziposhipud-7c559c50",
+    "name": "שיפודי ציפורה בת ים",
+    "type": "restaurant",
+    "cityId": "בת ים",
+    "address": "הרב בר שאול 5, בת ים",
+    "phone": "03-6591432",
+    "location": {
+      "latitude": 32.0204,
+      "longitude": 34.7512
+    },
+    "website": "https://tsiporagroup.co.il",
+    "openingHours": "א'-ה' 11:00-00:00 | ו' סגור | ש' מוצ\"ש עד 00:00",
+    "category": "meat",
+    "kosherType": "badatz_beit_yosef",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-19"
+  },
+  {
+    "id": "tziposhipud-b17d7dcc",
+    "name": "שיפודי ציפורה תל אביב",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "אבא אחימאיר 29, מרכז אלרם, תל אביב",
+    "phone": "03-9477769",
+    "location": {
+      "latitude": 32.094,
+      "longitude": 34.7805
+    },
+    "website": "https://tsiporagroup.co.il",
+    "openingHours": "א'-ה' 12:00-23:00 | ו' סגור | ש' מוצ\"ש עד 00:00",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-19"
+  },
+  {
+    "id": "tziposhipud-e7e44912",
+    "name": "שיפודי ציפורה ראשון לציון",
+    "type": "restaurant",
+    "cityId": "ראשון לציון",
+    "address": "דוד סחרוב 26, ראשון לציון",
+    "phone": "077-9976469",
+    "location": {
+      "latitude": 31.973,
+      "longitude": 34.8034
+    },
+    "website": "https://tsiporagroup.co.il",
+    "openingHours": "א'-ה' 11:00-00:00 | ו' סגור | ש' מוצ\"ש עד 00:00",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-19"
+  },
+  {
+    "id": "tziposhipud-afa22b47",
+    "name": "שיפודי ציפורה פתח תקווה",
+    "type": "restaurant",
+    "cityId": "פתח תקווה",
+    "address": "לשם 10, מרכז יאקין, פתח תקווה",
+    "phone": "077-8037123",
+    "location": {
+      "latitude": 32.0878,
+      "longitude": 34.8872
+    },
+    "website": "https://tsiporagroup.co.il",
+    "openingHours": "א'-ה' 11:00-23:30 | ו' 11:00-14:30 | ש' מוצ\"ש עד 23:30",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-19"
+  },
+  {
+    "id": "shimoni-d006b8d9",
+    "name": "שווארמה שמעוני תל אביב",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "איינשטיין 7, רמת אביב, תל אביב",
+    "phone": "052-6895078",
+    "location": {
+      "latitude": 32.1138,
+      "longitude": 34.8083
+    },
+    "website": "https://www.instagram.com/shawarma.shimoni",
+    "openingHours": "א'-ה' 10:00-01:00 | ו' 10:00-15:30 | ש' מוצ\"ש עד 01:00",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-19"
+  },
+  {
+    "id": "manual-ruben-tlv",
+    "name": "רובן",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "בני אפרים 280, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0728,
+      "longitude": 34.7568
+    },
+    "phone": "03-6596066",
+    "website": "https://rubenisrael.co.il",
+    "certifiedBy": "רבנות תל אביב מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 12:00-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-tzlilei-haesh-bb",
+    "name": "אצל זלבוך (צלילי האש)",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "זאב ז'בוטינסקי 100, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.0888,
+      "longitude": 34.8273
+    },
+    "phone": "050-600-9797",
+    "certifiedBy": "כשרות הרב לנדא",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-memphis-lod",
+    "name": "מנפיס לוד",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "הנשיא 6, לוד",
+    "cityId": "לוד",
+    "location": {
+      "latitude": 31.9507,
+      "longitude": 34.8913
+    },
+    "phone": "1-700-700-413",
+    "certifiedBy": "כשרות הרב מחפוד",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-oshi-oshi-namal-tlv",
+    "name": "אושי אושי",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "האנגר 21, נמל תל אביב, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0962,
+      "longitude": 34.7786
+    },
+    "phone": "*6054",
+    "website": "https://oshioshi.co.il",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ד' 12:00-00:00; ה' 12:00-01:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-oshi-oshi-ramat-gan",
+    "name": "אושי אושי רמת גן",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "חיים לנדאו 7, רמת גן",
+    "cityId": "רמת גן",
+    "location": {
+      "latitude": 32.0808,
+      "longitude": 34.8153
+    },
+    "phone": "03-7522752",
+    "website": "https://oshioshi.co.il",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-oshi-oshi-holon-sokolov",
+    "name": "אושי אושי חולון סוקולוב",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "סוקולוב 49, חולון",
+    "cityId": "חולון",
+    "location": {
+      "latitude": 32.0138,
+      "longitude": 34.7742
+    },
+    "phone": "*6054",
+    "website": "https://oshioshi.co.il",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-oshi-oshi-holon-azrieli",
+    "name": "אושי אושי חולון עזריאלי",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "גולדה מאיר 7, קניון עזריאלי, חולון",
+    "cityId": "חולון",
+    "location": {
+      "latitude": 32.0093,
+      "longitude": 34.7772
+    },
+    "phone": "03-6426121",
+    "website": "https://oshioshi.co.il",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ד' 12:00-23:00",
+    "source": "manual"
   }
 ]
