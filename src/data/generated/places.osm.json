@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "facebook": "https://www.facebook.com/AromaIsrael",
     "tags": [
@@ -122359,5 +122359,563 @@
     "kosherType": "mehadrin",
     "source": "manual",
     "phone": "077-9386463"
+  },
+  {
+    "id": "manual-hachapuri-baliya-haifa",
+    "name": "חצ'פורי בעלייה",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "העליה השניה 21, בת גלים, חיפה",
+    "cityId": "חיפה",
+    "location": {
+      "latitude": 32.82,
+      "longitude": 34.989
+    },
+    "phone": "04-8877919",
+    "website": "https://www.hachapuri.info",
+    "certifiedBy": "כשר למהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 08:00-20:00; ו' 08:00-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-dontella-haifa",
+    "name": "דונטלה פיצת שף",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "נתנזון 14, חיפה",
+    "cityId": "חיפה",
+    "location": {
+      "latitude": 32.816,
+      "longitude": 34.993
+    },
+    "phone": "04-9077770",
+    "certifiedBy": "בד\"ץ",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-yehalelu-haifa",
+    "name": "יהללו",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "הרצוג 3, חיפה",
+    "cityId": "חיפה",
+    "location": {
+      "latitude": 32.81,
+      "longitude": 34.993
+    },
+    "phone": "054-8061050",
+    "certifiedBy": "בד\"ץ לנדא",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-feine-zachen-haifa",
+    "name": "פיינע זאכן",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "הרצוג 3, חיפה",
+    "cityId": "חיפה",
+    "location": {
+      "latitude": 32.81,
+      "longitude": 34.993
+    },
+    "certifiedBy": "בד\"ץ עדה חרדית",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-la-patchina-haifa",
+    "name": "לה פאצ'ינה",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "הגליל 100, חיפה",
+    "cityId": "חיפה",
+    "location": {
+      "latitude": 32.795,
+      "longitude": 34.984
+    },
+    "phone": "04-8226622",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hummus-bardichev-haifa",
+    "name": "חומוס ברדיצ'ב",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "וודג'ווד 1, מרכז הכרמל, חיפה",
+    "cityId": "חיפה",
+    "location": {
+      "latitude": 32.793,
+      "longitude": 34.987
+    },
+    "phone": "04-6574132",
+    "certifiedBy": "רב מחפוד",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-falafel-yerushalmi-haifa",
+    "name": "פלאפל ירושלמי",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "הרצל 62, חיפה",
+    "cityId": "חיפה",
+    "location": {
+      "latitude": 32.82,
+      "longitude": 34.998
+    },
+    "phone": "04-8627015",
+    "certifiedBy": "כשר למהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shela-kiryat-motzkin",
+    "name": "מסעדת שלה",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "יששכר 15, קריית מוצקין",
+    "cityId": "קריית מוצקין",
+    "location": {
+      "latitude": 32.836,
+      "longitude": 35.073
+    },
+    "phone": "04-8711411",
+    "certifiedBy": "בד\"ץ אגודת ישראל",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 11:00-23:00; ו' 08:30-17:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-atika-kiryat-bialik",
+    "name": "עתיקה",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "העמקים 1, קריית ביאליק",
+    "cityId": "קריית ביאליק",
+    "location": {
+      "latitude": 32.82,
+      "longitude": 35.076
+    },
+    "phone": "04-8402025",
+    "website": "https://atikarest.co.il",
+    "certifiedBy": "רב מחפוד",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-haagala-shawarma-kiryat-ata",
+    "name": "שווארמה העגלה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "מורדי הגיטאות 6, קריית אתא",
+    "cityId": "קריית אתא",
+    "location": {
+      "latitude": 32.796,
+      "longitude": 35.107
+    },
+    "phone": "04-8450888",
+    "website": "https://haeglakriatata.co.il",
+    "facebook": "https://www.facebook.com/ShawarmaCalf",
+    "certifiedBy": "רב מחפוד",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-kashcafe-kiryat-ata",
+    "name": "קשקפה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "העצמאות 83, קריית אתא",
+    "cityId": "קריית אתא",
+    "location": {
+      "latitude": 32.806,
+      "longitude": 35.108
+    },
+    "phone": "054-4555875",
+    "website": "https://kashcafe.co.il",
+    "certifiedBy": "רבנות קריית אתא מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-chavita-beir-kiryat-ata",
+    "name": "חויתא בעיר",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "העצמאות 23, קריית אתא",
+    "cityId": "קריית אתא",
+    "location": {
+      "latitude": 32.803,
+      "longitude": 35.106
+    },
+    "phone": "04-8455538",
+    "certifiedBy": "רבנות קריית אתא מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-laguna-tiberias",
+    "name": "לגונה",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "הבנים 2, טבריה",
+    "cityId": "טבריה",
+    "location": {
+      "latitude": 32.7948,
+      "longitude": 35.5329
+    },
+    "phone": "04-6722321",
+    "website": "https://laguna.rol.co.il",
+    "certifiedBy": "רבנות טבריה מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 11:00-23:00; ו' 11:00-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-kuzina-tiberias",
+    "name": "קוזינה",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "הבנים 24, טבריה",
+    "cityId": "טבריה",
+    "location": {
+      "latitude": 32.795,
+      "longitude": 35.5315
+    },
+    "phone": "04-6723246",
+    "website": "https://kuzina.co.il",
+    "certifiedBy": "בד\"ץ יורה דעה",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 10:00-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shipudei-haagam-tiberias",
+    "name": "שיפודי האגם",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "הירקון 1, טבריה",
+    "cityId": "טבריה",
+    "location": {
+      "latitude": 32.7953,
+      "longitude": 35.5337
+    },
+    "phone": "04-6791505",
+    "certifiedBy": "כשר למהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 10:00-24:00; ו' 10:00-16:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-beer-miriam-tiberias",
+    "name": "באר מרים",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "טיילת יגאל אלון 1, טבריה",
+    "cityId": "טבריה",
+    "location": {
+      "latitude": 32.7938,
+      "longitude": 35.5316
+    },
+    "phone": "053-7266720",
+    "certifiedBy": "רבנות טבריה מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 12:00-23:00; ו' 12:00-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-asado-dreams-tiberias",
+    "name": "אסאדו דרים",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "הבנים 17, טבריה",
+    "cityId": "טבריה",
+    "location": {
+      "latitude": 32.7948,
+      "longitude": 35.532
+    },
+    "phone": "074-7978770",
+    "certifiedBy": "כשרות הרב לנדא",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-malka-safed",
+    "name": "מלכה",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "ירושלים 59, צפת",
+    "cityId": "צפת",
+    "location": {
+      "latitude": 32.964,
+      "longitude": 35.495
+    },
+    "phone": "054-8338822",
+    "website": "https://malka-zefat.co.il",
+    "facebook": "https://www.facebook.com/malkatzfat",
+    "certifiedBy": "רב מחפוד",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 11:00-00:00; ו' 07:00-14:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-mendis-safed",
+    "name": "מנדיס",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "ירושלים 29, צפת",
+    "cityId": "צפת",
+    "location": {
+      "latitude": 32.9652,
+      "longitude": 35.497
+    },
+    "phone": "077-4108002",
+    "website": "https://mendis.co.il",
+    "certifiedBy": "בד\"ץ עדה חרדית",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ד' 13:00-23:00; ה' 13:00-00:00; ו' 09:00-17:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hashtetl-safed",
+    "name": "השטעטל",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "הרצל 22, צפת",
+    "cityId": "צפת",
+    "location": {
+      "latitude": 32.9648,
+      "longitude": 35.498
+    },
+    "phone": "04-8341950",
+    "certifiedBy": "בד\"ץ עדה חרדית",
+    "kosherType": "mehadrin",
+    "openingHours": "ה' 16:00-23:30; ו' 09:00-14:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hindik-safed",
+    "name": "הינדיק",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "אזור תעשייה, צפת",
+    "cityId": "צפת",
+    "location": {
+      "latitude": 32.9615,
+      "longitude": 35.506
+    },
+    "phone": "04-6766148",
+    "website": "https://hindik-tzfat.co.il",
+    "certifiedBy": "בד\"ץ עדה חרדית ובד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-barake-safed",
+    "name": "בארכה גחלים",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "ירושלים 71, צפת",
+    "cityId": "צפת",
+    "location": {
+      "latitude": 32.9638,
+      "longitude": 35.4945
+    },
+    "phone": "052-2098252",
+    "certifiedBy": "רב מחפוד",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-art-cafe-safed",
+    "name": "ארט קפה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "ירושלים 72, צפת",
+    "cityId": "צפת",
+    "location": {
+      "latitude": 32.9638,
+      "longitude": 35.4946
+    },
+    "phone": "04-6820928",
+    "certifiedBy": "רבנות צפת מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shaytel-nahariya",
+    "name": "מסעדת שייטל",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "כביש 4, כניסה דרומית, נהריה",
+    "cityId": "נהריה",
+    "location": {
+      "latitude": 32.99,
+      "longitude": 35.101
+    },
+    "phone": "04-9824400",
+    "certifiedBy": "כשר למהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 11:30-22:30; ו' 11:30-14:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shipudei-hapina-nahariya",
+    "name": "שיפודי הפינה",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "דרך השיירה 21, נהריה",
+    "cityId": "נהריה",
+    "location": {
+      "latitude": 33.002,
+      "longitude": 35.092
+    },
+    "phone": "053-9384910",
+    "certifiedBy": "כשר למהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 10:00-00:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hatzuk-rosh-hanikra",
+    "name": "מסעדת הצוק",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "ראש הנקרה",
+    "cityId": "נהריה",
+    "location": {
+      "latitude": 33.087,
+      "longitude": 35.105
+    },
+    "phone": "04-6016849",
+    "website": "https://hatzuk.co.il",
+    "instagram": "https://www.instagram.com/hatsuk_chef",
+    "facebook": "https://www.facebook.com/Hazukchefrestaurant",
+    "certifiedBy": "כשר למהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א' 11:00-23:00; ב'-ד' 11:00-22:00; ה' 11:00-23:00; ו' 10:00-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-algo-dulce-akko",
+    "name": "אלגו דולסה",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "עוזי חיטמן 3א, עכו",
+    "cityId": "עכו",
+    "location": {
+      "latitude": 32.933,
+      "longitude": 35.079
+    },
+    "phone": "04-8727276",
+    "website": "https://algodulce.co.il",
+    "instagram": "https://www.instagram.com/algo.dulce.il",
+    "facebook": "https://www.facebook.com/algo.dulce.sweet",
+    "certifiedBy": "כשר למהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 08:00-00:00; ו' 08:00-14:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-al-hamangal-afula",
+    "name": "על המנגל",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "הנשיא ויצמן 17, עפולה",
+    "cityId": "עפולה",
+    "location": {
+      "latitude": 32.607,
+      "longitude": 35.287
+    },
+    "phone": "053-7104417",
+    "certifiedBy": "כשר למהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pizza-tzof-afula",
+    "name": "פיצה צוף",
+    "type": "fast_food",
+    "category": "dairy",
+    "address": "הנרייטה סולד 37, עפולה",
+    "cityId": "עפולה",
+    "location": {
+      "latitude": 32.606,
+      "longitude": 35.284
+    },
+    "certifiedBy": "בד\"ץ עדה חרדית",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-haesh-sheli-migdal-haemek",
+    "name": "האש שלי",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "דרך העמק 16, מגדל העמק",
+    "cityId": "מגדל העמק",
+    "location": {
+      "latitude": 32.673,
+      "longitude": 35.238
+    },
+    "phone": "052-7665588",
+    "certifiedBy": "רבנות מגדל העמק מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pizza-hamaestro-migdal-haemek",
+    "name": "פיצה המאסטרו",
+    "type": "fast_food",
+    "category": "dairy",
+    "address": "דרך העמק 16, מגדל העמק",
+    "cityId": "מגדל העמק",
+    "location": {
+      "latitude": 32.673,
+      "longitude": 35.238
+    },
+    "phone": "04-6044040",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "מוצ\"ש 21:00-23:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-kokhvei-anis-migdal-haemek",
+    "name": "כוכבי אניס",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "קניון פרץ סנטר, מגדל העמק",
+    "cityId": "מגדל העמק",
+    "location": {
+      "latitude": 32.676,
+      "longitude": 35.243
+    },
+    "phone": "052-6672199",
+    "certifiedBy": "רבנות מגדל העמק מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-arnolds-ramat-yishai",
+    "name": "ארנולדס",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "אקליפטוס 3, רמת ישי",
+    "cityId": "רמת ישי",
+    "location": {
+      "latitude": 32.704,
+      "longitude": 35.174
+    },
+    "phone": "04-9522211",
+    "certifiedBy": "כשר למהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 12:00-24:00; ו' 12:00-16:00",
+    "source": "manual"
   }
 ]
