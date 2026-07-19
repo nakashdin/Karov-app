@@ -122226,41 +122226,6 @@
     "lastVerifiedAt": "2026-07-15"
   },
   {
-    "id": "bahadunes-2c82aaed",
-    "name": "בהדונס קריית עקרון",
-    "type": "restaurant",
-    "cityId": "קריית עקרון",
-    "address": "המלך חסן השני 10, קריית עקרון",
-    "phone": "08-9491499",
-    "location": {
-      "latitude": 31.8683,
-      "longitude": 34.8138
-    },
-    "locationPrecision": "city",
-    "website": "https://www.bahadunes.co.il",
-    "category": "parve",
-    "kosherType": "rabanut",
-    "source": "manual",
-    "lastVerifiedAt": "2026-07-15"
-  },
-  {
-    "id": "bahadunes-fd2f3117",
-    "name": "בהדונס בסיס קיריה תל אביב",
-    "type": "restaurant",
-    "cityId": "תל אביב",
-    "address": "הקיריה, תל אביב",
-    "location": {
-      "latitude": 32.078,
-      "longitude": 34.7881
-    },
-    "locationPrecision": "city",
-    "website": "https://www.bahadunes.co.il",
-    "category": "parve",
-    "kosherType": "kosher",
-    "source": "manual",
-    "lastVerifiedAt": "2026-07-15"
-  },
-  {
     "id": "bahadunes-6d68ea3f",
     "name": "בהדונס איירפורט סיטי",
     "type": "restaurant",
@@ -122288,24 +122253,6 @@
     "location": {
       "latitude": 31.973,
       "longitude": 34.8075
-    },
-    "locationPrecision": "city",
-    "website": "https://www.bahadunes.co.il",
-    "category": "parve",
-    "kosherType": "rabanut",
-    "source": "manual",
-    "lastVerifiedAt": "2026-07-15"
-  },
-  {
-    "id": "bahadunes-b13c5a79",
-    "name": "בהדונס אבן גבירול תל אביב",
-    "type": "restaurant",
-    "cityId": "תל אביב",
-    "address": "אבן גבירול 109, תל אביב",
-    "phone": "03-9672224",
-    "location": {
-      "latitude": 32.0832,
-      "longitude": 34.781
     },
     "locationPrecision": "city",
     "website": "https://www.bahadunes.co.il",
