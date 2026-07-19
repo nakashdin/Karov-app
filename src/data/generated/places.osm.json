@@ -102978,7 +102978,8 @@
       "longitude": 34.79812298
     },
     "kosherType": "rabanut",
-    "phone": "03-7731713"
+    "phone": "03-7731713",
+    "openingHours": "א'-ד' 09:30-17:00 | ה' 09:30-18:00 | ו' 09:30-14:30 | ש' סגור"
   },
   {
     "openingHours": "א-ה 09:30-16:00 | ו 09:30-13:30",
@@ -121065,7 +121066,8 @@
     "category": "parve",
     "kosherType": "kosher",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-15"
+    "lastVerifiedAt": "2026-07-15",
+    "openingHours": "א'-ה' 09:00-17:00 | ו' 08:00-15:00 | ש' סגור"
   },
   {
     "id": "hummusneri-9f095951",
@@ -121081,7 +121083,9 @@
     "category": "parve",
     "kosherType": "kosher",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-15"
+    "lastVerifiedAt": "2026-07-15",
+    "phone": "03-736-9602",
+    "openingHours": "א'-ה' 09:00-17:00 | ו' 08:00-15:00 | ש' סגור"
   },
   {
     "id": "hummusneri-5756c65b",
@@ -121097,23 +121101,9 @@
     "category": "parve",
     "kosherType": "kosher",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-15"
-  },
-  {
-    "id": "hummusneri-8b88cc09",
-    "name": "חומוס נרי קריית אונו",
-    "type": "restaurant",
-    "cityId": "קריית אונו",
-    "address": "דובדבן 9, מרכז דובדבן, קריית אונו",
-    "location": {
-      "latitude": 32.0536,
-      "longitude": 34.8721
-    },
-    "website": "https://www.instagram.com/hummus_neri/",
-    "category": "parve",
-    "kosherType": "kosher",
-    "source": "manual",
-    "lastVerifiedAt": "2026-07-15"
+    "lastVerifiedAt": "2026-07-15",
+    "phone": "03-642-7257",
+    "openingHours": "א'-ה' 09:00-17:00 | ו' 08:00-15:00 | ש' סגור"
   },
   {
     "id": "hummusneri-8e3b3a55",
@@ -121127,24 +121117,7 @@
       "longitude": 34.8899
     },
     "website": "https://www.instagram.com/hummus_neri/",
-    "openingHours": "א'-ה' 09:00-17:00 | ו' 08:00-15:00 | ש' סגור",
-    "category": "parve",
-    "kosherType": "kosher",
-    "source": "manual",
-    "lastVerifiedAt": "2026-07-15"
-  },
-  {
-    "id": "hummusneri-2d720afa",
-    "name": "חומוס נרי רמת גן",
-    "type": "restaurant",
-    "cityId": "רמת גן",
-    "address": "תובל 36, מתחם הבורסה, רמת גן",
-    "phone": "03-613-6636",
-    "location": {
-      "latitude": 32.087,
-      "longitude": 34.834
-    },
-    "website": "https://hummusneri.co.il",
+    "openingHours": "א'-ה' 09:00-17:00 | ו' 08:00-16:00 | ש' סגור",
     "category": "parve",
     "kosherType": "kosher",
     "source": "manual",
@@ -122097,7 +122070,8 @@
     "category": "parve",
     "kosherType": "rabanut",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-15"
+    "lastVerifiedAt": "2026-07-15",
+    "openingHours": "א'-ה' 09:00-16:00 | ו' 06:30-15:00 | ש' סגור"
   },
   {
     "id": "bahadunes-b57a4798",
@@ -122115,7 +122089,8 @@
     "category": "parve",
     "kosherType": "rabanut",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-15"
+    "lastVerifiedAt": "2026-07-15",
+    "openingHours": "א'-ה' 10:00-15:30 | ו' 10:00-14:00 | ש' סגור"
   },
   {
     "id": "bahadunes-38c87982",
@@ -122133,7 +122108,8 @@
     "category": "parve",
     "kosherType": "rabanut",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-15"
+    "lastVerifiedAt": "2026-07-15",
+    "openingHours": "א'-ה' 09:00-16:00 | ו' 08:00-15:00 | ש' סגור"
   },
   {
     "id": "bahadunes-1bd46103",
@@ -122151,7 +122127,8 @@
     "category": "parve",
     "kosherType": "rabanut",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-15"
+    "lastVerifiedAt": "2026-07-15",
+    "openingHours": "א'-ה' 10:30-16:00 | ו'-ש' סגור"
   },
   {
     "id": "bahadunes-75879a00",
@@ -122169,7 +122146,8 @@
     "category": "parve",
     "kosherType": "rabanut",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-15"
+    "lastVerifiedAt": "2026-07-15",
+    "openingHours": "א'-ה' 06:00-17:00 | ו' 06:00-14:30 | ש' סגור"
   },
   {
     "id": "bahadunes-2148b9e6",
@@ -122187,7 +122165,8 @@
     "category": "parve",
     "kosherType": "rabanut",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-15"
+    "lastVerifiedAt": "2026-07-15",
+    "openingHours": "א'-ה' 09:00-16:30 | ו' 08:00-14:30 | ש' סגור"
   },
   {
     "id": "bahadunes-96060d4c",
@@ -122205,7 +122184,8 @@
     "category": "parve",
     "kosherType": "rabanut",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-15"
+    "lastVerifiedAt": "2026-07-15",
+    "openingHours": "א'-ה' 08:00-15:00 | ו' 08:00-14:00 | ש' סגור"
   },
   {
     "id": "bahadunes-03bb7024",
@@ -122223,7 +122203,8 @@
     "category": "parve",
     "kosherType": "rabanut",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-15"
+    "lastVerifiedAt": "2026-07-15",
+    "openingHours": "א'-ה' 09:00-16:00 | ו'-ש' סגור"
   },
   {
     "id": "bahadunes-6d68ea3f",
@@ -122241,7 +122222,8 @@
     "category": "parve",
     "kosherType": "mehadrin",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-15"
+    "lastVerifiedAt": "2026-07-15",
+    "openingHours": "א'-ה' 09:00-16:00 | ו' 08:00-15:00 | ש' סגור"
   },
   {
     "id": "bahadunes-e486292f",
@@ -122259,7 +122241,8 @@
     "category": "parve",
     "kosherType": "rabanut",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-15"
+    "lastVerifiedAt": "2026-07-15",
+    "openingHours": "א'-ה' 08:30-16:30 | ו' 08:30-14:30 | ש' סגור"
   },
   {
     "id": "bahadunes-f83c898e",
@@ -122277,7 +122260,8 @@
     "category": "parve",
     "kosherType": "mehadrin",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-15"
+    "lastVerifiedAt": "2026-07-15",
+    "openingHours": "א'-ה' 10:00-16:00 | ו'-ש' סגור"
   },
   {
     "openingHours": "א-ה 10:00-18:00 | ו 10:00-14:30",
@@ -122916,6 +122900,349 @@
     "certifiedBy": "כשר למהדרין",
     "kosherType": "mehadrin",
     "openingHours": "א'-ה' 12:00-24:00; ו' 12:00-16:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-roza-ashdod",
+    "name": "רוזה",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "ז'בוטינסקי 45, סטאר סנטר, אשדוד",
+    "cityId": "אשדוד",
+    "location": {
+      "latitude": 31.8,
+      "longitude": 34.662
+    },
+    "phone": "08-618-1717",
+    "website": "https://rozaashdod.co.il",
+    "instagram": "https://www.instagram.com/roza_ashdod/",
+    "facebook": "https://www.facebook.com/RozaAshdod/",
+    "certifiedBy": "בד\"ץ יורה דעה הרב מחפוד",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 17:00-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-weizmann-ashdod",
+    "name": "ויצמן",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "הבנאים 9, נמל אשדוד",
+    "cityId": "אשדוד",
+    "location": {
+      "latitude": 31.816,
+      "longitude": 34.639
+    },
+    "phone": "08-852-2593",
+    "certifiedBy": "בד\"ץ יורה דעה הרב מחפוד",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ד' 12:00-22:30; ה' 12:00-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-limoncello-ashdod",
+    "name": "לימונצ'לו",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "חוף י\"א, אשדוד",
+    "cityId": "אשדוד",
+    "location": {
+      "latitude": 31.787,
+      "longitude": 34.641
+    },
+    "phone": "054-600-0089",
+    "website": "https://www.limoncello-ashdod.co.il",
+    "instagram": "https://www.instagram.com/limoncello_ashdod/",
+    "certifiedBy": "רבנות מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 11:00-24:00; ו' 10:30-17:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-kaiyfuye-ashdod",
+    "name": "קאיפוייה",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "הטיילת 20, אשדוד",
+    "cityId": "אשדוד",
+    "location": {
+      "latitude": 31.808,
+      "longitude": 34.6415
+    },
+    "phone": "077-231-8212",
+    "certifiedBy": "רבנות מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 11:00-23:30; ו' 11:00-14:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shnitzel-saida-ashkelon",
+    "name": "שניצל סעידה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "היוצרים 36, אשקלון",
+    "cityId": "אשקלון",
+    "location": {
+      "latitude": 31.6705,
+      "longitude": 34.5688
+    },
+    "phone": "053-594-7676",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hapita-netivot",
+    "name": "הפיתה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "יוסף סמלו 8, נתיבות",
+    "cityId": "נתיבות",
+    "location": {
+      "latitude": 31.423,
+      "longitude": 34.5882
+    },
+    "phone": "054-671-0489",
+    "instagram": "https://www.instagram.com/hapita21/",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 11:00-01:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-matanos-netivot",
+    "name": "מתנוס",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "יוסף סמלו 38, נתיבות",
+    "cityId": "נתיבות",
+    "location": {
+      "latitude": 31.4225,
+      "longitude": 34.5885
+    },
+    "phone": "08-654-4900",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-halafa-hamexicanit-netivot",
+    "name": "חלאפה המקסיקנית",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "יוסף סמלו 39, נתיבות",
+    "cityId": "נתיבות",
+    "location": {
+      "latitude": 31.4225,
+      "longitude": 34.5883
+    },
+    "phone": "08-994-2432",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hamangilist-netivot",
+    "name": "המנגליסט",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "יוסף סמלו 201, נתיבות",
+    "cityId": "נתיבות",
+    "location": {
+      "latitude": 31.427,
+      "longitude": 34.587
+    },
+    "phone": "052-438-6100",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-maglulet-abuhatzirah-netivot",
+    "name": "מגלולת אבוחצירה",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "אבוחצירה 54, נתיבות",
+    "cityId": "נתיבות",
+    "location": {
+      "latitude": 31.424,
+      "longitude": 34.592
+    },
+    "phone": "08-699-9407",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-karni-bar-netivot",
+    "name": "קרני בר",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "יוסף סמלו 7, נתיבות",
+    "cityId": "נתיבות",
+    "location": {
+      "latitude": 31.4228,
+      "longitude": 34.588
+    },
+    "phone": "1-700-501-083",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-patita-netivot",
+    "name": "פטיטה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "בעלי המלאכה 2, נתיבות",
+    "cityId": "נתיבות",
+    "location": {
+      "latitude": 31.4215,
+      "longitude": 34.587
+    },
+    "phone": "08-666-5098",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-ruben-netivot",
+    "name": "רובן נתיבות",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "בעלי המלאכה 5, נתיבות",
+    "cityId": "נתיבות",
+    "location": {
+      "latitude": 31.4217,
+      "longitude": 34.5873
+    },
+    "phone": "077-980-0390",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-brunchos-kiryat-malakhi",
+    "name": "בראנצ'וס",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "שד' דוד בן גוריון 8, קריית מלאכי",
+    "cityId": "קריית מלאכי",
+    "location": {
+      "latitude": 31.7315,
+      "longitude": 34.7453
+    },
+    "phone": "08-916-6658",
+    "website": "https://brunchos.rest.co.il",
+    "instagram": "https://www.instagram.com/brunchos_restaurant/",
+    "facebook": "https://www.facebook.com/Brunchosil/",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 08:00-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-burger-ahinoo-ofakim",
+    "name": "בורגר אחינו",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "מבצע קדש 3, אופקים",
+    "cityId": "אופקים",
+    "location": {
+      "latitude": 31.3175,
+      "longitude": 34.6215
+    },
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shipudei-tzippora-eilat",
+    "name": "שיפודי ציפורה",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "קאמן 10, מרכז מסחרי רד, אילת",
+    "cityId": "אילת",
+    "location": {
+      "latitude": 29.5543,
+      "longitude": 34.9504
+    },
+    "phone": "08-637-8228",
+    "website": "https://www.tziporaeilat.co.il",
+    "instagram": "https://www.instagram.com/shipody_tzipora_eilat/",
+    "facebook": "https://www.facebook.com/ziporaeilat/",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 12:00-23:00; ו' 12:00-17:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-ashkara-grill-eilat",
+    "name": "אשכרה גריל בר",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "המלאכה 18, אילת",
+    "cityId": "אילת",
+    "location": {
+      "latitude": 29.5472,
+      "longitude": 34.9423
+    },
+    "phone": "08-658-7444",
+    "certifiedBy": "בד\"ץ יורה דעה הרב מחפוד",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 11:00-23:00; ו' 08:00-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-mashehu-mitbashel-eilat",
+    "name": "משהו מתבשל פה",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "המסגר 5, אילת",
+    "cityId": "אילת",
+    "location": {
+      "latitude": 29.553,
+      "longitude": 34.9418
+    },
+    "phone": "077-455-0125",
+    "website": "https://www.eilat-restaurant.com",
+    "certifiedBy": "בד\"ץ יורה דעה הרב מחפוד",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 11:00-20:00; ו' 11:00-18:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-ramona-mitzpe-ramon",
+    "name": "רמונא",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "מעלה בן תור 1, מצפה רמון",
+    "cityId": "מצפה רמון",
+    "location": {
+      "latitude": 30.606,
+      "longitude": 34.8
+    },
+    "website": "https://www.beit-ramona.com",
+    "instagram": "https://www.instagram.com/beit.ramona/",
+    "facebook": "https://www.facebook.com/beit-ramona/",
+    "certifiedBy": "רבנות מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ד' 17:00-22:30; ה' 13:00-22:30; ו' 12:00-16:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-rekabab-beer-sheva",
+    "name": "רקאבב",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "האלה 30, באר שבע",
+    "cityId": "באר שבע",
+    "location": {
+      "latitude": 31.2416,
+      "longitude": 34.8002
+    },
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
     "source": "manual"
   }
 ]
