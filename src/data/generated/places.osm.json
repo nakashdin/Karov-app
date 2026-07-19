@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "facebook": "https://www.facebook.com/AromaIsrael",
     "tags": [
@@ -123226,5 +123226,349 @@
     "kosherType": "rabanut",
     "source": "manual",
     "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "manual-entrecote-jerusalem",
+    "name": "אנטריקוט",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "קריית המדע 22, הר חוצבים, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7968,
+      "longitude": 35.2002
+    },
+    "phone": "073-7027317",
+    "website": "https://entrecote-jerusalem.co.il/",
+    "instagram": "https://www.instagram.com/entrecote.jerusalem/",
+    "certifiedBy": "בד\"ץ עדה חרדית",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 12:30-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-noya-jerusalem",
+    "name": "נויה",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "שלומציון המלכה 3, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7785,
+      "longitude": 35.2245
+    },
+    "phone": "077-2307590",
+    "website": "https://noya-jerusalem.co.il/",
+    "certifiedBy": "בד\"ץ קהילות",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 13:00-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-papagaio-jerusalem",
+    "name": "פאפאגאיו",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "יד חרוצים 3, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7762,
+      "longitude": 35.2097
+    },
+    "phone": "02-6745745",
+    "website": "https://papagaiojerusalem.rest.co.il/",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 12:00-23:45",
+    "source": "manual"
+  },
+  {
+    "id": "manual-grill-bar-jerusalem",
+    "name": "גריל בר",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "הסורג 1, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.783,
+      "longitude": 35.22
+    },
+    "phone": "02-6223761",
+    "website": "https://grilbar.co.il/",
+    "certifiedBy": "רב מחפוד",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 12:00-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-angelica-jerusalem",
+    "name": "אנג'ליקה",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "ג'ורג' וושינגטון 4, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7788,
+      "longitude": 35.2225
+    },
+    "phone": "02-6230056",
+    "website": "https://angelicarest.com/",
+    "certifiedBy": "רב רפאל מנת",
+    "kosherType": "mehadrin",
+    "openingHours": "ב'-ה' 12:30-22:30; א' 18:00-22:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-lifta-jerusalem",
+    "name": "ליפתא",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "הצבי 15, קניון סנטר 1, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7863,
+      "longitude": 35.2094
+    },
+    "phone": "053-3290315",
+    "website": "https://liftarestaurant.co.il/",
+    "facebook": "https://www.facebook.com/p/מסעדת-ליפתא-61579446802296/",
+    "certifiedBy": "רב רפאל מנת",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 18:00-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-rodriguez-jerusalem",
+    "name": "רודריגז",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "קריית המדע 3, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7973,
+      "longitude": 35.2005
+    },
+    "phone": "02-5815815",
+    "website": "https://rodrigues.rest.co.il/",
+    "instagram": "https://www.instagram.com/rodriguezjerusalem/",
+    "certifiedBy": "רב רובין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 18:00-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-ricotta-jerusalem",
+    "name": "ריקוטה",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "קריית המדע 3, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7973,
+      "longitude": 35.2006
+    },
+    "phone": "02-5870222",
+    "website": "https://ricotta.co.il/",
+    "certifiedBy": "בד\"ץ קהילות ורבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 10:00-23:00; ו' 09:00-12:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-skyline-jerusalem",
+    "name": "סקייליין",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "זאב וילנאי 4, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7685,
+      "longitude": 35.2
+    },
+    "phone": "02-6558847",
+    "website": "https://www.skylinejerusalem.com/",
+    "certifiedBy": "OU מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 18:00-22:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-veranda-jerusalem",
+    "name": "ורנדה",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "המלך דוד 7, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.776,
+      "longitude": 35.2222
+    },
+    "phone": "02-6212396",
+    "website": "https://www.thedavidcitadel.com/eat-drink/veranda/",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 18:00-22:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-ishtabach-jerusalem",
+    "name": "אישטבח",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "בית יעקב 1, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7837,
+      "longitude": 35.2183
+    },
+    "phone": "02-6232997",
+    "website": "https://www.ishtabach.co.il/",
+    "certifiedBy": "ברכות אליהו",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 12:00-24:00; ו' 11:00-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-happy-fish-jerusalem",
+    "name": "הפי פיש",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "שדרות ממילא 14, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7763,
+      "longitude": 35.2213
+    },
+    "phone": "02-5482230",
+    "website": "https://www.mamillahotel.com/eat-drink/happy-fish/",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 12:00-23:00; ו' 10:00-16:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-luciana-jerusalem",
+    "name": "לוצ'ינה",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "ממילא 8, קניון ממילא, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7761,
+      "longitude": 35.221
+    },
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 10:00-23:00; ו' 09:00-16:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-josef-rimon-jerusalem",
+    "name": "ג'וזף רימון",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "לונץ משה 4, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7835,
+      "longitude": 35.2168
+    },
+    "phone": "077-8035675",
+    "website": "https://josef-rimon.co.il/",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 12:00-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-thirty-three-jerusalem",
+    "name": "Thirty Three",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "ירמיהו 33, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7978,
+      "longitude": 35.2155
+    },
+    "phone": "055-6810165",
+    "website": "https://www.33rest.co.il/",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 18:00-23:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-harveys-smokehouse-jerusalem",
+    "name": "הארוויס",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "שמעון בן שטח 7, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7827,
+      "longitude": 35.2167
+    },
+    "phone": "02-6246444",
+    "website": "https://harveys.co.il/",
+    "instagram": "https://www.instagram.com/harveys_smokehouse/",
+    "facebook": "https://www.facebook.com/HarveysSmokehouseJerusalem/",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 12:00-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-caballero-jerusalem",
+    "name": "קאבאלרו",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "המרפא 1, הר חוצבים, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.797,
+      "longitude": 35.2002
+    },
+    "phone": "02-5377000",
+    "website": "https://www.caballerorest.co.il/",
+    "instagram": "https://www.instagram.com/caballero.rest/",
+    "certifiedBy": "בד\"ץ קהילות",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 18:00-22:45",
+    "source": "manual"
+  },
+  {
+    "id": "manual-andalucia-jerusalem",
+    "name": "אנדלוסיה",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "מעבר בית הכנסת 12, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7795,
+      "longitude": 35.2128
+    },
+    "phone": "02-6266306",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 18:00-22:45",
+    "source": "manual"
+  },
+  {
+    "id": "manual-the-alley-jerusalem",
+    "name": "האלי",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "דוד רמז 3, התחנה הראשונה, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7692,
+      "longitude": 35.2185
+    },
+    "phone": "02-5868755",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ד' 09:00-23:30; ה' 09:00-23:55; ו' 09:00-17:00",
+    "source": "manual"
   }
 ]
