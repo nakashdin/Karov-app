@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "facebook": "https://www.facebook.com/AromaIsrael",
     "tags": [
@@ -122625,5 +122625,552 @@
     "kosherType": "rabanut",
     "source": "manual",
     "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "manual-restaurant-solo-carne",
+    "name": "סולו קרנה",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "ז'בוטינסקי 16, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.0822,
+      "longitude": 34.834
+    },
+    "phone": "*3044",
+    "website": "https://solo.chef-israel.co.il",
+    "instagram": "https://www.instagram.com/chef.israel",
+    "certifiedBy": "בד\"ץ עדה חרדית",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 11:30-22:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-restaurant-zalbouch",
+    "name": "בצלבוץ",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "ז'בוטינסקי 100, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.087,
+      "longitude": 34.828
+    },
+    "phone": "050-600-9797",
+    "certifiedBy": "רב לנדא",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-fast-food-zalmans",
+    "name": "זלמנס",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "מצדה 9, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.0845,
+      "longitude": 34.8267
+    },
+    "website": "https://zalmans.co.il",
+    "instagram": "https://www.instagram.com/zalmans_american_style",
+    "facebook": "https://www.facebook.com/ZalmansCHEFHotdogs",
+    "certifiedBy": "בד\"ץ עדה חרדית",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-restaurant-the-jewish-restaurant",
+    "name": "המסעדה היהודית",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "כנרת 4, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.082,
+      "longitude": 34.831
+    },
+    "phone": "03-5789999",
+    "certifiedBy": "רב לנדא",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 12:00-23:00; ו' 07:30-14:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-restaurant-shtesel",
+    "name": "שטיסל",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "בר יוחאי 4, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.08,
+      "longitude": 34.832
+    },
+    "phone": "03-5706005",
+    "website": "https://shtesel.click2eat.co.il",
+    "certifiedBy": "רב לנדא",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 12:00-23:00; ו' 09:00-14:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-fast-food-memphis-bnei-brak",
+    "name": "ממפיס בסר",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "הירקון 10, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.0795,
+      "longitude": 34.8265
+    },
+    "phone": "*2904",
+    "website": "https://www.memphis.co.il",
+    "instagram": "https://www.instagram.com/memphis_burger",
+    "facebook": "https://www.facebook.com/memphiskosherburger",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 12:00-22:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-restaurant-parmesan",
+    "name": "פרמזן",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "מצדה 9, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.0845,
+      "longitude": 34.8267
+    },
+    "phone": "03-7295700",
+    "website": "https://parmesan.co.il",
+    "instagram": "https://www.instagram.com/parmesan.rest",
+    "certifiedBy": "רב רובין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 11:00-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-cafe-giorno",
+    "name": "ג'ורנו",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "ז'בוטינסקי 20, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.0823,
+      "longitude": 34.8338
+    },
+    "phone": "03-6160143",
+    "certifiedBy": "רב לנדא",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 07:30-19:30; ו' 09:00-13:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-cafe-menta-bagel",
+    "name": "מנטה בייגל",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "ירושלים 23, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.086,
+      "longitude": 34.833
+    },
+    "phone": "03-6164990",
+    "website": "https://mentabagel.co.il",
+    "certifiedBy": "רב לנדא",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 10:00-19:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-restaurant-nagisa",
+    "name": "נגיסה",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "דרך בן גוריון 13, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.079,
+      "longitude": 34.8295
+    },
+    "phone": "077-7000333",
+    "website": "https://nagisasushi.co.il",
+    "instagram": "https://www.instagram.com/nagisa.sushi",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 11:00-23:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-restaurant-japo",
+    "name": "ג'אפו",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "מצדה 9, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.0834,
+      "longitude": 34.8342
+    },
+    "phone": "03-374-1133",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 12:00-22:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-restaurant-batzir",
+    "name": "בציר",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "מצדה 9ב, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.0833,
+      "longitude": 34.8341
+    },
+    "phone": "053-326-6463",
+    "website": "https://www.bazirest.co.il",
+    "instagram": "https://www.instagram.com/_bazir",
+    "certifiedBy": "קהילות",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ד' 12:00-22:45; ה' 10:00-02:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-fast-food-hallo-yemen",
+    "name": "הלו תימן",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "יוחנן הסנדלר 1, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.0881,
+      "longitude": 34.8355
+    },
+    "phone": "03-574-4354",
+    "facebook": "https://www.facebook.com/p/הלו-תימן-בני-ברק-100063964368711",
+    "certifiedBy": "רב מחפוד",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 07:30-19:30; ו' 09:00-13:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-restaurant-tzanani",
+    "name": "צנעני",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "ז'בוטינסקי 92, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.0821,
+      "longitude": 34.8316
+    },
+    "phone": "03-578-0459",
+    "certifiedBy": "רב מחפוד",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 11:00-24:00; ו' 07:00-14:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-restaurant-shmulik-cohen",
+    "name": "שמוליק כהן",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "הרצל 146, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0568,
+      "longitude": 34.7693
+    },
+    "phone": "03-681-0222",
+    "certifiedBy": "רב מחפוד",
+    "kosherType": "mehadrin",
+    "openingHours": "א' 12:00-16:00; ב'-ד' 12:00-22:30; ה' 12:00-23:00; ו' 11:00-16:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-restaurant-goldis",
+    "name": "גולדיס",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "מצדה 9 בסר 3, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.0836,
+      "longitude": 34.834
+    },
+    "phone": "03-620-0100",
+    "website": "https://www.goldys.co.il",
+    "certifiedBy": "בד\"ץ ירושלים",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ד' 11:00-23:00; ה' 11:00-01:00; ו' 07:00-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-restaurant-regina",
+    "name": "רג'ינה",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "המרד 3, מתחם התחנה, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0618,
+      "longitude": 34.7746
+    },
+    "phone": "077-996-8525",
+    "website": "https://reginarest.co.il",
+    "instagram": "https://www.instagram.com/reginarest.tlv",
+    "certifiedBy": "רב גרליצקי",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 12:00-24:00; ו' 11:30-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-restaurant-rashel",
+    "name": "רשל",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "יוסף יקותיאלי 3 הנגר 27, נמל תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.1031,
+      "longitude": 34.7823
+    },
+    "phone": "077-804-1545",
+    "website": "https://rasheltlv.co.il",
+    "instagram": "https://www.instagram.com/rashel_tlv",
+    "facebook": "https://www.facebook.com/rashelTLV",
+    "certifiedBy": "רב מחפוד",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ד' 13:00-23:00; ה' 13:00-01:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-restaurant-ruben",
+    "name": "ראובן",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "בני אפרים 280, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0741,
+      "longitude": 34.7902
+    },
+    "phone": "03-659-6066",
+    "website": "https://rubenisrael.co.il",
+    "certifiedBy": "רב מחפוד",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 12:00-23:00; ו' 12:00-14:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-restaurant-piano-piano",
+    "name": "פיאנו פיאנו",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "הנגר 13, נמל תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.1028,
+      "longitude": 34.7819
+    },
+    "phone": "03-504-4455",
+    "website": "https://www.pianopiano.co.il",
+    "instagram": "https://www.instagram.com/piano.piano.tlv",
+    "certifiedBy": "רב מחפוד",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-restaurant-donis",
+    "name": "דוניס",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "הסיבים 49, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.0901,
+      "longitude": 34.8921
+    },
+    "phone": "03-5708888",
+    "website": "https://www.donis.co.il",
+    "instagram": "https://www.instagram.com/donisfish",
+    "facebook": "https://www.facebook.com/donidFish",
+    "certifiedBy": "רב מחפוד",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-cafe-bokeria",
+    "name": "בוקריה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "דרך יצחק רבין 17, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.0932,
+      "longitude": 34.8875
+    },
+    "phone": "03-7444760",
+    "website": "https://bokeria.co.il",
+    "instagram": "https://www.instagram.com/bokeria_y_center",
+    "facebook": "https://www.facebook.com/BokeriaYcenter",
+    "certifiedBy": "חתם סופר פ\"ת",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-restaurant-alfredo",
+    "name": "אלפרדו",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "דרך שלמה שמלצר 94, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.0872,
+      "longitude": 34.882
+    },
+    "phone": "03-9230643",
+    "website": "https://alfredo.co.il",
+    "certifiedBy": "חתם סופר",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-restaurant-mama-greg",
+    "name": "מאמא גרג",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "אבא הלל 301, קניון איילון, רמת גן",
+    "cityId": "רמת גן",
+    "location": {
+      "latitude": 32.0724,
+      "longitude": 34.8224
+    },
+    "phone": "03-6199922",
+    "website": "https://mamagreg.com",
+    "instagram": "https://www.instagram.com/_mamagreg",
+    "facebook": "https://www.facebook.com/mamagreg.il",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-cafe-bleecker-bakery",
+    "name": "בליקר בייקרי",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "ביאליק 76, רמת גן",
+    "cityId": "רמת גן",
+    "location": {
+      "latitude": 32.0801,
+      "longitude": 34.817
+    },
+    "phone": "03-6577779",
+    "website": "https://bleeckerbakery.co.il",
+    "instagram": "https://www.instagram.com/bleeckerbakery_ramatgan",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 08:00-21:30; ו' 08:00-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-restaurant-ezra-uvanav",
+    "name": "עזרא ובניו",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "ז'בוטינסקי 16, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.0832,
+      "longitude": 34.834
+    },
+    "instagram": "https://www.instagram.com/ezra_bney_brak",
+    "certifiedBy": "רב מחפוד",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 10:00-23:00; ו' 10:00-14:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-restaurant-japan-japan-givat-shmuel",
+    "name": "Japan Japan גבעת שמואל",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "מוטה גור 14, גבעת שמואל",
+    "cityId": "גבעת שמואל",
+    "location": {
+      "latitude": 32.0731,
+      "longitude": 34.8482
+    },
+    "phone": "073-759-6258",
+    "website": "https://www.japan-japan.co.il",
+    "facebook": "https://www.facebook.com/japanjapan.GivatShmuel",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 11:00-23:00; ו' 11:00-14:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-fast-food-bobe",
+    "name": "בובע",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "קניון עזריאלי, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.072,
+      "longitude": 34.7912
+    },
+    "phone": "055-305-3440",
+    "website": "https://eatbobe.co.il",
+    "facebook": "https://www.facebook.com/IL.BOBE",
+    "certifiedBy": "ברכת אליהו",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 10:00-22:00; ו' 10:00-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-cafe-cafe-reim",
+    "name": "קפה רעים",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "בר כוכבא 4, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.084,
+      "longitude": 34.833
+    },
+    "phone": "073-386-1677",
+    "website": "https://reim-bistro.co.il",
+    "instagram": "https://www.instagram.com/cafereim_",
+    "certifiedBy": "רב מחפוד",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 08:00-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-fast-food-manfis",
+    "name": "מנפיס",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "הנשיא 6, לוד",
+    "cityId": "לוד",
+    "location": {
+      "latitude": 31.9512,
+      "longitude": 34.892
+    },
+    "phone": "1700-700-413",
+    "website": "https://www.menfis.co.il",
+    "facebook": "https://www.facebook.com/menfis84",
+    "certifiedBy": "רב מחפוד",
+    "kosherType": "mehadrin",
+    "source": "manual"
   }
 ]
