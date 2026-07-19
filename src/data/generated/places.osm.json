@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "facebook": "https://www.facebook.com/AromaIsrael",
     "tags": [
@@ -123172,5 +123172,59 @@
     "certifiedBy": "רב מחפוד",
     "kosherType": "mehadrin",
     "source": "manual"
+  },
+  {
+    "id": "humuskaspy-82a8a2a0",
+    "name": "חומוס כספי בן יהודה תל אביב",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "ארלוזרוב 13, תל אביב",
+    "phone": "03-6050680",
+    "location": {
+      "latitude": 32.0882,
+      "longitude": 34.776
+    },
+    "website": "https://www.kaspishuk.co.il",
+    "openingHours": "א'-ה' 09:30-22:00 | ו' 09:30 עד שעתיים לפני כניסת שבת | ש' סגור",
+    "category": "parve",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuskaspy-da4f84b4",
+    "name": "חומוס כספי שוסטר תל אביב",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "אבא אחימאיר 29, מרכז שוסטר, תל אביב",
+    "phone": "03-6199981",
+    "location": {
+      "latitude": 32.094,
+      "longitude": 34.7805
+    },
+    "website": "https://www.kaspishuk.co.il",
+    "openingHours": "א'-ה' 10:00-19:00 | ו' 09:00-15:30 | ש' סגור",
+    "category": "parve",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "humuskaspy-b368c7f2",
+    "name": "חומוס כספי פתח תקווה",
+    "type": "restaurant",
+    "cityId": "פתח תקווה",
+    "address": "יעל רום 8, אם המושבות, פתח תקווה",
+    "phone": "03-9470111",
+    "location": {
+      "latitude": 32.0797,
+      "longitude": 34.8857
+    },
+    "website": "https://www.kaspishuk.co.il",
+    "openingHours": "א'-ה' 10:00-17:00 | ו' 09:00-15:00 | ש' סגור",
+    "category": "parve",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
   }
 ]
