@@ -123558,20 +123558,254 @@
     "website": "https://kikar-hamusica.com/restaurants/en/andalucia-en/"
   },
   {
-    "id": "manual-the-alley-jerusalem",
-    "name": "האלי",
+    "id": "bahadunes-02896e6b",
+    "name": "בהדונס כפר סבא אזור תעשייה",
     "type": "restaurant",
-    "category": "dairy",
-    "address": "דוד רמז 3, התחנה הראשונה, ירושלים",
-    "cityId": "ירושלים",
+    "cityId": "כפר סבא",
+    "address": "התע\"ש 20, כפר סבא",
+    "phone": "09-8858053",
     "location": {
-      "latitude": 31.7692,
-      "longitude": 35.2185
+      "latitude": 32.178,
+      "longitude": 34.9176
     },
-    "phone": "02-5868755",
-    "certifiedBy": "רבנות ירושלים מהדרין",
+    "locationPrecision": "city",
+    "website": "https://www.bahadunes.co.il",
+    "category": "parve",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "bahadunes-b57a4798",
+    "name": "בהדונס רעננה",
+    "type": "restaurant",
+    "cityId": "רעננה",
+    "address": "העמל 2, רעננה",
+    "phone": "09-7442029",
+    "location": {
+      "latitude": 32.1878,
+      "longitude": 34.8661
+    },
+    "locationPrecision": "city",
+    "website": "https://www.bahadunes.co.il",
+    "category": "parve",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "bahadunes-38c87982",
+    "name": "בהדונס כפר סבא צומת רעננה",
+    "type": "restaurant",
+    "cityId": "כפר סבא",
+    "address": "דרך השרון 5, כפר סבא",
+    "phone": "053-9442279",
+    "location": {
+      "latitude": 32.172,
+      "longitude": 34.9135
+    },
+    "locationPrecision": "city",
+    "website": "https://www.bahadunes.co.il",
+    "category": "parve",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "bahadunes-1bd46103",
+    "name": "בהדונס הרצליה",
+    "type": "restaurant",
+    "cityId": "הרצליה",
+    "address": "המנופים 9, הרצליה",
+    "phone": "09-7684010",
+    "location": {
+      "latitude": 32.1655,
+      "longitude": 34.8381
+    },
+    "locationPrecision": "city",
+    "website": "https://www.bahadunes.co.il",
+    "category": "parve",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "bahadunes-75879a00",
+    "name": "בהדונס רמת השרון",
+    "type": "restaurant",
+    "cityId": "רמת השרון",
+    "address": "סוקולוב 72, רמת השרון",
+    "phone": "03-5400791",
+    "location": {
+      "latitude": 32.148,
+      "longitude": 34.8425
+    },
+    "locationPrecision": "city",
+    "website": "https://www.bahadunes.co.il",
+    "category": "parve",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "bahadunes-2148b9e6",
+    "name": "בהדונס פתח תקווה",
+    "type": "restaurant",
+    "cityId": "פתח תקווה",
+    "address": "אודם 3, פתח תקווה",
+    "phone": "03-9192123",
+    "location": {
+      "latitude": 32.0884,
+      "longitude": 34.8828
+    },
+    "locationPrecision": "city",
+    "website": "https://www.bahadunes.co.il",
+    "category": "parve",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "bahadunes-96060d4c",
+    "name": "בהדונס רמת גן",
+    "type": "restaurant",
+    "cityId": "רמת גן",
+    "address": "ביאליק 138, רמת גן",
+    "phone": "03-7528074",
+    "location": {
+      "latitude": 32.0682,
+      "longitude": 34.8245
+    },
+    "locationPrecision": "city",
+    "website": "https://www.bahadunes.co.il",
+    "category": "parve",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "bahadunes-03bb7024",
+    "name": "בהדונס בני ברק",
+    "type": "restaurant",
+    "cityId": "בני ברק",
+    "address": "בר כוכבא 14, בני ברק",
+    "phone": "03-5795151",
+    "location": {
+      "latitude": 32.0835,
+      "longitude": 34.8338
+    },
+    "locationPrecision": "city",
+    "website": "https://www.bahadunes.co.il",
+    "category": "parve",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "bahadunes-2c82aaed",
+    "name": "בהדונס קריית עקרון",
+    "type": "restaurant",
+    "cityId": "קריית עקרון",
+    "address": "המלך חסן השני 10, קריית עקרון",
+    "phone": "08-9491499",
+    "location": {
+      "latitude": 31.8683,
+      "longitude": 34.8138
+    },
+    "locationPrecision": "city",
+    "website": "https://www.bahadunes.co.il",
+    "category": "parve",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "bahadunes-fd2f3117",
+    "name": "בהדונס בסיס קיריה תל אביב",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "הקיריה, תל אביב",
+    "location": {
+      "latitude": 32.078,
+      "longitude": 34.7881
+    },
+    "locationPrecision": "city",
+    "website": "https://www.bahadunes.co.il",
+    "category": "parve",
+    "kosherType": "kosher",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "bahadunes-6d68ea3f",
+    "name": "בהדונס איירפורט סיטי",
+    "type": "restaurant",
+    "cityId": "איירפורט סיטי",
+    "address": "גולן 44, איירפורט סיטי",
+    "phone": "03-6356626",
+    "location": {
+      "latitude": 32.0083,
+      "longitude": 34.8895
+    },
+    "locationPrecision": "city",
+    "website": "https://www.bahadunes.co.il",
+    "category": "parve",
     "kosherType": "mehadrin",
-    "openingHours": "א'-ד' 09:00-23:30; ה' 09:00-23:55; ו' 09:00-17:00",
-    "source": "manual"
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "bahadunes-e486292f",
+    "name": "בהדונס ראשון לציון",
+    "type": "restaurant",
+    "cityId": "ראשון לציון",
+    "address": "דוד סחרוב 17, ראשון לציון",
+    "phone": "077-5035012",
+    "location": {
+      "latitude": 31.973,
+      "longitude": 34.8075
+    },
+    "locationPrecision": "city",
+    "website": "https://www.bahadunes.co.il",
+    "category": "parve",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "bahadunes-b13c5a79",
+    "name": "בהדונס אבן גבירול תל אביב",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "אבן גבירול 109, תל אביב",
+    "phone": "03-9672224",
+    "location": {
+      "latitude": 32.0832,
+      "longitude": 34.781
+    },
+    "locationPrecision": "city",
+    "website": "https://www.bahadunes.co.il",
+    "category": "parve",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
+  },
+  {
+    "id": "bahadunes-f83c898e",
+    "name": "בהדונס פארק המדע רחובות",
+    "type": "restaurant",
+    "cityId": "רחובות",
+    "address": "חיים פקריס 3, פארק המדע, רחובות",
+    "phone": "08-6640244",
+    "location": {
+      "latitude": 31.8928,
+      "longitude": 34.8113
+    },
+    "locationPrecision": "city",
+    "website": "https://www.bahadunes.co.il",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-15"
   }
 ]
