@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "facebook": "https://www.facebook.com/AromaIsrael",
     "tags": [
@@ -125783,7 +125783,7 @@
       "longitude": 34.8591
     },
     "website": "https://etzelhaturky.com",
-    "openingHours": "א'-ה' 11:00-00:00 | ו' 11:00-14:00 | ש' מוצ\"ש עד 00:00",
+    "openingHours": "א'-ה' 10:30-23:00 | ו' 10:30-14:00 | ש' מוצ\"ש עד 00:00",
     "category": "meat",
     "kosherType": "rabanut",
     "source": "manual",
@@ -125819,7 +125819,7 @@
       "longitude": 34.8565
     },
     "website": "https://ovedbakfar.co.il",
-    "openingHours": "א'-ה' 11:00-00:00 | ו' 11:00-15:30 | ש' מוצ\"ש עד 01:00",
+    "openingHours": "א'-ה' 12:00-00:00 | ו' 12:00-16:00 | ש' מוצ\"ש עד 01:00",
     "category": "meat",
     "kosherType": "rabanut",
     "source": "manual",
@@ -126909,5 +126909,1983 @@
     "certifiedBy": "רבנות אשדוד מהדרין",
     "kosherType": "mehadrin",
     "source": "manual"
+  },
+  {
+    "id": "shimoni-e40ba3f5",
+    "name": "שווארמה שמעוני רחובות",
+    "type": "restaurant",
+    "cityId": "רחובות",
+    "address": "אופנהיימר 10, רחובות",
+    "phone": "08-8644624",
+    "location": {
+      "latitude": 31.9067,
+      "longitude": 34.8137
+    },
+    "website": "https://www.instagram.com/shawarma.shimoni",
+    "openingHours": "א'-ה' 10:00-01:00 | ו' 10:00-15:30 | ש' מוצ\"ש עד 01:00",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-19"
+  },
+  {
+    "id": "shimoni-5f4180db",
+    "name": "שווארמה שמעוני נס ציונה",
+    "type": "restaurant",
+    "cityId": "נס ציונה",
+    "address": "החרש 1, אזור תעשייה א', נס ציונה",
+    "phone": "08-8661435",
+    "location": {
+      "latitude": 31.9289,
+      "longitude": 34.7875
+    },
+    "website": "https://www.instagram.com/shawarma.shimoni",
+    "openingHours": "א'-ה' 10:00-00:30 | ו' 10:00-16:30 | ש' מוצ\"ש עד 00:30",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-19"
+  },
+  {
+    "id": "shimoni-0677ea42",
+    "name": "שווארמה שמעוני ראשון לציון",
+    "type": "restaurant",
+    "cityId": "ראשון לציון",
+    "address": "לח\"י 2, ראשון לציון",
+    "phone": "052-4877799",
+    "location": {
+      "latitude": 31.9644,
+      "longitude": 34.805
+    },
+    "website": "https://www.instagram.com/shawarma.shimoni",
+    "openingHours": "א'-ה' 10:00-01:00 | ו' 10:00-15:30 | ש' מוצ\"ש עד 01:00",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-19"
+  },
+  {
+    "id": "shimoni-7c3b38ad",
+    "name": "שווארמה שמעוני גדרה",
+    "type": "restaurant",
+    "cityId": "גדרה",
+    "address": "הרצל 17, גדרה",
+    "phone": "08-8594604",
+    "location": {
+      "latitude": 31.8152,
+      "longitude": 34.7705
+    },
+    "website": "https://www.instagram.com/shawarma.shimoni",
+    "openingHours": "א'-ה' 10:00-00:00 | ו' 10:00-15:30 | ש' מוצ\"ש עד 00:00",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-19"
+  },
+  {
+    "id": "shimoni-1098dbce",
+    "name": "שווארמה שמעוני גן יבנה",
+    "type": "restaurant",
+    "cityId": "גן יבנה",
+    "address": "מתחם דור אלון, גן יבנה",
+    "phone": "053-9384991",
+    "location": {
+      "latitude": 31.7871,
+      "longitude": 34.7132
+    },
+    "website": "https://www.instagram.com/shawarma.shimoni",
+    "openingHours": "א'-ה' 10:00-01:00 | ו' 10:00-15:00 | ש' מוצ\"ש עד 01:00",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-19"
+  },
+  {
+    "id": "manual-shalom-falafel-bezalel",
+    "name": "שלום פלאפל",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "בצלאל 34, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7842,
+      "longitude": 35.2098
+    },
+    "phone": "02-6231436",
+    "website": "https://shalomfalafel.co.il",
+    "instagram": "https://www.instagram.com/shalom_falafel_il",
+    "facebook": "https://www.facebook.com/oferv1123",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shalom-falafel-pisgat-zeev",
+    "name": "שלום פלאפל פסגת זאב",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "מאיר גרשון 30, פסגת זאב, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.8245,
+      "longitude": 35.2321
+    },
+    "phone": "02-585-4605",
+    "website": "https://shalomfalafel.co.il",
+    "instagram": "https://www.instagram.com/shalom_falafel_il",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shalom-falafel-kiryat-menahem",
+    "name": "שלום פלאפל קריית מנחם",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "דהומי 3, קריית מנחם, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7438,
+      "longitude": 35.172
+    },
+    "phone": "054-330-3305",
+    "website": "https://shalomfalafel.co.il",
+    "instagram": "https://www.instagram.com/shalom_falafel_il",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shalom-falafel-beit-hakerem",
+    "name": "שלום פלאפל בית הכרם",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "שדרות הרצל 122, בית הכרם, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7779,
+      "longitude": 35.1736
+    },
+    "phone": "050-435-8878",
+    "website": "https://shalomfalafel.co.il",
+    "instagram": "https://www.instagram.com/shalom_falafel_il",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shalom-falafel-gilah",
+    "name": "שלום פלאפל גילה",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "הגננת 124, גילה, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7228,
+      "longitude": 35.194
+    },
+    "phone": "076-860-6387",
+    "website": "https://shalomfalafel.co.il",
+    "instagram": "https://www.instagram.com/shalom_falafel_il",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shalom-falafel-derech-hevron",
+    "name": "שלום פלאפל דרך חברון",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "דרך חברון 124, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.748,
+      "longitude": 35.2045
+    },
+    "phone": "02-672-5149",
+    "website": "https://shalomfalafel.co.il",
+    "instagram": "https://www.instagram.com/shalom_falafel_il",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shalom-falafel-talpiot",
+    "name": "שלום פלאפל תלפיות",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "האומן 16, תלפיות, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7477,
+      "longitude": 35.226
+    },
+    "phone": "02-679-8396",
+    "website": "https://shalomfalafel.co.il",
+    "instagram": "https://www.instagram.com/shalom_falafel_il",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shalom-falafel-arnona",
+    "name": "שלום פלאפל ארנונה",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "דניאל ינובסקי 15, ארנונה, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7551,
+      "longitude": 35.2195
+    },
+    "phone": "077-883-6883",
+    "website": "https://shalomfalafel.co.il",
+    "instagram": "https://www.instagram.com/shalom_falafel_il",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shalom-falafel-ornim",
+    "name": "שלום פלאפל אורנים",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "שי עגנון 20, מרכז אורנים, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.775,
+      "longitude": 35.19
+    },
+    "phone": "077-558-2558",
+    "website": "https://shalomfalafel.co.il",
+    "instagram": "https://www.instagram.com/shalom_falafel_il",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shalom-falafel-har-homa",
+    "name": "שלום פלאפל הר חומה",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "אליהו קורן 31, הר חומה, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7171,
+      "longitude": 35.2393
+    },
+    "phone": "077-527-2932",
+    "website": "https://shalomfalafel.co.il",
+    "instagram": "https://www.instagram.com/shalom_falafel_il",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shalom-falafel-modiin",
+    "name": "שלום פלאפל מודיעין",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "ישפרו סנטר, מודיעין",
+    "cityId": "מודיעין",
+    "location": {
+      "latitude": 31.9025,
+      "longitude": 35.0071
+    },
+    "phone": "08-652-1746",
+    "website": "https://shalomfalafel.co.il",
+    "instagram": "https://www.instagram.com/shalom_falafel_il",
+    "certifiedBy": "רבנות מודיעין מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shalom-falafel-ashdod",
+    "name": "שלום פלאפל אשדוד",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "תחנת דלק מפגש שמשון, אשדוד",
+    "cityId": "אשדוד",
+    "location": {
+      "latitude": 31.8033,
+      "longitude": 34.6508
+    },
+    "website": "https://shalomfalafel.co.il",
+    "instagram": "https://www.instagram.com/shalom_falafel_il",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-falafel-gina-tlv-shokan",
+    "name": "פלאפל ג'ינה",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "שוקן 22, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0543,
+      "longitude": 34.773
+    },
+    "phone": "03-6831123",
+    "website": "https://falafelgina.co.il",
+    "instagram": "https://www.instagram.com/falafel_ginaa",
+    "facebook": "https://www.facebook.com/falafeljina",
+    "certifiedBy": "רבנות תל אביב",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-falafel-gina-tlv-begin",
+    "name": "פלאפל ג'ינה מנחם בגין",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "מנחם בגין 126, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0698,
+      "longitude": 34.7877
+    },
+    "phone": "03-5610317",
+    "website": "https://falafelgina.co.il",
+    "instagram": "https://www.instagram.com/falafel_ginaa",
+    "facebook": "https://www.facebook.com/falafeljina",
+    "certifiedBy": "רבנות תל אביב",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-falafel-gina-jaffa",
+    "name": "פלאפל ג'ינה יפו",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "שלבים 6, יפו, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0538,
+      "longitude": 34.758
+    },
+    "website": "https://falafelgina.co.il",
+    "instagram": "https://www.instagram.com/falafel_ginaa",
+    "facebook": "https://www.facebook.com/falafeljina",
+    "certifiedBy": "רבנות תל אביב",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-falafel-gina-holon",
+    "name": "פלאפל ג'ינה חולון",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "סוקולוב נחום 64, חולון",
+    "cityId": "חולון",
+    "location": {
+      "latitude": 32.0138,
+      "longitude": 34.7742
+    },
+    "phone": "03-6094590",
+    "website": "https://falafelgina.co.il",
+    "instagram": "https://www.instagram.com/falafel_ginaa",
+    "facebook": "https://www.facebook.com/falafeljina",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-falafel-gina-ramat-gan",
+    "name": "פלאפל ג'ינה רמת גן",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "זבוטינסקי 155, רמת גן",
+    "cityId": "רמת גן",
+    "location": {
+      "latitude": 32.0825,
+      "longitude": 34.824
+    },
+    "website": "https://falafelgina.co.il",
+    "instagram": "https://www.instagram.com/falafel_ginaa",
+    "facebook": "https://www.facebook.com/falafeljina",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-falafel-gina-rishon",
+    "name": "פלאפל ג'ינה ראשון לציון",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "שמוטקין 10, אזור תעשייה, ראשון לציון",
+    "cityId": "ראשון לציון",
+    "location": {
+      "latitude": 31.96,
+      "longitude": 34.807
+    },
+    "phone": "03-6359494",
+    "website": "https://falafelgina.co.il",
+    "instagram": "https://www.instagram.com/falafel_ginaa",
+    "facebook": "https://www.facebook.com/falafeljina",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hak-tlv",
+    "name": "האק",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "דרך קיבוץ גלויות 32, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0498,
+      "longitude": 34.7726
+    },
+    "phone": "054-3096261",
+    "instagram": "https://www.instagram.com/hak.empire",
+    "facebook": "https://www.facebook.com/p/האק-אימפריה-61573973847664",
+    "certifiedBy": "רבנות תל אביב",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hak-kiryat-ono",
+    "name": "האק קרית אונו",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "שלמה המלך 73, קרית אונו",
+    "cityId": "קרית אונו",
+    "location": {
+      "latitude": 32.0598,
+      "longitude": 34.8611
+    },
+    "instagram": "https://www.instagram.com/hak.empire",
+    "facebook": "https://www.facebook.com/p/האק-אימפריה-61573973847664",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hak-pt-hadar-ganim",
+    "name": "האק פתח תקווה",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "ישעיהו המשורר 11, הדר גנים, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.1,
+      "longitude": 34.88
+    },
+    "instagram": "https://www.instagram.com/hak.empire",
+    "facebook": "https://www.facebook.com/p/האק-אימפריה-61573973847664",
+    "certifiedBy": "כשרות הרב מחפוד",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-falafel-shoshana-ramat-eliyahu",
+    "name": "פלאפל שושנה",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "זלמן שניאור 16, רמת אליהו, ראשון לציון",
+    "cityId": "ראשון לציון",
+    "location": {
+      "latitude": 31.978,
+      "longitude": 34.818
+    },
+    "phone": "03-951-6280",
+    "website": "https://www.falafelshoshana.co.il",
+    "instagram": "https://www.instagram.com/falafel_shoshana",
+    "facebook": "https://www.facebook.com/falafel.shoshana",
+    "certifiedBy": "רבנות ראשון לציון",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-falafel-shoshana-rothschild",
+    "name": "פלאפל שושנה רוטשילד",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "רוטשילד 112, ראשון לציון",
+    "cityId": "ראשון לציון",
+    "location": {
+      "latitude": 31.96,
+      "longitude": 34.7958
+    },
+    "phone": "03-951-6280",
+    "website": "https://www.falafelshoshana.co.il",
+    "instagram": "https://www.instagram.com/falafel_shoshana",
+    "facebook": "https://www.facebook.com/falafel.shoshana",
+    "certifiedBy": "רבנות ראשון לציון",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-falafel-shoshana-hadracha",
+    "name": "פלאפל שושנה ההדרכה",
+    "type": "fast_food",
+    "category": "parve",
+    "address": "ההדרכה 13, ראשון לציון",
+    "cityId": "ראשון לציון",
+    "location": {
+      "latitude": 31.966,
+      "longitude": 34.797
+    },
+    "phone": "03-951-6280",
+    "website": "https://www.falafelshoshana.co.il",
+    "instagram": "https://www.instagram.com/falafel_shoshana",
+    "facebook": "https://www.facebook.com/falafel.shoshana",
+    "certifiedBy": "רבנות ראשון לציון",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shnitzel20-maaleh-adumim",
+    "name": "שניצל 20 טעמים מעלה אדומים",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "דרך קדם 5, מעלה אדומים",
+    "cityId": "מעלה אדומים",
+    "location": {
+      "latitude": 31.7742,
+      "longitude": 35.295
+    },
+    "phone": "02-5862935",
+    "website": "https://www.shnitzel20teamim.co.il",
+    "instagram": "https://www.instagram.com/shnitzel20_teamim",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shnitzel20-pt",
+    "name": "שניצל 20 טעמים פתח תקווה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "אלעזר פרידמן 9, קניון סירקין, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.0885,
+      "longitude": 34.8875
+    },
+    "phone": "03-6916599",
+    "website": "https://www.shnitzel20teamim.co.il",
+    "instagram": "https://www.instagram.com/shnitzel20_teamim",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shnitzel20-kiryat-bialik",
+    "name": "שניצל 20 טעמים קרית ביאליק",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "קרן היסוד 64, קניון סביוניה, קרית ביאליק",
+    "cityId": "קרית ביאליק",
+    "location": {
+      "latitude": 32.846,
+      "longitude": 35.092
+    },
+    "phone": "04-6812345",
+    "website": "https://www.shnitzel20teamim.co.il",
+    "instagram": "https://www.instagram.com/shnitzel20_teamim",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shnitzel20-netanya-naimi",
+    "name": "שניצל 20 טעמים נתניה נעימי",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "טום לנטוס 60, קניון נעימי, נתניה",
+    "cityId": "נתניה",
+    "location": {
+      "latitude": 32.3187,
+      "longitude": 34.8568
+    },
+    "phone": "09-7443334",
+    "website": "https://www.shnitzel20teamim.co.il",
+    "instagram": "https://www.instagram.com/shnitzel20_teamim",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shnitzel20-netanya-central",
+    "name": "שניצל 20 טעמים נתניה מרכזית",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "בנימין 7, תחנה מרכזית, נתניה",
+    "cityId": "נתניה",
+    "location": {
+      "latitude": 32.3295,
+      "longitude": 34.854
+    },
+    "phone": "09-9588055",
+    "website": "https://www.shnitzel20teamim.co.il",
+    "instagram": "https://www.instagram.com/shnitzel20_teamim",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shnitzel20-raanana",
+    "name": "שניצל 20 טעמים רעננה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "אחוזה 93, רעננה",
+    "cityId": "רעננה",
+    "location": {
+      "latitude": 32.1835,
+      "longitude": 34.8701
+    },
+    "phone": "09-9586691",
+    "website": "https://www.shnitzel20teamim.co.il",
+    "instagram": "https://www.instagram.com/shnitzel20_teamim",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shnitzel20-herzliya",
+    "name": "שניצל 20 טעמים הרצליה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "סוקולוב 55, הרצליה",
+    "cityId": "הרצליה",
+    "location": {
+      "latitude": 32.1641,
+      "longitude": 34.8352
+    },
+    "phone": "09-7797457",
+    "website": "https://www.shnitzel20teamim.co.il",
+    "instagram": "https://www.instagram.com/shnitzel20_teamim",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shnitzel20-holon",
+    "name": "שניצל 20 טעמים חולון",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "קרן היסוד 1, חולון",
+    "cityId": "חולון",
+    "location": {
+      "latitude": 32.0162,
+      "longitude": 34.7674
+    },
+    "phone": "03-9492255",
+    "website": "https://www.shnitzel20teamim.co.il",
+    "instagram": "https://www.instagram.com/shnitzel20_teamim",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shnitzel20-harish",
+    "name": "שניצל 20 טעמים חריש",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "דרך ארץ 45, חריש",
+    "cityId": "חריש",
+    "location": {
+      "latitude": 32.4617,
+      "longitude": 35.043
+    },
+    "phone": "04-6303030",
+    "website": "https://www.shnitzel20teamim.co.il",
+    "instagram": "https://www.instagram.com/shnitzel20_teamim",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shnitzel20-yokneam",
+    "name": "שניצל 20 טעמים יוקנעם",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "התמר 1, יוקנעם",
+    "cityId": "יוקנעם",
+    "location": {
+      "latitude": 32.6564,
+      "longitude": 35.0983
+    },
+    "phone": "04-6148666",
+    "website": "https://www.shnitzel20teamim.co.il",
+    "instagram": "https://www.instagram.com/shnitzel20_teamim",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shnitzel20-haifa",
+    "name": "שניצל 20 טעמים חיפה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "הרצל 27, חיפה",
+    "cityId": "חיפה",
+    "location": {
+      "latitude": 32.8134,
+      "longitude": 34.9949
+    },
+    "phone": "04-8888715",
+    "website": "https://www.shnitzel20teamim.co.il",
+    "instagram": "https://www.instagram.com/shnitzel20_teamim",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shnitzel20-afula",
+    "name": "שניצל 20 טעמים עפולה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "נשיא 25, עפולה",
+    "cityId": "עפולה",
+    "location": {
+      "latitude": 32.6079,
+      "longitude": 35.2898
+    },
+    "phone": "052-2556446",
+    "website": "https://www.shnitzel20teamim.co.il",
+    "instagram": "https://www.instagram.com/shnitzel20_teamim",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shnitzel20-karmiel",
+    "name": "שניצל 20 טעמים כרמיאל",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "קניון חוצות, כרמיאל",
+    "cityId": "כרמיאל",
+    "location": {
+      "latitude": 32.9137,
+      "longitude": 35.298
+    },
+    "phone": "054-6262246",
+    "website": "https://www.shnitzel20teamim.co.il",
+    "instagram": "https://www.instagram.com/shnitzel20_teamim",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shnitzel20-or-akiva",
+    "name": "שניצל 20 טעמים אור עקיבא",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "רבי קוק 2, אור עקיבא",
+    "cityId": "אור עקיבא",
+    "location": {
+      "latitude": 32.5042,
+      "longitude": 34.9178
+    },
+    "phone": "04-6344850",
+    "website": "https://www.shnitzel20teamim.co.il",
+    "instagram": "https://www.instagram.com/shnitzel20_teamim",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shnitzel20-zichron",
+    "name": "שניצל 20 טעמים זיכרון יעקב",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "הנשיא 15, זיכרון יעקב",
+    "cityId": "זיכרון יעקב",
+    "location": {
+      "latitude": 32.5719,
+      "longitude": 34.947
+    },
+    "phone": "04-6333061",
+    "website": "https://www.shnitzel20teamim.co.il",
+    "instagram": "https://www.instagram.com/shnitzel20_teamim",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shnitzel20-pardes-hana",
+    "name": "שניצל 20 טעמים פרדס חנה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "דרך הבנים 2, פרדס חנה",
+    "cityId": "פרדס חנה",
+    "location": {
+      "latitude": 32.4722,
+      "longitude": 34.962
+    },
+    "phone": "04-6464161",
+    "website": "https://www.shnitzel20teamim.co.il",
+    "instagram": "https://www.instagram.com/shnitzel20_teamim",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shnitzel-company-tlv-allon",
+    "name": "שניצל קומפני",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "יגאל אלון 94, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0698,
+      "longitude": 34.7923
+    },
+    "phone": "03-6222291",
+    "website": "https://www.scompany.co.il",
+    "instagram": "https://www.instagram.com/s.scompany",
+    "facebook": "https://www.facebook.com/schnitzelcompany",
+    "certifiedBy": "רבנות ראשית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shnitzel-company-tlv-sarona",
+    "name": "שניצל קומפני שרונה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "הארבעה 16, שרונה, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.066,
+      "longitude": 34.7906
+    },
+    "phone": "03-5392777",
+    "website": "https://www.scompany.co.il",
+    "instagram": "https://www.instagram.com/s.scompany",
+    "facebook": "https://www.facebook.com/schnitzelcompany",
+    "certifiedBy": "רבנות ראשית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shnitzel-company-tlv-ramat-hahyal",
+    "name": "שניצל קומפני רמת החייל",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "דבורה הנביאה 128, רמת החייל, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.1097,
+      "longitude": 34.8239
+    },
+    "phone": "03-9222484",
+    "website": "https://www.scompany.co.il",
+    "instagram": "https://www.instagram.com/s.scompany",
+    "facebook": "https://www.facebook.com/schnitzelcompany",
+    "certifiedBy": "רבנות ראשית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shnitzel-company-ramat-gan",
+    "name": "שניצל קומפני רמת גן",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "אבא הלל 7, הבורסה, רמת גן",
+    "cityId": "רמת גן",
+    "location": {
+      "latitude": 32.0781,
+      "longitude": 34.8116
+    },
+    "phone": "03-6138281",
+    "website": "https://www.scompany.co.il",
+    "instagram": "https://www.instagram.com/s.scompany",
+    "facebook": "https://www.facebook.com/schnitzelcompany",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shnitzel-company-bb",
+    "name": "שניצל קומפני בני ברק",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "בן גוריון 1, מגדל בסר 2, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.08,
+      "longitude": 34.8309
+    },
+    "phone": "03-5781655",
+    "website": "https://www.scompany.co.il",
+    "instagram": "https://www.instagram.com/s.scompany",
+    "facebook": "https://www.facebook.com/schnitzelcompany",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shnitzel-company-herzliya",
+    "name": "שניצל קומפני הרצליה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "המנופים 9, הרצליה פיתוח",
+    "cityId": "הרצליה",
+    "location": {
+      "latitude": 32.1572,
+      "longitude": 34.818
+    },
+    "phone": "09-9589234",
+    "website": "https://www.scompany.co.il",
+    "instagram": "https://www.instagram.com/s.scompany",
+    "facebook": "https://www.facebook.com/schnitzelcompany",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shnitzel-company-raanana",
+    "name": "שניצל קומפני רעננה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "זרחין 13, רעננה",
+    "cityId": "רעננה",
+    "location": {
+      "latitude": 32.1852,
+      "longitude": 34.8723
+    },
+    "phone": "09-8844128",
+    "website": "https://www.scompany.co.il",
+    "instagram": "https://www.instagram.com/s.scompany",
+    "facebook": "https://www.facebook.com/schnitzelcompany",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shnitzel-company-holon",
+    "name": "שניצל קומפני חולון",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "מול בית חולים וולפסון, חולון",
+    "cityId": "חולון",
+    "location": {
+      "latitude": 32.0058,
+      "longitude": 34.772
+    },
+    "phone": "054-4093370",
+    "website": "https://www.scompany.co.il",
+    "instagram": "https://www.instagram.com/s.scompany",
+    "facebook": "https://www.facebook.com/schnitzelcompany",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shnitzel-chef-bb",
+    "name": "שניצל שף",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "ירושלים 8, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.079,
+      "longitude": 34.829
+    },
+    "phone": "03-5084881",
+    "certifiedBy": "בד\"ץ לנדא",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shnitzel-papa-herzliya",
+    "name": "שניצל פאפא",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "הרצליה",
+    "cityId": "הרצליה",
+    "location": {
+      "latitude": 32.1641,
+      "longitude": 34.8352
+    },
+    "website": "https://schnitzelpapa.co.il",
+    "certifiedBy": "בד\"ץ",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shnitzel-point-tlv-yad-harutzim",
+    "name": "שניצל פוינט",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "יד חרוצים 13, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0649,
+      "longitude": 34.786
+    },
+    "phone": "050-2840985",
+    "website": "https://schnitzelpoint.co.il",
+    "instagram": "https://www.instagram.com/schnitzelpointtlv",
+    "facebook": "https://www.facebook.com/shnitzelpoint",
+    "certifiedBy": "רבנות תל אביב",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shnitzel-point-tlv-ibn-gavirol",
+    "name": "שניצל פוינט אבן גבירול",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "אבן גבירול 107, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0882,
+      "longitude": 34.7806
+    },
+    "website": "https://schnitzelpoint.co.il",
+    "instagram": "https://www.instagram.com/schnitzelpointtlv",
+    "facebook": "https://www.facebook.com/shnitzelpoint",
+    "certifiedBy": "רבנות תל אביב",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-schnitzelein-bb",
+    "name": "שניצליין",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "מצדה 9, כנרת, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.0818,
+      "longitude": 34.8342
+    },
+    "phone": "1-700-700355",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-schnitzelein-tlv",
+    "name": "שניצליין תל אביב",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "יד חרוצים 13, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0649,
+      "longitude": 34.786
+    },
+    "certifiedBy": "רבנות תל אביב",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shnitzels-raanana",
+    "name": "שניצלס",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "אחוזה 117, רעננה",
+    "cityId": "רעננה",
+    "location": {
+      "latitude": 32.1835,
+      "longitude": 34.868
+    },
+    "phone": "09-7718887",
+    "website": "https://shnizels.co.il",
+    "instagram": "https://www.instagram.com/shnitzels_raanana",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hashnitzelia-kiryat-ata",
+    "name": "השניצליה קרית אתא",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "העצמאות 74, קרית אתא",
+    "cityId": "קרית אתא",
+    "location": {
+      "latitude": 32.7992,
+      "longitude": 35.1048
+    },
+    "website": "https://hashnizelia.co.il",
+    "instagram": "https://www.instagram.com/ha_shnizelia",
+    "facebook": "https://www.facebook.com/hashnizelia",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hashnitzelia-nesher",
+    "name": "השניצליה נשר",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "דרך השלום 11, מתחם רמי לוי, נשר",
+    "cityId": "נשר",
+    "location": {
+      "latitude": 32.7918,
+      "longitude": 35.0428
+    },
+    "website": "https://hashnizelia.co.il",
+    "instagram": "https://www.instagram.com/ha_shnizelia",
+    "facebook": "https://www.facebook.com/hashnizelia",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hashnitzelia-tirat-carmel",
+    "name": "השניצליה טירת הכרמל",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "הרצל 82, תחנת ילו, טירת הכרמל",
+    "cityId": "טירת הכרמל",
+    "location": {
+      "latitude": 32.7645,
+      "longitude": 34.9719
+    },
+    "website": "https://hashnizelia.co.il",
+    "instagram": "https://www.instagram.com/ha_shnizelia",
+    "facebook": "https://www.facebook.com/hashnizelia",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hashnitzelia-maalot",
+    "name": "השניצליה מעלות",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "מעלות",
+    "cityId": "מעלות-תרשיחא",
+    "location": {
+      "latitude": 33.0196,
+      "longitude": 35.2674
+    },
+    "website": "https://hashnizelia.co.il",
+    "instagram": "https://www.instagram.com/ha_shnizelia",
+    "facebook": "https://www.facebook.com/hashnizelia",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hashnitzelia-kiryat-shmona",
+    "name": "השניצליה קרית שמונה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "שדרות תל חי 83, קרית שמונה",
+    "cityId": "קרית שמונה",
+    "location": {
+      "latitude": 33.2072,
+      "longitude": 35.5727
+    },
+    "website": "https://hashnizelia.co.il",
+    "instagram": "https://www.instagram.com/ha_shnizelia",
+    "facebook": "https://www.facebook.com/hashnizelia",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hashnitzelia-ariel",
+    "name": "השניצליה אריאל",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "דרך הציונות 56, אריאל",
+    "cityId": "אריאל",
+    "location": {
+      "latitude": 32.1058,
+      "longitude": 35.182
+    },
+    "website": "https://hashnizelia.co.il",
+    "instagram": "https://www.instagram.com/ha_shnizelia",
+    "facebook": "https://www.facebook.com/hashnizelia",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hashnitzelia-tlv-karlbach",
+    "name": "השניצליה תל אביב קרליבך",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "קרליבך 10, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0683,
+      "longitude": 34.7876
+    },
+    "website": "https://hashnizelia.co.il",
+    "instagram": "https://www.instagram.com/ha_shnizelia",
+    "facebook": "https://www.facebook.com/hashnizelia",
+    "certifiedBy": "רבנות תל אביב",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hashnitzelia-tlv-menora",
+    "name": "השניצליה היכל מנורה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "השלושה 11, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.062,
+      "longitude": 34.7907
+    },
+    "website": "https://hashnizelia.co.il",
+    "instagram": "https://www.instagram.com/ha_shnizelia",
+    "facebook": "https://www.facebook.com/hashnizelia",
+    "certifiedBy": "רבנות תל אביב",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hashnitzelia-katzrin",
+    "name": "השניצליה קצרין",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "מרכז עיתן 1, קצרין",
+    "cityId": "קצרין",
+    "location": {
+      "latitude": 32.993,
+      "longitude": 35.6908
+    },
+    "phone": "053-7103939",
+    "website": "https://hashnizelia.co.il",
+    "instagram": "https://www.instagram.com/ha_shnizelia",
+    "facebook": "https://www.facebook.com/hashnizelia",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hashnitzelia-safed",
+    "name": "השניצליה צפת",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "ירושלים 89, צפת",
+    "cityId": "צפת",
+    "location": {
+      "latitude": 32.962,
+      "longitude": 35.4941
+    },
+    "website": "https://hashnizelia.co.il",
+    "instagram": "https://www.instagram.com/ha_shnizelia",
+    "facebook": "https://www.facebook.com/hashnizelia",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-mexicaneez-kiryat-haim",
+    "name": "מקסיקניז",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "אח\"י אילת 15, קריית חיים",
+    "cityId": "קריית חיים",
+    "location": {
+      "latitude": 32.8274,
+      "longitude": 35.0668
+    },
+    "phone": "04-840-8408",
+    "website": "https://mexicaneez.co.il",
+    "instagram": "https://www.instagram.com/mexicaneez",
+    "certifiedBy": "כשרות הרב מחפוד",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-mexicaneez-haifa",
+    "name": "מקסיקניז חיפה מרכז זיו",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "שד' טרומפלדור 56, מרכז זיו, חיפה",
+    "cityId": "חיפה",
+    "location": {
+      "latitude": 32.8087,
+      "longitude": 34.9881
+    },
+    "phone": "053-243-5579",
+    "website": "https://mexicaneez.co.il",
+    "instagram": "https://www.instagram.com/mexicaneez",
+    "certifiedBy": "כשרות הרב מחפוד",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-mexicana-tlv-ramat-hahyal",
+    "name": "מקסיקנה רמת החייל",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "ראול ולנברג 20, רמת החייל, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.1097,
+      "longitude": 34.8239
+    },
+    "phone": "1700-500-993",
+    "website": "https://mexicana.co.il",
+    "instagram": "https://www.instagram.com/mexicana.israel",
+    "facebook": "https://www.facebook.com/mexicana.tlv",
+    "certifiedBy": "רבנות תל אביב",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-mexicana-tlv-sarona",
+    "name": "מקסיקנה שרונה",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "שרונה מרקט, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0632,
+      "longitude": 34.7907
+    },
+    "website": "https://mexicana.co.il",
+    "instagram": "https://www.instagram.com/mexicana.israel",
+    "facebook": "https://www.facebook.com/mexicana.tlv",
+    "certifiedBy": "רבנות תל אביב",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-mexicana-glilot",
+    "name": "מקסיקנה גלילות",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "גלילות, סינמה סיטי",
+    "cityId": "גלילות",
+    "location": {
+      "latitude": 32.1343,
+      "longitude": 34.8373
+    },
+    "website": "https://mexicana.co.il",
+    "instagram": "https://www.instagram.com/mexicana.israel",
+    "facebook": "https://www.facebook.com/mexicana.tlv",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-mexicana-rishon-cinema",
+    "name": "מקסיקנה ראשון סינמה סיטי",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "סינמה סיטי, ראשון לציון",
+    "cityId": "ראשון לציון",
+    "location": {
+      "latitude": 31.959,
+      "longitude": 34.802
+    },
+    "website": "https://mexicana.co.il",
+    "instagram": "https://www.instagram.com/mexicana.israel",
+    "facebook": "https://www.facebook.com/mexicana.tlv",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-mexicana-pt",
+    "name": "מקסיקנה פתח תקווה שופ טיים",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "תוצרת הארץ 3, שופ טיים, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.0831,
+      "longitude": 34.8771
+    },
+    "website": "https://mexicana.co.il",
+    "instagram": "https://www.instagram.com/mexicana.israel",
+    "facebook": "https://www.facebook.com/mexicana.tlv",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-mexicana-rehovot",
+    "name": "מקסיקנה רחובות",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "המדע 6, פארק המדע, רחובות",
+    "cityId": "רחובות",
+    "location": {
+      "latitude": 31.9001,
+      "longitude": 34.806
+    },
+    "website": "https://mexicana.co.il",
+    "instagram": "https://www.instagram.com/mexicana.rehovot",
+    "facebook": "https://www.facebook.com/mexicana.tlv",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-mexicana-rishonim",
+    "name": "מקסיקנה קניון ראשונים",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "קניון ראשונים, ראשון לציון",
+    "cityId": "ראשון לציון",
+    "location": {
+      "latitude": 31.962,
+      "longitude": 34.805
+    },
+    "website": "https://mexicana.co.il",
+    "instagram": "https://www.instagram.com/mexicana.israel",
+    "facebook": "https://www.facebook.com/mexicana.tlv",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-rapidos-netanya",
+    "name": "רפידוס נתניה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "גיבורי ישראל 17, Y סנטר, נתניה",
+    "cityId": "נתניה",
+    "location": {
+      "latitude": 32.325,
+      "longitude": 34.8543
+    },
+    "website": "https://rapidos.co.il",
+    "instagram": "https://www.instagram.com/rapidos.il",
+    "facebook": "https://www.facebook.com/rapidos.il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-rapidos-herzliya",
+    "name": "רפידוס הרצליה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "דוד בן גוריון 35, הרצליה",
+    "cityId": "הרצליה",
+    "location": {
+      "latitude": 32.1653,
+      "longitude": 34.8367
+    },
+    "website": "https://rapidos.co.il",
+    "instagram": "https://www.instagram.com/rapidos.il",
+    "facebook": "https://www.facebook.com/rapidos.il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-rapidos-pt",
+    "name": "רפידוס פתח תקווה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "כפר גנים, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.0895,
+      "longitude": 34.8897
+    },
+    "website": "https://rapidos.co.il",
+    "instagram": "https://www.instagram.com/rapidos.il",
+    "facebook": "https://www.facebook.com/rapidos.il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-rapidos-rishon",
+    "name": "רפידוס ראשון לציון",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "רוטשילד 85, ראשון לציון",
+    "cityId": "ראשון לציון",
+    "location": {
+      "latitude": 31.964,
+      "longitude": 34.796
+    },
+    "website": "https://rapidos.co.il",
+    "instagram": "https://www.instagram.com/rapidos.il",
+    "facebook": "https://www.facebook.com/rapidos.il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-rapidos-tlv-menora",
+    "name": "רפידוס היכל מנורה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "היכל מנורה מבטחים, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.062,
+      "longitude": 34.7907
+    },
+    "website": "https://rapidos.co.il",
+    "instagram": "https://www.instagram.com/rapidos.il",
+    "facebook": "https://www.facebook.com/rapidos.il",
+    "certifiedBy": "רבנות תל אביב",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-rapidos-nahariya",
+    "name": "רפידוס נהריה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "מתחם בריזה, נהריה",
+    "cityId": "נהריה",
+    "location": {
+      "latitude": 33.0045,
+      "longitude": 35.0966
+    },
+    "website": "https://rapidos.co.il",
+    "instagram": "https://www.instagram.com/rapidos.il",
+    "facebook": "https://www.facebook.com/rapidos.il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-kansai-tlv",
+    "name": "קנסאי סושי",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "יגאל אלון 94, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0698,
+      "longitude": 34.7923
+    },
+    "website": "https://kansai.co.il",
+    "instagram": "https://www.instagram.com/kansai_sushi",
+    "facebook": "https://www.facebook.com/sushikansai",
+    "certifiedBy": "רבנות תל אביב",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-kansai-pt",
+    "name": "קנסאי סושי פתח תקווה",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "רפאל איתן 3, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.0831,
+      "longitude": 34.8771
+    },
+    "website": "https://kansai.co.il",
+    "instagram": "https://www.instagram.com/kansai_sushi",
+    "facebook": "https://www.facebook.com/sushikansai",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-kansai-holon",
+    "name": "קנסאי סושי חולון",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "שדרות ירושלים 95, חולון",
+    "cityId": "חולון",
+    "location": {
+      "latitude": 32.0093,
+      "longitude": 34.7772
+    },
+    "website": "https://kansai.co.il",
+    "instagram": "https://www.instagram.com/kansai_sushi",
+    "facebook": "https://www.facebook.com/sushikansai",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-sushi-rehavia-rehavia",
+    "name": "סושי רחביה",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "דרך עזה 31, רחביה, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7786,
+      "longitude": 35.1999
+    },
+    "phone": "02-5667477",
+    "website": "https://sushirehavia.co.il",
+    "instagram": "https://www.instagram.com/sushi.rehavia",
+    "facebook": "https://www.facebook.com/SushiRehavia",
+    "certifiedBy": "רבנות ירושלים",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-sushi-rehavia-emek-refaim",
+    "name": "סושי רחביה עמק רפאים",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "עמק רפאים 38, המושבה הגרמנית, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7651,
+      "longitude": 35.2066
+    },
+    "phone": "02-5637777",
+    "website": "https://sushirehavia.co.il",
+    "instagram": "https://www.instagram.com/sushi.rehavia",
+    "facebook": "https://www.facebook.com/SushiRehavia",
+    "certifiedBy": "רבנות ירושלים",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-sushi-rehavia-city-center",
+    "name": "סושי רחביה מרכז ירושלים",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "רבי עקיבא 6, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7801,
+      "longitude": 35.2238
+    },
+    "phone": "02-6222083",
+    "website": "https://sushirehavia.co.il",
+    "instagram": "https://www.instagram.com/sushi.rehavia",
+    "facebook": "https://www.facebook.com/SushiRehavia",
+    "certifiedBy": "רבנות ירושלים",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-sushi-rehavia-rachel-imenu",
+    "name": "סושי רחביה רחל אמנו",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "רחל אמנו 2, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7551,
+      "longitude": 35.2156
+    },
+    "phone": "073-3861792",
+    "website": "https://sushirehavia.co.il",
+    "instagram": "https://www.instagram.com/sushi.rehavia",
+    "facebook": "https://www.facebook.com/SushiRehavia",
+    "certifiedBy": "רבנות ירושלים",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-sushi-bazel-tlv",
+    "name": "סושי בר בזל",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "בוגרשוב 33, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0708,
+      "longitude": 34.7728
+    },
+    "phone": "077-9968444",
+    "website": "https://sushibarbazel.co.il",
+    "instagram": "https://www.instagram.com/sushi_bazel_",
+    "facebook": "https://www.facebook.com/sushibarbazeltlv",
+    "certifiedBy": "רבנות תל אביב",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-sushi-bazel-netanya",
+    "name": "סושי בר בזל נתניה",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "מיפני 5, מתחם סוהו, נתניה",
+    "cityId": "נתניה",
+    "location": {
+      "latitude": 32.3261,
+      "longitude": 34.86
+    },
+    "phone": "09-7676111",
+    "website": "https://sushibarbazel.co.il",
+    "instagram": "https://www.instagram.com/sushi_bazel_",
+    "facebook": "https://www.facebook.com/sushibarbazeltlv",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-wok-to-walk-tlv",
+    "name": "ווק טו ווק",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "החשמונאים 86, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0694,
+      "longitude": 34.788
+    },
+    "website": "https://www.woktowalk.com/he",
+    "instagram": "https://www.instagram.com/woktowalkisrael",
+    "facebook": "https://www.facebook.com/woktowalkisrael",
+    "certifiedBy": "רבנות תל אביב",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-wok-to-walk-pt",
+    "name": "ווק טו ווק פתח תקווה",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "תוצרת הארץ 3, שופ טיים, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.0831,
+      "longitude": 34.8771
+    },
+    "website": "https://www.woktowalk.com/he",
+    "instagram": "https://www.instagram.com/woktowalkisrael",
+    "facebook": "https://www.facebook.com/woktowalkisrael",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-wok-to-walk-netanya",
+    "name": "ווק טו ווק נתניה",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "מתחם פיאנו, נתניה",
+    "cityId": "נתניה",
+    "location": {
+      "latitude": 32.3312,
+      "longitude": 34.8538
+    },
+    "website": "https://www.woktowalk.com/he",
+    "instagram": "https://www.instagram.com/woktowalkisrael",
+    "facebook": "https://www.facebook.com/woktowalkisrael",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-wok-to-walk-jrm",
+    "name": "ווק טו ווק ירושלים",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "התחנה הראשונה, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7754,
+      "longitude": 35.2108
+    },
+    "website": "https://www.woktowalk.com/he",
+    "instagram": "https://www.instagram.com/woktowalkisrael",
+    "facebook": "https://www.facebook.com/woktowalkisrael",
+    "certifiedBy": "רבנות ירושלים",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-wok-to-walk-rishon",
+    "name": "ווק טו ווק ראשון לציון",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "ראשון לציון",
+    "cityId": "ראשון לציון",
+    "location": {
+      "latitude": 31.959,
+      "longitude": 34.8
+    },
+    "website": "https://www.woktowalk.com/he",
+    "instagram": "https://www.instagram.com/woktowalkisrael",
+    "facebook": "https://www.facebook.com/woktowalkisrael",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-wok-away-bat-yam",
+    "name": "ווק אווי בת ים",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "דרך בן גוריון 71, בת ים",
+    "cityId": "בת ים",
+    "location": {
+      "latitude": 32.0148,
+      "longitude": 34.7485
+    },
+    "phone": "054-8974242",
+    "website": "https://wokaway.co.il",
+    "instagram": "https://www.instagram.com/wokawaykrayot",
+    "facebook": "https://www.facebook.com/wokawayIL",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-wok-away-pt",
+    "name": "ווק אווי פתח תקווה",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "יעל רום 8, רום סנטר, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.0831,
+      "longitude": 34.878
+    },
+    "phone": "053-8585300",
+    "website": "https://wokaway.co.il",
+    "instagram": "https://www.instagram.com/wokawaykrayot",
+    "facebook": "https://www.facebook.com/wokawayIL",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-wok-away-eilat",
+    "name": "ווק אווי אילת",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "דרך יותם 1, מרכז תיירות, אילת",
+    "cityId": "אילת",
+    "location": {
+      "latitude": 29.5544,
+      "longitude": 34.9489
+    },
+    "phone": "08-6665560",
+    "website": "https://wokaway.co.il",
+    "instagram": "https://www.instagram.com/wokawaykrayot",
+    "facebook": "https://www.facebook.com/wokawayIL",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-sai-sushi-ramat-gan",
+    "name": "סאי סושי בר",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "תובל 9, מתחם הבורסה, רמת גן",
+    "cityId": "רמת גן",
+    "location": {
+      "latitude": 32.068,
+      "longitude": 34.81
+    },
+    "website": "https://saisushibar.com",
+    "instagram": "https://www.instagram.com/sai_sushi_bar",
+    "facebook": "https://www.facebook.com/saisushiramatgan",
+    "certifiedBy": "רבנות רמת גן",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-kampai-beersheva",
+    "name": "קמפאי סטריט ווק באר שבע",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "חיל ההנדסה 1, ביג, באר שבע",
+    "cityId": "באר שבע",
+    "location": {
+      "latitude": 31.2574,
+      "longitude": 34.7756
+    },
+    "website": "https://kampaistreetwok.co.il",
+    "instagram": "https://www.instagram.com/kampaistreetwok",
+    "facebook": "https://www.facebook.com/kampai.expres",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-kampai-ashdod",
+    "name": "קמפאי סטריט ווק אשדוד",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "אריאל שרון 1, אשדוד",
+    "cityId": "אשדוד",
+    "location": {
+      "latitude": 31.803,
+      "longitude": 34.648
+    },
+    "website": "https://kampaistreetwok.co.il",
+    "instagram": "https://www.instagram.com/kampaistreetwok",
+    "facebook": "https://www.facebook.com/kampai.expres",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-transit-beer-yaakov",
+    "name": "טרנזיט",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "שה\"נס 17, קניון, באר יעקב",
+    "cityId": "באר יעקב",
+    "location": {
+      "latitude": 31.931,
+      "longitude": 34.839
+    },
+    "website": "https://www.transit-rest.co.il",
+    "instagram": "https://www.instagram.com/transit_rest",
+    "facebook": "https://www.facebook.com/transitrest",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-red-sun-bilu-center",
+    "name": "רד סאן בילו סנטר",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "המלך חסן השני 1, בילו סנטר, קרית עקרון",
+    "cityId": "קרית עקרון",
+    "location": {
+      "latitude": 31.855,
+      "longitude": 34.798
+    },
+    "phone": "074-7223344",
+    "website": "https://redsun.co.il",
+    "instagram": "https://www.instagram.com/red.sun.sushi",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-red-sun-mazkeret-batya",
+    "name": "רד סאן מזכרת בתיה",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "הגורן 2, מזכרת בתיה",
+    "cityId": "מזכרת בתיה",
+    "location": {
+      "latitude": 31.8645,
+      "longitude": 34.8022
+    },
+    "phone": "074-7223344",
+    "website": "https://redsun.co.il",
+    "instagram": "https://www.instagram.com/red.sun.sushi",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "shimoni-13fd5e51",
+    "name": "שווארמה שמעוני אשדוד",
+    "type": "restaurant",
+    "cityId": "אשדוד",
+    "address": "ניר גלים, אשדוד",
+    "phone": "08-6642700",
+    "location": {
+      "latitude": 31.8,
+      "longitude": 34.65
+    },
+    "website": "https://www.instagram.com/shawarma.shimoni",
+    "openingHours": "א'-ד' 13:00-23:00 | ה' 14:00-23:30 | ו' סגור | ש' 19:30-23:15",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-19"
   }
 ]
