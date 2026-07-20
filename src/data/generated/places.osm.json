@@ -131924,5 +131924,1969 @@
     "certifiedBy": "בד\"ץ בית יוסף",
     "kosherType": "mehadrin",
     "source": "manual"
+  },
+  {
+    "id": "butra-393d85e9",
+    "name": "בוטרא תל אביב",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "הארבעה 28, תל אביב",
+    "phone": "03-7500777",
+    "location": {
+      "latitude": 32.0685,
+      "longitude": 34.7873
+    },
+    "openingHours": "א'-ה' 07:30-19:30 | ו' 09:00-13:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "doner-627c827b",
+    "name": "דונר אקספרס יהוד",
+    "type": "restaurant",
+    "cityId": "יהוד מונסון",
+    "address": "אברהם גירון 15, יהוד מונסון",
+    "phone": "03-6325111",
+    "location": {
+      "latitude": 32.0345,
+      "longitude": 34.8802
+    },
+    "website": "https://doneryehud.co.il",
+    "openingHours": "א'-ה' 10:00-23:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "elijahyaffo-992610e0",
+    "name": "שווארמה אליהו יפו",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "בית אל 12, יפו, תל אביב",
+    "phone": "03-9591891",
+    "location": {
+      "latitude": 32.0503,
+      "longitude": 34.7536
+    },
+    "openingHours": "א'-ה' 11:00-19:00 | ו' 08:00-14:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "tombik-077b2219",
+    "name": "טומביק שווארמה תל אביב",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "אבא אחימאיר 15, מרכז שוסטר, תל אביב",
+    "phone": "050-364-3333",
+    "location": {
+      "latitude": 32.1011,
+      "longitude": 34.8175
+    },
+    "website": "https://www.instagram.com/tombik_1",
+    "openingHours": "א'-ה' 11:00-21:30 | ו' 11:00-15:30 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "yashkaatidim-3849a829",
+    "name": "יאשקה קרית עתידים תל אביב",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "דבורה הנביאה 121, קרית עתידים, תל אביב",
+    "phone": "03-5057632",
+    "location": {
+      "latitude": 32.1126,
+      "longitude": 34.8353
+    },
+    "website": "https://www.yashka.co.il",
+    "openingHours": "א'-ה' 11:00-17:00 | ו' 10:30-15:30 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "tzarumherzliya-ce91ef49",
+    "name": "שווארמה צארום הרצליה",
+    "type": "restaurant",
+    "cityId": "הרצליה",
+    "address": "סוקולוב 73, הרצליה",
+    "phone": "09-886-4999",
+    "location": {
+      "latitude": 32.1664,
+      "longitude": 34.8406
+    },
+    "website": "https://tzarum.co.il",
+    "openingHours": "א'-ה' 11:00-00:00 | ו' 11:00-15:00 | ש' מוצ\"ש עד 01:00",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "tzarumraanana-f8a68b34",
+    "name": "שווארמה צארום רעננה",
+    "type": "restaurant",
+    "cityId": "רעננה",
+    "address": "אחוזה 89, רעננה",
+    "phone": "077-954-2510",
+    "location": {
+      "latitude": 32.1826,
+      "longitude": 34.8715
+    },
+    "website": "https://www.instagram.com/shawarma_tzarum89",
+    "openingHours": "א'-ה' 11:00-23:00 | ו' 10:00-15:00 | ש' מוצ\"ש עד 00:00",
+    "category": "meat",
+    "kosherType": "badatz_beit_yosef",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "bshadraRS-f423e349",
+    "name": "שווארמה בשדרה רמת השרון",
+    "type": "restaurant",
+    "cityId": "רמת השרון",
+    "address": "סוקולוב 69, רמת השרון",
+    "phone": "03-5402129",
+    "location": {
+      "latitude": 32.146,
+      "longitude": 34.8339
+    },
+    "openingHours": "א'-ה' 10:30-22:30 | ו' 10:30-15:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "bkikarHS-b9d1860a",
+    "name": "שווארמה בכיכר הוד השרון",
+    "type": "restaurant",
+    "cityId": "הוד השרון",
+    "address": "הידידות 11, הוד השרון",
+    "phone": "09-744-1165",
+    "location": {
+      "latitude": 32.1506,
+      "longitude": 34.8958
+    },
+    "openingHours": "א'-ה' 10:30-20:30 | ו' 10:30-15:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "boyaPT-8bfbe84a",
+    "name": "שווארמה בויה פתח תקווה",
+    "type": "restaurant",
+    "cityId": "פתח תקווה",
+    "address": "היצירה 5, פתח תקווה",
+    "phone": "052-245-3874",
+    "location": {
+      "latitude": 32.0887,
+      "longitude": 34.8797
+    },
+    "openingHours": "א'-ה' 10:00-17:30 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "nadavPT-ae666fcf",
+    "name": "נדב שווארמה ופלאפל פתח תקווה",
+    "type": "restaurant",
+    "cityId": "פתח תקווה",
+    "address": "חיים עוזר 38, פתח תקווה",
+    "phone": "03-9318355",
+    "location": {
+      "latitude": 32.0863,
+      "longitude": 34.8841
+    },
+    "openingHours": "א'-ה' 09:30-21:00 | ו' 09:00-14:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "agababaKS-8c180773",
+    "name": "אגבבה שווארמה שמש כפר סבא",
+    "type": "restaurant",
+    "cityId": "כפר סבא",
+    "address": "אנגל 78, מרכז דימרי, כפר סבא",
+    "phone": "09-894-5866",
+    "location": {
+      "latitude": 32.1713,
+      "longitude": 34.9001
+    },
+    "website": "https://shawarma-agababa.co.il",
+    "openingHours": "א'-ה' 11:00-22:00 | ו' 11:00-16:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "beitratzon1-cd2521a3",
+    "name": "שווארמה בית רצון נתניה גיבורים",
+    "type": "restaurant",
+    "cityId": "נתניה",
+    "address": "שדרות גיבורי ישראל 40, נתניה",
+    "phone": "09-767-7922",
+    "location": {
+      "latitude": 32.3255,
+      "longitude": 34.8527
+    },
+    "website": "https://www.instagram.com/shawarma_beit_ratzon",
+    "openingHours": "א'-ה' 11:00-21:00 | ו' 09:00-14:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "beitratzon2-e102784a",
+    "name": "שווארמה בית רצון נתניה שער הגיא",
+    "type": "restaurant",
+    "cityId": "נתניה",
+    "address": "שער הגיא 5, נתניה",
+    "phone": "09-861-6157",
+    "location": {
+      "latitude": 32.3281,
+      "longitude": 34.8518
+    },
+    "website": "https://www.instagram.com/shawarma_beit_ratzon",
+    "openingHours": "א'-ה' 09:00-22:00 | ו' 09:00-15:30 | ש' מוצ\"ש עד 23:00",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "shimeonstar-fca60f0c",
+    "name": "שמעון סטאר נתניה",
+    "type": "restaurant",
+    "cityId": "נתניה",
+    "address": "הנוטע 1, נתניה",
+    "phone": "052-527-0877",
+    "location": {
+      "latitude": 32.3238,
+      "longitude": 34.8588
+    },
+    "openingHours": "א'-ה' 11:30-22:30 | ו' 11:00-15:10 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "nona-3a142353",
+    "name": "שווארמה נונה נתניה",
+    "type": "restaurant",
+    "cityId": "נתניה",
+    "address": "סמילנסקי 5, נתניה",
+    "phone": "077-961-6536",
+    "location": {
+      "latitude": 32.3253,
+      "longitude": 34.8504
+    },
+    "openingHours": "א'-ה' 10:00-03:00 | ו' 08:00-כניסת שבת | ש' מוצ\"ש עד 03:00",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "shefbherzl-cb042cd7",
+    "name": "השף בהרצל נתניה",
+    "type": "restaurant",
+    "cityId": "נתניה",
+    "address": "הרצל 44, נתניה",
+    "phone": "076-801-7672",
+    "location": {
+      "latitude": 32.3235,
+      "longitude": 34.8535
+    },
+    "openingHours": "א'-ה' 10:00-02:00 | ו' 10:00-כניסת שבת | ש' מוצ\"ש עד 02:00",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "shefalaash-2f4e356e",
+    "name": "שף על האש נתניה",
+    "type": "restaurant",
+    "cityId": "נתניה",
+    "address": "אחד העם 14, נתניה",
+    "phone": "077-550-9492",
+    "location": {
+      "latitude": 32.317,
+      "longitude": 34.8516
+    },
+    "website": "https://www.facebook.com/shefalaash",
+    "openingHours": "א'-ה' 11:00-00:00 | ו' 11:00-19:30 | ש' מוצ\"ש עד 00:00",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "shawarmaexpress-3112f117",
+    "name": "שווארמה אקספרס נתניה",
+    "type": "restaurant",
+    "cityId": "נתניה",
+    "address": "שדרות טום לנטוס 8, נתניה",
+    "phone": "09-745-5545",
+    "location": {
+      "latitude": 32.321,
+      "longitude": 34.855
+    },
+    "openingHours": "א'-ה' 11:00-00:00 | ו' סגור | ש' מוצ\"ש עד 00:00",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "omaysitm-58d3f8d5",
+    "name": "פלאפל עומייסי תל מונד",
+    "type": "restaurant",
+    "cityId": "תל מונד",
+    "address": "הדקל 85, תל מונד",
+    "phone": "050-265-6433",
+    "location": {
+      "latitude": 32.2693,
+      "longitude": 34.9206
+    },
+    "website": "https://www.facebook.com/omfalafel",
+    "openingHours": "א'-ה' 07:30-19:30 | ו' 09:00-13:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "leshalom-c1fb63af",
+    "name": "שווארמה לשלום פרדס חנה",
+    "type": "restaurant",
+    "cityId": "פרדס חנה כרכור",
+    "address": "המייסדים 31, פרדס חנה כרכור",
+    "phone": "04-811-1951",
+    "location": {
+      "latitude": 32.477,
+      "longitude": 34.9795
+    },
+    "website": "https://www.facebook.com/Shawarmaleshalom.co.il",
+    "openingHours": "א'-ה' 07:30-19:30 | ו' 09:00-13:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "badatz_beit_yosef",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "shalhavtia-b85f3ac6",
+    "name": "שלהבתיה חריש",
+    "type": "restaurant",
+    "cityId": "חריש",
+    "address": "דרך ארץ 42, חריש",
+    "phone": "053-934-9082",
+    "location": {
+      "latitude": 32.4527,
+      "longitude": 35.0245
+    },
+    "website": "https://beharish.co.il/b/שלהבתיה/",
+    "openingHours": "א'-ד' 11:00-22:00 | ה' 11:00-23:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "bkikarnesher-27b33288",
+    "name": "שווארמה בכיכר נשר",
+    "type": "restaurant",
+    "cityId": "נשר",
+    "address": "ברק 2, נשר",
+    "phone": "054-547-4373",
+    "location": {
+      "latitude": 32.7628,
+      "longitude": 35.0407
+    },
+    "website": "https://www.facebook.com/shipodim",
+    "openingHours": "א'-ה' 07:30-19:30 | ו' 09:00-13:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "kosher",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "elijahKA-92ee7f4b",
+    "name": "שווארמה פלאפל אליהו קרית אתא",
+    "type": "restaurant",
+    "cityId": "קרית אתא",
+    "address": "העצמאות 72, קרית אתא",
+    "phone": "077-536-3305",
+    "location": {
+      "latitude": 32.8011,
+      "longitude": 35.1081
+    },
+    "openingHours": "א'-ה' 10:30-19:00 | ו' 10:30-15:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "sammiKA-5c3212b1",
+    "name": "סמי שווארמה ובשר על האש קרית אתא",
+    "type": "restaurant",
+    "cityId": "קרית אתא",
+    "address": "העצמאות 51, קרית אתא",
+    "phone": "04-827-2220",
+    "location": {
+      "latitude": 32.8018,
+      "longitude": 35.1074
+    },
+    "website": "https://sammyshawarma.co.il",
+    "openingHours": "א'-ה' 10:00-22:00 | ו' 08:30-14:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "teomimhaifa-d7ec8d97",
+    "name": "שווארמה התאומים חיפה",
+    "type": "restaurant",
+    "cityId": "חיפה",
+    "address": "שדרות טרומפלדור 56, חיפה",
+    "phone": "04-869-1446",
+    "location": {
+      "latitude": 32.8134,
+      "longitude": 35.0005
+    },
+    "website": "https://www.instagram.com/the_twin_shawarma",
+    "openingHours": "א'-ה' 12:00-22:30 | ו' 12:00-16:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "papaluski-e0ab043a",
+    "name": "פאפא לוסקי נהריה",
+    "type": "restaurant",
+    "cityId": "נהריה",
+    "address": "שדרות הגעתון 19, נהריה",
+    "phone": "04-992-9459",
+    "location": {
+      "latitude": 33.0056,
+      "longitude": 35.096
+    },
+    "openingHours": "א'-ה' 09:00-22:00 | ו' 09:00-14:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "ramoshlomi-b635f576",
+    "name": "שווארמה רמו שלומי",
+    "type": "restaurant",
+    "cityId": "שלומי",
+    "address": "אזור תעשיה, שלומי",
+    "phone": "052-448-1377",
+    "location": {
+      "latitude": 33.0648,
+      "longitude": 35.1477
+    },
+    "openingHours": "א'-ה' 07:00-18:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "maalotrest-b59e9c05",
+    "name": "מסעדות העיר מעלות תרשיחא",
+    "type": "restaurant",
+    "cityId": "מעלות תרשיחא",
+    "address": "הרב קוק 28, מעלות תרשיחא",
+    "phone": "04-999-7608",
+    "location": {
+      "latitude": 33.0144,
+      "longitude": 35.2721
+    },
+    "openingHours": "א'-ה' 09:00-23:00 | ו' 09:00-15:00 | ש' מוצ\"ש עד 00:00",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "abaala-869d9ec9",
+    "name": "מסעדת אבאלה שומרה",
+    "type": "restaurant",
+    "cityId": "שומרה",
+    "address": "שומרה",
+    "phone": "04-693-2051",
+    "location": {
+      "latitude": 33.0701,
+      "longitude": 35.3025
+    },
+    "website": "https://www.facebook.com/p/מסעדת-אבאלה-61576725657280/",
+    "openingHours": "א'-ה' 07:30-19:30 | ו' 09:00-13:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "lafarafi-66476f26",
+    "name": "הלאפה של רפי צפת",
+    "type": "restaurant",
+    "cityId": "צפת",
+    "address": "ירושלים 88, צפת",
+    "phone": "04-692-1496",
+    "location": {
+      "latitude": 32.9645,
+      "longitude": 35.4969
+    },
+    "website": "https://www.facebook.com/212262719713761",
+    "openingHours": "א'-ה' 09:00-23:00 | ו' 08:00-כניסת שבת | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "beit148-7a2cd289",
+    "name": "בית השווארמה 148 צפת",
+    "type": "restaurant",
+    "cityId": "צפת",
+    "address": "דרך השוקולד, צפת",
+    "phone": "053-809-6343",
+    "location": {
+      "latitude": 32.9656,
+      "longitude": 35.4981
+    },
+    "openingHours": "א'-ה' 07:30-19:30 | ו' 09:00-13:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "avivnofhagalil-bcd70146",
+    "name": "מסעדת אביב נוף הגליל",
+    "type": "restaurant",
+    "cityId": "נוף הגליל",
+    "address": "כסולות, נוף הגליל",
+    "phone": "04-610-3190",
+    "location": {
+      "latitude": 32.717,
+      "longitude": 35.2978
+    },
+    "website": "https://www.facebook.com/avivsrestaurant",
+    "openingHours": "א'-ה' 10:00-20:00 | ו' 09:30-13:30 | ש' סגור",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "taiimtzmaх-17e80d2d",
+    "name": "טעים בצמח",
+    "type": "restaurant",
+    "cityId": "צמח",
+    "address": "מפעלים אזוריים, צמח",
+    "phone": "04-638-8745",
+    "location": {
+      "latitude": 32.7195,
+      "longitude": 35.5861
+    },
+    "openingHours": "א'-ה' 08:00-19:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "levinTib-02f1c890",
+    "name": "שווארמה לוין טבריה",
+    "type": "restaurant",
+    "cityId": "טבריה",
+    "address": "הגליל 32, טבריה",
+    "phone": "050-648-7046",
+    "location": {
+      "latitude": 32.7906,
+      "longitude": 35.5267
+    },
+    "website": "https://www.facebook.com/bagetlevintiberias",
+    "openingHours": "א'-ה' 07:30-19:30 | ו' 09:00-13:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "badatz_beit_yosef",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "nirTib-d584e8cd",
+    "name": "באגט ניר שווארמה טבריה",
+    "type": "restaurant",
+    "cityId": "טבריה",
+    "address": "אלחדיף 3, טבריה",
+    "phone": "04-671-2669",
+    "location": {
+      "latitude": 32.7832,
+      "longitude": 35.5311
+    },
+    "website": "https://www.instagram.com/bagetnir.tiberias/",
+    "openingHours": "א'-ה' 10:30-00:00 | ו' עד כניסת שבת | ש' מוצ\"ש עד 00:00",
+    "category": "meat",
+    "kosherType": "badatz_beit_yosef",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "teomimAfula-7816ec00",
+    "name": "שווארמה התאומים עפולה",
+    "type": "restaurant",
+    "cityId": "עפולה",
+    "address": "קפלן 12, עפולה",
+    "phone": "04-999-9653",
+    "location": {
+      "latitude": 32.6089,
+      "longitude": 35.2905
+    },
+    "website": "https://www.shawarmahteomim.co.il",
+    "openingHours": "א'-ה' 09:00-22:00 | ו' 09:00-15:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "shawarmoosAfula-440a94d0",
+    "name": "שווארמוס עפולה",
+    "type": "restaurant",
+    "cityId": "עפולה",
+    "address": "קהילת ציון 4, עפולה",
+    "phone": "04-659-7550",
+    "location": {
+      "latitude": 32.6086,
+      "longitude": 35.2832
+    },
+    "openingHours": "א'-ה' 10:00-20:00 | ו' 08:00-15:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "mesoov-58b2a940",
+    "name": "מסוב ירושלים",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "יפו 234, ירושלים",
+    "phone": "02-538-9413",
+    "location": {
+      "latitude": 31.7872,
+      "longitude": 35.2214
+    },
+    "openingHours": "א'-ה' 09:00-22:30 | ו' 09:00-15:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "drorJLM-e625c140",
+    "name": "דרור הקטן ירושלים",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "א.ש. הרטום, ירושלים",
+    "phone": "02-579-0109",
+    "location": {
+      "latitude": 31.7526,
+      "longitude": 35.1954
+    },
+    "openingHours": "א'-ה' 07:30-19:30 | ו' 09:00-13:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "akaJLM-a2cc377c",
+    "name": "אקה ירושלים",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "השיקמה 6, ירושלים",
+    "phone": "02-500-1292",
+    "location": {
+      "latitude": 31.7817,
+      "longitude": 35.2178
+    },
+    "website": "https://www.facebook.com/100046888784150",
+    "openingHours": "א'-ד' 11:00-21:00 | ה' 11:00-00:00 | ו' 10:30-15:30 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "hashamenJLM-ac5ff410",
+    "name": "השמן ירושלים",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "רבן יוחנן בן זכאי 7, ירושלים",
+    "phone": "02-674-4666",
+    "location": {
+      "latitude": 31.765,
+      "longitude": 35.1978
+    },
+    "website": "https://hashamen.co.il",
+    "openingHours": "א'-ה' 10:30-21:00 | ו' 10:00-15:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "hashamenMevaser-dfb899a2",
+    "name": "השמן מבשרת ציון",
+    "type": "restaurant",
+    "cityId": "מבשרת ציון",
+    "address": "מבשרת ציון",
+    "phone": "054-678-9823",
+    "location": {
+      "latitude": 31.805,
+      "longitude": 35.1392
+    },
+    "website": "https://hashamen.co.il",
+    "openingHours": "א'-ה' 09:00-03:00 | ו' 09:00-15:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "hashamenBS-0a4f19a8",
+    "name": "השמן בית שמש",
+    "type": "restaurant",
+    "cityId": "בית שמש",
+    "address": "שדרות יגאל אלון 24, בית שמש",
+    "phone": "02-992-2382",
+    "location": {
+      "latitude": 31.7491,
+      "longitude": 34.9909
+    },
+    "website": "https://www.instagram.com/hashamen_beit_shemesh/",
+    "openingHours": "א'-ה' 11:00-22:30 | ו' 09:00-13:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "babajim-a27fa843",
+    "name": "באבאג'ים מודיעין",
+    "type": "restaurant",
+    "cityId": "מודיעין מכבים רעות",
+    "address": "עמק דותן 66, מרכז מסחרי מרל\"ז, מודיעין",
+    "phone": "08-926-6628",
+    "location": {
+      "latitude": 31.9073,
+      "longitude": 35.0124
+    },
+    "website": "https://www.facebook.com/babajim.mamajim.modiin/",
+    "openingHours": "א'-ה' 11:00-22:00 | ו' 11:00-15:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "azrielRE-ba835df0",
+    "name": "השווארמה של עזריאל ראש העין",
+    "type": "restaurant",
+    "cityId": "ראש העין",
+    "address": "מרכז הקסמים 5, ראש העין",
+    "phone": "052-875-1770",
+    "location": {
+      "latitude": 32.0955,
+      "longitude": 34.9499
+    },
+    "website": "https://www.facebook.com/AzrielShawarma/",
+    "openingHours": "א'-ה' 11:00-00:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "rafaelModiin-70ee64a5",
+    "name": "שווארמה רפאל מודיעין",
+    "type": "restaurant",
+    "cityId": "מודיעין מכבים רעות",
+    "address": "דם המכבים 42, מודיעין",
+    "phone": "072-392-6712",
+    "location": {
+      "latitude": 31.9028,
+      "longitude": 35.0056
+    },
+    "website": "https://refaelshawarma.co.il",
+    "openingHours": "א'-ה' 11:00-23:45 | ו' 10:00-15:00 | ש' מוצ\"ש עד 22:00",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "abuGhoshModiin-9018dcf4",
+    "name": "שווארמה אבו גוש מודיעין",
+    "type": "restaurant",
+    "cityId": "מודיעין מכבים רעות",
+    "address": "המכונאי 1, מודיעין",
+    "phone": "08-910-5526",
+    "location": {
+      "latitude": 31.9014,
+      "longitude": 35.0065
+    },
+    "website": "https://shawarmaabu-ghosh.co.il",
+    "openingHours": "א'-ה' 10:30-22:30 | ו' 09:00-15:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "manual-biga-rosh-haayin-nirit",
+    "name": "ביגה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "מרכז נירית, ראש העין",
+    "cityId": "ראש העין",
+    "location": {
+      "latitude": 32.0992,
+      "longitude": 34.9558
+    },
+    "website": "https://biga-bakery.co.il",
+    "instagram": "https://www.instagram.com/bigabakery",
+    "facebook": "https://www.facebook.com/Biga.Bakery.Coffee",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-biga-shilat",
+    "name": "ביגה שילת",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "בית ירדן, מרכז שילת, שילת",
+    "cityId": "שילת",
+    "location": {
+      "latitude": 31.9298,
+      "longitude": 35.05
+    },
+    "website": "https://biga-bakery.co.il",
+    "instagram": "https://www.instagram.com/bigabakery",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-biga-modiin-azrieli",
+    "name": "ביגה מודיעין עזריאלי",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "לב העיר 2, קניון עזריאלי, מודיעין",
+    "cityId": "מודיעין",
+    "location": {
+      "latitude": 31.9025,
+      "longitude": 35.0071
+    },
+    "website": "https://biga-bakery.co.il",
+    "instagram": "https://www.instagram.com/bigabakery",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-biga-jrm-malha",
+    "name": "ביגה קניון מלחה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "קניון מלחה, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7479,
+      "longitude": 35.188
+    },
+    "website": "https://biga-bakery.co.il",
+    "instagram": "https://www.instagram.com/bigabakery",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-biga-pt-aylal",
+    "name": "ביגה אייל פ\"ת",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "ז'בוטינסקי 72, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.0808,
+      "longitude": 34.8818
+    },
+    "website": "https://biga-bakery.co.il",
+    "instagram": "https://www.instagram.com/bigabakery",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-biga-holon-azrieli",
+    "name": "ביגה עזריאלי חולון",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "גולדה מאיר 7, עזריאלי, חולון",
+    "cityId": "חולון",
+    "location": {
+      "latitude": 32.0093,
+      "longitude": 34.7772
+    },
+    "website": "https://biga-bakery.co.il",
+    "instagram": "https://www.instagram.com/bigabakery",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-biga-rishon-aylal",
+    "name": "ביגה ראשון לציון",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "שדרות נים 2, ראשון לציון",
+    "cityId": "ראשון לציון",
+    "location": {
+      "latitude": 31.962,
+      "longitude": 34.7979
+    },
+    "website": "https://biga-bakery.co.il",
+    "instagram": "https://www.instagram.com/bigabakery",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-biga-haifa-azrieli",
+    "name": "ביגה עזריאלי חיפה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "פלסמן 4, עזריאלי, חיפה",
+    "cityId": "חיפה",
+    "location": {
+      "latitude": 32.8134,
+      "longitude": 34.9949
+    },
+    "website": "https://biga-bakery.co.il",
+    "instagram": "https://www.instagram.com/bigabakery",
+    "certifiedBy": "רבנות חיפה",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-biga-haifa-grand-kanyon",
+    "name": "ביגה גרנד קניון חיפה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "שמחה גולן 54, גרנד קניון, חיפה",
+    "cityId": "חיפה",
+    "location": {
+      "latitude": 32.7918,
+      "longitude": 34.995
+    },
+    "website": "https://biga-bakery.co.il",
+    "instagram": "https://www.instagram.com/bigabakery",
+    "certifiedBy": "רבנות חיפה",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-biga-kiryat-yam",
+    "name": "ביגה קרית ים",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "גולדה מאיר 2, קרית ים",
+    "cityId": "קרית ים",
+    "location": {
+      "latitude": 32.8481,
+      "longitude": 35.0668
+    },
+    "website": "https://biga-bakery.co.il",
+    "instagram": "https://www.instagram.com/bigabakery",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-biga-kiryat-haim",
+    "name": "ביגה קרית חיים",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "אח\"י אילת 15, קרית חיים",
+    "cityId": "קרית חיים",
+    "location": {
+      "latitude": 32.8274,
+      "longitude": 35.0668
+    },
+    "website": "https://biga-bakery.co.il",
+    "instagram": "https://www.instagram.com/bigabakery",
+    "certifiedBy": "רבנות חיפה",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-biga-hutzot-hamifrats",
+    "name": "ביגה חוצות המפרץ",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "הרושה 2, חיפה",
+    "cityId": "חיפה",
+    "location": {
+      "latitude": 32.8364,
+      "longitude": 35.04
+    },
+    "website": "https://biga-bakery.co.il",
+    "instagram": "https://www.instagram.com/bigabakery",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-biga-karmiel",
+    "name": "ביגה כרמיאל",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "מעלה כמון 2, כרמיאל",
+    "cityId": "כרמיאל",
+    "location": {
+      "latitude": 32.9137,
+      "longitude": 35.298
+    },
+    "website": "https://biga-bakery.co.il",
+    "instagram": "https://www.instagram.com/bigabakery",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-biga-afula",
+    "name": "ביגה עפולה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "המלאכה 23, עפולה",
+    "cityId": "עפולה",
+    "location": {
+      "latitude": 32.6079,
+      "longitude": 35.2898
+    },
+    "website": "https://biga-bakery.co.il",
+    "instagram": "https://www.instagram.com/bigabakery",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-biga-nof-hagalil",
+    "name": "ביגה נוף הגליל",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "אריאל שרון 41, נוף הגליל",
+    "cityId": "נוף הגליל",
+    "location": {
+      "latitude": 32.7044,
+      "longitude": 35.3306
+    },
+    "website": "https://biga-bakery.co.il",
+    "instagram": "https://www.instagram.com/bigabakery",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-biga-kiryat-shmona",
+    "name": "ביגה קרית שמונה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "קניון ביג, קרית שמונה",
+    "cityId": "קרית שמונה",
+    "location": {
+      "latitude": 33.2094,
+      "longitude": 35.5698
+    },
+    "website": "https://biga-bakery.co.il",
+    "instagram": "https://www.instagram.com/bigabakery",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-biga-sha-ar-tzafon",
+    "name": "ביגה שער צפון",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "דרך עכו 30, שער צפון, עכו",
+    "cityId": "עכו",
+    "location": {
+      "latitude": 32.9289,
+      "longitude": 35.0699
+    },
+    "website": "https://biga-bakery.co.il",
+    "instagram": "https://www.instagram.com/bigabakery",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-biga-beit-shean",
+    "name": "ביגה בית שאן",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "גלובוס סנטר, בית שאן",
+    "cityId": "בית שאן",
+    "location": {
+      "latitude": 32.5002,
+      "longitude": 35.4979
+    },
+    "website": "https://biga-bakery.co.il",
+    "instagram": "https://www.instagram.com/bigabakery",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-biga-tiberias",
+    "name": "ביגה טבריה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "ויצמן 46, טבריה",
+    "cityId": "טבריה",
+    "location": {
+      "latitude": 32.7872,
+      "longitude": 35.5292
+    },
+    "website": "https://biga-bakery.co.il",
+    "instagram": "https://www.instagram.com/bigabakery",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-biga-netivot",
+    "name": "ביגה נתיבות",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "בעלי מלאכה 5, נתיבות",
+    "cityId": "נתיבות",
+    "location": {
+      "latitude": 31.4218,
+      "longitude": 34.588
+    },
+    "website": "https://biga-bakery.co.il",
+    "instagram": "https://www.instagram.com/bigabakery",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-biga-raanana",
+    "name": "ביגה רעננה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "המלאכה 2, רעננה",
+    "cityId": "רעננה",
+    "location": {
+      "latitude": 32.1899,
+      "longitude": 34.8761
+    },
+    "website": "https://biga-bakery.co.il",
+    "instagram": "https://www.instagram.com/bigabakery",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-biga-kfar-saba-green",
+    "name": "ביגה כפר סבא גרין",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "רפפורט 3, כפר סבא",
+    "cityId": "כפר סבא",
+    "location": {
+      "latitude": 32.1799,
+      "longitude": 34.9031
+    },
+    "website": "https://biga-bakery.co.il",
+    "instagram": "https://www.instagram.com/bigabakery",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-biga-hadera",
+    "name": "ביגה חדרה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "מול כפר הים, חדרה",
+    "cityId": "חדרה",
+    "location": {
+      "latitude": 32.4335,
+      "longitude": 34.918
+    },
+    "website": "https://biga-bakery.co.il",
+    "instagram": "https://www.instagram.com/bigabakery",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-biga-ashdod",
+    "name": "ביגה אשדוד",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "מסילת הברזל 1, אשדוד",
+    "cityId": "אשדוד",
+    "location": {
+      "latitude": 31.8093,
+      "longitude": 34.6559
+    },
+    "website": "https://biga-bakery.co.il",
+    "instagram": "https://www.instagram.com/bigabakery",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-biga-rehovot",
+    "name": "ביגה רחובות",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "ביל\"ו 2, רחובות",
+    "cityId": "רחובות",
+    "location": {
+      "latitude": 31.8948,
+      "longitude": 34.812
+    },
+    "website": "https://biga-bakery.co.il",
+    "instagram": "https://www.instagram.com/bigabakery",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-biga-ashkelon",
+    "name": "ביגה אשקלון",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "גלובוס סנטר, אשקלון",
+    "cityId": "אשקלון",
+    "location": {
+      "latitude": 31.6672,
+      "longitude": 34.5673
+    },
+    "website": "https://biga-bakery.co.il",
+    "instagram": "https://www.instagram.com/bigabakery",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-biga-kiryat-tavon",
+    "name": "ביגה קרית טבעון",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "אלון 85, קרית טבעון",
+    "cityId": "קרית טבעון",
+    "location": {
+      "latitude": 32.7176,
+      "longitude": 35.1263
+    },
+    "website": "https://biga-bakery.co.il",
+    "instagram": "https://www.instagram.com/bigabakery",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-freshop-tlv-weizmann",
+    "name": "סחוט",
+    "type": "cafe",
+    "category": "parve",
+    "address": "ויצמן 14, מרכז ויצמן, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.085,
+      "longitude": 34.782
+    },
+    "phone": "03-6951818",
+    "website": "https://www.freshop.co.il",
+    "instagram": "https://www.instagram.com/freshop_il",
+    "facebook": "https://www.facebook.com/freshop.co.il",
+    "certifiedBy": "רבנות תל אביב",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-freshop-rishon-zahav",
+    "name": "סחוט קניון הזהב",
+    "type": "cafe",
+    "category": "parve",
+    "address": "קניון הזהב, ראשון לציון",
+    "cityId": "ראשון לציון",
+    "location": {
+      "latitude": 31.9762,
+      "longitude": 34.7913
+    },
+    "website": "https://www.freshop.co.il",
+    "instagram": "https://www.instagram.com/freshop_il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-freshop-rehovot",
+    "name": "סחוט רחובות",
+    "type": "cafe",
+    "category": "parve",
+    "address": "ביל\"ו 2, קניון רחובות",
+    "cityId": "רחובות",
+    "location": {
+      "latitude": 31.8948,
+      "longitude": 34.812
+    },
+    "website": "https://www.freshop.co.il",
+    "instagram": "https://www.instagram.com/freshop_il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-freshop-pt-ofr",
+    "name": "סחוט עופר פ\"ת",
+    "type": "cafe",
+    "category": "parve",
+    "address": "ז'בוטינסקי 72, עופר הגדול, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.0808,
+      "longitude": 34.8818
+    },
+    "website": "https://www.freshop.co.il",
+    "instagram": "https://www.instagram.com/freshop_il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-freshop-pt-kfar-ganim",
+    "name": "סחוט כפר גנים",
+    "type": "cafe",
+    "category": "parve",
+    "address": "האצטדיון 65, כפר גנים, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.0831,
+      "longitude": 34.87
+    },
+    "website": "https://www.freshop.co.il",
+    "instagram": "https://www.instagram.com/freshop_il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-freshop-bat-yam",
+    "name": "סחוט בת ים",
+    "type": "cafe",
+    "category": "parve",
+    "address": "יוספטל 92, קניון בת ים",
+    "cityId": "בת ים",
+    "location": {
+      "latitude": 32.0148,
+      "longitude": 34.7485
+    },
+    "website": "https://www.freshop.co.il",
+    "instagram": "https://www.instagram.com/freshop_il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-freshop-haifa-sinmol",
+    "name": "סחוט סינמול חיפה",
+    "type": "cafe",
+    "category": "parve",
+    "address": "ההסתדרות 55, סינמול לב המפרץ, חיפה",
+    "cityId": "חיפה",
+    "location": {
+      "latitude": 32.8364,
+      "longitude": 35.04
+    },
+    "website": "https://www.freshop.co.il",
+    "instagram": "https://www.instagram.com/freshop_il",
+    "certifiedBy": "רבנות חיפה",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-freshop-haifa-azrieli",
+    "name": "סחוט עזריאלי חיפה",
+    "type": "cafe",
+    "category": "parve",
+    "address": "פלסמן 4, עזריאלי, חיפה",
+    "cityId": "חיפה",
+    "location": {
+      "latitude": 32.8134,
+      "longitude": 34.9949
+    },
+    "website": "https://www.freshop.co.il",
+    "instagram": "https://www.instagram.com/freshop_il",
+    "certifiedBy": "רבנות חיפה",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-freshop-beersheva-negev",
+    "name": "סחוט קניון הנגב",
+    "type": "cafe",
+    "category": "parve",
+    "address": "יצחק רגר 2, קניון הנגב, באר שבע",
+    "cityId": "באר שבע",
+    "location": {
+      "latitude": 31.2389,
+      "longitude": 34.7908
+    },
+    "website": "https://www.freshop.co.il",
+    "instagram": "https://www.instagram.com/freshop_il",
+    "certifiedBy": "רבנות ב\"ש",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-freshop-beersheva-grand",
+    "name": "סחוט גרנד קניון ב\"ש",
+    "type": "cafe",
+    "category": "parve",
+    "address": "דוד טוביהו 125, גרנד קניון, באר שבע",
+    "cityId": "באר שבע",
+    "location": {
+      "latitude": 31.245,
+      "longitude": 34.792
+    },
+    "website": "https://www.freshop.co.il",
+    "instagram": "https://www.instagram.com/freshop_il",
+    "certifiedBy": "רבנות ב\"ש",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-freshop-ashdod-city",
+    "name": "סחוט סיטי אשדוד",
+    "type": "cafe",
+    "category": "parve",
+    "address": "מנחם בגין 1, קניון הסיטי, אשדוד",
+    "cityId": "אשדוד",
+    "location": {
+      "latitude": 31.8093,
+      "longitude": 34.6559
+    },
+    "website": "https://www.freshop.co.il",
+    "instagram": "https://www.instagram.com/freshop_il",
+    "certifiedBy": "רבנות אשדוד",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-freshop-ramla",
+    "name": "סחוט עזריאלי רמלה",
+    "type": "cafe",
+    "category": "parve",
+    "address": "דוד רזיאל 1, עזריאלי, רמלה",
+    "cityId": "רמלה",
+    "location": {
+      "latitude": 31.9353,
+      "longitude": 34.8713
+    },
+    "website": "https://www.freshop.co.il",
+    "instagram": "https://www.instagram.com/freshop_il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-freshop-safed",
+    "name": "סחוט צפת",
+    "type": "cafe",
+    "category": "parve",
+    "address": "הרמב\"ם 1, מרכז רפואי, צפת",
+    "cityId": "צפת",
+    "location": {
+      "latitude": 32.962,
+      "longitude": 35.4941
+    },
+    "website": "https://www.freshop.co.il",
+    "instagram": "https://www.instagram.com/freshop_il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-benedict-tlv-rothschild",
+    "name": "בנדיקט",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "רוטשילד 29, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0634,
+      "longitude": 34.7744
+    },
+    "phone": "03-6862657",
+    "website": "https://benedict.co.il",
+    "instagram": "https://www.instagram.com/benedictbreakfast",
+    "facebook": "https://www.facebook.com/BenedictBreakfast",
+    "certifiedBy": "רבנות תל אביב",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-benedict-herzliya",
+    "name": "בנדיקט הרצליה",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "האצ\"ל 1, הרצליה",
+    "cityId": "הרצליה",
+    "location": {
+      "latitude": 32.1641,
+      "longitude": 34.8352
+    },
+    "website": "https://benedict.co.il",
+    "instagram": "https://www.instagram.com/benedictbreakfast",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-benedict-kfar-saba",
+    "name": "בנדיקט כפר סבא",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "כפר סבא",
+    "cityId": "כפר סבא",
+    "location": {
+      "latitude": 32.1799,
+      "longitude": 34.9031
+    },
+    "website": "https://benedict.co.il",
+    "instagram": "https://www.instagram.com/benedictbreakfast",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-benedict-pt",
+    "name": "בנדיקט פתח תקווה",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.0885,
+      "longitude": 34.8875
+    },
+    "website": "https://benedict.co.il",
+    "instagram": "https://www.instagram.com/benedictbreakfast",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-benedict-modiin",
+    "name": "בנדיקט מודיעין",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "מודיעין",
+    "cityId": "מודיעין",
+    "location": {
+      "latitude": 31.9025,
+      "longitude": 35.0071
+    },
+    "website": "https://benedict.co.il",
+    "instagram": "https://www.instagram.com/benedictbreakfast",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-benedict-netanya",
+    "name": "בנדיקט נהריה",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "נהריה",
+    "cityId": "נהריה",
+    "location": {
+      "latitude": 33.0045,
+      "longitude": 35.0978
+    },
+    "website": "https://benedict.co.il",
+    "instagram": "https://www.instagram.com/benedictbreakfast",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-benedict-karmiel",
+    "name": "בנדיקט כרמיאל",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "כרמיאל",
+    "cityId": "כרמיאל",
+    "location": {
+      "latitude": 32.9137,
+      "longitude": 35.298
+    },
+    "website": "https://benedict.co.il",
+    "instagram": "https://www.instagram.com/benedictbreakfast",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-benedict-rishon",
+    "name": "בנדיקט ראשון לציון",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "ראשון לציון",
+    "cityId": "ראשון לציון",
+    "location": {
+      "latitude": 31.9762,
+      "longitude": 34.7913
+    },
+    "website": "https://benedict.co.il",
+    "instagram": "https://www.instagram.com/benedictbreakfast",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-benedict-bilu",
+    "name": "בנדיקט ביל\"ו",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "מרכז ביל\"ו, ביל\"ו",
+    "cityId": "גדרה",
+    "location": {
+      "latitude": 31.812,
+      "longitude": 34.7775
+    },
+    "website": "https://benedict.co.il",
+    "instagram": "https://www.instagram.com/benedictbreakfast",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-benedict-ashdod",
+    "name": "בנדיקט אשדוד",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "אשדוד",
+    "cityId": "אשדוד",
+    "location": {
+      "latitude": 31.8093,
+      "longitude": 34.6559
+    },
+    "website": "https://benedict.co.il",
+    "instagram": "https://www.instagram.com/benedictbreakfast",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-benedict-beersheva",
+    "name": "בנדיקט באר שבע",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "באר שבע",
+    "cityId": "באר שבע",
+    "location": {
+      "latitude": 31.2389,
+      "longitude": 34.7908
+    },
+    "website": "https://benedict.co.il",
+    "instagram": "https://www.instagram.com/benedictbreakfast",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-bleecker-pt",
+    "name": "בליקר בייקרי",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "יצחק רבין 17, יכין סנטר, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.0808,
+      "longitude": 34.8818
+    },
+    "website": "https://bleeckerbakery.co.il",
+    "instagram": "https://www.instagram.com/bleecker_bakery",
+    "facebook": "https://www.facebook.com/BleeckerBakery",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-bleecker-ramat-gan",
+    "name": "בליקר בייקרי רמת גן",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "ביאליק 76, קניון ביאליק, רמת גן",
+    "cityId": "רמת גן",
+    "location": {
+      "latitude": 32.0808,
+      "longitude": 34.8178
+    },
+    "website": "https://bleeckerbakery.co.il",
+    "instagram": "https://www.instagram.com/bleecker_bakery",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-bleecker-hadera",
+    "name": "בליקר בייקרי חדרה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "צה\"ל 35, מתחם מיקס, חדרה",
+    "cityId": "חדרה",
+    "location": {
+      "latitude": 32.4335,
+      "longitude": 34.918
+    },
+    "website": "https://bleeckerbakery.co.il",
+    "instagram": "https://www.instagram.com/bleecker_bakery",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-bleecker-beer-yaakov",
+    "name": "בליקר בייקרי באר יעקב",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "שה\"נס 17, פלאזה, באר יעקב",
+    "cityId": "באר יעקב",
+    "location": {
+      "latitude": 31.931,
+      "longitude": 34.839
+    },
+    "website": "https://bleeckerbakery.co.il",
+    "instagram": "https://www.instagram.com/bleecker_bakery",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-bleecker-modiin",
+    "name": "בליקר בייקרי מודיעין",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "מודיעין",
+    "cityId": "מודיעין",
+    "location": {
+      "latitude": 31.9025,
+      "longitude": 35.0071
+    },
+    "website": "https://bleeckerbakery.co.il",
+    "instagram": "https://www.instagram.com/bleecker_bakery",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-bleecker-namal-tlv",
+    "name": "בליקר בייקרי נמל תל אביב",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "ביתן 23, נמל תל אביב, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0962,
+      "longitude": 34.7786
+    },
+    "website": "https://bleeckerbakery.co.il",
+    "instagram": "https://www.instagram.com/bleecker_bakery",
+    "certifiedBy": "רבנות תל אביב",
+    "kosherType": "regular",
+    "source": "manual"
   }
 ]
