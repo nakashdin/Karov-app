@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "facebook": "https://www.facebook.com/AromaIsrael",
     "tags": [
@@ -3638,7 +3638,7 @@
     "source": "osm",
     "id": "osm-node-12106426945",
     "type": "restaurant",
-    "openingHours": "Su-Th 10:00-22:00; Fr 10:00-15:00",
+    "openingHours": "א'-ה' 10:00-22:00 | ו' 10:00-14:30 | ש' סגור",
     "tags": [
       "turkish"
     ],
@@ -3650,7 +3650,10 @@
     },
     "phone": "+972 3 566 1661",
     "category": "meat",
-    "cityId": "קריית מאיר"
+    "cityId": "קריית מאיר",
+    "kosherType": "rabanut",
+    "website": "https://turklahmajoun.co.il",
+    "lastVerifiedAt": "2026-07-20"
   },
   {
     "source": "osm",
@@ -128887,5 +128890,3039 @@
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-19"
+  },
+  {
+    "id": "shimoni-17861b11",
+    "name": "שווארמה שמעוני יבנה",
+    "type": "restaurant",
+    "cityId": "יבנה",
+    "address": "מול הצומת, יבנה",
+    "phone": "08-8594604",
+    "location": {
+      "latitude": 31.8678,
+      "longitude": 34.7448
+    },
+    "website": "https://www.instagram.com/shawarma.shimoni",
+    "openingHours": "א'-ה' 10:30-00:00 | ו' 10:30-16:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-19"
+  },
+  {
+    "id": "mifgashbracha-663ed845",
+    "name": "מפגש הברכה תל אביב",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "הרצל 98, פלורנטין, תל אביב",
+    "phone": "052-4883183",
+    "location": {
+      "latitude": 32.0598,
+      "longitude": 34.7737
+    },
+    "openingHours": "א'-ה' 07:30-19:30 | ו' 09:00-13:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "shawarmacarmel-f5b17ca8",
+    "name": "שווארמה הכרמל תל אביב",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "דניאל 25, שוק הכרמל, תל אביב",
+    "phone": "053-4919771",
+    "location": {
+      "latitude": 32.0652,
+      "longitude": 34.7726
+    },
+    "website": "https://www.instagram.com/shawarma_carmel",
+    "openingHours": "א'-ה' 07:30-19:30 | ו' 09:00-13:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "pundakherzel-5f0c52e3",
+    "name": "פונדק הרצל תל אביב",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "שדרות ירושלים 67, תל אביב יפו",
+    "phone": "03-6827842",
+    "location": {
+      "latitude": 32.0531,
+      "longitude": 34.7564
+    },
+    "website": "https://pundak-herzel.co.il",
+    "openingHours": "א'-ה' 10:00-20:30 | ו' 10:00-15:30 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "mifgashfalafel-251ca604",
+    "name": "מפגש הפלאפל והשווארמה תל אביב",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "אצ\"ל 38, תל אביב",
+    "phone": "054-2227772",
+    "location": {
+      "latitude": 32.0522,
+      "longitude": 34.7675
+    },
+    "openingHours": "א'-ה' 08:00-00:00 | ו' 08:00-16:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "pinatshawarma-42ee2a4c",
+    "name": "פינת השווארמה תל אביב",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "אצ\"ל 2, תל אביב",
+    "phone": "03-7485459",
+    "location": {
+      "latitude": 32.0608,
+      "longitude": 34.779
+    },
+    "website": "https://pinathshawarma.co.il",
+    "openingHours": "א'-ה' 11:00-23:00 | ו' 11:00-כניסת שבת | ש' סגור",
+    "category": "meat",
+    "kosherType": "badatz_beit_yosef",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "etzelmali-b5c45cd0",
+    "name": "אצל מלי גבעתיים",
+    "type": "restaurant",
+    "cityId": "גבעתיים",
+    "address": "הרב הרצוג 27, גבעתיים",
+    "phone": "03-5714006",
+    "location": {
+      "latitude": 32.0718,
+      "longitude": 34.8118
+    },
+    "website": "https://www.instagram.com/etselmali",
+    "openingHours": "א'-ה' 09:00-20:30 | ו' 09:00-15:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "hasultan-c0c27ca1",
+    "name": "הסולטן שווארמה רמת גן",
+    "type": "restaurant",
+    "cityId": "רמת גן",
+    "address": "הירדן 94, רמת גן",
+    "phone": "03-6763422",
+    "location": {
+      "latitude": 32.083,
+      "longitude": 34.8185
+    },
+    "website": "https://hasultan.co.il",
+    "openingHours": "א'-ה' 10:00-22:30 | ו' 10:30-15:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "tzahigrill-d81bef48",
+    "name": "צחי גריל אור יהודה",
+    "type": "restaurant",
+    "cityId": "אור יהודה",
+    "address": "העבודה 8, אור יהודה",
+    "phone": "054-2553305",
+    "location": {
+      "latitude": 32.0322,
+      "longitude": 34.8568
+    },
+    "openingHours": "א'-ה' 10:30-22:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "alonishawarma-03efd482",
+    "name": "אלוני קריית אונו",
+    "type": "restaurant",
+    "cityId": "קריית אונו",
+    "address": "שלמה המלך 37, מרכז מסחרי קיראון, קריית אונו",
+    "phone": "03-6354385",
+    "location": {
+      "latitude": 32.0612,
+      "longitude": 34.8668
+    },
+    "openingHours": "א'-ה' 07:30-19:30 | ו' 09:00-13:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "etzaladri-c34fdcc2",
+    "name": "אצל אדרי יהוד",
+    "type": "restaurant",
+    "cityId": "יהוד מונסון",
+    "address": "וייצמן 44, יהוד מונסון",
+    "phone": "03-6984858",
+    "location": {
+      "latitude": 32.0315,
+      "longitude": 34.8798
+    },
+    "openingHours": "א'-ה' 09:00-20:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "hapinalevana-fe914443",
+    "name": "הפינה הלבנה יהוד",
+    "type": "restaurant",
+    "cityId": "יהוד מונסון",
+    "address": "הרצל 7, יהוד מונסון",
+    "phone": "03-5360937",
+    "location": {
+      "latitude": 32.033,
+      "longitude": 34.8786
+    },
+    "openingHours": "א'-ה' 08:30-21:00 | ו' 08:30-15:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "palpaliko-be899e99",
+    "name": "פלפליקו גני תקווה",
+    "type": "restaurant",
+    "cityId": "גני תקווה",
+    "address": "הרמה 23, גני תקווה",
+    "phone": "03-5352341",
+    "location": {
+      "latitude": 32.0565,
+      "longitude": 34.875
+    },
+    "openingHours": "א'-ה' 08:00-01:00 | ו' 08:00-כניסת שבת | ש' סגור",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "manual-pastito-jrm-ben-yehuda",
+    "name": "פסטיטו",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "בן יהודה 14, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7839,
+      "longitude": 35.2134
+    },
+    "website": "https://pastito.co.il",
+    "instagram": "https://www.instagram.com/pastito.il",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pastito-jrm-jaffa",
+    "name": "פסטיטו ירושלים תחנה",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "יפו 224, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7889,
+      "longitude": 35.2022
+    },
+    "website": "https://pastito.co.il",
+    "instagram": "https://www.instagram.com/pastito.il",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pastito-jrm-talpiot",
+    "name": "פסטיטו תלפיות",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "התנופה 12, תלפיות, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7479,
+      "longitude": 35.222
+    },
+    "website": "https://pastito.co.il",
+    "instagram": "https://www.instagram.com/pastito.il",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pastito-tlv-begin",
+    "name": "פסטיטו מידטאון",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "מנחם בגין 144, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 31.0677,
+      "longitude": 34.7906
+    },
+    "website": "https://pastito.co.il",
+    "instagram": "https://www.instagram.com/pastito.il",
+    "certifiedBy": "רבנות תל אביב",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pastito-tlv-dizengoff",
+    "name": "פסטיטו דיזנגוף",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "דיזנגוף 75, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0783,
+      "longitude": 34.775
+    },
+    "website": "https://pastito.co.il",
+    "instagram": "https://www.instagram.com/pastito.il",
+    "certifiedBy": "רבנות תל אביב",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pastito-tlv-menora",
+    "name": "פסטיטו מנורה הול",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "יגאל אלון 51, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0697,
+      "longitude": 34.7877
+    },
+    "website": "https://pastito.co.il",
+    "instagram": "https://www.instagram.com/pastito.il",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pastito-tlv-savidor",
+    "name": "פסטיטו תחנת סבידור",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "תחנת רכבת סבידור, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0953,
+      "longitude": 34.7768
+    },
+    "website": "https://pastito.co.il",
+    "instagram": "https://www.instagram.com/pastito.il",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pastito-givatayim",
+    "name": "פסטיטו גבעתיים",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "דרך יצחק רבין 53, גבעתיים",
+    "cityId": "גבעתיים",
+    "location": {
+      "latitude": 32.0694,
+      "longitude": 34.8136
+    },
+    "website": "https://pastito.co.il",
+    "instagram": "https://www.instagram.com/pastito.il",
+    "certifiedBy": "רבנות פ\"ת",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pastito-kiryat-ono",
+    "name": "פסטיטו קרית אונו",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "קניון קרית אונו",
+    "cityId": "קרית אונו",
+    "location": {
+      "latitude": 32.0598,
+      "longitude": 34.8611
+    },
+    "website": "https://pastito.co.il",
+    "instagram": "https://www.instagram.com/pastito.il",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pastito-pt",
+    "name": "פסטיטו פתח תקווה",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "תוצרת הארץ 3, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.0831,
+      "longitude": 34.8771
+    },
+    "website": "https://pastito.co.il",
+    "instagram": "https://www.instagram.com/pastito.il",
+    "certifiedBy": "רבנות פ\"ת",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pastito-rishon-gold",
+    "name": "פסטיטו גולד מול",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "דוד סחרוב 21, ראשון לציון",
+    "cityId": "ראשון לציון",
+    "location": {
+      "latitude": 31.9762,
+      "longitude": 34.7913
+    },
+    "website": "https://pastito.co.il",
+    "instagram": "https://www.instagram.com/pastito.il",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pastito-rishon-nim",
+    "name": "פסטיטו ראשון לציון",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "שדרות נים 2, ראשון לציון",
+    "cityId": "ראשון לציון",
+    "location": {
+      "latitude": 31.962,
+      "longitude": 34.7979
+    },
+    "website": "https://pastito.co.il",
+    "instagram": "https://www.instagram.com/pastito.il",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pastito-bat-yam",
+    "name": "פסטיטו בת ים",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "יוספטל 92, בת ים",
+    "cityId": "בת ים",
+    "location": {
+      "latitude": 32.0148,
+      "longitude": 34.7485
+    },
+    "website": "https://pastito.co.il",
+    "instagram": "https://www.instagram.com/pastito.il",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pastito-raanana",
+    "name": "פסטיטו רעננה",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "המלאכה 2, רעננה",
+    "cityId": "רעננה",
+    "location": {
+      "latitude": 32.1899,
+      "longitude": 34.8761
+    },
+    "website": "https://pastito.co.il",
+    "instagram": "https://www.instagram.com/pastito.il",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pastito-modiin",
+    "name": "פסטיטו מודיעין",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "לב העיר 2, קניון עזריאלי, מודיעין",
+    "cityId": "מודיעין",
+    "location": {
+      "latitude": 31.9025,
+      "longitude": 35.0071
+    },
+    "website": "https://pastito.co.il",
+    "instagram": "https://www.instagram.com/pastito.il",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pastito-ramla",
+    "name": "פסטיטו רמלה",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "דוד רזיאל 1, קניון עזריאלי, רמלה",
+    "cityId": "רמלה",
+    "location": {
+      "latitude": 31.9353,
+      "longitude": 34.8713
+    },
+    "website": "https://pastito.co.il",
+    "instagram": "https://www.instagram.com/pastito.il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pastito-nof-hagalil",
+    "name": "פסטיטו נוף הגליל",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "אריאל שרון 41, נוף הגליל",
+    "cityId": "נוף הגליל",
+    "location": {
+      "latitude": 32.7044,
+      "longitude": 35.3306
+    },
+    "website": "https://pastito.co.il",
+    "instagram": "https://www.instagram.com/pastito.il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pastito-kiryat-bialik",
+    "name": "פסטיטו קניון קריון",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "קניון קריון, קרית ביאליק",
+    "cityId": "קרית ביאליק",
+    "location": {
+      "latitude": 32.8364,
+      "longitude": 35.0749
+    },
+    "website": "https://pastito.co.il",
+    "instagram": "https://www.instagram.com/pastito.il",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pastito-beersheva",
+    "name": "פסטיטו באר שבע",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "יצחק רגר 2, קניון עזריאלי, באר שבע",
+    "cityId": "באר שבע",
+    "location": {
+      "latitude": 31.2389,
+      "longitude": 34.7908
+    },
+    "website": "https://pastito.co.il",
+    "instagram": "https://www.instagram.com/pastito.il",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pastito-afula",
+    "name": "פסטיטו עפולה",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "יצחק רבין 18, עפולה",
+    "cityId": "עפולה",
+    "location": {
+      "latitude": 32.6079,
+      "longitude": 35.2898
+    },
+    "website": "https://pastito.co.il",
+    "instagram": "https://www.instagram.com/pastito.il",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pastito-sderot",
+    "name": "פסטיטו שדרות",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "אריאל שרון 19, שדרות",
+    "cityId": "שדרות",
+    "location": {
+      "latitude": 31.5235,
+      "longitude": 34.5996
+    },
+    "website": "https://pastito.co.il",
+    "instagram": "https://www.instagram.com/pastito.il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-burger-station-tlv-dizengoff",
+    "name": "בורגר סטיישן",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "דיזנגוף 269, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0781,
+      "longitude": 34.7752
+    },
+    "phone": "03-5448800",
+    "website": "https://burgerstation.co.il",
+    "instagram": "https://www.instagram.com/burgerstation_il",
+    "facebook": "https://www.facebook.com/BurgerStationIsrael",
+    "certifiedBy": "רבנות תל אביב",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-burger-station-ramat-gan",
+    "name": "בורגר סטיישן רמת גן",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "ביאליק 12, רמת גן",
+    "cityId": "רמת גן",
+    "location": {
+      "latitude": 32.0808,
+      "longitude": 34.8178
+    },
+    "phone": "03-6759611",
+    "website": "https://burgerstation.co.il",
+    "instagram": "https://www.instagram.com/burgerstation_il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-burger-station-holon",
+    "name": "בורגר סטיישן חולון",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "סוקולוב 54, חולון",
+    "cityId": "חולון",
+    "location": {
+      "latitude": 32.015,
+      "longitude": 34.7742
+    },
+    "website": "https://burgerstation.co.il",
+    "instagram": "https://www.instagram.com/burgerstation_il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-burger-station-bat-yam",
+    "name": "בורגר סטיישן בת ים",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "בן גוריון 134, בת ים",
+    "cityId": "בת ים",
+    "location": {
+      "latitude": 32.0163,
+      "longitude": 34.7562
+    },
+    "website": "https://burgerstation.co.il",
+    "instagram": "https://www.instagram.com/burgerstation_il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-burger-station-herzliya",
+    "name": "בורגר סטיישן הרצליה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "אבן עזרא 17, הרצליה",
+    "cityId": "הרצליה",
+    "location": {
+      "latitude": 32.1641,
+      "longitude": 34.8352
+    },
+    "website": "https://burgerstation.co.il",
+    "instagram": "https://www.instagram.com/burgerstation_il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-burger-station-kfar-saba",
+    "name": "בורגר סטיישן כפר סבא",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "התעשן 24, כפר סבא",
+    "cityId": "כפר סבא",
+    "location": {
+      "latitude": 32.1742,
+      "longitude": 34.9067
+    },
+    "website": "https://burgerstation.co.il",
+    "instagram": "https://www.instagram.com/burgerstation_il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-burger-station-raanana",
+    "name": "בורגר סטיישן רעננה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "הסדנה 6, רעננה",
+    "cityId": "רעננה",
+    "location": {
+      "latitude": 32.1835,
+      "longitude": 34.8701
+    },
+    "website": "https://burgerstation.co.il",
+    "instagram": "https://www.instagram.com/burgerstation_il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-burger-station-nes-ziona",
+    "name": "בורגר סטיישן נס ציונה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "משה לרר 1, מרכז עמי, נס ציונה",
+    "cityId": "נס ציונה",
+    "location": {
+      "latitude": 31.9276,
+      "longitude": 34.7948
+    },
+    "website": "https://burgerstation.co.il",
+    "instagram": "https://www.instagram.com/burgerstation_il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-burger-station-rishon",
+    "name": "בורגר סטיישן ראשון לציון",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "פלוצקי 17, ראשון לציון",
+    "cityId": "ראשון לציון",
+    "location": {
+      "latitude": 31.9603,
+      "longitude": 34.8063
+    },
+    "website": "https://burgerstation.co.il",
+    "instagram": "https://www.instagram.com/burgerstation_il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-burger-station-pt",
+    "name": "בורגר סטיישן פתח תקווה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "אבשלום גיסין 17, קניון גיסין, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.0882,
+      "longitude": 34.8832
+    },
+    "website": "https://burgerstation.co.il",
+    "instagram": "https://www.instagram.com/burgerstation_il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-burger-station-rehovot",
+    "name": "בורגר סטיישן רחובות",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "הרצל 167, רחובות",
+    "cityId": "רחובות",
+    "location": {
+      "latitude": 31.8948,
+      "longitude": 34.812
+    },
+    "website": "https://burgerstation.co.il",
+    "instagram": "https://www.instagram.com/burgerstation_il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-burger-station-netanya1",
+    "name": "בורגר סטיישן נתניה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "ויצמן 7, נתניה",
+    "cityId": "נתניה",
+    "location": {
+      "latitude": 32.3295,
+      "longitude": 34.854
+    },
+    "website": "https://burgerstation.co.il",
+    "instagram": "https://www.instagram.com/burgerstation_il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-burger-station-netanya2",
+    "name": "בורגר סטיישן נתניה פולג",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "גיבורי ישראל 40, פולג, נתניה",
+    "cityId": "נתניה",
+    "location": {
+      "latitude": 32.3187,
+      "longitude": 34.8568
+    },
+    "website": "https://burgerstation.co.il",
+    "instagram": "https://www.instagram.com/burgerstation_il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-burger-station-modiin",
+    "name": "בורגר סטיישן מודיעין",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "לאה אמנו 1, מודיעין",
+    "cityId": "מודיעין",
+    "location": {
+      "latitude": 31.8988,
+      "longitude": 35.0105
+    },
+    "website": "https://burgerstation.co.il",
+    "instagram": "https://www.instagram.com/burgerstation_il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-burger-station-hadera",
+    "name": "בורגר סטיישן חדרה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "כפר שחטמן 10, חדרה",
+    "cityId": "חדרה",
+    "location": {
+      "latitude": 32.4335,
+      "longitude": 34.918
+    },
+    "website": "https://burgerstation.co.il",
+    "instagram": "https://www.instagram.com/burgerstation_il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-burger-station-rosh-haayin",
+    "name": "בורגר סטיישן ראש העין",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "רבי שבזי 223, ראש העין",
+    "cityId": "ראש העין",
+    "location": {
+      "latitude": 32.0992,
+      "longitude": 34.9558
+    },
+    "website": "https://burgerstation.co.il",
+    "instagram": "https://www.instagram.com/burgerstation_il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-burger-station-ashkelon",
+    "name": "בורגר סטיישן אשקלון",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "הנמל 9, אשקלון",
+    "cityId": "אשקלון",
+    "location": {
+      "latitude": 31.6672,
+      "longitude": 34.5673
+    },
+    "website": "https://burgerstation.co.il",
+    "instagram": "https://www.instagram.com/burgerstation_il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-dabush-tlv-ibn-gavirol",
+    "name": "דבוש שווארמה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "אבן גבירול 64, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0838,
+      "longitude": 34.781
+    },
+    "phone": "03-6449494",
+    "website": "https://www.dabush.co.il",
+    "instagram": "https://www.instagram.com/dabush_shawarma",
+    "facebook": "https://www.facebook.com/DabushShawarma",
+    "certifiedBy": "רבנות תל אביב",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-dabush-tlv-karlbach",
+    "name": "דבוש שווארמה קרליבך",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "קרליבך 1, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0698,
+      "longitude": 34.7876
+    },
+    "website": "https://www.dabush.co.il",
+    "instagram": "https://www.instagram.com/dabush_shawarma",
+    "facebook": "https://www.facebook.com/DabushShawarma",
+    "certifiedBy": "רבנות תל אביב",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-dabush-netanya",
+    "name": "דבוש שווארמה נתניה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "הרכבת 7, נתניה",
+    "cityId": "נתניה",
+    "location": {
+      "latitude": 32.3295,
+      "longitude": 34.854
+    },
+    "website": "https://www.dabush.co.il",
+    "instagram": "https://www.instagram.com/dabush_shawarma",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-dabush-holon",
+    "name": "דבוש שווארמה חולון",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "דרך השבעה 20, חולון",
+    "cityId": "חולון",
+    "location": {
+      "latitude": 32.015,
+      "longitude": 34.7742
+    },
+    "website": "https://www.dabush.co.il",
+    "instagram": "https://www.instagram.com/dabush_shawarma",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-dabush-rishon",
+    "name": "דבוש שווארמה ראשון לציון",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "משה הלוי 14, ראשון לציון",
+    "cityId": "ראשון לציון",
+    "location": {
+      "latitude": 31.9648,
+      "longitude": 34.7958
+    },
+    "website": "https://www.dabush.co.il",
+    "instagram": "https://www.instagram.com/dabush_shawarma",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-dabush-bb",
+    "name": "דבוש שווארמה בני ברק",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "בן גוריון 1, מגדלי ב.ס.ר 2, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.08,
+      "longitude": 34.8309
+    },
+    "website": "https://www.dabush.co.il",
+    "instagram": "https://www.instagram.com/dabush_shawarma",
+    "certifiedBy": "רבנות בני ברק מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-dabush-pt",
+    "name": "דבוש שווארמה פתח תקווה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "דרך יצחק רבין 2, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.0885,
+      "longitude": 34.8875
+    },
+    "website": "https://www.dabush.co.il",
+    "instagram": "https://www.instagram.com/dabush_shawarma",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hashamen-mahane-yehuda",
+    "name": "השמן שוק מחנה יהודה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "שוק מחנה יהודה, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7843,
+      "longitude": 35.21
+    },
+    "website": "https://hashamen.co.il",
+    "instagram": "https://www.instagram.com/hashamen_official",
+    "certifiedBy": "רבנות ירושלים",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hashamen-jrm-katamon",
+    "name": "השמן קטמון",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "רבן יוחנן בן זכאי 7, קטמון, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7615,
+      "longitude": 35.2125
+    },
+    "website": "https://hashamen.co.il",
+    "instagram": "https://www.instagram.com/hashamen_official",
+    "certifiedBy": "רבנות ירושלים",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hashamen-jrm-beit-hakerem",
+    "name": "השמן בית הכרם",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "אביזוהר 8, בית הכרם, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7779,
+      "longitude": 35.1736
+    },
+    "website": "https://hashamen.co.il",
+    "instagram": "https://www.instagram.com/hashamen_official",
+    "certifiedBy": "רבנות ירושלים",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hashamen-rishon",
+    "name": "השמן ראשון לציון",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "רוטשילד 61, ראשון לציון",
+    "cityId": "ראשון לציון",
+    "location": {
+      "latitude": 31.962,
+      "longitude": 34.7987
+    },
+    "website": "https://hashamen.co.il",
+    "instagram": "https://www.instagram.com/hashamen_official",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hashamen-modiin-yishpro",
+    "name": "השמן מודיעין ישפרו",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "מרכז ישפרו, מודיעין",
+    "cityId": "מודיעין",
+    "location": {
+      "latitude": 31.9025,
+      "longitude": 35.0071
+    },
+    "website": "https://hashamen.co.il",
+    "instagram": "https://www.instagram.com/hashamen_official",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hashamen-modiin-azrieli",
+    "name": "השמן מודיעין עזריאלי",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "קניון עזריאלי, מודיעין",
+    "cityId": "מודיעין",
+    "location": {
+      "latitude": 31.9015,
+      "longitude": 35.0085
+    },
+    "website": "https://hashamen.co.il",
+    "instagram": "https://www.instagram.com/hashamen_official",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hashamen-holon",
+    "name": "השמן חולון",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "הרוקמים 29, חולון",
+    "cityId": "חולון",
+    "location": {
+      "latitude": 32.0162,
+      "longitude": 34.7674
+    },
+    "website": "https://hashamen.co.il",
+    "instagram": "https://www.instagram.com/hashamen_official",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hashamen-mevasseret",
+    "name": "השמן מבשרת ציון",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "החוצבים 11, מבשרת ציון",
+    "cityId": "מבשרת ציון",
+    "location": {
+      "latitude": 31.8057,
+      "longitude": 35.1534
+    },
+    "website": "https://hashamen.co.il",
+    "instagram": "https://www.instagram.com/hashamen_official",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-papagaio-jrm",
+    "name": "פאפאגאיו ירושלים",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "יד חרוצים 3, תלפיות, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7545,
+      "longitude": 35.216
+    },
+    "phone": "02-6745745",
+    "website": "https://papagaiojerusalem.rest.co.il",
+    "instagram": "https://www.instagram.com/papagaio_jerusalem",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-papagaio-herzliya",
+    "name": "פאפאגאיו הרצליה",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "קניון ארנה, הרצליה",
+    "cityId": "הרצליה",
+    "location": {
+      "latitude": 32.1641,
+      "longitude": 34.8352
+    },
+    "phone": "09-9564000",
+    "website": "https://papagaioherzliya.rest.co.il",
+    "instagram": "https://www.instagram.com/papagaio_herzliya",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-tzachi-tlv",
+    "name": "צחי בשרים",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "קיבוץ גלויות 106, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0498,
+      "longitude": 34.7726
+    },
+    "phone": "03-6590742",
+    "website": "https://www.tzahib.co.il",
+    "instagram": "https://www.instagram.com/tzachi_besarim",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-tzachi-bat-yam",
+    "name": "צחי בשרים בת ים",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "הרצל 82, בת ים",
+    "cityId": "בת ים",
+    "location": {
+      "latitude": 32.0148,
+      "longitude": 34.7485
+    },
+    "phone": "03-6590742",
+    "website": "https://www.tzahib.co.il",
+    "instagram": "https://www.instagram.com/tzachi_besarim",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-basrala-haifa-castra",
+    "name": "בשרלה חיפה קסטרא",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "פלימן 8, קניון קסטרא, חיפה",
+    "cityId": "חיפה",
+    "location": {
+      "latitude": 32.7918,
+      "longitude": 34.995
+    },
+    "phone": "04-8503535",
+    "instagram": "https://www.instagram.com/basrala_rest",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-basrala-kiryat-haim",
+    "name": "בשרלה קרית חיים",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "אח\"י אילת 61, קרית חיים",
+    "cityId": "קרית חיים",
+    "location": {
+      "latitude": 32.8274,
+      "longitude": 35.0668
+    },
+    "phone": "04-8400757",
+    "instagram": "https://www.instagram.com/basrala_rest",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-basrala-karmiel",
+    "name": "בשרלה כרמיאל",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "מתחם חוצות, כרמיאל",
+    "cityId": "כרמיאל",
+    "location": {
+      "latitude": 32.9137,
+      "longitude": 35.298
+    },
+    "phone": "04-6656669",
+    "instagram": "https://www.instagram.com/basrala_rest",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-yaakov-kabab-bat-galim",
+    "name": "יעקב קבב בת גלים",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "העלייה השניה 20, בת גלים, חיפה",
+    "cityId": "חיפה",
+    "location": {
+      "latitude": 32.8241,
+      "longitude": 34.9802
+    },
+    "phone": "04-8662332",
+    "website": "https://yakovkabab.co.il",
+    "certifiedBy": "רבנות חיפה",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-yaakov-kabab-haifa-center",
+    "name": "יעקב קבב חיפה מרכז",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "משה אהרון 10, חיפה",
+    "cityId": "חיפה",
+    "location": {
+      "latitude": 32.8134,
+      "longitude": 34.9949
+    },
+    "website": "https://yakovkabab.co.il",
+    "certifiedBy": "רבנות חיפה",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-yaakov-kabab-kiryat-haim",
+    "name": "יעקב קבב קרית חיים",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "אח\"י אילת 21, קרית חיים",
+    "cityId": "קרית חיים",
+    "location": {
+      "latitude": 32.8274,
+      "longitude": 35.0668
+    },
+    "website": "https://yakovkabab.co.il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-yaakov-kabab-nesher",
+    "name": "יעקב קבב נשר",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "דרך בר יהודה 96, נשר",
+    "cityId": "נשר",
+    "location": {
+      "latitude": 32.7918,
+      "longitude": 35.0428
+    },
+    "website": "https://yakovkabab.co.il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-salon-yevani-herzliya",
+    "name": "סלון יווני",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "אלי לנדאו 60, הרצליה",
+    "cityId": "הרצליה",
+    "location": {
+      "latitude": 32.1676,
+      "longitude": 34.8302
+    },
+    "phone": "03-3850872",
+    "website": "https://www.salonyevani.co.il",
+    "instagram": "https://www.instagram.com/salonyevani",
+    "facebook": "https://www.facebook.com/salonyevani",
+    "certifiedBy": "רבנות שוהם",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-salon-yevani-rishon",
+    "name": "סלון יווני ראשון לציון",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "המאה ועשרים 4, סינמה סיטי, ראשון לציון",
+    "cityId": "ראשון לציון",
+    "location": {
+      "latitude": 31.959,
+      "longitude": 34.802
+    },
+    "website": "https://www.salonyevani.co.il",
+    "instagram": "https://www.instagram.com/salonyevani",
+    "facebook": "https://www.facebook.com/salonyevani",
+    "certifiedBy": "רבנות שוהם",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-salon-yevani-zichron",
+    "name": "סלון יווני זיכרון יעקב",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "מול זיכרון, זיכרון יעקב",
+    "cityId": "זיכרון יעקב",
+    "location": {
+      "latitude": 32.5719,
+      "longitude": 34.947
+    },
+    "website": "https://www.salonyevani.co.il",
+    "instagram": "https://www.instagram.com/salonyevani",
+    "certifiedBy": "רבנות שוהם",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-salon-yevani-or-yehuda",
+    "name": "סלון יווני אור יהודה",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "כרמל 6, צומת סביון, אור יהודה",
+    "cityId": "אור יהודה",
+    "location": {
+      "latitude": 32.0317,
+      "longitude": 34.8551
+    },
+    "website": "https://www.salonyevani.co.il",
+    "instagram": "https://www.instagram.com/salonyevani",
+    "certifiedBy": "רבנות שוהם",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-salon-yevani-jrm",
+    "name": "סלון יווני ירושלים",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "דוד רמז 4, התחנה הראשונה, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7754,
+      "longitude": 35.2108
+    },
+    "website": "https://www.salonyevani.co.il",
+    "instagram": "https://www.instagram.com/salonyevani",
+    "certifiedBy": "רבנות שוהם",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-vivino-pt",
+    "name": "ויוינו פתח תקווה",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "תוצרת הארץ 3, שופ טיים, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.0831,
+      "longitude": 34.8771
+    },
+    "website": "https://www.vivino.co.il",
+    "instagram": "https://www.instagram.com/vivino_restaurants",
+    "facebook": "https://www.facebook.com/VIVINORestaurant",
+    "certifiedBy": "רבנות פ\"ת",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-vivino-ashdod",
+    "name": "ויוינו אשדוד",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "מקס נורדאו 13, אשדוד",
+    "cityId": "אשדוד",
+    "location": {
+      "latitude": 31.8093,
+      "longitude": 34.6559
+    },
+    "website": "https://www.vivino.co.il",
+    "instagram": "https://www.instagram.com/vivino_restaurants",
+    "certifiedBy": "רבנות אשדוד מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-vivino-beersheva",
+    "name": "ויוינו באר שבע",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "קניון מול שבע, באר שבע",
+    "cityId": "באר שבע",
+    "location": {
+      "latitude": 31.2389,
+      "longitude": 34.7908
+    },
+    "website": "https://www.vivino.co.il",
+    "instagram": "https://www.instagram.com/vivino_restaurants",
+    "certifiedBy": "רבנות ב\"ש מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-vivino-netivot",
+    "name": "ויוינו נתיבות",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "בעלי המלאכה 3, מתחם פריז, נתיבות",
+    "cityId": "נתיבות",
+    "location": {
+      "latitude": 31.4218,
+      "longitude": 34.588
+    },
+    "website": "https://www.vivino.co.il",
+    "instagram": "https://www.instagram.com/vivino_restaurants",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-fiori-jrm",
+    "name": "פיורי ירושלים",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "דוד רמז 4, התחנה הראשונה, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7754,
+      "longitude": 35.2108
+    },
+    "phone": "02-6249700",
+    "website": "https://www.fiori.co.il",
+    "instagram": "https://www.instagram.com/fiori_rest",
+    "facebook": "https://www.facebook.com/FioriRestaurant",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-fiori-kfar-saba",
+    "name": "פיורי כפר סבא",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "ויצמן 125, חצר השוק, כפר סבא",
+    "cityId": "כפר סבא",
+    "location": {
+      "latitude": 32.1799,
+      "longitude": 34.9031
+    },
+    "phone": "09-7444333",
+    "website": "https://www.fiori.co.il",
+    "instagram": "https://www.instagram.com/fiori_rest",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-japan-japan-jrm-hagana",
+    "name": "ג'אפן ג'אפן",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "ההגנה 21, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7674,
+      "longitude": 35.2054
+    },
+    "phone": "02-6712121",
+    "website": "https://japan-japan.co.il",
+    "instagram": "https://www.instagram.com/japanjapan_il",
+    "facebook": "https://www.facebook.com/japanjapan.co.il",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-japan-japan-jrm-talpiot",
+    "name": "ג'אפן ג'אפן תלפיות",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "בית הנציב, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7509,
+      "longitude": 35.2169
+    },
+    "website": "https://japan-japan.co.il",
+    "instagram": "https://www.instagram.com/japanjapan_il",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-japan-japan-jrm-jaffa",
+    "name": "ג'אפן ג'אפן יפו ירושלים",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "יפו 224, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7889,
+      "longitude": 35.2022
+    },
+    "website": "https://japan-japan.co.il",
+    "instagram": "https://www.instagram.com/japanjapan_il",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-japan-japan-jrm-french-hill",
+    "name": "ג'אפן ג'אפן גבעה צרפתית",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "גבעה צרפתית, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.818,
+      "longitude": 35.2237
+    },
+    "website": "https://japan-japan.co.il",
+    "instagram": "https://www.instagram.com/japanjapan_il",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-japan-japan-beit-shemesh",
+    "name": "ג'אפן ג'אפן בית שמש",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "בית שמש",
+    "cityId": "בית שמש",
+    "location": {
+      "latitude": 31.7442,
+      "longitude": 34.9973
+    },
+    "website": "https://japan-japan.co.il",
+    "instagram": "https://www.instagram.com/japanjapan_il",
+    "certifiedBy": "רבנות בית שמש מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-japan-japan-tel-hashomer",
+    "name": "ג'אפן ג'אפן תל השומר",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "קניון תל השומר",
+    "cityId": "רמת גן",
+    "location": {
+      "latitude": 32.0527,
+      "longitude": 34.8512
+    },
+    "website": "https://japan-japan.co.il",
+    "instagram": "https://www.instagram.com/japanjapan_il",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-japan-japan-gush-etzion",
+    "name": "ג'אפן ג'אפן גוש עציון",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "גוש עציון",
+    "cityId": "גוש עציון",
+    "location": {
+      "latitude": 31.6547,
+      "longitude": 35.1116
+    },
+    "website": "https://japan-japan.co.il",
+    "instagram": "https://www.instagram.com/japanjapan_il",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-japan-japan-ofakim",
+    "name": "ג'אפן ג'אפן אופקים",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "ד\"ר ז' חיות 12, אופקים",
+    "cityId": "אופקים",
+    "location": {
+      "latitude": 31.3118,
+      "longitude": 34.6133
+    },
+    "website": "https://japan-japan.co.il",
+    "instagram": "https://www.instagram.com/japanjapan_il",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-nagisa-kfar-saba",
+    "name": "נגיסה סושי",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "התעש 14, כפר סבא",
+    "cityId": "כפר סבא",
+    "location": {
+      "latitude": 32.1742,
+      "longitude": 34.9067
+    },
+    "phone": "1-700-500-820",
+    "website": "https://nagisasushi.co.il",
+    "instagram": "https://www.instagram.com/nagisa_sushi_il",
+    "facebook": "https://www.facebook.com/nagisasushi",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-nagisa-raanana",
+    "name": "נגיסה סושי רעננה",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "זרחין 13, רעננה",
+    "cityId": "רעננה",
+    "location": {
+      "latitude": 32.1852,
+      "longitude": 34.8723
+    },
+    "website": "https://nagisasushi.co.il",
+    "instagram": "https://www.instagram.com/nagisa_sushi_il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-nagisa-tlv-kikar-hamedina",
+    "name": "נגיסה סושי תל אביב",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "כיכר המדינה, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0938,
+      "longitude": 34.7825
+    },
+    "website": "https://nagisasushi.co.il",
+    "instagram": "https://www.instagram.com/nagisa_sushi_il",
+    "certifiedBy": "רבנות תל אביב",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-nagisa-bb",
+    "name": "נגיסה סושי בני ברק",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.0818,
+      "longitude": 34.8342
+    },
+    "website": "https://nagisasushi.co.il",
+    "instagram": "https://www.instagram.com/nagisa_sushi_il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-nagisa-givat-shmuel",
+    "name": "נגיסה סושי גבעת שמואל",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "גבעת שמואל",
+    "cityId": "גבעת שמואל",
+    "location": {
+      "latitude": 32.076,
+      "longitude": 34.8443
+    },
+    "website": "https://nagisasushi.co.il",
+    "instagram": "https://www.instagram.com/nagisa_sushi_il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-nagisa-kiryat-ono",
+    "name": "נגיסה סושי קרית אונו",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "קרית אונו",
+    "cityId": "קרית אונו",
+    "location": {
+      "latitude": 32.0598,
+      "longitude": 34.8611
+    },
+    "website": "https://nagisasushi.co.il",
+    "instagram": "https://www.instagram.com/nagisa_sushi_il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-nagisa-afula",
+    "name": "נגיסה סושי עפולה",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "צומת הפיל, עפולה",
+    "cityId": "עפולה",
+    "location": {
+      "latitude": 32.6049,
+      "longitude": 35.2985
+    },
+    "website": "https://nagisasushi.co.il",
+    "instagram": "https://www.instagram.com/nagisa_sushi_il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-nagisa-ramat-gan",
+    "name": "נגיסה סושי רמת גן",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "רמת גן",
+    "cityId": "רמת גן",
+    "location": {
+      "latitude": 32.0781,
+      "longitude": 34.8116
+    },
+    "website": "https://nagisasushi.co.il",
+    "instagram": "https://www.instagram.com/nagisa_sushi_il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hummus-eli-or-yehuda",
+    "name": "חומוס אליהו",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "מפעל 13, אור יהודה",
+    "cityId": "אור יהודה",
+    "location": {
+      "latitude": 32.0317,
+      "longitude": 34.8551
+    },
+    "phone": "1700500148",
+    "website": "https://www.humus-eli-yahoo.com",
+    "instagram": "https://www.instagram.com/humuseli_official",
+    "facebook": "https://www.facebook.com/humseliyahu",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hummus-eli-azor",
+    "name": "חומוס אליהו אזור",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "המצודה 8, אזור",
+    "cityId": "אזור",
+    "location": {
+      "latitude": 32.021,
+      "longitude": 34.8202
+    },
+    "website": "https://www.humus-eli-yahoo.com",
+    "instagram": "https://www.instagram.com/humuseli_official",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hummus-eli-beer-yaakov",
+    "name": "חומוס אליהו באר יעקב",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "שה\"נס 17, באר יעקב",
+    "cityId": "באר יעקב",
+    "location": {
+      "latitude": 31.931,
+      "longitude": 34.839
+    },
+    "website": "https://www.humus-eli-yahoo.com",
+    "instagram": "https://www.instagram.com/humuseli_official",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hummus-eli-bat-yam",
+    "name": "חומוס אליהו בת ים",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "הרב ניסנבאום 37, בת ים",
+    "cityId": "בת ים",
+    "location": {
+      "latitude": 32.0187,
+      "longitude": 34.7527
+    },
+    "website": "https://www.humus-eli-yahoo.com",
+    "instagram": "https://www.instagram.com/humuseli_official",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hummus-eli-herzliya",
+    "name": "חומוס אליהו הרצליה",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "שער העיר, הרצליה",
+    "cityId": "הרצליה",
+    "location": {
+      "latitude": 32.1572,
+      "longitude": 34.818
+    },
+    "website": "https://www.humus-eli-yahoo.com",
+    "instagram": "https://www.instagram.com/humuseli_official",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hummus-eli-safed",
+    "name": "חומוס אליהו צפת",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "שוקולד 6, צפת",
+    "cityId": "צפת",
+    "location": {
+      "latitude": 32.962,
+      "longitude": 35.4941
+    },
+    "website": "https://www.humus-eli-yahoo.com",
+    "instagram": "https://www.instagram.com/humuseli_official",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hummus-eli-ashdod",
+    "name": "חומוס אליהו אשדוד",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "הבנים 7, אשדוד",
+    "cityId": "אשדוד",
+    "location": {
+      "latitude": 31.8093,
+      "longitude": 34.6559
+    },
+    "website": "https://www.humus-eli-yahoo.com",
+    "instagram": "https://www.instagram.com/humuseli_official",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hummus-eli-ashkelon",
+    "name": "חומוס אליהו אשקלון",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "מרינה אשקלון, אשקלון",
+    "cityId": "אשקלון",
+    "location": {
+      "latitude": 31.6672,
+      "longitude": 34.5673
+    },
+    "website": "https://www.humus-eli-yahoo.com",
+    "instagram": "https://www.instagram.com/humuseli_official",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hummus-eli-jrm-talpiot",
+    "name": "חומוס אליהו ירושלים תלפיות",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "תלפיות, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7479,
+      "longitude": 35.222
+    },
+    "website": "https://www.humus-eli-yahoo.com",
+    "instagram": "https://www.instagram.com/humuseli_official",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hummus-eli-jrm-mahane",
+    "name": "חומוס אליהו מחנה יהודה",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "שוק מחנה יהודה, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7843,
+      "longitude": 35.21
+    },
+    "website": "https://www.humus-eli-yahoo.com",
+    "instagram": "https://www.instagram.com/humuseli_official",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hummus-eli-tiberias",
+    "name": "חומוס אליהו טבריה",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "טבריה",
+    "cityId": "טבריה",
+    "location": {
+      "latitude": 32.7872,
+      "longitude": 35.5292
+    },
+    "website": "https://www.humus-eli-yahoo.com",
+    "instagram": "https://www.instagram.com/humuseli_official",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-hummus-eli-netanya",
+    "name": "חומוס אליהו נתניה",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "נתניה",
+    "cityId": "נתניה",
+    "location": {
+      "latitude": 32.3295,
+      "longitude": 34.854
+    },
+    "website": "https://www.humus-eli-yahoo.com",
+    "instagram": "https://www.instagram.com/humuseli_official",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pizza-shemesh-ofakim",
+    "name": "פיצה שמש אופקים",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "הרצל 26, אופקים",
+    "cityId": "אופקים",
+    "location": {
+      "latitude": 31.3118,
+      "longitude": 34.6133
+    },
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh",
+    "certifiedBy": "כשרות הרב לנדא",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pizza-shemesh-herzliya",
+    "name": "פיצה שמש הרצליה",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "סוקולוב 31, הרצליה",
+    "cityId": "הרצליה",
+    "location": {
+      "latitude": 32.1641,
+      "longitude": 34.8352
+    },
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pizza-shemesh-or-yehuda",
+    "name": "פיצה שמש אור יהודה",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "ארבל 13, אור יהודה",
+    "cityId": "אור יהודה",
+    "location": {
+      "latitude": 32.0317,
+      "longitude": 34.8551
+    },
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pizza-shemesh-azor",
+    "name": "פיצה שמש אזור",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "שפינוזה 2, אזור",
+    "cityId": "אזור",
+    "location": {
+      "latitude": 32.021,
+      "longitude": 34.8202
+    },
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pizza-shemesh-eilat",
+    "name": "פיצה שמש אילת",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "תמרים 39, אילת",
+    "cityId": "אילת",
+    "location": {
+      "latitude": 29.5544,
+      "longitude": 34.9489
+    },
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pizza-shemesh-elad",
+    "name": "פיצה שמש אלעד",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "רבי יהודה הנשיא 94, אלעד",
+    "cityId": "אלעד",
+    "location": {
+      "latitude": 32.1127,
+      "longitude": 34.9529
+    },
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh",
+    "certifiedBy": "העדה החרדית",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pizza-shemesh-efrat",
+    "name": "פיצה שמש אפרת",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "אפרת סנטר, אפרת",
+    "cityId": "אפרת",
+    "location": {
+      "latitude": 31.6547,
+      "longitude": 35.1116
+    },
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pizza-shemesh-ashdod-rogosin",
+    "name": "פיצה שמש אשדוד",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "רוגוזין 3, אשדוד",
+    "cityId": "אשדוד",
+    "location": {
+      "latitude": 31.8093,
+      "longitude": 34.6559
+    },
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pizza-shemesh-ashkelon-bialik",
+    "name": "פיצה שמש אשקלון",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "ביאליק 32, אשקלון",
+    "cityId": "אשקלון",
+    "location": {
+      "latitude": 31.6664,
+      "longitude": 34.5679
+    },
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pizza-shemesh-givatayim",
+    "name": "פיצה שמש גבעתיים",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "ויצמן 43, גבעתיים",
+    "cityId": "גבעתיים",
+    "location": {
+      "latitude": 32.0694,
+      "longitude": 34.8136
+    },
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pizza-shemesh-gadera",
+    "name": "פיצה שמש גדרה",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "הרצל 10, גדרה",
+    "cityId": "גדרה",
+    "location": {
+      "latitude": 31.812,
+      "longitude": 34.7775
+    },
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pizza-shemesh-gan-yavne",
+    "name": "פיצה שמש גן יבנה",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "צה\"ל 28, גן יבנה",
+    "cityId": "גן יבנה",
+    "location": {
+      "latitude": 31.7936,
+      "longitude": 34.7113
+    },
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pizza-shemesh-ganei-tikva",
+    "name": "פיצה שמש גני תקווה",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "עין גנים 7, גני תקווה",
+    "cityId": "גני תקווה",
+    "location": {
+      "latitude": 32.0598,
+      "longitude": 34.8768
+    },
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pizza-shemesh-dimona",
+    "name": "פיצה שמש דימונה",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "המעפילים 215, דימונה",
+    "cityId": "דימונה",
+    "location": {
+      "latitude": 31.0693,
+      "longitude": 35.0345
+    },
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pizza-shemesh-hadera",
+    "name": "פיצה שמש חדרה",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "הנשיא 59, חדרה",
+    "cityId": "חדרה",
+    "location": {
+      "latitude": 32.4335,
+      "longitude": 34.918
+    },
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pizza-shemesh-harish",
+    "name": "פיצה שמש חריש",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "דרך ארץ 41, חריש",
+    "cityId": "חריש",
+    "location": {
+      "latitude": 32.4617,
+      "longitude": 35.043
+    },
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh",
+    "certifiedBy": "העדה החרדית",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pizza-shemesh-tiberias",
+    "name": "פיצה שמש טבריה",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "העצמאות 3, טבריה",
+    "cityId": "טבריה",
+    "location": {
+      "latitude": 32.7872,
+      "longitude": 35.5292
+    },
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh",
+    "certifiedBy": "העדה החרדית",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pizza-shemesh-yavne",
+    "name": "פיצה שמש יבנה",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "אגוז 2, יבנה",
+    "cityId": "יבנה",
+    "location": {
+      "latitude": 31.8728,
+      "longitude": 34.741
+    },
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pizza-shemesh-yehud",
+    "name": "פיצה שמש יהוד",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "ויצמן 44, יהוד",
+    "cityId": "יהוד",
+    "location": {
+      "latitude": 32.0317,
+      "longitude": 34.8813
+    },
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pizza-shemesh-kfar-chabad",
+    "name": "פיצה שמש כפר חב\"ד",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "אדמו\"ר הרש\"ב 2, כפר חב\"ד",
+    "cityId": "כפר חב\"ד",
+    "location": {
+      "latitude": 32.0144,
+      "longitude": 34.866
+    },
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh",
+    "certifiedBy": "העדה החרדית",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pizza-shemesh-kfar-saba",
+    "name": "פיצה שמש כפר סבא",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "צ'רניחובסקי 24, כפר סבא",
+    "cityId": "כפר סבא",
+    "location": {
+      "latitude": 32.1799,
+      "longitude": 34.9031
+    },
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pizza-shemesh-modiin",
+    "name": "פיצה שמש מודיעין",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "חיים ויצמן 18, מודיעין",
+    "cityId": "מודיעין",
+    "location": {
+      "latitude": 31.9025,
+      "longitude": 35.0071
+    },
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pizza-shemesh-mitzpe-ramon",
+    "name": "פיצה שמש מצפה רמון",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "נחל תרשין 1, מצפה רמון",
+    "cityId": "מצפה רמון",
+    "location": {
+      "latitude": 30.6053,
+      "longitude": 34.8048
+    },
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pizza-shemesh-nes-ziona",
+    "name": "פיצה שמש נס ציונה",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "נורדאו 6, נס ציונה",
+    "cityId": "נס ציונה",
+    "location": {
+      "latitude": 31.9276,
+      "longitude": 34.7948
+    },
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pizza-shemesh-netivot",
+    "name": "פיצה שמש נתיבות",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "רפח ים 13, נתיבות",
+    "cityId": "נתיבות",
+    "location": {
+      "latitude": 31.4218,
+      "longitude": 34.588
+    },
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pizza-shemesh-afula",
+    "name": "פיצה שמש עפולה",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "משה שרת 3, עפולה",
+    "cityId": "עפולה",
+    "location": {
+      "latitude": 32.6079,
+      "longitude": 35.2898
+    },
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh",
+    "certifiedBy": "העדה החרדית",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pizza-shemesh-arad",
+    "name": "פיצה שמש ערד",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "א. בן יאיר 35, ערד",
+    "cityId": "ערד",
+    "location": {
+      "latitude": 31.2601,
+      "longitude": 35.2118
+    },
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-max-brenner-pt",
+    "name": "מקס ברנר פתח תקווה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "שחם 30, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.0885,
+      "longitude": 34.8875
+    },
+    "phone": "03-9225200",
+    "website": "https://max-brenner.co.il",
+    "instagram": "https://www.instagram.com/maxbrennerisrael",
+    "facebook": "https://www.facebook.com/MaxBrennerIsrael",
+    "certifiedBy": "רבנות פ\"ת",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-max-brenner-jrm",
+    "name": "מקס ברנר ירושלים",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "ישעיהו ליבוביץ 28, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7721,
+      "longitude": 35.205
+    },
+    "website": "https://max-brenner.co.il",
+    "instagram": "https://www.instagram.com/maxbrennerisrael",
+    "facebook": "https://www.facebook.com/MaxBrennerIsrael",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-caffit-emek-refaim",
+    "name": "קפיט",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "עמק רפאים 36, המושבה הגרמנית, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7651,
+      "longitude": 35.2066
+    },
+    "phone": "02-5635284",
+    "website": "https://caffit.co.il",
+    "instagram": "https://www.instagram.com/caffit_jerusalem",
+    "facebook": "https://www.facebook.com/caffit",
+    "certifiedBy": "רבנות ירושלים",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-caffit-botanical-garden",
+    "name": "קפיט הגן הבוטני",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "מנדל ישראל קפלן 3, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7721,
+      "longitude": 35.1999
+    },
+    "phone": "02-6480003",
+    "website": "https://caffit.co.il",
+    "instagram": "https://www.instagram.com/caffit_jerusalem",
+    "certifiedBy": "רבנות ירושלים",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-caffit-maaleh-adumim",
+    "name": "קפיט מעלה אדומים",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "אגם אדומים, מעלה אדומים",
+    "cityId": "מעלה אדומים",
+    "location": {
+      "latitude": 31.7742,
+      "longitude": 35.295
+    },
+    "website": "https://caffit.co.il",
+    "instagram": "https://www.instagram.com/caffit_jerusalem",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-caffit-modiin",
+    "name": "קפיט מודיעין",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "פארק ענבה, מודיעין",
+    "cityId": "מודיעין",
+    "location": {
+      "latitude": 31.9025,
+      "longitude": 35.0071
+    },
+    "website": "https://caffit.co.il",
+    "instagram": "https://www.instagram.com/caffit_jerusalem",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pokeshop-tlv-herzl",
+    "name": "פוקישופ",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "הרצל 10, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0584,
+      "longitude": 34.773
+    },
+    "phone": "03-6530883",
+    "website": "https://pokeshop.co.il",
+    "instagram": "https://www.instagram.com/pokeshop_israel",
+    "facebook": "https://www.facebook.com/pokeshop.israel",
+    "certifiedBy": "רבנות תל אביב",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pokeshop-herzliya",
+    "name": "פוקישופ הרצליה",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "משכית 27, הרצליה",
+    "cityId": "הרצליה",
+    "location": {
+      "latitude": 32.1641,
+      "longitude": 34.8352
+    },
+    "website": "https://pokeshop.co.il",
+    "instagram": "https://www.instagram.com/pokeshop_israel",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pokeshop-raanana",
+    "name": "פוקישופ רעננה",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "תעשייה 5, רעננה",
+    "cityId": "רעננה",
+    "location": {
+      "latitude": 32.1835,
+      "longitude": 34.8701
+    },
+    "website": "https://pokeshop.co.il",
+    "instagram": "https://www.instagram.com/pokeshop_israel",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pokeshop-netanya",
+    "name": "פוקישופ נתניה",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "מיפני 5, SOHO, נתניה",
+    "cityId": "נתניה",
+    "location": {
+      "latitude": 32.3261,
+      "longitude": 34.86
+    },
+    "website": "https://pokeshop.co.il",
+    "instagram": "https://www.instagram.com/pokeshop_israel",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pokeshop-ramat-gan",
+    "name": "פוקישופ רמת גן",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "רמת גן",
+    "cityId": "רמת גן",
+    "location": {
+      "latitude": 32.0808,
+      "longitude": 34.8178
+    },
+    "website": "https://pokeshop.co.il",
+    "instagram": "https://www.instagram.com/pokeshop_israel",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-japanika-jrm-cinema-city",
+    "name": "ג'פניקה ירושלים",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "סינמה סיטי, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7889,
+      "longitude": 35.2022
+    },
+    "website": "https://japanika.net",
+    "instagram": "https://www.instagram.com/japanika",
+    "facebook": "https://www.facebook.com/japanika",
+    "certifiedBy": "רבנות ירושלים",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-japanika-raanana",
+    "name": "ג'פניקה רעננה",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "אחוזה 95, רעננה",
+    "cityId": "רעננה",
+    "location": {
+      "latitude": 32.1835,
+      "longitude": 34.8701
+    },
+    "website": "https://japanika.net",
+    "instagram": "https://www.instagram.com/japanika",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-japanika-rosh-haayin",
+    "name": "ג'פניקה ראש העין",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "יהושע בן נון 77, ראש העין",
+    "cityId": "ראש העין",
+    "location": {
+      "latitude": 32.0992,
+      "longitude": 34.9558
+    },
+    "website": "https://japanika.net",
+    "instagram": "https://www.instagram.com/japanika",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-japanika-beersheva",
+    "name": "ג'פניקה באר שבע",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "באר שבע",
+    "cityId": "באר שבע",
+    "location": {
+      "latitude": 31.2389,
+      "longitude": 34.7908
+    },
+    "website": "https://japanika.net",
+    "instagram": "https://www.instagram.com/japanika",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-japanika-haifa-nasi",
+    "name": "ג'פניקה חיפה הנשיא",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "שד' הנשיא 122, חיפה",
+    "cityId": "חיפה",
+    "location": {
+      "latitude": 32.8134,
+      "longitude": 34.9949
+    },
+    "website": "https://japanika.net",
+    "instagram": "https://www.instagram.com/japanika",
+    "certifiedBy": "רבנות חיפה",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-japanika-kiryat-motzkin",
+    "name": "ג'פניקה קרית מוצקין",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "שד' גושן 92, קרית מוצקין",
+    "cityId": "קרית מוצקין",
+    "location": {
+      "latitude": 32.8364,
+      "longitude": 35.0749
+    },
+    "website": "https://japanika.net",
+    "instagram": "https://www.instagram.com/japanika",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-japanika-netivot",
+    "name": "ג'פניקה נתיבות",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "בעלי המלאכה 203, נתיבות",
+    "cityId": "נתיבות",
+    "location": {
+      "latitude": 31.4218,
+      "longitude": 34.588
+    },
+    "website": "https://japanika.net",
+    "instagram": "https://www.instagram.com/japanika",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-benny-hadayag-herzliya",
+    "name": "בני הדייג",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "יורדי הים 1, מרינה הרצליה",
+    "cityId": "הרצליה",
+    "location": {
+      "latitude": 32.1676,
+      "longitude": 34.8302
+    },
+    "phone": "09-9557387",
+    "website": "https://benny-hadayag.co.il",
+    "instagram": "https://www.instagram.com/benny_hadayag_marina",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-raffaello-kiryat-bialik",
+    "name": "רפאלו קרית ביאליק",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "קניון הקריון, דרך עכו 192, קרית ביאליק",
+    "cityId": "קרית ביאליק",
+    "location": {
+      "latitude": 32.8364,
+      "longitude": 35.0749
+    },
+    "phone": "04-8749999",
+    "website": "https://www.raffaello.co.il",
+    "instagram": "https://www.instagram.com/raffaello_rest",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-raffaello-netanya",
+    "name": "רפאלו נתניה",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "האורזים 23, מגדלי יהלום 1, נתניה",
+    "cityId": "נתניה",
+    "location": {
+      "latitude": 32.3261,
+      "longitude": 34.86
+    },
+    "phone": "09-8662266",
+    "website": "https://www.raffaello.co.il",
+    "instagram": "https://www.instagram.com/raffaello_rest",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-go-noodles-tlv-ben-gavir",
+    "name": "גו נודלס",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "בן גביר 54, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0563,
+      "longitude": 34.775
+    },
+    "website": "https://gonoodles.co.il",
+    "instagram": "https://www.instagram.com/gonoodles_il",
+    "facebook": "https://www.facebook.com/gonoodles.co.il",
+    "certifiedBy": "רבנות ראשית תל אביב-יפו",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-go-noodles-tlv-yitzhak-sade",
+    "name": "גו נודלס תל אביב",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "יצחק שדה 8, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0694,
+      "longitude": 34.788
+    },
+    "website": "https://gonoodles.co.il",
+    "instagram": "https://www.instagram.com/gonoodles_il",
+    "certifiedBy": "רבנות ראשית תל אביב-יפו",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-go-noodles-tlv-yehuda-halevi",
+    "name": "גו נודלס יהודה הלוי",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "יהודה הלוי 39, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0649,
+      "longitude": 34.7756
+    },
+    "website": "https://gonoodles.co.il",
+    "instagram": "https://www.instagram.com/gonoodles_il",
+    "certifiedBy": "רבנות ראשית תל אביב-יפו",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-go-noodles-raanana",
+    "name": "גו נודלס רעננה",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "רעננה",
+    "cityId": "רעננה",
+    "location": {
+      "latitude": 32.1835,
+      "longitude": 34.8701
+    },
+    "website": "https://gonoodles.co.il",
+    "instagram": "https://www.instagram.com/gonoodles_il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-go-noodles-pt",
+    "name": "גו נודלס פתח תקווה",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.0885,
+      "longitude": 34.8875
+    },
+    "website": "https://gonoodles.co.il",
+    "instagram": "https://www.instagram.com/gonoodles_il",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-dr-shakshuka-jaffa",
+    "name": "ד\"ר שקשוקה",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "בית אשל 3, שוק הפשפשים, יפו",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0495,
+      "longitude": 34.7571
+    },
+    "phone": "03-5162325",
+    "website": "https://www.doctorshakshuka.co.il",
+    "instagram": "https://www.instagram.com/dr.shakshuka",
+    "facebook": "https://www.facebook.com/DrShakshuka",
+    "certifiedBy": "רבנות יפו",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-dr-shakshuka-rishon",
+    "name": "ד\"ר שקשוקה ראשון לציון",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "ראשון לציון",
+    "cityId": "ראשון לציון",
+    "location": {
+      "latitude": 31.962,
+      "longitude": 34.7958
+    },
+    "website": "https://www.doctorshakshuka.co.il",
+    "instagram": "https://www.instagram.com/dr.shakshuka",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pizza-story-beersheva",
+    "name": "פיצה סטורי באר שבע",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "השלום 31, באר שבע",
+    "cityId": "באר שבע",
+    "location": {
+      "latitude": 31.245,
+      "longitude": 34.792
+    },
+    "website": "https://pizza-story.co.il",
+    "instagram": "https://www.instagram.com/pizza_story_il",
+    "facebook": "https://www.facebook.com/pizzastoryil",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pizza-story-pt",
+    "name": "פיצה סטורי פתח תקווה",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "יהושע שטמפפר 24, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.0885,
+      "longitude": 34.8832
+    },
+    "website": "https://pizza-story.co.il",
+    "instagram": "https://www.instagram.com/pizza_story_il",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pizza-story-jrm-talpiot",
+    "name": "פיצה סטורי ירושלים",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "יד חרוצים 21, תלפיות, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7479,
+      "longitude": 35.222
+    },
+    "website": "https://pizza-story.co.il",
+    "instagram": "https://www.instagram.com/pizza_story_il",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pizza-story-tzafria",
+    "name": "פיצה סטורי צפריה",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "הארז 1, צפריה",
+    "cityId": "צפריה",
+    "location": {
+      "latitude": 31.9055,
+      "longitude": 34.84
+    },
+    "website": "https://pizza-story.co.il",
+    "instagram": "https://www.instagram.com/pizza_story_il",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-pizza-story-tlv",
+    "name": "פיצה סטורי תל אביב",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.078,
+      "longitude": 34.778
+    },
+    "website": "https://pizza-story.co.il",
+    "instagram": "https://www.instagram.com/pizza_story_il",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual"
   }
 ]
