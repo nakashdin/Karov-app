@@ -133598,195 +133598,6 @@
     "source": "manual"
   },
   {
-    "id": "manual-benedict-tlv-rothschild",
-    "name": "בנדיקט",
-    "type": "restaurant",
-    "category": "dairy",
-    "address": "רוטשילד 29, תל אביב",
-    "cityId": "תל אביב",
-    "location": {
-      "latitude": 32.0634,
-      "longitude": 34.7744
-    },
-    "phone": "03-6862657",
-    "website": "https://benedict.co.il",
-    "instagram": "https://www.instagram.com/benedictbreakfast",
-    "facebook": "https://www.facebook.com/BenedictBreakfast",
-    "certifiedBy": "רבנות תל אביב",
-    "kosherType": "regular",
-    "source": "manual"
-  },
-  {
-    "id": "manual-benedict-herzliya",
-    "name": "בנדיקט הרצליה",
-    "type": "restaurant",
-    "category": "dairy",
-    "address": "האצ\"ל 1, הרצליה",
-    "cityId": "הרצליה",
-    "location": {
-      "latitude": 32.1641,
-      "longitude": 34.8352
-    },
-    "website": "https://benedict.co.il",
-    "instagram": "https://www.instagram.com/benedictbreakfast",
-    "certifiedBy": "רבנות מקומית",
-    "kosherType": "regular",
-    "source": "manual"
-  },
-  {
-    "id": "manual-benedict-kfar-saba",
-    "name": "בנדיקט כפר סבא",
-    "type": "restaurant",
-    "category": "dairy",
-    "address": "כפר סבא",
-    "cityId": "כפר סבא",
-    "location": {
-      "latitude": 32.1799,
-      "longitude": 34.9031
-    },
-    "website": "https://benedict.co.il",
-    "instagram": "https://www.instagram.com/benedictbreakfast",
-    "certifiedBy": "רבנות מקומית",
-    "kosherType": "regular",
-    "source": "manual"
-  },
-  {
-    "id": "manual-benedict-pt",
-    "name": "בנדיקט פתח תקווה",
-    "type": "restaurant",
-    "category": "dairy",
-    "address": "פתח תקווה",
-    "cityId": "פתח תקווה",
-    "location": {
-      "latitude": 32.0885,
-      "longitude": 34.8875
-    },
-    "website": "https://benedict.co.il",
-    "instagram": "https://www.instagram.com/benedictbreakfast",
-    "certifiedBy": "רבנות מקומית",
-    "kosherType": "regular",
-    "source": "manual"
-  },
-  {
-    "id": "manual-benedict-modiin",
-    "name": "בנדיקט מודיעין",
-    "type": "restaurant",
-    "category": "dairy",
-    "address": "מודיעין",
-    "cityId": "מודיעין",
-    "location": {
-      "latitude": 31.9025,
-      "longitude": 35.0071
-    },
-    "website": "https://benedict.co.il",
-    "instagram": "https://www.instagram.com/benedictbreakfast",
-    "certifiedBy": "רבנות מקומית",
-    "kosherType": "regular",
-    "source": "manual"
-  },
-  {
-    "id": "manual-benedict-netanya",
-    "name": "בנדיקט נהריה",
-    "type": "restaurant",
-    "category": "dairy",
-    "address": "נהריה",
-    "cityId": "נהריה",
-    "location": {
-      "latitude": 33.0045,
-      "longitude": 35.0978
-    },
-    "website": "https://benedict.co.il",
-    "instagram": "https://www.instagram.com/benedictbreakfast",
-    "certifiedBy": "רבנות מקומית",
-    "kosherType": "regular",
-    "source": "manual"
-  },
-  {
-    "id": "manual-benedict-karmiel",
-    "name": "בנדיקט כרמיאל",
-    "type": "restaurant",
-    "category": "dairy",
-    "address": "כרמיאל",
-    "cityId": "כרמיאל",
-    "location": {
-      "latitude": 32.9137,
-      "longitude": 35.298
-    },
-    "website": "https://benedict.co.il",
-    "instagram": "https://www.instagram.com/benedictbreakfast",
-    "certifiedBy": "רבנות מקומית",
-    "kosherType": "regular",
-    "source": "manual"
-  },
-  {
-    "id": "manual-benedict-rishon",
-    "name": "בנדיקט ראשון לציון",
-    "type": "restaurant",
-    "category": "dairy",
-    "address": "ראשון לציון",
-    "cityId": "ראשון לציון",
-    "location": {
-      "latitude": 31.9762,
-      "longitude": 34.7913
-    },
-    "website": "https://benedict.co.il",
-    "instagram": "https://www.instagram.com/benedictbreakfast",
-    "certifiedBy": "רבנות מקומית",
-    "kosherType": "regular",
-    "source": "manual"
-  },
-  {
-    "id": "manual-benedict-bilu",
-    "name": "בנדיקט ביל\"ו",
-    "type": "restaurant",
-    "category": "dairy",
-    "address": "מרכז ביל\"ו, ביל\"ו",
-    "cityId": "גדרה",
-    "location": {
-      "latitude": 31.812,
-      "longitude": 34.7775
-    },
-    "website": "https://benedict.co.il",
-    "instagram": "https://www.instagram.com/benedictbreakfast",
-    "certifiedBy": "רבנות מקומית",
-    "kosherType": "regular",
-    "source": "manual"
-  },
-  {
-    "id": "manual-benedict-ashdod",
-    "name": "בנדיקט אשדוד",
-    "type": "restaurant",
-    "category": "dairy",
-    "address": "אשדוד",
-    "cityId": "אשדוד",
-    "location": {
-      "latitude": 31.8093,
-      "longitude": 34.6559
-    },
-    "website": "https://benedict.co.il",
-    "instagram": "https://www.instagram.com/benedictbreakfast",
-    "certifiedBy": "רבנות מקומית",
-    "kosherType": "regular",
-    "source": "manual"
-  },
-  {
-    "id": "manual-benedict-beersheva",
-    "name": "בנדיקט באר שבע",
-    "type": "restaurant",
-    "category": "dairy",
-    "address": "באר שבע",
-    "cityId": "באר שבע",
-    "location": {
-      "latitude": 31.2389,
-      "longitude": 34.7908
-    },
-    "website": "https://benedict.co.il",
-    "instagram": "https://www.instagram.com/benedictbreakfast",
-    "certifiedBy": "רבנות מקומית",
-    "kosherType": "regular",
-    "source": "manual"
-  },
-  {
     "id": "manual-bleecker-pt",
     "name": "בליקר בייקרי",
     "type": "cafe",
@@ -133886,6 +133697,704 @@
     "website": "https://bleeckerbakery.co.il",
     "instagram": "https://www.instagram.com/bleecker_bakery",
     "certifiedBy": "רבנות תל אביב",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-ashdod-gan-hair",
+    "name": "קפה גרג גן העיר",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "הגדוד העברי, גן העיר, אשדוד",
+    "cityId": "אשדוד",
+    "location": {
+      "latitude": 31.8093,
+      "longitude": 34.6559
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "facebook": "https://www.facebook.com/GregCafe",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-eilat-big",
+    "name": "קפה גרג אילת",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "הסתת 20, ביג, אילת",
+    "cityId": "אילת",
+    "location": {
+      "latitude": 29.5544,
+      "longitude": 34.9489
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-kastina",
+    "name": "קפה גרג קסטינה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "שיבולים, ביג קסטינה, באר טוביה",
+    "cityId": "באר טוביה",
+    "location": {
+      "latitude": 31.7936,
+      "longitude": 34.7413
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-dimona",
+    "name": "קפה גרג דימונה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "שדרות גולדה מאיר 1, דימונה",
+    "cityId": "דימונה",
+    "location": {
+      "latitude": 31.0693,
+      "longitude": 35.0345
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-ofakim",
+    "name": "קפה גרג אופקים",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "יהדות דרום אפריקה 14, אופקים",
+    "cityId": "אופקים",
+    "location": {
+      "latitude": 31.3118,
+      "longitude": 34.6133
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-netivot",
+    "name": "קפה גרג נתיבות",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "בעלי המלאכה 5, נתיבות",
+    "cityId": "נתיבות",
+    "location": {
+      "latitude": 31.4218,
+      "longitude": 34.588
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-sderot",
+    "name": "קפה גרג שדרות",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "דרך מנחם בגין 1, שדרות",
+    "cityId": "שדרות",
+    "location": {
+      "latitude": 31.5235,
+      "longitude": 34.5996
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-ein-bokek",
+    "name": "קפה גרג ים המלח",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "עין בוקק, ים המלח",
+    "cityId": "עין בוקק",
+    "location": {
+      "latitude": 31.155,
+      "longitude": 35.365
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-tlv-fashion-mall",
+    "name": "קפה גרג TLV פאשן מול",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "קרליבך 4, TLV Fashion Mall, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0697,
+      "longitude": 34.7876
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות ראשית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-tlv-dizengoff",
+    "name": "קפה גרג דיזנגוף סנטר",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "דיזנגוף 55, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0783,
+      "longitude": 34.775
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות ראשית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-pt-kanyon-gadol",
+    "name": "קפה גרג הקניון הגדול",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "ז'בוטינסקי 72, הקניון הגדול, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.0808,
+      "longitude": 34.8818
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-pt-sirkin",
+    "name": "קפה גרג סירקין",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "אלעזר פרידמן 9, סירקין, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.0885,
+      "longitude": 34.8875
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-bb-bsr",
+    "name": "קפה גרג ב.ס.ר בני ברק",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "מצדה 5, ב.ס.ר, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.08,
+      "longitude": 34.8309
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות בני ברק מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-givat-shmuel",
+    "name": "קפה גרג גבעת שמואל",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "שדרות מנחם בגין 30, גבעת שמואל",
+    "cityId": "גבעת שמואל",
+    "location": {
+      "latitude": 32.076,
+      "longitude": 34.8443
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-hod-hasharon",
+    "name": "קפה גרג הוד השרון",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "הרקון 2, שרונים, הוד השרון",
+    "cityId": "הוד השרון",
+    "location": {
+      "latitude": 32.1482,
+      "longitude": 34.8902
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-raanana-renanim",
+    "name": "קפה גרג רננים",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "קניון רננים, המלאכה, רעננה",
+    "cityId": "רעננה",
+    "location": {
+      "latitude": 32.1899,
+      "longitude": 34.8761
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-netanya-hasharon",
+    "name": "קפה גרג נתניה השרון",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "הרצל 60, נתניה",
+    "cityId": "נתניה",
+    "location": {
+      "latitude": 32.3295,
+      "longitude": 34.854
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-ramla",
+    "name": "קפה גרג רמלה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "שדרות דוד רזיאל 1, קניון עזריאלי, רמלה",
+    "cityId": "רמלה",
+    "location": {
+      "latitude": 31.9353,
+      "longitude": 34.8713
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-harish",
+    "name": "קפה גרג חריש",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "כביש ארץ 1, חריש",
+    "cityId": "חריש",
+    "location": {
+      "latitude": 32.4617,
+      "longitude": 35.043
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-ariel",
+    "name": "קפה גרג אריאל",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "הבנאי 5, אריאל",
+    "cityId": "אריאל",
+    "location": {
+      "latitude": 32.1048,
+      "longitude": 35.1711
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-beit-shemesh",
+    "name": "קפה גרג בית שמש",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "שדרות יגאל אלון 1, בית שמש",
+    "cityId": "בית שמש",
+    "location": {
+      "latitude": 31.7442,
+      "longitude": 34.9973
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-gush-etzion",
+    "name": "קפה גרג גוש עציון",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "צומת גוש עציון",
+    "cityId": "גוש עציון",
+    "location": {
+      "latitude": 31.6547,
+      "longitude": 35.1116
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-pardes-hana",
+    "name": "קפה גרג פרדס חנה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "תדהר 1, פרדס חנה כרכור",
+    "cityId": "פרדס חנה",
+    "location": {
+      "latitude": 32.4721,
+      "longitude": 34.9718
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-jrm-hadar",
+    "name": "קפה גרג קניון הדר ירושלים",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "קניון הדר, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.7889,
+      "longitude": 35.2022
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות ירושלים מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-rishon-g2",
+    "name": "קפה גרג G2 ראשל\"צ",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "ילדי טהרן 5, ראשון לציון",
+    "cityId": "ראשון לציון",
+    "location": {
+      "latitude": 31.9762,
+      "longitude": 34.7913
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-tiberias-danilof",
+    "name": "קפה גרג דנילוף טבריה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "יהודה הלוי 1, טבריה",
+    "cityId": "טבריה",
+    "location": {
+      "latitude": 32.7872,
+      "longitude": 35.5292
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-tiberias-poria",
+    "name": "קפה גרג פוריה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "המברג 1, פוריה, טבריה",
+    "cityId": "טבריה",
+    "location": {
+      "latitude": 32.754,
+      "longitude": 35.5182
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-beit-shean",
+    "name": "קפה גרג בית שאן",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "שדרות מנחם בגין, בית שאן",
+    "cityId": "בית שאן",
+    "location": {
+      "latitude": 32.5002,
+      "longitude": 35.4979
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-nesher",
+    "name": "קפה גרג נשר",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "דרך בר יהודה 111, נשר",
+    "cityId": "נשר",
+    "location": {
+      "latitude": 32.7642,
+      "longitude": 35.0432
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-hadera-ofer",
+    "name": "קפה גרג חדרה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "שדרות רוטשילד, עופר לב חדרה, חדרה",
+    "cityId": "חדרה",
+    "location": {
+      "latitude": 32.4335,
+      "longitude": 34.918
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-migdal-haemek",
+    "name": "קפה גרג מגדל העמק",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "BIG מגדל העמק",
+    "cityId": "מגדל העמק",
+    "location": {
+      "latitude": 32.6735,
+      "longitude": 35.2404
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-kiryat-ata",
+    "name": "קפה גרג קרית אתא",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "העצמאות 57, קרית אתא",
+    "cityId": "קרית אתא",
+    "location": {
+      "latitude": 32.8043,
+      "longitude": 35.1095
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-atlit",
+    "name": "קפה גרג עתלית",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "דרך הים 2, עתלית",
+    "cityId": "עתלית",
+    "location": {
+      "latitude": 32.6958,
+      "longitude": 34.9405
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-yokneam",
+    "name": "קפה גרג יוקנעם",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "התמר 2, יוקנעם עילית",
+    "cityId": "יוקנעם",
+    "location": {
+      "latitude": 32.6565,
+      "longitude": 35.0994
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-afula",
+    "name": "קפה גרג עפולה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "השוק 13, עפולה",
+    "cityId": "עפולה",
+    "location": {
+      "latitude": 32.6079,
+      "longitude": 35.2898
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-nahariya",
+    "name": "קפה גרג נהריה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "אירית 2, קניון נהריה",
+    "cityId": "נהריה",
+    "location": {
+      "latitude": 33.0045,
+      "longitude": 35.0978
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-rosh-pina",
+    "name": "קפה גרג ראש פינה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "התפוח 5, ראש פינה",
+    "cityId": "ראש פינה",
+    "location": {
+      "latitude": 32.9748,
+      "longitude": 35.5489
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-kiryat-shmona",
+    "name": "קפה גרג קרית שמונה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "טשרניחובסקי 6, קרית שמונה",
+    "cityId": "קרית שמונה",
+    "location": {
+      "latitude": 33.2094,
+      "longitude": 35.5698
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות מקומית מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-rosh-haayin-afek",
+    "name": "קפה גרג פארק אפק",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "המלאכה, גב ים, ראש העין",
+    "cityId": "ראש העין",
+    "location": {
+      "latitude": 32.0992,
+      "longitude": 34.9558
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות מקומית",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-haifa-sinmol",
+    "name": "קפה גרג סינמול חיפה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "שדרות ההסתדרות 55, סינמול, חיפה",
+    "cityId": "חיפה",
+    "location": {
+      "latitude": 32.8364,
+      "longitude": 35.04
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות חיפה",
+    "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "manual-greg-karmiel-braude",
+    "name": "קפה גרג מכללת בראודה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "סנונית 51, כרמיאל",
+    "cityId": "כרמיאל",
+    "location": {
+      "latitude": 32.9137,
+      "longitude": 35.298
+    },
+    "website": "https://gregcafe.co.il",
+    "instagram": "https://www.instagram.com/gregcafe",
+    "certifiedBy": "רבנות מקומית",
     "kosherType": "regular",
     "source": "manual"
   }
