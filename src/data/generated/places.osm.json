@@ -739,28 +739,6 @@
     "cityId": "חולון"
   },
   {
-    "facebook": "https://www.facebook.com/roladin",
-    "openingHours": "Su-Th 06:30-21:00; Fr 07:00-14:30",
-    "tags": [
-      "coffee_shop"
-    ],
-    "type": "cafe",
-    "source": "osm",
-    "name": "רולדין",
-    "website": "https://roladin.co.il/סניפים/שוהם-מרכז-מסחרי/",
-    "cityId": "שוהם",
-    "address": "שדרות עמק איילון 30, שוהם",
-    "instagram": "https://www.instagram.com/roladin",
-    "category": "dairy",
-    "id": "osm-node-4406510254",
-    "location": {
-      "latitude": 31.9992228,
-      "longitude": 34.9466929
-    },
-    "kosherType": "kosher",
-    "phone": "03-5039419"
-  },
-  {
     "source": "osm",
     "id": "osm-node-4421769054",
     "type": "restaurant",
