@@ -8039,7 +8039,7 @@
   {
     "source": "osm",
     "id": "osm-node-7049580105",
-    "type": "synagogue",
+    "type": "juice_bar",
     "lastVerifiedAt": "2026-06-17",
     "name": "שערי ברכה",
     "address": "רחוב קצנלסון יצחק 20, נתניה",
@@ -116422,7 +116422,7 @@
   {
     "id": "rebar-d80aad31",
     "name": "רי בר rebar קניון איילון רמת גן",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "רמת גן",
     "address": "אבא הלל 301, קניון איילון, רמת גן",
     "location": {
@@ -116441,7 +116441,7 @@
   {
     "id": "rebar-a28c1ea4",
     "name": "רי בר rebar רמת אפעל רמת גן",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "רמת גן",
     "address": "דרך שיבא 14, רמת גן",
     "location": {
@@ -116460,7 +116460,7 @@
   {
     "id": "rebar-a13c88d8",
     "name": "רי בר rebar ביאליק רמת גן",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "רמת גן",
     "address": "ביאליק 76, פינת ז'בוטינסקי, רמת גן",
     "location": {
@@ -116479,7 +116479,7 @@
   {
     "id": "rebar-9d7d79ac",
     "name": "רי בר rebar גבעת שמואל",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "גבעת שמואל",
     "address": "שדרות מנחם בגין 38, גבעת שמואל",
     "location": {
@@ -116498,7 +116498,7 @@
   {
     "id": "rebar-8b7c4c33",
     "name": "רי בר rebar גני תקווה",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "גני תקווה",
     "address": "ההדרים 7, גני תקווה",
     "location": {
@@ -116517,7 +116517,7 @@
   {
     "id": "rebar-ca53bc00",
     "name": "רי בר rebar קריית אונו",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "קריית אונו",
     "address": "הקריה האקדמית אונו",
     "location": {
@@ -116536,7 +116536,7 @@
   {
     "id": "rebar-0edef232",
     "name": "רי בר rebar חולון עזריאלי",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "חולון",
     "address": "גולדה מאיר 7, עזריאלי חולון",
     "location": {
@@ -116555,7 +116555,7 @@
   {
     "id": "rebar-1cfb4934",
     "name": "רי בר rebar הקניון הגדול פתח תקווה",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "פתח תקווה",
     "address": "ז'בוטינסקי 72, הקניון הגדול, פתח תקווה",
     "location": {
@@ -116574,7 +116574,7 @@
   {
     "id": "rebar-470f6bc8",
     "name": "רי בר rebar אם המושבות פתח תקווה",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "פתח תקווה",
     "address": "ראשון לציון 1, meex אם המושבות, פתח תקווה",
     "location": {
@@ -116593,7 +116593,7 @@
   {
     "id": "rebar-eb7726e8",
     "name": "רי בר rebar סירקין פתח תקווה",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "פתח תקווה",
     "address": "אלעזר פרידמן 9, פתח תקווה",
     "location": {
@@ -116612,7 +116612,7 @@
   {
     "id": "rebar-c4a716c9",
     "name": "רי בר rebar קניון הזהב ראשון לציון",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "ראשון לציון",
     "address": "דוד סחרוב 21, קניון הזהב, ראשון לציון",
     "location": {
@@ -116631,7 +116631,7 @@
   {
     "id": "rebar-0ca74b52",
     "name": "רי בר rebar קניון ראשונים ראשון לציון",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "ראשון לציון",
     "address": "שדרות נים 2, קניון עזריאלי ראשונים",
     "location": {
@@ -116650,7 +116650,7 @@
   {
     "id": "rebar-3fb40815",
     "name": "רי בר rebar קניותר נס ציונה",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "נס ציונה",
     "address": "האירוסים 53, קניותר, נס ציונה",
     "location": {
@@ -116669,7 +116669,7 @@
   {
     "id": "rebar-aae45389",
     "name": "רי בר rebar עזריאלי רמלה",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "רמלה",
     "address": "שדרות דוד ריזאל 1, קניון עזריאלי, רמלה",
     "location": {
@@ -116688,7 +116688,7 @@
   {
     "id": "rebar-195a2d8e",
     "name": "רי בר rebar באר יעקב",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "באר יעקב",
     "address": "יהלום 4, באר יעקב",
     "location": {
@@ -116707,7 +116707,7 @@
   {
     "id": "rebar-947ca636",
     "name": "רי בר rebar meex רחובות",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "רחובות",
     "address": "דרך הים 1, רחובות",
     "location": {
@@ -116726,7 +116726,7 @@
   {
     "id": "rebar-8a9019a7",
     "name": "רי בר rebar עזריאלי מודיעין",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "מודיעין",
     "address": "לב העיר 2, עזריאלי, מודיעין",
     "location": {
@@ -116745,7 +116745,7 @@
   {
     "id": "rebar-5009ef1a",
     "name": "רי בר rebar מוריה מודיעין",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "מודיעין",
     "address": "לאה אימנו 1, מודיעין",
     "location": {
@@ -116764,7 +116764,7 @@
   {
     "id": "rebar-033ab8c0",
     "name": "רי בר rebar שוהם",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "שוהם",
     "address": "שד' עמק איילון 30, שוהם",
     "location": {
@@ -116783,7 +116783,7 @@
   {
     "id": "rebar-05a0f9da",
     "name": "רי בר rebar ביג פאשן בית שמש",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "בית שמש",
     "address": "יגאל אלון 1, ביג פאשן, בית שמש",
     "location": {
@@ -116802,7 +116802,7 @@
   {
     "id": "rebar-94998d06",
     "name": "רי בר rebar קניון מלחה ירושלים",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "ירושלים",
     "address": "אגודת ספורט בית\"ר 1, קניון מלחה, ירושלים",
     "location": {
@@ -116821,7 +116821,7 @@
   {
     "id": "rebar-a70cd408",
     "name": "רי בר rebar הרובע היהודי ירושלים",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "ירושלים",
     "address": "תפארת ישראל 8, הרובע היהודי, ירושלים",
     "location": {
@@ -116840,7 +116840,7 @@
   {
     "id": "rebar-64bf0484",
     "name": "רי בר rebar קניון הדר ירושלים",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "ירושלים",
     "address": "גנרל פייר קניג 26, קניון הדר, ירושלים",
     "location": {
@@ -116859,7 +116859,7 @@
   {
     "id": "rebar-bad47750",
     "name": "רי בר rebar מעלה אדומים",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "מעלה אדומים",
     "address": "דרך קדם 5, מעלה אדומים",
     "location": {
@@ -116878,7 +116878,7 @@
   {
     "id": "rebar-e7b09ded",
     "name": "רי בר rebar קריית השרון נתניה",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "נתניה",
     "address": "טוס לנטוס, מרכז אלון, נתניה",
     "location": {
@@ -116897,7 +116897,7 @@
   {
     "id": "rebar-06e54743",
     "name": "רי בר rebar קניון השרון נתניה",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "נתניה",
     "address": "הרצל 60, קניון השרון, נתניה",
     "location": {
@@ -116916,7 +116916,7 @@
   {
     "id": "rebar-f6794b4f",
     "name": "רי בר rebar עיר ימים נתניה",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "נתניה",
     "address": "בני ברמן 2, עיר ימים, נתניה",
     "location": {
@@ -116935,7 +116935,7 @@
   {
     "id": "rebar-c7c7b2e2",
     "name": "רי בר rebar רעננה רננים",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "רעננה",
     "address": "המלאכה 2, קניון רננים, רעננה",
     "location": {
@@ -116954,7 +116954,7 @@
   {
     "id": "rebar-cd4f9e09",
     "name": "רי בר rebar קניון לב חדרה",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "חדרה",
     "address": "רוטשילד 40, קניון לב חדרה, חדרה",
     "location": {
@@ -116973,7 +116973,7 @@
   {
     "id": "rebar-792ad839",
     "name": "רי בר rebar ביג אור עקיבא",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "אור עקיבא",
     "address": "שדרות הנשיא ויצמן 4, ביג, אור עקיבא",
     "location": {
@@ -116992,7 +116992,7 @@
   {
     "id": "rebar-6b0c7e46",
     "name": "רי בר rebar סינמול לב המפרץ חיפה",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "חיפה",
     "address": "שד' ההסתדרות 55, סינמול לב המפרץ, חיפה",
     "location": {
@@ -117011,7 +117011,7 @@
   {
     "id": "rebar-ee1b3a85",
     "name": "רי בר rebar רמב\"ם חיפה",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "חיפה",
     "address": "העלייה השנייה 8, חיפה",
     "location": {
@@ -117030,7 +117030,7 @@
   {
     "id": "rebar-6a15d27e",
     "name": "רי בר rebar עיר תחתית חיפה",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "חיפה",
     "address": "נתנזון 11, עיר תחתית, חיפה",
     "location": {
@@ -117049,7 +117049,7 @@
   {
     "id": "rebar-7a9dc1f7",
     "name": "רי בר rebar עזריאלי חיפה",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "חיפה",
     "address": "משה פלימן 4, קניון חיפה עזריאלי",
     "location": {
@@ -117068,7 +117068,7 @@
   {
     "id": "rebar-21c4c84c",
     "name": "רי בר rebar קיריון קרית ביאליק",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "קריית ביאליק",
     "address": "דרך עכו חיפה 192, קיריון",
     "location": {
@@ -117087,7 +117087,7 @@
   {
     "id": "rebar-02629c63",
     "name": "רי בר rebar שער הצפון קרית אתא",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "קריית אתא",
     "address": "דרך חיפה 52, שער הצפון",
     "location": {
@@ -117106,7 +117106,7 @@
   {
     "id": "rebar-574d982c",
     "name": "רי בר rebar סנטר הגליל ראש פינה",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "ראש פינה",
     "address": "סנטר הגליל, ראש פינה",
     "location": {
@@ -117125,7 +117125,7 @@
   {
     "id": "rebar-0b5bbb7e",
     "name": "רי בר rebar ביג פאשן טבריה",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "טבריה",
     "address": "יהודה הלוי 9990, ביג פאשן, טבריה",
     "location": {
@@ -117144,7 +117144,7 @@
   {
     "id": "rebar-a32ef445",
     "name": "רי בר rebar ביג פוריה טבריה",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "טבריה",
     "address": "המברג 1, ביג פוריה, טבריה",
     "location": {
@@ -117163,7 +117163,7 @@
   {
     "id": "rebar-8ca3b9b4",
     "name": "רי בר rebar עמק סנטר עפולה",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "עפולה",
     "address": "שדרות יצחק רבין 18, עמק סנטר פרנדלי, עפולה",
     "location": {
@@ -117182,7 +117182,7 @@
   {
     "id": "rebar-1d266612",
     "name": "רי בר rebar תחנה מרכזית עפולה",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "עפולה",
     "address": "קהילת ציון 3, תחנה מרכזית, עפולה",
     "location": {
@@ -117201,7 +117201,7 @@
   {
     "id": "rebar-77d95d5a",
     "name": "רי בר rebar ביג יקנעם",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "יוקנעם",
     "address": "שד' יצחק רבין 9, ביג, יקנעם",
     "location": {
@@ -117220,7 +117220,7 @@
   {
     "id": "rebar-38357306",
     "name": "רי בר rebar בית שאן",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "בית שאן",
     "address": "צים סנטר, בית שאן",
     "location": {
@@ -117239,7 +117239,7 @@
   {
     "id": "rebar-412701fd",
     "name": "רי בר rebar ביג באר שבע",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "באר שבע",
     "address": "חיל ההנדסה 6, ביג, באר שבע",
     "location": {
@@ -117258,7 +117258,7 @@
   {
     "id": "rebar-60e2c2e9",
     "name": "רי בר rebar גרנד קניון באר שבע",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "באר שבע",
     "address": "שדרות דוד טוביהו 125, גרנד קניון, באר שבע",
     "location": {
@@ -117277,7 +117277,7 @@
   {
     "id": "rebar-dc59d466",
     "name": "רי בר rebar קניון הנגב באר שבע",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "באר שבע",
     "address": "שדרות יצחק רגר 2, קניון הנגב, באר שבע",
     "location": {
@@ -117296,7 +117296,7 @@
   {
     "id": "rebar-890db640",
     "name": "רי בר rebar קניון סימול אשדוד",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "אשדוד",
     "address": "הגדוד העברי 6, קניון סימול, אשדוד",
     "location": {
@@ -117315,7 +117315,7 @@
   {
     "id": "rebar-2e622448",
     "name": "רי בר rebar מרינה אשקלון",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "אשקלון",
     "address": "הנמל 9, מרינה, אשקלון",
     "location": {
@@ -117334,7 +117334,7 @@
   {
     "id": "rebar-b8be2aa1",
     "name": "רי בר rebar נתיבות",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "נתיבות",
     "address": "מתחם פריז, נתיבות",
     "location": {
@@ -117353,7 +117353,7 @@
   {
     "id": "rebar-71f0e480",
     "name": "רי בר rebar כרמי גת",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "כרמי גת",
     "address": "אבני חושן 1, סנטר כרמי גת",
     "location": {
@@ -117372,7 +117372,7 @@
   {
     "id": "rebar-8ae4a0c8",
     "name": "רי בר rebar ערד",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "ערד",
     "address": "התעשייה 60, ערד",
     "location": {
@@ -117391,7 +117391,7 @@
   {
     "id": "rebar-b0112a34",
     "name": "רי בר rebar דימונה",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "דימונה",
     "address": "מתחם פרץ, דימונה",
     "location": {
@@ -117410,7 +117410,7 @@
   {
     "id": "rebar-838f1769",
     "name": "רי בר rebar מצפה רמון",
-    "type": "cafe",
+    "type": "juice_bar",
     "cityId": "מצפה רמון",
     "address": "שדרות בן גוריון 2, מצפה רמון",
     "location": {
@@ -136939,7 +136939,7 @@
   {
     "id": "rebar-bs-central-station",
     "name": "רי בר rebar באר שבע תחנה מרכזית",
-    "type": "cafe",
+    "type": "juice_bar",
     "category": "dairy",
     "address": "תחנת אגד, באר שבע",
     "cityId": "באר שבע",
@@ -136955,7 +136955,7 @@
   {
     "id": "rebar-ramat-gan-marom-nave",
     "name": "רי בר rebar מרום נווה רמת גן",
-    "type": "cafe",
+    "type": "juice_bar",
     "category": "dairy",
     "address": "חיים לנדאו 7, רמת גן",
     "cityId": "רמת גן",

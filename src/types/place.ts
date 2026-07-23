@@ -5,7 +5,7 @@ export interface GeoPoint {
 }
 
 /** Kind of place. Drives which fields are relevant and how it's shown. */
-export type PlaceType = 'restaurant' | 'fast_food' | 'cafe' | 'coffee_cart' | 'winery' | 'synagogue' | 'mikveh' | 'chabad_house' | 'tzaddik_grave';
+export type PlaceType = 'restaurant' | 'fast_food' | 'cafe' | 'coffee_cart' | 'juice_bar' | 'ice_cream_parlor' | 'winery' | 'synagogue' | 'mikveh' | 'chabad_house' | 'tzaddik_grave';
 
 /** Food category of a kosher establishment (restaurants only). */
 export type KosherCategory = 'meat' | 'dairy' | 'parve';
@@ -51,6 +51,8 @@ export interface Place {
   phone?: string;
   /** Public website / homepage, when the source publishes one. */
   website?: string;
+  /** Link to the menu page, when available. */
+  menu?: string;
   instagram?: string;
   facebook?: string;
   openingHours?: string;
