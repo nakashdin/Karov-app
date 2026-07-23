@@ -1,47 +1,5 @@
 [
   {
-    "facebook": "https://www.facebook.com/AromaIsrael",
-    "tags": [
-      "coffee_shop"
-    ],
-    "type": "restaurant",
-    "openingHours": "06:30-22:00; Fr 06:30-16:00; Sa 09:00-23:00",
-    "name": "ארומה",
-    "website": "https://www.aroma.co.il",
-    "cityId": "נחף",
-    "address": "מעלה כמון, כרמיאל",
-    "instagram": "https://www.instagram.com/aromaisrael",
-    "category": "dairy",
-    "id": "osm-node-460324660",
-    "location": {
-      "latitude": 32.9270603,
-      "longitude": 35.323458
-    },
-    "source": "osm",
-    "phone": "+972 4 958 5828"
-  },
-  {
-    "facebook": "https://www.facebook.com/AromaIsrael",
-    "tags": [
-      "coffee_shop"
-    ],
-    "type": "restaurant",
-    "openingHours": "Su-Th 08:00-21:00; Fr 08:00-14:30; Sa unknown \"please inquire\"",
-    "name": "ארומה",
-    "website": "https://www.aroma.co.il",
-    "cityId": "אילת",
-    "address": "הסתת 20, אילת",
-    "instagram": "https://www.instagram.com/aromaisrael",
-    "category": "dairy",
-    "id": "osm-node-538830365",
-    "location": {
-      "latitude": 29.5665805,
-      "longitude": 34.9598198
-    },
-    "source": "osm",
-    "phone": "+972 8 631 8445"
-  },
-  {
     "source": "osm",
     "id": "osm-node-540970749",
     "type": "restaurant",
@@ -139,27 +97,6 @@
     "cityId": "אילת"
   },
   {
-    "facebook": "https://www.facebook.com/AromaIsrael",
-    "openingHours": "Su-Sa 06:00-23:00",
-    "tags": [
-      "coffee_shop"
-    ],
-    "type": "restaurant",
-    "source": "osm",
-    "name": "ארומה",
-    "website": "https://www.aroma.co.il",
-    "cityId": "ירושלים",
-    "address": "ממילא, ירושלים",
-    "instagram": "https://www.instagram.com/aromaisrael",
-    "category": "dairy",
-    "id": "osm-node-1405933026",
-    "location": {
-      "latitude": 31.7765121,
-      "longitude": 35.2267096
-    },
-    "phone": "02-6255365"
-  },
-  {
     "facebook": "https://www.facebook.com/coffix",
     "openingHours": "Su-Th 09:00-21:30; Fr 09:00-16:00",
     "tags": [
@@ -196,27 +133,6 @@
     "phone": "09-8334797",
     "cityId": "נתניה",
     "openingHours": "Su-Th 12:00-24:00; Fr 12:00-14:30"
-  },
-  {
-    "facebook": "https://www.facebook.com/AromaIsrael",
-    "tags": [
-      "coffee_shop"
-    ],
-    "type": "restaurant",
-    "openingHours": "Su-Th 07:30-19:00",
-    "name": "ארומה",
-    "website": "https://www.aroma.co.il",
-    "cityId": "באר שבע",
-    "address": "מרכז ביג, דרך חברון 21, באר שבע",
-    "instagram": "https://www.instagram.com/aromaisrael",
-    "category": "dairy",
-    "id": "osm-node-1667986371",
-    "location": {
-      "latitude": 31.262549,
-      "longitude": 34.7991456
-    },
-    "source": "osm",
-    "phone": "08-6652032"
   },
   {
     "source": "osm",
@@ -775,48 +691,6 @@
     "cityId": "קריית מאיר"
   },
   {
-    "facebook": "https://www.facebook.com/AromaIsrael",
-    "tags": [
-      "coffee_shop"
-    ],
-    "type": "restaurant",
-    "openingHours": "Su-Th 06:00-23:00; Fr 06:00-14:30; Sa unknown \"please inquire\"",
-    "name": "ארומה",
-    "website": "https://www.aroma.co.il",
-    "cityId": "דימונה",
-    "address": "דימונה",
-    "instagram": "https://www.instagram.com/aromaisrael",
-    "category": "dairy",
-    "id": "osm-node-3220186203",
-    "location": {
-      "latitude": 31.0598088,
-      "longitude": 35.0208675
-    },
-    "source": "osm",
-    "phone": "+972 8 657 1447"
-  },
-  {
-    "facebook": "https://www.facebook.com/AromaIsrael",
-    "tags": [
-      "coffee_shop"
-    ],
-    "type": "restaurant",
-    "openingHours": "Su-Th 07:00-23:00; Fr 07:00-15:00",
-    "name": "ארומה",
-    "website": "https://www.aroma.co.il",
-    "cityId": "קריית מאיר",
-    "address": "רחוב הארבעה 24, תל אביב יפו",
-    "instagram": "https://www.instagram.com/aromaisrael",
-    "category": "dairy",
-    "id": "osm-node-3731754512",
-    "location": {
-      "latitude": 32.0702568,
-      "longitude": 34.7858698
-    },
-    "source": "osm",
-    "phone": "+972 3 5511277"
-  },
-  {
     "source": "osm",
     "id": "osm-node-3988589057",
     "type": "restaurant",
@@ -937,27 +811,6 @@
     "phone": "+972 4 686 0107",
     "category": "dairy",
     "cityId": "ראש פינה"
-  },
-  {
-    "facebook": "https://www.facebook.com/AromaIsrael",
-    "tags": [
-      "coffee_shop"
-    ],
-    "type": "restaurant",
-    "openingHours": "open; PH unknown",
-    "name": "ארומה",
-    "website": "https://www.aroma.co.il",
-    "cityId": "יוקנעם המושבה",
-    "address": "רחוב התמר 1, יקנעם",
-    "instagram": "https://www.instagram.com/aromaisrael",
-    "category": "dairy",
-    "id": "osm-node-4598271638",
-    "location": {
-      "latitude": 32.660246,
-      "longitude": 35.1054354
-    },
-    "source": "osm",
-    "phone": "+972 4 959 1055"
   },
   {
     "facebook": "https://www.facebook.com/CafeGreg",
@@ -1296,27 +1149,6 @@
     },
     "source": "osm",
     "phone": "+972 4 680 2616"
-  },
-  {
-    "facebook": "https://www.facebook.com/AromaIsrael",
-    "tags": [
-      "coffee_shop"
-    ],
-    "type": "restaurant",
-    "openingHours": "Su-Th 06:30-22:00; Fr 06:30-14:00",
-    "name": "ארומה",
-    "website": "https://www.aroma.co.il",
-    "cityId": "קריית מאיר",
-    "address": "רחוב שלום עליכם 14, תל אביב יפו",
-    "instagram": "https://www.instagram.com/aromaisrael",
-    "category": "dairy",
-    "id": "osm-node-5221386692",
-    "location": {
-      "latitude": 32.076134,
-      "longitude": 34.7679558
-    },
-    "source": "osm",
-    "phone": "+972 3 522 9880"
   },
   {
     "source": "osm",
@@ -2281,19 +2113,6 @@
     "cityId": "תל מונד"
   },
   {
-    "source": "osm",
-    "id": "osm-node-7899808751",
-    "type": "restaurant",
-    "category": "meat",
-    "name": "מסעדת הבית",
-    "address": "רחוב גבורי ישראל 7, נתניה",
-    "location": {
-      "latitude": 32.2783601,
-      "longitude": 34.8608325
-    },
-    "cityId": "כפר נטר"
-  },
-  {
     "facebook": "https://www.facebook.com/burgerimisrael",
     "openingHours": "Su-Th 11:00-23:30; Fr 11:00-14:30",
     "tags": [
@@ -2973,27 +2792,6 @@
     },
     "source": "osm",
     "phone": "+972 3 647 4692"
-  },
-  {
-    "facebook": "https://www.facebook.com/AromaIsrael",
-    "tags": [
-      "coffee_shop"
-    ],
-    "type": "restaurant",
-    "openingHours": "Su-Th 06:30-22:00; Fr 06:30-16:30",
-    "name": "ארומה",
-    "website": "https://www.aroma.co.il",
-    "cityId": "קריית מאיר",
-    "address": "רחוב ויצמן 18, תל אביב יפו",
-    "instagram": "https://www.instagram.com/aromaisrael",
-    "category": "dairy",
-    "id": "osm-node-11169886012",
-    "location": {
-      "latitude": 32.0816034,
-      "longitude": 34.789293
-    },
-    "source": "osm",
-    "phone": "+972 54 803 5009"
   },
   {
     "source": "osm",
@@ -3873,27 +3671,6 @@
       "longitude": 34.7986565
     },
     "cityId": "גבעתיים"
-  },
-  {
-    "facebook": "https://www.facebook.com/AromaIsrael",
-    "tags": [
-      "coffee_shop"
-    ],
-    "type": "restaurant",
-    "openingHours": "Su-Th 06:00-18:00; Fr 07:00-13:00",
-    "name": "ארומה",
-    "website": "https://www.aroma.co.il",
-    "cityId": "קריית מאיר",
-    "address": "5-5 רחוב מוזס ולטר, תל אביב יפו",
-    "instagram": "https://www.instagram.com/aromaisrael",
-    "category": "dairy",
-    "id": "osm-node-12529707486",
-    "location": {
-      "latitude": 32.0684084,
-      "longitude": 34.7945824
-    },
-    "source": "osm",
-    "phone": "+972 50 842 4555"
   },
   {
     "facebook": "https://www.facebook.com/PizzaHutIsrael",
@@ -110568,1784 +110345,6 @@
     "phone": "04-8878508"
   },
   {
-    "id": "9400000",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:00-21:00; Fr 07:00-14:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il/store/%d7%91%d7%99%d7%92-%d7%91%d7%99%d7%aa-%d7%a9%d7%9e%d7%a9/",
-    "cityId": "בית שמש",
-    "address": "יגאל אלון 1, ביג בית שמש",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.7458,
-      "longitude": 34.9926
-    },
-    "kosherType": "rabanut_mehadrin",
-    "source": "manual",
-    "certifiedBy": "כשר למהדרין",
-    "phone": "02-9921674"
-  },
-  {
-    "id": "9400001",
-    "type": "cafe",
-    "openingHours": "Su-Th 06:00-20:00; Fr 06:00-13:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il/store/%d7%91%d7%99%d7%aa-%d7%97%d7%95%d7%9c%d7%99%d7%9d-%d7%94%d7%93%d7%a1%d7%94-%d7%a2%d7%99%d7%9f-%d7%9b%d7%a8%d7%9d/",
-    "cityId": "ירושלים",
-    "address": "ביה\"ח הדסה עין כרם, ירושלים",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.7683,
-      "longitude": 35.2137
-    },
-    "kosherType": "rabanut_mehadrin",
-    "source": "manual",
-    "certifiedBy": "כשר למהדרין",
-    "phone": "051-2878566"
-  },
-  {
-    "id": "9400002",
-    "type": "cafe",
-    "openingHours": "Su-Th 06:30-21:00; Fr 06:30-13:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il/store/%d7%91%d7%99%d7%aa-%d7%97%d7%95%d7%9c%d7%99%d7%9d-%d7%a9%d7%a2%d7%a8%d7%99-%d7%a6%d7%93%d7%a7/",
-    "cityId": "ירושלים",
-    "address": "שמואל בייט 12, ירושלים",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.7683,
-      "longitude": 35.2137
-    },
-    "kosherType": "rabanut_mehadrin",
-    "source": "manual",
-    "certifiedBy": "כשר למהדרין",
-    "phone": "02-6639000"
-  },
-  {
-    "id": "9400003",
-    "type": "cafe",
-    "openingHours": "Su-Th 06:00-18:30; Fr 06:00-12:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il/store/%d7%91%d7%99%d7%aa-%d7%94%d7%93%d7%a4%d7%95%d7%a1/",
-    "cityId": "ירושלים",
-    "address": "בית הדפוס 12, גבעת שאול, ירושלים",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.7683,
-      "longitude": 35.2137
-    },
-    "kosherType": "rabanut_mehadrin",
-    "source": "manual",
-    "certifiedBy": "כשר למהדרין",
-    "phone": "02-5326681"
-  },
-  {
-    "id": "9400004",
-    "type": "cafe",
-    "openingHours": "Su-Th 08:00-16:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il/store/%d7%90%d7%95%d7%a0%d7%99%d7%91%d7%a8%d7%a1%d7%99%d7%98%d7%aa-%d7%92%d7%91%d7%a2%d7%aa-%d7%a8%d7%9d/",
-    "cityId": "ירושלים",
-    "address": "פרופסור רקח 1, ירושלים",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.7683,
-      "longitude": 35.2137
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "050-7279094"
-  },
-  {
-    "id": "9400005",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:00-19:30; Fr 07:00-14:30",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il/store/%d7%99%d7%a4%d7%95/",
-    "cityId": "ירושלים",
-    "address": "רחוב יפו 42, ירושלים",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.7683,
-      "longitude": 35.2137
-    },
-    "kosherType": "rabanut_mehadrin",
-    "source": "manual",
-    "certifiedBy": "כשר למהדרין",
-    "phone": "02-6241102"
-  },
-  {
-    "id": "9400006",
-    "type": "cafe",
-    "openingHours": "Su-Th 06:00-22:30; Fr 06:00-14:30; Sa 17:45-23:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il/store/%d7%a2%d7%9e%d7%a7-%d7%a8%d7%a4%d7%90%d7%99%d7%9d-%d7%99%d7%a8%d7%95%d7%a9%d7%9c%d7%99%d7%9d/",
-    "cityId": "ירושלים",
-    "address": "עמק רפאים 43, ירושלים",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.7683,
-      "longitude": 35.2137
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "02-5617236"
-  },
-  {
-    "id": "9400007",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:45-21:00; Fr 07:45-14:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il/store/%d7%a7%d7%a0%d7%99%d7%95%d7%9f-%d7%94%d7%93%d7%a8/",
-    "cityId": "ירושלים",
-    "address": "גנרל פייר קניג 26, קניון הדר, ירושלים",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.7683,
-      "longitude": 35.2137
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "02-6712228"
-  },
-  {
-    "id": "9400008",
-    "type": "cafe",
-    "openingHours": "Su-Th 08:15-20:00; Fr 08:15-13:30",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il/store/%d7%a7%d7%a0%d7%99%d7%95%d7%9f-%d7%9e%d7%9c%d7%97%d7%94/",
-    "cityId": "ירושלים",
-    "address": "קניון מלחה, ירושלים",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.7683,
-      "longitude": 35.2137
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "02-6799154"
-  },
-  {
-    "id": "9400009",
-    "type": "cafe",
-    "openingHours": "Su-We 07:30-22:30; Th 07:30-23:00; Fr 07:30-15:30; Sa 20:30-23:30",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il/store/%d7%a7%d7%a0%d7%99%d7%95%d7%9f-%d7%9e%d7%9e%d7%99%d7%9c%d7%90/",
-    "cityId": "ירושלים",
-    "address": "שדרות ממילא, ירושלים",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.7683,
-      "longitude": 35.2137
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "02-6241367"
-  },
-  {
-    "id": "9400010",
-    "type": "cafe",
-    "openingHours": "Su-Th 06:30-19:00; Fr 06:30-15:30",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il/store/%d7%a9%d7%95%d7%a7-%d7%9e%d7%97%d7%a0%d7%94-%d7%99%d7%94%d7%95%d7%93%d7%94/",
-    "cityId": "ירושלים",
-    "address": "שוק מחנה יהודה, ירושלים",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.7683,
-      "longitude": 35.2137
-    },
-    "kosherType": "rabanut_mehadrin",
-    "source": "manual",
-    "certifiedBy": "כשר למהדרין",
-    "phone": "02-6222833"
-  },
-  {
-    "id": "9400011",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:00-17:00; Fr 07:00-13:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il/store/%d7%aa%d7%9c%d7%a4%d7%99%d7%95%d7%aa-%d7%94%d7%aa%d7%a2%d7%a9%d7%99%d7%94-%d7%99%d7%a8%d7%95%d7%a9%d7%9c%d7%99%d7%9d/",
-    "cityId": "ירושלים",
-    "address": "התעשיה 6, ירושלים",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.7683,
-      "longitude": 35.2137
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "02-5353160"
-  },
-  {
-    "id": "9400012",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:00-21:00; Fr 07:00-14:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il/store/%d7%9e%d7%95%d7%a8%d7%99%d7%94-%d7%a1%d7%a0%d7%98%d7%a8-%d7%9e%d7%95%d7%93%d7%99%d7%a2%d7%99%d7%9f/",
-    "cityId": "מודיעין",
-    "address": "לאה אימנו 1, מודיעין",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.8966,
-      "longitude": 35.0102
-    },
-    "kosherType": "rabanut_mehadrin",
-    "source": "manual",
-    "certifiedBy": "כשר למהדרין",
-    "phone": "08-8687070"
-  },
-  {
-    "id": "9400013",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:00-22:00; Fr 07:00-15:00; Sa 19:30-22:30",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il/store/%d7%a7%d7%a0%d7%99%d7%95%d7%9f-%d7%a2%d7%96%d7%a8%d7%99%d7%90%d7%9c%d7%99-%d7%9e%d7%95%d7%93%d7%99%d7%a2%d7%99%d7%9f/",
-    "cityId": "מודיעין",
-    "address": "קניון עזריאלי, מודיעין",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.8966,
-      "longitude": 35.0102
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "08-9265510"
-  },
-  {
-    "id": "9400014",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:00-21:00; Fr 07:00-14:00; Sa 21:00-22:30",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il/store/%d7%9e%d7%a2%d7%9c%d7%94-%d7%90%d7%93%d7%95%d7%9e%d7%99%d7%9d/",
-    "cityId": "מעלה אדומים",
-    "address": "דרך קדם 5, מעלה אדומים",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.7731,
-      "longitude": 35.2955
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "02-5352670"
-  },
-  {
-    "id": "9400015",
-    "type": "cafe",
-    "openingHours": "Su-Th 08:30-20:30; Fr 08:30-14:00; Sa 21:00-22:30",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "אילת",
-    "address": "הסתת 20, מרכז ביג, אילת",
-    "category": "dairy",
-    "location": {
-      "latitude": 29.5581,
-      "longitude": 34.9482
-    },
-    "kosherType": "rabanut_mehadrin",
-    "source": "manual",
-    "certifiedBy": "כשר למהדרין",
-    "phone": "08-6318445"
-  },
-  {
-    "id": "9400016",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:30-22:00; Fr 07:30-14:30",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "גדרה",
-    "address": "שד׳ בן גוריון 105, ביג גדרה",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.812,
-      "longitude": 34.776
-    },
-    "kosherType": "rabanut_mehadrin",
-    "source": "manual",
-    "certifiedBy": "כשר למהדרין",
-    "phone": "08-6239915"
-  },
-  {
-    "id": "9400017",
-    "type": "cafe",
-    "openingHours": "Su-Th 06:30-22:15; Fr 06:30-15:00; Sa 20:45-22:15",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "קסטינה",
-    "address": "ביג קסטינה, א.ת באר טוביה, צומת קסטינה",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.728,
-      "longitude": 34.745
-    },
-    "kosherType": "rabanut_mehadrin",
-    "source": "manual",
-    "certifiedBy": "כשר למהדרין",
-    "phone": "08-8504404"
-  },
-  {
-    "id": "9400018",
-    "type": "cafe",
-    "openingHours": "Su-Th 08:45-21:00; Fr 08:00-14:00; Sa 18:30-22:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "באר שבע",
-    "address": "שדרות דוד טוביהו 125, באר שבע",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.2518,
-      "longitude": 34.7913
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "08-6444800"
-  },
-  {
-    "id": "9400019",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:00-22:00; Fr 07:00-14:00; Sa 21:00-23:30",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "דימונה",
-    "address": "פרץ סנטר, דימונה",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.0677,
-      "longitude": 35.0347
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "08-6571447"
-  },
-  {
-    "id": "9400020",
-    "type": "cafe",
-    "openingHours": "Su-Th 08:00-20:00; Fr 08:00-13:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "כפר עזה",
-    "address": "צומת כפר עזה",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.491,
-      "longitude": 34.546
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "08-6212330"
-  },
-  {
-    "id": "9400021",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:00-22:00; Fr 07:00-14:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "אילת",
-    "address": "אנטיב 8, מלכת שבא, אילת",
-    "category": "dairy",
-    "location": {
-      "latitude": 29.5581,
-      "longitude": 34.9482
-    },
-    "kosherType": "rabanut_mehadrin",
-    "source": "manual",
-    "certifiedBy": "כשר למהדרין",
-    "phone": "08-6888422"
-  },
-  {
-    "id": "9400022",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:00-22:00; Fr 07:00-13:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "נתיבות",
-    "address": "בעלי המלאכה 2, נתיבות",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.4228,
-      "longitude": 34.5878
-    },
-    "kosherType": "rabanut_mehadrin",
-    "source": "manual",
-    "certifiedBy": "כשר למהדרין",
-    "phone": "08-9162522"
-  },
-  {
-    "id": "9400023",
-    "type": "cafe",
-    "openingHours": "Su-Th 05:00-23:00; Fr 05:00-14:00; Sa 20:30-23:59",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "אשדוד",
-    "address": "וויצמן פינת בן-גוריון, סטאר סנטר, אשדוד",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.804,
-      "longitude": 34.6553
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "08-8568160"
-  },
-  {
-    "id": "9400024",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:00-21:00; Fr 07:00-15:00; Sa 20:30-22:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "ערד",
-    "address": "שמיר 11, צים סנטר, ערד",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.2598,
-      "longitude": 35.2141
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "08-6738313"
-  },
-  {
-    "id": "9400025",
-    "type": "cafe",
-    "openingHours": "Su-Th 08:00-19:30; Fr 08:00-13:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "אורים",
-    "address": "דור אלון, צומת אורים",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.35,
-      "longitude": 34.59
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "08-6224047"
-  },
-  {
-    "id": "9400026",
-    "type": "cafe",
-    "openingHours": "Su-Th 08:00-20:30; Fr 08:00-14:00; Sa 20:30-21:30",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "אשקלון",
-    "address": "שד׳ בן-גוריון 21, קניון גירון, אשקלון",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.6688,
-      "longitude": 34.5742
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "08-6734142"
-  },
-  {
-    "id": "9400027",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:00-22:00; Fr 07:00-14:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "גן יבנה",
-    "address": "המגינים 56, גן יבנה",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.787,
-      "longitude": 34.7045
-    },
-    "kosherType": "rabanut_mehadrin",
-    "source": "manual",
-    "certifiedBy": "כשר למהדרין",
-    "phone": "08-9230700"
-  },
-  {
-    "id": "9400028",
-    "type": "cafe",
-    "openingHours": "Su-Th 08:30-20:00; Fr 08:30-13:30",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "באר שבע",
-    "address": "קניון הנגב, צומת אלי כהן, באר שבע",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.2518,
-      "longitude": 34.7913
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "08-6650016"
-  },
-  {
-    "id": "9400029",
-    "type": "cafe",
-    "openingHours": "Su-Th 08:00-21:00; Fr 08:00-14:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "אשדוד",
-    "address": "הגדוד העברי 6, קניון סימול, אשדוד",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.804,
-      "longitude": 34.6553
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "08-6432185"
-  },
-  {
-    "id": "9400030",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:30-21:00; Fr 07:30-13:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "קריית גת",
-    "address": "כיכר פז 3, קניון לב העיר, קריית גת",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.61,
-      "longitude": 34.7641
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "08-6814455"
-  },
-  {
-    "id": "9400031",
-    "type": "cafe",
-    "openingHours": "Su-Th 08:00-19:00; Fr 08:00-14:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "באר שבע",
-    "address": "התקווה 4, קניון קריית הממשלה, באר שבע",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.2518,
-      "longitude": 34.7913
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר"
-  },
-  {
-    "id": "9400032",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:30-20:00; Fr 07:30-13:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "באר שבע",
-    "address": "שד׳ יצחק רגר 57, באר שבע",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.2518,
-      "longitude": 34.7913
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "08-6897095"
-  },
-  {
-    "id": "9400033",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:00-22:30; Fr 07:00-13:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "באר שבע",
-    "address": "שדרות ירושלים 4, באר שבע",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.2518,
-      "longitude": 34.7913
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "08-6104002"
-  },
-  {
-    "id": "9400034",
-    "type": "cafe",
-    "openingHours": "Su-Th 06:15-21:00; Fr 06:15-14:30",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "אשקלון",
-    "address": "פאואר סנטר סילבר, אשקלון",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.6688,
-      "longitude": 34.5742
-    },
-    "kosherType": "rabanut_mehadrin",
-    "source": "manual",
-    "certifiedBy": "כשר למהדרין",
-    "phone": "08-6751675"
-  },
-  {
-    "id": "9400035",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:00-19:30; Fr 07:00-12:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "באר שבע",
-    "address": "בן צבי 4, תחנה מרכזית, באר שבע",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.2518,
-      "longitude": 34.7913
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "08-6861200"
-  },
-  {
-    "id": "9400036",
-    "type": "cafe",
-    "openingHours": "Su-Th 09:00-21:30; Fr 09:00-14:30; Sa 21:15-22:45",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "נהריה",
-    "address": "שד׳ בן צבי 1, קניון סטאר, נהריה",
-    "category": "dairy",
-    "location": {
-      "latitude": 33.0045,
-      "longitude": 35.0955
-    },
-    "kosherType": "rabanut_mehadrin",
-    "source": "manual",
-    "certifiedBy": "כשר למהדרין",
-    "phone": "04-6001180"
-  },
-  {
-    "id": "9400037",
-    "type": "cafe",
-    "openingHours": "Su-Th 06:30-22:00; Fr 06:30-14:00; Sa 21:00-23:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "מגדל העמק",
-    "address": "דרך העמק 1, ביג מגדל העמק",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.6795,
-      "longitude": 35.2392
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "04-6602911"
-  },
-  {
-    "id": "9400038",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:30-22:30; Fr 08:00-13:30; Sa 20:30-22:30",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "טבריה",
-    "address": "מרכז ביג פוריה, טבריה עילית",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.7921,
-      "longitude": 35.5312
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "04-8555555"
-  },
-  {
-    "id": "9400039",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:00-21:00; Fr 07:00-15:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "פרדס חנה כרכור",
-    "address": "תדהר 1, מרכז ביג, פרדס חנה",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.4706,
-      "longitude": 34.9711
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "04-6724112"
-  },
-  {
-    "id": "9400040",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:30-21:00; Fr 07:30-14:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "בית שאן",
-    "address": "העמל 7, צים סנטר, בית שאן",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.501,
-      "longitude": 35.5
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "04-6077777"
-  },
-  {
-    "id": "9400041",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:00-22:00; Fr 07:00-13:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "טבריה",
-    "address": "יהודה הלוי 4, מתחם בית בזלת, טבריה",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.7921,
-      "longitude": 35.5312
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "04-8555555"
-  },
-  {
-    "id": "9400042",
-    "type": "cafe",
-    "openingHours": "Su-Th 08:00-20:30; Fr 08:00-13:30",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "מעלות-תרשיחא",
-    "address": "שלמה שרירא 12, מרכז צים, מעלות",
-    "category": "dairy",
-    "location": {
-      "latitude": 33.0137,
-      "longitude": 35.2687
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "04-6265808"
-  },
-  {
-    "id": "9400043",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:00-21:00; Fr 07:00-14:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "אור עקיבא",
-    "address": "השיקמים 8, נוף ים סנטר, אור עקיבא",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.504,
-      "longitude": 34.9156
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "04-6033100"
-  },
-  {
-    "id": "9400044",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:00-22:00; Fr 07:00-14:00; Sa 20:45-23:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "עפולה",
-    "address": "יהושע חנקין 49, עפולה",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.6076,
-      "longitude": 35.2899
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "04-6896050"
-  },
-  {
-    "id": "9400045",
-    "type": "cafe",
-    "openingHours": "Su-Th 06:30-22:00; Fr 06:30-15:00; Sa 21:00-23:30",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "טירת כרמל",
-    "address": "הרצל 82, טירת כרמל",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.7606,
-      "longitude": 35.0073
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "04-6167546"
-  },
-  {
-    "id": "9400046",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:00-21:00; Fr 07:00-14:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "אור עקיבא",
-    "address": "הנשיא 1, קניון אורות, אור עקיבא",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.504,
-      "longitude": 34.9156
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "04-6261717"
-  },
-  {
-    "id": "9400047",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:30-21:30; Fr 07:30-14:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "קריית אתא",
-    "address": "העצמאות 37, קריית אתא",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.8056,
-      "longitude": 35.1048
-    },
-    "kosherType": "rabanut_mehadrin",
-    "source": "manual",
-    "certifiedBy": "כשר למהדרין",
-    "phone": "04-6215016"
-  },
-  {
-    "id": "9400048",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:30-22:30; Fr 07:30-15:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "קריית ים",
-    "address": "שדרות ירושלים 99, קריית ים",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.8497,
-      "longitude": 35.0693
-    },
-    "kosherType": "rabanut_mehadrin",
-    "source": "manual",
-    "certifiedBy": "כשר למהדרין",
-    "phone": "04-6122862"
-  },
-  {
-    "id": "9400049",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:00-22:00; Fr 07:00-15:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "חדרה",
-    "address": "יהודי פקיעין 1, שערי חדרה",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.434,
-      "longitude": 34.9187
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "04-6221333"
-  },
-  {
-    "id": "9400050",
-    "type": "cafe",
-    "openingHours": "Su-Th 06:30-20:00; Fr 06:30-14:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "רמת גן",
-    "address": "ביה\"ח לילדים ספרא, תל השומר",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.0682,
-      "longitude": 34.8243
-    },
-    "kosherType": "rabanut_mehadrin",
-    "source": "manual",
-    "certifiedBy": "כשר למהדרין"
-  },
-  {
-    "id": "9400051",
-    "type": "cafe",
-    "openingHours": "Su-Th 08:00-22:00; Fr 08:00-15:30; Sa 20:00-23:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "רמת גן",
-    "address": "אבא הלל סילבר 301, קניון איילון, רמת גן",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.0682,
-      "longitude": 34.8243
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "052-2096195"
-  },
-  {
-    "id": "9400052",
-    "type": "cafe",
-    "openingHours": "Su-Th 08:30-21:00; Fr 08:30-13:30",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "פתח תקווה",
-    "address": "ז'בוטינסקי 72, הקניון הגדול אבנת, פתח תקווה",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.084,
-      "longitude": 34.8878
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "03-9192270"
-  },
-  {
-    "id": "9400053",
-    "type": "cafe",
-    "openingHours": "Su-Th 00:00-24:00; Fr 00:00-14:00; Sa 19:00-23:59",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "לוד",
-    "address": "אולם מקבלי הפנים, נתב\"ג",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.9516,
-      "longitude": 34.8942
-    },
-    "kosherType": "rabanut_mehadrin",
-    "source": "manual",
-    "certifiedBy": "כשר למהדרין"
-  },
-  {
-    "id": "9400054",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:00-21:00; Fr 07:00-14:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "פתח תקווה",
-    "address": "ראשון לציון 1, פתח תקווה",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.084,
-      "longitude": 34.8878
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "03-9191791"
-  },
-  {
-    "id": "9400055",
-    "type": "cafe",
-    "openingHours": "Su-Th 06:30-19:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "רמת גן",
-    "address": "ז'בוטינסקי 7, מגדל משה אביב, בורסה",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.0682,
-      "longitude": 34.8243
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "03-6114000"
-  },
-  {
-    "id": "9400056",
-    "type": "cafe",
-    "openingHours": "Su-Th 06:00-22:00; Fr 06:00-15:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "רמת גן",
-    "address": "קניון גימיון, ביה\"ח תל השומר",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.0682,
-      "longitude": 34.8243
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "03-7362220"
-  },
-  {
-    "id": "9400057",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:00-18:00; Fr 08:00-12:30",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "פתח תקווה",
-    "address": "יצחק רבין 1, גלובל טאוורס, פתח תקווה",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.084,
-      "longitude": 34.8878
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "03-5186376"
-  },
-  {
-    "id": "9400058",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:00-21:00; Fr 07:00-14:30",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "בת ים",
-    "address": "יוספטל 92, ביג פאשן, בת ים",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.0235,
-      "longitude": 34.7507
-    },
-    "kosherType": "rabanut_mehadrin",
-    "source": "manual",
-    "certifiedBy": "כשר למהדרין",
-    "phone": "03-5562002"
-  },
-  {
-    "id": "9400059",
-    "type": "cafe",
-    "openingHours": "Su-Th 08:30-21:00; Fr 08:30-15:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "רמת השרון",
-    "address": "ביג פאשן גלילות, רמת השרון",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.1465,
-      "longitude": 34.8406
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר"
-  },
-  {
-    "id": "9400060",
-    "type": "cafe",
-    "openingHours": "Su-Th 06:30-19:00; Fr 06:30-13:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "בני ברק",
-    "address": "בן גוריון 1, מגדל בסר 2, בני ברק",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.084,
-      "longitude": 34.834
-    },
-    "kosherType": "rabanut_mehadrin",
-    "source": "manual",
-    "certifiedBy": "כשר למהדרין",
-    "phone": "03-6967200"
-  },
-  {
-    "id": "9400061",
-    "type": "cafe",
-    "openingHours": "Su-Th 09:00-20:00; Fr 09:00-14:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "הוד השרון",
-    "address": "הרקון 2, מתחם מיקס שרונים, הוד השרון",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.1508,
-      "longitude": 34.8896
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר"
-  },
-  {
-    "id": "9400062",
-    "type": "cafe",
-    "openingHours": "Su-Th 06:45-22:00; Fr 06:45-15:00; Sa 20:45-22:45",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "כפר סבא",
-    "address": "ויצמן 207, מתחם G, כפר סבא",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.1781,
-      "longitude": 34.9075
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "09-7680094"
-  },
-  {
-    "id": "9400063",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:30-21:00; Fr 08:00-14:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "אור יהודה",
-    "address": "אליהו סעדון 120, עזריאלי אאוטלט, אור יהודה",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.0321,
-      "longitude": 34.8712
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "03-5333991"
-  },
-  {
-    "id": "9400064",
-    "type": "cafe",
-    "openingHours": "Su-Th 06:00-21:00; Fr 06:00-14:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "גבעת שמואל",
-    "address": "שפינדל יונה 1, תחנת פז אורלי, גבעת שמואל",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.0782,
-      "longitude": 34.8458
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "03-5368640"
-  },
-  {
-    "id": "9400065",
-    "type": "cafe",
-    "openingHours": "Su-Th 06:15-21:00; Fr 06:15-15:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "רעננה",
-    "address": "תחנת דלק פז, צומת רופין",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.1839,
-      "longitude": 34.8708
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "09-8987374"
-  },
-  {
-    "id": "9400066",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:15-21:30; Fr 07:15-15:30",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "גבעתיים",
-    "address": "דרך יצחק רבין 53, קניון גבעתיים",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.068,
-      "longitude": 34.8126
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "03-5722800"
-  },
-  {
-    "id": "9400067",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:30-21:00; Fr 07:30-14:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "חולון",
-    "address": "גולדה מאיר 7, קניון חולון",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.0114,
-      "longitude": 34.7799
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "03-5176650"
-  },
-  {
-    "id": "9400068",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:00-21:00; Fr 07:00-14:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "נתניה",
-    "address": "הרצל 60, קניון השרון, נתניה",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.3215,
-      "longitude": 34.8532
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "09-8870906"
-  },
-  {
-    "id": "9400069",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:00-21:00; Fr 07:00-13:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "נתניה",
-    "address": "שדרות טום לנטוס 60, קניון נעימי, נתניה",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.3215,
-      "longitude": 34.8532
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר"
-  },
-  {
-    "id": "9400070",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:30-21:30; Fr 07:30-14:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "יהוד",
-    "address": "דרך משה דיין 3, קניון סביונים, יהוד",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.031,
-      "longitude": 34.889
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "03-9343777"
-  },
-  {
-    "id": "9400071",
-    "type": "cafe",
-    "openingHours": "Su-Th 08:30-21:30; Fr 08:30-14:30; Sa 20:15-23:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "נתניה",
-    "address": "בני ברמן 2, קניון עיר ימים, נתניה",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.3215,
-      "longitude": 34.8532
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "09-8326950"
-  },
-  {
-    "id": "9400072",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:30-21:00; Fr 07:30-14:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "קריית אונו",
-    "address": "המלך שלמה 37, קניון קריית אונו",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.0579,
-      "longitude": 34.8559
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "03-6093907"
-  },
-  {
-    "id": "9400073",
-    "type": "cafe",
-    "openingHours": "Su-Th 08:30-21:30; Fr 08:00-14:30; Sa 21:00-22:30",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "רעננה",
-    "address": "המלאכה 2, קניון רננים, רעננה",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.1839,
-      "longitude": 34.8708
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "09-7415445"
-  },
-  {
-    "id": "9400074",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:00-20:00; Fr 07:00-14:30",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "הרצליה",
-    "address": "בילינסון 2, שדרות חן, הרצליה",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.1663,
-      "longitude": 34.8392
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "09-7660028"
-  },
-  {
-    "id": "9400075",
-    "type": "cafe",
-    "openingHours": "Su-Th 06:30-21:00; Fr 06:30-13:30",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "צריפין",
-    "address": "ביה\"ח אסף הרופא, שער יפו",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.9627,
-      "longitude": 34.9113
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "08-9243091"
-  },
-  {
-    "id": "9400076",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:00-18:30; Fr 07:30-13:30",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "ראשון לציון",
-    "address": "ישראל גלילי 5, מתחם בית המשפט, ראשון לציון",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.973,
-      "longitude": 34.7898
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "03-9414883"
-  },
-  {
-    "id": "9400077",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:30-21:30; Fr 07:30-14:30",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "רחובות",
-    "address": "דרך הים 1, מיקס רחובות",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.8928,
-      "longitude": 34.8113
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "08-9477056"
-  },
-  {
-    "id": "9400078",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:00-20:00; Fr 07:00-13:30",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "נס ציונה",
-    "address": "הפטיש 6, ישפרו סנטר, נס ציונה",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.9285,
-      "longitude": 34.7982
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "08-9408441"
-  },
-  {
-    "id": "9400079",
-    "type": "cafe",
-    "openingHours": "Su-Th 08:00-22:00; Fr 08:00-15:00; Sa 20:15-23:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "רמלה",
-    "address": "שדרות דוד רזיאל 1, עזריאלי רמלה",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.9245,
-      "longitude": 34.8706
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "08-6580951"
-  },
-  {
-    "id": "9400080",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:30-20:30; Fr 07:30-13:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "באר יעקב",
-    "address": "שא נס 17, קניון באר יעקב",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.9363,
-      "longitude": 34.8386
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "053-3788871"
-  },
-  {
-    "id": "9400081",
-    "type": "cafe",
-    "openingHours": "Su-Th 08:00-22:00; Fr 08:00-16:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "ראשון לציון",
-    "address": "סחרוב 21, קניון הזהב, ראשון לציון",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.973,
-      "longitude": 34.7898
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "054-3333693"
-  },
-  {
-    "id": "9400082",
-    "type": "cafe",
-    "openingHours": "Su-Th 08:30-21:30; Fr 08:30-15:00; Sa 20:30-23:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "רחובות",
-    "address": "ביל\"ו 2, קניון רחובות",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.8928,
-      "longitude": 34.8113
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "08-9494102"
-  },
-  {
-    "id": "9400083",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:30-19:30; Fr 07:30-14:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "ראשון לציון",
-    "address": "גולדה מאיר 1 פינת ההסתדרות 6, שער ראשון",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.973,
-      "longitude": 34.7898
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "03-9522613"
-  },
-  {
-    "id": "9400084",
-    "type": "cafe",
-    "openingHours": "Su-Th 06:30-20:00; Fr 06:30-13:30",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "תל אביב",
-    "address": "הברזל 12, אסותא רמת החייל, תל אביב",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.0853,
-      "longitude": 34.7818
-    },
-    "kosherType": "rabanut_mehadrin",
-    "source": "manual",
-    "certifiedBy": "כשר למהדרין",
-    "phone": "03-6155435"
-  },
-  {
-    "id": "9400085",
-    "type": "cafe",
-    "openingHours": "Su-Th 06:30-20:00; Fr 06:30-13:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "תל אביב",
-    "address": "ג'ורג' וייז 20, תל אביב",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.0853,
-      "longitude": 34.7818
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "03-5040603"
-  },
-  {
-    "id": "9400086",
-    "type": "cafe",
-    "openingHours": "Su-Th 06:30-21:00; Fr 06:30-14:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "תל אביב",
-    "address": "ויצמן 14, ויצמן סיטי, תל אביב",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.0853,
-      "longitude": 34.7818
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "050-5998090"
-  },
-  {
-    "id": "9400087",
-    "type": "cafe",
-    "openingHours": "Su-Th 08:00-21:30; Fr 08:00-15:30; Sa 20:30-23:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "תל אביב",
-    "address": "החשמונאים 96, קניון TLV, תל אביב",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.0853,
-      "longitude": 34.7818
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "03-7750775"
-  },
-  {
-    "id": "9400088",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:00-21:00; Fr 07:00-14:30",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "תל אביב",
-    "address": "שדרות שאול המלך 2, תל אביב",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.0853,
-      "longitude": 34.7818
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר"
-  },
-  {
-    "id": "9400089",
-    "type": "cafe",
-    "openingHours": "Su-Th 06:30-20:00; Fr 06:30-14:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "תל אביב",
-    "address": "יגאל אלון 94, מגדלי אלון, תל אביב",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.0853,
-      "longitude": 34.7818
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "050-8424555"
-  },
-  {
-    "id": "9400090",
-    "type": "cafe",
-    "openingHours": "Su-Th 06:00-19:00; Fr 06:00-14:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "תל אביב",
-    "address": "מנחם בגין 46, תל אביב",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.0853,
-      "longitude": 34.7818
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "03-5099549"
-  },
-  {
-    "id": "9400091",
-    "type": "cafe",
-    "openingHours": "Su-Th 08:30-21:00; Fr 08:30-13:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "תל אביב",
-    "address": "מנחם בגין 132, קניון עזריאלי, תל אביב",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.0853,
-      "longitude": 34.7818
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "03-5040970"
-  },
-  {
-    "id": "9400092",
-    "type": "cafe",
-    "openingHours": "Su-Th 06:30-18:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "תל אביב",
-    "address": "דבורה הנביאה 121, פארק עתידים, תל אביב",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.0853,
-      "longitude": 34.7818
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר"
-  },
-  {
-    "id": "9400093",
-    "type": "cafe",
-    "openingHours": "Su-Th 06:30-18:00; Fr 07:00-14:00",
-    "name": "ארומה אספרסו בר",
-    "locationPrecision": "address",
-    "website": "https://www.aroma.co.il",
-    "cityId": "תל אביב",
-    "address": "הברזל 25, רמת החייל, תל אביב",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.0853,
-      "longitude": 34.7818
-    },
-    "kosherType": "rabanut_mekomi",
-    "source": "manual",
-    "certifiedBy": "כשר",
-    "phone": "03-6489432"
-  },
-  {
     "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-16:00; Su 11:00-22:00",
     "source": "manual",
     "id": "9500000",
@@ -135954,6 +133953,3143 @@
     "certifiedBy": "רבנות",
     "kosherType": "regular",
     "openingHours": "א׳-ה׳ 11:00-22:00, ו׳ 11:00-16:00, מוצ\"ש חצי שעה אחרי צאת שבת-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-cafe-joe-sheba",
+    "name": "קפה ג'ו שיבא יולדות",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "בית חולים שיבא תל השומר, לובי בניין יולדות",
+    "cityId": "רמת גן",
+    "location": {
+      "latitude": 32.048,
+      "longitude": 34.836
+    },
+    "website": "https://www.joe.co.il",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:00-22:00, ו׳ 07:00-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-cafe-joe-marom-nave",
+    "name": "קפה ג'ו מרום נווה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "חיים לנדאו 7, רמת גן",
+    "cityId": "רמת גן",
+    "location": {
+      "latitude": 32.075,
+      "longitude": 34.824
+    },
+    "website": "https://www.joe.co.il",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:30-21:00, ו׳ 07:30-13:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-cafe-joe-haifa-uni",
+    "name": "קפה ג'ו אוניברסיטת חיפה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "שדרות אבא חושי 199, חיפה",
+    "cityId": "חיפה",
+    "location": {
+      "latitude": 32.761,
+      "longitude": 35.017
+    },
+    "website": "https://www.joe.co.il",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:00-19:00, ו׳ 07:00-14:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-cafe-joe-holon",
+    "name": "קפה ג'ו חולון",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "המרכבה 31, חולון",
+    "cityId": "חולון",
+    "location": {
+      "latitude": 32.015,
+      "longitude": 34.776
+    },
+    "website": "https://www.joe.co.il",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:00-21:00, ו׳ 07:00-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-cafe-joe-rishon",
+    "name": "קפה ג'ו ראשון לציון",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "הלח\"י 16, ראשון לציון",
+    "cityId": "ראשון לציון",
+    "location": {
+      "latitude": 31.964,
+      "longitude": 34.801
+    },
+    "website": "https://www.joe.co.il",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:00-21:00, ו׳ 07:00-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-cafe-joe-hod-hasharon",
+    "name": "קפה ג'ו שרונים הוד השרון",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "הרקון 2, הוד השרון",
+    "cityId": "הוד השרון",
+    "location": {
+      "latitude": 32.1488,
+      "longitude": 34.8956
+    },
+    "website": "https://www.joe.co.il",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:00-21:00, ו׳ 07:00-14:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-cafe-joe-rg-hilazon",
+    "name": "קפה ג'ו רמת גן החילזון",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "החילזון 12, רמת גן",
+    "cityId": "רמת גן",
+    "location": {
+      "latitude": 32.082,
+      "longitude": 34.82
+    },
+    "website": "https://www.joe.co.il",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:00-16:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-cafe-joe-ramla",
+    "name": "קפה ג'ו רמלה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "קריית הממשלה, רמלה",
+    "cityId": "רמלה",
+    "location": {
+      "latitude": 31.931,
+      "longitude": 34.868
+    },
+    "website": "https://www.joe.co.il",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:00-21:00, ו׳ 07:00-14:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-cafe-joe-tzometsram",
+    "name": "קפה ג'ו צומת ראם",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "מתחם דלק, צומת ראם",
+    "cityId": "צומת ראם",
+    "location": {
+      "latitude": 31.772,
+      "longitude": 35.198
+    },
+    "website": "https://www.joe.co.il",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 06:00-12:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-cafe-joe-rg-bengurion",
+    "name": "קפה ג'ו רמת גן בן גוריון",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "בן גוריון 32, רמת גן",
+    "cityId": "רמת גן",
+    "location": {
+      "latitude": 32.07,
+      "longitude": 34.819
+    },
+    "website": "https://www.joe.co.il",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:00-17:00",
+    "source": "manual"
+  },
+  {
+    "id": "memphis-0fc0a28c",
+    "name": "ממפיס פתח תקווה",
+    "type": "restaurant",
+    "cityId": "פתח תקווה",
+    "address": "תוצרת הארץ 17, פתח תקווה",
+    "phone": "03-7723200",
+    "location": {
+      "latitude": 32.0883,
+      "longitude": 34.8737
+    },
+    "website": "https://memphis.co.il",
+    "openingHours": "א'-ד' 12:00-23:00 | ה' 12:00-23:30 | ו' סגור | ש' מוצ\"ש",
+    "category": "meat",
+    "kosherType": "badatz_beit_yosef",
+    "tags": [
+      "burger"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23"
+  },
+  {
+    "id": "memphis-fd5759c0",
+    "name": "ממפיס בני ברק",
+    "type": "restaurant",
+    "cityId": "בני ברק",
+    "address": "הירקון 10, בני ברק",
+    "phone": "*2904",
+    "location": {
+      "latitude": 32.0879,
+      "longitude": 34.8338
+    },
+    "website": "https://memphis.co.il",
+    "openingHours": "א'-ה' 12:00-22:30 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "badatz_beit_yosef",
+    "tags": [
+      "burger"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23"
+  },
+  {
+    "id": "mifgash-berlin-f692e96f",
+    "name": "מפגש ברלין ז'בוטינסקי",
+    "type": "restaurant",
+    "cityId": "רמת גן",
+    "address": "דרך זאב ז'בוטינסקי 61, רמת גן",
+    "phone": "077-5008966",
+    "location": {
+      "latitude": 32.0698,
+      "longitude": 34.8144
+    },
+    "website": "https://mifgashberlin.co.il",
+    "openingHours": "א'-ה' 11:00-23:00 | ו' 11:00-17:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "tags": [
+      "burger"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23"
+  },
+  {
+    "id": "mifgash-berlin-cdea7b86",
+    "name": "מפגש ברלין בורסה",
+    "type": "restaurant",
+    "cityId": "רמת גן",
+    "address": "תובל 16, רמת גן (מתחם הבורסה)",
+    "phone": "053-8093026",
+    "location": {
+      "latitude": 32.0706,
+      "longitude": 34.8186
+    },
+    "website": "https://mifgashberlin.co.il",
+    "openingHours": "א'-ה' 11:00-04:00 | ו' 11:00-16:00 | ש' מוצ\"ש עד 04:00",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "tags": [
+      "burger"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23"
+  },
+  {
+    "id": "aloha-16bcad8b",
+    "name": "אלוהה שרונה",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "אלוף קלמן מגן 5, שרונה מרקט, תל אביב",
+    "phone": "051-240-0966",
+    "location": {
+      "latitude": 32.067,
+      "longitude": 34.7966
+    },
+    "website": "https://alohatlv.co.il",
+    "openingHours": "א'-ה' 10:30-22:00 | ו' 11:00-15:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "burger"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23"
+  },
+  {
+    "id": "aloha-735a9737",
+    "name": "אלוהה פתח תקווה BSR",
+    "type": "restaurant",
+    "cityId": "פתח תקווה",
+    "address": "יצחק רבין 4, ב.ס.ר סיטי, פתח תקווה",
+    "phone": "058-592-9984",
+    "location": {
+      "latitude": 32.0837,
+      "longitude": 34.874
+    },
+    "website": "https://alohatlv.co.il",
+    "openingHours": "א'-ה' 11:00-21:00 | ו' 11:00-15:30 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "burger"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23"
+  },
+  {
+    "id": "butra-2550867b",
+    "name": "בוטרא אשדוד",
+    "type": "restaurant",
+    "cityId": "אשדוד",
+    "address": "אדר 4, רובע י\"ב, אשדוד",
+    "phone": "08-9955284",
+    "location": {
+      "latitude": 31.7919,
+      "longitude": 34.6464
+    },
+    "openingHours": "א'-ה' 10:30-23:00 | ו' לבדוק מול המסעדה | ש' מוצ\"ש",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23"
+  },
+  {
+    "id": "samarkand-a264b6c2",
+    "name": "סמרקנד תל אביב",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "בן צבי 34, תל אביב",
+    "phone": "03-6811122",
+    "location": {
+      "latitude": 32.0642,
+      "longitude": 34.7848
+    },
+    "openingHours": "א'-ה' 11:30-23:30 | ו' לבדוק מול המסעדה | ש' מוצ\"ש",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "שף"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23"
+  },
+  {
+    "id": "pizzax-6069628c",
+    "name": "פיצה X דיזינגוף",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "דיזינגוף 70, תל אביב",
+    "phone": "03-6218574",
+    "location": {
+      "latitude": 32.0784,
+      "longitude": 34.7734
+    },
+    "website": "https://pizzax.co.il",
+    "openingHours": "א'-ה' 12:00-02:00 | ו' 12:00-04:00 | ש' מוצ\"ש",
+    "category": "dairy",
+    "kosherType": "rabanut",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23"
+  },
+  {
+    "id": "pizzandtortilla-be19a08a",
+    "name": "פיצה אנד טורטיה",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "אלנבי 79, תל אביב",
+    "phone": "072-3290637",
+    "location": {
+      "latitude": 32.0668,
+      "longitude": 34.774
+    },
+    "website": "https://pizzandtortilla.co.il",
+    "openingHours": "א'-ה' 11:00-21:00 | ו' 11:00-14:30 | ש' סגור",
+    "category": "dairy",
+    "kosherType": "mehadrin",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23"
+  },
+  {
+    "id": "breadcafe-7306c2e6",
+    "name": "Bread Cafe רמת גן",
+    "type": "restaurant",
+    "cityId": "רמת גן",
+    "address": "תובל 19, רמת גן",
+    "phone": "050-480-0042",
+    "location": {
+      "latitude": 32.0706,
+      "longitude": 34.8186
+    },
+    "website": "https://breadcafe.co.il",
+    "openingHours": "א'-ה' 07:00-18:00 | ו' סגור | ש' סגור",
+    "category": "dairy",
+    "kosherType": "mehadrin",
+    "tags": [
+      "קפה",
+      "סנדוויץ"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23"
+  },
+  {
+    "id": "breadcafe-3fb8a6e1",
+    "name": "Bread Cafe בן גבירול תל אביב",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "בן גבירול 30, תל אביב",
+    "phone": "052-828-7990",
+    "location": {
+      "latitude": 32.0748,
+      "longitude": 34.7823
+    },
+    "website": "https://breadcafe.co.il",
+    "openingHours": "א'-ה' 07:00-22:00 | ו' 07:00-15:00 | ש' סגור",
+    "category": "dairy",
+    "kosherType": "mehadrin",
+    "tags": [
+      "קפה",
+      "סנדוויץ"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23"
+  },
+  {
+    "id": "cafe-lugano-8d339460",
+    "name": "קפה לוגאנו",
+    "type": "restaurant",
+    "cityId": "רמת גן",
+    "address": "החוגה 2, רמת גן",
+    "phone": "077-407-0604",
+    "location": {
+      "latitude": 32.0747,
+      "longitude": 34.8221
+    },
+    "openingHours": "א'-ה' 08:00-20:00 | ו' 08:00-14:00 | ש' סגור",
+    "category": "dairy",
+    "kosherType": "mehadrin",
+    "tags": [
+      "קפה"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23"
+  },
+  {
+    "id": "so-sushi-716bd81e",
+    "name": "סו סושי",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "אבן גבירול 54, תל אביב",
+    "phone": "072-3910811",
+    "location": {
+      "latitude": 32.0794,
+      "longitude": 34.7831
+    },
+    "openingHours": "א'-ה' 11:00-23:00 | ו' 11:00-14:00 | ש' מוצ\"ש",
+    "category": "dairy",
+    "kosherType": "rabanut",
+    "tags": [
+      "סושי"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23"
+  },
+  {
+    "id": "kansai-4c330d09",
+    "name": "קנסאי פתח תקווה",
+    "type": "restaurant",
+    "cityId": "פתח תקווה",
+    "address": "רפאל איתן 3, פתח תקווה",
+    "location": {
+      "latitude": 32.094,
+      "longitude": 34.8876
+    },
+    "openingHours": "א'-ה' 10:30-22:45 | ו' 10:30-14:30 | ש' מוצ\"ש",
+    "category": "parve",
+    "kosherType": "rabanut",
+    "tags": [
+      "סושי"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23"
+  },
+  {
+    "id": "sushi-bazel-b075a6c4",
+    "name": "סושי בזל תל אביב",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "בוגרשוב 33, תל אביב",
+    "phone": "077-9968444",
+    "location": {
+      "latitude": 32.074,
+      "longitude": 34.7706
+    },
+    "website": "https://sushibarbazel.co.il",
+    "openingHours": "א'-ה' 10:30-23:45 | ו' לבדוק מול המסעדה | ש' מוצ\"ש",
+    "category": "parve",
+    "kosherType": "rabanut",
+    "tags": [
+      "סושי"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23"
+  },
+  {
+    "id": "tau77-0464f78f",
+    "name": "טאו 77",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "רוטשילד 15, תל אביב",
+    "phone": "03-7788997",
+    "location": {
+      "latitude": 32.0643,
+      "longitude": 34.773
+    },
+    "website": "https://tau77.co.il",
+    "openingHours": "א'-ד' 12:00-23:00 | ה' 12:00-00:00 | ו' 12:00-16:00 | ש' מוצ\"ש",
+    "category": "parve",
+    "kosherType": "rabanut",
+    "tags": [
+      "סושי",
+      "פאן-אסייתי"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23"
+  },
+  {
+    "id": "nini-hachi-8aa87e4b",
+    "name": "ניני האצ'י",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "בן יהודה 228, תל אביב",
+    "phone": "03-6249228",
+    "location": {
+      "latitude": 32.0968,
+      "longitude": 34.7759
+    },
+    "website": "https://ninihachi.com",
+    "openingHours": "א'-ה' 12:00-23:30 | ו' עד 16:00 | ש' מוצ\"ש",
+    "category": "parve",
+    "kosherType": "rabanut",
+    "tags": [
+      "סושי",
+      "פאן-אסייתי"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23"
+  },
+  {
+    "id": "nini-cho-4f71af38",
+    "name": "ניני צ'ו פתח תקווה",
+    "type": "restaurant",
+    "cityId": "פתח תקווה",
+    "address": "הסיבים 18, פתח תקווה",
+    "phone": "03-5183333",
+    "location": {
+      "latitude": 32.0908,
+      "longitude": 34.8866
+    },
+    "openingHours": "א'-ה' 12:00-23:00 | ו' 12:00-15:00 | ש' מוצ\"ש",
+    "category": "parve",
+    "kosherType": "rabanut",
+    "tags": [
+      "סושי",
+      "פאן-אסייתי"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23"
+  },
+  {
+    "id": "nini-kai-e371580d",
+    "name": "ניני קאי אילת",
+    "type": "restaurant",
+    "cityId": "אילת",
+    "address": "אנטיב 5, אילת",
+    "phone": "08-6386698",
+    "location": {
+      "latitude": 29.5558,
+      "longitude": 34.952
+    },
+    "openingHours": "א'-ה' 13:00-22:00 | ו' 13:00-16:00 | ש' מוצ\"ש",
+    "category": "parve",
+    "kosherType": "rabanut",
+    "tags": [
+      "סושי",
+      "פאן-אסייתי"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23"
+  },
+  {
+    "id": "sabiach-hasharon-69afc132",
+    "name": "סביח השרון רמת גן",
+    "type": "restaurant",
+    "cityId": "רמת גן",
+    "address": "תובל 34, רמת גן",
+    "phone": "050-424-8540",
+    "location": {
+      "latitude": 32.0703,
+      "longitude": 34.8185
+    },
+    "openingHours": "א'-ה' 08:00-23:00 | ו' עד 13:00 | ש' סגור",
+    "category": "parve",
+    "kosherType": "rabanut",
+    "tags": [
+      "סביח",
+      "falafel"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23"
+  },
+  {
+    "id": "sabiach-hasharon-c5c327cb",
+    "name": "סביח השרון כפר סבא",
+    "type": "restaurant",
+    "cityId": "כפר סבא",
+    "address": "ויצמן 43, כפר סבא",
+    "phone": "050-6590590",
+    "location": {
+      "latitude": 32.1821,
+      "longitude": 34.9082
+    },
+    "openingHours": "א'-ה' 09:00-21:00 | ו' 09:00-15:00 | ש' סגור",
+    "category": "parve",
+    "kosherType": "badatz_beit_yosef",
+    "tags": [
+      "סביח",
+      "falafel"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23"
+  },
+  {
+    "id": "rak-marak-6e2134ba",
+    "name": "רק מרק רמת גן",
+    "type": "restaurant",
+    "cityId": "רמת גן",
+    "address": "ביאליק 76, רמת גן",
+    "phone": "054-837-1265",
+    "location": {
+      "latitude": 32.0845,
+      "longitude": 34.8074
+    },
+    "website": "https://rakmarak.co.il",
+    "openingHours": "א'-ה' 10:00-23:00 | ו' 10:00-15:00 | ש' מוצ\"ש",
+    "category": "parve",
+    "kosherType": "mehadrin",
+    "tags": [
+      "מרק",
+      "בריאות"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23"
+  },
+  {
+    "id": "manual-river-malha",
+    "name": "ריבר מלחה ירושלים",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "קניון מלחה, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.747,
+      "longitude": 35.187
+    },
+    "phone": "*6969",
+    "website": "https://www.river-bar.co.il",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 11:00-22:00, ו׳ 11:00-15:00, מוצ\"ש שעה אחרי צאת שבת-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-river-rishon",
+    "name": "ריבר ראשון לציון",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "סחרוב 26, ראשון לציון",
+    "cityId": "ראשון לציון",
+    "location": {
+      "latitude": 31.979,
+      "longitude": 34.792
+    },
+    "phone": "*6969",
+    "website": "https://www.river-bar.co.il",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 12:00-23:30, ו׳ סגור, מוצ\"ש שעה אחרי צאת שבת-24:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-river-yavne",
+    "name": "ריבר יבנה",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "הדוגית 16, מרכז רוגובין, יבנה",
+    "cityId": "יבנה",
+    "location": {
+      "latitude": 31.876,
+      "longitude": 34.74
+    },
+    "phone": "*6969",
+    "website": "https://www.river-bar.co.il",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 12:00-23:00, ו׳ סגור, מוצ\"ש שעה אחרי צאת שבת-23:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-river-holon",
+    "name": "ריבר חולון",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "הרוקמים 26, חולון",
+    "cityId": "חולון",
+    "location": {
+      "latitude": 32.015,
+      "longitude": 34.776
+    },
+    "phone": "*6969",
+    "website": "https://www.river-bar.co.il",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 12:00-24:00, ו׳ סגור, מוצ\"ש שעה אחרי צאת שבת-24:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-river-herzliya",
+    "name": "ריבר הרצליה",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "ספיר 7, הרצליה",
+    "cityId": "הרצליה",
+    "location": {
+      "latitude": 32.164,
+      "longitude": 34.844
+    },
+    "phone": "*6969",
+    "website": "https://www.river-bar.co.il",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 12:00-23:00, ו׳ סגור, מוצ\"ש שעה אחרי צאת שבת-24:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-river-ramat-gan",
+    "name": "ריבר בורסה רמת גן",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "ז'בוטינסקי 7, רמת גן",
+    "cityId": "רמת גן",
+    "location": {
+      "latitude": 32.082,
+      "longitude": 34.814
+    },
+    "phone": "03-6114033",
+    "website": "https://www.river-bar.co.il",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 12:00-24:00, ו׳ סגור, מוצ\"ש שעה אחרי צאת שבת-24:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-river-beer-sheva",
+    "name": "ריבר באר שבע",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "החיטה 1, מתחם סינמה סיטי, באר שבע",
+    "cityId": "באר שבע",
+    "location": {
+      "latitude": 31.248,
+      "longitude": 34.796
+    },
+    "phone": "*6969",
+    "website": "https://www.river-bar.co.il",
+    "kosherType": "regular",
+    "openingHours": "א׳ 12:00-22:30, ב׳-ד׳ 12:00-23:00, ה׳ 12:00-24:00, ו׳ סגור, מוצ\"ש שעה וחצי אחרי צאת שבת",
+    "source": "manual"
+  },
+  {
+    "id": "manual-river-ashkelon",
+    "name": "ריבר אשקלון",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "רחבעם זאבי 4, אשקלון",
+    "cityId": "אשקלון",
+    "location": {
+      "latitude": 31.669,
+      "longitude": 34.571
+    },
+    "phone": "08-6321666",
+    "website": "https://www.river-bar.co.il",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 12:00-23:30, ו׳ סגור, מוצ\"ש שעה אחרי צאת שבת-23:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-river-or-yehuda",
+    "name": "ריבר אור יהודה",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "טרמינל סנטר, אור יהודה",
+    "cityId": "אור יהודה",
+    "location": {
+      "latitude": 32.028,
+      "longitude": 34.896
+    },
+    "phone": "*6969",
+    "website": "https://www.river-bar.co.il",
+    "kosherType": "regular",
+    "openingHours": "א׳-ד׳ 12:00-23:00, ה׳ 12:00-23:30, ו׳ סגור, מוצ\"ש חצי שעה אחרי צאת שבת-23:45",
+    "source": "manual"
+  },
+  {
+    "id": "takumi-98e02a2b",
+    "name": "טקומי שוהם",
+    "type": "restaurant",
+    "cityId": "שוהם",
+    "address": "הדקל 30, שוהם מרקט, שוהם",
+    "location": {
+      "latitude": 31.9987,
+      "longitude": 34.9446
+    },
+    "openingHours": "א'-ה' 11:30-22:00 | ו' 11:30-14:00 | ש' 20:45-23:00",
+    "category": "parve",
+    "kosherType": "rabanut",
+    "tags": [
+      "סושי",
+      "פאן-אסייתי"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23",
+    "phone": "*3870",
+    "website": "https://www.takumi.co.il",
+    "menu": "https://www.takumi.co.il/menu/",
+    "instagram": "takumi_street_food"
+  },
+  {
+    "id": "suduch-0ae93b1b",
+    "name": "סודוך כפר סבא",
+    "type": "fast_food",
+    "cityId": "כפר סבא",
+    "address": "התע\"ש 18, כפר סבא",
+    "location": {
+      "latitude": 32.1763,
+      "longitude": 34.9056
+    },
+    "openingHours": "א'-ד' 09:00-03:00 | ה' 09:00-04:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "טוסט",
+      "נקניק",
+      "מזון מהיר"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23",
+    "phone": "03-6096638",
+    "website": "https://suduch.co.il"
+  },
+  {
+    "id": "suduch-02ff924e",
+    "name": "סודוך תל אביב אפקה",
+    "type": "fast_food",
+    "cityId": "תל אביב",
+    "address": "פנחס רוזן 19, אפקה, תל אביב",
+    "location": {
+      "latitude": 32.1094,
+      "longitude": 34.8009
+    },
+    "openingHours": "א'-ד' 09:00-03:00 | ה' 09:00-04:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "טוסט",
+      "נקניק",
+      "מזון מהיר"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23",
+    "phone": "03-6096638",
+    "website": "https://suduch.co.il"
+  },
+  {
+    "id": "suduch-7c9ef498",
+    "name": "סודוך פתח תקווה שופ טיים",
+    "type": "fast_food",
+    "cityId": "פתח תקווה",
+    "address": "תוצרת הארץ 3, שופ טיים, פתח תקווה",
+    "location": {
+      "latitude": 32.0917,
+      "longitude": 34.8723
+    },
+    "openingHours": "א'-ד' 09:00-04:00 | ה' 09:00-05:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "טוסט",
+      "נקניק",
+      "מזון מהיר"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23",
+    "phone": "03-6096638",
+    "website": "https://suduch.co.il"
+  },
+  {
+    "id": "suduch-55c8affd",
+    "name": "סודוך הרצליה",
+    "type": "fast_food",
+    "cityId": "הרצליה",
+    "address": "אבא אבן 3, הרצליה",
+    "location": {
+      "latitude": 32.1668,
+      "longitude": 34.8376
+    },
+    "openingHours": "א'-ד' 09:00-04:00 | ה' 09:00-05:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "טוסט",
+      "נקניק",
+      "מזון מהיר"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23",
+    "phone": "03-6096638",
+    "website": "https://suduch.co.il"
+  },
+  {
+    "id": "suduch-b60169d4",
+    "name": "סודוך תל אביב המסגר",
+    "type": "fast_food",
+    "cityId": "תל אביב",
+    "address": "המסגר 64, תל אביב",
+    "location": {
+      "latitude": 32.0654,
+      "longitude": 34.7808
+    },
+    "openingHours": "א'-ד' 09:00-04:00 | ה' 09:00-05:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "טוסט",
+      "נקניק",
+      "מזון מהיר"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23",
+    "phone": "03-6096638",
+    "website": "https://suduch.co.il"
+  },
+  {
+    "id": "suduch-d7be09ae",
+    "name": "סודוך תל אביב איינשטיין",
+    "type": "fast_food",
+    "cityId": "תל אביב",
+    "address": "איינשטיין 9, תל אביב",
+    "location": {
+      "latitude": 32.1043,
+      "longitude": 34.8042
+    },
+    "openingHours": "א'-ה' 09:00-02:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "טוסט",
+      "נקניק",
+      "מזון מהיר"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23",
+    "phone": "03-6096638",
+    "website": "https://suduch.co.il"
+  },
+  {
+    "id": "suduch-e951a4ce",
+    "name": "סודוך תל אביב קרליבך",
+    "type": "fast_food",
+    "cityId": "תל אביב",
+    "address": "קרליבך 20, תל אביב",
+    "location": {
+      "latitude": 32.0789,
+      "longitude": 34.7843
+    },
+    "openingHours": "א'-ד' 09:00-04:00 | ה' 09:00-05:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "טוסט",
+      "נקניק",
+      "מזון מהיר"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23",
+    "phone": "03-6096638",
+    "website": "https://suduch.co.il"
+  },
+  {
+    "id": "suduch-aa85a058",
+    "name": "קריית אונו סודוך",
+    "type": "fast_food",
+    "cityId": "קריית אונו",
+    "address": "יעקב דורי 7, קריית אונו",
+    "location": {
+      "latitude": 32.0606,
+      "longitude": 34.8651
+    },
+    "openingHours": "א'-ד' 09:00-04:00 | ה' 09:00-05:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "טוסט",
+      "נקניק",
+      "מזון מהיר"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23",
+    "phone": "03-6096638",
+    "website": "https://suduch.co.il"
+  },
+  {
+    "id": "suduch-9cb5f771",
+    "name": "סודוך תל אביב הירקון",
+    "type": "fast_food",
+    "cityId": "תל אביב",
+    "address": "הירקון 121, תל אביב",
+    "location": {
+      "latitude": 32.0891,
+      "longitude": 34.771
+    },
+    "openingHours": "לפי תנאי מזג האוויר",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "טוסט",
+      "נקניק",
+      "מזון מהיר"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23",
+    "phone": "077-2195219",
+    "website": "https://suduch.co.il"
+  },
+  {
+    "id": "suduch-2a954c72",
+    "name": "סודוך גבעתיים",
+    "type": "fast_food",
+    "cityId": "גבעתיים",
+    "address": "דרך השלום 51, גבעתיים",
+    "location": {
+      "latitude": 32.0699,
+      "longitude": 34.8078
+    },
+    "openingHours": "א'-ד' 09:00-04:00 | ה' 09:00-05:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "טוסט",
+      "נקניק",
+      "מזון מהיר"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23",
+    "phone": "03-6096638",
+    "website": "https://suduch.co.il"
+  },
+  {
+    "id": "suduch-10a9d204",
+    "name": "סודוך חולון",
+    "type": "fast_food",
+    "cityId": "חולון",
+    "address": "סוקולוב 60, חולון",
+    "location": {
+      "latitude": 32.0186,
+      "longitude": 34.7656
+    },
+    "openingHours": "א'-ד' 09:00-04:00 | ה' 09:00-05:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "טוסט",
+      "נקניק",
+      "מזון מהיר"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23",
+    "phone": "03-6096638",
+    "website": "https://suduch.co.il"
+  },
+  {
+    "id": "suduch-900564c2",
+    "name": "סודוך פתח תקווה חיים עוזר",
+    "type": "fast_food",
+    "cityId": "פתח תקווה",
+    "address": "חיים עוזר 15, פתח תקווה",
+    "location": {
+      "latitude": 32.08,
+      "longitude": 34.8805
+    },
+    "openingHours": "א'-ד' 09:00-04:00 | ה' 09:00-05:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "טוסט",
+      "נקניק",
+      "מזון מהיר"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23",
+    "phone": "03-6096638",
+    "website": "https://suduch.co.il"
+  },
+  {
+    "id": "suduch-6492046f",
+    "name": "סודוך חיפה",
+    "type": "fast_food",
+    "cityId": "חיפה",
+    "address": "שד' הנשיא 133, חיפה",
+    "location": {
+      "latitude": 32.8182,
+      "longitude": 34.9926
+    },
+    "openingHours": "א'-ה' 09:00-04:30 | ו' לבדוק מול המסעדה | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "טוסט",
+      "נקניק",
+      "מזון מהיר"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23",
+    "phone": "03-6096638",
+    "website": "https://suduch.co.il"
+  },
+  {
+    "id": "suduch-507b6198",
+    "name": "סודוך ראשון לציון מערב",
+    "type": "fast_food",
+    "cityId": "ראשון לציון",
+    "address": "משה לוי 14, ראשון לציון",
+    "location": {
+      "latitude": 31.968,
+      "longitude": 34.8022
+    },
+    "openingHours": "א'-ה' 08:00-06:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "טוסט",
+      "נקניק",
+      "מזון מהיר"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23",
+    "phone": "077-5308200",
+    "website": "https://suduch.co.il"
+  },
+  {
+    "id": "suduch-ac25ec6c",
+    "name": "סודוך הוד השרון",
+    "type": "fast_food",
+    "cityId": "הוד השרון",
+    "address": "דרך רמתיים 63, הוד השרון",
+    "location": {
+      "latitude": 32.1457,
+      "longitude": 34.8952
+    },
+    "openingHours": "א'-ד' 09:00-04:00 | ה' 09:00-05:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "טוסט",
+      "נקניק",
+      "מזון מהיר"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23",
+    "phone": "03-6096638",
+    "website": "https://suduch.co.il"
+  },
+  {
+    "id": "suduch-1f370d54",
+    "name": "סודוך ראשון לציון מזרח",
+    "type": "fast_food",
+    "cityId": "ראשון לציון",
+    "address": "המכבים 22, ראשון לציון",
+    "location": {
+      "latitude": 31.9814,
+      "longitude": 34.8294
+    },
+    "openingHours": "א'-ד' 09:00-04:00 | ה' 09:00-05:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "טוסט",
+      "נקניק",
+      "מזון מהיר"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23",
+    "phone": "03-6096638",
+    "website": "https://suduch.co.il"
+  },
+  {
+    "id": "suduch-8e103318",
+    "name": "סודוך נתניה",
+    "type": "fast_food",
+    "cityId": "נתניה",
+    "address": "גיבורי ישראל 5, נתניה",
+    "location": {
+      "latitude": 32.3312,
+      "longitude": 34.8598
+    },
+    "openingHours": "א'-ד' 09:00-04:00 | ה' 09:00-05:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "טוסט",
+      "נקניק",
+      "מזון מהיר"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23",
+    "phone": "03-6096638",
+    "website": "https://suduch.co.il"
+  },
+  {
+    "id": "suduch-90343fa7",
+    "name": "סודוך אור יהודה",
+    "type": "fast_food",
+    "cityId": "אור יהודה",
+    "address": "יהדות קנדה 12, אור יהודה",
+    "location": {
+      "latitude": 32.027,
+      "longitude": 34.8598
+    },
+    "openingHours": "א'-ד' 09:00-03:00 | ה' 09:00-04:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "טוסט",
+      "נקניק",
+      "מזון מהיר"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23",
+    "phone": "03-6096638",
+    "website": "https://suduch.co.il"
+  },
+  {
+    "id": "suduch-7614b7c5",
+    "name": "סודוך ראש העין",
+    "type": "fast_food",
+    "cityId": "ראש העין",
+    "address": "הרב שלום שבזי 58, ראש העין",
+    "location": {
+      "latitude": 32.0956,
+      "longitude": 34.9574
+    },
+    "openingHours": "א'-ד' 09:00-04:00 | ה' 09:00-05:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "טוסט",
+      "נקניק",
+      "מזון מהיר"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23",
+    "phone": "03-6096638",
+    "website": "https://suduch.co.il"
+  },
+  {
+    "id": "manual-aroma-beit-shemesh-big",
+    "name": "ארומה ביג בית שמש",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "יגאל אלון 1, ביג בית שמש",
+    "cityId": "בית שמש",
+    "location": {
+      "latitude": 31.743,
+      "longitude": 34.993
+    },
+    "phone": "02-9921674",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 07:00-21:00, ו׳ 07:00-14:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-hadassah",
+    "name": "ארומה הדסה עין כרם",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "ביה\"ח הדסה עין כרם",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.773,
+      "longitude": 35.134
+    },
+    "phone": "051-2878566",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 06:00-20:00, ו׳ 06:00-13:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-shaare-zedek",
+    "name": "ארומה שערי צדק",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "שמואל בייט 12, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.781,
+      "longitude": 35.193
+    },
+    "phone": "02-6639000",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 06:30-21:00, ו׳ 06:30-13:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-beit-hadfus",
+    "name": "ארומה בית הדפוס ירושלים",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "בית הדפוס 12, גבעת שאול, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.789,
+      "longitude": 35.182
+    },
+    "phone": "02-5326681",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 06:00-18:30, ו׳ 06:00-12:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-yafo-jerusalem",
+    "name": "ארומה יפו ירושלים",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "יפו 42, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.784,
+      "longitude": 35.212
+    },
+    "phone": "02-6241102",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 07:00-19:30, ו׳ 07:00-14:30, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-modiin-moriya",
+    "name": "ארומה מוריה סנטר מודיעין",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "לאה אימנו 1, מודיעין",
+    "cityId": "מודיעין",
+    "location": {
+      "latitude": 31.91,
+      "longitude": 35.007
+    },
+    "phone": "08-8687070",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 07:00-21:00, ו׳ 07:00-14:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-mahane-yehuda",
+    "name": "ארומה שוק מחנה יהודה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "שוק מחנה יהודה, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.785,
+      "longitude": 35.212
+    },
+    "phone": "02-6222833",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 06:30-19:00, ו׳ 06:30-15:30, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-eilat-big",
+    "name": "ארומה ביג אילת",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "הסתת 20, מרכז ביג, אילת",
+    "cityId": "אילת",
+    "location": {
+      "latitude": 29.5567,
+      "longitude": 34.951
+    },
+    "phone": "08-6318445",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 08:30-20:30, ו׳ 08:30-14:00, שבת 21:00-22:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-gedera-big",
+    "name": "ארומה ביג גדרה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "שד׳ בן גוריון 105, ביג גדרה",
+    "cityId": "גדרה",
+    "location": {
+      "latitude": 31.811,
+      "longitude": 34.776
+    },
+    "phone": "08-6239915",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 07:30-22:00, ו׳ 07:30-14:30, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-kastina-big",
+    "name": "ארומה ביג קסטינה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "ביג קסטינה, צומת קסטינה, באר טוביה",
+    "cityId": "באר טוביה",
+    "location": {
+      "latitude": 31.758,
+      "longitude": 34.729
+    },
+    "phone": "08-8504404",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 06:30-22:15, ו׳ 06:30-15:00, שבת 20:45-22:15",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-dimona",
+    "name": "ארומה דימונה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "פרץ סנטר, דימונה",
+    "cityId": "דימונה",
+    "location": {
+      "latitude": 31.069,
+      "longitude": 35.033
+    },
+    "phone": "08-6571447",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 07:00-22:00, ו׳ 07:00-14:00, שבת 21:00-23:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-eilat-laguna",
+    "name": "ארומה לגונה אילת",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "אנטיב 8, מלכת שבא, אילת",
+    "cityId": "אילת",
+    "location": {
+      "latitude": 29.548,
+      "longitude": 34.952
+    },
+    "phone": "08-6888422",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 07:00-22:00, ו׳ 07:00-14:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-netivot",
+    "name": "ארומה נתיבות",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "בעלי המלאכה 2, נתיבות",
+    "cityId": "נתיבות",
+    "location": {
+      "latitude": 31.424,
+      "longitude": 34.587
+    },
+    "phone": "08-9162522",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 07:00-22:00, ו׳ 07:00-13:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-gan-yavne",
+    "name": "ארומה קניון גן יבנה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "המגינים 56, גן יבנה",
+    "cityId": "גן יבנה",
+    "location": {
+      "latitude": 31.793,
+      "longitude": 34.711
+    },
+    "phone": "08-9230700",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 07:00-22:00, ו׳ 07:00-14:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-ashkelon-silver",
+    "name": "ארומה שער סילבר אשקלון",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "פאואר סנטר סילבר, אשקלון",
+    "cityId": "אשקלון",
+    "location": {
+      "latitude": 31.658,
+      "longitude": 34.577
+    },
+    "phone": "08-6751675",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 06:15-21:00, ו׳ 06:15-14:30, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-nahariya-star",
+    "name": "ארומה קניון סטאר נהריה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "שד׳ בן צבי 1, קניון סטאר, נהריה",
+    "cityId": "נהריה",
+    "location": {
+      "latitude": 33.005,
+      "longitude": 35.097
+    },
+    "phone": "04-6001180",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 09:00-21:30, ו׳ 09:00-14:30, שבת 21:15-22:45",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-kiryat-ata",
+    "name": "ארומה קניון תימורה קרית אתא",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "העצמאות 37, קרית אתא",
+    "cityId": "קריית אתא",
+    "location": {
+      "latitude": 32.808,
+      "longitude": 35.103
+    },
+    "phone": "04-6215016",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 07:30-21:30, ו׳ 07:30-14:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-kiryat-yam",
+    "name": "ארומה קרית ים",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "שדרות ירושלים 99, קרית ים",
+    "cityId": "קריית ים",
+    "location": {
+      "latitude": 32.854,
+      "longitude": 35.068
+    },
+    "phone": "04-6122862",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 07:30-22:30, ו׳ 07:30-15:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-safra-hospital",
+    "name": "ארומה בי\"ח ספרא ילדים",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "ביה\"ח לילדים ספרא, תל השומר",
+    "cityId": "תל השומר",
+    "location": {
+      "latitude": 32.048,
+      "longitude": 34.836
+    },
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 06:30-20:00, ו׳ 06:30-14:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-natbag-arrivals",
+    "name": "ארומה נתב\"ג אולם נחיתות",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "אולם מקבלי הפנים, נתב\"ג",
+    "cityId": "לוד",
+    "location": {
+      "latitude": 32.0004,
+      "longitude": 34.8706
+    },
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "24 שעות (חוץ מאוחר בשישי-מוצ\"ש)",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-bat-yam-big",
+    "name": "ארומה ביג פאשן בת ים",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "יוספטל 92, בת ים",
+    "cityId": "בת ים",
+    "location": {
+      "latitude": 32.018,
+      "longitude": 34.75
+    },
+    "phone": "03-5562002",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 07:00-21:00, ו׳ 07:00-14:30, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-bnei-brak-basar2",
+    "name": "ארומה מגדל בסר 2 בני ברק",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "בן גוריון 1, מגדל בסר 2, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.084,
+      "longitude": 34.834
+    },
+    "phone": "03-6967200",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 06:30-19:00, ו׳ 06:30-13:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-assuta-ramat-hahayyal",
+    "name": "ארומה אסותא רמת החייל",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "הברזל 12, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.113,
+      "longitude": 34.835
+    },
+    "phone": "03-6155435",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 06:30-20:00, ו׳ 06:30-13:30, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-jerusalem-arena",
+    "name": "ארומה היכל הספורט ארנה ירושלים",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "דרך דוד בנבנישתי 1, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.748,
+      "longitude": 35.204
+    },
+    "phone": "02-5020320",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "צהר",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:00-21:00, ו׳ 07:00-14:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-haifa-lev-hamifratz",
+    "name": "ארומה לב המפרץ סינמול",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "ההסתדרות 55, צ׳ק פוסט, חיפה",
+    "cityId": "חיפה",
+    "location": {
+      "latitude": 32.819,
+      "longitude": 34.989
+    },
+    "phone": "04-6181194",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "צהר",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:30-20:30, ו׳ 07:30-13:30, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-bat-yam-rothschild",
+    "name": "ארומה רוטשילד בת ים",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "רוטשילד 29, בת ים",
+    "cityId": "בת ים",
+    "location": {
+      "latitude": 32.023,
+      "longitude": 34.751
+    },
+    "phone": "03-6593550",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "צהר",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:00-19:30, ו׳ 07:00-14:30, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-bilu-center",
+    "name": "ארומה ביל\"ו סנטר",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "קניון ביל\"ו סנטר, קרית עקרון",
+    "cityId": "קריית עקרון",
+    "location": {
+      "latitude": 31.868,
+      "longitude": 34.813
+    },
+    "phone": "08-9457569",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "צהר",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:00-21:00, ו׳ 07:00-14:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-hebrew-uni-givat-ram",
+    "name": "ארומה האוניברסיטה העברית גבעת רם",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "פרופסור רקח 1, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.771,
+      "longitude": 35.196
+    },
+    "phone": "050-7279094",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 08:00-16:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-maaleh-adumim",
+    "name": "ארומה מעלה אדומים",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "דרך קדם 5, מעלה אדומים",
+    "cityId": "מעלה אדומים",
+    "location": {
+      "latitude": 31.777,
+      "longitude": 35.299
+    },
+    "phone": "02-5352670",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:00-21:00, ו׳ 07:00-14:00, שבת 21:00-22:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-modiin-azrieli",
+    "name": "ארומה עזריאלי מודיעין",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "קניון עזריאלי, מודיעין",
+    "cityId": "מודיעין",
+    "location": {
+      "latitude": 31.904,
+      "longitude": 35.01
+    },
+    "phone": "08-9265510",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:00-22:00, ו׳ 07:00-15:00, שבת 19:30-22:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-emek-refaim",
+    "name": "ארומה עמק רפאים ירושלים",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "עמק רפאים 43, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.764,
+      "longitude": 35.22
+    },
+    "phone": "02-5617236",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 06:00-22:30, ו׳ 06:00-14:30, שבת 17:45-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-hadar-jerusalem",
+    "name": "ארומה קניון הדר ירושלים",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "גנרל פייר קניג 26, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.783,
+      "longitude": 35.21
+    },
+    "phone": "02-6712228",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:45-21:00, ו׳ 07:45-14:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-malha-jerusalem",
+    "name": "ארומה קניון מלחה ירושלים",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "קניון מלחה, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.747,
+      "longitude": 35.187
+    },
+    "phone": "02-6799154",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 08:15-20:00, ו׳ 08:15-13:30, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-mamilla",
+    "name": "ארומה שדרות ממילא ירושלים",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "שדרות ממילא, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.778,
+      "longitude": 35.226
+    },
+    "phone": "02-6241367",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ד׳ 07:30-22:30, ה׳ 07:30-23:00, ו׳ 07:30-15:30, שבת 20:30-23:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-talpiot-hatasia",
+    "name": "ארומה תלפיות התעשיה ירושלים",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "התעשיה 6, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.75,
+      "longitude": 35.228
+    },
+    "phone": "02-5353160",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:00-17:00, ו׳ 07:00-13:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-bgu-library",
+    "name": "ארומה אוניברסיטת בן גוריון ספריה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "אוניברסיטת בן גוריון, ספריה, באר שבע",
+    "cityId": "באר שבע",
+    "location": {
+      "latitude": 31.262,
+      "longitude": 34.801
+    },
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:30-19:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-bgu-kiosk",
+    "name": "ארומה אוניברסיטת בן גוריון קיוסק",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "קפיטריה בניין 56, אוניברסיטת בן גוריון, באר שבע",
+    "cityId": "באר שבע",
+    "location": {
+      "latitude": 31.262,
+      "longitude": 34.801
+    },
+    "phone": "08-6149780",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:00-18:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-bgu-main",
+    "name": "ארומה אוניברסיטת בן גוריון ראשי",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "בניין דילר 74, אוניברסיטת בן גוריון, באר שבע",
+    "cityId": "באר שבע",
+    "location": {
+      "latitude": 31.262,
+      "longitude": 34.801
+    },
+    "phone": "08-6209344",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:30-19:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-bs-grand",
+    "name": "ארומה גרנד קניון באר שבע",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "שדרות דוד טוביהו 125, באר שבע",
+    "cityId": "באר שבע",
+    "location": {
+      "latitude": 31.253,
+      "longitude": 34.785
+    },
+    "phone": "08-6444800",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 08:45-21:00, ו׳ 08:00-14:00, שבת 18:30-22:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-kfar-aza",
+    "name": "ארומה כפר עזה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "צומת כפר עזה",
+    "cityId": "כפר עזה",
+    "location": {
+      "latitude": 31.494,
+      "longitude": 34.536
+    },
+    "phone": "08-6212330",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 08:00-20:00, ו׳ 08:00-13:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-ashdod-star",
+    "name": "ארומה סטאר סנטר אשדוד",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "וויצמן פינת בן גוריון, אשדוד",
+    "cityId": "אשדוד",
+    "location": {
+      "latitude": 31.804,
+      "longitude": 34.655
+    },
+    "phone": "08-8568160",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 05:00-23:00, ו׳ 05:00-14:00, שבת 20:30-00:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-arad",
+    "name": "ארומה ערד",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "שמיר 11, צים סנטר, ערד",
+    "cityId": "ערד",
+    "location": {
+      "latitude": 31.258,
+      "longitude": 35.211
+    },
+    "phone": "08-6738313",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:00-21:00, ו׳ 07:00-15:00, שבת 20:30-22:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-tzomset-urim",
+    "name": "ארומה צומת אורים",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "דור אלון, צומת אורים",
+    "cityId": "צומת אורים",
+    "location": {
+      "latitude": 31.32,
+      "longitude": 34.51
+    },
+    "phone": "08-6224047",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 08:00-19:30, ו׳ 08:00-13:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-ashkelon-giron",
+    "name": "ארומה קניון גירון אשקלון",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "שד׳ בן גוריון 21, אשקלון",
+    "cityId": "אשקלון",
+    "location": {
+      "latitude": 31.669,
+      "longitude": 34.571
+    },
+    "phone": "08-6734142",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 08:00-20:30, ו׳ 08:00-14:00, שבת 20:30-21:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-bs-negev",
+    "name": "ארומה קניון הנגב באר שבע",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "קניון הנגב, צומת אלי כהן, באר שבע",
+    "cityId": "באר שבע",
+    "location": {
+      "latitude": 31.248,
+      "longitude": 34.796
+    },
+    "phone": "08-6650016",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 08:30-20:00, ו׳ 08:30-13:30, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-ashdod-simol",
+    "name": "ארומה קניון סימול אשדוד",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "הגדוד העברי 6, אשדוד",
+    "cityId": "אשדוד",
+    "location": {
+      "latitude": 31.804,
+      "longitude": 34.655
+    },
+    "phone": "08-6432185",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 08:00-21:00, ו׳ 08:00-14:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-kiryat-gat",
+    "name": "ארומה קרית גת",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "כיכר פז 3, קניון לב העיר, קרית גת",
+    "cityId": "קריית גת",
+    "location": {
+      "latitude": 31.61,
+      "longitude": 34.764
+    },
+    "phone": "08-6814455",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:30-21:00, ו׳ 07:30-13:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-bs-gov-quarter",
+    "name": "ארומה קרית הממשלה באר שבע",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "התקווה 4, קניון קרית הממשלה, באר שבע",
+    "cityId": "באר שבע",
+    "location": {
+      "latitude": 31.243,
+      "longitude": 34.798
+    },
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 08:00-19:00, ו׳ 08:00-13:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-bs-reger",
+    "name": "ארומה רגר באר שבע",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "שד׳ יצחק רגר 57, באר שבע",
+    "cityId": "באר שבע",
+    "location": {
+      "latitude": 31.253,
+      "longitude": 34.801
+    },
+    "phone": "08-6897095",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:30-20:00, ו׳ 07:30-13:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-bs-tet",
+    "name": "ארומה שכונה ט׳ באר שבע",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "שדרות ירושלים 4, מתחם תחנת דלק פז, באר שבע",
+    "cityId": "באר שבע",
+    "location": {
+      "latitude": 31.244,
+      "longitude": 34.81
+    },
+    "phone": "08-6104002",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:00-22:30, ו׳ 07:00-13:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-bs-central-station",
+    "name": "ארומה תחנה מרכזית באר שבע",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "בן צבי 4, באר שבע",
+    "cityId": "באר שבע",
+    "location": {
+      "latitude": 31.243,
+      "longitude": 34.798
+    },
+    "phone": "08-6861200",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:00-19:30, ו׳ 07:00-12:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-migdal-haemek-big",
+    "name": "ארומה ביג מגדל העמק",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "דרך העמק 1, מגדל העמק",
+    "cityId": "מגדל העמק",
+    "location": {
+      "latitude": 32.675,
+      "longitude": 35.24
+    },
+    "phone": "04-6602911",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 06:30-22:00, ו׳ 06:30-14:00, שבת 21:00-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-pardes-hana-big",
+    "name": "ארומה ביג פרדס חנה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "תדהר 1, מרכז ביג, פרדס חנה",
+    "cityId": "פרדס חנה",
+    "location": {
+      "latitude": 32.472,
+      "longitude": 34.969
+    },
+    "phone": "04-6724112",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:00-21:00, ו׳ 07:00-15:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-beit-shean",
+    "name": "ארומה בית שאן",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "העמל 7, צים סנטר, בית שאן",
+    "cityId": "בית שאן",
+    "location": {
+      "latitude": 32.501,
+      "longitude": 35.498
+    },
+    "phone": "04-6077777",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:30-21:00, ו׳ 07:30-14:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-tiberias-bazalt",
+    "name": "ארומה טבריה בזלת",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "יהודה הלוי 4, מתחם בית בזלת, טבריה",
+    "cityId": "טבריה",
+    "location": {
+      "latitude": 32.795,
+      "longitude": 35.534
+    },
+    "phone": "04-8555555",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:00-22:00, ו׳ 07:00-13:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-maalot",
+    "name": "ארומה מעלות",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "שלמה שרירא 12, מרכז צים, מעלות",
+    "cityId": "מעלות",
+    "location": {
+      "latitude": 33.015,
+      "longitude": 35.273
+    },
+    "phone": "04-6265808",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 08:00-20:30, ו׳ 08:00-13:30, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-or-akiva-nofyam",
+    "name": "ארומה נוף ים אור עקיבא",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "השיקמים 8, אור עקיבא",
+    "cityId": "אור עקיבא",
+    "location": {
+      "latitude": 32.504,
+      "longitude": 34.919
+    },
+    "phone": "04-6033100",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:00-21:00, ו׳ 07:00-14:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-afula-bashdara",
+    "name": "ארומה עפולה בשדרה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "יהושע חנקין 49, עפולה",
+    "cityId": "עפולה",
+    "location": {
+      "latitude": 32.607,
+      "longitude": 35.288
+    },
+    "phone": "04-6896050",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:00-22:00, ו׳ 07:00-14:00, שבת 20:45-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-tirat-carmel",
+    "name": "ארומה פז טירת כרמל",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "הרצל 82, טירת כרמל",
+    "cityId": "טירת כרמל",
+    "location": {
+      "latitude": 32.764,
+      "longitude": 34.972
+    },
+    "phone": "04-6167546",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 06:30-22:00, ו׳ 06:30-15:00, שבת 21:00-23:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-or-akiva-orot",
+    "name": "ארומה קניון אורות אור עקיבא",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "הנשיא 1, אור עקיבא",
+    "cityId": "אור עקיבא",
+    "location": {
+      "latitude": 32.504,
+      "longitude": 34.919
+    },
+    "phone": "04-6261717",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:00-21:00, ו׳ 07:00-14:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-hadera-shaarei",
+    "name": "ארומה שערי חדרה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "יהודי פקיעין 1, חדרה",
+    "cityId": "חדרה",
+    "location": {
+      "latitude": 32.434,
+      "longitude": 34.918
+    },
+    "phone": "04-6221333",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:00-22:00, ו׳ 07:00-15:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-ramat-gan-ayalon",
+    "name": "ארומה קניון איילון",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "אבא הלל סילבר 301, רמת גן",
+    "cityId": "רמת גן",
+    "location": {
+      "latitude": 32.082,
+      "longitude": 34.814
+    },
+    "phone": "052-2096195",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 08:00-22:00, ו׳ 08:00-15:30, שבת 20:00-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-pt-big-avnat",
+    "name": "ארומה אבנת הקניון הגדול פ\"ת",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "ז׳בוטינסקי 72, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.084,
+      "longitude": 34.892
+    },
+    "phone": "03-9192270",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 08:30-21:00, ו׳ 08:30-13:30, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-bar-ilan",
+    "name": "ארומה אוניברסיטת בר אילן",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "אורנים 1, מרכז מסחרי רמת אילן, גבעת שמואל",
+    "cityId": "גבעת שמואל",
+    "location": {
+      "latitude": 32.07,
+      "longitude": 34.848
+    },
+    "phone": "055-6882299",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:00-21:00, ו׳ 07:00-13:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-pt-em-hamoshavot",
+    "name": "ארומה אם המושבות פ\"ת",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "ראשון לציון 1, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.084,
+      "longitude": 34.887
+    },
+    "phone": "03-9191791",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:00-21:00, ו׳ 07:00-14:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-ramat-gan-bursa",
+    "name": "ארומה בורסה מגדל משה אביב",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "ז׳בוטינסקי 7, רמת גן",
+    "cityId": "רמת גן",
+    "location": {
+      "latitude": 32.082,
+      "longitude": 34.814
+    },
+    "phone": "03-6114000",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 06:30-19:00, שישי וסגור בשבת",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-tel-hashomer-hospital",
+    "name": "ארומה בי\"ח תל השומר",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "קניון גימיון, ביה\"ח תל השומר, רמת גן",
+    "cityId": "רמת גן",
+    "location": {
+      "latitude": 32.048,
+      "longitude": 34.836
+    },
+    "phone": "03-7362220",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 06:00-22:00, ו׳ 06:00-15:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-pt-global-towers",
+    "name": "ארומה גלובל טאוורס פ\"ת",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "יצחק רבין 1, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.084,
+      "longitude": 34.887
+    },
+    "phone": "03-5186376",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:00-18:00, ו׳ 08:00-12:30, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-ramat-hasharon-big",
+    "name": "ארומה ביג גלילות",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "ביג פאשן גלילות, רמת השרון",
+    "cityId": "רמת השרון",
+    "location": {
+      "latitude": 32.151,
+      "longitude": 34.834
+    },
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 08:30-21:00, ו׳ 08:30-15:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-hod-hasharon-mix",
+    "name": "ארומה מתחם מיקס שרונים הוד השרון",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "הרקון 2, הוד השרון",
+    "cityId": "הוד השרון",
+    "location": {
+      "latitude": 32.1488,
+      "longitude": 34.8956
+    },
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 09:00-20:00, ו׳ 09:00-14:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-kfar-saba-g",
+    "name": "ארומה מתחם G כפר סבא",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "ויצמן 207, כפר סבא",
+    "cityId": "כפר סבא",
+    "location": {
+      "latitude": 32.175,
+      "longitude": 34.913
+    },
+    "phone": "09-7680094",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 06:45-22:00, ו׳ 06:45-15:00, שבת 20:45-22:45",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-or-yehuda-azrieli",
+    "name": "ארומה עזריאלי אאוטלט אור יהודה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "אליהו סעדון 120, קניון עזריאלי אאוטלט, אור יהודה",
+    "cityId": "אור יהודה",
+    "location": {
+      "latitude": 32.028,
+      "longitude": 34.896
+    },
+    "phone": "03-5333991",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:30-21:00, ו׳ 08:00-14:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-givat-shmuel-paz",
+    "name": "ארומה פז אורלי גבעת שמואל",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "שפינדל יונה 1, גבעת שמואל",
+    "cityId": "גבעת שמואל",
+    "location": {
+      "latitude": 32.076,
+      "longitude": 34.848
+    },
+    "phone": "03-5368640",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 06:00-21:00, ו׳ 06:00-14:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-tzomset-ruppin",
+    "name": "ארומה צומת רופין",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "תחנת דלק פז, צומת רופין",
+    "cityId": "צומת רופין",
+    "location": {
+      "latitude": 32.344,
+      "longitude": 34.912
+    },
+    "phone": "09-8987374",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 06:15-22:00, ו׳ 06:15-15:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-givatayim",
+    "name": "ארומה קניון גבעתיים",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "דרך יצחק רבין 53, גבעתיים",
+    "cityId": "גבעתיים",
+    "location": {
+      "latitude": 32.068,
+      "longitude": 34.809
+    },
+    "phone": "03-5722800",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:15-21:30, ו׳ 07:15-15:30, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-netanya-sharon",
+    "name": "ארומה קניון השרון נתניה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "הרצל 60, נתניה",
+    "cityId": "נתניה",
+    "location": {
+      "latitude": 32.304,
+      "longitude": 34.861
+    },
+    "phone": "09-8870906",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:00-21:00, ו׳ 07:00-14:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-netanya-naeimi",
+    "name": "ארומה קניון נעימי נתניה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "שדרות טום לנטוס 60, נתניה",
+    "cityId": "נתניה",
+    "location": {
+      "latitude": 32.295,
+      "longitude": 34.861
+    },
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:00-21:00, ו׳ 07:00-13:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-yehud",
+    "name": "ארומה קניון סביונים יהוד",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "דרך משה דיין 3, יהוד",
+    "cityId": "יהוד",
+    "location": {
+      "latitude": 32.034,
+      "longitude": 34.89
+    },
+    "phone": "03-9343777",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:30-21:30, ו׳ 07:30-14:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-netanya-ir-yamim",
+    "name": "ארומה קניון עיר ימים נתניה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "בני ברמן 2, נתניה",
+    "cityId": "נתניה",
+    "location": {
+      "latitude": 32.326,
+      "longitude": 34.853
+    },
+    "phone": "09-8326950",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 08:30-21:30, ו׳ 08:30-14:30, שבת 20:15-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-kiryat-ono",
+    "name": "ארומה קניון קרית אונו",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "המלך שלמה 37, קרית אונו",
+    "cityId": "קריית אונו",
+    "location": {
+      "latitude": 32.059,
+      "longitude": 34.856
+    },
+    "phone": "03-6093907",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:30-21:00, ו׳ 07:30-14:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-raanana-rananeem",
+    "name": "ארומה קניון רננים רעננה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "המלאכה 2, רעננה",
+    "cityId": "רעננה",
+    "location": {
+      "latitude": 32.184,
+      "longitude": 34.871
+    },
+    "phone": "09-7415445",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 08:30-21:30, ו׳ 08:00-14:30, שבת 21:00-22:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-herzliya-kiosk",
+    "name": "ארומה שדרות חן הרצליה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "בילינסון 2, הרצליה",
+    "cityId": "הרצליה",
+    "location": {
+      "latitude": 32.164,
+      "longitude": 34.844
+    },
+    "phone": "09-7660028",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:00-20:00, ו׳ 07:00-14:30, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-assaf-harofe",
+    "name": "ארומה בי\"ח אסף הרופא",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "ביה\"ח אסף הרופא, רמלה",
+    "cityId": "רמלה",
+    "location": {
+      "latitude": 31.912,
+      "longitude": 34.869
+    },
+    "phone": "08-9243091",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 06:30-21:00, ו׳ 06:30-13:30, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-rl-court",
+    "name": "ארומה בית המשפט ראשון לציון",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "ישראל גלילי 5, ראשון לציון",
+    "cityId": "ראשון לציון",
+    "location": {
+      "latitude": 31.964,
+      "longitude": 34.801
+    },
+    "phone": "03-9414883",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:00-18:30, ו׳ 07:30-13:30, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-rehovot-mix",
+    "name": "ארומה מיקס רחובות",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "דרך הים 1, רחובות",
+    "cityId": "רחובות",
+    "location": {
+      "latitude": 31.895,
+      "longitude": 34.817
+    },
+    "phone": "08-9477056",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:30-21:30, ו׳ 07:30-14:30, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-nes-ziona",
+    "name": "ארומה נס ציונה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "הפטיש 6, ישפרו סנטר, נס ציונה",
+    "cityId": "נס ציונה",
+    "location": {
+      "latitude": 31.927,
+      "longitude": 34.798
+    },
+    "phone": "08-9408441",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:00-20:00, ו׳ 07:00-13:30, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-ramla-azrieli",
+    "name": "ארומה עזריאלי רמלה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "שדרות דוד רזיאל 1, רמלה",
+    "cityId": "רמלה",
+    "location": {
+      "latitude": 31.931,
+      "longitude": 34.868
+    },
+    "phone": "08-6580951",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 08:00-22:00, ו׳ 08:00-15:00, שבת 20:15-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-beer-yaakov",
+    "name": "ארומה קניון באר יעקב",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "שא נס 17, באר יעקב",
+    "cityId": "באר יעקב",
+    "location": {
+      "latitude": 31.941,
+      "longitude": 34.83
+    },
+    "phone": "053-3788871",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:30-20:30, ו׳ 07:30-13:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-rl-zahav",
+    "name": "ארומה קניון הזהב ראשון לציון",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "סחרוב 21, האגף החדש, ראשון לציון",
+    "cityId": "ראשון לציון",
+    "location": {
+      "latitude": 31.979,
+      "longitude": 34.792
+    },
+    "phone": "054-3333693",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 08:00-22:00, ו׳ 08:00-16:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-rehovot-kanyon",
+    "name": "ארומה קניון רחובות",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "ביל\"ו 2, רחובות",
+    "cityId": "רחובות",
+    "location": {
+      "latitude": 31.895,
+      "longitude": 34.817
+    },
+    "phone": "08-9494102",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 08:30-21:30, ו׳ 08:30-15:00, שבת 20:30-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-rl-shaar-rishon",
+    "name": "ארומה שער ראשון ראשון לציון",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "גולדה מאיר 1 פינת ההסתדרות 6, ראשון לציון",
+    "cityId": "ראשון לציון",
+    "location": {
+      "latitude": 31.964,
+      "longitude": 34.801
+    },
+    "phone": "03-9522613",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:30-19:30, ו׳ 07:30-14:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-tlv-weizmann-ichilov",
+    "name": "ארומה ויצמן סיטי איכילוב",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "ויצמן 14, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.088,
+      "longitude": 34.785
+    },
+    "phone": "050-5998090",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 06:30-21:00, ו׳ 06:30-14:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-tlv-tlv-mall",
+    "name": "ארומה קניון TLV",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "החשמונאים 96, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.068,
+      "longitude": 34.79
+    },
+    "phone": "03-7750775",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 08:00-21:30, ו׳ 08:00-15:30, שבת 20:30-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-tlv-beit-anu",
+    "name": "ארומה מוזיאון אנו אוניברסיטת ת\"א",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "קלאוזנר 15, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.113,
+      "longitude": 34.804
+    },
+    "phone": "03-6437774",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:00-19:00, ו׳ 07:00-13:30, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-tlv-begin",
+    "name": "ארומה מנחם בגין תל אביב",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "מנחם בגין 46, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.074,
+      "longitude": 34.791
+    },
+    "phone": "03-5099549",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 06:00-19:00, ו׳ 06:00-14:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-tlv-azrieli",
+    "name": "ארומה עזריאלי תל אביב",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "דרך מנחם בגין 132, קניון עזריאלי, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.074,
+      "longitude": 34.791
+    },
+    "phone": "03-5040970",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 08:30-21:00, ו׳ 08:30-13:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-tlv-atidim",
+    "name": "ארומה פארק עתידים תל אביב",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "דבורה הנביאה 121, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.113,
+      "longitude": 34.835
+    },
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 06:30-18:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-haifa-uni",
+    "name": "ארומה אוניברסיטת חיפה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "שדרות אבא חושי, בניין רבין קומה 6, חיפה",
+    "cityId": "חיפה",
+    "location": {
+      "latitude": 32.761,
+      "longitude": 35.017
+    },
+    "phone": "04-6228659",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 08:00-17:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-tiberias-big",
+    "name": "ארומה ביג פוריה טבריה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "מרכז ביג פוריה, טבריה",
+    "cityId": "טבריה",
+    "location": {
+      "latitude": 32.766,
+      "longitude": 35.539
+    },
+    "phone": "04-8555555",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:30-22:30, ו׳ 08:00-13:30, שבת 20:30-22:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-holon-mall",
+    "name": "ארומה קניון חולון",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "גולדה מאיר 7, חולון",
+    "cityId": "חולון",
+    "location": {
+      "latitude": 32.015,
+      "longitude": 34.776
+    },
+    "phone": "03-5176650",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:30-21:00, ו׳ 07:30-14:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-tlv-broshim",
+    "name": "ארומה ברושים תל אביב",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "ג׳ורג׳ וייז 20, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.111,
+      "longitude": 34.804
+    },
+    "phone": "03-5040603",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 06:30-20:00, ו׳ 06:30-13:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-tlv-karlibah",
+    "name": "ארומה קרליבך תל אביב",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "קרליבך 1, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.074,
+      "longitude": 34.786
+    },
+    "phone": "03-5705025",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 06:30-20:00, ו׳ 07:00-15:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-tlv-london-ministor",
+    "name": "ארומה לונדון מיניסטור תל אביב",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "שדרות שאול המלך 2, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.078,
+      "longitude": 34.791
+    },
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 07:00-21:00, ו׳ 07:00-14:30, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-tlv-alon-towers",
+    "name": "ארומה מגדלי אלון תל אביב",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "יגאל אלון 94, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.068,
+      "longitude": 34.79
+    },
+    "phone": "050-8424555",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 06:30-20:00, ו׳ 06:30-14:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-aroma-tlv-ramat-hahayyal",
+    "name": "ארומה רמת החייל תל אביב",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "הברזל 25, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.113,
+      "longitude": 34.835
+    },
+    "phone": "03-6489432",
+    "website": "https://www.aroma.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 06:30-18:00, ו׳ 07:00-14:00, שבת סגור",
     "source": "manual"
   }
 ]
