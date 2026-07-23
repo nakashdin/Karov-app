@@ -134893,5 +134893,1067 @@
     "kosherType": "regular",
     "openingHours": "א׳-ה׳ 09:00-23:00, ו׳ 08:00-16:00, שבת 21:00-00:00",
     "source": "manual"
+  },
+  {
+    "id": "manual-bk-ashdod",
+    "name": "ברגר קינג אשדוד",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "אורט 1, אשדוד",
+    "cityId": "אשדוד",
+    "location": {
+      "latitude": 31.804,
+      "longitude": 34.655
+    },
+    "phone": "08-613-2725",
+    "website": "https://www.burgerking.co.il",
+    "certifiedBy": "רבנות אשדוד",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 11:00-22:00, ו׳ 11:00-15:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-bk-herzliya",
+    "name": "ברגר קינג הרצליה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "משכית 22, הרצליה",
+    "cityId": "הרצליה",
+    "location": {
+      "latitude": 32.164,
+      "longitude": 34.844
+    },
+    "phone": "09-833-2922",
+    "website": "https://www.burgerking.co.il",
+    "certifiedBy": "רבנות הרצליה",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 11:00-21:30, ו׳ סגור, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-bk-hod-hasharon",
+    "name": "ברגר קינג הוד השרון",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "ז'בוטינסקי 3, הוד השרון",
+    "cityId": "הוד השרון",
+    "location": {
+      "latitude": 32.1488,
+      "longitude": 34.8956
+    },
+    "phone": "09-835-2355",
+    "website": "https://www.burgerking.co.il",
+    "certifiedBy": "רבנות הוד השרון",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 11:30-21:30, ו׳ 11:30-15:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-bk-hadera",
+    "name": "ברגר קינג חדרה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "תרנ\"א 20, חדרה",
+    "cityId": "חדרה",
+    "location": {
+      "latitude": 32.434,
+      "longitude": 34.918
+    },
+    "phone": "04-874-3406",
+    "website": "https://www.burgerking.co.il",
+    "certifiedBy": "רבנות חדרה",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 11:00-22:00, ו׳ 11:00-15:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-bk-yehud",
+    "name": "ברגר קינג יהוד",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "דרך העצמאות 42, יהוד",
+    "cityId": "יהוד",
+    "location": {
+      "latitude": 32.034,
+      "longitude": 34.89
+    },
+    "phone": "03-635-9567",
+    "website": "https://www.burgerking.co.il",
+    "certifiedBy": "רבנות יהוד",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 12:00-21:00, ו׳ סגור, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-bk-petah-tikva",
+    "name": "ברגר קינג פתח תקווה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "העצמאות 63, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.0889,
+      "longitude": 34.8873
+    },
+    "phone": "03-670-2943",
+    "website": "https://www.burgerking.co.il",
+    "certifiedBy": "רבנות פתח תקווה",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 11:30-22:00, ו׳ 11:00-15:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-bk-netanya",
+    "name": "ברגר קינג נתניה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "שד' טום לנטוס 60, נתניה",
+    "cityId": "נתניה",
+    "location": {
+      "latitude": 32.295,
+      "longitude": 34.861
+    },
+    "phone": "09-861-2524",
+    "website": "https://www.burgerking.co.il",
+    "certifiedBy": "רבנות נתניה",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 11:00-22:00, ו׳ 11:00-15:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-bk-raanana",
+    "name": "ברגר קינג רעננה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "המלאכה 2, רעננה",
+    "cityId": "רעננה",
+    "location": {
+      "latitude": 32.184,
+      "longitude": 34.871
+    },
+    "website": "https://www.burgerking.co.il",
+    "certifiedBy": "רבנות רעננה",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 11:00-22:00, ו׳ 11:00-15:00, מוצ\"ש שעה אחרי צאת שבת",
+    "source": "manual"
+  },
+  {
+    "id": "manual-bk-eilat",
+    "name": "ברגר קינג אילת",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "שדה התעופה רמון, אילת",
+    "cityId": "אילת",
+    "location": {
+      "latitude": 29.727,
+      "longitude": 35.001
+    },
+    "website": "https://www.burgerking.co.il",
+    "certifiedBy": "רבנות אילת",
+    "kosherType": "regular",
+    "openingHours": "פתוח לפי לוח טיסות",
+    "source": "manual"
+  },
+  {
+    "id": "manual-bk-holon",
+    "name": "ברגר קינג חולון",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "שד' לוי אשכול 30, חולון",
+    "cityId": "חולון",
+    "location": {
+      "latitude": 32.02,
+      "longitude": 34.776
+    },
+    "phone": "03-551-8854",
+    "website": "https://www.burgerking.co.il",
+    "certifiedBy": "רבנות חולון",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 11:00-22:00, ו׳ 11:00-15:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-bk-tlv-azrieli",
+    "name": "ברגר קינג תל אביב עזריאלי",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "מנחם בגין 132, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.074,
+      "longitude": 34.791
+    },
+    "website": "https://www.burgerking.co.il",
+    "certifiedBy": "רבנות תל אביב",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 11:00-21:00, ו׳ 11:00-15:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-bk-ben-gurion",
+    "name": "ברגר קינג נתב\"ג",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "נמל התעופה בן גוריון, טרמינל 1",
+    "cityId": "לוד",
+    "location": {
+      "latitude": 32.0004,
+      "longitude": 34.8706
+    },
+    "website": "https://www.burgerking.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "פתוח לפי לוח טיסות",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-or-yehuda",
+    "name": "בורגר ראנץ' אור יהודה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "שדרות אליהו סעדון 120, אור יהודה",
+    "cityId": "אור יהודה",
+    "location": {
+      "latitude": 32.028,
+      "longitude": 34.896
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 11:00-21:30, ו׳ 11:00-16:00, מוצ\"ש חצי שעה מצאת שבת-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-or-akiva",
+    "name": "בורגר ראנץ' אור עקיבא",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "שדרות דויד המלך 42, אור עקיבא",
+    "cityId": "אור עקיבא",
+    "location": {
+      "latitude": 32.504,
+      "longitude": 34.919
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 10:30-22:00, ו׳ 10:30-14:00, שבת 19:30-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-eilat",
+    "name": "בורגר ראנץ' אילת",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "קניון הסלע האדום, אילת",
+    "cityId": "אילת",
+    "location": {
+      "latitude": 29.5567,
+      "longitude": 34.951
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 11:00-22:00, ו׳ סגור, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-ariel",
+    "name": "בורגר ראנץ' אריאל",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "הבנאי 2, קניון מגה אור, אריאל",
+    "cityId": "אריאל",
+    "location": {
+      "latitude": 32.107,
+      "longitude": 35.179
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 12:00-21:00, ו׳ 12:00-14:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-haifa-grand",
+    "name": "בורגר ראנץ' חיפה גרנד קניון",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "דרך שמחה גולן 54, חיפה",
+    "cityId": "חיפה",
+    "location": {
+      "latitude": 32.794,
+      "longitude": 34.989
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 10:30-22:00, ו׳ 10:30-15:00, שבת 19:30-22:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-harish",
+    "name": "בורגר ראנץ' חריש",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "דרך ארץ 39, מתחם אור בעיר, חריש",
+    "cityId": "חריש",
+    "location": {
+      "latitude": 32.454,
+      "longitude": 35.044
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 11:00-22:00, ו׳ 10:00-16:00, שבת 21:00-22:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-jerusalem-station",
+    "name": "בורגר ראנץ' ירושלים תחנה מרכזית",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "תחנה מרכזית, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.789,
+      "longitude": 35.202
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 11:00-22:00, ו׳ 11:00-15:00, מוצ\"ש 20:30-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-mevasseret",
+    "name": "בורגר ראנץ' מבשרת ציון",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "קניון הראל, מבשרת ציון",
+    "cityId": "מבשרת ציון",
+    "location": {
+      "latitude": 31.802,
+      "longitude": 35.148
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 11:00-21:00, ו׳ 11:00-13:45, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-modiin",
+    "name": "בורגר ראנץ' מודיעין",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "לב העיר 2, קניון עזריאלי מודיעין",
+    "cityId": "מודיעין",
+    "location": {
+      "latitude": 31.904,
+      "longitude": 35.01
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 11:00-22:00, ו׳ 11:00-15:00, מוצ\"ש 20:30-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-maaleh-adumim",
+    "name": "בורגר ראנץ' מעלה אדומים",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "קניון אדומים, מעלה אדומים",
+    "cityId": "מעלה אדומים",
+    "location": {
+      "latitude": 31.777,
+      "longitude": 35.299
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 11:00-21:30, ו׳ 11:00-13:45, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-netanya-poleg",
+    "name": "בורגר ראנץ' נתניה פולג",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "גיבורי ישראל 5, אזור תעשיה פולג, נתניה",
+    "cityId": "נתניה",
+    "location": {
+      "latitude": 32.334,
+      "longitude": 34.868
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 10:30-22:30, ו׳ 10:30-15:00, מוצ\"ש 20:50-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-pt-sirkin",
+    "name": "בורגר ראנץ' פתח תקווה קניון סירקין",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "קניון סירקין, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.098,
+      "longitude": 34.886
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 11:00-21:00, ו׳ 11:00-14:00, מוצ\"ש כשעה לאחר צאת שבת-22:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-kiryat-ono",
+    "name": "בורגר ראנץ' קריית אונו",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "קניון קריית אונו",
+    "cityId": "קריית אונו",
+    "location": {
+      "latitude": 32.059,
+      "longitude": 34.856
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 11:00-22:00, ו׳ 11:00-16:00, מוצ\"ש חצי שעה מצאת שבת-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-kiryat-shmona",
+    "name": "בורגר ראנץ' קריית שמונה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "קניון נחמיה, קריית שמונה",
+    "cityId": "קריית שמונה",
+    "location": {
+      "latitude": 33.207,
+      "longitude": 35.569
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 10:30-21:30, ו׳ 10:30-14:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-sderot",
+    "name": "בורגר ראנץ' שדרות",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "פרץ סנטר, שדרות",
+    "cityId": "שדרות",
+    "location": {
+      "latitude": 31.524,
+      "longitude": 34.597
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 11:00-22:00, ו׳ 11:00-15:00, מוצ\"ש כשעה מצאת שבת-22:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-givat-shmuel",
+    "name": "בורגר ראנץ' גבעת שמואל",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "יוני נתניהו 29, גבעת שמואל",
+    "cityId": "גבעת שמואל",
+    "location": {
+      "latitude": 32.076,
+      "longitude": 34.848
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "בד\"ץ",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 11:00-22:00, ו׳ 11:00-16:00, מוצ\"ש חצי שעה מצאת שבת-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-ramat-gan-marom",
+    "name": "בורגר ראנץ' רמת גן מרום נווה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "חיים לנדאו 7, קניון מרום נווה, רמת גן",
+    "cityId": "רמת גן",
+    "location": {
+      "latitude": 32.075,
+      "longitude": 34.824
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "בד\"ץ",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 11:00-21:30, ו׳ 11:00-16:00, מוצ\"ש חצי שעה מצאת שבת-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-ashdod",
+    "name": "בורגר ראנץ' אשדוד",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "מנחם בגין 1, אשדוד",
+    "cityId": "אשדוד",
+    "location": {
+      "latitude": 31.804,
+      "longitude": 34.655
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 11:00-22:00, ו׳ 11:00-14:00, מוצ\"ש 20:40-22:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-ashkelon",
+    "name": "בורגר ראנץ' אשקלון",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "צומת כפר סילבר, אשקלון",
+    "cityId": "אשקלון",
+    "location": {
+      "latitude": 31.669,
+      "longitude": 34.571
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 10:30-22:00, ו׳ 10:30-15:00, מוצ\"ש כשעה מצאת שבת-22:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-beer-yaakov",
+    "name": "בורגר ראנץ' באר יעקב",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "שדרות יצחק שמיר 22, באר יעקב",
+    "cityId": "באר יעקב",
+    "location": {
+      "latitude": 31.941,
+      "longitude": 34.83
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 11:00-22:00, ו׳ 11:00-15:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-bs-grand",
+    "name": "בורגר ראנץ' באר שבע גרנד קניון",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "גרנד קניון, באר שבע",
+    "cityId": "באר שבע",
+    "location": {
+      "latitude": 31.253,
+      "longitude": 34.785
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 11:00-22:00, ו׳ 11:00-15:30, מוצ\"ש חצי שעה מצאת שבת-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-bs-neve-zaav",
+    "name": "בורגר ראנץ' באר שבע נווה זאב",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "מרכז מסחרי נווה זאב, באר שבע",
+    "cityId": "באר שבע",
+    "location": {
+      "latitude": 31.24,
+      "longitude": 34.805
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 11:00-22:00, ו׳ 11:00-14:30, מוצ\"ש כשעה מצאת שבת-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-bs-negev",
+    "name": "בורגר ראנץ' באר שבע קניון הנגב",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "קניון הנגב, באר שבע",
+    "cityId": "באר שבע",
+    "location": {
+      "latitude": 31.248,
+      "longitude": 34.796
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 11:00-21:30, ו׳ 11:00-15:00, מוצ\"ש חצי שעה מצאת שבת-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-dimona",
+    "name": "בורגר ראנץ' דימונה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "פרץ סנטר, כביש 25, דימונה",
+    "cityId": "דימונה",
+    "location": {
+      "latitude": 31.069,
+      "longitude": 35.033
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 11:00-21:30, ו׳ 11:00-15:00, מוצ\"ש כשעה מצאת שבת-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-holon",
+    "name": "בורגר ראנץ' חולון",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "קניון חולון, חולון",
+    "cityId": "חולון",
+    "location": {
+      "latitude": 32.015,
+      "longitude": 34.776
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 11:00-21:30, ו׳ 11:00-14:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-yavne",
+    "name": "בורגר ראנץ' יבנה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "שדרות הציונות 1, יבנה",
+    "cityId": "יבנה",
+    "location": {
+      "latitude": 31.876,
+      "longitude": 34.74
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 11:00-22:00, ו׳ 11:00-14:30, מוצ\"ש כשעה מצאת שבת-22:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-jerusalem-malha",
+    "name": "בורגר ראנץ' ירושלים קניון מלחה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "קניון מלחה, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.747,
+      "longitude": 35.187
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 11:00-22:00, ו׳ 11:00-15:00, מוצ\"ש 20:30-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-kfar-yona",
+    "name": "בורגר ראנץ' כפר יונה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "דוד בן גוריון 1, כפר יונה",
+    "cityId": "כפר יונה",
+    "location": {
+      "latitude": 32.315,
+      "longitude": 34.931
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 11:00-22:00, ו׳ 11:00-14:00, שבת 19:30-22:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-carmiel",
+    "name": "בורגר ראנץ' כרמיאל",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "מעלה כמון 5, קניון חוצות כרמיאל",
+    "cityId": "כרמיאל",
+    "location": {
+      "latitude": 32.916,
+      "longitude": 35.298
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 10:30-22:00, ו׳ 10:30-14:00, שבת 19:30-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-migdal-haemek",
+    "name": "בורגר ראנץ' מגדל העמק",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "שדרות שאול עמור 77, מגדל העמק",
+    "cityId": "מגדל העמק",
+    "location": {
+      "latitude": 32.675,
+      "longitude": 35.24
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 10:30-22:30, ו׳ 10:30-15:00, מוצ\"ש 20:50-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-nahariya",
+    "name": "בורגר ראנץ' נהריה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "קניון הצפון, נהריה",
+    "cityId": "נהריה",
+    "location": {
+      "latitude": 33.005,
+      "longitude": 35.097
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 10:30-22:30, ו׳ 10:30-15:00, מוצ\"ש 20:50-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-nes-ziona",
+    "name": "בורגר ראנץ' נס ציונה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "שד' האיריסים 53, קניותר, נס ציונה",
+    "cityId": "נס ציונה",
+    "location": {
+      "latitude": 31.927,
+      "longitude": 34.798
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 11:00-21:00, ו׳ 11:00-15:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-netanya-sharon",
+    "name": "בורגר ראנץ' נתניה קניון השרון",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "קניון השרון, נתניה",
+    "cityId": "נתניה",
+    "location": {
+      "latitude": 32.304,
+      "longitude": 34.861
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 11:00-21:00, ו׳ 11:00-14:30, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-netanya-ir-yamim",
+    "name": "בורגר ראנץ' נתניה עיר ימים",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "בני ברמן 2, נתניה",
+    "cityId": "נתניה",
+    "location": {
+      "latitude": 32.326,
+      "longitude": 34.853
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 10:30-22:30, ו׳ 10:30-15:00, מוצ\"ש 20:50-23:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-afula",
+    "name": "בורגר ראנץ' עפולה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "השוק 13, ביג מגה אור, עפולה",
+    "cityId": "עפולה",
+    "location": {
+      "latitude": 32.607,
+      "longitude": 35.288
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 11:00-21:30, ו׳ 11:00-14:30, מוצ\"ש חצי שעה לאחר צאת שבת-22:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-pt-big",
+    "name": "בורגר ראנץ' פתח תקווה קניון גדול",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "הקניון הגדול, פתח תקווה",
+    "cityId": "פתח תקווה",
+    "location": {
+      "latitude": 32.084,
+      "longitude": 34.892
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 10:30-22:00, ו׳ 10:00-לפני שבת, מוצ\"ש כשעה מצאת שבת-22:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-kiryat-ata",
+    "name": "בורגר ראנץ' קריית אתא",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "קניון שער הצפון, קריית אתא",
+    "cityId": "קריית אתא",
+    "location": {
+      "latitude": 32.808,
+      "longitude": 35.103
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 10:30-22:30, ו׳ 10:30-15:00, מוצ\"ש 20:50-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-kiryat-gat",
+    "name": "בורגר ראנץ' קריית גת",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "אבני החושן 1, קריית גת",
+    "cityId": "קריית גת",
+    "location": {
+      "latitude": 31.61,
+      "longitude": 34.764
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 11:00-22:00, ו׳ 11:00-14:30, מוצ\"ש כשעה מצאת שבת-22:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-rosh-haain",
+    "name": "בורגר ראנץ' ראש העין",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "יגאל אלון 22, ראש העין",
+    "cityId": "ראש העין",
+    "location": {
+      "latitude": 32.096,
+      "longitude": 34.956
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 11:00-22:00, ו׳ 11:00-15:00, מוצ\"ש כשעה מצאת שבת-22:30",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-rl-zahav",
+    "name": "בורגר ראנץ' ראשון לציון קניון הזהב",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "דוד סחרוב 21, ראשון לציון",
+    "cityId": "ראשון לציון",
+    "location": {
+      "latitude": 31.979,
+      "longitude": 34.792
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 11:00-22:00, ו׳ 11:00-15:00, מוצ\"ש 20:30-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-rl-rothschild",
+    "name": "בורגר ראנץ' ראשון לציון קניון רוטשילד",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "קניון רוטשילד, ראשון לציון",
+    "cityId": "ראשון לציון",
+    "location": {
+      "latitude": 31.974,
+      "longitude": 34.802
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 11:00-22:00, ו׳ 11:00-15:00, מוצ\"ש 20:30-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-rehovot",
+    "name": "בורגר ראנץ' רחובות",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "קניון רחובות, רחובות",
+    "cityId": "רחובות",
+    "location": {
+      "latitude": 31.895,
+      "longitude": 34.817
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 11:30-22:30, ו׳ 11:30-16:00, מוצ\"ש כשעה לאחר צאת שבת-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-ramla",
+    "name": "בורגר ראנץ' רמלה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "דוד רזיאל 1, קניון עזריאלי, רמלה",
+    "cityId": "רמלה",
+    "location": {
+      "latitude": 31.931,
+      "longitude": 34.868
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 11:00-22:00, ו׳ 11:00-16:00, מוצ\"ש חצי שעה מצאת שבת-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-tlv-azrieli",
+    "name": "בורגר ראנץ' תל אביב עזריאלי",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "קניון עזריאלי, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.074,
+      "longitude": 34.791
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א׳-ה׳ 11:00-22:00, ו׳ 11:00-16:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-hod-hasharon",
+    "name": "בורגר ראנץ' הוד השרון",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "קניון שרונים, הוד השרון",
+    "cityId": "הוד השרון",
+    "location": {
+      "latitude": 32.1488,
+      "longitude": 34.8956
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 11:00-21:30, ו׳ 11:00-16:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-hadera",
+    "name": "בורגר ראנץ' חדרה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "קניון לב חדרה, חדרה",
+    "cityId": "חדרה",
+    "location": {
+      "latitude": 32.434,
+      "longitude": 34.918
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 10:30-22:30, ו׳ 10:30-15:00, מוצ\"ש 20:50-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-haifa-azrieli",
+    "name": "בורגר ראנץ' חיפה עזריאלי",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "משה פלימן 4, קניון עזריאלי חיפה",
+    "cityId": "חיפה",
+    "location": {
+      "latitude": 32.819,
+      "longitude": 34.989
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 10:30-22:30, ו׳ 10:30-15:00, מוצ\"ש 20:50-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-krayot",
+    "name": "בורגר ראנץ' קריות קריון",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "דרך עכו, קריון, קרית ביאליק",
+    "cityId": "קריית ביאליק",
+    "location": {
+      "latitude": 32.836,
+      "longitude": 35.081
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 11:00-22:00, ו׳ 11:00-14:45, מוצ\"ש חצי שעה מצאת שבת-22:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-raanana",
+    "name": "בורגר ראנץ' רעננה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "קניון רננים, רעננה",
+    "cityId": "רעננה",
+    "location": {
+      "latitude": 32.184,
+      "longitude": 34.871
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 11:00-22:00, ו׳ 11:00-16:00, מוצ\"ש חצי שעה מצאת שבת-23:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-br-tlv-menorah",
+    "name": "בורגר ראנץ' תל אביב היכל מנורה",
+    "type": "fast_food",
+    "category": "meat",
+    "address": "יגאל אלון 51, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.065,
+      "longitude": 34.791
+    },
+    "website": "https://www.burgeranch.co.il",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 11:00-22:00, ו׳ 11:00-16:00, מוצ\"ש חצי שעה אחרי צאת שבת-23:00",
+    "source": "manual"
   }
 ]
