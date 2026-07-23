@@ -675,27 +675,6 @@
     "cityId": "קרית שמונה"
   },
   {
-    "facebook": "https://www.facebook.com/LandwerCafe",
-    "tags": [
-      "coffee_shop"
-    ],
-    "type": "restaurant",
-    "openingHours": "Su-Th 07:00-22:00; Fr 07:00-14:30; Sa (sunset+01:00)-03:00",
-    "name": "לנדוור",
-    "website": "https://www.landwer-cafe.co.il",
-    "cityId": "קריית מאיר",
-    "address": "שדרות רוטשילד 45, תל אביב יפו",
-    "instagram": "https://www.instagram.com/landwercafe",
-    "category": "dairy",
-    "id": "osm-node-2322594231",
-    "location": {
-      "latitude": 32.0641555,
-      "longitude": 34.774438
-    },
-    "source": "osm",
-    "phone": "+972 3 711 3033"
-  },
-  {
     "source": "osm",
     "id": "osm-node-2366076834",
     "type": "restaurant",
@@ -1105,28 +1084,6 @@
     "phone": "+972 4 694 4504",
     "category": "dairy",
     "cityId": "קרית שמונה"
-  },
-  {
-    "facebook": "https://www.facebook.com/LandwerCafe",
-    "tags": [
-      "coffee_shop",
-      "sandwich"
-    ],
-    "type": "restaurant",
-    "openingHours": "Su-Th 08:00-00:00, Fr, Sa \"please inquire\"",
-    "name": "לנדוור",
-    "website": "https://www.landwer-cafe.co.il",
-    "cityId": "קרית שמונה",
-    "address": "הנשיא 4, קרית שמונה",
-    "instagram": "https://www.instagram.com/landwercafe",
-    "category": "dairy",
-    "id": "osm-node-5128943561",
-    "location": {
-      "latitude": 33.2215567,
-      "longitude": 35.5753039
-    },
-    "source": "osm",
-    "phone": "+972 4 638 0221â€¬"
   },
   {
     "source": "osm",
@@ -3421,19 +3378,6 @@
   },
   {
     "source": "osm",
-    "id": "osm-node-11802322493",
-    "type": "restaurant",
-    "category": "dairy",
-    "name": "קפה לנדוור",
-    "address": "רחוב הנחושת 3, תל אביב יפו",
-    "location": {
-      "latitude": 32.109676,
-      "longitude": 34.8381858
-    },
-    "cityId": "בני ברק"
-  },
-  {
-    "source": "osm",
     "id": "osm-node-11818013490",
     "type": "restaurant",
     "category": "dairy",
@@ -3612,27 +3556,6 @@
       "longitude": 34.7705624
     },
     "cityId": "קריית מאיר"
-  },
-  {
-    "facebook": "https://www.facebook.com/LandwerCafe",
-    "tags": [
-      "coffee_shop"
-    ],
-    "type": "restaurant",
-    "openingHours": "Su-Th 08:30-22:00; Fr 08:30-14:00; Sa 18:30-23:30",
-    "name": "לנדוור",
-    "website": "https://www.landwer-cafe.co.il",
-    "cityId": "כפר נטר",
-    "address": "מפי 9, כפר נטר",
-    "instagram": "https://www.instagram.com/landwercafe",
-    "category": "dairy",
-    "id": "osm-node-12086618152",
-    "location": {
-      "latitude": 32.2747462,
-      "longitude": 34.8617027
-    },
-    "source": "osm",
-    "phone": "+972 9 878 6556"
   },
   {
     "source": "osm",
@@ -118175,7 +118098,7 @@
     "facebook": "https://www.facebook.com/landwercafe/",
     "id": "landwer-e58674f7",
     "type": "cafe",
-    "openingHours": "א-ה 08:30-22:00 | ו 08:00-14:00 | מוצ\"ש 30 דקות לאחר צאת שבת",
+    "openingHours": "א׳-ה׳ 08:30-22:00, ו׳ 08:00-14:00, מוצ\"ש חצי שעה אחרי צאת שבת",
     "name": "לנדוור קפה חדרה",
     "lastVerifiedAt": "2026-07-14",
     "website": "https://www.landwercafe.co.il",
@@ -118195,7 +118118,7 @@
     "facebook": "https://www.facebook.com/landwercafe/",
     "id": "landwer-5d36f712",
     "type": "cafe",
-    "openingHours": "א-ה 09:00-22:00 | ו 08:30-14:30 | מוצ\"ש 30 דקות לאחר צאת שבת עד 23:00",
+    "openingHours": "א׳-ה׳ 09:00-22:00, ו׳ 08:30-14:30, מוצ\"ש חצי שעה אחרי צאת שבת עד 23:00",
     "name": "לנדוור קפה קריון",
     "lastVerifiedAt": "2026-07-14",
     "website": "https://www.landwercafe.co.il",
@@ -118215,7 +118138,7 @@
     "facebook": "https://www.facebook.com/landwercafe/",
     "id": "landwer-3627a8ef",
     "type": "cafe",
-    "openingHours": "א-ה 09:00-22:30 | ו 08:00-15:00 | מוצ\"ש 18:30-23:30",
+    "openingHours": "א׳-ה׳ 09:00-22:30, ו׳ 08:00-15:00, שבת 18:30-23:30",
     "name": "לנדוור קפה עפולה כשר",
     "lastVerifiedAt": "2026-07-14",
     "website": "https://www.landwercafe.co.il",
@@ -118235,7 +118158,7 @@
     "facebook": "https://www.facebook.com/landwercafe/",
     "id": "landwer-9a1a3d32",
     "type": "cafe",
-    "openingHours": "א-ה 08:30-22:00 | ו 08:30-13:30 | מוצ\"ש 19:00-23:00",
+    "openingHours": "א׳-ה׳ 08:30-22:00, ו׳ 08:30-13:30, שבת 19:00-23:00",
     "name": "לנדוור קפה בנימינה",
     "lastVerifiedAt": "2026-07-14",
     "website": "https://www.landwercafe.co.il",
@@ -118255,7 +118178,7 @@
     "facebook": "https://www.facebook.com/landwercafe/",
     "id": "landwer-4cf9b62c",
     "type": "cafe",
-    "openingHours": "א-ה 08:30-22:30 | ו 08:30-14:00 | ש סגור",
+    "openingHours": "א׳-ה׳ 08:30-22:30, ו׳ 08:30-14:00, שבת סגור",
     "name": "לנדוור קפה כפר סבא רוטשילד",
     "lastVerifiedAt": "2026-07-14",
     "website": "https://www.landwercafe.co.il",
@@ -118275,7 +118198,7 @@
     "facebook": "https://www.facebook.com/landwercafe/",
     "id": "landwer-f1da2e4f",
     "type": "cafe",
-    "openingHours": "א-ה 08:00-22:30 | ו 08:00-15:00 | ש סגור",
+    "openingHours": "א׳-ה׳ 08:00-22:30, ו׳ 08:00-15:00, שבת סגור",
     "name": "לנדוור קפה נתניה קריית השרון",
     "lastVerifiedAt": "2026-07-14",
     "website": "https://www.landwercafe.co.il",
@@ -118295,7 +118218,7 @@
     "facebook": "https://www.facebook.com/landwercafe/",
     "id": "landwer-0d923dba",
     "type": "cafe",
-    "openingHours": "א-ה 08:30-22:00 | ו 08:00-13:30 | מוצ\"ש שעה לאחר צאת שבת עד 23:00",
+    "openingHours": "א׳-ה׳ 08:30-22:00, ו׳ 08:00-13:30, שבת 18:30-23:00",
     "name": "לנדוור קפה עזריאלי תל אביב",
     "lastVerifiedAt": "2026-07-14",
     "website": "https://www.landwercafe.co.il",
@@ -118315,7 +118238,7 @@
     "facebook": "https://www.facebook.com/landwercafe/",
     "id": "landwer-06975d00",
     "type": "cafe",
-    "openingHours": "א-ה 09:00-22:00 | ו 08:30-14:30 | מוצ\"ש שעה לאחר צאת שבת",
+    "openingHours": "א׳-ה׳ 09:00-22:00, ו׳ 08:30-14:30, שבת 18:30-23:00",
     "name": "לנדוור קפה קניון איילון",
     "lastVerifiedAt": "2026-07-14",
     "website": "https://www.landwercafe.co.il",
@@ -118335,7 +118258,7 @@
     "facebook": "https://www.facebook.com/landwercafe/",
     "id": "landwer-e5ccb343",
     "type": "cafe",
-    "openingHours": "א-ה 08:30-23:00 | ו 08:00-14:00 | מוצ\"ש שעה לאחר צאת שבת עד 23:30",
+    "openingHours": "א׳-ה׳ 08:30-23:00, ו׳ 08:00-14:00, שבת 18:30-23:30",
     "name": "לנדוור קפה גבעת שמואל",
     "lastVerifiedAt": "2026-07-14",
     "website": "https://www.landwercafe.co.il",
@@ -118355,7 +118278,7 @@
     "facebook": "https://www.facebook.com/landwercafe/",
     "id": "landwer-72ea2199",
     "type": "cafe",
-    "openingHours": "א-ה 09:00-22:30 | ו 09:00-15:00 | מוצ\"ש שעה לאחר צאת שבת עד 23:30",
+    "openingHours": "א׳-ה׳ 09:00-22:30, ו׳ 09:00-15:00, שבת 18:30-23:30",
     "name": "לנדוור קפה קניון גדול פתח תקווה",
     "lastVerifiedAt": "2026-07-14",
     "website": "https://www.landwercafe.co.il",
@@ -118375,7 +118298,7 @@
     "facebook": "https://www.facebook.com/landwercafe/",
     "id": "landwer-9e317595",
     "type": "cafe",
-    "openingHours": "א-ה 08:30-23:00 | ו 08:30-14:30 | מוצ\"ש שעה לאחר צאת שבת עד 23:00",
+    "openingHours": "א׳-ה׳ 08:30-23:00, ו׳ 08:30-14:30, שבת 18:30-23:00",
     "name": "לנדוור קפה עזריאלי ראשונים ראשון לציון",
     "lastVerifiedAt": "2026-07-14",
     "website": "https://www.landwercafe.co.il",
@@ -118395,7 +118318,7 @@
     "facebook": "https://www.facebook.com/landwercafe/",
     "id": "landwer-0226fd66",
     "type": "cafe",
-    "openingHours": "א-ה 09:00-16:00 | ו 08:00-13:00 | מוצ\"ש לאחר צאת שבת עד 23:00",
+    "openingHours": "א׳-ה׳ 09:00-16:00, ו׳ 08:00-13:00, שבת שעה מצאת שבת-23:00",
     "name": "לנדוור קפה אור יהודה",
     "lastVerifiedAt": "2026-07-14",
     "website": "https://www.landwercafe.co.il",
@@ -118415,7 +118338,7 @@
     "facebook": "https://www.facebook.com/landwercafe/",
     "id": "landwer-0fff345f",
     "type": "cafe",
-    "openingHours": "א-ה 08:00-22:00 | ו 07:30-14:30",
+    "openingHours": "א׳-ה׳ 08:00-22:00, ו׳ 07:30-14:30, שבת סגור",
     "name": "לנדוור קפה מבשרת ציון",
     "lastVerifiedAt": "2026-07-14",
     "website": "https://www.landwercafe.co.il",
@@ -118435,7 +118358,7 @@
     "facebook": "https://www.facebook.com/landwercafe/",
     "id": "landwer-12ebc3a9",
     "type": "cafe",
-    "openingHours": "א-ה 08:30-22:30 | ו 08:30-13:00 | מוצ\"ש שעה לאחר צאת שבת עד 23:15",
+    "openingHours": "א׳-ה׳ 08:30-22:30, ו׳ 08:30-13:00, שבת 18:30-23:15",
     "name": "לנדוור קפה אריאל",
     "lastVerifiedAt": "2026-07-14",
     "website": "https://www.landwercafe.co.il",
@@ -118455,7 +118378,7 @@
     "facebook": "https://www.facebook.com/landwercafe/",
     "id": "landwer-79a648f9",
     "type": "cafe",
-    "openingHours": "א-ה 09:00-22:00 | ו 09:00-13:30 | מוצ\"ש 30 דקות לאחר צאת שבת עד 23:00",
+    "openingHours": "א׳-ה׳ 09:00-22:00, ו׳ 09:00-13:30, שבת 18:30-23:00",
     "name": "לנדוור קפה קניון רחובות",
     "lastVerifiedAt": "2026-07-14",
     "website": "https://www.landwercafe.co.il",
@@ -118475,7 +118398,7 @@
     "facebook": "https://www.facebook.com/landwercafe/",
     "id": "landwer-1da61b05",
     "type": "cafe",
-    "openingHours": "א-ה 09:00-22:00 | ו 08:30-16:00 | מוצ\"ש 20:00-00:00",
+    "openingHours": "א׳-ה׳ 09:00-22:00, ו׳ 08:30-16:00, שבת 20:00-00:00",
     "name": "לנדוור קפה פארק המדע רחובות",
     "lastVerifiedAt": "2026-07-14",
     "website": "https://www.landwercafe.co.il",
@@ -118495,7 +118418,7 @@
     "facebook": "https://www.facebook.com/landwercafe/",
     "id": "landwer-c4a6fcbf",
     "type": "cafe",
-    "openingHours": "א-ד 08:00-22:30 | ה 08:00-23:00 | ו 07:45-13:45 | מוצ\"ש 30 דקות לאחר צאת שבת",
+    "openingHours": "א׳-ד׳ 08:00-22:30, ה׳ 08:00-23:00, ו׳ 07:45-13:45, שבת 18:30-00:00",
     "name": "לנדוור קפה ביג אשדוד",
     "lastVerifiedAt": "2026-07-14",
     "website": "https://www.landwercafe.co.il",
@@ -118515,7 +118438,7 @@
     "facebook": "https://www.facebook.com/landwercafe/",
     "id": "landwer-c2eb1e46",
     "type": "cafe",
-    "openingHours": "א-ה 08:30-23:00 | ו 08:00-13:30 | מוצ\"ש שעה לאחר צאת שבת עד 23:00",
+    "openingHours": "א׳-ה׳ 08:30-23:00, ו׳ 08:00-13:30, שבת 18:30-23:00",
     "name": "לנדוור קפה אשקלון ברנע",
     "locationPrecision": "city",
     "website": "https://www.landwercafe.co.il",
@@ -118536,7 +118459,7 @@
     "facebook": "https://www.facebook.com/landwercafe/",
     "id": "landwer-1edf9c2c",
     "type": "cafe",
-    "openingHours": "א-ה 08:30-20:00 | ו 08:30-14:00 | ש סגור",
+    "openingHours": "א׳-ה׳ 08:30-20:00, ו׳ 08:30-14:00, מוצ\"ש סגור",
     "name": "לנדוור קפה שדרות",
     "lastVerifiedAt": "2026-07-14",
     "website": "https://www.landwercafe.co.il",
@@ -118556,7 +118479,7 @@
     "facebook": "https://www.facebook.com/landwercafe/",
     "id": "landwer-75f58b99",
     "type": "cafe",
-    "openingHours": "א-ה 08:00-23:00 | ו 08:00-13:00 | מוצ\"ש שעה לאחר צאת שבת",
+    "openingHours": "א׳-ה׳ 08:00-23:00, ו׳ 08:00-13:00, שבת 18:30-00:00",
     "name": "לנדוור קפה נתיבות",
     "lastVerifiedAt": "2026-07-14",
     "website": "https://www.landwercafe.co.il",
@@ -134396,6 +134319,579 @@
     "instagram": "https://www.instagram.com/gregcafe",
     "certifiedBy": "רבנות מקומית",
     "kosherType": "regular",
+    "source": "manual"
+  },
+  {
+    "id": "papos-26cdd95f",
+    "name": "פאפוס בשרים רחובות",
+    "type": "restaurant",
+    "cityId": "רחובות",
+    "address": "קלמן גבריאלוב 38, רחובות",
+    "phone": "052-5155067",
+    "location": {
+      "latitude": 31.8948,
+      "longitude": 34.81
+    },
+    "website": "https://paposs.co.il",
+    "openingHours": "א'-ה' 10:30-22:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "hanania-d46a240c",
+    "name": "הנכד של חנניה רחובות",
+    "type": "restaurant",
+    "cityId": "רחובות",
+    "address": "הרצל 188, רחובות",
+    "phone": "08-8506685",
+    "location": {
+      "latitude": 31.901,
+      "longitude": 34.8098
+    },
+    "website": "https://www.instagram.com/hanania_grandson",
+    "openingHours": "א'-ה' 07:30-19:30 | ו' 09:00-13:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "tomer-bbce02a8",
+    "name": "שווארמה תומר יבנה",
+    "type": "restaurant",
+    "cityId": "יבנה",
+    "address": "שדרות העצמאות 15, יבנה",
+    "phone": "072-323-4728",
+    "location": {
+      "latitude": 31.8702,
+      "longitude": 34.7444
+    },
+    "openingHours": "א'-ה' 11:00-22:00 | ו' 09:00-14:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "herzl2yav-1c825c0d",
+    "name": "הרצל 2 יבנה",
+    "type": "restaurant",
+    "cityId": "יבנה",
+    "address": "הדוגית 16, מרכז רוגובין, יבנה",
+    "phone": "08-917-8888",
+    "location": {
+      "latitude": 31.8746,
+      "longitude": 34.7336
+    },
+    "website": "https://herzl2.co.il",
+    "openingHours": "א'-ה' 11:00-23:00 | ו' סגור | ש' מוצ\"ש עד 00:00",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "shemesh-feacdacc",
+    "name": "שווארמה שמש נס ציונה",
+    "type": "restaurant",
+    "cityId": "נס ציונה",
+    "address": "וייצמן 24, נס ציונה",
+    "phone": "053-621-4680",
+    "location": {
+      "latitude": 31.9298,
+      "longitude": 34.7971
+    },
+    "website": "https://shawarmashemesh.co.il",
+    "openingHours": "א'-ה' 10:00-22:00 | ו' 10:30-14:30 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "yossiramle-04748c5c",
+    "name": "שווארמה יוסי רמלה",
+    "type": "restaurant",
+    "cityId": "רמלה",
+    "address": "צה\"ל 1, קניון נווה רם, רמלה",
+    "phone": "08-924-2091",
+    "location": {
+      "latitude": 31.9266,
+      "longitude": 34.88
+    },
+    "website": "https://www.instagram.com/shawarma.yossi",
+    "openingHours": "א'-ה' 10:00-18:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "hashamenrl-c7d0a128",
+    "name": "השמן ראשון לציון",
+    "type": "restaurant",
+    "cityId": "ראשון לציון",
+    "address": "רוטשילד 61, ראשון לציון",
+    "phone": "03-949-4528",
+    "location": {
+      "latitude": 31.9719,
+      "longitude": 34.8071
+    },
+    "website": "https://hashamen.co.il",
+    "openingHours": "א'-ה' 11:00-23:00 | ו' 11:00-15:30 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "herzl2rl-e311bfdd",
+    "name": "הרצל 2 ראשון לציון",
+    "type": "restaurant",
+    "cityId": "ראשון לציון",
+    "address": "הרצל 2, ראשון לציון",
+    "phone": "03-956-8010",
+    "location": {
+      "latitude": 31.9632,
+      "longitude": 34.8035
+    },
+    "website": "https://herzl2.co.il",
+    "openingHours": "א'-ה' 11:00-23:59 | ו' סגור | ש' מוצ\"ש עד 23:59",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "cohenbeertuvia-e28b52c8",
+    "name": "שווארמה כהן באר טוביה",
+    "type": "restaurant",
+    "cityId": "באר טוביה",
+    "address": "באר טוביה",
+    "phone": "072-313-9162",
+    "location": {
+      "latitude": 31.7266,
+      "longitude": 34.7424
+    },
+    "openingHours": "א'-ה' 07:30-19:30 | ו' 09:00-13:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "barake-66c5ecff",
+    "name": "בארכה קסטינה",
+    "type": "restaurant",
+    "cityId": "קסטינה",
+    "address": "קסטינה",
+    "phone": "08-610-7060",
+    "location": {
+      "latitude": 31.718,
+      "longitude": 34.795
+    },
+    "website": "https://barakerestaurant.co.il",
+    "openingHours": "א'-ג' 11:00-00:30 | ד'-ה' 11:00-01:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "bucharikm-23b49510",
+    "name": "הבוכרי קריית מלאכי",
+    "type": "restaurant",
+    "cityId": "קריית מלאכי",
+    "address": "קריית מלאכי",
+    "phone": "08-850-1818",
+    "location": {
+      "latitude": 31.7323,
+      "longitude": 34.7432
+    },
+    "openingHours": "א'-ה' 11:00-20:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "sheliku-0b899554",
+    "name": "השווארמה שלי קריית מלאכי",
+    "type": "restaurant",
+    "cityId": "קריית מלאכי",
+    "address": "קריית מלאכי",
+    "phone": "08-850-4313",
+    "location": {
+      "latitude": 31.732,
+      "longitude": 34.743
+    },
+    "openingHours": "א'-ה' 07:30-19:30 | ו' 09:00-13:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "badatz_beit_yosef",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "hapamon-a0f986bd",
+    "name": "הפעמון אשקלון",
+    "type": "restaurant",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "phone": "08-855-9044",
+    "location": {
+      "latitude": 31.6688,
+      "longitude": 34.5681
+    },
+    "openingHours": "א'-ה' 11:00-22:00 | ו' 10:00-כניסת שבת | ש' מוצ\"ש עד 23:45",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "itzikeilat-3a1ad9d0",
+    "name": "שווארמה איציק אילת",
+    "type": "restaurant",
+    "cityId": "אילת",
+    "address": "אילת",
+    "phone": "08-632-3231",
+    "location": {
+      "latitude": 29.557,
+      "longitude": 34.94
+    },
+    "openingHours": "א'-ה' 11:00-02:00 | ו' 10:00-14:00 | ש' מוצ\"ש עד 02:00",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "halevharahav-4312ca53",
+    "name": "הלב הרחב אילת",
+    "type": "restaurant",
+    "cityId": "אילת",
+    "address": "אילת",
+    "phone": "08-920-5040",
+    "location": {
+      "latitude": 29.56,
+      "longitude": 34.948
+    },
+    "website": "https://halev-harahav.co.il",
+    "openingHours": "א'-ה' 11:30-23:00 | ו' סגור | ש' מוצ\"ש",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "baguetdolphin-4f0be49b",
+    "name": "באגט דולפין אילת",
+    "type": "restaurant",
+    "cityId": "אילת",
+    "address": "אילת",
+    "phone": "072-394-5544",
+    "location": {
+      "latitude": 29.5534,
+      "longitude": 34.9559
+    },
+    "website": "https://baguettedolphin.com",
+    "openingHours": "א'-ה' 09:00-22:00 | ו' 09:00-15:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "bublil-5d9893d8",
+    "name": "שווארמה בובליל נתיבות",
+    "type": "restaurant",
+    "cityId": "נתיבות",
+    "address": "יוסף סמלו 43, נתיבות",
+    "phone": "08-665-0990",
+    "location": {
+      "latitude": 31.4179,
+      "longitude": 34.592
+    },
+    "website": "https://www.facebook.com/Shawarmabublil",
+    "openingHours": "א'-ה' 10:00-23:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "kahlon-8d5db104",
+    "name": "השווארמה של כחלון נתיבות",
+    "type": "restaurant",
+    "cityId": "נתיבות",
+    "address": "יוסף סמלו 3, נתיבות",
+    "phone": "052-749-6440",
+    "location": {
+      "latitude": 31.4163,
+      "longitude": 34.5915
+    },
+    "website": "https://www.facebook.com/Shawarma.Kahlon",
+    "openingHours": "א'-ה' 09:00-22:00 | ו' 09:00-15:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "benikahlon-4dc530e1",
+    "name": "שווארמה בני כחלון נתיבות",
+    "type": "restaurant",
+    "cityId": "נתיבות",
+    "address": "יוסף סמלו 20, נתיבות",
+    "phone": "052-471-6360",
+    "location": {
+      "latitude": 31.4171,
+      "longitude": 34.5917
+    },
+    "website": "https://www.instagram.com/shawarme_beni_kachlon",
+    "openingHours": "א'-ה' 11:00-22:00 | ו' 11:00-14:00 | ש' מוצ\"ש עד 22:00",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "toro-b9446f3d",
+    "name": "טורו נתיבות",
+    "type": "restaurant",
+    "cityId": "נתיבות",
+    "address": "שדרות ירושלים 1, נתיבות",
+    "phone": "08-994-4405",
+    "location": {
+      "latitude": 31.4177,
+      "longitude": 34.5882
+    },
+    "website": "https://www.facebook.com/ToroNetivot",
+    "openingHours": "א'-ה' 10:00-23:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "carniibar-379dcfb5",
+    "name": "קרניבר נתיבות",
+    "type": "restaurant",
+    "cityId": "נתיבות",
+    "address": "יוסף סמלו 10, נתיבות",
+    "phone": "08-667-3656",
+    "location": {
+      "latitude": 31.4166,
+      "longitude": 34.5916
+    },
+    "website": "https://www.facebook.com/CarniibarNetivot",
+    "openingHours": "א'-ה' 10:30-23:00 | ו' סגור | ש' מוצ\"ש עד 00:00",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "harakevet-084bbcac",
+    "name": "שווארמה ברכבת נתיבות",
+    "type": "restaurant",
+    "cityId": "נתיבות",
+    "address": "אליהו אילוז 2, נתיבות",
+    "phone": "053-938-7357",
+    "location": {
+      "latitude": 31.4201,
+      "longitude": 34.5926
+    },
+    "website": "https://shawarmaharakevet.co.il",
+    "openingHours": "א'-ה' 10:00-22:30 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "urban-9a400a85",
+    "name": "אורבן שניצל ושווארמה נתיבות",
+    "type": "restaurant",
+    "cityId": "נתיבות",
+    "address": "גני טל 2, נתיבות",
+    "phone": "074-749-3133",
+    "location": {
+      "latitude": 31.409,
+      "longitude": 34.5826
+    },
+    "website": "https://urbanshnizel.co.il",
+    "openingHours": "א'-ה' 09:00-22:00 | ו' 09:00-16:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "savivhashaon-80c95610",
+    "name": "סביב השעון באר שבע",
+    "type": "restaurant",
+    "cityId": "באר שבע",
+    "address": "דרך מצדה 166, באר שבע",
+    "phone": "054-990-8877",
+    "location": {
+      "latitude": 31.2425,
+      "longitude": 34.7854
+    },
+    "openingHours": "א'-ה' 08:00-18:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "shreder-95883eba",
+    "name": "הגלגל של שרדר באר שבע",
+    "type": "restaurant",
+    "cityId": "באר שבע",
+    "address": "דרך מצדה 266, באר שבע",
+    "phone": "08-613-2121",
+    "location": {
+      "latitude": 31.244,
+      "longitude": 34.7889
+    },
+    "website": "https://www.instagram.com/hagalgalshelshreder",
+    "openingHours": "א'-ה' 11:00-21:00 | ו' 11:00-14:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20"
+  },
+  {
+    "id": "masada-ae9f3df0",
+    "name": "שיפודי מצדה ערד",
+    "type": "restaurant",
+    "cityId": "ערד",
+    "address": "יהודה 34, ערד",
+    "phone": "08-618-1840",
+    "location": {
+      "latitude": 31.2617,
+      "longitude": 35.2103
+    },
+    "website": "https://www.instagram.com/mesada_shipud",
+    "openingHours": "א'-ה' 08:00-21:00 | ו' 08:00-15:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23"
+  },
+  {
+    "id": "landwer-airport-city",
+    "name": "לנדוור קפה איירפורט סיטי",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "הנגב 1, קריית השדה התעופה",
+    "cityId": "לוד",
+    "location": {
+      "latitude": 31.9986,
+      "longitude": 34.9177
+    },
+    "phone": "03-8011111",
+    "website": "https://www.landwercafe.co.il",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 08:30-22:30, ו׳ 08:00-16:00, שבת 08:00-22:30",
+    "source": "manual"
+  },
+  {
+    "id": "landwer-beer-sheva",
+    "name": "לנדוור קפה ביג באר שבע",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "חיל ההנדסה 2, באר שבע",
+    "cityId": "באר שבע",
+    "location": {
+      "latitude": 31.244,
+      "longitude": 34.794
+    },
+    "phone": "08-9332993",
+    "website": "https://www.landwercafe.co.il",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 09:00-23:00, ו׳ 08:00-16:00, שבת 21:00-00:00",
     "source": "manual"
   }
 ]
