@@ -164,7 +164,7 @@
   {
     "source": "osm",
     "id": "osm-node-1740901161",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "tags": [
       "pizza"
@@ -217,7 +217,7 @@
     "tags": [
       "american"
     ],
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 18:30-22:30; Sa 21:30-22:30",
     "name": "ראנץ' האוס בר בורגר",
     "website": "https://www.ranchhouse.co.il",
@@ -409,7 +409,7 @@
     "tags": [
       "burger"
     ],
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Mo-Th 00:00-00:30,11:30-24:00; Fr 11:30-17:00; Sa 19:00-24:00; Su 00:00-01:00,11:30-24:00",
     "name": "בורגרים",
     "website": "https://www.burgerim.co.il",
@@ -501,7 +501,7 @@
   {
     "source": "osm",
     "id": "osm-node-2079186344",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "tags": [
       "pizza"
@@ -556,7 +556,7 @@
     "tags": [
       "pizza"
     ],
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Mo-Th, Su 11:00-22:30; Fr 11:00-16:00; Sa 20:20-22:30",
     "name": "פיצה האט",
     "website": "https://www.pizzahut.co.il",
@@ -609,7 +609,7 @@
   {
     "source": "osm",
     "id": "osm-node-2394477277",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "tags": [
       "pizza"
@@ -756,7 +756,7 @@
   {
     "source": "osm",
     "id": "osm-node-4460369993",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 09:00-18:30; Fr 09:00-14:00",
     "tags": [
       "mediterranean"
@@ -833,7 +833,7 @@
     "tags": [
       "lebanese"
     ],
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "osm",
     "name": "חומוס אליהו",
     "website": "https://www.humuselihu.co.il",
@@ -901,7 +901,7 @@
   {
     "source": "osm",
     "id": "osm-node-5128936020",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-01:00, Sa 20:30-01:00",
     "tags": [
       "pizza"
@@ -966,7 +966,7 @@
   {
     "source": "osm",
     "id": "osm-node-5143557202",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "tags": [
       "burger"
@@ -1112,7 +1112,7 @@
     "tags": [
       "burger"
     ],
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-00:00, Fr 11:00-15:00, Sa unknown \"please inquire\"",
     "name": "בורגרים",
     "website": "https://www.burgerim.co.il",
@@ -1163,7 +1163,7 @@
     "tags": [
       "pizza"
     ],
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-00:00 Fr 11:00-14:30 Sa 21:00-00:00",
     "name": "פיצה האט",
     "website": "https://www.pizzahut.co.il",
@@ -1205,7 +1205,7 @@
   {
     "source": "osm",
     "id": "osm-node-5299442041",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "10:00-23:00; Fr 10:00-15:00; Sa 20:00-23:00",
     "tags": [
       "pizza"
@@ -1223,7 +1223,7 @@
   {
     "source": "osm",
     "id": "osm-node-5299442042",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "09:00-23:00; Fr 09:00-15:00; Sa 20:00-23:00",
     "tags": [
       "pizza"
@@ -1271,7 +1271,7 @@
   {
     "source": "osm",
     "id": "osm-node-5302040666",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 08:00-18:00; Fr 08:00-14:00",
     "name": "מסעדת חומוס אלון",
     "address": "חצור הגלילית",
@@ -1301,7 +1301,7 @@
     "facebook": "https://www.facebook.com/HumusElihu",
     "openingHours": "Su-Th 10:00-16:00; Fr 10:00-15:00",
     "id": "osm-node-5392535276",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "osm",
     "name": "חומוס אליהו",
     "website": "https://www.humuselihu.co.il",
@@ -1318,7 +1318,7 @@
   {
     "source": "osm",
     "id": "osm-node-5498980275",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "name": "Best burger",
     "address": "ארלוזורוב 3, קרית שמונה",
@@ -1353,7 +1353,7 @@
   {
     "facebook": "https://www.facebook.com/HumusElihu",
     "id": "osm-node-5613754222",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 09:30-19:00; Fr unknown \"please inquire\"",
     "name": "חומוס אליהו",
     "website": "https://www.humuselihu.co.il",
@@ -1457,7 +1457,7 @@
   {
     "source": "osm",
     "id": "osm-node-5761235277",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Sa 19:00-23:00",
     "name": "פיצה שמש 20",
     "address": "185-185 שדרות רגר יצחק, באר שבע",
@@ -1580,7 +1580,7 @@
   {
     "source": "osm",
     "id": "osm-node-6014902517",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "parve",
     "tags": [
       "regional"
@@ -1626,7 +1626,7 @@
   {
     "source": "osm",
     "id": "osm-node-6015034147",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "name": "בורגראנץ'",
     "address": "רחוב האגס 9, ראש פינה",
@@ -1759,7 +1759,7 @@
     "tags": [
       "pizza"
     ],
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-14:30; Sa 18:10-23:00; PH unknown",
     "name": "פיצה האט",
     "website": "https://www.pizzahut.co.il",
@@ -1797,7 +1797,7 @@
   {
     "source": "osm",
     "id": "osm-node-6469411086",
-    "type": "restaurant",
+    "type": "fast_food",
     "instagram": "https://www.instagram.com/burgersbar",
     "category": "meat",
     "tags": [
@@ -1951,7 +1951,7 @@
   {
     "source": "osm",
     "id": "osm-node-6754297391",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "tags": [
       "pizza"
@@ -1989,7 +1989,7 @@
   {
     "source": "osm",
     "id": "osm-node-6854597174",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "tags": [
       "burger"
@@ -2022,7 +2022,7 @@
   {
     "source": "osm",
     "id": "osm-node-7541798990",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-00:00",
     "tags": [
       "pizza"
@@ -2096,7 +2096,7 @@
     "tags": [
       "burger"
     ],
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "osm",
     "name": "בורגרים",
     "website": "https://www.burgerim.co.il",
@@ -2191,7 +2191,7 @@
   {
     "source": "osm",
     "id": "osm-node-9570930731",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "tags": [
       "burger"
@@ -2324,7 +2324,7 @@
   {
     "source": "osm",
     "id": "osm-node-10279205409",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "name": "מטרו בורגר",
     "address": "רחוב מקווה ישראל 4, תל אביב יפו",
@@ -2586,7 +2586,7 @@
   {
     "source": "osm",
     "id": "osm-node-10955696002",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Mo-Th 11:00-18:00; Fr 12:00-15:00",
     "tags": [
       "regional",
@@ -2608,7 +2608,7 @@
     "tags": [
       "burger"
     ],
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Mo-Th,Su 11:00-22:00; Fr 11:00-15:00; Sa sunset-24:00",
     "name": "בורגרס בר",
     "website": "https://www.burgersbar.co.il",
@@ -2642,7 +2642,7 @@
     "tags": [
       "pizza"
     ],
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-14:00; Sa (sunset+00:30)-23:00",
     "name": "פיצה האט",
     "website": "https://www.pizzahut.co.il",
@@ -2865,7 +2865,7 @@
   {
     "source": "osm",
     "id": "osm-node-11330876274",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "tags": [
       "burger"
@@ -2926,7 +2926,7 @@
   {
     "source": "osm",
     "id": "osm-node-11405068715",
-    "type": "restaurant",
+    "type": "fast_food",
     "instagram": "https://www.instagram.com/burgerimisrael",
     "category": "meat",
     "tags": [
@@ -3085,7 +3085,7 @@
   {
     "source": "osm",
     "id": "osm-node-11716322614",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "tags": [
       "pizza"
@@ -3118,7 +3118,7 @@
   {
     "source": "osm",
     "id": "osm-node-11793136463",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "tags": [
       "pizza"
@@ -3136,7 +3136,7 @@
     "tags": [
       "pizza"
     ],
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-13:00; Sa (sunset+00:30)-00:59",
     "name": "Pizza Hut",
     "website": "https://www.pizzahut.co.il",
@@ -3155,7 +3155,7 @@
   {
     "source": "osm",
     "id": "osm-node-11818013490",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "tags": [
       "pizza",
@@ -3207,7 +3207,7 @@
   {
     "source": "osm",
     "id": "osm-node-11886042983",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "tags": [
       "pizza"
@@ -3259,7 +3259,7 @@
   {
     "source": "osm",
     "id": "osm-node-11980731518",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "tags": [
       "pizza"
@@ -3377,7 +3377,7 @@
     "tags": [
       "hummus"
     ],
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 09:30-19:00; Fr 09:30-14:00",
     "name": "חומוס אליהו",
     "website": "https://www.humuselihu.co.il",
@@ -3416,7 +3416,7 @@
     "tags": [
       "pizza"
     ],
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-22:30; Fr 11:00-14:00; Sa 20:15-23:00",
     "name": "Pizza Hut",
     "website": "https://www.pizzahut.co.il",
@@ -3453,7 +3453,7 @@
   {
     "source": "osm",
     "id": "osm-node-12147904324",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-We 11:00-01:00; Th 11:00-04:00",
     "tags": [
       "pizza"
@@ -3606,7 +3606,7 @@
   {
     "source": "osm",
     "id": "osm-node-12462916500",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "tags": [
       "burger"
@@ -3656,7 +3656,7 @@
     "tags": [
       "pizza"
     ],
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "osm",
     "name": "Pizza Hut",
     "website": "https://www.pizzahut.co.il",
@@ -3674,7 +3674,7 @@
   {
     "source": "osm",
     "id": "osm-node-12547329544",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "tags": [
       "pizza"
@@ -3690,7 +3690,7 @@
   {
     "source": "osm",
     "id": "osm-node-12557310999",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "tags": [
       "pizza"
@@ -3712,7 +3712,7 @@
     "tags": [
       "burger"
     ],
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "osm",
     "name": "McDonald's מקדונלד'ס",
     "website": "https://www.mcdonalds.co.il",
@@ -3930,21 +3930,8 @@
   },
   {
     "source": "osm",
-    "id": "osm-node-12626437216",
-    "type": "restaurant",
-    "category": "dairy",
-    "name": "קוקו על גלגלים",
-    "address": "שוהם",
-    "location": {
-      "latitude": 32.0047196,
-      "longitude": 34.9445341
-    },
-    "cityId": "שוהם"
-  },
-  {
-    "source": "osm",
     "id": "osm-node-12636593463",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "tags": [
       "pizza"
@@ -4025,7 +4012,7 @@
   {
     "source": "osm",
     "id": "osm-node-12676686493",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "tags": [
       "pizza"
@@ -4080,7 +4067,7 @@
     "tags": [
       "burger"
     ],
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "osm",
     "name": "בורגרים",
     "website": "https://www.burgerim.co.il",
@@ -4191,7 +4178,7 @@
   {
     "source": "osm",
     "id": "osm-node-13057613010",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "tags": [
       "pizza",
@@ -4223,7 +4210,7 @@
   {
     "source": "osm",
     "id": "osm-node-13073821956",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "tags": [
       "pizza"
@@ -4369,7 +4356,7 @@
   {
     "source": "osm",
     "id": "osm-node-13286258733",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "parve",
     "tags": [
       "hummus"
@@ -4498,7 +4485,7 @@
   {
     "source": "osm",
     "id": "osm-node-13431169858",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "name": "פיצה יהלי סנדויץ",
     "address": "רחוב רמת הגולן 8, ירושלים",
@@ -4569,7 +4556,7 @@
   {
     "source": "osm",
     "id": "osm-node-13508662103",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "tags": [
       "pizza"
@@ -4615,7 +4602,7 @@
   {
     "source": "osm",
     "id": "osm-node-13664318565",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "tags": [
       "pizza",
@@ -4728,7 +4715,7 @@
   {
     "source": "osm",
     "id": "osm-node-13884849098",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Mo-Fr,Su 11:00-23:00",
     "tags": [
       "pizza"
@@ -4762,7 +4749,7 @@
   {
     "source": "osm",
     "id": "osm-node-13903561258",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "tags": [
       "pizza"
@@ -8101,7 +8088,8 @@
       "latitude": 32.285235,
       "longitude": 34.8526689
     },
-    "cityId": "אודים"
+    "cityId": "אודים",
+    "category": "dairy"
   },
   {
     "source": "osm",
@@ -102612,7 +102600,7 @@
   {
     "openingHours": "א-ה 10:00-20:00 | ו 8:30-15:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו אור יהודה",
     "locationPrecision": "address",
@@ -102637,7 +102625,7 @@
   },
   {
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו אזור",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -102665,7 +102653,7 @@
   {
     "openingHours": "א-ה 09:30-16:00 | ו 09:30-13:30",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו אשדוד",
     "locationPrecision": "address",
@@ -102691,7 +102679,7 @@
   {
     "openingHours": "א-ה 10:30-22:30 | ו 10:00-14:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו אשקלון",
     "locationPrecision": "address",
@@ -102717,7 +102705,7 @@
   {
     "openingHours": "א 09:30-20:00 | ב-ה 09:30-21:30 | ו 09:30-15:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו באר שבע פז צפון",
     "locationPrecision": "address",
@@ -102743,7 +102731,7 @@
   {
     "openingHours": "א-ה 10:00-20:00 | ו 09:30-14:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו באר יעקב",
     "locationPrecision": "address",
@@ -102769,7 +102757,7 @@
   {
     "openingHours": "א-ה 09:30-20:00 | ו 09:00-14:30",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו בית שאן",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -102796,7 +102784,7 @@
   {
     "openingHours": "א-ה 11:00-21:00 | ו 10:00-13:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו בית שמש סאן מול",
     "locationPrecision": "address",
@@ -102822,7 +102810,7 @@
   {
     "openingHours": "א-ה 10:00-22:00 | ו 09:00-14:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו בני ברק",
     "locationPrecision": "address",
@@ -102848,7 +102836,7 @@
   {
     "openingHours": "א-ה 09:00-20:00 | ו 09:00-15:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו גבעת שאול ירושלים",
     "locationPrecision": "address",
@@ -102874,7 +102862,7 @@
   {
     "openingHours": "א-ה 09:00-20:00 | ו 08:00-14:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו גשר הזיו",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -102901,7 +102889,7 @@
   {
     "openingHours": "א-ה 09:00-21:00 | ו 09:00-15:00 | ש אחרי השקיעה-23:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו דימונה",
     "locationPrecision": "address",
@@ -102927,7 +102915,7 @@
   {
     "openingHours": "א-ה 09:30-17:00 | ו 09:30-14:30",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו הרצליה פיתוח",
     "locationPrecision": "address",
@@ -102953,7 +102941,7 @@
   {
     "openingHours": "א-ה 10:00-18:00 | ו 10:00-15:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו טבריה הגליל",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -102980,7 +102968,7 @@
   {
     "openingHours": "א-ה 10:00-18:30 | ו 09:30-14:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו טירת הכרמל",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -103007,7 +102995,7 @@
   {
     "openingHours": "א-ה 09:00-19:00 | ו 08:30-14:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו יוקנעם",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -103034,7 +103022,7 @@
   {
     "openingHours": "א-ה 09:00-21:00 | ו 09:00-15:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו ים המלח עין בוקק",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -103061,7 +103049,7 @@
   {
     "openingHours": "א 10:00-21:00 | ב-ה 10:00-21:30 | ו 09:00-14:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו ירושלים הדר תלפיות",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -103088,7 +103076,7 @@
   {
     "openingHours": "א-ה 09:00-19:30 | ו 08:00-14:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו ירושלים מבשרת ציון",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -103115,7 +103103,7 @@
   {
     "openingHours": "א-ה 09:00-20:00 | ו 09:00-14:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו ירושלים שורש שואבה",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -103142,7 +103130,7 @@
   {
     "openingHours": "א-ה 10:30-19:00 | ו 09:00-13:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו ירושלים מחנה יהודה",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -103169,7 +103157,7 @@
   {
     "openingHours": "א-ה 10:30-20:00 | ו 09:00-14:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו ירושלים פסגת זאב",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -103196,7 +103184,7 @@
   {
     "openingHours": "א-ה 10:00-21:30 | ו 10:00-14:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו ירושלים יפו 33",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -103223,7 +103211,7 @@
   {
     "openingHours": "א-ה 11:30-21:00 | ו סגור",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו ירושלים הר חוצבים",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -103250,7 +103238,7 @@
   {
     "openingHours": "א-ה 10:30-21:00 | ו סגור",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו ירושלים סנטר 1",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -103277,7 +103265,7 @@
   {
     "openingHours": "א-ה 10:00-21:00 | ו 09:00-13:30",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו ירושלים קניון רמות",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -103304,7 +103292,7 @@
   {
     "openingHours": "א-ה 10:00-20:00 | ו 09:00-15:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו ישפרו סנטר מודיעין",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -103331,7 +103319,7 @@
   {
     "openingHours": "א-ה 09:00-20:00 | ו 09:00-14:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו כפר יונה",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -103358,7 +103346,7 @@
   {
     "openingHours": "א-ה 10:00-18:00 | ו 10:00-14:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו כפר סבא עתיר ידע",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -103385,7 +103373,7 @@
   {
     "openingHours": "א-ה 10:00-19:30 | ו 10:00-15:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו כפר סבא הירוקה",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -103412,7 +103400,7 @@
   {
     "openingHours": "א-ד 11:00-19:00 | ה 11:00-20:00 | ו 09:00-15:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו מודיעין קייזר",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -103439,7 +103427,7 @@
   {
     "openingHours": "א-ה 10:00-16:00 | ו 09:00-14:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו נשר",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -103466,7 +103454,7 @@
   {
     "openingHours": "א-ה 10:30-20:00 | ו 09:00-15:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו פתח תקווה",
     "locationPrecision": "address",
@@ -103492,7 +103480,7 @@
   {
     "openingHours": "א-ה 11:00-17:00 | ו 09:30-14:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו קדימה",
     "locationPrecision": "address",
@@ -103518,7 +103506,7 @@
   {
     "openingHours": "א-ה 10:00-20:00 | ו 10:00-14:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו קרית אונו",
     "locationPrecision": "address",
@@ -103544,7 +103532,7 @@
   {
     "openingHours": "א-ה 10:00-17:00 | ו 08:00-14:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו קרית אתא",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -103571,7 +103559,7 @@
   {
     "openingHours": "א-ה 10:00-18:00 | ו 10:00-14:30",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו קרית שמונה",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -103598,7 +103586,7 @@
   {
     "openingHours": "א-ה 09:00-21:30 | ו 08:30-14:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו רמלה",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -103625,7 +103613,7 @@
   {
     "openingHours": "א-ה 10:00-21:30 | ו 10:00-15:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו רמת גן קניון איילון",
     "locationPrecision": "address",
@@ -103651,7 +103639,7 @@
   {
     "openingHours": "א-ה 10:00-20:30 | ו 08:30-14:30",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו רעננה",
     "locationPrecision": "address",
@@ -103677,7 +103665,7 @@
   {
     "openingHours": "א-ה 09:00-18:00 | ו 09:00-14:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו שדרות",
     "locationPrecision": "address",
@@ -103703,7 +103691,7 @@
   {
     "openingHours": "א-ה 09:00-19:30 | ו 09:00-14:30",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו תל אביב היכל מנורה",
     "locationPrecision": "address",
@@ -103729,7 +103717,7 @@
   {
     "openingHours": "א-ה 10:30-19:00 | ו 10:00-15:30",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו תל אביב שוק הפשפשים",
     "locationPrecision": "address",
@@ -103755,7 +103743,7 @@
   {
     "openingHours": "א-ה 09:30-17:30 | ו 09:30-14:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו תל אביב פלורנטין",
     "locationPrecision": "address",
@@ -103781,7 +103769,7 @@
   {
     "openingHours": "א-ה 10:00-18:00 | ו 10:00-15:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו אילת",
     "locationPrecision": "city",
@@ -103807,7 +103795,7 @@
   {
     "openingHours": "א-ה 09:00-19:00 | ו 09:00-13:30",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו אלונים",
     "locationPrecision": "city",
@@ -103835,7 +103823,7 @@
   {
     "openingHours": "א-ה 10:00-19:00 | ו 10:00-14:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו אריאל",
     "locationPrecision": "city",
@@ -103863,7 +103851,7 @@
   {
     "openingHours": "א-ה 10:00-18:45 | ו 10:00-13:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו באר טוביה",
     "locationPrecision": "city",
@@ -103891,7 +103879,7 @@
   {
     "openingHours": "א-ה 10:00-16:00 | ו 09:30-15:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו בית השיטה",
     "locationPrecision": "city",
@@ -103917,7 +103905,7 @@
   {
     "openingHours": "א-ה 10:00-19:00 | ו 09:00-14:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו בנימינה",
     "locationPrecision": "city",
@@ -103943,7 +103931,7 @@
   {
     "openingHours": "א-ה 09:30-20:00 | ו 09:00-15:30",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו בת ים",
     "locationPrecision": "city",
@@ -103969,7 +103957,7 @@
   {
     "openingHours": "א-ה 10:00-20:30 | ו 08:00-14:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו גוש עציון",
     "locationPrecision": "city",
@@ -103995,7 +103983,7 @@
   {
     "openingHours": "א-ה 08:30-18:00 | ו 07:30-14:30",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו גן יבנה",
     "locationPrecision": "city",
@@ -104021,7 +104009,7 @@
   {
     "openingHours": "א-ה 10:00-20:00 | ו 10:00-14:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו חדרה",
     "locationPrecision": "city",
@@ -104047,7 +104035,7 @@
   {
     "openingHours": "א-ה 10:30-20:00 | ו 10:30-14:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו חולון",
     "locationPrecision": "city",
@@ -104073,7 +104061,7 @@
   {
     "openingHours": "א-ה 10:00-16:00 | ו 10:00-14:30",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו לוד",
     "locationPrecision": "city",
@@ -104099,7 +104087,7 @@
   {
     "openingHours": "א-ה 12:00-22:00 | ו סגור",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו מודיעין עילית",
     "locationPrecision": "city",
@@ -104125,7 +104113,7 @@
   {
     "openingHours": "א-ה 10:00-19:00 | ו 10:00-13:30",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו מישור אדומים",
     "locationPrecision": "city",
@@ -104151,7 +104139,7 @@
   {
     "openingHours": "א-ה 10:00-16:30 | ו 09:00-14:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו מענית",
     "locationPrecision": "city",
@@ -104177,7 +104165,7 @@
   {
     "openingHours": "א-ה 09:30-18:30 | ו 09:30-15:30",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו נס ציונה",
     "locationPrecision": "city",
@@ -104203,7 +104191,7 @@
   {
     "openingHours": "א-ה 10:30-20:00 | ו 10:30-13:30",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו נתיבות",
     "locationPrecision": "city",
@@ -104229,7 +104217,7 @@
   {
     "openingHours": "א-ה 08:30-19:00 | ו 08:30-12:30",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו נתניה",
     "locationPrecision": "city",
@@ -104255,7 +104243,7 @@
   {
     "openingHours": "א-ה 11:00-20:00 | ו 09:00-14:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו עלי",
     "locationPrecision": "city",
@@ -104281,7 +104269,7 @@
   {
     "openingHours": "א-ה 10:00-18:00 | ו 10:00-14:30",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו צמח טבריה",
     "locationPrecision": "city",
@@ -104309,7 +104297,7 @@
   {
     "openingHours": "א-ה 10:00-22:00 | ו 10:00-13:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו צפת",
     "locationPrecision": "city",
@@ -104335,7 +104323,7 @@
   {
     "openingHours": "א-ה 10:00-18:00 | ו 09:00-15:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו קריית מוצקין",
     "locationPrecision": "city",
@@ -104361,7 +104349,7 @@
   {
     "openingHours": "א-ה 09:00-16:00 | ו 09:00-14:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו קרית גת",
     "locationPrecision": "city",
@@ -104387,7 +104375,7 @@
   {
     "openingHours": "א-ה 10:30-21:00 | ו 09:00-15:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו ראש העין",
     "locationPrecision": "city",
@@ -104413,7 +104401,7 @@
   {
     "openingHours": "א-ה 10:00-21:00 | ו 10:00-15:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו ראשל\"צ קניון הזהב",
     "locationPrecision": "city",
@@ -104439,7 +104427,7 @@
   {
     "openingHours": "א-ה 10:30-21:00 | ו 09:00-14:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו ראשל\"צ ראשונים",
     "locationPrecision": "city",
@@ -104465,7 +104453,7 @@
   {
     "openingHours": "א-ה 09:00-20:00 | ו 09:00-15:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו שוהם",
     "locationPrecision": "city",
@@ -104490,7 +104478,7 @@
   },
   {
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "א-ה 10:00-21:00 | ו 09:00-14:00",
     "name": "חומוס אליהו קרני שומרון",
     "locationPrecision": "city",
@@ -104518,7 +104506,7 @@
   {
     "openingHours": "א-ה 10:30-20:00 | ו 10:00-14:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו באר שבע מצדה",
     "locationPrecision": "city",
@@ -104543,7 +104531,7 @@
   {
     "openingHours": "א-ד 10:30-20:00 | ה 10:30-22:00 | ו 09:30-15:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו בית שמש",
     "locationPrecision": "city",
@@ -104568,7 +104556,7 @@
   {
     "openingHours": "א-ה 10:00-17:00 | ו 10:00-15:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו הרצליה שער העיר",
     "locationPrecision": "city",
@@ -104593,7 +104581,7 @@
   {
     "openingHours": "א-ה 09:30-18:00 | ו 08:30-13:30",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו טבריה עלית פוריה",
     "locationPrecision": "city",
@@ -104618,7 +104606,7 @@
   {
     "openingHours": "א 10:30-21:00 | ב-ה 10:30-22:00 | ו 09:30-14:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו ירושלים מלחה",
     "locationPrecision": "city",
@@ -104643,7 +104631,7 @@
   {
     "openingHours": "א-ה 09:00-17:00 | ו 09:00-15:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו ראש פינה",
     "locationPrecision": "address",
@@ -104668,7 +104656,7 @@
   {
     "openingHours": "א-ה 09:30-22:00 | ו 09:30-15:30",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו רחובות קניון עופר",
     "locationPrecision": "city",
@@ -104693,7 +104681,7 @@
   {
     "openingHours": "א-ה 10:30-19:00 | ו 10:00-14:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו רמת גן בורסה",
     "locationPrecision": "city",
@@ -104718,7 +104706,7 @@
   {
     "openingHours": "א-ה 10:00-20:00 | ו 09:00-15:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו תל אביב דיזינגוף סנטר",
     "locationPrecision": "city",
@@ -104743,7 +104731,7 @@
   {
     "openingHours": "א-ה 09:00-17:00 | ו 08:00-17:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו תל אביב שרונה",
     "locationPrecision": "city",
@@ -104769,7 +104757,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "הרב לנדא",
     "id": "9000000",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -104787,7 +104775,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000001",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -104805,7 +104793,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000002",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -104823,7 +104811,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000003",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -104841,7 +104829,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000004",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -104859,7 +104847,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000005",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -104877,7 +104865,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "ועד הרבנים החרדים",
     "id": "9000006",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -104895,7 +104883,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000007",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -104913,7 +104901,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "רבני הקריות",
     "id": "9000008",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -104931,7 +104919,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000009",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -104949,7 +104937,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000010",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -104967,7 +104955,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000011",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -104985,7 +104973,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000012",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105003,7 +104991,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000013",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105021,7 +105009,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000014",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105039,7 +105027,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000015",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105057,7 +105045,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000016",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105075,7 +105063,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000017",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105093,7 +105081,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "ועד הרבנים החרדים",
     "id": "9000018",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105111,7 +105099,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "ועד הרבנים החרדים",
     "id": "9000019",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105129,7 +105117,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "ועד הרבנים החרדים",
     "id": "9000020",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105147,7 +105135,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "ועד הרבנים החרדים",
     "id": "9000021",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105165,7 +105153,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "הרב לנדא",
     "id": "9000022",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105183,7 +105171,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "ועד הרבנים החרדים",
     "id": "9000023",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105201,7 +105189,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "הרב לנדא",
     "id": "9000024",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105219,7 +105207,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "הרב לנדא",
     "id": "9000025",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105237,7 +105225,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "ועד הרבנים החרדים",
     "id": "9000026",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105255,7 +105243,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "ועד הרבנים החרדים",
     "id": "9000027",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105273,7 +105261,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "ועד הרבנים החרדים",
     "id": "9000028",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105291,7 +105279,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000029",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105309,7 +105297,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000030",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105327,7 +105315,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000031",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105345,7 +105333,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000032",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105364,7 +105352,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000033",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105382,7 +105370,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000034",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105400,7 +105388,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000035",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105418,7 +105406,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000036",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105436,7 +105424,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000037",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105454,7 +105442,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000038",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105472,7 +105460,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "ועד הרבנים החרדים",
     "id": "9000039",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105490,7 +105478,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "ועד הרבנים החרדים",
     "id": "9000040",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105508,7 +105496,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000041",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105526,7 +105514,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000042",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105544,7 +105532,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "ועד הרבנים החרדים",
     "id": "9000043",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105562,7 +105550,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "ועד הרבנים החרדים",
     "id": "9000044",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105580,7 +105568,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000045",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105598,7 +105586,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "ועד הרבנים החרדים",
     "id": "9000046",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105616,7 +105604,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000047",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105634,7 +105622,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "ועד הרבנים החרדים",
     "id": "9000048",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105652,7 +105640,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "ועד הרבנים החרדים",
     "id": "9000049",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105670,7 +105658,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000050",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105688,7 +105676,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "ועד הרבנים החרדים",
     "id": "9000051",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105706,7 +105694,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000052",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105724,7 +105712,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "ועד הרבנים החרדים",
     "id": "9000053",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105742,7 +105730,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000054",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105760,7 +105748,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000055",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105778,7 +105766,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000056",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105796,7 +105784,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "ועד הרבנים החרדים",
     "id": "9000057",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105814,7 +105802,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "ועד הרבנים החרדים",
     "id": "9000058",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105832,7 +105820,7 @@
     "website": "https://pizza-shemesh.co.il",
     "certifiedBy": "הרב לנדא",
     "id": "9000059",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה שמש",
@@ -105848,7 +105836,7 @@
   },
   {
     "id": "9000060",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00",
     "name": "פיצה שמש",
     "locationPrecision": "address",
@@ -105867,7 +105855,7 @@
   },
   {
     "id": "9000061",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00",
     "name": "פיצה שמש",
     "locationPrecision": "address",
@@ -105886,7 +105874,7 @@
   },
   {
     "id": "9000062",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00",
     "name": "פיצה שמש",
     "locationPrecision": "address",
@@ -105905,7 +105893,7 @@
   },
   {
     "id": "9000063",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00",
     "name": "פיצה שמש",
     "locationPrecision": "address",
@@ -105924,7 +105912,7 @@
   },
   {
     "id": "9000064",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00",
     "name": "פיצה שמש",
     "locationPrecision": "address",
@@ -105943,7 +105931,7 @@
   },
   {
     "id": "9000065",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00",
     "name": "פיצה שמש",
     "locationPrecision": "address",
@@ -105962,7 +105950,7 @@
   },
   {
     "id": "9000066",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00",
     "name": "פיצה שמש",
     "locationPrecision": "address",
@@ -105981,7 +105969,7 @@
   },
   {
     "id": "9000067",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00",
     "name": "פיצה שמש",
     "locationPrecision": "address",
@@ -106000,7 +105988,7 @@
   },
   {
     "id": "9000068",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00",
     "name": "פיצה שמש",
     "locationPrecision": "address",
@@ -106019,7 +106007,7 @@
   },
   {
     "id": "9000069",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00",
     "name": "פיצה שמש",
     "locationPrecision": "address",
@@ -106038,7 +106026,7 @@
   },
   {
     "id": "9000070",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:30-23:30",
     "name": "פיצה שמש",
     "locationPrecision": "address",
@@ -106057,7 +106045,7 @@
   },
   {
     "id": "9000071",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00",
     "name": "פיצה שמש",
     "locationPrecision": "address",
@@ -106076,7 +106064,7 @@
   },
   {
     "id": "9000072",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-22:30",
     "name": "פיצה שמש",
     "locationPrecision": "address",
@@ -106095,7 +106083,7 @@
   },
   {
     "id": "9000073",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00",
     "name": "פיצה שמש",
     "locationPrecision": "address",
@@ -106114,7 +106102,7 @@
   },
   {
     "id": "9000074",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00",
     "name": "פיצה שמש",
     "locationPrecision": "address",
@@ -106133,7 +106121,7 @@
   },
   {
     "id": "9000075",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00",
     "name": "פיצה שמש",
     "locationPrecision": "address",
@@ -106152,7 +106140,7 @@
   },
   {
     "id": "9000076",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00",
     "name": "פיצה שמש",
     "locationPrecision": "address",
@@ -106171,7 +106159,7 @@
   },
   {
     "id": "9000077",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:30-23:30",
     "name": "פיצה שמש",
     "locationPrecision": "address",
@@ -106190,7 +106178,7 @@
   },
   {
     "id": "9000078",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:30-23:30",
     "name": "פיצה שמש",
     "locationPrecision": "address",
@@ -106209,7 +106197,7 @@
   },
   {
     "id": "9000079",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00",
     "name": "פיצה שמש",
     "locationPrecision": "address",
@@ -106228,7 +106216,7 @@
   },
   {
     "id": "9000080",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00",
     "name": "פיצה שמש",
     "locationPrecision": "address",
@@ -106247,7 +106235,7 @@
   },
   {
     "id": "9000081",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00",
     "name": "פיצה שמש",
     "locationPrecision": "address",
@@ -106266,7 +106254,7 @@
   },
   {
     "id": "9000082",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00",
     "name": "פיצה שמש",
     "locationPrecision": "address",
@@ -106285,7 +106273,7 @@
   },
   {
     "id": "9000083",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00",
     "name": "פיצה שמש",
     "locationPrecision": "address",
@@ -106304,7 +106292,7 @@
   },
   {
     "id": "9000084",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00",
     "name": "פיצה שמש",
     "locationPrecision": "address",
@@ -106323,7 +106311,7 @@
   },
   {
     "id": "9000085",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00",
     "name": "פיצה שמש",
     "locationPrecision": "address",
@@ -106342,7 +106330,7 @@
   },
   {
     "id": "9000086",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00",
     "name": "פיצה שמש",
     "locationPrecision": "address",
@@ -106361,7 +106349,7 @@
   },
   {
     "id": "9000087",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00",
     "name": "פיצה שמש",
     "locationPrecision": "address",
@@ -106380,7 +106368,7 @@
   },
   {
     "id": "9000088",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00",
     "name": "פיצה שמש",
     "locationPrecision": "address",
@@ -106399,7 +106387,7 @@
   },
   {
     "id": "9000089",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00",
     "name": "פיצה שמש",
     "locationPrecision": "address",
@@ -106418,7 +106406,7 @@
   },
   {
     "id": "9000090",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00",
     "name": "פיצה שמש",
     "locationPrecision": "address",
@@ -106437,7 +106425,7 @@
   },
   {
     "id": "9000091",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00",
     "name": "פיצה שמש",
     "locationPrecision": "address",
@@ -106456,7 +106444,7 @@
   },
   {
     "id": "9000092",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00",
     "name": "פיצה שמש",
     "locationPrecision": "address",
@@ -106647,7 +106635,7 @@
     "website": "https://pizza-story.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000103",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה סטורי",
@@ -106664,7 +106652,7 @@
     "website": "https://pizza-story.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000104",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה סטורי",
@@ -106681,7 +106669,7 @@
     "website": "https://pizza-story.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000105",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה סטורי",
@@ -106698,7 +106686,7 @@
     "website": "https://pizza-story.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000106",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה סטורי",
@@ -106715,7 +106703,7 @@
     "website": "https://pizza-story.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000107",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה סטורי",
@@ -106732,7 +106720,7 @@
     "source": "manual",
     "certifiedBy": "בד\"ץ יורה דעה",
     "id": "9000108",
-    "type": "restaurant",
+    "type": "fast_food",
     "instagram": "https://www.instagram.com/pizza_milan_k_a/",
     "category": "dairy",
     "name": "פיצה מילאנו",
@@ -106749,7 +106737,7 @@
     "openingHours": "Su-Th 10:30-22:00; Fr 10:00-15:30",
     "certifiedBy": "רבנות",
     "id": "9000109",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה מילאנו",
@@ -106765,7 +106753,7 @@
     "facebook": "https://www.facebook.com/pizzamilanoramla/",
     "certifiedBy": "בד\"ץ יורה דעה",
     "id": "9000110",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה מילאנו",
@@ -106781,7 +106769,7 @@
     "source": "manual",
     "certifiedBy": "בד\"ץ העדה החרדית",
     "id": "9000111",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "name": "פיצה מילאנו",
     "address": "העצמאות 37, קריית אתא",
@@ -106795,7 +106783,7 @@
   },
   {
     "id": "9000112",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 10:00-24:00",
     "name": "פיצה פצץ",
     "locationPrecision": "address",
@@ -106813,7 +106801,7 @@
   },
   {
     "id": "9000113",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 10:00-24:00; Fr 09:00-14:30",
     "name": "פיצה פצץ",
     "locationPrecision": "address",
@@ -106831,7 +106819,7 @@
   },
   {
     "id": "9100000",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-24:00; Fr 11:00-15:00; Sa 20:56-24:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -106849,7 +106837,7 @@
   },
   {
     "id": "9100001",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-14:00; Sa 20:56-01:30",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -106867,7 +106855,7 @@
   },
   {
     "id": "9100002",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 20:56-23:30",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -106885,7 +106873,7 @@
   },
   {
     "id": "9100003",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-24:00; Fr 11:00-15:00; Sa 21:16-24:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -106903,7 +106891,7 @@
   },
   {
     "id": "9100004",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-14:00; Sa 20:56-24:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -106921,7 +106909,7 @@
   },
   {
     "id": "9100005",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-24:00; Fr 11:00-15:00; Sa 20:56-24:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -106939,7 +106927,7 @@
   },
   {
     "id": "9100006",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-24:00; Fr 11:00-15:00; Sa 21:16-01:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -106957,7 +106945,7 @@
   },
   {
     "id": "9100007",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 10:00-24:00; Fr 10:00-15:00; Sa 21:06-01:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -106975,7 +106963,7 @@
   },
   {
     "id": "9100008",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-24:00; Fr 11:00-15:00; Sa 21:06-24:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -106993,7 +106981,7 @@
   },
   {
     "id": "9100009",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 20:45-24:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107011,7 +106999,7 @@
   },
   {
     "id": "9100010",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 10:00-24:00; Fr 10:00-14:00; Sa 20:27-01:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107029,7 +107017,7 @@
   },
   {
     "id": "9100011",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-22:45; Sa 20:56-22:45",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107047,7 +107035,7 @@
   },
   {
     "id": "9100012",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-14:00; Sa 20:56-23:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107065,7 +107053,7 @@
   },
   {
     "id": "9100013",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-14:30; Sa 21:00-23:30",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107083,7 +107071,7 @@
   },
   {
     "id": "9100014",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 10:30-23:15; Fr 10:30-15:00; Sa 20:27-23:15",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107101,7 +107089,7 @@
   },
   {
     "id": "9100015",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-16:00; Sa 20:46-23:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107119,7 +107107,7 @@
   },
   {
     "id": "9100016",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:30-24:00; Sa 20:46-24:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107137,7 +107125,7 @@
   },
   {
     "id": "9100017",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-24:00; Fr 11:00-15:00; Sa 21:16-24:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107155,7 +107143,7 @@
   },
   {
     "id": "9100018",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 10:00-01:00; Fr 10:45-16:00; Sa 20:36-01:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107173,7 +107161,7 @@
   },
   {
     "id": "9100019",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-24:00; Fr 11:00-16:00; Sa 20:41-01:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107191,7 +107179,7 @@
   },
   {
     "id": "9100020",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-22:00; Sa 20:46-23:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107209,7 +107197,7 @@
   },
   {
     "id": "9100021",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-16:00; Sa 20:27-24:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107227,7 +107215,7 @@
   },
   {
     "id": "9100022",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 20:26-24:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107245,7 +107233,7 @@
   },
   {
     "id": "9100023",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-22:00; Sa 20:36-23:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107263,7 +107251,7 @@
   },
   {
     "id": "9100024",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-14:30; Sa 20:56-24:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107281,7 +107269,7 @@
   },
   {
     "id": "9100025",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 10:00-23:00; Fr 10:00-15:00; Sa 20:26-24:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107299,7 +107287,7 @@
   },
   {
     "id": "9100026",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 20:56-23:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107317,7 +107305,7 @@
   },
   {
     "id": "9100027",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Sa 20:46-23:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107335,7 +107323,7 @@
   },
   {
     "id": "9100028",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 10:30-22:00; Fr 10:30-14:00; Sa 20:56-22:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107353,7 +107341,7 @@
   },
   {
     "id": "9100029",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 10:30-23:00; Fr 10:30-14:00; Sa 20:56-23:30",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107371,7 +107359,7 @@
   },
   {
     "id": "9100030",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-24:00; Fr 11:00-15:00; Sa 20:41-24:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107389,7 +107377,7 @@
   },
   {
     "id": "9100031",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-01:00; Fr 11:00-14:30; Sa 20:56-02:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107407,7 +107395,7 @@
   },
   {
     "id": "9100032",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 20:56-24:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107425,7 +107413,7 @@
   },
   {
     "id": "9100033",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 20:56-24:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107443,7 +107431,7 @@
   },
   {
     "id": "9100034",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-01:00; Fr 11:00-17:00; Sa 20:31-01:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107461,7 +107449,7 @@
   },
   {
     "id": "9100035",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 09:00-22:45; Fr 09:00-15:00; Sa 20:56-22:45",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107479,7 +107467,7 @@
   },
   {
     "id": "9100036",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-We 11:00-21:00; Tu 12:00-21:00; Th 11:00-21:00; Fr 11:00-13:00; Sa 20:56-21:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107497,7 +107485,7 @@
   },
   {
     "id": "9100037",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:30-22:00; Sa 20:56-22:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107515,7 +107503,7 @@
   },
   {
     "id": "9100038",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 09:00-24:00; Fr 09:00-14:45; Sa 20:56-24:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107533,7 +107521,7 @@
   },
   {
     "id": "9100039",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 10:00-24:00; Fr 10:00-15:30; Sa 20:26-24:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107551,7 +107539,7 @@
   },
   {
     "id": "9100040",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-00:30; Fr 10:00-14:00; Sa 20:56-00:30",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107569,7 +107557,7 @@
   },
   {
     "id": "9100041",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 10:00-24:00; Fr 10:00-15:00; Sa 21:06-01:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107587,7 +107575,7 @@
   },
   {
     "id": "9100042",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 10:30-23:00; Fr 10:30-15:00; Sa 21:06-24:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107605,7 +107593,7 @@
   },
   {
     "id": "9100043",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 10:00-23:00; Fr 10:00-15:00; Sa 21:06-23:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107623,7 +107611,7 @@
   },
   {
     "id": "9100044",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 10:00-23:00; Fr 10:00-15:00; Sa 21:06-24:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107641,7 +107629,7 @@
   },
   {
     "id": "9100045",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 10:30-01:30; Fr 10:30-15:00; Sa 21:16-01:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107659,7 +107647,7 @@
   },
   {
     "id": "9100046",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 10:00-22:00; Fr 10:00-14:00; Sa 21:06-23:30",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107677,7 +107665,7 @@
   },
   {
     "id": "9100047",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 10:00-01:00; Fr 10:00-15:00; Sa 21:06-01:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107695,7 +107683,7 @@
   },
   {
     "id": "9100048",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-22:00; Fr 11:00-14:00; Sa 20:56-23:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107713,7 +107701,7 @@
   },
   {
     "id": "9100049",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 12:00-23:00; Sa 20:56-23:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107731,7 +107719,7 @@
   },
   {
     "id": "9100050",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:45; Fr 11:00-15:00; Sa 20:56-23:45",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107749,7 +107737,7 @@
   },
   {
     "id": "9100051",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-16:00; Sa 20:56-24:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107767,7 +107755,7 @@
   },
   {
     "id": "9100052",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 12:00-23:00; Sa 20:48-24:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107785,7 +107773,7 @@
   },
   {
     "id": "9100053",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 20:56-23:30",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107803,7 +107791,7 @@
   },
   {
     "id": "9100054",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-14:00; Sa 21:25-23:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107821,7 +107809,7 @@
   },
   {
     "id": "9100055",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-24:00; Fr 11:00-14:30; Sa 20:41-24:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107839,7 +107827,7 @@
   },
   {
     "id": "9100056",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 10:30-23:30; Fr 10:30-14:30; Sa 20:56-23:30",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107857,7 +107845,7 @@
   },
   {
     "id": "9100057",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 20:56-24:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107875,7 +107863,7 @@
   },
   {
     "id": "9100058",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 09:00-23:00; Fr 09:00-14:00; Sa 20:26-23:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107893,7 +107881,7 @@
   },
   {
     "id": "9100059",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 20:56-24:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107911,7 +107899,7 @@
   },
   {
     "id": "9100060",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 10:30-00:15; Fr 10:30-17:00; Sa 20:33-00:30",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107929,7 +107917,7 @@
   },
   {
     "id": "9100061",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-22:45; Fr 11:00-14:00; Sa 21:26-22:45",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107947,7 +107935,7 @@
   },
   {
     "id": "9100062",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 10:30-24:00; Sa 20:56-24:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107965,7 +107953,7 @@
   },
   {
     "id": "9100063",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-24:00; Fr 11:00-14:30; Sa 21:26-24:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -107983,7 +107971,7 @@
   },
   {
     "id": "9100064",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-22:00; Fr 11:00-14:00; Sa 20:56-22:30",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -108001,7 +107989,7 @@
   },
   {
     "id": "9100065",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 21:06-23:30",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -108019,7 +108007,7 @@
   },
   {
     "id": "9100066",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-24:00; Sa 21:00-01:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -108037,7 +108025,7 @@
   },
   {
     "id": "9100067",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 10:30-23:30; Fr 11:00-15:00; Sa 21:00-01:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -108055,7 +108043,7 @@
   },
   {
     "id": "9100068",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 20:46-24:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -108073,7 +108061,7 @@
   },
   {
     "id": "9100069",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Sa 20:56-23:30",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -108091,7 +108079,7 @@
   },
   {
     "id": "9100070",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 10:00-24:00; Fr 10:00-15:00; Sa 20:56-24:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -108109,7 +108097,7 @@
   },
   {
     "id": "9100071",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 10:00-24:00; Fr 10:00-15:00; Sa 20:56-24:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -108127,7 +108115,7 @@
   },
   {
     "id": "9100072",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 20:45-24:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -108145,7 +108133,7 @@
   },
   {
     "id": "9100073",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 10:00-23:00; Fr 10:00-16:00; Sa 20:58-24:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -108163,7 +108151,7 @@
   },
   {
     "id": "9100074",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 12:00-23:00; Sa 21:11-24:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -108181,7 +108169,7 @@
   },
   {
     "id": "9100075",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 10:00-24:00; Fr 10:00-16:00; Sa 20:31-24:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -108199,7 +108187,7 @@
   },
   {
     "id": "9100076",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 10:00-22:45; Fr 10:00-15:00; Sa 20:56-23:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -108217,7 +108205,7 @@
   },
   {
     "id": "9100077",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 10:30-24:00; Fr 10:30-15:00; Sa 20:27-24:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -108235,7 +108223,7 @@
   },
   {
     "id": "9100078",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 15:00-22:30; Sa 20:26-23:30",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -108253,7 +108241,7 @@
   },
   {
     "id": "9100079",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-14:00; Sa 20:56-23:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -108271,7 +108259,7 @@
   },
   {
     "id": "9100080",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:30; Fr 11:00-14:30; Sa 20:56-23:30",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -108289,7 +108277,7 @@
   },
   {
     "id": "9100081",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-23:30; Fr 11:00-15:00; Sa 20:26-23:30",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -108307,7 +108295,7 @@
   },
   {
     "id": "9100082",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 11:00-24:00; Fr 11:00-15:00; Sa 20:38-24:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -108325,7 +108313,7 @@
   },
   {
     "id": "9100083",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "Su-Th 10:30-23:00; Fr 10:30-16:00; Sa 20:41-24:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -110326,7 +110314,7 @@
     "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-16:00; Su 11:00-22:00",
     "source": "manual",
     "id": "9500000",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110343,7 +110331,7 @@
     "openingHours": "Mo 11:30-22:00; Tu 11:30-22:00; We 11:30-22:00; Th 11:30-22:00; Su 11:30-22:00",
     "source": "manual",
     "id": "9500001",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110360,7 +110348,7 @@
     "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:30-16:00; Sa 22:00-23:00; Su 11:00-22:30",
     "source": "manual",
     "id": "9500002",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110377,7 +110365,7 @@
     "openingHours": "Mo 11:00-22:45; Tu 11:00-22:45; We 11:00-22:45; Th 11:00-22:45; Fr 10:30-16:00; Sa 21:30-22:45; Su 11:00-22:45",
     "source": "manual",
     "id": "9500003",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110394,7 +110382,7 @@
     "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:30; Fr 10:00-16:00; Sa 21:30-23:00; Su 11:00-22:00",
     "source": "manual",
     "id": "9500004",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110411,7 +110399,7 @@
     "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:30-16:00; Sa 21:30-22:30; Su 11:00-22:30",
     "source": "manual",
     "id": "9500005",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110428,7 +110416,7 @@
     "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-16:00; Su 11:00-22:00",
     "source": "manual",
     "id": "9500006",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110445,7 +110433,7 @@
     "openingHours": "Mo 11:00-23:00; Tu 11:00-23:00; We 11:00-23:00; Th 11:00-23:00; Fr 10:30-16:00; Sa 21:45-23:00; Su 11:00-23:00",
     "source": "manual",
     "id": "9500007",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110462,7 +110450,7 @@
     "openingHours": "Mo 11:00-23:00; Tu 11:00-23:00; We 10:30-23:00; Th 10:30-23:00; Fr 10:30-15:30; Sa 22:00-23:00; Su 10:30-23:00",
     "source": "manual",
     "id": "9500008",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110479,7 +110467,7 @@
     "openingHours": "Mo 10:30-22:30; Tu 10:30-22:30; We 10:30-22:30; Th 10:30-22:30; Fr 10:30-16:00; Sa 21:30-23:00; Su 10:30-22:30",
     "source": "manual",
     "id": "9500009",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110496,7 +110484,7 @@
     "openingHours": "Mo 10:30-22:45; Tu 10:30-22:45; We 10:30-22:45; Th 10:30-22:45; Fr 10:00-15:00; Sa 21:30-23:00; Su 10:30-22:45",
     "source": "manual",
     "id": "9500010",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110513,7 +110501,7 @@
     "openingHours": "Mo 11:00-23:00; Tu 11:00-23:00; We 11:00-23:00; Th 11:00-23:00; Fr 10:30-15:30; Sa 21:30-23:00; Su 11:00-23:00",
     "source": "manual",
     "id": "9500011",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110530,7 +110518,7 @@
     "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 11:00-16:00; Su 11:00-22:30",
     "source": "manual",
     "id": "9500012",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110547,7 +110535,7 @@
     "openingHours": "Mo 10:30-22:00; Tu 10:30-22:00; We 10:30-22:00; Th 10:30-22:00; Su 10:30-22:00",
     "source": "manual",
     "id": "9500013",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110564,7 +110552,7 @@
     "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-14:00; Su 11:00-22:00",
     "source": "manual",
     "id": "9500014",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110581,7 +110569,7 @@
     "openingHours": "Mo 10:00-23:00; Tu 10:00-23:00; We 10:00-23:00; Th 10:00-23:00; Fr 10:00-16:30; Sa 21:30-23:30; Su 10:00-23:00",
     "source": "manual",
     "id": "9500015",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110598,7 +110586,7 @@
     "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:30-16:00; Su 11:00-22:30",
     "source": "manual",
     "id": "9500016",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110615,7 +110603,7 @@
     "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 11:00-16:00; Su 11:00-22:00",
     "source": "manual",
     "id": "9500017",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110632,7 +110620,7 @@
     "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:30-15:30; Su 11:00-22:30",
     "source": "manual",
     "id": "9500018",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110649,7 +110637,7 @@
     "openingHours": "Mo 10:00-21:00; Tu 10:00-21:00; We 10:00-21:00; Th 10:00-21:00; Su 10:00-21:00",
     "source": "manual",
     "id": "9500019",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110666,7 +110654,7 @@
     "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:30-16:00; Su 11:00-22:30",
     "source": "manual",
     "id": "9500020",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110683,7 +110671,7 @@
     "openingHours": "Mo 10:30-23:00; Tu 10:30-23:00; We 10:30-23:00; Th 10:30-23:00; Fr 10:00-16:00; Sa 21:30-00:00; Su 10:00-23:00",
     "source": "manual",
     "id": "9500021",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110700,7 +110688,7 @@
     "openingHours": "Mo 10:30-22:30; Tu 10:30-22:30; We 10:30-23:15; Th 10:30-23:15; Fr 10:00-16:00; Sa 21:30-23:30; Su 10:30-23:15",
     "source": "manual",
     "id": "9500022",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110717,7 +110705,7 @@
     "openingHours": "Mo 10:00-21:30; Tu 10:00-21:30; We 10:00-21:30; Th 10:00-21:30; Fr 10:00-15:00; Sa 21:30-23:00; Su 10:00-21:30",
     "source": "manual",
     "id": "9500023",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110734,7 +110722,7 @@
     "openingHours": "Mo 11:00-22:15; Tu 11:00-22:15; We 11:00-22:15; Th 11:00-22:15; Fr 10:30-16:00; Su 11:00-22:15",
     "source": "manual",
     "id": "9500024",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110751,7 +110739,7 @@
     "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-15:30; Su 11:00-22:00",
     "source": "manual",
     "id": "9500025",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110768,7 +110756,7 @@
     "openingHours": "Mo 10:30-22:30; Tu 10:30-22:30; We 10:30-22:30; Th 10:30-22:30; Fr 10:30-16:00; Su 10:30-22:30",
     "source": "manual",
     "id": "9500026",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110785,7 +110773,7 @@
     "openingHours": "Mo 11:00-23:00; Tu 11:00-23:00; We 11:00-23:00; Th 11:00-23:59; Fr 10:30-16:00; Sa 21:30-23:59; Su 11:00-23:00",
     "source": "manual",
     "id": "9500027",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110802,7 +110790,7 @@
     "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-15:00; Su 11:00-22:00",
     "source": "manual",
     "id": "9500028",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110819,7 +110807,7 @@
     "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 11:00-15:30; Su 11:00-22:30",
     "source": "manual",
     "id": "9500029",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110836,7 +110824,7 @@
     "openingHours": "Mo 10:30-22:00; Tu 10:30-22:00; We 10:30-22:00; Th 10:30-22:00; Fr 10:30-16:00; Su 10:30-22:00",
     "source": "manual",
     "id": "9500030",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110853,7 +110841,7 @@
     "openingHours": "Mo 10:30-23:00; Tu 10:30-23:00; We 10:30-23:00; Th 10:30-23:00; Fr 10:00-16:00; Sa 21:30-23:00; Su 10:30-23:00",
     "source": "manual",
     "id": "9500031",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110870,7 +110858,7 @@
     "openingHours": "Mo 11:00-04:00; Tu 11:00-04:00; We 11:00-04:00; Th 11:00-04:00; Fr 10:30-15:00; Sa 21:30-04:00; Su 11:00-04:00",
     "source": "manual",
     "id": "9500032",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110887,7 +110875,7 @@
     "openingHours": "Mo 02:00-23:59; Tu 02:00-23:59; We 02:00-23:59; Th 02:00-23:59; Fr 02:00-17:00; Sa 21:00-23:59; Su 02:00-23:59",
     "source": "manual",
     "id": "9500033",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110904,7 +110892,7 @@
     "openingHours": "Mo 10:30-23:00; Tu 10:30-23:00; We 10:30-23:00; Th 10:30-23:00; Fr 10:00-15:30; Sa 21:30-23:00; Su 10:30-23:00",
     "source": "manual",
     "id": "9500034",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110921,7 +110909,7 @@
     "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:30-16:00; Su 11:00-22:30",
     "source": "manual",
     "id": "9500035",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110938,7 +110926,7 @@
     "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 11:00-16:00; Sa 21:30-23:00; Su 11:00-22:30",
     "source": "manual",
     "id": "9500036",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110955,7 +110943,7 @@
     "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-23:00; Fr 10:30-15:30; Sa 21:30-23:00; Su 11:00-22:30",
     "source": "manual",
     "id": "9500037",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110972,7 +110960,7 @@
     "openingHours": "Mo 10:45-23:00; Tu 10:45-23:00; We 10:45-23:00; Th 10:45-23:00; Fr 10:00-16:00; Sa 21:30-23:00; Su 10:45-23:00",
     "source": "manual",
     "id": "9500038",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -110989,7 +110977,7 @@
     "openingHours": "Mo 10:45-23:00; Tu 10:45-23:00; We 10:45-23:00; Th 10:30-23:00; Fr 10:00-16:00; Sa 21:30-23:00; Su 11:00-23:00",
     "source": "manual",
     "id": "9500039",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -111006,7 +110994,7 @@
     "openingHours": "Mo 11:00-23:00; Tu 11:00-23:00; We 11:00-23:00; Th 11:00-23:00; Fr 10:30-16:00; Sa 21:30-23:59; Su 11:00-23:00",
     "source": "manual",
     "id": "9500040",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -111023,7 +111011,7 @@
     "openingHours": "Mo 10:30-22:30; Tu 10:30-22:30; We 10:30-22:30; Th 10:30-22:30; Fr 10:30-17:30; Sa 22:00-23:00; Su 10:30-22:30",
     "source": "manual",
     "id": "9500041",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -111040,7 +111028,7 @@
     "openingHours": "Mo 11:00-23:00; Tu 11:00-23:00; We 11:00-23:00; Th 11:00-23:00; Fr 10:30-16:00; Su 11:00-23:00",
     "source": "manual",
     "id": "9500042",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -111057,7 +111045,7 @@
     "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-15:30; Sa 21:30-22:30; Su 11:00-22:00",
     "source": "manual",
     "id": "9500043",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -111074,7 +111062,7 @@
     "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 11:00-16:00; Su 11:00-22:00",
     "source": "manual",
     "id": "9500044",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -111091,7 +111079,7 @@
     "openingHours": "Mo 10:30-22:30; Tu 10:30-22:30; We 10:30-22:30; Th 10:30-22:30; Fr 10:30-16:00; Su 10:30-22:30",
     "source": "manual",
     "id": "9500045",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -111108,7 +111096,7 @@
     "openingHours": "Mo 11:00-23:00; Tu 11:00-23:00; We 11:00-23:00; Th 11:00-23:00; Fr 10:30-16:00; Sa 21:15-23:00; Su 11:00-23:00",
     "source": "manual",
     "id": "9500046",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -111125,7 +111113,7 @@
     "openingHours": "Mo 11:00-22:15; Tu 11:00-22:15; We 11:00-22:15; Th 11:00-22:15; Fr 10:30-16:00; Su 11:00-22:15",
     "source": "manual",
     "id": "9500047",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -111142,7 +111130,7 @@
     "openingHours": "Mo 10:30-22:00; Tu 10:30-22:00; We 10:30-22:00; Th 10:30-22:00; Fr 10:30-16:00; Sa 21:30-23:00; Su 10:30-22:00",
     "source": "manual",
     "id": "9500048",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -111159,7 +111147,7 @@
     "openingHours": "Mo 10:30-23:00; Tu 10:30-23:00; We 10:30-23:00; Th 10:30-23:00; Fr 10:30-16:00; Sa 21:30-23:00; Su 10:30-23:00",
     "source": "manual",
     "id": "9500049",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -111176,7 +111164,7 @@
     "openingHours": "Mo 11:00-21:30; Tu 11:00-21:30; We 11:00-21:30; Th 11:00-21:30; Fr 11:00-15:30; Su 11:00-21:30",
     "source": "manual",
     "id": "9500050",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -111193,7 +111181,7 @@
     "openingHours": "Mo 11:00-22:15; Tu 11:00-22:15; We 11:00-22:15; Th 11:00-22:15; Fr 10:30-16:00; Su 11:00-22:15",
     "source": "manual",
     "id": "9500051",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -111210,7 +111198,7 @@
     "openingHours": "Mo 10:30-22:30; Tu 10:30-22:30; We 10:30-22:30; Th 10:30-22:30; Fr 10:30-17:30; Sa 21:30-22:30; Su 10:30-22:30",
     "source": "manual",
     "id": "9500052",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -111227,7 +111215,7 @@
     "openingHours": "Mo 11:00-21:00; Tu 11:00-21:00; We 11:00-21:00; Th 11:00-21:00; Fr 10:30-16:00; Su 11:00-21:00",
     "source": "manual",
     "id": "9500053",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -111244,7 +111232,7 @@
     "openingHours": "Mo 10:30-22:00; Tu 10:30-22:00; We 10:30-22:00; Th 10:30-22:00; Fr 10:30-16:00; Su 10:30-22:00",
     "source": "manual",
     "id": "9500054",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -111261,7 +111249,7 @@
     "openingHours": "Mo 10:30-21:30; Tu 10:30-21:30; We 10:30-21:30; Th 10:30-21:30; Fr 10:00-15:00; Su 10:30-21:30",
     "source": "manual",
     "id": "9500055",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -111278,7 +111266,7 @@
     "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:30-15:30; Sa 21:30-23:00; Su 11:00-22:30",
     "source": "manual",
     "id": "9500056",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -111295,7 +111283,7 @@
     "openingHours": "Mo 10:30-23:15; Tu 10:30-23:15; We 11:00-23:15; Th 10:30-23:15; Fr 10:45-16:00; Sa 21:30-23:15; Su 11:00-23:15",
     "source": "manual",
     "id": "9500057",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -111312,7 +111300,7 @@
     "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:00-16:00; Sa 21:30-22:30; Su 11:00-22:30",
     "source": "manual",
     "id": "9500058",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -111329,7 +111317,7 @@
     "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:00-16:00; Sa 21:00-23:00; Su 11:00-22:00",
     "source": "manual",
     "id": "9500059",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -111346,7 +111334,7 @@
     "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:30-15:00; Sa 21:30-23:00; Su 11:30-22:30",
     "source": "manual",
     "id": "9500060",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -111363,7 +111351,7 @@
     "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-15:00; Sa 21:30-22:00; Su 11:00-22:00",
     "source": "manual",
     "id": "9500061",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -111380,7 +111368,7 @@
     "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:30-15:30; Sa 21:30-23:00; Su 11:00-22:30",
     "source": "manual",
     "id": "9500062",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -111397,7 +111385,7 @@
     "openingHours": "Mo 10:30-22:15; Tu 10:30-22:15; We 10:30-22:15; Th 10:30-22:15; Fr 10:00-15:30; Sa 21:30-23:15; Su 10:30-22:15",
     "source": "manual",
     "id": "9500063",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -111414,7 +111402,7 @@
     "openingHours": "Mo 10:30-22:00; Tu 10:30-22:00; We 10:30-22:00; Th 10:30-22:00; Fr 10:30-16:00; Sa 21:30-23:00; Su 10:30-22:00",
     "source": "manual",
     "id": "9500064",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -111431,7 +111419,7 @@
     "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:00-16:00; Sa 21:30-23:00; Su 11:00-22:30",
     "source": "manual",
     "id": "9500065",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -111448,7 +111436,7 @@
     "openingHours": "Mo 11:00-21:00; Tu 11:00-21:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-15:00; Su 11:00-21:00",
     "source": "manual",
     "id": "9500066",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -111465,7 +111453,7 @@
     "openingHours": "Mo 10:30-22:30; Tu 10:30-22:30; We 10:30-22:30; Th 10:30-22:00; Fr 10:30-16:00; Sa 21:30-23:00; Su 10:30-22:30",
     "source": "manual",
     "id": "9500067",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -111482,7 +111470,7 @@
     "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-15:30; Su 11:00-22:00",
     "source": "manual",
     "id": "9500068",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -111499,7 +111487,7 @@
     "openingHours": "Mo 10:30-22:30; Tu 10:30-22:30; We 10:30-22:30; Th 10:30-22:30; Fr 10:30-16:00; Su 10:30-22:30",
     "source": "manual",
     "id": "9500069",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -111516,7 +111504,7 @@
     "openingHours": "Mo 11:00-22:15; Tu 11:00-22:15; We 11:00-22:15; Th 11:00-22:00; Fr 10:30-15:30; Su 11:00-22:15",
     "source": "manual",
     "id": "9500070",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -111533,7 +111521,7 @@
     "openingHours": "Mo 11:00-23:59; Tu 11:00-23:59; We 11:00-23:59; Th 11:00-23:59; Fr 11:00-16:30; Sa 21:30-23:59; Su 11:00-23:00",
     "source": "manual",
     "id": "9500071",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -111550,7 +111538,7 @@
     "openingHours": "Mo 09:30-22:15; Tu 09:30-22:15; We 09:30-22:15; Th 08:00-22:15; Fr 09:30-16:00; Su 08:00-22:15",
     "source": "manual",
     "id": "9500073",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -111566,7 +111554,7 @@
   {
     "source": "manual",
     "id": "9500074",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -111583,7 +111571,7 @@
     "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 10:30-22:30; Fr 10:00-16:00; Su 10:30-22:30",
     "source": "manual",
     "id": "9500075",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -111600,7 +111588,7 @@
     "openingHours": "Mo 10:30-22:00; Tu 10:30-22:00; We 10:30-22:00; Th 10:30-22:00; Fr 10:30-16:00; Su 10:30-22:00",
     "source": "manual",
     "id": "9500076",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -111617,7 +111605,7 @@
     "openingHours": "Mo 10:30-23:00; Tu 10:30-23:00; We 10:30-23:00; Th 10:30-23:00; Fr 10:30-16:00; Su 10:30-23:00",
     "source": "manual",
     "id": "9500077",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -113333,7 +113321,7 @@
     "openingHours": "Mo 02:00-22:00; Tu 02:00-22:00; We 02:00-22:00; Th 02:00-22:00; Fr 02:00-19:15; Sa 05:00-22:00; Su 02:00-22:00",
     "source": "manual",
     "id": "9500080",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "meat",
     "kosherType": "kosher",
     "name": "מקדונלד'ס",
@@ -113349,9 +113337,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-58a85dcc",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 10:00-23:00 | ו 10:00-15:00 | ש שעה אחרי צאת שבת-23:00",
-    "name": "גולדה אור יהודה",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "אור-יהודה",
@@ -113370,9 +113358,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-9fd9706a",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 8:00-22:00 | ו 8:00-4ש לפני שבת | ש שעה אחרי צאת שבת-22:00",
-    "name": "גולדה אריאל",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "אריאל",
@@ -113391,9 +113379,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-26f62510",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 8:00-00:00 | ו 8:00-14:00 | ש חצי שעה אחרי צאת שבת-00:00",
-    "name": "גולדה אשדוד טודו סנטר",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "ashdod",
@@ -113412,9 +113400,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-757e7cdc",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 10:00-00:00 | ו 9:00-13:00 | ש 20:00-00:00",
-    "name": "גולדה אשקלון אגמים",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "ashkelon",
@@ -113433,9 +113421,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-bd46421f",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 9:00-23:00 | ו 9:00-שעה לפני שבת | ש שעה אחרי צאת שבת-23:00",
-    "name": "גולדה באר יעקב",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "באר-יעקב",
@@ -113454,9 +113442,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-1774fb5e",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 9:00-23:00 | ו 9:00-15:00 | ש שעה אחרי צאת שבת-23:00",
-    "name": "גולדה בית שמש",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "בית-שמש",
@@ -113475,9 +113463,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-038e75bd",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 8:00-1:00 | ו 8:00-שעה לפני שבת | ש חצי שעה אחרי צאת שבת-1:30",
-    "name": "גולדה בת ים פארק הים",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "bat-yam",
@@ -113496,9 +113484,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-94f06549",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 10:00-22:00 | ו 9:00-13:30 | ש חצי שעה אחרי צאת שבת-22:00",
-    "name": "גולדה גבעת שמואל",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "גבעת-שמואל",
@@ -113517,9 +113505,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-d5eead7a",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 10:00-22:00 | ו 10:00-14:00 | ש שעה אחרי צאת שבת-23:00",
-    "name": "גולדה גדרה",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "גדרה",
@@ -113538,9 +113526,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-b8b367cc",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 8:00-00:00 | ו 8:00-14:30 | ש חצי שעה אחרי צאת שבת-00:00",
-    "name": "גולדה דימונה",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "דימונה",
@@ -113559,9 +113547,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-1ed09f74",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 8:00-23:15 | ו 8:00-16:00 | ש חצי שעה אחרי צאת שבת-00:00",
-    "name": "גולדה חולון פנחס איילון",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "holon",
@@ -113581,9 +113569,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-7861d141",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 10:00-23:00 | ו 10:00-שעה לפני שבת | ש שעה אחרי צאת שבת-23:00",
-    "name": "גולדה חריש",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "חריש",
@@ -113602,9 +113590,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-7d983562",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 9:00-00:30 | ו 9:00-שעה לפני שבת | ש חצי שעה אחרי צאת שבת-00:30",
-    "name": "גולדה טבריה מדרחוב",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "טבריה",
@@ -113623,9 +113611,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-19756a60",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 9:00-00:00 | ו 9:00-שעה לפני שבת | ש שעה אחרי צאת שבת-00:00",
-    "name": "גולדה טבריה קפלן",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "טבריה",
@@ -113644,9 +113632,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-4b2ab2c5",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 9:00-22:00 | ו 9:00-שעה לפני שבת | ש שעה אחרי צאת שבת-00:00",
-    "name": "גולדה יוקנעם",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "יוקנעם",
@@ -113665,9 +113653,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-c3b93ddf",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 8:00-23:00 | ו 8:00-16:00 | ש שעה אחרי צאת שבת-23:00",
-    "name": "גולדה ירושלים בית הכרם",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "jerusalem",
@@ -113686,9 +113674,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-077cd132",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ד 8:00-23:00 | ה 8:00-00:00 | ו 8:00-שעה לפני שבת | ש שעה אחרי צאת שבת-00:00",
-    "name": "גולדה ירושלים ממילא",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "jerusalem",
@@ -113707,9 +113695,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-7698e17c",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 9:30-22:00 | ו 9:30-14:30 | ש שעה אחרי צאת שבת-22:00",
-    "name": "גולדה ירושלים קניון מלחה",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "jerusalem",
@@ -113728,9 +113716,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-65873143",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 8:00-23:00 | ו 8:00-שעה לפני שבת | ש שעה אחרי צאת שבת-23:00",
-    "name": "גולדה כפר יונה",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "כפר-יונה",
@@ -113749,9 +113737,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-6acf01da",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 10:00-22:00 | ו 10:00-שעתיים לפני שבת | ש שעה אחרי צאת שבת-22:30",
-    "name": "גולדה לוד",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "lod",
@@ -113770,9 +113758,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-8de92fea",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 8:00-23:00 | ו 8:00-15:00 | ש שעה אחרי צאת שבת-23:30",
-    "name": "גולדה מבשרת ציון",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "מבשרת-ציון",
@@ -113791,9 +113779,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-82d4b21f",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ד 8:00-22:30 | ה 8:00-23:30 | ו 8:00-15:00 | ש חצי שעה אחרי צאת שבת-23:00",
-    "name": "גולדה מגדל העמק",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "מגדל-העמק",
@@ -113812,9 +113800,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-ff986d68",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 8:00-22:00 | ו 8:00-שעה לפני שבת | ש שעה אחרי צאת שבת-22:00",
-    "name": "גולדה מזכרת בתיה",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "מזכרת-בתיה",
@@ -113834,9 +113822,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-a81b55a4",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 8:30-00:00 | ו 8:00-שעה לפני שבת | ש שעה אחרי צאת שבת-00:00",
-    "name": "גולדה מעלות תרשיחא",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "מעלות",
@@ -113855,9 +113843,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-84837595",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 9:00-23:00 | ו 9:00-שעה לפני שבת | ש שעה אחרי צאת שבת-23:00",
-    "name": "גולדה נתיבות",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "נתיבות",
@@ -113876,9 +113864,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-7120187b",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 8:00-00:00 | ו 8:00-שעה לפני שבת | ש שעה אחרי צאת שבת-00:00",
-    "name": "גולדה נתניה גשר הארי",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "netanya",
@@ -113897,9 +113885,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-7c882c6c",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 8:00-00:00 | ו 8:00-3ש לפני שבת | ש שעה אחרי צאת שבת-00:30",
-    "name": "גולדה נתניה כיכר",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "netanya",
@@ -113918,9 +113906,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-690a1494",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 8:00-23:00 | ו 8:00-שעה לפני שבת | ש שעה אחרי צאת שבת-00:00",
-    "name": "גולדה נתניה פיאנו",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "netanya",
@@ -113939,9 +113927,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-69079523",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 8:00-00:00 | ו 8:00-שעה לפני שבת | ש חצי שעה אחרי צאת שבת-00:00",
-    "name": "גולדה עכו",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "עכו",
@@ -113960,9 +113948,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-098ce9dd",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 10:00-21:00 | ו 9:00-13:00 | ש שעה מצאת שבת-23:00",
-    "name": "גולדה עפולה",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "עפולה",
@@ -113981,9 +113969,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-ed0e8ff8",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 9:00-23:00 | ו 9:00-14:30 | ש חצי שעה אחרי צאת שבת-00:00",
-    "name": "גולדה פרדס חנה",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "פרדס-חנה",
@@ -114002,9 +113990,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-04a28946",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 9:00-23:00 | ו 9:00-15:30 | ש שעה אחרי צאת שבת-23:00",
-    "name": "גולדה פתח תקווה",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "petah-tikva",
@@ -114023,9 +114011,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-b64bbbac",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 9:00-22:00 | ו 9:00-שעה לפני שבת | ש שעה אחרי צאת שבת-22:30",
-    "name": "גולדה קניון איילון",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "ramat-gan",
@@ -114044,9 +114032,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-6f64e5de",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 9:30-22:00 | ו 8:00-14:30 | ש חצי שעה אחרי צאת שבת-23:00",
-    "name": "גולדה קניון מודיעין",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "modiin",
@@ -114065,9 +114053,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-996cf4b3",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 9:00-22:00 | ו 8:00-שעתיים לפני שבת | ש שעה אחרי צאת שבת-23:00",
-    "name": "גולדה קניון ערים כפר סבא",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "kfar-saba",
@@ -114087,9 +114075,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-44d23fa2",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 8:00-23:00 | ו 8:00-14:00 | ש שעה אחרי צאת שבת-00:00",
-    "name": "גולדה קריית גת",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "קריית-גת",
@@ -114108,9 +114096,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-a4a4d9af",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 10:00-23:00 | ו 9:00-שעה לפני שבת | ש שעה אחרי יציאת שבת-23:00",
-    "name": "גולדה קריית מוצקין",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "קריית-מוצקין",
@@ -114129,9 +114117,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-3aa8f28b",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 10:00-23:00 | ו 10:00-חצי שעה לפני שבת | ש חצי שעה אחרי צאת שבת-00:00",
-    "name": "גולדה קריית מלאכי",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "קריית-מלאכי",
@@ -114150,9 +114138,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-38eb9b84",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 10:00-22:00 | ו 10:00-שעתיים לפני שבת | ש שעה אחרי צאת שבת-00:00",
-    "name": "גולדה קריית שמונה",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "קריית-שמונה",
@@ -114171,9 +114159,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-fd7bd319",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 11:00-22:00 | ו 8:00-שעה לפני שבת | ש שעה לאחר צאת שבת-23:00",
-    "name": "גולדה קרית אתא",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "קרית-אתא",
@@ -114192,9 +114180,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-4ceb3556",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 9:00-23:00 | ו 9:00-שעה לפני שבת | ש שעה אחרי צאת שבת-00:00",
-    "name": "גולדה ראש העין",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "ראש-העין",
@@ -114213,9 +114201,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-edc09cc3",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 9:00-23:00 | ו 9:00-שעתיים לפני שבת | ש חצי שעה אחרי צאת שבת-00:00",
-    "name": "גולדה ראשון לציון גבעתי",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "rishon-lezion",
@@ -114234,9 +114222,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-a96b2e8e",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 10:00-23:00 | ו 9:00-14:00 | ש חצי שעה אחרי צאת שבת-00:00",
-    "name": "גולדה שדרות",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "שדרות",
@@ -114255,9 +114243,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-122385ae",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 9:00-23:30 | ו 9:00-חצי שעה לפני שבת | ש חצי שעה אחרי צאת שבת-23:30",
-    "name": "גולדה שוהם",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "שוהם",
@@ -114276,9 +114264,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-fc07495d",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 10:00-23:00 | ו 10:00-שעה לפני שבת | ש שעה אחרי צאת שבת-23:00",
-    "name": "גולדה תל אביב בוגרשוב",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "tel-aviv",
@@ -114297,9 +114285,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-c923a1b6",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 9:00-23:00 | ו 9:00-16:00 | ש 20:00-23:00",
-    "name": "גולדה תל אביב יד אליהו",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "tel-aviv",
@@ -114318,9 +114306,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-fefe861d",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 7:45-23:30 | ו 8:00-שעה לפני שבת | ש שעה אחרי צאת שבת-23:30",
-    "name": "גולדה תל אביב קניון עזריאלי",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "tel-aviv",
@@ -114339,9 +114327,9 @@
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
     "id": "golda-fda06d3a",
-    "type": "cafe",
+    "type": "ice_cream_parlor",
     "openingHours": "א-ה 8:00-22:00 | ו 8:00-שעה לפני שבת | ש שעה אחרי צאת שבת-00:00",
-    "name": "גולדה תל השומר",
+    "name": "גלידה גולדה",
     "locationPrecision": "city",
     "website": "https://www.goldaglida.co.il",
     "cityId": "ramat-gan",
@@ -116474,7 +116462,7 @@
   },
   {
     "id": "rebar-d80aad31",
-    "name": "רי בר קניון איילון רמת גן",
+    "name": "רי בר rebar קניון איילון רמת גן",
     "type": "cafe",
     "cityId": "רמת גן",
     "address": "אבא הלל 301, קניון איילון, רמת גן",
@@ -116486,14 +116474,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:30-22:00 | ו 08:30-16:00 | מוצ\"ש 21:00-23:00",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-a28c1ea4",
-    "name": "רי בר רמת אפעל רמת גן",
+    "name": "רי בר rebar רמת אפעל רמת גן",
     "type": "cafe",
     "cityId": "רמת גן",
     "address": "דרך שיבא 14, רמת גן",
@@ -116505,14 +116493,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:30-21:30 | ו 08:30-15:00 | ש סגור",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-a13c88d8",
-    "name": "רי בר ביאליק רמת גן",
+    "name": "רי בר rebar ביאליק רמת גן",
     "type": "cafe",
     "cityId": "רמת גן",
     "address": "ביאליק 76, פינת ז'בוטינסקי, רמת גן",
@@ -116524,14 +116512,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:30-21:30 | ו 08:30-16:00 | ש סגור",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-9d7d79ac",
-    "name": "רי בר גבעת שמואל",
+    "name": "רי בר rebar גבעת שמואל",
     "type": "cafe",
     "cityId": "גבעת שמואל",
     "address": "שדרות מנחם בגין 38, גבעת שמואל",
@@ -116543,14 +116531,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:30-20:00 | ו 08:00-14:45 | ש סגור",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-8b7c4c33",
-    "name": "רי בר גני תקווה",
+    "name": "רי בר rebar גני תקווה",
     "type": "cafe",
     "cityId": "גני תקווה",
     "address": "ההדרים 7, גני תקווה",
@@ -116562,14 +116550,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:30-22:30 | ו 08:30-15:00 | מוצ\"ש 19:45-22:00",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-ca53bc00",
-    "name": "רי בר קריית אונו",
+    "name": "רי בר rebar קריית אונו",
     "type": "cafe",
     "cityId": "קריית אונו",
     "address": "הקריה האקדמית אונו",
@@ -116581,14 +116569,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:30-22:30 | ו 08:30-15:30 | מוצ\"ש 21:00-23:00",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-0edef232",
-    "name": "רי בר חולון עזריאלי",
+    "name": "רי בר rebar חולון עזריאלי",
     "type": "cafe",
     "cityId": "חולון",
     "address": "גולדה מאיר 7, עזריאלי חולון",
@@ -116600,14 +116588,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:30-22:00 | ו 08:30-16:00 | מוצ\"ש 20:30-23:00",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-1cfb4934",
-    "name": "רי בר הקניון הגדול פתח תקווה",
+    "name": "רי בר rebar הקניון הגדול פתח תקווה",
     "type": "cafe",
     "cityId": "פתח תקווה",
     "address": "ז'בוטינסקי 72, הקניון הגדול, פתח תקווה",
@@ -116619,14 +116607,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 09:00-22:00 | ו 08:30-14:30 | מוצ\"ש 21:00-23:00",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-470f6bc8",
-    "name": "רי בר אם המושבות פתח תקווה",
+    "name": "רי בר rebar אם המושבות פתח תקווה",
     "type": "cafe",
     "cityId": "פתח תקווה",
     "address": "ראשון לציון 1, meex אם המושבות, פתח תקווה",
@@ -116638,14 +116626,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:30-21:30 | ו 08:30-15:00 | ש סגור",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-eb7726e8",
-    "name": "רי בר סירקין פתח תקווה",
+    "name": "רי בר rebar סירקין פתח תקווה",
     "type": "cafe",
     "cityId": "פתח תקווה",
     "address": "אלעזר פרידמן 9, פתח תקווה",
@@ -116657,14 +116645,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 09:00-21:00 | ו 08:30-14:30 | ש סגור",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-c4a716c9",
-    "name": "רי בר קניון הזהב ראשון לציון",
+    "name": "רי בר rebar קניון הזהב ראשון לציון",
     "type": "cafe",
     "cityId": "ראשון לציון",
     "address": "דוד סחרוב 21, קניון הזהב, ראשון לציון",
@@ -116676,14 +116664,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:30-22:00 | ו 08:30-16:00 | מוצ\"ש 20:45-23:00",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-0ca74b52",
-    "name": "רי בר קניון ראשונים ראשון לציון",
+    "name": "רי בר rebar קניון ראשונים ראשון לציון",
     "type": "cafe",
     "cityId": "ראשון לציון",
     "address": "שדרות נים 2, קניון עזריאלי ראשונים",
@@ -116695,14 +116683,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:15-22:00 | ו 08:30-16:00 | מוצ\"ש 20:45-23:00",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-3fb40815",
-    "name": "רי בר קניותר נס ציונה",
+    "name": "רי בר rebar קניותר נס ציונה",
     "type": "cafe",
     "cityId": "נס ציונה",
     "address": "האירוסים 53, קניותר, נס ציונה",
@@ -116714,14 +116702,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 09:00-21:00 | ו 08:30-14:30 | ש סגור",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-aae45389",
-    "name": "רי בר עזריאלי רמלה",
+    "name": "רי בר rebar עזריאלי רמלה",
     "type": "cafe",
     "cityId": "רמלה",
     "address": "שדרות דוד ריזאל 1, קניון עזריאלי, רמלה",
@@ -116733,14 +116721,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:30-22:00 | ו 08:30-15:30 | מוצ\"ש 20:15-23:00",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-195a2d8e",
-    "name": "רי בר באר יעקב",
+    "name": "רי בר rebar באר יעקב",
     "type": "cafe",
     "cityId": "באר יעקב",
     "address": "יהלום 4, באר יעקב",
@@ -116752,14 +116740,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 09:00-22:15 | ו 09:00-15:30 | מוצ\"ש 20:30-23:00",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-947ca636",
-    "name": "רי בר meex רחובות",
+    "name": "רי בר rebar meex רחובות",
     "type": "cafe",
     "cityId": "רחובות",
     "address": "דרך הים 1, רחובות",
@@ -116771,14 +116759,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:30-22:00 | ו 08:30-16:00 | ש סגור",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-8a9019a7",
-    "name": "רי בר עזריאלי מודיעין",
+    "name": "רי בר rebar עזריאלי מודיעין",
     "type": "cafe",
     "cityId": "מודיעין",
     "address": "לב העיר 2, עזריאלי, מודיעין",
@@ -116790,14 +116778,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:30-22:00 | ו 08:30-15:00 | מוצ\"ש 20:30-23:00",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-5009ef1a",
-    "name": "רי בר מוריה מודיעין",
+    "name": "רי בר rebar מוריה מודיעין",
     "type": "cafe",
     "cityId": "מודיעין",
     "address": "לאה אימנו 1, מודיעין",
@@ -116809,14 +116797,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:30-22:00 | ו 08:30-16:00 | מוצ\"ש 20:00-23:00",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-033ab8c0",
-    "name": "רי בר שוהם",
+    "name": "רי בר rebar שוהם",
     "type": "cafe",
     "cityId": "שוהם",
     "address": "שד' עמק איילון 30, שוהם",
@@ -116828,14 +116816,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 07:45-22:00 | ו 07:45-15:30 | ש סגור",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-05a0f9da",
-    "name": "רי בר ביג פאשן בית שמש",
+    "name": "רי בר rebar ביג פאשן בית שמש",
     "type": "cafe",
     "cityId": "בית שמש",
     "address": "יגאל אלון 1, ביג פאשן, בית שמש",
@@ -116847,14 +116835,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:30-22:15 | ו 08:30-15:00 | מוצ\"ש 21:00-23:00",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-94998d06",
-    "name": "רי בר קניון מלחה ירושלים",
+    "name": "רי בר rebar קניון מלחה ירושלים",
     "type": "cafe",
     "cityId": "ירושלים",
     "address": "אגודת ספורט בית\"ר 1, קניון מלחה, ירושלים",
@@ -116866,14 +116854,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:45-22:00 | ו 08:30-15:30 | מוצ\"ש 21:00-23:30",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-a70cd408",
-    "name": "רי בר הרובע היהודי ירושלים",
+    "name": "רי בר rebar הרובע היהודי ירושלים",
     "type": "cafe",
     "cityId": "ירושלים",
     "address": "תפארת ישראל 8, הרובע היהודי, ירושלים",
@@ -116885,14 +116873,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:30-22:30 | ו 08:30-15:00 | ש סגור",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-64bf0484",
-    "name": "רי בר קניון הדר ירושלים",
+    "name": "רי בר rebar קניון הדר ירושלים",
     "type": "cafe",
     "cityId": "ירושלים",
     "address": "גנרל פייר קניג 26, קניון הדר, ירושלים",
@@ -116904,14 +116892,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:15-22:00 | ו 08:15-15:00 | מוצ\"ש 20:00-23:15",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-bad47750",
-    "name": "רי בר מעלה אדומים",
+    "name": "רי בר rebar מעלה אדומים",
     "type": "cafe",
     "cityId": "מעלה אדומים",
     "address": "דרך קדם 5, מעלה אדומים",
@@ -116923,14 +116911,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:00-21:45 | ו 08:00-15:00 | מוצ\"ש 21:30-23:00",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-e7b09ded",
-    "name": "רי בר קריית השרון נתניה",
+    "name": "רי בר rebar קריית השרון נתניה",
     "type": "cafe",
     "cityId": "נתניה",
     "address": "טוס לנטוס, מרכז אלון, נתניה",
@@ -116942,14 +116930,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:30-22:00 | ו 08:30-15:00 | ש סגור",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-06e54743",
-    "name": "רי בר קניון השרון נתניה",
+    "name": "רי בר rebar קניון השרון נתניה",
     "type": "cafe",
     "cityId": "נתניה",
     "address": "הרצל 60, קניון השרון, נתניה",
@@ -116961,14 +116949,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:30-21:30 | ו 08:30-15:00 | מוצ\"ש 20:45-22:30",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-f6794b4f",
-    "name": "רי בר עיר ימים נתניה",
+    "name": "רי בר rebar עיר ימים נתניה",
     "type": "cafe",
     "cityId": "נתניה",
     "address": "בני ברמן 2, עיר ימים, נתניה",
@@ -116980,14 +116968,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:30-22:00 | ו 08:30-15:45 | מוצ\"ש 21:15-23:00",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-c7c7b2e2",
-    "name": "רי בר רעננה רננים",
+    "name": "רי בר rebar רעננה רננים",
     "type": "cafe",
     "cityId": "רעננה",
     "address": "המלאכה 2, קניון רננים, רעננה",
@@ -116999,14 +116987,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:45-22:00 | ו 08:30-15:00 | מוצ\"ש 20:45-23:00",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-cd4f9e09",
-    "name": "רי בר קניון לב חדרה",
+    "name": "רי בר rebar קניון לב חדרה",
     "type": "cafe",
     "cityId": "חדרה",
     "address": "רוטשילד 40, קניון לב חדרה, חדרה",
@@ -117018,14 +117006,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:30-21:30 | ו 08:30-15:30 | מוצ\"ש לאחר צאת שבת עד 00:15",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-792ad839",
-    "name": "רי בר ביג אור עקיבא",
+    "name": "רי בר rebar ביג אור עקיבא",
     "type": "cafe",
     "cityId": "אור עקיבא",
     "address": "שדרות הנשיא ויצמן 4, ביג, אור עקיבא",
@@ -117037,14 +117025,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:30-22:00 | ו 08:30-14:45 | מוצ\"ש 21:15-23:00",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-6b0c7e46",
-    "name": "רי בר סינמול לב המפרץ חיפה",
+    "name": "רי בר rebar סינמול לב המפרץ חיפה",
     "type": "cafe",
     "cityId": "חיפה",
     "address": "שד' ההסתדרות 55, סינמול לב המפרץ, חיפה",
@@ -117056,14 +117044,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:30-22:00 | ו 08:00-17:15 | מוצ\"ש 20:45-23:00",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-ee1b3a85",
-    "name": "רי בר רמב\"ם חיפה",
+    "name": "רי בר rebar רמב\"ם חיפה",
     "type": "cafe",
     "cityId": "חיפה",
     "address": "העלייה השנייה 8, חיפה",
@@ -117075,14 +117063,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:00-22:00 | ו 08:00-14:30 | מוצ\"ש 21:15-22:30",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-6a15d27e",
-    "name": "רי בר עיר תחתית חיפה",
+    "name": "רי בר rebar עיר תחתית חיפה",
     "type": "cafe",
     "cityId": "חיפה",
     "address": "נתנזון 11, עיר תחתית, חיפה",
@@ -117094,14 +117082,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:30-23:00 | ו 08:15-17:30 | מוצ\"ש 20:45-23:30",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-7a9dc1f7",
-    "name": "רי בר עזריאלי חיפה",
+    "name": "רי בר rebar עזריאלי חיפה",
     "type": "cafe",
     "cityId": "חיפה",
     "address": "משה פלימן 4, קניון חיפה עזריאלי",
@@ -117113,14 +117101,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:30-21:45 | ו 08:00-15:30 | מוצ\"ש 21:00-22:45",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-21c4c84c",
-    "name": "רי בר קיריון קרית ביאליק",
+    "name": "רי בר rebar קיריון קרית ביאליק",
     "type": "cafe",
     "cityId": "קריית ביאליק",
     "address": "דרך עכו חיפה 192, קיריון",
@@ -117132,14 +117120,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:30-22:30 | ו 08:00-15:30 | מוצ\"ש 21:15-23:45",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-02629c63",
-    "name": "רי בר שער הצפון קרית אתא",
+    "name": "רי בר rebar שער הצפון קרית אתא",
     "type": "cafe",
     "cityId": "קריית אתא",
     "address": "דרך חיפה 52, שער הצפון",
@@ -117151,14 +117139,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:30-22:00 | ו 08:30-15:00 | מוצ\"ש 20:30-22:00",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-574d982c",
-    "name": "רי בר סנטר הגליל ראש פינה",
+    "name": "רי בר rebar סנטר הגליל ראש פינה",
     "type": "cafe",
     "cityId": "ראש פינה",
     "address": "סנטר הגליל, ראש פינה",
@@ -117170,14 +117158,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:45-22:00 | ו 08:45-15:00 | מוצ\"ש 20:45-23:00",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-0b5bbb7e",
-    "name": "רי בר ביג פאשן טבריה",
+    "name": "רי בר rebar ביג פאשן טבריה",
     "type": "cafe",
     "cityId": "טבריה",
     "address": "יהודה הלוי 9990, ביג פאשן, טבריה",
@@ -117189,14 +117177,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:45-22:00 | ו 08:30-15:00 | מוצ\"ש 21:15-23:00",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-a32ef445",
-    "name": "רי בר ביג פוריה טבריה",
+    "name": "רי בר rebar ביג פוריה טבריה",
     "type": "cafe",
     "cityId": "טבריה",
     "address": "המברג 1, ביג פוריה, טבריה",
@@ -117208,14 +117196,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:30-22:30 | ו 08:30-16:00 | מוצ\"ש 20:30-23:00",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-8ca3b9b4",
-    "name": "רי בר עמק סנטר עפולה",
+    "name": "רי בר rebar עמק סנטר עפולה",
     "type": "cafe",
     "cityId": "עפולה",
     "address": "שדרות יצחק רבין 18, עמק סנטר פרנדלי, עפולה",
@@ -117227,14 +117215,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:30-22:00 | ו 08:30-15:00 | מוצ\"ש 21:00-22:30",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-1d266612",
-    "name": "רי בר תחנה מרכזית עפולה",
+    "name": "רי בר rebar תחנה מרכזית עפולה",
     "type": "cafe",
     "cityId": "עפולה",
     "address": "קהילת ציון 3, תחנה מרכזית, עפולה",
@@ -117246,14 +117234,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 07:00-21:30 | ו 07:00-15:00 | מוצ\"ש 21:00-22:45",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-77d95d5a",
-    "name": "רי בר ביג יקנעם",
+    "name": "רי בר rebar ביג יקנעם",
     "type": "cafe",
     "cityId": "יוקנעם",
     "address": "שד' יצחק רבין 9, ביג, יקנעם",
@@ -117265,14 +117253,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:30-21:30 | ו 08:00-15:00 | מוצ\"ש לאחר צאת שבת",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-38357306",
-    "name": "רי בר בית שאן",
+    "name": "רי בר rebar בית שאן",
     "type": "cafe",
     "cityId": "בית שאן",
     "address": "צים סנטר, בית שאן",
@@ -117284,14 +117272,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:30-22:00 | ו 08:30-15:00 | מוצ\"ש 20:15-23:00",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-412701fd",
-    "name": "רי בר ביג באר שבע",
+    "name": "רי בר rebar ביג באר שבע",
     "type": "cafe",
     "cityId": "באר שבע",
     "address": "חיל ההנדסה 6, ביג, באר שבע",
@@ -117303,14 +117291,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 09:00-22:00 | ו 08:30-15:30 | מוצ\"ש 20:15-22:30",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-60e2c2e9",
-    "name": "רי בר גרנד קניון באר שבע",
+    "name": "רי בר rebar גרנד קניון באר שבע",
     "type": "cafe",
     "cityId": "באר שבע",
     "address": "שדרות דוד טוביהו 125, גרנד קניון, באר שבע",
@@ -117322,14 +117310,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:30-22:15 | ו 08:30-15:30 | מוצ\"ש 20:15-23:15",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-dc59d466",
-    "name": "רי בר קניון הנגב באר שבע",
+    "name": "רי בר rebar קניון הנגב באר שבע",
     "type": "cafe",
     "cityId": "באר שבע",
     "address": "שדרות יצחק רגר 2, קניון הנגב, באר שבע",
@@ -117341,14 +117329,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 09:00-21:30 | ו 09:00-15:00 | מוצ\"ש 20:30-22:30",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-890db640",
-    "name": "רי בר קניון סימול אשדוד",
+    "name": "רי בר rebar קניון סימול אשדוד",
     "type": "cafe",
     "cityId": "אשדוד",
     "address": "הגדוד העברי 6, קניון סימול, אשדוד",
@@ -117360,14 +117348,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 09:00-22:00 | ו 09:00-15:00 | מוצ\"ש 20:30-23:00",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-2e622448",
-    "name": "רי בר מרינה אשקלון",
+    "name": "רי בר rebar מרינה אשקלון",
     "type": "cafe",
     "cityId": "אשקלון",
     "address": "הנמל 9, מרינה, אשקלון",
@@ -117379,14 +117367,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 09:00-23:00 | ו 09:00-16:45 | מוצ\"ש 20:30-23:45",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-b8be2aa1",
-    "name": "רי בר נתיבות",
+    "name": "רי בר rebar נתיבות",
     "type": "cafe",
     "cityId": "נתיבות",
     "address": "מתחם פריז, נתיבות",
@@ -117398,14 +117386,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:45-22:45 | ו 08:45-15:00 | מוצ\"ש 20:45-23:00",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-71f0e480",
-    "name": "רי בר כרמי גת",
+    "name": "רי בר rebar כרמי גת",
     "type": "cafe",
     "cityId": "כרמי גת",
     "address": "אבני חושן 1, סנטר כרמי גת",
@@ -117417,14 +117405,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:30-22:00 | ו 08:30-15:00 | מוצ\"ש 20:15-22:30",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-8ae4a0c8",
-    "name": "רי בר ערד",
+    "name": "רי בר rebar ערד",
     "type": "cafe",
     "cityId": "ערד",
     "address": "התעשייה 60, ערד",
@@ -117436,14 +117424,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:30-22:00 | ו 08:30-15:45 | מוצ\"ש 20:45-22:30",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-b0112a34",
-    "name": "רי בר דימונה",
+    "name": "רי בר rebar דימונה",
     "type": "cafe",
     "cityId": "דימונה",
     "address": "מתחם פרץ, דימונה",
@@ -117455,14 +117443,14 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 09:00-21:30 | ו 09:00-15:00 | מוצ\"ש 20:30-23:00",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
   },
   {
     "id": "rebar-838f1769",
-    "name": "רי בר מצפה רמון",
+    "name": "רי בר rebar מצפה רמון",
     "type": "cafe",
     "cityId": "מצפה רמון",
     "address": "שדרות בן גוריון 2, מצפה רמון",
@@ -117474,7 +117462,7 @@
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 08:00-22:00 | ו 08:00-16:00 | מוצ\"ש 20:45-22:00",
-    "category": "parve",
+    "category": "dairy",
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
@@ -117482,7 +117470,7 @@
   {
     "id": "pizza-shemesh-7373cb71",
     "name": "פיצה שמש",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "באר יעקב",
     "address": "הגפן 2, באר יעקב",
     "location": {
@@ -117500,7 +117488,7 @@
   {
     "id": "pizza-shemesh-7277ff98",
     "name": "פיצה שמש",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "נתניה",
     "address": "פנחס לבון 39, נתניה",
     "location": {
@@ -117518,7 +117506,7 @@
   {
     "id": "burgersbar-c0ae94d5",
     "name": "בורגרס בר הר חומה",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "ירושלים",
     "address": "אליהו קורן 27, ירושלים",
     "location": {
@@ -117535,7 +117523,7 @@
   {
     "id": "burgersbar-8e986587",
     "name": "בורגרס בר מחנה יהודה",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "ירושלים",
     "address": "עץ חיים 68, ירושלים",
     "location": {
@@ -117552,7 +117540,7 @@
   {
     "id": "burgersbar-71b69ef0",
     "name": "בורגרס בר יפו 36",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "ירושלים",
     "address": "יפו 36, ירושלים",
     "location": {
@@ -117569,7 +117557,7 @@
   {
     "id": "burgersbar-fbccb6b0",
     "name": "בורגרס בר הרובע היהודי",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "ירושלים",
     "address": "תפארת ישראל 12, ירושלים",
     "location": {
@@ -117586,7 +117574,7 @@
   {
     "id": "burgersbar-be293537",
     "name": "בורגרס בר המושבה הגרמנית",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "ירושלים",
     "address": "עמק רפאים 31, ירושלים",
     "location": {
@@ -117603,7 +117591,7 @@
   {
     "id": "burgersbar-0b78072a",
     "name": "בורגרס בר הגבעה הצרפתית",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "ירושלים",
     "address": "ההגנה 21, ירושלים",
     "location": {
@@ -117620,7 +117608,7 @@
   {
     "id": "burgersbar-20544f4b",
     "name": "בורגרס בר גילה",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "ירושלים",
     "address": "הגננת 216, ירושלים",
     "location": {
@@ -117637,7 +117625,7 @@
   {
     "id": "burgersbar-fdcd37b2",
     "name": "בורגרס בר גבעת שאול",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "ירושלים",
     "address": "בית הדפוס 12, ירושלים",
     "location": {
@@ -117654,7 +117642,7 @@
   {
     "id": "burgersbar-b0fda7d8",
     "name": "בורגרס בר בן יהודה",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "ירושלים",
     "address": "בן יהודה 2, ירושלים",
     "location": {
@@ -117671,7 +117659,7 @@
   {
     "id": "burgersbar-ca68fc3c",
     "name": "בורגרס בר באר יעקב",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "באר יעקב",
     "address": "עמק 2, באר יעקב",
     "location": {
@@ -117688,7 +117676,7 @@
   {
     "id": "burgersbar-8a8db08b",
     "name": "בורגרס בר חולון",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "חולון",
     "address": "גולדה מאיר 7, חולון",
     "location": {
@@ -117705,7 +117693,7 @@
   {
     "id": "burgersbar-417e6b61",
     "name": "בורגרס בר הרצליה",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "הרצליה",
     "address": "ביילינסון 1, הרצליה",
     "location": {
@@ -117722,7 +117710,7 @@
   {
     "id": "burgersbar-a7096850",
     "name": "בורגרס בר גבעתיים",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "גבעתיים",
     "address": "דרך יצחק רבין 53, גבעתיים",
     "location": {
@@ -117739,7 +117727,7 @@
   {
     "id": "burgersbar-6da47c9c",
     "name": "בורגרס בר נתניה פיאנו",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "נתניה",
     "address": "שושנה דמארי 30, מתחם פיאנו, נתניה",
     "location": {
@@ -117756,7 +117744,7 @@
   {
     "id": "burgersbar-47c25dd8",
     "name": "בורגרס בר עזריאלי רמלה",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "רמלה",
     "address": "שדרות דוד רזיאל 1, קניון עזריאלי, רמלה",
     "location": {
@@ -117773,7 +117761,7 @@
   {
     "id": "burgersbar-f0f2c420",
     "name": "בורגרס בר פתח תקווה",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "פתח תקווה",
     "address": "רוטשילד 89, פתח תקווה",
     "location": {
@@ -117790,7 +117778,7 @@
   {
     "id": "burgersbar-f5d9de6e",
     "name": "בורגרס בר ראשון לציון קניון הזהב",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "ראשון לציון",
     "address": "קניון הזהב, ראשון לציון",
     "location": {
@@ -117808,7 +117796,7 @@
   {
     "id": "burgersbar-e0361b76",
     "name": "בורגרס בר רמת אביב",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "תל אביב",
     "address": "מרכז טאגור 30, תל אביב",
     "location": {
@@ -117825,7 +117813,7 @@
   {
     "id": "burgersbar-e785eafc",
     "name": "בורגרס בר רעננה",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "רעננה",
     "address": "אחוזה 184, רעננה",
     "location": {
@@ -117842,7 +117830,7 @@
   {
     "id": "burgersbar-d9af30d9",
     "name": "בורגרס בר תל אביב עזריאלי",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "תל אביב",
     "address": "קניון עזריאלי, תל אביב",
     "location": {
@@ -117860,7 +117848,7 @@
   {
     "id": "burgersbar-e1596d55",
     "name": "בורגרס בר גבעת שמואל",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "גבעת שמואל",
     "address": "האורנים 1, גבעת שמואל",
     "location": {
@@ -117877,7 +117865,7 @@
   {
     "id": "burgersbar-28d8ca5f",
     "name": "בורגרס בר מצפה רמון",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "מצפה רמון",
     "address": "שדרות בן גוריון 2, מצפה רמון",
     "location": {
@@ -117894,7 +117882,7 @@
   {
     "id": "burgersbar-74ae9f7d",
     "name": "בורגרס בר נתיבות",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "נתיבות",
     "address": "בעלי המלאכה 3, פריז סנטר, נתיבות",
     "location": {
@@ -117911,7 +117899,7 @@
   {
     "id": "burgersbar-eb6780e1",
     "name": "בורגרס בר שדרות",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "שדרות",
     "address": "ההסתדרות 10, שדרות",
     "location": {
@@ -117928,7 +117916,7 @@
   {
     "id": "burgersbar-83561c98",
     "name": "בורגרס בר באר שבע גראנד קניון",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "באר שבע",
     "address": "שדרות דוד טוביהו 125, גראנד קניון, באר שבע",
     "location": {
@@ -117946,7 +117934,7 @@
   {
     "id": "burgersbar-1f17fca3",
     "name": "בורגרס בר אילת דן",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "אילת",
     "address": "החוף הצפוני, דן אילת",
     "location": {
@@ -117964,7 +117952,7 @@
   {
     "id": "burgersbar-85a13288",
     "name": "בורגרס בר אילת ביג",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "אילת",
     "address": "הסתת 20, מרכז ביג, אילת",
     "location": {
@@ -117981,7 +117969,7 @@
   {
     "id": "burgersbar-87223019",
     "name": "בורגרס בר אילת פנינת אילת",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "אילת",
     "address": "דרבן 4, מרכז פנינה, אילת",
     "location": {
@@ -118957,7 +118945,7 @@
   {
     "id": "hummusneri-55f310c0",
     "name": "חומוס נרי ראש העין",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "ראש העין",
     "address": "הרב שלום שבזי 60, ראש העין",
     "phone": "077-300-7200",
@@ -118975,7 +118963,7 @@
   {
     "id": "hummusneri-9f095951",
     "name": "חומוס נרי בני ברק",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "בני ברק",
     "address": "מצדה 9, בני ברק",
     "location": {
@@ -118993,7 +118981,7 @@
   {
     "id": "hummusneri-5756c65b",
     "name": "חומוס נרי שוהם",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "שוהם",
     "address": "דקל 30, שוהם",
     "location": {
@@ -119011,7 +118999,7 @@
   {
     "id": "hummusneri-8e3b3a55",
     "name": "חומוס נרי הוד השרון",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "הוד השרון",
     "address": "סוקולוב 2, הוד השרון",
     "phone": "09-740-0400",
@@ -119576,7 +119564,7 @@
   {
     "id": "humuskaspy-82a8a2a0",
     "name": "חומוס כספי בן יהודה תל אביב",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "תל אביב",
     "address": "ארלוזרוב 13, תל אביב",
     "phone": "03-6050680",
@@ -119594,7 +119582,7 @@
   {
     "id": "humuskaspy-da4f84b4",
     "name": "חומוס כספי שוסטר תל אביב",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "תל אביב",
     "address": "אבא אחימאיר 29, מרכז שוסטר, תל אביב",
     "phone": "03-6199981",
@@ -119612,7 +119600,7 @@
   {
     "id": "humuskaspy-b368c7f2",
     "name": "חומוס כספי פתח תקווה",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "פתח תקווה",
     "address": "יעל רום 8, אם המושבות, פתח תקווה",
     "phone": "03-9470111",
@@ -120169,7 +120157,7 @@
   {
     "openingHours": "א-ה 10:00-18:00 | ו 10:00-14:30",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו צמח",
     "locationPrecision": "city",
@@ -120197,7 +120185,7 @@
   {
     "openingHours": "א-ה 10:00-18:00 | ו 09:00-15:00",
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו קרית מוצקין",
     "locationPrecision": "city",
@@ -120222,7 +120210,7 @@
   },
   {
     "lastVerifiedAt": "2026-07-13",
-    "type": "restaurant",
+    "type": "fast_food",
     "openingHours": "א-ה 10:00-21:00 | ו 09:00-14:00",
     "name": "חומוס אליהו קרני שומרון",
     "locationPrecision": "city",
@@ -120331,7 +120319,7 @@
   {
     "id": "manual-hummus-bardichev-haifa",
     "name": "חומוס ברדיצ'ב",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "parve",
     "address": "וודג'ווד 1, מרכז הכרמל, חיפה",
     "cityId": "חיפה",
@@ -121151,7 +121139,7 @@
   {
     "id": "bardichev-48c56936",
     "name": "חומוס ברדיצ'ב כרמל סנטר",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "חיפה",
     "address": "ביכורים 2, כרמל סנטר, חיפה",
     "phone": "04-657-4132",
@@ -121169,7 +121157,7 @@
   {
     "id": "bardichev-2205b62c",
     "name": "חומוס ברדיצ'ב נווה שאנן",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "חיפה",
     "address": "טרומפלדור 53, נווה שאנן, חיפה",
     "phone": "04-847-7390",
@@ -121187,7 +121175,7 @@
   {
     "id": "bardichev-413696e3",
     "name": "חומוס ברדיצ'ב קניון חיפה",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "חיפה",
     "address": "דרך משה פלימן 4, קניון חיפה, חיפה",
     "phone": "055-243-8032",
@@ -121205,7 +121193,7 @@
   {
     "id": "bardichev-0822912f",
     "name": "חומוס ברדיצ'ב שוק תלפיות",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "חיפה",
     "address": "סירקין 27, שוק תלפיות, חיפה",
     "phone": "04-867-5252",
@@ -121602,7 +121590,7 @@
   {
     "id": "manual-hummus-eliyahu-kiryat-sefer",
     "name": "חומוס אליהו",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "parve",
     "address": "אבני נזר 46, מרכז קסם, מודיעין עילית",
     "cityId": "קריית ספר",
@@ -121744,7 +121732,7 @@
   {
     "id": "manual-bahdons-hummus-rehovot",
     "name": "בהדונס חומוס",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "parve",
     "address": "דרך מאיר ויסגל 2, רחובות",
     "cityId": "רחובות",
@@ -123128,8 +123116,8 @@
   },
   {
     "id": "manual-golda-rosh-haayin",
-    "name": "גלידה גולדה ראש העין",
-    "type": "cafe",
+    "name": "גלידה גולדה",
+    "type": "ice_cream_parlor",
     "category": "dairy",
     "address": "שבזי 10, ראש העין",
     "cityId": "ראש העין",
@@ -123148,8 +123136,8 @@
   },
   {
     "id": "manual-golda-tlv-azrieli",
-    "name": "גלידה גולדה עזריאלי",
-    "type": "cafe",
+    "name": "גלידה גולדה",
+    "type": "ice_cream_parlor",
     "category": "dairy",
     "address": "מנחם בגין 132, קניון עזריאלי, תל אביב",
     "cityId": "תל אביב",
@@ -123168,8 +123156,8 @@
   },
   {
     "id": "manual-golda-tlv-yafo",
-    "name": "גלידה גולדה יפו",
-    "type": "cafe",
+    "name": "גלידה גולדה",
+    "type": "ice_cream_parlor",
     "category": "dairy",
     "address": "בן צבי 76, תל אביב",
     "cityId": "תל אביב",
@@ -123188,8 +123176,8 @@
   },
   {
     "id": "manual-golda-or-yehuda",
-    "name": "גלידה גולדה אור יהודה",
-    "type": "cafe",
+    "name": "גלידה גולדה",
+    "type": "ice_cream_parlor",
     "category": "dairy",
     "address": "אריק איינשטיין 1, אור יהודה",
     "cityId": "אור יהודה",
@@ -123208,8 +123196,8 @@
   },
   {
     "id": "manual-golda-ramat-gan-ayalon",
-    "name": "גלידה גולדה קניון אילון",
-    "type": "cafe",
+    "name": "גלידה גולדה",
+    "type": "ice_cream_parlor",
     "category": "dairy",
     "address": "דרך אבא הלל 301, קניון אילון, רמת גן",
     "cityId": "רמת גן",
@@ -123228,8 +123216,8 @@
   },
   {
     "id": "manual-golda-lod",
-    "name": "גלידה גולדה לוד",
-    "type": "cafe",
+    "name": "גלידה גולדה",
+    "type": "ice_cream_parlor",
     "category": "dairy",
     "address": "הנשיא 2, לוד",
     "cityId": "לוד",
@@ -128586,7 +128574,7 @@
   {
     "id": "manual-hummus-eli-or-yehuda",
     "name": "חומוס אליהו",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "parve",
     "address": "מפעל 13, אור יהודה",
     "cityId": "אור יהודה",
@@ -128605,7 +128593,7 @@
   {
     "id": "manual-hummus-eli-azor",
     "name": "חומוס אליהו אזור",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "parve",
     "address": "המצודה 8, אזור",
     "cityId": "אזור",
@@ -128622,7 +128610,7 @@
   {
     "id": "manual-hummus-eli-beer-yaakov",
     "name": "חומוס אליהו באר יעקב",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "parve",
     "address": "שה\"נס 17, באר יעקב",
     "cityId": "באר יעקב",
@@ -128639,7 +128627,7 @@
   {
     "id": "manual-hummus-eli-bat-yam",
     "name": "חומוס אליהו בת ים",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "parve",
     "address": "הרב ניסנבאום 37, בת ים",
     "cityId": "בת ים",
@@ -128656,7 +128644,7 @@
   {
     "id": "manual-hummus-eli-herzliya",
     "name": "חומוס אליהו הרצליה",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "parve",
     "address": "שער העיר, הרצליה",
     "cityId": "הרצליה",
@@ -128673,7 +128661,7 @@
   {
     "id": "manual-hummus-eli-safed",
     "name": "חומוס אליהו צפת",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "parve",
     "address": "שוקולד 6, צפת",
     "cityId": "צפת",
@@ -128690,7 +128678,7 @@
   {
     "id": "manual-hummus-eli-ashdod",
     "name": "חומוס אליהו אשדוד",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "parve",
     "address": "הבנים 7, אשדוד",
     "cityId": "אשדוד",
@@ -128707,7 +128695,7 @@
   {
     "id": "manual-hummus-eli-ashkelon",
     "name": "חומוס אליהו אשקלון",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "parve",
     "address": "מרינה אשקלון, אשקלון",
     "cityId": "אשקלון",
@@ -128724,7 +128712,7 @@
   {
     "id": "manual-hummus-eli-jrm-talpiot",
     "name": "חומוס אליהו ירושלים תלפיות",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "parve",
     "address": "תלפיות, ירושלים",
     "cityId": "ירושלים",
@@ -128741,7 +128729,7 @@
   {
     "id": "manual-hummus-eli-jrm-mahane",
     "name": "חומוס אליהו מחנה יהודה",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "parve",
     "address": "שוק מחנה יהודה, ירושלים",
     "cityId": "ירושלים",
@@ -128758,7 +128746,7 @@
   {
     "id": "manual-hummus-eli-tiberias",
     "name": "חומוס אליהו טבריה",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "parve",
     "address": "טבריה",
     "cityId": "טבריה",
@@ -128775,7 +128763,7 @@
   {
     "id": "manual-hummus-eli-netanya",
     "name": "חומוס אליהו נתניה",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "parve",
     "address": "נתניה",
     "cityId": "נתניה",
@@ -128792,7 +128780,7 @@
   {
     "id": "manual-pizza-shemesh-ofakim",
     "name": "פיצה שמש אופקים",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "address": "הרצל 26, אופקים",
     "cityId": "אופקים",
@@ -128809,7 +128797,7 @@
   {
     "id": "manual-pizza-shemesh-herzliya",
     "name": "פיצה שמש הרצליה",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "address": "סוקולוב 31, הרצליה",
     "cityId": "הרצליה",
@@ -128826,7 +128814,7 @@
   {
     "id": "manual-pizza-shemesh-or-yehuda",
     "name": "פיצה שמש אור יהודה",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "address": "ארבל 13, אור יהודה",
     "cityId": "אור יהודה",
@@ -128843,7 +128831,7 @@
   {
     "id": "manual-pizza-shemesh-azor",
     "name": "פיצה שמש אזור",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "address": "שפינוזה 2, אזור",
     "cityId": "אזור",
@@ -128860,7 +128848,7 @@
   {
     "id": "manual-pizza-shemesh-eilat",
     "name": "פיצה שמש אילת",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "address": "תמרים 39, אילת",
     "cityId": "אילת",
@@ -128877,7 +128865,7 @@
   {
     "id": "manual-pizza-shemesh-elad",
     "name": "פיצה שמש אלעד",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "address": "רבי יהודה הנשיא 94, אלעד",
     "cityId": "אלעד",
@@ -128894,7 +128882,7 @@
   {
     "id": "manual-pizza-shemesh-efrat",
     "name": "פיצה שמש אפרת",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "address": "אפרת סנטר, אפרת",
     "cityId": "אפרת",
@@ -128911,7 +128899,7 @@
   {
     "id": "manual-pizza-shemesh-ashdod-rogosin",
     "name": "פיצה שמש אשדוד",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "address": "רוגוזין 3, אשדוד",
     "cityId": "אשדוד",
@@ -128928,7 +128916,7 @@
   {
     "id": "manual-pizza-shemesh-ashkelon-bialik",
     "name": "פיצה שמש אשקלון",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "address": "ביאליק 32, אשקלון",
     "cityId": "אשקלון",
@@ -128945,7 +128933,7 @@
   {
     "id": "manual-pizza-shemesh-givatayim",
     "name": "פיצה שמש גבעתיים",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "address": "ויצמן 43, גבעתיים",
     "cityId": "גבעתיים",
@@ -128962,7 +128950,7 @@
   {
     "id": "manual-pizza-shemesh-gadera",
     "name": "פיצה שמש גדרה",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "address": "הרצל 10, גדרה",
     "cityId": "גדרה",
@@ -128979,7 +128967,7 @@
   {
     "id": "manual-pizza-shemesh-gan-yavne",
     "name": "פיצה שמש גן יבנה",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "address": "צה\"ל 28, גן יבנה",
     "cityId": "גן יבנה",
@@ -128996,7 +128984,7 @@
   {
     "id": "manual-pizza-shemesh-ganei-tikva",
     "name": "פיצה שמש גני תקווה",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "address": "עין גנים 7, גני תקווה",
     "cityId": "גני תקווה",
@@ -129013,7 +129001,7 @@
   {
     "id": "manual-pizza-shemesh-dimona",
     "name": "פיצה שמש דימונה",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "address": "המעפילים 215, דימונה",
     "cityId": "דימונה",
@@ -129030,7 +129018,7 @@
   {
     "id": "manual-pizza-shemesh-hadera",
     "name": "פיצה שמש חדרה",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "address": "הנשיא 59, חדרה",
     "cityId": "חדרה",
@@ -129047,7 +129035,7 @@
   {
     "id": "manual-pizza-shemesh-harish",
     "name": "פיצה שמש חריש",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "address": "דרך ארץ 41, חריש",
     "cityId": "חריש",
@@ -129064,7 +129052,7 @@
   {
     "id": "manual-pizza-shemesh-tiberias",
     "name": "פיצה שמש טבריה",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "address": "העצמאות 3, טבריה",
     "cityId": "טבריה",
@@ -129081,7 +129069,7 @@
   {
     "id": "manual-pizza-shemesh-yavne",
     "name": "פיצה שמש יבנה",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "address": "אגוז 2, יבנה",
     "cityId": "יבנה",
@@ -129098,7 +129086,7 @@
   {
     "id": "manual-pizza-shemesh-yehud",
     "name": "פיצה שמש יהוד",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "address": "ויצמן 44, יהוד",
     "cityId": "יהוד",
@@ -129115,7 +129103,7 @@
   {
     "id": "manual-pizza-shemesh-kfar-chabad",
     "name": "פיצה שמש כפר חב\"ד",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "address": "אדמו\"ר הרש\"ב 2, כפר חב\"ד",
     "cityId": "כפר חב\"ד",
@@ -129132,7 +129120,7 @@
   {
     "id": "manual-pizza-shemesh-kfar-saba",
     "name": "פיצה שמש כפר סבא",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "address": "צ'רניחובסקי 24, כפר סבא",
     "cityId": "כפר סבא",
@@ -129149,7 +129137,7 @@
   {
     "id": "manual-pizza-shemesh-modiin",
     "name": "פיצה שמש מודיעין",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "address": "חיים ויצמן 18, מודיעין",
     "cityId": "מודיעין",
@@ -129166,7 +129154,7 @@
   {
     "id": "manual-pizza-shemesh-mitzpe-ramon",
     "name": "פיצה שמש מצפה רמון",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "address": "נחל תרשין 1, מצפה רמון",
     "cityId": "מצפה רמון",
@@ -129183,7 +129171,7 @@
   {
     "id": "manual-pizza-shemesh-nes-ziona",
     "name": "פיצה שמש נס ציונה",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "address": "נורדאו 6, נס ציונה",
     "cityId": "נס ציונה",
@@ -129200,7 +129188,7 @@
   {
     "id": "manual-pizza-shemesh-netivot",
     "name": "פיצה שמש נתיבות",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "address": "רפח ים 13, נתיבות",
     "cityId": "נתיבות",
@@ -129217,7 +129205,7 @@
   {
     "id": "manual-pizza-shemesh-afula",
     "name": "פיצה שמש עפולה",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "address": "משה שרת 3, עפולה",
     "cityId": "עפולה",
@@ -129234,7 +129222,7 @@
   {
     "id": "manual-pizza-shemesh-arad",
     "name": "פיצה שמש ערד",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "address": "א. בן יאיר 35, ערד",
     "cityId": "ערד",
@@ -129742,7 +129730,7 @@
   {
     "id": "manual-pizza-story-beersheva",
     "name": "פיצה סטורי באר שבע",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "address": "השלום 31, באר שבע",
     "cityId": "באר שבע",
@@ -129760,7 +129748,7 @@
   {
     "id": "manual-pizza-story-pt",
     "name": "פיצה סטורי פתח תקווה",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "address": "יהושע שטמפפר 24, פתח תקווה",
     "cityId": "פתח תקווה",
@@ -129777,7 +129765,7 @@
   {
     "id": "manual-pizza-story-jrm-talpiot",
     "name": "פיצה סטורי ירושלים",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "address": "יד חרוצים 21, תלפיות, ירושלים",
     "cityId": "ירושלים",
@@ -129794,7 +129782,7 @@
   {
     "id": "manual-pizza-story-tzafria",
     "name": "פיצה סטורי צפריה",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "address": "הארז 1, צפריה",
     "cityId": "צפריה",
@@ -129811,7 +129799,7 @@
   {
     "id": "manual-pizza-story-tlv",
     "name": "פיצה סטורי תל אביב",
-    "type": "restaurant",
+    "type": "fast_food",
     "category": "dairy",
     "address": "תל אביב",
     "cityId": "תל אביב",
@@ -134262,7 +134250,7 @@
   {
     "id": "pizzax-6069628c",
     "name": "פיצה X דיזינגוף",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "תל אביב",
     "address": "דיזינגוף 70, תל אביב",
     "phone": "03-6218574",
@@ -134283,7 +134271,7 @@
   {
     "id": "pizzandtortilla-be19a08a",
     "name": "פיצה אנד טורטיה",
-    "type": "restaurant",
+    "type": "fast_food",
     "cityId": "תל אביב",
     "address": "אלנבי 79, תל אביב",
     "phone": "072-3290637",
@@ -137086,6 +137074,59 @@
     "certifiedBy": "רבנות",
     "kosherType": "regular",
     "openingHours": "א׳-ה׳ 06:30-18:00, ו׳ 07:00-14:00, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "falafel-chatuka-d7c1f16c",
+    "name": "פלאפל חתוכה שוהם",
+    "type": "fast_food",
+    "cityId": "שוהם",
+    "address": "שדרות עמק איילון 30, מרכז מסחרי שוהם",
+    "phone": "03-979-4761",
+    "location": {
+      "latitude": 31.9986,
+      "longitude": 34.9437
+    },
+    "openingHours": "א'-ה' 10:00-21:00 | ו' 10:00-15:00 | ש' סגור",
+    "category": "parve",
+    "kosherType": "rabanut",
+    "tags": [
+      "falafel",
+      "שוורמה"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23"
+  },
+  {
+    "id": "rebar-bs-central-station",
+    "name": "רי בר rebar באר שבע תחנה מרכזית",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "תחנת אגד, באר שבע",
+    "cityId": "באר שבע",
+    "location": {
+      "latitude": 31.243,
+      "longitude": 34.798
+    },
+    "website": "https://rebar.co.il",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 08:15-20:00, ו׳ 08:30-14:30",
+    "source": "manual"
+  },
+  {
+    "id": "rebar-ramat-gan-marom-nave",
+    "name": "רי בר rebar מרום נווה רמת גן",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "חיים לנדאו 7, רמת גן",
+    "cityId": "רמת גן",
+    "location": {
+      "latitude": 32.075,
+      "longitude": 34.824
+    },
+    "website": "https://rebar.co.il",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 08:00-21:00, ו׳ 08:00-15:00",
     "source": "manual"
   }
 ]
