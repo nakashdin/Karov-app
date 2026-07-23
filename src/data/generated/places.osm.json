@@ -744,7 +744,7 @@
     "tags": [
       "coffee_shop"
     ],
-    "type": "restaurant",
+    "type": "cafe",
     "source": "osm",
     "name": "רולדין",
     "website": "https://roladin.co.il/סניפים/שוהם-מרכז-מסחרי/",
@@ -816,7 +816,7 @@
     "facebook": "https://www.facebook.com/CafeGreg",
     "openingHours": "Su-Th 08:30-21:00; Fr 07:30-15:00",
     "id": "osm-node-4818808608",
-    "type": "restaurant",
+    "type": "cafe",
     "source": "osm",
     "name": "קפה גרג",
     "website": "https://www.cafegreg.co.il",
@@ -1094,7 +1094,7 @@
   {
     "facebook": "https://www.facebook.com/roladin",
     "id": "osm-node-5186610427",
-    "type": "restaurant",
+    "type": "cafe",
     "openingHours": "Su-Th 07:00-21:30; Fr unknown \"please inquire\"",
     "name": "רולדין",
     "website": "https://roladin.co.il/סניפים/ראש-פינה/",
@@ -1113,7 +1113,7 @@
   {
     "source": "osm",
     "id": "osm-node-5202278925",
-    "type": "restaurant",
+    "type": "cafe",
     "category": "dairy",
     "tags": [
       "coffee_shop"
@@ -1357,7 +1357,7 @@
     "tags": [
       "coffee_shop"
     ],
-    "type": "restaurant",
+    "type": "cafe",
     "source": "osm",
     "name": "קפה גרג",
     "website": "https://www.cafegreg.co.il",
@@ -1411,7 +1411,7 @@
     "tags": [
       "coffee_shop"
     ],
-    "type": "restaurant",
+    "type": "cafe",
     "openingHours": "Su-Fr 08:00-21:00; Sa unknown \"please inquire\"",
     "name": "קפה גרג",
     "website": "https://www.cafegreg.co.il",
@@ -1699,7 +1699,7 @@
   {
     "source": "osm",
     "id": "osm-node-6181052482",
-    "type": "restaurant",
+    "type": "cafe",
     "openingHours": "Su-Th 08:00+ \"עד אחרון הלקוחות\"; Fr 07:30+ \"נסגר 3 שעתיים לפני כניסת השבת\"; Sa \"שעה אחרי צאת השבת ועד אחרון הלקוחות\"; PH unknown",
     "tags": [
       "coffee",
@@ -1760,7 +1760,7 @@
       "coffee",
       "breakfast"
     ],
-    "type": "restaurant",
+    "type": "cafe",
     "openingHours": "Su-Th 08:15-22:00; Fr 08:00+ \"נסגר 3 שעות לפני כניסת השבת\"; Sa \"מ-45 דקות אחרי צאת השבת ועד 23:30\"; PH unknown",
     "name": "קפה גרג",
     "website": "https://www.cafegreg.co.il",
@@ -1838,7 +1838,7 @@
   {
     "source": "osm",
     "id": "osm-node-6469411088",
-    "type": "restaurant",
+    "type": "cafe",
     "openingHours": "Su-Th 08:00-22:00; Fr 08:00-14:00; Sa 20:15-23:00",
     "tags": [
       "coffee_shop"
@@ -1919,7 +1919,7 @@
     "tags": [
       "coffee_shop"
     ],
-    "type": "restaurant",
+    "type": "cafe",
     "openingHours": "Su-Th 07:00-22:30; Fr 07:00-14:30; Sa (sunset+01:30)-22:30",
     "name": "רולדין",
     "website": "https://www.roladin.co.il",
@@ -2777,7 +2777,7 @@
     "tags": [
       "coffee_shop"
     ],
-    "type": "restaurant",
+    "type": "cafe",
     "openingHours": "Su-Th 06:30-21:00; Fr 06:30-15:00",
     "name": "רולדין",
     "website": "https://www.roladin.co.il",
@@ -118726,7 +118726,7 @@
   {
     "id": "cafecafe-4c5adc4c",
     "name": "קפה קפה גבעת שמואל",
-    "type": "restaurant",
+    "type": "cafe",
     "cityId": "גבעת שמואל",
     "address": "קניון גבעת שמואל, גבעת שמואל",
     "phone": "03-717-2454",
@@ -118744,7 +118744,7 @@
   {
     "id": "cafecafe-62b8584d",
     "name": "קפה קפה תל אביב עזריאלי",
-    "type": "restaurant",
+    "type": "cafe",
     "cityId": "תל אביב",
     "address": "מגדלי עזריאלי, דרך מנחם בגין 132, תל אביב",
     "phone": "03-609-4770",
@@ -118762,7 +118762,7 @@
   {
     "id": "cafecafe-5c2f2139",
     "name": "קפה קפה בת ים טיילת",
-    "type": "restaurant",
+    "type": "cafe",
     "cityId": "בת ים",
     "address": "בן גוריון 81, טיילת, בת ים",
     "phone": "054-644-4825",
@@ -118780,7 +118780,7 @@
   {
     "id": "cafecafe-4ffa66b3",
     "name": "קפה קפה אשדוד ביג פאשן",
-    "type": "restaurant",
+    "type": "cafe",
     "cityId": "אשדוד",
     "address": "מתחם ביג פאשן, אשדוד",
     "phone": "08-915-9656",
@@ -118798,7 +118798,7 @@
   {
     "id": "cafecafe-f4d3714f",
     "name": "קפה קפה מגדל העמק",
-    "type": "restaurant",
+    "type": "cafe",
     "cityId": "מגדל העמק",
     "address": "שאול עמור 77, מתחם פרץ סנטר, מגדל העמק",
     "phone": "04-602-3535",
@@ -118816,7 +118816,7 @@
   {
     "id": "cafecafe-51daae8d",
     "name": "קפה קפה נתיבות",
-    "type": "restaurant",
+    "type": "cafe",
     "cityId": "נתיבות",
     "address": "בעלי המלאכה 203, נתיבות",
     "phone": "08-992-0808",
@@ -118834,7 +118834,7 @@
   {
     "id": "cafecafe-888f4111",
     "name": "קפה קפה דימונה",
-    "type": "restaurant",
+    "type": "cafe",
     "cityId": "דימונה",
     "address": "קניון פרץ סנטר 14, דימונה",
     "phone": "08-669-8040",
@@ -118852,7 +118852,7 @@
   {
     "id": "cafecafe-f2d1ffaf",
     "name": "קפה קפה נהריה",
-    "type": "restaurant",
+    "type": "cafe",
     "cityId": "נהריה",
     "address": "הגעתון 35, נהריה",
     "phone": "04-951-2350",
@@ -118870,7 +118870,7 @@
   {
     "id": "cafecafe-ce29d0fc",
     "name": "קפה קפה קריית ים",
-    "type": "restaurant",
+    "type": "cafe",
     "cityId": "קריית ים",
     "address": "האירוס 1, ליד תחנת דלק סונול, קריית ים",
     "phone": "04-870-4296",
@@ -118888,7 +118888,7 @@
   {
     "id": "cafecafe-ebc5d550",
     "name": "קפה קפה חולון וולפסון",
-    "type": "restaurant",
+    "type": "cafe",
     "cityId": "חולון",
     "address": "בית חולים וולפסון, מרכז GO, חולון",
     "phone": "054-477-8245",
@@ -118906,7 +118906,7 @@
   {
     "id": "cafecafe-1f024114",
     "name": "קפה קפה בקעת הירדן",
-    "type": "restaurant",
+    "type": "cafe",
     "cityId": "בקעת הירדן",
     "address": "מפגש הבקעה, כביש 90, בקעת הירדן",
     "phone": "02-940-0808",
@@ -118925,7 +118925,7 @@
   {
     "id": "cafecafe-1378bb13",
     "name": "קפה קפה באר שבע ONE PLAZA",
-    "type": "restaurant",
+    "type": "cafe",
     "cityId": "באר שבע",
     "address": "דרך חברון 133, מתחם ONE PLAZA, באר שבע",
     "phone": "08-662-8983",
@@ -118943,7 +118943,7 @@
   {
     "id": "cafecafe-000c1e00",
     "name": "קפה קפה עכו",
-    "type": "restaurant",
+    "type": "cafe",
     "cityId": "עכו",
     "address": "החרושת 2, קניון עזריאלי, עכו",
     "phone": "04-850-7294",
@@ -118961,7 +118961,7 @@
   {
     "id": "cafecafe-7abe4d67",
     "name": "קפה קפה טבריה",
-    "type": "restaurant",
+    "type": "cafe",
     "cityId": "טבריה",
     "address": "יהודה הלוי 1, ביג פאשן, טבריה",
     "phone": "04-672-3400",
@@ -119468,7 +119468,7 @@
   {
     "id": "manual-restaurant-mama-greg",
     "name": "מאמא גרג",
-    "type": "restaurant",
+    "type": "cafe",
     "category": "dairy",
     "address": "אבא הלל 301, קניון איילון, רמת גן",
     "cityId": "רמת גן",
@@ -134761,7 +134761,7 @@
       "longitude": 34.9446
     },
     "openingHours": "א'-ה' 11:30-22:00 | ו' 11:30-14:00 | ש' 20:45-23:00",
-    "category": "parve",
+    "category": "meat",
     "kosherType": "rabanut",
     "tags": [
       "סושי",
@@ -134771,7 +134771,7 @@
     "lastVerifiedAt": "2026-07-23",
     "phone": "*3870",
     "website": "https://www.takumi.co.il",
-    "menu": "https://www.takumi.co.il/menu/",
+    "menu": "https://order.takumi.co.il/wl/615593",
     "instagram": "takumi_street_food"
   },
   {
@@ -134795,7 +134795,8 @@
     "source": "manual",
     "lastVerifiedAt": "2026-07-23",
     "phone": "03-6096638",
-    "website": "https://suduch.co.il"
+    "website": "https://suduch.co.il",
+    "description": "טוסט נקניק"
   },
   {
     "id": "suduch-02ff924e",
@@ -134818,7 +134819,8 @@
     "source": "manual",
     "lastVerifiedAt": "2026-07-23",
     "phone": "03-6096638",
-    "website": "https://suduch.co.il"
+    "website": "https://suduch.co.il",
+    "description": "טוסט נקניק"
   },
   {
     "id": "suduch-7c9ef498",
@@ -134841,7 +134843,8 @@
     "source": "manual",
     "lastVerifiedAt": "2026-07-23",
     "phone": "03-6096638",
-    "website": "https://suduch.co.il"
+    "website": "https://suduch.co.il",
+    "description": "טוסט נקניק"
   },
   {
     "id": "suduch-55c8affd",
@@ -134864,7 +134867,8 @@
     "source": "manual",
     "lastVerifiedAt": "2026-07-23",
     "phone": "03-6096638",
-    "website": "https://suduch.co.il"
+    "website": "https://suduch.co.il",
+    "description": "טוסט נקניק"
   },
   {
     "id": "suduch-b60169d4",
@@ -134887,7 +134891,8 @@
     "source": "manual",
     "lastVerifiedAt": "2026-07-23",
     "phone": "03-6096638",
-    "website": "https://suduch.co.il"
+    "website": "https://suduch.co.il",
+    "description": "טוסט נקניק"
   },
   {
     "id": "suduch-d7be09ae",
@@ -134910,7 +134915,8 @@
     "source": "manual",
     "lastVerifiedAt": "2026-07-23",
     "phone": "03-6096638",
-    "website": "https://suduch.co.il"
+    "website": "https://suduch.co.il",
+    "description": "טוסט נקניק"
   },
   {
     "id": "suduch-e951a4ce",
@@ -134933,7 +134939,8 @@
     "source": "manual",
     "lastVerifiedAt": "2026-07-23",
     "phone": "03-6096638",
-    "website": "https://suduch.co.il"
+    "website": "https://suduch.co.il",
+    "description": "טוסט נקניק"
   },
   {
     "id": "suduch-aa85a058",
@@ -134979,7 +134986,8 @@
     "source": "manual",
     "lastVerifiedAt": "2026-07-23",
     "phone": "077-2195219",
-    "website": "https://suduch.co.il"
+    "website": "https://suduch.co.il",
+    "description": "טוסט נקניק"
   },
   {
     "id": "suduch-2a954c72",
@@ -135002,7 +135010,8 @@
     "source": "manual",
     "lastVerifiedAt": "2026-07-23",
     "phone": "03-6096638",
-    "website": "https://suduch.co.il"
+    "website": "https://suduch.co.il",
+    "description": "טוסט נקניק"
   },
   {
     "id": "suduch-10a9d204",
@@ -135025,7 +135034,8 @@
     "source": "manual",
     "lastVerifiedAt": "2026-07-23",
     "phone": "03-6096638",
-    "website": "https://suduch.co.il"
+    "website": "https://suduch.co.il",
+    "description": "טוסט נקניק"
   },
   {
     "id": "suduch-900564c2",
@@ -135048,7 +135058,8 @@
     "source": "manual",
     "lastVerifiedAt": "2026-07-23",
     "phone": "03-6096638",
-    "website": "https://suduch.co.il"
+    "website": "https://suduch.co.il",
+    "description": "טוסט נקניק"
   },
   {
     "id": "suduch-6492046f",
@@ -135071,7 +135082,8 @@
     "source": "manual",
     "lastVerifiedAt": "2026-07-23",
     "phone": "03-6096638",
-    "website": "https://suduch.co.il"
+    "website": "https://suduch.co.il",
+    "description": "טוסט נקניק"
   },
   {
     "id": "suduch-507b6198",
@@ -135094,7 +135106,8 @@
     "source": "manual",
     "lastVerifiedAt": "2026-07-23",
     "phone": "077-5308200",
-    "website": "https://suduch.co.il"
+    "website": "https://suduch.co.il",
+    "description": "טוסט נקניק"
   },
   {
     "id": "suduch-ac25ec6c",
@@ -135117,7 +135130,8 @@
     "source": "manual",
     "lastVerifiedAt": "2026-07-23",
     "phone": "03-6096638",
-    "website": "https://suduch.co.il"
+    "website": "https://suduch.co.il",
+    "description": "טוסט נקניק"
   },
   {
     "id": "suduch-1f370d54",
@@ -135140,7 +135154,8 @@
     "source": "manual",
     "lastVerifiedAt": "2026-07-23",
     "phone": "03-6096638",
-    "website": "https://suduch.co.il"
+    "website": "https://suduch.co.il",
+    "description": "טוסט נקניק"
   },
   {
     "id": "suduch-8e103318",
@@ -135163,7 +135178,8 @@
     "source": "manual",
     "lastVerifiedAt": "2026-07-23",
     "phone": "03-6096638",
-    "website": "https://suduch.co.il"
+    "website": "https://suduch.co.il",
+    "description": "טוסט נקניק"
   },
   {
     "id": "suduch-90343fa7",
@@ -135186,7 +135202,8 @@
     "source": "manual",
     "lastVerifiedAt": "2026-07-23",
     "phone": "03-6096638",
-    "website": "https://suduch.co.il"
+    "website": "https://suduch.co.il",
+    "description": "טוסט נקניק"
   },
   {
     "id": "suduch-7614b7c5",
@@ -135209,7 +135226,8 @@
     "source": "manual",
     "lastVerifiedAt": "2026-07-23",
     "phone": "03-6096638",
-    "website": "https://suduch.co.il"
+    "website": "https://suduch.co.il",
+    "description": "טוסט נקניק"
   },
   {
     "id": "manual-aroma-beit-shemesh-big",
