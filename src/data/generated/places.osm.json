@@ -1421,27 +1421,6 @@
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-16:30"
   },
   {
-    "tags": [
-      "japanese",
-      "sushi"
-    ],
-    "type": "restaurant",
-    "openingHours": "Su-Th 12:00-00:00; Fr, Sa unknown \"Please inquire\"",
-    "name": "ג'פניקה",
-    "website": "https://japanika.net",
-    "cityId": "ראש פינה",
-    "address": "דרך הגליל 47, ראש פינה",
-    "instagram": "https://www.instagram.com/japanika.rosh.pinah/",
-    "category": "parve",
-    "id": "osm-node-5728427295",
-    "location": {
-      "latitude": 32.9684018,
-      "longitude": 35.548564
-    },
-    "source": "osm",
-    "phone": "03-7236100"
-  },
-  {
     "source": "osm",
     "id": "osm-node-5746423221",
     "type": "restaurant",
@@ -2167,26 +2146,6 @@
       "longitude": 34.8254388
     },
     "cityId": "רמת גן"
-  },
-  {
-    "source": "osm",
-    "id": "osm-node-9190590717",
-    "type": "restaurant",
-    "category": "parve",
-    "tags": [
-      "asian",
-      "japanese"
-    ],
-    "name": "ג'פניקה",
-    "address": "רחוב ז'בוטינסקי 4, רמת גן",
-    "location": {
-      "latitude": 32.0826309,
-      "longitude": 34.8016225
-    },
-    "phone": "053-9386160",
-    "website": "https://japanika.net",
-    "cityId": "גבעתיים",
-    "openingHours": "Su-Th 12:00-00:00; Fr 12:00-00:00; Sa 12:00-01:00"
   },
   {
     "source": "osm",
@@ -129432,126 +129391,6 @@
     "source": "manual"
   },
   {
-    "id": "manual-japanika-jrm-cinema-city",
-    "name": "ג'פניקה ירושלים",
-    "type": "restaurant",
-    "category": "parve",
-    "address": "סינמה סיטי, ירושלים",
-    "cityId": "ירושלים",
-    "location": {
-      "latitude": 31.7889,
-      "longitude": 35.2022
-    },
-    "website": "https://japanika.net",
-    "instagram": "https://www.instagram.com/japanika",
-    "facebook": "https://www.facebook.com/japanika",
-    "certifiedBy": "רבנות ירושלים",
-    "kosherType": "regular",
-    "source": "manual"
-  },
-  {
-    "id": "manual-japanika-raanana",
-    "name": "ג'פניקה רעננה",
-    "type": "restaurant",
-    "category": "parve",
-    "address": "אחוזה 95, רעננה",
-    "cityId": "רעננה",
-    "location": {
-      "latitude": 32.1835,
-      "longitude": 34.8701
-    },
-    "website": "https://japanika.net",
-    "instagram": "https://www.instagram.com/japanika",
-    "certifiedBy": "רבנות מקומית",
-    "kosherType": "regular",
-    "source": "manual"
-  },
-  {
-    "id": "manual-japanika-rosh-haayin",
-    "name": "ג'פניקה ראש העין",
-    "type": "restaurant",
-    "category": "parve",
-    "address": "יהושע בן נון 77, ראש העין",
-    "cityId": "ראש העין",
-    "location": {
-      "latitude": 32.0992,
-      "longitude": 34.9558
-    },
-    "website": "https://japanika.net",
-    "instagram": "https://www.instagram.com/japanika",
-    "certifiedBy": "רבנות מקומית",
-    "kosherType": "regular",
-    "source": "manual"
-  },
-  {
-    "id": "manual-japanika-beersheva",
-    "name": "ג'פניקה באר שבע",
-    "type": "restaurant",
-    "category": "parve",
-    "address": "באר שבע",
-    "cityId": "באר שבע",
-    "location": {
-      "latitude": 31.2389,
-      "longitude": 34.7908
-    },
-    "website": "https://japanika.net",
-    "instagram": "https://www.instagram.com/japanika",
-    "certifiedBy": "רבנות מקומית",
-    "kosherType": "regular",
-    "source": "manual"
-  },
-  {
-    "id": "manual-japanika-haifa-nasi",
-    "name": "ג'פניקה חיפה הנשיא",
-    "type": "restaurant",
-    "category": "parve",
-    "address": "שד' הנשיא 122, חיפה",
-    "cityId": "חיפה",
-    "location": {
-      "latitude": 32.8134,
-      "longitude": 34.9949
-    },
-    "website": "https://japanika.net",
-    "instagram": "https://www.instagram.com/japanika",
-    "certifiedBy": "רבנות חיפה",
-    "kosherType": "regular",
-    "source": "manual"
-  },
-  {
-    "id": "manual-japanika-kiryat-motzkin",
-    "name": "ג'פניקה קרית מוצקין",
-    "type": "restaurant",
-    "category": "parve",
-    "address": "שד' גושן 92, קרית מוצקין",
-    "cityId": "קרית מוצקין",
-    "location": {
-      "latitude": 32.8364,
-      "longitude": 35.0749
-    },
-    "website": "https://japanika.net",
-    "instagram": "https://www.instagram.com/japanika",
-    "certifiedBy": "רבנות מקומית",
-    "kosherType": "regular",
-    "source": "manual"
-  },
-  {
-    "id": "manual-japanika-netivot",
-    "name": "ג'פניקה נתיבות",
-    "type": "restaurant",
-    "category": "parve",
-    "address": "בעלי המלאכה 203, נתיבות",
-    "cityId": "נתיבות",
-    "location": {
-      "latitude": 31.4218,
-      "longitude": 34.588
-    },
-    "website": "https://japanika.net",
-    "instagram": "https://www.instagram.com/japanika",
-    "certifiedBy": "רבנות מקומית",
-    "kosherType": "regular",
-    "source": "manual"
-  },
-  {
     "id": "manual-benny-hadayag-herzliya",
     "name": "בני הדייג",
     "type": "restaurant",
@@ -137127,6 +136966,329 @@
     "website": "https://rebar.co.il",
     "kosherType": "regular",
     "openingHours": "א׳-ה׳ 08:00-21:00, ו׳ 08:00-15:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-japanika-nahariya",
+    "name": "ג'פניקה נהריה",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "המעפילים 28, נהריה",
+    "cityId": "נהריה",
+    "location": {
+      "latitude": 33.005,
+      "longitude": 35.097
+    },
+    "website": "https://japanika.net",
+    "certifiedBy": "רבנות נהריה",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 12:00-00:00, ו׳ 12:00-17:00, מוצ\"ש 21:30-00:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-japanika-nes-ziona",
+    "name": "ג'פניקה נס ציונה",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "משה לרר 1, נס ציונה",
+    "cityId": "נס ציונה",
+    "location": {
+      "latitude": 31.927,
+      "longitude": 34.798
+    },
+    "website": "https://japanika.net",
+    "certifiedBy": "רבנות נס ציונה",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 12:00-17:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-japanika-kiryat-gat",
+    "name": "ג'פניקה קריית גת",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "אסתר המלכה 11, קרית גת",
+    "cityId": "קריית גת",
+    "location": {
+      "latitude": 31.61,
+      "longitude": 34.764
+    },
+    "website": "https://japanika.net",
+    "certifiedBy": "רבנות קרית גת",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 12:00-00:00, ו׳ עד שעה וחצי לפני שבת, מוצ\"ש שעה וחצי אחרי שבת-00:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-japanika-raanana",
+    "name": "ג'פניקה רעננה",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "זרחין 1, רעננה",
+    "cityId": "רעננה",
+    "location": {
+      "latitude": 32.184,
+      "longitude": 34.871
+    },
+    "website": "https://japanika.net",
+    "certifiedBy": "רבנות רעננה",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 12:00-00:00, ו׳ עד שעה וחצי לפני שבת, מוצ\"ש שעה וחצי אחרי שבת-00:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-japanika-rishon",
+    "name": "ג'פניקה ראשון לציון",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "רוטשילד 99, ראשון לציון",
+    "cityId": "ראשון לציון",
+    "location": {
+      "latitude": 31.964,
+      "longitude": 34.801
+    },
+    "website": "https://japanika.net",
+    "certifiedBy": "רבנות ראשון לציון",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 11:00-00:00, ו׳ 11:00 עד שעתיים לפני שבת, מוצ\"ש שעה אחרי שבת-00:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-japanika-haifa",
+    "name": "ג'פניקה חיפה",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "קדושי יאסי 1, חיפה",
+    "cityId": "חיפה",
+    "location": {
+      "latitude": 32.819,
+      "longitude": 34.989
+    },
+    "website": "https://japanika.net",
+    "certifiedBy": "רבנות מועצה אזורית חוף הכרמל",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 12:00-00:00, ו׳ 11:30 עד שעתיים לפני שבת, מוצ\"ש שעה אחרי שבת-00:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-japanika-netivot",
+    "name": "ג'פניקה נתיבות",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "בעלי המלאכה 203, נתיבות",
+    "cityId": "נתיבות",
+    "location": {
+      "latitude": 31.424,
+      "longitude": 34.587
+    },
+    "website": "https://japanika.net",
+    "certifiedBy": "רבנות נתיבות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 12:00-00:00, ו׳ 11:30-15:30, מוצ\"ש שעתיים אחרי שבת-00:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-japanika-ramle",
+    "name": "ג'פניקה רמלה",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "משה אדרת 1, רמלה",
+    "cityId": "רמלה",
+    "location": {
+      "latitude": 31.931,
+      "longitude": 34.868
+    },
+    "website": "https://japanika.net",
+    "certifiedBy": "רבנות רמלה",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 11:30-00:00, ו׳ 12:00-15:00, מוצ\"ש שעתיים אחרי שבת-00:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-japanika-ariel",
+    "name": "ג'פניקה אריאל",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "מוריה 2, אריאל",
+    "cityId": "אריאל",
+    "location": {
+      "latitude": 32.107,
+      "longitude": 35.179
+    },
+    "website": "https://japanika.net",
+    "certifiedBy": "רבנות אריאל",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 11:00-00:00, ו׳ 11:00 עד שעתיים לפני שבת, מוצ\"ש שעה אחרי שבת-00:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-japanika-rosh-haayin",
+    "name": "ג'פניקה ראש העין",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "יהושע בן נון 77, ראש העין",
+    "cityId": "ראש העין",
+    "location": {
+      "latitude": 32.096,
+      "longitude": 34.956
+    },
+    "website": "https://japanika.net",
+    "certifiedBy": "רבנות ראש העין",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 11:00-00:00, ו׳ 11:00 עד שעתיים לפני שבת, מוצ\"ש שעה אחרי שבת-00:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-japanika-kiryat-motzkin",
+    "name": "ג'פניקה קרית מוצקין",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "שדרות משה גושן 92, קרית מוצקין",
+    "cityId": "קריית מוצקין",
+    "location": {
+      "latitude": 32.836,
+      "longitude": 35.073
+    },
+    "website": "https://japanika.net",
+    "certifiedBy": "רבנות מוצקין",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 12:00-00:00, ו׳ 12:00 עד שעתיים לפני שבת, מוצ\"ש שעה אחרי שבת-00:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-japanika-afula",
+    "name": "ג'פניקה עפולה",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "קהילת ציון 26, עפולה",
+    "cityId": "עפולה",
+    "location": {
+      "latitude": 32.607,
+      "longitude": 35.288
+    },
+    "website": "https://japanika.net",
+    "certifiedBy": "רבנות עפולה",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 12:00-00:00, ו׳ 12:00 עד שעתיים לפני שבת, מוצ\"ש שעה אחרי שבת-00:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-japanika-ashkelon",
+    "name": "ג'פניקה אשקלון",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "גלובוס סנטר, מבקיעים, אשקלון",
+    "cityId": "אשקלון",
+    "location": {
+      "latitude": 31.669,
+      "longitude": 34.571
+    },
+    "website": "https://japanika.net",
+    "certifiedBy": "רבנות",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 12:00-23:00, ו׳ 11:00 עד שעתיים לפני שבת, מוצ\"ש שעה אחרי שבת-23:45",
+    "source": "manual"
+  },
+  {
+    "id": "manual-japanika-rosh-pina",
+    "name": "ג'פניקה ראש פינה",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "דרך הגליל 1, ראש פינה",
+    "cityId": "ראש פינה",
+    "location": {
+      "latitude": 32.972,
+      "longitude": 35.543
+    },
+    "website": "https://japanika.net",
+    "certifiedBy": "רבנות ראש פינה",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 12:00-00:00, ו׳ 12:00 עד שעתיים לפני שבת, מוצ\"ש שעה אחרי שבת-00:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-japanika-checkpoint",
+    "name": "ג'פניקה צ׳ק פוסט חיפה",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "דרך ישראל בר יהודה 111, חיפה",
+    "cityId": "חיפה",
+    "location": {
+      "latitude": 32.819,
+      "longitude": 35
+    },
+    "website": "https://japanika.net",
+    "certifiedBy": "רבנות חיפה",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 12:00-00:00, ו׳ 12:00 עד שעתיים לפני שבת, מוצ\"ש שעה אחרי שבת-00:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-japanika-jerusalem",
+    "name": "ג'פניקה ירושלים",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "שדרות יצחק רבין 10, ירושלים",
+    "cityId": "ירושלים",
+    "location": {
+      "latitude": 31.784,
+      "longitude": 35.212
+    },
+    "website": "https://japanika.net",
+    "certifiedBy": "רבנות ירושלים",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 11:30-00:00, ו׳ 11:30 עד שעתיים לפני שבת, מוצ\"ש שעה אחרי שבת-00:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-japanika-ayalon",
+    "name": "ג'פניקה קניון איילון",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "אבא הלל 301, קניון עזריאלי איילון, רמת גן",
+    "cityId": "רמת גן",
+    "location": {
+      "latitude": 32.082,
+      "longitude": 34.814
+    },
+    "website": "https://japanika.net",
+    "certifiedBy": "רבנות רמת גן",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 12:00-20:00, ו׳ 11:30 עד שעתיים לפני שבת, שבת סגור",
+    "source": "manual"
+  },
+  {
+    "id": "manual-japanika-herzliya",
+    "name": "ג'פניקה הרצליה",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "הסדנאות 10, הרצליה",
+    "cityId": "הרצליה",
+    "location": {
+      "latitude": 32.164,
+      "longitude": 34.844
+    },
+    "website": "https://japanika.net",
+    "certifiedBy": "רבנות הרצליה",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 11:00-00:00, ו׳ 11:00 עד שעתיים לפני שבת, מוצ\"ש שעה אחרי שבת-00:00",
+    "source": "manual"
+  },
+  {
+    "id": "manual-japanika-bursa",
+    "name": "ג'פניקה בורסה רמת גן",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "ז׳בוטינסקי 2, רמת גן",
+    "cityId": "רמת גן",
+    "location": {
+      "latitude": 32.082,
+      "longitude": 34.814
+    },
+    "website": "https://japanika.net",
+    "certifiedBy": "רבנות רמת גן",
+    "kosherType": "regular",
+    "openingHours": "א׳-ה׳ 12:00-00:00, ו׳ 12:00 עד שעה לפני שבת, מוצ\"ש שעה אחרי שבת-00:00",
     "source": "manual"
   }
 ]
