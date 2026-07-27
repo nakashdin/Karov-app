@@ -28,7 +28,7 @@ type Nav = NativeStackNavigationProp<RootStackParamList>;
 type FoodRoute = RouteProp<RootStackParamList, 'FoodList'>;
 type FoodTab = 'all' | KosherCategory;
 
-const ALL_FOOD: PlaceType[] = ['restaurant', 'fast_food', 'cafe', 'coffee_cart'];
+const ALL_FOOD: PlaceType[] = ['restaurant', 'fast_food', 'cafe', 'coffee_cart', 'bakery'];
 
 const TABS: Array<{ key: FoodTab; label: string; emoji: string }> = [
   { key: 'all',   label: 'הכל',   emoji: '🍽️' },

@@ -761,31 +761,6 @@
     "cityId": "נווה עמיאל"
   },
   {
-    "openingHours": "Su-Th 12:00-23:00",
-    "tags": [
-      "pizza"
-    ],
-    "type": "fast_food",
-    "source": "osm",
-    "name": "פיצה שמש",
-    "extra": {
-      "osmKosher": "yes"
-    },
-    "website": "https://www.pizzashemesh.co.il",
-    "cityId": "חולון",
-    "address": "הרצל 75, בת ים",
-    "category": "dairy",
-    "id": "osm-node-2394477277",
-    "location": {
-      "latitude": 32.0231547,
-      "longitude": 34.7635041
-    },
-    "phone": "03-5531310",
-    "menu": "https://pizza-shemesh.co.il/תפריט/",
-    "kosherType": "badatz_beit_yosef",
-    "certifiedBy": "בד\"צ בית יוסף"
-  },
-  {
     "source": "osm",
     "id": "osm-node-2701869274",
     "type": "restaurant",
@@ -1776,24 +1751,6 @@
       "latitude": 31.2706384,
       "longitude": 34.7977633
     },
-    "cityId": "באר שבע"
-  },
-  {
-    "source": "osm",
-    "id": "osm-node-5761235277",
-    "type": "fast_food",
-    "openingHours": "Su-Th 11:00-23:00; Sa 19:00-23:00",
-    "extra": {
-      "osmKosher": "yes"
-    },
-    "name": "פיצה שמש 20",
-    "address": "באר שבע",
-    "location": {
-      "latitude": 31.2700413,
-      "longitude": 34.7978064
-    },
-    "phone": "+972 8 855 5428",
-    "category": "dairy",
     "cityId": "באר שבע"
   },
   {
@@ -3722,31 +3679,6 @@
     "menu": "https://newdeli.com/%D7%AA%D7%A4%D7%A8%D7%99%D7%98/"
   },
   {
-    "openingHours": "Su-Th 10:00-23:30; Fr 08:30-15:00",
-    "tags": [
-      "pizza"
-    ],
-    "type": "fast_food",
-    "source": "osm",
-    "name": "פיצה שמש",
-    "extra": {
-      "osmKosher": "yes"
-    },
-    "website": "https://www.pizzashemesh.co.il",
-    "cityId": "שדרות",
-    "address": "הרצל 31, שדרות",
-    "category": "dairy",
-    "id": "osm-node-11716322614",
-    "location": {
-      "latitude": 31.5243913,
-      "longitude": 34.5930664
-    },
-    "phone": "08-6884050",
-    "menu": "https://pizza-shemesh.co.il/תפריט/",
-    "kosherType": "badatz_beit_yosef",
-    "certifiedBy": "בד\"צ בית יוסף"
-  },
-  {
     "source": "osm",
     "id": "osm-node-11749994120",
     "type": "restaurant",
@@ -3867,31 +3799,6 @@
       "longitude": 34.7680101
     },
     "cityId": "קריית מאיר"
-  },
-  {
-    "openingHours": "Su-Th 11:30-23:30",
-    "tags": [
-      "pizza"
-    ],
-    "type": "fast_food",
-    "source": "osm",
-    "name": "פיצה שמש",
-    "extra": {
-      "osmKosher": "yes"
-    },
-    "website": "https://www.pizzashemesh.co.il",
-    "cityId": "אור יהודה",
-    "address": "שדרות מרדכי בן פורת 79, אור יהודה",
-    "category": "dairy",
-    "id": "osm-node-11886042983",
-    "location": {
-      "latitude": 32.0352441,
-      "longitude": 34.8565011
-    },
-    "phone": "054-3945555",
-    "menu": "https://pizza-shemesh.co.il/תפריט/",
-    "kosherType": "badatz_beit_yosef",
-    "certifiedBy": "בד\"צ בית יוסף"
   },
   {
     "source": "osm",
@@ -4529,32 +4436,6 @@
     "kosherType": "rabanut"
   },
   {
-    "facebook": "https://www.facebook.com/McDonaldsIsrael",
-    "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-16:00; Su 11:00-22:00",
-    "tags": [
-      "burger"
-    ],
-    "type": "fast_food",
-    "source": "osm",
-    "name": "McDonald's מקדונלד'ס",
-    "extra": {
-      "osmKosher": "yes"
-    },
-    "website": "https://www.mcdonalds.co.il",
-    "cityId": "שוהם",
-    "address": "שדרות עמק איילון 30, שוהם",
-    "instagram": "https://www.instagram.com/mcdonaldsisrael",
-    "category": "meat",
-    "id": "osm-node-12557322224",
-    "location": {
-      "latitude": 31.9992228,
-      "longitude": 34.9466929
-    },
-    "kosherType": "kosher",
-    "certifiedBy": "כשר",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
     "source": "osm",
     "id": "osm-node-12578960888",
     "type": "restaurant",
@@ -5117,31 +4998,6 @@
       "longitude": 35.2097182
     },
     "cityId": "ירושלים"
-  },
-  {
-    "openingHours": "Su-Th 11:00-23:00",
-    "tags": [
-      "pizza"
-    ],
-    "type": "fast_food",
-    "source": "osm",
-    "name": "פיצה שמש",
-    "extra": {
-      "osmKosher": "yes"
-    },
-    "website": "https://www.pizzashemesh.co.il",
-    "cityId": "טבריה",
-    "address": "העצמאות 3, טבריה",
-    "category": "dairy",
-    "id": "osm-node-13073821956",
-    "location": {
-      "latitude": 32.7884343,
-      "longitude": 35.5391629
-    },
-    "phone": "04-6722300",
-    "menu": "https://pizza-shemesh.co.il/תפריט/",
-    "kosherType": "mehadrin",
-    "certifiedBy": "העדה החרדית"
   },
   {
     "source": "osm",
@@ -6857,687 +6713,6 @@
     "menu": "https://www.humus-eli-yahoo.com/menu/"
   },
   {
-    "website": "https://pizza-shemesh.co.il",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "id": "9000013",
-    "type": "fast_food",
-    "source": "manual",
-    "category": "dairy",
-    "name": "פיצה שמש",
-    "address": "יצחק שמיר 24, באר יעקב",
-    "location": {
-      "latitude": 31.9363,
-      "longitude": 34.8386
-    },
-    "phone": "08-8565139",
-    "cityId": "באר יעקב",
-    "locationPrecision": "address",
-    "openingHours": "א' 11:00 – 23:00 | ב' 11:00 – 23:00 | ג' 11:00 – 23:00 | ד' 11:00 – 23:00 | ה' 11:00 – 23:00 | ו' סגור | ש' מוצש חצי שעה מצאת השבת – 23:00",
-    "menu": "https://pizza-shemesh.co.il/תפריט/",
-    "kosherType": "mehadrin"
-  },
-  {
-    "website": "https://pizza-shemesh.co.il",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "id": "9000014",
-    "type": "fast_food",
-    "source": "manual",
-    "category": "dairy",
-    "name": "פיצה שמש",
-    "address": "נחל פרת 20, באר שבע",
-    "location": {
-      "latitude": 31.2518,
-      "longitude": 34.7913
-    },
-    "phone": "08-8607771",
-    "cityId": "באר שבע",
-    "locationPrecision": "address",
-    "openingHours": "א' 11:30 – 22:00 | ב' 11:30 – 22:00 | ג' 11:30 – 22:00 | ד' 11:30 – 22:00 | ה' 11:30 – 22:00",
-    "menu": "https://pizza-shemesh.co.il/תפריט/",
-    "kosherType": "mehadrin"
-  },
-  {
-    "website": "https://pizza-shemesh.co.il",
-    "certifiedBy": "ועד הרבנים החרדים",
-    "id": "9000018",
-    "type": "fast_food",
-    "source": "manual",
-    "category": "dairy",
-    "name": "פיצה שמש",
-    "address": "רבין 15, בית שמש",
-    "location": {
-      "latitude": 31.7458,
-      "longitude": 34.9926
-    },
-    "phone": "02-5869444",
-    "cityId": "בית שמש",
-    "locationPrecision": "address",
-    "openingHours": "א 11:45 – 23:00 | ב 11:45 – 23:00 | ג 11:45 – 23:00 | ד 11:45 – 23:00 | ה 11:45 – 23:00 | ו סגור | ש מוצש חצי שעה מצאת השבת – 23:00",
-    "menu": "https://pizza-shemesh.co.il/תפריט/",
-    "kosherType": "mehadrin"
-  },
-  {
-    "website": "https://pizza-shemesh.co.il",
-    "certifiedBy": "ועד הרבנים החרדים",
-    "id": "9000021",
-    "type": "fast_food",
-    "source": "manual",
-    "category": "dairy",
-    "name": "פיצה שמש",
-    "address": "הרב ברימס 4, ביתר עילית",
-    "location": {
-      "latitude": 31.6944,
-      "longitude": 35.1202
-    },
-    "phone": "02-3740074",
-    "cityId": "ביתר עילית",
-    "locationPrecision": "address",
-    "openingHours": "א 11:00 – 23:00 | ב 11:00 – 23:00 | ג 11:00 – 23:00 | ד 11:00 – 23:00 | ה 11:00 – 23:00 | ו סגור | ש מוצש חצי שעה מצאת השבת – 23:00",
-    "menu": "https://pizza-shemesh.co.il/תפריט/",
-    "kosherType": "mehadrin"
-  },
-  {
-    "website": "https://pizza-shemesh.co.il",
-    "certifiedBy": "הרב לנדא",
-    "id": "9000022",
-    "type": "fast_food",
-    "source": "manual",
-    "category": "dairy",
-    "name": "פיצה שמש",
-    "address": "ז'בוטינסקי 120, בני ברק",
-    "location": {
-      "latitude": 32.084,
-      "longitude": 34.834
-    },
-    "phone": "03-6576888",
-    "cityId": "בני ברק",
-    "locationPrecision": "address",
-    "openingHours": "א 11:00 – 23:00 | ב 11:00 – 23:00 | ג 11:00 – 23:00 | ד 11:00 – 23:00 | ה 11:00 – 23:00 | ו סגור | ש מוצש חצי שעה מצאת השבת – 23:00",
-    "menu": "https://pizza-shemesh.co.il/תפריט/",
-    "kosherType": "mehadrin"
-  },
-  {
-    "website": "https://pizza-shemesh.co.il",
-    "certifiedBy": "ועד הרבנים החרדים",
-    "id": "9000027",
-    "type": "fast_food",
-    "source": "manual",
-    "category": "dairy",
-    "name": "פיצה שמש",
-    "address": "אלי כהן 25, בת ים",
-    "location": {
-      "latitude": 32.0235,
-      "longitude": 34.7507
-    },
-    "phone": "03-6122182",
-    "cityId": "בת ים",
-    "locationPrecision": "address",
-    "openingHours": "א-ה 11:00-23:00",
-    "menu": "https://pizza-shemesh.co.il/תפריט/",
-    "kosherType": "mehadrin"
-  },
-  {
-    "website": "https://pizza-shemesh.co.il",
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "id": "9000036",
-    "type": "fast_food",
-    "source": "manual",
-    "category": "dairy",
-    "name": "פיצה שמש",
-    "address": "גולדה מאיר 8, חולון",
-    "location": {
-      "latitude": 32.0114,
-      "longitude": 34.7799
-    },
-    "phone": "03-6418882",
-    "cityId": "חולון",
-    "locationPrecision": "address",
-    "openingHours": "א 11:00 – 23:00 | ב 11:00 – 23:00 | ג 11:00 – 23:00 | ד 11:00 – 23:00 | ה 11:00 – 23:00 | ו סגור | ש מוצש חצי שעה מצאת השבת – 23:00",
-    "menu": "https://pizza-shemesh.co.il/תפריט/",
-    "kosherType": "mehadrin"
-  },
-  {
-    "website": "https://pizza-shemesh.co.il",
-    "certifiedBy": "ועד הרבנים החרדים",
-    "id": "9000039",
-    "type": "fast_food",
-    "source": "manual",
-    "category": "dairy",
-    "name": "פיצה שמש",
-    "address": "גאולה 31, חיפה",
-    "location": {
-      "latitude": 32.794,
-      "longitude": 34.9896
-    },
-    "phone": "04-6116565",
-    "cityId": "חיפה",
-    "locationPrecision": "address",
-    "openingHours": "א 11:00 – 23:30 | ב 11:00 – 23:30 | ג 11:00 – 23:30 | ד 11:00 – 23:30 | ה 11:00 – 23:30 | ו סגור | ש מוצש חצי שעה מצאת השבת – 00:00",
-    "menu": "https://pizza-shemesh.co.il/תפריט/",
-    "kosherType": "mehadrin"
-  },
-  {
-    "website": "https://pizza-shemesh.co.il",
-    "certifiedBy": "ועד הרבנים החרדים",
-    "id": "9000043",
-    "type": "fast_food",
-    "source": "manual",
-    "category": "dairy",
-    "name": "פיצה שמש",
-    "address": "פסגה 45, ירושלים",
-    "location": {
-      "latitude": 31.7683,
-      "longitude": 35.2137
-    },
-    "phone": "02-6783903",
-    "cityId": "ירושלים",
-    "locationPrecision": "address",
-    "openingHours": "א' 11:00 – 23:00 | ב' 11:00 – 23:00 | ג' 11:00 – 23:00 | ד' 11:00 – 23:00 | ה' 11:00 – 23:00 | ו' 09:00 – 14:00 | ש' מוצ\"ש חצי שעה מצאת השבת – 24:00",
-    "menu": "https://pizza-shemesh.co.il/תפריט/",
-    "kosherType": "mehadrin"
-  },
-  {
-    "website": "https://pizza-shemesh.co.il",
-    "certifiedBy": "ועד הרבנים החרדים",
-    "id": "9000051",
-    "type": "fast_food",
-    "source": "manual",
-    "category": "dairy",
-    "name": "פיצה שמש",
-    "address": "בן גוריון 5, לוד",
-    "location": {
-      "latitude": 31.9516,
-      "longitude": 34.8942
-    },
-    "phone": "08-8600220",
-    "cityId": "לוד",
-    "locationPrecision": "address",
-    "openingHours": "א-ה 22:30-10:30 | ו סגור | ש מוצש חצי שעה מצאת השבת – 23:00",
-    "menu": "https://pizza-shemesh.co.il/תפריט/",
-    "kosherType": "mehadrin"
-  },
-  {
-    "website": "https://pizza-shemesh.co.il",
-    "certifiedBy": "ועד הרבנים החרדים",
-    "id": "9000053",
-    "type": "fast_food",
-    "source": "manual",
-    "category": "dairy",
-    "name": "פיצה שמש",
-    "address": "אבני זר 46, מודיעין עילית",
-    "location": {
-      "latitude": 31.928,
-      "longitude": 35.0486
-    },
-    "phone": "08-8629080",
-    "cityId": "מודיעין עילית",
-    "locationPrecision": "address",
-    "openingHours": "א 11:00 – 23:00 | ב 11:00 – 23:00 | ג 11:00 – 23:00 | ד 11:00 – 23:00 | ה 11:00 – 23:00 | ו סגור | ש מוצש חצי שעה מצאת השבת – 23:00",
-    "menu": "https://pizza-shemesh.co.il/תפריט/",
-    "kosherType": "mehadrin"
-  },
-  {
-    "website": "https://pizza-shemesh.co.il",
-    "certifiedBy": "ועד הרבנים החרדים",
-    "id": "9000057",
-    "type": "fast_food",
-    "source": "manual",
-    "category": "dairy",
-    "name": "פיצה שמש",
-    "address": "הרצל 51, נתניה",
-    "location": {
-      "latitude": 32.3215,
-      "longitude": 34.8532
-    },
-    "phone": "09-8333212",
-    "cityId": "נתניה",
-    "locationPrecision": "address",
-    "openingHours": "א-ה  11:30 עד 23:30 | ו סגור | שבת ארבעים דקות אחרי צאת שבת ועד 23:30",
-    "menu": "https://pizza-shemesh.co.il/תפריט/",
-    "kosherType": "mehadrin"
-  },
-  {
-    "id": "9000060",
-    "type": "fast_food",
-    "openingHours": "Su-Th 11:00-23:00",
-    "name": "פיצה שמש",
-    "locationPrecision": "address",
-    "website": "https://pizza-shemesh.co.il",
-    "cityId": "פרדס חנה",
-    "address": "הרצל, פרדס חנה",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.4706,
-      "longitude": 34.9711
-    },
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual",
-    "phone": "04-6464937",
-    "menu": "https://pizza-shemesh.co.il/תפריט/",
-    "kosherType": "mehadrin"
-  },
-  {
-    "id": "9000061",
-    "type": "fast_food",
-    "openingHours": "Su-Th 11:00-23:00",
-    "name": "פיצה שמש",
-    "locationPrecision": "address",
-    "website": "https://pizza-shemesh.co.il",
-    "cityId": "קריית אתא",
-    "address": "העצמאות 47, קריית אתא",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.8056,
-      "longitude": 35.1048
-    },
-    "certifiedBy": "בד\"ץ העדה החרדית",
-    "source": "manual",
-    "phone": "074-7132408",
-    "menu": "https://pizza-shemesh.co.il/תפריט/",
-    "kosherType": "mehadrin"
-  },
-  {
-    "id": "9000062",
-    "type": "fast_food",
-    "openingHours": "Su-Th 11:00-23:00",
-    "name": "פיצה שמש",
-    "locationPrecision": "address",
-    "website": "https://pizza-shemesh.co.il",
-    "cityId": "תל מונד",
-    "address": "השקד 2, תל מונד",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.2572,
-      "longitude": 34.9267
-    },
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual",
-    "phone": "09-7676769",
-    "menu": "https://pizza-shemesh.co.il/תפריט/",
-    "kosherType": "mehadrin"
-  },
-  {
-    "id": "9000063",
-    "type": "fast_food",
-    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00",
-    "name": "פיצה שמש",
-    "locationPrecision": "address",
-    "website": "https://pizza-shemesh.co.il",
-    "cityId": "ראש העין",
-    "address": "שלמה המלך 2, ראש העין",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.0958,
-      "longitude": 34.9558
-    },
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual",
-    "phone": "03-5040408",
-    "menu": "https://pizza-shemesh.co.il/תפריט/",
-    "kosherType": "mehadrin"
-  },
-  {
-    "id": "9000065",
-    "type": "fast_food",
-    "openingHours": "Su-Th 11:00-23:00",
-    "name": "פיצה שמש",
-    "locationPrecision": "address",
-    "website": "https://pizza-shemesh.co.il",
-    "cityId": "אור עקיבא",
-    "address": "דוד המלך 40, אור עקיבא",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.504,
-      "longitude": 34.9156
-    },
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual",
-    "phone": "04-8767789",
-    "menu": "https://pizza-shemesh.co.il/תפריט/",
-    "kosherType": "mehadrin"
-  },
-  {
-    "id": "9000066",
-    "type": "fast_food",
-    "openingHours": "Su-Th 11:00-23:00",
-    "name": "פיצה שמש",
-    "locationPrecision": "address",
-    "website": "https://pizza-shemesh.co.il",
-    "cityId": "קריית מוצקין",
-    "address": "שי עגנון 16, קריית מוצקין",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.8367,
-      "longitude": 35.0831
-    },
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual",
-    "phone": "04-9041235",
-    "menu": "https://pizza-shemesh.co.il/תפריט/",
-    "kosherType": "mehadrin"
-  },
-  {
-    "id": "9000067",
-    "type": "fast_food",
-    "openingHours": "Su-Th 11:00-23:00",
-    "name": "פיצה שמש",
-    "locationPrecision": "address",
-    "website": "https://pizza-shemesh.co.il",
-    "cityId": "שוהם",
-    "address": "דקל 30, שוהם",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.5,
-      "longitude": 34.9
-    },
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual",
-    "phone": "03-6546050",
-    "menu": "https://pizza-shemesh.co.il/תפריט/",
-    "kosherType": "mehadrin"
-  },
-  {
-    "id": "9000068",
-    "type": "fast_food",
-    "openingHours": "Su-Th 11:00-23:00",
-    "name": "פיצה שמש",
-    "locationPrecision": "address",
-    "website": "https://pizza-shemesh.co.il",
-    "cityId": "תל אביב–יפו",
-    "address": "ישראל גורי 34, תל אביב",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.0853,
-      "longitude": 34.7818
-    },
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual",
-    "phone": "03-5444516",
-    "menu": "https://pizza-shemesh.co.il/תפריט/",
-    "kosherType": "mehadrin"
-  },
-  {
-    "id": "9000072",
-    "type": "fast_food",
-    "openingHours": "Su-Th 11:00-22:30",
-    "name": "פיצה שמש",
-    "locationPrecision": "address",
-    "website": "https://pizza-shemesh.co.il",
-    "cityId": "רמת גן",
-    "address": "תרצה 15, רמת גן",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.0682,
-      "longitude": 34.8243
-    },
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual",
-    "phone": "03-6436333",
-    "menu": "https://pizza-shemesh.co.il/תפריט/",
-    "kosherType": "mehadrin"
-  },
-  {
-    "id": "9000073",
-    "type": "fast_food",
-    "openingHours": "Su-Th 11:00-23:00",
-    "name": "פיצה שמש",
-    "locationPrecision": "address",
-    "website": "https://pizza-shemesh.co.il",
-    "cityId": "רמלה",
-    "address": "יוסף טל, רמלה",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.9245,
-      "longitude": 34.8706
-    },
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual",
-    "phone": "08-6639243",
-    "menu": "https://pizza-shemesh.co.il/תפריט/",
-    "kosherType": "mehadrin"
-  },
-  {
-    "id": "9000075",
-    "type": "fast_food",
-    "openingHours": "Su-Th 11:00-23:00",
-    "name": "פיצה שמש",
-    "locationPrecision": "address",
-    "website": "https://pizza-shemesh.co.il",
-    "cityId": "רחובות",
-    "address": "עזרא, רחובות",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.8928,
-      "longitude": 34.8113
-    },
-    "certifiedBy": "הרב לנדא",
-    "source": "manual",
-    "phone": "08-6140400",
-    "menu": "https://pizza-shemesh.co.il/תפריט/",
-    "kosherType": "mehadrin"
-  },
-  {
-    "id": "9000077",
-    "type": "fast_food",
-    "openingHours": "Su-Th 11:30-23:30",
-    "name": "פיצה שמש",
-    "locationPrecision": "address",
-    "website": "https://pizza-shemesh.co.il",
-    "cityId": "ראשון לציון",
-    "address": "יהודה הנשיא 1, ראשון לציון",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.973,
-      "longitude": 34.7898
-    },
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual",
-    "phone": "03-5562100",
-    "menu": "https://pizza-shemesh.co.il/תפריט/",
-    "kosherType": "mehadrin"
-  },
-  {
-    "id": "9000081",
-    "type": "fast_food",
-    "openingHours": "Su-Th 11:00-23:00",
-    "name": "פיצה שמש",
-    "locationPrecision": "address",
-    "website": "https://pizza-shemesh.co.il",
-    "cityId": "קרני שומרון",
-    "address": "הגפן 1, קרני שומרון",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.1542,
-      "longitude": 35.0517
-    },
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual",
-    "phone": "050-8307323",
-    "menu": "https://pizza-shemesh.co.il/תפריט/",
-    "kosherType": "mehadrin"
-  },
-  {
-    "id": "9000083",
-    "type": "fast_food",
-    "openingHours": "Su-Th 11:00-23:00",
-    "name": "פיצה שמש",
-    "locationPrecision": "address",
-    "website": "https://pizza-shemesh.co.il",
-    "cityId": "קריית גת",
-    "address": "לכיש 33, קריית גת",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.61,
-      "longitude": 34.7641
-    },
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual",
-    "phone": "08-6616532",
-    "menu": "https://pizza-shemesh.co.il/תפריט/",
-    "kosherType": "mehadrin"
-  },
-  {
-    "id": "9000085",
-    "type": "fast_food",
-    "openingHours": "Su-Th 11:00-23:00",
-    "name": "פיצה שמש",
-    "locationPrecision": "address",
-    "website": "https://pizza-shemesh.co.il",
-    "cityId": "קריית אונו",
-    "address": "יעקב דורי 7, קריית אונו",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.0579,
-      "longitude": 34.8559
-    },
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual",
-    "phone": "03-6767303",
-    "menu": "https://pizza-shemesh.co.il/תפריט/",
-    "kosherType": "mehadrin"
-  },
-  {
-    "id": "9000086",
-    "type": "fast_food",
-    "openingHours": "Su-Th 11:00-23:00",
-    "name": "פיצה שמש",
-    "locationPrecision": "address",
-    "website": "https://pizza-shemesh.co.il",
-    "cityId": "קריית מלאכי",
-    "address": "רש\"י 11, קריית מלאכי",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.8645,
-      "longitude": 34.7441
-    },
-    "certifiedBy": "בד\"ץ העדה החרדית",
-    "source": "manual",
-    "phone": "08-6427788",
-    "menu": "https://pizza-shemesh.co.il/תפריט/",
-    "kosherType": "mehadrin"
-  },
-  {
-    "id": "9000087",
-    "type": "fast_food",
-    "openingHours": "Su-Th 11:00-23:00",
-    "name": "פיצה שמש",
-    "locationPrecision": "address",
-    "website": "https://pizza-shemesh.co.il",
-    "cityId": "קצרין",
-    "address": "שיון 1, קצרין",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.99,
-      "longitude": 35.69
-    },
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual",
-    "phone": "077-4512564",
-    "menu": "https://pizza-shemesh.co.il/תפריט/",
-    "kosherType": "mehadrin"
-  },
-  {
-    "id": "9000088",
-    "type": "fast_food",
-    "openingHours": "Su-Th 11:00-23:00",
-    "name": "פיצה שמש",
-    "locationPrecision": "address",
-    "website": "https://pizza-shemesh.co.il",
-    "cityId": "צפת",
-    "address": "ירושלים 81, צפת",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.965,
-      "longitude": 35.498
-    },
-    "certifiedBy": "בד\"ץ העדה החרדית",
-    "source": "manual",
-    "phone": "04-6063131",
-    "menu": "https://pizza-shemesh.co.il/תפריט/",
-    "kosherType": "mehadrin"
-  },
-  {
-    "id": "9000089",
-    "type": "fast_food",
-    "openingHours": "Su-Th 11:00-23:00",
-    "name": "פיצה שמש",
-    "locationPrecision": "address",
-    "website": "https://pizza-shemesh.co.il",
-    "cityId": "פתח תקווה",
-    "address": "ז'בוטינסקי 2, פתח תקווה",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.084,
-      "longitude": 34.8878
-    },
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual",
-    "phone": "03-6052025",
-    "menu": "https://pizza-shemesh.co.il/תפריט/",
-    "kosherType": "mehadrin"
-  },
-  {
-    "id": "9000090",
-    "type": "fast_food",
-    "openingHours": "Su-Th 11:00-23:00",
-    "name": "פיצה שמש",
-    "locationPrecision": "address",
-    "website": "https://pizza-shemesh.co.il",
-    "cityId": "בית קמה",
-    "address": "צומת בית קמה",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.408,
-      "longitude": 34.721
-    },
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual",
-    "phone": "08-9331212",
-    "menu": "https://pizza-shemesh.co.il/תפריט/",
-    "kosherType": "mehadrin"
-  },
-  {
-    "id": "9000092",
-    "type": "fast_food",
-    "openingHours": "Su-Th 11:00-23:00",
-    "name": "פיצה שמש",
-    "locationPrecision": "address",
-    "website": "https://pizza-shemesh.co.il",
-    "cityId": "מבשרת ציון",
-    "address": "מבשרת ציון",
-    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.806,
-      "longitude": 35.1467
-    },
-    "certifiedBy": "בד\"ץ בית יוסף",
-    "source": "manual",
-    "phone": "02-6514514",
-    "menu": "https://pizza-shemesh.co.il/תפריט/",
-    "kosherType": "mehadrin"
-  },
-  {
     "website": "https://www.dominos.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000093",
@@ -9050,8 +8225,8 @@
     "address": "קניון אורות, אור עקיבא",
     "category": "dairy",
     "location": {
-      "latitude": 31.5,
-      "longitude": 34.9
+      "latitude": 32.5016,
+      "longitude": 34.9271
     },
     "certifiedBy": "כשר",
     "source": "manual",
@@ -12012,852 +11187,6 @@
     "menu": "https://www.aroma.co.il/menus/"
   },
   {
-    "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-16:00; Su 11:00-22:00",
-    "source": "manual",
-    "id": "9500000",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "בעלי המלאכה 203, נתיבות",
-    "location": {
-      "latitude": 31.4228,
-      "longitude": 34.5878
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=265",
-    "cityId": "נתיבות",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 11:30-22:00; Tu 11:30-22:00; We 11:30-22:00; Th 11:30-22:00; Su 11:30-22:00",
-    "source": "manual",
-    "id": "9500001",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "שדרות יצחק רבין 5, נווה רבין, אור יהודה",
-    "location": {
-      "latitude": 32.0321,
-      "longitude": 34.8712
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=264",
-    "cityId": "אור יהודה",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:30-16:00; Sa 22:00-23:00; Su 11:00-22:30",
-    "source": "manual",
-    "id": "9500002",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "מנחם בגין 6, אופקים",
-    "location": {
-      "latitude": 31.3133,
-      "longitude": 34.6209
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=310",
-    "cityId": "אופקים",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 11:00-22:45; Tu 11:00-22:45; We 11:00-22:45; Th 11:00-22:45; Fr 10:30-16:00; Sa 21:30-22:45; Su 11:00-22:45",
-    "source": "manual",
-    "id": "9500003",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "שדרות הנשיא 4, אור עקיבא",
-    "location": {
-      "latitude": 32.504,
-      "longitude": 34.9156
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=304",
-    "cityId": "אור עקיבא",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:30; Fr 10:00-16:00; Sa 21:30-23:00; Su 11:00-22:00",
-    "source": "manual",
-    "id": "9500004",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "הסתת 20, אילת",
-    "location": {
-      "latitude": 29.5581,
-      "longitude": 34.9482
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=239",
-    "cityId": "אילת",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:30-16:00; Sa 21:30-22:30; Su 11:00-22:30",
-    "source": "manual",
-    "id": "9500005",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "קניון BIG-Fashion, יגאל אלון, בית שמש",
-    "location": {
-      "latitude": 31.7458,
-      "longitude": 34.9926
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=82",
-    "cityId": "בית שמש",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-16:00; Su 11:00-22:00",
-    "source": "manual",
-    "id": "9500006",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "שדרות רבין 9, יקנעם",
-    "location": {
-      "latitude": 32.6575,
-      "longitude": 35.1004
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=245",
-    "cityId": "יקנעם",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 11:00-23:00; Tu 11:00-23:00; We 11:00-23:00; Th 11:00-23:00; Fr 10:30-16:00; Sa 21:45-23:00; Su 11:00-23:00",
-    "source": "manual",
-    "id": "9500007",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "שדרות לכיש 153, קרית גת",
-    "location": {
-      "latitude": 31.61,
-      "longitude": 34.7641
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=302",
-    "cityId": "קריית גת",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 11:00-23:00; Tu 11:00-23:00; We 10:30-23:00; Th 10:30-23:00; Fr 10:30-15:30; Sa 22:00-23:00; Su 10:30-23:00",
-    "source": "manual",
-    "id": "9500008",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "שילת 1, מגדל העמק",
-    "location": {
-      "latitude": 32.6795,
-      "longitude": 35.2392
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=301",
-    "cityId": "מגדל העמק",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 10:30-22:30; Tu 10:30-22:30; We 10:30-22:30; Th 10:30-22:30; Fr 10:30-16:00; Sa 21:30-23:00; Su 10:30-22:30",
-    "source": "manual",
-    "id": "9500009",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "יוספטל 92, בת ים",
-    "location": {
-      "latitude": 32.0235,
-      "longitude": 34.7507
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=43",
-    "cityId": "בת ים",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 10:30-22:45; Tu 10:30-22:45; We 10:30-22:45; Th 10:30-22:45; Fr 10:00-15:00; Sa 21:30-23:00; Su 10:30-22:45",
-    "source": "manual",
-    "id": "9500010",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "יהודה הלוי 7, טבריה",
-    "location": {
-      "latitude": 32.7921,
-      "longitude": 35.5312
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=206",
-    "cityId": "טבריה",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 11:00-16:00; Su 11:00-22:30",
-    "source": "manual",
-    "id": "9500012",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "מרכז מסחרי אסף סנטר, באר יעקב",
-    "location": {
-      "latitude": 31.9363,
-      "longitude": 34.8386
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=147",
-    "cityId": "באר יעקב",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 10:30-22:00; Tu 10:30-22:00; We 10:30-22:00; Th 10:30-22:00; Su 10:30-22:00",
-    "source": "manual",
-    "id": "9500013",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "בית חולים בילינסון-ז'בוטינסקי 39, פתח תקווה",
-    "location": {
-      "latitude": 32.084,
-      "longitude": 34.8878
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=136",
-    "cityId": "פתח תקווה",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-14:00; Su 11:00-22:00",
-    "source": "manual",
-    "id": "9500014",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "טשרניחובסקי 59, כפר סבא",
-    "location": {
-      "latitude": 32.1781,
-      "longitude": 34.9075
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=167",
-    "cityId": "כפר סבא",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 10:00-23:00; Tu 10:00-23:00; We 10:00-23:00; Th 10:00-23:00; Fr 10:00-16:30; Sa 21:30-23:30; Su 10:00-23:00",
-    "source": "manual",
-    "id": "9500015",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "בית חולים רמב\"ם-העליה השנייה 8, חיפה",
-    "location": {
-      "latitude": 32.794,
-      "longitude": 34.9896
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=117",
-    "cityId": "חיפה",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:30-16:00; Su 11:00-22:30",
-    "source": "manual",
-    "id": "9500016",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "מרכז גימיון - בית חולים תל השומר, קריית אונו",
-    "location": {
-      "latitude": 32.0579,
-      "longitude": 34.8559
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=143",
-    "cityId": "קריית אונו",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 11:00-16:00; Su 11:00-22:00",
-    "source": "manual",
-    "id": "9500017",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "רח' הבנאי פינת ירושלים, חולון",
-    "location": {
-      "latitude": 32.0114,
-      "longitude": 34.7799
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=225",
-    "cityId": "חולון",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:30-15:30; Su 11:00-22:30",
-    "source": "manual",
-    "id": "9500018",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "אביזוהר 8, ירושלים",
-    "location": {
-      "latitude": 31.7683,
-      "longitude": 35.2137
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=131",
-    "cityId": "ירושלים",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 10:00-21:00; Tu 10:00-21:00; We 10:00-21:00; Th 10:00-21:00; Su 10:00-21:00",
-    "source": "manual",
-    "id": "9500019",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "צומת בית קמה",
-    "location": {
-      "latitude": 31.529,
-      "longitude": 34.741
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=240",
-    "cityId": "בית קמה",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:30-16:00; Su 11:00-22:30",
-    "source": "manual",
-    "id": "9500020",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "המגינים 56, גן יבנה",
-    "location": {
-      "latitude": 31.787,
-      "longitude": 34.7045
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=219",
-    "cityId": "גן יבנה",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 10:30-23:00; Tu 10:30-23:00; We 10:30-23:00; Th 10:30-23:00; Fr 10:00-16:00; Sa 21:30-00:00; Su 10:00-23:00",
-    "source": "manual",
-    "id": "9500021",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "שדרות דוד טוביהו 125, באר שבע",
-    "location": {
-      "latitude": 31.2518,
-      "longitude": 34.7913
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=204",
-    "cityId": "באר שבע",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 10:00-21:30; Tu 10:00-21:30; We 10:00-21:30; Th 10:00-21:30; Fr 10:00-15:00; Sa 21:30-23:00; Su 10:00-21:30",
-    "source": "manual",
-    "id": "9500023",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "פרץ סנטר - אזור תעשיה דרומי, דימונה",
-    "location": {
-      "latitude": 31.0677,
-      "longitude": 35.0347
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=139",
-    "cityId": "דימונה",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 11:00-22:15; Tu 11:00-22:15; We 11:00-22:15; Th 11:00-22:15; Fr 10:30-16:00; Su 11:00-22:15",
-    "source": "manual",
-    "id": "9500024",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "מרכז המושבה דרך בן גוריון 105, גדרה",
-    "location": {
-      "latitude": 31.812,
-      "longitude": 34.776
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=145",
-    "cityId": "גדרה",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-15:00; Su 11:00-22:00",
-    "source": "manual",
-    "id": "9500028",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "הדקל 47, תל מונד",
-    "location": {
-      "latitude": 32.2612,
-      "longitude": 34.9197
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=193",
-    "cityId": "תל מונד",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 11:00-15:30; Su 11:00-22:30",
-    "source": "manual",
-    "id": "9500029",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "חיים וייצמן 28, מודיעין",
-    "location": {
-      "latitude": 31.8966,
-      "longitude": 35.0102
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=299",
-    "cityId": "מודיעין",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 10:30-22:00; Tu 10:30-22:00; We 10:30-22:00; Th 10:30-22:00; Fr 10:30-16:00; Su 10:30-22:00",
-    "source": "manual",
-    "id": "9500030",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "חיים לנדאו 7, רמת גן",
-    "location": {
-      "latitude": 32.0682,
-      "longitude": 34.8243
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=297",
-    "cityId": "רמת גן",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 02:00-23:59; Tu 02:00-23:59; We 02:00-23:59; Th 02:00-23:59; Fr 02:00-17:00; Sa 21:00-23:59; Su 02:00-23:59",
-    "source": "manual",
-    "id": "9500033",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "טרמינל 3 אולם כניסה, שדה תעופה בן גוריון",
-    "location": {
-      "latitude": 31.9516,
-      "longitude": 34.8942
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=256",
-    "cityId": "לוד",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 10:30-23:00; Tu 10:30-23:00; We 10:30-23:00; Th 10:30-23:00; Fr 10:00-15:30; Sa 21:30-23:00; Su 10:30-23:00",
-    "source": "manual",
-    "id": "9500034",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "שדרות בן צבי 1, נהריה",
-    "location": {
-      "latitude": 33.0045,
-      "longitude": 35.0955
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=220",
-    "cityId": "נהריה",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:30-16:00; Su 11:00-22:30",
-    "source": "manual",
-    "id": "9500035",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "ז'בוטינסקי 44/45, אשדוד",
-    "location": {
-      "latitude": 31.804,
-      "longitude": 34.6553
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=152",
-    "cityId": "אשדוד",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 10:45-23:00; Tu 10:45-23:00; We 10:45-23:00; Th 10:30-23:00; Fr 10:00-16:00; Sa 21:30-23:00; Su 11:00-23:00",
-    "source": "manual",
-    "id": "9500039",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "שד' דוד רזיאל פינת רחוב שמשון, רמלה",
-    "location": {
-      "latitude": 31.9245,
-      "longitude": 34.8706
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=217",
-    "cityId": "רמלה",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 10:30-22:30; Tu 10:30-22:30; We 10:30-22:30; Th 10:30-22:30; Fr 10:30-17:30; Sa 22:00-23:00; Su 10:30-22:30",
-    "source": "manual",
-    "id": "9500041",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "דוד דותן 10, נתניה",
-    "location": {
-      "latitude": 32.3215,
-      "longitude": 34.8532
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=263",
-    "cityId": "נתניה",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-15:30; Sa 21:30-22:30; Su 11:00-22:00",
-    "source": "manual",
-    "id": "9500043",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "העמל 7 א.ת בית שאן",
-    "location": {
-      "latitude": 32.501,
-      "longitude": 35.5
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=234",
-    "cityId": "בית שאן",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 11:00-16:00; Su 11:00-22:00",
-    "source": "manual",
-    "id": "9500044",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "הקישון 9, יבנה",
-    "location": {
-      "latitude": 31.8785,
-      "longitude": 34.7444
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=226",
-    "cityId": "יבנה",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 10:30-22:00; Tu 10:30-22:00; We 10:30-22:00; Th 10:30-22:00; Fr 10:30-16:00; Sa 21:30-23:00; Su 10:30-22:00",
-    "source": "manual",
-    "id": "9500048",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "שדרות בן גוריון 21, אשקלון",
-    "location": {
-      "latitude": 31.6688,
-      "longitude": 34.5742
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=123",
-    "cityId": "אשקלון",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 11:00-21:30; Tu 11:00-21:30; We 11:00-21:30; Th 11:00-21:30; Fr 11:00-15:30; Su 11:00-21:30",
-    "source": "manual",
-    "id": "9500050",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "מורשת ישראל 15, ראשון לציון",
-    "location": {
-      "latitude": 31.973,
-      "longitude": 34.7898
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=197",
-    "cityId": "ראשון לציון",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 11:00-22:15; Tu 11:00-22:15; We 11:00-22:15; Th 11:00-22:15; Fr 10:30-16:00; Su 11:00-22:15",
-    "source": "manual",
-    "id": "9500051",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "קניון הגבעה, נתניהו 29, גבעת שמואל",
-    "location": {
-      "latitude": 32.0782,
-      "longitude": 34.8458
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=157",
-    "cityId": "גבעת שמואל",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 11:00-21:00; Tu 11:00-21:00; We 11:00-21:00; Th 11:00-21:00; Fr 10:30-16:00; Su 11:00-21:00",
-    "source": "manual",
-    "id": "9500053",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "עין בוקק, ים המלח",
-    "location": {
-      "latitude": 31.2025,
-      "longitude": 35.3939
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=252",
-    "cityId": "ים המלח",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 10:30-21:30; Tu 10:30-21:30; We 10:30-21:30; Th 10:30-21:30; Fr 10:00-15:00; Su 10:30-21:30",
-    "source": "manual",
-    "id": "9500055",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "שדרות רוטשילד 40, חדרה",
-    "location": {
-      "latitude": 32.434,
-      "longitude": 34.9187
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=175",
-    "cityId": "חדרה",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:30-15:30; Sa 21:30-23:00; Su 11:00-22:30",
-    "source": "manual",
-    "id": "9500056",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "החוצבים 10, מבשרת ציון",
-    "location": {
-      "latitude": 31.806,
-      "longitude": 35.1467
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=230",
-    "cityId": "מבשרת ציון",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 10:30-22:00; Tu 10:30-22:00; We 10:30-22:00; Th 10:30-22:00; Fr 10:30-16:00; Sa 21:30-23:00; Su 10:30-22:00",
-    "source": "manual",
-    "id": "9500064",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "איינשטיין 40 רמת אביב, תל אביב-יפו",
-    "location": {
-      "latitude": 32.0853,
-      "longitude": 34.7818
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=47",
-    "cityId": "תל אביב-יפו",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:00-16:00; Sa 21:30-23:00; Su 11:00-22:30",
-    "source": "manual",
-    "id": "9500065",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "המלאכה 2, קרית אתגרים, רעננה",
-    "location": {
-      "latitude": 32.1839,
-      "longitude": 34.8708
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=89",
-    "cityId": "רעננה",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 11:00-21:00; Tu 11:00-21:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-15:00; Su 11:00-21:00",
-    "source": "manual",
-    "id": "9500066",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "טשרניחובסקי 4, קריית שמונה",
-    "location": {
-      "latitude": 33.2076,
-      "longitude": 35.5709
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=35",
-    "cityId": "קריית שמונה",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 10:30-22:30; Tu 10:30-22:30; We 10:30-22:30; Th 10:30-22:00; Fr 10:30-16:00; Sa 21:30-23:00; Su 10:30-22:30",
-    "source": "manual",
-    "id": "9500067",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "דרך חיפה 30, קריית אתא",
-    "location": {
-      "latitude": 32.8056,
-      "longitude": 35.1048
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=215",
-    "cityId": "קריית אתא",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-15:30; Su 11:00-22:00",
-    "source": "manual",
-    "id": "9500068",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "האירוסים 53, נס ציונה",
-    "location": {
-      "latitude": 31.9285,
-      "longitude": 34.7982
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=293",
-    "cityId": "נס ציונה",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 11:00-22:15; Tu 11:00-22:15; We 11:00-22:15; Th 11:00-22:00; Fr 10:30-15:30; Su 11:00-22:15",
-    "source": "manual",
-    "id": "9500070",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "בזק 1, נווה אפק, ראש העין",
-    "location": {
-      "latitude": 32.0958,
-      "longitude": 34.9558
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=98",
-    "cityId": "ראש העין",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 10:30-22:30; Fr 10:00-16:00; Su 10:30-22:30",
-    "source": "manual",
-    "id": "9500075",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "שפרינצק 2, עפולה",
-    "location": {
-      "latitude": 32.6076,
-      "longitude": 35.2899
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=268",
-    "cityId": "עפולה",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
-    "openingHours": "Mo 10:30-22:00; Tu 10:30-22:00; We 10:30-22:00; Th 10:30-22:00; Fr 10:30-16:00; Su 10:30-22:00",
-    "source": "manual",
-    "id": "9500076",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "מרכז קניות תל חנן, בר יהודה 174, נשר",
-    "location": {
-      "latitude": 32.775,
-      "longitude": 35.0398
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=119",
-    "cityId": "נשר",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
-  },
-  {
     "source": "manual",
     "id": "9200200",
     "type": "cafe",
@@ -12892,24 +11221,6 @@
     "cityId": "ראשון לציון",
     "locationPrecision": "city",
     "menu": "https://www.roladin.co.il/המוצרים-שלנו/"
-  },
-  {
-    "openingHours": "Mo 02:00-22:00; Tu 02:00-22:00; We 02:00-22:00; Th 02:00-22:00; Fr 02:00-19:15; Sa 05:00-22:00; Su 02:00-22:00",
-    "source": "manual",
-    "id": "9500080",
-    "type": "fast_food",
-    "category": "meat",
-    "kosherType": "kosher",
-    "name": "מקדונלד'ס",
-    "address": "טרמינל 1 דיוטי פרי, שדה תעופה בן גוריון",
-    "location": {
-      "latitude": 31.9995,
-      "longitude": 34.8854
-    },
-    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=254",
-    "cityId": "לוד",
-    "locationPrecision": "address",
-    "menu": "https://www.mcdonalds.co.il/%D7%9E%D7%94_%D7%91%D7%AA%D7%A4%D7%A8%D7%99%D7%98/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%91%D7%95%D7%93%D7%93%D7%99%D7%9D"
   },
   {
     "facebook": "https://www.facebook.com/GLIDAGOLDAISRAEL",
@@ -15993,44 +14304,6 @@
     "kosherType": "mehadrin",
     "source": "manual",
     "lastVerifiedAt": "2026-07-14"
-  },
-  {
-    "id": "pizza-shemesh-7373cb71",
-    "name": "פיצה שמש",
-    "type": "fast_food",
-    "cityId": "באר יעקב",
-    "address": "הגפן 2, באר יעקב",
-    "location": {
-      "latitude": 31.946,
-      "longitude": 34.84
-    },
-    "locationPrecision": "city",
-    "website": "https://pizza-shemesh.co.il",
-    "openingHours": "א'-ה' 11:00-23:00 | ו' סגור | מוצ\"ש חצי שעה מצאת השבת עד 23:00",
-    "category": "dairy",
-    "kosherType": "badatz_beit_yosef",
-    "source": "manual",
-    "lastVerifiedAt": "2026-07-14",
-    "menu": "https://pizza-shemesh.co.il/תפריט/"
-  },
-  {
-    "id": "pizza-shemesh-7277ff98",
-    "name": "פיצה שמש",
-    "type": "fast_food",
-    "cityId": "נתניה",
-    "address": "פנחס לבון 39, נתניה",
-    "location": {
-      "latitude": 32.33,
-      "longitude": 34.86
-    },
-    "locationPrecision": "city",
-    "website": "https://pizza-shemesh.co.il",
-    "openingHours": "א'-ה' 11:00-23:00 | ו' סגור | מוצ\"ש חצי שעה מצאת השבת עד 23:00",
-    "category": "dairy",
-    "kosherType": "badatz_edah",
-    "source": "manual",
-    "lastVerifiedAt": "2026-07-14",
-    "menu": "https://pizza-shemesh.co.il/תפריט/"
   },
   {
     "id": "burgersbar-c0ae94d5",
@@ -25835,5 +24108,3142 @@
     "kosherType": "rabanut_mekomi",
     "source": "manual",
     "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "9000000",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "אופקים",
+    "address": "הרצל 26, אופקים",
+    "location": {
+      "latitude": 31.3097,
+      "longitude": 34.6196
+    },
+    "locationPrecision": "address",
+    "phone": "08-9305775",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "הרב לנדא",
+    "source": "manual"
+  },
+  {
+    "id": "9000001",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "הרצליה",
+    "address": "סוקולוב 31, הרצליה",
+    "location": {
+      "latitude": 32.1663,
+      "longitude": 34.8392
+    },
+    "locationPrecision": "address",
+    "phone": "09-3071444",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000002",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "אור יהודה",
+    "address": "ארבל 13, אור יהודה",
+    "location": {
+      "latitude": 32.0321,
+      "longitude": 34.8712
+    },
+    "locationPrecision": "address",
+    "phone": "03-5564644",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000003",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "אור יהודה",
+    "address": "בן פורת 79, אור יהודה",
+    "location": {
+      "latitude": 32.0321,
+      "longitude": 34.8712
+    },
+    "locationPrecision": "address",
+    "phone": "03-5330111",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000004",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "אזור",
+    "address": "שפינוזה 2, אזור",
+    "location": {
+      "latitude": 32.0207,
+      "longitude": 34.8028
+    },
+    "locationPrecision": "address",
+    "phone": "03-5492212",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000005",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "אילת",
+    "address": "התמרים 39, אילת",
+    "location": {
+      "latitude": 29.5581,
+      "longitude": 34.9482
+    },
+    "locationPrecision": "address",
+    "phone": "08-6337090",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000006",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "אלעד",
+    "address": "רבי יהודה הנשיא 94, אלעד",
+    "location": {
+      "latitude": 32.053,
+      "longitude": 34.9518
+    },
+    "locationPrecision": "address",
+    "phone": "03-9664481",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "ועד הרבנים החרדים",
+    "source": "manual"
+  },
+  {
+    "id": "9000007",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "אפרת",
+    "address": "מרכז אפרת, אפרת",
+    "location": {
+      "latitude": 31.6594,
+      "longitude": 35.1534
+    },
+    "locationPrecision": "address",
+    "phone": "02-5393963",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000008",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "אשדוד",
+    "address": "דב גור 11, אשדוד",
+    "location": {
+      "latitude": 31.804,
+      "longitude": 34.6553
+    },
+    "locationPrecision": "address",
+    "phone": "08-8688098",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "רבני הקריות",
+    "source": "manual"
+  },
+  {
+    "id": "9000009",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "אשדוד",
+    "address": "רוגוזין 3, אשדוד",
+    "location": {
+      "latitude": 31.804,
+      "longitude": 34.6553
+    },
+    "locationPrecision": "address",
+    "phone": "08-6900905",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000010",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "אשקלון",
+    "address": "ביאליק 32, אשקלון",
+    "location": {
+      "latitude": 31.6688,
+      "longitude": 34.5742
+    },
+    "locationPrecision": "address",
+    "phone": "08-9981848",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000011",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "אשקלון",
+    "address": "עמק רימון 3, אשקלון",
+    "location": {
+      "latitude": 31.6688,
+      "longitude": 34.5742
+    },
+    "locationPrecision": "address",
+    "phone": "08-6888809",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000012",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "אשקלון",
+    "address": "אמנים 36, אשקלון",
+    "location": {
+      "latitude": 31.6688,
+      "longitude": 34.5742
+    },
+    "locationPrecision": "address",
+    "phone": "08-9900021",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000013",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "באר יעקב",
+    "address": "יצחק שמיר 24, באר יעקב",
+    "location": {
+      "latitude": 31.9363,
+      "longitude": 34.8386
+    },
+    "locationPrecision": "address",
+    "phone": "08-8565139",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000014",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "באר שבע",
+    "address": "נחל פרת 20, באר שבע",
+    "location": {
+      "latitude": 31.2518,
+      "longitude": 34.7913
+    },
+    "locationPrecision": "address",
+    "phone": "08-8607771",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000015",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "באר שבע",
+    "address": "ראובן רובין 3, באר שבע",
+    "location": {
+      "latitude": 31.2518,
+      "longitude": 34.7913
+    },
+    "locationPrecision": "address",
+    "phone": "08-6331133",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000016",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "באר שבע",
+    "address": "ז'בוטינסקי 24, באר שבע",
+    "location": {
+      "latitude": 31.2518,
+      "longitude": 34.7913
+    },
+    "locationPrecision": "address",
+    "phone": "08-6339010",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000017",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "באר שבע",
+    "address": "שדרות רגר 185, באר שבע",
+    "location": {
+      "latitude": 31.2518,
+      "longitude": 34.7913
+    },
+    "locationPrecision": "address",
+    "phone": "08-6254688",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000018",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "בית שמש",
+    "address": "רבין 15, בית שמש",
+    "location": {
+      "latitude": 31.7458,
+      "longitude": 34.9926
+    },
+    "locationPrecision": "address",
+    "phone": "02-5869444",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "ועד הרבנים החרדים",
+    "source": "manual"
+  },
+  {
+    "id": "9000019",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "בית שמש",
+    "address": "יחזקאל הנביא 22, בית שמש",
+    "location": {
+      "latitude": 31.7458,
+      "longitude": 34.9926
+    },
+    "locationPrecision": "address",
+    "phone": "02-5433633",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "ועד הרבנים החרדים",
+    "source": "manual"
+  },
+  {
+    "id": "9000020",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "בית שמש",
+    "address": "אמוראים 35, בית שמש",
+    "location": {
+      "latitude": 31.7458,
+      "longitude": 34.9926
+    },
+    "locationPrecision": "address",
+    "phone": "02-6406286",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "ועד הרבנים החרדים",
+    "source": "manual"
+  },
+  {
+    "id": "9000021",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "ביתר עילית",
+    "address": "הרב ברימס 4, ביתר עילית",
+    "location": {
+      "latitude": 31.6944,
+      "longitude": 35.1202
+    },
+    "locationPrecision": "address",
+    "phone": "02-3740074",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "ועד הרבנים החרדים",
+    "source": "manual"
+  },
+  {
+    "id": "9000022",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "בני ברק",
+    "address": "ז'בוטינסקי 120, בני ברק",
+    "location": {
+      "latitude": 32.084,
+      "longitude": 34.834
+    },
+    "locationPrecision": "address",
+    "phone": "03-6576888",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "הרב לנדא",
+    "source": "manual"
+  },
+  {
+    "id": "9000023",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "בני ברק",
+    "address": "יצחק מאיר הכהן 4, בני ברק",
+    "location": {
+      "latitude": 32.084,
+      "longitude": 34.834
+    },
+    "locationPrecision": "address",
+    "phone": "03-6723621",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "ועד הרבנים החרדים",
+    "source": "manual"
+  },
+  {
+    "id": "9000024",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "בני ברק",
+    "address": "ירושלים 18, בני ברק",
+    "location": {
+      "latitude": 32.084,
+      "longitude": 34.834
+    },
+    "locationPrecision": "address",
+    "phone": "03-9543533",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "הרב לנדא",
+    "source": "manual"
+  },
+  {
+    "id": "9000025",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "בני ברק",
+    "address": "קהנמן 104, בני ברק",
+    "location": {
+      "latitude": 32.084,
+      "longitude": 34.834
+    },
+    "locationPrecision": "address",
+    "phone": "03-6197070",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "הרב לנדא",
+    "source": "manual"
+  },
+  {
+    "id": "9000026",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "בני ברק",
+    "address": "רבי עקיבא 122, בני ברק",
+    "location": {
+      "latitude": 32.084,
+      "longitude": 34.834
+    },
+    "locationPrecision": "address",
+    "phone": "03-6813838",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "ועד הרבנים החרדים",
+    "source": "manual"
+  },
+  {
+    "id": "9000027",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "בת ים",
+    "address": "אלי כהן 25, בת ים",
+    "location": {
+      "latitude": 32.0235,
+      "longitude": 34.7507
+    },
+    "locationPrecision": "address",
+    "phone": "03-6122182",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "ועד הרבנים החרדים",
+    "source": "manual"
+  },
+  {
+    "id": "9000028",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "בת ים",
+    "address": "סנדלר 4, בת ים",
+    "location": {
+      "latitude": 32.0235,
+      "longitude": 34.7507
+    },
+    "locationPrecision": "address",
+    "phone": "03-6594343",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "ועד הרבנים החרדים",
+    "source": "manual"
+  },
+  {
+    "id": "9000029",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "בת ים",
+    "address": "הרצל 75, בת ים",
+    "location": {
+      "latitude": 32.0235,
+      "longitude": 34.7507
+    },
+    "locationPrecision": "address",
+    "phone": "03-5531310",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000030",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "בת ים",
+    "address": "אוזיאל 25, בת ים",
+    "location": {
+      "latitude": 32.0235,
+      "longitude": 34.7507
+    },
+    "locationPrecision": "address",
+    "phone": "03-6138087",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000031",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "גבעתיים",
+    "address": "וייצמן 43, גבעתיים",
+    "location": {
+      "latitude": 32.068,
+      "longitude": 34.8126
+    },
+    "locationPrecision": "address",
+    "phone": "03-6554505",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000032",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "גדרה",
+    "address": "הרצל 10, גדרה",
+    "location": {
+      "latitude": 31.812,
+      "longitude": 34.776
+    },
+    "locationPrecision": "address",
+    "phone": "08-6141414",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000033",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "גן יבנה",
+    "address": "צה\"ל 28, גן יבנה",
+    "location": {
+      "latitude": 31.787,
+      "longitude": 34.7045
+    },
+    "locationPrecision": "address",
+    "phone": "08-6186686",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000034",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "גני תקווה",
+    "address": "עין גנים 7, גני תקווה",
+    "location": {
+      "latitude": 32.0605,
+      "longitude": 34.877
+    },
+    "locationPrecision": "address",
+    "phone": "03-6344000",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000035",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "דימונה",
+    "address": "העלייה 215, דימונה",
+    "location": {
+      "latitude": 31.0677,
+      "longitude": 35.0347
+    },
+    "locationPrecision": "address",
+    "phone": "08-3740077",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000036",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "חדרה",
+    "address": "הנשיא 59, חדרה",
+    "location": {
+      "latitude": 32.434,
+      "longitude": 34.9187
+    },
+    "locationPrecision": "address",
+    "phone": "04-8406664",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000037",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "חולון",
+    "address": "גולדה מאיר 8, חולון",
+    "location": {
+      "latitude": 32.0114,
+      "longitude": 34.7799
+    },
+    "locationPrecision": "address",
+    "phone": "03-6418882",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000038",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "חולון",
+    "address": "דב הוז 63, חולון",
+    "location": {
+      "latitude": 32.0114,
+      "longitude": 34.7799
+    },
+    "locationPrecision": "address",
+    "phone": "03-6316360",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000039",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "חולון",
+    "address": "הר הצופים 42, חולון",
+    "location": {
+      "latitude": 32.0114,
+      "longitude": 34.7799
+    },
+    "locationPrecision": "address",
+    "phone": "03-6330655",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000040",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "חיפה",
+    "address": "גאולה 31, חיפה",
+    "location": {
+      "latitude": 32.794,
+      "longitude": 34.9896
+    },
+    "locationPrecision": "address",
+    "phone": "04-6116565",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "ועד הרבנים החרדים",
+    "source": "manual"
+  },
+  {
+    "id": "9000041",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "חריש",
+    "address": "דרך ארץ 41, חריש",
+    "location": {
+      "latitude": 32.458,
+      "longitude": 35.0343
+    },
+    "locationPrecision": "address",
+    "phone": "04-6033233",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "ועד הרבנים החרדים",
+    "source": "manual"
+  },
+  {
+    "id": "9000042",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "טבריה",
+    "address": "העצמאות 3, טבריה",
+    "location": {
+      "latitude": 32.7921,
+      "longitude": 35.5312
+    },
+    "locationPrecision": "address",
+    "phone": "04-6722300",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "ועד הרבנים החרדים",
+    "source": "manual"
+  },
+  {
+    "id": "9000043",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "יבנה",
+    "address": "אגוז 2, יבנה",
+    "location": {
+      "latitude": 31.8752,
+      "longitude": 34.7394
+    },
+    "locationPrecision": "address",
+    "phone": "08-6510000",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000044",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "יהוד",
+    "address": "וייצמן 44, יהוד",
+    "location": {
+      "latitude": 32.031,
+      "longitude": 34.889
+    },
+    "locationPrecision": "address",
+    "phone": "03-5664010",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000045",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "פסגה 45, ירושלים",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "address",
+    "phone": "02-6783903",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "ועד הרבנים החרדים",
+    "source": "manual"
+  },
+  {
+    "id": "9000046",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "יחזקאל 8, ירושלים",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "address",
+    "phone": "02-5002690",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "ועד הרבנים החרדים",
+    "source": "manual"
+  },
+  {
+    "id": "9000047",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "מבשרת ציון, ירושלים",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "address",
+    "phone": "02-6514514",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000048",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "משה דיין 164, ירושלים",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "address",
+    "phone": "02-5338585",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "ועד הרבנים החרדים",
+    "source": "manual"
+  },
+  {
+    "id": "9000049",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "אגריפס 42, ירושלים",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "address",
+    "phone": "02-5430430",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000050",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "גולדה מאיר 255, ירושלים",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "address",
+    "phone": "02-5302210",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "ועד הרבנים החרדים",
+    "source": "manual"
+  },
+  {
+    "id": "9000051",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "כפר חב\"ד",
+    "address": "אדמו\"ר הרש\"ב 2, כפר חב\"ד",
+    "location": {
+      "latitude": 32.0004,
+      "longitude": 34.8897
+    },
+    "locationPrecision": "address",
+    "phone": "03-5221212",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "ועד הרבנים החרדים",
+    "source": "manual"
+  },
+  {
+    "id": "9000052",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "כפר סבא",
+    "address": "טשרניחובסקי 24, כפר סבא",
+    "location": {
+      "latitude": 32.1781,
+      "longitude": 34.9075
+    },
+    "locationPrecision": "address",
+    "phone": "09-8828886",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000053",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "לוד",
+    "address": "בן גוריון 5, לוד",
+    "location": {
+      "latitude": 31.9516,
+      "longitude": 34.8942
+    },
+    "locationPrecision": "address",
+    "phone": "08-8600220",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "ועד הרבנים החרדים",
+    "source": "manual"
+  },
+  {
+    "id": "9000054",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "מודיעין",
+    "address": "חיים וייצמן 18, מודיעין",
+    "location": {
+      "latitude": 31.8966,
+      "longitude": 35.0102
+    },
+    "locationPrecision": "address",
+    "phone": "08-9918888",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000055",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "מודיעין עילית",
+    "address": "אבני זר 46, מודיעין עילית",
+    "location": {
+      "latitude": 31.928,
+      "longitude": 35.0486
+    },
+    "locationPrecision": "address",
+    "phone": "08-8629080",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "ועד הרבנים החרדים",
+    "source": "manual"
+  },
+  {
+    "id": "9000056",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "מצפה רמון",
+    "address": "נחל תרסים 1, מצפה רמון",
+    "location": {
+      "latitude": 30.6097,
+      "longitude": 34.8026
+    },
+    "locationPrecision": "address",
+    "phone": "08-8501111",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000057",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "נס ציונה",
+    "address": "נורדאו 6, נס ציונה",
+    "location": {
+      "latitude": 31.9285,
+      "longitude": 34.7982
+    },
+    "locationPrecision": "address",
+    "phone": "08-9248111",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000058",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "נתיבות",
+    "address": "יוסף סמילו 13, נתיבות",
+    "location": {
+      "latitude": 31.4228,
+      "longitude": 34.5878
+    },
+    "locationPrecision": "address",
+    "phone": "08-6884429",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000059",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "נתניה",
+    "address": "הרצל 51, נתניה",
+    "location": {
+      "latitude": 32.3215,
+      "longitude": 34.8532
+    },
+    "locationPrecision": "address",
+    "phone": "09-8333212",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "ועד הרבנים החרדים",
+    "source": "manual"
+  },
+  {
+    "id": "9000060",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "עפולה",
+    "address": "משה שרת 3, עפולה",
+    "location": {
+      "latitude": 32.6076,
+      "longitude": 35.2899
+    },
+    "locationPrecision": "address",
+    "phone": "04-6464777",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "ועד הרבנים החרדים",
+    "source": "manual"
+  },
+  {
+    "id": "9000061",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "ערד",
+    "address": "א. בן יאיר 35, ערד",
+    "location": {
+      "latitude": 31.2598,
+      "longitude": 35.2141
+    },
+    "locationPrecision": "address",
+    "phone": "077-2062600",
+    "website": "https://pizza-shemesh.co.il",
+    "category": "dairy",
+    "certifiedBy": "הרב לנדא",
+    "source": "manual"
+  },
+  {
+    "id": "9000062",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "פרדס חנה",
+    "address": "הרצל, פרדס חנה",
+    "location": {
+      "latitude": 32.4706,
+      "longitude": 34.9711
+    },
+    "locationPrecision": "address",
+    "phone": "04-6464937",
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
+    "openingHours": "Su-Th 11:00-23:00",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000063",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "קריית אתא",
+    "address": "העצמאות 47, קריית אתא",
+    "location": {
+      "latitude": 32.8056,
+      "longitude": 35.1048
+    },
+    "locationPrecision": "address",
+    "phone": "074-7132408",
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
+    "openingHours": "Su-Th 11:00-23:00",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ העדה החרדית",
+    "source": "manual"
+  },
+  {
+    "id": "9000064",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "תל מונד",
+    "address": "השקד 2, תל מונד",
+    "location": {
+      "latitude": 32.2572,
+      "longitude": 34.9267
+    },
+    "locationPrecision": "address",
+    "phone": "09-7676769",
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
+    "openingHours": "Su-Th 11:00-23:00",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000065",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "ראש העין",
+    "address": "שלמה המלך 2, ראש העין",
+    "location": {
+      "latitude": 32.0958,
+      "longitude": 34.9558
+    },
+    "locationPrecision": "address",
+    "phone": "03-5040408",
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
+    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000066",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "ראש העין",
+    "address": "שבזי 201, ראש העין",
+    "location": {
+      "latitude": 32.0958,
+      "longitude": 34.9558
+    },
+    "locationPrecision": "address",
+    "phone": "03-5040408",
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
+    "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000067",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "אור עקיבא",
+    "address": "דוד המלך 40, אור עקיבא",
+    "location": {
+      "latitude": 32.504,
+      "longitude": 34.9156
+    },
+    "locationPrecision": "address",
+    "phone": "04-8767789",
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
+    "openingHours": "Su-Th 11:00-23:00",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000068",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "קריית מוצקין",
+    "address": "שי עגנון 16, קריית מוצקין",
+    "location": {
+      "latitude": 32.8367,
+      "longitude": 35.0831
+    },
+    "locationPrecision": "address",
+    "phone": "04-9041235",
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
+    "openingHours": "Su-Th 11:00-23:00",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000069",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "שוהם",
+    "address": "דקל 30, שוהם",
+    "location": {
+      "latitude": 32.005872,
+      "longitude": 34.951194
+    },
+    "locationPrecision": "address",
+    "phone": "03-6546050",
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
+    "openingHours": "Su-Th 11:00-23:00",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000070",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "תל אביב–יפו",
+    "address": "ישראל גורי 34, תל אביב",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "phone": "03-5444516",
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
+    "openingHours": "Su-Th 11:00-23:00",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000071",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "תל אביב–יפו",
+    "address": "נגבה 1, תל אביב",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "phone": "055-2221709",
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
+    "openingHours": "Su-Th 11:00-23:00",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000072",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "תל אביב–יפו",
+    "address": "צרעה 3, תל אביב",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "phone": "077-5060826",
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
+    "openingHours": "Su-Th 11:30-23:30",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000073",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "תל אביב–יפו",
+    "address": "בית אל 12, תל אביב",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "phone": "03-7479970",
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
+    "openingHours": "Su-Th 11:00-23:00",
+    "category": "dairy",
+    "certifiedBy": "הרב לנדא",
+    "source": "manual"
+  },
+  {
+    "id": "9000074",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "שדרות",
+    "address": "הרצל 31, שדרות",
+    "location": {
+      "latitude": 31.523,
+      "longitude": 34.5966
+    },
+    "locationPrecision": "address",
+    "phone": "08-6884050",
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
+    "openingHours": "Su-Th 11:00-23:00",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000075",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "רמת גן",
+    "address": "תרצה 15, רמת גן",
+    "location": {
+      "latitude": 32.0682,
+      "longitude": 34.8243
+    },
+    "locationPrecision": "address",
+    "phone": "03-6436333",
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
+    "openingHours": "Su-Th 11:00-22:30",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000076",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "רמלה",
+    "address": "יוסף טל, רמלה",
+    "location": {
+      "latitude": 31.9245,
+      "longitude": 34.8706
+    },
+    "locationPrecision": "address",
+    "phone": "08-6639243",
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
+    "openingHours": "Su-Th 11:00-23:00",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000077",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "רמלה",
+    "address": "מבצע יהונתן, רמלה",
+    "location": {
+      "latitude": 31.9245,
+      "longitude": 34.8706
+    },
+    "locationPrecision": "address",
+    "phone": "08-6139999",
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza.shemesh.mivza.yonatan",
+    "openingHours": "Su-Th 11:00-23:00",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000078",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "רחובות",
+    "address": "עזרא, רחובות",
+    "location": {
+      "latitude": 31.8928,
+      "longitude": 34.8113
+    },
+    "locationPrecision": "address",
+    "phone": "08-6140400",
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
+    "openingHours": "Su-Th 11:00-23:00",
+    "category": "dairy",
+    "certifiedBy": "הרב לנדא",
+    "source": "manual"
+  },
+  {
+    "id": "9000079",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "רחובות",
+    "address": "ששת הימים 95, רחובות",
+    "location": {
+      "latitude": 31.8928,
+      "longitude": 34.8113
+    },
+    "locationPrecision": "address",
+    "phone": "08-6170700",
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
+    "openingHours": "Su-Th 11:00-23:00",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ העדה החרדית",
+    "source": "manual"
+  },
+  {
+    "id": "9000080",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "ראשון לציון",
+    "address": "יהודה הנשיא 1, ראשון לציון",
+    "location": {
+      "latitude": 31.973,
+      "longitude": 34.7898
+    },
+    "locationPrecision": "address",
+    "phone": "03-5562100",
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
+    "openingHours": "Su-Th 11:30-23:30",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000081",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "ראשון לציון",
+    "address": "הרצל 28, ראשון לציון",
+    "location": {
+      "latitude": 31.973,
+      "longitude": 34.7898
+    },
+    "locationPrecision": "address",
+    "phone": "03-5252502",
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
+    "openingHours": "Su-Th 11:30-23:30",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000082",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "ראשון לציון",
+    "address": "יהודה לייב פינסקר 20, ראשון לציון",
+    "location": {
+      "latitude": 31.973,
+      "longitude": 34.7898
+    },
+    "locationPrecision": "address",
+    "phone": "03-5050930",
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
+    "openingHours": "Su-Th 11:00-23:00",
+    "category": "dairy",
+    "certifiedBy": "הרב לנדא",
+    "source": "manual"
+  },
+  {
+    "id": "9000083",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "ראשון לציון",
+    "address": "השירה העברית 10, ראשון לציון",
+    "location": {
+      "latitude": 31.973,
+      "longitude": 34.7898
+    },
+    "locationPrecision": "address",
+    "phone": "074-7132404",
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
+    "openingHours": "Su-Th 11:00-23:00",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000084",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "קרני שומרון",
+    "address": "הגפן 1, קרני שומרון",
+    "location": {
+      "latitude": 32.1542,
+      "longitude": 35.0517
+    },
+    "locationPrecision": "address",
+    "phone": "050-8307323",
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
+    "openingHours": "Su-Th 11:00-23:00",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000085",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "קרית שמונה",
+    "address": "תל חי 92, קרית שמונה",
+    "location": {
+      "latitude": 33.211239,
+      "longitude": 35.569913
+    },
+    "locationPrecision": "address",
+    "phone": "04-8169988",
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
+    "openingHours": "Su-Th 11:00-23:00",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000086",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "קריית גת",
+    "address": "לכיש 33, קריית גת",
+    "location": {
+      "latitude": 31.61,
+      "longitude": 34.7641
+    },
+    "locationPrecision": "address",
+    "phone": "08-6616532",
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
+    "openingHours": "Su-Th 11:00-23:00",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000087",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "קריית גת",
+    "address": "אסתר המלכה 13, קריית גת",
+    "location": {
+      "latitude": 31.61,
+      "longitude": 34.7641
+    },
+    "locationPrecision": "address",
+    "phone": "08-8692874",
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
+    "openingHours": "Su-Th 11:00-23:00",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000088",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "קריית אונו",
+    "address": "יעקב דורי 7, קריית אונו",
+    "location": {
+      "latitude": 32.0579,
+      "longitude": 34.8559
+    },
+    "locationPrecision": "address",
+    "phone": "03-6767303",
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
+    "openingHours": "Su-Th 11:00-23:00",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000089",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "קריית מלאכי",
+    "address": "רש\"י 11, קריית מלאכי",
+    "location": {
+      "latitude": 31.8645,
+      "longitude": 34.7441
+    },
+    "locationPrecision": "address",
+    "phone": "08-6427788",
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
+    "openingHours": "Su-Th 11:00-23:00",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ העדה החרדית",
+    "source": "manual"
+  },
+  {
+    "id": "9000090",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "קצרין",
+    "address": "שיון 1, קצרין",
+    "location": {
+      "latitude": 32.99,
+      "longitude": 35.69
+    },
+    "locationPrecision": "address",
+    "phone": "077-4512564",
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
+    "openingHours": "Su-Th 11:00-23:00",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000091",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "צפת",
+    "address": "ירושלים 81, צפת",
+    "location": {
+      "latitude": 32.965,
+      "longitude": 35.498
+    },
+    "locationPrecision": "address",
+    "phone": "04-6063131",
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
+    "openingHours": "Su-Th 11:00-23:00",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ העדה החרדית",
+    "source": "manual"
+  },
+  {
+    "id": "9000092",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "פתח תקווה",
+    "address": "ז'בוטינסקי 2, פתח תקווה",
+    "location": {
+      "latitude": 32.084,
+      "longitude": 34.8878
+    },
+    "locationPrecision": "address",
+    "phone": "03-6052025",
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
+    "openingHours": "Su-Th 11:00-23:00",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "manual-dedup-פיצה-שמש-בית-קמה",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "בית קמה",
+    "address": "צומת בית קמה",
+    "location": {
+      "latitude": 31.408,
+      "longitude": 34.721
+    },
+    "locationPrecision": "address",
+    "phone": "08-9331212",
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
+    "openingHours": "Su-Th 11:00-23:00",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "manual-dedup-פיצה-שמש-אילת",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "אילת",
+    "address": "שדרות ארגמן 60, אילת",
+    "location": {
+      "latitude": 29.5581,
+      "longitude": 34.9482
+    },
+    "locationPrecision": "address",
+    "phone": "08-8503355",
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizzashemesh_eilat",
+    "openingHours": "Su-Th 11:00-23:00",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "manual-dedup-פיצה-שמש-מבשרת-ציון",
+    "name": "פיצה שמש",
+    "type": "restaurant",
+    "cityId": "מבשרת ציון",
+    "address": "מבשרת ציון",
+    "location": {
+      "latitude": 31.806,
+      "longitude": 35.1467
+    },
+    "locationPrecision": "address",
+    "phone": "02-6514514",
+    "website": "https://pizza-shemesh.co.il",
+    "instagram": "https://www.instagram.com/pizza_shemesh_israel",
+    "openingHours": "Su-Th 11:00-23:00",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000096",
+    "name": "דומינו'ס",
+    "type": "restaurant",
+    "cityId": "פתח תקווה",
+    "address": "העצמאות 65, פתח תקווה",
+    "location": {
+      "latitude": 32.084,
+      "longitude": 34.8878
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-70-70-70",
+    "website": "https://www.dominos.co.il",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9000097",
+    "name": "דומינו'ס",
+    "type": "restaurant",
+    "cityId": "פתח תקווה",
+    "address": "ראשון לציון 1, פתח תקווה",
+    "location": {
+      "latitude": 32.084,
+      "longitude": 34.8878
+    },
+    "locationPrecision": "address",
+    "phone": "1-700-70-70-70",
+    "website": "https://www.dominos.co.il",
+    "category": "dairy",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "source": "manual"
+  },
+  {
+    "id": "9500000",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "נתיבות",
+    "address": "בעלי המלאכה 203, נתיבות",
+    "location": {
+      "latitude": 31.4228,
+      "longitude": 34.5878
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=265",
+    "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-16:00; Su 11:00-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500001",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "אור יהודה",
+    "address": "שדרות יצחק רבין 5, נווה רבין, אור יהודה",
+    "location": {
+      "latitude": 32.0321,
+      "longitude": 34.8712
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=264",
+    "openingHours": "Mo 11:30-22:00; Tu 11:30-22:00; We 11:30-22:00; Th 11:30-22:00; Su 11:30-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500002",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "אופקים",
+    "address": "מנחם בגין 6, אופקים",
+    "location": {
+      "latitude": 31.3133,
+      "longitude": 34.6209
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=310",
+    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:30-16:00; Sa 22:00-23:00; Su 11:00-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500003",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "אור עקיבא",
+    "address": "שדרות הנשיא 4, אור עקיבא",
+    "location": {
+      "latitude": 32.504,
+      "longitude": 34.9156
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=304",
+    "openingHours": "Mo 11:00-22:45; Tu 11:00-22:45; We 11:00-22:45; Th 11:00-22:45; Fr 10:30-16:00; Sa 21:30-22:45; Su 11:00-22:45",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500004",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "אילת",
+    "address": "הסתת 20, אילת",
+    "location": {
+      "latitude": 29.5581,
+      "longitude": 34.9482
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=239",
+    "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:30; Fr 10:00-16:00; Sa 21:30-23:00; Su 11:00-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500005",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "בית שמש",
+    "address": "קניון BIG-Fashion, יגאל אלון, בית שמש",
+    "location": {
+      "latitude": 31.7458,
+      "longitude": 34.9926
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=82",
+    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:30-16:00; Sa 21:30-22:30; Su 11:00-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500006",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "יקנעם",
+    "address": "שדרות רבין 9, יקנעם",
+    "location": {
+      "latitude": 32.6575,
+      "longitude": 35.1004
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=245",
+    "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-16:00; Su 11:00-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500007",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "קריית גת",
+    "address": "שדרות לכיש 153, קרית גת",
+    "location": {
+      "latitude": 31.61,
+      "longitude": 34.7641
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=302",
+    "openingHours": "Mo 11:00-23:00; Tu 11:00-23:00; We 11:00-23:00; Th 11:00-23:00; Fr 10:30-16:00; Sa 21:45-23:00; Su 11:00-23:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500008",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "מגדל העמק",
+    "address": "שילת 1, מגדל העמק",
+    "location": {
+      "latitude": 32.6795,
+      "longitude": 35.2392
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=301",
+    "openingHours": "Mo 11:00-23:00; Tu 11:00-23:00; We 10:30-23:00; Th 10:30-23:00; Fr 10:30-15:30; Sa 22:00-23:00; Su 10:30-23:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500009",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "בת ים",
+    "address": "יוספטל 92, בת ים",
+    "location": {
+      "latitude": 32.0235,
+      "longitude": 34.7507
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=43",
+    "openingHours": "Mo 10:30-22:30; Tu 10:30-22:30; We 10:30-22:30; Th 10:30-22:30; Fr 10:30-16:00; Sa 21:30-23:00; Su 10:30-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500010",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "טבריה",
+    "address": "יהודה הלוי 7, טבריה",
+    "location": {
+      "latitude": 32.7921,
+      "longitude": 35.5312
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=206",
+    "openingHours": "Mo 10:30-22:45; Tu 10:30-22:45; We 10:30-22:45; Th 10:30-22:45; Fr 10:00-15:00; Sa 21:30-23:00; Su 10:30-22:45",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500011",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "טבריה",
+    "address": "המברג 1, טבריה",
+    "location": {
+      "latitude": 32.7921,
+      "longitude": 35.5312
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=257",
+    "openingHours": "Mo 11:00-23:00; Tu 11:00-23:00; We 11:00-23:00; Th 11:00-23:00; Fr 10:30-15:30; Sa 21:30-23:00; Su 11:00-23:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500012",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "באר יעקב",
+    "address": "מרכז מסחרי אסף סנטר, באר יעקב",
+    "location": {
+      "latitude": 31.9363,
+      "longitude": 34.8386
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=147",
+    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 11:00-16:00; Su 11:00-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500013",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "פתח תקווה",
+    "address": "בית חולים בילינסון-ז'בוטינסקי 39, פתח תקווה",
+    "location": {
+      "latitude": 32.084,
+      "longitude": 34.8878
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=136",
+    "openingHours": "Mo 10:30-22:00; Tu 10:30-22:00; We 10:30-22:00; Th 10:30-22:00; Su 10:30-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500014",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "כפר סבא",
+    "address": "טשרניחובסקי 59, כפר סבא",
+    "location": {
+      "latitude": 32.1781,
+      "longitude": 34.9075
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=167",
+    "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-14:00; Su 11:00-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500015",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "חיפה",
+    "address": "בית חולים רמב\"ם-העליה השנייה 8, חיפה",
+    "location": {
+      "latitude": 32.794,
+      "longitude": 34.9896
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=117",
+    "openingHours": "Mo 10:00-23:00; Tu 10:00-23:00; We 10:00-23:00; Th 10:00-23:00; Fr 10:00-16:30; Sa 21:30-23:30; Su 10:00-23:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500016",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "קריית אונו",
+    "address": "מרכז גימיון - בית חולים תל השומר, קריית אונו",
+    "location": {
+      "latitude": 32.0579,
+      "longitude": 34.8559
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=143",
+    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:30-16:00; Su 11:00-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500017",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "חולון",
+    "address": "רח' הבנאי פינת ירושלים, חולון",
+    "location": {
+      "latitude": 32.0114,
+      "longitude": 34.7799
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=225",
+    "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 11:00-16:00; Su 11:00-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500018",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "אביזוהר 8, ירושלים",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=131",
+    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:30-15:30; Su 11:00-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500019",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "בית קמה",
+    "address": "צומת בית קמה",
+    "location": {
+      "latitude": 31.529,
+      "longitude": 34.741
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=240",
+    "openingHours": "Mo 10:00-21:00; Tu 10:00-21:00; We 10:00-21:00; Th 10:00-21:00; Su 10:00-21:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500020",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "גן יבנה",
+    "address": "המגינים 56, גן יבנה",
+    "location": {
+      "latitude": 31.787,
+      "longitude": 34.7045
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=219",
+    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:30-16:00; Su 11:00-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500021",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "באר שבע",
+    "address": "שדרות דוד טוביהו 125, באר שבע",
+    "location": {
+      "latitude": 31.2518,
+      "longitude": 34.7913
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=204",
+    "openingHours": "Mo 10:30-23:00; Tu 10:30-23:00; We 10:30-23:00; Th 10:30-23:00; Fr 10:00-16:00; Sa 21:30-00:00; Su 10:00-23:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500022",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "חיפה",
+    "address": "דרך שמחה גולן 54, חיפה",
+    "location": {
+      "latitude": 32.794,
+      "longitude": 34.9896
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=271",
+    "openingHours": "Mo 10:30-22:30; Tu 10:30-22:30; We 10:30-23:15; Th 10:30-23:15; Fr 10:00-16:00; Sa 21:30-23:30; Su 10:30-23:15",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500023",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "דימונה",
+    "address": "פרץ סנטר - אזור תעשיה דרומי, דימונה",
+    "location": {
+      "latitude": 31.0677,
+      "longitude": 35.0347
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=139",
+    "openingHours": "Mo 10:00-21:30; Tu 10:00-21:30; We 10:00-21:30; Th 10:00-21:30; Fr 10:00-15:00; Sa 21:30-23:00; Su 10:00-21:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500024",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "גדרה",
+    "address": "מרכז המושבה דרך בן גוריון 105, גדרה",
+    "location": {
+      "latitude": 31.812,
+      "longitude": 34.776
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=145",
+    "openingHours": "Mo 11:00-22:15; Tu 11:00-22:15; We 11:00-22:15; Th 11:00-22:15; Fr 10:30-16:00; Su 11:00-22:15",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500025",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "פתח תקווה",
+    "address": "העצמאות 65, פתח תקווה",
+    "location": {
+      "latitude": 32.084,
+      "longitude": 34.8878
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=190",
+    "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-15:30; Su 11:00-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500026",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "כפר סבא",
+    "address": "ויצמן 207, כפר סבא",
+    "location": {
+      "latitude": 32.1781,
+      "longitude": 34.9075
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=177",
+    "openingHours": "Mo 10:30-22:30; Tu 10:30-22:30; We 10:30-22:30; Th 10:30-22:30; Fr 10:30-16:00; Su 10:30-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500027",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "בן יהודה 7, ירושלים",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=209",
+    "openingHours": "Mo 11:00-23:00; Tu 11:00-23:00; We 11:00-23:00; Th 11:00-23:59; Fr 10:30-16:00; Sa 21:30-23:59; Su 11:00-23:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500028",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "תל מונד",
+    "address": "הדקל 47, תל מונד",
+    "location": {
+      "latitude": 32.2612,
+      "longitude": 34.9197
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=193",
+    "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-15:00; Su 11:00-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500029",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "מודיעין",
+    "address": "חיים וייצמן 28, מודיעין",
+    "location": {
+      "latitude": 31.8966,
+      "longitude": 35.0102
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=299",
+    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 11:00-15:30; Su 11:00-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500030",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "רמת גן",
+    "address": "חיים לנדאו 7, רמת גן",
+    "location": {
+      "latitude": 32.0682,
+      "longitude": 34.8243
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=297",
+    "openingHours": "Mo 10:30-22:00; Tu 10:30-22:00; We 10:30-22:00; Th 10:30-22:00; Fr 10:30-16:00; Su 10:30-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500031",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "באר שבע",
+    "address": "יצחק נפחא 25, באר שבע",
+    "location": {
+      "latitude": 31.2518,
+      "longitude": 34.7913
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=146",
+    "openingHours": "Mo 10:30-23:00; Tu 10:30-23:00; We 10:30-23:00; Th 10:30-23:00; Fr 10:00-16:00; Sa 21:30-23:00; Su 10:30-23:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500032",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "רמת גן",
+    "address": "היצירה 3, רמת גן",
+    "location": {
+      "latitude": 32.0682,
+      "longitude": 34.8243
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=61",
+    "openingHours": "Mo 11:00-04:00; Tu 11:00-04:00; We 11:00-04:00; Th 11:00-04:00; Fr 10:30-15:00; Sa 21:30-04:00; Su 11:00-04:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500033",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "לוד",
+    "address": "טרמינל 3 אולם כניסה, שדה תעופה בן גוריון",
+    "location": {
+      "latitude": 31.9516,
+      "longitude": 34.8942
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=256",
+    "openingHours": "Mo 02:00-23:59; Tu 02:00-23:59; We 02:00-23:59; Th 02:00-23:59; Fr 02:00-17:00; Sa 21:00-23:59; Su 02:00-23:59",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500034",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "נהריה",
+    "address": "שדרות בן צבי 1, נהריה",
+    "location": {
+      "latitude": 33.0045,
+      "longitude": 35.0955
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=220",
+    "openingHours": "Mo 10:30-23:00; Tu 10:30-23:00; We 10:30-23:00; Th 10:30-23:00; Fr 10:00-15:30; Sa 21:30-23:00; Su 10:30-23:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500035",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "אשדוד",
+    "address": "ז'בוטינסקי 44/45, אשדוד",
+    "location": {
+      "latitude": 31.804,
+      "longitude": 34.6553
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=152",
+    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:30-16:00; Su 11:00-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500036",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "אשדוד",
+    "address": "הגדוד העברי 6, אשדוד",
+    "location": {
+      "latitude": 31.804,
+      "longitude": 34.6553
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=269",
+    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 11:00-16:00; Sa 21:30-23:00; Su 11:00-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500037",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "שדרות יצחק רבין 10, ירושלים",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=210",
+    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-23:00; Fr 10:30-15:30; Sa 21:30-23:00; Su 11:00-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500038",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "חיפה",
+    "address": "ההסתדרות 55, צומת לב המפרץ, חיפה",
+    "location": {
+      "latitude": 32.794,
+      "longitude": 34.9896
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=17",
+    "openingHours": "Mo 10:45-23:00; Tu 10:45-23:00; We 10:45-23:00; Th 10:45-23:00; Fr 10:00-16:00; Sa 21:30-23:00; Su 10:45-23:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500039",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "רמלה",
+    "address": "שד' דוד רזיאל פינת רחוב שמשון, רמלה",
+    "location": {
+      "latitude": 31.9245,
+      "longitude": 34.8706
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=217",
+    "openingHours": "Mo 10:45-23:00; Tu 10:45-23:00; We 10:45-23:00; Th 10:30-23:00; Fr 10:00-16:00; Sa 21:30-23:00; Su 11:00-23:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500040",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "פתח תקווה",
+    "address": "תוצרת הארץ 3, פתח תקווה",
+    "location": {
+      "latitude": 32.084,
+      "longitude": 34.8878
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=282",
+    "openingHours": "Mo 11:00-23:00; Tu 11:00-23:00; We 11:00-23:00; Th 11:00-23:00; Fr 10:30-16:00; Sa 21:30-23:59; Su 11:00-23:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500041",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "נתניה",
+    "address": "דוד דותן 10, נתניה",
+    "location": {
+      "latitude": 32.3215,
+      "longitude": 34.8532
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=263",
+    "openingHours": "Mo 10:30-22:30; Tu 10:30-22:30; We 10:30-22:30; Th 10:30-22:30; Fr 10:30-17:30; Sa 22:00-23:00; Su 10:30-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500042",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "פתח תקווה",
+    "address": "רוטשילד 182, פתח תקווה",
+    "location": {
+      "latitude": 32.084,
+      "longitude": 34.8878
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=80",
+    "openingHours": "Mo 11:00-23:00; Tu 11:00-23:00; We 11:00-23:00; Th 11:00-23:00; Fr 10:30-16:00; Su 11:00-23:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500043",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "בית שאן",
+    "address": "העמל 7 א.ת בית שאן",
+    "location": {
+      "latitude": 32.501,
+      "longitude": 35.5
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=234",
+    "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-15:30; Sa 21:30-22:30; Su 11:00-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500044",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "יבנה",
+    "address": "הקישון 9, יבנה",
+    "location": {
+      "latitude": 31.8785,
+      "longitude": 34.7444
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=226",
+    "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 11:00-16:00; Su 11:00-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500045",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "אור עקיבא",
+    "address": "קניון אורות - הנשיא 1, אור עקיבא",
+    "location": {
+      "latitude": 32.504,
+      "longitude": 34.9156
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=9",
+    "openingHours": "Mo 10:30-22:30; Tu 10:30-22:30; We 10:30-22:30; Th 10:30-22:30; Fr 10:30-16:00; Su 10:30-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500046",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "רמת גן",
+    "address": "אבא הלל 301, רמת גן",
+    "location": {
+      "latitude": 32.0682,
+      "longitude": 34.8243
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=129",
+    "openingHours": "Mo 11:00-23:00; Tu 11:00-23:00; We 11:00-23:00; Th 11:00-23:00; Fr 10:30-16:00; Sa 21:15-23:00; Su 11:00-23:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500047",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "רמת גן",
+    "address": "ביאליק 76 פינת ז'בוטינסקי, רמת גן",
+    "location": {
+      "latitude": 32.0682,
+      "longitude": 34.8243
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=73",
+    "openingHours": "Mo 11:00-22:15; Tu 11:00-22:15; We 11:00-22:15; Th 11:00-22:15; Fr 10:30-16:00; Su 11:00-22:15",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500048",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "אשקלון",
+    "address": "שדרות בן גוריון 21, אשקלון",
+    "location": {
+      "latitude": 31.6688,
+      "longitude": 34.5742
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=123",
+    "openingHours": "Mo 10:30-22:00; Tu 10:30-22:00; We 10:30-22:00; Th 10:30-22:00; Fr 10:30-16:00; Sa 21:30-23:00; Su 10:30-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500049",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "דימונה",
+    "address": "המעפיל פינת גולדה מאיר, דימונה",
+    "location": {
+      "latitude": 31.0677,
+      "longitude": 35.0347
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=276",
+    "openingHours": "Mo 10:30-23:00; Tu 10:30-23:00; We 10:30-23:00; Th 10:30-23:00; Fr 10:30-16:00; Sa 21:30-23:00; Su 10:30-23:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500050",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "ראשון לציון",
+    "address": "מורשת ישראל 15, ראשון לציון",
+    "location": {
+      "latitude": 31.973,
+      "longitude": 34.7898
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=197",
+    "openingHours": "Mo 11:00-21:30; Tu 11:00-21:30; We 11:00-21:30; Th 11:00-21:30; Fr 11:00-15:30; Su 11:00-21:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500051",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "גבעת שמואל",
+    "address": "קניון הגבעה, נתניהו 29, גבעת שמואל",
+    "location": {
+      "latitude": 32.0782,
+      "longitude": 34.8458
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=157",
+    "openingHours": "Mo 11:00-22:15; Tu 11:00-22:15; We 11:00-22:15; Th 11:00-22:15; Fr 10:30-16:00; Su 11:00-22:15",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500052",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "נתניה",
+    "address": "הרצל 60, נתניה",
+    "location": {
+      "latitude": 32.3215,
+      "longitude": 34.8532
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=284",
+    "openingHours": "Mo 10:30-22:30; Tu 10:30-22:30; We 10:30-22:30; Th 10:30-22:30; Fr 10:30-17:30; Sa 21:30-22:30; Su 10:30-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500053",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "ים המלח",
+    "address": "עין בוקק, ים המלח",
+    "location": {
+      "latitude": 31.2025,
+      "longitude": 35.3939
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=252",
+    "openingHours": "Mo 11:00-21:00; Tu 11:00-21:00; We 11:00-21:00; Th 11:00-21:00; Fr 10:30-16:00; Su 11:00-21:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500054",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "קריית גת",
+    "address": "קניון לב העיר - כיכר פז 3, קרית גת",
+    "location": {
+      "latitude": 31.61,
+      "longitude": 34.7641
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=120",
+    "openingHours": "Mo 10:30-22:00; Tu 10:30-22:00; We 10:30-22:00; Th 10:30-22:00; Fr 10:30-16:00; Su 10:30-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500055",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "חדרה",
+    "address": "שדרות רוטשילד 40, חדרה",
+    "location": {
+      "latitude": 32.434,
+      "longitude": 34.9187
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=175",
+    "openingHours": "Mo 10:30-21:30; Tu 10:30-21:30; We 10:30-21:30; Th 10:30-21:30; Fr 10:00-15:00; Su 10:30-21:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500056",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "מבשרת ציון",
+    "address": "החוצבים 10, מבשרת ציון",
+    "location": {
+      "latitude": 31.806,
+      "longitude": 35.1467
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=230",
+    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:30-15:30; Sa 21:30-23:00; Su 11:00-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500057",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "חדרה",
+    "address": "שכטמן 10, חדרה",
+    "location": {
+      "latitude": 32.434,
+      "longitude": 34.9187
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=286",
+    "openingHours": "Mo 10:30-23:15; Tu 10:30-23:15; We 11:00-23:15; Th 10:30-23:15; Fr 10:45-16:00; Sa 21:30-23:15; Su 11:00-23:15",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500058",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "אגודת ספורט ביתר 1, ירושלים",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=178",
+    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:00-16:00; Sa 21:30-22:30; Su 11:00-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500059",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "באר שבע",
+    "address": "צומת אלי כהן, באר שבע",
+    "location": {
+      "latitude": 31.2518,
+      "longitude": 34.7913
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=231",
+    "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:00-16:00; Sa 21:00-23:00; Su 11:00-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500060",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "חולון",
+    "address": "גולדה מאיר 7, חולון",
+    "location": {
+      "latitude": 32.0114,
+      "longitude": 34.7799
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=251",
+    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:30-15:00; Sa 21:30-23:00; Su 11:30-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500061",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "ראשון לציון",
+    "address": "שדרות נים 2, ראשון לציון",
+    "location": {
+      "latitude": 31.973,
+      "longitude": 34.7898
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=232",
+    "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-15:00; Sa 21:30-22:00; Su 11:00-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500062",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "מודיעין",
+    "address": "לב העיר 2, מודיעין",
+    "location": {
+      "latitude": 31.8966,
+      "longitude": 35.0102
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=156",
+    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:30-15:30; Sa 21:30-23:00; Su 11:00-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500063",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "נתניה",
+    "address": "בני ברמן 2, פולג, נתניה",
+    "location": {
+      "latitude": 32.3215,
+      "longitude": 34.8532
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=188",
+    "openingHours": "Mo 10:30-22:15; Tu 10:30-22:15; We 10:30-22:15; Th 10:30-22:15; Fr 10:00-15:30; Sa 21:30-23:15; Su 10:30-22:15",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500064",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "תל אביב-יפו",
+    "address": "איינשטיין 40 רמת אביב, תל אביב-יפו",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=47",
+    "openingHours": "Mo 10:30-22:00; Tu 10:30-22:00; We 10:30-22:00; Th 10:30-22:00; Fr 10:30-16:00; Sa 21:30-23:00; Su 10:30-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500065",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "רעננה",
+    "address": "המלאכה 2, קרית אתגרים, רעננה",
+    "location": {
+      "latitude": 32.1839,
+      "longitude": 34.8708
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=89",
+    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 10:00-16:00; Sa 21:30-23:00; Su 11:00-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500066",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "קריית שמונה",
+    "address": "טשרניחובסקי 4, קריית שמונה",
+    "location": {
+      "latitude": 33.2076,
+      "longitude": 35.5709
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=35",
+    "openingHours": "Mo 11:00-21:00; Tu 11:00-21:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-15:00; Su 11:00-21:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500067",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "קריית אתא",
+    "address": "דרך חיפה 30, קריית אתא",
+    "location": {
+      "latitude": 32.8056,
+      "longitude": 35.1048
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=215",
+    "openingHours": "Mo 10:30-22:30; Tu 10:30-22:30; We 10:30-22:30; Th 10:30-22:00; Fr 10:30-16:00; Sa 21:30-23:00; Su 10:30-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500068",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "נס ציונה",
+    "address": "האירוסים 53, נס ציונה",
+    "location": {
+      "latitude": 31.9285,
+      "longitude": 34.7982
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=293",
+    "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-15:30; Su 11:00-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500069",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "נתניה",
+    "address": "מרכז אלון - טום לנטוס 26, נתניה",
+    "location": {
+      "latitude": 32.3215,
+      "longitude": 34.8532
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=202",
+    "openingHours": "Mo 10:30-22:30; Tu 10:30-22:30; We 10:30-22:30; Th 10:30-22:30; Fr 10:30-16:00; Su 10:30-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500070",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "ראש העין",
+    "address": "בזק 1, נווה אפק, ראש העין",
+    "location": {
+      "latitude": 32.0958,
+      "longitude": 34.9558
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=98",
+    "openingHours": "Mo 11:00-22:15; Tu 11:00-22:15; We 11:00-22:15; Th 11:00-22:00; Fr 10:30-15:30; Su 11:00-22:15",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500071",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "אשדוד",
+    "address": "מנגו 4, אשדוד",
+    "location": {
+      "latitude": 31.804,
+      "longitude": 34.6553
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=307",
+    "openingHours": "Mo 11:00-23:59; Tu 11:00-23:59; We 11:00-23:59; Th 11:00-23:59; Fr 11:00-16:30; Sa 21:30-23:59; Su 11:00-23:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500072",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "שוהם",
+    "address": "שדרות עמק איילון 30, שוהם",
+    "location": {
+      "latitude": 31.9957,
+      "longitude": 34.9373
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=34",
+    "openingHours": "Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 10:30-16:00; Su 11:00-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500073",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "באר שבע",
+    "address": "שמריהו לוין 4, באר שבע",
+    "location": {
+      "latitude": 31.2518,
+      "longitude": 34.7913
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=50",
+    "openingHours": "Mo 09:30-22:15; Tu 09:30-22:15; We 09:30-22:15; Th 08:00-22:15; Fr 09:30-16:00; Su 08:00-22:15",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500074",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "טבריה",
+    "address": "הירדן פינת השילוח, טבריה",
+    "location": {
+      "latitude": 32.7921,
+      "longitude": 35.5312
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=180",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500075",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "עפולה",
+    "address": "שפרינצק 2, עפולה",
+    "location": {
+      "latitude": 32.6076,
+      "longitude": 35.2899
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=268",
+    "openingHours": "Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 10:30-22:30; Fr 10:00-16:00; Su 10:30-22:30",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500076",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "נשר",
+    "address": "מרכז קניות תל חנן, בר יהודה 174, נשר",
+    "location": {
+      "latitude": 32.775,
+      "longitude": 35.0398
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=119",
+    "openingHours": "Mo 10:30-22:00; Tu 10:30-22:00; We 10:30-22:00; Th 10:30-22:00; Fr 10:30-16:00; Su 10:30-22:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
+  },
+  {
+    "id": "9500077",
+    "name": "מקדונלד'ס",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "התנופה 12, ירושלים",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "address",
+    "website": "https://www.mcdonalds.co.il/%D7%90%D7%99%D7%AA%D7%95%D7%A8_%D7%9E%D7%A1%D7%A2%D7%93%D7%94?store_id=308",
+    "openingHours": "Mo 10:30-23:00; Tu 10:30-23:00; We 10:30-23:00; Th 10:30-23:00; Fr 10:30-16:00; Su 10:30-23:00",
+    "category": "meat",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "כשר",
+    "source": "manual"
   }
 ]
