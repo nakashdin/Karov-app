@@ -17,6 +17,7 @@ import { Chip } from '../components/Chip';
 import { colors, radius, sizes, spacing } from '../theme';
 import { useLanguage } from '../context/LanguageContext';
 import { usePlace } from '../hooks/usePlace';
+import { displayPlaceName } from '../utils/placeType';
 import { placesRepository } from '../data/placesRepository';
 import { IssueType } from '../types';
 import { RootStackParamList } from '../navigation/types';
@@ -90,7 +91,7 @@ export function ReportScreen() {
 
           <Field label={t.report.placeLabel}>
             <View style={styles.placeBox}>
-              <Text style={styles.placeName}>{place?.name ?? '—'}</Text>
+              <Text style={styles.placeName}>{place ? displayPlaceName(place) : '—'}</Text>
             </View>
           </Field>
 

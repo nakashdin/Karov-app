@@ -25,7 +25,7 @@ import { useSharedLocation } from '../context/LocationContext';
 import { useFavorites } from '../context/FavoritesContext';
 import { distanceKm, formatDistance } from '../utils/geo';
 import { categoryLabel, kosherTypeLabel } from '../utils/kosher';
-import { placeTypeLabel } from '../utils/placeType';
+import { displayPlaceName, placeTypeLabel } from '../utils/placeType';
 import { callPhone, openWaze } from '../utils/navigation';
 import { fullHoursHebrew, isCurrentlyOpen } from '../utils/openingHours';
 import { RootStackParamList } from '../navigation/types';
@@ -82,7 +82,7 @@ export function PlaceDetailScreen() {
 
   useEffect(() => {
     navigation.setOptions({
-      title: place ? (isHe ? place.name : transliterateHebrew(place.name)) : '',
+      title: place ? (isHe ? displayPlaceName(place) : transliterateHebrew(displayPlaceName(place))) : '',
       headerLeft: () => (
         <Pressable onPress={() => navigation.goBack()} hitSlop={12} style={{ paddingEnd: 8 }}>
           <Ionicons name="chevron-forward" size={26} color={colors.primary} />
@@ -182,10 +182,10 @@ export function PlaceDetailScreen() {
         {/* Name card — overlaps hero */}
         <View style={styles.nameCard}>
           <Text style={styles.placeName}>
-            {isHe ? place.name : transliterateHebrew(place.name)}
+            {isHe ? displayPlaceName(place) : transliterateHebrew(displayPlaceName(place))}
           </Text>
           {!isHe && (
-            <Text style={styles.placeNameHe}>{place.name}</Text>
+            <Text style={styles.placeNameHe}>{displayPlaceName(place)}</Text>
           )}
 
           {/* Tags */}
@@ -299,6 +299,9 @@ export function PlaceDetailScreen() {
               {place.website ? (
                 <DetailRow icon="globe-outline" label="אתר" value={place.website} accent={accent} tappable onPress={() => Linking.openURL(place.website!)} link />
               ) : null}
+              {place.menu ? (
+                <DetailRow icon="restaurant-outline" label="תפריט" value={place.menu} accent={accent} tappable onPress={() => Linking.openURL(place.menu!)} link />
+              ) : null}
               {place.certificateValidUntil ? (
                 <DetailRow icon="calendar-outline" label="תוקף תעודה" value={place.certificateValidUntil} accent={accent} />
               ) : null}
@@ -339,8 +342,32 @@ export function PlaceDetailScreen() {
               {place.type === 'tzaddik_grave' && place.extra?.buriedPerson ? (
                 <DetailRow icon="flower-outline" label="הנצחה" value={String(place.extra.buriedPerson)} accent={accent} />
               ) : null}
+              {place.type === 'mikveh' && place.openingHours ? (() => {
+                const open = isCurrentlyOpen(place.openingHours, place.location);
+                return open === null ? null : (
+                  <DetailRow icon={open ? 'checkmark-circle' : 'close-circle'} label="סטטוס" value={open ? 'פתוח כעת' : 'סגור כעת'} accent={open ? '#1B873F' : '#C0394A'} />
+                );
+              })() : null}
               {place.openingHours ? (
                 <DetailRow icon="time-outline" label="שעות פתיחה" value={fullHoursHebrew(place.openingHours) || place.openingHours} accent={accent} multiline />
+              ) : null}
+              {place.type === 'mikveh' && (place.extra as any)?.contacts ? (() => {
+                const c = (place.extra as any).contacts as Record<string, string>;
+                const num = (s?: string) => (String(s ?? '').match(/0\d[\d-]{7,}/) || [])[0]?.replace(/-/g, '');
+                return (
+                  <>
+                    {c.maintenance ? <DetailRow icon="construct-outline" label="תחזוקה ותפעול" value={c.maintenance} accent={accent} tappable={!!num(c.maintenance)} onPress={num(c.maintenance) ? () => callPhone(num(c.maintenance)!) : undefined} link={!!num(c.maintenance)} /> : null}
+                    {c.halacha ? <DetailRow icon="book-outline" label="ענייני הלכה" value={c.halacha} accent={accent} tappable={!!num(c.halacha)} onPress={num(c.halacha) ? () => callPhone(num(c.halacha)!) : undefined} link={!!num(c.halacha)} /> : null}
+                    {c.moked ? <DetailRow icon="call-outline" label="מוקד המועצה" value={c.moked} accent={accent} tappable onPress={() => callPhone(String(c.moked).replace(/-/g, ''))} link /> : null}
+                    {c.whatsapp ? <DetailRow icon="logo-whatsapp" label="וואטסאפ" value={c.whatsapp} accent={accent} tappable onPress={() => Linking.openURL(`https://wa.me/972${String(c.whatsapp).replace(/\D/g, '').replace(/^0/, '')}`)} link /> : null}
+                  </>
+                );
+              })() : null}
+              {place.type === 'mikveh' && (place.extra as any)?.notice ? (
+                <DetailRow icon="water-outline" label="לתשומת לב" value={String((place.extra as any).notice)} accent={accent} multiline />
+              ) : null}
+              {place.type === 'mikveh' && (place.extra as any)?.hasKelim ? (
+                <DetailRow icon="cube-outline" label="טבילת כלים" value="קיים אזור לטבילת כלים" accent={accent} />
               ) : null}
               {place.certificateValidUntil ? (
                 <DetailRow icon="calendar-outline" label="תוקף תעודה" value={place.certificateValidUntil} accent={accent} />

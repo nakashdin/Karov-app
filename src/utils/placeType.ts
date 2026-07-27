@@ -1,5 +1,5 @@
 import { Ionicons } from '@expo/vector-icons';
-import { PlaceType } from '../types';
+import { Place, PlaceType } from '../types';
 
 /** Hebrew label for a place type. */
 export const placeTypeLabel: Record<PlaceType, string> = {
@@ -9,6 +9,7 @@ export const placeTypeLabel: Record<PlaceType, string> = {
   coffee_cart: 'עגלת קפה',
   juice_bar: 'שייקים ומיצים',
   ice_cream_parlor: 'גלידרייה',
+  bakery: 'מאפייה',
   winery: 'יקב כשר',
   synagogue: 'בית כנסת',
   mikveh: 'מקווה',
@@ -30,6 +31,51 @@ export function displayPlaceName(place: { type: PlaceType; name?: string }): str
   return SYNAGOGUE_PREFIX.test(name) ? name : `בית כנסת ${name}`;
 }
 
+const PLACE_EMOJI: Record<PlaceType, string> = {
+  restaurant:       '🍽️',
+  fast_food:        '🍔',
+  cafe:             '☕',
+  coffee_cart:      '🛒',
+  juice_bar:        '🧃',
+  ice_cream_parlor: '🍦',
+  bakery:           '🥐',
+  winery:           '🍷',
+  synagogue:        '🕍',
+  mikveh:           '💧',
+  chabad_house:     '🕎',
+  tzaddik_grave:    '🪦',
+};
+
+const TAG_EMOJI: Record<string, string> = {
+  pizza:       '🍕',
+  burger:      '🍔',
+  shawarma:    '🌯',
+  שווארמה:    '🌯',
+  kebab:       '🌯',
+  falafel:     '🧆',
+  hummus:      '🫘',
+  sushi:       '🍣',
+  japanese:    '🍣',
+  coffee_shop: '☕',
+  coffee:      '☕',
+  cafe:        '☕',
+  steak_house: '🥩',
+  grill:       '🥩',
+  barbecue:    '🥩',
+  meat:        '🥩',
+  sandwich:    '🥪',
+  ice_cream:   '🍦',
+};
+
+/** Returns the best emoji for a place: tag-based first, then type fallback. */
+export function getPlaceEmoji(place: Place): string {
+  for (const tag of place.tags ?? []) {
+    const emoji = TAG_EMOJI[tag];
+    if (emoji) return emoji;
+  }
+  return PLACE_EMOJI[place.type];
+}
+
 /** Icon for a place type (used on map pins, cards, headers). */
 export const placeTypeIcon: Record<PlaceType, keyof typeof Ionicons.glyphMap> = {
   restaurant: 'restaurant',
@@ -38,6 +84,7 @@ export const placeTypeIcon: Record<PlaceType, keyof typeof Ionicons.glyphMap> = 
   coffee_cart: 'cafe-outline',
   juice_bar: 'nutrition',
   ice_cream_parlor: 'ice-cream',
+  bakery: 'storefront-outline',
   winery: 'wine',
   synagogue: 'business',
   mikveh: 'water',

@@ -5,7 +5,7 @@ import { Place } from '../../types';
 import { colors, radius, shadow, spacing } from '../../theme';
 import { t } from '../../i18n';
 import { kosherTypeLabel } from '../../utils/kosher';
-import { placeTypeLabel } from '../../utils/placeType';
+import { displayPlaceName, placeTypeLabel } from '../../utils/placeType';
 import { openWaze } from '../../utils/navigation';
 import { KosherBadge } from '../KosherBadge';
 
@@ -35,7 +35,7 @@ export function PlaceBottomCard({
     <View style={styles.card}>
       <View style={styles.headerRow}>
         <Text style={styles.name} numberOfLines={1}>
-          {place.name}
+          {displayPlaceName(place)}
         </Text>
         <View style={styles.headerRight}>
           {place.category && <KosherBadge category={place.category} />}

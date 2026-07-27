@@ -1,6 +1,6 @@
 /**
- * Import all kosher Roladin branches (מאפיית רולדין — חלבי).
- * Excludes branches open full Shabbat (Arab cities) — kosher status unclear.
+ * Import kosher Roladin branches — filtered by official "כשר" tag (service 39) from roladin.co.il.
+ * Arab-city branches and non-kosher branches excluded.
  * Run: node scripts/import-roladin.mjs
  */
 import { readFileSync, writeFileSync } from 'fs';

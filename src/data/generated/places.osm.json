@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "source": "osm",
     "id": "osm-node-540970749",
@@ -791,24 +791,6 @@
     "cityId": "ראש פינה"
   },
   {
-    "facebook": "https://www.facebook.com/CafeGreg",
-    "openingHours": "Su-Th 08:30-21:00; Fr 07:30-15:00",
-    "id": "osm-node-4818808608",
-    "type": "cafe",
-    "source": "osm",
-    "name": "קפה גרג",
-    "website": "https://www.cafegreg.co.il",
-    "cityId": "כרמיאל",
-    "address": "קניון חוצות כרמיאל, כרמיאל",
-    "instagram": "https://www.instagram.com/cafegreg",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.9134777,
-      "longitude": 35.282161
-    },
-    "phone": "04-8578475"
-  },
-  {
     "source": "osm",
     "id": "osm-node-4828911835",
     "type": "restaurant",
@@ -1330,27 +1312,6 @@
     "cityId": "קרית שמונה"
   },
   {
-    "facebook": "https://www.facebook.com/CafeGreg",
-    "openingHours": "Su-Th 07:30-23:00; Fr 07:30-14:30",
-    "tags": [
-      "coffee_shop"
-    ],
-    "type": "cafe",
-    "source": "osm",
-    "name": "קפה גרג",
-    "website": "https://www.cafegreg.co.il",
-    "cityId": "ראש פינה",
-    "address": "רחוב האגס 10, ראש פינה",
-    "instagram": "https://www.instagram.com/cafegreg",
-    "category": "dairy",
-    "id": "osm-node-5498992177",
-    "location": {
-      "latitude": 32.9688559,
-      "longitude": 35.5500188
-    },
-    "phone": "04-6801191"
-  },
-  {
     "facebook": "https://www.facebook.com/HumusElihu",
     "id": "osm-node-5613754222",
     "type": "fast_food",
@@ -1383,27 +1344,6 @@
       "longitude": 35.2900451
     },
     "cityId": "עפולה"
-  },
-  {
-    "facebook": "https://www.facebook.com/CafeGreg",
-    "tags": [
-      "coffee_shop"
-    ],
-    "type": "cafe",
-    "openingHours": "Su-Fr 08:00-21:00; Sa unknown \"please inquire\"",
-    "name": "קפה גרג",
-    "website": "https://www.cafegreg.co.il",
-    "cityId": "קרית שמונה",
-    "address": "רחוב טשרניחובסקי 4, קרית שמונה",
-    "instagram": "https://www.instagram.com/cafegreg",
-    "category": "dairy",
-    "id": "osm-node-5711530694",
-    "location": {
-      "latitude": 33.2109125,
-      "longitude": 35.5691857
-    },
-    "source": "osm",
-    "phone": "+972 4 871 3710"
   },
   {
     "source": "osm",
@@ -1712,28 +1652,6 @@
     "cityId": "ירושלים"
   },
   {
-    "facebook": "https://www.facebook.com/CafeGreg",
-    "tags": [
-      "coffee",
-      "breakfast"
-    ],
-    "type": "cafe",
-    "openingHours": "Su-Th 08:15-22:00; Fr 08:00+ \"נסגר 3 שעות לפני כניסת השבת\"; Sa \"מ-45 דקות אחרי צאת השבת ועד 23:30\"; PH unknown",
-    "name": "קפה גרג",
-    "website": "https://www.cafegreg.co.il",
-    "cityId": "יוקנעם המושבה",
-    "address": "רחוב התמר 1, יקנעם",
-    "instagram": "https://www.instagram.com/cafegreg",
-    "category": "dairy",
-    "id": "osm-node-6205595674",
-    "location": {
-      "latitude": 32.6599508,
-      "longitude": 35.1051435
-    },
-    "source": "osm",
-    "phone": "+972-54-959-2288"
-  },
-  {
     "facebook": "https://www.facebook.com/PizzaHutIsrael",
     "tags": [
       "pizza"
@@ -1790,7 +1708,8 @@
     },
     "website": "https://www.burgersbar.co.il",
     "facebook": "https://www.facebook.com/BurgersBar",
-    "cityId": "קריית מאיר"
+    "cityId": "קריית מאיר",
+    "phone": "*2242"
   },
   {
     "source": "osm",
@@ -3661,9 +3580,9 @@
       "longitude": 34.9466929
     },
     "phone": "03-9793320",
-    "website": "https://pizza-roma.co.il",
     "cityId": "שוהם",
-    "openingHours": "Su-Th 11:00-22:30; Fr 11:00-14:00"
+    "openingHours": "א'-ה' 11:00-22:30 | ו' 11:00-14:00 | ש' מוצ\"ש 19:00-22:30",
+    "kosherType": "rabanut"
   },
   {
     "facebook": "https://www.facebook.com/McDonaldsIsrael",
@@ -39971,10 +39890,10 @@
     "locationPrecision": "city"
   },
   {
-    "openingHours": "19:30-22:00",
+    "openingHours": "א'-ה': 19:30–22:00 (קיץ) / 18:30–21:00 (חורף); שישי וערב חג: חצי שעה לאחר הדלקת הנרות למשך כשעה; מוצ\"ש וחג: שעה אחרי צאת שבת/חג למשך שעתיים (משתנה לפי זמני השקיעה)",
     "id": "mikveh-557",
     "type": "mikveh",
-    "lastVerifiedAt": "2026-06-17",
+    "lastVerifiedAt": "2026-07-24",
     "extra": {
       "dataSource": "data.gov.il",
       "geocodeQuery": "חרמון 6, שוהם, ישראל",
@@ -39986,7 +39905,7 @@
       "brideRoom": "כן",
       "responsibleWorker": "נאוה אלבז"
     },
-    "name": "מקווה נשים חרמון",
+    "name": "מקווה טהרה לנשים",
     "address": "חרמון 6",
     "location": {
       "latitude": 31.9977924,
@@ -114305,762 +114224,6 @@
     "phone": "03-5050126"
   },
   {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-77bb14f6",
-    "type": "cafe",
-    "source": "manual",
-    "name": "קפה גרג מגדל העמק",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "מגדל העמק",
-    "address": "BIG מגדל העמק, מגדל העמק",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.6927233,
-      "longitude": 35.2279386
-    },
-    "kosherType": "mehadrin",
-    "phone": "1700-70-4407"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-9ddc70b3",
-    "type": "cafe",
-    "openingHours": "א-ה 9:00-22:00 | ו 8:30-13:30 | מוצ\"ש סגור",
-    "name": "קפה גרג גן העיר אשדוד",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "אשדוד",
-    "address": "גן העיר, הגדוד העברי, אשדוד",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.7908807,
-      "longitude": 34.6381046
-    },
-    "kosherType": "badatz_beit_yosef",
-    "source": "manual",
-    "phone": "08-8675002"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-f8d2e80c",
-    "type": "cafe",
-    "source": "manual",
-    "name": "קפה גרג פארק תעשיות אפק",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "ראש העין",
-    "address": "גב ים, פארק תעשייה אפק, ראש העין",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.1060921,
-      "longitude": 34.9687576
-    },
-    "kosherType": "kosher",
-    "phone": "03-5566667"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-0b229b5e",
-    "type": "cafe",
-    "openingHours": "א-ה 08:30-22:30 | ו 08:30-14:00 | מוצ\"ש חצי שעה לאחר צאת שבת עד 22:30",
-    "name": "קפה גרג דנילוף טבריה",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "טבריה",
-    "address": "יהודה הלוי 1, טבריה",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.7904643,
-      "longitude": 35.533805
-    },
-    "kosherType": "mehadrin",
-    "source": "manual",
-    "phone": "04-8675566"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-8d3215ae",
-    "type": "cafe",
-    "openingHours": "א-ה 9:00-21:00 | ו 9:00-14:00 | מוצ\"ש סגור",
-    "name": "קפה גרג חדרה",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "חדרה",
-    "address": "עופר לב חדרה, שדרות רוטשילד, חדרה",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.4378941,
-      "longitude": 34.9219993
-    },
-    "kosherType": "mehadrin",
-    "source": "manual",
-    "phone": "1700-70-4407"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-62e09734",
-    "type": "cafe",
-    "openingHours": "א-ה 9:00-21:15 | ו 08:00-14:00 | מוצ\"ש חצי שעה לאחר צאת שבת עד 22:00",
-    "name": "קפה גרג רננים רעננה",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "רעננה",
-    "address": "קניון רננים, המלאכה, רעננה",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.1974472,
-      "longitude": 34.8780966
-    },
-    "kosherType": "mehadrin",
-    "source": "manual",
-    "phone": "09-8781472"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-5dd9db5e",
-    "type": "cafe",
-    "openingHours": "א-ה 9:30-21:45 | ו 9:00-13:00",
-    "name": "קפה גרג גוש עציון",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "גוש עציון",
-    "address": "צומת גוש עציון",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.645207,
-      "longitude": 35.1309302
-    },
-    "kosherType": "mehadrin",
-    "source": "manual",
-    "phone": "055-5573172"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-17c276c8",
-    "type": "cafe",
-    "source": "manual",
-    "name": "קפה גרג קניון הדר ירושלים",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "ירושלים",
-    "address": "קניון הדר, ירושלים",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.768319,
-      "longitude": 35.21371
-    },
-    "kosherType": "mehadrin",
-    "phone": "02-5367870"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-2291d2ec",
-    "type": "cafe",
-    "source": "manual",
-    "name": "קפה גרג ב.ס.ר בני ברק",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "בני ברק",
-    "address": "מצדה 5, בני ברק",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.093639,
-      "longitude": 34.8247297
-    },
-    "kosherType": "mehadrin",
-    "phone": "054-9377766"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-0ff8033c",
-    "type": "cafe",
-    "source": "manual",
-    "name": "קפה גרג ים המלח",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "ים המלח",
-    "address": "עין בוקק",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.1991222,
-      "longitude": 35.3641236
-    },
-    "kosherType": "mehadrin",
-    "phone": "08-6255588"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-b4288d9c",
-    "type": "cafe",
-    "source": "manual",
-    "name": "קפה גרג פוריה טבריה",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "טבריה",
-    "address": "המברג 1, טבריה",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.7853923,
-      "longitude": 35.4984742
-    },
-    "kosherType": "mehadrin",
-    "phone": "04-6735767"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-26408ffa",
-    "type": "cafe",
-    "source": "manual",
-    "name": "קפה גרג נשר",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "נשר",
-    "address": "דרך בר יהודה 111, נשר",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.771792,
-      "longitude": 35.0468566
-    },
-    "kosherType": "mehadrin",
-    "phone": "04-6221199"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-ab233b68",
-    "type": "cafe",
-    "openingHours": "א-ה 08:00-22:30 | ו 08:00-13:00 | מוצ\"ש חצי שעה לאחר צאת שבת עד 23:00",
-    "name": "קפה גרג בית שאן",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "בית שאן",
-    "address": "שדרות מנחם בגין, בית שאן",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.4991152,
-      "longitude": 35.5046608
-    },
-    "kosherType": "mehadrin",
-    "source": "manual",
-    "phone": "04-6060260"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-884d247c",
-    "type": "cafe",
-    "source": "manual",
-    "name": "קפה גרג בית שמש",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "בית שמש",
-    "address": "שדרות יגאל אלון 1, בית שמש",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.7560341,
-      "longitude": 34.9904465
-    },
-    "kosherType": "mehadrin",
-    "phone": "02-5401964"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-55b37c5c",
-    "type": "cafe",
-    "openingHours": "א-ה 9:00-21:30 | ו 9:00-14:00",
-    "name": "קפה גרג TLV תל אביב",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "תל אביב",
-    "address": "TLV Fashion Mall, קרליבך, תל אביב",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.0678229,
-      "longitude": 34.7834787
-    },
-    "kosherType": "mehadrin",
-    "source": "manual",
-    "phone": "03-677-1310"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-443cb001",
-    "type": "cafe",
-    "source": "manual",
-    "name": "קפה גרג דיזנגוף סנטר",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "תל אביב",
-    "address": "דיזנגוף 55, תל אביב",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.0754236,
-      "longitude": 34.7748328
-    },
-    "kosherType": "mehadrin",
-    "phone": "1700-70-4407"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-0ff39bbb",
-    "type": "cafe",
-    "source": "manual",
-    "name": "קפה גרג הקניון הגדול פתח תקווה",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "פתח תקווה",
-    "address": "עופר הקניון הגדול, ז'בוטינסקי 72, פתח תקווה",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.0932981,
-      "longitude": 34.8653481
-    },
-    "kosherType": "mehadrin",
-    "phone": "03-6428888"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-5e9f92a0",
-    "type": "cafe",
-    "source": "manual",
-    "name": "קפה גרג סירקין פתח תקווה",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "פתח תקווה",
-    "address": "אלעזר פרידמן 9, פתח תקווה",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.0794457,
-      "longitude": 34.9025999
-    },
-    "kosherType": "mehadrin",
-    "phone": "03-9075088"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-8c7bbbba",
-    "type": "cafe",
-    "openingHours": "א-ה 8:00-23:00 | ו 7:45-13:30",
-    "name": "קפה גרג גבעת שמואל",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "גבעת שמואל",
-    "address": "שדרות מנחם בגין 30, גבעת שמואל",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.0756581,
-      "longitude": 34.8545348
-    },
-    "kosherType": "mehadrin",
-    "source": "manual",
-    "phone": "03-5504969"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-9b698eb3",
-    "type": "cafe",
-    "source": "manual",
-    "name": "קפה גרג שרונים הוד השרון",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "הוד השרון",
-    "address": "הרקון 2, הוד השרון",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.1333401,
-      "longitude": 34.9014664
-    },
-    "kosherType": "mehadrin",
-    "phone": "09-8800890"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-291597a1",
-    "type": "cafe",
-    "source": "manual",
-    "name": "קפה גרג נתניה השרון",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "נתניה",
-    "address": "הרצל 60, נתניה",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.3264108,
-      "longitude": 34.8618993
-    },
-    "kosherType": "mehadrin",
-    "phone": "053-3374774"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-0f966132",
-    "type": "cafe",
-    "openingHours": "א-ה 8:00-23:00 | ו 8:00-14:30",
-    "name": "קפה גרג פרדס חנה",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "פרדס חנה",
-    "address": "תדהר 1, פרדס חנה כרכור",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.4871179,
-      "longitude": 34.9705137
-    },
-    "kosherType": "mehadrin",
-    "source": "manual",
-    "phone": "1700-70-4407"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-4c27cea8",
-    "type": "cafe",
-    "openingHours": "א-ה 07:30-23:00 | ו 07:30-13:00",
-    "name": "קפה גרג אריאל",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "אריאל",
-    "address": "הבנאי 5, אריאל",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.1007172,
-      "longitude": 35.1701921
-    },
-    "kosherType": "mehadrin",
-    "source": "manual",
-    "phone": "03-9303372"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-26dd0dbc",
-    "type": "cafe",
-    "source": "manual",
-    "name": "קפה גרג ביג אילת",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "אילת",
-    "address": "ביג אילת, הסתת 20, אילת",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 29.5664539,
-      "longitude": 34.9596748
-    },
-    "kosherType": "mehadrin",
-    "phone": "08-8507828"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-9cc138f8",
-    "type": "cafe",
-    "source": "manual",
-    "name": "קפה גרג דימונה",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "דימונה",
-    "address": "שדרות גולדה מאיר 1, דימונה",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.0742063,
-      "longitude": 35.032363
-    },
-    "kosherType": "mehadrin",
-    "phone": "08-6910090"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-051e4e12",
-    "type": "cafe",
-    "openingHours": "א-ה 8:30-22:30 | ו 8:30-14:00",
-    "name": "קפה גרג אופקים",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "אופקים",
-    "address": "יהדות דרום אפריקה 14, אופקים",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.3152934,
-      "longitude": 34.6237812
-    },
-    "kosherType": "mehadrin",
-    "source": "manual",
-    "phone": "08-9320066"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-42e77b63",
-    "type": "cafe",
-    "source": "manual",
-    "name": "קפה גרג שדרות",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "שדרות",
-    "address": "דרך מנחם בגין 1, שדרות",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.5256004,
-      "longitude": 34.6031203
-    },
-    "kosherType": "mehadrin",
-    "phone": "08-9292969"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-185c29dc",
-    "type": "cafe",
-    "source": "manual",
-    "name": "קפה גרג נתיבות",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "נתיבות",
-    "address": "בעלי המלאכה 5, נתיבות",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.4183917,
-      "longitude": 34.5990347
-    },
-    "kosherType": "mehadrin",
-    "phone": "08-9933287"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-45645a27",
-    "type": "cafe",
-    "source": "manual",
-    "name": "קפה גרג קסטינה",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "באר טוביה",
-    "address": "ביג קסטינה, שיבולים, באר טוביה",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.728028,
-      "longitude": 34.7550671
-    },
-    "kosherType": "mehadrin",
-    "phone": "08-6118112"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-23350907",
-    "type": "cafe",
-    "source": "manual",
-    "name": "קפה גרג רמלה",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "רמלה",
-    "address": "קניון עזריאלי רמלה, שדרות דוד רזיאל 1, רמלה",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 31.9257549,
-      "longitude": 34.8639629
-    },
-    "kosherType": "mehadrin",
-    "phone": "08-9150900"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-48ab2f9b",
-    "type": "cafe",
-    "openingHours": "א-ה 8:30-22:00 | ו 8:30-13:00 | מוצ\"ש שעה לאחר צאת שבת עד 23:00",
-    "name": "קפה גרג חריש",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "חריש",
-    "address": "ארץ 1, חריש",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.4705038,
-      "longitude": 35.0392878
-    },
-    "kosherType": "mehadrin",
-    "source": "manual",
-    "phone": "04-8532264"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-5d44ee6f",
-    "type": "cafe",
-    "openingHours": "א-ה 08:00-24:00 | ו 08:00-14:00",
-    "name": "קפה גרג קרית אתא",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "קריית אתא",
-    "address": "העצמאות 57, קרית אתא",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.8061731,
-      "longitude": 35.1035172
-    },
-    "kosherType": "mehadrin",
-    "source": "manual",
-    "phone": "04-8445522"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-58d4d1e7",
-    "type": "cafe",
-    "source": "manual",
-    "name": "קפה גרג עתלית",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "עתלית",
-    "address": "דרך הים 2, עתלית",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.7104359,
-      "longitude": 34.9481538
-    },
-    "kosherType": "mehadrin",
-    "phone": "04-9962399"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-851ddf50",
-    "type": "cafe",
-    "source": "manual",
-    "name": "קפה גרג יוקנעם",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "יוקנעם",
-    "address": "התמר 2, יוקנעם עילית",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.6595831,
-      "longitude": 35.1051293
-    },
-    "kosherType": "mehadrin",
-    "phone": "050-8773566"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-f29c21d4",
-    "type": "cafe",
-    "source": "manual",
-    "name": "קפה גרג לב המפרץ חיפה",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "חיפה",
-    "address": "שדרות ההסתדרות 55, חיפה",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.7934932,
-      "longitude": 35.0377411
-    },
-    "kosherType": "kosher",
-    "phone": "04-8403333"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-996a7fa0",
-    "type": "cafe",
-    "openingHours": "א-ה 8:00-23:00 | ו 8:00-15:00 | מוצ\"ש צאת שבת עד חצות",
-    "name": "קפה גרג עפולה",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "עפולה",
-    "address": "השוק 13, עפולה",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.6061191,
-      "longitude": 35.2929707
-    },
-    "kosherType": "mehadrin",
-    "source": "manual",
-    "phone": "04-6490011"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-dc82d632",
-    "type": "cafe",
-    "source": "manual",
-    "name": "קפה גרג קניון נהריה",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "נהריה",
-    "address": "אירית 2, נהריה",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.9901794,
-      "longitude": 35.0953318
-    },
-    "kosherType": "mehadrin",
-    "phone": "04-9930090"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-44c4c173",
-    "type": "cafe",
-    "openingHours": "א-ה 7:30-20:00 | ו 7:30-12:30",
-    "name": "קפה גרג מכללת בראודה כרמיאל",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "כרמיאל",
-    "address": "סנונית 51, כרמיאל",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.914671,
-      "longitude": 35.292417
-    },
-    "kosherType": "kosher",
-    "source": "manual",
-    "phone": "1700-70-4407"
-  },
-  {
-    "facebook": "https://www.facebook.com/gregcafe/",
-    "id": "greg-9cf81d80",
-    "type": "cafe",
-    "source": "manual",
-    "name": "קפה גרג ראש פינה",
-    "lastVerifiedAt": "2026-07-14",
-    "website": "https://gregcafe.co.il",
-    "cityId": "ראש פינה",
-    "address": "התפוח 5, ראש פינה",
-    "instagram": "https://www.instagram.com/greg_cafe/",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.9697787,
-      "longitude": 35.5503856
-    },
-    "kosherType": "mehadrin",
-    "phone": "04-6801191"
-  },
-  {
     "description": "יקב בוטיק עם שורשים ברומניה, נוסד ב-1970. המשפחה מפעילה את המפעל הראשון בישראל לייצור חביות יין מעץ אלון.",
     "type": "winery",
     "openingHours": "א-ה 10:00-18:00 | ו סגור | ש סגור",
@@ -117477,7 +116640,8 @@
     "category": "meat",
     "kosherType": "mehadrin",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-14"
+    "lastVerifiedAt": "2026-07-14",
+    "phone": "*2242"
   },
   {
     "id": "burgersbar-8e986587",
@@ -117494,7 +116658,8 @@
     "category": "meat",
     "kosherType": "mehadrin",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-14"
+    "lastVerifiedAt": "2026-07-14",
+    "phone": "*2242"
   },
   {
     "id": "burgersbar-71b69ef0",
@@ -117511,7 +116676,8 @@
     "category": "meat",
     "kosherType": "badatz_beit_yosef",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-14"
+    "lastVerifiedAt": "2026-07-14",
+    "phone": "*2242"
   },
   {
     "id": "burgersbar-fbccb6b0",
@@ -117528,7 +116694,8 @@
     "category": "meat",
     "kosherType": "mehadrin",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-14"
+    "lastVerifiedAt": "2026-07-14",
+    "phone": "*2242"
   },
   {
     "id": "burgersbar-be293537",
@@ -117545,7 +116712,8 @@
     "category": "meat",
     "kosherType": "badatz_beit_yosef",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-14"
+    "lastVerifiedAt": "2026-07-14",
+    "phone": "*2242"
   },
   {
     "id": "burgersbar-0b78072a",
@@ -117562,7 +116730,8 @@
     "category": "meat",
     "kosherType": "mehadrin",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-14"
+    "lastVerifiedAt": "2026-07-14",
+    "phone": "*2242"
   },
   {
     "id": "burgersbar-20544f4b",
@@ -117579,7 +116748,8 @@
     "category": "meat",
     "kosherType": "mehadrin",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-14"
+    "lastVerifiedAt": "2026-07-14",
+    "phone": "*2242"
   },
   {
     "id": "burgersbar-fdcd37b2",
@@ -117596,7 +116766,8 @@
     "category": "meat",
     "kosherType": "mehadrin",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-14"
+    "lastVerifiedAt": "2026-07-14",
+    "phone": "*2242"
   },
   {
     "id": "burgersbar-b0fda7d8",
@@ -117613,7 +116784,8 @@
     "category": "meat",
     "kosherType": "mehadrin",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-14"
+    "lastVerifiedAt": "2026-07-14",
+    "phone": "*2242"
   },
   {
     "id": "burgersbar-ca68fc3c",
@@ -117630,7 +116802,8 @@
     "category": "meat",
     "kosherType": "mehadrin",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-14"
+    "lastVerifiedAt": "2026-07-14",
+    "phone": "*2242"
   },
   {
     "id": "burgersbar-8a8db08b",
@@ -117647,7 +116820,8 @@
     "category": "meat",
     "kosherType": "mehadrin",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-14"
+    "lastVerifiedAt": "2026-07-14",
+    "phone": "*2242"
   },
   {
     "id": "burgersbar-417e6b61",
@@ -117664,7 +116838,8 @@
     "category": "meat",
     "kosherType": "badatz_beit_yosef",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-14"
+    "lastVerifiedAt": "2026-07-14",
+    "phone": "*2242"
   },
   {
     "id": "burgersbar-a7096850",
@@ -117681,7 +116856,8 @@
     "category": "meat",
     "kosherType": "badatz_beit_yosef",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-14"
+    "lastVerifiedAt": "2026-07-14",
+    "phone": "*2242"
   },
   {
     "id": "burgersbar-6da47c9c",
@@ -117698,7 +116874,8 @@
     "category": "meat",
     "kosherType": "mehadrin",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-14"
+    "lastVerifiedAt": "2026-07-14",
+    "phone": "*2242"
   },
   {
     "id": "burgersbar-47c25dd8",
@@ -117715,7 +116892,8 @@
     "category": "meat",
     "kosherType": "mehadrin",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-14"
+    "lastVerifiedAt": "2026-07-14",
+    "phone": "*2242"
   },
   {
     "id": "burgersbar-f0f2c420",
@@ -117732,7 +116910,8 @@
     "category": "meat",
     "kosherType": "mehadrin",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-14"
+    "lastVerifiedAt": "2026-07-14",
+    "phone": "*2242"
   },
   {
     "id": "burgersbar-f5d9de6e",
@@ -117750,7 +116929,8 @@
     "category": "meat",
     "kosherType": "badatz_beit_yosef",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-14"
+    "lastVerifiedAt": "2026-07-14",
+    "phone": "*2242"
   },
   {
     "id": "burgersbar-e0361b76",
@@ -117767,7 +116947,8 @@
     "category": "meat",
     "kosherType": "mehadrin",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-14"
+    "lastVerifiedAt": "2026-07-14",
+    "phone": "*2242"
   },
   {
     "id": "burgersbar-e785eafc",
@@ -117784,7 +116965,8 @@
     "category": "meat",
     "kosherType": "mehadrin",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-14"
+    "lastVerifiedAt": "2026-07-14",
+    "phone": "*2242"
   },
   {
     "id": "burgersbar-d9af30d9",
@@ -117802,7 +116984,8 @@
     "category": "meat",
     "kosherType": "badatz_beit_yosef",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-14"
+    "lastVerifiedAt": "2026-07-14",
+    "phone": "*2242"
   },
   {
     "id": "burgersbar-e1596d55",
@@ -117819,7 +117002,8 @@
     "category": "meat",
     "kosherType": "mehadrin",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-14"
+    "lastVerifiedAt": "2026-07-14",
+    "phone": "*2242"
   },
   {
     "id": "burgersbar-28d8ca5f",
@@ -117836,7 +117020,8 @@
     "category": "meat",
     "kosherType": "badatz_beit_yosef",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-14"
+    "lastVerifiedAt": "2026-07-14",
+    "phone": "*2242"
   },
   {
     "id": "burgersbar-74ae9f7d",
@@ -117853,7 +117038,8 @@
     "category": "meat",
     "kosherType": "badatz_beit_yosef",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-14"
+    "lastVerifiedAt": "2026-07-14",
+    "phone": "*2242"
   },
   {
     "id": "burgersbar-eb6780e1",
@@ -117870,7 +117056,8 @@
     "category": "meat",
     "kosherType": "badatz_beit_yosef",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-14"
+    "lastVerifiedAt": "2026-07-14",
+    "phone": "*2242"
   },
   {
     "id": "burgersbar-83561c98",
@@ -117888,7 +117075,8 @@
     "category": "meat",
     "kosherType": "mehadrin",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-14"
+    "lastVerifiedAt": "2026-07-14",
+    "phone": "*2242"
   },
   {
     "id": "burgersbar-1f17fca3",
@@ -117906,7 +117094,8 @@
     "category": "meat",
     "kosherType": "mehadrin",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-14"
+    "lastVerifiedAt": "2026-07-14",
+    "phone": "*2242"
   },
   {
     "id": "burgersbar-85a13288",
@@ -117923,7 +117112,8 @@
     "category": "meat",
     "kosherType": "badatz_beit_yosef",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-14"
+    "lastVerifiedAt": "2026-07-14",
+    "phone": "*2242"
   },
   {
     "id": "burgersbar-87223019",
@@ -117940,7 +117130,8 @@
     "category": "meat",
     "kosherType": "mehadrin",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-14"
+    "lastVerifiedAt": "2026-07-14",
+    "phone": "*2242"
   },
   {
     "id": "pastabasta-1e5e8321",
@@ -131428,704 +130619,6 @@
     "source": "manual"
   },
   {
-    "id": "manual-greg-ashdod-gan-hair",
-    "name": "קפה גרג גן העיר",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "הגדוד העברי, גן העיר, אשדוד",
-    "cityId": "אשדוד",
-    "location": {
-      "latitude": 31.8093,
-      "longitude": 34.6559
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "facebook": "https://www.facebook.com/GregCafe",
-    "certifiedBy": "רבנות מקומית מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-eilat-big",
-    "name": "קפה גרג אילת",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "הסתת 20, ביג, אילת",
-    "cityId": "אילת",
-    "location": {
-      "latitude": 29.5544,
-      "longitude": 34.9489
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות מקומית מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-kastina",
-    "name": "קפה גרג קסטינה",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "שיבולים, ביג קסטינה, באר טוביה",
-    "cityId": "באר טוביה",
-    "location": {
-      "latitude": 31.7936,
-      "longitude": 34.7413
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות מקומית מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-dimona",
-    "name": "קפה גרג דימונה",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "שדרות גולדה מאיר 1, דימונה",
-    "cityId": "דימונה",
-    "location": {
-      "latitude": 31.0693,
-      "longitude": 35.0345
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות מקומית מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-ofakim",
-    "name": "קפה גרג אופקים",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "יהדות דרום אפריקה 14, אופקים",
-    "cityId": "אופקים",
-    "location": {
-      "latitude": 31.3118,
-      "longitude": 34.6133
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות מקומית מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-netivot",
-    "name": "קפה גרג נתיבות",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "בעלי המלאכה 5, נתיבות",
-    "cityId": "נתיבות",
-    "location": {
-      "latitude": 31.4218,
-      "longitude": 34.588
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות מקומית מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-sderot",
-    "name": "קפה גרג שדרות",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "דרך מנחם בגין 1, שדרות",
-    "cityId": "שדרות",
-    "location": {
-      "latitude": 31.5235,
-      "longitude": 34.5996
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות מקומית מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-ein-bokek",
-    "name": "קפה גרג ים המלח",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "עין בוקק, ים המלח",
-    "cityId": "עין בוקק",
-    "location": {
-      "latitude": 31.155,
-      "longitude": 35.365
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות מקומית מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-tlv-fashion-mall",
-    "name": "קפה גרג TLV פאשן מול",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "קרליבך 4, TLV Fashion Mall, תל אביב",
-    "cityId": "תל אביב",
-    "location": {
-      "latitude": 32.0697,
-      "longitude": 34.7876
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות ראשית מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-tlv-dizengoff",
-    "name": "קפה גרג דיזנגוף סנטר",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "דיזנגוף 55, תל אביב",
-    "cityId": "תל אביב",
-    "location": {
-      "latitude": 32.0783,
-      "longitude": 34.775
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות ראשית מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-pt-kanyon-gadol",
-    "name": "קפה גרג הקניון הגדול",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "ז'בוטינסקי 72, הקניון הגדול, פתח תקווה",
-    "cityId": "פתח תקווה",
-    "location": {
-      "latitude": 32.0808,
-      "longitude": 34.8818
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות מקומית מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-pt-sirkin",
-    "name": "קפה גרג סירקין",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "אלעזר פרידמן 9, סירקין, פתח תקווה",
-    "cityId": "פתח תקווה",
-    "location": {
-      "latitude": 32.0885,
-      "longitude": 34.8875
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות מקומית מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-bb-bsr",
-    "name": "קפה גרג ב.ס.ר בני ברק",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "מצדה 5, ב.ס.ר, בני ברק",
-    "cityId": "בני ברק",
-    "location": {
-      "latitude": 32.08,
-      "longitude": 34.8309
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות בני ברק מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-givat-shmuel",
-    "name": "קפה גרג גבעת שמואל",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "שדרות מנחם בגין 30, גבעת שמואל",
-    "cityId": "גבעת שמואל",
-    "location": {
-      "latitude": 32.076,
-      "longitude": 34.8443
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות מקומית מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-hod-hasharon",
-    "name": "קפה גרג הוד השרון",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "הרקון 2, שרונים, הוד השרון",
-    "cityId": "הוד השרון",
-    "location": {
-      "latitude": 32.1482,
-      "longitude": 34.8902
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות מקומית מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-raanana-renanim",
-    "name": "קפה גרג רננים",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "קניון רננים, המלאכה, רעננה",
-    "cityId": "רעננה",
-    "location": {
-      "latitude": 32.1899,
-      "longitude": 34.8761
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות מקומית מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-netanya-hasharon",
-    "name": "קפה גרג נתניה השרון",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "הרצל 60, נתניה",
-    "cityId": "נתניה",
-    "location": {
-      "latitude": 32.3295,
-      "longitude": 34.854
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות מקומית מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-ramla",
-    "name": "קפה גרג רמלה",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "שדרות דוד רזיאל 1, קניון עזריאלי, רמלה",
-    "cityId": "רמלה",
-    "location": {
-      "latitude": 31.9353,
-      "longitude": 34.8713
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות מקומית מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-harish",
-    "name": "קפה גרג חריש",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "כביש ארץ 1, חריש",
-    "cityId": "חריש",
-    "location": {
-      "latitude": 32.4617,
-      "longitude": 35.043
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות מקומית מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-ariel",
-    "name": "קפה גרג אריאל",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "הבנאי 5, אריאל",
-    "cityId": "אריאל",
-    "location": {
-      "latitude": 32.1048,
-      "longitude": 35.1711
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות מקומית מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-beit-shemesh",
-    "name": "קפה גרג בית שמש",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "שדרות יגאל אלון 1, בית שמש",
-    "cityId": "בית שמש",
-    "location": {
-      "latitude": 31.7442,
-      "longitude": 34.9973
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות מקומית מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-gush-etzion",
-    "name": "קפה גרג גוש עציון",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "צומת גוש עציון",
-    "cityId": "גוש עציון",
-    "location": {
-      "latitude": 31.6547,
-      "longitude": 35.1116
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות מקומית מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-pardes-hana",
-    "name": "קפה גרג פרדס חנה",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "תדהר 1, פרדס חנה כרכור",
-    "cityId": "פרדס חנה",
-    "location": {
-      "latitude": 32.4721,
-      "longitude": 34.9718
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות מקומית מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-jrm-hadar",
-    "name": "קפה גרג קניון הדר ירושלים",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "קניון הדר, ירושלים",
-    "cityId": "ירושלים",
-    "location": {
-      "latitude": 31.7889,
-      "longitude": 35.2022
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות ירושלים מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-rishon-g2",
-    "name": "קפה גרג G2 ראשל\"צ",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "ילדי טהרן 5, ראשון לציון",
-    "cityId": "ראשון לציון",
-    "location": {
-      "latitude": 31.9762,
-      "longitude": 34.7913
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות מקומית מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-tiberias-danilof",
-    "name": "קפה גרג דנילוף טבריה",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "יהודה הלוי 1, טבריה",
-    "cityId": "טבריה",
-    "location": {
-      "latitude": 32.7872,
-      "longitude": 35.5292
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות מקומית מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-tiberias-poria",
-    "name": "קפה גרג פוריה",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "המברג 1, פוריה, טבריה",
-    "cityId": "טבריה",
-    "location": {
-      "latitude": 32.754,
-      "longitude": 35.5182
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות מקומית מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-beit-shean",
-    "name": "קפה גרג בית שאן",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "שדרות מנחם בגין, בית שאן",
-    "cityId": "בית שאן",
-    "location": {
-      "latitude": 32.5002,
-      "longitude": 35.4979
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות מקומית מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-nesher",
-    "name": "קפה גרג נשר",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "דרך בר יהודה 111, נשר",
-    "cityId": "נשר",
-    "location": {
-      "latitude": 32.7642,
-      "longitude": 35.0432
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות מקומית מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-hadera-ofer",
-    "name": "קפה גרג חדרה",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "שדרות רוטשילד, עופר לב חדרה, חדרה",
-    "cityId": "חדרה",
-    "location": {
-      "latitude": 32.4335,
-      "longitude": 34.918
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות מקומית מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-migdal-haemek",
-    "name": "קפה גרג מגדל העמק",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "BIG מגדל העמק",
-    "cityId": "מגדל העמק",
-    "location": {
-      "latitude": 32.6735,
-      "longitude": 35.2404
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות מקומית מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-kiryat-ata",
-    "name": "קפה גרג קרית אתא",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "העצמאות 57, קרית אתא",
-    "cityId": "קרית אתא",
-    "location": {
-      "latitude": 32.8043,
-      "longitude": 35.1095
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות מקומית מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-atlit",
-    "name": "קפה גרג עתלית",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "דרך הים 2, עתלית",
-    "cityId": "עתלית",
-    "location": {
-      "latitude": 32.6958,
-      "longitude": 34.9405
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות מקומית מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-yokneam",
-    "name": "קפה גרג יוקנעם",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "התמר 2, יוקנעם עילית",
-    "cityId": "יוקנעם",
-    "location": {
-      "latitude": 32.6565,
-      "longitude": 35.0994
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות מקומית מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-afula",
-    "name": "קפה גרג עפולה",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "השוק 13, עפולה",
-    "cityId": "עפולה",
-    "location": {
-      "latitude": 32.6079,
-      "longitude": 35.2898
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות מקומית מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-nahariya",
-    "name": "קפה גרג נהריה",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "אירית 2, קניון נהריה",
-    "cityId": "נהריה",
-    "location": {
-      "latitude": 33.0045,
-      "longitude": 35.0978
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות מקומית מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-rosh-pina",
-    "name": "קפה גרג ראש פינה",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "התפוח 5, ראש פינה",
-    "cityId": "ראש פינה",
-    "location": {
-      "latitude": 32.9748,
-      "longitude": 35.5489
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות מקומית מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-kiryat-shmona",
-    "name": "קפה גרג קרית שמונה",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "טשרניחובסקי 6, קרית שמונה",
-    "cityId": "קרית שמונה",
-    "location": {
-      "latitude": 33.2094,
-      "longitude": 35.5698
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות מקומית מהדרין",
-    "kosherType": "mehadrin",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-rosh-haayin-afek",
-    "name": "קפה גרג פארק אפק",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "המלאכה, גב ים, ראש העין",
-    "cityId": "ראש העין",
-    "location": {
-      "latitude": 32.0992,
-      "longitude": 34.9558
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות מקומית",
-    "kosherType": "regular",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-haifa-sinmol",
-    "name": "קפה גרג סינמול חיפה",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "שדרות ההסתדרות 55, סינמול, חיפה",
-    "cityId": "חיפה",
-    "location": {
-      "latitude": 32.8364,
-      "longitude": 35.04
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות חיפה",
-    "kosherType": "regular",
-    "source": "manual"
-  },
-  {
-    "id": "manual-greg-karmiel-braude",
-    "name": "קפה גרג מכללת בראודה",
-    "type": "cafe",
-    "category": "dairy",
-    "address": "סנונית 51, כרמיאל",
-    "cityId": "כרמיאל",
-    "location": {
-      "latitude": 32.9137,
-      "longitude": 35.298
-    },
-    "website": "https://gregcafe.co.il",
-    "instagram": "https://www.instagram.com/gregcafe",
-    "certifiedBy": "רבנות מקומית",
-    "kosherType": "regular",
-    "source": "manual"
-  },
-  {
     "id": "papos-26cdd95f",
     "name": "פאפוס בשרים רחובות",
     "type": "restaurant",
@@ -137290,5 +135783,3022 @@
     "kosherType": "regular",
     "openingHours": "א׳-ה׳ 12:00-00:00, ו׳ 12:00 עד שעה לפני שבת, מוצ\"ש שעה אחרי שבת-00:00",
     "source": "manual"
+  },
+  {
+    "id": "mikveh-shoham-m-31.99678_34.94822",
+    "name": "מקווה גברים דורות אברהם",
+    "type": "mikveh",
+    "cityId": "שוהם",
+    "address": "רחוב המכבים 94, שוהם",
+    "location": {
+      "latitude": 31.9967776,
+      "longitude": 34.9482205
+    },
+    "source": "seed",
+    "phone": "039723060",
+    "openingHours": "א'-ה': מעלות השחר עד 12:00; שישי: מעלות השחר עד כניסת שבת; שבת וחג: מעלות השחר עד 11:00; מועדים וחגים: יש לפנות ליוסי מנזון",
+    "mikvehGender": "גברים",
+    "attendant": "יוסי מנזון (רכז שירותי דת) 054-7784823",
+    "sourceName": "מועצה מקומית שוהם — שירותי דת",
+    "extra": {
+      "license": "owner-provided",
+      "coordSource": "record-native(co-located synagogue osm-node-4406510250)",
+      "hasKelim": true,
+      "contacts": {
+        "maintenance": "יוסי מנזון 054-7784823",
+        "halacha": "הרב רן כלילי 052-7974910",
+        "moked": "03-9723060",
+        "whatsapp": "053-4230106"
+      },
+      "notice": "לפני טבילה חובה להתקלח במים ובסבון",
+      "provenance": {
+        "sourceId": "user-provided:shoham:dorot-avraham",
+        "fetchedAt": "2026-07-24"
+      }
+    }
+  },
+  {
+    "id": "pizza-roma-46407d39",
+    "name": "פיצה רומא עכו",
+    "type": "fast_food",
+    "cityId": "עכו",
+    "address": "נחליאלי 4, עכו",
+    "location": {
+      "latitude": 32.927,
+      "longitude": 35.0719
+    },
+    "openingHours": "א'-ה' 10:00-00:00 | ו' סגור | ש' מוצ\"ש עד 00:00",
+    "category": "dairy",
+    "kosherType": "badatz_beit_yosef",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "04-9916110",
+    "website": "https://pizza-roma.co.il"
+  },
+  {
+    "id": "pizza-roma-96e0f6b7",
+    "name": "פיצה רומא גדרה",
+    "type": "fast_food",
+    "cityId": "גדרה",
+    "address": "שדרות מנחם בגין 42, גדרה",
+    "location": {
+      "latitude": 31.8068,
+      "longitude": 34.7816
+    },
+    "openingHours": "א'-ה' 10:00-00:00 | ו' 10:00-15:00 | ש' מוצ\"ש עד 00:00",
+    "category": "dairy",
+    "kosherType": "rabanut",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "08-8596566",
+    "website": "https://pizza-roma.co.il"
+  },
+  {
+    "id": "pizza-roma-cee36ac2",
+    "name": "פיצה רומא רמת גן",
+    "type": "fast_food",
+    "cityId": "רמת גן",
+    "address": "בן גוריון 12, רמת גן",
+    "location": {
+      "latitude": 32.0789,
+      "longitude": 34.8141
+    },
+    "openingHours": "א'-ה' 11:30-00:00 | ו' לבדוק מול המסעדה | ש' מוצ\"ש",
+    "category": "dairy",
+    "kosherType": "mehadrin",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "03-6725577",
+    "website": "https://pizza-roma.co.il"
+  },
+  {
+    "id": "pizza-roma-3d69a6f3",
+    "name": "פיצה רומא ראשון לציון",
+    "type": "fast_food",
+    "cityId": "ראשון לציון",
+    "address": "רוטשילד 85, ראשון לציון",
+    "location": {
+      "latitude": 31.9694,
+      "longitude": 34.8014
+    },
+    "openingHours": "א'-ה' 10:30-01:30 | ו' לבדוק מול המסעדה | ש' מוצ\"ש עד 01:30",
+    "category": "dairy",
+    "kosherType": "rabanut",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "03-9666201",
+    "website": "https://pizza-roma.co.il"
+  },
+  {
+    "id": "pizza-roma-03b208de",
+    "name": "פיצה רומא חולון",
+    "type": "fast_food",
+    "cityId": "חולון",
+    "address": "שאלתיאל דוד 16, חולון",
+    "location": {
+      "latitude": 32.016,
+      "longitude": 34.7713
+    },
+    "openingHours": "א'-ה' 11:00-22:45 | ו' לבדוק מול המסעדה | ש' מוצ\"ש עד 22:50",
+    "category": "dairy",
+    "kosherType": "rabanut",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "03-5512787",
+    "website": "https://pizza-roma.co.il"
+  },
+  {
+    "id": "pizza-roma-7e2c97f2",
+    "name": "פיצה רומא הרצליה",
+    "type": "fast_food",
+    "cityId": "הרצליה",
+    "address": "שדרות אבא אבן 1, הרצליה",
+    "location": {
+      "latitude": 32.1648,
+      "longitude": 34.8372
+    },
+    "openingHours": "א'-ה' 11:00-22:30 | ו' 11:00-15:00 | ש' מוצ\"ש עד 23:30",
+    "category": "dairy",
+    "kosherType": "rabanut",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "09-9517676",
+    "website": "https://pizza-roma.co.il"
+  },
+  {
+    "id": "pizza-roma-081fbf09",
+    "name": "פיצה רומא רחובות",
+    "type": "fast_food",
+    "cityId": "רחובות",
+    "address": "שדרות פנחס בן דוד קפרא 1, רחובות",
+    "location": {
+      "latitude": 31.8983,
+      "longitude": 34.8109
+    },
+    "openingHours": "א'-ה' 11:00-22:30 | ו' 11:00-14:00 | ש' מוצ\"ש",
+    "category": "dairy",
+    "kosherType": "rabanut",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "08-9370410",
+    "website": "https://pizza-roma.co.il"
+  },
+  {
+    "id": "pizza-roma-2ba23f5e",
+    "name": "פיצה רומא קריית גת",
+    "type": "fast_food",
+    "cityId": "קריית גת",
+    "address": "שדרות לכיש 63, קריית גת",
+    "location": {
+      "latitude": 31.6117,
+      "longitude": 34.7699
+    },
+    "openingHours": "א'-ה' עד 01:00 | ו' לבדוק מול המסעדה | ש' מוצ\"ש",
+    "category": "dairy",
+    "kosherType": "mehadrin",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "08-6888563",
+    "website": "https://pizza-roma.co.il"
+  },
+  {
+    "id": "pizza-roma-48c252f6",
+    "name": "פיצה רומא שדרות",
+    "type": "fast_food",
+    "cityId": "שדרות",
+    "address": "בן יהודה 4, שדרות",
+    "location": {
+      "latitude": 31.5288,
+      "longitude": 34.5954
+    },
+    "openingHours": "א'-ד' 11:30-03:00 | ה' 11:30-04:00 | ו' סגור | ש' מוצ\"ש עד 04:00",
+    "category": "dairy",
+    "kosherType": "rabanut",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "076-8619898",
+    "website": "https://pizza-roma.co.il"
+  },
+  {
+    "id": "pizza-roma-4c28e381",
+    "name": "פיצה רומא בית שאן",
+    "type": "fast_food",
+    "cityId": "בית שאן",
+    "address": "שאול המלך 74, בית שאן",
+    "location": {
+      "latitude": 32.502,
+      "longitude": 35.4928
+    },
+    "openingHours": "א'-ה' 07:30-19:30 | ו' 09:00-13:00 | ש' סגור",
+    "category": "dairy",
+    "kosherType": "mehadrin",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "053-9367819",
+    "website": "https://pizza-roma.co.il"
+  },
+  {
+    "id": "dominos-v2-b9b46dd7",
+    "name": "דומינוס תל אביב הירקון",
+    "type": "fast_food",
+    "cityId": "תל אביב",
+    "address": "כ\"ג יורדי הסירה 10, נמל תל אביב",
+    "location": {
+      "latitude": 32.1019,
+      "longitude": 34.7842
+    },
+    "openingHours": "א'-ה' 12:00-00:00 | ו' לבדוק מול המסעדה | ש' מוצ\"ש",
+    "category": "dairy",
+    "kosherType": "badatz_beit_yosef",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "1-700-707-070",
+    "website": "https://www.dominos.co.il",
+    "sourceUrl": "https://www.dominos.co.il/branches"
+  },
+  {
+    "id": "dominos-v2-bebe4b0d",
+    "name": "דומינוס פתח תקווה שטמפפר",
+    "type": "fast_food",
+    "cityId": "פתח תקווה",
+    "address": "יהושע שטמפפר 73, פתח תקווה",
+    "location": {
+      "latitude": 32.0916,
+      "longitude": 34.8892
+    },
+    "openingHours": "א'-ה' 12:00-23:50 | ו' 12:00-15:00 | ש' מוצ\"ש עד 23:50",
+    "category": "dairy",
+    "kosherType": "mehadrin",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "076-804-8974",
+    "website": "https://www.dominos.co.il",
+    "sourceUrl": "https://www.dominos.co.il/branches"
+  },
+  {
+    "id": "dominos-v2-6e72915f",
+    "name": "דומינוס פתח תקווה כפר גנים",
+    "type": "fast_food",
+    "cityId": "פתח תקווה",
+    "address": "העצמאות 65, קניון גנים, פתח תקווה",
+    "location": {
+      "latitude": 32.0892,
+      "longitude": 34.8783
+    },
+    "openingHours": "א'-ה' 12:00-23:30 | ו' 12:00-15:30 | ש' 19:00-23:30",
+    "category": "dairy",
+    "kosherType": "mehadrin",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "076-804-8974",
+    "website": "https://www.dominos.co.il",
+    "sourceUrl": "https://www.dominos.co.il/branches"
+  },
+  {
+    "id": "dominos-v2-567ffed9",
+    "name": "דומינוס פתח תקווה אם המושבות",
+    "type": "fast_food",
+    "cityId": "פתח תקווה",
+    "address": "ראשון לציון 1, פתח תקווה",
+    "location": {
+      "latitude": 32.0889,
+      "longitude": 34.8832
+    },
+    "openingHours": "א'-ה' 12:00-23:30 | ו' 11:30-14:55 | ש' מוצ\"ש עד 23:55",
+    "category": "dairy",
+    "kosherType": "mehadrin",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "076-804-8974",
+    "website": "https://www.dominos.co.il",
+    "sourceUrl": "https://www.dominos.co.il/branches"
+  },
+  {
+    "id": "dominos-v2-d47899c8",
+    "name": "דומינוס גבעתיים",
+    "type": "fast_food",
+    "cityId": "גבעתיים",
+    "address": "בורוכוב 52, גבעתיים",
+    "location": {
+      "latitude": 32.0735,
+      "longitude": 34.8098
+    },
+    "openingHours": "א'-ה' 12:00-23:30 | ו' 12:00-15:00 | ש' מוצ\"ש",
+    "category": "dairy",
+    "kosherType": "badatz_beit_yosef",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "076-804-8974",
+    "website": "https://www.dominos.co.il",
+    "sourceUrl": "https://www.dominos.co.il/branches"
+  },
+  {
+    "id": "dominos-v2-c173953e",
+    "name": "דומינוס חולון פארק פרס",
+    "type": "fast_food",
+    "cityId": "חולון",
+    "address": "שד' ירושלים 216, פארק פרס, חולון",
+    "location": {
+      "latitude": 32.0044,
+      "longitude": 34.7661
+    },
+    "openingHours": "א'-ה' 12:00-23:50 | ו' 12:00-15:00 | ש' מוצ\"ש עד 23:50",
+    "category": "dairy",
+    "kosherType": "badatz_beit_yosef",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "076-804-8974",
+    "website": "https://www.dominos.co.il",
+    "sourceUrl": "https://www.dominos.co.il/branches"
+  },
+  {
+    "id": "dominos-v2-3f18ccb9",
+    "name": "דומינוס אשדוד",
+    "type": "fast_food",
+    "cityId": "אשדוד",
+    "address": "הציונות 11, אשדוד",
+    "location": {
+      "latitude": 31.8028,
+      "longitude": 34.649
+    },
+    "openingHours": "א'-ה' 12:00-23:30 | ו' 12:00-15:00 | ש' 18:55-23:30",
+    "category": "dairy",
+    "kosherType": "badatz_beit_yosef",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "1-700-707-070",
+    "website": "https://www.dominos.co.il",
+    "sourceUrl": "https://www.dominos.co.il/branches"
+  },
+  {
+    "id": "dominos-v2-2162ab36",
+    "name": "דומינוס אשקלון",
+    "type": "fast_food",
+    "cityId": "אשקלון",
+    "address": "שד' ירושלים 119, אשקלון",
+    "location": {
+      "latitude": 31.676,
+      "longitude": 34.5699
+    },
+    "openingHours": "א'-ה' 12:00-00:00 | ו' 11:00-15:00 | ש' מוצ\"ש עד 00:00",
+    "category": "dairy",
+    "kosherType": "badatz_beit_yosef",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "1-700-707-070",
+    "website": "https://www.dominos.co.il",
+    "sourceUrl": "https://www.dominos.co.il/branches"
+  },
+  {
+    "id": "dominos-v2-79ca4ed9",
+    "name": "דומינוס עפולה",
+    "type": "fast_food",
+    "cityId": "עפולה",
+    "address": "שד' יצחק רבין 20, עפולה",
+    "location": {
+      "latitude": 32.6054,
+      "longitude": 35.2891
+    },
+    "openingHours": "א'-ה' 12:00-23:45 | ו' 11:00-15:00 | ש' מוצ\"ש עד 23:45",
+    "category": "dairy",
+    "kosherType": "badatz_beit_yosef",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "076-804-8963",
+    "website": "https://www.dominos.co.il",
+    "sourceUrl": "https://www.dominos.co.il/branches"
+  },
+  {
+    "id": "dominos-v2-b44033f1",
+    "name": "דומינוס קריית ביאליק",
+    "type": "fast_food",
+    "cityId": "קריית ביאליק",
+    "address": "שד' ירושלים 1, קריית ביאליק",
+    "location": {
+      "latitude": 32.8313,
+      "longitude": 35.0728
+    },
+    "openingHours": "א'-ה' 12:00-23:45 | ו' 12:00-15:00 | ש' מוצ\"ש עד 23:45",
+    "category": "dairy",
+    "kosherType": "badatz_beit_yosef",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "1-700-707-070",
+    "website": "https://www.dominos.co.il",
+    "sourceUrl": "https://www.dominos.co.il/branches"
+  },
+  {
+    "id": "prego-60b15e61",
+    "name": "פיצה פרגו קריית אתא",
+    "type": "fast_food",
+    "cityId": "קריית אתא",
+    "address": "דוכיפת 3, קריית אתא",
+    "location": {
+      "latitude": 32.8015,
+      "longitude": 35.0952
+    },
+    "openingHours": "א'-ה' 11:00-23:00 | ו' עד כניסת שבת | ש' מוצ\"ש עד 23:00",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "04-8487777",
+    "website": "https://www.prego.co.il",
+    "sourceUrl": "https://www.prego.co.il/branch/"
+  },
+  {
+    "id": "prego-4a5e560a",
+    "name": "פיצה פרגו חולון וולפסון",
+    "type": "fast_food",
+    "cityId": "חולון",
+    "address": "הלוחמים 62, קניון וולפסון, חולון",
+    "location": {
+      "latitude": 32.0125,
+      "longitude": 34.781
+    },
+    "openingHours": "א'-ה' 11:00-23:00 | ו' עד כניסת שבת | ש' סגור",
+    "category": "dairy",
+    "kosherType": "badatz_beit_yosef",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "053-8092893",
+    "website": "https://www.prego.co.il",
+    "sourceUrl": "https://www.prego.co.il/branch/"
+  },
+  {
+    "id": "prego-8f2c2846",
+    "name": "פיצה פרגו תל אביב קרליבך",
+    "type": "fast_food",
+    "cityId": "תל אביב",
+    "address": "קרליבך 12, תל אביב",
+    "location": {
+      "latitude": 32.0789,
+      "longitude": 34.7843
+    },
+    "openingHours": "א'-ה' 11:00-00:00 | ו' 11:00-15:00 | ש' מוצ\"ש עד 00:00",
+    "category": "dairy",
+    "kosherType": "rabanut",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "03-7444101",
+    "website": "https://www.prego.co.il",
+    "sourceUrl": "https://www.prego.co.il/branch/"
+  },
+  {
+    "id": "prego-29af08e3",
+    "name": "פיצה פרגו תל אביב שיכון דן",
+    "type": "fast_food",
+    "cityId": "תל אביב",
+    "address": "פנחס רוזן 72, מרכז טופ-דן, תל אביב",
+    "location": {
+      "latitude": 32.1078,
+      "longitude": 34.8018
+    },
+    "openingHours": "א'-ה' 11:00-00:30 | ו' עד חצי שעה לפני שבת | ש' מוצ\"ש",
+    "category": "dairy",
+    "kosherType": "badatz_beit_yosef",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "03-9509506",
+    "website": "https://www.prego.co.il",
+    "sourceUrl": "https://www.prego.co.il/branch/"
+  },
+  {
+    "id": "prego-cc7712be",
+    "name": "פיצה פרגו ראשון לציון לישנסקי",
+    "type": "fast_food",
+    "cityId": "ראשון לציון",
+    "address": "יוסף לישנסקי 27, ראשון לציון",
+    "location": {
+      "latitude": 31.9762,
+      "longitude": 34.8122
+    },
+    "openingHours": "א'-ה' 10:30-00:00 | ו' 10:30-17:00 | ש' 20:00-00:00",
+    "category": "dairy",
+    "kosherType": "badatz_beit_yosef",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "03-9410808",
+    "website": "https://www.prego.co.il",
+    "sourceUrl": "https://www.prego.co.il/branch/"
+  },
+  {
+    "id": "prego-364e82c4",
+    "name": "פיצה פרגו גבעתיים",
+    "type": "fast_food",
+    "cityId": "גבעתיים",
+    "address": "כצנלסון 28, גבעתיים",
+    "location": {
+      "latitude": 32.0708,
+      "longitude": 34.8107
+    },
+    "openingHours": "א'-ה' 09:30-23:45 | ו' עד כניסת שבת | ש' מוצ\"ש עד 02:00",
+    "category": "dairy",
+    "kosherType": "badatz_beit_yosef",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "03-5731111",
+    "website": "https://www.prego.co.il",
+    "sourceUrl": "https://www.prego.co.il/branch/"
+  },
+  {
+    "id": "prego-ca477b03",
+    "name": "פיצה פרגו יהוד",
+    "type": "fast_food",
+    "cityId": "יהוד",
+    "address": "דרך משה דיין 3, יהוד",
+    "location": {
+      "latitude": 32.0344,
+      "longitude": 34.8886
+    },
+    "openingHours": "א'-ה' 09:00-23:00 | ו' עד כניסת שבת | ש' מוצ\"ש עד 23:00",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "03-9212122",
+    "website": "https://www.prego.co.il",
+    "sourceUrl": "https://www.prego.co.il/branch/"
+  },
+  {
+    "id": "prego-a1f8fcc0",
+    "name": "פיצה פרגו ראשון לציון הרצל",
+    "type": "fast_food",
+    "cityId": "ראשון לציון",
+    "address": "הרצל 18, ראשון לציון",
+    "location": {
+      "latitude": 31.9713,
+      "longitude": 34.8027
+    },
+    "openingHours": "א'-ה' 11:00-23:00 | ו' עד כניסת שבת | ש' מוצ\"ש עד 00:00",
+    "category": "dairy",
+    "kosherType": "badatz_beit_yosef",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "03-9566662",
+    "website": "https://www.prego.co.il",
+    "sourceUrl": "https://www.prego.co.il/branch/"
+  },
+  {
+    "id": "prego-525e8d40",
+    "name": "פיצה פרגו ראשון לציון אשלים",
+    "type": "fast_food",
+    "cityId": "ראשון לציון",
+    "address": "התזמורת 29, נאות אשלים, ראשון לציון",
+    "location": {
+      "latitude": 31.9885,
+      "longitude": 34.8177
+    },
+    "openingHours": "א'-ה' 11:00-23:00 | ו' 11:30 עד כניסת שבת | ש' מוצ\"ש עד 00:30",
+    "category": "dairy",
+    "kosherType": "rabanut",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "03-9566662",
+    "website": "https://www.prego.co.il",
+    "sourceUrl": "https://www.prego.co.il/branch/"
+  },
+  {
+    "id": "prego-36a56f9d",
+    "name": "פיצה פרגו נס ציונה",
+    "type": "fast_food",
+    "cityId": "נס ציונה",
+    "address": "הבנים 87, נס ציונה",
+    "location": {
+      "latitude": 31.9334,
+      "longitude": 34.7938
+    },
+    "openingHours": "א'-ה' 11:00-23:00 | ו' עד כניסת שבת | ש' מוצ\"ש עד 23:00",
+    "category": "dairy",
+    "kosherType": "badatz_beit_yosef",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "08-9401292",
+    "website": "https://www.prego.co.il",
+    "sourceUrl": "https://www.prego.co.il/branch/"
+  },
+  {
+    "id": "prego-071fd1f0",
+    "name": "פיצה פרגו באר יעקב",
+    "type": "fast_food",
+    "cityId": "באר יעקב",
+    "address": "יצחק שמיר 16, באר יעקב",
+    "location": {
+      "latitude": 31.9443,
+      "longitude": 34.8392
+    },
+    "openingHours": "א'-ה' 11:00-23:00 | ו' עד כניסת שבת | ש' מוצ\"ש",
+    "category": "dairy",
+    "kosherType": "badatz_beit_yosef",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "website": "https://www.prego.co.il",
+    "sourceUrl": "https://www.prego.co.il/branch/"
+  },
+  {
+    "id": "prego-87b176dd",
+    "name": "פיצה פרגו רחובות",
+    "type": "fast_food",
+    "cityId": "רחובות",
+    "address": "הר הצופים 74, רחובות",
+    "location": {
+      "latitude": 31.8978,
+      "longitude": 34.8178
+    },
+    "openingHours": "א'-ה' 11:00-23:00 | ו' עד כניסת שבת | ש' מוצ\"ש עד 23:00",
+    "category": "dairy",
+    "kosherType": "badatz_beit_yosef",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "08-9464464",
+    "website": "https://www.prego.co.il",
+    "sourceUrl": "https://www.prego.co.il/branch/"
+  },
+  {
+    "id": "prego-242a502e",
+    "name": "פיצה פרגו מודיעין",
+    "type": "fast_food",
+    "cityId": "מודיעין",
+    "address": "לאה אמנו 1, מודיעין",
+    "location": {
+      "latitude": 31.8944,
+      "longitude": 35.0056
+    },
+    "openingHours": "א'-ה' 11:00-23:00 | ו' 10:30-14:30 | ש' 18:00-23:00",
+    "category": "dairy",
+    "kosherType": "badatz_beit_yosef",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "08-6485051",
+    "website": "https://www.prego.co.il",
+    "sourceUrl": "https://www.prego.co.il/branch/"
+  },
+  {
+    "id": "prego-5c46f417",
+    "name": "פיצה פרגו מבשרת ציון",
+    "type": "fast_food",
+    "cityId": "מבשרת ציון",
+    "address": "הראל 100, מבשרת ציון",
+    "location": {
+      "latitude": 31.8009,
+      "longitude": 35.1457
+    },
+    "openingHours": "א'-ה' 11:00-23:00 | ו' 11:00-16:00 | ש' מוצ\"ש עד 00:00",
+    "category": "dairy",
+    "kosherType": "rabanut",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "02-6333990",
+    "website": "https://www.prego.co.il",
+    "sourceUrl": "https://www.prego.co.il/branch/"
+  },
+  {
+    "id": "prego-0e2c148c",
+    "name": "פיצה פרגו גדרה",
+    "type": "fast_food",
+    "cityId": "גדרה",
+    "address": "מנחם בגין 48, גדרה",
+    "location": {
+      "latitude": 31.8071,
+      "longitude": 34.7813
+    },
+    "openingHours": "א'-ה' 11:00-23:00 | ו' עד כניסת שבת | ש' מוצ\"ש עד 23:00",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "08-6656685",
+    "website": "https://www.prego.co.il",
+    "sourceUrl": "https://www.prego.co.il/branch/"
+  },
+  {
+    "id": "prego-4aa534d0",
+    "name": "פיצה פרגו אשדוד",
+    "type": "fast_food",
+    "cityId": "אשדוד",
+    "address": "הגדוד העברי 1, אשדוד",
+    "location": {
+      "latitude": 31.7963,
+      "longitude": 34.657
+    },
+    "openingHours": "א'-ה' 10:30-00:30 | ו' עד שעה לפני שבת | ש' מוצ\"ש עד 00:30",
+    "category": "dairy",
+    "kosherType": "badatz_beit_yosef",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "08-8667000",
+    "website": "https://www.prego.co.il",
+    "sourceUrl": "https://www.prego.co.il/branch/"
+  },
+  {
+    "id": "prego-72460470",
+    "name": "פיצה פרגו אריאל",
+    "type": "fast_food",
+    "cityId": "אריאל",
+    "address": "הבנאי 6, אריאל",
+    "location": {
+      "latitude": 32.1063,
+      "longitude": 35.1724
+    },
+    "openingHours": "א'-ה' 11:00-23:00 | ו' עד כניסת שבת | ש' מוצ\"ש",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "03-6885155",
+    "website": "https://www.prego.co.il",
+    "sourceUrl": "https://www.prego.co.il/branch/"
+  },
+  {
+    "id": "prego-a5f51fce",
+    "name": "פיצה פרגו אור עקיבא",
+    "type": "fast_food",
+    "cityId": "אור עקיבא",
+    "address": "שדרות הנשיא ויצמן 4, אור עקיבא",
+    "location": {
+      "latitude": 32.5019,
+      "longitude": 34.9376
+    },
+    "openingHours": "א'-ה' 11:00-23:00 | ו' 10:00-14:00 | ש' מוצ\"ש עד 00:00",
+    "category": "dairy",
+    "kosherType": "badatz_beit_yosef",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "04-6224242",
+    "website": "https://www.prego.co.il",
+    "sourceUrl": "https://www.prego.co.il/branch/"
+  },
+  {
+    "id": "prego-6804a6b8",
+    "name": "פיצה פרגו חדרה",
+    "type": "fast_food",
+    "cityId": "חדרה",
+    "address": "גמלא 3, חדרה",
+    "location": {
+      "latitude": 32.4384,
+      "longitude": 34.9214
+    },
+    "openingHours": "א'-ה' 11:00-23:15 | ו' עד כניסת שבת | ש' מוצ\"ש",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "04-6668833",
+    "website": "https://www.prego.co.il",
+    "sourceUrl": "https://www.prego.co.il/branch/"
+  },
+  {
+    "id": "prego-e8631f72",
+    "name": "פיצה פרגו אילת",
+    "type": "fast_food",
+    "cityId": "אילת",
+    "address": "מרכז מור 1, אילת",
+    "location": {
+      "latitude": 29.5581,
+      "longitude": 34.9509
+    },
+    "openingHours": "א'-ה' 11:00-00:00 | ו' עד כניסת שבת | ש' מוצ\"ש עד 00:00",
+    "category": "dairy",
+    "kosherType": "mehadrin",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "08-8530044",
+    "website": "https://www.prego.co.il",
+    "sourceUrl": "https://www.prego.co.il/branch/"
+  },
+  {
+    "id": "papa-johns-ee346dc0",
+    "name": "פאפא ג'ונס ירושלים קרן היסוד",
+    "type": "fast_food",
+    "cityId": "ירושלים",
+    "address": "קרן היסוד 38, ירושלים",
+    "location": {
+      "latitude": 31.7722,
+      "longitude": 35.2155
+    },
+    "openingHours": "א'-ה' 12:00-00:00 | ו' 12:00 עד כניסת שבת | ש' סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin_jerusalem",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "079-736-7051",
+    "website": "https://www.papajohns.co.il",
+    "sourceUrl": "https://www.papajohns.co.il/branch/"
+  },
+  {
+    "id": "papa-johns-d45e6b6a",
+    "name": "פאפא ג'ונס ירושלים גבעת רם",
+    "type": "fast_food",
+    "cityId": "ירושלים",
+    "address": "ישעיהו ליבוביץ 28, גבעת רם, ירושלים",
+    "location": {
+      "latitude": 31.7768,
+      "longitude": 35.1974
+    },
+    "openingHours": "א'-ה' 12:00-00:00 | ו' עד כניסת שבת | ש' מוצ\"ש",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin_jerusalem",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "website": "https://www.papajohns.co.il",
+    "sourceUrl": "https://www.papajohns.co.il/branch/"
+  },
+  {
+    "id": "papa-johns-65801623",
+    "name": "פאפא ג'ונס פתח תקווה",
+    "type": "fast_food",
+    "cityId": "פתח תקווה",
+    "address": "תוצרת הארץ 3, פתח תקווה",
+    "location": {
+      "latitude": 32.0917,
+      "longitude": 34.8723
+    },
+    "openingHours": "א'-ה' 12:00-00:00 | ו' 12:00 עד שעה לפני שבת | ש' מוצ\"ש עד 00:00",
+    "category": "dairy",
+    "kosherType": "rabanut",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "03-3029755",
+    "website": "https://www.papajohns.co.il",
+    "sourceUrl": "https://www.papajohns.co.il/branch/"
+  },
+  {
+    "id": "papa-johns-afee7616",
+    "name": "פאפא ג'ונס רמת אפעל",
+    "type": "fast_food",
+    "cityId": "רמת גן",
+    "address": "דרך שיבא 10, רמת אפעל",
+    "location": {
+      "latitude": 32.0545,
+      "longitude": 34.8603
+    },
+    "openingHours": "א'-ה' 12:00-00:00 | ו' עד כניסת שבת | ש' מוצ\"ש",
+    "category": "dairy",
+    "kosherType": "mehadrin",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "website": "https://www.papajohns.co.il",
+    "sourceUrl": "https://www.papajohns.co.il/branch/"
+  },
+  {
+    "id": "papa-johns-6c047ef5",
+    "name": "פאפא ג'ונס יהוד",
+    "type": "fast_food",
+    "cityId": "יהוד",
+    "address": "אורי מקלב 8, יהוד",
+    "location": {
+      "latitude": 32.033,
+      "longitude": 34.8889
+    },
+    "openingHours": "א'-ה' 12:00-00:00 | ו' עד כניסת שבת | ש' מוצ\"ש",
+    "category": "dairy",
+    "kosherType": "mehadrin",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "03-5176999",
+    "website": "https://www.papajohns.co.il",
+    "sourceUrl": "https://www.papajohns.co.il/branch/"
+  },
+  {
+    "id": "papa-johns-68531b51",
+    "name": "פאפא ג'ונס מודיעין",
+    "type": "fast_food",
+    "cityId": "מודיעין",
+    "address": "דם המכבים 32, מודיעין",
+    "location": {
+      "latitude": 31.8932,
+      "longitude": 35.0091
+    },
+    "openingHours": "א'-ה' 12:00-00:00 | ו' עד כניסת שבת | ש' מוצ\"ש עד 00:00",
+    "category": "dairy",
+    "kosherType": "mehadrin",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "*6699",
+    "website": "https://www.papajohns.co.il",
+    "sourceUrl": "https://www.papajohns.co.il/branch/"
+  },
+  {
+    "id": "papa-johns-a4fecf80",
+    "name": "פאפא ג'ונס גדרה",
+    "type": "fast_food",
+    "cityId": "גדרה",
+    "address": "שדרות בן גוריון 105, גדרה",
+    "location": {
+      "latitude": 31.8071,
+      "longitude": 34.7818
+    },
+    "openingHours": "א'-ה' 12:00-00:00 | ו' 12:00 עד שעה לפני שבת | ש' מוצ\"ש עד 00:00",
+    "category": "dairy",
+    "kosherType": "rabanut",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "website": "https://www.papajohns.co.il",
+    "sourceUrl": "https://www.papajohns.co.il/branch/"
+  },
+  {
+    "id": "papa-johns-fbe54e43",
+    "name": "פאפא ג'ונס קריית אתא",
+    "type": "fast_food",
+    "cityId": "קריית אתא",
+    "address": "שדרות ההסתדרות 271, קריית אתא",
+    "location": {
+      "latitude": 32.8043,
+      "longitude": 35.1038
+    },
+    "openingHours": "א'-ה' 12:00-00:00 | ו' עד כניסת שבת | ש' מוצ\"ש",
+    "category": "dairy",
+    "kosherType": "mehadrin",
+    "tags": [
+      "pizza"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "phone": "053-6560106",
+    "website": "https://www.papajohns.co.il",
+    "sourceUrl": "https://www.papajohns.co.il/branch/"
+  },
+  {
+    "id": "manual-maafe-neeman-airport-city",
+    "name": "מאפה נאמן איירפורט סיטי",
+    "type": "bakery",
+    "cityId": "איירפורט סיטי",
+    "address": "השרון 6, איירפורט סיטי, לוד",
+    "location": {
+      "latitude": 32.0083,
+      "longitude": 34.8895
+    },
+    "locationPrecision": "city",
+    "phone": "03-9793937",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 06:30-19:00 | ו 07:30-15:00 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "certifiedBy": "רבנות מקומית חבל מודיעין מהדרין",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-bnei-brak-baser",
+    "name": "מאפה נאמן בני ברק מגדלי בסר",
+    "type": "bakery",
+    "cityId": "בני ברק",
+    "address": "כינרת 2, בני ברק",
+    "location": {
+      "latitude": 32.08618,
+      "longitude": 34.83144
+    },
+    "locationPrecision": "city",
+    "phone": "050-6529996",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 06:30-21:00 | ו 06:30-15:00 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "mehadrin",
+    "certifiedBy": "בד\"ץ אגודת ישראל והרבנות המקומית",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-pt-sotin",
+    "name": "מאפה נאמן פתח תקווה סוטין",
+    "type": "bakery",
+    "cityId": "פתח תקווה",
+    "address": "חיים סוטין 4, פתח תקווה",
+    "location": {
+      "latitude": 32.08289,
+      "longitude": 34.89045
+    },
+    "locationPrecision": "city",
+    "phone": "03-9301118",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 06:00-21:00 | ו 06:30-14:00 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "certifiedBy": "רבנות מהדרין פתח תקווה",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-modiin-azrieli",
+    "name": "מאפה נאמן מודיעין עזריאלי",
+    "type": "bakery",
+    "cityId": "מודיעין",
+    "address": "לב העיר 2, קניון עזריאלי, מודיעין",
+    "location": {
+      "latitude": 31.89768,
+      "longitude": 35.00906
+    },
+    "locationPrecision": "city",
+    "phone": "08-9712888",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה פתוח 24 שעות | ו עד 15:00 | מוצ\"ש שעה לאחר צאת השבת",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "certifiedBy": "רבנות מהדרין מודיעין",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-jlm-center",
+    "name": "מאפה נאמן ירושלים מרכז העיר",
+    "type": "bakery",
+    "cityId": "ירושלים",
+    "address": "המלך ג'ורג' 1, ירושלים",
+    "location": {
+      "latitude": 31.78132,
+      "longitude": 35.2151
+    },
+    "locationPrecision": "city",
+    "phone": "02-6242333",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 06:00-00:00 | ו 06:00-15:30 | מוצ\"ש 18:00-01:00",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin_jerusalem",
+    "certifiedBy": "בד\"ץ מהדרין ירושלים",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-jlm-ramot",
+    "name": "מאפה נאמן ירושלים קניון רמות",
+    "type": "bakery",
+    "cityId": "ירושלים",
+    "address": "שדרות גולדה מאיר 255, ירושלים",
+    "location": {
+      "latitude": 31.78132,
+      "longitude": 35.2151
+    },
+    "locationPrecision": "city",
+    "phone": "02-5712224",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 07:00-22:00 | ו 07:00-14:30 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin_jerusalem",
+    "certifiedBy": "בד\"ץ מהדרין ירושלים",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-jlm-givat-shaul",
+    "name": "מאפה נאמן ירושלים גבעת שאול",
+    "type": "bakery",
+    "cityId": "ירושלים",
+    "address": "כנפי נשרים 24, ירושלים",
+    "location": {
+      "latitude": 31.78132,
+      "longitude": 35.2151
+    },
+    "locationPrecision": "city",
+    "phone": "02-6511176",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 06:30-21:00 | ו 06:30-14:30 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin_jerusalem",
+    "certifiedBy": "בד\"ץ מהדרין ירושלים",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-jlm-malcha",
+    "name": "מאפה נאמן ירושלים קניון מלחה",
+    "type": "bakery",
+    "cityId": "ירושלים",
+    "address": "דרך אגודת ספורט בית\"ר 1, ירושלים",
+    "location": {
+      "latitude": 31.78132,
+      "longitude": 35.2151
+    },
+    "locationPrecision": "city",
+    "phone": "02-6799981",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 07:00-22:00 | ו 07:00-15:00 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin_jerusalem",
+    "certifiedBy": "רבנות מהדרין ירושלים",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-r1-zahav",
+    "name": "מאפה נאמן ראשון לציון קניון הזהב",
+    "type": "bakery",
+    "cityId": "ראשון לציון",
+    "address": "דוד סחרוב 21, ראשון לציון",
+    "location": {
+      "latitude": 31.96831,
+      "longitude": 34.79981
+    },
+    "locationPrecision": "city",
+    "phone": "03-9518882",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 08:00-22:00 | ו 08:00-15:00 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "certifiedBy": "רבנות מהדרין ראשון לציון",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-r1-center",
+    "name": "מאפה נאמן ראשון לציון מרכז",
+    "type": "bakery",
+    "cityId": "ראשון לציון",
+    "address": "רוטשילד 60, ראשון לציון",
+    "location": {
+      "latitude": 31.96831,
+      "longitude": 34.79981
+    },
+    "locationPrecision": "city",
+    "phone": "03-9642221",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 06:30-21:00 | ו 06:30-14:30 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "certifiedBy": "רבנות מהדרין ראשון לציון",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-tlv-azrieli",
+    "name": "מאפה נאמן תל אביב עזריאלי",
+    "type": "bakery",
+    "cityId": "תל אביב–יפו",
+    "address": "דרך מנחם בגין 132, קניון עזריאלי, תל אביב",
+    "location": {
+      "latitude": 32.06744,
+      "longitude": 34.78695
+    },
+    "locationPrecision": "city",
+    "phone": "03-6095556",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 07:00-22:00 | ו 07:00-15:00 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "certifiedBy": "רבנות מהדרין תל אביב",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-tlv-allenby",
+    "name": "מאפה נאמן תל אביב אלנבי",
+    "type": "bakery",
+    "cityId": "תל אביב–יפו",
+    "address": "אלנבי 94, תל אביב",
+    "location": {
+      "latitude": 32.06744,
+      "longitude": 34.78695
+    },
+    "locationPrecision": "city",
+    "phone": "03-5601112",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 06:30-20:00 | ו 06:30-14:30 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "certifiedBy": "רבנות מהדרין תל אביב",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-ashdod-seamall",
+    "name": "מאפה נאמן אשדוד סי מול",
+    "type": "bakery",
+    "cityId": "אשדוד",
+    "address": "הגדוד העברי 6, קניון סי מול, אשדוד",
+    "location": {
+      "latitude": 31.79387,
+      "longitude": 34.65243
+    },
+    "locationPrecision": "city",
+    "phone": "08-8664441",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 07:30-21:30 | ו 07:30-14:30 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "certifiedBy": "רבנות מהדרין אשדוד",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-ashdod-star",
+    "name": "מאפה נאמן אשדוד סטאר סנטר",
+    "type": "bakery",
+    "cityId": "אשדוד",
+    "address": "ז'בוטינסקי 45, אשדוד",
+    "location": {
+      "latitude": 31.79387,
+      "longitude": 34.65243
+    },
+    "locationPrecision": "city",
+    "phone": "08-8521113",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 07:00-22:00 | ו 07:00-15:00 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "badatz_beit_yosef",
+    "certifiedBy": "בד\"ץ בית יוסף / רבנות מהדרין",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-rehovot",
+    "name": "מאפה נאמן רחובות קניון",
+    "type": "bakery",
+    "cityId": "רחובות",
+    "address": "ביל\"ו 2, רחובות",
+    "location": {
+      "latitude": 31.89593,
+      "longitude": 34.81387
+    },
+    "locationPrecision": "city",
+    "phone": "08-9471113",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 07:00-22:00 | ו 07:00-15:00 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "certifiedBy": "רבנות מהדרין רחובות",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-netanya",
+    "name": "מאפה נאמן נתניה קניון השרון",
+    "type": "bakery",
+    "cityId": "נתניה",
+    "address": "הרצל 60, נתניה",
+    "location": {
+      "latitude": 32.31787,
+      "longitude": 34.85909
+    },
+    "locationPrecision": "city",
+    "phone": "09-8843331",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 07:00-21:00 | ו 07:00-14:30 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "certifiedBy": "רבנות מהדרין נתניה",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-haifa",
+    "name": "מאפה נאמן חיפה גרנד קניון",
+    "type": "bakery",
+    "cityId": "חיפה",
+    "address": "דרך שמחה גולן 54, חיפה",
+    "location": {
+      "latitude": 32.80697,
+      "longitude": 35.00522
+    },
+    "locationPrecision": "city",
+    "phone": "04-8120004",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 07:30-22:00 | ו 07:30-15:00 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "certifiedBy": "רבנות מהדרין חיפה",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-beersheva",
+    "name": "מאפה נאמן באר שבע קניון הנגב",
+    "type": "bakery",
+    "cityId": "באר שבע",
+    "address": "נשיאי ישראל 4, באר שבע",
+    "location": {
+      "latitude": 31.25358,
+      "longitude": 34.7894
+    },
+    "locationPrecision": "city",
+    "phone": "08-6281115",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 07:00-22:00 | ו 07:00-15:00 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "certifiedBy": "רבנות מהדרין באר שבע",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-holon",
+    "name": "מאפה נאמן חולון קניון",
+    "type": "bakery",
+    "cityId": "חולון",
+    "address": "חנקין 109, חולון",
+    "location": {
+      "latitude": 32.0164,
+      "longitude": 34.77595
+    },
+    "locationPrecision": "city",
+    "phone": "03-5042226",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 07:00-22:00 | ו 07:00-15:00 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "certifiedBy": "רבנות מהדרין חולון",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-raanana",
+    "name": "מאפה נאמן רעננה קניון רננים",
+    "type": "bakery",
+    "cityId": "רעננה",
+    "address": "המלאכה 2, רעננה",
+    "location": {
+      "latitude": 32.18628,
+      "longitude": 34.87126
+    },
+    "locationPrecision": "city",
+    "phone": "09-7461114",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 07:30-22:00 | ו 07:30-15:00 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "certifiedBy": "רבנות מהדרין רעננה",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-kfarsaba",
+    "name": "מאפה נאמן כפר סבא קניון ערים",
+    "type": "bakery",
+    "cityId": "כפר סבא",
+    "address": "כצנלסון 14, כפר סבא",
+    "location": {
+      "latitude": 32.17753,
+      "longitude": 34.908
+    },
+    "locationPrecision": "city",
+    "phone": "09-7663335",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 07:00-21:00 | ו 07:00-14:30 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "certifiedBy": "רבנות מהדרין כפר סבא",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-ashkelon",
+    "name": "מאפה נאמן אשקלון קניון גירון",
+    "type": "bakery",
+    "cityId": "אשקלון",
+    "address": "הנשיא 8, אשקלון",
+    "location": {
+      "latitude": 31.66467,
+      "longitude": 34.57157
+    },
+    "locationPrecision": "city",
+    "phone": "08-6754441",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 07:00-21:30 | ו 07:00-14:30 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "certifiedBy": "רבנות מהדרין אשקלון",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-beit-shemesh",
+    "name": "מאפה נאמן בית שמש קניון נעימי",
+    "type": "bakery",
+    "cityId": "בית שמש",
+    "address": "דרך יצחק רבין 2, בית שמש",
+    "location": {
+      "latitude": 31.73468,
+      "longitude": 34.99008
+    },
+    "locationPrecision": "city",
+    "phone": "02-9995551",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 06:30-22:00 | ו 06:30-14:00 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "badatz_edah",
+    "certifiedBy": "בד\"ץ העדה החרדית / מהדרין",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-hadera",
+    "name": "מאפה נאמן חדרה קניון לב חדרה",
+    "type": "bakery",
+    "cityId": "חדרה",
+    "address": "רוטשילד 40, חדרה",
+    "location": {
+      "latitude": 32.4369,
+      "longitude": 34.9132
+    },
+    "locationPrecision": "city",
+    "phone": "04-6223331",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 07:00-21:00 | ו 07:00-14:30 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "certifiedBy": "רבנות מהדרין חדרה",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-herzliya",
+    "name": "מאפה נאמן הרצליה שבעת הכוכבים",
+    "type": "bakery",
+    "cityId": "הרצליה",
+    "address": "שדרות שבעת הכוכבים 8, הרצליה",
+    "location": {
+      "latitude": 32.16704,
+      "longitude": 34.8418
+    },
+    "locationPrecision": "city",
+    "phone": "09-9562223",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 07:30-22:00 | ו 07:30-15:00 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "certifiedBy": "רבנות מהדרין הרצליה",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-kiryat-gat",
+    "name": "מאפה נאמן קרית גת קניון לב העיר",
+    "type": "bakery",
+    "cityId": "קרית גת",
+    "address": "העצמאות 40, קרית גת",
+    "location": {
+      "latitude": 31.61503,
+      "longitude": 34.77096
+    },
+    "locationPrecision": "city",
+    "phone": "08-6812223",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 06:30-21:00 | ו 06:30-14:30 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "certifiedBy": "רבנות מהדרין קרית גת",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-kiryat-malachi",
+    "name": "מאפה נאמן קרית מלאכי מרכז",
+    "type": "bakery",
+    "cityId": "קרית מלאכי",
+    "address": "בן גוריון 12, קרית מלאכי",
+    "location": {
+      "latitude": 31.72984,
+      "longitude": 34.74346
+    },
+    "locationPrecision": "city",
+    "phone": "08-8581112",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 06:00-21:00 | ו 06:00-14:00 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "certifiedBy": "רבנות מהדרין קרית מלאכי",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-nes-ziona",
+    "name": "מאפה נאמן נס ציונה קניותר",
+    "type": "bakery",
+    "cityId": "נס ציונה",
+    "address": "האירוסים 53, נס ציונה",
+    "location": {
+      "latitude": 31.92843,
+      "longitude": 34.7985
+    },
+    "locationPrecision": "city",
+    "phone": "08-9384442",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 07:00-21:00 | ו 07:00-14:30 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "certifiedBy": "רבנות מהדרין נס ציונה",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-yavne",
+    "name": "מאפה נאמן יבנה קניון G",
+    "type": "bakery",
+    "cityId": "יבנה",
+    "address": "הקישון 1, יבנה",
+    "location": {
+      "latitude": 31.87322,
+      "longitude": 34.74049
+    },
+    "locationPrecision": "city",
+    "phone": "08-9321114",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 07:00-21:30 | ו 07:00-14:30 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "certifiedBy": "רבנות מהדרין יבנה",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-afula",
+    "name": "מאפה נאמן עפולה קניון העמקים",
+    "type": "bakery",
+    "cityId": "עפולה",
+    "address": "יהושע חנקין 14, עפולה",
+    "location": {
+      "latitude": 32.61193,
+      "longitude": 35.29879
+    },
+    "locationPrecision": "city",
+    "phone": "04-6593332",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 06:30-21:00 | ו 06:30-14:30 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "certifiedBy": "רבנות מהדרין עפולה",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-givat-shmuel",
+    "name": "מאפה נאמן גבעת שמואל",
+    "type": "bakery",
+    "cityId": "גבעת שמואל",
+    "address": "בן גוריון 24, גבעת שמואל",
+    "location": {
+      "latitude": 32.07692,
+      "longitude": 34.85035
+    },
+    "locationPrecision": "city",
+    "phone": "03-5321119",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 06:30-21:00 | ו 06:30-14:30 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "certifiedBy": "רבנות מהדרין גבעת שמואל",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-hod-hasharon",
+    "name": "מאפה נאמן הוד השרון קניון מרגלית",
+    "type": "bakery",
+    "cityId": "הוד השרון",
+    "address": "ז'בוטינסקי 3, הוד השרון",
+    "location": {
+      "latitude": 32.1506,
+      "longitude": 34.89571
+    },
+    "locationPrecision": "city",
+    "phone": "09-7402221",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 07:00-21:00 | ו 07:00-14:30 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "certifiedBy": "רבנות מהדרין הוד השרון",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-ramle",
+    "name": "מאפה נאמן רמלה קניון עזריאלי",
+    "type": "bakery",
+    "cityId": "רמלה",
+    "address": "ביל\"ו 2, רמלה",
+    "location": {
+      "latitude": 31.92909,
+      "longitude": 34.8665
+    },
+    "locationPrecision": "city",
+    "phone": "08-9243335",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 07:00-21:00 | ו 07:00-14:30 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "certifiedBy": "רבנות מהדרין רמלה",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-lod",
+    "name": "מאפה נאמן לוד מרכז העיר",
+    "type": "bakery",
+    "cityId": "לוד",
+    "address": "הרצל 40, לוד",
+    "location": {
+      "latitude": 31.949,
+      "longitude": 34.88849
+    },
+    "locationPrecision": "city",
+    "phone": "08-9221114",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 06:00-20:00 | ו 06:00-14:00 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "certifiedBy": "רבנות מהדרין לוד",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-eilat",
+    "name": "מאפה נאמן אילת מול הים",
+    "type": "bakery",
+    "cityId": "אילת",
+    "address": "הפלמ\"ח 1, קניון מול הים, אילת",
+    "location": {
+      "latitude": 29.55896,
+      "longitude": 34.95343
+    },
+    "locationPrecision": "city",
+    "phone": "08-6372221",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 08:00-23:00 | ו 08:00-15:00 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "certifiedBy": "רבנות מהדרין אילת",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-maale-adumim",
+    "name": "מאפה נאמן מעלה אדומים",
+    "type": "bakery",
+    "cityId": "מעלה אדומים",
+    "address": "דרך קדם 5, קניון מעלה אדומים",
+    "location": {
+      "latitude": 31.77827,
+      "longitude": 35.29238
+    },
+    "locationPrecision": "city",
+    "phone": "02-5354442",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 07:00-21:00 | ו 07:00-14:30 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "certifiedBy": "רבנות מהדרין מעלה אדומים",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-modiin-ilit",
+    "name": "מאפה נאמן מודיעין עילית",
+    "type": "bakery",
+    "cityId": "מודיעין עילית",
+    "address": "אבני נזר 18, מודיעין עילית",
+    "location": {
+      "latitude": 31.93718,
+      "longitude": 35.04726
+    },
+    "locationPrecision": "city",
+    "phone": "08-9741113",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 06:00-22:00 | ו 06:00-13:30 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "mehadrin",
+    "certifiedBy": "בד\"ץ קרית ספר / מהדרין",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-beitar-ilit",
+    "name": "מאפה נאמן ביתר עילית",
+    "type": "bakery",
+    "cityId": "ביתר עילית",
+    "address": "רחוב המגיד ממעזריטש 30, ביתר עילית",
+    "location": {
+      "latitude": 31.69665,
+      "longitude": 35.11593
+    },
+    "locationPrecision": "city",
+    "phone": "02-5801115",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 06:00-22:00 | ו 06:00-13:30 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "mehadrin",
+    "certifiedBy": "בד\"ץ ביתר / מהדרין",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-tiberias",
+    "name": "מאפה נאמן טבריה קניון מול כנרת",
+    "type": "bakery",
+    "cityId": "טבריה",
+    "address": "הבנים 1, טבריה",
+    "location": {
+      "latitude": 32.78904,
+      "longitude": 35.53084
+    },
+    "locationPrecision": "city",
+    "phone": "04-6721114",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 07:00-21:00 | ו 07:00-14:30 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "certifiedBy": "רבנות מהדרין טבריה",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-maafe-neeman-akko",
+    "name": "מאפה נאמן עכו קניון עזריאלי",
+    "type": "bakery",
+    "cityId": "עכו",
+    "address": "דרך המלאכה 2, עכו",
+    "location": {
+      "latitude": 32.92758,
+      "longitude": 35.07765
+    },
+    "locationPrecision": "city",
+    "phone": "04-9814443",
+    "website": "https://www.maafe.co.il",
+    "openingHours": "א-ה 07:30-21:00 | ו 07:30-14:30 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "certifiedBy": "רבנות מהדרין עכו",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-cafe-nimrod-holon",
+    "name": "קפה נמרוד חולון",
+    "type": "cafe",
+    "cityId": "חולון",
+    "address": "הרוקמים 26, מתחם עזריאלי, חולון",
+    "location": {
+      "latitude": 32.0164,
+      "longitude": 34.77595
+    },
+    "locationPrecision": "city",
+    "phone": "03-9437991",
+    "instagram": "https://www.instagram.com/cafenimrod/",
+    "openingHours": "א-ה 08:00-22:30 | ו 08:00-14:00 | מוצ\"ש שעה לאחר צאת השבת עד 23:00",
+    "category": "dairy",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-arcaffe-krinizy",
+    "name": "ארקפה קריניצי",
+    "type": "cafe",
+    "cityId": "רמת גן",
+    "address": "יוסף ספיר 9, רמת גן",
+    "location": {
+      "latitude": 32.06952,
+      "longitude": 34.82483
+    },
+    "locationPrecision": "city",
+    "phone": "03-6404624",
+    "website": "https://arcaffe.co.il",
+    "openingHours": "א-ה 07:00-21:00 | ו 07:00-לפני כניסת השבת | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-arcaffe-beit-asia",
+    "name": "ארקפה בית אסיה",
+    "type": "cafe",
+    "cityId": "תל אביב–יפו",
+    "address": "וייצמן 4, תל אביב",
+    "location": {
+      "latitude": 32.06744,
+      "longitude": 34.78695
+    },
+    "locationPrecision": "city",
+    "phone": "072-2775528",
+    "website": "https://arcaffe.co.il",
+    "openingHours": "א-ה 06:30-20:00 | ו 06:30-14:00 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-arcaffe-assuta",
+    "name": "ארקפה אסותא",
+    "type": "cafe",
+    "cityId": "תל אביב–יפו",
+    "address": "הברזל 20, תל אביב",
+    "location": {
+      "latitude": 32.115,
+      "longitude": 34.835
+    },
+    "locationPrecision": "city",
+    "phone": "03-9204189",
+    "website": "https://arcaffe.co.il",
+    "openingHours": "א-ה 07:00-22:00 | ו 07:00-14:30 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-arcaffe-rogvin",
+    "name": "ארקפה רוגובין",
+    "type": "cafe",
+    "cityId": "רמת גן",
+    "address": "דרך מנחם בגין 11, מתחם הבורסה, רמת גן",
+    "location": {
+      "latitude": 32.082,
+      "longitude": 34.812
+    },
+    "locationPrecision": "city",
+    "phone": "03-7522667",
+    "website": "https://arcaffe.co.il",
+    "openingHours": "א-ה 07:00-19:30 | ו סגור | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-arcaffe-ramat-aviv-mall",
+    "name": "ארקפה קניון רמת אביב",
+    "type": "cafe",
+    "cityId": "תל אביב–יפו",
+    "address": "איינשטיין 40, תל אביב",
+    "location": {
+      "latitude": 32.115,
+      "longitude": 34.804
+    },
+    "locationPrecision": "city",
+    "phone": "058-6000261",
+    "website": "https://arcaffe.co.il",
+    "openingHours": "א-ה 09:00-21:30 | ו 07:00-16:00 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-arcaffe-zahav-mall",
+    "name": "ארקפה קניון הזהב",
+    "type": "cafe",
+    "cityId": "ראשון לציון",
+    "address": "דוד סחרוב 21, ראשון לציון",
+    "location": {
+      "latitude": 31.96831,
+      "longitude": 34.79981
+    },
+    "locationPrecision": "city",
+    "phone": "052-2200611",
+    "website": "https://arcaffe.co.il",
+    "openingHours": "א-ה 08:00-22:00 | ו 08:00-14:30 | מוצאי שבת עד 23:00",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-arcaffe-beit-harel",
+    "name": "ארקפה בית הראל",
+    "type": "cafe",
+    "cityId": "רמת גן",
+    "address": "דרך אבא הלל 3, מתחם הבורסה, רמת גן",
+    "location": {
+      "latitude": 32.079,
+      "longitude": 34.815
+    },
+    "locationPrecision": "city",
+    "phone": "055-9737868",
+    "website": "https://arcaffe.co.il",
+    "openingHours": "א-ה 07:00-19:00 | ו 07:00-16:00 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-arcaffe-caesarea",
+    "name": "ארקפה קיסריה",
+    "type": "cafe",
+    "cityId": "קיסריה",
+    "address": "רחוב שמש 1, שכונה 13, קיסריה",
+    "location": {
+      "latitude": 32.50198,
+      "longitude": 34.90411
+    },
+    "locationPrecision": "city",
+    "phone": "072-2419303",
+    "website": "https://arcaffe.co.il",
+    "openingHours": "א-ה 07:00-21:00 | ו 07:00-15:00 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-arcaffe-azrieli-tlv",
+    "name": "ארקפה עזריאלי תל אביב",
+    "type": "cafe",
+    "cityId": "תל אביב–יפו",
+    "address": "דרך מנחם בגין 132, תל אביב",
+    "location": {
+      "latitude": 32.071,
+      "longitude": 34.792
+    },
+    "locationPrecision": "city",
+    "phone": "052-3892401",
+    "website": "https://arcaffe.co.il",
+    "openingHours": "א-ה 07:00-21:00 | ו 07:00-שעתיים לפני כניסת השבת | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-arcaffe-or-yehuda",
+    "name": "ארקפה אור יהודה",
+    "type": "cafe",
+    "cityId": "אור יהודה",
+    "address": "שדרות אריאל שרון 3, אור יהודה",
+    "location": {
+      "latitude": 32.03076,
+      "longitude": 34.8628
+    },
+    "locationPrecision": "city",
+    "phone": "03-9011086",
+    "website": "https://arcaffe.co.il",
+    "openingHours": "א-ה 07:00-19:00 | ו 07:00-14:00 | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-arcaffe-baser-bneibrак",
+    "name": "ארקפה בסר בני ברק",
+    "type": "cafe",
+    "cityId": "בני ברק",
+    "address": "כנרת 5, בני ברק",
+    "location": {
+      "latitude": 32.08618,
+      "longitude": 34.83144
+    },
+    "locationPrecision": "city",
+    "phone": "050-6704777",
+    "website": "https://arcaffe.co.il",
+    "openingHours": "א-ה 07:00-19:00 | ו סגור | שבת סגור",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-arcaffe-ashdod",
+    "name": "ארקפה אשדוד",
+    "type": "cafe",
+    "cityId": "אשדוד",
+    "address": "דרך הרכבת 1, אשדוד",
+    "location": {
+      "latitude": 31.79387,
+      "longitude": 34.65243
+    },
+    "locationPrecision": "city",
+    "phone": "050-2109941",
+    "website": "https://arcaffe.co.il",
+    "openingHours": "א-ה 07:00-22:00 | ו 07:00-14:00 | מוצ\"ש 40 דקות לאחר צאת השבת עד 23:00",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "id": "manual-arcaffe-kfarsaba-g",
+    "name": "ארקפה כפר סבא G",
+    "type": "cafe",
+    "cityId": "כפר סבא",
+    "address": "ויצמן 207, כפר סבא",
+    "location": {
+      "latitude": 32.17753,
+      "longitude": 34.908
+    },
+    "locationPrecision": "city",
+    "phone": "09-7734826",
+    "website": "https://arcaffe.co.il",
+    "openingHours": "א-ה 07:30-22:00 | ו 08:00-15:00 | מוצ\"ש עד 23:00",
+    "category": "dairy",
+    "kosherType": "rabanut_mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27"
+  },
+  {
+    "facebook": "https://www.facebook.com/gregcafe/",
+    "id": "greg-77bb14f6",
+    "type": "cafe",
+    "source": "manual",
+    "name": "קפה גרג מגדל העמק",
+    "lastVerifiedAt": "2026-07-27",
+    "website": "https://gregcafe.co.il",
+    "cityId": "מגדל העמק",
+    "address": "ביג מגדל העמק",
+    "instagram": "https://www.instagram.com/greg_cafe/",
+    "category": "dairy",
+    "location": {
+      "latitude": 32.6927233,
+      "longitude": 35.2279386
+    },
+    "kosherType": "mehadrin",
+    "phone": "04-6111554",
+    "openingHours": "א'-ה' 8:30-22:30 | ו' 7:30-13:30 | ש' סגור",
+    "menu": "https://gregcafe.co.il/menus/"
+  },
+  {
+    "facebook": "https://www.facebook.com/gregcafe/",
+    "id": "greg-9ddc70b3",
+    "type": "cafe",
+    "openingHours": "א'-ה' 9:00-22:00 | ו' 8:30-13:30 | ש' סגור",
+    "name": "קפה גרג גן העיר אשדוד",
+    "lastVerifiedAt": "2026-07-27",
+    "website": "https://gregcafe.co.il",
+    "cityId": "אשדוד",
+    "address": "הגדוד העברי, גן העיר, אשדוד",
+    "instagram": "https://www.instagram.com/greg_cafe/",
+    "category": "dairy",
+    "location": {
+      "latitude": 31.7908807,
+      "longitude": 34.6381046
+    },
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "phone": "08-8675002",
+    "menu": "https://gregcafe.co.il/menus/"
+  },
+  {
+    "facebook": "https://www.facebook.com/gregcafe/",
+    "id": "greg-f8d2e80c",
+    "type": "cafe",
+    "source": "manual",
+    "name": "קפה גרג פארק תעשיות אפק",
+    "lastVerifiedAt": "2026-07-24",
+    "website": "https://gregcafe.co.il",
+    "cityId": "ראש העין",
+    "address": "המלאכה, פארק תעשייה אפק, ראש העין",
+    "instagram": "https://www.instagram.com/greg_cafe/",
+    "category": "dairy",
+    "location": {
+      "latitude": 32.1060921,
+      "longitude": 34.9687576
+    },
+    "kosherType": "rabanut",
+    "phone": "03-5566667",
+    "openingHours": "א'-ה' 8:00-22:00 | ו' 8:00-14:00 | ש' סגור",
+    "menu": "https://gregcafe.co.il/menus/"
+  },
+  {
+    "facebook": "https://www.facebook.com/gregcafe/",
+    "id": "greg-0b229b5e",
+    "type": "cafe",
+    "openingHours": "א'-ה' 8:30-22:30 | ו' 8:30-14:00 | מוצ\"ש עד 22:30",
+    "name": "קפה גרג דנילוף טבריה",
+    "lastVerifiedAt": "2026-07-27",
+    "website": "https://gregcafe.co.il",
+    "cityId": "טבריה",
+    "address": "יהודה הלוי 1, טבריה",
+    "instagram": "https://www.instagram.com/greg_cafe/",
+    "category": "dairy",
+    "location": {
+      "latitude": 32.7904643,
+      "longitude": 35.533805
+    },
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "phone": "04-8675566",
+    "menu": "https://gregcafe.co.il/menus/"
+  },
+  {
+    "facebook": "https://www.facebook.com/gregcafe/",
+    "id": "greg-8d3215ae",
+    "type": "cafe",
+    "openingHours": "א'-ה' 9:00-21:00 | ו' 9:00-14:00 | ש' סגור",
+    "name": "קפה גרג חדרה",
+    "lastVerifiedAt": "2026-07-27",
+    "website": "https://gregcafe.co.il",
+    "cityId": "חדרה",
+    "address": "שדרות רוטשילד, עופר לב חדרה",
+    "instagram": "https://www.instagram.com/greg_cafe/",
+    "category": "dairy",
+    "location": {
+      "latitude": 32.4378941,
+      "longitude": 34.9219993
+    },
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "phone": "1700-70-4407",
+    "menu": "https://gregcafe.co.il/menus/"
+  },
+  {
+    "facebook": "https://www.facebook.com/gregcafe/",
+    "id": "greg-62e09734",
+    "type": "cafe",
+    "openingHours": "א'-ה' 9:00-21:15 | ו' 8:00-14:00 | מוצ\"ש עד 22:00",
+    "name": "קפה גרג רננים רעננה",
+    "lastVerifiedAt": "2026-07-27",
+    "website": "https://gregcafe.co.il",
+    "cityId": "רעננה",
+    "address": "המלאכה, קניון רננים, רעננה",
+    "instagram": "https://www.instagram.com/greg_cafe/",
+    "category": "dairy",
+    "location": {
+      "latitude": 32.1974472,
+      "longitude": 34.8780966
+    },
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "phone": "09-8781472",
+    "menu": "https://gregcafe.co.il/menus/"
+  },
+  {
+    "facebook": "https://www.facebook.com/gregcafe/",
+    "id": "greg-5dd9db5e",
+    "type": "cafe",
+    "openingHours": "א'-ה' 9:30-21:45 | ו' 9:00-13:00 | ש' סגור",
+    "name": "קפה גרג גוש עציון",
+    "lastVerifiedAt": "2026-07-27",
+    "website": "https://gregcafe.co.il",
+    "cityId": "גוש עציון",
+    "address": "צומת גוש עציון",
+    "instagram": "https://www.instagram.com/greg_cafe/",
+    "category": "dairy",
+    "location": {
+      "latitude": 31.645207,
+      "longitude": 35.1309302
+    },
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "phone": "055-5573172",
+    "menu": "https://gregcafe.co.il/menus/"
+  },
+  {
+    "facebook": "https://www.facebook.com/gregcafe/",
+    "id": "greg-17c276c8",
+    "type": "cafe",
+    "source": "manual",
+    "name": "קפה גרג קניון הדר ירושלים",
+    "lastVerifiedAt": "2026-07-27",
+    "website": "https://gregcafe.co.il",
+    "cityId": "ירושלים",
+    "address": "פייר קינג 26, ירושלים",
+    "instagram": "https://www.instagram.com/greg_cafe/",
+    "category": "dairy",
+    "location": {
+      "latitude": 31.768319,
+      "longitude": 35.21371
+    },
+    "kosherType": "mehadrin",
+    "phone": "02-5367870",
+    "openingHours": "א'-ה' 9:00-22:00 | ו' 8:00-13:30 | ש' סגור",
+    "menu": "https://gregcafe.co.il/menus/"
+  },
+  {
+    "facebook": "https://www.facebook.com/gregcafe/",
+    "id": "greg-2291d2ec",
+    "type": "cafe",
+    "source": "manual",
+    "name": "קפה גרג ב.ס.ר בני ברק",
+    "lastVerifiedAt": "2026-07-27",
+    "website": "https://gregcafe.co.il",
+    "cityId": "בני ברק",
+    "address": "מצדה 5, בני ברק",
+    "instagram": "https://www.instagram.com/greg_cafe/",
+    "category": "dairy",
+    "location": {
+      "latitude": 32.093639,
+      "longitude": 34.8247297
+    },
+    "kosherType": "mehadrin",
+    "phone": "054-9377766",
+    "openingHours": "א'-ה' 9:00-23:00 | ו' 8:00-13:00 | מוצ\"ש עד 23:00",
+    "menu": "https://gregcafe.co.il/menus/"
+  },
+  {
+    "facebook": "https://www.facebook.com/gregcafe/",
+    "id": "greg-b4288d9c",
+    "type": "cafe",
+    "source": "manual",
+    "name": "קפה גרג פוריה טבריה",
+    "lastVerifiedAt": "2026-07-27",
+    "website": "https://gregcafe.co.il",
+    "cityId": "טבריה",
+    "address": "המברג 1, טבריה",
+    "instagram": "https://www.instagram.com/greg_cafe/",
+    "category": "dairy",
+    "location": {
+      "latitude": 32.7853923,
+      "longitude": 35.4984742
+    },
+    "kosherType": "mehadrin",
+    "phone": "04-6735767",
+    "openingHours": "א'-ה' 8:00-22:00 | ו' 8:00-13:30 | ש' 17:45-23:00",
+    "menu": "https://gregcafe.co.il/menus/"
+  },
+  {
+    "facebook": "https://www.facebook.com/gregcafe/",
+    "id": "greg-26408ffa",
+    "type": "cafe",
+    "source": "manual",
+    "name": "קפה גרג נשר",
+    "lastVerifiedAt": "2026-07-27",
+    "website": "https://gregcafe.co.il",
+    "cityId": "נשר",
+    "address": "דרך בר יהודה 111, נשר",
+    "instagram": "https://www.instagram.com/greg_cafe/",
+    "category": "dairy",
+    "location": {
+      "latitude": 32.771792,
+      "longitude": 35.0468566
+    },
+    "kosherType": "mehadrin",
+    "phone": "04-6221199",
+    "openingHours": "א'-ה' 7:30-22:00 | ו' 7:30-14:00 | ש' סגור",
+    "menu": "https://gregcafe.co.il/menus/"
+  },
+  {
+    "facebook": "https://www.facebook.com/gregcafe/",
+    "id": "greg-ab233b68",
+    "type": "cafe",
+    "openingHours": "א'-ה' 8:00-22:30 | ו' 8:00-13:00 | מוצ\"ש עד 23:00",
+    "name": "קפה גרג בית שאן",
+    "lastVerifiedAt": "2026-07-27",
+    "website": "https://gregcafe.co.il",
+    "cityId": "בית שאן",
+    "address": "שדרות מנחם בגין, בית שאן",
+    "instagram": "https://www.instagram.com/greg_cafe/",
+    "category": "dairy",
+    "location": {
+      "latitude": 32.4991152,
+      "longitude": 35.5046608
+    },
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "phone": "04-6060260",
+    "menu": "https://gregcafe.co.il/menus/"
+  },
+  {
+    "facebook": "https://www.facebook.com/gregcafe/",
+    "id": "greg-884d247c",
+    "type": "cafe",
+    "source": "manual",
+    "name": "קפה גרג בית שמש",
+    "lastVerifiedAt": "2026-07-27",
+    "website": "https://gregcafe.co.il",
+    "cityId": "בית שמש",
+    "address": "שדרות יגאל אלון 1, בית שמש",
+    "instagram": "https://www.instagram.com/greg_cafe/",
+    "category": "dairy",
+    "location": {
+      "latitude": 31.7560341,
+      "longitude": 34.9904465
+    },
+    "kosherType": "mehadrin",
+    "phone": "02-5401964",
+    "openingHours": "א'-ה' 9:00-23:00 | ו' 8:00-14:00 | ש' סגור",
+    "menu": "https://gregcafe.co.il/menus/"
+  },
+  {
+    "facebook": "https://www.facebook.com/gregcafe/",
+    "id": "greg-55b37c5c",
+    "type": "cafe",
+    "openingHours": "א'-ה' 9:00-21:30 | ו' 9:00-14:00 | ש' סגור",
+    "name": "קפה גרג TLV תל אביב",
+    "lastVerifiedAt": "2026-07-27",
+    "website": "https://gregcafe.co.il",
+    "cityId": "תל אביב",
+    "address": "החשמונאים 100, תל אביב",
+    "instagram": "https://www.instagram.com/greg_cafe/",
+    "category": "dairy",
+    "location": {
+      "latitude": 32.0678229,
+      "longitude": 34.7834787
+    },
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "phone": "03-677-1310",
+    "menu": "https://gregcafe.co.il/menus/"
+  },
+  {
+    "facebook": "https://www.facebook.com/gregcafe/",
+    "id": "greg-443cb001",
+    "type": "cafe",
+    "source": "manual",
+    "name": "קפה גרג דיזנגוף סנטר",
+    "lastVerifiedAt": "2026-07-27",
+    "website": "https://gregcafe.co.il",
+    "cityId": "תל אביב",
+    "address": "דיזנגוף 55, תל אביב",
+    "instagram": "https://www.instagram.com/greg_cafe/",
+    "category": "dairy",
+    "location": {
+      "latitude": 32.0754236,
+      "longitude": 34.7748328
+    },
+    "kosherType": "mehadrin",
+    "phone": "03-9366514",
+    "openingHours": "א'-ה' 9:00-20:00 | ו' 8:30-14:00 | ש' סגור",
+    "menu": "https://gregcafe.co.il/menus/"
+  },
+  {
+    "facebook": "https://www.facebook.com/gregcafe/",
+    "id": "greg-0ff39bbb",
+    "type": "cafe",
+    "source": "manual",
+    "name": "קפה גרג הקניון הגדול פתח תקווה",
+    "lastVerifiedAt": "2026-07-27",
+    "website": "https://gregcafe.co.il",
+    "cityId": "פתח תקווה",
+    "address": "ז'בוטינסקי 72, פתח תקווה",
+    "instagram": "https://www.instagram.com/greg_cafe/",
+    "category": "dairy",
+    "location": {
+      "latitude": 32.0932981,
+      "longitude": 34.8653481
+    },
+    "kosherType": "mehadrin",
+    "phone": "03-6428888",
+    "openingHours": "א'-ה' 8:00-23:00 | ו' 7:00-14:30 | ש' סגור",
+    "menu": "https://gregcafe.co.il/menus/"
+  },
+  {
+    "facebook": "https://www.facebook.com/gregcafe/",
+    "id": "greg-5e9f92a0",
+    "type": "cafe",
+    "source": "manual",
+    "name": "קפה גרג סירקין פתח תקווה",
+    "lastVerifiedAt": "2026-07-27",
+    "website": "https://gregcafe.co.il",
+    "cityId": "פתח תקווה",
+    "address": "אלעזר פרידמן 9, פתח תקווה",
+    "instagram": "https://www.instagram.com/greg_cafe/",
+    "category": "dairy",
+    "location": {
+      "latitude": 32.0794457,
+      "longitude": 34.9025999
+    },
+    "kosherType": "mehadrin",
+    "phone": "03-9075088",
+    "openingHours": "א'-ה' 8:30-21:00 | ו' 8:00-13:30 | ש' סגור",
+    "menu": "https://gregcafe.co.il/menus/"
+  },
+  {
+    "facebook": "https://www.facebook.com/gregcafe/",
+    "id": "greg-8c7bbbba",
+    "type": "cafe",
+    "openingHours": "א'-ה' 8:00-23:00 | ו' 7:45-13:30 | ש' סגור",
+    "name": "קפה גרג גבעת שמואל",
+    "lastVerifiedAt": "2026-07-27",
+    "website": "https://gregcafe.co.il",
+    "cityId": "גבעת שמואל",
+    "address": "שדרות מנחם בגין 30, גבעת שמואל",
+    "instagram": "https://www.instagram.com/greg_cafe/",
+    "category": "dairy",
+    "location": {
+      "latitude": 32.0756581,
+      "longitude": 34.8545348
+    },
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "phone": "03-5504969",
+    "menu": "https://gregcafe.co.il/menus/"
+  },
+  {
+    "facebook": "https://www.facebook.com/gregcafe/",
+    "id": "greg-9b698eb3",
+    "type": "cafe",
+    "source": "manual",
+    "name": "קפה גרג שרונים הוד השרון",
+    "lastVerifiedAt": "2026-07-27",
+    "website": "https://gregcafe.co.il",
+    "cityId": "הוד השרון",
+    "address": "הרקון 2, הוד השרון",
+    "instagram": "https://www.instagram.com/greg_cafe/",
+    "category": "dairy",
+    "location": {
+      "latitude": 32.1333401,
+      "longitude": 34.9014664
+    },
+    "kosherType": "mehadrin",
+    "phone": "09-8800890",
+    "openingHours": "א'-ה' 7:30-20:00 | ו' 7:30-15:00 | ש' סגור",
+    "menu": "https://gregcafe.co.il/menus/"
+  },
+  {
+    "facebook": "https://www.facebook.com/gregcafe/",
+    "id": "greg-291597a1",
+    "type": "cafe",
+    "source": "manual",
+    "name": "קפה גרג נתניה השרון",
+    "lastVerifiedAt": "2026-07-27",
+    "website": "https://gregcafe.co.il",
+    "cityId": "נתניה",
+    "address": "הרצל 60, נתניה",
+    "instagram": "https://www.instagram.com/greg_cafe/",
+    "category": "dairy",
+    "location": {
+      "latitude": 32.3264108,
+      "longitude": 34.8618993
+    },
+    "kosherType": "mehadrin",
+    "phone": "053-3374774",
+    "openingHours": "א'-ה' 8:30-21:30 | ו' 8:00-14:00 | ש' סגור",
+    "menu": "https://gregcafe.co.il/menus/"
+  },
+  {
+    "facebook": "https://www.facebook.com/gregcafe/",
+    "id": "greg-4c27cea8",
+    "type": "cafe",
+    "openingHours": "א'-ה' 7:30-23:00 | ו' 7:30-13:00 | ש' סגור",
+    "name": "קפה גרג אריאל",
+    "lastVerifiedAt": "2026-07-27",
+    "website": "https://gregcafe.co.il",
+    "cityId": "אריאל",
+    "address": "הבנאי 5, אריאל",
+    "instagram": "https://www.instagram.com/greg_cafe/",
+    "category": "dairy",
+    "location": {
+      "latitude": 32.1007172,
+      "longitude": 35.1701921
+    },
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "phone": "03-9303372",
+    "menu": "https://gregcafe.co.il/menus/"
+  },
+  {
+    "facebook": "https://www.facebook.com/gregcafe/",
+    "id": "greg-26dd0dbc",
+    "type": "cafe",
+    "source": "manual",
+    "name": "קפה גרג ביג אילת",
+    "lastVerifiedAt": "2026-07-27",
+    "website": "https://gregcafe.co.il",
+    "cityId": "אילת",
+    "address": "הסתת 20, אילת",
+    "instagram": "https://www.instagram.com/greg_cafe/",
+    "category": "dairy",
+    "location": {
+      "latitude": 29.5664539,
+      "longitude": 34.9596748
+    },
+    "kosherType": "mehadrin",
+    "phone": "08-8507828",
+    "openingHours": "א'-ה' 9:00-21:30 | ו' 8:30-14:30 | ש' סגור",
+    "menu": "https://gregcafe.co.il/menus/"
+  },
+  {
+    "facebook": "https://www.facebook.com/gregcafe/",
+    "id": "greg-9cc138f8",
+    "type": "cafe",
+    "source": "manual",
+    "name": "קפה גרג דימונה",
+    "lastVerifiedAt": "2026-07-27",
+    "website": "https://gregcafe.co.il",
+    "cityId": "דימונה",
+    "address": "שדרות גולדה מאיר 1, דימונה",
+    "instagram": "https://www.instagram.com/greg_cafe/",
+    "category": "dairy",
+    "location": {
+      "latitude": 31.0742063,
+      "longitude": 35.032363
+    },
+    "kosherType": "mehadrin",
+    "phone": "08-6910090",
+    "openingHours": "א'-ה' 8:00-22:00 | ו' 8:00-13:30 | ש' סגור",
+    "menu": "https://gregcafe.co.il/menus/"
+  },
+  {
+    "facebook": "https://www.facebook.com/gregcafe/",
+    "id": "greg-051e4e12",
+    "type": "cafe",
+    "openingHours": "א'-ה' 8:30-22:30 | ו' 8:30-14:00 | ש' סגור",
+    "name": "קפה גרג אופקים",
+    "lastVerifiedAt": "2026-07-27",
+    "website": "https://gregcafe.co.il",
+    "cityId": "אופקים",
+    "address": "יהדות דרום אפריקה 14, אופקים",
+    "instagram": "https://www.instagram.com/greg_cafe/",
+    "category": "dairy",
+    "location": {
+      "latitude": 31.3152934,
+      "longitude": 34.6237812
+    },
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "phone": "08-9320066",
+    "menu": "https://gregcafe.co.il/menus/"
+  },
+  {
+    "facebook": "https://www.facebook.com/gregcafe/",
+    "id": "greg-42e77b63",
+    "type": "cafe",
+    "source": "manual",
+    "name": "קפה גרג שדרות",
+    "lastVerifiedAt": "2026-07-27",
+    "website": "https://gregcafe.co.il",
+    "cityId": "שדרות",
+    "address": "דרך מנחם בגין 1, שדרות",
+    "instagram": "https://www.instagram.com/greg_cafe/",
+    "category": "dairy",
+    "location": {
+      "latitude": 31.5256004,
+      "longitude": 34.6031203
+    },
+    "kosherType": "mehadrin",
+    "phone": "08-9292969",
+    "openingHours": "א'-ה' 7:30-23:00 | ו' 7:30-13:30 | ש' סגור",
+    "menu": "https://gregcafe.co.il/menus/"
+  },
+  {
+    "facebook": "https://www.facebook.com/gregcafe/",
+    "id": "greg-185c29dc",
+    "type": "cafe",
+    "source": "manual",
+    "name": "קפה גרג נתיבות",
+    "lastVerifiedAt": "2026-07-27",
+    "website": "https://gregcafe.co.il",
+    "cityId": "נתיבות",
+    "address": "בעלי המלאכה 5, נתיבות",
+    "instagram": "https://www.instagram.com/greg_cafe/",
+    "category": "dairy",
+    "location": {
+      "latitude": 31.4183917,
+      "longitude": 34.5990347
+    },
+    "kosherType": "mehadrin",
+    "phone": "08-9933287",
+    "openingHours": "א'-ה' 8:00-23:00 | ו' 8:00-14:00 | ש' סגור",
+    "menu": "https://gregcafe.co.il/menus/"
+  },
+  {
+    "facebook": "https://www.facebook.com/gregcafe/",
+    "id": "greg-45645a27",
+    "type": "cafe",
+    "source": "manual",
+    "name": "קפה גרג קסטינה",
+    "lastVerifiedAt": "2026-07-27",
+    "website": "https://gregcafe.co.il",
+    "cityId": "באר טוביה",
+    "address": "ביג קסטינה, שיבולים, באר טוביה",
+    "instagram": "https://www.instagram.com/greg_cafe/",
+    "category": "dairy",
+    "location": {
+      "latitude": 31.728028,
+      "longitude": 34.7550671
+    },
+    "kosherType": "mehadrin",
+    "phone": "08-6118112",
+    "openingHours": "א'-ה' 8:00-22:00 | ו' 8:00-13:30 | מוצ\"ש עד 22:30",
+    "menu": "https://gregcafe.co.il/menus/"
+  },
+  {
+    "facebook": "https://www.facebook.com/gregcafe/",
+    "id": "greg-23350907",
+    "type": "cafe",
+    "source": "manual",
+    "name": "קפה גרג רמלה",
+    "lastVerifiedAt": "2026-07-27",
+    "website": "https://gregcafe.co.il",
+    "cityId": "רמלה",
+    "address": "שדרות דוד רזיאל 1, רמלה",
+    "instagram": "https://www.instagram.com/greg_cafe/",
+    "category": "dairy",
+    "location": {
+      "latitude": 31.9257549,
+      "longitude": 34.8639629
+    },
+    "kosherType": "mehadrin",
+    "phone": "08-9150900",
+    "openingHours": "א'-ה' 8:30-22:00 | ו' 8:30-14:30 | ש' סגור",
+    "menu": "https://gregcafe.co.il/menus/"
+  },
+  {
+    "facebook": "https://www.facebook.com/gregcafe/",
+    "id": "greg-48ab2f9b",
+    "type": "cafe",
+    "openingHours": "א'-ה' 8:30-22:00 | ו' 8:30-13:00 | מוצ\"ש עד 23:00",
+    "name": "קפה גרג חריש",
+    "lastVerifiedAt": "2026-07-27",
+    "website": "https://gregcafe.co.il",
+    "cityId": "חריש",
+    "address": "דרך ארץ 1, חריש",
+    "instagram": "https://www.instagram.com/greg_cafe/",
+    "category": "dairy",
+    "location": {
+      "latitude": 32.4705038,
+      "longitude": 35.0392878
+    },
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "phone": "04-8532264",
+    "menu": "https://gregcafe.co.il/menus/"
+  },
+  {
+    "facebook": "https://www.facebook.com/gregcafe/",
+    "id": "greg-5d44ee6f",
+    "type": "cafe",
+    "openingHours": "א'-ה' 8:00-24:00 | ו' 8:00-14:00 | ש' סגור",
+    "name": "קפה גרג קרית אתא",
+    "lastVerifiedAt": "2026-07-27",
+    "website": "https://gregcafe.co.il",
+    "cityId": "קריית אתא",
+    "address": "העצמאות 57, קריית אתא",
+    "instagram": "https://www.instagram.com/greg_cafe/",
+    "category": "dairy",
+    "location": {
+      "latitude": 32.8061731,
+      "longitude": 35.1035172
+    },
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "phone": "04-8445522",
+    "menu": "https://gregcafe.co.il/menus/"
+  },
+  {
+    "facebook": "https://www.facebook.com/gregcafe/",
+    "id": "greg-58d4d1e7",
+    "type": "cafe",
+    "source": "manual",
+    "name": "קפה גרג עתלית",
+    "lastVerifiedAt": "2026-07-27",
+    "website": "https://gregcafe.co.il",
+    "cityId": "עתלית",
+    "address": "דרך הים 2, עתלית",
+    "instagram": "https://www.instagram.com/greg_cafe/",
+    "category": "dairy",
+    "location": {
+      "latitude": 32.7104359,
+      "longitude": 34.9481538
+    },
+    "kosherType": "mehadrin",
+    "phone": "04-9962399",
+    "openingHours": "א'-ה' 7:30-22:30 | ו' 7:30-14:30 | ש' סגור",
+    "menu": "https://gregcafe.co.il/menus/"
+  },
+  {
+    "facebook": "https://www.facebook.com/gregcafe/",
+    "id": "greg-f29c21d4",
+    "type": "cafe",
+    "source": "manual",
+    "name": "קפה גרג לב המפרץ חיפה",
+    "lastVerifiedAt": "2026-07-27",
+    "website": "https://gregcafe.co.il",
+    "cityId": "חיפה",
+    "address": "שדרות ההסתדרות 55, חיפה",
+    "instagram": "https://www.instagram.com/greg_cafe/",
+    "category": "dairy",
+    "location": {
+      "latitude": 32.7934932,
+      "longitude": 35.0377411
+    },
+    "kosherType": "rabanut",
+    "phone": "04-8403333",
+    "openingHours": "א'-ה' 8:30-21:00 | ו' 8:30-14:00 | ש' סגור",
+    "menu": "https://gregcafe.co.il/menus/"
+  },
+  {
+    "facebook": "https://www.facebook.com/gregcafe/",
+    "id": "greg-996a7fa0",
+    "type": "cafe",
+    "openingHours": "א'-ה' 8:00-23:00 | ו' 8:00-15:00 | מוצ\"ש עד חצות",
+    "name": "קפה גרג עפולה",
+    "lastVerifiedAt": "2026-07-27",
+    "website": "https://gregcafe.co.il",
+    "cityId": "עפולה",
+    "address": "השוק 13, עפולה",
+    "instagram": "https://www.instagram.com/greg_cafe/",
+    "category": "dairy",
+    "location": {
+      "latitude": 32.6061191,
+      "longitude": 35.2929707
+    },
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "phone": "04-6490011",
+    "menu": "https://gregcafe.co.il/menus/"
+  },
+  {
+    "facebook": "https://www.facebook.com/gregcafe/",
+    "id": "greg-dc82d632",
+    "type": "cafe",
+    "source": "manual",
+    "name": "קפה גרג קניון נהריה",
+    "lastVerifiedAt": "2026-07-27",
+    "website": "https://gregcafe.co.il",
+    "cityId": "נהריה",
+    "address": "אירית 2, נהריה",
+    "instagram": "https://www.instagram.com/greg_cafe/",
+    "category": "dairy",
+    "location": {
+      "latitude": 32.9901794,
+      "longitude": 35.0953318
+    },
+    "kosherType": "mehadrin",
+    "phone": "04-9930090",
+    "openingHours": "א'-ה' 8:30-21:00 | ו' 8:00-14:00 | ש' סגור",
+    "menu": "https://gregcafe.co.il/menus/"
+  },
+  {
+    "facebook": "https://www.facebook.com/gregcafe/",
+    "id": "greg-44c4c173",
+    "type": "cafe",
+    "openingHours": "א'-ה' 7:30-20:00 | ו' 7:30-12:30 | ש' סגור",
+    "name": "קפה גרג מכללת בראודה כרמיאל",
+    "lastVerifiedAt": "2026-07-27",
+    "website": "https://gregcafe.co.il",
+    "cityId": "כרמיאל",
+    "address": "סנונית 51, כרמיאל",
+    "instagram": "https://www.instagram.com/greg_cafe/",
+    "category": "dairy",
+    "location": {
+      "latitude": 32.914671,
+      "longitude": 35.292417
+    },
+    "kosherType": "rabanut",
+    "source": "manual",
+    "phone": "1700-70-4407",
+    "menu": "https://gregcafe.co.il/menus/"
+  },
+  {
+    "facebook": "https://www.facebook.com/gregcafe/",
+    "id": "greg-9cf81d80",
+    "type": "cafe",
+    "source": "manual",
+    "name": "קפה גרג ראש פינה",
+    "lastVerifiedAt": "2026-07-27",
+    "website": "https://gregcafe.co.il",
+    "cityId": "ראש פינה",
+    "address": "התפוח 5, ראש פינה",
+    "instagram": "https://www.instagram.com/greg_cafe/",
+    "category": "dairy",
+    "location": {
+      "latitude": 32.9697787,
+      "longitude": 35.5503856
+    },
+    "kosherType": "mehadrin",
+    "phone": "04-6801191",
+    "openingHours": "א'-ה' 7:30-23:00 | ו' 8:00-14:30 | ש' סגור",
+    "menu": "https://gregcafe.co.il/menus/"
+  },
+  {
+    "id": "greg-d1d652e6",
+    "name": "קפה גרג ים המלח",
+    "type": "cafe",
+    "cityId": "עין בוקק",
+    "address": "עין בוקק 3",
+    "location": {
+      "latitude": 31.1983,
+      "longitude": 35.3644
+    },
+    "locationPrecision": "address",
+    "openingHours": "א'-ה' 9:30-20:30 | ו' 9:30-14:00 | ש' סגור",
+    "category": "dairy",
+    "kosherType": "mehadrin",
+    "menu": "https://gregcafe.co.il/menus/",
+    "website": "https://gregcafe.co.il",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27",
+    "tags": [
+      "coffee",
+      "cafe"
+    ],
+    "phone": "08-6255588"
+  },
+  {
+    "id": "greg-19589c28",
+    "name": "קפה גרג G2",
+    "type": "cafe",
+    "cityId": "ראשון לציון",
+    "address": "ילדי טהרן 5, ראשון לציון",
+    "location": {
+      "latitude": 31.973,
+      "longitude": 34.7898
+    },
+    "locationPrecision": "address",
+    "openingHours": "א'-ה' 9:00-22:00 | ו' 9:00-13:00 | ש' סגור",
+    "category": "dairy",
+    "kosherType": "mehadrin",
+    "menu": "https://gregcafe.co.il/menus/",
+    "website": "https://gregcafe.co.il",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27",
+    "tags": [
+      "coffee",
+      "cafe"
+    ],
+    "phone": "03-6559896"
+  },
+  {
+    "id": "greg-d99c94fb",
+    "name": "קפה גרג יוקנעם עילית",
+    "type": "cafe",
+    "cityId": "יוקנעם עילית",
+    "address": "התמר 2, יוקנעם עילית",
+    "location": {
+      "latitude": 32.6608,
+      "longitude": 35.1062
+    },
+    "locationPrecision": "address",
+    "openingHours": "א'-ה' 8:00-22:00 | ו' 8:00-14:30 | ש' סגור",
+    "category": "dairy",
+    "kosherType": "mehadrin",
+    "menu": "https://gregcafe.co.il/menus/",
+    "website": "https://gregcafe.co.il",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27",
+    "tags": [
+      "coffee",
+      "cafe"
+    ],
+    "phone": "050-8773566"
+  },
+  {
+    "id": "greg-7406930e",
+    "name": "קפה גרג פרדס חנה",
+    "type": "cafe",
+    "cityId": "פרדס חנה כרכור",
+    "address": "תדהר 1, פרדס חנה",
+    "location": {
+      "latitude": 32.4706,
+      "longitude": 34.9711
+    },
+    "locationPrecision": "address",
+    "openingHours": "א'-ה' 8:00-23:00 | ו' 8:00-14:30 | ש' סגור",
+    "category": "dairy",
+    "kosherType": "mehadrin",
+    "menu": "https://gregcafe.co.il/menus/",
+    "website": "https://gregcafe.co.il",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-27",
+    "tags": [
+      "coffee",
+      "cafe"
+    ],
+    "phone": "04-9531807"
+  },
+  {
+    "id": "greg-d22f70cb",
+    "name": "קפה גרג קרית שמונה",
+    "type": "cafe",
+    "cityId": "קריית שמונה",
+    "address": "טשרניחובסקי 6, קריית שמונה",
+    "location": {
+      "latitude": 33.2074,
+      "longitude": 35.5695
+    },
+    "locationPrecision": "address",
+    "openingHours": "א'-ה' 9:00-19:00 | ו' 8:30-13:00 | ש' סגור",
+    "category": "dairy",
+    "kosherType": "mehadrin",
+    "menu": "https://gregcafe.co.il/menus/",
+    "website": "https://gregcafe.co.il",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-24",
+    "tags": [
+      "coffee",
+      "cafe"
+    ],
+    "phone": "04-8713710"
   }
 ]

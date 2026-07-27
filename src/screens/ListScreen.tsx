@@ -19,6 +19,8 @@ import { EmptyState } from '../components/EmptyState';
 import { Loading } from '../components/Loading';
 import { FilterSheet } from '../components/FilterSheet';
 import { BirkatHamazonModal } from '../components/BirkatHamazonModal';
+import { MapView } from '../components/map/MapView';
+import { PlaceBottomCard } from '../components/map/PlaceBottomCard';
 import { colors, radius, shadow, spacing } from '../theme';
 import { useLanguage } from '../context/LanguageContext';
 import { usePlaces } from '../hooks/usePlaces';
@@ -89,6 +91,8 @@ export function ListScreen() {
   const [sheetOpen, setSheetOpen] = useState(false);
   const [birkatOpen, setBirkatOpen] = useState(false);
   const [isRefreshing, setIsRefreshing] = useState(false);
+  const [viewMode, setViewMode] = useState<'list' | 'map'>('list');
+  const [selectedPlace, setSelectedPlace] = useState<import('../types').Place | null>(null);
   const [radiusKm, setRadiusKm] = useState<number>(5);
   const [radiusOpen, setRadiusOpen] = useState(false);
 
@@ -244,6 +248,16 @@ export function ListScreen() {
             <Text style={styles.title}>מה יש סביבי?</Text>
           )}
         </View>
+        <Pressable
+          style={styles.viewToggle}
+          onPress={() => { setViewMode(v => v === 'list' ? 'map' : 'list'); setSelectedPlace(null); }}
+        >
+          <Ionicons
+            name={viewMode === 'list' ? 'map-outline' : 'list-outline'}
+            size={20}
+            color={colors.primary}
+          />
+        </Pressable>
       </View>
 
       {/* Location mode row */}
@@ -505,6 +519,25 @@ export function ListScreen() {
         <Loading />
       ) : error ? (
         <EmptyState title={t.common.error} hint={t.common.retry} icon="alert-circle-outline" />
+      ) : viewMode === 'map' ? (
+        <View style={styles.mapWrap}>
+          <MapView
+            places={sorted}
+            userLocation={location}
+            onSelectPlace={setSelectedPlace}
+          />
+          {selectedPlace && (
+            <PlaceBottomCard
+              place={selectedPlace}
+              onClose={() => setSelectedPlace(null)}
+              onOpenDetails={() => {
+                const id = selectedPlace.id;
+                setSelectedPlace(null);
+                navigation.navigate('PlaceDetail', { id });
+              }}
+            />
+          )}
+        </View>
       ) : (
         <FlatList
           data={sorted}
@@ -535,6 +568,20 @@ export function ListScreen() {
 }
 
 const styles = StyleSheet.create({
+  viewToggle: {
+    width: 34,
+    height: 34,
+    borderRadius: radius.md,
+    backgroundColor: colors.primaryLight,
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexShrink: 0,
+  },
+  mapWrap: {
+    flex: 1,
+    overflow: 'hidden',
+    marginHorizontal: -spacing.lg,
+  },
   titleRow: {
     flexDirection: 'row',
     alignItems: 'center',

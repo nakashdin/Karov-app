@@ -6,32 +6,24 @@ import { colors, radius, shadow, spacing } from '../theme';
 import { useLanguage } from '../context/LanguageContext';
 import { transliterateHebrew } from '../utils/transliterate';
 import { categoryLabel, kosherTypeLabel } from '../utils/kosher';
-import { placeTypeLabel } from '../utils/placeType';
+import { displayPlaceName, getPlaceEmoji, placeTypeLabel } from '../utils/placeType';
 import { formatDistance } from '../utils/geo';
-import { isCurrentlyOpen, shortHours } from '../utils/openingHours';
+import { isCurrentlyOpen, todayHoursStr } from '../utils/openingHours';
 
-const PLACE_EMOJI: Record<Place['type'], string> = {
-  restaurant:   '🍽️',
-  fast_food:    '🍔',
-  cafe:         '☕',
-  coffee_cart:  '🛒',
-  winery:       '🍷',
-  synagogue:    '🕍',
-  mikveh:       '💧',
-  chabad_house: '🕎',
-  tzaddik_grave:'🪦',
-};
 
 const CHIP_COLOR: Record<Place['type'], string> = {
-  restaurant:   colors.categoryRestaurant,
-  fast_food:    colors.categoryFastFood,
-  cafe:         colors.categoryCafe,
-  coffee_cart:  colors.categoryCoffeeCart,
-  winery:       colors.categoryWinery,
-  synagogue:    colors.categorySynagogue,
-  mikveh:       colors.categoryMikveh,
-  chabad_house: colors.chabad,
-  tzaddik_grave:colors.tzaddik,
+  restaurant:      colors.categoryRestaurant,
+  fast_food:       colors.categoryFastFood,
+  cafe:            colors.categoryCafe,
+  coffee_cart:     colors.categoryCoffeeCart,
+  juice_bar:       colors.categoryCoffeeCart,
+  ice_cream_parlor:colors.categoryCafe,
+  bakery:          colors.categoryFastFood,
+  winery:          colors.categoryWinery,
+  synagogue:       colors.categorySynagogue,
+  mikveh:          colors.categoryMikveh,
+  chabad_house:    colors.chabad,
+  tzaddik_grave:   colors.tzaddik,
 };
 
 // Kashrut badge color per level
@@ -78,14 +70,16 @@ interface PlaceCardProps {
 export function PlaceCard({ place, distanceKm, onPress }: PlaceCardProps) {
   const { t, locale } = useLanguage();
   const isHe = locale === 'he';
-  const displayName = isHe ? place.name : transliterateHebrew(place.name);
-  const emoji = PLACE_EMOJI[place.type];
+  const heName = displayPlaceName(place);
+  const displayName = isHe ? heName : transliterateHebrew(heName);
+  const emoji = getPlaceEmoji(place);
   const chipColor = CHIP_COLOR[place.type];
   const typeLabel = placeTypeLabel[place.type];
 
   const isFoodType = ['restaurant', 'fast_food', 'cafe', 'coffee_cart'].includes(place.type);
-  const openStatus  = isCurrentlyOpen(place.openingHours);
-  const hoursShort  = shortHours(place.openingHours);
+  const openStatus  = isCurrentlyOpen(place.openingHours, place.location);
+  const todayHours  = todayHoursStr(place.openingHours);
+  const showHoursRow = todayHours !== null || openStatus !== null;
   const kosherLabel = isFoodType && place.kosherType
     ? kosherTypeLabel[place.kosherType]
     : null;
@@ -115,7 +109,7 @@ export function PlaceCard({ place, distanceKm, onPress }: PlaceCardProps) {
         <View style={styles.nameBlock}>
           <Text style={styles.name} numberOfLines={2}>{displayName}</Text>
           {!isHe && (
-            <Text style={styles.nameHe} numberOfLines={1}>{place.name}</Text>
+            <Text style={styles.nameHe} numberOfLines={1}>{heName}</Text>
           )}
         </View>
 
@@ -172,10 +166,12 @@ export function PlaceCard({ place, distanceKm, onPress }: PlaceCardProps) {
       )}
 
       {/* Opening hours */}
-      {hoursShort && (
+      {showHoursRow && (
         <View style={styles.hoursRow}>
           <Ionicons name="time-outline" size={12} color={colors.textMuted} />
-          <Text style={styles.hoursText} numberOfLines={1}>{hoursShort}</Text>
+          {todayHours && (
+            <Text style={styles.hoursText} numberOfLines={1}>{todayHours}</Text>
+          )}
           {openStatus === true  && <View style={[styles.badge, styles.badgeOpen]}><Text style={styles.badgeText}>פתוח</Text></View>}
           {openStatus === false && <View style={[styles.badge, styles.badgeClosed]}><Text style={styles.badgeText}>סגור</Text></View>}
         </View>
