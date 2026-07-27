@@ -9,7 +9,7 @@ export const placeTypeLabel: Record<PlaceType, string> = {
   coffee_cart: 'עגלת קפה',
   juice_bar: 'שייקים ומיצים',
   ice_cream_parlor: 'גלידרייה',
-  bakery: 'מאפייה',
+  bakery: 'מאפייה / בית קפה',
   winery: 'יקב כשר',
   synagogue: 'בית כנסת',
   mikveh: 'מקווה',
