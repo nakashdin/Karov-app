@@ -61,7 +61,7 @@ function buildChips(place: ReturnType<typeof usePlace>['place']): string[] {
   if (place.kosherType) chips.push(kosherTypeLabel[place.kosherType]);
   if (place.certifiedBy) chips.push(place.certifiedBy);
   if (place.nusach) chips.push(`נוסח ${place.nusach}`);
-  if (place.tags)   chips.push(...place.tags);
+  if (place.tags)   chips.push(...place.tags.filter(t => !(t in placeTypeLabel)));
   return chips;
 }
 
@@ -336,6 +336,9 @@ export function PlaceDetailScreen() {
               ) : null}
               {place.website ? (
                 <DetailRow icon="globe-outline" label="אתר" value={place.website} accent={accent} tappable onPress={() => Linking.openURL(place.website!)} link />
+              ) : null}
+              {place.menu ? (
+                <DetailRow icon="restaurant-outline" label="תפריט" value={place.menu} accent={accent} tappable onPress={() => Linking.openURL(place.menu!)} link />
               ) : null}
               {place.instagram ? (
                 <DetailRow icon="logo-instagram" label="אינסטגרם" value={place.instagram.replace('https://www.instagram.com/', '@').replace(/\/$/, '')} accent={accent} tappable onPress={() => Linking.openURL(place.instagram!)} link />
