@@ -253,7 +253,8 @@
       "longitude": 34.9656918
     },
     "phone": "+972-(0)8-6338333",
-    "cityId": "אילת"
+    "cityId": "אילת",
+    "locationPrecision": "exact"
   },
   {
     "tags": [
@@ -269,11 +270,12 @@
     "category": "meat",
     "id": "osm-node-1763031739",
     "location": {
-      "latitude": 29.5481203,
-      "longitude": 34.9663135
+      "latitude": 29.5489538,
+      "longitude": 34.9635424
     },
     "source": "osm",
-    "phone": "+972-(0)8-6380115"
+    "phone": "+972-(0)8-6380115",
+    "locationPrecision": "exact"
   },
   {
     "source": "osm",
@@ -367,12 +369,13 @@
     "name": "פטרוזיליה",
     "address": "שדרות רוטשילד 47, תל אביב יפו",
     "location": {
-      "latitude": 32.0642403,
-      "longitude": 34.7748144
+      "latitude": 32.064275,
+      "longitude": 34.774869
     },
     "phone": "+972 3 516 2468",
     "category": "dairy",
-    "cityId": "קריית מאיר"
+    "cityId": "קריית מאיר",
+    "locationPrecision": "exact"
   },
   {
     "facebook": "https://www.facebook.com/burgerimisrael",
@@ -1163,11 +1166,12 @@
     "name": "Best burger",
     "address": "ארלוזורוב 3, קרית שמונה",
     "location": {
-      "latitude": 33.2092084,
-      "longitude": 35.5691085
+      "latitude": 33.2092675,
+      "longitude": 35.5691219
     },
     "phone": "+972 77 201 6918",
-    "cityId": "קרית שמונה"
+    "cityId": "קרית שמונה",
+    "locationPrecision": "exact"
   },
   {
     "source": "osm",
@@ -1208,10 +1212,11 @@
     "name": "שיפודי אל הנגב",
     "address": "שדרות רגר יצחק 187, באר שבע",
     "location": {
-      "latitude": 31.2706384,
-      "longitude": 34.7977633
+      "latitude": 31.2698955,
+      "longitude": 34.7977253
     },
-    "cityId": "באר שבע"
+    "cityId": "באר שבע",
+    "locationPrecision": "exact"
   },
   {
     "source": "osm",
@@ -1683,13 +1688,14 @@
     "name": "הבורגנים",
     "address": "דרך חברון 101, תלפיות, ירושלים",
     "location": {
-      "latitude": 31.7546103,
-      "longitude": 35.2215368
+      "latitude": 31.754855,
+      "longitude": 35.2216657
     },
     "phone": "02-3001644",
     "website": "https://haburganim.com",
     "cityId": "רמת רחל",
-    "openingHours": "Su-Th 11:00-22:00; Fr 10:00-14:00"
+    "openingHours": "Su-Th 11:00-22:00; Fr 10:00-14:00",
+    "locationPrecision": "exact"
   },
   {
     "source": "osm",
@@ -2279,11 +2285,12 @@
     "category": "meat",
     "id": "osm-node-10964969762",
     "location": {
-      "latitude": 31.8050066,
-      "longitude": 35.1523114
+      "latitude": 31.8051617,
+      "longitude": 35.1525256
     },
     "source": "osm",
-    "phone": "*2242"
+    "phone": "*2242",
+    "locationPrecision": "exact"
   },
   {
     "source": "osm",
@@ -2578,8 +2585,8 @@
     "name": "בורגרים תל אביב קרליבך",
     "address": "קרליבך 25, תל אביב",
     "location": {
-      "latitude": 32.0685488,
-      "longitude": 34.7829145
+      "latitude": 32.068527,
+      "longitude": 34.782865
     },
     "website": "https://www.iburgerim.co.il/",
     "facebook": "https://www.facebook.com/burgerimisrael",
@@ -2587,7 +2594,8 @@
     "kosherType": "kosher",
     "lastVerifiedAt": "2026-07-30",
     "phone": "077-3433035",
-    "openingHours": "א'-ה' 10:30-22:30"
+    "openingHours": "א'-ה' 10:30-22:30",
+    "locationPrecision": "exact"
   },
   {
     "source": "osm",
@@ -2703,10 +2711,11 @@
     "name": "Ruben",
     "address": "שדרות רוטשילד 45, תל אביב יפו",
     "location": {
-      "latitude": 32.0642237,
-      "longitude": 34.7746572
+      "latitude": 32.0642324,
+      "longitude": 34.7744248
     },
-    "cityId": "קריית מאיר"
+    "cityId": "קריית מאיר",
+    "locationPrecision": "exact"
   },
   {
     "facebook": "https://www.facebook.com/NewDeliIsrael",
@@ -3000,7 +3009,8 @@
       "longitude": 35.1740002
     },
     "source": "osm",
-    "phone": "1-700-50-60-70"
+    "phone": "1-700-50-60-70",
+    "locationPrecision": "exact"
   },
   {
     "source": "osm",
@@ -3171,7 +3181,8 @@
       "longitude": 34.6545902
     },
     "phone": "086902595",
-    "cityId": "אשדוד"
+    "cityId": "אשדוד",
+    "locationPrecision": "exact"
   },
   {
     "source": "osm",
@@ -3247,13 +3258,14 @@
     "name": "פיצה רומא",
     "address": "שדרות עמק איילון 30, שוהם",
     "location": {
-      "latitude": 31.9992228,
-      "longitude": 34.9466929
+      "latitude": 31.9988116,
+      "longitude": 34.9468915
     },
     "phone": "03-9793320",
     "cityId": "שוהם",
     "openingHours": "א'-ה' 11:00-22:30 | ו' 11:00-14:00 | ש' מוצ\"ש 19:00-22:30",
-    "kosherType": "rabanut"
+    "kosherType": "rabanut",
+    "locationPrecision": "exact"
   },
   {
     "source": "osm",
@@ -3531,15 +3543,16 @@
     "name": "פיצה פצץ שוהם",
     "address": "שדרות עמק איילון 161, שוהם",
     "location": {
-      "latitude": 32.0054716,
-      "longitude": 34.9465511
+      "latitude": 32.0056105,
+      "longitude": 34.9466774
     },
     "phone": "03-9749745",
     "website": "https://pazaz-shoham.co.il",
     "cityId": "שוהם",
     "openingHours": "א'-ה' 11:00-23:00 | ו' 11:00-15:00 | ש' 20:00-23:00",
     "kosherType": "kosher",
-    "lastVerifiedAt": "2026-07-30"
+    "lastVerifiedAt": "2026-07-30",
+    "locationPrecision": "exact"
   },
   {
     "source": "osm",
@@ -3590,13 +3603,14 @@
     "category": "meat",
     "id": "osm-node-12698940709",
     "location": {
-      "latitude": 32.0056588,
-      "longitude": 34.9467795
+      "latitude": 32.0056105,
+      "longitude": 34.9466774
     },
     "phone": "03-5072979",
     "kosherType": "badatz_beit_yosef",
     "certifiedBy": "בד\"ץ בית יוסף",
-    "lastVerifiedAt": "2026-07-30"
+    "lastVerifiedAt": "2026-07-30",
+    "locationPrecision": "exact"
   },
   {
     "source": "osm",
@@ -3658,7 +3672,8 @@
       "longitude": 34.7760103
     },
     "phone": "+972 77 303 4050",
-    "cityId": "קריית מאיר"
+    "cityId": "קריית מאיר",
+    "locationPrecision": "exact"
   },
   {
     "source": "osm",
@@ -3894,12 +3909,13 @@
     "name": "קפה הוד",
     "address": "הפלמ\"ח 31, כרמיאל",
     "location": {
-      "latitude": 32.9038386,
-      "longitude": 35.2824941
+      "latitude": 32.9039674,
+      "longitude": 35.2823588
     },
     "phone": "+972 4 866 1613",
     "category": "dairy",
-    "cityId": "כרמיאל"
+    "cityId": "כרמיאל",
+    "locationPrecision": "exact"
   },
   {
     "source": "osm",
@@ -4423,10 +4439,11 @@
     "name": "בית דוד",
     "address": "שדרות ויצמן 19, נתניה",
     "location": {
-      "latitude": 32.3303906,
-      "longitude": 34.8584604
+      "latitude": 32.3306836,
+      "longitude": 34.8583869
     },
-    "cityId": "נתניה"
+    "cityId": "נתניה",
+    "locationPrecision": "exact"
   },
   {
     "source": "osm",
@@ -6933,10 +6950,11 @@
     "name": "בית כנסת אליהו הנביא",
     "address": "רחוב בית אל 12, ירושלים",
     "location": {
-      "latitude": 31.7746791,
-      "longitude": 35.2314444
+      "latitude": 31.7875518,
+      "longitude": 35.2193485
     },
-    "cityId": "ירושלים"
+    "cityId": "ירושלים",
+    "locationPrecision": "exact"
   },
   {
     "source": "osm",
@@ -6946,10 +6964,11 @@
     "name": "בית כנסת יוחנן בן-זכאי",
     "address": "רחוב בית אל 12, ירושלים",
     "location": {
-      "latitude": 31.7745967,
-      "longitude": 35.2314937
+      "latitude": 31.7875518,
+      "longitude": 35.2193485
     },
-    "cityId": "ירושלים"
+    "cityId": "ירושלים",
+    "locationPrecision": "exact"
   },
   {
     "source": "osm",
@@ -7157,7 +7176,8 @@
       "latitude": 31.3247169,
       "longitude": 34.6771934
     },
-    "cityId": "תפרח"
+    "cityId": "תפרח",
+    "locationPrecision": "exact"
   },
   {
     "source": "osm",
@@ -8415,10 +8435,11 @@
     "name": "שבט יהודה",
     "address": "דרך יבנה 32, רחובות",
     "location": {
-      "latitude": 31.9000052,
-      "longitude": 34.8040285
+      "latitude": 31.9000018,
+      "longitude": 34.804025
     },
-    "cityId": "רחובות"
+    "cityId": "רחובות",
+    "locationPrecision": "exact"
   },
   {
     "source": "osm",
@@ -9653,8 +9674,8 @@
     "name": "ארבעת בתי הכנסת הספרדיים",
     "address": "רחוב בית אל 12, ירושלים",
     "location": {
-      "latitude": 31.7746246,
-      "longitude": 35.2315409
+      "latitude": 31.7875518,
+      "longitude": 35.2193485
     },
     "provenance": {
       "enrichedBy": "arcgis-municipal",
@@ -9662,7 +9683,8 @@
       "sourceRecordId": "arcgis:jerusalem:171",
       "fields": []
     },
-    "cityId": "ירושלים"
+    "cityId": "ירושלים",
+    "locationPrecision": "exact"
   },
   {
     "source": "osm",
@@ -10602,8 +10624,8 @@
     "name": "באר מים חיים",
     "address": "שדרות רוטשילד 112, תל אביב יפו",
     "location": {
-      "latitude": 32.0688691,
-      "longitude": 34.7785828
+      "latitude": 32.068848,
+      "longitude": 34.778591
     },
     "provenance": {
       "enrichedBy": "arcgis-municipal",
@@ -10614,7 +10636,8 @@
         "address"
       ]
     },
-    "cityId": "קריית מאיר"
+    "cityId": "קריית מאיר",
+    "locationPrecision": "exact"
   },
   {
     "source": "osm",
@@ -12624,10 +12647,11 @@
     "name": "קהילת יעקב",
     "address": "דרך חברון 78, ירושלים",
     "location": {
-      "latitude": 31.7564573,
-      "longitude": 35.2218766
+      "latitude": 31.7564434,
+      "longitude": 35.2220004
     },
-    "cityId": "רמת רחל"
+    "cityId": "רמת רחל",
+    "locationPrecision": "exact"
   },
   {
     "source": "osm",
@@ -15204,10 +15228,11 @@
     "name": "ישיבת מכון מאיר",
     "address": "שדרות המאירי 4, ירושלים",
     "location": {
-      "latitude": 31.7852625,
-      "longitude": 35.1945794
+      "latitude": 31.7855412,
+      "longitude": 35.1945637
     },
-    "cityId": "מוצא"
+    "cityId": "מוצא",
+    "locationPrecision": "exact"
   },
   {
     "source": "osm",
@@ -15360,10 +15385,11 @@
     "name": "אוהל שמעון",
     "address": "מעלות דושינסקי 110, ירושלים",
     "location": {
-      "latitude": 31.8024419,
-      "longitude": 35.2176548
+      "latitude": 31.8027475,
+      "longitude": 35.2177215
     },
-    "cityId": "ירושלים"
+    "cityId": "ירושלים",
+    "locationPrecision": "exact"
   },
   {
     "source": "osm",
@@ -15399,10 +15425,11 @@
     "name": "בי\"כ רמתיים צופים",
     "address": "משעול הקורנית 3, ירושלים",
     "location": {
-      "latitude": 31.8106759,
-      "longitude": 35.1927279
+      "latitude": 31.8107489,
+      "longitude": 35.1927335
     },
-    "cityId": "מוצא"
+    "cityId": "מוצא",
+    "locationPrecision": "exact"
   },
   {
     "source": "osm",
@@ -15490,10 +15517,11 @@
     "name": "ישיבת יגדיל תורה",
     "address": "עזרת תורה 47, ירושלים",
     "location": {
-      "latitude": 31.7983936,
-      "longitude": 35.2166886
+      "latitude": 31.7984422,
+      "longitude": 35.2166901
     },
-    "cityId": "ירושלים"
+    "cityId": "ירושלים",
+    "locationPrecision": "exact"
   },
   {
     "source": "osm",
@@ -15737,8 +15765,8 @@
     "name": "בית הכנסת אהבת ישראל",
     "address": "מעבר המיתלה 5, ירושלים",
     "location": {
-      "latitude": 31.8002971,
-      "longitude": 35.2240092
+      "latitude": 31.8003628,
+      "longitude": 35.2241915
     },
     "provenance": {
       "enrichedBy": "arcgis-municipal",
@@ -15746,7 +15774,8 @@
       "sourceRecordId": "arcgis:jerusalem:49",
       "fields": []
     },
-    "cityId": "ירושלים"
+    "cityId": "ירושלים",
+    "locationPrecision": "exact"
   },
   {
     "source": "osm",
@@ -16802,10 +16831,11 @@
     "name": "מחזיקי תורה",
     "address": "שדרות העצמאות 23, בת ים",
     "location": {
-      "latitude": 32.0229178,
-      "longitude": 34.743788
+      "latitude": 32.0227269,
+      "longitude": 34.7439456
     },
-    "cityId": "בת ים"
+    "cityId": "בת ים",
+    "locationPrecision": "exact"
   },
   {
     "source": "osm",
@@ -64763,15 +64793,16 @@
     "name": "בית אבות משען - דיור מוגן",
     "address": "שלונסקי  6",
     "location": {
-      "latitude": 32.117388340749685,
-      "longitude": 34.81889072769091
+      "latitude": 32.0946557,
+      "longitude": 34.8909072
     },
     "provenance": {
       "source": "arcgis:tel-aviv",
       "by": "arcgis-municipal",
       "sourceUrl": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/568"
     },
-    "cityId": "תל אביב–יפו"
+    "cityId": "תל אביב–יפו",
+    "locationPrecision": "exact"
   },
   {
     "id": "arcgis:tel-aviv::568-88",
@@ -64819,15 +64850,16 @@
     "name": "בית אברהם - וואסלוי",
     "address": "שדרות בן גוריון 71, תל אביב יפו",
     "location": {
-      "latitude": 32.0839443418329,
-      "longitude": 34.775888727121426
+      "latitude": 32.083947,
+      "longitude": 34.775889
     },
     "provenance": {
       "source": "arcgis:tel-aviv",
       "by": "arcgis-municipal",
       "sourceUrl": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/568"
     },
-    "cityId": "תל אביב–יפו"
+    "cityId": "תל אביב–יפו",
+    "locationPrecision": "exact"
   },
   {
     "id": "arcgis:tel-aviv::568-91",
@@ -67828,15 +67860,16 @@
     "name": "לכלל ישראל",
     "address": "אליהו חכים 5",
     "location": {
-      "latitude": 32.12615434145014,
-      "longitude": 34.80098522868166
+      "latitude": 32.126148,
+      "longitude": 34.800985
     },
     "provenance": {
       "source": "arcgis:tel-aviv",
       "by": "arcgis-municipal",
       "sourceUrl": "https://gisn.tel-aviv.gov.il/arcgis/rest/services/IView2/MapServer/568"
     },
-    "cityId": "תל אביב–יפו"
+    "cityId": "תל אביב–יפו",
+    "locationPrecision": "exact"
   },
   {
     "id": "arcgis:tel-aviv::568-281",
@@ -77017,15 +77050,16 @@
     "name": "שי עולמות",
     "address": "מבוא הדודאים 2, אשדוד",
     "location": {
-      "latitude": 31.78808051697161,
-      "longitude": 34.65744209047015
+      "latitude": 31.7878099,
+      "longitude": 34.65736
     },
     "provenance": {
       "source": "arcgis:ashdod",
       "by": "arcgis-municipal",
       "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
     },
-    "cityId": "אשדוד"
+    "cityId": "אשדוד",
+    "locationPrecision": "exact"
   },
   {
     "id": "arcgis:ashdod::763",
@@ -85602,15 +85636,16 @@
     "name": "שלמה המלך",
     "address": "הצנחנים 2",
     "location": {
-      "latitude": 33.01400260620705,
-      "longitude": 35.11203661434851
+      "latitude": 32.117775,
+      "longitude": 34.839171
     },
     "provenance": {
       "source": "arcgis:nahariya",
       "by": "arcgis-municipal",
       "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
     },
-    "cityId": "נהריה"
+    "cityId": "נהריה",
+    "locationPrecision": "exact"
   },
   {
     "id": "arcgis:nahariya::66",
@@ -96020,10 +96055,11 @@
     "sourceName": "הרבנות והמועצה הדתית חיפה",
     "mikvehGender": "נשים",
     "location": {
-      "latitude": 32.80465,
-      "longitude": 34.9885397
+      "latitude": 32.8048036,
+      "longitude": 34.9882258
     },
-    "phone": "048387816"
+    "phone": "048387816",
+    "locationPrecision": "exact"
   },
   {
     "id": "mikveh-haifa-w-32.82692_34.96533",
@@ -107600,12 +107636,13 @@
     "instagram": "https://www.instagram.com/olives___beer_yaakov/",
     "category": "dairy",
     "location": {
-      "latitude": 31.94548,
-      "longitude": 34.8429
+      "latitude": 31.942787,
+      "longitude": 34.841834
     },
     "kosherType": "rabanut_mekomi",
     "certifiedBy": "הרבנות המקומית",
-    "phone": "052-529-1199"
+    "phone": "052-529-1199",
+    "locationPrecision": "exact"
   },
   {
     "facebook": "https://www.facebook.com/profile.php?id=61590600870283&mibextid=wwXIfr&rdid=8PdRyu3SHuPFz1lV&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1Aznsij3YE%2F%3Fmibextid%3DwwXIfr#",
@@ -113981,15 +114018,16 @@
     "address": "ירמיהו 33, ירושלים",
     "cityId": "ירושלים",
     "location": {
-      "latitude": 31.7978,
-      "longitude": 35.2155
+      "latitude": 31.7906075,
+      "longitude": 35.2029487
     },
     "phone": "055-6810165",
     "website": "https://www.33rest.co.il/",
     "certifiedBy": "רבנות ירושלים מהדרין",
     "kosherType": "mehadrin",
     "openingHours": "א'-ה' 18:00-23:30",
-    "source": "manual"
+    "source": "manual",
+    "locationPrecision": "exact"
   },
   {
     "id": "manual-harveys-smokehouse-jerusalem",
@@ -114019,8 +114057,8 @@
     "address": "המרפא 1, הר חוצבים, ירושלים",
     "cityId": "ירושלים",
     "location": {
-      "latitude": 31.797,
-      "longitude": 35.2002
+      "latitude": 31.8006214,
+      "longitude": 35.2123043
     },
     "phone": "02-5377000",
     "website": "https://www.caballerorest.co.il/",
@@ -114028,7 +114066,8 @@
     "certifiedBy": "בד\"ץ קהילות",
     "kosherType": "mehadrin",
     "openingHours": "א'-ה' 18:00-22:45",
-    "source": "manual"
+    "source": "manual",
+    "locationPrecision": "exact"
   },
   {
     "id": "manual-andalucia-jerusalem",
@@ -114056,10 +114095,10 @@
     "address": "התע\"ש 20, כפר סבא",
     "phone": "09-8858053",
     "location": {
-      "latitude": 32.178,
-      "longitude": 34.9176
+      "latitude": 32.1761099,
+      "longitude": 34.9276264
     },
-    "locationPrecision": "city",
+    "locationPrecision": "exact",
     "website": "https://www.bahadunes.co.il",
     "category": "parve",
     "kosherType": "rabanut",
@@ -114075,10 +114114,10 @@
     "address": "העמל 2, רעננה",
     "phone": "09-7442029",
     "location": {
-      "latitude": 32.1878,
-      "longitude": 34.8661
+      "latitude": 32.1967165,
+      "longitude": 34.8806789
     },
-    "locationPrecision": "city",
+    "locationPrecision": "exact",
     "website": "https://www.bahadunes.co.il",
     "category": "parve",
     "kosherType": "rabanut",
@@ -114113,10 +114152,10 @@
     "address": "המנופים 9, הרצליה",
     "phone": "09-7684010",
     "location": {
-      "latitude": 32.1655,
-      "longitude": 34.8381
+      "latitude": 32.1608252,
+      "longitude": 34.8079504
     },
-    "locationPrecision": "city",
+    "locationPrecision": "exact",
     "website": "https://www.bahadunes.co.il",
     "category": "parve",
     "kosherType": "rabanut",
@@ -117096,8 +117135,8 @@
     "address": "העצמאות 65, קניון גנים, פתח תקווה",
     "cityId": "פתח תקווה",
     "location": {
-      "latitude": 32.0901,
-      "longitude": 34.891
+      "latitude": 32.0745882,
+      "longitude": 34.8691489
     },
     "phone": "04-3028354",
     "website": "https://atza.co.il/pt",
@@ -117106,7 +117145,8 @@
     "certifiedBy": "כשר למהדרין",
     "kosherType": "mehadrin",
     "openingHours": "א'-ה' 12:00-22:30",
-    "source": "manual"
+    "source": "manual",
+    "locationPrecision": "exact"
   },
   {
     "id": "manual-jetlak-pt",
@@ -117116,8 +117156,8 @@
     "address": "תוצרת הארץ 3, פתח תקווה",
     "cityId": "פתח תקווה",
     "location": {
-      "latitude": 32.0831,
-      "longitude": 34.8771
+      "latitude": 32.0900013,
+      "longitude": 34.8601803
     },
     "phone": "051-515-0046",
     "website": "https://jetlek.co.il",
@@ -117126,7 +117166,8 @@
     "certifiedBy": "בד\"ץ בית יוסף",
     "kosherType": "mehadrin",
     "openingHours": "א'-ד' 12:00-00:00; ה' 12:00-01:00",
-    "source": "manual"
+    "source": "manual",
+    "locationPrecision": "exact"
   },
   {
     "id": "manual-golda-tlv-azrieli",
@@ -120176,15 +120217,16 @@
     "address": "תוצרת הארץ 3, שופ טיים, פתח תקווה",
     "cityId": "פתח תקווה",
     "location": {
-      "latitude": 32.0831,
-      "longitude": 34.8771
+      "latitude": 32.0900013,
+      "longitude": 34.8601803
     },
     "website": "https://mexicana.co.il",
     "instagram": "https://www.instagram.com/mexicana.israel",
     "facebook": "https://www.facebook.com/mexicana.tlv",
     "certifiedBy": "רבנות מקומית",
     "kosherType": "regular",
-    "source": "manual"
+    "source": "manual",
+    "locationPrecision": "exact"
   },
   {
     "id": "manual-mexicana-rehovot",
@@ -120230,15 +120272,16 @@
     "address": "גיבורי ישראל 17, Y סנטר, נתניה",
     "cityId": "נתניה",
     "location": {
-      "latitude": 32.325,
-      "longitude": 34.8543
+      "latitude": 32.2814382,
+      "longitude": 34.8615084
     },
     "website": "https://rapidos.co.il",
     "instagram": "https://www.instagram.com/rapidos.il",
     "facebook": "https://www.facebook.com/rapidos.il",
     "certifiedBy": "רבנות מקומית",
     "kosherType": "regular",
-    "source": "manual"
+    "source": "manual",
+    "locationPrecision": "exact"
   },
   {
     "id": "manual-rapidos-herzliya",
@@ -120248,15 +120291,16 @@
     "address": "דוד בן גוריון 35, הרצליה",
     "cityId": "הרצליה",
     "location": {
-      "latitude": 32.1653,
-      "longitude": 34.8367
+      "latitude": 32.1611616,
+      "longitude": 34.8429058
     },
     "website": "https://rapidos.co.il",
     "instagram": "https://www.instagram.com/rapidos.il",
     "facebook": "https://www.facebook.com/rapidos.il",
     "certifiedBy": "רבנות מקומית",
     "kosherType": "regular",
-    "source": "manual"
+    "source": "manual",
+    "locationPrecision": "exact"
   },
   {
     "id": "manual-rapidos-pt",
@@ -123330,8 +123374,8 @@
     "address": "ברק 2, נשר",
     "phone": "054-547-4373",
     "location": {
-      "latitude": 32.7628,
-      "longitude": 35.0407
+      "latitude": 32.7695148,
+      "longitude": 35.0474747
     },
     "website": "https://www.facebook.com/shipodim",
     "openingHours": "א'-ה' 07:30-19:30 | ו' 09:00-13:00 | ש' סגור",
@@ -123341,7 +123385,8 @@
       "shawarma"
     ],
     "source": "manual",
-    "lastVerifiedAt": "2026-07-20"
+    "lastVerifiedAt": "2026-07-20",
+    "locationPrecision": "exact"
   },
   {
     "id": "elijahKA-92ee7f4b",
@@ -123392,8 +123437,8 @@
     "address": "שדרות טרומפלדור 56, חיפה",
     "phone": "04-869-1446",
     "location": {
-      "latitude": 32.8134,
-      "longitude": 35.0005
+      "latitude": 32.782818,
+      "longitude": 35.0140385
     },
     "website": "https://www.instagram.com/the_twin_shawarma",
     "openingHours": "א'-ה' 12:00-22:30 | ו' 12:00-16:00 | ש' סגור",
@@ -123403,7 +123448,8 @@
       "shawarma"
     ],
     "source": "manual",
-    "lastVerifiedAt": "2026-07-20"
+    "lastVerifiedAt": "2026-07-20",
+    "locationPrecision": "exact"
   },
   {
     "id": "papaluski-e0ab043a",
@@ -123413,8 +123459,8 @@
     "address": "שדרות הגעתון 19, נהריה",
     "phone": "04-992-9459",
     "location": {
-      "latitude": 33.0056,
-      "longitude": 35.096
+      "latitude": 33.0057693,
+      "longitude": 35.0958999
     },
     "openingHours": "א'-ה' 09:00-22:00 | ו' 09:00-14:00 | ש' סגור",
     "category": "meat",
@@ -123423,7 +123469,8 @@
       "shawarma"
     ],
     "source": "manual",
-    "lastVerifiedAt": "2026-07-20"
+    "lastVerifiedAt": "2026-07-20",
+    "locationPrecision": "exact"
   },
   {
     "id": "ramoshlomi-b635f576",
@@ -126367,13 +126414,14 @@
     "address": "החילזון 12, רמת גן",
     "cityId": "רמת גן",
     "location": {
-      "latitude": 32.082,
-      "longitude": 34.82
+      "latitude": 32.0859036,
+      "longitude": 34.8034605
     },
     "website": "https://www.joe.co.il",
     "kosherType": "regular",
     "openingHours": "א׳-ה׳ 07:00-16:00",
-    "source": "manual"
+    "source": "manual",
+    "locationPrecision": "exact"
   },
   {
     "id": "manual-cafe-joe-ramla",
@@ -126415,13 +126463,14 @@
     "address": "בן גוריון 32, רמת גן",
     "cityId": "רמת גן",
     "location": {
-      "latitude": 32.07,
-      "longitude": 34.819
+      "latitude": 32.0922255,
+      "longitude": 34.8221086
     },
     "website": "https://www.joe.co.il",
     "kosherType": "regular",
     "openingHours": "א׳-ה׳ 07:00-17:00",
-    "source": "manual"
+    "source": "manual",
+    "locationPrecision": "exact"
   },
   {
     "id": "mifgash-berlin-f692e96f",
@@ -136592,8 +136641,8 @@
     "cityId": "אשקלון",
     "address": "אלי כהן 37, אשקלון",
     "location": {
-      "latitude": 31.669,
-      "longitude": 34.571
+      "latitude": 31.6698202,
+      "longitude": 34.5792019
     },
     "phone": "08-8562562",
     "website": "https://pizza-story.co.il",
@@ -136605,7 +136654,7 @@
     "certifiedBy": "בד\"ץ בית יוסף",
     "openingHours": "Su-Th 08:00-23:30; Fr 08:00-14:00; Sa 22:00-00:00",
     "source": "manual",
-    "locationPrecision": "city",
+    "locationPrecision": "exact",
     "lastVerifiedAt": "2026-07-29"
   },
   {
@@ -136616,8 +136665,8 @@
     "cityId": "אשקלון",
     "address": "שפירא 25, אשקלון",
     "location": {
-      "latitude": 31.669,
-      "longitude": 34.571
+      "latitude": 31.8011609,
+      "longitude": 34.641527
     },
     "phone": "08-6527777",
     "website": "https://pizza-story.co.il",
@@ -136629,7 +136678,7 @@
     "certifiedBy": "בד\"ץ בית יוסף",
     "openingHours": "Su-Th 08:00-23:30; Fr 08:00-14:00; Sa 22:00-00:00",
     "source": "manual",
-    "locationPrecision": "city",
+    "locationPrecision": "exact",
     "lastVerifiedAt": "2026-07-29"
   },
   {
@@ -136712,8 +136761,8 @@
     "cityId": "חולון",
     "address": "אילת 18, חולון",
     "location": {
-      "latitude": 32.02,
-      "longitude": 34.779
+      "latitude": 32.021587,
+      "longitude": 34.764939
     },
     "phone": "03-5053353",
     "website": "https://pizza-story.co.il",
@@ -136725,7 +136774,7 @@
     "certifiedBy": "הרב לנדא",
     "openingHours": "Su-Th 10:30-23:00; Sa 22:00-23:00",
     "source": "manual",
-    "locationPrecision": "city",
+    "locationPrecision": "exact",
     "lastVerifiedAt": "2026-07-29"
   },
   {
@@ -136760,8 +136809,8 @@
     "cityId": "חיפה",
     "address": "חניתה 40, חיפה",
     "location": {
-      "latitude": 32.794,
-      "longitude": 34.989
+      "latitude": 32.7923749,
+      "longitude": 35.0120639
     },
     "phone": "",
     "website": "https://pizza-story.co.il",
@@ -136773,7 +136822,7 @@
     "certifiedBy": "הרב לנדא",
     "openingHours": "Su-Th 10:00-23:00; Sa 22:00-23:00",
     "source": "manual",
-    "locationPrecision": "city",
+    "locationPrecision": "exact",
     "lastVerifiedAt": "2026-07-29"
   },
   {
@@ -136784,8 +136833,8 @@
     "cityId": "חריש",
     "address": "דרך ארץ 58, חריש",
     "location": {
-      "latitude": 32.456,
-      "longitude": 35.023
+      "latitude": 32.4608423,
+      "longitude": 35.0466908
     },
     "phone": "076-5432203",
     "website": "https://pizza-story.co.il",
@@ -136797,7 +136846,7 @@
     "certifiedBy": "הרב לנדא",
     "openingHours": "Su-Th 10:00-23:00; Sa 22:00-23:00",
     "source": "manual",
-    "locationPrecision": "city",
+    "locationPrecision": "exact",
     "lastVerifiedAt": "2026-07-29"
   },
   {
@@ -136856,8 +136905,8 @@
     "cityId": "ירושלים",
     "address": "עולי הגרדום 2, ארמון הנציב,, ירושלים",
     "location": {
-      "latitude": 31.768,
-      "longitude": 35.214
+      "latitude": 31.7528809,
+      "longitude": 35.2348074
     },
     "phone": "02-6255525",
     "website": "https://pizza-story.co.il",
@@ -136869,7 +136918,7 @@
     "certifiedBy": "בד\"ץ בית יוסף",
     "openingHours": "Su-Th 10:00-23:00; Fr 10:00-15:00; Sa 22:00-23:00",
     "source": "manual",
-    "locationPrecision": "city",
+    "locationPrecision": "exact",
     "lastVerifiedAt": "2026-07-29"
   },
   {
@@ -136880,8 +136929,8 @@
     "cityId": "ירושלים",
     "address": "צביה ויצחק 800, ירושלים",
     "location": {
-      "latitude": 31.768,
-      "longitude": 35.214
+      "latitude": 31.7304381,
+      "longitude": 35.1886104
     },
     "phone": "02-6337700",
     "website": "https://pizza-story.co.il",
@@ -136893,7 +136942,7 @@
     "certifiedBy": "הרב לנדא",
     "openingHours": "Su-Th 10:00-00:00; Fr 10:00-15:00; Sa 22:00-00:00",
     "source": "manual",
-    "locationPrecision": "city",
+    "locationPrecision": "exact",
     "lastVerifiedAt": "2026-07-29"
   },
   {
@@ -136904,8 +136953,8 @@
     "cityId": "ירושלים",
     "address": "הממציא 1, הר חומה,, ירושלים",
     "location": {
-      "latitude": 31.768,
-      "longitude": 35.214
+      "latitude": 31.7256863,
+      "longitude": 35.2224064
     },
     "phone": "02-6441191",
     "website": "https://pizza-story.co.il",
@@ -136917,7 +136966,7 @@
     "certifiedBy": "בד\"ץ בית יוסף",
     "openingHours": "Su-Th 10:00-23:00; Sa 22:00-23:00",
     "source": "manual",
-    "locationPrecision": "city",
+    "locationPrecision": "exact",
     "lastVerifiedAt": "2026-07-29"
   },
   {
@@ -136928,8 +136977,8 @@
     "cityId": "ירושלים",
     "address": "כנפי נשרים 31,, ירושלים",
     "location": {
-      "latitude": 31.768,
-      "longitude": 35.214
+      "latitude": 31.7871198,
+      "longitude": 35.1823307
     },
     "phone": "02-6222664",
     "website": "https://pizza-story.co.il",
@@ -136941,7 +136990,7 @@
     "certifiedBy": "הרב לנדא",
     "openingHours": "Su-Th 10:00-23:00; Sa 22:00-23:00",
     "source": "manual",
-    "locationPrecision": "city",
+    "locationPrecision": "exact",
     "lastVerifiedAt": "2026-07-29"
   },
   {
@@ -137240,8 +137289,8 @@
     "cityId": "ראשון לציון",
     "address": "הרצל 28, ראשון לציון",
     "location": {
-      "latitude": 31.964,
-      "longitude": 34.805
+      "latitude": 31.9693396,
+      "longitude": 34.8043177
     },
     "phone": "03-5522302",
     "website": "https://pizza-story.co.il",
@@ -137253,7 +137302,7 @@
     "certifiedBy": "בד\"ץ בית יוסף",
     "openingHours": "Su-Th 10:00-23:00; Sa 22:00-23:00",
     "source": "manual",
-    "locationPrecision": "city",
+    "locationPrecision": "exact",
     "lastVerifiedAt": "2026-07-29"
   },
   {
@@ -137336,8 +137385,8 @@
     "cityId": "רמת גן",
     "address": "שדרות ירושלים 42, רמת גן",
     "location": {
-      "latitude": 32.07,
-      "longitude": 34.823
+      "latitude": 32.0744695,
+      "longitude": 34.8235854
     },
     "phone": "03-7217777",
     "website": "https://pizza-story.co.il",
@@ -137349,7 +137398,7 @@
     "certifiedBy": "בד\"ץ בית יוסף",
     "openingHours": "Su-Th 10:00-23:00; Sa 22:00-23:00",
     "source": "manual",
-    "locationPrecision": "city",
+    "locationPrecision": "exact",
     "lastVerifiedAt": "2026-07-29"
   },
   {
