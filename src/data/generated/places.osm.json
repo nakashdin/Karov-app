@@ -138102,6 +138102,29 @@
     "cityId": "תל אביב-יפו"
   },
   {
+    "id": "manual-נונו-נודלס-שופ-שוהם",
+    "name": "נונו נודלס שופ",
+    "type": "restaurant",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "description": "מסעדה אסייתית ייחודית, טעמים מסורתיים",
+    "tags": ["asian", "noodles"],
+    "address": "עמק איילון 30, מרכז מסחרי שוהם",
+    "cityId": "שוהם",
+    "location": {
+      "latitude": 31.9992228,
+      "longitude": 34.9466929
+    },
+    "phone": "03-501-1005",
+    "instagram": "https://www.instagram.com/nunu_noodles_shop/",
+    "website": "https://www.nununoodles.co.il/",
+    "menu": "https://www.nununoodles.co.il/tpryt",
+    "openingHours": "א'-ה' 11:00-23:00 | ו' 10:00-14:30 | מוצ\"ש 45 דק' אחרי צאת שבת-23:00",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-30",
+    "locationPrecision": "address"
+  },
+  {
     "id": "manual-קפה-עלמה-שוהם",
     "name": "קפה עלמה שוהם",
     "type": "cafe",
