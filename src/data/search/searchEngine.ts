@@ -137,7 +137,12 @@ export function searchPlaces(query: string): string[] | null {
   const q = normalise(query);
   if (!q) return null;
 
-  const results = _index.search(q, { combineWith: 'OR' });
+  // Multi-word queries use AND so "פיצה האט" returns only Pizza Hut branches,
+  // not every pizza place. Single-word queries use OR (same behaviour, single term).
+  const wordCount = q.trim().split(/\s+/).filter((w) => w.length >= 2).length;
+  const combineWith = wordCount > 1 ? 'AND' : 'OR';
+
+  const results = _index.search(q, { combineWith });
   return results.map((r) => r.id as string);
 }
 
