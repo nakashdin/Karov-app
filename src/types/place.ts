@@ -55,6 +55,7 @@ export interface Place {
   menu?: string;
   instagram?: string;
   facebook?: string;
+  tiktok?: string;
   openingHours?: string;
   /** ISO date (YYYY-MM-DD) the info was last verified by an admin. */
   lastVerifiedAt?: string;
