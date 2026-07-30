@@ -104004,7 +104004,7 @@
     "type": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו שוהם",
-    "locationPrecision": "city",
+    "locationPrecision": "address",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
     "extra": {
       "dataSource": "humus-eli-yahoo.com",
@@ -104018,8 +104018,8 @@
     "category": "parve",
     "id": "humus-eli-חומוס-אליהו-שוהם",
     "location": {
-      "latitude": 31.9968113,
-      "longitude": 34.9464444
+      "latitude": 32.0047,
+      "longitude": 34.9459
     },
     "kosherType": "mehadrin",
     "phone": "03-7756882",
@@ -113107,8 +113107,8 @@
     "cityId": "שוהם",
     "address": "דקל 30, שוהם",
     "location": {
-      "latitude": 31.9962,
-      "longitude": 34.9396
+      "latitude": 32.0064,
+      "longitude": 34.9516
     },
     "website": "https://www.instagram.com/hummus_neri/",
     "category": "parve",
@@ -113116,7 +113116,8 @@
     "source": "manual",
     "lastVerifiedAt": "2026-07-15",
     "phone": "03-642-7257",
-    "openingHours": "א'-ה' 09:00-17:00 | ו' 08:00-15:00 | ש' סגור"
+    "openingHours": "א'-ה' 09:00-17:00 | ו' 08:00-15:00 | ש' סגור",
+    "locationPrecision": "address"
   },
   {
     "id": "hummusneri-8e3b3a55",
@@ -118054,8 +118055,8 @@
     "address": "הדקל 30, שוהם",
     "cityId": "שוהם",
     "location": {
-      "latitude": 31.9967,
-      "longitude": 34.9434
+      "latitude": 32.0064,
+      "longitude": 34.9516
     },
     "phone": "03-9475775",
     "website": "https://falafelbaribua.co.il",
@@ -118064,7 +118065,8 @@
     "certifiedBy": "כשרות מקומית",
     "kosherType": "regular",
     "openingHours": "א'-ה' 10:00-20:00; ו' 10:00-15:00",
-    "source": "manual"
+    "source": "manual",
+    "locationPrecision": "address"
   },
   {
     "id": "manual-falafel-baribua-rosh-haayin",
@@ -126986,8 +126988,8 @@
     "cityId": "שוהם",
     "address": "הדקל 30, שוהם מרקט, שוהם",
     "location": {
-      "latitude": 31.9987,
-      "longitude": 34.9446
+      "latitude": 32.0064,
+      "longitude": 34.9516
     },
     "openingHours": "א'-ה' 11:30-22:00 | ו' 11:30-14:00 | ש' 20:45-23:00",
     "category": "meat",
@@ -127001,7 +127003,8 @@
     "phone": "*3870",
     "website": "https://www.takumi.co.il",
     "menu": "https://order.takumi.co.il/wl/615593",
-    "instagram": "takumi_street_food"
+    "instagram": "takumi_street_food",
+    "locationPrecision": "address"
   },
   {
     "id": "suduch-0ae93b1b",
@@ -134203,8 +134206,8 @@
     "cityId": "שוהם",
     "address": "דקל 30, שוהם",
     "location": {
-      "latitude": 32.005872,
-      "longitude": 34.951194
+      "latitude": 32.0064,
+      "longitude": 34.9516
     },
     "locationPrecision": "address",
     "phone": "03-6546050",
@@ -138108,12 +138111,15 @@
     "category": "meat",
     "kosherType": "rabanut",
     "description": "מסעדה אסייתית ייחודית, טעמים מסורתיים",
-    "tags": ["asian", "noodles"],
+    "tags": [
+      "asian",
+      "noodles"
+    ],
     "address": "עמק איילון 30, מרכז מסחרי שוהם",
     "cityId": "שוהם",
     "location": {
-      "latitude": 31.9992228,
-      "longitude": 34.9466929
+      "latitude": 32.0047,
+      "longitude": 34.9459
     },
     "phone": "03-501-1005",
     "instagram": "https://www.instagram.com/nunu_noodles_shop/",
