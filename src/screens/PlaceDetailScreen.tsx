@@ -199,6 +199,11 @@ export function PlaceDetailScreen() {
             </ScrollView>
           )}
 
+          {/* Description */}
+          {place.description ? (
+            <Text style={styles.description}>{place.description}</Text>
+          ) : null}
+
           {/* Rating + Distance */}
           <View style={styles.metaRow}>
             {typeof place.rating === 'number' && (
@@ -229,6 +234,9 @@ export function PlaceDetailScreen() {
           )}
           {place.facebook && (
             <QuickAction icon="logo-facebook" label="פייסבוק" color={accent} onPress={() => Linking.openURL(place.facebook!)} />
+          )}
+          {place.tiktok && (
+            <QuickAction icon="logo-tiktok" label="טיקטוק" color={accent} onPress={() => Linking.openURL(place.tiktok!)} />
           )}
           <QuickAction icon="share-outline" label="שתף" color={accent} onPress={handleShare} />
         </View>
@@ -262,6 +270,17 @@ export function PlaceDetailScreen() {
                 accent={accent}
                 empty={!place.certifiedBy && !place.kosherType}
               />
+              {(place.extra as any)?.mashgiachPhone ? (
+                <DetailRow
+                  icon="person-outline"
+                  label="משגיח"
+                  value={`${place.certifiedBy ?? 'משגיח'} · ${(place.extra as any).mashgiachPhone}`}
+                  accent={accent}
+                  tappable
+                  onPress={() => callPhone((place.extra as any).mashgiachPhone)}
+                  link
+                />
+              ) : null}
               <DetailRow
                 icon="location-outline"
                 label="כתובת"
@@ -323,6 +342,9 @@ export function PlaceDetailScreen() {
               ) : null}
               {place.facebook ? (
                 <DetailRow icon="logo-facebook" label="פייסבוק" value="עמוד רשמי" accent={accent} tappable onPress={() => Linking.openURL(place.facebook!)} link />
+              ) : null}
+              {place.tiktok ? (
+                <DetailRow icon="logo-tiktok" label="טיקטוק" value="עמוד רשמי" accent={accent} tappable onPress={() => Linking.openURL(place.tiktok!)} link />
               ) : null}
               {place.nusach ? (
                 <DetailRow icon="book-outline" label="נוסח" value={`נוסח ${place.nusach}`} accent={accent} />
@@ -634,6 +656,14 @@ const styles = StyleSheet.create({
   },
   ratingNum: { fontSize: 14, fontWeight: '700', color: colors.text },
   distance: { fontSize: 13, color: colors.textMuted },
+  description: {
+    fontSize: 14,
+    color: colors.textMuted,
+    textAlign: 'right',
+    lineHeight: 21,
+    marginTop: spacing.sm,
+    marginBottom: spacing.xs,
+  },
 
   // Quick actions row
   quickActions: {

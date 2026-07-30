@@ -76,7 +76,7 @@ export function PlaceCard({ place, distanceKm, onPress }: PlaceCardProps) {
   const chipColor = CHIP_COLOR[place.type];
   const typeLabel = placeTypeLabel[place.type];
 
-  const isFoodType = ['restaurant', 'fast_food', 'cafe', 'coffee_cart'].includes(place.type);
+  const isFoodType = ['restaurant', 'fast_food', 'cafe', 'coffee_cart', 'juice_bar', 'ice_cream_parlor', 'bakery'].includes(place.type);
   const openStatus  = isCurrentlyOpen(place.openingHours, place.location);
   const todayHours  = todayHoursStr(place.openingHours);
   const showHoursRow = todayHours !== null || openStatus !== null;

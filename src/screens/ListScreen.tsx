@@ -72,7 +72,7 @@ export function ListScreen() {
     { key: 'meat',        label: t.cuisine.meat,        emoji: '🥩' },
   ];
   const { places, loading, error, reload } = usePlaces(filters);
-  const isFoodType = ['restaurant', 'fast_food', 'cafe', 'coffee_cart', 'bakery'].includes(filters.placeType ?? '');
+  const isFoodType = ['restaurant', 'fast_food', 'cafe', 'coffee_cart', 'juice_bar', 'ice_cream_parlor', 'bakery'].includes(filters.placeType ?? '');
   // Base places filtered by placeType only — used for kosherType chips + autocomplete
   const { places: basePlaces } = usePlaces(filters.placeType ? { placeType: filters.placeType } : {});
   const availableKosherTypes = useMemo<KosherType[]>(() => {
