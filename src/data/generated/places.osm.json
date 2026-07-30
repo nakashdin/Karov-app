@@ -104018,8 +104018,8 @@
     "category": "parve",
     "id": "humus-eli-חומוס-אליהו-שוהם",
     "location": {
-      "latitude": 32.0047,
-      "longitude": 34.9459
+      "latitude": 31.999,
+      "longitude": 34.947
     },
     "kosherType": "mehadrin",
     "phone": "03-7756882",
@@ -109195,7 +109195,7 @@
     "type": "ice_cream_parlor",
     "openingHours": "א-ה 9:00-23:30 | ו 9:00-חצי שעה לפני שבת | ש חצי שעה אחרי צאת שבת-23:30",
     "name": "גלידה גולדה",
-    "locationPrecision": "city",
+    "locationPrecision": "address",
     "website": "https://www.goldaglida.co.il",
     "cityId": "שוהם",
     "address": "עמק איילון 30, שוהם",
@@ -109203,8 +109203,8 @@
     "instagram": "https://instagram.com/golda.glida",
     "category": "dairy",
     "location": {
-      "latitude": 31.999,
-      "longitude": 34.944
+      "latitude": 31.9992228,
+      "longitude": 34.9466929
     },
     "kosherType": "rabanut",
     "source": "manual",
@@ -110939,10 +110939,10 @@
     "cityId": "שוהם",
     "address": "שד' עמק איילון 30, שוהם",
     "location": {
-      "latitude": 31.999,
-      "longitude": 34.943
+      "latitude": 31.9988116,
+      "longitude": 34.9468915
     },
-    "locationPrecision": "city",
+    "locationPrecision": "address",
     "website": "https://rebar.co.il",
     "instagram": "https://www.instagram.com/rebar_israel/",
     "openingHours": "א-ה 07:45-22:00 | ו 07:45-15:30 | ש סגור",
@@ -129350,8 +129350,8 @@
     "address": "שדרות עמק איילון 30, מרכז מסחרי שוהם",
     "phone": "03-979-4761",
     "location": {
-      "latitude": 31.9986,
-      "longitude": 34.9437
+      "latitude": 31.9988116,
+      "longitude": 34.9468915
     },
     "openingHours": "א'-ה' 10:00-21:00 | ו' 10:00-15:00 | ש' סגור",
     "category": "parve",
@@ -129361,7 +129361,8 @@
       "שוורמה"
     ],
     "source": "manual",
-    "lastVerifiedAt": "2026-07-23"
+    "lastVerifiedAt": "2026-07-23",
+    "locationPrecision": "address"
   },
   {
     "id": "rebar-bs-central-station",
@@ -133492,7 +133493,8 @@
     "certifiedBy": "בד\"צ בית יוסף",
     "source": "manual",
     "kosherType": "badatz_beit_yosef",
-    "lastVerifiedAt": "2026-07-29"
+    "lastVerifiedAt": "2026-07-30",
+    "openingHours": "א'-ה' 10:00-00:00 | ו' לפי הזמנות | מוצ\"ש עד 00:00"
   },
   {
     "id": "9000034",
@@ -134131,11 +134133,12 @@
     "phone": "03-5040408",
     "website": "https://pizza-shemesh.co.il/ראש-העין/",
     "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "openingHours": "Su-Th 11:00-23:30; Fr 11:00-15:00; Sa 22:00-23:00",
+    "openingHours": "א'-ה' 11:00-23:30 | ו' 11:00-15:00 | מוצ\"ש עד 23:00",
     "category": "dairy",
     "certifiedBy": "בד\"ץ בית יוסף",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-29"
+    "lastVerifiedAt": "2026-07-30",
+    "kosherType": "badatz_beit_yosef"
   },
   {
     "id": "9000066",
@@ -134151,11 +134154,12 @@
     "phone": "03-5040408",
     "website": "https://pizza-shemesh.co.il/סניף-ראש-העין-שבזי-201/",
     "instagram": "https://www.instagram.com/pizza_shemesh_israel",
-    "openingHours": "Su-Th 11:00-23:30; Sa 22:00-23:00",
+    "openingHours": "א'-ה' 11:00-23:30 | ו' סגור | מוצ\"ש עד 23:00",
     "category": "dairy",
     "certifiedBy": "בד\"ץ בית יוסף",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-29"
+    "lastVerifiedAt": "2026-07-30",
+    "kosherType": "badatz_beit_yosef"
   },
   {
     "id": "9000067",
@@ -134427,7 +134431,8 @@
     "category": "dairy",
     "certifiedBy": "בד\"ץ העדה החרדית",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-29"
+    "lastVerifiedAt": "2026-07-30",
+    "kosherType": "badatz_edah"
   },
   {
     "id": "9000080",
@@ -134468,7 +134473,8 @@
     "category": "dairy",
     "certifiedBy": "בד\"ץ בית יוסף",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-29"
+    "lastVerifiedAt": "2026-07-30",
+    "kosherType": "badatz_beit_yosef"
   },
   {
     "id": "9000082",
@@ -136454,14 +136460,14 @@
       "lat": 32.1838,
       "lng": 34.8709
     },
-    "phone": "",
-    "kosherType": "rabanut_mehadrin",
+    "phone": "09-9552286",
+    "kosherType": "badatz_beit_yosef",
     "certifiedBy": "הרב רובין",
     "website": "https://pizza-shemesh.co.il/סניף-רעננה-רחוב-אחוזה/",
-    "openingHours": "Su-Th 11:00-23:00; Sa 22:00-23:30",
+    "openingHours": "א'-ה' 11:00-23:00 | ו' סגור | מוצ\"ש עד 23:30",
     "source": "manual",
     "locationPrecision": "city",
-    "lastVerifiedAt": "2026-07-29"
+    "lastVerifiedAt": "2026-07-30"
   },
   {
     "id": "manual-pizza-bakikar-holon",
@@ -138118,8 +138124,8 @@
     "address": "עמק איילון 30, מרכז מסחרי שוהם",
     "cityId": "שוהם",
     "location": {
-      "latitude": 32.0047,
-      "longitude": 34.9459
+      "latitude": 31.9988116,
+      "longitude": 34.9468915
     },
     "phone": "03-501-1005",
     "instagram": "https://www.instagram.com/nunu_noodles_shop/",
