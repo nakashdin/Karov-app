@@ -7,13 +7,11 @@ export const DESKTOP_BREAKPOINT = 900;
 
 interface ScreenProps {
   children: ReactNode;
-  /** Apply default horizontal padding. */
   padded?: boolean;
   style?: ViewStyle;
   edges?: Edge[];
 }
 
-/** Standard screen wrapper: safe-area + app background. */
 export function Screen({
   children,
   padded = false,
@@ -28,8 +26,7 @@ export function Screen({
       <View
         style={[
           styles.content,
-          isDesktop && { maxWidth: 1200, alignSelf: 'center' as const },
-          !isDesktop && Platform.OS === 'web' && { maxWidth: 480, alignSelf: 'center' as const },
+          isDesktop && styles.contentDesktop,
           padded && styles.padded,
           style,
         ]}
@@ -47,6 +44,12 @@ const styles = StyleSheet.create({
   },
   content: {
     flex: 1,
+    ...(Platform.OS === 'web'
+      ? { maxWidth: 480, alignSelf: 'center' as const }
+      : {}),
+  },
+  contentDesktop: {
+    maxWidth: 1200,
   },
   padded: {
     paddingHorizontal: spacing.lg,

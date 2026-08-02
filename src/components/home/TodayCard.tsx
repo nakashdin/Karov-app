@@ -184,17 +184,20 @@ export function TodayCard({ cityName, onSynagoguePress, favoriteSynagogue }: Pro
           <Ionicons name="people-outline" size={12} color={colors.categorySynagogue} />
           <View style={styles.chipTexts}>
             <Text style={styles.chipLabel}>{prayerName}</Text>
-            <Text style={styles.chipValue}>{prayerTime}</Text>
+            {favoriteSynagogue ? (
+              <Text style={[styles.chipValue, { color: colors.textMuted, fontSize: 9 }]}>
+                יש לבדוק
+              </Text>
+            ) : (
+              <Text style={styles.chipValue}>{prayerTime}</Text>
+            )}
           </View>
         </Pressable>
 
         <View style={styles.chipDivider} />
 
-        {/* Location chip */}
-        <Pressable
-          style={({ pressed }) => [styles.chip, pressed && styles.chipPressed]}
-          onPress={() => navigation.navigate('WhatsAround')}
-        >
+        {/* Location chip — display only, no navigation */}
+        <View style={styles.chip}>
           <Ionicons name="navigate-outline" size={12} color={colors.primary} />
           <View style={styles.chipTexts}>
             <Text style={[styles.chipLabel, { color: colors.primary }]}>נמצא כעת</Text>
@@ -205,7 +208,7 @@ export function TodayCard({ cityName, onSynagoguePress, favoriteSynagogue }: Pro
               {locationLabel}
             </Text>
           </View>
-        </Pressable>
+        </View>
 
         <View style={styles.chipDivider} />
 
