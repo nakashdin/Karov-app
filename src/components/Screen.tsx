@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { StyleSheet, View, ViewStyle } from 'react-native';
+import { Platform, StyleSheet, View, ViewStyle } from 'react-native';
 import { SafeAreaView, Edge } from 'react-native-safe-area-context';
 import { colors, spacing } from '../theme';
 
@@ -27,6 +27,8 @@ export function Screen({
   );
 }
 
+const WEB_MAX_WIDTH = 480;
+
 const styles = StyleSheet.create({
   safe: {
     flex: 1,
@@ -34,6 +36,12 @@ const styles = StyleSheet.create({
   },
   content: {
     flex: 1,
+    ...(Platform.OS === 'web'
+      ? {
+          maxWidth: WEB_MAX_WIDTH,
+          alignSelf: 'center' as const,
+        }
+      : {}),
   },
   padded: {
     paddingHorizontal: spacing.lg,

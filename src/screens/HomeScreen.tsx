@@ -1,6 +1,7 @@
-import React, { useMemo, useState, useEffect } from 'react';
+import React, { useMemo, useState, useEffect, useCallback } from 'react';
 import {
   Pressable,
+  RefreshControl,
   ScrollView,
   StyleSheet,
   Text,
@@ -22,6 +23,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { usePlaces } from '../hooks/usePlaces';
 import { useParasha } from '../hooks/useParasha';
 import { useHebrewDate } from '../hooks/useHebrewDate';
+import { useCityName } from '../hooks/useCityName';
 import { useSharedLocation } from '../context/LocationContext';
 import { useFilters } from '../context/FiltersContext';
 import { distanceKm } from '../utils/geo';
@@ -51,10 +53,13 @@ export function HomeScreen() {
   const { parasha } = useParasha();
   const hebrewDate = useHebrewDate();
   const { location } = useSharedLocation();
+  const cityName = useCityName(location);
   const { setFilters } = useFilters();
   const [userName, setUserName] = useState<string | null>(null);
   const [langOpen, setLangOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [refreshing, setRefreshing] = useState(false);
+  const [refreshKey, setRefreshKey] = useState(0);
 
   useEffect(() => {
     AsyncStorage.getItem('@karov/auth').then((raw) => {
@@ -81,6 +86,17 @@ export function HomeScreen() {
     navigation.navigate('List', undefined);
   };
 
+  const openSynagogues = useCallback(() => {
+    setFilters({ ...emptyFilters, placeType: 'synagogue' });
+    navigation.navigate('List', undefined);
+  }, [setFilters, navigation]);
+
+  const onRefresh = useCallback(() => {
+    setRefreshing(true);
+    setRefreshKey((k) => k + 1);
+    setTimeout(() => setRefreshing(false), 600);
+  }, []);
+
   const dayName = HEBREW_DAYS[new Date().getDay()];
   const hour = new Date().getHours();
   const isNight = hour >= 20 || hour < 6;
@@ -89,11 +105,21 @@ export function HomeScreen() {
 
   const sunEmoji = isShabbat ? '🕯' : isFriday ? '🌅' : isNight ? '🌙' : '☀️';
 
+  const locationDisplay = cityName ?? (location ? '...' : null);
+
   return (
     <Screen>
       <ScrollView
         contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}
+        refreshControl={
+          <RefreshControl
+            refreshing={refreshing}
+            onRefresh={onRefresh}
+            tintColor={colors.primary}
+            colors={[colors.primary]}
+          />
+        }
       >
         {/* ── Hero Area ─────────────────────────────────────── */}
         <View style={styles.hero}>
@@ -118,9 +144,9 @@ export function HomeScreen() {
             <Text style={styles.greetingDate}>
               {dayName}{hebrewDate ? ` • ${hebrewDate}` : ''}
             </Text>
-            {location && (
+            {locationDisplay && (
               <View style={styles.locationRow}>
-                <Text style={styles.locationText}>המיקום שלך</Text>
+                <Text style={styles.locationText}>{locationDisplay}</Text>
                 <Ionicons name="location-outline" size={12} color={colors.textMuted} />
               </View>
             )}
@@ -144,7 +170,11 @@ export function HomeScreen() {
         </View>
 
         {/* ── Today Card ────────────────────────────────────── */}
-        <TodayCard />
+        <TodayCard
+          key={refreshKey}
+          cityName={cityName}
+          onSynagoguePress={openSynagogues}
+        />
 
         {/* ── Daily Carousel ────────────────────────────────── */}
         <Text style={styles.sectionLabelSm}>תוכן יומי</Text>

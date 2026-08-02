@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Alert, Pressable, StyleSheet, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
@@ -9,6 +9,11 @@ import { colors, radius, shadow, spacing } from '../../theme';
 import { RootStackParamList } from '../../navigation/types';
 
 type Nav = NativeStackNavigationProp<RootStackParamList>;
+
+interface Props {
+  cityName: string | null;
+  onSynagoguePress: () => void;
+}
 
 function minsToHHMM(m: number): string {
   const h = Math.floor(m / 60) % 24;
@@ -28,33 +33,57 @@ function fmtCountdown(totalMins: number): string {
   return h > 0 ? `${h}:${String(m).padStart(2, '0')}` : `${m}`;
 }
 
-export function TodayCard() {
+export function TodayCard({ cityName, onSynagoguePress }: Props) {
   const { location } = useSharedLocation();
   const navigation = useNavigation<Nav>();
   const [, setTick] = useState(0);
 
   useEffect(() => {
-    const id = setInterval(() => setTick(n => n + 1), 60_000);
+    const id = setInterval(() => setTick((n) => n + 1), 60_000);
     return () => clearInterval(id);
   }, []);
 
   const now = new Date();
   const day = now.getDay();
   const hour = now.getHours();
+  const nowMins = hour * 60 + now.getMinutes();
 
   let countdownLabel = 'שקיעה בעוד';
   let countdownValue = '--:--';
   let timesLine = 'הפעל מיקום לזמנים מדויקים';
-  let minchaStr = '--:--';
   let isNight = hour >= 20 || hour < 6;
+
+  // Prayer chip
+  let prayerName = 'מנחה';
+  let prayerTime = '--:--';
 
   if (location) {
     const z = calcZmanim(now, location);
     if (z) {
       const sunsetStr = minsToHHMM(z.sunset);
       const nightfallStr = minsToHHMM(z.nightfall);
-      minchaStr = minsToHHMM(Math.round(z.sunset - 30));
       isNight = minsLeft(z.sunset) <= 0;
+
+      const chatzot = (z.sunrise + z.sunset) / 2;
+
+      if (day === 6) {
+        if (nowMins < chatzot + 30) {
+          prayerName = 'מוסף';
+          prayerTime = minsToHHMM(Math.round(chatzot + 30));
+        } else {
+          prayerName = 'מנחה';
+          prayerTime = minsToHHMM(Math.round(z.sunset - 25));
+        }
+      } else if (nowMins < chatzot) {
+        prayerName = 'שחרית';
+        prayerTime = minsToHHMM(Math.round(chatzot));
+      } else if (nowMins < z.sunset) {
+        prayerName = 'מנחה';
+        prayerTime = minsToHHMM(Math.round(z.sunset - 25));
+      } else {
+        prayerName = 'ערבית';
+        prayerTime = minsToHHMM(z.nightfall);
+      }
 
       if (day === 6) {
         const left = minsLeft(z.nightfall);
@@ -87,10 +116,26 @@ export function TodayCard() {
   const illustBg = day === 6 ? '#F5F0E8' : isNight ? '#1E2A4A' : '#FFF8E6';
   const illustEmoji = day === 6 ? '🕯' : isNight ? '🌙' : '☀️';
 
+  const locationLabel = cityName ?? (location ? '...' : 'הפעל מיקום');
+
+  const handlePrayerPress = () => {
+    Alert.alert(
+      'זמני תפילה',
+      'לא נבחר בית כנסת.\nבחר בית כנסת קרוב לקבלת זמני תפילה מדויקים.',
+      [
+        { text: 'בחר בית כנסת', onPress: onSynagoguePress },
+        { text: 'סגור', style: 'cancel' },
+      ],
+    );
+  };
+
   return (
     <View style={styles.card}>
-      {/* Main row: illustration (left) | text (right) */}
-      <View style={styles.mainRow}>
+      {/* Main row: pressable → Zmanim tab */}
+      <Pressable
+        style={({ pressed }) => [styles.mainRow, pressed && styles.mainPressed]}
+        onPress={() => navigation.navigate('Tabs', { screen: 'Zmanim' })}
+      >
         {/* Left side — illustration */}
         <View style={[styles.illustration, { backgroundColor: illustBg }]}>
           <Text style={styles.illustEmoji}>{illustEmoji}</Text>
@@ -100,48 +145,62 @@ export function TodayCard() {
         <View style={styles.textContent}>
           <View style={styles.labelRow}>
             <Text style={styles.cardLabel}>היום שלך</Text>
-            <Ionicons name="calendar-outline" size={14} color={colors.textMuted} />
+            <Ionicons name="chevron-forward" size={13} color={colors.textFaint} />
           </View>
           <Text style={styles.countdownLabel}>{countdownLabel}</Text>
           <Text style={styles.countdown}>{countdownValue}</Text>
           <Text style={styles.timesLine} numberOfLines={1}>{timesLine}</Text>
         </View>
-      </View>
+      </Pressable>
 
       {/* Bottom chips */}
       <View style={styles.chipsRow}>
-        {/* Mincha — rightmost in RTL */}
-        <View style={styles.chip}>
+        {/* Prayer chip */}
+        <Pressable
+          style={({ pressed }) => [styles.chip, pressed && styles.chipPressed]}
+          onPress={handlePrayerPress}
+        >
           <Ionicons name="people-outline" size={12} color={colors.categorySynagogue} />
           <View style={styles.chipTexts}>
-            <Text style={styles.chipLabel}>מנחה</Text>
-            <Text style={styles.chipValue}>{minchaStr}</Text>
+            <Text style={styles.chipLabel}>{prayerName}</Text>
+            <Text style={styles.chipValue}>{prayerTime}</Text>
           </View>
-        </View>
-
-        <View style={styles.chipDivider} />
-
-        {/* WhatsAround navigation */}
-        <Pressable
-          style={({ pressed }) => [styles.chip, pressed && styles.pressed]}
-          onPress={() => navigation.navigate('WhatsAround')}
-        >
-          <Ionicons name="navigate-outline" size={12} color={colors.primary} />
-          <Text style={[styles.chipLabel, { color: colors.primary, fontWeight: '600' }]}>
-            מה יש סביבי?
-          </Text>
         </Pressable>
 
         <View style={styles.chipDivider} />
 
-        {/* Synagogue placeholder */}
-        <View style={styles.chip}>
+        {/* Location chip */}
+        <Pressable
+          style={({ pressed }) => [styles.chip, pressed && styles.chipPressed]}
+          onPress={() => navigation.navigate('WhatsAround')}
+        >
+          <Ionicons name="navigate-outline" size={12} color={colors.primary} />
+          <View style={styles.chipTexts}>
+            <Text style={[styles.chipLabel, { color: colors.primary }]}>נמצא כעת</Text>
+            <Text
+              style={[styles.chipValue, { color: colors.primary }]}
+              numberOfLines={1}
+            >
+              {locationLabel}
+            </Text>
+          </View>
+        </Pressable>
+
+        <View style={styles.chipDivider} />
+
+        {/* Synagogue chip */}
+        <Pressable
+          style={({ pressed }) => [styles.chip, pressed && styles.chipPressed]}
+          onPress={onSynagoguePress}
+        >
           <Ionicons name="business-outline" size={12} color={colors.categorySynagogue} />
           <View style={styles.chipTexts}>
             <Text style={styles.chipLabel}>בית כנסת</Text>
-            <Text style={[styles.chipValue, { color: colors.textFaint }]}>טרם נבחר</Text>
+            <Text style={[styles.chipValue, { color: colors.textFaint, fontSize: 10 }]}>
+              טרם נבחר
+            </Text>
           </View>
-        </View>
+        </Pressable>
       </View>
     </View>
   );
@@ -158,6 +217,12 @@ const styles = StyleSheet.create({
   },
   mainRow: {
     flexDirection: 'row',
+  },
+  mainPressed: {
+    opacity: 0.88,
+  },
+  chipPressed: {
+    opacity: 0.7,
   },
   illustration: {
     width: 88,
@@ -177,7 +242,7 @@ const styles = StyleSheet.create({
   labelRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 5,
+    gap: 4,
     marginBottom: 4,
   },
   cardLabel: {
@@ -211,7 +276,7 @@ const styles = StyleSheet.create({
     alignItems: 'stretch',
     borderTopWidth: 0.5,
     borderTopColor: colors.border,
-    minHeight: 48,
+    minHeight: 52,
   },
   chip: {
     flex: 1,
@@ -230,6 +295,8 @@ const styles = StyleSheet.create({
   chipTexts: {
     alignItems: 'center',
     gap: 1,
+    minWidth: 0,
+    flexShrink: 1,
   },
   chipLabel: {
     fontSize: 9,
@@ -242,8 +309,5 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     color: colors.text,
     textAlign: 'center',
-  },
-  pressed: {
-    opacity: 0.8,
   },
 });
