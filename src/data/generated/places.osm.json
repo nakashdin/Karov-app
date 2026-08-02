@@ -138244,5 +138244,26 @@
     "extra": {
       "mashgiachPhone": "054-2283663"
     }
+  },
+  {
+    "id": "manual-הנדרסון-בורגר-שוהם",
+    "name": "הנדרסון בורגר",
+    "type": "restaurant",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "certifiedBy": "רבנות שוהם",
+    "address": "עמק איילון 32, שוהם",
+    "cityId": "שוהם",
+    "location": {
+      "latitude": 32.0056299,
+      "longitude": 34.9479839
+    },
+    "locationPrecision": "address",
+    "phone": "03-7702977",
+    "openingHours": "א'-ה' 11:30-23:00 | שבת 20:15-00:15",
+    "menu": "https://tabitisrael.co.il/tabit-order?siteName=malika&step=menu",
+    "website": "https://tabitisrael.co.il/tabit-order?siteName=malika&step=enter",
+    "source": "manual",
+    "lastVerifiedAt": "2026-08-02"
   }
 ]
