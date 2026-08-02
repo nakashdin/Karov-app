@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useMemo, useState, useEffect } from 'react';
 import {
   Pressable,
   ScrollView,
@@ -11,35 +11,46 @@ import { Ionicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { Screen } from '../components/Screen';
-import { PlaceCard } from '../components/PlaceCard';
 import { Loading } from '../components/Loading';
 import { LanguagePicker } from '../components/LanguagePicker';
 import { AppMenu } from '../components/AppMenu';
+import { TodayCard } from '../components/home/TodayCard';
+import { DailyCarousel } from '../components/home/DailyCarousel';
+import { NearbyHorizontalList } from '../components/home/NearbyHorizontalList';
 import { colors, radius, shadow, spacing } from '../theme';
 import { useLanguage } from '../context/LanguageContext';
 import { usePlaces } from '../hooks/usePlaces';
 import { useParasha } from '../hooks/useParasha';
+import { useHebrewDate } from '../hooks/useHebrewDate';
 import { useSharedLocation } from '../context/LocationContext';
 import { useFilters } from '../context/FiltersContext';
 import { distanceKm } from '../utils/geo';
 import { emptyFilters, PlaceType } from '../types';
 import { RootStackParamList } from '../navigation/types';
-import { ParashaCard } from '../components/ParashaCard';
-import type { Strings } from '../i18n';
 
 type Nav = NativeStackNavigationProp<RootStackParamList>;
 
-function getDayGreeting(t: Strings): string {
-  const day = new Date().getDay();
-  return day === 5 || day === 6 ? t.greeting.shabbat : t.greeting.weekday;
-}
+const HEBREW_DAYS = ['יום ראשון', 'יום שני', 'יום שלישי', 'יום רביעי', 'יום חמישי', 'יום שישי', 'שבת'];
+
+const ALL_SHORTCUTS = [
+  { icon: 'restaurant' as const,    color: colors.categoryRestaurant, bg: '#FEF3E2', label: 'מסעדות',      type: 'restaurant' },
+  { icon: 'fast-food' as const,     color: colors.categoryFastFood,   bg: '#FEE8E2', label: 'מזון מהיר',   type: 'fast_food' },
+  { icon: 'cafe' as const,          color: colors.categoryCafe,       bg: '#F0EAF8', label: 'בתי קפה',     type: 'cafe' },
+  { icon: 'cafe-outline' as const,  color: colors.categoryCoffeeCart, bg: '#EBF5E6', label: 'עגלות קפה',   type: 'coffee_cart' },
+  { icon: 'wine' as const,          color: colors.categoryWinery,     bg: '#F8EAF0', label: 'ייקבים',      type: 'winery' },
+  { icon: 'business' as const,      color: colors.categorySynagogue,  bg: '#E8F1FC', label: 'בתי כנסת',    type: 'synagogue' },
+  { icon: 'water' as const,         color: colors.categoryMikveh,     bg: '#E5F5FD', label: 'מקוואות',     type: 'mikveh' },
+  { icon: 'home' as const,          color: colors.chabad,             bg: '#F0EBF8', label: 'בתי חב"ד',    type: 'chabad_house' },
+  { icon: 'flower-outline' as const,color: colors.tzaddik,            bg: '#F5EEEA', label: 'קברי צדיקים', type: 'tzaddik_grave' },
+] as const;
 
 export function HomeScreen() {
   const navigation = useNavigation<Nav>();
   const { t } = useLanguage();
   const { places, loading } = usePlaces();
   const { parasha } = useParasha();
-  const { status, location, request } = useSharedLocation();
+  const hebrewDate = useHebrewDate();
+  const { location } = useSharedLocation();
   const { setFilters } = useFilters();
   const [userName, setUserName] = useState<string | null>(null);
   const [langOpen, setLangOpen] = useState(false);
@@ -58,24 +69,25 @@ export function HomeScreen() {
   const nearby = useMemo(() => {
     const list = [...places];
     if (location) {
-      list.sort(
-        (a, b) =>
-          distanceKm(location, a.location) - distanceKm(location, b.location),
-      );
+      list.sort((a, b) => distanceKm(location, a.location) - distanceKm(location, b.location));
     } else {
       list.sort((a, b) => (b.rating ?? 0) - (a.rating ?? 0));
     }
-    return list.slice(0, 4);
+    return list.slice(0, 6);
   }, [places, location]);
-
-  const onWhatsAround = () => {
-    navigation.navigate('WhatsAround');
-  };
 
   const openType = (placeType: PlaceType) => {
     setFilters({ ...emptyFilters, placeType });
     navigation.navigate('List', undefined);
   };
+
+  const dayName = HEBREW_DAYS[new Date().getDay()];
+  const hour = new Date().getHours();
+  const isNight = hour >= 20 || hour < 6;
+  const isFriday = new Date().getDay() === 5;
+  const isShabbat = new Date().getDay() === 6;
+
+  const sunEmoji = isShabbat ? '🕯' : isFriday ? '🌅' : isNight ? '🌙' : '☀️';
 
   return (
     <Screen>
@@ -83,83 +95,99 @@ export function HomeScreen() {
         contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}
       >
-        {/* Header */}
-        <View style={styles.header}>
-          {/* Top bar: globe far left | בס״ד + ☰ far right */}
-          <View style={styles.headerTopRow}>
-            <Pressable onPress={() => setLangOpen(true)} hitSlop={12} style={styles.globeBtn}>
-              <Ionicons name="globe-outline" size={19} color={colors.textMuted} />
-            </Pressable>
-            <View style={styles.bsdMenuGroup}>
-              <Text style={styles.bsd}>בס״ד</Text>
-              <Pressable onPress={() => setMenuOpen(true)} hitSlop={12} style={styles.menuBtn}>
-                <Ionicons name="menu-outline" size={22} color={colors.textMuted} />
+        {/* ── Hero Area ─────────────────────────────────────── */}
+        <View style={styles.hero}>
+          {/* Top bar */}
+          <View style={styles.heroTopBar}>
+            <View style={styles.heroLeft}>
+              <Ionicons name="notifications-outline" size={20} color={colors.textMuted} />
+              <Pressable onPress={() => setLangOpen(true)} hitSlop={12}>
+                <Ionicons name="globe-outline" size={19} color={colors.textMuted} />
               </Pressable>
             </View>
+            <Pressable onPress={() => setMenuOpen(true)} hitSlop={12}>
+              <Ionicons name="menu-outline" size={22} color={colors.textMuted} />
+            </Pressable>
           </View>
 
-          {/* Greeting + title centered */}
-          <Text style={styles.greeting}>{getDayGreeting(t)}</Text>
-          {userName && (
-            <Text style={styles.userName}>שלום, {userName} 👋</Text>
-          )}
-          <Text style={styles.title}>{t.home.title}</Text>
-          <Text style={styles.subtitle}>{t.home.subtitle}</Text>
+          {/* Greeting */}
+          <View style={styles.greetingBlock}>
+            <Text style={styles.greetingName}>
+              {userName ? `שלום, ${userName} 👋` : 'שלום 👋'}
+            </Text>
+            <Text style={styles.greetingDate}>
+              {dayName}{hebrewDate ? ` • ${hebrewDate}` : ''}
+            </Text>
+            {location && (
+              <View style={styles.locationRow}>
+                <Text style={styles.locationText}>המיקום שלך</Text>
+                <Ionicons name="location-outline" size={12} color={colors.textMuted} />
+              </View>
+            )}
+          </View>
+
+          {/* Scenery illustration */}
+          <View style={styles.scenery}>
+            <Text style={[styles.skyEl, { left: 48, top: 6, fontSize: 26 }]}>{sunEmoji}</Text>
+            <Text style={[styles.skyEl, { right: 55, top: 2, fontSize: 20 }]}>☁️</Text>
+            <Text style={[styles.skyEl, { right: 115, top: 16, fontSize: 14 }]}>☁️</Text>
+            <View style={styles.sceneryGround}>
+              <Text style={styles.sceneryEl}>🌲</Text>
+              <Text style={styles.sceneryEl}>🕌</Text>
+              <Text style={styles.sceneryEl}>🌲</Text>
+              <Text style={styles.sceneryEl}>🏛</Text>
+              <Text style={styles.sceneryEl}>🌿</Text>
+              <Text style={styles.sceneryEl}>🌲</Text>
+              <Text style={styles.sceneryEl}>🌲</Text>
+            </View>
+          </View>
         </View>
 
-        {/* CTA — elevated presence */}
+        {/* ── Today Card ────────────────────────────────────── */}
+        <TodayCard />
+
+        {/* ── Daily Carousel ────────────────────────────────── */}
+        <Text style={styles.sectionLabelSm}>תוכן יומי</Text>
+        <DailyCarousel parasha={parasha} />
+
+        {/* ── Search ────────────────────────────────────────── */}
         <Pressable
-          style={({ pressed }) => [
-            styles.ctaCard,
-            pressed && styles.pressed,
-            status === 'requesting' && styles.ctaLoading,
-          ]}
-          onPress={onWhatsAround}
-          disabled={status === 'requesting'}
+          style={({ pressed }) => [styles.searchBar, pressed && styles.pressed]}
+          onPress={() => navigation.navigate('List', undefined)}
         >
-          <Ionicons name="chevron-back" size={18} color={colors.border} />
-          <View style={styles.ctaTextBlock}>
-            <Text style={styles.ctaTitle}>
-              {status === 'requesting' ? t.home.locating : t.home.whatsAround}
-            </Text>
-            <Text style={styles.ctaSubtitle}>{t.home.whatsAroundSubtitle}</Text>
-          </View>
-          <View style={styles.ctaIconBox}>
-            <Ionicons name="navigate" size={22} color={colors.primary} />
-          </View>
+          <Ionicons name="search-outline" size={18} color={colors.textMuted} />
+          <View style={styles.searchDivider} />
+          <Text style={styles.searchPlaceholder}>מה אתה מחפש היום?</Text>
         </Pressable>
 
-        {/* Parasha card */}
-        {parasha && <ParashaCard parasha={parasha} />}
+        {/* ── Categories ────────────────────────────────────── */}
+        <Text style={styles.sectionTitle}>קטגוריות</Text>
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          contentContainerStyle={styles.shortcutsRow}
+        >
+          {ALL_SHORTCUTS.map((s) => (
+            <ShortcutCompact
+              key={s.type}
+              icon={s.icon}
+              color={s.color}
+              bgColor={s.bg}
+              label={s.label}
+              onPress={() => openType(s.type as PlaceType)}
+            />
+          ))}
+        </ScrollView>
 
-        {/* אוכל */}
-        <Text style={styles.sectionLabel}>🍽 אוכל כשר</Text>
-        <View style={styles.shortcutRow}>
-          <Shortcut icon="restaurant"    color={colors.categoryRestaurant} label="מסעדות"      onPress={() => openType('restaurant')} />
-          <Shortcut icon="fast-food"     color={colors.categoryFastFood}   label="מזון מהיר"   onPress={() => openType('fast_food')} />
-          <Shortcut icon="cafe"          color={colors.categoryCafe}       label="בתי קפה"     onPress={() => openType('cafe')} />
-          <Shortcut icon="cafe-outline"  color={colors.categoryCoffeeCart} label="עגלות קפה"   onPress={() => openType('coffee_cart')} />
-          <Shortcut icon="wine"          color={colors.categoryWinery}     label="ייקבים"      onPress={() => openType('winery')} />
-        </View>
-
-        {/* קהילה */}
-        <Text style={styles.sectionLabel}>🕍 קהילה</Text>
-        <View style={[styles.shortcutRow, styles.shortcutRowLast]}>
-          <Shortcut icon="business"      color={colors.categorySynagogue}  label={t.home.synagogues}   onPress={() => openType('synagogue')} />
-          <Shortcut icon="water"         color={colors.categoryMikveh}     label={t.home.mikvahs}      onPress={() => openType('mikveh')} />
-          <Shortcut icon="home"          color={colors.chabad}             label={t.home.chabadHouses} onPress={() => openType('chabad_house')} />
-          <Shortcut icon="flower-outline"color={colors.tzaddik}            label={t.home.tzadikGraves} onPress={() => openType('tzaddik_grave')} />
-        </View>
-
-        {/* Section header */}
+        {/* ── Nearby ────────────────────────────────────────── */}
         <View style={styles.sectionHeader}>
-          <Text style={styles.sectionTitle}>{t.home.nearbyTitle}</Text>
           <Pressable
             onPress={() => navigation.navigate('List', undefined)}
-            style={({ pressed }) => [styles.seeAllHitbox, pressed && styles.pressed]}
+            style={({ pressed }) => [pressed && styles.pressed]}
           >
             <Text style={styles.seeAll}>{t.home.seeAll}</Text>
           </Pressable>
+          <Text style={styles.sectionTitle}>{t.home.nearbyTitle}</Text>
         </View>
 
         {loading ? (
@@ -167,18 +195,11 @@ export function HomeScreen() {
             <Loading />
           </View>
         ) : (
-          nearby.map((place) => (
-            <PlaceCard
-              key={place.id}
-              place={place}
-              distanceKm={
-                location ? distanceKm(location, place.location) : null
-              }
-              onPress={() =>
-                navigation.navigate('PlaceDetail', { id: place.id })
-              }
-            />
-          ))
+          <NearbyHorizontalList
+            places={nearby}
+            location={location}
+            onPress={(id) => navigation.navigate('PlaceDetail', { id })}
+          />
         )}
       </ScrollView>
 
@@ -188,207 +209,122 @@ export function HomeScreen() {
   );
 }
 
-function Shortcut({
+// ── Inline components ────────────────────────────────────────────────────────
+
+function ShortcutCompact({
   icon,
   label,
   onPress,
   color = colors.primary,
+  bgColor = colors.primaryLight,
 }: {
   icon: keyof typeof Ionicons.glyphMap;
   label: string;
   onPress: () => void;
   color?: string;
+  bgColor?: string;
 }) {
   return (
     <Pressable
       onPress={onPress}
-      style={({ pressed }) => [styles.shortcut, pressed && styles.pressed]}
+      style={({ pressed }) => [styles.shortcutH, pressed && styles.pressed]}
     >
-      <Ionicons name={icon} size={28} color={color} />
-      <Text style={styles.shortcutLabel} numberOfLines={2}>{label}</Text>
+      <View style={[styles.shortcutHIconBox, { backgroundColor: bgColor }]}>
+        <Ionicons name={icon} size={22} color={color} />
+      </View>
+      <Text style={styles.shortcutHLabel} numberOfLines={2}>{label}</Text>
     </Pressable>
   );
 }
 
+// ── Styles ───────────────────────────────────────────────────────────────────
+
 const styles = StyleSheet.create({
   content: {
-    padding: spacing.lg,
-    paddingTop: spacing.lg,
-    paddingBottom: spacing.xxl,
+    paddingBottom: spacing.xxl + 8,
   },
 
-  // ── Header ──────────────────────────────────────────────
-  header: {
-    marginBottom: spacing.xxl,
+  // ── Hero ──────────────────────────────────────────────
+  hero: {
+    paddingTop: spacing.lg,
+    marginBottom: spacing.md,
+    overflow: 'hidden',
   },
-  headerTopRow: {
+  heroTopBar: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: spacing.lg,
-  },
-  bsdMenuGroup: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: spacing.sm,
-  },
-  bsd: {
-    fontSize: 10,
-    fontWeight: '500',
-    color: colors.textFaint,
-    letterSpacing: 0.5,
-  },
-  globeBtn: {
-    padding: 2,
-  },
-  menuBtn: {
-    padding: 2,
-  },
-  greeting: {
-    fontSize: 13,
-    fontWeight: '500',
-    color: colors.textMuted,
-    textAlign: 'center',
-    letterSpacing: 0.3,
-    marginBottom: 2,
-  },
-  userName: {
-    fontSize: 16,
-    fontWeight: '700',
-    color: colors.text,
-    textAlign: 'center',
-    marginBottom: spacing.sm,
-  },
-  title: {
-    fontSize: 38,
-    fontWeight: '800',
-    letterSpacing: -1.5,
-    color: colors.primary,
-    textAlign: 'center',
-    marginBottom: spacing.xs,
-  },
-  subtitle: {
-    fontSize: 14,
-    lineHeight: 22,
-    color: colors.textMuted,
-    textAlign: 'center',
-  },
-
-  // ── Search bar — pill shape ──────────────────────────────
-  searchBar: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: spacing.sm,
-    backgroundColor: colors.surface,
-    borderRadius: radius.pill,
-    paddingVertical: 14,
     paddingHorizontal: spacing.lg,
-    marginTop: spacing.xl,
-    marginBottom: spacing.lg,
-    borderWidth: 0.5,
-    borderColor: colors.border,
-    ...shadow.card,
+    marginBottom: spacing.md,
   },
-  searchPlaceholder: {
-    flex: 1,
-    fontSize: 15,
-    color: colors.textMuted,
-    textAlign: 'right',
-    opacity: 0.6,
-  },
-  searchDivider: {
-    width: 1,
-    height: 16,
-    backgroundColor: colors.border,
-  },
-
-  // ── CTA card — elevated presence ────────────────────────
-  ctaCard: {
+  heroLeft: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: spacing.md,
-    backgroundColor: colors.surface,
-    borderRadius: radius.lg,
-    paddingVertical: 18,
+  },
+  greetingBlock: {
     paddingHorizontal: spacing.lg,
-    marginBottom: spacing.xxl,
-    ...shadow.card,
+    alignItems: 'flex-end',
+    marginBottom: spacing.md,
   },
-  ctaLoading: {
-    opacity: 0.72,
-  },
-  ctaTextBlock: {
-    flex: 1,
-  },
-  ctaTitle: {
-    fontSize: 17,
-    fontWeight: '700',
-    letterSpacing: -0.3,
+  greetingName: {
+    fontSize: 24,
+    fontWeight: '800',
     color: colors.text,
     textAlign: 'right',
+    letterSpacing: -0.5,
   },
-  ctaSubtitle: {
+  greetingDate: {
     fontSize: 13,
     color: colors.textMuted,
     textAlign: 'right',
     marginTop: 3,
+    fontWeight: '500',
   },
-  ctaIconBox: {
-    width: 46,
-    height: 46,
-    backgroundColor: colors.primaryLight,
-    borderRadius: radius.md,
+  locationRow: {
+    flexDirection: 'row',
     alignItems: 'center',
+    gap: 4,
+    marginTop: 4,
+  },
+  locationText: {
+    fontSize: 12,
+    color: colors.textMuted,
+  },
+  scenery: {
+    height: 90,
+    position: 'relative',
+    overflow: 'hidden',
+  },
+  skyEl: {
+    position: 'absolute',
+  },
+  sceneryGround: {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
+    flexDirection: 'row',
     justifyContent: 'center',
+    alignItems: 'flex-end',
+    paddingBottom: 4,
+    gap: 6,
+  },
+  sceneryEl: {
+    fontSize: 26,
+    lineHeight: 30,
   },
 
-  // ── Shortcut grid — Airbnb spacing ──────────────────────
-  pressed: {
-    opacity: 0.85,
-  },
-  sectionLabel: {
-    fontSize: 13,
+  // ── Section labels ────────────────────────────────────
+  sectionLabelSm: {
+    fontSize: 12,
     fontWeight: '700',
     color: colors.textMuted,
     textAlign: 'right',
-    marginBottom: 8,
-    marginTop: 4,
+    paddingHorizontal: spacing.lg,
+    marginBottom: spacing.sm,
+    marginTop: spacing.sm,
     letterSpacing: 0.2,
-  },
-  shortcutRow: {
-    flexDirection: 'row',
-    gap: 8,
-    marginBottom: 16,
-  },
-  shortcutRowLast: {
-    marginBottom: 0,
-  },
-  shortcut: {
-    flex: 1,
-    backgroundColor: colors.surface,
-    borderRadius: radius.lg,
-    paddingVertical: 18,
-    minHeight: 96,
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: 10,
-    ...shadow.card,
-  },
-  shortcutLabel: {
-    fontSize: 11,
-    fontWeight: '600',
-    letterSpacing: -0.1,
-    color: colors.text,
-    textAlign: 'center',
-  },
-
-  // ── Section header ──────────────────────────────────────
-  sectionHeader: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    marginTop: spacing.xxl,
-    marginBottom: spacing.lg,
   },
   sectionTitle: {
     fontSize: 18,
@@ -396,16 +332,84 @@ const styles = StyleSheet.create({
     letterSpacing: -0.4,
     color: colors.text,
   },
-  seeAllHitbox: {
-    padding: spacing.sm,
-    marginEnd: -spacing.sm,
+  sectionHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingHorizontal: spacing.lg,
+    marginTop: spacing.xl,
+    marginBottom: spacing.md,
   },
   seeAll: {
     fontSize: 13,
     fontWeight: '600',
     color: colors.primary,
   },
+
+  // ── Search ────────────────────────────────────────────
+  searchBar: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing.sm,
+    backgroundColor: colors.surface,
+    borderRadius: radius.pill,
+    paddingVertical: 15,
+    paddingHorizontal: spacing.lg,
+    marginHorizontal: spacing.lg,
+    marginTop: spacing.lg,
+    marginBottom: spacing.sm,
+    borderWidth: 0.5,
+    borderColor: colors.border,
+    ...shadow.card,
+  },
+  searchDivider: {
+    width: 1,
+    height: 18,
+    backgroundColor: colors.border,
+  },
+  searchPlaceholder: {
+    flex: 1,
+    fontSize: 15,
+    color: colors.textMuted,
+    textAlign: 'right',
+    opacity: 0.7,
+  },
+
+  // ── Categories horizontal ─────────────────────────────
+  shortcutsRow: {
+    paddingHorizontal: spacing.lg,
+    gap: 8,
+    marginTop: spacing.sm,
+    marginBottom: spacing.sm,
+    paddingBottom: 4,
+  },
+  shortcutH: {
+    width: 68,
+    alignItems: 'center',
+    gap: 7,
+  },
+  shortcutHIconBox: {
+    width: 52,
+    height: 52,
+    borderRadius: radius.lg,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  shortcutHLabel: {
+    fontSize: 10,
+    fontWeight: '600',
+    color: colors.text,
+    textAlign: 'center',
+    letterSpacing: -0.1,
+  },
+
+  // ── Misc ──────────────────────────────────────────────
+  pressed: {
+    opacity: 0.85,
+  },
   loadingBox: {
-    height: 200,
+    height: 140,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
