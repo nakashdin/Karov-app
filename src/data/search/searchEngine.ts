@@ -84,8 +84,8 @@ function toDoc(place: Place, cityNameById: Map<string, string>): SearchDoc {
   return {
     id: place.id,
     name: normalise(place.name),
-    address: normalise(place.address),
-    cityName: normalise(cityName),
+    address: normalise(place.address ?? ''),
+    cityName: normalise(cityName ?? ''),
     description: normalise(place.description ?? ''),
     certifiedBy: normalise(place.certifiedBy ?? ''),
     nusach: normalise(place.nusach ?? ''),
