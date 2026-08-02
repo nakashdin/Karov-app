@@ -948,27 +948,6 @@
     "cityId": "קרית שמונה"
   },
   {
-    "facebook": "https://www.facebook.com/roladin",
-    "id": "osm-node-5186610427",
-    "type": "cafe",
-    "openingHours": "Su-Th 07:00-21:30; Fr unknown \"please inquire\"",
-    "name": "רולדין",
-    "website": "https://roladin.co.il/סניפים/ראש-פינה/",
-    "cityId": "ראש פינה",
-    "address": "רחוב האגס 9, ראש פינה",
-    "instagram": "https://www.instagram.com/roladin",
-    "category": "dairy",
-    "location": {
-      "latitude": 32.9686683,
-      "longitude": 35.5504143
-    },
-    "kosherType": "rabanut",
-    "source": "osm",
-    "phone": "+972 4 638 5533",
-    "certifiedBy": "רבנות מקומית",
-    "lastVerifiedAt": "2026-07-29"
-  },
-  {
     "source": "osm",
     "id": "osm-node-5202278925",
     "type": "cafe",
@@ -106204,7 +106183,7 @@
   {
     "id": "9200027",
     "type": "cafe",
-    "openingHours": "Su-Th 07:00-21:30; Fr 07:00-15:00; Sa off",
+    "openingHours": "א'-ה' 07:00-21:30 | ו' עד שעה לפני כניסת שבת | ש' סגור",
     "name": "רולדין",
     "locationPrecision": "address",
     "website": "https://roladin.co.il/סניפים/ראש-פינה/",
@@ -106220,7 +106199,7 @@
     "source": "manual",
     "phone": "04-6385533",
     "certifiedBy": "רבנות מקומית",
-    "lastVerifiedAt": "2026-07-29"
+    "lastVerifiedAt": "2026-07-30"
   },
   {
     "id": "9200028",
@@ -138288,5 +138267,783 @@
     "menu": "https://zeppelinbar.mytabit.co.il/tabit-order?siteName=zeppelinbar&step=menu",
     "source": "manual",
     "lastVerifiedAt": "2026-08-02"
+  },
+  {
+    "id": "manual-b-fresh-rakevet-savidor",
+    "name": "B-Fresh רכבת סבידור",
+    "type": "juice_bar",
+    "kosherType": "rabanut",
+    "address": "רכבת סבידור מרכז, תל אביב",
+    "location": {
+      "latitude": 32.0913,
+      "longitude": 34.7813
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 08:30-20:00 | שישי 08:30-12:00 | שבת סגור",
+    "website": "https://b-fresh.org.il",
+    "phone": "0779386119"
+  },
+  {
+    "id": "manual-b-fresh-ichilov",
+    "name": "B-Fresh איכילוב",
+    "type": "juice_bar",
+    "kosherType": "rabanut",
+    "address": "וויצמן 6, תל אביב",
+    "location": {
+      "latitude": 32.0756,
+      "longitude": 34.7851
+    },
+    "locationPrecision": "city",
+    "openingHours": "א' 09:00-18:00 | ב' 14:00-18:00 | ג'-ה' 09:00-18:00 | שישי 09:00-14:00 | שבת סגור",
+    "website": "https://b-fresh.org.il",
+    "phone": "0773034016"
+  },
+  {
+    "id": "manual-b-fresh-azrieli-ta",
+    "name": "B-Fresh קניון עזריאלי תל אביב",
+    "type": "juice_bar",
+    "kosherType": "rabanut",
+    "address": "דרך מנחם בגין 132, תל אביב",
+    "location": {
+      "latitude": 32.0716,
+      "longitude": 34.7926
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 09:30-22:00 | שישי 09:30-15:00 | שבת סגור",
+    "website": "https://b-fresh.org.il",
+    "phone": "0779386124"
+  },
+  {
+    "id": "manual-b-fresh-dizengoff",
+    "name": "B-Fresh דיזינגוף סנטר",
+    "type": "juice_bar",
+    "kosherType": "rabanut",
+    "address": "דיזינגוף 50, תל אביב",
+    "location": {
+      "latitude": 32.0741,
+      "longitude": 34.7748
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 09:30-21:30 | שישי 09:00-15:00 | שבת סגור",
+    "website": "https://b-fresh.org.il",
+    "phone": "0779386121"
+  },
+  {
+    "id": "manual-b-fresh-bialik-ramat-gan",
+    "name": "B-Fresh ביאליק רמת גן",
+    "type": "juice_bar",
+    "kosherType": "mehadrin",
+    "address": "ביאליק 77, רמת גן",
+    "location": {
+      "latitude": 32.0816,
+      "longitude": 34.8248
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 09:00-21:00 | שישי 09:00-14:00 | שבת סגור",
+    "website": "https://b-fresh.org.il",
+    "phone": "035515135"
+  },
+  {
+    "id": "manual-b-fresh-azrieli-givatayim",
+    "name": "B-Fresh קניון עזריאלי גבעתיים",
+    "type": "juice_bar",
+    "kosherType": "rabanut",
+    "address": "דרך יצחק רבין 53, גבעתיים",
+    "location": {
+      "latitude": 32.0676,
+      "longitude": 34.8126
+    },
+    "locationPrecision": "city",
+    "openingHours": "א' 09:30-22:00 | ב'-ה' 09:30-22:30 | שישי 09:30-14:30 | מוצ\"ש 20:30-22:30",
+    "website": "https://b-fresh.org.il",
+    "phone": "0779386146"
+  },
+  {
+    "id": "manual-b-fresh-ayalon-ramat-gan",
+    "name": "B-Fresh קניון איילון רמת גן",
+    "type": "juice_bar",
+    "kosherType": "rabanut",
+    "address": "דרך אבא הלל 301, רמת גן",
+    "location": {
+      "latitude": 32.0847,
+      "longitude": 34.823
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 09:30-22:00 | שישי 09:30-14:30 | מוצ\"ש 20:30-22:00",
+    "website": "https://b-fresh.org.il",
+    "phone": "0779386134"
+  },
+  {
+    "id": "manual-b-fresh-hagiva-givat-shmuel",
+    "name": "B-Fresh קניון הגבעה גבעת שמואל",
+    "type": "juice_bar",
+    "kosherType": "mehadrin",
+    "address": "יוני נתניהו 29, גבעת שמואל",
+    "location": {
+      "latitude": 32.0789,
+      "longitude": 34.8487
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 09:30-21:30 | שישי 08:30-14:30 | שבת סגור",
+    "website": "https://b-fresh.org.il",
+    "phone": "0779386144"
+  },
+  {
+    "id": "manual-b-fresh-bsr-petah-tikva",
+    "name": "B-Fresh ב.ס.ר פתח תקווה",
+    "type": "juice_bar",
+    "kosherType": "rabanut",
+    "address": "תוצרת הארץ 3, פתח תקווה",
+    "location": {
+      "latitude": 32.0736,
+      "longitude": 34.9031
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ד' 09:30-22:00 | ה' 09:30-00:00 | שישי 09:00-16:00 | מוצ\"ש 20:30-00:00",
+    "website": "https://b-fresh.org.il",
+    "phone": "0733861724"
+  },
+  {
+    "id": "manual-b-fresh-beilinson",
+    "name": "B-Fresh בלינסון",
+    "type": "juice_bar",
+    "kosherType": "mehadrin",
+    "address": "זאב ז'בוטינסקי 39, פתח תקווה",
+    "location": {
+      "latitude": 32.0871,
+      "longitude": 34.8853
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 09:00-21:30 | שישי 10:00-16:30 | שבת סגור",
+    "website": "https://b-fresh.org.il",
+    "phone": "0778801748"
+  },
+  {
+    "id": "manual-b-fresh-azrieli-holon",
+    "name": "B-Fresh קניון עזריאלי חולון",
+    "type": "juice_bar",
+    "kosherType": "rabanut",
+    "address": "קניון עזריאלי, חולון",
+    "location": {
+      "latitude": 32.0044,
+      "longitude": 34.7721
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 09:30-21:30 | שישי 09:00-14:30 | מוצ\"ש 21:00-22:00",
+    "website": "https://b-fresh.org.il",
+    "phone": "037356155"
+  },
+  {
+    "id": "manual-b-fresh-bat-yam",
+    "name": "B-Fresh קניון בת ים",
+    "type": "juice_bar",
+    "kosherType": "rabanut",
+    "address": "קניון בת ים, בת ים",
+    "location": {
+      "latitude": 32.0237,
+      "longitude": 34.7474
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 10:00-21:30 | שישי 09:30-15:00 | שבת 17:30-22:30",
+    "website": "https://b-fresh.org.il",
+    "phone": "036588681"
+  },
+  {
+    "id": "manual-b-fresh-hazahav-rishon",
+    "name": "B-Fresh קניון הזהב ראשון לציון",
+    "type": "juice_bar",
+    "kosherType": "rabanut",
+    "address": "קניון הזהב, ראשון לציון",
+    "location": {
+      "latitude": 31.9787,
+      "longitude": 34.7893
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 09:15-22:00 | שישי 09:00-16:00 | מוצ\"ש 21:00-23:00",
+    "website": "https://b-fresh.org.il",
+    "phone": "0779386178"
+  },
+  {
+    "id": "manual-b-fresh-azrieli-rishonim-rishon",
+    "name": "B-Fresh עזריאלי ראשונים ראשון לציון",
+    "type": "juice_bar",
+    "kosherType": "rabanut",
+    "address": "עזריאלי ראשונים, ראשון לציון",
+    "location": {
+      "latitude": 31.9754,
+      "longitude": 34.79
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 09:30-22:00 | שישי 09:00-15:45 | מוצ\"ש 21:00-23:00",
+    "website": "https://b-fresh.org.il",
+    "phone": "035087832"
+  },
+  {
+    "id": "manual-b-fresh-beer-yaakov",
+    "name": "B-Fresh באר יעקב",
+    "type": "juice_bar",
+    "kosherType": "mehadrin",
+    "address": "באר יעקב",
+    "location": {
+      "latitude": 31.9432,
+      "longitude": 34.8324
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 09:30-21:00 | שישי 09:30-14:30 | שבת סגור",
+    "website": "https://b-fresh.org.il",
+    "phone": "0779386156"
+  },
+  {
+    "id": "manual-b-fresh-shoham-market",
+    "name": "B-Fresh שוהם מרקט",
+    "type": "juice_bar",
+    "kosherType": "mehadrin",
+    "address": "שוהם מרקט, שוהם",
+    "location": {
+      "latitude": 31.9967,
+      "longitude": 34.9427
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ד' 08:00-22:00 | ה' 08:00-23:00 | שישי 08:00-14:00",
+    "website": "https://b-fresh.org.il",
+    "phone": "0773034060"
+  },
+  {
+    "id": "manual-b-fresh-shapir-rosh-haayin",
+    "name": "B-Fresh שפיר סנטר ראש העין",
+    "type": "juice_bar",
+    "kosherType": "rabanut",
+    "address": "שפיר סנטר, ראש העין",
+    "location": {
+      "latitude": 32.0959,
+      "longitude": 34.9573
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 09:30-21:30 | שישי 09:30-14:00 | מוצ\"ש 18:30-21:30",
+    "website": "https://b-fresh.org.il",
+    "phone": "035593154"
+  },
+  {
+    "id": "manual-b-fresh-yashpro-nes-ziona",
+    "name": "B-Fresh ישפרו סנטר נס ציונה",
+    "type": "juice_bar",
+    "kosherType": "mehadrin",
+    "address": "ישפרו סנטר, נס ציונה",
+    "location": {
+      "latitude": 31.9292,
+      "longitude": 34.8003
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 09:00-22:00 | שישי 09:00-15:00 | מוצ\"ש 18:30-22:00",
+    "website": "https://b-fresh.org.il",
+    "phone": "073-3277227"
+  },
+  {
+    "id": "manual-b-fresh-azrieli-ramla",
+    "name": "B-Fresh קניון עזריאלי רמלה",
+    "type": "juice_bar",
+    "kosherType": "mehadrin",
+    "address": "קניון עזריאלי, רמלה",
+    "location": {
+      "latitude": 31.9276,
+      "longitude": 34.8692
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 09:00-21:45 | שישי 09:00-15:00 | מוצ\"ש 21:00-23:00",
+    "website": "https://b-fresh.org.il",
+    "phone": "0779386150"
+  },
+  {
+    "id": "manual-b-fresh-hanasi-rehovot",
+    "name": "B-Fresh קניון הנשיא רחובות",
+    "type": "juice_bar",
+    "kosherType": "rabanut",
+    "address": "קניון הנשיא, רחובות",
+    "location": {
+      "latitude": 31.8961,
+      "longitude": 34.8111
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 09:00-21:00 | שישי 09:00-14:30 | שבת סגור",
+    "website": "https://b-fresh.org.il",
+    "phone": "0779386117"
+  },
+  {
+    "id": "manual-b-fresh-ofer-rehovot",
+    "name": "B-Fresh קניון עופר רחובות",
+    "type": "juice_bar",
+    "kosherType": "rabanut",
+    "address": "קניון עופר, רחובות",
+    "location": {
+      "latitude": 31.89,
+      "longitude": 34.815
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 09:00-22:00 | שישי 08:00-15:00 | מוצ\"ש 21:00-23:00",
+    "website": "https://b-fresh.org.il",
+    "phone": "0779386164"
+  },
+  {
+    "id": "manual-b-fresh-ir-yamim-netanya",
+    "name": "B-Fresh קניון עיר ימים נתניה",
+    "type": "juice_bar",
+    "kosherType": "rabanut",
+    "address": "קניון עיר ימים, נתניה",
+    "location": {
+      "latitude": 32.3215,
+      "longitude": 34.8532
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 08:30-22:00 | שישי 08:30-15:00 | מוצ\"ש 19:00-23:00",
+    "website": "https://b-fresh.org.il",
+    "phone": "0548622008"
+  },
+  {
+    "id": "manual-b-fresh-yashpro-modiin",
+    "name": "B-Fresh ישפרו סנטר מודיעין",
+    "type": "juice_bar",
+    "kosherType": "rabanut",
+    "address": "ישפרו סנטר, מודיעין",
+    "location": {
+      "latitude": 31.8969,
+      "longitude": 35.0099
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 09:30-22:00 | שישי 09:30-15:00 | מוצ\"ש 20:00-23:00",
+    "website": "https://b-fresh.org.il",
+    "phone": "0779386173"
+  },
+  {
+    "id": "manual-b-fresh-azrieli-modiin",
+    "name": "B-Fresh קניון עזריאלי מודיעין",
+    "type": "juice_bar",
+    "kosherType": "rabanut",
+    "address": "קניון עזריאלי, מודיעין",
+    "location": {
+      "latitude": 31.9157,
+      "longitude": 35.0261
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 09:30-22:00 | שישי 09:30-15:30 | מוצ\"ש 20:30-23:00",
+    "website": "https://b-fresh.org.il"
+  },
+  {
+    "id": "manual-b-fresh-kfar-yona",
+    "name": "B-Fresh כפר יונה",
+    "type": "juice_bar",
+    "kosherType": "rabanut",
+    "address": "כפר יונה",
+    "location": {
+      "latitude": 32.3175,
+      "longitude": 34.9364
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 09:30-21:00 | שישי 09:00-15:00 | שבת סגור",
+    "website": "https://b-fresh.org.il",
+    "phone": "097680127"
+  },
+  {
+    "id": "manual-b-fresh-big-gedera",
+    "name": "B-Fresh ביג גדרה",
+    "type": "juice_bar",
+    "kosherType": "mehadrin",
+    "address": "ביג גדרה, גדרה",
+    "location": {
+      "latitude": 31.8132,
+      "longitude": 34.7765
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 09:30-21:00 | שישי 09:00-14:00 | שבת סגור",
+    "website": "https://b-fresh.org.il",
+    "phone": "0773034085"
+  },
+  {
+    "id": "manual-b-fresh-star-center-ashdod",
+    "name": "B-Fresh סטאר סנטר אשדוד",
+    "type": "juice_bar",
+    "kosherType": "mehadrin",
+    "address": "סטאר סנטר, אשדוד",
+    "location": {
+      "latitude": 31.7956,
+      "longitude": 34.65
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 09:00-23:00 | שישי 09:00-15:00 | מוצ\"ש 21:00-23:30",
+    "website": "https://b-fresh.org.il",
+    "phone": "0733861744"
+  },
+  {
+    "id": "manual-b-fresh-gan-hair-ashdod",
+    "name": "B-Fresh גן העיר אשדוד",
+    "type": "juice_bar",
+    "kosherType": "mehadrin",
+    "address": "גן העיר, אשדוד",
+    "location": {
+      "latitude": 31.801,
+      "longitude": 34.643
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 10:00-22:30 | שישי 09:30-15:00 | מוצ\"ש 21:00-23:30",
+    "website": "https://b-fresh.org.il",
+    "phone": "0733861725"
+  },
+  {
+    "id": "manual-b-fresh-ariel",
+    "name": "B-Fresh אריאל",
+    "type": "juice_bar",
+    "kosherType": "mehadrin",
+    "address": "אריאל",
+    "location": {
+      "latitude": 32.1044,
+      "longitude": 35.1675
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 09:00-22:00 | שישי 09:00-14:30 | שבת סגור",
+    "website": "https://b-fresh.org.il",
+    "phone": "037399334"
+  },
+  {
+    "id": "manual-b-fresh-big-kastina",
+    "name": "B-Fresh ביג קסטינה",
+    "type": "juice_bar",
+    "kosherType": "mehadrin",
+    "address": "ביג קסטינה",
+    "location": {
+      "latitude": 31.6917,
+      "longitude": 34.6903
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 10:00-21:00 | שישי 09:30-14:30 | שבת סגור",
+    "website": "https://b-fresh.org.il",
+    "phone": "0773034018"
+  },
+  {
+    "id": "manual-b-fresh-shaar-hair-beit-shemesh",
+    "name": "B-Fresh שער העיר בית שמש",
+    "type": "juice_bar",
+    "kosherType": "mehadrin",
+    "address": "שער העיר, בית שמש",
+    "location": {
+      "latitude": 31.7468,
+      "longitude": 34.9888
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ד' 09:00-23:00 | ה' 09:00-23:30 | שישי 09:00-15:00 | מוצ\"ש 21:00-23:30",
+    "website": "https://b-fresh.org.il",
+    "phone": "0733861720"
+  },
+  {
+    "id": "manual-b-fresh-mul-hahof-hadera",
+    "name": "B-Fresh מול החוף חדרה",
+    "type": "juice_bar",
+    "kosherType": "rabanut",
+    "address": "מול החוף, חדרה",
+    "location": {
+      "latitude": 32.4343,
+      "longitude": 34.9199
+    },
+    "locationPrecision": "city",
+    "openingHours": "א' 09:30-22:00 | ב'-ד' 10:00-22:00 | ה' 10:00-22:30 | שישי 09:30-15:00 | מוצ\"ש 21:30-23:00",
+    "website": "https://b-fresh.org.il",
+    "phone": "0779386135"
+  },
+  {
+    "id": "manual-b-fresh-harel-mevasseret",
+    "name": "B-Fresh קניון הראל מבשרת ציון",
+    "type": "juice_bar",
+    "kosherType": "mehadrin",
+    "address": "קניון הראל, מבשרת ציון",
+    "location": {
+      "latitude": 31.8054,
+      "longitude": 35.1447
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 10:00-22:00 | שישי 09:30-15:00 | מוצ\"ש 21:00-23:00",
+    "website": "https://b-fresh.org.il",
+    "phone": "0773034017"
+  },
+  {
+    "id": "manual-b-fresh-kanyon-mevasseret",
+    "name": "B-Fresh קניון מבשרת",
+    "type": "juice_bar",
+    "kosherType": "mehadrin",
+    "address": "קניון מבשרת, מבשרת ציון",
+    "location": {
+      "latitude": 31.806,
+      "longitude": 35.152
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 09:30-21:30 | שישי 09:30-15:00 | מוצ\"ש 21:00-23:00",
+    "website": "https://b-fresh.org.il",
+    "phone": "0733861755"
+  },
+  {
+    "id": "manual-b-fresh-harish",
+    "name": "B-Fresh חריש",
+    "type": "juice_bar",
+    "kosherType": "mehadrin",
+    "address": "חריש",
+    "location": {
+      "latitude": 32.4575,
+      "longitude": 35.0436
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 10:00-22:00 | שישי 10:30-14:00 | מוצ\"ש 21:00-23:30",
+    "website": "https://b-fresh.org.il"
+  },
+  {
+    "id": "manual-b-fresh-marina-ashkelon",
+    "name": "B-Fresh מרינה מול אשקלון",
+    "type": "juice_bar",
+    "kosherType": "rabanut",
+    "address": "מרינה מול, אשקלון",
+    "location": {
+      "latitude": 31.6688,
+      "longitude": 34.5742
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 10:00-23:00 | שישי 10:00-17:00 | מוצ\"ש 21:00-23:00",
+    "website": "https://b-fresh.org.il",
+    "phone": "089960592"
+  },
+  {
+    "id": "manual-b-fresh-giron-ashkelon",
+    "name": "B-Fresh קניון גירון אשקלון",
+    "type": "juice_bar",
+    "kosherType": "rabanut",
+    "address": "קניון גירון, אשקלון",
+    "location": {
+      "latitude": 31.665,
+      "longitude": 34.568
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 09:00-21:30 | שישי 09:00-14:30 | מוצ\"ש 21:00-22:45",
+    "website": "https://b-fresh.org.il",
+    "phone": "0779386182"
+  },
+  {
+    "id": "manual-b-fresh-big-karmi-gat",
+    "name": "B-Fresh BIG כרמי גת",
+    "type": "juice_bar",
+    "kosherType": "rabanut",
+    "address": "BIG כרמי גת, קרית גת",
+    "location": {
+      "latitude": 31.6128,
+      "longitude": 34.7631
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 10:00-22:30 | שישי 09:30-15:00 | מוצ\"ש 21:00-23:00",
+    "website": "https://b-fresh.org.il",
+    "phone": "0773034088"
+  },
+  {
+    "id": "manual-b-fresh-shaarei-tzedek-jerusalem",
+    "name": "B-Fresh שערי צדק ירושלים",
+    "type": "juice_bar",
+    "kosherType": "mehadrin",
+    "address": "בית חולים שערי צדק, ירושלים",
+    "location": {
+      "latitude": 31.7838,
+      "longitude": 35.1851
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 08:00-21:00 | שישי 08:00-15:00 | שבת סגור",
+    "website": "https://b-fresh.org.il",
+    "phone": "0779386143"
+  },
+  {
+    "id": "manual-b-fresh-ben-yehuda-jerusalem",
+    "name": "B-Fresh בן יהודה ירושלים",
+    "type": "juice_bar",
+    "kosherType": "mehadrin",
+    "address": "בן יהודה, ירושלים",
+    "location": {
+      "latitude": 31.7785,
+      "longitude": 35.2193
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 10:00-23:00 | שישי 10:00-14:00 | מוצ\"ש 20:00-23:00",
+    "website": "https://b-fresh.org.il",
+    "phone": "0779386183"
+  },
+  {
+    "id": "manual-b-fresh-malha-jerusalem",
+    "name": "B-Fresh קניון מלחה ירושלים",
+    "type": "juice_bar",
+    "kosherType": "mehadrin",
+    "address": "קניון מלחה, ירושלים",
+    "location": {
+      "latitude": 31.7524,
+      "longitude": 35.1925
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 08:00-22:45 | שישי 07:45-15:45 | מוצ\"ש 20:15-23:45",
+    "website": "https://b-fresh.org.il",
+    "phone": "0779386102"
+  },
+  {
+    "id": "manual-b-fresh-mamilla-jerusalem",
+    "name": "B-Fresh ממילא ירושלים",
+    "type": "juice_bar",
+    "kosherType": "mehadrin",
+    "address": "ממילא, ירושלים",
+    "location": {
+      "latitude": 31.7785,
+      "longitude": 35.2193
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 09:30-22:30 | שישי 09:30-14:30 | מוצ\"ש 20:30-23:00",
+    "website": "https://b-fresh.org.il",
+    "phone": "025714715"
+  },
+  {
+    "id": "manual-b-fresh-hadar-jerusalem",
+    "name": "B-Fresh קניון הדר ירושלים",
+    "type": "juice_bar",
+    "kosherType": "mehadrin",
+    "address": "קניון הדר, ירושלים",
+    "location": {
+      "latitude": 31.7683,
+      "longitude": 35.2137
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 09:00-21:30 | שישי 09:00-14:30 | מוצ\"ש 21:00-23:00",
+    "website": "https://b-fresh.org.il",
+    "phone": "0779386169"
+  },
+  {
+    "id": "manual-b-fresh-kfar-horeshe-migdal-haemek",
+    "name": "B-Fresh כפר חורש מגדל העמק",
+    "type": "juice_bar",
+    "kosherType": "mehadrin",
+    "address": "כפר חורש, מגדל העמק",
+    "location": {
+      "latitude": 32.6757,
+      "longitude": 35.2364
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 10:00-22:00 | שישי 09:00-14:00 | מוצ\"ש 19:00-23:00",
+    "website": "https://b-fresh.org.il",
+    "phone": "0779984707"
+  },
+  {
+    "id": "manual-b-fresh-tel-hanan-nesher",
+    "name": "B-Fresh תל חנן נשר",
+    "type": "juice_bar",
+    "kosherType": "rabanut",
+    "address": "תל חנן, נשר",
+    "location": {
+      "latitude": 32.7717,
+      "longitude": 35.0398
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 09:00-23:00 | שישי 09:00-16:00 | מוצ\"ש 21:00-23:00",
+    "website": "https://b-fresh.org.il",
+    "phone": "046384787"
+  },
+  {
+    "id": "manual-b-fresh-shaar-hazafon-kiryat-ata",
+    "name": "B-Fresh שער הצפון קרית אתא",
+    "type": "juice_bar",
+    "kosherType": "rabanut",
+    "address": "שער הצפון, קרית אתא",
+    "location": {
+      "latitude": 32.8047,
+      "longitude": 35.1069
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 09:30-21:30 | שישי 08:30-14:30 | מוצ\"ש 21:00-23:00",
+    "website": "https://b-fresh.org.il",
+    "phone": "0546107750"
+  },
+  {
+    "id": "manual-b-fresh-hakiryon-kiryat-bialik",
+    "name": "B-Fresh הקריון קרית ביאליק",
+    "type": "juice_bar",
+    "kosherType": "rabanut",
+    "address": "הקריון, קרית ביאליק",
+    "location": {
+      "latitude": 32.8384,
+      "longitude": 35.0881
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 10:00-22:00 | שישי 09:00-15:00 | מוצ\"ש 19:00-23:00",
+    "website": "https://b-fresh.org.il",
+    "phone": "0546107750"
+  },
+  {
+    "id": "manual-b-fresh-grand-kanyon-beersheva",
+    "name": "B-Fresh גראנד קניון באר שבע",
+    "type": "juice_bar",
+    "kosherType": "rabanut",
+    "address": "גראנד קניון, באר שבע",
+    "location": {
+      "latitude": 31.252,
+      "longitude": 34.7973
+    },
+    "locationPrecision": "city",
+    "openingHours": "א' 09:30-22:00 | ב' 09:00-22:00 | ג'-ה' 09:30-22:00 | שישי 09:00-15:30 | מוצ\"ש 21:00-23:00",
+    "website": "https://b-fresh.org.il",
+    "phone": "0779386107"
+  },
+  {
+    "id": "manual-b-fresh-nahamia-kiryat-shmona",
+    "name": "B-Fresh קניון נחמיה קרית שמונה",
+    "type": "juice_bar",
+    "kosherType": "mehadrin",
+    "address": "קניון נחמיה, קרית שמונה",
+    "location": {
+      "latitude": 33.2088,
+      "longitude": 35.5711
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 08:30-21:30 | שישי 08:30-15:00 | שבת סגור",
+    "website": "https://b-fresh.org.il",
+    "phone": "0733277246"
+  },
+  {
+    "id": "manual-b-fresh-ein-yahav",
+    "name": "B-Fresh פונדק עין יהב",
+    "type": "juice_bar",
+    "kosherType": "rabanut",
+    "address": "פונדק עין יהב, עין יהב",
+    "location": {
+      "latitude": 30.6153,
+      "longitude": 35.1814
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 09:00-19:00 | שישי 09:00-14:00 | שבת סגור",
+    "website": "https://b-fresh.org.il",
+    "phone": "0779800439"
+  },
+  {
+    "id": "manual-b-fresh-ice-mall-eilat",
+    "name": "B-Fresh אייס מול אילת",
+    "type": "juice_bar",
+    "kosherType": "rabanut",
+    "address": "אייס מול, אילת",
+    "location": {
+      "latitude": 29.5577,
+      "longitude": 34.9519
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 10:00-23:00 | שישי 10:00-15:00 | מוצ\"ש 19:00-23:00",
+    "website": "https://b-fresh.org.il",
+    "phone": "0779386109"
+  },
+  {
+    "id": "manual-b-fresh-mul-hayam-eilat",
+    "name": "B-Fresh מול הים אילת",
+    "type": "juice_bar",
+    "kosherType": "rabanut",
+    "address": "מול הים, אילת",
+    "location": {
+      "latitude": 29.5577,
+      "longitude": 34.9519
+    },
+    "locationPrecision": "city",
+    "openingHours": "א'-ה' 09:30-23:00 | שישי 09:30-14:30 | מוצ\"ש 21:00-23:00",
+    "website": "https://b-fresh.org.il",
+    "phone": "0779386112"
   }
 ]
