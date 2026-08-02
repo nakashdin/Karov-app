@@ -3232,20 +3232,29 @@
     "cityId": "גבעתיים"
   },
   {
-    "source": "osm",
+    "source": "manual",
     "id": "osm-node-12547329544",
-    "type": "fast_food",
+    "type": "restaurant",
     "category": "dairy",
     "tags": [
       "pizza"
     ],
     "name": "פיצה טוביה",
-    "address": "שוהם",
+    "address": "החבל 2, שוהם",
     "location": {
-      "latitude": 32.0045825,
-      "longitude": 34.9441934
+      "latitude": 32.0052655,
+      "longitude": 34.9428216
     },
-    "cityId": "שוהם"
+    "cityId": "שוהם",
+    "kosherType": "rabanut",
+    "certifiedBy": "רבנות שוהם",
+    "locationPrecision": "address",
+    "phone": "03-3733973",
+    "openingHours": "א'-ה' 13:15-23:25 | שבת 20:00-23:00",
+    "website": "https://www.pizzatuvia.co.il/blank-1",
+    "menu": "https://www.pizzatuvia.co.il/blank",
+    "instagram": "https://www.instagram.com/pizza_tuvia/",
+    "lastVerifiedAt": "2026-08-02"
   },
   {
     "source": "osm",
