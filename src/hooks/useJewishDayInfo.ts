@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { JEWISH_STATIC_EVENTS } from '../data/jewishEvents';
 
 export interface JewishDayInfo {
   title: string;
@@ -26,8 +27,8 @@ export function useJewishDayInfo(): JewishDayInfo | null {
 
   useEffect(() => {
     const iso = todayISO();
-    const [y, m] = iso.split('-').map(Number);
-    const cacheKey = `@karov/jewishDay_${iso}`;
+    const [y, m, d] = iso.split('-').map(Number);
+    const cacheKey = `@karov/jewishDay2_${iso}`;
 
     let mounted = true;
 
@@ -38,15 +39,27 @@ export function useJewishDayInfo(): JewishDayInfo | null {
       } catch {}
 
       try {
-        const url =
-          `https://www.hebcal.com/hebcal/?v=1&cfg=json` +
-          `&maj=on&min=on&mod=on&nx=on&omer=on` +
-          `&year=${y}&month=${m}&yt=G&xl=0&c=off&l=IL`;
-        const resp = await fetch(url);
-        const json = await resp.json();
-        const allItems: any[] = json.items ?? [];
+        const [calResp, convResp] = await Promise.all([
+          fetch(
+            `https://www.hebcal.com/hebcal/?v=1&cfg=json` +
+            `&maj=on&min=on&mod=on&nx=on&omer=on` +
+            `&year=${y}&month=${m}&yt=G&xl=0&c=off&l=IL`,
+          ),
+          fetch(
+            `https://www.hebcal.com/converter?cfg=json&gd=${d}&gm=${m}&gy=${y}&g2h=1`,
+          ),
+        ]);
 
-        // Events happening today
+        const calJson = await calResp.json();
+        const convJson = await convResp.json();
+
+        const hMonth: string = convJson.heDateParts?.m ?? '';
+        const hDay: number = parseInt(convJson.heDateParts?.d ?? '0', 10);
+        const staticEvents = hMonth && hDay
+          ? (JEWISH_STATIC_EVENTS[`${hMonth}_${hDay}`] ?? [])
+          : [];
+
+        const allItems: any[] = calJson.items ?? [];
         const todayItems = allItems.filter(
           (i: any) => i.date && (i.date === iso || i.date.startsWith(iso + 'T')),
         );
@@ -56,24 +69,42 @@ export function useJewishDayInfo(): JewishDayInfo | null {
         if (todayItems.length > 0) {
           const best = pickBest(todayItems);
           const title: string = best.hebrew || best.title || 'אירוע מיוחד';
-          const memo: string = best.memo ?? '';
-          const body =
-            memo
-              ? memo.slice(0, 100)
-              : todayItems.length > 1
-              ? todayItems
-                  .filter((i: any) => i !== best)
-                  .map((i: any) => i.hebrew || i.title)
-                  .join(' • ')
-                  .slice(0, 100)
-              : 'לחץ לפרטים נוספים';
+          let body: string = best.memo ? best.memo.slice(0, 120) : '';
+
+          // Supplement with static events (hilulot) if not already covered
+          if (staticEvents.length > 0) {
+            const st = staticEvents[0];
+            const alreadyCovered = title.includes(st.title.slice(0, 4)) || st.title.includes(title.slice(0, 4));
+            if (!alreadyCovered) {
+              body = body ? `${body} • ${st.title}` : st.body;
+            } else if (!body) {
+              body = st.body;
+            }
+          }
+
+          // Fill body from other today items if still empty
+          if (!body && todayItems.length > 1) {
+            body = todayItems
+              .filter((i: any) => i !== best)
+              .map((i: any) => i.hebrew || i.title)
+              .join(' • ')
+              .slice(0, 120);
+          }
+          if (!body) body = 'לחץ לפרטים נוספים';
+
           result = { title, body };
+        } else if (staticEvents.length > 0) {
+          const ev = staticEvents[0];
+          const extras = staticEvents.slice(1).map((e) => e.title).join(' • ');
+          result = {
+            title: ev.title,
+            body: ev.body + (extras ? ` • ${extras}` : ''),
+          };
         } else {
-          // Look ahead up to 14 days for the next special event
+          // Look ahead up to 14 days
           const upcomingItem = allItems.find((i: any) => {
             if (!i.date) return false;
-            const diff =
-              (new Date(i.date).getTime() - new Date(iso).getTime()) / 86400000;
+            const diff = (new Date(i.date).getTime() - new Date(iso).getTime()) / 86400000;
             return diff > 0 && diff <= 14 && ['holiday', 'roshchodesh'].includes(i.category);
           });
           if (upcomingItem) {

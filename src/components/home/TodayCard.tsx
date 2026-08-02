@@ -7,12 +7,14 @@ import { useSharedLocation } from '../../context/LocationContext';
 import { zmanim as calcZmanim } from '../../utils/zmanim';
 import { colors, radius, shadow, spacing } from '../../theme';
 import { RootStackParamList } from '../../navigation/types';
+import { Place } from '../../types/place';
 
 type Nav = NativeStackNavigationProp<RootStackParamList>;
 
 interface Props {
   cityName: string | null;
   onSynagoguePress: () => void;
+  favoriteSynagogue: Place | null;
 }
 
 function minsToHHMM(m: number): string {
@@ -33,7 +35,7 @@ function fmtCountdown(totalMins: number): string {
   return h > 0 ? `${h}:${String(m).padStart(2, '0')}` : `${m}`;
 }
 
-export function TodayCard({ cityName, onSynagoguePress }: Props) {
+export function TodayCard({ cityName, onSynagoguePress, favoriteSynagogue }: Props) {
   const { location } = useSharedLocation();
   const navigation = useNavigation<Nav>();
   const [, setTick] = useState(0);
@@ -53,7 +55,6 @@ export function TodayCard({ cityName, onSynagoguePress }: Props) {
   let timesLine = 'הפעל מיקום לזמנים מדויקים';
   let isNight = hour >= 20 || hour < 6;
 
-  // Prayer chip
   let prayerName = 'מנחה';
   let prayerTime = '--:--';
 
@@ -119,15 +120,35 @@ export function TodayCard({ cityName, onSynagoguePress }: Props) {
   const locationLabel = cityName ?? (location ? '...' : 'הפעל מיקום');
 
   const handlePrayerPress = () => {
-    Alert.alert(
-      'זמני תפילה',
-      'לא נבחר בית כנסת.\nבחר בית כנסת קרוב לקבלת זמני תפילה מדויקים.',
-      [
-        { text: 'בחר בית כנסת', onPress: onSynagoguePress },
-        { text: 'סגור', style: 'cancel' },
-      ],
-    );
+    if (!favoriteSynagogue) {
+      Alert.alert(
+        'זמני תפילה',
+        'לא נבחר בית כנסת.\nבחר בית כנסת קרוב לקבלת מידע נוסף.',
+        [
+          { text: 'בחר בית כנסת', onPress: onSynagoguePress },
+          { text: 'סגור', style: 'cancel' },
+        ],
+      );
+    }
   };
+
+  const handleSynagoguePress = () => {
+    if (favoriteSynagogue) {
+      Alert.alert(
+        favoriteSynagogue.name,
+        favoriteSynagogue.address ?? '',
+        [
+          { text: 'פרטים', onPress: () => navigation.navigate('PlaceDetail', { id: favoriteSynagogue.id }) },
+          { text: 'שנה', onPress: onSynagoguePress },
+          { text: 'סגור', style: 'cancel' },
+        ],
+      );
+    } else {
+      onSynagoguePress();
+    }
+  };
+
+  const synName = favoriteSynagogue ? favoriteSynagogue.name : null;
 
   return (
     <View style={styles.card}>
@@ -191,14 +212,20 @@ export function TodayCard({ cityName, onSynagoguePress }: Props) {
         {/* Synagogue chip */}
         <Pressable
           style={({ pressed }) => [styles.chip, pressed && styles.chipPressed]}
-          onPress={onSynagoguePress}
+          onPress={handleSynagoguePress}
         >
           <Ionicons name="business-outline" size={12} color={colors.categorySynagogue} />
           <View style={styles.chipTexts}>
             <Text style={styles.chipLabel}>בית כנסת</Text>
-            <Text style={[styles.chipValue, { color: colors.textFaint, fontSize: 10 }]}>
-              טרם נבחר
-            </Text>
+            {synName ? (
+              <Text style={[styles.chipValue, { fontSize: 10 }]} numberOfLines={1}>
+                {synName}
+              </Text>
+            ) : (
+              <Text style={[styles.chipValue, { color: colors.textFaint, fontSize: 10 }]}>
+                טרם נבחר
+              </Text>
+            )}
           </View>
         </Pressable>
       </View>

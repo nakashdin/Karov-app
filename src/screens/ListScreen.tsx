@@ -30,6 +30,9 @@ import { countActiveFilters, GeoPoint, KosherType, PlaceType } from '../types';
 import { distanceKm } from '../utils/geo';
 import { kosherTypeLabel } from '../utils/kosher';
 import { RootStackParamList } from '../navigation/types';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
+const FAV_SYN_KEY = '@karov/favoriteSynagogue';
 
 type Nav = NativeStackNavigationProp<RootStackParamList>;
 type ListRoute = RouteProp<RootStackParamList, 'List'>;
@@ -132,6 +135,20 @@ export function ListScreen() {
     return [...names, ...cities].slice(0, 6);
   }, [inputText, basePlaces]);
 
+  const selectSynagogue = route.params?.selectSynagogue ?? false;
+
+  // In selection mode: auto-filter to synagogues
+  useEffect(() => {
+    if (selectSynagogue && filters.placeType !== 'synagogue') {
+      setFilter('placeType', 'synagogue');
+    }
+  }, [selectSynagogue]);
+
+  const handleSelectSynagogue = useCallback(async (place: import('../types').Place) => {
+    await AsyncStorage.setItem(FAV_SYN_KEY, JSON.stringify(place)).catch(() => {});
+    navigation.goBack();
+  }, [navigation]);
+
   useEffect(() => {
     if (route.params?.focus) {
       const timer = setTimeout(() => searchRef.current?.focus(), 100);
@@ -220,13 +237,21 @@ export function ListScreen() {
 
   return (
     <Screen padded>
+      {selectSynagogue && (
+        <View style={styles.selectionBanner}>
+          <Ionicons name="business-outline" size={16} color={colors.categorySynagogue} />
+          <Text style={styles.selectionBannerText}>בחר בית כנסת מועדף — הוא יופיע בכרטיס הבית</Text>
+        </View>
+      )}
       <View style={styles.titleRow}>
         <Pressable
           style={styles.backBtn}
           onPress={() => {
-            setFilter('placeType', null);
-            setFilter('cuisineTag', null);
-            setFilter('kosherType', null);
+            if (!selectSynagogue) {
+              setFilter('placeType', null);
+              setFilter('cuisineTag', null);
+              setFilter('kosherType', null);
+            }
             navigation.goBack();
           }}
           hitSlop={12}
@@ -235,7 +260,9 @@ export function ListScreen() {
           <Text style={styles.backText}>חזרה</Text>
         </Pressable>
         <View style={styles.titleBlock}>
-          {screenTitle ? (
+          {selectSynagogue ? (
+            <Text style={styles.title}>בתי כנסת</Text>
+          ) : screenTitle ? (
             <>
               <Text style={styles.title}>{screenTitle}</Text>
               {filters.placeType === 'restaurant' && (
@@ -553,7 +580,10 @@ export function ListScreen() {
             <PlaceCard
               place={item}
               distanceKm={location ? distanceKm(location, item.location) : null}
-              onPress={() => navigation.navigate('PlaceDetail', { id: item.id })}
+              onPress={() => selectSynagogue
+                ? handleSelectSynagogue(item)
+                : navigation.navigate('PlaceDetail', { id: item.id })
+              }
             />
           )}
         />
@@ -568,6 +598,24 @@ export function ListScreen() {
 }
 
 const styles = StyleSheet.create({
+  selectionBanner: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    backgroundColor: '#E8F1FC',
+    borderRadius: radius.md,
+    paddingVertical: 10,
+    paddingHorizontal: 14,
+    marginTop: spacing.md,
+    marginBottom: 4,
+  },
+  selectionBannerText: {
+    flex: 1,
+    fontSize: 13,
+    fontWeight: '600',
+    color: colors.categorySynagogue,
+    textAlign: 'right',
+  },
   viewToggle: {
     width: 34,
     height: 34,

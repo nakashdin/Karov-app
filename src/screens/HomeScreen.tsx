@@ -1,17 +1,20 @@
 import React, { useMemo, useState, useEffect, useCallback } from 'react';
 import {
+  Platform,
   Pressable,
   RefreshControl,
   ScrollView,
   StyleSheet,
   Text,
+  useWindowDimensions,
   View,
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Ionicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
+import { useFocusEffect } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
-import { Screen } from '../components/Screen';
+import { Screen, DESKTOP_BREAKPOINT } from '../components/Screen';
 import { Loading } from '../components/Loading';
 import { LanguagePicker } from '../components/LanguagePicker';
 import { AppMenu } from '../components/AppMenu';
@@ -29,6 +32,7 @@ import { useFilters } from '../context/FiltersContext';
 import { distanceKm } from '../utils/geo';
 import { emptyFilters, PlaceType } from '../types';
 import { RootStackParamList } from '../navigation/types';
+import { Place } from '../types/place';
 
 type Nav = NativeStackNavigationProp<RootStackParamList>;
 
@@ -46,6 +50,8 @@ const ALL_SHORTCUTS = [
   { icon: 'flower-outline' as const,color: colors.tzaddik,            bg: '#F5EEEA', label: 'קברי צדיקים', type: 'tzaddik_grave' },
 ] as const;
 
+const FAV_SYN_KEY = '@karov/favoriteSynagogue';
+
 export function HomeScreen() {
   const navigation = useNavigation<Nav>();
   const { t } = useLanguage();
@@ -60,6 +66,10 @@ export function HomeScreen() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [refreshing, setRefreshing] = useState(false);
   const [refreshKey, setRefreshKey] = useState(0);
+  const [favoriteSynagogue, setFavoriteSynagogue] = useState<Place | null>(null);
+
+  const { width } = useWindowDimensions();
+  const isDesktop = Platform.OS === 'web' && width >= DESKTOP_BREAKPOINT;
 
   useEffect(() => {
     AsyncStorage.getItem('@karov/auth').then((raw) => {
@@ -71,6 +81,16 @@ export function HomeScreen() {
     });
   }, []);
 
+  // Re-read favorite synagogue every time screen is focused
+  useFocusEffect(
+    useCallback(() => {
+      AsyncStorage.getItem(FAV_SYN_KEY).then((raw) => {
+        if (!raw) { setFavoriteSynagogue(null); return; }
+        try { setFavoriteSynagogue(JSON.parse(raw)); } catch {}
+      });
+    }, []),
+  );
+
   const nearby = useMemo(() => {
     const list = [...places];
     if (location) {
@@ -78,8 +98,8 @@ export function HomeScreen() {
     } else {
       list.sort((a, b) => (b.rating ?? 0) - (a.rating ?? 0));
     }
-    return list.slice(0, 6);
-  }, [places, location]);
+    return list.slice(0, isDesktop ? 8 : 6);
+  }, [places, location, isDesktop]);
 
   const openType = (placeType: PlaceType) => {
     setFilters({ ...emptyFilters, placeType });
@@ -88,7 +108,7 @@ export function HomeScreen() {
 
   const openSynagogues = useCallback(() => {
     setFilters({ ...emptyFilters, placeType: 'synagogue' });
-    navigation.navigate('List', undefined);
+    navigation.navigate('List', { selectSynagogue: true });
   }, [setFilters, navigation]);
 
   const onRefresh = useCallback(() => {
@@ -104,94 +124,104 @@ export function HomeScreen() {
   const isShabbat = new Date().getDay() === 6;
 
   const sunEmoji = isShabbat ? '🕯' : isFriday ? '🌅' : isNight ? '🌙' : '☀️';
-
   const locationDisplay = cityName ?? (location ? '...' : null);
 
-  return (
-    <Screen>
-      <ScrollView
-        contentContainerStyle={styles.content}
-        showsVerticalScrollIndicator={false}
-        refreshControl={
-          <RefreshControl
-            refreshing={refreshing}
-            onRefresh={onRefresh}
-            tintColor={colors.primary}
-            colors={[colors.primary]}
-          />
-        }
-      >
-        {/* ── Hero Area ─────────────────────────────────────── */}
-        <View style={styles.hero}>
-          {/* Top bar */}
-          <View style={styles.heroTopBar}>
-            <View style={styles.heroLeft}>
-              <Ionicons name="notifications-outline" size={20} color={colors.textMuted} />
-              <Pressable onPress={() => setLangOpen(true)} hitSlop={12}>
-                <Ionicons name="globe-outline" size={19} color={colors.textMuted} />
-              </Pressable>
-            </View>
-            <Pressable onPress={() => setMenuOpen(true)} hitSlop={12}>
-              <Ionicons name="menu-outline" size={22} color={colors.textMuted} />
-            </Pressable>
-          </View>
+  // ── Hero section (shared between mobile & desktop)
+  const heroSection = (
+    <View style={[styles.hero, isDesktop && styles.heroDesktop]}>
+      <View style={styles.heroTopBar}>
+        <View style={styles.heroLeft}>
+          <Ionicons name="notifications-outline" size={20} color={colors.textMuted} />
+          <Pressable onPress={() => setLangOpen(true)} hitSlop={12}>
+            <Ionicons name="globe-outline" size={19} color={colors.textMuted} />
+          </Pressable>
+        </View>
+        <Pressable onPress={() => setMenuOpen(true)} hitSlop={12}>
+          <Ionicons name="menu-outline" size={22} color={colors.textMuted} />
+        </Pressable>
+      </View>
 
-          {/* Greeting */}
-          <View style={styles.greetingBlock}>
-            <Text style={styles.greetingName}>
-              {userName ? `שלום, ${userName} 👋` : 'שלום 👋'}
-            </Text>
-            <Text style={styles.greetingDate}>
-              {dayName}{hebrewDate ? ` • ${hebrewDate}` : ''}
-            </Text>
-            {locationDisplay && (
-              <View style={styles.locationRow}>
-                <Text style={styles.locationText}>{locationDisplay}</Text>
-                <Ionicons name="location-outline" size={12} color={colors.textMuted} />
-              </View>
-            )}
+      <View style={styles.greetingBlock}>
+        <Text style={styles.greetingName}>
+          {userName ? `שלום, ${userName} 👋` : 'שלום 👋'}
+        </Text>
+        <Text style={styles.greetingDate}>
+          {dayName}{hebrewDate ? ` • ${hebrewDate}` : ''}
+        </Text>
+        {locationDisplay && (
+          <View style={styles.locationRow}>
+            <Text style={styles.locationText}>{locationDisplay}</Text>
+            <Ionicons name="location-outline" size={12} color={colors.textMuted} />
           </View>
+        )}
+      </View>
 
-          {/* Scenery illustration */}
-          <View style={styles.scenery}>
-            <Text style={[styles.skyEl, { left: 48, top: 6, fontSize: 26 }]}>{sunEmoji}</Text>
-            <Text style={[styles.skyEl, { right: 55, top: 2, fontSize: 20 }]}>☁️</Text>
-            <Text style={[styles.skyEl, { right: 115, top: 16, fontSize: 14 }]}>☁️</Text>
-            <View style={styles.sceneryGround}>
-              <Text style={styles.sceneryEl}>🌲</Text>
-              <Text style={styles.sceneryEl}>🕌</Text>
-              <Text style={styles.sceneryEl}>🌲</Text>
-              <Text style={styles.sceneryEl}>🏛</Text>
-              <Text style={styles.sceneryEl}>🌿</Text>
-              <Text style={styles.sceneryEl}>🌲</Text>
-              <Text style={styles.sceneryEl}>🌲</Text>
-            </View>
+      {!isDesktop && (
+        <View style={styles.scenery}>
+          <Text style={[styles.skyEl, { left: 48, top: 6, fontSize: 26 }]}>{sunEmoji}</Text>
+          <Text style={[styles.skyEl, { right: 55, top: 2, fontSize: 20 }]}>☁️</Text>
+          <Text style={[styles.skyEl, { right: 115, top: 16, fontSize: 14 }]}>☁️</Text>
+          <View style={styles.sceneryGround}>
+            <Text style={styles.sceneryEl}>🌲</Text>
+            <Text style={styles.sceneryEl}>🕌</Text>
+            <Text style={styles.sceneryEl}>🌲</Text>
+            <Text style={styles.sceneryEl}>🏛</Text>
+            <Text style={styles.sceneryEl}>🌿</Text>
+            <Text style={styles.sceneryEl}>🌲</Text>
+            <Text style={styles.sceneryEl}>🌲</Text>
           </View>
         </View>
+      )}
+    </View>
+  );
 
-        {/* ── Today Card ────────────────────────────────────── */}
-        <TodayCard
-          key={refreshKey}
-          cityName={cityName}
-          onSynagoguePress={openSynagogues}
-        />
+  const todayCardSection = (
+    <TodayCard
+      key={refreshKey}
+      cityName={cityName}
+      onSynagoguePress={openSynagogues}
+      favoriteSynagogue={favoriteSynagogue}
+    />
+  );
 
-        {/* ── Daily Carousel ────────────────────────────────── */}
-        <Text style={styles.sectionLabelSm}>תוכן יומי</Text>
-        <DailyCarousel parasha={parasha} />
+  const contentSection = (
+    <>
+      <Text style={[styles.sectionLabelSm, isDesktop && styles.sectionLabelSmDesktop]}>תוכן יומי</Text>
+      <DailyCarousel parasha={parasha} />
+    </>
+  );
 
-        {/* ── Search ────────────────────────────────────────── */}
-        <Pressable
-          style={({ pressed }) => [styles.searchBar, pressed && styles.pressed]}
-          onPress={() => navigation.navigate('List', undefined)}
-        >
-          <Ionicons name="search-outline" size={18} color={colors.textMuted} />
-          <View style={styles.searchDivider} />
-          <Text style={styles.searchPlaceholder}>מה אתה מחפש היום?</Text>
-        </Pressable>
+  const searchSection = (
+    <Pressable
+      style={({ pressed }) => [styles.searchBar, pressed && styles.pressed]}
+      onPress={() => navigation.navigate('List', undefined)}
+    >
+      <Ionicons name="search-outline" size={18} color={colors.textMuted} />
+      <View style={styles.searchDivider} />
+      <Text style={styles.searchPlaceholder}>מה אתה מחפש היום?</Text>
+    </Pressable>
+  );
 
-        {/* ── Categories ────────────────────────────────────── */}
-        <Text style={styles.sectionTitle}>קטגוריות</Text>
+  const categoriesSection = (
+    <>
+      <Text style={[styles.sectionTitle, isDesktop && styles.sectionTitleDesktop, { paddingHorizontal: isDesktop ? 0 : spacing.lg }]}>
+        קטגוריות
+      </Text>
+      {isDesktop ? (
+        <View style={styles.shortcutsGrid}>
+          {ALL_SHORTCUTS.map((s) => (
+            <ShortcutCompact
+              key={s.type}
+              icon={s.icon}
+              color={s.color}
+              bgColor={s.bg}
+              label={s.label}
+              onPress={() => openType(s.type as PlaceType)}
+              desktop
+            />
+          ))}
+        </View>
+      ) : (
         <ScrollView
           horizontal
           showsHorizontalScrollIndicator={false}
@@ -208,29 +238,114 @@ export function HomeScreen() {
             />
           ))}
         </ScrollView>
+      )}
+    </>
+  );
 
-        {/* ── Nearby ────────────────────────────────────────── */}
-        <View style={styles.sectionHeader}>
-          <Pressable
-            onPress={() => navigation.navigate('List', undefined)}
-            style={({ pressed }) => [pressed && styles.pressed]}
-          >
-            <Text style={styles.seeAll}>{t.home.seeAll}</Text>
-          </Pressable>
-          <Text style={styles.sectionTitle}>{t.home.nearbyTitle}</Text>
+  const nearbySection = (
+    <>
+      <View style={[styles.sectionHeader, isDesktop && styles.sectionHeaderDesktop]}>
+        <Pressable
+          onPress={() => navigation.navigate('List', undefined)}
+          style={({ pressed }) => [pressed && styles.pressed]}
+        >
+          <Text style={styles.seeAll}>{t.home.seeAll}</Text>
+        </Pressable>
+        <Text style={[styles.sectionTitle, isDesktop && styles.sectionTitleDesktop]}>
+          {t.home.nearbyTitle}
+        </Text>
+      </View>
+
+      {loading ? (
+        <View style={styles.loadingBox}>
+          <Loading />
         </View>
+      ) : isDesktop ? (
+        <View style={styles.nearbyGrid}>
+          {nearby.map((place) => (
+            <Pressable
+              key={place.id}
+              style={({ pressed }) => [styles.nearbyGridCard, pressed && styles.pressed]}
+              onPress={() => navigation.navigate('PlaceDetail', { id: place.id })}
+            >
+              <Text style={styles.nearbyCardName} numberOfLines={1}>{place.name}</Text>
+              <Text style={styles.nearbyCardSub} numberOfLines={1}>
+                {place.address ?? ''}
+                {location ? ` · ${distanceKm(location, place.location).toFixed(1)} ק״מ` : ''}
+              </Text>
+            </Pressable>
+          ))}
+        </View>
+      ) : (
+        <NearbyHorizontalList
+          places={nearby}
+          location={location}
+          onPress={(id) => navigation.navigate('PlaceDetail', { id })}
+        />
+      )}
+    </>
+  );
 
-        {loading ? (
-          <View style={styles.loadingBox}>
-            <Loading />
+  if (isDesktop) {
+    return (
+      <Screen>
+        <ScrollView
+          contentContainerStyle={styles.desktopContent}
+          showsVerticalScrollIndicator={false}
+          refreshControl={
+            <RefreshControl
+              refreshing={refreshing}
+              onRefresh={onRefresh}
+              tintColor={colors.primary}
+              colors={[colors.primary]}
+            />
+          }
+        >
+          {heroSection}
+
+          <View style={styles.desktopColumns}>
+            {/* Left column */}
+            <View style={styles.desktopLeft}>
+              {todayCardSection}
+              {contentSection}
+            </View>
+
+            {/* Right column */}
+            <View style={styles.desktopRight}>
+              {searchSection}
+              {categoriesSection}
+              {nearbySection}
+            </View>
           </View>
-        ) : (
-          <NearbyHorizontalList
-            places={nearby}
-            location={location}
-            onPress={(id) => navigation.navigate('PlaceDetail', { id })}
+        </ScrollView>
+
+        <LanguagePicker visible={langOpen} onClose={() => setLangOpen(false)} />
+        <AppMenu visible={menuOpen} onClose={() => setMenuOpen(false)} />
+      </Screen>
+    );
+  }
+
+  // ── Mobile layout ────────────────────────────────────────────────────────────
+  return (
+    <Screen>
+      <ScrollView
+        contentContainerStyle={styles.content}
+        showsVerticalScrollIndicator={false}
+        refreshControl={
+          <RefreshControl
+            refreshing={refreshing}
+            onRefresh={onRefresh}
+            tintColor={colors.primary}
+            colors={[colors.primary]}
           />
-        )}
+        }
+      >
+        {heroSection}
+        {todayCardSection}
+        {contentSection}
+        {searchSection}
+        {categoriesSection}
+        {nearbySection}
       </ScrollView>
 
       <LanguagePicker visible={langOpen} onClose={() => setLangOpen(false)} />
@@ -239,7 +354,7 @@ export function HomeScreen() {
   );
 }
 
-// ── Inline components ────────────────────────────────────────────────────────
+// ── Shortcut component ───────────────────────────────────────────────────────
 
 function ShortcutCompact({
   icon,
@@ -247,13 +362,29 @@ function ShortcutCompact({
   onPress,
   color = colors.primary,
   bgColor = colors.primaryLight,
+  desktop = false,
 }: {
   icon: keyof typeof Ionicons.glyphMap;
   label: string;
   onPress: () => void;
   color?: string;
   bgColor?: string;
+  desktop?: boolean;
 }) {
+  if (desktop) {
+    return (
+      <Pressable
+        onPress={onPress}
+        style={({ pressed }) => [styles.shortcutDesktop, pressed && styles.pressed]}
+      >
+        <View style={[styles.shortcutDesktopIcon, { backgroundColor: bgColor }]}>
+          <Ionicons name={icon} size={20} color={color} />
+        </View>
+        <Text style={styles.shortcutDesktopLabel} numberOfLines={1}>{label}</Text>
+      </Pressable>
+    );
+  }
+
   return (
     <Pressable
       onPress={onPress}
@@ -273,12 +404,34 @@ const styles = StyleSheet.create({
   content: {
     paddingBottom: spacing.xxl + 8,
   },
+  desktopContent: {
+    paddingBottom: spacing.xxl + 8,
+    paddingHorizontal: spacing.xl,
+  },
+
+  // ── Desktop layout
+  desktopColumns: {
+    flexDirection: 'row',
+    gap: 24,
+    alignItems: 'flex-start',
+  },
+  desktopLeft: {
+    flex: 55,
+    minWidth: 0,
+  },
+  desktopRight: {
+    flex: 45,
+    minWidth: 0,
+  },
 
   // ── Hero ──────────────────────────────────────────────
   hero: {
     paddingTop: spacing.lg,
     marginBottom: spacing.md,
     overflow: 'hidden',
+  },
+  heroDesktop: {
+    marginBottom: spacing.lg,
   },
   heroTopBar: {
     flexDirection: 'row',
@@ -356,11 +509,17 @@ const styles = StyleSheet.create({
     marginTop: spacing.sm,
     letterSpacing: 0.2,
   },
+  sectionLabelSmDesktop: {
+    paddingHorizontal: 0,
+  },
   sectionTitle: {
     fontSize: 18,
     fontWeight: '800',
     letterSpacing: -0.4,
     color: colors.text,
+  },
+  sectionTitleDesktop: {
+    fontSize: 16,
   },
   sectionHeader: {
     flexDirection: 'row',
@@ -369,6 +528,10 @@ const styles = StyleSheet.create({
     paddingHorizontal: spacing.lg,
     marginTop: spacing.xl,
     marginBottom: spacing.md,
+  },
+  sectionHeaderDesktop: {
+    paddingHorizontal: 0,
+    marginTop: spacing.lg,
   },
   seeAll: {
     fontSize: 13,
@@ -405,7 +568,7 @@ const styles = StyleSheet.create({
     opacity: 0.7,
   },
 
-  // ── Categories horizontal ─────────────────────────────
+  // ── Categories horizontal (mobile) ────────────────────
   shortcutsRow: {
     paddingHorizontal: spacing.lg,
     gap: 8,
@@ -431,6 +594,72 @@ const styles = StyleSheet.create({
     color: colors.text,
     textAlign: 'center',
     letterSpacing: -0.1,
+  },
+
+  // ── Categories grid (desktop) ─────────────────────────
+  shortcutsGrid: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: 8,
+    marginTop: spacing.sm,
+    marginBottom: spacing.sm,
+  },
+  shortcutDesktop: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    paddingVertical: 8,
+    paddingHorizontal: 10,
+    backgroundColor: colors.surface,
+    borderRadius: radius.md,
+    borderWidth: 0.5,
+    borderColor: colors.border,
+    minWidth: '30%',
+    flex: 1,
+  },
+  shortcutDesktopIcon: {
+    width: 34,
+    height: 34,
+    borderRadius: radius.sm,
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexShrink: 0,
+  },
+  shortcutDesktopLabel: {
+    fontSize: 12,
+    fontWeight: '600',
+    color: colors.text,
+    textAlign: 'right',
+    flex: 1,
+  },
+
+  // ── Nearby grid (desktop) ─────────────────────────────
+  nearbyGrid: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: 8,
+  },
+  nearbyGridCard: {
+    backgroundColor: colors.surface,
+    borderRadius: radius.md,
+    padding: 12,
+    borderWidth: 0.5,
+    borderColor: colors.border,
+    minWidth: '48%',
+    flex: 1,
+    ...shadow.card,
+  },
+  nearbyCardName: {
+    fontSize: 14,
+    fontWeight: '700',
+    color: colors.text,
+    textAlign: 'right',
+    marginBottom: 4,
+  },
+  nearbyCardSub: {
+    fontSize: 11,
+    color: colors.textMuted,
+    textAlign: 'right',
   },
 
   // ── Misc ──────────────────────────────────────────────
