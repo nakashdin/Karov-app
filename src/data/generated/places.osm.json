@@ -138997,30 +138997,6 @@
     "lastVerifiedAt": "2026-08-02"
   },
   {
-    "id": "pokeshop-dab39440",
-    "name": "PokeShop הרצליה",
-    "type": "fast_food",
-    "cityId": "הרצליה",
-    "address": "מסכית 27 (כניסה מספיר), הרצליה פיתוח",
-    "location": {
-      "latitude": 32.1663,
-      "longitude": 34.8436
-    },
-    "locationPrecision": "city",
-    "phone": "09-9749900",
-    "website": "https://pokeshop.co.il",
-    "menu": "https://pokeshop.co.il/our-poke-bowls/",
-    "instagram": "https://www.instagram.com/pokeshop_israel/",
-    "facebook": "https://www.facebook.com/pokeshopIL/",
-    "openingHours": "א׳-ה׳ 11:00-17:00",
-    "category": "parve",
-    "kosherType": "rabanut_mekomi",
-    "certifiedBy": "רבנות הרצליה",
-    "source": "manual",
-    "sourceUrl": "https://pokeshop.co.il",
-    "lastVerifiedAt": "2026-08-02"
-  },
-  {
     "id": "pokeshop-c77c76a7",
     "name": "PokeShop בר כוכבא",
     "type": "fast_food",
@@ -139062,28 +139038,6 @@
     "category": "parve",
     "kosherType": "rabanut_mekomi",
     "certifiedBy": "רבנות נתניה",
-    "source": "manual",
-    "sourceUrl": "https://pokeshop.co.il",
-    "lastVerifiedAt": "2026-08-02"
-  },
-  {
-    "id": "pokeshop-a1ae279f",
-    "name": "PokeShop רעננה",
-    "type": "fast_food",
-    "cityId": "רעננה",
-    "address": "התעשיה 5, רעננה",
-    "location": {
-      "latitude": 32.1839,
-      "longitude": 34.8706
-    },
-    "locationPrecision": "city",
-    "website": "https://pokeshop.co.il",
-    "menu": "https://pokeshop.co.il/our-poke-bowls/",
-    "instagram": "https://www.instagram.com/pokeshop_israel/",
-    "facebook": "https://www.facebook.com/PokeShop.Raanana/",
-    "category": "parve",
-    "kosherType": "rabanut_mekomi",
-    "certifiedBy": "רבנות רעננה",
     "source": "manual",
     "sourceUrl": "https://pokeshop.co.il",
     "lastVerifiedAt": "2026-08-02"
