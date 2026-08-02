@@ -5,8 +5,36 @@ import { buildIndex } from '../search/searchEngine';
 import osmData from '../generated/places.osm.json';
 import osmCities from '../generated/cities.osm.json';
 
+/**
+ * Coerce a raw JSON record into a valid Place, filling in safe defaults for
+ * any missing required fields.  This prevents a single bad data entry from
+ * crashing the entire app at startup.
+ */
+function sanitizePlace(raw: Record<string, unknown>): Place | null {
+  // Hard requirements: without these the record is unusable.
+  if (!raw.id || typeof raw.id !== 'string') return null;
+  if (!raw.name || typeof raw.name !== 'string') return null;
+  if (!raw.type || typeof raw.type !== 'string') return null;
+
+  const loc = raw.location as { latitude?: unknown; longitude?: unknown } | undefined;
+  if (!loc || typeof loc.latitude !== 'number' || typeof loc.longitude !== 'number') return null;
+
+  return {
+    ...(raw as unknown as Place),
+    // Ensure all required string fields are never undefined at runtime.
+    id: String(raw.id),
+    name: String(raw.name),
+    type: raw.type as Place['type'],
+    address: typeof raw.address === 'string' ? raw.address : '',
+    cityId: typeof raw.cityId === 'string' ? raw.cityId : '',
+    location: { latitude: loc.latitude as number, longitude: loc.longitude as number },
+  };
+}
+
 /** Real places imported from OpenStreetMap (built by scripts/fetch-osm-places.mjs). */
-const PLACES = osmData as unknown as Place[];
+const PLACES: Place[] = (osmData as unknown as Record<string, unknown>[])
+  .map(sanitizePlace)
+  .filter((p): p is Place => p !== null);
 
 // Cities are sorted by place-count; cap the filter chips to the busiest ones.
 // (Search-by-city still works for every city via the text search.)

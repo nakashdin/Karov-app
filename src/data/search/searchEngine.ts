@@ -83,7 +83,7 @@ function toDoc(place: Place, cityNameById: Map<string, string>): SearchDoc {
   const cityName = cityNameById.get(place.cityId) ?? place.cityId;
   return {
     id: place.id,
-    name: normalise(place.name),
+    name: normalise(place.name ?? ''),
     address: normalise(place.address ?? ''),
     cityName: normalise(cityName ?? ''),
     description: normalise(place.description ?? ''),
