@@ -138265,5 +138265,28 @@
     "website": "https://tabitisrael.co.il/tabit-order?siteName=malika&step=enter",
     "source": "manual",
     "lastVerifiedAt": "2026-08-02"
+  },
+  {
+    "id": "manual-זפלין-בר-שוהם",
+    "name": "זפלין בר",
+    "type": "restaurant",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "certifiedBy": "רבנות שוהם",
+    "address": "עמק איילון 47, שוהם",
+    "cityId": "שוהם",
+    "location": {
+      "latitude": 31.9986434,
+      "longitude": 34.9461673
+    },
+    "locationPrecision": "address",
+    "phone": "053-9333852",
+    "openingHours": "א'-ד' 11:30-23:15 | ה' 11:30-00:00 | מוצ\"ש 20:00-00:00",
+    "website": "https://www.zeppelinbar.co.il/",
+    "instagram": "https://www.instagram.com/zeppelin_bar_shoham/",
+    "facebook": "https://www.facebook.com/zeppelinbarshoham",
+    "menu": "https://zeppelinbar.mytabit.co.il/tabit-order?siteName=zeppelinbar&step=menu",
+    "source": "manual",
+    "lastVerifiedAt": "2026-08-02"
   }
 ]
