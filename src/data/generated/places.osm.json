@@ -1,23 +1,6 @@
 [
   {
     "source": "osm",
-    "id": "osm-node-540970749",
-    "type": "restaurant",
-    "category": "meat",
-    "tags": [
-      "israeli"
-    ],
-    "name": "דודא",
-    "address": "רחוב דרבן 10, אילת",
-    "location": {
-      "latitude": 29.551796,
-      "longitude": 34.9565457
-    },
-    "phone": "+972-8-6330389",
-    "cityId": "אילת"
-  },
-  {
-    "source": "osm",
     "id": "osm-node-673087388",
     "type": "restaurant",
     "instagram": "https://www.instagram.com/levis.place/",
@@ -48,40 +31,6 @@
     },
     "openingHours": "Mo-Su 12:00+;Fr 12:00-16:30;Sa off",
     "cityId": "גליל ים"
-  },
-  {
-    "source": "osm",
-    "id": "osm-node-1085414330",
-    "type": "restaurant",
-    "category": "meat",
-    "tags": [
-      "dairy"
-    ],
-    "name": "Times Square",
-    "address": "רחוב הפלמח 3, אילת",
-    "location": {
-      "latitude": 29.5498371,
-      "longitude": 34.9540435
-    },
-    "phone": "+972-8-6341415",
-    "cityId": "אילת"
-  },
-  {
-    "source": "osm",
-    "id": "osm-node-1088134125",
-    "type": "restaurant",
-    "category": "dairy",
-    "tags": [
-      "italian"
-    ],
-    "name": "IL PENTOLINO",
-    "address": "שדרות התמרים 240, אילת",
-    "location": {
-      "latitude": 29.5624267,
-      "longitude": 34.9511449
-    },
-    "openingHours": "Mo-Su 08:00-24:00; Fr 08:00-15:00; Sa 18:00-24:00",
-    "cityId": "אילת"
   },
   {
     "facebook": "https://www.facebook.com/coffix",
@@ -185,87 +134,14 @@
   },
   {
     "tags": [
-      "american"
-    ],
-    "type": "fast_food",
-    "openingHours": "Su-Th 18:30-22:30; Sa 21:30-22:30",
-    "name": "ראנץ' האוס בר בורגר",
-    "website": "https://www.ranchhouse.co.il",
-    "cityId": "אילת",
-    "address": "רחוב הים 2, אילת",
-    "instagram": "https://www.instagram.com/ranch_house_eilat/",
-    "category": "meat",
-    "id": "osm-node-1763004894",
-    "location": {
-      "latitude": 29.5492465,
-      "longitude": 34.9629218
-    },
-    "source": "osm",
-    "phone": "+972-(0)57-9442741"
-  },
-  {
-    "source": "osm",
-    "id": "osm-node-1763010099",
-    "type": "restaurant",
-    "category": "meat",
-    "tags": [
-      "burger"
-    ],
-    "name": "Buffalo Steak House",
-    "address": "רחוב אנטיב 8, אילת",
-    "location": {
-      "latitude": 29.5504583,
-      "longitude": 34.9616846
-    },
-    "phone": "+972-8-6306666",
-    "cityId": "אילת",
-    "openingHours": "Su-Th 19:00-23:00; Sa 21:00-23:00"
-  },
-  {
-    "source": "osm",
-    "id": "osm-node-1763014171",
-    "type": "restaurant",
-    "category": "meat",
-    "tags": [
-      "steak_house"
-    ],
-    "name": "וונגס גריל",
-    "address": "אילת",
-    "location": {
-      "latitude": 29.5488997,
-      "longitude": 34.9626389
-    },
-    "phone": "+972-(0)8-6368989",
-    "cityId": "אילת"
-  },
-  {
-    "source": "osm",
-    "id": "osm-node-1763017985",
-    "type": "restaurant",
-    "category": "meat",
-    "tags": [
-      "Meat"
-    ],
-    "name": "Shipudey Hatikva",
-    "address": "הים 6, אילת",
-    "location": {
-      "latitude": 29.5491517,
-      "longitude": 34.9656918
-    },
-    "phone": "+972-(0)8-6338333",
-    "cityId": "אילת",
-    "locationPrecision": "exact"
-  },
-  {
-    "tags": [
       "fish"
     ],
     "type": "restaurant",
-    "openingHours": "Su-Th 18:30-22:30; Sa 20:30-00:00",
+    "openingHours": "א-ש 18:30-22:30",
     "name": "לורנס",
     "website": "https://www.lawrence-eilat.co.il",
     "cityId": "אילת",
-    "address": "טיילת השלום 23, אילת",
+    "address": "דרך הים 8, מלון הרודס ויטאליס, אילת",
     "instagram": "https://www.instagram.com/lawrence__eilat/",
     "category": "meat",
     "id": "osm-node-1763031739",
@@ -273,12 +149,17 @@
       "latitude": 29.5489538,
       "longitude": 34.9635424
     },
-    "source": "osm",
-    "phone": "+972-(0)8-6380115",
-    "locationPrecision": "exact"
+    "source": "manual",
+    "phone": "050-4068336",
+    "locationPrecision": "exact",
+    "facebook": "https://www.facebook.com/LawrenceHerodsVitalis",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "רבנות אילת",
+    "sourceUrl": "https://www.lawrence-eilat.co.il",
+    "lastVerifiedAt": "2026-08-02"
   },
   {
-    "source": "osm",
+    "source": "manual",
     "id": "osm-node-1763972919",
     "type": "restaurant",
     "category": "dairy",
@@ -292,44 +173,14 @@
       "latitude": 29.5496947,
       "longitude": 34.964538
     },
-    "phone": "+972-8-6386699",
+    "phone": "08-6386699",
     "website": "https://www.cafeboulevard.co.il",
     "cityId": "אילת",
-    "openingHours": "Su-Th 10:00-21:00; Fr 09:00-16:00; Sa 12:00-21:00"
-  },
-  {
-    "source": "osm",
-    "id": "osm-node-1764005156",
-    "type": "restaurant",
-    "category": "meat",
-    "tags": [
-      "israeli"
-    ],
-    "name": "Retro",
-    "address": "רחוב הפלמח 2, אילת",
-    "location": {
-      "latitude": 29.5472869,
-      "longitude": 34.9527848
-    },
-    "phone": "+972-8-6383324",
-    "cityId": "אילת"
-  },
-  {
-    "source": "osm",
-    "id": "osm-node-1764033404",
-    "type": "restaurant",
-    "category": "dairy",
-    "tags": [
-      "french"
-    ],
-    "name": "Brasserie",
-    "address": "אילת",
-    "location": {
-      "latitude": 29.5475482,
-      "longitude": 34.9521625
-    },
-    "phone": "+972-8-6383333",
-    "cityId": "אילת"
+    "openingHours": "א-ה 10:00-21:00, ו 10:00-16:00, ש 12:00-21:00",
+    "kosherType": "rabanut_mekomi",
+    "certifiedBy": "רבנות אילת",
+    "sourceUrl": "https://www.cafeboulevard.co.il",
+    "lastVerifiedAt": "2026-08-02"
   },
   {
     "source": "osm",
@@ -104391,20 +104242,23 @@
     "locationPrecision": "address"
   },
   {
-    "openingHours": "Su-Th 10:30-22:00; Fr 10:00-15:30",
-    "certifiedBy": "רבנות",
+    "openingHours": "א-ה 10:30-22:00, ו 10:00-15:30, ש מוצ\"ש-22:00",
+    "certifiedBy": "רבנות אילת",
     "id": "9000109",
     "type": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה מילאנו",
-    "address": "קניון אייס מול, אילת",
+    "address": "קמפה 48, קניון אייס מול, אילת",
     "location": {
       "latitude": 29.5581,
       "longitude": 34.9482
     },
     "cityId": "אילת",
-    "locationPrecision": "address"
+    "locationPrecision": "address",
+    "instagram": "https://www.instagram.com/pizza_milan_k_a",
+    "kosherType": "rabanut_mekomi",
+    "lastVerifiedAt": "2026-08-02"
   },
   {
     "facebook": "https://www.facebook.com/pizzamilanoramla/",
