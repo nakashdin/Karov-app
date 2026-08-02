@@ -86,12 +86,17 @@ export function ParashaDetailScreen() {
         contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}
       >
-        {/* Title block */}
-        <View style={styles.titleBlock}>
-          <Text style={styles.emoji}>📖</Text>
+        {/* Hero card */}
+        <View style={styles.heroCard}>
+          <View style={styles.heroBadge}>
+            <Text style={styles.heroBadgeIcon}>📖</Text>
+          </View>
+          <Text style={styles.heroTag}>פרשת השבוע</Text>
           <Text style={styles.parashaName}>{parasha?.hebrewName ?? ''}</Text>
           {parasha?.hebrewDate ? (
-            <Text style={styles.hebrewDate}>{parasha.hebrewDate}</Text>
+            <View style={styles.datePill}>
+              <Text style={styles.hebrewDate}>שבת {parasha.hebrewDate}</Text>
+            </View>
           ) : null}
         </View>
 
@@ -152,25 +157,51 @@ const styles = StyleSheet.create({
     padding: spacing.lg,
     paddingBottom: spacing.xxl,
   },
-  titleBlock: {
+  heroCard: {
+    backgroundColor: '#EBF2FD',
+    borderRadius: radius.xl,
     alignItems: 'center',
     paddingVertical: spacing.xxl,
+    paddingHorizontal: spacing.lg,
+    marginBottom: spacing.lg,
+    gap: 6,
   },
-  emoji: {
-    fontSize: 48,
-    marginBottom: spacing.md,
+  heroBadge: {
+    width: 64,
+    height: 64,
+    borderRadius: 20,
+    backgroundColor: '#C8DDF8',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: spacing.sm,
+  },
+  heroBadgeIcon: {
+    fontSize: 32,
+  },
+  heroTag: {
+    fontSize: 11,
+    fontWeight: '700',
+    color: colors.categorySynagogue,
+    letterSpacing: 0.3,
   },
   parashaName: {
-    fontSize: 32,
+    fontSize: 30,
     fontWeight: '800',
     letterSpacing: -1,
-    color: colors.primary,
+    color: colors.text,
     textAlign: 'center',
   },
+  datePill: {
+    backgroundColor: '#C8DDF8',
+    borderRadius: radius.lg,
+    paddingHorizontal: spacing.md,
+    paddingVertical: 4,
+    marginTop: 2,
+  },
   hebrewDate: {
-    fontSize: 14,
-    color: colors.textMuted,
-    marginTop: spacing.sm,
+    fontSize: 13,
+    color: colors.categorySynagogue,
+    fontWeight: '600',
   },
   card: {
     backgroundColor: colors.surface,

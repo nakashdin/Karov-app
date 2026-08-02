@@ -46,6 +46,10 @@ export function TodayCard({ cityName, onSynagoguePress, favoriteSynagogue }: Pro
   }, []);
 
   const now = new Date();
+  const tomorrow = new Date(now);
+  tomorrow.setDate(tomorrow.getDate() + 1);
+  tomorrow.setHours(10, 0, 0, 0);
+
   const day = now.getDay();
   const hour = now.getHours();
   const nowMins = hour * 60 + now.getMinutes();
@@ -57,9 +61,12 @@ export function TodayCard({ cityName, onSynagoguePress, favoriteSynagogue }: Pro
 
   let prayerName = 'מנחה';
   let prayerTime = '--:--';
+  let prayerTimes: { shacharit: string; mincha: string; arvit: string } | null = null;
 
   if (location) {
     const z = calcZmanim(now, location);
+    const zTomorrow = calcZmanim(tomorrow, location);
+
     if (z) {
       const sunsetStr = minsToHHMM(z.sunset);
       const nightfallStr = minsToHHMM(z.nightfall);
@@ -86,6 +93,12 @@ export function TodayCard({ cityName, onSynagoguePress, favoriteSynagogue }: Pro
         prayerTime = minsToHHMM(z.nightfall);
       }
 
+      prayerTimes = {
+        shacharit: minsToHHMM(Math.round(z.sunrise)),
+        mincha: minsToHHMM(Math.round(z.sunset - 25)),
+        arvit: minsToHHMM(Math.round(z.nightfall)),
+      };
+
       if (day === 6) {
         const left = minsLeft(z.nightfall);
         countdownLabel = 'צאת שבת בעוד';
@@ -105,6 +118,10 @@ export function TodayCard({ cityName, onSynagoguePress, favoriteSynagogue }: Pro
         } else if (leftNightfall > 0) {
           countdownLabel = 'צאת הכוכבים בעוד';
           countdownValue = fmtCountdown(leftNightfall);
+        } else if (zTomorrow) {
+          const minsUntilSunrise = 24 * 60 - nowMins + zTomorrow.sunrise;
+          countdownLabel = 'זריחה בעוד';
+          countdownValue = fmtCountdown(minsUntilSunrise);
         } else {
           countdownLabel = 'לילה טוב';
           countdownValue = '🌙';
@@ -171,6 +188,22 @@ export function TodayCard({ cityName, onSynagoguePress, favoriteSynagogue }: Pro
           <Text style={styles.countdownLabel}>{countdownLabel}</Text>
           <Text style={styles.countdown}>{countdownValue}</Text>
           <Text style={styles.timesLine} numberOfLines={1}>{timesLine}</Text>
+          {prayerTimes && (
+            <View style={styles.prayerTimesRow}>
+              <View style={styles.prayerItem}>
+                <Text style={styles.prayerItemLabel}>שחרית</Text>
+                <Text style={styles.prayerItemTime}>{prayerTimes.shacharit}</Text>
+              </View>
+              <View style={styles.prayerItem}>
+                <Text style={styles.prayerItemLabel}>מנחה</Text>
+                <Text style={styles.prayerItemTime}>{prayerTimes.mincha}</Text>
+              </View>
+              <View style={styles.prayerItem}>
+                <Text style={styles.prayerItemLabel}>ערבית</Text>
+                <Text style={styles.prayerItemTime}>{prayerTimes.arvit}</Text>
+              </View>
+            </View>
+          )}
         </View>
       </Pressable>
 
@@ -300,6 +333,30 @@ const styles = StyleSheet.create({
     color: colors.textMuted,
     textAlign: 'right',
     marginTop: 4,
+  },
+  prayerTimesRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignSelf: 'stretch',
+    marginTop: 7,
+    paddingTop: 6,
+    borderTopWidth: 0.5,
+    borderTopColor: colors.border,
+  },
+  prayerItem: {
+    flex: 1,
+    alignItems: 'center',
+  },
+  prayerItemLabel: {
+    fontSize: 9,
+    color: colors.textFaint,
+    fontWeight: '500',
+    marginBottom: 1,
+  },
+  prayerItemTime: {
+    fontSize: 11,
+    fontWeight: '700',
+    color: colors.text,
   },
   chipsRow: {
     flexDirection: 'row',

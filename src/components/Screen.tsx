@@ -26,6 +26,7 @@ export function Screen({
       <View
         style={[
           styles.content,
+          Platform.OS === 'web' && { width: '100%' },
           isDesktop && styles.contentDesktop,
           padded && styles.padded,
           style,
