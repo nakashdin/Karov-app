@@ -123,7 +123,6 @@ export function HomeScreen() {
   const isFriday = new Date().getDay() === 5;
   const isShabbat = new Date().getDay() === 6;
 
-  const sunEmoji = isShabbat ? '🕯' : isFriday ? '🌅' : isNight ? '🌙' : '☀️';
   const locationDisplay = cityName ?? (location ? '...' : null);
 
   // ── Hero section (shared between mobile & desktop)
@@ -157,20 +156,7 @@ export function HomeScreen() {
       </View>
 
       {!isDesktop && (
-        <View style={styles.scenery}>
-          <Text style={[styles.skyEl, { left: 48, top: 6, fontSize: 26 }]}>{sunEmoji}</Text>
-          <Text style={[styles.skyEl, { right: 55, top: 2, fontSize: 20 }]}>☁️</Text>
-          <Text style={[styles.skyEl, { right: 115, top: 16, fontSize: 14 }]}>☁️</Text>
-          <View style={styles.sceneryGround}>
-            <Text style={styles.sceneryEl}>🌲</Text>
-            <Text style={styles.sceneryEl}>🕌</Text>
-            <Text style={styles.sceneryEl}>🌲</Text>
-            <Text style={styles.sceneryEl}>🏛</Text>
-            <Text style={styles.sceneryEl}>🌿</Text>
-            <Text style={styles.sceneryEl}>🌲</Text>
-            <Text style={styles.sceneryEl}>🌲</Text>
-          </View>
-        </View>
+        <JerusalemIllustration isNight={isNight} isShabbat={isShabbat} />
       )}
     </View>
   );
@@ -354,6 +340,221 @@ export function HomeScreen() {
   );
 }
 
+// ── Jerusalem Illustration ───────────────────────────────────────────────────
+
+function JerusalemIllustration({ isNight, isShabbat }: { isNight: boolean; isShabbat: boolean }) {
+  const skyColor = isShabbat ? '#F5F0E8' : isNight ? '#1a2744' : '#FFF0CC';
+  const buildingColor = isNight ? '#2a3a5c' : '#C9A96E';
+  const buildingDark = isNight ? '#1e2d4a' : '#B08040';
+  const domeColor = isNight ? '#3a4e70' : '#D4A843';
+  const starColor = isNight ? '#FFD700' : '#E8A317';
+  const groundColor = isNight ? '#0f1a30' : '#A67C52';
+
+  return (
+    <View style={illStyles.container}>
+      {/* Sky */}
+      <View style={[illStyles.sky, { backgroundColor: skyColor }]} />
+
+      {/* Stars / Candles at night */}
+      {isNight && !isShabbat && (
+        <>
+          <View style={[illStyles.star, { left: '15%', top: 8 }]} />
+          <View style={[illStyles.star, { left: '35%', top: 18 }, { width: 3, height: 3 }]} />
+          <View style={[illStyles.star, { right: '20%', top: 6 }]} />
+          <View style={[illStyles.star, { right: '38%', top: 20 }, { width: 3, height: 3 }]} />
+        </>
+      )}
+      {isShabbat && (
+        <View style={[illStyles.candleGroup]}>
+          <View style={illStyles.candleFlame} />
+          <View style={illStyles.candleBody} />
+          <View style={[illStyles.candleFlame, { marginLeft: 12 }]} />
+          <View style={[illStyles.candleBody, { marginLeft: -8 }]} />
+        </View>
+      )}
+
+      {/* Sun / Moon */}
+      {!isShabbat && (
+        <View style={[
+          illStyles.celestial,
+          isNight
+            ? { backgroundColor: '#D4D0C0', borderRadius: 14, width: 28, height: 28, left: 24, top: 10 }
+            : { backgroundColor: '#FFB800', borderRadius: 20, width: 36, height: 36, left: 20, top: 8 },
+        ]} />
+      )}
+
+      {/* Buildings silhouette */}
+      <View style={illStyles.ground}>
+        {/* Ground strip */}
+        <View style={[illStyles.groundStrip, { backgroundColor: groundColor }]} />
+
+        {/* Left tower */}
+        <View style={[illStyles.building, { left: '5%', width: 22, height: 38, backgroundColor: buildingColor }]}>
+          <View style={[illStyles.window, { top: 6 }]} />
+          <View style={[illStyles.window, { top: 18 }]} />
+        </View>
+
+        {/* Left tree (stylized) */}
+        <View style={[illStyles.tree, { left: '16%' }]}>
+          <View style={[illStyles.treeTop, { backgroundColor: isNight ? '#1a3a2a' : '#2d6a3f' }]} />
+          <View style={illStyles.treeTrunk} />
+        </View>
+
+        {/* Dome (Dome of the Rock style) */}
+        <View style={[illStyles.domeBase, { backgroundColor: buildingDark }]}>
+          <View style={[illStyles.dome, { backgroundColor: domeColor }]} />
+          <View style={[illStyles.domeWindow]} />
+        </View>
+
+        {/* Center tower / minaret style */}
+        <View style={[illStyles.building, { left: '52%', width: 14, height: 50, backgroundColor: buildingColor }]}>
+          <View style={[illStyles.towerTop, { backgroundColor: domeColor }]} />
+          <View style={[illStyles.window, { top: 14 }]} />
+          <View style={[illStyles.window, { top: 28 }]} />
+        </View>
+
+        {/* Right building */}
+        <View style={[illStyles.building, { right: '16%', width: 28, height: 34, backgroundColor: buildingDark }]}>
+          <View style={[illStyles.window, { top: 6, right: 4 }]} />
+          <View style={[illStyles.window, { top: 18, right: 4 }]} />
+        </View>
+
+        {/* Right tree */}
+        <View style={[illStyles.tree, { right: '6%' }]}>
+          <View style={[illStyles.treeTop, { backgroundColor: isNight ? '#1a3a2a' : '#2d6a3f' }]} />
+          <View style={illStyles.treeTrunk} />
+        </View>
+
+        {/* Star of David */}
+        <Text style={[illStyles.magen, { color: starColor, opacity: isNight ? 0.9 : 0.5 }]}>✡</Text>
+      </View>
+    </View>
+  );
+}
+
+const illStyles = StyleSheet.create({
+  container: {
+    height: 88,
+    overflow: 'hidden',
+    position: 'relative',
+  },
+  sky: {
+    ...StyleSheet.absoluteFill,
+  },
+  star: {
+    position: 'absolute',
+    width: 4,
+    height: 4,
+    borderRadius: 2,
+    backgroundColor: '#FFFFFF',
+    opacity: 0.9,
+  },
+  candleGroup: {
+    position: 'absolute',
+    right: 24,
+    top: 10,
+    flexDirection: 'row',
+    alignItems: 'flex-end',
+  },
+  candleFlame: {
+    width: 8,
+    height: 12,
+    borderRadius: 4,
+    backgroundColor: '#FFB800',
+    opacity: 0.9,
+  },
+  candleBody: {
+    width: 8,
+    height: 20,
+    backgroundColor: '#F5DEB3',
+    marginTop: -2,
+  },
+  celestial: {
+    position: 'absolute',
+  },
+  ground: {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
+    height: 56,
+  },
+  groundStrip: {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
+    height: 8,
+    opacity: 0.7,
+  },
+  building: {
+    position: 'absolute',
+    bottom: 8,
+  },
+  window: {
+    position: 'absolute',
+    left: 4,
+    width: 5,
+    height: 5,
+    backgroundColor: 'rgba(255,220,100,0.6)',
+    borderRadius: 1,
+  },
+  towerTop: {
+    position: 'absolute',
+    top: -6,
+    left: 4,
+    width: 6,
+    height: 8,
+    borderRadius: 3,
+  },
+  domeBase: {
+    position: 'absolute',
+    bottom: 8,
+    left: '33%',
+    width: 44,
+    height: 28,
+    alignItems: 'center',
+  },
+  dome: {
+    position: 'absolute',
+    top: -14,
+    width: 32,
+    height: 20,
+    borderRadius: 16,
+  },
+  domeWindow: {
+    position: 'absolute',
+    bottom: 6,
+    width: 8,
+    height: 10,
+    backgroundColor: 'rgba(255,220,100,0.5)',
+    borderRadius: 4,
+  },
+  tree: {
+    position: 'absolute',
+    bottom: 8,
+    alignItems: 'center',
+    width: 20,
+  },
+  treeTop: {
+    width: 18,
+    height: 22,
+    borderRadius: 9,
+  },
+  treeTrunk: {
+    width: 5,
+    height: 8,
+    backgroundColor: '#7A5C2E',
+    marginTop: -2,
+  },
+  magen: {
+    position: 'absolute',
+    right: '30%',
+    top: 2,
+    fontSize: 14,
+  },
+});
+
 // ── Shortcut component ───────────────────────────────────────────────────────
 
 function ShortcutCompact({
@@ -474,30 +675,6 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: colors.textMuted,
   },
-  scenery: {
-    height: 90,
-    position: 'relative',
-    overflow: 'hidden',
-  },
-  skyEl: {
-    position: 'absolute',
-  },
-  sceneryGround: {
-    position: 'absolute',
-    bottom: 0,
-    left: 0,
-    right: 0,
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'flex-end',
-    paddingBottom: 4,
-    gap: 6,
-  },
-  sceneryEl: {
-    fontSize: 26,
-    lineHeight: 30,
-  },
-
   // ── Section labels ────────────────────────────────────
   sectionLabelSm: {
     fontSize: 12,

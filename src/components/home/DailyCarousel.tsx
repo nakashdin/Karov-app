@@ -17,7 +17,7 @@ interface Props {
   parasha: ParashaData | null;
 }
 
-const CONTENT_TYPES: ContentType[] = ['halacha', 'mussar', 'thought', 'blessing'];
+const CONTENT_TYPES: ContentType[] = ['halacha', 'pasuk', 'mussar', 'thought', 'blessing'];
 const GAP = 10;
 const CARD_WIDTH = 168;
 

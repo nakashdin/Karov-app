@@ -246,24 +246,33 @@ export function TodayCard({ cityName, onSynagoguePress, favoriteSynagogue }: Pro
         <View style={styles.chipDivider} />
 
         {/* Synagogue chip */}
-        <Pressable
-          style={({ pressed }) => [styles.chip, pressed && styles.chipPressed]}
-          onPress={handleSynagoguePress}
-        >
+        <View style={styles.chip}>
           <Ionicons name="business-outline" size={12} color={colors.categorySynagogue} />
           <View style={styles.chipTexts}>
             <Text style={styles.chipLabel}>בית כנסת</Text>
             {synName ? (
-              <Text style={[styles.chipValue, { fontSize: 10 }]} numberOfLines={1}>
-                {synName}
-              </Text>
+              <Pressable
+                onPress={() => navigation.navigate('PlaceDetail', { id: favoriteSynagogue!.id })}
+                hitSlop={4}
+              >
+                <Text style={[styles.chipValue, { fontSize: 10 }]} numberOfLines={1}>
+                  {synName}
+                </Text>
+              </Pressable>
             ) : (
-              <Text style={[styles.chipValue, { color: colors.textFaint, fontSize: 10 }]}>
-                טרם נבחר
-              </Text>
+              <Pressable onPress={onSynagoguePress} hitSlop={4}>
+                <Text style={[styles.chipValue, { color: colors.primary, fontSize: 10 }]}>
+                  בחר עכשיו
+                </Text>
+              </Pressable>
             )}
+            {synName ? (
+              <Pressable onPress={onSynagoguePress} hitSlop={6}>
+                <Text style={styles.changeBtn}>שנה ←</Text>
+              </Pressable>
+            ) : null}
           </View>
-        </Pressable>
+        </View>
       </View>
     </View>
   );
@@ -396,5 +405,12 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     color: colors.text,
     textAlign: 'center',
+  },
+  changeBtn: {
+    fontSize: 9,
+    fontWeight: '700',
+    color: colors.primary,
+    textAlign: 'center',
+    marginTop: 1,
   },
 });

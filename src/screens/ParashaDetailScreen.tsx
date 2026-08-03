@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import {
-  ActivityIndicator,
   Linking,
+  Platform,
   Pressable,
   ScrollView,
+  Share,
   StyleSheet,
   Text,
   View,
@@ -13,60 +14,47 @@ import { useNavigation } from '@react-navigation/native';
 import { Screen } from '../components/Screen';
 import { colors, radius, shadow, spacing } from '../theme';
 import { useParasha } from '../hooks/useParasha';
+import { getParashaContent } from '../data/parashaContent';
 
-function stripHtml(html: string): string {
-  return html
-    .replace(/<[^>]+>/g, '')
-    .replace(/&amp;/g, '&')
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/\n{3,}/g, '\n\n')
-    .trim();
+async function copyToClipboard(text: string) {
+  if (Platform.OS === 'web' && typeof navigator !== 'undefined' && navigator.clipboard) {
+    await navigator.clipboard.writeText(text);
+  }
 }
 
 export function ParashaDetailScreen() {
   const navigation = useNavigation();
   const { parasha } = useParasha();
-  const [explanation, setExplanation] = useState<string | null>(null);
-  const [loadingDesc, setLoadingDesc] = useState(true);
+  const content = getParashaContent(parasha?.topicSlug);
+  const [copied, setCopied] = useState(false);
 
-  useEffect(() => {
-    if (!parasha?.hebrewName) return;
-    let cancelled = false;
+  const shareText = content
+    ? `פרשת ${content.hebrewName}\n\n${content.summary}\n\nלקריאה: ${parasha?.sefariaUrl ?? ''}`
+    : `פרשת השבוע — ${parasha?.hebrewName ?? ''}`;
 
-    const baseName = parasha.hebrewName.replace(/^פרשת\s+/, '');
-    const firstName = baseName.split(/[-־]/)[0].trim();
-    const candidates = baseName !== firstName
-      ? [`פרשת ${baseName}`, `פרשת ${firstName}`]
-      : [`פרשת ${baseName}`];
+  const handleShare = async () => {
+    try {
+      await Share.share({ message: shareText, url: parasha?.sefariaUrl });
+    } catch {}
+  };
 
-    const tryNext = (index: number) => {
-      if (index >= candidates.length || cancelled) { setLoadingDesc(false); return; }
-      const title = encodeURIComponent(candidates[index]);
-      // Use Wikipedia's extracts API to get the full article text (multiple sections)
-      fetch(
-        `https://he.wikipedia.org/w/api.php?action=query&prop=extracts&titles=${title}&format=json&origin=*&exsectionformat=plain`,
-      )
-        .then((r) => r.json())
-        .then((json) => {
-          if (cancelled) return;
-          const pages = json?.query?.pages ?? {};
-          const page = Object.values(pages)[0] as any;
-          if (page?.extract) {
-            setExplanation(stripHtml(page.extract));
-            setLoadingDesc(false);
-          } else {
-            tryNext(index + 1);
-          }
-        })
-        .catch(() => tryNext(index + 1));
-    };
-    tryNext(0);
+  const handleWhatsApp = () => {
+    Linking.openURL(`https://api.whatsapp.com/send?text=${encodeURIComponent(shareText)}`);
+  };
 
-    return () => { cancelled = true; };
-  }, [parasha?.hebrewName]);
+  const handleTelegram = () => {
+    Linking.openURL(`https://t.me/share/url?url=${encodeURIComponent(parasha?.sefariaUrl ?? '')}&text=${encodeURIComponent(`פרשת ${content?.hebrewName ?? parasha?.hebrewName ?? ''}`)}`);
+  };
+
+  const handleFacebook = () => {
+    Linking.openURL(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(parasha?.sefariaUrl ?? '')}`);
+  };
+
+  const handleCopy = async () => {
+    await copyToClipboard(shareText);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
   return (
     <Screen>
@@ -79,7 +67,12 @@ export function ParashaDetailScreen() {
           <Ionicons name="chevron-forward" size={22} color={colors.primary} />
         </Pressable>
         <Text style={styles.headerLabel}>פרשת השבוע</Text>
-        <View style={styles.backBtn} />
+        <Pressable
+          onPress={handleShare}
+          style={({ pressed }) => [styles.backBtn, pressed && { opacity: 0.6 }]}
+        >
+          <Ionicons name="share-outline" size={20} color={colors.primary} />
+        </Pressable>
       </View>
 
       <ScrollView
@@ -100,31 +93,77 @@ export function ParashaDetailScreen() {
           ) : null}
         </View>
 
-        {/* Explanation */}
-        <View style={styles.card}>
-          <Text style={styles.sectionTitle}>על הפרשה</Text>
-          {loadingDesc ? (
-            <ActivityIndicator color={colors.primary} style={{ marginTop: spacing.lg }} />
-          ) : explanation ? (
-            <Text style={styles.descriptionText}>{explanation}</Text>
-          ) : (
-            <Text style={styles.noDesc}>ההסבר אינו זמין כרגע</Text>
-          )}
-        </View>
+        {/* Summary */}
+        {content ? (
+          <>
+            <View style={styles.card}>
+              <Text style={styles.sectionTitle}>סיכום הפרשה</Text>
+              <Text style={styles.summaryText}>{content.summary}</Text>
+            </View>
 
-        {/* Read full parasha on Sefaria */}
+            {/* Key points */}
+            <View style={styles.card}>
+              <Text style={styles.sectionTitle}>נקודות מרכזיות בפרשה</Text>
+              <View style={styles.keyPointsList}>
+                {content.keyPoints.map((point, i) => (
+                  <View key={i} style={styles.keyPointRow}>
+                    <Text style={styles.keyPointBullet}>◆</Text>
+                    <Text style={styles.keyPointText}>{point}</Text>
+                  </View>
+                ))}
+              </View>
+            </View>
+
+            {/* Quote */}
+            <View style={styles.quoteCard}>
+              <Text style={styles.quoteIcon}>❝</Text>
+              <Text style={styles.quoteText}>{content.quote}</Text>
+              <Text style={styles.quoteSource}>{content.source}</Text>
+            </View>
+          </>
+        ) : parasha?.hebrewName ? (
+          <View style={styles.card}>
+            <Text style={styles.sectionTitle}>על הפרשה</Text>
+            <Text style={styles.summaryText}>תוכן הפרשה יתעדכן בקרוב.</Text>
+          </View>
+        ) : null}
+
+        {/* Read full parasha */}
         {parasha?.sefariaUrl ? (
           <Pressable
             style={({ pressed }) => [styles.sefariaBtn, pressed && { opacity: 0.8 }]}
             onPress={() => Linking.openURL(parasha.sefariaUrl)}
           >
-            <Text style={styles.sefariaBtnText}>קרא את הפרשה המלאה ב-Sefaria</Text>
-            <Ionicons name="open-outline" size={16} color={colors.primary} />
+            <Ionicons name="book-outline" size={18} color={colors.surface} />
+            <Text style={styles.sefariaBtnText}>קרא את הפרשה המלאה</Text>
           </Pressable>
         ) : null}
 
+        {/* Share row */}
+        <View style={styles.shareCard}>
+          <Text style={styles.shareTitle}>שתף את הפרשה</Text>
+          <View style={styles.shareRow}>
+            <Pressable style={({ pressed }) => [styles.shareBtn, { backgroundColor: '#25D366' }, pressed && styles.pressed]} onPress={handleWhatsApp}>
+              <Text style={styles.shareBtnIcon}>💬</Text>
+              <Text style={styles.shareBtnLabel}>וואטסאפ</Text>
+            </Pressable>
+            <Pressable style={({ pressed }) => [styles.shareBtn, { backgroundColor: '#229ED9' }, pressed && styles.pressed]} onPress={handleTelegram}>
+              <Text style={styles.shareBtnIcon}>✈️</Text>
+              <Text style={styles.shareBtnLabel}>טלגרם</Text>
+            </Pressable>
+            <Pressable style={({ pressed }) => [styles.shareBtn, { backgroundColor: '#1877F2' }, pressed && styles.pressed]} onPress={handleFacebook}>
+              <Text style={styles.shareBtnIcon}>👥</Text>
+              <Text style={styles.shareBtnLabel}>פייסבוק</Text>
+            </Pressable>
+            <Pressable style={({ pressed }) => [styles.shareBtn, { backgroundColor: copied ? colors.success : colors.textMuted }, pressed && styles.pressed]} onPress={handleCopy}>
+              <Ionicons name={copied ? 'checkmark' : 'copy-outline'} size={18} color={colors.surface} />
+              <Text style={styles.shareBtnLabel}>{copied ? 'הועתק!' : 'העתק'}</Text>
+            </Pressable>
+          </View>
+        </View>
+
         <Text style={styles.attribution}>
-          הסבר מתוך ויקיפדיה העברית · טקסט מ-Sefaria (Creative Commons)
+          תוכן ממקורות מהימנים · לקריאת הטקסט המלא: Sefaria
         </Text>
       </ScrollView>
     </Screen>
@@ -156,6 +195,7 @@ const styles = StyleSheet.create({
   content: {
     padding: spacing.lg,
     paddingBottom: spacing.xxl,
+    gap: spacing.lg,
   },
   heroCard: {
     backgroundColor: '#EBF2FD',
@@ -163,7 +203,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingVertical: spacing.xxl,
     paddingHorizontal: spacing.lg,
-    marginBottom: spacing.lg,
     gap: 6,
   },
   heroBadge: {
@@ -175,9 +214,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     marginBottom: spacing.sm,
   },
-  heroBadgeIcon: {
-    fontSize: 32,
-  },
+  heroBadgeIcon: { fontSize: 32 },
   heroTag: {
     fontSize: 11,
     fontWeight: '700',
@@ -203,50 +240,129 @@ const styles = StyleSheet.create({
     color: colors.categorySynagogue,
     fontWeight: '600',
   },
+
   card: {
     backgroundColor: colors.surface,
     borderRadius: radius.lg,
     padding: spacing.lg,
-    marginBottom: spacing.lg,
     ...shadow.card,
+    gap: spacing.md,
   },
   sectionTitle: {
-    fontSize: 13,
+    fontSize: 12,
     fontWeight: '700',
     color: colors.textMuted,
     textAlign: 'right',
-    marginBottom: spacing.md,
-    letterSpacing: 0.3,
+    letterSpacing: 0.4,
+    textTransform: 'uppercase',
   },
-  descriptionText: {
+  summaryText: {
     fontSize: 16,
     lineHeight: 28,
     color: colors.text,
     textAlign: 'right',
   },
-  noDesc: {
-    fontSize: 14,
-    color: colors.textMuted,
-    textAlign: 'center',
-    paddingVertical: spacing.md,
+
+  keyPointsList: { gap: 10 },
+  keyPointRow: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    gap: 8,
   },
+  keyPointBullet: {
+    fontSize: 8,
+    color: colors.categorySynagogue,
+    marginTop: 6,
+    flexShrink: 0,
+  },
+  keyPointText: {
+    flex: 1,
+    fontSize: 15,
+    lineHeight: 24,
+    color: colors.text,
+    textAlign: 'right',
+  },
+
+  quoteCard: {
+    backgroundColor: '#EBF2FD',
+    borderRadius: radius.lg,
+    padding: spacing.lg,
+    alignItems: 'center',
+    gap: 8,
+    borderLeftWidth: 4,
+    borderLeftColor: colors.categorySynagogue,
+  },
+  quoteIcon: {
+    fontSize: 28,
+    color: colors.categorySynagogue,
+    opacity: 0.4,
+    alignSelf: 'flex-end',
+  },
+  quoteText: {
+    fontSize: 18,
+    fontWeight: '700',
+    color: colors.text,
+    textAlign: 'center',
+    lineHeight: 28,
+    letterSpacing: -0.3,
+  },
+  quoteSource: {
+    fontSize: 12,
+    color: colors.categorySynagogue,
+    fontWeight: '600',
+    textAlign: 'center',
+  },
+
   sefariaBtn: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
     gap: spacing.sm,
-    backgroundColor: colors.surface,
+    backgroundColor: colors.primary,
     borderRadius: radius.lg,
-    paddingVertical: 14,
-    borderWidth: 1.5,
-    borderColor: colors.primary,
-    marginBottom: spacing.lg,
+    paddingVertical: 16,
   },
   sefariaBtnText: {
-    fontSize: 15,
-    fontWeight: '600',
-    color: colors.primary,
+    fontSize: 16,
+    fontWeight: '700',
+    color: colors.surface,
   },
+
+  shareCard: {
+    backgroundColor: colors.surface,
+    borderRadius: radius.lg,
+    padding: spacing.lg,
+    ...shadow.card,
+    gap: spacing.md,
+  },
+  shareTitle: {
+    fontSize: 13,
+    fontWeight: '700',
+    color: colors.textMuted,
+    textAlign: 'right',
+    letterSpacing: 0.3,
+  },
+  shareRow: {
+    flexDirection: 'row',
+    gap: 8,
+    justifyContent: 'space-between',
+  },
+  shareBtn: {
+    flex: 1,
+    alignItems: 'center',
+    paddingVertical: 10,
+    borderRadius: radius.md,
+    gap: 4,
+  },
+  shareBtnIcon: { fontSize: 18 },
+  shareBtnLabel: {
+    fontSize: 9,
+    fontWeight: '700',
+    color: colors.surface,
+    textAlign: 'center',
+  },
+  pressed: { opacity: 0.85 },
+
   attribution: {
     fontSize: 11,
     color: colors.textFaint,
