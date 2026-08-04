@@ -1,9 +1,11 @@
-import { KosherCategory, KosherType, PlaceType } from './place';
+import { KosherCategory, KosherType, PlaceSubType, PlaceType } from './place';
 
 /** Active filtering / search state used to query places. */
 export interface PlaceFilters {
   /** Restrict to a kind of place (set from Home shortcuts). */
   placeType: PlaceType | null;
+  /** Sub-category within the type (restaurants only). null = show all. */
+  subType: PlaceSubType | null;
   cityId: string | null;
   kosherType: KosherType | null;
   category: KosherCategory | null;
@@ -15,6 +17,7 @@ export interface PlaceFilters {
 
 export const emptyFilters: PlaceFilters = {
   placeType: null,
+  subType: null,
   cityId: null,
   kosherType: null,
   category: null,

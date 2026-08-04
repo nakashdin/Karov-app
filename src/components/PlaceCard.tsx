@@ -67,14 +67,24 @@ interface PlaceCardProps {
   onPress: () => void;
 }
 
+const SUB_TYPE_LABEL: Record<string, string> = {
+  fast_food: 'מזון מהיר',
+  chef_restaurant: 'מסעדת שף',
+};
+
+const SUB_TYPE_COLOR: Record<string, string> = {
+  fast_food: colors.categoryFastFood,
+  chef_restaurant: '#B5451B',
+};
+
 export function PlaceCard({ place, distanceKm, onPress }: PlaceCardProps) {
   const { t, locale } = useLanguage();
   const isHe = locale === 'he';
   const heName = displayPlaceName(place);
   const displayName = isHe ? heName : transliterateHebrew(heName);
   const emoji = getPlaceEmoji(place);
-  const chipColor = CHIP_COLOR[place.type];
-  const typeLabel = placeTypeLabel[place.type];
+  const chipColor = place.subType ? (SUB_TYPE_COLOR[place.subType] ?? CHIP_COLOR[place.type]) : CHIP_COLOR[place.type];
+  const typeLabel = place.subType ? (SUB_TYPE_LABEL[place.subType] ?? placeTypeLabel[place.type]) : placeTypeLabel[place.type];
 
   const isFoodType = ['restaurant', 'fast_food', 'cafe', 'coffee_cart', 'juice_bar', 'ice_cream_parlor', 'bakery'].includes(place.type);
   const openStatus  = isCurrentlyOpen(place.openingHours, place.location);

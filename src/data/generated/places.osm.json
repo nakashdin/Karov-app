@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "source": "osm",
     "id": "osm-node-673087388",
@@ -190,30 +190,11 @@
     "cityId": "בת ים"
   },
   {
-    "source": "osm",
-    "id": "osm-node-1989338503",
-    "type": "restaurant",
-    "openingHours": "Su-Th 11:00-18:00",
-    "tags": [
-      "meat"
-    ],
-    "name": "פטרוזיליה",
-    "address": "שדרות רוטשילד 47, תל אביב יפו",
-    "location": {
-      "latitude": 32.064275,
-      "longitude": 34.774869
-    },
-    "phone": "+972 3 516 2468",
-    "category": "dairy",
-    "cityId": "תל אביב",
-    "locationPrecision": "exact"
-  },
-  {
     "facebook": "https://www.facebook.com/burgerimisrael",
     "tags": [
       "burger"
     ],
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "א'-ה' 10:30-23:00 | ו' 10:30-15:00",
     "name": "בורגרים הרצליה פיתוח",
     "website": "https://www.iburgerim.co.il/",
@@ -231,22 +212,6 @@
     "kosherType": "badatz_beit_yosef",
     "certifiedBy": "בד\"ץ בית יוסף",
     "lastVerifiedAt": "2026-07-30"
-  },
-  {
-    "source": "osm",
-    "id": "osm-node-2078990448",
-    "type": "restaurant",
-    "category": "meat",
-    "tags": [
-      "american"
-    ],
-    "name": "Bodega מטבח אמריקאי",
-    "address": "רחוב קרליבך 14, תל אביב יפו",
-    "location": {
-      "latitude": 32.070226,
-      "longitude": 34.782799
-    },
-    "cityId": "תל אביב"
   },
   {
     "source": "osm",
@@ -276,21 +241,6 @@
     },
     "phone": "04-6931829",
     "cityId": "חצור הגלילית"
-  },
-  {
-    "source": "osm",
-    "id": "osm-node-2079006787",
-    "type": "restaurant",
-    "openingHours": "Su-Th 12:00-16:00,18:00-00:00",
-    "name": "מלכה",
-    "address": "רחוב דפנה 2, תל אביב יפו",
-    "location": {
-      "latitude": 32.07829,
-      "longitude": 34.788954
-    },
-    "phone": "+97236091331",
-    "category": "meat",
-    "cityId": "תל אביב"
   },
   {
     "source": "osm",
@@ -443,7 +393,7 @@
   {
     "source": "osm",
     "id": "osm-node-4460369993",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 09:00-18:30; Fr 09:00-14:00",
     "tags": [
       "mediterranean"
@@ -549,7 +499,7 @@
   {
     "source": "osm",
     "id": "osm-node-5128936020",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 11:00-01:00, Sa 20:30-01:00",
     "tags": [
       "pizza"
@@ -614,7 +564,7 @@
   {
     "source": "osm",
     "id": "osm-node-5143557202",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "tags": [
       "burger"
@@ -722,7 +672,7 @@
     "tags": [
       "burger"
     ],
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "א'-ה' 11:30-22:30 | מוצ\"ש חצי שעה מצאת שבת-חצות",
     "name": "בורגרים",
     "website": "https://www.iburgerim.co.il/",
@@ -796,7 +746,7 @@
   {
     "source": "osm",
     "id": "osm-node-5299442041",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "10:00-23:00; Fr 10:00-15:00; Sa 20:00-23:00",
     "tags": [
       "pizza"
@@ -814,7 +764,7 @@
   {
     "source": "osm",
     "id": "osm-node-5299442042",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "09:00-23:00; Fr 09:00-15:00; Sa 20:00-23:00",
     "tags": [
       "pizza"
@@ -862,7 +812,7 @@
   {
     "source": "osm",
     "id": "osm-node-5302040666",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 08:00-18:00; Fr 08:00-14:00",
     "name": "מסעדת חומוס אלון",
     "address": "חצור הגלילית",
@@ -891,7 +841,7 @@
   {
     "source": "osm",
     "id": "osm-node-5498980275",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "name": "Best burger",
     "address": "ארלוזורוב 3, קרית שמונה",
@@ -1059,7 +1009,7 @@
   {
     "source": "osm",
     "id": "osm-node-6014902517",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "tags": [
       "regional"
@@ -1105,7 +1055,7 @@
   {
     "source": "osm",
     "id": "osm-node-6015034147",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "name": "בורגראנץ'",
     "address": "רחוב האגס 9, ראש פינה",
@@ -1315,7 +1265,7 @@
   {
     "source": "osm",
     "id": "osm-node-6754297391",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "tags": [
       "pizza"
@@ -1354,7 +1304,7 @@
   {
     "source": "osm",
     "id": "osm-node-6854597174",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "tags": [
       "burger"
@@ -1387,7 +1337,7 @@
   {
     "source": "osm",
     "id": "osm-node-7541798990",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "א'-ה' 10:00-24:00",
     "tags": [
       "pizza"
@@ -1465,7 +1415,7 @@
     "tags": [
       "burger"
     ],
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "osm",
     "name": "בורגרים נתניה סונול",
     "website": "https://www.iburgerim.co.il/",
@@ -1530,7 +1480,7 @@
   {
     "source": "osm",
     "id": "osm-node-9570930731",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "tags": [
       "burger"
@@ -1663,7 +1613,7 @@
   {
     "source": "osm",
     "id": "osm-node-10279205409",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "name": "מטרו בורגר",
     "address": "רחוב מקווה ישראל 4, תל אביב יפו",
@@ -1860,7 +1810,7 @@
   {
     "source": "osm",
     "id": "osm-node-10955696002",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Mo-Th 11:00-18:00; Fr 12:00-15:00",
     "tags": [
       "regional",
@@ -2087,7 +2037,7 @@
   {
     "source": "osm",
     "id": "osm-node-11330876274",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "tags": [
       "burger"
@@ -2148,7 +2098,7 @@
   {
     "source": "osm",
     "id": "osm-node-11405068715",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "instagram": "https://www.instagram.com/burgerimisrael",
     "category": "meat",
     "tags": [
@@ -2306,7 +2256,7 @@
   {
     "source": "osm",
     "id": "osm-node-11793136463",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "tags": [
       "pizza"
@@ -2324,7 +2274,7 @@
     "tags": [
       "pizza"
     ],
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-13:00; Sa (sunset+00:30)-00:59",
     "name": "Pizza Hut",
     "website": "https://www.pizzahut.co.il",
@@ -2343,7 +2293,7 @@
   {
     "source": "osm",
     "id": "osm-node-11818013490",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "tags": [
       "pizza",
@@ -2410,7 +2360,7 @@
   {
     "source": "osm",
     "id": "osm-node-11980731518",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "tags": [
       "pizza"
@@ -2546,7 +2496,7 @@
     "tags": [
       "pizza"
     ],
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 11:00-22:30; Fr 11:00-14:00; Sa 20:15-23:00",
     "name": "Pizza Hut",
     "website": "https://www.pizzahut.co.il",
@@ -2584,7 +2534,7 @@
   {
     "source": "osm",
     "id": "osm-node-12147904324",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-We 11:00-01:00; Th 11:00-04:00",
     "tags": [
       "pizza"
@@ -2738,7 +2688,7 @@
   {
     "source": "osm",
     "id": "osm-node-12462916500",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "tags": [
       "burger"
@@ -2810,7 +2760,7 @@
   {
     "source": "osm",
     "id": "osm-node-12557310999",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "tags": [
       "pizza"
@@ -3014,7 +2964,7 @@
   {
     "source": "osm",
     "id": "osm-node-12636593463",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "tags": [
       "pizza"
@@ -3074,7 +3024,7 @@
   {
     "source": "osm",
     "id": "osm-node-12676686493",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "tags": [
       "pizza"
@@ -3132,7 +3082,7 @@
     "tags": [
       "burger"
     ],
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "osm",
     "name": "בורגרים",
     "website": "https://www.iburgerim.co.il/",
@@ -3248,7 +3198,7 @@
   {
     "source": "osm",
     "id": "osm-node-13057613010",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "tags": [
       "pizza",
@@ -3376,7 +3326,7 @@
   {
     "source": "osm",
     "id": "osm-node-13286258733",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "tags": [
       "hummus"
@@ -3492,7 +3442,7 @@
   {
     "source": "osm",
     "id": "osm-node-13431169858",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "name": "פיצה יהלי סנדויץ",
     "address": "רחוב רמת הגולן 8, ירושלים",
@@ -3547,7 +3497,7 @@
   {
     "source": "osm",
     "id": "osm-node-13508662103",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "tags": [
       "pizza"
@@ -3593,7 +3543,7 @@
   {
     "source": "osm",
     "id": "osm-node-13664318565",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "tags": [
       "pizza",
@@ -3706,7 +3656,7 @@
   {
     "source": "osm",
     "id": "osm-node-13884849098",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Mo-Fr,Su 11:00-23:00",
     "tags": [
       "pizza"
@@ -3740,7 +3690,7 @@
   {
     "source": "osm",
     "id": "osm-node-13903561258",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "tags": [
       "pizza"
@@ -101611,7 +101561,7 @@
   {
     "openingHours": "א'-ה' 10:00-20:00 | ו' 08:30-15:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "locationPrecision": "address",
@@ -101638,7 +101588,7 @@
   },
   {
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -101668,7 +101618,7 @@
   {
     "openingHours": "א'-ה' 09:30-16:00 | ו' 09:30-13:30",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "locationPrecision": "address",
@@ -101696,7 +101646,7 @@
   {
     "openingHours": "א'-ה' 10:30-22:30 | ו' 10:00-14:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "locationPrecision": "address",
@@ -101724,7 +101674,7 @@
   {
     "openingHours": "א' 09:30-20:00 | ב'-ה' 09:30-21:30 | ו' 09:30-15:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו באר שבע פז צפון",
     "locationPrecision": "address",
@@ -101752,7 +101702,7 @@
   {
     "openingHours": "א'-ה' 10:00-20:00 | ו' 09:30-14:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "locationPrecision": "address",
@@ -101780,7 +101730,7 @@
   {
     "openingHours": "א'-ה' 09:30-20:00 | ו' 09:00-14:30",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -101809,7 +101759,7 @@
   {
     "openingHours": "א'-ה' 11:00-21:00 | ו' 10:00-13:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו בית שמש סאן מול",
     "locationPrecision": "address",
@@ -101837,7 +101787,7 @@
   {
     "openingHours": "א'-ה' 10:00-22:00 | ו' 09:00-14:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "locationPrecision": "address",
@@ -101865,7 +101815,7 @@
   {
     "openingHours": "א'-ה' 09:00-20:00 | ו' 09:00-15:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו גבעת שאול",
     "locationPrecision": "address",
@@ -101893,7 +101843,7 @@
   {
     "openingHours": "א'-ה' 09:00-20:00 | ו' 08:00-14:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -101922,7 +101872,7 @@
   {
     "openingHours": "א'-ה' 09:00-21:00 | ו' 09:00-15:00 | ש' מוצ\"ש-23:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "locationPrecision": "address",
@@ -101950,7 +101900,7 @@
   {
     "openingHours": "א'-ה' 09:30-17:00 | ו' 09:30-14:30",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו הרצליה פיתוח",
     "locationPrecision": "address",
@@ -101978,7 +101928,7 @@
   {
     "openingHours": "א'-ה' 10:00-18:00 | ו' 10:00-15:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו טבריה הגליל",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -102007,7 +101957,7 @@
   {
     "openingHours": "א'-ה' 10:00-18:30 | ו' 09:30-14:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -102036,7 +101986,7 @@
   {
     "openingHours": "א'-ה' 09:00-19:00 | ו' 08:30-14:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -102065,7 +102015,7 @@
   {
     "openingHours": "א'-ה' 09:00-21:00 | ו' 09:00-15:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו ים המלח",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -102094,7 +102044,7 @@
   {
     "openingHours": "א' 10:00-21:00 | ב'-ה' 10:00-21:30 | ו' 09:00-14:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו ירושלים הדר תלפיות",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -102123,7 +102073,7 @@
   {
     "openingHours": "א'-ה' 09:00-19:30 | ו' 08:00-14:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו ירושלים",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -102152,7 +102102,7 @@
   {
     "openingHours": "א'-ה' 09:00-20:00 | ו' 09:00-14:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו ירושלים שורש שואבה",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -102181,7 +102131,7 @@
   {
     "openingHours": "א'-ה' 10:30-19:00 | ו' 09:00-13:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו ירושלים מחנה יהודה",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -102210,7 +102160,7 @@
   {
     "openingHours": "א'-ה' 10:30-20:00 | ו' 09:00-14:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו ירושלים פסגת זאב",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -102239,7 +102189,7 @@
   {
     "openingHours": "א'-ה' 10:00-21:30 | ו' 10:00-14:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו ירושלים יפו 33",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -102268,7 +102218,7 @@
   {
     "openingHours": "א'-ה' 11:30-21:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו ירושלים הר חוצבים",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -102297,7 +102247,7 @@
   {
     "openingHours": "א'-ה' 10:30-21:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו ירושלים סנטר 1",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -102326,7 +102276,7 @@
   {
     "openingHours": "א'-ה' 10:00-21:00 | ו' 09:00-13:30",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו ירושלים קניון רמות",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -102355,7 +102305,7 @@
   {
     "openingHours": "א'-ה' 10:00-20:00 | ו' 09:00-15:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו ישפרו סנטר",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -102384,7 +102334,7 @@
   {
     "openingHours": "א'-ה' 09:00-20:00 | ו' 09:00-14:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -102413,7 +102363,7 @@
   {
     "openingHours": "א'-ה' 10:00-18:00 | ו' 10:00-14:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו כפר סבא עתיר ידע",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -102442,7 +102392,7 @@
   {
     "openingHours": "א'-ה' 10:00-19:30 | ו' 10:00-15:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו כפר סבא הירוקה",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -102471,7 +102421,7 @@
   {
     "openingHours": "א'-ד' 11:00-19:00 | ה' 11:00-20:00 | ו' 09:00-15:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו מודיעין קייזר",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -102500,7 +102450,7 @@
   {
     "openingHours": "א'-ה' 10:00-16:00 | ו' 09:00-14:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -102529,7 +102479,7 @@
   {
     "openingHours": "א'-ה' 10:30-20:00 | ו' 09:00-15:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "locationPrecision": "address",
@@ -102557,7 +102507,7 @@
   {
     "openingHours": "א'-ה' 11:00-17:00 | ו' 09:30-14:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "locationPrecision": "address",
@@ -102585,7 +102535,7 @@
   {
     "openingHours": "א'-ה' 10:00-20:00 | ו' 10:00-14:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "locationPrecision": "address",
@@ -102613,7 +102563,7 @@
   {
     "openingHours": "א'-ה' 10:00-17:00 | ו' 08:00-14:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -102642,7 +102592,7 @@
   {
     "openingHours": "א'-ה' 10:00-18:00 | ו' 10:00-14:30",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -102671,7 +102621,7 @@
   {
     "openingHours": "א'-ה' 09:00-21:30 | ו' 08:30-14:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
@@ -102700,7 +102650,7 @@
   {
     "openingHours": "א'-ה' 10:00-21:30 | ו' 10:00-15:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו רמת גן",
     "locationPrecision": "address",
@@ -102728,7 +102678,7 @@
   {
     "openingHours": "א'-ה' 10:00-20:30 | ו' 08:30-14:30",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "locationPrecision": "address",
@@ -102756,7 +102706,7 @@
   {
     "openingHours": "א'-ה' 09:00-18:00 | ו' 09:00-14:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "locationPrecision": "address",
@@ -102784,7 +102734,7 @@
   {
     "openingHours": "א'-ה' 09:00-19:30 | ו' 09:00-14:30",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו תל אביב היכל מנורה",
     "locationPrecision": "address",
@@ -102812,7 +102762,7 @@
   {
     "openingHours": "א'-ה' 10:30-19:00 | ו' 10:00-15:30",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו תל אביב שוק הפשפשים",
     "locationPrecision": "address",
@@ -102840,7 +102790,7 @@
   {
     "openingHours": "א'-ה' 09:30-17:30 | ו' 09:30-14:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו תל אביב פלורנטין",
     "locationPrecision": "address",
@@ -102868,7 +102818,7 @@
   {
     "openingHours": "א'-ה' 10:00-18:00 | ו' 10:00-15:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "locationPrecision": "city",
@@ -102896,7 +102846,7 @@
   {
     "openingHours": "א'-ה' 09:00-19:00 | ו' 09:00-13:30",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו אלונים",
     "locationPrecision": "city",
@@ -102926,7 +102876,7 @@
   {
     "openingHours": "א'-ה' 10:00-19:00 | ו' 10:00-14:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "locationPrecision": "city",
@@ -102956,7 +102906,7 @@
   {
     "openingHours": "א'-ה' 10:00-18:45 | ו' 10:00-13:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "locationPrecision": "city",
@@ -102986,7 +102936,7 @@
   {
     "openingHours": "א'-ג' 10:00-16:00 | ד'-ה' 10:00-17:00 | ו' 09:30-15:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "locationPrecision": "city",
@@ -103014,7 +102964,7 @@
   {
     "openingHours": "א'-ה' 10:00-19:00 | ו' 09:00-14:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "locationPrecision": "city",
@@ -103042,7 +102992,7 @@
   {
     "openingHours": "א'-ה' 09:30-20:00 | ו' 09:00-15:30",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "locationPrecision": "city",
@@ -103070,7 +103020,7 @@
   {
     "openingHours": "א'-ה' 10:00-20:30 | ו' 08:00-14:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "locationPrecision": "city",
@@ -103098,7 +103048,7 @@
   {
     "openingHours": "א'-ה' 08:30-18:00 | ו' 07:30-14:30",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "locationPrecision": "city",
@@ -103126,7 +103076,7 @@
   {
     "openingHours": "א'-ה' 10:00-20:00 | ו' 10:00-14:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "locationPrecision": "city",
@@ -103154,7 +103104,7 @@
   {
     "openingHours": "א'-ה' 10:30-20:00 | ו' 10:30-14:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "locationPrecision": "city",
@@ -103182,7 +103132,7 @@
   {
     "openingHours": "א'-ה' 10:00-16:00 | ו' 10:00-14:30",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "locationPrecision": "city",
@@ -103210,7 +103160,7 @@
   {
     "openingHours": "א'-ה' 12:00-22:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "locationPrecision": "city",
@@ -103238,7 +103188,7 @@
   {
     "openingHours": "א'-ה' 10:00-19:00 | ו' 10:00-13:30",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "locationPrecision": "city",
@@ -103266,7 +103216,7 @@
   {
     "openingHours": "א'-ה' 10:00-16:30 | ו' 09:00-14:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "locationPrecision": "city",
@@ -103294,7 +103244,7 @@
   {
     "openingHours": "א'-ה' 09:30-18:30 | ו' 09:30-15:30",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "locationPrecision": "city",
@@ -103322,7 +103272,7 @@
   {
     "openingHours": "א'-ה' 10:30-20:00 | ו' 10:30-13:30",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "locationPrecision": "city",
@@ -103350,7 +103300,7 @@
   {
     "openingHours": "א'-ה' 08:30-19:00 | ו' 08:30-12:30",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "locationPrecision": "city",
@@ -103378,7 +103328,7 @@
   {
     "openingHours": "א'-ה' 11:00-20:00 | ו' 09:00-14:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "locationPrecision": "city",
@@ -103406,7 +103356,7 @@
   {
     "openingHours": "א'-ה' 10:00-22:00 | ו' 10:00-13:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "locationPrecision": "city",
@@ -103434,7 +103384,7 @@
   {
     "openingHours": "א'-ה' 09:00-16:00 | ו' 09:00-14:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "locationPrecision": "city",
@@ -103462,7 +103412,7 @@
   {
     "openingHours": "א'-ה' 10:30-21:00 | ו' 09:00-15:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "locationPrecision": "city",
@@ -103490,7 +103440,7 @@
   {
     "openingHours": "א'-ה' 10:00-21:00 | ו' 10:00-15:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו ראשל\"צ קניון הזהב",
     "locationPrecision": "city",
@@ -103518,7 +103468,7 @@
   {
     "openingHours": "א'-ה' 10:30-21:00 | ו' 09:00-14:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו ראשל\"צ ראשונים",
     "locationPrecision": "city",
@@ -103546,7 +103496,7 @@
   {
     "openingHours": "א'-ה' 09:00-20:00 | ו' 09:00-15:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "locationPrecision": "address",
@@ -103573,7 +103523,7 @@
   },
   {
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "א'-ה' 10:00-21:00 | ו' 09:00-14:00",
     "name": "חומוס אליהו",
     "locationPrecision": "city",
@@ -103603,7 +103553,7 @@
   {
     "openingHours": "א'-ה' 10:30-20:00 | ו' 10:00-14:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו באר שבע מצדה",
     "locationPrecision": "city",
@@ -103630,7 +103580,7 @@
   {
     "openingHours": "א'-ד' 10:30-20:00 | ה' 10:30-22:00 | ו' 09:30-15:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "locationPrecision": "city",
@@ -103657,7 +103607,7 @@
   {
     "openingHours": "א'-ה' 10:00-17:00 | ו' 10:00-15:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו הרצליה שער העיר",
     "locationPrecision": "city",
@@ -103684,7 +103634,7 @@
   {
     "openingHours": "א'-ה' 09:30-18:00 | ו' 08:30-13:30",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו טבריה עלית פוריה",
     "locationPrecision": "city",
@@ -103711,7 +103661,7 @@
   {
     "openingHours": "א' 10:30-21:00 | ב'-ה' 10:30-22:00 | ו' 09:30-14:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו ירושלים מלחה",
     "locationPrecision": "city",
@@ -103738,7 +103688,7 @@
   {
     "openingHours": "א'-ה' 09:00-17:00 | ו' 09:00-15:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "locationPrecision": "address",
@@ -103765,7 +103715,7 @@
   {
     "openingHours": "א'-ה' 09:30-22:00 | ו' 09:30-15:30 | ש' 20:00-23:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו רחובות קניון",
     "locationPrecision": "city",
@@ -103792,7 +103742,7 @@
   {
     "openingHours": "א'-ה' 10:30-19:00 | ו' 10:00-14:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו רמת גן בורסה",
     "locationPrecision": "city",
@@ -103819,7 +103769,7 @@
   {
     "openingHours": "א'-ה' 10:00-20:00 | ו' 09:00-15:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו תל אביב דיזינגוף סנטר",
     "locationPrecision": "city",
@@ -103846,7 +103796,7 @@
   {
     "openingHours": "א'-ה' 09:00-17:00 | ו' 08:00-17:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו תל אביב",
     "locationPrecision": "city",
@@ -103874,7 +103824,7 @@
     "website": "https://pizza-story.co.il",
     "certifiedBy": "בד\"ץ בית יוסף",
     "id": "9000106",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה סטורי",
@@ -103898,7 +103848,7 @@
     "source": "manual",
     "certifiedBy": "בד\"ץ יורה דעה",
     "id": "9000108",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "instagram": "https://www.instagram.com/pizza_milan_k_a/",
     "category": "dairy",
     "name": "פיצה מילאנו",
@@ -103915,7 +103865,7 @@
     "openingHours": "א-ה 10:30-22:00, ו 10:00-15:30, ש מוצ\"ש-22:00",
     "certifiedBy": "רבנות אילת",
     "id": "9000109",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה מילאנו",
@@ -103934,7 +103884,7 @@
     "facebook": "https://www.facebook.com/pizzamilanoramla/",
     "certifiedBy": "בד\"ץ יורה דעה",
     "id": "9000110",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "category": "dairy",
     "name": "פיצה מילאנו",
@@ -103954,7 +103904,7 @@
     "source": "manual",
     "certifiedBy": "בד\"ץ העדה החרדית",
     "id": "9000111",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "name": "פיצה מילאנו",
     "address": "העצמאות 37, קריית אתא",
@@ -103968,7 +103918,7 @@
   },
   {
     "id": "9000112",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 10:00-24:00",
     "name": "פיצה פצץ",
     "locationPrecision": "address",
@@ -103987,7 +103937,7 @@
   },
   {
     "id": "9000113",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "א'-ה' 10:00-24:00 | ו' 09:00-כניסת שבת | מוצ\"ש פתוח",
     "name": "פיצה פצץ",
     "locationPrecision": "address",
@@ -104007,7 +103957,7 @@
   },
   {
     "id": "9100000",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 11:00-00:00; Fr 11:00-15:00; Sa 20:45-00:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104027,7 +103977,7 @@
   },
   {
     "id": "9100001",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Sa 20:45-23:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104047,7 +103997,7 @@
   },
   {
     "id": "9100002",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 20:45-23:30",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104067,7 +104017,7 @@
   },
   {
     "id": "9100003",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 11:00-00:00; Fr 11:00-15:00; Sa 21:05-00:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104087,7 +104037,7 @@
   },
   {
     "id": "9100004",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-14:00; Sa 20:45-00:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104107,7 +104057,7 @@
   },
   {
     "id": "9100005",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 11:00-00:00; Fr 11:00-15:00; Sa 20:45-00:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104127,7 +104077,7 @@
   },
   {
     "id": "9100006",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su 11:00-23:59; M-W 11:00-00:00; Th 11:00-00:30; Fr 11:00-15:00; Sa 21:05-01:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104147,7 +104097,7 @@
   },
   {
     "id": "9100007",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 10:00-00:00; Fr 10:00-15:00; Sa 20:55-01:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104167,7 +104117,7 @@
   },
   {
     "id": "9100008",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 11:00-00:00; Fr 11:00-15:00; Sa 20:55-00:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104187,7 +104137,7 @@
   },
   {
     "id": "9100012",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-14:00; Sa 20:45-23:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104207,7 +104157,7 @@
   },
   {
     "id": "9100013",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-W 11:00-23:00; Th 11:00-23:30; Fr 11:00-14:30; Sa 21:00-23:30",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104227,7 +104177,7 @@
   },
   {
     "id": "9100014",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 10:30-23:15; Fr 10:30-15:00; Sa 20:16-23:15",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104247,7 +104197,7 @@
   },
   {
     "id": "9100015",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-16:00; Sa 20:45-23:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104267,7 +104217,7 @@
   },
   {
     "id": "9100016",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 11:30-00:00; Fr 11:00-00:00; Sa 20:35-00:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104287,7 +104237,7 @@
   },
   {
     "id": "9100018",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-W 10:00-01:00; Th 09:00-01:00; Fr 10:45-16:00; Sa 20:25-01:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104307,7 +104257,7 @@
   },
   {
     "id": "9100019",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 11:00-00:00; Fr 11:00-16:00; Sa 20:15-00:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104327,7 +104277,7 @@
   },
   {
     "id": "9100020",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 11:00-22:00; Sa 20:35-23:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104347,7 +104297,7 @@
   },
   {
     "id": "9100022",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-W 11:00-23:00; Th 11:00-00:00; Fr 11:00-15:00; Sa 20:15-00:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104367,7 +104317,7 @@
   },
   {
     "id": "9100023",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 11:00-22:30; Sa 20:45-23:30",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104387,7 +104337,7 @@
   },
   {
     "id": "9100024",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-14:30; Sa 20:45-00:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104407,7 +104357,7 @@
   },
   {
     "id": "9100025",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 10:00-23:00; Fr 10:00-15:00; Sa 20:15-00:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104427,7 +104377,7 @@
   },
   {
     "id": "9100026",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 20:45-23:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104447,7 +104397,7 @@
   },
   {
     "id": "9100027",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Sa 20:35-23:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104467,7 +104417,7 @@
   },
   {
     "id": "9100028",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 10:30-22:00; Fr 10:30-14:00; Sa 20:45-22:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104487,7 +104437,7 @@
   },
   {
     "id": "9100029",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 10:30-23:00; Fr 10:30-14:00; Sa 20:45-23:30",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104507,7 +104457,7 @@
   },
   {
     "id": "9100030",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 11:00-00:00; Fr 11:00-15:00; Sa 20:30-00:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104527,7 +104477,7 @@
   },
   {
     "id": "9100031",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Tu 11:00-01:00; W 11:00-00:15; Th 11:00-02:00; Fr 11:00-14:30; Sa 20:45-02:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104547,7 +104497,7 @@
   },
   {
     "id": "9100033",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-W 11:00-00:00; Th 11:00-00:30; Fr 11:00-15:00; Sa 20:46-00:30",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104567,7 +104517,7 @@
   },
   {
     "id": "9100034",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 11:00-01:00; Fr 11:00-17:00; Sa 20:20-01:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104587,7 +104537,7 @@
   },
   {
     "id": "9100035",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 09:00-22:45; Fr 09:00-15:00; Sa 20:45-23:30",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104607,7 +104557,7 @@
   },
   {
     "id": "9100036",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-M 11:00-21:00; Tu 12:00-21:00; W-Th 11:00-21:00; Fr 11:00-13:00; Sa 20:45-21:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104627,7 +104577,7 @@
   },
   {
     "id": "9100037",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 11:30-22:00; Sa 20:45-22:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104647,7 +104597,7 @@
   },
   {
     "id": "9100038",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 09:00-00:00; Fr 09:00-14:45; Sa 20:45-00:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104667,7 +104617,7 @@
   },
   {
     "id": "9100039",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 10:00-00:00; Fr 10:00-15:30; Sa 20:15-00:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104687,7 +104637,7 @@
   },
   {
     "id": "9100040",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 11:00-00:30; Fr 10:00-14:00; Sa 20:45-00:30",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104707,7 +104657,7 @@
   },
   {
     "id": "9100048",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 11:00-22:00; Fr 11:00-14:00; Sa 20:45-23:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104727,7 +104677,7 @@
   },
   {
     "id": "9100049",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 12:00-23:00; Sa 20:45-23:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104747,7 +104697,7 @@
   },
   {
     "id": "9100050",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 11:00-01:00; Fr 11:00-15:00; Sa 20:45-23:45",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104767,7 +104717,7 @@
   },
   {
     "id": "9100051",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-16:00; Sa 20:45-00:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104787,7 +104737,7 @@
   },
   {
     "id": "9100052",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 12:00-23:00; Sa 20:38-00:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104807,7 +104757,7 @@
   },
   {
     "id": "9100053",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 20:45-23:30",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104827,7 +104777,7 @@
   },
   {
     "id": "9100054",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-W 11:00-23:00; Th 11:00-00:00; Fr 11:00-14:00; Sa 21:14-23:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104847,7 +104797,7 @@
   },
   {
     "id": "9100055",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 11:00-00:00; Fr 11:00-14:30; Sa 20:30-00:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104867,7 +104817,7 @@
   },
   {
     "id": "9100056",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 10:30-23:30; Fr 10:30-14:30; Sa 20:45-23:30",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104887,7 +104837,7 @@
   },
   {
     "id": "9100057",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-15:00; Sa 20:45-00:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104907,7 +104857,7 @@
   },
   {
     "id": "9100058",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 09:00-23:00; Fr 09:00-14:00; Sa 20:15-23:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104927,7 +104877,7 @@
   },
   {
     "id": "9100059",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-W 11:00-23:00; Th 11:00-00:00; Fr 11:00-15:00; Sa 20:45-00:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104947,7 +104897,7 @@
   },
   {
     "id": "9100060",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 10:30-00:15; Fr 10:30-17:00; Sa 20:23-00:30",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104967,7 +104917,7 @@
   },
   {
     "id": "9100061",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 11:00-22:45; Fr 11:00-14:00; Sa 21:15-22:45",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -104987,7 +104937,7 @@
   },
   {
     "id": "9100062",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 10:30-00:00; Sa 20:45-00:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -105007,7 +104957,7 @@
   },
   {
     "id": "9100063",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-W 11:00-00:00; Th 11:00-01:00; Fr 11:00-15:00; Sa 20:45-00:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -105027,7 +104977,7 @@
   },
   {
     "id": "9100064",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-W 11:00-22:00; Th 11:00-22:30; Fr 11:00-14:00; Sa 20:45-22:30",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -105047,7 +104997,7 @@
   },
   {
     "id": "9100065",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 11:00-00:00; Fr 11:00-15:00; Sa 20:55-00:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -105067,7 +105017,7 @@
   },
   {
     "id": "9100066",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 11:00-00:00; Sa 21:00-00:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -105087,7 +105037,7 @@
   },
   {
     "id": "9100070",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 10:00-00:00; Fr 10:00-15:00; Sa 20:45-00:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -105107,7 +105057,7 @@
   },
   {
     "id": "9100071",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 10:00-00:00; Fr 10:00-15:00; Sa 20:45-00:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -105127,7 +105077,7 @@
   },
   {
     "id": "9100072",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-W 11:00-23:00; Th 11:00-00:00; Fr 11:00-15:00; Sa 20:45-00:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -105147,7 +105097,7 @@
   },
   {
     "id": "9100073",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 10:00-23:00; Fr 10:00-16:00; Sa 20:48-00:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -105167,7 +105117,7 @@
   },
   {
     "id": "9100074",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 12:00-23:00; Sa 21:01-00:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -105187,7 +105137,7 @@
   },
   {
     "id": "9100076",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 11:00-22:45; Fr 11:00-15:00; Sa 20:45-23:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -105207,7 +105157,7 @@
   },
   {
     "id": "9100078",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 15:00-22:30; Sa 20:15-23:30",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -105227,7 +105177,7 @@
   },
   {
     "id": "9100079",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 11:00-23:00; Fr 11:00-14:00; Sa 20:45-23:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -105247,7 +105197,7 @@
   },
   {
     "id": "9100080",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 11:00-23:30; Fr 11:00-14:30; Sa 20:45-23:30",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -105267,7 +105217,7 @@
   },
   {
     "id": "9100081",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-Th 11:00-23:30; Fr 11:00-15:00; Sa 20:15-23:30",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -105287,7 +105237,7 @@
   },
   {
     "id": "9100083",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "openingHours": "Su-W 10:30-23:00; Th 10:30-00:00; Fr 10:30-16:00; Sa 20:30-00:00",
     "name": "פיצה האט",
     "locationPrecision": "address",
@@ -111149,7 +111099,7 @@
   {
     "id": "burgersbar-c0ae94d5",
     "name": "בורגרס בר הר חומה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "ירושלים",
     "address": "אליהו קורן 27, ירושלים",
     "location": {
@@ -111167,7 +111117,7 @@
   {
     "id": "burgersbar-8e986587",
     "name": "בורגרס בר מחנה יהודה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "ירושלים",
     "address": "עץ חיים 68, ירושלים",
     "location": {
@@ -111185,7 +111135,7 @@
   {
     "id": "burgersbar-71b69ef0",
     "name": "בורגרס בר יפו 36",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "ירושלים",
     "address": "יפו 36, ירושלים",
     "location": {
@@ -111203,7 +111153,7 @@
   {
     "id": "burgersbar-fbccb6b0",
     "name": "בורגרס בר הרובע היהודי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "ירושלים",
     "address": "תפארת ישראל 12, ירושלים",
     "location": {
@@ -111221,7 +111171,7 @@
   {
     "id": "burgersbar-be293537",
     "name": "בורגרס בר המושבה הגרמנית",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "ירושלים",
     "address": "עמק רפאים 31, ירושלים",
     "location": {
@@ -111239,7 +111189,7 @@
   {
     "id": "burgersbar-0b78072a",
     "name": "בורגרס בר הגבעה הצרפתית",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "ירושלים",
     "address": "ההגנה 21, ירושלים",
     "location": {
@@ -111257,7 +111207,7 @@
   {
     "id": "burgersbar-20544f4b",
     "name": "בורגרס בר גילה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "ירושלים",
     "address": "הגננת 216, ירושלים",
     "location": {
@@ -111275,7 +111225,7 @@
   {
     "id": "burgersbar-fdcd37b2",
     "name": "בורגרס בר גבעת שאול",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "ירושלים",
     "address": "בית הדפוס 12, ירושלים",
     "location": {
@@ -111293,7 +111243,7 @@
   {
     "id": "burgersbar-b0fda7d8",
     "name": "בורגרס בר בן יהודה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "ירושלים",
     "address": "בן יהודה 2, ירושלים",
     "location": {
@@ -111311,7 +111261,7 @@
   {
     "id": "burgersbar-ca68fc3c",
     "name": "בורגרס בר",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "באר יעקב",
     "address": "עמק 2, באר יעקב",
     "location": {
@@ -111329,7 +111279,7 @@
   {
     "id": "burgersbar-8a8db08b",
     "name": "בורגרס בר",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "חולון",
     "address": "גולדה מאיר 7, חולון",
     "location": {
@@ -111347,7 +111297,7 @@
   {
     "id": "burgersbar-417e6b61",
     "name": "בורגרס בר",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "הרצליה",
     "address": "ביילינסון 1, הרצליה",
     "location": {
@@ -111365,7 +111315,7 @@
   {
     "id": "burgersbar-a7096850",
     "name": "בורגרס בר",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "גבעתיים",
     "address": "דרך יצחק רבין 53, גבעתיים",
     "location": {
@@ -111383,7 +111333,7 @@
   {
     "id": "burgersbar-6da47c9c",
     "name": "בורגרס בר נתניה פיאנו",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "נתניה",
     "address": "שושנה דמארי 30, מתחם פיאנו, נתניה",
     "location": {
@@ -111401,7 +111351,7 @@
   {
     "id": "burgersbar-47c25dd8",
     "name": "בורגרס בר עזריאלי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "רמלה",
     "address": "שדרות דוד רזיאל 1, קניון עזריאלי, רמלה",
     "location": {
@@ -111419,7 +111369,7 @@
   {
     "id": "burgersbar-f0f2c420",
     "name": "בורגרס בר",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "פתח תקווה",
     "address": "רוטשילד 89, פתח תקווה",
     "location": {
@@ -111437,7 +111387,7 @@
   {
     "id": "burgersbar-f5d9de6e",
     "name": "בורגרס בר ראשון לציון קניון הזהב",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "ראשון לציון",
     "address": "קניון הזהב, ראשון לציון",
     "location": {
@@ -111456,7 +111406,7 @@
   {
     "id": "burgersbar-e0361b76",
     "name": "בורגרס בר רמת אביב",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "תל אביב",
     "address": "מרכז טאגור 30, תל אביב",
     "location": {
@@ -111474,7 +111424,7 @@
   {
     "id": "burgersbar-e785eafc",
     "name": "בורגרס בר",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "רעננה",
     "address": "אחוזה 184, רעננה",
     "location": {
@@ -111492,7 +111442,7 @@
   {
     "id": "burgersbar-d9af30d9",
     "name": "בורגרס בר תל אביב עזריאלי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "תל אביב",
     "address": "קניון עזריאלי, תל אביב",
     "location": {
@@ -111511,7 +111461,7 @@
   {
     "id": "burgersbar-e1596d55",
     "name": "בורגרס בר",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "גבעת שמואל",
     "address": "האורנים 1, גבעת שמואל",
     "location": {
@@ -111529,7 +111479,7 @@
   {
     "id": "burgersbar-28d8ca5f",
     "name": "בורגרס בר",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "מצפה רמון",
     "address": "שדרות בן גוריון 2, מצפה רמון",
     "location": {
@@ -111547,7 +111497,7 @@
   {
     "id": "burgersbar-74ae9f7d",
     "name": "בורגרס בר",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "נתיבות",
     "address": "בעלי המלאכה 3, פריז סנטר, נתיבות",
     "location": {
@@ -111565,7 +111515,7 @@
   {
     "id": "burgersbar-eb6780e1",
     "name": "בורגרס בר",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "שדרות",
     "address": "ההסתדרות 10, שדרות",
     "location": {
@@ -111583,7 +111533,7 @@
   {
     "id": "burgersbar-83561c98",
     "name": "בורגרס בר באר שבע גראנד",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "באר שבע",
     "address": "שדרות דוד טוביהו 125, גראנד קניון, באר שבע",
     "location": {
@@ -111602,7 +111552,7 @@
   {
     "id": "burgersbar-1f17fca3",
     "name": "בורגרס בר אילת דן",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "אילת",
     "address": "החוף הצפוני, דן אילת",
     "location": {
@@ -111621,7 +111571,7 @@
   {
     "id": "burgersbar-85a13288",
     "name": "בורגרס בר אילת ביג",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "אילת",
     "address": "הסתת 20, מרכז ביג, אילת",
     "location": {
@@ -111639,7 +111589,7 @@
   {
     "id": "burgersbar-87223019",
     "name": "בורגרס בר אילת פנינת",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "אילת",
     "address": "דרבן 4, מרכז פנינה, אילת",
     "location": {
@@ -112641,7 +112591,7 @@
   {
     "id": "hummusneri-55f310c0",
     "name": "חומוס נרי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "ראש העין",
     "address": "הרב שלום שבזי 60, ראש העין",
     "phone": "077-300-7200",
@@ -112659,7 +112609,7 @@
   {
     "id": "hummusneri-9f095951",
     "name": "חומוס נרי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "בני ברק",
     "address": "מצדה 9, בני ברק",
     "location": {
@@ -112677,7 +112627,7 @@
   {
     "id": "hummusneri-5756c65b",
     "name": "חומוס נרי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "שוהם",
     "address": "דקל 30, שוהם",
     "location": {
@@ -112696,7 +112646,7 @@
   {
     "id": "hummusneri-8e3b3a55",
     "name": "חומוס נרי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "הוד השרון",
     "address": "סוקולוב 2, הוד השרון",
     "phone": "09-740-0400",
@@ -112749,7 +112699,7 @@
   {
     "id": "manual-fast-food-zalmans",
     "name": "זלמנס",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "מצדה 9, בני ברק",
     "cityId": "בני ברק",
@@ -112911,7 +112861,7 @@
   {
     "id": "manual-fast-food-hallo-yemen",
     "name": "הלו תימן",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "יוחנן הסנדלר 1, בני ברק",
     "cityId": "בני ברק",
@@ -113185,7 +113135,7 @@
   {
     "id": "manual-fast-food-bobe",
     "name": "בובע",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "קניון עזריאלי, תל אביב",
     "cityId": "תל אביב",
@@ -113223,7 +113173,7 @@
   {
     "id": "manual-fast-food-manfis",
     "name": "מנפיס",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "הנשיא 6, לוד",
     "cityId": "לוד",
@@ -113241,7 +113191,7 @@
   {
     "id": "humuskaspy-82a8a2a0",
     "name": "חומוס כספי בן יהודה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "תל אביב",
     "address": "ארלוזרוב 13, תל אביב",
     "phone": "03-6050680",
@@ -113259,7 +113209,7 @@
   {
     "id": "humuskaspy-da4f84b4",
     "name": "חומוס כספי שוסטר",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "תל אביב",
     "address": "אבא אחימאיר 29, מרכז שוסטר, תל אביב",
     "phone": "03-6199981",
@@ -113277,7 +113227,7 @@
   {
     "id": "humuskaspy-b368c7f2",
     "name": "חומוס כספי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "פתח תקווה",
     "address": "יעל רום 8, אם המושבות, פתח תקווה",
     "phone": "03-9470111",
@@ -113836,7 +113786,7 @@
   {
     "openingHours": "א'-ה' 10:00-18:00 | ו' 10:00-14:30",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "locationPrecision": "address",
@@ -113866,7 +113816,7 @@
   {
     "openingHours": "Su-Th 10:00-18:00; Fr 09:00-15:00",
     "lastVerifiedAt": "2026-07-30",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
     "locationPrecision": "city",
@@ -113975,7 +113925,7 @@
   {
     "id": "manual-hummus-bardichev-haifa",
     "name": "חומוס ברדיצ'ב",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "וודג'ווד 1, מרכז הכרמל, חיפה",
     "cityId": "חיפה",
@@ -113991,7 +113941,7 @@
   {
     "id": "manual-falafel-yerushalmi-haifa",
     "name": "פלאפל ירושלמי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "הרצל 62, חיפה",
     "cityId": "חיפה",
@@ -114041,7 +113991,7 @@
   {
     "id": "manual-haagala-shawarma-kiryat-ata",
     "name": "שווארמה העגלה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "מורדי הגיטאות 6, קריית אתא",
     "cityId": "קריית אתא",
@@ -114371,7 +114321,7 @@
   {
     "id": "manual-pizza-tzof-afula",
     "name": "פיצה צוף",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "address": "הנרייטה סולד 37, עפולה",
     "cityId": "עפולה",
@@ -114386,7 +114336,7 @@
   {
     "id": "manual-haesh-sheli-migdal-haemek",
     "name": "האש שלי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "דרך העמק 16, מגדל העמק",
     "cityId": "מגדל העמק",
@@ -114402,7 +114352,7 @@
   {
     "id": "manual-pizza-hamaestro-migdal-haemek",
     "name": "פיצה המאסטרו",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "address": "דרך העמק 16, מגדל העמק",
     "cityId": "מגדל העמק",
@@ -114525,7 +114475,7 @@
   {
     "id": "manual-shnitzel-saida-ashkelon",
     "name": "שניצל סעידה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "היוצרים 36, אשקלון",
     "cityId": "אשקלון",
@@ -114541,7 +114491,7 @@
   {
     "id": "manual-hapita-netivot",
     "name": "הפיתה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "יוסף סמלו 8, נתיבות",
     "cityId": "נתיבות",
@@ -114639,7 +114589,7 @@
   {
     "id": "manual-patita-netivot",
     "name": "פטיטה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "בעלי המלאכה 2, נתיבות",
     "cityId": "נתיבות",
@@ -114691,7 +114641,7 @@
   {
     "id": "manual-burger-ahinoo-ofakim",
     "name": "בורגר אחינו",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "מבצע קדש 3, אופקים",
     "cityId": "אופקים",
@@ -114795,7 +114745,7 @@
   {
     "id": "bardichev-48c56936",
     "name": "חומוס ברדיצ'ב כרמל סנטר",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "חיפה",
     "address": "ביכורים 2, כרמל סנטר, חיפה",
     "phone": "04-657-4132",
@@ -114813,7 +114763,7 @@
   {
     "id": "bardichev-2205b62c",
     "name": "חומוס ברדיצ'ב נווה שאנן",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "חיפה",
     "address": "טרומפלדור 53, נווה שאנן, חיפה",
     "phone": "04-847-7390",
@@ -114831,7 +114781,7 @@
   {
     "id": "bardichev-413696e3",
     "name": "חומוס ברדיצ'ב קניון",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "חיפה",
     "address": "דרך משה פלימן 4, קניון חיפה, חיפה",
     "phone": "055-243-8032",
@@ -114849,7 +114799,7 @@
   {
     "id": "bardichev-0822912f",
     "name": "חומוס ברדיצ'ב שוק תלפיות",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "חיפה",
     "address": "סירקין 27, שוק תלפיות, חיפה",
     "phone": "04-867-5252",
@@ -114901,7 +114851,7 @@
   {
     "id": "manual-hashamen-beit-shemesh",
     "name": "שאוורמה השמן",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "שד' יגאל אלון 24, בית שמש",
     "cityId": "בית שמש",
@@ -115003,7 +114953,7 @@
   {
     "id": "manual-shnitzellist-beit-shemesh",
     "name": "שניצליסט",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "שד' האמוראים 22, בית שמש",
     "cityId": "בית שמש",
@@ -115051,7 +115001,7 @@
   {
     "id": "manual-tasty-bagets-beit-shemesh",
     "name": "טייסטי בגטים בשריים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "ירמיהו הנביא 34, בית שמש",
     "cityId": "בית שמש",
@@ -115067,7 +115017,7 @@
   {
     "id": "manual-grill-burger-beit-shemesh",
     "name": "גריל בורגר",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "נחל צאלים 2, בית שמש",
     "cityId": "בית שמש",
@@ -115146,7 +115096,7 @@
   {
     "id": "manual-falafel-abdar-beitar-ilit",
     "name": "פלאפל אבדר",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "אלעזר המודעי 7, ביתר עילית",
     "cityId": "ביתר עילית",
@@ -115229,7 +115179,7 @@
   {
     "id": "manual-pizza-yerushalayim-kiryat-sefer",
     "name": "פיצה ירושלים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "address": "רבי שמעון בר יוחאי 31, מודיעין עילית",
     "cityId": "קריית ספר",
@@ -115319,7 +115269,7 @@
   {
     "id": "manual-pizza-story-modiin",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "address": "עמק זבולון 24, מרכז קייזר, מודיעין",
     "cityId": "מודיעין",
@@ -115378,7 +115328,7 @@
   {
     "id": "manual-bahdons-hummus-rehovot",
     "name": "בהדונס חומוס",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "דרך מאיר ויסגל 2, רחובות",
     "cityId": "רחובות",
@@ -115394,7 +115344,7 @@
   {
     "id": "manual-pizza-amaros-rehovot",
     "name": "פיצה אמארוס",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "address": "הרצל 150, רחובות",
     "cityId": "רחובות",
@@ -115410,7 +115360,7 @@
   {
     "id": "manual-pizza-reuven-rehovot",
     "name": "פיצה ראובן",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "address": "הרצל 126, רחובות",
     "cityId": "רחובות",
@@ -115425,7 +115375,7 @@
   {
     "id": "manual-pizza-smiley-rehovot",
     "name": "פיצה סמיילי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "address": "דרך ירושלים 2, מרכז שרונה, רחובות",
     "cityId": "רחובות",
@@ -115441,7 +115391,7 @@
   {
     "id": "manual-falafel-anavim-nes-ziona",
     "name": "פלאפל ענבים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "הפטיש 6, נס ציונה",
     "cityId": "נס ציונה",
@@ -115476,7 +115426,7 @@
   {
     "id": "manual-b-burger-yavne",
     "name": "בי בורגר",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "הדרור 14, יבנה",
     "cityId": "יבנה",
@@ -115492,7 +115442,7 @@
   {
     "id": "manual-habibi-hbb-gedera",
     "name": "חביבי HBB",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "הרצל 3, גדרה",
     "cityId": "גדרה",
@@ -115507,7 +115457,7 @@
   {
     "id": "manual-misadat-burgerim-gedera",
     "name": "בורגרים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "הבילויים 22, גדרה",
     "cityId": "גדרה",
@@ -115526,7 +115476,7 @@
   {
     "id": "manual-pizza-ninja-gedera",
     "name": "פיצה נינג'ה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "address": "צאלה 47, גדרה",
     "cityId": "גדרה",
@@ -115541,7 +115491,7 @@
   {
     "id": "manual-pizza-kimeat-hinam-gedera",
     "name": "פיצה כמעט חינם",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "address": "מנחם בגין 36, גדרה",
     "cityId": "גדרה",
@@ -115575,7 +115525,7 @@
   {
     "id": "manual-burger-salon-gedera",
     "name": "בורגר סלון",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "אברהם דורון 1, מתחם BIG, גדרה",
     "cityId": "גדרה",
@@ -115628,7 +115578,7 @@
   {
     "id": "manual-falafel-damti-gedera",
     "name": "פלאפל דמתי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "אברהם דורון 1, מתחם BIG, גדרה",
     "cityId": "גדרה",
@@ -115702,7 +115652,7 @@
   {
     "id": "manual-mehadrin-al-haesh-netanya",
     "name": "מהדרין על האש",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "לילנבלום 9, נתניה",
     "cityId": "נתניה",
@@ -115719,7 +115669,7 @@
   {
     "id": "manual-just-meat-netanya",
     "name": "Just Meat",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "הארזים 25, מרכז יהלום, נתניה",
     "cityId": "נתניה",
@@ -115735,7 +115685,7 @@
   {
     "id": "manual-mifgash-haarazim-netanya",
     "name": "מפגש הארזים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "פתח תקווה 82, נתניה",
     "cityId": "נתניה",
@@ -115897,7 +115847,7 @@
   {
     "id": "manual-king-meat-hod-hasharon",
     "name": "קינג מיט",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "דרך רמתיים 65, הוד השרון",
     "cityId": "הוד השרון",
@@ -115913,7 +115863,7 @@
   {
     "id": "manual-tabunbon-hod-hasharon",
     "name": "הטאבון בון בון",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "דרך רמתיים 90, הוד השרון",
     "cityId": "הוד השרון",
@@ -115949,7 +115899,7 @@
   {
     "id": "manual-pizza-story-rosh-haayin",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "address": "הרב שלום שבזי 30, ראש העין",
     "cityId": "ראש העין",
@@ -116060,7 +116010,7 @@
   {
     "id": "manual-schnitzel-volano-bnei-brak",
     "name": "שניצל וולנו",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "מצדה 6, בני ברק",
     "cityId": "בני ברק",
@@ -116076,7 +116026,7 @@
   {
     "id": "manual-burgerim-givat-shmuel",
     "name": "בורגרים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "מנחם בגין 38, מרכז רוגובין, גבעת שמואל",
     "cityId": "גבעת שמואל",
@@ -117166,7 +117116,7 @@
   {
     "id": "manual-memphis-lod",
     "name": "מנפיס",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "הנשיא 6, לוד",
     "cityId": "לוד",
@@ -117468,7 +117418,7 @@
   {
     "id": "manual-falafel-baribua-ashdod",
     "name": "פלאפל בריבוע",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "מנגו 4, אשדוד",
     "cityId": "אשדוד",
@@ -117488,7 +117438,7 @@
   {
     "id": "manual-falafel-baribua-beit-oved",
     "name": "פלאפל בריבוע",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "צומת בית עובד, תחנת דלק סונול",
     "cityId": "בית עובד",
@@ -117508,7 +117458,7 @@
   {
     "id": "manual-falafel-baribua-givat-shmuel",
     "name": "פלאפל בריבוע",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "יוני נתניהו 23, גבעת שמואל",
     "cityId": "גבעת שמואל",
@@ -117528,7 +117478,7 @@
   {
     "id": "manual-falafel-baribua-holon",
     "name": "פלאפל בריבוע",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "פנחס איילון 13, חולון",
     "cityId": "חולון",
@@ -117548,7 +117498,7 @@
   {
     "id": "manual-falafel-baribua-yavne",
     "name": "פלאפל בריבוע",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "הדוגית 16, מרכז רוגובין, יבנה",
     "cityId": "יבנה",
@@ -117568,7 +117518,7 @@
   {
     "id": "manual-falafel-baribua-ramat-gan",
     "name": "פלאפל בריבוע",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "קניון מרום נווה, רמת גן",
     "cityId": "רמת גן",
@@ -117588,7 +117538,7 @@
   {
     "id": "manual-falafel-baribua-netanya",
     "name": "פלאפל בריבוע",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "טום לנטוס 26, מרכז אלון, נתניה",
     "cityId": "נתניה",
@@ -117608,7 +117558,7 @@
   {
     "id": "manual-falafel-baribua-rishon-factory",
     "name": "פלאפל בריבוע מפעל",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "אליהו איתן 3, ביתן 141, ראשון לציון",
     "cityId": "ראשון לציון",
@@ -117628,7 +117578,7 @@
   {
     "id": "manual-falafel-baribua-shoham",
     "name": "פלאפל בריבוע",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "הדקל 30, שוהם",
     "cityId": "שוהם",
@@ -117649,7 +117599,7 @@
   {
     "id": "manual-falafel-baribua-rosh-haayin",
     "name": "פלאפל בריבוע",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "בזק 1, ראש העין",
     "cityId": "ראש העין",
@@ -117669,7 +117619,7 @@
   {
     "id": "manual-falafel-baribua-rishon-rothschild",
     "name": "פלאפל בריבוע",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "רוטשילד 85, ראשון לציון",
     "cityId": "ראשון לציון",
@@ -117689,7 +117639,7 @@
   {
     "id": "manual-falafel-baribua-rehovot",
     "name": "פלאפל בריבוע",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "הכרמל 76, אחוזת הנשיא, רחובות",
     "cityId": "רחובות",
@@ -117709,7 +117659,7 @@
   {
     "id": "manual-falafel-baribua-ramat-hasharon",
     "name": "פלאפל בריבוע",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "סוקולוב 34, רמת השרון",
     "cityId": "רמת השרון",
@@ -117729,7 +117679,7 @@
   {
     "id": "manual-falafel-baribua-tzoran",
     "name": "פלאפל בריבוע",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "שדרות יצחק רבין 38, מרכז מסחרי, צורן",
     "cityId": "צורן",
@@ -117749,7 +117699,7 @@
   {
     "id": "manual-falafel-baribua-paz-rupin",
     "name": "פלאפל בריבוע פז",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "תחנת פז רופין, כביש חדרה-בית ליד",
     "cityId": "רופין",
@@ -117769,7 +117719,7 @@
   {
     "id": "manual-falafel-baribua-kfar-yarok",
     "name": "פלאפל בריבוע הכפר הירוק",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "משה סנה 199, הכפר הירוק, רמת השרון",
     "cityId": "רמת השרון",
@@ -117788,7 +117738,7 @@
   {
     "id": "manual-falafel-baribua-paz-nachlat-yehuda",
     "name": "פלאפל בריבוע פז נחלת יהודה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "תחנת פז נחלת יהודה, ראשון לציון",
     "cityId": "ראשון לציון",
@@ -117808,7 +117758,7 @@
   {
     "id": "manual-4teamim-pt",
     "name": "פלאפל 4 טעמים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "בר כוכבא 41, פתח תקווה",
     "cityId": "פתח תקווה",
@@ -117827,7 +117777,7 @@
   {
     "id": "manual-4teamim-yavne",
     "name": "פלאפל 4 טעמים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "העצמאות 9, יבנה",
     "cityId": "יבנה",
@@ -117846,7 +117796,7 @@
   {
     "id": "manual-4teamim-jrm-avizur",
     "name": "פלאפל 4 טעמים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "אביזוהר 8, קניון רמת בית הכרם, ירושלים",
     "cityId": "ירושלים",
@@ -117865,7 +117815,7 @@
   {
     "id": "manual-4teamim-jrm-givat-shaul",
     "name": "פלאפל 4 טעמים גבעת שאול",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "בית הדפוס 12, גבעת שאול, ירושלים",
     "cityId": "ירושלים",
@@ -117882,7 +117832,7 @@
   {
     "id": "manual-4teamim-rishon",
     "name": "פלאפל 4 טעמים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "רוטשילד 68, ראשון לציון",
     "cityId": "ראשון לציון",
@@ -117900,7 +117850,7 @@
   {
     "id": "manual-4teamim-rehovot",
     "name": "פלאפל 4 טעמים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "הרצל 192, רחובות",
     "cityId": "רחובות",
@@ -117918,7 +117868,7 @@
   {
     "id": "manual-4teamim-tlv-yehuda-halevi",
     "name": "פלאפל 4 טעמים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "יהודה הלוי 49, תל אביב",
     "cityId": "תל אביב",
@@ -117936,7 +117886,7 @@
   {
     "id": "manual-4teamim-tlv-ibn-gavirol",
     "name": "פלאפל 4 טעמים אבן גבירול",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "אבן גבירול 93, תל אביב",
     "cityId": "תל אביב",
@@ -117954,7 +117904,7 @@
   {
     "id": "manual-4teamim-tlv-karlbach",
     "name": "פלאפל 4 טעמים קרליבך",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "קרליבך 7, תל אביב",
     "cityId": "תל אביב",
@@ -117970,7 +117920,7 @@
   {
     "id": "manual-4teamim-nes-tziona",
     "name": "פלאפל 4 טעמים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "ויצמן 6, נס ציונה",
     "cityId": "נס ציונה",
@@ -117989,7 +117939,7 @@
   {
     "id": "manual-4teamim-raanana",
     "name": "פלאפל 4 טעמים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "אחוזה 80, רעננה",
     "cityId": "רעננה",
@@ -118006,7 +117956,7 @@
   {
     "id": "manual-4teamim-givatayim",
     "name": "פלאפל 4 טעמים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "כצנלסון 61, גבעתיים",
     "cityId": "גבעתיים",
@@ -118023,7 +117973,7 @@
   {
     "id": "manual-falafel-hatuka-bat-yam",
     "name": "פלאפל חתוכה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "בלפור 122, בת ים",
     "cityId": "בת ים",
@@ -118041,7 +117991,7 @@
   {
     "id": "manual-falafel-hatuka-pt-hahistadrut",
     "name": "פלאפל חתוכה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "ההסתדרות 4, פתח תקווה",
     "cityId": "פתח תקווה",
@@ -118059,7 +118009,7 @@
   {
     "id": "manual-falafel-hatuka-pt-lev-hair",
     "name": "פלאפל חתוכה פתח תקווה לב העיר",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "חיים עוזר 10, קניון לב העיר, פתח תקווה",
     "cityId": "פתח תקווה",
@@ -118077,7 +118027,7 @@
   {
     "id": "manual-falafel-hatuka-rosh-haayin",
     "name": "פלאפל חתוכה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "וולפסון 17, ראש העין",
     "cityId": "ראש העין",
@@ -118095,7 +118045,7 @@
   {
     "id": "manual-falafel-hatuka-raanana",
     "name": "פלאפל חתוכה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "אחוזה 102, רעננה",
     "cityId": "רעננה",
@@ -118113,7 +118063,7 @@
   {
     "id": "manual-falafel-hatuka-rishon",
     "name": "פלאפל חתוכה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "ז'בוטינסקי 16, ראשון לציון",
     "cityId": "ראשון לציון",
@@ -118131,7 +118081,7 @@
   {
     "id": "manual-falafel-hatuka-tlv",
     "name": "פלאפל חתוכה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "דיזינגוף 77, תל אביב",
     "cityId": "תל אביב",
@@ -118149,7 +118099,7 @@
   {
     "id": "manual-biton-falafel-beer-yaakov",
     "name": "הפלאפל של ביטון",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "יהלום 3, באר יעקב",
     "cityId": "באר יעקב",
@@ -118168,7 +118118,7 @@
   {
     "id": "manual-falafel-zion-yehud",
     "name": "פלאפל ציון",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "צבי ישי 14, יהוד-מונוסון",
     "cityId": "יהוד",
@@ -118184,7 +118134,7 @@
   {
     "id": "manual-falafel-kaduri-hod-1",
     "name": "פלאפל כדורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "דרך רמתיים 59, הוד השרון",
     "cityId": "הוד השרון",
@@ -118202,7 +118152,7 @@
   {
     "id": "manual-falafel-kaduri-hod-2",
     "name": "פלאפל כדורי דוד",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "דרך רמתיים 72, הוד השרון",
     "cityId": "הוד השרון",
@@ -118464,7 +118414,7 @@
   {
     "id": "manual-shalom-falafel-bezalel",
     "name": "שלום פלאפל",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "בצלאל 34, ירושלים",
     "cityId": "ירושלים",
@@ -118483,7 +118433,7 @@
   {
     "id": "manual-shalom-falafel-pisgat-zeev",
     "name": "שלום פלאפל פסגת זאב",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "מאיר גרשון 30, פסגת זאב, ירושלים",
     "cityId": "ירושלים",
@@ -118501,7 +118451,7 @@
   {
     "id": "manual-shalom-falafel-kiryat-menahem",
     "name": "שלום פלאפל קריית מנחם",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "דהומי 3, קריית מנחם, ירושלים",
     "cityId": "ירושלים",
@@ -118519,7 +118469,7 @@
   {
     "id": "manual-shalom-falafel-beit-hakerem",
     "name": "שלום פלאפל בית הכרם",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "שדרות הרצל 122, בית הכרם, ירושלים",
     "cityId": "ירושלים",
@@ -118537,7 +118487,7 @@
   {
     "id": "manual-shalom-falafel-gilah",
     "name": "שלום פלאפל גילה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "הגננת 124, גילה, ירושלים",
     "cityId": "ירושלים",
@@ -118555,7 +118505,7 @@
   {
     "id": "manual-shalom-falafel-derech-hevron",
     "name": "שלום פלאפל דרך",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "דרך חברון 124, ירושלים",
     "cityId": "ירושלים",
@@ -118573,7 +118523,7 @@
   {
     "id": "manual-shalom-falafel-talpiot",
     "name": "שלום פלאפל תלפיות",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "האומן 16, תלפיות, ירושלים",
     "cityId": "ירושלים",
@@ -118591,7 +118541,7 @@
   {
     "id": "manual-shalom-falafel-arnona",
     "name": "שלום פלאפל ארנונה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "דניאל ינובסקי 15, ארנונה, ירושלים",
     "cityId": "ירושלים",
@@ -118609,7 +118559,7 @@
   {
     "id": "manual-shalom-falafel-ornim",
     "name": "שלום פלאפל",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "שי עגנון 20, מרכז אורנים, ירושלים",
     "cityId": "ירושלים",
@@ -118627,7 +118577,7 @@
   {
     "id": "manual-shalom-falafel-har-homa",
     "name": "שלום פלאפל הר חומה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "אליהו קורן 31, הר חומה, ירושלים",
     "cityId": "ירושלים",
@@ -118645,7 +118595,7 @@
   {
     "id": "manual-shalom-falafel-modiin",
     "name": "שלום פלאפל",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "ישפרו סנטר, מודיעין",
     "cityId": "מודיעין",
@@ -118663,7 +118613,7 @@
   {
     "id": "manual-shalom-falafel-ashdod",
     "name": "שלום פלאפל",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "תחנת דלק מפגש שמשון, אשדוד",
     "cityId": "אשדוד",
@@ -118680,7 +118630,7 @@
   {
     "id": "manual-falafel-gina-tlv-shokan",
     "name": "פלאפל ג'ינה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "שוקן 22, תל אביב",
     "cityId": "תל אביב",
@@ -118699,7 +118649,7 @@
   {
     "id": "manual-falafel-gina-tlv-begin",
     "name": "פלאפל ג'ינה מנחם בגין",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "מנחם בגין 126, תל אביב",
     "cityId": "תל אביב",
@@ -118718,7 +118668,7 @@
   {
     "id": "manual-falafel-gina-jaffa",
     "name": "פלאפל ג'ינה יפו",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "שלבים 6, יפו, תל אביב",
     "cityId": "תל אביב",
@@ -118736,7 +118686,7 @@
   {
     "id": "manual-falafel-gina-holon",
     "name": "פלאפל ג'ינה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "סוקולוב נחום 64, חולון",
     "cityId": "חולון",
@@ -118755,7 +118705,7 @@
   {
     "id": "manual-falafel-gina-ramat-gan",
     "name": "פלאפל ג'ינה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "זבוטינסקי 155, רמת גן",
     "cityId": "רמת גן",
@@ -118773,7 +118723,7 @@
   {
     "id": "manual-falafel-gina-rishon",
     "name": "פלאפל ג'ינה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "שמוטקין 10, אזור תעשייה, ראשון לציון",
     "cityId": "ראשון לציון",
@@ -118792,7 +118742,7 @@
   {
     "id": "manual-hak-tlv",
     "name": "האק",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "דרך קיבוץ גלויות 32, תל אביב",
     "cityId": "תל אביב",
@@ -118810,7 +118760,7 @@
   {
     "id": "manual-hak-kiryat-ono",
     "name": "האק",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "שלמה המלך 73, קרית אונו",
     "cityId": "קרית אונו",
@@ -118827,7 +118777,7 @@
   {
     "id": "manual-hak-pt-hadar-ganim",
     "name": "האק",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "ישעיהו המשורר 11, הדר גנים, פתח תקווה",
     "cityId": "פתח תקווה",
@@ -118844,7 +118794,7 @@
   {
     "id": "manual-falafel-shoshana-ramat-eliyahu",
     "name": "פלאפל שושנה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "זלמן שניאור 16, רמת אליהו, ראשון לציון",
     "cityId": "ראשון לציון",
@@ -118863,7 +118813,7 @@
   {
     "id": "manual-falafel-shoshana-rothschild",
     "name": "פלאפל שושנה רוטשילד",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "רוטשילד 112, ראשון לציון",
     "cityId": "ראשון לציון",
@@ -118882,7 +118832,7 @@
   {
     "id": "manual-falafel-shoshana-hadracha",
     "name": "פלאפל שושנה ההדרכה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "address": "ההדרכה 13, ראשון לציון",
     "cityId": "ראשון לציון",
@@ -118901,7 +118851,7 @@
   {
     "id": "manual-shnitzel20-maaleh-adumim",
     "name": "שניצל 20 טעמים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "דרך קדם 5, מעלה אדומים",
     "cityId": "מעלה אדומים",
@@ -118919,7 +118869,7 @@
   {
     "id": "manual-shnitzel20-pt",
     "name": "שניצל 20 טעמים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "אלעזר פרידמן 9, קניון סירקין, פתח תקווה",
     "cityId": "פתח תקווה",
@@ -118937,7 +118887,7 @@
   {
     "id": "manual-shnitzel20-kiryat-bialik",
     "name": "שניצל 20 טעמים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "קרן היסוד 64, קניון סביוניה, קרית ביאליק",
     "cityId": "קרית ביאליק",
@@ -118955,7 +118905,7 @@
   {
     "id": "manual-shnitzel20-netanya-naimi",
     "name": "שניצל 20 טעמים נתניה נעימי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "טום לנטוס 60, קניון נעימי, נתניה",
     "cityId": "נתניה",
@@ -118973,7 +118923,7 @@
   {
     "id": "manual-shnitzel20-netanya-central",
     "name": "שניצל 20 טעמים נתניה מרכזית",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "בנימין 7, תחנה מרכזית, נתניה",
     "cityId": "נתניה",
@@ -118991,7 +118941,7 @@
   {
     "id": "manual-shnitzel20-raanana",
     "name": "שניצל 20 טעמים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "אחוזה 93, רעננה",
     "cityId": "רעננה",
@@ -119009,7 +118959,7 @@
   {
     "id": "manual-shnitzel20-herzliya",
     "name": "שניצל 20 טעמים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "סוקולוב 55, הרצליה",
     "cityId": "הרצליה",
@@ -119027,7 +118977,7 @@
   {
     "id": "manual-shnitzel20-holon",
     "name": "שניצל 20 טעמים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "קרן היסוד 1, חולון",
     "cityId": "חולון",
@@ -119045,7 +118995,7 @@
   {
     "id": "manual-shnitzel20-harish",
     "name": "שניצל 20 טעמים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "דרך ארץ 45, חריש",
     "cityId": "חריש",
@@ -119063,7 +119013,7 @@
   {
     "id": "manual-shnitzel20-yokneam",
     "name": "שניצל 20 טעמים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "התמר 1, יוקנעם",
     "cityId": "יוקנעם",
@@ -119081,7 +119031,7 @@
   {
     "id": "manual-shnitzel20-haifa",
     "name": "שניצל 20 טעמים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "הרצל 27, חיפה",
     "cityId": "חיפה",
@@ -119099,7 +119049,7 @@
   {
     "id": "manual-shnitzel20-afula",
     "name": "שניצל 20 טעמים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "נשיא 25, עפולה",
     "cityId": "עפולה",
@@ -119117,7 +119067,7 @@
   {
     "id": "manual-shnitzel20-karmiel",
     "name": "שניצל 20 טעמים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "קניון חוצות, כרמיאל",
     "cityId": "כרמיאל",
@@ -119135,7 +119085,7 @@
   {
     "id": "manual-shnitzel20-or-akiva",
     "name": "שניצל 20 טעמים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "רבי קוק 2, אור עקיבא",
     "cityId": "אור עקיבא",
@@ -119153,7 +119103,7 @@
   {
     "id": "manual-shnitzel20-zichron",
     "name": "שניצל 20 טעמים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "הנשיא 15, זיכרון יעקב",
     "cityId": "זיכרון יעקב",
@@ -119171,7 +119121,7 @@
   {
     "id": "manual-shnitzel20-pardes-hana",
     "name": "שניצל 20 טעמים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "דרך הבנים 2, פרדס חנה",
     "cityId": "פרדס חנה",
@@ -119189,7 +119139,7 @@
   {
     "id": "manual-shnitzel-company-tlv-allon",
     "name": "שניצל קומפני",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "יגאל אלון 94, תל אביב",
     "cityId": "תל אביב",
@@ -119208,7 +119158,7 @@
   {
     "id": "manual-shnitzel-company-tlv-sarona",
     "name": "שניצל קומפני",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "הארבעה 16, שרונה, תל אביב",
     "cityId": "תל אביב",
@@ -119227,7 +119177,7 @@
   {
     "id": "manual-shnitzel-company-tlv-ramat-hahyal",
     "name": "שניצל קומפני רמת החייל",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "דבורה הנביאה 128, רמת החייל, תל אביב",
     "cityId": "תל אביב",
@@ -119246,7 +119196,7 @@
   {
     "id": "manual-shnitzel-company-ramat-gan",
     "name": "שניצל קומפני",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "אבא הלל 7, הבורסה, רמת גן",
     "cityId": "רמת גן",
@@ -119265,7 +119215,7 @@
   {
     "id": "manual-shnitzel-company-bb",
     "name": "שניצל קומפני",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "בן גוריון 1, מגדל בסר 2, בני ברק",
     "cityId": "בני ברק",
@@ -119284,7 +119234,7 @@
   {
     "id": "manual-shnitzel-company-herzliya",
     "name": "שניצל קומפני",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "המנופים 9, הרצליה פיתוח",
     "cityId": "הרצליה",
@@ -119303,7 +119253,7 @@
   {
     "id": "manual-shnitzel-company-raanana",
     "name": "שניצל קומפני",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "זרחין 13, רעננה",
     "cityId": "רעננה",
@@ -119322,7 +119272,7 @@
   {
     "id": "manual-shnitzel-company-holon",
     "name": "שניצל קומפני",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "מול בית חולים וולפסון, חולון",
     "cityId": "חולון",
@@ -119341,7 +119291,7 @@
   {
     "id": "manual-shnitzel-chef-bb",
     "name": "שניצל שף",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "ירושלים 8, בני ברק",
     "cityId": "בני ברק",
@@ -119357,7 +119307,7 @@
   {
     "id": "manual-shnitzel-papa-herzliya",
     "name": "שניצל פאפא",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "הרצליה",
     "cityId": "הרצליה",
@@ -119373,7 +119323,7 @@
   {
     "id": "manual-shnitzel-point-tlv-yad-harutzim",
     "name": "שניצל פוינט",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "יד חרוצים 13, תל אביב",
     "cityId": "תל אביב",
@@ -119392,7 +119342,7 @@
   {
     "id": "manual-shnitzel-point-tlv-ibn-gavirol",
     "name": "שניצל פוינט אבן גבירול",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "אבן גבירול 107, תל אביב",
     "cityId": "תל אביב",
@@ -119410,7 +119360,7 @@
   {
     "id": "manual-schnitzelein-bb",
     "name": "שניצליין",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "מצדה 9, כנרת, בני ברק",
     "cityId": "בני ברק",
@@ -119426,7 +119376,7 @@
   {
     "id": "manual-schnitzelein-tlv",
     "name": "שניצליין",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "יד חרוצים 13, תל אביב",
     "cityId": "תל אביב",
@@ -119441,7 +119391,7 @@
   {
     "id": "manual-shnitzels-raanana",
     "name": "שניצלס",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "אחוזה 117, רעננה",
     "cityId": "רעננה",
@@ -119459,7 +119409,7 @@
   {
     "id": "manual-hashnitzelia-kiryat-ata",
     "name": "השניצליה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "העצמאות 74, קרית אתא",
     "cityId": "קרית אתא",
@@ -119477,7 +119427,7 @@
   {
     "id": "manual-hashnitzelia-nesher",
     "name": "השניצליה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "דרך השלום 11, מתחם רמי לוי, נשר",
     "cityId": "נשר",
@@ -119495,7 +119445,7 @@
   {
     "id": "manual-hashnitzelia-tirat-carmel",
     "name": "השניצליה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "הרצל 82, תחנת ילו, טירת הכרמל",
     "cityId": "טירת הכרמל",
@@ -119513,7 +119463,7 @@
   {
     "id": "manual-hashnitzelia-maalot",
     "name": "השניצליה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "מעלות",
     "cityId": "מעלות-תרשיחא",
@@ -119531,7 +119481,7 @@
   {
     "id": "manual-hashnitzelia-kiryat-shmona",
     "name": "השניצליה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "שדרות תל חי 83, קרית שמונה",
     "cityId": "קרית שמונה",
@@ -119549,7 +119499,7 @@
   {
     "id": "manual-hashnitzelia-ariel",
     "name": "השניצליה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "דרך הציונות 56, אריאל",
     "cityId": "אריאל",
@@ -119567,7 +119517,7 @@
   {
     "id": "manual-hashnitzelia-tlv-karlbach",
     "name": "השניצליה תל אביב קרליבך",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "קרליבך 10, תל אביב",
     "cityId": "תל אביב",
@@ -119585,7 +119535,7 @@
   {
     "id": "manual-hashnitzelia-tlv-menora",
     "name": "השניצליה היכל מנורה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "השלושה 11, תל אביב",
     "cityId": "תל אביב",
@@ -119603,7 +119553,7 @@
   {
     "id": "manual-hashnitzelia-katzrin",
     "name": "השניצליה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "מרכז עיתן 1, קצרין",
     "cityId": "קצרין",
@@ -119622,7 +119572,7 @@
   {
     "id": "manual-hashnitzelia-safed",
     "name": "השניצליה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "ירושלים 89, צפת",
     "cityId": "צפת",
@@ -119804,7 +119754,7 @@
   {
     "id": "manual-rapidos-netanya",
     "name": "רפידוס",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "גיבורי ישראל 17, Y סנטר, נתניה",
     "cityId": "נתניה",
@@ -119823,7 +119773,7 @@
   {
     "id": "manual-rapidos-herzliya",
     "name": "רפידוס",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "דוד בן גוריון 35, הרצליה",
     "cityId": "הרצליה",
@@ -119842,7 +119792,7 @@
   {
     "id": "manual-rapidos-pt",
     "name": "רפידוס",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "כפר גנים, פתח תקווה",
     "cityId": "פתח תקווה",
@@ -119860,7 +119810,7 @@
   {
     "id": "manual-rapidos-rishon",
     "name": "רפידוס",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "רוטשילד 85, ראשון לציון",
     "cityId": "ראשון לציון",
@@ -119878,7 +119828,7 @@
   {
     "id": "manual-rapidos-tlv-menora",
     "name": "רפידוס היכל מנורה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "היכל מנורה מבטחים, תל אביב",
     "cityId": "תל אביב",
@@ -119896,7 +119846,7 @@
   {
     "id": "manual-rapidos-nahariya",
     "name": "רפידוס",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "מתחם בריזה, נהריה",
     "cityId": "נהריה",
@@ -120934,7 +120884,7 @@
   {
     "id": "manual-burger-station-tlv-dizengoff",
     "name": "בורגר סטיישן",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "דיזנגוף 269, תל אביב",
     "cityId": "תל אביב",
@@ -120953,7 +120903,7 @@
   {
     "id": "manual-burger-station-ramat-gan",
     "name": "בורגר סטיישן",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "ביאליק 12, רמת גן",
     "cityId": "רמת גן",
@@ -120971,7 +120921,7 @@
   {
     "id": "manual-burger-station-holon",
     "name": "בורגר סטיישן",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "סוקולוב 54, חולון",
     "cityId": "חולון",
@@ -120988,7 +120938,7 @@
   {
     "id": "manual-burger-station-bat-yam",
     "name": "בורגר סטיישן",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "בן גוריון 134, בת ים",
     "cityId": "בת ים",
@@ -121005,7 +120955,7 @@
   {
     "id": "manual-burger-station-herzliya",
     "name": "בורגר סטיישן",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "אבן עזרא 17, הרצליה",
     "cityId": "הרצליה",
@@ -121022,7 +120972,7 @@
   {
     "id": "manual-burger-station-kfar-saba",
     "name": "בורגר סטיישן",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "התעשן 24, כפר סבא",
     "cityId": "כפר סבא",
@@ -121039,7 +120989,7 @@
   {
     "id": "manual-burger-station-raanana",
     "name": "בורגר סטיישן",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "הסדנה 6, רעננה",
     "cityId": "רעננה",
@@ -121056,7 +121006,7 @@
   {
     "id": "manual-burger-station-nes-ziona",
     "name": "בורגר סטיישן",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "משה לרר 1, מרכז עמי, נס ציונה",
     "cityId": "נס ציונה",
@@ -121073,7 +121023,7 @@
   {
     "id": "manual-burger-station-rishon",
     "name": "בורגר סטיישן",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "פלוצקי 17, ראשון לציון",
     "cityId": "ראשון לציון",
@@ -121090,7 +121040,7 @@
   {
     "id": "manual-burger-station-pt",
     "name": "בורגר סטיישן",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "אבשלום גיסין 17, קניון גיסין, פתח תקווה",
     "cityId": "פתח תקווה",
@@ -121107,7 +121057,7 @@
   {
     "id": "manual-burger-station-rehovot",
     "name": "בורגר סטיישן",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "הרצל 167, רחובות",
     "cityId": "רחובות",
@@ -121124,7 +121074,7 @@
   {
     "id": "manual-burger-station-netanya1",
     "name": "בורגר סטיישן",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "ויצמן 7, נתניה",
     "cityId": "נתניה",
@@ -121141,7 +121091,7 @@
   {
     "id": "manual-burger-station-netanya2",
     "name": "בורגר סטיישן נתניה פולג",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "גיבורי ישראל 40, פולג, נתניה",
     "cityId": "נתניה",
@@ -121158,7 +121108,7 @@
   {
     "id": "manual-burger-station-modiin",
     "name": "בורגר סטיישן",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "לאה אמנו 1, מודיעין",
     "cityId": "מודיעין",
@@ -121175,7 +121125,7 @@
   {
     "id": "manual-burger-station-hadera",
     "name": "בורגר סטיישן",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "כפר שחטמן 10, חדרה",
     "cityId": "חדרה",
@@ -121192,7 +121142,7 @@
   {
     "id": "manual-burger-station-rosh-haayin",
     "name": "בורגר סטיישן",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "רבי שבזי 223, ראש העין",
     "cityId": "ראש העין",
@@ -121209,7 +121159,7 @@
   {
     "id": "manual-burger-station-ashkelon",
     "name": "בורגר סטיישן",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "הנמל 9, אשקלון",
     "cityId": "אשקלון",
@@ -121247,7 +121197,7 @@
   {
     "id": "manual-hashamen-mahane-yehuda",
     "name": "השמן שוק מחנה יהודה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "שוק מחנה יהודה, ירושלים",
     "cityId": "ירושלים",
@@ -121264,7 +121214,7 @@
   {
     "id": "manual-hashamen-jrm-katamon",
     "name": "השמן קטמון",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "רבן יוחנן בן זכאי 7, קטמון, ירושלים",
     "cityId": "ירושלים",
@@ -121281,7 +121231,7 @@
   {
     "id": "manual-hashamen-jrm-beit-hakerem",
     "name": "השמן בית הכרם",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "אביזוהר 8, בית הכרם, ירושלים",
     "cityId": "ירושלים",
@@ -121298,7 +121248,7 @@
   {
     "id": "manual-hashamen-modiin-yishpro",
     "name": "השמן מודיעין ישפרו",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "מרכז ישפרו, מודיעין",
     "cityId": "מודיעין",
@@ -121315,7 +121265,7 @@
   {
     "id": "manual-hashamen-modiin-azrieli",
     "name": "השמן מודיעין עזריאלי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "קניון עזריאלי, מודיעין",
     "cityId": "מודיעין",
@@ -121332,7 +121282,7 @@
   {
     "id": "manual-hashamen-holon",
     "name": "השמן",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "הרוקמים 29, חולון",
     "cityId": "חולון",
@@ -122360,7 +122310,7 @@
   {
     "id": "manual-pizza-story-beersheva",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "address": "השלום 31, באר שבע",
     "cityId": "באר שבע",
@@ -122383,7 +122333,7 @@
   {
     "id": "manual-pizza-story-pt",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "address": "יהושע שטמפפר 24, פתח תקווה",
     "cityId": "פתח תקווה",
@@ -122406,7 +122356,7 @@
   {
     "id": "manual-pizza-story-jrm-talpiot",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "address": "יד חרוצים 21, תלפיות, ירושלים",
     "cityId": "ירושלים",
@@ -122430,7 +122380,7 @@
   {
     "id": "manual-pizza-story-tzafria",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "address": "הארז 1, צפריה",
     "cityId": "צפריה",
@@ -124788,7 +124738,7 @@
   {
     "id": "manual-bk-ashdod",
     "name": "ברגר קינג",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "אורט 1, אשדוד",
     "cityId": "אשדוד",
@@ -124806,7 +124756,7 @@
   {
     "id": "manual-bk-herzliya",
     "name": "ברגר קינג",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "משכית 22, הרצליה",
     "cityId": "הרצליה",
@@ -124824,7 +124774,7 @@
   {
     "id": "manual-bk-hod-hasharon",
     "name": "ברגר קינג",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "ז'בוטינסקי 3, הוד השרון",
     "cityId": "הוד השרון",
@@ -124842,7 +124792,7 @@
   {
     "id": "manual-bk-hadera",
     "name": "ברגר קינג",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "תרנ\"א 20, חדרה",
     "cityId": "חדרה",
@@ -124860,7 +124810,7 @@
   {
     "id": "manual-bk-yehud",
     "name": "ברגר קינג",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "דרך העצמאות 42, יהוד",
     "cityId": "יהוד",
@@ -124878,7 +124828,7 @@
   {
     "id": "manual-bk-petah-tikva",
     "name": "ברגר קינג",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "העצמאות 63, פתח תקווה",
     "cityId": "פתח תקווה",
@@ -124896,7 +124846,7 @@
   {
     "id": "manual-bk-netanya",
     "name": "ברגר קינג",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "שד' טום לנטוס 60, נתניה",
     "cityId": "נתניה",
@@ -124914,7 +124864,7 @@
   {
     "id": "manual-bk-raanana",
     "name": "ברגר קינג",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "המלאכה 2, רעננה",
     "cityId": "רעננה",
@@ -124931,7 +124881,7 @@
   {
     "id": "manual-bk-eilat",
     "name": "ברגר קינג",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "שדה התעופה רמון, אילת",
     "cityId": "אילת",
@@ -124948,7 +124898,7 @@
   {
     "id": "manual-bk-holon",
     "name": "ברגר קינג",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "שד' לוי אשכול 30, חולון",
     "cityId": "חולון",
@@ -124966,7 +124916,7 @@
   {
     "id": "manual-bk-tlv-azrieli",
     "name": "ברגר קינג תל אביב עזריאלי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "מנחם בגין 132, תל אביב",
     "cityId": "תל אביב",
@@ -124983,7 +124933,7 @@
   {
     "id": "manual-bk-ben-gurion",
     "name": "ברגר קינג נתב\"ג",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "נמל התעופה בן גוריון, טרמינל 1",
     "cityId": "לוד",
@@ -125000,7 +124950,7 @@
   {
     "id": "manual-br-or-yehuda",
     "name": "בורגר ראנץ'",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "שדרות אליהו סעדון 120, אור יהודה",
     "cityId": "אור יהודה",
@@ -125017,7 +124967,7 @@
   {
     "id": "manual-br-or-akiva",
     "name": "בורגר ראנץ'",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "שדרות דויד המלך 42, אור עקיבא",
     "cityId": "אור עקיבא",
@@ -125034,7 +124984,7 @@
   {
     "id": "manual-br-eilat",
     "name": "בורגר ראנץ'",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "קניון הסלע האדום, אילת",
     "cityId": "אילת",
@@ -125051,7 +125001,7 @@
   {
     "id": "manual-br-ariel",
     "name": "בורגר ראנץ'",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "הבנאי 2, קניון מגה אור, אריאל",
     "cityId": "אריאל",
@@ -125068,7 +125018,7 @@
   {
     "id": "manual-br-haifa-grand",
     "name": "בורגר ראנץ' חיפה גרנד",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "דרך שמחה גולן 54, חיפה",
     "cityId": "חיפה",
@@ -125085,7 +125035,7 @@
   {
     "id": "manual-br-harish",
     "name": "בורגר ראנץ'",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "דרך ארץ 39, מתחם אור בעיר, חריש",
     "cityId": "חריש",
@@ -125102,7 +125052,7 @@
   {
     "id": "manual-br-jerusalem-station",
     "name": "בורגר ראנץ' ירושלים תחנה מרכזית",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "תחנה מרכזית, ירושלים",
     "cityId": "ירושלים",
@@ -125119,7 +125069,7 @@
   {
     "id": "manual-br-mevasseret",
     "name": "בורגר ראנץ'",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "קניון הראל, מבשרת ציון",
     "cityId": "מבשרת ציון",
@@ -125136,7 +125086,7 @@
   {
     "id": "manual-br-modiin",
     "name": "בורגר ראנץ'",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "לב העיר 2, קניון עזריאלי מודיעין",
     "cityId": "מודיעין",
@@ -125153,7 +125103,7 @@
   {
     "id": "manual-br-maaleh-adumim",
     "name": "בורגר ראנץ'",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "קניון אדומים, מעלה אדומים",
     "cityId": "מעלה אדומים",
@@ -125170,7 +125120,7 @@
   {
     "id": "manual-br-netanya-poleg",
     "name": "בורגר ראנץ' נתניה פולג",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "גיבורי ישראל 5, אזור תעשיה פולג, נתניה",
     "cityId": "נתניה",
@@ -125187,7 +125137,7 @@
   {
     "id": "manual-br-pt-sirkin",
     "name": "בורגר ראנץ' פתח תקווה קניון סירקין",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "קניון סירקין, פתח תקווה",
     "cityId": "פתח תקווה",
@@ -125204,7 +125154,7 @@
   {
     "id": "manual-br-kiryat-ono",
     "name": "בורגר ראנץ'",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "קניון קריית אונו",
     "cityId": "קריית אונו",
@@ -125221,7 +125171,7 @@
   {
     "id": "manual-br-kiryat-shmona",
     "name": "בורגר ראנץ'",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "קניון נחמיה, קריית שמונה",
     "cityId": "קריית שמונה",
@@ -125238,7 +125188,7 @@
   {
     "id": "manual-br-sderot",
     "name": "בורגר ראנץ'",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "פרץ סנטר, שדרות",
     "cityId": "שדרות",
@@ -125255,7 +125205,7 @@
   {
     "id": "manual-br-givat-shmuel",
     "name": "בורגר ראנץ'",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "יוני נתניהו 29, גבעת שמואל",
     "cityId": "גבעת שמואל",
@@ -125272,7 +125222,7 @@
   {
     "id": "manual-br-ramat-gan-marom",
     "name": "בורגר ראנץ' רמת גן מרום נווה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "חיים לנדאו 7, קניון מרום נווה, רמת גן",
     "cityId": "רמת גן",
@@ -125289,7 +125239,7 @@
   {
     "id": "manual-br-ashdod",
     "name": "בורגר ראנץ'",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "מנחם בגין 1, אשדוד",
     "cityId": "אשדוד",
@@ -125306,7 +125256,7 @@
   {
     "id": "manual-br-ashkelon",
     "name": "בורגר ראנץ'",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "צומת כפר סילבר, אשקלון",
     "cityId": "אשקלון",
@@ -125323,7 +125273,7 @@
   {
     "id": "manual-br-beer-yaakov",
     "name": "בורגר ראנץ'",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "שדרות יצחק שמיר 22, באר יעקב",
     "cityId": "באר יעקב",
@@ -125340,7 +125290,7 @@
   {
     "id": "manual-br-bs-grand",
     "name": "בורגר ראנץ' באר שבע גרנד",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "גרנד קניון, באר שבע",
     "cityId": "באר שבע",
@@ -125357,7 +125307,7 @@
   {
     "id": "manual-br-bs-neve-zaav",
     "name": "בורגר ראנץ' באר שבע נווה זאב",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "מרכז מסחרי נווה זאב, באר שבע",
     "cityId": "באר שבע",
@@ -125374,7 +125324,7 @@
   {
     "id": "manual-br-bs-negev",
     "name": "בורגר ראנץ' באר שבע קניון הנגב",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "קניון הנגב, באר שבע",
     "cityId": "באר שבע",
@@ -125391,7 +125341,7 @@
   {
     "id": "manual-br-dimona",
     "name": "בורגר ראנץ'",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "פרץ סנטר, כביש 25, דימונה",
     "cityId": "דימונה",
@@ -125408,7 +125358,7 @@
   {
     "id": "manual-br-holon",
     "name": "בורגר ראנץ'",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "קניון חולון, חולון",
     "cityId": "חולון",
@@ -125425,7 +125375,7 @@
   {
     "id": "manual-br-yavne",
     "name": "בורגר ראנץ'",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "שדרות הציונות 1, יבנה",
     "cityId": "יבנה",
@@ -125442,7 +125392,7 @@
   {
     "id": "manual-br-jerusalem-malha",
     "name": "בורגר ראנץ' ירושלים קניון מלחה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "קניון מלחה, ירושלים",
     "cityId": "ירושלים",
@@ -125459,7 +125409,7 @@
   {
     "id": "manual-br-kfar-yona",
     "name": "בורגר ראנץ'",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "דוד בן גוריון 1, כפר יונה",
     "cityId": "כפר יונה",
@@ -125476,7 +125426,7 @@
   {
     "id": "manual-br-carmiel",
     "name": "בורגר ראנץ'",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "מעלה כמון 5, קניון חוצות כרמיאל",
     "cityId": "כרמיאל",
@@ -125493,7 +125443,7 @@
   {
     "id": "manual-br-migdal-haemek",
     "name": "בורגר ראנץ'",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "שדרות שאול עמור 77, מגדל העמק",
     "cityId": "מגדל העמק",
@@ -125510,7 +125460,7 @@
   {
     "id": "manual-br-nahariya",
     "name": "בורגר ראנץ'",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "קניון הצפון, נהריה",
     "cityId": "נהריה",
@@ -125527,7 +125477,7 @@
   {
     "id": "manual-br-nes-ziona",
     "name": "בורגר ראנץ'",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "שד' האיריסים 53, קניותר, נס ציונה",
     "cityId": "נס ציונה",
@@ -125544,7 +125494,7 @@
   {
     "id": "manual-br-netanya-sharon",
     "name": "בורגר ראנץ' נתניה קניון השרון",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "קניון השרון, נתניה",
     "cityId": "נתניה",
@@ -125561,7 +125511,7 @@
   {
     "id": "manual-br-netanya-ir-yamim",
     "name": "בורגר ראנץ' נתניה עיר ימים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "בני ברמן 2, נתניה",
     "cityId": "נתניה",
@@ -125578,7 +125528,7 @@
   {
     "id": "manual-br-afula",
     "name": "בורגר ראנץ'",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "השוק 13, ביג מגה אור, עפולה",
     "cityId": "עפולה",
@@ -125595,7 +125545,7 @@
   {
     "id": "manual-br-pt-big",
     "name": "בורגר ראנץ' פתח תקווה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "הקניון הגדול, פתח תקווה",
     "cityId": "פתח תקווה",
@@ -125612,7 +125562,7 @@
   {
     "id": "manual-br-kiryat-ata",
     "name": "בורגר ראנץ'",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "קניון שער הצפון, קריית אתא",
     "cityId": "קריית אתא",
@@ -125629,7 +125579,7 @@
   {
     "id": "manual-br-kiryat-gat",
     "name": "בורגר ראנץ'",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "אבני החושן 1, קריית גת",
     "cityId": "קריית גת",
@@ -125646,7 +125596,7 @@
   {
     "id": "manual-br-rosh-haain",
     "name": "בורגר ראנץ'",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "יגאל אלון 22, ראש העין",
     "cityId": "ראש העין",
@@ -125663,7 +125613,7 @@
   {
     "id": "manual-br-rl-zahav",
     "name": "בורגר ראנץ' ראשון לציון קניון הזהב",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "דוד סחרוב 21, ראשון לציון",
     "cityId": "ראשון לציון",
@@ -125680,7 +125630,7 @@
   {
     "id": "manual-br-rl-rothschild",
     "name": "בורגר ראנץ' ראשון לציון קניון רוטשילד",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "קניון רוטשילד, ראשון לציון",
     "cityId": "ראשון לציון",
@@ -125697,7 +125647,7 @@
   {
     "id": "manual-br-rehovot",
     "name": "בורגר ראנץ'",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "קניון רחובות, רחובות",
     "cityId": "רחובות",
@@ -125714,7 +125664,7 @@
   {
     "id": "manual-br-ramla",
     "name": "בורגר ראנץ'",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "דוד רזיאל 1, קניון עזריאלי, רמלה",
     "cityId": "רמלה",
@@ -125731,7 +125681,7 @@
   {
     "id": "manual-br-tlv-azrieli",
     "name": "בורגר ראנץ' תל אביב עזריאלי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "קניון עזריאלי, תל אביב",
     "cityId": "תל אביב",
@@ -125748,7 +125698,7 @@
   {
     "id": "manual-br-hod-hasharon",
     "name": "בורגר ראנץ'",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "קניון שרונים, הוד השרון",
     "cityId": "הוד השרון",
@@ -125765,7 +125715,7 @@
   {
     "id": "manual-br-hadera",
     "name": "בורגר ראנץ'",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "קניון לב חדרה, חדרה",
     "cityId": "חדרה",
@@ -125782,7 +125732,7 @@
   {
     "id": "manual-br-haifa-azrieli",
     "name": "בורגר ראנץ' חיפה עזריאלי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "משה פלימן 4, קניון עזריאלי חיפה",
     "cityId": "חיפה",
@@ -125799,7 +125749,7 @@
   {
     "id": "manual-br-krayot",
     "name": "בורגר ראנץ' קריות קריון",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "דרך עכו, קריון, קרית ביאליק",
     "cityId": "קריית ביאליק",
@@ -125816,7 +125766,7 @@
   {
     "id": "manual-br-raanana",
     "name": "בורגר ראנץ'",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "קניון רננים, רעננה",
     "cityId": "רעננה",
@@ -125833,7 +125783,7 @@
   {
     "id": "manual-br-tlv-menorah",
     "name": "בורגר ראנץ' תל אביב היכל מנורה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "address": "יגאל אלון 51, תל אביב",
     "cityId": "תל אביב",
@@ -126116,7 +126066,7 @@
   {
     "id": "pizzax-6069628c",
     "name": "פיצה X דיזינגוף",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "תל אביב",
     "address": "דיזינגוף 70, תל אביב",
     "phone": "03-6218574",
@@ -126137,7 +126087,7 @@
   {
     "id": "pizzandtortilla-be19a08a",
     "name": "פיצה אנד טורטיה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "תל אביב",
     "address": "אלנבי 79, תל אביב",
     "phone": "072-3290637",
@@ -126595,7 +126545,7 @@
   {
     "id": "suduch-0ae93b1b",
     "name": "סודוך",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "כפר סבא",
     "address": "התע\"ש 18, כפר סבא",
     "location": {
@@ -126619,7 +126569,7 @@
   {
     "id": "suduch-02ff924e",
     "name": "סודוך תל אביב אפקה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "תל אביב",
     "address": "פנחס רוזן 19, אפקה, תל אביב",
     "location": {
@@ -126643,7 +126593,7 @@
   {
     "id": "suduch-7c9ef498",
     "name": "סודוך פתח תקווה שופ טיים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "פתח תקווה",
     "address": "תוצרת הארץ 3, שופ טיים, פתח תקווה",
     "location": {
@@ -126667,7 +126617,7 @@
   {
     "id": "suduch-55c8affd",
     "name": "סודוך",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "הרצליה",
     "address": "אבא אבן 3, הרצליה",
     "location": {
@@ -126691,7 +126641,7 @@
   {
     "id": "suduch-b60169d4",
     "name": "סודוך תל אביב המסגר",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "תל אביב",
     "address": "המסגר 64, תל אביב",
     "location": {
@@ -126715,7 +126665,7 @@
   {
     "id": "suduch-d7be09ae",
     "name": "סודוך תל אביב איינשטיין",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "תל אביב",
     "address": "איינשטיין 9, תל אביב",
     "location": {
@@ -126739,7 +126689,7 @@
   {
     "id": "suduch-e951a4ce",
     "name": "סודוך תל אביב קרליבך",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "תל אביב",
     "address": "קרליבך 20, תל אביב",
     "location": {
@@ -126763,7 +126713,7 @@
   {
     "id": "suduch-aa85a058",
     "name": "קריית אונו סודוך",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "קריית אונו",
     "address": "יעקב דורי 7, קריית אונו",
     "location": {
@@ -126786,7 +126736,7 @@
   {
     "id": "suduch-9cb5f771",
     "name": "סודוך תל אביב הירקון",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "תל אביב",
     "address": "הירקון 121, תל אביב",
     "location": {
@@ -126810,7 +126760,7 @@
   {
     "id": "suduch-2a954c72",
     "name": "סודוך",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "גבעתיים",
     "address": "דרך השלום 51, גבעתיים",
     "location": {
@@ -126834,7 +126784,7 @@
   {
     "id": "suduch-10a9d204",
     "name": "סודוך",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "חולון",
     "address": "סוקולוב 60, חולון",
     "location": {
@@ -126858,7 +126808,7 @@
   {
     "id": "suduch-900564c2",
     "name": "סודוך פתח תקווה חיים עוזר",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "פתח תקווה",
     "address": "חיים עוזר 15, פתח תקווה",
     "location": {
@@ -126882,7 +126832,7 @@
   {
     "id": "suduch-6492046f",
     "name": "סודוך",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "חיפה",
     "address": "שד' הנשיא 133, חיפה",
     "location": {
@@ -126906,7 +126856,7 @@
   {
     "id": "suduch-507b6198",
     "name": "סודוך ראשון לציון מערב",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "ראשון לציון",
     "address": "משה לוי 14, ראשון לציון",
     "location": {
@@ -126930,7 +126880,7 @@
   {
     "id": "suduch-ac25ec6c",
     "name": "סודוך",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "הוד השרון",
     "address": "דרך רמתיים 63, הוד השרון",
     "location": {
@@ -126954,7 +126904,7 @@
   {
     "id": "suduch-1f370d54",
     "name": "סודוך ראשון לציון מזרח",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "ראשון לציון",
     "address": "המכבים 22, ראשון לציון",
     "location": {
@@ -126978,7 +126928,7 @@
   {
     "id": "suduch-8e103318",
     "name": "סודוך",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "נתניה",
     "address": "גיבורי ישראל 5, נתניה",
     "location": {
@@ -127002,7 +126952,7 @@
   {
     "id": "suduch-90343fa7",
     "name": "סודוך",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "אור יהודה",
     "address": "יהדות קנדה 12, אור יהודה",
     "location": {
@@ -127026,7 +126976,7 @@
   {
     "id": "suduch-7614b7c5",
     "name": "סודוך",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "ראש העין",
     "address": "הרב שלום שבזי 58, ראש העין",
     "location": {
@@ -128931,7 +128881,7 @@
   {
     "id": "falafel-chatuka-d7c1f16c",
     "name": "פלאפל חתוכה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "שוהם",
     "address": "שדרות עמק איילון 30, מרכז מסחרי שוהם",
     "phone": "03-979-4761",
@@ -129343,7 +129293,7 @@
   {
     "id": "pizza-roma-46407d39",
     "name": "פיצה רומא",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "עכו",
     "address": "נחליאלי 4, עכו",
     "location": {
@@ -129364,7 +129314,7 @@
   {
     "id": "pizza-roma-96e0f6b7",
     "name": "פיצה רומא",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "גדרה",
     "address": "שדרות מנחם בגין 42, גדרה",
     "location": {
@@ -129385,7 +129335,7 @@
   {
     "id": "pizza-roma-cee36ac2",
     "name": "פיצה רומא",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "רמת גן",
     "address": "בן גוריון 12, רמת גן",
     "location": {
@@ -129406,7 +129356,7 @@
   {
     "id": "pizza-roma-3d69a6f3",
     "name": "פיצה רומא",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "ראשון לציון",
     "address": "רוטשילד 85, ראשון לציון",
     "location": {
@@ -129427,7 +129377,7 @@
   {
     "id": "pizza-roma-03b208de",
     "name": "פיצה רומא",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "חולון",
     "address": "שאלתיאל דוד 16, חולון",
     "location": {
@@ -129448,7 +129398,7 @@
   {
     "id": "pizza-roma-7e2c97f2",
     "name": "פיצה רומא",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "הרצליה",
     "address": "שדרות אבא אבן 1, הרצליה",
     "location": {
@@ -129469,7 +129419,7 @@
   {
     "id": "pizza-roma-081fbf09",
     "name": "פיצה רומא",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "רחובות",
     "address": "שדרות פנחס בן דוד קפרא 1, רחובות",
     "location": {
@@ -129490,7 +129440,7 @@
   {
     "id": "pizza-roma-2ba23f5e",
     "name": "פיצה רומא",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "קריית גת",
     "address": "שדרות לכיש 63, קריית גת",
     "location": {
@@ -129511,7 +129461,7 @@
   {
     "id": "pizza-roma-48c252f6",
     "name": "פיצה רומא",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "שדרות",
     "address": "בן יהודה 4, שדרות",
     "location": {
@@ -129532,7 +129482,7 @@
   {
     "id": "pizza-roma-4c28e381",
     "name": "פיצה רומא",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "בית שאן",
     "address": "שאול המלך 74, בית שאן",
     "location": {
@@ -129553,7 +129503,7 @@
   {
     "id": "dominos-v2-b9b46dd7",
     "name": "דומינוס תל אביב הירקון",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "תל אביב",
     "address": "כ\"ג יורדי הסירה 10, נמל תל אביב",
     "location": {
@@ -129575,7 +129525,7 @@
   {
     "id": "dominos-v2-bebe4b0d",
     "name": "דומינוס פתח תקווה שטמפפר",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "פתח תקווה",
     "address": "יהושע שטמפפר 73, פתח תקווה",
     "location": {
@@ -129597,7 +129547,7 @@
   {
     "id": "dominos-v2-6e72915f",
     "name": "דומינוס פתח תקווה כפר גנים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "פתח תקווה",
     "address": "העצמאות 65, קניון גנים, פתח תקווה",
     "location": {
@@ -129619,7 +129569,7 @@
   {
     "id": "dominos-v2-567ffed9",
     "name": "דומינוס פתח תקווה אם המושבות",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "פתח תקווה",
     "address": "ראשון לציון 1, פתח תקווה",
     "location": {
@@ -129641,7 +129591,7 @@
   {
     "id": "dominos-v2-d47899c8",
     "name": "דומינוס",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "גבעתיים",
     "address": "בורוכוב 54, גבעתיים",
     "location": {
@@ -129663,7 +129613,7 @@
   {
     "id": "dominos-v2-c173953e",
     "name": "דומינוס חולון פארק פרס",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "חולון",
     "address": "שד' ירושלים 216, פארק פרס, חולון",
     "location": {
@@ -129685,7 +129635,7 @@
   {
     "id": "dominos-v2-3f18ccb9",
     "name": "דומינוס",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "אשדוד",
     "address": "הציונות 11, אשדוד",
     "location": {
@@ -129707,7 +129657,7 @@
   {
     "id": "dominos-v2-2162ab36",
     "name": "דומינוס",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "אשקלון",
     "address": "שד' ירושלים 117, אשקלון",
     "location": {
@@ -129729,7 +129679,7 @@
   {
     "id": "dominos-v2-79ca4ed9",
     "name": "דומינוס",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "עפולה",
     "address": "שד' יצחק רבין 20, עפולה",
     "location": {
@@ -129751,7 +129701,7 @@
   {
     "id": "dominos-v2-b44033f1",
     "name": "דומינוס",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "קריית ביאליק",
     "address": "שד' ירושלים 1, קריית ביאליק",
     "location": {
@@ -129773,7 +129723,7 @@
   {
     "id": "prego-60b15e61",
     "name": "פיצה פרגו",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "קריית אתא",
     "address": "דוכיפת 3, קריית אתא",
     "location": {
@@ -129795,7 +129745,7 @@
   {
     "id": "prego-4a5e560a",
     "name": "פיצה פרגו חולון וולפסון",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "חולון",
     "address": "הלוחמים 62, קניון וולפסון, חולון",
     "location": {
@@ -129817,7 +129767,7 @@
   {
     "id": "prego-8f2c2846",
     "name": "פיצה פרגו תל אביב קרליבך",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "תל אביב",
     "address": "קרליבך 12, תל אביב",
     "location": {
@@ -129839,7 +129789,7 @@
   {
     "id": "prego-29af08e3",
     "name": "פיצה פרגו תל אביב שיכון דן",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "תל אביב",
     "address": "פנחס רוזן 72, מרכז טופ-דן, תל אביב",
     "location": {
@@ -129861,7 +129811,7 @@
   {
     "id": "prego-cc7712be",
     "name": "פיצה פרגו ראשון לציון לישנסקי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "ראשון לציון",
     "address": "יוסף לישנסקי 27, ראשון לציון",
     "location": {
@@ -129883,7 +129833,7 @@
   {
     "id": "prego-364e82c4",
     "name": "פיצה פרגו",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "גבעתיים",
     "address": "כצנלסון 28, גבעתיים",
     "location": {
@@ -129905,7 +129855,7 @@
   {
     "id": "prego-ca477b03",
     "name": "פיצה פרגו",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "יהוד",
     "address": "דרך משה דיין 3, יהוד",
     "location": {
@@ -129927,7 +129877,7 @@
   {
     "id": "prego-a1f8fcc0",
     "name": "פיצה פרגו ראשון לציון הרצל",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "ראשון לציון",
     "address": "הרצל 18, ראשון לציון",
     "location": {
@@ -129949,7 +129899,7 @@
   {
     "id": "prego-525e8d40",
     "name": "פיצה פרגו ראשון לציון",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "ראשון לציון",
     "address": "התזמורת 29, נאות אשלים, ראשון לציון",
     "location": {
@@ -129971,7 +129921,7 @@
   {
     "id": "prego-36a56f9d",
     "name": "פיצה פרגו",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "נס ציונה",
     "address": "הבנים 87, נס ציונה",
     "location": {
@@ -129993,7 +129943,7 @@
   {
     "id": "prego-071fd1f0",
     "name": "פיצה פרגו",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "באר יעקב",
     "address": "יצחק שמיר 16, באר יעקב",
     "location": {
@@ -130014,7 +129964,7 @@
   {
     "id": "prego-87b176dd",
     "name": "פיצה פרגו",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "רחובות",
     "address": "הר הצופים 74, רחובות",
     "location": {
@@ -130036,7 +129986,7 @@
   {
     "id": "prego-242a502e",
     "name": "פיצה פרגו",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "מודיעין",
     "address": "לאה אמנו 1, מודיעין",
     "location": {
@@ -130058,7 +130008,7 @@
   {
     "id": "prego-5c46f417",
     "name": "פיצה פרגו",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "מבשרת ציון",
     "address": "הראל 100, מבשרת ציון",
     "location": {
@@ -130080,7 +130030,7 @@
   {
     "id": "prego-0e2c148c",
     "name": "פיצה פרגו",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "גדרה",
     "address": "מנחם בגין 48, גדרה",
     "location": {
@@ -130102,7 +130052,7 @@
   {
     "id": "prego-4aa534d0",
     "name": "פיצה פרגו",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "אשדוד",
     "address": "הגדוד העברי 1, אשדוד",
     "location": {
@@ -130124,7 +130074,7 @@
   {
     "id": "prego-72460470",
     "name": "פיצה פרגו",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "אריאל",
     "address": "הבנאי 6, אריאל",
     "location": {
@@ -130146,7 +130096,7 @@
   {
     "id": "prego-a5f51fce",
     "name": "פיצה פרגו",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "אור עקיבא",
     "address": "שדרות הנשיא ויצמן 4, אור עקיבא",
     "location": {
@@ -130168,7 +130118,7 @@
   {
     "id": "prego-6804a6b8",
     "name": "פיצה פרגו",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "חדרה",
     "address": "גמלא 3, חדרה",
     "location": {
@@ -130190,7 +130140,7 @@
   {
     "id": "prego-e8631f72",
     "name": "פיצה פרגו",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "אילת",
     "address": "מרכז מור 1, אילת",
     "location": {
@@ -130212,7 +130162,7 @@
   {
     "id": "papa-johns-ee346dc0",
     "name": "פאפא ג'ונס ירושלים קרן היסוד",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "ירושלים",
     "address": "קרן היסוד 38, ירושלים",
     "location": {
@@ -130234,7 +130184,7 @@
   {
     "id": "papa-johns-d45e6b6a",
     "name": "פאפא ג'ונס ירושלים גבעת רם",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "ירושלים",
     "address": "ישעיהו ליבוביץ 28, גבעת רם, ירושלים",
     "location": {
@@ -130255,7 +130205,7 @@
   {
     "id": "papa-johns-65801623",
     "name": "פאפא ג'ונס",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "פתח תקווה",
     "address": "תוצרת הארץ 3, פתח תקווה",
     "location": {
@@ -130277,7 +130227,7 @@
   {
     "id": "papa-johns-afee7616",
     "name": "פאפא ג'ונס רמת אפעל",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "רמת גן",
     "address": "דרך שיבא 10, רמת אפעל",
     "location": {
@@ -130298,7 +130248,7 @@
   {
     "id": "papa-johns-6c047ef5",
     "name": "פאפא ג'ונס",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "יהוד",
     "address": "אורי מקלב 8, יהוד",
     "location": {
@@ -130320,7 +130270,7 @@
   {
     "id": "papa-johns-68531b51",
     "name": "פאפא ג'ונס",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "מודיעין",
     "address": "דם המכבים 32, מודיעין",
     "location": {
@@ -130342,7 +130292,7 @@
   {
     "id": "papa-johns-a4fecf80",
     "name": "פאפא ג'ונס",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "גדרה",
     "address": "שדרות בן גוריון 105, גדרה",
     "location": {
@@ -130363,7 +130313,7 @@
   {
     "id": "papa-johns-fbe54e43",
     "name": "פאפא ג'ונס",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "קריית אתא",
     "address": "שדרות ההסתדרות 271, קריית אתא",
     "location": {
@@ -135743,7 +135693,7 @@
   {
     "id": "manual-pizza-story-azor",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "address": "המצודה 6, אזור",
     "cityId": "אזור",
@@ -136079,7 +136029,7 @@
   {
     "id": "manual-pizza-story-אופקים",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "cityId": "אופקים",
     "address": "הרצל 40,, אופקים",
@@ -136103,7 +136053,7 @@
   {
     "id": "manual-pizza-story-אור-יהודה",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "cityId": "אור יהודה",
     "address": "חיים בר לב 10, אור יהודה",
@@ -136127,7 +136077,7 @@
   {
     "id": "manual-pizza-story-אריאל",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "cityId": "אריאל",
     "address": "רמת הגולן 3, אריאל",
@@ -136151,7 +136101,7 @@
   {
     "id": "manual-pizza-story-אשדוד",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "cityId": "אשדוד",
     "address": "רוגוזין 13,, אשדוד",
@@ -136175,7 +136125,7 @@
   {
     "id": "manual-pizza-story-אשקלון-אלי-כהן",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "cityId": "אשקלון",
     "address": "אלי כהן 37, אשקלון",
@@ -136199,7 +136149,7 @@
   {
     "id": "manual-pizza-story-אשקלון-עתיקות",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "cityId": "אשקלון",
     "address": "שפירא 25, אשקלון",
@@ -136223,7 +136173,7 @@
   {
     "id": "manual-pizza-story-באר-יעקב",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "cityId": "באר יעקב",
     "address": "קרן היסוד 5, באר יעקב",
@@ -136247,7 +136197,7 @@
   {
     "id": "manual-pizza-story-באר-שבע-מצדה",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "cityId": "באר שבע",
     "address": "דרך מצדה 266 תחנת דלק פז, באר שבע",
@@ -136271,7 +136221,7 @@
   {
     "id": "manual-pizza-story-גדרה",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "cityId": "גדרה",
     "address": "ויצמן 24, גדרה",
@@ -136295,7 +136245,7 @@
   {
     "id": "manual-pizza-story-חולון",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "cityId": "חולון",
     "address": "אילת 18, חולון",
@@ -136319,7 +136269,7 @@
   {
     "id": "manual-pizza-story-חיפה-דרך-צרפת",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "cityId": "חיפה",
     "address": "דרך צרפת 63, חיפה",
@@ -136343,7 +136293,7 @@
   {
     "id": "manual-pizza-story-חיפה-נווה-שאנן",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "cityId": "חיפה",
     "address": "חניתה 40, חיפה",
@@ -136367,7 +136317,7 @@
   {
     "id": "manual-pizza-story-חריש",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "cityId": "חריש",
     "address": "דרך ארץ 58, חריש",
@@ -136391,7 +136341,7 @@
   {
     "id": "manual-pizza-story-טירת-הכרמל",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "cityId": "טירת הכרמל",
     "address": "ז׳בוטינסקי 50, טירת הכרמל",
@@ -136415,7 +136365,7 @@
   {
     "id": "manual-pizza-story-יקנעם",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "cityId": "יקנעם",
     "address": "התמר 6 נגישות בטבלה, יקנעם",
@@ -136439,7 +136389,7 @@
   {
     "id": "manual-pizza-story-ירושלים-ארמון-הנציב",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "cityId": "ירושלים",
     "address": "עולי הגרדום 2, ארמון הנציב,, ירושלים",
@@ -136463,7 +136413,7 @@
   {
     "id": "manual-pizza-story-ירושלים-גילה",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "cityId": "ירושלים",
     "address": "צביה ויצחק 800, ירושלים",
@@ -136487,7 +136437,7 @@
   {
     "id": "manual-pizza-story-ירושלים-הר-חומה",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "cityId": "ירושלים",
     "address": "הממציא 1, הר חומה,, ירושלים",
@@ -136511,7 +136461,7 @@
   {
     "id": "manual-pizza-story-ירושלים-כנפי-נשרים",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "cityId": "ירושלים",
     "address": "כנפי נשרים 31,, ירושלים",
@@ -136535,7 +136485,7 @@
   {
     "id": "manual-pizza-story-לוד",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "cityId": "לוד",
     "address": "האילון 12, לוד",
@@ -136559,7 +136509,7 @@
   {
     "id": "manual-pizza-story-מגדל-העמק",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "cityId": "מגדל העמק",
     "address": "דרך העמק 16, מגדל העמק",
@@ -136583,7 +136533,7 @@
   {
     "id": "manual-pizza-story-מודיעין-עילית",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "cityId": "מודיעין עילית",
     "address": "נתיבות המשפט 5, מודיעין עילית",
@@ -136607,7 +136557,7 @@
   {
     "id": "manual-pizza-story-מזכרת-בתיה",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "cityId": "מזכרת בתיה",
     "address": "שד' מנחם בגין 4,, מזכרת בתיה",
@@ -136631,7 +136581,7 @@
   {
     "id": "manual-pizza-story-נהריה",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "cityId": "נהריה",
     "address": "הרצל 64, נהריה",
@@ -136655,7 +136605,7 @@
   {
     "id": "manual-pizza-story-נוף-הגליל",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "cityId": "נוף הגליל",
     "address": "הלולב 25, נוף הגליל",
@@ -136679,7 +136629,7 @@
   {
     "id": "manual-pizza-story-נתיבות",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "cityId": "נתיבות",
     "address": "יוסף סמילו 113, נתיבות",
@@ -136703,7 +136653,7 @@
   {
     "id": "manual-pizza-story-עכו",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "cityId": "עכו",
     "address": "אחד העם 1, עכו",
@@ -136727,7 +136677,7 @@
   {
     "id": "manual-pizza-story-פרדס-חנה",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "cityId": "פרדס חנה",
     "address": "גלעד 1, פרדס חנה",
@@ -136751,7 +136701,7 @@
   {
     "id": "manual-pizza-story-קריית-ביאליק",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "cityId": "קריית ביאליק",
     "address": "קרן היסוד 37, קריית ביאליק",
@@ -136775,7 +136725,7 @@
   {
     "id": "manual-pizza-story-קריית-מוצקין",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "cityId": "קריית מוצקין",
     "address": "ויצמן 6, קריית מוצקין",
@@ -136799,7 +136749,7 @@
   {
     "id": "manual-pizza-story-קריית-מלאכי",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "cityId": "קריית מלאכי",
     "address": "ז׳בוטינסקי 22, קריית מלאכי",
@@ -136823,7 +136773,7 @@
   {
     "id": "manual-pizza-story-ראשון-לציון-הרצל",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "cityId": "ראשון לציון",
     "address": "הרצל 28, ראשון לציון",
@@ -136847,7 +136797,7 @@
   {
     "id": "manual-pizza-story-ראשון-לציון-נרקיסים",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "cityId": "ראשון לציון",
     "address": "ירושלים 129,, ראשון לציון",
@@ -136871,7 +136821,7 @@
   {
     "id": "manual-pizza-story-ראשון-לציון-מערב",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "cityId": "ראשון לציון",
     "address": "זלמן שזר 27, ראשון לציון",
@@ -136895,7 +136845,7 @@
   {
     "id": "manual-pizza-story-רחובות",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "cityId": "רחובות",
     "address": "דרך ירושלים 15,, רחובות",
@@ -136919,7 +136869,7 @@
   {
     "id": "manual-pizza-story-רמת-גן",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "cityId": "רמת גן",
     "address": "שדרות ירושלים 42, רמת גן",
@@ -136943,7 +136893,7 @@
   {
     "id": "manual-pizza-story-שדרות",
     "name": "פיצה סטורי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "dairy",
     "cityId": "שדרות",
     "address": "הרצל 39, שדרות",
@@ -136967,7 +136917,7 @@
   {
     "id": "humus-eli-חומוס-אליהו-מידטאון-תא",
     "name": "חומוס אליהו מידטאון",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "parve",
     "cityId": "תל אביב-יפו",
     "address": "מנחם בגין 144, תל אביב",
@@ -136993,7 +136943,7 @@
       "longitude": 34.635
     },
     "kosherType": "rabanut_mekomi",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "website": "https://www.iburgerim.co.il/",
     "source": "manual",
@@ -137013,7 +136963,7 @@
     },
     "kosherType": "badatz_beit_yosef",
     "certifiedBy": "בד\"ץ בית יוסף",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "website": "https://www.iburgerim.co.il/",
     "source": "manual",
@@ -137033,7 +136983,7 @@
     },
     "kosherType": "badatz_beit_yosef",
     "certifiedBy": "בד\"ץ בית יוסף",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "website": "https://www.iburgerim.co.il/",
     "source": "manual",
@@ -137052,7 +137002,7 @@
       "longitude": 34.5733
     },
     "kosherType": "rabanut_mekomi",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "website": "https://www.iburgerim.co.il/",
     "source": "manual",
@@ -137071,7 +137021,7 @@
       "longitude": 34.7902
     },
     "kosherType": "rabanut",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "website": "https://www.iburgerim.co.il/",
     "source": "manual",
@@ -137090,7 +137040,7 @@
       "longitude": 34.7925
     },
     "kosherType": "kosher",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "website": "https://www.iburgerim.co.il/",
     "source": "manual",
@@ -137109,7 +137059,7 @@
       "longitude": 35.4979
     },
     "kosherType": "mehadrin",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "website": "https://www.iburgerim.co.il/",
     "source": "manual",
@@ -137128,7 +137078,7 @@
       "longitude": 34.8334
     },
     "kosherType": "kosher",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "website": "https://www.iburgerim.co.il/",
     "source": "manual",
@@ -137147,7 +137097,7 @@
       "longitude": 34.919
     },
     "kosherType": "rabanut_mekomi",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "website": "https://www.iburgerim.co.il/",
     "source": "manual",
@@ -137166,7 +137116,7 @@
       "longitude": 34.97
     },
     "kosherType": "kosher",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "website": "https://www.iburgerim.co.il/",
     "source": "manual",
@@ -137186,7 +137136,7 @@
     },
     "kosherType": "badatz_beit_yosef",
     "certifiedBy": "בד\"ץ בית יוסף",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "website": "https://www.iburgerim.co.il/",
     "source": "manual",
@@ -137205,7 +137155,7 @@
       "longitude": 34.9687
     },
     "kosherType": "rabanut_mekomi",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "website": "https://www.iburgerim.co.il/",
     "source": "manual",
@@ -137224,7 +137174,7 @@
       "longitude": 34.7457
     },
     "kosherType": "kosher",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "website": "https://www.iburgerim.co.il/",
     "source": "manual",
@@ -137243,7 +137193,7 @@
       "longitude": 34.9125
     },
     "kosherType": "rabanut_mekomi",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "website": "https://www.iburgerim.co.il/",
     "source": "manual",
@@ -137262,7 +137212,7 @@
       "longitude": 35.2919
     },
     "kosherType": "kosher",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "website": "https://www.iburgerim.co.il/",
     "source": "manual",
@@ -137282,7 +137232,7 @@
     },
     "kosherType": "badatz_beit_yosef",
     "certifiedBy": "בד\"ץ בית יוסף",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "website": "https://www.iburgerim.co.il/",
     "source": "manual",
@@ -137301,7 +137251,7 @@
       "longitude": 35.0101
     },
     "kosherType": "rabanut_mekomi",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "website": "https://www.iburgerim.co.il/",
     "source": "manual",
@@ -137320,7 +137270,7 @@
       "longitude": 34.8364
     },
     "kosherType": "kosher",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "website": "https://www.iburgerim.co.il/",
     "source": "manual",
@@ -137339,7 +137289,7 @@
       "longitude": 35.295
     },
     "kosherType": "mehadrin",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "website": "https://www.iburgerim.co.il/",
     "source": "manual",
@@ -137359,7 +137309,7 @@
     },
     "kosherType": "badatz_beit_yosef",
     "certifiedBy": "בד\"ץ בית יוסף",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "website": "https://www.iburgerim.co.il/",
     "source": "manual",
@@ -137378,7 +137328,7 @@
       "longitude": 35.313
     },
     "kosherType": "rabanut_mekomi",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "website": "https://www.iburgerim.co.il/",
     "source": "manual",
@@ -137398,7 +137348,7 @@
     },
     "kosherType": "badatz_beit_yosef",
     "certifiedBy": "בד\"ץ בית יוסף",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "website": "https://www.iburgerim.co.il/",
     "source": "manual",
@@ -137417,7 +137367,7 @@
       "longitude": 34.9594
     },
     "kosherType": "rabanut_mekomi",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "website": "https://www.iburgerim.co.il/",
     "source": "manual",
@@ -137436,7 +137386,7 @@
       "longitude": 35.0766
     },
     "kosherType": "kosher",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "website": "https://www.iburgerim.co.il/",
     "source": "manual",
@@ -137455,7 +137405,7 @@
       "longitude": 34.97
     },
     "kosherType": "kosher",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "website": "https://www.iburgerim.co.il/",
     "source": "manual",
@@ -137475,7 +137425,7 @@
     },
     "kosherType": "badatz_beit_yosef",
     "certifiedBy": "בד\"ץ בית יוסף",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "website": "https://www.iburgerim.co.il/",
     "source": "manual",
@@ -137494,7 +137444,7 @@
       "longitude": 35.153
     },
     "kosherType": "rabanut_mehadrin",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "website": "https://www.iburgerim.co.il/",
     "source": "manual",
@@ -137513,7 +137463,7 @@
       "longitude": 34.9019
     },
     "kosherType": "rabanut",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "website": "https://www.iburgerim.co.il/",
     "source": "manual",
@@ -137532,7 +137482,7 @@
       "longitude": 35.6932
     },
     "kosherType": "mehadrin",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "website": "https://www.iburgerim.co.il/",
     "source": "manual",
@@ -137551,7 +137501,7 @@
       "longitude": 34.7434
     },
     "kosherType": "kosher",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "website": "https://www.iburgerim.co.il/",
     "source": "manual",
@@ -137571,7 +137521,7 @@
     },
     "kosherType": "badatz_beit_yosef",
     "certifiedBy": "בד\"ץ בית יוסף",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "website": "https://www.iburgerim.co.il/",
     "source": "manual",
@@ -137590,7 +137540,7 @@
       "longitude": 34.7714
     },
     "kosherType": "rabanut_mekomi",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "website": "https://www.iburgerim.co.il/",
     "source": "manual",
@@ -137609,7 +137559,7 @@
       "longitude": 34.7987
     },
     "kosherType": "rabanut",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "website": "https://www.iburgerim.co.il/",
     "source": "manual",
@@ -137629,7 +137579,7 @@
     },
     "kosherType": "badatz_beit_yosef",
     "certifiedBy": "בד\"ץ בית יוסף",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "website": "https://www.iburgerim.co.il/",
     "source": "manual",
@@ -137649,7 +137599,7 @@
     },
     "kosherType": "badatz_beit_yosef",
     "certifiedBy": "בד\"ץ בית יוסף",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "website": "https://www.iburgerim.co.il/",
     "source": "manual",
@@ -137669,7 +137619,7 @@
     },
     "kosherType": "badatz_beit_yosef",
     "certifiedBy": "בד\"ץ בית יוסף",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "website": "https://www.iburgerim.co.il/",
     "source": "manual",
@@ -137688,7 +137638,7 @@
       "longitude": 34.8038
     },
     "kosherType": "kosher",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "category": "meat",
     "website": "https://www.iburgerim.co.il/",
     "source": "manual",
@@ -138951,7 +138901,7 @@
   {
     "id": "pokeshop-2e5db008",
     "name": "PokeShop רוטשילד",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "תל אביב",
     "address": "הרצל 10 (פינת רוטשילד), תל אביב",
     "location": {
@@ -138975,7 +138925,7 @@
   {
     "id": "pokeshop-bb53c92b",
     "name": "PokeShop אבן גבירול",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "תל אביב",
     "address": "אבן גבירול 62, תל אביב",
     "location": {
@@ -138999,7 +138949,7 @@
   {
     "id": "pokeshop-c77c76a7",
     "name": "PokeShop בר כוכבא",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "בני ברק",
     "address": "בר כוכבא 16, בני ברק",
     "location": {
@@ -139021,7 +138971,7 @@
   {
     "id": "pokeshop-300778c2",
     "name": "PokeShop נתניה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "נתניה",
     "address": "מפי 5, SOHO, נתניה",
     "location": {
@@ -139045,7 +138995,7 @@
   {
     "id": "woktowalk-13725564",
     "name": "Wok to Walk תל אביב",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "תל אביב",
     "address": "האשמונאים 86, תל אביב",
     "location": {
@@ -139068,7 +139018,7 @@
   {
     "id": "woktowalk-943efce4",
     "name": "Wok to Walk ירושלים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "ירושלים",
     "address": "דוד רמז 4, התחנה הראשונה, ירושלים",
     "location": {
@@ -139832,7 +139782,7 @@
   {
     "id": "newdeli-9c874f1d",
     "name": "ניו דלי אריאל",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "אריאל",
     "address": "רמת הגולן 2, כיכר הגבורה, אריאל",
     "location": {
@@ -139844,7 +139794,7 @@
     "website": "https://newdeli.com",
     "instagram": "https://www.instagram.com/newdeli_official/",
     "facebook": "https://www.facebook.com/NewDeliSandwich",
-    "openingHours": "א׳-ה׳ 11:00-22:00",
+    "openingHours": "א׳-ה׳ 11:00-22:00 | ו׳-ש׳ סגור",
     "category": "meat",
     "kosherType": "rabanut_mekomi",
     "certifiedBy": "כשר בהשגחת רבנות אריאל",
@@ -139855,7 +139805,7 @@
   {
     "id": "newdeli-c8a8a9c1",
     "name": "ניו דלי קריית יובל",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "ירושלים",
     "address": "הנרייטה סולד 1, קריית יובל, ירושלים",
     "location": {
@@ -139867,7 +139817,7 @@
     "website": "https://newdeli.com",
     "instagram": "https://www.instagram.com/newdeli_official/",
     "facebook": "https://www.facebook.com/NewDeliSandwich",
-    "openingHours": "א׳-ה׳ 11:00-23:00",
+    "openingHours": "א׳-ה׳ 11:00-23:00 | ו׳-ש׳ סגור",
     "category": "meat",
     "kosherType": "rav_machpud",
     "certifiedBy": "כשרות מהדרין מחפוד",
@@ -139878,7 +139828,7 @@
   {
     "id": "newdeli-5e474b51",
     "name": "ניו דלי שער בנימין",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "שער בנימין",
     "address": "יד היוצר 2, אזור תעשייה שער בנימין",
     "location": {
@@ -139890,7 +139840,7 @@
     "website": "https://newdeli.com",
     "instagram": "https://www.instagram.com/newdeli_official/",
     "facebook": "https://www.facebook.com/NewDeliSandwich",
-    "openingHours": "א׳-ה׳ 11:00-21:45",
+    "openingHours": "א׳-ה׳ 11:00-21:45 | ו׳-ש׳ סגור",
     "category": "meat",
     "kosherType": "rabanut_mekomi",
     "certifiedBy": "כשר בהשגחת הרבנות הראשית",
@@ -139901,7 +139851,7 @@
   {
     "id": "newdeli-3f8d879d",
     "name": "ניו דלי עזריאלי תל אביב",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "תל אביב",
     "address": "דרך בגין 132, קומה 2, קניון עזריאלי, תל אביב",
     "location": {
@@ -139924,7 +139874,7 @@
   {
     "id": "newdeli-d4510103",
     "name": "ניו דלי דיזינגוף סנטר",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "תל אביב",
     "address": "שער 7 דיזינגוף סנטר, תל אביב",
     "location": {
@@ -139947,7 +139897,7 @@
   {
     "id": "newdeli-a524562a",
     "name": "ניו דלי ממילא",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "ירושלים",
     "address": "שדרות אלרוב ממילא, ירושלים",
     "location": {
@@ -139969,7 +139919,7 @@
   {
     "id": "newdeli-8e3f49af",
     "name": "ניו דלי מודיעין סנטר",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "מודיעין",
     "address": "צאלון 21, מודיעין",
     "location": {
@@ -139992,7 +139942,7 @@
   {
     "id": "newdeli-892141e6",
     "name": "ניו דלי קניון איילון",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "רמת גן",
     "address": "דרך אבא הלל 310, קניון איילון, רמת גן",
     "location": {
@@ -140014,7 +139964,7 @@
   {
     "id": "newdeli-46198e1b",
     "name": "ניו דלי עזריאלי מודיעין",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "מודיעין",
     "address": "לב העיר 1, קניון עזריאלי, מודיעין",
     "location": {
@@ -140037,7 +139987,7 @@
   {
     "id": "newdeli-1a8f78cf",
     "name": "ניו דלי הקניון הגדול",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "פתח תקווה",
     "address": "ז׳בוטינסקי 72, הקניון הגדול, פתח תקווה",
     "location": {
@@ -140060,7 +140010,7 @@
   {
     "id": "newdeli-683faa56",
     "name": "ניו דלי עזריאלי רמלה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "רמלה",
     "address": "דוד רזיאל 1, קומה 2, קניון עזריאלי, רמלה",
     "location": {
@@ -140083,7 +140033,7 @@
   {
     "id": "newdeli-54a6681c",
     "name": "ניו דלי קניון רננים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "רעננה",
     "address": "המלאכה 2, קומה מינוס 1, קניון רננים, רעננה",
     "location": {
@@ -140106,7 +140056,7 @@
   {
     "id": "newdeli-037eea6b",
     "name": "ניו דלי עזריאלי גבעתיים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "גבעתיים",
     "address": "דרך יצחק רבין 53, קניון עזריאלי, גבעתיים",
     "location": {
@@ -140129,7 +140079,7 @@
   {
     "id": "newdeli-19d99369",
     "name": "ניו דלי שער ראשון",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "ראשון לציון",
     "address": "גולדה מאיר 1, שער ראשון, ראשון לציון",
     "location": {
@@ -140152,7 +140102,7 @@
   {
     "id": "newdeli-8eec72c0",
     "name": "ניו דלי אלעד",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "אלעד",
     "address": "רבי יהודה הנשיא 94, אלעד",
     "location": {
@@ -140164,7 +140114,7 @@
     "website": "https://newdeli.com",
     "instagram": "https://www.instagram.com/newdeli_official/",
     "facebook": "https://www.facebook.com/NewDeliSandwich",
-    "openingHours": "א׳-ה׳ 11:00-23:30",
+    "openingHours": "א׳-ה׳ 11:00-23:30 | ו׳-ש׳ סגור",
     "category": "meat",
     "kosherType": "rav_machpud",
     "certifiedBy": "כשרות מהדרין מחפוד",
@@ -140175,7 +140125,7 @@
   {
     "id": "newdeli-73b55509",
     "name": "ניו דלי ז׳בוטינסקי רמת גן",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "רמת גן",
     "address": "ז׳בוטינסקי 155, רמת גן",
     "location": {
@@ -140187,7 +140137,7 @@
     "website": "https://newdeli.com",
     "instagram": "https://www.instagram.com/newdeli_official/",
     "facebook": "https://www.facebook.com/NewDeliSandwich",
-    "openingHours": "א׳-ה׳ 11:00-23:00",
+    "openingHours": "א׳-ה׳ 11:00-23:00 | ו׳-ש׳ סגור",
     "category": "meat",
     "kosherType": "rav_machpud",
     "certifiedBy": "כשרות מהדרין מחפוד",
@@ -140198,7 +140148,7 @@
   {
     "id": "newdeli-dea46bc9",
     "name": "ניו דלי תחנה מרכזית ירושלים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "ירושלים",
     "address": "יפו 224, קומה 2, תחנה מרכזית, ירושלים",
     "location": {
@@ -140221,7 +140171,7 @@
   {
     "id": "newdeli-5f0d93a1",
     "name": "ניו דלי בן יהודה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "ירושלים",
     "address": "בן יהודה 2, ירושלים",
     "location": {
@@ -140244,7 +140194,7 @@
   {
     "id": "newdeli-6694011b",
     "name": "ניו דלי מחנה יהודה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "ירושלים",
     "address": "אגריפס 62, מחנה יהודה, ירושלים",
     "location": {
@@ -140267,7 +140217,7 @@
   {
     "id": "newdeli-f46bbffa",
     "name": "ניו דלי עמק רפאים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "ירושלים",
     "address": "עמק רפאים 44, ירושלים",
     "location": {
@@ -140290,7 +140240,7 @@
   {
     "id": "newdeli-af3a7ee5",
     "name": "ניו דלי יפו ירושלים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "ירושלים",
     "address": "יפו 34, ירושלים",
     "location": {
@@ -140313,7 +140263,7 @@
   {
     "id": "newdeli-701049f0",
     "name": "ניו דלי סינמה סיטי",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "ירושלים",
     "address": "שדרות יצחק רבין 10, סינמה סיטי, ירושלים",
     "location": {
@@ -140336,7 +140286,7 @@
   {
     "id": "newdeli-9d9f7b0a",
     "name": "ניו דלי שרי ישראל",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "ירושלים",
     "address": "שרי ישראל 15, ירושלים",
     "location": {
@@ -140359,7 +140309,7 @@
   {
     "id": "newdeli-aeda38c2",
     "name": "ניו דלי רמת בית שמש",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "רמת בית שמש",
     "address": "נחל צאלים 2, רמת בית שמש",
     "location": {
@@ -140371,7 +140321,7 @@
     "website": "https://newdeli.com",
     "instagram": "https://www.instagram.com/newdeli_official/",
     "facebook": "https://www.facebook.com/NewDeliSandwich",
-    "openingHours": "א׳-ה׳ 11:00-23:00",
+    "openingHours": "א׳-ה׳ 11:00-23:00 | ו׳-ש׳ סגור",
     "category": "meat",
     "kosherType": "rav_machpud",
     "certifiedBy": "כשר למהדרין – בהשגחת הרב מחפוד",
@@ -140382,7 +140332,7 @@
   {
     "id": "newdeli-5abe445f",
     "name": "ניו דלי תלפיות",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "ירושלים",
     "address": "יד חרוצים 18, קניון אחים ישראל, תלפיות, ירושלים",
     "location": {
@@ -140394,7 +140344,7 @@
     "website": "https://newdeli.com",
     "instagram": "https://www.instagram.com/newdeli_official/",
     "facebook": "https://www.facebook.com/NewDeliSandwich",
-    "openingHours": "א׳-ה׳ 10:30-22:30",
+    "openingHours": "א׳-ה׳ 10:30-22:30 | ו׳-ש׳ סגור",
     "category": "meat",
     "kosherType": "rabanut_mekomi",
     "certifiedBy": "כשר בהשגחת הרבנות הראשית",
@@ -140405,7 +140355,7 @@
   {
     "id": "newdeli-32253672",
     "name": "ניו דלי קניון מלחה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "ירושלים",
     "address": "אגודת ספורט ביתר 1, קניון מלחה, ירושלים",
     "location": {
@@ -140428,7 +140378,7 @@
   {
     "id": "newdeli-7c08ccb0",
     "name": "ניו דלי שואבה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "שואבה",
     "address": "שואבה 1, תחנת דלק פז, צומת שורש",
     "location": {
@@ -140451,7 +140401,7 @@
   {
     "id": "newdeli-2b23eef9",
     "name": "ניו דלי אפרת",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "אפרת",
     "address": "התאנה 1, אפרת",
     "location": {
@@ -140474,7 +140424,7 @@
   {
     "id": "newdeli-7b45d55e",
     "name": "ניו דלי פסגת זאב",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "ירושלים",
     "address": "משה דיין, פסגת זאב, ירושלים",
     "location": {
@@ -140497,7 +140447,7 @@
   {
     "id": "newdeli-5b9fb8ab",
     "name": "ניו דלי צור הדסה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "צור הדסה",
     "address": "הרכסים 15, צור הדסה",
     "location": {
@@ -140520,7 +140470,7 @@
   {
     "id": "newdeli-c5609071",
     "name": "ניו דלי מעלה אדומים",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "מעלה אדומים",
     "address": "קניון מעלה אדומים, מעלה אדומים",
     "location": {
@@ -140543,7 +140493,7 @@
   {
     "id": "newdeli-c510321d",
     "name": "ניו דלי לב המפרץ חיפה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "חיפה",
     "address": "שדרות ההסתדרות, סינמול לב המפרץ, קומה 2, חיפה",
     "location": {
@@ -140566,7 +140516,7 @@
   {
     "id": "newdeli-1091bf33",
     "name": "ניו דלי קריון קריית ביאליק",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "קריית ביאליק",
     "address": "דרך עכו 192, קניון הקריון, קריית ביאליק",
     "location": {
@@ -140589,7 +140539,7 @@
   {
     "id": "newdeli-fe8bcc9b",
     "name": "ניו דלי עזריאלי חיפה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "חיפה",
     "address": "משה פלימן 4, קניון עזריאלי, חיפה",
     "location": {
@@ -140612,7 +140562,7 @@
   {
     "id": "newdeli-3be42df0",
     "name": "ניו דלי ראש פינה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "ראש פינה",
     "address": "סנטר הגליל, ראש פינה",
     "location": {
@@ -140635,7 +140585,7 @@
   {
     "id": "newdeli-6e346977",
     "name": "ניו דלי ארנה נהריה",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "נהריה",
     "address": "קניון ארנה, נהריה",
     "location": {
@@ -140658,7 +140608,7 @@
   {
     "id": "newdeli-97b33776",
     "name": "ניו דלי הסיטי אשדוד",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "אשדוד",
     "address": "מנחם בגין 1, קניון הסיטי, אשדוד",
     "location": {
@@ -140681,7 +140631,7 @@
   {
     "id": "newdeli-f4b3b3f3",
     "name": "ניו דלי תחנה מרכזית באר שבע",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "באר שבע",
     "address": "בן צבי 4, תחנה מרכזית, באר שבע",
     "location": {
@@ -140704,7 +140654,7 @@
   {
     "id": "newdeli-155d3de4",
     "name": "ניו דלי ביתר עילית",
-    "type": "fast_food",
+    "type": "restaurant", "subType": "fast_food",
     "cityId": "ביתר עילית",
     "address": "בניין דוד 23, ביתר עילית",
     "location": {
@@ -140716,12 +140666,76 @@
     "website": "https://newdeli.com",
     "instagram": "https://www.instagram.com/newdeli_official/",
     "facebook": "https://www.facebook.com/NewDeliSandwich",
-    "openingHours": "א׳-ד׳ 10:00-23:00 | ה׳ 10:00-00:00",
+    "openingHours": "א׳-ד׳ 10:00-23:00 | ה׳ 10:00-00:00 | ו׳-ש׳ סגור",
     "category": "meat",
     "kosherType": "rav_machpud",
     "certifiedBy": "כשר למהדרין – בהשגחת הרב מחפוד",
     "source": "manual",
     "sourceUrl": "https://newdeli.com",
+    "lastVerifiedAt": "2026-08-02"
+  },
+  {
+    "id": "petrozilia-1fb9547a",
+    "name": "פיטרוזיליה",
+    "type": "restaurant",
+    "category": "meat",
+    "kosherType": "rabanut_tel_aviv",
+    "address": "רחוב אלוף מגן קלמן 3, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "city",
+    "phone": "03-5162468",
+    "openingHours": "א׳-ו׳ עד 17:00",
+    "website": "https://petrozilia.co.il",
+    "menu": "https://petrozilia.co.il/תפריט/",
+    "facebook": "https://www.facebook.com/petrozilya47/",
+    "source": "manual",
+    "lastVerifiedAt": "2026-08-02"
+  },
+  {
+    "id": "bodega-cbe9bf08",
+    "name": "בודגה מטבח אמריקאי",
+    "type": "restaurant",
+    "category": "meat",
+    "kosherType": "kosher",
+    "address": "רחוב קרליבך 14, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "city",
+    "openingHours": "א׳-ד׳ 11:30-23:30 | ה׳ 11:30-00:30",
+    "website": "https://tabitisrael.co.il/tabit-order?siteName=bodega&step=menu",
+    "menu": "https://tabitisrael.co.il/tabit-order?siteName=bodega&step=menu",
+    "instagram": "https://www.instagram.com/getbodega/",
+    "source": "manual",
+    "lastVerifiedAt": "2026-08-02"
+  },
+  {
+    "id": "malka-3efe11e6",
+    "name": "מלכה",
+    "type": "restaurant",
+    "category": "meat",
+    "kosherType": "kosher",
+    "description": "מסעדת שף של אייל שני",
+    "address": "מנחם בגין 146, תל אביב יפו",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "city",
+    "phone": "03-6091331",
+    "openingHours": "א׳-ה׳ 12:00-16:00, 18:00-23:00 | ש׳ סגור",
+    "website": "https://malkarest.com",
+    "menu": "https://malkarest.com/menu/",
+    "instagram": "https://www.instagram.com/malka.tlv/",
+    "facebook": "https://www.facebook.com/malkatelaviv",
+    "source": "manual",
     "lastVerifiedAt": "2026-08-02"
   }
 ]

@@ -133,7 +133,12 @@ const NAME_EMOJI: Array<[RegExp, string]> = [
   [/מרקיה|soup/i,                              '🍲'],
 ];
 
-/** Returns the best emoji for a place: tag → name → type. */
+const SUB_TYPE_EMOJI: Record<string, string> = {
+  fast_food: '🍔',
+  chef_restaurant: '👨‍🍳',
+};
+
+/** Returns the best emoji for a place: tag → name → subType → type. */
 export function getPlaceEmoji(place: Place): string {
   for (const tag of place.tags ?? []) {
     const emoji = TAG_EMOJI[tag];
@@ -143,6 +148,7 @@ export function getPlaceEmoji(place: Place): string {
   for (const [pattern, emoji] of NAME_EMOJI) {
     if (pattern.test(name)) return emoji;
   }
+  if (place.subType && SUB_TYPE_EMOJI[place.subType]) return SUB_TYPE_EMOJI[place.subType];
   return PLACE_EMOJI[place.type];
 }
 

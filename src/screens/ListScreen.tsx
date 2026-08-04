@@ -26,7 +26,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { usePlaces } from '../hooks/usePlaces';
 import { useSharedLocation, getCachedLocation } from '../context/LocationContext';
 import { useFilters } from '../context/FiltersContext';
-import { countActiveFilters, GeoPoint, KosherType, PlaceType } from '../types';
+import { countActiveFilters, GeoPoint, KosherType, PlaceSubType, PlaceType } from '../types';
 import { distanceKm } from '../utils/geo';
 import { kosherTypeLabel } from '../utils/kosher';
 import { RootStackParamList } from '../navigation/types';
@@ -76,6 +76,12 @@ export function ListScreen() {
   ];
   const { places, loading, error, reload } = usePlaces(filters);
   const isFoodType = ['restaurant', 'fast_food', 'cafe', 'coffee_cart', 'juice_bar', 'ice_cream_parlor', 'bakery'].includes(filters.placeType ?? '');
+
+  const SUBTYPE_TABS: Array<{ key: PlaceSubType | null; label: string; emoji: string }> = [
+    { key: null,               label: 'הכל',        emoji: '🍽️' },
+    { key: 'fast_food',        label: 'מזון מהיר',   emoji: '🍔' },
+    { key: 'chef_restaurant',  label: 'מסעדות שף',  emoji: '👨‍🍳' },
+  ];
   // Base places filtered by placeType only — used for kosherType chips + autocomplete
   const { places: basePlaces } = usePlaces(filters.placeType ? { placeType: filters.placeType } : {});
   const availableKosherTypes = useMemo<KosherType[]>(() => {
@@ -219,12 +225,14 @@ export function ListScreen() {
   }, [places, sortByDistance, location, radiusKm]);
 
   const screenTitle =
-    filters.placeType === 'restaurant'   ? t.listCategories.restaurant
-    : filters.placeType === 'fast_food'  ? 'מזון מהיר'
-    : filters.placeType === 'cafe'       ? 'בתי קפה'
-    : filters.placeType === 'coffee_cart'? 'עגלות קפה'
-    : filters.placeType === 'synagogue'  ? t.listCategories.synagogue
-    : filters.placeType === 'mikveh'     ? t.listCategories.mikveh
+    filters.placeType === 'restaurant' && filters.subType === 'fast_food'       ? 'מזון מהיר'
+    : filters.placeType === 'restaurant' && filters.subType === 'chef_restaurant'? 'מסעדות שף'
+    : filters.placeType === 'restaurant'   ? t.listCategories.restaurant
+    : filters.placeType === 'fast_food'    ? 'מזון מהיר'
+    : filters.placeType === 'cafe'         ? 'בתי קפה'
+    : filters.placeType === 'coffee_cart'  ? 'עגלות קפה'
+    : filters.placeType === 'synagogue'    ? t.listCategories.synagogue
+    : filters.placeType === 'mikveh'       ? t.listCategories.mikveh
     : filters.placeType === 'chabad_house'   ? t.listCategories.chabad_house
     : filters.placeType === 'tzaddik_grave'  ? t.listCategories.tzaddik_grave
     : null;
@@ -249,6 +257,7 @@ export function ListScreen() {
           onPress={() => {
             if (!selectSynagogue) {
               setFilter('placeType', null);
+              setFilter('subType', null);
               setFilter('cuisineTag', null);
               setFilter('kosherType', null);
             }
@@ -397,28 +406,52 @@ export function ListScreen() {
 
       {/* Category tabs — cuisine sub-tabs for restaurants, category tabs only when no type selected */}
       {filters.placeType === 'restaurant' ? (
-        <ScrollView
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          style={styles.tabsScroll}
-          contentContainerStyle={styles.tabsContent}
-        >
-          {CUISINE_TABS.map((tab) => {
-            const active = filters.cuisineTag === tab.key;
-            return (
-              <Pressable
-                key={tab.key}
-                style={[styles.tab, active && styles.tabActive]}
-                onPress={() => setFilter('cuisineTag', active ? null : tab.key)}
-              >
-                <Text style={styles.tabEmoji}>{tab.emoji}</Text>
-                <Text style={[styles.tabText, active && styles.tabTextActive]}>
-                  {tab.label}
-                </Text>
-              </Pressable>
-            );
-          })}
-        </ScrollView>
+        <>
+          {/* Sub-type filter row */}
+          <ScrollView
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            style={styles.tabsScroll}
+            contentContainerStyle={styles.tabsContent}
+          >
+            {SUBTYPE_TABS.map((tab) => {
+              const active = filters.subType === tab.key;
+              return (
+                <Pressable
+                  key={String(tab.key)}
+                  style={[styles.tab, active && styles.tabActive]}
+                  onPress={() => setFilter('subType', active && tab.key !== null ? null : tab.key)}
+                >
+                  <Text style={styles.tabEmoji}>{tab.emoji}</Text>
+                  <Text style={[styles.tabText, active && styles.tabTextActive]}>{tab.label}</Text>
+                </Pressable>
+              );
+            })}
+          </ScrollView>
+          {/* Cuisine filter row */}
+          <ScrollView
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            style={styles.tabsScroll}
+            contentContainerStyle={styles.tabsContent}
+          >
+            {CUISINE_TABS.map((tab) => {
+              const active = filters.cuisineTag === tab.key;
+              return (
+                <Pressable
+                  key={tab.key}
+                  style={[styles.tab, active && styles.tabActive]}
+                  onPress={() => setFilter('cuisineTag', active ? null : tab.key)}
+                >
+                  <Text style={styles.tabEmoji}>{tab.emoji}</Text>
+                  <Text style={[styles.tabText, active && styles.tabTextActive]}>
+                    {tab.label}
+                  </Text>
+                </Pressable>
+              );
+            })}
+          </ScrollView>
+        </>
       ) : filters.placeType === null ? (
         <ScrollView
           horizontal

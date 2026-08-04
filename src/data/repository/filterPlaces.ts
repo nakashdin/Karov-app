@@ -19,6 +19,9 @@ const CUISINE_TAG_GROUPS: Record<string, string[]> = {
 /** Exact-match filters only (no text search). */
 function matchesExactFilters(place: Place, f: Partial<PlaceFilters>): boolean {
   if (f.placeType && place.type !== f.placeType && !place.tags?.includes(f.placeType)) return false;
+  if (f.subType !== undefined && f.subType !== null) {
+    if (place.subType !== f.subType) return false;
+  }
   if (f.cityId && place.cityId !== f.cityId) return false;
   if (f.kosherType && place.kosherType !== f.kosherType) return false;
   if (f.category && place.category !== f.category) return false;

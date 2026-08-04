@@ -1,5 +1,6 @@
 import React, { useMemo, useState, useEffect, useCallback } from 'react';
 import {
+  Modal,
   Platform,
   Pressable,
   RefreshControl,
@@ -30,7 +31,7 @@ import { useCityName } from '../hooks/useCityName';
 import { useSharedLocation } from '../context/LocationContext';
 import { useFilters } from '../context/FiltersContext';
 import { distanceKm } from '../utils/geo';
-import { emptyFilters, PlaceType } from '../types';
+import { emptyFilters, PlaceSubType, PlaceType } from '../types';
 import { RootStackParamList } from '../navigation/types';
 import { Place } from '../types/place';
 
@@ -39,8 +40,6 @@ type Nav = NativeStackNavigationProp<RootStackParamList>;
 const HEBREW_DAYS = ['יום ראשון', 'יום שני', 'יום שלישי', 'יום רביעי', 'יום חמישי', 'יום שישי', 'שבת'];
 
 const ALL_SHORTCUTS = [
-  { icon: 'restaurant' as const,    color: colors.categoryRestaurant, bg: '#FEF3E2', label: 'מסעדות',      type: 'restaurant' },
-  { icon: 'fast-food' as const,     color: colors.categoryFastFood,   bg: '#FEE8E2', label: 'מזון מהיר',   type: 'fast_food' },
   { icon: 'cafe' as const,          color: colors.categoryCafe,       bg: '#F0EAF8', label: 'בתי קפה',     type: 'cafe' },
   { icon: 'cafe-outline' as const,  color: colors.categoryCoffeeCart, bg: '#EBF5E6', label: 'עגלות קפה',   type: 'coffee_cart' },
   { icon: 'wine' as const,          color: colors.categoryWinery,     bg: '#F8EAF0', label: 'ייקבים',      type: 'winery' },
@@ -48,6 +47,12 @@ const ALL_SHORTCUTS = [
   { icon: 'water' as const,         color: colors.categoryMikveh,     bg: '#E5F5FD', label: 'מקוואות',     type: 'mikveh' },
   { icon: 'home' as const,          color: colors.chabad,             bg: '#F0EBF8', label: 'בתי חב"ד',    type: 'chabad_house' },
   { icon: 'flower-outline' as const,color: colors.tzaddik,            bg: '#F5EEEA', label: 'קברי צדיקים', type: 'tzaddik_grave' },
+] as const;
+
+const EAT_OPTIONS = [
+  { emoji: '🍽️', label: 'מסעדות',     placeType: 'restaurant' as PlaceType, subType: null as PlaceSubType | null },
+  { emoji: '🍔', label: 'מזון מהיר',  placeType: 'restaurant' as PlaceType, subType: 'fast_food' as PlaceSubType },
+  { emoji: '👨‍🍳', label: 'מסעדות שף', placeType: 'restaurant' as PlaceType, subType: 'chef_restaurant' as PlaceSubType },
 ] as const;
 
 const FAV_SYN_KEY = '@karov/favoriteSynagogue';
@@ -64,6 +69,7 @@ export function HomeScreen() {
   const [userName, setUserName] = useState<string | null>(null);
   const [langOpen, setLangOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [eatMenuOpen, setEatMenuOpen] = useState(false);
   const [refreshing, setRefreshing] = useState(false);
   const [refreshKey, setRefreshKey] = useState(0);
   const [favoriteSynagogue, setFavoriteSynagogue] = useState<Place | null>(null);
@@ -103,6 +109,12 @@ export function HomeScreen() {
 
   const openType = (placeType: PlaceType) => {
     setFilters({ ...emptyFilters, placeType });
+    navigation.navigate('List', undefined);
+  };
+
+  const openEatOption = (placeType: PlaceType, subType: PlaceSubType | null) => {
+    setFilters({ ...emptyFilters, placeType, subType });
+    setEatMenuOpen(false);
     navigation.navigate('List', undefined);
   };
 
@@ -195,6 +207,15 @@ export function HomeScreen() {
       </Text>
       {isDesktop ? (
         <View style={styles.shortcutsGrid}>
+          {/* לאכול shortcut — opens modal */}
+          <ShortcutCompact
+            icon="restaurant"
+            color={colors.categoryRestaurant}
+            bgColor="#FEF3E2"
+            label="לאכול"
+            onPress={() => setEatMenuOpen(true)}
+            desktop
+          />
           {ALL_SHORTCUTS.map((s) => (
             <ShortcutCompact
               key={s.type}
@@ -213,6 +234,14 @@ export function HomeScreen() {
           showsHorizontalScrollIndicator={false}
           contentContainerStyle={styles.shortcutsRow}
         >
+          {/* לאכול shortcut — opens modal */}
+          <ShortcutCompact
+            icon="restaurant"
+            color={colors.categoryRestaurant}
+            bgColor="#FEF3E2"
+            label="לאכול"
+            onPress={() => setEatMenuOpen(true)}
+          />
           {ALL_SHORTCUTS.map((s) => (
             <ShortcutCompact
               key={s.type}
@@ -307,6 +336,11 @@ export function HomeScreen() {
 
         <LanguagePicker visible={langOpen} onClose={() => setLangOpen(false)} />
         <AppMenu visible={menuOpen} onClose={() => setMenuOpen(false)} />
+        <EatMenuModal
+          visible={eatMenuOpen}
+          onClose={() => setEatMenuOpen(false)}
+          onSelect={openEatOption}
+        />
       </Screen>
     );
   }
@@ -336,9 +370,125 @@ export function HomeScreen() {
 
       <LanguagePicker visible={langOpen} onClose={() => setLangOpen(false)} />
       <AppMenu visible={menuOpen} onClose={() => setMenuOpen(false)} />
+      <EatMenuModal
+        visible={eatMenuOpen}
+        onClose={() => setEatMenuOpen(false)}
+        onSelect={openEatOption}
+      />
     </Screen>
   );
 }
+
+// ── Eat Menu Modal ───────────────────────────────────────────────────────────
+
+function EatMenuModal({
+  visible,
+  onClose,
+  onSelect,
+}: {
+  visible: boolean;
+  onClose: () => void;
+  onSelect: (placeType: PlaceType, subType: PlaceSubType | null) => void;
+}) {
+  return (
+    <Modal
+      visible={visible}
+      animationType="slide"
+      presentationStyle="pageSheet"
+      onRequestClose={onClose}
+    >
+      <View style={eatStyles.container}>
+        <View style={eatStyles.handle} />
+        <Text style={eatStyles.title}>לאכול</Text>
+        <Text style={eatStyles.subtitle}>בחר קטגוריה</Text>
+        <View style={eatStyles.optionsGrid}>
+          {EAT_OPTIONS.map((opt) => (
+            <Pressable
+              key={`${opt.placeType}-${opt.subType ?? 'all'}`}
+              style={({ pressed }) => [eatStyles.optionCard, pressed && eatStyles.optionPressed]}
+              onPress={() => onSelect(opt.placeType, opt.subType)}
+            >
+              <Text style={eatStyles.optionEmoji}>{opt.emoji}</Text>
+              <Text style={eatStyles.optionLabel}>{opt.label}</Text>
+            </Pressable>
+          ))}
+        </View>
+        <Pressable style={eatStyles.cancelBtn} onPress={onClose}>
+          <Text style={eatStyles.cancelText}>ביטול</Text>
+        </Pressable>
+      </View>
+    </Modal>
+  );
+}
+
+const eatStyles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: colors.background,
+    paddingHorizontal: spacing.lg,
+    paddingTop: spacing.lg,
+  },
+  handle: {
+    width: 40,
+    height: 4,
+    borderRadius: 2,
+    backgroundColor: colors.border,
+    alignSelf: 'center',
+    marginBottom: spacing.lg,
+  },
+  title: {
+    fontSize: 28,
+    fontWeight: '800',
+    color: colors.text,
+    textAlign: 'right',
+    letterSpacing: -0.8,
+    marginBottom: 4,
+  },
+  subtitle: {
+    fontSize: 14,
+    color: colors.textMuted,
+    textAlign: 'right',
+    marginBottom: spacing.xl,
+  },
+  optionsGrid: {
+    gap: 12,
+  },
+  optionCard: {
+    backgroundColor: colors.surface,
+    borderRadius: radius.xl,
+    padding: spacing.lg,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 14,
+    borderWidth: 1,
+    borderColor: colors.border,
+    ...shadow.card,
+  },
+  optionPressed: {
+    opacity: 0.8,
+    transform: [{ scale: 0.97 }],
+  },
+  optionEmoji: {
+    fontSize: 32,
+  },
+  optionLabel: {
+    fontSize: 18,
+    fontWeight: '700',
+    color: colors.text,
+    textAlign: 'right',
+    flex: 1,
+  },
+  cancelBtn: {
+    marginTop: spacing.xl,
+    alignItems: 'center',
+    paddingVertical: spacing.lg,
+  },
+  cancelText: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: colors.textMuted,
+  },
+});
 
 // ── Jerusalem Illustration ───────────────────────────────────────────────────
 
