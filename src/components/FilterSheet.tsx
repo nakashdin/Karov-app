@@ -13,19 +13,30 @@ import { useLanguage } from '../context/LanguageContext';
 import { useFilters } from '../context/FiltersContext';
 import { useCities } from '../hooks/useCities';
 import { emptyFilters, KosherCategory, KosherType, PlaceFilters, PlaceType } from '../types';
-import { ALL_CATEGORIES, ALL_KOSHER_TYPES, categoryLabel, kosherTypeLabel } from '../utils/kosher';
+import { ALL_CATEGORIES, categoryLabel, kosherTypeLabel } from '../utils/kosher';
 import { placeTypeLabel } from '../utils/placeType';
 import { Chip } from './Chip';
 
 const ALL_PLACE_TYPES: PlaceType[] = ['restaurant', 'synagogue', 'mikveh', 'chabad_house', 'tzaddik_grave'];
 
+const CUISINE_OPTIONS: Array<{ key: string; label: string; emoji: string }> = [
+  { key: 'coffee_shop', label: 'קפה',       emoji: '☕' },
+  { key: 'burger',      label: 'בורגר',      emoji: '🍔' },
+  { key: 'pizza',       label: 'פיצה',       emoji: '🍕' },
+  { key: 'street_food', label: 'מזון רחוב',  emoji: '🥙' },
+  { key: 'sushi',       label: 'סושי',       emoji: '🍣' },
+  { key: 'meat',        label: 'בשרים',      emoji: '🥩' },
+];
+
 interface FilterSheetProps {
   visible: boolean;
   onClose: () => void;
+  isFoodMode?: boolean;
+  availableKosherTypes?: KosherType[];
 }
 
 /** Bottom-sheet modal for city / kosher-type / category filters. */
-export function FilterSheet({ visible, onClose }: FilterSheetProps) {
+export function FilterSheet({ visible, onClose, isFoodMode = false, availableKosherTypes }: FilterSheetProps) {
   const { t } = useLanguage();
   const { filters, setFilters, reset } = useFilters();
   const { cities } = useCities();
@@ -74,38 +85,60 @@ export function FilterSheet({ visible, onClose }: FilterSheetProps) {
         </View>
 
         <ScrollView showsVerticalScrollIndicator={false}>
-          <Section title={t.filters.placeType}>
-            {ALL_PLACE_TYPES.map((pt: PlaceType) => (
-              <Chip
-                key={pt}
-                label={placeTypeLabel[pt]}
-                selected={draft.placeType === pt}
-                onPress={() => toggle('placeType', pt)}
-              />
-            ))}
-          </Section>
+          {!isFoodMode && (
+            <Section title={t.filters.placeType}>
+              {ALL_PLACE_TYPES.map((pt: PlaceType) => (
+                <Chip
+                  key={pt}
+                  label={placeTypeLabel[pt]}
+                  selected={draft.placeType === pt}
+                  onPress={() => toggle('placeType', pt)}
+                />
+              ))}
+            </Section>
+          )}
 
-          <Section title={t.filters.category}>
-            {ALL_CATEGORIES.map((c: KosherCategory) => (
-              <Chip
-                key={c}
-                label={categoryLabel[c]}
-                selected={draft.category === c}
-                onPress={() => toggle('category', c)}
-              />
-            ))}
-          </Section>
+          {isFoodMode && (
+            <Section title="סוג מטבח">
+              {CUISINE_OPTIONS.map((opt) => (
+                <Chip
+                  key={opt.key}
+                  label={`${opt.emoji} ${opt.label}`}
+                  selected={draft.cuisineTag === opt.key}
+                  onPress={() => setDraft((prev) => ({
+                    ...prev,
+                    cuisineTag: prev.cuisineTag === opt.key ? null : opt.key,
+                  }))}
+                />
+              ))}
+            </Section>
+          )}
 
-          <Section title={t.filters.kosherType}>
-            {ALL_KOSHER_TYPES.map((k: KosherType) => (
-              <Chip
-                key={k}
-                label={kosherTypeLabel[k]}
-                selected={draft.kosherType === k}
-                onPress={() => toggle('kosherType', k)}
-              />
-            ))}
-          </Section>
+          {isFoodMode && (
+            <Section title={t.filters.category}>
+              {ALL_CATEGORIES.map((c: KosherCategory) => (
+                <Chip
+                  key={c}
+                  label={categoryLabel[c]}
+                  selected={draft.category === c}
+                  onPress={() => toggle('category', c)}
+                />
+              ))}
+            </Section>
+          )}
+
+          {isFoodMode && availableKosherTypes && availableKosherTypes.length > 0 && (
+            <Section title={t.filters.kosherType}>
+              {availableKosherTypes.map((k: KosherType) => (
+                <Chip
+                  key={k}
+                  label={kosherTypeLabel[k] ?? k}
+                  selected={draft.kosherType === k}
+                  onPress={() => toggle('kosherType', k)}
+                />
+              ))}
+            </Section>
+          )}
 
           <Section title={t.filters.city}>
             {cities.map((city) => (

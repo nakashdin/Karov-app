@@ -35,5 +35,6 @@ export function countActiveFilters(f: PlaceFilters): number {
   if (f.cityId) n++;
   if (f.kosherType) n++;
   if (f.category) n++;
+  if (f.cuisineTag) n++;
   return n;
 }

@@ -34,6 +34,7 @@ export type KosherType =
   | 'rav_landa'
   | 'rav_machpud'
   | 'chatam_sofer'
+  | 'tzohar'
   | 'other';
 
 /** A city used for filtering. */

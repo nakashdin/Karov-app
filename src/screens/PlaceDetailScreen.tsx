@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {
   Linking,
+  Modal,
   Pressable,
   ScrollView,
   Share,
@@ -26,7 +27,7 @@ import { useFavorites } from '../context/FavoritesContext';
 import { distanceKm, formatDistance } from '../utils/geo';
 import { categoryLabel, kosherTypeLabel } from '../utils/kosher';
 import { displayPlaceName, placeTypeLabel } from '../utils/placeType';
-import { callPhone, openWaze } from '../utils/navigation';
+import { callPhone, openGoogleMaps, openWaze } from '../utils/navigation';
 import { fullHoursHebrew, isCurrentlyOpen } from '../utils/openingHours';
 import { RootStackParamList } from '../navigation/types';
 
@@ -79,6 +80,7 @@ export function PlaceDetailScreen() {
   const fav = isFavorite(params.id);
   const [tab, setTab]               = useState<'info' | 'map'>('info');
   const [suggestOpen, setSuggestOpen] = useState(false);
+  const [navPickerOpen, setNavPickerOpen] = useState(false);
 
   useEffect(() => {
     navigation.setOptions({
@@ -161,7 +163,7 @@ export function PlaceDetailScreen() {
           </Pressable>
           {/* Actions visible in map mode too */}
           <View style={[styles.quickActions, { marginHorizontal: spacing.lg, marginTop: 0 }]}>
-            <QuickAction icon="navigate" label={t.detail.navigate} color={accent} filled onPress={() => openWaze(place.location, place.name)} />
+            <QuickAction icon="navigate" label={t.detail.navigate} color={accent} filled onPress={() => setNavPickerOpen(true)} />
             {place.phone && <QuickAction icon="call-outline" label={t.detail.call} color={accent} onPress={() => callPhone(place.phone!)} />}
             {place.website && <QuickAction icon="globe-outline" label="אתר" color={accent} onPress={() => Linking.openURL(place.website!)} />}
             <QuickAction icon="share-outline" label="שתף" color={accent} onPress={handleShare} />
@@ -222,7 +224,7 @@ export function PlaceDetailScreen() {
 
         {/* ── 4 Quick action buttons ──────────────────────────── */}
         <View style={styles.quickActions}>
-          <QuickAction icon="navigate" label={t.detail.navigate} color={accent} filled onPress={() => openWaze(place.location, place.name)} />
+          <QuickAction icon="navigate" label={t.detail.navigate} color={accent} filled onPress={() => setNavPickerOpen(true)} />
           {place.phone
             ? <QuickAction icon="call-outline" label={t.detail.call} color={accent} onPress={() => callPhone(place.phone!)} />
             : <QuickAction icon="call-outline" label={t.detail.call} color={accent} disabled />}
@@ -287,7 +289,7 @@ export function PlaceDetailScreen() {
                 value={place.address || '—'}
                 accent={accent}
                 tappable={!!place.address}
-                onPress={place.address ? () => openWaze(place.location, place.name) : undefined}
+                onPress={place.address ? () => setNavPickerOpen(true) : undefined}
                 empty={!place.address}
               />
               <DetailRow
@@ -329,7 +331,7 @@ export function PlaceDetailScreen() {
             /* ── שאר הקטגוריות ── */
             <>
               {place.address ? (
-                <DetailRow icon="location-outline" label="כתובת" value={place.address} accent={accent} tappable onPress={() => openWaze(place.location, place.name)} />
+                <DetailRow icon="location-outline" label="כתובת" value={place.address} accent={accent} tappable onPress={() => setNavPickerOpen(true)} />
               ) : null}
               {place.phone ? (
                 <DetailRow icon="call-outline" label="טלפון" value={place.phone} accent={accent} tappable onPress={() => callPhone(place.phone!)} link />
@@ -452,6 +454,13 @@ export function PlaceDetailScreen() {
       </ScrollView>
       )}
 
+      <NavPickerModal
+        visible={navPickerOpen}
+        onClose={() => setNavPickerOpen(false)}
+        onWaze={() => { setNavPickerOpen(false); openWaze(place.location, place.name); }}
+        onGoogleMaps={() => { setNavPickerOpen(false); openGoogleMaps(place.location, place.name); }}
+      />
+
       <SuggestEditModal
         visible={suggestOpen}
         placeId={place.id}
@@ -459,6 +468,60 @@ export function PlaceDetailScreen() {
         onClose={() => setSuggestOpen(false)}
       />
     </Screen>
+  );
+}
+
+// ─── Navigation picker modal ─────────────────────────────────────────────────
+
+function NavPickerModal({
+  visible, onClose, onWaze, onGoogleMaps,
+}: {
+  visible: boolean;
+  onClose: () => void;
+  onWaze: () => void;
+  onGoogleMaps: () => void;
+}) {
+  return (
+    <Modal
+      visible={visible}
+      transparent
+      animationType="fade"
+      onRequestClose={onClose}
+      statusBarTranslucent
+    >
+      <Pressable style={npStyles.overlay} onPress={onClose}>
+        <Pressable style={npStyles.sheet} onPress={(e) => e.stopPropagation()}>
+          <View style={npStyles.handle} />
+          <Text style={npStyles.title}>פתח ניווט ב…</Text>
+
+          <Pressable style={npStyles.option} onPress={onWaze}>
+            <View style={[npStyles.appIcon, { backgroundColor: '#33CCFF' }]}>
+              <Ionicons name="navigate" size={22} color="#fff" />
+            </View>
+            <View style={npStyles.optionText}>
+              <Text style={npStyles.optionName}>Waze</Text>
+              <Text style={npStyles.optionSub}>ניווט חי עם תנועה בזמן אמת</Text>
+            </View>
+            <Ionicons name="chevron-back" size={18} color={colors.textMuted} />
+          </Pressable>
+
+          <Pressable style={[npStyles.option, npStyles.optionLast]} onPress={onGoogleMaps}>
+            <View style={[npStyles.appIcon, { backgroundColor: '#4285F4' }]}>
+              <Ionicons name="map" size={22} color="#fff" />
+            </View>
+            <View style={npStyles.optionText}>
+              <Text style={npStyles.optionName}>Google Maps</Text>
+              <Text style={npStyles.optionSub}>מפות גוגל עם ניווט מפורט</Text>
+            </View>
+            <Ionicons name="chevron-back" size={18} color={colors.textMuted} />
+          </Pressable>
+
+          <Pressable style={npStyles.cancelBtn} onPress={onClose}>
+            <Text style={npStyles.cancelText}>ביטול</Text>
+          </Pressable>
+        </Pressable>
+      </Pressable>
+    </Modal>
   );
 }
 
@@ -832,4 +895,80 @@ const drStyles = StyleSheet.create({
   label: { fontSize: 11, color: colors.textMuted, marginBottom: 2, textAlign: 'right' },
   value: { fontSize: 15, fontWeight: '600', color: colors.text, textAlign: 'right' },
   valuePlaceholder: { color: colors.textMuted, fontWeight: '400' },
+});
+
+// Nav picker modal styles
+const npStyles = StyleSheet.create({
+  overlay: {
+    flex: 1,
+    backgroundColor: 'rgba(0,0,0,0.45)',
+    justifyContent: 'flex-end',
+  },
+  sheet: {
+    backgroundColor: colors.surface,
+    borderTopLeftRadius: radius.xl,
+    borderTopRightRadius: radius.xl,
+    paddingBottom: 36,
+    paddingTop: 10,
+    paddingHorizontal: spacing.lg,
+    ...shadow.card,
+  },
+  handle: {
+    width: 40,
+    height: 4,
+    borderRadius: 2,
+    backgroundColor: colors.border,
+    alignSelf: 'center',
+    marginBottom: 18,
+  },
+  title: {
+    fontSize: 17,
+    fontWeight: '800',
+    color: colors.text,
+    textAlign: 'center',
+    marginBottom: 20,
+    letterSpacing: -0.3,
+  },
+  option: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 14,
+    paddingVertical: 14,
+    borderBottomWidth: 0.5,
+    borderBottomColor: colors.border,
+  },
+  optionLast: { borderBottomWidth: 0 },
+  appIcon: {
+    width: 46,
+    height: 46,
+    borderRadius: radius.md,
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexShrink: 0,
+  },
+  optionText: { flex: 1, alignItems: 'flex-end' },
+  optionName: {
+    fontSize: 16,
+    fontWeight: '700',
+    color: colors.text,
+    textAlign: 'right',
+  },
+  optionSub: {
+    fontSize: 12,
+    color: colors.textMuted,
+    textAlign: 'right',
+    marginTop: 2,
+  },
+  cancelBtn: {
+    marginTop: 16,
+    paddingVertical: 14,
+    borderRadius: radius.pill,
+    backgroundColor: colors.border,
+    alignItems: 'center',
+  },
+  cancelText: {
+    fontSize: 16,
+    fontWeight: '700',
+    color: colors.text,
+  },
 });

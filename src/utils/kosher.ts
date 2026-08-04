@@ -24,6 +24,7 @@ export const kosherTypeLabel: Record<KosherType, string> = {
   rav_landa: 'הרב לנדא',
   rav_machpud: 'הרב מחפוד',
   chatam_sofer: 'חוג חתם סופר',
+  tzohar: 'צהר',
   kosher: 'כשר',
   rabanut: 'רבנות',
   rabanut_beit_shean: 'רבנות בית שאן',
@@ -56,6 +57,7 @@ export const KASHRUYOT_FILTER_TYPES: KosherType[] = [
   'rabanut_mekomi',
   'rabanut_afula',
   'rabanut_tel_aviv',
+  'tzohar',
 ];
 
 /** All kosher-type keys in display order. */

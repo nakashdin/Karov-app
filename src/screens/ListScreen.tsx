@@ -7,7 +7,6 @@ import {
   Text,
   TextInput,
   View,
-  ActivityIndicator,
 } from 'react-native';
 import Slider from '@react-native-community/slider';
 import { Ionicons } from '@expo/vector-icons';
@@ -37,19 +36,13 @@ const FAV_SYN_KEY = '@karov/favoriteSynagogue';
 type Nav = NativeStackNavigationProp<RootStackParamList>;
 type ListRoute = RouteProp<RootStackParamList, 'List'>;
 
-type LocationMode = 'current' | 'other';
-
-async function geocodeAddress(query: string): Promise<GeoPoint | null> {
-  try {
-    const url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(query)}&format=json&limit=1&countrycodes=il`;
-    const res = await fetch(url, { headers: { 'User-Agent': 'KarovApp/1.0' } });
-    const data = await res.json();
-    if (data[0]) {
-      return { latitude: parseFloat(data[0].lat), longitude: parseFloat(data[0].lon) };
-    }
-  } catch {}
-  return null;
-}
+const EAT_SUB_TABS: Array<{ emoji: string; label: string; placeType: PlaceType; subType: PlaceSubType | null }> = [
+  { emoji: '🍽️', label: 'מסעדות',    placeType: 'restaurant',   subType: null },
+  { emoji: '🍔', label: 'מזון מהיר',  placeType: 'restaurant',   subType: 'fast_food' },
+  { emoji: '👨‍🍳', label: 'מסעדות שף', placeType: 'restaurant',  subType: 'chef_restaurant' },
+  { emoji: '☕', label: 'בתי קפה',    placeType: 'cafe',         subType: null },
+  { emoji: '🛒', label: 'עגלות קפה',  placeType: 'coffee_cart',  subType: null },
+];
 
 export function ListScreen() {
   const { t } = useLanguage();
@@ -57,33 +50,21 @@ export function ListScreen() {
   const route = useRoute<ListRoute>();
   const { filters, setFilter } = useFilters();
 
-  const CATEGORY_TABS: Array<{ key: PlaceType | null; label: string; icon: string }> = [
+  const CATEGORY_TABS: Array<{ key: PlaceType | null; label: string; icon: string; isEat?: boolean }> = [
     { key: null,           label: t.listCategories.all,          icon: 'apps-outline' },
-    { key: 'restaurant',   label: t.listCategories.restaurant,   icon: 'restaurant-outline' },
+    { key: 'restaurant',   label: 'לאכול',                       icon: 'restaurant-outline', isEat: true },
     { key: 'synagogue',    label: t.listCategories.synagogue,    icon: 'business-outline' },
     { key: 'mikveh',       label: t.listCategories.mikveh,       icon: 'water-outline' },
     { key: 'chabad_house', label: t.listCategories.chabad_house, icon: 'home-outline' },
     { key: 'tzaddik_grave',label: t.listCategories.tzaddik_grave,icon: 'flower-outline' },
   ];
 
-  const CUISINE_TABS: Array<{ key: string; label: string; emoji: string }> = [
-    { key: 'coffee_shop', label: t.cuisine.coffee_shop, emoji: '☕' },
-    { key: 'burger',      label: t.cuisine.burger,      emoji: '🍔' },
-    { key: 'pizza',       label: t.cuisine.pizza,       emoji: '🍕' },
-    { key: 'street_food', label: t.cuisine.street_food, emoji: '🥙' },
-    { key: 'sushi',       label: t.cuisine.sushi,       emoji: '🍣' },
-    { key: 'meat',        label: t.cuisine.meat,        emoji: '🥩' },
-  ];
-  const { places, loading, error, reload } = usePlaces(filters);
+  const isEatMode = ['restaurant', 'cafe', 'coffee_cart'].includes(filters.placeType ?? '');
   const isFoodType = ['restaurant', 'fast_food', 'cafe', 'coffee_cart', 'juice_bar', 'ice_cream_parlor', 'bakery'].includes(filters.placeType ?? '');
 
-  const SUBTYPE_TABS: Array<{ key: PlaceSubType | null; label: string; emoji: string }> = [
-    { key: null,               label: 'הכל',        emoji: '🍽️' },
-    { key: 'fast_food',        label: 'מזון מהיר',   emoji: '🍔' },
-    { key: 'chef_restaurant',  label: 'מסעדות שף',  emoji: '👨‍🍳' },
-  ];
-  // Base places filtered by placeType only — used for kosherType chips + autocomplete
+  const { places, loading, error, reload } = usePlaces(filters);
   const { places: basePlaces } = usePlaces(filters.placeType ? { placeType: filters.placeType } : {});
+
   const availableKosherTypes = useMemo<KosherType[]>(() => {
     if (!isFoodType) return [];
     const seen = new Set<KosherType>();
@@ -94,8 +75,10 @@ export function ListScreen() {
       (kosherTypeLabel[a] ?? a).localeCompare(kosherTypeLabel[b] ?? b, 'he')
     );
   }, [basePlaces, isFoodType]);
+
   const { location: ctxLocation, status: locationStatus, request: requestLocation } = useSharedLocation();
-  const ctxOrCachedLocation = ctxLocation ?? getCachedLocation();
+  const location = ctxLocation ?? getCachedLocation();
+  const sortByDistance = !!location;
 
   const [sheetOpen, setSheetOpen] = useState(false);
   const [birkatOpen, setBirkatOpen] = useState(false);
@@ -105,18 +88,6 @@ export function ListScreen() {
   const [radiusKm, setRadiusKm] = useState<number>(5);
   const [radiusOpen, setRadiusOpen] = useState(false);
 
-  // Location mode: use current GPS or a custom geocoded address
-  const [locationMode, setLocationMode] = useState<LocationMode>('current');
-  const [customAddress, setCustomAddress] = useState('');
-  const [customLocation, setCustomLocation] = useState<GeoPoint | null>(null);
-  const [geocoding, setGeocoding] = useState(false);
-  const [geocodeError, setGeocodeError] = useState('');
-  const addressInputRef = useRef<TextInput>(null); // reused as searchRef when in 'other' mode
-
-  const location = locationMode === 'current' ? ctxOrCachedLocation : customLocation;
-  const sortByDistance = !!location;
-
-  // Local search input — debounced
   const [inputText, setInputText] = useState(filters.query ?? '');
   const [showSuggestions, setShowSuggestions] = useState(false);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -143,7 +114,6 @@ export function ListScreen() {
 
   const selectSynagogue = route.params?.selectSynagogue ?? false;
 
-  // In selection mode: auto-filter to synagogues
   useEffect(() => {
     if (selectSynagogue && filters.placeType !== 'synagogue') {
       setFilter('placeType', 'synagogue');
@@ -180,38 +150,13 @@ export function ListScreen() {
     try { await reload(); } finally { setIsRefreshing(false); }
   }, [reload]);
 
-  const handleGeocode = async () => {
-    const q = customAddress.trim();
-    if (!q) return;
-    setGeocoding(true);
-    setGeocodeError('');
-    const loc = await geocodeAddress(q);
-    setGeocoding(false);
-    if (loc) {
-      setCustomLocation(loc);
-    } else {
-      setGeocodeError('לא מצאנו את המיקום, נסה שם עיר או כתובת אחרת');
-    }
-  };
-
-  const switchToOtherMode = () => {
-    setLocationMode('other');
-    setCustomLocation(null);
-    setCustomAddress('');
-    setGeocodeError('');
-    setTimeout(() => addressInputRef.current?.focus(), 150);
-  };
-
-  const switchToCurrentMode = () => {
-    setLocationMode('current');
-    setCustomLocation(null);
-    setCustomAddress('');
-    setGeocodeError('');
+  const handleEatSubTab = (placeType: PlaceType, subType: PlaceSubType | null) => {
+    setFilter('placeType', placeType);
+    setFilter('subType', subType);
+    setFilter('cuisineTag', null);
   };
 
   const activeCount = countActiveFilters(filters);
-
-  const RADIUS_OPTIONS = [1, 3, 5, 10, 25, 50, 100];
 
   const sorted = useMemo(() => {
     let list = [...places];
@@ -225,23 +170,19 @@ export function ListScreen() {
   }, [places, sortByDistance, location, radiusKm]);
 
   const screenTitle =
-    filters.placeType === 'restaurant' && filters.subType === 'fast_food'       ? 'מזון מהיר'
-    : filters.placeType === 'restaurant' && filters.subType === 'chef_restaurant'? 'מסעדות שף'
-    : filters.placeType === 'restaurant'   ? t.listCategories.restaurant
-    : filters.placeType === 'fast_food'    ? 'מזון מהיר'
-    : filters.placeType === 'cafe'         ? 'בתי קפה'
-    : filters.placeType === 'coffee_cart'  ? 'עגלות קפה'
-    : filters.placeType === 'synagogue'    ? t.listCategories.synagogue
-    : filters.placeType === 'mikveh'       ? t.listCategories.mikveh
-    : filters.placeType === 'chabad_house'   ? t.listCategories.chabad_house
-    : filters.placeType === 'tzaddik_grave'  ? t.listCategories.tzaddik_grave
+    filters.placeType === 'restaurant' && filters.subType === 'fast_food'        ? 'מזון מהיר'
+    : filters.placeType === 'restaurant' && filters.subType === 'chef_restaurant' ? 'מסעדות שף'
+    : filters.placeType === 'restaurant'    ? t.listCategories.restaurant
+    : filters.placeType === 'fast_food'     ? 'מזון מהיר'
+    : filters.placeType === 'cafe'          ? 'בתי קפה'
+    : filters.placeType === 'coffee_cart'   ? 'עגלות קפה'
+    : filters.placeType === 'synagogue'     ? t.listCategories.synagogue
+    : filters.placeType === 'mikveh'        ? t.listCategories.mikveh
+    : filters.placeType === 'chabad_house'  ? t.listCategories.chabad_house
+    : filters.placeType === 'tzaddik_grave' ? t.listCategories.tzaddik_grave
     : null;
 
-  // Show results always in 'current' mode; in 'other' mode only after geocoding
-  const showResults = locationMode === 'current' || customLocation !== null;
-
-  // Show banner when in current mode but GPS not yet available
-  const needsLocation = locationMode === 'current' && !location;
+  const needsLocation = !location;
 
   return (
     <Screen padded>
@@ -281,7 +222,7 @@ export function ListScreen() {
               )}
             </>
           ) : (
-            <Text style={styles.title}>מה יש סביבי?</Text>
+            <Text style={styles.title}>חיפוש</Text>
           )}
         </View>
         <Pressable
@@ -296,162 +237,81 @@ export function ListScreen() {
         </Pressable>
       </View>
 
-      {/* Location mode row */}
-      <View style={styles.locationModeRow}>
-        {/* "סביבי" pill */}
-        <Pressable
-          style={[styles.modePill, locationMode === 'current' && styles.modePillActive]}
-          onPress={switchToCurrentMode}
-        >
-          <Ionicons name="navigate" size={13} color={locationMode === 'current' ? '#fff' : colors.textMuted} />
-          <Text style={[styles.modePillText, locationMode === 'current' && styles.modePillTextActive]}>
-            סביבי
-          </Text>
-        </Pressable>
-
-        {/* "סביב מיקום אחר" — collapses into inline input when active */}
-        {locationMode === 'other' ? (
-          <View style={styles.geocodeRow}>
-            <Pressable
-              style={[styles.geocodeSubmitBtn, geocoding && { opacity: 0.6 }]}
-              onPress={handleGeocode}
-              disabled={geocoding}
-            >
-              {geocoding
-                ? <ActivityIndicator size="small" color="#fff" />
-                : <Ionicons name="arrow-back" size={15} color="#fff" />}
+      {/* Search pill */}
+      <View>
+        <View style={styles.searchPill}>
+          <Ionicons name="search" size={18} color={colors.textMuted} />
+          <TextInput
+            style={styles.searchInput}
+            placeholder="חיפוש לפי שם, רחוב או עיר..."
+            placeholderTextColor={colors.textMuted}
+            ref={searchRef}
+            value={inputText}
+            onChangeText={(v) => { setInputText(v); setShowSuggestions(true); }}
+            onFocus={() => setShowSuggestions(true)}
+            onBlur={() => setTimeout(() => setShowSuggestions(false), 150)}
+            textAlign="right"
+            returnKeyType="search"
+          />
+          {inputText.length > 0 && (
+            <Pressable onPress={() => { setInputText(''); setFilter('query', ''); setShowSuggestions(false); }} hitSlop={8}>
+              <Ionicons name="close-circle" size={18} color={colors.textMuted} />
             </Pressable>
-            <TextInput
-              ref={addressInputRef}
-              style={styles.geocodeInput}
-              placeholder="עיר או כתובת..."
-              placeholderTextColor={colors.textMuted}
-              value={customAddress}
-              onChangeText={(v) => { setCustomAddress(v); setGeocodeError(''); setCustomLocation(null); }}
-              textAlign="right"
-              returnKeyType="search"
-              onSubmitEditing={handleGeocode}
+          )}
+          <View style={styles.pillDivider} />
+          <Pressable style={styles.filterTrigger} onPress={() => setSheetOpen(true)} hitSlop={8}>
+            <Ionicons
+              name="menu"
+              size={22}
+              color={activeCount > 0 ? colors.primary : colors.textMuted}
             />
-            {customLocation
-              ? <Ionicons name="checkmark-circle" size={16} color={colors.primary} />
-              : null}
-            <Pressable onPress={switchToCurrentMode} hitSlop={6}>
-              <Ionicons name="close" size={16} color={colors.textMuted} />
-            </Pressable>
-          </View>
-        ) : (
-          <Pressable
-            style={styles.modePill}
-            onPress={switchToOtherMode}
-          >
-            <Ionicons name="search" size={13} color={colors.textMuted} />
-            <Text style={styles.modePillText}>סביב מיקום אחר</Text>
+            {activeCount > 0 && <View style={styles.filterDot} />}
           </Pressable>
+        </View>
+        {showSuggestions && suggestions.length > 0 && (
+          <View style={styles.suggestionBox}>
+            {suggestions.map((s) => (
+              <Pressable
+                key={s}
+                style={styles.suggestionItem}
+                onPress={() => {
+                  setInputText(s);
+                  setFilter('query', s);
+                  setShowSuggestions(false);
+                }}
+              >
+                <Ionicons name="search-outline" size={13} color={colors.textMuted} />
+                <Text style={styles.suggestionText} numberOfLines={1}>{s}</Text>
+              </Pressable>
+            ))}
+          </View>
         )}
       </View>
-      {geocodeError ? <Text style={styles.geocodeError}>{geocodeError}</Text> : null}
 
-      {/* Search pill — hidden in "other" mode until a location is geocoded */}
-      {(locationMode === 'current' || customLocation !== null) && (
-        <View>
-          <View style={styles.searchPill}>
-            <Ionicons name="search" size={18} color={colors.textMuted} />
-            <TextInput
-              style={styles.searchInput}
-              placeholder="חיפוש לפי שם, רחוב או עיר..."
-              placeholderTextColor={colors.textMuted}
-              ref={searchRef}
-              value={inputText}
-              onChangeText={(v) => { setInputText(v); setShowSuggestions(true); }}
-              onFocus={() => setShowSuggestions(true)}
-              onBlur={() => setTimeout(() => setShowSuggestions(false), 150)}
-              textAlign="right"
-              returnKeyType="search"
-            />
-            {inputText.length > 0 && (
-              <Pressable onPress={() => { setInputText(''); setFilter('query', ''); setShowSuggestions(false); }} hitSlop={8}>
-                <Ionicons name="close-circle" size={18} color={colors.textMuted} />
+      {/* Category tabs or EAT sub-tabs */}
+      {isEatMode ? (
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          style={styles.tabsScroll}
+          contentContainerStyle={styles.tabsContent}
+        >
+          {EAT_SUB_TABS.map((tab) => {
+            const active =
+              tab.placeType === filters.placeType &&
+              tab.subType === (filters.subType ?? null);
+            return (
+              <Pressable
+                key={`${tab.placeType}-${tab.subType ?? 'all'}`}
+                style={[styles.tab, active && styles.tabActive]}
+                onPress={() => handleEatSubTab(tab.placeType, tab.subType)}
+              >
+                <Text style={styles.tabEmoji}>{tab.emoji}</Text>
+                <Text style={[styles.tabText, active && styles.tabTextActive]}>{tab.label}</Text>
               </Pressable>
-            )}
-            <View style={styles.pillDivider} />
-            <Pressable style={styles.filterTrigger} onPress={() => setSheetOpen(true)} hitSlop={8}>
-              <Ionicons
-                name="options-outline"
-                size={20}
-                color={activeCount > 0 ? colors.primary : colors.textMuted}
-              />
-              {activeCount > 0 && <View style={styles.filterDot} />}
-            </Pressable>
-          </View>
-          {showSuggestions && suggestions.length > 0 && (
-            <View style={styles.suggestionBox}>
-              {suggestions.map((s) => (
-                <Pressable
-                  key={s}
-                  style={styles.suggestionItem}
-                  onPress={() => {
-                    setInputText(s);
-                    setFilter('query', s);
-                    setShowSuggestions(false);
-                  }}
-                >
-                  <Ionicons name="search-outline" size={13} color={colors.textMuted} />
-                  <Text style={styles.suggestionText} numberOfLines={1}>{s}</Text>
-                </Pressable>
-              ))}
-            </View>
-          )}
-        </View>
-      )}
-
-      {/* Category tabs — cuisine sub-tabs for restaurants, category tabs only when no type selected */}
-      {filters.placeType === 'restaurant' ? (
-        <>
-          {/* Sub-type filter row */}
-          <ScrollView
-            horizontal
-            showsHorizontalScrollIndicator={false}
-            style={styles.tabsScroll}
-            contentContainerStyle={styles.tabsContent}
-          >
-            {SUBTYPE_TABS.map((tab) => {
-              const active = filters.subType === tab.key;
-              return (
-                <Pressable
-                  key={String(tab.key)}
-                  style={[styles.tab, active && styles.tabActive]}
-                  onPress={() => setFilter('subType', active && tab.key !== null ? null : tab.key)}
-                >
-                  <Text style={styles.tabEmoji}>{tab.emoji}</Text>
-                  <Text style={[styles.tabText, active && styles.tabTextActive]}>{tab.label}</Text>
-                </Pressable>
-              );
-            })}
-          </ScrollView>
-          {/* Cuisine filter row */}
-          <ScrollView
-            horizontal
-            showsHorizontalScrollIndicator={false}
-            style={styles.tabsScroll}
-            contentContainerStyle={styles.tabsContent}
-          >
-            {CUISINE_TABS.map((tab) => {
-              const active = filters.cuisineTag === tab.key;
-              return (
-                <Pressable
-                  key={tab.key}
-                  style={[styles.tab, active && styles.tabActive]}
-                  onPress={() => setFilter('cuisineTag', active ? null : tab.key)}
-                >
-                  <Text style={styles.tabEmoji}>{tab.emoji}</Text>
-                  <Text style={[styles.tabText, active && styles.tabTextActive]}>
-                    {tab.label}
-                  </Text>
-                </Pressable>
-              );
-            })}
-          </ScrollView>
-        </>
+            );
+          })}
+        </ScrollView>
       ) : filters.placeType === null ? (
         <ScrollView
           horizontal
@@ -460,13 +320,18 @@ export function ListScreen() {
           contentContainerStyle={styles.tabsContent}
         >
           {CATEGORY_TABS.map((tab) => {
-            const active = filters.placeType === tab.key;
+            const active = tab.isEat ? isEatMode : filters.placeType === tab.key;
             return (
               <Pressable
                 key={String(tab.key)}
                 style={[styles.tab, active && styles.tabActive]}
                 onPress={() => {
-                  setFilter('placeType', tab.key);
+                  if (tab.isEat) {
+                    setFilter('placeType', 'restaurant');
+                    setFilter('subType', null);
+                  } else {
+                    setFilter('placeType', tab.key);
+                  }
                   setFilter('cuisineTag', null);
                 }}
               >
@@ -484,35 +349,7 @@ export function ListScreen() {
         </ScrollView>
       ) : null}
 
-      {/* Kashrut type chips — only for food categories, dynamic from data */}
-      {isFoodType && availableKosherTypes.length > 0 && (
-        <ScrollView
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          style={styles.tabsScroll}
-          contentContainerStyle={styles.tabsContent}
-        >
-          <Pressable
-            style={[styles.tab, filters.kosherType === null && styles.tabActive]}
-            onPress={() => setFilter('kosherType', null)}
-          >
-            <Text style={[styles.tabText, filters.kosherType === null && styles.tabTextActive]}>הכל</Text>
-          </Pressable>
-          {availableKosherTypes.map((kt) => (
-            <Pressable
-              key={kt}
-              style={[styles.tab, filters.kosherType === kt && styles.tabActive]}
-              onPress={() => setFilter('kosherType', filters.kosherType === kt ? null : kt)}
-            >
-              <Text style={[styles.tabText, filters.kosherType === kt && styles.tabTextActive]}>
-                {kosherTypeLabel[kt] ?? kt}
-              </Text>
-            </Pressable>
-          ))}
-        </ScrollView>
-      )}
-
-      {/* Location prompt — when no GPS location yet */}
+      {/* Location prompt */}
       {needsLocation && (
         <Pressable style={styles.locationBanner} onPress={requestLocation}>
           <Ionicons name="location-outline" size={16} color="#92400e" />
@@ -525,57 +362,48 @@ export function ListScreen() {
         </Pressable>
       )}
 
-      {!showResults ? (
-        needsLocation ? null : (
-          <EmptyState
-            title="חפש מיקום"
-            hint="הקלד עיר, רחוב או שם מקום ולחץ על החץ"
-            icon="search-outline"
-          />
-        )
-      ) : (
-        <>
-          {/* Radius toggle + slider */}
-          {sortByDistance && (
-            <View style={styles.radiusBlock}>
-              <Pressable style={styles.radiusTrigger} onPress={() => setRadiusOpen(o => !o)}>
-                <Ionicons name="navigate-circle-outline" size={15} color={colors.primary} />
-                <Text style={styles.radiusTriggerText}>טווח חיפוש · {radiusKm} ק״מ</Text>
-                <Ionicons name={radiusOpen ? 'chevron-up' : 'chevron-down'} size={14} color={colors.primary} />
-              </Pressable>
-              {radiusOpen && (
-                <View style={styles.sliderBox}>
-                  <Slider
-                    style={styles.slider}
-                    minimumValue={1}
-                    maximumValue={100}
-                    step={1}
-                    value={radiusKm}
-                    onValueChange={(v) => setRadiusKm(Math.round(v))}
-                    minimumTrackTintColor={colors.primary}
-                    maximumTrackTintColor={colors.border}
-                    thumbTintColor={colors.primary}
-                  />
-                  <View style={styles.sliderLabels}>
-                    <Text style={styles.sliderLabel}>100 ק״מ</Text>
-                    <Text style={styles.sliderValue}>{radiusKm} ק״מ</Text>
-                    <Text style={styles.sliderLabel}>1 ק״מ</Text>
-                  </View>
-                </View>
-              )}
+      {/* Radius toggle */}
+      {sortByDistance && (
+        <View style={styles.radiusBlock}>
+          <Pressable style={styles.radiusTrigger} onPress={() => setRadiusOpen(o => !o)}>
+            <Ionicons name="navigate-circle-outline" size={15} color={colors.primary} />
+            <Text style={styles.radiusTriggerText}>טווח חיפוש · {radiusKm} ק״מ</Text>
+            <Ionicons name={radiusOpen ? 'chevron-up' : 'chevron-down'} size={14} color={colors.primary} />
+          </Pressable>
+          {radiusOpen && (
+            <View style={styles.sliderBox}>
+              <Slider
+                style={styles.slider}
+                minimumValue={1}
+                maximumValue={100}
+                step={1}
+                value={radiusKm}
+                onValueChange={(v) => setRadiusKm(Math.round(v))}
+                minimumTrackTintColor={colors.primary}
+                maximumTrackTintColor={colors.border}
+                thumbTintColor={colors.primary}
+              />
+              <View style={styles.sliderLabels}>
+                <Text style={styles.sliderLabel}>100 ק״מ</Text>
+                <Text style={styles.sliderValue}>{radiusKm} ק״מ</Text>
+                <Text style={styles.sliderLabel}>1 ק״מ</Text>
+              </View>
             </View>
           )}
+        </View>
+      )}
 
-          <View style={styles.metaRow}>
-            <Text style={styles.resultCount}>{t.list.resultsCount(sorted.length)}</Text>
-            <View style={styles.sortToggle}>
-              <Ionicons name={sortByDistance ? 'navigate' : 'text'} size={14} color={colors.primary} />
-              <Text style={styles.sortText}>
-                {sortByDistance ? t.list.sortByDistance : t.list.sortByName}
-              </Text>
-            </View>
-          </View>
-          {loading && !isRefreshing && places.length === 0 ? (
+      <View style={styles.metaRow}>
+        <Text style={styles.resultCount}>{t.list.resultsCount(sorted.length)}</Text>
+        <View style={styles.sortToggle}>
+          <Ionicons name={sortByDistance ? 'navigate' : 'text'} size={14} color={colors.primary} />
+          <Text style={styles.sortText}>
+            {sortByDistance ? t.list.sortByDistance : t.list.sortByName}
+          </Text>
+        </View>
+      </View>
+
+      {loading && !isRefreshing && places.length === 0 ? (
         <Loading />
       ) : error ? (
         <EmptyState title={t.common.error} hint={t.common.retry} icon="alert-circle-outline" />
@@ -620,11 +448,14 @@ export function ListScreen() {
             />
           )}
         />
-          )}
-        </>
       )}
 
-      <FilterSheet visible={sheetOpen} onClose={() => setSheetOpen(false)} />
+      <FilterSheet
+        visible={sheetOpen}
+        onClose={() => setSheetOpen(false)}
+        isFoodMode={isFoodType}
+        availableKosherTypes={availableKosherTypes}
+      />
       <BirkatHamazonModal visible={birkatOpen} onClose={() => setBirkatOpen(false)} />
     </Screen>
   );
@@ -743,10 +574,6 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: colors.surface,
   },
-  geocodeInlinBtn: {
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
 
   suggestionBox: {
     backgroundColor: colors.surface,
@@ -774,71 +601,6 @@ const styles = StyleSheet.create({
     textAlign: 'right',
   },
 
-  // Location mode toggle
-  locationModeRow: {
-    flexDirection: 'row',
-    gap: 8,
-    marginBottom: spacing.sm,
-  },
-  modePill: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 5,
-    paddingVertical: 7,
-    paddingHorizontal: 14,
-    borderRadius: radius.pill,
-    backgroundColor: colors.surface,
-    borderWidth: 1,
-    borderColor: colors.border,
-  },
-  modePillActive: {
-    backgroundColor: colors.primary,
-    borderColor: colors.primary,
-  },
-  modePillText: {
-    fontSize: 13,
-    fontWeight: '600',
-    color: colors.textMuted,
-  },
-  modePillTextActive: {
-    color: '#fff',
-  },
-
-  // Inline geocode input (expands inside the mode row)
-  geocodeRow: {
-    flex: 1,
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 6,
-    backgroundColor: colors.surface,
-    borderRadius: radius.pill,
-    borderWidth: 1,
-    borderColor: colors.primary,
-    paddingVertical: 6,
-    paddingHorizontal: 10,
-  },
-  geocodeInput: {
-    flex: 1,
-    fontSize: 13,
-    color: colors.text,
-    paddingVertical: 0,
-  },
-  geocodeSubmitBtn: {
-    width: 24,
-    height: 24,
-    borderRadius: 12,
-    backgroundColor: colors.primary,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  geocodeError: {
-    fontSize: 12,
-    color: colors.danger,
-    textAlign: 'right',
-    marginBottom: spacing.sm,
-  },
-
-  // Category tabs
   tabsScroll: {
     marginBottom: spacing.sm,
     flexGrow: 0,
@@ -877,7 +639,6 @@ const styles = StyleSheet.create({
     fontSize: 13,
   },
 
-  // Location banner
   locationBanner: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -973,5 +734,4 @@ const styles = StyleSheet.create({
     fontWeight: '800',
     color: colors.primary,
   },
-
 });
