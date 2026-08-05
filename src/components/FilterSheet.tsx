@@ -223,7 +223,7 @@ export function FilterSheet({
                   keyboardShouldPersistTaps="handled"
                   showsVerticalScrollIndicator
                 >
-                  {(citySearch.trim() ? filteredCities : filteredCities.slice(0, 100)).map(city => (
+                  {filteredCities.map(city => (
                     <Pressable
                       key={city.id}
                       style={[styles.cityRow, draft.cityId === city.id && styles.cityRowActive]}
@@ -241,11 +241,6 @@ export function FilterSheet({
                       </Text>
                     </Pressable>
                   ))}
-                  {!citySearch.trim() && filteredCities.length > 100 && (
-                    <Text style={styles.cityHint}>
-                      הקלד לחיפוש מתוך {filteredCities.length} ערים
-                    </Text>
-                  )}
                 </ScrollView>
               </View>
             )}
