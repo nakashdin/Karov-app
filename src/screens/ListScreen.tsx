@@ -24,9 +24,9 @@ import { useLanguage } from '../context/LanguageContext';
 import { usePlaces } from '../hooks/usePlaces';
 import { useSharedLocation, getCachedLocation } from '../context/LocationContext';
 import { useFilters } from '../context/FiltersContext';
-import { countActiveFilters, GeoPoint, KosherType, PlaceSubType, PlaceType } from '../types';
+import { countActiveFilters, GeoPoint, PlaceSubType, PlaceType } from '../types';
 import { distanceKm } from '../utils/geo';
-import { categoryLabel, groupedKosherTypes, KOSHER_GROUP_LABEL, kosherTypeLabel } from '../utils/kosher';
+import { categoryLabel } from '../utils/kosher';
 import { RootStackParamList } from '../navigation/types';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
@@ -63,15 +63,6 @@ export function ListScreen() {
 
   const { places, loading, error, reload } = usePlaces(filters);
   const { places: basePlaces } = usePlaces(filters.placeType ? { placeType: filters.placeType } : {});
-
-  const availableKosherTypes = useMemo<KosherType[]>(() => {
-    if (!isFoodType) return [];
-    const rawSeen = new Set<KosherType>();
-    for (const p of basePlaces) {
-      if (p.kosherType) rawSeen.add(p.kosherType as KosherType);
-    }
-    return groupedKosherTypes(rawSeen);
-  }, [basePlaces, isFoodType]);
 
   const { location: ctxLocation, status: locationStatus, request: requestLocation } = useSharedLocation();
   const location = ctxLocation ?? getCachedLocation();
@@ -201,7 +192,8 @@ export function ListScreen() {
               setFilter('placeType', null);
               setFilter('subType', null);
               setFilter('cuisineTag', null);
-              setFilter('kosherType', null);
+              setFilter('mehadrinOnly', false);
+              setFilter('kosherAuthorityGroup', null);
               setFilter('eatAll', false);
             }
             navigation.goBack();
@@ -356,7 +348,7 @@ export function ListScreen() {
       ) : null}
 
       {/* Active filter chips */}
-      {(filters.category || filters.kosherType || filters.cityId || filters.cuisineTag || (sortByDistance && filters.distanceKm !== 20 && filters.distanceKm !== null)) && (
+      {(filters.category || filters.mehadrinOnly || filters.kosherAuthorityGroup || filters.cityId || filters.cuisineTag || (sortByDistance && filters.distanceKm !== 20 && filters.distanceKm !== null)) && (
         <ScrollView
           horizontal
           showsHorizontalScrollIndicator={false}
@@ -369,10 +361,16 @@ export function ListScreen() {
               <Ionicons name="close" size={12} color={colors.primary} />
             </Pressable>
           )}
-          {filters.kosherType && (
-            <Pressable style={styles.activeChip} onPress={() => setFilter('kosherType', null)}>
+          {filters.mehadrinOnly && (
+            <Pressable style={styles.activeChip} onPress={() => setFilter('mehadrinOnly', false)}>
+              <Text style={styles.activeChipText}>מהדרין בלבד</Text>
+              <Ionicons name="close" size={12} color={colors.primary} />
+            </Pressable>
+          )}
+          {filters.kosherAuthorityGroup && (
+            <Pressable style={styles.activeChip} onPress={() => setFilter('kosherAuthorityGroup', null)}>
               <Text style={styles.activeChipText}>
-                {KOSHER_GROUP_LABEL[filters.kosherType] ?? kosherTypeLabel[filters.kosherType] ?? filters.kosherType}
+                {{ rabbinate: 'רבנות', badatz: 'בד״ץ', tzohar: 'צהר', unknown: 'לא ידוע' }[filters.kosherAuthorityGroup] ?? filters.kosherAuthorityGroup}
               </Text>
               <Ionicons name="close" size={12} color={colors.primary} />
             </Pressable>
@@ -472,7 +470,6 @@ export function ListScreen() {
         visible={sheetOpen}
         onClose={() => setSheetOpen(false)}
         isFoodMode={isFoodType}
-        availableKosherTypes={availableKosherTypes}
         hasLocation={sortByDistance}
       />
       <BirkatHamazonModal visible={birkatOpen} onClose={() => setBirkatOpen(false)} />

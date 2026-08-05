@@ -12,8 +12,8 @@ import { NativeStackNavigationProp, NativeStackScreenProps } from '@react-naviga
 import { Screen } from '../components/Screen';
 import { colors, radius, shadow, spacing } from '../theme';
 import { useFilters } from '../context/FiltersContext';
-import { emptyFilters, KosherCategory, KosherType } from '../types';
-import { KASHRUYOT_FILTER_TYPES, categoryLabel, kosherTypeLabel } from '../utils/kosher';
+import { emptyFilters, KosherCategory } from '../types';
+import { categoryLabel } from '../utils/kosher';
 import { RootStackParamList } from '../navigation/types';
 
 type Nav = NativeStackNavigationProp<RootStackParamList>;
@@ -27,6 +27,15 @@ const CATEGORIES: Array<{ key: KosherCategory | null; label: string; emoji: stri
   { key: 'parve', label: categoryLabel.parve, emoji: '🥗' },
 ];
 
+const KASHRUYOT_OPTIONS: Array<{ key: string; label: string; emoji: string; mehadrinOnly: boolean; kosherAuthorityGroup: string | null }> = [
+  { key: 'all',       label: 'הכל',     emoji: '🍽️', mehadrinOnly: false, kosherAuthorityGroup: null },
+  { key: 'mehadrin',  label: 'מהדרין',  emoji: '✡️', mehadrinOnly: true,  kosherAuthorityGroup: null },
+  { key: 'rabbinate', label: 'רבנות',   emoji: '🏛️', mehadrinOnly: false, kosherAuthorityGroup: 'rabbinate' },
+  { key: 'badatz',    label: 'בד״ץ',    emoji: '📜', mehadrinOnly: false, kosherAuthorityGroup: 'badatz' },
+  { key: 'tzohar',   label: 'צהר',     emoji: '🌅', mehadrinOnly: false, kosherAuthorityGroup: 'tzohar' },
+  { key: 'unknown',   label: 'לא ידוע', emoji: '❓', mehadrinOnly: false, kosherAuthorityGroup: 'unknown' },
+];
+
 const STEPS = ['קטגוריה', 'כשרות', 'תוצאות'];
 
 export function KashruyotFilterScreen() {
@@ -37,7 +46,7 @@ export function KashruyotFilterScreen() {
 
   const [step, setStep] = useState<0 | 1>(0);
   const [selectedCategory, setSelectedCategory] = useState<KosherCategory | null | '__unset__'>('__unset__');
-  const [selectedKosher, setSelectedKosher] = useState<KosherType | null | '__unset__'>('__unset__');
+  const [selectedKosherKey, setSelectedKosherKey] = useState<string | '__unset__'>('__unset__');
 
   const handleBack = () => {
     if (step === 1) {
@@ -52,17 +61,19 @@ export function KashruyotFilterScreen() {
   };
 
   const handleShowResults = () => {
+    const opt = KASHRUYOT_OPTIONS.find(o => o.key === selectedKosherKey);
     setFilters({
       ...emptyFilters,
       placeType,
       category: selectedCategory === '__unset__' ? null : selectedCategory,
-      kosherType: selectedKosher === '__unset__' ? null : selectedKosher,
+      mehadrinOnly: opt?.mehadrinOnly ?? false,
+      kosherAuthorityGroup: opt?.kosherAuthorityGroup ?? null,
     });
     navigation.navigate('List', undefined);
   };
 
   const categoryReady = selectedCategory !== '__unset__';
-  const kosherReady = selectedKosher !== '__unset__';
+  const kosherReady = selectedKosherKey !== '__unset__';
 
   return (
     <Screen style={styles.screen}>
@@ -183,46 +194,21 @@ export function KashruyotFilterScreen() {
             contentContainerStyle={styles.list}
             showsVerticalScrollIndicator={false}
           >
-            {/* הכל */}
-            <Pressable
-              style={({ pressed }) => [
-                styles.card,
-                styles.cardAll,
-                selectedKosher === null && styles.cardSelected,
-                pressed && styles.pressed,
-              ]}
-              onPress={() => setSelectedKosher(null)}
-            >
-              <Ionicons name="apps-outline" size={20} color={selectedKosher === null ? colors.primary : colors.textMuted} />
-              <Text style={[styles.cardLabel, selectedKosher === null && styles.cardLabelSelected]}>
-                הכל
-              </Text>
-              <View style={[styles.radio, selectedKosher === null && styles.radioSelected]}>
-                {selectedKosher === null && <View style={styles.radioDot} />}
-              </View>
-            </Pressable>
-
-            <View style={styles.sectionGap} />
-
-            {KASHRUYOT_FILTER_TYPES.map((type) => {
-              const selected = selectedKosher === type;
+            {KASHRUYOT_OPTIONS.map((opt) => {
+              const selected = selectedKosherKey === opt.key;
               return (
                 <Pressable
-                  key={type}
+                  key={opt.key}
                   style={({ pressed }) => [
                     styles.card,
                     selected && styles.cardSelected,
                     pressed && styles.pressed,
                   ]}
-                  onPress={() => setSelectedKosher(type)}
+                  onPress={() => setSelectedKosherKey(opt.key)}
                 >
-                  <Ionicons
-                    name="shield-checkmark-outline"
-                    size={18}
-                    color={selected ? colors.primary : colors.textMuted}
-                  />
+                  <Text style={styles.cardEmoji}>{opt.emoji}</Text>
                   <Text style={[styles.cardLabel, selected && styles.cardLabelSelected]}>
-                    {kosherTypeLabel[type]}
+                    {opt.label}
                   </Text>
                   <View style={[styles.radio, selected && styles.radioSelected]}>
                     {selected && <View style={styles.radioDot} />}

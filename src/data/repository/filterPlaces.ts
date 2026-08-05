@@ -1,7 +1,6 @@
 import { Place, PlaceFilters } from '../../types';
 import { CITIES_SEED } from '../seed/cities.seed';
 import { searchPlaces } from '../search/searchEngine';
-import { KOSHER_GROUP_MEMBERS } from '../../utils/kosher';
 
 /** Map of cityId -> city name, for search-by-city. */
 const CITY_NAME_BY_ID: Record<string, string> = Object.fromEntries(
@@ -28,12 +27,14 @@ function matchesExactFilters(place: Place, f: Partial<PlaceFilters>): boolean {
     if (place.subType !== f.subType) return false;
   }
   if (f.cityId && place.cityId !== f.cityId) return false;
-  if (f.kosherType) {
-    const members = KOSHER_GROUP_MEMBERS[f.kosherType];
-    if (members) {
-      if (!members.includes(place.kosherType as any)) return false;
+  if (f.mehadrinOnly) {
+    if (place.kosherLevel !== 'mehadrin') return false;
+  }
+  if (f.kosherAuthorityGroup) {
+    if (f.kosherAuthorityGroup === 'tzohar') {
+      if (place.kosherAuthority !== 'tzohar') return false;
     } else {
-      if (place.kosherType !== f.kosherType) return false;
+      if (place.kosherAuthorityGroup !== f.kosherAuthorityGroup) return false;
     }
   }
   if (f.category && place.category !== f.category) return false;

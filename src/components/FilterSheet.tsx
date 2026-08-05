@@ -13,8 +13,8 @@ import { colors, radius, sizes, spacing } from '../theme';
 import { useLanguage } from '../context/LanguageContext';
 import { useFilters } from '../context/FiltersContext';
 import { useCities } from '../hooks/useCities';
-import { emptyFilters, KosherCategory, KosherType, PlaceFilters } from '../types';
-import { ALL_CATEGORIES, categoryLabel, KOSHER_GROUP_LABEL, kosherTypeLabel } from '../utils/kosher';
+import { emptyFilters, KosherCategory, PlaceFilters } from '../types';
+import { ALL_CATEGORIES, categoryLabel } from '../utils/kosher';
 import { Chip } from './Chip';
 
 const DISTANCE_OPTIONS: Array<{ label: string; value: number | null }> = [
@@ -33,11 +33,17 @@ const CUISINE_OPTIONS: Array<{ key: string; label: string; emoji: string }> = [
   { key: 'meat',   label: 'בשרים',  emoji: '🥩' },
 ];
 
+const AUTHORITY_GROUP_OPTIONS: Array<{ key: string; label: string }> = [
+  { key: 'rabbinate', label: 'רבנות' },
+  { key: 'badatz',    label: 'בד״ץ' },
+  { key: 'tzohar',   label: 'צהר' },
+  { key: 'unknown',  label: 'לא ידוע' },
+];
+
 interface FilterSheetProps {
   visible: boolean;
   onClose: () => void;
   isFoodMode?: boolean;
-  availableKosherTypes?: KosherType[];
   hasLocation?: boolean;
 }
 
@@ -45,7 +51,6 @@ export function FilterSheet({
   visible,
   onClose,
   isFoodMode = false,
-  availableKosherTypes,
   hasLocation = false,
 }: FilterSheetProps) {
   const { t } = useLanguage();
@@ -138,20 +143,32 @@ export function FilterSheet({
             </Section>
           )}
 
-          {/* Kosher type — dynamic */}
-          {isFoodMode && availableKosherTypes && availableKosherTypes.length > 0 && (
-            <Section title="סוג כשרות">
-              <View style={styles.chipsWrap}>
-                {availableKosherTypes.map((k: KosherType) => (
-                  <Chip
-                    key={k}
-                    label={KOSHER_GROUP_LABEL[k] ?? kosherTypeLabel[k] ?? k}
-                    selected={draft.kosherType === k}
-                    onPress={() => toggle('kosherType', k)}
-                  />
-                ))}
-              </View>
-            </Section>
+          {/* Kashrut filters */}
+          {isFoodMode && (
+            <>
+              <Section title="רמת כשרות">
+                <Chip
+                  label="מהדרין בלבד"
+                  selected={draft.mehadrinOnly}
+                  onPress={() => setDraft(prev => ({ ...prev, mehadrinOnly: !prev.mehadrinOnly }))}
+                />
+              </Section>
+              <Section title="גוף כשרות">
+                <View style={styles.chipsWrap}>
+                  {AUTHORITY_GROUP_OPTIONS.map(opt => (
+                    <Chip
+                      key={opt.key}
+                      label={opt.label}
+                      selected={draft.kosherAuthorityGroup === opt.key}
+                      onPress={() => setDraft(prev => ({
+                        ...prev,
+                        kosherAuthorityGroup: prev.kosherAuthorityGroup === opt.key ? null : opt.key,
+                      }))}
+                    />
+                  ))}
+                </View>
+              </Section>
+            </>
           )}
 
           {/* Cuisine */}

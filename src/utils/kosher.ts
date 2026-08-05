@@ -1,5 +1,5 @@
 import { colors } from '../theme';
-import { KosherCategory, KosherType } from '../types';
+import { KosherCategory, KosherType, Place } from '../types';
 
 /** Hebrew label for a food category. */
 export const categoryLabel: Record<KosherCategory, string> = {
@@ -92,6 +92,43 @@ export function groupedKosherTypes(rawTypes: Set<KosherType>): KosherType[] {
     }
   }
   return result;
+}
+
+/** Human-readable kosher label for a place card, using the new structured fields.
+ *  Falls back to kosherTypeLabel if new fields are absent. */
+export function getKosherLabel(place: Pick<Place, 'kosherType' | 'kosherLevel' | 'kosherAuthorityGroup' | 'kosherAuthority'>): string | null {
+  const { kosherLevel, kosherAuthorityGroup, kosherAuthority } = place;
+
+  // Use structured fields when available
+  if (kosherAuthorityGroup || kosherLevel) {
+    if (kosherAuthority) {
+      const byAuthority: Record<string, string> = {
+        rabbinate_tel_aviv:      'רבנות תל אביב',
+        rabbinate_jerusalem:     'רבנות ירושלים מהדרין',
+        badatz_beit_yosef:       'בד״ץ בית יוסף',
+        badatz_edah_hachareidis: 'בד״ץ העדה החרדית',
+        yoreh_deah_mahfoud:      'הרב מחפוד',
+        chatam_sofer:            'חוג חתם סופר',
+        badatz_kehilot:          'קהילות',
+        badatz_rubin:            'הרב רובין',
+        tzohar:                  'צהר',
+      };
+      const label = byAuthority[kosherAuthority];
+      if (label) return label;
+    }
+
+    if (kosherAuthorityGroup === 'rabbinate') {
+      return kosherLevel === 'mehadrin' ? 'רבנות מהדרין' : 'רבנות';
+    }
+    if (kosherAuthorityGroup === 'badatz') return 'בד״ץ';
+    if (kosherAuthorityGroup === 'independent') return kosherLevel === 'mehadrin' ? 'מהדרין' : 'כשר';
+    // unknown group
+    if (kosherLevel === 'mehadrin') return 'מהדרין';
+    return 'גוף כשרות לא ידוע';
+  }
+
+  // Legacy fallback
+  return place.kosherType ? (kosherTypeLabel[place.kosherType] ?? null) : null;
 }
 
 /** Kosher-type keys shown in the restaurant kashruyot filter screen (display order). */

@@ -5,7 +5,7 @@ import { Place } from '../types';
 import { colors, radius, shadow, spacing } from '../theme';
 import { useLanguage } from '../context/LanguageContext';
 import { transliterateHebrew } from '../utils/transliterate';
-import { categoryLabel, kosherTypeLabel } from '../utils/kosher';
+import { categoryLabel, getKosherLabel } from '../utils/kosher';
 import { displayPlaceName, getPlaceEmoji, placeTypeLabel } from '../utils/placeType';
 import { formatDistance } from '../utils/geo';
 import { isCurrentlyOpen, todayHoursStr } from '../utils/openingHours';
@@ -26,13 +26,13 @@ const CHIP_COLOR: Record<Place['type'], string> = {
   tzaddik_grave:   colors.tzaddik,
 };
 
-// Kashrut badge color per level
-const KOSHER_COLOR: Record<string, string> = {
-  mehadrin:       '#166534',
-  mehadrin_plus:  '#14532d',
-  regular:        '#1e40af',
-  chalav_yisrael: '#7c3aed',
-};
+// Kashrut badge color by authority group
+function kosherBadgeColor(place: { kosherLevel?: string | null; kosherAuthorityGroup?: string | null }): string {
+  if (place.kosherAuthorityGroup === 'badatz') return '#166534';
+  if (place.kosherLevel === 'mehadrin') return '#166534';
+  if (place.kosherAuthorityGroup === 'rabbinate') return '#1e40af';
+  return colors.primary;
+}
 
 function StarRow({ rating }: { rating: number | null | undefined }) {
   const filled = rating != null ? Math.round(rating) : 0;
@@ -90,10 +90,8 @@ export function PlaceCard({ place, distanceKm, onPress }: PlaceCardProps) {
   const openStatus  = isCurrentlyOpen(place.openingHours, place.location);
   const todayHours  = todayHoursStr(place.openingHours);
   const showHoursRow = todayHours !== null || openStatus !== null;
-  const kosherLabel = isFoodType && place.kosherType
-    ? kosherTypeLabel[place.kosherType]
-    : null;
-  const kosherColor = place.kosherType ? (KOSHER_COLOR[place.kosherType] ?? colors.primary) : colors.primary;
+  const kosherLabel = isFoodType ? getKosherLabel(place) : null;
+  const kosherColor = kosherBadgeColor(place);
 
   // Second info chip (category / nusach)
   const subChip =

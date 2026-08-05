@@ -4,7 +4,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { Place } from '../../types';
 import { colors, radius, shadow, spacing } from '../../theme';
 import { t } from '../../i18n';
-import { kosherTypeLabel } from '../../utils/kosher';
+import { getKosherLabel } from '../../utils/kosher';
 import { displayPlaceName, placeTypeLabel } from '../../utils/placeType';
 import { openWaze } from '../../utils/navigation';
 import { KosherBadge } from '../KosherBadge';
@@ -16,8 +16,9 @@ interface PlaceBottomCardProps {
 }
 
 function subtitle(place: Place): string {
-  if (place.type === 'restaurant' && place.kosherType) {
-    return kosherTypeLabel[place.kosherType];
+  if (place.type === 'restaurant') {
+    const label = getKosherLabel(place);
+    if (label) return label;
   }
   if (place.type === 'synagogue') {
     return place.nusach ? `נוסח ${place.nusach}` : placeTypeLabel.synagogue;
