@@ -36,9 +36,9 @@ const FAV_SYN_KEY = '@karov/favoriteSynagogue';
 type Nav = NativeStackNavigationProp<RootStackParamList>;
 type ListRoute = RouteProp<RootStackParamList, 'List'>;
 
-const EAT_SUB_TABS: Array<{ emoji: string; label: string; placeType: PlaceType; subType: PlaceSubType | null }> = [
+const EAT_SUB_TABS: Array<{ emoji: string; label: string; placeType: PlaceType | null; subType: PlaceSubType | null; eatAll?: boolean }> = [
+  { emoji: '🍽️', label: 'הכל',        placeType: null,           subType: null,              eatAll: true },
   { emoji: '🍽️', label: 'מסעדות',    placeType: 'restaurant',   subType: null },
-  { emoji: '🍔', label: 'מזון מהיר',  placeType: 'restaurant',   subType: 'fast_food' },
   { emoji: '👨‍🍳', label: 'מסעדות שף', placeType: 'restaurant',  subType: 'chef_restaurant' },
   { emoji: '☕', label: 'בתי קפה',    placeType: 'cafe',         subType: null },
   { emoji: '🛒', label: 'עגלות קפה',  placeType: 'coffee_cart',  subType: null },
@@ -59,8 +59,8 @@ export function ListScreen() {
     { key: 'tzaddik_grave',label: t.listCategories.tzaddik_grave,icon: 'flower-outline' },
   ];
 
-  const isEatMode = ['restaurant', 'cafe', 'coffee_cart'].includes(filters.placeType ?? '');
-  const isFoodType = ['restaurant', 'fast_food', 'cafe', 'coffee_cart', 'juice_bar', 'ice_cream_parlor', 'bakery'].includes(filters.placeType ?? '');
+  const isEatMode = filters.eatAll || ['restaurant', 'cafe', 'coffee_cart'].includes(filters.placeType ?? '');
+  const isFoodType = filters.eatAll || ['restaurant', 'fast_food', 'cafe', 'coffee_cart', 'juice_bar', 'ice_cream_parlor', 'bakery'].includes(filters.placeType ?? '');
 
   const { places, loading, error, reload } = usePlaces(filters);
   const { places: basePlaces } = usePlaces(filters.placeType ? { placeType: filters.placeType } : {});
@@ -150,9 +150,10 @@ export function ListScreen() {
     try { await reload(); } finally { setIsRefreshing(false); }
   }, [reload]);
 
-  const handleEatSubTab = (placeType: PlaceType, subType: PlaceSubType | null) => {
-    setFilter('placeType', placeType);
-    setFilter('subType', subType);
+  const handleEatSubTab = (tab: typeof EAT_SUB_TABS[number]) => {
+    setFilter('eatAll', tab.eatAll ?? false);
+    setFilter('placeType', tab.placeType ?? null);
+    setFilter('subType', tab.subType);
     setFilter('cuisineTag', null);
   };
 
@@ -201,6 +202,7 @@ export function ListScreen() {
               setFilter('subType', null);
               setFilter('cuisineTag', null);
               setFilter('kosherType', null);
+              setFilter('eatAll', false);
             }
             navigation.goBack();
           }}
@@ -297,14 +299,16 @@ export function ListScreen() {
           contentContainerStyle={styles.tabsContent}
         >
           {EAT_SUB_TABS.map((tab) => {
-            const active =
-              tab.placeType === filters.placeType &&
-              tab.subType === (filters.subType ?? null);
+            const active = tab.eatAll
+              ? filters.eatAll
+              : !filters.eatAll &&
+                tab.placeType === filters.placeType &&
+                tab.subType === (filters.subType ?? null);
             return (
               <Pressable
-                key={`${tab.placeType}-${tab.subType ?? 'all'}`}
+                key={`${tab.placeType ?? 'all'}-${tab.subType ?? 'all'}`}
                 style={[styles.tab, active && styles.tabActive]}
-                onPress={() => handleEatSubTab(tab.placeType, tab.subType)}
+                onPress={() => handleEatSubTab(tab)}
               >
                 <Text style={styles.tabEmoji}>{tab.emoji}</Text>
                 <Text style={[styles.tabText, active && styles.tabTextActive]}>{tab.label}</Text>
@@ -320,16 +324,18 @@ export function ListScreen() {
           contentContainerStyle={styles.tabsContent}
         >
           {CATEGORY_TABS.map((tab) => {
-            const active = tab.isEat ? isEatMode : filters.placeType === tab.key;
+            const active = tab.isEat ? isEatMode : (!filters.eatAll && filters.placeType === tab.key);
             return (
               <Pressable
                 key={String(tab.key)}
                 style={[styles.tab, active && styles.tabActive]}
                 onPress={() => {
                   if (tab.isEat) {
-                    setFilter('placeType', 'restaurant');
+                    setFilter('eatAll', true);
+                    setFilter('placeType', null);
                     setFilter('subType', null);
                   } else {
+                    setFilter('eatAll', false);
                     setFilter('placeType', tab.key);
                   }
                   setFilter('cuisineTag', null);

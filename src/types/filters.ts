@@ -13,6 +13,8 @@ export interface PlaceFilters {
   query: string;
   /** Filter restaurants by cuisine tag (e.g. 'burger', 'pizza'). */
   cuisineTag: string | null;
+  /** Show all eat-type places (restaurant + cafe + coffee_cart) together. */
+  eatAll: boolean;
 }
 
 export const emptyFilters: PlaceFilters = {
@@ -23,6 +25,7 @@ export const emptyFilters: PlaceFilters = {
   category: null,
   query: '',
   cuisineTag: null,
+  eatAll: false,
 };
 
 /**
