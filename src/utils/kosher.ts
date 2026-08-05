@@ -40,6 +40,60 @@ export const kosherTypeLabel: Record<KosherType, string> = {
 /** All category keys in display order. */
 export const ALL_CATEGORIES: KosherCategory[] = ['meat', 'dairy', 'parve'];
 
+/**
+ * Groups of raw kosherType values that map to a single filter chip.
+ * Key = the KosherType stored in PlaceFilters.kosherType when the chip is selected.
+ * Value = all raw data values that match that chip.
+ */
+export const KOSHER_GROUP_MEMBERS: Partial<Record<KosherType, KosherType[]>> = {
+  rabanut: ['rabanut', 'rabanut_mekomi', 'rabanut_beit_shean', 'rabanut_afula', 'rabanut_tel_aviv', 'kosher'],
+  rabanut_mehadrin: ['rabanut_mehadrin', 'rabanut_mehadrin_jerusalem'],
+  badatz_edah: ['badatz_edah', 'badatz_beit_yosef', 'badatz_rubin', 'badatz_kehilot'],
+};
+
+/** Display label override for grouped filter chips (replaces kosherTypeLabel for the group key). */
+export const KOSHER_GROUP_LABEL: Partial<Record<KosherType, string>> = {
+  rabanut: 'רבנות',
+  rabanut_mehadrin: 'רבנות מהדרין',
+  badatz_edah: 'בד״ץ',
+};
+
+/** Which group key represents a raw kosherType (reverse lookup). */
+export const RAW_TO_GROUP: Partial<Record<KosherType, KosherType>> = Object.fromEntries(
+  (Object.entries(KOSHER_GROUP_MEMBERS) as [KosherType, KosherType[]][])
+    .flatMap(([group, members]) => members.map(m => [m, group]))
+);
+
+/**
+ * Given the full set of raw kosherTypes present in the data, return the
+ * deduplicated list of filter-chip keys (groups + ungrouped) in display order.
+ */
+export function groupedKosherTypes(rawTypes: Set<KosherType>): KosherType[] {
+  const seen = new Set<KosherType>();
+  const result: KosherType[] = [];
+
+  const ORDER: KosherType[] = [
+    'badatz_edah', 'rabanut_mehadrin', 'rabanut',
+    'rav_landa', 'rav_machpud', 'chatam_sofer', 'tzohar', 'mehadrin', 'other',
+  ];
+
+  for (const key of ORDER) {
+    const members = KOSHER_GROUP_MEMBERS[key];
+    if (members) {
+      if (members.some(m => rawTypes.has(m)) && !seen.has(key)) {
+        seen.add(key);
+        result.push(key);
+      }
+    } else {
+      if (rawTypes.has(key) && !seen.has(key)) {
+        seen.add(key);
+        result.push(key);
+      }
+    }
+  }
+  return result;
+}
+
 /** Kosher-type keys shown in the restaurant kashruyot filter screen (display order). */
 export const KASHRUYOT_FILTER_TYPES: KosherType[] = [
   'badatz_beit_yosef',

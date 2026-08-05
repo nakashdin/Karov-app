@@ -15,6 +15,8 @@ export interface PlaceFilters {
   cuisineTag: string | null;
   /** Show all eat-type places (restaurant + cafe + coffee_cart) together. */
   eatAll: boolean;
+  /** Max distance in km from user location. null = no limit. */
+  distanceKm: number | null;
 }
 
 export const emptyFilters: PlaceFilters = {
@@ -26,6 +28,7 @@ export const emptyFilters: PlaceFilters = {
   query: '',
   cuisineTag: null,
   eatAll: false,
+  distanceKm: 20,
 };
 
 /**
@@ -39,5 +42,6 @@ export function countActiveFilters(f: PlaceFilters): number {
   if (f.kosherType) n++;
   if (f.category) n++;
   if (f.cuisineTag) n++;
+  if (f.distanceKm !== null && f.distanceKm !== 20) n++;
   return n;
 }

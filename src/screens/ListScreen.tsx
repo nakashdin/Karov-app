@@ -8,7 +8,6 @@ import {
   TextInput,
   View,
 } from 'react-native';
-import Slider from '@react-native-community/slider';
 import { Ionicons } from '@expo/vector-icons';
 import { useNavigation, useRoute, RouteProp } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
@@ -27,7 +26,7 @@ import { useSharedLocation, getCachedLocation } from '../context/LocationContext
 import { useFilters } from '../context/FiltersContext';
 import { countActiveFilters, GeoPoint, KosherType, PlaceSubType, PlaceType } from '../types';
 import { distanceKm } from '../utils/geo';
-import { kosherTypeLabel } from '../utils/kosher';
+import { categoryLabel, groupedKosherTypes, KOSHER_GROUP_LABEL, kosherTypeLabel } from '../utils/kosher';
 import { RootStackParamList } from '../navigation/types';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
@@ -67,13 +66,11 @@ export function ListScreen() {
 
   const availableKosherTypes = useMemo<KosherType[]>(() => {
     if (!isFoodType) return [];
-    const seen = new Set<KosherType>();
+    const rawSeen = new Set<KosherType>();
     for (const p of basePlaces) {
-      if (p.kosherType) seen.add(p.kosherType as KosherType);
+      if (p.kosherType) rawSeen.add(p.kosherType as KosherType);
     }
-    return Array.from(seen).sort((a, b) =>
-      (kosherTypeLabel[a] ?? a).localeCompare(kosherTypeLabel[b] ?? b, 'he')
-    );
+    return groupedKosherTypes(rawSeen);
   }, [basePlaces, isFoodType]);
 
   const { location: ctxLocation, status: locationStatus, request: requestLocation } = useSharedLocation();
@@ -86,8 +83,6 @@ export function ListScreen() {
   const [isRefreshing, setIsRefreshing] = useState(false);
   const [viewMode, setViewMode] = useState<'list' | 'map'>('list');
   const [selectedPlace, setSelectedPlace] = useState<import('../types').Place | null>(null);
-  const [radiusKm, setRadiusKm] = useState<number>(5);
-  const [radiusOpen, setRadiusOpen] = useState(false);
 
   const [inputText, setInputText] = useState(filters.query ?? '');
   const [showSuggestions, setShowSuggestions] = useState(false);
@@ -160,16 +155,20 @@ export function ListScreen() {
 
   const activeCount = countActiveFilters(filters);
 
+  const effectiveDistanceKm = filters.distanceKm ?? 20;
+
   const sorted = useMemo(() => {
     let list = [...places];
     if (sortByDistance && location) {
-      list = list.filter(p => distanceKm(location, p.location) <= radiusKm);
+      if (filters.distanceKm !== null) {
+        list = list.filter(p => distanceKm(location, p.location) <= effectiveDistanceKm);
+      }
       list.sort((a, b) => distanceKm(location, a.location) - distanceKm(location, b.location));
     } else {
       list.sort((a, b) => a.name.localeCompare(b.name, 'he'));
     }
     return list;
-  }, [places, sortByDistance, location, radiusKm]);
+  }, [places, sortByDistance, location, filters.distanceKm]);
 
   const screenTitle =
     filters.placeType === 'restaurant' && filters.subType === 'fast_food'        ? 'מזון מהיר'
@@ -356,6 +355,49 @@ export function ListScreen() {
         </ScrollView>
       ) : null}
 
+      {/* Active filter chips */}
+      {(filters.category || filters.kosherType || filters.cityId || filters.cuisineTag || (sortByDistance && filters.distanceKm !== 20 && filters.distanceKm !== null)) && (
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          style={styles.activeFiltersScroll}
+          contentContainerStyle={styles.activeFiltersContent}
+        >
+          {filters.category && (
+            <Pressable style={styles.activeChip} onPress={() => setFilter('category', null)}>
+              <Text style={styles.activeChipText}>{categoryLabel[filters.category]}</Text>
+              <Ionicons name="close" size={12} color={colors.primary} />
+            </Pressable>
+          )}
+          {filters.kosherType && (
+            <Pressable style={styles.activeChip} onPress={() => setFilter('kosherType', null)}>
+              <Text style={styles.activeChipText}>
+                {KOSHER_GROUP_LABEL[filters.kosherType] ?? kosherTypeLabel[filters.kosherType] ?? filters.kosherType}
+              </Text>
+              <Ionicons name="close" size={12} color={colors.primary} />
+            </Pressable>
+          )}
+          {filters.cuisineTag && (
+            <Pressable style={styles.activeChip} onPress={() => setFilter('cuisineTag', null)}>
+              <Text style={styles.activeChipText}>{filters.cuisineTag}</Text>
+              <Ionicons name="close" size={12} color={colors.primary} />
+            </Pressable>
+          )}
+          {filters.cityId && (
+            <Pressable style={styles.activeChip} onPress={() => setFilter('cityId', null)}>
+              <Text style={styles.activeChipText}>{filters.cityId}</Text>
+              <Ionicons name="close" size={12} color={colors.primary} />
+            </Pressable>
+          )}
+          {sortByDistance && filters.distanceKm !== 20 && filters.distanceKm !== null && (
+            <Pressable style={styles.activeChip} onPress={() => setFilter('distanceKm', 20)}>
+              <Text style={styles.activeChipText}>{filters.distanceKm} ק״מ</Text>
+              <Ionicons name="close" size={12} color={colors.primary} />
+            </Pressable>
+          )}
+        </ScrollView>
+      )}
+
       {/* Location prompt */}
       {needsLocation && (
         <Pressable style={styles.locationBanner} onPress={requestLocation}>
@@ -367,37 +409,6 @@ export function ListScreen() {
           </Text>
           <Ionicons name="chevron-back" size={14} color="#92400e" />
         </Pressable>
-      )}
-
-      {/* Radius toggle */}
-      {sortByDistance && (
-        <View style={styles.radiusBlock}>
-          <Pressable style={styles.radiusTrigger} onPress={() => setRadiusOpen(o => !o)}>
-            <Ionicons name="navigate-circle-outline" size={15} color={colors.primary} />
-            <Text style={styles.radiusTriggerText}>טווח חיפוש · {radiusKm} ק״מ</Text>
-            <Ionicons name={radiusOpen ? 'chevron-up' : 'chevron-down'} size={14} color={colors.primary} />
-          </Pressable>
-          {radiusOpen && (
-            <View style={styles.sliderBox}>
-              <Slider
-                style={styles.slider}
-                minimumValue={1}
-                maximumValue={100}
-                step={1}
-                value={radiusKm}
-                onValueChange={(v) => setRadiusKm(Math.round(v))}
-                minimumTrackTintColor={colors.primary}
-                maximumTrackTintColor={colors.border}
-                thumbTintColor={colors.primary}
-              />
-              <View style={styles.sliderLabels}>
-                <Text style={styles.sliderLabel}>100 ק״מ</Text>
-                <Text style={styles.sliderValue}>{radiusKm} ק״מ</Text>
-                <Text style={styles.sliderLabel}>1 ק״מ</Text>
-              </View>
-            </View>
-          )}
-        </View>
       )}
 
       <View style={styles.metaRow}>
@@ -462,6 +473,7 @@ export function ListScreen() {
         onClose={() => setSheetOpen(false)}
         isFoodMode={isFoodType}
         availableKosherTypes={availableKosherTypes}
+        hasLocation={sortByDistance}
       />
       <BirkatHamazonModal visible={birkatOpen} onClose={() => setBirkatOpen(false)} />
     </Screen>
@@ -586,6 +598,33 @@ const styles = StyleSheet.create({
     borderColor: colors.surface,
   },
 
+  activeFiltersScroll: {
+    flexGrow: 0,
+    flexShrink: 0,
+    marginBottom: spacing.xs,
+  },
+  activeFiltersContent: {
+    gap: 6,
+    paddingRight: 2,
+    paddingLeft: 4,
+  },
+  activeChip: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 5,
+    paddingVertical: 5,
+    paddingHorizontal: 10,
+    borderRadius: radius.pill,
+    backgroundColor: colors.primaryLight,
+    borderWidth: 1,
+    borderColor: colors.primary,
+  },
+  activeChipText: {
+    fontSize: 12,
+    fontWeight: '700',
+    color: colors.primary,
+  },
+
   suggestionBox: {
     backgroundColor: colors.surface,
     borderRadius: radius.lg,
@@ -699,50 +738,5 @@ const styles = StyleSheet.create({
     flexGrow: 1,
   },
 
-  radiusBlock: {
-    marginBottom: spacing.sm,
-  },
-  radiusTrigger: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 6,
-    alignSelf: 'flex-start',
-    backgroundColor: colors.primaryLight,
-    paddingVertical: 7,
-    paddingHorizontal: 14,
-    borderRadius: radius.pill,
-  },
-  radiusTriggerText: {
-    fontSize: 13,
-    fontWeight: '700',
-    color: colors.primary,
-  },
-  sliderBox: {
-    marginTop: 10,
-    backgroundColor: colors.surface,
-    borderRadius: radius.lg,
-    paddingHorizontal: 16,
-    paddingVertical: 12,
-    borderWidth: 1,
-    borderColor: colors.border,
-  },
-  slider: {
-    width: '100%',
-    height: 36,
-  },
-  sliderLabels: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    marginTop: 2,
-  },
-  sliderLabel: {
-    fontSize: 11,
-    color: colors.textMuted,
-  },
-  sliderValue: {
-    fontSize: 15,
-    fontWeight: '800',
-    color: colors.primary,
-  },
 });
+
