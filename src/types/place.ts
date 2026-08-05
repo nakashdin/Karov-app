@@ -77,7 +77,14 @@ export interface Place {
 
   // --- Restaurant-specific (optional) ---
   category?: KosherCategory;
+  /** Legacy field — original certification key. Do not remove. */
   kosherType?: KosherType;
+  /** 'regular' | 'mehadrin' — the kashrut standard level. */
+  kosherLevel?: 'regular' | 'mehadrin';
+  /** High-level certification group: 'rabbinate' | 'badatz' | 'independent' | 'unknown'. */
+  kosherAuthorityGroup?: 'rabbinate' | 'badatz' | 'independent' | 'unknown';
+  /** Specific certifying body key (null when group is known but body is not). */
+  kosherAuthority?: string | null;
   /** Name of the certifying authority as printed on the certificate. */
   certifiedBy?: string;
   /** ISO date (YYYY-MM-DD) the kosher certificate is valid until. */
