@@ -36,9 +36,7 @@ const PLACES: Place[] = (osmData as unknown as Record<string, unknown>[])
   .map(sanitizePlace)
   .filter((p): p is Place => p !== null);
 
-// Cities are sorted by place-count; cap the filter chips to the busiest ones.
-// (Search-by-city still works for every city via the text search.)
-const CITIES = (osmCities as City[]).slice(0, 40);
+const CITIES = [...(osmCities as City[])].sort((a, b) => a.name.localeCompare(b.name, 'he'));
 
 // Build the full-text search index once at module load.
 const CITY_NAME_MAP = new Map<string, string>(

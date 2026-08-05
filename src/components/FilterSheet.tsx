@@ -1,6 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import {
-  FlatList,
   Modal,
   Pressable,
   ScrollView,
@@ -174,23 +173,81 @@ export function FilterSheet({
             </Section>
           )}
 
-          {/* City — modal picker */}
+          {/* City — inline dropdown */}
           <Section title="עיר">
-            <Pressable style={styles.cityPickerBtn} onPress={() => setCityPickerOpen(true)}>
-              <Ionicons name="chevron-back" size={16} color={selectedCityName ? colors.primary : colors.textMuted} />
+            <Pressable
+              style={[styles.cityPickerBtn, cityPickerOpen && styles.cityPickerBtnOpen]}
+              onPress={() => setCityPickerOpen(o => !o)}
+            >
+              <Ionicons
+                name={cityPickerOpen ? 'chevron-up' : 'chevron-down'}
+                size={16}
+                color={selectedCityName ? colors.primary : colors.textMuted}
+              />
               <Text style={[styles.cityPickerBtnText, !!selectedCityName && styles.cityPickerBtnTextSelected]}>
                 {selectedCityName ?? 'בחר עיר, קיבוץ, מושב...'}
               </Text>
-              <Ionicons name="location-outline" size={16} color={selectedCityName ? colors.primary : colors.textMuted} />
+              {selectedCityName ? (
+                <Pressable
+                  hitSlop={10}
+                  onPress={e => { e.stopPropagation(); setDraft(prev => ({ ...prev, cityId: null })); }}
+                >
+                  <Ionicons name="close-circle" size={18} color={colors.primary} />
+                </Pressable>
+              ) : (
+                <Ionicons name="location-outline" size={16} color={colors.textMuted} />
+              )}
             </Pressable>
-            {selectedCityName && (
-              <Pressable
-                style={styles.cityPickerClear}
-                onPress={() => setDraft(prev => ({ ...prev, cityId: null }))}
-              >
-                <Ionicons name="close-circle-outline" size={14} color={colors.textMuted} />
-                <Text style={styles.cityPickerClearText}>נקה בחירה</Text>
-              </Pressable>
+
+            {cityPickerOpen && (
+              <View style={styles.cityDropdown}>
+                <View style={styles.citySearchPill}>
+                  <Ionicons name="search" size={14} color={colors.textMuted} />
+                  <TextInput
+                    style={styles.citySearchInput}
+                    placeholder="הקלד לסינון..."
+                    placeholderTextColor={colors.textMuted}
+                    value={citySearch}
+                    onChangeText={setCitySearch}
+                    textAlign="right"
+                  />
+                  {citySearch.length > 0 && (
+                    <Pressable onPress={() => setCitySearch('')} hitSlop={8}>
+                      <Ionicons name="close" size={14} color={colors.textMuted} />
+                    </Pressable>
+                  )}
+                </View>
+                <ScrollView
+                  style={styles.cityList}
+                  nestedScrollEnabled
+                  keyboardShouldPersistTaps="handled"
+                  showsVerticalScrollIndicator
+                >
+                  {(citySearch.trim() ? filteredCities : filteredCities.slice(0, 100)).map(city => (
+                    <Pressable
+                      key={city.id}
+                      style={[styles.cityRow, draft.cityId === city.id && styles.cityRowActive]}
+                      onPress={() => {
+                        setDraft(prev => ({ ...prev, cityId: city.id }));
+                        setCitySearch('');
+                        setCityPickerOpen(false);
+                      }}
+                    >
+                      {draft.cityId === city.id && (
+                        <Ionicons name="checkmark" size={14} color={colors.primary} />
+                      )}
+                      <Text style={[styles.cityName, draft.cityId === city.id && styles.cityNameActive]}>
+                        {city.name}
+                      </Text>
+                    </Pressable>
+                  ))}
+                  {!citySearch.trim() && filteredCities.length > 100 && (
+                    <Text style={styles.cityHint}>
+                      הקלד לחיפוש מתוך {filteredCities.length} ערים
+                    </Text>
+                  )}
+                </ScrollView>
+              </View>
             )}
           </Section>
 
@@ -206,67 +263,6 @@ export function FilterSheet({
         </View>
       </View>
 
-      {/* City picker modal */}
-      <Modal
-        visible={cityPickerOpen}
-        animationType="slide"
-        transparent
-        onRequestClose={() => { setCityPickerOpen(false); setCitySearch(''); }}
-      >
-        <Pressable
-          style={styles.backdrop}
-          onPress={() => { setCityPickerOpen(false); setCitySearch(''); }}
-        />
-        <View style={styles.cityPickerSheet}>
-          <View style={styles.handle} />
-          <View style={styles.header}>
-            <Text style={styles.title}>בחר עיר</Text>
-            <Pressable onPress={() => { setCityPickerOpen(false); setCitySearch(''); }} hitSlop={10}>
-              <Ionicons name="close" size={24} color={colors.text} />
-            </Pressable>
-          </View>
-          <View style={styles.citySearchPill}>
-            <Ionicons name="search" size={14} color={colors.textMuted} />
-            <TextInput
-              style={styles.citySearchInput}
-              placeholder="חפש עיר, קיבוץ, מושב..."
-              placeholderTextColor={colors.textMuted}
-              value={citySearch}
-              onChangeText={setCitySearch}
-              textAlign="right"
-              autoFocus
-            />
-            {citySearch.length > 0 && (
-              <Pressable onPress={() => setCitySearch('')} hitSlop={8}>
-                <Ionicons name="close" size={14} color={colors.textMuted} />
-              </Pressable>
-            )}
-          </View>
-          <FlatList
-            data={filteredCities}
-            keyExtractor={c => c.id}
-            keyboardShouldPersistTaps="handled"
-            style={styles.cityFlatList}
-            renderItem={({ item: city }) => (
-              <Pressable
-                style={[styles.cityRow, draft.cityId === city.id && styles.cityRowActive]}
-                onPress={() => {
-                  setDraft(prev => ({ ...prev, cityId: city.id }));
-                  setCitySearch('');
-                  setCityPickerOpen(false);
-                }}
-              >
-                {draft.cityId === city.id && (
-                  <Ionicons name="checkmark" size={14} color={colors.primary} />
-                )}
-                <Text style={[styles.cityName, draft.cityId === city.id && styles.cityNameActive]}>
-                  {city.name}
-                </Text>
-              </Pressable>
-            )}
-          />
-        </View>
-      </Modal>
     </Modal>
   );
 }
@@ -343,7 +339,7 @@ const styles = StyleSheet.create({
   distChipText: { fontSize: 13, fontWeight: '600', color: colors.textMuted },
   distChipTextActive: { color: '#fff' },
 
-  // City picker button
+  // City inline dropdown
   cityPickerBtn: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -355,45 +351,39 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: colors.border,
   },
+  cityPickerBtnOpen: {
+    borderBottomLeftRadius: 0,
+    borderBottomRightRadius: 0,
+    borderBottomColor: 'transparent',
+  },
   cityPickerBtnText: { flex: 1, fontSize: 14, color: colors.textMuted, textAlign: 'right', marginHorizontal: 8 },
   cityPickerBtnTextSelected: { color: colors.primary, fontWeight: '700' },
-  cityPickerClear: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 4,
-    marginTop: 6,
-    alignSelf: 'flex-end',
-  },
-  cityPickerClearText: { fontSize: 12, color: colors.textMuted },
-
-  // City picker modal
-  cityPickerSheet: {
+  cityDropdown: {
+    borderWidth: 1,
+    borderTopWidth: 0,
+    borderColor: colors.border,
+    borderBottomLeftRadius: radius.md,
+    borderBottomRightRadius: radius.md,
+    overflow: 'hidden',
     backgroundColor: colors.surface,
-    borderTopLeftRadius: radius.xl,
-    borderTopRightRadius: radius.xl,
-    paddingHorizontal: spacing.lg,
-    paddingBottom: spacing.xxl,
-    maxHeight: '90%',
   },
-  cityFlatList: { flex: 1 },
   citySearchPill: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 8,
     backgroundColor: colors.background,
-    borderRadius: radius.md,
-    paddingVertical: 10,
+    paddingVertical: 9,
     paddingHorizontal: 12,
-    borderWidth: 1,
-    borderColor: colors.border,
-    marginBottom: 8,
+    borderBottomWidth: 0.5,
+    borderBottomColor: colors.border,
   },
   citySearchInput: { flex: 1, fontSize: 14, color: colors.text, paddingVertical: 0 },
+  cityList: { maxHeight: 220 },
   cityRow: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 8,
-    paddingVertical: 12,
+    paddingVertical: 11,
     paddingHorizontal: 14,
     borderBottomWidth: 0.5,
     borderBottomColor: colors.border,
@@ -402,6 +392,7 @@ const styles = StyleSheet.create({
   cityRowActive: { backgroundColor: colors.primaryLight },
   cityName: { fontSize: 14, color: colors.text, textAlign: 'right' },
   cityNameActive: { fontWeight: '700', color: colors.primary },
+  cityHint: { fontSize: 12, color: colors.textMuted, textAlign: 'center', paddingVertical: 10 },
 
   // Actions
   actions: {
