@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import {
+  FlatList,
   Modal,
   Pressable,
   ScrollView,
@@ -14,7 +15,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { useFilters } from '../context/FiltersContext';
 import { useCities } from '../hooks/useCities';
 import { emptyFilters, KosherCategory, KosherType, PlaceFilters } from '../types';
-import { ALL_CATEGORIES, categoryLabel, kosherTypeLabel } from '../utils/kosher';
+import { ALL_CATEGORIES, categoryLabel, KOSHER_GROUP_LABEL, kosherTypeLabel } from '../utils/kosher';
 import { Chip } from './Chip';
 
 const DISTANCE_OPTIONS: Array<{ label: string; value: number | null }> = [
@@ -27,11 +28,10 @@ const DISTANCE_OPTIONS: Array<{ label: string; value: number | null }> = [
 ];
 
 const CUISINE_OPTIONS: Array<{ key: string; label: string; emoji: string }> = [
-  { key: 'burger',      label: 'בורגר',      emoji: '🍔' },
-  { key: 'pizza',       label: 'פיצה',       emoji: '🍕' },
-  { key: 'street_food', label: 'מזון רחוב',  emoji: '🥙' },
-  { key: 'sushi',       label: 'סושי',       emoji: '🍣' },
-  { key: 'meat',        label: 'בשרים',      emoji: '🥩' },
+  { key: 'burger', label: 'בורגר',  emoji: '🍔' },
+  { key: 'pizza',  label: 'פיצה',   emoji: '🍕' },
+  { key: 'sushi',  label: 'אסייתי', emoji: '🥢' },
+  { key: 'meat',   label: 'בשרים',  emoji: '🥩' },
 ];
 
 interface FilterSheetProps {
@@ -55,11 +55,13 @@ export function FilterSheet({
 
   const [draft, setDraft] = useState<PlaceFilters>(filters);
   const [citySearch, setCitySearch] = useState('');
+  const [cityPickerOpen, setCityPickerOpen] = useState(false);
 
   useEffect(() => {
     if (visible) {
       setDraft(filters);
       setCitySearch('');
+      setCityPickerOpen(false);
     }
   }, [visible, filters]);
 
@@ -144,7 +146,7 @@ export function FilterSheet({
                 {availableKosherTypes.map((k: KosherType) => (
                   <Chip
                     key={k}
-                    label={kosherTypeLabel[k] ?? k}
+                    label={KOSHER_GROUP_LABEL[k] ?? kosherTypeLabel[k] ?? k}
                     selected={draft.kosherType === k}
                     onPress={() => toggle('kosherType', k)}
                   />
@@ -172,57 +174,24 @@ export function FilterSheet({
             </Section>
           )}
 
-          {/* City — searchable */}
+          {/* City — modal picker */}
           <Section title="עיר">
+            <Pressable style={styles.cityPickerBtn} onPress={() => setCityPickerOpen(true)}>
+              <Ionicons name="chevron-back" size={16} color={selectedCityName ? colors.primary : colors.textMuted} />
+              <Text style={[styles.cityPickerBtnText, !!selectedCityName && styles.cityPickerBtnTextSelected]}>
+                {selectedCityName ?? 'בחר עיר, קיבוץ, מושב...'}
+              </Text>
+              <Ionicons name="location-outline" size={16} color={selectedCityName ? colors.primary : colors.textMuted} />
+            </Pressable>
             {selectedCityName && (
               <Pressable
-                style={styles.selectedCity}
+                style={styles.cityPickerClear}
                 onPress={() => setDraft(prev => ({ ...prev, cityId: null }))}
               >
-                <Text style={styles.selectedCityText}>{selectedCityName}</Text>
-                <Ionicons name="close-circle" size={16} color={colors.primary} />
+                <Ionicons name="close-circle-outline" size={14} color={colors.textMuted} />
+                <Text style={styles.cityPickerClearText}>נקה בחירה</Text>
               </Pressable>
             )}
-            <View style={styles.citySearchPill}>
-              <Ionicons name="search" size={14} color={colors.textMuted} />
-              <TextInput
-                style={styles.citySearchInput}
-                placeholder="חפש עיר, קיבוץ, מושב..."
-                placeholderTextColor={colors.textMuted}
-                value={citySearch}
-                onChangeText={setCitySearch}
-                textAlign="right"
-              />
-              {citySearch.length > 0 && (
-                <Pressable onPress={() => setCitySearch('')} hitSlop={8}>
-                  <Ionicons name="close" size={14} color={colors.textMuted} />
-                </Pressable>
-              )}
-            </View>
-            <View style={styles.cityList}>
-              {filteredCities.slice(0, 80).map(city => (
-                <Pressable
-                  key={city.id}
-                  style={[styles.cityRow, draft.cityId === city.id && styles.cityRowActive]}
-                  onPress={() => setDraft(prev => ({
-                    ...prev,
-                    cityId: prev.cityId === city.id ? null : city.id,
-                  }))}
-                >
-                  {draft.cityId === city.id && (
-                    <Ionicons name="checkmark" size={14} color={colors.primary} />
-                  )}
-                  <Text style={[styles.cityName, draft.cityId === city.id && styles.cityNameActive]}>
-                    {city.name}
-                  </Text>
-                </Pressable>
-              ))}
-              {filteredCities.length > 80 && (
-                <Text style={styles.cityMore}>
-                  + {filteredCities.length - 80} ערים נוספות — צמצם את החיפוש
-                </Text>
-              )}
-            </View>
           </Section>
 
         </ScrollView>
@@ -236,6 +205,68 @@ export function FilterSheet({
           </Pressable>
         </View>
       </View>
+
+      {/* City picker modal */}
+      <Modal
+        visible={cityPickerOpen}
+        animationType="slide"
+        transparent
+        onRequestClose={() => { setCityPickerOpen(false); setCitySearch(''); }}
+      >
+        <Pressable
+          style={styles.backdrop}
+          onPress={() => { setCityPickerOpen(false); setCitySearch(''); }}
+        />
+        <View style={styles.cityPickerSheet}>
+          <View style={styles.handle} />
+          <View style={styles.header}>
+            <Text style={styles.title}>בחר עיר</Text>
+            <Pressable onPress={() => { setCityPickerOpen(false); setCitySearch(''); }} hitSlop={10}>
+              <Ionicons name="close" size={24} color={colors.text} />
+            </Pressable>
+          </View>
+          <View style={styles.citySearchPill}>
+            <Ionicons name="search" size={14} color={colors.textMuted} />
+            <TextInput
+              style={styles.citySearchInput}
+              placeholder="חפש עיר, קיבוץ, מושב..."
+              placeholderTextColor={colors.textMuted}
+              value={citySearch}
+              onChangeText={setCitySearch}
+              textAlign="right"
+              autoFocus
+            />
+            {citySearch.length > 0 && (
+              <Pressable onPress={() => setCitySearch('')} hitSlop={8}>
+                <Ionicons name="close" size={14} color={colors.textMuted} />
+              </Pressable>
+            )}
+          </View>
+          <FlatList
+            data={filteredCities}
+            keyExtractor={c => c.id}
+            keyboardShouldPersistTaps="handled"
+            style={styles.cityFlatList}
+            renderItem={({ item: city }) => (
+              <Pressable
+                style={[styles.cityRow, draft.cityId === city.id && styles.cityRowActive]}
+                onPress={() => {
+                  setDraft(prev => ({ ...prev, cityId: city.id }));
+                  setCitySearch('');
+                  setCityPickerOpen(false);
+                }}
+              >
+                {draft.cityId === city.id && (
+                  <Ionicons name="checkmark" size={14} color={colors.primary} />
+                )}
+                <Text style={[styles.cityName, draft.cityId === city.id && styles.cityNameActive]}>
+                  {city.name}
+                </Text>
+              </Pressable>
+            )}
+          />
+        </View>
+      </Modal>
     </Modal>
   );
 }
@@ -312,19 +343,39 @@ const styles = StyleSheet.create({
   distChipText: { fontSize: 13, fontWeight: '600', color: colors.textMuted },
   distChipTextActive: { color: '#fff' },
 
-  // City
-  selectedCity: {
+  // City picker button
+  cityPickerBtn: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 6,
-    alignSelf: 'flex-start',
-    backgroundColor: colors.primaryLight,
-    paddingVertical: 6,
-    paddingHorizontal: 12,
-    borderRadius: radius.pill,
-    marginBottom: 8,
+    justifyContent: 'space-between',
+    backgroundColor: colors.background,
+    borderRadius: radius.md,
+    paddingVertical: 12,
+    paddingHorizontal: 14,
+    borderWidth: 1,
+    borderColor: colors.border,
   },
-  selectedCityText: { fontSize: 13, fontWeight: '700', color: colors.primary },
+  cityPickerBtnText: { flex: 1, fontSize: 14, color: colors.textMuted, textAlign: 'right', marginHorizontal: 8 },
+  cityPickerBtnTextSelected: { color: colors.primary, fontWeight: '700' },
+  cityPickerClear: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+    marginTop: 6,
+    alignSelf: 'flex-end',
+  },
+  cityPickerClearText: { fontSize: 12, color: colors.textMuted },
+
+  // City picker modal
+  cityPickerSheet: {
+    backgroundColor: colors.surface,
+    borderTopLeftRadius: radius.xl,
+    borderTopRightRadius: radius.xl,
+    paddingHorizontal: spacing.lg,
+    paddingBottom: spacing.xxl,
+    maxHeight: '90%',
+  },
+  cityFlatList: { flex: 1 },
   citySearchPill: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -335,21 +386,14 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     borderWidth: 1,
     borderColor: colors.border,
-    marginBottom: 6,
+    marginBottom: 8,
   },
   citySearchInput: { flex: 1, fontSize: 14, color: colors.text, paddingVertical: 0 },
-  cityList: {
-    maxHeight: 220,
-    borderRadius: radius.md,
-    borderWidth: 1,
-    borderColor: colors.border,
-    overflow: 'hidden',
-  },
   cityRow: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 8,
-    paddingVertical: 10,
+    paddingVertical: 12,
     paddingHorizontal: 14,
     borderBottomWidth: 0.5,
     borderBottomColor: colors.border,
@@ -358,7 +402,6 @@ const styles = StyleSheet.create({
   cityRowActive: { backgroundColor: colors.primaryLight },
   cityName: { fontSize: 14, color: colors.text, textAlign: 'right' },
   cityNameActive: { fontWeight: '700', color: colors.primary },
-  cityMore: { fontSize: 12, color: colors.textMuted, textAlign: 'center', paddingVertical: 10 },
 
   // Actions
   actions: {
