@@ -81,6 +81,7 @@ export function ListScreen() {
   const sortByDistance = !!location;
 
   const [sheetOpen, setSheetOpen] = useState(false);
+  const [searchFocused, setSearchFocused] = useState(false);
   const [birkatOpen, setBirkatOpen] = useState(false);
   const [isRefreshing, setIsRefreshing] = useState(false);
   const [viewMode, setViewMode] = useState<'list' | 'map'>('list');
@@ -241,7 +242,7 @@ export function ListScreen() {
 
       {/* Search pill */}
       <View>
-        <View style={styles.searchPill}>
+        <View style={[styles.searchPill, searchFocused && styles.searchPillFocused]}>
           <Ionicons name="search" size={18} color={colors.textMuted} />
           <TextInput
             style={styles.searchInput}
@@ -250,8 +251,8 @@ export function ListScreen() {
             ref={searchRef}
             value={inputText}
             onChangeText={(v) => { setInputText(v); setShowSuggestions(true); }}
-            onFocus={() => setShowSuggestions(true)}
-            onBlur={() => setTimeout(() => setShowSuggestions(false), 150)}
+            onFocus={() => { setShowSuggestions(true); setSearchFocused(true); }}
+            onBlur={() => { setTimeout(() => setShowSuggestions(false), 150); setSearchFocused(false); }}
             textAlign="right"
             returnKeyType="search"
           />
@@ -550,9 +551,13 @@ const styles = StyleSheet.create({
     paddingVertical: 13,
     paddingHorizontal: spacing.lg,
     marginBottom: spacing.sm,
-    borderWidth: 0.5,
+    borderWidth: 1,
     borderColor: colors.border,
     ...shadow.card,
+  },
+  searchPillFocused: {
+    borderColor: colors.primary,
+    borderWidth: 1.5,
   },
   searchInput: {
     flex: 1,
