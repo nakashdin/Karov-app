@@ -126,69 +126,6 @@ export function FilterSheet({
             </Section>
           )}
 
-          {/* Category (meat/dairy/parve) */}
-          {isFoodMode && (
-            <Section title="קטגוריה">
-              <View style={styles.chipsWrap}>
-                {ALL_CATEGORIES.map((c: KosherCategory) => (
-                  <Chip
-                    key={c}
-                    label={categoryLabel[c]}
-                    selected={draft.category === c}
-                    onPress={() => toggle('category', c)}
-                  />
-                ))}
-              </View>
-            </Section>
-          )}
-
-          {/* Kashrut filters */}
-          {isFoodMode && (
-            <>
-              <Section title="רמת כשרות">
-                <Chip
-                  label="מהדרין בלבד"
-                  selected={draft.mehadrinOnly}
-                  onPress={() => setDraft(prev => ({ ...prev, mehadrinOnly: !prev.mehadrinOnly }))}
-                />
-              </Section>
-              <Section title="גוף כשרות">
-                <View style={styles.chipsWrap}>
-                  {AUTHORITY_OPTIONS.map(opt => (
-                    <Chip
-                      key={opt.key}
-                      label={opt.label}
-                      selected={draft.kosherAuthorityGroup === opt.key}
-                      onPress={() => setDraft(prev => ({
-                        ...prev,
-                        kosherAuthorityGroup: prev.kosherAuthorityGroup === opt.key ? null : opt.key,
-                      }))}
-                    />
-                  ))}
-                </View>
-              </Section>
-            </>
-          )}
-
-          {/* Cuisine */}
-          {isFoodMode && (
-            <Section title="סוג מטבח">
-              <View style={styles.chipsWrap}>
-                {CUISINE_OPTIONS.map(opt => (
-                  <Chip
-                    key={opt.key}
-                    label={`${opt.emoji} ${opt.label}`}
-                    selected={draft.cuisineTag === opt.key}
-                    onPress={() => setDraft(prev => ({
-                      ...prev,
-                      cuisineTag: prev.cuisineTag === opt.key ? null : opt.key,
-                    }))}
-                  />
-                ))}
-              </View>
-            </Section>
-          )}
-
           {/* City — inline dropdown */}
           <Section title="עיר">
             <Pressable
@@ -261,6 +198,69 @@ export function FilterSheet({
               </View>
             )}
           </Section>
+
+          {/* Kashrut filters */}
+          {isFoodMode && (
+            <>
+              <Section title="רמת כשרות">
+                <Chip
+                  label="מהדרין בלבד"
+                  selected={draft.mehadrinOnly}
+                  onPress={() => setDraft(prev => ({ ...prev, mehadrinOnly: !prev.mehadrinOnly }))}
+                />
+              </Section>
+              <Section title="גוף כשרות">
+                <View style={styles.chipsWrap}>
+                  {AUTHORITY_OPTIONS.map(opt => (
+                    <Chip
+                      key={opt.key}
+                      label={opt.label}
+                      selected={draft.kosherAuthorityGroup === opt.key}
+                      onPress={() => setDraft(prev => ({
+                        ...prev,
+                        kosherAuthorityGroup: prev.kosherAuthorityGroup === opt.key ? null : opt.key,
+                      }))}
+                    />
+                  ))}
+                </View>
+              </Section>
+            </>
+          )}
+
+          {/* Cuisine */}
+          {isFoodMode && (
+            <Section title="סוג מטבח">
+              <View style={styles.chipsWrap}>
+                {CUISINE_OPTIONS.map(opt => (
+                  <Chip
+                    key={opt.key}
+                    label={`${opt.emoji} ${opt.label}`}
+                    selected={draft.cuisineTag === opt.key}
+                    onPress={() => setDraft(prev => ({
+                      ...prev,
+                      cuisineTag: prev.cuisineTag === opt.key ? null : opt.key,
+                    }))}
+                  />
+                ))}
+              </View>
+            </Section>
+          )}
+
+          {/* Category (meat/dairy/parve) */}
+          {isFoodMode && (
+            <Section title="קטגוריה">
+              <View style={styles.chipsWrap}>
+                {ALL_CATEGORIES.map((c: KosherCategory) => (
+                  <Chip
+                    key={c}
+                    label={categoryLabel[c]}
+                    selected={draft.category === c}
+                    onPress={() => toggle('category', c)}
+                  />
+                ))}
+              </View>
+            </Section>
+          )}
 
         </ScrollView>
 
