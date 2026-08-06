@@ -1,5 +1,5 @@
-import React from 'react';
-import { Linking, Pressable, StyleSheet, Text, View } from 'react-native';
+import React, { useState } from 'react';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { Place } from '../types';
 import { colors, radius, shadow, spacing } from '../theme';
@@ -9,6 +9,7 @@ import { categoryLabel, getKosherLabel } from '../utils/kosher';
 import { displayPlaceName, getPlaceEmoji, placeTypeLabel } from '../utils/placeType';
 import { formatDistance } from '../utils/geo';
 import { isCurrentlyOpen, todayHoursStr } from '../utils/openingHours';
+import { NavPickerModal } from './NavPickerModal';
 
 
 const CHIP_COLOR: Record<Place['type'], string> = {
@@ -79,6 +80,7 @@ const SUB_TYPE_COLOR: Record<string, string> = {
 
 export function PlaceCard({ place, distanceKm, onPress }: PlaceCardProps) {
   const { t, locale } = useLanguage();
+  const [navOpen, setNavOpen] = useState(false);
   const isHe = locale === 'he';
   const heName = displayPlaceName(place);
   const displayName = isHe ? heName : transliterateHebrew(heName);
@@ -156,11 +158,7 @@ export function PlaceCard({ place, distanceKm, onPress }: PlaceCardProps) {
         </Text>
         <Pressable
           style={styles.navBtn}
-          onPress={(e) => {
-            e.stopPropagation?.();
-            const { latitude, longitude } = place.location;
-            Linking.openURL(`https://waze.com/ul?ll=${latitude},${longitude}&navigate=yes`);
-          }}
+          onPress={(e) => { e.stopPropagation?.(); setNavOpen(true); }}
           hitSlop={8}
         >
           <Ionicons name="navigate" size={14} color={colors.primary} />
@@ -184,6 +182,13 @@ export function PlaceCard({ place, distanceKm, onPress }: PlaceCardProps) {
           {openStatus === false && <View style={[styles.badge, styles.badgeClosed]}><Text style={styles.badgeText}>סגור</Text></View>}
         </View>
       )}
+      <NavPickerModal
+        visible={navOpen}
+        point={place.location}
+        label={place.name}
+        address={place.address}
+        onClose={() => setNavOpen(false)}
+      />
     </Pressable>
   );
 }

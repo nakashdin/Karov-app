@@ -27,7 +27,8 @@ import { useFavorites } from '../context/FavoritesContext';
 import { distanceKm, formatDistance } from '../utils/geo';
 import { categoryLabel, kosherTypeLabel } from '../utils/kosher';
 import { displayPlaceName, placeTypeLabel } from '../utils/placeType';
-import { callPhone, openGoogleMaps, openWaze } from '../utils/navigation';
+import { callPhone } from '../utils/navigation';
+import { NavPickerModal } from '../components/NavPickerModal';
 import { fullHoursHebrew, isCurrentlyOpen } from '../utils/openingHours';
 import { RootStackParamList } from '../navigation/types';
 
@@ -456,9 +457,10 @@ export function PlaceDetailScreen() {
 
       <NavPickerModal
         visible={navPickerOpen}
+        point={place.location}
+        label={place.name}
+        address={place.address}
         onClose={() => setNavPickerOpen(false)}
-        onWaze={() => { setNavPickerOpen(false); openWaze(place.location, place.name); }}
-        onGoogleMaps={() => { setNavPickerOpen(false); openGoogleMaps(place.location, place.name); }}
       />
 
       <SuggestEditModal
@@ -468,60 +470,6 @@ export function PlaceDetailScreen() {
         onClose={() => setSuggestOpen(false)}
       />
     </Screen>
-  );
-}
-
-// ─── Navigation picker modal ─────────────────────────────────────────────────
-
-function NavPickerModal({
-  visible, onClose, onWaze, onGoogleMaps,
-}: {
-  visible: boolean;
-  onClose: () => void;
-  onWaze: () => void;
-  onGoogleMaps: () => void;
-}) {
-  return (
-    <Modal
-      visible={visible}
-      transparent
-      animationType="fade"
-      onRequestClose={onClose}
-      statusBarTranslucent
-    >
-      <Pressable style={npStyles.overlay} onPress={onClose}>
-        <Pressable style={npStyles.sheet} onPress={(e) => e.stopPropagation()}>
-          <View style={npStyles.handle} />
-          <Text style={npStyles.title}>פתח ניווט ב…</Text>
-
-          <Pressable style={npStyles.option} onPress={onWaze}>
-            <View style={[npStyles.appIcon, { backgroundColor: '#33CCFF' }]}>
-              <Ionicons name="navigate" size={22} color="#fff" />
-            </View>
-            <View style={npStyles.optionText}>
-              <Text style={npStyles.optionName}>Waze</Text>
-              <Text style={npStyles.optionSub}>ניווט חי עם תנועה בזמן אמת</Text>
-            </View>
-            <Ionicons name="chevron-back" size={18} color={colors.textMuted} />
-          </Pressable>
-
-          <Pressable style={[npStyles.option, npStyles.optionLast]} onPress={onGoogleMaps}>
-            <View style={[npStyles.appIcon, { backgroundColor: '#4285F4' }]}>
-              <Ionicons name="map" size={22} color="#fff" />
-            </View>
-            <View style={npStyles.optionText}>
-              <Text style={npStyles.optionName}>Google Maps</Text>
-              <Text style={npStyles.optionSub}>מפות גוגל עם ניווט מפורט</Text>
-            </View>
-            <Ionicons name="chevron-back" size={18} color={colors.textMuted} />
-          </Pressable>
-
-          <Pressable style={npStyles.cancelBtn} onPress={onClose}>
-            <Text style={npStyles.cancelText}>ביטול</Text>
-          </Pressable>
-        </Pressable>
-      </Pressable>
-    </Modal>
   );
 }
 
@@ -897,78 +845,3 @@ const drStyles = StyleSheet.create({
   valuePlaceholder: { color: colors.textMuted, fontWeight: '400' },
 });
 
-// Nav picker modal styles
-const npStyles = StyleSheet.create({
-  overlay: {
-    flex: 1,
-    backgroundColor: 'rgba(0,0,0,0.45)',
-    justifyContent: 'flex-end',
-  },
-  sheet: {
-    backgroundColor: colors.surface,
-    borderTopLeftRadius: radius.xl,
-    borderTopRightRadius: radius.xl,
-    paddingBottom: 36,
-    paddingTop: 10,
-    paddingHorizontal: spacing.lg,
-    ...shadow.card,
-  },
-  handle: {
-    width: 40,
-    height: 4,
-    borderRadius: 2,
-    backgroundColor: colors.border,
-    alignSelf: 'center',
-    marginBottom: 18,
-  },
-  title: {
-    fontSize: 17,
-    fontWeight: '800',
-    color: colors.text,
-    textAlign: 'center',
-    marginBottom: 20,
-    letterSpacing: -0.3,
-  },
-  option: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 14,
-    paddingVertical: 14,
-    borderBottomWidth: 0.5,
-    borderBottomColor: colors.border,
-  },
-  optionLast: { borderBottomWidth: 0 },
-  appIcon: {
-    width: 46,
-    height: 46,
-    borderRadius: radius.md,
-    alignItems: 'center',
-    justifyContent: 'center',
-    flexShrink: 0,
-  },
-  optionText: { flex: 1, alignItems: 'flex-end' },
-  optionName: {
-    fontSize: 16,
-    fontWeight: '700',
-    color: colors.text,
-    textAlign: 'right',
-  },
-  optionSub: {
-    fontSize: 12,
-    color: colors.textMuted,
-    textAlign: 'right',
-    marginTop: 2,
-  },
-  cancelBtn: {
-    marginTop: 16,
-    paddingVertical: 14,
-    borderRadius: radius.pill,
-    backgroundColor: colors.border,
-    alignItems: 'center',
-  },
-  cancelText: {
-    fontSize: 16,
-    fontWeight: '700',
-    color: colors.text,
-  },
-});

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { Place } from '../../types';
@@ -6,7 +6,7 @@ import { colors, radius, shadow, spacing } from '../../theme';
 import { t } from '../../i18n';
 import { getKosherLabel } from '../../utils/kosher';
 import { displayPlaceName, placeTypeLabel } from '../../utils/placeType';
-import { openWaze } from '../../utils/navigation';
+import { NavPickerModal } from '../NavPickerModal';
 import { KosherBadge } from '../KosherBadge';
 
 interface PlaceBottomCardProps {
@@ -32,6 +32,7 @@ export function PlaceBottomCard({
   onClose,
   onOpenDetails,
 }: PlaceBottomCardProps) {
+  const [navOpen, setNavOpen] = useState(false);
   return (
     <View style={styles.card}>
       <View style={styles.headerRow}>
@@ -64,12 +65,19 @@ export function PlaceBottomCard({
         </Pressable>
         <Pressable
           style={styles.wazeBtn}
-          onPress={() => openWaze(place.location, place.name)}
+          onPress={() => setNavOpen(true)}
         >
           <Ionicons name="navigate" size={18} color={colors.textInverse} />
           <Text style={styles.wazeText}>{t.detail.navigate}</Text>
         </Pressable>
       </View>
+      <NavPickerModal
+        visible={navOpen}
+        point={place.location}
+        label={place.name}
+        address={place.address}
+        onClose={() => setNavOpen(false)}
+      />
     </View>
   );
 }
