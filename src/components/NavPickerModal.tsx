@@ -5,6 +5,12 @@ import { GeoPoint } from '../types';
 import { colors, radius, shadow, spacing } from '../theme';
 import { openAppleMaps, openGoogleMaps, openWaze } from '../utils/navigation';
 
+const isIOS =
+  Platform.OS === 'ios' ||
+  (Platform.OS === 'web' &&
+    typeof navigator !== 'undefined' &&
+    /iphone|ipad|ipod/i.test(navigator.userAgent));
+
 interface Props {
   visible: boolean;
   point: GeoPoint;
@@ -54,7 +60,7 @@ export function NavPickerModal({ visible, point, label, address, onClose }: Prop
             <Ionicons name="chevron-back" size={18} color={colors.textMuted} />
           </Pressable>
 
-          {Platform.OS === 'ios' && (
+          {isIOS && (
             <Pressable style={styles.option} onPress={() => go(() => openAppleMaps(point, label, address))}>
               <View style={[styles.appIcon, { backgroundColor: '#000' }]}>
                 <Ionicons name="map-outline" size={22} color="#fff" />
