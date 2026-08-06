@@ -58,6 +58,19 @@ export const KOSHER_GROUP_LABEL: Partial<Record<KosherType, string>> = {
   badatz_edah: 'בד״ץ',
 };
 
+/** Labels for the kosher-body filter chips (group keys + specific authority keys). */
+export const KOSHER_BODY_LABEL: Record<string, string> = {
+  rabbinate:               'רבנות',
+  badatz_beit_yosef:       'בד״ץ בית יוסף',
+  badatz_edah_hachareidis: 'בד״ץ העדה החרדית',
+  yoreh_deah_mahfoud:      'הרב מחפוד',
+  chatam_sofer:            'חוג חתם סופר',
+  badatz_kehilot:          'קהילות',
+  badatz_rubin:            'הרב רובין',
+  tzohar:                  'צהר',
+  unknown:                 'גוף כשרות לא ידוע',
+};
+
 /** Which group key represents a raw kosherType (reverse lookup). */
 export const RAW_TO_GROUP: Partial<Record<KosherType, KosherType>> = Object.fromEntries(
   (Object.entries(KOSHER_GROUP_MEMBERS) as [KosherType, KosherType[]][])

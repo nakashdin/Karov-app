@@ -31,10 +31,12 @@ function matchesExactFilters(place: Place, f: Partial<PlaceFilters>): boolean {
     if (place.kosherLevel !== 'mehadrin') return false;
   }
   if (f.kosherAuthorityGroup) {
-    if (f.kosherAuthorityGroup === 'tzohar') {
-      if (place.kosherAuthority !== 'tzohar') return false;
-    } else {
+    // 'rabbinate' and 'unknown' are group-level matches; everything else is a specific kosherAuthority key.
+    const GROUP_LEVEL_KEYS = new Set(['rabbinate', 'unknown', 'badatz', 'independent']);
+    if (GROUP_LEVEL_KEYS.has(f.kosherAuthorityGroup)) {
       if (place.kosherAuthorityGroup !== f.kosherAuthorityGroup) return false;
+    } else {
+      if (place.kosherAuthority !== f.kosherAuthorityGroup) return false;
     }
   }
   if (f.category && place.category !== f.category) return false;

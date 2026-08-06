@@ -26,7 +26,7 @@ import { useSharedLocation, getCachedLocation } from '../context/LocationContext
 import { useFilters } from '../context/FiltersContext';
 import { countActiveFilters, GeoPoint, PlaceSubType, PlaceType } from '../types';
 import { distanceKm } from '../utils/geo';
-import { categoryLabel } from '../utils/kosher';
+import { categoryLabel, KOSHER_BODY_LABEL } from '../utils/kosher';
 import { RootStackParamList } from '../navigation/types';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
@@ -370,7 +370,7 @@ export function ListScreen() {
           {filters.kosherAuthorityGroup && (
             <Pressable style={styles.activeChip} onPress={() => setFilter('kosherAuthorityGroup', null)}>
               <Text style={styles.activeChipText}>
-                {{ rabbinate: 'רבנות', badatz: 'בד״ץ', tzohar: 'צהר', unknown: 'לא ידוע' }[filters.kosherAuthorityGroup] ?? filters.kosherAuthorityGroup}
+                {KOSHER_BODY_LABEL[filters.kosherAuthorityGroup] ?? filters.kosherAuthorityGroup}
               </Text>
               <Ionicons name="close" size={12} color={colors.primary} />
             </Pressable>

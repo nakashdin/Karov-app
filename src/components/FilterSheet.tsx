@@ -14,7 +14,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { useFilters } from '../context/FiltersContext';
 import { useCities } from '../hooks/useCities';
 import { emptyFilters, KosherCategory, PlaceFilters } from '../types';
-import { ALL_CATEGORIES, categoryLabel } from '../utils/kosher';
+import { ALL_CATEGORIES, categoryLabel, KOSHER_BODY_LABEL } from '../utils/kosher';
 import { Chip } from './Chip';
 
 const DISTANCE_OPTIONS: Array<{ label: string; value: number | null }> = [
@@ -33,12 +33,11 @@ const CUISINE_OPTIONS: Array<{ key: string; label: string; emoji: string }> = [
   { key: 'meat',   label: 'בשרים',  emoji: '🥩' },
 ];
 
-const AUTHORITY_GROUP_OPTIONS: Array<{ key: string; label: string }> = [
-  { key: 'rabbinate', label: 'רבנות' },
-  { key: 'badatz',    label: 'בד״ץ' },
-  { key: 'tzohar',   label: 'צהר' },
-  { key: 'unknown',  label: 'לא ידוע' },
-];
+// Ordered list of authority filter options — only bodies that exist in the data.
+// 'rabbinate' and 'unknown' match by kosherAuthorityGroup; the rest match by kosherAuthority.
+const AUTHORITY_OPTIONS: Array<{ key: string; label: string }> = Object.entries(KOSHER_BODY_LABEL).map(
+  ([key, label]) => ({ key, label })
+);
 
 interface FilterSheetProps {
   visible: boolean;
@@ -155,7 +154,7 @@ export function FilterSheet({
               </Section>
               <Section title="גוף כשרות">
                 <View style={styles.chipsWrap}>
-                  {AUTHORITY_GROUP_OPTIONS.map(opt => (
+                  {AUTHORITY_OPTIONS.map(opt => (
                     <Chip
                       key={opt.key}
                       label={opt.label}

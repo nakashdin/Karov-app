@@ -28,12 +28,17 @@ const CATEGORIES: Array<{ key: KosherCategory | null; label: string; emoji: stri
 ];
 
 const KASHRUYOT_OPTIONS: Array<{ key: string; label: string; emoji: string; mehadrinOnly: boolean; kosherAuthorityGroup: string | null }> = [
-  { key: 'all',       label: 'הכל',     emoji: '🍽️', mehadrinOnly: false, kosherAuthorityGroup: null },
-  { key: 'mehadrin',  label: 'מהדרין',  emoji: '✡️', mehadrinOnly: true,  kosherAuthorityGroup: null },
-  { key: 'rabbinate', label: 'רבנות',   emoji: '🏛️', mehadrinOnly: false, kosherAuthorityGroup: 'rabbinate' },
-  { key: 'badatz',    label: 'בד״ץ',    emoji: '📜', mehadrinOnly: false, kosherAuthorityGroup: 'badatz' },
-  { key: 'tzohar',   label: 'צהר',     emoji: '🌅', mehadrinOnly: false, kosherAuthorityGroup: 'tzohar' },
-  { key: 'unknown',   label: 'לא ידוע', emoji: '❓', mehadrinOnly: false, kosherAuthorityGroup: 'unknown' },
+  { key: 'all',                     label: 'הכל',                 emoji: '🍽️', mehadrinOnly: false, kosherAuthorityGroup: null },
+  { key: 'mehadrin',                label: 'מהדרין בלבד',         emoji: '✡️',  mehadrinOnly: true,  kosherAuthorityGroup: null },
+  { key: 'rabbinate',               label: 'רבנות',               emoji: '🏛️', mehadrinOnly: false, kosherAuthorityGroup: 'rabbinate' },
+  { key: 'badatz_beit_yosef',       label: 'בד״ץ בית יוסף',       emoji: '📜', mehadrinOnly: false, kosherAuthorityGroup: 'badatz_beit_yosef' },
+  { key: 'badatz_edah_hachareidis', label: 'בד״ץ העדה החרדית',    emoji: '📜', mehadrinOnly: false, kosherAuthorityGroup: 'badatz_edah_hachareidis' },
+  { key: 'yoreh_deah_mahfoud',      label: 'הרב מחפוד',           emoji: '📋', mehadrinOnly: false, kosherAuthorityGroup: 'yoreh_deah_mahfoud' },
+  { key: 'chatam_sofer',            label: 'חוג חתם סופר',         emoji: '📋', mehadrinOnly: false, kosherAuthorityGroup: 'chatam_sofer' },
+  { key: 'badatz_kehilot',          label: 'קהילות',              emoji: '📋', mehadrinOnly: false, kosherAuthorityGroup: 'badatz_kehilot' },
+  { key: 'badatz_rubin',            label: 'הרב רובין',           emoji: '📋', mehadrinOnly: false, kosherAuthorityGroup: 'badatz_rubin' },
+  { key: 'tzohar',                  label: 'צהר',                 emoji: '🌅', mehadrinOnly: false, kosherAuthorityGroup: 'tzohar' },
+  { key: 'unknown',                 label: 'גוף כשרות לא ידוע',   emoji: '❓', mehadrinOnly: false, kosherAuthorityGroup: 'unknown' },
 ];
 
 const STEPS = ['קטגוריה', 'כשרות', 'תוצאות'];
