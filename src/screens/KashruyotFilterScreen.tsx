@@ -129,7 +129,7 @@ export function KashruyotFilterScreen() {
           {step === 0 ? 'איזו קטגוריה?' : 'איזו כשרות?'}
         </Text>
         <Text style={styles.subtitle}>
-          {step === 0 ? 'בחר סוג מזון' : 'בחר גוף הכשר'}
+          {step === 0 ? 'בחר סוג מזון' : 'סינון כשרות'}
         </Text>
       </View>
 
