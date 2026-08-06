@@ -52,7 +52,7 @@ export const ru = {
   },
 
   detail: {
-    navigate: 'Навигация через Waze',
+    navigate: 'Навигация',
     call: 'Позвонить',
     report: 'Сообщить об ошибке',
     address: 'Адрес',

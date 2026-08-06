@@ -52,7 +52,7 @@ export const en = {
   },
 
   detail: {
-    navigate: 'Navigate with Waze',
+    navigate: 'Navigate',
     call: 'Call',
     report: 'Report an error',
     address: 'Address',

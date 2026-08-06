@@ -52,7 +52,7 @@ export const he = {
   },
 
   detail: {
-    navigate: 'נווט ב‑Waze',
+    navigate: 'נווט',
     call: 'התקשר',
     report: 'דווח על טעות',
     address: 'כתובת',
