@@ -93,17 +93,33 @@ export function ParashaDetailScreen() {
           ) : null}
         </View>
 
-        {/* Summary */}
         {content ? (
           <>
+            {/* Book info + read link */}
+            {content.bookInfo ? (
+              <View style={styles.bookInfoCard}>
+                <Text style={styles.bookInfoText}>{content.bookInfo}</Text>
+                {parasha?.sefariaUrl ? (
+                  <Pressable
+                    style={({ pressed }) => [styles.readBtn, pressed && { opacity: 0.8 }]}
+                    onPress={() => Linking.openURL(parasha.sefariaUrl)}
+                  >
+                    <Ionicons name="book-outline" size={16} color={colors.categorySynagogue} />
+                    <Text style={styles.readBtnText}>קרא את הפרשה המלאה בספריא</Text>
+                  </Pressable>
+                ) : null}
+              </View>
+            ) : null}
+
+            {/* Overview */}
             <View style={styles.card}>
-              <Text style={styles.sectionTitle}>סיכום הפרשה</Text>
-              <Text style={styles.summaryText}>{content.summary}</Text>
+              <Text style={styles.sectionTitle}>תוכן הפרשה</Text>
+              <Text style={styles.summaryText}>{content.overview ?? content.summary}</Text>
             </View>
 
             {/* Key points */}
             <View style={styles.card}>
-              <Text style={styles.sectionTitle}>נקודות מרכזיות בפרשה</Text>
+              <Text style={styles.sectionTitle}>נושאים מרכזיים</Text>
               <View style={styles.keyPointsList}>
                 {content.keyPoints.map((point, i) => (
                   <View key={i} style={styles.keyPointItem}>
@@ -133,8 +149,8 @@ export function ParashaDetailScreen() {
           </View>
         ) : null}
 
-        {/* Read full parasha */}
-        {parasha?.sefariaUrl ? (
+        {/* Read full parasha — fallback when no bookInfo */}
+        {parasha?.sefariaUrl && !content?.bookInfo ? (
           <Pressable
             style={({ pressed }) => [styles.sefariaBtn, pressed && { opacity: 0.8 }]}
             onPress={() => Linking.openURL(parasha.sefariaUrl)}
@@ -244,6 +260,38 @@ const styles = StyleSheet.create({
     fontSize: 13,
     color: colors.categorySynagogue,
     fontWeight: '600',
+  },
+
+  bookInfoCard: {
+    backgroundColor: '#F0F5FF',
+    borderRadius: radius.lg,
+    padding: spacing.lg,
+    gap: spacing.md,
+    borderWidth: 1,
+    borderColor: '#D0DFFA',
+  },
+  bookInfoText: {
+    fontSize: 13,
+    lineHeight: 20,
+    color: colors.text,
+    textAlign: 'right',
+    fontWeight: '500',
+  },
+  readBtn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 6,
+    borderWidth: 1.5,
+    borderColor: colors.categorySynagogue,
+    borderRadius: radius.md,
+    paddingVertical: 10,
+    paddingHorizontal: spacing.md,
+  },
+  readBtnText: {
+    fontSize: 14,
+    fontWeight: '700',
+    color: colors.categorySynagogue,
   },
 
   card: {
