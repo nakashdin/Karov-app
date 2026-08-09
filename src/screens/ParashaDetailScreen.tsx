@@ -8,6 +8,8 @@ import {
   StyleSheet,
   Text,
   View,
+  LayoutAnimation,
+  UIManager,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
@@ -15,6 +17,10 @@ import { Screen } from '../components/Screen';
 import { colors, radius, shadow, spacing } from '../theme';
 import { useParasha } from '../hooks/useParasha';
 import { getParashaContent } from '../data/parashaContent';
+
+if (Platform.OS === 'android' && UIManager.setLayoutAnimationEnabledExperimental) {
+  UIManager.setLayoutAnimationEnabledExperimental(true);
+}
 
 async function copyToClipboard(text: string) {
   if (Platform.OS === 'web' && typeof navigator !== 'undefined' && navigator.clipboard) {
@@ -27,6 +33,12 @@ export function ParashaDetailScreen() {
   const { parasha } = useParasha();
   const content = getParashaContent(parasha?.topicSlug);
   const [copied, setCopied] = useState(false);
+  const [showCommentary, setShowCommentary] = useState(false);
+
+  const toggleCommentary = () => {
+    LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
+    setShowCommentary(v => !v);
+  };
 
   const shareText = content
     ? `פרשת ${content.hebrewName}\n\n${content.summary}\n\nלקריאה: ${parasha?.sefariaUrl ?? ''}`
@@ -134,6 +146,40 @@ export function ParashaDetailScreen() {
                 ))}
               </View>
             </View>
+
+            {/* Commentary expandable */}
+            {content.commentary && content.commentary.length > 0 ? (
+              <View style={styles.commentaryContainer}>
+                <Pressable
+                  style={({ pressed }) => [styles.commentaryToggle, pressed && { opacity: 0.75 }]}
+                  onPress={toggleCommentary}
+                >
+                  <Ionicons
+                    name={showCommentary ? 'chevron-up' : 'chevron-down'}
+                    size={18}
+                    color={colors.categorySynagogue}
+                  />
+                  <Text style={styles.commentaryToggleText}>
+                    {showCommentary ? 'סגור פירוש חז"ל' : 'פירוש חז"ל — מה אמרו חכמים'}
+                  </Text>
+                </Pressable>
+
+                {showCommentary ? (
+                  <View style={styles.commentarySections}>
+                    {content.commentary.map((section, i) => (
+                      <View key={i} style={styles.commentarySection}>
+                        <Text style={styles.commentaryTitle}>{section.title}</Text>
+                        <Text style={styles.commentarySource}>{section.source}</Text>
+                        <Text style={styles.commentaryText}>{section.text}</Text>
+                      </View>
+                    ))}
+                    <Text style={styles.commentaryAttribution}>
+                      הפירושים מבוססים על מדרשים ומקורות תורניים ראשוניים
+                    </Text>
+                  </View>
+                ) : null}
+              </View>
+            ) : null}
 
             {/* Quote */}
             <View style={styles.quoteCard}>
@@ -373,6 +419,66 @@ const styles = StyleSheet.create({
     color: colors.categorySynagogue,
     fontWeight: '600',
     textAlign: 'center',
+  },
+
+  commentaryContainer: {
+    backgroundColor: colors.surface,
+    borderRadius: radius.lg,
+    overflow: 'hidden',
+    ...shadow.card,
+  },
+  commentaryToggle: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    gap: 8,
+    padding: spacing.lg,
+    borderBottomWidth: 0,
+  },
+  commentaryToggleText: {
+    fontSize: 15,
+    fontWeight: '700',
+    color: colors.categorySynagogue,
+    textAlign: 'right',
+  },
+  commentarySections: {
+    paddingHorizontal: spacing.lg,
+    paddingBottom: spacing.lg,
+    gap: spacing.lg,
+    borderTopWidth: 0.5,
+    borderTopColor: colors.border,
+  },
+  commentarySection: {
+    gap: 6,
+    paddingTop: spacing.md,
+    borderBottomWidth: 0.5,
+    borderBottomColor: colors.border,
+    paddingBottom: spacing.md,
+  },
+  commentaryTitle: {
+    fontSize: 15,
+    fontWeight: '700',
+    color: colors.text,
+    textAlign: 'right',
+  },
+  commentarySource: {
+    fontSize: 11,
+    fontWeight: '600',
+    color: colors.categorySynagogue,
+    textAlign: 'right',
+    letterSpacing: 0.2,
+  },
+  commentaryText: {
+    fontSize: 14,
+    lineHeight: 24,
+    color: colors.text,
+    textAlign: 'right',
+  },
+  commentaryAttribution: {
+    fontSize: 11,
+    color: colors.textMuted,
+    textAlign: 'center',
+    paddingTop: spacing.sm,
   },
 
   sefariaBtn: {
