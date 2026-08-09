@@ -106,9 +106,14 @@ export function ParashaDetailScreen() {
               <Text style={styles.sectionTitle}>נקודות מרכזיות בפרשה</Text>
               <View style={styles.keyPointsList}>
                 {content.keyPoints.map((point, i) => (
-                  <View key={i} style={styles.keyPointRow}>
-                    <Text style={styles.keyPointBullet}>◆</Text>
-                    <Text style={styles.keyPointText}>{point}</Text>
+                  <View key={i} style={styles.keyPointItem}>
+                    <View style={styles.keyPointRow}>
+                      <Text style={styles.keyPointBullet}>◆</Text>
+                      <Text style={styles.keyPointText}>{point}</Text>
+                    </View>
+                    {content.keyPointDetails?.[i] ? (
+                      <Text style={styles.keyPointDetail}>{content.keyPointDetails[i]}</Text>
+                    ) : null}
                   </View>
                 ))}
               </View>
@@ -263,7 +268,8 @@ const styles = StyleSheet.create({
     textAlign: 'right',
   },
 
-  keyPointsList: { gap: 10 },
+  keyPointsList: { gap: 14 },
+  keyPointItem: { gap: 6 },
   keyPointRow: {
     flexDirection: 'row',
     alignItems: 'flex-start',
@@ -281,6 +287,14 @@ const styles = StyleSheet.create({
     lineHeight: 24,
     color: colors.text,
     textAlign: 'right',
+    fontWeight: '600',
+  },
+  keyPointDetail: {
+    fontSize: 14,
+    lineHeight: 22,
+    color: colors.textMuted,
+    textAlign: 'right',
+    paddingRight: 16,
   },
 
   quoteCard: {
