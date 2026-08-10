@@ -160,7 +160,7 @@ export function ParashaDetailScreen() {
                     color={colors.categorySynagogue}
                   />
                   <Text style={styles.commentaryToggleText}>
-                    {showCommentary ? 'סגור פירוש חז"ל' : 'פירוש חז"ל — מה אמרו חכמים'}
+                    {showCommentary ? 'סגור פירוש ולימוד' : 'פירוש ולימוד — מדרש, חסידות וחב"ד'}
                   </Text>
                 </Pressable>
 
