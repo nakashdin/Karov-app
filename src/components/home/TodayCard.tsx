@@ -82,8 +82,13 @@ export function TodayCard({ cityName, onSynagoguePress, favoriteSynagogue }: Pro
           prayerName = 'מנחה';
           prayerTime = minsToHHMM(Math.round(z.sunset - 25));
         }
-      } else if (nowMins < chatzot) {
+      } else if (nowMins < z.sunrise) {
+        // Before sunrise — show when shacharit starts
         prayerName = 'שחרית';
+        prayerTime = minsToHHMM(Math.round(z.sunrise));
+      } else if (nowMins < chatzot) {
+        // After sunrise — show latest time to still daven shacharit
+        prayerName = 'סוף שחרית';
         prayerTime = minsToHHMM(Math.round(chatzot));
       } else if (nowMins < z.sunset) {
         prayerName = 'מנחה';

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { TZADDIK_BIOS } from '../data/tzaddikBios';
 import {
   Image,
   Linking,
@@ -107,6 +108,8 @@ export function PlaceDetailScreen() {
   const [tab, setTab]               = useState<'info' | 'map'>('info');
   const [suggestOpen, setSuggestOpen] = useState(false);
   const [navPickerOpen, setNavPickerOpen] = useState(false);
+  const [bioOpen, setBioOpen]       = useState(true);
+  const [prayerOpen, setPrayerOpen] = useState(false);
 
   useEffect(() => {
     navigation.setOptions({
@@ -137,6 +140,22 @@ export function PlaceDetailScreen() {
   const chips    = buildChips(place);
   const accent   = colors.primary;
   const mapCenter: [number, number] = [place.location.latitude, place.location.longitude];
+
+  const isTzaddikContext = place.type === 'tzaddik_grave' || (place.tags?.includes('tzaddik_grave') ?? false);
+  const bio = isTzaddikContext ? TZADDIK_BIOS[place.id] : undefined;
+
+  const prayerTzaddikTitle = bio
+    ? bio.gender === 'f'  ? `הַצַּדֶּקֶת ${place.name}`
+    : bio.gender === 'group' ? `הַצַּדִּיקִים הַנִּקְבָּרִים כָּאן`
+    : `הַצַּדִּיק ${place.name}`
+    : place.name;
+  const prayerGenitiveHe = bio?.gender === 'f' ? 'ָהּ' : bio?.gender === 'group' ? 'ָם' : 'וֹ';
+  const prayerNoun       = bio?.gender === 'f' ? 'נַפְשָׁהּ'
+                         : bio?.gender === 'group' ? 'נַפְשָׁם' : 'נַפְשׁוֹ';
+  const prayerText =
+    `אָנָּא ה׳ אֱלֹקֵי יִשְׂרָאֵל,\nמֶלֶךְ מַלְכֵי הַמְּלָכִים,` +
+    `\n\nהִנְנִי עוֹמֵד עַל קֶבֶר\n${prayerTzaddikTitle},\nלְעוֹרֵר זְכוּת${prayerGenitiveHe} לְטוֹבָתֵנוּ.` +
+    `\n\nיְהִי רָצוֹן מִלְּפָנֶיךָ ה׳ אֱלֹקֵינוּ וֵאלֹקֵי אֲבוֹתֵינוּ,\nשֶׁיְּהֵא ${prayerNoun} צָרוּר בִּצְרוֹר הַחַיִּים,\nוּזְכוּת${prayerGenitiveHe} תָּגֵן עָלֵינוּ\nוְעַל כָּל יִשְׂרָאֵל,\nאָמֵן.`;
 
   const handleShare = async () => {
     try {
@@ -321,6 +340,83 @@ export function PlaceDetailScreen() {
             </Pressable>
           </ScrollView>
         </SectionCard>
+
+        {/* ── קבר צדיק: על הצדיק ─────────────────────────────── */}
+        {isTzaddikContext && bio && (
+          <View style={[sectionStyles.card, { overflow: 'hidden' }]}>
+            <Pressable style={tzStyles.header} onPress={() => setBioOpen(o => !o)}>
+              <Text style={tzStyles.headerTitle}>
+                {'על '}
+                {bio.gender === 'group' ? 'הצדיקים הנקברים כאן' : place.name}
+              </Text>
+              <Ionicons
+                name={bioOpen ? 'chevron-up' : 'chevron-down'}
+                size={16}
+                color={colors.textFaint}
+              />
+            </Pressable>
+
+            {bioOpen && (
+              <View style={tzStyles.body}>
+                {bio.era ? (
+                  <View style={tzStyles.eraBadge}>
+                    <Text style={tzStyles.eraText}>{bio.era}</Text>
+                  </View>
+                ) : null}
+
+                <Text style={tzStyles.bioText}>{bio.bio}</Text>
+
+                {bio.torahQuote ? (
+                  <View style={tzStyles.quoteBlock}>
+                    <Text style={tzStyles.quoteText}>{bio.torahQuote.text}</Text>
+                    <Text style={tzStyles.quoteSource}>{bio.torahQuote.source}</Text>
+                  </View>
+                ) : null}
+
+                {bio.hillula ? (
+                  <View style={tzStyles.hillulaRow}>
+                    <Ionicons name="flame-outline" size={13} color={colors.tzaddik} />
+                    <Text style={tzStyles.hillulaText}>הילולה: {bio.hillula.label}</Text>
+                  </View>
+                ) : null}
+
+                {bio.torahSources.length > 0 && (
+                  <View style={tzStyles.sourcesRow}>
+                    {bio.torahSources.map((s) => (
+                      <View key={s} style={tzStyles.sourceTag}>
+                        <Text style={tzStyles.sourceTagText}>{s}</Text>
+                      </View>
+                    ))}
+                  </View>
+                )}
+              </View>
+            )}
+          </View>
+        )}
+
+        {/* ── קבר צדיק: תפילה ─────────────────────────────────── */}
+        {isTzaddikContext && (
+          <View style={[sectionStyles.card, { overflow: 'hidden' }]}>
+            <Pressable style={tzStyles.header} onPress={() => setPrayerOpen(o => !o)}>
+              <Text style={tzStyles.headerTitle}>תפילה לקבר הצדיק</Text>
+              <Ionicons
+                name={prayerOpen ? 'chevron-up' : 'chevron-down'}
+                size={16}
+                color={colors.textFaint}
+              />
+            </Pressable>
+
+            {prayerOpen && (
+              <View style={tzStyles.prayerBody}>
+                <Text style={tzStyles.prayerIntro}>
+                  נוהגים לומר תפילה זו בבואם לקבר הצדיק, לבקש שזכותו תעמוד למתפלל.
+                </Text>
+                <Text style={tzStyles.prayerText}>{prayerText}</Text>
+                <Text style={tzStyles.prayerSource}>מנהג ישראל — סדר ביקור קברות</Text>
+              </View>
+            )}
+          </View>
+        )}
 
         {/* ── פרטים ───────────────────────────────────────────── */}
         <SectionCard title="פרטים">
@@ -979,5 +1075,124 @@ const drStyles = StyleSheet.create({
   label: { fontSize: 11, color: colors.textMuted, marginBottom: 2, textAlign: 'right' },
   value: { fontSize: 15, fontWeight: '600', color: colors.text, textAlign: 'right' },
   valuePlaceholder: { color: colors.textMuted, fontWeight: '400' },
+});
+
+// ─── Tzaddik-specific styles ──────────────────────────────────────────────────
+
+const tzStyles = StyleSheet.create({
+  header: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingHorizontal: spacing.lg,
+    paddingVertical: 14,
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderBottomColor: colors.border,
+  },
+  headerTitle: {
+    fontSize: 14,
+    fontWeight: '700',
+    color: colors.text,
+  },
+  body: {
+    padding: spacing.lg,
+    gap: 14,
+  },
+  eraBadge: {
+    alignSelf: 'flex-start',
+    backgroundColor: colors.tzaddik + '18',
+    borderRadius: radius.md,
+    paddingHorizontal: 10,
+    paddingVertical: 4,
+  },
+  eraText: {
+    fontSize: 12,
+    fontWeight: '700',
+    color: colors.tzaddik,
+  },
+  bioText: {
+    fontSize: 14.5,
+    color: colors.text,
+    lineHeight: 24,
+    textAlign: 'right',
+  },
+  quoteBlock: {
+    borderRightWidth: 3,
+    borderRightColor: colors.tzaddik + '88',
+    backgroundColor: colors.tzaddik + '0D',
+    borderRadius: radius.sm,
+    paddingHorizontal: spacing.md,
+    paddingVertical: spacing.sm,
+    gap: 6,
+  },
+  quoteText: {
+    fontSize: 15,
+    fontWeight: '600',
+    color: colors.text,
+    lineHeight: 26,
+    textAlign: 'right',
+    fontStyle: 'italic',
+  },
+  quoteSource: {
+    fontSize: 11,
+    color: colors.textMuted,
+    fontWeight: '600',
+    textAlign: 'right',
+  },
+  hillulaRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 5,
+    alignSelf: 'flex-start',
+  },
+  hillulaText: {
+    fontSize: 12,
+    color: colors.tzaddik,
+    fontWeight: '700',
+  },
+  sourcesRow: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: 6,
+    paddingTop: 4,
+    borderTopWidth: StyleSheet.hairlineWidth,
+    borderTopColor: colors.border,
+  },
+  sourceTag: {
+    backgroundColor: colors.surfaceMuted,
+    borderRadius: 6,
+    paddingHorizontal: 8,
+    paddingVertical: 3,
+  },
+  sourceTagText: {
+    fontSize: 11,
+    color: colors.textMuted,
+    fontWeight: '600',
+  },
+  prayerBody: {
+    padding: spacing.lg,
+    gap: 12,
+  },
+  prayerIntro: {
+    fontSize: 12,
+    color: colors.textMuted,
+    lineHeight: 18,
+    textAlign: 'right',
+  },
+  prayerText: {
+    fontSize: 16,
+    color: colors.text,
+    lineHeight: 30,
+    textAlign: 'center',
+    fontWeight: '500',
+  },
+  prayerSource: {
+    fontSize: 11,
+    color: colors.textFaint,
+    textAlign: 'center',
+    paddingTop: spacing.sm,
+    borderTopWidth: StyleSheet.hairlineWidth,
+    borderTopColor: colors.border,
+  },
 });
 

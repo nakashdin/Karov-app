@@ -65,7 +65,7 @@ export function TabNavigator() {
       })}
     >
       <Tab.Screen name="Favorites" component={FavoritesScreen} options={{ title: 'מועדפים' }} />
-      <Tab.Screen name="Brachot"   component={BrachotScreen}   options={{ title: 'ברכות' }} />
+      <Tab.Screen name="Brachot"   component={BrachotScreen}   options={{ title: 'תפילה' }} />
       <Tab.Screen name="Zmanim"    component={ZmanimScreen}    options={{ title: 'זמני היום' }} />
       <Tab.Screen name="Community" component={CommunityScreen} options={{ title: 'קהילה' }} />
       <Tab.Screen name="Home"      component={HomeScreen}      options={{ title: 'בית' }} />

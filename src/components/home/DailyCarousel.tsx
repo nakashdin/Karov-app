@@ -10,6 +10,7 @@ import { useJewishDayInfo } from '../../hooks/useJewishDayInfo';
 import { useDailyContent, ContentType, TYPE_ICONS, TYPE_NAMES } from '../../hooks/useDailyContent';
 import { RootStackParamList } from '../../navigation/types';
 import { DESKTOP_BREAKPOINT } from '../Screen';
+import { TEHILLIM_WEEKLY } from '../../data/tehillim';
 
 type Nav = NativeStackNavigationProp<RootStackParamList>;
 
@@ -29,6 +30,8 @@ export function DailyCarousel({ parasha }: Props) {
   const { width } = useWindowDimensions();
   const isDesktop = Platform.OS === 'web' && width >= DESKTOP_BREAKPOINT;
   const [openModal, setOpenModal] = useState<null | 'karov' | 'jewish-day'>(null);
+
+  const todayTehillim = TEHILLIM_WEEKLY[new Date().getDay()];
 
   const card1 = (
     <Pressable
@@ -106,6 +109,32 @@ export function DailyCarousel({ parasha }: Props) {
     </Pressable>
   );
 
+  const card4 = (
+    <Pressable
+      style={({ pressed }) => [
+        styles.card,
+        isDesktop && styles.cardDesktop,
+        { backgroundColor: '#F0EFFC' },
+        pressed && styles.pressed,
+      ]}
+      onPress={() => navigation.navigate('Tabs', { screen: 'Brachot' })}
+    >
+      <View style={[styles.iconBadge, { backgroundColor: '#D9D5F7' }]}>
+        <Text style={styles.badgeIcon}>{todayTehillim?.emoji ?? '📜'}</Text>
+      </View>
+      <Text style={[styles.tag, { color: '#5B4FCF' }]}>תהילים היום</Text>
+      <Text style={styles.cardTitle} numberOfLines={1}>
+        {todayTehillim ? todayTehillim.longDay : 'ספר תהילים'}
+      </Text>
+      <Text style={styles.cardBody} numberOfLines={isDesktop ? 6 : 4}>
+        {todayTehillim
+          ? `פרקים ${todayTehillim.from}–${todayTehillim.to} • ${todayTehillim.to - todayTehillim.from + 1} פרקים להיום`
+          : 'קרא את תהילים היום'}
+      </Text>
+      <Text style={[styles.cta, { color: '#5B4FCF' }]}>לקריאה ←</Text>
+    </Pressable>
+  );
+
   const modal = (
     <Modal
       visible={openModal !== null}
@@ -178,6 +207,7 @@ export function DailyCarousel({ parasha }: Props) {
           {card1}
           {card2}
           {card3}
+          {card4}
         </View>
         {modal}
       </>
@@ -197,6 +227,7 @@ export function DailyCarousel({ parasha }: Props) {
         {card1}
         {card2}
         {card3}
+        {card4}
       </ScrollView>
       {modal}
     </>
