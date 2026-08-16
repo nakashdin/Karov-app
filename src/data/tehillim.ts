@@ -14,6 +14,28 @@ export interface TehillimDay {
   emoji: string;
 }
 
+// ── Hebrew numeral helper ──────────────────────────────────────────────────────
+// Traditional Jewish convention: 15 = ט"ו, 16 = ט"ז (avoid spelling divine names)
+const GERESH = '׳';     // ׳
+const GERSHAYIM = '״';  // ״
+const ONES_H = ['', 'א', 'ב', 'ג', 'ד', 'ה', 'ו', 'ז', 'ח', 'ט'];
+const TENS_H = ['', 'י', 'כ', 'ל', 'מ', 'נ', 'ס', 'ע', 'פ', 'צ'];
+const HUNDREDS_H = ['', 'ק', 'ר', 'ש', 'ת'];
+
+export function numToHebrew(n: number): string {
+  if (n <= 0 || n > 999) return String(n);
+  const parts: string[] = [];
+  if (n >= 100) { parts.push(HUNDREDS_H[Math.floor(n / 100)]); n %= 100; }
+  if (n === 15) { parts.push(ONES_H[9], ONES_H[6]); }      // ט + ו
+  else if (n === 16) { parts.push(ONES_H[9], ONES_H[7]); } // ט + ז
+  else {
+    if (n >= 10) { parts.push(TENS_H[Math.floor(n / 10)]); n %= 10; }
+    if (n > 0) parts.push(ONES_H[n]);
+  }
+  if (parts.length === 1) return parts[0] + GERESH;
+  return parts.slice(0, -1).join('') + GERSHAYIM + parts[parts.length - 1];
+}
+
 export const TEHILLIM_WEEKLY: TehillimDay[] = [
   { dayIndex: 0, heDay: 'ראשון',  longDay: 'יום ראשון',  liDay: 'ליום ראשון',  from: 1,   to: 29,  emoji: '☀️' },
   { dayIndex: 1, heDay: 'שני',    longDay: 'יום שני',    liDay: 'ליום שני',    from: 30,  to: 50,  emoji: '🌙' },

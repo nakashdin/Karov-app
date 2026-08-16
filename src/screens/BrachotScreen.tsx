@@ -18,6 +18,7 @@ import {
   TEHILLIM_WEEKLY,
   TehillimDay,
   getDayForChapter,
+  numToHebrew,
 } from '../data/tehillim';
 import { TEHILLIM_TEXT } from '../data/tehillimText';
 
@@ -179,7 +180,7 @@ export function BrachotScreen() {
                     <Text style={[styles.dayName, isToday && styles.dayNameToday]}>
                       {day.liDay}
                     </Text>
-                    <Text style={styles.dayRange2}>פרקים {day.from}–{day.to}</Text>
+                    <Text style={styles.dayRange2}>פרקים {numToHebrew(day.from)}–{numToHebrew(day.to)}</Text>
                   </View>
                   {isToday ? (
                     <View style={styles.todayBadge}>
@@ -221,7 +222,7 @@ export function BrachotScreen() {
         </View>
 
         <Text style={styles.dayRange}>
-          פרקים {day.from}–{day.to}
+          פרקים {numToHebrew(day.from)}–{numToHebrew(day.to)}
         </Text>
 
         <ScrollView showsVerticalScrollIndicator={false}>
@@ -238,7 +239,7 @@ export function BrachotScreen() {
                 }
               >
                 <View style={styles.chapterNumBox}>
-                  <Text style={styles.chapterNumText}>{ch.num}</Text>
+                  <Text style={styles.chapterNumText}>{numToHebrew(ch.num)}</Text>
                 </View>
                 <View style={styles.chapterInfo}>
                   <Text style={styles.chapterTheme} numberOfLines={1}>
@@ -285,7 +286,7 @@ export function BrachotScreen() {
             <Ionicons name="chevron-forward" size={22} color={colors.primary} />
             <Text style={styles.backText}>{day.longDay}</Text>
           </Pressable>
-          <Text style={styles.headerTitle}>פרק {chapterNum}</Text>
+          <Text style={styles.headerTitle}>פרק {numToHebrew(chapterNum)}</Text>
           <View style={{ width: 60 }} />
         </View>
 
@@ -306,7 +307,7 @@ export function BrachotScreen() {
             <View style={styles.versesBox}>
               {verses.map((v, i) => (
                 <View key={i} style={styles.verseRow}>
-                  <Text style={styles.verseNum}>{i + 1}</Text>
+                  <Text style={styles.verseNum}>{numToHebrew(i + 1)}</Text>
                   <Text style={styles.verseText}>{v}</Text>
                 </View>
               ))}
@@ -340,7 +341,7 @@ export function BrachotScreen() {
             <Text
               style={[styles.navBtnText, !nextNum && styles.navBtnTextDisabled]}
             >
-              {nextNum ? `פרק ${nextNum}` : 'סוף הספר'}
+              {nextNum ? `פרק ${numToHebrew(nextNum)}` : 'סוף הספר'}
             </Text>
           </Pressable>
 
@@ -354,7 +355,7 @@ export function BrachotScreen() {
             <Text
               style={[styles.navBtnText, !prevNum && styles.navBtnTextDisabled]}
             >
-              {prevNum ? `פרק ${prevNum}` : 'תחילת הספר'}
+              {prevNum ? `פרק ${numToHebrew(prevNum)}` : 'תחילת הספר'}
             </Text>
             <Ionicons
               name="chevron-forward"
