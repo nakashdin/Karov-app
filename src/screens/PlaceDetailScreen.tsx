@@ -70,13 +70,14 @@ function buildChips(place: ReturnType<typeof usePlace>['place']): string[] {
 
 // ─── Kashrut certificate ─────────────────────────────────────────────────────
 
+const todayISO = () => new Date().toISOString().slice(0, 10);
+
 /** Label for the certificate link: says whether it is still in force. */
 function certStatusLabel(validUntil?: string): string {
   if (!validUntil) return 'צפייה בתעודה';
-  const today = new Date().toISOString().slice(0, 10);
   const [y, m, d] = validUntil.split('-');
   const he = `${d}.${m}.${y}`;
-  return validUntil < today ? `פג תוקף ב-${he}` : `בתוקף עד ${he}`;
+  return validUntil < todayISO() ? `פג תוקף ב-${he}` : `בתוקף עד ${he}`;
 }
 
 /** The kashrut standards printed on the certificate, as display strings. */
@@ -281,6 +282,25 @@ export function PlaceDetailScreen() {
         {/* ── גלריה ────────────────────────────────────────────── */}
         <SectionCard title="גלריה">
           <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.gallery}>
+            {place.kosherCertUrl ? (() => {
+              const expired = !!place.certificateValidUntil && place.certificateValidUntil < todayISO();
+              const tint = expired ? colors.danger : accent;
+              return (
+                <Pressable
+                  style={[styles.galleryCert, { borderColor: tint + '55', backgroundColor: tint + '0D' }]}
+                  onPress={() => Linking.openURL(place.kosherCertUrl!)}
+                >
+                  <Ionicons name="ribbon-outline" size={30} color={tint} />
+                  <Text style={[styles.galleryCertTitle, { color: tint }]}>תעודת כשרות</Text>
+                  {place.certifiedBy ? (
+                    <Text style={styles.galleryCertBody} numberOfLines={1}>{place.certifiedBy}</Text>
+                  ) : null}
+                  <Text style={[styles.galleryCertBody, expired && { color: colors.danger }]} numberOfLines={1}>
+                    {certStatusLabel(place.certificateValidUntil)}
+                  </Text>
+                </Pressable>
+              );
+            })() : null}
             {place.imageUrl ? (
               <Image source={{ uri: place.imageUrl }} style={styles.galleryImage} resizeMode="cover" />
             ) : (
@@ -288,9 +308,11 @@ export function PlaceDetailScreen() {
                 <View style={[styles.galleryPlaceholder, { backgroundColor: accent + '11' }]}>
                   <Ionicons name="image-outline" size={32} color={accent + '55'} />
                 </View>
-                <View style={[styles.galleryPlaceholder, { backgroundColor: accent + '11' }]}>
-                  <Ionicons name="image-outline" size={32} color={accent + '55'} />
-                </View>
+                {!place.kosherCertUrl ? (
+                  <View style={[styles.galleryPlaceholder, { backgroundColor: accent + '11' }]}>
+                    <Ionicons name="image-outline" size={32} color={accent + '55'} />
+                  </View>
+                ) : null}
               </>
             )}
             <Pressable style={[styles.galleryAdd, { borderColor: accent }]} onPress={() => setSuggestOpen(true)}>
@@ -810,6 +832,22 @@ const styles = StyleSheet.create({
     borderRadius: radius.md,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  galleryCert: {
+    width: 130,
+    height: 140,
+    borderRadius: radius.md,
+    borderWidth: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingHorizontal: spacing.sm,
+    gap: 5,
+  },
+  galleryCertTitle: { fontSize: 13, fontWeight: '700' },
+  galleryCertBody: {
+    fontSize: 11,
+    color: colors.textMuted,
+    textAlign: 'center',
   },
 
   // Rating big
