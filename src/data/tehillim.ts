@@ -8,19 +8,20 @@ export interface TehillimDay {
   dayIndex: number;
   heDay: string;
   longDay: string;
+  liDay: string;
   from: number;
   to: number;
   emoji: string;
 }
 
 export const TEHILLIM_WEEKLY: TehillimDay[] = [
-  { dayIndex: 0, heDay: 'ראשון',  longDay: 'יום ראשון',  from: 1,   to: 29,  emoji: '☀️' },
-  { dayIndex: 1, heDay: 'שני',    longDay: 'יום שני',    from: 30,  to: 50,  emoji: '🌙' },
-  { dayIndex: 2, heDay: 'שלישי', longDay: 'יום שלישי', from: 51,  to: 72,  emoji: '⭐' },
-  { dayIndex: 3, heDay: 'רביעי', longDay: 'יום רביעי', from: 73,  to: 89,  emoji: '🌟' },
-  { dayIndex: 4, heDay: 'חמישי', longDay: 'יום חמישי', from: 90,  to: 106, emoji: '✨' },
-  { dayIndex: 5, heDay: 'שישי',  longDay: 'יום שישי',  from: 107, to: 119, emoji: '🕯️' },
-  { dayIndex: 6, heDay: 'שבת',   longDay: 'שבת קודש',  from: 120, to: 150, emoji: '✡️' },
+  { dayIndex: 0, heDay: 'ראשון',  longDay: 'יום ראשון',  liDay: 'ליום ראשון',  from: 1,   to: 29,  emoji: '☀️' },
+  { dayIndex: 1, heDay: 'שני',    longDay: 'יום שני',    liDay: 'ליום שני',    from: 30,  to: 50,  emoji: '🌙' },
+  { dayIndex: 2, heDay: 'שלישי', longDay: 'יום שלישי', liDay: 'ליום שלישי', from: 51,  to: 72,  emoji: '⭐' },
+  { dayIndex: 3, heDay: 'רביעי', longDay: 'יום רביעי', liDay: 'ליום רביעי', from: 73,  to: 89,  emoji: '🌟' },
+  { dayIndex: 4, heDay: 'חמישי', longDay: 'יום חמישי', liDay: 'ליום חמישי', from: 90,  to: 106, emoji: '✨' },
+  { dayIndex: 5, heDay: 'שישי',  longDay: 'יום שישי',  liDay: 'ליום שישי',  from: 107, to: 119, emoji: '🕯️' },
+  { dayIndex: 6, heDay: 'שבת',   longDay: 'שבת קודש',  liDay: 'לשבת קודש',  from: 120, to: 150, emoji: '✡️' },
 ];
 
 export const TEHILLIM_INTRO = {

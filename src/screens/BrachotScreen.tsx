@@ -27,6 +27,7 @@ type ViewState =
   | { type: 'list' }
   | { type: 'nusach'; blessing: Blessing }
   | { type: 'text'; blessing: Blessing; nusach?: Nusach }
+  | { type: 'tehillim_days' }
   | { type: 'tehillim_day'; day: TehillimDay }
   | { type: 'tehillim_chapter'; chapterNum: number; day: TehillimDay };
 
@@ -141,6 +142,61 @@ export function BrachotScreen() {
     );
   }
 
+  // ── Tehillim: day picker (ליום ראשון…) ───────────────────────────────────
+  if (view.type === 'tehillim_days') {
+    const todayIndex = new Date().getDay();
+    return (
+      <Screen padded>
+        <View style={styles.header}>
+          <Pressable
+            onPress={() => setView({ type: 'list' })}
+            style={styles.backBtn}
+            hitSlop={10}
+          >
+            <Ionicons name="chevron-forward" size={22} color={colors.primary} />
+            <Text style={styles.backText}>תפילה</Text>
+          </Pressable>
+          <Text style={styles.headerTitle}>ספר תהילים</Text>
+          <View style={{ width: 60 }} />
+        </View>
+
+        <ScrollView showsVerticalScrollIndicator={false}>
+          <View style={styles.daysGrid}>
+            {TEHILLIM_WEEKLY.map((day) => {
+              const isToday = day.dayIndex === todayIndex;
+              return (
+                <Pressable
+                  key={day.dayIndex}
+                  style={({ pressed }) => [
+                    styles.dayCardFull,
+                    isToday && styles.dayCardToday,
+                    pressed && styles.pressed,
+                  ]}
+                  onPress={() => setView({ type: 'tehillim_day', day })}
+                >
+                  <Text style={styles.dayEmoji}>{day.emoji}</Text>
+                  <View style={styles.dayCardInfo}>
+                    <Text style={[styles.dayName, isToday && styles.dayNameToday]}>
+                      {day.liDay}
+                    </Text>
+                    <Text style={styles.dayRange2}>פרקים {day.from}–{day.to}</Text>
+                  </View>
+                  {isToday ? (
+                    <View style={styles.todayBadge}>
+                      <Text style={styles.todayBadgeText}>היום</Text>
+                    </View>
+                  ) : null}
+                  <Ionicons name="chevron-back" size={16} color={isToday ? colors.primary : colors.textMuted} />
+                </Pressable>
+              );
+            })}
+          </View>
+          <View style={{ height: 40 }} />
+        </ScrollView>
+      </Screen>
+    );
+  }
+
   // ── Tehillim: day chapter list ────────────────────────────────────────────
   if (view.type === 'tehillim_day') {
     const { day } = view;
@@ -151,12 +207,12 @@ export function BrachotScreen() {
       <Screen padded>
         <View style={styles.header}>
           <Pressable
-            onPress={() => setView({ type: 'list' })}
+            onPress={() => setView({ type: 'tehillim_days' })}
             style={styles.backBtn}
             hitSlop={10}
           >
             <Ionicons name="chevron-forward" size={22} color={colors.primary} />
-            <Text style={styles.backText}>תהילים</Text>
+            <Text style={styles.backText}>ספר תהילים</Text>
           </Pressable>
           <Text style={styles.headerTitle}>
             {day.emoji} {day.longDay}
@@ -322,7 +378,7 @@ export function BrachotScreen() {
         ? setView({ type: 'nusach', blessing: b })
         : setView({ type: 'text', blessing: b })
     }
-    onDay={(d) => setView({ type: 'tehillim_day', day: d })}
+    onTehillim={() => setView({ type: 'tehillim_days' })}
     onChapter={(num, day) =>
       setView({ type: 'tehillim_chapter', chapterNum: num, day })
     }
@@ -336,7 +392,7 @@ interface ListProps {
   setQuery: (q: string) => void;
   todayIndex: number;
   onBlessing: (b: Blessing) => void;
-  onDay: (d: TehillimDay) => void;
+  onTehillim: () => void;
   onChapter: (num: number, day: TehillimDay) => void;
 }
 
@@ -345,7 +401,7 @@ function TfilaListView({
   setQuery,
   todayIndex,
   onBlessing,
-  onDay,
+  onTehillim,
   onChapter,
 }: ListProps) {
   const allBlessings = useMemo(
@@ -474,45 +530,24 @@ function TfilaListView({
           {/* ── Tehillim section ── */}
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>ספר תהילים</Text>
-
-            {/* Intro blurb */}
-            <View style={styles.tehillimIntroCard}>
-              <Text style={styles.tehillimIntroText} numberOfLines={3}>
-                {TEHILLIM_INTRO.body}
-              </Text>
-            </View>
-
-            {/* 7-day grid */}
-            <View style={styles.daysGrid}>
-              {TEHILLIM_WEEKLY.map((day) => {
-                const isToday = day.dayIndex === todayIndex;
-                return (
-                  <Pressable
-                    key={day.dayIndex}
-                    style={({ pressed }) => [
-                      styles.dayCard,
-                      isToday && styles.dayCardToday,
-                      pressed && styles.pressed,
-                    ]}
-                    onPress={() => onDay(day)}
-                  >
-                    <Text style={styles.dayEmoji}>{day.emoji}</Text>
-                    <Text
-                      style={[styles.dayName, isToday && styles.dayNameToday]}
-                    >
-                      {day.heDay}
-                    </Text>
-                    <Text style={styles.dayRange2}>
-                      {day.from}–{day.to}
-                    </Text>
-                    {isToday ? (
-                      <View style={styles.todayBadge}>
-                        <Text style={styles.todayBadgeText}>היום</Text>
-                      </View>
-                    ) : null}
-                  </Pressable>
-                );
-              })}
+            <View style={styles.cards}>
+              <Pressable
+                style={({ pressed }) => [styles.card, pressed && styles.pressed]}
+                onPress={onTehillim}
+              >
+                <View style={[styles.cardIcon, { backgroundColor: '#EEE8FB' }]}>
+                  <Text style={styles.emoji}>📜</Text>
+                </View>
+                <View style={styles.cardText}>
+                  <Text style={styles.cardTitle}>ספר תהילים</Text>
+                  <Text style={styles.cardSub}>
+                    {TEHILLIM_WEEKLY[todayIndex]
+                      ? `${TEHILLIM_WEEKLY[todayIndex].liDay} — פרקים ${TEHILLIM_WEEKLY[todayIndex].from}–${TEHILLIM_WEEKLY[todayIndex].to}`
+                      : '150 פרקים, חלוקה שבועית'}
+                  </Text>
+                </View>
+                <Ionicons name="chevron-back" size={16} color={colors.textMuted} />
+              </Pressable>
             </View>
           </View>
 
@@ -640,50 +675,50 @@ const styles = StyleSheet.create({
     textAlign: 'right',
   },
 
-  // Days grid
+  // Days grid (used in tehillim_days view)
   daysGrid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
     gap: 8,
   },
-  dayCard: {
-    width: '30%',
-    flexGrow: 1,
+  dayCardFull: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 14,
     backgroundColor: colors.surface,
     borderRadius: radius.lg,
-    padding: 10,
-    alignItems: 'center',
-    gap: 3,
+    paddingVertical: 14,
+    paddingHorizontal: spacing.lg,
     borderWidth: 0.5,
     borderColor: colors.border,
-    ...shadow.card,
-    position: 'relative',
-    minWidth: 90,
   },
   dayCardToday: {
     borderColor: colors.primary,
     backgroundColor: colors.primaryLight,
   },
-  dayEmoji: { fontSize: 22 },
+  dayCardInfo: {
+    flex: 1,
+  },
+  dayEmoji: { fontSize: 26 },
   dayName: {
-    fontSize: 13,
+    fontSize: 16,
     fontWeight: '700',
     color: colors.text,
+    textAlign: 'right',
   },
   dayNameToday: { color: colors.primary },
   dayRange2: {
-    fontSize: 10,
+    fontSize: 12,
     color: colors.textMuted,
+    textAlign: 'right',
+    marginTop: 2,
   },
   todayBadge: {
     backgroundColor: colors.primary,
     borderRadius: 8,
-    paddingHorizontal: 6,
-    paddingVertical: 2,
-    marginTop: 2,
+    paddingHorizontal: 8,
+    paddingVertical: 3,
   },
   todayBadgeText: {
-    fontSize: 9,
+    fontSize: 10,
     fontWeight: '700',
     color: '#fff',
   },
