@@ -499,7 +499,7 @@ function TfilaListView({
                       onPress={() => onChapter(ch.num, day)}
                     >
                       <View style={styles.chapterNumBox}>
-                        <Text style={styles.chapterNumText}>{ch.num}</Text>
+                        <Text style={styles.chapterNumText}>{numToHebrew(ch.num)}</Text>
                       </View>
                       <View style={styles.chapterInfo}>
                         <Text style={styles.chapterTheme} numberOfLines={1}>
@@ -543,7 +543,7 @@ function TfilaListView({
                   <Text style={styles.cardTitle}>ספר תהילים</Text>
                   <Text style={styles.cardSub}>
                     {TEHILLIM_WEEKLY[todayIndex]
-                      ? `${TEHILLIM_WEEKLY[todayIndex].liDay} — פרקים ${TEHILLIM_WEEKLY[todayIndex].from}–${TEHILLIM_WEEKLY[todayIndex].to}`
+                      ? `${TEHILLIM_WEEKLY[todayIndex].liDay} — פרקים ${numToHebrew(TEHILLIM_WEEKLY[todayIndex].from)}–${numToHebrew(TEHILLIM_WEEKLY[todayIndex].to)}`
                       : '150 פרקים, חלוקה שבועית'}
                   </Text>
                 </View>
