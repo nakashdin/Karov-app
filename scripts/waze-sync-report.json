@@ -1,0 +1,3215 @@
+[
+  {
+    "id": "manual-winery-scoria",
+    "name": "יקב סקוריה",
+    "city": "כנף",
+    "address": "מושב כנף, רמת הגולן",
+    "from": {
+      "lat": 32.83,
+      "lon": 35.755
+    },
+    "action": "no-match"
+  },
+  {
+    "id": "humuskaspy-b368c7f2",
+    "name": "חומוס כספי",
+    "city": "פתח תקווה",
+    "address": "יעל רום 8, אם המושבות, פתח תקווה",
+    "from": {
+      "lat": 32.09870529174805,
+      "lon": 34.88157653808594
+    },
+    "waze": {
+      "lat": 32.09870529174805,
+      "lon": 34.88157653808594,
+      "label": "Ya'el Rom St 8, Petah Tikva",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "manual-aroma-jerusalem-arena",
+    "name": "ארומה היכל הספורט ארנה",
+    "city": "ירושלים",
+    "address": "דרך דוד בנבנישתי 1, ירושלים",
+    "from": {
+      "lat": 31.751317977905273,
+      "lon": 35.19416427612305
+    },
+    "waze": {
+      "lat": 31.751317977905273,
+      "lon": 35.19416427612305,
+      "label": "Derech David Banbanishty 1, Jerusalem",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "manual-aroma-bat-yam-rothschild",
+    "name": "ארומה רוטשילד",
+    "city": "בת ים",
+    "address": "רוטשילד 29, בת ים",
+    "from": {
+      "lat": 32.023,
+      "lon": 34.751
+    },
+    "waze": {
+      "lat": 32.02707290649414,
+      "lon": 34.74766159057617,
+      "label": "Rothschild St, Bat Yam",
+      "d": 552
+    },
+    "action": "needs-review",
+    "reason": "552m move onto an unspecific result (\"Rothschild St, Bat Yam\")"
+  },
+  {
+    "id": "hakosem-8e7ea237",
+    "name": "הקוסם",
+    "city": "תל אביב",
+    "address": "שלמה המלך 1, תל אביב",
+    "from": {
+      "lat": 32.07638931274414,
+      "lon": 34.77668380737305
+    },
+    "waze": {
+      "lat": 32.07638931274414,
+      "lon": 34.77668380737305,
+      "label": "Shlomo HaMelekh St 1, Tel Aviv-Yafo",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "passador-yigal-59fe7f9a",
+    "name": "פסאדור",
+    "city": "תל אביב",
+    "address": "יגאל אלון 94, תל אביב",
+    "from": {
+      "lat": 32.068519,
+      "lon": 34.794142
+    },
+    "waze": {
+      "lat": 32.06852340698242,
+      "lon": 34.79413986206055,
+      "label": "Yigal Alon St 94, Tel Aviv-Yafo, 6789139",
+      "d": 1
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-winery-cheetah",
+    "name": "יקב צ'יטה",
+    "city": "אבן יהודה",
+    "address": "טכנו-פארק אבן יהודה",
+    "from": {
+      "lat": 32.281764,
+      "lon": 34.894757
+    },
+    "waze": {
+      "lat": 32.270042419433594,
+      "lon": 34.88096237182617,
+      "label": "Even Yehuda",
+      "d": 1839
+    },
+    "action": "city-fallback",
+    "reason": "Waze returned the town centre, not the venue"
+  },
+  {
+    "id": "tzohar-winery-dreyer",
+    "name": "יקב משק דרייר",
+    "city": "באר מילכה",
+    "address": "באר מילכה, נגב",
+    "from": {
+      "lat": 30.934112,
+      "lon": 34.405643
+    },
+    "action": "no-match"
+  },
+  {
+    "id": "tzohar-winery-kerem-barak",
+    "name": "כרם ברק",
+    "city": "בקוע",
+    "address": "בקוע",
+    "from": {
+      "lat": 31.826091,
+      "lon": 34.921677
+    },
+    "waze": {
+      "lat": 31.826091766357422,
+      "lon": 34.92167663574219,
+      "label": "משק 46, בקוע, 9975500",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-winery-kahanov",
+    "name": "יקב כהנוב",
+    "city": "גדרה",
+    "address": "גדרה",
+    "from": {
+      "lat": 31.812008,
+      "lon": 34.777435
+    },
+    "waze": {
+      "lat": 31.825347900390625,
+      "lon": 34.770408630371094,
+      "label": "בלב הכרמים, Gedera",
+      "d": 1625
+    },
+    "action": "needs-review",
+    "reason": "1625m move onto an unspecific result (\"בלב הכרמים, Gedera\")"
+  },
+  {
+    "id": "tzohar-winery-hayogev8",
+    "name": "יקב היוגב 8",
+    "city": "היוגב",
+    "address": "מושב יוגב, עמק יזרעאל",
+    "from": {
+      "lat": 32.6083869934082,
+      "lon": 35.19691467285156
+    },
+    "waze": {
+      "lat": 32.6083869934082,
+      "lon": 35.19691467285156,
+      "label": "החורש 46 ב, HaYogev, 1923200",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-winery-reuveni",
+    "name": "יקב ראובני",
+    "city": "ירושלים",
+    "address": "גלבר 19, ירושלים",
+    "from": {
+      "lat": 31.759522,
+      "lon": 35.180434
+    },
+    "waze": {
+      "lat": 31.763208389282227,
+      "lon": 35.2031364440918,
+      "label": "Ma'ale Aharon Reuveni, Jerusalem",
+      "d": 2185
+    },
+    "action": "needs-review",
+    "reason": "2185m move onto an unspecific result (\"Ma'ale Aharon Reuveni, Jerusalem\")"
+  },
+  {
+    "id": "tzohar-winery-decanter",
+    "name": "יקב דיקנטר",
+    "city": "כפר בילו",
+    "address": "כפר בילו, רחובות",
+    "from": {
+      "lat": 31.874553680419922,
+      "lon": 34.821876525878906
+    },
+    "waze": {
+      "lat": 31.874553680419922,
+      "lon": 34.821876525878906,
+      "label": "Ha-Meyasdim St 33, Kfar Bilu, 7696500",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-winery-mika",
+    "name": "יקב מיקה",
+    "city": "מושב נטור",
+    "address": "מושב נטור, רמת הגולן",
+    "from": {
+      "lat": 32.854068,
+      "lon": 35.752574
+    },
+    "action": "no-match"
+  },
+  {
+    "id": "tzohar-winery-malul",
+    "name": "יקב מלול",
+    "city": "מושב שעל",
+    "address": "מושב שעל, רמת הגולן",
+    "from": {
+      "lat": 33.117624,
+      "lon": 35.718004
+    },
+    "waze": {
+      "lat": 33.11653137207031,
+      "lon": 35.718814849853516,
+      "label": "Sha'al",
+      "d": 143
+    },
+    "action": "city-fallback",
+    "reason": "Waze returned the town centre, not the venue"
+  },
+  {
+    "id": "tzohar-winery-neve-yamin",
+    "name": "יקב נווה ימין",
+    "city": "נווה ימין",
+    "address": "הברוש 47, נווה ימין",
+    "from": {
+      "lat": 32.174028,
+      "lon": 34.94585
+    },
+    "waze": {
+      "lat": 32.17169189453125,
+      "lon": 34.93937683105469,
+      "label": "Neve Yamin",
+      "d": 662
+    },
+    "action": "city-fallback",
+    "reason": "Waze returned the town centre, not the venue"
+  },
+  {
+    "id": "tzohar-winery-tzuf",
+    "name": "יקב צוף",
+    "city": "ערד",
+    "address": "ערד, הנגב",
+    "from": {
+      "lat": 31.247791290283203,
+      "lon": 35.20238494873047
+    },
+    "waze": {
+      "lat": 31.247791290283203,
+      "lon": 35.20238494873047,
+      "label": "Plada St 25, Arad",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-winery-yona",
+    "name": "יקב יונה",
+    "city": "ציפורי",
+    "address": "ציפורי, הגליל",
+    "from": {
+      "lat": 32.75,
+      "lon": 35.27275085449219
+    },
+    "waze": {
+      "lat": 32.75,
+      "lon": 35.27275085449219,
+      "label": "משק 54, ציפורי",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-winery-livne",
+    "name": "יקב ליבנה",
+    "city": "שדה משה",
+    "address": "שדה משה, שפלת יהודה",
+    "from": {
+      "lat": 31.613636016845703,
+      "lon": 34.802001953125
+    },
+    "waze": {
+      "lat": 31.613636016845703,
+      "lon": 34.802001953125,
+      "label": "Tirosh St 37, Sde Moshe, 79355",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-winery-family-baum",
+    "name": "יקב פאמילי באום ווינרי",
+    "city": "שעל",
+    "address": "מושב שעל, רמת הגולן",
+    "from": {
+      "lat": 33.11653,
+      "lon": 35.718816
+    },
+    "waze": {
+      "lat": 33.11653137207031,
+      "lon": 35.718814849853516,
+      "label": "Sha'al",
+      "d": 0
+    },
+    "action": "city-fallback",
+    "reason": "Waze returned the town centre, not the venue"
+  },
+  {
+    "id": "tzohar-winery-shorer",
+    "name": "יקב שורר",
+    "city": "תלמי יחיאל",
+    "address": "תלמי יחיאל",
+    "from": {
+      "lat": 31.75541877746582,
+      "lon": 34.755401611328125
+    },
+    "waze": {
+      "lat": 31.75541877746582,
+      "lon": 34.755401611328125,
+      "label": "החקלאים 80, Talmei Yehi'el, 7981000",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0001",
+    "name": "לחם בורקין",
+    "city": "בנימינה",
+    "address": "המלאכה 6",
+    "from": {
+      "lat": 32.513772,
+      "lon": 34.948071
+    },
+    "waze": {
+      "lat": 32.5137825012207,
+      "lon": 34.94809341430664,
+      "label": "אזור תעשיה, HaMelacha 6, Binyamina Giv'at Ada",
+      "d": 2
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0002",
+    "name": "רון פטיסרי RON Pâtisserie",
+    "city": "בנימינה",
+    "address": "המייסדים 30",
+    "from": {
+      "lat": 32.521011,
+      "lon": 34.948875
+    },
+    "waze": {
+      "lat": 32.52101135253906,
+      "lon": 34.948875427246094,
+      "label": "Ha-Meyasdim St 30, Binyamina-Giv'at Ada, 3053828",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0003",
+    "name": "פת שטינבך מאפייה חשמלית",
+    "city": "חיפה",
+    "address": "דרך יפו 28",
+    "from": {
+      "lat": 32.819043,
+      "lon": 34.998118
+    },
+    "action": "no-match"
+  },
+  {
+    "id": "tzohar-food-0004",
+    "name": "לאוון פטיסרי Leaven Patisserie",
+    "city": "פרדס חנה",
+    "address": "המושב 33",
+    "from": {
+      "lat": 32.473703,
+      "lon": 34.993109
+    },
+    "waze": {
+      "lat": 32.47370147705078,
+      "lon": 34.993106842041016,
+      "label": "Ha-Moshav St 33, Pardes Hanna-Karkur, 3706933",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0005",
+    "name": "פטיסרי צביאלי",
+    "city": "רחובות",
+    "address": "אחד העם 4",
+    "from": {
+      "lat": 31.896805,
+      "lon": 34.812216
+    },
+    "waze": {
+      "lat": 31.894365310668945,
+      "lon": 34.81153106689453,
+      "label": "Rehovot",
+      "d": 279
+    },
+    "action": "city-fallback",
+    "reason": "Waze returned the town centre, not the venue"
+  },
+  {
+    "id": "tzohar-food-0007",
+    "name": "לה בון פטיסרי קונדיטוריה (בן יהודה)",
+    "city": "תל אביב",
+    "address": "בן יהודה 96",
+    "from": {
+      "lat": 32.082171,
+      "lon": 34.771164
+    },
+    "waze": {
+      "lat": 32.08210372924805,
+      "lon": 34.7711181640625,
+      "label": "Ben Yehuda St 96, Tel Aviv-Yafo",
+      "d": 9
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0008",
+    "name": "לה בון פטיסרי קונדיטוריה (דיזנגוף)",
+    "city": "תל אביב",
+    "address": "דיזנגוף 209",
+    "from": {
+      "lat": 32.088379,
+      "lon": 34.775111
+    },
+    "waze": {
+      "lat": 32.088382720947266,
+      "lon": 34.77513885498047,
+      "label": "Dizengoff St 209, Tel Aviv-Yafo",
+      "d": 3
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0009",
+    "name": "מאפיית סניורה",
+    "city": "תל אביב",
+    "address": "קומפורט 9",
+    "from": {
+      "lat": 32.057926,
+      "lon": 34.766376
+    },
+    "waze": {
+      "lat": 32.0581169128418,
+      "lon": 34.76679229736328,
+      "label": "HaRabi MiBachrach St 3, Tel Aviv-Yafo, 6684935",
+      "d": 45
+    },
+    "action": "needs-review",
+    "reason": "house number 9 (ours) vs 3 (waze)"
+  },
+  {
+    "id": "tzohar-food-0010",
+    "name": "בזל בייקרי",
+    "city": "תל אביב",
+    "address": "בזל 34",
+    "from": {
+      "lat": 32.089847,
+      "lon": 34.779213
+    },
+    "waze": {
+      "lat": 32.089813232421875,
+      "lon": 34.779205322265625,
+      "label": "Basel St 34, Tel Aviv-Yafo",
+      "d": 4
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0011",
+    "name": "קפה דאז",
+    "city": "בנימינה",
+    "address": "הכרמל 55",
+    "from": {
+      "lat": 32.52145,
+      "lon": 34.951223
+    },
+    "waze": {
+      "lat": 32.52145004272461,
+      "lon": 34.95122146606445,
+      "label": "Carmel St 55, Binyamina-Giv'at Ada, 3053528",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0012",
+    "name": "טחנת הקפה",
+    "city": "ירושלים",
+    "address": "עמק רפאים 23",
+    "from": {
+      "lat": 31.764757,
+      "lon": 35.220954
+    },
+    "waze": {
+      "lat": 31.76475715637207,
+      "lon": 35.22095489501953,
+      "label": "Emek Refa'im St 23, Jerusalem",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0013",
+    "name": "כולה קפה",
+    "city": "ירושלים",
+    "address": "כט נובמבר 10",
+    "from": {
+      "lat": 31.766517,
+      "lon": 35.21514
+    },
+    "waze": {
+      "lat": 31.77688217163086,
+      "lon": 35.222434997558594,
+      "label": "Jerusalem",
+      "d": 1343
+    },
+    "action": "city-fallback",
+    "reason": "Waze returned the town centre, not the venue"
+  },
+  {
+    "id": "tzohar-food-0014",
+    "name": "קפה במפעל",
+    "city": "ירושלים",
+    "address": "המערבים 3",
+    "from": {
+      "lat": 31.776979,
+      "lon": 35.221408
+    },
+    "waze": {
+      "lat": 31.77688217163086,
+      "lon": 35.222434997558594,
+      "label": "Jerusalem",
+      "d": 98
+    },
+    "action": "city-fallback",
+    "reason": "Waze returned the town centre, not the venue"
+  },
+  {
+    "id": "tzohar-food-0015",
+    "name": "קפה קרוסלה",
+    "city": "ירושלים",
+    "address": "מטודלה 1 פינת עזה",
+    "from": {
+      "lat": 31.772205352783203,
+      "lon": 35.213294982910156
+    },
+    "waze": {
+      "lat": 31.772205352783203,
+      "lon": 35.213294982910156,
+      "label": "Binyamin mi-Tudela St 1, Jerusalem, 92305",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0016",
+    "name": "קפה המייסדים 65",
+    "city": "כפר קיש",
+    "address": "המייסדים 65",
+    "from": {
+      "lat": 32.66706085205078,
+      "lon": 35.44978332519531
+    },
+    "waze": {
+      "lat": 32.66706085205078,
+      "lon": 35.44978332519531,
+      "label": "HaMeyasdim St 65, Kfar Kisch",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0017",
+    "name": "קפה מושיץ",
+    "city": "מחניים",
+    "address": "מחניים",
+    "from": {
+      "lat": 32.99030685424805,
+      "lon": 35.5691032409668
+    },
+    "waze": {
+      "lat": 32.99030685424805,
+      "lon": 35.5691032409668,
+      "label": "Mahanayim",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0018",
+    "name": "קפה חממת הסחלבים",
+    "city": "מעלה החמישה",
+    "address": "קיבוץ מעלה החמישה",
+    "from": {
+      "lat": 31.817429,
+      "lon": 35.109406
+    },
+    "waze": {
+      "lat": 31.818199157714844,
+      "lon": 35.11335754394531,
+      "label": "חממת הסחלבים, Ma'ale HaHamisha, 9083500",
+      "d": 383
+    },
+    "action": "move"
+  },
+  {
+    "id": "tzohar-food-0019",
+    "name": "קפה לוטוס",
+    "city": "עכו",
+    "address": "ההגנה 10",
+    "from": {
+      "lat": 32.923755,
+      "lon": 35.069527
+    },
+    "action": "no-match"
+  },
+  {
+    "id": "tzohar-food-0020",
+    "name": "קפה חנוךה",
+    "city": "פרדס חנה כרכור",
+    "address": "גלעד 1",
+    "from": {
+      "lat": 32.472371,
+      "lon": 34.974102
+    },
+    "waze": {
+      "lat": 32.472862243652344,
+      "lon": 34.9743766784668,
+      "label": "Gil'ad St 1, Pardes Hanna-Karkur",
+      "d": 60
+    },
+    "action": "city-fallback",
+    "reason": "Waze returned the town centre, not the venue"
+  },
+  {
+    "id": "tzohar-food-0021",
+    "name": "פיקפה",
+    "city": "פרדס חנה כרכור",
+    "address": "דרך פיקא",
+    "from": {
+      "lat": 32.468541,
+      "lon": 34.97107
+    },
+    "waze": {
+      "lat": 32.45847702026367,
+      "lon": 34.96492004394531,
+      "label": "Pardes Hanna-Karkur",
+      "d": 1259
+    },
+    "action": "needs-review",
+    "reason": "1259m move onto an unspecific result (\"Pardes Hanna-Karkur\")"
+  },
+  {
+    "id": "tzohar-food-0022",
+    "name": "קפה פלור",
+    "city": "קרית מוצקין",
+    "address": "שדרות משה גושן 6",
+    "from": {
+      "lat": 32.824706,
+      "lon": 35.078
+    },
+    "waze": {
+      "lat": 32.82465744018555,
+      "lon": 35.077877044677734,
+      "label": "Moshe Goshen Ave 6, Kiryat Motzkin",
+      "d": 13
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0023",
+    "name": "מיקא עגלת קפה",
+    "city": "רמת השרון",
+    "address": "השרף 6",
+    "from": {
+      "lat": 32.138935,
+      "lon": 34.826138
+    },
+    "waze": {
+      "lat": 32.13893508911133,
+      "lon": 34.82613754272461,
+      "label": "Ha-Saraf St 6, Ramat Hasharon",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0024",
+    "name": "סוסקפה",
+    "city": "שדי חמד",
+    "address": "שבעת המינים 1",
+    "from": {
+      "lat": 32.15729522705078,
+      "lon": 34.945247650146484
+    },
+    "waze": {
+      "lat": 32.15729522705078,
+      "lon": 34.945247650146484,
+      "label": "Shiv'at ha-Minim St 1, Sdei Hemed, 4585500",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0026",
+    "name": "קפה רינת",
+    "city": "תל אביב",
+    "address": "אלנבי 57",
+    "from": {
+      "lat": 32.069152,
+      "lon": 34.770868
+    },
+    "waze": {
+      "lat": 32.06915283203125,
+      "lon": 34.77086639404297,
+      "label": "Allenby St 57, Tel Aviv-Yafo",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0027",
+    "name": "איזבל דה פרנש קפה",
+    "city": "תל אביב",
+    "address": "שינקין 4",
+    "from": {
+      "lat": 32.069734,
+      "lon": 34.770915
+    },
+    "waze": {
+      "lat": 32.08530044555664,
+      "lon": 34.781768798828125,
+      "label": "Tel Aviv-Yafo",
+      "d": 2010
+    },
+    "action": "city-fallback",
+    "reason": "Waze returned the town centre, not the venue"
+  },
+  {
+    "id": "tzohar-food-0028",
+    "name": "עורו - קפה בלב שמח",
+    "city": "תל אביב",
+    "address": "הכישור 1, קומה 2, ביתן 107",
+    "from": {
+      "lat": 32.051264,
+      "lon": 34.765314
+    },
+    "waze": {
+      "lat": 32.06472396850586,
+      "lon": 34.7725944519043,
+      "label": "Allenby St 97, Tel Aviv-Yafo",
+      "d": 1646
+    },
+    "action": "needs-review",
+    "reason": "house number 1 (ours) vs 97 (waze)"
+  },
+  {
+    "id": "tzohar-food-0029",
+    "name": "קפה בשדרה",
+    "city": "תל אביב",
+    "address": "רוטשילד 78",
+    "from": {
+      "lat": 32.065414,
+      "lon": 34.77712
+    },
+    "action": "no-match"
+  },
+  {
+    "id": "tzohar-food-0030",
+    "name": "קפה פלור - תל אביב",
+    "city": "תל אביב",
+    "address": "הרצל רוזנבלום 12",
+    "from": {
+      "lat": 32.138635,
+      "lon": 34.791945
+    },
+    "waze": {
+      "lat": 32.138633728027344,
+      "lon": 34.79194641113281,
+      "label": "Herzl Rosenblum St 12, Tel Aviv-Yafo, 69379",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0031",
+    "name": "המטבח של גיא",
+    "city": "אור עקיבא",
+    "address": "שדרות הנשיא וייצמן 1",
+    "from": {
+      "lat": 32.502081,
+      "lon": 34.927059
+    },
+    "waze": {
+      "lat": 32.51034927368164,
+      "lon": 34.9195442199707,
+      "label": "Or Akiva",
+      "d": 1158
+    },
+    "action": "city-fallback",
+    "reason": "Waze returned the town centre, not the venue"
+  },
+  {
+    "id": "tzohar-food-0032",
+    "name": "משק אופיר",
+    "city": "אלון הגליל",
+    "address": "אלון הגליל",
+    "from": {
+      "lat": 32.756874,
+      "lon": 35.220294
+    },
+    "waze": {
+      "lat": 32.76329803466797,
+      "lon": 35.22248458862305,
+      "label": "אין שם רחוב אלון הגליל, 1792000",
+      "d": 743
+    },
+    "action": "needs-review",
+    "reason": "743m move onto an unspecific result (\"אין שם רחוב אלון הגליל, 1792000\")"
+  },
+  {
+    "id": "tzohar-food-0033",
+    "name": "ג'וסי לוסי",
+    "city": "אלפי מנשה",
+    "address": "גלבוע 83",
+    "from": {
+      "lat": 32.171068,
+      "lon": 35.013815
+    },
+    "waze": {
+      "lat": 32.170631408691406,
+      "lon": 35.01485824584961,
+      "label": "ألفي مناشيه",
+      "d": 110
+    },
+    "action": "city-fallback",
+    "reason": "Waze returned the town centre, not the venue"
+  },
+  {
+    "id": "tzohar-food-0034",
+    "name": "לה קולוניה",
+    "city": "אלפי מנשה",
+    "address": "גלבוע 83",
+    "from": {
+      "lat": 32.171068,
+      "lon": 35.013815
+    },
+    "waze": {
+      "lat": 32.170631408691406,
+      "lon": 35.01485824584961,
+      "label": "ألفي مناشيه",
+      "d": 110
+    },
+    "action": "city-fallback",
+    "reason": "Waze returned the town centre, not the venue"
+  },
+  {
+    "id": "tzohar-food-0035",
+    "name": "בוטיק גורמה",
+    "city": "אשדוד",
+    "address": "הציונות 13",
+    "from": {
+      "lat": 31.787668228149414,
+      "lon": 34.643619537353516
+    },
+    "waze": {
+      "lat": 31.787668228149414,
+      "lon": 34.643619537353516,
+      "label": "Ha-Tsiyonut St 13, Ashdod, 77770",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0036",
+    "name": "לה גוטא Le Gouter",
+    "city": "אשדוד",
+    "address": "אבא הלל סילבר 11",
+    "from": {
+      "lat": 31.811318,
+      "lon": 34.64414
+    },
+    "waze": {
+      "lat": 31.811317443847656,
+      "lon": 34.64413833618164,
+      "label": "Aba Hillel Silver St 11, Ashdod",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0037",
+    "name": "עוגות דה לה פה אשדוד",
+    "city": "אשדוד",
+    "address": "תש\"ח 5",
+    "from": {
+      "lat": 31.787879,
+      "lon": 34.645171
+    },
+    "action": "no-match"
+  },
+  {
+    "id": "tzohar-food-0038",
+    "name": "פנינה פאי - חנות",
+    "city": "אשדוד",
+    "address": "הציונות 13",
+    "from": {
+      "lat": 31.78781509399414,
+      "lon": 34.64322280883789
+    },
+    "waze": {
+      "lat": 31.78781509399414,
+      "lon": 34.64322280883789,
+      "label": "Ha-Tsiyonut St 13, Ashdod, 77456",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0039",
+    "name": "פאטיו PATIO",
+    "city": "אשקלון",
+    "address": "הנשיא 3",
+    "from": {
+      "lat": 31.673245,
+      "lon": 34.568007
+    },
+    "waze": {
+      "lat": 31.673242568969727,
+      "lon": 34.56812286376953,
+      "label": "Ha-Nasi St 3, Ashkelon",
+      "d": 11
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0041",
+    "name": "רוסטרס באר שבע",
+    "city": "באר שבע",
+    "address": "יעקב כהן 12",
+    "from": {
+      "lat": 31.25456,
+      "lon": 34.79751
+    },
+    "waze": {
+      "lat": 31.254514694213867,
+      "lon": 34.797515869140625,
+      "label": "Ya'akov Cohen St 12, Be'er Sheva",
+      "d": 5
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0042",
+    "name": "פיצה עגבניה באר שבע",
+    "city": "באר שבע",
+    "address": "חיל הנדסה 1",
+    "from": {
+      "lat": 31.244752,
+      "lon": 34.812566
+    },
+    "action": "no-match"
+  },
+  {
+    "id": "tzohar-food-0045",
+    "name": "פרוטיאה בכפר",
+    "city": "בני דרור",
+    "address": "בני-דרור",
+    "from": {
+      "lat": 32.261795,
+      "lon": 34.901791
+    },
+    "waze": {
+      "lat": 32.26307678222656,
+      "lon": 34.89569854736328,
+      "label": "Bnei Dror",
+      "d": 590
+    },
+    "action": "needs-review",
+    "reason": "590m move onto an unspecific result (\"Bnei Dror\")"
+  },
+  {
+    "id": "tzohar-food-0046",
+    "name": "אוליבר פודטראק בניה",
+    "city": "בניה",
+    "address": "הותיקים מול בית העם",
+    "from": {
+      "lat": 31.843505,
+      "lon": 34.752065
+    },
+    "action": "no-match"
+  },
+  {
+    "id": "tzohar-food-0047",
+    "name": "מרכז הבשר",
+    "city": "גדרה",
+    "address": "אירוס 1",
+    "from": {
+      "lat": 31.81045,
+      "lon": 34.784834
+    },
+    "waze": {
+      "lat": 31.810422897338867,
+      "lon": 34.784690856933594,
+      "label": "Gedera",
+      "d": 14
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0048",
+    "name": "הכל דבש עמוס",
+    "city": "גן נר",
+    "address": "כלנית 91",
+    "from": {
+      "lat": 32.53642,
+      "lon": 35.339627
+    },
+    "waze": {
+      "lat": 32.53641891479492,
+      "lon": 35.33962631225586,
+      "label": "בתיאום מראש",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0049",
+    "name": "בושקראפט 69 - תעודה יומית לכל אירוע",
+    "city": "גני יוחנן",
+    "address": "הרקפת 69",
+    "from": {
+      "lat": 31.858537,
+      "lon": 34.846171
+    },
+    "waze": {
+      "lat": 31.85992431640625,
+      "lon": 34.84082794189453,
+      "label": "Ganei Yohanan",
+      "d": 528
+    },
+    "action": "city-fallback",
+    "reason": "Waze returned the town centre, not the venue"
+  },
+  {
+    "id": "tzohar-food-0051",
+    "name": "סלון אוכל",
+    "city": "גני תקווה",
+    "address": "הגולן 29",
+    "from": {
+      "lat": 32.055774,
+      "lon": 34.868797
+    },
+    "waze": {
+      "lat": 32.060001373291016,
+      "lon": 34.85521697998047,
+      "label": "HaNasi St 46, Kiryat Ono",
+      "d": 1363
+    },
+    "action": "needs-review",
+    "reason": "house number 29 (ours) vs 46 (waze)"
+  },
+  {
+    "id": "tzohar-food-0052",
+    "name": "רחלי'ז",
+    "city": "גני תקווה",
+    "address": "הגליל 78",
+    "from": {
+      "lat": 32.05712890625,
+      "lon": 34.86882781982422
+    },
+    "waze": {
+      "lat": 32.05712890625,
+      "lon": 34.86882781982422,
+      "label": "Ha-Galil St 78, Ganei Tikva",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0055",
+    "name": "גליל eat",
+    "city": "דלית אל כרמל",
+    "address": "בית 21 רחוב 6",
+    "from": {
+      "lat": 32.693796,
+      "lon": 35.055447
+    },
+    "waze": {
+      "lat": 32.6934814453125,
+      "lon": 35.047019958496094,
+      "label": "Daliyat al-Karmel",
+      "d": 789
+    },
+    "action": "city-fallback",
+    "reason": "Waze returned the town centre, not the venue"
+  },
+  {
+    "id": "tzohar-food-0056",
+    "name": "גבינות המשק - הוד השרון",
+    "city": "הוד השרון",
+    "address": "יוסי שריד 6",
+    "from": {
+      "lat": 32.162241,
+      "lon": 34.824669
+    },
+    "action": "no-match"
+  },
+  {
+    "id": "tzohar-food-0057",
+    "name": "מסעדת עדן",
+    "city": "הוד השרון",
+    "address": "דרך רמתיים 52",
+    "from": {
+      "lat": 32.157956,
+      "lon": 34.894225
+    },
+    "waze": {
+      "lat": 32.157955169677734,
+      "lon": 34.89422607421875,
+      "label": "Ramatayim Road 52, Hod HaSharon",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0058",
+    "name": "מיטולוגיה",
+    "city": "הוד השרון",
+    "address": "דרך רמתיים 96",
+    "from": {
+      "lat": 32.154772,
+      "lon": 34.894397
+    },
+    "waze": {
+      "lat": 32.15476989746094,
+      "lon": 34.8943977355957,
+      "label": "Ramatayim Road 96, Hod HaSharon, 4532532",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0059",
+    "name": "מסעדת חוויאג' מרק",
+    "city": "ירושלים",
+    "address": "המלך חסן השני 10",
+    "from": {
+      "lat": 31.860344,
+      "lon": 34.810921
+    },
+    "waze": {
+      "lat": 31.86038589477539,
+      "lon": 34.81086349487305,
+      "label": "King Khasan II St, Kiryat Ekron",
+      "d": 7
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0060",
+    "name": "גלריית קמה",
+    "city": "הרדוף",
+    "address": "הרדוף",
+    "from": {
+      "lat": 32.764034271240234,
+      "lon": 35.17181396484375
+    },
+    "waze": {
+      "lat": 32.764034271240234,
+      "lon": 35.17181396484375,
+      "label": "Harduf",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0061",
+    "name": "גבינות המשק - הרצליה",
+    "city": "הרצליה",
+    "address": "יוסי שריד 6",
+    "from": {
+      "lat": 32.162262,
+      "lon": 34.824547
+    },
+    "waze": {
+      "lat": 32.162261962890625,
+      "lon": 34.824546813964844,
+      "label": "יוסי שריד 6, Hertsliya",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0062",
+    "name": "חוויה קולינרית NS הרצליה",
+    "city": "הרצליה",
+    "address": "דוד אלרואי 1",
+    "from": {
+      "lat": 32.158249,
+      "lon": 34.837829
+    },
+    "waze": {
+      "lat": 32.15748977661133,
+      "lon": 34.83821487426758,
+      "label": "מרכז נינא, David Alro'i 3, Hertsliya",
+      "d": 92
+    },
+    "action": "needs-review",
+    "reason": "house number 1 (ours) vs 3 (waze)"
+  },
+  {
+    "id": "tzohar-food-0063",
+    "name": "מוניקהב",
+    "city": "הרצליה",
+    "address": "חבצלת השרון 37 הרצליה",
+    "from": {
+      "lat": 32.178931,
+      "lon": 34.805066
+    },
+    "waze": {
+      "lat": 32.16204071044922,
+      "lon": 34.809471130371094,
+      "label": "Maskit St 32, Herzliya",
+      "d": 1923
+    },
+    "action": "needs-review",
+    "reason": "house number 37 (ours) vs 32 (waze)"
+  },
+  {
+    "id": "tzohar-food-0064",
+    "name": "סמוק דלי",
+    "city": "הרצליה",
+    "address": "יוסי שריד 6",
+    "from": {
+      "lat": 32.162262,
+      "lon": 34.824547
+    },
+    "action": "no-match"
+  },
+  {
+    "id": "tzohar-food-0068",
+    "name": "שוק הבשר והאוכל (קצבייה + אוכל מוכן)",
+    "city": "חולון",
+    "address": "חנקין 69",
+    "from": {
+      "lat": 32.020115,
+      "lon": 34.778994
+    },
+    "action": "no-match"
+  },
+  {
+    "id": "tzohar-food-0070",
+    "name": "אוסול יסוד המעלה",
+    "city": "יסוד המעלה",
+    "address": "יסוד המעלה",
+    "from": {
+      "lat": 33.05358,
+      "lon": 35.589013
+    },
+    "waze": {
+      "lat": 33.04536819458008,
+      "lon": 35.57322692871094,
+      "label": "Ha-Meyasdim St, Yesud HaMa'ala",
+      "d": 1732
+    },
+    "action": "needs-review",
+    "reason": "1732m move onto an unspecific result (\"Ha-Meyasdim St, Yesud HaMa'ala\")"
+  },
+  {
+    "id": "tzohar-food-0071",
+    "name": "מעדני בשר",
+    "city": "יקנעם",
+    "address": "התעשיה 5",
+    "from": {
+      "lat": 32.662806,
+      "lon": 35.106515
+    },
+    "waze": {
+      "lat": 32.66273498535156,
+      "lon": 35.1064453125,
+      "label": "Ha-Ta'asiya St 3-9, Yokne'am Illit",
+      "d": 10
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0073",
+    "name": "איצ'יקדנה קולינריה הודית אמיתית",
+    "city": "ירושלים",
+    "address": "הלל 24",
+    "from": {
+      "lat": 31.779895,
+      "lon": 35.218603
+    },
+    "waze": {
+      "lat": 31.77989387512207,
+      "lon": 35.21860122680664,
+      "label": "Hillel St 24, Jerusalem, 9458124",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0074",
+    "name": "איתן ויהונתן / תל אביב בר",
+    "city": "ירושלים",
+    "address": "שמעון בן שטח 2",
+    "from": {
+      "lat": 31.779714,
+      "lon": 35.2218
+    },
+    "waze": {
+      "lat": 31.779714584350586,
+      "lon": 35.2218017578125,
+      "label": "Shim'on Ben Shatakh St 2, Jerusalem",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0075",
+    "name": "אמאיה - amaia",
+    "city": "ירושלים",
+    "address": "דרך בית לחם 17",
+    "from": {
+      "lat": 31.760895,
+      "lon": 35.222623
+    },
+    "waze": {
+      "lat": 31.77688217163086,
+      "lon": 35.222434997558594,
+      "label": "Jerusalem",
+      "d": 1778
+    },
+    "action": "city-fallback",
+    "reason": "Waze returned the town centre, not the venue"
+  },
+  {
+    "id": "tzohar-food-0076",
+    "name": "אס דאבליו סי מיוזיאום קורפ ( מוזיאון הסובלנות)",
+    "city": "ירושלים",
+    "address": "הלל 32",
+    "from": {
+      "lat": 31.779245376586914,
+      "lon": 35.220760345458984
+    },
+    "waze": {
+      "lat": 31.779245376586914,
+      "lon": 35.220760345458984,
+      "label": "Jerusalem",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0077",
+    "name": "בין עזה לברלין",
+    "city": "ירושלים",
+    "address": "עזה 19",
+    "from": {
+      "lat": 31.772728,
+      "lon": 35.214597
+    },
+    "waze": {
+      "lat": 31.772676467895508,
+      "lon": 35.21458435058594,
+      "label": "Azza St 19, Jerusalem",
+      "d": 6
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0078",
+    "name": "בניטוש",
+    "city": "ירושלים",
+    "address": "הלני המלכה 7",
+    "from": {
+      "lat": 31.781905,
+      "lon": 35.221372
+    },
+    "waze": {
+      "lat": 31.77688217163086,
+      "lon": 35.222434997558594,
+      "label": "Jerusalem",
+      "d": 567
+    },
+    "action": "city-fallback",
+    "reason": "Waze returned the town centre, not the venue"
+  },
+  {
+    "id": "tzohar-food-0079",
+    "name": "ג'ורג'י",
+    "city": "ירושלים",
+    "address": "המלך ג'ורג' 37",
+    "from": {
+      "lat": 31.779453,
+      "lon": 35.216019
+    },
+    "waze": {
+      "lat": 31.780258178710938,
+      "lon": 35.21672821044922,
+      "label": "Hillel St 8, Jerusalem",
+      "d": 112
+    },
+    "action": "needs-review",
+    "reason": "house number 37 (ours) vs 8 (waze)"
+  },
+  {
+    "id": "tzohar-food-0080",
+    "name": "ג'ירה",
+    "city": "ירושלים",
+    "address": "הלני המלכה 7",
+    "from": {
+      "lat": 31.78186798095703,
+      "lon": 35.22103500366211
+    },
+    "waze": {
+      "lat": 31.78186798095703,
+      "lon": 35.22103500366211,
+      "label": "Heleni ha-Malka St 7, Jerusalem",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0081",
+    "name": "ג'ירה אקספרס",
+    "city": "ירושלים",
+    "address": "אגריפס 69",
+    "from": {
+      "lat": 31.783764,
+      "lon": 35.213612
+    },
+    "waze": {
+      "lat": 31.77688217163086,
+      "lon": 35.222434997558594,
+      "label": "Jerusalem",
+      "d": 1132
+    },
+    "action": "city-fallback",
+    "reason": "Waze returned the town centre, not the venue"
+  },
+  {
+    "id": "tzohar-food-0082",
+    "name": "דוד לאור קיוסק",
+    "city": "ירושלים",
+    "address": "גן גדעון",
+    "from": {
+      "lat": 31.759729385375977,
+      "lon": 35.21940612792969
+    },
+    "waze": {
+      "lat": 31.759729385375977,
+      "lon": 35.21940612792969,
+      "label": "Efrayim St, Jerusalem",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0083",
+    "name": "דוויני",
+    "city": "ירושלים",
+    "address": "בית יעקב 6",
+    "from": {
+      "lat": 31.785422,
+      "lon": 35.211564
+    },
+    "waze": {
+      "lat": 31.78542137145996,
+      "lon": 35.21156311035156,
+      "label": "Beit Ya'akov St 6, Jerusalem",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0084",
+    "name": "הגורן",
+    "city": "ירושלים",
+    "address": "ריבלין 1",
+    "from": {
+      "lat": 31.781051,
+      "lon": 35.220679
+    },
+    "action": "no-match"
+  },
+  {
+    "id": "tzohar-food-0085",
+    "name": "המקום של איציק",
+    "city": "ירושלים",
+    "address": "דרך בית לחם 33",
+    "from": {
+      "lat": 31.759256,
+      "lon": 35.222041
+    },
+    "waze": {
+      "lat": 31.75925636291504,
+      "lon": 35.222042083740234,
+      "label": "Beit Lehem Rd 33, Jerusalem",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0086",
+    "name": "הסעדה ומגדניה - משק עפאים",
+    "city": "ירושלים",
+    "address": "מרכז ספיר בניין 3",
+    "from": {
+      "lat": 31.786203,
+      "lon": 35.182968
+    },
+    "action": "no-match"
+  },
+  {
+    "id": "tzohar-food-0087",
+    "name": "טאקוס לואיס",
+    "city": "ירושלים",
+    "address": "שלומציון המלכה 11",
+    "from": {
+      "lat": 31.779009,
+      "lon": 35.222562
+    },
+    "waze": {
+      "lat": 31.779008865356445,
+      "lon": 35.22256088256836,
+      "label": "Queen Shlomziyon St 11, Jerusalem",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0088",
+    "name": "ליבא",
+    "city": "ירושלים",
+    "address": "שץ 4",
+    "from": {
+      "lat": 31.780078,
+      "lon": 35.215463
+    },
+    "waze": {
+      "lat": 31.78008460998535,
+      "lon": 35.21549606323242,
+      "label": "Shats St 4, Jerusalem, 9426704",
+      "d": 3
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0092",
+    "name": "סושי פלייס",
+    "city": "ירושלים",
+    "address": "יואל משה סלומון 5",
+    "from": {
+      "lat": 31.781373,
+      "lon": 35.219756
+    },
+    "waze": {
+      "lat": 31.781354904174805,
+      "lon": 35.219810485839844,
+      "label": "Yo'el Moshe Salomon St 5, Jerusalem",
+      "d": 6
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0093",
+    "name": "סושיה",
+    "city": "ירושלים",
+    "address": "טרומפלדור 1",
+    "from": {
+      "lat": 31.780223846435547,
+      "lon": 35.21347427368164
+    },
+    "waze": {
+      "lat": 31.780223846435547,
+      "lon": 35.21347427368164,
+      "label": "Yosef Trumpeldor St 1, Jerusalem, 9459001",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0094",
+    "name": "סיפתח פארק סן סימון",
+    "city": "ירושלים",
+    "address": "מעלה זאב 3",
+    "from": {
+      "lat": 31.759597,
+      "lon": 35.205831
+    },
+    "waze": {
+      "lat": 31.760244369506836,
+      "lon": 35.206241607666016,
+      "label": "Hizkiyahu HaMelech St 59, Jerusalem",
+      "d": 82
+    },
+    "action": "needs-review",
+    "reason": "house number 3 (ours) vs 59 (waze)"
+  },
+  {
+    "id": "tzohar-food-0095",
+    "name": "סמבטיון",
+    "city": "ירושלים",
+    "address": "אגרון 22",
+    "from": {
+      "lat": 31.776925,
+      "lon": 35.220565
+    },
+    "waze": {
+      "lat": 31.77692413330078,
+      "lon": 35.22056579589844,
+      "label": "Gershon Agron St 22, Jerusalem, 9419005",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0096",
+    "name": "עגללה",
+    "city": "ירושלים",
+    "address": "יפו 97",
+    "from": {
+      "lat": 31.784294,
+      "lon": 35.214896
+    },
+    "waze": {
+      "lat": 31.78429412841797,
+      "lon": 35.21489715576172,
+      "label": "Jaffa St 97, Jerusalem, 9434002",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0097",
+    "name": "עפאים בית הכרם",
+    "city": "ירושלים",
+    "address": "בית הכרם 19",
+    "from": {
+      "lat": 31.780489,
+      "lon": 35.190531
+    },
+    "waze": {
+      "lat": 31.780431747436523,
+      "lon": 35.19062042236328,
+      "label": "Beit HaKerem St 19, Jerusalem",
+      "d": 11
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0098",
+    "name": "עפאים הנסן",
+    "city": "ירושלים",
+    "address": "גדליהו אלון 14",
+    "from": {
+      "lat": 31.767629623413086,
+      "lon": 35.21664810180664
+    },
+    "waze": {
+      "lat": 31.767629623413086,
+      "lon": 35.21664810180664,
+      "label": "בית הנסן",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0099",
+    "name": "פסטטריה פודטראק",
+    "city": "ירושלים",
+    "address": "דרך רופין 1",
+    "from": {
+      "lat": 31.777325,
+      "lon": 35.201733
+    },
+    "waze": {
+      "lat": 31.777923583984375,
+      "lon": 35.201236724853516,
+      "label": "Derech Ruppin 19, Jerusalem",
+      "d": 81
+    },
+    "action": "needs-review",
+    "reason": "house number 1 (ours) vs 19 (waze)"
+  },
+  {
+    "id": "tzohar-food-0100",
+    "name": "קאלו",
+    "city": "ירושלים",
+    "address": "דרך בית לחם 31",
+    "from": {
+      "lat": 31.759338,
+      "lon": 35.221988
+    },
+    "waze": {
+      "lat": 31.759410858154297,
+      "lon": 35.2220458984375,
+      "label": "Beit Lehem Rd 31, Jerusalem, 93553",
+      "d": 10
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0101",
+    "name": "קומקום בית התה",
+    "city": "ירושלים",
+    "address": "בית לחם 23",
+    "from": {
+      "lat": 31.760404,
+      "lon": 35.22248
+    },
+    "waze": {
+      "lat": 31.76025390625,
+      "lon": 35.22237777709961,
+      "label": "Beit Lehem Rd 23, Jerusalem",
+      "d": 19
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0102",
+    "name": "קזה KAZZE",
+    "city": "ירושלים",
+    "address": "בצלאל 7",
+    "from": {
+      "lat": 31.780454,
+      "lon": 35.213803
+    },
+    "waze": {
+      "lat": 31.780576705932617,
+      "lon": 35.21371841430664,
+      "label": "פינת",
+      "d": 16
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0103",
+    "name": "קלאסיקו",
+    "city": "ירושלים",
+    "address": "דרך בלפור 4, גבעת רם",
+    "from": {
+      "lat": 31.778444,
+      "lon": 35.195549
+    },
+    "action": "no-match"
+  },
+  {
+    "id": "tzohar-food-0104",
+    "name": "רוסטרס בצלאל",
+    "city": "ירושלים",
+    "address": "שמואל הנגיד 8",
+    "from": {
+      "lat": 31.780371,
+      "lon": 35.21482
+    },
+    "waze": {
+      "lat": 31.78033447265625,
+      "lon": 35.214698791503906,
+      "label": "Betsal'el St 2, Jerusalem",
+      "d": 12
+    },
+    "action": "needs-review",
+    "reason": "house number 8 (ours) vs 2 (waze)"
+  },
+  {
+    "id": "tzohar-food-0105",
+    "name": "בייגלס",
+    "city": "כפר סבא",
+    "address": "זאב בלפאר 19",
+    "from": {
+      "lat": 32.186804,
+      "lon": 34.95209
+    },
+    "action": "no-match"
+  },
+  {
+    "id": "tzohar-food-0108",
+    "name": "חוות רימון",
+    "city": "להב",
+    "address": "יער להב",
+    "from": {
+      "lat": 31.379363,
+      "lon": 34.871311
+    },
+    "waze": {
+      "lat": 31.3749942779541,
+      "lon": 34.85783767700195,
+      "label": "Unnamed Road, Lahav",
+      "d": 1368
+    },
+    "action": "needs-review",
+    "reason": "1368m move onto an unspecific result (\"Unnamed Road, Lahav\")"
+  },
+  {
+    "id": "tzohar-food-0110",
+    "name": "מפגש 121",
+    "city": "לוד",
+    "address": "תחנת דור אלון נתב\"ג",
+    "from": {
+      "lat": 31.990967,
+      "lon": 34.903838
+    },
+    "action": "no-match"
+  },
+  {
+    "id": "tzohar-food-0111",
+    "name": "האורגני",
+    "city": "מבוא מודיעים",
+    "address": "מבוא מודיעים",
+    "from": {
+      "lat": 31.780385,
+      "lon": 35.010102
+    },
+    "action": "no-match"
+  },
+  {
+    "id": "tzohar-food-0112",
+    "name": "דיה Dia",
+    "city": "מבשרת ציון",
+    "address": "המגרסות 1",
+    "from": {
+      "lat": 31.789981842041016,
+      "lon": 35.139766693115234
+    },
+    "waze": {
+      "lat": 31.789981842041016,
+      "lon": 35.139766693115234,
+      "label": "צור 1, Mevaseret Zion, 9074018",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0113",
+    "name": "רוסטרס מודיעין",
+    "city": "מודיעין מכבים רעות",
+    "address": "דם המכבים 55",
+    "from": {
+      "lat": 31.903945922851562,
+      "lon": 35.00710678100586
+    },
+    "waze": {
+      "lat": 31.903945922851562,
+      "lon": 35.00710678100586,
+      "label": "Dam HaMacbim St 55, Modi'in-Maccabim-Re'ut",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0114",
+    "name": "סופר טוב - מודיעין (יצחק רבין)",
+    "city": "מודיעין מכבים רעות",
+    "address": "רבין 45",
+    "from": {
+      "lat": 31.89156150817871,
+      "lon": 35.00470733642578
+    },
+    "waze": {
+      "lat": 31.89156150817871,
+      "lon": 35.00470733642578,
+      "label": "Sderot Yitshak Rabin, Modi'in Makabim-Re'ut",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0115",
+    "name": "סופר טוב - מודיעין (לאה אימנו)",
+    "city": "מודיעין מכבים רעות",
+    "address": "לאה אמנו 1",
+    "from": {
+      "lat": 31.885499,
+      "lon": 35.005588
+    },
+    "waze": {
+      "lat": 31.885498046875,
+      "lon": 35.00558853149414,
+      "label": "Lea Imenu St 1, Modi'in-Maccabim-Re'ut",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0116",
+    "name": "ארצי",
+    "city": "מזכרת בתיה",
+    "address": "המסיידים 8",
+    "from": {
+      "lat": 31.853657,
+      "lon": 34.83809
+    },
+    "waze": {
+      "lat": 31.850637435913086,
+      "lon": 34.84001541137695,
+      "label": "Mazkeret Batya",
+      "d": 382
+    },
+    "action": "city-fallback",
+    "reason": "Waze returned the town centre, not the venue"
+  },
+  {
+    "id": "tzohar-food-0117",
+    "name": "רובידה Deli",
+    "city": "מזכרת בתיה",
+    "address": "המייסדים 6",
+    "from": {
+      "lat": 31.85414,
+      "lon": 34.837825
+    },
+    "waze": {
+      "lat": 31.853734970092773,
+      "lon": 34.83816909790039,
+      "label": "Ha-Meyasdim St 8, Mazkeret Batya",
+      "d": 56
+    },
+    "action": "needs-review",
+    "reason": "house number 6 (ours) vs 8 (waze)"
+  },
+  {
+    "id": "tzohar-food-0118",
+    "name": "איתיאלה",
+    "city": "מטע",
+    "address": "האלה 19",
+    "from": {
+      "lat": 31.716144561767578,
+      "lon": 35.05956268310547
+    },
+    "waze": {
+      "lat": 31.716144561767578,
+      "lon": 35.05956268310547,
+      "label": "HaEla St 19, Mata",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0119",
+    "name": "המשתלה של בועז",
+    "city": "מנוחה",
+    "address": "הבנים",
+    "from": {
+      "lat": 31.659761428833008,
+      "lon": 34.77433776855469
+    },
+    "waze": {
+      "lat": 31.659761428833008,
+      "lon": 34.77433776855469,
+      "label": "Boaz greenhouses",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0121",
+    "name": "הימלאיה - צ'אי בר",
+    "city": "נווה דניאל",
+    "address": "שדה בעז",
+    "from": {
+      "lat": 31.681996,
+      "lon": 35.145272
+    },
+    "waze": {
+      "lat": 31.687854766845703,
+      "lon": 35.14580535888672,
+      "label": "Sde Boaz St",
+      "d": 653
+    },
+    "action": "needs-review",
+    "reason": "653m move onto an unspecific result (\"Sde Boaz St\")"
+  },
+  {
+    "id": "tzohar-food-0123",
+    "name": "תן טראק - תן truck",
+    "city": "נחושה",
+    "address": "נחושה",
+    "from": {
+      "lat": 31.628848,
+      "lon": 34.952732
+    },
+    "waze": {
+      "lat": 31.628847122192383,
+      "lon": 34.95273208618164,
+      "label": "Nehusha",
+      "d": 0
+    },
+    "action": "city-fallback",
+    "reason": "Waze returned the town centre, not the venue"
+  },
+  {
+    "id": "tzohar-food-0124",
+    "name": "משק מזור",
+    "city": "ניר בנים",
+    "address": "משק 49",
+    "from": {
+      "lat": 31.671177,
+      "lon": 34.755012
+    },
+    "waze": {
+      "lat": 31.67117691040039,
+      "lon": 34.75501251220703,
+      "label": "Nir Banim",
+      "d": 0
+    },
+    "action": "city-fallback",
+    "reason": "Waze returned the town centre, not the venue"
+  },
+  {
+    "id": "tzohar-food-0125",
+    "name": "לה קאסה דה קאסו",
+    "city": "נתניה",
+    "address": "טום לנטוס 60",
+    "from": {
+      "lat": 32.29528045654297,
+      "lon": 34.86897659301758
+    },
+    "waze": {
+      "lat": 32.29528045654297,
+      "lon": 34.86897659301758,
+      "label": "Tom Lantos Blvd. 60, Netanya",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0126",
+    "name": "צקה ונוץ",
+    "city": "נתניה",
+    "address": "האוניברסיטה 1",
+    "from": {
+      "lat": 32.307718,
+      "lon": 34.879315
+    },
+    "action": "no-match"
+  },
+  {
+    "id": "tzohar-food-0128",
+    "name": "שף פקטורי",
+    "city": "נתניה",
+    "address": "גיבורי ישראל 34",
+    "from": {
+      "lat": 32.282175,
+      "lon": 34.86108
+    },
+    "action": "no-match"
+  },
+  {
+    "id": "tzohar-food-0132",
+    "name": "קריספי",
+    "city": "עכו",
+    "address": "דרך המכללה 1",
+    "from": {
+      "lat": 32.933052,
+      "lon": 35.082678
+    },
+    "waze": {
+      "lat": 32.93305206298828,
+      "lon": 35.082679748535156,
+      "label": "Acre",
+      "d": 0
+    },
+    "action": "city-fallback",
+    "reason": "Waze returned the town centre, not the venue"
+  },
+  {
+    "id": "tzohar-food-0133",
+    "name": "סטודיו קופי",
+    "city": "ערד",
+    "address": "סדן 7",
+    "from": {
+      "lat": 31.247610092163086,
+      "lon": 35.194068908691406
+    },
+    "waze": {
+      "lat": 31.247610092163086,
+      "lon": 35.194068908691406,
+      "label": "Artist Quarter",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0134",
+    "name": "פיצה בית העם גדרות",
+    "city": "עשרת",
+    "address": "הרימון 8",
+    "from": {
+      "lat": 31.825802,
+      "lon": 34.746885
+    },
+    "waze": {
+      "lat": 31.825864791870117,
+      "lon": 34.74688720703125,
+      "label": "Harimon St 8, Aseret",
+      "d": 7
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0135",
+    "name": "דליקטו פרדס חנה",
+    "city": "פרדס חנה כרכור",
+    "address": "דרך הבנים 3",
+    "from": {
+      "lat": 32.474581,
+      "lon": 34.972349
+    },
+    "waze": {
+      "lat": 32.474754333496094,
+      "lon": 34.97218704223633,
+      "label": "Derech HaBanim 5, Pardes Hana-Karkur",
+      "d": 25
+    },
+    "action": "needs-review",
+    "reason": "house number 3 (ours) vs 5 (waze)"
+  },
+  {
+    "id": "tzohar-food-0136",
+    "name": "עלמא בר יין בע\"מ",
+    "city": "פרדס חנה כרכור",
+    "address": "המייסדים 16",
+    "from": {
+      "lat": 32.470255,
+      "lon": 34.990134
+    },
+    "waze": {
+      "lat": 32.47025680541992,
+      "lon": 34.990135192871094,
+      "label": "Ha-Meyasdim St 16, Pardes Hanna-Karkur, 3706450",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0138",
+    "name": "לומיטו מעדני בשר - קרית עקרון",
+    "city": "קריית עקרון",
+    "address": "שדק המלך חסן 6",
+    "from": {
+      "lat": 31.951243,
+      "lon": 34.931586
+    },
+    "action": "no-match"
+  },
+  {
+    "id": "tzohar-food-0140",
+    "name": "עמלי",
+    "city": "קרית טבעון",
+    "address": "כיכר בן גוריון 1",
+    "from": {
+      "lat": 32.722556,
+      "lon": 35.130215
+    },
+    "waze": {
+      "lat": 32.71528625488281,
+      "lon": 35.1246452331543,
+      "label": "Kiryat Tiv'on",
+      "d": 962
+    },
+    "action": "city-fallback",
+    "reason": "Waze returned the town centre, not the venue"
+  },
+  {
+    "id": "tzohar-food-0141",
+    "name": "לומיטו מעדני בשר",
+    "city": "קרית עקרון",
+    "address": "שדרות המלך חסן 6",
+    "from": {
+      "lat": 31.86061668395996,
+      "lon": 34.812400817871094
+    },
+    "waze": {
+      "lat": 31.86061668395996,
+      "lon": 34.812400817871094,
+      "label": "King Khasan II St 6, Kiryat Ekron",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0143",
+    "name": "דלי טופ DELI TOP",
+    "city": "ראש העין",
+    "address": "שבזי 187",
+    "from": {
+      "lat": 32.084590911865234,
+      "lon": 34.96683120727539
+    },
+    "waze": {
+      "lat": 32.084590911865234,
+      "lon": 34.96683120727539,
+      "label": "Ha-Rav Shalom Shabazi St 187, Rosh Haayin",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0145",
+    "name": "אוסול ראש פינה",
+    "city": "ראש פינה",
+    "address": "האגס 1",
+    "from": {
+      "lat": 32.968599,
+      "lon": 35.550563
+    },
+    "waze": {
+      "lat": 32.96860122680664,
+      "lon": 35.55056381225586,
+      "label": "HaAgas St 1, Rosh Pinna",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0147",
+    "name": "לב הבגט",
+    "city": "ראשון לציון",
+    "address": "רוטשילד 28",
+    "from": {
+      "lat": 31.964257,
+      "lon": 34.803985
+    },
+    "waze": {
+      "lat": 31.964181900024414,
+      "lon": 34.8040885925293,
+      "label": "Rothschild St 28, Rishon LeZion",
+      "d": 13
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0148",
+    "name": "מפגש יערה",
+    "city": "ראשון לציון",
+    "address": "הורביץ 30",
+    "from": {
+      "lat": 31.960181,
+      "lon": 34.797046
+    },
+    "waze": {
+      "lat": 31.959081649780273,
+      "lon": 34.80208969116211,
+      "label": "Rishon LeZion",
+      "d": 491
+    },
+    "action": "city-fallback",
+    "reason": "Waze returned the town centre, not the venue"
+  },
+  {
+    "id": "tzohar-food-0149",
+    "name": "עוגות דה לה פה ראשון לציון",
+    "city": "ראשון לציון",
+    "address": "בנימין שמוטקין 47",
+    "from": {
+      "lat": 31.98292350769043,
+      "lon": 34.814613342285156
+    },
+    "waze": {
+      "lat": 31.98292350769043,
+      "lon": 34.814613342285156,
+      "label": "Binyamin Shmotkin St 47, Rishon LeZion",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0150",
+    "name": "אשר",
+    "city": "ראשון לציון",
+    "address": "ז'בוטינסקי 24",
+    "from": {
+      "lat": 31.963939,
+      "lon": 34.800061
+    },
+    "waze": {
+      "lat": 31.963930130004883,
+      "lon": 34.80007553100586,
+      "label": "Rothschild St 58, Rishon LeZion",
+      "d": 2
+    },
+    "action": "needs-review",
+    "reason": "house number 24 (ours) vs 58 (waze)"
+  },
+  {
+    "id": "tzohar-food-0152",
+    "name": "השדרה",
+    "city": "רחובות",
+    "address": "הרצל 203",
+    "from": {
+      "lat": 31.90136,
+      "lon": 34.808922
+    },
+    "waze": {
+      "lat": 31.901309967041016,
+      "lon": 34.80903244018555,
+      "label": "Herzl St 203, Rehovot",
+      "d": 12
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0153",
+    "name": "חומוס בשר",
+    "city": "רחובות",
+    "address": "המדע 8",
+    "from": {
+      "lat": 31.912261,
+      "lon": 34.805126
+    },
+    "waze": {
+      "lat": 31.912260055541992,
+      "lon": 34.80512619018555,
+      "label": "HaMada St 8, Rehovot",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0154",
+    "name": "נוטלה",
+    "city": "רחובות",
+    "address": "בילו 2 קניון עופר",
+    "from": {
+      "lat": 31.893346,
+      "lon": 34.807027
+    },
+    "waze": {
+      "lat": 31.894365310668945,
+      "lon": 34.81153106689453,
+      "label": "Rehovot",
+      "d": 440
+    },
+    "action": "city-fallback",
+    "reason": "Waze returned the town centre, not the venue"
+  },
+  {
+    "id": "tzohar-food-0155",
+    "name": "עוגות דה לה פה רחובות",
+    "city": "רחובות",
+    "address": "יעקב 26",
+    "from": {
+      "lat": 31.896055,
+      "lon": 34.812905
+    },
+    "waze": {
+      "lat": 31.89608383178711,
+      "lon": 34.81304931640625,
+      "label": "Ya'akov St 26, Rehovot",
+      "d": 14
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0156",
+    "name": "שף עמנואל",
+    "city": "רחובות",
+    "address": "דרך יבנה 46",
+    "from": {
+      "lat": 31.900986,
+      "lon": 34.805335
+    },
+    "waze": {
+      "lat": 31.900985717773438,
+      "lon": 34.805335998535156,
+      "label": "Derekh Yavne 46, Rehovot",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0157",
+    "name": "אווה אייש",
+    "city": "רמת גן",
+    "address": "אבא אחימאיר 23 א'",
+    "from": {
+      "lat": 32.091784,
+      "lon": 34.810688
+    },
+    "action": "no-match"
+  },
+  {
+    "id": "tzohar-food-0158",
+    "name": "לה קוצ'ינה",
+    "city": "רמת גן",
+    "address": "ביאליק 59",
+    "from": {
+      "lat": 32.084538,
+      "lon": 34.81288
+    },
+    "waze": {
+      "lat": 32.084556579589844,
+      "lon": 34.81283187866211,
+      "label": "Bialik St 59, Ramat Gan",
+      "d": 5
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0160",
+    "name": "עוגות דה לה פה רמת גן",
+    "city": "רמת גן",
+    "address": "תובל 26",
+    "from": {
+      "lat": 32.086829,
+      "lon": 34.803118
+    },
+    "waze": {
+      "lat": 32.08683395385742,
+      "lon": 34.80318832397461,
+      "label": "Tuval St 26, Ramat Gan",
+      "d": 7
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0161",
+    "name": "אלין שוקולד",
+    "city": "רמת השרון",
+    "address": "המסגר 9",
+    "from": {
+      "lat": 32.1349,
+      "lon": 34.84599
+    },
+    "waze": {
+      "lat": 32.137794494628906,
+      "lon": 34.84027862548828,
+      "label": "Ramat Hasharon",
+      "d": 627
+    },
+    "action": "city-fallback",
+    "reason": "Waze returned the town centre, not the venue"
+  },
+  {
+    "id": "tzohar-food-0163",
+    "name": "שרה 16",
+    "city": "רמת גן",
+    "address": "שרה אהרונסון 16",
+    "from": {
+      "lat": 32.061265,
+      "lon": 34.823782
+    },
+    "waze": {
+      "lat": 32.06126403808594,
+      "lon": 34.82378005981445,
+      "label": "Sarah A'aronsohn St 16, Ramat Gan",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0165",
+    "name": "חוויה קולינרית NS - רמת השרון",
+    "city": "רמת השרון",
+    "address": "ירמיהו 1",
+    "from": {
+      "lat": 32.131542,
+      "lon": 34.860035
+    },
+    "waze": {
+      "lat": 32.13154220581055,
+      "lon": 34.86003494262695,
+      "label": "מרכז אלי כהן - מגוונים",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0166",
+    "name": "הנשיאה",
+    "city": "רעננה",
+    "address": "גן הנשיאים",
+    "from": {
+      "lat": 32.19238,
+      "lon": 34.874534
+    },
+    "waze": {
+      "lat": 32.192378997802734,
+      "lon": 34.874534606933594,
+      "label": "Ra'anana",
+      "d": 0
+    },
+    "action": "city-fallback",
+    "reason": "Waze returned the town centre, not the venue"
+  },
+  {
+    "id": "tzohar-food-0169",
+    "name": "פרוטאין יוניקורן",
+    "city": "רעננה",
+    "address": "בורוכוב 3",
+    "from": {
+      "lat": 32.180644,
+      "lon": 34.876082
+    },
+    "waze": {
+      "lat": 32.18064498901367,
+      "lon": 34.87608337402344,
+      "label": "Borokhov St 3, Ra'anana, 4343402",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0170",
+    "name": "גורדו - נקניקייה על הדרך",
+    "city": "שדה בוקר",
+    "address": "אשטרום 3, מדרשת בן גוריון",
+    "from": {
+      "lat": 30.873611,
+      "lon": 34.793098
+    },
+    "waze": {
+      "lat": 30.873611450195312,
+      "lon": 34.79309844970703,
+      "label": "Sde Boker",
+      "d": 0
+    },
+    "action": "city-fallback",
+    "reason": "Waze returned the town centre, not the venue"
+  },
+  {
+    "id": "tzohar-food-0171",
+    "name": "כרמא",
+    "city": "שקף",
+    "address": "זמורה 73",
+    "from": {
+      "lat": 31.51149559020996,
+      "lon": 34.93730545043945
+    },
+    "waze": {
+      "lat": 31.51149559020996,
+      "lon": 34.93730545043945,
+      "label": "פטרול",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0173",
+    "name": "דנון בית הספר למצוינות קולינרית",
+    "city": "תל אביב",
+    "address": "נמל",
+    "from": {
+      "lat": 32.09855651855469,
+      "lon": 34.775634765625
+    },
+    "waze": {
+      "lat": 32.09855651855469,
+      "lon": 34.775634765625,
+      "label": "מבנה מספר 39",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0174",
+    "name": "וויסקי בר",
+    "city": "תל אביב",
+    "address": "דוד אלעזר 27 (שרונה)",
+    "from": {
+      "lat": 32.0710334777832,
+      "lon": 34.78828430175781
+    },
+    "waze": {
+      "lat": 32.0710334777832,
+      "lon": 34.78828430175781,
+      "label": "מתחם שרונה, Rav Aluf David Elazar 27, Tel Aviv-Jaffa",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0175",
+    "name": "טורטה דה לה נונה",
+    "city": "תל אביב",
+    "address": "מלכי ישראל 13",
+    "from": {
+      "lat": 32.080595,
+      "lon": 34.779724
+    },
+    "waze": {
+      "lat": 32.08058166503906,
+      "lon": 34.779720306396484,
+      "label": "Malkhi Yisrael St 13, Tel Aviv-Yafo",
+      "d": 2
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0176",
+    "name": "טייסטינג רום",
+    "city": "תל אביב",
+    "address": "אליעזר קפלן 36",
+    "from": {
+      "lat": 32.073097,
+      "lon": 34.788231
+    },
+    "waze": {
+      "lat": 32.07297134399414,
+      "lon": 34.78835678100586,
+      "label": "Eliezer Kaplan St 36, Tel Aviv-Yafo, 6473437",
+      "d": 18
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0177",
+    "name": "ממלכת הפירות",
+    "city": "תל אביב",
+    "address": "שנקין 3",
+    "from": {
+      "lat": 32.06993,
+      "lon": 34.770935
+    },
+    "waze": {
+      "lat": 32.06993103027344,
+      "lon": 34.77093505859375,
+      "label": "Sheinkin St 3, Tel Aviv-Yafo",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0178",
+    "name": "עמינדב",
+    "city": "תל אביב",
+    "address": "שדרות ההשכלה 1 פינת עמינדב 23",
+    "from": {
+      "lat": 32.06473159790039,
+      "lon": 34.79533767700195
+    },
+    "waze": {
+      "lat": 32.06473159790039,
+      "lon": 34.79533767700195,
+      "label": "Aminadav St, Tel Aviv-Yafo",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0180",
+    "name": "Choose Your",
+    "city": "תל אביב",
+    "address": "דיזנגוף 138",
+    "from": {
+      "lat": 32.082277,
+      "lon": 34.77407
+    },
+    "waze": {
+      "lat": 32.08530044555664,
+      "lon": 34.781768798828125,
+      "label": "Tel Aviv-Yafo",
+      "d": 799
+    },
+    "action": "city-fallback",
+    "reason": "Waze returned the town centre, not the venue"
+  },
+  {
+    "id": "tzohar-food-0181",
+    "name": "אטליז הגליל",
+    "city": "תל אביב",
+    "address": "שדרות ירושלים 57",
+    "from": {
+      "lat": 32.049737,
+      "lon": 34.759039
+    },
+    "waze": {
+      "lat": 32.04973602294922,
+      "lon": 34.759037017822266,
+      "label": "Jerusalem Blvd 57, Tel Aviv-Yafo",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0182",
+    "name": "גביז גודיז",
+    "city": "תל אביב",
+    "address": "השומר 2",
+    "from": {
+      "lat": 32.068511,
+      "lon": 34.769243
+    },
+    "waze": {
+      "lat": 32.068511962890625,
+      "lon": 34.76924133300781,
+      "label": "HaShomer St 2, Tel Aviv-Yafo, 6560102",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0183",
+    "name": "גלוטריה",
+    "city": "תל אביב",
+    "address": "אריה דיסנצ'יק 5",
+    "from": {
+      "lat": 32.116866,
+      "lon": 34.826886
+    },
+    "waze": {
+      "lat": 32.116798400878906,
+      "lon": 34.826927185058594,
+      "label": "Arieh Dissentchik St 5, Tel Aviv-Yafo",
+      "d": 8
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0184",
+    "name": "דידו DIDU",
+    "city": "תל אביב",
+    "address": "יצחק שדה 8",
+    "from": {
+      "lat": 32.06498336791992,
+      "lon": 34.78551483154297
+    },
+    "waze": {
+      "lat": 32.06498336791992,
+      "lon": 34.78551483154297,
+      "label": "Yitzhak Sadeh St 8, Tel Aviv-Yafo",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0185",
+    "name": "הולי בר",
+    "city": "תל אביב",
+    "address": "הר סיני 1",
+    "from": {
+      "lat": 32.064582,
+      "lon": 34.771805
+    },
+    "waze": {
+      "lat": 32.06458282470703,
+      "lon": 34.77180480957031,
+      "label": "Har Sinai St 1, Tel Aviv-Yafo",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0186",
+    "name": "מאנצ'יט",
+    "city": "תל אביב",
+    "address": "אבן גבירול 113",
+    "from": {
+      "lat": 32.08701,
+      "lon": 34.781944
+    },
+    "waze": {
+      "lat": 32.08530044555664,
+      "lon": 34.781768798828125,
+      "label": "Tel Aviv-Yafo",
+      "d": 191
+    },
+    "action": "city-fallback",
+    "reason": "Waze returned the town centre, not the venue"
+  },
+  {
+    "id": "tzohar-food-0187",
+    "name": "משק עפאים בעדנה",
+    "city": "תל אביב",
+    "address": "דרך שלמה 6",
+    "from": {
+      "lat": 32.05441665649414,
+      "lon": 34.7609977722168
+    },
+    "waze": {
+      "lat": 32.05441665649414,
+      "lon": 34.7609977722168,
+      "label": "Shalma Rd 6, Tel Aviv-Yafo, 6811116",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0188",
+    "name": "פיצה מוריו",
+    "city": "תל אביב",
+    "address": "לינקולן 19",
+    "from": {
+      "lat": 32.066407,
+      "lon": 34.783024
+    },
+    "waze": {
+      "lat": 32.06640625,
+      "lon": 34.783023834228516,
+      "label": "Lincoln St 19, Tel Aviv-Yafo, 6713411",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0189",
+    "name": "פיקה - Fika",
+    "city": "תל אביב",
+    "address": "תושיה 6",
+    "from": {
+      "lat": 32.066634,
+      "lon": 34.788253
+    },
+    "waze": {
+      "lat": 32.08187484741211,
+      "lon": 34.77256774902344,
+      "label": "J. L. Gordon St 36, Tel Aviv-Yafo",
+      "d": 2249
+    },
+    "action": "needs-review",
+    "reason": "house number 6 (ours) vs 36 (waze)"
+  },
+  {
+    "id": "tzohar-food-0190",
+    "name": "אלון שבו",
+    "city": "תל אביב",
+    "address": "צ'לנוב 22",
+    "from": {
+      "lat": 32.057536,
+      "lon": 34.774785
+    },
+    "waze": {
+      "lat": 32.05745315551758,
+      "lon": 34.77485656738281,
+      "label": "Chlenov St 22, Tel Aviv-Yafo",
+      "d": 11
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0191",
+    "name": "גרציאני בהשכלה",
+    "city": "תל אביב",
+    "address": "שדרות ההשכלה 20",
+    "from": {
+      "lat": 32.067649,
+      "lon": 34.796754
+    },
+    "waze": {
+      "lat": 32.067649841308594,
+      "lon": 34.7967529296875,
+      "label": "Sderot HaHaskala 20, Tel Aviv-Jaffa",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0192",
+    "name": "דגים זלאיט",
+    "city": "תל אביב",
+    "address": "נחלת יצחק 16",
+    "from": {
+      "lat": 32.074623,
+      "lon": 34.797765
+    },
+    "waze": {
+      "lat": 32.074623107910156,
+      "lon": 34.79776382446289,
+      "label": "Nakhalat Yitskhak St 16, Tel Aviv-Yafo",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0193",
+    "name": "טאלי לאמה",
+    "city": "תל אביב",
+    "address": "מנחם בגין 48",
+    "from": {
+      "lat": 32.063066,
+      "lon": 34.780368
+    },
+    "waze": {
+      "lat": 32.06304168701172,
+      "lon": 34.780418395996094,
+      "label": "Menakhem Begin Rd 48, Tel Aviv-Yafo",
+      "d": 5
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0194",
+    "name": "מורן גיל קייקרי",
+    "city": "תל אביב",
+    "address": "אלנבי 31",
+    "from": {
+      "lat": 32.072261,
+      "lon": 34.769224
+    },
+    "waze": {
+      "lat": 32.072261810302734,
+      "lon": 34.76922607421875,
+      "label": "Allenby St 31, Tel Aviv-Yafo",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0197",
+    "name": "אלפרד",
+    "city": "תל מונד",
+    "address": "פארק היערות",
+    "from": {
+      "lat": 32.25308,
+      "lon": 34.922266
+    },
+    "waze": {
+      "lat": 32.25679397583008,
+      "lon": 34.920570373535156,
+      "label": "Tel Mond",
+      "d": 443
+    },
+    "action": "city-fallback",
+    "reason": "Waze returned the town centre, not the venue"
+  },
+  {
+    "id": "tzohar-food-0198",
+    "name": "קפאינה תל מונד",
+    "city": "תל מונד",
+    "address": "הדקל 64",
+    "from": {
+      "lat": 32.256141,
+      "lon": 34.921468
+    },
+    "waze": {
+      "lat": 32.25679397583008,
+      "lon": 34.920570373535156,
+      "label": "Tel Mond",
+      "d": 111
+    },
+    "action": "city-fallback",
+    "reason": "Waze returned the town centre, not the venue"
+  },
+  {
+    "id": "tzohar-food-0199",
+    "name": "NO.2",
+    "city": "תל אביב",
+    "address": "הירקון 64",
+    "from": {
+      "lat": 32.075344,
+      "lon": 34.766736
+    },
+    "waze": {
+      "lat": 32.07534408569336,
+      "lon": 34.7667350769043,
+      "label": "HaYarkon St 64, Tel Aviv-Yafo, 6343220",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0201",
+    "name": "טורטארט",
+    "city": "תל יצחק",
+    "address": "תל-יצחק",
+    "from": {
+      "lat": 32.25196075439453,
+      "lon": 34.87070846557617
+    },
+    "waze": {
+      "lat": 32.25196075439453,
+      "lon": 34.87070846557617,
+      "label": "Tel Yitzhak, 4580500",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0202",
+    "name": "אבנר פירות וירקות",
+    "city": "תל מונד",
+    "address": "הדקל 38",
+    "from": {
+      "lat": 32.250471,
+      "lon": 34.918764
+    },
+    "waze": {
+      "lat": 32.25046920776367,
+      "lon": 34.91876220703125,
+      "label": "Ha-Dekel St 38, Tel Mond, 4060038",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0204",
+    "name": "ארקפה קניון ראשונים",
+    "city": "ראשון לציון",
+    "address": "קניון ראשונים",
+    "from": {
+      "lat": 31.949796676635742,
+      "lon": 34.80327224731445
+    },
+    "waze": {
+      "lat": 31.949796676635742,
+      "lon": 34.80327224731445,
+      "label": "קניון עזריאלי",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0205",
+    "name": "זהב שחור",
+    "city": "רחובות",
+    "address": "ביל\"ו 2",
+    "from": {
+      "lat": 31.892831802368164,
+      "lon": 34.80568313598633
+    },
+    "waze": {
+      "lat": 31.892831802368164,
+      "lon": 34.80568313598633,
+      "label": "Bilu St 2, Rehovot",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0206",
+    "name": "ביסטרו חלבי יודה",
+    "city": "ירושלים",
+    "address": "ההגנה 21",
+    "from": {
+      "lat": 31.802478790283203,
+      "lon": 35.23843765258789
+    },
+    "waze": {
+      "lat": 31.802478790283203,
+      "lon": 35.23843765258789,
+      "label": "شارع هاهغانا 21، القدس",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0208",
+    "name": "מירו הדייג",
+    "city": "תל מונד",
+    "address": "השקד 2",
+    "from": {
+      "lat": 32.257488,
+      "lon": 34.919987
+    },
+    "waze": {
+      "lat": 32.25748825073242,
+      "lon": 34.919986724853516,
+      "label": "Ha-Shaked St 2, Tel Mond",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0209",
+    "name": "ליב",
+    "city": "הרצליה",
+    "address": "משכית 32",
+    "from": {
+      "lat": 32.16204833984375,
+      "lon": 34.809326171875
+    },
+    "waze": {
+      "lat": 32.16204833984375,
+      "lon": 34.809326171875,
+      "label": "Maskit St 32, Herzliya",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0210",
+    "name": "שורר בר יין",
+    "city": "גדרה",
+    "address": "הבילויים 10",
+    "from": {
+      "lat": 31.815486,
+      "lon": 34.772096
+    },
+    "waze": {
+      "lat": 31.815486907958984,
+      "lon": 34.7720947265625,
+      "label": "Ha-Biluyim St 10, Gedera",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0211",
+    "name": "בירה קדימה",
+    "city": "ירושלים",
+    "address": "בית הדפוס 11",
+    "from": {
+      "lat": 31.785852,
+      "lon": 35.188577
+    },
+    "action": "no-match"
+  },
+  {
+    "id": "tzohar-food-0212",
+    "name": "ארקפה מגדלי אלון",
+    "city": "תל אביב",
+    "address": "יגאל אלון 94",
+    "from": {
+      "lat": 32.068687438964844,
+      "lon": 34.7939338684082
+    },
+    "waze": {
+      "lat": 32.068687438964844,
+      "lon": 34.7939338684082,
+      "label": "מגדלי אלון 94, Tel Aviv-Jaffa",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0213",
+    "name": "צ'וקה בת ים",
+    "city": "בת ים",
+    "address": "יוספטל 92",
+    "from": {
+      "lat": 32.015183,
+      "lon": 34.756167
+    },
+    "waze": {
+      "lat": 32.01518249511719,
+      "lon": 34.756168365478516,
+      "label": "Yoseftal St 92, Bat Yam, 5964101",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0214",
+    "name": "קצביה פמילי מרקט",
+    "city": "תל מונד",
+    "address": "הדקל 47",
+    "from": {
+      "lat": 32.25301742553711,
+      "lon": 34.918006896972656
+    },
+    "waze": {
+      "lat": 32.25301742553711,
+      "lon": 34.918006896972656,
+      "label": "Ha-Dekel St 47, Tel Mond",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0215",
+    "name": "צ'יקן פיק",
+    "city": "פתח תקווה",
+    "address": "דרך שלמה שמלצר 94",
+    "from": {
+      "lat": 32.10047912597656,
+      "lon": 34.849849700927734
+    },
+    "waze": {
+      "lat": 32.10047912597656,
+      "lon": 34.849849700927734,
+      "label": "פארק עופר",
+      "d": 0
+    },
+    "action": "already-accurate"
+  },
+  {
+    "id": "tzohar-food-0216",
+    "name": "אומאיי עזריאלי Oomai",
+    "city": "תל אביב",
+    "address": "דרך מנחם בגין 132",
+    "from": {
+      "lat": 32.07345199584961,
+      "lon": 34.79210662841797
+    },
+    "waze": {
+      "lat": 32.07345199584961,
+      "lon": 34.79210662841797,
+      "label": "Azrieli Center",
+      "d": 0
+    },
+    "action": "already-accurate"
+  }
+]
