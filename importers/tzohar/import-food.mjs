@@ -94,6 +94,17 @@ function normAddr(s) {
   return norm(s).split(',')[0].trim();
 }
 
+/**
+ * True when two business names share a meaningful word. Guards the
+ * address-based fallback so co-located businesses are never conflated.
+ */
+function namesOverlap(a, b) {
+  const words = s => new Set(norm(s).split(' ').filter(w => w.length > 2));
+  const wa = words(a), wb = words(b);
+  for (const w of wa) if (wb.has(w)) return true;
+  return false;
+}
+
 // ── Build lookup tables from existing DB ─────────────────────────────────────
 const byNameCity = new Map();    // "normName|normCity" → place
 const byAddrCity = new Map();    // "normAddr|normCity" → place[]
@@ -140,11 +151,18 @@ for (const t of food) {
   const nameKey = normName(t.name) + '|' + nc;
   let matched = byNameCity.get(nameKey);
 
-  // 2. Fallback: normalised address + city — ONLY match food-type places
+  // 2. Fallback: normalised address + city — ONLY match food-type places.
+  //    A shared address is NOT enough on its own: malls, food courts and office
+  //    buildings hold several businesses at one street address, and matching on
+  //    address alone stamped 12 unrelated places with someone else's Tzohar
+  //    certificate (McDonald's Tel Mond got a butcher's, Alfredo got Chick&Pick's).
+  //    Require the names to overlap as well.
   const FOOD_TYPES = new Set(['restaurant', 'cafe', 'bakery', 'fast_food', 'juice_bar', 'ice_cream_parlor', 'winery']);
   if (!matched) {
     const addrKey = normAddr(t.address) + '|' + nc;
-    const addrHits = (byAddrCity.get(addrKey) ?? []).filter(h => FOOD_TYPES.has(h.type));
+    const addrHits = (byAddrCity.get(addrKey) ?? [])
+      .filter(h => FOOD_TYPES.has(h.type))
+      .filter(h => namesOverlap(t.name, h.name));
     if (addrHits.length === 1) matched = addrHits[0];
   }
 
