@@ -42,3 +42,6 @@ yarn-error.*
 
 .vercel
 .env*
+
+# Downloaded kashrut certificate PDFs (regenerate with importers/tzohar/extract-cert-expiry.mjs)
+importers/tzohar/cert-cache/

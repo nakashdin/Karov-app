@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import {
+  Image,
   Linking,
   Modal,
   Pressable,
@@ -65,6 +66,29 @@ function buildChips(place: ReturnType<typeof usePlace>['place']): string[] {
   if (place.nusach) chips.push(`נוסח ${place.nusach}`);
   if (place.tags)   chips.push(...place.tags.filter(t => !(t in placeTypeLabel)));
   return chips;
+}
+
+// ─── Kashrut certificate ─────────────────────────────────────────────────────
+
+/** Label for the certificate link: says whether it is still in force. */
+function certStatusLabel(validUntil?: string): string {
+  if (!validUntil) return 'צפייה בתעודה';
+  const today = new Date().toISOString().slice(0, 10);
+  const [y, m, d] = validUntil.split('-');
+  const he = `${d}.${m}.${y}`;
+  return validUntil < today ? `פג תוקף ב-${he}` : `בתוקף עד ${he}`;
+}
+
+/** The kashrut standards printed on the certificate, as display strings. */
+function kosherStandards(details: NonNullable<ReturnType<typeof usePlace>['place']>['kosherDetails']): string[] {
+  if (!details) return [];
+  const out: string[] = [];
+  if (details.shabbatClosed) out.push('סגור בשבתות ובמועדי ישראל');
+  if (details.bishulYisrael) out.push('בישול ישראל');
+  if (details.chalavYisrael) out.push('חלב ישראל');
+  if (details.vegChecked)    out.push('ירק עלים ללא חרקים');
+  if (details.noChametz)     out.push('ללא חשש חמץ שעבר עליו הפסח');
+  return out;
 }
 
 // ─── Main screen ─────────────────────────────────────────────────────────────
@@ -175,12 +199,22 @@ export function PlaceDetailScreen() {
       /* ── Info tab ────────────────────────────────────────── */
       <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={styles.scroll}>
 
-        {/* Hero gradient */}
-        <View style={[styles.hero, { backgroundColor: accent + '22' }]}>
-          <View style={[styles.heroIconCircle, { backgroundColor: accent + '33' }]}>
-            <Text style={styles.heroEmoji}>{TYPE_EMOJI[place.type] ?? '📍'}</Text>
+        {/* Hero — photo when available, gradient fallback otherwise */}
+        {place.imageUrl ? (
+          <View style={styles.hero}>
+            <Image source={{ uri: place.imageUrl }} style={styles.heroImage} resizeMode="cover" />
+            <View style={styles.heroImageOverlay} />
+            <View style={[styles.heroIconBadge, { backgroundColor: accent }]}>
+              <Text style={styles.heroEmojiBadge}>{TYPE_EMOJI[place.type] ?? '📍'}</Text>
+            </View>
           </View>
-        </View>
+        ) : (
+          <View style={[styles.hero, { backgroundColor: accent + '22' }]}>
+            <View style={[styles.heroIconCircle, { backgroundColor: accent + '33' }]}>
+              <Text style={styles.heroEmoji}>{TYPE_EMOJI[place.type] ?? '📍'}</Text>
+            </View>
+          </View>
+        )}
 
         {/* Name card — overlaps hero */}
         <View style={styles.nameCard}>
@@ -247,17 +281,22 @@ export function PlaceDetailScreen() {
         {/* ── גלריה ────────────────────────────────────────────── */}
         <SectionCard title="גלריה">
           <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.gallery}>
-            {/* Placeholder until real photos are added */}
+            {place.imageUrl ? (
+              <Image source={{ uri: place.imageUrl }} style={styles.galleryImage} resizeMode="cover" />
+            ) : (
+              <>
+                <View style={[styles.galleryPlaceholder, { backgroundColor: accent + '11' }]}>
+                  <Ionicons name="image-outline" size={32} color={accent + '55'} />
+                </View>
+                <View style={[styles.galleryPlaceholder, { backgroundColor: accent + '11' }]}>
+                  <Ionicons name="image-outline" size={32} color={accent + '55'} />
+                </View>
+              </>
+            )}
             <Pressable style={[styles.galleryAdd, { borderColor: accent }]} onPress={() => setSuggestOpen(true)}>
               <Ionicons name="camera-outline" size={28} color={accent} />
               <Text style={[styles.galleryAddText, { color: accent }]}>הוסף תמונה</Text>
             </Pressable>
-            <View style={[styles.galleryPlaceholder, { backgroundColor: accent + '11' }]}>
-              <Ionicons name="image-outline" size={32} color={accent + '55'} />
-            </View>
-            <View style={[styles.galleryPlaceholder, { backgroundColor: accent + '11' }]}>
-              <Ionicons name="image-outline" size={32} color={accent + '55'} />
-            </View>
           </ScrollView>
         </SectionCard>
 
@@ -273,6 +312,26 @@ export function PlaceDetailScreen() {
                 accent={accent}
                 empty={!place.certifiedBy && !place.kosherType}
               />
+              {place.kosherCertUrl ? (
+                <DetailRow
+                  icon="document-text-outline"
+                  label="תעודת כשרות"
+                  value={certStatusLabel(place.certificateValidUntil)}
+                  accent={accent}
+                  tappable
+                  onPress={() => Linking.openURL(place.kosherCertUrl!)}
+                  link
+                />
+              ) : null}
+              {kosherStandards(place.kosherDetails).length ? (
+                <DetailRow
+                  icon="checkmark-circle-outline"
+                  label="תקני הכשרות"
+                  value={kosherStandards(place.kosherDetails).join(' · ')}
+                  accent={accent}
+                  multiline
+                />
+              ) : null}
               {(place.extra as any)?.mashgiachPhone ? (
                 <DetailRow
                   icon="person-outline"
@@ -323,9 +382,6 @@ export function PlaceDetailScreen() {
               ) : null}
               {place.menu ? (
                 <DetailRow icon="restaurant-outline" label="תפריט" value={place.menu} accent={accent} tappable onPress={() => Linking.openURL(place.menu!)} link />
-              ) : null}
-              {place.certificateValidUntil ? (
-                <DetailRow icon="calendar-outline" label="תוקף תעודה" value={place.certificateValidUntil} accent={accent} />
               ) : null}
             </>
           ) : (
@@ -397,8 +453,27 @@ export function PlaceDetailScreen() {
               {place.type === 'mikveh' && (place.extra as any)?.hasKelim ? (
                 <DetailRow icon="cube-outline" label="טבילת כלים" value="קיים אזור לטבילת כלים" accent={accent} />
               ) : null}
-              {place.certificateValidUntil ? (
+              {place.kosherCertUrl ? (
+                <DetailRow
+                  icon="document-text-outline"
+                  label="תעודת כשרות"
+                  value={certStatusLabel(place.certificateValidUntil)}
+                  accent={accent}
+                  tappable
+                  onPress={() => Linking.openURL(place.kosherCertUrl!)}
+                  link
+                />
+              ) : place.certificateValidUntil ? (
                 <DetailRow icon="calendar-outline" label="תוקף תעודה" value={place.certificateValidUntil} accent={accent} />
+              ) : null}
+              {kosherStandards(place.kosherDetails).length ? (
+                <DetailRow
+                  icon="checkmark-circle-outline"
+                  label="תקני הכשרות"
+                  value={kosherStandards(place.kosherDetails).join(' · ')}
+                  accent={accent}
+                  multiline
+                />
               ) : null}
             </>
           )}
@@ -612,10 +687,28 @@ const styles = StyleSheet.create({
 
   // Hero
   hero: {
-    height: 180,
+    height: 220,
     alignItems: 'center',
     justifyContent: 'center',
   },
+  heroImage: {
+    ...StyleSheet.absoluteFill,
+  },
+  heroImageOverlay: {
+    ...StyleSheet.absoluteFill,
+    backgroundColor: 'rgba(0,0,0,0.25)',
+  },
+  heroIconBadge: {
+    width: 44,
+    height: 44,
+    borderRadius: 22,
+    alignItems: 'center',
+    justifyContent: 'center',
+    position: 'absolute',
+    bottom: 12,
+    left: 16,
+  },
+  heroEmojiBadge: { fontSize: 22 },
   heroIconCircle: {
     width: 88,
     height: 88,
@@ -697,7 +790,7 @@ const styles = StyleSheet.create({
   },
   galleryAdd: {
     width: 110,
-    height: 110,
+    height: 140,
     borderRadius: radius.md,
     borderWidth: 1.5,
     borderStyle: 'dashed',
@@ -706,9 +799,14 @@ const styles = StyleSheet.create({
     gap: 6,
   },
   galleryAddText: { fontSize: 12, fontWeight: '600' },
+  galleryImage: {
+    width: 200,
+    height: 140,
+    borderRadius: radius.md,
+  },
   galleryPlaceholder: {
     width: 110,
-    height: 110,
+    height: 140,
     borderRadius: radius.md,
     alignItems: 'center',
     justifyContent: 'center',

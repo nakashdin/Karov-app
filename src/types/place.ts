@@ -68,7 +68,7 @@ export interface Place {
   rating?: number;
   tags?: string[];
   /** Where this record came from (for attribution / trust). */
-  source?: 'osm' | 'seed' | 'wikidata' | 'manual';
+  source?: 'osm' | 'seed' | 'wikidata' | 'manual' | 'tzohar';
   /**
    * Accuracy of `location`. 'address' = an exact address geocode; 'city' = an
    * approximate city-centre point (show an "approximate location" hint). Absent
@@ -89,6 +89,24 @@ export interface Place {
   certifiedBy?: string;
   /** ISO date (YYYY-MM-DD) the kosher certificate is valid until. */
   certificateValidUntil?: string;
+  /**
+   * Kashrut standards printed on the certificate itself. Populated from the
+   * Tzohar certificate PDFs by importers/tzohar/extract-cert-expiry.mjs.
+   */
+  kosherDetails?: {
+    /** Closed on Shabbat and Jewish holidays. */
+    shabbatClosed?: boolean;
+    /** Bishul Yisrael in lighting and food preparation. */
+    bishulYisrael?: boolean;
+    /** No concern of chametz she'avar alav haPesach. */
+    noChametz?: boolean;
+    /** Leafy greens from insect-free cultivation. */
+    vegChecked?: boolean;
+    /** Chalav Yisrael dairy (as opposed to imported). */
+    chalavYisrael?: boolean;
+    /** Certificate states it is not a local-rabbinate hechsher. */
+    notRabbanut?: boolean;
+  };
 
   // --- Synagogue-specific (optional) ---
   /** Prayer rite, e.g. אשכנז / ספרד / תימני. */
@@ -107,6 +125,12 @@ export interface Place {
    * Services offered, as free Hebrew strings (e.g. תפילין, סעודות שבת, מניין,
    * סיוע במזון כשר, סיוע לתיירים). Additive — only Chabad houses set it today. */
   services?: string[];
+
+  // --- Media ---
+  /** Primary photo URL (hosted on Supabase Storage or any CDN). */
+  imageUrl?: string;
+  /** URL to the kosher certificate document (PDF or image). */
+  kosherCertUrl?: string;
 
   // --- Source / provenance (optional; additive, source-agnostic) ---
   /** Canonical source page for this record (e.g. a council directory listing). */
