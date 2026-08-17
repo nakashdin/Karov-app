@@ -36,7 +36,7 @@ export function DailyCarousel({ parasha }: Props) {
   const card1 = (
     <Pressable
       style={({ pressed }) => [styles.card, isDesktop && styles.cardDesktop, { backgroundColor: '#F2EEFA' }, pressed && styles.pressed]}
-      onPress={() => setOpenModal('karov')}
+      onPress={() => { if (content.isReady) setOpenModal('karov'); }}
     >
       <View style={styles.typeTabs}>
         {CONTENT_TYPES.map((t) => (
@@ -51,12 +51,18 @@ export function DailyCarousel({ parasha }: Props) {
         ))}
       </View>
       <Text style={[styles.tag, { color: '#7B5EA7' }]}>קרוב ללב</Text>
-      <Text style={styles.cardTitle} numberOfLines={isDesktop ? 3 : 2}>{content.item.title}</Text>
-      <Text style={styles.cardBody} numberOfLines={isDesktop ? 6 : 4}>{content.item.body}</Text>
-      {content.item.source ? (
-        <Text style={[styles.source, { color: '#9B7EC8' }]}>{content.item.source}</Text>
-      ) : null}
-      <Text style={[styles.cta, { color: '#7B5EA7' }]}>קרא עוד ←</Text>
+      {content.isReady ? (
+        <>
+          <Text style={styles.cardTitle} numberOfLines={isDesktop ? 3 : 2}>{content.item.title}</Text>
+          <Text style={styles.cardBody} numberOfLines={isDesktop ? 6 : 4}>{content.item.body}</Text>
+          {content.item.source ? (
+            <Text style={[styles.source, { color: '#9B7EC8' }]}>{content.item.source}</Text>
+          ) : null}
+          <Text style={[styles.cta, { color: '#7B5EA7' }]}>קרא עוד ←</Text>
+        </>
+      ) : (
+        <ActivityIndicator color="#7B5EA7" style={{ flex: 1, alignSelf: 'center', marginVertical: 8 }} />
+      )}
     </Pressable>
   );
 
