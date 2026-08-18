@@ -10,7 +10,7 @@ import { useJewishDayInfo } from '../../hooks/useJewishDayInfo';
 import { useDailyContent, ContentType, TYPE_ICONS, TYPE_NAMES } from '../../hooks/useDailyContent';
 import { RootStackParamList } from '../../navigation/types';
 import { DESKTOP_BREAKPOINT } from '../Screen';
-import { TEHILLIM_WEEKLY } from '../../data/tehillim';
+import { TEHILLIM_WEEKLY, numToHebrew } from '../../data/tehillim';
 
 type Nav = NativeStackNavigationProp<RootStackParamList>;
 
@@ -134,7 +134,7 @@ export function DailyCarousel({ parasha }: Props) {
       </Text>
       <Text style={styles.cardBody} numberOfLines={isDesktop ? 6 : 4}>
         {todayTehillim
-          ? `פרקים ${todayTehillim.from}–${todayTehillim.to} • ${todayTehillim.to - todayTehillim.from + 1} פרקים להיום`
+          ? `פרקים ${numToHebrew(todayTehillim.from)}–${numToHebrew(todayTehillim.to)} • ${todayTehillim.to - todayTehillim.from + 1} פרקים להיום`
           : 'קרא את תהילים היום'}
       </Text>
       <Text style={[styles.cta, { color: '#5B4FCF' }]}>לקריאה ←</Text>
