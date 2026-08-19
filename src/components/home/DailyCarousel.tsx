@@ -29,14 +29,14 @@ export function DailyCarousel({ parasha }: Props) {
   const parashaSummary = useParashaSummary(parasha?.topicSlug ?? null);
   const { width } = useWindowDimensions();
   const isDesktop = Platform.OS === 'web' && width >= DESKTOP_BREAKPOINT;
-  const [openModal, setOpenModal] = useState<null | 'karov' | 'jewish-day'>(null);
+  const [openModal, setOpenModal] = useState<null | 'jewish-day'>(null);
 
   const todayTehillim = TEHILLIM_WEEKLY[new Date().getDay()];
 
   const card1 = (
     <Pressable
       style={({ pressed }) => [styles.card, isDesktop && styles.cardDesktop, { backgroundColor: '#F2EEFA' }, pressed && styles.pressed]}
-      onPress={() => { if (content.isReady) setOpenModal('karov'); }}
+      onPress={() => { if (content.isReady) navigation.navigate('KarovLev'); }}
     >
       <View style={styles.typeTabs}>
         {CONTENT_TYPES.map((t) => (
@@ -154,40 +154,9 @@ export function DailyCarousel({ parasha }: Props) {
           <Pressable onPress={() => setOpenModal(null)} style={mStyles.closeBtn} hitSlop={8}>
             <Ionicons name="close" size={22} color={colors.text} />
           </Pressable>
-          <Text style={mStyles.headerTitle}>
-            {openModal === 'karov' ? 'קרוב ללב' : 'היום ביהדות'}
-          </Text>
+          <Text style={mStyles.headerTitle}>היום ביהדות</Text>
           <View style={mStyles.closeBtn} />
         </View>
-
-        {openModal === 'karov' && (
-          <ScrollView contentContainerStyle={mStyles.content} showsVerticalScrollIndicator={false}>
-            {/* Type tabs */}
-            <View style={mStyles.typeTabs}>
-              {CONTENT_TYPES.map((t) => (
-                <Pressable
-                  key={t}
-                  style={[mStyles.typeTab, content.type === t && mStyles.typeTabActive]}
-                  onPress={() => content.setType(t)}
-                >
-                  <Text style={mStyles.typeTabIcon}>{TYPE_ICONS[t]}</Text>
-                  <Text style={[mStyles.typeTabLabel, content.type === t && mStyles.typeTabLabelActive]}>
-                    {TYPE_NAMES[t]}
-                  </Text>
-                </Pressable>
-              ))}
-            </View>
-
-            <View style={[mStyles.heroCard, { backgroundColor: '#F2EEFA' }]}>
-              <Text style={[mStyles.cardTag, { color: '#7B5EA7' }]}>קרוב ללב — {TYPE_NAMES[content.type]}</Text>
-              <Text style={mStyles.cardTitle}>{content.item.title}</Text>
-              <Text style={mStyles.cardBody}>{content.item.body}</Text>
-              {content.item.source ? (
-                <Text style={[mStyles.source, { color: '#9B7EC8' }]}>{content.item.source}</Text>
-              ) : null}
-            </View>
-          </ScrollView>
-        )}
 
         {openModal === 'jewish-day' && (
           <ScrollView contentContainerStyle={mStyles.content} showsVerticalScrollIndicator={false}>

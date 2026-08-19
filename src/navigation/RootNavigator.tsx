@@ -16,6 +16,8 @@ import { ParashaDetailScreen } from '../screens/ParashaDetailScreen';
 import { KashruyotFilterScreen } from '../screens/KashruyotFilterScreen';
 import { WhatsAroundScreen } from '../screens/WhatsAroundScreen';
 import { FoodListScreen } from '../screens/FoodListScreen';
+import { KarovLevScreen } from '../screens/KarovLevScreen';
+import { KarovLevContentScreen } from '../screens/KarovLevContentScreen';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -45,6 +47,8 @@ export function RootNavigator() {
       <Stack.Screen name="KashruyotFilter"   component={KashruyotFilterScreen}   options={{ headerShown: false }} />
       <Stack.Screen name="WhatsAround"      component={WhatsAroundScreen}        options={{ headerShown: false }} />
       <Stack.Screen name="FoodList"         component={FoodListScreen}           options={{ headerShown: false }} />
+      <Stack.Screen name="KarovLev"         component={KarovLevScreen}           options={{ headerShown: false, animation: 'slide_from_left' }} />
+      <Stack.Screen name="KarovLevContent"  component={KarovLevContentScreen}    options={{ headerShown: false, animation: 'slide_from_left' }} />
     </Stack.Navigator>
   );
 }

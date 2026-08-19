@@ -145,6 +145,9 @@ export interface JewishContentItem {
   // These bypass new publish validation rules because they were already live.
   // New content must never set this field.
   isLegacyMigrated?: true;
+
+  // UI development only — placeholder items that must never reach production.
+  isPlaceholder?: true;
 }
 
 // ─── History ─────────────────────────────────────────────────────────────────

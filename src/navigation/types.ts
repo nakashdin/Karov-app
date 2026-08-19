@@ -24,6 +24,8 @@ export type RootStackParamList = {
   KashruyotFilter: { placeType: 'restaurant' | 'fast_food' | 'cafe' | 'coffee_cart' };
   WhatsAround: undefined;
   FoodList: { radiusKm?: number } | undefined;
+  KarovLev: undefined;
+  KarovLevContent: { id: string };
 };
 
 declare global {
