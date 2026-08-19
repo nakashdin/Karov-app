@@ -39,6 +39,8 @@ const MAX_JUMP = +arg('--max-jump', 2500);  // metres — refuse anything furthe
 const MIN_MOVE = +arg('--min-move', 20);    // metres — ignore trivial nudges
 const DELAY = +arg('--delay', 1000);
 const LOOSE_JUMP = +arg('--loose-jump', 300); // beyond this, demand a house number
+const RESUME = args.includes('--resume');    // skip places already on Waze coords
+const SAVE_EVERY = +arg('--save-every', 50); // checkpoint so a long run is never lost
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const dist = (a, b, c, d) => {
@@ -61,10 +63,10 @@ const words = s => new Set(
  */
 function labelNamesTheVenue(placeName, label) {
   const wa = words(placeName), wb = words(label);
-  if (!wa.size) return false;
+  if (wa.size < 2) return false; // one shared word is a coincidence, not a match
   let shared = 0;
   for (const w of wa) if (wb.has(w)) shared++;
-  return shared >= Math.min(2, wa.size);
+  return shared >= 2;
 }
 
 async function wazeSearch(query, lat, lon) {
@@ -97,10 +99,22 @@ async function cityPoint(city, lat, lon) {
   return pt;
 }
 
+const FOOD_TYPES = new Set([
+  'restaurant', 'cafe', 'bakery', 'fast_food',
+  'juice_bar', 'coffee_cart', 'winery', 'ice_cream_parlor',
+]);
+
 const places = JSON.parse(readFileSync(PLACES, 'utf8'));
-const targets = places.filter(p =>
-  p.location && (FILTER === 'all' || (FILTER === 'tzohar' && p.certifiedBy === 'צהר'))
-);
+const targets = places.filter(p => {
+  if (!p.location) return false;
+  if (RESUME && p.locationSource === 'waze') return false; // already synced
+  switch (FILTER) {
+    case 'all':    return true;
+    case 'food':   return FOOD_TYPES.has(p.type);
+    case 'tzohar': return p.certifiedBy === 'צהר';
+    default:       return p.type === FILTER;
+  }
+});
 
 console.log(`resolving ${targets.length} places through Waze${DRY ? ' (dry run)' : ''}\n`);
 
@@ -177,6 +191,10 @@ for (const p of targets) {
   }
 
   rows.push(row);
+  if (!DRY && rows.length % SAVE_EVERY === 0) {
+    writeFileSync(PLACES, JSON.stringify(places), 'utf8');
+    writeFileSync(REPORT, JSON.stringify(rows, null, 2), 'utf8');
+  }
   await sleep(DELAY);
 }
 
