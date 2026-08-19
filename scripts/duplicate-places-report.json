@@ -1,0 +1,5282 @@
+[
+  {
+    "distance": 0,
+    "skeleton": "kbrdnbnkb",
+    "a": {
+      "id": "osm-node-1156237259",
+      "name": "קבר דן בן יעקב",
+      "city": "אשתאול",
+      "address": "אשתאול",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "tzaddik-osm-osm-node-1156237259",
+      "name": "קבר דן בן יעקב",
+      "city": "אשתאול",
+      "address": "אשתאול",
+      "type": "tzaddik_grave",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "kbrshmhbtln",
+    "a": {
+      "id": "osm-node-1339520311",
+      "name": "קבר שמעיה ואבטליון",
+      "city": "ג'ש",
+      "address": "ג'ש",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "tzaddik-osm-osm-node-1339520311",
+      "name": "קבר שמעיה ואבטליון",
+      "city": "ג'ש",
+      "address": "ג'ש",
+      "type": "tzaddik_grave",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkhthrh",
+    "a": {
+      "id": "osm-node-1435545794",
+      "name": "מקווה טהרה",
+      "city": "עין העמק",
+      "address": "רחוב ארבל 2, יקנעם",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "mikveh-osm-node-1435545794",
+      "name": "מקווה טהרה",
+      "city": "",
+      "address": "רחוב ארבל 2, יקנעם",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "drtbrhm",
+    "a": {
+      "id": "osm-node-4406510250",
+      "name": "דורות אברהם",
+      "city": "שוהם",
+      "address": "רחוב המכבים 94, שוהם",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "mikveh-shoham-m-31.99678_34.94822",
+      "name": "מקווה גברים דורות אברהם",
+      "city": "שוהם",
+      "address": "רחוב המכבים 94, שוהם",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 13
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mrthsnhdrnhktnh",
+    "a": {
+      "id": "osm-node-4453179605",
+      "name": "מערת הסנהדרין הקטנה",
+      "city": "ירושלים",
+      "address": "ירושלים",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "tzaddik-osm-osm-node-4453179605",
+      "name": "מערת הסנהדרין הקטנה",
+      "city": "ירושלים",
+      "address": "ירושלים",
+      "type": "tzaddik_grave",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "btchbd",
+    "a": {
+      "id": "osm-node-8097632056",
+      "name": "בית חב\"ד",
+      "city": "פתח תקווה",
+      "address": "רחוב פרנקפורטר דוד 2, פתח תקווה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "chabad-osm-node-8097632056",
+      "name": "בית חב\"ד",
+      "city": "פתח תקווה",
+      "address": "רחוב פרנקפורטר דוד 2, פתח תקווה",
+      "type": "chabad_house",
+      "certifiedBy": null,
+      "fields": 12
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "kbrmth",
+    "a": {
+      "id": "osm-node-9315565017",
+      "name": "קבר מתתיהו",
+      "city": "מבוא מודיעים",
+      "address": "מבוא מודיעים",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "tzaddik-osm-osm-node-9315565017",
+      "name": "קבר מתתיהו",
+      "city": "מבוא מודיעים",
+      "address": "מבוא מודיעים",
+      "type": "tzaddik_grave",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkhrn",
+    "a": {
+      "id": "osm-node-13196183468",
+      "name": "מקווה עירוני",
+      "city": "חיפה",
+      "address": "רחוב בצלאל 2, חיפה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "mikveh-osm-node-13196183468",
+      "name": "מקווה עירוני",
+      "city": "",
+      "address": "רחוב בצלאל 2, חיפה",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "btchbd",
+    "a": {
+      "id": "osm-node-13619434561",
+      "name": "בית חב\"ד",
+      "city": "גבעתיים",
+      "address": "רחוב שפירא 5, רמת גן",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "chabad-osm-node-13619434561",
+      "name": "בית חב\"ד",
+      "city": "רמת גן",
+      "address": "רחוב שפירא 5, רמת גן",
+      "type": "chabad_house",
+      "certifiedBy": null,
+      "fields": 12
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "kbrshmnhtzdk",
+    "a": {
+      "id": "osm-way-350440903",
+      "name": "קבר שמעון הצדיק",
+      "city": "ירושלים",
+      "address": "רחוב עות'מן בן עפאן 11, ירושלים",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "tzaddik-osm-osm-way-350440903",
+      "name": "קבר שמעון הצדיק",
+      "city": "ירושלים",
+      "address": "רחוב עות'מן בן עפאן 11, ירושלים",
+      "type": "tzaddik_grave",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "btchbd",
+    "a": {
+      "id": "osm-way-358683946",
+      "name": "בית חב\"ד",
+      "city": "גבעת שמואל",
+      "address": "רחוב נימרובר 2, גבעת שמואל",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "chabad-osm-way-358683946",
+      "name": "בית חב\"ד",
+      "city": "גבעת שמואל",
+      "address": "רחוב נימרובר 2, גבעת שמואל",
+      "type": "chabad_house",
+      "certifiedBy": null,
+      "fields": 12
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkhnshmbtchpr",
+    "a": {
+      "id": "osm-way-481476350",
+      "name": "מקווה נשים בת חפר",
+      "city": "בת חפר",
+      "address": "בת חפר",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "mikveh-osm-way-481476350",
+      "name": "מקווה נשים בת חפר",
+      "city": "בת חפר",
+      "address": "בת חפר",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "kbrnchmshgmz",
+    "a": {
+      "id": "osm-way-501662566",
+      "name": "קבר נחום איש גמזו",
+      "city": "צפת",
+      "address": "רחוב סולד הנריאטה 5, צפת",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "tzaddik-osm-osm-way-501662566",
+      "name": "קבר נחום איש גמזו",
+      "city": "צפת",
+      "address": "רחוב סולד הנריאטה 5, צפת",
+      "type": "tzaddik_grave",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "kbrbnmnhtzdk",
+    "a": {
+      "id": "osm-way-506420098",
+      "name": "קבר בנימין הצדיק",
+      "city": "צפת",
+      "address": "רחוב לוחמי הגטאות 1, צפת",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "tzaddik-osm-osm-way-506420098",
+      "name": "קבר בנימין הצדיק",
+      "city": "צפת",
+      "address": "רחוב לוחמי הגטאות 1, צפת",
+      "type": "tzaddik_grave",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "kbrchtzpthmtrgmn",
+    "a": {
+      "id": "osm-way-514139736",
+      "name": "קבר חוצפית המתורגמן",
+      "city": "ביריה",
+      "address": "ביריה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "tzaddik-osm-osm-way-514139736",
+      "name": "קבר חוצפית המתורגמן",
+      "city": "ביריה",
+      "address": "ביריה",
+      "type": "tzaddik_grave",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "kbrntnbnzl",
+    "a": {
+      "id": "osm-way-614928920",
+      "name": "קבר יונתן בן עוזיאל",
+      "city": "עמוקה",
+      "address": "עמוקה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "tzaddik-osm-osm-way-614928920",
+      "name": "קבר יונתן בן עוזיאל",
+      "city": "עמוקה",
+      "address": "עמוקה",
+      "type": "tzaddik_grave",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "kbrbhdhbrl",
+    "a": {
+      "id": "osm-way-647373211",
+      "name": "קבר רבי יהודה בר עילאי",
+      "city": "ביריה",
+      "address": "ביריה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "tzaddik-osm-osm-way-647373211",
+      "name": "קבר רבי יהודה בר עילאי",
+      "city": "ביריה",
+      "address": "ביריה",
+      "type": "tzaddik_grave",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "btknstmkhgbrm",
+    "a": {
+      "id": "osm-way-662211701",
+      "name": "בית כנסת ומקווה גברים",
+      "city": "ברקאי",
+      "address": "8-10 רחוב גפן, מחוז חיפה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "mikveh-osm-way-662211701",
+      "name": "בית כנסת ומקווה גברים",
+      "city": "",
+      "address": "8-10 רחוב גפן, מחוז חיפה",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkhthrhtzrhdsh",
+    "a": {
+      "id": "osm-way-665203231",
+      "name": "מקווה טהרה צור הדסה",
+      "city": "צור הדסה",
+      "address": "רחוב שלדג 4, צור הדסה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 9
+    },
+    "b": {
+      "id": "mikveh-osm-way-665203231",
+      "name": "מקווה טהרה צור הדסה",
+      "city": "צור הדסה",
+      "address": "רחוב שלדג 4, צור הדסה",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 11
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "btchbd",
+    "a": {
+      "id": "osm-way-668772151",
+      "name": "בית חב\"ד",
+      "city": "רחובות",
+      "address": "רחוב פרופ' דניאל כהנמן 11, רחובות",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "chabad-osm-way-668772151",
+      "name": "בית חב\"ד",
+      "city": "רחובות",
+      "address": "רחוב פרופ' דניאל כהנמן 11, רחובות",
+      "type": "chabad_house",
+      "certifiedBy": null,
+      "fields": 12
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mrtbchlkhchnhnchb",
+    "a": {
+      "id": "osm-way-816571299",
+      "name": "מערת אבא חלקיה וחנן הנחבא",
+      "city": "חצור הגלילית",
+      "address": "מעלה חוני המעגל, חצור הגלילית",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "tzaddik-osm-osm-way-816571299",
+      "name": "מערת אבא חלקיה וחנן הנחבא",
+      "city": "חצור הגלילית",
+      "address": "מעלה חוני המעגל, חצור הגלילית",
+      "type": "tzaddik_grave",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkhgbrm",
+    "a": {
+      "id": "osm-way-1230686459",
+      "name": "מקווה גברים",
+      "city": "צפת",
+      "address": "רחוב אצל 121ב, צפת",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "mikveh-osm-way-1230686459",
+      "name": "מקווה גברים",
+      "city": "",
+      "address": "רחוב אצל 121ב, צפת",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "btlzr",
+    "a": {
+      "id": "mikveh-208",
+      "name": "בית אליעזר",
+      "city": "חדרה",
+      "address": "רחוב יציאת אירופה 17ب, חדרה",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 11
+    },
+    "b": {
+      "id": "mikveh-211",
+      "name": "טהרת ישראל (ש בית אליעזר חדרה)",
+      "city": "חדרה",
+      "address": "רחוב יציאת אירופה 17ب, חדרה",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 11
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "chdrh",
+    "a": {
+      "id": "mikveh-210",
+      "name": "חדרה",
+      "city": "חדרה",
+      "address": "51B-143 רחוב לבוצקין, חדרה",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 11
+    },
+    "b": {
+      "id": "mikveh-217",
+      "name": "מקווה מרכזי חדרה",
+      "city": "חדרה",
+      "address": "51B-143 רחוב לבוצקין, חדרה",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 11
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "lkm",
+    "a": {
+      "id": "mikveh-283",
+      "name": "אליקים",
+      "city": "אליקים",
+      "address": "22-22 מושב אליקים",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 11
+    },
+    "b": {
+      "id": "mikveh-286",
+      "name": "מושב אליקים",
+      "city": "אליקים",
+      "address": "22-22 מושב אליקים",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 11
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "drt",
+    "a": {
+      "id": "mikveh-343",
+      "name": "אדרת",
+      "city": "אדרת",
+      "address": "אדרת",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 11
+    },
+    "b": {
+      "id": "chabad-manual-142-אדרת-בית-חב-ד-אדרת",
+      "name": "בית חב\"ד אדרת",
+      "city": "אדרת",
+      "address": "ד.נ. העלה, אדרת",
+      "type": "chabad_house",
+      "certifiedBy": null,
+      "fields": 11
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "shtl",
+    "a": {
+      "id": "mikveh-349",
+      "name": "אשתאול",
+      "city": "אשתאול",
+      "address": "נחל נחשון 33",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 11
+    },
+    "b": {
+      "id": "chabad-manual-141-אשתאול-בית-חב-ד-אשתאול",
+      "name": "בית חב\"ד אשתאול",
+      "city": "אשתאול",
+      "address": "ד.נ. שמשון 61, אשתאול",
+      "type": "chabad_house",
+      "certifiedBy": null,
+      "fields": 11
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "nhmkl",
+    "a": {
+      "id": "mikveh-366",
+      "name": "נווה מיכאל",
+      "city": "נווה מיכאל",
+      "address": "לב הכפר",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 11
+    },
+    "b": {
+      "id": "chabad-manual-132-נווה-מיכאל-בית-חב-ד-נווה-מיכאל",
+      "name": "בית חב\"ד נווה מיכאל",
+      "city": "נווה מיכאל",
+      "address": "הזית 228, נווה מיכאל",
+      "type": "chabad_house",
+      "certifiedBy": null,
+      "fields": 11
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkhmshbnrmsh",
+    "a": {
+      "id": "mikveh-385",
+      "name": "מקווה מושב ניר משה",
+      "city": "ניר משה",
+      "address": "ניר משה",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 11
+    },
+    "b": {
+      "id": "mikveh-392",
+      "name": "מושב ניר משה",
+      "city": "ניר משה",
+      "address": "ניר משה",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 11
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mshbtch",
+    "a": {
+      "id": "mikveh-389",
+      "name": "מושב בטחה",
+      "city": "בטחה",
+      "address": "2-280 רחוב נרקיס, בטחה",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 11
+    },
+    "b": {
+      "id": "mikveh-401",
+      "name": "מקווה מושב בטחה",
+      "city": "בטחה",
+      "address": "2-280 רחוב נרקיס, בטחה",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 11
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mshbmsl",
+    "a": {
+      "id": "mikveh-391",
+      "name": "מושב מסלול",
+      "city": "מסלול",
+      "address": "מסלול",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 11
+    },
+    "b": {
+      "id": "mikveh-403",
+      "name": "מקווה מושב מסלול",
+      "city": "מסלול",
+      "address": "מסלול",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 11
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mshbpdm",
+    "a": {
+      "id": "mikveh-394",
+      "name": "מושב פדויים",
+      "city": "פדויים",
+      "address": "פדויים",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 11
+    },
+    "b": {
+      "id": "mikveh-404",
+      "name": "מקווה מושב פדויים",
+      "city": "פדויים",
+      "address": "פדויים",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 11
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mshbptsh",
+    "a": {
+      "id": "mikveh-395",
+      "name": "מושב פטיש",
+      "city": "פטיש",
+      "address": "446-454 רחוב החיטה, פטיש",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 11
+    },
+    "b": {
+      "id": "mikveh-405",
+      "name": "מקווה מושב פטיש",
+      "city": "פטיש",
+      "address": "446-454 רחוב החיטה, פטיש",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 11
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mshbtlmbl",
+    "a": {
+      "id": "mikveh-399",
+      "name": "מושב תלמי בילו",
+      "city": "תלמי ביל\"ו",
+      "address": "תלמי ביל\"ו",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 11
+    },
+    "b": {
+      "id": "mikveh-408",
+      "name": "תלמי בילו",
+      "city": "תלמי ביל\"ו",
+      "address": "תלמי ביל\"ו",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 11
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mshbtprch",
+    "a": {
+      "id": "mikveh-400",
+      "name": "מושב תפרח",
+      "city": "תפרח",
+      "address": "תפרח",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 11
+    },
+    "b": {
+      "id": "mikveh-406",
+      "name": "מקווה מושב תפרח",
+      "city": "תפרח",
+      "address": "מושב מקווה תפרח 1",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 11
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mlktd",
+    "a": {
+      "id": "mikveh-412",
+      "name": "מלכות דוד",
+      "city": "נוף הגליל",
+      "address": "האדמו\"ר מבעלזא 1",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 11
+    },
+    "b": {
+      "id": "mikveh-414",
+      "name": "מקווה מלכות דוד",
+      "city": "נוף הגליל",
+      "address": "האדמו\"ר מבעלזא 1",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 11
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkhtzpn",
+    "a": {
+      "id": "mikveh-415",
+      "name": "מקווה צפוני",
+      "city": "נוף הגליל",
+      "address": "7-7 רחוב הגבעה, נוף גליל",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 11
+    },
+    "b": {
+      "id": "mikveh-416",
+      "name": "צפוני",
+      "city": "נוף הגליל",
+      "address": "7-7 רחוב הגבעה, נוף גליל",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 11
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "rmtpl",
+    "a": {
+      "id": "mikveh-508",
+      "name": "רמת אפעל",
+      "city": "רמת גן",
+      "address": "רחוב אל על 1, רמת גן",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 11
+    },
+    "b": {
+      "id": "mikveh-509",
+      "name": "רמת אפעל",
+      "city": "רמת גן",
+      "address": "רחוב אל על 1, רמת גן",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 11
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkhrchlmn",
+    "a": {
+      "id": "mikveh-554",
+      "name": "מקווה רחל אמנו",
+      "city": "שדרות",
+      "address": "יעקב דורי 2",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 11
+    },
+    "b": {
+      "id": "mikveh-556",
+      "name": "רחל אימנו",
+      "city": "שדרות",
+      "address": "יעקב דורי 1",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 11
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "chdshbtzn",
+    "a": {
+      "id": "mikveh-589",
+      "name": "איחוד שיבת ציון",
+      "city": "תל אביב - יפו",
+      "address": "רחוב בן יהודה 86, תל אביב יפו",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 11
+    },
+    "b": {
+      "id": "arcgis:tel-aviv::568-62",
+      "name": "איחוד שיבת ציון - חוג הנוער הדתי",
+      "city": "תל אביב–יפו",
+      "address": "רחוב בן יהודה 86, תל אביב יפו",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 9
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "bnh",
+    "a": {
+      "id": "mikveh-593",
+      "name": "יבנה",
+      "city": "תל אביב - יפו",
+      "address": "רחוב יבנה 10, תל אביב יפו",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 11
+    },
+    "b": {
+      "id": "arcgis:tel-aviv::568-247",
+      "name": "יבנה חסידים - חב\"ד",
+      "city": "תל אביב–יפו",
+      "address": "רחוב יבנה 10, תל אביב יפו",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "bzr",
+    "a": {
+      "id": "rc-petah-tikva-9273",
+      "name": "אבי עזרי",
+      "city": "פתח תקווה",
+      "address": "רחוב סלנט שמואל 14, פתח תקווה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    },
+    "b": {
+      "id": "rc-petah-tikva-9609",
+      "name": "אבי עזרי",
+      "city": "פתח תקווה",
+      "address": "רחוב סלנט שמואל 14, פתח תקווה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "gdtlhdshrchdt",
+    "a": {
+      "id": "rc-petah-tikva-9280",
+      "name": "אגודת עולי הודו- שערי אחדות",
+      "city": "פתח תקווה",
+      "address": "רחוב זמנהוף 14, פתח תקווה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    },
+    "b": {
+      "id": "rc-petah-tikva-9630",
+      "name": "שער אחדות",
+      "city": "פתח תקווה",
+      "address": "רחוב זמנהוף 14, פתח תקווה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "rshrlktnh",
+    "a": {
+      "id": "rc-petah-tikva-9300",
+      "name": "אור ישראל-קטנה",
+      "city": "פתח תקווה",
+      "address": "רחוב סלנט שמואל 14, פתח תקווה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    },
+    "b": {
+      "id": "rc-petah-tikva-9301",
+      "name": "אור ישראל",
+      "city": "פתח תקווה",
+      "address": "רחוב סלנט שמואל 14, פתח תקווה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "rchtchm",
+    "a": {
+      "id": "rc-petah-tikva-9321",
+      "name": "ארחות חיים",
+      "city": "פתח תקווה",
+      "address": "רחוב אורלוב זאב 6, פתח תקווה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    },
+    "b": {
+      "id": "rc-petah-tikva-9611",
+      "name": "אורחות חיים",
+      "city": "פתח תקווה",
+      "address": "רחוב אורלוב זאב 6, פתח תקווה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mrsh",
+    "a": {
+      "id": "rc-petah-tikva-9424",
+      "name": "מורשה",
+      "city": "פתח תקווה",
+      "address": "רחוב זקן השומרים 15, פתח תקווה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    },
+    "b": {
+      "id": "rc-petah-tikva-9615",
+      "name": "בית הלל - מורשה הדר גנים",
+      "city": "פתח תקווה",
+      "address": "רחוב זקן השומרים 15, פתח תקווה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 9
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "shrtzn",
+    "a": {
+      "id": "rc-petah-tikva-9508",
+      "name": "שערי ציון",
+      "city": "פתח תקווה",
+      "address": "רחוב כנסת ישראל 69, פתח תקווה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    },
+    "b": {
+      "id": "rc-petah-tikva-9623",
+      "name": "שערי ציון נוסח שאמי תימני",
+      "city": "פתח תקווה",
+      "address": "רחוב כנסת ישראל 69, פתח תקווה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "hltzchkpntgnm",
+    "a": {
+      "id": "rc-petah-tikva-9561",
+      "name": "אוהל יצחק (פנינת גנים)",
+      "city": "פתח תקווה",
+      "address": "רחוב יד הבנים 66, פתח תקווה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    },
+    "b": {
+      "id": "rc-petah-tikva-9575",
+      "name": "אוהל יצחק (פנינת גנים)",
+      "city": "פתח תקווה",
+      "address": "רחוב יד הבנים 66, פתח תקווה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "khltkdshtmnmshb",
+    "a": {
+      "id": "rc-petah-tikva-9621",
+      "name": "קהילת קודש תימן עמישב",
+      "city": "פתח תקווה",
+      "address": "רחוב שבט אשר 18, פתח תקווה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    },
+    "b": {
+      "id": "rc-petah-tikva-9628",
+      "name": "קהילת קדש תימן",
+      "city": "פתח תקווה",
+      "address": "רחוב שבט אשר 18, פתח תקווה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ntbthshr",
+    "a": {
+      "id": "rc-beer-sheva-h1mjdjrb",
+      "name": "נתיבות היושר",
+      "city": "באר שבע",
+      "address": "רחוב ביאליק 55, באר שבע",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    },
+    "b": {
+      "id": "rc-beer-sheva-h1f5t5oi",
+      "name": "הישועה",
+      "city": "באר שבע",
+      "address": "רחוב ביאליק 55, באר שבע",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ntbthshr",
+    "a": {
+      "id": "rc-beer-sheva-h1mjdjrb",
+      "name": "נתיבות היושר",
+      "city": "באר שבע",
+      "address": "רחוב ביאליק 55, באר שבע",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    },
+    "b": {
+      "id": "rc-beer-sheva-h1yj7ms3",
+      "name": "בית היאס",
+      "city": "באר שבע",
+      "address": "רחוב ביאליק 55, באר שבע",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "lbnm",
+    "a": {
+      "id": "rc-marom-galil-h1xpefyd",
+      "name": "ליבנים",
+      "city": "מרום גליל",
+      "address": "110-111 רחוב כינרת, לבנים",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 9
+    },
+    "b": {
+      "id": "rc-mikvah-marom-galil-h3hwsiz",
+      "name": "מקווה נשים לבנים",
+      "city": "מרום גליל",
+      "address": "110-111 רחוב כינרת, לבנים",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "hbtzn",
+    "a": {
+      "id": "arcgis:tel-aviv::568-12",
+      "name": "אהבת ציון",
+      "city": "תל אביב–יפו",
+      "address": "רחוב מחל 51, תל אביב יפו",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 9
+    },
+    "b": {
+      "id": "arcgis:tel-aviv::568-14",
+      "name": "אהבת ציון - הקטן",
+      "city": "תל אביב–יפו",
+      "address": "רחוב מחל 51, תל אביב יפו",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 9
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "bnbnmn",
+    "a": {
+      "id": "arcgis:tel-aviv::568-139",
+      "name": "בני בנימין",
+      "city": "תל אביב–יפו",
+      "address": "רחוב החזיון 3, תל אביב יפו",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 9
+    },
+    "b": {
+      "id": "arcgis:tel-aviv::568-385",
+      "name": "צעירי בני בנימין",
+      "city": "תל אביב–יפו",
+      "address": "רחוב החזיון 3, תל אביב יפו",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 9
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "zshrlmnbrkmshkhltnchlthlm",
+    "a": {
+      "id": "arcgis:haifa::118",
+      "name": "זיו ישראל - מנין אברכים שע\"י קהילת נחלת הלויים",
+      "city": "חיפה",
+      "address": "רחוב בן ארצי 27, חיפה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    },
+    "b": {
+      "id": "arcgis:haifa::198",
+      "name": "נחלת הלויים",
+      "city": "חיפה",
+      "address": "רחוב בן ארצי 27, חיפה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "tprtshrl",
+    "a": {
+      "id": "arcgis:haifa::264",
+      "name": "תפארת ישראל (א)",
+      "city": "חיפה",
+      "address": "רחוב גאולה 1, חיפה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    },
+    "b": {
+      "id": "arcgis:haifa::265",
+      "name": "תפארת ישראל (ס)",
+      "city": "חיפה",
+      "address": "רחוב גאולה 1, חיפה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "brhmbn",
+    "a": {
+      "id": "arcgis:nahariya::1",
+      "name": "אברהם אבינו",
+      "city": "נהריה",
+      "address": "רחוב שקד 31, נהריה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "arcgis:nahariya::2",
+      "name": "אברהם אבינו \\גרוזינים",
+      "city": "נהריה",
+      "address": "רחוב שקד 31, נהריה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mzkb",
+    "a": {
+      "id": "arcgis:holon::417",
+      "name": "מעוז יעקב",
+      "city": "חולון",
+      "address": "רחוב צאלים 34, חולון",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "arcgis:holon::477",
+      "name": "מעוז יעקב",
+      "city": "חולון",
+      "address": "רחוב צאלים 34, חולון",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "shchlmrktshrl",
+    "a": {
+      "id": "arcgis:holon::429",
+      "name": "ע\"ש חללי מערכות ישראל",
+      "city": "חולון",
+      "address": "רחוב החשמונאים 51, חולון",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "arcgis:holon::485",
+      "name": "ע\"ש חללי מערכות ישראל",
+      "city": "חולון",
+      "address": "רחוב החשמונאים 51, חולון",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mchnhprm",
+    "a": {
+      "id": "arcgis:holon::431",
+      "name": "מחנה אפרים",
+      "city": "חולון",
+      "address": "רחוב שיבת ציון 2, חולון",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "arcgis:holon::489",
+      "name": "מחנה אפרים",
+      "city": "חולון",
+      "address": "רחוב שיבת ציון 2, חולון",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "lshrchl",
+    "a": {
+      "id": "arcgis:holon::438",
+      "name": "ללוש רחל",
+      "city": "חולון",
+      "address": "רחוב ויצמן 14, חולון",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "arcgis:holon::498",
+      "name": "ללוש רחל",
+      "city": "חולון",
+      "address": "רחוב ויצמן 14, חולון",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mgnd",
+    "a": {
+      "id": "arcgis:holon::439",
+      "name": "מגן דוד",
+      "city": "חולון",
+      "address": "רחוב מבצע סיני 2, חולון",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "arcgis:holon::499",
+      "name": "מגן דוד",
+      "city": "חולון",
+      "address": "רחוב מבצע סיני 2, חולון",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "trtchkm",
+    "a": {
+      "id": "arcgis:holon::440",
+      "name": "עטרת חכמים",
+      "city": "חולון",
+      "address": "רחוב החים 8, חולון",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "arcgis:holon::501",
+      "name": "עטרת חכמים",
+      "city": "חולון",
+      "address": "רחוב החים 8, חולון",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "sktshlm",
+    "a": {
+      "id": "arcgis:holon::442",
+      "name": "סוכת שלום",
+      "city": "חולון",
+      "address": "רחוב ברנר 10, חולון",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "arcgis:holon::502",
+      "name": "סוכת שלום",
+      "city": "חולון",
+      "address": "רחוב ברנר 10, חולון",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "lchzkl",
+    "a": {
+      "id": "arcgis:holon::457",
+      "name": "לוי יחזקאל",
+      "city": "חולון",
+      "address": "6-26 רחוב התחיה, חולון",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "arcgis:holon::521",
+      "name": "לוי יחזקאל",
+      "city": "חולון",
+      "address": "6-26 רחוב התחיה, חולון",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "brgdn",
+    "a": {
+      "id": "arcgis:holon::458",
+      "name": "עברי גדעון",
+      "city": "חולון",
+      "address": "רחוב ברנדיס 6, חולון",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "arcgis:holon::523",
+      "name": "עברי גדעון",
+      "city": "חולון",
+      "address": "רחוב ברנדיס 6, חולון",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "blkrbkr",
+    "a": {
+      "id": "manual-cafe-bleecker-bakery",
+      "name": "בליקר בייקרי",
+      "city": "רמת גן",
+      "address": "ביאליק 76, רמת גן",
+      "type": "cafe",
+      "certifiedBy": "בד\"ץ בית יוסף",
+      "fields": 19
+    },
+    "b": {
+      "id": "manual-bleecker-ramat-gan",
+      "name": "בליקר בייקרי",
+      "city": "רמת גן",
+      "address": "ביאליק 76, קניון ביאליק, רמת גן",
+      "type": "cafe",
+      "certifiedBy": "רבנות מקומית",
+      "fields": 14
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "nglkh",
+    "a": {
+      "id": "manual-angelica-jerusalem",
+      "name": "אנג'ליקה",
+      "city": "ירושלים",
+      "address": "ג'ורג' וושינגטון 4, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "רב רפאל מנת",
+      "fields": 18
+    },
+    "b": {
+      "id": "jer-162894bc",
+      "name": "אנג'ליקה",
+      "city": "ירושלים",
+      "address": "ג'ורג' וושינגטון 4, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": null,
+      "fields": 20
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "shrmhshmn",
+    "a": {
+      "id": "manual-hashamen-beit-shemesh",
+      "name": "שאוורמה השמן",
+      "city": "בית שמש",
+      "address": "שד' יגאל אלון 24, בית שמש",
+      "type": "restaurant",
+      "certifiedBy": "כשרות הרב מחפוד",
+      "fields": 19
+    },
+    "b": {
+      "id": "hashamenBS-0a4f19a8",
+      "name": "השמן",
+      "city": "בית שמש",
+      "address": "שדרות יגאל אלון 24, בית שמש",
+      "type": "restaurant",
+      "certifiedBy": null,
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "bgh",
+    "a": {
+      "id": "manual-biga-holon",
+      "name": "ביגה",
+      "city": "חולון",
+      "address": "גולדה מאיר 7, קניון עזריאלי, חולון",
+      "type": "cafe",
+      "certifiedBy": "בד\"ץ בית יוסף",
+      "fields": 20
+    },
+    "b": {
+      "id": "manual-biga-holon-azrieli",
+      "name": "ביגה עזריאלי",
+      "city": "חולון",
+      "address": "גולדה מאיר 7, עזריאלי, חולון",
+      "type": "cafe",
+      "certifiedBy": "רבנות מקומית מהדרין",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "tzchbshrm",
+    "a": {
+      "id": "tzahibsarim-67b0db9a",
+      "name": "צחי בשרים",
+      "city": "תל אביב",
+      "address": "דרך קיבוץ גלויות 106, תל אביב",
+      "type": "restaurant",
+      "certifiedBy": null,
+      "fields": 19
+    },
+    "b": {
+      "id": "manual-tzachi-tlv",
+      "name": "צחי בשרים",
+      "city": "תל אביב",
+      "address": "קיבוץ גלויות 106, תל אביב",
+      "type": "restaurant",
+      "certifiedBy": "בד\"ץ בית יוסף",
+      "fields": 18
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "hshmnktmn",
+    "a": {
+      "id": "manual-hashamen-jrm-katamon",
+      "name": "השמן קטמון",
+      "city": "ירושלים",
+      "address": "רבן יוחנן בן זכאי 7, קטמון, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "רבנות ירושלים",
+      "fields": 15
+    },
+    "b": {
+      "id": "hashamenJLM-ac5ff410",
+      "name": "השמן",
+      "city": "ירושלים",
+      "address": "רבן יוחנן בן זכאי 7, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": null,
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "rmhbchsprldm",
+    "a": {
+      "id": "manual-aroma-safra-hospital",
+      "name": "ארומה בי\"ח ספרא ילדים",
+      "city": "תל השומר",
+      "address": "ביה\"ח לילדים ספרא, תל השומר",
+      "type": "cafe",
+      "certifiedBy": "מהדרין",
+      "fields": 15
+    },
+    "b": {
+      "id": "manual-aroma-tel-hashomer-hospital",
+      "name": "ארומה בי\"ח",
+      "city": "רמת גן",
+      "address": "קניון גימיון, ביה\"ח תל השומר, רמת גן",
+      "type": "cafe",
+      "certifiedBy": "רבנות",
+      "fields": 14
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "rmh",
+    "a": {
+      "id": "manual-aroma-ramat-gan-ayalon",
+      "name": "ארומה",
+      "city": "רמת גן",
+      "address": "אבא הלל סילבר 301, רמת גן",
+      "type": "cafe",
+      "certifiedBy": "רבנות",
+      "fields": 14
+    },
+    "b": {
+      "id": "manual-aroma-ramat-gan-bursa",
+      "name": "ארומה בורסה מגדל משה אביב",
+      "city": "רמת גן",
+      "address": "ז׳בוטינסקי 7, רמת גן",
+      "type": "cafe",
+      "certifiedBy": "רבנות",
+      "fields": 14
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "rmhmnchmbgn",
+    "a": {
+      "id": "manual-aroma-tlv-begin",
+      "name": "ארומה מנחם בגין",
+      "city": "תל אביב",
+      "address": "מנחם בגין 46, תל אביב",
+      "type": "cafe",
+      "certifiedBy": "רבנות",
+      "fields": 14
+    },
+    "b": {
+      "id": "manual-aroma-tlv-azrieli",
+      "name": "ארומה",
+      "city": "תל אביב",
+      "address": "דרך מנחם בגין 132, קניון עזריאלי, תל אביב",
+      "type": "cafe",
+      "certifiedBy": "רבנות",
+      "fields": 15
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000011",
+      "name": "פיצה שמש",
+      "city": "אשקלון",
+      "address": "בקעת הרימון 3, אשקלון",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 19
+    },
+    "b": {
+      "id": "9000012",
+      "name": "פיצה שמש",
+      "city": "אשקלון",
+      "address": "היוצרים 36, אשקלון",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000014",
+      "name": "פיצה שמש",
+      "city": "באר שבע",
+      "address": "נחל פרת 20, באר שבע",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 19
+    },
+    "b": {
+      "id": "9000015",
+      "name": "פיצה שמש",
+      "city": "באר שבע",
+      "address": "ראובן רובין 3, באר שבע",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000014",
+      "name": "פיצה שמש",
+      "city": "באר שבע",
+      "address": "נחל פרת 20, באר שבע",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 19
+    },
+    "b": {
+      "id": "9000016",
+      "name": "פיצה שמש",
+      "city": "באר שבע",
+      "address": "ז'בוטינסקי 24, באר שבע",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000014",
+      "name": "פיצה שמש",
+      "city": "באר שבע",
+      "address": "נחל פרת 20, באר שבע",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 19
+    },
+    "b": {
+      "id": "9000017",
+      "name": "פיצה שמש",
+      "city": "באר שבע",
+      "address": "שדרות רגר 185, באר שבע",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000015",
+      "name": "פיצה שמש",
+      "city": "באר שבע",
+      "address": "ראובן רובין 3, באר שבע",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 19
+    },
+    "b": {
+      "id": "9000016",
+      "name": "פיצה שמש",
+      "city": "באר שבע",
+      "address": "ז'בוטינסקי 24, באר שבע",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000015",
+      "name": "פיצה שמש",
+      "city": "באר שבע",
+      "address": "ראובן רובין 3, באר שבע",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 19
+    },
+    "b": {
+      "id": "9000017",
+      "name": "פיצה שמש",
+      "city": "באר שבע",
+      "address": "שדרות רגר 185, באר שבע",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000016",
+      "name": "פיצה שמש",
+      "city": "באר שבע",
+      "address": "ז'בוטינסקי 24, באר שבע",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 19
+    },
+    "b": {
+      "id": "9000017",
+      "name": "פיצה שמש",
+      "city": "באר שבע",
+      "address": "שדרות רגר 185, באר שבע",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000018",
+      "name": "פיצה שמש",
+      "city": "בית שמש",
+      "address": "רבין 15, בית שמש",
+      "type": "restaurant",
+      "certifiedBy": "העדה החרדית",
+      "fields": 19
+    },
+    "b": {
+      "id": "9000019",
+      "name": "פיצה שמש",
+      "city": "בית שמש",
+      "address": "יחזקאל הנביא 22, בית שמש",
+      "type": "restaurant",
+      "certifiedBy": "העדה החרדית",
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000018",
+      "name": "פיצה שמש",
+      "city": "בית שמש",
+      "address": "רבין 15, בית שמש",
+      "type": "restaurant",
+      "certifiedBy": "העדה החרדית",
+      "fields": 19
+    },
+    "b": {
+      "id": "9000020",
+      "name": "פיצה שמש",
+      "city": "בית שמש",
+      "address": "אמוראים 35, בית שמש",
+      "type": "restaurant",
+      "certifiedBy": "העדה החרדית",
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000019",
+      "name": "פיצה שמש",
+      "city": "בית שמש",
+      "address": "יחזקאל הנביא 22, בית שמש",
+      "type": "restaurant",
+      "certifiedBy": "העדה החרדית",
+      "fields": 19
+    },
+    "b": {
+      "id": "9000020",
+      "name": "פיצה שמש",
+      "city": "בית שמש",
+      "address": "אמוראים 35, בית שמש",
+      "type": "restaurant",
+      "certifiedBy": "העדה החרדית",
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000022",
+      "name": "פיצה שמש",
+      "city": "בני ברק",
+      "address": "ז'בוטינסקי 120, בני ברק",
+      "type": "restaurant",
+      "certifiedBy": "הרב לנדא",
+      "fields": 18
+    },
+    "b": {
+      "id": "9000023",
+      "name": "פיצה שמש",
+      "city": "בני ברק",
+      "address": "יצחק מאיר הכהן 4, בני ברק",
+      "type": "restaurant",
+      "certifiedBy": "העדה החרדית",
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000022",
+      "name": "פיצה שמש",
+      "city": "בני ברק",
+      "address": "ז'בוטינסקי 120, בני ברק",
+      "type": "restaurant",
+      "certifiedBy": "הרב לנדא",
+      "fields": 18
+    },
+    "b": {
+      "id": "9000024",
+      "name": "פיצה שמש",
+      "city": "בני ברק",
+      "address": "ירושלים 18, בני ברק",
+      "type": "restaurant",
+      "certifiedBy": "הרב לנדא",
+      "fields": 18
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000022",
+      "name": "פיצה שמש",
+      "city": "בני ברק",
+      "address": "ז'בוטינסקי 120, בני ברק",
+      "type": "restaurant",
+      "certifiedBy": "הרב לנדא",
+      "fields": 18
+    },
+    "b": {
+      "id": "9000025",
+      "name": "פיצה שמש",
+      "city": "בני ברק",
+      "address": "קהנמן 104, בני ברק",
+      "type": "restaurant",
+      "certifiedBy": "הרב לנדא",
+      "fields": 18
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000023",
+      "name": "פיצה שמש",
+      "city": "בני ברק",
+      "address": "יצחק מאיר הכהן 4, בני ברק",
+      "type": "restaurant",
+      "certifiedBy": "העדה החרדית",
+      "fields": 19
+    },
+    "b": {
+      "id": "9000024",
+      "name": "פיצה שמש",
+      "city": "בני ברק",
+      "address": "ירושלים 18, בני ברק",
+      "type": "restaurant",
+      "certifiedBy": "הרב לנדא",
+      "fields": 18
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000023",
+      "name": "פיצה שמש",
+      "city": "בני ברק",
+      "address": "יצחק מאיר הכהן 4, בני ברק",
+      "type": "restaurant",
+      "certifiedBy": "העדה החרדית",
+      "fields": 19
+    },
+    "b": {
+      "id": "9000025",
+      "name": "פיצה שמש",
+      "city": "בני ברק",
+      "address": "קהנמן 104, בני ברק",
+      "type": "restaurant",
+      "certifiedBy": "הרב לנדא",
+      "fields": 18
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000024",
+      "name": "פיצה שמש",
+      "city": "בני ברק",
+      "address": "ירושלים 18, בני ברק",
+      "type": "restaurant",
+      "certifiedBy": "הרב לנדא",
+      "fields": 18
+    },
+    "b": {
+      "id": "9000025",
+      "name": "פיצה שמש",
+      "city": "בני ברק",
+      "address": "קהנמן 104, בני ברק",
+      "type": "restaurant",
+      "certifiedBy": "הרב לנדא",
+      "fields": 18
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000027",
+      "name": "פיצה שמש",
+      "city": "בת ים",
+      "address": "אלי כהן 25, בת ים",
+      "type": "restaurant",
+      "certifiedBy": "העדה החרדית",
+      "fields": 19
+    },
+    "b": {
+      "id": "9000028",
+      "name": "פיצה שמש",
+      "city": "בת ים",
+      "address": "סנדלר 4, בת ים",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ העדה החרדית ירושלים",
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000027",
+      "name": "פיצה שמש",
+      "city": "בת ים",
+      "address": "אלי כהן 25, בת ים",
+      "type": "restaurant",
+      "certifiedBy": "העדה החרדית",
+      "fields": 19
+    },
+    "b": {
+      "id": "9000029",
+      "name": "פיצה שמש",
+      "city": "בת ים",
+      "address": "הרצל 75, בת ים",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000027",
+      "name": "פיצה שמש",
+      "city": "בת ים",
+      "address": "אלי כהן 25, בת ים",
+      "type": "restaurant",
+      "certifiedBy": "העדה החרדית",
+      "fields": 19
+    },
+    "b": {
+      "id": "9000030",
+      "name": "פיצה שמש",
+      "city": "בת ים",
+      "address": "אוזיאל 25, בת ים",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000028",
+      "name": "פיצה שמש",
+      "city": "בת ים",
+      "address": "סנדלר 4, בת ים",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ העדה החרדית ירושלים",
+      "fields": 19
+    },
+    "b": {
+      "id": "9000029",
+      "name": "פיצה שמש",
+      "city": "בת ים",
+      "address": "הרצל 75, בת ים",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000028",
+      "name": "פיצה שמש",
+      "city": "בת ים",
+      "address": "סנדלר 4, בת ים",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ העדה החרדית ירושלים",
+      "fields": 19
+    },
+    "b": {
+      "id": "9000030",
+      "name": "פיצה שמש",
+      "city": "בת ים",
+      "address": "אוזיאל 25, בת ים",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000029",
+      "name": "פיצה שמש",
+      "city": "בת ים",
+      "address": "הרצל 75, בת ים",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 19
+    },
+    "b": {
+      "id": "9000030",
+      "name": "פיצה שמש",
+      "city": "בת ים",
+      "address": "אוזיאל 25, בת ים",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000037",
+      "name": "פיצה שמש",
+      "city": "חולון",
+      "address": "גולדה מאיר 8, חולון",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 19
+    },
+    "b": {
+      "id": "9000038",
+      "name": "פיצה שמש",
+      "city": "חולון",
+      "address": "דב הוז 63, חולון",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000037",
+      "name": "פיצה שמש",
+      "city": "חולון",
+      "address": "גולדה מאיר 8, חולון",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 19
+    },
+    "b": {
+      "id": "9000039",
+      "name": "פיצה שמש",
+      "city": "חולון",
+      "address": "הר הצופים 42, חולון",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000038",
+      "name": "פיצה שמש",
+      "city": "חולון",
+      "address": "דב הוז 63, חולון",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 19
+    },
+    "b": {
+      "id": "9000039",
+      "name": "פיצה שמש",
+      "city": "חולון",
+      "address": "הר הצופים 42, חולון",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000045",
+      "name": "פיצה שמש",
+      "city": "ירושלים",
+      "address": "פסגה 45, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "העדה החרדית",
+      "fields": 19
+    },
+    "b": {
+      "id": "9000046",
+      "name": "פיצה שמש",
+      "city": "ירושלים",
+      "address": "יחזקאל 8, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "העדה החרדית",
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000045",
+      "name": "פיצה שמש",
+      "city": "ירושלים",
+      "address": "פסגה 45, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "העדה החרדית",
+      "fields": 19
+    },
+    "b": {
+      "id": "9000047",
+      "name": "פיצה שמש",
+      "city": "מבשרת ציון",
+      "address": "מבשרת ציון, מבשרת ציון",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000045",
+      "name": "פיצה שמש",
+      "city": "ירושלים",
+      "address": "פסגה 45, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "העדה החרדית",
+      "fields": 19
+    },
+    "b": {
+      "id": "9000048",
+      "name": "פיצה שמש",
+      "city": "ירושלים",
+      "address": "משה דיין 164, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "העדה החרדית",
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000045",
+      "name": "פיצה שמש",
+      "city": "ירושלים",
+      "address": "פסגה 45, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "העדה החרדית",
+      "fields": 19
+    },
+    "b": {
+      "id": "9000050",
+      "name": "פיצה שמש",
+      "city": "ירושלים",
+      "address": "גולדה מאיר 255, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "העדה החרדית",
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000046",
+      "name": "פיצה שמש",
+      "city": "ירושלים",
+      "address": "יחזקאל 8, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "העדה החרדית",
+      "fields": 19
+    },
+    "b": {
+      "id": "9000047",
+      "name": "פיצה שמש",
+      "city": "מבשרת ציון",
+      "address": "מבשרת ציון, מבשרת ציון",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000046",
+      "name": "פיצה שמש",
+      "city": "ירושלים",
+      "address": "יחזקאל 8, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "העדה החרדית",
+      "fields": 19
+    },
+    "b": {
+      "id": "9000048",
+      "name": "פיצה שמש",
+      "city": "ירושלים",
+      "address": "משה דיין 164, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "העדה החרדית",
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000046",
+      "name": "פיצה שמש",
+      "city": "ירושלים",
+      "address": "יחזקאל 8, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "העדה החרדית",
+      "fields": 19
+    },
+    "b": {
+      "id": "9000050",
+      "name": "פיצה שמש",
+      "city": "ירושלים",
+      "address": "גולדה מאיר 255, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "העדה החרדית",
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000047",
+      "name": "פיצה שמש",
+      "city": "מבשרת ציון",
+      "address": "מבשרת ציון, מבשרת ציון",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 19
+    },
+    "b": {
+      "id": "9000048",
+      "name": "פיצה שמש",
+      "city": "ירושלים",
+      "address": "משה דיין 164, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "העדה החרדית",
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000047",
+      "name": "פיצה שמש",
+      "city": "מבשרת ציון",
+      "address": "מבשרת ציון, מבשרת ציון",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 19
+    },
+    "b": {
+      "id": "9000050",
+      "name": "פיצה שמש",
+      "city": "ירושלים",
+      "address": "גולדה מאיר 255, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "העדה החרדית",
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000048",
+      "name": "פיצה שמש",
+      "city": "ירושלים",
+      "address": "משה דיין 164, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "העדה החרדית",
+      "fields": 19
+    },
+    "b": {
+      "id": "9000050",
+      "name": "פיצה שמש",
+      "city": "ירושלים",
+      "address": "גולדה מאיר 255, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "העדה החרדית",
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000065",
+      "name": "פיצה שמש",
+      "city": "ראש העין",
+      "address": "שלמה המלך 2, ראש העין",
+      "type": "restaurant",
+      "certifiedBy": "בד\"ץ בית יוסף",
+      "fields": 20
+    },
+    "b": {
+      "id": "9000066",
+      "name": "פיצה שמש",
+      "city": "ראש העין",
+      "address": "שבזי 201, ראש העין",
+      "type": "restaurant",
+      "certifiedBy": "בד\"ץ בית יוסף",
+      "fields": 20
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000070",
+      "name": "פיצה שמש",
+      "city": "תל אביב–יפו",
+      "address": "ישראל גורי 34, תל אביב",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 20
+    },
+    "b": {
+      "id": "9000071",
+      "name": "פיצה שמש",
+      "city": "תל אביב–יפו",
+      "address": "נגבה 1, תל אביב",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 20
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000070",
+      "name": "פיצה שמש",
+      "city": "תל אביב–יפו",
+      "address": "ישראל גורי 34, תל אביב",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 20
+    },
+    "b": {
+      "id": "9000072",
+      "name": "פיצה שמש",
+      "city": "תל אביב–יפו",
+      "address": "צרעה 3, תל אביב",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 20
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000070",
+      "name": "פיצה שמש",
+      "city": "תל אביב–יפו",
+      "address": "ישראל גורי 34, תל אביב",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 20
+    },
+    "b": {
+      "id": "9000073",
+      "name": "פיצה שמש",
+      "city": "תל אביב–יפו",
+      "address": "בית אל 12, תל אביב",
+      "type": "restaurant",
+      "certifiedBy": "הרב לנדא",
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000071",
+      "name": "פיצה שמש",
+      "city": "תל אביב–יפו",
+      "address": "נגבה 1, תל אביב",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 20
+    },
+    "b": {
+      "id": "9000072",
+      "name": "פיצה שמש",
+      "city": "תל אביב–יפו",
+      "address": "צרעה 3, תל אביב",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 20
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000071",
+      "name": "פיצה שמש",
+      "city": "תל אביב–יפו",
+      "address": "נגבה 1, תל אביב",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 20
+    },
+    "b": {
+      "id": "9000073",
+      "name": "פיצה שמש",
+      "city": "תל אביב–יפו",
+      "address": "בית אל 12, תל אביב",
+      "type": "restaurant",
+      "certifiedBy": "הרב לנדא",
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000072",
+      "name": "פיצה שמש",
+      "city": "תל אביב–יפו",
+      "address": "צרעה 3, תל אביב",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 20
+    },
+    "b": {
+      "id": "9000073",
+      "name": "פיצה שמש",
+      "city": "תל אביב–יפו",
+      "address": "בית אל 12, תל אביב",
+      "type": "restaurant",
+      "certifiedBy": "הרב לנדא",
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000076",
+      "name": "פיצה שמש",
+      "city": "רמלה",
+      "address": "יוספטל 31, רמלה",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 20
+    },
+    "b": {
+      "id": "9000077",
+      "name": "פיצה שמש",
+      "city": "רמלה",
+      "address": "מבצע יונתן 8, רמלה",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 20
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000080",
+      "name": "פיצה שמש",
+      "city": "ראשון לציון",
+      "address": "יהודה הנשיא 1, ראשון לציון",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 20
+    },
+    "b": {
+      "id": "9000081",
+      "name": "פיצה שמש",
+      "city": "ראשון לציון",
+      "address": "הרצל 28, ראשון לציון",
+      "type": "restaurant",
+      "certifiedBy": "בד\"ץ בית יוסף",
+      "fields": 20
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000080",
+      "name": "פיצה שמש",
+      "city": "ראשון לציון",
+      "address": "יהודה הנשיא 1, ראשון לציון",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 20
+    },
+    "b": {
+      "id": "9000082",
+      "name": "פיצה שמש",
+      "city": "ראשון לציון",
+      "address": "יהודה לייב פינסקר 20, ראשון לציון",
+      "type": "restaurant",
+      "certifiedBy": "הרב לנדא",
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000080",
+      "name": "פיצה שמש",
+      "city": "ראשון לציון",
+      "address": "יהודה הנשיא 1, ראשון לציון",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 20
+    },
+    "b": {
+      "id": "9000083",
+      "name": "פיצה שמש",
+      "city": "ראשון לציון",
+      "address": "השירה העברית 10, ראשון לציון",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 20
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000081",
+      "name": "פיצה שמש",
+      "city": "ראשון לציון",
+      "address": "הרצל 28, ראשון לציון",
+      "type": "restaurant",
+      "certifiedBy": "בד\"ץ בית יוסף",
+      "fields": 20
+    },
+    "b": {
+      "id": "9000082",
+      "name": "פיצה שמש",
+      "city": "ראשון לציון",
+      "address": "יהודה לייב פינסקר 20, ראשון לציון",
+      "type": "restaurant",
+      "certifiedBy": "הרב לנדא",
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000081",
+      "name": "פיצה שמש",
+      "city": "ראשון לציון",
+      "address": "הרצל 28, ראשון לציון",
+      "type": "restaurant",
+      "certifiedBy": "בד\"ץ בית יוסף",
+      "fields": 20
+    },
+    "b": {
+      "id": "9000083",
+      "name": "פיצה שמש",
+      "city": "ראשון לציון",
+      "address": "השירה העברית 10, ראשון לציון",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 20
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000082",
+      "name": "פיצה שמש",
+      "city": "ראשון לציון",
+      "address": "יהודה לייב פינסקר 20, ראשון לציון",
+      "type": "restaurant",
+      "certifiedBy": "הרב לנדא",
+      "fields": 19
+    },
+    "b": {
+      "id": "9000083",
+      "name": "פיצה שמש",
+      "city": "ראשון לציון",
+      "address": "השירה העברית 10, ראשון לציון",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 20
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhshmsh",
+    "a": {
+      "id": "9000086",
+      "name": "פיצה שמש",
+      "city": "קריית גת",
+      "address": "לכיש 33, קריית גת",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 20
+    },
+    "b": {
+      "id": "9000087",
+      "name": "פיצה שמש",
+      "city": "קריית גת",
+      "address": "אסתר המלכה 13, קריית גת",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ בית יוסף",
+      "fields": 20
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500003",
+      "name": "מקדונלד'ס",
+      "city": "אור עקיבא",
+      "address": "שדרות הנשיא 4, אור עקיבא",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500045",
+      "name": "מקדונלד'ס",
+      "city": "אור עקיבא",
+      "address": "קניון אורות - הנשיא 1, אור עקיבא",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500010",
+      "name": "מקדונלד'ס",
+      "city": "טבריה",
+      "address": "יהודה הלוי 7, טבריה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500011",
+      "name": "מקדונלד'ס",
+      "city": "טבריה",
+      "address": "המברג 1, טבריה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500010",
+      "name": "מקדונלד'ס",
+      "city": "טבריה",
+      "address": "יהודה הלוי 7, טבריה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500074",
+      "name": "מקדונלד'ס",
+      "city": "טבריה",
+      "address": "הירדן פינת השילוח, טבריה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 16
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500011",
+      "name": "מקדונלד'ס",
+      "city": "טבריה",
+      "address": "המברג 1, טבריה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500074",
+      "name": "מקדונלד'ס",
+      "city": "טבריה",
+      "address": "הירדן פינת השילוח, טבריה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 16
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500013",
+      "name": "מקדונלד'ס",
+      "city": "פתח תקווה",
+      "address": "בית חולים בילינסון-ז'בוטינסקי 39, פתח תקווה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500025",
+      "name": "מקדונלד'ס",
+      "city": "פתח תקווה",
+      "address": "העצמאות 65, פתח תקווה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500013",
+      "name": "מקדונלד'ס",
+      "city": "פתח תקווה",
+      "address": "בית חולים בילינסון-ז'בוטינסקי 39, פתח תקווה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500040",
+      "name": "מקדונלד'ס",
+      "city": "פתח תקווה",
+      "address": "תוצרת הארץ 3, פתח תקווה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500013",
+      "name": "מקדונלד'ס",
+      "city": "פתח תקווה",
+      "address": "בית חולים בילינסון-ז'בוטינסקי 39, פתח תקווה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500042",
+      "name": "מקדונלד'ס",
+      "city": "פתח תקווה",
+      "address": "רוטשילד 182, פתח תקווה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500014",
+      "name": "מקדונלד'ס",
+      "city": "כפר סבא",
+      "address": "טשרניחובסקי 59, כפר סבא",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500026",
+      "name": "מקדונלד'ס",
+      "city": "כפר סבא",
+      "address": "ויצמן 207, כפר סבא",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500015",
+      "name": "מקדונלד'ס",
+      "city": "חיפה",
+      "address": "בית חולים רמב\"ם-העליה השנייה 8, חיפה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500022",
+      "name": "מקדונלד'ס",
+      "city": "חיפה",
+      "address": "דרך שמחה גולן 54, חיפה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500015",
+      "name": "מקדונלד'ס",
+      "city": "חיפה",
+      "address": "בית חולים רמב\"ם-העליה השנייה 8, חיפה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500038",
+      "name": "מקדונלד'ס",
+      "city": "חיפה",
+      "address": "ההסתדרות 55, צומת לב המפרץ, חיפה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500017",
+      "name": "מקדונלד'ס",
+      "city": "חולון",
+      "address": "רח' הבנאי פינת ירושלים, חולון",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500060",
+      "name": "מקדונלד'ס",
+      "city": "חולון",
+      "address": "גולדה מאיר 7, חולון",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500018",
+      "name": "מקדונלד'ס",
+      "city": "ירושלים",
+      "address": "אביזוהר 8, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500027",
+      "name": "מקדונלד'ס",
+      "city": "ירושלים",
+      "address": "בן יהודה 7, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500018",
+      "name": "מקדונלד'ס",
+      "city": "ירושלים",
+      "address": "אביזוהר 8, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500037",
+      "name": "מקדונלד'ס",
+      "city": "ירושלים",
+      "address": "שדרות יצחק רבין 10, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500018",
+      "name": "מקדונלד'ס",
+      "city": "ירושלים",
+      "address": "אביזוהר 8, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500058",
+      "name": "מקדונלד'ס",
+      "city": "ירושלים",
+      "address": "אגודת ספורט ביתר 1, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500018",
+      "name": "מקדונלד'ס",
+      "city": "ירושלים",
+      "address": "אביזוהר 8, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500077",
+      "name": "מקדונלד'ס",
+      "city": "ירושלים",
+      "address": "התנופה 12, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500021",
+      "name": "מקדונלד'ס",
+      "city": "באר שבע",
+      "address": "שדרות דוד טוביהו 125, באר שבע",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500031",
+      "name": "מקדונלד'ס",
+      "city": "באר שבע",
+      "address": "יצחק נפחא 25, באר שבע",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500021",
+      "name": "מקדונלד'ס",
+      "city": "באר שבע",
+      "address": "שדרות דוד טוביהו 125, באר שבע",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500059",
+      "name": "מקדונלד'ס",
+      "city": "באר שבע",
+      "address": "צומת אלי כהן, באר שבע",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500021",
+      "name": "מקדונלד'ס",
+      "city": "באר שבע",
+      "address": "שדרות דוד טוביהו 125, באר שבע",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500073",
+      "name": "מקדונלד'ס",
+      "city": "באר שבע",
+      "address": "שמריהו לוין 4, באר שבע",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500022",
+      "name": "מקדונלד'ס",
+      "city": "חיפה",
+      "address": "דרך שמחה גולן 54, חיפה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500038",
+      "name": "מקדונלד'ס",
+      "city": "חיפה",
+      "address": "ההסתדרות 55, צומת לב המפרץ, חיפה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500023",
+      "name": "מקדונלד'ס",
+      "city": "דימונה",
+      "address": "פרץ סנטר - אזור תעשיה דרומי, דימונה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500049",
+      "name": "מקדונלד'ס",
+      "city": "דימונה",
+      "address": "המעפיל פינת גולדה מאיר, דימונה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500025",
+      "name": "מקדונלד'ס",
+      "city": "פתח תקווה",
+      "address": "העצמאות 65, פתח תקווה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500040",
+      "name": "מקדונלד'ס",
+      "city": "פתח תקווה",
+      "address": "תוצרת הארץ 3, פתח תקווה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500025",
+      "name": "מקדונלד'ס",
+      "city": "פתח תקווה",
+      "address": "העצמאות 65, פתח תקווה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500042",
+      "name": "מקדונלד'ס",
+      "city": "פתח תקווה",
+      "address": "רוטשילד 182, פתח תקווה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500027",
+      "name": "מקדונלד'ס",
+      "city": "ירושלים",
+      "address": "בן יהודה 7, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500037",
+      "name": "מקדונלד'ס",
+      "city": "ירושלים",
+      "address": "שדרות יצחק רבין 10, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500027",
+      "name": "מקדונלד'ס",
+      "city": "ירושלים",
+      "address": "בן יהודה 7, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500058",
+      "name": "מקדונלד'ס",
+      "city": "ירושלים",
+      "address": "אגודת ספורט ביתר 1, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500027",
+      "name": "מקדונלד'ס",
+      "city": "ירושלים",
+      "address": "בן יהודה 7, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500077",
+      "name": "מקדונלד'ס",
+      "city": "ירושלים",
+      "address": "התנופה 12, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500030",
+      "name": "מקדונלד'ס",
+      "city": "רמת גן",
+      "address": "חיים לנדאו 7, רמת גן",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500032",
+      "name": "מקדונלד'ס",
+      "city": "רמת גן",
+      "address": "היצירה 3, רמת גן",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500030",
+      "name": "מקדונלד'ס",
+      "city": "רמת גן",
+      "address": "חיים לנדאו 7, רמת גן",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500046",
+      "name": "מקדונלד'ס",
+      "city": "רמת גן",
+      "address": "אבא הלל 301, רמת גן",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500030",
+      "name": "מקדונלד'ס",
+      "city": "רמת גן",
+      "address": "חיים לנדאו 7, רמת גן",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500047",
+      "name": "מקדונלד'ס",
+      "city": "רמת גן",
+      "address": "ביאליק 76 פינת ז'בוטינסקי, רמת גן",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500031",
+      "name": "מקדונלד'ס",
+      "city": "באר שבע",
+      "address": "יצחק נפחא 25, באר שבע",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500059",
+      "name": "מקדונלד'ס",
+      "city": "באר שבע",
+      "address": "צומת אלי כהן, באר שבע",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500031",
+      "name": "מקדונלד'ס",
+      "city": "באר שבע",
+      "address": "יצחק נפחא 25, באר שבע",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500073",
+      "name": "מקדונלד'ס",
+      "city": "באר שבע",
+      "address": "שמריהו לוין 4, באר שבע",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500032",
+      "name": "מקדונלד'ס",
+      "city": "רמת גן",
+      "address": "היצירה 3, רמת גן",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500046",
+      "name": "מקדונלד'ס",
+      "city": "רמת גן",
+      "address": "אבא הלל 301, רמת גן",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500032",
+      "name": "מקדונלד'ס",
+      "city": "רמת גן",
+      "address": "היצירה 3, רמת גן",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500047",
+      "name": "מקדונלד'ס",
+      "city": "רמת גן",
+      "address": "ביאליק 76 פינת ז'בוטינסקי, רמת גן",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500035",
+      "name": "מקדונלד'ס",
+      "city": "אשדוד",
+      "address": "ז'בוטינסקי 44/45, אשדוד",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500036",
+      "name": "מקדונלד'ס",
+      "city": "אשדוד",
+      "address": "הגדוד העברי 6, אשדוד",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500035",
+      "name": "מקדונלד'ס",
+      "city": "אשדוד",
+      "address": "ז'בוטינסקי 44/45, אשדוד",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500071",
+      "name": "מקדונלד'ס",
+      "city": "אשדוד",
+      "address": "מנגו 4, אשדוד",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500036",
+      "name": "מקדונלד'ס",
+      "city": "אשדוד",
+      "address": "הגדוד העברי 6, אשדוד",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500071",
+      "name": "מקדונלד'ס",
+      "city": "אשדוד",
+      "address": "מנגו 4, אשדוד",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500037",
+      "name": "מקדונלד'ס",
+      "city": "ירושלים",
+      "address": "שדרות יצחק רבין 10, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500058",
+      "name": "מקדונלד'ס",
+      "city": "ירושלים",
+      "address": "אגודת ספורט ביתר 1, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500037",
+      "name": "מקדונלד'ס",
+      "city": "ירושלים",
+      "address": "שדרות יצחק רבין 10, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500077",
+      "name": "מקדונלד'ס",
+      "city": "ירושלים",
+      "address": "התנופה 12, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500040",
+      "name": "מקדונלד'ס",
+      "city": "פתח תקווה",
+      "address": "תוצרת הארץ 3, פתח תקווה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500042",
+      "name": "מקדונלד'ס",
+      "city": "פתח תקווה",
+      "address": "רוטשילד 182, פתח תקווה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500041",
+      "name": "מקדונלד'ס",
+      "city": "נתניה",
+      "address": "דוד דותן 10, נתניה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500052",
+      "name": "מקדונלד'ס",
+      "city": "נתניה",
+      "address": "הרצל 60, נתניה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500041",
+      "name": "מקדונלד'ס",
+      "city": "נתניה",
+      "address": "דוד דותן 10, נתניה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500063",
+      "name": "מקדונלד'ס",
+      "city": "נתניה",
+      "address": "בני ברמן 2, פולג, נתניה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500041",
+      "name": "מקדונלד'ס",
+      "city": "נתניה",
+      "address": "דוד דותן 10, נתניה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500069",
+      "name": "מקדונלד'ס",
+      "city": "נתניה",
+      "address": "מרכז אלון - טום לנטוס 26, נתניה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500046",
+      "name": "מקדונלד'ס",
+      "city": "רמת גן",
+      "address": "אבא הלל 301, רמת גן",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500047",
+      "name": "מקדונלד'ס",
+      "city": "רמת גן",
+      "address": "ביאליק 76 פינת ז'בוטינסקי, רמת גן",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500050",
+      "name": "מקדונלד'ס",
+      "city": "ראשון לציון",
+      "address": "מורשת ישראל 15, ראשון לציון",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500061",
+      "name": "מקדונלד'ס",
+      "city": "ראשון לציון",
+      "address": "שדרות נים 2, ראשון לציון",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500052",
+      "name": "מקדונלד'ס",
+      "city": "נתניה",
+      "address": "הרצל 60, נתניה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500063",
+      "name": "מקדונלד'ס",
+      "city": "נתניה",
+      "address": "בני ברמן 2, פולג, נתניה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500052",
+      "name": "מקדונלד'ס",
+      "city": "נתניה",
+      "address": "הרצל 60, נתניה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500069",
+      "name": "מקדונלד'ס",
+      "city": "נתניה",
+      "address": "מרכז אלון - טום לנטוס 26, נתניה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500055",
+      "name": "מקדונלד'ס",
+      "city": "חדרה",
+      "address": "שדרות רוטשילד 40, חדרה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500057",
+      "name": "מקדונלד'ס",
+      "city": "חדרה",
+      "address": "שכטמן 10, חדרה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500058",
+      "name": "מקדונלד'ס",
+      "city": "ירושלים",
+      "address": "אגודת ספורט ביתר 1, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500077",
+      "name": "מקדונלד'ס",
+      "city": "ירושלים",
+      "address": "התנופה 12, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500059",
+      "name": "מקדונלד'ס",
+      "city": "באר שבע",
+      "address": "צומת אלי כהן, באר שבע",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500073",
+      "name": "מקדונלד'ס",
+      "city": "באר שבע",
+      "address": "שמריהו לוין 4, באר שבע",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mkdnlds",
+    "a": {
+      "id": "9500063",
+      "name": "מקדונלד'ס",
+      "city": "נתניה",
+      "address": "בני ברמן 2, פולג, נתניה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    },
+    "b": {
+      "id": "9500069",
+      "name": "מקדונלד'ס",
+      "city": "נתניה",
+      "address": "מרכז אלון - טום לנטוס 26, נתניה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "ptzhstr",
+    "a": {
+      "id": "manual-pizza-story-ראשון-לציון-נרקיסים",
+      "name": "פיצה סטורי",
+      "city": "ראשון לציון",
+      "address": "ירושלים 129,, ראשון לציון",
+      "type": "restaurant",
+      "certifiedBy": "בד\"ץ בית יוסף",
+      "fields": 24
+    },
+    "b": {
+      "id": "manual-pizza-story-ראשון-לציון-מערב",
+      "name": "פיצה סטורי",
+      "city": "ראשון לציון",
+      "address": "זלמן שזר 27, ראשון לציון",
+      "type": "restaurant",
+      "certifiedBy": "הרב לנדא",
+      "fields": 23
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "pkshpbngbrl",
+    "a": {
+      "id": "pokeshop-bb53c92b",
+      "name": "PokeShop אבן גבירול",
+      "city": "תל אביב",
+      "address": "אבן גבירול 62, תל אביב",
+      "type": "restaurant",
+      "certifiedBy": "רבנות תל אביב-יפו",
+      "fields": 25
+    },
+    "b": {
+      "id": "pokeshop-bn-gavirol-bb53c92b",
+      "name": "פוקישופ",
+      "city": "תל אביב",
+      "address": "אבן גבירול 62, תל אביב",
+      "type": "restaurant",
+      "certifiedBy": null,
+      "fields": 22
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mlkh",
+    "a": {
+      "id": "malka-3efe11e6",
+      "name": "מלכה",
+      "city": "תל אביב",
+      "address": "מנחם בגין 146, תל אביב יפו",
+      "type": "restaurant",
+      "certifiedBy": null,
+      "fields": 20
+    },
+    "b": {
+      "id": "shmullik-cohen-7a52898c",
+      "name": "מסעדת שמוליק כהן",
+      "city": "תל אביב",
+      "address": "הרצל 146, תל אביב",
+      "type": "restaurant",
+      "certifiedBy": null,
+      "fields": 19
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "mlkh",
+    "a": {
+      "id": "malka-3efe11e6",
+      "name": "מלכה",
+      "city": "תל אביב",
+      "address": "מנחם בגין 146, תל אביב יפו",
+      "type": "restaurant",
+      "certifiedBy": null,
+      "fields": 20
+    },
+    "b": {
+      "id": "esther-hamalka-48c5be2f",
+      "name": "אסתר המלכה",
+      "city": "תל אביב",
+      "address": "רוטשילד 8, תל אביב",
+      "type": "restaurant",
+      "certifiedBy": null,
+      "fields": 17
+    }
+  },
+  {
+    "distance": 0,
+    "skeleton": "trklchmgn",
+    "a": {
+      "id": "turk-nachalat77-4dc1b310",
+      "name": "טורק לחמג'ון",
+      "city": "תל אביב",
+      "address": "נחלת בנימין 77, תל אביב",
+      "type": "restaurant",
+      "certifiedBy": null,
+      "fields": 18
+    },
+    "b": {
+      "id": "turk-yigal94-39c3a675",
+      "name": "טורק לחמג'ון",
+      "city": "תל אביב",
+      "address": "יגאל אלון 94, תל אביב",
+      "type": "restaurant",
+      "certifiedBy": null,
+      "fields": 16
+    }
+  },
+  {
+    "distance": 1,
+    "skeleton": "hbtshrl",
+    "a": {
+      "id": "osm-node-923938783",
+      "name": "אהבת ישראל",
+      "city": "רחובות",
+      "address": "רחוב חפץ חיים 26, רחובות",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "osm-way-114799009",
+      "name": "בית הכנסת \"אהבת ישראל\"",
+      "city": "רחובות",
+      "address": "רחוב חפץ חיים 26, רחובות",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 1,
+    "skeleton": "btknstblnsn",
+    "a": {
+      "id": "osm-node-11951825503",
+      "name": "בית כנסת בילינסון",
+      "city": "פתח תקווה",
+      "address": "פתח תקווה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "osm-way-1290953490",
+      "name": "בית כנסת בילינסון",
+      "city": "פתח תקווה",
+      "address": "פתח תקווה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 2,
+    "skeleton": "hlsh",
+    "a": {
+      "id": "osm-node-854423792",
+      "name": "אוהל ש\"י",
+      "city": "רחובות",
+      "address": "רחוב הרב מלצר 9, רחובות",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "osm-way-169971712",
+      "name": "אהל ש\"י",
+      "city": "רחובות",
+      "address": "רחוב הרב מלצר 9, רחובות",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 2,
+    "skeleton": "btknstshklt",
+    "a": {
+      "id": "osm-way-617477560",
+      "name": "בית כנסת אשכולות",
+      "city": "כרמיאל",
+      "address": "רחוב אשכולות 198, כרמיאל",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "mikveh-162",
+      "name": "אשכולות",
+      "city": "אשכולות",
+      "address": "רחוב אשכולות 198, כרמיאל",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 11
+    }
+  },
+  {
+    "distance": 3,
+    "skeleton": "btlzr",
+    "a": {
+      "id": "osm-way-400881589",
+      "name": "בית אליעזר",
+      "city": "הרצליה",
+      "address": "רחוב פנקס 56, הרצליה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "arcgis:herzliya::7",
+      "name": "בית כנסת בית אלעזר - מרוקו",
+      "city": "הרצליה",
+      "address": "רחוב פנקס 56, הרצליה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 3,
+    "skeleton": "btknstksht",
+    "a": {
+      "id": "osm-way-835444879",
+      "name": "בית כנסת קשת",
+      "city": "קשת",
+      "address": "קשת",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "mikveh-521",
+      "name": "קשת",
+      "city": "קשת",
+      "address": "קשת",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 11
+    }
+  },
+  {
+    "distance": 4,
+    "skeleton": "chznchzkl",
+    "a": {
+      "id": "osm-node-854423814",
+      "name": "חזון יחזקאל",
+      "city": "רחובות",
+      "address": "רחוב גולדברג 6, רחובות",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "osm-way-170333360",
+      "name": "חזון יחזקאל",
+      "city": "רחובות",
+      "address": "רחוב גולדברג 6, רחובות",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 4,
+    "skeleton": "bthknsthmrkzhklmr",
+    "a": {
+      "id": "osm-way-149276622",
+      "name": "בית הכנסת המרכזי היכל מאיר",
+      "city": "תל אביב",
+      "address": "רחוב אימבר 1, תל אביב יפו",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 11
+    },
+    "b": {
+      "id": "arcgis:tel-aviv::568-180",
+      "name": "היכל מאיר",
+      "city": "תל אביב–יפו",
+      "address": "רחוב מאנה 12, תל אביב יפו",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 9
+    }
+  },
+  {
+    "distance": 4,
+    "skeleton": "btknstchbd",
+    "a": {
+      "id": "osm-way-186965161",
+      "name": "בית כנסת - חב\"ד",
+      "city": "חיפה",
+      "address": "רחוב פרישמן 1, חיפה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 12
+    },
+    "b": {
+      "id": "arcgis:haifa::129",
+      "name": "חב\"ד",
+      "city": "חיפה",
+      "address": "רחוב פרישמן 1, חיפה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 5,
+    "skeleton": "dtmr",
+    "a": {
+      "id": "osm-node-888294141",
+      "name": "יד תמר",
+      "city": "ירושלים",
+      "address": "רחוב הארי 5, ירושלים",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "osm-way-158756812",
+      "name": "יד תמר",
+      "city": "ירושלים",
+      "address": "רחוב הארי 5, ירושלים",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 5,
+    "skeleton": "brkth",
+    "a": {
+      "id": "arcgis:ashdod::2675",
+      "name": "ברכת ה'",
+      "city": "אשדוד",
+      "address": "רחוב כנרת 67א, אשדוד",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "arcgis:ashdod::5124",
+      "name": "ברכת השם",
+      "city": "אשדוד",
+      "address": "רחוב כנרת 67א, אשדוד",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 6,
+    "skeleton": "dnl",
+    "a": {
+      "id": "rc-petah-tikva-9392",
+      "name": "יד דניאל",
+      "city": "פתח תקווה",
+      "address": "רחוב סלנט שמואל 14, פתח תקווה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    },
+    "b": {
+      "id": "9500013",
+      "name": "מקדונלד'ס",
+      "city": "פתח תקווה",
+      "address": "בית חולים בילינסון-ז'בוטינסקי 39, פתח תקווה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 6,
+    "skeleton": "dnl",
+    "a": {
+      "id": "rc-petah-tikva-9392",
+      "name": "יד דניאל",
+      "city": "פתח תקווה",
+      "address": "רחוב סלנט שמואל 14, פתח תקווה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    },
+    "b": {
+      "id": "9500025",
+      "name": "מקדונלד'ס",
+      "city": "פתח תקווה",
+      "address": "העצמאות 65, פתח תקווה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 6,
+    "skeleton": "dnl",
+    "a": {
+      "id": "rc-petah-tikva-9392",
+      "name": "יד דניאל",
+      "city": "פתח תקווה",
+      "address": "רחוב סלנט שמואל 14, פתח תקווה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    },
+    "b": {
+      "id": "9500040",
+      "name": "מקדונלד'ס",
+      "city": "פתח תקווה",
+      "address": "תוצרת הארץ 3, פתח תקווה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 6,
+    "skeleton": "dnl",
+    "a": {
+      "id": "rc-petah-tikva-9392",
+      "name": "יד דניאל",
+      "city": "פתח תקווה",
+      "address": "רחוב סלנט שמואל 14, פתח תקווה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    },
+    "b": {
+      "id": "9500042",
+      "name": "מקדונלד'ס",
+      "city": "פתח תקווה",
+      "address": "רוטשילד 182, פתח תקווה",
+      "type": "restaurant",
+      "certifiedBy": "כשר",
+      "fields": 17
+    }
+  },
+  {
+    "distance": 7,
+    "skeleton": "tzlhsh",
+    "a": {
+      "id": "osm-node-5997818140",
+      "name": "צלילי האש",
+      "city": "בני ברק",
+      "address": "רחוב ז'בוטינסקי 102, בני ברק",
+      "type": "restaurant",
+      "certifiedBy": "בד\"צ מהדרין - הרב רובין",
+      "fields": 12
+    },
+    "b": {
+      "id": "manual-tzlilei-haesh-bb",
+      "name": "אצל זלבוך (צלילי האש)",
+      "city": "בני ברק",
+      "address": "זאב ז'בוטינסקי 100, בני ברק",
+      "type": "restaurant",
+      "certifiedBy": "כשרות הרב לנדא",
+      "fields": 15
+    }
+  },
+  {
+    "distance": 8,
+    "skeleton": "mshkntshrl",
+    "a": {
+      "id": "osm-way-434761002",
+      "name": "משכנות ישראל",
+      "city": "לוד",
+      "address": "רחוב ברק 10, לוד",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 11
+    },
+    "b": {
+      "id": "arcgis:lod::26",
+      "name": "בית כנסת משכנות ישראל",
+      "city": "לוד",
+      "address": "רחוב ברק 10, לוד",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 8,
+    "skeleton": "shrthrn",
+    "a": {
+      "id": "osm-way-668945778",
+      "name": "שירת אהרן",
+      "city": "גבעת שמואל",
+      "address": "רחוב ביאליק 48, גבעת שמואל",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "rc-givat-shmuel-11682",
+      "name": "שירת אהרון (אשכנזי) נוסח ספרד",
+      "city": "גבעת שמואל",
+      "address": "רחוב ביאליק 48, גבעת שמואל",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 9
+    }
+  },
+  {
+    "distance": 9,
+    "skeleton": "nhrhmthr",
+    "a": {
+      "id": "osm-way-166337793",
+      "name": "נהר המיטהר",
+      "city": "רמת רחל",
+      "address": "רחוב ניקנור 4, ירושלים",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "arcgis:jerusalem::30",
+      "name": "בי''כ נהר המטהר",
+      "city": "ירושלים",
+      "address": "רחוב ניקנור 4, ירושלים",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 9,
+    "skeleton": "mkh",
+    "a": {
+      "id": "osm-way-436718439",
+      "name": "מקווה",
+      "city": "שדרות",
+      "address": "רחוב משעול פעמונית 5, שדרות",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "rc-mikvah-sderot-hu3sxrx",
+      "name": "מקווה נשים הרב דוד בר חן",
+      "city": "שדרות",
+      "address": "רחוב משעול פעמונית 5, שדרות",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 10,
+    "skeleton": "brln",
+    "a": {
+      "id": "osm-way-114938859",
+      "name": "בר אילן",
+      "city": "סתריה",
+      "address": "רחוב בר אילן 12, רחובות",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "mikveh-492",
+      "name": "בר אילן",
+      "city": "רחובות",
+      "address": "רחוב בר אילן 12, רחובות",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 11
+    }
+  },
+  {
+    "distance": 10,
+    "skeleton": "shbtntbhshbm",
+    "a": {
+      "id": "rc-beer-sheva-h1d1jy1b",
+      "name": "ישיבת נתיב השבים",
+      "city": "באר שבע",
+      "address": "1-7 רחוב שבזי, באר שבע",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 9
+    },
+    "b": {
+      "id": "rc-beer-sheva-h3ifjrp",
+      "name": "האבות",
+      "city": "באר שבע",
+      "address": "1-7 רחוב שבזי, באר שבע",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 10,
+    "skeleton": "mshkntshml",
+    "a": {
+      "id": "arcgis:ashdod::125",
+      "name": "משכנות שמואל",
+      "city": "אשדוד",
+      "address": "רחוב אייר 4, אשדוד",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "arcgis:ashdod::5125",
+      "name": "משכנות שמואל",
+      "city": "אשדוד",
+      "address": "רחוב אייר 4, אשדוד",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 10,
+    "skeleton": "btknst",
+    "a": {
+      "id": "arcgis:lod::52",
+      "name": "בית כנסת",
+      "city": "לוד",
+      "address": "רחוב יא חללי מינכן 14, לוד",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "arcgis:lod::54",
+      "name": "בית כנסת הרמ\"א",
+      "city": "לוד",
+      "address": "רחוב יא חללי מינכן 14, לוד",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 13,
+    "skeleton": "btknsthltzchk",
+    "a": {
+      "id": "osm-way-677484161",
+      "name": "בית כנסת אוהל יצחק",
+      "city": "פרדס חנה-כרכור",
+      "address": "רחוב תל צבי 17, פרדס חנה כרכור",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "osm-way-677484162",
+      "name": "בית כנסת אוהל יצחק",
+      "city": "פרדס חנה-כרכור",
+      "address": "רחוב תל צבי 21, פרדס חנה כרכור",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 14,
+    "skeleton": "nmhtrhnhrdh",
+    "a": {
+      "id": "arcgis:ashdod::880",
+      "name": "נועם התורה נהרדעה",
+      "city": "אשדוד",
+      "address": "רחוב הרב רוזובסקי 3, אשדוד",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "arcgis:ashdod::2699",
+      "name": "נֹעַם הַתּוֹרָה",
+      "city": "אשדוד",
+      "address": "רחוב הרב רוזובסקי 3, אשדוד",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 14,
+    "skeleton": "btknsthrm",
+    "a": {
+      "id": "arcgis:lod::54",
+      "name": "בית כנסת הרמ\"א",
+      "city": "לוד",
+      "address": "רחוב יא חללי מינכן 14, לוד",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "arcgis:lod::55",
+      "name": "בית כנסת",
+      "city": "לוד",
+      "address": "רחוב יא חללי מינכן 14, לוד",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 15,
+    "skeleton": "shmrmnm",
+    "a": {
+      "id": "osm-way-400830925",
+      "name": "שומר אמונים",
+      "city": "הרצליה",
+      "address": "רחוב כצנלסון א90, הרצליה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 9
+    },
+    "b": {
+      "id": "arcgis:herzliya::75",
+      "name": "שומר אמונים - תימן",
+      "city": "הרצליה",
+      "address": "רחוב כצנלסון 90, הרצליה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 15,
+    "skeleton": "chbd",
+    "a": {
+      "id": "arcgis:haifa::126",
+      "name": "חב\"ד",
+      "city": "חיפה",
+      "address": "רחוב ארלוזורוב 8, חיפה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    },
+    "b": {
+      "id": "arcgis:haifa::129",
+      "name": "חב\"ד",
+      "city": "חיפה",
+      "address": "רחוב פרישמן 1, חיפה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 16,
+    "skeleton": "btknsthltzchk",
+    "a": {
+      "id": "osm-way-677484161",
+      "name": "בית כנסת אוהל יצחק",
+      "city": "פרדס חנה-כרכור",
+      "address": "רחוב תל צבי 17, פרדס חנה כרכור",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "osm-way-677484163",
+      "name": "בית כנסת אוהל יצחק",
+      "city": "פרדס חנה-כרכור",
+      "address": "רחוב תל צבי 17, פרדס חנה כרכור",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 16,
+    "skeleton": "rmtb",
+    "a": {
+      "id": "mikveh-tlv-16",
+      "name": "רמת אביב",
+      "city": "תל אביב יפו",
+      "address": "רחוב טאגור רבינדרנארט 32, תל אביב יפו",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 12
+    },
+    "b": {
+      "id": "burgersbar-e0361b76",
+      "name": "בורגרס בר רמת אביב",
+      "city": "תל אביב",
+      "address": "מרכז טאגור 30, תל אביב",
+      "type": "restaurant",
+      "certifiedBy": null,
+      "fields": 19
+    }
+  },
+  {
+    "distance": 16,
+    "skeleton": "mkhmrkz",
+    "a": {
+      "id": "arcgis:herzliya::40",
+      "name": "מקווה מרכזי",
+      "city": "הרצליה",
+      "address": "רחוב סירקין 2, הרצליה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "mikveh-herzliya-m-32.16629_34.84318",
+      "name": "מקווה מרכזי - גברים",
+      "city": "הרצליה",
+      "address": "רחוב סירקין 4, הרצליה",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 12
+    }
+  },
+  {
+    "distance": 17,
+    "skeleton": "btknstchbd",
+    "a": {
+      "id": "osm-way-186965161",
+      "name": "בית כנסת - חב\"ד",
+      "city": "חיפה",
+      "address": "רחוב פרישמן 1, חיפה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 12
+    },
+    "b": {
+      "id": "arcgis:haifa::126",
+      "name": "חב\"ד",
+      "city": "חיפה",
+      "address": "רחוב ארלוזורוב 8, חיפה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 17,
+    "skeleton": "bhb",
+    "a": {
+      "id": "osm-way-646582103",
+      "name": "אבוהב",
+      "city": "צפת",
+      "address": "צפת",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "manual-winery-abouhav",
+      "name": "יקב אבוהב",
+      "city": "צפת",
+      "address": "סמטת אבוהב 1, הרובע האמנים, צפת",
+      "type": "winery",
+      "certifiedBy": "בד\"ץ מחזיקי הדת (בעלז) + בית יוסף",
+      "fields": 18
+    }
+  },
+  {
+    "distance": 18,
+    "skeleton": "btknst",
+    "a": {
+      "id": "arcgis:lod::22",
+      "name": "בית כנסת",
+      "city": "לוד",
+      "address": "רחוב נרקיס 2, לוד",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "arcgis:lod::23",
+      "name": "בית כנסת",
+      "city": "לוד",
+      "address": "1-2 רחוב נרקיס, לוד",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 19,
+    "skeleton": "btknstnbtmchdsh",
+    "a": {
+      "id": "osm-way-1060090504",
+      "name": "בית כנסת נבטים חדש",
+      "city": "נבטים",
+      "address": "נבטים",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "osm-way-1060090505",
+      "name": "בית כנסת נבטים חדש",
+      "city": "נבטים",
+      "address": "נבטים",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 19,
+    "skeleton": "btknst",
+    "a": {
+      "id": "arcgis:lod::52",
+      "name": "בית כנסת",
+      "city": "לוד",
+      "address": "רחוב יא חללי מינכן 14, לוד",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "arcgis:lod::55",
+      "name": "בית כנסת",
+      "city": "לוד",
+      "address": "רחוב יא חללי מינכן 14, לוד",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 21,
+    "skeleton": "shtshrl",
+    "a": {
+      "id": "osm-node-1748670016",
+      "name": "ישועות ישראל",
+      "city": "ירושלים",
+      "address": "רחוב הצפירה 23, ירושלים",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "arcgis:jerusalem::18",
+      "name": "בי''כ ישועת ישראל",
+      "city": "ירושלים",
+      "address": "רחוב הצפירה 25, ירושלים",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 21,
+    "skeleton": "nhprn",
+    "a": {
+      "id": "rc-rosh-haayin-h1i8d9bl",
+      "name": "נוה אפיריון",
+      "city": "ראש העין",
+      "address": "רחוב מהריץ 13, ראש העין",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 9
+    },
+    "b": {
+      "id": "rc-rosh-haayin-h1prgc6u",
+      "name": "נוה אפריון",
+      "city": "ראש העין",
+      "address": "רחוב מהריץ 11, ראש העין",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 9
+    }
+  },
+  {
+    "distance": 21,
+    "skeleton": "shbthl",
+    "a": {
+      "id": "arcgis:modiin-ilit::110",
+      "name": "שבט הלוי",
+      "city": "מודיעין עילית",
+      "address": "רחוב רבי יהודה הנשיא 17, מודיעין עילית",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "arcgis:modiin-ilit::155",
+      "name": "שבט הלוי",
+      "city": "מודיעין עילית",
+      "address": "רחוב רבי יהודה הנשיא 17, מודיעין עילית",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 23,
+    "skeleton": "klhnshmh",
+    "a": {
+      "id": "osm-way-175425440",
+      "name": "כל הנשמה",
+      "city": "רמת רחל",
+      "address": "רחוב הרכבת 63, ירושלים",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "osm-way-175425441",
+      "name": "כל הנשמה",
+      "city": "רמת רחל",
+      "address": "רחוב הרכבת 63, ירושלים",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 9
+    }
+  },
+  {
+    "distance": 23,
+    "skeleton": "bkzkrlbrhm",
+    "a": {
+      "id": "osm-way-330294319",
+      "name": "בי\"כ זכור לאברהם",
+      "city": "חולון",
+      "address": "רחוב מפרץ שלמה 100, חולון",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 9
+    },
+    "b": {
+      "id": "arcgis:holon::484",
+      "name": "זכור לאברהם",
+      "city": "חולון",
+      "address": "רחוב מפרץ שלמה 100, חולון",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 23,
+    "skeleton": "trhchm",
+    "a": {
+      "id": "osm-way-388128445",
+      "name": "תורה וחיים",
+      "city": "הרצליה",
+      "address": "רחוב הרי הגלעד 18, הרצליה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 9
+    },
+    "b": {
+      "id": "osm-way-388128474",
+      "name": "אור החיים",
+      "city": "הרצליה",
+      "address": "רחוב הרי הגלעד 16, הרצליה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 9
+    }
+  },
+  {
+    "distance": 24,
+    "skeleton": "khltshkdsh",
+    "a": {
+      "id": "osm-way-585485711",
+      "name": "קהילות איש קדש",
+      "city": "זנוח",
+      "address": "רחוב נחל מאור 6, בית שמש",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "osm-way-585485712",
+      "name": "קהילות איש קדש",
+      "city": "זנוח",
+      "address": "רחוב נחל מאור 6, בית שמש",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 24,
+    "skeleton": "btknst",
+    "a": {
+      "id": "arcgis:lod::42",
+      "name": "בית כנסת",
+      "city": "לוד",
+      "address": "לוד",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "arcgis:lod::44",
+      "name": "בית כנסת",
+      "city": "לוד",
+      "address": "רחוב הדס 3, לוד",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 26,
+    "skeleton": "nglkhmsdt",
+    "a": {
+      "id": "osm-node-6195852402",
+      "name": "אנג'ליקה מסעדת",
+      "city": "ירושלים",
+      "address": "רחוב ושינגטון 2, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "הרב רפאל מנת",
+      "fields": 14
+    },
+    "b": {
+      "id": "manual-angelica-jerusalem",
+      "name": "אנג'ליקה",
+      "city": "ירושלים",
+      "address": "ג'ורג' וושינגטון 4, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "רב רפאל מנת",
+      "fields": 18
+    }
+  },
+  {
+    "distance": 26,
+    "skeleton": "nglkhmsdt",
+    "a": {
+      "id": "osm-node-6195852402",
+      "name": "אנג'ליקה מסעדת",
+      "city": "ירושלים",
+      "address": "רחוב ושינגטון 2, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": "הרב רפאל מנת",
+      "fields": 14
+    },
+    "b": {
+      "id": "jer-162894bc",
+      "name": "אנג'ליקה",
+      "city": "ירושלים",
+      "address": "ג'ורג' וושינגטון 4, ירושלים",
+      "type": "restaurant",
+      "certifiedBy": null,
+      "fields": 20
+    }
+  },
+  {
+    "distance": 28,
+    "skeleton": "bthrn",
+    "a": {
+      "id": "arcgis:ashdod::2685",
+      "name": "בית אהרון",
+      "city": "אשדוד",
+      "address": "רחוב הפלמח 20, אשדוד",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "arcgis:ashdod::2691",
+      "name": "בית אהרון",
+      "city": "אשדוד",
+      "address": "רחוב הפלמח 20, אשדוד",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 29,
+    "skeleton": "btknsthltzchk",
+    "a": {
+      "id": "osm-way-677484162",
+      "name": "בית כנסת אוהל יצחק",
+      "city": "פרדס חנה-כרכור",
+      "address": "רחוב תל צבי 21, פרדס חנה כרכור",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "osm-way-677484163",
+      "name": "בית כנסת אוהל יצחק",
+      "city": "פרדס חנה-כרכור",
+      "address": "רחוב תל צבי 17, פרדס חנה כרכור",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 29,
+    "skeleton": "brhmbn",
+    "a": {
+      "id": "rc-kiryat-arba-hc6jw6i",
+      "name": "אברהם אבינו",
+      "city": "קרית ארבע",
+      "address": "שכונת אברהם אבינו",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    },
+    "b": {
+      "id": "rc-mikvah-kiryat-arba-hbdvsem",
+      "name": "מקווה \"אברהם אבינו\" חברון",
+      "city": "קרית ארבע",
+      "address": "47 יוני נתניהו",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 29,
+    "skeleton": "chbd",
+    "a": {
+      "id": "arcgis:haifa::125",
+      "name": "חב\"ד",
+      "city": "חיפה",
+      "address": "רחוב ארלוזורוב 6, חיפה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    },
+    "b": {
+      "id": "arcgis:haifa::126",
+      "name": "חב\"ד",
+      "city": "חיפה",
+      "address": "רחוב ארלוזורוב 8, חיפה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 30,
+    "skeleton": "btknstmshkntshrm",
+    "a": {
+      "id": "osm-way-235888233",
+      "name": "בית כנסת משכנות ישרים",
+      "city": "פתח תקווה",
+      "address": "4 שמואל הנגיד, פתח תקווה, Israel",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 11
+    },
+    "b": {
+      "id": "rc-petah-tikva-9633",
+      "name": "משכנות ישרים",
+      "city": "פתח תקווה",
+      "address": "רחוב שמואל הנגיד 4א, פתח תקווה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 30,
+    "skeleton": "shzr",
+    "a": {
+      "id": "rc-marom-galil-hpbuirp",
+      "name": "שזור",
+      "city": "מרום גליל",
+      "address": "שזור, Israel",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 9
+    },
+    "b": {
+      "id": "rc-mikvah-marom-galil-hvhdjz8",
+      "name": "מקווה נשים שזור",
+      "city": "מרום גליל",
+      "address": "שזור, Israel",
+      "type": "mikveh",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 30,
+    "skeleton": "zhtrh",
+    "a": {
+      "id": "arcgis:ashdod::886",
+      "name": "עוז התורה",
+      "city": "אשדוד",
+      "address": "רחוב הרב אבן דנן 2, אשדוד",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "arcgis:ashdod::2702",
+      "name": "עֹז הַתּוֹרָה",
+      "city": "אשדוד",
+      "address": "רחוב הרב אבן דנן 4, אשדוד",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 31,
+    "skeleton": "kbrd",
+    "a": {
+      "id": "osm-way-161058945",
+      "name": "קבר דוד",
+      "city": "ירושלים",
+      "address": "ירושלים",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "osm-way-161058978",
+      "name": "קבר דוד המלך",
+      "city": "ירושלים",
+      "address": "ירושלים",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 31,
+    "skeleton": "btknst",
+    "a": {
+      "id": "osm-way-537635275",
+      "name": "בית כנסת",
+      "city": "אשקלון",
+      "address": "רחוב קרן היסוד 326, אשקלון",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "osm-way-537635451",
+      "name": "בית כנסת",
+      "city": "אשקלון",
+      "address": "רחוב קרן היסוד 8, אשקלון",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 34,
+    "skeleton": "btknsthlbrhm",
+    "a": {
+      "id": "arcgis:lod::28",
+      "name": "בית כנסת אוהל אברהם",
+      "city": "לוד",
+      "address": "רחוב הדקל 4, לוד",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "arcgis:lod::30",
+      "name": "בית כנסת אוהל אברהם",
+      "city": "לוד",
+      "address": "רחוב הדקל 3, לוד",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 36,
+    "skeleton": "thlhld",
+    "a": {
+      "id": "arcgis:ashdod::2639",
+      "name": "תהילה לדוד",
+      "city": "אשדוד",
+      "address": "רחוב ההסתדרות 15, אשדוד",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "arcgis:ashdod::5081",
+      "name": "תהלה לדוד",
+      "city": "אשדוד",
+      "address": "רחוב רזיאל דוד 4, אשדוד",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 37,
+    "skeleton": "btknsthltzchk",
+    "a": {
+      "id": "osm-way-677483987",
+      "name": "בית כנסת אוהל יצחק",
+      "city": "פרדס חנה-כרכור",
+      "address": "רחוב תל צבי 6, פרדס חנה כרכור",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    },
+    "b": {
+      "id": "osm-way-677484088",
+      "name": "בית כנסת אוהל יצחק",
+      "city": "פרדס חנה-כרכור",
+      "address": "רחוב תל צבי 4, פרדס חנה כרכור",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 8
+    }
+  },
+  {
+    "distance": 39,
+    "skeleton": "btknstchbd",
+    "a": {
+      "id": "osm-way-186965161",
+      "name": "בית כנסת - חב\"ד",
+      "city": "חיפה",
+      "address": "רחוב פרישמן 1, חיפה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 12
+    },
+    "b": {
+      "id": "arcgis:haifa::125",
+      "name": "חב\"ד",
+      "city": "חיפה",
+      "address": "רחוב ארלוזורוב 6, חיפה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  },
+  {
+    "distance": 40,
+    "skeleton": "chbd",
+    "a": {
+      "id": "arcgis:haifa::125",
+      "name": "חב\"ד",
+      "city": "חיפה",
+      "address": "רחוב ארלוזורוב 6, חיפה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    },
+    "b": {
+      "id": "arcgis:haifa::129",
+      "name": "חב\"ד",
+      "city": "חיפה",
+      "address": "רחוב פרישמן 1, חיפה",
+      "type": "synagogue",
+      "certifiedBy": null,
+      "fields": 10
+    }
+  }
+]
