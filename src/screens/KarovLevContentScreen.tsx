@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useEffect } from 'react';
 import {
   Pressable,
   ScrollView,
@@ -17,6 +17,7 @@ import { getTopicStyle, getTopicLabel } from '../components/karov-lev/topics';
 import { ContentSource } from '../components/karov-lev/ContentSource';
 import { DailyTakeawayCard } from '../components/karov-lev/DailyTakeawayCard';
 import { KarovContentCard } from '../components/karov-lev/KarovContentCard';
+import { useDailyReads } from '../hooks/useDailyReads';
 
 type Route = RouteProp<RootStackParamList, 'KarovLevContent'>;
 
@@ -29,6 +30,9 @@ export function KarovLevContentScreen() {
   const route = useRoute<Route>();
   const insets = useSafeAreaInsets();
   const item = useMemo(() => resolveItem(route.params.id), [route.params.id]);
+  const { isRead, markRead, load } = useDailyReads();
+
+  useEffect(() => { load(); }, []);
 
   const relatedItems = useMemo(() => {
     if (!item) return [];
@@ -120,9 +124,20 @@ export function KarovLevContentScreen() {
             <Ionicons name="bookmark-outline" size={20} color={colors.textMuted} />
             <Text style={styles.actionLabel}>שמור</Text>
           </Pressable>
-          <Pressable style={styles.actionBtn}>
-            <Ionicons name="checkmark-circle-outline" size={20} color={colors.textMuted} />
-            <Text style={styles.actionLabel}>קראתי</Text>
+          <Pressable
+            style={styles.actionBtn}
+            onPress={() => markRead(item.id)}
+            accessibilityRole="button"
+            accessibilityLabel={isRead(item.id) ? 'סומן כנקרא' : 'סמן כנקרא'}
+          >
+            <Ionicons
+              name={isRead(item.id) ? 'checkmark-circle' : 'checkmark-circle-outline'}
+              size={20}
+              color={isRead(item.id) ? '#4caf50' : colors.textMuted}
+            />
+            <Text style={[styles.actionLabel, isRead(item.id) && styles.actionLabelRead]}>
+              {isRead(item.id) ? 'קראת ✓' : 'קראתי'}
+            </Text>
           </Pressable>
           <Pressable style={styles.actionBtn}>
             <Ionicons name="share-outline" size={20} color={colors.textMuted} />
@@ -290,6 +305,10 @@ const styles = StyleSheet.create({
     fontSize: 11,
     color: colors.textMuted,
     fontWeight: '500',
+  },
+  actionLabelRead: {
+    color: '#4caf50',
+    fontWeight: '700',
   },
 
   // Related

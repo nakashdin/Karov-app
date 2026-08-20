@@ -92,6 +92,21 @@ export function itemMatchesCategories(topics: Topic[], groups: CategoryGroup[]):
   return topics.some((t) => getCategoriesForTopic(t).some((c) => groups.includes(c)));
 }
 
+// Returns the first category (by topic order) that the item maps to, among selectedGroups.
+// Returns null if the item has no match.
+export function getPrimaryCategory(
+  topics: Topic[],
+  selectedGroups: CategoryGroup[]
+): CategoryGroup | null {
+  for (const topic of topics) {
+    const cats = getCategoriesForTopic(topic);
+    for (const cat of cats) {
+      if (selectedGroups.includes(cat)) return cat;
+    }
+  }
+  return null;
+}
+
 // Feed weighting config — controls preference vs discovery ratio
 export const FEED_CONFIG = {
   preferenceWeight: 200,   // score bonus for items matching selected category groups

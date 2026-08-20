@@ -1,5 +1,6 @@
 import React from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
 import { colors, radius, shadow, spacing } from '../../theme';
 import { JewishContentItem } from '../../data/jewish-content/types';
 import { TOPIC_LABELS } from '../../data/jewish-content/types';
@@ -9,23 +10,36 @@ import { ContentSource } from './ContentSource';
 interface Props {
   item: JewishContentItem;
   onPress: () => void;
+  isRead?: boolean;
 }
 
-export function KarovContentCard({ item, onPress }: Props) {
+export function KarovContentCard({ item, onPress, isRead = false }: Props) {
   const { color, bg } = getTopicStyle(item.topics);
   const topicLabel = getTopicLabel(item.topics);
 
   return (
     <Pressable
-      style={({ pressed }) => [styles.card, { backgroundColor: bg }, pressed && styles.pressed]}
+      style={({ pressed }) => [
+        styles.card,
+        { backgroundColor: bg },
+        isRead && styles.cardRead,
+        pressed && styles.pressed,
+      ]}
       onPress={onPress}
       accessibilityRole="button"
     >
-      {/* Topic + reading time */}
+      {/* Topic + reading time + read badge */}
       <View style={styles.meta}>
-        <Text style={styles.readTime}>
-          {item.readingTimeMinutes ? `${item.readingTimeMinutes} דקות` : ''}
-        </Text>
+        {isRead ? (
+          <View style={styles.readBadge}>
+            <Ionicons name="checkmark-circle" size={13} color="#4caf50" />
+            <Text style={styles.readBadgeText}>קראת</Text>
+          </View>
+        ) : (
+          <Text style={styles.readTime}>
+            {item.readingTimeMinutes ? `${item.readingTimeMinutes} דקות` : ''}
+          </Text>
+        )}
         <Text style={[styles.topicLabel, { color }]}>{topicLabel}</Text>
       </View>
 
@@ -64,6 +78,19 @@ const styles = StyleSheet.create({
   },
   pressed: {
     opacity: 0.86,
+  },
+  cardRead: {
+    opacity: 0.72,
+  },
+  readBadge: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 3,
+  },
+  readBadgeText: {
+    fontSize: 10,
+    color: '#4caf50',
+    fontWeight: '600',
   },
   meta: {
     flexDirection: 'row',

@@ -8,34 +8,51 @@ import {
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation, useFocusEffect } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { colors, radius, spacing } from '../theme';
 import { RootStackParamList } from '../navigation/types';
 import { PLACEHOLDER_CONTENT } from '../data/jewish-content/placeholder';
 import { JewishContentItem } from '../data/jewish-content/types';
-import { itemMatchesCategories } from '../data/jewish-content/category-groups';
+import {
+  CATEGORY_GROUPS,
+  CategoryGroupMeta,
+  getPrimaryCategory,
+} from '../data/jewish-content/category-groups';
 import { useCategoryPreferences } from '../hooks/useCategoryPreferences';
+import { useDailyReads } from '../hooks/useDailyReads';
 import { CategoryPreferenceModal } from '../components/karov-lev/CategoryPreferenceModal';
 import { SelectedCategoriesRow } from '../components/karov-lev/SelectedCategoriesRow';
-import { DailyFeedSection } from '../components/karov-lev/DailyFeedSection';
-import { DiscoverySection } from '../components/karov-lev/DiscoverySection';
+import { KarovContentCard } from '../components/karov-lev/KarovContentCard';
 
 type Nav = NativeStackNavigationProp<RootStackParamList>;
+
+interface CategorySection {
+  group: CategoryGroupMeta;
+  items: JewishContentItem[];
+}
 
 export function KarovLevScreen() {
   const navigation = useNavigation<Nav>();
   const insets = useSafeAreaInsets();
   const { selected, hasDecided, isLoading, setSelected, markDecided } =
     useCategoryPreferences();
+  const { readIds, isRead, load: loadReads } = useDailyReads();
   const [modalVisible, setModalVisible] = useState(false);
 
-  // Auto-open modal on first entry (before user has ever made a decision)
+  // Auto-open modal on first entry
   useEffect(() => {
     if (!isLoading && !hasDecided) {
       setModalVisible(true);
     }
   }, [isLoading, hasDecided]);
+
+  // Reload read state every time screen comes into focus
+  useFocusEffect(
+    React.useCallback(() => {
+      loadReads();
+    }, [loadReads])
+  );
 
   const handleSave = async (groups: typeof selected) => {
     await setSelected(groups);
@@ -48,35 +65,33 @@ export function KarovLevScreen() {
     setModalVisible(false);
   };
 
-  // Build feed + discovery from placeholder content
-  const { feedItems, discoveryItems } = useMemo(() => {
-    if (isLoading) return { feedItems: [], discoveryItems: [] };
+  // Build grouped sections: only items matching selected categories
+  const sections: CategorySection[] = useMemo(() => {
+    if (isLoading || selected.length === 0) return [];
 
-    if (selected.length === 0) {
-      // No preferences yet — show all as feed
-      return { feedItems: [...PLACEHOLDER_CONTENT], discoveryItems: [] };
-    }
-
-    const matched: JewishContentItem[] = [];
-    const unmatched: JewishContentItem[] = [];
+    const selectedMeta = CATEGORY_GROUPS.filter((g) => selected.includes(g.id));
+    const buckets = new Map<string, JewishContentItem[]>(
+      selectedMeta.map((g) => [g.id, []])
+    );
 
     for (const item of PLACEHOLDER_CONTENT) {
-      if (itemMatchesCategories(item.topics, selected)) {
-        matched.push(item);
-      } else {
-        unmatched.push(item);
+      const primary = getPrimaryCategory(item.topics, selected);
+      if (primary) {
+        buckets.get(primary)?.push(item);
       }
     }
 
-    return {
-      feedItems: matched.length > 0 ? matched : [...PLACEHOLDER_CONTENT],
-      discoveryItems: unmatched.slice(0, 2),
-    };
+    return selectedMeta.map((group) => ({
+      group,
+      items: buckets.get(group.id) ?? [],
+    }));
   }, [selected, isLoading]);
 
   function handleCardPress(id: string) {
     navigation.navigate('KarovLevContent', { id });
   }
+
+  const showNoPrefs = hasDecided && selected.length === 0;
 
   return (
     <View style={[styles.root, { paddingTop: insets.top }]}>
@@ -99,7 +114,7 @@ export function KarovLevScreen() {
         contentContainerStyle={[styles.content, { paddingBottom: insets.bottom + 32 }]}
         showsVerticalScrollIndicator={false}
       >
-        {/* Preference row: compact chips for returning users */}
+        {/* Compact preference row for returning users */}
         {hasDecided && selected.length > 0 && (
           <SelectedCategoriesRow
             selected={selected}
@@ -107,8 +122,8 @@ export function KarovLevScreen() {
           />
         )}
 
-        {/* No-preference state hint (decided but selected nothing) */}
-        {hasDecided && selected.length === 0 && (
+        {/* No-preference hint */}
+        {showNoPrefs && (
           <Pressable
             style={styles.noPrefsHint}
             onPress={() => setModalVisible(true)}
@@ -117,14 +132,54 @@ export function KarovLevScreen() {
           </Pressable>
         )}
 
-        {/* Feed */}
-        <DailyFeedSection items={feedItems} onPress={handleCardPress} />
+        {/* Category sections */}
+        {sections.map(({ group, items }) => {
+          const readCount = items.filter((i) => isRead(i.id)).length;
 
-        {/* Discovery */}
-        <DiscoverySection items={discoveryItems} onPress={handleCardPress} />
+          return (
+            <View key={group.id} style={styles.section}>
+              {/* Section header */}
+              <View style={styles.sectionHeader}>
+                <View style={styles.sectionReadBadge}>
+                  {readCount > 0 ? (
+                    <>
+                      <Ionicons name="checkmark-circle" size={14} color="#4caf50" />
+                      <Text style={styles.sectionReadText}>
+                        {readCount} קרא{readCount > 1 ? '' : ''} היום
+                      </Text>
+                    </>
+                  ) : (
+                    <Text style={styles.sectionReadTextZero}>0 קראת היום</Text>
+                  )}
+                </View>
+                <View style={styles.sectionTitleRow}>
+                  <Text style={[styles.sectionTitle, { color: group.color }]}>
+                    {group.label}
+                  </Text>
+                  <Text style={styles.sectionEmoji}>{group.emoji}</Text>
+                </View>
+              </View>
+
+              {/* Items */}
+              {items.length === 0 ? (
+                <View style={styles.emptySection}>
+                  <Text style={styles.emptySectionText}>אין תוכן זמין כרגע</Text>
+                </View>
+              ) : (
+                items.map((item) => (
+                  <KarovContentCard
+                    key={item.id}
+                    item={item}
+                    onPress={() => handleCardPress(item.id)}
+                    isRead={isRead(item.id)}
+                  />
+                ))
+              )}
+            </View>
+          );
+        })}
       </ScrollView>
 
-      {/* Category preference modal */}
       <CategoryPreferenceModal
         visible={modalVisible}
         initialSelected={selected}
@@ -171,6 +226,7 @@ const styles = StyleSheet.create({
     padding: spacing.lg,
     gap: spacing.xl,
   },
+
   noPrefsHint: {
     alignSelf: 'flex-end',
     paddingHorizontal: 12,
@@ -184,5 +240,52 @@ const styles = StyleSheet.create({
     fontSize: 13,
     color: colors.textMuted,
     fontWeight: '600',
+  },
+
+  section: {
+    gap: spacing.md,
+  },
+  sectionHeader: {
+    gap: 2,
+  },
+  sectionTitleRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    gap: 6,
+  },
+  sectionEmoji: {
+    fontSize: 18,
+  },
+  sectionTitle: {
+    fontSize: 20,
+    fontWeight: '800',
+    letterSpacing: -0.3,
+    textAlign: 'right',
+  },
+  sectionReadBadge: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    gap: 4,
+  },
+  sectionReadText: {
+    fontSize: 11,
+    color: '#4caf50',
+    fontWeight: '600',
+  },
+  sectionReadTextZero: {
+    fontSize: 11,
+    color: colors.textFaint,
+    fontWeight: '500',
+  },
+
+  emptySection: {
+    paddingVertical: spacing.lg,
+    alignItems: 'center',
+  },
+  emptySectionText: {
+    fontSize: 13,
+    color: colors.textFaint,
   },
 });
