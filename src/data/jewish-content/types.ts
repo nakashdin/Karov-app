@@ -68,6 +68,15 @@ export const CONTENT_TYPE_LABELS: Record<ContentType, string> = {
   study: 'לימוד קצר',
 };
 
+// ─── Category Groups (user-facing preference) ────────────────────────────────
+// Four broad domains the user selects in the preference modal.
+// Keep separate from Topics — Categories are user preference, Topics are content metadata.
+export type CategoryGroup =
+  | 'emunah_bitachon'
+  | 'mussar_middot'
+  | 'tefilla'
+  | 'shabbat_moadim';
+
 export type LicenseStatus =
   | 'public_domain'
   | 'cc0'
@@ -172,6 +181,7 @@ export interface DailyFeedOptions {
   deviceId: string;
   date: string;
   selectedTopics?: Topic[];
+  selectedCategoryGroups?: CategoryGroup[];
   history: ContentHistory;
   limit?: number;
 }

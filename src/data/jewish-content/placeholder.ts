@@ -50,7 +50,7 @@ export const PLACEHOLDER_CONTENT: PlaceholderItem[] = [
     id: 'ph-tefilla-01',
     contentType: 'thought',
     topics: ['tefilla', 'emunah'],
-    title: 'תפילה — שיחה עם ה׳',
+    title: 'תפילה מתוך ביטחון',
     karovSummary:
       'תפילה אינה רק בקשה — היא שיחה. ברגע שאנחנו פונים לה׳, אנחנו מזכירים לעצמנו שאיננו לבד.',
     karovExplanation:
@@ -87,19 +87,19 @@ export const PLACEHOLDER_CONTENT: PlaceholderItem[] = [
     isPlaceholder: true,
   },
   {
-    id: 'ph-teshuva-01',
+    id: 'ph-shabbat-01',
     contentType: 'thought',
-    topics: ['teshuva', 'anavah'],
-    title: 'תשובה — חזרה לעצמך',
+    topics: ['shabbat'],
+    title: 'קדושת השבת',
     karovSummary:
-      'תשובה אינה ענישה עצמית — היא חזרה. חזרה לעצמנו, לערכינו, לקשר עם מה שחשוב לנו באמת.',
+      'השבת אינה רק מנוחה מהעבודה — היא זמן של קדושה, שבו אנחנו עוצרים ומזכירים לעצמנו מה באמת חשוב.',
     karovExplanation:
-      'שערי תשובה מלמד שכל אדם יכול לחזור בכל רגע. הדבר הגדול ביותר בתשובה הוא לא הפסקת הטעות — אלא שאנחנו לוקחים אחריות ובוחרים אחרת. זה מעשה של כוח, לא של חולשה.',
+      'שמירת השבת היא אחד מעמודי התווך של הזהות היהודית. ביום השישי בשבת עוצרים הכול — לא כי אין מה לעשות, אלא כי יש מה לחיות. השבת מחדשת את הנשמה ומאפשרת לנו להיכנס לשבוע הבא עם כוחות מחודשים.',
     dailyTakeaway:
-      'זהה היום משהו קטן שאתה רוצה לשפר. לא חייב להיות גדול. קח צעד קטן אחד לכיוון הנכון.',
+      'הכן דבר אחד קטן לכבוד שבת — אפילו פרח אחד, שיר אחד, שיחה אחת עם המשפחה. זו גם קדושת השבת.',
     source: {
-      work: { title: 'שערי תשובה', author: 'רבינו יונה מגירונדי' },
-      reference: 'שער א׳, פרק א׳',
+      work: { title: 'פלייסהולדר — לצורכי פיתוח UI בלבד' },
+      reference: 'placeholder',
       version: { licenseStatus: 'needs_review' },
     },
     readingTimeMinutes: 2,

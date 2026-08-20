@@ -2,11 +2,13 @@ import {
   JewishContentItem,
   ContentType,
   Topic,
+  CategoryGroup,
   ContentHistory,
   DailyFeedOptions,
   DailyItemOptions,
 } from './types';
 import { ALL_JEWISH_CONTENT } from './index';
+import { getTopicsForCategories, FEED_CONFIG } from './category-groups';
 
 // ─── Deterministic hashing (FNV-1a 32-bit) ────────────────────────────────────
 
@@ -49,12 +51,12 @@ function daysBetween(date1: string, date2: string): number {
 // ─── Scoring ──────────────────────────────────────────────────────────────────
 
 // Higher score = preferred. Starting at 1000; penalties for recency.
-// selectedTopics is a future hook for user interests.
 function scoreItem(
   item: JewishContentItem,
   date: string,
   history: ContentHistory,
-  selectedTopics?: Topic[]
+  selectedTopics?: Topic[],
+  selectedCategoryGroups?: CategoryGroup[]
 ): number {
   let score = 1000;
 
@@ -69,8 +71,13 @@ function scoreItem(
     // 90+ days: no penalty
   }
 
-  // Future: interest-based boost
-  if (selectedTopics && selectedTopics.length > 0) {
+  // Category group boost: preferred content scores higher
+  if (selectedCategoryGroups && selectedCategoryGroups.length > 0) {
+    const categoryTopics = getTopicsForCategories(selectedCategoryGroups);
+    const hasMatch = item.topics.some(t => categoryTopics.includes(t));
+    if (hasMatch) score += FEED_CONFIG.preferenceWeight;
+  } else if (selectedTopics && selectedTopics.length > 0) {
+    // Legacy topic-based boost (fallback)
     const hasMatch = item.topics.some(t => selectedTopics.includes(t));
     if (hasMatch) score += 200;
   }
@@ -195,7 +202,7 @@ export function validateCanPublish(
 //   tolerance=2  two dimensions may overlap
 //   tolerance=3  any unpicked item (fallback)
 function getDailyFeed(opts: DailyFeedOptions): JewishContentItem[] {
-  const { deviceId, date, selectedTopics, history, limit = 5 } = opts;
+  const { deviceId, date, selectedTopics, selectedCategoryGroups, history, limit = 5 } = opts;
 
   const baseSeed = hashCode(`${deviceId}:${date}`);
   const pool = getPublished();
@@ -204,7 +211,7 @@ function getDailyFeed(opts: DailyFeedOptions): JewishContentItem[] {
 
   // Pre-score all items; deterministic tiebreak so sort is stable per device+date
   const scored = pool
-    .map(item => ({ item, score: scoreItem(item, date, history, selectedTopics) }))
+    .map(item => ({ item, score: scoreItem(item, date, history, selectedTopics, selectedCategoryGroups) }))
     .sort((a, b) => {
       if (b.score !== a.score) return b.score - a.score;
       const ra = seededRandom(hashCode(`${baseSeed}:${a.item.id}`));

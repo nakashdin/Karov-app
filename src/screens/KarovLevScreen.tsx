@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import {
   Pressable,
   ScrollView,
@@ -14,9 +14,10 @@ import { colors, radius, spacing } from '../theme';
 import { RootStackParamList } from '../navigation/types';
 import { PLACEHOLDER_CONTENT } from '../data/jewish-content/placeholder';
 import { JewishContentItem } from '../data/jewish-content/types';
-import { groupIdsToTopics } from '../components/karov-lev/topics';
-import { useSelectedTopics } from '../hooks/useSelectedTopics';
-import { TopicSelector, SelectedTopicChips } from '../components/karov-lev/TopicSelector';
+import { itemMatchesCategories } from '../data/jewish-content/category-groups';
+import { useCategoryPreferences } from '../hooks/useCategoryPreferences';
+import { CategoryPreferenceModal } from '../components/karov-lev/CategoryPreferenceModal';
+import { SelectedCategoriesRow } from '../components/karov-lev/SelectedCategoriesRow';
 import { DailyFeedSection } from '../components/karov-lev/DailyFeedSection';
 import { DiscoverySection } from '../components/karov-lev/DiscoverySection';
 
@@ -25,39 +26,53 @@ type Nav = NativeStackNavigationProp<RootStackParamList>;
 export function KarovLevScreen() {
   const navigation = useNavigation<Nav>();
   const insets = useSafeAreaInsets();
-  const { selectedGroupIds, toggle, loaded } = useSelectedTopics();
-  const [editing, setEditing] = useState(false);
+  const { selected, hasDecided, isLoading, setSelected, markDecided } =
+    useCategoryPreferences();
+  const [modalVisible, setModalVisible] = useState(false);
 
-  const hasTopics = selectedGroupIds.length > 0;
+  // Auto-open modal on first entry (before user has ever made a decision)
+  useEffect(() => {
+    if (!isLoading && !hasDecided) {
+      setModalVisible(true);
+    }
+  }, [isLoading, hasDecided]);
 
-  // Build feed items from placeholder content
+  const handleSave = async (groups: typeof selected) => {
+    await setSelected(groups);
+    await markDecided();
+    setModalVisible(false);
+  };
+
+  const handleSkip = async () => {
+    await markDecided();
+    setModalVisible(false);
+  };
+
+  // Build feed + discovery from placeholder content
   const { feedItems, discoveryItems } = useMemo(() => {
-    if (!loaded) return { feedItems: [], discoveryItems: [] };
+    if (isLoading) return { feedItems: [], discoveryItems: [] };
 
-    const selectedTopics = groupIdsToTopics(selectedGroupIds);
-
-    let feed: JewishContentItem[];
-    let discovery: JewishContentItem[];
-
-    if (selectedTopics.length === 0) {
-      // No preference — show all as feed, no discovery
-      feed = PLACEHOLDER_CONTENT.slice(0, 5);
-      discovery = [];
-    } else {
-      // Items that match selected topics → feed
-      const matched = PLACEHOLDER_CONTENT.filter(item =>
-        item.topics.some(t => selectedTopics.includes(t))
-      );
-      // Items that don't match → discovery
-      const unmatched = PLACEHOLDER_CONTENT.filter(item =>
-        !item.topics.some(t => selectedTopics.includes(t))
-      );
-      feed = matched.length > 0 ? matched : PLACEHOLDER_CONTENT.slice(0, 3);
-      discovery = unmatched.slice(0, 2);
+    if (selected.length === 0) {
+      // No preferences yet — show all as feed
+      return { feedItems: [...PLACEHOLDER_CONTENT], discoveryItems: [] };
     }
 
-    return { feedItems: feed, discoveryItems: discovery };
-  }, [selectedGroupIds, loaded]);
+    const matched: JewishContentItem[] = [];
+    const unmatched: JewishContentItem[] = [];
+
+    for (const item of PLACEHOLDER_CONTENT) {
+      if (itemMatchesCategories(item.topics, selected)) {
+        matched.push(item);
+      } else {
+        unmatched.push(item);
+      }
+    }
+
+    return {
+      feedItems: matched.length > 0 ? matched : [...PLACEHOLDER_CONTENT],
+      discoveryItems: unmatched.slice(0, 2),
+    };
+  }, [selected, isLoading]);
 
   function handleCardPress(id: string) {
     navigation.navigate('KarovLevContent', { id });
@@ -84,33 +99,22 @@ export function KarovLevScreen() {
         contentContainerStyle={[styles.content, { paddingBottom: insets.bottom + 32 }]}
         showsVerticalScrollIndicator={false}
       >
-        {/* Topic selection area */}
-        {!hasTopics || editing ? (
-          <View style={styles.topicSection}>
-            <Text style={styles.sectionTitle}>מה תרצה לחזק היום?</Text>
-            <Text style={styles.sectionSubtitle}>
-              בחר נושאים שמעניינים אותך ונציג לך תוכן שמתאים לך
-            </Text>
-            <TopicSelector selectedIds={selectedGroupIds} onToggle={toggle} />
-            {editing && (
-              <Pressable
-                style={styles.doneBtn}
-                onPress={() => setEditing(false)}
-              >
-                <Text style={styles.doneBtnText}>סיימתי</Text>
-              </Pressable>
-            )}
-          </View>
-        ) : (
-          <View style={styles.myTopicsRow}>
-            <Pressable onPress={() => setEditing(true)} style={styles.editBtn}>
-              <Text style={styles.editBtnText}>עריכה</Text>
-            </Pressable>
-            <View style={styles.myTopicsLabels}>
-              <SelectedTopicChips selectedIds={selectedGroupIds} />
-              <Text style={styles.myTopicsTitle}>הנושאים שלי</Text>
-            </View>
-          </View>
+        {/* Preference row: compact chips for returning users */}
+        {hasDecided && selected.length > 0 && (
+          <SelectedCategoriesRow
+            selected={selected}
+            onEdit={() => setModalVisible(true)}
+          />
+        )}
+
+        {/* No-preference state hint (decided but selected nothing) */}
+        {hasDecided && selected.length === 0 && (
+          <Pressable
+            style={styles.noPrefsHint}
+            onPress={() => setModalVisible(true)}
+          >
+            <Text style={styles.noPrefsText}>הגדר העדפות תוכן ←</Text>
+          </Pressable>
         )}
 
         {/* Feed */}
@@ -119,6 +123,14 @@ export function KarovLevScreen() {
         {/* Discovery */}
         <DiscoverySection items={discoveryItems} onPress={handleCardPress} />
       </ScrollView>
+
+      {/* Category preference modal */}
+      <CategoryPreferenceModal
+        visible={modalVisible}
+        initialSelected={selected}
+        onSave={handleSave}
+        onSkip={handleSkip}
+      />
     </View>
   );
 }
@@ -159,67 +171,17 @@ const styles = StyleSheet.create({
     padding: spacing.lg,
     gap: spacing.xl,
   },
-
-  // Topic section (first-time / editing)
-  topicSection: {
-    gap: spacing.md,
-  },
-  sectionTitle: {
-    fontSize: 22,
-    fontWeight: '800',
-    color: colors.text,
-    textAlign: 'right',
-    letterSpacing: -0.3,
-  },
-  sectionSubtitle: {
-    fontSize: 13,
-    color: colors.textMuted,
-    textAlign: 'right',
-    lineHeight: 20,
-  },
-  doneBtn: {
+  noPrefsHint: {
     alignSelf: 'flex-end',
-    backgroundColor: colors.primary,
-    paddingHorizontal: spacing.lg,
-    paddingVertical: spacing.sm,
-    borderRadius: radius.pill,
-    marginTop: spacing.sm,
-  },
-  doneBtnText: {
-    color: colors.textInverse,
-    fontWeight: '700',
-    fontSize: 14,
-  },
-
-  // Compact "הנושאים שלי" row
-  myTopicsRow: {
-    flexDirection: 'row',
-    alignItems: 'flex-start',
-    justifyContent: 'space-between',
-    gap: spacing.md,
-  },
-  myTopicsLabels: {
-    flex: 1,
-    gap: spacing.xs,
-    alignItems: 'flex-end',
-  },
-  myTopicsTitle: {
-    fontSize: 13,
-    fontWeight: '700',
-    color: colors.textMuted,
-    textAlign: 'right',
-  },
-  editBtn: {
     paddingHorizontal: 12,
-    paddingVertical: 6,
+    paddingVertical: 8,
     borderRadius: radius.pill,
     borderWidth: 1,
     borderColor: colors.border,
-    alignSelf: 'flex-start',
-    marginTop: 2,
+    borderStyle: 'dashed',
   },
-  editBtnText: {
-    fontSize: 12,
+  noPrefsText: {
+    fontSize: 13,
     color: colors.textMuted,
     fontWeight: '600',
   },
