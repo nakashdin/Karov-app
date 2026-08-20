@@ -18,6 +18,7 @@ import { ContentSource } from '../components/karov-lev/ContentSource';
 import { DailyTakeawayCard } from '../components/karov-lev/DailyTakeawayCard';
 import { KarovContentCard } from '../components/karov-lev/KarovContentCard';
 import { useDailyReads } from '../hooks/useDailyReads';
+import { MIDDAH_LABELS } from '../data/jewish-content/middot';
 
 type Route = RouteProp<RootStackParamList, 'KarovLevContent'>;
 
@@ -51,6 +52,9 @@ export function KarovLevContentScreen() {
 
   const { color, bg } = getTopicStyle(item.topics);
   const topicLabel = getTopicLabel(item.topics);
+  const isMiddahCard = Boolean(item.middahTopic);
+  const middahLabel = item.middahTopic ? (MIDDAH_LABELS[item.middahTopic] ?? item.middahTopic) : null;
+  const MIDDAH_COLOR = '#5D8A6F';
 
   return (
     <View style={[styles.root, { paddingTop: insets.top }]}>
@@ -74,39 +78,74 @@ export function KarovLevContentScreen() {
         showsVerticalScrollIndicator={false}
       >
         {/* Hero section */}
-        <View style={[styles.hero, { backgroundColor: bg }]}>
-          {/* Topic chip */}
-          <View style={[styles.topicChip, { backgroundColor: `${color}1A` }]}>
-            <Text style={[styles.topicChipText, { color }]}>{topicLabel}</Text>
-          </View>
+        <View style={[styles.hero, { backgroundColor: isMiddahCard ? `${MIDDAH_COLOR}10` : bg }]}>
+          {/* Topic / middah chip */}
+          {isMiddahCard ? (
+            <View style={[styles.topicChip, { backgroundColor: `${MIDDAH_COLOR}20` }]}>
+              <Text style={[styles.topicChipText, { color: MIDDAH_COLOR }]}>
+                מידה שבועית · {middahLabel}
+              </Text>
+            </View>
+          ) : (
+            <View style={[styles.topicChip, { backgroundColor: `${color}1A` }]}>
+              <Text style={[styles.topicChipText, { color }]}>{topicLabel}</Text>
+            </View>
+          )}
 
           {/* Title */}
           <Text style={styles.title}>{item.title}</Text>
 
-          {/* Source */}
-          <ContentSource source={item.source} size="medium" />
+          {/* Middah: show originalText as source quote */}
+          {isMiddahCard && item.originalText ? (
+            <View style={[styles.quoteBlock, { borderRightColor: MIDDAH_COLOR }]}>
+              <Text style={styles.quoteText}>״{item.originalText}״</Text>
+              <Text style={[styles.quoteRef, { color: MIDDAH_COLOR }]}>
+                — {item.source.reference}
+              </Text>
+            </View>
+          ) : (
+            <ContentSource source={item.source} size="medium" />
+          )}
         </View>
 
-        {/* הרעיון המרכזי */}
+        {/* הרעיון */}
         <View style={styles.section}>
-          <Text style={styles.sectionHeading}>הרעיון המרכזי</Text>
+          <Text style={styles.sectionHeading}>{isMiddahCard ? 'הרעיון' : 'הרעיון המרכזי'}</Text>
           <Text style={styles.summaryText}>{item.karovSummary}</Text>
         </View>
 
         {/* Divider */}
         <View style={styles.divider} />
 
-        {/* להבין יותר */}
+        {/* לחיים שלנו / להבין יותר */}
         {item.karovExplanation ? (
           <View style={styles.section}>
-            <Text style={styles.sectionHeading}>להבין יותר</Text>
+            <Text style={styles.sectionHeading}>
+              {isMiddahCard ? 'לחיים שלנו' : 'להבין יותר'}
+            </Text>
             <Text style={styles.bodyText}>{item.karovExplanation}</Text>
           </View>
         ) : null}
 
-        {/* לקחת איתך היום */}
+        {/* נקודה למחשבה (middah only) */}
+        {isMiddahCard && item.reflectionQuestion ? (
+          <>
+            <View style={styles.divider} />
+            <View style={styles.section}>
+              <Text style={styles.sectionHeading}>נקודה למחשבה</Text>
+              <Text style={[styles.bodyText, styles.reflectionText]}>
+                {item.reflectionQuestion}
+              </Text>
+            </View>
+          </>
+        ) : null}
+
+        {/* העבודה שלי היום / לקחת איתך היום */}
         {item.dailyTakeaway ? (
-          <DailyTakeawayCard text={item.dailyTakeaway} />
+          <DailyTakeawayCard
+            text={item.dailyTakeaway}
+            label={isMiddahCard ? 'העבודה שלי היום' : undefined}
+          />
         ) : null}
 
         {/* Topic tags */}
@@ -236,6 +275,29 @@ const styles = StyleSheet.create({
     lineHeight: 36,
   },
 
+  // Source quote (middah cards)
+  quoteBlock: {
+    borderRightWidth: 3,
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    gap: 4,
+    borderRadius: 4,
+    backgroundColor: 'rgba(93,138,111,0.06)',
+  },
+  quoteText: {
+    fontSize: 15,
+    fontWeight: '600',
+    color: '#1a1a1a',
+    textAlign: 'right',
+    lineHeight: 24,
+    fontStyle: 'italic',
+  },
+  quoteRef: {
+    fontSize: 12,
+    textAlign: 'right',
+    fontWeight: '600',
+  },
+
   // Sections
   section: {
     gap: 10,
@@ -260,6 +322,11 @@ const styles = StyleSheet.create({
     lineHeight: 27,
     color: colors.text,
     textAlign: 'right',
+  },
+  reflectionText: {
+    fontStyle: 'italic',
+    fontSize: 15,
+    color: colors.textMuted,
   },
 
   divider: {

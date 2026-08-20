@@ -155,6 +155,12 @@ export interface JewishContentItem {
   // New content must never set this field.
   isLegacyMigrated?: true;
 
+  // For mussar/middot cards: which middah this card belongs to (e.g. 'kaas')
+  // Used to group daily rotating cards under a selected middah.
+  middahTopic?: string;
+  // Index 0–6: which day of the week this card is shown (0=Sun, 6=Sat).
+  weekCardIndex?: number;
+
   // UI development only — placeholder items that must never reach production.
   isPlaceholder?: true;
 }

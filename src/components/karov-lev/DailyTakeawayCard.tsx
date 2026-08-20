@@ -4,12 +4,13 @@ import { colors, radius, spacing } from '../../theme';
 
 interface Props {
   text: string;
+  label?: string;
 }
 
-export function DailyTakeawayCard({ text }: Props) {
+export function DailyTakeawayCard({ text, label = 'לקחת איתך היום' }: Props) {
   return (
     <View style={styles.card}>
-      <Text style={styles.heading}>לקחת איתך היום</Text>
+      <Text style={styles.heading}>{label}</Text>
       <Text style={styles.body}>{text}</Text>
     </View>
   );

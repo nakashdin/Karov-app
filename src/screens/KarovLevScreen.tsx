@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import {
   Pressable,
   ScrollView,
@@ -19,17 +19,30 @@ import {
   CategoryGroupMeta,
   getPrimaryCategory,
 } from '../data/jewish-content/category-groups';
+import { MIDDAH_LABELS } from '../data/jewish-content/middot';
 import { useCategoryPreferences } from '../hooks/useCategoryPreferences';
 import { useDailyReads } from '../hooks/useDailyReads';
+import { useSelectedMiddot } from '../hooks/useSelectedMiddot';
 import { CategoryPreferenceModal } from '../components/karov-lev/CategoryPreferenceModal';
 import { SelectedCategoriesRow } from '../components/karov-lev/SelectedCategoriesRow';
 import { KarovContentCard } from '../components/karov-lev/KarovContentCard';
+import { MiddahDailyCard } from '../components/karov-lev/MiddahDailyCard';
+import { MiddahPickerModal } from '../components/karov-lev/MiddahPickerModal';
 
 type Nav = NativeStackNavigationProp<RootStackParamList>;
 
 interface CategorySection {
   group: CategoryGroupMeta;
   items: JewishContentItem[];
+  // Only populated for mussar_middot — maps middahTopic → all weekly cards
+  middahCardsByTopic: Record<string, JewishContentItem[]>;
+}
+
+// Pick today's rotating card for a given middah (day-of-week mod cards.length)
+function getTodayCard(cards: JewishContentItem[]): JewishContentItem | null {
+  if (cards.length === 0) return null;
+  const sorted = [...cards].sort((a, b) => (a.weekCardIndex ?? 0) - (b.weekCardIndex ?? 0));
+  return sorted[new Date().getDay() % sorted.length];
 }
 
 export function KarovLevScreen() {
@@ -37,8 +50,10 @@ export function KarovLevScreen() {
   const insets = useSafeAreaInsets();
   const { selected, hasDecided, isLoading, setSelected, markDecided } =
     useCategoryPreferences();
-  const { readIds, isRead, load: loadReads } = useDailyReads();
+  const { isRead, toggleRead, load: loadReads } = useDailyReads();
+  const { selected: selectedMiddot, toggleMiddah } = useSelectedMiddot();
   const [modalVisible, setModalVisible] = useState(false);
+  const [middahPickerVisible, setMiddahPickerVisible] = useState(false);
 
   // Auto-open modal on first entry
   useEffect(() => {
@@ -49,7 +64,7 @@ export function KarovLevScreen() {
 
   // Reload read state every time screen comes into focus
   useFocusEffect(
-    React.useCallback(() => {
+    useCallback(() => {
       loadReads();
     }, [loadReads])
   );
@@ -65,25 +80,35 @@ export function KarovLevScreen() {
     setModalVisible(false);
   };
 
-  // Build grouped sections: only items matching selected categories
+  // Build grouped sections — separate middah cards from regular content
   const sections: CategorySection[] = useMemo(() => {
     if (isLoading || selected.length === 0) return [];
 
     const selectedMeta = CATEGORY_GROUPS.filter((g) => selected.includes(g.id));
-    const buckets = new Map<string, JewishContentItem[]>(
+    const regularBuckets = new Map<string, JewishContentItem[]>(
       selectedMeta.map((g) => [g.id, []])
+    );
+    const middahBuckets = new Map<string, Record<string, JewishContentItem[]>>(
+      selectedMeta.map((g) => [g.id, {}])
     );
 
     for (const item of PLACEHOLDER_CONTENT) {
       const primary = getPrimaryCategory(item.topics, selected);
-      if (primary) {
-        buckets.get(primary)?.push(item);
+      if (!primary) continue;
+
+      if (item.middahTopic) {
+        const bucket = middahBuckets.get(primary)!;
+        if (!bucket[item.middahTopic]) bucket[item.middahTopic] = [];
+        bucket[item.middahTopic].push(item);
+      } else {
+        regularBuckets.get(primary)?.push(item);
       }
     }
 
     return selectedMeta.map((group) => ({
       group,
-      items: buckets.get(group.id) ?? [],
+      items: regularBuckets.get(group.id) ?? [],
+      middahCardsByTopic: middahBuckets.get(group.id) ?? {},
     }));
   }, [selected, isLoading]);
 
@@ -92,6 +117,7 @@ export function KarovLevScreen() {
   }
 
   const showNoPrefs = hasDecided && selected.length === 0;
+  const isMussarSelected = selected.includes('mussar_middot');
 
   return (
     <View style={[styles.root, { paddingTop: insets.top }]}>
@@ -133,8 +159,21 @@ export function KarovLevScreen() {
         )}
 
         {/* Category sections */}
-        {sections.map(({ group, items }) => {
-          const readCount = items.filter((i) => isRead(i.id)).length;
+        {sections.map(({ group, items, middahCardsByTopic }) => {
+          const isMussarSection = group.id === 'mussar_middot';
+
+          // For mussar: compute today's cards for each selected middah
+          const todayMiddahCards = isMussarSection
+            ? selectedMiddot
+                .map((topic) => getTodayCard(middahCardsByTopic[topic] ?? []))
+                .filter((c): c is JewishContentItem => c !== null)
+            : [];
+
+          // Read count: regular items + today's middah cards
+          const allSectionItems = isMussarSection
+            ? [...items, ...todayMiddahCards]
+            : items;
+          const readCount = allSectionItems.filter((i) => isRead(i.id)).length;
 
           return (
             <View key={group.id} style={styles.section}>
@@ -144,12 +183,10 @@ export function KarovLevScreen() {
                   {readCount > 0 ? (
                     <>
                       <Ionicons name="checkmark-circle" size={14} color="#4caf50" />
-                      <Text style={styles.sectionReadText}>
-                        {readCount} קרא{readCount > 1 ? '' : ''} היום
-                      </Text>
+                      <Text style={styles.sectionReadText}>{readCount} היום</Text>
                     </>
                   ) : (
-                    <Text style={styles.sectionReadTextZero}>0 קראת היום</Text>
+                    <Text style={styles.sectionReadTextZero}>0 היום</Text>
                   )}
                 </View>
                 <View style={styles.sectionTitleRow}>
@@ -160,8 +197,64 @@ export function KarovLevScreen() {
                 </View>
               </View>
 
-              {/* Items */}
-              {items.length === 0 ? (
+              {/* ── Mussar: middah tracker ── */}
+              {isMussarSection && (
+                <View style={styles.middahTracker}>
+                  {/* Selected middot chips */}
+                  <View style={styles.middahChipsRow}>
+                    {selectedMiddot.map((topic) => (
+                      <Pressable
+                        key={topic}
+                        style={styles.middahChip}
+                        onPress={() => toggleMiddah(topic)}
+                        accessibilityLabel={`הסר ${MIDDAH_LABELS[topic] ?? topic}`}
+                      >
+                        <Text style={styles.middahChipText}>
+                          {MIDDAH_LABELS[topic] ?? topic}
+                        </Text>
+                        <Ionicons name="close" size={11} color="#5D8A6F" />
+                      </Pressable>
+                    ))}
+
+                    {/* Add middah button */}
+                    <Pressable
+                      style={styles.addMiddahBtn}
+                      onPress={() => setMiddahPickerVisible(true)}
+                    >
+                      <Ionicons name="add" size={14} color={colors.textMuted} />
+                      <Text style={styles.addMiddahText}>הוסף מידה</Text>
+                    </Pressable>
+                  </View>
+
+                  {/* Empty state when no middot selected */}
+                  {selectedMiddot.length === 0 && (
+                    <Pressable
+                      style={styles.middahEmptyHint}
+                      onPress={() => setMiddahPickerVisible(true)}
+                    >
+                      <Text style={styles.middahEmptyEmoji}>🌱</Text>
+                      <Text style={styles.middahEmptyTitle}>בחר מידה לשבוע</Text>
+                      <Text style={styles.middahEmptyDesc}>
+                        קבל כרטיסייה חדשה כל יום עם רעיון ועבודה מעשית
+                      </Text>
+                    </Pressable>
+                  )}
+
+                  {/* Today's cards for selected middot */}
+                  {todayMiddahCards.map((card) => (
+                    <MiddahDailyCard
+                      key={card.id}
+                      item={card}
+                      isDone={isRead(card.id)}
+                      onToggleDone={() => toggleRead(card.id)}
+                      onReadMore={() => handleCardPress(card.id)}
+                    />
+                  ))}
+                </View>
+              )}
+
+              {/* Regular content cards */}
+              {items.length === 0 && !isMussarSection ? (
                 <View style={styles.emptySection}>
                   <Text style={styles.emptySectionText}>אין תוכן זמין כרגע</Text>
                 </View>
@@ -186,6 +279,15 @@ export function KarovLevScreen() {
         onSave={handleSave}
         onSkip={handleSkip}
       />
+
+      {isMussarSelected && (
+        <MiddahPickerModal
+          visible={middahPickerVisible}
+          selected={selectedMiddot}
+          onToggle={toggleMiddah}
+          onClose={() => setMiddahPickerVisible(false)}
+        />
+      )}
     </View>
   );
 }
@@ -278,6 +380,76 @@ const styles = StyleSheet.create({
     fontSize: 11,
     color: colors.textFaint,
     fontWeight: '500',
+  },
+
+  // Middah tracker
+  middahTracker: {
+    gap: spacing.md,
+  },
+  middahChipsRow: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: 8,
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+  },
+  middahChip: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 5,
+    paddingHorizontal: 11,
+    paddingVertical: 6,
+    borderRadius: radius.pill,
+    backgroundColor: '#5D8A6F18',
+    borderWidth: 1,
+    borderColor: '#5D8A6F40',
+  },
+  middahChipText: {
+    fontSize: 13,
+    fontWeight: '700',
+    color: '#5D8A6F',
+  },
+  addMiddahBtn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+    paddingHorizontal: 11,
+    paddingVertical: 6,
+    borderRadius: radius.pill,
+    borderWidth: 1,
+    borderColor: colors.border,
+    borderStyle: 'dashed',
+  },
+  addMiddahText: {
+    fontSize: 12,
+    fontWeight: '600',
+    color: colors.textMuted,
+  },
+  middahEmptyHint: {
+    alignItems: 'center',
+    gap: 6,
+    paddingVertical: spacing.lg,
+    paddingHorizontal: spacing.xl,
+    borderRadius: radius.xl,
+    borderWidth: 1,
+    borderColor: '#5D8A6F30',
+    borderStyle: 'dashed',
+    backgroundColor: '#5D8A6F08',
+  },
+  middahEmptyEmoji: {
+    fontSize: 28,
+  },
+  middahEmptyTitle: {
+    fontSize: 15,
+    fontWeight: '700',
+    color: '#5D8A6F',
+    textAlign: 'center',
+  },
+  middahEmptyDesc: {
+    fontSize: 12,
+    color: colors.textMuted,
+    textAlign: 'center',
+    lineHeight: 18,
   },
 
   emptySection: {
