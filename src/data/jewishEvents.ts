@@ -1,10 +1,19 @@
 import { elulCardText, elulDetails, getElulState } from './selichot';
 
+/**
+ * One block of the long-form read shown in the modal. A block with a heading
+ * starts a section; blocks without one continue it.
+ */
+export interface DetailBlock {
+  heading?: string;
+  text: string;
+}
+
 export interface JewishStaticEvent {
   title: string;
   body: string;
-  /** Long-form paragraphs, shown only in the modal (not on the card) */
-  details?: string[];
+  /** Long-form blocks, shown only in the modal (not on the card) */
+  details?: DetailBlock[];
   category: 'hilula' | 'historical' | 'special';
 }
 
@@ -220,7 +229,7 @@ export interface JewishPeriod {
   /** Inclusive Hebrew day range */
   fromDay: number;
   toDay: number;
-  resolve(ctx: JewishPeriodContext): { title: string; body: string; details: string[] };
+  resolve(ctx: JewishPeriodContext): { title: string; body: string; details: DetailBlock[] };
 }
 
 function resolveElul(month: string) {
@@ -244,8 +253,8 @@ export const JEWISH_PERIODS: JewishPeriod[] = [
       title: 'עשרת ימי תשובה',
       body: 'מראש השנה ועד יום הכיפורים — חתימתם של ארבעים ימי הרחמים שהחלו בראש חודש אלול.',
       details: [
-        'עשרת ימי תשובה הם עשרת הימים האחרונים מתוך ארבעים ימי הרצון שהחלו בראש חודש אלול, ובהם נחתם הדין שנפתח בראש השנה.',
-        'ממשיכים באמירת סליחות עד ערב יום הכיפורים. בשבת שביניהם — שבת שובה — קוראים בהפטרה ״שובה ישראל עד ה׳ אלוקיך״.',
+        { text: 'עשרת ימי תשובה הם עשרת הימים האחרונים מתוך ארבעים ימי הרצון שהחלו בראש חודש אלול, ובהם נחתם הדין שנפתח בראש השנה.' },
+        { text: 'ממשיכים באמירת סליחות עד ערב יום הכיפורים. בשבת שביניהם — שבת שובה — קוראים בהפטרה ״שובה ישראל עד ה׳ אלוקיך״.' },
       ],
     }),
   },

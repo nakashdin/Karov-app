@@ -202,8 +202,13 @@ export function DailyCarousel({ parasha }: Props) {
                 <Text style={[mStyles.cardTag, { color: colors.categoryRestaurant }]}>היום ביהדות</Text>
                 <Text style={mStyles.cardTitle}>{jewishDay.title}</Text>
                 <Text style={mStyles.cardBody}>{jewishDay.body}</Text>
-                {jewishDay.details?.map((para, i) => (
-                  <Text key={i} style={mStyles.detailPara}>{para}</Text>
+                {jewishDay.details?.map((block, i) => (
+                  <View key={i}>
+                    {block.heading ? (
+                      <Text style={mStyles.detailHeading}>{block.heading}</Text>
+                    ) : null}
+                    <Text style={mStyles.detailPara}>{block.text}</Text>
+                  </View>
                 ))}
               </View>
             ) : (
@@ -438,6 +443,14 @@ const mStyles = StyleSheet.create({
     color: colors.text,
     textAlign: 'right',
     lineHeight: 26,
+  },
+  detailHeading: {
+    fontSize: 16,
+    fontWeight: '800',
+    color: colors.text,
+    textAlign: 'right',
+    marginTop: 14,
+    marginBottom: 4,
   },
   detailPara: {
     fontSize: 15,

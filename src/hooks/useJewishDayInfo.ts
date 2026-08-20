@@ -1,12 +1,13 @@
 import { useEffect, useState } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { JEWISH_STATIC_EVENTS, getJewishPeriods } from '../data/jewishEvents';
+import type { DetailBlock } from '../data/jewishEvents';
 
 export interface JewishDayInfo {
   title: string;
   body: string;
-  /** Long-form paragraphs for the modal — e.g. the Elul / Selichot background */
-  details?: string[];
+  /** Long-form blocks for the modal — e.g. the Elul / Selichot background */
+  details?: DetailBlock[];
 }
 
 const HEBREW_RE = /[֐-׿]/;
