@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { ActivityIndicator, Modal, Platform, Pressable, ScrollView, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
@@ -7,10 +7,12 @@ import { colors, radius, shadow, spacing } from '../../theme';
 import { ParashaData } from '../../hooks/useParasha';
 import { useParashaSummary } from '../../hooks/useParashaSummary';
 import { useJewishDayInfo } from '../../hooks/useJewishDayInfo';
-import { useDailyContent, ContentType, TYPE_ICONS, TYPE_NAMES } from '../../hooks/useDailyContent';
 import { RootStackParamList } from '../../navigation/types';
 import { DESKTOP_BREAKPOINT } from '../Screen';
 import { TEHILLIM_WEEKLY, numToHebrew } from '../../data/tehillim';
+import { useCategoryPreferences } from '../../hooks/useCategoryPreferences';
+import { PLACEHOLDER_CONTENT } from '../../data/jewish-content/placeholder';
+import { CATEGORY_GROUPS, getPrimaryCategory } from '../../data/jewish-content/category-groups';
 
 type Nav = NativeStackNavigationProp<RootStackParamList>;
 
@@ -18,50 +20,85 @@ interface Props {
   parasha: ParashaData | null;
 }
 
-const CONTENT_TYPES: ContentType[] = ['halacha', 'pasuk', 'mussar', 'thought', 'blessing'];
 const GAP = 10;
 const CARD_WIDTH = 168;
 
 export function DailyCarousel({ parasha }: Props) {
   const navigation = useNavigation<Nav>();
-  const content = useDailyContent();
   const jewishDay = useJewishDayInfo();
   const parashaSummary = useParashaSummary(parasha?.topicSlug ?? null);
   const { width } = useWindowDimensions();
   const isDesktop = Platform.OS === 'web' && width >= DESKTOP_BREAKPOINT;
   const [openModal, setOpenModal] = useState<null | 'jewish-day'>(null);
+  const { selected: categoryPrefs, hasDecided, isLoading: prefsLoading } = useCategoryPreferences();
 
   const todayTehillim = TEHILLIM_WEEKLY[new Date().getDay()];
 
+  // Pick the first placeholder item that matches the user's selected categories
+  const previewItem = useMemo(() => {
+    if (!hasDecided || categoryPrefs.length === 0) return null;
+    return PLACEHOLDER_CONTENT.find(
+      (item) => getPrimaryCategory(item.topics, categoryPrefs) !== null
+    ) ?? null;
+  }, [categoryPrefs, hasDecided]);
+
+  const previewCategory = useMemo(() => {
+    if (!previewItem) return null;
+    return CATEGORY_GROUPS.find((g) => categoryPrefs.includes(g.id)) ?? null;
+  }, [previewItem, categoryPrefs]);
+
+  // Teaser categories to display when no preferences set
+  const teaserCategories = CATEGORY_GROUPS.slice(0, 4);
+
   const card1 = (
     <Pressable
-      style={({ pressed }) => [styles.card, isDesktop && styles.cardDesktop, { backgroundColor: '#F2EEFA' }, pressed && styles.pressed]}
-      onPress={() => { if (content.isReady) navigation.navigate('KarovLev'); }}
+      style={({ pressed }) => [
+        styles.card,
+        isDesktop && styles.cardDesktop,
+        { backgroundColor: '#F2EEFA' },
+        pressed && styles.pressed,
+      ]}
+      onPress={() => navigation.navigate('KarovLev')}
     >
-      <View style={styles.typeTabs}>
-        {CONTENT_TYPES.map((t) => (
-          <Pressable
-            key={t}
-            style={[styles.typeTab, content.type === t && styles.typeTabActive]}
-            onPress={() => content.setType(t)}
-            hitSlop={4}
-          >
-            <Text style={styles.typeTabIcon}>{TYPE_ICONS[t]}</Text>
-          </Pressable>
-        ))}
-      </View>
       <Text style={[styles.tag, { color: '#7B5EA7' }]}>קרוב ללב</Text>
-      {content.isReady ? (
+
+      {prefsLoading ? (
+        <ActivityIndicator color="#7B5EA7" style={{ flex: 1, alignSelf: 'center', marginVertical: 8 }} />
+      ) : previewItem && previewCategory ? (
+        /* ── Preferences set: show content preview ── */
         <>
-          <Text style={styles.cardTitle} numberOfLines={isDesktop ? 3 : 2}>{content.item.title}</Text>
-          <Text style={styles.cardBody} numberOfLines={isDesktop ? 6 : 4}>{content.item.body}</Text>
-          {content.item.source ? (
-            <Text style={[styles.source, { color: '#9B7EC8' }]}>{content.item.source}</Text>
-          ) : null}
+          <View style={styles.categoryBadge}>
+            <Text style={styles.categoryBadgeEmoji}>{previewCategory.emoji}</Text>
+            <Text style={[styles.categoryBadgeText, { color: previewCategory.color }]}>
+              {previewCategory.label}
+            </Text>
+          </View>
+          <Text style={styles.cardTitle} numberOfLines={isDesktop ? 3 : 2}>
+            {previewItem.title}
+          </Text>
+          <Text style={styles.cardBody} numberOfLines={isDesktop ? 5 : 3}>
+            {previewItem.karovSummary}
+          </Text>
           <Text style={[styles.cta, { color: '#7B5EA7' }]}>קרא עוד ←</Text>
         </>
       ) : (
-        <ActivityIndicator color="#7B5EA7" style={{ flex: 1, alignSelf: 'center', marginVertical: 8 }} />
+        /* ── No preferences: teaser ── */
+        <>
+          <Text style={styles.cardTitle} numberOfLines={2}>
+            חיזוק יומי בשבילך
+          </Text>
+          <Text style={styles.cardBody} numberOfLines={isDesktop ? 4 : 3}>
+            בחר מה מעניין אותך ונביא לך תוכן שמחזק אותך כל יום
+          </Text>
+          <View style={styles.teaserChips}>
+            {teaserCategories.map((g) => (
+              <View key={g.id} style={[styles.teaserChip, { backgroundColor: `${g.color}18` }]}>
+                <Text style={styles.teaserChipText}>{g.emoji}</Text>
+              </View>
+            ))}
+          </View>
+          <Text style={[styles.cta, { color: '#7B5EA7' }]}>התחל כאן ←</Text>
+        </>
       )}
     </Pressable>
   );
@@ -165,6 +202,9 @@ export function DailyCarousel({ parasha }: Props) {
                 <Text style={[mStyles.cardTag, { color: colors.categoryRestaurant }]}>היום ביהדות</Text>
                 <Text style={mStyles.cardTitle}>{jewishDay.title}</Text>
                 <Text style={mStyles.cardBody}>{jewishDay.body}</Text>
+                {jewishDay.details?.map((para, i) => (
+                  <Text key={i} style={mStyles.detailPara}>{para}</Text>
+                ))}
               </View>
             ) : (
               <ActivityIndicator color={colors.primary} style={{ marginTop: 40 }} />
@@ -236,39 +276,37 @@ const styles = StyleSheet.create({
     opacity: 0.88,
   },
 
-  typeTabs: {
+  categoryBadge: {
     flexDirection: 'row',
+    alignItems: 'center',
     gap: 4,
     alignSelf: 'flex-end',
     marginBottom: 2,
   },
-  typeTab: {
+  categoryBadgeEmoji: {
+    fontSize: 12,
+  },
+  categoryBadgeText: {
+    fontSize: 10,
+    fontWeight: '700',
+    letterSpacing: 0.2,
+  },
+  teaserChips: {
+    flexDirection: 'row',
+    gap: 5,
+    justifyContent: 'flex-end',
+    flexWrap: 'wrap',
+    marginTop: 2,
+  },
+  teaserChip: {
     width: 28,
     height: 28,
     borderRadius: radius.sm,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'transparent',
   },
-  typeTabActive: {
-    backgroundColor: '#E0D0F5',
-  },
-  typeTabIcon: {
+  teaserChipText: {
     fontSize: 14,
-  },
-  contentTypePill: {
-    fontSize: 9,
-    color: '#7B5EA7',
-    fontWeight: '600',
-    textAlign: 'right',
-    marginTop: 2,
-    opacity: 0.7,
-  },
-  source: {
-    fontSize: 9,
-    textAlign: 'right',
-    opacity: 0.6,
-    marginTop: 1,
   },
 
   iconBadge: {
@@ -400,6 +438,14 @@ const mStyles = StyleSheet.create({
     color: colors.text,
     textAlign: 'right',
     lineHeight: 26,
+  },
+  detailPara: {
+    fontSize: 15,
+    color: colors.text,
+    textAlign: 'right',
+    lineHeight: 25,
+    opacity: 0.85,
+    marginTop: 2,
   },
   source: {
     fontSize: 12,
