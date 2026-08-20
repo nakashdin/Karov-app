@@ -15,8 +15,12 @@ import { colors, radius, shadow, spacing } from '../theme';
 import { useLanguage } from '../context/LanguageContext';
 
 const CONTACT_EMAIL = 'karov.app@gmail.com';
-const DONATION_URL = 'https://karov.app/donate';
-const SHARE_URL = 'https://karov.app';
+
+// karov.app is a different product on Firebase — sharing it sent users to
+// someone else's app. This is ours; change it here if a custom domain lands.
+const APP_URL = 'https://karov-eta.vercel.app';
+const DONATION_URL = `${APP_URL}/donate`;
+const SHARE_URL = APP_URL;
 
 interface Props {
   visible: boolean;
