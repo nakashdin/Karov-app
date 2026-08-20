@@ -1,0 +1,192 @@
+[
+  {
+    "id": "cafecafe-e341e579",
+    "name": "קפה קפה באר שבע גרנד קניון",
+    "type": "cafe",
+    "cityId": "באר שבע",
+    "website": "https://www.cafecafe.co.il",
+    "instagram": null,
+    "facebook": "https://www.facebook.com/cafe.cafe.il/"
+  },
+  {
+    "id": "cafecafe-99e2ee53",
+    "name": "קפה קפה חיפה טכניון",
+    "type": "cafe",
+    "cityId": "חיפה",
+    "website": "https://www.cafecafe.co.il",
+    "instagram": null,
+    "facebook": "https://www.facebook.com/cafe.cafe.il/"
+  },
+  {
+    "id": "cafecafe-b17ad5b9",
+    "name": "קפה קפה ערד",
+    "type": "cafe",
+    "cityId": "ערד",
+    "website": "https://www.cafecafe.co.il",
+    "instagram": null,
+    "facebook": "https://www.facebook.com/cafe.cafe.il/"
+  },
+  {
+    "id": "cafecafe-62628c4d",
+    "name": "קפה קפה הרצליה מרינה",
+    "type": "cafe",
+    "cityId": "הרצליה",
+    "website": "https://www.cafecafe.co.il",
+    "instagram": null,
+    "facebook": "https://www.facebook.com/cafe.cafe.il/"
+  },
+  {
+    "id": "cafecafe-e8695221",
+    "name": "קפה קפה חולון סוקולוב",
+    "type": "cafe",
+    "cityId": "חולון",
+    "website": "https://www.cafecafe.co.il",
+    "instagram": null,
+    "facebook": "https://www.facebook.com/cafe.cafe.il/"
+  },
+  {
+    "id": "cafecafe-e6426268",
+    "name": "קפה קפה תל אביב נמל",
+    "type": "cafe",
+    "cityId": "תל אביב",
+    "website": "https://www.cafecafe.co.il",
+    "instagram": null,
+    "facebook": "https://www.facebook.com/cafe.cafe.il/"
+  },
+  {
+    "id": "cafecafe-75ababc6",
+    "name": "קפה קפה נתניה חוף סירונית",
+    "type": "cafe",
+    "cityId": "נתניה",
+    "website": "https://www.cafecafe.co.il",
+    "instagram": null,
+    "facebook": "https://www.facebook.com/cafe.cafe.il/"
+  },
+  {
+    "id": "cafecafe-393cb10c",
+    "name": "קפה קפה נתניה אגמים",
+    "type": "cafe",
+    "cityId": "נתניה",
+    "website": "https://www.cafecafe.co.il",
+    "instagram": null,
+    "facebook": "https://www.facebook.com/cafe.cafe.il/"
+  },
+  {
+    "id": "cafecafe-bf249ed7",
+    "name": "קפה קפה גדרה",
+    "type": "cafe",
+    "cityId": "גדרה",
+    "website": "https://www.cafecafe.co.il",
+    "instagram": null,
+    "facebook": "https://www.facebook.com/cafe.cafe.il/"
+  },
+  {
+    "id": "cafecafe-1afbbe4c",
+    "name": "קפה קפה רמלה",
+    "type": "cafe",
+    "cityId": "רמלה",
+    "website": "https://www.cafecafe.co.il",
+    "instagram": null,
+    "facebook": "https://www.facebook.com/cafe.cafe.il/"
+  },
+  {
+    "id": "pokeshop-2e5db008",
+    "name": "PokeShop רוטשילד",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "תל אביב",
+    "website": "https://pokeshop.co.il",
+    "instagram": "https://www.instagram.com/pokeshop_israel/",
+    "facebook": "https://www.facebook.com/pokeshopIL/"
+  },
+  {
+    "id": "pokeshop-bb53c92b",
+    "name": "PokeShop אבן גבירול",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "תל אביב",
+    "website": "https://pokeshop.co.il",
+    "instagram": "https://www.instagram.com/pokeshop_israel/",
+    "facebook": "https://www.facebook.com/pokeshopIL/"
+  },
+  {
+    "id": "pokeshop-c77c76a7",
+    "name": "PokeShop בר כוכבא",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "בני ברק",
+    "website": "https://pokeshop.co.il",
+    "instagram": "https://www.instagram.com/pokeshop_israel/",
+    "facebook": "https://www.facebook.com/PokeShopBarKochva/"
+  },
+  {
+    "id": "pokeshop-300778c2",
+    "name": "PokeShop נתניה",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "נתניה",
+    "website": "https://pokeshop.co.il",
+    "instagram": "https://www.instagram.com/pokeshop_israel/",
+    "facebook": "https://www.facebook.com/pokeshopIL/"
+  },
+  {
+    "id": "woktowalk-13725564",
+    "name": "Wok to Walk תל אביב",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "תל אביב",
+    "website": "https://www.woktowalk.com",
+    "instagram": "https://www.instagram.com/woktowalkisrael/",
+    "facebook": "https://www.facebook.com/woktowalkisrael/"
+  },
+  {
+    "id": "woktowalk-943efce4",
+    "name": "Wok to Walk ירושלים",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "ירושלים",
+    "website": "https://www.woktowalk.com",
+    "instagram": "https://www.instagram.com/woktowalkisrael/",
+    "facebook": "https://www.facebook.com/woktowalkisrael/"
+  },
+  {
+    "id": "bagelcafe-454e5695",
+    "name": "Bagel Cafe רחביה",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "ירושלים",
+    "website": "https://www.bagelcafe.co.il",
+    "instagram": "https://www.instagram.com/bagelcafeil/",
+    "facebook": "https://www.facebook.com/bagelcafejerusalem"
+  },
+  {
+    "id": "bagelcafe-9ba2cc0f",
+    "name": "Bagel Cafe עמק רפאים",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "ירושלים",
+    "website": "https://www.bagelcafe.co.il",
+    "instagram": "https://www.instagram.com/bagelcafeil/",
+    "facebook": "https://www.facebook.com/bagelcafejerusalem"
+  },
+  {
+    "id": "bagelcafe-91860729",
+    "name": "Bagel Cafe רמת אשכול",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "ירושלים",
+    "website": "https://www.bagelcafe.co.il",
+    "instagram": "https://www.instagram.com/bagelcafeil/",
+    "facebook": "https://www.facebook.com/bagelcafejerusalem"
+  },
+  {
+    "id": "bagelcafe-3e034577",
+    "name": "Bagel Cafe מלחה",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "ירושלים",
+    "website": "https://www.bagelcafe.co.il",
+    "instagram": "https://www.instagram.com/bagelcafeil/",
+    "facebook": "https://www.facebook.com/bagelcafejerusalem"
+  }
+]

@@ -1,0 +1,202 @@
+[
+  {
+    "id": "manual-br-krayot",
+    "name": "בורגר ראנץ' קריות קריון",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "קריית ביאליק",
+    "website": "https://www.burgeranch.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-br-tlv-menorah",
+    "name": "בורגר ראנץ' תל אביב היכל מנורה",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "תל אביב",
+    "website": "https://www.burgeranch.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-cafe-joe-sheba",
+    "name": "קפה ג'ו שיבא יולדות",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "רמת גן",
+    "website": "https://www.joe.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-cafe-joe-marom-nave",
+    "name": "קפה ג'ו מרום נווה",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "רמת גן",
+    "website": "https://www.joe.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-cafe-joe-haifa-uni",
+    "name": "קפה ג'ו אוניברסיטת",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "חיפה",
+    "website": "https://www.joe.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-cafe-joe-hod-hasharon",
+    "name": "קפה ג'ו שרונים",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "הוד השרון",
+    "website": "https://www.joe.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-cafe-joe-rg-hilazon",
+    "name": "קפה ג'ו רמת גן החילזון",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "רמת גן",
+    "website": "https://www.joe.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-cafe-joe-rg-bengurion",
+    "name": "קפה ג'ו רמת גן בן גוריון",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "רמת גן",
+    "website": "https://www.joe.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "mifgash-berlin-f692e96f",
+    "name": "מפגש ברלין ז'בוטינסקי",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "רמת גן",
+    "website": "https://mifgashberlin.co.il",
+    "instagram": null,
+    "facebook": "https://www.facebook.com/mifgashberlin"
+  },
+  {
+    "id": "aloha-16bcad8b",
+    "name": "אלוהה",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "תל אביב",
+    "website": "https://alohatlv.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "aloha-735a9737",
+    "name": "אלוהה פתח תקווה BSR",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "פתח תקווה",
+    "website": "https://alohatlv.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "pizzax-6069628c",
+    "name": "פיצה X דיזינגוף",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "תל אביב",
+    "website": "https://pizzax.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "pizzandtortilla-be19a08a",
+    "name": "פיצה אנד טורטיה",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "תל אביב",
+    "website": "https://pizzandtortilla.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "breadcafe-7306c2e6",
+    "name": "Bread Cafe",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "רמת גן",
+    "website": "https://breadcafe.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "breadcafe-3fb8a6e1",
+    "name": "Bread Cafe בן גבירול",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "תל אביב",
+    "website": "https://breadcafe.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "tau77-0464f78f",
+    "name": "טאו 77",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "תל אביב",
+    "website": "https://tau77.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "nini-hachi-8aa87e4b",
+    "name": "ניני האצ'י",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "תל אביב",
+    "website": "https://ninihachi.com",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "rak-marak-6e2134ba",
+    "name": "רק מרק",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "רמת גן",
+    "website": "https://rakmarak.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-river-malha",
+    "name": "ריבר מלחה",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "ירושלים",
+    "website": "https://www.river-bar.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-river-ramat-gan",
+    "name": "ריבר בורסה",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "רמת גן",
+    "website": "https://www.river-bar.co.il",
+    "instagram": null,
+    "facebook": null
+  }
+]

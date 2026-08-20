@@ -1,0 +1,429 @@
+[
+  {
+    "name": "שניצל קומפני",
+    "branchCount": 8,
+    "ids": [
+      "manual-shnitzel-company-tlv-allon",
+      "manual-shnitzel-company-tlv-sarona",
+      "manual-shnitzel-company-ramat-gan",
+      "manual-shnitzel-company-bb",
+      "manual-shnitzel-company-herzliya",
+      "manual-shnitzel-company-raanana",
+      "manual-shnitzel-company-holon",
+      "schnitzel-company-e2e39dd8"
+    ],
+    "type": "restaurant",
+    "category": "meat",
+    "website": "https://www.scompany.co.il",
+    "instagram": "https://www.instagram.com/s.scompany",
+    "facebook": "https://www.facebook.com/schnitzelcompany"
+  },
+  {
+    "name": "שניצליין",
+    "branchCount": 2,
+    "ids": [
+      "manual-schnitzelein-bb",
+      "manual-schnitzelein-tlv"
+    ],
+    "type": "restaurant",
+    "category": "meat",
+    "website": null,
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "name": "מקסיקנה",
+    "branchCount": 3,
+    "ids": [
+      "manual-mexicana-tlv-sarona",
+      "manual-mexicana-glilot",
+      "manual-mexicana-rehovot"
+    ],
+    "type": "restaurant",
+    "category": "meat",
+    "website": "https://mexicana.co.il",
+    "instagram": "https://www.instagram.com/mexicana.israel",
+    "facebook": "https://www.facebook.com/mexicana.tlv"
+  },
+  {
+    "name": "רפידוס",
+    "branchCount": 5,
+    "ids": [
+      "manual-rapidos-netanya",
+      "manual-rapidos-herzliya",
+      "manual-rapidos-pt",
+      "manual-rapidos-rishon",
+      "manual-rapidos-nahariya"
+    ],
+    "type": "restaurant",
+    "category": "meat",
+    "website": "https://rapidos.co.il",
+    "instagram": "https://www.instagram.com/rapidos.il",
+    "facebook": "https://www.facebook.com/rapidos.il"
+  },
+  {
+    "name": "קנסאי סושי",
+    "branchCount": 3,
+    "ids": [
+      "manual-kansai-tlv",
+      "manual-kansai-pt",
+      "manual-kansai-holon"
+    ],
+    "type": "restaurant",
+    "category": "parve",
+    "website": "https://kansai.co.il",
+    "instagram": "https://www.instagram.com/kansai_sushi",
+    "facebook": "https://www.facebook.com/sushikansai"
+  },
+  {
+    "name": "סושי בר בזל",
+    "branchCount": 2,
+    "ids": [
+      "manual-sushi-bazel-netanya",
+      "sushi-bazel-b075a6c4"
+    ],
+    "type": "restaurant",
+    "category": "parve",
+    "website": "https://sushibarbazel.co.il",
+    "instagram": "https://www.instagram.com/sushi_bazel_",
+    "facebook": "https://www.facebook.com/sushibarbazeltlv"
+  },
+  {
+    "name": "ווק טו ווק",
+    "branchCount": 5,
+    "ids": [
+      "manual-wok-to-walk-tlv",
+      "manual-wok-to-walk-pt",
+      "manual-wok-to-walk-netanya",
+      "manual-wok-to-walk-jrm",
+      "manual-wok-to-walk-rishon"
+    ],
+    "type": "restaurant",
+    "category": "meat",
+    "website": "https://www.woktowalk.com/he",
+    "instagram": "https://www.instagram.com/woktowalkisrael",
+    "facebook": "https://www.facebook.com/woktowalkisrael"
+  },
+  {
+    "name": "ווק אווי",
+    "branchCount": 3,
+    "ids": [
+      "manual-wok-away-bat-yam",
+      "manual-wok-away-pt",
+      "manual-wok-away-eilat"
+    ],
+    "type": "restaurant",
+    "category": "meat",
+    "website": "https://wokaway.co.il",
+    "instagram": "https://www.instagram.com/wokawaykrayot",
+    "facebook": "https://www.facebook.com/wokawayIL"
+  },
+  {
+    "name": "קמפאי סטריט ווק",
+    "branchCount": 2,
+    "ids": [
+      "manual-kampai-beersheva",
+      "manual-kampai-ashdod"
+    ],
+    "type": "restaurant",
+    "category": "meat",
+    "website": "https://kampaistreetwok.co.il",
+    "instagram": "https://www.instagram.com/kampaistreetwok",
+    "facebook": "https://www.facebook.com/kampai.expres"
+  },
+  {
+    "name": "פסטיטו",
+    "branchCount": 14,
+    "ids": [
+      "manual-pastito-jrm-ben-yehuda",
+      "manual-pastito-givatayim",
+      "manual-pastito-kiryat-ono",
+      "manual-pastito-pt",
+      "manual-pastito-rishon-nim",
+      "manual-pastito-bat-yam",
+      "manual-pastito-raanana",
+      "manual-pastito-modiin",
+      "manual-pastito-ramla",
+      "manual-pastito-nof-hagalil",
+      "manual-pastito-kiryat-bialik",
+      "manual-pastito-beersheva",
+      "manual-pastito-afula",
+      "manual-pastito-sderot"
+    ],
+    "type": "restaurant",
+    "category": "dairy",
+    "website": "https://pastito.co.il",
+    "instagram": "https://www.instagram.com/pastito.il",
+    "facebook": null
+  },
+  {
+    "name": "בורגר סטיישן",
+    "branchCount": 16,
+    "ids": [
+      "manual-burger-station-tlv-dizengoff",
+      "manual-burger-station-ramat-gan",
+      "manual-burger-station-holon",
+      "manual-burger-station-bat-yam",
+      "manual-burger-station-herzliya",
+      "manual-burger-station-kfar-saba",
+      "manual-burger-station-raanana",
+      "manual-burger-station-nes-ziona",
+      "manual-burger-station-rishon",
+      "manual-burger-station-pt",
+      "manual-burger-station-rehovot",
+      "manual-burger-station-netanya1",
+      "manual-burger-station-modiin",
+      "manual-burger-station-hadera",
+      "manual-burger-station-rosh-haayin",
+      "manual-burger-station-ashkelon"
+    ],
+    "type": "restaurant",
+    "category": "meat",
+    "website": "https://burgerstation.co.il",
+    "instagram": "https://www.instagram.com/burgerstation_il",
+    "facebook": "https://www.facebook.com/BurgerStationIsrael"
+  },
+  {
+    "name": "השמן",
+    "branchCount": 5,
+    "ids": [
+      "manual-hashamen-holon",
+      "hashamenJLM-ac5ff410",
+      "hashamenMevaser-dfb899a2",
+      "hashamenBS-0a4f19a8",
+      "hashamenrl-c7d0a128"
+    ],
+    "type": "restaurant",
+    "category": "meat",
+    "website": "https://hashamen.co.il",
+    "instagram": "https://www.instagram.com/hashamen_official",
+    "facebook": null
+  },
+  {
+    "name": "בשרלה",
+    "branchCount": 2,
+    "ids": [
+      "manual-basrala-kiryat-haim",
+      "manual-basrala-karmiel"
+    ],
+    "type": "restaurant",
+    "category": "meat",
+    "website": null,
+    "instagram": "https://www.instagram.com/basrala_rest",
+    "facebook": null
+  },
+  {
+    "name": "יעקב קבב",
+    "branchCount": 2,
+    "ids": [
+      "manual-yaakov-kabab-kiryat-haim",
+      "manual-yaakov-kabab-nesher"
+    ],
+    "type": "restaurant",
+    "category": "meat",
+    "website": "https://yakovkabab.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "name": "סלון יווני",
+    "branchCount": 5,
+    "ids": [
+      "manual-salon-yevani-herzliya",
+      "manual-salon-yevani-rishon",
+      "manual-salon-yevani-zichron",
+      "manual-salon-yevani-or-yehuda",
+      "manual-salon-yevani-jrm"
+    ],
+    "type": "restaurant",
+    "category": "dairy",
+    "website": "https://www.salonyevani.co.il",
+    "instagram": "https://www.instagram.com/salonyevani",
+    "facebook": "https://www.facebook.com/salonyevani"
+  },
+  {
+    "name": "פיורי",
+    "branchCount": 2,
+    "ids": [
+      "manual-fiori-jrm",
+      "manual-fiori-kfar-saba"
+    ],
+    "type": "restaurant",
+    "category": "dairy",
+    "website": "https://www.fiori.co.il",
+    "instagram": "https://www.instagram.com/fiori_rest",
+    "facebook": "https://www.facebook.com/FioriRestaurant"
+  },
+  {
+    "name": "ג'אפן ג'אפן",
+    "branchCount": 5,
+    "ids": [
+      "manual-japan-japan-jrm-hagana",
+      "manual-japan-japan-beit-shemesh",
+      "manual-japan-japan-tel-hashomer",
+      "manual-japan-japan-gush-etzion",
+      "manual-japan-japan-ofakim"
+    ],
+    "type": "restaurant",
+    "category": "parve",
+    "website": "https://japan-japan.co.il",
+    "instagram": "https://www.instagram.com/japanjapan_il",
+    "facebook": "https://www.facebook.com/japanjapan.co.il"
+  },
+  {
+    "name": "נגיסה סושי",
+    "branchCount": 8,
+    "ids": [
+      "manual-nagisa-kfar-saba",
+      "manual-nagisa-raanana",
+      "manual-nagisa-tlv-kikar-hamedina",
+      "manual-nagisa-bb",
+      "manual-nagisa-givat-shmuel",
+      "manual-nagisa-kiryat-ono",
+      "manual-nagisa-afula",
+      "manual-nagisa-ramat-gan"
+    ],
+    "type": "restaurant",
+    "category": "parve",
+    "website": "https://nagisasushi.co.il",
+    "instagram": "https://www.instagram.com/nagisa_sushi_il",
+    "facebook": "https://www.facebook.com/nagisasushi"
+  },
+  {
+    "name": "מקס ברנר",
+    "branchCount": 2,
+    "ids": [
+      "manual-max-brenner-pt",
+      "manual-max-brenner-jrm"
+    ],
+    "type": "cafe",
+    "category": "dairy",
+    "website": "https://max-brenner.co.il",
+    "instagram": "https://www.instagram.com/maxbrennerisrael",
+    "facebook": "https://www.facebook.com/MaxBrennerIsrael"
+  },
+  {
+    "name": "קפיט",
+    "branchCount": 3,
+    "ids": [
+      "manual-caffit-emek-refaim",
+      "manual-caffit-maaleh-adumim",
+      "manual-caffit-modiin"
+    ],
+    "type": "restaurant",
+    "category": "dairy",
+    "website": "https://caffit.co.il",
+    "instagram": "https://www.instagram.com/caffit_jerusalem",
+    "facebook": "https://www.facebook.com/caffit"
+  },
+  {
+    "name": "פוקישופ",
+    "branchCount": 6,
+    "ids": [
+      "manual-pokeshop-tlv-herzl",
+      "pokeshop-bn-gavirol-bb53c92b",
+      "manual-pokeshop-herzliya",
+      "manual-pokeshop-raanana",
+      "manual-pokeshop-netanya",
+      "manual-pokeshop-ramat-gan"
+    ],
+    "type": "restaurant",
+    "category": "parve",
+    "website": "https://pokeshop.co.il",
+    "instagram": "https://www.instagram.com/pokeshop_israel",
+    "facebook": "https://www.facebook.com/pokeshop.israel"
+  },
+  {
+    "name": "רפאלו",
+    "branchCount": 2,
+    "ids": [
+      "manual-raffaello-kiryat-bialik",
+      "manual-raffaello-netanya"
+    ],
+    "type": "restaurant",
+    "category": "dairy",
+    "website": "https://www.raffaello.co.il",
+    "instagram": "https://www.instagram.com/raffaello_rest",
+    "facebook": null
+  },
+  {
+    "name": "גו נודלס",
+    "branchCount": 4,
+    "ids": [
+      "manual-go-noodles-tlv-ben-gavir",
+      "manual-go-noodles-tlv-yitzhak-sade",
+      "manual-go-noodles-raanana",
+      "manual-go-noodles-pt"
+    ],
+    "type": "restaurant",
+    "category": "meat",
+    "website": "https://gonoodles.co.il",
+    "instagram": "https://www.instagram.com/gonoodles_il",
+    "facebook": "https://www.facebook.com/gonoodles.co.il"
+  },
+  {
+    "name": "ד\"ר שקשוקה",
+    "branchCount": 2,
+    "ids": [
+      "manual-dr-shakshuka-jaffa",
+      "manual-dr-shakshuka-rishon"
+    ],
+    "type": "restaurant",
+    "category": "parve",
+    "website": "https://www.doctorshakshuka.co.il",
+    "instagram": "https://www.instagram.com/dr.shakshuka",
+    "facebook": "https://www.facebook.com/DrShakshuka"
+  },
+  {
+    "name": "בוטרא",
+    "branchCount": 2,
+    "ids": [
+      "butra-393d85e9",
+      "butra-2550867b"
+    ],
+    "type": "restaurant",
+    "category": "meat",
+    "website": null,
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "name": "שווארמה צארום",
+    "branchCount": 2,
+    "ids": [
+      "tzarumherzliya-ce91ef49",
+      "tzarumraanana-f8a68b34"
+    ],
+    "type": "restaurant",
+    "category": "meat",
+    "website": "https://tzarum.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "name": "שווארמה בכיכר",
+    "branchCount": 2,
+    "ids": [
+      "bkikarnesher-27b33288",
+      "bkikarHS-b9d1860a"
+    ],
+    "type": "restaurant",
+    "category": "meat",
+    "website": "https://www.facebook.com/shipodim",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "name": "שווארמה התאומים",
+    "branchCount": 2,
+    "ids": [
+      "teomimhaifa-d7ec8d97",
+      "teomimAfula-7816ec00"
+    ],
+    "type": "restaurant",
+    "category": "meat",
+    "website": "https://www.instagram.com/the_twin_shawarma",
+    "instagram": null,
+    "facebook": null
+  }
+]

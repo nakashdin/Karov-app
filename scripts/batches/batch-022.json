@@ -1,0 +1,202 @@
+[
+  {
+    "id": "manual-freshop-pt-ofr",
+    "name": "סחוט עופר פ\"ת",
+    "type": "cafe",
+    "category": "parve",
+    "cityId": "פתח תקווה",
+    "website": "https://www.freshop.co.il",
+    "instagram": "https://www.instagram.com/freshop_il",
+    "facebook": null
+  },
+  {
+    "id": "manual-freshop-pt-kfar-ganim",
+    "name": "סחוט כפר גנים",
+    "type": "cafe",
+    "category": "parve",
+    "cityId": "פתח תקווה",
+    "website": "https://www.freshop.co.il",
+    "instagram": "https://www.instagram.com/freshop_il",
+    "facebook": null
+  },
+  {
+    "id": "manual-freshop-haifa-sinmol",
+    "name": "סחוט סינמול",
+    "type": "cafe",
+    "category": "parve",
+    "cityId": "חיפה",
+    "website": "https://www.freshop.co.il",
+    "instagram": "https://www.instagram.com/freshop_il",
+    "facebook": null
+  },
+  {
+    "id": "manual-freshop-beersheva-negev",
+    "name": "סחוט קניון הנגב",
+    "type": "cafe",
+    "category": "parve",
+    "cityId": "באר שבע",
+    "website": "https://www.freshop.co.il",
+    "instagram": "https://www.instagram.com/freshop_il",
+    "facebook": null
+  },
+  {
+    "id": "manual-freshop-beersheva-grand",
+    "name": "סחוט גרנד קניון ב\"ש",
+    "type": "cafe",
+    "category": "parve",
+    "cityId": "באר שבע",
+    "website": "https://www.freshop.co.il",
+    "instagram": "https://www.instagram.com/freshop_il",
+    "facebook": null
+  },
+  {
+    "id": "manual-freshop-ashdod-city",
+    "name": "סחוט סיטי",
+    "type": "cafe",
+    "category": "parve",
+    "cityId": "אשדוד",
+    "website": "https://www.freshop.co.il",
+    "instagram": "https://www.instagram.com/freshop_il",
+    "facebook": null
+  },
+  {
+    "id": "manual-bleecker-namal-tlv",
+    "name": "בליקר בייקרי נמל",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "תל אביב",
+    "website": "https://bleeckerbakery.co.il",
+    "instagram": "https://www.instagram.com/bleecker_bakery",
+    "facebook": null
+  },
+  {
+    "id": "papos-26cdd95f",
+    "name": "פאפוס בשרים",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "רחובות",
+    "website": "https://paposs.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "hanania-d46a240c",
+    "name": "הנכד של חנניה",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "רחובות",
+    "website": "https://www.instagram.com/hanania_grandson",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "shemesh-feacdacc",
+    "name": "שווארמה שמש",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "נס ציונה",
+    "website": "https://shawarmashemesh.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "yossiramle-04748c5c",
+    "name": "שווארמה יוסי",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "רמלה",
+    "website": "https://www.instagram.com/shawarma.yossi",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "halevharahav-4312ca53",
+    "name": "הלב הרחב",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "אילת",
+    "website": "https://halev-harahav.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "baguetdolphin-4f0be49b",
+    "name": "באגט דולפין",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "אילת",
+    "website": "https://baguettedolphin.com",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "bublil-5d9893d8",
+    "name": "שווארמה בובליל",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "נתיבות",
+    "website": "https://www.facebook.com/Shawarmabublil",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "kahlon-8d5db104",
+    "name": "השווארמה של כחלון",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "נתיבות",
+    "website": "https://www.facebook.com/Shawarma.Kahlon",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "benikahlon-4dc530e1",
+    "name": "שווארמה בני כחלון",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "נתיבות",
+    "website": "https://www.instagram.com/shawarme_beni_kachlon",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "toro-b9446f3d",
+    "name": "טורו",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "נתיבות",
+    "website": "https://www.facebook.com/ToroNetivot",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "carniibar-379dcfb5",
+    "name": "קרניבר",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "נתיבות",
+    "website": "https://www.facebook.com/CarniibarNetivot",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "harakevet-084bbcac",
+    "name": "שווארמה ברכבת",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "נתיבות",
+    "website": "https://shawarmaharakevet.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "urban-9a400a85",
+    "name": "אורבן שניצל ושווארמה",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "נתיבות",
+    "website": "https://urbanshnizel.co.il",
+    "instagram": null,
+    "facebook": null
+  }
+]

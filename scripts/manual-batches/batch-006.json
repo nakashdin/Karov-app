@@ -1,0 +1,229 @@
+[
+  {
+    "id": "manual-pizza-reuven-rehovot",
+    "name": "פיצה ראובן",
+    "type": "restaurant",
+    "subType": "fast_food",
+    "category": "dairy",
+    "address": "הרצל 126, רחובות",
+    "cityId": "רחובות",
+    "location": {
+      "latitude": 31.8953,
+      "longitude": 34.8083
+    },
+    "certifiedBy": "רבנות רחובות מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-pizza-smiley-rehovot",
+    "name": "פיצה סמיילי",
+    "type": "restaurant",
+    "subType": "fast_food",
+    "category": "dairy",
+    "address": "דרך ירושלים 2, מרכז שרונה, רחובות",
+    "cityId": "רחובות",
+    "location": {
+      "latitude": 31.8933,
+      "longitude": 34.8102
+    },
+    "phone": "072-3314021",
+    "certifiedBy": "רבנות רחובות מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-falafel-anavim-nes-ziona",
+    "name": "פלאפל ענבים",
+    "type": "restaurant",
+    "subType": "fast_food",
+    "category": "parve",
+    "address": "הפטיש 6, נס ציונה",
+    "cityId": "נס ציונה",
+    "location": {
+      "latitude": 31.9312,
+      "longitude": 34.7983
+    },
+    "phone": "08-9407685",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-b-burger-yavne",
+    "name": "בי בורגר",
+    "type": "restaurant",
+    "subType": "fast_food",
+    "category": "meat",
+    "address": "הדרור 14, יבנה",
+    "cityId": "יבנה",
+    "location": {
+      "latitude": 31.871,
+      "longitude": 34.744
+    },
+    "phone": "08-9432222",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-habibi-hbb-gedera",
+    "name": "חביבי HBB",
+    "type": "restaurant",
+    "subType": "fast_food",
+    "category": "meat",
+    "address": "הרצל 3, גדרה",
+    "cityId": "גדרה",
+    "location": {
+      "latitude": 31.8121,
+      "longitude": 34.7715
+    },
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-pizza-ninja-gedera",
+    "name": "פיצה נינג'ה",
+    "type": "restaurant",
+    "subType": "fast_food",
+    "category": "dairy",
+    "address": "צאלה 47, גדרה",
+    "cityId": "גדרה",
+    "location": {
+      "latitude": 31.8105,
+      "longitude": 34.7705
+    },
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-pizza-kimeat-hinam-gedera",
+    "name": "פיצה כמעט חינם",
+    "type": "restaurant",
+    "subType": "fast_food",
+    "category": "dairy",
+    "address": "מנחם בגין 36, גדרה",
+    "cityId": "גדרה",
+    "location": {
+      "latitude": 31.813,
+      "longitude": 34.773
+    },
+    "phone": "08-8596559",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-burger-salon-gedera",
+    "name": "בורגר סלון",
+    "type": "restaurant",
+    "subType": "fast_food",
+    "category": "meat",
+    "address": "אברהם דורון 1, מתחם BIG, גדרה",
+    "cityId": "גדרה",
+    "location": {
+      "latitude": 31.807,
+      "longitude": 34.778
+    },
+    "phone": "1-700-705-715",
+    "certifiedBy": "רבנות גדרה מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 11:00-23:00; ו' 11:00-15:00",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-falafel-damti-gedera",
+    "name": "פלאפל דמתי",
+    "type": "restaurant",
+    "subType": "fast_food",
+    "category": "parve",
+    "address": "אברהם דורון 1, מתחם BIG, גדרה",
+    "cityId": "גדרה",
+    "location": {
+      "latitude": 31.807,
+      "longitude": 34.778
+    },
+    "certifiedBy": "רבנות גדרה מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 10:00-21:00",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-mehadrin-al-haesh-netanya",
+    "name": "מהדרין על האש",
+    "type": "restaurant",
+    "subType": "fast_food",
+    "category": "meat",
+    "address": "לילנבלום 9, נתניה",
+    "cityId": "נתניה",
+    "location": {
+      "latitude": 32.3308,
+      "longitude": 34.8565
+    },
+    "phone": "09-7717056",
+    "certifiedBy": "כשרות הרב מחפוד",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 09:00-18:00; ו' 09:00-13:00",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-just-meat-netanya",
+    "name": "Just Meat",
+    "type": "restaurant",
+    "subType": "fast_food",
+    "category": "meat",
+    "address": "הארזים 25, מרכז יהלום, נתניה",
+    "cityId": "נתניה",
+    "location": {
+      "latitude": 32.3228,
+      "longitude": 34.8645
+    },
+    "phone": "054-4516830",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-mifgash-haarazim-netanya",
+    "name": "מפגש הארזים",
+    "type": "restaurant",
+    "subType": "fast_food",
+    "category": "meat",
+    "address": "פתח תקווה 82, נתניה",
+    "cityId": "נתניה",
+    "location": {
+      "latitude": 32.3127,
+      "longitude": 34.865
+    },
+    "phone": "09-8872078",
+    "certifiedBy": "רבנות נתניה מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  }
+]

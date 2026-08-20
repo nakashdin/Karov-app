@@ -1,0 +1,224 @@
+[
+  {
+    "id": "manual-shela-kiryat-motzkin",
+    "name": "מסעדת שלה",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "יששכר 15, קריית מוצקין",
+    "cityId": "קריית מוצקין",
+    "location": {
+      "latitude": 32.836,
+      "longitude": 35.073
+    },
+    "phone": "04-8711411",
+    "certifiedBy": "בד\"ץ אגודת ישראל",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 11:00-23:00; ו' 08:30-17:00",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-chavita-beir-kiryat-ata",
+    "name": "חויתא בעיר",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "העצמאות 23, קריית אתא",
+    "cityId": "קריית אתא",
+    "location": {
+      "latitude": 32.803,
+      "longitude": 35.106
+    },
+    "phone": "04-8455538",
+    "certifiedBy": "רבנות קריית אתא מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-shipudei-haagam-tiberias",
+    "name": "שיפודי האגם",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "הירקון 1, טבריה",
+    "cityId": "טבריה",
+    "location": {
+      "latitude": 32.7953,
+      "longitude": 35.5337
+    },
+    "phone": "04-6791505",
+    "certifiedBy": "כשר למהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 10:00-24:00; ו' 10:00-16:00",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-beer-miriam-tiberias",
+    "name": "באר מרים",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "טיילת יגאל אלון 1, טבריה",
+    "cityId": "טבריה",
+    "location": {
+      "latitude": 32.7938,
+      "longitude": 35.5316
+    },
+    "phone": "053-7266720",
+    "certifiedBy": "רבנות טבריה מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 12:00-23:00; ו' 12:00-15:00",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-asado-dreams-tiberias",
+    "name": "אסאדו דרים",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "הבנים 17, טבריה",
+    "cityId": "טבריה",
+    "location": {
+      "latitude": 32.7948,
+      "longitude": 35.532
+    },
+    "phone": "074-7978770",
+    "certifiedBy": "כשרות הרב לנדא",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-hashtetl-safed",
+    "name": "השטעטל",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "הרצל 22, צפת",
+    "cityId": "צפת",
+    "location": {
+      "latitude": 32.9648,
+      "longitude": 35.498
+    },
+    "phone": "04-8341950",
+    "certifiedBy": "בד\"ץ עדה חרדית",
+    "kosherType": "mehadrin",
+    "openingHours": "ה' 16:00-23:30; ו' 09:00-14:00",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-barake-safed",
+    "name": "בארכה גחלים",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "ירושלים 71, צפת",
+    "cityId": "צפת",
+    "location": {
+      "latitude": 32.9638,
+      "longitude": 35.4945
+    },
+    "phone": "052-2098252",
+    "certifiedBy": "רב מחפוד",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-art-cafe-safed",
+    "name": "ארט קפה",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "ירושלים 72, צפת",
+    "cityId": "צפת",
+    "location": {
+      "latitude": 32.9638,
+      "longitude": 35.4946
+    },
+    "phone": "04-6820928",
+    "certifiedBy": "רבנות צפת מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-shaytel-nahariya",
+    "name": "מסעדת שייטל",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "כביש 4, כניסה דרומית, נהריה",
+    "cityId": "נהריה",
+    "location": {
+      "latitude": 32.99,
+      "longitude": 35.101
+    },
+    "phone": "04-9824400",
+    "certifiedBy": "כשר למהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 11:30-22:30; ו' 11:30-14:30",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-shipudei-hapina-nahariya",
+    "name": "שיפודי הפינה",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "דרך השיירה 21, נהריה",
+    "cityId": "נהריה",
+    "location": {
+      "latitude": 33.002,
+      "longitude": 35.092
+    },
+    "phone": "053-9384910",
+    "certifiedBy": "כשר למהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 10:00-00:00",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-al-hamangal-afula",
+    "name": "על המנגל",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "הנשיא ויצמן 17, עפולה",
+    "cityId": "עפולה",
+    "location": {
+      "latitude": 32.607,
+      "longitude": 35.287
+    },
+    "phone": "053-7104417",
+    "certifiedBy": "כשר למהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-pizza-tzof-afula",
+    "name": "פיצה צוף",
+    "type": "restaurant",
+    "subType": "fast_food",
+    "category": "dairy",
+    "address": "הנרייטה סולד 37, עפולה",
+    "cityId": "עפולה",
+    "location": {
+      "latitude": 32.606,
+      "longitude": 35.284
+    },
+    "certifiedBy": "בד\"ץ עדה חרדית",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  }
+]

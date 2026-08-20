@@ -1,0 +1,45 @@
+{
+  "status": "SUCCESS",
+  "scope": "Shoham: +1 new mikveh (דורות אברהם, men, with keilim area) and edit of mikveh-557 (rename→\"מקווה טהרה לנשים\", full hours). Additive + single owner-directed edit. No rebuild, no publish.",
+  "backups": {
+    "places": "C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\places.osm.pre-shoham-updates.backup.json",
+    "cities": "C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\cities.osm.pre-shoham-updates.backup.json"
+  },
+  "added": {
+    "id": "mikveh-shoham-m-31.99678_34.94822",
+    "name": "מקווה גברים דורות אברהם",
+    "city": "שוהם"
+  },
+  "edited": {
+    "id": "mikveh-557",
+    "changedFields": [
+      "openingHours",
+      "lastVerifiedAt",
+      "name"
+    ],
+    "name": {
+      "from": "מקווה נשים חרמון",
+      "to": "מקווה טהרה לנשים"
+    }
+  },
+  "counts": {
+    "placesBefore": 7438,
+    "placesAfter": 7439,
+    "mikvehBefore": 696,
+    "mikvehAfter": 697,
+    "deleted": 0,
+    "existingModified": 1,
+    "idCollisions": 0
+  },
+  "reconciliation": "EXACT: places 7438→7439 (+1); mikveh 696→697 (+1); 0 deleted; exactly 1 existing edited (mikveh-557, fields: openingHours,lastVerifiedAt,name); 543→656 cities.",
+  "rollback": [
+    "copy \"C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\places.osm.pre-shoham-updates.backup.json\" → places.osm.json",
+    "copy \"C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\cities.osm.pre-shoham-updates.backup.json\" → cities.osm.json",
+    "do NOT rebuildAppDataset"
+  ],
+  "dryRun": false,
+  "additiveOnly": false,
+  "ownerDirectedEdit": true,
+  "rebuildRun": false,
+  "publishPerformed": false
+}

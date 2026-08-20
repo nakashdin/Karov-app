@@ -1,0 +1,202 @@
+[
+  {
+    "id": "manual-hashamen-modiin-yishpro",
+    "name": "השמן מודיעין ישפרו",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "מודיעין",
+    "website": "https://hashamen.co.il",
+    "instagram": "https://www.instagram.com/hashamen_official",
+    "facebook": null
+  },
+  {
+    "id": "manual-hashamen-modiin-azrieli",
+    "name": "השמן מודיעין עזריאלי",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "מודיעין",
+    "website": "https://hashamen.co.il",
+    "instagram": "https://www.instagram.com/hashamen_official",
+    "facebook": null
+  },
+  {
+    "id": "manual-basrala-haifa-castra",
+    "name": "בשרלה חיפה קסטרא",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "חיפה",
+    "website": null,
+    "instagram": "https://www.instagram.com/basrala_rest",
+    "facebook": null
+  },
+  {
+    "id": "manual-yaakov-kabab-bat-galim",
+    "name": "יעקב קבב בת גלים",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "חיפה",
+    "website": "https://yakovkabab.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-yaakov-kabab-haifa-center",
+    "name": "יעקב קבב חיפה מרכז",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "חיפה",
+    "website": "https://yakovkabab.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-japan-japan-jrm-talpiot",
+    "name": "ג'אפן ג'אפן תלפיות",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "ירושלים",
+    "website": "https://japan-japan.co.il",
+    "instagram": "https://www.instagram.com/japanjapan_il",
+    "facebook": null
+  },
+  {
+    "id": "manual-japan-japan-jrm-jaffa",
+    "name": "ג'אפן ג'אפן יפו",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "ירושלים",
+    "website": "https://japan-japan.co.il",
+    "instagram": "https://www.instagram.com/japanjapan_il",
+    "facebook": null
+  },
+  {
+    "id": "manual-japan-japan-jrm-french-hill",
+    "name": "ג'אפן ג'אפן גבעה צרפתית",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "ירושלים",
+    "website": "https://japan-japan.co.il",
+    "instagram": "https://www.instagram.com/japanjapan_il",
+    "facebook": null
+  },
+  {
+    "id": "manual-caffit-botanical-garden",
+    "name": "קפיט הגן הבוטני",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "ירושלים",
+    "website": "https://caffit.co.il",
+    "instagram": "https://www.instagram.com/caffit_jerusalem",
+    "facebook": null
+  },
+  {
+    "id": "manual-benny-hadayag-herzliya",
+    "name": "בני הדייג",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "הרצליה",
+    "website": "https://benny-hadayag.co.il",
+    "instagram": "https://www.instagram.com/benny_hadayag_marina",
+    "facebook": null
+  },
+  {
+    "id": "manual-go-noodles-tlv-yehuda-halevi",
+    "name": "גו נודלס יהודה הלוי",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "תל אביב",
+    "website": "https://gonoodles.co.il",
+    "instagram": "https://www.instagram.com/gonoodles_il",
+    "facebook": null
+  },
+  {
+    "id": "doner-627c827b",
+    "name": "דונר אקספרס",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "יהוד מונסון",
+    "website": "https://doneryehud.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "tombik-077b2219",
+    "name": "טומביק שווארמה",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "תל אביב",
+    "website": "https://www.instagram.com/tombik_1",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "yashkaatidim-3849a829",
+    "name": "יאשקה קרית עתידים",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "תל אביב",
+    "website": "https://www.yashka.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "agababaKS-8c180773",
+    "name": "אגבבה שווארמה שמש",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "כפר סבא",
+    "website": "https://shawarma-agababa.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "beitratzon1-cd2521a3",
+    "name": "שווארמה בית רצון נתניה גיבורים",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "נתניה",
+    "website": "https://www.instagram.com/shawarma_beit_ratzon",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "beitratzon2-e102784a",
+    "name": "שווארמה בית רצון נתניה שער הגיא",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "נתניה",
+    "website": "https://www.instagram.com/shawarma_beit_ratzon",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "shefalaash-2f4e356e",
+    "name": "שף על האש",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "נתניה",
+    "website": "https://www.facebook.com/shefalaash",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "omaysitm-58d3f8d5",
+    "name": "פלאפל עומייסי",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "תל מונד",
+    "website": "https://www.facebook.com/omfalafel",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "leshalom-c1fb63af",
+    "name": "שווארמה לשלום",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "פרדס חנה כרכור",
+    "website": "https://www.facebook.com/Shawarmaleshalom.co.il",
+    "instagram": null,
+    "facebook": null
+  }
+]

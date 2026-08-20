@@ -1,0 +1,202 @@
+[
+  {
+    "id": "manual-mesubin-beit-shemesh",
+    "name": "מסובין",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "בית שמש",
+    "website": "https://www.mesubin-rest.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-alma-beit-shemesh",
+    "name": "מסעדת אלמה",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "בית שמש",
+    "website": "https://almarest26.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-avramito-beit-shemesh",
+    "name": "אברמיטו",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "בית שמש",
+    "website": "https://www.avramito.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-holy-bagel-beit-shemesh",
+    "name": "הולי בייגל",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "בית שמש",
+    "website": "https://www.holybagel-j.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-grill-b-beitar-ilit",
+    "name": "גריל B",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "ביתר עילית",
+    "website": "https://grill-b.click-eat.co.il/he",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-hadasim-kiryat-sefer",
+    "name": "מסעדת הדסים",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "קריית ספר",
+    "website": null,
+    "instagram": null,
+    "facebook": "https://www.facebook.com/HadasimRestaurant"
+  },
+  {
+    "id": "manual-luciana-modiin",
+    "name": "לוצ'נה",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "מודיעין",
+    "website": "https://lucianamodiin.co.il",
+    "instagram": "https://www.instagram.com/luciana_modiin",
+    "facebook": null
+  },
+  {
+    "id": "manual-michalis-modiin",
+    "name": "מיכליס",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "מודיעין",
+    "website": "https://www.michaliscoffee.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-gehalim-rehovot",
+    "name": "גחלים",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "רחובות",
+    "website": "https://gehalim-rehovot.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-bukhari-rehovot",
+    "name": "מסעדת בוכרה",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "רחובות",
+    "website": null,
+    "instagram": null,
+    "facebook": "https://www.facebook.com/buharaisrael"
+  },
+  {
+    "id": "manual-kezo-nes-ziona",
+    "name": "קיזו",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "נס ציונה",
+    "website": "https://kezo.co.il",
+    "instagram": "https://www.instagram.com/kezo_pizza",
+    "facebook": null
+  },
+  {
+    "id": "manual-ototo-sushi-gedera",
+    "name": "אוטוטו",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "גדרה",
+    "website": "https://ototo-sushi.co.il",
+    "instagram": "https://www.instagram.com/ototo_gedera",
+    "facebook": null
+  },
+  {
+    "id": "manual-b-fresh-gedera",
+    "name": "בי פרש",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "גדרה",
+    "website": "https://b-fresh.org.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-hayekev-netanya",
+    "name": "היקב",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "נתניה",
+    "website": "https://www.hayekev.co.il",
+    "instagram": "https://www.instagram.com/hayekev.netanya",
+    "facebook": "https://www.facebook.com/hayekev.il"
+  },
+  {
+    "id": "manual-alonzo-netanya",
+    "name": "אלונזו",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "נתניה",
+    "website": "https://www.alonzo-kikar.com",
+    "instagram": "https://www.instagram.com/alonzo_netanya",
+    "facebook": "https://www.facebook.com/alonzonetanya"
+  },
+  {
+    "id": "manual-the-view-netanya",
+    "name": "The View",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "נתניה",
+    "website": "https://www.theview.co.il",
+    "instagram": "https://www.instagram.com/the_view_rest",
+    "facebook": null
+  },
+  {
+    "id": "manual-la-toscana-raanana",
+    "name": "לה טוסקנה",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "רעננה",
+    "website": "https://www.la-toscana.co.il",
+    "instagram": "https://www.instagram.com/latoscana_israel",
+    "facebook": "https://www.facebook.com/latoscana.israel"
+  },
+  {
+    "id": "manual-hatemaniya-raanana",
+    "name": "התימניה",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "רעננה",
+    "website": "https://hatemaniya.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-nobo-herzliya",
+    "name": "נובו NOBO",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "הרצליה",
+    "website": "https://nobo-sushi.co.il",
+    "instagram": "https://www.instagram.com/nobo_herzliya",
+    "facebook": "https://www.facebook.com/share/189uNpUhsD"
+  },
+  {
+    "id": "manual-sunset-kitchen-herzliya",
+    "name": "סאנסט קיטשן",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "הרצליה",
+    "website": "https://sunsetkitchen.co.il",
+    "instagram": "https://www.instagram.com/sunsetkitchen__",
+    "facebook": "https://www.facebook.com/sunset.kitchen.herzliya"
+  }
+]

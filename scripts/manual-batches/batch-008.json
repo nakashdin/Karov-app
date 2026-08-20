@@ -1,0 +1,251 @@
+[
+  {
+    "id": "tzahigrill-d81bef48",
+    "name": "צחי גריל",
+    "type": "restaurant",
+    "cityId": "אור יהודה",
+    "address": "העבודה 8, אור יהודה",
+    "phone": "054-2553305",
+    "location": {
+      "latitude": 32.0322,
+      "longitude": 34.8568
+    },
+    "openingHours": "א'-ה' 10:30-22:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20",
+    "kosherLevel": "regular",
+    "kosherAuthorityGroup": "rabbinate"
+  },
+  {
+    "id": "alonishawarma-03efd482",
+    "name": "אלוני",
+    "type": "restaurant",
+    "cityId": "קריית אונו",
+    "address": "שלמה המלך 37, מרכז מסחרי קיראון, קריית אונו",
+    "phone": "03-6354385",
+    "location": {
+      "latitude": 32.0612,
+      "longitude": 34.8668
+    },
+    "openingHours": "א'-ה' 07:30-19:30 | ו' 09:00-13:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20",
+    "kosherLevel": "regular",
+    "kosherAuthorityGroup": "rabbinate"
+  },
+  {
+    "id": "etzaladri-c34fdcc2",
+    "name": "אצל אדרי",
+    "type": "restaurant",
+    "cityId": "יהוד מונסון",
+    "address": "וייצמן 44, יהוד מונסון",
+    "phone": "03-6984858",
+    "location": {
+      "latitude": 32.0315,
+      "longitude": 34.8798
+    },
+    "openingHours": "א'-ה' 09:00-20:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20",
+    "kosherLevel": "regular",
+    "kosherAuthorityGroup": "rabbinate"
+  },
+  {
+    "id": "hapinalevana-fe914443",
+    "name": "הפינה הלבנה",
+    "type": "restaurant",
+    "cityId": "יהוד מונסון",
+    "address": "הרצל 7, יהוד מונסון",
+    "phone": "03-5360937",
+    "location": {
+      "latitude": 32.033,
+      "longitude": 34.8786
+    },
+    "openingHours": "א'-ה' 08:30-21:00 | ו' 08:30-15:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20",
+    "kosherLevel": "regular",
+    "kosherAuthorityGroup": "rabbinate"
+  },
+  {
+    "id": "palpaliko-be899e99",
+    "name": "פלפליקו",
+    "type": "restaurant",
+    "cityId": "גני תקווה",
+    "address": "הרמה 23, גני תקווה",
+    "phone": "03-5352341",
+    "location": {
+      "latitude": 32.0565,
+      "longitude": 34.875
+    },
+    "openingHours": "א'-ה' 08:00-01:00 | ו' 08:00-כניסת שבת | ש' סגור",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "elijahyaffo-992610e0",
+    "name": "שווארמה אליהו יפו",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "בית אל 12, יפו, תל אביב",
+    "phone": "03-9591891",
+    "location": {
+      "latitude": 32.0503,
+      "longitude": 34.7536
+    },
+    "openingHours": "א'-ה' 11:00-19:00 | ו' 08:00-14:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20",
+    "kosherLevel": "regular",
+    "kosherAuthorityGroup": "rabbinate"
+  },
+  {
+    "id": "bshadraRS-f423e349",
+    "name": "שווארמה בשדרה",
+    "type": "restaurant",
+    "cityId": "רמת השרון",
+    "address": "סוקולוב 69, רמת השרון",
+    "phone": "03-5402129",
+    "location": {
+      "latitude": 32.146,
+      "longitude": 34.8339
+    },
+    "openingHours": "א'-ה' 10:30-22:30 | ו' 10:30-15:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20",
+    "kosherLevel": "regular",
+    "kosherAuthorityGroup": "rabbinate"
+  },
+  {
+    "id": "boyaPT-8bfbe84a",
+    "name": "שווארמה בויה",
+    "type": "restaurant",
+    "cityId": "פתח תקווה",
+    "address": "היצירה 5, פתח תקווה",
+    "phone": "052-245-3874",
+    "location": {
+      "latitude": 32.0887,
+      "longitude": 34.8797
+    },
+    "openingHours": "א'-ה' 10:00-17:30 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20",
+    "kosherLevel": "regular",
+    "kosherAuthorityGroup": "rabbinate"
+  },
+  {
+    "id": "nadavPT-ae666fcf",
+    "name": "נדב שווארמה ופלאפל",
+    "type": "restaurant",
+    "cityId": "פתח תקווה",
+    "address": "חיים עוזר 38, פתח תקווה",
+    "phone": "03-9318355",
+    "location": {
+      "latitude": 32.0863,
+      "longitude": 34.8841
+    },
+    "openingHours": "א'-ה' 09:30-21:00 | ו' 09:00-14:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20",
+    "kosherLevel": "regular",
+    "kosherAuthorityGroup": "rabbinate"
+  },
+  {
+    "id": "shimeonstar-fca60f0c",
+    "name": "שמעון סטאר",
+    "type": "restaurant",
+    "cityId": "נתניה",
+    "address": "הנוטע 1, נתניה",
+    "phone": "052-527-0877",
+    "location": {
+      "latitude": 32.3238,
+      "longitude": 34.8588
+    },
+    "openingHours": "א'-ה' 11:30-22:30 | ו' 11:00-15:10 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20",
+    "kosherLevel": "regular",
+    "kosherAuthorityGroup": "rabbinate"
+  },
+  {
+    "id": "nona-3a142353",
+    "name": "שווארמה נונה",
+    "type": "restaurant",
+    "cityId": "נתניה",
+    "address": "סמילנסקי 5, נתניה",
+    "phone": "077-961-6536",
+    "location": {
+      "latitude": 32.3253,
+      "longitude": 34.8504
+    },
+    "openingHours": "א'-ה' 10:00-03:00 | ו' 08:00-כניסת שבת | ש' מוצ\"ש עד 03:00",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20",
+    "kosherLevel": "regular",
+    "kosherAuthorityGroup": "rabbinate"
+  },
+  {
+    "id": "shefbherzl-cb042cd7",
+    "name": "השף בהרצל",
+    "type": "restaurant",
+    "cityId": "נתניה",
+    "address": "הרצל 44, נתניה",
+    "phone": "076-801-7672",
+    "location": {
+      "latitude": 32.3235,
+      "longitude": 34.8535
+    },
+    "openingHours": "א'-ה' 10:00-02:00 | ו' 10:00-כניסת שבת | ש' מוצ\"ש עד 02:00",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20",
+    "kosherLevel": "regular",
+    "kosherAuthorityGroup": "rabbinate"
+  }
+]

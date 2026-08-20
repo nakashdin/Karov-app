@@ -1,0 +1,202 @@
+[
+  {
+    "id": "manual-restaurant-parmesan",
+    "name": "פרמזן",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "בני ברק",
+    "website": "https://parmesan.co.il",
+    "instagram": "https://www.instagram.com/parmesan.rest",
+    "facebook": null
+  },
+  {
+    "id": "manual-cafe-menta-bagel",
+    "name": "מנטה בייגל",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "בני ברק",
+    "website": "https://mentabagel.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-restaurant-nagisa",
+    "name": "נגיסה",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "בני ברק",
+    "website": "https://nagisasushi.co.il",
+    "instagram": "https://www.instagram.com/nagisa.sushi",
+    "facebook": null
+  },
+  {
+    "id": "manual-restaurant-batzir",
+    "name": "בציר",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "בני ברק",
+    "website": "https://www.bazirest.co.il",
+    "instagram": "https://www.instagram.com/_bazir",
+    "facebook": null
+  },
+  {
+    "id": "manual-fast-food-hallo-yemen",
+    "name": "הלו תימן",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "בני ברק",
+    "website": null,
+    "instagram": null,
+    "facebook": "https://www.facebook.com/p/הלו-תימן-בני-ברק-100063964368711"
+  },
+  {
+    "id": "manual-restaurant-goldis",
+    "name": "גולדיס",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "בני ברק",
+    "website": "https://www.goldys.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-restaurant-regina",
+    "name": "רג'ינה",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "תל אביב",
+    "website": "https://reginarest.co.il",
+    "instagram": "https://www.instagram.com/reginarest.tlv",
+    "facebook": null
+  },
+  {
+    "id": "manual-restaurant-rashel",
+    "name": "רשל",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "תל אביב",
+    "website": "https://rasheltlv.co.il",
+    "instagram": "https://www.instagram.com/rashel_tlv",
+    "facebook": "https://www.facebook.com/rashelTLV"
+  },
+  {
+    "id": "manual-restaurant-ruben",
+    "name": "ראובן",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "תל אביב",
+    "website": "https://rubenisrael.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-restaurant-piano-piano",
+    "name": "פיאנו פיאנו",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "תל אביב",
+    "website": "https://www.pianopiano.co.il",
+    "instagram": "https://www.instagram.com/piano.piano.tlv",
+    "facebook": null
+  },
+  {
+    "id": "manual-restaurant-donis",
+    "name": "דוניס",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "פתח תקווה",
+    "website": "https://www.donis.co.il",
+    "instagram": "https://www.instagram.com/donisfish",
+    "facebook": "https://www.facebook.com/donidFish"
+  },
+  {
+    "id": "manual-cafe-bokeria",
+    "name": "בוקריה",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "פתח תקווה",
+    "website": "https://bokeria.co.il",
+    "instagram": "https://www.instagram.com/bokeria_y_center",
+    "facebook": "https://www.facebook.com/BokeriaYcenter"
+  },
+  {
+    "id": "manual-restaurant-alfredo",
+    "name": "אלפרדו",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "פתח תקווה",
+    "website": "https://alfredo.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-restaurant-mama-greg",
+    "name": "מאמא גרג",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "רמת גן",
+    "website": "https://mamagreg.com",
+    "instagram": "https://www.instagram.com/_mamagreg",
+    "facebook": "https://www.facebook.com/mamagreg.il"
+  },
+  {
+    "id": "manual-restaurant-ezra-uvanav",
+    "name": "עזרא ובניו",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "בני ברק",
+    "website": null,
+    "instagram": "https://www.instagram.com/ezra_bney_brak",
+    "facebook": null
+  },
+  {
+    "id": "manual-restaurant-japan-japan-givat-shmuel",
+    "name": "Japan Japan",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "גבעת שמואל",
+    "website": "https://www.japan-japan.co.il",
+    "instagram": null,
+    "facebook": "https://www.facebook.com/japanjapan.GivatShmuel"
+  },
+  {
+    "id": "manual-fast-food-bobe",
+    "name": "בובע",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "תל אביב",
+    "website": "https://eatbobe.co.il",
+    "instagram": null,
+    "facebook": "https://www.facebook.com/IL.BOBE"
+  },
+  {
+    "id": "manual-cafe-cafe-reim",
+    "name": "קפה רעים",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "בני ברק",
+    "website": "https://reim-bistro.co.il",
+    "instagram": "https://www.instagram.com/cafereim_",
+    "facebook": null
+  },
+  {
+    "id": "humuskaspy-82a8a2a0",
+    "name": "חומוס כספי בן יהודה",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "תל אביב",
+    "website": "https://www.kaspishuk.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "humuskaspy-da4f84b4",
+    "name": "חומוס כספי שוסטר",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "תל אביב",
+    "website": "https://www.kaspishuk.co.il",
+    "instagram": null,
+    "facebook": null
+  }
+]

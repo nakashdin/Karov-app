@@ -1,0 +1,202 @@
+[
+  {
+    "id": "bahadunes-f83c898e",
+    "name": "בהדונס פארק המדע",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "רחובות",
+    "website": "https://www.bahadunes.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-hachapuri-baliya-haifa",
+    "name": "חצ'פורי בעלייה",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "חיפה",
+    "website": "https://www.hachapuri.info",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-atika-kiryat-bialik",
+    "name": "עתיקה",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "קריית ביאליק",
+    "website": "https://atikarest.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-haagala-shawarma-kiryat-ata",
+    "name": "שווארמה העגלה",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "קריית אתא",
+    "website": "https://haeglakriatata.co.il",
+    "instagram": null,
+    "facebook": "https://www.facebook.com/ShawarmaCalf"
+  },
+  {
+    "id": "manual-kashcafe-kiryat-ata",
+    "name": "קשקפה",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "קריית אתא",
+    "website": "https://kashcafe.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-laguna-tiberias",
+    "name": "לגונה",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "טבריה",
+    "website": "https://laguna.rol.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-kuzina-tiberias",
+    "name": "קוזינה",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "טבריה",
+    "website": "https://kuzina.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-malka-safed",
+    "name": "מלכה",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "צפת",
+    "website": "https://malka-zefat.co.il",
+    "instagram": null,
+    "facebook": "https://www.facebook.com/malkatzfat"
+  },
+  {
+    "id": "manual-mendis-safed",
+    "name": "מנדיס",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "צפת",
+    "website": "https://mendis.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-hindik-safed",
+    "name": "הינדיק",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "צפת",
+    "website": "https://hindik-tzfat.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-hatzuk-rosh-hanikra",
+    "name": "מסעדת הצוק",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "נהריה",
+    "website": "https://hatzuk.co.il",
+    "instagram": "https://www.instagram.com/hatsuk_chef",
+    "facebook": "https://www.facebook.com/Hazukchefrestaurant"
+  },
+  {
+    "id": "manual-algo-dulce-akko",
+    "name": "אלגו דולסה",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "עכו",
+    "website": "https://algodulce.co.il",
+    "instagram": "https://www.instagram.com/algo.dulce.il",
+    "facebook": "https://www.facebook.com/algo.dulce.sweet"
+  },
+  {
+    "id": "manual-limoncello-ashdod",
+    "name": "לימונצ'לו",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "אשדוד",
+    "website": "https://www.limoncello-ashdod.co.il",
+    "instagram": "https://www.instagram.com/limoncello_ashdod/",
+    "facebook": null
+  },
+  {
+    "id": "manual-hapita-netivot",
+    "name": "הפיתה",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "נתיבות",
+    "website": null,
+    "instagram": "https://www.instagram.com/hapita21/",
+    "facebook": null
+  },
+  {
+    "id": "manual-mashehu-mitbashel-eilat",
+    "name": "משהו מתבשל פה",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "אילת",
+    "website": "https://www.eilat-restaurant.com",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-ramona-mitzpe-ramon",
+    "name": "רמונא",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "מצפה רמון",
+    "website": "https://www.beit-ramona.com",
+    "instagram": "https://www.instagram.com/beit.ramona/",
+    "facebook": "https://www.facebook.com/beit-ramona/"
+  },
+  {
+    "id": "bardichev-48c56936",
+    "name": "חומוס ברדיצ'ב כרמל סנטר",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "חיפה",
+    "website": "https://hummusbardichev.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "bardichev-2205b62c",
+    "name": "חומוס ברדיצ'ב נווה שאנן",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "חיפה",
+    "website": "https://hummusbardichev.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "bardichev-413696e3",
+    "name": "חומוס ברדיצ'ב קניון",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "חיפה",
+    "website": "https://hummusbardichev.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "bardichev-0822912f",
+    "name": "חומוס ברדיצ'ב שוק תלפיות",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "חיפה",
+    "website": "https://hummusbardichev.co.il",
+    "instagram": null,
+    "facebook": null
+  }
+]

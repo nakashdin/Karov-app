@@ -1,0 +1,222 @@
+[
+  {
+    "id": "manual-patita-netivot",
+    "name": "פטיטה",
+    "type": "restaurant",
+    "subType": "fast_food",
+    "category": "meat",
+    "address": "בעלי המלאכה 2, נתיבות",
+    "cityId": "נתיבות",
+    "location": {
+      "latitude": 31.4215,
+      "longitude": 34.587
+    },
+    "phone": "08-666-5098",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-burger-ahinoo-ofakim",
+    "name": "בורגר אחינו",
+    "type": "restaurant",
+    "subType": "fast_food",
+    "category": "meat",
+    "address": "מבצע קדש 3, אופקים",
+    "cityId": "אופקים",
+    "location": {
+      "latitude": 31.3175,
+      "longitude": 34.6215
+    },
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-ashkara-grill-eilat",
+    "name": "אשכרה גריל בר",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "המלאכה 18, אילת",
+    "cityId": "אילת",
+    "location": {
+      "latitude": 29.5472,
+      "longitude": 34.9423
+    },
+    "phone": "08-658-7444",
+    "certifiedBy": "בד\"ץ יורה דעה הרב מחפוד",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 11:00-23:00; ו' 08:00-15:00",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-rekabab-beer-sheva",
+    "name": "רקאבב",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "האלה 30, באר שבע",
+    "cityId": "באר שבע",
+    "location": {
+      "latitude": 31.2416,
+      "longitude": 34.8002
+    },
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-meat-bar-beit-shemesh",
+    "name": "מיט בר",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "נחל מאור 10, בית שמש",
+    "cityId": "בית שמש",
+    "location": {
+      "latitude": 31.753,
+      "longitude": 35.014
+    },
+    "phone": "02-5869970",
+    "certifiedBy": "כשרות הרב מחפוד",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-hashamen-beit-shemesh",
+    "name": "שאוורמה השמן",
+    "type": "restaurant",
+    "subType": "fast_food",
+    "category": "meat",
+    "address": "שד' יגאל אלון 24, בית שמש",
+    "cityId": "בית שמש",
+    "location": {
+      "latitude": 31.751,
+      "longitude": 34.9965
+    },
+    "phone": "02-9922382",
+    "certifiedBy": "כשרות הרב מחפוד",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-shipud-barama-beit-shemesh",
+    "name": "שיפוד ברמה",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "נחל קישון 48, בית שמש",
+    "cityId": "בית שמש",
+    "location": {
+      "latitude": 31.745,
+      "longitude": 34.9985
+    },
+    "phone": "02-6715515",
+    "certifiedBy": "כשרות הרב מחפוד",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-cafe-rimon-beit-shemesh",
+    "name": "קפה רימון",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "קניון ביג פאשן, שד' יגאל אלון 3, בית שמש",
+    "cityId": "בית שמש",
+    "location": {
+      "latitude": 31.737,
+      "longitude": 34.991
+    },
+    "phone": "02-995-5591",
+    "certifiedBy": "כשרות הרב מחפוד",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-shnitzellist-beit-shemesh",
+    "name": "שניצליסט",
+    "type": "restaurant",
+    "subType": "fast_food",
+    "category": "meat",
+    "address": "שד' האמוראים 22, בית שמש",
+    "cityId": "בית שמש",
+    "location": {
+      "latitude": 31.753,
+      "longitude": 35.013
+    },
+    "certifiedBy": "בד\"ץ העדה החרדית",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 11:00-23:00",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-alegria-beit-shemesh",
+    "name": "אלגריה",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "דרך יצחק רבין 2, בית שמש",
+    "cityId": "בית שמש",
+    "location": {
+      "latitude": 31.74,
+      "longitude": 34.9878
+    },
+    "phone": "077-7503730",
+    "certifiedBy": "רבנות בית שמש מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-angus-entrecote-beit-shemesh",
+    "name": "אנגוס אנטריקוט בר",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "קניון שער העיר, בית שמש",
+    "cityId": "בית שמש",
+    "location": {
+      "latitude": 31.7391,
+      "longitude": 34.9876
+    },
+    "phone": "077-5535057",
+    "certifiedBy": "רבנות בית שמש מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-tasty-bagets-beit-shemesh",
+    "name": "טייסטי בגטים בשריים",
+    "type": "restaurant",
+    "subType": "fast_food",
+    "category": "meat",
+    "address": "ירמיהו הנביא 34, בית שמש",
+    "cityId": "בית שמש",
+    "location": {
+      "latitude": 31.726,
+      "longitude": 35.008
+    },
+    "phone": "02-9955650",
+    "certifiedBy": "בד\"ץ העדה החרדית",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  }
+]

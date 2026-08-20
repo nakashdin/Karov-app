@@ -1,0 +1,202 @@
+[
+  {
+    "id": "manual-sai-sushi-ramat-gan",
+    "name": "סאי סושי בר",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "רמת גן",
+    "website": "https://saisushibar.com",
+    "instagram": "https://www.instagram.com/sai_sushi_bar",
+    "facebook": "https://www.facebook.com/saisushiramatgan"
+  },
+  {
+    "id": "manual-transit-beer-yaakov",
+    "name": "טרנזיט",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "באר יעקב",
+    "website": "https://www.transit-rest.co.il",
+    "instagram": "https://www.instagram.com/transit_rest",
+    "facebook": "https://www.facebook.com/transitrest"
+  },
+  {
+    "id": "manual-red-sun-bilu-center",
+    "name": "רד סאן בילו סנטר",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "קרית עקרון",
+    "website": "https://redsun.co.il",
+    "instagram": "https://www.instagram.com/red.sun.sushi",
+    "facebook": null
+  },
+  {
+    "id": "manual-red-sun-mazkeret-batya",
+    "name": "רד סאן",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "מזכרת בתיה",
+    "website": "https://redsun.co.il",
+    "instagram": "https://www.instagram.com/red.sun.sushi",
+    "facebook": null
+  },
+  {
+    "id": "shawarmacarmel-f5b17ca8",
+    "name": "שווארמה הכרמל",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "תל אביב",
+    "website": "https://www.instagram.com/shawarma_carmel",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "pundakherzel-5f0c52e3",
+    "name": "פונדק הרצל",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "תל אביב",
+    "website": "https://pundak-herzel.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "pinatshawarma-42ee2a4c",
+    "name": "פינת השווארמה",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "תל אביב",
+    "website": "https://pinathshawarma.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "etzelmali-b5c45cd0",
+    "name": "אצל מלי",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "גבעתיים",
+    "website": "https://www.instagram.com/etselmali",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "hasultan-c0c27ca1",
+    "name": "הסולטן שווארמה",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "רמת גן",
+    "website": "https://hasultan.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-pastito-jrm-jaffa",
+    "name": "פסטיטו ירושלים תחנה",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "ירושלים",
+    "website": "https://pastito.co.il",
+    "instagram": "https://www.instagram.com/pastito.il",
+    "facebook": null
+  },
+  {
+    "id": "manual-pastito-jrm-talpiot",
+    "name": "פסטיטו תלפיות",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "ירושלים",
+    "website": "https://pastito.co.il",
+    "instagram": "https://www.instagram.com/pastito.il",
+    "facebook": null
+  },
+  {
+    "id": "manual-pastito-tlv-begin",
+    "name": "פסטיטו מידטאון",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "תל אביב",
+    "website": "https://pastito.co.il",
+    "instagram": "https://www.instagram.com/pastito.il",
+    "facebook": null
+  },
+  {
+    "id": "manual-pastito-tlv-dizengoff",
+    "name": "פסטיטו דיזנגוף",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "תל אביב",
+    "website": "https://pastito.co.il",
+    "instagram": "https://www.instagram.com/pastito.il",
+    "facebook": null
+  },
+  {
+    "id": "manual-pastito-tlv-menora",
+    "name": "פסטיטו מנורה הול",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "תל אביב",
+    "website": "https://pastito.co.il",
+    "instagram": "https://www.instagram.com/pastito.il",
+    "facebook": null
+  },
+  {
+    "id": "manual-pastito-tlv-savidor",
+    "name": "פסטיטו תחנת סבידור",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "תל אביב",
+    "website": "https://pastito.co.il",
+    "instagram": "https://www.instagram.com/pastito.il",
+    "facebook": null
+  },
+  {
+    "id": "manual-pastito-rishon-gold",
+    "name": "פסטיטו גולד מול",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "ראשון לציון",
+    "website": "https://pastito.co.il",
+    "instagram": "https://www.instagram.com/pastito.il",
+    "facebook": null
+  },
+  {
+    "id": "manual-burger-station-netanya2",
+    "name": "בורגר סטיישן נתניה פולג",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "נתניה",
+    "website": "https://burgerstation.co.il",
+    "instagram": "https://www.instagram.com/burgerstation_il",
+    "facebook": null
+  },
+  {
+    "id": "manual-hashamen-mahane-yehuda",
+    "name": "השמן שוק מחנה יהודה",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "ירושלים",
+    "website": "https://hashamen.co.il",
+    "instagram": "https://www.instagram.com/hashamen_official",
+    "facebook": null
+  },
+  {
+    "id": "manual-hashamen-jrm-katamon",
+    "name": "השמן קטמון",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "ירושלים",
+    "website": "https://hashamen.co.il",
+    "instagram": "https://www.instagram.com/hashamen_official",
+    "facebook": null
+  },
+  {
+    "id": "manual-hashamen-jrm-beit-hakerem",
+    "name": "השמן בית הכרם",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "ירושלים",
+    "website": "https://hashamen.co.il",
+    "instagram": "https://www.instagram.com/hashamen_official",
+    "facebook": null
+  }
+]

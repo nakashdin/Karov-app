@@ -1,0 +1,483 @@
+[
+  {
+    "name": "בורגרס בר",
+    "branchCount": 10,
+    "ids": [
+      "burgersbar-ca68fc3c",
+      "burgersbar-8a8db08b",
+      "burgersbar-417e6b61",
+      "burgersbar-a7096850",
+      "burgersbar-f0f2c420",
+      "burgersbar-e785eafc",
+      "burgersbar-e1596d55",
+      "burgersbar-28d8ca5f",
+      "burgersbar-74ae9f7d",
+      "burgersbar-eb6780e1"
+    ],
+    "type": "restaurant",
+    "category": "meat",
+    "website": "https://burgersbar.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "name": "פסטה בסטה",
+    "branchCount": 11,
+    "ids": [
+      "pastabasta-1e5e8321",
+      "pastabasta-64f0afa5",
+      "pastabasta-42b1185a",
+      "pastabasta-cc4f3c90",
+      "pastabasta-0cc3e35c",
+      "pastabasta-706e9bc8",
+      "pastabasta-9d344276",
+      "pastabasta-05bf925b",
+      "pastabasta-6e481285",
+      "pastabasta-70343528",
+      "pastabasta-23fface6"
+    ],
+    "type": "restaurant",
+    "category": "dairy",
+    "website": "https://pastabasta.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "name": "לחם בשר",
+    "branchCount": 4,
+    "ids": [
+      "lechembasar-bcd9030b",
+      "lechembasar-38f7d23e",
+      "lechembasar-79d932e6",
+      "lechembasar-2455d1ef"
+    ],
+    "type": "restaurant",
+    "category": "meat",
+    "website": "https://www.lechembasarpt.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "name": "מוזס שופ",
+    "branchCount": 15,
+    "ids": [
+      "mosesshop-a59268a5",
+      "mosesshop-f2b30542",
+      "mosesshop-ce6c18ed",
+      "mosesshop-ec2c6c86",
+      "mosesshop-c4b9fcb4",
+      "mosesshop-8b6f127f",
+      "mosesshop-2d73ba8d",
+      "mosesshop-f01bc4ac",
+      "mosesshop-414adc62",
+      "mosesshop-f5c2dd8a",
+      "mosesshop-35f79753",
+      "mosesshop-89734acd",
+      "mosesshop-16c5f92d",
+      "mosesshop-42867636",
+      "mosesshop-f3a0a414"
+    ],
+    "type": "restaurant",
+    "category": "meat",
+    "website": "https://moses-shop.com",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "name": "קפה קפה",
+    "branchCount": 2,
+    "ids": [
+      "cafecafe-4c5adc4c",
+      "cafecafe-888f4111"
+    ],
+    "type": "cafe",
+    "category": "dairy",
+    "website": "https://cafecafe.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "name": "חומוס נרי",
+    "branchCount": 4,
+    "ids": [
+      "hummusneri-55f310c0",
+      "hummusneri-9f095951",
+      "hummusneri-5756c65b",
+      "hummusneri-8e3b3a55"
+    ],
+    "type": "restaurant",
+    "category": "parve",
+    "website": "https://www.instagram.com/hummus_neri/",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "name": "בליקר בייקרי",
+    "branchCount": 6,
+    "ids": [
+      "manual-bleecker-pt",
+      "manual-cafe-bleecker-bakery",
+      "manual-bleecker-ramat-gan",
+      "manual-bleecker-hadera",
+      "manual-bleecker-beer-yaakov",
+      "manual-bleecker-modiin"
+    ],
+    "type": "cafe",
+    "category": "dairy",
+    "website": "https://bleeckerbakery.co.il",
+    "instagram": "https://www.instagram.com/bleecker_bakery",
+    "facebook": "https://www.facebook.com/BleeckerBakery"
+  },
+  {
+    "name": "מנפיס",
+    "branchCount": 2,
+    "ids": [
+      "manual-fast-food-manfis",
+      "manual-memphis-lod"
+    ],
+    "type": "restaurant",
+    "category": "meat",
+    "website": "https://www.menfis.co.il",
+    "instagram": null,
+    "facebook": "https://www.facebook.com/menfis84"
+  },
+  {
+    "name": "בהדונס",
+    "branchCount": 8,
+    "ids": [
+      "bahadunes-b57a4798",
+      "bahadunes-1bd46103",
+      "bahadunes-75879a00",
+      "bahadunes-2148b9e6",
+      "bahadunes-96060d4c",
+      "bahadunes-03bb7024",
+      "bahadunes-6d68ea3f",
+      "bahadunes-e486292f"
+    ],
+    "type": "restaurant",
+    "category": "parve",
+    "website": "https://www.bahadunes.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "name": "רוזה",
+    "branchCount": 2,
+    "ids": [
+      "manual-roza-ashdod",
+      "manual-roza-modiin"
+    ],
+    "type": "restaurant",
+    "category": "meat",
+    "website": "https://rozaashdod.co.il",
+    "instagram": "https://www.instagram.com/roza_ashdod/",
+    "facebook": "https://www.facebook.com/RozaAshdod/"
+  },
+  {
+    "name": "בראנצ'וס",
+    "branchCount": 2,
+    "ids": [
+      "manual-brunchos-kiryat-malakhi",
+      "manual-brunchos-kiryat-ekron"
+    ],
+    "type": "cafe",
+    "category": "dairy",
+    "website": "https://brunchos.rest.co.il",
+    "instagram": "https://www.instagram.com/brunchos_restaurant/",
+    "facebook": "https://www.facebook.com/Brunchosil/"
+  },
+  {
+    "name": "שיפודי ציפורה",
+    "branchCount": 5,
+    "ids": [
+      "manual-shipudei-tzippora-eilat",
+      "tziposhipud-7c559c50",
+      "tziposhipud-b17d7dcc",
+      "tziposhipud-e7e44912",
+      "tziposhipud-afa22b47"
+    ],
+    "type": "restaurant",
+    "category": "meat",
+    "website": "https://www.tziporaeilat.co.il",
+    "instagram": "https://www.instagram.com/shipody_tzipora_eilat/",
+    "facebook": "https://www.facebook.com/ziporaeilat/"
+  },
+  {
+    "name": "בארכה",
+    "branchCount": 2,
+    "ids": [
+      "manual-barake-gedera",
+      "barake-66c5ecff"
+    ],
+    "type": "restaurant",
+    "category": "meat",
+    "website": "https://barakerestaurant.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "name": "מוצ'ה",
+    "branchCount": 2,
+    "ids": [
+      "manual-mucha-bnei-brak",
+      "manual-mucha-pt"
+    ],
+    "type": "cafe",
+    "category": "dairy",
+    "website": "https://mucha.co.il",
+    "instagram": "https://www.instagram.com/muchapizza.il",
+    "facebook": "https://www.facebook.com/MuchaPizzail"
+  },
+  {
+    "name": "ביסקוטי",
+    "branchCount": 2,
+    "ids": [
+      "manual-biscotti-bb",
+      "manual-biscotti-pt"
+    ],
+    "type": "cafe",
+    "category": "dairy",
+    "website": "https://www.biscotti.co.il",
+    "instagram": "https://www.instagram.com/biscotti_il",
+    "facebook": "https://www.facebook.com/BiscottiTastes"
+  },
+  {
+    "name": "קפה ג'ו",
+    "branchCount": 5,
+    "ids": [
+      "manual-cafe-joe-yehud",
+      "manual-cafe-joe-holon",
+      "manual-cafe-joe-rishon",
+      "manual-cafe-joe-ramla",
+      "manual-cafe-joe-tzometsram"
+    ],
+    "type": "cafe",
+    "category": "dairy",
+    "website": "https://www.joe.co.il",
+    "instagram": "https://www.instagram.com/cafejoe",
+    "facebook": "https://www.facebook.com/cafejoe"
+  },
+  {
+    "name": "שיפודי חן",
+    "branchCount": 2,
+    "ids": [
+      "shipudichen-7d2b6a7e",
+      "shipudichen-82c4972b"
+    ],
+    "type": "restaurant",
+    "category": "meat",
+    "website": "https://shipudei-chen.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "name": "צחי בשרים",
+    "branchCount": 3,
+    "ids": [
+      "manual-tzachi-tlv",
+      "tzahibsarim-67b0db9a",
+      "tzahibsarim-f3e57fae"
+    ],
+    "type": "restaurant",
+    "category": "meat",
+    "website": "https://www.tzahib.co.il",
+    "instagram": "https://www.instagram.com/tzachi_besarim",
+    "facebook": null
+  },
+  {
+    "name": "דבוש שווארמה",
+    "branchCount": 8,
+    "ids": [
+      "dabush-cb70dd22",
+      "dabush-17b852d3",
+      "manual-dabush-rishon",
+      "manual-dabush-nahariya",
+      "dabush-9a61b90a",
+      "dabush-7091d952",
+      "dabush-e696730e",
+      "dabush-b75376ce"
+    ],
+    "type": "restaurant",
+    "category": "meat",
+    "website": "https://www.dabush.co.il",
+    "instagram": "https://www.instagram.com/dabush_shawarma",
+    "facebook": "https://www.facebook.com/DabushShawarma"
+  },
+  {
+    "name": "שווארמה שמעוני",
+    "branchCount": 8,
+    "ids": [
+      "shimoni-d006b8d9",
+      "shimoni-e40ba3f5",
+      "shimoni-5f4180db",
+      "shimoni-0677ea42",
+      "shimoni-7c3b38ad",
+      "shimoni-1098dbce",
+      "shimoni-13fd5e51",
+      "shimoni-17861b11"
+    ],
+    "type": "restaurant",
+    "category": "meat",
+    "website": "https://www.instagram.com/shawarma.shimoni",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "name": "אושי אושי",
+    "branchCount": 2,
+    "ids": [
+      "manual-oshi-oshi-namal-tlv",
+      "manual-oshi-oshi-ramat-gan"
+    ],
+    "type": "restaurant",
+    "category": "parve",
+    "website": "https://oshioshi.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "name": "פלאפל בריבוע",
+    "branchCount": 13,
+    "ids": [
+      "manual-falafel-baribua-ashdod",
+      "manual-falafel-baribua-beit-oved",
+      "manual-falafel-baribua-givat-shmuel",
+      "manual-falafel-baribua-holon",
+      "manual-falafel-baribua-yavne",
+      "manual-falafel-baribua-ramat-gan",
+      "manual-falafel-baribua-netanya",
+      "manual-falafel-baribua-shoham",
+      "manual-falafel-baribua-rosh-haayin",
+      "manual-falafel-baribua-rishon-rothschild",
+      "manual-falafel-baribua-rehovot",
+      "manual-falafel-baribua-ramat-hasharon",
+      "manual-falafel-baribua-tzoran"
+    ],
+    "type": "restaurant",
+    "category": "parve",
+    "website": "https://falafelbaribua.co.il",
+    "instagram": "https://www.instagram.com/falafel_baribua",
+    "facebook": "https://www.facebook.com/falafelbaribua"
+  },
+  {
+    "name": "פלאפל 4 טעמים",
+    "branchCount": 9,
+    "ids": [
+      "manual-4teamim-pt",
+      "manual-4teamim-yavne",
+      "manual-4teamim-nes-tziona",
+      "manual-4teamim-jrm-avizur",
+      "manual-4teamim-rishon",
+      "manual-4teamim-tlv-yehuda-halevi",
+      "manual-4teamim-rehovot",
+      "manual-4teamim-raanana",
+      "manual-4teamim-givatayim"
+    ],
+    "type": "restaurant",
+    "category": "parve",
+    "website": "https://falafel4flavors.co.il",
+    "instagram": "https://www.instagram.com/falafel4flavors",
+    "facebook": "https://www.facebook.com/Falafel4Flavors"
+  },
+  {
+    "name": "פלאפל חתוכה",
+    "branchCount": 7,
+    "ids": [
+      "manual-falafel-hatuka-bat-yam",
+      "manual-falafel-hatuka-pt-hahistadrut",
+      "manual-falafel-hatuka-rosh-haayin",
+      "manual-falafel-hatuka-raanana",
+      "manual-falafel-hatuka-rishon",
+      "manual-falafel-hatuka-tlv",
+      "falafel-chatuka-d7c1f16c"
+    ],
+    "type": "restaurant",
+    "category": "parve",
+    "website": null,
+    "instagram": "https://www.instagram.com/falafelhatuka",
+    "facebook": "https://www.facebook.com/theoriginalfalafelhatuka"
+  },
+  {
+    "name": "קפאו",
+    "branchCount": 2,
+    "ids": [
+      "manual-kapao-pt",
+      "manual-kapao-beit-shemesh"
+    ],
+    "type": "restaurant",
+    "category": "parve",
+    "website": "https://www.kapao.co.il",
+    "instagram": "https://www.instagram.com/kapao_thai_food",
+    "facebook": "https://www.facebook.com/kapaothaifood"
+  },
+  {
+    "name": "שלום פלאפל",
+    "branchCount": 4,
+    "ids": [
+      "manual-shalom-falafel-bezalel",
+      "manual-shalom-falafel-ornim",
+      "manual-shalom-falafel-modiin",
+      "manual-shalom-falafel-ashdod"
+    ],
+    "type": "restaurant",
+    "category": "parve",
+    "website": "https://shalomfalafel.co.il",
+    "instagram": "https://www.instagram.com/shalom_falafel_il",
+    "facebook": "https://www.facebook.com/oferv1123"
+  },
+  {
+    "name": "פלאפל ג'ינה",
+    "branchCount": 5,
+    "ids": [
+      "manual-falafel-gina-tlv-shokan",
+      "manual-falafel-gina-holon",
+      "manual-falafel-gina-ramat-gan",
+      "manual-falafel-gina-rishon",
+      "falafel-gina-e91889fe"
+    ],
+    "type": "restaurant",
+    "category": "parve",
+    "website": "https://falafelgina.co.il",
+    "instagram": "https://www.instagram.com/falafel_ginaa",
+    "facebook": "https://www.facebook.com/falafeljina"
+  },
+  {
+    "name": "האק",
+    "branchCount": 3,
+    "ids": [
+      "manual-hak-tlv",
+      "manual-hak-kiryat-ono",
+      "manual-hak-pt-hadar-ganim"
+    ],
+    "type": "restaurant",
+    "category": "parve",
+    "website": null,
+    "instagram": "https://www.instagram.com/hak.empire",
+    "facebook": "https://www.facebook.com/p/האק-אימפריה-61573973847664"
+  },
+  {
+    "name": "שניצל 20 טעמים",
+    "branchCount": 14,
+    "ids": [
+      "manual-shnitzel20-maaleh-adumim",
+      "manual-shnitzel20-pt",
+      "manual-shnitzel20-kiryat-bialik",
+      "manual-shnitzel20-raanana",
+      "manual-shnitzel20-herzliya",
+      "manual-shnitzel20-holon",
+      "manual-shnitzel20-harish",
+      "manual-shnitzel20-yokneam",
+      "manual-shnitzel20-haifa",
+      "manual-shnitzel20-afula",
+      "manual-shnitzel20-karmiel",
+      "manual-shnitzel20-or-akiva",
+      "manual-shnitzel20-zichron",
+      "manual-shnitzel20-pardes-hana"
+    ],
+    "type": "restaurant",
+    "category": "meat",
+    "website": "https://www.shnitzel20teamim.co.il",
+    "instagram": "https://www.instagram.com/shnitzel20_teamim",
+    "facebook": null
+  }
+]

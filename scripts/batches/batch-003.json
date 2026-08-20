@@ -1,0 +1,202 @@
+[
+  {
+    "id": "humus-eli-חומוס-אליהו-באר-שבע-מצדה",
+    "name": "חומוס אליהו באר שבע מצדה",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "באר שבע",
+    "website": "https://www.humus-eli-yahoo.com/",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "humus-eli-חומוס-אליהו-הרצליה-שער-העיר",
+    "name": "חומוס אליהו הרצליה שער העיר",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "הרצליה",
+    "website": "https://www.humus-eli-yahoo.com/",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "humus-eli-חומוס-אליהו-טבריה-עלית-פוריה",
+    "name": "חומוס אליהו טבריה עלית פוריה",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "טבריה",
+    "website": "https://www.humus-eli-yahoo.com/",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "humus-eli-חומוס-אליהו-ירושלים-מלחה",
+    "name": "חומוס אליהו ירושלים מלחה",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "ירושלים",
+    "website": "https://www.humus-eli-yahoo.com/",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "humus-eli-חומוס-אליהו-רחובות-קניון-עופר",
+    "name": "חומוס אליהו רחובות קניון",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "רחובות",
+    "website": "https://www.humus-eli-yahoo.com/",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "humus-eli-חומוס-אליהו-רמת-גן-בורסה",
+    "name": "חומוס אליהו רמת גן בורסה",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "רמת גן",
+    "website": "https://www.humus-eli-yahoo.com/",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "humus-eli-חומוס-אליהו-תל-אביב-דיזינגוף-סנטר",
+    "name": "חומוס אליהו תל אביב דיזינגוף סנטר",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "תל אביב-יפו",
+    "website": "https://www.humus-eli-yahoo.com/",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "humus-eli-חומוס-אליהו-תל-אביב-שרונה",
+    "name": "חומוס אליהו תל אביב",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "תל אביב-יפו",
+    "website": "https://www.humus-eli-yahoo.com/",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "coffeetrail-shisho-caffe",
+    "name": "שישו קפה",
+    "type": "coffee_cart",
+    "category": "dairy",
+    "cityId": "מושב הזורעים",
+    "website": null,
+    "instagram": "https://www.instagram.com/meshekavnaim/",
+    "facebook": "https://www.facebook.com/share/19kqjTQiJG/?mibextid=LQQJ4d"
+  },
+  {
+    "id": "coffeetrail-al-havadi",
+    "name": "על הואדי - קפה במשתלה",
+    "type": "coffee_cart",
+    "category": "dairy",
+    "cityId": "הושעיה",
+    "website": null,
+    "instagram": "https://www.instagram.com/al_havadi/",
+    "facebook": null
+  },
+  {
+    "id": "coffeetrail-nina",
+    "name": "נינה - Nina",
+    "type": "coffee_cart",
+    "category": "dairy",
+    "cityId": "מושב חגור",
+    "website": null,
+    "instagram": "https://www.instagram.com/nina_cafe_hagor/",
+    "facebook": "https://www.facebook.com/ninacafehagor"
+  },
+  {
+    "id": "coffeetrail-caffe-lago",
+    "name": "קפה לאגו פתח תקווה - LAGO",
+    "type": "coffee_cart",
+    "category": "dairy",
+    "cityId": "פתח תקווה",
+    "website": null,
+    "instagram": "https://www.instagram.com/caffe.lago/",
+    "facebook": "https://www.facebook.com/share/1FEPdrD4UR/?mibextid=qi2Omg"
+  },
+  {
+    "id": "coffeetrail-gana-park-rg",
+    "name": "גנה - פארק לאומי ר\"ג",
+    "type": "coffee_cart",
+    "category": "dairy",
+    "cityId": "רמת גן",
+    "website": null,
+    "instagram": "https://www.instagram.com/cafegana/",
+    "facebook": "https://www.facebook.com/cafegana?mibextid=ZbWKwL"
+  },
+  {
+    "id": "coffeetrail-ingale",
+    "name": "אינגלה",
+    "type": "coffee_cart",
+    "category": "dairy",
+    "cityId": "נחלים",
+    "website": null,
+    "instagram": "https://www.instagram.com/agalabamoshav_ingale/",
+    "facebook": null
+  },
+  {
+    "id": "coffeetrail-havaia",
+    "name": "חוויא",
+    "type": "coffee_cart",
+    "category": "dairy",
+    "cityId": "חוות מעוז שאול",
+    "website": null,
+    "instagram": "https://www.instagram.com/havaia.cafe/",
+    "facebook": "https://www.facebook.com/share/1HRxTNDeU6/?mibextid=wwXIfr"
+  },
+  {
+    "id": "coffeetrail-agalol",
+    "name": "עגלול - משק לוי",
+    "type": "coffee_cart",
+    "category": "dairy",
+    "cityId": "בית גמליאל",
+    "website": null,
+    "instagram": "https://www.instagram.com/meshek.levi/",
+    "facebook": "https://www.facebook.com/Levisfarm/"
+  },
+  {
+    "id": "coffeetrail-katerina",
+    "name": "קטרינה",
+    "type": "coffee_cart",
+    "category": "dairy",
+    "cityId": "כפר דניאל",
+    "website": null,
+    "instagram": "https://www.instagram.com/katerina_coffee_trail/",
+    "facebook": "https://www.facebook.com/KaterinaFoodTruck"
+  },
+  {
+    "id": "coffeetrail-lucche-coffee",
+    "name": "קפה לוצ'ה",
+    "type": "coffee_cart",
+    "category": "dairy",
+    "cityId": "גדרה",
+    "website": null,
+    "instagram": "https://www.instagram.com/lucche.coffee/",
+    "facebook": "https://www.facebook.com/share/1H8r9oaB4j/?mibextid=wwXIfr"
+  },
+  {
+    "id": "coffeetrail-mchtipatly212",
+    "name": "מחתפתלי 212",
+    "type": "coffee_cart",
+    "category": "dairy",
+    "cityId": "מושב אורה",
+    "website": null,
+    "instagram": "https://www.instagram.com/machtipatly.coffee/",
+    "facebook": "https://www.facebook.com/share/1A8rLxn7jp/?mibextid=wwXIfr"
+  },
+  {
+    "id": "coffeetrail-mesheksegal",
+    "name": "משק סגל",
+    "type": "coffee_cart",
+    "category": "dairy",
+    "cityId": "טל שחר",
+    "website": null,
+    "instagram": "https://www.instagram.com/mesheksegal/",
+    "facebook": "https://www.facebook.com/profile.php?id=61589707045643"
+  }
+]

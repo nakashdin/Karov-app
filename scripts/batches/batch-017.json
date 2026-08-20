@@ -1,0 +1,202 @@
+[
+  {
+    "id": "manual-4teamim-tlv-ibn-gavirol",
+    "name": "פלאפל 4 טעמים אבן גבירול",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "תל אביב",
+    "website": "https://falafel4flavors.co.il",
+    "instagram": null,
+    "facebook": "https://www.facebook.com/FALAFEL4"
+  },
+  {
+    "id": "manual-4teamim-tlv-karlbach",
+    "name": "פלאפל 4 טעמים קרליבך",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "תל אביב",
+    "website": "https://falafel4flavors.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-falafel-hatuka-pt-lev-hair",
+    "name": "פלאפל חתוכה פתח תקווה לב העיר",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "פתח תקווה",
+    "website": null,
+    "instagram": "https://www.instagram.com/falafelhatuka",
+    "facebook": "https://www.facebook.com/theoriginalfalafelhatuka"
+  },
+  {
+    "id": "manual-biton-falafel-beer-yaakov",
+    "name": "הפלאפל של ביטון",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "באר יעקב",
+    "website": null,
+    "instagram": "https://www.instagram.com/hafalafel.shel.biton",
+    "facebook": "https://www.facebook.com/falafelbiton"
+  },
+  {
+    "id": "manual-falafel-kaduri-hod-1",
+    "name": "פלאפל כדורי",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "הוד השרון",
+    "website": null,
+    "instagram": "https://www.instagram.com/falafel.kaduri",
+    "facebook": "https://www.facebook.com/falafel.hasharon"
+  },
+  {
+    "id": "manual-falafel-kaduri-hod-2",
+    "name": "פלאפל כדורי דוד",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "הוד השרון",
+    "website": "https://www.falafelkaduri.com",
+    "instagram": "https://www.instagram.com/falafelkaduri",
+    "facebook": "https://www.facebook.com/falafalkaduri"
+  },
+  {
+    "id": "manual-atza-jrm-pisgat-zeev",
+    "name": "אצה סושי בר פסגת זאב",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "ירושלים",
+    "website": "https://atza.co.il",
+    "instagram": "https://www.instagram.com/atza_sushi_bar",
+    "facebook": "https://www.facebook.com/atzaisrael"
+  },
+  {
+    "id": "manual-shalom-falafel-pisgat-zeev",
+    "name": "שלום פלאפל פסגת זאב",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "ירושלים",
+    "website": "https://shalomfalafel.co.il",
+    "instagram": "https://www.instagram.com/shalom_falafel_il",
+    "facebook": null
+  },
+  {
+    "id": "manual-shalom-falafel-kiryat-menahem",
+    "name": "שלום פלאפל קריית מנחם",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "ירושלים",
+    "website": "https://shalomfalafel.co.il",
+    "instagram": "https://www.instagram.com/shalom_falafel_il",
+    "facebook": null
+  },
+  {
+    "id": "manual-shalom-falafel-beit-hakerem",
+    "name": "שלום פלאפל בית הכרם",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "ירושלים",
+    "website": "https://shalomfalafel.co.il",
+    "instagram": "https://www.instagram.com/shalom_falafel_il",
+    "facebook": null
+  },
+  {
+    "id": "manual-shalom-falafel-gilah",
+    "name": "שלום פלאפל גילה",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "ירושלים",
+    "website": "https://shalomfalafel.co.il",
+    "instagram": "https://www.instagram.com/shalom_falafel_il",
+    "facebook": null
+  },
+  {
+    "id": "manual-shalom-falafel-derech-hevron",
+    "name": "שלום פלאפל דרך",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "ירושלים",
+    "website": "https://shalomfalafel.co.il",
+    "instagram": "https://www.instagram.com/shalom_falafel_il",
+    "facebook": null
+  },
+  {
+    "id": "manual-shalom-falafel-talpiot",
+    "name": "שלום פלאפל תלפיות",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "ירושלים",
+    "website": "https://shalomfalafel.co.il",
+    "instagram": "https://www.instagram.com/shalom_falafel_il",
+    "facebook": null
+  },
+  {
+    "id": "manual-shalom-falafel-arnona",
+    "name": "שלום פלאפל ארנונה",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "ירושלים",
+    "website": "https://shalomfalafel.co.il",
+    "instagram": "https://www.instagram.com/shalom_falafel_il",
+    "facebook": null
+  },
+  {
+    "id": "manual-shalom-falafel-har-homa",
+    "name": "שלום פלאפל הר חומה",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "ירושלים",
+    "website": "https://shalomfalafel.co.il",
+    "instagram": "https://www.instagram.com/shalom_falafel_il",
+    "facebook": null
+  },
+  {
+    "id": "manual-falafel-gina-tlv-begin",
+    "name": "פלאפל ג'ינה מנחם בגין",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "תל אביב",
+    "website": "https://falafelgina.co.il",
+    "instagram": "https://www.instagram.com/falafel_ginaa",
+    "facebook": "https://www.facebook.com/falafeljina"
+  },
+  {
+    "id": "manual-falafel-gina-jaffa",
+    "name": "פלאפל ג'ינה יפו",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "תל אביב",
+    "website": "https://falafelgina.co.il",
+    "instagram": "https://www.instagram.com/falafel_ginaa",
+    "facebook": "https://www.facebook.com/falafeljina"
+  },
+  {
+    "id": "manual-falafel-shoshana-ramat-eliyahu",
+    "name": "פלאפל שושנה",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "ראשון לציון",
+    "website": "https://www.falafelshoshana.co.il",
+    "instagram": "https://www.instagram.com/falafel_shoshana",
+    "facebook": "https://www.facebook.com/falafel.shoshana"
+  },
+  {
+    "id": "manual-falafel-shoshana-rothschild",
+    "name": "פלאפל שושנה רוטשילד",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "ראשון לציון",
+    "website": "https://www.falafelshoshana.co.il",
+    "instagram": "https://www.instagram.com/falafel_shoshana",
+    "facebook": "https://www.facebook.com/falafel.shoshana"
+  },
+  {
+    "id": "manual-falafel-shoshana-hadracha",
+    "name": "פלאפל שושנה ההדרכה",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "ראשון לציון",
+    "website": "https://www.falafelshoshana.co.il",
+    "instagram": "https://www.instagram.com/falafel_shoshana",
+    "facebook": "https://www.facebook.com/falafel.shoshana"
+  }
+]

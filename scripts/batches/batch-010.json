@@ -1,0 +1,202 @@
+[
+  {
+    "id": "pastabasta-0eb9ec3b",
+    "name": "פסטה בסטה ירושלים מרכז העיר",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "ירושלים",
+    "website": "https://pastabasta.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "pastabasta-c626dda7",
+    "name": "פסטה בסטה הדסה עין כרם",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "ירושלים",
+    "website": "https://pastabasta.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "pastabasta-6d36273f",
+    "name": "פסטה בסטה באר שבע מרכז",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "באר שבע",
+    "website": "https://pastabasta.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "agadir-7f4986df",
+    "name": "אגאדיר",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "בני ברק",
+    "website": "https://agadirkosher.com",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "lechembasar-6d4cc2b0",
+    "name": "לחם בשר נמל",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "תל אביב",
+    "website": "https://lechembasartlv.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "cafecafe-62b8584d",
+    "name": "קפה קפה תל אביב עזריאלי",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "תל אביב",
+    "website": "https://cafecafe.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "cafecafe-5c2f2139",
+    "name": "קפה קפה בת ים טיילת",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "בת ים",
+    "website": "https://cafecafe.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "cafecafe-4ffa66b3",
+    "name": "קפה קפה אשדוד ביג פאשן",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "אשדוד",
+    "website": "https://cafecafe.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "cafecafe-f4d3714f",
+    "name": "קפה קפה מגדל העמק",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "מגדל העמק",
+    "website": "https://cafecafe.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "cafecafe-51daae8d",
+    "name": "קפה קפה נתיבות",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "נתיבות",
+    "website": "https://cafecafe.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "cafecafe-f2d1ffaf",
+    "name": "קפה קפה נהריה",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "נהריה",
+    "website": "https://cafecafe.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "cafecafe-ce29d0fc",
+    "name": "קפה קפה קריית ים",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "קריית ים",
+    "website": "https://cafecafe.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "cafecafe-ebc5d550",
+    "name": "קפה קפה חולון וולפסון",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "חולון",
+    "website": "https://cafecafe.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "cafecafe-1f024114",
+    "name": "קפה קפה בקעת הירדן",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "בקעת הירדן",
+    "website": "https://cafecafe.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "cafecafe-1378bb13",
+    "name": "קפה קפה באר שבע ONE PLAZA",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "באר שבע",
+    "website": "https://cafecafe.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "cafecafe-000c1e00",
+    "name": "קפה קפה עכו",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "עכו",
+    "website": "https://cafecafe.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "cafecafe-7abe4d67",
+    "name": "קפה קפה טבריה ביג פאשן",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "טבריה",
+    "website": "https://cafecafe.co.il",
+    "instagram": "https://www.instagram.com/cafecafe_big_fashion/",
+    "facebook": null
+  },
+  {
+    "id": "manual-restaurant-solo-carne",
+    "name": "סולו קרנה",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "בני ברק",
+    "website": "https://solo.chef-israel.co.il",
+    "instagram": "https://www.instagram.com/chef.israel",
+    "facebook": null
+  },
+  {
+    "id": "manual-fast-food-zalmans",
+    "name": "זלמנס",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "בני ברק",
+    "website": "https://zalmans.co.il",
+    "instagram": "https://www.instagram.com/zalmans_american_style",
+    "facebook": "https://www.facebook.com/ZalmansCHEFHotdogs"
+  },
+  {
+    "id": "manual-restaurant-shtesel",
+    "name": "שטיסל",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "בני ברק",
+    "website": "https://shtesel.click2eat.co.il",
+    "instagram": null,
+    "facebook": null
+  }
+]

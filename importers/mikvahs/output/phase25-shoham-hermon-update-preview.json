@@ -1,0 +1,26 @@
+{
+  "id": "mikveh-557",
+  "changes": {
+    "name": {
+      "from": "מקווה נשים חרמון",
+      "to": "מקווה טהרה לנשים"
+    },
+    "address": {
+      "from": "חרמון 6",
+      "to": "רח' חרמון 6, שהם"
+    },
+    "openingHours": {
+      "from": "19:30-22:00",
+      "to": "א'-ה': 19:30–22:00 (קיץ) / 18:30–21:00 (חורף); שישי וערב חג: חצי שעה לאחר הדלקת הנרות למשך כשעה; מוצ\"ש וחג: שעה אחרי צאת שבת/חג למשך שעתיים (משתנה לפי זמני השקיעה)"
+    }
+  },
+  "unchanged": {
+    "phone": "03-9791460",
+    "location": {
+      "latitude": 31.9977924,
+      "longitude": 34.9471251
+    },
+    "keilim": "כן"
+  },
+  "note": "MODIFIES an existing record (name/address/hours). Phone already matches (03-9791460). Keilim already noted (extra.forDishes=\"כן\"). Requires explicit approval — this is NOT additive-only."
+}

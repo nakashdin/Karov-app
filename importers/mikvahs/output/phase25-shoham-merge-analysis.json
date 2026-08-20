@@ -1,0 +1,20 @@
+[
+  {
+    "name": "מקווה גברים דורות אברהם",
+    "address": "רחוב המכבים 94, שוהם",
+    "gender": "גברים",
+    "city": "שוהם",
+    "coordSource": "record-native(reused from co-located synagogue osm-node-4406510250)",
+    "location": {
+      "latitude": 31.9967776,
+      "longitude": 34.9482205
+    },
+    "disposition": "write_ready",
+    "reason": "native coordinate (co-located דורות אברהם synagogue), no men's mikveh in שוהם — not a duplicate",
+    "matchedLiveId": null,
+    "cityDisambiguation": "Supplied under a \"מקווה מודיעין\" search, but address+name match the שוהם synagogue exactly and the supplied moked 03-9723060 is מועצה מקומית שוהם → assigned to שוהם. CONFIRM BEFORE WRITE.",
+    "liveShohamMikvehs": [
+      "מקווה נשים חרמון (נשים)"
+    ]
+  }
+]

@@ -1,0 +1,64 @@
+{
+  "generatedNote": "PHASE 25 DRY-RUN — Shoham \"דורות אברהם\" men's mikveh (user-provided). Native coordinate reused from the co-located synagogue record. No write, no publish, no rebuild.",
+  "cityDisambiguation": {
+    "suppliedContext": "Google search screenshot was \"מקווה מודיעין\"",
+    "evidenceForShoham": [
+      "דורות אברהם + רחוב המכבים 94 already exists in the dataset as a synagogue in שוהם (osm-node-4406510250)",
+      "supplied moked 03-9723060 = מועצה מקומית שוהם",
+      "שוהם has 2 women's mikvehs live and NO men's mikveh — matches \"יש גם מקווה גברים\""
+    ],
+    "resolution": "assigned to שוהם — AWAITING USER CONFIRMATION before any write"
+  },
+  "totalParsed": 1,
+  "duplicates": 0,
+  "writeReady": 1,
+  "idCollisions": 0,
+  "finalRecommendedWriteCount": 1,
+  "liveMikvehBefore": 696,
+  "estimatedTotalAfterWrite": 697,
+  "fieldsCaptured": [
+    "name",
+    "address",
+    "location(native)",
+    "phone(moked)",
+    "openingHours",
+    "mikvehGender",
+    "attendant",
+    "extra.contacts (maintenance/halacha/moked/whatsapp)",
+    "extra.notice (חובה להתקלח לפני טבילה)"
+  ],
+  "rollbackPlan": [
+    "Backup places.osm.json (+cities) before any write",
+    "Additive append only; do NOT run rebuildAppDataset"
+  ],
+  "dryRun": true,
+  "liveDataTouched": false,
+  "publishPerformed": false,
+  "rebuildTouched": false,
+  "hermonUpdate": {
+    "id": "mikveh-557",
+    "changes": {
+      "name": {
+        "from": "מקווה נשים חרמון",
+        "to": "מקווה טהרה לנשים"
+      },
+      "address": {
+        "from": "חרמון 6",
+        "to": "רח' חרמון 6, שהם"
+      },
+      "openingHours": {
+        "from": "19:30-22:00",
+        "to": "א'-ה': 19:30–22:00 (קיץ) / 18:30–21:00 (חורף); שישי וערב חג: חצי שעה לאחר הדלקת הנרות למשך כשעה; מוצ\"ש וחג: שעה אחרי צאת שבת/חג למשך שעתיים (משתנה לפי זמני השקיעה)"
+      }
+    },
+    "unchanged": {
+      "phone": "03-9791460",
+      "location": {
+        "latitude": 31.9977924,
+        "longitude": 34.9471251
+      },
+      "keilim": "כן"
+    },
+    "note": "MODIFIES an existing record (name/address/hours). Phone already matches (03-9791460). Keilim already noted (extra.forDishes=\"כן\"). Requires explicit approval — this is NOT additive-only."
+  }
+}

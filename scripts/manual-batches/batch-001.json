@@ -1,0 +1,224 @@
+[
+  {
+    "id": "manual-restaurant-zalbouch",
+    "name": "בצלבוץ",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "ז'בוטינסקי 100, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.087,
+      "longitude": 34.828
+    },
+    "phone": "050-600-9797",
+    "certifiedBy": "רב לנדא",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-restaurant-the-jewish-restaurant",
+    "name": "המסעדה היהודית",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "כנרת 4, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.082,
+      "longitude": 34.831
+    },
+    "phone": "03-5789999",
+    "certifiedBy": "רב לנדא",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 12:00-23:00; ו' 07:30-14:00",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-cafe-giorno",
+    "name": "ג'ורנו",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "ז'בוטינסקי 20, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.0823,
+      "longitude": 34.8338
+    },
+    "phone": "03-6160143",
+    "certifiedBy": "רב לנדא",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 07:30-19:30; ו' 09:00-13:00",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-restaurant-japo",
+    "name": "ג'אפו",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "מצדה 9, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.0834,
+      "longitude": 34.8342
+    },
+    "phone": "03-374-1133",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 12:00-22:00",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-restaurant-tzanani",
+    "name": "צנעני",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "ז'בוטינסקי 92, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.0821,
+      "longitude": 34.8316
+    },
+    "phone": "03-578-0459",
+    "certifiedBy": "רב מחפוד",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 11:00-24:00; ו' 07:00-14:00",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-restaurant-shmulik-cohen",
+    "name": "שמוליק כהן",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "הרצל 146, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0568,
+      "longitude": 34.7693
+    },
+    "phone": "03-681-0222",
+    "certifiedBy": "רב מחפוד",
+    "kosherType": "mehadrin",
+    "openingHours": "א' 12:00-16:00; ב'-ד' 12:00-22:30; ה' 12:00-23:00; ו' 11:00-16:00",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-dontella-haifa",
+    "name": "דונטלה פיצת שף",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "נתנזון 14, חיפה",
+    "cityId": "חיפה",
+    "location": {
+      "latitude": 32.816,
+      "longitude": 34.993
+    },
+    "phone": "04-9077770",
+    "certifiedBy": "בד\"ץ",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-yehalelu-haifa",
+    "name": "יהללו",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "הרצוג 3, חיפה",
+    "cityId": "חיפה",
+    "location": {
+      "latitude": 32.81,
+      "longitude": 34.993
+    },
+    "phone": "054-8061050",
+    "certifiedBy": "בד\"ץ לנדא",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-feine-zachen-haifa",
+    "name": "פיינע זאכן",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "הרצוג 3, חיפה",
+    "cityId": "חיפה",
+    "location": {
+      "latitude": 32.81,
+      "longitude": 34.993
+    },
+    "certifiedBy": "בד\"ץ עדה חרדית",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-la-patchina-haifa",
+    "name": "לה פאצ'ינה",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "הגליל 100, חיפה",
+    "cityId": "חיפה",
+    "location": {
+      "latitude": 32.795,
+      "longitude": 34.984
+    },
+    "phone": "04-8226622",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-hummus-bardichev-haifa",
+    "name": "חומוס ברדיצ'ב",
+    "type": "restaurant",
+    "subType": "fast_food",
+    "category": "parve",
+    "address": "וודג'ווד 1, מרכז הכרמל, חיפה",
+    "cityId": "חיפה",
+    "location": {
+      "latitude": 32.793,
+      "longitude": 34.987
+    },
+    "phone": "04-6574132",
+    "certifiedBy": "רב מחפוד",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-falafel-yerushalmi-haifa",
+    "name": "פלאפל ירושלמי",
+    "type": "restaurant",
+    "subType": "fast_food",
+    "category": "parve",
+    "address": "הרצל 62, חיפה",
+    "cityId": "חיפה",
+    "location": {
+      "latitude": 32.82,
+      "longitude": 34.998
+    },
+    "phone": "04-8627015",
+    "certifiedBy": "כשר למהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  }
+]

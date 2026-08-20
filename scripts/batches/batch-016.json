@@ -1,0 +1,202 @@
+[
+  {
+    "id": "manual-biga-pt-hagadol",
+    "name": "ביגה פ\"ת קניון הגדול",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "פתח תקווה",
+    "website": "https://biga-bakery.co.il",
+    "instagram": "https://www.instagram.com/biga_il",
+    "facebook": "https://www.facebook.com/Biga.Bakery.Coffee"
+  },
+  {
+    "id": "manual-biga-tlv-sarona",
+    "name": "ביגה תל אביב",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "תל אביב",
+    "website": "https://biga-bakery.co.il",
+    "instagram": "https://www.instagram.com/biga_il",
+    "facebook": "https://www.facebook.com/Biga.Bakery.Coffee"
+  },
+  {
+    "id": "manual-sushi-time-bb",
+    "name": "סושי טיים",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "בני ברק",
+    "website": "https://sushitime.co.il",
+    "instagram": "https://www.instagram.com/sushitime_restaurant",
+    "facebook": "https://www.facebook.com/sushitime1000"
+  },
+  {
+    "id": "manual-tokyo-sushi-ramat-gan",
+    "name": "טוקיו סושי",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "רמת גן",
+    "website": "https://tokyosushi.co.il",
+    "instagram": "https://www.instagram.com/tokyo_sushi_bar_",
+    "facebook": null
+  },
+  {
+    "id": "manual-jetlak-pt",
+    "name": "ג'ט לק",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "פתח תקווה",
+    "website": "https://jetlek.co.il",
+    "instagram": "https://www.instagram.com/jetlekofficial",
+    "facebook": "https://www.facebook.com/JetLek.co.il"
+  },
+  {
+    "id": "manual-cremerie-de-leclair-givat-shmuel",
+    "name": "קרמרי דה ל'אקלר",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "גבעת שמואל",
+    "website": "https://cremeriedeleclair.co.il",
+    "instagram": "https://www.instagram.com/cremerie_de_leclair",
+    "facebook": "https://www.facebook.com/cremeriedeleclair"
+  },
+  {
+    "id": "abdalla-5b71b982",
+    "name": "עבדאלה גריל בשרים כשר",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "אור יהודה",
+    "website": "https://abdalla.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-oshi-oshi-holon-sokolov",
+    "name": "אושי אושי חולון סוקולוב",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "חולון",
+    "website": "https://oshioshi.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-oshi-oshi-holon-azrieli",
+    "name": "אושי אושי חולון עזריאלי",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "חולון",
+    "website": "https://oshioshi.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "etzelhaturky-e6f0ab23",
+    "name": "אצל הטורקי",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "אור יהודה",
+    "website": "https://etzelhaturky.com",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "turkishgrill-7b1fd1d3",
+    "name": "טורקיש גריל",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "אור יהודה",
+    "website": "https://www.turkishgrill.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "ovedbakfar-80495590",
+    "name": "אצל עובד בכפר",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "אור יהודה",
+    "website": "https://ovedbakfar.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "yashka-c302ea8e",
+    "name": "יאשקה דיזנגוף",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "תל אביב",
+    "website": "https://www.yashka.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "yashka-b45d90bc",
+    "name": "יאשקה יהודה המכבי",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "תל אביב",
+    "website": "https://www.yashka.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "yashka-7ee9482e",
+    "name": "יאשקה רמת אפעל",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "רמת גן",
+    "website": "https://www.yashka.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-falafel-baribua-rishon-factory",
+    "name": "פלאפל בריבוע מפעל",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "ראשון לציון",
+    "website": "https://falafelbaribua.co.il",
+    "instagram": "https://www.instagram.com/falafel_baribua",
+    "facebook": "https://www.facebook.com/falafelbaribua"
+  },
+  {
+    "id": "manual-falafel-baribua-paz-rupin",
+    "name": "פלאפל בריבוע פז",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "רופין",
+    "website": "https://falafelbaribua.co.il",
+    "instagram": "https://www.instagram.com/falafel_baribua",
+    "facebook": "https://www.facebook.com/falafelbaribua"
+  },
+  {
+    "id": "manual-falafel-baribua-kfar-yarok",
+    "name": "פלאפל בריבוע הכפר הירוק",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "רמת השרון",
+    "website": "https://falafelbaribua.co.il",
+    "instagram": "https://www.instagram.com/falafel_baribua",
+    "facebook": "https://www.facebook.com/falafelbaribua"
+  },
+  {
+    "id": "manual-falafel-baribua-paz-nachlat-yehuda",
+    "name": "פלאפל בריבוע פז נחלת יהודה",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "ראשון לציון",
+    "website": "https://falafelbaribua.co.il",
+    "instagram": "https://www.instagram.com/falafel_baribua",
+    "facebook": "https://www.facebook.com/falafelbaribua"
+  },
+  {
+    "id": "manual-4teamim-jrm-givat-shaul",
+    "name": "פלאפל 4 טעמים גבעת שאול",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "ירושלים",
+    "website": "https://falafel4flavors.co.il",
+    "instagram": null,
+    "facebook": null
+  }
+]

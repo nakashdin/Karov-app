@@ -1,0 +1,202 @@
+[
+  {
+    "id": "manual-arianna-kfar-saba",
+    "name": "אריאנה בשר ויין",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "כפר סבא",
+    "website": "https://arianna.co.il",
+    "instagram": "https://www.instagram.com/arianna.rest",
+    "facebook": null
+  },
+  {
+    "id": "manual-king-meat-hod-hasharon",
+    "name": "קינג מיט",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "הוד השרון",
+    "website": null,
+    "instagram": "https://www.instagram.com/king_meat_hds",
+    "facebook": null
+  },
+  {
+    "id": "manual-tabunbon-hod-hasharon",
+    "name": "הטאבון בון בון",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "הוד השרון",
+    "website": "https://tabunbon.com",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-b12prime-rosh-haayin",
+    "name": "B12 Prime",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "ראש העין",
+    "website": "https://b12prime.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-hacaverim-pt",
+    "name": "החברים",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "פתח תקווה",
+    "website": "https://hahaverim.co.il",
+    "instagram": "https://www.instagram.com/hahaverim_grill",
+    "facebook": "https://www.facebook.com/Hahaverim.Jerusalem"
+  },
+  {
+    "id": "manual-campania-rishon",
+    "name": "קמפניה",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "ראשון לציון",
+    "website": "https://campania.rest.co.il",
+    "instagram": "https://www.instagram.com/campania_restaurant",
+    "facebook": "https://www.facebook.com/CAMPANIARestaurant"
+  },
+  {
+    "id": "manual-vsavata-tlv",
+    "name": "ושבעת וברכת",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "תל אביב",
+    "website": "https://savata.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "manual-habakeria-holon",
+    "name": "הבייקריה",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "חולון",
+    "website": null,
+    "instagram": "https://www.instagram.com/bakeria_holon",
+    "facebook": "https://www.facebook.com/bakeriaholon"
+  },
+  {
+    "id": "manual-sorrento-rishon",
+    "name": "סורנטו",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "ראשון לציון",
+    "website": "https://sorento.rest.co.il",
+    "instagram": "https://www.instagram.com/sorento_restaurant",
+    "facebook": "https://www.facebook.com/sorentorest"
+  },
+  {
+    "id": "manual-aresto-caesarea",
+    "name": "ארסטו",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "קיסריה",
+    "website": "https://aresto-restaurant.co.il",
+    "instagram": "https://www.instagram.com/aresto.restaurant",
+    "facebook": "https://www.facebook.com/Arestorest"
+  },
+  {
+    "id": "manual-taboon-maya-bb",
+    "name": "הטאבון של מאיה",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "בני ברק",
+    "website": null,
+    "instagram": "https://www.instagram.com/maya_bakery_il",
+    "facebook": null
+  },
+  {
+    "id": "manual-cafe-itamar-givat-shmuel",
+    "name": "קפה איתמר",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "גבעת שמואל",
+    "website": null,
+    "instagram": "https://www.instagram.com/itamarcafe",
+    "facebook": "https://www.facebook.com/itamarcafe"
+  },
+  {
+    "id": "manual-cafe-hola-pt",
+    "name": "קפה הולה",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "פתח תקווה",
+    "website": "https://www.cafehola.co.il",
+    "instagram": "https://www.instagram.com/cafe.hola1",
+    "facebook": "https://www.facebook.com/p/Cafe-Hola-61568943681336"
+  },
+  {
+    "id": "manual-bon-cafe-bb",
+    "name": "בון קפה",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "בני ברק",
+    "website": "https://boncafe.co.il",
+    "instagram": "https://www.instagram.com/boncafebb",
+    "facebook": null
+  },
+  {
+    "id": "manual-kitkat-tlv",
+    "name": "קיטקט",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "תל אביב",
+    "website": null,
+    "instagram": "https://www.instagram.com/kitkat.fairytale",
+    "facebook": "https://www.facebook.com/kitkat.fairytale"
+  },
+  {
+    "id": "manual-cafe-lion-or-yehuda",
+    "name": "קפה ליון",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "אור יהודה",
+    "website": null,
+    "instagram": "https://www.instagram.com/cafelyon.oryehuda",
+    "facebook": "https://www.facebook.com/Lyon.OR.YEHUDA"
+  },
+  {
+    "id": "manual-maafiyat-amit-beerot-yitzhak",
+    "name": "מאפיית עמית",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "בארות יצחק",
+    "website": "https://www.amit-pastry.com/departments/brwth-ysxk/",
+    "instagram": "https://www.instagram.com/amit_bakery_",
+    "facebook": "https://www.facebook.com/amitbakery1"
+  },
+  {
+    "id": "manual-waffle-bar-rosh-haayin",
+    "name": "וופל בר",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "ראש העין",
+    "website": "https://www.waffle-bar.co.il",
+    "instagram": "https://www.instagram.com/wafflebar_official",
+    "facebook": "https://www.facebook.com/MainWaffleBar"
+  },
+  {
+    "id": "manual-cafe-111-ramat-hasharon",
+    "name": "קפה 111",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "רמת השרון",
+    "website": "https://cafe111.co.il",
+    "instagram": "https://www.instagram.com/_cafe111_",
+    "facebook": "https://www.facebook.com/cafe111"
+  },
+  {
+    "id": "manual-biga-pt-kfar-ganim",
+    "name": "ביגה פ\"ת כפר גנים",
+    "type": "cafe",
+    "category": "dairy",
+    "cityId": "פתח תקווה",
+    "website": "https://biga-bakery.co.il",
+    "instagram": "https://www.instagram.com/biga_il",
+    "facebook": "https://www.facebook.com/Biga.Bakery.Coffee"
+  }
+]

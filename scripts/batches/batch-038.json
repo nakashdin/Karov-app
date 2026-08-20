@@ -1,0 +1,202 @@
+[
+  {
+    "id": "breadstation-14f1371d",
+    "name": "תחנת לחם פתח תקווה גיסין",
+    "type": "bakery",
+    "category": "dairy",
+    "cityId": "פתח תקווה",
+    "website": "https://breadstation.co.il",
+    "instagram": "https://www.instagram.com/bread_station_il/",
+    "facebook": "https://www.facebook.com/Tahanat.Lechem/"
+  },
+  {
+    "id": "breadstation-abdd2bd9",
+    "name": "תחנת לחם ראש העין",
+    "type": "bakery",
+    "category": "dairy",
+    "cityId": "ראש העין",
+    "website": "https://breadstation.co.il",
+    "instagram": "https://www.instagram.com/bread_station_il/",
+    "facebook": "https://www.facebook.com/Tahanat.Lechem/"
+  },
+  {
+    "id": "breadstation-55fff06f",
+    "name": "תחנת לחם רחובות",
+    "type": "bakery",
+    "category": "dairy",
+    "cityId": "רחובות",
+    "website": "https://breadstation.co.il",
+    "instagram": "https://www.instagram.com/bread_station_il/",
+    "facebook": "https://www.facebook.com/Tahanat.Lechem/"
+  },
+  {
+    "id": "breadstation-2f18801f",
+    "name": "תחנת לחם רמת גן ביאליק 19",
+    "type": "bakery",
+    "category": "dairy",
+    "cityId": "רמת גן",
+    "website": "https://breadstation.co.il",
+    "instagram": "https://www.instagram.com/bread_station_il/",
+    "facebook": "https://www.facebook.com/Tahanat.Lechem/"
+  },
+  {
+    "id": "breadstation-a880e77a",
+    "name": "תחנת לחם רמת גן ביאליק 54",
+    "type": "bakery",
+    "category": "dairy",
+    "cityId": "רמת גן",
+    "website": "https://breadstation.co.il",
+    "instagram": "https://www.instagram.com/bread_station_il/",
+    "facebook": "https://www.facebook.com/Tahanat.Lechem/"
+  },
+  {
+    "id": "breadstation-30fecd7b",
+    "name": "תחנת לחם רמת גן ירושלים",
+    "type": "bakery",
+    "category": "dairy",
+    "cityId": "רמת גן",
+    "website": "https://breadstation.co.il",
+    "instagram": "https://www.instagram.com/bread_station_il/",
+    "facebook": "https://www.facebook.com/Tahanat.Lechem/"
+  },
+  {
+    "id": "breadstation-602e7721",
+    "name": "תחנת לחם רעננה",
+    "type": "bakery",
+    "category": "dairy",
+    "cityId": "רעננה",
+    "website": "https://breadstation.co.il",
+    "instagram": "https://www.instagram.com/bread_station_il/",
+    "facebook": "https://www.facebook.com/Tahanat.Lechem/"
+  },
+  {
+    "id": "breadstation-c0ffebf1",
+    "name": "תחנת לחם מצפה רמון",
+    "type": "bakery",
+    "category": "dairy",
+    "cityId": "מצפה רמון",
+    "website": "https://breadstation.co.il",
+    "instagram": "https://www.instagram.com/bread_station_il/",
+    "facebook": "https://www.facebook.com/Tahanat.Lechem/"
+  },
+  {
+    "id": "newdeli-9c874f1d",
+    "name": "ניו דלי אריאל",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "אריאל",
+    "website": "https://newdeli.com",
+    "instagram": "https://www.instagram.com/newdeli_official/",
+    "facebook": "https://www.facebook.com/NewDeliSandwich"
+  },
+  {
+    "id": "newdeli-c8a8a9c1",
+    "name": "ניו דלי קריית יובל",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "ירושלים",
+    "website": "https://newdeli.com",
+    "instagram": "https://www.instagram.com/newdeli_official/",
+    "facebook": "https://www.facebook.com/NewDeliSandwich"
+  },
+  {
+    "id": "newdeli-5e474b51",
+    "name": "ניו דלי שער בנימין",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "שער בנימין",
+    "website": "https://newdeli.com",
+    "instagram": "https://www.instagram.com/newdeli_official/",
+    "facebook": "https://www.facebook.com/NewDeliSandwich"
+  },
+  {
+    "id": "newdeli-3f8d879d",
+    "name": "ניו דלי עזריאלי תל אביב",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "תל אביב",
+    "website": "https://newdeli.com",
+    "instagram": "https://www.instagram.com/newdeli_official/",
+    "facebook": "https://www.facebook.com/NewDeliSandwich"
+  },
+  {
+    "id": "newdeli-d4510103",
+    "name": "ניו דלי דיזינגוף סנטר",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "תל אביב",
+    "website": "https://newdeli.com",
+    "instagram": "https://www.instagram.com/newdeli_official/",
+    "facebook": "https://www.facebook.com/NewDeliSandwich"
+  },
+  {
+    "id": "newdeli-a524562a",
+    "name": "ניו דלי ממילא",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "ירושלים",
+    "website": "https://newdeli.com",
+    "instagram": "https://www.instagram.com/newdeli_official/",
+    "facebook": "https://www.facebook.com/NewDeliSandwich"
+  },
+  {
+    "id": "newdeli-8e3f49af",
+    "name": "ניו דלי מודיעין סנטר",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "מודיעין",
+    "website": "https://newdeli.com",
+    "instagram": "https://www.instagram.com/newdeli_official/",
+    "facebook": "https://www.facebook.com/NewDeliSandwich"
+  },
+  {
+    "id": "newdeli-892141e6",
+    "name": "ניו דלי קניון איילון",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "רמת גן",
+    "website": "https://newdeli.com",
+    "instagram": "https://www.instagram.com/newdeli_official/",
+    "facebook": "https://www.facebook.com/NewDeliSandwich"
+  },
+  {
+    "id": "newdeli-46198e1b",
+    "name": "ניו דלי עזריאלי מודיעין",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "מודיעין",
+    "website": "https://newdeli.com",
+    "instagram": "https://www.instagram.com/newdeli_official/",
+    "facebook": "https://www.facebook.com/NewDeliSandwich"
+  },
+  {
+    "id": "newdeli-1a8f78cf",
+    "name": "ניו דלי הקניון הגדול",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "פתח תקווה",
+    "website": "https://newdeli.com",
+    "instagram": "https://www.instagram.com/newdeli_official/",
+    "facebook": "https://www.facebook.com/NewDeliSandwich"
+  },
+  {
+    "id": "newdeli-683faa56",
+    "name": "ניו דלי עזריאלי רמלה",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "רמלה",
+    "website": "https://newdeli.com",
+    "instagram": "https://www.instagram.com/newdeli_official/",
+    "facebook": "https://www.facebook.com/NewDeliSandwich"
+  },
+  {
+    "id": "newdeli-54a6681c",
+    "name": "ניו דלי קניון רננים",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "רעננה",
+    "website": "https://newdeli.com",
+    "instagram": "https://www.instagram.com/newdeli_official/",
+    "facebook": "https://www.facebook.com/NewDeliSandwich"
+  }
+]

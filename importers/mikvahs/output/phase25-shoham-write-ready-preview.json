@@ -1,0 +1,35 @@
+[
+  {
+    "id": "mikveh-shoham-m-31.99678_34.94822",
+    "name": "מקווה גברים דורות אברהם",
+    "type": "mikveh",
+    "cityId": "שוהם",
+    "address": "רחוב המכבים 94, שוהם",
+    "location": {
+      "latitude": 31.9967776,
+      "longitude": 34.9482205
+    },
+    "source": "seed",
+    "phone": "039723060",
+    "openingHours": "א'-ה': מעלות השחר עד 12:00; שישי: מעלות השחר עד כניסת שבת; שבת וחג: מעלות השחר עד 11:00; מועדים וחגים: יש לפנות ליוסי מנזון",
+    "mikvehGender": "גברים",
+    "attendant": "יוסי מנזון (רכז שירותי דת) 054-7784823",
+    "sourceName": "מועצה מקומית שוהם — שירותי דת",
+    "extra": {
+      "license": "owner-provided",
+      "coordSource": "record-native(co-located synagogue osm-node-4406510250)",
+      "contacts": {
+        "maintenance": "יוסי מנזון (רכז שירותי דת) 054-7784823",
+        "halacha": "הרב רן כלילי 052-7974910",
+        "moked": "03-9723060",
+        "whatsapp": "053-4230106"
+      },
+      "notice": "לפני טבילה חובה להתקלח במים ובסבון",
+      "hasKelim": true,
+      "provenance": {
+        "sourceId": "user-provided:shoham:dorot-avraham",
+        "fetchedAt": "2026-07-24"
+      }
+    }
+  }
+]

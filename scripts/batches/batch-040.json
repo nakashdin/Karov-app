@@ -1,0 +1,202 @@
+[
+  {
+    "id": "newdeli-1091bf33",
+    "name": "ניו דלי קריון קריית ביאליק",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "קריית ביאליק",
+    "website": "https://newdeli.com",
+    "instagram": "https://www.instagram.com/newdeli_official/",
+    "facebook": "https://www.facebook.com/NewDeliSandwich"
+  },
+  {
+    "id": "newdeli-fe8bcc9b",
+    "name": "ניו דלי עזריאלי חיפה",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "חיפה",
+    "website": "https://newdeli.com",
+    "instagram": "https://www.instagram.com/newdeli_official/",
+    "facebook": "https://www.facebook.com/NewDeliSandwich"
+  },
+  {
+    "id": "newdeli-3be42df0",
+    "name": "ניו דלי ראש פינה",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "ראש פינה",
+    "website": "https://newdeli.com",
+    "instagram": "https://www.instagram.com/newdeli_official/",
+    "facebook": "https://www.facebook.com/NewDeliSandwich"
+  },
+  {
+    "id": "newdeli-6e346977",
+    "name": "ניו דלי ארנה נהריה",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "נהריה",
+    "website": "https://newdeli.com",
+    "instagram": "https://www.instagram.com/newdeli_official/",
+    "facebook": "https://www.facebook.com/NewDeliSandwich"
+  },
+  {
+    "id": "newdeli-97b33776",
+    "name": "ניו דלי הסיטי אשדוד",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "אשדוד",
+    "website": "https://newdeli.com",
+    "instagram": "https://www.instagram.com/newdeli_official/",
+    "facebook": "https://www.facebook.com/NewDeliSandwich"
+  },
+  {
+    "id": "newdeli-f4b3b3f3",
+    "name": "ניו דלי תחנה מרכזית באר שבע",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "באר שבע",
+    "website": "https://newdeli.com",
+    "instagram": "https://www.instagram.com/newdeli_official/",
+    "facebook": "https://www.facebook.com/NewDeliSandwich"
+  },
+  {
+    "id": "newdeli-155d3de4",
+    "name": "ניו דלי ביתר עילית",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "ביתר עילית",
+    "website": "https://newdeli.com",
+    "instagram": "https://www.instagram.com/newdeli_official/",
+    "facebook": "https://www.facebook.com/NewDeliSandwich"
+  },
+  {
+    "id": "petrozilia-1fb9547a",
+    "name": "פיטרוזיליה",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "תל אביב",
+    "website": "https://petrozilia.co.il",
+    "instagram": null,
+    "facebook": "https://www.facebook.com/petrozilya47/"
+  },
+  {
+    "id": "bodega-cbe9bf08",
+    "name": "בודגה מטבח אמריקאי",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "תל אביב",
+    "website": "https://tabitisrael.co.il/tabit-order?siteName=bodega&step=menu",
+    "instagram": "https://www.instagram.com/getbodega/",
+    "facebook": null
+  },
+  {
+    "id": "meat-night-1e53da1b",
+    "name": "מיט נייט",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "תל אביב",
+    "website": "https://meat-night.co.il/",
+    "instagram": "https://www.instagram.com/meat.night/",
+    "facebook": "https://www.facebook.com/MeatNightRG/"
+  },
+  {
+    "id": "florentina-c478e936",
+    "name": "פלורנטינה בר מסעדה",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "תל אביב",
+    "website": "https://florentina.co.il/",
+    "instagram": "https://www.instagram.com/florentina_restaurant_bar/",
+    "facebook": "https://www.facebook.com/FlorentinaRestaurantBar"
+  },
+  {
+    "id": "oh-mama-kg26-986287b2",
+    "name": "הו מאמא",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "תל אביב",
+    "website": "https://ohmama.co.il/",
+    "instagram": "https://www.instagram.com/ohmamatlv/",
+    "facebook": "https://www.facebook.com/ohmamatlv/"
+  },
+  {
+    "id": "metro-burger-8268867c",
+    "name": "מטרו בורגר",
+    "type": "fast_food",
+    "category": "meat",
+    "cityId": "תל אביב",
+    "website": null,
+    "instagram": "https://www.instagram.com/metroburger4546/",
+    "facebook": "https://www.facebook.com/metroburger.1/"
+  },
+  {
+    "id": "kaful-kitchen-73b8d921",
+    "name": "המטבח הכפול",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "תל אביב",
+    "website": null,
+    "instagram": "https://www.instagram.com/kaful_kitchen/",
+    "facebook": null
+  },
+  {
+    "id": "hakosem-8e7ea237",
+    "name": "הקוסם",
+    "type": "fast_food",
+    "category": "meat",
+    "cityId": "תל אביב",
+    "website": null,
+    "instagram": null,
+    "facebook": "https://www.facebook.com/193046660742785"
+  },
+  {
+    "id": "rachel-basdera-c1666d06",
+    "name": "רחל בשדרה",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "תל אביב",
+    "website": "https://linktr.ee/rachel.basdera",
+    "instagram": "https://www.instagram.com/rachelbasdera/",
+    "facebook": null
+  },
+  {
+    "id": "shpachtel-303378c4",
+    "name": "השפכטל של רחל",
+    "type": "fast_food",
+    "category": "meat",
+    "cityId": "תל אביב",
+    "website": null,
+    "instagram": null,
+    "facebook": "https://www.facebook.com/shpachtelbyrachel/"
+  },
+  {
+    "id": "mixi-4eb00836",
+    "name": "מיקסי סלט בר",
+    "type": "fast_food",
+    "category": "parve",
+    "cityId": "תל אביב",
+    "website": "https://www.mixi.co.il/",
+    "instagram": null,
+    "facebook": "https://www.facebook.com/mixisaladbar/"
+  },
+  {
+    "id": "tandoor-sharona-b60d9a9a",
+    "name": "טנדור",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "תל אביב",
+    "website": "https://tandoortlv.co.il/",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "rotisserie-sharona-303378c4",
+    "name": "רוטיסרי",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "תל אביב",
+    "website": "https://www.rotisserie.co.il/",
+    "instagram": "https://www.instagram.com/rotisserie.chicken.club/",
+    "facebook": "https://www.facebook.com/rotisserie.chicken.club/"
+  }
+]

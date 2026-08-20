@@ -1,0 +1,246 @@
+[
+  {
+    "id": "bucharikm-23b49510",
+    "name": "הבוכרי",
+    "type": "restaurant",
+    "cityId": "קריית מלאכי",
+    "address": "קריית מלאכי",
+    "phone": "08-850-1818",
+    "location": {
+      "latitude": 31.7323,
+      "longitude": 34.7432
+    },
+    "openingHours": "א'-ה' 11:00-20:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "sheliku-0b899554",
+    "name": "השווארמה שלי",
+    "type": "restaurant",
+    "cityId": "קריית מלאכי",
+    "address": "קריית מלאכי",
+    "phone": "08-850-4313",
+    "location": {
+      "latitude": 31.732,
+      "longitude": 34.743
+    },
+    "openingHours": "א'-ה' 07:30-19:30 | ו' 09:00-13:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "badatz_beit_yosef",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "badatz",
+    "kosherAuthority": "badatz_beit_yosef"
+  },
+  {
+    "id": "hapamon-a0f986bd",
+    "name": "הפעמון",
+    "type": "restaurant",
+    "cityId": "אשקלון",
+    "address": "אשקלון",
+    "phone": "08-855-9044",
+    "location": {
+      "latitude": 31.6688,
+      "longitude": 34.5681
+    },
+    "openingHours": "א'-ה' 11:00-22:00 | ו' 10:00-כניסת שבת | ש' מוצ\"ש עד 23:45",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "itzikeilat-3a1ad9d0",
+    "name": "שווארמה איציק",
+    "type": "restaurant",
+    "cityId": "אילת",
+    "address": "אילת",
+    "phone": "08-632-3231",
+    "location": {
+      "latitude": 29.557,
+      "longitude": 34.94
+    },
+    "openingHours": "א'-ה' 11:00-02:00 | ו' 10:00-14:00 | ש' מוצ\"ש עד 02:00",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "savivhashaon-80c95610",
+    "name": "סביב השעון",
+    "type": "restaurant",
+    "cityId": "באר שבע",
+    "address": "דרך מצדה 166, באר שבע",
+    "phone": "054-990-8877",
+    "location": {
+      "latitude": 31.2425,
+      "longitude": 34.7854
+    },
+    "openingHours": "א'-ה' 08:00-18:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20",
+    "kosherLevel": "regular",
+    "kosherAuthorityGroup": "rabbinate"
+  },
+  {
+    "id": "samarkand-a264b6c2",
+    "name": "סמרקנד",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "בן צבי 34, תל אביב",
+    "phone": "03-6811122",
+    "location": {
+      "latitude": 32.0642,
+      "longitude": 34.7848
+    },
+    "openingHours": "א'-ה' 11:30-23:30 | ו' לבדוק מול המסעדה | ש' מוצ\"ש",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "שף"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23",
+    "kosherLevel": "regular",
+    "kosherAuthorityGroup": "rabbinate"
+  },
+  {
+    "id": "cafe-lugano-8d339460",
+    "name": "קפה לוגאנו",
+    "type": "restaurant",
+    "cityId": "רמת גן",
+    "address": "החוגה 2, רמת גן",
+    "phone": "077-407-0604",
+    "location": {
+      "latitude": 32.0747,
+      "longitude": 34.8221
+    },
+    "openingHours": "א'-ה' 08:00-20:00 | ו' 08:00-14:00 | ש' סגור",
+    "category": "dairy",
+    "kosherType": "mehadrin",
+    "tags": [
+      "קפה"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "so-sushi-716bd81e",
+    "name": "סו סושי",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "אבן גבירול 54, תל אביב",
+    "phone": "072-3910811",
+    "location": {
+      "latitude": 32.0794,
+      "longitude": 34.7831
+    },
+    "openingHours": "א'-ה' 11:00-23:00 | ו' 11:00-14:00 | ש' מוצ\"ש",
+    "category": "dairy",
+    "kosherType": "rabanut",
+    "tags": [
+      "סושי"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23",
+    "kosherLevel": "regular",
+    "kosherAuthorityGroup": "rabbinate"
+  },
+  {
+    "id": "nini-cho-4f71af38",
+    "name": "ניני צ'ו",
+    "type": "restaurant",
+    "cityId": "פתח תקווה",
+    "address": "הסיבים 18, פתח תקווה",
+    "phone": "03-5183333",
+    "location": {
+      "latitude": 32.0908,
+      "longitude": 34.8866
+    },
+    "openingHours": "א'-ה' 12:00-23:00 | ו' 12:00-15:00 | ש' מוצ\"ש",
+    "category": "parve",
+    "kosherType": "rabanut",
+    "tags": [
+      "סושי",
+      "פאן-אסייתי"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23",
+    "kosherLevel": "regular",
+    "kosherAuthorityGroup": "rabbinate"
+  },
+  {
+    "id": "nini-kai-e371580d",
+    "name": "ניני קאי",
+    "type": "restaurant",
+    "cityId": "אילת",
+    "address": "אנטיב 5, אילת",
+    "phone": "08-6386698",
+    "location": {
+      "latitude": 29.5558,
+      "longitude": 34.952
+    },
+    "openingHours": "א'-ה' 13:00-22:00 | ו' 13:00-16:00 | ש' מוצ\"ש",
+    "category": "parve",
+    "kosherType": "rabanut",
+    "tags": [
+      "סושי",
+      "פאן-אסייתי"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-23",
+    "kosherLevel": "regular",
+    "kosherAuthorityGroup": "rabbinate"
+  },
+  {
+    "id": "sharon-paul-eilat22-f7181421",
+    "name": "שרון פול",
+    "type": "fast_food",
+    "category": "parve",
+    "kosherType": "rabanut_tel_aviv",
+    "address": "אילת 22, תל אביב",
+    "cityId": "תל אביב",
+    "location": {
+      "latitude": 32.0853,
+      "longitude": 34.7818
+    },
+    "locationPrecision": "city",
+    "phone": "03-6814246",
+    "openingHours": "א-ה 08:00-17:00 | ו עד 16:00",
+    "source": "manual",
+    "lastVerifiedAt": "2026-08-04",
+    "kosherLevel": "regular",
+    "kosherAuthorityGroup": "rabbinate",
+    "kosherAuthority": "rabbinate_tel_aviv"
+  }
+]

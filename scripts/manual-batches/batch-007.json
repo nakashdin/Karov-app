@@ -1,0 +1,224 @@
+[
+  {
+    "id": "manual-luzzatto-raanana",
+    "name": "לוצאטו איטלקי",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "אחוזה 77, רעננה",
+    "cityId": "רעננה",
+    "location": {
+      "latitude": 32.1841,
+      "longitude": 34.869
+    },
+    "phone": "09-8900081",
+    "certifiedBy": "רבנות רעננה מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-al-hamayim-herzliya",
+    "name": "על המים",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "רמת ים 2, הרצליה",
+    "cityId": "הרצליה",
+    "location": {
+      "latitude": 32.1637,
+      "longitude": 34.8268
+    },
+    "phone": "073-2241513",
+    "certifiedBy": "רבנות הרצליה מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 13:00-22:00",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-sabino-kfar-saba",
+    "name": "סטקיית סבינו",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "רמז 18, כפר סבא",
+    "cityId": "כפר סבא",
+    "location": {
+      "latitude": 32.1801,
+      "longitude": 34.907
+    },
+    "phone": "09-7602647",
+    "certifiedBy": "רבנות כפר סבא מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 11:30-22:30",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-tzarum-ramat-hasharon",
+    "name": "צארום",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "סוקולוב 35, רמת השרון",
+    "cityId": "רמת השרון",
+    "location": {
+      "latitude": 32.148,
+      "longitude": 34.834
+    },
+    "phone": "055-4577158",
+    "certifiedBy": "רבנות הרצליה מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 11:00-19:00",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-jimmy-hagadol-ramat-hasharon",
+    "name": "ג'ימי הגדול",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "שבטי ישראל 102, רמת השרון",
+    "cityId": "רמת השרון",
+    "location": {
+      "latitude": 32.152,
+      "longitude": 34.8383
+    },
+    "certifiedBy": "רבנות רמת השרון מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 11:00-18:00",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-schnitzel-volano-bnei-brak",
+    "name": "שניצל וולנו",
+    "type": "restaurant",
+    "subType": "fast_food",
+    "category": "meat",
+    "address": "מצדה 6, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.0833,
+      "longitude": 34.834
+    },
+    "phone": "058-7999457",
+    "certifiedBy": "כשרות הרב לנדא",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-sushik26-bb",
+    "name": "סושיק 26",
+    "type": "restaurant",
+    "category": "parve",
+    "address": "כהנמן 22, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.0804,
+      "longitude": 34.8318
+    },
+    "phone": "053-4293424",
+    "certifiedBy": "כשר למהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 11:00-23:00",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-tzlilei-haesh-bb",
+    "name": "אצל זלבוך (צלילי האש)",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "זאב ז'בוטינסקי 100, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.0888,
+      "longitude": 34.8273
+    },
+    "phone": "050-600-9797",
+    "certifiedBy": "כשרות הרב לנדא",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-falafel-zion-yehud",
+    "name": "פלאפל ציון",
+    "type": "restaurant",
+    "subType": "fast_food",
+    "category": "parve",
+    "address": "צבי ישי 14, יהוד-מונוסון",
+    "cityId": "יהוד",
+    "location": {
+      "latitude": 32.033,
+      "longitude": 34.885
+    },
+    "phone": "03-6323050",
+    "certifiedBy": "כשרות מקומית",
+    "source": "manual"
+  },
+  {
+    "id": "manual-shnitzel-chef-bb",
+    "name": "שניצל שף",
+    "type": "restaurant",
+    "subType": "fast_food",
+    "category": "meat",
+    "address": "ירושלים 8, בני ברק",
+    "cityId": "בני ברק",
+    "location": {
+      "latitude": 32.079,
+      "longitude": 34.829
+    },
+    "phone": "03-5084881",
+    "certifiedBy": "בד\"ץ לנדא",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "mifgashbracha-663ed845",
+    "name": "מפגש הברכה",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "הרצל 98, פלורנטין, תל אביב",
+    "phone": "052-4883183",
+    "location": {
+      "latitude": 32.0598,
+      "longitude": 34.7737
+    },
+    "openingHours": "א'-ה' 07:30-19:30 | ו' 09:00-13:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20",
+    "kosherLevel": "regular",
+    "kosherAuthorityGroup": "rabbinate"
+  },
+  {
+    "id": "mifgashfalafel-251ca604",
+    "name": "מפגש הפלאפל והשווארמה",
+    "type": "restaurant",
+    "cityId": "תל אביב",
+    "address": "אצ\"ל 38, תל אביב",
+    "phone": "054-2227772",
+    "location": {
+      "latitude": 32.0522,
+      "longitude": 34.7675
+    },
+    "openingHours": "א'-ה' 08:00-00:00 | ו' 08:00-16:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20",
+    "kosherLevel": "regular",
+    "kosherAuthorityGroup": "rabbinate"
+  }
+]

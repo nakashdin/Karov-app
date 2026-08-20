@@ -1,0 +1,225 @@
+[
+  {
+    "id": "manual-haesh-sheli-migdal-haemek",
+    "name": "האש שלי",
+    "type": "restaurant",
+    "subType": "fast_food",
+    "category": "meat",
+    "address": "דרך העמק 16, מגדל העמק",
+    "cityId": "מגדל העמק",
+    "location": {
+      "latitude": 32.673,
+      "longitude": 35.238
+    },
+    "phone": "052-7665588",
+    "certifiedBy": "רבנות מגדל העמק מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-pizza-hamaestro-migdal-haemek",
+    "name": "פיצה המאסטרו",
+    "type": "restaurant",
+    "subType": "fast_food",
+    "category": "dairy",
+    "address": "דרך העמק 16, מגדל העמק",
+    "cityId": "מגדל העמק",
+    "location": {
+      "latitude": 32.673,
+      "longitude": 35.238
+    },
+    "phone": "04-6044040",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "openingHours": "מוצ\"ש 21:00-23:30",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-kokhvei-anis-migdal-haemek",
+    "name": "כוכבי אניס",
+    "type": "cafe",
+    "category": "dairy",
+    "address": "קניון פרץ סנטר, מגדל העמק",
+    "cityId": "מגדל העמק",
+    "location": {
+      "latitude": 32.676,
+      "longitude": 35.243
+    },
+    "phone": "052-6672199",
+    "certifiedBy": "רבנות מגדל העמק מהדרין",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-arnolds-ramat-yishai",
+    "name": "ארנולדס",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "אקליפטוס 3, רמת ישי",
+    "cityId": "רמת ישי",
+    "location": {
+      "latitude": 32.704,
+      "longitude": 35.174
+    },
+    "phone": "04-9522211",
+    "certifiedBy": "כשר למהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 12:00-24:00; ו' 12:00-16:00",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-weizmann-ashdod",
+    "name": "ויצמן",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "הבנאים 9, נמל אשדוד",
+    "cityId": "אשדוד",
+    "location": {
+      "latitude": 31.816,
+      "longitude": 34.639
+    },
+    "phone": "08-852-2593",
+    "certifiedBy": "בד\"ץ יורה דעה הרב מחפוד",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ד' 12:00-22:30; ה' 12:00-23:00",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-kaiyfuye-ashdod",
+    "name": "קאיפוייה",
+    "type": "restaurant",
+    "category": "dairy",
+    "address": "הטיילת 20, אשדוד",
+    "cityId": "אשדוד",
+    "location": {
+      "latitude": 31.808,
+      "longitude": 34.6415
+    },
+    "phone": "077-231-8212",
+    "certifiedBy": "רבנות מהדרין",
+    "kosherType": "mehadrin",
+    "openingHours": "א'-ה' 11:00-23:30; ו' 11:00-14:30",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-shnitzel-saida-ashkelon",
+    "name": "שניצל סעידה",
+    "type": "restaurant",
+    "subType": "fast_food",
+    "category": "meat",
+    "address": "היוצרים 36, אשקלון",
+    "cityId": "אשקלון",
+    "location": {
+      "latitude": 31.6705,
+      "longitude": 34.5688
+    },
+    "phone": "053-594-7676",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-matanos-netivot",
+    "name": "מתנוס",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "יוסף סמלו 38, נתיבות",
+    "cityId": "נתיבות",
+    "location": {
+      "latitude": 31.4225,
+      "longitude": 34.5885
+    },
+    "phone": "08-654-4900",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-halafa-hamexicanit-netivot",
+    "name": "חלאפה המקסיקנית",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "יוסף סמלו 39, נתיבות",
+    "cityId": "נתיבות",
+    "location": {
+      "latitude": 31.4225,
+      "longitude": 34.5883
+    },
+    "phone": "08-994-2432",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-hamangilist-netivot",
+    "name": "המנגליסט",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "יוסף סמלו 201, נתיבות",
+    "cityId": "נתיבות",
+    "location": {
+      "latitude": 31.427,
+      "longitude": 34.587
+    },
+    "phone": "052-438-6100",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-maglulet-abuhatzirah-netivot",
+    "name": "מגלולת אבוחצירה",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "אבוחצירה 54, נתיבות",
+    "cityId": "נתיבות",
+    "location": {
+      "latitude": 31.424,
+      "longitude": 34.592
+    },
+    "phone": "08-699-9407",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "manual-karni-bar-netivot",
+    "name": "קרני בר",
+    "type": "restaurant",
+    "category": "meat",
+    "address": "יוסף סמלו 7, נתיבות",
+    "cityId": "נתיבות",
+    "location": {
+      "latitude": 31.4228,
+      "longitude": 34.588
+    },
+    "phone": "1-700-501-083",
+    "certifiedBy": "בד\"ץ בית יוסף",
+    "kosherType": "mehadrin",
+    "source": "manual",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  }
+]

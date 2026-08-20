@@ -1,0 +1,267 @@
+[
+  {
+    "id": "shawarmaexpress-3112f117",
+    "name": "שווארמה אקספרס",
+    "type": "restaurant",
+    "cityId": "נתניה",
+    "address": "שדרות טום לנטוס 8, נתניה",
+    "phone": "09-745-5545",
+    "location": {
+      "latitude": 32.321,
+      "longitude": 34.855
+    },
+    "openingHours": "א'-ה' 11:00-00:00 | ו' סגור | ש' מוצ\"ש עד 00:00",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20",
+    "kosherLevel": "regular",
+    "kosherAuthorityGroup": "rabbinate"
+  },
+  {
+    "id": "elijahKA-92ee7f4b",
+    "name": "שווארמה פלאפל אליהו",
+    "type": "restaurant",
+    "cityId": "קרית אתא",
+    "address": "העצמאות 72, קרית אתא",
+    "phone": "077-536-3305",
+    "location": {
+      "latitude": 32.8011,
+      "longitude": 35.1081
+    },
+    "openingHours": "א'-ה' 10:30-19:00 | ו' 10:30-15:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20",
+    "kosherLevel": "regular",
+    "kosherAuthorityGroup": "rabbinate"
+  },
+  {
+    "id": "papaluski-e0ab043a",
+    "name": "פאפא לוסקי",
+    "type": "restaurant",
+    "cityId": "נהריה",
+    "address": "שדרות הגעתון 19, נהריה",
+    "phone": "04-992-9459",
+    "location": {
+      "latitude": 33.0057693,
+      "longitude": 35.0958999
+    },
+    "openingHours": "א'-ה' 09:00-22:00 | ו' 09:00-14:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20",
+    "locationPrecision": "exact",
+    "kosherLevel": "regular",
+    "kosherAuthorityGroup": "rabbinate"
+  },
+  {
+    "id": "ramoshlomi-b635f576",
+    "name": "שווארמה רמו",
+    "type": "restaurant",
+    "cityId": "שלומי",
+    "address": "אזור תעשיה, שלומי",
+    "phone": "052-448-1377",
+    "location": {
+      "latitude": 33.0648,
+      "longitude": 35.1477
+    },
+    "openingHours": "א'-ה' 07:00-18:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20",
+    "kosherLevel": "regular",
+    "kosherAuthorityGroup": "rabbinate"
+  },
+  {
+    "id": "maalotrest-b59e9c05",
+    "name": "מסעדות העיר",
+    "type": "restaurant",
+    "cityId": "מעלות תרשיחא",
+    "address": "הרב קוק 28, מעלות תרשיחא",
+    "phone": "04-999-7608",
+    "location": {
+      "latitude": 33.0144,
+      "longitude": 35.2721
+    },
+    "openingHours": "א'-ה' 09:00-23:00 | ו' 09:00-15:00 | ש' מוצ\"ש עד 00:00",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20",
+    "kosherLevel": "regular",
+    "kosherAuthorityGroup": "rabbinate"
+  },
+  {
+    "id": "beit148-7a2cd289",
+    "name": "בית השווארמה 148",
+    "type": "restaurant",
+    "cityId": "צפת",
+    "address": "דרך השוקולד, צפת",
+    "phone": "053-809-6343",
+    "location": {
+      "latitude": 32.9656,
+      "longitude": 35.4981
+    },
+    "openingHours": "א'-ה' 07:30-19:30 | ו' 09:00-13:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "taiimtzmaх-17e80d2d",
+    "name": "טעים בצמח",
+    "type": "restaurant",
+    "cityId": "צמח",
+    "address": "מפעלים אזוריים, צמח",
+    "phone": "04-638-8745",
+    "location": {
+      "latitude": 32.7195,
+      "longitude": 35.5861
+    },
+    "openingHours": "א'-ה' 08:00-19:00 | ו' סגור | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20",
+    "kosherLevel": "regular",
+    "kosherAuthorityGroup": "rabbinate"
+  },
+  {
+    "id": "shawarmoosAfula-440a94d0",
+    "name": "שווארמוס",
+    "type": "restaurant",
+    "cityId": "עפולה",
+    "address": "קהילת ציון 4, עפולה",
+    "phone": "04-659-7550",
+    "location": {
+      "latitude": 32.6086,
+      "longitude": 35.2832
+    },
+    "openingHours": "א'-ה' 10:00-20:00 | ו' 08:00-15:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20",
+    "kosherLevel": "regular",
+    "kosherAuthorityGroup": "rabbinate"
+  },
+  {
+    "id": "mesoov-58b2a940",
+    "name": "מסוב",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "יפו 234, ירושלים",
+    "phone": "02-538-9413",
+    "location": {
+      "latitude": 31.7872,
+      "longitude": 35.2214
+    },
+    "openingHours": "א'-ה' 09:00-22:30 | ו' 09:00-15:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "drorJLM-e625c140",
+    "name": "דרור הקטן",
+    "type": "restaurant",
+    "cityId": "ירושלים",
+    "address": "א.ש. הרטום, ירושלים",
+    "phone": "02-579-0109",
+    "location": {
+      "latitude": 31.7526,
+      "longitude": 35.1954
+    },
+    "openingHours": "א'-ה' 07:30-19:30 | ו' 09:00-13:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "mehadrin",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20",
+    "kosherLevel": "mehadrin",
+    "kosherAuthorityGroup": "unknown"
+  },
+  {
+    "id": "tomer-bbce02a8",
+    "name": "שווארמה תומר",
+    "type": "restaurant",
+    "cityId": "יבנה",
+    "address": "שדרות העצמאות 15, יבנה",
+    "phone": "072-323-4728",
+    "location": {
+      "latitude": 31.8702,
+      "longitude": 34.7444
+    },
+    "openingHours": "א'-ה' 11:00-22:00 | ו' 09:00-14:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20",
+    "kosherLevel": "regular",
+    "kosherAuthorityGroup": "rabbinate"
+  },
+  {
+    "id": "cohenbeertuvia-e28b52c8",
+    "name": "שווארמה כהן",
+    "type": "restaurant",
+    "cityId": "באר טוביה",
+    "address": "באר טוביה",
+    "phone": "072-313-9162",
+    "location": {
+      "latitude": 31.7266,
+      "longitude": 34.7424
+    },
+    "openingHours": "א'-ה' 07:30-19:30 | ו' 09:00-13:00 | ש' סגור",
+    "category": "meat",
+    "kosherType": "rabanut",
+    "tags": [
+      "shawarma"
+    ],
+    "source": "manual",
+    "lastVerifiedAt": "2026-07-20",
+    "kosherLevel": "regular",
+    "kosherAuthorityGroup": "rabbinate"
+  }
+]

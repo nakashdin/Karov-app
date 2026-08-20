@@ -1,0 +1,202 @@
+[
+  {
+    "id": "osm-node-1763031739",
+    "name": "לורנס",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "אילת",
+    "website": "https://www.lawrence-eilat.co.il",
+    "instagram": "https://www.instagram.com/lawrence__eilat/",
+    "facebook": "https://www.facebook.com/LawrenceHerodsVitalis"
+  },
+  {
+    "id": "osm-node-1763972919",
+    "name": "קפה בולבארד",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "אילת",
+    "website": "https://www.cafeboulevard.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "osm-node-2069701110",
+    "name": "בורגרים הרצליה פיתוח",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "גליל ים",
+    "website": "https://www.iburgerim.co.il/",
+    "instagram": "https://www.instagram.com/burgerimisrael",
+    "facebook": "https://www.facebook.com/burgerimisrael"
+  },
+  {
+    "id": "osm-node-2078991165",
+    "name": "קפה פורטיולי",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "חצור הגלילית",
+    "website": null,
+    "instagram": "https://www.instagram.com/portioli_restaurant",
+    "facebook": null
+  },
+  {
+    "id": "osm-node-4161854779",
+    "name": "Cake Art",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "תל אביב–יפו",
+    "website": "https://cake-art.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "osm-node-4828911835",
+    "name": "בלאק",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "פתח תקווה",
+    "website": "https://blackbarburger.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "osm-node-5143595379",
+    "name": "איטליה הקטנה",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "קרית שמונה",
+    "website": "https://www.pizzacenterks.co.il",
+    "instagram": "https://www.instagram.com/pizza_center1",
+    "facebook": null
+  },
+  {
+    "id": "osm-node-5894335311",
+    "name": "קאסה דל פפה",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "רחובות",
+    "website": "https://casa-del-pepe.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "osm-node-6195004555",
+    "name": "דה לה פה",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "רחובות",
+    "website": "https://delapaix.co.il",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "osm-node-6754328385",
+    "name": "הבורגנים",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "רמת רחל",
+    "website": "https://haburganim.com",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "osm-node-6854597174",
+    "name": "110 Burger",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "בית שמש",
+    "website": "https://110burger.com",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "osm-node-8142743152",
+    "name": "בורגרים נתניה סונול",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "נתניה",
+    "website": "https://www.iburgerim.co.il/",
+    "instagram": "https://www.instagram.com/burgerimisrael",
+    "facebook": "https://www.facebook.com/burgerimisrael"
+  },
+  {
+    "id": "osm-node-11397608290",
+    "name": "Hummus Elihau",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "נוה ימין",
+    "website": "https://www.humuselihu.co.il",
+    "instagram": "https://www.instagram.com/humus_elihu",
+    "facebook": "https://www.facebook.com/HumusElihu"
+  },
+  {
+    "id": "osm-node-12547329544",
+    "name": "פיצה טוביה",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "שוהם",
+    "website": "https://www.pizzatuvia.co.il/blank-1",
+    "instagram": "https://www.instagram.com/pizza_tuvia/",
+    "facebook": null
+  },
+  {
+    "id": "humus-eli-חומוס-אליהו-באר-שבע-פז-צפון",
+    "name": "חומוס אליהו באר שבע פז צפון",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "באר שבע",
+    "website": "https://www.humus-eli-yahoo.com/",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "humus-eli-חומוס-אליהו-בית-שמש-סאן-מול",
+    "name": "חומוס אליהו בית שמש סאן מול",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "בית שמש",
+    "website": "https://www.humus-eli-yahoo.com/",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "humus-eli-חומוס-אליהו-גבעת-שאול-ירושלים",
+    "name": "חומוס אליהו גבעת שאול",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "ירושלים",
+    "website": "https://www.humus-eli-yahoo.com/",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "humus-eli-חומוס-אליהו-הרצליה-פיתוח",
+    "name": "חומוס אליהו הרצליה פיתוח",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "הרצליה",
+    "website": "https://www.humus-eli-yahoo.com/",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "humus-eli-חומוס-אליהו-טבריה-הגליל",
+    "name": "חומוס אליהו טבריה הגליל",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "טבריה",
+    "website": "https://www.humus-eli-yahoo.com/",
+    "instagram": null,
+    "facebook": null
+  },
+  {
+    "id": "humus-eli-חומוס-אליהו-ים-המלח-עין-בוקק",
+    "name": "חומוס אליהו ים המלח",
+    "type": "restaurant",
+    "category": "parve",
+    "cityId": "ים המלח",
+    "website": "https://www.humus-eli-yahoo.com/",
+    "instagram": null,
+    "facebook": null
+  }
+]

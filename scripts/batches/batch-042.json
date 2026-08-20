@@ -1,0 +1,102 @@
+[
+  {
+    "id": "middle-east-nachmani-b255bb12",
+    "name": "מידל איסט",
+    "type": "fast_food",
+    "category": "meat",
+    "cityId": "תל אביב",
+    "website": "https://middle-east.co.il/",
+    "instagram": "https://www.instagram.com/middle.east.rest/",
+    "facebook": null
+  },
+  {
+    "id": "pita-basar-3584d964",
+    "name": "פיתה בשר",
+    "type": "fast_food",
+    "category": "meat",
+    "cityId": "תל אביב",
+    "website": "https://www.pitabasar.co.il/",
+    "instagram": "https://www.instagram.com/pita.basar/",
+    "facebook": "https://www.facebook.com/pita.basar/"
+  },
+  {
+    "id": "red-meat-nachalat-6f0131c6",
+    "name": "רד מיט",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "תל אביב",
+    "website": "https://redmeat-tlv.co.il/",
+    "instagram": "https://www.instagram.com/redmeat.bograshov/",
+    "facebook": "https://www.facebook.com/red.meat100/"
+  },
+  {
+    "id": "cafe-taizu-sharona-259b7497",
+    "name": "קפה טאיזו",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "תל אביב",
+    "website": "https://www.cafetaizu.co.il/",
+    "instagram": "https://www.instagram.com/taizurestaurant/",
+    "facebook": "https://www.facebook.com/TaizuRestaurant/"
+  },
+  {
+    "id": "donatello-ibn-gavirol-64c47e19",
+    "name": "פיצה דונטלו",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "תל אביב",
+    "website": null,
+    "instagram": "https://www.instagram.com/pizza_donattelo/",
+    "facebook": "https://www.facebook.com/DonatteloPizzaAndMore/"
+  },
+  {
+    "id": "carne-bar-yehudit-01784a36",
+    "name": "קרנה בר",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "תל אביב",
+    "website": "https://carnebar.co.il/",
+    "instagram": "https://www.instagram.com/carnebar.22/",
+    "facebook": null
+  },
+  {
+    "id": "wok-sushi9-yigal129-1aec4a1b",
+    "name": "ווק סושי 9",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "תל אביב",
+    "website": "https://woksushi9.co.il/",
+    "instagram": "https://www.instagram.com/wok.sushi9/",
+    "facebook": "https://www.facebook.com/woksushi9/"
+  },
+  {
+    "id": "babica-rothschild60-dffc1f2d",
+    "name": "באביקה",
+    "type": "restaurant",
+    "category": "dairy",
+    "cityId": "תל אביב",
+    "website": null,
+    "instagram": "https://www.instagram.com/babica_tlv/",
+    "facebook": null
+  },
+  {
+    "id": "port19-shlomo2-56313712",
+    "name": "פורט 19",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "תל אביב",
+    "website": "https://port-19.co.il/",
+    "instagram": "https://www.instagram.com/port19.il/",
+    "facebook": "https://www.facebook.com/Port19/"
+  },
+  {
+    "id": "itzik-hagadol-jlm2-265f4957",
+    "name": "איציק הגדול השווארמה",
+    "type": "restaurant",
+    "category": "meat",
+    "cityId": "תל אביב",
+    "website": "https://delivery.itzikhagadol.co.il/",
+    "instagram": "https://www.instagram.com/itzikhagadol/",
+    "facebook": "https://www.facebook.com/itsikhagadol/"
+  }
+]
