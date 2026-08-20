@@ -1,6 +1,10 @@
+import { elulCardText, elulDetails, getElulState } from './selichot';
+
 export interface JewishStaticEvent {
   title: string;
   body: string;
+  /** Long-form paragraphs, shown only in the modal (not on the card) */
+  details?: string[];
   category: 'hilula' | 'historical' | 'special';
 }
 
@@ -195,3 +199,62 @@ export const JEWISH_STATIC_EVENTS: Record<string, JewishStaticEvent[]> = {
     category: 'special',
   }],
 };
+
+/**
+ * A stretch of days that carries its own meaning (Elul, the Ten Days of
+ * Repentance). Unlike JEWISH_STATIC_EVENTS these are not a single date, so they
+ * are matched by a Hebrew-month day range — and their text is resolved per day,
+ * since what is true on 2 Elul is not true on Shabbat or on Erev Rosh Hashana.
+ */
+export interface JewishPeriodContext {
+  /** Hebrew day of month */
+  hebrewDay: number;
+  /** Weekday, 0 = Sunday */
+  weekday: number;
+}
+
+export interface JewishPeriod {
+  id: string;
+  /** Hebcal Hebrew month name */
+  month: string;
+  /** Inclusive Hebrew day range */
+  fromDay: number;
+  toDay: number;
+  resolve(ctx: JewishPeriodContext): { title: string; body: string; details: string[] };
+}
+
+function resolveElul(month: string) {
+  return (ctx: JewishPeriodContext) => {
+    // 30 Av is the first of the two Rosh Chodesh Elul days — day 0.
+    const elulDay = month === 'Av' ? 0 : ctx.hebrewDay;
+    const state = getElulState(elulDay, ctx.weekday);
+    return { ...elulCardText(state), details: elulDetails(state) };
+  };
+}
+
+export const JEWISH_PERIODS: JewishPeriod[] = [
+  { id: 'elul-rc', month: 'Av', fromDay: 30, toDay: 30, resolve: resolveElul('Av') },
+  { id: 'elul', month: 'Elul', fromDay: 1, toDay: 29, resolve: resolveElul('Elul') },
+  {
+    id: 'aseret-yemei-teshuva',
+    month: 'Tishrei',
+    fromDay: 1,
+    toDay: 10,
+    resolve: () => ({
+      title: 'עשרת ימי תשובה',
+      body: 'מראש השנה ועד יום הכיפורים — חתימתם של ארבעים ימי הרחמים שהחלו בראש חודש אלול.',
+      details: [
+        'עשרת ימי תשובה הם עשרת הימים האחרונים מתוך ארבעים ימי הרצון שהחלו בראש חודש אלול, ובהם נחתם הדין שנפתח בראש השנה.',
+        'ממשיכים באמירת סליחות עד ערב יום הכיפורים. בשבת שביניהם — שבת שובה — קוראים בהפטרה ״שובה ישראל עד ה׳ אלוקיך״.',
+      ],
+    }),
+  },
+];
+
+/** All periods that contain the given Hebrew date. */
+export function getJewishPeriods(month: string, day: number): JewishPeriod[] {
+  if (!month || !day) return [];
+  return JEWISH_PERIODS.filter(
+    (p) => p.month === month && day >= p.fromDay && day <= p.toDay,
+  );
+}

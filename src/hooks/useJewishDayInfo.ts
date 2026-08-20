@@ -1,11 +1,15 @@
 import { useEffect, useState } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { JEWISH_STATIC_EVENTS } from '../data/jewishEvents';
+import { JEWISH_STATIC_EVENTS, getJewishPeriods } from '../data/jewishEvents';
 
 export interface JewishDayInfo {
   title: string;
   body: string;
+  /** Long-form paragraphs for the modal — e.g. the Elul / Selichot background */
+  details?: string[];
 }
+
+const HEBREW_RE = /[֐-׿]/;
 
 function todayISO(): string {
   const d = new Date();
@@ -28,7 +32,7 @@ export function useJewishDayInfo(): JewishDayInfo | null {
   useEffect(() => {
     const iso = todayISO();
     const [y, m, d] = iso.split('-').map(Number);
-    const cacheKey = `@karov/jewishDay2_${iso}`;
+    const cacheKey = `@karov/jewishDay4_${iso}`;
 
     let mounted = true;
 
@@ -53,11 +57,16 @@ export function useJewishDayInfo(): JewishDayInfo | null {
         const calJson = await calResp.json();
         const convJson = await convResp.json();
 
-        const hMonth: string = convJson.heDateParts?.m ?? '';
-        const hDay: number = parseInt(convJson.heDateParts?.d ?? '0', 10);
+        // Use hm/hd, not heDateParts — the latter is Hebrew text ("אלול", "ז׳"),
+        // which never matches our English month keys and parses to NaN.
+        const hMonth: string = convJson.hm ?? '';
+        const hDay: number = Number(convJson.hd ?? 0);
         const staticEvents = hMonth && hDay
           ? (JEWISH_STATIC_EVENTS[`${hMonth}_${hDay}`] ?? [])
           : [];
+        const weekday = new Date(y, m - 1, d).getDay();
+        const period = getJewishPeriods(hMonth, hDay)[0]
+          ?.resolve({ hebrewDay: hDay, weekday }) ?? null;
 
         const allItems: any[] = calJson.items ?? [];
         const todayItems = allItems.filter(
@@ -90,16 +99,20 @@ export function useJewishDayInfo(): JewishDayInfo | null {
               .join(' • ')
               .slice(0, 120);
           }
+          if (!body || !HEBREW_RE.test(body)) body = period?.body ?? body;
           if (!body) body = 'לחץ לפרטים נוספים';
 
-          result = { title, body };
+          result = { title, body, details: staticEvents[0]?.details };
         } else if (staticEvents.length > 0) {
           const ev = staticEvents[0];
           const extras = staticEvents.slice(1).map((e) => e.title).join(' • ');
           result = {
             title: ev.title,
             body: ev.body + (extras ? ` • ${extras}` : ''),
+            details: ev.details,
           };
+        } else if (period) {
+          result = { title: period.title, body: period.body };
         } else {
           // Look ahead up to 14 days
           const upcomingItem = allItems.find((i: any) => {
@@ -118,6 +131,11 @@ export function useJewishDayInfo(): JewishDayInfo | null {
           } else {
             result = { title: 'הלוח העברי', body: 'אין אירועים מיוחדים להיום' };
           }
+        }
+
+        // Elul / Aseret Yemei Teshuva background reads under whatever the day is
+        if (period) {
+          result.details = [...(result.details ?? []), ...period.details];
         }
 
         if (mounted) setInfo(result);
