@@ -30,7 +30,7 @@ export function KarovLevContentScreen() {
   const route = useRoute<Route>();
   const insets = useSafeAreaInsets();
   const item = useMemo(() => resolveItem(route.params.id), [route.params.id]);
-  const { isRead, markRead, load } = useDailyReads();
+  const { isRead, toggleRead, load } = useDailyReads();
 
   useEffect(() => { load(); }, []);
 
@@ -126,7 +126,7 @@ export function KarovLevContentScreen() {
           </Pressable>
           <Pressable
             style={styles.actionBtn}
-            onPress={() => markRead(item.id)}
+            onPress={() => toggleRead(item.id)}
             accessibilityRole="button"
             accessibilityLabel={isRead(item.id) ? 'סומן כנקרא' : 'סמן כנקרא'}
           >

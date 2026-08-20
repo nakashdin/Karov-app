@@ -87,6 +87,46 @@ export const PLACEHOLDER_CONTENT: PlaceholderItem[] = [
     isPlaceholder: true,
   },
   {
+    id: 'ph-emunah-01',
+    contentType: 'mussar',
+    topics: ['emunah', 'yirat_shamayim'],
+    title: 'כשה׳ מנהל — אנחנו שלווים',
+    karovSummary:
+      'אמונה אמיתית היא לא רק אמירה — היא תחושה פנימית שאיננו לבד, שיש מי שמנהל ורואה.',
+    karovExplanation:
+      'מי שמאמין שה׳ מנהל את עולמו לא פירושו שהוא פסיבי — אלא שהוא פועל בשלווה. האמונה נותנת בסיס יציב מתחת לרגליים גם כשהכל לא ברור. מחשבת "ה׳ רואה" מביאה הקלה של ממש.',
+    dailyTakeaway:
+      'כשמשהו קשה היום, אמור לעצמך: "ה׳ רואה ויודע." שלוש מילים שיכולות לשנות את המצב הרגשי.',
+    source: {
+      work: { title: 'פלייסהולדר — לצורכי פיתוח UI בלבד' },
+      reference: 'placeholder',
+      version: { licenseStatus: 'needs_review' },
+    },
+    readingTimeMinutes: 2,
+    reviewStatus: 'draft',
+    isPlaceholder: true,
+  },
+  {
+    id: 'ph-tefilla-02',
+    contentType: 'thought',
+    topics: ['tefilla', 'ahavat_hashem'],
+    title: 'כל תפילה נספרת',
+    karovSummary:
+      'אפילו כשנדמה שהתפילה לא "עובדת" — המעשה עצמו של הפנייה לה׳ בונה קשר.',
+    karovExplanation:
+      'לא כל תפילה מביאה את מה שביקשנו, אבל כל תפילה בונה. כמו שיחה בין אב לבנו — לא כל בקשה מתמלאת, אבל כל שיחה מעמיקה את הקשר. התפילה היא הדרך, לא רק האמצעי.',
+    dailyTakeaway:
+      'היום, נסה להוסיף משפט אחד אישי בתפילה. לא מהסידור — משלך. זו תפילה שלמה.',
+    source: {
+      work: { title: 'פלייסהולדר — לצורכי פיתוח UI בלבד' },
+      reference: 'placeholder',
+      version: { licenseStatus: 'needs_review' },
+    },
+    readingTimeMinutes: 2,
+    reviewStatus: 'draft',
+    isPlaceholder: true,
+  },
+  {
     id: 'ph-shabbat-01',
     contentType: 'thought',
     topics: ['shabbat'],

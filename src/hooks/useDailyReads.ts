@@ -21,10 +21,14 @@ export function useDailyReads() {
     }
   }, []);
 
-  const markRead = useCallback(async (id: string) => {
+  const toggleRead = useCallback(async (id: string) => {
     setReadIds((prev) => {
       const next = new Set(prev);
-      next.add(id);
+      if (next.has(id)) {
+        next.delete(id);
+      } else {
+        next.add(id);
+      }
       AsyncStorage.setItem(getTodayKey(), JSON.stringify([...next])).catch(() => {});
       return next;
     });
@@ -32,5 +36,5 @@ export function useDailyReads() {
 
   const isRead = useCallback((id: string) => readIds.has(id), [readIds]);
 
-  return { readIds, markRead, isRead, load };
+  return { readIds, toggleRead, isRead, load };
 }

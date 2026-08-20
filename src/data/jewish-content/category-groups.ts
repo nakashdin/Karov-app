@@ -92,17 +92,20 @@ export function itemMatchesCategories(topics: Topic[], groups: CategoryGroup[]):
   return topics.some((t) => getCategoriesForTopic(t).some((c) => groups.includes(c)));
 }
 
-// Returns the first category (by topic order) that the item maps to, among selectedGroups.
-// Returns null if the item has no match.
+// Assigns an item to exactly one category based on its FIRST topic that has a category.
+// If that first-categorized topic belongs to a selected group → show the item there.
+// If it belongs to a non-selected group → exclude the item entirely (no bleed-through).
+// This ensures tefilla items never appear in emunah_bitachon sections and vice versa.
 export function getPrimaryCategory(
   topics: Topic[],
   selectedGroups: CategoryGroup[]
 ): CategoryGroup | null {
   for (const topic of topics) {
     const cats = getCategoriesForTopic(topic);
-    for (const cat of cats) {
-      if (selectedGroups.includes(cat)) return cat;
-    }
+    if (cats.length === 0) continue; // topic has no category, skip to next
+    // This is the item's primary topic. Its category determines membership.
+    const match = cats.find((c) => selectedGroups.includes(c));
+    return match ?? null; // return the match, or null if primary category not selected
   }
   return null;
 }
