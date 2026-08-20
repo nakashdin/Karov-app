@@ -27,7 +27,8 @@ import { TEHILLIM_TEXT } from '../data/tehillimText';
 type ViewState =
   | { type: 'list' }
   | { type: 'nusach'; blessing: Blessing }
-  | { type: 'text'; blessing: Blessing; nusach?: Nusach }
+  | { type: 'text'; blessing: Blessing; nusach?: Nusach; useIgeret?: boolean }
+  | { type: 'igeret_picker'; blessing: Blessing }
   | { type: 'tehillim_days' }
   | { type: 'tehillim_day'; day: TehillimDay }
   | { type: 'tehillim_chapter'; chapterNum: number; day: TehillimDay };
@@ -42,8 +43,10 @@ export function BrachotScreen() {
 
   // ── Blessing text reader ──────────────────────────────────────────────────
   if (view.type === 'text') {
-    const { blessing, nusach } = view;
-    const paragraphs = nusach
+    const { blessing, nusach, useIgeret } = view;
+    const paragraphs = useIgeret
+      ? blessing.igeretParagraphs!
+      : nusach
       ? blessing.nusachim![nusach]
       : blessing.paragraphs!;
 
@@ -52,7 +55,9 @@ export function BrachotScreen() {
         <View style={styles.header}>
           <Pressable
             onPress={() =>
-              blessing.hasNusach
+              useIgeret || blessing.hasIgeret && !nusach
+                ? setView({ type: 'igeret_picker', blessing })
+                : blessing.hasNusach
                 ? setView({ type: 'nusach', blessing })
                 : setView({ type: 'list' })
             }
@@ -61,7 +66,7 @@ export function BrachotScreen() {
           >
             <Ionicons name="chevron-forward" size={22} color={colors.primary} />
             <Text style={styles.backText}>
-              {blessing.hasNusach ? blessing.title : 'תפילה'}
+              {useIgeret || (blessing.hasIgeret && !nusach) ? blessing.title : blessing.hasNusach ? blessing.title : 'תפילה'}
             </Text>
           </Pressable>
           <Text style={styles.headerTitle}>{blessing.title}</Text>
@@ -135,6 +140,57 @@ export function BrachotScreen() {
             <View style={styles.nusachTextBox}>
               <Text style={styles.nusachTitle}>נוסח ספרד</Text>
               <Text style={styles.nusachSub}>מנהג ספרד ועדות המזרח</Text>
+            </View>
+            <Ionicons name="chevron-back" size={18} color={colors.textMuted} />
+          </Pressable>
+        </View>
+      </Screen>
+    );
+  }
+
+  // ── Igeret HaRamban picker ────────────────────────────────────────────────
+  if (view.type === 'igeret_picker') {
+    const { blessing } = view;
+    return (
+      <Screen padded>
+        <View style={styles.header}>
+          <Pressable
+            onPress={() => setView({ type: 'list' })}
+            style={styles.backBtn}
+            hitSlop={10}
+          >
+            <Ionicons name="chevron-forward" size={22} color={colors.primary} />
+            <Text style={styles.backText}>תפילה</Text>
+          </Pressable>
+          <Text style={styles.headerTitle}>{blessing.title}</Text>
+          <View style={{ width: 60 }} />
+        </View>
+
+        <View style={styles.nusachCards}>
+          <Pressable
+            style={styles.nusachCard}
+            onPress={() => setView({ type: 'text', blessing })}
+          >
+            <View style={styles.nusachIcon}>
+              <Text style={styles.emoji}>📖</Text>
+            </View>
+            <View style={styles.nusachTextBox}>
+              <Text style={styles.nusachTitle}>על האגרת עצמה</Text>
+              <Text style={styles.nusachSub}>מהי האגרת ומדוע לקוראה</Text>
+            </View>
+            <Ionicons name="chevron-back" size={18} color={colors.textMuted} />
+          </Pressable>
+
+          <Pressable
+            style={styles.nusachCard}
+            onPress={() => setView({ type: 'text', blessing, useIgeret: true })}
+          >
+            <View style={styles.nusachIcon}>
+              <Text style={styles.emoji}>📜</Text>
+            </View>
+            <View style={styles.nusachTextBox}>
+              <Text style={styles.nusachTitle}>האגרת</Text>
+              <Text style={styles.nusachSub}>הטקסט המלא — לקריאה שבועית</Text>
             </View>
             <Ionicons name="chevron-back" size={18} color={colors.textMuted} />
           </Pressable>
@@ -375,7 +431,9 @@ export function BrachotScreen() {
     setQuery={setQuery}
     todayIndex={todayIndex}
     onBlessing={(b) =>
-      b.hasNusach
+      b.hasIgeret
+        ? setView({ type: 'igeret_picker', blessing: b })
+        : b.hasNusach
         ? setView({ type: 'nusach', blessing: b })
         : setView({ type: 'text', blessing: b })
     }
