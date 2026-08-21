@@ -1,11 +1,11 @@
-export type Nusach = 'ashkenaz' | 'sfarad';
+export type Nusach = 'ashkenaz' | 'sfarad' | 'edot_hamizrach';
 
 export interface BrachaParagraph {
   title?: string;
   text: string;
 }
 
-export const BIRKAT_HAMAZON: Record<Nusach, BrachaParagraph[]> = {
+export const BIRKAT_HAMAZON: { ashkenaz: BrachaParagraph[]; sfarad: BrachaParagraph[] } = {
   ashkenaz: [
     {
       title: 'זימון',

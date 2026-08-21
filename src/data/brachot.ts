@@ -14,7 +14,7 @@ export interface Blessing {
   hasIgeret?: boolean;
   paragraphs?: BrachaParagraph[];
   igeretParagraphs?: BrachaParagraph[];
-  nusachim?: { ashkenaz: BrachaParagraph[]; sfarad: BrachaParagraph[] };
+  nusachim?: { ashkenaz: BrachaParagraph[]; sfarad: BrachaParagraph[]; edot_hamizrach?: BrachaParagraph[] };
 }
 
 export interface BrachotCategory {

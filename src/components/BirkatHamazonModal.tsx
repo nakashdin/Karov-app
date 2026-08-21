@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   Modal,
   Pressable,
@@ -9,97 +9,58 @@ import {
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { colors, radius, spacing } from '../theme';
-import { BIRKAT_HAMAZON, Nusach } from '../data/birkatHamazon';
+import { BIRKAT_HAMAZON } from '../data/birkatHamazon';
+import { useNusach } from '../hooks/useNusach';
 
 interface Props {
   visible: boolean;
   onClose: () => void;
 }
 
+const NUSACH_LABEL = { ashkenaz: 'נוסח אשכנז', sfarad: 'נוסח ספרד', edot_hamizrach: 'נוסח עדות המזרח' } as const;
+
 export function BirkatHamazonModal({ visible, onClose }: Props) {
-  const [nusach, setNusach] = useState<Nusach | null>(null);
-
-  const handleClose = () => {
-    setNusach(null);
-    onClose();
-  };
-
-  const paragraphs = nusach ? BIRKAT_HAMAZON[nusach] : null;
+  const { nusach } = useNusach();
+  const resolvedKey = nusach === 'edot_hamizrach' ? 'sfarad' : (nusach ?? 'sfarad');
+  const paragraphs = BIRKAT_HAMAZON[resolvedKey];
 
   return (
     <Modal
       visible={visible}
       animationType="slide"
       transparent
-      onRequestClose={handleClose}
+      onRequestClose={onClose}
     >
-      <Pressable style={styles.backdrop} onPress={handleClose} />
+      <Pressable style={styles.backdrop} onPress={onClose} />
 
       <View style={styles.sheet}>
         {/* Header */}
         <View style={styles.header}>
-          {nusach ? (
-            <Pressable onPress={() => setNusach(null)} hitSlop={10} style={styles.backBtn}>
-              <Ionicons name="chevron-forward" size={20} color={colors.primary} />
-              <Text style={styles.backText}>בחירת נוסח</Text>
-            </Pressable>
-          ) : (
-            <View />
-          )}
+          <View />
           <Text style={styles.headerTitle}>ברכת המזון</Text>
-          <Pressable onPress={handleClose} hitSlop={10}>
+          <Pressable onPress={onClose} hitSlop={10}>
             <Ionicons name="close" size={22} color={colors.textMuted} />
           </Pressable>
         </View>
 
-        {!nusach ? (
-          /* Nusach selector */
-          <View style={styles.selectorBody}>
-            <Text style={styles.selectorHint}>בחר נוסח</Text>
-
-            <Pressable style={styles.nusachCard} onPress={() => setNusach('ashkenaz')}>
-              <View style={styles.nusachIcon}>
-                <Text style={styles.nusachEmoji}>🕍</Text>
-              </View>
-              <View style={styles.nusachText}>
-                <Text style={styles.nusachTitle}>נוסח אשכנז</Text>
-                <Text style={styles.nusachSub}>מנהג אשכנז</Text>
-              </View>
-              <Ionicons name="chevron-back" size={18} color={colors.textMuted} />
-            </Pressable>
-
-            <Pressable style={styles.nusachCard} onPress={() => setNusach('sfarad')}>
-              <View style={styles.nusachIcon}>
-                <Text style={styles.nusachEmoji}>🕌</Text>
-              </View>
-              <View style={styles.nusachText}>
-                <Text style={styles.nusachTitle}>נוסח ספרד</Text>
-                <Text style={styles.nusachSub}>מנהג ספרד ועדות המזרח</Text>
-              </View>
-              <Ionicons name="chevron-back" size={18} color={colors.textMuted} />
-            </Pressable>
-          </View>
-        ) : (
-          /* Text view */
-          <ScrollView
-            style={styles.textScroll}
-            contentContainerStyle={styles.textContent}
-            showsVerticalScrollIndicator={false}
-          >
-            <Text style={styles.nusachLabel}>
-              {nusach === 'ashkenaz' ? 'נוסח אשכנז' : 'נוסח ספרד'}
-            </Text>
-            {paragraphs!.map((para, i) => (
-              <View key={i} style={styles.para}>
-                {para.title ? (
-                  <Text style={styles.paraTitle}>{para.title}</Text>
-                ) : null}
-                <Text style={styles.paraText}>{para.text}</Text>
-              </View>
-            ))}
-            <View style={styles.bottomPad} />
-          </ScrollView>
-        )}
+        <ScrollView
+          style={styles.textScroll}
+          contentContainerStyle={styles.textContent}
+          showsVerticalScrollIndicator={false}
+        >
+          {nusach ? (
+            <Text style={styles.nusachLabel}>{NUSACH_LABEL[nusach]}</Text>
+          ) : null}
+          {paragraphs.map((para, i) => (
+            <View key={i} style={styles.para}>
+              {para.title ? (
+                <Text style={styles.paraTitle}>{para.title}</Text>
+              ) : null}
+              <Text style={styles.paraText}>{para.text}</Text>
+            </View>
+          ))}
+          <View style={styles.bottomPad} />
+        </ScrollView>
       </View>
     </Modal>
   );

@@ -12,6 +12,7 @@ import { Screen } from '../components/Screen';
 import { colors, radius, shadow, spacing } from '../theme';
 import { BRACHOT_CATEGORIES, Blessing } from '../data/brachot';
 import { Nusach } from '../data/birkatHamazon';
+import { useNusach } from '../hooks/useNusach';
 import { useHalachicDate } from '../hooks/useHalachicDate';
 import {
   TEHILLIM_BAKASHA,
@@ -26,10 +27,16 @@ import { TEHILLIM_TEXT } from '../data/tehillimText';
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
+const NUSACH_LABEL: Record<Nusach, string> = {
+  ashkenaz: '🕍 נוסח אשכנז',
+  sfarad: '🕌 נוסח ספרד',
+  edot_hamizrach: '✡️ נוסח עדות המזרח',
+};
+
 type ViewState =
   | { type: 'list' }
-  | { type: 'nusach'; blessing: Blessing }
-  | { type: 'text'; blessing: Blessing; nusach?: Nusach; useIgeret?: boolean }
+  | { type: 'global_nusach_picker' }
+  | { type: 'text'; blessing: Blessing; useIgeret?: boolean }
   | { type: 'igeret_picker'; blessing: Blessing }
   | { type: 'tehillim_days' }
   | { type: 'tehillim_bakasha' }
@@ -41,17 +48,35 @@ type ViewState =
 export function BrachotScreen() {
   const [view, setView] = useState<ViewState>({ type: 'list' });
   const [query, setQuery] = useState('');
+  const { nusach, loaded, setNusach } = useNusach();
 
   // Sunset, not midnight — see useHalachicDate.
   const { weekday: todayIndex } = useHalachicDate();
 
+  if (!loaded) return null;
+
+  if (!nusach && view.type !== 'global_nusach_picker') {
+    return (
+      <Screen padded>
+        <GlobalNusachPickerView
+          canGoBack={false}
+          onSelect={setNusach}
+          onBack={() => setView({ type: 'list' })}
+        />
+      </Screen>
+    );
+  }
+
   // ── Blessing text reader ──────────────────────────────────────────────────
   if (view.type === 'text') {
-    const { blessing, nusach, useIgeret } = view;
+    const { blessing, useIgeret } = view;
+    const resolvedNusach = nusach === 'edot_hamizrach'
+      ? (blessing.nusachim?.edot_hamizrach ? 'edot_hamizrach' : 'sfarad')
+      : (nusach ?? 'sfarad');
     const paragraphs = useIgeret
       ? blessing.igeretParagraphs!
-      : nusach
-      ? blessing.nusachim![nusach]
+      : blessing.hasNusach && blessing.nusachim
+      ? (blessing.nusachim[resolvedNusach as 'ashkenaz' | 'sfarad'] ?? blessing.nusachim.sfarad)
       : blessing.paragraphs!;
 
     return (
@@ -59,10 +84,8 @@ export function BrachotScreen() {
         <View style={styles.header}>
           <Pressable
             onPress={() =>
-              useIgeret || blessing.hasIgeret && !nusach
+              useIgeret || blessing.hasIgeret
                 ? setView({ type: 'igeret_picker', blessing })
-                : blessing.hasNusach
-                ? setView({ type: 'nusach', blessing })
                 : setView({ type: 'list' })
             }
             style={styles.backBtn}
@@ -70,17 +93,15 @@ export function BrachotScreen() {
           >
             <Ionicons name="chevron-forward" size={22} color={colors.primary} />
             <Text style={styles.backText}>
-              {useIgeret || (blessing.hasIgeret && !nusach) ? blessing.title : blessing.hasNusach ? blessing.title : 'תפילה'}
+              {useIgeret || blessing.hasIgeret ? blessing.title : 'תפילה'}
             </Text>
           </Pressable>
           <Text style={styles.headerTitle}>{blessing.title}</Text>
           <View style={{ width: 60 }} />
         </View>
 
-        {nusach ? (
-          <Text style={styles.nusachLabel}>
-            {nusach === 'ashkenaz' ? '🕍 נוסח אשכנז' : '🕌 נוסח ספרד'}
-          </Text>
+        {blessing.hasNusach && nusach ? (
+          <Text style={styles.nusachLabel}>{NUSACH_LABEL[nusach]}</Text>
         ) : null}
 
         <ScrollView
@@ -101,53 +122,15 @@ export function BrachotScreen() {
     );
   }
 
-  // ── Nusach picker ─────────────────────────────────────────────────────────
-  if (view.type === 'nusach') {
-    const { blessing } = view;
+  // ── Global nusach picker (first run or via settings) ─────────────────────
+  if (view.type === 'global_nusach_picker') {
     return (
       <Screen padded>
-        <View style={styles.header}>
-          <Pressable
-            onPress={() => setView({ type: 'list' })}
-            style={styles.backBtn}
-            hitSlop={10}
-          >
-            <Ionicons name="chevron-forward" size={22} color={colors.primary} />
-            <Text style={styles.backText}>תפילה</Text>
-          </Pressable>
-          <Text style={styles.headerTitle}>{blessing.title}</Text>
-          <View style={{ width: 60 }} />
-        </View>
-
-        <View style={styles.nusachCards}>
-          <Pressable
-            style={styles.nusachCard}
-            onPress={() => setView({ type: 'text', blessing, nusach: 'ashkenaz' })}
-          >
-            <View style={styles.nusachIcon}>
-              <Text style={styles.emoji}>🕍</Text>
-            </View>
-            <View style={styles.nusachTextBox}>
-              <Text style={styles.nusachTitle}>נוסח אשכנז</Text>
-              <Text style={styles.nusachSub}>מנהג אשכנז</Text>
-            </View>
-            <Ionicons name="chevron-back" size={18} color={colors.textMuted} />
-          </Pressable>
-
-          <Pressable
-            style={styles.nusachCard}
-            onPress={() => setView({ type: 'text', blessing, nusach: 'sfarad' })}
-          >
-            <View style={styles.nusachIcon}>
-              <Text style={styles.emoji}>🕌</Text>
-            </View>
-            <View style={styles.nusachTextBox}>
-              <Text style={styles.nusachTitle}>נוסח ספרד</Text>
-              <Text style={styles.nusachSub}>מנהג ספרד ועדות המזרח</Text>
-            </View>
-            <Ionicons name="chevron-back" size={18} color={colors.textMuted} />
-          </Pressable>
-        </View>
+        <GlobalNusachPickerView
+          canGoBack={!!nusach}
+          onSelect={async (n) => { await setNusach(n); setView({ type: 'list' }); }}
+          onBack={() => setView({ type: 'list' })}
+        />
       </Screen>
     );
   }
@@ -493,11 +476,11 @@ export function BrachotScreen() {
     query={query}
     setQuery={setQuery}
     todayIndex={todayIndex}
+    nusach={nusach}
+    onChangeNusach={() => setView({ type: 'global_nusach_picker' })}
     onBlessing={(b) =>
       b.hasIgeret
         ? setView({ type: 'igeret_picker', blessing: b })
-        : b.hasNusach
-        ? setView({ type: 'nusach', blessing: b })
         : setView({ type: 'text', blessing: b })
     }
     onTehillim={() => setView({ type: 'tehillim_days' })}
@@ -507,12 +490,66 @@ export function BrachotScreen() {
   />;
 }
 
+// ─── Global nusach picker sub-view ────────────────────────────────────────────
+
+interface GNPProps {
+  canGoBack: boolean;
+  onSelect: (n: Nusach) => void;
+  onBack: () => void;
+}
+
+function GlobalNusachPickerView({ canGoBack, onSelect, onBack }: GNPProps) {
+  const OPTIONS: { nusach: Nusach; emoji: string; title: string; sub: string }[] = [
+    { nusach: 'ashkenaz', emoji: '🕍', title: 'נוסח אשכנז', sub: 'מנהג קהילות אשכנז ומזרח אירופה' },
+    { nusach: 'sfarad', emoji: '🕌', title: 'נוסח ספרד', sub: 'מנהג החסידים ויוצאי ספרד' },
+    { nusach: 'edot_hamizrach', emoji: '✡️', title: 'נוסח עדות המזרח', sub: 'מנהג ספרדים ועדות המזרח (שמ"ץ)' },
+  ];
+  return (
+    <>
+      {canGoBack ? (
+        <View style={styles.header}>
+          <Pressable onPress={onBack} style={styles.backBtn} hitSlop={10}>
+            <Ionicons name="chevron-forward" size={22} color={colors.primary} />
+            <Text style={styles.backText}>תפילה</Text>
+          </Pressable>
+          <Text style={styles.headerTitle}>בחירת נוסח</Text>
+          <View style={{ width: 60 }} />
+        </View>
+      ) : null}
+      <Text style={styles.gnpTitle}>מה הנוסח שלך?</Text>
+      <Text style={styles.gnpSub}>
+        הבחירה תשפיע על כל הנוסחים בתפילה.{'\n'}אפשר לשנות בכל עת.
+      </Text>
+      <View style={styles.nusachCards}>
+        {OPTIONS.map((opt) => (
+          <Pressable
+            key={opt.nusach}
+            style={styles.nusachCard}
+            onPress={() => onSelect(opt.nusach)}
+          >
+            <View style={styles.nusachIcon}>
+              <Text style={styles.emoji}>{opt.emoji}</Text>
+            </View>
+            <View style={styles.nusachTextBox}>
+              <Text style={styles.nusachTitle}>{opt.title}</Text>
+              <Text style={styles.nusachSub}>{opt.sub}</Text>
+            </View>
+            <Ionicons name="chevron-back" size={18} color={colors.textMuted} />
+          </Pressable>
+        ))}
+      </View>
+    </>
+  );
+}
+
 // ─── List / Search view ───────────────────────────────────────────────────────
 
 interface ListProps {
   query: string;
   setQuery: (q: string) => void;
   todayIndex: number;
+  nusach: Nusach | null;
+  onChangeNusach: () => void;
   onBlessing: (b: Blessing) => void;
   onTehillim: () => void;
   onChapter: (num: number, day: TehillimDay) => void;
@@ -522,6 +559,8 @@ function TfilaListView({
   query,
   setQuery,
   todayIndex,
+  nusach,
+  onChangeNusach,
   onBlessing,
   onTehillim,
   onChapter,
@@ -647,6 +686,15 @@ function TfilaListView({
       ) : (
         /* ── Normal list ── */
         <ScrollView showsVerticalScrollIndicator={false}>
+          <View style={styles.nusachBadgeRow}>
+            <Text style={styles.nusachBadgeText}>
+              {nusach ? NUSACH_LABEL[nusach] : ''}
+            </Text>
+            <Pressable onPress={onChangeNusach} hitSlop={8}>
+              <Text style={styles.nusachChangeBtn}>שנה נוסח</Text>
+            </Pressable>
+          </View>
+
           <Text style={styles.screenTitle}>תפילה</Text>
 
           {/* ── Tehillim section ── */}
@@ -717,6 +765,43 @@ function TfilaListView({
 // ─── Styles ───────────────────────────────────────────────────────────────────
 
 const styles = StyleSheet.create({
+  // Nusach badge row (in list view)
+  nusachBadgeRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingVertical: 8,
+    paddingHorizontal: 2,
+    marginBottom: 4,
+  },
+  nusachBadgeText: {
+    fontSize: 13,
+    fontWeight: '600',
+    color: colors.textMuted,
+  },
+  nusachChangeBtn: {
+    fontSize: 13,
+    fontWeight: '700',
+    color: colors.primary,
+  },
+
+  // Global nusach picker
+  gnpTitle: {
+    fontSize: 26,
+    fontWeight: '800',
+    color: colors.text,
+    textAlign: 'right',
+    marginTop: spacing.xl,
+    marginBottom: 6,
+  },
+  gnpSub: {
+    fontSize: 15,
+    color: colors.textMuted,
+    textAlign: 'right',
+    marginBottom: spacing.xxl,
+    lineHeight: 22,
+  },
+
   // Screen title
   screenTitle: {
     fontSize: 30,
