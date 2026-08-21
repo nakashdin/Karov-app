@@ -273,6 +273,51 @@ export async function openLocationSettings(host: HostInfo = getHostInfo()): Prom
   return false;
 }
 
+/**
+ * True where a changed OS setting is invisible to the page until it reloads.
+ *
+ * iOS caches the denial for the life of the page: after the user switches
+ * location back on in Settings, every further getCurrentPosition() keeps
+ * failing and no prompt appears, so retrying in place can never work.
+ */
+export function needsReloadAfterSettingsChange(host: HostInfo = getHostInfo()): boolean {
+  return host.isWeb && host.os === 'ios';
+}
+
+const RELOAD_COUNT_KEY = 'karov/loc-reload-count';
+const WAS_BLOCKED_KEY = 'karov/loc-was-blocked';
+
+function session(): Storage | null {
+  try {
+    return typeof sessionStorage === 'undefined' ? null : sessionStorage;
+  } catch {
+    return null;
+  }
+}
+
+/** Reload the page, at most `max` times per session so this can never loop. */
+export function reloadForSettingsChange(max = 2): boolean {
+  const store = session();
+  if (!store || typeof window === 'undefined') return false;
+  const count = Number(store.getItem(RELOAD_COUNT_KEY) || 0);
+  if (count >= max) return false;
+  store.setItem(RELOAD_COUNT_KEY, String(count + 1));
+  store.setItem(WAS_BLOCKED_KEY, '1');
+  window.location.reload();
+  return true;
+}
+
+/** Whether the guide was on screen before a reload, so we can restore it. */
+export function wasBlockedBeforeReload(): boolean {
+  return session()?.getItem(WAS_BLOCKED_KEY) === '1';
+}
+
+export function clearReloadState(): void {
+  const store = session();
+  store?.removeItem(RELOAD_COUNT_KEY);
+  store?.removeItem(WAS_BLOCKED_KEY);
+}
+
 export interface SettingsGuide {
   title: string;
   steps: string[];
@@ -302,36 +347,31 @@ export function getSettingsGuide(host: HostInfo = getHostInfo()): SettingsGuide 
     };
   }
 
-  if (host.os === 'ios' && host.standalone) {
-    return {
-      title: 'הפעלת מיקום ל״קרוב״',
-      steps: [
-        'פתח: הגדרות ← פרטיות ואבטחה ← שירותי מיקום',
-        'ודא ששירותי המיקום פועלים',
-        'גלול ברשימה ובחר ״קרוב״',
-        'בחר ״בעת השימוש באפליקציה״',
-        'חזור לקרוב',
-      ],
-      footer: retry,
-    };
-  }
-
+  // On iPhone the permission belongs to the browser, never to us: there is no
+  // "קרוב" row to look for, and a home-screen icon still rides on Safari's.
   if (host.os === 'ios') {
     const appName =
       host.browser === 'chrome' ? 'Chrome' : host.browser === 'firefox' ? 'Firefox' : 'Safari';
     const steps = [
       'פתח: הגדרות ← פרטיות ואבטחה ← שירותי מיקום',
       'ודא ששירותי המיקום פועלים',
-      `גלול ברשימה, בחר ${appName} ואז ״בעת השימוש באפליקציה״`,
+      `ברשימה בחר ${appName} ← ״בעת השימוש באפליקציה״`,
     ];
-    if (host.browser === 'safari') {
-      steps.push('חזור ל-Safari והקש על ״אA״ בשורת הכתובת');
-      steps.push('הגדרות עבור אתר זה ← מיקום ← ״אפשר״');
+
+    if (host.standalone) {
+      steps.push(`קרוב פועל דרך ${appName}, ולכן זו ההרשאה שקובעת`);
+    } else if (host.browser === 'safari') {
+      steps.push('חזור ל-Safari, הקש ״אA״ בשורת הכתובת ← הגדרות עבור אתר זה ← מיקום ← ״אפשר״');
     } else {
-      steps.push(`חזור ל-${appName} ← תפריט ⋮ ← הגדרות ← הגדרות אתרים ← מיקום ← ״אפשר״`);
+      steps.push(`חזור ל-${appName} ← ⋮ ← הגדרות ← הגדרות אתרים ← מיקום ← ״אפשר״`);
     }
-    steps.push('רענן את הדף');
-    return { title: 'הפעלת מיקום ב-iPhone', steps, footer: retry };
+
+    return {
+      title: 'הפעלת מיקום ב-iPhone',
+      steps,
+      // iOS only applies the change on a fresh page, which we do for them.
+      footer: 'חזור לקרוב — האפליקציה תיטען מחדש לבד ותמשיך.',
+    };
   }
 
   if (host.os === 'android') {
