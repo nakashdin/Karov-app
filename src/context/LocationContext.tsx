@@ -1,10 +1,22 @@
-import React, { createContext, useContext, useState, ReactNode, useEffect } from 'react';
+import React, {
+  createContext,
+  useContext,
+  useState,
+  ReactNode,
+  useEffect,
+  useRef,
+} from 'react';
+import { AppState, Platform } from 'react-native';
 import { GeoPoint } from '../types';
 import {
   checkLocationPermission,
   requestLocation,
   resolveLocationSilently,
+  verifyLocationAccess,
 } from '../utils/locationPermission';
+
+/** Wall-clock helper kept in one place so the revalidation throttle is testable. */
+const nowMs = () => Date.now();
 
 export function getCachedLocation(): GeoPoint | null {
   return (typeof window !== 'undefined' ? (window as any).__karovLoc : null) ?? null;
@@ -26,6 +38,10 @@ export function LocationProvider({ children }: { children: ReactNode }) {
   const [status, setStatus] = useState<LocationStatus>('idle');
   const [location, setLocation] = useState<GeoPoint | null>(null);
   const [permissionState, setPermissionState] = useState<PermissionState | null>(null);
+
+  // Read inside listeners that outlive a render, so keep a live copy.
+  const statusRef = useRef<LocationStatus>('idle');
+  statusRef.current = status;
 
   // On mount: silently pick the location up if permission was already granted.
   useEffect(() => {
@@ -71,6 +87,54 @@ export function LocationProvider({ children }: { children: ReactNode }) {
       cancelled = true;
       if (permStatus) permStatus.onchange = null;
     };
+  }, []);
+
+  // Catch a permission the user revoked in the settings app while we were in
+  // the background. Nothing notifies us, so re-verify whenever we come back.
+  useEffect(() => {
+    let lastCheck = 0;
+
+    const revalidate = () => {
+      if (statusRef.current !== 'granted') return;
+      // `focus` fires often on web; one real check every 10s is plenty.
+      const now = nowMs();
+      if (now - lastCheck < 10000) return;
+      lastCheck = now;
+
+      verifyLocationAccess().then((result) => {
+        if (result.ok) {
+          if (typeof window !== 'undefined') (window as any).__karovLoc = result.location;
+          setLocation(result.location);
+          return;
+        }
+        // A timeout or a momentarily unavailable fix is not a revocation.
+        if (result.reason !== 'denied') return;
+        if (typeof window !== 'undefined') (window as any).__karovLoc = null;
+        setLocation(null);
+        setStatus('denied');
+      });
+    };
+
+    const sub = AppState.addEventListener('change', (s) => {
+      if (s === 'active') revalidate();
+    });
+    const cleanups: Array<() => void> = [() => sub.remove()];
+
+    if (Platform.OS === 'web' && typeof window !== 'undefined') {
+      const onReturn = () => {
+        if (typeof document === 'undefined' || document.visibilityState === 'visible') revalidate();
+      };
+      document.addEventListener('visibilitychange', onReturn);
+      window.addEventListener('pageshow', onReturn);
+      window.addEventListener('focus', onReturn);
+      cleanups.push(() => {
+        document.removeEventListener('visibilitychange', onReturn);
+        window.removeEventListener('pageshow', onReturn);
+        window.removeEventListener('focus', onReturn);
+      });
+    }
+
+    return () => cleanups.forEach((fn) => fn());
   }, []);
 
   const request = () => {

@@ -8,6 +8,7 @@ import { useSharedLocation } from '../context/LocationContext';
 import { GeoPoint } from '../types';
 import {
   canOpenLocationSettings,
+  checkLocationPermission,
   getHostInfo,
   getSettingsGuide,
   openLocationSettings,
@@ -74,10 +75,20 @@ export function LocationPermissionScreen() {
           );
           return;
         }
-        setPhase('blocked');
-        setMessage('');
-        // The permission is blocked — hand the user straight to the right screen.
-        if (opts?.jumpToSettingsOnDenial !== false) void openLocationSettings(host);
+        // Dismissing the browser popup also reports "denied", but the decision
+        // is still open — asking again re-opens the popup, so don't send
+        // someone to the settings guide who never actually blocked us.
+        checkLocationPermission().then((state) => {
+          if (state === 'prompt') {
+            setPhase('retryable');
+            setMessage('הבקשה נסגרה בלי אישור. הקש שוב כדי לפתוח אותה מחדש.');
+            return;
+          }
+          setPhase('blocked');
+          setMessage('');
+          // Genuinely blocked — hand the user straight to the right screen.
+          if (opts?.jumpToSettingsOnDenial !== false) void openLocationSettings(host);
+        });
       });
     },
     [host, proceed, skip],

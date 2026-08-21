@@ -193,6 +193,41 @@ export function resolveLocationSilently(timeoutMs = 4000): Promise<GeoPoint | nu
   });
 }
 
+/**
+ * Confirm the permission we already hold is still valid.
+ *
+ * Unlike resolveLocationSilently() this never reads from cache: a stale fix
+ * would keep looking like success after the user revoked access in settings,
+ * which is exactly the case we are trying to catch.
+ */
+export function verifyLocationAccess(): Promise<LocationRequestResult> {
+  if (Platform.OS !== 'web') return requestLocationNative();
+
+  if (typeof navigator === 'undefined' || !navigator.geolocation) {
+    return Promise.resolve({ ok: false, reason: 'unsupported', canAskAgain: false });
+  }
+
+  return new Promise((resolve) => {
+    navigator.geolocation.getCurrentPosition(
+      (pos) =>
+        resolve({
+          ok: true,
+          location: { latitude: pos.coords.latitude, longitude: pos.coords.longitude },
+        }),
+      (err) => {
+        const reason: DenialReason =
+          err.code === err.PERMISSION_DENIED
+            ? 'denied'
+            : err.code === err.TIMEOUT
+              ? 'timeout'
+              : 'unavailable';
+        resolve({ ok: false, reason, canAskAgain: reason !== 'denied' });
+      },
+      { enableHighAccuracy: false, timeout: 8000, maximumAge: 0 },
+    );
+  });
+}
+
 /** True when the OS/browser can be sent to the right settings page programmatically. */
 export function canOpenLocationSettings(host: HostInfo = getHostInfo()): boolean {
   if (!host.isWeb) return true;

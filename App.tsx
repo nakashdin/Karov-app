@@ -9,6 +9,8 @@ import {
   Theme,
 } from '@react-navigation/native';
 import { RootNavigator } from './src/navigation/RootNavigator';
+import { navigationRef } from './src/navigation/navigationRef';
+import { LocationRevokedNotice } from './src/components/LocationRevokedNotice';
 import { FiltersProvider } from './src/context/FiltersContext';
 import { LocationProvider } from './src/context/LocationContext';
 import { FavoritesProvider } from './src/context/FavoritesContext';
@@ -56,9 +58,10 @@ export default function App() {
         <LocationProvider>
           <FavoritesProvider>
             <FiltersProvider>
-              <NavigationContainer theme={navTheme}>
+              <NavigationContainer theme={navTheme} ref={navigationRef}>
                 <StatusBar style="dark" />
                 <RootNavigator />
+                <LocationRevokedNotice />
               </NavigationContainer>
             </FiltersProvider>
           </FavoritesProvider>
