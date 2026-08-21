@@ -26,6 +26,8 @@ export type RootStackParamList = {
   WhatsAround: undefined;
   FoodList: { radiusKm?: number } | undefined;
   KarovLev: undefined;
+  KarovLevOnboarding: { isEditing?: boolean } | undefined;
+  MiddotSelection: { isEditing?: boolean } | undefined;
   KarovLevContent: { id: string };
 };
 

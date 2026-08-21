@@ -24,7 +24,6 @@ import { useCategoryPreferences } from '../hooks/useCategoryPreferences';
 import { useDailyReads } from '../hooks/useDailyReads';
 import { useSelectedMiddot } from '../hooks/useSelectedMiddot';
 import { useMiddahProgress } from '../hooks/useMiddahProgress';
-import { CategoryPreferenceModal } from '../components/karov-lev/CategoryPreferenceModal';
 import { SelectedCategoriesRow } from '../components/karov-lev/SelectedCategoriesRow';
 import { KarovContentCard } from '../components/karov-lev/KarovContentCard';
 import { MiddahDailyCard } from '../components/karov-lev/MiddahDailyCard';
@@ -51,15 +50,14 @@ export function KarovLevScreen() {
   const { isRead, toggleRead, load: loadReads } = useDailyReads();
   const { selected: selectedMiddot, toggleMiddah } = useSelectedMiddot();
   const { getCardIndex, advance } = useMiddahProgress();
-  const [modalVisible, setModalVisible] = useState(false);
   const [middahPickerVisible, setMiddahPickerVisible] = useState(false);
 
-  // Auto-open modal on first entry
+  // Redirect to onboarding on first visit
   useEffect(() => {
     if (!isLoading && !hasDecided) {
-      setModalVisible(true);
+      navigation.replace('KarovLevOnboarding');
     }
-  }, [isLoading, hasDecided]);
+  }, [isLoading, hasDecided, navigation]);
 
   // Reload read state every time screen comes into focus
   useFocusEffect(
@@ -67,17 +65,6 @@ export function KarovLevScreen() {
       loadReads();
     }, [loadReads])
   );
-
-  const handleSave = async (groups: typeof selected) => {
-    await setSelected(groups);
-    await markDecided();
-    setModalVisible(false);
-  };
-
-  const handleSkip = async () => {
-    await markDecided();
-    setModalVisible(false);
-  };
 
   // Build grouped sections — separate middah cards from regular content
   const sections: CategorySection[] = useMemo(() => {
@@ -143,7 +130,7 @@ export function KarovLevScreen() {
         {hasDecided && selected.length > 0 && (
           <SelectedCategoriesRow
             selected={selected}
-            onEdit={() => setModalVisible(true)}
+            onEdit={() => navigation.navigate('KarovLevOnboarding', { isEditing: true })}
           />
         )}
 
@@ -151,7 +138,7 @@ export function KarovLevScreen() {
         {showNoPrefs && (
           <Pressable
             style={styles.noPrefsHint}
-            onPress={() => setModalVisible(true)}
+            onPress={() => navigation.navigate('KarovLevOnboarding', { isEditing: true })}
           >
             <Text style={styles.noPrefsText}>הגדר העדפות תוכן ←</Text>
           </Pressable>
@@ -282,13 +269,6 @@ export function KarovLevScreen() {
           );
         })}
       </ScrollView>
-
-      <CategoryPreferenceModal
-        visible={modalVisible}
-        initialSelected={selected}
-        onSave={handleSave}
-        onSkip={handleSkip}
-      />
 
       {isMussarSelected && (
         <MiddahPickerModal
