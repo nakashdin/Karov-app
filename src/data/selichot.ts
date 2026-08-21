@@ -46,24 +46,28 @@ export function getElulState(elulDay: number, weekday: number): ElulState {
   };
 }
 
-/** Total days of ratzon — Rosh Chodesh Elul through Yom Kippur. */
-export const RATZON_DAYS = 40;
+/** Days counted, 1 Elul through Yom Kippur. */
+export const RATZON_DAYS = ELUL_LENGTH + 10; // 39
 
 /**
- * Which of the forty days of ratzon a Hebrew date is, or null outside them.
+ * Which day of the count a Hebrew date is, or null outside it.
  *
- * These are the days Moshe spent on the mountain the second time, and the
- * count only comes out at forty because Rosh Chodesh Elul spans two days:
- * 30 Av is day 1, 1 Elul is day 2, 29 Elul is day 30, and Yom Kippur —
- * 10 Tishrei — is day 40.
+ * The count runs from 1 Elul to Yom Kippur, so through Elul the day number
+ * is simply the day of the month — ח׳ באלול is day 8 — and Tishrei carries
+ * on from there: 1 Tishrei is day 30 and 10 Tishrei is day 39.
+ *
+ * That is thirty-nine days, not forty. The period is called ארבעים ימי
+ * הרצון because Rosh Chodesh Elul spans two days and the count of forty
+ * takes in 30 Av as well; starting there would put the counter a day ahead
+ * of the date on every screen, which reads as a bug. The date is what the
+ * user can check, so the date wins.
  *
  * @param hMonth Hebcal Hebrew month name
  * @param hDay   Hebrew day of month
  */
 export function getRatzonDay(hMonth: string, hDay: number): number | null {
-  if (hMonth === 'Av' && hDay === 30) return 1;
-  if (hMonth === 'Elul' && hDay >= 1 && hDay <= ELUL_LENGTH) return hDay + 1;
-  if (hMonth === 'Tishrei' && hDay >= 1 && hDay <= 10) return ELUL_LENGTH + 1 + hDay;
+  if (hMonth === 'Elul' && hDay >= 1 && hDay <= ELUL_LENGTH) return hDay;
+  if (hMonth === 'Tishrei' && hDay >= 1 && hDay <= 10) return ELUL_LENGTH + hDay;
   return null;
 }
 

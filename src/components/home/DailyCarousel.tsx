@@ -206,7 +206,7 @@ export function DailyCarousel({ parasha }: Props) {
       <Text style={[styles.tag, { color: colors.primary }]}>סגולת אלול</Text>
       <Text style={styles.cardTitle} numberOfLines={1}>לְדָוִד ה׳ אוֹרִי</Text>
       <Text style={styles.cardBody} numberOfLines={isDesktop ? 6 : 3}>
-        {`יום ${numToHebrew(ratzonDay)} מתוך ארבעים • אומרים בבוקר ובערב`}
+        {`יום ${numToHebrew(ratzonDay)} מתוך שלושים ותשעה • בוקר וערב`}
       </Text>
       <View style={styles.progressTrack}>
         <View
