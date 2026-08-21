@@ -20,6 +20,7 @@ import { KarovLevScreen } from '../screens/KarovLevScreen';
 import { KarovLevOnboardingScreen } from '../screens/KarovLevOnboardingScreen';
 import { MiddotSelectionScreen } from '../screens/MiddotSelectionScreen';
 import { KarovLevContentScreen } from '../screens/KarovLevContentScreen';
+import { ElulSegulaScreen } from '../screens/ElulSegulaScreen';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -53,6 +54,7 @@ export function RootNavigator() {
       <Stack.Screen name="KarovLevOnboarding" component={KarovLevOnboardingScreen} options={{ headerShown: false, animation: 'slide_from_left' }} />
       <Stack.Screen name="MiddotSelection"    component={MiddotSelectionScreen}    options={{ headerShown: false, animation: 'slide_from_left' }} />
       <Stack.Screen name="KarovLevContent"    component={KarovLevContentScreen}    options={{ headerShown: false, animation: 'slide_from_left' }} />
+      <Stack.Screen name="ElulSegula"         component={ElulSegulaScreen}         options={{ headerShown: false, animation: 'slide_from_left' }} />
     </Stack.Navigator>
   );
 }

@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import {
   Pressable,
   ScrollView,
@@ -8,9 +8,7 @@ import {
   View,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { RouteProp, useNavigation, useRoute } from '@react-navigation/native';
 import { Screen } from '../components/Screen';
-import { TabParamList } from '../navigation/types';
 import { colors, radius, shadow, spacing } from '../theme';
 import { BRACHOT_CATEGORIES, Blessing } from '../data/brachot';
 import { Nusach } from '../data/birkatHamazon';
@@ -46,19 +44,6 @@ export function BrachotScreen() {
 
   // Sunset, not midnight — see useHalachicDate.
   const { weekday: todayIndex } = useHalachicDate();
-
-  // Opened from a card on the home screen — land on the chapter itself, then
-  // drop the param so returning to the tab shows the list as usual.
-  const route = useRoute<RouteProp<TabParamList, 'Brachot'>>();
-  const navigation = useNavigation();
-  const requestedChapter = route.params?.tehillimChapter;
-
-  useEffect(() => {
-    if (!requestedChapter) return;
-    const day = TEHILLIM_WEEKLY[getDayForChapter(requestedChapter)];
-    if (day) setView({ type: 'tehillim_chapter', chapterNum: requestedChapter, day });
-    navigation.setParams({ tehillimChapter: undefined } as never);
-  }, [requestedChapter, navigation]);
 
   // ── Blessing text reader ──────────────────────────────────────────────────
   if (view.type === 'text') {

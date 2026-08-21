@@ -4,8 +4,7 @@ import { NavigatorScreenParams } from '@react-navigation/native';
 export type TabParamList = {
   Home: undefined;
   Favorites: undefined;
-  /** tehillimChapter opens the reader straight on that chapter */
-  Brachot: { tehillimChapter?: number } | undefined;
+  Brachot: undefined;
   Zmanim: undefined;
   Community: undefined;
 };
@@ -29,6 +28,7 @@ export type RootStackParamList = {
   KarovLevOnboarding: { isEditing?: boolean } | undefined;
   MiddotSelection: { isEditing?: boolean } | undefined;
   KarovLevContent: { id: string };
+  ElulSegula: undefined;
 };
 
 declare global {

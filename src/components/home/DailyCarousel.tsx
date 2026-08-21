@@ -196,9 +196,7 @@ export function DailyCarousel({ parasha }: Props) {
         { backgroundColor: '#E9F3ED' },
         pressed && styles.pressed,
       ]}
-      onPress={() =>
-        navigation.navigate('Tabs', { screen: 'Brachot', params: { tehillimChapter: 27 } })
-      }
+      onPress={() => navigation.navigate('ElulSegula')}
     >
       <View style={[styles.iconBadge, { backgroundColor: '#CFE5D8' }]}>
         <Text style={styles.badgeIcon}>🌹</Text>
@@ -216,7 +214,7 @@ export function DailyCarousel({ parasha }: Props) {
           ]}
         />
       </View>
-      <Text style={[styles.cta, { color: colors.primary }]}>לקריאת הפרק ←</Text>
+      <Text style={[styles.cta, { color: colors.primary }]}>לסגולה ולפרק ←</Text>
     </Pressable>
   );
 
