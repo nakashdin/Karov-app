@@ -27,6 +27,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { usePlaces } from '../hooks/usePlaces';
 import { useParasha } from '../hooks/useParasha';
 import { useHebrewDate } from '../hooks/useHebrewDate';
+import { useHalachicDate } from '../hooks/useHalachicDate';
 import { useCityName } from '../hooks/useCityName';
 import { useSharedLocation } from '../context/LocationContext';
 import { useFilters } from '../context/FiltersContext';
@@ -63,6 +64,7 @@ export function HomeScreen() {
   const { places, loading } = usePlaces();
   const { parasha } = useParasha();
   const hebrewDate = useHebrewDate();
+  const { weekday: jewishWeekday } = useHalachicDate();
   const { location } = useSharedLocation();
   const cityName = useCityName(location);
   const { setFilters } = useFilters();
@@ -129,11 +131,13 @@ export function HomeScreen() {
     setTimeout(() => setRefreshing(false), 600);
   }, []);
 
-  const dayName = HEBREW_DAYS[new Date().getDay()];
+  // The weekday shown beside the Hebrew date has to be the same day it is —
+  // both roll over at sunset, so on Thursday night this already reads שישי.
+  const dayName = HEBREW_DAYS[jewishWeekday];
   const hour = new Date().getHours();
   const isNight = hour >= 20 || hour < 6;
-  const isFriday = new Date().getDay() === 5;
-  const isShabbat = new Date().getDay() === 6;
+  const isFriday = jewishWeekday === 5;
+  const isShabbat = jewishWeekday === 6;
 
   const locationDisplay = cityName ?? (location ? '...' : null);
 

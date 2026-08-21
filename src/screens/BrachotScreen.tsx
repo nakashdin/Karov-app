@@ -12,6 +12,7 @@ import { Screen } from '../components/Screen';
 import { colors, radius, shadow, spacing } from '../theme';
 import { BRACHOT_CATEGORIES, Blessing } from '../data/brachot';
 import { Nusach } from '../data/birkatHamazon';
+import { useHalachicDate } from '../hooks/useHalachicDate';
 import {
   TEHILLIM_BAKASHA,
   TEHILLIM_CHAPTERS,
@@ -41,7 +42,8 @@ export function BrachotScreen() {
   const [view, setView] = useState<ViewState>({ type: 'list' });
   const [query, setQuery] = useState('');
 
-  const todayIndex = new Date().getDay();
+  // Sunset, not midnight — see useHalachicDate.
+  const { weekday: todayIndex } = useHalachicDate();
 
   // ── Blessing text reader ──────────────────────────────────────────────────
   if (view.type === 'text') {
@@ -252,7 +254,6 @@ export function BrachotScreen() {
 
   // ── Tehillim: day picker (ליום ראשון…) ───────────────────────────────────
   if (view.type === 'tehillim_days') {
-    const todayIndex = new Date().getDay();
     return (
       <Screen padded>
         <View style={styles.header}>

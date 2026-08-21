@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useHalachicDate } from './useHalachicDate';
 
 const CACHE_KEY = '@karov/hebrewDateToday';
 
@@ -8,13 +9,10 @@ interface Cached {
   gregorianDate: string; // YYYY-MM-DD — invalidate on new day
 }
 
-function todayKey(): string {
-  const d = new Date();
-  return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
-}
-
 export function useHebrewDate(): string | null {
   const [hebrewDate, setHebrewDate] = useState<string | null>(null);
+  // Rolls at sunset, not midnight — the Hebrew date is a Jewish day.
+  const { iso, year, month, day } = useHalachicDate();
 
   useEffect(() => {
     let mounted = true;
@@ -24,7 +22,7 @@ export function useHebrewDate(): string | null {
         const raw = await AsyncStorage.getItem(CACHE_KEY);
         if (raw) {
           const cached: Cached = JSON.parse(raw);
-          if (cached.gregorianDate === todayKey()) {
+          if (cached.gregorianDate === iso) {
             if (mounted) setHebrewDate(cached.hebrew);
             return;
           }
@@ -32,17 +30,16 @@ export function useHebrewDate(): string | null {
       } catch {}
 
       try {
-        const d = new Date();
-        const url = `https://www.hebcal.com/converter?cfg=json&gy=${d.getFullYear()}&gm=${
-          d.getMonth() + 1
-        }&gd=${d.getDate()}&g2h=1&strict=1`;
+        const url =
+          `https://www.hebcal.com/converter?cfg=json` +
+          `&gy=${year}&gm=${month}&gd=${day}&g2h=1&strict=1`;
         const resp = await fetch(url);
         const json = await resp.json();
         if (json.hebrew && mounted) {
           setHebrewDate(json.hebrew);
           await AsyncStorage.setItem(
             CACHE_KEY,
-            JSON.stringify({ hebrew: json.hebrew, gregorianDate: todayKey() }),
+            JSON.stringify({ hebrew: json.hebrew, gregorianDate: iso }),
           );
         }
       } catch {}
@@ -51,7 +48,7 @@ export function useHebrewDate(): string | null {
     return () => {
       mounted = false;
     };
-  }, []);
+  }, [iso, year, month, day]);
 
   return hebrewDate;
 }

@@ -7,6 +7,7 @@ import { colors, radius, shadow, spacing } from '../../theme';
 import { ParashaData } from '../../hooks/useParasha';
 import { useParashaSummary } from '../../hooks/useParashaSummary';
 import { useJewishDayInfo } from '../../hooks/useJewishDayInfo';
+import { useHalachicDate } from '../../hooks/useHalachicDate';
 import { RootStackParamList } from '../../navigation/types';
 import { DESKTOP_BREAKPOINT } from '../Screen';
 import { TEHILLIM_WEEKLY, numToHebrew } from '../../data/tehillim';
@@ -32,7 +33,10 @@ export function DailyCarousel({ parasha }: Props) {
   const [openModal, setOpenModal] = useState<null | 'jewish-day'>(null);
   const { selected: categoryPrefs, hasDecided, isLoading: prefsLoading } = useCategoryPreferences();
 
-  const todayTehillim = TEHILLIM_WEEKLY[new Date().getDay()];
+  // The daily division belongs to the Jewish day, so it turns over at sunset
+  // together with the date beside it — on Thursday night it is already שישי.
+  const { weekday: jewishWeekday } = useHalachicDate();
+  const todayTehillim = TEHILLIM_WEEKLY[jewishWeekday];
 
   // Pick the first placeholder item that matches the user's selected categories
   const previewItem = useMemo(() => {

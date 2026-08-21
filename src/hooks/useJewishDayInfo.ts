@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { JEWISH_STATIC_EVENTS, getJewishPeriods } from '../data/jewishEvents';
 import type { DetailBlock } from '../data/jewishEvents';
+import { useHalachicDate } from './useHalachicDate';
 
 export interface JewishDayInfo {
   title: string;
@@ -11,11 +12,6 @@ export interface JewishDayInfo {
 }
 
 const HEBREW_RE = /[֐-׿]/;
-
-function todayISO(): string {
-  const d = new Date();
-  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
-}
 
 const CATEGORY_PRIORITY = ['holiday', 'roshchodesh', 'omer', 'mevarchim', 'parashat'];
 
@@ -154,12 +150,11 @@ async function fetchDay(iso: string, y: number, m: number, d: number): Promise<C
 
 export function useJewishDayInfo(): JewishDayInfo | null {
   const [info, setInfo] = useState<JewishDayInfo | null>(null);
+  // The Jewish day, not the civil one — after sunset this is already tomorrow.
+  const { iso, year, month, day: dayOfMonth, weekday } = useHalachicDate();
 
   useEffect(() => {
-    const iso = todayISO();
-    const [y, m, d] = iso.split('-').map(Number);
     const cacheKey = `@karov/jewishDayRaw_${iso}`;
-    const weekday = new Date(y, m - 1, d).getDay();
 
     let mounted = true;
 
@@ -173,7 +168,7 @@ export function useJewishDayInfo(): JewishDayInfo | null {
 
       if (!day) {
         try {
-          day = await fetchDay(iso, y, m, d);
+          day = await fetchDay(iso, year, month, dayOfMonth);
           await AsyncStorage.setItem(cacheKey, JSON.stringify(day)).catch(() => {});
         } catch {
           return;
@@ -184,7 +179,7 @@ export function useJewishDayInfo(): JewishDayInfo | null {
     })();
 
     return () => { mounted = false; };
-  }, []);
+  }, [iso, year, month, dayOfMonth, weekday]);
 
   return info;
 }
