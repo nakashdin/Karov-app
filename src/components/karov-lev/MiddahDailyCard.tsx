@@ -10,19 +10,23 @@ interface Props {
   isDone: boolean;
   onToggleDone: () => void;
   onReadMore: () => void;
+  cardIndex?: number;  // 0-based position in the middah journey
+  totalCards?: number;
 }
 
 const MIDDAH_COLOR = '#5D8A6F'; // earthy green — distinct from category colors
 
-export function MiddahDailyCard({ item, isDone, onToggleDone, onReadMore }: Props) {
+export function MiddahDailyCard({ item, isDone, onToggleDone, onReadMore, cardIndex, totalCards }: Props) {
   const middahLabel = item.middahTopic ? (MIDDAH_LABELS[item.middahTopic] ?? item.middahTopic) : '';
-  const dayName = HEB_DAY_NAMES[new Date().getDay()];
+  const dayLabel = cardIndex != null && totalCards != null
+    ? `יום ${cardIndex + 1} מתוך ${totalCards}`
+    : HEB_DAY_NAMES[new Date().getDay()];
 
   return (
     <View style={styles.card}>
-      {/* Card header: middah chip + day name */}
+      {/* Card header: middah chip + day progress */}
       <View style={styles.cardHeader}>
-        <Text style={styles.dayName}>{dayName}</Text>
+        <Text style={styles.dayName}>{dayLabel}</Text>
         <View style={styles.middahChip}>
           <Text style={styles.middahChipText}>{middahLabel}</Text>
         </View>

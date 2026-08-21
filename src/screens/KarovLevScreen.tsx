@@ -23,6 +23,7 @@ import { MIDDAH_LABELS } from '../data/jewish-content/middot';
 import { useCategoryPreferences } from '../hooks/useCategoryPreferences';
 import { useDailyReads } from '../hooks/useDailyReads';
 import { useSelectedMiddot } from '../hooks/useSelectedMiddot';
+import { useMiddahProgress } from '../hooks/useMiddahProgress';
 import { CategoryPreferenceModal } from '../components/karov-lev/CategoryPreferenceModal';
 import { SelectedCategoriesRow } from '../components/karov-lev/SelectedCategoriesRow';
 import { KarovContentCard } from '../components/karov-lev/KarovContentCard';
@@ -38,11 +39,8 @@ interface CategorySection {
   middahCardsByTopic: Record<string, JewishContentItem[]>;
 }
 
-// Pick today's rotating card for a given middah (day-of-week mod cards.length)
-function getTodayCard(cards: JewishContentItem[]): JewishContentItem | null {
-  if (cards.length === 0) return null;
-  const sorted = [...cards].sort((a, b) => (a.weekCardIndex ?? 0) - (b.weekCardIndex ?? 0));
-  return sorted[new Date().getDay() % sorted.length];
+function getSortedCards(cards: JewishContentItem[]): JewishContentItem[] {
+  return [...cards].sort((a, b) => (a.weekCardIndex ?? 0) - (b.weekCardIndex ?? 0));
 }
 
 export function KarovLevScreen() {
@@ -52,6 +50,7 @@ export function KarovLevScreen() {
     useCategoryPreferences();
   const { isRead, toggleRead, load: loadReads } = useDailyReads();
   const { selected: selectedMiddot, toggleMiddah } = useSelectedMiddot();
+  const { getCardIndex, advance } = useMiddahProgress();
   const [modalVisible, setModalVisible] = useState(false);
   const [middahPickerVisible, setMiddahPickerVisible] = useState(false);
 
@@ -162,16 +161,19 @@ export function KarovLevScreen() {
         {sections.map(({ group, items, middahCardsByTopic }) => {
           const isMussarSection = group.id === 'mussar_middot';
 
-          // For mussar: compute today's cards for each selected middah
-          const todayMiddahCards = isMussarSection
-            ? selectedMiddot
-                .map((topic) => getTodayCard(middahCardsByTopic[topic] ?? []))
-                .filter((c): c is JewishContentItem => c !== null)
+          // For mussar: pick card based on per-middah progress (not day-of-week)
+          const middahCardEntries = isMussarSection
+            ? selectedMiddot.flatMap((topic) => {
+                const sorted = getSortedCards(middahCardsByTopic[topic] ?? []);
+                if (sorted.length === 0) return [];
+                const idx = getCardIndex(topic);
+                return [{ card: sorted[idx], cardIndex: idx, totalCards: sorted.length }];
+              })
             : [];
 
-          // Read count: regular items + today's middah cards
+          // Read count: regular items + current middah cards
           const allSectionItems = isMussarSection
-            ? [...items, ...todayMiddahCards]
+            ? [...items, ...middahCardEntries.map((e) => e.card)]
             : items;
           const readCount = allSectionItems.filter((i) => isRead(i.id)).length;
 
@@ -240,13 +242,21 @@ export function KarovLevScreen() {
                     </Pressable>
                   )}
 
-                  {/* Today's cards for selected middot */}
-                  {todayMiddahCards.map((card) => (
+                  {/* Current card for each selected middah, driven by progress */}
+                  {middahCardEntries.map(({ card, cardIndex, totalCards }) => (
                     <MiddahDailyCard
                       key={card.id}
                       item={card}
                       isDone={isRead(card.id)}
-                      onToggleDone={() => toggleRead(card.id)}
+                      cardIndex={cardIndex}
+                      totalCards={totalCards}
+                      onToggleDone={() => {
+                        const wasDone = isRead(card.id);
+                        toggleRead(card.id);
+                        if (!wasDone) {
+                          advance(card.middahTopic!, totalCards);
+                        }
+                      }}
                       onReadMore={() => handleCardPress(card.id)}
                     />
                   ))}
