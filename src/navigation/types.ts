@@ -4,7 +4,8 @@ import { NavigatorScreenParams } from '@react-navigation/native';
 export type TabParamList = {
   Home: undefined;
   Favorites: undefined;
-  Brachot: undefined;
+  /** tehillimChapter opens the reader straight on that chapter */
+  Brachot: { tehillimChapter?: number } | undefined;
   Zmanim: undefined;
   Community: undefined;
 };

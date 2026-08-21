@@ -46,6 +46,27 @@ export function getElulState(elulDay: number, weekday: number): ElulState {
   };
 }
 
+/** Total days of ratzon — Rosh Chodesh Elul through Yom Kippur. */
+export const RATZON_DAYS = 40;
+
+/**
+ * Which of the forty days of ratzon a Hebrew date is, or null outside them.
+ *
+ * These are the days Moshe spent on the mountain the second time, and the
+ * count only comes out at forty because Rosh Chodesh Elul spans two days:
+ * 30 Av is day 1, 1 Elul is day 2, 29 Elul is day 30, and Yom Kippur —
+ * 10 Tishrei — is day 40.
+ *
+ * @param hMonth Hebcal Hebrew month name
+ * @param hDay   Hebrew day of month
+ */
+export function getRatzonDay(hMonth: string, hDay: number): number | null {
+  if (hMonth === 'Av' && hDay === 30) return 1;
+  if (hMonth === 'Elul' && hDay >= 1 && hDay <= ELUL_LENGTH) return hDay + 1;
+  if (hMonth === 'Tishrei' && hDay >= 1 && hDay <= 10) return ELUL_LENGTH + 1 + hDay;
+  return null;
+}
+
 /** "ז׳ באלול", and "ראש חודש אלול" for the two days it spans. */
 function hebrewDateLabel(elulDay: number): string {
   if (elulDay <= 1) return 'ראש חודש אלול';

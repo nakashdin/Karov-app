@@ -9,6 +9,10 @@ export interface JewishDayInfo {
   body: string;
   /** Long-form blocks for the modal — e.g. the Elul / Selichot background */
   details?: DetailBlock[];
+  /** Hebcal Hebrew month name, for callers that need the date itself */
+  hMonth: string;
+  /** Hebrew day of month */
+  hDay: number;
 }
 
 const HEBREW_RE = /[֐-׿]/;
@@ -47,7 +51,8 @@ function buildInfo(day: CachedDay, weekday: number): JewishDayInfo {
   const period = getJewishPeriods(hMonth, hDay)[0]
     ?.resolve({ hebrewDay: hDay, weekday }) ?? null;
 
-  let result: JewishDayInfo;
+  // The date is stitched on at the end, so the branches only pick the text.
+  let result: Omit<JewishDayInfo, 'hMonth' | 'hDay'>;
 
   if (todayItems.length > 0) {
     const best = pickBest(todayItems);
@@ -102,7 +107,7 @@ function buildInfo(day: CachedDay, weekday: number): JewishDayInfo {
     result.details = [...(result.details ?? []), ...period.details];
   }
 
-  return result;
+  return { ...result, hMonth, hDay };
 }
 
 async function fetchDay(iso: string, y: number, m: number, d: number): Promise<CachedDay> {

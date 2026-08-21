@@ -11,6 +11,7 @@ import { useHalachicDate } from '../../hooks/useHalachicDate';
 import { RootStackParamList } from '../../navigation/types';
 import { DESKTOP_BREAKPOINT } from '../Screen';
 import { TEHILLIM_WEEKLY, numToHebrew } from '../../data/tehillim';
+import { RATZON_DAYS, getRatzonDay } from '../../data/selichot';
 import { useCategoryPreferences } from '../../hooks/useCategoryPreferences';
 import { PLACEHOLDER_CONTENT } from '../../data/jewish-content/placeholder';
 import { CATEGORY_GROUPS, getPrimaryCategory } from '../../data/jewish-content/category-groups';
@@ -37,6 +38,11 @@ export function DailyCarousel({ parasha }: Props) {
   // together with the date beside it — on Thursday night it is already שישי.
   const { weekday: jewishWeekday } = useHalachicDate();
   const todayTehillim = TEHILLIM_WEEKLY[jewishWeekday];
+
+  // Psalm 27 is said every day of the forty days of ratzon. The card appears
+  // and disappears on its own — the window comes from the Hebrew date, so it
+  // returns every year with nothing to switch on.
+  const ratzonDay = jewishDay ? getRatzonDay(jewishDay.hMonth, jewishDay.hDay) : null;
 
   // Pick the first placeholder item that matches the user's selected categories
   const previewItem = useMemo(() => {
@@ -182,6 +188,38 @@ export function DailyCarousel({ parasha }: Props) {
     </Pressable>
   );
 
+  const cardRatzon = ratzonDay === null ? null : (
+    <Pressable
+      style={({ pressed }) => [
+        styles.card,
+        isDesktop && styles.cardDesktop,
+        { backgroundColor: '#E9F3ED' },
+        pressed && styles.pressed,
+      ]}
+      onPress={() =>
+        navigation.navigate('Tabs', { screen: 'Brachot', params: { tehillimChapter: 27 } })
+      }
+    >
+      <View style={[styles.iconBadge, { backgroundColor: '#CFE5D8' }]}>
+        <Text style={styles.badgeIcon}>🌹</Text>
+      </View>
+      <Text style={[styles.tag, { color: colors.primary }]}>סגולת אלול</Text>
+      <Text style={styles.cardTitle} numberOfLines={1}>לְדָוִד ה׳ אוֹרִי</Text>
+      <Text style={styles.cardBody} numberOfLines={isDesktop ? 6 : 3}>
+        {`יום ${numToHebrew(ratzonDay)} מתוך ארבעים • אומרים בבוקר ובערב`}
+      </Text>
+      <View style={styles.progressTrack}>
+        <View
+          style={[
+            styles.progressFill,
+            { width: `${Math.round((ratzonDay / RATZON_DAYS) * 100)}%` },
+          ]}
+        />
+      </View>
+      <Text style={[styles.cta, { color: colors.primary }]}>לקריאת הפרק ←</Text>
+    </Pressable>
+  );
+
   const modal = (
     <Modal
       visible={openModal !== null}
@@ -228,6 +266,7 @@ export function DailyCarousel({ parasha }: Props) {
     return (
       <>
         <View style={styles.desktopRow}>
+          {cardRatzon}
           {card1}
           {card2}
           {card3}
@@ -248,6 +287,7 @@ export function DailyCarousel({ parasha }: Props) {
         snapToInterval={CARD_WIDTH + GAP}
         snapToAlignment="start"
       >
+        {cardRatzon}
         {card1}
         {card2}
         {card3}
@@ -316,6 +356,19 @@ const styles = StyleSheet.create({
   },
   teaserChipText: {
     fontSize: 14,
+  },
+
+  progressTrack: {
+    height: 4,
+    borderRadius: 2,
+    backgroundColor: '#CFE5D8',
+    overflow: 'hidden',
+    marginTop: 2,
+  },
+  progressFill: {
+    height: '100%',
+    borderRadius: 2,
+    backgroundColor: colors.primary,
   },
 
   iconBadge: {
