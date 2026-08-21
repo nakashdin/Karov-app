@@ -1,93 +1,202 @@
-import React, { useState } from 'react';
-import { StyleSheet, Text, View, Pressable } from 'react-native';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { AppState, Platform, Pressable, StyleSheet, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../navigation/types';
 import { useSharedLocation } from '../context/LocationContext';
+import { GeoPoint } from '../types';
+import {
+  canOpenLocationSettings,
+  checkLocationPermission,
+  getHostInfo,
+  getSettingsGuide,
+  openLocationSettings,
+  requestLocation,
+} from '../utils/locationPermission';
 import { colors, radius, spacing } from '../theme';
 
 type Nav = NativeStackNavigationProp<RootStackParamList>;
 
+type Phase = 'idle' | 'loading' | 'blocked' | 'retryable';
+
 export function LocationPermissionScreen() {
   const navigation = useNavigation<Nav>();
   const { setGranted } = useSharedLocation();
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState('');
+  const [phase, setPhase] = useState<Phase>('idle');
+  const [message, setMessage] = useState('');
 
-  // This function is called ONLY from a direct button tap — required by iOS Safari
-  const handleAllow = () => {
-    if (!navigator.geolocation) {
-      navigation.replace('Tabs', { screen: 'Home' });
-      return;
-    }
-    setLoading(true);
-    setError('');
-    navigator.geolocation.getCurrentPosition(
-      (pos) => {
-        const loc = { latitude: pos.coords.latitude, longitude: pos.coords.longitude };
-        setGranted(loc);
-        // Small delay so React state update propagates before navigation
-        setTimeout(() => {
-          navigation.replace('Tabs', { screen: 'Home' });
-        }, 80);
-      },
-      () => {
-        setLoading(false);
-        setError('לא הצלחנו לקבל מיקום. בדוק הגדרות → פרטיות → שירותי מיקום → Safari');
-      },
-      { enableHighAccuracy: false, timeout: 10000 },
-    );
-  };
+  const host = useMemo(() => getHostInfo(), []);
+  const guide = useMemo(() => getSettingsGuide(host), [host]);
+  const canJumpToSettings = useMemo(() => canOpenLocationSettings(host), [host]);
+  const done = useRef(false);
 
-  const handleSkip = () => {
+  const proceed = useCallback(
+    (loc: GeoPoint) => {
+      if (done.current) return;
+      done.current = true;
+      setGranted(loc);
+      // Small delay so the context update propagates before navigating.
+      setTimeout(() => navigation.replace('Tabs', { screen: 'Home' }), 80);
+    },
+    [navigation, setGranted],
+  );
+
+  const skip = useCallback(() => {
+    if (done.current) return;
+    done.current = true;
     navigation.replace('Tabs', { screen: 'Home' });
-  };
+  }, [navigation]);
+
+  /**
+   * Not `async` on purpose: on iOS Safari the geolocation call has to fire
+   * inside the tap handler itself, so any `await` before it loses the gesture.
+   */
+  const ask = useCallback(
+    (opts?: { jumpToSettingsOnDenial?: boolean }) => {
+      setPhase('loading');
+      setMessage('');
+      requestLocation().then((result) => {
+        if (result.ok) {
+          proceed(result.location);
+          return;
+        }
+        if (result.reason === 'unsupported') {
+          skip();
+          return;
+        }
+        if (result.canAskAgain) {
+          setPhase('retryable');
+          setMessage(
+            result.reason === 'timeout'
+              ? 'לא הצלחנו לאתר את המיקום. ודא שהמיקום דלוק ונסה שוב.'
+              : 'המיקום לא זמין כרגע. נסה שוב בעוד רגע.',
+          );
+          return;
+        }
+        setPhase('blocked');
+        setMessage('');
+        // The permission is blocked — hand the user straight to the right screen.
+        if (opts?.jumpToSettingsOnDenial !== false) void openLocationSettings(host);
+      });
+    },
+    [host, proceed, skip],
+  );
+
+  const handleAllow = useCallback(() => ask(), [ask]);
+
+  const handleOpenSettings = useCallback(() => {
+    void openLocationSettings(host);
+  }, [host]);
+
+  /** After returning from the settings app, continue automatically if it worked. */
+  const recheck = useCallback(() => {
+    if (done.current) return;
+    checkLocationPermission().then((state) => {
+      if (state !== 'granted') return;
+      requestLocation().then((result) => {
+        if (result.ok) proceed(result.location);
+      });
+    });
+  }, [proceed]);
+
+  useEffect(() => {
+    const sub = AppState.addEventListener('change', (state) => {
+      if (state === 'active') recheck();
+    });
+    let onVisible: (() => void) | undefined;
+    if (Platform.OS === 'web' && typeof document !== 'undefined') {
+      onVisible = () => {
+        if (document.visibilityState === 'visible') recheck();
+      };
+      document.addEventListener('visibilitychange', onVisible);
+    }
+    return () => {
+      sub.remove();
+      if (onVisible && typeof document !== 'undefined') {
+        document.removeEventListener('visibilitychange', onVisible);
+      }
+    };
+  }, [recheck]);
+
+  const loading = phase === 'loading';
+  const primaryLabel = loading
+    ? '⏳ מאתר אותך...'
+    : phase === 'blocked'
+      ? canJumpToSettings
+        ? '⚙️ פתח הגדרות מיקום'
+        : '📋 איך מפעילים מיקום'
+      : phase === 'retryable'
+        ? '🔄 נסה שוב'
+        : '📍 אפשר גישה למיקום';
+
+  const onPrimary =
+    phase === 'blocked' && canJumpToSettings ? handleOpenSettings : handleAllow;
 
   return (
     <View style={styles.root}>
       <View style={styles.content}>
         <View style={styles.iconBox}>
-          <Ionicons name="location" size={52} color={colors.primary} />
+          <Ionicons
+            name={phase === 'blocked' ? 'settings' : 'location'}
+            size={52}
+            color={colors.primary}
+          />
         </View>
 
-        <Text style={styles.title}>מה יש סביבך?</Text>
-        <Text style={styles.subtitle}>
-          קרוב משתמש במיקומך כדי להציג לך בתי כנסת, מסעדות כשרות, מקוואות ועוד — הכי קרוב אליך ראשון.
-        </Text>
+        <Text style={styles.title}>{phase === 'blocked' ? guide.title : 'מה יש סביבך?'}</Text>
 
-        <View style={styles.featureList}>
-          <Feature icon="navigate-outline" text="מיון לפי מרחק" />
-          <Feature icon="restaurant-outline" text="מסעדות כשרות בקרבתך" />
-          <Feature icon="business-outline" text="בתי כנסת קרובים" />
-        </View>
+        {phase === 'blocked' ? (
+          <>
+            <Text style={styles.subtitle}>
+              {canJumpToSettings
+                ? 'העברנו אותך להגדרות. אם המסך לא נפתח, בצע את השלבים הבאים:'
+                : 'הדפדפן חוסם את המיקום. כך מפעילים אותו במכשיר שלך:'}
+            </Text>
+            <View style={styles.featureList}>
+              {guide.steps.map((step, i) => (
+                <View key={i} style={styles.step}>
+                  <View style={styles.stepNum}>
+                    <Text style={styles.stepNumText}>{i + 1}</Text>
+                  </View>
+                  <Text style={styles.stepText}>{step}</Text>
+                </View>
+              ))}
+            </View>
+            <Text style={styles.note}>{guide.footer}</Text>
+          </>
+        ) : (
+          <>
+            <Text style={styles.subtitle}>
+              קרוב משתמש במיקומך כדי להציג לך בתי כנסת, מסעדות כשרות, מקוואות ועוד — הכי קרוב אליך
+              ראשון.
+            </Text>
+            <View style={styles.featureList}>
+              <Feature icon="navigate-outline" text="מיון לפי מרחק" />
+              <Feature icon="restaurant-outline" text="מסעדות כשרות בקרבתך" />
+              <Feature icon="business-outline" text="בתי כנסת קרובים" />
+            </View>
+          </>
+        )}
       </View>
 
       <View style={styles.buttons}>
-        {error ? <Text style={styles.errorText}>{error}</Text> : null}
+        {message ? <Text style={styles.errorText}>{message}</Text> : null}
 
-        {/* Native HTML button — iOS Safari requires direct user gesture for geolocation */}
-        <button
-          onClick={handleAllow}
-          disabled={loading}
-          style={{
-            width: '100%',
-            backgroundColor: loading ? '#5a9e72' : '#1E7A46',
-            border: 'none',
-            borderRadius: 50,
-            padding: '16px',
-            cursor: 'pointer',
-            fontFamily: 'inherit',
-          } as any}
-        >
-          <Text style={styles.btnAllowText}>
-            {loading ? '⏳ מאשר...' : '📍 אפשר גישה למיקום'}
-          </Text>
-        </button>
+        <PrimaryButton label={primaryLabel} onPress={onPrimary} disabled={loading} />
+
+        {phase === 'blocked' && (
+          <Pressable
+            style={({ pressed }) => [styles.btnSecondary, pressed && { opacity: 0.7 }]}
+            onPress={handleAllow}
+          >
+            <Text style={styles.btnSecondaryText}>ניסיתי — בדוק שוב</Text>
+          </Pressable>
+        )}
 
         <Pressable
           style={({ pressed }) => [styles.btnSkip, pressed && { opacity: 0.7 }]}
-          onPress={handleSkip}
+          onPress={skip}
         >
           <Text style={styles.btnSkipText}>אולי אחר כך</Text>
         </Pressable>
@@ -95,6 +204,52 @@ export function LocationPermissionScreen() {
         <Text style={styles.note}>ניתן לשנות בכל עת בהגדרות הטלפון</Text>
       </View>
     </View>
+  );
+}
+
+/**
+ * On web this must be a real DOM button: iOS Safari only honours a
+ * geolocation request that originates from a native click event.
+ */
+function PrimaryButton({
+  label,
+  onPress,
+  disabled,
+}: {
+  label: string;
+  onPress: () => void;
+  disabled: boolean;
+}) {
+  if (Platform.OS === 'web') {
+    return (
+      <button
+        onClick={onPress}
+        disabled={disabled}
+        style={
+          {
+            width: '100%',
+            backgroundColor: disabled ? '#5a9e72' : '#1E7A46',
+            border: 'none',
+            borderRadius: 50,
+            padding: '16px',
+            cursor: disabled ? 'default' : 'pointer',
+            fontFamily: 'inherit',
+          } as any
+        }
+      >
+        <Text style={styles.btnAllowText}>{label}</Text>
+      </button>
+    );
+  }
+
+  return (
+    <Pressable
+      style={({ pressed }) => [styles.btnAllow, pressed && { opacity: 0.85 }]}
+      onPress={onPress}
+      disabled={disabled}
+    >
+      <Text style={styles.btnAllowText}>{label}</Text>
+    </Pressable>
   );
 }
 
@@ -165,14 +320,63 @@ const styles = StyleSheet.create({
     textAlign: 'right',
     flex: 1,
   },
+  step: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+    backgroundColor: colors.surface,
+    borderRadius: radius.md,
+    paddingVertical: 12,
+    paddingHorizontal: 14,
+  },
+  stepNum: {
+    width: 24,
+    height: 24,
+    borderRadius: 12,
+    backgroundColor: colors.primaryLight,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  stepNumText: {
+    fontSize: 13,
+    fontWeight: '800',
+    color: colors.primary,
+  },
+  stepText: {
+    fontSize: 14,
+    lineHeight: 20,
+    fontWeight: '600',
+    color: colors.text,
+    textAlign: 'right',
+    flex: 1,
+  },
   buttons: {
     gap: 12,
+    alignItems: 'center',
+  },
+  btnAllow: {
+    width: '100%',
+    backgroundColor: colors.primary,
+    borderRadius: 50,
+    paddingVertical: 16,
     alignItems: 'center',
   },
   btnAllowText: {
     fontSize: 16,
     fontWeight: '700',
     color: '#fff',
+  },
+  btnSecondary: {
+    paddingVertical: 10,
+    paddingHorizontal: 24,
+    borderRadius: 50,
+    borderWidth: 1,
+    borderColor: colors.primary,
+  },
+  btnSecondaryText: {
+    fontSize: 15,
+    fontWeight: '700',
+    color: colors.primary,
   },
   btnSkip: {
     paddingVertical: 12,

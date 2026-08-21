@@ -5,6 +5,7 @@ import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { Logo } from '../components/Logo';
 import { RootStackParamList } from '../navigation/types';
+import { checkLocationPermission } from '../utils/locationPermission';
 
 type Nav = NativeStackNavigationProp<RootStackParamList>;
 
@@ -63,14 +64,11 @@ export function SplashScreen() {
         navigation.replace('Login');
         return;
       }
-      // Skip permission screen if browser already granted location
+      // Skip the permission screen if location was already granted
       try {
-        if (typeof navigator !== 'undefined' && navigator.permissions) {
-          const result = await navigator.permissions.query({ name: 'geolocation' });
-          if (result.state === 'granted') {
-            navigation.replace('Tabs', { screen: 'Home' });
-            return;
-          }
+        if ((await checkLocationPermission()) === 'granted') {
+          navigation.replace('Tabs', { screen: 'Home' });
+          return;
         }
       } catch {}
       navigation.replace('LocationPermission');

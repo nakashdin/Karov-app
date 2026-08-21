@@ -398,11 +398,18 @@ export function ListScreen() {
 
       {/* Location prompt */}
       {needsLocation && (
-        <Pressable style={styles.locationBanner} onPress={requestLocation}>
+        <Pressable
+          style={styles.locationBanner}
+          onPress={
+            locationStatus === 'denied'
+              ? () => navigation.navigate('LocationPermission')
+              : requestLocation
+          }
+        >
           <Ionicons name="location-outline" size={16} color="#92400e" />
           <Text style={styles.locationBannerText}>
             {locationStatus === 'denied'
-              ? 'הפעלת מיקום בהגדרות? לחץ כאן לנסות שוב'
+              ? 'המיקום חסום — לחץ כאן כדי לפתוח את ההגדרות'
               : 'הפעל שירותי מיקום כדי לראות מקומות קרובים אליך'}
           </Text>
           <Ionicons name="chevron-back" size={14} color="#92400e" />

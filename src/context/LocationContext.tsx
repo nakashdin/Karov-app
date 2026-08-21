@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, ReactNode, useEffect } from 'react';
 import { GeoPoint } from '../types';
+import { checkLocationPermission, requestLocation } from '../utils/locationPermission';
 
 export function getCachedLocation(): GeoPoint | null {
   return (typeof window !== 'undefined' ? (window as any).__karovLoc : null) ?? null;
@@ -22,44 +23,60 @@ export function LocationProvider({ children }: { children: ReactNode }) {
   const [location, setLocation] = useState<GeoPoint | null>(null);
   const [permissionState, setPermissionState] = useState<PermissionState | null>(null);
 
-  // On mount: silently check if location permission was already granted
+  // On mount: silently pick the location up if permission was already granted.
   useEffect(() => {
-    if (typeof navigator === 'undefined' || !navigator.permissions) return;
-    navigator.permissions.query({ name: 'geolocation' }).then((result) => {
-      setPermissionState(result.state);
-      if (result.state === 'granted' && navigator.geolocation) {
+    let cancelled = false;
+    checkLocationPermission().then((state) => {
+      if (cancelled) return;
+      if (state !== 'unknown') setPermissionState(state as PermissionState);
+      if (state === 'granted') {
         setStatus('requesting');
-        navigator.geolocation.getCurrentPosition(
-          (pos) => {
-            const loc = { latitude: pos.coords.latitude, longitude: pos.coords.longitude };
-            if (typeof window !== 'undefined') (window as any).__karovLoc = loc;
-            setLocation(loc);
+        requestLocation().then((result) => {
+          if (cancelled) return;
+          if (result.ok) {
+            if (typeof window !== 'undefined') (window as any).__karovLoc = result.location;
+            setLocation(result.location);
             setStatus('granted');
-          },
-          () => setStatus('denied'),
-          { enableHighAccuracy: false, timeout: 10000 },
-        );
-      } else if (result.state === 'denied') {
+          } else {
+            setStatus('denied');
+          }
+        });
+      } else if (state === 'denied') {
         setStatus('denied');
       }
-      result.onchange = () => setPermissionState(result.state);
-    }).catch(() => {});
+    });
+
+    // Keep `permissionState` in sync when the user flips it in settings.
+    let permStatus: PermissionStatus | null = null;
+    if (typeof navigator !== 'undefined' && navigator.permissions) {
+      navigator.permissions
+        .query({ name: 'geolocation' as PermissionName })
+        .then((result) => {
+          if (cancelled) return;
+          permStatus = result;
+          result.onchange = () => setPermissionState(result.state);
+        })
+        .catch(() => {});
+    }
+
+    return () => {
+      cancelled = true;
+      if (permStatus) permStatus.onchange = null;
+    };
   }, []);
 
   const request = () => {
-    if (!navigator.geolocation) { setStatus('denied'); return; }
     if (status === 'granted' && location) return;
     setStatus('requesting');
-    navigator.geolocation.getCurrentPosition(
-      (pos) => {
-        setLocation({ latitude: pos.coords.latitude, longitude: pos.coords.longitude });
+    requestLocation().then((result) => {
+      if (result.ok) {
+        if (typeof window !== 'undefined') (window as any).__karovLoc = result.location;
+        setLocation(result.location);
         setStatus('granted');
-      },
-      () => {
+      } else {
         setStatus('denied');
-      },
-      { enableHighAccuracy: false, timeout: 10000 },
-    );
+      }
+    });
   };
 
   const setGranted = (loc: GeoPoint) => {
