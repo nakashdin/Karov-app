@@ -250,8 +250,8 @@ export function KarovLevScreen() {
                 </View>
               )}
 
-              {/* Regular content cards */}
-              {items.length === 0 && !isMussarSection ? (
+              {/* Regular content cards — hidden in mussar when specific middot are selected */}
+              {isMussarSection && selectedMiddot.length > 0 ? null : items.length === 0 ? (
                 <View style={styles.emptySection}>
                   <Text style={styles.emptySectionText}>אין תוכן זמין כרגע</Text>
                 </View>
