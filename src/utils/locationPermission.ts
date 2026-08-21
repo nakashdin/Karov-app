@@ -144,8 +144,53 @@ export async function checkLocationPermission(): Promise<PermissionSnapshot> {
     const result = await navigator.permissions.query({ name: 'geolocation' as PermissionName });
     return result.state as PermissionSnapshot;
   } catch {
+    // Safari has no Permissions API entry for geolocation and throws here, so
+    // 'unknown' is the normal answer on iPhone — never treat it as "no".
     return 'unknown';
   }
+}
+
+/**
+ * Read the position without ever showing a prompt, or resolve null.
+ *
+ * This is how we detect that the user granted the permission in the settings
+ * app: on Safari `checkLocationPermission()` can only answer 'unknown', so the
+ * only way to know is to actually try. Callers must not treat null as a denial
+ * — it only means "not available right now".
+ */
+export function resolveLocationSilently(timeoutMs = 4000): Promise<GeoPoint | null> {
+  return checkLocationPermission().then((state) => {
+    // 'prompt' would pop the browser dialog outside a user gesture, and
+    // 'denied' cannot succeed — only probe when there is something to gain.
+    if (state !== 'granted' && state !== 'unknown') return null;
+
+    if (Platform.OS !== 'web') {
+      return requestLocation().then((r) => (r.ok ? r.location : null));
+    }
+    if (typeof navigator === 'undefined' || !navigator.geolocation) return null;
+
+    return new Promise<GeoPoint | null>((resolve) => {
+      let settled = false;
+      const finish = (value: GeoPoint | null) => {
+        if (settled) return;
+        settled = true;
+        resolve(value);
+      };
+      // Safari occasionally never calls either callback; keep our own deadline.
+      const timer = setTimeout(() => finish(null), timeoutMs + 500);
+      navigator.geolocation.getCurrentPosition(
+        (pos) => {
+          clearTimeout(timer);
+          finish({ latitude: pos.coords.latitude, longitude: pos.coords.longitude });
+        },
+        () => {
+          clearTimeout(timer);
+          finish(null);
+        },
+        { enableHighAccuracy: false, timeout: timeoutMs, maximumAge: 300000 },
+      );
+    });
+  });
 }
 
 /** True when the OS/browser can be sent to the right settings page programmatically. */

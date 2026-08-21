@@ -1,6 +1,10 @@
 import React, { createContext, useContext, useState, ReactNode, useEffect } from 'react';
 import { GeoPoint } from '../types';
-import { checkLocationPermission, requestLocation } from '../utils/locationPermission';
+import {
+  checkLocationPermission,
+  requestLocation,
+  resolveLocationSilently,
+} from '../utils/locationPermission';
 
 export function getCachedLocation(): GeoPoint | null {
   return (typeof window !== 'undefined' ? (window as any).__karovLoc : null) ?? null;
@@ -29,21 +33,25 @@ export function LocationProvider({ children }: { children: ReactNode }) {
     checkLocationPermission().then((state) => {
       if (cancelled) return;
       if (state !== 'unknown') setPermissionState(state as PermissionState);
-      if (state === 'granted') {
-        setStatus('requesting');
-        requestLocation().then((result) => {
-          if (cancelled) return;
-          if (result.ok) {
-            if (typeof window !== 'undefined') (window as any).__karovLoc = result.location;
-            setLocation(result.location);
-            setStatus('granted');
-          } else {
-            setStatus('denied');
-          }
-        });
-      } else if (state === 'denied') {
+      if (state === 'denied') {
         setStatus('denied');
+        return;
       }
+      // 'unknown' is what Safari always answers, so probe rather than give up —
+      // otherwise every reload on an iPhone would lose an approved location.
+      if (state !== 'granted' && state !== 'unknown') return;
+
+      setStatus('requesting');
+      resolveLocationSilently().then((loc) => {
+        if (cancelled) return;
+        if (loc) {
+          if (typeof window !== 'undefined') (window as any).__karovLoc = loc;
+          setLocation(loc);
+          setStatus('granted');
+        } else {
+          setStatus(state === 'granted' ? 'denied' : 'idle');
+        }
+      });
     });
 
     // Keep `permissionState` in sync when the user flips it in settings.

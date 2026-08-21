@@ -5,7 +5,7 @@ import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { Logo } from '../components/Logo';
 import { RootStackParamList } from '../navigation/types';
-import { checkLocationPermission } from '../utils/locationPermission';
+import { resolveLocationSilently } from '../utils/locationPermission';
 
 type Nav = NativeStackNavigationProp<RootStackParamList>;
 
@@ -64,9 +64,13 @@ export function SplashScreen() {
         navigation.replace('Login');
         return;
       }
-      // Skip the permission screen if location was already granted
+      // Skip the permission screen if location is already available. Safari
+      // cannot report the permission state, so this actually reads a position
+      // rather than asking — on a short leash, since the splash waits on it.
       try {
-        if ((await checkLocationPermission()) === 'granted') {
+        const loc = await resolveLocationSilently(2500);
+        if (loc) {
+          if (typeof window !== 'undefined') (window as any).__karovLoc = loc;
           navigation.replace('Tabs', { screen: 'Home' });
           return;
         }

@@ -8,11 +8,11 @@ import { useSharedLocation } from '../context/LocationContext';
 import { GeoPoint } from '../types';
 import {
   canOpenLocationSettings,
-  checkLocationPermission,
   getHostInfo,
   getSettingsGuide,
   openLocationSettings,
   requestLocation,
+  resolveLocationSilently,
 } from '../utils/locationPermission';
 import { colors, radius, spacing } from '../theme';
 
@@ -92,11 +92,8 @@ export function LocationPermissionScreen() {
   /** After returning from the settings app, continue automatically if it worked. */
   const recheck = useCallback(() => {
     if (done.current) return;
-    checkLocationPermission().then((state) => {
-      if (state !== 'granted') return;
-      requestLocation().then((result) => {
-        if (result.ok) proceed(result.location);
-      });
+    resolveLocationSilently().then((loc) => {
+      if (loc) proceed(loc);
     });
   }, [proceed]);
 
@@ -104,20 +101,38 @@ export function LocationPermissionScreen() {
     const sub = AppState.addEventListener('change', (state) => {
       if (state === 'active') recheck();
     });
-    let onVisible: (() => void) | undefined;
-    if (Platform.OS === 'web' && typeof document !== 'undefined') {
-      onVisible = () => {
-        if (document.visibilityState === 'visible') recheck();
+
+    const cleanups: Array<() => void> = [() => sub.remove()];
+
+    if (Platform.OS === 'web' && typeof window !== 'undefined') {
+      // Coming back from the settings app surfaces differently per browser:
+      // a visibility change, a bfcache restore, or nothing but a window focus.
+      const onReturn = () => {
+        if (typeof document === 'undefined' || document.visibilityState === 'visible') recheck();
       };
-      document.addEventListener('visibilitychange', onVisible);
+      document.addEventListener('visibilitychange', onReturn);
+      window.addEventListener('pageshow', onReturn);
+      window.addEventListener('focus', onReturn);
+      cleanups.push(() => {
+        document.removeEventListener('visibilitychange', onReturn);
+        window.removeEventListener('pageshow', onReturn);
+        window.removeEventListener('focus', onReturn);
+      });
     }
-    return () => {
-      sub.remove();
-      if (onVisible && typeof document !== 'undefined') {
-        document.removeEventListener('visibilitychange', onVisible);
-      }
-    };
+
+    return () => cleanups.forEach((fn) => fn());
   }, [recheck]);
+
+  // Safety net: iOS Safari can restore the page without firing any of the
+  // events above, so while the guide is up we also poll quietly.
+  useEffect(() => {
+    if (phase !== 'blocked') return;
+    const id = setInterval(() => {
+      if (typeof document !== 'undefined' && document.visibilityState !== 'visible') return;
+      recheck();
+    }, 4000);
+    return () => clearInterval(id);
+  }, [phase, recheck]);
 
   const loading = phase === 'loading';
   const primaryLabel = loading
