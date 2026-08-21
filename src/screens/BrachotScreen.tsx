@@ -13,6 +13,7 @@ import { colors, radius, shadow, spacing } from '../theme';
 import { BRACHOT_CATEGORIES, Blessing } from '../data/brachot';
 import { Nusach } from '../data/birkatHamazon';
 import {
+  TEHILLIM_BAKASHA,
   TEHILLIM_CHAPTERS,
   TEHILLIM_INTRO,
   TEHILLIM_WEEKLY,
@@ -30,6 +31,7 @@ type ViewState =
   | { type: 'text'; blessing: Blessing; nusach?: Nusach; useIgeret?: boolean }
   | { type: 'igeret_picker'; blessing: Blessing }
   | { type: 'tehillim_days' }
+  | { type: 'tehillim_bakasha' }
   | { type: 'tehillim_day'; day: TehillimDay }
   | { type: 'tehillim_chapter'; chapterNum: number; day: TehillimDay };
 
@@ -199,6 +201,55 @@ export function BrachotScreen() {
     );
   }
 
+  // ── Tehillim: bakasha before reading ─────────────────────────────────────
+  if (view.type === 'tehillim_bakasha') {
+    return (
+      <Screen padded>
+        <View style={styles.header}>
+          <Pressable
+            onPress={() => setView({ type: 'tehillim_days' })}
+            style={styles.backBtn}
+            hitSlop={10}
+          >
+            <Ionicons name="chevron-forward" size={22} color={colors.primary} />
+            <Text style={styles.backText}>ספר תהילים</Text>
+          </Pressable>
+          <Text style={styles.headerTitle}>בקשה</Text>
+          <View style={{ width: 60 }} />
+        </View>
+
+        <ScrollView
+          showsVerticalScrollIndicator={false}
+          contentContainerStyle={styles.textContent}
+        >
+          <View style={styles.bakashaNoteCard}>
+            <Text style={styles.bakashaNoteText}>{TEHILLIM_BAKASHA.note}</Text>
+          </View>
+
+          {TEHILLIM_BAKASHA.paragraphs.map((para, i) => (
+            <View key={i} style={styles.para}>
+              <Text style={styles.paraText}>{para.text}</Text>
+            </View>
+          ))}
+
+          <View style={styles.para}>
+            <Text style={styles.paraTitle}>{TEHILLIM_BAKASHA.psalmLabel}</Text>
+            <View style={styles.versesBox}>
+              {TEHILLIM_BAKASHA.psalmVerses.map((verse, i) => (
+                <View key={i} style={styles.verseRow}>
+                  <Text style={styles.verseNum}>{numToHebrew(i + 1)}</Text>
+                  <Text style={styles.verseText}>{verse}</Text>
+                </View>
+              ))}
+            </View>
+          </View>
+
+          <View style={{ height: 40 }} />
+        </ScrollView>
+      </Screen>
+    );
+  }
+
   // ── Tehillim: day picker (ליום ראשון…) ───────────────────────────────────
   if (view.type === 'tehillim_days') {
     const todayIndex = new Date().getDay();
@@ -218,6 +269,17 @@ export function BrachotScreen() {
         </View>
 
         <ScrollView showsVerticalScrollIndicator={false}>
+          <Pressable
+            style={({ pressed }) => [styles.bakashahCard, pressed && styles.pressed]}
+            onPress={() => setView({ type: 'tehillim_bakasha' })}
+          >
+            <View style={styles.bakashahLeft}>
+              <Text style={styles.bakashahTitle}>בקשה קודם אמירת תהילים</Text>
+              <Text style={styles.bakashahSub}>יְהִי רָצוֹן מִלְּפָנֶיךָ...</Text>
+            </View>
+            <Ionicons name="chevron-back" size={16} color={colors.primary} />
+          </Pressable>
+
           <View style={styles.daysGrid}>
             {TEHILLIM_WEEKLY.map((day) => {
               const isToday = day.dayIndex === todayIndex;
@@ -1065,4 +1127,48 @@ const styles = StyleSheet.create({
   },
 
   pressed: { opacity: 0.75 },
+
+  // Bakasha entry card (in tehillim_days)
+  bakashahCard: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#EEE8FB',
+    borderRadius: radius.lg,
+    borderWidth: 0.5,
+    borderColor: '#D9C8F5',
+    paddingVertical: spacing.md,
+    paddingHorizontal: spacing.lg,
+    marginBottom: spacing.lg,
+    gap: 12,
+  },
+  bakashahLeft: { flex: 1 },
+  bakashahTitle: {
+    fontSize: 15,
+    fontWeight: '700',
+    color: '#4A2D7A',
+    textAlign: 'right',
+  },
+  bakashahSub: {
+    fontSize: 12,
+    color: '#7B5EA7',
+    textAlign: 'right',
+    marginTop: 3,
+  },
+
+  // Bakasha screen — shabbat/yom tov note
+  bakashaNoteCard: {
+    backgroundColor: '#FFF8E8',
+    borderRadius: radius.md,
+    borderWidth: 0.5,
+    borderColor: '#E8C840',
+    paddingHorizontal: spacing.md,
+    paddingVertical: spacing.sm,
+    marginBottom: spacing.xl,
+  },
+  bakashaNoteText: {
+    fontSize: 13,
+    lineHeight: 20,
+    color: '#7A5800',
+    textAlign: 'right',
+  },
 });
