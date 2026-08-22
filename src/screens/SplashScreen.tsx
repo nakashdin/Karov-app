@@ -6,6 +6,7 @@ import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { Logo } from '../components/Logo';
 import { RootStackParamList } from '../navigation/types';
 import { resolveLocationSilently } from '../utils/locationPermission';
+import { setCachedLocation } from '../context/locationCache';
 
 type Nav = NativeStackNavigationProp<RootStackParamList>;
 
@@ -54,6 +55,11 @@ export function SplashScreen() {
 
     // After 2.5s navigate
     const navTimer = setTimeout(async () => {
+      // A deep link (e.g. /place/:id) already pushed its destination on top of
+      // this screen. Replacing here would throw the user's link away, so the
+      // gating below only applies to a plain cold start.
+      if ((navigation.getState()?.routes.length ?? 1) > 1) return;
+
       let auth: string | null = null;
       try {
         auth = await AsyncStorage.getItem(AUTH_KEY);
@@ -70,7 +76,7 @@ export function SplashScreen() {
       try {
         const loc = await resolveLocationSilently(2500);
         if (loc) {
-          if (typeof window !== 'undefined') (window as any).__karovLoc = loc;
+          setCachedLocation(loc);
           navigation.replace('Tabs', { screen: 'Home' });
           return;
         }

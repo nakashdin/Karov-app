@@ -10,7 +10,9 @@ import {
 } from '@react-navigation/native';
 import { RootNavigator } from './src/navigation/RootNavigator';
 import { navigationRef } from './src/navigation/navigationRef';
+import { linking } from './src/navigation/linking';
 import { LocationRevokedNotice } from './src/components/LocationRevokedNotice';
+import { ErrorBoundary } from './src/components/ErrorBoundary';
 import { FiltersProvider } from './src/context/FiltersContext';
 import { LocationProvider } from './src/context/LocationContext';
 import { FavoritesProvider } from './src/context/FavoritesContext';
@@ -54,19 +56,22 @@ export default function App() {
 
   return (
     <SafeAreaProvider>
-      <LanguageProvider>
-        <LocationProvider>
-          <FavoritesProvider>
-            <FiltersProvider>
-              <NavigationContainer theme={navTheme} ref={navigationRef}>
-                <StatusBar style="dark" />
-                <RootNavigator />
-                <LocationRevokedNotice />
-              </NavigationContainer>
-            </FiltersProvider>
-          </FavoritesProvider>
-        </LocationProvider>
-      </LanguageProvider>
+      {/* Outermost, so a provider blowing up is caught too — not just a screen. */}
+      <ErrorBoundary>
+        <LanguageProvider>
+          <LocationProvider>
+            <FavoritesProvider>
+              <FiltersProvider>
+                <NavigationContainer theme={navTheme} ref={navigationRef} linking={linking}>
+                  <StatusBar style="dark" />
+                  <RootNavigator />
+                  <LocationRevokedNotice />
+                </NavigationContainer>
+              </FiltersProvider>
+            </FavoritesProvider>
+          </LocationProvider>
+        </LanguageProvider>
+      </ErrorBoundary>
     </SafeAreaProvider>
   );
 }
