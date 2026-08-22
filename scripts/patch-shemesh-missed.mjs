@@ -28,7 +28,7 @@ const raanana = {
   category: 'dairy',
   cityId: 'רעננה',
   address: 'רחוב אחוזה 100, רעננה',
-  location: { lat: 32.1838, lng: 34.8709 },
+  location: { latitude: 32.1838, longitude: 34.8709 },
   phone: '',
   kosherType: 'rabanut_mehadrin',
   certifiedBy: 'הרב רובין',

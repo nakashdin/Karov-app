@@ -28,7 +28,7 @@ const bakikar = {
   category: 'dairy',
   cityId: 'חולון',
   address: 'סוקולוב 22, חולון',
-  location: { lat: 32.0174, lng: 34.7791 },
+  location: { latitude: 32.0174, longitude: 34.7791 },
   phone: '',
   kosherType: 'mehadrin',
   openingHours: 'Su-Th 11:00-21:15; Sa 21:15-23:00',

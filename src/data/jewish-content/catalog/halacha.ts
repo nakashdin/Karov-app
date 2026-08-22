@@ -1,4 +1,4 @@
-﻿import { JewishContentItem } from '../types';
+import { JewishContentItem } from '../types';
 import { nrSource } from '../source-helpers';
 
 const SA = '×©×•×œ×—×Ÿ ×¢×¨×•×š';
