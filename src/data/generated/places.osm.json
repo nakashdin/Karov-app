@@ -1837,7 +1837,12 @@
       "latitude": 31.8993889,
       "longitude": 34.815152
     },
-    "cityId": "רחובות"
+    "cityId": "רחובות",
+    "extra": {
+      "mergedFrom": [
+        "osm-way-170333360"
+      ]
+    }
   },
   {
     "source": "osm",
@@ -1876,7 +1881,12 @@
       "latitude": 31.7716284,
       "longitude": 35.214016
     },
-    "cityId": "ירושלים"
+    "cityId": "ירושלים",
+    "extra": {
+      "mergedFrom": [
+        "osm-way-158756812"
+      ]
+    }
   },
   {
     "source": "osm",
@@ -1924,7 +1934,12 @@
       "latitude": 31.8907203,
       "longitude": 34.8247454
     },
-    "cityId": "רחובות"
+    "cityId": "רחובות",
+    "extra": {
+      "mergedFrom": [
+        "osm-way-114799009"
+      ]
+    }
   },
   {
     "source": "osm",
@@ -5423,7 +5438,12 @@
       "latitude": 32.0894562,
       "longitude": 34.867787
     },
-    "cityId": "פתח תקווה"
+    "cityId": "פתח תקווה",
+    "extra": {
+      "mergedFrom": [
+        "osm-way-1290953490"
+      ]
+    }
   },
   {
     "source": "osm",
@@ -7067,19 +7087,6 @@
   },
   {
     "source": "osm",
-    "id": "osm-way-114799009",
-    "type": "synagogue",
-    "lastVerifiedAt": "2026-06-17",
-    "name": "בית הכנסת \"אהבת ישראל\"",
-    "address": "רחוב חפץ חיים 26, רחובות",
-    "location": {
-      "latitude": 31.8907137,
-      "longitude": 34.8247372
-    },
-    "cityId": "רחובות"
-  },
-  {
-    "source": "osm",
     "id": "osm-way-114938859",
     "type": "synagogue",
     "lastVerifiedAt": "2026-06-17",
@@ -7758,19 +7765,6 @@
     "location": {
       "latitude": 31.7833824,
       "longitude": 35.226363
-    },
-    "cityId": "ירושלים"
-  },
-  {
-    "source": "osm",
-    "id": "osm-way-158756812",
-    "type": "synagogue",
-    "lastVerifiedAt": "2026-06-17",
-    "name": "יד תמר",
-    "address": "רחוב הארי 5, ירושלים",
-    "location": {
-      "latitude": 31.7716312,
-      "longitude": 35.2139643
     },
     "cityId": "ירושלים"
   },
@@ -8587,19 +8581,6 @@
   },
   {
     "source": "osm",
-    "id": "osm-way-170333360",
-    "type": "synagogue",
-    "lastVerifiedAt": "2026-06-17",
-    "name": "חזון יחזקאל",
-    "address": "רחוב גולדברג 6, רחובות",
-    "location": {
-      "latitude": 31.8994232,
-      "longitude": 34.8151299
-    },
-    "cityId": "רחובות"
-  },
-  {
-    "source": "osm",
     "id": "osm-way-170337572",
     "type": "synagogue",
     "lastVerifiedAt": "2026-06-17",
@@ -8953,19 +8934,6 @@
   },
   {
     "source": "osm",
-    "id": "osm-way-175425440",
-    "type": "synagogue",
-    "lastVerifiedAt": "2026-06-17",
-    "name": "כל הנשמה",
-    "address": "רחוב הרכבת 63, ירושלים",
-    "location": {
-      "latitude": 31.7591209,
-      "longitude": 35.2156548
-    },
-    "cityId": "רמת רחל"
-  },
-  {
-    "source": "osm",
     "id": "osm-way-175425441",
     "type": "synagogue",
     "lastVerifiedAt": "2026-06-17",
@@ -8981,7 +8949,12 @@
       "sourceRecordId": "arcgis:jerusalem:42",
       "fields": []
     },
-    "cityId": "רמת רחל"
+    "cityId": "רמת רחל",
+    "extra": {
+      "mergedFrom": [
+        "osm-way-175425440"
+      ]
+    }
   },
   {
     "source": "osm",
@@ -9758,7 +9731,12 @@
       "longitude": 35.0003338
     },
     "phone": "054-6753167",
-    "cityId": "חיפה"
+    "cityId": "חיפה",
+    "extra": {
+      "mergedFrom": [
+        "arcgis:haifa::129"
+      ]
+    }
   },
   {
     "source": "osm",
@@ -18187,7 +18165,12 @@
       "longitude": 34.8916479
     },
     "phone": "0528906775",
-    "cityId": "לוד"
+    "cityId": "לוד",
+    "extra": {
+      "mergedFrom": [
+        "arcgis:lod::26"
+      ]
+    }
   },
   {
     "source": "osm",
@@ -20292,20 +20275,12 @@
       "latitude": 31.7091586,
       "longitude": 35.0009555
     },
-    "cityId": "זנוח"
-  },
-  {
-    "source": "osm",
-    "id": "osm-way-585485712",
-    "type": "synagogue",
-    "lastVerifiedAt": "2026-06-17",
-    "name": "קהילות איש קדש",
-    "address": "רחוב נחל מאור 6, בית שמש",
-    "location": {
-      "latitude": 31.709369,
-      "longitude": 35.0009893
-    },
-    "cityId": "זנוח"
+    "cityId": "זנוח",
+    "extra": {
+      "mergedFrom": [
+        "osm-way-585485712"
+      ]
+    }
   },
   {
     "source": "osm",
@@ -21449,7 +21424,12 @@
       "latitude": 32.4747061,
       "longitude": 34.9612317
     },
-    "cityId": "פרדס חנה-כרכור"
+    "cityId": "פרדס חנה-כרכור",
+    "extra": {
+      "mergedFrom": [
+        "osm-way-677484163"
+      ]
+    }
   },
   {
     "source": "osm",
@@ -21461,19 +21441,6 @@
     "location": {
       "latitude": 32.4746893,
       "longitude": 34.9613669
-    },
-    "cityId": "פרדס חנה-כרכור"
-  },
-  {
-    "source": "osm",
-    "id": "osm-way-677484163",
-    "type": "synagogue",
-    "lastVerifiedAt": "2026-06-17",
-    "name": "בית כנסת אוהל יצחק",
-    "address": "רחוב תל צבי 17, פרדס חנה כרכור",
-    "location": {
-      "latitude": 32.4747745,
-      "longitude": 34.9610763
     },
     "cityId": "פרדס חנה-כרכור"
   },
@@ -22951,20 +22918,12 @@
       "latitude": 31.2250877,
       "longitude": 34.8740625
     },
-    "cityId": "נבטים"
-  },
-  {
-    "source": "osm",
-    "id": "osm-way-1060090505",
-    "type": "synagogue",
-    "lastVerifiedAt": "2026-06-17",
-    "name": "בית כנסת נבטים חדש",
-    "address": "נבטים",
-    "location": {
-      "latitude": 31.2250243,
-      "longitude": 34.8742488
-    },
-    "cityId": "נבטים"
+    "cityId": "נבטים",
+    "extra": {
+      "mergedFrom": [
+        "osm-way-1060090505"
+      ]
+    }
   },
   {
     "source": "osm",
@@ -24036,19 +23995,6 @@
       "longitude": 34.8307229
     },
     "cityId": "רמת גן"
-  },
-  {
-    "source": "osm",
-    "id": "osm-way-1290953490",
-    "type": "synagogue",
-    "lastVerifiedAt": "2026-06-17",
-    "name": "בית כנסת בילינסון",
-    "address": "פתח תקווה",
-    "location": {
-      "latitude": 32.0894519,
-      "longitude": 34.8677919
-    },
-    "cityId": "פתח תקווה"
   },
   {
     "source": "osm",
@@ -32086,7 +32032,10 @@
       "forMen": "לא",
       "forDishes": "כן",
       "brideRoom": "לא",
-      "responsibleWorker": "אליס ביטון"
+      "responsibleWorker": "אליס ביטון",
+      "mergedFrom": [
+        "mikveh-392"
+      ]
     },
     "name": "מקווה מושב ניר משה",
     "address": "ניר משה",
@@ -32138,7 +32087,10 @@
       "forMen": "לא",
       "forDishes": "לא",
       "brideRoom": "לא",
-      "responsibleWorker": "גקלין גוזלן"
+      "responsibleWorker": "גקלין גוזלן",
+      "mergedFrom": [
+        "mikveh-398"
+      ]
     },
     "name": "מקווה מושב שדה צבי",
     "address": "שדה צבי",
@@ -32190,7 +32142,10 @@
       "forMen": "לא",
       "forDishes": "כן",
       "brideRoom": "כן",
-      "responsibleWorker": "אורית יהודה"
+      "responsibleWorker": "אורית יהודה",
+      "mergedFrom": [
+        "mikveh-401"
+      ]
     },
     "name": "מושב בטחה",
     "address": "2-280 רחוב נרקיס, בטחה",
@@ -32242,7 +32197,10 @@
       "forMen": "כן",
       "forDishes": "כן",
       "brideRoom": "כן",
-      "responsibleWorker": "אהובה ימיני"
+      "responsibleWorker": "אהובה ימיני",
+      "mergedFrom": [
+        "mikveh-403"
+      ]
     },
     "name": "מושב מסלול",
     "address": "מסלול",
@@ -32252,32 +32210,6 @@
     },
     "phone": "050-7198700",
     "cityId": "מסלול",
-    "locationPrecision": "city"
-  },
-  {
-    "openingHours": "20:00",
-    "id": "mikveh-392",
-    "type": "mikveh",
-    "lastVerifiedAt": "2026-06-17",
-    "extra": {
-      "dataSource": "data.gov.il",
-      "geocodeQuery": "ניר משה, ישראל",
-      "geocodePrecision": "city",
-      "accessibility": "ללא",
-      "forWomen": "כן",
-      "forMen": "לא",
-      "forDishes": "כן",
-      "brideRoom": "לא",
-      "responsibleWorker": "אליס ביטון"
-    },
-    "name": "מושב ניר משה",
-    "address": "ניר משה",
-    "location": {
-      "latitude": 31.4772702,
-      "longitude": 34.6299737
-    },
-    "phone": "055-5595808",
-    "cityId": "ניר משה",
     "locationPrecision": "city"
   },
   {
@@ -32320,7 +32252,10 @@
       "forMen": "לא",
       "forDishes": "לא",
       "brideRoom": "לא",
-      "responsibleWorker": "גילה עומסי"
+      "responsibleWorker": "גילה עומסי",
+      "mergedFrom": [
+        "mikveh-404"
+      ]
     },
     "name": "מושב פדויים",
     "address": "פדויים",
@@ -32346,7 +32281,10 @@
       "forMen": "לא",
       "forDishes": "כן",
       "brideRoom": "לא",
-      "responsibleWorker": "ציפורה כהן"
+      "responsibleWorker": "ציפורה כהן",
+      "mergedFrom": [
+        "mikveh-405"
+      ]
     },
     "name": "מושב פטיש",
     "address": "446-454 רחוב החיטה, פטיש",
@@ -32412,32 +32350,6 @@
   },
   {
     "openingHours": "20:00",
-    "id": "mikveh-398",
-    "type": "mikveh",
-    "lastVerifiedAt": "2026-06-17",
-    "extra": {
-      "dataSource": "data.gov.il",
-      "geocodeQuery": "שדה צבי, ישראל",
-      "geocodePrecision": "city",
-      "accessibility": "חלקית",
-      "forWomen": "כן",
-      "forMen": "לא",
-      "forDishes": "לא",
-      "brideRoom": "לא",
-      "responsibleWorker": "גקלין גוזלן"
-    },
-    "name": "מושב שדה צבי",
-    "address": "שדה צבי",
-    "location": {
-      "latitude": 31.4485403,
-      "longitude": 34.713287
-    },
-    "phone": "054-9822159",
-    "cityId": "שדה צבי",
-    "locationPrecision": "city"
-  },
-  {
-    "openingHours": "20:00",
     "id": "mikveh-399",
     "type": "mikveh",
     "lastVerifiedAt": "2026-06-17",
@@ -32489,32 +32401,6 @@
     "locationPrecision": "city"
   },
   {
-    "openingHours": "19:00",
-    "id": "mikveh-401",
-    "type": "mikveh",
-    "lastVerifiedAt": "2026-06-17",
-    "extra": {
-      "dataSource": "data.gov.il",
-      "geocodeQuery": "בטחה, ישראל",
-      "geocodePrecision": "city",
-      "accessibility": "ללא",
-      "forWomen": "כן",
-      "forMen": "לא",
-      "forDishes": "כן",
-      "brideRoom": "כן",
-      "responsibleWorker": "אורית יהודה"
-    },
-    "name": "מקווה מושב בטחה",
-    "address": "2-280 רחוב נרקיס, בטחה",
-    "location": {
-      "latitude": 31.3342804,
-      "longitude": 34.6344922
-    },
-    "phone": "052-7116258",
-    "cityId": "בטחה",
-    "locationPrecision": "city"
-  },
-  {
     "openingHours": "20:00",
     "id": "mikveh-402",
     "type": "mikveh",
@@ -32538,84 +32424,6 @@
     },
     "phone": "050-8914115",
     "cityId": "מבועים",
-    "locationPrecision": "city"
-  },
-  {
-    "openingHours": "19:00",
-    "id": "mikveh-403",
-    "type": "mikveh",
-    "lastVerifiedAt": "2026-06-17",
-    "extra": {
-      "dataSource": "data.gov.il",
-      "geocodeQuery": "מסלול, ישראל",
-      "geocodePrecision": "city",
-      "accessibility": "מלאה",
-      "forWomen": "כן",
-      "forMen": "לא",
-      "forDishes": "כן",
-      "brideRoom": "כן",
-      "responsibleWorker": "אהובה ימיני"
-    },
-    "name": "מקווה מושב מסלול",
-    "address": "מסלול",
-    "location": {
-      "latitude": 31.3253422,
-      "longitude": 34.5885811
-    },
-    "phone": "050-7198700",
-    "cityId": "מסלול",
-    "locationPrecision": "city"
-  },
-  {
-    "openingHours": "19:00",
-    "id": "mikveh-404",
-    "type": "mikveh",
-    "lastVerifiedAt": "2026-06-17",
-    "extra": {
-      "dataSource": "data.gov.il",
-      "geocodeQuery": "פדויים, ישראל",
-      "geocodePrecision": "city",
-      "accessibility": "חלקית",
-      "forWomen": "כן",
-      "forMen": "לא",
-      "forDishes": "לא",
-      "brideRoom": "לא",
-      "responsibleWorker": "גילה עומסי"
-    },
-    "name": "מקווה מושב פדויים",
-    "address": "פדויים",
-    "location": {
-      "latitude": 31.3277011,
-      "longitude": 34.612047
-    },
-    "phone": "055-8813550",
-    "cityId": "פדויים",
-    "locationPrecision": "city"
-  },
-  {
-    "openingHours": "19:00",
-    "id": "mikveh-405",
-    "type": "mikveh",
-    "lastVerifiedAt": "2026-06-17",
-    "extra": {
-      "dataSource": "data.gov.il",
-      "geocodeQuery": "פטיש, ישראל",
-      "geocodePrecision": "city",
-      "accessibility": "ללא",
-      "forWomen": "כן",
-      "forMen": "לא",
-      "forDishes": "כן",
-      "brideRoom": "לא",
-      "responsibleWorker": "ציפורה כהן"
-    },
-    "name": "מקווה מושב פטיש",
-    "address": "446-454 רחוב החיטה, פטיש",
-    "location": {
-      "latitude": 31.3273849,
-      "longitude": 34.5602722
-    },
-    "phone": "050-7937877",
-    "cityId": "פטיש",
     "locationPrecision": "city"
   },
   {
@@ -32788,7 +32596,10 @@
       "forMen": "לא",
       "forDishes": "לא",
       "brideRoom": "כן",
-      "responsibleWorker": "רחל ממן"
+      "responsibleWorker": "רחל ממן",
+      "mergedFrom": [
+        "mikveh-414"
+      ]
     },
     "name": "מלכות דוד",
     "address": "האדמו\"ר מבעלזא 1",
@@ -32827,32 +32638,6 @@
     "locationPrecision": "address"
   },
   {
-    "openingHours": "18:00-22:30",
-    "id": "mikveh-414",
-    "type": "mikveh",
-    "lastVerifiedAt": "2026-06-17",
-    "extra": {
-      "dataSource": "data.gov.il",
-      "geocodeQuery": "האדמו\"ר מבעלזא 1, נוף הגליל, ישראל",
-      "geocodePrecision": "address",
-      "accessibility": "מלאה",
-      "forWomen": "כן",
-      "forMen": "לא",
-      "forDishes": "לא",
-      "brideRoom": "כן",
-      "responsibleWorker": "רחל ממן"
-    },
-    "name": "מקווה מלכות דוד",
-    "address": "האדמו\"ר מבעלזא 1",
-    "location": {
-      "latitude": 32.7296168,
-      "longitude": 35.3468778
-    },
-    "phone": "050-8993096",
-    "cityId": "נוף הגליל",
-    "locationPrecision": "address"
-  },
-  {
     "openingHours": "19:00-23:00",
     "id": "mikveh-415",
     "type": "mikveh",
@@ -32866,35 +32651,12 @@
       "forMen": "לא",
       "forDishes": "כן",
       "brideRoom": "כן",
-      "responsibleWorker": "רחל ממן"
+      "responsibleWorker": "רחל ממן",
+      "mergedFrom": [
+        "mikveh-416"
+      ]
     },
     "name": "מקווה צפוני",
-    "address": "7-7 רחוב הגבעה, נוף גליל",
-    "location": {
-      "latitude": 32.7075437,
-      "longitude": 35.3158105
-    },
-    "phone": "050-8993096",
-    "cityId": "נוף הגליל",
-    "locationPrecision": "address"
-  },
-  {
-    "openingHours": "18:00-22:30",
-    "id": "mikveh-416",
-    "type": "mikveh",
-    "lastVerifiedAt": "2026-06-17",
-    "extra": {
-      "dataSource": "data.gov.il",
-      "geocodeQuery": "הגבעה 11, נוף הגליל, ישראל",
-      "geocodePrecision": "address",
-      "accessibility": "חלקית",
-      "forWomen": "כן",
-      "forMen": "לא",
-      "forDishes": "כן",
-      "brideRoom": "כן",
-      "responsibleWorker": "רחל ממן"
-    },
-    "name": "צפוני",
     "address": "7-7 רחוב הגבעה, נוף גליל",
     "location": {
       "latitude": 32.7075437,
@@ -35181,7 +34943,10 @@
       "forMen": "לא",
       "forDishes": "כן",
       "brideRoom": "לא",
-      "responsibleWorker": "חן כהן"
+      "responsibleWorker": "חן כהן",
+      "mergedFrom": [
+        "mikveh-509"
+      ]
     },
     "name": "רמת אפעל",
     "address": "רחוב אל על 1, רמת גן",
@@ -35190,32 +34955,6 @@
       "longitude": 34.8341647
     },
     "phone": "050-4633505",
-    "cityId": "רמת גן",
-    "locationPrecision": "address"
-  },
-  {
-    "openingHours": "20:00- 22:00",
-    "id": "mikveh-509",
-    "type": "mikveh",
-    "lastVerifiedAt": "2026-06-17",
-    "extra": {
-      "dataSource": "data.gov.il",
-      "geocodeQuery": "החוגה 2, רמת גן, ישראל",
-      "geocodePrecision": "address",
-      "accessibility": "ללא",
-      "forWomen": "כן",
-      "forMen": "לא",
-      "forDishes": "לא",
-      "brideRoom": "לא",
-      "responsibleWorker": "ברונר אילנה"
-    },
-    "name": "רמת אפעל",
-    "address": "רחוב אל על 1, רמת גן",
-    "location": {
-      "latitude": 32.0459993,
-      "longitude": 34.8341647
-    },
-    "phone": "052-7651777",
     "cityId": "רמת גן",
     "locationPrecision": "address"
   },
@@ -36953,7 +36692,12 @@
       "council": "המועצה הדתית פתח תקווה",
       "sourceUrl": "https://mpt.org.il/directory-synagogues/listing/אבי-עזרי/"
     },
-    "cityId": "פתח תקווה"
+    "cityId": "פתח תקווה",
+    "extra": {
+      "mergedFrom": [
+        "rc-petah-tikva-9609"
+      ]
+    }
   },
   {
     "id": "rc-petah-tikva-9274",
@@ -41470,7 +41214,12 @@
       "council": "המועצה הדתית פתח תקווה",
       "sourceUrl": "https://mpt.org.il/directory-synagogues/listing/אוהל-יצחק-פנינת-גנים/"
     },
-    "cityId": "פתח תקווה"
+    "cityId": "פתח תקווה",
+    "extra": {
+      "mergedFrom": [
+        "rc-petah-tikva-9575"
+      ]
+    }
   },
   {
     "id": "rc-petah-tikva-9562",
@@ -41716,25 +41465,6 @@
       "source": "religious-council",
       "council": "המועצה הדתית פתח תקווה",
       "sourceUrl": "https://mpt.org.il/directory-synagogues/listing/הר-חסד-א-כ-י-ר/"
-    },
-    "cityId": "פתח תקווה"
-  },
-  {
-    "id": "rc-petah-tikva-9575",
-    "type": "synagogue",
-    "lastVerifiedAt": "2026-06-18",
-    "nusach": "אשכנז",
-    "phone": "0542424630",
-    "name": "אוהל יצחק (פנינת גנים)",
-    "address": "רחוב יד הבנים 66, פתח תקווה",
-    "location": {
-      "latitude": 32.071469,
-      "longitude": 34.876578
-    },
-    "provenance": {
-      "source": "religious-council",
-      "council": "המועצה הדתית פתח תקווה",
-      "sourceUrl": "https://mpt.org.il/directory-synagogues/listing/אוהל-יצחק-פנינת-גנים-2/"
     },
     "cityId": "פתח תקווה"
   },
@@ -42322,25 +42052,6 @@
       "source": "religious-council",
       "council": "המועצה הדתית פתח תקווה",
       "sourceUrl": "https://mpt.org.il/directory-synagogues/listing/אחווה-ורעות/"
-    },
-    "cityId": "פתח תקווה"
-  },
-  {
-    "id": "rc-petah-tikva-9609",
-    "type": "synagogue",
-    "lastVerifiedAt": "2026-06-18",
-    "nusach": "אשכנז",
-    "phone": "0546611399",
-    "name": "אבי עזרי",
-    "address": "רחוב סלנט שמואל 14, פתח תקווה",
-    "location": {
-      "latitude": 32.084041,
-      "longitude": 34.887762
-    },
-    "provenance": {
-      "source": "religious-council",
-      "council": "המועצה הדתית פתח תקווה",
-      "sourceUrl": "https://mpt.org.il/directory-synagogues/listing/אבי-עזרי-3/"
     },
     "cityId": "פתח תקווה"
   },
@@ -70453,25 +70164,6 @@
     "cityId": "חיפה"
   },
   {
-    "id": "arcgis:haifa::129",
-    "type": "synagogue",
-    "lastVerifiedAt": "2026-06-19",
-    "nusach": "ס",
-    "phone": "058-6111770",
-    "name": "חב\"ד",
-    "address": "רחוב פרישמן 1, חיפה",
-    "location": {
-      "latitude": 32.806573057742675,
-      "longitude": 35.00037238919441
-    },
-    "provenance": {
-      "source": "arcgis:haifa",
-      "by": "arcgis-municipal",
-      "sourceUrl": "https://gisserver.haifa.muni.il/arcgiswebadaptor/rest/services/PublicSite/Haifa_Community_Public/MapServer/10"
-    },
-    "cityId": "חיפה"
-  },
-  {
     "id": "arcgis:haifa::130",
     "type": "synagogue",
     "lastVerifiedAt": "2026-06-19",
@@ -73066,7 +72758,12 @@
       "by": "arcgis-municipal",
       "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
     },
-    "cityId": "אשדוד"
+    "cityId": "אשדוד",
+    "extra": {
+      "mergedFrom": [
+        "arcgis:ashdod::5125"
+      ]
+    }
   },
   {
     "id": "arcgis:ashdod::142",
@@ -75362,7 +75059,12 @@
       "by": "arcgis-municipal",
       "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
     },
-    "cityId": "אשדוד"
+    "cityId": "אשדוד",
+    "extra": {
+      "mergedFrom": [
+        "arcgis:ashdod::2691"
+      ]
+    }
   },
   {
     "id": "arcgis:ashdod::2686",
@@ -75441,23 +75143,6 @@
     "location": {
       "latitude": 31.801296113804348,
       "longitude": 34.66445292133361
-    },
-    "provenance": {
-      "source": "arcgis:ashdod",
-      "by": "arcgis-municipal",
-      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
-    },
-    "cityId": "אשדוד"
-  },
-  {
-    "id": "arcgis:ashdod::2691",
-    "type": "synagogue",
-    "lastVerifiedAt": "2026-06-19",
-    "name": "בית אהרון",
-    "address": "רחוב הפלמח 20, אשדוד",
-    "location": {
-      "latitude": 31.800336177596233,
-      "longitude": 34.662603486496
     },
     "provenance": {
       "source": "arcgis:ashdod",
@@ -76733,23 +76418,6 @@
     "location": {
       "latitude": 31.783337818811244,
       "longitude": 34.63372037688577
-    },
-    "provenance": {
-      "source": "arcgis:ashdod",
-      "by": "arcgis-municipal",
-      "sourceUrl": "https://gis.ashdod.muni.il/arcgis/rest/services/mapt_reka/MapServer/13"
-    },
-    "cityId": "אשדוד"
-  },
-  {
-    "id": "arcgis:ashdod::5125",
-    "type": "synagogue",
-    "lastVerifiedAt": "2026-06-19",
-    "name": "משכנות שמואל",
-    "address": "רחוב אייר 4, אשדוד",
-    "location": {
-      "latitude": 31.783684309509756,
-      "longitude": 34.6375307168928
     },
     "provenance": {
       "source": "arcgis:ashdod",
@@ -83240,7 +82908,7 @@
       "latitude": 31.7395926,
       "longitude": 34.9860115
     },
-    "cityId": ""
+    "cityId": "בית שמש"
   },
   {
     "source": "osm",
@@ -83263,7 +82931,7 @@
       "latitude": 31.7397348,
       "longitude": 34.9765988
     },
-    "cityId": ""
+    "cityId": "בית שמש"
   },
   {
     "source": "osm",
@@ -83286,7 +82954,7 @@
       "latitude": 32.639768,
       "longitude": 35.0835463
     },
-    "cityId": ""
+    "cityId": "יקנעם"
   },
   {
     "source": "osm",
@@ -83378,7 +83046,7 @@
       "latitude": 32.8045028,
       "longitude": 34.9992019
     },
-    "cityId": ""
+    "cityId": "חיפה"
   },
   {
     "source": "osm",
@@ -83401,7 +83069,7 @@
       "latitude": 31.7546586,
       "longitude": 35.1659669
     },
-    "cityId": ""
+    "cityId": "ירושלים"
   },
   {
     "source": "osm",
@@ -83424,7 +83092,7 @@
       "latitude": 32.4306858,
       "longitude": 34.9254548
     },
-    "cityId": ""
+    "cityId": "חדרה"
   },
   {
     "source": "osm",
@@ -83516,7 +83184,7 @@
       "latitude": 32.4687411,
       "longitude": 35.0373821
     },
-    "cityId": ""
+    "cityId": "חיפה"
   },
   {
     "source": "osm",
@@ -83586,7 +83254,7 @@
       "latitude": 32.9690813,
       "longitude": 35.4925636
     },
-    "cityId": ""
+    "cityId": "צפת"
   },
   {
     "source": "osm",
@@ -83724,7 +83392,7 @@
       "latitude": 32.9584378,
       "longitude": 35.4920699
     },
-    "cityId": ""
+    "cityId": "צפת"
   },
   {
     "source": "osm",
@@ -83897,7 +83565,12 @@
       "by": "arcgis-municipal",
       "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4"
     },
-    "cityId": "חולון"
+    "cityId": "חולון",
+    "extra": {
+      "mergedFrom": [
+        "arcgis:holon::477"
+      ]
+    }
   },
   {
     "id": "arcgis:holon::418",
@@ -84033,7 +83706,12 @@
       "by": "arcgis-municipal",
       "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4"
     },
-    "cityId": "חולון"
+    "cityId": "חולון",
+    "extra": {
+      "mergedFrom": [
+        "arcgis:holon::485"
+      ]
+    }
   },
   {
     "id": "arcgis:holon::430",
@@ -84067,7 +83745,12 @@
       "by": "arcgis-municipal",
       "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4"
     },
-    "cityId": "חולון"
+    "cityId": "חולון",
+    "extra": {
+      "mergedFrom": [
+        "arcgis:holon::489"
+      ]
+    }
   },
   {
     "id": "arcgis:holon::432",
@@ -84169,7 +83852,12 @@
       "by": "arcgis-municipal",
       "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4"
     },
-    "cityId": "חולון"
+    "cityId": "חולון",
+    "extra": {
+      "mergedFrom": [
+        "arcgis:holon::498"
+      ]
+    }
   },
   {
     "id": "arcgis:holon::439",
@@ -84186,7 +83874,12 @@
       "by": "arcgis-municipal",
       "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4"
     },
-    "cityId": "חולון"
+    "cityId": "חולון",
+    "extra": {
+      "mergedFrom": [
+        "arcgis:holon::499"
+      ]
+    }
   },
   {
     "id": "arcgis:holon::440",
@@ -84203,7 +83896,12 @@
       "by": "arcgis-municipal",
       "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4"
     },
-    "cityId": "חולון"
+    "cityId": "חולון",
+    "extra": {
+      "mergedFrom": [
+        "arcgis:holon::501"
+      ]
+    }
   },
   {
     "id": "arcgis:holon::441",
@@ -84237,7 +83935,12 @@
       "by": "arcgis-municipal",
       "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4"
     },
-    "cityId": "חולון"
+    "cityId": "חולון",
+    "extra": {
+      "mergedFrom": [
+        "arcgis:holon::502"
+      ]
+    }
   },
   {
     "id": "arcgis:holon::443",
@@ -84424,7 +84127,12 @@
       "by": "arcgis-municipal",
       "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4"
     },
-    "cityId": "חולון"
+    "cityId": "חולון",
+    "extra": {
+      "mergedFrom": [
+        "arcgis:holon::515"
+      ]
+    }
   },
   {
     "id": "arcgis:holon::455",
@@ -84475,7 +84183,12 @@
       "by": "arcgis-municipal",
       "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4"
     },
-    "cityId": "חולון"
+    "cityId": "חולון",
+    "extra": {
+      "mergedFrom": [
+        "arcgis:holon::521"
+      ]
+    }
   },
   {
     "id": "arcgis:holon::458",
@@ -84492,7 +84205,12 @@
       "by": "arcgis-municipal",
       "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4"
     },
-    "cityId": "חולון"
+    "cityId": "חולון",
+    "extra": {
+      "mergedFrom": [
+        "arcgis:holon::523"
+      ]
+    }
   },
   {
     "id": "arcgis:holon::459",
@@ -84699,23 +84417,6 @@
     "cityId": "חולון"
   },
   {
-    "id": "arcgis:holon::477",
-    "type": "synagogue",
-    "lastVerifiedAt": "2026-06-21",
-    "name": "מעוז יעקב",
-    "address": "רחוב צאלים 34, חולון",
-    "location": {
-      "latitude": 32.0213243597461,
-      "longitude": 34.76188816899724
-    },
-    "provenance": {
-      "source": "arcgis:holon",
-      "by": "arcgis-municipal",
-      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4"
-    },
-    "cityId": "חולון"
-  },
-  {
     "id": "arcgis:holon::478",
     "type": "synagogue",
     "lastVerifiedAt": "2026-06-21",
@@ -84818,23 +84519,6 @@
     "cityId": "חולון"
   },
   {
-    "id": "arcgis:holon::485",
-    "type": "synagogue",
-    "lastVerifiedAt": "2026-06-21",
-    "name": "ע\"ש חללי מערכות ישראל",
-    "address": "רחוב החשמונאים 51, חולון",
-    "location": {
-      "latitude": 32.02726217674963,
-      "longitude": 34.76811047676893
-    },
-    "provenance": {
-      "source": "arcgis:holon",
-      "by": "arcgis-municipal",
-      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4"
-    },
-    "cityId": "חולון"
-  },
-  {
     "id": "arcgis:holon::486",
     "type": "synagogue",
     "lastVerifiedAt": "2026-06-21",
@@ -84877,23 +84561,6 @@
     "location": {
       "latitude": 32.02907298139015,
       "longitude": 34.76963548589796
-    },
-    "provenance": {
-      "source": "arcgis:holon",
-      "by": "arcgis-municipal",
-      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4"
-    },
-    "cityId": "חולון"
-  },
-  {
-    "id": "arcgis:holon::489",
-    "type": "synagogue",
-    "lastVerifiedAt": "2026-06-21",
-    "name": "מחנה אפרים",
-    "address": "רחוב שיבת ציון 2, חולון",
-    "location": {
-      "latitude": 32.00423171184252,
-      "longitude": 34.76430110001454
     },
     "provenance": {
       "source": "arcgis:holon",
@@ -85022,40 +84689,6 @@
     "cityId": "חולון"
   },
   {
-    "id": "arcgis:holon::498",
-    "type": "synagogue",
-    "lastVerifiedAt": "2026-06-21",
-    "name": "ללוש רחל",
-    "address": "רחוב ויצמן 14, חולון",
-    "location": {
-      "latitude": 32.02167920512042,
-      "longitude": 34.772679059263346
-    },
-    "provenance": {
-      "source": "arcgis:holon",
-      "by": "arcgis-municipal",
-      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4"
-    },
-    "cityId": "חולון"
-  },
-  {
-    "id": "arcgis:holon::499",
-    "type": "synagogue",
-    "lastVerifiedAt": "2026-06-21",
-    "name": "מגן דוד",
-    "address": "רחוב מבצע סיני 2, חולון",
-    "location": {
-      "latitude": 32.02646687313043,
-      "longitude": 34.76171714223852
-    },
-    "provenance": {
-      "source": "arcgis:holon",
-      "by": "arcgis-municipal",
-      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4"
-    },
-    "cityId": "חולון"
-  },
-  {
     "id": "arcgis:holon::500",
     "type": "synagogue",
     "lastVerifiedAt": "2026-06-21",
@@ -85064,40 +84697,6 @@
     "location": {
       "latitude": 32.02731716254478,
       "longitude": 34.76092438365754
-    },
-    "provenance": {
-      "source": "arcgis:holon",
-      "by": "arcgis-municipal",
-      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4"
-    },
-    "cityId": "חולון"
-  },
-  {
-    "id": "arcgis:holon::501",
-    "type": "synagogue",
-    "lastVerifiedAt": "2026-06-21",
-    "name": "עטרת חכמים",
-    "address": "רחוב החים 8, חולון",
-    "location": {
-      "latitude": 32.02737711426472,
-      "longitude": 34.7613879307313
-    },
-    "provenance": {
-      "source": "arcgis:holon",
-      "by": "arcgis-municipal",
-      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4"
-    },
-    "cityId": "חולון"
-  },
-  {
-    "id": "arcgis:holon::502",
-    "type": "synagogue",
-    "lastVerifiedAt": "2026-06-21",
-    "name": "סוכת שלום",
-    "address": "רחוב ברנר 10, חולון",
-    "location": {
-      "latitude": 32.02472369903083,
-      "longitude": 34.769220296076796
     },
     "provenance": {
       "source": "arcgis:holon",
@@ -85277,23 +84876,6 @@
     "cityId": "חולון"
   },
   {
-    "id": "arcgis:holon::515",
-    "type": "synagogue",
-    "lastVerifiedAt": "2026-06-21",
-    "name": "סיני",
-    "address": "רחוב השחף 2, חולון",
-    "location": {
-      "latitude": 32.02129854465298,
-      "longitude": 34.792366801036984
-    },
-    "provenance": {
-      "source": "arcgis:holon",
-      "by": "arcgis-municipal",
-      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4"
-    },
-    "cityId": "חולון"
-  },
-  {
     "id": "arcgis:holon::516",
     "type": "synagogue",
     "lastVerifiedAt": "2026-06-21",
@@ -85379,23 +84961,6 @@
     "cityId": "חולון"
   },
   {
-    "id": "arcgis:holon::521",
-    "type": "synagogue",
-    "lastVerifiedAt": "2026-06-21",
-    "name": "לוי יחזקאל",
-    "address": "6-26 רחוב התחיה, חולון",
-    "location": {
-      "latitude": 32.01595295499296,
-      "longitude": 34.780885084790704
-    },
-    "provenance": {
-      "source": "arcgis:holon",
-      "by": "arcgis-municipal",
-      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4"
-    },
-    "cityId": "חולון"
-  },
-  {
     "id": "arcgis:holon::522",
     "type": "synagogue",
     "lastVerifiedAt": "2026-06-21",
@@ -85404,23 +84969,6 @@
     "location": {
       "latitude": 32.01453200129427,
       "longitude": 34.78765885286685
-    },
-    "provenance": {
-      "source": "arcgis:holon",
-      "by": "arcgis-municipal",
-      "sourceUrl": "https://services2.arcgis.com/cjDo9oPmimdHxumn/arcgis/rest/services/Shilat/FeatureServer/4"
-    },
-    "cityId": "חולון"
-  },
-  {
-    "id": "arcgis:holon::523",
-    "type": "synagogue",
-    "lastVerifiedAt": "2026-06-21",
-    "name": "עברי גדעון",
-    "address": "רחוב ברנדיס 6, חולון",
-    "location": {
-      "latitude": 32.011558371523314,
-      "longitude": 34.79067877169042
     },
     "provenance": {
       "source": "arcgis:holon",
@@ -87213,23 +86761,6 @@
     "location": {
       "latitude": 31.94416483015989,
       "longitude": 34.88537311846442
-    },
-    "provenance": {
-      "source": "arcgis:lod",
-      "by": "arcgis-municipal",
-      "sourceUrl": "https://services2.arcgis.com/rY5uI5cxAq4qEyXH/arcgis/rest/services/מוסדות_ציבור/FeatureServer/1"
-    },
-    "cityId": "לוד"
-  },
-  {
-    "id": "arcgis:lod::26",
-    "type": "synagogue",
-    "lastVerifiedAt": "2026-06-21",
-    "name": "בית כנסת משכנות ישראל",
-    "address": "רחוב ברק 10, לוד",
-    "location": {
-      "latitude": 31.944353840825006,
-      "longitude": 34.891589658887895
     },
     "provenance": {
       "source": "arcgis:lod",
@@ -89734,7 +89265,12 @@
       "by": "arcgis-municipal",
       "sourceUrl": "https://services8.arcgis.com/Fq82oUDJGykXC54L/arcgis/rest/services/בתי_כנסת/FeatureServer/0"
     },
-    "cityId": "מודיעין עילית"
+    "cityId": "מודיעין עילית",
+    "extra": {
+      "mergedFrom": [
+        "arcgis:modiin-ilit::155"
+      ]
+    }
   },
   {
     "id": "arcgis:modiin-ilit::111",
@@ -90515,23 +90051,6 @@
     "location": {
       "latitude": 31.938547804220914,
       "longitude": 35.03891721687814
-    },
-    "provenance": {
-      "source": "arcgis:modiin-ilit",
-      "by": "arcgis-municipal",
-      "sourceUrl": "https://services8.arcgis.com/Fq82oUDJGykXC54L/arcgis/rest/services/בתי_כנסת/FeatureServer/0"
-    },
-    "cityId": "מודיעין עילית"
-  },
-  {
-    "id": "arcgis:modiin-ilit::155",
-    "type": "synagogue",
-    "lastVerifiedAt": "2026-06-21",
-    "name": "שבט הלוי",
-    "address": "רחוב רבי יהודה הנשיא 17, מודיעין עילית",
-    "location": {
-      "latitude": 31.93971179380718,
-      "longitude": 35.04136190591664
     },
     "provenance": {
       "source": "arcgis:modiin-ilit",
@@ -113254,29 +112773,6 @@
     "kosherLevel": "mehadrin",
     "kosherAuthorityGroup": "unknown",
     "description": "מסעדת גריל בשרים הפועלת בירושלים מ-2004, מגישה שיפודים על אש, תבשילי בית, דגים וסלטים טריים. האווירה משפחתית וחמה ומתאימה גם לאירועים ושמחות.",
-    "locationPrecision": "exact",
-    "locationSource": "waze"
-  },
-  {
-    "id": "manual-angelica-jerusalem",
-    "name": "אנג'ליקה",
-    "type": "restaurant",
-    "category": "meat",
-    "address": "ג'ורג' וושינגטון 4, ירושלים",
-    "cityId": "ירושלים",
-    "location": {
-      "latitude": 31.77353286743164,
-      "longitude": 35.2214241027832
-    },
-    "phone": "02-6230056",
-    "website": "https://angelicarest.com/",
-    "certifiedBy": "רב רפאל מנת",
-    "kosherType": "mehadrin",
-    "openingHours": "ב'-ה' 12:30-22:30; א' 18:00-22:30",
-    "source": "manual",
-    "kosherLevel": "mehadrin",
-    "kosherAuthorityGroup": "unknown",
-    "description": "מסעדת שף יוקרתית בירושלים הפועלת מ-2008, המשלבת טכניקות בישול צרפתיות עם השפעות בינלאומיות ובחירת יינות מעשרים יקבים ישראליים מובחרים. חוויית אכילה מושלמת עם יצירתיות קולינרית ואירוח מקצועי.",
     "locationPrecision": "exact",
     "locationSource": "waze"
   },
@@ -142500,7 +141996,8 @@
     "phone": "0779800439",
     "kosherLevel": "regular",
     "kosherAuthorityGroup": "rabbinate",
-    "description": "B-Fresh היא רשת בתי שייקים ומשקאות פרימיום המתמחה בהכנת שתיות טריות ואיכותיות בהשראת טעמים מרחבי העולם. הרשת מציעה חוויית שתייה ייחודית המשלבת מרכיבים טבעיים עם אווירה קיצית ומלאת אנרגיה."
+    "description": "B-Fresh היא רשת בתי שייקים ומשקאות פרימיום המתמחה בהכנת שתיות טריות ואיכותיות בהשראת טעמים מרחבי העולם. הרשת מציעה חוויית שתייה ייחודית המשלבת מרכיבים טבעיים עם אווירה קיצית ומלאת אנרגיה.",
+    "cityId": "עין יהב"
   },
   {
     "id": "manual-b-fresh-ice-mall-eilat",
@@ -142676,7 +142173,7 @@
     "id": "cafecafe-a4a884b0",
     "name": "קפה קפה נתב\"ג",
     "type": "cafe",
-    "cityId": "נמל תעופה",
+    "cityId": "לוד",
     "address": "טרמינל 1, שדה התעופה בן גוריון",
     "location": {
       "latitude": 31.994436264038086,
@@ -144647,7 +144144,7 @@
     "name": "ניו דלי רמת בית שמש",
     "type": "restaurant",
     "subType": "fast_food",
-    "cityId": "רמת בית שמש",
+    "cityId": "בית שמש",
     "address": "נחל צאלים 2, רמת בית שמש",
     "location": {
       "latitude": 31.712860107421875,
@@ -146463,7 +145960,13 @@
     "lastVerifiedAt": "2026-08-05",
     "kosherLevel": "mehadrin",
     "kosherAuthorityGroup": "unknown",
-    "locationSource": "waze"
+    "locationSource": "waze",
+    "certifiedBy": "רב רפאל מנת",
+    "extra": {
+      "mergedFrom": [
+        "manual-angelica-jerusalem"
+      ]
+    }
   },
   {
     "id": "jer-3f247121",
@@ -146849,7 +146352,7 @@
     "name": "יקב מיקה",
     "type": "winery",
     "category": "parve",
-    "cityId": "מושב נטור",
+    "cityId": "נטור",
     "address": "מושב נטור, רמת הגולן",
     "location": {
       "latitude": 32.854068,
@@ -146872,7 +146375,7 @@
     "name": "יקב מלול",
     "type": "winery",
     "category": "parve",
-    "cityId": "מושב שעל",
+    "cityId": "שעל",
     "address": "מושב שעל, רמת הגולן",
     "location": {
       "latitude": 33.117624,
@@ -146963,7 +146466,7 @@
     "name": "יקב ליבנה",
     "type": "winery",
     "category": "parve",
-    "cityId": "שדה משה",
+    "cityId": "מושב שדה משה",
     "address": "שדה משה, שפלת יהודה",
     "location": {
       "latitude": 31.613636016845703,
