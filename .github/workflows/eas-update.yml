@@ -1,0 +1,71 @@
+name: EAS Update (production)
+
+# The fast release lane. Every JS or dataset change on master reaches installed
+# apps over the air in minutes — no store review.
+#
+# Anything that changes the NATIVE runtime is excluded below and must go through
+# eas-build.yml instead. runtimeVersion uses the `fingerprint` policy, so even
+# if something slips through here, EAS refuses to serve the update to a binary
+# that cannot run it.
+on:
+  push:
+    branches: [master]
+    paths-ignore:
+      - 'app.json'
+      - 'app.config.ts'
+      - 'eas.json'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'assets/**'
+      - '.github/**'
+      - 'docs/**'
+      - '**.md'
+  workflow_dispatch:
+
+concurrency:
+  group: eas-update-production
+  cancel-in-progress: false
+
+jobs:
+  # `secrets` is not available in a job-level `if`, so the check is its own job.
+  check:
+    name: Check EAS credentials
+    runs-on: ubuntu-latest
+    outputs:
+      configured: ${{ steps.guard.outputs.configured }}
+    steps:
+      - id: guard
+        run: |
+          if [ -z "${{ secrets.EXPO_TOKEN }}" ]; then
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Update skipped::EXPO_TOKEN is not set. Create one at https://expo.dev/settings/access-tokens and add it as a repository secret."
+          else
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          fi
+
+  update:
+    name: Publish OTA update
+    needs: check
+    if: needs.check.outputs.configured == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - uses: expo/expo-github-action@v8
+        with:
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
+
+      - run: npm ci
+
+      # Never ship an OTA update that would not have passed the PR gate.
+      - name: Verify
+        run: npm run verify
+
+      - name: Publish
+        run: eas update --branch production --message "${{ github.event.head_commit.message || 'manual dispatch' }}" --non-interactive

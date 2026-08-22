@@ -1,0 +1,58 @@
+name: EAS Preview
+
+# Publishes an EAS Update preview for every pull request and comments the QR
+# code on the PR, so a change can be opened on a real phone before it merges.
+on:
+  pull_request:
+
+concurrency:
+  group: preview-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  # `secrets` is not available in a job-level `if`, so the check lives in its
+  # own job and the real work depends on its output. The preview is SKIPPED
+  # rather than failed while EXPO_TOKEN is unset — a red X on every PR just
+  # teaches everyone to ignore CI.
+  check:
+    name: Check EAS credentials
+    runs-on: ubuntu-latest
+    outputs:
+      configured: ${{ steps.guard.outputs.configured }}
+    steps:
+      - id: guard
+        run: |
+          if [ -z "${{ secrets.EXPO_TOKEN }}" ]; then
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Preview skipped::EXPO_TOKEN is not set. Create one at https://expo.dev/settings/access-tokens and add it as a repository secret."
+          else
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          fi
+
+  preview:
+    name: Publish preview
+    needs: check
+    if: needs.check.outputs.configured == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - uses: expo/expo-github-action@v8
+        with:
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
+
+      - run: npm ci
+
+      - name: Publish preview
+        uses: expo/expo-github-action/preview@v8
+        with:
+          command: eas update --branch pr-${{ github.event.pull_request.number }} --auto

@@ -1,0 +1,86 @@
+name: EAS Build
+
+# The slow release lane — native binaries for the App Store and Play Store.
+#
+# Triggered by a version tag (v1.2.0) or run by hand. Store submission is a
+# separate, deliberate step: `submit` only runs when explicitly requested.
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      profile:
+        description: Build profile
+        type: choice
+        options: [preview, production]
+        default: preview
+      platform:
+        description: Platform
+        type: choice
+        options: [all, ios, android]
+        default: all
+      submit:
+        description: Submit to the stores after a successful build
+        type: boolean
+        default: false
+
+concurrency:
+  group: eas-build-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build ${{ inputs.platform || 'all' }} · ${{ inputs.profile || 'production' }}
+    runs-on: ubuntu-latest
+    # A tag build is a real release — require the protected environment so a
+    # human approves before anything is produced under the production identity.
+    environment: ${{ (inputs.profile || 'production') == 'production' && 'production' || '' }}
+    steps:
+      - name: Check EXPO_TOKEN
+        run: |
+          if [ -z "${{ secrets.EXPO_TOKEN }}" ]; then
+            echo "::error::EXPO_TOKEN is not set."
+            exit 1
+          fi
+
+      # eas.json sets requireCommit, so the build must map to a real commit.
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - uses: expo/expo-github-action@v8
+        with:
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
+
+      - run: npm ci
+
+      - name: Verify
+        run: npm run verify
+
+      - name: Build
+        run: |
+          eas build \
+            --profile ${{ inputs.profile || 'production' }} \
+            --platform ${{ inputs.platform || 'all' }} \
+            --non-interactive \
+            --no-wait
+
+      # eas.json only defines a `production` submit profile — submitting a
+      # preview build would fail halfway through, after a full native build.
+      - name: Submit to stores
+        if: ${{ inputs.submit == true && (inputs.profile || 'production') == 'production' }}
+        env:
+          EXPO_APPLE_ID: ${{ secrets.EXPO_APPLE_ID }}
+          EXPO_ASC_APP_ID: ${{ secrets.EXPO_ASC_APP_ID }}
+          EXPO_APPLE_TEAM_ID: ${{ secrets.EXPO_APPLE_TEAM_ID }}
+        run: |
+          eas submit \
+            --profile ${{ inputs.profile || 'production' }} \
+            --platform ${{ inputs.platform || 'all' }} \
+            --non-interactive
