@@ -45,3 +45,13 @@ yarn-error.*
 
 # Downloaded kashrut certificate PDFs (regenerate with importers/tzohar/extract-cert-expiry.mjs)
 importers/tzohar/cert-cache/
+
+# Historical dataset snapshots — kept on disk, out of git (see docs/ARCHITECTURE_REVIEW.md P1-11)
+data-backups/
+*.bak-location-shape
+
+# Store credentials — never commit (referenced by eas.json submit profiles)
+secrets/
+*-service-account.json
+*.keystore
+AuthKey_*.p8
