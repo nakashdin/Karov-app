@@ -1,26 +1,35 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
-import { I18nManager } from 'react-native';
+import { DevSettings, I18nManager, Platform } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import * as Updates from 'expo-updates';
 import { locales, type Locale, type Strings } from '../i18n';
 
 const STORAGE_KEY = '@karov/locale';
 
 const isRTLLocale = (l: Locale) => l === 'he';
 
-async function reloadApp() {
-  try {
-    // expo-updates is available in production builds
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const Updates = require('expo-updates');
-    await Updates.reloadAsync();
-  } catch {
-    try {
-      // Fallback for Expo Go / development
-      // eslint-disable-next-line @typescript-eslint/no-require-imports
-      const { DevSettings } = require('react-native');
-      DevSettings?.reload?.();
-    } catch {}
+/**
+ * Switching between an RTL and an LTR locale only takes effect after the app
+ * restarts, so every platform needs its own way to do that.
+ *
+ * This used to `require('expo-updates')` inside a try/catch while the package
+ * was not installed at all, which meant the reload silently never happened and
+ * the user was left with a broken layout until they killed the app by hand.
+ */
+async function reloadApp(): Promise<void> {
+  if (Platform.OS === 'web') {
+    if (typeof window !== 'undefined') window.location.reload();
+    return;
   }
+
+  try {
+    await Updates.reloadAsync();
+    return;
+  } catch {
+    // No updates runtime (Expo Go, or a dev client built without it).
+  }
+
+  DevSettings?.reload?.();
 }
 
 interface LanguageCtx {
