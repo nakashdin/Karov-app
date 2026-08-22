@@ -16,10 +16,12 @@ export class MockPlacesRepository implements PlacesRepository {
   private readonly places: Place[] = PLACES_SEED;
   private readonly cities: City[] = CITIES_SEED;
   private readonly reports: NewIssueReport[] = [];
+  /** cityId -> name, for the substring search fallback. */
+  private readonly cityNames = new Map(CITIES_SEED.map((c) => [c.id, c.name]));
 
   async getPlaces(filters: Partial<PlaceFilters> = {}): Promise<Place[]> {
     await delay(MOCK_LATENCY_MS);
-    return this.places.filter((p) => matchesFilters(p, filters));
+    return this.places.filter((p) => matchesFilters(p, filters, this.cityNames));
   }
 
   async getPlaceById(id: string): Promise<Place | null> {
@@ -35,7 +37,6 @@ export class MockPlacesRepository implements PlacesRepository {
   async submitReport(report: NewIssueReport): Promise<void> {
     await delay(MOCK_LATENCY_MS);
     this.reports.push(report);
-    // eslint-disable-next-line no-console
     console.log('[MockPlacesRepository] report submitted:', report);
   }
 }

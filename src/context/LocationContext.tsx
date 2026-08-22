@@ -14,13 +14,13 @@ import {
   resolveLocationSilently,
   verifyLocationAccess,
 } from '../utils/locationPermission';
+import { getCachedLocation, setCachedLocation } from './locationCache';
 
 /** Wall-clock helper kept in one place so the revalidation throttle is testable. */
 const nowMs = () => Date.now();
 
-export function getCachedLocation(): GeoPoint | null {
-  return (typeof window !== 'undefined' ? (window as any).__karovLoc : null) ?? null;
-}
+/** Re-exported so existing imports from this module keep working. */
+export { getCachedLocation };
 
 export type LocationStatus = 'idle' | 'requesting' | 'granted' | 'denied' | 'error';
 
@@ -61,7 +61,7 @@ export function LocationProvider({ children }: { children: ReactNode }) {
       resolveLocationSilently().then((loc) => {
         if (cancelled) return;
         if (loc) {
-          if (typeof window !== 'undefined') (window as any).__karovLoc = loc;
+          setCachedLocation(loc);
           setLocation(loc);
           setStatus('granted');
         } else {
@@ -103,13 +103,13 @@ export function LocationProvider({ children }: { children: ReactNode }) {
 
       verifyLocationAccess().then((result) => {
         if (result.ok) {
-          if (typeof window !== 'undefined') (window as any).__karovLoc = result.location;
+          setCachedLocation(result.location);
           setLocation(result.location);
           return;
         }
         // A timeout or a momentarily unavailable fix is not a revocation.
         if (result.reason !== 'denied') return;
-        if (typeof window !== 'undefined') (window as any).__karovLoc = null;
+        setCachedLocation(null);
         setLocation(null);
         setStatus('denied');
       });
@@ -142,7 +142,7 @@ export function LocationProvider({ children }: { children: ReactNode }) {
     setStatus('requesting');
     requestLocation().then((result) => {
       if (result.ok) {
-        if (typeof window !== 'undefined') (window as any).__karovLoc = result.location;
+        setCachedLocation(result.location);
         setLocation(result.location);
         setStatus('granted');
       } else {
@@ -152,7 +152,7 @@ export function LocationProvider({ children }: { children: ReactNode }) {
   };
 
   const setGranted = (loc: GeoPoint) => {
-    if (typeof window !== 'undefined') (window as any).__karovLoc = loc;
+    setCachedLocation(loc);
     setLocation(loc);
     setStatus('granted');
   };

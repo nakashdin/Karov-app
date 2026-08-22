@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import { hebcal } from '../shared/api';
+import { getJSON, setJSON, StorageKeyFor } from '../shared/storage';
 import { JEWISH_STATIC_EVENTS, getJewishPeriods } from '../data/jewishEvents';
 import type { DetailBlock } from '../data/jewishEvents';
 import { useHalachicDate } from './useHalachicDate';
@@ -110,20 +111,17 @@ function buildInfo(day: CachedDay, weekday: number): JewishDayInfo {
   return { ...result, hMonth, hDay };
 }
 
-async function fetchDay(iso: string, y: number, m: number, d: number): Promise<CachedDay> {
-  const [calResp, convResp] = await Promise.all([
-    fetch(
-      `https://www.hebcal.com/hebcal/?v=1&cfg=json` +
-      `&maj=on&min=on&mod=on&nx=on&omer=on` +
-      `&year=${y}&month=${m}&yt=G&xl=0&c=off&l=IL`,
-    ),
-    fetch(
-      `https://www.hebcal.com/converter?cfg=json&gd=${d}&gm=${m}&gy=${y}&g2h=1`,
-    ),
+async function fetchDay(
+  iso: string,
+  y: number,
+  m: number,
+  d: number,
+  signal?: AbortSignal,
+): Promise<CachedDay> {
+  const [calJson, convJson] = await Promise.all([
+    hebcal.fetchCalendar(y, m, { signal }),
+    hebcal.fetchConversion(y, m, d, false, { signal }),
   ]);
-
-  const calJson = await calResp.json();
-  const convJson = await convResp.json();
 
   // Use hm/hd, not heDateParts — the latter is Hebrew text ("אלול", "ז׳"),
   // which never matches our English month keys and parses to NaN.
@@ -159,23 +157,19 @@ export function useJewishDayInfo(): JewishDayInfo | null {
   const { iso, year, month, day: dayOfMonth, weekday } = useHalachicDate();
 
   useEffect(() => {
-    const cacheKey = `@karov/jewishDayRaw_${iso}`;
-
+    const cacheKey = StorageKeyFor.jewishDayRaw(iso);
+    const controller = new AbortController();
     let mounted = true;
 
     (async () => {
-      let day: CachedDay | null = null;
-
-      try {
-        const cached = await AsyncStorage.getItem(cacheKey);
-        if (cached) day = JSON.parse(cached);
-      } catch {}
+      let day = await getJSON<CachedDay | null>(cacheKey, null);
 
       if (!day) {
         try {
-          day = await fetchDay(iso, year, month, dayOfMonth);
-          await AsyncStorage.setItem(cacheKey, JSON.stringify(day)).catch(() => {});
+          day = await fetchDay(iso, year, month, dayOfMonth, controller.signal);
+          await setJSON(cacheKey, day);
         } catch {
+          // Offline or Hebcal down — the card stays on its static fallback.
           return;
         }
       }
@@ -183,7 +177,10 @@ export function useJewishDayInfo(): JewishDayInfo | null {
       if (mounted) setInfo(buildInfo(day, weekday));
     })();
 
-    return () => { mounted = false; };
+    return () => {
+      mounted = false;
+      controller.abort();
+    };
   }, [iso, year, month, dayOfMonth, weekday]);
 
   return info;

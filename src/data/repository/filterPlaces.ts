@@ -1,11 +1,15 @@
 import { Place, PlaceFilters } from '../../types';
-import { CITIES_SEED } from '../seed/cities.seed';
 import { searchPlaces } from '../search/searchEngine';
 
-/** Map of cityId -> city name, for search-by-city. */
-const CITY_NAME_BY_ID: Record<string, string> = Object.fromEntries(
-  CITIES_SEED.map((c) => [c.id, c.name]),
-);
+/**
+ * Lookup of cityId -> city name, used only by the substring fallback search.
+ * Injected by the repository so this module stays independent of any single
+ * dataset — the OSM repository passes its 656 real cities, the mock repository
+ * passes its seed. Never import a dataset here.
+ */
+export type CityNameLookup = ReadonlyMap<string, string>;
+
+const NO_CITIES: CityNameLookup = new Map();
 
 const CUISINE_TAG_GROUPS: Record<string, string[]> = {
   coffee_shop: ['coffee_shop', 'coffee', 'cafe'],
@@ -47,6 +51,13 @@ function matchesExactFilters(place: Place, f: Partial<PlaceFilters>): boolean {
   return true;
 }
 
+/** Case-insensitive substring match over name + address + city name. */
+function matchesSubstring(place: Place, query: string, cities: CityNameLookup): boolean {
+  const cityName = cities.get(place.cityId) ?? place.cityId;
+  const haystack = `${place.name} ${place.address} ${cityName}`;
+  return haystack.toLowerCase().includes(query.trim().toLowerCase());
+}
+
 /**
  * Filter places by exact-match filters + full-text search via MiniSearch.
  *
@@ -54,19 +65,20 @@ function matchesExactFilters(place: Place, f: Partial<PlaceFilters>): boolean {
  * (MiniSearch score, highest first).  When there is no query, original
  * dataset order is preserved.
  */
-export function filterPlaces(places: Place[], f: Partial<PlaceFilters>): Place[] {
+export function filterPlaces(
+  places: Place[],
+  f: Partial<PlaceFilters>,
+  cities: CityNameLookup = NO_CITIES,
+): Place[] {
   const hasQuery = !!f.query?.trim();
 
   if (hasQuery) {
     const matchedIds = searchPlaces(f.query!);
     if (matchedIds === null) {
       // Index not ready — fall back to legacy substring search
-      return places.filter((p) => {
-        if (!matchesExactFilters(p, f)) return false;
-        const cityName = CITY_NAME_BY_ID[p.cityId] ?? p.cityId;
-        const haystack = `${p.name} ${p.address} ${cityName}`;
-        return haystack.toLowerCase().includes(f.query!.trim().toLowerCase());
-      });
+      return places.filter(
+        (p) => matchesExactFilters(p, f) && matchesSubstring(p, f.query!, cities),
+      );
     }
 
     // Build a set for O(1) lookup, then filter + sort by score rank
@@ -81,14 +93,13 @@ export function filterPlaces(places: Place[], f: Partial<PlaceFilters>): Place[]
   return places.filter((p) => matchesExactFilters(p, f));
 }
 
-/** Legacy single-place predicate kept for backward compatibility (MockPlacesRepository). */
-export function matchesFilters(place: Place, f: Partial<PlaceFilters>): boolean {
+/** Single-place predicate used by the in-memory mock repository. */
+export function matchesFilters(
+  place: Place,
+  f: Partial<PlaceFilters>,
+  cities: CityNameLookup = NO_CITIES,
+): boolean {
   if (!matchesExactFilters(place, f)) return false;
-
-  if (f.query?.trim()) {
-    const cityName = CITY_NAME_BY_ID[place.cityId] ?? place.cityId;
-    const haystack = `${place.name} ${place.address} ${cityName}`;
-    return haystack.toLowerCase().includes(f.query.trim().toLowerCase());
-  }
+  if (f.query?.trim()) return matchesSubstring(place, f.query, cities);
   return true;
 }

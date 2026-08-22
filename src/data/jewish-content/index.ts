@@ -13,5 +13,4 @@ export const ALL_JEWISH_CONTENT: JewishContentItem[] = [
   ...BLESSING_ITEMS,
 ];
 
-export type { JewishContentItem };
 export * from './types';

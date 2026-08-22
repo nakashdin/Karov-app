@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import { hebcal, sefaria } from '../shared/api';
+import { getJSON, setJSON, StorageKey } from '../shared/storage';
 
 export interface ParashaData {
   name: string;
@@ -9,10 +10,6 @@ export interface ParashaData {
   sefariaUrl: string;
   topicSlug: string; // e.g. "parashat-matot-masei" for Sefaria topics API
 }
-
-const CACHE_KEY = '@karov/parasha';
-const HEBCAL_URL =
-  'https://www.hebcal.com/shabbat/?cfg=json&geo=il&m=50&b=18&M=on';
 
 const MONTH_HE: Record<string, string> = {
   Nisan: 'ניסן', Iyyar: 'אייר', Sivan: 'סיון', Tamuz: 'תמוז',
@@ -75,62 +72,65 @@ function isParashaStillValid(parashaDate: string): boolean {
   return shabbat >= today;
 }
 
-function toSefariaUrl(title: string): string {
-  const slug = title.replace(/^Parashat\s+/i, '').trim().replace(/\s+/g, '_');
-  return `https://www.sefaria.org/Parashat_${slug}?lang=he`;
-}
-
 function toTopicSlug(title: string): string {
   return title.replace(/^Parashat\s+/i, 'parashat-').toLowerCase().replace(/\s+/g, '-');
 }
+
+const isParashaData = (v: unknown): v is ParashaData =>
+  typeof v === 'object' &&
+  v !== null &&
+  typeof (v as ParashaData).name === 'string' &&
+  typeof (v as ParashaData).date === 'string';
 
 export function useParasha() {
   const [parasha, setParasha] = useState<ParashaData | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    const controller = new AbortController();
     let cancelled = false;
 
     async function load() {
-      try {
-        const cached = await AsyncStorage.getItem(CACHE_KEY);
-        if (cached) {
-          const parsed: ParashaData = JSON.parse(cached);
-          if (isParashaStillValid(parsed.date)) {
-            if (!cancelled) setParasha(parsed);
-            setLoading(false);
-            return;
-          }
+      const cached = await getJSON<ParashaData | null>(StorageKey.parasha, null, isParashaData);
+      if (cached && isParashaStillValid(cached.date)) {
+        if (!cancelled) {
+          setParasha(cached);
+          setLoading(false);
         }
-      } catch {}
+        return;
+      }
 
       try {
-        const res = await fetch(HEBCAL_URL);
-        const json = await res.json();
-        const items: any[] = json.items ?? [];
-        const parashaItem = items.find((i) => i.category === 'parashat');
+        const json = await hebcal.fetchShabbatIsrael({ signal: controller.signal });
+        const parashaItem = (json.items ?? []).find((i) => i.category === 'parashat');
 
         if (parashaItem) {
-          const rawHdate: string = parashaItem.hdate ?? '';
-          const englishTitle: string = parashaItem.title_orig ?? parashaItem.title;
+          const rawHdate = parashaItem.hdate ?? '';
+          const englishTitle = parashaItem.title_orig ?? parashaItem.title;
           const data: ParashaData = {
             name: englishTitle,
             hebrewName: parashaItem.hebrew ?? parashaItem.title,
             date: parashaItem.date,
             hebrewDate: rawHdate ? translitToHebrew(rawHdate) : '',
-            sefariaUrl: toSefariaUrl(englishTitle),
+            sefariaUrl: sefaria.parashaPageUrl(englishTitle),
             topicSlug: toTopicSlug(englishTitle),
           };
-          await AsyncStorage.setItem(CACHE_KEY, JSON.stringify(data));
+          await setJSON(StorageKey.parasha, data);
           if (!cancelled) setParasha(data);
         }
-      } catch {}
+      } catch {
+        // Last week's cached parasha is better than nothing; the card hides
+        // itself entirely if there has never been one.
+      }
 
       if (!cancelled) setLoading(false);
     }
 
     load();
-    return () => { cancelled = true; };
+    return () => {
+      cancelled = true;
+      controller.abort();
+    };
   }, []);
 
   return { parasha, loading };

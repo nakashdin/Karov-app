@@ -50,7 +50,7 @@ buildIndex(PLACES, CITY_NAME_MAP);
  */
 export class OsmPlacesRepository implements PlacesRepository {
   async getPlaces(filters: Partial<PlaceFilters> = {}): Promise<Place[]> {
-    return filterPlaces(PLACES, filters);
+    return filterPlaces(PLACES, filters, CITY_NAME_MAP);
   }
 
   async getPlaceById(id: string): Promise<Place | null> {
@@ -62,7 +62,6 @@ export class OsmPlacesRepository implements PlacesRepository {
   }
 
   async submitReport(report: NewIssueReport): Promise<void> {
-    // eslint-disable-next-line no-console
     console.log('[OsmPlacesRepository] report submitted:', report);
   }
 }

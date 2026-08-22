@@ -50,12 +50,10 @@ export function applyHeeboFont(): void {
   patched = true;
 
   [RNText, RNTextInput].forEach((Component) => {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const comp = Component as any;
     const original = comp.render;
     if (typeof original !== 'function') return;
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     comp.render = function patchedRender(...args: any[]) {
       const element = original.apply(this, args) as React.ReactElement<{
         style?: unknown;

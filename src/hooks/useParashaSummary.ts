@@ -1,36 +1,45 @@
 import { useEffect, useState } from 'react';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import { sefaria } from '../shared/api';
+import { getString, setString, StorageKeyFor } from '../shared/storage';
 
+/**
+ * Short description of the week's parasha, from Sefaria.
+ *
+ * Torah content comes only from Sefaria or Chabad.org — never generated, never
+ * attributed to a commentator without verification. See AGENTS.md.
+ */
 export function useParashaSummary(topicSlug: string | null): string | null {
   const [summary, setSummary] = useState<string | null>(null);
 
   useEffect(() => {
     if (!topicSlug) return;
 
-    const key = `@karov/parashaSummary_${topicSlug}`;
+    const controller = new AbortController();
+    const key = StorageKeyFor.parashaSummary(topicSlug);
     let mounted = true;
 
     (async () => {
-      try {
-        const cached = await AsyncStorage.getItem(key);
-        if (cached && mounted) { setSummary(cached); return; }
-      } catch {}
+      const cached = await getString(key);
+      if (cached) {
+        if (mounted) setSummary(cached);
+        return;
+      }
 
       try {
-        const url = `https://www.sefaria.org/api/topics/${topicSlug}`;
-        const resp = await fetch(url);
-        const json = await resp.json();
-        const desc: string | undefined =
-          json?.description?.he || json?.description?.en;
-        if (desc && mounted) {
-          const trimmed = desc.replace(/<[^>]*>/g, '').trim().slice(0, 220);
-          setSummary(trimmed);
-          await AsyncStorage.setItem(key, trimmed).catch(() => {});
-        }
-      } catch {}
+        const topic = await sefaria.fetchTopic(topicSlug, { signal: controller.signal });
+        const text = sefaria.topicSummary(topic);
+        if (!text) return;
+        await setString(key, text);
+        if (mounted) setSummary(text);
+      } catch {
+        // The card renders without a summary rather than showing an error.
+      }
     })();
 
-    return () => { mounted = false; };
+    return () => {
+      mounted = false;
+      controller.abort();
+    };
   }, [topicSlug]);
 
   return summary;
