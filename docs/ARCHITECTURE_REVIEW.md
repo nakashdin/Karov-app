@@ -473,12 +473,12 @@ app/            App.tsx, providers, linking config, ErrorBoundary
 | P0-1 | אין CI/CD | ✅ 6 workflows: `ci` · `data-validate` · `web-deploy` · `preview` · `eas-update` · `eas-build` |
 | P0-2 | native לא הוקם | ✅ `expo-updates` + `app.config.ts` (3 וריאנטים) + `eas.json`. ⏳ נותר: `eas init` + `eas update:configure` (דורש חשבון) |
 | P0-3 | אין deep linking | ✅ `src/navigation/linking.ts` + rewrites ב-Vercel + הגנה ב-SplashScreen |
-| P0-4 | 5.2MB בתוך ה-bundle | ⏳ נדחה לשלב 4. בינתיים: bundle ירד מ-1.25MB ל-**1.19MB** gzip + budget שנאכף ב-CI |
+| P0-4 | 5.2MB בתוך ה-bundle | ⏳ שלב 4. bundle ירד מ-1.25MB ל-**1.19MB** gzip, budget נאכף ב-CI ואומת על PR חי |
 | P0-5 | PWA חלקי | ✅ manifest · service worker · `dir="rtl"` · OG/Twitter · shortcuts |
 | P0-6 | Leaflet מ-CDN | ✅ מקובע מקומית (`vendor/leaflet-assets.ts`). אין יותר בקשה חיצונית ל-WebView |
 | P0-7 | Nominatim — headers נחסמים | ✅ זיהוי דרך `email` param + `retries: 0` לפי המדיניות |
-| P1-1 | 215 צבעים קשיחים | ⏳ נאכף כ-warning ב-ESLint; ההמרה עצמה פתוחה |
-| P1-2 | 224 מחרוזות עברית | ⏳ נאכף כ-warning ב-ESLint; ההמרה עצמה פתוחה |
+| P1-1 | 215 צבעים קשיחים | ⏳ נמדד: 129 ערכים ייחודיים, 11 כבר קיימים ב-theme. ההמרה + dark mode פתוחים |
+| P1-2 | 224 מחרוזות עברית | ⏳ נמדד: 668 מופעים. הוחלט **להשלים** את 5 השפות, לא להסיר |
 | P1-3 | דליפת `CITIES_SEED` | ✅ הוזרק דרך פרמטר + כלל ESLint שחוסם חזרה + טסט רגרסיה |
 | P1-4 | מימוש מיקום כפול | ✅ `useLocation.ts` נמחק · `window.__karovLoc` → `context/locationCache.ts` |
 | P1-5 | אין שכבת API | ✅ `src/shared/api/` — client עם timeout/retry/abort/שגיאות מוטפסות + hebcal/sefaria/geocode |
@@ -491,7 +491,7 @@ app/            App.tsx, providers, linking config, ErrorBoundary
 | P2-1 | אפס טסטים | ✅ **132 טסטים** ב-9 קבצים |
 | P2-2 | אפס lint | ✅ ESLint עם שומרי סף ארכיטקטוניים (0 errors) + Prettier |
 | P2-3 | נגישות | ⏳ פתוח |
-| P2-4 | Hermes V1 regression | ⏳ דורש שדרוג ל-SDK 57 — **החלטה שלך** |
+| P2-4 | Hermes V1 regression | ✅ **SDK 57 + RN 0.86**. expo-doctor: 21/21 עוברות, אפס בעיות |
 | P2-5 | חבילות לא מסונכרנות | ✅ `expo install --check` נקי |
 | P2-6 | 19 פונטי אייקונים | ✅ ייבוא ישיר של Ionicons — **19 → 1** פונט |
 | P2-9 | אין ייחוס ל-OSM | ✅ ODbL + כל המקורות ב-AboutModal |
@@ -503,6 +503,28 @@ app/            App.tsx, providers, linking config, ErrorBoundary
 3. **`require('expo-updates')` לחבילה לא מותקנת** — מעבר שפה עם היפוך RTL לא רענן את האפליקציה לעולם.
 4. **`onPress={load}`** ב-ZmanimScreen העביר אירוע מגע כארגומנט — נתפס ע"י tsc אחרי החתימה החדשה.
 5. **אי-התאמה הלכתית** — `useJewishDayInfo` מבקש מ-Hebcal לוח **חו"ל** (בלי `i=on`) בעוד `useParasha` מבקש `geo=il`. שני מקורות חלוקים על אילו ימים הם יום טוב. **לא שיניתי — זו החלטה הלכתית שלך.**
+
+
+### מצב GitHub (אומת מול ה-API)
+
+| | |
+|---|---|
+| ענף | `chore/architecture-review` — 11 קומיטים, נדחף |
+| PR | [#1](https://github.com/nakashdin/Karov-app/pull/1) |
+| CI | **ירוק** — `CI` · `Dataset` · `EAS Preview` כולם success על PR אמיתי |
+| Environment | `production` קיים |
+| `EXPO_TOKEN` | ❌ לא מוגדר — `preview` ו-`eas-update` **מדלגים** (לא נכשלים) |
+| Branch protection | ❌ חסום: *"Upgrade to GitHub Pro or make this repository public"* |
+
+### סעיף 8 — דאטה
+
+| | לפני | אחרי |
+|---|---|---|
+| `unknownCityId` | 28 | **0** |
+| `missingCityId` | 18 | **8** (כולם ללא כתובת) |
+| ערים ברשימה | 656 | **679** |
+| כפילויות אמיתיות | — | **35 מוזגו** (`extra.mergedFrom` שומר provenance) |
+| `foodWithoutKashrut` | 20 | 20 — **פתוח**: 18 יקבים + 2 רי-בר שדורשים אימות כשרות ממקור רשמי |
 
 
 ## 7. Roadmap מומלץ
