@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import Slider from '@react-native-community/slider';
-import { Ionicons } from '@expo/vector-icons';
+import Ionicons from '@expo/vector-icons/Ionicons';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { Screen } from '../components/Screen';
@@ -76,7 +76,7 @@ export function WhatsAroundScreen() {
   };
 
   const formatDist = (d: number) =>
-    d < 1 ? `${Math.round(d * 1000)} מ׳` : `${d.toFixed(1)} ק"מ`;
+    d < 1 ? `${Math.round(d * 1000)} מ׳` : `${d.toFixed(1)} ק״מ`;
 
   return (
     <Screen>
@@ -101,7 +101,7 @@ export function WhatsAroundScreen() {
             <Ionicons name="radio-button-on-outline" size={14} color={colors.primary} />
             <Text style={styles.radiusLabel}>טווח חיפוש</Text>
             <Text style={styles.radiusValue}>
-              {radiusKm === null ? 'הכל' : `${radiusKm} ק"מ`}
+              {radiusKm === null ? 'הכל' : `${radiusKm} ק״מ`}
             </Text>
             {!location && (
               <Text style={styles.noLocNote}>· הפעל מיקום לסינון</Text>
@@ -126,8 +126,8 @@ export function WhatsAroundScreen() {
             />
           </View>
           <View style={styles.sliderLabels}>
-            <Text style={styles.sliderEnd}>100 ק"מ</Text>
-            <Text style={styles.sliderEnd}>0 ק"מ</Text>
+            <Text style={styles.sliderEnd}>100 ק״מ</Text>
+            <Text style={styles.sliderEnd}>0 ק״מ</Text>
           </View>
         </View>
 

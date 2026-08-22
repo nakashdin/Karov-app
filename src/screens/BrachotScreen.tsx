@@ -7,7 +7,7 @@ import {
   TextInput,
   View,
 } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
+import Ionicons from '@expo/vector-icons/Ionicons';
 import { Screen } from '../components/Screen';
 import { colors, radius, shadow, spacing } from '../theme';
 import { BRACHOT_CATEGORIES, Blessing } from '../data/brachot';
@@ -611,7 +611,7 @@ function TfilaListView({
         <ScrollView showsVerticalScrollIndicator={false}>
           {searchResults.blessings.length === 0 &&
           searchResults.chapters.length === 0 ? (
-            <Text style={styles.emptySearch}>אין תוצאות עבור "{query}"</Text>
+            <Text style={styles.emptySearch}>אין תוצאות עבור &quot;{query}&quot;</Text>
           ) : null}
 
           {searchResults.blessings.length > 0 ? (

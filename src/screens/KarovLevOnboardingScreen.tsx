@@ -9,7 +9,7 @@ import {
 import { useNavigation, useRoute, RouteProp } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { Ionicons } from '@expo/vector-icons';
+import Ionicons from '@expo/vector-icons/Ionicons';
 import { colors, radius, spacing } from '../theme';
 import { RootStackParamList } from '../navigation/types';
 import { CATEGORY_GROUPS } from '../data/jewish-content/category-groups';

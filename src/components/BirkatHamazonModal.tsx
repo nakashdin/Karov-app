@@ -7,7 +7,7 @@ import {
   Text,
   View,
 } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
+import Ionicons from '@expo/vector-icons/Ionicons';
 import { colors, radius, spacing } from '../theme';
 import { BIRKAT_HAMAZON } from '../data/birkatHamazon';
 import { useNusach } from '../hooks/useNusach';

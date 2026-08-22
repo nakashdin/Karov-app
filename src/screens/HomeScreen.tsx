@@ -11,7 +11,7 @@ import {
   View,
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { Ionicons } from '@expo/vector-icons';
+import Ionicons from '@expo/vector-icons/Ionicons';
 import { useNavigation } from '@react-navigation/native';
 import { useFocusEffect } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
@@ -31,7 +31,7 @@ import { useHalachicDate } from '../hooks/useHalachicDate';
 import { useCityName } from '../hooks/useCityName';
 import { useSharedLocation } from '../context/LocationContext';
 import { useFilters } from '../context/FiltersContext';
-import { distanceKm } from '../utils/geo';
+import { distanceKm, nearestBy } from '../utils/geo';
 import { emptyFilters, PlaceSubType, PlaceType } from '../types';
 import { RootStackParamList } from '../navigation/types';
 import { Place } from '../types/place';
@@ -100,13 +100,11 @@ export function HomeScreen() {
   );
 
   const nearby = useMemo(() => {
-    const list = [...places];
-    if (location) {
-      list.sort((a, b) => distanceKm(location, a.location) - distanceKm(location, b.location));
-    } else {
-      list.sort((a, b) => (b.rating ?? 0) - (a.rating ?? 0));
-    }
-    return list.slice(0, isDesktop ? 8 : 6);
+    const count = isDesktop ? 8 : 6;
+    // A top-k pass, not a full sort: one haversine per place instead of two per
+    // comparison. On the live dataset that is ~7.5k evaluations, not ~190k.
+    if (location) return nearestBy(location, places, count);
+    return [...places].sort((a, b) => (b.rating ?? 0) - (a.rating ?? 0)).slice(0, count);
   }, [places, location, isDesktop]);
 
   const openType = (placeType: PlaceType) => {

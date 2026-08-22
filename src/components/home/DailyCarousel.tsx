@@ -2,7 +2,7 @@ import React, { useMemo, useState } from 'react';
 import { ActivityIndicator, Modal, Platform, Pressable, ScrollView, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
-import { Ionicons } from '@expo/vector-icons';
+import Ionicons from '@expo/vector-icons/Ionicons';
 import { colors, radius, shadow, spacing } from '../../theme';
 import { ParashaData } from '../../hooks/useParasha';
 import { useParashaSummary } from '../../hooks/useParashaSummary';

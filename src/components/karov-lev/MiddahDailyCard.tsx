@@ -1,6 +1,6 @@
 import React from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
+import Ionicons from '@expo/vector-icons/Ionicons';
 import { colors, radius, shadow, spacing } from '../../theme';
 import { JewishContentItem } from '../../data/jewish-content/types';
 import { MIDDAH_LABELS, HEB_DAY_NAMES } from '../../data/jewish-content/middot';

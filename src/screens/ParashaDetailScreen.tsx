@@ -11,7 +11,7 @@ import {
   LayoutAnimation,
   UIManager,
 } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
+import Ionicons from '@expo/vector-icons/Ionicons';
 import { useNavigation } from '@react-navigation/native';
 import { Screen } from '../components/Screen';
 import { colors, radius, shadow, spacing } from '../theme';

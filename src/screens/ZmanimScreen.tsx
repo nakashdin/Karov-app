@@ -8,10 +8,11 @@ import {
   Text,
   View,
 } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
+import Ionicons from '@expo/vector-icons/Ionicons';
 import { Screen } from '../components/Screen';
 import { colors, radius, spacing } from '../theme';
 import { useSharedLocation, getCachedLocation } from '../context/LocationContext';
+import { hebcal } from '../shared/api';
 
 // ─── Cities ───────────────────────────────────────────────────────────────────
 
@@ -80,25 +81,29 @@ interface ZmanimData {
   gregDate: string;
 }
 
-async function fetchZmanim(lat: number, lng: number, date: Date): Promise<ZmanimData | null> {
+async function fetchZmanim(
+  lat: number,
+  lng: number,
+  date: Date,
+  signal?: AbortSignal,
+): Promise<ZmanimData | null> {
   try {
     const iso = dateToISO(date);
     const [gy, gm, gd] = iso.split('-').map(Number);
 
-    const [zmRes, convRes] = await Promise.all([
-      fetch(`https://www.hebcal.com/zmanim?cfg=json&latitude=${lat}&longitude=${lng}&date=${iso}&tzid=Asia/Jerusalem`),
-      fetch(`https://www.hebcal.com/converter?cfg=json&gd=${gd}&gm=${gm}&gy=${gy}&g2h=1`),
+    const [zm, conv] = await Promise.all([
+      hebcal.fetchZmanim(lat, lng, iso, { signal }),
+      hebcal.fetchConversion(gy, gm, gd, false, { signal }),
     ]);
 
-    const zmJson = await zmRes.json();
-    const convJson = await convRes.json();
-
-    const { d: hebDay, m: hebMonth, y: hebYear } = convJson.heDateParts ?? {};
+    const { d: hebDay, m: hebMonth, y: hebYear } = conv.heDateParts ?? {};
     const hebrewDate = `${hebDay ?? ''} ב${hebMonth ?? ''} ${hebYear ?? ''}`;
     const gregDate = `${gd} ${GREG_MONTHS[gm - 1]} ${gy}`;
 
-    return { times: zmJson.times ?? {}, hebrewDate, gregDate };
+    return { times: zm.times ?? {}, hebrewDate, gregDate };
   } catch {
+    // Zmanim are halachically consequential — showing nothing is correct here,
+    // and much safer than showing a stale or partial set of times.
     return null;
   }
 }
@@ -125,14 +130,22 @@ export function ZmanimScreen() {
 
   const isToday = dateToISO(selectedDate) === dateToISO(new Date());
 
-  const load = useCallback(async () => {
-    setLoading(true);
-    const result = await fetchZmanim(city.lat, city.lng, selectedDate);
-    setData(result);
-    setLoading(false);
-  }, [city, selectedDate]);
+  const load = useCallback(
+    async (signal?: AbortSignal) => {
+      setLoading(true);
+      const result = await fetchZmanim(city.lat, city.lng, selectedDate, signal);
+      if (signal?.aborted) return;
+      setData(result);
+      setLoading(false);
+    },
+    [city, selectedDate],
+  );
 
-  useEffect(() => { void load(); }, [load]);
+  useEffect(() => {
+    const controller = new AbortController();
+    void load(controller.signal);
+    return () => controller.abort();
+  }, [load]);
 
   const pickCity = (c: City) => { setCity(c); setCityPickerOpen(false); };
 
@@ -198,7 +211,7 @@ export function ZmanimScreen() {
       ) : !data ? (
         <View style={styles.center}>
           <Text style={styles.errorText}>לא הצלחנו לטעון את הזמנים</Text>
-          <Pressable style={styles.retryBtn} onPress={load}>
+          <Pressable style={styles.retryBtn} onPress={() => void load()}>
             <Text style={styles.retryText}>נסה שוב</Text>
           </Pressable>
         </View>

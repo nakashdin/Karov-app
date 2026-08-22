@@ -1,6 +1,6 @@
 import React from 'react';
 import { Modal, Platform, Pressable, StyleSheet, Text, View } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
+import Ionicons from '@expo/vector-icons/Ionicons';
 import { GeoPoint } from '../types';
 import { colors, radius, shadow, spacing } from '../theme';
 import { openAppleMaps, openGoogleMaps, openWaze } from '../utils/navigation';

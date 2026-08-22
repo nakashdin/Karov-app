@@ -8,7 +8,7 @@ import {
   TextInput,
   View,
 } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
+import Ionicons from '@expo/vector-icons/Ionicons';
 import { useNavigation, useRoute, RouteProp } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { Screen } from '../components/Screen';
@@ -17,7 +17,7 @@ import { Loading } from '../components/Loading';
 import { colors, radius, shadow, spacing } from '../theme';
 import { usePlaces } from '../hooks/usePlaces';
 import { useSharedLocation } from '../context/LocationContext';
-import { distanceKm } from '../utils/geo';
+import { distanceKm, sortedByDistance, withinRadius } from '../utils/geo';
 import { KosherCategory, Place, PlaceType } from '../types';
 import { RootStackParamList } from '../navigation/types';
 import { searchPlaces } from '../data/search/searchEngine';
@@ -88,7 +88,8 @@ export function FoodListScreen() {
   const filtered = useMemo(() => {
     let list = allFoodPlaces;
     if (radiusKm && location) {
-      list = list.filter(p => distanceKm(location, p.location) <= radiusKm);
+      // Already ordered by distance, so the sort below becomes a no-op pass.
+      list = withinRadius(location, list, radiusKm);
     }
     if (activeTab !== 'all') {
       list = list.filter(p => p.category === activeTab);
@@ -105,11 +106,7 @@ export function FoodListScreen() {
         list = list.filter(p => p.name.toLowerCase().includes(lq));
       }
     }
-    if (location) {
-      return [...list].sort(
-        (a, b) => distanceKm(location, a.location) - distanceKm(location, b.location),
-      );
-    }
+    if (location) return sortedByDistance(location, list);
     return list;
   }, [allFoodPlaces, activeTab, location, radiusKm, searchQuery]);
 
@@ -150,7 +147,7 @@ export function FoodListScreen() {
         <Text style={styles.title}>🍽 אוכל כשר</Text>
         <View style={styles.countBlock}>
           <Text style={styles.count}>{filtered.length}</Text>
-          {radiusKm && <Text style={styles.radiusBadge}>{radiusKm} ק"מ</Text>}
+          {radiusKm && <Text style={styles.radiusBadge}>{radiusKm} ק״מ</Text>}
           <Pressable
             style={styles.viewToggle}
             onPress={() => { setViewMode(v => v === 'list' ? 'map' : 'list'); setSelectedPlace(null); }}

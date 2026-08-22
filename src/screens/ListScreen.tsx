@@ -8,7 +8,7 @@ import {
   TextInput,
   View,
 } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
+import Ionicons from '@expo/vector-icons/Ionicons';
 import { useNavigation, useRoute, RouteProp } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { Screen } from '../components/Screen';
@@ -25,7 +25,7 @@ import { usePlaces } from '../hooks/usePlaces';
 import { useSharedLocation, getCachedLocation } from '../context/LocationContext';
 import { useFilters } from '../context/FiltersContext';
 import { countActiveFilters, GeoPoint, PlaceSubType, PlaceType } from '../types';
-import { distanceKm } from '../utils/geo';
+import { distanceKm, sortedByDistance, withinRadius } from '../utils/geo';
 import { categoryLabel, KOSHER_BODY_LABEL } from '../utils/kosher';
 import { RootStackParamList } from '../navigation/types';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -149,17 +149,14 @@ export function ListScreen() {
   const effectiveDistanceKm = filters.distanceKm ?? 20;
 
   const sorted = useMemo(() => {
-    let list = [...places];
     if (sortByDistance && location) {
-      if (filters.distanceKm !== null) {
-        list = list.filter(p => distanceKm(location, p.location) <= effectiveDistanceKm);
-      }
-      list.sort((a, b) => distanceKm(location, a.location) - distanceKm(location, b.location));
-    } else {
-      list.sort((a, b) => a.name.localeCompare(b.name, 'he'));
+      // Both helpers measure each place once; the comparator never recomputes.
+      return filters.distanceKm !== null
+        ? withinRadius(location, places, effectiveDistanceKm)
+        : sortedByDistance(location, places);
     }
-    return list;
-  }, [places, sortByDistance, location, filters.distanceKm]);
+    return [...places].sort((a, b) => a.name.localeCompare(b.name, 'he'));
+  }, [places, sortByDistance, location, filters.distanceKm, effectiveDistanceKm]);
 
   const screenTitle =
     filters.placeType === 'restaurant' && filters.subType === 'fast_food'        ? 'מזון מהיר'

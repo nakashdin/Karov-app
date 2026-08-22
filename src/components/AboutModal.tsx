@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  Linking,
   Modal,
   Pressable,
   ScrollView,
@@ -7,7 +8,7 @@ import {
   Text,
   View,
 } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
+import Ionicons from '@expo/vector-icons/Ionicons';
 import { colors, radius, shadow, spacing } from '../theme';
 
 interface Props {
@@ -93,6 +94,28 @@ export function AboutModal({ visible, onClose }: Props) {
             </Text>
           </View>
 
+          {/* Attribution — ODbL requires crediting OpenStreetMap wherever its
+              data is shown. This is a licence obligation, not a courtesy, and
+              the app stores check for it. */}
+          <View style={styles.section}>
+            <Text style={styles.sectionTitle}>מקורות ורישוי</Text>
+            <Text style={styles.body}>
+              חלק מנתוני המקומות והמפה מגיעים מ‑OpenStreetMap, ומופצים תחת רישיון
+              ODbL. תודה לאלפי המתנדבים שממפים את ישראל.
+            </Text>
+            <Pressable
+              onPress={() => Linking.openURL('https://www.openstreetmap.org/copyright')}
+              accessibilityRole="link"
+              accessibilityLabel="רישיון OpenStreetMap"
+            >
+              <Text style={styles.link}>© OpenStreetMap contributors — ODbL</Text>
+            </Pressable>
+            <Text style={styles.bodyMuted}>
+              זמנים הלכתיים ולוח עברי: Hebcal · תוכן תורני: Sefaria · מקוואות:
+              data.gov.il · בתי חב״ד: Chabad.org
+            </Text>
+          </View>
+
           <View style={styles.footer}>
             <Text style={styles.footerText}>עשוי באהבה לעם ישראל 🇮🇱</Text>
           </View>
@@ -103,6 +126,20 @@ export function AboutModal({ visible, onClose }: Props) {
 }
 
 const styles = StyleSheet.create({
+  link: {
+    fontSize: 14,
+    fontWeight: '600',
+    color: colors.primary,
+    writingDirection: 'rtl',
+    marginTop: spacing.sm,
+  },
+  bodyMuted: {
+    fontSize: 13,
+    lineHeight: 20,
+    color: colors.textMuted,
+    writingDirection: 'rtl',
+    marginTop: spacing.md,
+  },
   backdrop: {
     flex: 1,
     backgroundColor: colors.overlay,
