@@ -33,7 +33,15 @@ interface State {
  * with nothing left to catch it. It uses the static `colors` export instead
  * (light-only, no hook, no provider dependency) — see `src/theme/colors.ts`.
  * `useLanguage()` is safe here because its context has a default value and
- * never throws without a provider.
+ * never throws without a provider — but that safety is a property of
+ * LanguageContext.tsx, not of this file. `LanguageProvider` sits INSIDE
+ * `ThemeProvider` in App.tsx, so this fallback is rendered outside its own
+ * provider too, same as ThemeProvider. It only works because
+ * `createContext(defaultValue)` there doesn't throw on a missing provider,
+ * unlike ThemeContext's `createContext(null)` + explicit throw. If
+ * LanguageContext is ever changed to throw the same way (e.g. "tidied" to
+ * match ThemeContext's pattern), this fallback breaks the same way the
+ * `useTheme()` version did — check here first.
  */
 export class ErrorBoundary extends React.Component<Props, State> {
   state: State = { error: null, info: null };
