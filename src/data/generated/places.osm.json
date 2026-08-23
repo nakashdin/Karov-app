@@ -100506,8 +100506,8 @@
     "category": "parve",
     "id": "humus-eli-חומוס-אליהו-מענית",
     "location": {
-      "latitude": 32.499985,
-      "longitude": 35.061352
+      "latitude": 32.466846,
+      "longitude": 35.017944
     },
     "kosherType": "rabanut_mehadrin",
     "phone": "04-6712552",
@@ -103763,7 +103763,7 @@
     "type": "cafe",
     "openingHours": "Su-Th 06:30-21:00; Fr 06:30-15:00; Sa off",
     "name": "רולדין",
-    "locationPrecision": "address",
+    "locationPrecision": "city",
     "website": "https://roladin.co.il/סניפים/שילת/",
     "cityId": "שילת",
     "address": "אזור תעשיה שילת",
@@ -107915,8 +107915,8 @@
     "cityId": "שילה",
     "address": "אזור תעשייה שילה",
     "location": {
-      "latitude": 32.047623,
-      "longitude": 35.301342
+      "latitude": 32.054405,
+      "longitude": 35.299091
     },
     "locationPrecision": "address",
     "phone": "050-3422268",
@@ -118296,8 +118296,8 @@
     "address": "תחנת פז רופין, כביש חדרה-בית ליד",
     "cityId": "רופין",
     "location": {
-      "latitude": 32.342381,
-      "longitude": 34.912262
+      "latitude": 32.345234,
+      "longitude": 34.908527
     },
     "phone": "050-7825257",
     "website": "https://falafelbaribua.co.il",
@@ -123137,7 +123137,7 @@
     "lastVerifiedAt": "2026-07-20",
     "kosherLevel": "regular",
     "kosherAuthorityGroup": "rabbinate",
-    "locationPrecision": "address",
+    "locationPrecision": "city",
     "locationSource": "waze"
   },
   {
@@ -147912,7 +147912,7 @@
       "chalavYisrael": true,
       "notRabbanut": false
     },
-    "locationPrecision": "address",
+    "locationPrecision": "city",
     "locationSource": "waze"
   },
   {

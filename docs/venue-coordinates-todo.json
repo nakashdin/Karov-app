@@ -161,7 +161,16 @@
     ],
     "lat": 32.046589,
     "lng": 34.909283,
-    "_waze": "קיבוץ בארת יצחק, Be'erot Yitshak"
+    "_waze": "קיבוץ בארת יצחק, Be'erot Yitshak",
+    "_verified": {
+      "date": "2026-08-23",
+      "method": "waze address search, city-anchored",
+      "status": "confirmed",
+      "record": "manual-מפרומה-בארות-יצחק",
+      "note": "וייז: 'מתחם, בארות יצחק' במרחק 110 מ'"
+    },
+    "_grade": "address",
+    "_provider": "waze"
   },
   {
     "venue": "תחנת דלק דור אלון",
@@ -171,7 +180,16 @@
     ],
     "lat": 32.54425,
     "lng": 35.434029,
-    "_waze": "71, Beit HaShita"
+    "_waze": "71, Beit HaShita",
+    "_verified": {
+      "date": "2026-08-23",
+      "method": "waze address search, city-anchored",
+      "status": "confirmed",
+      "record": "humus-eli-חומוס-אליהו-בית-השיטה",
+      "note": "וייז: 'תחנת דלק דור אלון, Beit HaShita' במרחק 50 מ'"
+    },
+    "_grade": "address",
+    "_provider": "waze"
   },
   {
     "venue": "מרכז צים",
@@ -211,7 +229,16 @@
     ],
     "lat": 31.844315,
     "lng": 34.752403,
-    "_waze": "הותיקים, Bnaya"
+    "_waze": "הותיקים, Bnaya",
+    "_verified": {
+      "date": "2026-08-23",
+      "method": "waze address search, city-anchored",
+      "status": "downgraded",
+      "record": "tzohar-food-0046",
+      "note": "'הותיקים מול בית העם' מחזיר רק רחוב בחיפה, 114 ק\"מ. לא ניתן לאמת"
+    },
+    "_grade": "city",
+    "_provider": "waze"
   },
   {
     "venue": "קניון בת ים",
@@ -261,7 +288,16 @@
     ],
     "lat": 33.044838,
     "lng": 35.106831,
-    "_waze": "Israel"
+    "_waze": "Israel",
+    "_verified": {
+      "date": "2026-08-23",
+      "method": "waze address search, city-anchored",
+      "status": "confirmed",
+      "record": "humus-eli-חומוס-אליהו-גשר-הזיו",
+      "note": "וייז: 'תחנת דלק דור אלון, גשר הזיו' במרחק 20 מ' — הקואורדינטה נכונה, התווית 'Israel' הטעתה"
+    },
+    "_grade": "address",
+    "_provider": "waze"
   },
   {
     "venue": "מתחם פרץ",
@@ -381,7 +417,16 @@
     ],
     "lat": 31.200155,
     "lng": 35.362522,
-    "_waze": "Ein Bokek"
+    "_waze": "Ein Bokek",
+    "_verified": {
+      "date": "2026-08-23",
+      "method": "waze address search, city-anchored",
+      "status": "confirmed",
+      "record": "humus-eli-חומוס-אליהו-ים-המלח-עין-בוקק",
+      "note": "וייז: 'Ein Bokek' על אותה נקודה בדיוק. הערך הקודם 31.5/35.5 היה placeholder"
+    },
+    "_grade": "address",
+    "_provider": "waze"
   },
   {
     "venue": "תחנת דלק",
@@ -471,7 +516,16 @@
     ],
     "lat": 31.790115,
     "lng": 35.331577,
-    "_waze": "Haruvit St 9،"
+    "_waze": "Haruvit St 9،",
+    "_verified": {
+      "date": "2026-08-23",
+      "method": "waze address search, city-anchored",
+      "status": "confirmed",
+      "record": "manual-winery-1848",
+      "note": "וייז: 'חרובית 9, מעלה אדומים' על אותה נקודה — רחוב ומספר"
+    },
+    "_grade": "address",
+    "_provider": "waze"
   },
   {
     "venue": "קניון עופר",
@@ -499,9 +553,18 @@
     "examples": [
       "חומוס אליהו"
     ],
-    "lat": 32.499985,
-    "lng": 35.061352,
-    "_waze": "Israel"
+    "lat": 32.466846,
+    "lng": 35.017944,
+    "_waze": "Dor Alon, Ma'anit",
+    "_verified": {
+      "date": "2026-08-23",
+      "method": "waze address search, city-anchored",
+      "status": "corrected",
+      "record": "humus-eli-חומוס-אליהו-מענית",
+      "note": "התחנה האמיתית 5.5 ק\"מ משם. תוקן ל-'Dor Alon, Ma'anit' מוייז"
+    },
+    "_grade": "address",
+    "_provider": "waze"
   },
   {
     "venue": "מתחם אבן דרך",
@@ -629,7 +692,16 @@
     ],
     "lat": 31.728887,
     "lng": 34.755214,
-    "_nominatim": "מרכז ביג קסטינה, שיבולים, ערוגות, מועצה אזורית באר טוביה, נפת אשקלון, מחוז הדרום, 7986000, ישראל"
+    "_nominatim": "מרכז ביג קסטינה, שיבולים, ערוגות, מועצה אזורית באר טוביה, נפת אשקלון, מחוז הדרום, 7986000, ישראל",
+    "_verified": {
+      "date": "2026-08-23",
+      "method": "waze address search, city-anchored",
+      "status": "confirmed",
+      "record": "manual-b-fresh-big-kastina",
+      "note": "וייז מאשר את תוצאת Nominatim: 'Shibolim St' 100 מ', 'Nir St 6' 180 מ'"
+    },
+    "_grade": "address",
+    "_provider": "nominatim"
   },
   {
     "venue": "קניון אמות",
@@ -777,9 +849,18 @@
     "examples": [
       "פלאפל בריבוע פז"
     ],
-    "lat": 32.342381,
-    "lng": 34.912262,
-    "_waze": "עמק חפר 4025000, כפר מונש, 4025000"
+    "lat": 32.345234,
+    "lng": 34.908527,
+    "_waze": "צומת רופין כביש 4",
+    "_verified": {
+      "date": "2026-08-23",
+      "method": "waze address search, city-anchored",
+      "status": "corrected",
+      "record": "manual-falafel-baribua-paz-rupin",
+      "note": "שתי שאילתות עצמאיות התכנסו ל-450 מ' משם. תוקן ל-'צומת רופין כביש 4'"
+    },
+    "_grade": "address",
+    "_provider": "waze"
   },
   {
     "venue": "קניון הנשיא",
@@ -837,9 +918,18 @@
     "examples": [
       "יקב שילה"
     ],
-    "lat": 32.047623,
-    "lng": 35.301342,
-    "_waze": "Shiloh"
+    "lat": 32.054405,
+    "lng": 35.299091,
+    "_waze": "אזור תעשייה שילה",
+    "_verified": {
+      "date": "2026-08-23",
+      "method": "waze address search, city-anchored",
+      "status": "corrected",
+      "record": "manual-winery-shiloh",
+      "note": "הנקודה הקודמת הייתה מרכז היישוב. תוקן ל-POI 'אזור תעשייה שילה' מוייז, 780 מ' משם"
+    },
+    "_grade": "address",
+    "_provider": "waze"
   },
   {
     "venue": "אזור תעשיה שילת",
@@ -849,7 +939,16 @@
     ],
     "lat": 31.921173,
     "lng": 35.014572,
-    "_waze": "Shilat"
+    "_waze": "Shilat",
+    "_verified": {
+      "date": "2026-08-23",
+      "method": "waze address search, city-anchored",
+      "status": "downgraded",
+      "record": "9200044",
+      "note": "וייז מחזיר רק 'Shilat' — היישוב, לא העסק. הקואורדינטה היא מרכז היישוב"
+    },
+    "_grade": "city",
+    "_provider": "waze"
   },
   {
     "venue": "אזור תעשיה",
@@ -859,7 +958,16 @@
     ],
     "lat": 33.074963,
     "lng": 35.147919,
-    "_waze": "Shlomi"
+    "_waze": "Shlomi",
+    "_verified": {
+      "date": "2026-08-23",
+      "method": "waze address search, city-anchored",
+      "status": "downgraded",
+      "record": "ramoshlomi-b635f576",
+      "note": "וייז מחזיר רק 'Shlomi'. העסק לא מוכר לוייז"
+    },
+    "_grade": "city",
+    "_provider": "waze"
   },
   {
     "venue": "תחנת רכבת סבידור",
