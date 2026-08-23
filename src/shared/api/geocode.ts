@@ -18,7 +18,16 @@ import { getJson, query, type RequestOptions } from './client';
 
 const BASE = 'https://nominatim.openstreetmap.org';
 
-/** Contact address published to Nominatim, per their policy. */
+/**
+ * Contact address published to Nominatim, per their policy.
+ *
+ * This is the project owner's personal address, shipped in the web bundle and
+ * attached to every reverse-geocode request. Flagged in review (2026-08) and
+ * accepted as-is by the project owner: a project-alias address would be the
+ * fix, but that requires the account owner to set one up, and a placeholder
+ * or fake address would violate Nominatim's usage policy outright. Accepted,
+ * not resolved — don't swap this for a placeholder "to be safe."
+ */
 const CONTACT = 'nakashdin@gmail.com';
 
 export interface NominatimReverse {
