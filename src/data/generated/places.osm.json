@@ -48020,7 +48020,7 @@
       "council": "המועצה הדתית ראש העין",
       "sourceUrl": null
     },
-    "cityId": "ראש העין"
+    "cityId": "באר שבע"
   },
   {
     "id": "rc-rosh-haayin-h99zo9n",
@@ -82213,8 +82213,8 @@
     "name": "שלמה המלך",
     "address": "הצנחנים 2",
     "location": {
-      "latitude": 32.117775,
-      "longitude": 34.839171
+      "latitude": 33.0135,
+      "longitude": 35.108864
     },
     "provenance": {
       "source": "arcgis:nahariya",
@@ -82222,7 +82222,8 @@
       "sourceUrl": "https://services-eu1.arcgis.com/zvR5BCrANP2zVRTW/arcgis/rest/services/bate_kneset_2025/FeatureServer/1"
     },
     "cityId": "נהריה",
-    "locationPrecision": "exact"
+    "locationPrecision": "address",
+    "locationSource": "waze"
   },
   {
     "id": "arcgis:nahariya::66",
@@ -100427,7 +100428,7 @@
     "subType": "fast_food",
     "source": "manual",
     "name": "חומוס אליהו",
-    "locationPrecision": "city",
+    "locationPrecision": "address",
     "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
     "extra": {
       "dataSource": "humus-eli-yahoo.com",
@@ -100441,8 +100442,8 @@
     "category": "parve",
     "id": "humus-eli-חומוס-אליהו-מודיעין-עילית",
     "location": {
-      "latitude": 32.7961796,
-      "longitude": 35.5334249
+      "latitude": 31.930494,
+      "longitude": 35.038803
     },
     "kosherType": "badatz_kehilot",
     "phone": "079-6966969",
@@ -100451,7 +100452,8 @@
     "kosherLevel": "mehadrin",
     "kosherAuthorityGroup": "badatz",
     "kosherAuthority": "badatz_kehilot",
-    "description": "מסעדת חומוס ישראלית עממית בה החומוס נטחן במקום ומוגש חם וטרי בכל יום. מאחורי הקסם עומדת פילוסופיה של אהבה, אושר ושמחה — שמשתקפת בכל צלחת ובאווירת המקום."
+    "description": "מסעדת חומוס ישראלית עממית בה החומוס נטחן במקום ומוגש חם וטרי בכל יום. מאחורי הקסם עומדת פילוסופיה של אהבה, אושר ושמחה — שמשתקפת בכל צלחת ובאווירת המקום.",
+    "locationSource": "waze"
   },
   {
     "openingHours": "א'-ה' 10:00-19:00 | ו' 10:00-13:30",
@@ -120565,8 +120567,8 @@
     "address": "מנחם בגין 144, תל אביב",
     "cityId": "תל אביב",
     "location": {
-      "latitude": 31.0677,
-      "longitude": 34.7906
+      "latitude": 32.079086,
+      "longitude": 34.795055
     },
     "website": "https://pastito.co.il",
     "instagram": "https://www.instagram.com/pastito.il",
@@ -120575,7 +120577,9 @@
     "description": "רשת מסעדות פסטה איטלקית חלבית בגישה קלילה ומודרנית, מגישה מגוון מנות פסטה איכותיות בסגנון \"פחות דרמה, יותר פסטה\" — לאכילה במקום ולהזמנה.",
     "kosherType": "rabanut_tel_aviv",
     "phone": "054-9964414",
-    "openingHours": "א'-ה': 10:30-21:30 | שישי: סגור | שבת: סגור"
+    "openingHours": "א'-ה': 10:30-21:30 | שישי: סגור | שבת: סגור",
+    "locationPrecision": "address",
+    "locationSource": "waze"
   },
   {
     "id": "manual-pastito-tlv-dizengoff",

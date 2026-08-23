@@ -1,0 +1,81 @@
+{
+  "note": "תיקוני קואורדינטה מחוץ לסבב הונויים, שנמצאו ע\"י scripts/check-city-outliers.mjs. כל שורה נושאת את הראיה שעליה נשענה.",
+  "method": "waze address search, anchored on the city the address itself claims",
+  "date": "2026-08-23",
+  "repairs": [
+    {
+      "id": "manual-pastito-tlv-begin",
+      "name": "פסטיטו מידטאון",
+      "address": "מנחם בגין 144, תל אביב",
+      "cityId": "תל אביב",
+      "was": {
+        "latitude": 31.0677,
+        "longitude": 34.7906
+      },
+      "now": {
+        "latitude": 32.079086,
+        "longitude": 34.795055
+      },
+      "kmMoved": 112.5,
+      "status": "corrected",
+      "locationPrecision": "address",
+      "locationSource": "waze",
+      "evidence": "וייז לכתובת: 'כניסה ד, דרך מנחם בגין 144, תל אביב-יפו'. חיפוש שם עצמאי: 'Menakhem Begin Rd 144' במרחק 330 מ' מזה. הערך הקודם היה ליד נתיבות.",
+      "introducedIn": "5ff6f3d"
+    },
+    {
+      "id": "humus-eli-חומוס-אליהו-מודיעין-עילית",
+      "name": "חומוס אליהו",
+      "address": "אבני נזר 46, מתחם גרין, מודיעין עילית",
+      "cityId": "מודיעין עילית",
+      "was": {
+        "latitude": 32.7961796,
+        "longitude": 35.5334249
+      },
+      "now": {
+        "latitude": 31.930494,
+        "longitude": 35.038803
+      },
+      "kmMoved": 106.9,
+      "status": "corrected",
+      "locationPrecision": "address",
+      "locationSource": "waze",
+      "evidence": "שתי שאילתות עצמאיות (כתובת ושם) התכנסו ל-40 מ' זו מזו על 'אבני נזר 46'. הערך הקודם היה בגליל.",
+      "introducedIn": "b17ca39"
+    },
+    {
+      "id": "arcgis:nahariya::65",
+      "name": "שלמה המלך",
+      "address": "הצנחנים 2",
+      "cityId": "נהריה",
+      "was": {
+        "latitude": 32.117775,
+        "longitude": 34.839171
+      },
+      "now": {
+        "latitude": 33.0135,
+        "longitude": 35.108864
+      },
+      "kmMoved": 102.8,
+      "status": "corrected",
+      "locationPrecision": "address",
+      "locationSource": "waze",
+      "evidence": "וייז לכתובת: 'הצנחנים 2, Nahariya' — רחוב ומספר. חיפוש השם החזיר 'Ha-Melekh Shlomo St' 1.6 ק\"מ משם, אבל זה רחוב שנקרא כשם בית הכנסת ולא התאמה למקום, ולכן לא נלקח. הערך הקודם היה בגוש דן, והוא היה מסומן locationPrecision 'exact'.",
+      "introducedIn": "b17ca39"
+    },
+    {
+      "id": "rc-rosh-haayin-htwgayr",
+      "name": "סוכת שלום",
+      "address": "83-85 רחוב סנהדרין, באר שבע",
+      "was": {
+        "cityId": "ראש העין"
+      },
+      "now": {
+        "cityId": "באר שבע"
+      },
+      "status": "cityId-corrected",
+      "evidence": "הקואורדינטה 31.270673/34.791121 יושבת בדיוק על 'Sanhedrin St 83, Be'er Sheva' לפי וייז — 0 מ'. הכתובת והקואורדינטה הסכימו כל הזמן; ה-cityId היה השדה השגוי, ולכן הוא זה שתוקן.",
+      "introducedIn": "b17ca39"
+    }
+  ]
+}
