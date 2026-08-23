@@ -99481,7 +99481,7 @@
     "kosherAuthorityGroup": "unknown",
     "description": "מסעדת חומוס ישראלית עממית בה החומוס נטחן במקום ומוגש חם וטרי בכל יום. מאחורי הקסם עומדת פילוסופיה של אהבה, אושר ושמחה — שמשתקפת בכל צלחת ובאווירת המקום.",
     "locationPrecision": "address",
-    "locationSource": "waze"
+    "locationSource": "nominatim"
   },
   {
     "openingHours": "א'-ה' 10:00-18:00 | ו' 10:00-14:00",
@@ -101841,7 +101841,7 @@
     "kosherAuthorityGroup": "badatz",
     "kosherAuthority": "badatz_beit_yosef",
     "description": "רשת הפיצה הבינלאומית הוותיקה עם למעלה מ-30 סניפים בישראל, המגישה פיצות בסגנונות מגוונים — בצק עבה, דקיק ולבן — לצד אפשרויות טבעוניות ומגוון תוספות. הרשת מציעה שירות משלוחים ארצי, חבילות לאירועים ופתרונות קייטרינג לעסקים ומשפחות.",
-    "locationSource": "waze"
+    "locationSource": "nominatim"
   },
   {
     "id": "9100024",
@@ -101933,8 +101933,8 @@
     "address": "פארק אדיסון",
     "category": "dairy",
     "location": {
-      "latitude": 32.662128,
-      "longitude": 35.573353
+      "latitude": 31.9044,
+      "longitude": 34.799
     },
     "certifiedBy": "כשר למהדרין",
     "source": "manual",
@@ -101943,8 +101943,7 @@
     "lastVerifiedAt": "2026-07-29",
     "kosherLevel": "mehadrin",
     "kosherAuthorityGroup": "unknown",
-    "description": "רשת הפיצה הבינלאומית הוותיקה עם למעלה מ-30 סניפים בישראל, המגישה פיצות בסגנונות מגוונים — בצק עבה, דקיק ולבן — לצד אפשרויות טבעוניות ומגוון תוספות. הרשת מציעה שירות משלוחים ארצי, חבילות לאירועים ופתרונות קייטרינג לעסקים ומשפחות.",
-    "locationSource": "waze"
+    "description": "רשת הפיצה הבינלאומית הוותיקה עם למעלה מ-30 סניפים בישראל, המגישה פיצות בסגנונות מגוונים — בצק עבה, דקיק ולבן — לצד אפשרויות טבעוניות ומגוון תוספות. הרשת מציעה שירות משלוחים ארצי, חבילות לאירועים ופתרונות קייטרינג לעסקים ומשפחות."
   },
   {
     "id": "9100028",
@@ -104181,7 +104180,7 @@
     "kosherLevel": "regular",
     "kosherAuthorityGroup": "rabbinate",
     "description": "רשת הקונדיטוריה הגדולה בישראל עם למעלה מ-100 סניפים, המציעה מדי יום 150 סוגי מאפים ועוגות בעבודת יד הנאפים טרי במקום. לצד עולם הקונדיטוריה, רולדין מגישה ארוחות בוקר, כריכים וקפה, ומרעננת את התפריט ב-50 מוצרים חדשים בשנה לפחות.",
-    "locationSource": "waze"
+    "locationSource": "nominatim"
   },
   {
     "id": "9200102",
@@ -113864,7 +113863,7 @@
     "kosherAuthorityGroup": "unknown",
     "description": "מסעדת בשרים מעושנים ייחודית בצפת, המתמחה בבישול איטי בשיטת Low and Slow שמעניקה לנתחי הבשר – ובראשם הבריסקט – עסיסיות, רכות וטעם מעושן עמוק ומיוחד.",
     "locationPrecision": "address",
-    "locationSource": "waze"
+    "locationSource": "nominatim"
   },
   {
     "id": "manual-barake-safed",
@@ -115234,7 +115233,7 @@
     "kosherAuthorityGroup": "unknown",
     "description": "בראסרי חלבי וכשר במודיעין, שנוסד על ידי קונדיטורית ואמנית, המגיש מנות עונתיות יצירתיות, דגים טריים, פסטות תוצרת בית ומאפים מיוחדים. המקום משלב קולינריה, אמנות ואירוח בחוויה ייחודית.",
     "locationPrecision": "address",
-    "locationSource": "waze"
+    "locationSource": "nominatim"
   },
   {
     "id": "manual-beef-wok-modiin",
@@ -116467,7 +116466,7 @@
     "kosherAuthorityGroup": "unknown",
     "description": "מסעדה חלבית-איטלקית בקיסריה השוכנת בתוך הפארק הלאומי עם נוף לים ורקע היסטורי ייחודי. השפית חלי בן נעים, בעלת למעלה מ-13 שנות ניסיון, מביאה שילוב של מסורת וחדשנות קולינרית.",
     "locationPrecision": "address",
-    "locationSource": "waze"
+    "locationSource": "nominatim"
   },
   {
     "id": "manual-brunchos-kiryat-ekron",
@@ -120220,7 +120219,7 @@
     "kosherAuthorityGroup": "rabbinate",
     "description": "מסעדת שווארמה כשרה המתמחה בבשר איכותי ופיתות הנאפות טריות במקום, לצד מגוון סלטים עדכניים ומרעננים. הרשת מספקת גם שירות משלוחים לאזור תל אביב והסביבה ומוכרת בטריות חומרי הגלם ובהגשה נדיבה.",
     "locationPrecision": "address",
-    "locationSource": "waze"
+    "locationSource": "nominatim"
   },
   {
     "id": "mifgashbracha-663ed845",
@@ -120642,7 +120641,7 @@
     "kosherAuthorityGroup": "unknown",
     "description": "רשת מסעדות פסטה איטלקית חלבית בגישה קלילה ומודרנית, מגישה מגוון מנות פסטה איכותיות בסגנון \"פחות דרמה, יותר פסטה\" — לאכילה במקום ולהזמנה.",
     "locationPrecision": "address",
-    "locationSource": "waze"
+    "locationSource": "nominatim"
   },
   {
     "id": "manual-pastito-givatayim",
@@ -121453,7 +121452,7 @@
     "kosherAuthorityGroup": "unknown",
     "description": "מסעדת בשרים ברזילאית כשרה בירושלים, המתמחה בבשרים הנצלים על שיפוד גדול בסגנון ברזילאי מסורתי ומוגשים לשולחן על פלטה לוהטת. החוויה השיתופית, האווירה החגיגית ומגוון נתחי הבשר הופכים כל ביקור לאירוע של ממש.",
     "locationPrecision": "address",
-    "locationSource": "waze"
+    "locationSource": "nominatim"
   },
   {
     "id": "manual-tzachi-tlv",
@@ -124104,7 +124103,7 @@
     "kosherAuthorityGroup": "unknown",
     "description": "מאפייה ובית קפה המתמחים בפנקייק ענק ובמגוון רחב של מאפים ולחמים טריים הנאפים מחומרי גלם מצוינים. הדגש על איכות בלתי מתפשרת ואפייה יומית טרייה הופך את ביגה לעצירה המושלמת בכל שעות היום.",
     "locationPrecision": "address",
-    "locationSource": "waze"
+    "locationSource": "nominatim"
   },
   {
     "id": "manual-biga-kiryat-tavon",
@@ -125701,7 +125700,7 @@
     "kosherAuthorityGroup": "unknown",
     "description": "סניף של רשת בורגר ראנץ' המתמחה בהמבורגרים ומנות בשר מהירות, הממוקם בקניון סירקין בפתח תקווה. הרשת פועלת בסניפים רבים ברחבי ישראל.",
     "locationPrecision": "address",
-    "locationSource": "waze"
+    "locationSource": "nominatim"
   },
   {
     "id": "manual-br-kiryat-ono",
@@ -125724,7 +125723,7 @@
     "kosherAuthorityGroup": "unknown",
     "description": "רשת מזון מהיר ישראלית ותיקה שנוסדה ב-1972, הנושאת בגאווה את הכינוי 'הכי ישראלי'. ידועה בהמבורגר הספרדי עם הרוטב הפיקנטי וחמוצים, בצ'יפס הזיגזג הייחודי ובתפריט המשפחתי המגוון.",
     "locationPrecision": "address",
-    "locationSource": "waze"
+    "locationSource": "nominatim"
   },
   {
     "id": "manual-br-kiryat-shmona",
@@ -125747,7 +125746,7 @@
     "kosherAuthorityGroup": "unknown",
     "description": "רשת מזון מהיר ישראלית ותיקה שנוסדה ב-1972, הנושאת בגאווה את הכינוי 'הכי ישראלי'. ידועה בהמבורגר הספרדי עם הרוטב הפיקנטי וחמוצים, בצ'יפס הזיגזג הייחודי ובתפריט המשפחתי המגוון.",
     "locationPrecision": "address",
-    "locationSource": "waze"
+    "locationSource": "nominatim"
   },
   {
     "id": "manual-br-sderot",
@@ -125929,7 +125928,7 @@
     "kosherAuthorityGroup": "unknown",
     "description": "סניף של רשת בורגר ראנץ' המתמחה בהמבורגרים ומנות בשר מהירות, הממוקם בשכונת נווה זאב בבאר שבע. הרשת פועלת בסניפים רבים ברחבי ישראל.",
     "locationPrecision": "address",
-    "locationSource": "waze"
+    "locationSource": "nominatim"
   },
   {
     "id": "manual-br-bs-negev",
@@ -125998,7 +125997,7 @@
     "kosherAuthorityGroup": "unknown",
     "description": "רשת מזון מהיר ישראלית ותיקה שנוסדה ב-1972, הנושאת בגאווה את הכינוי 'הכי ישראלי'. ידועה בהמבורגר הספרדי עם הרוטב הפיקנטי וחמוצים, בצ'יפס הזיגזג הייחודי ובתפריט המשפחתי המגוון.",
     "locationPrecision": "address",
-    "locationSource": "waze"
+    "locationSource": "nominatim"
   },
   {
     "id": "manual-br-yavne",
@@ -126134,7 +126133,7 @@
     "kosherAuthorityGroup": "unknown",
     "description": "רשת מזון מהיר ישראלית ותיקה שנוסדה ב-1972, הנושאת בגאווה את הכינוי 'הכי ישראלי'. ידועה בהמבורגר הספרדי עם הרוטב הפיקנטי וחמוצים, בצ'יפס הזיגזג הייחודי ובתפריט המשפחתי המגוון.",
     "locationPrecision": "address",
-    "locationSource": "waze"
+    "locationSource": "nominatim"
   },
   {
     "id": "manual-br-nes-ziona",
@@ -126454,7 +126453,7 @@
     "description": "רשת מזון מהיר ישראלית ותיקה שנוסדה ב-1972, הנושאת בגאווה את הכינוי 'הכי ישראלי'. ידועה בהמבורגר הספרדי עם הרוטב הפיקנטי וחמוצים, בצ'יפס הזיגזג הייחודי ובתפריט המשפחתי המגוון.",
     "kosherType": "rabanut_mekomi",
     "locationPrecision": "address",
-    "locationSource": "waze"
+    "locationSource": "nominatim"
   },
   {
     "id": "manual-br-hadera",
@@ -127245,7 +127244,7 @@
     "description": "מסעדה המתמחה בסושי ומטבח אסייתי איכותי, עם מספר סניפים בגוש דן. מציעה גם סדנאות סושי אינטראקטיביות בסגנון יפני ושירות שף פרונטלי לאירועים פרטיים.",
     "kosherType": "kosher",
     "locationPrecision": "address",
-    "locationSource": "waze"
+    "locationSource": "nominatim"
   },
   {
     "id": "takumi-98e02a2b",
@@ -128055,7 +128054,7 @@
     "kosherAuthorityGroup": "unknown",
     "description": "רשת בתי הקפה הגדולה בישראל עם מאות סניפים, המגישה אספרסו איכותי לצד כריכים טריים, סלטים, מאפים ומנות קלות. מתאפיינת בנגישות רחבה, מחירים הוגנים ומחויבות ארוכת-שנים לשילוב עובדים עם מוגבלויות בסניפיה.",
     "locationPrecision": "address",
-    "locationSource": "waze"
+    "locationSource": "nominatim"
   },
   {
     "id": "manual-aroma-dimona",
@@ -130378,7 +130377,7 @@
     "description": "רשת המסעדות האסייתיות הגדולה בישראל, הפועלת מאז 2004 עם כחמישים סניפים ברחבי הארץ. מתמחה בסושי ובמטבח האסייתי בכלל, עם דגש על חומרי גלם טריים ואיכותיים במחיר נגיש.",
     "kosherType": "rabanut_mekomi",
     "locationPrecision": "address",
-    "locationSource": "waze"
+    "locationSource": "nominatim"
   },
   {
     "id": "manual-japanika-rosh-pina",
@@ -133829,7 +133828,7 @@
     "kosherAuthorityGroup": "unknown",
     "description": "רשת קפה ישראלית שנוסדה בחיפה ב-1994, כיום עם למעלה ממאה סניפים ברחבי הארץ. מציעה למעלה מ-20 תערובות אספרסו ייחודיות ובלעדיות לרשת, לצד ארוחות בוקר מפנקות, סלטים, כריכים ומנות עיקריות.",
     "locationPrecision": "address",
-    "locationSource": "waze"
+    "locationSource": "nominatim"
   },
   {
     "facebook": "https://www.facebook.com/gregcafe/",
@@ -136820,7 +136819,7 @@
     "kosherLevel": "regular",
     "kosherAuthorityGroup": "rabbinate",
     "description": "הסניפים הישראליים של רשת ההמבורגרים הגדולה בעולם, עם למעלה מ-200 סניפים ברחבי הארץ. מגישה המבורגרים, נאגטס, ציפס וארוחות ילדים, לצד תפריט דיגיטלי עם מבצעים ותוכנית נאמנות McCoins.",
-    "locationSource": "waze"
+    "locationSource": "nominatim"
   },
   {
     "id": "9500006",
@@ -137872,7 +137871,7 @@
     "kosherLevel": "regular",
     "kosherAuthorityGroup": "rabbinate",
     "description": "הסניפים הישראליים של רשת ההמבורגרים הגדולה בעולם, עם למעלה מ-200 סניפים ברחבי הארץ. מגישה המבורגרים, נאגטס, ציפס וארוחות ילדים, לצד תפריט דיגיטלי עם מבצעים ותוכנית נאמנות McCoins.",
-    "locationSource": "waze"
+    "locationSource": "nominatim"
   },
   {
     "id": "9500052",
@@ -138441,7 +138440,7 @@
     "kosherLevel": "regular",
     "kosherAuthorityGroup": "rabbinate",
     "description": "הסניפים הישראליים של רשת ההמבורגרים הגדולה בעולם, עם למעלה מ-200 סניפים ברחבי הארץ. מגישה המבורגרים, נאגטס, ציפס וארוחות ילדים, לצד תפריט דיגיטלי עם מבצעים ותוכנית נאמנות McCoins.",
-    "locationSource": "waze"
+    "locationSource": "nominatim"
   },
   {
     "id": "9500077",
@@ -141033,7 +141032,7 @@
     "kosherAuthorityGroup": "rabbinate",
     "description": "בר שייקים ומשקאות של רשת B-Fresh בתחנת רכבת סבידור, המגיש משקאות טריים ומרעננים עם תפריט עונתי מתחלף בגישה בריאותית ועדכנית.",
     "cityId": "תל אביב",
-    "locationSource": "waze"
+    "locationSource": "nominatim"
   },
   {
     "id": "manual-b-fresh-ichilov",
@@ -141251,7 +141250,7 @@
     "kosherAuthorityGroup": "rabbinate",
     "description": "רשת בארים לשייקים ומשקאות בריאות המתמחה בפירות טריים, אסאי ורכיבי סופר-פוד בשילובים עונתיים ומגוונים. מציעה אפשרויות התאמה אישית רבות ותוכנית נאמנות VIBE עם הטבות לחברים.",
     "cityId": "בת ים",
-    "locationSource": "waze"
+    "locationSource": "nominatim"
   },
   {
     "id": "manual-b-fresh-hazahav-rishon",
@@ -141606,7 +141605,7 @@
     "kosherAuthorityGroup": "unknown",
     "description": "רשת בארים לשייקים ומשקאות בריאות המתמחה בפירות טריים, אסאי ורכיבי סופר-פוד בשילובים עונתיים ומגוונים. מציעה אפשרויות התאמה אישית רבות ותוכנית נאמנות VIBE עם הטבות לחברים.",
     "cityId": "קסטינה",
-    "locationSource": "waze"
+    "locationSource": "nominatim"
   },
   {
     "id": "manual-b-fresh-shaar-hair-beit-shemesh",
@@ -141723,7 +141722,7 @@
     "kosherAuthorityGroup": "rabbinate",
     "description": "רשת בר המשקאות B-Fresh מתמחה במשקאות בריאים ואיכותיים, עם תפריט עונתי המשלב שייקים טרופיים, קערות אסאי ומשקאות מעוצבים בהשראות מרחבי העולם. הסניף ממוקם במרינה מול באשקלון.",
     "cityId": "אשקלון",
-    "locationSource": "waze"
+    "locationSource": "nominatim"
   },
   {
     "id": "manual-b-fresh-giron-ashkelon",
@@ -145992,7 +145991,7 @@
     "kosherAuthorityGroup": "badatz",
     "kosherAuthority": "badatz_beit_yosef",
     "instagram": "https://www.instagram.com/cafe_gan_sipur/",
-    "locationSource": "waze"
+    "locationSource": "nominatim"
   },
   {
     "id": "jer-7e890be8",
@@ -150906,7 +150905,7 @@
     "openingHours": "א'-ה' 7:30-20:00, ו' 7:30-14:00",
     "description": "עגלת קפה בגן הנשיאים בלב רעננה, המציעה חוויית קפה שכונתית וקהילתית. בתפריט קפה, שוקו ותה לצד מאכלים, כולל אפשרויות טבעוניות וללא גלוטן.",
     "locationPrecision": "address",
-    "locationSource": "waze"
+    "locationSource": "nominatim"
   },
   {
     "id": "tzohar-food-0169",
