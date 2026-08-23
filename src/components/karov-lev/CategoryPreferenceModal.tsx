@@ -1,14 +1,7 @@
 import React, { useState } from 'react';
-import {
-  Modal,
-  Pressable,
-  ScrollView,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
+import { Modal, Pressable, ScrollView, Text, View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { colors, radius, shadow, spacing } from '../../theme';
+import { makeStyles, radius, shadow, spacing, useTheme } from '../../theme';
 import { CategoryGroup } from '../../data/jewish-content/types';
 import { CATEGORY_GROUPS } from '../../data/jewish-content/category-groups';
 
@@ -20,6 +13,8 @@ interface Props {
 }
 
 export function CategoryPreferenceModal({ visible, initialSelected, onSave, onSkip }: Props) {
+  const theme = useTheme();
+  const styles = useStyles();
   const [draft, setDraft] = useState<CategoryGroup[]>(initialSelected);
 
   const toggle = (id: CategoryGroup) => {
@@ -55,12 +50,13 @@ export function CategoryPreferenceModal({ visible, initialSelected, onSave, onSk
           <View style={styles.cards}>
             {CATEGORY_GROUPS.map(cat => {
               const selected = draft.includes(cat.id);
+              const accent = theme.accent[cat.accent];
               return (
                 <Pressable
                   key={cat.id}
                   style={({ pressed }) => [
                     styles.card,
-                    selected && { borderColor: cat.color, backgroundColor: cat.backgroundColor },
+                    selected && { borderColor: accent.fg, backgroundColor: accent.tint },
                     pressed && styles.pressed,
                   ]}
                   onPress={() => toggle(cat.id)}
@@ -71,7 +67,7 @@ export function CategoryPreferenceModal({ visible, initialSelected, onSave, onSk
                   {/* Checkmark on visual left (RTL: end) */}
                   <View style={styles.checkBox}>
                     {selected && (
-                      <Ionicons name="checkmark-circle" size={22} color={cat.color} />
+                      <Ionicons name="checkmark-circle" size={22} color={accent.fg} />
                     )}
                     {!selected && (
                       <View style={styles.checkEmpty} />
@@ -81,7 +77,7 @@ export function CategoryPreferenceModal({ visible, initialSelected, onSave, onSk
                   {/* Label + description on visual right (RTL: start) */}
                   <View style={styles.cardText}>
                     <View style={styles.cardLabelRow}>
-                      <Text style={[styles.cardLabel, selected && { color: cat.color }]}>
+                      <Text style={[styles.cardLabel, selected && { color: accent.fg }]}>
                         {cat.label}
                       </Text>
                       <Text style={styles.cardEmoji}>{cat.emoji}</Text>
@@ -111,16 +107,16 @@ export function CategoryPreferenceModal({ visible, initialSelected, onSave, onSk
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   root: {
     flex: 1,
-    backgroundColor: colors.background,
+    backgroundColor: t.background,
   },
   handle: {
     width: 36,
     height: 4,
     borderRadius: 2,
-    backgroundColor: colors.border,
+    backgroundColor: t.border,
     alignSelf: 'center',
     marginTop: 10,
     marginBottom: 4,
@@ -133,14 +129,14 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
     letterSpacing: -0.5,
     lineHeight: 32,
   },
   subtitle: {
     fontSize: 14,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
     lineHeight: 22,
     marginTop: -spacing.sm,
@@ -156,8 +152,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     borderRadius: radius.lg,
     borderWidth: 1.5,
-    borderColor: colors.border,
-    backgroundColor: colors.surface,
+    borderColor: t.border,
+    backgroundColor: t.surface,
     ...shadow.card,
   },
   pressed: {
@@ -174,7 +170,7 @@ const styles = StyleSheet.create({
     height: 22,
     borderRadius: 11,
     borderWidth: 1.5,
-    borderColor: colors.border,
+    borderColor: t.border,
   },
   cardText: {
     flex: 1,
@@ -190,7 +186,7 @@ const styles = StyleSheet.create({
   cardLabel: {
     fontSize: 16,
     fontWeight: '700',
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
   },
   cardEmoji: {
@@ -198,7 +194,7 @@ const styles = StyleSheet.create({
   },
   cardDesc: {
     fontSize: 12,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
     lineHeight: 18,
   },
@@ -208,13 +204,13 @@ const styles = StyleSheet.create({
     paddingTop: spacing.md,
     gap: spacing.sm,
     borderTopWidth: 0.5,
-    borderTopColor: colors.border,
-    backgroundColor: colors.background,
+    borderTopColor: t.border,
+    backgroundColor: t.background,
     alignItems: 'center',
   },
   saveBtn: {
     width: '100%',
-    backgroundColor: colors.primary,
+    backgroundColor: t.primary,
     paddingVertical: 16,
     borderRadius: radius.pill,
     alignItems: 'center',
@@ -222,14 +218,14 @@ const styles = StyleSheet.create({
   saveBtnText: {
     fontSize: 16,
     fontWeight: '700',
-    color: colors.textInverse,
+    color: t.textInverse,
   },
   skipBtn: {
     paddingVertical: 8,
   },
   skipText: {
     fontSize: 14,
-    color: colors.textMuted,
+    color: t.textMuted,
     fontWeight: '500',
   },
-});
+}));

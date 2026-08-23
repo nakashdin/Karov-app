@@ -1,9 +1,9 @@
 import React, { useMemo, useState } from 'react';
-import { ActivityIndicator, Modal, Platform, Pressable, ScrollView, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
+import { ActivityIndicator, Modal, Platform, Pressable, ScrollView, Text, useWindowDimensions, View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { colors, radius, shadow, spacing } from '../../theme';
+import { makeStyles, radius, shadow, spacing, useTheme } from '../../theme';
 import { ParashaData } from '../../hooks/useParasha';
 import { useParashaSummary } from '../../hooks/useParashaSummary';
 import { useJewishDayInfo } from '../../hooks/useJewishDayInfo';
@@ -26,6 +26,9 @@ const GAP = 10;
 const CARD_WIDTH = 168;
 
 export function DailyCarousel({ parasha }: Props) {
+  const theme = useTheme();
+  const styles = useStyles();
+  const mStyles = useMStyles();
   const navigation = useNavigation<Nav>();
   const jewishDay = useJewishDayInfo();
   const parashaSummary = useParashaSummary(parasha?.topicSlug ?? null);
@@ -65,21 +68,21 @@ export function DailyCarousel({ parasha }: Props) {
       style={({ pressed }) => [
         styles.card,
         isDesktop && styles.cardDesktop,
-        { backgroundColor: '#F2EEFA' },
+        { backgroundColor: theme.accent.violet.tint },
         pressed && styles.pressed,
       ]}
       onPress={() => navigation.navigate('KarovLev')}
     >
-      <Text style={[styles.tag, { color: '#7B5EA7' }]}>קרוב ללב</Text>
+      <Text style={[styles.tag, { color: theme.accent.violet.fg }]}>קרוב ללב</Text>
 
       {prefsLoading ? (
-        <ActivityIndicator color="#7B5EA7" style={{ flex: 1, alignSelf: 'center', marginVertical: 8 }} />
+        <ActivityIndicator color={theme.accent.violet.fg} style={{ flex: 1, alignSelf: 'center', marginVertical: 8 }} />
       ) : previewItem && previewCategory ? (
         /* ── Preferences set: show content preview ── */
         <>
           <View style={styles.categoryBadge}>
             <Text style={styles.categoryBadgeEmoji}>{previewCategory.emoji}</Text>
-            <Text style={[styles.categoryBadgeText, { color: previewCategory.color }]}>
+            <Text style={[styles.categoryBadgeText, { color: theme.accent[previewCategory.accent].fg }]}>
               {previewCategory.label}
             </Text>
           </View>
@@ -89,7 +92,7 @@ export function DailyCarousel({ parasha }: Props) {
           <Text style={styles.cardBody} numberOfLines={isDesktop ? 5 : 3}>
             {previewItem.karovSummary}
           </Text>
-          <Text style={[styles.cta, { color: '#7B5EA7' }]}>קרא עוד ←</Text>
+          <Text style={[styles.cta, { color: theme.accent.violet.fg }]}>קרא עוד ←</Text>
         </>
       ) : (
         /* ── No preferences: teaser ── */
@@ -102,12 +105,12 @@ export function DailyCarousel({ parasha }: Props) {
           </Text>
           <View style={styles.teaserChips}>
             {teaserCategories.map((g) => (
-              <View key={g.id} style={[styles.teaserChip, { backgroundColor: `${g.color}18` }]}>
+              <View key={g.id} style={[styles.teaserChip, { backgroundColor: theme.accent[g.accent].tint }]}>
                 <Text style={styles.teaserChipText}>{g.emoji}</Text>
               </View>
             ))}
           </View>
-          <Text style={[styles.cta, { color: '#7B5EA7' }]}>התחל כאן ←</Text>
+          <Text style={[styles.cta, { color: theme.accent.violet.fg }]}>התחל כאן ←</Text>
         </>
       )}
     </Pressable>
@@ -115,13 +118,13 @@ export function DailyCarousel({ parasha }: Props) {
 
   const card2 = (
     <Pressable
-      style={({ pressed }) => [styles.card, isDesktop && styles.cardDesktop, { backgroundColor: '#FFF5EC' }, pressed && styles.pressed]}
+      style={({ pressed }) => [styles.card, isDesktop && styles.cardDesktop, { backgroundColor: theme.accent.orange.tint }, pressed && styles.pressed]}
       onPress={() => setOpenModal('jewish-day')}
     >
-      <View style={[styles.iconBadge, { backgroundColor: '#FFE4C4' }]}>
+      <View style={[styles.iconBadge, { backgroundColor: theme.accent.orange.tintStrong }]}>
         <Text style={styles.badgeIcon}>📅</Text>
       </View>
-      <Text style={[styles.tag, { color: colors.categoryRestaurant }]}>היום ביהדות</Text>
+      <Text style={[styles.tag, { color: theme.categoryRestaurant }]}>היום ביהדות</Text>
       <Text style={styles.cardTitle} numberOfLines={isDesktop ? 3 : 2}>
         {jewishDay ? jewishDay.title : 'טוען...'}
       </Text>
@@ -130,7 +133,7 @@ export function DailyCarousel({ parasha }: Props) {
           ? jewishDay.body
           : 'אירועים מיוחדים ותאריכים בלוח העברי'}
       </Text>
-      <Text style={[styles.cta, { color: colors.categoryRestaurant }]}>לוח עברי ←</Text>
+      <Text style={[styles.cta, { color: theme.categoryRestaurant }]}>לוח עברי ←</Text>
     </Pressable>
   );
 
@@ -139,15 +142,15 @@ export function DailyCarousel({ parasha }: Props) {
       style={({ pressed }) => [
         styles.card,
         isDesktop && styles.cardDesktop,
-        { backgroundColor: '#EBF2FD' },
+        { backgroundColor: theme.accent.blue.tint },
         pressed && styles.pressed,
       ]}
       onPress={() => navigation.navigate('ParashaDetail')}
     >
-      <View style={[styles.iconBadge, { backgroundColor: '#C8DDF8' }]}>
+      <View style={[styles.iconBadge, { backgroundColor: theme.accent.blue.tintStrong }]}>
         <Text style={styles.badgeIcon}>📖</Text>
       </View>
-      <Text style={[styles.tag, { color: colors.categorySynagogue }]}>פרשת השבוע</Text>
+      <Text style={[styles.tag, { color: theme.categorySynagogue }]}>פרשת השבוע</Text>
       <Text style={styles.cardTitle} numberOfLines={1}>
         {parasha?.hebrewName ?? 'טוען...'}
       </Text>
@@ -158,7 +161,7 @@ export function DailyCarousel({ parasha }: Props) {
           ? `שבת ${parasha.hebrewDate}`
           : 'לחץ לקרוא את פרשת השבוע'}
       </Text>
-      <Text style={[styles.cta, { color: colors.categorySynagogue }]}>המשך לקרוא ←</Text>
+      <Text style={[styles.cta, { color: theme.categorySynagogue }]}>המשך לקרוא ←</Text>
     </Pressable>
   );
 
@@ -167,15 +170,15 @@ export function DailyCarousel({ parasha }: Props) {
       style={({ pressed }) => [
         styles.card,
         isDesktop && styles.cardDesktop,
-        { backgroundColor: '#F0EFFC' },
+        { backgroundColor: theme.accent.indigo.tint },
         pressed && styles.pressed,
       ]}
       onPress={() => navigation.navigate('Tabs', { screen: 'Brachot' })}
     >
-      <View style={[styles.iconBadge, { backgroundColor: '#D9D5F7' }]}>
+      <View style={[styles.iconBadge, { backgroundColor: theme.accent.indigo.tintStrong }]}>
         <Text style={styles.badgeIcon}>{todayTehillim?.emoji ?? '📜'}</Text>
       </View>
-      <Text style={[styles.tag, { color: '#5B4FCF' }]}>תהילים היום</Text>
+      <Text style={[styles.tag, { color: theme.accent.indigo.fg }]}>תהילים היום</Text>
       <Text style={styles.cardTitle} numberOfLines={1}>
         {todayTehillim ? todayTehillim.longDay : 'ספר תהילים'}
       </Text>
@@ -184,7 +187,7 @@ export function DailyCarousel({ parasha }: Props) {
           ? `פרקים ${numToHebrew(todayTehillim.from)}–${numToHebrew(todayTehillim.to)} • ${todayTehillim.to - todayTehillim.from + 1} פרקים להיום`
           : 'קרא את תהילים היום'}
       </Text>
-      <Text style={[styles.cta, { color: '#5B4FCF' }]}>לקריאה ←</Text>
+      <Text style={[styles.cta, { color: theme.accent.indigo.fg }]}>לקריאה ←</Text>
     </Pressable>
   );
 
@@ -193,15 +196,15 @@ export function DailyCarousel({ parasha }: Props) {
       style={({ pressed }) => [
         styles.card,
         isDesktop && styles.cardDesktop,
-        { backgroundColor: '#E9F3ED' },
+        { backgroundColor: theme.accent.sage.tint },
         pressed && styles.pressed,
       ]}
       onPress={() => navigation.navigate('ElulSegula')}
     >
-      <View style={[styles.iconBadge, { backgroundColor: '#CFE5D8' }]}>
+      <View style={[styles.iconBadge, { backgroundColor: theme.accent.sage.tintStrong }]}>
         <Text style={styles.badgeIcon}>🌹</Text>
       </View>
-      <Text style={[styles.tag, { color: colors.primary }]}>סגולת אלול</Text>
+      <Text style={[styles.tag, { color: theme.primary }]}>סגולת אלול</Text>
       <Text style={styles.cardTitle} numberOfLines={1}>לְדָוִד ה׳ אוֹרִי</Text>
       <Text style={styles.cardBody} numberOfLines={isDesktop ? 6 : 3}>
         {`יום ${numToHebrew(ratzonDay)} מתוך שלושים ותשעה • בוקר וערב`}
@@ -214,7 +217,7 @@ export function DailyCarousel({ parasha }: Props) {
           ]}
         />
       </View>
-      <Text style={[styles.cta, { color: colors.primary }]}>לסגולה ולפרק ←</Text>
+      <Text style={[styles.cta, { color: theme.primary }]}>לסגולה ולפרק ←</Text>
     </Pressable>
   );
 
@@ -229,7 +232,7 @@ export function DailyCarousel({ parasha }: Props) {
         {/* Modal header */}
         <View style={mStyles.header}>
           <Pressable onPress={() => setOpenModal(null)} style={mStyles.closeBtn} hitSlop={8}>
-            <Ionicons name="close" size={22} color={colors.text} />
+            <Ionicons name="close" size={22} color={theme.text} />
           </Pressable>
           <Text style={mStyles.headerTitle}>היום ביהדות</Text>
           <View style={mStyles.closeBtn} />
@@ -238,8 +241,8 @@ export function DailyCarousel({ parasha }: Props) {
         {openModal === 'jewish-day' && (
           <ScrollView contentContainerStyle={mStyles.content} showsVerticalScrollIndicator={false}>
             {jewishDay ? (
-              <View style={[mStyles.heroCard, { backgroundColor: '#FFF5EC' }]}>
-                <Text style={[mStyles.cardTag, { color: colors.categoryRestaurant }]}>היום ביהדות</Text>
+              <View style={[mStyles.heroCard, { backgroundColor: theme.accent.orange.tint }]}>
+                <Text style={[mStyles.cardTag, { color: theme.categoryRestaurant }]}>היום ביהדות</Text>
                 <Text style={mStyles.cardTitle}>{jewishDay.title}</Text>
                 <Text style={mStyles.cardBody}>{jewishDay.body}</Text>
                 {jewishDay.details?.map((block, i) => (
@@ -252,7 +255,7 @@ export function DailyCarousel({ parasha }: Props) {
                 ))}
               </View>
             ) : (
-              <ActivityIndicator color={colors.primary} style={{ marginTop: 40 }} />
+              <ActivityIndicator color={theme.primary} style={{ marginTop: 40 }} />
             )}
           </ScrollView>
         )}
@@ -296,7 +299,7 @@ export function DailyCarousel({ parasha }: Props) {
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   list: {
     paddingHorizontal: spacing.lg,
     gap: GAP,
@@ -359,14 +362,14 @@ const styles = StyleSheet.create({
   progressTrack: {
     height: 4,
     borderRadius: 2,
-    backgroundColor: '#CFE5D8',
+    backgroundColor: t.accent.sage.tintStrong,
     overflow: 'hidden',
     marginTop: 2,
   },
   progressFill: {
     height: '100%',
     borderRadius: 2,
-    backgroundColor: colors.primary,
+    backgroundColor: t.primary,
   },
 
   iconBadge: {
@@ -390,14 +393,14 @@ const styles = StyleSheet.create({
   cardTitle: {
     fontSize: 15,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
     letterSpacing: -0.3,
     lineHeight: 21,
   },
   cardBody: {
     fontSize: 11,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
     lineHeight: 17,
     flex: 1,
@@ -408,12 +411,12 @@ const styles = StyleSheet.create({
     textAlign: 'right',
     marginTop: 2,
   },
-});
+}));
 
-const mStyles = StyleSheet.create({
+const useMStyles = makeStyles((t) => ({
   container: {
     flex: 1,
-    backgroundColor: colors.background,
+    backgroundColor: t.background,
   },
   header: {
     flexDirection: 'row',
@@ -422,8 +425,8 @@ const mStyles = StyleSheet.create({
     paddingHorizontal: spacing.lg,
     paddingVertical: spacing.md,
     borderBottomWidth: 0.5,
-    borderBottomColor: colors.border,
-    backgroundColor: colors.surface,
+    borderBottomColor: t.border,
+    backgroundColor: t.surface,
   },
   closeBtn: {
     width: 36,
@@ -434,7 +437,7 @@ const mStyles = StyleSheet.create({
   headerTitle: {
     fontSize: 16,
     fontWeight: '700',
-    color: colors.text,
+    color: t.text,
   },
   content: {
     padding: spacing.lg,
@@ -451,26 +454,26 @@ const mStyles = StyleSheet.create({
     alignItems: 'center',
     paddingVertical: 10,
     borderRadius: radius.md,
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     gap: 4,
     borderWidth: 1,
-    borderColor: colors.border,
+    borderColor: t.border,
   },
   typeTabActive: {
-    backgroundColor: '#E0D0F5',
-    borderColor: '#9B7EC8',
+    backgroundColor: t.selectionTint,
+    borderColor: t.selectionBorder,
   },
   typeTabIcon: {
     fontSize: 20,
   },
   typeTabLabel: {
     fontSize: 10,
-    color: colors.textMuted,
+    color: t.textMuted,
     fontWeight: '500',
     textAlign: 'center',
   },
   typeTabLabelActive: {
-    color: '#7B5EA7',
+    color: t.accent.violet.fg,
     fontWeight: '700',
   },
   heroCard: {
@@ -488,28 +491,28 @@ const mStyles = StyleSheet.create({
   cardTitle: {
     fontSize: 22,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
     letterSpacing: -0.5,
     lineHeight: 30,
   },
   cardBody: {
     fontSize: 16,
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
     lineHeight: 26,
   },
   detailHeading: {
     fontSize: 16,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
     marginTop: 14,
     marginBottom: 4,
   },
   detailPara: {
     fontSize: 15,
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
     lineHeight: 25,
     opacity: 0.85,
@@ -521,4 +524,4 @@ const mStyles = StyleSheet.create({
     opacity: 0.7,
     fontWeight: '500',
   },
-});
+}));

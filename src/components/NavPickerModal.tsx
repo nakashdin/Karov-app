@@ -1,8 +1,8 @@
 import React from 'react';
-import { Modal, Platform, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Modal, Platform, Pressable, Text, View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { GeoPoint } from '../types';
-import { colors, radius, shadow, spacing } from '../theme';
+import { makeStyles, radius, shadow, spacing, useTheme } from '../theme';
 import { openAppleMaps, openGoogleMaps, openWaze } from '../utils/navigation';
 
 const isIOS =
@@ -20,6 +20,8 @@ interface Props {
 }
 
 export function NavPickerModal({ visible, point, label, address, onClose }: Props) {
+  const theme = useTheme();
+  const styles = useStyles();
   const go = async (fn: () => Promise<void>) => {
     onClose();
     await fn();
@@ -39,37 +41,37 @@ export function NavPickerModal({ visible, point, label, address, onClose }: Prop
           <Text style={styles.title}>פתח ניווט ב…</Text>
 
           <Pressable style={styles.option} onPress={() => go(() => openWaze(point, label, address))}>
-            <View style={[styles.appIcon, { backgroundColor: '#33CCFF' }]}>
-              <Ionicons name="navigate" size={22} color="#fff" />
+            <View style={[styles.appIcon, { backgroundColor: theme.brand.waze }]}>
+              <Ionicons name="navigate" size={22} color={theme.textInverse} />
             </View>
             <View style={styles.optionText}>
               <Text style={styles.optionName}>Waze</Text>
               <Text style={styles.optionSub}>ניווט חי עם תנועה בזמן אמת</Text>
             </View>
-            <Ionicons name="chevron-back" size={18} color={colors.textMuted} />
+            <Ionicons name="chevron-back" size={18} color={theme.textMuted} />
           </Pressable>
 
           <Pressable style={styles.option} onPress={() => go(() => openGoogleMaps(point, label, address))}>
-            <View style={[styles.appIcon, { backgroundColor: '#4285F4' }]}>
-              <Ionicons name="map" size={22} color="#fff" />
+            <View style={[styles.appIcon, { backgroundColor: theme.brand.googleMaps }]}>
+              <Ionicons name="map" size={22} color={theme.textInverse} />
             </View>
             <View style={styles.optionText}>
               <Text style={styles.optionName}>Google Maps</Text>
               <Text style={styles.optionSub}>מפות גוגל עם ניווט מפורט</Text>
             </View>
-            <Ionicons name="chevron-back" size={18} color={colors.textMuted} />
+            <Ionicons name="chevron-back" size={18} color={theme.textMuted} />
           </Pressable>
 
           {isIOS && (
             <Pressable style={styles.option} onPress={() => go(() => openAppleMaps(point, label, address))}>
-              <View style={[styles.appIcon, { backgroundColor: '#000' }]}>
-                <Ionicons name="map-outline" size={22} color="#fff" />
+              <View style={[styles.appIcon, { backgroundColor: theme.brand.appleMaps }]}>
+                <Ionicons name="map-outline" size={22} color={theme.textInverse} />
               </View>
               <View style={styles.optionText}>
                 <Text style={styles.optionName}>מפות Apple</Text>
                 <Text style={styles.optionSub}>אפליקציית המפות המובנית של iPhone</Text>
               </View>
-              <Ionicons name="chevron-back" size={18} color={colors.textMuted} />
+              <Ionicons name="chevron-back" size={18} color={theme.textMuted} />
             </Pressable>
           )}
 
@@ -82,14 +84,14 @@ export function NavPickerModal({ visible, point, label, address, onClose }: Prop
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   overlay: {
     flex: 1,
-    backgroundColor: 'rgba(0,0,0,0.45)',
+    backgroundColor: t.overlay,
     justifyContent: 'flex-end',
   },
   sheet: {
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderTopLeftRadius: radius.xl,
     borderTopRightRadius: radius.xl,
     paddingBottom: 36,
@@ -101,14 +103,14 @@ const styles = StyleSheet.create({
     width: 40,
     height: 4,
     borderRadius: 2,
-    backgroundColor: colors.border,
+    backgroundColor: t.border,
     alignSelf: 'center',
     marginBottom: 18,
   },
   title: {
     fontSize: 17,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
     textAlign: 'center',
     marginBottom: 20,
     letterSpacing: -0.3,
@@ -119,7 +121,7 @@ const styles = StyleSheet.create({
     gap: 14,
     paddingVertical: 14,
     borderBottomWidth: 0.5,
-    borderBottomColor: colors.border,
+    borderBottomColor: t.border,
   },
   appIcon: {
     width: 46,
@@ -133,12 +135,12 @@ const styles = StyleSheet.create({
   optionName: {
     fontSize: 16,
     fontWeight: '700',
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
   },
   optionSub: {
     fontSize: 12,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
     marginTop: 2,
   },
@@ -146,12 +148,12 @@ const styles = StyleSheet.create({
     marginTop: 16,
     paddingVertical: 14,
     borderRadius: radius.pill,
-    backgroundColor: colors.border,
+    backgroundColor: t.border,
     alignItems: 'center',
   },
   cancelText: {
     fontSize: 16,
     fontWeight: '700',
-    color: colors.text,
+    color: t.text,
   },
-});
+}));

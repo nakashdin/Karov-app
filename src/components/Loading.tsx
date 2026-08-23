@@ -1,20 +1,22 @@
 import React from 'react';
-import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
-import { colors, spacing } from '../theme';
+import { ActivityIndicator, Text, View } from 'react-native';
+import { makeStyles, spacing, useTheme } from '../theme';
 import { useLanguage } from '../context/LanguageContext';
 
 /** Full-area loading indicator. */
 export function Loading({ label }: { label?: string }) {
+  const theme = useTheme();
+  const styles = useStyles();
   const { t } = useLanguage();
   return (
     <View style={styles.container}>
-      <ActivityIndicator size="large" color={colors.primary} />
+      <ActivityIndicator size="large" color={theme.primary} />
       <Text style={styles.label}>{label ?? t.common.loading}</Text>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   container: {
     flex: 1,
     alignItems: 'center',
@@ -24,6 +26,6 @@ const styles = StyleSheet.create({
   label: {
     fontSize: 14,
     fontWeight: '500',
-    color: colors.textMuted,
+    color: t.textMuted,
   },
-});
+}));

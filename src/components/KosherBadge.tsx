@@ -1,12 +1,14 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
 import { KosherCategory } from '../types';
-import { categoryColor, categoryLabel } from '../utils/kosher';
-import { colors, radius, spacing } from '../theme';
+import { categoryColorFor, categoryLabel } from '../utils/kosher';
+import { makeStyles, radius, spacing, useTheme } from '../theme';
 
 /** Small colored pill showing the food category (בשרי / חלבי / פרווה). */
 export function KosherBadge({ category }: { category: KosherCategory }) {
-  const accent = categoryColor[category];
+  const theme = useTheme();
+  const styles = useStyles();
+  const accent = categoryColorFor(theme)[category];
   return (
     <View style={[styles.badge, { borderColor: accent }]}>
       <Text style={[styles.text, { color: accent }]}>{categoryLabel[category]}</Text>
@@ -14,13 +16,13 @@ export function KosherBadge({ category }: { category: KosherCategory }) {
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   badge: {
     paddingHorizontal: spacing.sm,
     paddingVertical: 3,
     borderRadius: radius.pill,
     alignSelf: 'flex-start',
-    backgroundColor: colors.surfaceMuted,
+    backgroundColor: t.surfaceMuted,
     borderWidth: 1,
   },
   text: {
@@ -28,4 +30,4 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     letterSpacing: 0.2,
   },
-});
+}));

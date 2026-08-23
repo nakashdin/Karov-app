@@ -1,20 +1,11 @@
 import React, { useState } from 'react';
-import {
-  KeyboardAvoidingView,
-  Platform,
-  Pressable,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TextInput,
-  View,
-} from 'react-native';
+import { KeyboardAvoidingView, Platform, Pressable, ScrollView, Text, TextInput, View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { Logo } from '../components/Logo';
-import { colors, radius, spacing } from '../theme';
+import { makeStyles, radius, shadowColor, spacing, useTheme } from '../theme';
 import { RootStackParamList } from '../navigation/types';
 import { AUTH_KEY } from './SplashScreen';
 
@@ -22,6 +13,8 @@ type Nav = NativeStackNavigationProp<RootStackParamList>;
 type Mode = 'login' | 'register';
 
 export function LoginScreen() {
+  const theme = useTheme();
+  const styles = useStyles();
   const navigation = useNavigation<Nav>();
   const [mode, setMode] = useState<Mode>('login');
   const [name, setName] = useState('');
@@ -113,14 +106,14 @@ export function LoginScreen() {
               style={({ pressed }) => [styles.socialBtn, pressed && styles.pressed]}
               onPress={handleGoogle}
             >
-              <Ionicons name="logo-google" size={18} color="#EA4335" />
+              <Ionicons name="logo-google" size={18} color={theme.brand.google} />
               <Text style={styles.socialText}>Google</Text>
             </Pressable>
             <Pressable
               style={({ pressed }) => [styles.socialBtn, pressed && styles.pressed]}
               onPress={handleApple}
             >
-              <Ionicons name="logo-apple" size={20} color={colors.text} />
+              <Ionicons name="logo-apple" size={20} color={theme.text} />
               <Text style={styles.socialText}>Apple</Text>
             </Pressable>
           </View>
@@ -138,7 +131,7 @@ export function LoginScreen() {
               <TextInput
                 style={[styles.input, focused === 'name' && styles.inputFocused]}
                 placeholder="שם מלא"
-                placeholderTextColor={colors.textFaint}
+                placeholderTextColor={theme.textFaint}
                 value={name}
                 onChangeText={setName}
                 onFocus={() => setFocused('name')}
@@ -150,7 +143,7 @@ export function LoginScreen() {
             <TextInput
               style={[styles.input, focused === 'email' && styles.inputFocused]}
               placeholder="כתובת אימייל"
-              placeholderTextColor={colors.textFaint}
+              placeholderTextColor={theme.textFaint}
               value={email}
               onChangeText={setEmail}
               onFocus={() => setFocused('email')}
@@ -165,7 +158,7 @@ export function LoginScreen() {
             <TextInput
               style={[styles.input, focused === 'password' && styles.inputFocused]}
               placeholder="סיסמה (לפחות 6 תווים)"
-              placeholderTextColor={colors.textFaint}
+              placeholderTextColor={theme.textFaint}
               value={password}
               onChangeText={setPassword}
               onFocus={() => setFocused('password')}
@@ -214,10 +207,10 @@ export function LoginScreen() {
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   root: {
     flex: 1,
-    backgroundColor: '#0F3D22',
+    backgroundColor: t.primaryDeep,
   },
   scroll: {
     flexGrow: 1,
@@ -233,13 +226,13 @@ const styles = StyleSheet.create({
   heroName: {
     fontSize: 30,
     fontWeight: '800',
-    color: '#FFFFFF',
+    color: t.textInverse,
     letterSpacing: -0.8,
   },
 
   card: {
     flex: 1,
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderTopLeftRadius: 28,
     borderTopRightRadius: 28,
     paddingHorizontal: spacing.lg,
@@ -251,7 +244,7 @@ const styles = StyleSheet.create({
   // ── Tabs ─────────────────────────────────────────────────
   tabs: {
     flexDirection: 'row',
-    backgroundColor: colors.background,
+    backgroundColor: t.background,
     borderRadius: radius.md,
     padding: 4,
   },
@@ -262,8 +255,8 @@ const styles = StyleSheet.create({
     borderRadius: radius.md - 2,
   },
   tabActive: {
-    backgroundColor: colors.surface,
-    shadowColor: '#000',
+    backgroundColor: t.surface,
+    shadowColor,
     shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.08,
     shadowRadius: 4,
@@ -272,10 +265,10 @@ const styles = StyleSheet.create({
   tabText: {
     fontSize: 14,
     fontWeight: '600',
-    color: colors.textMuted,
+    color: t.textMuted,
   },
   tabTextActive: {
-    color: colors.text,
+    color: t.text,
   },
 
   // ── Social ───────────────────────────────────────────────
@@ -290,15 +283,15 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     gap: 8,
     borderWidth: 1.5,
-    borderColor: colors.border,
+    borderColor: t.border,
     borderRadius: radius.md,
     paddingVertical: 13,
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
   },
   socialText: {
     fontSize: 14,
     fontWeight: '600',
-    color: colors.text,
+    color: t.text,
   },
 
   // ── Divider ──────────────────────────────────────────────
@@ -310,11 +303,11 @@ const styles = StyleSheet.create({
   divLine: {
     flex: 1,
     height: 1,
-    backgroundColor: colors.border,
+    backgroundColor: t.border,
   },
   divText: {
     fontSize: 11,
-    color: colors.textFaint,
+    color: t.textFaint,
   },
 
   // ── Fields ───────────────────────────────────────────────
@@ -322,36 +315,36 @@ const styles = StyleSheet.create({
     gap: 10,
   },
   input: {
-    backgroundColor: '#F0F5F1',
+    backgroundColor: t.primaryLight,
     borderRadius: radius.md,
     paddingVertical: 14,
     paddingHorizontal: 16,
     fontSize: 15,
-    color: colors.text,
+    color: t.text,
     borderWidth: 1.5,
     borderColor: 'transparent',
   },
   inputFocused: {
-    borderColor: colors.primary,
-    backgroundColor: colors.surface,
+    borderColor: t.primary,
+    backgroundColor: t.surface,
   },
 
   errorText: {
     fontSize: 13,
-    color: colors.danger,
+    color: t.danger,
     textAlign: 'center',
     marginTop: -4,
   },
 
   // ── Buttons ──────────────────────────────────────────────
   btnPrimary: {
-    backgroundColor: colors.primary,
+    backgroundColor: t.primary,
     borderRadius: radius.md,
     paddingVertical: 16,
     alignItems: 'center',
   },
   btnPrimaryText: {
-    color: colors.textInverse,
+    color: t.textInverse,
     fontSize: 16,
     fontWeight: '700',
     letterSpacing: -0.2,
@@ -361,7 +354,7 @@ const styles = StyleSheet.create({
   },
   btnGuest: {
     borderWidth: 1.5,
-    borderColor: colors.border,
+    borderColor: t.border,
     borderRadius: radius.md,
     paddingVertical: 14,
     alignItems: 'center',
@@ -369,13 +362,13 @@ const styles = StyleSheet.create({
   btnGuestText: {
     fontSize: 15,
     fontWeight: '600',
-    color: colors.textMuted,
+    color: t.textMuted,
   },
 
   terms: {
     fontSize: 11,
-    color: colors.textFaint,
+    color: t.textFaint,
     textAlign: 'center',
     lineHeight: 17,
   },
-});
+}));

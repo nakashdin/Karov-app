@@ -1,16 +1,9 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import {
-  ActivityIndicator,
-  Modal,
-  Pressable,
-  ScrollView,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
+import { ActivityIndicator, Modal, Pressable, ScrollView, Text, View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { Screen } from '../components/Screen';
-import { colors, radius, spacing } from '../theme';
+import { makeStyles, radius, spacing, useTheme } from '../theme';
+import type { Tokens } from '../theme';
 import { useSharedLocation, getCachedLocation } from '../context/LocationContext';
 import { hebcal } from '../shared/api';
 
@@ -40,16 +33,18 @@ interface ZmanDef {
   iconColor: string;
 }
 
-const ZMANIM_DEFS: ZmanDef[] = [
-  { key: 'alotHaShachar',  hebrew: 'עלות השחר',           icon: 'time-outline',  iconColor: colors.textMuted },
-  { key: 'sunrise',        hebrew: 'הנץ החמה',            icon: 'sunny',         iconColor: '#f59e0b' },
-  { key: 'sofZmanShmaMGA', hebrew: 'סוף זמן ק"ש (מג"א)', icon: 'book',          iconColor: colors.danger },
-  { key: 'sofZmanShma',    hebrew: 'סוף זמן ק"ש (גר"א)', icon: 'book',          iconColor: colors.danger },
-  { key: 'chatzot',        hebrew: 'חצות היום',           icon: 'remove-circle-outline', iconColor: colors.text },
-  { key: 'minchaGedola',   hebrew: 'מנחה גדולה',         icon: 'sunny-outline', iconColor: '#d97706' },
-  { key: 'sunset',         hebrew: 'שקיעת החמה',         icon: 'sunny',         iconColor: '#ea580c' },
-  { key: 'tzeit85deg',     hebrew: 'צאת הכוכבים',        icon: 'moon',          iconColor: '#7c3aed' },
-];
+function zmanimDefsFor(theme: Tokens): ZmanDef[] {
+  return [
+    { key: 'alotHaShachar',  hebrew: 'עלות השחר',           icon: 'time-outline',  iconColor: theme.textMuted },
+    { key: 'sunrise',        hebrew: 'הנץ החמה',            icon: 'sunny',         iconColor: theme.zmanim.dawn },
+    { key: 'sofZmanShmaMGA', hebrew: 'סוף זמן ק"ש (מג"א)', icon: 'book',          iconColor: theme.danger },
+    { key: 'sofZmanShma',    hebrew: 'סוף זמן ק"ש (גר"א)', icon: 'book',          iconColor: theme.danger },
+    { key: 'chatzot',        hebrew: 'חצות היום',           icon: 'remove-circle-outline', iconColor: theme.text },
+    { key: 'minchaGedola',   hebrew: 'מנחה גדולה',         icon: 'sunny-outline', iconColor: theme.zmanim.midday },
+    { key: 'sunset',         hebrew: 'שקיעת החמה',         icon: 'sunny',         iconColor: theme.zmanim.sunset },
+    { key: 'tzeit85deg',     hebrew: 'צאת הכוכבים',        icon: 'moon',          iconColor: theme.zmanim.night },
+  ];
+}
 
 // ─── Date helpers ─────────────────────────────────────────────────────────────
 
@@ -111,6 +106,8 @@ async function fetchZmanim(
 // ─── Screen ───────────────────────────────────────────────────────────────────
 
 export function ZmanimScreen() {
+  const theme = useTheme();
+  const styles = useStyles();
   const { location: ctxLoc } = useSharedLocation();
   const gpsLoc = ctxLoc ?? getCachedLocation();
 
@@ -162,7 +159,7 @@ export function ZmanimScreen() {
           onPress={() => setSelectedDate(d => addDays(d, 1))}
           hitSlop={10}
         >
-          <Ionicons name="chevron-back" size={20} color={colors.primary} />
+          <Ionicons name="chevron-back" size={20} color={theme.primary} />
         </Pressable>
 
         {/* Date display */}
@@ -188,15 +185,15 @@ export function ZmanimScreen() {
           onPress={() => setSelectedDate(d => addDays(d, -1))}
           hitSlop={10}
         >
-          <Ionicons name="chevron-forward" size={20} color={colors.primary} />
+          <Ionicons name="chevron-forward" size={20} color={theme.primary} />
         </Pressable>
       </View>
 
       {/* City picker row */}
       <Pressable style={styles.cityRow} onPress={() => setCityPickerOpen(true)}>
-        <Ionicons name="chevron-down" size={14} color={colors.textMuted} />
+        <Ionicons name="chevron-down" size={14} color={theme.textMuted} />
         <Text style={styles.cityName}>{city.name}</Text>
-        <Ionicons name="location-outline" size={15} color={colors.primary} />
+        <Ionicons name="location-outline" size={15} color={theme.primary} />
       </Pressable>
 
       {/* Divider */}
@@ -205,7 +202,7 @@ export function ZmanimScreen() {
       {/* Zmanim */}
       {loading ? (
         <View style={styles.center}>
-          <ActivityIndicator size="large" color={colors.primary} />
+          <ActivityIndicator size="large" color={theme.primary} />
           <Text style={styles.loadingText}>טוען זמנים...</Text>
         </View>
       ) : !data ? (
@@ -217,7 +214,7 @@ export function ZmanimScreen() {
         </View>
       ) : (
         <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={styles.list}>
-          {ZMANIM_DEFS.map((zman) => {
+          {zmanimDefsFor(theme).map((zman) => {
             const rawTime = data.times[zman.key];
             if (!rawTime) return null;
             return (
@@ -241,7 +238,7 @@ export function ZmanimScreen() {
           <View style={styles.sheetHeader}>
             <Text style={styles.sheetTitle}>בחר עיר</Text>
             <Pressable onPress={() => setCityPickerOpen(false)} hitSlop={10}>
-              <Ionicons name="close" size={22} color={colors.textMuted} />
+              <Ionicons name="close" size={22} color={theme.textMuted} />
             </Pressable>
           </View>
           <ScrollView>
@@ -254,7 +251,7 @@ export function ZmanimScreen() {
                 <Text style={[styles.cityOptionText, c.name === city.name && styles.cityOptionTextActive]}>
                   {c.name}
                 </Text>
-                {c.name === city.name && <Ionicons name="checkmark" size={18} color={colors.primary} />}
+                {c.name === city.name && <Ionicons name="checkmark" size={18} color={theme.primary} />}
               </Pressable>
             ))}
           </ScrollView>
@@ -264,11 +261,11 @@ export function ZmanimScreen() {
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   screenTitle: {
     fontSize: 30,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
     paddingTop: spacing.md,
     paddingBottom: spacing.lg,
@@ -285,7 +282,7 @@ const styles = StyleSheet.create({
     width: 36,
     height: 36,
     borderRadius: radius.md,
-    backgroundColor: colors.primaryLight,
+    backgroundColor: t.primaryLight,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -297,17 +294,17 @@ const styles = StyleSheet.create({
   hebrewDate: {
     fontSize: 18,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
     textAlign: 'center',
   },
   gregDate: {
     fontSize: 13,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'center',
   },
   todayPill: {
     marginTop: 4,
-    backgroundColor: colors.primaryLight,
+    backgroundColor: t.primaryLight,
     borderRadius: radius.pill,
     paddingVertical: 3,
     paddingHorizontal: 12,
@@ -315,7 +312,7 @@ const styles = StyleSheet.create({
   todayText: {
     fontSize: 12,
     fontWeight: '700',
-    color: colors.primary,
+    color: t.primary,
   },
 
   // City
@@ -329,12 +326,12 @@ const styles = StyleSheet.create({
   cityName: {
     fontSize: 14,
     fontWeight: '700',
-    color: colors.text,
+    color: t.text,
   },
 
   divider: {
     height: 0.5,
-    backgroundColor: colors.border,
+    backgroundColor: t.border,
     marginBottom: 12,
   },
 
@@ -344,22 +341,22 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 12,
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderRadius: radius.lg,
     paddingVertical: 14,
     paddingHorizontal: 16,
     borderWidth: 0.5,
-    borderColor: colors.border,
+    borderColor: t.border,
   },
   zmanName: {
     flex: 1,
     fontSize: 15,
     fontWeight: '700',
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
   },
   timePill: {
-    backgroundColor: colors.primary,
+    backgroundColor: t.primary,
     borderRadius: radius.md,
     paddingVertical: 5,
     paddingHorizontal: 12,
@@ -369,7 +366,7 @@ const styles = StyleSheet.create({
   timeText: {
     fontSize: 15,
     fontWeight: '800',
-    color: '#fff',
+    color: t.textInverse,
     letterSpacing: 0.5,
   },
 
@@ -380,20 +377,20 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     gap: 12,
   },
-  loadingText: { fontSize: 15, color: colors.textMuted },
-  errorText: { fontSize: 15, color: colors.danger, textAlign: 'center' },
+  loadingText: { fontSize: 15, color: t.textMuted },
+  errorText: { fontSize: 15, color: t.danger, textAlign: 'center' },
   retryBtn: {
-    backgroundColor: colors.primary,
+    backgroundColor: t.primary,
     borderRadius: radius.pill,
     paddingVertical: 10,
     paddingHorizontal: 24,
   },
-  retryText: { fontSize: 14, fontWeight: '700', color: '#fff' },
+  retryText: { fontSize: 14, fontWeight: '700', color: t.textInverse },
 
   // Modal
-  backdrop: { flex: 1, backgroundColor: colors.overlay },
+  backdrop: { flex: 1, backgroundColor: t.overlay },
   sheet: {
-    backgroundColor: colors.background,
+    backgroundColor: t.background,
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
     maxHeight: '60%',
@@ -404,9 +401,9 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     padding: spacing.lg,
     borderBottomWidth: 0.5,
-    borderBottomColor: colors.border,
+    borderBottomColor: t.border,
   },
-  sheetTitle: { fontSize: 17, fontWeight: '700', color: colors.text },
+  sheetTitle: { fontSize: 17, fontWeight: '700', color: t.text },
   cityOption: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -414,9 +411,9 @@ const styles = StyleSheet.create({
     paddingVertical: 16,
     paddingHorizontal: spacing.lg,
     borderBottomWidth: 0.5,
-    borderBottomColor: colors.border,
+    borderBottomColor: t.border,
   },
-  cityOptionActive: { backgroundColor: colors.primaryLight },
-  cityOptionText: { fontSize: 16, color: colors.text, textAlign: 'right' },
-  cityOptionTextActive: { fontWeight: '700', color: colors.primary },
-});
+  cityOptionActive: { backgroundColor: t.primaryLight },
+  cityOptionText: { fontSize: 16, color: t.text, textAlign: 'right' },
+  cityOptionTextActive: { fontWeight: '700', color: t.primary },
+}));

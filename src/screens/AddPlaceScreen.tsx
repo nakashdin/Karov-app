@@ -1,20 +1,11 @@
 import React, { useState } from 'react';
-import {
-  Alert,
-  KeyboardAvoidingView,
-  Platform,
-  Pressable,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TextInput,
-  View,
-} from 'react-native';
+import { Alert, KeyboardAvoidingView, Platform, Pressable, ScrollView, Text, TextInput, View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useNavigation } from '@react-navigation/native';
 import { Screen } from '../components/Screen';
-import { colors, radius, spacing, sizes } from '../theme';
+import { makeStyles, mix, radius, sizes, spacing, useTheme } from '../theme';
+import type { Tokens } from '../theme';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -28,13 +19,15 @@ interface CategoryDef {
   bg: string;
 }
 
-const CATEGORIES: CategoryDef[] = [
-  { key: 'restaurant',    label: 'מסעדה כשרה',  icon: 'restaurant-outline', color: colors.categoryRestaurant, bg: '#FFF4E6' },
-  { key: 'synagogue',     label: 'בית כנסת',    icon: 'business-outline',   color: colors.categorySynagogue,  bg: '#EEF4FB' },
-  { key: 'mikveh',        label: 'מקווה',        icon: 'water-outline',      color: colors.categoryMikveh,     bg: '#E6F4FB' },
-  { key: 'chabad_house',  label: 'בית חב״ד',    icon: 'home-outline',       color: colors.chabad,             bg: '#F0EBF9' },
-  { key: 'tzaddik_grave', label: 'קבר צדיק',    icon: 'flower-outline',     color: colors.tzaddik,            bg: '#F5EFE6' },
-];
+function categoriesFor(theme: Tokens): CategoryDef[] {
+  return [
+  { key: 'restaurant', label: 'מסעדה כשרה', icon: 'restaurant-outline', color: theme.categoryRestaurant, bg: mix(theme.surface, theme.categoryRestaurant, 0.12) },
+  { key: 'synagogue', label: 'בית כנסת', icon: 'business-outline', color: theme.categorySynagogue, bg: mix(theme.surface, theme.categorySynagogue, 0.12) },
+  { key: 'mikveh', label: 'מקווה', icon: 'water-outline', color: theme.categoryMikveh, bg: mix(theme.surface, theme.categoryMikveh, 0.12) },
+  { key: 'chabad_house', label: 'בית חב״ד', icon: 'home-outline', color: theme.chabad, bg: mix(theme.surface, theme.chabad, 0.12) },
+  { key: 'tzaddik_grave', label: 'קבר צדיק', icon: 'flower-outline', color: theme.tzaddik, bg: mix(theme.surface, theme.tzaddik, 0.12) },
+  ];
+}
 
 // Kashrut options for restaurants
 const KASHRUT_OPTIONS = ['מהדרין', 'רגיל', 'חלבי', 'בשרי', 'פרווה'];
@@ -74,6 +67,8 @@ async function saveSubmission(sub: PlaceSubmission) {
 // ─── Screen ───────────────────────────────────────────────────────────────────
 
 export function AddPlaceScreen() {
+  const theme = useTheme();
+  const styles = useStyles();
   const navigation = useNavigation();
   const [step, setStep] = useState<'category' | 'details' | 'success'>('category');
   const [category, setCategory] = useState<Category | null>(null);
@@ -97,7 +92,7 @@ export function AddPlaceScreen() {
   // Mikveh
   const [mikvehType, setMikvehType] = useState('');
 
-  const selectedCat = CATEGORIES.find(c => c.key === category);
+  const selectedCat = categoriesFor(theme).find(c => c.key === category);
 
   const handleSubmit = async () => {
     if (!name.trim() || !address.trim() || !city.trim()) {
@@ -131,7 +126,7 @@ export function AddPlaceScreen() {
       <Screen padded>
         <View style={styles.header}>
           <Pressable onPress={() => navigation.goBack()} hitSlop={10}>
-            <Ionicons name="chevron-forward" size={24} color={colors.primary} />
+            <Ionicons name="chevron-forward" size={24} color={theme.primary} />
           </Pressable>
           <Text style={styles.headerTitle}>הוספת מקום</Text>
           <View style={{ width: 24 }} />
@@ -140,13 +135,13 @@ export function AddPlaceScreen() {
         <Text style={styles.stepLabel}>בחר קטגוריה</Text>
 
         <View style={styles.catGrid}>
-          {CATEGORIES.map(cat => (
+          {categoriesFor(theme).map(cat => (
             <Pressable
               key={cat.key}
-              style={[styles.catCard, { backgroundColor: cat.bg, borderColor: cat.color + '40' }]}
+              style={[styles.catCard, { backgroundColor: cat.bg, borderColor: cat.color }]}
               onPress={() => { setCategory(cat.key); setStep('details'); }}
             >
-              <View style={[styles.catIconBox, { backgroundColor: cat.color + '20' }]}>
+              <View style={[styles.catIconBox, { backgroundColor: cat.bg }]}>
                 <Ionicons name={cat.icon as any} size={28} color={cat.color} />
               </View>
               <Text style={[styles.catLabel, { color: cat.color }]}>{cat.label}</Text>
@@ -163,7 +158,7 @@ export function AddPlaceScreen() {
       <Screen padded>
         <View style={styles.successBox}>
           <View style={styles.successIcon}>
-            <Ionicons name="checkmark-circle" size={72} color={colors.primary} />
+            <Ionicons name="checkmark-circle" size={72} color={theme.primary} />
           </View>
           <Text style={styles.successTitle}>תודה רבה!</Text>
           <Text style={styles.successSub}>
@@ -187,7 +182,7 @@ export function AddPlaceScreen() {
         {/* Header */}
         <View style={[styles.header, { paddingHorizontal: spacing.lg, paddingTop: spacing.lg }]}>
           <Pressable onPress={() => setStep('category')} hitSlop={10}>
-            <Ionicons name="chevron-forward" size={24} color={colors.primary} />
+            <Ionicons name="chevron-forward" size={24} color={theme.primary} />
           </Pressable>
           <View style={styles.headerCenter}>
             <View style={[styles.catBadge, { backgroundColor: selectedCat!.bg }]}>
@@ -212,7 +207,7 @@ export function AddPlaceScreen() {
               value={name}
               onChangeText={setName}
               placeholder="למשל: מסעדת הכרמל"
-              placeholderTextColor={colors.textMuted}
+              placeholderTextColor={theme.textMuted}
               textAlign="right"
             />
           </Field>
@@ -223,7 +218,7 @@ export function AddPlaceScreen() {
               value={address}
               onChangeText={setAddress}
               placeholder="רחוב ומספר"
-              placeholderTextColor={colors.textMuted}
+              placeholderTextColor={theme.textMuted}
               textAlign="right"
             />
           </Field>
@@ -234,7 +229,7 @@ export function AddPlaceScreen() {
               value={city}
               onChangeText={setCity}
               placeholder="שם העיר"
-              placeholderTextColor={colors.textMuted}
+              placeholderTextColor={theme.textMuted}
               textAlign="right"
             />
           </Field>
@@ -245,7 +240,7 @@ export function AddPlaceScreen() {
               value={phone}
               onChangeText={setPhone}
               placeholder="05X-XXXXXXX"
-              placeholderTextColor={colors.textMuted}
+              placeholderTextColor={theme.textMuted}
               keyboardType="phone-pad"
               textAlign="right"
             />
@@ -257,7 +252,7 @@ export function AddPlaceScreen() {
               value={hours}
               onChangeText={setHours}
               placeholder={'א׳–ה׳ 08:00–22:00\nו׳ 08:00–15:00\nשבת סגור'}
-              placeholderTextColor={colors.textMuted}
+              placeholderTextColor={theme.textMuted}
               multiline
               numberOfLines={3}
               textAlign="right"
@@ -280,7 +275,7 @@ export function AddPlaceScreen() {
                   value={kashrutAuthority}
                   onChangeText={setKashrutAuthority}
                   placeholder="למשל: בד״ץ העדה החרדית"
-                  placeholderTextColor={colors.textMuted}
+                  placeholderTextColor={theme.textMuted}
                   textAlign="right"
                 />
               </Field>
@@ -301,7 +296,7 @@ export function AddPlaceScreen() {
                   value={minyanTimes}
                   onChangeText={setMinyanTimes}
                   placeholder={'שחרית: 07:00, 08:00\nמנחה: שקיעה\nערבית: צאת'}
-                  placeholderTextColor={colors.textMuted}
+                  placeholderTextColor={theme.textMuted}
                   multiline
                   numberOfLines={3}
                   textAlign="right"
@@ -327,7 +322,7 @@ export function AddPlaceScreen() {
               value={notes}
               onChangeText={setNotes}
               placeholder="כל מידע נוסף שיעזור לנו..."
-              placeholderTextColor={colors.textMuted}
+              placeholderTextColor={theme.textMuted}
               multiline
               numberOfLines={3}
               textAlign="right"
@@ -338,7 +333,7 @@ export function AddPlaceScreen() {
           {/* Photos placeholder */}
           <Text style={styles.sectionTitle}>תמונות</Text>
           <View style={styles.photosPlaceholder}>
-            <Ionicons name="camera-outline" size={28} color={colors.textMuted} />
+            <Ionicons name="camera-outline" size={28} color={theme.textMuted} />
             <Text style={styles.photosText}>העלאת תמונות תהיה זמינה בקרוב</Text>
           </View>
 
@@ -356,10 +351,12 @@ export function AddPlaceScreen() {
 // ─── Helper components ────────────────────────────────────────────────────────
 
 function Field({ label, children, required }: { label: string; children: React.ReactNode; required?: boolean }) {
+  const theme = useTheme();
+  const styles = useStyles();
   return (
     <View style={styles.field}>
       <Text style={styles.fieldLabel}>
-        {label}{required ? <Text style={{ color: colors.danger }}> *</Text> : null}
+        {label}{required ? <Text style={{ color: theme.danger }}> *</Text> : null}
       </Text>
       {children}
     </View>
@@ -367,6 +364,7 @@ function Field({ label, children, required }: { label: string; children: React.R
 }
 
 function ChipSelector({ options, value, onChange }: { options: string[]; value: string; onChange: (v: string) => void }) {
+  const styles = useStyles();
   return (
     <View style={styles.chips}>
       {options.map(opt => {
@@ -387,7 +385,7 @@ function ChipSelector({ options, value, onChange }: { options: string[]; value: 
 
 // ─── Styles ───────────────────────────────────────────────────────────────────
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   header: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -397,7 +395,7 @@ const styles = StyleSheet.create({
   headerTitle: {
     fontSize: 18,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
   },
   headerCenter: { flex: 1, alignItems: 'center' },
   catBadge: {
@@ -413,7 +411,7 @@ const styles = StyleSheet.create({
   stepLabel: {
     fontSize: 22,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
     marginBottom: spacing.xl,
   },
@@ -454,7 +452,7 @@ const styles = StyleSheet.create({
   sectionTitle: {
     fontSize: 13,
     fontWeight: '700',
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
     marginTop: spacing.xl,
     marginBottom: spacing.sm,
@@ -468,18 +466,18 @@ const styles = StyleSheet.create({
   fieldLabel: {
     fontSize: 14,
     fontWeight: '600',
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
   },
   input: {
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderRadius: radius.md,
     borderWidth: 0.5,
-    borderColor: colors.border,
+    borderColor: t.border,
     paddingVertical: 13,
     paddingHorizontal: 14,
     fontSize: 15,
-    color: colors.text,
+    color: t.text,
     minHeight: sizes.control,
   },
   inputMulti: {
@@ -497,30 +495,30 @@ const styles = StyleSheet.create({
   chip: {
     borderRadius: radius.pill,
     borderWidth: 1,
-    borderColor: colors.border,
+    borderColor: t.border,
     paddingVertical: 7,
     paddingHorizontal: 14,
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
   },
   chipActive: {
-    backgroundColor: colors.primaryLight,
-    borderColor: colors.primary,
+    backgroundColor: t.primaryLight,
+    borderColor: t.primary,
   },
   chipText: {
     fontSize: 13,
     fontWeight: '600',
-    color: colors.textMuted,
+    color: t.textMuted,
   },
   chipTextActive: {
-    color: colors.primary,
+    color: t.primary,
   },
 
   // Photos
   photosPlaceholder: {
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderRadius: radius.lg,
     borderWidth: 1,
-    borderColor: colors.border,
+    borderColor: t.border,
     borderStyle: 'dashed',
     padding: spacing.xl,
     alignItems: 'center',
@@ -529,13 +527,13 @@ const styles = StyleSheet.create({
   },
   photosText: {
     fontSize: 13,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'center',
   },
 
   // Submit
   primaryBtn: {
-    backgroundColor: colors.primary,
+    backgroundColor: t.primary,
     borderRadius: radius.pill,
     height: sizes.button,
     alignItems: 'center',
@@ -544,7 +542,7 @@ const styles = StyleSheet.create({
   primaryBtnText: {
     fontSize: 16,
     fontWeight: '800',
-    color: '#fff',
+    color: t.textInverse,
   },
 
   // Success
@@ -561,12 +559,12 @@ const styles = StyleSheet.create({
   successTitle: {
     fontSize: 28,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
   },
   successSub: {
     fontSize: 16,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'center',
     lineHeight: 26,
   },
-});
+}));

@@ -1,5 +1,6 @@
 import { buildLeafletHtml, ISRAEL_CENTER, DEFAULT_ZOOM } from '../leafletHtml';
 import { Place } from '../../../types';
+import { lightTokens } from '../../../theme';
 
 const place = (over: Partial<Place> & Pick<Place, 'id' | 'name'>): Place =>
   ({
@@ -17,7 +18,7 @@ const PLACES = [
 ];
 
 describe('buildLeafletHtml', () => {
-  const html = buildLeafletHtml(PLACES, null);
+  const html = buildLeafletHtml(PLACES, null, lightTokens);
 
   it('is a complete standalone document', () => {
     expect(html).toContain('<!DOCTYPE html>');
@@ -51,16 +52,16 @@ describe('buildLeafletHtml', () => {
   });
 
   it('centres on the user when a location is given', () => {
-    const withUser = buildLeafletHtml(PLACES, { latitude: 31.7, longitude: 35.2 });
+    const withUser = buildLeafletHtml(PLACES, { latitude: 31.7, longitude: 35.2 }, lightTokens);
     expect(withUser).toContain('31.7');
   });
 
   it('honours an explicit centre and zoom', () => {
-    const focused = buildLeafletHtml(PLACES, null, { initialCenter: [32.1, 34.9], initialZoom: 15 });
+    const focused = buildLeafletHtml(PLACES, null, lightTokens, { initialCenter: [32.1, 34.9], initialZoom: 15 });
     expect(focused).toContain('[32.1,34.9]');
   });
 
   it('handles an empty place list', () => {
-    expect(() => buildLeafletHtml([], null)).not.toThrow();
+    expect(() => buildLeafletHtml([], null, lightTokens)).not.toThrow();
   });
 });

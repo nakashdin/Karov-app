@@ -1,6 +1,6 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import { colors } from '../theme';
+import { View, Text } from 'react-native';
+import { makeStyles, useTheme } from '../theme';
 
 interface LogoProps {
   size?: number;
@@ -9,13 +9,15 @@ interface LogoProps {
 }
 
 export function Logo({ size = 64, variant = 'light' }: LogoProps) {
+  const theme = useTheme();
+  const styles = useStyles();
   const borderRadius = size * 0.25;
   const fontSize = size * 0.56;
   const lineHeight = size * 0.72;
   const dotSize = size * 0.14;
   const dotOffset = size * 0.1;
 
-  const bgColor = variant === 'dark' ? 'rgba(255,255,255,0.15)' : colors.primary;
+  const bgColor = variant === 'dark' ? theme.overlayLightSoft : theme.primary;
 
   return (
     <View
@@ -41,18 +43,18 @@ export function Logo({ size = 64, variant = 'light' }: LogoProps) {
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   box: {
     alignItems: 'center',
     justifyContent: 'center',
   },
   letter: {
-    color: '#FFFFFF',
+    color: t.textInverse,
     fontWeight: '900',
     textAlign: 'center',
   },
   dot: {
     position: 'absolute',
-    backgroundColor: '#C8A752',
+    backgroundColor: t.gold,
   },
-});
+}));

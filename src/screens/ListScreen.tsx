@@ -1,13 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import {
-  FlatList,
-  Pressable,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TextInput,
-  View,
-} from 'react-native';
+import { FlatList, Pressable, ScrollView, Text, TextInput, View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { useNavigation, useRoute, RouteProp } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
@@ -19,7 +11,7 @@ import { FilterSheet } from '../components/FilterSheet';
 import { BirkatHamazonModal } from '../components/BirkatHamazonModal';
 import { MapView } from '../components/map/MapView';
 import { PlaceBottomCard } from '../components/map/PlaceBottomCard';
-import { colors, radius, shadow, spacing } from '../theme';
+import { makeStyles, radius, shadow, spacing, useTheme } from '../theme';
 import { useLanguage } from '../context/LanguageContext';
 import { usePlaces } from '../hooks/usePlaces';
 import { useSharedLocation, getCachedLocation } from '../context/LocationContext';
@@ -44,6 +36,8 @@ const EAT_SUB_TABS: Array<{ emoji: string; label: string; placeType: PlaceType |
 ];
 
 export function ListScreen() {
+  const theme = useTheme();
+  const styles = useStyles();
   const { t } = useLanguage();
   const navigation = useNavigation<Nav>();
   const route = useRoute<ListRoute>();
@@ -177,7 +171,7 @@ export function ListScreen() {
     <Screen padded>
       {selectSynagogue && (
         <View style={styles.selectionBanner}>
-          <Ionicons name="business-outline" size={16} color={colors.categorySynagogue} />
+          <Ionicons name="business-outline" size={16} color={theme.categorySynagogue} />
           <Text style={styles.selectionBannerText}>בחר בית כנסת מועדף — הוא יופיע בכרטיס הבית</Text>
         </View>
       )}
@@ -197,7 +191,7 @@ export function ListScreen() {
           }}
           hitSlop={12}
         >
-          <Ionicons name="chevron-forward" size={20} color={colors.primary} />
+          <Ionicons name="chevron-forward" size={20} color={theme.primary} />
           <Text style={styles.backText}>חזרה</Text>
         </Pressable>
         <View style={styles.titleBlock}>
@@ -223,7 +217,7 @@ export function ListScreen() {
           <Ionicons
             name={viewMode === 'list' ? 'map-outline' : 'list-outline'}
             size={20}
-            color={colors.primary}
+            color={theme.primary}
           />
         </Pressable>
       </View>
@@ -231,11 +225,11 @@ export function ListScreen() {
       {/* Search pill */}
       <View>
         <View style={[styles.searchPill, searchFocused && styles.searchPillFocused]}>
-          <Ionicons name="search" size={18} color={colors.textMuted} />
+          <Ionicons name="search" size={18} color={theme.textMuted} />
           <TextInput
             style={styles.searchInput}
             placeholder="חיפוש לפי שם, רחוב או עיר..."
-            placeholderTextColor={colors.textMuted}
+            placeholderTextColor={theme.textMuted}
             ref={searchRef}
             value={inputText}
             onChangeText={(v) => { setInputText(v); setShowSuggestions(true); }}
@@ -246,7 +240,7 @@ export function ListScreen() {
           />
           {inputText.length > 0 && (
             <Pressable onPress={() => { setInputText(''); setFilter('query', ''); setShowSuggestions(false); }} hitSlop={8}>
-              <Ionicons name="close-circle" size={18} color={colors.textMuted} />
+              <Ionicons name="close-circle" size={18} color={theme.textMuted} />
             </Pressable>
           )}
           <View style={styles.pillDivider} />
@@ -254,7 +248,7 @@ export function ListScreen() {
             <Ionicons
               name="menu"
               size={22}
-              color={activeCount > 0 ? colors.primary : colors.textMuted}
+              color={activeCount > 0 ? theme.primary : theme.textMuted}
             />
             {activeCount > 0 && <View style={styles.filterDot} />}
           </Pressable>
@@ -271,7 +265,7 @@ export function ListScreen() {
                   setShowSuggestions(false);
                 }}
               >
-                <Ionicons name="search-outline" size={13} color={colors.textMuted} />
+                <Ionicons name="search-outline" size={13} color={theme.textMuted} />
                 <Text style={styles.suggestionText} numberOfLines={1}>{s}</Text>
               </Pressable>
             ))}
@@ -333,7 +327,7 @@ export function ListScreen() {
                 <Ionicons
                   name={tab.icon as any}
                   size={14}
-                  color={active ? '#fff' : colors.textMuted}
+                  color={active ? theme.textInverse : theme.textMuted}
                 />
                 <Text style={[styles.tabText, active && styles.tabTextActive]}>
                   {tab.label}
@@ -355,13 +349,13 @@ export function ListScreen() {
           {filters.category && (
             <Pressable style={styles.activeChip} onPress={() => setFilter('category', null)}>
               <Text style={styles.activeChipText}>{categoryLabel[filters.category]}</Text>
-              <Ionicons name="close" size={12} color={colors.primary} />
+              <Ionicons name="close" size={12} color={theme.primary} />
             </Pressable>
           )}
           {filters.mehadrinOnly && (
             <Pressable style={styles.activeChip} onPress={() => setFilter('mehadrinOnly', false)}>
               <Text style={styles.activeChipText}>מהדרין בלבד</Text>
-              <Ionicons name="close" size={12} color={colors.primary} />
+              <Ionicons name="close" size={12} color={theme.primary} />
             </Pressable>
           )}
           {filters.kosherAuthorityGroup && (
@@ -369,25 +363,25 @@ export function ListScreen() {
               <Text style={styles.activeChipText}>
                 {KOSHER_BODY_LABEL[filters.kosherAuthorityGroup] ?? filters.kosherAuthorityGroup}
               </Text>
-              <Ionicons name="close" size={12} color={colors.primary} />
+              <Ionicons name="close" size={12} color={theme.primary} />
             </Pressable>
           )}
           {filters.cuisineTag && (
             <Pressable style={styles.activeChip} onPress={() => setFilter('cuisineTag', null)}>
               <Text style={styles.activeChipText}>{filters.cuisineTag}</Text>
-              <Ionicons name="close" size={12} color={colors.primary} />
+              <Ionicons name="close" size={12} color={theme.primary} />
             </Pressable>
           )}
           {filters.cityId && (
             <Pressable style={styles.activeChip} onPress={() => setFilter('cityId', null)}>
               <Text style={styles.activeChipText}>{filters.cityId}</Text>
-              <Ionicons name="close" size={12} color={colors.primary} />
+              <Ionicons name="close" size={12} color={theme.primary} />
             </Pressable>
           )}
           {sortByDistance && filters.distanceKm !== 20 && filters.distanceKm !== null && (
             <Pressable style={styles.activeChip} onPress={() => setFilter('distanceKm', 20)}>
               <Text style={styles.activeChipText}>{filters.distanceKm} ק״מ</Text>
-              <Ionicons name="close" size={12} color={colors.primary} />
+              <Ionicons name="close" size={12} color={theme.primary} />
             </Pressable>
           )}
         </ScrollView>
@@ -403,20 +397,20 @@ export function ListScreen() {
               : requestLocation
           }
         >
-          <Ionicons name="location-outline" size={16} color="#92400e" />
+          <Ionicons name="location-outline" size={16} color={theme.warningText} />
           <Text style={styles.locationBannerText}>
             {locationStatus === 'denied'
               ? 'המיקום חסום — לחץ כאן כדי לפתוח את ההגדרות'
               : 'הפעל שירותי מיקום כדי לראות מקומות קרובים אליך'}
           </Text>
-          <Ionicons name="chevron-back" size={14} color="#92400e" />
+          <Ionicons name="chevron-back" size={14} color={theme.warningText} />
         </Pressable>
       )}
 
       <View style={styles.metaRow}>
         <Text style={styles.resultCount}>{t.list.resultsCount(sorted.length)}</Text>
         <View style={styles.sortToggle}>
-          <Ionicons name={sortByDistance ? 'navigate' : 'text'} size={14} color={colors.primary} />
+          <Ionicons name={sortByDistance ? 'navigate' : 'text'} size={14} color={theme.primary} />
           <Text style={styles.sortText}>
             {sortByDistance ? t.list.sortByDistance : t.list.sortByName}
           </Text>
@@ -481,12 +475,12 @@ export function ListScreen() {
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   selectionBanner: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 8,
-    backgroundColor: '#E8F1FC',
+    backgroundColor: t.accent.blue.tint,
     borderRadius: radius.md,
     paddingVertical: 10,
     paddingHorizontal: 14,
@@ -497,14 +491,14 @@ const styles = StyleSheet.create({
     flex: 1,
     fontSize: 13,
     fontWeight: '600',
-    color: colors.categorySynagogue,
+    color: t.categorySynagogue,
     textAlign: 'right',
   },
   viewToggle: {
     width: 34,
     height: 34,
     borderRadius: radius.md,
-    backgroundColor: colors.primaryLight,
+    backgroundColor: t.primaryLight,
     alignItems: 'center',
     justifyContent: 'center',
     flexShrink: 0,
@@ -525,7 +519,7 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontWeight: '800',
     letterSpacing: -0.8,
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
     flex: 1,
   },
@@ -533,7 +527,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 2,
-    backgroundColor: colors.primaryLight,
+    backgroundColor: t.primaryLight,
     paddingVertical: 6,
     paddingHorizontal: 10,
     borderRadius: radius.pill,
@@ -541,7 +535,7 @@ const styles = StyleSheet.create({
   backText: {
     fontSize: 14,
     fontWeight: '600',
-    color: colors.primary,
+    color: t.primary,
   },
   titleBlock: {
     flex: 1,
@@ -551,7 +545,7 @@ const styles = StyleSheet.create({
   birkatBtnText: {
     fontSize: 12,
     fontWeight: '600',
-    color: colors.primary,
+    color: t.primary,
     textAlign: 'right',
   },
 
@@ -559,29 +553,29 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: spacing.sm,
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderRadius: radius.pill,
     paddingVertical: 13,
     paddingHorizontal: spacing.lg,
     marginBottom: spacing.sm,
     borderWidth: 1,
-    borderColor: colors.border,
+    borderColor: t.border,
     ...shadow.card,
   },
   searchPillFocused: {
-    borderColor: colors.primary,
+    borderColor: t.primary,
     borderWidth: 1.5,
   },
   searchInput: {
     flex: 1,
     fontSize: 15,
-    color: colors.text,
+    color: t.text,
     paddingVertical: 0,
   },
   pillDivider: {
     width: 1,
     height: 16,
-    backgroundColor: colors.border,
+    backgroundColor: t.border,
   },
   filterTrigger: {
     alignItems: 'center',
@@ -594,9 +588,9 @@ const styles = StyleSheet.create({
     width: 7,
     height: 7,
     borderRadius: 4,
-    backgroundColor: colors.primary,
+    backgroundColor: t.primary,
     borderWidth: 1,
-    borderColor: colors.surface,
+    borderColor: t.surface,
   },
 
   activeFiltersScroll: {
@@ -616,21 +610,21 @@ const styles = StyleSheet.create({
     paddingVertical: 5,
     paddingHorizontal: 10,
     borderRadius: radius.pill,
-    backgroundColor: colors.primaryLight,
+    backgroundColor: t.primaryLight,
     borderWidth: 1,
-    borderColor: colors.primary,
+    borderColor: t.primary,
   },
   activeChipText: {
     fontSize: 12,
     fontWeight: '700',
-    color: colors.primary,
+    color: t.primary,
   },
 
   suggestionBox: {
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderRadius: radius.lg,
     borderWidth: 1,
-    borderColor: colors.border,
+    borderColor: t.border,
     marginTop: 4,
     marginBottom: spacing.xs,
     overflow: 'hidden',
@@ -643,12 +637,12 @@ const styles = StyleSheet.create({
     paddingVertical: 11,
     paddingHorizontal: 16,
     borderBottomWidth: 0.5,
-    borderBottomColor: colors.border,
+    borderBottomColor: t.border,
   },
   suggestionText: {
     flex: 1,
     fontSize: 14,
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
   },
 
@@ -670,21 +664,21 @@ const styles = StyleSheet.create({
     paddingVertical: 7,
     paddingHorizontal: 13,
     borderRadius: radius.pill,
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderWidth: 1,
-    borderColor: colors.border,
+    borderColor: t.border,
   },
   tabActive: {
-    backgroundColor: colors.primary,
-    borderColor: colors.primary,
+    backgroundColor: t.primary,
+    borderColor: t.primary,
   },
   tabText: {
     fontSize: 12,
     fontWeight: '600',
-    color: colors.textMuted,
+    color: t.textMuted,
   },
   tabTextActive: {
-    color: '#fff',
+    color: t.textInverse,
   },
   tabEmoji: {
     fontSize: 13,
@@ -694,19 +688,19 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 8,
-    backgroundColor: '#fef3c7',
+    backgroundColor: t.warningSurface,
     borderRadius: 10,
     paddingVertical: 10,
     paddingHorizontal: 14,
     marginBottom: spacing.md,
     borderWidth: 1,
-    borderColor: '#fde68a',
+    borderColor: t.warningBorder,
   },
   locationBannerText: {
     flex: 1,
     fontSize: 13,
     fontWeight: '500',
-    color: '#92400e',
+    color: t.warningText,
     textAlign: 'right',
   },
 
@@ -719,7 +713,7 @@ const styles = StyleSheet.create({
   resultCount: {
     fontSize: 13,
     fontWeight: '500',
-    color: colors.textMuted,
+    color: t.textMuted,
   },
   sortToggle: {
     flexDirection: 'row',
@@ -731,7 +725,7 @@ const styles = StyleSheet.create({
   sortText: {
     fontSize: 13,
     fontWeight: '700',
-    color: colors.primary,
+    color: t.primary,
   },
 
   listContent: {
@@ -739,5 +733,5 @@ const styles = StyleSheet.create({
     flexGrow: 1,
   },
 
-});
+}));
 

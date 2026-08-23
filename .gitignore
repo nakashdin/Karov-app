@@ -49,6 +49,8 @@ importers/tzohar/cert-cache/
 # Historical dataset snapshots — kept on disk, out of git (see docs/ARCHITECTURE_REVIEW.md P1-11)
 data-backups/
 *.bak-location-shape
+*.bak-dedupe
+*.bak-orphan-cities
 
 # Store credentials — never commit (referenced by eas.json submit profiles)
 secrets/

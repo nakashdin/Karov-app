@@ -1,7 +1,8 @@
 import React from 'react';
-import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Pressable, ScrollView, Text, View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { colors, radius, shadow, spacing } from '../../theme';
+import { makeStyles, mix, radius, shadow, spacing, useTheme } from '../../theme';
+import type { Tokens } from '../../theme';
 import { Place, PlaceType, GeoPoint } from '../../types';
 import { distanceKm } from '../../utils/geo';
 
@@ -16,35 +17,31 @@ function fmtDistance(km: number): string {
   return `${km.toFixed(1)} ק"מ`;
 }
 
-const TYPE_BG: Partial<Record<PlaceType, string>> = {
-  restaurant: '#FEF3E2',
-  fast_food: '#FEE8E2',
-  cafe: '#F0EAF8',
-  coffee_cart: '#EBF5E6',
-  juice_bar: '#E8F5E9',
-  ice_cream_parlor: '#FCF3FB',
-  bakery: '#FFF8E6',
-  winery: '#F8EAF0',
-  synagogue: '#E8F1FC',
-  mikveh: '#E5F5FD',
-  chabad_house: '#F0EBF8',
-  tzaddik_grave: '#F5EEEA',
-};
+function typeColorFor(theme: Tokens): Partial<Record<PlaceType, string>> {
+  return {
+    restaurant: theme.categoryRestaurant,
+    fast_food: theme.categoryFastFood,
+    cafe: theme.categoryCafe,
+    coffee_cart: theme.categoryCoffeeCart,
+    juice_bar: theme.categoryFastFood,
+    ice_cream_parlor: theme.categoryCafe,
+    bakery: theme.categoryRestaurant,
+    winery: theme.categoryWinery,
+    synagogue: theme.categorySynagogue,
+    mikveh: theme.categoryMikveh,
+    chabad_house: theme.chabad,
+    tzaddik_grave: theme.tzaddik,
+  };
+}
 
-const TYPE_COLOR: Partial<Record<PlaceType, string>> = {
-  restaurant: colors.categoryRestaurant,
-  fast_food: colors.categoryFastFood,
-  cafe: colors.categoryCafe,
-  coffee_cart: colors.categoryCoffeeCart,
-  juice_bar: colors.categoryFastFood,
-  ice_cream_parlor: colors.categoryCafe,
-  bakery: colors.categoryRestaurant,
-  winery: colors.categoryWinery,
-  synagogue: colors.categorySynagogue,
-  mikveh: colors.categoryMikveh,
-  chabad_house: colors.chabad,
-  tzaddik_grave: colors.tzaddik,
-};
+/** A quiet tint of the type colour — mixed toward the surface so it stays
+ * correct in both colour schemes (the surface itself flips light/dark). */
+function typeBgFor(theme: Tokens): Partial<Record<PlaceType, string>> {
+  const colorOf = typeColorFor(theme);
+  return Object.fromEntries(
+    Object.entries(colorOf).map(([type, color]) => [type, mix(theme.surface, color as string, 0.12)]),
+  ) as Partial<Record<PlaceType, string>>;
+}
 
 const TYPE_ICON: Partial<Record<PlaceType, keyof typeof Ionicons.glyphMap>> = {
   restaurant: 'restaurant',
@@ -77,6 +74,8 @@ const TYPE_LABEL: Partial<Record<PlaceType, string>> = {
 };
 
 export function NearbyHorizontalList({ places, location, onPress }: Props) {
+  const theme = useTheme();
+  const styles = useStyles();
   if (places.length === 0) return null;
 
   return (
@@ -88,8 +87,8 @@ export function NearbyHorizontalList({ places, location, onPress }: Props) {
       {places.map((place) => {
         const distKm = location ? distanceKm(location, place.location) : null;
         const type = place.type;
-        const bg = TYPE_BG[type] ?? '#F5F5F7';
-        const iconColor = TYPE_COLOR[type] ?? colors.primary;
+        const bg = typeBgFor(theme)[type] ?? theme.surfaceMuted;
+        const iconColor = typeColorFor(theme)[type] ?? theme.primary;
         const icon = TYPE_ICON[type] ?? 'help-circle-outline';
         const typeLabel = TYPE_LABEL[type] ?? '';
 
@@ -127,7 +126,7 @@ export function NearbyHorizontalList({ places, location, onPress }: Props) {
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   list: {
     paddingHorizontal: spacing.lg,
     gap: 10,
@@ -135,7 +134,7 @@ const styles = StyleSheet.create({
   },
   card: {
     width: 148,
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderRadius: radius.lg,
     overflow: 'hidden',
     ...shadow.card,
@@ -153,7 +152,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 8,
     left: 8,
-    backgroundColor: 'rgba(0,0,0,0.52)',
+    backgroundColor: t.overlayMedia,
     borderRadius: radius.pill,
     paddingVertical: 3,
     paddingHorizontal: 7,
@@ -161,7 +160,7 @@ const styles = StyleSheet.create({
   distText: {
     fontSize: 10,
     fontWeight: '700',
-    color: '#fff',
+    color: t.textInverse,
   },
   info: {
     padding: 10,
@@ -170,12 +169,12 @@ const styles = StyleSheet.create({
   name: {
     fontSize: 13,
     fontWeight: '700',
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
   },
   meta: {
     fontSize: 11,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
   },
   starsRow: {
@@ -191,6 +190,6 @@ const styles = StyleSheet.create({
   rating: {
     fontSize: 12,
     fontWeight: '700',
-    color: colors.text,
+    color: t.text,
   },
-});
+}));

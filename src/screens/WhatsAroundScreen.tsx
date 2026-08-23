@@ -1,11 +1,12 @@
 import React, { useMemo, useState } from 'react';
-import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Pressable, ScrollView, Text, View } from 'react-native';
 import Slider from '@react-native-community/slider';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { Screen } from '../components/Screen';
-import { colors, radius, shadow, spacing } from '../theme';
+import { makeStyles, radius, shadow, spacing, useTheme } from '../theme';
+import type { Tokens } from '../theme';
 import { usePlaces } from '../hooks/usePlaces';
 import { useSharedLocation } from '../context/LocationContext';
 import { useFilters } from '../context/FiltersContext';
@@ -17,23 +18,30 @@ type Nav = NativeStackNavigationProp<RootStackParamList>;
 
 const FOOD_TYPES: PlaceType[] = ['restaurant', 'fast_food', 'cafe', 'coffee_cart'];
 
-const CATEGORIES: Array<{
+type WhatsAroundCategory = {
   key: string;
   label: string;
   emoji: string;
   color: string;
   types: PlaceType[];
-}> = [
-  { key: 'food',         label: 'לאכול',        emoji: '🍽',  color: colors.categoryRestaurant, types: FOOD_TYPES },
-  { key: 'synagogue',    label: 'בתי כנסת',      emoji: '🕍',  color: colors.categorySynagogue,  types: ['synagogue'] },
-  { key: 'mikveh',       label: 'מקוואות',       emoji: '💧',  color: colors.categoryMikveh,     types: ['mikveh'] },
-  { key: 'chabad_house', label: 'בתי חב״ד',      emoji: '🕎',  color: colors.chabad,             types: ['chabad_house'] },
-  { key: 'tzaddik_grave',label: 'קברי צדיקים',   emoji: '🪦',  color: colors.tzaddik,            types: ['tzaddik_grave'] },
-];
+};
+
+function categoriesFor(theme: Tokens): WhatsAroundCategory[] {
+  return [
+    { key: 'food',         label: 'לאכול',        emoji: '🍽',  color: theme.categoryRestaurant, types: FOOD_TYPES },
+    { key: 'synagogue',    label: 'בתי כנסת',      emoji: '🕍',  color: theme.categorySynagogue,  types: ['synagogue'] },
+    { key: 'mikveh',       label: 'מקוואות',       emoji: '💧',  color: theme.categoryMikveh,     types: ['mikveh'] },
+    { key: 'chabad_house', label: 'בתי חב״ד',      emoji: '🕎',  color: theme.chabad,             types: ['chabad_house'] },
+    { key: 'tzaddik_grave',label: 'קברי צדיקים',   emoji: '🪦',  color: theme.tzaddik,            types: ['tzaddik_grave'] },
+  ];
+}
 
 const MAX_KM = 100;
 
 export function WhatsAroundScreen() {
+  const theme = useTheme();
+  const styles = useStyles();
+  const categories = categoriesFor(theme);
   const navigation = useNavigation<Nav>();
   const { places } = usePlaces();
   const { location } = useSharedLocation();
@@ -49,24 +57,24 @@ export function WhatsAroundScreen() {
 
   const counts = useMemo(() => {
     const map: Record<string, number> = {};
-    for (const cat of CATEGORIES) {
+    for (const cat of categories) {
       map[cat.key] = inRadius.filter(p => cat.types.includes(p.type)).length;
     }
     return map;
-  }, [inRadius]);
+  }, [inRadius, categories]);
 
   const nearest = useMemo(() => {
     const map: Record<string, number | null> = {};
-    for (const cat of CATEGORIES) {
+    for (const cat of categories) {
       if (!location) { map[cat.key] = null; continue; }
       const inCat = inRadius.filter(p => cat.types.includes(p.type));
       if (!inCat.length) { map[cat.key] = null; continue; }
       map[cat.key] = Math.min(...inCat.map(p => distanceKm(location, p.location)));
     }
     return map;
-  }, [inRadius, location]);
+  }, [inRadius, location, categories]);
 
-  const handlePress = (cat: typeof CATEGORIES[0]) => {
+  const handlePress = (cat: WhatsAroundCategory) => {
     if (cat.key === 'food') {
       navigation.navigate('FoodList', radiusKm ? { radiusKm } : undefined);
       return;
@@ -87,7 +95,7 @@ export function WhatsAroundScreen() {
             style={({ pressed }) => [styles.backBtn, pressed && styles.pressed]}
             onPress={() => navigation.goBack()}
           >
-            <Ionicons name="chevron-forward" size={22} color={colors.text} />
+            <Ionicons name="chevron-forward" size={22} color={theme.text} />
           </Pressable>
           <View style={styles.titleBlock}>
             <Text style={styles.title}>מה יש סביבי?</Text>
@@ -98,7 +106,7 @@ export function WhatsAroundScreen() {
         {/* Radius filter */}
         <View style={styles.radiusSection}>
           <View style={styles.radiusRow}>
-            <Ionicons name="radio-button-on-outline" size={14} color={colors.primary} />
+            <Ionicons name="radio-button-on-outline" size={14} color={theme.primary} />
             <Text style={styles.radiusLabel}>טווח חיפוש</Text>
             <Text style={styles.radiusValue}>
               {radiusKm === null ? 'הכל' : `${radiusKm} ק״מ`}
@@ -116,9 +124,9 @@ export function WhatsAroundScreen() {
               step={1}
               value={sliderValue}
               disabled={!location}
-              minimumTrackTintColor={location ? colors.primary : colors.border}
-              maximumTrackTintColor={colors.border}
-              thumbTintColor={location ? colors.primary : colors.border}
+              minimumTrackTintColor={location ? theme.primary : theme.border}
+              maximumTrackTintColor={theme.border}
+              thumbTintColor={location ? theme.primary : theme.border}
               onValueChange={v => {
                 setSliderValue(v);
                 setRadiusKm(v === 0 || v >= MAX_KM ? null : v);
@@ -132,7 +140,7 @@ export function WhatsAroundScreen() {
         </View>
 
         {/* Category cards */}
-        {CATEGORIES.map(cat => {
+        {categories.map(cat => {
           const dist  = nearest[cat.key];
           const count = counts[cat.key] ?? 0;
           return (
@@ -151,7 +159,7 @@ export function WhatsAroundScreen() {
                   <Text style={styles.nearest}>הקרוב ביותר: {formatDist(dist)}</Text>
                 )}
               </View>
-              <Ionicons name="chevron-back" size={20} color={colors.textMuted} />
+              <Ionicons name="chevron-back" size={20} color={theme.textMuted} />
             </Pressable>
           );
         })}
@@ -160,7 +168,7 @@ export function WhatsAroundScreen() {
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   content: {
     padding: spacing.lg,
     paddingBottom: spacing.xxl,
@@ -176,7 +184,7 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: radius.md,
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     alignItems: 'center',
     justifyContent: 'center',
     flexShrink: 0,
@@ -190,18 +198,18 @@ const styles = StyleSheet.create({
     fontSize: 22,
     fontWeight: '800',
     letterSpacing: -0.5,
-    color: colors.text,
+    color: t.text,
   },
   subtitle: {
     fontSize: 13,
-    color: colors.textMuted,
+    color: t.textMuted,
     marginTop: 2,
   },
   pressed: { opacity: 0.85 },
 
   // Radius filter
   radiusSection: {
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderRadius: radius.lg,
     paddingHorizontal: spacing.lg,
     paddingTop: spacing.md,
@@ -217,20 +225,20 @@ const styles = StyleSheet.create({
   radiusLabel: {
     fontSize: 13,
     fontWeight: '700',
-    color: colors.text,
+    color: t.text,
     flex: 1,
     textAlign: 'right',
   },
   radiusValue: {
     fontSize: 14,
     fontWeight: '800',
-    color: colors.primary,
+    color: t.primary,
     minWidth: 56,
     textAlign: 'left',
   },
   noLocNote: {
     fontSize: 11,
-    color: colors.danger,
+    color: t.danger,
   },
   slider: {
     width: '100%',
@@ -243,7 +251,7 @@ const styles = StyleSheet.create({
   },
   sliderEnd: {
     fontSize: 11,
-    color: colors.textMuted,
+    color: t.textMuted,
   },
 
   // Category card
@@ -251,7 +259,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: spacing.md,
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderRadius: radius.lg,
     padding: spacing.lg,
     ...shadow.card,
@@ -274,15 +282,15 @@ const styles = StyleSheet.create({
     fontSize: 17,
     fontWeight: '700',
     letterSpacing: -0.3,
-    color: colors.text,
+    color: t.text,
   },
   countText: {
     fontSize: 13,
-    color: colors.textMuted,
+    color: t.textMuted,
   },
   nearest: {
     fontSize: 12,
-    color: colors.primary,
+    color: t.primary,
     fontWeight: '600',
   },
-});
+}));

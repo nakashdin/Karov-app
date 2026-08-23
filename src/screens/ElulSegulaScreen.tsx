@@ -1,9 +1,9 @@
 import React from 'react';
-import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Pressable, ScrollView, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { useNavigation } from '@react-navigation/native';
-import { colors, radius, shadow, spacing } from '../theme';
+import { makeStyles, radius, shadow, spacing, useTheme } from '../theme';
 import { RATZON_DAYS, getRatzonDay } from '../data/selichot';
 import { numToHebrew } from '../data/tehillim';
 import { TEHILLIM_TEXT } from '../data/tehillimText';
@@ -41,6 +41,8 @@ const SOURCES: string[] = [
 ];
 
 export function ElulSegulaScreen() {
+  const theme = useTheme();
+  const styles = useStyles();
   const navigation = useNavigation();
   const insets = useSafeAreaInsets();
   const jewishDay = useJewishDayInfo();
@@ -59,7 +61,7 @@ export function ElulSegulaScreen() {
           hitSlop={8}
           accessibilityLabel="חזור"
         >
-          <Ionicons name="chevron-forward" size={22} color={colors.text} />
+          <Ionicons name="chevron-forward" size={22} color={theme.text} />
         </Pressable>
       </View>
 
@@ -123,10 +125,10 @@ export function ElulSegulaScreen() {
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   root: {
     flex: 1,
-    backgroundColor: colors.background,
+    backgroundColor: t.background,
   },
   header: {
     flexDirection: 'row',
@@ -141,7 +143,7 @@ const styles = StyleSheet.create({
   headerTitle: {
     fontSize: 17,
     fontWeight: '600',
-    color: colors.text,
+    color: t.text,
   },
   backBtn: {
     width: 30,
@@ -156,7 +158,7 @@ const styles = StyleSheet.create({
   },
 
   hero: {
-    backgroundColor: '#E9F3ED',
+    backgroundColor: t.accent.sage.tint,
     borderRadius: radius.lg,
     padding: spacing.lg,
     alignItems: 'center',
@@ -168,12 +170,12 @@ const styles = StyleSheet.create({
   heroTitle: {
     fontSize: 21,
     fontWeight: '700',
-    color: colors.primaryDark,
+    color: t.primaryDark,
     textAlign: 'center',
   },
   heroSub: {
     fontSize: 13,
-    color: colors.textMuted,
+    color: t.textMuted,
   },
   counter: {
     alignSelf: 'stretch',
@@ -183,23 +185,23 @@ const styles = StyleSheet.create({
   counterText: {
     fontSize: 14,
     fontWeight: '600',
-    color: colors.primary,
+    color: t.primary,
     textAlign: 'center',
   },
   progressTrack: {
     height: 6,
     borderRadius: 3,
-    backgroundColor: '#CFE5D8',
+    backgroundColor: t.accent.sage.tintStrong,
     overflow: 'hidden',
   },
   progressFill: {
     height: '100%',
     borderRadius: 3,
-    backgroundColor: colors.primary,
+    backgroundColor: t.primary,
   },
 
   card: {
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderRadius: radius.lg,
     padding: spacing.lg,
     gap: spacing.md,
@@ -208,21 +210,21 @@ const styles = StyleSheet.create({
   attribution: {
     fontSize: 14,
     fontWeight: '700',
-    color: colors.primary,
+    color: t.primary,
     textAlign: 'right',
     marginBottom: -6,
   },
   blockHeading: {
     fontSize: 16,
     fontWeight: '700',
-    color: colors.primaryDark,
+    color: t.primaryDark,
     textAlign: 'right',
     marginBottom: 4,
   },
   blockText: {
     fontSize: 15,
     lineHeight: 26,
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
     writingDirection: 'rtl',
   },
@@ -230,7 +232,7 @@ const styles = StyleSheet.create({
   sectionLabel: {
     fontSize: 13,
     fontWeight: '700',
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
     marginTop: spacing.sm,
     marginBottom: -4,
@@ -244,7 +246,7 @@ const styles = StyleSheet.create({
   verseNum: {
     fontSize: 13,
     fontWeight: '700',
-    color: colors.primary,
+    color: t.primary,
     minWidth: 26,
     textAlign: 'left',
     paddingTop: 3,
@@ -253,13 +255,13 @@ const styles = StyleSheet.create({
     flex: 1,
     fontSize: 17,
     lineHeight: 32,
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
     writingDirection: 'rtl',
   },
 
   sourcesCard: {
-    backgroundColor: colors.surfaceMuted,
+    backgroundColor: t.surfaceMuted,
     borderRadius: radius.lg,
     padding: spacing.md,
     gap: 6,
@@ -267,8 +269,8 @@ const styles = StyleSheet.create({
   sourceLine: {
     fontSize: 12,
     lineHeight: 20,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
     writingDirection: 'rtl',
   },
-});
+}));

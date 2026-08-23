@@ -1,15 +1,7 @@
 import React from 'react';
-import {
-  Linking,
-  Modal,
-  Pressable,
-  ScrollView,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
+import { Linking, Modal, Pressable, ScrollView, Text, View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { colors, radius, shadow, spacing } from '../theme';
+import { makeStyles, radius, shadow, spacing, useTheme } from '../theme';
 
 interface Props {
   visible: boolean;
@@ -27,6 +19,8 @@ const CATEGORIES = [
 ];
 
 export function AboutModal({ visible, onClose }: Props) {
+  const theme = useTheme();
+  const styles = useStyles();
   return (
     <Modal
       visible={visible}
@@ -42,7 +36,7 @@ export function AboutModal({ visible, onClose }: Props) {
         <View style={styles.header}>
           <Text style={styles.headerTitle}>אודות קרוב</Text>
           <Pressable onPress={onClose} hitSlop={10}>
-            <Ionicons name="close" size={22} color={colors.text} />
+            <Ionicons name="close" size={22} color={theme.text} />
           </Pressable>
         </View>
 
@@ -125,27 +119,27 @@ export function AboutModal({ visible, onClose }: Props) {
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   link: {
     fontSize: 14,
     fontWeight: '600',
-    color: colors.primary,
+    color: t.primary,
     writingDirection: 'rtl',
     marginTop: spacing.sm,
   },
   bodyMuted: {
     fontSize: 13,
     lineHeight: 20,
-    color: colors.textMuted,
+    color: t.textMuted,
     writingDirection: 'rtl',
     marginTop: spacing.md,
   },
   backdrop: {
     flex: 1,
-    backgroundColor: colors.overlay,
+    backgroundColor: t.overlay,
   },
   sheet: {
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderTopLeftRadius: radius.xl,
     borderTopRightRadius: radius.xl,
     paddingHorizontal: spacing.lg,
@@ -158,7 +152,7 @@ const styles = StyleSheet.create({
     width: 48,
     height: 4,
     borderRadius: 2,
-    backgroundColor: colors.surfaceMuted,
+    backgroundColor: t.surfaceMuted,
     marginTop: spacing.md,
     marginBottom: spacing.lg,
   },
@@ -169,12 +163,12 @@ const styles = StyleSheet.create({
     paddingBottom: spacing.md,
     marginBottom: spacing.md,
     borderBottomWidth: 0.5,
-    borderBottomColor: colors.border,
+    borderBottomColor: t.border,
   },
   headerTitle: {
     fontSize: 17,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
   },
   logoBlock: {
     alignItems: 'center',
@@ -183,12 +177,12 @@ const styles = StyleSheet.create({
   appName: {
     fontSize: 42,
     fontWeight: '800',
-    color: colors.primary,
+    color: t.primary,
     letterSpacing: -1.5,
   },
   version: {
     fontSize: 12,
-    color: colors.textMuted,
+    color: t.textMuted,
     marginTop: 4,
   },
   section: {
@@ -197,13 +191,13 @@ const styles = StyleSheet.create({
   sectionTitle: {
     fontSize: 15,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
     marginBottom: spacing.sm,
   },
   body: {
     fontSize: 14,
     lineHeight: 22,
-    color: colors.textMuted,
+    color: t.textMuted,
   },
   categoryRow: {
     flexDirection: 'row',
@@ -218,17 +212,17 @@ const styles = StyleSheet.create({
   },
   categoryLabel: {
     fontSize: 14,
-    color: colors.text,
+    color: t.text,
     fontWeight: '500',
   },
   footer: {
     alignItems: 'center',
     paddingVertical: spacing.lg,
     borderTopWidth: 0.5,
-    borderTopColor: colors.border,
+    borderTopColor: t.border,
   },
   footerText: {
     fontSize: 13,
-    color: colors.textMuted,
+    color: t.textMuted,
   },
-});
+}));

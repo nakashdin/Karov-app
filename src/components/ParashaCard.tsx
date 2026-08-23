@@ -1,9 +1,9 @@
 import React from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Pressable, Text, View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
-import { colors, radius, shadow, spacing } from '../theme';
+import { makeStyles, radius, shadow, spacing, useTheme } from '../theme';
 import { ParashaData } from '../hooks/useParasha';
 import { RootStackParamList } from '../navigation/types';
 
@@ -14,6 +14,8 @@ interface Props {
 }
 
 export function ParashaCard({ parasha }: Props) {
+  const theme = useTheme();
+  const styles = useStyles();
   const navigation = useNavigation<Nav>();
   const openDetail = () => navigation.navigate('ParashaDetail');
 
@@ -22,7 +24,7 @@ export function ParashaCard({ parasha }: Props) {
       style={({ pressed }) => [styles.card, pressed && styles.pressed]}
       onPress={openDetail}
     >
-      <Ionicons name="chevron-back" size={16} color={colors.border} />
+      <Ionicons name="chevron-back" size={16} color={theme.border} />
       <View style={styles.textBlock}>
         <Text style={styles.label}>פרשת השבוע</Text>
         <Text style={styles.name}>{parasha.hebrewName}</Text>
@@ -37,18 +39,18 @@ export function ParashaCard({ parasha }: Props) {
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   card: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: spacing.md,
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderRadius: radius.lg,
     paddingVertical: 16,
     paddingHorizontal: spacing.lg,
     marginBottom: spacing.xxl,
     borderRightWidth: 3,
-    borderRightColor: colors.primary,
+    borderRightColor: t.primary,
     ...shadow.card,
   },
   pressed: {
@@ -57,7 +59,7 @@ const styles = StyleSheet.create({
   iconBox: {
     width: 44,
     height: 44,
-    backgroundColor: colors.primaryLight,
+    backgroundColor: t.primaryLight,
     borderRadius: radius.md,
     alignItems: 'center',
     justifyContent: 'center',
@@ -72,7 +74,7 @@ const styles = StyleSheet.create({
   label: {
     fontSize: 11,
     fontWeight: '500',
-    color: colors.textFaint,
+    color: t.textFaint,
     letterSpacing: 0.3,
     marginBottom: 2,
   },
@@ -80,11 +82,11 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: '800',
     letterSpacing: -0.4,
-    color: colors.text,
+    color: t.text,
   },
   date: {
     fontSize: 12,
-    color: colors.textMuted,
+    color: t.textMuted,
     marginTop: 2,
   },
-});
+}));

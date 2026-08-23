@@ -1,7 +1,7 @@
 import React from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Pressable, Text, View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { colors, radius, shadow, spacing } from '../../theme';
+import { alpha, makeStyles, radius, shadow, spacing, useTheme } from '../../theme';
 import { JewishContentItem } from '../../data/jewish-content/types';
 import { MIDDAH_LABELS, HEB_DAY_NAMES } from '../../data/jewish-content/middot';
 
@@ -14,9 +14,9 @@ interface Props {
   totalCards?: number;
 }
 
-const MIDDAH_COLOR = '#5D8A6F'; // earthy green — distinct from category colors
-
 export function MiddahDailyCard({ item, isDone, onToggleDone, onReadMore, cardIndex, totalCards }: Props) {
+  const theme = useTheme();
+  const styles = useStyles();
   const middahLabel = item.middahTopic ? (MIDDAH_LABELS[item.middahTopic] ?? item.middahTopic) : '';
   const dayLabel = cardIndex != null && totalCards != null
     ? `יום ${cardIndex + 1} מתוך ${totalCards}`
@@ -52,7 +52,7 @@ export function MiddahDailyCard({ item, isDone, onToggleDone, onReadMore, cardIn
       {/* Today's practice */}
       <View style={styles.practiceBlock}>
         <View style={styles.practiceHeader}>
-          <Ionicons name="flag" size={13} color={MIDDAH_COLOR} />
+          <Ionicons name="flag" size={13} color={theme.middot} />
           <Text style={styles.practiceLabel}>העבודה שלי היום</Text>
         </View>
         <Text style={styles.practiceText}>{item.dailyTakeaway}</Text>
@@ -69,7 +69,7 @@ export function MiddahDailyCard({ item, isDone, onToggleDone, onReadMore, cardIn
           <Ionicons
             name={isDone ? 'checkmark-circle' : 'checkmark-circle-outline'}
             size={18}
-            color={isDone ? '#fff' : MIDDAH_COLOR}
+            color={isDone ? theme.textInverse : theme.middot}
           />
           <Text style={[styles.doneBtnText, isDone && styles.doneBtnTextActive]}>
             {isDone ? 'עשיתי ✓' : 'עשיתי'}
@@ -84,14 +84,14 @@ export function MiddahDailyCard({ item, isDone, onToggleDone, onReadMore, cardIn
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   card: {
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderRadius: radius.xl,
     padding: spacing.lg,
     gap: 12,
     borderWidth: 1.5,
-    borderColor: `${MIDDAH_COLOR}30`,
+    borderColor: alpha(t.middot, 0.19),
     ...shadow.card,
   },
 
@@ -102,11 +102,11 @@ const styles = StyleSheet.create({
   },
   dayName: {
     fontSize: 11,
-    color: colors.textFaint,
+    color: t.textFaint,
     fontWeight: '500',
   },
   middahChip: {
-    backgroundColor: `${MIDDAH_COLOR}18`,
+    backgroundColor: alpha(t.middot, 0.09),
     paddingHorizontal: 10,
     paddingVertical: 3,
     borderRadius: radius.pill,
@@ -114,13 +114,13 @@ const styles = StyleSheet.create({
   middahChipText: {
     fontSize: 12,
     fontWeight: '700',
-    color: MIDDAH_COLOR,
+    color: t.middot,
   },
 
   quoteBlock: {
-    backgroundColor: `${MIDDAH_COLOR}0E`,
+    backgroundColor: alpha(t.middot, 0.05),
     borderRightWidth: 3,
-    borderRightColor: MIDDAH_COLOR,
+    borderRightColor: t.middot,
     paddingHorizontal: 12,
     paddingVertical: 8,
     gap: 4,
@@ -129,14 +129,14 @@ const styles = StyleSheet.create({
   quoteText: {
     fontSize: 14,
     fontWeight: '600',
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
     lineHeight: 22,
     fontStyle: 'italic',
   },
   quoteRef: {
     fontSize: 11,
-    color: MIDDAH_COLOR,
+    color: t.middot,
     textAlign: 'right',
     fontWeight: '600',
   },
@@ -147,20 +147,20 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 17,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
     letterSpacing: -0.3,
   },
   summary: {
     fontSize: 14,
     lineHeight: 22,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
   },
 
   divider: {
     height: 1,
-    backgroundColor: colors.border,
+    backgroundColor: t.border,
   },
 
   practiceBlock: {
@@ -175,14 +175,14 @@ const styles = StyleSheet.create({
   practiceLabel: {
     fontSize: 11,
     fontWeight: '800',
-    color: MIDDAH_COLOR,
+    color: t.middot,
     letterSpacing: 0.3,
     textTransform: 'uppercase',
   },
   practiceText: {
     fontSize: 14,
     lineHeight: 22,
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
     fontWeight: '500',
   },
@@ -201,20 +201,20 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     borderRadius: radius.pill,
     borderWidth: 1.5,
-    borderColor: MIDDAH_COLOR,
+    borderColor: t.middot,
     backgroundColor: 'transparent',
   },
   doneBtnActive: {
-    backgroundColor: MIDDAH_COLOR,
-    borderColor: MIDDAH_COLOR,
+    backgroundColor: t.middot,
+    borderColor: t.middot,
   },
   doneBtnText: {
     fontSize: 13,
     fontWeight: '700',
-    color: MIDDAH_COLOR,
+    color: t.middot,
   },
   doneBtnTextActive: {
-    color: '#fff',
+    color: t.textInverse,
   },
   readMoreBtn: {
     paddingVertical: 8,
@@ -223,6 +223,6 @@ const styles = StyleSheet.create({
   readMoreText: {
     fontSize: 13,
     fontWeight: '600',
-    color: colors.textMuted,
+    color: t.textMuted,
   },
-});
+}));

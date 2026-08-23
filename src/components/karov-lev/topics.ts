@@ -1,107 +1,104 @@
 import { Topic } from '../../data/jewish-content/types';
+import type { AccentName, AccentToken, Tokens } from '../../theme';
 
 export type UITopicGroup = {
   id: string;
   label: string;
   emoji: string;
-  color: string;   // text / icon color
-  bg: string;      // chip / card background
+  /** Which theme accent this group wears. Resolved per colour scheme. */
+  accent: AccentName;
   topics: Topic[]; // internal Topic values this group maps to
 };
+
+/** Used when an item carries no topic we have a group for. */
+const DEFAULT_ACCENT: AccentName = 'violet';
 
 export const UI_TOPIC_GROUPS: UITopicGroup[] = [
   {
     id: 'emunah-bitachon',
     label: 'אמונה וביטחון',
     emoji: '✨',
-    color: '#7B5EA7',
-    bg: '#F2EEFA',
+    accent: 'violet',
     topics: ['emunah', 'bitachon'],
   },
   {
     id: 'tefilla',
     label: 'תפילה',
     emoji: '🕊️',
-    color: '#2A6CA8',
-    bg: '#E8F1FC',
+    accent: 'blue',
     topics: ['tefilla'],
   },
   {
     id: 'middot',
     label: 'מידות',
     emoji: '⚖️',
-    color: '#2E7D52',
-    bg: '#E8F4EE',
+    accent: 'emerald',
     topics: ['middot', 'anavah', 'kaas', 'savlanut', 'kinah'],
   },
   {
     id: 'lashon-hara',
     label: 'שמירת הלשון',
     emoji: '🤫',
-    color: '#0277BD',
-    bg: '#E1F5FE',
+    accent: 'cyan',
     topics: ['lashon_hara'],
   },
   {
     id: 'parnasa',
     label: 'פרנסה והשתדלות',
     emoji: '💼',
-    color: '#7A5C2E',
-    bg: '#F5EEEA',
+    accent: 'earth',
     topics: ['parnasa'],
   },
   {
     id: 'simcha',
     label: 'שמחה והכרת הטוב',
     emoji: '🌟',
-    color: '#B5780A',
-    bg: '#FFF8E7',
+    accent: 'gold',
     topics: ['simcha', 'hakarat_hatov'],
   },
   {
     id: 'teshuva',
     label: 'תשובה',
     emoji: '🔄',
-    color: '#B03050',
-    bg: '#FEE8EB',
+    accent: 'berry',
     topics: ['teshuva'],
   },
   {
     id: 'ben-adam',
     label: 'בין אדם לחברו',
     emoji: '🤝',
-    color: '#C97A1A',
-    bg: '#FFF3E0',
+    accent: 'orange',
     topics: ['ben_adam_lachavero', 'chessed', 'ahavat_yisrael', 'tzedaka', 'shalom_bayit'],
   },
   {
     id: 'shabbat',
     label: 'שבת',
     emoji: '🕯️',
-    color: '#5B4FCF',
-    bg: '#EEEDF9',
+    accent: 'indigo',
     topics: ['shabbat', 'moadim'],
   },
   {
     id: 'talmud-torah',
     label: 'לימוד תורה',
     emoji: '📖',
-    color: '#1E7A46',
-    bg: '#E7F2EB',
+    accent: 'green',
     topics: ['talmud_torah', 'yirat_shamayim', 'ahavat_hashem'],
   },
 ];
 
-/** Returns the style for a content item based on its first matching topic group. */
-export function getTopicStyle(topics: Topic[]): { color: string; bg: string } {
+/** The accent for a content item, from its first matching topic group. */
+export function getTopicAccent(topics: Topic[]): AccentName {
   for (const topic of topics) {
     for (const group of UI_TOPIC_GROUPS) {
-      if (group.topics.includes(topic)) {
-        return { color: group.color, bg: group.bg };
-      }
+      if (group.topics.includes(topic)) return group.accent;
     }
   }
-  return { color: '#7B5EA7', bg: '#F2EEFA' };
+  return DEFAULT_ACCENT;
+}
+
+/** Resolved colours for a content item under the active colour scheme. */
+export function getTopicStyle(topics: Topic[], theme: Tokens): AccentToken {
+  return theme.accent[getTopicAccent(topics)];
 }
 
 /** Returns the display label for a content item's primary topic group. */

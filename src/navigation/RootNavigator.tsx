@@ -1,7 +1,7 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { RootStackParamList } from './types';
-import { colors } from '../theme';
+import { useTheme } from '../theme';
 import { useLanguage } from '../context/LanguageContext';
 import { TabNavigator } from './TabNavigator';
 import { PlaceDetailScreen } from '../screens/PlaceDetailScreen';
@@ -25,16 +25,17 @@ import { ElulSegulaScreen } from '../screens/ElulSegulaScreen';
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export function RootNavigator() {
+  const theme = useTheme();
   const { t } = useLanguage();
   return (
     <Stack.Navigator
       initialRouteName="Splash"
       screenOptions={{
-        headerStyle: { backgroundColor: colors.surface },
-        headerTintColor: colors.text,
+        headerStyle: { backgroundColor: theme.surface },
+        headerTintColor: theme.text,
         headerTitleStyle: { fontWeight: '800' },
         headerBackButtonDisplayMode: 'minimal',
-        contentStyle: { backgroundColor: colors.background },
+        contentStyle: { backgroundColor: theme.background },
       }}
     >
       <Stack.Screen name="Splash"             component={SplashScreen}            options={{ headerShown: false, animation: 'none' }} />

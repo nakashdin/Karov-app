@@ -1,6 +1,6 @@
 import React from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
-import { colors, radius, spacing } from '../../theme';
+import { Pressable, Text, View } from 'react-native';
+import { makeStyles, radius, spacing, useTheme } from '../../theme';
 import { UI_TOPIC_GROUPS } from './topics';
 
 interface Props {
@@ -9,17 +9,21 @@ interface Props {
 }
 
 export function TopicSelector({ selectedIds, onToggle }: Props) {
+  const theme = useTheme();
+  const styles = useStyles();
+
   return (
     <View style={styles.wrap}>
       {UI_TOPIC_GROUPS.map(group => {
         const selected = selectedIds.includes(group.id);
+        const accent = theme.accent[group.accent];
         return (
           <Pressable
             key={group.id}
             onPress={() => onToggle(group.id)}
             style={({ pressed }) => [
               styles.chip,
-              selected ? { backgroundColor: group.bg, borderColor: group.color } : styles.chipIdle,
+              selected ? { backgroundColor: accent.tint, borderColor: accent.fg } : styles.chipIdle,
               pressed && styles.pressed,
             ]}
             accessibilityRole="checkbox"
@@ -29,7 +33,7 @@ export function TopicSelector({ selectedIds, onToggle }: Props) {
             <Text
               style={[
                 styles.label,
-                selected ? { color: group.color, fontWeight: '700' } : styles.labelIdle,
+                selected ? { color: accent.fg, fontWeight: '700' } : styles.labelIdle,
               ]}
             >
               {group.label}
@@ -47,21 +51,23 @@ export function SelectedTopicChips({
 }: {
   selectedIds: string[];
 }) {
+  const styles = useStyles();
+  const theme = useTheme();
   const groups = UI_TOPIC_GROUPS.filter(g => selectedIds.includes(g.id));
   if (groups.length === 0) return null;
 
   return (
     <View style={styles.compactRow}>
       {groups.map(g => (
-        <View key={g.id} style={[styles.compactChip, { backgroundColor: g.bg }]}>
-          <Text style={[styles.compactLabel, { color: g.color }]}>{g.label}</Text>
+        <View key={g.id} style={[styles.compactChip, { backgroundColor: theme.accent[g.accent].tint }]}>
+          <Text style={[styles.compactLabel, { color: theme.accent[g.accent].fg }]}>{g.label}</Text>
         </View>
       ))}
     </View>
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   wrap: {
     flexDirection: 'row',
     flexWrap: 'wrap',
@@ -77,8 +83,8 @@ const styles = StyleSheet.create({
     borderWidth: 1.5,
   },
   chipIdle: {
-    backgroundColor: colors.surface,
-    borderColor: colors.border,
+    backgroundColor: t.surface,
+    borderColor: t.border,
   },
   pressed: {
     opacity: 0.78,
@@ -91,7 +97,7 @@ const styles = StyleSheet.create({
     lineHeight: 18,
   },
   labelIdle: {
-    color: colors.textMuted,
+    color: t.textMuted,
     fontWeight: '500',
   },
   compactRow: {
@@ -108,4 +114,4 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: '600',
   },
-});
+}));

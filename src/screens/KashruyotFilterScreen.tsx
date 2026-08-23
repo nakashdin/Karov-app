@@ -1,16 +1,10 @@
 import React, { useState } from 'react';
-import {
-  Pressable,
-  ScrollView,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
+import { Pressable, ScrollView, Text, View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { NativeStackNavigationProp, NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Screen } from '../components/Screen';
-import { colors, radius, shadow, spacing } from '../theme';
+import { makeStyles, radius, shadow, spacing, useTheme } from '../theme';
 import { useFilters } from '../context/FiltersContext';
 import { emptyFilters, KosherCategory } from '../types';
 import { categoryLabel } from '../utils/kosher';
@@ -44,6 +38,8 @@ const KASHRUYOT_OPTIONS: Array<{ key: string; label: string; emoji: string; meha
 const STEPS = ['קטגוריה', 'כשרות', 'תוצאות'];
 
 export function KashruyotFilterScreen() {
+  const theme = useTheme();
+  const styles = useStyles();
   const navigation = useNavigation<Nav>();
   const route = useRoute<Route>();
   const placeType: FoodPlaceType = route.params?.placeType ?? 'restaurant';
@@ -88,7 +84,7 @@ export function KashruyotFilterScreen() {
           style={({ pressed }) => [styles.backBtn, pressed && styles.pressed]}
           onPress={handleBack}
         >
-          <Ionicons name="chevron-forward" size={22} color={colors.text} />
+          <Ionicons name="chevron-forward" size={22} color={theme.text} />
         </Pressable>
 
         <View style={styles.stepper}>
@@ -107,7 +103,7 @@ export function KashruyotFilterScreen() {
                     done && styles.stepDotDone,
                   ]}>
                     {done ? (
-                      <Ionicons name="checkmark" size={10} color="#fff" />
+                      <Ionicons name="checkmark" size={10} color={theme.textInverse} />
                     ) : (
                       <Text style={[styles.stepNum, active && styles.stepNumActive]}>
                         {i + 1}
@@ -185,7 +181,7 @@ export function KashruyotFilterScreen() {
               <Ionicons
                 name="chevron-back"
                 size={18}
-                color={categoryReady ? '#fff' : colors.textMuted}
+                color={categoryReady ? theme.textInverse : theme.textMuted}
               />
             </Pressable>
           </View>
@@ -239,7 +235,7 @@ export function KashruyotFilterScreen() {
               <Ionicons
                 name="search-outline"
                 size={18}
-                color={kosherReady ? '#fff' : colors.textMuted}
+                color={kosherReady ? theme.textInverse : theme.textMuted}
               />
             </Pressable>
           </View>
@@ -249,7 +245,7 @@ export function KashruyotFilterScreen() {
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   screen: {
     flex: 1,
   },
@@ -266,7 +262,7 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: radius.md,
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     alignItems: 'center',
     justifyContent: 'center',
     ...shadow.card,
@@ -286,45 +282,45 @@ const styles = StyleSheet.create({
     width: 22,
     height: 22,
     borderRadius: 11,
-    backgroundColor: colors.border,
+    backgroundColor: t.border,
     alignItems: 'center',
     justifyContent: 'center',
   },
   stepDotActive: {
-    backgroundColor: colors.primary,
+    backgroundColor: t.primary,
   },
   stepDotDone: {
-    backgroundColor: colors.primary,
+    backgroundColor: t.primary,
   },
   stepNum: {
     fontSize: 10,
     fontWeight: '700',
-    color: colors.textMuted,
+    color: t.textMuted,
   },
   stepNumActive: {
-    color: '#fff',
+    color: t.textInverse,
   },
   stepLine: {
     flex: 1,
     height: 2,
-    backgroundColor: colors.border,
+    backgroundColor: t.border,
     marginBottom: 14,
     marginHorizontal: 4,
   },
   stepLineDone: {
-    backgroundColor: colors.primary,
+    backgroundColor: t.primary,
   },
   stepLabel: {
     fontSize: 10,
     fontWeight: '500',
-    color: colors.textMuted,
+    color: t.textMuted,
   },
   stepLabelActive: {
-    color: colors.primary,
+    color: t.primary,
     fontWeight: '700',
   },
   stepLabelDone: {
-    color: colors.primary,
+    color: t.primary,
   },
 
   // ── Title ────────────────────────────────────────────────
@@ -337,11 +333,11 @@ const styles = StyleSheet.create({
     fontSize: 26,
     fontWeight: '800',
     letterSpacing: -0.6,
-    color: colors.text,
+    color: t.text,
   },
   subtitle: {
     fontSize: 13,
-    color: colors.textMuted,
+    color: t.textMuted,
     marginTop: 3,
   },
 
@@ -355,7 +351,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: spacing.md,
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderRadius: radius.md,
     paddingVertical: 15,
     paddingHorizontal: spacing.lg,
@@ -364,11 +360,11 @@ const styles = StyleSheet.create({
     ...shadow.card,
   },
   cardAll: {
-    borderColor: colors.border,
+    borderColor: t.border,
   },
   cardSelected: {
-    borderColor: colors.primary,
-    backgroundColor: colors.primaryLight,
+    borderColor: t.primary,
+    backgroundColor: t.primaryLight,
   },
   cardEmoji: {
     fontSize: 22,
@@ -377,12 +373,12 @@ const styles = StyleSheet.create({
     flex: 1,
     fontSize: 15,
     fontWeight: '500',
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
   },
   cardLabelSelected: {
     fontWeight: '700',
-    color: colors.primary,
+    color: t.primary,
   },
 
   // ── Radio ────────────────────────────────────────────────
@@ -391,18 +387,18 @@ const styles = StyleSheet.create({
     height: 20,
     borderRadius: 10,
     borderWidth: 2,
-    borderColor: colors.border,
+    borderColor: t.border,
     alignItems: 'center',
     justifyContent: 'center',
   },
   radioSelected: {
-    borderColor: colors.primary,
+    borderColor: t.primary,
   },
   radioDot: {
     width: 10,
     height: 10,
     borderRadius: 5,
-    backgroundColor: colors.primary,
+    backgroundColor: t.primary,
   },
 
   sectionGap: {
@@ -414,34 +410,34 @@ const styles = StyleSheet.create({
     paddingHorizontal: spacing.lg,
     paddingVertical: spacing.lg,
     borderTopWidth: 1,
-    borderTopColor: colors.border,
-    backgroundColor: colors.background,
+    borderTopColor: t.border,
+    backgroundColor: t.background,
   },
   continueBtn: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
     gap: spacing.sm,
-    backgroundColor: colors.primary,
+    backgroundColor: t.primary,
     borderRadius: radius.pill,
     paddingVertical: 16,
   },
   continueBtnDisabled: {
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderWidth: 1,
-    borderColor: colors.border,
+    borderColor: t.border,
   },
   continueBtnText: {
     fontSize: 16,
     fontWeight: '700',
-    color: '#fff',
+    color: t.textInverse,
     letterSpacing: -0.2,
   },
   continueBtnTextDisabled: {
-    color: colors.textMuted,
+    color: t.textMuted,
   },
 
   pressed: {
     opacity: 0.8,
   },
-});
+}));

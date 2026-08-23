@@ -1,20 +1,9 @@
 import React, { useState } from 'react';
-import {
-  Linking,
-  Platform,
-  Pressable,
-  ScrollView,
-  Share,
-  StyleSheet,
-  Text,
-  View,
-  LayoutAnimation,
-  UIManager,
-} from 'react-native';
+import { Linking, Platform, Pressable, ScrollView, Share, Text, View, LayoutAnimation, UIManager } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { useNavigation } from '@react-navigation/native';
 import { Screen } from '../components/Screen';
-import { colors, radius, shadow, spacing } from '../theme';
+import { makeStyles, radius, shadow, spacing, useTheme } from '../theme';
 import { useParasha } from '../hooks/useParasha';
 import { getParashaContent } from '../data/parashaContent';
 
@@ -29,6 +18,8 @@ async function copyToClipboard(text: string) {
 }
 
 export function ParashaDetailScreen() {
+  const theme = useTheme();
+  const styles = useStyles();
   const navigation = useNavigation();
   const { parasha } = useParasha();
   const content = getParashaContent(parasha?.topicSlug);
@@ -76,14 +67,14 @@ export function ParashaDetailScreen() {
           onPress={() => navigation.goBack()}
           style={({ pressed }) => [styles.backBtn, pressed && { opacity: 0.6 }]}
         >
-          <Ionicons name="chevron-forward" size={22} color={colors.primary} />
+          <Ionicons name="chevron-forward" size={22} color={theme.primary} />
         </Pressable>
         <Text style={styles.headerLabel}>פרשת השבוע</Text>
         <Pressable
           onPress={handleShare}
           style={({ pressed }) => [styles.backBtn, pressed && { opacity: 0.6 }]}
         >
-          <Ionicons name="share-outline" size={20} color={colors.primary} />
+          <Ionicons name="share-outline" size={20} color={theme.primary} />
         </Pressable>
       </View>
 
@@ -116,7 +107,7 @@ export function ParashaDetailScreen() {
                     style={({ pressed }) => [styles.readBtn, pressed && { opacity: 0.8 }]}
                     onPress={() => Linking.openURL(parasha.sefariaUrl)}
                   >
-                    <Ionicons name="book-outline" size={16} color={colors.categorySynagogue} />
+                    <Ionicons name="book-outline" size={16} color={theme.categorySynagogue} />
                     <Text style={styles.readBtnText}>קרא את הפרשה המלאה בספריא</Text>
                   </Pressable>
                 ) : null}
@@ -157,7 +148,7 @@ export function ParashaDetailScreen() {
                   <Ionicons
                     name={showCommentary ? 'chevron-up' : 'chevron-down'}
                     size={18}
-                    color={colors.categorySynagogue}
+                    color={theme.categorySynagogue}
                   />
                   <Text style={styles.commentaryToggleText}>
                     {showCommentary ? 'סגור פירוש ולימוד' : 'פירוש ולימוד — מדרש, חסידות וחב"ד'}
@@ -201,7 +192,7 @@ export function ParashaDetailScreen() {
             style={({ pressed }) => [styles.sefariaBtn, pressed && { opacity: 0.8 }]}
             onPress={() => Linking.openURL(parasha.sefariaUrl)}
           >
-            <Ionicons name="book-outline" size={18} color={colors.surface} />
+            <Ionicons name="book-outline" size={18} color={theme.surface} />
             <Text style={styles.sefariaBtnText}>קרא את הפרשה המלאה</Text>
           </Pressable>
         ) : null}
@@ -210,20 +201,20 @@ export function ParashaDetailScreen() {
         <View style={styles.shareCard}>
           <Text style={styles.shareTitle}>שתף את הפרשה</Text>
           <View style={styles.shareRow}>
-            <Pressable style={({ pressed }) => [styles.shareBtn, { backgroundColor: '#25D366' }, pressed && styles.pressed]} onPress={handleWhatsApp}>
+            <Pressable style={({ pressed }) => [styles.shareBtn, { backgroundColor: theme.brand.whatsapp }, pressed && styles.pressed]} onPress={handleWhatsApp}>
               <Text style={styles.shareBtnIcon}>💬</Text>
               <Text style={styles.shareBtnLabel}>וואטסאפ</Text>
             </Pressable>
-            <Pressable style={({ pressed }) => [styles.shareBtn, { backgroundColor: '#229ED9' }, pressed && styles.pressed]} onPress={handleTelegram}>
+            <Pressable style={({ pressed }) => [styles.shareBtn, { backgroundColor: theme.brand.telegram }, pressed && styles.pressed]} onPress={handleTelegram}>
               <Text style={styles.shareBtnIcon}>✈️</Text>
               <Text style={styles.shareBtnLabel}>טלגרם</Text>
             </Pressable>
-            <Pressable style={({ pressed }) => [styles.shareBtn, { backgroundColor: '#1877F2' }, pressed && styles.pressed]} onPress={handleFacebook}>
+            <Pressable style={({ pressed }) => [styles.shareBtn, { backgroundColor: theme.brand.facebook }, pressed && styles.pressed]} onPress={handleFacebook}>
               <Text style={styles.shareBtnIcon}>👥</Text>
               <Text style={styles.shareBtnLabel}>פייסבוק</Text>
             </Pressable>
-            <Pressable style={({ pressed }) => [styles.shareBtn, { backgroundColor: copied ? colors.success : colors.textMuted }, pressed && styles.pressed]} onPress={handleCopy}>
-              <Ionicons name={copied ? 'checkmark' : 'copy-outline'} size={18} color={colors.surface} />
+            <Pressable style={({ pressed }) => [styles.shareBtn, { backgroundColor: copied ? theme.success : theme.textMuted }, pressed && styles.pressed]} onPress={handleCopy}>
+              <Ionicons name={copied ? 'checkmark' : 'copy-outline'} size={18} color={theme.surface} />
               <Text style={styles.shareBtnLabel}>{copied ? 'הועתק!' : 'העתק'}</Text>
             </Pressable>
           </View>
@@ -237,7 +228,7 @@ export function ParashaDetailScreen() {
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   header: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -245,8 +236,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: spacing.lg,
     paddingVertical: spacing.md,
     borderBottomWidth: 0.5,
-    borderBottomColor: colors.border,
-    backgroundColor: colors.surface,
+    borderBottomColor: t.border,
+    backgroundColor: t.surface,
   },
   backBtn: {
     width: 36,
@@ -257,7 +248,7 @@ const styles = StyleSheet.create({
   headerLabel: {
     fontSize: 16,
     fontWeight: '700',
-    color: colors.text,
+    color: t.text,
   },
   content: {
     padding: spacing.lg,
@@ -265,7 +256,7 @@ const styles = StyleSheet.create({
     gap: spacing.lg,
   },
   heroCard: {
-    backgroundColor: '#EBF2FD',
+    backgroundColor: t.accent.blue.tint,
     borderRadius: radius.xl,
     alignItems: 'center',
     paddingVertical: spacing.xxl,
@@ -276,7 +267,7 @@ const styles = StyleSheet.create({
     width: 64,
     height: 64,
     borderRadius: 20,
-    backgroundColor: '#C8DDF8',
+    backgroundColor: t.accent.blue.tintStrong,
     alignItems: 'center',
     justifyContent: 'center',
     marginBottom: spacing.sm,
@@ -285,18 +276,18 @@ const styles = StyleSheet.create({
   heroTag: {
     fontSize: 11,
     fontWeight: '700',
-    color: colors.categorySynagogue,
+    color: t.categorySynagogue,
     letterSpacing: 0.3,
   },
   parashaName: {
     fontSize: 30,
     fontWeight: '800',
     letterSpacing: -1,
-    color: colors.text,
+    color: t.text,
     textAlign: 'center',
   },
   datePill: {
-    backgroundColor: '#C8DDF8',
+    backgroundColor: t.accent.blue.tintStrong,
     borderRadius: radius.lg,
     paddingHorizontal: spacing.md,
     paddingVertical: 4,
@@ -304,22 +295,22 @@ const styles = StyleSheet.create({
   },
   hebrewDate: {
     fontSize: 13,
-    color: colors.categorySynagogue,
+    color: t.categorySynagogue,
     fontWeight: '600',
   },
 
   bookInfoCard: {
-    backgroundColor: '#F0F5FF',
+    backgroundColor: t.accent.blue.tint,
     borderRadius: radius.lg,
     padding: spacing.lg,
     gap: spacing.md,
     borderWidth: 1,
-    borderColor: '#D0DFFA',
+    borderColor: t.accent.blue.border,
   },
   bookInfoText: {
     fontSize: 13,
     lineHeight: 20,
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
     fontWeight: '500',
   },
@@ -329,7 +320,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     gap: 6,
     borderWidth: 1.5,
-    borderColor: colors.categorySynagogue,
+    borderColor: t.categorySynagogue,
     borderRadius: radius.md,
     paddingVertical: 10,
     paddingHorizontal: spacing.md,
@@ -337,11 +328,11 @@ const styles = StyleSheet.create({
   readBtnText: {
     fontSize: 14,
     fontWeight: '700',
-    color: colors.categorySynagogue,
+    color: t.categorySynagogue,
   },
 
   card: {
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderRadius: radius.lg,
     padding: spacing.lg,
     ...shadow.card,
@@ -350,7 +341,7 @@ const styles = StyleSheet.create({
   sectionTitle: {
     fontSize: 12,
     fontWeight: '700',
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
     letterSpacing: 0.4,
     textTransform: 'uppercase',
@@ -358,7 +349,7 @@ const styles = StyleSheet.create({
   summaryText: {
     fontSize: 16,
     lineHeight: 28,
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
   },
 
@@ -371,7 +362,7 @@ const styles = StyleSheet.create({
   },
   keyPointBullet: {
     fontSize: 8,
-    color: colors.categorySynagogue,
+    color: t.categorySynagogue,
     marginTop: 6,
     flexShrink: 0,
   },
@@ -379,50 +370,50 @@ const styles = StyleSheet.create({
     flex: 1,
     fontSize: 15,
     lineHeight: 24,
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
     fontWeight: '600',
   },
   keyPointDetail: {
     fontSize: 14,
     lineHeight: 22,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
     paddingRight: 16,
   },
 
   quoteCard: {
-    backgroundColor: '#EBF2FD',
+    backgroundColor: t.accent.blue.tint,
     borderRadius: radius.lg,
     padding: spacing.lg,
     alignItems: 'center',
     gap: 8,
     borderLeftWidth: 4,
-    borderLeftColor: colors.categorySynagogue,
+    borderLeftColor: t.categorySynagogue,
   },
   quoteIcon: {
     fontSize: 28,
-    color: colors.categorySynagogue,
+    color: t.categorySynagogue,
     opacity: 0.4,
     alignSelf: 'flex-end',
   },
   quoteText: {
     fontSize: 18,
     fontWeight: '700',
-    color: colors.text,
+    color: t.text,
     textAlign: 'center',
     lineHeight: 28,
     letterSpacing: -0.3,
   },
   quoteSource: {
     fontSize: 12,
-    color: colors.categorySynagogue,
+    color: t.categorySynagogue,
     fontWeight: '600',
     textAlign: 'center',
   },
 
   commentaryContainer: {
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderRadius: radius.lg,
     overflow: 'hidden',
     ...shadow.card,
@@ -438,7 +429,7 @@ const styles = StyleSheet.create({
   commentaryToggleText: {
     fontSize: 15,
     fontWeight: '700',
-    color: colors.categorySynagogue,
+    color: t.categorySynagogue,
     textAlign: 'right',
   },
   commentarySections: {
@@ -446,37 +437,37 @@ const styles = StyleSheet.create({
     paddingBottom: spacing.lg,
     gap: spacing.lg,
     borderTopWidth: 0.5,
-    borderTopColor: colors.border,
+    borderTopColor: t.border,
   },
   commentarySection: {
     gap: 6,
     paddingTop: spacing.md,
     borderBottomWidth: 0.5,
-    borderBottomColor: colors.border,
+    borderBottomColor: t.border,
     paddingBottom: spacing.md,
   },
   commentaryTitle: {
     fontSize: 15,
     fontWeight: '700',
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
   },
   commentarySource: {
     fontSize: 11,
     fontWeight: '600',
-    color: colors.categorySynagogue,
+    color: t.categorySynagogue,
     textAlign: 'right',
     letterSpacing: 0.2,
   },
   commentaryText: {
     fontSize: 14,
     lineHeight: 24,
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
   },
   commentaryAttribution: {
     fontSize: 11,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'center',
     paddingTop: spacing.sm,
   },
@@ -486,18 +477,18 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     gap: spacing.sm,
-    backgroundColor: colors.primary,
+    backgroundColor: t.primary,
     borderRadius: radius.lg,
     paddingVertical: 16,
   },
   sefariaBtnText: {
     fontSize: 16,
     fontWeight: '700',
-    color: colors.surface,
+    color: t.surface,
   },
 
   shareCard: {
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderRadius: radius.lg,
     padding: spacing.lg,
     ...shadow.card,
@@ -506,7 +497,7 @@ const styles = StyleSheet.create({
   shareTitle: {
     fontSize: 13,
     fontWeight: '700',
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
     letterSpacing: 0.3,
   },
@@ -526,14 +517,14 @@ const styles = StyleSheet.create({
   shareBtnLabel: {
     fontSize: 9,
     fontWeight: '700',
-    color: colors.surface,
+    color: t.surface,
     textAlign: 'center',
   },
   pressed: { opacity: 0.85 },
 
   attribution: {
     fontSize: 11,
-    color: colors.textFaint,
+    color: t.textFaint,
     textAlign: 'center',
   },
-});
+}));

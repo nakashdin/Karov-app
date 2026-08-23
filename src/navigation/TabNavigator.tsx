@@ -4,7 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { TabParamList } from './types';
-import { colors, sizes } from '../theme';
+import { sizes, useTheme } from '../theme';
 import { HomeScreen } from '../screens/HomeScreen';
 import { FavoritesScreen } from '../screens/FavoritesScreen';
 import { BrachotScreen } from '../screens/BrachotScreen';
@@ -24,6 +24,7 @@ const ICONS: Record<
 };
 
 export function TabNavigator() {
+  const theme = useTheme();
   const insets = useSafeAreaInsets();
   const bottomInset = Platform.OS === 'web'
     ? 0
@@ -34,14 +35,14 @@ export function TabNavigator() {
       initialRouteName="Home"
       screenOptions={({ route }) => ({
         headerShown: false,
-        tabBarActiveTintColor: colors.primary,
-        tabBarInactiveTintColor: colors.textMuted,
+        tabBarActiveTintColor: theme.primary,
+        tabBarInactiveTintColor: theme.textMuted,
         tabBarStyle: {
           height: Platform.OS === 'web' ? 80 : sizes.tabBar + bottomInset,
           paddingBottom: Platform.OS === 'web' ? 18 : bottomInset + 6,
           paddingTop: 10,
-          backgroundColor: colors.surface,
-          borderTopColor: colors.border,
+          backgroundColor: theme.surface,
+          borderTopColor: theme.border,
           borderTopWidth: 1,
         },
         tabBarLabelStyle: { fontSize: 12, fontWeight: '600' },

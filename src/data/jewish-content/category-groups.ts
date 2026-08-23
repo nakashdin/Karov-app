@@ -1,3 +1,4 @@
+import type { AccentName } from '../../theme';
 import { CategoryGroup, Topic } from './types';
 
 export interface CategoryGroupMeta {
@@ -5,8 +6,8 @@ export interface CategoryGroupMeta {
   label: string;
   description: string;
   emoji: string;
-  color: string;
-  backgroundColor: string;
+  /** Theme accent for the group. Resolve with `theme.accent[meta.accent]`. */
+  accent: AccentName;
 }
 
 export const CATEGORY_GROUPS: CategoryGroupMeta[] = [
@@ -15,32 +16,28 @@ export const CATEGORY_GROUPS: CategoryGroupMeta[] = [
     label: 'אמונה וביטחון',
     description: 'חיזוק האמונה, ביטחון בה׳, השגחה פרטית',
     emoji: '✨',
-    color: '#7B5EA7',
-    backgroundColor: '#F2EEFA',
+    accent: 'violet',
   },
   {
     id: 'mussar_middot',
     label: 'מוסר ומידות',
     description: 'עבודת המידות, שמירת הלשון, בין אדם לחברו',
     emoji: '🌱',
-    color: '#2E7D52',
-    backgroundColor: '#E8F5EE',
+    accent: 'emerald',
   },
   {
     id: 'tefilla',
     label: 'תפילה',
     description: 'כוונה בתפילה, קשר עם הבורא, ברכות ותחינות',
     emoji: '🙏',
-    color: '#1E6A9E',
-    backgroundColor: '#E8F2FB',
+    accent: 'steel',
   },
   {
     id: 'shabbat_moadim',
     label: 'שבת ומועדים',
     description: 'קדושת השבת, חגים ומועדי ישראל',
     emoji: '🕯️',
-    color: '#5B4FCF',
-    backgroundColor: '#EEECFA',
+    accent: 'indigo',
   },
 ];
 

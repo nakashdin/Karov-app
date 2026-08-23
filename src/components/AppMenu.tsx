@@ -1,17 +1,9 @@
 import React, { useState } from 'react';
-import {
-  Linking,
-  Modal,
-  Pressable,
-  Share,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
+import { Linking, Modal, Pressable, Share, Text, View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { LanguagePicker } from './LanguagePicker';
 import { AboutModal } from './AboutModal';
-import { colors, radius, shadow, spacing } from '../theme';
+import { makeStyles, radius, shadow, spacing, useTheme } from '../theme';
 import { useLanguage } from '../context/LanguageContext';
 
 const CONTACT_EMAIL = 'karov.app@gmail.com';
@@ -28,6 +20,8 @@ interface Props {
 }
 
 export function AppMenu({ visible, onClose }: Props) {
+  const theme = useTheme();
+  const styles = useStyles();
   const { t } = useLanguage();
   const [langOpen, setLangOpen] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
@@ -89,7 +83,7 @@ export function AppMenu({ visible, onClose }: Props) {
           <View style={styles.header}>
             <Text style={styles.title}>{t.menu.title}</Text>
             <Pressable onPress={onClose} hitSlop={10}>
-              <Ionicons name="close" size={22} color={colors.text} />
+              <Ionicons name="close" size={22} color={theme.text} />
             </Pressable>
           </View>
 
@@ -104,10 +98,10 @@ export function AppMenu({ visible, onClose }: Props) {
               onPress={row.onPress}
             >
               <View style={styles.iconWrap}>
-                <Ionicons name={row.icon} size={22} color={colors.primary} />
+                <Ionicons name={row.icon} size={22} color={theme.primary} />
               </View>
               <Text style={styles.label}>{row.label}</Text>
-              <Ionicons name="chevron-back" size={16} color={colors.textMuted} />
+              <Ionicons name="chevron-back" size={16} color={theme.textMuted} />
             </Pressable>
           ))}
         </View>
@@ -119,13 +113,13 @@ export function AppMenu({ visible, onClose }: Props) {
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   backdrop: {
     flex: 1,
-    backgroundColor: colors.overlay,
+    backgroundColor: t.overlay,
   },
   sheet: {
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderTopLeftRadius: radius.xl,
     borderTopRightRadius: radius.xl,
     paddingHorizontal: spacing.lg,
@@ -137,7 +131,7 @@ const styles = StyleSheet.create({
     width: 48,
     height: 4,
     borderRadius: 2,
-    backgroundColor: colors.surfaceMuted,
+    backgroundColor: t.surfaceMuted,
     marginTop: spacing.md,
     marginBottom: spacing.lg,
   },
@@ -148,12 +142,12 @@ const styles = StyleSheet.create({
     paddingBottom: spacing.md,
     marginBottom: spacing.sm,
     borderBottomWidth: 0.5,
-    borderBottomColor: colors.border,
+    borderBottomColor: t.border,
   },
   title: {
     fontSize: 17,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
   },
   row: {
     flexDirection: 'row',
@@ -163,7 +157,7 @@ const styles = StyleSheet.create({
   },
   rowBorder: {
     borderBottomWidth: 0.5,
-    borderBottomColor: colors.border,
+    borderBottomColor: t.border,
   },
   pressed: {
     opacity: 0.6,
@@ -172,7 +166,7 @@ const styles = StyleSheet.create({
     width: 36,
     height: 36,
     borderRadius: radius.md,
-    backgroundColor: colors.primaryLight,
+    backgroundColor: t.primaryLight,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -180,6 +174,6 @@ const styles = StyleSheet.create({
     flex: 1,
     fontSize: 16,
     fontWeight: '600',
-    color: colors.text,
+    color: t.text,
   },
-});
+}));

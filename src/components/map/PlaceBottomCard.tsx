@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Pressable, Text, View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { Place } from '../../types';
-import { colors, radius, shadow, spacing } from '../../theme';
+import { makeStyles, radius, shadow, spacing, useTheme } from '../../theme';
 import { t } from '../../i18n';
 import { getKosherLabel } from '../../utils/kosher';
 import { displayPlaceName, placeTypeLabel } from '../../utils/placeType';
@@ -32,6 +32,8 @@ export function PlaceBottomCard({
   onClose,
   onOpenDetails,
 }: PlaceBottomCardProps) {
+  const theme = useTheme();
+  const styles = useStyles();
   const [navOpen, setNavOpen] = useState(false);
   return (
     <View style={styles.card}>
@@ -42,7 +44,7 @@ export function PlaceBottomCard({
         <View style={styles.headerRight}>
           {place.category && <KosherBadge category={place.category} />}
           <Pressable onPress={onClose} hitSlop={8}>
-            <Ionicons name="close" size={22} color={colors.textMuted} />
+            <Ionicons name="close" size={22} color={theme.textMuted} />
           </Pressable>
         </View>
       </View>
@@ -51,7 +53,7 @@ export function PlaceBottomCard({
         {subtitle(place)}
       </Text>
       <View style={styles.addressRow}>
-        <Ionicons name="location-outline" size={14} color={colors.textMuted} />
+        <Ionicons name="location-outline" size={14} color={theme.textMuted} />
         <Text style={styles.address} numberOfLines={1}>
           {place.locationPrecision === 'city'
             ? `${place.address} · ${t.detail.approxLocation}`
@@ -67,7 +69,7 @@ export function PlaceBottomCard({
           style={styles.wazeBtn}
           onPress={() => setNavOpen(true)}
         >
-          <Ionicons name="navigate" size={18} color={colors.textInverse} />
+          <Ionicons name="navigate" size={18} color={theme.textInverse} />
           <Text style={styles.wazeText}>{t.detail.navigate}</Text>
         </Pressable>
       </View>
@@ -82,13 +84,13 @@ export function PlaceBottomCard({
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   card: {
     position: 'absolute',
     left: spacing.lg,
     right: spacing.lg,
     bottom: spacing.xl,
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderRadius: radius.xl,
     padding: spacing.lg,
     ...shadow.raised,
@@ -105,7 +107,7 @@ const styles = StyleSheet.create({
     fontSize: 17,
     fontWeight: '800',
     letterSpacing: -0.4,
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
   },
   headerRight: {
@@ -116,7 +118,7 @@ const styles = StyleSheet.create({
   subtitle: {
     fontSize: 13,
     fontWeight: '600',
-    color: colors.primary,
+    color: t.primary,
     textAlign: 'right',
     marginBottom: spacing.xs,
   },
@@ -128,7 +130,7 @@ const styles = StyleSheet.create({
   address: {
     flex: 1,
     fontSize: 12,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
   },
   actions: {
@@ -141,13 +143,13 @@ const styles = StyleSheet.create({
     paddingVertical: spacing.md,
     borderRadius: radius.pill,
     borderWidth: 1.5,
-    borderColor: colors.primary,
+    borderColor: t.primary,
     alignItems: 'center',
   },
   detailsText: {
     fontSize: 14,
     fontWeight: '700',
-    color: colors.primary,
+    color: t.primary,
   },
   wazeBtn: {
     flex: 1,
@@ -157,11 +159,11 @@ const styles = StyleSheet.create({
     gap: spacing.sm,
     paddingVertical: spacing.md,
     borderRadius: radius.pill,
-    backgroundColor: colors.primary,
+    backgroundColor: t.primary,
   },
   wazeText: {
     fontSize: 14,
     fontWeight: '700',
-    color: colors.textInverse,
+    color: t.textInverse,
   },
-});
+}));

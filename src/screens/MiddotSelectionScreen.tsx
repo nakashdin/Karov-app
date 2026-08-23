@@ -1,28 +1,23 @@
 import React, { useState } from 'react';
-import {
-  Pressable,
-  ScrollView,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
+import { Pressable, ScrollView, Text, View } from 'react-native';
 import { useNavigation, useRoute, RouteProp } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { colors, radius, spacing } from '../theme';
+import { alpha, makeStyles, radius, spacing, useTheme } from '../theme';
 import { RootStackParamList } from '../navigation/types';
 import { MIDDOT, MIDDAH_GROUPS } from '../data/jewish-content/middot';
 import { useCategoryPreferences } from '../hooks/useCategoryPreferences';
 import { useSelectedMiddot } from '../hooks/useSelectedMiddot';
 
 const MAX_MIDDOT = 3;
-const MIDDAH_COLOR = '#5D8A6F';
 
 type Nav = NativeStackNavigationProp<RootStackParamList>;
 type Route = RouteProp<RootStackParamList, 'MiddotSelection'>;
 
 export function MiddotSelectionScreen() {
+  const theme = useTheme();
+  const styles = useStyles();
   const navigation = useNavigation<Nav>();
   const route = useRoute<Route>();
   const isEditing = route.params?.isEditing ?? false;
@@ -55,7 +50,7 @@ export function MiddotSelectionScreen() {
         <View style={styles.headerSpacer} />
         <Text style={styles.headerTitle}>בחר מידה לעבוד עליה</Text>
         <Pressable onPress={() => navigation.goBack()} style={styles.backBtn} hitSlop={8}>
-          <Ionicons name="chevron-forward" size={22} color={colors.text} />
+          <Ionicons name="chevron-forward" size={22} color={theme.text} />
         </Pressable>
       </View>
 
@@ -98,7 +93,7 @@ export function MiddotSelectionScreen() {
                       accessibilityLabel={m.label}
                     >
                       {isSelected && (
-                        <Ionicons name="checkmark" size={13} color={MIDDAH_COLOR} />
+                        <Ionicons name="checkmark" size={13} color={theme.middot} />
                       )}
                       <Text style={[
                         styles.chipText,
@@ -146,10 +141,10 @@ export function MiddotSelectionScreen() {
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   root: {
     flex: 1,
-    backgroundColor: colors.background,
+    backgroundColor: t.background,
   },
   header: {
     flexDirection: 'row',
@@ -157,14 +152,14 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingHorizontal: spacing.lg,
     paddingVertical: spacing.md,
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderBottomWidth: 0.5,
-    borderBottomColor: colors.border,
+    borderBottomColor: t.border,
   },
   headerTitle: {
     fontSize: 17,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
   },
   headerSpacer: { width: 36 },
   backBtn: {
@@ -186,13 +181,13 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 22,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
     letterSpacing: -0.4,
   },
   subtitle: {
     fontSize: 13,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
   },
   group: {
@@ -202,12 +197,12 @@ const styles = StyleSheet.create({
   groupLabel: {
     fontSize: 15,
     fontWeight: '700',
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
   },
   groupDesc: {
     fontSize: 12,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
   },
   chipsRow: {
@@ -224,12 +219,12 @@ const styles = StyleSheet.create({
     paddingVertical: 9,
     borderRadius: radius.pill,
     borderWidth: 1.5,
-    borderColor: colors.border,
-    backgroundColor: colors.surface,
+    borderColor: t.border,
+    backgroundColor: t.surface,
   },
   chipSelected: {
-    borderColor: MIDDAH_COLOR,
-    backgroundColor: `${MIDDAH_COLOR}14`,
+    borderColor: t.middot,
+    backgroundColor: alpha(t.middot, 0.08),
   },
   chipDisabled: {
     opacity: 0.35,
@@ -237,20 +232,20 @@ const styles = StyleSheet.create({
   chipText: {
     fontSize: 14,
     fontWeight: '600',
-    color: colors.textMuted,
+    color: t.textMuted,
   },
   chipTextSelected: {
-    color: MIDDAH_COLOR,
+    color: t.middot,
   },
   chipTextDisabled: {
-    color: colors.textFaint,
+    color: t.textFaint,
   },
   footer: {
     padding: spacing.lg,
     gap: 10,
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderTopWidth: 0.5,
-    borderTopColor: colors.border,
+    borderTopColor: t.border,
   },
   selectedPills: {
     flexDirection: 'row',
@@ -259,30 +254,30 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   selectedPill: {
-    backgroundColor: `${MIDDAH_COLOR}18`,
+    backgroundColor: alpha(t.middot, 0.09),
     paddingHorizontal: 10,
     paddingVertical: 4,
     borderRadius: radius.pill,
     borderWidth: 1,
-    borderColor: `${MIDDAH_COLOR}40`,
+    borderColor: alpha(t.middot, 0.25),
   },
   selectedPillText: {
     fontSize: 12,
     fontWeight: '700',
-    color: MIDDAH_COLOR,
+    color: t.middot,
   },
   confirmBtn: {
-    backgroundColor: MIDDAH_COLOR,
+    backgroundColor: t.middot,
     paddingVertical: 14,
     borderRadius: radius.pill,
     alignItems: 'center',
   },
   confirmBtnDisabled: {
-    backgroundColor: colors.border,
+    backgroundColor: t.border,
   },
   confirmBtnText: {
     fontSize: 16,
     fontWeight: '700',
-    color: '#fff',
+    color: t.textInverse,
   },
-});
+}));

@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
-import { Platform, StyleSheet, useWindowDimensions, View, ViewStyle } from 'react-native';
+import { Platform, useWindowDimensions, View, ViewStyle } from 'react-native';
 import { SafeAreaView, Edge } from 'react-native-safe-area-context';
-import { colors, spacing } from '../theme';
+import { makeStyles, spacing } from '../theme';
 
 export const DESKTOP_BREAKPOINT = 900;
 
@@ -18,6 +18,7 @@ export function Screen({
   style,
   edges = ['top'],
 }: ScreenProps) {
+  const styles = useStyles();
   const { width } = useWindowDimensions();
   const isDesktop = Platform.OS === 'web' && width >= DESKTOP_BREAKPOINT;
 
@@ -38,10 +39,10 @@ export function Screen({
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   safe: {
     flex: 1,
-    backgroundColor: colors.background,
+    backgroundColor: t.background,
   },
   content: {
     flex: 1,
@@ -55,4 +56,4 @@ const styles = StyleSheet.create({
   padded: {
     paddingHorizontal: spacing.lg,
   },
-});
+}));

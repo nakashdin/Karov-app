@@ -1,15 +1,8 @@
 import React from 'react';
-import {
-  Modal,
-  Pressable,
-  ScrollView,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
+import { Modal, Pressable, ScrollView, Text, View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { colors, radius, spacing } from '../../theme';
+import { makeStyles, radius, spacing, useTheme } from '../../theme';
 import { MIDDAH_GROUPS, MIDDOT } from '../../data/jewish-content/middot';
 
 interface Props {
@@ -19,9 +12,9 @@ interface Props {
   onClose: () => void;
 }
 
-const MIDDAH_COLOR = '#5D8A6F';
-
 export function MiddahPickerModal({ visible, selected, onToggle, onClose }: Props) {
+  const theme = useTheme();
+  const styles = useStyles();
   const insets = useSafeAreaInsets();
 
   return (
@@ -35,7 +28,7 @@ export function MiddahPickerModal({ visible, selected, onToggle, onClose }: Prop
         {/* Header */}
         <View style={styles.header}>
           <Pressable onPress={onClose} style={styles.closeBtn} hitSlop={8}>
-            <Ionicons name="close" size={22} color={colors.text} />
+            <Ionicons name="close" size={22} color={theme.text} />
           </Pressable>
           <Text style={styles.headerTitle}>בחר מידה לשבוע</Text>
           <View style={styles.closeBtn} />
@@ -68,7 +61,7 @@ export function MiddahPickerModal({ visible, selected, onToggle, onClose }: Prop
                         accessibilityState={{ checked: isSelected }}
                       >
                         {isSelected && (
-                          <Ionicons name="checkmark" size={12} color="#fff" />
+                          <Ionicons name="checkmark" size={12} color={theme.textInverse} />
                         )}
                         <Text style={[styles.chipText, isSelected && styles.chipTextSelected]}>
                           {middah.label}
@@ -95,10 +88,10 @@ export function MiddahPickerModal({ visible, selected, onToggle, onClose }: Prop
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   root: {
     flex: 1,
-    backgroundColor: colors.background,
+    backgroundColor: t.background,
   },
   header: {
     flexDirection: 'row',
@@ -106,9 +99,9 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingHorizontal: spacing.lg,
     paddingVertical: spacing.md,
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderBottomWidth: 0.5,
-    borderBottomColor: colors.border,
+    borderBottomColor: t.border,
   },
   closeBtn: {
     width: 36,
@@ -119,11 +112,11 @@ const styles = StyleSheet.create({
   headerTitle: {
     fontSize: 16,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
   },
   subtitle: {
     fontSize: 13,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
     paddingHorizontal: spacing.lg,
     paddingTop: spacing.md,
@@ -141,12 +134,12 @@ const styles = StyleSheet.create({
   groupLabel: {
     fontSize: 15,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
   },
   groupDesc: {
     fontSize: 12,
-    color: colors.textFaint,
+    color: t.textFaint,
     textAlign: 'right',
   },
   chipsRow: {
@@ -163,32 +156,32 @@ const styles = StyleSheet.create({
     paddingVertical: 8,
     borderRadius: radius.pill,
     borderWidth: 1.5,
-    borderColor: colors.border,
-    backgroundColor: colors.surface,
+    borderColor: t.border,
+    backgroundColor: t.surface,
   },
   chipSelected: {
-    borderColor: MIDDAH_COLOR,
-    backgroundColor: MIDDAH_COLOR,
+    borderColor: t.middot,
+    backgroundColor: t.middot,
   },
   chipText: {
     fontSize: 14,
     fontWeight: '600',
-    color: colors.text,
+    color: t.text,
   },
   chipTextSelected: {
-    color: '#fff',
+    color: t.textInverse,
   },
   doneBtn: {
     marginHorizontal: spacing.lg,
     marginTop: spacing.sm,
     paddingVertical: 14,
     borderRadius: radius.lg,
-    backgroundColor: MIDDAH_COLOR,
+    backgroundColor: t.middot,
     alignItems: 'center',
   },
   doneBtnText: {
     fontSize: 15,
     fontWeight: '700',
-    color: '#fff',
+    color: t.textInverse,
   },
-});
+}));

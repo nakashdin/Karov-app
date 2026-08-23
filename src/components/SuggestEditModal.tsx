@@ -1,16 +1,7 @@
 import React, { useState } from 'react';
-import {
-  Linking,
-  Modal,
-  Pressable,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TextInput,
-  View,
-} from 'react-native';
+import { Linking, Modal, Pressable, ScrollView, Text, TextInput, View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { colors, radius, shadow, spacing } from '../theme';
+import { makeStyles, radius, shadow, spacing, useTheme } from '../theme';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -72,6 +63,8 @@ interface Props {
 }
 
 export function SuggestEditModal({ visible, placeId, placeName, onClose }: Props) {
+  const theme = useTheme();
+  const styles = useStyles();
   const [fieldType, setFieldType] = useState<FieldType>('hours');
   const [content, setContent] = useState('');
   const [submitterName, setSubmitterName] = useState('');
@@ -117,7 +110,7 @@ export function SuggestEditModal({ visible, placeId, placeName, onClose }: Props
         <View style={styles.header}>
           <Text style={styles.title}>עדכון מהקהילה</Text>
           <Pressable onPress={handleClose} hitSlop={10}>
-            <Ionicons name="close" size={22} color={colors.textMuted} />
+            <Ionicons name="close" size={22} color={theme.textMuted} />
           </Pressable>
         </View>
         <Text style={styles.subtitle}>
@@ -148,7 +141,7 @@ export function SuggestEditModal({ visible, placeId, placeName, onClose }: Props
                   <Ionicons
                     name={opt.icon as any}
                     size={14}
-                    color={fieldType === opt.key ? colors.textInverse : colors.textMuted}
+                    color={fieldType === opt.key ? theme.textInverse : theme.textMuted}
                   />
                   <Text style={[styles.chipText, fieldType === opt.key && styles.chipTextActive]}>
                     {opt.label}
@@ -162,7 +155,7 @@ export function SuggestEditModal({ visible, placeId, placeName, onClose }: Props
             <TextInput
               style={styles.textarea}
               placeholder="לדוגמה: א׳-ה׳ 08:00–22:00, שישי עד 14:00"
-              placeholderTextColor={colors.textMuted}
+              placeholderTextColor={theme.textMuted}
               value={content}
               onChangeText={setContent}
               multiline
@@ -175,7 +168,7 @@ export function SuggestEditModal({ visible, placeId, placeName, onClose }: Props
             <TextInput
               style={styles.input}
               placeholder="ישראל ישראלי"
-              placeholderTextColor={colors.textMuted}
+              placeholderTextColor={theme.textMuted}
               value={submitterName}
               onChangeText={setSubmitterName}
               textAlign="right"
@@ -187,7 +180,7 @@ export function SuggestEditModal({ visible, placeId, placeName, onClose }: Props
               onPress={handleSubmit}
               disabled={!content.trim() || status === 'sending'}
             >
-              <Ionicons name="paper-plane-outline" size={18} color={colors.textInverse} />
+              <Ionicons name="paper-plane-outline" size={18} color={theme.textInverse} />
               <Text style={styles.submitText}>
                 {status === 'sending' ? 'שולח...' : 'שלח לאישור'}
               </Text>
@@ -205,13 +198,13 @@ export function SuggestEditModal({ visible, placeId, placeName, onClose }: Props
 
 // ─── Styles ───────────────────────────────────────────────────────────────────
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   backdrop: {
     flex: 1,
-    backgroundColor: 'rgba(0,0,0,0.4)',
+    backgroundColor: t.overlay,
   },
   sheet: {
-    backgroundColor: colors.background,
+    backgroundColor: t.background,
     borderTopLeftRadius: radius.xl,
     borderTopRightRadius: radius.xl,
     paddingHorizontal: spacing.lg,
@@ -223,7 +216,7 @@ const styles = StyleSheet.create({
     width: 36,
     height: 4,
     borderRadius: 2,
-    backgroundColor: colors.border,
+    backgroundColor: t.border,
     alignSelf: 'center',
     marginTop: spacing.md,
     marginBottom: spacing.md,
@@ -237,24 +230,24 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 20,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
     letterSpacing: -0.5,
   },
   subtitle: {
     fontSize: 14,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
     marginBottom: spacing.lg,
   },
   placeName: {
     fontWeight: '700',
-    color: colors.text,
+    color: t.text,
   },
 
   sectionLabel: {
     fontSize: 13,
     fontWeight: '700',
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
     marginBottom: spacing.sm,
   },
@@ -274,44 +267,44 @@ const styles = StyleSheet.create({
     paddingHorizontal: spacing.md,
     paddingVertical: 7,
     borderRadius: radius.pill,
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderWidth: 1.5,
-    borderColor: colors.border,
+    borderColor: t.border,
   },
   chipActive: {
-    backgroundColor: colors.primary,
-    borderColor: colors.primary,
+    backgroundColor: t.primary,
+    borderColor: t.primary,
   },
   chipText: {
     fontSize: 13,
     fontWeight: '600',
-    color: colors.textMuted,
+    color: t.textMuted,
   },
   chipTextActive: {
-    color: colors.textInverse,
+    color: t.textInverse,
   },
 
   // ── Inputs ───────────────────────────────────────────────
   textarea: {
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderRadius: radius.lg,
     borderWidth: 1.5,
-    borderColor: colors.border,
+    borderColor: t.border,
     padding: spacing.md,
     fontSize: 15,
-    color: colors.text,
+    color: t.text,
     minHeight: 100,
     textAlignVertical: 'top',
     marginBottom: spacing.lg,
   },
   input: {
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderRadius: radius.lg,
     borderWidth: 1.5,
-    borderColor: colors.border,
+    borderColor: t.border,
     padding: spacing.md,
     fontSize: 15,
-    color: colors.text,
+    color: t.text,
     height: 48,
     marginBottom: spacing.lg,
   },
@@ -322,7 +315,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     gap: spacing.sm,
-    backgroundColor: colors.primary,
+    backgroundColor: t.primary,
     borderRadius: radius.pill,
     height: 52,
     marginBottom: spacing.md,
@@ -333,11 +326,11 @@ const styles = StyleSheet.create({
   submitText: {
     fontSize: 16,
     fontWeight: '700',
-    color: colors.textInverse,
+    color: t.textInverse,
   },
   disclaimer: {
     fontSize: 12,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'center',
     marginBottom: spacing.md,
   },
@@ -352,16 +345,16 @@ const styles = StyleSheet.create({
   doneTitle: {
     fontSize: 24,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
   },
   doneSub: {
     fontSize: 15,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'center',
   },
   doneBtn: {
     marginTop: spacing.md,
-    backgroundColor: colors.primary,
+    backgroundColor: t.primary,
     borderRadius: radius.pill,
     paddingHorizontal: spacing.xxl,
     paddingVertical: spacing.md,
@@ -369,6 +362,6 @@ const styles = StyleSheet.create({
   doneBtnText: {
     fontSize: 15,
     fontWeight: '700',
-    color: colors.textInverse,
+    color: t.textInverse,
   },
-});
+}));

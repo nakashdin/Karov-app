@@ -17,6 +17,7 @@ export const StorageKey = {
   auth: '@karov/auth',
   deviceId: '@karov/deviceId',
   locale: '@karov/locale',
+  colorScheme: '@karov/colorScheme',
 
   // ── Preferences ────────────────────────────────────────────────────────────
   nusach: '@karov/nusach',

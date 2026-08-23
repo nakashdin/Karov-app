@@ -1,6 +1,6 @@
 import React from 'react';
-import { Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
-import { colors, radius, spacing } from '../theme';
+import { Platform, Pressable, ScrollView, Text, View } from 'react-native';
+import { makeStyles, radius, spacing } from '../theme';
 
 interface Props {
   children: React.ReactNode;
@@ -42,51 +42,67 @@ export class ErrorBoundary extends React.Component<Props, State> {
     const { error, info } = this.state;
     if (!error) return this.props.children;
 
-    return (
-      <View style={styles.container}>
-        <View style={styles.card}>
-          <Text style={styles.emoji}>🛠️</Text>
-          <Text style={styles.title}>משהו השתבש</Text>
-          <Text style={styles.body}>
-            אירעה תקלה בלתי צפויה. אפשר לנסות שוב — ואם זה חוזר, נשמח לדיווח.
-          </Text>
-
-          <Pressable
-            style={styles.button}
-            onPress={this.reset}
-            accessibilityRole="button"
-            accessibilityLabel="נסה שוב"
-          >
-            <Text style={styles.buttonText}>נסה שוב</Text>
-          </Pressable>
-
-          {__DEV__ && (
-            <ScrollView style={styles.details}>
-              <Text style={styles.detailsText}>{error.message}</Text>
-              {!!info?.componentStack && (
-                <Text style={styles.detailsText}>{info.componentStack}</Text>
-              )}
-            </ScrollView>
-          )}
-        </View>
-      </View>
-    );
+    // A class component cannot call hooks, so styling — which now needs the
+    // colour scheme — lives in a functional child instead.
+    return <ErrorFallback error={error} info={info} onReset={this.reset} />;
   }
 }
 
-const styles = StyleSheet.create({
+function ErrorFallback({
+  error,
+  info,
+  onReset,
+}: {
+  error: Error;
+  info: React.ErrorInfo | null;
+  onReset: () => void;
+}) {
+  const styles = useStyles();
+
+  return (
+    <View style={styles.container}>
+      <View style={styles.card}>
+        <Text style={styles.emoji}>🛠️</Text>
+        <Text style={styles.title}>משהו השתבש</Text>
+        <Text style={styles.body}>
+          אירעה תקלה בלתי צפויה. אפשר לנסות שוב — ואם זה חוזר, נשמח לדיווח.
+        </Text>
+
+        <Pressable
+          style={styles.button}
+          onPress={onReset}
+          accessibilityRole="button"
+          accessibilityLabel="נסה שוב"
+        >
+          <Text style={styles.buttonText}>נסה שוב</Text>
+        </Pressable>
+
+        {__DEV__ && (
+          <ScrollView style={styles.details}>
+            <Text style={styles.detailsText}>{error.message}</Text>
+            {!!info?.componentStack && (
+              <Text style={styles.detailsText}>{info.componentStack}</Text>
+            )}
+          </ScrollView>
+        )}
+      </View>
+    </View>
+  );
+}
+
+const useStyles = makeStyles((t) => ({
   container: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: colors.background,
+    backgroundColor: t.background,
     padding: spacing.xl,
   },
   card: {
     width: '100%',
     maxWidth: 420,
     alignItems: 'center',
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderRadius: radius.xl,
     padding: spacing.xl,
   },
@@ -97,14 +113,14 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 20,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
     writingDirection: 'rtl',
     marginBottom: spacing.sm,
   },
   body: {
     fontSize: 15,
     lineHeight: 22,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'center',
     writingDirection: 'rtl',
     marginBottom: spacing.xl,
@@ -114,13 +130,13 @@ const styles = StyleSheet.create({
     paddingVertical: spacing.md,
     paddingHorizontal: spacing.xl,
     borderRadius: radius.pill,
-    backgroundColor: colors.primary,
+    backgroundColor: t.primary,
     alignItems: 'center',
   },
   buttonText: {
     fontSize: 16,
     fontWeight: '700',
-    color: colors.textInverse,
+    color: t.textInverse,
   },
   details: {
     maxHeight: 220,
@@ -128,11 +144,11 @@ const styles = StyleSheet.create({
     marginTop: spacing.lg,
     padding: spacing.md,
     borderRadius: radius.md,
-    backgroundColor: colors.surfaceMuted,
+    backgroundColor: t.surfaceMuted,
   },
   detailsText: {
     fontSize: 11,
-    color: colors.textMuted,
+    color: t.textMuted,
     fontFamily: Platform.OS === 'ios' ? 'Menlo' : 'monospace',
   },
-});
+}));

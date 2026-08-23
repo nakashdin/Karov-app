@@ -1,6 +1,6 @@
 import { GeoPoint, Place } from '../../types';
-import { colors } from '../../theme';
-import { categoryColor } from '../../utils/kosher';
+import type { Tokens } from '../../theme';
+import { categoryColorFor } from '../../utils/kosher';
 import {
   LEAFLET_CSS,
   LEAFLET_JS,
@@ -15,11 +15,11 @@ export const DEFAULT_ZOOM = 7.5;
 export const USER_ZOOM = 13;
 
 /** Marker color: food category for restaurants, water-blue for mikvahs, violet for Chabad houses, brand green otherwise. */
-function markerColor(place: Place): string {
-  if (place.type === 'chabad_house') return colors.chabad;
-  if (place.category) return categoryColor[place.category];
-  if (place.type === 'mikveh') return '#2b8cbe';
-  return colors.primary;
+function markerColor(place: Place, theme: Tokens): string {
+  if (place.type === 'chabad_house') return theme.chabad;
+  if (place.category) return categoryColorFor(theme)[place.category];
+  if (place.type === 'mikveh') return theme.map.clusterAccent;
+  return theme.primary;
 }
 
 /**
@@ -37,6 +37,7 @@ function markerColor(place: Place): string {
 export function buildLeafletHtml(
   places: Place[],
   userLocation: GeoPoint | null,
+  theme: Tokens,
   options?: { initialCenter?: [number, number]; initialZoom?: number; highlightId?: string },
 ): string {
   const markers = places.map((p) => ({
@@ -44,7 +45,7 @@ export function buildLeafletHtml(
     name: p.name,
     lat: p.location.latitude,
     lng: p.location.longitude,
-    color: markerColor(p),
+    color: markerColor(p, theme),
   }));
 
   const center = options?.initialCenter
@@ -112,7 +113,7 @@ export function buildLeafletHtml(
 
     if (USER) {
       L.circleMarker(USER, {
-        radius: 8, color: '#ffffff', weight: 3, fillColor: '${colors.primary}', fillOpacity: 1
+        radius: 8, color: '${theme.map.markerLabel}', weight: 3, fillColor: '${theme.primary}', fillOpacity: 1
       }).addTo(map);
     }
   </script>

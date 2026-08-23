@@ -20,7 +20,7 @@ import { StarRating } from '../components/StarRating';
 import { Loading } from '../components/Loading';
 import { EmptyState } from '../components/EmptyState';
 import { SuggestEditModal } from '../components/SuggestEditModal';
-import { colors, radius, shadow, sizes, spacing } from '../theme';
+import { makeStyles, radius, shadow, spacing, useTheme } from '../theme';
 import { useLanguage } from '../context/LanguageContext';
 import { transliterateHebrew } from '../utils/transliterate';
 import { usePlace } from '../hooks/usePlace';
@@ -36,15 +36,6 @@ import { RootStackParamList } from '../navigation/types';
 
 type Nav = NativeStackNavigationProp<RootStackParamList>;
 type DetailRoute = RouteProp<RootStackParamList, 'PlaceDetail'>;
-
-const TYPE_COLOR: Record<string, string> = {
-  restaurant:   colors.categoryRestaurant,
-  winery:       colors.categoryWinery,
-  synagogue:    colors.categorySynagogue,
-  mikveh:       colors.categoryMikveh,
-  chabad_house: colors.chabad,
-  tzaddik_grave: colors.tzaddik,
-};
 
 const TYPE_EMOJI: Record<string, string> = {
   restaurant:   '🍽️',
@@ -96,6 +87,10 @@ function kosherStandards(details: NonNullable<ReturnType<typeof usePlace>['place
 // ─── Main screen ─────────────────────────────────────────────────────────────
 
 export function PlaceDetailScreen() {
+  const theme = useTheme();
+  const styles = useStyles();
+  const sectionStyles = useSectionStyles();
+  const tzStyles = useTzStyles();
   const { t, locale } = useLanguage();
   const isHe = locale === 'he';
   const navigation = useNavigation<Nav>();
@@ -116,7 +111,7 @@ export function PlaceDetailScreen() {
       title: place ? (isHe ? displayPlaceName(place) : transliterateHebrew(displayPlaceName(place))) : '',
       headerLeft: () => (
         <Pressable onPress={() => navigation.goBack()} hitSlop={12} style={{ paddingEnd: 8 }}>
-          <Ionicons name="chevron-forward" size={26} color={colors.primary} />
+          <Ionicons name="chevron-forward" size={26} color={theme.primary} />
         </Pressable>
       ),
       headerRight: () => (
@@ -124,7 +119,7 @@ export function PlaceDetailScreen() {
           <Ionicons
             name={fav ? 'heart' : 'heart-outline'}
             size={24}
-            color={fav ? colors.danger : colors.text}
+            color={fav ? theme.danger : theme.text}
           />
         </Pressable>
       ),
@@ -138,7 +133,7 @@ export function PlaceDetailScreen() {
 
   const dist     = location ? distanceKm(location, place.location) : null;
   const chips    = buildChips(place);
-  const accent   = colors.primary;
+  const accent   = theme.primary;
   const mapCenter: [number, number] = [place.location.latitude, place.location.longitude];
 
   const isTzaddikContext = place.type === 'tzaddik_grave' || (place.tags?.includes('tzaddik_grave') ?? false);
@@ -180,7 +175,7 @@ export function PlaceDetailScreen() {
           <Ionicons
             name="map-outline"
             size={14}
-            color={tab === 'map' ? colors.textInverse : colors.textMuted}
+            color={tab === 'map' ? theme.textInverse : theme.textMuted}
           />
           <Text style={[styles.toggleText, tab === 'map' && styles.toggleTextActive]}>מפה</Text>
         </Pressable>
@@ -202,7 +197,7 @@ export function PlaceDetailScreen() {
               highlightId={place.id}
             />
             <View style={styles.mapOverlayHint}>
-              <Ionicons name="expand-outline" size={16} color={colors.textInverse} />
+              <Ionicons name="expand-outline" size={16} color={theme.textInverse} />
               <Text style={styles.mapHintText}>הקש לפתיחת מפה מלאה</Text>
             </View>
           </Pressable>
@@ -303,7 +298,7 @@ export function PlaceDetailScreen() {
           <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.gallery}>
             {place.kosherCertUrl ? (() => {
               const expired = !!place.certificateValidUntil && place.certificateValidUntil < todayISO();
-              const tint = expired ? colors.danger : accent;
+              const tint = expired ? theme.danger : accent;
               return (
                 <Pressable
                   style={[styles.galleryCert, { borderColor: tint + '55', backgroundColor: tint + '0D' }]}
@@ -314,7 +309,7 @@ export function PlaceDetailScreen() {
                   {place.certifiedBy ? (
                     <Text style={styles.galleryCertBody} numberOfLines={1}>{place.certifiedBy}</Text>
                   ) : null}
-                  <Text style={[styles.galleryCertBody, expired && { color: colors.danger }]} numberOfLines={1}>
+                  <Text style={[styles.galleryCertBody, expired && { color: theme.danger }]} numberOfLines={1}>
                     {certStatusLabel(place.certificateValidUntil)}
                   </Text>
                 </Pressable>
@@ -352,7 +347,7 @@ export function PlaceDetailScreen() {
               <Ionicons
                 name={bioOpen ? 'chevron-up' : 'chevron-down'}
                 size={16}
-                color={colors.textFaint}
+                color={theme.textFaint}
               />
             </Pressable>
 
@@ -375,7 +370,7 @@ export function PlaceDetailScreen() {
 
                 {bio.hillula ? (
                   <View style={tzStyles.hillulaRow}>
-                    <Ionicons name="flame-outline" size={13} color={colors.tzaddik} />
+                    <Ionicons name="flame-outline" size={13} color={theme.tzaddik} />
                     <Text style={tzStyles.hillulaText}>הילולה: {bio.hillula.label}</Text>
                   </View>
                 ) : null}
@@ -402,7 +397,7 @@ export function PlaceDetailScreen() {
               <Ionicons
                 name={prayerOpen ? 'chevron-up' : 'chevron-down'}
                 size={16}
-                color={colors.textFaint}
+                color={theme.textFaint}
               />
             </Pressable>
 
@@ -547,7 +542,7 @@ export function PlaceDetailScreen() {
               {place.type === 'mikveh' && place.openingHours ? (() => {
                 const open = isCurrentlyOpen(place.openingHours, place.location);
                 return open === null ? null : (
-                  <DetailRow icon={open ? 'checkmark-circle' : 'close-circle'} label="סטטוס" value={open ? 'פתוח כעת' : 'סגור כעת'} accent={open ? '#1B873F' : '#C0394A'} />
+                  <DetailRow icon={open ? 'checkmark-circle' : 'close-circle'} label="סטטוס" value={open ? 'פתוח כעת' : 'סגור כעת'} accent={open ? theme.success : theme.danger} />
                 );
               })() : null}
               {place.openingHours ? (
@@ -604,7 +599,7 @@ export function PlaceDetailScreen() {
 
           {place.locationPrecision === 'city' ? (
             <View style={styles.approxNote}>
-              <Ionicons name="information-circle-outline" size={14} color={colors.textMuted} />
+              <Ionicons name="information-circle-outline" size={14} color={theme.textMuted} />
               <Text style={styles.approxText}>{t.detail.approxLocation}</Text>
             </View>
           ) : null}
@@ -628,12 +623,12 @@ export function PlaceDetailScreen() {
 
         {/* ── תרומה לקהילה ───────────────────────────────────── */}
         <Pressable style={styles.suggestBtn} onPress={() => setSuggestOpen(true)}>
-          <Ionicons name="people-outline" size={18} color={colors.primary} />
+          <Ionicons name="people-outline" size={18} color={theme.primary} />
           <View style={styles.suggestText}>
             <Text style={styles.suggestTitle}>כל עדכון שלכם תורם לקהילה</Text>
             <Text style={styles.suggestSub}>שעות, טלפון, כשרות ועוד — ביחד משפרים</Text>
           </View>
-          <Ionicons name="chevron-back" size={16} color={colors.textMuted} />
+          <Ionicons name="chevron-back" size={16} color={theme.textMuted} />
         </Pressable>
 
         {/* ── דווח על טעות ───────────────────────────────────── */}
@@ -641,7 +636,7 @@ export function PlaceDetailScreen() {
           style={styles.reportBtn}
           onPress={() => navigation.navigate('Report', { placeId: place.id })}
         >
-          <Ionicons name="flag-outline" size={15} color={colors.danger} />
+          <Ionicons name="flag-outline" size={15} color={theme.danger} />
           <Text style={styles.reportText}>{t.detail.report}</Text>
         </Pressable>
 
@@ -669,6 +664,7 @@ export function PlaceDetailScreen() {
 // ─── Sub-components ───────────────────────────────────────────────────────────
 
 function SectionCard({ title, children }: { title: string; children: React.ReactNode }) {
+  const sectionStyles = useSectionStyles();
   return (
     <View style={sectionStyles.card}>
       <Text style={sectionStyles.title}>{title}</Text>
@@ -687,14 +683,16 @@ function QuickAction({
   disabled?: boolean;
   onPress?: () => void;
 }) {
+  const theme = useTheme();
+  const qaStyles = useQaStyles();
   return (
     <Pressable
       style={[qaStyles.btn, filled && { backgroundColor: color }, disabled && qaStyles.disabled]}
       onPress={onPress}
       disabled={disabled}
     >
-      <Ionicons name={icon} size={22} color={filled ? '#fff' : disabled ? colors.textMuted : color} />
-      <Text style={[qaStyles.label, { color: filled ? '#fff' : disabled ? colors.textMuted : color }]}>
+      <Ionicons name={icon} size={22} color={filled ? theme.textInverse : disabled ? theme.textMuted : color} />
+      <Text style={[qaStyles.label, { color: filled ? theme.textInverse : disabled ? theme.textMuted : color }]}>
         {label}
       </Text>
     </Pressable>
@@ -714,11 +712,13 @@ function DetailRow({
   multiline?: boolean;
   empty?: boolean;
 }) {
+  const theme = useTheme();
+  const drStyles = useDrStyles();
   const inner = (
     <View style={drStyles.row}>
       {/* Icon box */}
-      <View style={[drStyles.iconBox, { backgroundColor: empty ? colors.border : accent + '18' }]}>
-        <Ionicons name={icon} size={18} color={empty ? colors.textMuted : accent} />
+      <View style={[drStyles.iconBox, { backgroundColor: empty ? theme.border : accent + '18' }]}>
+        <Ionicons name={icon} size={18} color={empty ? theme.textMuted : accent} />
       </View>
 
       {/* Text */}
@@ -737,7 +737,7 @@ function DetailRow({
       </View>
 
       {/* Arrow for tappable rows */}
-      {tappable && <Ionicons name="chevron-back" size={16} color={colors.textMuted} />}
+      {tappable && <Ionicons name="chevron-back" size={16} color={theme.textMuted} />}
     </View>
   );
 
@@ -753,13 +753,13 @@ function DetailRow({
 
 // ─── Styles ───────────────────────────────────────────────────────────────────
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   // Toggle
   toggleRow: {
     flexDirection: 'row',
     marginHorizontal: spacing.lg,
     marginVertical: spacing.sm,
-    backgroundColor: colors.border,
+    backgroundColor: t.border,
     borderRadius: radius.pill,
     padding: 3,
   },
@@ -772,9 +772,9 @@ const styles = StyleSheet.create({
     paddingVertical: 8,
     borderRadius: radius.pill,
   },
-  toggleActive: { backgroundColor: colors.primary },
-  toggleText: { fontSize: 14, fontWeight: '700', color: colors.textMuted },
-  toggleTextActive: { color: colors.textInverse },
+  toggleActive: { backgroundColor: t.primary },
+  toggleText: { fontSize: 14, fontWeight: '700', color: t.textMuted },
+  toggleTextActive: { color: t.textInverse },
 
   // Map tab
   mapContainer: { flex: 1 },
@@ -793,12 +793,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 6,
-    backgroundColor: 'rgba(0,0,0,0.55)',
+    backgroundColor: t.overlayStrong,
     borderRadius: radius.pill,
     paddingHorizontal: spacing.md,
     paddingVertical: 6,
   },
-  mapHintText: { fontSize: 12, fontWeight: '600', color: '#fff' },
+  mapHintText: { fontSize: 12, fontWeight: '600', color: t.textInverse },
 
   // Info tab scroll
   scroll: { paddingBottom: spacing.xxl },
@@ -814,7 +814,7 @@ const styles = StyleSheet.create({
   },
   heroImageOverlay: {
     ...StyleSheet.absoluteFill,
-    backgroundColor: 'rgba(0,0,0,0.25)',
+    backgroundColor: t.overlaySoft,
   },
   heroIconBadge: {
     width: 44,
@@ -838,7 +838,7 @@ const styles = StyleSheet.create({
 
   // Name card (overlaps hero)
   nameCard: {
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     marginHorizontal: spacing.lg,
     marginTop: -28,
     borderRadius: radius.lg,
@@ -848,14 +848,14 @@ const styles = StyleSheet.create({
   placeName: {
     fontSize: 24,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
     marginBottom: 2,
     letterSpacing: -0.6,
   },
   placeNameHe: {
     fontSize: 13,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
     marginBottom: spacing.sm,
   },
@@ -866,12 +866,12 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
   },
   chip: {
-    backgroundColor: colors.border,
+    backgroundColor: t.border,
     borderRadius: radius.pill,
     paddingHorizontal: spacing.md,
     paddingVertical: 4,
   },
-  chipText: { fontSize: 12, fontWeight: '600', color: colors.textMuted },
+  chipText: { fontSize: 12, fontWeight: '600', color: t.textMuted },
   metaRow: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -879,11 +879,11 @@ const styles = StyleSheet.create({
     marginTop: spacing.xs,
     gap: 4,
   },
-  ratingNum: { fontSize: 14, fontWeight: '700', color: colors.text },
-  distance: { fontSize: 13, color: colors.textMuted },
+  ratingNum: { fontSize: 14, fontWeight: '700', color: t.text },
+  distance: { fontSize: 13, color: t.textMuted },
   description: {
     fontSize: 14,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
     lineHeight: 21,
     marginTop: spacing.sm,
@@ -942,7 +942,7 @@ const styles = StyleSheet.create({
   galleryCertTitle: { fontSize: 13, fontWeight: '700' },
   galleryCertBody: {
     fontSize: 11,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'center',
   },
 
@@ -957,7 +957,7 @@ const styles = StyleSheet.create({
   ratingBigNum: { fontSize: 32, fontWeight: '800' },
   noReviews: {
     fontSize: 14,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
     marginBottom: spacing.md,
   },
@@ -980,25 +980,25 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
     paddingVertical: spacing.sm,
   },
-  approxText: { fontSize: 12, color: colors.textMuted },
+  approxText: { fontSize: 12, color: t.textMuted },
 
   // Community suggest
   suggestBtn: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: spacing.md,
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderRadius: radius.lg,
     padding: spacing.lg,
     marginHorizontal: spacing.lg,
     marginTop: spacing.lg,
     borderWidth: 1.5,
-    borderColor: colors.primary + '33',
+    borderColor: t.primary + '33',
     ...shadow.card,
   },
   suggestText: { flex: 1, alignItems: 'flex-end' },
-  suggestTitle: { fontSize: 15, fontWeight: '700', color: colors.text, textAlign: 'right' },
-  suggestSub: { fontSize: 13, color: colors.textMuted, textAlign: 'right', marginTop: 2 },
+  suggestTitle: { fontSize: 15, fontWeight: '700', color: t.text, textAlign: 'right' },
+  suggestSub: { fontSize: 13, color: t.textMuted, textAlign: 'right', marginTop: 2 },
 
   // Report
   reportBtn: {
@@ -1009,13 +1009,13 @@ const styles = StyleSheet.create({
     marginTop: spacing.xl,
     paddingVertical: spacing.sm,
   },
-  reportText: { fontSize: 13, fontWeight: '600', color: colors.danger },
-});
+  reportText: { fontSize: 13, fontWeight: '600', color: t.danger },
+}));
 
 // Section card styles
-const sectionStyles = StyleSheet.create({
+const useSectionStyles = makeStyles((t) => ({
   card: {
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderRadius: radius.lg,
     marginHorizontal: spacing.lg,
     marginTop: spacing.lg,
@@ -1026,16 +1026,16 @@ const sectionStyles = StyleSheet.create({
   title: {
     fontSize: 18,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
     paddingHorizontal: spacing.lg,
     marginBottom: spacing.md,
     letterSpacing: -0.4,
   },
-});
+}));
 
 // Quick action button styles
-const qaStyles = StyleSheet.create({
+const useQaStyles = makeStyles((t) => ({
   btn: {
     flex: 1,
     alignItems: 'center',
@@ -1043,17 +1043,17 @@ const qaStyles = StyleSheet.create({
     gap: 5,
     paddingVertical: spacing.md,
     borderRadius: radius.md,
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderWidth: 1,
-    borderColor: colors.border,
+    borderColor: t.border,
     ...shadow.card,
   },
   label: { fontSize: 11, fontWeight: '700' },
   disabled: { opacity: 0.38 },
-});
+}));
 
 // Detail row styles
-const drStyles = StyleSheet.create({
+const useDrStyles = makeStyles((t) => ({
   row: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -1061,7 +1061,7 @@ const drStyles = StyleSheet.create({
     paddingHorizontal: spacing.lg,
     paddingVertical: 10,
     borderBottomWidth: 0.5,
-    borderBottomColor: colors.border,
+    borderBottomColor: t.border,
   },
   iconBox: {
     width: 36,
@@ -1072,14 +1072,14 @@ const drStyles = StyleSheet.create({
     flexShrink: 0,
   },
   textBlock: { flex: 1, alignItems: 'flex-end' },
-  label: { fontSize: 11, color: colors.textMuted, marginBottom: 2, textAlign: 'right' },
-  value: { fontSize: 15, fontWeight: '600', color: colors.text, textAlign: 'right' },
-  valuePlaceholder: { color: colors.textMuted, fontWeight: '400' },
-});
+  label: { fontSize: 11, color: t.textMuted, marginBottom: 2, textAlign: 'right' },
+  value: { fontSize: 15, fontWeight: '600', color: t.text, textAlign: 'right' },
+  valuePlaceholder: { color: t.textMuted, fontWeight: '400' },
+}));
 
 // ─── Tzaddik-specific styles ──────────────────────────────────────────────────
 
-const tzStyles = StyleSheet.create({
+const useTzStyles = makeStyles((t) => ({
   header: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -1087,12 +1087,12 @@ const tzStyles = StyleSheet.create({
     paddingHorizontal: spacing.lg,
     paddingVertical: 14,
     borderBottomWidth: StyleSheet.hairlineWidth,
-    borderBottomColor: colors.border,
+    borderBottomColor: t.border,
   },
   headerTitle: {
     fontSize: 14,
     fontWeight: '700',
-    color: colors.text,
+    color: t.text,
   },
   body: {
     padding: spacing.lg,
@@ -1100,7 +1100,7 @@ const tzStyles = StyleSheet.create({
   },
   eraBadge: {
     alignSelf: 'flex-start',
-    backgroundColor: colors.tzaddik + '18',
+    backgroundColor: t.tzaddik + '18',
     borderRadius: radius.md,
     paddingHorizontal: 10,
     paddingVertical: 4,
@@ -1108,18 +1108,18 @@ const tzStyles = StyleSheet.create({
   eraText: {
     fontSize: 12,
     fontWeight: '700',
-    color: colors.tzaddik,
+    color: t.tzaddik,
   },
   bioText: {
     fontSize: 14.5,
-    color: colors.text,
+    color: t.text,
     lineHeight: 24,
     textAlign: 'right',
   },
   quoteBlock: {
     borderRightWidth: 3,
-    borderRightColor: colors.tzaddik + '88',
-    backgroundColor: colors.tzaddik + '0D',
+    borderRightColor: t.tzaddik + '88',
+    backgroundColor: t.tzaddik + '0D',
     borderRadius: radius.sm,
     paddingHorizontal: spacing.md,
     paddingVertical: spacing.sm,
@@ -1128,14 +1128,14 @@ const tzStyles = StyleSheet.create({
   quoteText: {
     fontSize: 15,
     fontWeight: '600',
-    color: colors.text,
+    color: t.text,
     lineHeight: 26,
     textAlign: 'right',
     fontStyle: 'italic',
   },
   quoteSource: {
     fontSize: 11,
-    color: colors.textMuted,
+    color: t.textMuted,
     fontWeight: '600',
     textAlign: 'right',
   },
@@ -1147,7 +1147,7 @@ const tzStyles = StyleSheet.create({
   },
   hillulaText: {
     fontSize: 12,
-    color: colors.tzaddik,
+    color: t.tzaddik,
     fontWeight: '700',
   },
   sourcesRow: {
@@ -1156,17 +1156,17 @@ const tzStyles = StyleSheet.create({
     gap: 6,
     paddingTop: 4,
     borderTopWidth: StyleSheet.hairlineWidth,
-    borderTopColor: colors.border,
+    borderTopColor: t.border,
   },
   sourceTag: {
-    backgroundColor: colors.surfaceMuted,
+    backgroundColor: t.surfaceMuted,
     borderRadius: 6,
     paddingHorizontal: 8,
     paddingVertical: 3,
   },
   sourceTagText: {
     fontSize: 11,
-    color: colors.textMuted,
+    color: t.textMuted,
     fontWeight: '600',
   },
   prayerBody: {
@@ -1175,24 +1175,24 @@ const tzStyles = StyleSheet.create({
   },
   prayerIntro: {
     fontSize: 12,
-    color: colors.textMuted,
+    color: t.textMuted,
     lineHeight: 18,
     textAlign: 'right',
   },
   prayerText: {
     fontSize: 16,
-    color: colors.text,
+    color: t.text,
     lineHeight: 30,
     textAlign: 'center',
     fontWeight: '500',
   },
   prayerSource: {
     fontSize: 11,
-    color: colors.textFaint,
+    color: t.textFaint,
     textAlign: 'center',
     paddingTop: spacing.sm,
     borderTopWidth: StyleSheet.hairlineWidth,
-    borderTopColor: colors.border,
+    borderTopColor: t.border,
   },
-});
+}));
 

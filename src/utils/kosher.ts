@@ -1,4 +1,4 @@
-import { colors } from '../theme';
+import type { Tokens } from '../theme';
 import { KosherCategory, KosherType, Place } from '../types';
 
 /** Hebrew label for a food category. */
@@ -8,12 +8,17 @@ export const categoryLabel: Record<KosherCategory, string> = {
   parve: 'פרווה',
 };
 
-/** Accent color for a food category. */
-export const categoryColor: Record<KosherCategory, string> = {
-  meat: colors.meat,
-  dairy: colors.dairy,
-  parve: colors.parve,
-};
+/**
+ * Accent colour for a food category, under a given colour scheme.
+ *
+ * A function rather than a constant: a module-scope map would freeze the light
+ * values at import time and never follow the theme.
+ */
+export const categoryColorFor = (theme: Tokens): Record<KosherCategory, string> => ({
+  meat: theme.meat,
+  dairy: theme.dairy,
+  parve: theme.parve,
+});
 
 /** Hebrew label for a kosher certification type. */
 export const kosherTypeLabel: Record<KosherType, string> = {

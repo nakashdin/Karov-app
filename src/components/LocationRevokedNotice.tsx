@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Platform, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Platform, Pressable, Text, View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useSharedLocation } from '../context/LocationContext';
 import { navigationRef } from '../navigation/navigationRef';
-import { colors, radius } from '../theme';
+import { makeStyles, radius, shadowColor, useTheme } from '../theme';
 
 /** Onboarding routes already explain the permission — no banner on top of them. */
 const SILENT_ROUTES = ['Splash', 'Login', 'LocationPermission'];
@@ -15,6 +15,8 @@ const SILENT_ROUTES = ['Splash', 'Login', 'LocationPermission'];
  * notifies us about.
  */
 export function LocationRevokedNotice() {
+  const theme = useTheme();
+  const styles = useStyles();
   const { status } = useSharedLocation();
   const insets = useSafeAreaInsets();
   const [route, setRoute] = useState<string | undefined>(undefined);
@@ -41,20 +43,20 @@ export function LocationRevokedNotice() {
         style={({ pressed }) => [styles.banner, pressed && { opacity: 0.85 }]}
         onPress={() => navigationRef.navigate('LocationPermission')}
       >
-        <Ionicons name="location-outline" size={18} color="#92400e" />
+        <Ionicons name="location-outline" size={18} color={theme.warningText} />
         <View style={styles.textWrap}>
           <Text style={styles.title}>שירותי המיקום כבויים</Text>
           <Text style={styles.body}>המרחקים לא מתעדכנים. הקש כדי להפעיל מחדש</Text>
         </View>
         <Pressable hitSlop={10} onPress={() => setDismissed(true)}>
-          <Ionicons name="close" size={18} color="#92400e" />
+          <Ionicons name="close" size={18} color={theme.warningText} />
         </Pressable>
       </Pressable>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   wrap: {
     position: 'absolute',
     left: 12,
@@ -66,13 +68,13 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 10,
-    backgroundColor: '#fef3c7',
-    borderColor: '#fcd34d',
+    backgroundColor: t.warningSurface,
+    borderColor: t.warningBorder,
     borderWidth: 1,
     borderRadius: radius.md,
     paddingVertical: 10,
     paddingHorizontal: 14,
-    shadowColor: '#000',
+    shadowColor,
     shadowOpacity: 0.12,
     shadowRadius: 12,
     shadowOffset: { width: 0, height: 4 },
@@ -84,13 +86,13 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 14,
     fontWeight: '800',
-    color: '#92400e',
+    color: t.warningText,
     textAlign: 'right',
   },
   body: {
     fontSize: 12,
-    color: '#b45309',
+    color: t.warningText,
     textAlign: 'right',
     marginTop: 1,
   },
-});
+}));

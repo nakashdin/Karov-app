@@ -1,7 +1,7 @@
 import React from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Pressable, Text, View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { colors, radius, shadow, spacing } from '../../theme';
+import { alpha, makeStyles, radius, shadow, spacing, useTheme } from '../../theme';
 import { JewishContentItem } from '../../data/jewish-content/types';
 import { TOPIC_LABELS } from '../../data/jewish-content/types';
 import { getTopicStyle, getTopicLabel } from './topics';
@@ -14,7 +14,9 @@ interface Props {
 }
 
 export function KarovContentCard({ item, onPress, isRead = false }: Props) {
-  const { color, bg } = getTopicStyle(item.topics);
+  const theme = useTheme();
+  const styles = useStyles();
+  const { fg: color, tint: bg } = getTopicStyle(item.topics, theme);
   const topicLabel = getTopicLabel(item.topics);
 
   return (
@@ -32,7 +34,7 @@ export function KarovContentCard({ item, onPress, isRead = false }: Props) {
       <View style={styles.meta}>
         {isRead ? (
           <View style={styles.readBadge}>
-            <Ionicons name="checkmark-circle" size={13} color="#4caf50" />
+            <Ionicons name="checkmark-circle" size={13} color={theme.success} />
             <Text style={styles.readBadgeText}>קראת</Text>
           </View>
         ) : (
@@ -55,7 +57,7 @@ export function KarovContentCard({ item, onPress, isRead = false }: Props) {
       {/* Tags */}
       <View style={styles.tagsRow}>
         {item.topics.slice(0, 3).map(t => (
-          <View key={t} style={[styles.tag, { backgroundColor: `${color}18` }]}>
+          <View key={t} style={[styles.tag, { backgroundColor: alpha(color, 0.09) }]}>
             <Text style={[styles.tagText, { color }]}>
               #{TOPIC_LABELS[t]}
             </Text>
@@ -69,7 +71,7 @@ export function KarovContentCard({ item, onPress, isRead = false }: Props) {
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   card: {
     borderRadius: radius.lg,
     padding: spacing.lg,
@@ -89,7 +91,7 @@ const styles = StyleSheet.create({
   },
   readBadgeText: {
     fontSize: 10,
-    color: '#4caf50',
+    color: t.success,
     fontWeight: '600',
   },
   meta: {
@@ -105,19 +107,19 @@ const styles = StyleSheet.create({
   },
   readTime: {
     fontSize: 10,
-    color: colors.textFaint,
+    color: t.textFaint,
   },
   title: {
     fontSize: 18,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
     letterSpacing: -0.3,
     lineHeight: 26,
   },
   summary: {
     fontSize: 13,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
     lineHeight: 20,
   },
@@ -146,4 +148,4 @@ const styles = StyleSheet.create({
     textAlign: 'right',
     marginTop: 2,
   },
-});
+}));

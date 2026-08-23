@@ -1,16 +1,10 @@
 import React, { useState } from 'react';
-import {
-  Pressable,
-  ScrollView,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
+import { Pressable, ScrollView, Text, View } from 'react-native';
 import { useNavigation, useRoute, RouteProp } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { colors, radius, spacing } from '../theme';
+import { makeStyles, radius, spacing, useTheme } from '../theme';
 import { RootStackParamList } from '../navigation/types';
 import { CATEGORY_GROUPS } from '../data/jewish-content/category-groups';
 import { CategoryGroup } from '../data/jewish-content/types';
@@ -20,6 +14,8 @@ type Nav = NativeStackNavigationProp<RootStackParamList>;
 type Route = RouteProp<RootStackParamList, 'KarovLevOnboarding'>;
 
 export function KarovLevOnboardingScreen() {
+  const theme = useTheme();
+  const styles = useStyles();
   const navigation = useNavigation<Nav>();
   const route = useRoute<Route>();
   const isEditing = route.params?.isEditing ?? false;
@@ -55,7 +51,7 @@ export function KarovLevOnboardingScreen() {
         </Text>
         {isEditing ? (
           <Pressable onPress={() => navigation.goBack()} style={styles.backBtn} hitSlop={8}>
-            <Ionicons name="chevron-forward" size={22} color={colors.text} />
+            <Ionicons name="chevron-forward" size={22} color={theme.text} />
           </Pressable>
         ) : (
           <View style={styles.headerSpacer} />
@@ -75,15 +71,16 @@ export function KarovLevOnboardingScreen() {
         <View style={styles.grid}>
           {CATEGORY_GROUPS.map((group) => {
             const isSelected = draft.includes(group.id);
+            const accent = theme.accent[group.accent];
             return (
               <Pressable
                 key={group.id}
                 style={[
                   styles.card,
                   isSelected && {
-                    borderColor: group.color,
+                    borderColor: accent.fg,
                     borderWidth: 2,
-                    backgroundColor: group.backgroundColor,
+                    backgroundColor: accent.tint,
                   },
                 ]}
                 onPress={() => toggleCategory(group.id)}
@@ -93,13 +90,13 @@ export function KarovLevOnboardingScreen() {
               >
                 <View style={styles.cardCheckRow}>
                   {isSelected ? (
-                    <Ionicons name="checkmark-circle" size={20} color={group.color} />
+                    <Ionicons name="checkmark-circle" size={20} color={accent.fg} />
                   ) : (
-                    <Ionicons name="ellipse-outline" size={20} color={colors.border} />
+                    <Ionicons name="ellipse-outline" size={20} color={theme.border} />
                   )}
                 </View>
                 <Text style={styles.cardEmoji}>{group.emoji}</Text>
-                <Text style={[styles.cardLabel, isSelected && { color: group.color }]}>
+                <Text style={[styles.cardLabel, isSelected && { color: accent.fg }]}>
                   {group.label}
                 </Text>
                 <Text style={styles.cardDesc}>{group.description}</Text>
@@ -130,10 +127,10 @@ export function KarovLevOnboardingScreen() {
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   root: {
     flex: 1,
-    backgroundColor: colors.background,
+    backgroundColor: t.background,
   },
   header: {
     flexDirection: 'row',
@@ -141,14 +138,14 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingHorizontal: spacing.lg,
     paddingVertical: spacing.md,
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderBottomWidth: 0.5,
-    borderBottomColor: colors.border,
+    borderBottomColor: t.border,
   },
   headerTitle: {
     fontSize: 17,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
   },
   headerSpacer: { width: 36 },
   backBtn: {
@@ -170,24 +167,24 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
     letterSpacing: -0.5,
   },
   subtitle: {
     fontSize: 14,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
   },
   grid: {
     gap: 12,
   },
   card: {
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderRadius: radius.xl,
     padding: spacing.lg,
     borderWidth: 1,
-    borderColor: colors.border,
+    borderColor: t.border,
     alignItems: 'flex-end',
     gap: 6,
   },
@@ -202,39 +199,39 @@ const styles = StyleSheet.create({
   cardLabel: {
     fontSize: 17,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
   },
   cardDesc: {
     fontSize: 13,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
     lineHeight: 19,
   },
   footer: {
     padding: spacing.lg,
     gap: 8,
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderTopWidth: 0.5,
-    borderTopColor: colors.border,
+    borderTopColor: t.border,
   },
   selectedCount: {
     fontSize: 12,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'center',
   },
   continueBtn: {
-    backgroundColor: colors.text,
+    backgroundColor: t.text,
     paddingVertical: 14,
     borderRadius: radius.pill,
     alignItems: 'center',
   },
   continueBtnDisabled: {
-    backgroundColor: colors.border,
+    backgroundColor: t.border,
   },
   continueBtnText: {
     fontSize: 16,
     fontWeight: '700',
-    color: colors.surface,
+    color: t.surface,
   },
-});
+}));

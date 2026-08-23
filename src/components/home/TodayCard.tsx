@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { Alert, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Alert, Pressable, Text, View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { useSharedLocation } from '../../context/LocationContext';
 import { zmanim as calcZmanim } from '../../utils/zmanim';
-import { colors, radius, shadow, spacing } from '../../theme';
+import { makeStyles, radius, shadow, spacing, useTheme } from '../../theme';
 import { RootStackParamList } from '../../navigation/types';
 import { Place } from '../../types/place';
 
@@ -36,6 +36,8 @@ function fmtCountdown(totalMins: number): string {
 }
 
 export function TodayCard({ cityName, onSynagoguePress, favoriteSynagogue }: Props) {
+  const theme = useTheme();
+  const styles = useStyles();
   const { location } = useSharedLocation();
   const navigation = useNavigation<Nav>();
   const [, setTick] = useState(0);
@@ -136,7 +138,7 @@ export function TodayCard({ cityName, onSynagoguePress, favoriteSynagogue }: Pro
     }
   }
 
-  const illustBg = day === 6 ? '#F5F0E8' : isNight ? '#1E2A4A' : '#FFF8E6';
+  const illustBg = day === 6 ? theme.illustration.day.skyShabbat : isNight ? theme.illustration.night.sky : theme.accent.gold.tint;
   const illustEmoji = day === 6 ? '🕯' : isNight ? '🌙' : '☀️';
 
   const locationLabel = cityName ?? (location ? '...' : 'הפעל מיקום');
@@ -188,7 +190,7 @@ export function TodayCard({ cityName, onSynagoguePress, favoriteSynagogue }: Pro
         <View style={styles.textContent}>
           <View style={styles.labelRow}>
             <Text style={styles.cardLabel}>היום שלך</Text>
-            <Ionicons name="chevron-forward" size={13} color={colors.textFaint} />
+            <Ionicons name="chevron-forward" size={13} color={theme.textFaint} />
           </View>
           <Text style={styles.countdownLabel}>{countdownLabel}</Text>
           <Text style={styles.countdown}>{countdownValue}</Text>
@@ -219,11 +221,11 @@ export function TodayCard({ cityName, onSynagoguePress, favoriteSynagogue }: Pro
           style={({ pressed }) => [styles.chip, pressed && styles.chipPressed]}
           onPress={handlePrayerPress}
         >
-          <Ionicons name="people-outline" size={12} color={colors.categorySynagogue} />
+          <Ionicons name="people-outline" size={12} color={theme.categorySynagogue} />
           <View style={styles.chipTexts}>
             <Text style={styles.chipLabel}>{prayerName}</Text>
             {favoriteSynagogue ? (
-              <Text style={[styles.chipValue, { color: colors.textMuted, fontSize: 9 }]}>
+              <Text style={[styles.chipValue, { color: theme.textMuted, fontSize: 9 }]}>
                 יש לבדוק
               </Text>
             ) : (
@@ -236,11 +238,11 @@ export function TodayCard({ cityName, onSynagoguePress, favoriteSynagogue }: Pro
 
         {/* Location chip — display only, no navigation */}
         <View style={styles.chip}>
-          <Ionicons name="navigate-outline" size={12} color={colors.primary} />
+          <Ionicons name="navigate-outline" size={12} color={theme.primary} />
           <View style={styles.chipTexts}>
-            <Text style={[styles.chipLabel, { color: colors.primary }]}>נמצא כעת</Text>
+            <Text style={[styles.chipLabel, { color: theme.primary }]}>נמצא כעת</Text>
             <Text
-              style={[styles.chipValue, { color: colors.primary }]}
+              style={[styles.chipValue, { color: theme.primary }]}
               numberOfLines={1}
             >
               {locationLabel}
@@ -252,7 +254,7 @@ export function TodayCard({ cityName, onSynagoguePress, favoriteSynagogue }: Pro
 
         {/* Synagogue chip */}
         <View style={styles.chip}>
-          <Ionicons name="business-outline" size={12} color={colors.categorySynagogue} />
+          <Ionicons name="business-outline" size={12} color={theme.categorySynagogue} />
           <View style={styles.chipTexts}>
             <Text style={styles.chipLabel}>בית כנסת</Text>
             {synName ? (
@@ -266,7 +268,7 @@ export function TodayCard({ cityName, onSynagoguePress, favoriteSynagogue }: Pro
               </Pressable>
             ) : (
               <Pressable onPress={onSynagoguePress} hitSlop={4}>
-                <Text style={[styles.chipValue, { color: colors.primary, fontSize: 10 }]}>
+                <Text style={[styles.chipValue, { color: theme.primary, fontSize: 10 }]}>
                   בחר עכשיו
                 </Text>
               </Pressable>
@@ -283,9 +285,9 @@ export function TodayCard({ cityName, onSynagoguePress, favoriteSynagogue }: Pro
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   card: {
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderRadius: radius.xl,
     marginHorizontal: spacing.lg,
     marginBottom: spacing.lg,
@@ -325,26 +327,26 @@ const styles = StyleSheet.create({
   cardLabel: {
     fontSize: 11,
     fontWeight: '600',
-    color: colors.textMuted,
+    color: t.textMuted,
     letterSpacing: 0.3,
   },
   countdownLabel: {
     fontSize: 13,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
     marginBottom: 2,
   },
   countdown: {
     fontSize: 36,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
     letterSpacing: -1.5,
     textAlign: 'right',
     lineHeight: 42,
   },
   timesLine: {
     fontSize: 11,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
     marginTop: 4,
   },
@@ -355,7 +357,7 @@ const styles = StyleSheet.create({
     marginTop: 7,
     paddingTop: 6,
     borderTopWidth: 0.5,
-    borderTopColor: colors.border,
+    borderTopColor: t.border,
   },
   prayerItem: {
     flex: 1,
@@ -363,20 +365,20 @@ const styles = StyleSheet.create({
   },
   prayerItemLabel: {
     fontSize: 9,
-    color: colors.textFaint,
+    color: t.textFaint,
     fontWeight: '500',
     marginBottom: 1,
   },
   prayerItemTime: {
     fontSize: 11,
     fontWeight: '700',
-    color: colors.text,
+    color: t.text,
   },
   chipsRow: {
     flexDirection: 'row',
     alignItems: 'stretch',
     borderTopWidth: 0.5,
-    borderTopColor: colors.border,
+    borderTopColor: t.border,
     minHeight: 52,
   },
   chip: {
@@ -390,7 +392,7 @@ const styles = StyleSheet.create({
   },
   chipDivider: {
     width: 0.5,
-    backgroundColor: colors.border,
+    backgroundColor: t.border,
     alignSelf: 'stretch',
   },
   chipTexts: {
@@ -402,20 +404,20 @@ const styles = StyleSheet.create({
   chipLabel: {
     fontSize: 9,
     fontWeight: '500',
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'center',
   },
   chipValue: {
     fontSize: 11,
     fontWeight: '700',
-    color: colors.text,
+    color: t.text,
     textAlign: 'center',
   },
   changeBtn: {
     fontSize: 9,
     fontWeight: '700',
-    color: colors.primary,
+    color: t.primary,
     textAlign: 'center',
     marginTop: 1,
   },
-});
+}));

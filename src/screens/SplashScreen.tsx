@@ -1,9 +1,10 @@
 import React, { useEffect, useRef } from 'react';
-import { Animated, StyleSheet, Text, View } from 'react-native';
+import { Animated, Text, View } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { Logo } from '../components/Logo';
+import { makeStyles } from '../theme';
 import { RootStackParamList } from '../navigation/types';
 import { resolveLocationSilently } from '../utils/locationPermission';
 import { setCachedLocation } from '../context/locationCache';
@@ -13,6 +14,7 @@ type Nav = NativeStackNavigationProp<RootStackParamList>;
 export const AUTH_KEY = '@karov/auth';
 
 export function SplashScreen() {
+  const styles = useStyles();
   const navigation = useNavigation<Nav>();
 
   const logoScale = useRef(new Animated.Value(0.7)).current;
@@ -111,10 +113,10 @@ export function SplashScreen() {
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   container: {
     flex: 1,
-    backgroundColor: '#0F3D22',
+    backgroundColor: t.primaryDeep,
     alignItems: 'center',
     justifyContent: 'center',
     gap: 24,
@@ -126,14 +128,14 @@ const styles = StyleSheet.create({
   appName: {
     fontSize: 38,
     fontWeight: '800',
-    color: '#FFFFFF',
+    color: t.textInverse,
     letterSpacing: -1,
     textAlign: 'center',
   },
   tagline: {
     fontSize: 13,
-    color: 'rgba(255,255,255,0.55)',
+    color: t.overlayLight,
     textAlign: 'center',
     lineHeight: 20,
   },
-});
+}));

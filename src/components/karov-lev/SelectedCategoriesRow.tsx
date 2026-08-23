@@ -1,7 +1,7 @@
 import React from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Pressable, Text, View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { colors, radius, spacing } from '../../theme';
+import { makeStyles, radius, spacing, useTheme } from '../../theme';
 import { CategoryGroup } from '../../data/jewish-content/types';
 import { CATEGORY_GROUPS } from '../../data/jewish-content/category-groups';
 
@@ -11,6 +11,8 @@ interface Props {
 }
 
 export function SelectedCategoriesRow({ selected, onEdit }: Props) {
+  const theme = useTheme();
+  const styles = useStyles();
   const selectedMeta = CATEGORY_GROUPS.filter(g => selected.includes(g.id));
 
   return (
@@ -22,7 +24,7 @@ export function SelectedCategoriesRow({ selected, onEdit }: Props) {
         hitSlop={8}
         accessibilityLabel="ערוך העדפות"
       >
-        <Ionicons name="pencil-outline" size={14} color={colors.textMuted} />
+        <Ionicons name="pencil-outline" size={14} color={theme.textMuted} />
         <Text style={styles.editText}>עריכה</Text>
       </Pressable>
 
@@ -30,21 +32,24 @@ export function SelectedCategoriesRow({ selected, onEdit }: Props) {
       <View style={styles.right}>
         <Text style={styles.label}>התוכן שלי</Text>
         <View style={styles.chips}>
-          {selectedMeta.map(cat => (
-            <View key={cat.id} style={[styles.chip, { backgroundColor: cat.backgroundColor }]}>
-              <Text style={styles.chipEmoji}>{cat.emoji}</Text>
-              <Text style={[styles.chipText, { color: cat.color }]} numberOfLines={1}>
-                {cat.label}
-              </Text>
-            </View>
-          ))}
+          {selectedMeta.map(cat => {
+            const accent = theme.accent[cat.accent];
+            return (
+              <View key={cat.id} style={[styles.chip, { backgroundColor: accent.tint }]}>
+                <Text style={styles.chipEmoji}>{cat.emoji}</Text>
+                <Text style={[styles.chipText, { color: accent.fg }]} numberOfLines={1}>
+                  {cat.label}
+                </Text>
+              </View>
+            );
+          })}
         </View>
       </View>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   row: {
     flexDirection: 'row',
     alignItems: 'flex-start',
@@ -59,7 +64,7 @@ const styles = StyleSheet.create({
   label: {
     fontSize: 12,
     fontWeight: '700',
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
     letterSpacing: 0.2,
   },
@@ -92,13 +97,13 @@ const styles = StyleSheet.create({
     paddingVertical: 6,
     borderRadius: radius.pill,
     borderWidth: 1,
-    borderColor: colors.border,
+    borderColor: t.border,
     alignSelf: 'flex-start',
     marginTop: 2,
   },
   editText: {
     fontSize: 12,
-    color: colors.textMuted,
+    color: t.textMuted,
     fontWeight: '600',
   },
-});
+}));
