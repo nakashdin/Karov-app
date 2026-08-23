@@ -10,18 +10,15 @@ const isRTLLocale = (l: Locale) => l === 'he';
 
 /**
  * Switching between an RTL and an LTR locale only takes effect after the app
- * restarts, so every platform needs its own way to do that.
+ * restarts, so native needs its own way to do that.
  *
  * This used to `require('expo-updates')` inside a try/catch while the package
  * was not installed at all, which meant the reload silently never happened and
  * the user was left with a broken layout until they killed the app by hand.
+ *
+ * Native only: web never calls this (see applyWebDirection below).
  */
 async function reloadApp(): Promise<void> {
-  if (Platform.OS === 'web') {
-    if (typeof window !== 'undefined') window.location.reload();
-    return;
-  }
-
   try {
     await Updates.reloadAsync();
     return;
@@ -30,6 +27,25 @@ async function reloadApp(): Promise<void> {
   }
 
   DevSettings?.reload?.();
+}
+
+/**
+ * react-native-web's I18nManager is a stub: `allowRTL`/`forceRTL` are no-ops
+ * and `isRTL` doesn't exist on the object at all (only a hardcoded-false
+ * `getConstants().isRTL`). Comparing against either produces an always-true
+ * mismatch, and reloading in response to an always-true condition is an
+ * infinite reload loop — every locale, every load, silently (no console
+ * error, no failed request; the page just never finishes loading).
+ *
+ * Direction on web comes from `<html dir>`, not from I18nManager, and CSS
+ * takes effect immediately — so there is nothing to force and nothing to
+ * restart. This sets `dir`/`lang` directly instead of going anywhere near
+ * I18nManager or reloadApp().
+ */
+function applyWebDirection(l: Locale): void {
+  if (typeof document === 'undefined') return;
+  document.documentElement.dir = isRTLLocale(l) ? 'rtl' : 'ltr';
+  document.documentElement.lang = l;
 }
 
 interface LanguageCtx {
@@ -53,6 +69,14 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
       const l = (saved as Locale | null) || 'he';
       // Persist default so next launch doesn't need to recheck
       if (!saved) await AsyncStorage.setItem(STORAGE_KEY, l);
+
+      if (Platform.OS === 'web') {
+        applyWebDirection(l);
+        setLocaleState(l);
+        setReady(true);
+        return;
+      }
+
       const rtl = isRTLLocale(l);
       if (I18nManager.isRTL !== rtl) {
         I18nManager.allowRTL(rtl);
@@ -70,6 +94,13 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 
   const setLocale = async (l: Locale) => {
     await AsyncStorage.setItem(STORAGE_KEY, l);
+
+    if (Platform.OS === 'web') {
+      applyWebDirection(l);
+      setLocaleState(l);
+      return;
+    }
+
     const rtlNeeded = isRTLLocale(l);
     if (I18nManager.isRTL !== rtlNeeded) {
       I18nManager.allowRTL(rtlNeeded);
