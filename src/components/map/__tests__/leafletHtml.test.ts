@@ -64,4 +64,21 @@ describe('buildLeafletHtml', () => {
   it('handles an empty place list', () => {
     expect(() => buildLeafletHtml([], null, lightTokens)).not.toThrow();
   });
+
+  it(
+    'does not let a place name break out of its <script> block — a name from ' +
+      'OSM, Wikidata, or a community submission is not trusted to be free of ' +
+      "literal `</script>`, and this page runs same-origin (WebView " +
+      "originWhitelist ['*'] on native, a srcDoc iframe on web)",
+    () => {
+      const hostile = buildLeafletHtml(
+        [place({ id: 'x', name: '</script><img src=x onerror=alert(1)>' })],
+        null,
+        lightTokens,
+      );
+      expect(hostile).not.toContain('</script><img');
+      // The place name still round-trips — this escapes, it doesn't drop data.
+      expect(hostile).toContain('\\u003c/script>\\u003cimg src=x onerror=alert(1)>');
+    },
+  );
 });

@@ -9,6 +9,22 @@ import {
   CLUSTER_JS,
 } from './vendor/leaflet-assets';
 
+/**
+ * `JSON.stringify` for a value being embedded straight into a `<script>`
+ * block via a template literal.
+ *
+ * Plain `JSON.stringify` does not escape `<`, so a place name containing the
+ * literal text `</script>` — a name from OSM, Wikidata, or a community
+ * submission, none of which are trusted to be free of it — closes the tag
+ * early and lets whatever text follows execute as markup/script in this page.
+ * That page runs same-origin: a native WebView with `originWhitelist: ['*']`,
+ * or a `srcDoc` iframe on web. Escaping every `<` (not just the exact
+ * `</script` substring) also blocks other tag-opening sequences the same way.
+ */
+function jsonForScript(value: unknown): string {
+  return JSON.stringify(value).replace(/</g, '\\u003c');
+}
+
 /** Default center / zoom (central Israel) when there is no user location. */
 export const ISRAEL_CENTER: [number, number] = [31.5, 34.9]; // [lat, lng]
 export const DEFAULT_ZOOM = 7.5;
@@ -76,10 +92,10 @@ export function buildLeafletHtml(
   <script>${LEAFLET_JS}</script>
   <script>${CLUSTER_JS}</script>
   <script>
-    var PLACES = ${JSON.stringify(markers)};
-    var USER = ${JSON.stringify(user)};
-    var HIGHLIGHT_ID = ${JSON.stringify(highlightId)};
-    var map = L.map('map', { zoomControl: false }).setView(${JSON.stringify(center)}, ${zoom});
+    var PLACES = ${jsonForScript(markers)};
+    var USER = ${jsonForScript(user)};
+    var HIGHLIGHT_ID = ${jsonForScript(highlightId)};
+    var map = L.map('map', { zoomControl: false }).setView(${jsonForScript(center)}, ${zoom});
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
       attribution: '© OpenStreetMap'

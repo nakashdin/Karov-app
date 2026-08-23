@@ -70,10 +70,16 @@ export interface Place {
   /** Where this record came from (for attribution / trust). */
   source?: 'osm' | 'seed' | 'wikidata' | 'manual' | 'tzohar';
   /**
-   * Accuracy of `location`. 'address' = an exact address geocode; 'city' = an
-   * approximate city-centre point (show an "approximate location" hint). Absent
-   * means an exact/native coordinate (e.g. OSM). */
-  locationPrecision?: 'address' | 'city';
+   * Accuracy of `location`. 'exact' = synced against Waze, the most accurate
+   * source available in Israel (see docs/coordinates-backlog.md); 'address' =
+   * a geocoded street address; 'city' = an approximate city-centre point (show
+   * an "approximate location" hint — see PlaceCard/PlaceBottomCard/
+   * PlaceDetailScreen). Absent means an untouched native coordinate (e.g. OSM),
+   * which is not the same claim as 'exact' and should not be treated as one.
+   */
+  locationPrecision?: 'exact' | 'address' | 'city';
+  /** Which geocoder produced `location`, when it didn't come from the original source as-is. */
+  locationSource?: 'waze' | 'nominatim';
 
   // --- Restaurant-specific (optional) ---
   category?: KosherCategory;

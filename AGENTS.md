@@ -2,8 +2,8 @@
 
 ## Expo HAS CHANGED
 
-Read the exact versioned docs at https://docs.expo.dev/versions/v56.0.0/ before writing any code.
-This project is on **SDK 56**. Do not rely on remembered APIs — check the versioned page first.
+Read the exact versioned docs at https://docs.expo.dev/versions/v57.0.0/ before writing any code.
+This project is on **SDK 57** (React Native 0.86). Do not rely on remembered APIs — check the versioned page first.
 
 ---
 
@@ -19,7 +19,7 @@ npm run verify      # typecheck + lint + test + data:validate
 |---|---|---|
 | טיפוסים | `npm run typecheck` | `tsc --strict`. חייב להיות נקי — הוא נקי היום |
 | lint | `npm run lint` | **0 errors**. warnings = backlog ידוע, ראה למטה |
-| טסטים | `npm test` | 96 טסטים |
+| טסטים | `npm test` | 233 טסטים (המספר גדל — הבדוק את הפלט בפועל, לא את המספר כאן) |
 | דאטה | `npm run data:validate` | שלמות `places.osm.json` |
 
 ---

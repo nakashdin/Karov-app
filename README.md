@@ -11,7 +11,7 @@ A Hebrew-first, RTL app for finding kosher places across Israel, plus daily Jewi
 
 | | |
 |---|---|
-| Runtime | **Expo SDK 56** · React Native 0.85 · React 19.2 · TypeScript 6 (`strict`) |
+| Runtime | **Expo SDK 57** · React Native 0.86 · React 19.2 · TypeScript 6 (`strict`) |
 | Navigation | React Navigation — native stack + bottom tabs |
 | מפה | **Leaflet + OpenStreetMap** — WebView ב‑native, iframe ב‑web. בלי Google, בלי מפתחות API |
 | חיפוש | MiniSearch, עם נרמול עברית (ניקוד, גרשיים) |

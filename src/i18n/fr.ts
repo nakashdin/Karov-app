@@ -164,4 +164,10 @@ export const fr = {
     language: 'Langue',
     shareMessage: 'Karov – Tout ce dont un Juif a besoin, près de toi :',
   },
+  errorBoundary: {
+    title: "Une erreur s'est produite",
+    body: "Une erreur inattendue s'est produite. Vous pouvez réessayer — et si cela persiste, un signalement serait apprécié.",
+    retry: 'Réessayer',
+    retryLabel: 'Réessayer',
+  },
 } as const;

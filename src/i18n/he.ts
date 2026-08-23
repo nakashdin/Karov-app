@@ -164,4 +164,10 @@ export const he = {
     language: 'שפה',
     shareMessage: 'קרוב – כל מה שיהודי צריך, קרוב אליך:',
   },
+  errorBoundary: {
+    title: 'משהו השתבש',
+    body: 'אירעה תקלה בלתי צפויה. אפשר לנסות שוב — ואם זה חוזר, נשמח לדיווח.',
+    retry: 'נסה שוב',
+    retryLabel: 'נסה שוב',
+  },
 } as const;

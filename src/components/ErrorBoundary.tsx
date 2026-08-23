@@ -1,6 +1,7 @@
 import React from 'react';
-import { Platform, Pressable, ScrollView, Text, View } from 'react-native';
-import { makeStyles, radius, spacing } from '../theme';
+import { Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { colors, radius, spacing } from '../theme';
+import { useLanguage } from '../context/LanguageContext';
 
 interface Props {
   children: React.ReactNode;
@@ -21,6 +22,18 @@ interface State {
  * The reset path re-mounts the subtree. That is enough for a transient failure
  * (a malformed record, a missing field); a deterministic crash will surface
  * again immediately, which is the honest outcome.
+ *
+ * ── Why this can't use `useTheme()` ──────────────────────────────────────────
+ * This wraps `ThemeProvider` in App.tsx, deliberately outermost so a provider
+ * blowing up is caught too. That means an error ANYWHERE in the tree —
+ * including inside ThemeProvider itself — unmounts ThemeProvider along with
+ * everything else and renders the fallback below in its place. A fallback
+ * that called `useTheme()` would throw "must be used inside <ThemeProvider>"
+ * while rendering the very screen meant to catch failures, crashing to blank
+ * with nothing left to catch it. It uses the static `colors` export instead
+ * (light-only, no hook, no provider dependency) — see `src/theme/colors.ts`.
+ * `useLanguage()` is safe here because its context has a default value and
+ * never throws without a provider.
  */
 export class ErrorBoundary extends React.Component<Props, State> {
   state: State = { error: null, info: null };
@@ -42,8 +55,8 @@ export class ErrorBoundary extends React.Component<Props, State> {
     const { error, info } = this.state;
     if (!error) return this.props.children;
 
-    // A class component cannot call hooks, so styling — which now needs the
-    // colour scheme — lives in a functional child instead.
+    // A class component cannot call hooks, so the fallback lives in a
+    // functional child instead.
     return <ErrorFallback error={error} info={info} onReset={this.reset} />;
   }
 }
@@ -57,24 +70,22 @@ function ErrorFallback({
   info: React.ErrorInfo | null;
   onReset: () => void;
 }) {
-  const styles = useStyles();
+  const { t } = useLanguage();
 
   return (
     <View style={styles.container}>
       <View style={styles.card}>
         <Text style={styles.emoji}>🛠️</Text>
-        <Text style={styles.title}>משהו השתבש</Text>
-        <Text style={styles.body}>
-          אירעה תקלה בלתי צפויה. אפשר לנסות שוב — ואם זה חוזר, נשמח לדיווח.
-        </Text>
+        <Text style={styles.title}>{t.errorBoundary.title}</Text>
+        <Text style={styles.body}>{t.errorBoundary.body}</Text>
 
         <Pressable
           style={styles.button}
           onPress={onReset}
           accessibilityRole="button"
-          accessibilityLabel="נסה שוב"
+          accessibilityLabel={t.errorBoundary.retryLabel}
         >
-          <Text style={styles.buttonText}>נסה שוב</Text>
+          <Text style={styles.buttonText}>{t.errorBoundary.retry}</Text>
         </Pressable>
 
         {__DEV__ && (
@@ -90,19 +101,19 @@ function ErrorFallback({
   );
 }
 
-const useStyles = makeStyles((t) => ({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: t.background,
+    backgroundColor: colors.background,
     padding: spacing.xl,
   },
   card: {
     width: '100%',
     maxWidth: 420,
     alignItems: 'center',
-    backgroundColor: t.surface,
+    backgroundColor: colors.surface,
     borderRadius: radius.xl,
     padding: spacing.xl,
   },
@@ -113,14 +124,14 @@ const useStyles = makeStyles((t) => ({
   title: {
     fontSize: 20,
     fontWeight: '800',
-    color: t.text,
+    color: colors.text,
     writingDirection: 'rtl',
     marginBottom: spacing.sm,
   },
   body: {
     fontSize: 15,
     lineHeight: 22,
-    color: t.textMuted,
+    color: colors.textMuted,
     textAlign: 'center',
     writingDirection: 'rtl',
     marginBottom: spacing.xl,
@@ -130,13 +141,13 @@ const useStyles = makeStyles((t) => ({
     paddingVertical: spacing.md,
     paddingHorizontal: spacing.xl,
     borderRadius: radius.pill,
-    backgroundColor: t.primary,
+    backgroundColor: colors.primary,
     alignItems: 'center',
   },
   buttonText: {
     fontSize: 16,
     fontWeight: '700',
-    color: t.textInverse,
+    color: colors.textInverse,
   },
   details: {
     maxHeight: 220,
@@ -144,11 +155,11 @@ const useStyles = makeStyles((t) => ({
     marginTop: spacing.lg,
     padding: spacing.md,
     borderRadius: radius.md,
-    backgroundColor: t.surfaceMuted,
+    backgroundColor: colors.surfaceMuted,
   },
   detailsText: {
     fontSize: 11,
-    color: t.textMuted,
+    color: colors.textMuted,
     fontFamily: Platform.OS === 'ios' ? 'Menlo' : 'monospace',
   },
-}));
+});

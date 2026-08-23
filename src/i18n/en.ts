@@ -164,4 +164,10 @@ export const en = {
     language: 'Language',
     shareMessage: 'Karov – Everything a Jew needs, close to you:',
   },
+  errorBoundary: {
+    title: 'Something went wrong',
+    body: "An unexpected error occurred. You can try again — and if it keeps happening, we'd appreciate a report.",
+    retry: 'Try again',
+    retryLabel: 'Try again',
+  },
 } as const;

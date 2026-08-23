@@ -1,7 +1,8 @@
 import { isCurrentlyOpen, todayHoursStr, shortHours, fullHoursHebrew } from '../openingHours';
 
-/** 2026-08-19 is a Wednesday; 2026-08-21 a Friday; 2026-08-22 a Saturday. */
+/** 2026-08-19 is a Wednesday; 2026-08-20 a Thursday; 2026-08-21 a Friday; 2026-08-22 a Saturday. */
 const wed = (h: number, m = 0) => new Date(2026, 7, 19, h, m);
+const thu = (h: number, m = 0) => new Date(2026, 7, 20, h, m);
 const fri = (h: number, m = 0) => new Date(2026, 7, 21, h, m);
 const sat = (h: number, m = 0) => new Date(2026, 7, 22, h, m);
 
@@ -52,6 +53,15 @@ describe('isCurrentlyOpen — OSM syntax', () => {
 
   it('handles windows crossing midnight', () => {
     expect(isCurrentlyOpen('We 22:00-02:00', undefined, wed(23))).toBe(true);
+  });
+
+  it('carries a midnight-crossing window into the following day, not the same day', () => {
+    // "We 22:00-02:00" opens Wednesday night and closes Thursday 02:00 — the
+    // pre-dawn coverage belongs to Thursday, not to Wednesday's own morning.
+    const hours = 'We 22:00-02:00';
+    expect(isCurrentlyOpen(hours, undefined, wed(1))).toBe(false); // hasn't opened yet today
+    expect(isCurrentlyOpen(hours, undefined, thu(1))).toBe(true); // still open from last night
+    expect(isCurrentlyOpen(hours, undefined, thu(3))).toBeNull(); // past the wrap, and Thursday isn't listed
   });
 
   it('handles multiple slots in one day', () => {

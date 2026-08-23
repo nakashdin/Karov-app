@@ -45,6 +45,21 @@ const CITY_NAME_MAP = new Map<string, string>(
 buildIndex(PLACES, CITY_NAME_MAP);
 
 /**
+ * dedupe-places.mjs folds duplicate records into `extra.mergedFrom` on the
+ * surviving id rather than deleting them (additive-only, per AGENTS.md). A
+ * `/place/:id` link shared or bookmarked before a merge still carries the old
+ * id, so it needs to resolve to the record it was folded into — otherwise the
+ * merge silently breaks every outstanding link to it.
+ */
+const MERGED_ID_ALIAS = new Map<string, Place>(
+  PLACES.flatMap((p) => {
+    const mergedFrom = (p.extra as { mergedFrom?: unknown } | undefined)?.mergedFrom;
+    if (!Array.isArray(mergedFrom)) return [];
+    return mergedFrom.filter((id): id is string => typeof id === 'string').map((id) => [id, p] as const);
+  }),
+);
+
+/**
  * Serves the pre-built OpenStreetMap dataset bundled with the app.
  * Read-only and offline; reports are logged (no backend yet).
  */
@@ -54,7 +69,7 @@ export class OsmPlacesRepository implements PlacesRepository {
   }
 
   async getPlaceById(id: string): Promise<Place | null> {
-    return PLACES.find((p) => p.id === id) ?? null;
+    return PLACES.find((p) => p.id === id) ?? MERGED_ID_ALIAS.get(id) ?? null;
   }
 
   async getCities(): Promise<City[]> {

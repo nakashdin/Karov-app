@@ -9,7 +9,7 @@
 
 - **שם:** קרוב — "כל מה שיהודי צריך, קרוב אליך" (שם אייקון מקוצר: "קרוב").
 - **מטרה:** אפליקציה **רב-פלטפורמית** (Web · iOS · Android מקוד אחד) למציאת מקומות שיהודי צריך בקרבת מקום (מסעדות כשרות, בתי כנסת, מקוואות ועוד), בעברית RTL, יחד עם תוכן יומי.
-- **סטאק:** Expo SDK 56 · React Native · TypeScript · React Navigation · Leaflet + OpenStreetMap · גופן Heebo.
+- **סטאק:** Expo SDK 57 · React Native 0.86 · TypeScript · React Navigation · Leaflet + OpenStreetMap · גופן Heebo.
 - **אילוצים:** לא Google Maps · לא שירותים בתשלום · בלי התחברות (auth) בשלב זה · דאטה חוקי/חינמי/מבוסס‑אמת · שלוש פלטפורמות ממשות (Web חי ב-Vercel; iOS/Android דרך EAS).
 
 ---

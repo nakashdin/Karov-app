@@ -26,6 +26,11 @@ concurrency:
   group: eas-update-production
   cancel-in-progress: false
 
+# Least privilege by default; the update job needs write to comment/publish
+# nothing here, only EXPO_TOKEN (a repo secret, not a GITHUB_TOKEN permission).
+permissions:
+  contents: read
+
 jobs:
   # `secrets` is not available in a job-level `if`, so the check is its own job.
   check:
@@ -50,6 +55,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
 
       - uses: actions/setup-node@v4
         with:
@@ -68,4 +75,12 @@ jobs:
         run: npm run verify
 
       - name: Publish
-        run: eas update --branch production --message "${{ github.event.head_commit.message || 'manual dispatch' }}" --non-interactive
+        # The commit message carries attacker-influenced text on a squash-merge
+        # (it becomes the PR title) and this job's environment holds EXPO_TOKEN.
+        # Interpolating it into the `run:` line via `${{ }}` — as this used to —
+        # is a shell-injection path straight to that token. Passing it through
+        # `env:` and expanding it as a shell variable keeps GitHub's expression
+        # engine from ever writing untrusted text into the script.
+        env:
+          COMMIT_MSG: ${{ github.event.head_commit.message || 'manual dispatch' }}
+        run: eas update --branch production --message "$COMMIT_MSG" --non-interactive
