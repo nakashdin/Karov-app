@@ -32,7 +32,9 @@ import { displayPlaceName, placeTypeLabel } from '../utils/placeType';
 import { callPhone } from '../utils/navigation';
 import { NavPickerModal } from '../components/NavPickerModal';
 import { fullHoursHebrew, isCurrentlyOpen } from '../utils/openingHours';
+import { isCertificateExpired } from '../utils/certificate';
 import { RootStackParamList } from '../navigation/types';
+import type { Strings } from '../i18n';
 
 type Nav = NativeStackNavigationProp<RootStackParamList>;
 type DetailRoute = RouteProp<RootStackParamList, 'PlaceDetail'>;
@@ -62,14 +64,20 @@ function buildChips(place: ReturnType<typeof usePlace>['place']): string[] {
 
 // ─── Kashrut certificate ─────────────────────────────────────────────────────
 
-const todayISO = () => new Date().toISOString().slice(0, 10);
-
-/** Label for the certificate link: says whether it is still in force. */
-function certStatusLabel(validUntil?: string): string {
+/**
+ * Label for the certificate link: says whether it is still in force.
+ *
+ * A missing `validUntil` is never read as expired — it means Karov has the
+ * certificate document but couldn't parse a date off it (or, for the
+ * fallback DetailRow below, that Karov has no certificate at all). Only a
+ * known date that has actually passed produces the expired label; see
+ * `isCertificateExpired` in `utils/certificate`.
+ */
+function certStatusLabel(validUntil: string | undefined, expired: boolean, d: Strings['detail']): string {
   if (!validUntil) return 'צפייה בתעודה';
-  const [y, m, d] = validUntil.split('-');
-  const he = `${d}.${m}.${y}`;
-  return validUntil < todayISO() ? `פג תוקף ב-${he}` : `בתוקף עד ${he}`;
+  if (expired) return d.certExpired;
+  const [y, m, dd] = validUntil.split('-');
+  return `${d.validUntil} ${dd}.${m}.${y}`;
 }
 
 /** The kashrut standards printed on the certificate, as display strings. */
@@ -297,7 +305,7 @@ export function PlaceDetailScreen() {
         <SectionCard title="גלריה">
           <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.gallery}>
             {place.kosherCertUrl ? (() => {
-              const expired = !!place.certificateValidUntil && place.certificateValidUntil < todayISO();
+              const expired = isCertificateExpired(place);
               const tint = expired ? theme.danger : accent;
               return (
                 <Pressable
@@ -305,12 +313,12 @@ export function PlaceDetailScreen() {
                   onPress={() => Linking.openURL(place.kosherCertUrl!)}
                 >
                   <Ionicons name="ribbon-outline" size={30} color={tint} />
-                  <Text style={[styles.galleryCertTitle, { color: tint }]}>תעודת כשרות</Text>
+                  <Text style={[styles.galleryCertTitle, { color: tint }]}>{t.detail.certifiedBy}</Text>
                   {place.certifiedBy ? (
                     <Text style={styles.galleryCertBody} numberOfLines={1}>{place.certifiedBy}</Text>
                   ) : null}
                   <Text style={[styles.galleryCertBody, expired && { color: theme.danger }]} numberOfLines={1}>
-                    {certStatusLabel(place.certificateValidUntil)}
+                    {certStatusLabel(place.certificateValidUntil, expired, t.detail)}
                   </Text>
                 </Pressable>
               );
@@ -428,9 +436,9 @@ export function PlaceDetailScreen() {
               {place.kosherCertUrl ? (
                 <DetailRow
                   icon="document-text-outline"
-                  label="תעודת כשרות"
-                  value={certStatusLabel(place.certificateValidUntil)}
-                  accent={accent}
+                  label={t.detail.certifiedBy}
+                  value={certStatusLabel(place.certificateValidUntil, isCertificateExpired(place), t.detail)}
+                  accent={isCertificateExpired(place) ? theme.danger : accent}
                   tappable
                   onPress={() => Linking.openURL(place.kosherCertUrl!)}
                   link
@@ -569,15 +577,20 @@ export function PlaceDetailScreen() {
               {place.kosherCertUrl ? (
                 <DetailRow
                   icon="document-text-outline"
-                  label="תעודת כשרות"
-                  value={certStatusLabel(place.certificateValidUntil)}
-                  accent={accent}
+                  label={t.detail.certifiedBy}
+                  value={certStatusLabel(place.certificateValidUntil, isCertificateExpired(place), t.detail)}
+                  accent={isCertificateExpired(place) ? theme.danger : accent}
                   tappable
                   onPress={() => Linking.openURL(place.kosherCertUrl!)}
                   link
                 />
               ) : place.certificateValidUntil ? (
-                <DetailRow icon="calendar-outline" label="תוקף תעודה" value={place.certificateValidUntil} accent={accent} />
+                <DetailRow
+                  icon="calendar-outline"
+                  label={t.detail.validUntil}
+                  value={isCertificateExpired(place) ? t.detail.certExpired : place.certificateValidUntil}
+                  accent={isCertificateExpired(place) ? theme.danger : accent}
+                />
               ) : null}
               {kosherStandards(place.kosherDetails).length ? (
                 <DetailRow

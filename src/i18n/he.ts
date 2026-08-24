@@ -69,6 +69,7 @@ export const he = {
     source: 'מקור',
     certifiedBy: 'תעודת כשרות',
     validUntil: 'בתוקף עד',
+    certExpired: 'תעודת כשרות פגה',
     lastVerified: 'אומת לאחרונה',
     buriedPerson: 'קבור כאן',
     approxLocation: 'מיקום משוער לפי עיר',
@@ -153,6 +154,22 @@ export const he = {
     mikveh: 'מקוואות',
     chabad_house: 'בתי חב"ד',
     tzaddik_grave: 'קברי צדיקים',
+  },
+
+  // Sub-tabs inside the food ("לאכול") section. Every food type in
+  // src/types/catalog.ts needs a label here, otherwise its records are
+  // unreachable from the UI.
+  foodCategories: {
+    all: 'הכל',
+    restaurant: 'מסעדות',
+    chef_restaurant: 'מסעדות שף',
+    cafe: 'בתי קפה',
+    coffee_cart: 'עגלות קפה',
+    fast_food: 'מזון מהיר',
+    bakery: 'מאפיות',
+    juice_bar: 'בתי מיץ',
+    ice_cream_parlor: 'גלידריות',
+    winery: 'יקבים',
   },
 
   menu: {

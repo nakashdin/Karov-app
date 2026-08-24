@@ -69,6 +69,7 @@ export const en = {
     source: 'Source',
     certifiedBy: 'Kosher certificate',
     validUntil: 'Valid until',
+    certExpired: 'Kosher certificate expired',
     lastVerified: 'Last verified',
     buriedPerson: 'Buried here',
     approxLocation: 'Approximate location by city',
@@ -153,6 +154,19 @@ export const en = {
     mikveh: 'Mikvahs',
     chabad_house: 'Chabad Houses',
     tzaddik_grave: 'Tzaddik Graves',
+  },
+
+  foodCategories: {
+    all: 'All',
+    restaurant: 'Restaurants',
+    chef_restaurant: 'Chef Restaurants',
+    cafe: 'Cafés',
+    coffee_cart: 'Coffee Carts',
+    fast_food: 'Fast Food',
+    bakery: 'Bakeries',
+    juice_bar: 'Juice Bars',
+    ice_cream_parlor: 'Ice Cream',
+    winery: 'Wineries',
   },
 
   menu: {

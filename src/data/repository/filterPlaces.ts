@@ -1,5 +1,6 @@
-import { Place, PlaceFilters } from '../../types';
+import { isFoodType, Place, PlaceFilters } from '../../types';
 import { searchPlaces } from '../search/searchEngine';
+import { isCertificateExpired } from '../../utils/certificate';
 
 /**
  * Lookup of cityId -> city name, used only by the substring fallback search.
@@ -20,12 +21,13 @@ const CUISINE_TAG_GROUPS: Record<string, string[]> = {
   meat: ['meat', 'Meat', 'steak_house', 'grill', 'barbecue'],
 };
 
-const EAT_TYPES = new Set(['restaurant', 'cafe', 'coffee_cart']);
+// `eatAll` means every food type, not the three that happened to be listed here.
+// See src/types/catalog.ts — the old 3-type set stranded 302 curated records.
 
 /** Exact-match filters only (no text search). */
 function matchesExactFilters(place: Place, f: Partial<PlaceFilters>): boolean {
   if (f.eatAll) {
-    if (!EAT_TYPES.has(place.type)) return false;
+    if (!isFoodType(place.type)) return false;
   } else if (f.placeType && place.type !== f.placeType && !place.tags?.includes(f.placeType)) return false;
   if (f.subType !== undefined && f.subType !== null) {
     if (place.subType !== f.subType) return false;
@@ -42,6 +44,11 @@ function matchesExactFilters(place: Place, f: Partial<PlaceFilters>): boolean {
     } else {
       if (place.kosherAuthority !== f.kosherAuthorityGroup) return false;
     }
+    // A certification-specific filter represents certification our evidence
+    // currently supports. A place whose actual certificate (known expiry
+    // date, now passed) has lapsed no longer belongs under that authority's
+    // filter, even though it still shows up in normal browsing/search.
+    if (isCertificateExpired(place)) return false;
   }
   if (f.category && place.category !== f.category) return false;
   if (f.cuisineTag) {

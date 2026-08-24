@@ -69,6 +69,7 @@ export const ru = {
     source: 'Источник',
     certifiedBy: 'Сертификат кашрута',
     validUntil: 'Действителен до',
+    certExpired: 'Срок действия сертификата истёк',
     lastVerified: 'Последняя проверка',
     buriedPerson: 'Похоронен здесь',
     approxLocation: 'Приблизительное местоположение по городу',
@@ -153,6 +154,19 @@ export const ru = {
     mikveh: 'Миквы',
     chabad_house: 'Дома Хабада',
     tzaddik_grave: 'Могилы праведников',
+  },
+
+  foodCategories: {
+    all: 'Все',
+    restaurant: 'Рестораны',
+    chef_restaurant: 'Авторские рестораны',
+    cafe: 'Кафе',
+    coffee_cart: 'Кофейные киоски',
+    fast_food: 'Фастфуд',
+    bakery: 'Пекарни',
+    juice_bar: 'Фреш-бары',
+    ice_cream_parlor: 'Мороженое',
+    winery: 'Винодельни',
   },
 
   menu: {

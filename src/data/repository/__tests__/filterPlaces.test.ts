@@ -1,4 +1,4 @@
-import { Place } from '../../../types';
+import { FOOD_TYPES, Place } from '../../../types';
 import { filterPlaces, matchesFilters } from '../filterPlaces';
 import { _resetIndex } from '../../search/searchEngine';
 
@@ -34,7 +34,16 @@ const PLACES: Place[] = [
     cityId: 'jlm',
     kosherAuthorityGroup: 'rabbinate',
   }),
+  // The five food types that had no fixture and no tab. Their absence here is
+  // why the old 3-type `eatAll` passed its test while stranding 302 real records.
+  place({ id: '7', name: 'מאפיית לחם', type: 'bakery' }),
+  place({ id: '8', name: 'בר מיץ', type: 'juice_bar' }),
+  place({ id: '9', name: 'גלידריה', type: 'ice_cream_parlor' }),
+  place({ id: '10', name: 'מזון מהיר', type: 'fast_food' }),
+  place({ id: '11', name: 'יקב', type: 'winery' }),
 ];
+
+const FOOD_IDS = ['1', '2', '3', '5', '7', '8', '9', '10', '11'];
 
 const ids = (list: Place[]) => list.map((p) => p.id).sort();
 
@@ -55,13 +64,31 @@ describe('filterPlaces — exact filters', () => {
     expect(ids(filterPlaces(PLACES, { placeType: 'pizza' as Place['type'] }))).toEqual(['1']);
   });
 
-  it('eatAll overrides placeType and returns restaurants + cafes + coffee carts', () => {
-    expect(ids(filterPlaces(PLACES, { eatAll: true, placeType: 'synagogue' }))).toEqual([
-      '1',
-      '2',
-      '3',
-      '5',
-    ]);
+  it('eatAll overrides placeType and returns every food type', () => {
+    expect(ids(filterPlaces(PLACES, { eatAll: true, placeType: 'synagogue' }))).toEqual(
+      [...FOOD_IDS].sort(),
+    );
+  });
+
+  it('eatAll excludes non-food types', () => {
+    const got = filterPlaces(PLACES, { eatAll: true });
+    expect(got.some((p) => p.type === 'synagogue' || p.type === 'mikveh')).toBe(false);
+  });
+
+  // Guards the defect this catalog was introduced to fix: a food type that has
+  // no fixture and no tab silently disappears from the product. Adding a type to
+  // FOOD_TYPES without a fixture now fails here instead of shipping invisible.
+  it.each(FOOD_TYPES)('eatAll includes every catalog food type: %s', (type) => {
+    const fixture = PLACES.filter((p) => p.type === type);
+    expect(fixture.length).toBeGreaterThan(0);
+    const returned = filterPlaces(PLACES, { eatAll: true });
+    expect(returned.filter((p) => p.type === type)).toHaveLength(fixture.length);
+  });
+
+  it.each(FOOD_TYPES)('each food type is reachable by its own placeType filter: %s', (type) => {
+    const expected = PLACES.filter((p) => p.type === type).map((p) => p.id).sort();
+    const got = filterPlaces(PLACES, { placeType: type }).map((p) => p.id).sort();
+    expect(got).toEqual(expect.arrayContaining(expected));
   });
 
   it('filters by subType', () => {
@@ -88,6 +115,34 @@ describe('filterPlaces — exact filters', () => {
   it('matches a specific authority key against kosherAuthority, not the group', () => {
     expect(ids(filterPlaces(PLACES, { kosherAuthorityGroup: 'badatz_edah' }))).toEqual(['2']);
     expect(filterPlaces(PLACES, { kosherAuthorityGroup: 'badatz_beit_yosef' })).toHaveLength(0);
+  });
+
+  describe('kosherAuthorityGroup excludes an expired certificate', () => {
+    // A certification-specific filter represents certification our evidence
+    // currently supports — an expired cert no longer belongs under it, even
+    // though the business stays visible through normal browsing/search.
+    const expired = place({
+      id: '12', name: 'עסק שפג', type: 'restaurant',
+      kosherAuthorityGroup: 'badatz', kosherAuthority: 'badatz_edah',
+      certificateValidUntil: '2000-01-01',
+    });
+    const noExpiryOnRecord = place({
+      id: '13', name: 'עסק ללא תעודה', type: 'restaurant',
+      kosherAuthorityGroup: 'badatz', kosherAuthority: 'badatz_edah',
+    });
+    const withPlaces = [...PLACES, expired, noExpiryOnRecord];
+
+    it('drops the expired place from a group-level filter', () => {
+      expect(ids(filterPlaces(withPlaces, { kosherAuthorityGroup: 'badatz' }))).toEqual(['13', '2']);
+    });
+
+    it('drops the expired place from a specific-authority filter', () => {
+      expect(ids(filterPlaces(withPlaces, { kosherAuthorityGroup: 'badatz_edah' }))).toEqual(['13', '2']);
+    });
+
+    it('keeps a place with no expiry date on record — unknown is not expired', () => {
+      expect(ids(filterPlaces(withPlaces, { kosherAuthorityGroup: 'badatz' }))).toContain('13');
+    });
   });
 
   it('expands a cuisine tag group', () => {

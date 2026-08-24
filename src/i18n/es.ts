@@ -69,6 +69,7 @@ export const es = {
     source: 'Fuente',
     certifiedBy: 'Certificado kosher',
     validUntil: 'Válido hasta',
+    certExpired: 'Certificado kosher caducado',
     lastVerified: 'Última verificación',
     buriedPerson: 'Enterrado aquí',
     approxLocation: 'Ubicación aproximada por ciudad',
@@ -153,6 +154,19 @@ export const es = {
     mikveh: 'Mikvaot',
     chabad_house: 'Casas Jabad',
     tzaddik_grave: 'Tumbas de Tzadikim',
+  },
+
+  foodCategories: {
+    all: 'Todo',
+    restaurant: 'Restaurantes',
+    chef_restaurant: 'Restaurantes de autor',
+    cafe: 'Cafeterías',
+    coffee_cart: 'Carritos de café',
+    fast_food: 'Comida rápida',
+    bakery: 'Panaderías',
+    juice_bar: 'Zumerías',
+    ice_cream_parlor: 'Heladerías',
+    winery: 'Bodegas',
   },
 
   menu: {

@@ -69,6 +69,7 @@ export const fr = {
     source: 'Source',
     certifiedBy: 'Certificat cacher',
     validUntil: "Valable jusqu'au",
+    certExpired: 'Certificat cacher expiré',
     lastVerified: 'Dernière vérification',
     buriedPerson: 'Enterré ici',
     approxLocation: 'Emplacement approximatif par ville',
@@ -153,6 +154,19 @@ export const fr = {
     mikveh: 'Mikvaot',
     chabad_house: 'Maisons Chabad',
     tzaddik_grave: 'Tombes des Tsadikim',
+  },
+
+  foodCategories: {
+    all: 'Tout',
+    restaurant: 'Restaurants',
+    chef_restaurant: 'Restaurants gastronomiques',
+    cafe: 'Cafés',
+    coffee_cart: 'Kiosques à café',
+    fast_food: 'Restauration rapide',
+    bakery: 'Boulangeries',
+    juice_bar: 'Bars à jus',
+    ice_cream_parlor: 'Glaciers',
+    winery: 'Caves viticoles',
   },
 
   menu: {

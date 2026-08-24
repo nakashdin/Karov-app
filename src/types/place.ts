@@ -93,8 +93,25 @@ export interface Place {
   kosherAuthority?: string | null;
   /** Name of the certifying authority as printed on the certificate. */
   certifiedBy?: string;
-  /** ISO date (YYYY-MM-DD) the kosher certificate is valid until. */
+  /**
+   * ISO date (YYYY-MM-DD) the kosher certificate is valid until. Only ever
+   * set from a real certificate document (see `kosherCertUrl`) — never
+   * inferred, extrapolated, or copied from a sibling branch. Its absence
+   * means Karov doesn't have the certificate for this branch, NOT that the
+   * business lost its certification; see `utils/certificate.ts` for the
+   * runtime state this drives (valid / expired / unknown / none). Currently
+   * only populated for Tzohar (the one certifying body we have permission to
+   * publish certificate data for), but the field itself is authority-agnostic
+   * — any future authorized source sets the same three fields together
+   * (`certifiedBy`, `kosherCertUrl`, `certificateValidUntil`).
+   */
   certificateValidUntil?: string;
+  /**
+   * ISO date (YYYY-MM-DD) the certificate was issued, when the source
+   * publishes it. Not currently extracted from any source — modeled for
+   * forward compatibility, left unset rather than guessed.
+   */
+  certificateIssuedAt?: string;
   /**
    * Kashrut standards printed on the certificate itself. Populated from the
    * Tzohar certificate PDFs by importers/tzohar/extract-cert-expiry.mjs.

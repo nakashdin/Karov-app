@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { Pressable, Text, View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { Place } from '../types';
+import { isFoodType, Place } from '../types';
 import { makeStyles, radius, shadow, spacing, useTheme } from '../theme';
 import type { Tokens } from '../theme';
 import { useLanguage } from '../context/LanguageContext';
 import { transliterateHebrew } from '../utils/transliterate';
 import { categoryLabel, getKosherLabel } from '../utils/kosher';
+import { isCertificateExpired } from '../utils/certificate';
 import { displayPlaceName, getPlaceEmoji, placeTypeLabel } from '../utils/placeType';
 import { formatDistance } from '../utils/geo';
 import { isCurrentlyOpen, todayHoursStr } from '../utils/openingHours';
@@ -102,22 +103,23 @@ export function PlaceCard({ place, distanceKm, onPress }: PlaceCardProps) {
     : chipColorFor(theme)[place.type];
   const typeLabel = place.subType ? (SUB_TYPE_LABEL[place.subType] ?? placeTypeLabel[place.type]) : placeTypeLabel[place.type];
 
-  const isFoodType = ['restaurant', 'fast_food', 'cafe', 'coffee_cart', 'juice_bar', 'ice_cream_parlor', 'bakery'].includes(place.type);
+  const isFood = isFoodType(place.type);
   const openStatus  = isCurrentlyOpen(place.openingHours, place.location);
   const todayHours  = todayHoursStr(place.openingHours);
   const showHoursRow = todayHours !== null || openStatus !== null;
-  const kosherLabel = isFoodType ? getKosherLabel(place) : null;
+  const kosherLabel = isFood ? getKosherLabel(place) : null;
   const kosherColor = kosherBadgeColor(place, theme);
 
   // Second info chip (category / nusach)
   const subChip =
-    isFoodType && place.category ? categoryLabel[place.category]
+    isFood && place.category ? categoryLabel[place.category]
     : place.type === 'synagogue' && place.nusach ? place.nusach
     : place.type === 'mikveh' && place.mikvehGender ? place.mikvehGender
     : null;
 
   // Certification line
-  const certLine = isFoodType && place.certifiedBy ? place.certifiedBy : null;
+  const certLine = isFood && place.certifiedBy ? place.certifiedBy : null;
+  const certExpired = isFood && isCertificateExpired(place);
 
   return (
     <Pressable
@@ -182,7 +184,9 @@ export function PlaceCard({ place, distanceKm, onPress }: PlaceCardProps) {
 
       {/* Certification */}
       {certLine && (
-        <Text style={styles.cert} numberOfLines={1}>🏛 הכשר: {certLine}</Text>
+        <Text style={[styles.cert, certExpired && { color: theme.danger }]} numberOfLines={1}>
+          {certExpired ? `⚠️ ${t.detail.certExpired} — ${certLine}` : `🏛 הכשר: ${certLine}`}
+        </Text>
       )}
 
       {/* Opening hours */}
