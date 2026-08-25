@@ -1,0 +1,2020 @@
+{
+  "authorities": [
+    {
+      "id": "rabbinate-chief-israel",
+      "nameHe": "הרבנות הראשית לישראל",
+      "nameEn": "Chief Rabbinate of Israel",
+      "group": "rabbinate",
+      "kind": "national-rabbinate",
+      "city": null
+    },
+    {
+      "id": "rabbinate-tel-aviv",
+      "nameHe": "רבנות תל אביב-יפו",
+      "nameEn": "Tel Aviv-Yafo Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "תל אביב-יפו"
+    },
+    {
+      "id": "rabbinate-jerusalem",
+      "nameHe": "רבנות ירושלים",
+      "nameEn": "Jerusalem Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "ירושלים"
+    },
+    {
+      "id": "rabbinate-haifa",
+      "nameHe": "רבנות חיפה",
+      "nameEn": "Haifa Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "חיפה"
+    },
+    {
+      "id": "rabbinate-beer-sheva",
+      "nameHe": "רבנות באר שבע",
+      "nameEn": "Beer Sheva Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "באר שבע"
+    },
+    {
+      "id": "rabbinate-rishon-lezion",
+      "nameHe": "רבנות ראשון לציון",
+      "nameEn": "Rishon LeZion Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "ראשון לציון"
+    },
+    {
+      "id": "rabbinate-petah-tikva",
+      "nameHe": "רבנות פתח תקווה",
+      "nameEn": "Petah Tikva Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "פתח תקווה"
+    },
+    {
+      "id": "rabbinate-netanya",
+      "nameHe": "רבנות נתניה",
+      "nameEn": "Netanya Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "נתניה"
+    },
+    {
+      "id": "rabbinate-herzliya",
+      "nameHe": "רבנות הרצליה",
+      "nameEn": "Herzliya Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "הרצליה"
+    },
+    {
+      "id": "rabbinate-ramat-gan",
+      "nameHe": "רבנות רמת גן",
+      "nameEn": "Ramat Gan Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "רמת גן"
+    },
+    {
+      "id": "rabbinate-ramat-hasharon",
+      "nameHe": "רבנות רמת השרון",
+      "nameEn": "Ramat HaSharon Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "רמת השרון"
+    },
+    {
+      "id": "rabbinate-bnei-brak",
+      "nameHe": "רבנות בני ברק",
+      "nameEn": "Bnei Brak Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "בני ברק"
+    },
+    {
+      "id": "rabbinate-holon",
+      "nameHe": "רבנות חולון",
+      "nameEn": "Holon Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "חולון"
+    },
+    {
+      "id": "rabbinate-bat-yam",
+      "nameHe": "רבנות בת ים",
+      "nameEn": "Bat Yam Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "בת ים"
+    },
+    {
+      "id": "rabbinate-rehovot",
+      "nameHe": "רבנות רחובות",
+      "nameEn": "Rehovot Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "רחובות"
+    },
+    {
+      "id": "rabbinate-nes-ziona",
+      "nameHe": "רבנות נס ציונה",
+      "nameEn": "Nes Ziona Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "נס ציונה"
+    },
+    {
+      "id": "rabbinate-raanana",
+      "nameHe": "רבנות רעננה",
+      "nameEn": "Raanana Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "רעננה"
+    },
+    {
+      "id": "rabbinate-kfar-saba",
+      "nameHe": "רבנות כפר סבא",
+      "nameEn": "Kfar Saba Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "כפר סבא"
+    },
+    {
+      "id": "rabbinate-hod-hasharon",
+      "nameHe": "רבנות הוד השרון",
+      "nameEn": "Hod HaSharon Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "הוד השרון"
+    },
+    {
+      "id": "rabbinate-ashdod",
+      "nameHe": "רבנות אשדוד",
+      "nameEn": "Ashdod Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "אשדוד"
+    },
+    {
+      "id": "rabbinate-ashkelon",
+      "nameHe": "רבנות אשקלון",
+      "nameEn": "Ashkelon Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "אשקלון"
+    },
+    {
+      "id": "rabbinate-kiryat-gat",
+      "nameHe": "רבנות קרית גת",
+      "nameEn": "Kiryat Gat Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "קרית גת"
+    },
+    {
+      "id": "rabbinate-kiryat-malachi",
+      "nameHe": "רבנות קרית מלאכי",
+      "nameEn": "Kiryat Malachi Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "קרית מלאכי"
+    },
+    {
+      "id": "rabbinate-netivot",
+      "nameHe": "רבנות נתיבות",
+      "nameEn": "Netivot Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "נתיבות"
+    },
+    {
+      "id": "rabbinate-eilat",
+      "nameHe": "רבנות אילת",
+      "nameEn": "Eilat Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "אילת"
+    },
+    {
+      "id": "rabbinate-arad",
+      "nameHe": "רבנות ערד",
+      "nameEn": "Arad Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "ערד"
+    },
+    {
+      "id": "rabbinate-afula",
+      "nameHe": "רבנות עפולה",
+      "nameEn": "Afula Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "עפולה"
+    },
+    {
+      "id": "rabbinate-tiberias",
+      "nameHe": "רבנות טבריה",
+      "nameEn": "Tiberias Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "טבריה"
+    },
+    {
+      "id": "rabbinate-tzfat",
+      "nameHe": "רבנות צפת",
+      "nameEn": "Tzfat Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "צפת"
+    },
+    {
+      "id": "rabbinate-nahariya",
+      "nameHe": "רבנות נהריה",
+      "nameEn": "Nahariya Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "נהריה"
+    },
+    {
+      "id": "rabbinate-akko",
+      "nameHe": "רבנות עכו",
+      "nameEn": "Akko Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "עכו"
+    },
+    {
+      "id": "rabbinate-karmiel",
+      "nameHe": "רבנות כרמיאל",
+      "nameEn": "Karmiel Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "כרמיאל"
+    },
+    {
+      "id": "rabbinate-migdal-haemek",
+      "nameHe": "רבנות מגדל העמק",
+      "nameEn": "Migdal HaEmek Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "מגדל העמק"
+    },
+    {
+      "id": "rabbinate-nesher",
+      "nameHe": "רבנות נשר",
+      "nameEn": "Nesher Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "נשר"
+    },
+    {
+      "id": "rabbinate-kiryat-ata",
+      "nameHe": "רבנות קריית אתא",
+      "nameEn": "Kiryat Ata Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "קריית אתא"
+    },
+    {
+      "id": "rabbinate-kiryat-bialik",
+      "nameHe": "רבנות קריית ביאליק",
+      "nameEn": "Kiryat Bialik Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "קריית ביאליק"
+    },
+    {
+      "id": "rabbinate-kiryat-motzkin",
+      "nameHe": "רבנות קרית מוצקין",
+      "nameEn": "Kiryat Motzkin Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "קרית מוצקין"
+    },
+    {
+      "id": "rabbinate-kiryat-tivon",
+      "nameHe": "רבנות קרית טבעון",
+      "nameEn": "Kiryat Tivon Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "קרית טבעון"
+    },
+    {
+      "id": "rabbinate-zichron-yaakov",
+      "nameHe": "רבנות זכרון יעקב",
+      "nameEn": "Zichron Yaakov Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "זכרון יעקב"
+    },
+    {
+      "id": "rabbinate-hadera",
+      "nameHe": "רבנות חדרה",
+      "nameEn": "Hadera Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "חדרה"
+    },
+    {
+      "id": "rabbinate-ramla",
+      "nameHe": "רבנות רמלה",
+      "nameEn": "Ramla Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "רמלה"
+    },
+    {
+      "id": "rabbinate-lod",
+      "nameHe": "רבנות לוד",
+      "nameEn": "Lod Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "לוד"
+    },
+    {
+      "id": "rabbinate-yavne",
+      "nameHe": "רבנות יבנה",
+      "nameEn": "Yavne Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "יבנה"
+    },
+    {
+      "id": "rabbinate-gedera",
+      "nameHe": "רבנות גדרה",
+      "nameEn": "Gedera Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "גדרה"
+    },
+    {
+      "id": "rabbinate-shoham",
+      "nameHe": "רבנות שוהם",
+      "nameEn": "Shoham Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "שוהם"
+    },
+    {
+      "id": "rabbinate-givat-shmuel",
+      "nameHe": "רבנות גבעת שמואל",
+      "nameEn": "Givat Shmuel Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "גבעת שמואל"
+    },
+    {
+      "id": "rabbinate-rosh-haayin",
+      "nameHe": "רבנות ראש העין",
+      "nameEn": "Rosh HaAyin Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "ראש העין"
+    },
+    {
+      "id": "rabbinate-rosh-pina",
+      "nameHe": "רבנות ראש פינה",
+      "nameEn": "Rosh Pina Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "ראש פינה"
+    },
+    {
+      "id": "rabbinate-mevaseret-zion",
+      "nameHe": "רבנות מבשרת ציון",
+      "nameEn": "Mevaseret Zion Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "מבשרת ציון"
+    },
+    {
+      "id": "rabbinate-beit-shemesh",
+      "nameHe": "רבנות בית שמש",
+      "nameEn": "Beit Shemesh Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "בית שמש"
+    },
+    {
+      "id": "rabbinate-maale-adumim",
+      "nameHe": "רבנות מעלה אדומים",
+      "nameEn": "Maale Adumim Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "מעלה אדומים"
+    },
+    {
+      "id": "rabbinate-ariel",
+      "nameHe": "רבנות אריאל",
+      "nameEn": "Ariel Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "אריאל"
+    },
+    {
+      "id": "rabbinate-modiin-illit",
+      "nameHe": "רבנות מודיעין עילית",
+      "nameEn": "Modiin Illit Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "מודיעין עילית"
+    },
+    {
+      "id": "rabbinate-modiin-maccabim-reut",
+      "nameHe": "רבנות מודיעין-מכבים-רעות",
+      "nameEn": "Modiin-Maccabim-Reut Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "מודיעין-מכבים-רעות"
+    },
+    {
+      "id": "rabbinate-kadima-tzoran",
+      "nameHe": "רבנות קדימה-צורן",
+      "nameEn": "Kadima-Tzoran Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "קדימה-צורן"
+    },
+    {
+      "id": "rabbinate-tzofim",
+      "nameHe": "רבנות צופים",
+      "nameEn": "Tzofim Local Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "צופים"
+    },
+    {
+      "id": "rabbinate-emek-hefer",
+      "nameHe": "רבנות מועצה אזורית עמק חפר",
+      "nameEn": "Emek Hefer Regional Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "מועצה אזורית עמק חפר"
+    },
+    {
+      "id": "rabbinate-shafir",
+      "nameHe": "רבנות מועצה אזורית שפיר",
+      "nameEn": "Shafir Regional Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "מועצה אזורית שפיר"
+    },
+    {
+      "id": "rabbinate-sdot-negev",
+      "nameHe": "רבנות מועצה אזורית שדות נגב",
+      "nameEn": "Sdot Negev Regional Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "מועצה אזורית שדות נגב"
+    },
+    {
+      "id": "rabbinate-mateh-binyamin",
+      "nameHe": "רבנות מועצה אזורית מטה בנימין",
+      "nameEn": "Mateh Binyamin Regional Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "מועצה אזורית מטה בנימין"
+    },
+    {
+      "id": "rabbinate-mateh-yehuda",
+      "nameHe": "רבנות מטה יהודה",
+      "nameEn": "Mateh Yehuda Regional Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "מועצה אזורית מטה יהודה"
+    },
+    {
+      "id": "rabbinate-hof-hasharon",
+      "nameHe": "רבנות מועצה אזורית חוף השרון",
+      "nameEn": "Hof HaSharon Regional Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "מועצה אזורית חוף השרון"
+    },
+    {
+      "id": "rabbinate-hof-hacarmel",
+      "nameHe": "רבנות מועצה אזורית חוף הכרמל",
+      "nameEn": "Hof HaCarmel Regional Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "מועצה אזורית חוף הכרמל"
+    },
+    {
+      "id": "rabbinate-galil-tachton",
+      "nameHe": "רבנות הגליל התחתון",
+      "nameEn": "Lower Galilee Regional Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "מועצה אזורית הגליל התחתון"
+    },
+    {
+      "id": "rabbinate-merom-hagalil",
+      "nameHe": "רבנות מרום הגליל",
+      "nameEn": "Merom HaGalil Regional Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "מועצה אזורית מרום הגליל"
+    },
+    {
+      "id": "rabbinate-emek-yizrael",
+      "nameHe": "רבנות עמק יזרעאל",
+      "nameEn": "Emek Yizrael Regional Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "מועצה אזורית עמק יזרעאל"
+    },
+    {
+      "id": "rabbinate-beer-tuvia",
+      "nameHe": "רבנות באר טוביה",
+      "nameEn": "Beer Tuvia Regional Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "מועצה אזורית באר טוביה"
+    },
+    {
+      "id": "rabbinate-merhavim",
+      "nameHe": "רבנות אזורית מרחבים",
+      "nameEn": "Merhavim Regional Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "מועצה אזורית מרחבים"
+    },
+    {
+      "id": "rabbinate-nahal-sorek",
+      "nameHe": "רבנות נחל שורק",
+      "nameEn": "Nahal Sorek Regional Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "מועצה אזורית נחל שורק"
+    },
+    {
+      "id": "rabbinate-gan-raveh",
+      "nameHe": "רבנות גן רווה",
+      "nameEn": "Gan Raveh Regional Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "מועצה אזורית גן רווה"
+    },
+    {
+      "id": "rabbinate-hevel-modiin",
+      "nameHe": "רבנות חבל מודיעין",
+      "nameEn": "Hevel Modiin Regional Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "מועצה אזורית חבל מודיעין"
+    },
+    {
+      "id": "rabbinate-shomron",
+      "nameHe": "רבנות שומרון",
+      "nameEn": "Shomron Regional Rabbinate",
+      "group": "rabbinate",
+      "kind": "local-rabbinate",
+      "city": "מועצה אזורית שומרון"
+    },
+    {
+      "id": "badatz-beit-yosef",
+      "nameHe": "בד\"ץ בית יוסף",
+      "nameEn": "Badatz Beit Yosef",
+      "group": "badatz",
+      "kind": "badatz",
+      "city": null
+    },
+    {
+      "id": "badatz-edah-hachareidis",
+      "nameHe": "בד\"ץ העדה החרדית",
+      "nameEn": "Badatz Edah HaChareidis",
+      "group": "badatz",
+      "kind": "badatz",
+      "city": null
+    },
+    {
+      "id": "badatz-agudat-yisrael",
+      "nameHe": "בד\"ץ אגודת ישראל",
+      "nameEn": "Badatz Agudat Yisrael",
+      "group": "badatz",
+      "kind": "badatz",
+      "city": null
+    },
+    {
+      "id": "badatz-chatam-sofer-petah-tikva",
+      "nameHe": "בד\"ץ חתם סופר פתח תקווה",
+      "nameEn": "Badatz Chatam Sofer Petah Tikva",
+      "group": "badatz",
+      "kind": "badatz",
+      "city": null
+    },
+    {
+      "id": "rav-landau",
+      "nameHe": "כשרות הרב לנדא",
+      "nameEn": "Rav Landau Kashrut (Bnei Brak)",
+      "group": "badatz",
+      "kind": "private-rav",
+      "city": null
+    },
+    {
+      "id": "rav-machpud",
+      "nameHe": "כשרות הרב מחפוד",
+      "nameEn": "Rav Machpud Kashrut",
+      "group": "badatz",
+      "kind": "private-rav",
+      "city": null
+    },
+    {
+      "id": "rav-rubin",
+      "nameHe": "בד\"ץ הרב רובין",
+      "nameEn": "Badatz Rav Rubin",
+      "group": "badatz",
+      "kind": "private-rav",
+      "city": null
+    },
+    {
+      "id": "tzohar",
+      "nameHe": "צהר",
+      "nameEn": "Tzohar",
+      "group": "independent",
+      "kind": "other",
+      "city": null
+    },
+    {
+      "id": "ou",
+      "nameHe": "OU",
+      "nameEn": "Orthodox Union (OU)",
+      "group": "independent",
+      "kind": "other",
+      "city": null
+    }
+  ],
+  "aliases": [
+    {
+      "raw": "צהר",
+      "authorityId": "tzohar",
+      "level": null
+    },
+    {
+      "raw": "רבנות מקומית",
+      "authorityId": null,
+      "level": null
+    },
+    {
+      "raw": "הרבנות המקומית",
+      "authorityId": null,
+      "level": null
+    },
+    {
+      "raw": "העדה החרדית",
+      "authorityId": "badatz-edah-hachareidis",
+      "level": null
+    },
+    {
+      "raw": "כשרות הרב מחפוד",
+      "authorityId": "rav-machpud",
+      "level": null
+    },
+    {
+      "raw": "רבנות ראשון לציון",
+      "authorityId": "rabbinate-rishon-lezion",
+      "level": null
+    },
+    {
+      "raw": "כשר מהדרין- בד\"צ בית יוסף",
+      "authorityId": "badatz-beit-yosef",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "כשר למהדרין בד\"ץ בית יוסף",
+      "authorityId": "badatz-beit-yosef",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "כשר למהדרין בהשגחת הרב מחפוד",
+      "authorityId": "rav-machpud",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "כשרות מהדרין מחפוד",
+      "authorityId": "rav-machpud",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "כשר בד\"ץ בית יוסף מהדרין",
+      "authorityId": "badatz-beit-yosef",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "בד\"ץ מהדרין רבנות מודיעין עילית",
+      "authorityId": "rabbinate-modiin-illit",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות ראש העין",
+      "authorityId": "rabbinate-rosh-haayin",
+      "level": null
+    },
+    {
+      "raw": "הרב רובין",
+      "authorityId": "rav-rubin",
+      "level": null
+    },
+    {
+      "raw": "רבנות הרצליה מהדרין",
+      "authorityId": "rabbinate-herzliya",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות כרמיאל",
+      "authorityId": "rabbinate-karmiel",
+      "level": null
+    },
+    {
+      "raw": "רבנות מועצת שפיר",
+      "authorityId": "rabbinate-shafir",
+      "level": null
+    },
+    {
+      "raw": "רב רובין",
+      "authorityId": "rav-rubin",
+      "level": null
+    },
+    {
+      "raw": "רבנות קריית אתא מהדרין",
+      "authorityId": "rabbinate-kiryat-ata",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות רעננה מהדרין",
+      "authorityId": "rabbinate-raanana",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "בד\"ץ מהדרין הרב רובין",
+      "authorityId": "rav-rubin",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות נס ציונה",
+      "authorityId": "rabbinate-nes-ziona",
+      "level": null
+    },
+    {
+      "raw": "רבנות אשדוד",
+      "authorityId": "rabbinate-ashdod",
+      "level": null
+    },
+    {
+      "raw": "המועצה הדתית תל אביב יפו",
+      "authorityId": "rabbinate-tel-aviv",
+      "level": null
+    },
+    {
+      "raw": "המועצה הדתית הרצליה",
+      "authorityId": "rabbinate-herzliya",
+      "level": null
+    },
+    {
+      "raw": "בד\"צ העדה החרדית",
+      "authorityId": "badatz-edah-hachareidis",
+      "level": null
+    },
+    {
+      "raw": "כשר למהדרין בד\"ץ",
+      "authorityId": null,
+      "level": "mehadrin"
+    },
+    {
+      "raw": "כשרות רובין",
+      "authorityId": "rav-rubin",
+      "level": null
+    },
+    {
+      "raw": "בד\"ץ מהדרין",
+      "authorityId": null,
+      "level": "mehadrin"
+    },
+    {
+      "raw": "הרבנות המקומית כשרות מהדרין",
+      "authorityId": null,
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות שדות נגב",
+      "authorityId": "rabbinate-sdot-negev",
+      "level": null
+    },
+    {
+      "raw": "רבנות מועצת מטה בנימין",
+      "authorityId": "rabbinate-mateh-binyamin",
+      "level": null
+    },
+    {
+      "raw": "הרבנות",
+      "authorityId": null,
+      "level": null
+    },
+    {
+      "raw": "הרבנות המקומית חוף השרון",
+      "authorityId": "rabbinate-hof-hasharon",
+      "level": null
+    },
+    {
+      "raw": "OU מהדרין",
+      "authorityId": "ou",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות רמת השרון מהדרין",
+      "authorityId": "rabbinate-ramat-hasharon",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות גבעת שמואל",
+      "authorityId": "rabbinate-givat-shmuel",
+      "level": null
+    },
+    {
+      "raw": "רבנות עמק חפר",
+      "authorityId": "rabbinate-emek-hefer",
+      "level": null
+    },
+    {
+      "raw": "רבנות בת ים מהדרין",
+      "authorityId": "rabbinate-bat-yam",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות מודיעין-מכבים-רעות",
+      "authorityId": "rabbinate-modiin-maccabim-reut",
+      "level": null
+    },
+    {
+      "raw": "רבנות באר שבע",
+      "authorityId": "rabbinate-beer-sheva",
+      "level": null
+    },
+    {
+      "raw": "הרבנות הראשית קרית גת",
+      "authorityId": "rabbinate-kiryat-gat",
+      "level": null
+    },
+    {
+      "raw": "רבנות מוצקין",
+      "authorityId": "rabbinate-kiryat-motzkin",
+      "level": null
+    },
+    {
+      "raw": "רבנות מהדרין פתח תקווה",
+      "authorityId": "rabbinate-petah-tikva",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות מהדרין באר שבע",
+      "authorityId": "rabbinate-beer-sheva",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות מהדרין אשקלון",
+      "authorityId": "rabbinate-ashkelon",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות מהדרין קרית גת",
+      "authorityId": "rabbinate-kiryat-gat",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות מהדרין עפולה",
+      "authorityId": "rabbinate-afula",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות מהדרין לוד",
+      "authorityId": "rabbinate-lod",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "בד\"צ העדה החרדית ירושלים",
+      "authorityId": "badatz-edah-hachareidis",
+      "level": null
+    },
+    {
+      "raw": "רבנות עירונית ערד",
+      "authorityId": "rabbinate-arad",
+      "level": null
+    },
+    {
+      "raw": "בד\"ץ בית יוסף",
+      "authorityId": "badatz-beit-yosef",
+      "level": null
+    },
+    {
+      "raw": "רבנות",
+      "authorityId": null,
+      "level": null
+    },
+    {
+      "raw": "כשר למהדרין",
+      "authorityId": null,
+      "level": "mehadrin"
+    },
+    {
+      "raw": "הרב לנדא",
+      "authorityId": "rav-landau",
+      "level": null
+    },
+    {
+      "raw": "רב מחפוד",
+      "authorityId": "rav-machpud",
+      "level": null
+    },
+    {
+      "raw": "בד\"ץ העדה החרדית",
+      "authorityId": "badatz-edah-hachareidis",
+      "level": null
+    },
+    {
+      "raw": "כשרות הרב לנדא",
+      "authorityId": "rav-landau",
+      "level": null
+    },
+    {
+      "raw": "בד\"ץ עדה חרדית",
+      "authorityId": "badatz-edah-hachareidis",
+      "level": null
+    },
+    {
+      "raw": "הרבנות האזורית",
+      "authorityId": null,
+      "level": null
+    },
+    {
+      "raw": "רב לנדא",
+      "authorityId": "rav-landau",
+      "level": null
+    },
+    {
+      "raw": "מועצה דתית רחובות",
+      "authorityId": "rabbinate-rehovot",
+      "level": null
+    },
+    {
+      "raw": "כשר בד\"ץ",
+      "authorityId": null,
+      "level": null
+    },
+    {
+      "raw": "רבנות רחובות מהדרין",
+      "authorityId": "rabbinate-rehovot",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "כשר למהדרין – בהשגחת הרב מחפוד",
+      "authorityId": "rav-machpud",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות פתח תקווה מהדרין",
+      "authorityId": "rabbinate-petah-tikva",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות רמת השרון",
+      "authorityId": "rabbinate-ramat-hasharon",
+      "level": null
+    },
+    {
+      "raw": "הרב מחפוד",
+      "authorityId": "rav-machpud",
+      "level": null
+    },
+    {
+      "raw": "רבנות טבריה מהדרין",
+      "authorityId": "rabbinate-tiberias",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות כפר סבא מהדרין",
+      "authorityId": "rabbinate-kfar-saba",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות אשדוד מהדרין",
+      "authorityId": "rabbinate-ashdod",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות חדרה",
+      "authorityId": "rabbinate-hadera",
+      "level": null
+    },
+    {
+      "raw": "ארגון רבני צהר",
+      "authorityId": "tzohar",
+      "level": null
+    },
+    {
+      "raw": "מועצה דתית ראש פינה",
+      "authorityId": "rabbinate-rosh-pina",
+      "level": null
+    },
+    {
+      "raw": "רבנות מבשרת ציון",
+      "authorityId": "rabbinate-mevaseret-zion",
+      "level": null
+    },
+    {
+      "raw": "כשרות בד\"ץ בית יוסף",
+      "authorityId": "badatz-beit-yosef",
+      "level": null
+    },
+    {
+      "raw": "רבונות מקומית מהדרין",
+      "authorityId": null,
+      "level": "mehadrin"
+    },
+    {
+      "raw": "הרבנות המקומית פתח תקווה",
+      "authorityId": "rabbinate-petah-tikva",
+      "level": null
+    },
+    {
+      "raw": "רבנות גליל תחתון",
+      "authorityId": "rabbinate-galil-tachton",
+      "level": null
+    },
+    {
+      "raw": "הרבנות הדתית כרמיאל",
+      "authorityId": "rabbinate-karmiel",
+      "level": null
+    },
+    {
+      "raw": "הרבנות המקומית יבנה",
+      "authorityId": "rabbinate-yavne",
+      "level": null
+    },
+    {
+      "raw": "הרבנות המקומית צופים",
+      "authorityId": "rabbinate-tzofim",
+      "level": null
+    },
+    {
+      "raw": "בד\"ץ הרב רובין",
+      "authorityId": "rav-rubin",
+      "level": null
+    },
+    {
+      "raw": "חתם סופר פ\"ת",
+      "authorityId": "badatz-chatam-sofer-petah-tikva",
+      "level": null
+    },
+    {
+      "raw": "רבנות רמת גן מהדרין",
+      "authorityId": "rabbinate-ramat-gan",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות יבנה",
+      "authorityId": "rabbinate-yavne",
+      "level": null
+    },
+    {
+      "raw": "מועצה דתית ירושלים מהדרין",
+      "authorityId": "rabbinate-jerusalem",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות עפולה מהדרין",
+      "authorityId": "rabbinate-afula",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות קרית טבעון",
+      "authorityId": "rabbinate-kiryat-tivon",
+      "level": null
+    },
+    {
+      "raw": "רבנות הוד השרון",
+      "authorityId": "rabbinate-hod-hasharon",
+      "level": null
+    },
+    {
+      "raw": "בהשגחת הרבנות מועצה אזורית חוף הכרמל",
+      "authorityId": "rabbinate-hof-hacarmel",
+      "level": null
+    },
+    {
+      "raw": "רבנות עפולה",
+      "authorityId": "rabbinate-afula",
+      "level": null
+    },
+    {
+      "raw": "רבנות מהדרין מודיעין",
+      "authorityId": "rabbinate-modiin-maccabim-reut",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות מהדרין רחובות",
+      "authorityId": "rabbinate-rehovot",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות מהדרין חולון",
+      "authorityId": "rabbinate-holon",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "בד\"ץ העדה החרדית / מהדרין",
+      "authorityId": "badatz-edah-hachareidis",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות מהדרין קרית מלאכי",
+      "authorityId": "rabbinate-kiryat-malachi",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות מהדרין גבעת שמואל",
+      "authorityId": "rabbinate-givat-shmuel",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות מהדרין אילת",
+      "authorityId": "rabbinate-eilat",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות מהדרין טבריה",
+      "authorityId": "rabbinate-tiberias",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות גדרה",
+      "authorityId": "rabbinate-gedera",
+      "level": null
+    },
+    {
+      "raw": "מהדרין",
+      "authorityId": null,
+      "level": "mehadrin"
+    },
+    {
+      "raw": "בד\"צ בית יוסף",
+      "authorityId": "badatz-beit-yosef",
+      "level": null
+    },
+    {
+      "raw": "רבנות תל אביב",
+      "authorityId": "rabbinate-tel-aviv",
+      "level": null
+    },
+    {
+      "raw": "רבנות ירושלים",
+      "authorityId": "rabbinate-jerusalem",
+      "level": null
+    },
+    {
+      "raw": "רבנות חיפה",
+      "authorityId": "rabbinate-haifa",
+      "level": null
+    },
+    {
+      "raw": "רבנות הרצליה",
+      "authorityId": "rabbinate-herzliya",
+      "level": null
+    },
+    {
+      "raw": "רבנות רמת גן",
+      "authorityId": "rabbinate-ramat-gan",
+      "level": null
+    },
+    {
+      "raw": "בד\"ץ",
+      "authorityId": null,
+      "level": null
+    },
+    {
+      "raw": "רבנות גדרה מהדרין",
+      "authorityId": "rabbinate-gedera",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות שוהם",
+      "authorityId": "rabbinate-shoham",
+      "level": null
+    },
+    {
+      "raw": "רבנות נתניה מהדרין",
+      "authorityId": "rabbinate-netanya",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות אילת",
+      "authorityId": "rabbinate-eilat",
+      "level": null
+    },
+    {
+      "raw": "בד״צ בית יוסף",
+      "authorityId": "badatz-beit-yosef",
+      "level": null
+    },
+    {
+      "raw": "רבנות נהריה",
+      "authorityId": "rabbinate-nahariya",
+      "level": null
+    },
+    {
+      "raw": "רבנות ראש פינה",
+      "authorityId": "rabbinate-rosh-pina",
+      "level": null
+    },
+    {
+      "raw": "רבנות המועצה האזורית",
+      "authorityId": null,
+      "level": null
+    },
+    {
+      "raw": "בד\"ץ לנדא",
+      "authorityId": "rav-landau",
+      "level": null
+    },
+    {
+      "raw": "רבנות מגדל העמק מהדרין",
+      "authorityId": "rabbinate-migdal-haemek",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות הוד השרון מהדרין",
+      "authorityId": "rabbinate-hod-hasharon",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות רמלה",
+      "authorityId": "rabbinate-ramla",
+      "level": null
+    },
+    {
+      "raw": "רבנות אשקלון",
+      "authorityId": "rabbinate-ashkelon",
+      "level": null
+    },
+    {
+      "raw": "רבנות מהדרין ראשון לציון",
+      "authorityId": "rabbinate-rishon-lezion",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "בד\"צ מהדרין - הרב רובין",
+      "authorityId": "rav-rubin",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "המועצה הדתית מבשרת ציון",
+      "authorityId": "rabbinate-mevaseret-zion",
+      "level": null
+    },
+    {
+      "raw": "רבנות נשר",
+      "authorityId": "rabbinate-nesher",
+      "level": null
+    },
+    {
+      "raw": "כשרות רבנות ובד\"ץ",
+      "authorityId": null,
+      "level": null
+    },
+    {
+      "raw": "כשר למהדרין בית יוסף",
+      "authorityId": "badatz-beit-yosef",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות הגליל התחתון",
+      "authorityId": "rabbinate-galil-tachton",
+      "level": null
+    },
+    {
+      "raw": "בד'צ בית יוסף",
+      "authorityId": "badatz-beit-yosef",
+      "level": null
+    },
+    {
+      "raw": "רבנות מטה יהודה",
+      "authorityId": "rabbinate-mateh-yehuda",
+      "level": null
+    },
+    {
+      "raw": "הרבנות האיזורית",
+      "authorityId": null,
+      "level": null
+    },
+    {
+      "raw": "רב הקיבוץ",
+      "authorityId": null,
+      "level": null
+    },
+    {
+      "raw": "רבנות באר טוביה",
+      "authorityId": "rabbinate-beer-tuvia",
+      "level": null
+    },
+    {
+      "raw": "רבנות מרום הגליל",
+      "authorityId": "rabbinate-merom-hagalil",
+      "level": null
+    },
+    {
+      "raw": "בד\"ץ מהדרין — רב רובין",
+      "authorityId": "rav-rubin",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות בני ברק מהדרין",
+      "authorityId": "rabbinate-bnei-brak",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות שהם",
+      "authorityId": "rabbinate-shoham",
+      "level": null
+    },
+    {
+      "raw": "הרב רובין מהדרין",
+      "authorityId": "rav-rubin",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות מודיעין מהדרין",
+      "authorityId": "rabbinate-modiin-maccabim-reut",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות מעלה אדומים",
+      "authorityId": "rabbinate-maale-adumim",
+      "level": null
+    },
+    {
+      "raw": "רבנות קריית ביאליק",
+      "authorityId": "rabbinate-kiryat-bialik",
+      "level": null
+    },
+    {
+      "raw": "רבנות נתיבות",
+      "authorityId": "rabbinate-netivot",
+      "level": null
+    },
+    {
+      "raw": "רבנות מקומית חבל מודיעין מהדרין",
+      "authorityId": "rabbinate-hevel-modiin",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות מהדרין ירושלים",
+      "authorityId": "rabbinate-jerusalem",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות מהדרין נתניה",
+      "authorityId": "rabbinate-netanya",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות מהדרין רעננה",
+      "authorityId": "rabbinate-raanana",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות מהדרין חדרה",
+      "authorityId": "rabbinate-hadera",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות מהדרין נס ציונה",
+      "authorityId": "rabbinate-nes-ziona",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות מהדרין הוד השרון",
+      "authorityId": "rabbinate-hod-hasharon",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות מהדרין מעלה אדומים",
+      "authorityId": "rabbinate-maale-adumim",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות מהדרין עכו",
+      "authorityId": "rabbinate-akko",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות בני ברק",
+      "authorityId": "rabbinate-bnei-brak",
+      "level": null
+    },
+    {
+      "raw": "כשר",
+      "authorityId": null,
+      "level": "regular"
+    },
+    {
+      "raw": "רבנות ירושלים מהדרין",
+      "authorityId": "rabbinate-jerusalem",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "בית יוסף",
+      "authorityId": "badatz-beit-yosef",
+      "level": null
+    },
+    {
+      "raw": "רבנות מקומית מהדרין",
+      "authorityId": null,
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות נתניה",
+      "authorityId": "rabbinate-netanya",
+      "level": null
+    },
+    {
+      "raw": "רבנות מהדרין",
+      "authorityId": null,
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות פתח תקווה",
+      "authorityId": "rabbinate-petah-tikva",
+      "level": null
+    },
+    {
+      "raw": "הרבנות הראשית לישראל",
+      "authorityId": "rabbinate-chief-israel",
+      "level": null
+    },
+    {
+      "raw": "כשרות מקומית",
+      "authorityId": null,
+      "level": null
+    },
+    {
+      "raw": "כשרות בד\"ץ הרב רובין",
+      "authorityId": "rav-rubin",
+      "level": null
+    },
+    {
+      "raw": "רבנות בית שמש מהדרין",
+      "authorityId": "rabbinate-beit-shemesh",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות חולון",
+      "authorityId": "rabbinate-holon",
+      "level": null
+    },
+    {
+      "raw": "רבנות רחובות",
+      "authorityId": "rabbinate-rehovot",
+      "level": null
+    },
+    {
+      "raw": "רבנות רעננה",
+      "authorityId": "rabbinate-raanana",
+      "level": null
+    },
+    {
+      "raw": "המועצה הדתית באר שבע",
+      "authorityId": "rabbinate-beer-sheva",
+      "level": null
+    },
+    {
+      "raw": "כשר מהדרין",
+      "authorityId": null,
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות כפר סבא",
+      "authorityId": "rabbinate-kfar-saba",
+      "level": null
+    },
+    {
+      "raw": "בד\"ץ אגודת ישראל",
+      "authorityId": "badatz-agudat-yisrael",
+      "level": null
+    },
+    {
+      "raw": "כשרות הרב רובין",
+      "authorityId": "rav-rubin",
+      "level": null
+    },
+    {
+      "raw": "רבנות תל אביב מהדרין",
+      "authorityId": "rabbinate-tel-aviv",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות תל אביב-יפו",
+      "authorityId": "rabbinate-tel-aviv",
+      "level": null
+    },
+    {
+      "raw": "רבנות פ\"ת",
+      "authorityId": "rabbinate-petah-tikva",
+      "level": null
+    },
+    {
+      "raw": "רבנות מהדרין תל אביב",
+      "authorityId": "rabbinate-tel-aviv",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "המועצה הדתית נתניה",
+      "authorityId": "rabbinate-netanya",
+      "level": null
+    },
+    {
+      "raw": "מועצה דתית נתניה",
+      "authorityId": "rabbinate-netanya",
+      "level": null
+    },
+    {
+      "raw": "כשר למהדרין, בד\"ץ בית יוסף",
+      "authorityId": "badatz-beit-yosef",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "בדץ בית יוסף",
+      "authorityId": "badatz-beit-yosef",
+      "level": null
+    },
+    {
+      "raw": "רבנות עמק יזרעאל",
+      "authorityId": "rabbinate-emek-yizrael",
+      "level": null
+    },
+    {
+      "raw": "רבנות איזורית מרחבים",
+      "authorityId": "rabbinate-merhavim",
+      "level": null
+    },
+    {
+      "raw": "הרבנות יבנה",
+      "authorityId": "rabbinate-yavne",
+      "level": null
+    },
+    {
+      "raw": "רבנות מקומית נחל שורק",
+      "authorityId": "rabbinate-nahal-sorek",
+      "level": null
+    },
+    {
+      "raw": "רבנות זכרון יעקב",
+      "authorityId": "rabbinate-zichron-yaakov",
+      "level": null
+    },
+    {
+      "raw": "רבנות שומרון מהדרין",
+      "authorityId": "rabbinate-shomron",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות צפת מהדרין",
+      "authorityId": "rabbinate-tzfat",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות ראש העין מהדרין",
+      "authorityId": "rabbinate-rosh-haayin",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות גן רווה",
+      "authorityId": "rabbinate-gan-raveh",
+      "level": null
+    },
+    {
+      "raw": "רבנות קדימה-צורן",
+      "authorityId": "rabbinate-kadima-tzoran",
+      "level": null
+    },
+    {
+      "raw": "מועצה דתית ראשון לציון מהדרין",
+      "authorityId": "rabbinate-rishon-lezion",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות בת ים",
+      "authorityId": "rabbinate-bat-yam",
+      "level": null
+    },
+    {
+      "raw": "רבנות לוד",
+      "authorityId": "rabbinate-lod",
+      "level": null
+    },
+    {
+      "raw": "רבנות תל אביב יפו",
+      "authorityId": "rabbinate-tel-aviv",
+      "level": null
+    },
+    {
+      "raw": "רבנות אריאל",
+      "authorityId": "rabbinate-ariel",
+      "level": null
+    },
+    {
+      "raw": "רבנות מהדרין אשדוד",
+      "authorityId": "rabbinate-ashdod",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות מהדרין חיפה",
+      "authorityId": "rabbinate-haifa",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות מהדרין כפר סבא",
+      "authorityId": "rabbinate-kfar-saba",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות מהדרין הרצליה",
+      "authorityId": "rabbinate-herzliya",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות מהדרין יבנה",
+      "authorityId": "rabbinate-yavne",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "רבנות מהדרין רמלה",
+      "authorityId": "rabbinate-ramla",
+      "level": "mehadrin"
+    },
+    {
+      "raw": "כשר רבנות",
+      "authorityId": null,
+      "level": "regular"
+    },
+    {
+      "raw": "רבנות תל אביב (רגילה)",
+      "authorityId": "rabbinate-tel-aviv",
+      "level": "regular"
+    }
+  ],
+  "reviewQueue": [
+    {
+      "raw": "כשר בד\"ץ בית יוסף",
+      "suggestedAuthorityId": "badatz-beit-yosef",
+      "suggestedLevel": null,
+      "why": "CHALLENGER DOWNGRADE. The level treatment is a coin-flip presented as settled. Rule 1 lists \"כשר\" as a level word (=regular) and Rule 5 says record BOTH when a string states an authority and a level; Rule 3 lists a leading \"כשר\" as a strippable qualifier. The proposer invoked Rule 3 to drop the level here but Rule 5 to extract \"מהדרין\" from the parallel strings in the same batch (כשר למהדרין בד\"ץ בית יוסף, כשר בד\"ץ בית יוסף מהדרין), and never reconciled the two readings. Downstream this splits identically-tiered records: the ~276 bare \"כשר\" rows get level=regular while these ~16 get level=null, so they fall out of BOTH a regular filter and a mehadrin filter. The authority is correct and must be kept. Do NOT resolve this by setting level=\"regular\" — that would misrepresent a Sephardi bassar-chalak badatz. Needs a project-wide policy call on bare \"כשר\"."
+    },
+    {
+      "raw": "בד\"ץ מהדרין ירושלים",
+      "suggestedAuthorityId": null,
+      "suggestedLevel": "mehadrin",
+      "why": "CHALLENGER VERDICT: WRONG. Invents an authority out of a level word. The proposed id \"badatz-mehadrin-jerusalem\" was assembled from bare \"בד\"ץ\" + the level word \"מהדרין\" + a city; Rule 1 states both name NO authority, and Rule 4 licenses a city only when paired with רבנות / הרבנות / מועצה דתית. No certifier trades under this name; what exists is the Jerusalem Religious Council's own כשרות מהדרין tier, and the dataset carries רבנות ירושלים מהדרין 39x, רבנות מהדרין ירושלים 2x, מועצה דתית ירושלים מהדרין 1x. Minting the id would plant a phantom independent haredi badatz that a user who does not accept Rabbanut-mehadrin would read as a stricter hechsher than it is. The refusal to merge into rabbinate-jerusalem is correct (Rule 2) and is preserved: authorityId null, mehadrin level retained."
+    },
+    {
+      "raw": "בד\"צ בית ישראל, העדה החרדית",
+      "suggestedAuthorityId": null,
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. Two badatz names in one field (בד\"צ בית ישראל and העדה החרדית) — may be two certifications or a sub-body; collapsing them is forbidden (Rule 2), so only the shared group (badatz) is safe."
+    },
+    {
+      "raw": "בד\"ץ קהילות קריית ספר",
+      "suggestedAuthorityId": "badatz-kehillot",
+      "suggestedLevel": null,
+      "why": "CHALLENGER VERDICT: WRONG. The id embeds the city and would split one body into two. בד\"ץ קהילות is a real named badatz seated in קריית ספר / מודיעין עילית that also certifies outside the city, so the city here is appositive — the same situation the proposer handled correctly for בד\"צ העדה החרדית ירושלים. The dataset carries the same body as bare בד\"ץ קהילות 6x, בד\"ץ קרית ספר / מהדרין 2x, קהילות 1x, בד\"ץ קהילות ורבנות ירושלים מהדרין 1x, רבנות ירושלים / בד\"צ קהילות 1x; a city-suffixed id guarantees those variants land on a different id, fragmenting one hechsher. Distinctness from rabbinate-modiin-illit is correct. The suggested id is the city-free badatz-kehillot, which is deliberately NOT registered until the whole קהילות family is resolved together."
+    },
+    {
+      "raw": "חלב ישראל",
+      "suggestedAuthorityId": null,
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. חלב ישראל is a kashrut attribute, not an authority and not a level; the actual certifier is unrecorded in this field. It probably belongs in a separate attribute column rather than certifiedBy."
+    },
+    {
+      "raw": "בד\"ץ מהדרין — ועד הרבנים",
+      "suggestedAuthorityId": null,
+      "suggestedLevel": "mehadrin",
+      "why": "Proposer uncertain; challenger found no defect. \"ועד הרבנים\" alone does not identify which vaad — several unrelated bodies use that name; only the mehadrin level is safe."
+    },
+    {
+      "raw": "בד\"ץ העדה החרדית + בית יוסף",
+      "suggestedAuthorityId": null,
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. Two distinct badatzim in one field (העדה החרדית + בית יוסף); it cannot be reduced to a single authority (Rule 2). Needs a multi-authority representation."
+    },
+    {
+      "raw": "רבנות מטה בנימין + בית יוסף + הרב לנדא",
+      "suggestedAuthorityId": null,
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. Three certifiers across different groups (רבנות מטה בנימין, בית יוסף, הרב לנדא); no single authority or group can be assigned. Needs a multi-authority representation."
+    },
+    {
+      "raw": "מכון אונגר + רבנות מטה בנימין",
+      "suggestedAuthorityId": null,
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. Compound value; מכון אונגר is a separate supervision body whose role alongside the Mateh Binyamin rabbinate is unclear."
+    },
+    {
+      "raw": "רב גרליצקי",
+      "suggestedAuthorityId": "rav-gerlitzky",
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. Private rav-led kashrut, most plausibly Rav Y.Y. Gerlitzky (Chabad, Tel Aviv), but the body is unverified — the id is a suggestion only and is not registered."
+    },
+    {
+      "raw": "בד\"ץ העדה החרדית ורבנות מודיעין עילית",
+      "suggestedAuthorityId": null,
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. Two certifiers from different groups (העדה החרדית + רבנות מודיעין עילית) joined by \"ו\"; cannot be reduced to one authority."
+    },
+    {
+      "raw": "הרב דיסקין",
+      "suggestedAuthorityId": "rav-diskin",
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. A personal rav-led certification, but which Rav Diskin — and whether this is an organised hashgacha at all — is unverified."
+    },
+    {
+      "raw": "בד\"ץ בית יוסף / רבנות מהדרין",
+      "suggestedAuthorityId": null,
+      "suggestedLevel": "mehadrin",
+      "why": "Proposer uncertain; challenger found no defect. The slash offers two alternative certifiers (בד\"ץ בית יוסף or an unnamed mehadrin rabbanut); naming one would over-claim. Only the mehadrin level is safe."
+    },
+    {
+      "raw": "בד\"ץ ביתר / מהדרין",
+      "suggestedAuthorityId": null,
+      "suggestedLevel": "mehadrin",
+      "why": "CHALLENGER VERDICT: WRONG. Invents an authority from bare \"בד\"ץ\" + a city. Rule 1 says bare בד\"ץ names no authority and Rule 4 licenses a city name only alongside רבנות / הרבנות / מועצה דתית. Beitar Illit kashrut is issued by בד\"ץ העדה החרדית, בד\"ץ הרב מחפוד and the local rabbanut — no certifier trades as \"בד\"ץ ביתר\". The proposer took the opposite and correct line on the structurally identical \"בד\"ץ בית יוסף / רבנות מהדרין\", refusing to mint an id for the unnamed side; the two cannot both be right. The mehadrin level and the null group are correct — only the minted id is dropped."
+    },
+    {
+      "raw": "כשר בהשגחת רבנות אריאל",
+      "suggestedAuthorityId": "rabbinate-ariel",
+      "suggestedLevel": "regular",
+      "why": "CHALLENGER DOWNGRADE. Same unresolved bare-\"כשר\" level policy as כשר בד\"ץ בית יוסף, but the right answer differs here. Rule 1 lists \"כשר\" as a level word and Rule 5 requires recording both an authority and a level when the string states both, yet the mapping discarded it as a Rule 3 qualifier while the כשר-plus-מהדרין strings in the same batch did have their level extracted. Here \"regular\" is both the likely reading and harmless: a plain city-rabbanut hechsher with no מהדרין qualifier is precisely the regular tier, and leaving level null drops these records out of a regular-level filter. The authority (rabbinate-ariel, already registered) is correct and unaffected."
+    },
+    {
+      "raw": "בד\"ץ יורה דעה",
+      "suggestedAuthorityId": "badatz-yoreh-deah",
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. A real distinct badatz, in practice Rav Machpud's beis din — kept as its own id rather than collapsed into rav-machpud (Rule 2). A human must decide whether badatz-yoreh-deah and rav-machpud are one authority; see also \"בד\"ץ יורה דעה הרב מחפוד\". The id is not registered until that decision is made."
+    },
+    {
+      "raw": "רבנות מודיעין",
+      "suggestedAuthorityId": null,
+      "suggestedLevel": null,
+      "why": "CHALLENGER DOWNGRADE. Overconfident, and it collapses two different rabbinates. The justification rebutted the wrong ambiguity: the live risk is not מודיעין עילית, it is מודיעין-מכבים-רעות (city) vs מועצה אזורית חבל מודיעין. Both records carrying this exact string sit on opposite sides of that line — \"קפיט @ פארק ענבה, מודיעין\" is in the city, but \"טנטו @ דרך הזית 3, שילת\" is in Shilat, a moshav of Hevel Modiin RC whose kashrut is issued by המועצה הדתית חבל מודיעין, a different certifying body. The claim that מודיעין עילית is \"always\" written with עילית is also an overclaim. Resolve per record from the record's city. This does NOT affect רבנות מודיעין מהדרין / רבנות מהדרין מודיעין, whose records are all inside Modiin city and which are auto-applied to rabbinate-modiin-maccabim-reut."
+    },
+    {
+      "raw": "רב רפאל מנת",
+      "suggestedAuthorityId": "rav-refael-manat",
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. Names a specific rav, but the kashrut body cannot be verified, nor whether he acts as a private mashgiach or as a locality rav — group left unset. Resolve together with the variant \"הרב רפאל מנת\"."
+    },
+    {
+      "raw": "כשר חלבי",
+      "suggestedAuthorityId": null,
+      "suggestedLevel": "regular",
+      "why": "Proposer uncertain; challenger found no defect. Describes the food (dairy), not a certifier; no authority is named. \"כשר\" reads as regular level, but the value looks like a data-entry error and needs human review."
+    },
+    {
+      "raw": "רבנות ירושלים / בד\"צ קהילות",
+      "suggestedAuthorityId": "rabbinate-jerusalem",
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. Two authorities in one value: the Jerusalem rabbinate (clear) plus \"בד\"צ קהילות\", which the proposer could not identify. The second certifier must not be dropped — needs multi-authority handling."
+    },
+    {
+      "raw": "בד\"ץ בית שמש",
+      "suggestedAuthorityId": null,
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. A city-level badatz that cannot be resolved to a known body; it is NOT the Beit Shemesh rabbinate (Rule 2), so no id was assigned."
+    },
+    {
+      "raw": "המועצה המקומית",
+      "suggestedAuthorityId": null,
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. \"The local council\" names no rabbinate, no locality and no level — likely a data-entry error."
+    },
+    {
+      "raw": "מועצה אזורית עמק יזרעאל",
+      "suggestedAuthorityId": null,
+      "suggestedLevel": null,
+      "why": "CHALLENGER DOWNGRADE. An authority inferred from a body that is not a kashrut authority, then marked certain. \"מועצה אזורית\" is a secular municipal regional council — it is NOT one of the rabbinate words Rule 4 licenses (רבנות X / הרבנות X / מועצה דתית X). The mapping's own reason concedes \"the string omits the rabbinate word itself\" and still claimed certainty, while bare \"המועצה המקומית\" was correctly resolved to null. The single record here (יקב קיטרון @ הושעיה) is in a community usually administered under מועצה אזורית הגליל התחתון, not Emek Yizrael, so even the locality is unsettled. Note that the separate string \"רבנות עמק יזרעאל\" IS auto-applied to rabbinate-emek-yizrael; this one is held until a human confirms which religious council issued the certificate."
+    },
+    {
+      "raw": "בד\"ץ בית יוסף + רבנות הר חברון",
+      "suggestedAuthorityId": "badatz-beit-yosef",
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. Two certifiers: בד\"ץ בית יוסף and the Har Hevron regional rabbinate. The primary was recorded but the second must not be lost — needs a multi-authority representation."
+    },
+    {
+      "raw": "בד\"ץ מחזיקי הדת (בעלז) + בית יוסף",
+      "suggestedAuthorityId": "badatz-machzikei-hadass-belz",
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. Two certifiers: Badatz Machzikei Hadass (Belz) and בד\"ץ בית יוסף. The second must not be lost — needs a multi-authority representation. badatz-machzikei-hadass-belz is suggested but not registered; it enters the registry only when this record is resolved."
+    },
+    {
+      "raw": "בד\"ץ העדה החרדית + רבנות מטה יהודה",
+      "suggestedAuthorityId": "badatz-edah-hachareidis",
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. Two certifiers: the Edah HaChareidis and the Mateh Yehuda regional rabbinate. The second must not be lost — needs a multi-authority representation."
+    },
+    {
+      "raw": "ברכות אליהו",
+      "suggestedAuthorityId": null,
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. A specific name is given but it cannot be verified as a kashrut body or placed in a group. Compare the near-identical \"ברכת אליהו\" — a human should also decide whether the two strings are one body."
+    },
+    {
+      "raw": "רבנות מודיעין מהדרין ובד\"ץ בית יוסף",
+      "suggestedAuthorityId": "rabbinate-modiin-maccabim-reut",
+      "suggestedLevel": "mehadrin",
+      "why": "Proposer uncertain; challenger found no defect. Two certifiers: the Modiin rabbinate at mehadrin and בד\"ץ בית יוסף. The level is certain and the primary authority is recorded, but the Beit Yosef certification must not be lost."
+    },
+    {
+      "raw": "רבנות ב\"ש מהדרין",
+      "suggestedAuthorityId": "rabbinate-beer-sheva",
+      "suggestedLevel": "mehadrin",
+      "why": "Proposer uncertain; challenger found no defect. The level is certain, but \"ב\"ש\" is ambiguous: usually באר שבע, yet it can also abbreviate בית שמש — two different city rabbinates. Confirm from the record's city."
+    },
+    {
+      "raw": "כשר בהשגחת הרבנות הראשית",
+      "suggestedAuthorityId": "rabbinate-chief-israel",
+      "suggestedLevel": "regular",
+      "why": "Proposer uncertain; challenger found no defect. Names the national Chief Rabbinate, but restaurant teudot are issued by an unnamed local rabbinate on its behalf, so the actual certifier is unknown; n=29 deserves human review. The explicit string \"הרבנות הראשית לישראל\" is registered as rabbinate-chief-israel — do not silently reuse that id here without deciding the question."
+    },
+    {
+      "raw": "בד\"ץ יורה דעה הרב מחפוד",
+      "suggestedAuthorityId": "badatz-yoreh-deah",
+      "suggestedLevel": null,
+      "why": "CHALLENGER DOWNGRADE. Overconfident SPLIT (the mirror of Rule 2). The reason explicitly asserts this is a different body from a bare בד\"ץ יורה דעה — but בד\"ץ יורה דעה IS Rav Machpud's beis din, so the split is probably false, and the brief allows that distinction only if certain. Concrete fragmentation risk: bare בד\"ץ יורה דעה n=5, בד\"ץ יורה דעה + OUP n=1, בית דין יורה דעה inside the OU string, plus ~51 records naming Machpud without Yoreh Deah (כשרות הרב מחפוד 18, רב מחפוד 17, כשרות מהדרין מחפוד 5, כשר למהדרין בהשגחת הרב מחפוד 5, כשר למהדרין – בהשגחת הרב מחפוד 4, הרב מחפוד 2). Nothing in the record context separates them. Recommend one id for the whole family, human-confirmed. IMPORTANT: the Machpud-only strings ARE auto-applied to rav-machpud, so a merge decision must re-point those aliases."
+    },
+    {
+      "raw": "חתם סופר",
+      "suggestedAuthorityId": "badatz-chatam-sofer",
+      "suggestedLevel": null,
+      "why": "CHALLENGER DOWNGRADE. \"certain\" is not warranted and there is a real collapse risk. More than one חתם סופר kashrut body operates in Israel — the Petah Tikva חתם סופר badatz and the Bnei Brak חוג חת\"ם סופר kashrut are not the same beis din — and a bare \"חתם סופר\" names neither. The dataset shows the writer disambiguates when it means the Petah Tikva body (חתם סופר פתח תקווה n=3, חתם סופר פ\"ת n=1), and those city-qualified records are spread across מודיעין / ראשון לציון / רמת השרון, i.e. the city names the badatz's seat, not the place — so the silence in the bare form is informative and may point at a different body. Note the internal inconsistency the challenger flagged: bare \"קהילות\" (same shape) was correctly held at uncertain while this was marked certain."
+    },
+    {
+      "raw": "בד״צ חתם סופר",
+      "suggestedAuthorityId": "badatz-chatam-sofer",
+      "suggestedLevel": null,
+      "why": "CHALLENGER DOWNGRADE. The orthographic half is verified correct — the same branch (קפה קפה, סוקולוב 48 חולון) carries both בד\"צ חתם סופר and בד״צ חתם סופר, so the gershayim merge is right. The defect is the same as the bare form: badatz-chatam-sofer is asserted with certainty although the string names no city and at least two distinct חתם סופר batei din exist, while the dataset separately carries חתם סופר פתח תקווה (n=3) and חתם סופר פ\"ת (n=1). Whether all four strings belong under one id is a human call; the two records here (הרצליה פיתוח, חולון) do not settle it."
+    },
+    {
+      "raw": "OU + רבנות גליל עליון + בית דין יורה דעה",
+      "suggestedAuthorityId": null,
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. Names three distinct authorities (OU, רבנות גליל עליון, בית דין יורה דעה) spanning different groups; a one-authority schema cannot hold them."
+    },
+    {
+      "raw": "בד\"ץ בית יוסף + OK",
+      "suggestedAuthorityId": null,
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. Two authorities named (בד\"ץ בית יוסף and the American OK); neither may be silently dropped — a human should decide the primary or record both."
+    },
+    {
+      "raw": "הרב אליעזר מלמד + OK",
+      "suggestedAuthorityId": null,
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. Two authorities named (Rav Eliezer Melamed and the American OK), and Rav Melamed cannot be verified as a kashrut-issuing body or placed in a group."
+    },
+    {
+      "raw": "קהילות",
+      "suggestedAuthorityId": null,
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. \"קהילות\" alone does not identify a confirmable kashrut body. Resolve together with בד\"ץ קהילות and בד\"ץ קהילות קריית ספר."
+    },
+    {
+      "raw": "ברכת אליהו",
+      "suggestedAuthorityId": null,
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. Cannot confirm \"ברכת אליהו\" as a specific certifying body. Resolve together with \"ברכות אליהו\"."
+    },
+    {
+      "raw": "בד\"ץ עדה חרדית ובד\"ץ בית יוסף",
+      "suggestedAuthorityId": null,
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. Two distinct badatzim named (העדה החרדית and בית יוסף) with equal standing; the group is safe but the single-authority field cannot hold both."
+    },
+    {
+      "raw": "בד\"ץ בית יוסף ובהשגחת הרב מחפוד",
+      "suggestedAuthorityId": null,
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. Two distinct badatzim named (בית יוסף and הרב מחפוד); the group is safe but the single-authority field cannot hold both."
+    },
+    {
+      "raw": "רבנות ב\"ש",
+      "suggestedAuthorityId": "rabbinate-beer-sheva",
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. \"ב\"ש\" most commonly abbreviates באר שבע, but בית שמש is also written ב\"ש — landing on the wrong city rabbinate is a real risk. Confirm from the record's city."
+    },
+    {
+      "raw": "הרב בנימין כהן",
+      "suggestedAuthorityId": "rav-binyamin-cohen",
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. Names a specific individual rav who cannot be identified, and it is unclear whether this is a private hashgacha or a city rav acting for a rabbinate — group left null."
+    },
+    {
+      "raw": "הרב הנדל",
+      "suggestedAuthorityId": "rav-hendel",
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. Names a specific rav, but the kashrut body cannot be verified, nor whether it is a private hashgacha or a locality rav."
+    },
+    {
+      "raw": "בד\"ץ קהילות",
+      "suggestedAuthorityId": "badatz-kehillot",
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. Names a specific badatz by proper name (not a generic level word), but which body \"קהילות\" is cannot be independently verified. Resolve as one family with בד\"ץ קהילות קריית ספר, קהילות, בד\"ץ קרית ספר / מהדרין and the two compound קהילות strings; the challenger's city-free id badatz-kehillot is suggested but not registered."
+    },
+    {
+      "raw": "הרב רפאל מנת",
+      "suggestedAuthorityId": "rav-refael-manat",
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. Names a specific rav who cannot be identified; unclear whether this is private rav-led kashrut (badatz group) or a municipal rav acting for a local rabbinate, and the surname may be garbled. Same body as \"רב רפאל מנת\" — resolve the pair together."
+    },
+    {
+      "raw": "רבנות ירושלים ובד\"צ העדה החרדית",
+      "suggestedAuthorityId": null,
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. Names TWO distinct authorities (rabbinate-jerusalem AND badatz-edah-hachareidis); a single-value mapping would silently drop one, so this needs multi-authority handling."
+    },
+    {
+      "raw": "חתם סופר פתח תקווה",
+      "suggestedAuthorityId": "badatz-chatam-sofer-petah-tikva",
+      "suggestedLevel": null,
+      "why": "CHALLENGER DOWNGRADE. Overconfident, with a live split risk. The dataset also contains חתם סופר x2, בד״צ חתם סופר x2, בד\"צ חתם סופר x1 and חתם סופר פ\"ת x1. בד\"ץ חתם סופר is a single kashrut body whose beis din sits in Petah Tikva and which is routinely written without the city, so baking the city into the id may fragment ONE body across two ids — the mirror of the Rule 2 error. The justification presupposes that a חתם סופר of another city exists, which is unverified, and the authorityName adds a \"בד\"ץ\" prefix that is not in the raw string. IMPORTANT: the abbreviated sibling \"חתם סופר פ\"ת\" was rated certain by the proposer and sound by the challenger, so it IS auto-applied to badatz-chatam-sofer-petah-tikva — whatever the human decides here must also re-point that alias."
+    },
+    {
+      "raw": "רבנות ענב",
+      "suggestedAuthorityId": null,
+      "suggestedLevel": null,
+      "why": "CHALLENGER DOWNGRADE. \"certain\" is not warranted. Rule 4 covers a CITY plus a rabbinate word; ענב is a ~1,000-person yishuv inside the Shomron regional council, not a city or council, and yishuvim of that size do not operate their own kashrut-certifying local rabbinate — certification there is issued by the מועצה אזורית שומרון rabbinate, which appears in this dataset as \"רבנות שומרון מהדרין\". The proposal asserted two unverified facts as settled: that a standalone Enav rabbinate exists, and that it is deliberately distinct from the Shomron regional rabbinate. This single-occurrence string most plausibly means the rav of the yishuv acting under the regional rabbinate."
+    },
+    {
+      "raw": "ראש העין",
+      "suggestedAuthorityId": "rabbinate-rosh-haayin",
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. A bare city name with NO rabbinate word — Rule 4 does not apply. Most plausibly the Rosh HaAyin local rabbinate (which appears elsewhere in this data as רבנות ראש העין), but the string does not say so."
+    },
+    {
+      "raw": "בד\"צ חולון",
+      "suggestedAuthorityId": null,
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. Must NOT be collapsed into rabbinate-holon (Rule 2). It is unclear whether this is an independent badatz in Holon or the Holon rabbinate's mehadrin division, so the group is left null too."
+    },
+    {
+      "raw": "בד\"ץ יורה דעה + OUP",
+      "suggestedAuthorityId": null,
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. Two certifiers: בד\"ץ יורה דעה (which per Rule 2 cannot be confidently equated with Rav Machpud's body from this string alone) plus \"OUP\", an acronym that cannot be identified. No safe single mapping."
+    },
+    {
+      "raw": "OK + עדה חרדית + רבנות מטה בנימין",
+      "suggestedAuthorityId": null,
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. Three distinct certifiers (OK Kosher Certification, בד\"ץ העדה החרדית, and the Mateh Binyamin regional rabbinate); a single-value mapping would drop two."
+    },
+    {
+      "raw": "בד\"ץ ירושלים",
+      "suggestedAuthorityId": null,
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. Does not identify WHICH Jerusalem badatz (Edah HaChareidis, the Jerusalem rabbinate's mehadrin division, or another). Rule 2 forbids collapsing it into rabbinate-jerusalem, and inventing badatz-jerusalem would risk merging several distinct bodies."
+    },
+    {
+      "raw": "בד\"ץ קהילות ורבנות ירושלים מהדרין",
+      "suggestedAuthorityId": null,
+      "suggestedLevel": "mehadrin",
+      "why": "Proposer uncertain; challenger found no defect. Two authorities (בד\"ץ קהילות AND the Jerusalem local rabbinate); only the explicitly stated mehadrin level can be recorded safely."
+    },
+    {
+      "raw": "רבנות יפו",
+      "suggestedAuthorityId": "rabbinate-yafo",
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. Kept as its own id rather than merged into rabbinate-tel-aviv: Yafo is administratively part of Tel Aviv-Yafo, but Rule 2 forbids collapsing on similarity alone. A human should decide whether the Yafo rabbinate is the same body as the Tel Aviv-Yafo municipal rabbinate or a distinct branch. rabbinate-yafo is suggested but not registered."
+    },
+    {
+      "raw": "בד\"ץ אגודת ישראל והרבנות המקומית",
+      "suggestedAuthorityId": "badatz-agudat-yisrael",
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. Badatz Agudat Yisrael is the only identifiable body here; the co-certifier \"הרבנות המקומית\" names no specific rabbinate (Rule 1) and would be dropped by a single-value mapping — flagged so a human can attach the local rabbinate from the record's city."
+    },
+    {
+      "raw": "בד\"ץ קרית ספר / מהדרין",
+      "suggestedAuthorityId": null,
+      "suggestedLevel": "mehadrin",
+      "why": "CHALLENGER DOWNGRADE. Internally contradictory and a probable split. The reason says the group \"is flagged because it is unclear whether to classify it as an independent haredi badatz or the city rabbinate's badatz\", yet group was asserted as \"badatz\" anyway — compare \"בד\"צ חולון\" in the same batch, where the identical ambiguity correctly yielded group null. The asymmetry matters because קרית ספר IS מודיעין עילית, and the dataset separately contains \"בד\"ץ מהדרין רבנות מודיעין עילית\" x4 — explicitly that city rabbinate's badatz-mehadrin division. Per the GROUPS definition a rabbinate's mehadrin division belongs to group \"rabbinate\", so if these are one body both the group and the id are wrong and the authority is being split in two. Resolve against rabbinate-modiin-illit and badatz-kehillot. The mehadrin level is correctly captured."
+    },
+    {
+      "raw": "רבני הקריות",
+      "suggestedAuthorityId": "rabbanei-hakrayot",
+      "suggestedLevel": null,
+      "why": "Proposer uncertain; challenger found no defect. Refers collectively to the rabbis of the Krayot (קרית מוצקין / ביאליק / ים / אתא), not one identifiable municipal rabbinate; a human should confirm whether a single joint kashrut body exists or the record needs a specific city."
+    }
+  ],
+  "notes": "261 raw values consolidated: 203 auto-applied aliases (proposer \"certain\" AND challenger \"sound\") and 58 sent to review. 81 authorities, every one of them referenced by at least one alias, and no alias points at an unregistered id. All three \"wrong\" verdicts (בד\"ץ מהדרין ירושלים, בד\"ץ קהילות קריית ספר, בד\"ץ ביתר / מהדרין) and all ten \"downgrade-to-uncertain\" verdicts are in the review queue; none reached aliases. Every raw is copied byte-for-byte and the whole set was checked programmatically (scratchpad registry.json + validate.mjs) for duplicate raws (none), overlap between aliases and reviewQueue (none), duplicate authority ids or Hebrew names (none), unregistered alias authorities (none), unused authorities (none), and aliases whose raw contains מהדרין while level is null (none).\n\nDEDUPES — the same real body was proposed under two ids; two registry entries for one body is a defect, so they were merged:\n1. rabbinate-ness-ziona + rabbinate-nes-ziona -> rabbinate-nes-ziona (רבנות נס ציונה and רבנות מהדרין נס ציונה are one city rabbinate).\n2. rabbinate-lower-galilee + rabbinate-galil-tachton -> rabbinate-galil-tachton (רבנות גליל תחתון / רבנות הגליל התחתון differ only by the ה prefix, Rule 3).\n3. rabbinate-modiin + rabbinate-modiin-maccabim-reut -> rabbinate-modiin-maccabim-reut. מודיעין is the short name of the city מודיעין-מכבים-רעות; the explicit id was chosen because the dataset also contains מודיעין עילית and חבל מודיעין, which stay separate bodies (rabbinate-modiin-illit, rabbinate-hevel-modiin). Only the three strings the challenger vouched for as city-of-Modiin were merged; the bare \"רבנות מודיעין\" is in the review queue.\n4. rav-rubin, rav-machpud and rav-landau each arrived under several authorityNames (כשרות ..., בד\"ץ ..., בד\"צ מהדרין - ...). One entry each; the canonical Hebrew name was chosen and the level word was kept out of it.\n\nLEVEL-ONLY ALIASES (11, authorityId null with the level preserved — the intended honest result): מהדרין, כשר למהדרין, כשר מהדרין, בד\"ץ מהדרין, כשר למהדרין בד\"ץ, רבנות מהדרין, רבנות מקומית מהדרין, רבונות מקומית מהדרין, הרבנות המקומית כשרות מהדרין, כשר (regular), כשר רבנות (regular).\nNO-INFORMATION ALIASES (12, both fields null): רבנות, הרבנות, רבנות מקומית, הרבנות המקומית, הרבנות האזורית, הרבנות האיזורית, רבנות המועצה האזורית, בד\"ץ, כשר בד\"ץ, כשרות רבנות ובד\"ץ, כשרות מקומית, רב הקיבוץ. They are auto-applied so these strings are recorded as resolved-to-nothing rather than being re-queued on every pass.\n\nOPEN DECISIONS a human must make — each one interacts with already-applied aliases:\n- Bare \"כשר\" policy. Two queued items (כשר בד\"ץ בית יוסף, כשר בהשגחת רבנות אריאל) turn on whether a leading כשר states the regular level or is a strippable qualifier. The bare string \"כשר\" itself IS applied as level=regular, so the output is internally inconsistent until the policy is set. Do not resolve כשר בד\"ץ בית יוסף to regular — Beit Yosef is a Sephardi bassar-chalak badatz.\n- בד\"ץ יורה דעה vs rav-machpud. Both Yoreh Deah strings are queued, but ~51 Machpud strings are applied to rav-machpud. If Yoreh Deah is confirmed as Rav Machpud's beis din the families merge and the rav-machpud aliases may need re-pointing.\n- חתם סופר family. Three of four strings are queued; \"חתם סופר פ\"ת\" was rated certain+sound by both agents and is therefore applied to badatz-chatam-sofer-petah-tikva. Whether the Bnei Brak חוג חת\"ם סופר and the Petah Tikva beis din are one body is unresolved, and the decision must re-point that alias.\n- קהילות family (בד\"ץ קהילות, קהילות, בד\"ץ קהילות קריית ספר, בד\"ץ קרית ספר / מהדרין, plus two compound strings): all queued, none applied. The challenger's city-free id badatz-kehillot is suggested but deliberately not registered.\n- Compound values (~20 rows) name two or three certifiers in one field. None was reduced to a single authority. They need a multi-authority representation on the record; a one-value certifiedBy cannot hold them without dropping a hechsher.\n\nFLAGGED BUT APPLIED (both agents passed these; worth a second look):\n- הרבנות המקומית צופים -> rabbinate-tzofim. צופים is a small Shomron yishuv, exactly the profile the challenger used to reject רבנות ענב. If ענב resolves to the Shomron regional rabbinate, צופים probably should too.\n- הרבנות הראשית קרית גת is mapped to the Kiryat Gat LOCAL rabbinate (shared id with רבנות מהדרין קרית גת), not to rabbinate-chief-israel. Deliberate, per Rule 4.\n- רבנות מוצקין -> rabbinate-kiryat-motzkin and רבנות פ\"ת -> rabbinate-petah-tikva normalise abbreviated names; both abbreviations are unambiguous, unlike רבנות ב\"ש, which is queued.\n\nREVIEW-QUEUE SUGGESTIONS ARE NOT REGISTRY ENTRIES. Fourteen queued rows carry a suggestedAuthorityId that is intentionally absent from `authorities` (badatz-yoreh-deah, badatz-kehillot, badatz-chatam-sofer, badatz-machzikei-hadass-belz, rabbinate-yafo, rabbanei-hakrayot, rav-gerlitzky, rav-diskin, rav-hendel, rav-refael-manat, rav-binyamin-cohen). Those bodies enter the registry only after a human confirms them; nothing in the app should resolve to them today."
+}

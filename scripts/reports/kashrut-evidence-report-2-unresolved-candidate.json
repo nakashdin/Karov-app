@@ -1,0 +1,1213 @@
+{
+  "label": "UNRESOLVED_CANDIDATE (23 reviewQueue raw strings)",
+  "rawStringCount": 23,
+  "totalRecordsMatched": 61,
+  "rawStringsWithNoMatchingRecord": [],
+  "byRawString": {
+    "בד\"ץ מהדרין — ועד הרבנים": [
+      {
+        "id": "manual-winery-bahat",
+        "name": "יקב בהט",
+        "address": "קיבוץ עין זיוון, רמת הגולן",
+        "cityId": "עין זיוון",
+        "certifiedBy_raw": "בד\"ץ מהדרין — ועד הרבנים",
+        "kosherAuthority": null,
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://bahatwinery.co.il",
+          "sourceUrl": "https://bahatwinery.co.il",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": null,
+        "registry_suggestedLevel": "mehadrin",
+        "registry_why": "Proposer uncertain; challenger found no defect. \"ועד הרבנים\" alone does not identify which vaad — several unrelated bodies use that name; only the mehadrin level is safe."
+      }
+    ],
+    "רב גרליצקי": [
+      {
+        "id": "manual-restaurant-regina",
+        "name": "רג'ינה",
+        "address": "המרד 3, מתחם התחנה, תל אביב",
+        "cityId": "תל אביב",
+        "certifiedBy_raw": "רב גרליצקי",
+        "kosherAuthority": null,
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://reginarest.co.il",
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rav-gerlitzky",
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. Private rav-led kashrut, most plausibly Rav Y.Y. Gerlitzky (Chabad, Tel Aviv), but the body is unverified — the id is a suggestion only and is not registered."
+      }
+    ],
+    "הרב דיסקין": [
+      {
+        "id": "manual-biga-sha-ar-tzafon",
+        "name": "ביגה שער צפון",
+        "address": "דרך עכו 30, שער צפון, עכו",
+        "cityId": "עכו",
+        "certifiedBy_raw": "הרב דיסקין",
+        "kosherAuthority": null,
+        "kosherLevel": null,
+        "sourceFields": {
+          "website": "https://biga-bakery.co.il",
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rav-diskin",
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. A personal rav-led certification, but which Rav Diskin — and whether this is an organised hashgacha at all — is unverified."
+      }
+    ],
+    "בד\"ץ יורה דעה": [
+      {
+        "id": "9000108",
+        "name": "פיצה מילאנו",
+        "address": "בן גוריון 3, רעננה",
+        "cityId": "רעננה",
+        "certifiedBy_raw": "בד\"ץ יורה דעה",
+        "kosherAuthority": null,
+        "kosherLevel": null,
+        "sourceFields": {
+          "website": null,
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "badatz-yoreh-deah",
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. A real distinct badatz, in practice Rav Machpud's beis din — kept as its own id rather than collapsed into rav-machpud (Rule 2). A human must decide whether badatz-yoreh-deah and rav-machpud are one authority; see also \"בד\"ץ יורה דעה הרב מחפוד\". The id is not registered until that decision is made."
+      },
+      {
+        "id": "9000110",
+        "name": "פיצה מילאנו",
+        "address": "הרצל 45, רמלה",
+        "cityId": "רמלה",
+        "certifiedBy_raw": "בד\"ץ יורה דעה",
+        "kosherAuthority": null,
+        "kosherLevel": null,
+        "sourceFields": {
+          "website": null,
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "badatz-yoreh-deah",
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. A real distinct badatz, in practice Rav Machpud's beis din — kept as its own id rather than collapsed into rav-machpud (Rule 2). A human must decide whether badatz-yoreh-deah and rav-machpud are one authority; see also \"בד\"ץ יורה דעה הרב מחפוד\". The id is not registered until that decision is made."
+      },
+      {
+        "id": "manual-kuzina-tiberias",
+        "name": "קוזינה",
+        "address": "הבנים 24, טבריה",
+        "cityId": "טבריה",
+        "certifiedBy_raw": "בד\"ץ יורה דעה",
+        "kosherAuthority": null,
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://kuzina.co.il",
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "badatz-yoreh-deah",
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. A real distinct badatz, in practice Rav Machpud's beis din — kept as its own id rather than collapsed into rav-machpud (Rule 2). A human must decide whether badatz-yoreh-deah and rav-machpud are one authority; see also \"בד\"ץ יורה דעה הרב מחפוד\". The id is not registered until that decision is made."
+      }
+    ],
+    "רב רפאל מנת": [
+      {
+        "id": "manual-lifta-jerusalem",
+        "name": "ליפתא",
+        "address": "הצבי 15, קניון סנטר 1, ירושלים",
+        "cityId": "ירושלים",
+        "certifiedBy_raw": "רב רפאל מנת",
+        "kosherAuthority": null,
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://liftarestaurant.co.il/",
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rav-refael-manat",
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. Names a specific rav, but the kashrut body cannot be verified, nor whether he acts as a private mashgiach or as a locality rav — group left unset. Resolve together with the variant \"הרב רפאל מנת\"."
+      },
+      {
+        "id": "jer-162894bc",
+        "name": "אנג'ליקה",
+        "address": "ג'ורג' וושינגטון 4, ירושלים",
+        "cityId": "ירושלים",
+        "certifiedBy_raw": "רב רפאל מנת",
+        "kosherAuthority": null,
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://angelicarest.com",
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rav-refael-manat",
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. Names a specific rav, but the kashrut body cannot be verified, nor whether he acts as a private mashgiach or as a locality rav — group left unset. Resolve together with the variant \"הרב רפאל מנת\"."
+      }
+    ],
+    "בד\"ץ בית שמש": [
+      {
+        "id": "humus-eli-חומוס-אליהו-בית-שמש",
+        "name": "חומוס אליהו",
+        "address": "שד' יגאל אלון 2, תחנת פז בית שמש",
+        "cityId": "בית שמש",
+        "certifiedBy_raw": "בד\"ץ בית שמש",
+        "kosherAuthority": null,
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://www.humus-eli-yahoo.com/",
+          "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": null,
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. A city-level badatz that cannot be resolved to a known body; it is NOT the Beit Shemesh rabbinate (Rule 2), so no id was assigned."
+      }
+    ],
+    "ברכות אליהו": [
+      {
+        "id": "manual-ishtabach-jerusalem",
+        "name": "אישטבח",
+        "address": "בית יעקב 1, ירושלים",
+        "cityId": "ירושלים",
+        "certifiedBy_raw": "ברכות אליהו",
+        "kosherAuthority": null,
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://www.ishtabach.co.il/",
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": null,
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. A specific name is given but it cannot be verified as a kashrut body or placed in a group. Compare the near-identical \"ברכת אליהו\" — a human should also decide whether the two strings are one body."
+      }
+    ],
+    "רבנות ב\"ש מהדרין": [
+      {
+        "id": "manual-vivino-beersheva",
+        "name": "ויוינו",
+        "address": "קניון מול שבע, באר שבע",
+        "cityId": "באר שבע",
+        "certifiedBy_raw": "רבנות ב\"ש מהדרין",
+        "kosherAuthority": null,
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://www.vivino.co.il",
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rabbinate-beer-sheva",
+        "registry_suggestedLevel": "mehadrin",
+        "registry_why": "Proposer uncertain; challenger found no defect. The level is certain, but \"ב\"ש\" is ambiguous: usually באר שבע, yet it can also abbreviate בית שמש — two different city rabbinates. Confirm from the record's city."
+      }
+    ],
+    "כשר בהשגחת הרבנות הראשית": [
+      {
+        "id": "newdeli-5e474b51",
+        "name": "ניו דלי שער בנימין",
+        "address": "יד היוצר 2, אזור תעשייה שער בנימין",
+        "cityId": "שער בנימין",
+        "certifiedBy_raw": "כשר בהשגחת הרבנות הראשית",
+        "kosherAuthority": null,
+        "kosherLevel": "regular",
+        "sourceFields": {
+          "website": "https://newdeli.com",
+          "sourceUrl": "https://newdeli.com",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rabbinate-chief-israel",
+        "registry_suggestedLevel": "regular",
+        "registry_why": "Proposer uncertain; challenger found no defect. Names the national Chief Rabbinate, but restaurant teudot are issued by an unnamed local rabbinate on its behalf, so the actual certifier is unknown; n=29 deserves human review. The explicit string \"הרבנות הראשית לישראל\" is registered as rabbinate-chief-israel — do not silently reuse that id here without deciding the question."
+      },
+      {
+        "id": "newdeli-3f8d879d",
+        "name": "ניו דלי עזריאלי תל אביב",
+        "address": "דרך בגין 132, קומה 2, קניון עזריאלי, תל אביב",
+        "cityId": "תל אביב",
+        "certifiedBy_raw": "כשר בהשגחת הרבנות הראשית",
+        "kosherAuthority": null,
+        "kosherLevel": "regular",
+        "sourceFields": {
+          "website": "https://newdeli.com",
+          "sourceUrl": "https://newdeli.com",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rabbinate-chief-israel",
+        "registry_suggestedLevel": "regular",
+        "registry_why": "Proposer uncertain; challenger found no defect. Names the national Chief Rabbinate, but restaurant teudot are issued by an unnamed local rabbinate on its behalf, so the actual certifier is unknown; n=29 deserves human review. The explicit string \"הרבנות הראשית לישראל\" is registered as rabbinate-chief-israel — do not silently reuse that id here without deciding the question."
+      },
+      {
+        "id": "newdeli-d4510103",
+        "name": "ניו דלי דיזינגוף סנטר",
+        "address": "שער 7 דיזינגוף סנטר, תל אביב",
+        "cityId": "תל אביב",
+        "certifiedBy_raw": "כשר בהשגחת הרבנות הראשית",
+        "kosherAuthority": null,
+        "kosherLevel": "regular",
+        "sourceFields": {
+          "website": "https://newdeli.com",
+          "sourceUrl": "https://newdeli.com",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rabbinate-chief-israel",
+        "registry_suggestedLevel": "regular",
+        "registry_why": "Proposer uncertain; challenger found no defect. Names the national Chief Rabbinate, but restaurant teudot are issued by an unnamed local rabbinate on its behalf, so the actual certifier is unknown; n=29 deserves human review. The explicit string \"הרבנות הראשית לישראל\" is registered as rabbinate-chief-israel — do not silently reuse that id here without deciding the question."
+      },
+      {
+        "id": "newdeli-8e3f49af",
+        "name": "ניו דלי מודיעין סנטר",
+        "address": "צאלון 21, מודיעין",
+        "cityId": "מודיעין",
+        "certifiedBy_raw": "כשר בהשגחת הרבנות הראשית",
+        "kosherAuthority": null,
+        "kosherLevel": "regular",
+        "sourceFields": {
+          "website": "https://newdeli.com",
+          "sourceUrl": "https://newdeli.com",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rabbinate-chief-israel",
+        "registry_suggestedLevel": "regular",
+        "registry_why": "Proposer uncertain; challenger found no defect. Names the national Chief Rabbinate, but restaurant teudot are issued by an unnamed local rabbinate on its behalf, so the actual certifier is unknown; n=29 deserves human review. The explicit string \"הרבנות הראשית לישראל\" is registered as rabbinate-chief-israel — do not silently reuse that id here without deciding the question."
+      },
+      {
+        "id": "newdeli-892141e6",
+        "name": "ניו דלי קניון איילון",
+        "address": "דרך אבא הלל 310, קניון איילון, רמת גן",
+        "cityId": "רמת גן",
+        "certifiedBy_raw": "כשר בהשגחת הרבנות הראשית",
+        "kosherAuthority": null,
+        "kosherLevel": "regular",
+        "sourceFields": {
+          "website": "https://newdeli.com",
+          "sourceUrl": "https://newdeli.com",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rabbinate-chief-israel",
+        "registry_suggestedLevel": "regular",
+        "registry_why": "Proposer uncertain; challenger found no defect. Names the national Chief Rabbinate, but restaurant teudot are issued by an unnamed local rabbinate on its behalf, so the actual certifier is unknown; n=29 deserves human review. The explicit string \"הרבנות הראשית לישראל\" is registered as rabbinate-chief-israel — do not silently reuse that id here without deciding the question."
+      },
+      {
+        "id": "newdeli-46198e1b",
+        "name": "ניו דלי עזריאלי מודיעין",
+        "address": "לב העיר 1, קניון עזריאלי, מודיעין",
+        "cityId": "מודיעין",
+        "certifiedBy_raw": "כשר בהשגחת הרבנות הראשית",
+        "kosherAuthority": null,
+        "kosherLevel": "regular",
+        "sourceFields": {
+          "website": "https://newdeli.com",
+          "sourceUrl": "https://newdeli.com",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rabbinate-chief-israel",
+        "registry_suggestedLevel": "regular",
+        "registry_why": "Proposer uncertain; challenger found no defect. Names the national Chief Rabbinate, but restaurant teudot are issued by an unnamed local rabbinate on its behalf, so the actual certifier is unknown; n=29 deserves human review. The explicit string \"הרבנות הראשית לישראל\" is registered as rabbinate-chief-israel — do not silently reuse that id here without deciding the question."
+      },
+      {
+        "id": "newdeli-1a8f78cf",
+        "name": "ניו דלי הקניון הגדול",
+        "address": "ז׳בוטינסקי 72, הקניון הגדול, פתח תקווה",
+        "cityId": "פתח תקווה",
+        "certifiedBy_raw": "כשר בהשגחת הרבנות הראשית",
+        "kosherAuthority": null,
+        "kosherLevel": "regular",
+        "sourceFields": {
+          "website": "https://newdeli.com",
+          "sourceUrl": "https://newdeli.com",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rabbinate-chief-israel",
+        "registry_suggestedLevel": "regular",
+        "registry_why": "Proposer uncertain; challenger found no defect. Names the national Chief Rabbinate, but restaurant teudot are issued by an unnamed local rabbinate on its behalf, so the actual certifier is unknown; n=29 deserves human review. The explicit string \"הרבנות הראשית לישראל\" is registered as rabbinate-chief-israel — do not silently reuse that id here without deciding the question."
+      },
+      {
+        "id": "newdeli-683faa56",
+        "name": "ניו דלי עזריאלי רמלה",
+        "address": "דוד רזיאל 1, קומה 2, קניון עזריאלי, רמלה",
+        "cityId": "רמלה",
+        "certifiedBy_raw": "כשר בהשגחת הרבנות הראשית",
+        "kosherAuthority": null,
+        "kosherLevel": "regular",
+        "sourceFields": {
+          "website": "https://newdeli.com",
+          "sourceUrl": "https://newdeli.com",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rabbinate-chief-israel",
+        "registry_suggestedLevel": "regular",
+        "registry_why": "Proposer uncertain; challenger found no defect. Names the national Chief Rabbinate, but restaurant teudot are issued by an unnamed local rabbinate on its behalf, so the actual certifier is unknown; n=29 deserves human review. The explicit string \"הרבנות הראשית לישראל\" is registered as rabbinate-chief-israel — do not silently reuse that id here without deciding the question."
+      },
+      {
+        "id": "newdeli-54a6681c",
+        "name": "ניו דלי קניון רננים",
+        "address": "המלאכה 2, קומה מינוס 1, קניון רננים, רעננה",
+        "cityId": "רעננה",
+        "certifiedBy_raw": "כשר בהשגחת הרבנות הראשית",
+        "kosherAuthority": null,
+        "kosherLevel": "regular",
+        "sourceFields": {
+          "website": "https://newdeli.com",
+          "sourceUrl": "https://newdeli.com",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rabbinate-chief-israel",
+        "registry_suggestedLevel": "regular",
+        "registry_why": "Proposer uncertain; challenger found no defect. Names the national Chief Rabbinate, but restaurant teudot are issued by an unnamed local rabbinate on its behalf, so the actual certifier is unknown; n=29 deserves human review. The explicit string \"הרבנות הראשית לישראל\" is registered as rabbinate-chief-israel — do not silently reuse that id here without deciding the question."
+      },
+      {
+        "id": "newdeli-037eea6b",
+        "name": "ניו דלי עזריאלי גבעתיים",
+        "address": "דרך יצחק רבין 53, קניון עזריאלי, גבעתיים",
+        "cityId": "גבעתיים",
+        "certifiedBy_raw": "כשר בהשגחת הרבנות הראשית",
+        "kosherAuthority": null,
+        "kosherLevel": "regular",
+        "sourceFields": {
+          "website": "https://newdeli.com",
+          "sourceUrl": "https://newdeli.com",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rabbinate-chief-israel",
+        "registry_suggestedLevel": "regular",
+        "registry_why": "Proposer uncertain; challenger found no defect. Names the national Chief Rabbinate, but restaurant teudot are issued by an unnamed local rabbinate on its behalf, so the actual certifier is unknown; n=29 deserves human review. The explicit string \"הרבנות הראשית לישראל\" is registered as rabbinate-chief-israel — do not silently reuse that id here without deciding the question."
+      },
+      {
+        "id": "newdeli-19d99369",
+        "name": "ניו דלי שער ראשון",
+        "address": "גולדה מאיר 1, שער ראשון, ראשון לציון",
+        "cityId": "ראשון לציון",
+        "certifiedBy_raw": "כשר בהשגחת הרבנות הראשית",
+        "kosherAuthority": null,
+        "kosherLevel": "regular",
+        "sourceFields": {
+          "website": "https://newdeli.com",
+          "sourceUrl": "https://newdeli.com",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rabbinate-chief-israel",
+        "registry_suggestedLevel": "regular",
+        "registry_why": "Proposer uncertain; challenger found no defect. Names the national Chief Rabbinate, but restaurant teudot are issued by an unnamed local rabbinate on its behalf, so the actual certifier is unknown; n=29 deserves human review. The explicit string \"הרבנות הראשית לישראל\" is registered as rabbinate-chief-israel — do not silently reuse that id here without deciding the question."
+      },
+      {
+        "id": "newdeli-dea46bc9",
+        "name": "ניו דלי תחנה מרכזית ירושלים",
+        "address": "יפו 224, קומה 2, תחנה מרכזית, ירושלים",
+        "cityId": "ירושלים",
+        "certifiedBy_raw": "כשר בהשגחת הרבנות הראשית",
+        "kosherAuthority": null,
+        "kosherLevel": "regular",
+        "sourceFields": {
+          "website": "https://newdeli.com",
+          "sourceUrl": "https://newdeli.com",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rabbinate-chief-israel",
+        "registry_suggestedLevel": "regular",
+        "registry_why": "Proposer uncertain; challenger found no defect. Names the national Chief Rabbinate, but restaurant teudot are issued by an unnamed local rabbinate on its behalf, so the actual certifier is unknown; n=29 deserves human review. The explicit string \"הרבנות הראשית לישראל\" is registered as rabbinate-chief-israel — do not silently reuse that id here without deciding the question."
+      },
+      {
+        "id": "newdeli-5f0d93a1",
+        "name": "ניו דלי בן יהודה",
+        "address": "בן יהודה 2, ירושלים",
+        "cityId": "ירושלים",
+        "certifiedBy_raw": "כשר בהשגחת הרבנות הראשית",
+        "kosherAuthority": null,
+        "kosherLevel": "regular",
+        "sourceFields": {
+          "website": "https://newdeli.com",
+          "sourceUrl": "https://newdeli.com",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rabbinate-chief-israel",
+        "registry_suggestedLevel": "regular",
+        "registry_why": "Proposer uncertain; challenger found no defect. Names the national Chief Rabbinate, but restaurant teudot are issued by an unnamed local rabbinate on its behalf, so the actual certifier is unknown; n=29 deserves human review. The explicit string \"הרבנות הראשית לישראל\" is registered as rabbinate-chief-israel — do not silently reuse that id here without deciding the question."
+      },
+      {
+        "id": "newdeli-6694011b",
+        "name": "ניו דלי מחנה יהודה",
+        "address": "אגריפס 62, מחנה יהודה, ירושלים",
+        "cityId": "ירושלים",
+        "certifiedBy_raw": "כשר בהשגחת הרבנות הראשית",
+        "kosherAuthority": null,
+        "kosherLevel": "regular",
+        "sourceFields": {
+          "website": "https://newdeli.com",
+          "sourceUrl": "https://newdeli.com",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rabbinate-chief-israel",
+        "registry_suggestedLevel": "regular",
+        "registry_why": "Proposer uncertain; challenger found no defect. Names the national Chief Rabbinate, but restaurant teudot are issued by an unnamed local rabbinate on its behalf, so the actual certifier is unknown; n=29 deserves human review. The explicit string \"הרבנות הראשית לישראל\" is registered as rabbinate-chief-israel — do not silently reuse that id here without deciding the question."
+      },
+      {
+        "id": "newdeli-f46bbffa",
+        "name": "ניו דלי עמק רפאים",
+        "address": "עמק רפאים 44, ירושלים",
+        "cityId": "ירושלים",
+        "certifiedBy_raw": "כשר בהשגחת הרבנות הראשית",
+        "kosherAuthority": null,
+        "kosherLevel": "regular",
+        "sourceFields": {
+          "website": "https://newdeli.com",
+          "sourceUrl": "https://newdeli.com",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rabbinate-chief-israel",
+        "registry_suggestedLevel": "regular",
+        "registry_why": "Proposer uncertain; challenger found no defect. Names the national Chief Rabbinate, but restaurant teudot are issued by an unnamed local rabbinate on its behalf, so the actual certifier is unknown; n=29 deserves human review. The explicit string \"הרבנות הראשית לישראל\" is registered as rabbinate-chief-israel — do not silently reuse that id here without deciding the question."
+      },
+      {
+        "id": "newdeli-701049f0",
+        "name": "ניו דלי סינמה סיטי",
+        "address": "שדרות יצחק רבין 10, סינמה סיטי, ירושלים",
+        "cityId": "ירושלים",
+        "certifiedBy_raw": "כשר בהשגחת הרבנות הראשית",
+        "kosherAuthority": null,
+        "kosherLevel": "regular",
+        "sourceFields": {
+          "website": "https://newdeli.com",
+          "sourceUrl": "https://newdeli.com",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rabbinate-chief-israel",
+        "registry_suggestedLevel": "regular",
+        "registry_why": "Proposer uncertain; challenger found no defect. Names the national Chief Rabbinate, but restaurant teudot are issued by an unnamed local rabbinate on its behalf, so the actual certifier is unknown; n=29 deserves human review. The explicit string \"הרבנות הראשית לישראל\" is registered as rabbinate-chief-israel — do not silently reuse that id here without deciding the question."
+      },
+      {
+        "id": "newdeli-5abe445f",
+        "name": "ניו דלי תלפיות",
+        "address": "יד חרוצים 18, קניון אחים ישראל, תלפיות, ירושלים",
+        "cityId": "ירושלים",
+        "certifiedBy_raw": "כשר בהשגחת הרבנות הראשית",
+        "kosherAuthority": null,
+        "kosherLevel": "regular",
+        "sourceFields": {
+          "website": "https://newdeli.com",
+          "sourceUrl": "https://newdeli.com",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rabbinate-chief-israel",
+        "registry_suggestedLevel": "regular",
+        "registry_why": "Proposer uncertain; challenger found no defect. Names the national Chief Rabbinate, but restaurant teudot are issued by an unnamed local rabbinate on its behalf, so the actual certifier is unknown; n=29 deserves human review. The explicit string \"הרבנות הראשית לישראל\" is registered as rabbinate-chief-israel — do not silently reuse that id here without deciding the question."
+      },
+      {
+        "id": "newdeli-32253672",
+        "name": "ניו דלי קניון מלחה",
+        "address": "אגודת ספורט ביתר 1, קניון מלחה, ירושלים",
+        "cityId": "ירושלים",
+        "certifiedBy_raw": "כשר בהשגחת הרבנות הראשית",
+        "kosherAuthority": null,
+        "kosherLevel": "regular",
+        "sourceFields": {
+          "website": "https://newdeli.com",
+          "sourceUrl": "https://newdeli.com",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rabbinate-chief-israel",
+        "registry_suggestedLevel": "regular",
+        "registry_why": "Proposer uncertain; challenger found no defect. Names the national Chief Rabbinate, but restaurant teudot are issued by an unnamed local rabbinate on its behalf, so the actual certifier is unknown; n=29 deserves human review. The explicit string \"הרבנות הראשית לישראל\" is registered as rabbinate-chief-israel — do not silently reuse that id here without deciding the question."
+      },
+      {
+        "id": "newdeli-7c08ccb0",
+        "name": "ניו דלי שואבה",
+        "address": "שואבה 1, תחנת דלק פז, צומת שורש",
+        "cityId": "שואבה",
+        "certifiedBy_raw": "כשר בהשגחת הרבנות הראשית",
+        "kosherAuthority": null,
+        "kosherLevel": "regular",
+        "sourceFields": {
+          "website": "https://newdeli.com",
+          "sourceUrl": "https://newdeli.com",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rabbinate-chief-israel",
+        "registry_suggestedLevel": "regular",
+        "registry_why": "Proposer uncertain; challenger found no defect. Names the national Chief Rabbinate, but restaurant teudot are issued by an unnamed local rabbinate on its behalf, so the actual certifier is unknown; n=29 deserves human review. The explicit string \"הרבנות הראשית לישראל\" is registered as rabbinate-chief-israel — do not silently reuse that id here without deciding the question."
+      },
+      {
+        "id": "newdeli-2b23eef9",
+        "name": "ניו דלי אפרת",
+        "address": "התאנה 1, אפרת",
+        "cityId": "אפרת",
+        "certifiedBy_raw": "כשר בהשגחת הרבנות הראשית",
+        "kosherAuthority": null,
+        "kosherLevel": "regular",
+        "sourceFields": {
+          "website": "https://newdeli.com",
+          "sourceUrl": "https://newdeli.com",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rabbinate-chief-israel",
+        "registry_suggestedLevel": "regular",
+        "registry_why": "Proposer uncertain; challenger found no defect. Names the national Chief Rabbinate, but restaurant teudot are issued by an unnamed local rabbinate on its behalf, so the actual certifier is unknown; n=29 deserves human review. The explicit string \"הרבנות הראשית לישראל\" is registered as rabbinate-chief-israel — do not silently reuse that id here without deciding the question."
+      },
+      {
+        "id": "newdeli-7b45d55e",
+        "name": "ניו דלי פסגת זאב",
+        "address": "משה דיין, פסגת זאב, ירושלים",
+        "cityId": "ירושלים",
+        "certifiedBy_raw": "כשר בהשגחת הרבנות הראשית",
+        "kosherAuthority": null,
+        "kosherLevel": "regular",
+        "sourceFields": {
+          "website": "https://newdeli.com",
+          "sourceUrl": "https://newdeli.com",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rabbinate-chief-israel",
+        "registry_suggestedLevel": "regular",
+        "registry_why": "Proposer uncertain; challenger found no defect. Names the national Chief Rabbinate, but restaurant teudot are issued by an unnamed local rabbinate on its behalf, so the actual certifier is unknown; n=29 deserves human review. The explicit string \"הרבנות הראשית לישראל\" is registered as rabbinate-chief-israel — do not silently reuse that id here without deciding the question."
+      },
+      {
+        "id": "newdeli-5b9fb8ab",
+        "name": "ניו דלי צור הדסה",
+        "address": "הרכסים 15, צור הדסה",
+        "cityId": "צור הדסה",
+        "certifiedBy_raw": "כשר בהשגחת הרבנות הראשית",
+        "kosherAuthority": null,
+        "kosherLevel": "regular",
+        "sourceFields": {
+          "website": "https://newdeli.com",
+          "sourceUrl": "https://newdeli.com",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rabbinate-chief-israel",
+        "registry_suggestedLevel": "regular",
+        "registry_why": "Proposer uncertain; challenger found no defect. Names the national Chief Rabbinate, but restaurant teudot are issued by an unnamed local rabbinate on its behalf, so the actual certifier is unknown; n=29 deserves human review. The explicit string \"הרבנות הראשית לישראל\" is registered as rabbinate-chief-israel — do not silently reuse that id here without deciding the question."
+      },
+      {
+        "id": "newdeli-c5609071",
+        "name": "ניו דלי מעלה אדומים",
+        "address": "קניון מעלה אדומים, מעלה אדומים",
+        "cityId": "מעלה אדומים",
+        "certifiedBy_raw": "כשר בהשגחת הרבנות הראשית",
+        "kosherAuthority": null,
+        "kosherLevel": "regular",
+        "sourceFields": {
+          "website": "https://newdeli.com",
+          "sourceUrl": "https://newdeli.com",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rabbinate-chief-israel",
+        "registry_suggestedLevel": "regular",
+        "registry_why": "Proposer uncertain; challenger found no defect. Names the national Chief Rabbinate, but restaurant teudot are issued by an unnamed local rabbinate on its behalf, so the actual certifier is unknown; n=29 deserves human review. The explicit string \"הרבנות הראשית לישראל\" is registered as rabbinate-chief-israel — do not silently reuse that id here without deciding the question."
+      },
+      {
+        "id": "newdeli-c510321d",
+        "name": "ניו דלי לב המפרץ חיפה",
+        "address": "שדרות ההסתדרות, סינמול לב המפרץ, קומה 2, חיפה",
+        "cityId": "חיפה",
+        "certifiedBy_raw": "כשר בהשגחת הרבנות הראשית",
+        "kosherAuthority": null,
+        "kosherLevel": "regular",
+        "sourceFields": {
+          "website": "https://newdeli.com",
+          "sourceUrl": "https://newdeli.com",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rabbinate-chief-israel",
+        "registry_suggestedLevel": "regular",
+        "registry_why": "Proposer uncertain; challenger found no defect. Names the national Chief Rabbinate, but restaurant teudot are issued by an unnamed local rabbinate on its behalf, so the actual certifier is unknown; n=29 deserves human review. The explicit string \"הרבנות הראשית לישראל\" is registered as rabbinate-chief-israel — do not silently reuse that id here without deciding the question."
+      },
+      {
+        "id": "newdeli-1091bf33",
+        "name": "ניו דלי קריון קריית ביאליק",
+        "address": "דרך עכו 192, קניון הקריון, קריית ביאליק",
+        "cityId": "קריית ביאליק",
+        "certifiedBy_raw": "כשר בהשגחת הרבנות הראשית",
+        "kosherAuthority": null,
+        "kosherLevel": "regular",
+        "sourceFields": {
+          "website": "https://newdeli.com",
+          "sourceUrl": "https://newdeli.com",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rabbinate-chief-israel",
+        "registry_suggestedLevel": "regular",
+        "registry_why": "Proposer uncertain; challenger found no defect. Names the national Chief Rabbinate, but restaurant teudot are issued by an unnamed local rabbinate on its behalf, so the actual certifier is unknown; n=29 deserves human review. The explicit string \"הרבנות הראשית לישראל\" is registered as rabbinate-chief-israel — do not silently reuse that id here without deciding the question."
+      },
+      {
+        "id": "newdeli-fe8bcc9b",
+        "name": "ניו דלי עזריאלי חיפה",
+        "address": "משה פלימן 4, קניון עזריאלי, חיפה",
+        "cityId": "חיפה",
+        "certifiedBy_raw": "כשר בהשגחת הרבנות הראשית",
+        "kosherAuthority": null,
+        "kosherLevel": "regular",
+        "sourceFields": {
+          "website": "https://newdeli.com",
+          "sourceUrl": "https://newdeli.com",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rabbinate-chief-israel",
+        "registry_suggestedLevel": "regular",
+        "registry_why": "Proposer uncertain; challenger found no defect. Names the national Chief Rabbinate, but restaurant teudot are issued by an unnamed local rabbinate on its behalf, so the actual certifier is unknown; n=29 deserves human review. The explicit string \"הרבנות הראשית לישראל\" is registered as rabbinate-chief-israel — do not silently reuse that id here without deciding the question."
+      },
+      {
+        "id": "newdeli-6e346977",
+        "name": "ניו דלי ארנה נהריה",
+        "address": "קניון ארנה, נהריה",
+        "cityId": "נהריה",
+        "certifiedBy_raw": "כשר בהשגחת הרבנות הראשית",
+        "kosherAuthority": null,
+        "kosherLevel": "regular",
+        "sourceFields": {
+          "website": "https://newdeli.com",
+          "sourceUrl": "https://newdeli.com",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rabbinate-chief-israel",
+        "registry_suggestedLevel": "regular",
+        "registry_why": "Proposer uncertain; challenger found no defect. Names the national Chief Rabbinate, but restaurant teudot are issued by an unnamed local rabbinate on its behalf, so the actual certifier is unknown; n=29 deserves human review. The explicit string \"הרבנות הראשית לישראל\" is registered as rabbinate-chief-israel — do not silently reuse that id here without deciding the question."
+      },
+      {
+        "id": "newdeli-97b33776",
+        "name": "ניו דלי הסיטי אשדוד",
+        "address": "מנחם בגין 1, קניון הסיטי, אשדוד",
+        "cityId": "אשדוד",
+        "certifiedBy_raw": "כשר בהשגחת הרבנות הראשית",
+        "kosherAuthority": null,
+        "kosherLevel": "regular",
+        "sourceFields": {
+          "website": "https://newdeli.com",
+          "sourceUrl": "https://newdeli.com",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rabbinate-chief-israel",
+        "registry_suggestedLevel": "regular",
+        "registry_why": "Proposer uncertain; challenger found no defect. Names the national Chief Rabbinate, but restaurant teudot are issued by an unnamed local rabbinate on its behalf, so the actual certifier is unknown; n=29 deserves human review. The explicit string \"הרבנות הראשית לישראל\" is registered as rabbinate-chief-israel — do not silently reuse that id here without deciding the question."
+      },
+      {
+        "id": "newdeli-f4b3b3f3",
+        "name": "ניו דלי תחנה מרכזית באר שבע",
+        "address": "בן צבי 4, תחנה מרכזית, באר שבע",
+        "cityId": "באר שבע",
+        "certifiedBy_raw": "כשר בהשגחת הרבנות הראשית",
+        "kosherAuthority": null,
+        "kosherLevel": "regular",
+        "sourceFields": {
+          "website": "https://newdeli.com",
+          "sourceUrl": "https://newdeli.com",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rabbinate-chief-israel",
+        "registry_suggestedLevel": "regular",
+        "registry_why": "Proposer uncertain; challenger found no defect. Names the national Chief Rabbinate, but restaurant teudot are issued by an unnamed local rabbinate on its behalf, so the actual certifier is unknown; n=29 deserves human review. The explicit string \"הרבנות הראשית לישראל\" is registered as rabbinate-chief-israel — do not silently reuse that id here without deciding the question."
+      }
+    ],
+    "חתם סופר": [
+      {
+        "id": "humus-eli-חומוס-אליהו-רמת-גן-קניון-איילון",
+        "name": "חומוס אליהו רמת גן",
+        "address": "קניון איילון, רמת גן",
+        "cityId": "רמת גן",
+        "certifiedBy_raw": "חתם סופר",
+        "kosherAuthority": null,
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://www.humus-eli-yahoo.com/",
+          "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "badatz-chatam-sofer",
+        "registry_suggestedLevel": null,
+        "registry_why": "CHALLENGER DOWNGRADE. \"certain\" is not warranted and there is a real collapse risk. More than one חתם סופר kashrut body operates in Israel — the Petah Tikva חתם סופר badatz and the Bnei Brak חוג חת\"ם סופר kashrut are not the same beis din — and a bare \"חתם סופר\" names neither. The dataset shows the writer disambiguates when it means the Petah Tikva body (חתם סופר פתח תקווה n=3, חתם סופר פ\"ת n=1), and those city-qualified records are spread across מודיעין / ראשון לציון / רמת השרון, i.e. the city names the badatz's seat, not the place — so the silence in the bare form is informative and may point at a different body. Note the internal inconsistency the challenger flagged: bare \"קהילות\" (same shape) was correctly held at uncertain while this was marked certain."
+      },
+      {
+        "id": "manual-restaurant-alfredo",
+        "name": "אלפרדו",
+        "address": "דרך שלמה שמלצר 94, פתח תקווה",
+        "cityId": "פתח תקווה",
+        "certifiedBy_raw": "חתם סופר",
+        "kosherAuthority": null,
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://alfredo.co.il/",
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "badatz-chatam-sofer",
+        "registry_suggestedLevel": null,
+        "registry_why": "CHALLENGER DOWNGRADE. \"certain\" is not warranted and there is a real collapse risk. More than one חתם סופר kashrut body operates in Israel — the Petah Tikva חתם סופר badatz and the Bnei Brak חוג חת\"ם סופר kashrut are not the same beis din — and a bare \"חתם סופר\" names neither. The dataset shows the writer disambiguates when it means the Petah Tikva body (חתם סופר פתח תקווה n=3, חתם סופר פ\"ת n=1), and those city-qualified records are spread across מודיעין / ראשון לציון / רמת השרון, i.e. the city names the badatz's seat, not the place — so the silence in the bare form is informative and may point at a different body. Note the internal inconsistency the challenger flagged: bare \"קהילות\" (same shape) was correctly held at uncertain while this was marked certain."
+      }
+    ],
+    "בד״צ חתם סופר": [
+      {
+        "id": "cafecafe-62628c4d",
+        "name": "קפה קפה הרצליה מרינה",
+        "address": "יורדי הים 1, הרצליה פיתוח",
+        "cityId": "הרצליה",
+        "certifiedBy_raw": "בד״צ חתם סופר",
+        "kosherAuthority": "chatam_sofer",
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://www.cafecafe.co.il",
+          "sourceUrl": "https://www.cafecafe.co.il",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "badatz-chatam-sofer",
+        "registry_suggestedLevel": null,
+        "registry_why": "CHALLENGER DOWNGRADE. The orthographic half is verified correct — the same branch (קפה קפה, סוקולוב 48 חולון) carries both בד\"צ חתם סופר and בד״צ חתם סופר, so the gershayim merge is right. The defect is the same as the bare form: badatz-chatam-sofer is asserted with certainty although the string names no city and at least two distinct חתם סופר batei din exist, while the dataset separately carries חתם סופר פתח תקווה (n=3) and חתם סופר פ\"ת (n=1). Whether all four strings belong under one id is a human call; the two records here (הרצליה פיתוח, חולון) do not settle it."
+      },
+      {
+        "id": "cafecafe-e8695221",
+        "name": "קפה קפה חולון סוקולוב",
+        "address": "סוקולוב 48, חולון",
+        "cityId": "חולון",
+        "certifiedBy_raw": "בד״צ חתם סופר",
+        "kosherAuthority": "chatam_sofer",
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://www.cafecafe.co.il",
+          "sourceUrl": "https://www.cafecafe.co.il",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "badatz-chatam-sofer",
+        "registry_suggestedLevel": null,
+        "registry_why": "CHALLENGER DOWNGRADE. The orthographic half is verified correct — the same branch (קפה קפה, סוקולוב 48 חולון) carries both בד\"צ חתם סופר and בד״צ חתם סופר, so the gershayim merge is right. The defect is the same as the bare form: badatz-chatam-sofer is asserted with certainty although the string names no city and at least two distinct חתם סופר batei din exist, while the dataset separately carries חתם סופר פתח תקווה (n=3) and חתם סופר פ\"ת (n=1). Whether all four strings belong under one id is a human call; the two records here (הרצליה פיתוח, חולון) do not settle it."
+      }
+    ],
+    "קהילות": [
+      {
+        "id": "manual-restaurant-batzir",
+        "name": "בציר",
+        "address": "מצדה 9ב, בני ברק",
+        "cityId": "בני ברק",
+        "certifiedBy_raw": "קהילות",
+        "kosherAuthority": null,
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://www.bazirest.co.il",
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": null,
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. \"קהילות\" alone does not identify a confirmable kashrut body. Resolve together with בד\"ץ קהילות and בד\"ץ קהילות קריית ספר."
+      }
+    ],
+    "ברכת אליהו": [
+      {
+        "id": "manual-fast-food-bobe",
+        "name": "בובע",
+        "address": "קניון עזריאלי, תל אביב",
+        "cityId": "תל אביב",
+        "certifiedBy_raw": "ברכת אליהו",
+        "kosherAuthority": null,
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://eatbobe.co.il",
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": null,
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. Cannot confirm \"ברכת אליהו\" as a specific certifying body. Resolve together with \"ברכות אליהו\"."
+      }
+    ],
+    "רבנות ב\"ש": [
+      {
+        "id": "manual-freshop-beersheva-grand",
+        "name": "סחוט גרנד קניון ב\"ש",
+        "address": "דוד טוביהו 125, גרנד קניון, באר שבע",
+        "cityId": "באר שבע",
+        "certifiedBy_raw": "רבנות ב\"ש",
+        "kosherAuthority": null,
+        "kosherLevel": null,
+        "sourceFields": {
+          "website": "https://www.freshop.co.il",
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rabbinate-beer-sheva",
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. \"ב\"ש\" most commonly abbreviates באר שבע, but בית שמש is also written ב\"ש — landing on the wrong city rabbinate is a real risk. Confirm from the record's city."
+      }
+    ],
+    "הרב בנימין כהן": [
+      {
+        "id": "manual-מפרומה-בארות-יצחק",
+        "name": "מפרומה",
+        "address": "מתחם מבנה בארות יצחק, בארות יצחק",
+        "cityId": "בארות יצחק",
+        "certifiedBy_raw": "הרב בנימין כהן",
+        "kosherAuthority": null,
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://mafruma.co.il/",
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rav-binyamin-cohen",
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. Names a specific individual rav who cannot be identified, and it is unclear whether this is a private hashgacha or a city rav acting for a rabbinate — group left null."
+      }
+    ],
+    "הרב הנדל": [
+      {
+        "id": "manual-pizza-story-מגדל-העמק",
+        "name": "פיצה סטורי",
+        "address": "דרך העמק 16, מגדל העמק",
+        "cityId": "מגדל העמק",
+        "certifiedBy_raw": "הרב הנדל",
+        "kosherAuthority": null,
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://pizza-story.co.il",
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rav-hendel",
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. Names a specific rav, but the kashrut body cannot be verified, nor whether it is a private hashgacha or a locality rav."
+      }
+    ],
+    "בד\"ץ קהילות": [
+      {
+        "id": "humus-eli-חומוס-אליהו-בית-שמש-סאן-מול",
+        "name": "חומוס אליהו בית שמש סאן מול",
+        "address": "האמוראים 2, בית שמש",
+        "cityId": "בית שמש",
+        "certifiedBy_raw": "בד\"ץ קהילות",
+        "kosherAuthority": "badatz_kehilot",
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://www.humus-eli-yahoo.com/",
+          "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "badatz-kehillot",
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. Names a specific badatz by proper name (not a generic level word), but which body \"קהילות\" is cannot be independently verified. Resolve as one family with בד\"ץ קהילות קריית ספר, קהילות, בד\"ץ קרית ספר / מהדרין and the two compound קהילות strings; the challenger's city-free id badatz-kehillot is suggested but not registered."
+      },
+      {
+        "id": "humus-eli-חומוס-אליהו-ירושלים-סנטר-1",
+        "name": "חומוס אליהו ירושלים סנטר 1",
+        "address": "ירמיהו 43, קניון סנטר 1",
+        "cityId": "ירושלים",
+        "certifiedBy_raw": "בד\"ץ קהילות",
+        "kosherAuthority": "badatz_kehilot",
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://www.humus-eli-yahoo.com/",
+          "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "badatz-kehillot",
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. Names a specific badatz by proper name (not a generic level word), but which body \"קהילות\" is cannot be independently verified. Resolve as one family with בד\"ץ קהילות קריית ספר, קהילות, בד\"ץ קרית ספר / מהדרין and the two compound קהילות strings; the challenger's city-free id badatz-kehillot is suggested but not registered."
+      },
+      {
+        "id": "humus-eli-חומוס-אליהו-ירושלים-קניון-רמות",
+        "name": "חומוס אליהו ירושלים קניון רמות",
+        "address": "שדרות גולדה מאיר 255, ירושלים",
+        "cityId": "ירושלים",
+        "certifiedBy_raw": "בד\"ץ קהילות",
+        "kosherAuthority": "badatz_kehilot",
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://www.humus-eli-yahoo.com/",
+          "sourceUrl": "https://www.humus-eli-yahoo.com/restaurants/",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "badatz-kehillot",
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. Names a specific badatz by proper name (not a generic level word), but which body \"קהילות\" is cannot be independently verified. Resolve as one family with בד\"ץ קהילות קריית ספר, קהילות, בד\"ץ קרית ספר / מהדרין and the two compound קהילות strings; the challenger's city-free id badatz-kehillot is suggested but not registered."
+      },
+      {
+        "id": "manual-noya-jerusalem",
+        "name": "נויה",
+        "address": "שלומציון המלכה 3, ירושלים",
+        "cityId": "ירושלים",
+        "certifiedBy_raw": "בד\"ץ קהילות",
+        "kosherAuthority": null,
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://noya-jerusalem.co.il/",
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "badatz-kehillot",
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. Names a specific badatz by proper name (not a generic level word), but which body \"קהילות\" is cannot be independently verified. Resolve as one family with בד\"ץ קהילות קריית ספר, קהילות, בד\"ץ קרית ספר / מהדרין and the two compound קהילות strings; the challenger's city-free id badatz-kehillot is suggested but not registered."
+      },
+      {
+        "id": "manual-caballero-jerusalem",
+        "name": "קאבאלרו",
+        "address": "המרפא 1, הר חוצבים, ירושלים",
+        "cityId": "ירושלים",
+        "certifiedBy_raw": "בד\"ץ קהילות",
+        "kosherAuthority": null,
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://www.caballerorest.co.il/",
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "badatz-kehillot",
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. Names a specific badatz by proper name (not a generic level word), but which body \"קהילות\" is cannot be independently verified. Resolve as one family with בד\"ץ קהילות קריית ספר, קהילות, בד\"ץ קרית ספר / מהדרין and the two compound קהילות strings; the challenger's city-free id badatz-kehillot is suggested but not registered."
+      },
+      {
+        "id": "manual-bon-cafe-bb",
+        "name": "בון קפה",
+        "address": "ז'בוטינסקי 9, מגדל הכשרת הישוב, בני ברק",
+        "cityId": "בני ברק",
+        "certifiedBy_raw": "בד\"ץ קהילות",
+        "kosherAuthority": null,
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://boncafe.co.il",
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "badatz-kehillot",
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. Names a specific badatz by proper name (not a generic level word), but which body \"קהילות\" is cannot be independently verified. Resolve as one family with בד\"ץ קהילות קריית ספר, קהילות, בד\"ץ קרית ספר / מהדרין and the two compound קהילות strings; the challenger's city-free id badatz-kehillot is suggested but not registered."
+      }
+    ],
+    "הרב רפאל מנת": [
+      {
+        "id": "osm-node-6195852402",
+        "name": "אנג'ליקה מסעדת",
+        "address": "רחוב ושינגטון 2, ירושלים",
+        "cityId": "ירושלים",
+        "certifiedBy_raw": "הרב רפאל מנת",
+        "kosherAuthority": null,
+        "kosherLevel": null,
+        "sourceFields": {
+          "website": "https://angelicarest.com",
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rav-refael-manat",
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. Names a specific rav who cannot be identified; unclear whether this is private rav-led kashrut (badatz group) or a municipal rav acting for a local rabbinate, and the surname may be garbled. Same body as \"רב רפאל מנת\" — resolve the pair together."
+      }
+    ],
+    "ראש העין": [
+      {
+        "id": "coffeetrail-caffe-lago-rosh-haayin",
+        "name": "קפה לאגו ראש העין - LAGO",
+        "address": "מעיין 2, ראש העין",
+        "cityId": "ראש העין",
+        "certifiedBy_raw": "ראש העין",
+        "kosherAuthority": null,
+        "kosherLevel": "regular",
+        "sourceFields": {
+          "website": null,
+          "sourceUrl": "https://coffeetrail.co.il/coffeecart/caffe-lago-rosh-haayin/",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rabbinate-rosh-haayin",
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. A bare city name with NO rabbinate word — Rule 4 does not apply. Most plausibly the Rosh HaAyin local rabbinate (which appears elsewhere in this data as רבנות ראש העין), but the string does not say so."
+      }
+    ],
+    "בד\"צ חולון": [
+      {
+        "id": "golda-1ed09f74",
+        "name": "גלידה גולדה",
+        "address": "פנחס איילון 13, חולון",
+        "cityId": "holon",
+        "certifiedBy_raw": "בד\"צ חולון",
+        "kosherAuthority": null,
+        "kosherLevel": "regular",
+        "sourceFields": {
+          "website": "https://www.goldaglida.co.il",
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": null,
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. Must NOT be collapsed into rabbinate-holon (Rule 2). It is unclear whether this is an independent badatz in Holon or the Holon rabbinate's mehadrin division, so the group is left null too."
+      }
+    ],
+    "בד\"ץ ירושלים": [
+      {
+        "id": "manual-restaurant-goldis",
+        "name": "גולדיס",
+        "address": "מצדה 9 בסר 3, בני ברק",
+        "cityId": "בני ברק",
+        "certifiedBy_raw": "בד\"ץ ירושלים",
+        "kosherAuthority": null,
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://www.goldys.co.il",
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": null,
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. Does not identify WHICH Jerusalem badatz (Edah HaChareidis, the Jerusalem rabbinate's mehadrin division, or another). Rule 2 forbids collapsing it into rabbinate-jerusalem, and inventing badatz-jerusalem would risk merging several distinct bodies."
+      }
+    ],
+    "רבנות יפו": [
+      {
+        "id": "manual-dr-shakshuka-jaffa",
+        "name": "ד\"ר שקשוקה",
+        "address": "בית אשל 3, שוק הפשפשים, יפו",
+        "cityId": "תל אביב",
+        "certifiedBy_raw": "רבנות יפו",
+        "kosherAuthority": null,
+        "kosherLevel": null,
+        "sourceFields": {
+          "website": "https://www.doctorshakshuka.co.il",
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rabbinate-yafo",
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. Kept as its own id rather than merged into rabbinate-tel-aviv: Yafo is administratively part of Tel Aviv-Yafo, but Rule 2 forbids collapsing on similarity alone. A human should decide whether the Yafo rabbinate is the same body as the Tel Aviv-Yafo municipal rabbinate or a distinct branch. rabbinate-yafo is suggested but not registered."
+      }
+    ],
+    "רבני הקריות": [
+      {
+        "id": "9000008",
+        "name": "פיצה שמש",
+        "address": "דב גור 11, אשדוד",
+        "cityId": "אשדוד",
+        "certifiedBy_raw": "רבני הקריות",
+        "kosherAuthority": null,
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://pizza-shemesh.co.il/סניף-אשדוד-רחוב-דב-גור-11/",
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rabbanei-hakrayot",
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. Refers collectively to the rabbis of the Krayot (קרית מוצקין / ביאליק / ים / אתא), not one identifiable municipal rabbinate; a human should confirm whether a single joint kashrut body exists or the record needs a specific city."
+      }
+    ]
+  }
+}

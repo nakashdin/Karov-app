@@ -1,0 +1,784 @@
+{
+  "foodRecordTotal": 2213,
+  "registeredAuthorityCount": 81,
+  "categoryCounts": {
+    "1": 910,
+    "2": 103,
+    "3": 0,
+    "4": 614,
+    "5": 503,
+    "6": 0
+  },
+  "categorySamples": {
+    "1": [
+      {
+        "id": "osm-node-889810577",
+        "name": "פאפאגאיו",
+        "certifiedBy": "רבנות הרצליה",
+        "kosherType": "rabanut_mekomi",
+        "kosherLevel": null,
+        "kosherAuthorityGroup": null,
+        "kosherAuthority": null
+      },
+      {
+        "id": "osm-node-1643352285",
+        "name": "מרקש",
+        "certifiedBy": "המועצה הדתית נתניה",
+        "kosherType": "rabanut_mekomi",
+        "kosherLevel": null,
+        "kosherAuthorityGroup": null,
+        "kosherAuthority": null
+      },
+      {
+        "id": "osm-node-1753285811",
+        "name": "ביסטרו 56",
+        "certifiedBy": "רבנות הרצליה",
+        "kosherType": "rabanut_mekomi",
+        "kosherLevel": null,
+        "kosherAuthorityGroup": null,
+        "kosherAuthority": null
+      },
+      {
+        "id": "osm-node-1763031739",
+        "name": "לורנס",
+        "certifiedBy": "רבנות אילת",
+        "kosherType": "rabanut_mekomi",
+        "kosherLevel": "regular",
+        "kosherAuthorityGroup": "rabbinate",
+        "kosherAuthority": null
+      },
+      {
+        "id": "osm-node-1763972919",
+        "name": "קפה בולבארד",
+        "certifiedBy": "רבנות אילת",
+        "kosherType": "rabanut_mekomi",
+        "kosherLevel": "regular",
+        "kosherAuthorityGroup": "rabbinate",
+        "kosherAuthority": null
+      },
+      {
+        "id": "osm-node-2069701110",
+        "name": "בורגרים הרצליה פיתוח",
+        "certifiedBy": "בד\"ץ בית יוסף",
+        "kosherType": "badatz_beit_yosef",
+        "kosherLevel": "mehadrin",
+        "kosherAuthorityGroup": "badatz",
+        "kosherAuthority": "badatz_beit_yosef"
+      },
+      {
+        "id": "osm-node-2131481387",
+        "name": "קאסה דל פפה ת\"א",
+        "certifiedBy": "המועצה הדתית תל אביב יפו",
+        "kosherType": "rabanut_tel_aviv",
+        "kosherLevel": null,
+        "kosherAuthorityGroup": null,
+        "kosherAuthority": null
+      },
+      {
+        "id": "osm-node-2701869276",
+        "name": "קפה דה פריז",
+        "certifiedBy": "רבנות הרצליה",
+        "kosherType": "rabanut_mekomi",
+        "kosherLevel": null,
+        "kosherAuthorityGroup": null,
+        "kosherAuthority": null
+      },
+      {
+        "id": "osm-node-4460369993",
+        "name": "בדרה - חומוס, פול, מסבחה",
+        "certifiedBy": "מועצה דתית רחובות",
+        "kosherType": "rabanut_mekomi",
+        "kosherLevel": null,
+        "kosherAuthorityGroup": null,
+        "kosherAuthority": null
+      },
+      {
+        "id": "osm-node-4511310889",
+        "name": "מיטבלים",
+        "certifiedBy": "מועצה דתית ראש פינה",
+        "kosherType": "mehadrin",
+        "kosherLevel": null,
+        "kosherAuthorityGroup": null,
+        "kosherAuthority": null
+      },
+      {
+        "id": "osm-node-5170599211",
+        "name": "יאשקה",
+        "certifiedBy": "רבנות רמת השרון",
+        "kosherType": "rabanut_mekomi",
+        "kosherLevel": null,
+        "kosherAuthorityGroup": null,
+        "kosherAuthority": null
+      },
+      {
+        "id": "osm-node-5711545461",
+        "name": "שיפודי רחמים שמחה ובניו",
+        "certifiedBy": "רבנות ראש פינה",
+        "kosherType": "rabanut_mekomi",
+        "kosherLevel": null,
+        "kosherAuthorityGroup": null,
+        "kosherAuthority": null
+      },
+      {
+        "id": "osm-node-5746423221",
+        "name": "שיפודי אל הנגב",
+        "certifiedBy": "המועצה הדתית באר שבע",
+        "kosherType": "rabanut_mekomi",
+        "kosherLevel": null,
+        "kosherAuthorityGroup": null,
+        "kosherAuthority": null
+      },
+      {
+        "id": "osm-node-5894335311",
+        "name": "קאסה דל פפה",
+        "certifiedBy": "רבנות רחובות",
+        "kosherType": "rabanut_mekomi",
+        "kosherLevel": null,
+        "kosherAuthorityGroup": null,
+        "kosherAuthority": null
+      },
+      {
+        "id": "osm-node-5997818140",
+        "name": "צלילי האש",
+        "certifiedBy": "בד\"צ מהדרין - הרב רובין",
+        "kosherType": "badatz_rubin",
+        "kosherLevel": null,
+        "kosherAuthorityGroup": null,
+        "kosherAuthority": null
+      }
+    ],
+    "2": [
+      {
+        "id": "humus-eli-חומוס-אליהו-בית-שמש-סאן-מול",
+        "name": "חומוס אליהו בית שמש סאן מול",
+        "certifiedBy": "בד\"ץ קהילות",
+        "kosherType": "badatz_kehilot",
+        "kosherLevel": "mehadrin",
+        "kosherAuthorityGroup": "badatz",
+        "kosherAuthority": "badatz_kehilot"
+      },
+      {
+        "id": "humus-eli-חומוס-אליהו-ירושלים-סנטר-1",
+        "name": "חומוס אליהו ירושלים סנטר 1",
+        "certifiedBy": "בד\"ץ קהילות",
+        "kosherType": "badatz_kehilot",
+        "kosherLevel": "mehadrin",
+        "kosherAuthorityGroup": "badatz",
+        "kosherAuthority": "badatz_kehilot"
+      },
+      {
+        "id": "humus-eli-חומוס-אליהו-ירושלים-קניון-רמות",
+        "name": "חומוס אליהו ירושלים קניון רמות",
+        "certifiedBy": "בד\"ץ קהילות",
+        "kosherType": "badatz_kehilot",
+        "kosherLevel": "mehadrin",
+        "kosherAuthorityGroup": "badatz",
+        "kosherAuthority": "badatz_kehilot"
+      },
+      {
+        "id": "humus-eli-חומוס-אליהו-רמת-גן-קניון-איילון",
+        "name": "חומוס אליהו רמת גן",
+        "certifiedBy": "חתם סופר",
+        "kosherType": "mehadrin",
+        "kosherLevel": "mehadrin",
+        "kosherAuthorityGroup": "unknown",
+        "kosherAuthority": null
+      },
+      {
+        "id": "humus-eli-חומוס-אליהו-מודיעין-עילית",
+        "name": "חומוס אליהו",
+        "certifiedBy": "בד\"ץ קהילות קריית ספר",
+        "kosherType": "badatz_kehilot",
+        "kosherLevel": "mehadrin",
+        "kosherAuthorityGroup": "badatz",
+        "kosherAuthority": "badatz_kehilot"
+      },
+      {
+        "id": "humus-eli-חומוס-אליהו-בית-שמש",
+        "name": "חומוס אליהו",
+        "certifiedBy": "בד\"ץ בית שמש",
+        "kosherType": "mehadrin",
+        "kosherLevel": "mehadrin",
+        "kosherAuthorityGroup": "unknown",
+        "kosherAuthority": null
+      },
+      {
+        "id": "9100022",
+        "name": "פיצה האט",
+        "certifiedBy": "כשר בד\"ץ בית יוסף",
+        "kosherType": "badatz_beit_yosef",
+        "kosherLevel": "mehadrin",
+        "kosherAuthorityGroup": "badatz",
+        "kosherAuthority": "badatz_beit_yosef"
+      },
+      {
+        "id": "9100028",
+        "name": "פיצה האט",
+        "certifiedBy": "כשר בד\"ץ בית יוסף",
+        "kosherType": "badatz_beit_yosef",
+        "kosherLevel": "mehadrin",
+        "kosherAuthorityGroup": "badatz",
+        "kosherAuthority": "badatz_beit_yosef"
+      },
+      {
+        "id": "9100057",
+        "name": "פיצה האט",
+        "certifiedBy": "כשר בד\"ץ בית יוסף",
+        "kosherType": "badatz_beit_yosef",
+        "kosherLevel": "mehadrin",
+        "kosherAuthorityGroup": "badatz",
+        "kosherAuthority": "badatz_beit_yosef"
+      },
+      {
+        "id": "9100058",
+        "name": "פיצה האט",
+        "certifiedBy": "כשר בד\"ץ בית יוסף",
+        "kosherType": "badatz_beit_yosef",
+        "kosherLevel": "mehadrin",
+        "kosherAuthorityGroup": "badatz",
+        "kosherAuthority": "badatz_beit_yosef"
+      },
+      {
+        "id": "9100064",
+        "name": "פיצה האט",
+        "certifiedBy": "כשר בד\"ץ בית יוסף",
+        "kosherType": "badatz_beit_yosef",
+        "kosherLevel": "mehadrin",
+        "kosherAuthorityGroup": "badatz",
+        "kosherAuthority": "badatz_beit_yosef"
+      },
+      {
+        "id": "9100070",
+        "name": "פיצה האט",
+        "certifiedBy": "כשר בד\"ץ בית יוסף",
+        "kosherType": "badatz_beit_yosef",
+        "kosherLevel": "mehadrin",
+        "kosherAuthorityGroup": "badatz",
+        "kosherAuthority": "badatz_beit_yosef"
+      },
+      {
+        "id": "9100071",
+        "name": "פיצה האט",
+        "certifiedBy": "כשר בד\"ץ בית יוסף",
+        "kosherType": "badatz_beit_yosef",
+        "kosherLevel": "mehadrin",
+        "kosherAuthorityGroup": "badatz",
+        "kosherAuthority": "badatz_beit_yosef"
+      },
+      {
+        "id": "9100080",
+        "name": "פיצה האט",
+        "certifiedBy": "כשר בד\"ץ בית יוסף",
+        "kosherType": "badatz_beit_yosef",
+        "kosherLevel": "mehadrin",
+        "kosherAuthorityGroup": "badatz",
+        "kosherAuthority": "badatz_beit_yosef"
+      },
+      {
+        "id": "coffeetrail-havaia",
+        "name": "חוויא",
+        "certifiedBy": "רבנות ענב",
+        "kosherType": "mehadrin",
+        "kosherLevel": "mehadrin",
+        "kosherAuthorityGroup": "unknown",
+        "kosherAuthority": null
+      }
+    ],
+    "3": [],
+    "4": [
+      {
+        "id": "osm-node-5221319346",
+        "name": "בורגרים",
+        "certifiedBy": null,
+        "kosherType": "mehadrin",
+        "kosherLevel": "mehadrin",
+        "kosherAuthorityGroup": "unknown",
+        "kosherAuthority": null
+      },
+      {
+        "id": "osm-node-12557310999",
+        "name": "פיצה רומא",
+        "certifiedBy": null,
+        "kosherType": "rabanut",
+        "kosherLevel": "regular",
+        "kosherAuthorityGroup": "rabbinate",
+        "kosherAuthority": null
+      },
+      {
+        "id": "osm-node-12676686493",
+        "name": "פיצה פצץ",
+        "certifiedBy": null,
+        "kosherType": "kosher",
+        "kosherLevel": "regular",
+        "kosherAuthorityGroup": "unknown",
+        "kosherAuthority": null
+      },
+      {
+        "id": "coffeetrail-mchtipatly212",
+        "name": "מחתפתלי 212",
+        "certifiedBy": null,
+        "kosherType": "mehadrin",
+        "kosherLevel": "mehadrin",
+        "kosherAuthorityGroup": "unknown",
+        "kosherAuthority": null
+      },
+      {
+        "id": "coffeetrail-cafe-barkay",
+        "name": "קפה ברקאי",
+        "certifiedBy": null,
+        "kosherType": "mehadrin",
+        "kosherLevel": "mehadrin",
+        "kosherAuthorityGroup": "unknown",
+        "kosherAuthority": null
+      },
+      {
+        "id": "coffeetrail-itamar-coffee",
+        "name": "איתמר - קפה עם סיפור",
+        "certifiedBy": null,
+        "kosherType": "mehadrin",
+        "kosherLevel": "mehadrin",
+        "kosherAuthorityGroup": "unknown",
+        "kosherAuthority": null
+      },
+      {
+        "id": "coffeetrail-karney-hitin",
+        "name": "קרני חיטין",
+        "certifiedBy": null,
+        "kosherType": "mehadrin",
+        "kosherLevel": "mehadrin",
+        "kosherAuthorityGroup": "unknown",
+        "kosherAuthority": null
+      },
+      {
+        "id": "coffeetrail-galita-coffee-cart",
+        "name": "גליתא",
+        "certifiedBy": null,
+        "kosherType": "rabanut_mekomi",
+        "kosherLevel": "regular",
+        "kosherAuthorityGroup": "rabbinate",
+        "kosherAuthority": null
+      },
+      {
+        "id": "coffeetrail-kedma-coffee",
+        "name": "קדמא - קפה בעיירה",
+        "certifiedBy": null,
+        "kosherType": "rabanut_mekomi",
+        "kosherLevel": "regular",
+        "kosherAuthorityGroup": "rabbinate",
+        "kosherAuthority": null
+      },
+      {
+        "id": "golda-9fd9706a",
+        "name": "גלידה גולדה",
+        "certifiedBy": null,
+        "kosherType": "badatz_beit_yosef",
+        "kosherLevel": "mehadrin",
+        "kosherAuthorityGroup": "badatz",
+        "kosherAuthority": "badatz_beit_yosef"
+      },
+      {
+        "id": "golda-26f62510",
+        "name": "גלידה גולדה",
+        "certifiedBy": null,
+        "kosherType": "badatz_beit_yosef",
+        "kosherLevel": "mehadrin",
+        "kosherAuthorityGroup": "badatz",
+        "kosherAuthority": "badatz_beit_yosef"
+      },
+      {
+        "id": "golda-757e7cdc",
+        "name": "גלידה גולדה",
+        "certifiedBy": null,
+        "kosherType": "badatz_beit_yosef",
+        "kosherLevel": "mehadrin",
+        "kosherAuthorityGroup": "badatz",
+        "kosherAuthority": "badatz_beit_yosef"
+      },
+      {
+        "id": "golda-bd46421f",
+        "name": "גלידה גולדה",
+        "certifiedBy": null,
+        "kosherType": "mehadrin",
+        "kosherLevel": "mehadrin",
+        "kosherAuthorityGroup": "unknown",
+        "kosherAuthority": null
+      },
+      {
+        "id": "golda-1774fb5e",
+        "name": "גלידה גולדה",
+        "certifiedBy": null,
+        "kosherType": "badatz_beit_yosef",
+        "kosherLevel": "mehadrin",
+        "kosherAuthorityGroup": "badatz",
+        "kosherAuthority": "badatz_beit_yosef"
+      },
+      {
+        "id": "golda-038e75bd",
+        "name": "גלידה גולדה",
+        "certifiedBy": null,
+        "kosherType": "badatz_beit_yosef",
+        "kosherLevel": "mehadrin",
+        "kosherAuthorityGroup": "badatz",
+        "kosherAuthority": "badatz_beit_yosef"
+      }
+    ],
+    "5": [
+      {
+        "id": "osm-node-5221319346",
+        "name": "בורגרים",
+        "certifiedBy": null,
+        "kosherType": "mehadrin",
+        "kosherLevel": "mehadrin",
+        "kosherAuthorityGroup": "unknown",
+        "kosherAuthority": null
+      },
+      {
+        "id": "osm-node-12557310999",
+        "name": "פיצה רומא",
+        "certifiedBy": null,
+        "kosherType": "rabanut",
+        "kosherLevel": "regular",
+        "kosherAuthorityGroup": "rabbinate",
+        "kosherAuthority": null
+      },
+      {
+        "id": "osm-node-12676686493",
+        "name": "פיצה פצץ",
+        "certifiedBy": null,
+        "kosherType": "kosher",
+        "kosherLevel": "regular",
+        "kosherAuthorityGroup": "unknown",
+        "kosherAuthority": null
+      },
+      {
+        "id": "coffeetrail-mchtipatly212",
+        "name": "מחתפתלי 212",
+        "certifiedBy": null,
+        "kosherType": "mehadrin",
+        "kosherLevel": "mehadrin",
+        "kosherAuthorityGroup": "unknown",
+        "kosherAuthority": null
+      },
+      {
+        "id": "coffeetrail-cafe-barkay",
+        "name": "קפה ברקאי",
+        "certifiedBy": null,
+        "kosherType": "mehadrin",
+        "kosherLevel": "mehadrin",
+        "kosherAuthorityGroup": "unknown",
+        "kosherAuthority": null
+      },
+      {
+        "id": "coffeetrail-itamar-coffee",
+        "name": "איתמר - קפה עם סיפור",
+        "certifiedBy": null,
+        "kosherType": "mehadrin",
+        "kosherLevel": "mehadrin",
+        "kosherAuthorityGroup": "unknown",
+        "kosherAuthority": null
+      },
+      {
+        "id": "coffeetrail-karney-hitin",
+        "name": "קרני חיטין",
+        "certifiedBy": null,
+        "kosherType": "mehadrin",
+        "kosherLevel": "mehadrin",
+        "kosherAuthorityGroup": "unknown",
+        "kosherAuthority": null
+      },
+      {
+        "id": "coffeetrail-galita-coffee-cart",
+        "name": "גליתא",
+        "certifiedBy": null,
+        "kosherType": "rabanut_mekomi",
+        "kosherLevel": "regular",
+        "kosherAuthorityGroup": "rabbinate",
+        "kosherAuthority": null
+      },
+      {
+        "id": "coffeetrail-kedma-coffee",
+        "name": "קדמא - קפה בעיירה",
+        "certifiedBy": null,
+        "kosherType": "rabanut_mekomi",
+        "kosherLevel": "regular",
+        "kosherAuthorityGroup": "rabbinate",
+        "kosherAuthority": null
+      },
+      {
+        "id": "golda-bd46421f",
+        "name": "גלידה גולדה",
+        "certifiedBy": null,
+        "kosherType": "mehadrin",
+        "kosherLevel": "mehadrin",
+        "kosherAuthorityGroup": "unknown",
+        "kosherAuthority": null
+      },
+      {
+        "id": "golda-d5eead7a",
+        "name": "גלידה גולדה",
+        "certifiedBy": null,
+        "kosherType": "mehadrin",
+        "kosherLevel": "mehadrin",
+        "kosherAuthorityGroup": "unknown",
+        "kosherAuthority": null
+      },
+      {
+        "id": "golda-7861d141",
+        "name": "גלידה גולדה",
+        "certifiedBy": null,
+        "kosherType": "mehadrin",
+        "kosherLevel": "mehadrin",
+        "kosherAuthorityGroup": "unknown",
+        "kosherAuthority": null
+      },
+      {
+        "id": "golda-4b2ab2c5",
+        "name": "גלידה גולדה",
+        "certifiedBy": null,
+        "kosherType": "mehadrin",
+        "kosherLevel": "mehadrin",
+        "kosherAuthorityGroup": "unknown",
+        "kosherAuthority": null
+      },
+      {
+        "id": "golda-65873143",
+        "name": "גלידה גולדה",
+        "certifiedBy": null,
+        "kosherType": "rabanut",
+        "kosherLevel": "regular",
+        "kosherAuthorityGroup": "rabbinate",
+        "kosherAuthority": null
+      },
+      {
+        "id": "golda-82d4b21f",
+        "name": "גלידה גולדה",
+        "certifiedBy": null,
+        "kosherType": "mehadrin",
+        "kosherLevel": "mehadrin",
+        "kosherAuthorityGroup": "unknown",
+        "kosherAuthority": null
+      }
+    ],
+    "6": []
+  },
+  "registryNullAuthorityCount": 537,
+  "reviewQueueCorrectlyBlankCount": 10,
+  "noRegistryKnowledgeCorrectlyBlankCount": 0,
+  "unmappedKosherTypeCount": 0,
+  "unmappedKosherTypeSamples": [],
+  "staleUnenrichedCount": 19,
+  "staleUnenrichedSamples": [
+    {
+      "id": "osm-node-4421769054",
+      "name": "300 גרם",
+      "certifiedBy": null,
+      "kosherType": "rabanut_mekomi",
+      "kosherLevel": null,
+      "kosherAuthorityGroup": null,
+      "kosherAuthority": null
+    },
+    {
+      "id": "osm-node-5115004882",
+      "name": "קייטרינג תדמית",
+      "certifiedBy": null,
+      "kosherType": "rabanut_mekomi",
+      "kosherLevel": null,
+      "kosherAuthorityGroup": null,
+      "kosherAuthority": null
+    },
+    {
+      "id": "osm-node-5299442042",
+      "name": "פיצה בריבוע",
+      "certifiedBy": null,
+      "kosherType": "mehadrin",
+      "kosherLevel": null,
+      "kosherAuthorityGroup": null,
+      "kosherAuthority": null
+    },
+    {
+      "id": "osm-node-5299594181",
+      "name": "אסתריקה",
+      "certifiedBy": null,
+      "kosherType": "mehadrin",
+      "kosherLevel": null,
+      "kosherAuthorityGroup": null,
+      "kosherAuthority": null
+    },
+    {
+      "id": "osm-node-6023053936",
+      "name": "קרנף",
+      "certifiedBy": null,
+      "kosherType": "rabanut_mekomi",
+      "kosherLevel": null,
+      "kosherAuthorityGroup": null,
+      "kosherAuthority": null
+    },
+    {
+      "id": "osm-node-6570267096",
+      "name": "Pasta Basta",
+      "certifiedBy": null,
+      "kosherType": "rabanut_mekomi",
+      "kosherLevel": null,
+      "kosherAuthorityGroup": null,
+      "kosherAuthority": null
+    },
+    {
+      "id": "osm-node-6854597174",
+      "name": "110 Burger",
+      "certifiedBy": null,
+      "kosherType": "rabanut_mekomi",
+      "kosherLevel": null,
+      "kosherAuthorityGroup": null,
+      "kosherAuthority": null
+    },
+    {
+      "id": "osm-node-7832129531",
+      "name": "הקוסקוס של גליה",
+      "certifiedBy": null,
+      "kosherType": "rabanut_mekomi",
+      "kosherLevel": null,
+      "kosherAuthorityGroup": null,
+      "kosherAuthority": null
+    },
+    {
+      "id": "osm-node-12578972524",
+      "name": "Breadcafe",
+      "certifiedBy": null,
+      "kosherType": "mehadrin",
+      "kosherLevel": null,
+      "kosherAuthorityGroup": null,
+      "kosherAuthority": null
+    },
+    {
+      "id": "osm-node-12809538406",
+      "name": "קירש קפה",
+      "certifiedBy": null,
+      "kosherType": "rabanut_mekomi",
+      "kosherLevel": null,
+      "kosherAuthorityGroup": null,
+      "kosherAuthority": null
+    },
+    {
+      "id": "osm-node-13426948731",
+      "name": "עדה",
+      "certifiedBy": null,
+      "kosherType": "mehadrin",
+      "kosherLevel": null,
+      "kosherAuthorityGroup": null,
+      "kosherAuthority": null
+    },
+    {
+      "id": "manual-river-malha",
+      "name": "ריבר מלחה",
+      "certifiedBy": null,
+      "kosherType": "kosher",
+      "kosherLevel": null,
+      "kosherAuthorityGroup": null,
+      "kosherAuthority": null
+    },
+    {
+      "id": "manual-river-rishon",
+      "name": "ריבר",
+      "certifiedBy": null,
+      "kosherType": "kosher",
+      "kosherLevel": null,
+      "kosherAuthorityGroup": null,
+      "kosherAuthority": null
+    },
+    {
+      "id": "manual-river-yavne",
+      "name": "ריבר",
+      "certifiedBy": null,
+      "kosherType": "kosher",
+      "kosherLevel": null,
+      "kosherAuthorityGroup": null,
+      "kosherAuthority": null
+    },
+    {
+      "id": "manual-river-holon",
+      "name": "ריבר",
+      "certifiedBy": null,
+      "kosherType": "kosher",
+      "kosherLevel": null,
+      "kosherAuthorityGroup": null,
+      "kosherAuthority": null
+    }
+  ],
+  "trueNoneCount": 20,
+  "partitionCheck": 2213,
+  "fieldTiers": {
+    "kosherAuthority": {
+      "absent": 1700,
+      "kosherType-map-only": 299,
+      "kosherType-map-DESPITE-reviewQueue": 20,
+      "registry-alias-match": 194
+    },
+    "kosherLevel": {
+      "absent": 336,
+      "kosherType-map-only": 1774,
+      "kosherType-map-DESPITE-reviewQueue": 103
+    },
+    "kosherAuthorityGroup": {
+      "absent": 336,
+      "kosherType-map-only": 1774,
+      "kosherType-map-DESPITE-reviewQueue": 103
+    }
+  },
+  "certifierIdRollup": {
+    "absent": 2213,
+    "null": 0,
+    "nonNullRegistered": 0,
+    "nonNullUNREGISTERED": 0
+  },
+  "disputedKosherTypeKeys_liveCount": 7,
+  "disputedKosherTypeKeys_samples": [
+    {
+      "id": "humus-eli-חומוס-אליהו-בית-שמש-סאן-מול",
+      "name": "חומוס אליהו בית שמש סאן מול",
+      "kosherType": "badatz_kehilot",
+      "certifiedBy": "בד\"ץ קהילות",
+      "kosherAuthority": "badatz_kehilot"
+    },
+    {
+      "id": "humus-eli-חומוס-אליהו-ירושלים-סנטר-1",
+      "name": "חומוס אליהו ירושלים סנטר 1",
+      "kosherType": "badatz_kehilot",
+      "certifiedBy": "בד\"ץ קהילות",
+      "kosherAuthority": "badatz_kehilot"
+    },
+    {
+      "id": "humus-eli-חומוס-אליהו-ירושלים-קניון-רמות",
+      "name": "חומוס אליהו ירושלים קניון רמות",
+      "kosherType": "badatz_kehilot",
+      "certifiedBy": "בד\"ץ קהילות",
+      "kosherAuthority": "badatz_kehilot"
+    },
+    {
+      "id": "humus-eli-חומוס-אליהו-מודיעין-עילית",
+      "name": "חומוס אליהו",
+      "kosherType": "badatz_kehilot",
+      "certifiedBy": "בד\"ץ קהילות קריית ספר",
+      "kosherAuthority": "badatz_kehilot"
+    },
+    {
+      "id": "cafecafe-62628c4d",
+      "name": "קפה קפה הרצליה מרינה",
+      "kosherType": "chatam_sofer",
+      "certifiedBy": "בד״צ חתם סופר",
+      "kosherAuthority": "chatam_sofer"
+    },
+    {
+      "id": "cafecafe-e8695221",
+      "name": "קפה קפה חולון סוקולוב",
+      "kosherType": "chatam_sofer",
+      "certifiedBy": "בד״צ חתם סופר",
+      "kosherAuthority": "chatam_sofer"
+    },
+    {
+      "id": "jer-2a304648",
+      "name": "שאבעסBISTRO",
+      "kosherType": "badatz_kehilot",
+      "kosherAuthority": "badatz_kehilot"
+    }
+  ]
+}
