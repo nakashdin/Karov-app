@@ -90,15 +90,10 @@ const ONE_SHOT_CHAIN_REASON = 'One-shot chain/branch import, already executed on
 const ONE_SHOT_PATCH_REASON = 'One-shot targeted patch for specific records, already executed once.';
 
 const FROZEN_EXCLUSIONS = [
-  // ── re-runnable-utility (2 remaining; apply-kashrut-authorities.mjs migrated to the helper) ──
+  // ── re-runnable-utility (1 remaining; apply-kashrut-authorities.mjs and
+  //    importers/tzohar/import-food.mjs both migrated to the helper) ──
   { file: 'scripts/migrate-kosher-fields.mjs', category: 're-runnable-utility',
     note: 'The MAP itself (FACTS §2, §5b site A). Writes kosherLevel/kosherAuthorityGroup/kosherAuthority. ' + RE_RUNNABLE_UTILITY_REASON },
-  { file: 'importers/tzohar/import-food.mjs', category: 're-runnable-utility',
-    note: 'Found via data-derived sweep, not the original .ts-only scope (it is .mjs) — exactly the class of ' +
-      'miss this method exists to catch. Writes certifiedBy/kosherType/kosherAuthority/kosherAuthorityGroup/' +
-      'kosherLevel via a single CERT_PATCH object, live on 195 tzohar records (matches FACTS §7\'s n=195). ' +
-      'Never asserts a level-asserting kosherType (writes kosherType:"tzohar", kosherLevel:"regular"), so it ' +
-      'does not itself trigger the B1.2(a) guard — still not migrated. ' + RE_RUNNABLE_UTILITY_REASON },
 
   // ── one-shot-chain-import (~35) ────────────────────────────────────────
   { file: 'scripts/import-rebar.mjs', category: 'one-shot-chain-import', note: 'Blanket kosherType:"mehadrin" hardcode, 55 live records. ' + ONE_SHOT_CHAIN_REASON },

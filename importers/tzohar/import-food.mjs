@@ -8,11 +8,32 @@
  *  - Matched → update certifiedBy, kosherType, kosherAuthority, kosherAuthorityGroup,
  *               kosherLevel, kosherCertUrl, source, lastVerifiedAt only
  *  - Unmatched → insert as new place
+ *
+ * KASHRUT WRITES ARE EVIDENCE-GATED (Batch B1 migration). The five kashrut
+ * fields route through recordKashrutWrite() with basis
+ * {kind:'certificate-document', url}, using a real Tzohar PDF URL — either
+ * from this pull (t.certPdf) or, for a record this script already certified
+ * in an earlier pull, the URL already on the record. Neither PDF was NOT a
+ * formatting gap to paper over: a Tzohar export entry with no PDF anywhere
+ * (never this pull, never a prior one) is real Tzohar list membership but
+ * not a citable document, and the honest thing to do with it is NOT
+ * silently invent a basis. So:
+ *   - a MATCHED existing record with no citable PDF gets its non-kashrut
+ *     fields (lastVerifiedAt) refreshed, but its kashrut fields are left
+ *     exactly as they were rather than re-asserted on no evidence — see
+ *     `noEvidenceUpdates` below.
+ *   - an UNMATCHED entry with no citable PDF is not admitted as a new food
+ *     record at all (AGENTS.md: a restaurant without kashrut evidence does
+ *     not get admitted) — see `skipped` below.
+ * This is a real, load-bearing behavior change from the pre-migration
+ * script, which wrote all five fields unconditionally via Object.assign
+ * regardless of whether a PDF existed for that specific record.
  */
 
 import { readFileSync, writeFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import path from 'path';
+import { recordKashrutWrite } from '../../scripts/shared/kashrut-write.mjs';
 
 const __dir = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dir, '../..');
@@ -122,30 +143,24 @@ for (const p of places) {
 // ── Process tzohar food entries ──────────────────────────────────────────────
 const food = tzohar.filter(t => t.category !== 'winery');
 
-const toUpdate = [];   // { existing: Place, patch: Partial<Place> }
-const toInsert = [];   // Place[]
-const skipped  = [];   // entries with ambiguous / bad city data
+const toUpdate = [];         // { existing: Place, certUrl: string, basis: KashrutBasis }
+const toInsert = [];         // { base: Partial<Place>, certUrl: string, basis: KashrutBasis }
+const skipped  = [];         // { t, reason: string }
+const noEvidenceUpdates = []; // { existing: Place } — matched, but no certificate to cite for THIS pull;
+                              // non-kashrut fields still refresh, kashrut fields are left untouched rather
+                              // than re-asserted without a citable document (see header note on basis).
+const helperViolations = []; // recordKashrutWrite refusals — caught, not crashed, same pattern as
+                              // apply-kashrut-authorities.mjs
 
 // Counter for new IDs
 let nextIdx = places.filter(p => p.id.startsWith('tzohar-food-')).length + 1;
 
 for (const t of food) {
   const city = normCity(t.city);
-  if (!city) { skipped.push(t); continue; }
+  if (!city) { skipped.push({ t, reason: 'bad city data' }); continue; }
 
   const nc = norm(city);
   const placeType = TYPE_MAP[t.category] ?? 'restaurant';
-
-  const CERT_PATCH = {
-    certifiedBy: 'צהר',
-    kosherType: 'tzohar',
-    kosherAuthority: 'tzohar',
-    kosherAuthorityGroup: 'independent',
-    kosherLevel: 'regular',
-    ...(t.certPdf ? { kosherCertUrl: t.certPdf } : {}),
-    source: 'tzohar',
-    lastVerifiedAt: '2026-08-10',
-  };
 
   // 1. Match by normalised name + city
   const nameKey = normName(t.name) + '|' + nc;
@@ -166,63 +181,139 @@ for (const t of food) {
     if (addrHits.length === 1) matched = addrHits[0];
   }
 
+  // The honest evidence for a certificate-document basis: a certPdf from THIS
+  // pull, or — for a record this same script already certified in an earlier
+  // pull — the URL it recorded then. Neither existing is a real finding, not
+  // a formatting gap: see the header note. It is NOT papered over with a
+  // human-review or backfilled-inference basis, because neither is true —
+  // there is no reviewer and no prior capture to point to, only Tzohar's
+  // institutional list entry with no attached document.
+  const certUrl = t.certPdf || matched?.kosherCertUrl || null;
+
+  if (!certUrl) {
+    if (matched) {
+      noEvidenceUpdates.push({ existing: matched });
+    } else {
+      skipped.push({ t, reason: 'no certificate PDF for a NEW record — not admitted without a citable document (AGENTS.md admission rule)' });
+    }
+    continue;
+  }
+
+  const basis = { kind: 'certificate-document', url: certUrl };
+
   if (matched) {
-    toUpdate.push({ existing: matched, patch: CERT_PATCH });
+    toUpdate.push({ existing: matched, certUrl, basis });
   } else {
-    // Build a fresh place record
-    const id = `tzohar-food-${String(nextIdx++).padStart(4, '0')}`;
     toInsert.push({
-      id,
-      name: t.name,
-      type: placeType,
-      cityId: city,
-      address: t.address,
-      location: { latitude: t.lat, longitude: t.lng },
-      ...(t.website ? { website: t.website } : {}),
-      ...(t.phone   ? { phone:   t.phone   } : {}),
-      ...(t.kosherCategory ? { category: t.kosherCategory } : {}),
-      ...CERT_PATCH,
+      base: {
+        id: `tzohar-food-${String(nextIdx++).padStart(4, '0')}`,
+        name: t.name,
+        type: placeType,
+        cityId: city,
+        address: t.address,
+        location: { latitude: t.lat, longitude: t.lng },
+        ...(t.website ? { website: t.website } : {}),
+        ...(t.phone   ? { phone:   t.phone   } : {}),
+        ...(t.kosherCategory ? { category: t.kosherCategory } : {}),
+      },
+      certUrl,
+      basis,
     });
   }
 }
 
+/** The five fields recordKashrutWrite governs, applied identically to an update or a fresh record. */
+function applyCertPatch(place, basis) {
+  recordKashrutWrite(place, 'certifiedBy', 'צהר', basis);
+  recordKashrutWrite(place, 'kosherType', 'tzohar', basis);
+  recordKashrutWrite(place, 'kosherAuthority', 'tzohar', basis);
+  recordKashrutWrite(place, 'kosherAuthorityGroup', 'independent', basis);
+  recordKashrutWrite(place, 'kosherLevel', 'regular', basis); // never level-asserting — 'regular' is never guarded
+}
+
 // ── Apply updates ────────────────────────────────────────────────────────────
 const updatedIds = new Set();
-for (const { existing, patch } of toUpdate) {
+for (const { existing, certUrl, basis } of toUpdate) {
   if (updatedIds.has(existing.id)) continue; // guard against double-update
   updatedIds.add(existing.id);
-  Object.assign(existing, patch);
+  try {
+    applyCertPatch(existing, basis);
+    existing.kosherCertUrl = certUrl; // not a KASHRUT_FIELD — kosherCertUrl is evidence data, not routed through the helper
+    existing.source = 'tzohar';
+    existing.lastVerifiedAt = '2026-08-10';
+  } catch (err) {
+    helperViolations.push(`${existing.id} "${existing.name}": ${err.message}`);
+  }
+}
+
+// Records matched but with no citable certificate: still worth a freshness
+// stamp (Tzohar's list still names this business), but their kashrut fields
+// are left exactly as they were rather than re-asserted on no evidence.
+for (const { existing } of noEvidenceUpdates) {
+  if (updatedIds.has(existing.id)) continue;
+  updatedIds.add(existing.id);
+  existing.lastVerifiedAt = '2026-08-10';
+}
+
+// ── Build new entries ────────────────────────────────────────────────────────
+const newPlaces = [];
+for (const { base, certUrl, basis } of toInsert) {
+  const place = { ...base };
+  try {
+    applyCertPatch(place, basis);
+    place.kosherCertUrl = certUrl;
+    place.source = 'tzohar';
+    place.lastVerifiedAt = '2026-08-10';
+    newPlaces.push(place);
+  } catch (err) {
+    helperViolations.push(`NEW ${base.id} "${base.name}": ${err.message}`);
+    skipped.push({ t: { name: base.name, city: base.cityId }, reason: `recordKashrutWrite refused: ${err.message}` });
+  }
 }
 
 // ── Append new entries ────────────────────────────────────────────────────────
-const updated = [...places, ...toInsert];
+const updated = [...places, ...newPlaces];
 
 writeFileSync(PLACES_PATH, JSON.stringify(updated, null, 2), 'utf8');
 
 // ── Report ────────────────────────────────────────────────────────────────────
 console.log('\n=== Tzohar Food Import ===');
-console.log(`Total tzohar food entries  : ${food.length}`);
-console.log(`Updated existing places    : ${toUpdate.length}`);
-console.log(`Inserted new places        : ${toInsert.length}`);
-console.log(`Skipped (bad city data)    : ${skipped.length}`);
-console.log(`New total in places.osm.json: ${updated.length}`);
+console.log(`Total tzohar food entries        : ${food.length}`);
+console.log(`Updated existing places          : ${toUpdate.length}`);
+console.log(`Inserted new places              : ${newPlaces.length}`);
+console.log(`Matched, no certificate to cite  : ${noEvidenceUpdates.length}  (kashrut fields left untouched, non-kashrut fields refreshed)`);
+console.log(`Skipped (bad city data / no cert for a new record) : ${skipped.length}`);
+console.log(`recordKashrutWrite refusals      : ${helperViolations.length}`);
+console.log(`New total in places.osm.json     : ${updated.length}`);
 
 if (toUpdate.length) {
   console.log('\n— Updated —');
-  toUpdate.forEach(({ existing, patch }) =>
+  toUpdate.forEach(({ existing }) =>
     console.log(`  ✓ ${existing.id}  "${existing.name}"  (${existing.cityId})`)
+  );
+}
+
+if (noEvidenceUpdates.length) {
+  console.log('\n— Matched, no certificate to cite (kashrut fields NOT re-asserted) —');
+  noEvidenceUpdates.forEach(({ existing }) =>
+    console.log(`  ~ ${existing.id}  "${existing.name}"  (${existing.cityId})  kosherCertUrl=${JSON.stringify(existing.kosherCertUrl ?? null)}`)
   );
 }
 
 if (skipped.length) {
   console.log('\n— Skipped —');
-  skipped.forEach(t => console.log(`  ✗ "${t.name}"  city="${t.city}"`));
+  skipped.forEach(({ t, reason }) => console.log(`  ✗ "${t.name}"  city="${t.city}"  — ${reason}`));
 }
 
-if (toInsert.length) {
+if (helperViolations.length) {
+  console.log('\n— recordKashrutWrite refusals —');
+  helperViolations.forEach((m) => console.log(`  ⚠ ${m}`));
+}
+
+if (newPlaces.length) {
   console.log('\n— New entries (first 20) —');
-  toInsert.slice(0, 20).forEach(p =>
+  newPlaces.slice(0, 20).forEach(p =>
     console.log(`  + ${p.id}  "${p.name}"  (${p.cityId})  [${p.type}]`)
   );
-  if (toInsert.length > 20) console.log(`  … and ${toInsert.length - 20} more`);
+  if (newPlaces.length > 20) console.log(`  … and ${newPlaces.length - 20} more`);
 }
