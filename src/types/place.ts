@@ -93,6 +93,8 @@ export interface Place {
   kosherAuthority?: string | null;
   /** Name of the certifying authority as printed on the certificate. */
   certifiedBy?: string;
+  /** Canonical certifying body (src/data/kashrut/authorities.ts). null when the evidence names a level but no authority. */
+  certifierId?: string | null;
   /**
    * ISO date (YYYY-MM-DD) the kosher certificate is valid until. Only ever
    * set from a real certificate document (see `kosherCertUrl`) — never
