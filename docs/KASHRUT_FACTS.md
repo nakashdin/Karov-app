@@ -119,7 +119,7 @@ runs over it. Protected baseline corrected **910 → 902**.
 
 ---
 
-## 5b. The registry has ALREADY REFUSED authority→level inference — 108 times
+## 5b. Authority→level inference — refused 108 times, and never once performed
 
 This is the single most important constraint on any future level rule. Verified independently by the
 Reviewer and the Architect against `kashrut-registry.json`.
@@ -162,12 +162,145 @@ mechanism is not the body-less alias — it is **authority→level inference**, 
 > **The safe rule is the narrow one:** `mehadrin` only where `alias.level === 'mehadrin'`. Everything else
 > keeps whatever the evidence separately supports, or goes to the uncertainty state.
 
-**Unreconciled (do not quote as established):** an independent architecture critique reported 288/352/82%
-for the body-less mechanism, and the Reviewer reported 187 records covered by the 9 body-less mehadrin
-aliases. The Architect measured 11 records currently at mehadrin via a body-less alias. These are different
-populations (proposed-rule output vs current dataset vs alias coverage regardless of current level) and the
-cut has not been settled. The **358** figure and the 108-alias refusal reproduce exactly across
-derivations and are the load-bearing facts. There are **9** body-less mehadrin aliases, not 11.
+### The stronger property: 0 derivations in 203 aliases
+
+The 108 refusals are the visible half of a stronger property. Tested in both directions against
+`kashrut-registry.json`:
+
+| | |
+|---|---|
+| aliases at `level: 'mehadrin'` | **80** — **all 80** carry a mehadrin word (מהדרין / למהדרין / גלאט) in their own raw text |
+| aliases carrying a mehadrin word but denied the level | **0** |
+| aliases at `level: 'regular'` | **3** dataset-wide (`"כשר"`, `"כשר רבנות"`, `"רבנות תל אביב (רגילה)"`); **1** of the 180 authority-naming ones. All three carry a level word |
+
+The level field is a **pure function of the raw text**. Not once in 203 aliases was a level read off an
+authority.
+
+**The phrasing is load-bearing.** *"The registry declined 108 times"* reads as caution — a proposer being
+careful, a precedent a later proposer may reasonably revisit. ***"0 derivations out of 203"* is a design
+property.** A Batch-B authority→level rule would not be extending registry precedent; it would be **the
+first derivation of its kind in this project, introduced by the release that exists to delete them.**
+
+**The inference is unsafe downward too.** `tzohar` has 2 aliases, both `level: null` — so
+`migrate-kosher-fields.mjs`'s `tzohar → regular` rests on exactly as little as `badatz → mehadrin` would.
+This pre-empts *"we only ever downgrade, so it's conservative"*: conservatism is not a direction, it is
+whether the text said it.
+
+**The trap — 11 authorities that look single-tier and are not.** `rabbinate-tiberias`, `akko`,
+`beit-shemesh`, `tzfat`, `shomron`, `migdal-haemek`, `kiryat-ata`, `kiryat-malachi`, `hevel-modiin`,
+`modiin-illit` and `ou` appear **only** with mehadrin aliases, with no `null` counterpart. Someone will
+present these as *"certifies at exactly one level by its own standard, so the derivation is documented
+fact."* They are the **weakest** cases, not the strongest: ten of the eleven are local rabbinates — the most
+provably two-tier body type in the country — and **36 authorities in this same table are attested at both
+tiers** (`רבנות X` at null beside `רבנות מהדרין X` at mehadrin), with `rabbinate-tel-aviv` carrying an
+explicit `regular`. Their single-tier appearance is a **small-sample artifact of which branches happen to be
+in the dataset**, not a property of the body. Generalising from it is the same inference under a new name.
+
+### The 358 have no independent evidence — verified, do not re-litigate
+
+*"Keep the level where an independent source supports it"* is an **empty category**. Measured across all 358:
+
+| | |
+|---|---|
+| `kosherCertUrl` | **0 / 358** |
+| `certificateValidUntil` | **0 / 358** |
+| `kosherDetails` | **0 / 358** |
+| `sourceUrl` | 25 / 358 — **all 25 circular** |
+
+The 25 resolve to four domains: `humus-eli-yahoo.com/restaurants/` (11), `coffeetrail.co.il` (10),
+`cafecafe.co.il` (3), `gushetzion-winery.co.il` (1). Every one is the page the record was **scraped from**.
+This is the Golda precedent — `import-golda.mjs` scraped goldaglida.co.il, so "re-verifying" Golda against
+that site is circular. Citing the source you copied is not corroboration.
+
+**Consequence:** *delete the level* and *keep it where evidence supports it* produce **byte-identical data**.
+The second merely costs a research pass to arrive at the first. Recorded so no future pass spends it.
+
+**Reconciled — settled, and settled against the Reviewer.** The Reviewer counted **187** records as carrying
+an unlicensed mehadrin level; the Architect counted **11**. The Architect is right, and the arithmetic closes
+exactly: the Reviewer's 164 + 187 = the Architect's **351 licensed**, and the Reviewer's 11 = the Architect's
+11. **51.2% is the established figure. 75.7% is withdrawn.** Third independent derivation reproduces
+351 / 358 / 11 / 67 / 313 to the record.
+
+Why the Reviewer's cut was wrong — recorded because the mistake teaches better than the rule does: for
+`certifiedBy: "מהדרין"` the source text **does** state the level. What is absent is the **body**, not the
+level. Filing those records under "level not licensed" conflated the two questions this architecture exists
+to keep apart. `kosherAuthority`, `kosherLevel` and certificate identity are **separate facts** (§12) — a
+missing body is not a missing level, and a missing level is not a missing body.
+
+**The correction sharpens the conclusion rather than softening it: there are two mechanisms, not one.**
+
+| Population | Mechanism | Remedy |
+|---|---|---|
+| **187** level-licensed, body-unknown | text states מהדרין, names no body | **none needed** — already fully covered by the `certifierId: null` uncertainty state |
+| **358** authority→level inference | text names a body, states no level | **the only mechanism Batch B has to solve** |
+
+"51% of mehadrin claims are unlicensed" makes the problem sound larger and vaguer than it is. It is one
+named mechanism at 358 records, and the other half already has its rule.
+
+---
+
+### Batch B remediation — approved shape
+
+**Approved by the Architect.** `kosherLevel?: 'regular' | 'mehadrin'` becomes
+`kosherLevel?: 'regular' | 'mehadrin' | null`, and the 358 are set to **explicit `null`**, not deleted.
+
+The project already made this decision one field away — `certifierId?: string | null`, *"null when the
+evidence names a level but no authority"* (`place.ts:97`). The 358 are its exact mirror: **the evidence names
+an authority and no level.** Same semantics, same shape, opposite axis.
+
+Absence would collapse three states into one — *never migrated* / *deliberately undetermined* / *genuinely
+unknown*. That collapse is not hypothetical: §5c is already 249 records deep in it, and adding 358 more
+would make a Batch-B decision indistinguishable from a migration gap forever.
+
+**User-visible effect of the 358 (measured, not predicted).** All 358 receive a **named** `certifierId`
+(verified 358/358 against the dry-run plan), and `getKosherLabel` returns `authority.nameHe` from the
+`certifierId` branch **before it ever reads `kosherLevel`** (`kosher.ts:130-133`).
+
+| Surface | Effect |
+|---|---|
+| label — 154 badatz-group with `kosherAuthority` | **unchanged**; same string, now via `certifierId` |
+| label — 191 unknown-group | bare `"מהדרין"` → the body name, e.g. `בד״ץ בית יוסף`. **More informative** |
+| label — 13 rabbinate-group | `"רבנות מהדרין"` → the specific rabbinate. Loses the tier word, gains the city |
+| detail screen (raw `certifiedBy`) | **0** |
+| chip colour (`PlaceCard.tsx:40`) | 154 keep `kosherPremium` (`group === 'badatz'` is tested first); **204 downgrade** — 191 → `primary`, 13 → `info` |
+| `mehadrinOnly` (`filterPlaces.ts:37`) | **1,100 → 742** (−358, −32.5%) |
+| every group/authority filter | **0 records leave** — `kosherAuthorityGroup` is untouched |
+
+A בד״ץ בית יוסף record does **not** lose its label. The user still sees `בד״ץ בית יוסף`. What they stop
+seeing is Karov's assertion that it is *mehadrin* — a claim the certificate text never made.
+
+**The owner-facing framing:** the mehadrin filter gets smaller because it stops returning places whose
+mehadrin status we invented. The full ladder, so step one is not approved in ignorance of steps two to four:
+
+| | scope | `mehadrinOnly` result |
+|---|---|---|
+| A | the 358 only | 1,100 → **742** |
+| B | + the 11 body-less | → **731** |
+| C | + the 313 with no alias at all | → **418** |
+| D | text-licensed only | → **351** |
+
+---
+
+## 5c. A separate pre-existing defect — a type with no level
+
+**Not Batch B's, and it must not be absorbed into Batch B silently.**
+
+| | |
+|---|---|
+| food records carrying a `kosherType` and **no** `kosherLevel` | **249** |
+| of those, typed `kosherType: 'mehadrin'` | **11** |
+| of those 11, inside the 323 REMOVE set | 4 |
+
+Different cause from everything in §5b: the `kosherType → kosherLevel` migration simply never reached them.
+
+They matter because of **display path 3** (§6). A record typed `mehadrin` with no `kosherLevel` still
+renders **"מהדרין"** on the detail screen through `kosherTypeLabel`, while being **invisible to every
+level-based query** — the `mehadrinOnly` filter, every count in §5b, and any remediation rule keyed on
+`kosherLevel`. They are asserted to the user and absent from the audit at the same time, which is the worst
+combination available: the claim reaches a person deciding carefully, and no measurement of the problem
+includes it.
+
+Batch B is scoped to exclude them. They need their own pass.
 
 ---
 
@@ -175,9 +308,16 @@ derivations and are the load-bearing facts. There are **9** body-less mehadrin a
 
 | Path | Where | Changed by the migration |
 |---|---|---|
-| 1. `getKosherLabel` | `PlaceCard.tsx:110`, `PlaceBottomCard.tsx:20` | 720 records |
+| 1. `getKosherLabel` | `PlaceCard.tsx:110`, `PlaceBottomCard.tsx:20` | **545** records (not 720) |
 | 2. raw `certifiedBy` | `PlaceCard.tsx:121`, `PlaceDetailScreen.tsx:59/317/432` | **0** |
 | 3. `kosherTypeLabel` **direct** | `PlaceDetailScreen.tsx:30/58/432` | **0** |
+
+**Why 545 and not 720 (settled).** The Reviewer pre-registered 720 label changes and measured 545
+against the shipped code. The 175-record gap is not a shortfall — it is the Reviewer's own gershayim finding
+being fixed. The prediction was simulated against the ASCII-quote `nameHe` values (`בד"ץ`); change D
+corrected those to U+05F4 gershayim (`בד״ץ`), which is also what the legacy `byAuthority` map already
+emitted. So ~173 of the predicted "changes" were typography-only regressions that the batch eliminated
+rather than performed. **545 is correct and 720 was inflated by the exact defect the batch removes.**
 
 `apply` writes only `certifierId` / `kosherLevel` / `kosherAuthorityGroup` — never `certifiedBy` or
 `kosherType`. So paths 2 and 3 are byte-identical before and after.
@@ -379,4 +519,8 @@ as certified**.
 | "PlaceCard bypasses `getKosherLabel`" | **inverted** | the card calls it; the *detail screen* never does |
 | "9 misleading source strings" | **113 deferred** (9 = worst subset) | scope vs illustration |
 | humuseliyahu identity-discarding = 59 | **6** | 52 of the 59 have `certifiedBy: "מהדרין"` — no body to recover |
+| §5b unlicensed share 75.7% (545/720) | **51.2% (369/720)** | conflated "no body" with "no level"; see §5b |
+| "288 / 352 / 82%" for the body-less mechanism | **still unverified — do not quote** | relayed from an outside critique, never re-derived; population undefined |
+| "11 body-less mehadrin aliases" | **9** | alias count, relayed unverified |
+| getKosherLabel changes 720 records | **545** | 175 were gershayim-only artifacts of the simulation; see §6 |
 | migrate-kosher-fields.mjs guard blind spot = 614 | **633** (no certifiedBy, MAP-enrichable) / **111** (of those, named authority) | 614 is Phase 1's category-4, a different predicate (requires already-enriched) |
