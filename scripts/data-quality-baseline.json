@@ -4,5 +4,7 @@
   "missingAddress": 7,
   "missingCityId": 8,
   "foodWithoutKashrut": 20,
-  "missingSource": 3327
+  "missingSource": 3327,
+  "kashrutAuthorityUnknown": 1183,
+  "freeTextCertifierUnmapped": 1560
 }

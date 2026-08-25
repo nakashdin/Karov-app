@@ -65,6 +65,12 @@ const counts = {
   missingCityId: 0,
   foodWithoutKashrut: 0,
   missingSource: 0,
+  // `foodWithoutKashrut` counts a record as "having kashrut" once it carries
+  // ANY kashrut-ish field, including `kosherAuthorityGroup: 'unknown'` — which
+  // is the value the kashrut filter itself reads as "no usable signal". These
+  // two ask the honest question instead; see docs/DATA_ARCHITECTURE.md §10 B6.
+  kashrutAuthorityUnknown: 0,
+  freeTextCertifierUnmapped: 0,
 };
 
 function fail(msg) {
@@ -141,6 +147,15 @@ if (hard.length === 0) {
     if (FOOD_TYPES.has(p.type) && !p.kosherType && !p.kosherAuthorityGroup && !p.certifiedBy) {
       counts.foodWithoutKashrut++;
     }
+    if (FOOD_TYPES.has(p.type) && (!p.kosherAuthorityGroup || p.kosherAuthorityGroup === 'unknown')) {
+      counts.kashrutAuthorityUnknown++;
+    }
+    // `certifierId: null` is a deliberately resolved state ("level known, no
+    // authority identified") — not the same as never having gone through the
+    // registry. Only strict absence counts as unmapped here.
+    if (FOOD_TYPES.has(p.type) && p.certifiedBy && p.certifierId === undefined) {
+      counts.freeTextCertifierUnmapped++;
+    }
   }
 
   const cap = (label, list, limit = 10) => {
@@ -168,6 +183,8 @@ const RATCHET_KEYS = [
   'missingCityId',
   'foodWithoutKashrut',
   'missingSource',
+  'kashrutAuthorityUnknown',
+  'freeTextCertifierUnmapped',
 ];
 
 const baseline = existsSync(BASELINE_PATH)
@@ -180,7 +197,19 @@ const improvements = [];
 if (baseline && hard.length === 0) {
   for (const key of RATCHET_KEYS) {
     const now = counts[key];
-    const was = baseline[key] ?? Infinity;
+    // A key absent from the baseline is unmeasured, not zero and not infinite.
+    // Falling back to Infinity made every first measurement of a new ratchet
+    // report as an "improvement" no matter how bad — the exact failure mode
+    // this gate exists to prevent. Missing baseline data is a hard failure:
+    // establish it deliberately with `--update`, don't let it default to a
+    // free pass.
+    if (!(key in baseline)) {
+      fail(`${key}: no baseline entry (current count: ${now}). A missing baseline is not evidence of ` +
+        `improvement — run \`node scripts/validate-data.mjs --update\` once, after confirming ${now} is ` +
+        'the accepted starting point, to establish it deliberately.');
+      continue;
+    }
+    const was = baseline[key];
     if (now > was) regressions.push(`${key}: ${was} → ${now} (+${now - was})`);
     else if (now < was) improvements.push(`${key}: ${was} → ${now} (−${was - now})`);
   }
