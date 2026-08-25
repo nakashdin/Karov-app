@@ -537,9 +537,14 @@ as certified**.
 meant to route through. Built because a hand-maintained list of "the scripts that matter" had already
 been wrong twice in this project — a 4-name starting list covered roughly a quarter of the real surface,
 and one of the four names didn't exist at the claimed path. A choke point is producer-agnostic by
-construction: it governs every future write regardless of which of the ~71 existing writer scripts (34
-literal, ~37 dynamic/computed) a record's history runs through, and regardless of scripts nobody has
-enumerated yet.
+construction: it governs every future write regardless of which of the **82** existing writer scripts a
+record's history runs through, and regardless of scripts nobody has enumerated yet. 82 is the number the
+completeness test's own scan finds and enforces (`scripts/shared/__tests__/kashrut-write-completeness.test.mjs`),
+not an estimate — three earlier estimates (~71 from the Architect, 29+42 from the Reviewer, 62 from a
+subagent's own summary, which undercounted its own 75-row table) were each superseded by actually running
+the scan and freezing the list against its output. Quote whatever the test currently reports (82 as of this
+writing — apply-kashrut-authorities.mjs migrated to the helper below, dropping it from 83), not a number
+copied from this paragraph after the list moves again.
 
 **The governable population is 845, not 204 or 358.** 845 = every live record whose `kosherType` asserts a
 level (`mehadrin` 769, `rabanut_mehadrin` 69, `rabanut_mehadrin_jerusalem` 7). Of those, **343** currently
@@ -559,6 +564,19 @@ would be a convention — and a convention is exactly how `kosherLevel: 'mehadri
 in the first place (§5b). A level-asserting write is only accepted when `basis.kind` is
 `'registry-alias'` with `aliasLevel: 'mehadrin'`, `'certificate-document'`, or `'human-review'` —
 `'enum-inference'` is rejected unconditionally, because it is exactly the site-A/site-B mechanism.
+
+**Shape alone was not enough — the Reviewer's B1 predicate found a real gap, since fixed.** A first version
+accepted `{kind:'registry-alias', alias:'...', aliasLevel:'mehadrin'}` on the caller's word: the shape
+type-checked, but nothing resolved `alias` against the real registry to check whether it actually recorded
+that level. A caller could claim the registry's authority for a level it never granted — for the exact
+alias this project already knows the registry gives `level: null` (`"בד\"ץ בית יוסף"`). Mitigated in
+practice by `levelAssertedOverNamedBody` catching the resulting record regardless of which basis produced
+it (defense in depth doing its job), but the file read as airtight and wasn't. Fixed:
+`basisSupportsLevelAssertion` now resolves `alias` against `kashrut-registry.json` and requires the
+registry's own recorded level to match `aliasLevel`, failing CLOSED — not falling back to trusting the
+caller — on both an unresolvable alias and a failed registry load. A basis that cites a source is now
+checked against it. The lesson is the same one this whole batch is about, one layer up: a claim that
+records its own justification is not the same as a claim that has been verified.
 
 **Enforcement is runtime-only, not compiler-enforced, and this must not be overstated.**
 `tsconfig.json` excludes both `importers` and `scripts` from `include` — `npm run typecheck` never
@@ -585,7 +603,7 @@ validator is green" must never be read as "certifiedBy has never been overwritte
 layers on purpose: the helper stops a bad write before it reaches disk; the validator catches anything that
 bypassed the helper.
 
-**The exclusion list is frozen.** The ~71 existing writer scripts that assign a kashrut field directly are
+**The exclusion list is frozen.** The **82** existing writer scripts that assign a kashrut field directly are
 not retrofitted to call the helper — most already ran once and will not run again. They are enumerated,
 categorized, and reasoned in `scripts/shared/__tests__/kashrut-write-completeness.test.mjs`; the list only
 shrinks (a script migrated to the helper), never grows (a new bypass is a test failure, not a list edit).
@@ -660,6 +678,34 @@ permanent furniture that everyone reads as "fine" because it's green. Two obliga
 
 ---
 
+## 16. Migrating the re-runnable utilities — order, and why one goes first
+
+Three writer scripts are `re-runnable-utility`, not one-shot: `migrate-kosher-fields.mjs`,
+`apply-kashrut-authorities.mjs`, and `importers/tzohar/import-food.mjs` (§13). None were migrated to
+`recordKashrutWrite()` when B1 shipped — B1 built the choke point and proved it works, it did not retrofit
+the scripts that would benefit most from actually using it.
+
+**`apply-kashrut-authorities.mjs` migrated first, and specifically before Batch B's dataset write, not
+merely before Batch B starts.** It is the script that will perform that write. Unmigrated, the one write
+that actually fixes the 358 unlicensed mehadrin records would go through the one path B1's choke point does
+not cover — Batch B's own remediation bypassing Batch B1's guard. Migration verified behavior-preserving:
+a dry run before and after produces byte-identical totals (matchedAlias 1447, certifierIdNonNull 910,
+certifierIdNull 537, kosherLevelSet 5, kosherAuthorityGroupSet 448, reviewQueueSkipped 113 — every number
+unchanged), plus a new `0 recordKashrutWrite refusals : OK` acceptance line confirming every one of the
+1447 writes was checked, not skipped. `apply-kashrut-authorities.mjs`'s own `basis` for every write is
+`{kind:'registry-alias', alias: p.certifiedBy, aliasLevel: alias.level}` — the same alias entry the script
+already resolved from the registry, so `recordKashrutWrite`'s content-check (§13) verifies the script
+against the registry a second, independent time rather than trusting the script's own prior lookup.
+
+**`migrate-kosher-fields.mjs` and `importers/tzohar/import-food.mjs` are scheduled after, under a hard
+condition: neither may run again before it is migrated.** `import-food.mjs` is the one to watch —
+it is the only live re-runnable *importer* of the three, and it will run again the next time Tzohar
+certificates refresh, which per §7's cliff is immediately after 2026-09-11: seventeen days out from this
+writing. An unmigrated re-runnable writer firing in the same week as the certificate refresh is a
+collision worth closing before it happens, not after.
+
+---
+
 ## Superseded numbers — do not requote
 
 | Wrong | Correct | Why |
@@ -678,5 +724,5 @@ permanent furniture that everyone reads as "fine" because it's green. Two obliga
 | getKosherLabel changes 720 records | **545** | 175 were gershayim-only artifacts of the simulation; see §6 |
 | migrate-kosher-fields.mjs guard blind spot = 614 | **633** (no certifiedBy, MAP-enrichable) / **111** (of those, named authority) | 614 is Phase 1's category-4, a different predicate (requires already-enriched) |
 | B1.2 level-guard population = 204 ("site B") | **845** carry a level-asserting `kosherType`; **343** of those violate the general predicate today | 204 is a historical site-B-only count inside the 358; the choke point governs the general population, not one historical mechanism; see §13 |
-| B1.2 starting writer list = golda / coffeetrail / rebar / apply-chains-research | **~71 files** (34 literal, ~37 dynamic); only rebar of the four is a real literal writer at the claimed path | `scripts/import-coffeetrail.mjs` doesn't exist (real: `importers/coffee-carts/scrape-coffeetrail.mjs`); golda/coffeetrail assign dynamically, not literally; see §13 |
+| B1.2 starting writer list = golda / coffeetrail / rebar / apply-chains-research | **82 files** (the completeness test's own scan, frozen — 83 before apply-kashrut-authorities.mjs was migrated to the helper); only rebar of the four is a real literal writer at the claimed path | `scripts/import-coffeetrail.mjs` doesn't exist (real: `importers/coffee-carts/scrape-coffeetrail.mjs`); golda/coffeetrail assign dynamically, not literally; ~71/29+42/62 were each superseded estimates, not the scanned count; see §13 |
 | `kosher.ts:138` null/undefined parity (assumed safe by analogy to certifierId) | **unsafe** — falls through to the legacy `kosherType` label, which still asserts the withheld claim | see §14 |
