@@ -434,6 +434,36 @@ Known gap: `9100000` / `"כשרות רבנות ובד״ץ"` (names both a rabban
 reviewQueue entry. `"בד״ץ העדה החרדית / מהדרין"` is body+level, not body+body — correctly benign. Any
 future compound detection must distinguish these; a naive slash-split defers the benign one.
 
+### `raw` vs `nameHe` — the gershayim trap, three times now
+
+`authorities[].nameHe` is **display text and uniformly normalized**: 5 of 81 contain a gershayim `״`
+(U+05F4), **0** contain an ASCII `"`. `aliases[].raw` is **source text and normalized to nothing**: 27 of
+203 contain an ASCII `"` and **1 contains a gershayim** — because that is what its source said. No alias
+`raw` contains both.
+
+So the rule is not "raw is ASCII, nameHe is gershayim." It is:
+
+> **`nameHe` is ours and is normalized. `raw` is the source's and must be matched byte-for-byte, with no
+> assumption about which quote character it uses.** Substituting one for the other is silent — both render
+> nearly identically and neither throws.
+
+It has now caused three different failures, none of which announced itself:
+
+| | What was substituted | How it surfaced |
+|---|---|---|
+| 1 | A migration simulation matched against `nameHe` carrying ASCII quotes | Predicted **720** label changes; the real number was **545**. ~173 of the "changes" were typography-only. §6 |
+| 2 | `nameHe` itself carried ASCII quotes | Display regression, fixed in Batch A change D |
+| 3 | A B1 test fixture used a gershayim alias string that does not exist verbatim in `aliases[].raw` | The fixture matched **nothing** — the test passed **vacuously**, proving nothing about the guard it was written to check |
+
+The third is the worst kind, because a test that passes for the wrong reason is indistinguishable from one
+that passes for the right one. The fix that closed it is the one to copy: every fixture now asserts its own
+assumption against the live registry (`assert.ok(realEntry, 'fixture assumption broken: … is expected to be
+a real registry alias')`), so the test fails loudly if the registry data moves underneath it rather than
+quietly testing an empty set.
+
+**Applies to `certifiedBy` too** — it is source text under the same rule (§13), which is why the B1.1
+append-only check deliberately refuses a gershayim "correction" to it.
+
 ### reviewQueue is NOT a blanket "defer everything" signal
 Of the 58 entries: **27 carry a `suggestedAuthorityId`** (12 of those name an authority that **is
 registered**), and **11 carry a `suggestedLevel`**. Some entries defer only the **level** while affirming
