@@ -46,6 +46,15 @@
  *     | { kind: 'enum-inference', fromKosherType: string }
  *     | { kind: 'backfilled-inference', method: string }
  *
+ * `registry-alias` is CONTENT-checked, not just shape-checked: the Reviewer's
+ * B1 predicate found that a first version of this file accepted
+ * {kind:'registry-alias', alias:'...', aliasLevel:'mehadrin'} on the
+ * caller's word, without ever resolving `alias` against the real registry —
+ * so a caller could cite the registry for a level it never granted. Fixed:
+ * `alias` is now looked up in kashrut-registry.json and the registry's own
+ * recorded level must match `aliasLevel`, or the write is refused. A basis
+ * that cites a source is checked against it, not just validated for shape.
+ *
  * NOTE ON ENFORCEMENT — read this before describing this mechanism to
  * anyone: tsconfig.json excludes both `importers` and `scripts` from
  * `include`. `npm run typecheck` never type-checks any caller of this
@@ -57,6 +66,41 @@
  * getKosherLabel/kosherTypeLabel in src/utils/kosher.ts (which IS
  * typechecked), not of this one.
  */
+
+import { readFileSync } from 'node:fs';
+import { resolve, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const HERE = dirname(fileURLToPath(import.meta.url));
+const REGISTRY_PATH = resolve(HERE, '..', 'reports', 'kashrut-registry.json');
+
+/**
+ * raw alias string -> {authorityId, level}, loaded once and cached. A
+ * registry-alias basis is a caller CITING this registry as evidence — the
+ * Reviewer's B1 predicate found that citation was never actually checked:
+ * `{kind:'registry-alias', alias:'...', aliasLevel:'mehadrin'}` was accepted
+ * on the caller's word, even for an alias the registry itself records as
+ * level: null. basisSupportsLevelAssertion() below resolves `alias` against
+ * this map and requires the registry's own recorded level to match the
+ * asserted one — a basis that cites a source is now actually checked against
+ * it, not just shape-validated.
+ *
+ * Fails CLOSED, deliberately, on both an unresolvable alias and a failure to
+ * load the registry at all: this map exists specifically to gate a
+ * level-asserting write, so "cannot verify" must reject, not fall back to
+ * trusting the caller (which is the exact hole being closed).
+ */
+let aliasMapCache = null;
+function loadAliasMap() {
+  if (aliasMapCache) return aliasMapCache;
+  try {
+    const registry = JSON.parse(readFileSync(REGISTRY_PATH, 'utf8').replace(/^﻿/, ''));
+    aliasMapCache = new Map((registry.aliases ?? []).map((a) => [a.raw, a]));
+  } catch {
+    aliasMapCache = new Map();
+  }
+  return aliasMapCache;
+}
 
 /** The six fields this choke point covers. */
 export const KASHRUT_FIELDS = Object.freeze([
@@ -101,10 +145,24 @@ export function isCertifiedByAppendOnlyViolation(prior, current) {
  * True if `basis` is direct-enough textual evidence to justify writing a
  * level-asserting value. Exported so validate-data.mjs's ratchet counter can
  * be defined against the same rule this function enforces.
+ *
+ * For `registry-alias`, this does not just read `basis.aliasLevel` — it
+ * resolves `basis.alias` against the real registry and requires the
+ * registry's own recorded level to match what the caller asserted. A basis
+ * that names an alias the registry doesn't have, or that mismatches the
+ * registry's recorded level for it (e.g. claiming aliasLevel: 'mehadrin' for
+ * an alias the registry itself gave level: null — precisely the badatz
+ * inference this whole guard exists to stop), is rejected rather than
+ * trusted on the caller's word.
  */
 export function basisSupportsLevelAssertion(basis) {
   if (!basis || typeof basis.kind !== 'string') return false;
-  if (basis.kind === 'registry-alias') return basis.aliasLevel === 'mehadrin';
+  if (basis.kind === 'registry-alias') {
+    const entry = loadAliasMap().get(basis.alias);
+    if (!entry) return false; // unresolvable citation — cannot verify, so refuse rather than trust
+    if (entry.level !== basis.aliasLevel) return false; // caller's claim disagrees with what it cites
+    return entry.level === 'mehadrin';
+  }
   return basis.kind === 'certificate-document' || basis.kind === 'human-review';
 }
 

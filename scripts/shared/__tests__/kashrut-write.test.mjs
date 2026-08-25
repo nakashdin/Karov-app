@@ -5,6 +5,9 @@
 // each violation case actually performs the bad write and asserts it throws,
 // rather than asserting on the guard's source code.
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import { resolve, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { recordKashrutWrite, isCertifiedByAppendOnlyViolation, basisSupportsLevelAssertion } from '../kashrut-write.mjs';
 
 let passed = 0;
@@ -109,7 +112,7 @@ test('kosherType: rabanut_mehadrin_jerusalem with a certificate-document basis s
 
 test('kosherType: a non-level-asserting value (badatz_beit_yosef) needs no level evidence at all', () => {
   const place = { id: 'p10' };
-  recordKashrutWrite(place, 'kosherType', 'badatz_beit_yosef', { kind: 'registry-alias', alias: 'בד״ץ בית יוסף', aliasLevel: null });
+  recordKashrutWrite(place, 'kosherType', 'badatz_beit_yosef', { kind: 'registry-alias', alias: 'בד"ץ בית יוסף', aliasLevel: null });
   assert.equal(place.kosherType, 'badatz_beit_yosef');
 });
 
@@ -132,7 +135,36 @@ test('VIOLATION: kosherType mehadrin from enum-inference throws (the site-B mech
 
 test('VIOLATION: kosherType mehadrin from a registry-alias whose aliasLevel is null throws (site A itself: body named, no level)', () => {
   const place = { id: 'p12' };
-  throws(() => recordKashrutWrite(place, 'kosherType', 'mehadrin', { kind: 'registry-alias', alias: 'בד״ץ בית יוסף', aliasLevel: null }));
+  // "בד"ץ בית יוסף" is a REAL registry alias (authorityId badatz-beit-yosef, level: null) — verified
+  // against scripts/reports/kashrut-registry.json, not a made-up string.
+  throws(() => recordKashrutWrite(place, 'kosherType', 'mehadrin', { kind: 'registry-alias', alias: 'בד"ץ בית יוסף', aliasLevel: null }));
+});
+
+// Reviewer's B1 predicate: {kind:'registry-alias', alias:'בד"ץ בית יוסף', aliasLevel:'mehadrin'} was
+// previously ACCEPTED — the shape type-checks, but the registry itself records level: null for that exact
+// alias, and nothing resolved `alias` against the registry to check the claim. This is the fix, fired for
+// real against the real registry file, not asserted about the source code.
+test('VIOLATION: a registry-alias basis that MISCLAIMS the registry\'s own recorded level throws (the exact gap the Reviewer found)', () => {
+  const place = { id: 'p17' };
+  // Ground truth, read directly from the registry so this test fails loudly if the fixture data ever moves:
+  const registry = JSON.parse(readFileSync(resolve(dirname(fileURLToPath(import.meta.url)), '../../reports/kashrut-registry.json'), 'utf8'));
+  const realEntry = registry.aliases.find((a) => a.raw === 'בד"ץ בית יוסף');
+  assert.ok(realEntry, 'fixture assumption broken: "בד"ץ בית יוסף" is expected to be a real registry alias');
+  assert.equal(realEntry.level, null, 'fixture assumption broken: expected the registry to record level: null for this alias');
+
+  throws(
+    () => recordKashrutWrite(place, 'kosherType', 'mehadrin', { kind: 'registry-alias', alias: 'בד"ץ בית יוסף', aliasLevel: 'mehadrin' }),
+  );
+  assert.equal(place.kosherType, undefined);
+});
+
+test('VIOLATION: a registry-alias basis citing an alias that does not exist in the registry throws (unverifiable, fails closed)', () => {
+  const place = { id: 'p18' };
+  throws(() => recordKashrutWrite(place, 'kosherType', 'mehadrin', { kind: 'registry-alias', alias: 'a string not in the registry at all', aliasLevel: 'mehadrin' }));
+});
+
+test('basisSupportsLevelAssertion resolves a real mehadrin-level alias correctly (the honest positive case)', () => {
+  assert.equal(basisSupportsLevelAssertion({ kind: 'registry-alias', alias: 'מהדרין', aliasLevel: 'mehadrin' }), true);
 });
 
 test('VIOLATION: kosherLevel "mehadrin" written directly from enum-inference throws (would still catch the MAP if migrated here)', () => {
@@ -161,9 +193,12 @@ test('VIOLATION: writing a field outside the six kashrut fields throws', () => {
 // ── basisSupportsLevelAssertion, exported for the ratchet to reuse ─────────
 
 test('basisSupportsLevelAssertion: exact truth table', () => {
-  assert.equal(basisSupportsLevelAssertion({ kind: 'registry-alias', aliasLevel: 'mehadrin' }), true);
-  assert.equal(basisSupportsLevelAssertion({ kind: 'registry-alias', aliasLevel: null }), false);
-  assert.equal(basisSupportsLevelAssertion({ kind: 'registry-alias', aliasLevel: 'regular' }), false);
+  // 'מהדרין' and 'בד"ץ בית יוסף' are real registry aliases (verified above); a
+  // registry-alias basis is judged against the real registry, not the shape alone.
+  assert.equal(basisSupportsLevelAssertion({ kind: 'registry-alias', alias: 'מהדרין', aliasLevel: 'mehadrin' }), true);
+  assert.equal(basisSupportsLevelAssertion({ kind: 'registry-alias', alias: 'בד"ץ בית יוסף', aliasLevel: null }), false);
+  assert.equal(basisSupportsLevelAssertion({ kind: 'registry-alias', alias: 'בד"ץ בית יוסף', aliasLevel: 'mehadrin' }), false, 'claim disagrees with the registry — must be rejected, not trusted');
+  assert.equal(basisSupportsLevelAssertion({ kind: 'registry-alias', alias: 'not a real alias', aliasLevel: 'mehadrin' }), false, 'unresolvable citation — fail closed');
   assert.equal(basisSupportsLevelAssertion({ kind: 'certificate-document', url: 'x' }), true);
   assert.equal(basisSupportsLevelAssertion({ kind: 'human-review', note: 'x' }), true);
   assert.equal(basisSupportsLevelAssertion({ kind: 'enum-inference', fromKosherType: 'x' }), false);
