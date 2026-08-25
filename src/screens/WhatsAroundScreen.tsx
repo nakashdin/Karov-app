@@ -11,12 +11,13 @@ import { usePlaces } from '../hooks/usePlaces';
 import { useSharedLocation } from '../context/LocationContext';
 import { useFilters } from '../context/FiltersContext';
 import { distanceKm } from '../utils/geo';
-import { emptyFilters, PlaceType } from '../types';
+import { emptyFilters, FOOD_TYPES, PlaceType } from '../types';
 import { RootStackParamList } from '../navigation/types';
 
 type Nav = NativeStackNavigationProp<RootStackParamList>;
 
-const FOOD_TYPES: PlaceType[] = ['restaurant', 'fast_food', 'cafe', 'coffee_cart'];
+// Food types come from the one catalog (src/types/catalog.ts). The old 4-type
+// list here hid bakeries, juice bars, ice cream, wineries from "what is around me".
 
 type WhatsAroundCategory = {
   key: string;
@@ -28,7 +29,7 @@ type WhatsAroundCategory = {
 
 function categoriesFor(theme: Tokens): WhatsAroundCategory[] {
   return [
-    { key: 'food',         label: 'לאכול',        emoji: '🍽',  color: theme.categoryRestaurant, types: FOOD_TYPES },
+    { key: 'food',         label: 'לאכול',        emoji: '🍽',  color: theme.categoryRestaurant, types: [...FOOD_TYPES] },
     { key: 'synagogue',    label: 'בתי כנסת',      emoji: '🕍',  color: theme.categorySynagogue,  types: ['synagogue'] },
     { key: 'mikveh',       label: 'מקוואות',       emoji: '💧',  color: theme.categoryMikveh,     types: ['mikveh'] },
     { key: 'chabad_house', label: 'בתי חב״ד',      emoji: '🕎',  color: theme.chabad,             types: ['chabad_house'] },

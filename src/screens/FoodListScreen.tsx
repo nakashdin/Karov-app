@@ -10,7 +10,7 @@ import { makeStyles, radius, shadow, spacing, useTheme } from '../theme';
 import { usePlaces } from '../hooks/usePlaces';
 import { useSharedLocation } from '../context/LocationContext';
 import { distanceKm, sortedByDistance, withinRadius } from '../utils/geo';
-import { KosherCategory, Place, PlaceType } from '../types';
+import { isFoodType, KosherCategory, Place } from '../types';
 import { RootStackParamList } from '../navigation/types';
 import { searchPlaces } from '../data/search/searchEngine';
 import { MapView } from '../components/map/MapView';
@@ -20,7 +20,8 @@ type Nav = NativeStackNavigationProp<RootStackParamList>;
 type FoodRoute = RouteProp<RootStackParamList, 'FoodList'>;
 type FoodTab = 'all' | KosherCategory;
 
-const ALL_FOOD: PlaceType[] = ['restaurant', 'fast_food', 'cafe', 'coffee_cart', 'juice_bar', 'ice_cream_parlor', 'bakery'];
+// Food types come from the one catalog (src/types/catalog.ts) — a hand-written
+// copy here is how `winery` ended up invisible in this screen.
 
 const TABS: Array<{ key: FoodTab; label: string; emoji: string }> = [
   { key: 'all',   label: 'הכל',   emoji: '🍽️' },
@@ -50,7 +51,7 @@ export function FoodListScreen() {
   const searchRef = useRef<TextInput>(null);
 
   const allFoodPlaces = useMemo(
-    () => places.filter(p => ALL_FOOD.includes(p.type)),
+    () => places.filter((p) => isFoodType(p.type)),
     [places],
   );
 

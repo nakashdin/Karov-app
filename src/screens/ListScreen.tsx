@@ -16,7 +16,8 @@ import { useLanguage } from '../context/LanguageContext';
 import { usePlaces } from '../hooks/usePlaces';
 import { useSharedLocation, getCachedLocation } from '../context/LocationContext';
 import { useFilters } from '../context/FiltersContext';
-import { countActiveFilters, GeoPoint, PlaceSubType, PlaceType } from '../types';
+import { countActiveFilters, GeoPoint, isFoodType, PlaceSubType, PlaceType } from '../types';
+import type { Strings } from '../i18n';
 import { distanceKm, sortedByDistance, withinRadius } from '../utils/geo';
 import { categoryLabel, KOSHER_BODY_LABEL } from '../utils/kosher';
 import { RootStackParamList } from '../navigation/types';
@@ -27,12 +28,33 @@ const FAV_SYN_KEY = '@karov/favoriteSynagogue';
 type Nav = NativeStackNavigationProp<RootStackParamList>;
 type ListRoute = RouteProp<RootStackParamList, 'List'>;
 
-const EAT_SUB_TABS: Array<{ emoji: string; label: string; placeType: PlaceType | null; subType: PlaceSubType | null; eatAll?: boolean }> = [
-  { emoji: '🍽️', label: 'הכל',        placeType: null,           subType: null,              eatAll: true },
-  { emoji: '🍽️', label: 'מסעדות',    placeType: 'restaurant',   subType: null },
-  { emoji: '👨‍🍳', label: 'מסעדות שף', placeType: 'restaurant',  subType: 'chef_restaurant' },
-  { emoji: '☕', label: 'בתי קפה',    placeType: 'cafe',         subType: null },
-  { emoji: '🛒', label: 'עגלות קפה',  placeType: 'coffee_cart',  subType: null },
+/**
+ * Sub-tabs inside the food section. Labels come from `t.foodCategories` — the
+ * key here IS the i18n key, so a tab cannot ship without all five translations.
+ *
+ * Every entry in FOOD_TYPES needs a tab, otherwise its records are unreachable:
+ * bakery, juice_bar, ice_cream_parlor, fast_food and winery had none, which left
+ * 302 curated records browsable only through the top-level "all" list.
+ */
+type EatSubTab = {
+  key: keyof Strings['foodCategories'];
+  emoji: string;
+  placeType: PlaceType | null;
+  subType: PlaceSubType | null;
+  eatAll?: boolean;
+};
+
+const EAT_SUB_TABS: EatSubTab[] = [
+  { key: 'all',              emoji: '🍽️',  placeType: null,               subType: null, eatAll: true },
+  { key: 'restaurant',       emoji: '🍽️',  placeType: 'restaurant',       subType: null },
+  { key: 'chef_restaurant',  emoji: '👨‍🍳', placeType: 'restaurant',       subType: 'chef_restaurant' },
+  { key: 'cafe',             emoji: '☕',   placeType: 'cafe',             subType: null },
+  { key: 'coffee_cart',      emoji: '🛒',   placeType: 'coffee_cart',      subType: null },
+  { key: 'bakery',           emoji: '🥐',   placeType: 'bakery',           subType: null },
+  { key: 'juice_bar',        emoji: '🥤',   placeType: 'juice_bar',        subType: null },
+  { key: 'ice_cream_parlor', emoji: '🍦',   placeType: 'ice_cream_parlor', subType: null },
+  { key: 'fast_food',        emoji: '🍔',   placeType: 'fast_food',        subType: null },
+  { key: 'winery',           emoji: '🍷',   placeType: 'winery',           subType: null },
 ];
 
 export function ListScreen() {
@@ -52,8 +74,10 @@ export function ListScreen() {
     { key: 'tzaddik_grave',label: t.listCategories.tzaddik_grave,icon: 'flower-outline' },
   ];
 
-  const isEatMode = filters.eatAll || ['restaurant', 'cafe', 'coffee_cart'].includes(filters.placeType ?? '');
-  const isFoodType = filters.eatAll || ['restaurant', 'fast_food', 'cafe', 'coffee_cart', 'juice_bar', 'ice_cream_parlor', 'bakery'].includes(filters.placeType ?? '');
+  // Both derive from the one food catalog, so selecting any food sub-tab keeps
+  // the user in eat mode instead of silently falling back to the category list.
+  const isEatMode = filters.eatAll || isFoodType(filters.placeType);
+  const isFoodFilter = filters.eatAll || isFoodType(filters.placeType);
 
   const { places, loading, error, reload } = usePlaces(filters);
   const { places: basePlaces } = usePlaces(filters.placeType ? { placeType: filters.placeType } : {});
@@ -289,12 +313,12 @@ export function ListScreen() {
                 tab.subType === (filters.subType ?? null);
             return (
               <Pressable
-                key={`${tab.placeType ?? 'all'}-${tab.subType ?? 'all'}`}
+                key={tab.key}
                 style={[styles.tab, active && styles.tabActive]}
                 onPress={() => handleEatSubTab(tab)}
               >
                 <Text style={styles.tabEmoji}>{tab.emoji}</Text>
-                <Text style={[styles.tabText, active && styles.tabTextActive]}>{tab.label}</Text>
+                <Text style={[styles.tabText, active && styles.tabTextActive]}>{t.foodCategories[tab.key]}</Text>
               </Pressable>
             );
           })}
@@ -467,7 +491,7 @@ export function ListScreen() {
       <FilterSheet
         visible={sheetOpen}
         onClose={() => setSheetOpen(false)}
-        isFoodMode={isFoodType}
+        isFoodMode={isFoodFilter}
         hasLocation={sortByDistance}
       />
       <BirkatHamazonModal visible={birkatOpen} onClose={() => setBirkatOpen(false)} />
