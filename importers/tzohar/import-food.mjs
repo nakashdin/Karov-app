@@ -152,10 +152,51 @@ const noEvidenceUpdates = []; // { existing: Place } — matched, but no certifi
 const helperViolations = []; // recordKashrutWrite refusals — caught, not crashed, same pattern as
                               // apply-kashrut-authorities.mjs
 
-// Counter for new IDs
-let nextIdx = places.filter(p => p.id.startsWith('tzohar-food-')).length + 1;
+// Counter for new IDs — derived from the MAX existing index, not the count.
+// Real, live defect found by the Reviewer and fixed here: dedupe-places.mjs
+// folds duplicate records into extra.mergedFrom on the surviving id rather
+// than deleting them, which leaves holes in the tzohar-food-NNNN sequence —
+// verified today at 173 live records but a max index of 216 (43 gaps). A
+// count-based nextIdx (174) mints straight into already-occupied ids: 37 of
+// the first 69 mints collided with existing records and corrupted the
+// output (data:validate: 37 duplicate ids) before this fix. Belt-and-braces:
+// mintTzoharFoodId() below also asserts no collision at the point of mint
+// and throws rather than silently writing a duplicate, because the next
+// person who writes an id scheme for this file is one count-based line away
+// from the same bug.
+let maxIdx = 0;
+for (const p of places) {
+  const m = /^tzohar-food-(\d+)$/.exec(p.id);
+  if (m) maxIdx = Math.max(maxIdx, parseInt(m[1], 10));
+}
+let nextIdx = maxIdx + 1;
+const existingIds = new Set(places.map(p => p.id));
+
+function mintTzoharFoodId() {
+  const id = `tzohar-food-${String(nextIdx++).padStart(4, '0')}`;
+  if (existingIds.has(id)) {
+    throw new Error(
+      `mintTzoharFoodId: "${id}" already exists in the live dataset. nextIdx computation is wrong — ` +
+      'refusing to mint a colliding id rather than silently writing a duplicate.',
+    );
+  }
+  existingIds.add(id);
+  return id;
+}
 
 for (const t of food) {
+  // 3 entries in tzohar-cleaned.json carry no name at all (empty string) but
+  // DO have a certPdf — a distinct defect from the 3 unmatched businesses
+  // with no certificate at all (below). Skipped here, before matching (name
+  // matching on an empty string is meaningless anyway) and before the
+  // evidence gate (having a PDF does not fix having no name). Not fabricating
+  // a name from the PDF filename slug — that would be exactly the kind of
+  // unverified inference this project exists to avoid.
+  if (!t.name || !t.name.trim()) {
+    skipped.push({ t, reason: 'source record has no name (empty string) — not fabricating one from the certificate PDF filename' });
+    continue;
+  }
+
   const city = normCity(t.city);
   if (!city) { skipped.push({ t, reason: 'bad city data' }); continue; }
 
@@ -206,7 +247,7 @@ for (const t of food) {
   } else {
     toInsert.push({
       base: {
-        id: `tzohar-food-${String(nextIdx++).padStart(4, '0')}`,
+        id: mintTzoharFoodId(),
         name: t.name,
         type: placeType,
         cityId: city,
@@ -232,15 +273,33 @@ function applyCertPatch(place, basis) {
 }
 
 // ── Apply updates ────────────────────────────────────────────────────────────
+// "Updated" counts WRITE ATTEMPTS, not value changes — most matched records
+// already carry צהר/tzohar/independent/regular from an earlier pull, so the
+// write is a no-op. Tracked separately so a report doesn't read as "N
+// records changed" when the honest number is much smaller.
+const changeCounts = { kashrutValueChanged: 0, nonKashrutValueChanged: 0, noopWrite: 0 };
 const updatedIds = new Set();
 for (const { existing, certUrl, basis } of toUpdate) {
   if (updatedIds.has(existing.id)) continue; // guard against double-update
   updatedIds.add(existing.id);
+  const before = {
+    certifiedBy: existing.certifiedBy, kosherType: existing.kosherType, kosherAuthority: existing.kosherAuthority,
+    kosherAuthorityGroup: existing.kosherAuthorityGroup, kosherLevel: existing.kosherLevel,
+    kosherCertUrl: existing.kosherCertUrl, source: existing.source, lastVerifiedAt: existing.lastVerifiedAt,
+  };
   try {
     applyCertPatch(existing, basis);
     existing.kosherCertUrl = certUrl; // not a KASHRUT_FIELD — kosherCertUrl is evidence data, not routed through the helper
     existing.source = 'tzohar';
     existing.lastVerifiedAt = '2026-08-10';
+
+    const kashrutValueChanged = ['certifiedBy', 'kosherType', 'kosherAuthority', 'kosherAuthorityGroup', 'kosherLevel']
+      .some((f) => before[f] !== existing[f]);
+    const nonKashrutValueChanged = ['kosherCertUrl', 'source', 'lastVerifiedAt']
+      .some((f) => before[f] !== existing[f]);
+    if (kashrutValueChanged) changeCounts.kashrutValueChanged++;
+    else if (nonKashrutValueChanged) changeCounts.nonKashrutValueChanged++;
+    else changeCounts.noopWrite++;
   } catch (err) {
     helperViolations.push(`${existing.id} "${existing.name}": ${err.message}`);
   }
@@ -279,7 +338,10 @@ writeFileSync(PLACES_PATH, JSON.stringify(updated, null, 2), 'utf8');
 // ── Report ────────────────────────────────────────────────────────────────────
 console.log('\n=== Tzohar Food Import ===');
 console.log(`Total tzohar food entries        : ${food.length}`);
-console.log(`Updated existing places          : ${toUpdate.length}`);
+console.log(`Updated existing places (write attempts) : ${toUpdate.length}`);
+console.log(`  — of which kashrut fields actually changed value : ${changeCounts.kashrutValueChanged}`);
+console.log(`  — of which only non-kashrut fields changed (lastVerifiedAt etc.) : ${changeCounts.nonKashrutValueChanged}`);
+console.log(`  — of which nothing changed (already up to date) : ${changeCounts.noopWrite}`);
 console.log(`Inserted new places              : ${newPlaces.length}`);
 console.log(`Matched, no certificate to cite  : ${noEvidenceUpdates.length}  (kashrut fields left untouched, non-kashrut fields refreshed)`);
 console.log(`Skipped (bad city data / no cert for a new record) : ${skipped.length}`);
