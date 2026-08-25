@@ -27,7 +27,8 @@ import { usePlace } from '../hooks/usePlace';
 import { useSharedLocation } from '../context/LocationContext';
 import { useFavorites } from '../context/FavoritesContext';
 import { distanceKm, formatDistance } from '../utils/geo';
-import { categoryLabel, kosherTypeLabel } from '../utils/kosher';
+import { categoryLabel, getKosherLabel } from '../utils/kosher';
+import { isReviewQueueDeferred } from '../data/kashrut/reviewQueue';
 import { displayPlaceName, placeTypeLabel } from '../utils/placeType';
 import { callPhone } from '../utils/navigation';
 import { NavPickerModal } from '../components/NavPickerModal';
@@ -55,7 +56,8 @@ function buildChips(place: ReturnType<typeof usePlace>['place']): string[] {
   const chips: string[] = [];
   chips.push(placeTypeLabel[place.type]);
   if (place.category)   chips.push(categoryLabel[place.category]);
-  if (place.kosherType) chips.push(kosherTypeLabel[place.kosherType]);
+  const kosherLabel = getKosherLabel(place);
+  if (kosherLabel) chips.push(kosherLabel);
   if (place.certifiedBy) chips.push(place.certifiedBy);
   if (place.nusach) chips.push(`נוסח ${place.nusach}`);
   if (place.tags)   chips.push(...place.tags.filter(t => !(t in placeTypeLabel)));
@@ -141,6 +143,7 @@ export function PlaceDetailScreen() {
 
   const dist     = location ? distanceKm(location, place.location) : null;
   const chips    = buildChips(place);
+  const kosherLabel = getKosherLabel(place);
   const accent   = theme.primary;
   const mapCenter: [number, number] = [place.location.latitude, place.location.longitude];
 
@@ -429,10 +432,24 @@ export function PlaceDetailScreen() {
               <DetailRow
                 icon="shield-checkmark-outline"
                 label="כשרות"
-                value={[place.certifiedBy, place.kosherType ? kosherTypeLabel[place.kosherType] : null].filter(Boolean).join(' · ') || '—'}
+                value={kosherLabel ?? '—'}
                 accent={accent}
-                empty={!place.certifiedBy && !place.kosherType}
+                empty={!kosherLabel}
               />
+              {place.certifiedBy ? (
+                <DetailRow
+                  icon="chatbox-outline"
+                  label={t.detail.attributedSource}
+                  value={
+                    isReviewQueueDeferred(place.certifiedBy)
+                      ? `"${place.certifiedBy}" — ${t.detail.notVerifiedAgainstRegistry}`
+                      : `"${place.certifiedBy}"`
+                  }
+                  accent={accent}
+                  multiline
+                  quiet
+                />
+              ) : null}
               {place.kosherCertUrl ? (
                 <DetailRow
                   icon="document-text-outline"
@@ -713,7 +730,7 @@ function QuickAction({
 }
 
 function DetailRow({
-  icon, label, value, accent, tappable, onPress, link, multiline, empty,
+  icon, label, value, accent, tappable, onPress, link, multiline, empty, quiet,
 }: {
   icon: keyof typeof Ionicons.glyphMap;
   label: string;
@@ -724,14 +741,19 @@ function DetailRow({
   link?: boolean;
   multiline?: boolean;
   empty?: boolean;
+  /** Visually subordinate — for supplementary information (e.g. an
+   *  attributed source quote) that shouldn't compete with the row above it.
+   *  Same muted treatment as `empty`, but the value is real, not a placeholder. */
+  quiet?: boolean;
 }) {
   const theme = useTheme();
   const drStyles = useDrStyles();
+  const muted = empty || quiet;
   const inner = (
     <View style={drStyles.row}>
       {/* Icon box */}
-      <View style={[drStyles.iconBox, { backgroundColor: empty ? theme.border : accent + '18' }]}>
-        <Ionicons name={icon} size={18} color={empty ? theme.textMuted : accent} />
+      <View style={[drStyles.iconBox, { backgroundColor: muted ? theme.border : accent + '18' }]}>
+        <Ionicons name={icon} size={18} color={muted ? theme.textMuted : accent} />
       </View>
 
       {/* Text */}
@@ -740,8 +762,8 @@ function DetailRow({
         <Text
           style={[
             drStyles.value,
-            empty && drStyles.valuePlaceholder,
-            link && !empty && { color: accent, textDecorationLine: 'underline' },
+            muted && drStyles.valuePlaceholder,
+            link && !muted && { color: accent, textDecorationLine: 'underline' },
           ]}
           numberOfLines={multiline ? undefined : 2}
         >

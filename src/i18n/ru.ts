@@ -70,6 +70,8 @@ export const ru = {
     certifiedBy: 'Сертификат кашрута',
     validUntil: 'Действителен до',
     certExpired: 'Срок действия сертификата истёк',
+    attributedSource: 'Что сообщил источник',
+    notVerifiedAgainstRegistry: 'Не проверено по нашему реестру органов кашрута',
     lastVerified: 'Последняя проверка',
     buriedPerson: 'Похоронен здесь',
     approxLocation: 'Приблизительное местоположение по городу',

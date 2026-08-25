@@ -70,6 +70,8 @@ export const en = {
     certifiedBy: 'Kosher certificate',
     validUntil: 'Valid until',
     certExpired: 'Kosher certificate expired',
+    attributedSource: 'What the source reported',
+    notVerifiedAgainstRegistry: 'Not verified against our authority registry',
     lastVerified: 'Last verified',
     buriedPerson: 'Buried here',
     approxLocation: 'Approximate location by city',

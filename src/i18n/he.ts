@@ -70,6 +70,8 @@ export const he = {
     certifiedBy: 'תעודת כשרות',
     validUntil: 'בתוקף עד',
     certExpired: 'תעודת כשרות פגה',
+    attributedSource: 'מה שנמסר במקור',
+    notVerifiedAgainstRegistry: 'לא אומת מול רשימת גופי הכשרות שלנו',
     lastVerified: 'אומת לאחרונה',
     buriedPerson: 'קבור כאן',
     approxLocation: 'מיקום משוער לפי עיר',

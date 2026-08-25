@@ -607,7 +607,7 @@ export const KASHRUT_AUTHORITIES: readonly KashrutAuthority[] = [
   },
   {
     id: "badatz-beit-yosef",
-    nameHe: "בד\"ץ בית יוסף",
+    nameHe: "בד״ץ בית יוסף",
     nameEn: "Badatz Beit Yosef",
     group: "badatz",
     kind: "badatz",
@@ -615,7 +615,7 @@ export const KASHRUT_AUTHORITIES: readonly KashrutAuthority[] = [
   },
   {
     id: "badatz-edah-hachareidis",
-    nameHe: "בד\"ץ העדה החרדית",
+    nameHe: "בד״ץ העדה החרדית",
     nameEn: "Badatz Edah HaChareidis",
     group: "badatz",
     kind: "badatz",
@@ -623,7 +623,7 @@ export const KASHRUT_AUTHORITIES: readonly KashrutAuthority[] = [
   },
   {
     id: "badatz-agudat-yisrael",
-    nameHe: "בד\"ץ אגודת ישראל",
+    nameHe: "בד״ץ אגודת ישראל",
     nameEn: "Badatz Agudat Yisrael",
     group: "badatz",
     kind: "badatz",
@@ -631,7 +631,7 @@ export const KASHRUT_AUTHORITIES: readonly KashrutAuthority[] = [
   },
   {
     id: "badatz-chatam-sofer-petah-tikva",
-    nameHe: "בד\"ץ חתם סופר פתח תקווה",
+    nameHe: "בד״ץ חתם סופר פתח תקווה",
     nameEn: "Badatz Chatam Sofer Petah Tikva",
     group: "badatz",
     kind: "badatz",
@@ -655,7 +655,7 @@ export const KASHRUT_AUTHORITIES: readonly KashrutAuthority[] = [
   },
   {
     id: "rav-rubin",
-    nameHe: "בד\"ץ הרב רובין",
+    nameHe: "בד״ץ הרב רובין",
     nameEn: "Badatz Rav Rubin",
     group: "badatz",
     kind: "private-rav",

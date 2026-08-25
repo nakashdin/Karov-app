@@ -1,5 +1,6 @@
 import type { Tokens } from '../theme';
 import { KosherCategory, KosherType, Place } from '../types';
+import { getKashrutAuthority } from '../data/kashrut/authorities';
 
 /** Hebrew label for a food category. */
 export const categoryLabel: Record<KosherCategory, string> = {
@@ -20,8 +21,9 @@ export const categoryColorFor = (theme: Tokens): Record<KosherCategory, string> 
   parve: theme.parve,
 });
 
-/** Hebrew label for a kosher certification type. */
-export const kosherTypeLabel: Record<KosherType, string> = {
+/** Hebrew label for a kosher certification type. Module-private: consume it
+ *  through `getKosherLabel`, which decides — nothing else may render it directly. */
+const kosherTypeLabel: Record<KosherType, string> = {
   badatz_beit_yosef: 'בד״ץ בית יוסף',
   badatz_edah: 'בד״ץ העדה החרדית',
   badatz_rubin: 'בד״ץ הרב רובין',
@@ -112,9 +114,24 @@ export function groupedKosherTypes(rawTypes: Set<KosherType>): KosherType[] {
   return result;
 }
 
-/** Human-readable kosher label for a place card, using the new structured fields.
- *  Falls back to kosherTypeLabel if new fields are absent. */
-export function getKosherLabel(place: Pick<Place, 'kosherType' | 'kosherLevel' | 'kosherAuthorityGroup' | 'kosherAuthority'>): string | null {
+/**
+ * Human-readable kosher label for a place — the single function that decides
+ * what kashrut text a user sees, anywhere in the app.
+ *
+ * Precedence: `certifierId` (the registry — a specific, resolved body) wins
+ * over everything below it. `certifierId === null` ("level known, body not
+ * identified") and `certifierId` absent (never resolved) MUST fall through
+ * to the exact same code path — they are indistinguishable to a user and
+ * must be indistinguishable here. Do not special-case null; a null-specific
+ * branch is one careless edit away from blanking every unresolved-body
+ * record at once.
+ */
+export function getKosherLabel(place: Pick<Place, 'kosherType' | 'kosherLevel' | 'kosherAuthorityGroup' | 'kosherAuthority' | 'certifierId'>): string | null {
+  if (place.certifierId != null) {
+    const authority = getKashrutAuthority(place.certifierId);
+    if (authority) return authority.nameHe;
+  }
+
   const { kosherLevel, kosherAuthorityGroup, kosherAuthority } = place;
 
   // Use structured fields when available

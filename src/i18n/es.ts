@@ -70,6 +70,8 @@ export const es = {
     certifiedBy: 'Certificado kosher',
     validUntil: 'Válido hasta',
     certExpired: 'Certificado kosher caducado',
+    attributedSource: 'Lo que reportó la fuente',
+    notVerifiedAgainstRegistry: 'No verificado con nuestro registro de autoridades',
     lastVerified: 'Última verificación',
     buriedPerson: 'Enterrado aquí',
     approxLocation: 'Ubicación aproximada por ciudad',

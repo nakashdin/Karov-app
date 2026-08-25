@@ -70,6 +70,8 @@ export const fr = {
     certifiedBy: 'Certificat cacher',
     validUntil: "Valable jusqu'au",
     certExpired: 'Certificat cacher expiré',
+    attributedSource: 'Ce que la source a indiqué',
+    notVerifiedAgainstRegistry: "Non vérifié par rapport à notre registre d'autorités",
     lastVerified: 'Dernière vérification',
     buriedPerson: 'Enterré ici',
     approxLocation: 'Emplacement approximatif par ville',
