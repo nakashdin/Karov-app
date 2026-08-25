@@ -270,6 +270,15 @@ function applyCertPatch(place, basis) {
   recordKashrutWrite(place, 'kosherAuthority', 'tzohar', basis);
   recordKashrutWrite(place, 'kosherAuthorityGroup', 'independent', basis);
   recordKashrutWrite(place, 'kosherLevel', 'regular', basis); // never level-asserting — 'regular' is never guarded
+  // certifierId was the actual cause of the freeTextCertifierUnmapped ratchet
+  // regression that a proposed apply-before-import ordering rule would not
+  // have fixed — the counter was measuring this script's own omission (it
+  // wrote certifiedBy and kosherAuthority:'tzohar' but never certifierId),
+  // not stale global state, so no scheduling rule could have closed it.
+  // Registry-confirmed clean: alias 'צהר' -> authorityId 'tzohar', not
+  // reviewQueue-deferred, authority 'tzohar' registered. Not level-asserting,
+  // so the choke point's level guard never applies to this write.
+  recordKashrutWrite(place, 'certifierId', 'tzohar', basis);
 }
 
 // ── Apply updates ────────────────────────────────────────────────────────────
@@ -284,7 +293,7 @@ for (const { existing, certUrl, basis } of toUpdate) {
   updatedIds.add(existing.id);
   const before = {
     certifiedBy: existing.certifiedBy, kosherType: existing.kosherType, kosherAuthority: existing.kosherAuthority,
-    kosherAuthorityGroup: existing.kosherAuthorityGroup, kosherLevel: existing.kosherLevel,
+    kosherAuthorityGroup: existing.kosherAuthorityGroup, kosherLevel: existing.kosherLevel, certifierId: existing.certifierId,
     kosherCertUrl: existing.kosherCertUrl, source: existing.source, lastVerifiedAt: existing.lastVerifiedAt,
   };
   try {
@@ -293,7 +302,7 @@ for (const { existing, certUrl, basis } of toUpdate) {
     existing.source = 'tzohar';
     existing.lastVerifiedAt = '2026-08-10';
 
-    const kashrutValueChanged = ['certifiedBy', 'kosherType', 'kosherAuthority', 'kosherAuthorityGroup', 'kosherLevel']
+    const kashrutValueChanged = ['certifiedBy', 'kosherType', 'kosherAuthority', 'kosherAuthorityGroup', 'kosherLevel', 'certifierId']
       .some((f) => before[f] !== existing[f]);
     const nonKashrutValueChanged = ['kosherCertUrl', 'source', 'lastVerifiedAt']
       .some((f) => before[f] !== existing[f]);
