@@ -8,7 +8,7 @@
  */
 import type { NormalizedPlace } from '../shared/types.ts';
 import { dedupeById, fetchLocalities, fetchOverpass, fillRate, isMain } from '../shared/utils.ts';
-import { CATEGORY_FILES, rebuildAppDataset, writeJson } from '../shared/database.ts';
+import { CATEGORY_FILES, formatRebuildReport, planAppDatasetRebuild, writeJson } from '../shared/database.ts';
 import { transformRestaurant } from './transform.ts';
 import { validateRestaurants } from './validate.ts';
 
@@ -45,8 +45,14 @@ export async function importRestaurants(): Promise<NormalizedPlace[]> {
 if (isMain(import.meta.url)) {
   importRestaurants()
     .then(() => {
-      const r = rebuildAppDataset();
-      console.log(`App dataset rebuilt: ${r.places} places · ${r.cities} cities`);
+      // This used to call rebuildAppDataset(), which reconstructed
+      // places.osm.json from the per-type category files and therefore deleted
+      // every record written by any other importer (measured: 60.8% of the
+      // dataset). The import above writes ONLY its own category file; the live
+      // dataset is untouched. See docs/DATA_ARCHITECTURE.md §6.
+      const plan = planAppDatasetRebuild();
+      console.log('\nLive dataset NOT modified. A legacy rebuild would have:\n');
+      console.log(formatRebuildReport(plan));
     })
     .catch((e) => {
       console.error('Failed:', e);
