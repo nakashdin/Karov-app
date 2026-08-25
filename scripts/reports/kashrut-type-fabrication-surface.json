@@ -1,0 +1,4029 @@
+{
+  "part1": {
+    "golda": {
+      "liveCount": 38,
+      "sourceScript": "scripts/import-golda.mjs",
+      "helper": "mapKosherType() lines 114-123",
+      "breakdown": {
+        "badatz_beit_yosef|∅|certUrl:false|srcUrl:false": {
+          "count": 22,
+          "sample": [
+            "golda-9fd9706a",
+            "golda-26f62510",
+            "golda-757e7cdc",
+            "golda-1774fb5e",
+            "golda-038e75bd",
+            "golda-94f06549",
+            "golda-b8b367cc",
+            "golda-7d983562"
+          ]
+        },
+        "mehadrin|∅|certUrl:false|srcUrl:false": {
+          "count": 10,
+          "sample": [
+            "golda-bd46421f",
+            "golda-d5eead7a",
+            "golda-7861d141",
+            "golda-4b2ab2c5",
+            "golda-82d4b21f",
+            "golda-69079523",
+            "golda-098ce9dd",
+            "golda-ed0e8ff8"
+          ]
+        },
+        "kosher|בד\"צ חולון|certUrl:false|srcUrl:false": {
+          "count": 1,
+          "sample": [
+            "golda-1ed09f74"
+          ]
+        },
+        "rabanut|∅|certUrl:false|srcUrl:false": {
+          "count": 2,
+          "sample": [
+            "golda-65873143",
+            "golda-122385ae"
+          ]
+        },
+        "rabanut|חלב ישראל|certUrl:false|srcUrl:false": {
+          "count": 1,
+          "sample": [
+            "golda-ff986d68"
+          ]
+        },
+        "kosher|∅|certUrl:false|srcUrl:false": {
+          "count": 1,
+          "sample": [
+            "golda-04a28946"
+          ]
+        },
+        "rabanut_mekomi|רבנות כפר סבא|certUrl:false|srcUrl:false": {
+          "count": 1,
+          "sample": [
+            "golda-996cf4b3"
+          ]
+        }
+      }
+    },
+    "humuseliyahu": {
+      "liveCount": 0,
+      "sourceScript": "scripts/import-humuseliyahu.mjs",
+      "helper": "mapKashrut() lines 17-27",
+      "note": "ZERO live records under this script's own id scheme (humuseliyahu-<md5>). Its output does not appear in places.osm.json or restaurants.osm.json. The bug is real in the script but has no currently-live affected records."
+    },
+    "aromaV2": {
+      "liveIdRangeCount": 0,
+      "sourceScript": "scripts/import-aroma-v2.mjs",
+      "helper": "certToKosherType() lines 82-86",
+      "note": "makeId() returns a bare incrementing integer starting at idCounter=9400000 (line 77). Zero food records fall in [9400000,9500000), and zero numeric-id food records anywhere are named ארומה. The script writes to places.osm.json as one of its two targets (PPATH, line 693), so this is not a wrong-file assumption — its output simply is not present in current production data under either write path. The 104 live \"ארומה\" records instead come from a different script — see aromaChainsResearch below, found by searching the data directly rather than trusting the importer-side list was complete."
+    },
+    "rebar": {
+      "liveCount": 55,
+      "sourceScript": "scripts/import-rebar.mjs",
+      "helper": "buildPlace() line 106, hardcoded, no per-branch input",
+      "breakdown": {
+        "mehadrin|∅|certUrl:false|srcUrl:false": {
+          "count": 53,
+          "sample": [
+            "rebar-d80aad31",
+            "rebar-a28c1ea4",
+            "rebar-a13c88d8",
+            "rebar-9d7d79ac",
+            "rebar-8b7c4c33",
+            "rebar-ca53bc00",
+            "rebar-0edef232",
+            "rebar-1cfb4934"
+          ]
+        },
+        "∅|∅|certUrl:false|srcUrl:false": {
+          "count": 2,
+          "sample": [
+            "rebar-bs-central-station",
+            "rebar-ramat-gan-marom-nave"
+          ]
+        }
+      }
+    },
+    "coffeetrail": {
+      "liveCount": 81,
+      "sourceScript": "importers/coffee-carts/scrape-coffeetrail.mjs",
+      "helper": "inferKosherType() lines 125-132",
+      "breakdown": {
+        "mehadrin|רבנות הגליל התחתון|certUrl:false|srcUrl:true": {
+          "count": 1,
+          "sample": [
+            "coffeetrail-shisho-caffe"
+          ]
+        },
+        "mehadrin|רבנות עמק יזרעאל|certUrl:false|srcUrl:true": {
+          "count": 1,
+          "sample": [
+            "coffeetrail-al-havadi"
+          ]
+        },
+        "mehadrin|בד\"ץ מהדרין|certUrl:false|srcUrl:true": {
+          "count": 1,
+          "sample": [
+            "coffeetrail-nina"
+          ]
+        },
+        "mehadrin|הרבנות המקומית פתח תקווה|certUrl:false|srcUrl:true": {
+          "count": 1,
+          "sample": [
+            "coffeetrail-caffe-lago"
+          ]
+        },
+        "badatz_beit_yosef|בד\"צ בית יוסף|certUrl:false|srcUrl:true": {
+          "count": 1,
+          "sample": [
+            "coffeetrail-gana-park-rg"
+          ]
+        },
+        "badatz_beit_yosef|בד'צ בית יוסף|certUrl:false|srcUrl:true": {
+          "count": 1,
+          "sample": [
+            "coffeetrail-ingale"
+          ]
+        },
+        "mehadrin|רבנות ענב|certUrl:false|srcUrl:true": {
+          "count": 1,
+          "sample": [
+            "coffeetrail-havaia"
+          ]
+        },
+        "mehadrin|הרבנות המקומית כשרות מהדרין|certUrl:false|srcUrl:true": {
+          "count": 1,
+          "sample": [
+            "coffeetrail-agalol"
+          ]
+        },
+        "mehadrin|הרבנות האזורית|certUrl:false|srcUrl:true": {
+          "count": 1,
+          "sample": [
+            "coffeetrail-katerina"
+          ]
+        },
+        "mehadrin|המועצה המקומית|certUrl:false|srcUrl:true": {
+          "count": 1,
+          "sample": [
+            "coffeetrail-lucche-coffee"
+          ]
+        },
+        "mehadrin|∅|certUrl:false|srcUrl:true": {
+          "count": 4,
+          "sample": [
+            "coffeetrail-mchtipatly212",
+            "coffeetrail-cafe-barkay",
+            "coffeetrail-itamar-coffee",
+            "coffeetrail-karney-hitin"
+          ]
+        },
+        "mehadrin|רבנות מטה יהודה|certUrl:false|srcUrl:true": {
+          "count": 1,
+          "sample": [
+            "coffeetrail-mesheksegal"
+          ]
+        },
+        "mehadrin|רבנות מועצת שפיר|certUrl:false|srcUrl:true": {
+          "count": 2,
+          "sample": [
+            "coffeetrail-hkafelyadhnahal",
+            "coffeetrail-karamela"
+          ]
+        },
+        "mehadrin|רבנות איזורית מרחבים|certUrl:false|srcUrl:true": {
+          "count": 1,
+          "sample": [
+            "coffeetrail-emanuel"
+          ]
+        },
+        "mehadrin|רבנות שדות נגב|certUrl:false|srcUrl:true": {
+          "count": 1,
+          "sample": [
+            "coffeetrail-galita"
+          ]
+        },
+        "rabanut_mekomi|הרבנות האזורית|certUrl:false|srcUrl:true": {
+          "count": 5,
+          "sample": [
+            "coffeetrail-mona-cafe",
+            "coffeetrail-rozale",
+            "coffeetrail-berta-coffe-tivon",
+            "coffeetrail-malla",
+            "coffeetrail-coffeejoni"
+          ]
+        },
+        "rabanut_mekomi|רבנות גליל תחתון|certUrl:false|srcUrl:true": {
+          "count": 1,
+          "sample": [
+            "coffeetrail-moishe"
+          ]
+        },
+        "rabanut_mekomi|הרבנות האיזורית|certUrl:false|srcUrl:true": {
+          "count": 1,
+          "sample": [
+            "coffeetrail-nelly"
+          ]
+        },
+        "rabanut_mekomi|הרבנות המקומית|certUrl:false|srcUrl:true": {
+          "count": 37,
+          "sample": [
+            "coffeetrail-florin",
+            "coffeetrail-siftach-efrat",
+            "coffeetrail-barbara",
+            "coffeetrail-stella",
+            "coffeetrail-la-bustan-cafe",
+            "coffeetrail-cafe-moize",
+            "coffeetrail-cafe-flora-farm",
+            "coffeetrail-blooms"
+          ]
+        },
+        "rabanut_mekomi|רבנות ירושלים|certUrl:false|srcUrl:true": {
+          "count": 1,
+          "sample": [
+            "coffeetrail-reama"
+          ]
+        },
+        "rabanut_mekomi|הרבנות יבנה|certUrl:false|srcUrl:true": {
+          "count": 1,
+          "sample": [
+            "coffeetrail-cafe-batsheva"
+          ]
+        },
+        "rabanut_mekomi|רבנות מועצת מטה בנימין|certUrl:false|srcUrl:true": {
+          "count": 1,
+          "sample": [
+            "coffeetrail-field"
+          ]
+        },
+        "rabanut_mekomi|הרבנות הדתית כרמיאל|certUrl:false|srcUrl:true": {
+          "count": 1,
+          "sample": [
+            "coffeetrail-cafe-smadar"
+          ]
+        },
+        "rabanut_mekomi|רב הקיבוץ|certUrl:false|srcUrl:true": {
+          "count": 1,
+          "sample": [
+            "coffeetrail-dusa"
+          ]
+        },
+        "rabanut_mekomi|ראש העין|certUrl:false|srcUrl:true": {
+          "count": 1,
+          "sample": [
+            "coffeetrail-caffe-lago-rosh-haayin"
+          ]
+        },
+        "rabanut_mekomi|הרבנות|certUrl:false|srcUrl:true": {
+          "count": 1,
+          "sample": [
+            "coffeetrail-gitita"
+          ]
+        },
+        "rabanut_mekomi|הרבנות המקומית יבנה|certUrl:false|srcUrl:true": {
+          "count": 1,
+          "sample": [
+            "coffeetrail-grypo"
+          ]
+        },
+        "rabanut_mekomi|רבנות מודיעין|certUrl:false|srcUrl:true": {
+          "count": 1,
+          "sample": [
+            "coffeetrail-tanto"
+          ]
+        },
+        "rabanut_mekomi|רבנות באר טוביה|certUrl:false|srcUrl:true": {
+          "count": 1,
+          "sample": [
+            "coffeetrail-garden-cy"
+          ]
+        },
+        "rabanut_mekomi|רבנות המועצה האזורית|certUrl:false|srcUrl:true": {
+          "count": 2,
+          "sample": [
+            "coffeetrail-leahlecafe",
+            "coffeetrail-bari"
+          ]
+        },
+        "rabanut_mekomi|רבנות מקומית נחל שורק|certUrl:false|srcUrl:true": {
+          "count": 1,
+          "sample": [
+            "coffeetrail-olivan"
+          ]
+        },
+        "rabanut_mekomi|הרבנות המקומית חוף השרון|certUrl:false|srcUrl:true": {
+          "count": 1,
+          "sample": [
+            "coffeetrail-cafe-ve-yam"
+          ]
+        },
+        "rabanut_mekomi|הרבנות המקומית צופים|certUrl:false|srcUrl:true": {
+          "count": 1,
+          "sample": [
+            "coffeetrail-aviyula"
+          ]
+        },
+        "rabanut_mekomi|∅|certUrl:false|srcUrl:true": {
+          "count": 2,
+          "sample": [
+            "coffeetrail-galita-coffee-cart",
+            "coffeetrail-kedma-coffee"
+          ]
+        },
+        "rabanut_mekomi|רבנות מרום הגליל|certUrl:false|srcUrl:true": {
+          "count": 1,
+          "sample": [
+            "coffeetrail-osha"
+          ]
+        }
+      }
+    },
+    "aromaChainsResearch": {
+      "liveCount": 104,
+      "sourceScript": "scripts/apply-chains-research.mjs (NOT import-aroma-v2.mjs — found via data-side search per ask #2, not previously identified in Section A)",
+      "breakdown": {
+        "mehadrin|מהדרין|certUrl:false|srcUrl:false": {
+          "count": 23,
+          "sample": [
+            "manual-aroma-beit-shemesh-big",
+            "manual-aroma-hadassah",
+            "manual-aroma-shaare-zedek",
+            "manual-aroma-beit-hadfus",
+            "manual-aroma-yafo-jerusalem",
+            "manual-aroma-modiin-moriya",
+            "manual-aroma-mahane-yehuda",
+            "manual-aroma-eilat-big"
+          ]
+        },
+        "tzohar|צהר|certUrl:true|srcUrl:false": {
+          "count": 2,
+          "sample": [
+            "manual-aroma-jerusalem-arena",
+            "manual-aroma-bat-yam-rothschild"
+          ]
+        },
+        "rabanut|ארגון רבני צהר|certUrl:false|srcUrl:false": {
+          "count": 2,
+          "sample": [
+            "manual-aroma-haifa-lev-hamifratz",
+            "manual-aroma-bilu-center"
+          ]
+        },
+        "rabanut_mekomi|רבנות|certUrl:false|srcUrl:false": {
+          "count": 75,
+          "sample": [
+            "manual-aroma-hebrew-uni-givat-ram",
+            "manual-aroma-maaleh-adumim",
+            "manual-aroma-modiin-azrieli",
+            "manual-aroma-emek-refaim",
+            "manual-aroma-hadar-jerusalem",
+            "manual-aroma-malha-jerusalem",
+            "manual-aroma-mamilla",
+            "manual-aroma-talpiot-hatasia"
+          ]
+        },
+        "mehadrin|רבנות|certUrl:false|srcUrl:false": {
+          "count": 1,
+          "sample": [
+            "manual-aroma-tirat-carmel"
+          ]
+        },
+        "∅|רבנות|certUrl:false|srcUrl:false": {
+          "count": 1,
+          "sample": [
+            "manual-aroma-tlv-azrieli"
+          ]
+        }
+      },
+      "flaggedSubset": "kosherType=mehadrin with certifiedBy literally the word \"מהדrin\" (a level word, not a body) — self-referential, zero identity evidence, same failure class as the 4 known mapping-helper bugs, in a 6th script not previously flagged."
+    }
+  },
+  "part2": {
+    "claimImplyingKosherTypes": [
+      "rabanut_tel_aviv",
+      "rabanut_mehadrin",
+      "rabanut_mehadrin_jerusalem",
+      "mehadrin",
+      "badatz_beit_yosef",
+      "badatz_edah",
+      "badatz_kehilot",
+      "badatz_rubin",
+      "rav_machpud",
+      "chatam_sofer",
+      "tzohar"
+    ],
+    "fullyUnsupportedCount": 323,
+    "fullyUnsupportedByKosherType": {
+      "mehadrin": 211,
+      "badatz_beit_yosef": 50,
+      "rabanut_mehadrin": 14,
+      "rabanut_tel_aviv": 42,
+      "tzohar": 1,
+      "badatz_rubin": 2,
+      "rabanut_mehadrin_jerusalem": 1,
+      "badatz_edah": 1,
+      "badatz_kehilot": 1
+    },
+    "hasSourceUrlOnlyCount": 37,
+    "note": "fullyUnsupported = claim-implying kosherType AND no certifiedBy AND no kosherCertUrl AND no sourceUrl AND no certificateValidUntil. This is a superset of the 5 known-bug scripts — it is computed purely from current field values, independent of which script wrote them, per ask #2."
+  },
+  "part3": {
+    "certBackedCount_certUrlAndDate": 164,
+    "certBackedCount_certUrlOnly": 180,
+    "aliasResolvedCount": 910,
+    "aliasResolvedNotAlsoCertBackedCount": 746,
+    "aliasResolvedWithoutCertUrl": 730,
+    "unionProtectedCount": 910,
+    "reviewerClaimedBaseline": {
+      "certBacked": 180,
+      "aliasResolved": 730,
+      "total": 910
+    },
+    "reconciled": "Reviewer's \"certificate-backed\" = kosherCertUrl present (180), not kosherCertUrl AND certificateValidUntil both present (164, my first-pass stricter definition — 16 records have a cert URL but no successfully-parsed date). Under the Reviewer's definition: 180 cert-backed + 730 alias-resolved-without-a-cert-url = 910 exactly, matching their baseline precisely."
+  },
+  "part4": {
+    "totalSimulated": 323,
+    "optionA_labelUnchangedFromTodayCount": 319,
+    "optionA_note": "For every in-scope record, kosherType survives option A untouched, so getKosherLabel falls through to the SAME kosherTypeLabel value it shows today — option A alone changes nothing the user sees for this exact set, confirming Section E's finding at full scale, not just the 5 sampled bugs.",
+    "optionB_labelBecomesNullCount": 323,
+    "optionB_note": "Option B (clear kosherType too) makes getKosherLabel return null and the detail-screen line render \"—\" for every in-scope record — the record shows no kashrut label of any kind, not a downgraded-but-still-present one.",
+    "samples": [
+      {
+        "id": "osm-node-5221319346",
+        "name": "בורגרים",
+        "cityId": "קרית שמונה",
+        "currentKosherType": "mehadrin",
+        "currentCertifiedBy": null,
+        "today": {
+          "kosherLabel": "מהדרין",
+          "detailLine": "מהדרין"
+        },
+        "optionA_clearDerivedFieldsOnly": {
+          "kosherLabel": "מהדרין",
+          "detailLine": "מהדרין"
+        },
+        "optionB_clearKosherTypeToo": {
+          "kosherLabel": null,
+          "detailLine": "—"
+        }
+      },
+      {
+        "id": "osm-node-5299442042",
+        "name": "פיצה בריבוע",
+        "cityId": "כרמיאל",
+        "currentKosherType": "mehadrin",
+        "currentCertifiedBy": null,
+        "today": {
+          "kosherLabel": "מהדרין",
+          "detailLine": "מהדרין"
+        },
+        "optionA_clearDerivedFieldsOnly": {
+          "kosherLabel": "מהדרין",
+          "detailLine": "מהדרין"
+        },
+        "optionB_clearKosherTypeToo": {
+          "kosherLabel": null,
+          "detailLine": "—"
+        }
+      },
+      {
+        "id": "osm-node-5299594181",
+        "name": "אסתריקה",
+        "cityId": "קרית שמונה",
+        "currentKosherType": "mehadrin",
+        "currentCertifiedBy": null,
+        "today": {
+          "kosherLabel": "מהדרין",
+          "detailLine": "מהדרין"
+        },
+        "optionA_clearDerivedFieldsOnly": {
+          "kosherLabel": "מהדרין",
+          "detailLine": "מהדרין"
+        },
+        "optionB_clearKosherTypeToo": {
+          "kosherLabel": null,
+          "detailLine": "—"
+        }
+      },
+      {
+        "id": "osm-node-12578972524",
+        "name": "Breadcafe",
+        "cityId": "בני ברק",
+        "currentKosherType": "mehadrin",
+        "currentCertifiedBy": null,
+        "today": {
+          "kosherLabel": "מהדרין",
+          "detailLine": "מהדרין"
+        },
+        "optionA_clearDerivedFieldsOnly": {
+          "kosherLabel": "מהדרין",
+          "detailLine": "מהדרין"
+        },
+        "optionB_clearKosherTypeToo": {
+          "kosherLabel": null,
+          "detailLine": "—"
+        }
+      },
+      {
+        "id": "osm-node-13426948731",
+        "name": "עדה",
+        "cityId": "ראש פינה",
+        "currentKosherType": "mehadrin",
+        "currentCertifiedBy": null,
+        "today": {
+          "kosherLabel": "מהדרין",
+          "detailLine": "מהדרין"
+        },
+        "optionA_clearDerivedFieldsOnly": {
+          "kosherLabel": "מהדרין",
+          "detailLine": "מהדרין"
+        },
+        "optionB_clearKosherTypeToo": {
+          "kosherLabel": null,
+          "detailLine": "—"
+        }
+      },
+      {
+        "id": "golda-9fd9706a",
+        "name": "גלידה גולדה",
+        "cityId": "אריאל",
+        "currentKosherType": "badatz_beit_yosef",
+        "currentCertifiedBy": null,
+        "today": {
+          "kosherLabel": "בד״ץ בית יוסף",
+          "detailLine": "בד״ץ בית יוסף"
+        },
+        "optionA_clearDerivedFieldsOnly": {
+          "kosherLabel": "בד״ץ בית יוסף",
+          "detailLine": "בד״ץ בית יוסף"
+        },
+        "optionB_clearKosherTypeToo": {
+          "kosherLabel": null,
+          "detailLine": "—"
+        }
+      },
+      {
+        "id": "golda-26f62510",
+        "name": "גלידה גולדה",
+        "cityId": "ashdod",
+        "currentKosherType": "badatz_beit_yosef",
+        "currentCertifiedBy": null,
+        "today": {
+          "kosherLabel": "בד״ץ בית יוסף",
+          "detailLine": "בד״ץ בית יוסף"
+        },
+        "optionA_clearDerivedFieldsOnly": {
+          "kosherLabel": "בד״ץ בית יוסף",
+          "detailLine": "בד״ץ בית יוסף"
+        },
+        "optionB_clearKosherTypeToo": {
+          "kosherLabel": null,
+          "detailLine": "—"
+        }
+      },
+      {
+        "id": "golda-757e7cdc",
+        "name": "גלידה גולדה",
+        "cityId": "ashkelon",
+        "currentKosherType": "badatz_beit_yosef",
+        "currentCertifiedBy": null,
+        "today": {
+          "kosherLabel": "בד״ץ בית יוסף",
+          "detailLine": "בד״ץ בית יוסף"
+        },
+        "optionA_clearDerivedFieldsOnly": {
+          "kosherLabel": "בד״ץ בית יוסף",
+          "detailLine": "בד״ץ בית יוסף"
+        },
+        "optionB_clearKosherTypeToo": {
+          "kosherLabel": null,
+          "detailLine": "—"
+        }
+      },
+      {
+        "id": "golda-bd46421f",
+        "name": "גלידה גולדה",
+        "cityId": "באר-יעקב",
+        "currentKosherType": "mehadrin",
+        "currentCertifiedBy": null,
+        "today": {
+          "kosherLabel": "מהדרין",
+          "detailLine": "מהדרין"
+        },
+        "optionA_clearDerivedFieldsOnly": {
+          "kosherLabel": "מהדרין",
+          "detailLine": "מהדרין"
+        },
+        "optionB_clearKosherTypeToo": {
+          "kosherLabel": null,
+          "detailLine": "—"
+        }
+      },
+      {
+        "id": "golda-1774fb5e",
+        "name": "גלידה גולדה",
+        "cityId": "בית-שמש",
+        "currentKosherType": "badatz_beit_yosef",
+        "currentCertifiedBy": null,
+        "today": {
+          "kosherLabel": "בד״ץ בית יוסף",
+          "detailLine": "בד״ץ בית יוסף"
+        },
+        "optionA_clearDerivedFieldsOnly": {
+          "kosherLabel": "בד״ץ בית יוסף",
+          "detailLine": "בד״ץ בית יוסף"
+        },
+        "optionB_clearKosherTypeToo": {
+          "kosherLabel": null,
+          "detailLine": "—"
+        }
+      },
+      {
+        "id": "golda-038e75bd",
+        "name": "גלידה גולדה",
+        "cityId": "bat-yam",
+        "currentKosherType": "badatz_beit_yosef",
+        "currentCertifiedBy": null,
+        "today": {
+          "kosherLabel": "בד״ץ בית יוסף",
+          "detailLine": "בד״ץ בית יוסף"
+        },
+        "optionA_clearDerivedFieldsOnly": {
+          "kosherLabel": "בד״ץ בית יוסף",
+          "detailLine": "בד״ץ בית יוסף"
+        },
+        "optionB_clearKosherTypeToo": {
+          "kosherLabel": null,
+          "detailLine": "—"
+        }
+      },
+      {
+        "id": "golda-94f06549",
+        "name": "גלידה גולדה",
+        "cityId": "גבעת-שמואל",
+        "currentKosherType": "badatz_beit_yosef",
+        "currentCertifiedBy": null,
+        "today": {
+          "kosherLabel": "בד״ץ בית יוסף",
+          "detailLine": "בד״ץ בית יוסף"
+        },
+        "optionA_clearDerivedFieldsOnly": {
+          "kosherLabel": "בד״ץ בית יוסף",
+          "detailLine": "בד״ץ בית יוסף"
+        },
+        "optionB_clearKosherTypeToo": {
+          "kosherLabel": null,
+          "detailLine": "—"
+        }
+      }
+    ]
+  },
+  "part5": {
+    "count": 323,
+    "note": "Every record in the Part 2 \"fully unsupported\" set (by definition, since that set already required certifiedBy/kosherCertUrl/sourceUrl/certificateValidUntil all absent) would have ZERO kashrut signal of any kind if kosherType were also cleared — this is exactly the set AGENTS.md's \"no kashrut certificate → no record\" rule would make ineligible for the dataset if it were being newly imported today. This is the deletion-adjacent set. Not resolved here — full list follows for the owner/Reviewer.",
+    "fullList": [
+      {
+        "id": "osm-node-5221319346",
+        "name": "בורגרים",
+        "cityId": "קרית שמונה",
+        "address": "אזור תעשיה דרומי, מתחם ONE, קרית שמונה",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-30"
+      },
+      {
+        "id": "osm-node-5299442042",
+        "name": "פיצה בריבוע",
+        "cityId": "כרמיאל",
+        "address": "רחוב הפלמח 108, כרמיאל",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": null
+      },
+      {
+        "id": "osm-node-5299594181",
+        "name": "אסתריקה",
+        "cityId": "קרית שמונה",
+        "address": "הברזל, קרית שמונה",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": null
+      },
+      {
+        "id": "osm-node-12578972524",
+        "name": "Breadcafe",
+        "cityId": "בני ברק",
+        "address": "רחוב בר כוכבא 14, בני ברק",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": null
+      },
+      {
+        "id": "osm-node-13426948731",
+        "name": "עדה",
+        "cityId": "ראש פינה",
+        "address": "דרך המרכז 1, ראש פינה",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": null
+      },
+      {
+        "id": "golda-9fd9706a",
+        "name": "גלידה גולדה",
+        "cityId": "אריאל",
+        "address": "מוריה 2, אריאל",
+        "type": "ice_cream_parlor",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "golda-26f62510",
+        "name": "גלידה גולדה",
+        "cityId": "ashdod",
+        "address": "מנגו 4, אשדוד",
+        "type": "ice_cream_parlor",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "golda-757e7cdc",
+        "name": "גלידה גולדה",
+        "cityId": "ashkelon",
+        "address": "שדרות עמק חפר 53, אשקלון",
+        "type": "ice_cream_parlor",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "golda-bd46421f",
+        "name": "גלידה גולדה",
+        "cityId": "באר-יעקב",
+        "address": "יהלום 3, באר יעקב",
+        "type": "ice_cream_parlor",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "golda-1774fb5e",
+        "name": "גלידה גולדה",
+        "cityId": "בית-שמש",
+        "address": "שדרות יגאל אלון 1, ביג פאשן, בית שמש",
+        "type": "ice_cream_parlor",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "golda-038e75bd",
+        "name": "גלידה גולדה",
+        "cityId": "bat-yam",
+        "address": "נעמי שמר 9, בת ים",
+        "type": "ice_cream_parlor",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "golda-94f06549",
+        "name": "גלידה גולדה",
+        "cityId": "גבעת-שמואל",
+        "address": "הערבה 1, גבעת שמואל",
+        "type": "ice_cream_parlor",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "golda-d5eead7a",
+        "name": "גלידה גולדה",
+        "cityId": "גדרה",
+        "address": "מנחם בגין 12, גדרה",
+        "type": "ice_cream_parlor",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "golda-b8b367cc",
+        "name": "גלידה גולדה",
+        "cityId": "דימונה",
+        "address": "גולדה מאיר 1, דימונה",
+        "type": "ice_cream_parlor",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "golda-7861d141",
+        "name": "גלידה גולדה",
+        "cityId": "חריש",
+        "address": "יחד 18, חריש",
+        "type": "ice_cream_parlor",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "golda-7d983562",
+        "name": "גלידה גולדה",
+        "cityId": "טבריה",
+        "address": "מדרחוב הבנים, טבריה",
+        "type": "ice_cream_parlor",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "golda-4b2ab2c5",
+        "name": "גלידה גולדה",
+        "cityId": "יוקנעם",
+        "address": "מתחם ביג יוקנעם עילית",
+        "type": "ice_cream_parlor",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "golda-c3b93ddf",
+        "name": "גלידה גולדה",
+        "cityId": "jerusalem",
+        "address": "אביזוהר 8, בית הכרם, ירושלים",
+        "type": "ice_cream_parlor",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "golda-8de92fea",
+        "name": "גלידה גולדה",
+        "cityId": "מבשרת-ציון",
+        "address": "קניון הראל, מבשרת ציון",
+        "type": "ice_cream_parlor",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "golda-82d4b21f",
+        "name": "גלידה גולדה",
+        "cityId": "מגדל-העמק",
+        "address": "שאול עמר 77, פרץ סנטר, מגדל העמק",
+        "type": "ice_cream_parlor",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "golda-a81b55a4",
+        "name": "גלידה גולדה",
+        "cityId": "מעלות",
+        "address": "בן גוריון 1, מעלות תרשיחא",
+        "type": "ice_cream_parlor",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "golda-84837595",
+        "name": "גלידה גולדה",
+        "cityId": "נתיבות",
+        "address": "בעלי המלאכה 13, נתיבות",
+        "type": "ice_cream_parlor",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "golda-7120187b",
+        "name": "גלידה גולדה",
+        "cityId": "netanya",
+        "address": "טום לנטוס 1, נתניה",
+        "type": "ice_cream_parlor",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "golda-69079523",
+        "name": "גלידה גולדה",
+        "cityId": "עכו",
+        "address": "החרושת 2, קניון עזריאלי, עכו",
+        "type": "ice_cream_parlor",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "golda-098ce9dd",
+        "name": "גלידה גולדה",
+        "cityId": "עפולה",
+        "address": "שדרות יצחק רבין 20, עפולה",
+        "type": "ice_cream_parlor",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "golda-ed0e8ff8",
+        "name": "גלידה גולדה",
+        "cityId": "פרדס-חנה",
+        "address": "גלעד 4, פרדס חנה",
+        "type": "ice_cream_parlor",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "golda-b64bbbac",
+        "name": "גלידה גולדה",
+        "cityId": "ramat-gan",
+        "address": "דרך אבא הלל 301, רמת גן",
+        "type": "ice_cream_parlor",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "golda-6f64e5de",
+        "name": "גלידה גולדה",
+        "cityId": "modiin",
+        "address": "קניון עזריאלי לב העיר 2, מודיעין",
+        "type": "ice_cream_parlor",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "golda-44d23fa2",
+        "name": "גלידה גולדה",
+        "cityId": "קריית-גת",
+        "address": "דרך הדרום 22, קריית גת",
+        "type": "ice_cream_parlor",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "golda-a4a4d9af",
+        "name": "גלידה גולדה",
+        "cityId": "קריית-מוצקין",
+        "address": "שדרות ירושלים 1, קריית מוצקין",
+        "type": "ice_cream_parlor",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "golda-3aa8f28b",
+        "name": "גלידה גולדה",
+        "cityId": "קריית-מלאכי",
+        "address": "ז'בוטינסקי 41, קריית מלאכי",
+        "type": "ice_cream_parlor",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "golda-38eb9b84",
+        "name": "גלידה גולדה",
+        "cityId": "קריית-שמונה",
+        "address": "תל חי 120, קריית שמונה",
+        "type": "ice_cream_parlor",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "golda-fd7bd319",
+        "name": "גלידה גולדה",
+        "cityId": "קרית-אתא",
+        "address": "דוכיפת 3, שכונת אלונים, קרית אתא",
+        "type": "ice_cream_parlor",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "golda-4ceb3556",
+        "name": "גלידה גולדה",
+        "cityId": "ראש-העין",
+        "address": "שבזי 10, ראש העין",
+        "type": "ice_cream_parlor",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "golda-edc09cc3",
+        "name": "גלידה גולדה",
+        "cityId": "rishon-lezion",
+        "address": "גבעתי 1, ראשון לציון",
+        "type": "ice_cream_parlor",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "golda-a96b2e8e",
+        "name": "גלידה גולדה",
+        "cityId": "שדרות",
+        "address": "הפלדה 8, פרץ סנטר, שדרות",
+        "type": "ice_cream_parlor",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "golda-fc07495d",
+        "name": "גלידה גולדה",
+        "cityId": "tel-aviv",
+        "address": "בוגרשוב 6, תל אביב",
+        "type": "ice_cream_parlor",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "landwer-e58674f7",
+        "name": "קפה לנדוור",
+        "cityId": "חדרה",
+        "address": "שכטרמן 10, חדרה",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "landwer-3627a8ef",
+        "name": "קפה לנדוור",
+        "cityId": "עפולה",
+        "address": "המלאכה 21, עפולה",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "landwer-e5ccb343",
+        "name": "קפה לנדוור",
+        "cityId": "גבעת שמואל",
+        "address": "מנחם בגין 38, גבעת שמואל",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "landwer-72ea2199",
+        "name": "קפה לנדוור",
+        "cityId": "פתח תקווה",
+        "address": "ז'בוטינסקי 72, הקניון הגדול, פתח תקווה",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "landwer-9e317595",
+        "name": "קפה לנדוור",
+        "cityId": "ראשון לציון",
+        "address": "שדרות נים 2, קניון ראשונים, ראשון לציון",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "landwer-0226fd66",
+        "name": "קפה לנדוור",
+        "cityId": "אור יהודה",
+        "address": "יהדות קנדה 1, אור יהודה",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "landwer-0fff345f",
+        "name": "קפה לנדוור",
+        "cityId": "מבשרת ציון",
+        "address": "קניון הראל, מבשרת ציון",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "landwer-12ebc3a9",
+        "name": "קפה לנדוור",
+        "cityId": "אריאל",
+        "address": "מוריה 2, אריאל סנטר, אריאל",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "landwer-79a648f9",
+        "name": "קפה לנדוור",
+        "cityId": "רחובות",
+        "address": "בילו 2, קניון רחובות, רחובות",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "landwer-1da61b05",
+        "name": "קפה לנדוור",
+        "cityId": "רחובות",
+        "address": "פקריס 2, פארק המדע, רחובות",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "landwer-c2eb1e46",
+        "name": "קפה לנדוור",
+        "cityId": "אשקלון",
+        "address": "שדרות ירושלים 119, אשקלון",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "landwer-1edf9c2c",
+        "name": "קפה לנדוור",
+        "cityId": "שדרות",
+        "address": "אריאל שרון 19, שדרות",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "landwer-75f58b99",
+        "name": "קפה לנדוור",
+        "cityId": "נתיבות",
+        "address": "בעלי המלאכה 27, G סנטר, נתיבות",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-d80aad31",
+        "name": "רי בר rebar קניון איילון",
+        "cityId": "רמת גן",
+        "address": "אבא הלל 301, קניון איילון, רמת גן",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-a28c1ea4",
+        "name": "רי בר rebar רמת אפעל",
+        "cityId": "רמת גן",
+        "address": "דרך שיבא 14, רמת גן",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-a13c88d8",
+        "name": "רי בר rebar ביאליק",
+        "cityId": "רמת גן",
+        "address": "ביאליק 76, פינת ז'בוטינסקי, רמת גן",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-9d7d79ac",
+        "name": "רי בר rebar",
+        "cityId": "גבעת שמואל",
+        "address": "שדרות מנחם בגין 38, גבעת שמואל",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-8b7c4c33",
+        "name": "רי בר rebar",
+        "cityId": "גני תקווה",
+        "address": "ההדרים 7, גני תקווה",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-ca53bc00",
+        "name": "רי בר rebar",
+        "cityId": "קריית אונו",
+        "address": "הקריה האקדמית אונו",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-0edef232",
+        "name": "רי בר rebar חולון עזריאלי",
+        "cityId": "חולון",
+        "address": "גולדה מאיר 7, עזריאלי חולון",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-1cfb4934",
+        "name": "רי בר rebar הקניון הגדול",
+        "cityId": "פתח תקווה",
+        "address": "ז'בוטינסקי 72, הקניון הגדול, פתח תקווה",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-470f6bc8",
+        "name": "רי בר rebar אם המושבות",
+        "cityId": "פתח תקווה",
+        "address": "ראשון לציון 1, meex אם המושבות, פתח תקווה",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-eb7726e8",
+        "name": "רי בר rebar סירקין",
+        "cityId": "פתח תקווה",
+        "address": "אלעזר פרידמן 9, פתח תקווה",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-c4a716c9",
+        "name": "רי בר rebar קניון הזהב",
+        "cityId": "ראשון לציון",
+        "address": "דוד סחרוב 21, קניון הזהב, ראשון לציון",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-0ca74b52",
+        "name": "רי בר rebar קניון ראשונים",
+        "cityId": "ראשון לציון",
+        "address": "שדרות נים 2, קניון עזריאלי ראשונים",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-3fb40815",
+        "name": "רי בר rebar קניותר",
+        "cityId": "נס ציונה",
+        "address": "האירוסים 53, קניותר, נס ציונה",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-aae45389",
+        "name": "רי בר rebar עזריאלי",
+        "cityId": "רמלה",
+        "address": "שדרות דוד ריזאל 1, קניון עזריאלי, רמלה",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-195a2d8e",
+        "name": "רי בר rebar",
+        "cityId": "באר יעקב",
+        "address": "יהלום 4, באר יעקב",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-947ca636",
+        "name": "רי בר rebar meex",
+        "cityId": "רחובות",
+        "address": "דרך הים 1, רחובות",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-8a9019a7",
+        "name": "רי בר rebar עזריאלי",
+        "cityId": "מודיעין",
+        "address": "לב העיר 2, עזריאלי, מודיעין",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-5009ef1a",
+        "name": "רי בר rebar מוריה",
+        "cityId": "מודיעין",
+        "address": "לאה אימנו 1, מודיעין",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-033ab8c0",
+        "name": "רי בר rebar",
+        "cityId": "שוהם",
+        "address": "שד' עמק איילון 30, שוהם",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-05a0f9da",
+        "name": "רי בר rebar ביג פאשן",
+        "cityId": "בית שמש",
+        "address": "יגאל אלון 1, ביג פאשן, בית שמש",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-94998d06",
+        "name": "רי בר rebar קניון מלחה",
+        "cityId": "ירושלים",
+        "address": "אגודת ספורט בית\"ר 1, קניון מלחה, ירושלים",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-a70cd408",
+        "name": "רי בר rebar הרובע היהודי",
+        "cityId": "ירושלים",
+        "address": "תפארת ישראל 8, הרובע היהודי, ירושלים",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-64bf0484",
+        "name": "רי בר rebar קניון הדר",
+        "cityId": "ירושלים",
+        "address": "גנרל פייר קניג 26, קניון הדר, ירושלים",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-bad47750",
+        "name": "רי בר rebar",
+        "cityId": "מעלה אדומים",
+        "address": "דרך קדם 5, מעלה אדומים",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-e7b09ded",
+        "name": "רי בר rebar קריית השרון",
+        "cityId": "נתניה",
+        "address": "טוס לנטוס, מרכז אלון, נתניה",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-06e54743",
+        "name": "רי בר rebar קניון השרון",
+        "cityId": "נתניה",
+        "address": "הרצל 60, קניון השרון, נתניה",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-f6794b4f",
+        "name": "רי בר rebar עיר ימים",
+        "cityId": "נתניה",
+        "address": "בני ברמן 2, עיר ימים, נתניה",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-c7c7b2e2",
+        "name": "רי בר rebar רעננה רננים",
+        "cityId": "רעננה",
+        "address": "המלאכה 2, קניון רננים, רעננה",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-cd4f9e09",
+        "name": "רי בר rebar קניון לב",
+        "cityId": "חדרה",
+        "address": "רוטשילד 40, קניון לב חדרה, חדרה",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-792ad839",
+        "name": "רי בר rebar ביג",
+        "cityId": "אור עקיבא",
+        "address": "שדרות הנשיא ויצמן 4, ביג, אור עקיבא",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-6b0c7e46",
+        "name": "רי בר rebar סינמול לב המפרץ",
+        "cityId": "חיפה",
+        "address": "שד' ההסתדרות 55, סינמול לב המפרץ, חיפה",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-ee1b3a85",
+        "name": "רי בר rebar רמב\"ם",
+        "cityId": "חיפה",
+        "address": "העלייה השנייה 8, חיפה",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-6a15d27e",
+        "name": "רי בר rebar עיר תחתית",
+        "cityId": "חיפה",
+        "address": "נתנזון 11, עיר תחתית, חיפה",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-7a9dc1f7",
+        "name": "רי בר rebar עזריאלי",
+        "cityId": "חיפה",
+        "address": "משה פלימן 4, קניון חיפה עזריאלי",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-21c4c84c",
+        "name": "רי בר rebar קיריון",
+        "cityId": "קריית ביאליק",
+        "address": "דרך עכו חיפה 192, קיריון",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-02629c63",
+        "name": "רי בר rebar שער הצפון",
+        "cityId": "קריית אתא",
+        "address": "דרך חיפה 52, שער הצפון",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-574d982c",
+        "name": "רי בר rebar סנטר הגליל",
+        "cityId": "ראש פינה",
+        "address": "סנטר הגליל, ראש פינה",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-0b5bbb7e",
+        "name": "רי בר rebar ביג פאשן",
+        "cityId": "טבריה",
+        "address": "יהודה הלוי 9990, ביג פאשן, טבריה",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-a32ef445",
+        "name": "רי בר rebar ביג פוריה",
+        "cityId": "טבריה",
+        "address": "המברג 1, ביג פוריה, טבריה",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-8ca3b9b4",
+        "name": "רי בר rebar עמק סנטר",
+        "cityId": "עפולה",
+        "address": "שדרות יצחק רבין 18, עמק סנטר פרנדלי, עפולה",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-1d266612",
+        "name": "רי בר rebar תחנה מרכזית",
+        "cityId": "עפולה",
+        "address": "קהילת ציון 3, תחנה מרכזית, עפולה",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-77d95d5a",
+        "name": "רי בר rebar ביג",
+        "cityId": "יוקנעם",
+        "address": "שד' יצחק רבין 9, ביג, יקנעם",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-38357306",
+        "name": "רי בר rebar",
+        "cityId": "בית שאן",
+        "address": "צים סנטר, בית שאן",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-412701fd",
+        "name": "רי בר rebar ביג",
+        "cityId": "באר שבע",
+        "address": "חיל ההנדסה 6, ביג, באר שבע",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-60e2c2e9",
+        "name": "רי בר rebar גרנד קניון",
+        "cityId": "באר שבע",
+        "address": "שדרות דוד טוביהו 125, גרנד קניון, באר שבע",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-dc59d466",
+        "name": "רי בר rebar קניון הנגב",
+        "cityId": "באר שבע",
+        "address": "שדרות יצחק רגר 2, קניון הנגב, באר שבע",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-890db640",
+        "name": "רי בר rebar קניון סימול",
+        "cityId": "אשדוד",
+        "address": "הגדוד העברי 6, קניון סימול, אשדוד",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-2e622448",
+        "name": "רי בר rebar מרינה",
+        "cityId": "אשקלון",
+        "address": "הנמל 9, מרינה, אשקלון",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-b8be2aa1",
+        "name": "רי בר rebar",
+        "cityId": "נתיבות",
+        "address": "מתחם פריז, נתיבות",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-71f0e480",
+        "name": "רי בר rebar",
+        "cityId": "כרמי גת",
+        "address": "אבני חושן 1, סנטר כרמי גת",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-8ae4a0c8",
+        "name": "רי בר rebar",
+        "cityId": "ערד",
+        "address": "התעשייה 60, ערד",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-b0112a34",
+        "name": "רי בר rebar",
+        "cityId": "דימונה",
+        "address": "מתחם פרץ, דימונה",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "rebar-838f1769",
+        "name": "רי בר rebar",
+        "cityId": "מצפה רמון",
+        "address": "שדרות בן גוריון 2, מצפה רמון",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "burgersbar-c0ae94d5",
+        "name": "בורגרס בר הר חומה",
+        "cityId": "ירושלים",
+        "address": "אליהו קורן 27, ירושלים",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "burgersbar-8e986587",
+        "name": "בורגרס בר מחנה יהודה",
+        "cityId": "ירושלים",
+        "address": "עץ חיים 68, ירושלים",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "burgersbar-71b69ef0",
+        "name": "בורגרס בר יפו 36",
+        "cityId": "ירושלים",
+        "address": "יפו 36, ירושלים",
+        "type": "restaurant",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "burgersbar-fbccb6b0",
+        "name": "בורגרס בר הרובע היהודי",
+        "cityId": "ירושלים",
+        "address": "תפארת ישראל 12, ירושלים",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "burgersbar-be293537",
+        "name": "בורגרס בר המושבה הגרמנית",
+        "cityId": "ירושלים",
+        "address": "עמק רפאים 31, ירושלים",
+        "type": "restaurant",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "burgersbar-0b78072a",
+        "name": "בורגרס בר הגבעה הצרפתית",
+        "cityId": "ירושלים",
+        "address": "ההגנה 21, ירושלים",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "burgersbar-20544f4b",
+        "name": "בורגרס בר גילה",
+        "cityId": "ירושלים",
+        "address": "הגננת 216, ירושלים",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "burgersbar-fdcd37b2",
+        "name": "בורגרס בר גבעת שאול",
+        "cityId": "ירושלים",
+        "address": "בית הדפוס 12, ירושלים",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "burgersbar-b0fda7d8",
+        "name": "בורגרס בר בן יהודה",
+        "cityId": "ירושלים",
+        "address": "בן יהודה 2, ירושלים",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "burgersbar-ca68fc3c",
+        "name": "בורגרס בר",
+        "cityId": "באר יעקב",
+        "address": "עמק 2, באר יעקב",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "burgersbar-8a8db08b",
+        "name": "בורגרס בר",
+        "cityId": "חולון",
+        "address": "גולדה מאיר 7, חולון",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "burgersbar-417e6b61",
+        "name": "בורגרס בר",
+        "cityId": "הרצליה",
+        "address": "ביילינסון 1, הרצליה",
+        "type": "restaurant",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "burgersbar-a7096850",
+        "name": "בורגרס בר",
+        "cityId": "גבעתיים",
+        "address": "דרך יצחק רבין 53, גבעתיים",
+        "type": "restaurant",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "burgersbar-6da47c9c",
+        "name": "בורגרס בר נתניה פיאנו",
+        "cityId": "נתניה",
+        "address": "שושנה דמארי 30, מתחם פיאנו, נתניה",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "burgersbar-47c25dd8",
+        "name": "בורגרס בר עזריאלי",
+        "cityId": "רמלה",
+        "address": "שדרות דוד רזיאל 1, קניון עזריאלי, רמלה",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "burgersbar-f0f2c420",
+        "name": "בורגרס בר",
+        "cityId": "פתח תקווה",
+        "address": "רוטשילד 89, פתח תקווה",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "burgersbar-f5d9de6e",
+        "name": "בורגרס בר ראשון לציון קניון הזהב",
+        "cityId": "ראשון לציון",
+        "address": "קניון הזהב, ראשון לציון",
+        "type": "restaurant",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "burgersbar-e0361b76",
+        "name": "בורגרס בר רמת אביב",
+        "cityId": "תל אביב",
+        "address": "מרכז טאגור 30, תל אביב",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "burgersbar-e785eafc",
+        "name": "בורגרס בר",
+        "cityId": "רעננה",
+        "address": "אחוזה 184, רעננה",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "burgersbar-d9af30d9",
+        "name": "בורגרס בר תל אביב עזריאלי",
+        "cityId": "תל אביב",
+        "address": "קניון עזריאלי, תל אביב",
+        "type": "restaurant",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "burgersbar-e1596d55",
+        "name": "בורגרס בר",
+        "cityId": "גבעת שמואל",
+        "address": "האורנים 1, גבעת שמואל",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "burgersbar-28d8ca5f",
+        "name": "בורגרס בר",
+        "cityId": "מצפה רמון",
+        "address": "שדרות בן גוריון 2, מצפה רמון",
+        "type": "restaurant",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "burgersbar-74ae9f7d",
+        "name": "בורגרס בר",
+        "cityId": "נתיבות",
+        "address": "בעלי המלאכה 3, פריז סנטר, נתיבות",
+        "type": "restaurant",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "burgersbar-eb6780e1",
+        "name": "בורגרס בר",
+        "cityId": "שדרות",
+        "address": "ההסתדרות 10, שדרות",
+        "type": "restaurant",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "burgersbar-83561c98",
+        "name": "בורגרס בר באר שבע גראנד",
+        "cityId": "באר שבע",
+        "address": "שדרות דוד טוביהו 125, גראנד קניון, באר שבע",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "burgersbar-1f17fca3",
+        "name": "בורגרס בר אילת דן",
+        "cityId": "אילת",
+        "address": "החוף הצפוני, דן אילת",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "burgersbar-85a13288",
+        "name": "בורגרס בר אילת ביג",
+        "cityId": "אילת",
+        "address": "הסתת 20, מרכז ביג, אילת",
+        "type": "restaurant",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "burgersbar-87223019",
+        "name": "בורגרס בר אילת פנינת",
+        "cityId": "אילת",
+        "address": "דרבן 4, מרכז פנינה, אילת",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "pastabasta-c626dda7",
+        "name": "פסטה בסטה הדסה עין כרם",
+        "cityId": "ירושלים",
+        "address": "גן קלמן 1, קניון ישפרו הדסה עין כרם, ירושלים",
+        "type": "restaurant",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "pastabasta-70343528",
+        "name": "פסטה בסטה",
+        "cityId": "באר שבע",
+        "address": "ז'ינגלבלום 19, באר שבע",
+        "type": "restaurant",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-14"
+      },
+      {
+        "id": "cafecafe-4c5adc4c",
+        "name": "קפה קפה",
+        "cityId": "גבעת שמואל",
+        "address": "קניון גבעת שמואל, גבעת שמואל",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-15"
+      },
+      {
+        "id": "cafecafe-888f4111",
+        "name": "קפה קפה",
+        "cityId": "דימונה",
+        "address": "קניון פרץ סנטר 14, דימונה",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-15"
+      },
+      {
+        "id": "bahadunes-6d68ea3f",
+        "name": "בהדונס",
+        "cityId": "איירפורט סיטי",
+        "address": "גולן 44, איירפורט סיטי",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-15"
+      },
+      {
+        "id": "bahadunes-f83c898e",
+        "name": "בהדונס פארק המדע",
+        "cityId": "רחובות",
+        "address": "חיים פקריס 3, פארק המדע, רחובות",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-15"
+      },
+      {
+        "id": "bardichev-48c56936",
+        "name": "חומוס ברדיצ'ב כרמל סנטר",
+        "cityId": "חיפה",
+        "address": "ביכורים 2, כרמל סנטר, חיפה",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-19"
+      },
+      {
+        "id": "bardichev-2205b62c",
+        "name": "חומוס ברדיצ'ב נווה שאנן",
+        "cityId": "חיפה",
+        "address": "טרומפלדור 53, נווה שאנן, חיפה",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-19"
+      },
+      {
+        "id": "bardichev-413696e3",
+        "name": "חומוס ברדיצ'ב קניון",
+        "cityId": "חיפה",
+        "address": "דרך משה פלימן 4, קניון חיפה, חיפה",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-19"
+      },
+      {
+        "id": "bardichev-0822912f",
+        "name": "חומוס ברדיצ'ב שוק תלפיות",
+        "cityId": "חיפה",
+        "address": "סירקין 27, שוק תלפיות, חיפה",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-19"
+      },
+      {
+        "id": "tzahibsarim-67b0db9a",
+        "name": "צחי בשרים",
+        "cityId": "תל אביב",
+        "address": "דרך קיבוץ גלויות 106, תל אביב",
+        "type": "restaurant",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-19"
+      },
+      {
+        "id": "tzahibsarim-f3e57fae",
+        "name": "צחי בשרים",
+        "cityId": "בת ים",
+        "address": "הרצל 82, בת ים",
+        "type": "restaurant",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-19"
+      },
+      {
+        "id": "tziposhipud-7c559c50",
+        "name": "שיפודי ציפורה",
+        "cityId": "בת ים",
+        "address": "הרב בר שאול 5, בת ים",
+        "type": "restaurant",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-19"
+      },
+      {
+        "id": "turkishgrill-7b1fd1d3",
+        "name": "טורקיש גריל",
+        "cityId": "אור יהודה",
+        "address": "העבודה 2, אור יהודה",
+        "type": "restaurant",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-19"
+      },
+      {
+        "id": "shimoni-13fd5e51",
+        "name": "שווארמה שמעוני",
+        "cityId": "אשדוד",
+        "address": "ניר גלים, אשדוד",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-19"
+      },
+      {
+        "id": "pinatshawarma-42ee2a4c",
+        "name": "פינת השווארמה",
+        "cityId": "תל אביב",
+        "address": "אצ\"ל 2, תל אביב",
+        "type": "restaurant",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-20"
+      },
+      {
+        "id": "hasultan-c0c27ca1",
+        "name": "הסולטן שווארמה",
+        "cityId": "רמת גן",
+        "address": "הירדן 94, רמת גן",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-20"
+      },
+      {
+        "id": "palpaliko-be899e99",
+        "name": "פלפליקו",
+        "cityId": "גני תקווה",
+        "address": "הרמה 23, גני תקווה",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-20"
+      },
+      {
+        "id": "tzarumraanana-f8a68b34",
+        "name": "שווארמה צארום",
+        "cityId": "רעננה",
+        "address": "אחוזה 89, רעננה",
+        "type": "restaurant",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-20"
+      },
+      {
+        "id": "shefalaash-2f4e356e",
+        "name": "שף על האש",
+        "cityId": "נתניה",
+        "address": "אחד העם 14, נתניה",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-20"
+      },
+      {
+        "id": "leshalom-c1fb63af",
+        "name": "שווארמה לשלום",
+        "cityId": "פרדס חנה כרכור",
+        "address": "המייסדים 31, פרדס חנה כרכור",
+        "type": "restaurant",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-20"
+      },
+      {
+        "id": "shalhavtia-b85f3ac6",
+        "name": "שלהבתיה",
+        "cityId": "חריש",
+        "address": "דרך ארץ 42, חריש",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-20"
+      },
+      {
+        "id": "sammiKA-5c3212b1",
+        "name": "סמי שווארמה ובשר על האש",
+        "cityId": "קרית אתא",
+        "address": "העצמאות 51, קרית אתא",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-20"
+      },
+      {
+        "id": "abaala-869d9ec9",
+        "name": "מסעדת אבאלה",
+        "cityId": "שומרה",
+        "address": "שומרה",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-20"
+      },
+      {
+        "id": "beit148-7a2cd289",
+        "name": "בית השווארמה 148",
+        "cityId": "צפת",
+        "address": "דרך השוקולד, צפת",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-20"
+      },
+      {
+        "id": "avivnofhagalil-bcd70146",
+        "name": "מסעדת אביב",
+        "cityId": "נוף הגליל",
+        "address": "כסולות, נוף הגליל",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-20"
+      },
+      {
+        "id": "levinTib-02f1c890",
+        "name": "שווארמה לוין",
+        "cityId": "טבריה",
+        "address": "הגליל 32, טבריה",
+        "type": "restaurant",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-20"
+      },
+      {
+        "id": "nirTib-d584e8cd",
+        "name": "באגט ניר שווארמה",
+        "cityId": "טבריה",
+        "address": "אלחדיף 3, טבריה",
+        "type": "restaurant",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-20"
+      },
+      {
+        "id": "teomimAfula-7816ec00",
+        "name": "שווארמה התאומים",
+        "cityId": "עפולה",
+        "address": "קפלן 12, עפולה",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-20"
+      },
+      {
+        "id": "mesoov-58b2a940",
+        "name": "מסוב",
+        "cityId": "ירושלים",
+        "address": "יפו 234, ירושלים",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-20"
+      },
+      {
+        "id": "drorJLM-e625c140",
+        "name": "דרור הקטן",
+        "cityId": "ירושלים",
+        "address": "א.ש. הרטום, ירושלים",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-20"
+      },
+      {
+        "id": "hashamenMevaser-dfb899a2",
+        "name": "השמן",
+        "cityId": "מבשרת ציון",
+        "address": "מבשרת ציון",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-20"
+      },
+      {
+        "id": "hashamenBS-0a4f19a8",
+        "name": "השמן",
+        "cityId": "בית שמש",
+        "address": "שדרות יגאל אלון 24, בית שמש",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-20"
+      },
+      {
+        "id": "yossiramle-04748c5c",
+        "name": "שווארמה יוסי",
+        "cityId": "רמלה",
+        "address": "צה\"ל 1, קניון נווה רם, רמלה",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-20"
+      },
+      {
+        "id": "bucharikm-23b49510",
+        "name": "הבוכרי",
+        "cityId": "קריית מלאכי",
+        "address": "קריית מלאכי",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-20"
+      },
+      {
+        "id": "sheliku-0b899554",
+        "name": "השווארמה שלי",
+        "cityId": "קריית מלאכי",
+        "address": "קריית מלאכי",
+        "type": "restaurant",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-20"
+      },
+      {
+        "id": "hapamon-a0f986bd",
+        "name": "הפעמון",
+        "cityId": "אשקלון",
+        "address": "אשקלון",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-20"
+      },
+      {
+        "id": "itzikeilat-3a1ad9d0",
+        "name": "שווארמה איציק",
+        "cityId": "אילת",
+        "address": "אילת",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-20"
+      },
+      {
+        "id": "benikahlon-4dc530e1",
+        "name": "שווארמה בני כחלון",
+        "cityId": "נתיבות",
+        "address": "יוסף סמלו 20, נתיבות",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-20"
+      },
+      {
+        "id": "carniibar-379dcfb5",
+        "name": "קרניבר",
+        "cityId": "נתיבות",
+        "address": "יוסף סמלו 10, נתיבות",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-20"
+      },
+      {
+        "id": "harakevet-084bbcac",
+        "name": "שווארמה ברכבת",
+        "cityId": "נתיבות",
+        "address": "אליהו אילוז 2, נתיבות",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-20"
+      },
+      {
+        "id": "mifgash-berlin-f692e96f",
+        "name": "מפגש ברלין ז'בוטינסקי",
+        "cityId": "רמת גן",
+        "address": "דרך זאב ז'בוטינסקי 61, רמת גן",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-29"
+      },
+      {
+        "id": "butra-2550867b",
+        "name": "בוטרא",
+        "cityId": "אשדוד",
+        "address": "אדר 4, רובע י\"ב, אשדוד",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-23"
+      },
+      {
+        "id": "pizzandtortilla-be19a08a",
+        "name": "פיצה אנד טורטיה",
+        "cityId": "תל אביב",
+        "address": "אלנבי 79, תל אביב",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-23"
+      },
+      {
+        "id": "breadcafe-7306c2e6",
+        "name": "Bread Cafe",
+        "cityId": "רמת גן",
+        "address": "תובל 19, רמת גן",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-23"
+      },
+      {
+        "id": "breadcafe-3fb8a6e1",
+        "name": "Bread Cafe בן גבירול",
+        "cityId": "תל אביב",
+        "address": "בן גבירול 30, תל אביב",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-23"
+      },
+      {
+        "id": "cafe-lugano-8d339460",
+        "name": "קפה לוגאנו",
+        "cityId": "רמת גן",
+        "address": "החוגה 2, רמת גן",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-23"
+      },
+      {
+        "id": "sabiach-hasharon-c5c327cb",
+        "name": "סביח השרון",
+        "cityId": "כפר סבא",
+        "address": "ויצמן 43, כפר סבא",
+        "type": "restaurant",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-23"
+      },
+      {
+        "id": "rak-marak-6e2134ba",
+        "name": "רק מרק",
+        "cityId": "רמת גן",
+        "address": "ביאליק 76, רמת גן",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-23"
+      },
+      {
+        "id": "manual-river-ramat-gan",
+        "name": "ריבר בורסה",
+        "cityId": "רמת גן",
+        "address": "ז'בוטינסקי 7, רמת גן",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": null
+      },
+      {
+        "id": "pizza-roma-46407d39",
+        "name": "פיצה רומא",
+        "cityId": "עכו",
+        "address": "נחליאלי 4, עכו",
+        "type": "restaurant",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-24"
+      },
+      {
+        "id": "pizza-roma-cee36ac2",
+        "name": "פיצה רומא",
+        "cityId": "רמת גן",
+        "address": "בן גוריון 12, רמת גן",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-24"
+      },
+      {
+        "id": "pizza-roma-2ba23f5e",
+        "name": "פיצה רומא",
+        "cityId": "קריית גת",
+        "address": "שדרות לכיש 63, קריית גת",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-24"
+      },
+      {
+        "id": "pizza-roma-4c28e381",
+        "name": "פיצה רומא",
+        "cityId": "בית שאן",
+        "address": "שאול המלך 74, בית שאן",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-24"
+      },
+      {
+        "id": "manual-cafe-nimrod-holon",
+        "name": "קפה נמרוד",
+        "cityId": "חולון",
+        "address": "הרוקמים 26, מתחם עזריאלי, חולון",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "manual-arcaffe-krinizy",
+        "name": "ארקפה קריניצי",
+        "cityId": "רמת גן",
+        "address": "יוסף ספיר 9, רמת גן",
+        "type": "cafe",
+        "kosherType": "rabanut_mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "manual-arcaffe-beit-asia",
+        "name": "ארקפה בית אסיה",
+        "cityId": "תל אביב–יפו",
+        "address": "וייצמן 4, תל אביב",
+        "type": "cafe",
+        "kosherType": "rabanut_mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "manual-arcaffe-assuta",
+        "name": "ארקפה אסותא",
+        "cityId": "תל אביב–יפו",
+        "address": "הברזל 20, תל אביב",
+        "type": "cafe",
+        "kosherType": "rabanut_mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "manual-arcaffe-rogvin",
+        "name": "ארקפה רוגובין",
+        "cityId": "רמת גן",
+        "address": "דרך מנחם בגין 11, מתחם הבורסה, רמת גן",
+        "type": "cafe",
+        "kosherType": "rabanut_mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "manual-arcaffe-ramat-aviv-mall",
+        "name": "ארקפה קניון רמת אביב",
+        "cityId": "תל אביב–יפו",
+        "address": "איינשטיין 40, תל אביב",
+        "type": "cafe",
+        "kosherType": "rabanut_mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "manual-arcaffe-zahav-mall",
+        "name": "ארקפה קניון הזהב",
+        "cityId": "ראשון לציון",
+        "address": "דוד סחרוב 21, ראשון לציון",
+        "type": "cafe",
+        "kosherType": "rabanut_mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "manual-arcaffe-beit-harel",
+        "name": "ארקפה בית הראל",
+        "cityId": "רמת גן",
+        "address": "דרך אבא הלל 3, מתחם הבורסה, רמת גן",
+        "type": "cafe",
+        "kosherType": "rabanut_mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "manual-arcaffe-caesarea",
+        "name": "ארקפה",
+        "cityId": "קיסריה",
+        "address": "רחוב שמש 1, שכונה 13, קיסריה",
+        "type": "cafe",
+        "kosherType": "rabanut_mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "manual-arcaffe-azrieli-tlv",
+        "name": "ארקפה",
+        "cityId": "תל אביב–יפו",
+        "address": "דרך מנחם בגין 132, תל אביב",
+        "type": "cafe",
+        "kosherType": "rabanut_mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "manual-arcaffe-or-yehuda",
+        "name": "ארקפה",
+        "cityId": "אור יהודה",
+        "address": "שדרות אריאל שרון 3, אור יהודה",
+        "type": "cafe",
+        "kosherType": "rabanut_mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "manual-arcaffe-baser-bneibrак",
+        "name": "ארקפה בסר",
+        "cityId": "בני ברק",
+        "address": "כנרת 5, בני ברק",
+        "type": "cafe",
+        "kosherType": "rabanut_mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "manual-arcaffe-ashdod",
+        "name": "ארקפה",
+        "cityId": "אשדוד",
+        "address": "דרך הרכבת 1, אשדוד",
+        "type": "cafe",
+        "kosherType": "rabanut_mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "manual-arcaffe-kfarsaba-g",
+        "name": "ארקפה כפר סבא G",
+        "cityId": "כפר סבא",
+        "address": "ויצמן 207, כפר סבא",
+        "type": "cafe",
+        "kosherType": "rabanut_mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-77bb14f6",
+        "name": "קפה גרג",
+        "cityId": "מגדל העמק",
+        "address": "ביג מגדל העמק",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-9ddc70b3",
+        "name": "קפה גרג גן העיר",
+        "cityId": "אשדוד",
+        "address": "הגדוד העברי, גן העיר, אשדוד",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-0b229b5e",
+        "name": "קפה גרג דנילוף",
+        "cityId": "טבריה",
+        "address": "יהודה הלוי 1, טבריה",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-8d3215ae",
+        "name": "קפה גרג",
+        "cityId": "חדרה",
+        "address": "שדרות רוטשילד, עופר לב חדרה",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-62e09734",
+        "name": "קפה גרג רננים",
+        "cityId": "רעננה",
+        "address": "המלאכה, קניון רננים, רעננה",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-5dd9db5e",
+        "name": "קפה גרג",
+        "cityId": "גוש עציון",
+        "address": "צומת גוש עציון",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-17c276c8",
+        "name": "קפה גרג קניון הדר",
+        "cityId": "ירושלים",
+        "address": "פייר קינג 26, ירושלים",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-2291d2ec",
+        "name": "קפה גרג ב.ס.ר",
+        "cityId": "בני ברק",
+        "address": "מצדה 5, בני ברק",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-b4288d9c",
+        "name": "קפה גרג פוריה",
+        "cityId": "טבריה",
+        "address": "המברג 1, טבריה",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-26408ffa",
+        "name": "קפה גרג",
+        "cityId": "נשר",
+        "address": "דרך בר יהודה 111, נשר",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-ab233b68",
+        "name": "קפה גרג",
+        "cityId": "בית שאן",
+        "address": "שדרות מנחם בגין, בית שאן",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-884d247c",
+        "name": "קפה גרג",
+        "cityId": "בית שמש",
+        "address": "שדרות יגאל אלון 1, בית שמש",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-55b37c5c",
+        "name": "קפה גרג TLV",
+        "cityId": "תל אביב",
+        "address": "החשמונאים 100, תל אביב",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-443cb001",
+        "name": "קפה גרג דיזנגוף סנטר",
+        "cityId": "תל אביב",
+        "address": "דיזנגוף 55, תל אביב",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-0ff39bbb",
+        "name": "קפה גרג הקניון הגדול",
+        "cityId": "פתח תקווה",
+        "address": "ז'בוטינסקי 72, פתח תקווה",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-5e9f92a0",
+        "name": "קפה גרג סירקין",
+        "cityId": "פתח תקווה",
+        "address": "אלעזר פרידמן 9, פתח תקווה",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-8c7bbbba",
+        "name": "קפה גרג",
+        "cityId": "גבעת שמואל",
+        "address": "שדרות מנחם בגין 30, גבעת שמואל",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-9b698eb3",
+        "name": "קפה גרג שרונים",
+        "cityId": "הוד השרון",
+        "address": "הרקון 2, הוד השרון",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-291597a1",
+        "name": "קפה גרג נתניה השרון",
+        "cityId": "נתניה",
+        "address": "הרצל 60, נתניה",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-4c27cea8",
+        "name": "קפה גרג",
+        "cityId": "אריאל",
+        "address": "הבנאי 5, אריאל",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-26dd0dbc",
+        "name": "קפה גרג ביג",
+        "cityId": "אילת",
+        "address": "הסתת 20, אילת",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-9cc138f8",
+        "name": "קפה גרג",
+        "cityId": "דימונה",
+        "address": "שדרות גולדה מאיר 1, דימונה",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-051e4e12",
+        "name": "קפה גרג",
+        "cityId": "אופקים",
+        "address": "יהדות דרום אפריקה 14, אופקים",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-42e77b63",
+        "name": "קפה גרג",
+        "cityId": "שדרות",
+        "address": "דרך מנחם בגין 1, שדרות",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-185c29dc",
+        "name": "קפה גרג",
+        "cityId": "נתיבות",
+        "address": "בעלי המלאכה 5, נתיבות",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-45645a27",
+        "name": "קפה גרג",
+        "cityId": "באר טוביה",
+        "address": "ביג קסטינה, שיבולים, באר טוביה",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-23350907",
+        "name": "קפה גרג",
+        "cityId": "רמלה",
+        "address": "שדרות דוד רזיאל 1, רמלה",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-48ab2f9b",
+        "name": "קפה גרג",
+        "cityId": "חריש",
+        "address": "דרך ארץ 1, חריש",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-5d44ee6f",
+        "name": "קפה גרג",
+        "cityId": "קריית אתא",
+        "address": "העצמאות 57, קריית אתא",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-58d4d1e7",
+        "name": "קפה גרג",
+        "cityId": "עתלית",
+        "address": "דרך הים 2, עתלית",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-996a7fa0",
+        "name": "קפה גרג",
+        "cityId": "עפולה",
+        "address": "השוק 13, עפולה",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-dc82d632",
+        "name": "קפה גרג קניון",
+        "cityId": "נהריה",
+        "address": "אירית 2, נהריה",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-9cf81d80",
+        "name": "קפה גרג",
+        "cityId": "ראש פינה",
+        "address": "התפוח 5, ראש פינה",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-d1d652e6",
+        "name": "קפה גרג",
+        "cityId": "עין בוקק",
+        "address": "עין בוקק 3",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-19589c28",
+        "name": "קפה גרג G2",
+        "cityId": "ראשון לציון",
+        "address": "ילדי טהרן 5, ראשון לציון",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-d99c94fb",
+        "name": "קפה גרג",
+        "cityId": "יוקנעם עילית",
+        "address": "התמר 2, יוקנעם עילית",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-7406930e",
+        "name": "קפה גרג",
+        "cityId": "פרדס חנה כרכור",
+        "address": "תדהר 1, פרדס חנה",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-27"
+      },
+      {
+        "id": "greg-d22f70cb",
+        "name": "קפה גרג",
+        "cityId": "קריית שמונה",
+        "address": "טשרניחובסקי 6, קריית שמונה",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-24"
+      },
+      {
+        "id": "manual-pizza-bakikar-holon",
+        "name": "פיצה בכיכר",
+        "cityId": "חולון",
+        "address": "סוקולוב 22, חולון",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-29"
+      },
+      {
+        "id": "humus-eli-חומוס-אליהו-מידטאון-תא",
+        "name": "חומוס אליהו מידטאון",
+        "cityId": "תל אביב-יפו",
+        "address": "מנחם בגין 144, תל אביב",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-30"
+      },
+      {
+        "id": "burgerim-בית-שאן",
+        "name": "בורגרים",
+        "cityId": "בית שאן",
+        "address": "שאול המלך 71, בית שאן",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-30"
+      },
+      {
+        "id": "burgerim-מעלה-אדומים",
+        "name": "בורגרים",
+        "cityId": "מעלה אדומים",
+        "address": "האלמוג 31, מעלה אדומים",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-30"
+      },
+      {
+        "id": "burgerim-צופים",
+        "name": "בורגרים",
+        "cityId": "צופים",
+        "address": "ערבי נחל 508, מרכז מסחרי, צופים",
+        "type": "restaurant",
+        "kosherType": "rabanut_mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-30"
+      },
+      {
+        "id": "burgerim-קצרין",
+        "name": "בורגרים",
+        "cityId": "קצרין",
+        "address": "דליות 2, מתחם איתן, קצרין",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-07-30"
+      },
+      {
+        "id": "manual-b-fresh-bialik-ramat-gan",
+        "name": "B-Fresh ביאליק",
+        "cityId": "רמת גן",
+        "address": "ביאליק 77, רמת גן",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": null,
+        "lastVerifiedAt": null
+      },
+      {
+        "id": "manual-b-fresh-hagiva-givat-shmuel",
+        "name": "B-Fresh קניון הגבעה",
+        "cityId": "גבעת שמואל",
+        "address": "יוני נתניהו 29, גבעת שמואל",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": null,
+        "lastVerifiedAt": null
+      },
+      {
+        "id": "manual-b-fresh-beilinson",
+        "name": "B-Fresh בלינסון",
+        "cityId": "פתח תקווה",
+        "address": "זאב ז'בוטינסקי 39, פתח תקווה",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": null,
+        "lastVerifiedAt": null
+      },
+      {
+        "id": "manual-b-fresh-beer-yaakov",
+        "name": "B-Fresh",
+        "cityId": "באר יעקב",
+        "address": "באר יעקב",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": null,
+        "lastVerifiedAt": null
+      },
+      {
+        "id": "manual-b-fresh-shoham-market",
+        "name": "B-Fresh שוהם מרקט",
+        "cityId": "שוהם",
+        "address": "שוהם מרקט, שוהם",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": null,
+        "lastVerifiedAt": null
+      },
+      {
+        "id": "manual-b-fresh-yashpro-nes-ziona",
+        "name": "B-Fresh ישפרו סנטר",
+        "cityId": "נס ציונה",
+        "address": "ישפרו סנטר, נס ציונה",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": null,
+        "lastVerifiedAt": null
+      },
+      {
+        "id": "manual-b-fresh-azrieli-ramla",
+        "name": "B-Fresh קניון עזריאלי",
+        "cityId": "רמלה",
+        "address": "קניון עזריאלי, רמלה",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": null,
+        "lastVerifiedAt": null
+      },
+      {
+        "id": "manual-b-fresh-big-gedera",
+        "name": "B-Fresh ביג",
+        "cityId": "גדרה",
+        "address": "ביג גדרה, גדרה",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": null,
+        "lastVerifiedAt": null
+      },
+      {
+        "id": "manual-b-fresh-star-center-ashdod",
+        "name": "B-Fresh סטאר סנטר",
+        "cityId": "אשדוד",
+        "address": "סטאר סנטר, אשדוד",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": null,
+        "lastVerifiedAt": null
+      },
+      {
+        "id": "manual-b-fresh-gan-hair-ashdod",
+        "name": "B-Fresh גן העיר",
+        "cityId": "אשדוד",
+        "address": "גן העיר, אשדוד",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": null,
+        "lastVerifiedAt": null
+      },
+      {
+        "id": "manual-b-fresh-ariel",
+        "name": "B-Fresh",
+        "cityId": "אריאל",
+        "address": "אריאל",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": null,
+        "lastVerifiedAt": null
+      },
+      {
+        "id": "manual-b-fresh-big-kastina",
+        "name": "B-Fresh ביג",
+        "cityId": "קסטינה",
+        "address": "ביג קסטינה",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": null,
+        "lastVerifiedAt": null
+      },
+      {
+        "id": "manual-b-fresh-shaar-hair-beit-shemesh",
+        "name": "B-Fresh שער העיר",
+        "cityId": "בית שמש",
+        "address": "שער העיר, בית שמש",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": null,
+        "lastVerifiedAt": null
+      },
+      {
+        "id": "manual-b-fresh-harel-mevasseret",
+        "name": "B-Fresh קניון הראל",
+        "cityId": "מבשרת ציון",
+        "address": "קניון הראל, מבשרת ציון",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": null,
+        "lastVerifiedAt": null
+      },
+      {
+        "id": "manual-b-fresh-kanyon-mevasseret",
+        "name": "B-Fresh קניון מבשרת",
+        "cityId": "מבשרת ציון",
+        "address": "קניון מבשרת, מבשרת ציון",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": null,
+        "lastVerifiedAt": null
+      },
+      {
+        "id": "manual-b-fresh-harish",
+        "name": "B-Fresh",
+        "cityId": "חריש",
+        "address": "חריש",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": null,
+        "lastVerifiedAt": null
+      },
+      {
+        "id": "manual-b-fresh-shaarei-tzedek-jerusalem",
+        "name": "B-Fresh שערי צדק",
+        "cityId": "ירושלים",
+        "address": "בית חולים שערי צדק, ירושלים",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": null,
+        "lastVerifiedAt": null
+      },
+      {
+        "id": "manual-b-fresh-ben-yehuda-jerusalem",
+        "name": "B-Fresh בן יהודה",
+        "cityId": "ירושלים",
+        "address": "בן יהודה, ירושלים",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": null,
+        "lastVerifiedAt": null
+      },
+      {
+        "id": "manual-b-fresh-malha-jerusalem",
+        "name": "B-Fresh קניון מלחה",
+        "cityId": "ירושלים",
+        "address": "קניון מלחה, ירושלים",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": null,
+        "lastVerifiedAt": null
+      },
+      {
+        "id": "manual-b-fresh-mamilla-jerusalem",
+        "name": "B-Fresh ממילא",
+        "cityId": "ירושלים",
+        "address": "ממילא, ירושלים",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": null,
+        "lastVerifiedAt": null
+      },
+      {
+        "id": "manual-b-fresh-hadar-jerusalem",
+        "name": "B-Fresh קניון הדר",
+        "cityId": "ירושלים",
+        "address": "קניון הדר, ירושלים",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": null,
+        "lastVerifiedAt": null
+      },
+      {
+        "id": "manual-b-fresh-kfar-horeshe-migdal-haemek",
+        "name": "B-Fresh כפר חורש",
+        "cityId": "מגדל העמק",
+        "address": "כפר חורש, מגדל העמק",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": null,
+        "lastVerifiedAt": null
+      },
+      {
+        "id": "manual-b-fresh-nahamia-kiryat-shmona",
+        "name": "B-Fresh קניון נחמיה",
+        "cityId": "קרית שמונה",
+        "address": "קניון נחמיה, קרית שמונה",
+        "type": "juice_bar",
+        "kosherType": "mehadrin",
+        "source": null,
+        "lastVerifiedAt": null
+      },
+      {
+        "id": "petrozilia-1fb9547a",
+        "name": "פיטרוזיליה",
+        "cityId": "תל אביב",
+        "address": "רחוב אלוף מגן קלמן 3, תל אביב",
+        "type": "restaurant",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-02"
+      },
+      {
+        "id": "meat-night-1e53da1b",
+        "name": "מיט נייט",
+        "cityId": "תל אביב",
+        "address": "ויטל 2, תל אביב",
+        "type": "restaurant",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "schnitzel-company-e2e39dd8",
+        "name": "שניצל קומפני",
+        "cityId": "תל אביב",
+        "address": "יגאל אלון 94, תל אביב",
+        "type": "fast_food",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "florentina-c478e936",
+        "name": "פלורנטינה בר מסעדה",
+        "cityId": "תל אביב",
+        "address": "אברבנאל 56, תל אביב",
+        "type": "restaurant",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "oh-mama-kg26-986287b2",
+        "name": "הו מאמא",
+        "cityId": "תל אביב",
+        "address": "קינג' ג'ורג' 26, תל אביב",
+        "type": "restaurant",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "metro-burger-8268867c",
+        "name": "מטרו בורגר",
+        "cityId": "תל אביב",
+        "address": "מקווה ישראל 2, תל אביב",
+        "type": "fast_food",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "kaful-kitchen-73b8d921",
+        "name": "המטבח הכפול",
+        "cityId": "תל אביב",
+        "address": "נחלת בנימין 2, תל אביב",
+        "type": "restaurant",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "rachel-basdera-c1666d06",
+        "name": "רחל בשדרה",
+        "cityId": "תל אביב",
+        "address": "מתחם שרונה, אלוף קלמן מגן, תל אביב",
+        "type": "restaurant",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "shpachtel-303378c4",
+        "name": "השפכטל של רחל",
+        "cityId": "תל אביב",
+        "address": "שרונה מרקט, אלוף קלמן מגן 3, תל אביב",
+        "type": "fast_food",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "mixi-4eb00836",
+        "name": "מיקסי סלט בר",
+        "cityId": "תל אביב",
+        "address": "אלוף קלמן מגן 5, שרונה מרקט, תל אביב",
+        "type": "fast_food",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "tandoor-sharona-b60d9a9a",
+        "name": "טנדור",
+        "cityId": "תל אביב",
+        "address": "שרונה מרקט, אלוף קלמן מגן 7, תל אביב",
+        "type": "restaurant",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "rotisserie-sharona-303378c4",
+        "name": "רוטיסרי",
+        "cityId": "תל אביב",
+        "address": "שרונה מרקט, אלוף קלמן מגן 3, תל אביב",
+        "type": "restaurant",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "pita-basta-11616086",
+        "name": "פיתה בסטה",
+        "cityId": "תל אביב",
+        "address": "אלוף קלמן מגן 3, שרונה מרקט, תל אביב",
+        "type": "fast_food",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "mifgash-hasteak-3972eb7b",
+        "name": "מפגש הסטייק",
+        "cityId": "תל אביב",
+        "address": "דרך מנחם בגין 37, תל אביב",
+        "type": "restaurant",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "burgerim-karlibach-e3b5da81",
+        "name": "בורגרים",
+        "cityId": "תל אביב",
+        "address": "קרליבך 25, תל אביב",
+        "type": "fast_food",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "frame-sushi-6063e4b1",
+        "name": "פריים שף וסושי",
+        "cityId": "תל אביב",
+        "address": "המסגר 38, תל אביב",
+        "type": "restaurant",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "pizza-agvania-2121942f",
+        "name": "פיצה עגבניה",
+        "cityId": "תל אביב",
+        "address": "שינקין 19, תל אביב",
+        "type": "restaurant",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "ruben-rothschild-563b144d",
+        "name": "רובן",
+        "cityId": "תל אביב",
+        "address": "שדרות רוטשילד 45, תל אביב",
+        "type": "restaurant",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "agada-kabab-076735ae",
+        "name": "אגדה של קבב",
+        "cityId": "תל אביב",
+        "address": "חומה ומגדל 16, תל אביב",
+        "type": "fast_food",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "panino-nachalat-707b2b58",
+        "name": "Panino",
+        "cityId": "תל אביב",
+        "address": "נחלת בנימין 80, תל אביב",
+        "type": "restaurant",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "arais-herzl-ad299270",
+        "name": "עראיס מחנה יהודה",
+        "cityId": "תל אביב",
+        "address": "הרצל 12, תל אביב",
+        "type": "fast_food",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "night-shift-vital-ff3990b3",
+        "name": "נייט שיפט",
+        "cityId": "תל אביב",
+        "address": "חיים ויטל 9, תל אביב",
+        "type": "restaurant",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "turk-nachalat77-4dc1b310",
+        "name": "טורק לחמג'ון",
+        "cityId": "תל אביב",
+        "address": "נחלת בנימין 77, תל אביב",
+        "type": "restaurant",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "turk-yigal94-39c3a675",
+        "name": "טורק לחמג'ון",
+        "cityId": "תל אביב",
+        "address": "יגאל אלון 94, תל אביב",
+        "type": "restaurant",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "goshen-nachalat-02b4499b",
+        "name": "גשן",
+        "cityId": "תל אביב",
+        "address": "נחלת בנימין 30, תל אביב",
+        "type": "restaurant",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "almaz-mendel-7abaf346",
+        "name": "אלמז מנדל",
+        "cityId": "תל אביב",
+        "address": "ידידיה פרנקל 4, תל אביב",
+        "type": "restaurant",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "cafe-tov-benyehuda-e482f23c",
+        "name": "קפה טוב",
+        "cityId": "תל אביב",
+        "address": "בן יהודה 177, תל אביב",
+        "type": "cafe",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "pizza-bazzili-885fc6b3",
+        "name": "פיצה בזיליקום",
+        "cityId": "תל אביב",
+        "address": "אברבנאל 45, תל אביב",
+        "type": "restaurant",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "sabih-frishman-c5f90b20",
+        "name": "סביח פרישמן",
+        "cityId": "תל אביב",
+        "address": "יהודה מרגוזה 4, תל אביב",
+        "type": "fast_food",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "bureks-panso-a7b53b0f",
+        "name": "בורקס פנסו",
+        "cityId": "תל אביב",
+        "address": "לוינסקי 43, תל אביב",
+        "type": "bakery",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "shmullik-cohen-7a52898c",
+        "name": "מסעדת שמוליק כהן",
+        "cityId": "תל אביב",
+        "address": "הרצל 146, תל אביב",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "bureks-mis-1730c8ce",
+        "name": "בורקס מיס",
+        "cityId": "תל אביב",
+        "address": "שטרן 5, תל אביב",
+        "type": "bakery",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "shawarma-elias-78799a62",
+        "name": "שווארמה אליאס",
+        "cityId": "תל אביב",
+        "address": "המסגר 35, תל אביב",
+        "type": "fast_food",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "esther-hamalka-48c5be2f",
+        "name": "אסתר המלכה",
+        "cityId": "תל אביב",
+        "address": "רוטשילד 8, תל אביב",
+        "type": "restaurant",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "zoko-yigal94-03c551e7",
+        "name": "זוקו",
+        "cityId": "תל אביב",
+        "address": "יגאל אלון 94, תל אביב",
+        "type": "restaurant",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "pokeshop-bn-gavirol-bb53c92b",
+        "name": "פוקישופ",
+        "cityId": "תל אביב",
+        "address": "אבן גבירול 62, תל אביב",
+        "type": "restaurant",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "chicken-station-yigal-1b504751",
+        "name": "צ'יקן סטיישן",
+        "cityId": "תל אביב",
+        "address": "יגאל אלון 94, תל אביב",
+        "type": "fast_food",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "middle-east-nachmani-b255bb12",
+        "name": "מידל איסט",
+        "cityId": "תל אביב",
+        "address": "נחמני 67, תל אביב",
+        "type": "fast_food",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "pita-basar-3584d964",
+        "name": "פיתה בשר",
+        "cityId": "תל אביב",
+        "address": "נחלת בנימין 73, תל אביב",
+        "type": "fast_food",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "red-meat-nachalat-6f0131c6",
+        "name": "רד מיט",
+        "cityId": "תל אביב",
+        "address": "נחלת בנימין 75, תל אביב",
+        "type": "restaurant",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "cafe-taizu-sharona-259b7497",
+        "name": "קפה טאיזו",
+        "cityId": "תל אביב",
+        "address": "אלוף קלמן מגן 3, תל אביב",
+        "type": "restaurant",
+        "kosherType": "tzohar",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "donatello-ibn-gavirol-64c47e19",
+        "name": "פיצה דונטלו",
+        "cityId": "תל אביב",
+        "address": "אבן גבירול 123, תל אביב",
+        "type": "restaurant",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "carne-bar-yehudit-01784a36",
+        "name": "קרנה בר",
+        "cityId": "תל אביב",
+        "address": "שדרות יהודית 27, תל אביב",
+        "type": "restaurant",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "wok-sushi9-yigal129-1aec4a1b",
+        "name": "ווק סושי 9",
+        "cityId": "תל אביב",
+        "address": "יגאל אלון 129, תל אביב",
+        "type": "restaurant",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "babica-rothschild60-dffc1f2d",
+        "name": "באביקה",
+        "cityId": "תל אביב",
+        "address": "שדרות רוטשילד 60, תל אביב",
+        "type": "restaurant",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "sharon-paul-eilat22-f7181421",
+        "name": "שרון פול",
+        "cityId": "תל אביב",
+        "address": "אילת 22, תל אביב",
+        "type": "fast_food",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "port19-shlomo2-56313712",
+        "name": "פורט 19",
+        "cityId": "תל אביב",
+        "address": "שלמה המלך 2, תל אביב",
+        "type": "restaurant",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "biga-kaplan26-acb8be62",
+        "name": "ביגה",
+        "cityId": "תל אביב",
+        "address": "אליעזר קפלן 26, תל אביב",
+        "type": "cafe",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "falafel-gina-e91889fe",
+        "name": "פלאפל ג'ינה",
+        "cityId": "תל אביב",
+        "address": "שוקן 22, תל אביב",
+        "type": "fast_food",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "itzik-hagadol-jlm2-265f4957",
+        "name": "איציק הגדול השווארמה",
+        "cityId": "תל אביב",
+        "address": "שדרות ירושלים 2, תל אביב",
+        "type": "restaurant",
+        "kosherType": "rabanut_tel_aviv",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-04"
+      },
+      {
+        "id": "jer-3f247121",
+        "name": "קפה גן סיפור",
+        "cityId": "ירושלים",
+        "address": "גן סאקר, ירושלים",
+        "type": "cafe",
+        "kosherType": "badatz_beit_yosef",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-05"
+      },
+      {
+        "id": "jer-7e890be8",
+        "name": "פיצה יהלי סנדויץ",
+        "cityId": "ירושלים",
+        "address": "רמת הגולן 8, ירושלים",
+        "type": "fast_food",
+        "kosherType": "mehadrin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-05"
+      },
+      {
+        "id": "jer-2ad9e93b",
+        "name": "קצפת",
+        "cityId": "ירושלים",
+        "address": "פארן 9, ירושלים",
+        "type": "ice_cream_parlor",
+        "kosherType": "badatz_rubin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-05"
+      },
+      {
+        "id": "jer-6aee27e9",
+        "name": "ביג אפל פיצה",
+        "cityId": "ירושלים",
+        "address": "פארן 9, ירושלים",
+        "type": "fast_food",
+        "kosherType": "badatz_rubin",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-05"
+      },
+      {
+        "id": "jer-7f6d613c",
+        "name": "פיצה רמיני פלוס",
+        "cityId": "ירושלים",
+        "address": "פארן 11, ירושלים",
+        "type": "fast_food",
+        "kosherType": "rabanut_mehadrin_jerusalem",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-05"
+      },
+      {
+        "id": "jer-fc71ad18",
+        "name": "Karve Takeaway",
+        "cityId": "ירושלים",
+        "address": "תובל 1, ירושלים",
+        "type": "restaurant",
+        "kosherType": "badatz_edah",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-05"
+      },
+      {
+        "id": "jer-2a304648",
+        "name": "שאבעסBISTRO",
+        "cityId": "ירושלים",
+        "address": "אבן שפרוט 5, ירושלים",
+        "type": "restaurant",
+        "kosherType": "badatz_kehilot",
+        "source": "manual",
+        "lastVerifiedAt": "2026-08-05"
+      }
+    ]
+  },
+  "part6": {
+    "taxonomy": "REMOVE / RECOVER / PRESERVE / REPRESENT — disjoint by construction (RECOVER/REPRESENT/contradicting all require certifiedBy present; REMOVE requires it absent)",
+    "REMOVE": {
+      "count": 323,
+      "note": "= Part 2 fullyUnsupportedCount exactly, no double-count risk with RECOVER since RECOVER requires certifiedBy present."
+    },
+    "RECOVER": {
+      "cleanSingleBodyCount": 251,
+      "compoundMultiBodyCount": 9,
+      "totalCandidateCount": 260,
+      "byCertifiedBy": {
+        "בד\"ץ בית יוסף": 73,
+        "בית יוסף": 27,
+        "הרב לנדא": 20,
+        "רב מחפוד": 17,
+        "כשרות הרב מחפוד": 15,
+        "כשרות הרב לנדא": 8,
+        "בד\"ץ עדה חרדית": 7,
+        "בד\"ץ העדה החרדית": 7,
+        "כשר למהדרין בהשגחת הרב מחפוד": 5,
+        "רב לנדא": 5,
+        "כשרות בד\"ץ הרב רובין": 4,
+        "כשר בד\"ץ": 4,
+        "בד\"ץ יורה דעה הרב מחפוד": 4,
+        "בד\"ץ קהילות": 3,
+        "חתם סופר פתח תקווה": 3,
+        "בד\"צ בית יוסף": 2,
+        "הרב רובין": 2,
+        "הרב מחפוד": 2,
+        "חתם סופר": 2,
+        "רב רובין": 2
+      },
+      "compoundSamples": [
+        {
+          "id": "9100000",
+          "certifiedBy": "כשרות רבנות ובד\"ץ"
+        },
+        {
+          "id": "manual-winery-bahat",
+          "certifiedBy": "בד\"ץ מהדרין — ועד הרבנים"
+        },
+        {
+          "id": "manual-winery-la-foret-blanche",
+          "certifiedBy": "בד\"ץ בית יוסף + רבנות הר חברון"
+        },
+        {
+          "id": "manual-winery-psagot",
+          "certifiedBy": "רבנות מטה בנימין + בית יוסף + הרב לנדא"
+        },
+        {
+          "id": "manual-winery-teperberg",
+          "certifiedBy": "בד\"ץ העדה החרדית + רבנות מטה יהודה"
+        },
+        {
+          "id": "manual-hindik-safed",
+          "certifiedBy": "בד\"ץ עדה חרדית ובד\"ץ בית יוסף"
+        },
+        {
+          "id": "manual-pastella-kiryat-sefer",
+          "certifiedBy": "בד\"ץ העדה החרדית ורבנות מודיעין עילית"
+        },
+        {
+          "id": "manual-gehalim-rehovot",
+          "certifiedBy": "בד\"ץ בית יוסף ובהשגחת הרב מחפוד"
+        },
+        {
+          "id": "manual-maafe-neeman-bnei-brak-baser",
+          "certifiedBy": "בד\"ץ אגודת ישראל והרבנות המקומית"
+        }
+      ],
+      "note": "Independently reconciled against kosher-app-19's reported 208: top-entry counts match exactly (בד\"ץ בית יוסף=73, בית יוסף=27, רב מחפוד=16, כשרות הרב מחפוד=15, הרב לנדא=12, כשרות הרב לנדא=8, בד\"ץ העדה החרדית=7 — all confirmed identical). My total (cleanSingleBodyCount) differs because it additionally excludes the 10 already-flagged contradiction records (avoiding double-count with the Phase-1-amendment set) and separates out compound multi-body strings as their own bucket rather than folding them into a single-authority recovery count."
+    },
+    "contradicting": {
+      "count": 10,
+      "ids": [
+        "9100000",
+        "coffeetrail-shisho-caffe",
+        "coffeetrail-al-havadi",
+        "coffeetrail-caffe-lago",
+        "coffeetrail-katerina",
+        "coffeetrail-mesheksegal",
+        "coffeetrail-hkafelyadhnahal",
+        "coffeetrail-emanuel",
+        "coffeetrail-karamela",
+        "coffeetrail-galita"
+      ],
+      "note": "The Phase 1 amendment's 10 — evidenced but evidence disagrees with the claim. Excluded from RECOVER (recovering TO the contradicted claim would be wrong) and from PRESERVE (contradiction disqualifies preservation)."
+    },
+    "PRESERVE": {
+      "count": 1437,
+      "note": "Evidenced (alias-resolved, null-authority-resolved, or cert-backed) AND not in the 10-record contradiction set."
+    },
+    "REPRESENT": {
+      "count": 333,
+      "byCertifiedBy": {
+        "מהדרין": 121,
+        "רבנות ירושלים מהדרין": 39,
+        "כשר למהדרין": 32,
+        "רבנות מקומית מהדרין": 19,
+        "רבנות מהדרין": 8,
+        "בד\"ץ": 5,
+        "רבנות גדרה מהדרין": 5,
+        "רבנות בית שמש מהדרין": 4,
+        "בד\"ץ מהדרין רבנות מודיעין עילית": 4,
+        "רבנות רחובות מהדרין": 4,
+        "רבנות נתניה מהדרין": 4,
+        "רבנות הרצליה מהדרין": 3,
+        "רבנות פתח תקווה מהדרין": 3,
+        "רבנות תל אביב": 3,
+        "כשר מהדרין": 2
+      }
+    }
+  }
+}
