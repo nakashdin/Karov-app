@@ -37,6 +37,9 @@ jobs:
       - name: Test
         run: npm run test:ci
 
+      - name: Test (scripts/ guards — not covered by jest's roots)
+        run: npm run test:scripts
+
       - name: Validate dataset
         run: npm run data:validate
 
