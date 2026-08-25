@@ -19,12 +19,16 @@
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { execSync } from 'node:child_process';
+import { isCertifiedByAppendOnlyViolation } from './shared/kashrut-write.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const BASELINE_PATH = resolve(root, 'scripts', 'data-quality-baseline.json');
+const REGISTRY_PATH = resolve(root, 'scripts', 'reports', 'kashrut-registry.json');
 
 const PLACES_PATH = resolve(root, 'src/data/generated/places.osm.json');
 const CITIES_PATH = resolve(root, 'src/data/generated/cities.osm.json');
+const PLACES_REL = 'src/data/generated/places.osm.json';
 
 /** Keep in sync with PlaceType in src/types/place.ts. */
 const PLACE_TYPES = new Set([
@@ -57,6 +61,9 @@ const FOOD_TYPES = new Set([
 /** Generous bounding box around Israel; a point outside it is a data error. */
 const BBOX = { minLat: 29.3, maxLat: 33.4, minLng: 34.2, maxLng: 35.95 };
 
+/** kosherType values that assert a specific kashrut level (Batch B1, FACTS §5b). */
+const LEVEL_ASSERTING_KOSHER_TYPES = new Set(['mehadrin', 'rabanut_mehadrin', 'rabanut_mehadrin_jerusalem']);
+
 const hard = [];
 const counts = {
   total: 0,
@@ -71,10 +78,68 @@ const counts = {
   // two ask the honest question instead; see docs/DATA_ARCHITECTURE.md §10 B6.
   kashrutAuthorityUnknown: 0,
   freeTextCertifierUnmapped: 0,
+  // Site A + site B of the 358 authority->level inference defect (FACTS
+  // §5b): kosherType asserts a level, but the record's own certifiedBy names
+  // a specific registered authority — the level was invented from the body,
+  // never stated by the text. TARGET IS 0, NOT "STAY AT 343": the Batch B
+  // dataset operation that sets these 358 records' kosherLevel to explicit
+  // null (FACTS §5b "Batch B remediation — approved shape") drives this to
+  // 0. When that operation lands, this entry MUST convert from a
+  // RATCHET_KEYS entry to a HARD failure in the same commit — at 0 there is
+  // no cost to unconditional enforcement, and leaving it a ratchet at 0
+  // would let a future regression be `--update`d away by someone who reads
+  // the ratchet as a preference rather than a bug. This is not a TODO to
+  // rediscover later; it is a condition of accepting this ratchet at all.
+  levelAssertedOverNamedBody: 0,
 };
 
 function fail(msg) {
   hard.push(msg);
+}
+
+/**
+ * Registry alias -> {authorityId, level}, for the levelAssertedOverNamedBody
+ * check. Returns null (not throw) if the registry can't be read — that check
+ * is then skipped for this run rather than failing the whole gate on an
+ * unrelated file-availability problem.
+ */
+function loadAliasMap() {
+  if (!existsSync(REGISTRY_PATH)) return null;
+  try {
+    const registry = JSON.parse(readFileSync(REGISTRY_PATH, 'utf8').replace(/^﻿/, ''));
+    return new Map((registry.aliases ?? []).map((a) => [a.raw, a]));
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * id -> certifiedBy as committed at HEAD, for the certifiedBy append-only
+ * check (B1.1). Returns null if HEAD can't be read (no git, no HEAD yet,
+ * file untracked) — the check is then skipped rather than false-failing.
+ *
+ * CONSEQUENCE, stated so "the validator is green" is never misread as
+ * "certifiedBy has never been overwritten": this check is relative to HEAD,
+ * not to true history. A destructive overwrite that gets COMMITTED becomes
+ * the new HEAD and is invisible to every future run of this check — it can
+ * only ever catch an overwrite happening in the SAME uncommitted change that
+ * introduced it. That is still real protection (it fires at exactly the
+ * moment a script would otherwise silently destroy evidence, which is where
+ * it matters most), but it is a ratchet against further loss from here, not
+ * proof nothing has ever been lost.
+ */
+function loadHeadCertifiedByMap() {
+  try {
+    const raw = execSync(`git show HEAD:${PLACES_REL}`, { cwd: root, encoding: 'utf8', maxBuffer: 1024 * 1024 * 64 });
+    const headPlaces = JSON.parse(raw.replace(/^﻿/, ''));
+    const map = new Map();
+    for (const p of headPlaces) {
+      if (p && typeof p.id === 'string') map.set(p.id, p.certifiedBy);
+    }
+    return map;
+  } catch {
+    return null;
+  }
 }
 
 function readJson(path, label) {
@@ -107,6 +172,10 @@ if (hard.length === 0) {
   const badType = [];
   const structural = [];
   const shorthandLoc = [];
+  const certifiedByOverwrites = [];
+
+  const aliasMap = loadAliasMap();
+  const headCertifiedBy = loadHeadCertifiedByMap();
 
   counts.total = places.length;
 
@@ -156,6 +225,28 @@ if (hard.length === 0) {
     if (FOOD_TYPES.has(p.type) && p.certifiedBy && p.certifierId === undefined) {
       counts.freeTextCertifierUnmapped++;
     }
+    // Site A + site B (FACTS §5b): the level was invented from a named body,
+    // never stated by the source text. Resolved via the registry alias map
+    // (the Method Lesson from FACTS §4 — raw-string matching misses
+    // gershayim/spelling variants), not a substring/keyword heuristic.
+    if (
+      FOOD_TYPES.has(p.type) &&
+      LEVEL_ASSERTING_KOSHER_TYPES.has(p.kosherType) &&
+      p.certifiedBy &&
+      aliasMap?.get(p.certifiedBy)?.authorityId
+    ) {
+      counts.levelAssertedOverNamedBody++;
+    }
+
+    // ── HARD (B1.1): certifiedBy is append-only relative to HEAD ─────────────
+    if (headCertifiedBy && headCertifiedBy.has(p.id)) {
+      const prior = headCertifiedBy.get(p.id);
+      if (isCertifiedByAppendOnlyViolation(prior, p.certifiedBy)) {
+        certifiedByOverwrites.push(
+          `${p.id}: was ${JSON.stringify(prior)}, now ${JSON.stringify(p.certifiedBy ?? null)}`,
+        );
+      }
+    }
   }
 
   const cap = (label, list, limit = 10) => {
@@ -173,6 +264,12 @@ if (hard.length === 0) {
       'run node scripts/fix-location-shape.mjs',
     shorthandLoc,
   );
+  cap(
+    'certifiedBy overwritten since HEAD — this field is source evidence and append-only (B1.1); ' +
+      'a value may only be set from empty or extended, never replaced. If this is a deliberate correction, ' +
+      'route it through recordKashrutWrite() with a documented basis rather than assigning it directly',
+    certifiedByOverwrites,
+  );
 }
 
 // ── Ratchet comparison ────────────────────────────────────────────────────────
@@ -185,6 +282,7 @@ const RATCHET_KEYS = [
   'missingSource',
   'kashrutAuthorityUnknown',
   'freeTextCertifierUnmapped',
+  'levelAssertedOverNamedBody',
 ];
 
 const baseline = existsSync(BASELINE_PATH)
