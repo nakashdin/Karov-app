@@ -531,6 +531,135 @@ as certified**.
 
 ---
 
+## 13. Batch B1 — the write choke point, and the governable population
+
+`scripts/shared/kashrut-write.mjs` (`recordKashrutWrite`) is the one place every kashrut-field write is
+meant to route through. Built because a hand-maintained list of "the scripts that matter" had already
+been wrong twice in this project — a 4-name starting list covered roughly a quarter of the real surface,
+and one of the four names didn't exist at the claimed path. A choke point is producer-agnostic by
+construction: it governs every future write regardless of which of the ~71 existing writer scripts (34
+literal, ~37 dynamic/computed) a record's history runs through, and regardless of scripts nobody has
+enumerated yet.
+
+**The governable population is 845, not 204 or 358.** 845 = every live record whose `kosherType` asserts a
+level (`mehadrin` 769, `rabanut_mehadrin` 69, `rabanut_mehadrin_jerusalem` 7). Of those, **343** currently
+have a `certifiedBy` that resolves — via the registry alias map, not raw-string matching — to a named,
+registered authority: the level was invented from the body, never stated by the text. This is the *general*
+predicate the choke point enforces going forward. 204 ("site B") and 358 (site A + site B combined) are
+specific *historical* counts of how the current 358 unlicensed mehadrin records got that way — real, and
+separately tracked in §5b — but neither is the population a level-assertion guard should be scoped to. A
+guard scoped to 204 would report against roughly a quarter of the actual problem while looking complete.
+
+**`basis` is a tagged union, not a free-text string.** `{kind: 'registry-alias', alias, aliasLevel}`,
+`{kind: 'certificate-document', url}`, `{kind: 'human-review', note}`, `{kind: 'enum-inference',
+fromKosherType}`, `{kind: 'backfilled-inference', method}` — each kind requires different fields, so a
+caller cannot construct a `backfilled-inference` write that is indistinguishable in shape from a
+`registry-alias` write. If the two differed only by which string tag a caller happened to pass, that
+would be a convention — and a convention is exactly how `kosherLevel: 'mehadrin'` came to look like a fact
+in the first place (§5b). A level-asserting write is only accepted when `basis.kind` is
+`'registry-alias'` with `aliasLevel: 'mehadrin'`, `'certificate-document'`, or `'human-review'` —
+`'enum-inference'` is rejected unconditionally, because it is exactly the site-A/site-B mechanism.
+
+**Enforcement is runtime-only, not compiler-enforced, and this must not be overstated.**
+`tsconfig.json` excludes both `importers` and `scripts` from `include` — `npm run typecheck` never
+type-checks any caller of `recordKashrutWrite`, in either directory. The `KashrutBasis` type is
+documentation and editor assistance; the actual gate is the runtime validation inside the function
+itself, which throws on both invariant violations regardless of whether the caller is typed at all. Do not
+describe this mechanism as "the compiler enforces it" — that claim is true of `getKosherLabel` /
+`kosherTypeLabel` in `src/utils/kosher.ts` (which IS inside `src/`, and IS type-checked), not of anything
+under `scripts/` or `importers/`.
+
+**The certifiedBy append-only rule (B1.1) deliberately does not tolerate normalization**, including a
+gershayim/ASCII-quote fix identical in kind to the one already made to `nameHe` in this same registry.
+`certifiedBy` is source text, not our interpretation (§1); alias `raw` strings must match byte-for-byte
+for the same reason (§9). A future cleanup of `certifiedBy`, if ever wanted, is a separate, deliberate
+decision — not something this routine append-only path may perform quietly, because that decision carries
+a religious-evidence dimension a routine code path must never resolve on its own.
+
+**The validator-side check (`scripts/validate-data.mjs`) is relative to HEAD, not to true history**, and
+this consequence must not be forgotten: it compares the current dataset against `git show HEAD:...`, so an
+overwrite that gets COMMITTED becomes the new HEAD and is invisible to every future run — the check can
+only ever catch an overwrite happening in the same uncommitted change that introduces it. That is real
+protection (it fires at exactly the moment a script would otherwise silently destroy evidence), but "the
+validator is green" must never be read as "certifiedBy has never been overwritten." Defense in depth is two
+layers on purpose: the helper stops a bad write before it reaches disk; the validator catches anything that
+bypassed the helper.
+
+**The exclusion list is frozen.** The ~71 existing writer scripts that assign a kashrut field directly are
+not retrofitted to call the helper — most already ran once and will not run again. They are enumerated,
+categorized, and reasoned in `scripts/shared/__tests__/kashrut-write-completeness.test.mjs`; the list only
+shrinks (a script migrated to the helper), never grows (a new bypass is a test failure, not a list edit).
+
+---
+
+## 14. `kosher.ts:138` — a correct rule applied to a structurally different case
+
+Recorded in the Implementer's own words, because the mistake generalises past this one line.
+
+Before Batch B1, `getKosherLabel`'s structured-fields branch was gated by `kosherAuthorityGroup ||
+kosherLevel` — a truthiness check. Making `kosherLevel: null` a real, meaningful value (§13) meant
+auditing every read site for null-safety. The check applied here was: does `null` take the identical path
+to `undefined`? For this line, yes — `null || anything` and `undefined || anything` both evaluate the
+right operand. That is exactly the property Batch A required of `certifierId` (§1: null and absent
+"MUST fall through to the exact same code path"), and it had been sufficient there. Concluding it was
+sufficient here, and stopping, was the error.
+
+It wasn't sufficient because the two fields fall through to different places. `certifierId` falling
+through lands on a fallback chain that never mentions `certifierId` again — "identical to undefined" is
+the whole story, nothing downstream cares which one it was. `kosherLevel` falling through at this line
+lands on `place.kosherType ? kosherTypeLabel[kosherType] : null` — and `kosherType` is the **legacy field
+that still asserts the very level the null was recording as withheld** (§1: "legacy, still rendered").
+A record with `kosherLevel: null`, no `kosherAuthorityGroup`, and a legacy `kosherType: 'mehadrin'` still
+sitting on it (true of every record before this batch, and of the §5c population going forward) would
+skip the whole structured block and land right back on `kosherTypeLabel['mehadrin']` → `'מהדרין'` —
+resurrecting, in the fallback path, exactly the claim the explicit null was recording as withheld.
+
+**The generalisable lesson:** tracing that a value "falls through safely" is not the same as tracing what
+it falls through *to*. A correct, previously-load-bearing rule (null/undefined parity) applied without
+re-verifying that the destination is structurally the same in the new case is one of the harder classes of
+mistake to catch, precisely because the reasoning that produces it feels rigorous — it cites a real,
+previously-correct precedent. The fix: `kosherAuthorityGroup || kosherLevel !== undefined` — behaviour-
+identical on every record that exists today (kosherLevel is never null in the live dataset yet, so
+`!== undefined` and truthiness agree on every value that currently occurs), and correct for the
+not-yet-existing `null` case, which now enters the structured block and lands on `'גוף כשרות לא ידוע'`
+instead of the legacy claim.
+
+A second instance of the identical error pattern was caught one level up, in the test written to cover
+this fix, before it shipped: a test asserted `kosherLevel: null` and `kosherLevel: undefined` produce
+identical output when nothing else is set on the record, again by analogy to `certifierId`. Running it
+(not just reading it) showed the analogy doesn't hold at that fixture either — they correctly diverge
+(`null` → `'גוף כשרות לא ידוע'`, `undefined` → `null`, since `kosherType` is also unset in that fixture) —
+and the test was rewritten to assert the divergence instead of the identity. The lesson applies to tests
+as much as to implementation code: an imported precedent needs re-verification at every site it's applied
+to, including the site that's supposed to be checking the fix.
+
+---
+
+## 15. `levelAssertedOverNamedBody` — a ratchet with a closing condition, not permanent furniture
+
+`scripts/validate-data.mjs`'s new ratchet key, baselined at **343** (§13's population, resolved via the
+registry alias map). Deliberately a ratchet and not a hard failure: a hard, unconditional failure on a
+predicate 343 live records already violate would leave `npm run verify` — and CI — red until the Batch B
+dataset write happens, and that write is explicitly not authorized yet (owner is weighing the disclosed
+Bnei Brak coverage loss, §5b). A ratchet blocks a *new* violation exactly as hard as a hard failure would;
+it does not require the unapproved data change just to keep a code-only batch green.
+
+**The condition attached to accepting this as a ratchet, not a deferred problem:** 343 must not become
+permanent furniture that everyone reads as "fine" because it's green. Two obligations, both binding:
+
+1. The baseline entry's comment (in `scripts/validate-data.mjs`, next to the `counts` initializer) must
+   name the target — **0** — and the specific operation that closes it: the Batch B data write that sets
+   the 358 records' `kosherLevel` to explicit `null` (§5b, "Batch B remediation — approved shape"). Not a
+   vague "should improve."
+2. **The moment that write lands and drives the count to 0, `levelAssertedOverNamedBody` MUST convert from
+   a `RATCHET_KEYS` entry to a HARD failure, in the same commit as the data write.** At 0 there is no cost
+   to unconditional enforcement, and leaving it a ratchet at 0 would mean a future regression could be
+   `--update`d away by someone who reads a ratchet ceiling as a preference rather than a bug. This is a
+   condition of the Batch B data-write commit being considered complete, not a follow-up TODO to
+   rediscover later.
+
+---
+
 ## Superseded numbers — do not requote
 
 | Wrong | Correct | Why |
@@ -548,3 +677,6 @@ as certified**.
 | "11 body-less mehadrin aliases" | **9** | alias count, relayed unverified |
 | getKosherLabel changes 720 records | **545** | 175 were gershayim-only artifacts of the simulation; see §6 |
 | migrate-kosher-fields.mjs guard blind spot = 614 | **633** (no certifiedBy, MAP-enrichable) / **111** (of those, named authority) | 614 is Phase 1's category-4, a different predicate (requires already-enriched) |
+| B1.2 level-guard population = 204 ("site B") | **845** carry a level-asserting `kosherType`; **343** of those violate the general predicate today | 204 is a historical site-B-only count inside the 358; the choke point governs the general population, not one historical mechanism; see §13 |
+| B1.2 starting writer list = golda / coffeetrail / rebar / apply-chains-research | **~71 files** (34 literal, ~37 dynamic); only rebar of the four is a real literal writer at the claimed path | `scripts/import-coffeetrail.mjs` doesn't exist (real: `importers/coffee-carts/scrape-coffeetrail.mjs`); golda/coffeetrail assign dynamically, not literally; see §13 |
+| `kosher.ts:138` null/undefined parity (assumed safe by analogy to certifierId) | **unsafe** — falls through to the legacy `kosherType` label, which still asserts the withheld claim | see §14 |
