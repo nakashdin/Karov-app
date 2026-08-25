@@ -107,6 +107,16 @@ describe('filterPlaces — exact filters', () => {
     expect(ids(filterPlaces(PLACES, { mehadrinOnly: true }))).toEqual(['2']);
   });
 
+  // Batch B1: kosherLevel: null (deliberately undetermined, FACTS §5b) must
+  // be excluded from mehadrinOnly exactly like undefined is — not included
+  // via a truthiness/null quirk. filterPlaces.ts:37 already uses strict
+  // `!==`, so this was safe before the type even allowed null; this test
+  // locks that in now that the value is real.
+  it('mehadrinOnly excludes kosherLevel: null exactly like it excludes undefined', () => {
+    const withNullLevel = place({ id: '12', name: 'מסעדה בלי רמה', type: 'restaurant', kosherLevel: null });
+    expect(ids(filterPlaces([...PLACES, withNullLevel], { mehadrinOnly: true }))).toEqual(['2']);
+  });
+
   it('matches kosherAuthorityGroup at group level', () => {
     expect(ids(filterPlaces(PLACES, { kosherAuthorityGroup: 'rabbinate' }))).toEqual(['6']);
     expect(ids(filterPlaces(PLACES, { kosherAuthorityGroup: 'badatz' }))).toEqual(['2']);

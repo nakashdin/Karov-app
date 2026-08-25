@@ -134,8 +134,12 @@ export function getKosherLabel(place: Pick<Place, 'kosherType' | 'kosherLevel' |
 
   const { kosherLevel, kosherAuthorityGroup, kosherAuthority } = place;
 
-  // Use structured fields when available
-  if (kosherAuthorityGroup || kosherLevel) {
+  // Use structured fields when available. `kosherLevel !== undefined` (not a
+  // truthiness check) is deliberate: kosherLevel: null is a meaningful,
+  // deliberately-undetermined state (Batch B1), and treating it as falsy
+  // would fall through to the legacy `kosherType` label below — resurrecting
+  // the exact fabricated-level claim the null was recording as withheld.
+  if (kosherAuthorityGroup || kosherLevel !== undefined) {
     if (kosherAuthority) {
       const byAuthority: Record<string, string> = {
         rabbinate_tel_aviv:      'רבנות תל אביב',

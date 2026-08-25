@@ -85,8 +85,14 @@ export interface Place {
   category?: KosherCategory;
   /** Legacy field — original certification key. Do not remove. */
   kosherType?: KosherType;
-  /** 'regular' | 'mehadrin' — the kashrut standard level. */
-  kosherLevel?: 'regular' | 'mehadrin';
+  /**
+   * 'regular' | 'mehadrin' — the kashrut standard level. `null` means
+   * deliberately undetermined: the evidence names a certifying authority but
+   * states no level (the mirror of `certifierId: null`, opposite axis — see
+   * that field's comment). Absence means never migrated / genuinely unknown.
+   * Do not conflate the two — that collapse is exactly the Batch B1 defect.
+   */
+  kosherLevel?: 'regular' | 'mehadrin' | null;
   /** High-level certification group: 'rabbinate' | 'badatz' | 'independent' | 'unknown'. */
   kosherAuthorityGroup?: 'rabbinate' | 'badatz' | 'independent' | 'unknown';
   /** Specific certifying body key (null when group is known but body is not). */
