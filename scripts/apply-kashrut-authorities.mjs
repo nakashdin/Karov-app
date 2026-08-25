@@ -28,6 +28,7 @@
 import { readFileSync, writeFileSync, copyFileSync, mkdirSync, existsSync } from 'node:fs';
 import { resolve, dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { recordKashrutWrite } from './shared/kashrut-write.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const PLACES = resolve(root, 'src/data/generated/places.osm.json');
@@ -76,6 +77,18 @@ let reviewQueueSkipped = 0;
 let noCertifiedBy = 0;
 let noAliasMatch = 0;
 const noAliasMatchSamples = [];
+// Every write below routes through the B1.4 choke point instead of a direct
+// `p.field =` assignment — this was the one path apply-kashrut-authorities.mjs
+// still bypassed after Batch B1, and it is the script that will perform the
+// actual Batch B dataset write, so it is the one bypass that matters most to
+// close first (KASHRUT_FACTS §16). basis: 'registry-alias' for all three
+// fields, citing the SAME alias entry this script already resolved from the
+// registry — recordKashrutWrite re-verifies aliasLevel against the registry
+// itself (not just this script's own copy of it) before allowing a
+// level-asserting kosherLevel write through. A thrown violation here is
+// treated as a problem, not a crash: it is recorded and the run refuses to
+// write, exactly like every other check in this file's verification pass.
+const helperViolations = [];
 
 for (const p of places) {
   if (!p.certifiedBy) {
@@ -93,29 +106,34 @@ for (const p of places) {
     continue;
   }
 
-  matchedAlias++;
-  p.certifierId = alias.authorityId; // rule b — set even when null
+  const basis = { kind: 'registry-alias', alias: p.certifiedBy, aliasLevel: alias.level };
+  try {
+    matchedAlias++;
+    recordKashrutWrite(p, 'certifierId', alias.authorityId, basis); // rule b — set even when null
 
-  if (alias.authorityId === null) certifierIdNull++;
-  else certifierIdNonNull++;
+    if (alias.authorityId === null) certifierIdNull++;
+    else certifierIdNonNull++;
 
-  if (alias.level && !p.kosherLevel) {
-    p.kosherLevel = alias.level; // rule c
-    kosherLevelSet++;
-  }
-
-  if (alias.authorityId !== null) {
-    const group = groupById.get(alias.authorityId);
-    if (group && (p.kosherAuthorityGroup === undefined || p.kosherAuthorityGroup === 'unknown')) {
-      p.kosherAuthorityGroup = group; // rule d
-      kosherAuthorityGroupSet++;
+    if (alias.level && !p.kosherLevel) {
+      recordKashrutWrite(p, 'kosherLevel', alias.level, basis); // rule c
+      kosherLevelSet++;
     }
+
+    if (alias.authorityId !== null) {
+      const group = groupById.get(alias.authorityId);
+      if (group && (p.kosherAuthorityGroup === undefined || p.kosherAuthorityGroup === 'unknown')) {
+        recordKashrutWrite(p, 'kosherAuthorityGroup', group, basis); // rule d
+        kosherAuthorityGroupSet++;
+      }
+    }
+  } catch (err) {
+    helperViolations.push(`${p.id}: recordKashrutWrite refused a write — ${err.message}`);
   }
 }
 
 // ── verification (runs on the in-memory proposed state, dry-run or not) ────
 
-const problems = [];
+const problems = [...helperViolations];
 
 if (places.length !== beforeCount) {
   problems.push(`record count changed: ${beforeCount} → ${places.length}`);
@@ -220,6 +238,7 @@ console.log(`  0 null-certifierId records had group changed : ${nullCertifierGro
 console.log(`  every non-null certifierId exists in registry : ${unregisteredCertifierId === 0 ? 'OK' : `FAIL (${unregisteredCertifierId})`}`);
 console.log(`  NO LEVEL UPGRADE (regular→mehadrin or any change to an existing level) : ${levelUpgraded === 0 ? 'OK' : `CRITICAL FAIL (${levelUpgraded})`}`);
 console.log(`  certifiedBy / certificateValidUntil byte-identical : ${certEvidenceMoved === 0 ? 'OK' : `FAIL (${certEvidenceMoved})`}`);
+console.log(`  0 recordKashrutWrite refusals : ${helperViolations.length === 0 ? 'OK' : `FAIL (${helperViolations.length})`}`);
 
 if (CRITICAL.length) {
   console.error('\n  ⚠ CRITICAL — level upgrade detected, refusing regardless of --apply:');
@@ -251,6 +270,7 @@ const report = {
     allCertifierIdsRegistered: unregisteredCertifierId === 0,
     noLevelUpgrade: levelUpgraded === 0,
     certEvidenceUntouched: certEvidenceMoved === 0,
+    noHelperViolations: helperViolations.length === 0,
   },
   critical: CRITICAL,
   problems: problems.slice(0, 200),

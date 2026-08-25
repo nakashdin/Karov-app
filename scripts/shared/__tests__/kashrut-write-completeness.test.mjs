@@ -90,12 +90,9 @@ const ONE_SHOT_CHAIN_REASON = 'One-shot chain/branch import, already executed on
 const ONE_SHOT_PATCH_REASON = 'One-shot targeted patch for specific records, already executed once.';
 
 const FROZEN_EXCLUSIONS = [
-  // ── re-runnable-utility (3) ────────────────────────────────────────────
+  // ── re-runnable-utility (2 remaining; apply-kashrut-authorities.mjs migrated to the helper) ──
   { file: 'scripts/migrate-kosher-fields.mjs', category: 're-runnable-utility',
     note: 'The MAP itself (FACTS §2, §5b site A). Writes kosherLevel/kosherAuthorityGroup/kosherAuthority. ' + RE_RUNNABLE_UTILITY_REASON },
-  { file: 'scripts/apply-kashrut-authorities.mjs', category: 're-runnable-utility',
-    note: 'Writes certifierId/kosherLevel/kosherAuthorityGroup. Fully built and dry-run-tested but never run ' +
-      'with --apply — certifierId is 0/7471 live today (confirmed). ' + RE_RUNNABLE_UTILITY_REASON },
   { file: 'importers/tzohar/import-food.mjs', category: 're-runnable-utility',
     note: 'Found via data-derived sweep, not the original .ts-only scope (it is .mjs) — exactly the class of ' +
       'miss this method exists to catch. Writes certifiedBy/kosherType/kosherAuthority/kosherAuthorityGroup/' +
