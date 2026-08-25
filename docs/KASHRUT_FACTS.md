@@ -196,6 +196,30 @@ tiers** (`רבנות X` at null beside `רבנות מהדרין X` at mehadrin),
 explicit `regular`. Their single-tier appearance is a **small-sample artifact of which branches happen to be
 in the dataset**, not a property of the body. Generalising from it is the same inference under a new name.
 
+### The 358 have TWO inference sites — and only one is fixed by fixing the MAP
+
+Reproduced independently by the Reviewer and the Architect. Full audit in
+[`audit-358-level-removal.md`](audit-358-level-removal.md).
+
+| Site | n | `kosherType` | What happened |
+|---|---|---|---|
+| **A — the migration MAP** | **154** | `badatz_beit_yosef` 126, `badatz_edah` 25, `rav_machpud` 3 | `kosherType` faithfully records the **body**; the MAP added the level |
+| **B — upstream, before the MAP** | **204** | `mehadrin` 191, `rabanut_mehadrin` 13 | `kosherType` **already asserted a level**; the MAP only copied it |
+
+The split correlates perfectly with `kosherAuthority`: **154/154** in A carry one, **0/204** in B do.
+
+Site B is the worse defect. Its source text is `בד״ץ בית יוסף` 73×, `בית יוסף` 27×, `הרב לנדא` 20×,
+`רב מחפוד` 16× — text naming a body and no level. Whoever wrote `kosherType: 'mehadrin'` there recorded **a
+level the text did not state** while **discarding the body it did state**, in one step. The body survives
+only because raw `certifiedBy` was preserved — the same thing that separates the 6 recoverable humus-eli
+records from the 52 permanently lost ones, whose `certifiedBy` had been overwritten with the bare word
+`מהדרין`.
+
+> **This is the scoping fact for Batch B.** "The MAP is the root defect" is true for 154 of 358. A guard at
+> the translation point covers **43%** of this defect *while looking like it covers all of it* — the number
+> would go down, and 204 fabrications would remain. The guard has to sit where `kosherType` is **first
+> assigned**, in the importers, not where `kosherType` is read.
+
 ### The 358 have no independent evidence — verified, do not re-litigate
 
 *"Keep the level where an independent source supports it"* is an **empty category**. Measured across all 358:
