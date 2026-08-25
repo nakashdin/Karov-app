@@ -734,6 +734,65 @@ certificates refresh, which per §7's cliff is immediately after 2026-09-11: sev
 writing. An unmigrated re-runnable writer firing in the same week as the certificate refresh is a
 collision worth closing before it happens, not after.
 
+**Both migrated. All three re-runnable utilities now route through `recordKashrutWrite()`; the frozen
+exclusion list dropped 82 → 81 → 80.** Neither script was run for real — every check below is from a
+throwaway `git worktree add --detach`, destroyed immediately after, per the "never mutate
+`src/data/generated/` in the shared checkout" rule.
+
+**`importers/tzohar/import-food.mjs`.** The five CERT_PATCH fields route through the helper with
+`{kind:'certificate-document', url}` — genuinely the strongest evidence class in the project (180
+certUrls, 164 parsed expiry dates, real Tzohar PDFs) — but only where a URL is honestly available.
+**Real finding, not invented past:** of 256 live food entries, 19 carry no `certPdf` in this data pull.
+Of those, 4 already have a `kosherCertUrl` from an earlier pull (basis still holds, using the existing
+URL); the remaining 15 have none, ever. This was not papered over with a `human-review` or
+`backfilled-inference` basis — neither is true, there is no reviewer and no prior capture to cite, only
+Tzohar's list entry with no attached document. Split by consequence: **12 already-certified existing
+records** get their non-kashrut fields refreshed but their kashrut fields left untouched rather than
+re-asserted on no evidence; **3 would-be new records** are not admitted at all (AGENTS.md's admission
+rule: no kashrut evidence, no admission) — a real, load-bearing behavior change from the pre-migration
+script, which wrote all five fields unconditionally via `Object.assign` regardless of whether a PDF
+existed for that specific record. Verified end-to-end in a throwaway worktree: 172 updated, 69 inserted,
+12 held back, 3 skipped, **0 recordKashrutWrite refusals**, 7471 → 7540 total — matching a hand-derived
+prediction exactly before the script was ever run.
+
+**`scripts/migrate-kosher-fields.mjs` — the harder case, resolved data-derived rather than by the three
+options as first framed.** The choke point only gates `kosherLevel`, not `kosherAuthority` or
+`kosherAuthorityGroup` — those are body/group claims, not level claims, and for a kosherType that
+already names a body (`badatz_beit_yosef`, etc.) writing them recovers real identity rather than
+inventing one (RECOVER, not REMOVE — §4/§8). So each field is now attempted **independently per
+record**, not atomically: `kosherAuthority`/`kosherAuthorityGroup` are written from
+`{kind:'enum-inference', ...}` (never gated for those fields); `kosherLevel` is written as explicit
+**`null`** — not left absent — whenever the MAP would have asserted `'mehadrin'`, since the helper
+rejects `enum-inference` for a level-asserting write unconditionally (this literally IS the site-A
+mechanism, FACTS §5b, committed by this exact script for 154 of the 358). Explicit null over absence is
+deliberate: it is exactly the state place.ts:97/kosherLevel already means — "the evidence names an
+authority but not a level" — and leaving it absent would silently recreate the §5c ambiguity (249
+records already collapse "never migrated"/"deliberately undetermined"/"genuinely unknown" into one
+state) at the moment this script has enough information to say which one it is.
+
+Quantified against the live dataset before choosing this over a blanket per-record skip: of 2,017
+currently-enrichable records, 969 are regular-level and fully unaffected; 1,048 are mehadrin-mapped and
+have their level declined. Of those 1,048, **327 (259 named-authority + 68 group-only) still recover real,
+non-invented identity** under the per-field design that a blanket per-record skip would have discarded
+for no safety benefit; the remaining 721 are bare `mehadrin`/`kosher` types where the MAP has nothing to
+recover regardless (group stays `'unknown'`, authority stays `null`) — genuinely inert either way, not a
+cost of this design. This settles the three-option question from first principles: neither (a) die on the
+first blocked write, nor (b) as literally stated (blanket per-record skip, discarding the 327), nor (c)
+retire — the script still does real, safe recovery work for 969 + 327 = 1,296 of 2,017 records once
+neutered of the one thing it should never have been allowed to do. Verified end-to-end in a throwaway
+worktree: enrichedFully 969, levelDeclinedIdentityRecovered 327, levelDeclinedNoRecovery 721,
+reviewQueueSkipped 113 (unchanged), unmapped 0, **0 recordKashrutWrite refusals** — matching the
+hand-derived prediction exactly. The Batch A reviewQueue-guard test
+(`scripts/reports/migrate-kosher-fields-reviewqueue-guard.test.mjs`, a hand-maintained verbatim copy of
+the enrichment logic, not an import of the real script) was updated to assert the new outcome
+(`kosherLevel: null`, not `'mehadrin'`) — it had gone stale the moment the real script's behavior changed
+underneath it and was still passing, testing a copy of logic that no longer existed. Caught before commit,
+not after: a test that passes for the wrong reason is the same failure class as §9's fixture case, one
+level up again.
+
+**No re-runnable writer bypasses the choke point any longer.** The frozen exclusion list's
+`re-runnable-utility` category is now empty.
+
 ---
 
 ## Superseded numbers — do not requote
