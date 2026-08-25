@@ -795,6 +795,43 @@ level up again.
 
 ---
 
+## 17. Checks that pass while checking nothing — four faces, all hit within two days
+
+A failing check is cheap: it tells you where to look. A check that **passes without checking anything** is
+the expensive one, because it is indistinguishable from a check that passed for the right reason, and it
+converts "unverified" into "verified" in every report downstream. Four distinct shapes have now appeared in
+this project inside forty-eight hours. They are the same defect wearing different clothes.
+
+| | Shape | Instance | What it looked like |
+|---|---|---|---|
+| 1 | **A test nothing runs** | `scripts/shared/__tests__/*.test.mjs` and `scripts/reports/migrate-kosher-fields-reviewqueue-guard.test.mjs` | 451 lines of new test committed; jest's `roots: ['<rootDir>/src']` never reached them and no npm script did either. Green. |
+| 2 | **A fixture that matches nothing** | a B1 test fixture citing a gershayim alias string absent from `aliases[].raw` (§9) | The lookup returned nothing, the assertion held vacuously, the guard under test was never exercised. Green. |
+| 3 | **A test that copies the logic instead of importing it** | `migrate-kosher-fields-reviewqueue-guard.test.mjs` held a verbatim copy of the enrichment function | The real script's behaviour changed; the copy did not. The test kept asserting the old result **correctly**, against its own frozen duplicate. Green. |
+| 4 | **A prediction that matches on volume while the output is invalid** | `importers/tzohar/import-food.mjs` run end-to-end | Hand-derived prediction of 7,471 → 7,540 made before the run, matched exactly. The resulting file fails `data:validate` with **37 duplicate ids** and 3 records missing `name`. The prediction was about counts. Nobody asked whether the result was valid. |
+
+**The common mechanism:** in each case the check's *subject* silently became empty or stale while its
+*form* stayed intact. Nothing throws when a test file is never collected, when a fixture lookup misses, when
+a copied function drifts from its original, or when a count is right about a file that cannot be committed.
+
+**The four countermeasures, each earned by one of the above:**
+
+1. **Prove a test runs before relying on it.** `npx jest --listTests` must return it, or it must be wired
+   through `test:scripts` **and** `ci.yml`. The suite count not moving after you add a test file is the tell.
+2. **Every fixture asserts its own assumption against live data.**
+   `assert.ok(realEntry, 'fixture assumption broken: … is expected to be a real registry alias')` — so the
+   test fails loudly when the data moves underneath it instead of quietly testing an empty set.
+3. **Import the logic; never copy it.** A test holding its own copy of the function is testing the copy. If
+   the real module cannot be imported, that is a reason to make it importable, not a reason to duplicate it.
+4. **A matched prediction is not a passing check.** Predicting an output's *shape* and hitting it says
+   nothing about the output's *validity*. Any run that produces a dataset must be followed by
+   `data:validate` on the produced dataset, not by a comparison of counters.
+
+**And the meta-rule, which is the only one that generalises:** ask what would have to be true for this check
+to pass while the thing it guards is broken — then go and check *that*. Every one of the four above answers
+that question in a single sentence, and none of them was found by reading the check.
+
+---
+
 ## Superseded numbers — do not requote
 
 | Wrong | Correct | Why |
