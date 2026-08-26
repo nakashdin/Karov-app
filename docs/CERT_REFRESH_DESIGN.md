@@ -8,9 +8,16 @@ before writing this — not a from-scratch proposal. It already gets several thi
 design keeps those and closes the one defect the owner named as the reason a redesign is needed at all: a
 run where every fetch fails is indistinguishable from a successful run by exit code alone.
 
-This document is written against `docs/owner-directive-acceptance-predicate.md` §2 (P2.1–P2.5), the owner's
-own pre-registered acceptance criteria for this exact deliverable. Every requirement there is treated as
-binding, not advisory, and each is cited by number below where it drives a design decision.
+This document is written against `docs/owner-directive-acceptance-predicate.md` §2 (P2.1–P2.5) — **corrected
+attribution, 2026-08-26: that document is kosher-app-39's (the Reviewer's) proposed acceptance criteria for
+judging work on the owner's directive, not text the owner wrote.** An earlier version of this paragraph
+called it "the owner's own pre-registered acceptance criteria... binding, not advisory" — the doc's original
+title genuinely invited that reading (fixed by the Architect at `a52a05b`) but the claim was still wrong. The
+owner's actual requirements are the directive text alone: automated acquisition, read the certificate itself,
+extract the date from it, validate, update; fail visibly; never invent a date; identify providers needing a
+different mechanism. P2.1–P2.5 below are the Reviewer's proposed way of meeting that bar — good proposals,
+and cited by number below where they drive a decision, but **challengeable on their merits**, not fixed by
+authority. Two are explicitly held pending the owner rather than adopted (§5, §4) — see those sections.
 
 ---
 
@@ -24,14 +31,16 @@ binding, not advisory, and each is cited by number below where it drives a desig
   — never extended, cleared, or invented.
 - **`--dry` exists** and updates the local PDF cache without writing `places.osm.json`.
 
-Both preserved-behaviour bullets are P2.5's explicit non-waivable requirement. Nothing below changes them.
+Both preserved-behaviour bullets are the Reviewer's P2.5 — and independently, plainly required by not
+regressing working behaviour. Nothing below changes them.
 
 ## 2. What it gets wrong — the defect this design exists to close
 
 **A run in which every fetch fails is indistinguishable from a successful run.** The script never calls
 `process.exit(1)`; it always exits 0. The only signal that anything went wrong is a console line a human has
-to be reading at the moment it scrolls past. FACTS §7a point 3 names this; the owner's predicate (P2.3) makes
-it the load-bearing requirement of the whole redesign.
+to be reading at the moment it scrolls past. FACTS §7a point 3 names this; the Reviewer's predicate (P2.3)
+makes it the load-bearing requirement of the whole redesign, and it follows directly from the owner's own
+"fail visibly" requirement even without P2.3 spelling it out.
 
 Two further defects, found reading the parser closely rather than assumed, both worth fixing in the same
 pass since they're the same *class* of silent-success failure:
@@ -85,9 +94,9 @@ provider's `acquire()` throws is caught one level up and becomes `UNCLASSIFIED` 
 into `UNREACHABLE`, because "the network failed" and "our code threw for a reason we didn't anticipate" are
 different facts a human needs to be able to tell apart.
 
-## 4. Extraction contract and the outcome taxonomy (P2.1, P2.2)
+## 4. Extraction contract and the outcome taxonomy (the Reviewer's P2.1, P2.2)
 
-**Exhaustive by construction, not by enumeration (P2.1, non-waivable).** A discriminated union where exactly
+**Exhaustive by construction, not by enumeration (the Reviewer's P2.1).** A discriminated union where exactly
 one variant carries a date, and every other variant is structurally incapable of producing one:
 
 ```
@@ -118,16 +127,15 @@ they must not.
 | `VERIFIED` | extraction, validated | exactly one confident date-shaped candidate, and it passes validation |
 | `UNCLASSIFIED` | any | an exception the above four do not account for (P2.2) — network layer, extraction layer, or the refresh loop itself throwing something unanticipated |
 
-**Deliberate consolidation, stated so it can be challenged:** the owner's framing names four failure shapes
-("a failed download, an unreadable certificate, an ambiguous date, or a failed extraction") and
-kosher-app-19's brief names three failure kinds (UNREACHABLE/UNREADABLE/AMBIGUOUS). This design folds
-"unreadable certificate" (can't parse the format at all) and "failed extraction" (parsed fine, found nothing)
-into the single `UNREADABLE` kind, with the specific cause carried in `reason`. Both mean the same thing to a
-human deciding what to do next — "this document did not yield a date, and it is not a network problem, and
-it is not that multiple candidates were found" — and a human's next action (find out why, possibly fix the
-parser, possibly re-check the source manually) is the same for both. If the Architect wants these split into
-two top-level kinds instead of one kind with a differentiated `reason`, that's a small change to this
-section, not a redesign — flagging the choice explicitly rather than deciding it silently.
+**Deliberate consolidation — DECIDED, 2026-08-26 (the Architect):** the owner's framing names four failure
+shapes ("a failed download, an unreadable certificate, an ambiguous date, or a failed extraction") and this
+design folds "unreadable certificate" (can't parse the format at all) and "failed extraction" (parsed fine,
+found nothing) into the single `UNREADABLE` kind, with the specific cause carried in `reason`. Raised as an
+open question in an earlier draft of this document; the Architect's answer: **leave it as one kind until real
+failures have been observed.** Splitting a taxonomy on anticipated distinctions produces members nothing ever
+lands in — if `UNREADABLE`'s `reason` values cluster into genuinely distinct operational patterns once this
+runs against real data, split then, driven by what actually happens rather than by what seemed plausible to
+distinguish in advance.
 
 **Validation, not just parsing (the owner's "validate it" requirement).** A candidate date must pass both:
 
@@ -146,32 +154,37 @@ existing date is left untouched — mirroring exactly how `validate-data.mjs` al
 shortened certificate is rare enough that requiring a human to confirm it once is the right cost; silently
 writing it is not.
 
-## 5. Aggregate reporting and exit status (P2.3, non-waivable)
+## 5. Aggregate reporting and exit status (the Reviewer's P2.3)
 
 Every run reports counts for `attempted`, `verified` (VERIFIED, `changed` true or false both count),
 `ambiguous`, `unreachable`, `unreadable`, `unclassified` — the exact granularity, not a collapsed
 success/failure boolean.
 
-**Exit rules, both required by P2.3:**
+**Exit rules, both proposed by the Reviewer's P2.3:**
 
 1. `process.exit(1)` when `verified === 0 && attempted > 0`.
 2. `process.exit(1)` when the failure ratio — `(attempted − verified) / attempted` — crosses a stated
-   threshold. **Proposed default 0.5** (more than half of attempted targets did not verify), overridable via
-   `--max-failure-ratio <0..1>` the same way `--window` already overrides `REFRESH_WINDOW_DAYS`. The owner's
-   predicate requires *a* stated threshold, not a specific number — flagging 0.5 as a proposal, not a
-   settled value, for the Architect to confirm or change before this is built.
+   threshold, overridable via `--max-failure-ratio <0..1>` the same way `--window` already overrides
+   `REFRESH_WINDOW_DAYS`.
 
-**P2.3's own acceptance test, restated here as a build requirement, not run yet:** point the tool at an
+**HELD PENDING THE OWNER (2026-08-26, the Architect's call): the 0.5 default is NOT signed off, by either
+of us.** This is a product judgement about how much silent failure is tolerable before a build breaks — the
+kind of threshold that gets set once and rarely revisited — so it goes to the owner rather than being decided
+by the Architect and Implementer between themselves. Rule 1 above (verified===0 blocks unconditionally) is
+not in question; only the specific ratio in rule 2 is held. 0.5 stays written here as the number under
+discussion, not as an adopted default.
+
+**The Reviewer's P2.3 acceptance test, restated here as a build requirement, not run yet:** point the tool at an
 unreachable source (e.g. a provider whose `acquire()` always returns `{ok:false}`) and require both a
 non-zero exit *and* an explicit `0 of N verified` line in the output. "A design that only reports this in
 prose is a design where the exit code still lies" — this has to be fired against the real implementation
 once built, in a detached worktree, exactly like every other guard in this codebase this month. Noted here
 so it isn't forgotten between sign-off and implementation.
 
-## 6. Persisting AMBIGUOUS (P2.4) and the visibility/heartbeat mechanism
+## 6. Persisting AMBIGUOUS (the Reviewer's P2.4) and the visibility/heartbeat mechanism
 
-**AMBIGUOUS (and every other non-VERIFIED outcome) must be durable, not just console output (P2.4,
-non-waivable).** stdout has no memory between runs; a ratchet needs a file.
+**AMBIGUOUS (and every other non-VERIFIED outcome) must be durable, not just console output (the Reviewer's
+P2.4).** stdout has no memory between runs; a ratchet needs a file.
 
 **Where it lives — deliberately NOT on the Place record itself.** `places.osm.json` "is kept minified — it
 ships in the web bundle" (the current script's own comment, and true: it's imported throughout `src/`).
@@ -239,23 +252,29 @@ verify` instead of both reading as silence.
   failure findings are visible in that run's console output only, by design — persistence is a property of
   a real run, not a preview.
 
-## 8. Open questions for the Architect, not decided here
+## 8. Status as of 2026-08-26 — three resolved, one held for the owner
 
-1. Is the 0.5 default failure-ratio threshold (§5) acceptable, or should it be stricter/looser, and should it
-   differ by provider (a brand-new provider with low initial reliability vs. Tzohar's already-proven path)?
-2. Is folding "unreadable certificate" and "failed extraction" into one `UNREADABLE` kind (§4) acceptable, or
-   does the owner want them as two separate top-level taxonomy members?
-3. Should `cert-refresh-status.json` also record a short history (last N attempts) per id, or only the most
-   recent attempt? The heartbeat check in §6 only needs the most recent; a short history would help a human
-   debugging a persistently-failing provider without needing to read old CI logs, at the cost of a slightly
-   larger file.
-4. The plausibility bound in §4 (not more than 3 years past / 5 years future) is a guess calibrated to
-   "Tzohar certificates are annual-to-multi-year" — should it be provider-specific once other providers with
-   different renewal cadences are known from the parallel census?
+Four questions were originally open here. The Architect answered three; the fourth escalates.
+
+1. **HELD FOR THE OWNER.** The 0.5 default failure-ratio threshold (§5) — a product judgement neither the
+   Architect nor the Implementer will set unilaterally. Going to the owner separately from this document's
+   sign-off; implementation of rule 2 in §5 waits for that answer specifically (rule 1, `verified===0`, does
+   not).
+2. **DECIDED: leave `UNREADABLE` as one kind** (§4) — don't split "unreadable certificate" from "failed
+   extraction" until real failures show they cluster into genuinely distinct operational patterns.
+3. **DECIDED: keep attempt history, not just most-recent**, in `cert-refresh-status.json`. It's cheap, and
+   it's the only way `cert-refresh-status.json` itself can distinguish "failing for a week" from "failed
+   once" — the heartbeat check in §6 only needs the most recent entry, but a human debugging a persistently-
+   failing provider needs the pattern, and re-deriving it from old CI logs is exactly the kind of thing a
+   durable file should make unnecessary.
+4. **DECIDED: start with a single global plausibility bound**, not provider-specific ones. Add a per-provider
+   bound only once a specific provider proves the global one wrong for it — provider-specific tuning ahead of
+   any evidence that it's needed is speculative complexity the design doesn't have grounds for yet.
 
 ---
 
-Once this is signed off, implementation follows the same discipline as everything else this month: build,
-fire every guard named in §5's acceptance test and §4's backward-movement case in a detached worktree, wire
-`cert-refresh-status.json` reads into `test:scripts`/`ci.yml` if a dedicated test file is warranted, and no
-write to `src/data/generated/*` until that's all green and the Architect has seen it.
+Once the 0.5-vs-other ratio question comes back from the owner and the Reviewer has seen this document,
+implementation follows the same discipline as everything else this month: build, fire every guard named in
+§5's acceptance test and §4's backward-movement case in a detached worktree, wire `cert-refresh-status.json`
+reads into `test:scripts`/`ci.yml` if a dedicated test file is warranted, and no write to
+`src/data/generated/*` until that's all green and the Architect has seen it. Implementation has not started.
