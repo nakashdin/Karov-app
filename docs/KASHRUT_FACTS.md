@@ -372,7 +372,35 @@ legacy enum — it was merely importable.
 On 2026-09-12 the `independent` filter goes **183 → 31** and 152 cards flip to
 `⚠️ תעודת כשרות פגה`. The mechanism is **correct** (commit `876a562`; already firing on the 12 expired
 today). This is an operational gap: Tzohar renews centrally before Rosh Hashana and nobody re-fetches.
-Fix: `extract-cert-expiry --refresh` after 2026-09-12.
+
+### 7a. The tool is ready — three corrections to how this was previously written down
+
+1. **`--refresh` is not required, and saying it is was wrong.** `isCacheStale()`
+   (`importers/tzohar/extract-cert-expiry.mjs:66-73`) re-fetches whenever the known expiry is within
+   `REFRESH_WINDOW_DAYS` (default **60**), whenever fetch metadata is missing, and whenever no date was ever
+   resolved. `daysUntil('2026-09-11')` is 16 as of 2026-08-26, so **that cohort re-fetches on an ordinary run
+   with no flag.** `--refresh` only forces the ones still outside the window.
+   *(`docs/DATA_ARCHITECTURE.md` §3.2 additionally described this tool as caching forever and never
+   invalidating — a warning written before the fix and never retired. Corrected; see §17's inverse face.)*
+
+2. **It is a recurrence, not a deadline — the window is rolling and per-certificate, so no single run fixes
+   everything.**
+
+   | Cohort | Days out (2026-08-26) | Behaviour |
+   |---|---|---|
+   | 2026-09-11 ×152 | 16 | inside the window — re-fetches now |
+   | 2026-10-11 ×1 | 46 | inside — re-fetches now |
+   | 2026-12-31 ×6 | 127 | **outside — stays cached** until it comes within 60 |
+   | 2027-01-31 ×8 | 158 | **outside — stays cached** |
+
+   "Run it once after 2026-09-12" handles the Rosh Hashana cohort **and nothing else.** Each cohort
+   self-schedules, so the owner of this owns a recurring check, not a single task.
+
+3. **A run in which every fetch failed is indistinguishable from no run at all.** Failure handling is
+   deliberately conservative — a failed fetch or an unparseable PDF leaves `certificateValidUntil` exactly as
+   it was, and never extends, clears, or guesses (`:207-208`). That is the right behaviour and it means
+   **the exit code cannot be trusted as evidence the work happened.** Whoever owns this must read the
+   `re-fetched / renewed / unchanged / failed` counters, not the exit status. §17 in operational clothing.
 
 **Structural finding:** all 164 are the only records with a real certificate document. `'unknown'` never
 becomes `'expired'`, so the ~2,000 records with no certificate are **permanently immune** to being shown as
@@ -877,6 +905,44 @@ a copied function drifts from its original, or when a count is right about a fil
    `data:validate` on the produced dataset, not by a comparison of counters.
 5. **Validate the instrument against a known positive before believing a zero.** Not by re-running it —
    by opening one file you are already sure is a hit and confirming the scan sees it.
+
+### 17a. The inverse face — a warning that outlives its defect
+
+All five faces above are artifacts whose **subject went stale while their form stayed intact**. The inverse
+exists and has now bitten twice in this project: an artifact whose subject was **fixed** while its form stayed
+intact. Same decoupling, opposite direction of decay.
+
+| Instance | What it said | Reality |
+|---|---|---|
+| `docs/DATA_ARCHITECTURE.md` §3.2 | `extract-cert-expiry.mjs` "caches PDFs and never invalidates — re-extracts a stale expiry and reports success" | fixed by the `isCacheStale`/`--refresh` work; the doc never caught up |
+| a reviewer's own persistent note | "`--refresh` is required for the cliff" | not required since the window landed — and it survived in a file its author wrote, about a fix its author reviewed |
+
+**This is the worse class, despite being the less dramatic one.** Every face above is *self-limiting*: it
+eventually produces an incident — duplicate ids in a committed file, a corrupted dataset, a red build on a
+clean runner. The incident is the discovery mechanism. Unpleasant, but it fires.
+
+**A stale warning produces no incident. It produces inaction.** Nobody uses a tool they have been told is
+broken, and nobody files a bug about a tool they never used. There is no event, no red build, no wrong
+number — just work quietly routed around something that was fine. **It has no natural discovery mechanism at
+all.** Both instances above survived only until someone happened to chase an unrelated deadline.
+
+And the cost is not "nothing happens." Sixteen days from a 152-certificate cliff, the architecture doc was
+telling the next person that the tool they need is broken. The realistic outcome is someone hand-rolling a
+replacement under time pressure, or deferring the run — at exactly the moment the project can least afford
+either.
+
+**Two countermeasures specific to this direction:**
+
+1. **A warning about a specific defect in a specific file belongs *in that file*.** The
+   `extract-cert-expiry.mjs` warning belonged in `extract-cert-expiry.mjs`, where the person fixing the
+   defect is already looking. A prose warning about code has no reason to be revisited when the code
+   changes, so it ages independently *by construction*. This is *import-the-logic-don't-copy-it* applied to
+   prose.
+2. **A warning must state the observable test that proves it still applies.** Not "this tool caches forever"
+   but "*if `isCacheStale` has no freshness check, this still bites.*" Then a reader falsifies it in one step
+   instead of doing archaeology, and the warning carries its own expiry condition. **A warning without a test
+   can only be retired by someone who already knows it is wrong — which is nobody, because they have been
+   told not to look.**
 
 **And the meta-rule, which is the only one that generalises:** ask what would have to be true for this check
 to pass while the thing it guards is broken — then go and check *that*. Every one of the four above answers
