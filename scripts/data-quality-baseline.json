@@ -7,5 +7,10 @@
   "missingSource": 3327,
   "kashrutAuthorityUnknown": 1183,
   "freeTextCertifierUnmapped": 1560,
-  "levelAssertedOverNamedBody": 343
+  "levelAssertedOverNamedBody": 343,
+  "restaurantsDuplicateIds": 0,
+  "restaurantsShorthandLocation": 0,
+  "restaurantsOutOfBounds": 0,
+  "restaurantsCertificateValidUntilWithoutUrl": 30,
+  "restaurantsLevelAssertedOverNamedBody": 37
 }

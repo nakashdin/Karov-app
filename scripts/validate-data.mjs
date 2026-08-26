@@ -28,6 +28,7 @@ const REGISTRY_PATH = resolve(root, 'scripts', 'reports', 'kashrut-registry.json
 
 const PLACES_PATH = resolve(root, 'src/data/generated/places.osm.json');
 const CITIES_PATH = resolve(root, 'src/data/generated/cities.osm.json');
+const RESTAURANTS_PATH = resolve(root, 'src/data/generated/restaurants.osm.json');
 const PLACES_REL = 'src/data/generated/places.osm.json';
 
 /** Keep in sync with PlaceType in src/types/place.ts. */
@@ -163,6 +164,28 @@ const counts = {
   // the ratchet as a preference rather than a bug. This is not a TODO to
   // rediscover later; it is a condition of accepting this ratchet at all.
   levelAssertedOverNamedBody: 0,
+  // ── restaurants.osm.json (FACTS §18c): 86 scripts write this file, one
+  // (the guarded importer) reads it, and until this addition NOTHING
+  // validated it. Not app-facing (nothing in src/ imports it — checked by
+  // repo-wide scan), so these are ratchets, not HARD failures: a malformed
+  // record here cannot crash the app today. They exist because the file is
+  // the live authority sync-greg-places.mjs restores FROM, and because
+  // f2b15d5's writeCategoryGuarded only closed the erasure path, not this
+  // one. All five measured against live data before being baselined —
+  // see scripts/data-quality-baseline.json.
+  restaurantsDuplicateIds: 0,
+  restaurantsShorthandLocation: 0,
+  restaurantsOutOfBounds: 0,
+  // FACTS §18d: every record in this file carrying certificateValidUntil
+  // breaks the field's own documented invariant on place.ts ("only ever set
+  // from a real certificate document ... never inferred, extrapolated, or
+  // copied from a sibling branch") the moment it lacks kosherCertUrl — which,
+  // measured, is all 30 of them today.
+  restaurantsCertificateValidUntilWithoutUrl: 0,
+  // Same predicate as levelAssertedOverNamedBody above, applied to this
+  // file's own kosherType/certifiedBy — a body named in the source text,
+  // asserted here as a level the text never stated.
+  restaurantsLevelAssertedOverNamedBody: 0,
 };
 
 function fail(msg) {
@@ -254,11 +277,13 @@ function readJson(path, label) {
 
 const places = readJson(PLACES_PATH, 'places.osm.json');
 const cities = readJson(CITIES_PATH, 'cities.osm.json');
+const restaurants = readJson(RESTAURANTS_PATH, 'restaurants.osm.json');
 
 if (places && cities) {
   if (!Array.isArray(places)) fail('places.osm.json must be an array');
   if (!Array.isArray(cities)) fail('cities.osm.json must be an array');
 }
+if (restaurants && !Array.isArray(restaurants)) fail('restaurants.osm.json must be an array');
 
 if (hard.length === 0) {
   const cityIds = new Set(cities.map((c) => c.id));
@@ -370,6 +395,42 @@ if (hard.length === 0) {
     }
   }
 
+  // ── restaurants.osm.json (FACTS §18c) — ratchets only, no HARD failures.
+  // Not app-facing, so a malformed record here cannot crash the app today;
+  // see the counts{} block above for why these five and not the full
+  // places.osm.json check set. Reuses aliasMap loaded above rather than
+  // reloading the registry a second time.
+  if (Array.isArray(restaurants)) {
+    const seenRestaurantIds = new Set();
+    for (const r of restaurants) {
+      if (!r || typeof r.id !== 'string' || !r.id) continue;
+      const id = r.id;
+      if (seenRestaurantIds.has(id)) counts.restaurantsDuplicateIds++;
+      seenRestaurantIds.add(id);
+
+      const loc = r.location;
+      if (loc && typeof loc.lat === 'number' && typeof loc.lng === 'number' && typeof loc.latitude !== 'number') {
+        counts.restaurantsShorthandLocation++;
+      } else if (
+        loc && typeof loc.latitude === 'number' && typeof loc.longitude === 'number' &&
+        (loc.latitude < BBOX.minLat || loc.latitude > BBOX.maxLat || loc.longitude < BBOX.minLng || loc.longitude > BBOX.maxLng)
+      ) {
+        counts.restaurantsOutOfBounds++;
+      }
+
+      if (r.certificateValidUntil && !r.kosherCertUrl) counts.restaurantsCertificateValidUntilWithoutUrl++;
+
+      if (
+        FOOD_TYPES.has(r.type) &&
+        LEVEL_ASSERTING_KOSHER_TYPES.has(r.kosherType) &&
+        r.certifiedBy &&
+        aliasMap?.get(r.certifiedBy)?.authorityId
+      ) {
+        counts.restaurantsLevelAssertedOverNamedBody++;
+      }
+    }
+  }
+
   const cap = (label, list, limit = 10) => {
     if (!list.length) return;
     fail(`${label} (${list.length}):\n    ` + list.slice(0, limit).join('\n    ') +
@@ -434,6 +495,11 @@ const RATCHET_KEYS = [
   'kashrutAuthorityUnknown',
   'freeTextCertifierUnmapped',
   'levelAssertedOverNamedBody',
+  'restaurantsDuplicateIds',
+  'restaurantsShorthandLocation',
+  'restaurantsOutOfBounds',
+  'restaurantsCertificateValidUntilWithoutUrl',
+  'restaurantsLevelAssertedOverNamedBody',
 ];
 
 const baseline = existsSync(BASELINE_PATH)
