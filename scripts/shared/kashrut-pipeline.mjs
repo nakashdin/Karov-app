@@ -109,7 +109,7 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { recordKashrutWrite } from './kashrut-write.mjs';
+import { recordKashrutWrite, localDateISO } from './kashrut-write.mjs';
 import { matchSourceBranches } from './store-matcher.mjs';
 import { buildResolverEntries, resolveAuthorityFromText } from './authority-normalize.mjs';
 
@@ -427,7 +427,7 @@ export async function runPipeline({ fetchBranches, places, restaurants, isInChai
   }
   const resolvedRecordIds = new Set(Object.keys(resolutions));
 
-  const runDate = new Date().toISOString().slice(0, 10);
+  const runDate = localDateISO();
   const report = [];
   report.push(`=== ${chainName ?? 'chain'}: Gate 0 — selectivity ===`);
   report.push(`  ${gate0.total} branches: ${gate0.asserted} asserted, ${gate0.negative} negative, ${gate0.silent} silent. selective=${gate0.selective}`);

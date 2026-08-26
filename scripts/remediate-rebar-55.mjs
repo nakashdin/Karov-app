@@ -196,6 +196,15 @@ export async function main({ fetchImpl, placesPath, restaurantsPath, backupRoot,
   // Computed ONCE, right after this run's fetch succeeds — the actual
   // verification date, not a hardcoded literal. See the file header for why
   // that distinction is the point of this whole change.
+  //
+  // toISOString() is UTC (found live, 2026-08-27 — see localDateISO() in
+  // kashrut-write.mjs). THIS FILE PREDATES THAT FIX AND IS DELIBERATELY LEFT
+  // UNMODIFIED: it is the historical record of what commit 880e48d actually
+  // ran (see remediate-chain.mjs's header) — editing it to call
+  // localDateISO() would assert a fix that was not in effect when it shipped,
+  // making the record inaccurate about its own history for the sake of
+  // consistency it doesn't need (it can never run again). Copy
+  // localDateISO() from kashrut-write.mjs for any NEW script, not this line.
   const runDate = new Date().toISOString().slice(0, 10);
   console.log(`Feed entries parsed: ${stores.length} (fetched and verified ${runDate})\n`);
 

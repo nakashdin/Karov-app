@@ -114,6 +114,33 @@ function loadAliasMap() {
  * choke point is about ATTRIBUTING a write, not about the cross-field
  * relationship between two different fields.
  */
+/**
+ * Today's date as YYYY-MM-DD, in the LOCAL timezone — never
+ * `new Date().toISOString().slice(0, 10)`, which is UTC. Israel is UTC+3
+ * (UTC+2 in winter); found live, 2026-08-27, ~02:47 local: a run at that
+ * moment computed "2026-08-26" and wrote it as `lastVerifiedAt` — every run
+ * inside the ~2-3 hour window after local midnight, for as long as this
+ * pattern existed, stamped the PREVIOUS day. Not cosmetic: `lastVerifiedAt`
+ * is guarded by a HARD backward-date check (validate-data.mjs), so a UTC
+ * run followed by a local-date run (or the reverse) can make a later,
+ * genuine verification look like it moved backward — an hours-long
+ * debugging session with a timezone as the actual cause, and a wrong stated
+ * cause ("a one-shot script re-ran") once someone starts looking. Same
+ * family as `0d97a80` (a frozen `TODAY` literal instead of computed) — this
+ * is the subtler version: computed, but in the wrong zone. `toISOString()`
+ * is the obvious thing to reach for here; it is wrong for this specific
+ * use, which is why every caller in this codebase that stamps
+ * `lastVerifiedAt` routes through this function instead of calling it
+ * directly.
+ */
+export function localDateISO() {
+  const d = new Date();
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${y}-${m}-${day}`;
+}
+
 export const KASHRUT_FIELDS = Object.freeze([
   'kosherType',
   'kosherLevel',

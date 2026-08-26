@@ -44,7 +44,7 @@ import { readFileSync, writeFileSync, copyFileSync, mkdirSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { resolve, dirname, join } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
-import { recordKashrutWrite } from './shared/kashrut-write.mjs';
+import { recordKashrutWrite, localDateISO } from './shared/kashrut-write.mjs';
 import { fetchRebarStores, matchRebarStores } from './shared/rebar-feed.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
@@ -60,7 +60,12 @@ const FEED_URL = 'https://rebar.co.il/our-stores/';
 // backdated every new record's lastVerifiedAt to a date that never happened,
 // undetected by validate-data.mjs's backward-date guard (it only compares
 // against a record's PRIOR value at HEAD; a brand-new record has none).
-const RUN_DATE = new Date().toISOString().slice(0, 10);
+//
+// localDateISO(), not `new Date().toISOString().slice(0,10)` — found live,
+// 2026-08-27 ~02:47 Israel time (UTC+3): toISOString() is UTC, so any run in
+// the ~2-3 hours after local midnight stamps the PREVIOUS day. See
+// localDateISO()'s own header in kashrut-write.mjs.
+const RUN_DATE = localDateISO();
 
 const BASIS = {
   kind: 'human-review',
