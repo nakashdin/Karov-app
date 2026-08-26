@@ -122,6 +122,18 @@ export function buildResolverEntries(registry) {
  * @param {string} text
  * @param {Array} resolverEntries - from buildResolverEntries(registry); built once per caller and reused, not rebuilt per call.
  * @returns {{raw: string, authorityId: string, level: string|null, matchedText: string} | null}
+ *   `level` on the returned object (and on every resolverEntries item) is
+ *   NOT a fact about the resolved authority — measured 2026-08-27 (Item 4
+ *   Unit 3, owner ruling "לא, הם כשרויות שונות" — a body does not confer a
+ *   level): across all 203 registry aliases, level=="mehadrin" iff the RAW
+ *   ALIAS TEXT ITSELF happens to contain the word מהדרין/גלאט — zero
+ *   exceptions. The same authority carries different `level` values purely
+ *   by which spelling matched (badatz-beit-yosef: mehadrin | null;
+ *   rabbinate-tel-aviv: null | mehadrin | regular; 35 more authorities
+ *   disagree internally the same way). It is a restatement of the matched
+ *   STRING, not evidence about the body. Do not consult it for any level
+ *   decision — kashrut-pipeline.mjs's classifyBranch() deliberately never
+ *   reads it; keep it only for provenance/debugging.
  */
 export function resolveAuthorityFromText(text, resolverEntries) {
   if (!text) return null;

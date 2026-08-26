@@ -33,21 +33,50 @@
  * mismatch — see that adapter's header) — never a per-adapter or per-gate
  * exact-string lookup again.
  *
- * Gate 3 — what level, REVISED 2026-08-27 (owner ruling, three-way split):
- *   (c) FACT   — the source states a level AND names a body whose registry
- *                entry supports that level -> kosherLevel/kosherType are
- *                written as a VERIFIED level.
- *   (b) CLAIM  — the source states a level but names NO body anywhere ->
- *                kosherLevel stays null; the phrase is recorded in
- *                claimedLevel/claimedLevelText/claimedLevelSource instead —
- *                a claim, never promoted to fact by where it's stored.
- *   (a) PLAIN  — the source asserts kosher but states no level phrase at
- *                all -> kosherType 'kosher', kosherLevel null, no claim
- *                fields.
- * A level phrase with no supporting body does NOT establish a level (case
- * b) — this is what settled greg's 39. A named body with no level phrase,
- * or a level phrase whose named body doesn't support it, still gets its
- * body recorded in certifiedBy (Gate 2), just without a level.
+ * Gate 3 — what level, REVISED AGAIN 2026-08-27 (owner ruling, verbatim:
+ * "לא, הם כשרויות שונות" — a named certifying body and a level word are
+ * DIFFERENT kashrut claims, not two descriptions of one thing. בד"ץ בית
+ * יוסף is its own kashrut; it is not an instance of a generic "mehadrin"
+ * tier, because no body confers a level and "מהדרין" as a bare word is not
+ * a certification anyone issues. This SUPERSEDES the original three-way
+ * (a)/(b)/(c) split: there is no "level verified because a body backs it"
+ * case, ever — deriving a level from a body is a category error, and no
+ * amount of registry data makes it sound (see the WHY below). BODY and
+ * LEVEL are two independent axes, checked separately, each written
+ * independently when present:
+ *   body named    -> record WHO certifies: certifiedBy verbatim +
+ *                     kosherAuthorityGroup from the resolved authority.
+ *                     Never a level.
+ *   level phrase   -> record the CLAIM: claimedLevel/claimedLevelText/
+ *                     claimedLevelSource. Never derived from a body,
+ *                     ever — kosherLevel (a VERIFIED level) is not written
+ *                     by this pipeline at all; nothing today constitutes
+ *                     proof of a level, only a claim about one.
+ *   both present   -> write BOTH, independently, on the same record.
+ *                     Neither licenses the other.
+ *   neither        -> plain kosher (Gate 4).
+ * A level phrase must never be silently dropped by an earlier `return`
+ * (found live, 2026-08-27: an earlier branch order let `if (body)` return
+ * before ever checking `branch.levelText`, so the two greg records with the
+ * STRONGEST evidence — a named body — were exactly the two that lost their
+ * level phrase, while all body-less records kept it as a claim; more
+ * evidence produced less preserved information). claimFields is computed
+ * once and attached to every return path that has a level phrase, so this
+ * cannot regress the same way twice.
+ *
+ * WHY case (c) — "level verified by a supporting body" — was deleted
+ * outright rather than fixed (2026-08-27, measured, not assumed):
+ * resolveAuthorityFromText's `level` field is NOT a fact about a body. It
+ * is a pure restatement of which alias STRING matched: across all 203
+ * registry aliases, level=="mehadrin" iff the raw alias text itself
+ * contains the word מהדרין/גלאט — zero exceptions. The SAME authority
+ * carries both values depending only on spelling (badatz-beit-yosef:
+ * mehadrin | null; rabbinate-tel-aviv: null | mehadrin | regular; 35 more
+ * disagree internally). It has never encoded — and structurally cannot
+ * encode — a fact about what a body certifies, only a fact about what
+ * string was seen. `resolveAuthorityFromText`'s `level` return value must
+ * not be consulted for any level decision anywhere in this codebase; keep
+ * it only if a caller wants it for provenance/debugging.
  *
  * Gate 4 — the floor, REVISED 2026-08-27 (Reviewer caught the original
  * version: writing kosherAuthorityGroup:'rabbinate' here would have REMOVED
@@ -55,24 +84,27 @@
  * deleting the counter that measures our ignorance, while adding zero
  * actual evidence; the legal-compliance inference was also invalid in form,
  * since it assumes the business complies with the law it's being inferred
- * from). The floor is a PRESENTATION concern now, not a data write: kosher
- * established, no body, no supported level -> kosherType 'kosher' /
- * kosherLevel null / kosherAuthorityGroup 'unknown' — cases (a) and (b)
- * both land here for those three fields; a "כשרות מקומית" floor in the UI,
- * if wanted, is a separate display-layer decision reading this exact shape.
+ * from). The floor is a PRESENTATION concern, not a data write: no body, no
+ * level phrase -> kosherType 'kosher' / kosherLevel null /
+ * kosherAuthorityGroup 'unknown' — a "כשרות מקומית" floor in the UI, if
+ * wanted, is a separate display-layer decision reading this exact shape.
  *
  * === CLOSED OUTCOME SET — no default, no fallthrough ===
  * AMBIGUOUS | SOURCE_UNREACHABLE | SOURCE_STATES_NON_KOSHER |
- * SOURCE_SILENT_ON_KASHRUT | SOURCE_STATES_A_LEVEL | SOURCE_STATES_CLAIMED_LEVEL |
+ * SOURCE_SILENT_ON_KASHRUT | SOURCE_STATES_CLAIMED_LEVEL |
  * SOURCE_STATES_KOSHER_NO_LEVEL
  * classifyBranch() below returns exactly one of these for every matched
  * record; anything unmatched by the gate chain throws rather than falls
- * through to a default. SOURCE_STATES_CLAIMED_LEVEL (case b) is a distinct
- * outcome from SOURCE_STATES_KOSHER_NO_LEVEL (case a / a named body with an
- * unsupported level) precisely so a report reader can tell them apart
- * without inspecting the write object's fields — the two are NOT the same
- * finding even though today's Gate 4 writes them the same three core
- * kashrut fields.
+ * through to a default. SOURCE_STATES_A_LEVEL existed briefly (2026-08-27)
+ * for the now-deleted case (c) and is REMOVED, not merely unreachable —
+ * keeping a dead outcome name around after its case is gone reads as
+ * coverage that doesn't exist. SOURCE_STATES_CLAIMED_LEVEL fires whenever a
+ * level phrase is present, regardless of whether a body is ALSO named — the
+ * outcome name describes what happened to the LEVEL axis only; a body's
+ * certifiedBy write, when present, is visible directly in the report's
+ * `write` object either way. SOURCE_STATES_KOSHER_NO_LEVEL fires when there
+ * is no level phrase, whether or not a body is named — it too describes
+ * only the LEVEL axis; do not read its name as "no body either."
  */
 import { readFileSync, writeFileSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
@@ -89,7 +121,6 @@ export const OUTCOMES = Object.freeze({
   SOURCE_UNREACHABLE: 'SOURCE_UNREACHABLE',
   SOURCE_STATES_NON_KOSHER: 'SOURCE_STATES_NON_KOSHER',
   SOURCE_SILENT_ON_KASHRUT: 'SOURCE_SILENT_ON_KASHRUT',
-  SOURCE_STATES_A_LEVEL: 'SOURCE_STATES_A_LEVEL',
   SOURCE_STATES_CLAIMED_LEVEL: 'SOURCE_STATES_CLAIMED_LEVEL',
   SOURCE_STATES_KOSHER_NO_LEVEL: 'SOURCE_STATES_KOSHER_NO_LEVEL',
 });
@@ -172,106 +203,90 @@ export function classifyBranch(branch, registry, selective) {
     return { outcome: OUTCOMES.SOURCE_SILENT_ON_KASHRUT, write: null, branch };
   }
 
-  // Gate 1 passed: kosher established. Gate 2: who certifies? Resolved
-  // through the shared, registry-backed resolver — never an exact-string
-  // lookup on the adapter's raw bodyText, which is exactly the mechanism
-  // that missed greg's one real badatz (tsadi-glyph mismatch; see
-  // greg-adapter.mjs's header). `branch.bodyText` is already the adapter's
-  // own VERBATIM match against that same resolver; re-resolving it here
-  // recovers the authorityId/level Gate 2/3 need to decide with — the
-  // adapter reports the raw text, the pipeline is where it gets interpreted.
+  // Gate 1 passed: kosher established. Gate 2 and Gate 3 are now two
+  // INDEPENDENT axes (owner ruling, 2026-08-27, verbatim: "לא, הם כשרויות
+  // שונות" — see the file header for the full reasoning and the measured
+  // proof that resolveAuthorityFromText's `level` is a restatement of the
+  // matched alias STRING, not a fact about any body, zero exceptions across
+  // 203 aliases). Each axis is computed once, independently, and neither
+  // one's presence or absence changes the other's write.
+
+  // Gate 2 — who certifies? Resolved through the shared, registry-backed
+  // resolver — never an exact-string lookup on the adapter's raw bodyText,
+  // which is exactly the mechanism that missed greg's real badatz
+  // (tsadi-glyph mismatch; see greg-adapter.mjs's header). `branch.bodyText`
+  // is already the adapter's own VERBATIM match against that same resolver;
+  // re-resolving it here recovers the authorityId Gate 2 needs to decide
+  // with — the adapter reports the raw text, the pipeline interprets it.
+  // NOTE: `resolved.level` is deliberately never read below — see the file
+  // header's WHY. Record the certifier verbatim regardless of whether
+  // resolution succeeded — even an unresolved body name is still evidence
+  // someone was named, and certifiedBy is source text, not a claim about
+  // our own registry coverage. kosherAuthorityGroup only reflects a REAL
+  // resolution; an unresolved body does not get a group guessed for it.
+  // This pipeline does not invent a specific badatz_* kosherType from a
+  // registry authorityId either (the hyphen/underscore authority
+  // namespaces are known NOT to be a safe string transform of each other —
+  // see docs/KASHRUT_FACTS.md) — generic 'kosher'/'rabanut' plus the
+  // resolved group, both real values, neither invented.
   const body = branch.bodyText || null;
   const resolved = body ? resolveAuthorityFromText(body, registry.resolverEntries) : null;
-
-  // Gate 3, three-way split (owner ruling, 2026-08-27):
-  //   (c) FACT  — level phrase AND a body whose registry entry supports it.
-  //   body named (with or without a supported level) — record it, no level unless (c).
-  //   (b) CLAIM — level phrase, no body at all.
-  //   (a) PLAIN — no level phrase, no body.
-  const levelSupported = Boolean(branch.levelText) && resolved?.level === 'mehadrin';
-
-  if (levelSupported) {
-    const authority = registry.authorityById.get(resolved.authorityId);
-    return {
-      outcome: OUTCOMES.SOURCE_STATES_A_LEVEL,
-      write: {
-        kosherType: 'mehadrin',
-        kosherLevel: 'mehadrin',
-        kosherAuthorityGroup: authority?.group ?? 'unknown',
-        certifiedBy: body,
-        levelBasis: { kind: 'registry-alias', alias: resolved.raw, aliasLevel: 'mehadrin' },
-      },
-      branch,
-    };
-  }
-
-  if (body) {
-    // A body is named (Gate 2 satisfied) but Gate 3 fails: the registry
-    // doesn't support a level for it, or no level was claimed at all.
-    // Record the certifier verbatim regardless of whether resolution
-    // succeeded — even an unresolved body name is still evidence someone
-    // was named, and certifiedBy is source text, not a claim about our own
-    // registry coverage. kosherAuthorityGroup only reflects a REAL
-    // resolution; an unresolved body does not get a group guessed for it.
-    // This pipeline does not invent a specific badatz_* kosherType from a
-    // registry authorityId either (the hyphen/underscore authority
-    // namespaces are known NOT to be a safe string transform of each other
-    // — see docs/KASHRUT_FACTS.md) — generic 'kosher'/'rabanut' plus the
-    // resolved group, both real values, neither invented.
-    const authority = resolved ? registry.authorityById.get(resolved.authorityId) : null;
-    return {
-      outcome: OUTCOMES.SOURCE_STATES_KOSHER_NO_LEVEL,
-      write: {
+  const authority = resolved ? registry.authorityById.get(resolved.authorityId) : null;
+  const bodyFields = body
+    ? {
         kosherType: authority?.group === 'rabbinate' ? 'rabanut' : 'kosher',
-        kosherLevel: null,
         kosherAuthorityGroup: authority?.group ?? 'unknown',
         certifiedBy: body,
-      },
-      branch,
-    };
-  }
-
-  if (branch.levelText) {
-    // Gate 3, case (b) — CLAIM: the source states a level, names no body
-    // anywhere. kosherLevel/kosherType stay at the plain-kosher ceiling;
-    // the phrase is recorded as a claim, never promoted to fact by where
-    // it's stored (validate-data.mjs HARD-fails claimedLevel+kosherLevel
-    // both set, and an unsourced claim, as two separate invariants).
-    const claimedLevel = branch.levelText.includes('גלאט') ? 'glatt' : 'mehadrin';
-    return {
-      outcome: OUTCOMES.SOURCE_STATES_CLAIMED_LEVEL,
-      write: {
+      }
+    : {
         kosherType: 'kosher',
-        kosherLevel: null,
         kosherAuthorityGroup: 'unknown',
         certifiedBy: null,
-        claimedLevel,
+      };
+
+  // Gate 3 — what level does the source CLAIM? A level phrase must never be
+  // silently dropped (found live, 2026-08-27: an earlier branch order let
+  // `if (body)` return before ever checking `branch.levelText`, so the two
+  // greg records naming a real badatz — the best-evidenced records in the
+  // whole chain — were exactly the two that lost their level phrase, while
+  // every body-less record kept it as a claim; more evidence produced less
+  // preserved information, a silent erasure of factual data, principle #8).
+  // Never a VERIFIED kosherLevel — this pipeline does not write kosherLevel
+  // at all; only a claim, because nothing available to it constitutes proof
+  // of a level (see the file header's WHY case (c) was deleted, not fixed).
+  const claimFields = branch.levelText
+    ? {
+        claimedLevel: branch.levelText.includes('גלאט') ? 'glatt' : 'mehadrin',
         claimedLevelText: branch.levelText,
         claimedLevelSource: branch.sourceUrl,
-      },
+      }
+    : null;
+
+  if (claimFields) {
+    return {
+      outcome: OUTCOMES.SOURCE_STATES_CLAIMED_LEVEL,
+      write: { ...bodyFields, kosherLevel: null, ...claimFields },
       branch,
     };
   }
 
-  // Gate 4, case (a) — PLAIN kosher: no level phrase, no body anywhere.
-  // REVISED 2026-08-27: the floor is a PRESENTATION concern, not a data
-  // write. Writing kosherAuthorityGroup:'rabbinate' here would remove these
-  // records from the kashrutAuthorityUnknown ratchet count (validate-
-  // data.mjs: FOOD_TYPES && (!kosherAuthorityGroup || === 'unknown')) while
-  // adding zero certificate documents and zero new facts — deleting the
-  // counter that measures our ignorance, in exactly the field real evidence
-  // is supposed to write into. The legal-compliance inference was also
-  // invalid in form (assumes the business is compliant; the population most
-  // needing a floor is the least likely to be). A "כשרות מקומית" floor, if
-  // wanted, is a display-layer decision reading THIS shape — not a write.
+  // Gate 4, the floor: no level phrase claimed. REVISED 2026-08-27: the
+  // floor is a PRESENTATION concern, not a data write. Writing
+  // kosherAuthorityGroup:'rabbinate' here (absent a real resolved body)
+  // would remove these records from the kashrutAuthorityUnknown ratchet
+  // count (validate-data.mjs: FOOD_TYPES && (!kosherAuthorityGroup ||
+  // === 'unknown')) while adding zero certificate documents and zero new
+  // facts — deleting the counter that measures our ignorance, in exactly
+  // the field real evidence is supposed to write into. The legal-compliance
+  // inference was also invalid in form (assumes the business is compliant;
+  // the population most needing a floor is the least likely to be). A
+  // "כשרות מקומית" floor, if wanted, is a display-layer decision reading
+  // THIS shape — not a write. bodyFields already carries the correct
+  // kosherAuthorityGroup/certifiedBy whether or not a body was named; only
+  // kosherLevel is forced null here, uniformly.
   return {
     outcome: OUTCOMES.SOURCE_STATES_KOSHER_NO_LEVEL,
-    write: {
-      kosherType: 'kosher',
-      kosherLevel: null,
-      kosherAuthorityGroup: 'unknown',
-      certifiedBy: null,
-    },
+    write: { ...bodyFields, kosherLevel: null },
     branch,
   };
 }
