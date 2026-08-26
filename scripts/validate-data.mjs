@@ -297,6 +297,48 @@ function loadHeadLastVerifiedAtMap() {
   }
 }
 
+/**
+ * The eight kashrut-evidence fields covered by the value-may-not-become-
+ * absent guard below (owner §7). Deliberately the field LIST, not a value
+ * predicate: this guard does not care what the value was — `regular` and
+ * `mehadrin` are protected identically. That matters specifically for
+ * `regular`, which is never read as `=== 'mehadrin'`/`!== 'mehadrin'`
+ * anywhere in production code — a `regular → absent` transition is
+ * behaviourally invisible to the app today, so this guard is the only thing
+ * that would ever notice 258 unevidenced `regular` records losing their only
+ * kashrut field. Treating it as "the weaker value, less worth protecting"
+ * would be exactly backwards.
+ */
+const KASHRUT_REGRESSION_FIELDS = [
+  'kosherType', 'kosherLevel', 'kosherAuthorityGroup', 'kosherAuthority',
+  'certifiedBy', 'certifierId', 'kosherCertUrl', 'certificateValidUntil',
+];
+
+/**
+ * id -> {field: value at HEAD} for the eight KASHRUT_REGRESSION_FIELDS, for
+ * the value-may-not-become-absent guard (owner §7: distinguish intentional
+ * unknown from accidental loss). Same "relative to HEAD, not true history"
+ * caveat as loadHeadCertifiedByMap/loadHeadLastVerifiedAtMap. Returns null
+ * if HEAD can't be read — the check is then skipped rather than
+ * false-failing.
+ */
+function loadHeadKashrutFieldsMap() {
+  try {
+    const raw = execSync(`git show HEAD:${PLACES_REL}`, { cwd: root, encoding: 'utf8', maxBuffer: 1024 * 1024 * 64 });
+    const headPlaces = JSON.parse(raw.replace(/^﻿/, ''));
+    const map = new Map();
+    for (const p of headPlaces) {
+      if (!p || typeof p.id !== 'string') continue;
+      const fields = {};
+      for (const f of KASHRUT_REGRESSION_FIELDS) fields[f] = p[f];
+      map.set(p.id, fields);
+    }
+    return map;
+  } catch {
+    return null;
+  }
+}
+
 /** Exact-match lookup: is this specific (id, from, to) triple allowlisted? */
 function isBackdateAllowed(id, from, to) {
   return LASTVERIFIEDAT_BACKDATE_ALLOWLIST.some((e) => e.id === id && e.from === from && e.to === to);
@@ -336,11 +378,13 @@ if (hard.length === 0) {
   const shorthandLoc = [];
   const certifiedByOverwrites = [];
   const lastVerifiedAtBackdates = [];
+  const kashrutFieldRegressions = [];
   const currentLastVerifiedAt = new Map(); // for the allowlist's own stale-entry check, below
 
   const aliasMap = loadAliasMap();
   const headCertifiedBy = loadHeadCertifiedByMap();
   const headLastVerifiedAt = loadHeadLastVerifiedAtMap();
+  const headKashrutFields = loadHeadKashrutFieldsMap();
 
   counts.total = places.length;
 
@@ -410,6 +454,24 @@ if (hard.length === 0) {
         certifiedByOverwrites.push(
           `${p.id}: was ${JSON.stringify(prior)}, now ${JSON.stringify(p.certifiedBy ?? null)}`,
         );
+      }
+    }
+
+    // ── HARD (owner §7): a kashrut field that held a value at HEAD may not
+    // become absent. This is the distinction between intentional-unknown and
+    // accidental-loss, expressed as a shape rather than a heuristic: value ->
+    // absent fails; value -> explicit null passes (a deliberate determination
+    // — the same convention kosherLevel:null already carries, §B1.3); absent
+    // -> absent passes (nothing was ever there to lose). A value CHANGING to
+    // a different value is not this guard's concern — certifiedBy already has
+    // its own, stricter append-only rule above, and no equivalent policy was
+    // asked for the other seven fields.
+    if (headKashrutFields && headKashrutFields.has(p.id)) {
+      const headFields = headKashrutFields.get(p.id);
+      for (const f of KASHRUT_REGRESSION_FIELDS) {
+        if (headFields[f] !== undefined && p[f] === undefined) {
+          kashrutFieldRegressions.push(`${p.id}.${f}: was ${JSON.stringify(headFields[f])}, now absent`);
+        }
       }
     }
 
@@ -506,6 +568,13 @@ if (hard.length === 0) {
       '(restoring a real earlier date after undoing bad data), add a one-time entry to ' +
       'LASTVERIFIEDAT_BACKDATE_ALLOWLIST in scripts/validate-data.mjs naming this exact id/from/to and why',
     lastVerifiedAtBackdates,
+  );
+  cap(
+    'kashrut field went from a value to absent since HEAD (owner §7) — a field that held evidence may not ' +
+      'silently disappear; writing explicit null instead is how this codebase expresses "looked, withheld" ' +
+      '(§B1.3) and passes this check. If this is a deliberate correction, route it through ' +
+      'recordKashrutWrite() and write null rather than deleting the field',
+    kashrutFieldRegressions,
   );
 
   // Stale allowlist entries are an error, not a no-op — same principle as
