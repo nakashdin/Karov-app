@@ -1480,6 +1480,71 @@ because three confident numbers have already been wrong here.
 
 ---
 
+## 21. The additive-only rule has been violated 1,143 times, and 1,135 of the removals were undisclosed
+
+### 21a. The measurement
+
+Walking HEAD's first-parent ancestry and diffing each file-touching commit against its **true** parent:
+
+| | |
+|---|---|
+| commits that removed at least one record id | **35** |
+| record ids removed in total | **1,368** |
+| distinct ids removed and **never restored under the same id** | **1,143** |
+| …**re-keyed** — the same business is at HEAD under a different id | **583** (507 by phone, 76 by name + ≤1 km) |
+| …**no successor found at HEAD** | **560** ← upper bound on true loss |
+| ids removed in commits whose subject announces **only** additions/fixes | **1,135** |
+
+560 is an **upper bound**: the successor search uses phone and name matching, which §20c establishes
+under-detects. The true loss is lower and is not currently determined.
+
+### 21b. The commit messages do not disclose the removals
+
+| Commit | Removed | Subject |
+|---|---|---|
+| `31f75274` | **199** | "data: add **לחם ארז (4 kosher branches)**, update emoji logic…" |
+| `7b1a1b75` | **197** | "feat(tzohar): complete Tzohar dataset — certificates, expiry tracking, enrichment" |
+| `6b54833f` | 175 | "fix: decode all double-encoded UTF-8 strings via CP1252 reverse" |
+| `0bad8b9f` | 131 | "feat: add fast_food category + wire humus-eliyahu data" |
+| `da724a32` | 105 | "data: replace OSM Aroma with verified data, add Cafe Joe…" |
+| `159a969a` | 69 | "data: add kosherLevel/kosherAuthorityGroup/kosherAuthority to 1686 places" |
+
+**A commit announcing four new branches removed 199 records.** Not restaurants only — the no-successor set
+includes synagogues (`osm-way-114799009`, `arcgis:lod::26`) and mikvehs (`mikveh-392`).
+
+**This is the silent-damage class the whole guard-building effort exists to prevent, already present in the
+project's own history.** It predates this work; the guards shipped this month are what stop it recurring. It
+also means "additive-only" describes an intention, never an enforced invariant — **nothing has ever checked
+it.** `data:validate` counts records; it has never compared the id set against HEAD.
+
+### 21c. The instrument failure that hid it — `^` is cmd.exe's escape character
+
+Three consecutive analyses concluded **"0 records have ever been removed."** All three were wrong, and the
+third was the dangerous one because it had *passed* a known-positive test.
+
+```
+sh('git rev-parse 159a969a^')  ->  159a969a      // the commit ITSELF, not its parent
+```
+
+Node's `execSync` on Windows runs through **`cmd.exe`, where `^` is the escape character** and is stripped
+before git sees it. So `commit^` resolved to `commit`, and every comparison **diffed each commit against
+itself** — which returns zero removals by construction, for all 97 commits, in a loop that reported full
+coverage.
+
+**Why the §17 face-5 countermeasure did not catch it:** the known-positive test validated the *comparison*
+(a synthetic removal of 3 ids was detected as 3). The comparison was fine. **The broken part was the argument
+that selected what to compare** — and a known-positive test on the comparison cannot see a defect in the
+operand. Testing the instrument is not the same as testing the instrument's *inputs*.
+
+What actually caught it: the arithmetic refused to close. The dataset peaked at **7,525** and stands at
+**7,471**, and "nothing was ever removed" cannot produce a smaller number. **A conclusion that contradicts a
+count you already trust is a defect in the conclusion, not an anomaly to note and move past.**
+
+**Operational rule: on Windows, never pass `^` to a shell — use `~1`, and self-test that `X~1 !== X` before
+trusting any ancestry walk.**
+
+---
+
 ## Superseded numbers — do not requote
 
 | Wrong | Correct | Why |
@@ -1516,3 +1581,5 @@ because three confident numbers have already been wrong here.
 | "the 9/8 was a conflation of the 8-no-cityId mikvehs and the 9-unreferenced cities" | **wrong diagnosis** — the 9/8 is real and reproducible in the post-import state | filing it as a conflation would teach re-derivation, which is what destroys this finding |
 | "the only way to add a locality is the destructive rebuild" | **five writers rebuild the list**, plus `fix-orphan-cities.mjs` as a safe maintained path | see §19a |
 | `unknownCityId` is "structurally incapable of failing" | **overstated** — it was driven to 9 in a worktree; it is blind *to rebuilding writers* | see §19b |
+| "0 records have ever been removed from `places.osm.json`" (asserted **three times**) | **1,143 removed and never restored under the same id**; ≤560 with no successor | `commit^` through `cmd.exe` resolved to the commit itself; see §21c |
+| "commit `7b1a1b7` removed nothing" | it removed **197** | same `^` defect |
