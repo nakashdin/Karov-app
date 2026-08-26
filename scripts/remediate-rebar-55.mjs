@@ -1,22 +1,38 @@
 /**
- * Item 4 Unit 2 — dry-run remediation report for the rebar-* records still
- * asserting the fabricated kosherType:'mehadrin' (see import-rebar.mjs and
- * docs/KASHRUT_FACTS.md §5b/§22 for how that literal got there: the original
- * importer stamped it unconditionally, on every branch, with zero per-branch
- * evidence). REPORT ONLY — this file does not write to places.osm.json or
+ * Item 4 Unit 2 — dry-run remediation report for ALL 55 rebar-* records:
+ * the 53 asserting the fabricated kosherType:'mehadrin' (see import-rebar.mjs
+ * and docs/KASHRUT_FACTS.md §5b/§22 for how that literal got there — the
+ * original importer stamped it unconditionally, on every branch, with zero
+ * per-branch evidence), PLUS the 2 that currently have NO kashrut fields at
+ * all (rebar-bs-central-station, rebar-ramat-gan-marom-nave).
+ *
+ * Originally scoped to 53 and named remediate-rebar-53.mjs (that report is
+ * commit 8117b67). The Architect's independent verification found the other
+ * 2 are a live "אין תעודה → אין רשומה" violation right now — juice_bar is a
+ * FOOD_TYPE, the app's food filter has no kashrut precondition, so these two
+ * are displayed with literally nothing, not even 'unknown'. Absent -> value
+ * and fabricated -> honest are different starting points, but the
+ * destination this script computes is identical either way, so both belong
+ * in the same plan rather than a separate script. This file SUPERSEDES
+ * scripts/restore-rebar-two-branches.mjs, retired in the same commit —
+ * that script matched by single-nearest name+address+coordinate (~120m),
+ * exactly the design matchRebarStores' own header documents as unsafe on
+ * this data: rebar-bs-central-station is one of the three real ambiguous
+ * cases the many-to-one matcher below exists to catch, and the retired
+ * script could not have detected that.
+ *
+ * REPORT ONLY — this file does not write to places.osm.json or
  * restaurants.osm.json. It reads the real dataset, fetches the real live
  * feed, computes what each record's fields WOULD become under the same
  * evidence ceiling Unit 1 already uses, and prints the full diff. The write
  * itself is a separate, later, explicitly-gated step once the owner has seen
- * this report — building that machinery now, before the disposition of the
- * ambiguous/no-match buckets below is confirmed, would be exactly the kind
- * of unrequested feature this project's own conventions warn against.
+ * this report.
  *
  * Reuses matchRebarStores() from rebar-feed.mjs — the same many-to-one-aware
  * matcher Unit 1's importer uses — rather than re-deriving matching logic a
  * second time (§17 face 3: logic imported, never duplicated).
  *
- * Usage: node scripts/remediate-rebar-53.mjs
+ * Usage: node scripts/remediate-rebar-55.mjs
  */
 import { readFileSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
@@ -92,23 +108,26 @@ function proposedAfter(record) {
   recordKashrutWrite(clone, 'kosherType', 'kosher', BASIS);
   recordKashrutWrite(clone, 'kosherLevel', null, BASIS);
   recordKashrutWrite(clone, 'kosherAuthorityGroup', 'unknown', BASIS);
-  // kosherAuthority/certifiedBy: none of the 53 currently have either field
+  // kosherAuthority/certifiedBy: none of the 55 currently have either field
   // set (verified separately, not assumed) — so there is nothing to remove
   // and nothing to leave untouched; recordKashrutWrite is not called for
-  // either field, matching the precedent in restore-rebar-two-branches.mjs
-  // ("certifiedBy left untouched — the source names no body").
+  // either field.
   return clone;
 }
 
 export async function main({ fetchImpl, placesPath }) {
   const places = readNoBom(placesPath);
   const existingRebar = places.filter((p) => typeof p.id === 'string' && p.id.startsWith('rebar-'));
-  const needsRemediation = existingRebar.filter((r) => r.kosherType === 'mehadrin');
-  const noKashrutFieldsAtAll = existingRebar.filter((r) => !('kosherType' in r));
+  // In scope: the 53 asserting the fabricated literal, PLUS the 2 with no
+  // kashrut fields at all. Both groups get the identical destination; only
+  // their starting state differs (labeled per record below).
+  const needsRemediation = existingRebar.filter((r) => r.kosherType === 'mehadrin' || !('kosherType' in r));
+  const startingState = (r) => (r.kosherType === 'mehadrin' ? 'fabricated-mehadrin' : 'absent-entirely');
 
   console.log(`Existing rebar-* records: ${existingRebar.length}`);
-  console.log(`  asserting kosherType:'mehadrin' (in scope for this remediation): ${needsRemediation.length}`);
-  console.log(`  with NO kashrut fields at all (out of scope — separate finding, see below): ${noKashrutFieldsAtAll.length}\n`);
+  console.log(`  in scope for this remediation: ${needsRemediation.length}`);
+  console.log(`    asserting kosherType:'mehadrin' (fabricated): ${needsRemediation.filter((r) => startingState(r) === 'fabricated-mehadrin').length}`);
+  console.log(`    with NO kashrut fields at all (absent — the app shows these with ZERO kashrut info today, not 'unknown'): ${needsRemediation.filter((r) => startingState(r) === 'absent-entirely').length}\n`);
 
   const stores = fetchImpl ? await fetchRebarStores(fetchImpl) : await fetchRebarStores();
   console.log(`Feed entries parsed: ${stores.length}\n`);
@@ -124,7 +143,7 @@ export async function main({ fetchImpl, placesPath }) {
   const confirmedFalse = confirmedInScope.filter((c) => c.store.kosher === false);
   const confirmedOther = confirmedInScope.filter((c) => c.store.kosher !== true && c.store.kosher !== false);
 
-  console.log('--- Summary (of the 53 in scope) ---');
+  console.log(`--- Summary (of the ${needsRemediation.length} in scope) ---`);
   console.log(`  confirmed match, feed kosher:true  -> PROPOSED WRITE       : ${confirmedTrue.length}`);
   console.log(`  confirmed match, feed kosher:false -> STOP, no write       : ${confirmedFalse.length}`);
   console.log(`  confirmed match, feed kosher neither -> STOP, no write     : ${confirmedOther.length}`);
@@ -135,7 +154,7 @@ export async function main({ fetchImpl, placesPath }) {
   for (const { record, store } of confirmedTrue) {
     const before = fieldsSnapshot(record);
     const after = fieldsSnapshot(proposedAfter(record));
-    console.log(`${record.id} (${record.name})`);
+    console.log(`${record.id} (${record.name}) [${startingState(record)}]`);
     console.log(`  matched feed store: "${store.name}" | ${store.address}, ${store.city}`);
     console.log(`  before: ${JSON.stringify(before)}`);
     console.log(`  after:  ${JSON.stringify(after)}`);
@@ -153,7 +172,7 @@ export async function main({ fetchImpl, placesPath }) {
 
   console.log('\n=== AMBIGUOUS — independent address-token re-derivation, per record ===');
   for (const { record, candidates } of ambiguousInScope) {
-    console.log(`\n${record.id} (${record.name})`);
+    console.log(`\n${record.id} (${record.name}) [${startingState(record)}]`);
     console.log(`  existing address: "${record.address}" | cityId: "${record.cityId}"`);
     for (const c of candidates) {
       const { existingTokens, candidateTokens, overlap } = addressTokenOverlap(record, c);
@@ -169,49 +188,56 @@ export async function main({ fetchImpl, placesPath }) {
     console.log(`${r.id} (${r.name}) | ${r.address}`);
   }
 
-  if (noKashrutFieldsAtAll.length) {
-    console.log('\n=== OUT OF SCOPE FINDING — records with NO kashrut fields at all ===');
-    for (const r of noKashrutFieldsAtAll) {
-      console.log(`${r.id} (${r.name}) — kosherType, kosherLevel, kosherAuthorityGroup all ABSENT, not even 'unknown'.`);
-    }
-  }
-
-  // Manual, per-record resolution of the 2 ambiguous cases — NOT a change to
+  // Manual, per-record resolution of the 3 ambiguous cases — NOT a change to
   // matchRebarStores' "never auto-resolve" rule (that guarantee stays
   // exactly as Unit 1 left it; this is a human-reviewed judgment call made
   // HERE, in the report layer, informed by the address-token evidence
   // printed above, and stated with its reasoning rather than applied
-  // silently):
+  // silently). Keyed by the WINNING CANDIDATE'S NAME, not a positional
+  // index — candidatesByRecord's array order depends on store iteration
+  // order, which is not a contract this file should rely on.
   //
   //   rebar-02629c63: candidate "קרית אתא- שער הצפון" has 3/5 address-token
   //   overlap AND its own city (קרית אתא) matches this record's cityId
   //   (קריית אתא — spelling variant of the same city). The other candidate,
   //   "חיפה- ביג קריות", has ZERO address-token overlap and a DIFFERENT
   //   city than this record's own cityId — a proximity-only false positive,
-  //   not claimed by any other existing record in the 55. Resolved to the
-  //   first candidate (kosher:true).
+  //   not claimed by any other existing record in the 55. Resolved to
+  //   "קרית אתא- שער הצפון" (kosher:true).
   //
-  //   rebar-dc59d466: candidate "באר שבע- קניון הנגב" has 4/6 address-token
-  //   overlap AND its own name embeds "קניון הנגב", the same as this
-  //   record's own name — a double match, not just address. The other
-  //   candidate, "באר שבע- תחנה מרכזית", has ZERO address-token overlap; its
-  //   name instead matches the OUT-OF-SCOPE record rebar-bs-central-station
-  //   ("...תחנה מרכזית"), which independently corroborates this resolution:
-  //   under it, no feed store is claimed by two different existing records.
-  //   Resolved to the first candidate (kosher:true).
+  //   rebar-dc59d466 and rebar-bs-central-station are a genuine mutual 2x2:
+  //   both existing records have BOTH "קניון הנגב" and "תחנה מרכזית" as
+  //   candidates. This is the strongest evidence in this report, stated
+  //   directly rather than as an aside: rebar-dc59d466's own name is
+  //   "קניון הנגב", and that candidate's address has 4/6 token overlap with
+  //   it (שדרות/יצחק/רגר/2) — a double match, name AND address.
+  //   rebar-bs-central-station's own name is "...תחנה מרכזית", the OTHER
+  //   candidate. Resolving each existing record to the feed store whose
+  //   name it already carries is not a coincidence available on only one
+  //   side: it is RECIPROCAL — under this resolution, "קניון הנגב" and
+  //   "תחנה מרכזית" are claimed by exactly one existing record each, and no
+  //   feed store is left claimed by two. A resolution that got either one
+  //   wrong would leave the other feed store double-claimed or unclaimed;
+  //   this one leaves both accounted for exactly once. That mutual
+  //   consistency is the argument, not a footnote to it.
   const AMBIGUOUS_RESOLUTIONS = {
-    'rebar-02629c63': 0, // candidates[0] = "קרית אתא- שער הצפון"
-    'rebar-dc59d466': 1, // candidates[1] = "באר שבע- קניון הנגב"
+    'rebar-02629c63': 'קרית אתא- שער הצפון',
+    'rebar-dc59d466': 'באר שבע- קניון הנגב',
+    'rebar-bs-central-station': 'באר שבע- תחנה מרכזית',
   };
 
-  console.log('\n=== PROPOSED RESOLUTION — the 2 ambiguous records, per-record reasoning above ===');
+  console.log('\n=== PROPOSED RESOLUTION — the ambiguous records, per-record reasoning above ===');
   const ambiguousResolved = [];
   for (const { record, candidates } of ambiguousInScope) {
-    const idx = AMBIGUOUS_RESOLUTIONS[record.id];
-    const chosen = candidates[idx];
+    const winningName = AMBIGUOUS_RESOLUTIONS[record.id];
+    const chosen = candidates.find((c) => c.name === winningName);
+    if (!chosen) {
+      throw new Error(`${record.id}: no candidate named "${winningName}" — the resolution table is stale against this fetch's candidate set. Investigate before trusting this plan.`);
+    }
     ambiguousResolved.push({ record, store: chosen });
     console.log(`${record.id}: resolved to "${chosen.name}" (kosher=${JSON.stringify(chosen.kosher)}) — see reasoning in the comment above this block.`);
   }
+  console.log('  RECIPROCITY CHECK: rebar-dc59d466 and rebar-bs-central-station resolve to two DIFFERENT feed stores (קניון הנגב / תחנה מרכזית) — neither store is claimed twice under this plan.');
 
   const allWrites = [...confirmedTrue, ...ambiguousResolved];
 
@@ -222,16 +248,16 @@ export async function main({ fetchImpl, placesPath }) {
     const before = fieldsSnapshot(r);
     if (w) {
       const after = fieldsSnapshot(proposedAfter(r));
-      planLines.push(`${r.id} | ${r.name} | before=${JSON.stringify(before)} | after=${JSON.stringify(after)} | matched="${w.store.name}"`);
+      planLines.push(`${r.id} | ${r.name} | [${startingState(r)}] | before=${JSON.stringify(before)} | after=${JSON.stringify(after)} | matched="${w.store.name}"`);
     } else {
-      planLines.push(`${r.id} | ${r.name} | before=${JSON.stringify(before)} | STOP — no write (see STOP sections above)`);
+      planLines.push(`${r.id} | ${r.name} | [${startingState(r)}] | before=${JSON.stringify(before)} | STOP — no write (see STOP sections above)`);
     }
   }
   for (const line of planLines) console.log(line);
 
   return {
     existingRebar, needsRemediation, confirmedTrue, confirmedFalse, confirmedOther,
-    ambiguousInScope, ambiguousResolved, noMatchInScope, noKashrutFieldsAtAll, allWrites, planLines,
+    ambiguousInScope, ambiguousResolved, noMatchInScope, allWrites, planLines,
   };
 }
 
