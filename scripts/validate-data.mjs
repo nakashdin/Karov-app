@@ -64,6 +64,60 @@ const BBOX = { minLat: 29.3, maxLat: 33.4, minLng: 34.2, maxLng: 35.95 };
 /** kosherType values that assert a specific kashrut level (Batch B1, FACTS §5b). */
 const LEVEL_ASSERTING_KOSHER_TYPES = new Set(['mehadrin', 'rabanut_mehadrin', 'rabanut_mehadrin_jerusalem']);
 
+/**
+ * Explicit, reviewable exceptions to the lastVerifiedAt-never-moves-backward
+ * hard failure below. This is a HARD failure with no CLI flag and no
+ * commit-message convention as an escape hatch — both were considered and
+ * rejected: a flag leaves no trace of who decided what, and a commit-message
+ * convention couples enforcement to text that runs outside commit context
+ * and is trivially copy-pasted. An allowlist entry is the only form that is
+ * additive, reviewable in the diff that adds it, and forces a stated reason
+ * before the build goes green — same shape as FROZEN_EXCLUSIONS in
+ * scripts/shared/__tests__/kashrut-write-completeness.test.mjs, the pattern
+ * in this repo that has actually held up.
+ *
+ * An entry authorises EXACTLY ONE id moving from EXACTLY ONE date to
+ * EXACTLY ONE date. Not a record-level exemption, not a date range, not a
+ * wildcard — anything broader becomes a permanent hole instead of a
+ * reviewed, one-time exception. Add an entry only for a genuine corrective
+ * revert (restoring a real earlier date after undoing bad data that was
+ * itself wrongly written), never to silence a failure you haven't
+ * investigated.
+ *
+ * STALE ENTRIES ARE AN ERROR, not a no-op (checked below, same principle as
+ * FROZEN_EXCLUSIONS' stale-entry check): if HEAD no longer shows this id at
+ * this exact `to` date — because something else changed it again since —
+ * the entry no longer describes anything real and must be removed. An
+ * allowlist that only ever grows decays into a permission list.
+ */
+const LASTVERIFIEDAT_BACKDATE_ALLOWLIST = [
+  // All seven from commit c8857c501, "fix(tzohar): stop the importer
+  // stamping co-located businesses with the wrong certificate" — the
+  // address-fallback bug in import-food.mjs (see that file's own header)
+  // matched a Tzohar record to any single food place at the same street
+  // address, wrongly stamping 12 co-located businesses with someone else's
+  // certificate and an incorrect lastVerifiedAt. Restoring the true earlier
+  // dates recovered from git, while undoing that mis-certification, is
+  // exactly the corrective-revert case this allowlist exists for. Verified
+  // independently against full commit history (97 commits, 539,089 same-id
+  // comparisons) before this list was designed — these 7 are the only
+  // backward movements that have ever occurred in this dataset's history.
+  { id: 'humus-eli-חומוס-אליהו-הרצליה-פיתוח', from: '2026-08-10', to: '2026-07-30',
+    reason: 'חומוס אליהו הרצליה פיתוח: restored after being wrongly stamped with another business\'s Tzohar-adjacent certificate by the address-fallback bug.' },
+  { id: '9100018', from: '2026-08-10', to: '2026-07-29',
+    reason: 'פיצה האט (id 9100018): same revert, one of the 12 co-located businesses restored to its pre-corruption certifiedBy and date.' },
+  { id: '9100059', from: '2026-08-10', to: '2026-07-29',
+    reason: 'פיצה האט (id 9100059): same revert, a second branch caught by the same address-fallback match.' },
+  { id: 'burgersbar-0b78072a', from: '2026-08-10', to: '2026-07-14',
+    reason: 'בורגרס בר הגבעה הצרפתית: same revert; this one\'s wrong certificate left it with no certifiedBy at all once undone, restored to its true (oldest) prior date.' },
+  { id: 'manual-kansai-tlv', from: '2026-08-10', to: '2026-07-29',
+    reason: 'קנסאי סושי: named directly in the commit message — was wrongly stamped with Arcaffe Alon Towers\' certificate, restored to רבנות תל אביב.' },
+  { id: '9000064', from: '2026-08-10', to: '2026-07-29',
+    reason: 'פיצה שמש (id 9000064): same revert, restored to בד"צ בית יוסף.' },
+  { id: 'manual-dedup-פיצה-שמש-בית-קמה', from: '2026-08-10', to: '2026-07-29',
+    reason: 'פיצה שמש בית קמה: same revert, restored to בד"צ בית יוסף.' },
+];
+
 const hard = [];
 const counts = {
   total: 0,
@@ -142,6 +196,30 @@ function loadHeadCertifiedByMap() {
   }
 }
 
+/**
+ * id -> lastVerifiedAt as committed at HEAD. Same shape and same "relative
+ * to HEAD, not true history" caveat as loadHeadCertifiedByMap. Returns null
+ * if HEAD can't be read — the check is then skipped rather than false-failing.
+ */
+function loadHeadLastVerifiedAtMap() {
+  try {
+    const raw = execSync(`git show HEAD:${PLACES_REL}`, { cwd: root, encoding: 'utf8', maxBuffer: 1024 * 1024 * 64 });
+    const headPlaces = JSON.parse(raw.replace(/^﻿/, ''));
+    const map = new Map();
+    for (const p of headPlaces) {
+      if (p && typeof p.id === 'string' && p.lastVerifiedAt) map.set(p.id, p.lastVerifiedAt);
+    }
+    return map;
+  } catch {
+    return null;
+  }
+}
+
+/** Exact-match lookup: is this specific (id, from, to) triple allowlisted? */
+function isBackdateAllowed(id, from, to) {
+  return LASTVERIFIEDAT_BACKDATE_ALLOWLIST.some((e) => e.id === id && e.from === from && e.to === to);
+}
+
 function readJson(path, label) {
   if (!existsSync(path)) {
     fail(`${label}: file not found at ${path}`);
@@ -173,9 +251,12 @@ if (hard.length === 0) {
   const structural = [];
   const shorthandLoc = [];
   const certifiedByOverwrites = [];
+  const lastVerifiedAtBackdates = [];
+  const currentLastVerifiedAt = new Map(); // for the allowlist's own stale-entry check, below
 
   const aliasMap = loadAliasMap();
   const headCertifiedBy = loadHeadCertifiedByMap();
+  const headLastVerifiedAt = loadHeadLastVerifiedAtMap();
 
   counts.total = places.length;
 
@@ -247,6 +328,28 @@ if (hard.length === 0) {
         );
       }
     }
+
+    // ── HARD: lastVerifiedAt never moves backward relative to HEAD ──────────
+    // The signature of a one-shot script re-applying a frozen payload — this
+    // exact thing happened in this repo (an adversarial re-run sweep moved
+    // several dates back by exactly one day) and the only reason it didn't
+    // ship was a human noticing a row count. Unconditional except for the
+    // explicit allowlist above; see that block for why no other escape
+    // hatch exists.
+    if (p.lastVerifiedAt) currentLastVerifiedAt.set(p.id, p.lastVerifiedAt);
+    if (headLastVerifiedAt && p.lastVerifiedAt && headLastVerifiedAt.has(p.id)) {
+      const prior = headLastVerifiedAt.get(p.id);
+      const current = p.lastVerifiedAt;
+      if (current !== prior) {
+        const priorDate = new Date(prior);
+        const currentDate = new Date(current);
+        if (!isNaN(priorDate) && !isNaN(currentDate) && currentDate < priorDate) {
+          if (!isBackdateAllowed(p.id, prior, current)) {
+            lastVerifiedAtBackdates.push(`${p.id}: was ${JSON.stringify(prior)}, now ${JSON.stringify(current)} — not on the allowlist`);
+          }
+        }
+      }
+    }
   }
 
   const cap = (label, list, limit = 10) => {
@@ -270,6 +373,36 @@ if (hard.length === 0) {
       'route it through recordKashrutWrite() with a documented basis rather than assigning it directly',
     certifiedByOverwrites,
   );
+  cap(
+    'lastVerifiedAt moved backward since HEAD and the movement is not on the allowlist — this is the ' +
+      'signature of a one-shot script re-applying a frozen payload. If this is a genuine corrective revert ' +
+      '(restoring a real earlier date after undoing bad data), add a one-time entry to ' +
+      'LASTVERIFIEDAT_BACKDATE_ALLOWLIST in scripts/validate-data.mjs naming this exact id/from/to and why',
+    lastVerifiedAtBackdates,
+  );
+
+  // Stale allowlist entries are an error, not a no-op — same principle as
+  // FROZEN_EXCLUSIONS' stale-entry check. Checked against the CURRENT
+  // dataset being validated, not HEAD: an entry authorises a working-tree
+  // transition that may not be committed yet (that's the whole point — it
+  // has to pass validate-data.mjs BEFORE the corrective commit lands), so
+  // checking against HEAD would flag every entry as stale at the exact
+  // moment it's needed. An entry stays live as long as the current data
+  // still shows this id at the allowlisted "to" date — pre-commit or
+  // post-commit, that's the same fact. Only once something else changes the
+  // date AGAIN does the entry stop describing anything present, and only
+  // then is it stale.
+  {
+    const staleAllowlistEntries = LASTVERIFIEDAT_BACKDATE_ALLOWLIST.filter(
+      (e) => currentLastVerifiedAt.get(e.id) !== e.to,
+    );
+    cap(
+      'STALE entries in LASTVERIFIEDAT_BACKDATE_ALLOWLIST — the current dataset no longer shows this id ' +
+        'at the allowlisted "to" date (something changed it again since), so the entry no longer describes ' +
+        'anything real. Remove it — an allowlist that only ever grows decays into a permission list',
+      staleAllowlistEntries.map((e) => `${e.id}: allowlisted ${e.from} → ${e.to}, but the dataset now shows ${JSON.stringify(currentLastVerifiedAt.get(e.id) ?? null)}`),
+    );
+  }
 }
 
 // ── Ratchet comparison ────────────────────────────────────────────────────────
