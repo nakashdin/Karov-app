@@ -1,6 +1,10 @@
 import { readFileSync, writeFileSync } from 'fs';
+import { fileURLToPath } from 'url';
+import path from 'path';
 
-const DATA_PATH = 'C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\places.osm.json';
+const __dir = path.dirname(fileURLToPath(import.meta.url));
+const ROOT = path.join(__dir, '..');
+const DATA_PATH = path.join(ROOT, 'src/data/generated/places.osm.json');
 
 function normalizePhone(p) {
   if (!p) return '';
