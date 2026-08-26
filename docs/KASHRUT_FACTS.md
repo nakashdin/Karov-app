@@ -1960,6 +1960,47 @@ false comfort.
 
 ---
 
+## 27. The control and the probe were not the same experiment
+
+Distinct from §24. There the instrument could not see its subject. Here the instrument worked, saw its
+subject, and **was compared against something that differed in more than the variable under test**.
+
+### 27a. Four instances, one session
+
+| probe | control | the unclassified second difference |
+|---|---|---|
+| level guard vs a `mehadrin` literal in a template literal → **0** | same literal as a string value → **1** | the template case had **no enclosing object literal**; the string case was inside `{ … }`. Nearly reported as a template-shaped evasion path in the guard |
+| top-of-file prose probe, expected to isolate the null-enclosing-block rule | — | `stripComments` already removed the text **before** the null-block rule could matter, so sabotaging that rule left the probe green. The probe tested a different mechanism than it claimed |
+| differential probes for the string-blind stripper → both "not flagged" | each other | both written to a directory the guard never scans (§24 overlap — but the pair *agreed*, which is what made it read as a finding) |
+| `/*` in a string, no later `*/` → violation survives | `/*` in a string **with** a later `*/` → violation eaten | the closing delimiter, which had not been classified as part of the fixture at all |
+
+### 27b. Why re-checking the instrument does not catch it
+
+> **In every instance the probe was correct.** Re-reading it passes. The defect was in what it was compared
+> against — and in three of the four, the second difference had not been classified as a variable at all.
+> An enclosing object literal, a text position, a closing delimiter: all read as *context*, not as *inputs*.
+
+**Countermeasure:** state what differs between control and probe **out loud**, and confirm the difference is
+only the variable under test. Not "is my probe right?" — it is — but **"is my control the same experiment?"**
+
+### 27c. Placement in the family
+
+```
+§17 f.1  the test does not run
+§17 f.5  the zero result conceals itself
+§23      the guard's strength is in its call sites, not its body
+§24      the probe's validity is in whether the subject can see it, not its contents
+§26      two surfaces agreeing is evidence-shaped
+§26b-ii  a probe with no inconclusive state cannot report having measured nothing
+§27      the control and the probe were not the same experiment
+```
+
+All seven are one question asked at different points: **what would have to be true for this check to pass
+while the thing it guards is broken?** §27's answer is the least visible, because everything the prober
+wrote is correct.
+
+---
+
 ## Superseded numbers — do not requote
 
 | Wrong | Correct | Why |
