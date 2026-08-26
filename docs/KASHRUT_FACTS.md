@@ -829,6 +829,15 @@ a copied function drifts from its original, or when a count is right about a fil
    test fails loudly when the data moves underneath it instead of quietly testing an empty set.
 3. **Import the logic; never copy it.** A test holding its own copy of the function is testing the copy. If
    the real module cannot be imported, that is a reason to make it importable, not a reason to duplicate it.
+   **Face 3 has an analysis mode, not just a test mode** — and it is worse there, because no one reviews a
+   scratch script. Reproducing `validate-data.mjs`'s `levelAssertedOverNamedBody` predicate by hand failed
+   twice in one sitting: once by coding the flag as `!certifierId` (the *inverse* of the real predicate, which
+   requires `certifiedBy` to **resolve** to a named body), and once by copying `FOOD_TYPES` as 4 members when
+   the real set has **8**. The second produced 302 against a baseline of 343 — indistinguishable from a real
+   finding that the ratchet had 41 records of slack, and one step from being reported as one. **What caught it
+   was running `npm run data:validate` and seeing 343** — not re-reading the reproduction, which only ever
+   confirms itself. Derive a baseline from the validator's own output; if a predicate must be reproduced,
+   import its constants rather than retyping them.
 4. **A matched prediction is not a passing check.** Predicting an output's *shape* and hitting it says
    nothing about the output's *validity*. Any run that produces a dataset must be followed by
    `data:validate` on the produced dataset, not by a comparison of counters.
@@ -995,10 +1004,57 @@ Fields where the two files **disagree**: **`kosherType` 150 · `certifiedBy` 101
    a direct violation of additive-only. The real options are *merge-then-retire* or *keep-and-validate*, and
    **both require the §18b-ii merge**, which is why specifying that merge does not pre-empt the decision.
 2. **150 `kosherType` and 101 `certifiedBy` disagreements have never been adjudicated.** A merge must not
-   silently resolve them. Working assumption — **unverified and load-bearing** — is that `places.osm.json`
-   wins on kashrut, because that is where `876a562`'s corrections landed and the mirror is stale rather than
-   independent. **If that assumption is wrong the merge policy inverts.**
+   silently resolve them. See §18e-i — the "places wins" assumption is **two** assumptions, and it holds for
+   one field and fails for the other.
 3. It reframes what `f2b15d5` protects: not a redundant copy, but 205 kashrut claims existing nowhere else.
+
+### 18e-i. The mirror is a pre-migration snapshot — dated by a missing field, not by a value
+
+On shared ids, `places.osm.json` holds fields the mirror **entirely lacks**:
+
+| `kosherLevel` | `kosherAuthority` | `certifiedBy` | `kosherType` |
+|---|---|---|---|
+| **904** | 201 | 191 | 141 |
+
+**904 missing `kosherLevel` is a fingerprint, not a gap.** `kosherLevel` did not exist until
+`migrate-kosher-fields.mjs` created it, so its wholesale absence **dates the file** as a snapshot taken before
+the kashrut-field migration. This is better evidence than any individual value comparison, and it is what
+justifies treating most disagreements as staleness.
+
+**But "the mirror is stale rather than independent" is two claims, and only one holds.** Tested per
+disagreement against 97 commits of history — does the mirror's value appear *anywhere* in `places.osm.json`'s
+history for that id?
+
+| field | disagreements | stale | independent | |
+|---|---|---|---|---|
+| `certifiedBy` | 101 | 94 | 7 | **93% stale** — assumption holds |
+| `kosherType` | 150 | 73 | **77** | **49% stale** — assumption fails |
+
+**A blanket places-wins silently decides 77 open questions.** The merge policy must be **per field**, and
+`kosherType` is **not settled**.
+
+### 18e-ii. The adjudication rule — and why it is not "places wins with exceptions"
+
+Of the 40 shared ids where `places.osm.json` asserts a level and the mirror does not, split by
+`validate-data.mjs`'s *exact* predicate (level-asserting `kosherType` ∩ `certifiedBy` resolving to an
+`authorityId` through the registry alias map):
+
+| | n | `certifiedBy` is | Which file is right |
+|---|---|---|---|
+| **flagged** | **6** | a **body name** — `כשרות בד"ץ הרב רובין`, `כשרות רובין`, `הרב רובין` (all → `rav-rubin`) | **the mirror** — places derived the *level* from the *body*, the inference §5b records as never legitimate |
+| not flagged, alias unresolved | 27 | a **level phrase** — `כשר למהדרין`, `כשר מהדרין`, `כשר בד"ץ` | **places** — the source text itself states mehadrin, so the elevation is evidence-backed |
+| not flagged, no `certifiedBy` | 7 | absent | unadjudicable — leave alone |
+
+The six: `9100003`, `9100006`, `9100007`, `9100062`, `9100063`,
+`humus-eli-חומוס-אליהו-ירושלים-הר-חוצבים`.
+
+**Do not write the rule as "places wins except where flagged."** Write it as:
+
+> **The value supported by the source text wins, regardless of which file holds it.**
+
+places-wins is then a *consequence* of that rule holding 27 times, not a policy carrying 6 exceptions. Stated
+the first way, the next reader asks why the exception exists and tunes it. Stated the second way, it is the
+rule this codebase already applies everywhere else.
 
 ### 18f. Note for whoever touches these guards next
 
@@ -1038,3 +1094,7 @@ one flag is how "I opted into the rebuild" silently becomes "and also authorised
 | "zero-tolerance kashrut guard on the overwrite; guard what is never legitimate" | **unsatisfiable** — 58 reproducible records already carry kashrut fields, so it blocks 100% of legitimate runs | see §18b-i |
 | `restaurants.osm.json` is a redundant mirror | **384 records exist only there, 205 with kashrut**; 150 `kosherType` + 101 `certifiedBy` disagreements | see §18e |
 | "covering the file in `validate-data.mjs` is an owner decision" | **a ratchet, baselined at current counts** — the repo already does this at `levelAssertedOverNamedBody: 343` | see §18c |
+| "the mirror is stale rather than independent" | **two claims** — `certifiedBy` 93% stale (holds), `kosherType` 49% (fails, 77 independent) | see §18e-i |
+| merge carve-out = 5 records | **6** — the sixth is `humus-eli-חומוס-אליהו-ירושלים-הר-חוצבים`, same body (`rav-rubin`), same shape | see §18e-ii |
+| `levelAssertedOverNamedBody` = 302 (looked like 41 records of ratchet slack) | **343**, matching baseline exactly | a hand-copied `FOOD_TYPES` with 4 of its 8 members; see §17 face 3 |
+| "84 unguarded writers of `restaurants.osm.json`" | **not established** — the scan tests "mentions the file AND writes *something*" | 88 referencing / 4 guarded is sound; the writer count needs a narrower test |
