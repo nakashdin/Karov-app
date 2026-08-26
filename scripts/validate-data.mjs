@@ -192,7 +192,13 @@ const counts = {
   // the weaker evidence, not the stronger. On places.osm.json that under-
   // counts 343 of a true 398 (55 invisible). Measured the same way on this
   // file: population 97, flagged 37 of a true 38 (1 invisible —
-  // `בד"ץ אגודת ישראל והרבנות המקומית`, not in the registry). Real but
+  // `בד"ץ אגודת ישראל והרבנות המקומית`, which is reviewQueue-DEFERRED, not
+  // merely absent: a human review read that exact string and declined to
+  // resolve it, recording that Badatz Agudat Yisrael is the only
+  // identifiable body and the co-certifier is not. That is the whole point —
+  // the predicate is blind where a reviewer REFUSED to license a body, which
+  // is weaker evidence than an unprocessed string, not stronger. It is also
+  // a compound two-body string, so it sits in the §9 compound gap). Real but
   // small here; still not exhaustive. If the predicate is ever broadened to
   // resolve vague-text cases, THIS baseline moves 37 -> 38 and
   // levelAssertedOverNamedBody moves 343 -> 398 — both are a deliberate

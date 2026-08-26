@@ -905,6 +905,15 @@ a copied function drifts from its original, or when a count is right about a fil
    `data:validate` on the produced dataset, not by a comparison of counters.
 5. **Validate the instrument against a known positive before believing a zero.** Not by re-running it —
    by opening one file you are already sure is a hit and confirming the scan sees it.
+   **Escalated after a third and fourth instance, both inside one verification.** Asked whether
+   `בד"ץ אגודת ישראל והרבנות המקומית` was reviewQueue-deferred or merely absent, two consecutive searches
+   of `kashrut-registry.json` returned **zero**, and it *is* in the reviewQueue. Both failed on the same
+   mechanism: the haystack was `JSON.stringify(entry)`, in which the gershayim is escaped as `\"`, while the
+   needle carried a bare `"`. The normalizing pass failed too — stripping quote marks leaves the **backslash**
+   behind, so `בד\"ץ` → `בד\ץ`, which never equals `בדץ`. What found it was searching for `אגודת` — a
+   distinctive substring containing **no quote character at all**. **The rule: when a zero comes back, retry
+   with a needle that cannot carry an escape.** Punctuation is where the instrument breaks, so take it out of
+   the needle rather than trying to match it correctly.
 
 ### 17a. The inverse face — a warning that outlives its defect
 
@@ -1143,6 +1152,27 @@ where you decide what gets shown.
 It also dominates on everything else: one dataset and no parallel-file surface; covered by every ratchet
 already shipped rather than needing new ones; promotable by adding evidence rather than migrating a record
 between files; and **it fixes the 20 as a side effect instead of stranding them.**
+
+**The precondition, and the order matters — record it before anyone ships the hide.** Hiding also makes the
+199 invisible, just by a different mechanism: an archive hides them from *readers*, a filter hides them from
+*users*. Both remove the pressure that would otherwise get the evidence found. **If hiding were the whole
+change it would be the same trap in a different costume.**
+
+What rescues it is that `foodWithoutKashrut` (20) and `restaurantsFoodWithoutKashrut` (225) **already exist**:
+the population stays visible to the *project* while invisible to *users*, it cannot grow silently, and letting
+it grow requires a deliberate re-baseline. **Hiding is safe because the ratchet was built first — not on its
+own merits.** Never ship the hide without confirming the counter is still there.
+
+**Implementation note — foreseeable, so no excuse for hitting it.** The hide rule and the ratchet compute the
+same predicate:
+
+```
+FOOD_TYPES.has(type) && !kosherType && !kosherAuthorityGroup && !certifiedBy
+```
+
+If the filter *restates* it rather than importing it, that is two rules sharing one concept with no link
+between them — the 343/398 and 37/38 problem again, and **§17 face 3 in its third appearance**. Export one
+predicate and have both call it.
 
 **`restaurantsFoodWithoutKashrut` (ratchet, baseline 225) is the whole-file count; 179 is the orphan subset.**
 Two numbers, two jobs — the ratchet guards against growth anywhere in the file, the 179 is the decision-
