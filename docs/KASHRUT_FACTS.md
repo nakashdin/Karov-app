@@ -2064,6 +2064,68 @@ the real fix, deliberately deferred — not overlooked.
 
 ---
 
+## 29. The unevidenced-level population splits 501 / 196, and the axis is "is a certifier named", not "is it a chain"
+
+Post-`880e48d` measurement of records asserting a mehadrin-family level whose accompanying text states no level:
+
+| | | operation |
+|---|---|---|
+| **697** | target population | — |
+| **501** | **name a real certifying body** | remove the level assertion · **`certifiedBy` / `kosherAuthority` must survive untouched** |
+| **196** | name nothing at all | the Rebar shape — fetch a source, write `kosher` / `null` / `unknown` |
+
+**These are two different operations, not one operation over two groupings.** The 196 is exactly the baseline
+of the `levelAssertedWithNoBody` ratchet, and that agreement is the check that the axis is right.
+
+### 29a. `!certifiedBy` is not "no certifier" — there is a second namespace
+
+An inventory built on `!certifiedBy` alone returned **433 / 264**, off by 68 in both directions. The real
+predicate is `!certifiedBy && !kosherAuthority`.
+
+The 68 have **no free-text `certifiedBy` and a populated structured `kosherAuthority`**: 61 ×
+`badatz_beit_yosef`, 3 × `rabbinate_jerusalem`, 2 × `badatz_rubin`, 1 × `badatz_edah_hachareidis`, 1 ×
+`badatz_kehilot`. Every one names a real body — in the other field.
+
+> **Two fields carry "who certifies this", and checking one is not checking the question.** Any predicate
+> about whether a certifier is named must read both, and the ratchet's own predicate is the reference.
+
+### 29b. The near-miss it produced — 99 records, one pass
+
+The first inventory classified the largest chains as the clean Rebar shape — *"zero `certifiedBy` text"*.
+Measured:
+
+    pizza-shemesh.co.il   99 records   99 named   בד"צ בית יוסף ×59 · העדה החרדית ×23 · הרב לנדא ×8
+    pizzahut.co.il        21 records   21 named
+    iburgerim.co.il       21 records   16 named   בד"ץ בית יוסף
+    cafecafe.co.il        10 records    8 named
+
+A Rebar-shaped write against that list would have overwritten up to **99 named-certifier records with
+`kosherAuthorityGroup: 'unknown'` in a single pass** — deleting real, specific badatzim and replacing them
+with "we don't know." Directly against principle 8: *a refactor must not silently erase factual kashrut
+information.*
+
+**The classification error and the destructive operation pointed the same way**: the records it mislabelled
+as having no evidence are precisely the ones carrying the most. Caught by re-deriving the inventory rather
+than sequencing work from it.
+
+### 29c. Chain membership by id and by domain are different sets
+
+`golda` by id-prefix is **32**; only **10** carry `goldaglida.co.il`. Legacy numeric ids carry no prefix at
+all (pizza-shemesh, pizzahut), so id-grouping strands them and domain-grouping finds them.
+
+Both matter and neither substitutes: **the id defines the chain, the domain defines whether evidence is
+reachable.** Report both. Of the 196, **16 have no website at all** and 8 more point only at
+Instagram/Facebook — unreachable regardless of which chain they belong to, and the honest test of whether a
+classifier can say *"no source exists"* rather than filing them under the expected answer.
+
+### 29d. The 10 that are not fabrications
+
+`707 − 697 = 10` — records whose `certifiedBy` text contains a level word but is **not a registered alias**
+(`בד"ץ מהדרין ירושלים` ×3, `רבנות ב"ש מהדרין`, `בד"ץ ביתר / מהדרין`, …). Real bodies, real level words,
+unregistered spellings. **An alias-registration backlog, not a remediation target.** Same 10 as §26c.
+
+---
+
 ## Superseded numbers — do not requote
 
 | Wrong | Correct | Why |
