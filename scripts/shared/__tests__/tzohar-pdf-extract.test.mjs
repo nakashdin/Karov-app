@@ -103,6 +103,21 @@ test('REAL, REGRESSION: parseIdentity finds the anchor even when "בעל/ת בי
   assert.ok(id && id.includes('אמאיה'), `expected the business name in: ${id}`);
 });
 
+// Real lines() output from RON-Patisserie-3.pdf — no business-name line at
+// all between the anchors, just a street-number line ("30") on its own,
+// stored UN-reversed in the stream (digits/Latin are never reversed, per
+// the module header) same as every other digit run in these PDFs.
+const RON_PATISSERIE_LINES = [
+  'קסעה תיב ת/לעב ינא', 'םידסיימה', '30', 'הנימינב',
+  'וניתוחוקל להק ינפב תאזב ה/ריהצמ',
+];
+
+test('REAL, REGRESSION: parseIdentity does not reverse a bare street-number line (RON-Patisserie-3.pdf) — blindly reversing every slice line, as this function did before this fix, silently turns "30" into "03", corrupting every downstream address comparison without ever erroring. None of the three earlier fixtures caught this: hakosem\'s street number is the single digit "1" (reversal is a no-op), and drayer/amaia\'s existing assertions never check the address digits at all — this is the first fixture that pins the corruption directly.', () => {
+  const id = parseIdentity(RON_PATISSERIE_LINES);
+  assert.equal(id, 'המייסדים 30 בנימינה');
+  assert.notEqual(id, 'המייסדים 03 בנימינה', 'the exact corruption this fix prevents — a real 24-record downstream miscount before it was found');
+});
+
 test('parseDetails: real restaurant cert — matches the documented kosherDetails flags', () => {
   const d = parseDetails(HAKOSEM_LINES);
   assert.equal(d.shabbatClosed, true);

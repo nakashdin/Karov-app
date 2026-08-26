@@ -18,8 +18,82 @@
  */
 import { nameScore } from '../../scripts/shared/tzohar-identity-match.mjs';
 
+/**
+ * Strips whitespace AND quote-like characters (", ', ׳, ״ — Hebrew geresh/
+ * gershayim, used for abbreviations like קמ״ה), not whitespace alone.
+ * Found necessary on a real cert: our record "גלריית קמה" vs the cert's own
+ * "גלריית קמ״ה" (an acronym-styled abbreviation with a gershayim before the
+ * final letter) — whitespace-only stripping leaves the gershayim in place,
+ * breaking contiguous substring containment even though this is the same
+ * business under a typographic variant, not a different one.
+ */
 function stripAllWhitespace(s) {
-  return String(s ?? '').replace(/\s+/g, '');
+  return String(s ?? '').replace(/[\s"'׳״“”‘’]/g, '');
+}
+
+/** Words, punctuation/parentheses stripped, short tokens (<2 chars — single letters, bare numerals) dropped. */
+function tokenize(s) {
+  return String(s ?? '')
+    .replace(/[()"'׳״“”‘’,]/g, ' ')
+    .split(/\s+/)
+    .map((t) => t.toLowerCase())
+    .filter((t) => t.length >= 2);
+}
+
+/**
+ * Our name with any parenthetical content removed ENTIRELY (not just the
+ * parens characters, unlike tokenize()) — for a branch/description
+ * qualifier that is itself made of real words absent from the certificate
+ * ("אס דאבליו סי מיוזיאום קורפ ( מוזיאון הסובלנות)" — the cert never prints
+ * the Hebrew translation "מוזיאון הסובלנות" at all), keeping those words as
+ * tokens to match against only drags tokenOverlapMatches' ratio down below
+ * its floor. Tried as an ADDITIONAL fallback alongside the plain-tokenize
+ * call (which still catches the opposite real case, "לה בון פטיסרי
+ * קונדיטוריה (בן יהודה)", where the parenthetical happens to be a real,
+ * matching street name) — never a replacement for it.
+ */
+function stripParenthetical(s) {
+  return String(s ?? '').replace(/\([^)]*\)/g, ' ');
+}
+
+/**
+ * The Hebrew-and-punctuation portion of our name, with any run of Latin
+ * letters/digits removed. Every real certificate examined in this
+ * investigation prints Hebrew only — a bilingual name's Latin half never
+ * appears on the certificate regardless of whether OUR OWN name field
+ * separates the two halves with a dash ("אמאיה - amaia", handled by the
+ * segment check above), a bare space ("לה גוטא Le Gouter", "גליל eat", "קזה
+ * KAZZE"), or nothing distinguishing at all. The whole-string containment
+ * check requires the ENTIRE our-name string to appear contiguously,
+ * including the untranslated Latin suffix the cert never repeats — which
+ * always fails for a space-separated bilingual name even though the
+ * business plainly is the one on the certificate. Guarded to a minimum
+ * length so a name that is Latin/digits-only (no Hebrew content at all,
+ * e.g. "NO.2") can never match on an empty extracted string.
+ */
+function hebrewPortionMatches(ourName, blob) {
+  const heb = stripAllWhitespace(String(ourName ?? '').replace(/[a-zA-Z0-9]+/g, ' ')).toLowerCase();
+  return heb.length >= 2 && blob.includes(heb);
+}
+
+/**
+ * Fraction of OUR name's tokens that appear somewhere in the blob's tokens
+ * (each checked independently, not as one contiguous phrase). Found
+ * necessary alongside the whole-string/segment checks above: our own name
+ * field often carries a generic descriptive word the certificate doesn't
+ * repeat ("לה בון פטיסרי קונדיטוריה (בן יהודה)" vs the cert's own "לה בון
+ * פטיסרי בן יהודה" — "קונדיטוריה" is real content in our field, absent from
+ * the cert, and the branch qualifier is parenthetical rather than the
+ * dash-separated shape the segment check handles). A single coincidentally-
+ * shared generic word must not pass on its own, so this requires BOTH a
+ * minimum ratio AND a minimum absolute count of matching tokens.
+ */
+function tokenOverlapMatches(ourName, blob) {
+  const ourTokens = tokenize(ourName);
+  if (ourTokens.length === 0) return false;
+  const blobTokens = new Set(tokenize(blob));
+  const matched = ourTokens.filter((t) => blobTokens.has(t)).length;
+  return matched >= 2 && matched / ourTokens.length >= 0.6;
 }
 
 /**
@@ -60,7 +134,10 @@ export function verifyIdentity(ourRecord, printedIdentityBlob) {
   const segments = String(ourRecord.name).split(/\s*[-–]\s*/).map((s) => stripAllWhitespace(s).toLowerCase()).filter((s) => s.length >= 2);
   const nameMatches = blob.includes(ourName)
     || nameScore(ourRecord.name, printedIdentityBlob) >= 0.85
-    || segments.some((seg) => blob.includes(seg));
+    || segments.some((seg) => blob.includes(seg))
+    || tokenOverlapMatches(ourRecord.name, printedIdentityBlob)
+    || tokenOverlapMatches(stripParenthetical(ourRecord.name), printedIdentityBlob)
+    || hebrewPortionMatches(ourRecord.name, blob);
 
   let addressMatches = null;
   if (ourRecord.address) {
@@ -108,15 +185,27 @@ export function resolveCertificate(ourRecord, candidates, { today = TODAY() } = 
   const verified = identityChecked.filter((c) => c.identity.verified);
 
   if (verified.length === 0) {
-    // "No candidate verified" has two different causes that must not be
-    // conflated: a candidate whose identity text was extracted and does NOT
-    // match ours (a real WRONG_BUSINESS signal) vs. a candidate where
-    // identity extraction itself found nothing to check (a parsing gap —
-    // confirmed on a real cert, amaia-1.pdf, before parseIdentity() was
-    // fixed to handle its line layout; even with that fix, an unknown
-    // future layout could still fail extraction, and this distinction is
-    // what keeps that failure mode from silently reading as an identity
-    // accusation it never actually made).
+    // "No candidate verified" has THREE different causes that must not be
+    // conflated:
+    //  1. identity extraction found nothing to check at all (a parsing gap —
+    //     confirmed on a real cert, amaia-1.pdf, before parseIdentity() was
+    //     fixed to handle its line layout) -> UNREADABLE.
+    //  2. identity WAS extracted, contains no confirmable name, but DOES
+    //     contain our own record's own street address (confirmed on real
+    //     certs — RON-Patisserie-3.pdf and others — that print the address
+    //     directly after the boilerplate anchor with NO business-name line
+    //     at all; a genuinely different business sitting at our own exact
+    //     street address is implausible, so this is a same-business,
+    //     name-not-printed gap, not a wrong-business signal) -> also
+    //     UNREADABLE: address corroboration means we cannot confirm the
+    //     name, but we also have no real reason to deny the business.
+    //  3. identity WAS extracted, names a business, and it is not ours, OR
+    //     it is address-silent/mismatched too -> the real WRONG_BUSINESS
+    //     signal.
+    // Conflating any of these produces either a false, confident
+    // wrong-business accusation from a parsing gap, or (the opposite risk)
+    // a real mismatch quietly excused — both are exactly what this
+    // three-way split exists to prevent.
     const withBlob = identityChecked.filter((c) => c.identityBlob);
     if (withBlob.length === 0) {
       return {
@@ -125,10 +214,18 @@ export function resolveCertificate(ourRecord, candidates, { today = TODAY() } = 
         checked: identityChecked.map((c) => ({ tzoharId: c.tzoharId, reason: c.identity.reason })),
       };
     }
+    const disconfirming = withBlob.filter((c) => c.identity.addressMatches !== true);
+    if (disconfirming.length === 0) {
+      return {
+        kind: 'UNREADABLE',
+        reason: `${withBlob.length} candidate certificate(s) had readable text that matched our own street address without ever containing a confirmable business name — likely a certificate that never prints a name, not evidence of a different business`,
+        checked: withBlob.map((c) => ({ tzoharId: c.tzoharId, identityBlob: c.identityBlob, reason: c.identity.reason })),
+      };
+    }
     return {
       kind: 'WRONG_BUSINESS',
-      reason: `${withBlob.length} candidate certificate(s) had a readable printed identity, and none matched our record`,
-      checked: identityChecked.map((c) => ({ tzoharId: c.tzoharId, identityBlob: c.identityBlob, reason: c.identity.reason })),
+      reason: `${disconfirming.length} candidate certificate(s) had a readable printed identity that neither named nor located our business, and none matched our record`,
+      checked: disconfirming.map((c) => ({ tzoharId: c.tzoharId, identityBlob: c.identityBlob, reason: c.identity.reason })),
     };
   }
 

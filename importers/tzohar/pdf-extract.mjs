@@ -170,6 +170,15 @@ export function parseIdentity(lines) {
   if (startIdx === -1) return null;
   const endIdx = lines.findIndex((l, i) => i > startIdx && rev(l).includes('בזאת בפני קהל'));
   const slice = endIdx === -1 ? lines.slice(startIdx + 1, startIdx + 8) : lines.slice(startIdx + 1, endIdx);
-  const text = slice.map(rev).join(' ').replace(/\s+/g, ' ').trim();
+  // A street-number line (e.g. "30") is stored un-reversed in the stream,
+  // same as every other digit run in these PDFs (see module header) — but
+  // reversing every line uniformly, as the naive version of this function
+  // did, silently turns "30" into "03". Confirmed on a real cert
+  // (RON-Patisserie-3.pdf): its address line is a lone "30" between the
+  // name-less anchor and "בנימינה", and blindly reversing it broke every
+  // downstream address comparison against this record without ever
+  // erroring — the bug hid inside single-digit fixtures (hakosem's "1"),
+  // where reversal is a no-op, until a real two-digit number exposed it.
+  const text = slice.map((l) => (/^[\d./]+$/.test(l) ? l : rev(l))).join(' ').replace(/\s+/g, ' ').trim();
   return text || null;
 }
