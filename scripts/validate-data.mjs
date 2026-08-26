@@ -185,6 +185,21 @@ const counts = {
   // Same predicate as levelAssertedOverNamedBody above, applied to this
   // file's own kosherType/certifiedBy — a body named in the source text,
   // asserted here as a level the text never stated.
+  //
+  // Inherits that predicate's known blind spot (FACTS §15a): it flags only
+  // where alias.authorityId RESOLVES, which is a proxy for "the text names
+  // a body" and is blind exactly where the text is too vague to resolve —
+  // the weaker evidence, not the stronger. On places.osm.json that under-
+  // counts 343 of a true 398 (55 invisible). Measured the same way on this
+  // file: population 97, flagged 37 of a true 38 (1 invisible —
+  // `בד"ץ אגודת ישראל והרבנות המקומית`, not in the registry). Real but
+  // small here; still not exhaustive. If the predicate is ever broadened to
+  // resolve vague-text cases, THIS baseline moves 37 -> 38 and
+  // levelAssertedOverNamedBody moves 343 -> 398 — both are a deliberate
+  // re-baseline when that happens, not a surprise red build. Do not narrow
+  // or broaden the predicate as a "cleanup": that changes what counts as
+  // evidence and is downstream of the owner's Batch B call, not a code
+  // change to make here.
   restaurantsLevelAssertedOverNamedBody: 0,
 };
 
