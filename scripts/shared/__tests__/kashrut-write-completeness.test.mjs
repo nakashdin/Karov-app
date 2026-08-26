@@ -96,7 +96,9 @@ const FROZEN_EXCLUSIONS = [
   //    choke point any longer. ──
 
   // ── one-shot-chain-import (~35) ────────────────────────────────────────
-  { file: 'scripts/import-rebar.mjs', category: 'one-shot-chain-import', note: 'Blanket kosherType:"mehadrin" hardcode, 55 live records. ' + ONE_SHOT_CHAIN_REASON },
+  // scripts/import-rebar.mjs REMOVED (Item 4 Unit 1, 2026-08-26): rewritten
+  // to route every kashrut field through recordKashrutWrite() — no longer a
+  // bypass. See docs/KASHRUT_FACTS.md §5b/§22 for why it was one.
   { file: 'scripts/import-maafe-neeman.mjs', category: 'one-shot-chain-import', note: ONE_SHOT_CHAIN_REASON },
   { file: 'scripts/import-bfresh.mjs', category: 'one-shot-chain-import', note: ONE_SHOT_CHAIN_REASON },
   { file: 'scripts/import-golda.mjs', category: 'one-shot-chain-import', note: 'Dynamic (mapKosherType(b.kosher)) — a literal-string grep alone would have missed this one. ' + ONE_SHOT_CHAIN_REASON },
