@@ -28,6 +28,25 @@
  * itself is a separate, later, explicitly-gated step once the owner has seen
  * this report.
  *
+ * FIVE fields, not three — AGENTS.md: "Provenance לכל רשומה. source +
+ * sourceUrl + lastVerifiedAt ככל שאפשר." Writing kosherType/kosherLevel/
+ * kosherAuthorityGroup from a fetched, parsed, cross-key-verified source
+ * while leaving sourceUrl unset (0/55 today) discards the citation for the
+ * conclusion — a claim nobody could re-verify next month. sourceUrl is set
+ * to the feed URL on all 55; source itself is left 'manual' (unchanged,
+ * on 55 of 55 already — the record's origin genuinely is manual, sourceUrl
+ * records where the kashrut FACT came from; same shape as osm-node-1763031739,
+ * humus-eli-*, etc.). lastVerifiedAt is computed ONCE, from the real clock,
+ * right after this run's fetch succeeds — never a hardcoded literal. A
+ * hardcoded lastVerifiedAt is exactly the defect that produced this whole
+ * effort: buildPlace()'s old `lastVerifiedAt: '2026-07-14'` constant is why
+ * all 53 records carry the identical date regardless of when anyone actually
+ * looked, which is indistinguishable from nobody ever having looked.
+ * validate-data.mjs hard-fails a lastVerifiedAt that moves backward relative
+ * to HEAD (the signature of a one-shot script re-applying a frozen payload)
+ * — asserted per-record below, before writing, not just left to that guard
+ * to catch after the fact.
+ *
  * Reuses matchRebarStores() from rebar-feed.mjs — the same many-to-one-aware
  * matcher Unit 1's importer uses — rather than re-deriving matching logic a
  * second time (§17 face 3: logic imported, never duplicated).
@@ -42,6 +61,7 @@ import { fetchRebarStores, matchRebarStores } from './shared/rebar-feed.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const PLACES_PATH = resolve(root, 'src/data/generated/places.osm.json');
+const FEED_URL = 'https://rebar.co.il/our-stores/';
 
 const BASIS = {
   kind: 'human-review',
@@ -99,11 +119,37 @@ function fieldsSnapshot(record) {
     kosherAuthorityGroup: record.kosherAuthorityGroup,
     kosherAuthority: 'kosherAuthority' in record ? record.kosherAuthority : undefined,
     certifiedBy: 'certifiedBy' in record ? record.certifiedBy : undefined,
+    sourceUrl: 'sourceUrl' in record ? record.sourceUrl : undefined,
+    lastVerifiedAt: 'lastVerifiedAt' in record ? record.lastVerifiedAt : undefined,
   };
 }
 
+/**
+ * Asserts `runDate` (this run's real fetch date, YYYY-MM-DD) does not move
+ * lastVerifiedAt backward relative to the record's current value — the
+ * exact condition validate-data.mjs hard-fails on (the one-shot-frozen-
+ * payload signature). Checked here, before the write, not left solely to
+ * that guard to catch downstream. String comparison is correct for
+ * YYYY-MM-DD: lexicographic order matches chronological order for this
+ * format. "Not in the future" needs no separate runtime check: runDate is
+ * derived from `new Date()` at the moment of this run and is never supplied
+ * by a caller, so it cannot be later than "now" by construction — the
+ * hazard this whole change exists to remove (a hardcoded literal a future
+ * caller could set to any date) does not exist in this code path.
+ */
+function assertNotBackdating(record, runDate) {
+  const prior = record.lastVerifiedAt;
+  if (prior && runDate < prior) {
+    throw new Error(
+      `${record.id}: refusing to write lastVerifiedAt=${JSON.stringify(runDate)} over existing ${JSON.stringify(prior)} — ` +
+      'that would move it backward, which validate-data.mjs hard-fails as the one-shot-frozen-payload signature.',
+    );
+  }
+}
+
 /** Applies the evidence-ceiling write to a CLONE of the record — never the original. */
-function proposedAfter(record) {
+function proposedAfter(record, runDate) {
+  assertNotBackdating(record, runDate);
   const clone = { ...record };
   recordKashrutWrite(clone, 'kosherType', 'kosher', BASIS);
   recordKashrutWrite(clone, 'kosherLevel', null, BASIS);
@@ -111,7 +157,11 @@ function proposedAfter(record) {
   // kosherAuthority/certifiedBy: none of the 55 currently have either field
   // set (verified separately, not assumed) — so there is nothing to remove
   // and nothing to leave untouched; recordKashrutWrite is not called for
-  // either field.
+  // either field. sourceUrl/lastVerifiedAt are not kashrut fields (not in
+  // KASHRUT_FIELDS) — recordKashrutWrite would reject them — so they are
+  // set directly, same as buildNewPlace() does in import-rebar.mjs.
+  clone.sourceUrl = FEED_URL;
+  clone.lastVerifiedAt = runDate;
   return clone;
 }
 
@@ -130,7 +180,11 @@ export async function main({ fetchImpl, placesPath }) {
   console.log(`    with NO kashrut fields at all (absent — the app shows these with ZERO kashrut info today, not 'unknown'): ${needsRemediation.filter((r) => startingState(r) === 'absent-entirely').length}\n`);
 
   const stores = fetchImpl ? await fetchRebarStores(fetchImpl) : await fetchRebarStores();
-  console.log(`Feed entries parsed: ${stores.length}\n`);
+  // Computed ONCE, right after this run's fetch succeeds — the actual
+  // verification date, not a hardcoded literal. See the file header for why
+  // that distinction is the point of this whole change.
+  const runDate = new Date().toISOString().slice(0, 10);
+  console.log(`Feed entries parsed: ${stores.length} (fetched and verified ${runDate})\n`);
 
   const { confirmed, ambiguousRecords, noMatchRecords } = matchRebarStores(stores, existingRebar);
 
@@ -153,7 +207,7 @@ export async function main({ fetchImpl, placesPath }) {
   console.log('=== PROPOSED WRITE — confirmed match, feed kosher:true ===');
   for (const { record, store } of confirmedTrue) {
     const before = fieldsSnapshot(record);
-    const after = fieldsSnapshot(proposedAfter(record));
+    const after = fieldsSnapshot(proposedAfter(record, runDate));
     console.log(`${record.id} (${record.name}) [${startingState(record)}]`);
     console.log(`  matched feed store: "${store.name}" | ${store.address}, ${store.city}`);
     console.log(`  before: ${JSON.stringify(before)}`);
@@ -238,6 +292,13 @@ export async function main({ fetchImpl, placesPath }) {
     console.log(`${record.id}: resolved to "${chosen.name}" (kosher=${JSON.stringify(chosen.kosher)}) — see reasoning in the comment above this block.`);
   }
   console.log('  RECIPROCITY CHECK: rebar-dc59d466 and rebar-bs-central-station resolve to two DIFFERENT feed stores (קניון הנגב / תחנה מרכזית) — neither store is claimed twice under this plan.');
+  // Both Beer Sheva candidates are kosher:true (verified above, not assumed):
+  // the resolution between them decides WHICH feed store gets cited as the
+  // match, but not WHAT gets written — either way both records land on
+  // kosherType:'kosher'. rebar-02629c63 is the only one of the three where
+  // getting the resolution wrong would change the actual kashrut answer: its
+  // two candidates disagree (kosher:true vs kosher:false).
+  console.log('  NOTE: rebar-02629c63 is the ONLY ambiguous record where this resolution decides a kashrut answer — its two candidates disagree (true vs false). Both Beer Sheva candidates are kosher:true, so rebar-dc59d466/rebar-bs-central-station reach the same written value either way; only which feed store gets cited as the match depends on the resolution.');
 
   const allWrites = [...confirmedTrue, ...ambiguousResolved];
 
@@ -247,7 +308,7 @@ export async function main({ fetchImpl, placesPath }) {
     const w = allWrites.find((x) => x.record.id === r.id);
     const before = fieldsSnapshot(r);
     if (w) {
-      const after = fieldsSnapshot(proposedAfter(r));
+      const after = fieldsSnapshot(proposedAfter(r, runDate));
       planLines.push(`${r.id} | ${r.name} | [${startingState(r)}] | before=${JSON.stringify(before)} | after=${JSON.stringify(after)} | matched="${w.store.name}"`);
     } else {
       planLines.push(`${r.id} | ${r.name} | [${startingState(r)}] | before=${JSON.stringify(before)} | STOP — no write (see STOP sections above)`);
@@ -257,7 +318,7 @@ export async function main({ fetchImpl, placesPath }) {
 
   return {
     existingRebar, needsRemediation, confirmedTrue, confirmedFalse, confirmedOther,
-    ambiguousInScope, ambiguousResolved, noMatchInScope, allWrites, planLines,
+    ambiguousInScope, ambiguousResolved, noMatchInScope, allWrites, planLines, runDate,
   };
 }
 
@@ -266,12 +327,16 @@ export async function main({ fetchImpl, placesPath }) {
  * the original) — used only by the disposable-worktree validation step, not
  * by the dry-run report path above. restaurants.osm.json mirrors the same
  * places (Unit 1's importer keeps them in lockstep), so the same field
- * writes are applied to matching ids there too, same as Unit 1.
+ * writes are applied to matching ids there too, same as Unit 1. `runDate`
+ * must be the SAME value main() computed for this run (its return value
+ * includes it) — never recomputed here, or a validation run that straddles
+ * a UTC midnight could write two different dates for what should be one
+ * consistent verification pass.
  */
-export function applyPlan(places, restaurants, allWrites) {
+export function applyPlan(places, restaurants, allWrites, runDate) {
   const writeIds = new Set(allWrites.map((w) => w.record.id));
-  const newPlaces = places.map((p) => (writeIds.has(p.id) ? proposedAfter(p) : p));
-  const newRestaurants = restaurants.map((r) => (writeIds.has(r.id) ? proposedAfter(r) : r));
+  const newPlaces = places.map((p) => (writeIds.has(p.id) ? proposedAfter(p, runDate) : p));
+  const newRestaurants = restaurants.map((r) => (writeIds.has(r.id) ? proposedAfter(r, runDate) : r));
   return { newPlaces, newRestaurants };
 }
 
