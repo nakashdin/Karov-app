@@ -1579,10 +1579,44 @@ exactly the records whose value was real.
 genuinely differentiated** — other branches in the same feed are `"kosher": false` — so it is a real
 per-branch assertion, not a decorative constant.
 
-**But a boolean is the ceiling.** No level word, no authority name anywhere in the feed. So the restoration
-claims `kosherType: "kosher"` / `kosherLevel: "regular"` / `kosherAuthorityGroup: "unknown"` with
-`sourceUrl` and `lastVerifiedAt` — and asserts **no** `kosherAuthority` and **no** `certifiedBy`. Restoring
-`mehadrin` by copying the 53 siblings would have been the §5b fabrication arriving through a new door.
+**But a boolean is the ceiling.** No level word, no authority name anywhere in the feed — verified against
+the full key union across all 106 entries, not sampled. So the restoration claims `kosherType: "kosher"` /
+`kosherLevel: null` / `kosherAuthorityGroup: "unknown"` with `sourceUrl` and `lastVerifiedAt` — and asserts
+**no** `kosherAuthority` and **no** `certifiedBy`. Restoring `mehadrin` by copying the 53 siblings would
+have been the §5b fabrication arriving through a new door.
+
+> An earlier draft of this line wrote `kosherLevel: "regular"` and it was withdrawn. `regular` is an
+> affirmative level claim under `src/types/place.ts`'s own documented semantics, and the feed states no
+> level — so writing it would have been a smaller version of the same fabrication. `null` is written
+> deliberately, and is *not* this field's documented case either ("authority named, level not stated" —
+> here neither is named). **The schema has no state for "kosher established, level and authority both
+> unknown."** That gap is recorded, not silently resolved.
+
+### 22d. The fabrication is a literal in the importer — and the importer is a hand-typed list, not a feed reader
+
+`scripts/import-rebar.mjs` does **not** read Rebar's feed. It is a hand-typed array of branch objects
+(name / city / address / lat / lng / hours), and `buildPlace()` stamps the same constants onto every one:
+
+```js
+kosherType: 'mehadrin',        // ← literal, unconditional, every branch
+source: 'manual',
+lastVerifiedAt: '2026-07-14',  // ← frozen constant
+```
+
+Its own header says the list was *"filtered by כשר label"*. **So a `kosher` label on the source site was
+transcribed into the dataset as `mehadrin`, 52 times, by a constant in code.** §5b previously recorded this
+fabrication as inferred from the data's shape; it is now proven at the line. The level was never derived
+from anything — there was nothing to derive it from.
+
+**This also answers "manual data vs. source handling": there is no Rebar ingestion to fix.** The machine-readable
+feed §22b describes exists and carries a real per-branch `kosher` boolean (53 true / 53 false) — we have simply
+never read it. An importer built on it could establish and *refresh* kosher-yes/no for all 55 records and would
+surface any branch that flipped to `false`; it could never produce a level or an authority, which is the correct
+ceiling. The hand-typed list can do neither.
+
+`mergeInto()` is add-only (filters on existing ids), so re-running would not re-stamp existing records —
+the frozen `lastVerifiedAt` is latent here rather than live. Do not generalise that to the other one-shot
+importers.
 
 ### 22c. A fixture that could not detect its own bug
 
@@ -1598,6 +1632,42 @@ value could not distinguish correct from broken.
 **The general rule: test data must be able to fail.** A fixture whose value is unchanged by the bug under
 test proves only that the code ran. Choose fixture values that are asymmetric under every transformation the
 code performs.
+
+### 22e. The field-loss guard protects fields on *surviving* records — not records
+
+The guard added at `validate-data.mjs:472` iterates the records present in the **current** file and compares
+each against HEAD. A record that HEAD had and the current file does not is therefore **never visited**, and
+none of its kashrut fields are ever checked.
+
+Fired in five directions, not three:
+
+| mutation | result |
+|---|---|
+| value → absent | **exit 1**, names record and field ✓ |
+| value → explicit `null` | exit 0 ✓ — the intentional-unknown case, the one most likely to be subtly wrong |
+| absent → absent | exit 0 ✓ |
+| delete the whole record | exit 1 — but caught by the **count** check, not by this guard |
+| **delete one record + add one** | **exit 0 — dataset OK** ← the hole |
+
+The only record-level protection in the file is line 650, `counts.total < baseline.total`: a **count**, not an
+id-set comparison. **This is §21's mechanism exactly** — `31f75274` removed 199 records under the subject
+*"add לחם ארז (4 kosher branches)"*. **This guard would not have caught a single one of the 1,143.**
+
+Not a defect in what was asked for (field-level protection was the requirement, and it is delivered and
+uniform across all eight fields — there is no value branch, so `regular` and `mehadrin` are protected
+identically, and a HEAD value of `null` is protected too, since `null !== undefined`). It is a defect in what
+the guard's *name and failure message* imply. **The completion is an id-set comparison against HEAD**, and it
+belongs on the §21 list rather than as a reworded message.
+
+### 22f. `human-review` is an unconditional bypass of the level-assertion gate
+
+`basisSupportsLevelAssertion` accepts `basis.kind === 'human-review'` without inspecting the note. So the
+same basis object that honestly justifies *kosher, no level* would also unlock `mehadrin` if a future edit
+changed the value — with its own note still reading "no level is stated", unread by the guard.
+
+Same shape as the `aliasLevel` finding, with one difference that matters: that one had a registry to check
+against. **`human-review` is the one basis kind that is unverifiable by construction** — it is the escape
+hatch for the entire level-assertion mechanism, available to anyone who types it.
 
 ---
 
