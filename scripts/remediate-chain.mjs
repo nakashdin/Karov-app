@@ -37,16 +37,18 @@ const CHAINS = {
   },
   greg: {
     adapter: gregAdapter,
-    // Scoped to exactly the 38 records Unit 3 flagged (kosherType value
-    // "mehadrin" — the fabricated-level population), NOT every greg-* record.
-    // 3 other greg-* records already carry the values "rabanut"/"regular"/
-    // "rabbinate" for kosherType/kosherLevel/kosherAuthorityGroup
-    // respectively, with no sourceUrl/certifiedBy of their own — outside this run's scope
-    // even though the current pipeline, run against them, would rewrite
-    // them too (found live, not theorized: it does). Flagged separately,
-    // deliberately not included here — narrowing scope to what was actually
-    // asked, not silently expanding it because the code technically could.
-    isInChain: (r) => typeof r.id === 'string' && r.id.startsWith(gregAdapter.CHAIN_ID_PREFIX) && r.kosherType === 'mehadrin',
+    // WIDENED back to all greg-* records (owner ruling, 2026-08-27) — an
+    // earlier version of this scope was narrowed to kosherType (value
+    // "mehadrin") only — the 38 fabricated-level records — correct under
+    // the rule at the time but wrong under the current one: the 3 records
+    // that scope excluded already carry the value "rabbinate" for
+    // kosherAuthorityGroup with no sourceUrl or certifier text of their own
+    // — an INVENTED authority; greg names no body on any of its 59 pages
+    // for two of the three, and correcting them is now explicitly in
+    // scope. What counts as "already correct" changed with the rule; the
+    // scope has to change with it, not stay pinned to the old rule's
+    // definition.
+    isInChain: (r) => typeof r.id === 'string' && r.id.startsWith(gregAdapter.CHAIN_ID_PREFIX),
     resolutions: GREG_RESOLUTIONS,
   },
 };

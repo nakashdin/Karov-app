@@ -20,14 +20,27 @@
  *     hours block on the Dizengoff Center page) — a badge-only regex misses
  *     the second shape, so this adapter scans the full tag-stripped page
  *     text, not one fixed selector.
- *   - Full 59-page sweep found ZERO instances of any named supervising body
- *     (בד"ץ/רבנות/הרב <name>/עדה חרדית/חתם סופר) anywhere, and ZERO explicit
- *     non-kosher markers anywhere (broadened pattern set, not just one
- *     phrase) — bodyText is null for every branch this adapter has ever
- *     seen, and kashrutMarker is never 'negative' for this source. Both are
- *     still computed per-branch, not hardcoded, so a future branch that
- *     breaks the pattern is still caught rather than silently assumed away.
+ *   - CORRECTED 2026-08-27 (was live for one dry-run cycle, never applied):
+ *     body detection originally used a hand-written pattern list requiring
+ *     final tsadi ץ only. The real מגדל העמק branch page states "סניף כשר
+ *     בד"צ בית יוסף" — regular tsadi צ, verified codepoint-by-codepoint —
+ *     which none of those patterns matched, on any of 59 pages. A dry run
+ *     built on that adapter output would have overwritten a real, registered
+ *     badatz (badatz-beit-yosef) with kosherAuthorityGroup:'unknown'. Body
+ *     detection now goes through the shared, registry-backed resolver
+ *     (authority-normalize.mjs) — the same fix-once-not-per-adapter argument
+ *     as the pipeline itself — and reports the VERBATIM matched substring
+ *     from the page, never the registry's own spelling (interprets nothing;
+ *     resolving that substring to an authorityId is the pipeline's job, at
+ *     Gate 2/3, through the identical resolver).
  */
+import { readFileSync } from 'node:fs';
+import { resolve, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { buildResolverEntries, resolveAuthorityFromText } from '../authority-normalize.mjs';
+
+const HERE = dirname(fileURLToPath(import.meta.url));
+const REGISTRY_PATH = resolve(HERE, '..', '..', 'reports', 'kashrut-registry.json');
 
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36';
 const SITEMAP_URL = 'https://gregcafe.co.il/branch-sitemap.xml';
@@ -51,16 +64,21 @@ function kosherSnippets(html) {
   return [...snippets];
 }
 
-const LEVEL_WORDS = ['מהדרין', 'גלאט'];
+// Clean, minimal verbatim phrase — not a wide context window. This value can
+// now be WRITTEN to claimedLevelText (Item 4 Unit 3), so it must be the
+// actual phrase, not "phrase plus 60 chars of surrounding markup." Matches
+// both observed real shapes: "כשר למהדרין" (the badge, ל present) and "כשר
+// מהדרין" (Dizengoff Center's body-text instance, ל absent).
+const LEVEL_PHRASE_RE = /כשר\s*ל?(?:מהדרין|גלאט)/;
 const NEGATIVE_PATTERNS = [
   /לא\s*כשר/, /אינ[ווה]\s*כשר/, /ללא\s*כשרות/, /ללא\s*הכשר/, /בלי\s*כשרות/,
   /לא\s*בהכשר/, /לא\s*כשרה/, /לא\s*כוללת?\s*כשרות/, /בוטל.{0,10}כשר/,
   /נשלל.{0,10}כשר/, /פג.{0,10}תוקף.{0,20}כשר/, /טרם\s*קיבל/, /בהמתנה.{0,15}כשר/,
 ];
-const BODY_PATTERNS = [/בד"?ץ/, /בד״ץ/, /רבנות/, /הרב\s+[א-ת]/, /עדה\s+ה?חרדית/, /חתם\s+סופר/];
 
-function findLevelText(snippets) {
-  return snippets.find((s) => LEVEL_WORDS.some((w) => s.includes(w))) ?? null;
+function findLevelText(plainText) {
+  const m = LEVEL_PHRASE_RE.exec(plainText);
+  return m ? m[0] : null;
 }
 
 function findNegative(plainText) {
@@ -71,12 +89,10 @@ function findNegative(plainText) {
   return null;
 }
 
-function findBodyText(plainText) {
-  for (const re of BODY_PATTERNS) {
-    const m = re.exec(plainText);
-    if (m) return plainText.slice(Math.max(0, m.index - 40), m.index + 40);
-  }
-  return null;
+/** Body detection via the shared, registry-backed resolver — see module header for why the old hand-written pattern list was replaced. Returns the VERBATIM matched substring (or null), never the registry's own spelling. */
+function findBodyText(plainText, resolverEntries) {
+  const result = resolveAuthorityFromText(plainText, resolverEntries);
+  return result ? result.matchedText : null;
 }
 
 function extractName(html) {
@@ -105,6 +121,8 @@ async function fetchSitemapUrls(fetchImpl) {
  * @returns {Promise<Array<{sourceKey, name, address: null, city, lat: null, lng: null, kashrutMarker: 'asserted'|'negative'|'not_asserted', levelText: string|null, bodyText: string|null, sourceUrl: string, raw: object}>>}
  */
 export async function fetchBranches(fetchImpl = fetch) {
+  const registry = JSON.parse(readFileSync(REGISTRY_PATH, 'utf8').replace(/^﻿/, ''));
+  const resolverEntries = buildResolverEntries(registry);
   const urls = await fetchSitemapUrls(fetchImpl);
   const branches = [];
   for (const url of urls) {
@@ -115,8 +133,8 @@ export async function fetchBranches(fetchImpl = fetch) {
     const plainText = stripTags(html);
     const snippets = kosherSnippets(html);
     const negative = findNegative(plainText);
-    const levelText = findLevelText(snippets);
-    const bodyText = findBodyText(plainText);
+    const levelText = findLevelText(plainText);
+    const bodyText = findBodyText(plainText, resolverEntries);
 
     branches.push({
       sourceKey: url,

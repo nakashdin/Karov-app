@@ -24,16 +24,19 @@
  * token with "קפה גרג נתניה השרון" beyond the city itself) are single-record
  * cases: no reciprocity to check, just a direct token match.
  *
- * greg-f29c21d4 ("קפה גרג לב המפרץ", חיפה, 5 candidates) is DELIBERATELY NOT
- * resolved here — it is outside Unit 3's target population already (its
- * dataset record already carries kosherType:'rabanut'/kosherLevel:'regular',
- * not part of the 38 unevidenced mehadrin-family records this run touches),
- * and unlike every other case above, none of Haifa's 5 candidate branch
- * names ("חוצות המפרץ" / "גרנד קניון חיפה" / "קניון חיפה" / "גרג סינמול" /
- * "קרית חיים") shares an unambiguous token with "לב המפרץ" the way e.g.
- * "TLV" or "סירקין" do for the cases above — investigated directly
- * (2026-08-26/27) and left genuinely uncertain rather than force-resolved.
- * It stays AMBIGUOUS, reported, unwritten.
+ * greg-f29c21d4 ("קפה גרג לב המפרץ", חיפה, 5 candidates) is a SOFT match,
+ * flagged as such rather than silently treated as equally confident with
+ * the reciprocity-checked cases above: unlike every other record here, none
+ * of Haifa's 5 candidate branch names ("חוצות המפרץ" / "גרנד קניון חיפה" /
+ * "קניון חיפה" / "גרג סינמול" / "קרית חיים") shares an unambiguous name
+ * token with "לב המפרץ" the way e.g. "TLV" or "סירקין" do for the cases
+ * above — my own investigation (2026-08-26/27) could not independently
+ * derive which of the 5 it is. Resolved to "גרג סינמול" on the Architect's
+ * explicit identification (2026-08-27 cross-session message), not my own
+ * re-derived reasoning — recorded as attributed, not invented, per this
+ * file's own standard: every OTHER resolution here states independently
+ * verifiable evidence; this one states its actual source instead of
+ * dressing up an uncertain match as equally solid.
  */
 export const GREG_RESOLUTIONS = {
   'greg-0b229b5e': {
@@ -87,5 +90,13 @@ export const GREG_RESOLUTIONS = {
       'Record name "קפה גרג נתניה השרון" names "השרון" — matches only "סניף נתניה השרון, נתניה". The other Netanya ' +
       'candidate, "סניף ohla la by greg, נתניה", is a differently-named sub-brand sharing no token with this record ' +
       'beyond the city itself.',
+  },
+  'greg-f29c21d4': {
+    branchSourceKey: 'https://gregcafe.co.il/branch/%d7%9c%d7%91-%d7%94%d7%9e%d7%a4%d7%a8%d7%a5/',
+    reasoning:
+      'SOFT MATCH, attributed not independently re-derived: none of the 5 Haifa candidates shares an unambiguous ' +
+      'name token with "לב המפרץ" the way the other resolutions in this file do. Resolved to "סניף גרג סינמול, ' +
+      'חיפה" on the Architect\'s explicit identification (2026-08-27 cross-session message), stated here as its ' +
+      'actual source rather than dressed up as independently verified.',
   },
 };
