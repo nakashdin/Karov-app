@@ -217,7 +217,17 @@ await asyncTest('FIRE: with the write branch disabled (in an isolated COPY of sc
     cpSync(SCRIPTS_DIR, copyDir, { recursive: true });
     const copiedImportRebarPath = join(copyDir, 'import-rebar.mjs');
 
-    const original = readFileSync(copiedImportRebarPath, 'utf8');
+    // Normalize CRLF -> LF before matching: this repo has core.autocrlf=true
+    // and no .gitattributes, so a FRESH checkout (a real worktree, a clone,
+    // possibly CI) gets CRLF line endings, while a file written directly by
+    // an editor tool onto an existing working tree can sit there as LF
+    // indefinitely without ever passing back through checkout's conversion.
+    // Same committed blob, two different byte sequences on disk — a literal
+    // \n-only marker matches one and silently not the other. Caught exactly
+    // by the self-containment worktree check this project's own rules
+    // require (AGENTS.md): green in the main checkout, red in a fresh
+    // worktree, same commit.
+    const original = readFileSync(copiedImportRebarPath, 'utf8').replace(/\r\n/g, '\n');
     const marker = '  } else {\n    const newPlaces = newStores.map(buildNewPlace);';
     assert.ok(original.includes(marker), 'sabotage anchor text not found in the current source — update this test\'s anchor to match the real code');
     const sabotaged = original.replace(marker, '  } else if (false) {\n    const newPlaces = newStores.map(buildNewPlace);');
@@ -238,7 +248,10 @@ await asyncTest('FIRE: with the write branch disabled (in an isolated COPY of sc
 });
 
 test('the real, tracked scripts/import-rebar.mjs was never modified — the sabotage above operated entirely on a temp copy', () => {
-  const real = readFileSync(resolve(SCRIPTS_DIR, 'import-rebar.mjs'), 'utf8');
+  // Same CRLF/LF normalization as above, for the same reason — this
+  // assertion must hold identically regardless of which line-ending
+  // convention this particular checkout happens to have on disk.
+  const real = readFileSync(resolve(SCRIPTS_DIR, 'import-rebar.mjs'), 'utf8').replace(/\r\n/g, '\n');
   assert.ok(real.includes('} else {\n    const newPlaces = newStores.map(buildNewPlace);'), 'the real write branch is not in its expected, un-sabotaged form');
   assert.ok(!real.includes('else if (false)'), 'the real file must never contain the sabotage marker');
 });
