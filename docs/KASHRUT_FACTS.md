@@ -1879,7 +1879,8 @@ Worked through on this guard. Perturbations against the live feed, measured not 
 | `kosher` key removed from one store | 119 | 119 | 120 | **silent** | **THROW** |
 | `latitude` key removed from one store | 119 | 120 | 119 | **THROW** | **THROW** |
 | both keys removed | 119 | 119 | 119 | silent | silent |
-| whole store object removed | 119 | 119 | 119 | silent | silent |
+| partial object corruption (`address`..`kosher` slice removed) | 119 | 119 | 119 | silent | silent |
+| **whole store object removed** (true closure, 561-char span) | 119 | 119 | 119 | silent | silent |
 
 Row 1 is why the cross-key check was added. **Row 2 is the correction**: a missing `latitude` is already
 caught by the original parsed-vs-`kosher` comparison. The two checks are not redundant — they cover
@@ -1900,13 +1901,42 @@ substitution over, inside the entry that warns against it.
 
 ### 26b-i. The remit boundary — stated, because a known boundary is load-bearing
 
-Rows 3 and 4 are the same row. **Dual-key loss and a legitimately closed branch are numerically
-indistinguishable**, and no count-based check can separate them.
+The last three rows are one reading. **Three distinct events — dual-key loss, partial object corruption, and
+a legitimately closed branch — all produce `119/119/119` on the guard's three surfaces**, and no count-based
+check separates them.
 
 That is §26c holding, not failing: the guard is blind exactly where the world is entitled to change the
 quantity. Recorded as a **boundary of the remit**, not a gap to be closed — because a boundary someone has
 examined and named is load-bearing in a way an unexamined one is not, and the next person to notice the
 blind spot should find the reasoning already here rather than re-derive it and propose a floor.
+
+**A wider key set is explicitly declined, and here is the reason so it is not re-derived.** Under *partial*
+corruption the surviving keys do move differently — `forceClose` and `open` stayed at 120, `name` at 159 —
+so more keys would separate partial corruption from a closure. But a **closure moves every key equally**, so
+no key set of any size separates a closure from anything. The only class a wider set buys is one that is
+contrived for a single-document fetch, and the cost is real: more keys that may begin occurring outside
+store objects the way `name` already does at **159**. Leave it at the triple.
+
+### 26b-ii. A probe with no inconclusive state cannot report the thing you most need to hear
+
+The row-4 correction exists because the probe that produced it had somewhere to say *"I did not measure
+this."*
+
+Its first object-boundary search returned **INCONCLUSIVE — boundaries not found**. Cause: `K()` builds
+*regex source*, where `\\"` denotes one literal backslash; passing that string to `lastIndexOf` searches for
+**two**, and the raw text has one. The escaping trap again — in a probe written by someone who had spent the
+previous two messages on escape depth in this same file.
+
+That probe printed `INCONCLUSIVE` instead of falling through to a default or reporting a plausible number.
+Had it defaulted, it would have produced a second wrong row that agreed with the first — §26a's exact
+mechanism, since the surface being read would have looked consistent.
+
+> **Build the inconclusive branch before the result branch.** A probe that can only return answers will
+> return one when it has measured nothing, and that answer will be shaped like every other answer it gives.
+
+This is the positive form of §17 face 5 and §24: a zero or a plausible number conceals itself, but an
+explicit *"not measured"* cannot. It is the cheapest of the countermeasures in this register — one branch —
+and it is the only one that reports its own failure rather than requiring someone else to notice it.
 
 ### 26c. Why "count a second key" is the fix and a floor is not
 
