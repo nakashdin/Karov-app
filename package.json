@@ -62,7 +62,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:ci": "jest --ci --coverage --passWithNoTests",
-    "test:scripts": "node scripts/shared/__tests__/kashrut-write.test.mjs && node scripts/shared/__tests__/kashrut-write-completeness.test.mjs && node scripts/reports/migrate-kosher-fields-reviewqueue-guard.test.mjs && node scripts/shared/__tests__/category-overwrite-guard.test.mjs",
+    "test:scripts": "node scripts/shared/__tests__/kashrut-write.test.mjs && node scripts/shared/__tests__/kashrut-write-completeness.test.mjs && node scripts/reports/migrate-kosher-fields-reviewqueue-guard.test.mjs && node scripts/shared/__tests__/category-overwrite-guard.test.mjs && node scripts/shared/__tests__/kashrut-conflict-resolution.test.mjs",
     "build:web": "expo export --platform web",
     "doctor": "expo-doctor",
     "verify": "npm run typecheck && npm run lint && npm test && npm run test:scripts && npm run data:validate",
