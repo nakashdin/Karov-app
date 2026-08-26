@@ -1671,6 +1671,72 @@ hatch for the entire level-assertion mechanism, available to anyone who types it
 
 ---
 
+## 23. A guard's strength is a property of its call sites, not its body
+
+### 23a. The instance
+
+`basisSupportsLevelAssertion` (`scripts/shared/kashrut-write.mjs:158`) contains a caller-disagreement check:
+
+```js
+const entry = loadAliasMap().get(basis.alias);
+if (!entry) return false;
+if (entry.level !== basis.aliasLevel) return false;   // <- the branch in question
+return entry.level === 'mehadrin';
+```
+
+It was described, while designing §22's successor guard, as defence in depth — *"even a guard that constructs
+the basis carelessly cannot be fooled by its own bad input, so don't optimise the double lookup away."*
+
+**Fired rather than read:**
+
+| construction | result |
+|---|---|
+| derived basis — `aliasLevel` read from the same map, same key | **0 of 203** aliases can make the branch fire |
+| lying caller — `{alias:'הרב לנדא', aliasLevel:'mehadrin'}` | rejected ✓ |
+| lying caller — claims `regular` for a mehadrin alias | rejected ✓ |
+| honest derived — null-level alias / mehadrin alias | rejected / accepted ✓ |
+
+The branch is **unreachable from a derived basis** — not unreachable in general; it fires on both lying
+shapes. That distinction is the whole point: a static scanner has no independent notion of the level, only
+the string, so *derived is the only construction available to it* and the branch is dead in exactly the path
+it was being credited for.
+
+The verdicts are correct anyway. **The load-bearing line is the terminal `entry.level === 'mehadrin'`.** The
+advice to keep the lookup also survives — but because the terminal check needs `entry`, not because the
+cross-check is guarding anything there.
+
+### 23b. The shape, which is new to this register
+
+A **safety property** of the code was asserted from reading the function's body, without establishing which
+branches a real caller can reach. The check was verified to *exist* and inferred to *protect*.
+
+> **You cannot read a guard and know what it defends. You have to know which branches a real caller reaches.**
+
+Same family as *the test exists* vs *the test runs* (§17 face 1) and *the frozen list has 83 entries* vs *the
+scan finds 83* — but pointed at a single conditional rather than a file or a list. It reads as **more**
+rigorous than those, not less, precisely because it involves having read the implementation. That is what
+makes it hard to catch: it wears the costume of the diligence that would have caught it.
+
+Every previous instance of this error in this repo was framed as *coverage* — which files, which records,
+which scripts. This is the same error at the granularity of one `if`.
+
+### 23c. Why it landed here specifically
+
+It appeared **inside the countermeasure being built for §17 face 3**, asserted by the reviewer who had spent
+the same session catching that face in others. That is §17 face 6 — a countermeasure carrying the hazard it
+defends against — recursing one level.
+
+Not a coincidence, and this is the part worth carrying forward: **a guard-building exercise is the exact
+context in which "this construct protects you" gets asserted rather than fired**, because everyone involved
+is already thinking in terms of protection. Suspicion is highest about the *subject* of the guard and lowest
+about the guard's own machinery.
+
+**Countermeasure:** when claiming a branch protects something, name the caller that reaches it. If the only
+caller in the path constructs its input from the same source the branch compares against, the branch is
+scenery.
+
+---
+
 ## Superseded numbers — do not requote
 
 | Wrong | Correct | Why |
