@@ -1545,6 +1545,62 @@ trusting any ancestry walk.**
 
 ---
 
+## 22. Field deletion — the class nothing tracks, and the fixture that could not fail
+
+### 22a. A UI refactor deleted a kashrut claim from 349 records
+
+Commit `c4775dd` (2026-08-04), *"feat: ListScreen refactor — לאכול tabs, FilterSheet ≡ with dynamic kashrut"*
+— an 8-file UI change — carried one bullet in its own message: *"data: 349 kosherType:regular entries removed
+from places.osm.json."* Verified against its true parent:
+
+| | |
+|---|---|
+| records before / after | 7,523 / 7,523 — **no id changed** |
+| records losing `kosherType: "regular"` | **349**, matching the commit message exactly |
+| any other kashrut field touched | **none** — `certifiedBy`, `kosherAuthority`, `kosherLevel` untouched |
+| re-enriched since | 257 |
+| **still bare at HEAD** | **2** — precisely the two Rebar branches |
+| deleted from the dataset later | 90 |
+
+**§21 tracked ids disappearing. This is a different class entirely: the record keeps its id and loses its
+kashrut claim.** Nothing in the project detects it. The `certifiedBy` append-only guard covers exactly one
+field against HEAD; `kosherType`, `kosherLevel`, `kosherAuthority` and `kosherAuthorityGroup` have no
+equivalent. A record can be silently stripped of every kashrut claim it holds and every check stays green.
+
+**Why the two Rebar branches specifically:** they were the only 2 of 55 rebar records carrying
+`kosherType: "regular"`. The other 53 carry a *fabricated* `mehadrin` (§5b) and so survived a regular-only
+cull. **The 53 still display a false claim; the 2 honest ones were stripped.** The cull selected against
+exactly the records whose value was real.
+
+### 22b. Evidence ceiling — what the source actually supports
+
+`rebar.co.il/our-stores/` embeds Rebar's own store-locator JSON, one object per branch, carrying a boolean
+`kosher`. Both branches confirmed by name + address + coordinates; both `"kosher": true`. **The field is
+genuinely differentiated** — other branches in the same feed are `"kosher": false` — so it is a real
+per-branch assertion, not a decorative constant.
+
+**But a boolean is the ceiling.** No level word, no authority name anywhere in the feed. So the restoration
+claims `kosherType: "kosher"` / `kosherLevel: "regular"` / `kosherAuthorityGroup: "unknown"` with
+`sourceUrl` and `lastVerifiedAt` — and asserts **no** `kosherAuthority` and **no** `certifiedBy`. Restoring
+`mehadrin` by copying the 53 siblings would have been the §5b fabrication arriving through a new door.
+
+### 22c. A fixture that could not detect its own bug
+
+`parseIdentity()` in `pdf-extract.mjs` reversed **every** line of extracted PDF text, including purely
+numeric ones — so a street number `64` was read as `46`, silently corrupting every address comparison with no
+error raised.
+
+**It survived because the existing fixture's street number is a single digit, where reversal is a no-op.**
+The fixture matched, the assertion held, and the property was untested — because the test data was
+*invariant under the defect*. §17 face 2 at its sharpest: not a fixture that matched nothing, but one whose
+value could not distinguish correct from broken.
+
+**The general rule: test data must be able to fail.** A fixture whose value is unchanged by the bug under
+test proves only that the code ran. Choose fixture values that are asymmetric under every transformation the
+code performs.
+
+---
+
 ## Superseded numbers — do not requote
 
 | Wrong | Correct | Why |
