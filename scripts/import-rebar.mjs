@@ -51,7 +51,16 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const PLACES_PATH = resolve(root, 'src/data/generated/places.osm.json');
 const RESTAURANTS_PATH = resolve(root, 'src/data/generated/restaurants.osm.json');
 const FEED_URL = 'https://rebar.co.il/our-stores/';
-const TODAY = '2026-08-26';
+// Computed at call time, never a literal — a hardcoded date here is exactly
+// the defect this whole effort exists to fix (see remediate-rebar-55.mjs's
+// header: the original importer's `lastVerifiedAt: '2026-07-14'` constant is
+// why all 53 records it touched carry an identical, meaningless date). This
+// one was ALSO a literal until 2026-08-26, correct only because that was
+// today when it was written — every run after today would have silently
+// backdated every new record's lastVerifiedAt to a date that never happened,
+// undetected by validate-data.mjs's backward-date guard (it only compares
+// against a record's PRIOR value at HEAD; a brand-new record has none).
+const RUN_DATE = new Date().toISOString().slice(0, 10);
 
 const BASIS = {
   kind: 'human-review',
@@ -88,7 +97,7 @@ function buildNewPlace(store) {
     instagram: 'https://www.instagram.com/rebarisrael/',
     source: 'manual',
     sourceUrl: FEED_URL,
-    lastVerifiedAt: TODAY,
+    lastVerifiedAt: RUN_DATE,
   };
   recordKashrutWrite(place, 'kosherType', 'kosher', BASIS);
   recordKashrutWrite(place, 'kosherLevel', null, BASIS);
