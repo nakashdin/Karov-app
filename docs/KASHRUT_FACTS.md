@@ -1091,8 +1091,78 @@ Measured against `places.osm.json`:
 |---|---|
 | mirror records | 1,337 |
 | present in `places.osm.json` | 953 |
-| **absent from `places.osm.json`** | **384** (osm 227 / manual 157) |
-| …of those 384, **carrying kashrut claims** | **205** |
+| **absent from `places.osm.json`** | **384** (osm 227 / manual 157; zero missing a `source` field) |
+| …of those 384, **carrying kashrut claims** | **205** ← the real recovery |
+| …of those 384, **carrying no kashrut evidence at all** | **179** ← a merge must refuse these |
+
+**The 179 are the half that cannot be recovered, and the partition is exact (205 + 179 = 384).** All 179 are
+food types (`restaurant` 154, `fast_food` 25). Under merge-then-retire they would be *admitted* into
+`places.osm.json`, and AGENTS.md's admission rule is that a food place with no kashrut evidence never enters.
+
+**This is the first place the two data rules collide.** The admission rule forbids taking them; the
+zero-deletions rule forbids destroying them.
+
+**An archive file was proposed and rejected. The rejection is the useful part.** The proposal was to keep the
+179 in a file the app never reads. The objection that killed it is *not* "that's the mirror file again" —
+that objection fails on its own terms, since an archive could be write-once (0 writers), ratchet-covered, and
+unable to diverge, so three of the mirror's five hazards are structurally absent. The objection that survives:
+
+> **An archive enforces inertness by the absence of readers.** "The app never reads it" is a property of
+> today's import graph, not an invariant. Nothing fails when someone adds a reader.
+
+Every mechanism built in this effort replaced *"nobody will"* with *"something checks"*. An archive is a
+"nobody will," and would need three new enforcement mechanisms (a no-importer test, ratchet coverage, a
+write-once invariant) just to be as safe as the thing it replaces.
+
+**And it hides the real question.** The question is not *where the 179 live* — it is **whether the app should
+list a food place it has no kashrut evidence for.** That question already has live instances:
+
+| | |
+|---|---|
+| `filterPlaces.ts:29-30` — `eatAll` gates on `isFoodType` only, **no kashrut precondition** | such records **do** appear in the food list |
+| `getKosherLabel` for such a record | returns **null** — no chip, not even "unknown" |
+| food records in `places.osm.json` with no kashrut evidence **today** | **20** (= the `foodWithoutKashrut` baseline exactly) |
+| after merging all 384 | **199** — a 9.9× increase |
+
+An archive answers that question implicitly for the 179 by hiding them, and leaves the 20 in the app
+unaddressed — the same defect, now *harder* to see because the population that would have forced the question
+has been filed away.
+
+**The adopted resolution is a filter rule, not a file:** merge all 384, and exclude food records with no
+kashrut evidence in the **read path**. The machinery already exists — `filterPlaces.ts:51` already excludes on
+`isCertificateExpired`, so "stays in the dataset, withheld from a surface" is a pattern this project has built
+and tested. It is the same admission/retention resolution applied at the **display** layer rather than the
+storage layer, which is where it belongs: storage is where you put things you don't want read; display is
+where you decide what gets shown.
+
+| | inertness enforced by | |
+|---|---|---|
+| archive file | absence of readers | untestable, decays silently |
+| **filter predicate** | **presence of code** | **tested, fails loudly when broken** |
+
+It also dominates on everything else: one dataset and no parallel-file surface; covered by every ratchet
+already shipped rather than needing new ones; promotable by adding evidence rather than migrating a record
+between files; and **it fixes the 20 as a side effect instead of stranding them.**
+
+**`restaurantsFoodWithoutKashrut` (ratchet, baseline 225) is the whole-file count; 179 is the orphan subset.**
+Two numbers, two jobs — the ratchet guards against growth anywhere in the file, the 179 is the decision-
+relevant figure. Do not reconcile one to the other.
+
+### 18e-iii. The 205 are genuinely salvageable — the contamination is in the shared 953, not the orphans
+
+"Recover 205 from a file we have spent a week calling contaminated" invites a discount. Measured, the data
+does not support one:
+
+| Of the 205 orphans carrying a claim | n |
+|---|---|
+| carry a **real `certifiedBy`** | **195** |
+| bare `kosherType`, no `certifiedBy` | 10 |
+| level asserted over a named body (§5b defect) | 3 |
+| fabricated expiry (`certificateValidUntil`, no `kosherCertUrl`) | 1 |
+
+**Fourteen carry a catalogued defect; 195 carry a real certifying body.** The divergence (§18e-i) and the
+fabricated dates (§18d) are concentrated in the **953 shared** records, not in the orphans — so the recovery
+pocket is cleaner than the file's reputation.
 
 For the 953 shared records — fields the mirror has and `places.osm.json` **lacks**:
 `certifiedBy` 36 · `certificateValidUntil` 29 · `kosherType` 4.
