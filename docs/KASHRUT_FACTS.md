@@ -2201,6 +2201,58 @@ cross-checking against an independent per-record count. Fixed by iterating every
 that specific aggregation, never a deduplicated-shape map, whenever the property being counted isn't part of
 the key the map was grouped on.
 
+### 30e. A third instance of the same lesson, found by watching the mechanism rather than reading it
+
+`scripts/shared/__tests__/ratchet-corrections.test.mjs`'s own first draft had a test named "a leaving id that
+STILL satisfies the predicate fails." Its fixture helper built the override with a shallow merge —
+`{...base.get(id), ...patch}` — so a caller trying to STRIP a field (pass a replacement object that omits
+`kosherAuthorityGroup`) never actually stripped it: the base record's value survived underneath the spread.
+The test asserted a failure, got `null`, and the assertion caught it — but only because the test asserted
+against the *return value*, not because anyone read the fixture and noticed the merge was wrong. Fixed by
+making the override a wholesale replacement, not a patch. Same root defect as §30d (grouping/merging logic
+that quietly preserves a field the test believes it changed), same discovery method (the mechanism disagreed
+with expectation; investigating why, not adjusting the assertion, found it) — three instances now, by two
+sessions, in one day, across three unrelated files.
+
+---
+
+## 31. Predicting a ratchet movement in advance is necessary and not sufficient — a run that matches the
+prediction is evidence about the prediction, not about the output
+
+Item 4 Unit 3's greg write (41 records) moves three ratchets. Both reviewing sessions stated numeric
+predictions before running, per this project's own discipline. The scorecard:
+
+    levelAssertedWithNoBody     196 → 158   BOTH predicted this correctly, in advance.
+    kashrutAuthorityUnknown    1183 → 1184  BOTH predicted wrong (flat or -2) on the first pass — the
+                                            widened-scope correction (3 fabricated `rabbinate` records
+                                            returning to the `unknown` bucket) was missed by both sessions
+                                            independently, then caught by one of them BEFORE the run,
+                                            through re-derivation, not through running anything.
+    freeTextCertifierUnmapped  1560 → 1562  NEITHER session predicted this at all. Found only by actually
+                                            running `--apply` against the real pipeline output in a
+                                            disposable worktree and reading `data:validate`'s result —
+                                            not by reasoning about the pipeline's write shape in advance.
+
+**The lesson is not "predict harder."** Both sessions reasoned carefully about `kashrutAuthorityUnknown` and
+were still wrong the same way, because the arithmetic each did was scoped to the population each already had
+in mind (the 38 mehadrin-claim records) and neither extended it to the 3 rabbinate records the SAME commit
+also touches. A prediction is bounded by what the predictor thought to include. Execution is not — the actual
+`--apply` output and the actual `data:validate` run touch every field on every record, including the ones no
+one was thinking about when they wrote the prediction down.
+
+**This is §17 face 4, restated against the reviewers instead of the implementation being reviewed:** a check
+that only asks "does the result match what I expected" cannot surface a consequence outside that
+expectation's scope — it can only confirm or deny the scope it was given. `freeTextCertifierUnmapped` was
+never wrong to move; it was invisible to the question being asked, because the question was "does this match
+my prediction," and no one had predicted anything about that key. The fix that generalizes: state the
+prediction, then run the REAL thing anyway (the real pipeline, the real validator, a disposable copy of the
+real dataset) rather than stopping once the predicted keys match — a match on the keys you thought to name
+is not evidence the run had no other effects, only that it had none among the effects you were watching for.
+
+See §30e for a smaller instance of the identical structure inside the very mechanism built to catch this
+class of error: a test's assertion passed, which felt like verification, but the fixture backing the
+assertion wasn't testing what its name claimed until someone noticed the mechanism disagreeing with intent.
+
 ---
 
 ## Superseded numbers — do not requote

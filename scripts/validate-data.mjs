@@ -21,6 +21,7 @@ import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { execSync } from 'node:child_process';
 import { isCertifiedByAppendOnlyViolation } from './shared/kashrut-write.mjs';
+import { isKashrutAuthorityUnknown, isFreeTextCertifierUnmapped, verifyRatchetCorrection } from './shared/ratchet-corrections.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const BASELINE_PATH = resolve(root, 'scripts', 'data-quality-baseline.json');
@@ -135,6 +136,80 @@ const LASTVERIFIEDAT_BACKDATE_ALLOWLIST = [
     reason: 'פיצה שמש (id 9000064): same revert, restored to בד"צ בית יוסף.' },
   { id: 'manual-dedup-פיצה-שמש-בית-קמה', from: '2026-08-10', to: '2026-07-29',
     reason: 'פיצה שמש בית קמה: same revert, restored to בד"צ בית יוסף.' },
+];
+
+/**
+ * Explicit, reviewable exceptions to a RATCHET's only-ever-down rule — the
+ * ONLY thing this array may authorize is a metric getting WORSE because a
+ * fabrication was removed and honesty about our ignorance increased. It may
+ * NEVER be used to excuse a regression caused by anything else (a new
+ * writer, a careless import, an unrelated bug) — see the guard below, which
+ * re-verifies the claim rather than trusting it.
+ *
+ * Same shape as LASTVERIFIEDAT_BACKDATE_ALLOWLIST above, adapted for an
+ * AGGREGATE ratchet instead of a per-record HARD check: there is no single
+ * id a ratchet's movement belongs to, so an entry names the ids RESPONSIBLE
+ * for the movement in both directions — `entering` (records that now
+ * satisfy the ratchet's predicate and didn't before) and `leaving` (records
+ * that satisfied it before and don't now) — and the guard computes the net
+ * from those two lists, rather than trusting a hand-typed net number. Found
+ * live, before this shipped: a first draft of this mechanism listed only
+ * `entering` (3 ids) against a net movement of +1, which is the gross count
+ * of one direction, not the net of both — the same kind of arithmetic error
+ * this file's own history has made about this exact ratchet twice already
+ * (see docs/KASHRUT_FACTS.md §30). Making both directions explicit is what
+ * makes the entry self-checking instead of another place to get it wrong.
+ *
+ * NOT decorative: every id in `entering` is re-verified against the ratchet
+ * key's own predicate function (isKashrutAuthorityUnknown /
+ * isFreeTextCertifierUnmapped, imported from shared/ratchet-corrections.mjs
+ * — the SAME functions the main counting loop below calls, not a
+ * re-expressed copy) to actually satisfy it NOW, and every id in `leaving`
+ * to NOT satisfy it now. An entry naming ids that don't actually back the
+ * claimed movement fails the build with a named mismatch, the same way a
+ * stale LASTVERIFIEDAT entry does.
+ *
+ * STALE ENTRIES ARE AN ERROR, same principle as the backdate allowlist:
+ * checked against the key's CURRENT baseline value, not HEAD's — once the
+ * baseline is updated to `to`, the entry becomes the permanent record of
+ * why that number is what it is; if the baseline later moves to some THIRD
+ * value, the entry no longer describes anything real and must be removed
+ * (or a new entry added for the new movement).
+ */
+const RATCHET_CORRECTIONS = [
+  {
+    key: 'kashrutAuthorityUnknown',
+    from: 1183,
+    to: 1184,
+    entering: ['greg-f8d2e80c', 'greg-f29c21d4', 'greg-44c4c173'],
+    leaving: ['greg-77bb14f6', 'greg-9ddc70b3'],
+    reason: 'Item 4 Unit 3, 2026-08-27: 3 greg-* records carried an invented ' +
+      'kosherAuthorityGroup:"rabbinate" with zero certifiedBy/kosherAuthority ' +
+      'evidence — no body named on any of gregcafe.co.il\'s 59 branch pages for ' +
+      'these 3, corrected to "unknown" (+3, entering the ratchet). Independently, ' +
+      '2 different greg-* records (מגדל העמק, גן העיר אשדוד) resolved a real ' +
+      'named body (בד"צ בית יוסף) that a tsadi-glyph/word-boundary defect in an ' +
+      'earlier instrument had missed, moving them to kosherAuthorityGroup:"badatz" ' +
+      '(-2, leaving the ratchet). Net +1: the ratchet correctly reports that our ' +
+      'honest ignorance about certifying bodies just grew, because we stopped ' +
+      'pretending about 3 records — see docs/KASHRUT_FACTS.md §30/§31.',
+  },
+  {
+    key: 'freeTextCertifierUnmapped',
+    from: 1560,
+    to: 1562,
+    entering: ['greg-77bb14f6', 'greg-9ddc70b3'],
+    leaving: [],
+    reason: 'Item 4 Unit 3, 2026-08-27: the same 2 greg-* records above now carry ' +
+      'real certifiedBy text ("בד\"צ בית יוסף" / "בית יוסף") that this pipeline ' +
+      'resolves into kosherAuthorityGroup but does NOT resolve into a specific ' +
+      'certifierId (the hyphen/underscore authority namespaces are known not to ' +
+      'be a safe string transform of each other — see docs/KASHRUT_FACTS.md). ' +
+      'Found only by running data:validate against the actual --apply output in ' +
+      'a disposable worktree, not predicted by either reviewing session in advance ' +
+      '— logged as a real gap, not silently absorbed into the kashrutAuthorityUnknown ' +
+      'entry above just because it moved on the same commit.',
+  },
 ];
 
 const hard = [];
@@ -475,13 +550,13 @@ if (hard.length === 0) {
     if (FOOD_TYPES.has(p.type) && !p.kosherType && !p.kosherAuthorityGroup && !p.certifiedBy) {
       counts.foodWithoutKashrut++;
     }
-    if (FOOD_TYPES.has(p.type) && (!p.kosherAuthorityGroup || p.kosherAuthorityGroup === 'unknown')) {
+    if (isKashrutAuthorityUnknown(p)) {
       counts.kashrutAuthorityUnknown++;
     }
     // `certifierId: null` is a deliberately resolved state ("level known, no
     // authority identified") — not the same as never having gone through the
     // registry. Only strict absence counts as unmapped here.
-    if (FOOD_TYPES.has(p.type) && p.certifiedBy && p.certifierId === undefined) {
+    if (isFreeTextCertifierUnmapped(p)) {
       counts.freeTextCertifierUnmapped++;
     }
     // Site A + site B (FACTS §5b): the level was invented from a named body,
@@ -708,10 +783,21 @@ const baseline = existsSync(BASELINE_PATH)
   ? JSON.parse(readFileSync(BASELINE_PATH, 'utf8'))
   : null;
 
+// Ratchet keys a RATCHET_CORRECTIONS entry may ever target, mapped to the
+// exact predicate function the main counting loop used for that key — the
+// guard below reuses these, never re-expresses them.
+const RATCHET_CORRECTION_PREDICATES = {
+  kashrutAuthorityUnknown: isKashrutAuthorityUnknown,
+  freeTextCertifierUnmapped: isFreeTextCertifierUnmapped,
+};
+
 const regressions = [];
 const improvements = [];
+const correctedRatchetKeys = new Set(); // keys --update is allowed to raise, this run only
 
 if (baseline && hard.length === 0) {
+  const placesById = new Map(places.filter((p) => p && typeof p.id === 'string').map((p) => [p.id, p]));
+
   for (const key of RATCHET_KEYS) {
     const now = counts[key];
     // A key absent from the baseline is unmeasured, not zero and not infinite.
@@ -727,8 +813,27 @@ if (baseline && hard.length === 0) {
       continue;
     }
     const was = baseline[key];
-    if (now > was) regressions.push(`${key}: ${was} → ${now} (+${now - was})`);
-    else if (now < was) improvements.push(`${key}: ${was} → ${now} (−${was - now})`);
+    if (now > was) {
+      const correction = RATCHET_CORRECTIONS.find((c) => c.key === key && c.from === was && c.to === now);
+      if (correction) {
+        const predicateFn = RATCHET_CORRECTION_PREDICATES[key];
+        if (!predicateFn) {
+          fail(`RATCHET_CORRECTIONS entry for "${key}" has no registered predicate in RATCHET_CORRECTION_PREDICATES — cannot verify it, so it cannot be trusted. Add the predicate before adding the entry.`);
+        } else {
+          const verifyError = verifyRatchetCorrection(correction, placesById, predicateFn);
+          if (verifyError) {
+            fail(verifyError);
+          } else {
+            correctedRatchetKeys.add(key);
+            improvements.push(`${key}: ${was} → ${now} (+${now - was}, CORRECTED — a fabrication was removed, not introduced: ${correction.reason})`);
+          }
+        }
+      } else {
+        regressions.push(`${key}: ${was} → ${now} (+${now - was})`);
+      }
+    } else if (now < was) {
+      improvements.push(`${key}: ${was} → ${now} (−${was - now})`);
+    }
   }
   // The dataset is additive-only by project rule: it must never shrink.
   if (typeof baseline.total === 'number' && counts.total < baseline.total) {
@@ -750,7 +855,14 @@ for (const key of RATCHET_KEYS) {
 if (process.argv.includes('--update')) {
   const next = { total: counts.total };
   for (const key of RATCHET_KEYS) {
-    next[key] = baseline ? Math.min(baseline[key] ?? Infinity, counts[key]) : counts[key];
+    // `--update` stays min-only (never raises a baseline) for every key,
+    // EXCEPT one this run's RATCHET_CORRECTIONS entry was just verified to
+    // justify — and even then, only up to that entry's own `to` value, never
+    // an arbitrary higher count. This is the one place a raise can happen at
+    // all; everywhere else in this file the baseline can only get stricter.
+    next[key] = baseline
+      ? (correctedRatchetKeys.has(key) ? counts[key] : Math.min(baseline[key] ?? Infinity, counts[key]))
+      : counts[key];
   }
   writeFileSync(BASELINE_PATH, JSON.stringify(next, null, 2) + '\n');
   console.log(`\n✓ baseline written to ${BASELINE_PATH}`);
