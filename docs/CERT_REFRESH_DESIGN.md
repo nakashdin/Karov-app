@@ -273,8 +273,185 @@ Four questions were originally open here. The Architect answered three; the four
 
 ---
 
-Once the 0.5-vs-other ratio question comes back from the owner and the Reviewer has seen this document,
-implementation follows the same discipline as everything else this month: build, fire every guard named in
-§5's acceptance test and §4's backward-movement case in a detached worktree, wire `cert-refresh-status.json`
-reads into `test:scripts`/`ci.yml` if a dedicated test file is warranted, and no write to
-`src/data/generated/*` until that's all green and the Architect has seen it. Implementation has not started.
+## 9. The owner's discovery mechanism, investigated (2026-08-26) — what's confirmed and what isn't
+
+The owner (via the Architect) identified that Tzohar publishes a business search and a de-supervision list,
+making the renewal workflow buildable: find approaching-expiry records → search Tzohar → obtain the current
+certificate URL → verify identity → read → extract → validate → update. This section reports what direct
+investigation of the actual site found — read via `curl` against the live site, not summarised through a
+markdown-converting fetch tool (which strips exactly the `<form>`/`<script>` detail this needed; noted
+because it cost real time to discover and is worth recording so the next investigation doesn't repeat it).
+
+**The business-name search — mechanism confirmed, reliability NOT confirmed.** Decoded directly from the page
+source of `?page_id=37524` (a base64-inlined `<script>` block):
+
+```js
+document.querySelector('#wpsl-search-input').addEventListener('input', function() {
+  var search = this.value
+  if (search.length < 2) return
+  jQuery.post(frontend_ajax_object.ajaxurl, {action: 'tzohar_find_rest_by_search', s: search}, function(res) {
+    document.querySelector('#wpsl-stores ul').innerHTML = res
+  })
+})
+```
+
+- Endpoint: `POST https://www.tzohar.org.il/wp-admin/admin-ajax.php`
+- Params: `action=tzohar_find_rest_by_search`, `s=<query>` (2-character client-side minimum — confirms the
+  owner's own description)
+- Built on the **WP Store Locator plugin** (`wpsl-styles-css`, v2.3.22) with a **custom action layered on
+  top** by the theme, not the plugin's own stock search action
+- **Response is an HTML fragment, not JSON.** The callback replaces `#wpsl-stores ul`'s `innerHTML` directly
+  with `res`. Any acquisition code has to parse HTML `<li>` markup for a match, not deserialize a JSON object
+  — this shapes both the candidate-scoring step (§10) and the extraction contract, since the "candidate"
+  itself now needs its own mini-parser before any certificate PDF is even fetched.
+- No `nonce` field of any kind was found on the page — searched explicitly, zero occurrences.
+
+**What direct calls to this endpoint actually returned, tested against real business names already in our
+own dataset (חומוס כספי, ארומה, הקוסם, צהר, פיצה, קפה — all should have matches):**
+
+| Input | Result |
+|---|---|
+| Latin/non-Hebrew query (e.g. `"aa"`) | **HTTP 500**, WordPress's generic fatal-error page |
+| Any Hebrew query tried, including generic terms that must match many records (`קפה`, `פיצה`) | **HTTP 200, zero-byte body** |
+
+Cookies from a prior page load and a `Referer` header matching the search page were both tried; neither
+changed the result. **This is not yet a working acquisition path** — the mechanism is real and precisely
+identified, but calling it outside a full browser context (real Origin/fingerprint, whatever JS state
+initializes before the first keystroke, possibly bot-detection this investigation didn't probe for) does not
+currently return usable results. Two honest possibilities, not yet distinguished: (a) something in the
+request is still wrong and fixable (a header, a cookie set by an earlier AJAX call this investigation didn't
+make), or (b) the endpoint requires a real browser (a headless-browser acquisition path, not a plain HTTP
+client, the same way `--dry` already treats "acquired but the content is untrustworthy" as a distinct state
+from "acquired cleanly"). **This uncertainty is reported rather than papered over** — building the fetch loop
+against an endpoint that hasn't been confirmed callable would be building on an assumption, which is exactly
+what this whole redesign exists to stop doing.
+
+**The de-supervision list (`?page_id=20089`) — confirmed, simple, and has its own caveat.** No AJAX involved
+at all: a static `<ul><li>` list, currently 12 entries, e.g.:
+
+```html
+<li>אריק קפה בשכונה הפלמ"ח 18ירושלים</li>
+<li>צ'יקן פיק דרך שלמה שמלצר 94 פתח תקווה</li>
+<li>פת PAT האשל 11 אשדוד</li>
+```
+
+Business name and address are **concatenated with no delimiter** — parsing "which part is the name and which
+is the address" is itself a fuzzy-matching problem against known business names, not a regex. And the page's
+own `article:modified_time` metadata reads **`2024-12-30`** — over a year and a half stale relative to today.
+Whether that means the list is simply short-lived (delistings are rare) or that it has stopped being
+maintained is not something this investigation can determine from the page alone; flagging it so this list is
+not treated as a live, current negative signal without that caveat attached.
+
+**Worth a look for the locality/identity work, not chased further here since it isn't this item's task:** one
+of the 12 de-supervised businesses — **צ'יקן פיק, דרך שלמה שמלצר 94, פתח תקווה** — sits at the exact address
+the Architect named as the live example of two different businesses legitimately sharing one address
+(`manual-restaurant-alfredo` / `tzohar-food-0215`). Whether this is the same location under a third identity,
+an unrelated coincidence, or relevant to why that address holds multiple businesses, this investigation did
+not determine — noted for whoever owns that thread rather than investigated here.
+
+## 10. Identity verification — design, before the fetch loop (the part the Architect asked to see first)
+
+**The failure this design exists to prevent already happened**: a record now carries a date read from a
+different business's certificate, inside an 82-business bundle. That was very likely a *positional*
+association — the Nth fetched document assumed to belong to the Nth business in some list — rather than a
+verified one. The design below never associates a certificate with a business by position or order; every
+association is checked against content, twice, at two different points in the pipeline.
+
+**Stage 1 — candidate generation.** Search Tzohar by business name (§9's endpoint, once confirmed callable —
+see §9's open uncertainty). A search may return zero, one, or several candidates — chain names (ארומה, and
+presumably others) return many. Zero results is the `NOT_FOUND` outcome (§11), not a failure to search.
+
+**Stage 2 — candidate scoring, before anything is fetched.** No single signal decides a match — the same
+principle the Architect stated for the locality/merge identity work applies here independently, because it's
+the same underlying risk (address alone, or name alone, both proved unreliable identity signals elsewhere in
+this project). Score each candidate against our record on every signal the search result actually exposes
+(exact shape TBD until §9's endpoint is confirmed working and a real result can be inspected — proposed,
+pending that):
+
+- **Name** — normalized fuzzy match (whitespace/punctuation-insensitive). Necessary, never sufficient alone:
+  a chain's 80+ branches all share this signal by construction, which is precisely the shape of the incident
+  that already happened.
+- **Address / locality**, if the search result exposes one — the signal that actually distinguishes same-name
+  branches from each other.
+- **Phone number**, if both sides have one — a strong positive signal on its own, since phone numbers are
+  rarely shared between branches even when name and city are identical.
+
+A candidate is only auto-selected when it clears a confidence threshold **and** is clearly separated from the
+next-best candidate — a "good enough and nothing else is close" requirement, not "best of a weak field." When
+that doesn't hold — several candidates score similarly, or the top candidate doesn't clear the bar — the
+outcome is `AMBIGUOUS_BUSINESS_MATCH` (§11): reported, persisted, never guessed past.
+
+**Stage 3 — the check that doesn't trust Stage 2 at all.** Once a certificate PDF is actually fetched, the
+same PDF-text-extraction machinery already pulling the expiry date (`pdfText()` in the current tool) is used
+to pull whatever business name/address is printed on the certificate itself — Tzohar's PDFs already carry a
+real text layer, confirmed by the existing extraction code. That printed identity is compared against our
+record using the same scoring as Stage 2. **This is the authoritative check, not a formality after Stage 2
+already decided.** It depends on nothing but the fetched document's own content — not on trusting the search
+result's metadata, not on list position, not on Stage 2 having been confident. If it doesn't clear the bar,
+the outcome is `WRONG_BUSINESS` (§11) and nothing from this fetch is applied, regardless of how confident
+Stage 2 was. **Both stages must agree; neither is allowed to substitute for the other.** Stage 2 alone could
+in principle be fooled by a search result whose displayed metadata is itself wrong or stale; Stage 3 alone
+would mean fetching and reading every candidate a name search returns, most of them irrelevant, before
+knowing which one to trust. Doing both is what makes a positional-association bug like the one that already
+happened structurally impossible to repeat: there is no step in this design where "which business does this
+document belong to" is answered by anything other than reading content and comparing it.
+
+## 11. The outcome taxonomy, widened to cover business identity (revises §4)
+
+The owner's failure taxonomy for item 6 is wider than the extraction-only taxonomy in §4, because two of its
+members are about identity, not about reading a date, and §4 had no room for either. Revised, 8 kinds, still
+exactly one variant carries a date:
+
+```
+type RefreshOutcome =
+  | { kind: 'VERIFIED',                date: string, changed: boolean, priorDate: string | null,
+                                        providerId: string, matchedCandidate: { name, address, score } }
+  | { kind: 'NOT_FOUND',                reason: string }   // search ran; zero candidates — "renewed certificate not found"
+  | { kind: 'AMBIGUOUS_BUSINESS_MATCH', reason: string, candidates: Array<{ name, address, score }> }  // Stage 2
+  | { kind: 'WRONG_BUSINESS',           reason: string, fetchedIdentity: { name, address } }           // Stage 3
+  | { kind: 'UNREACHABLE',              reason: string }   // download/network failure ("download failure")
+  | { kind: 'UNREADABLE',               reason: string }   // acquired, no usable date content
+  | { kind: 'AMBIGUOUS_DATE',           reason: string, candidates?: string[] }  // renamed from §4's AMBIGUOUS —
+                                                                                  -- now distinct from AMBIGUOUS_BUSINESS_MATCH
+  | { kind: 'UNCLASSIFIED',             error: string }    // catch-all, including an unexpected parser exception
+```
+
+**Mapping from the owner's exact list**, so nothing was silently dropped or merged without saying so:
+renewed-certificate-not-found → `NOT_FOUND`; download failure → `UNREACHABLE`; WRONG-BUSINESS certificate →
+`WRONG_BUSINESS`; AMBIGUOUS BUSINESS MATCH → `AMBIGUOUS_BUSINESS_MATCH`; unreadable → `UNREADABLE`; ambiguous
+date → `AMBIGUOUS_DATE`; parser failure → `UNCLASSIFIED` (an exception in our own extraction code is a
+different fact from "the document had nothing usable," which is `UNREADABLE` — flagging this mapping
+explicitly since "parser failure" could reasonably mean either and the owner's list doesn't disambiguate).
+
+**One targeting-time state that sits outside this union, not inside it:** `PROVIDER_UNSUPPORTED` — no
+registered `CertificateProvider` (§3) recognises this record at all. This isn't a refresh that was attempted
+and failed; it's a record that was never a candidate for automated refresh in the first place, the same way
+records with no certificate on file today are excluded from `targets` before any outcome is possible. It does
+not count toward `attempted` in §5's ratio, for the same reason.
+
+§6's persistence design (`cert-refresh-status.json`, with history) and §5's aggregate reporting extend to all
+eight kinds without a structural change — the file already stores `outcome` as an open string and the report
+already counts by kind; this widens the vocabulary, not the mechanism.
+
+## 12. Prioritisation
+
+152 certificates expire 2026-09-11 — 16 days out as of this writing. These go first once implementation
+starts, specifically so a valid, still-supervised business does not show as expired in the app because our
+own refresh failed or hadn't run yet, not because the certification lapsed. Everything else in this design
+(the identity-verification stages, the widened taxonomy, the heartbeat) applies to this cohort identically —
+there is no fast path that skips Stage 3 for urgency's sake, since skipping it is exactly how the existing
+wrong-business incident happened.
+
+---
+
+**Status: still design-only, nothing implemented.** §9's open uncertainty (is the search endpoint reliably
+callable outside a full browser context) needs resolving — either a fix to the request this investigation
+hasn't found, or a decision to acquire via a headless browser instead of a plain HTTP client — before Stage 1
+of §10 can be built at all. Sending §9-§12 to the Architect now rather than continuing to iterate alone,
+since the identity-verification design in §10 is the piece explicitly asked for before any fetch-loop code,
+and §9's finding changes what "write the fetch loop" even means here. Once the 0.5-vs-other ratio question
+(§8) comes back from the owner and the Reviewer has seen this document, implementation follows the same
+discipline as everything else this month: build, fire every guard named in §5's acceptance test, §4's
+backward-movement case, and §10's Stage 2/Stage 3 disagreement case in a detached worktree, wire
+`cert-refresh-status.json` reads into `test:scripts`/`ci.yml` if a dedicated test file is warranted, and no
+write to `src/data/generated/*` until that's all green and the Architect has seen it.
