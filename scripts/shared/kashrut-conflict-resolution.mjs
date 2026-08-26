@@ -100,20 +100,41 @@ function isExtension(shorter, longer) {
  * downgrade through item 4's door.
  *
  * That is why these 13 (and only these 13) carry `held: 'item-2-gated'`
- * on the returned result, per the owner's own pre-registered acceptance
- * predicate (docs/owner-directive-acceptance-predicate.md §5): resolve
- * the full population INCLUDING the thirteen — do not special-case them
- * out of the function — and mark them for a caller to emit rather than
- * apply. This keeps the rule complete and verifiable across every
- * conflict, lets the thirteen appear in item 2's eventual report as
- * "resolved pending authorisation" (which strengthens that report rather
- * than requiring item 2 to re-derive them), and means nothing has to be
- * remembered separately once item 2 is authorised — a caller that
- * ignores `held` and applies every non-'unresolved' winner unconditionally
- * is the one thing this module cannot prevent by itself; that check
- * belongs to whatever eventually calls this, which does not exist yet.
+ * on the returned result, per kosher-app-39's (the Reviewer's) proposed
+ * acceptance predicate for this work (docs/owner-directive-acceptance-
+ * predicate.md §5 — a reviewer's criteria for judging work on the
+ * owner's directive, not text the owner wrote; the doc's title
+ * originally read as the reverse, corrected at a52a05b, and this
+ * corrects the same misreading here): resolve the full population
+ * INCLUDING the thirteen — do not special-case them out of the function
+ * — and mark them for a caller to emit rather than apply. This keeps
+ * the rule complete and verifiable across every conflict, lets the
+ * thirteen appear in item 2's eventual report as "resolved pending
+ * authorisation" (which strengthens that report rather than requiring
+ * item 2 to re-derive them), and means nothing has to be remembered
+ * separately once item 2 is authorised — a caller that ignores `held`
+ * and applies every non-'unresolved' winner unconditionally is the one
+ * thing this module cannot prevent by itself; that check belongs to
+ * whatever eventually calls this, which does not exist yet.
+ *
+ * `includeSilentConservative` (default false) controls a SEPARATE,
+ * narrower population than the audited 40: ids where one side elevates
+ * and the other has no kosherType AT ALL, rather than an explicit
+ * non-elevating value. The Architect's ruling (2026-08-26): absent is
+ * not evidence for the conservative value — a record with no kosherType
+ * asserts nothing, and treating silence as if it were the conservative
+ * claim is the mirror image of the exact error this function exists to
+ * stop (treating a body name as if it were a level claim). That 18-
+ * record population is a claim-vs-silence question, which belongs to
+ * the merge/admission design, not this conflict rule — so by default
+ * those ids resolve to 'unresolved' (branch 'conservative-side-silent')
+ * without ever reaching the registry logic below. Pass
+ * `includeSilentConservative: true` to apply the exact same rule to
+ * that population anyway (the capability is kept because it costs
+ * nothing and the underlying evidence logic doesn't change — only the
+ * default is narrowed).
  */
-export function resolveKosherTypeConflict({ id, placesKosherType, placesCertifiedBy, mirrorKosherType, mirrorCertifiedBy, aliasMap }) {
+export function resolveKosherTypeConflict({ id, placesKosherType, placesCertifiedBy, mirrorKosherType, mirrorCertifiedBy, aliasMap, includeSilentConservative = false }) {
   const placesElevates = LEVEL_ASSERTING_KOSHER_TYPES.has(placesKosherType);
   const mirrorElevates = LEVEL_ASSERTING_KOSHER_TYPES.has(mirrorKosherType);
 
@@ -130,6 +151,14 @@ export function resolveKosherTypeConflict({ id, placesKosherType, placesCertifie
     const elevatedKosherType = placesElevates ? placesKosherType : mirrorKosherType;
     const conservativeKosherType = placesElevates ? mirrorKosherType : placesKosherType;
     const elevatedCertifiedBy = placesElevates ? placesCertifiedBy : mirrorCertifiedBy;
+
+    if (!hasValue(conservativeKosherType) && !includeSilentConservative) {
+      return {
+        id, field: 'kosherType', winner: 'unresolved', resolvedValue: null, conservativeValue: null,
+        branch: 'conservative-side-silent', held: null,
+        reason: `${elevatedSide} asserts ${JSON.stringify(elevatedKosherType)} while ${conservativeSide} has no kosherType at all — a positive claim vs. silence, not two contradictory claims. Not the audited-40 shape; left unresolved by default (pass includeSilentConservative:true to apply the same registry rule anyway).`,
+      };
+    }
 
     if (!hasValue(elevatedCertifiedBy)) {
       return {

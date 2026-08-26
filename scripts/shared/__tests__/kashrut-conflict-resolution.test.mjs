@@ -253,7 +253,13 @@ test('REAL DATA: resolveKosherTypeConflict reproduces the documented 6/20/7/7 sp
   assert.equal(idsByBranch['body-name-unsupported'].length + idsByBranch['registry-level-mismatch'].length, 13, 'the carve-out is 13, not 6 — FACTS §18e-ii');
 });
 
-test('KNOWN, DELIBERATE SCOPE NOTE (not a defect): the function also resolves 18 records the 40-record audit did not cover — same rule, applied where the conservative side\'s kosherType is entirely absent rather than an explicit non-elevating value', () => {
+// ── claim-vs-silence: the Architect's ruling (2026-08-26) narrows the ─────
+// default to the audited 40, gating the broader (58-record) population
+// behind an explicit opt-in — absent is not evidence for the conservative
+// value, so it must not resolve silently the same way an explicit
+// non-elevating value does.
+
+test('conservative-side-silent: DEFAULT behavior for the real 18-record "elevates vs. absent" population is unresolved, not a registry-based resolution', () => {
   const places = readNoBom(resolve(ROOT, 'src/data/generated/places.osm.json'));
   const rests = readNoBom(resolve(ROOT, 'src/data/generated/restaurants.osm.json'));
   const placesById = new Map(places.map((p) => [p.id, p]));
@@ -263,7 +269,34 @@ test('KNOWN, DELIBERATE SCOPE NOTE (not a defect): the function also resolves 18
     const p = placesById.get(id), r = restsById.get(id);
     return LEVEL_ASSERTING_KOSHER_TYPES.has(p.kosherType) && !r.kosherType;
   });
-  assert.equal(absentMirrorSubset.length, 18, 'this is the broader population beyond the audited 40 — see the module header and the report to the Architect');
+  assert.equal(absentMirrorSubset.length, 18, 'this is the separate population beyond the audited 40 — the module header and the report to the Architect name it explicitly');
+
+  for (const id of absentMirrorSubset) {
+    const p = placesById.get(id), r = restsById.get(id);
+    const res = resolveKosherTypeConflict({ id, placesKosherType: p.kosherType, placesCertifiedBy: p.certifiedBy, mirrorKosherType: r.kosherType, mirrorCertifiedBy: r.certifiedBy, aliasMap });
+    assert.equal(res.winner, 'unresolved', `${id}: claim-vs-silence must not resolve by default`);
+    assert.equal(res.branch, 'conservative-side-silent');
+    assert.equal(res.held, null);
+  }
+});
+
+test('conservative-side-silent: includeSilentConservative:true reproduces the SAME registry-based outcome the pre-narrowing behavior had, on a hand-picked case', () => {
+  // places elevates on a body-name certifiedBy (real registry alias), mirror's kosherType is entirely absent.
+  const withoutFlag = resolveKosherTypeConflict({
+    id: 'w1', placesKosherType: 'mehadrin', placesCertifiedBy: 'בד"ץ בית יוסף',
+    mirrorKosherType: undefined, mirrorCertifiedBy: undefined, aliasMap,
+  });
+  assert.equal(withoutFlag.winner, 'unresolved');
+  assert.equal(withoutFlag.branch, 'conservative-side-silent');
+
+  const withFlag = resolveKosherTypeConflict({
+    id: 'w1', placesKosherType: 'mehadrin', placesCertifiedBy: 'בד"ץ בית יוסף',
+    mirrorKosherType: undefined, mirrorCertifiedBy: undefined, aliasMap, includeSilentConservative: true,
+  });
+  assert.equal(withFlag.winner, 'mirror');
+  assert.equal(withFlag.resolvedValue, undefined);
+  assert.equal(withFlag.branch, 'body-name-unsupported');
+  assert.equal(withFlag.held, 'item-2-gated', 'the opt-in path still runs through the same evidence rule, including the item-2 hold');
 });
 
 // ── resolveCertifiedByConflict ──────────────────────────────────────────────
