@@ -43,7 +43,7 @@
 import { readFileSync, writeFileSync, copyFileSync, mkdirSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { resolve, dirname, join } from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 import { recordKashrutWrite } from './shared/kashrut-write.mjs';
 import { fetchRebarStores, matchRebarStores } from './shared/rebar-feed.mjs';
 
@@ -52,8 +52,6 @@ const PLACES_PATH = resolve(root, 'src/data/generated/places.osm.json');
 const RESTAURANTS_PATH = resolve(root, 'src/data/generated/restaurants.osm.json');
 const FEED_URL = 'https://rebar.co.il/our-stores/';
 const TODAY = '2026-08-26';
-
-const APPLY = process.argv.slice(2).includes('--apply');
 
 const BASIS = {
   kind: 'human-review',
@@ -109,36 +107,65 @@ function buildNewPlace(store) {
  * re-run, which for --apply is the one-shot-script-re-applied hazard
  * (docs/AGENTS.md) — arriving disguised as "the first run failed."
  *
- * The write itself (below) is gated by an explicit `if (APPLY) {...} else`
+ * The write itself (below) is gated by an explicit `if (apply) {...} else`
  * branch, not by an early return/exit — that gate is what actually keeps a
  * dry run from writing anything, independent of any control-flow detail up
  * here. The only `return` in this function is on the fetch-failure path,
  * paired with `process.exitCode = 1` so Node still exits non-zero — just
  * without the forced, premature teardown that produced 127 instead.
+ *
+ * EXPORTED and PARAMETERIZED specifically so the write path itself can be
+ * tested — every earlier test in this file's test suite could only assert
+ * NEGATIVES (nothing written, byte-identical, no backup); none of them
+ * could prove the write path actually works, because none of them could
+ * reach it without touching the real shared dataset. With `placesPath`/
+ * `restaurantsPath`/`backupRoot`/`apply` as parameters, a test can point
+ * this function at temp files it created itself — the real dataset is
+ * never even a candidate value, so it cannot be reached even by a bug in
+ * the test, which is stronger than worktree isolation (isolated by
+ * discipline) or dry-run-only testing (isolated by never exercising the
+ * write at all).
+ *
+ * DELIBERATELY NO DEFAULTS on any of the four — not even the real paths.
+ * A default of "the real dataset" means a test that omits a parameter (a
+ * typo, a forgotten arg, a copied call site) writes production silently
+ * and looks like it worked; that puts the safety burden back on every call
+ * site, defeating the entire point of parameterizing this. The one real
+ * caller (this file's own entry-point block, below) supplies all four
+ * explicitly — production paths then exist at exactly one call site in the
+ * whole file, and a missing one fails loudly (undefined path -> readFileSync
+ * throws) instead of silently falling back to the most dangerous value
+ * available. `apply` itself is included in this for the same reason: it
+ * used to be a module-level `APPLY` read from `process.argv` and consulted
+ * at two separate sites inside this function — two sources of truth on the
+ * one flag that gates a write is the worst possible place to have one, so
+ * it is now solely a parameter, computed once, at the entry point only.
  */
-async function main() {
-  console.log(`=== Rebar import — ${APPLY ? 'APPLY' : 'DRY RUN'} ===\n`);
+export async function main({ fetchImpl, placesPath, restaurantsPath, backupRoot, apply }) {
+  console.log(`=== Rebar import — ${apply ? 'APPLY' : 'DRY RUN'} ===\n`);
 
-  const places = readNoBom(PLACES_PATH);
+  const places = readNoBom(placesPath);
   const existingRebar = places.filter((p) => typeof p.id === 'string' && p.id.startsWith('rebar-'));
   console.log(`Existing rebar-* records in places.osm.json: ${existingRebar.length}`);
 
-  // Test-only seam: when set, a spawned child process uses this instead of
-  // a real network call — the only way to give the REAL script (not just
-  // the shared module) a controlled feed while still observing its actual
-  // process exit code and actual file-write behavior, both of which only
-  // exist at the subprocess level. Absent (every real run), behavior is
-  // unchanged: fetchRebarStores() with no override uses the real network
-  // fetch, exactly as before these lines existed.
-  const testFeedText = process.env.REBAR_TEST_FETCH_TEXT;
-  const testFetchFail = process.env.REBAR_TEST_FETCH_FAIL === '1';
-  let fetchImpl;
-  if (testFetchFail) fetchImpl = async () => ({ ok: false, status: 500, text: async () => '' });
-  else if (testFeedText) fetchImpl = async () => ({ ok: true, status: 200, text: async () => testFeedText });
+  // Test-only seam (subprocess level): when set and no `fetchImpl` param was
+  // passed, a spawned child process uses this instead of a real network
+  // call — needed for tests that must observe the actual process exit code,
+  // which only exists at the subprocess level and can't be reached by
+  // calling main() directly in-process. Absent, and with no `fetchImpl`
+  // param either (every real run), behavior is unchanged: fetchRebarStores()
+  // uses the real network fetch.
+  let resolvedFetchImpl = fetchImpl;
+  if (!resolvedFetchImpl) {
+    const testFeedText = process.env.REBAR_TEST_FETCH_TEXT;
+    const testFetchFail = process.env.REBAR_TEST_FETCH_FAIL === '1';
+    if (testFetchFail) resolvedFetchImpl = async () => ({ ok: false, status: 500, text: async () => '' });
+    else if (testFeedText) resolvedFetchImpl = async () => ({ ok: true, status: 200, text: async () => testFeedText });
+  }
 
   let stores;
   try {
-    stores = fetchImpl ? await fetchRebarStores(fetchImpl) : await fetchRebarStores();
+    stores = resolvedFetchImpl ? await fetchRebarStores(resolvedFetchImpl) : await fetchRebarStores();
   } catch (err) {
     console.error(`✗ fetch failed: ${err.message}`);
     process.exitCode = 1;
@@ -197,41 +224,66 @@ async function main() {
   }
 
   // Structural gate, not a control-flow gate: the write is reachable ONLY
-  // inside this `else` branch, which requires BOTH `APPLY` true AND
+  // inside this `else` branch, which requires BOTH `apply` true AND
   // `newStores.length > 0`. This is deliberately NOT an early
   // exit/return-based guard — an earlier fix attempt used
-  // `if (!APPLY) { ...; return; }` ahead of an UNGUARDED write section
+  // `if (!apply) { ...; return; }` ahead of an UNGUARDED write section
   // (correct in isolation, since `return` does stop execution here, but
   // fragile: the write's safety depended entirely on that one early exit
   // never being edited, reordered, or removed by anyone in the future,
   // exactly the "nobody will do that again" pattern this project replaces
-  // with "something checks"). With an explicit `if (APPLY) {...}` wrapping
+  // with "something checks"). With an explicit `if (apply) {...}` wrapping
   // the write itself, reaching it without --apply is impossible by
   // construction, independent of every other branch's control flow.
-  if (!APPLY) {
-    console.log('\n(dry run — nothing written. Re-run with --apply to add the NEW records listed above.)\n');
+  if (!apply) {
+    // Conditional on newStores.length, not unconditional — a real run
+    // reported "NEW record: 0" and this line still said "Re-run with
+    // --apply to add the NEW records listed above" three lines below it.
+    // This report is the artifact a gated, irreversible action gets
+    // decided from in this project's own analyse -> dry-run -> report ->
+    // verify -> apply ordering; inviting --apply when there is nothing to
+    // add is not cosmetic in that context, even though --apply would
+    // currently write nothing regardless (newStores.length === 0 today).
+    console.log(
+      newStores.length > 0
+        ? '\n(dry run — nothing written. Re-run with --apply to add the NEW records listed above.)\n'
+        : '\n(dry run — nothing written. Nothing to add, so --apply would not write anything either.)\n',
+    );
   } else if (newStores.length === 0) {
     console.log('\nNothing to add.\n');
   } else {
     const newPlaces = newStores.map(buildNewPlace);
 
-    const backupDir = join(root, 'data-backups', 'import-rebar');
+    const backupDir = join(backupRoot, 'data-backups', 'import-rebar');
     mkdirSync(backupDir, { recursive: true });
     const stamp = new Date().toISOString().replace(/[:.]/g, '-');
-    copyFileSync(PLACES_PATH, join(backupDir, `places.osm.${stamp}.json`));
-    copyFileSync(RESTAURANTS_PATH, join(backupDir, `restaurants.osm.${stamp}.json`));
+    copyFileSync(placesPath, join(backupDir, `places.osm.${stamp}.json`));
+    copyFileSync(restaurantsPath, join(backupDir, `restaurants.osm.${stamp}.json`));
 
     const placesOut = [...places, ...newPlaces];
-    writeNoBom(PLACES_PATH, placesOut);
+    writeNoBom(placesPath, placesOut);
 
-    const restaurants = readNoBom(RESTAURANTS_PATH);
+    const restaurants = readNoBom(restaurantsPath);
     const existingRestaurantIds = new Set(restaurants.map((r) => r.id));
     const newForRestaurants = newPlaces.filter((p) => !existingRestaurantIds.has(p.id));
-    writeNoBom(RESTAURANTS_PATH, [...restaurants, ...newForRestaurants]);
+    writeNoBom(restaurantsPath, [...restaurants, ...newForRestaurants]);
 
     console.log(`\n✓ added ${newPlaces.length} new record(s) to places.osm.json, ${newForRestaurants.length} to restaurants.osm.json.`);
     console.log(`  backup: ${backupDir}\n`);
   }
 }
 
-await main();
+// Self-executes only when this file is the entry module Node was invoked
+// with — not on import (e.g. by a test importing `main` directly). Not an
+// `endsWith` on argv[1]: that breaks on symlinks and Windows path-case
+// differences, and getting it wrong means importing this module runs it —
+// precisely what this guard exists to prevent, and the test file is
+// exactly what imports it.
+if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+  await main({
+    placesPath: PLACES_PATH,
+    restaurantsPath: RESTAURANTS_PATH,
+    backupRoot: root,
+    apply: process.argv.slice(2).includes('--apply'),
+  });
+}
