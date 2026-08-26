@@ -98,96 +98,140 @@ function buildNewPlace(store) {
   return place;
 }
 
-console.log(`=== Rebar import — ${APPLY ? 'APPLY' : 'DRY RUN'} ===\n`);
+/**
+ * Wrapped in a function (rather than flat top-level script code) instead of
+ * using `process.exit()` for control flow. Found necessary on a real run:
+ * `process.exit()` tears the process down immediately, before the fetch's
+ * keep-alive socket has finished closing — libuv then aborts with
+ * "Assertion failed: !(handle->flags & UV_HANDLE_CLOSING)" and the process
+ * exits 127, on a completely successful run. A non-zero exit on success is
+ * dangerous specifically in this repo: it reads as failure, inviting a
+ * re-run, which for --apply is the one-shot-script-re-applied hazard
+ * (docs/AGENTS.md) — arriving disguised as "the first run failed."
+ *
+ * The write itself (below) is gated by an explicit `if (APPLY) {...} else`
+ * branch, not by an early return/exit — that gate is what actually keeps a
+ * dry run from writing anything, independent of any control-flow detail up
+ * here. The only `return` in this function is on the fetch-failure path,
+ * paired with `process.exitCode = 1` so Node still exits non-zero — just
+ * without the forced, premature teardown that produced 127 instead.
+ */
+async function main() {
+  console.log(`=== Rebar import — ${APPLY ? 'APPLY' : 'DRY RUN'} ===\n`);
 
-const places = readNoBom(PLACES_PATH);
-const existingRebar = places.filter((p) => typeof p.id === 'string' && p.id.startsWith('rebar-'));
-console.log(`Existing rebar-* records in places.osm.json: ${existingRebar.length}`);
+  const places = readNoBom(PLACES_PATH);
+  const existingRebar = places.filter((p) => typeof p.id === 'string' && p.id.startsWith('rebar-'));
+  console.log(`Existing rebar-* records in places.osm.json: ${existingRebar.length}`);
 
-let stores;
-try {
-  stores = await fetchRebarStores();
-} catch (err) {
-  console.error(`✗ fetch failed: ${err.message}`);
-  process.exit(1);
-}
-console.log(`Feed entries parsed: ${stores.length}\n`);
+  // Test-only seam: when set, a spawned child process uses this instead of
+  // a real network call — the only way to give the REAL script (not just
+  // the shared module) a controlled feed while still observing its actual
+  // process exit code and actual file-write behavior, both of which only
+  // exist at the subprocess level. Absent (every real run), behavior is
+  // unchanged: fetchRebarStores() with no override uses the real network
+  // fetch, exactly as before these lines existed.
+  const testFeedText = process.env.REBAR_TEST_FETCH_TEXT;
+  const testFetchFail = process.env.REBAR_TEST_FETCH_FAIL === '1';
+  let fetchImpl;
+  if (testFetchFail) fetchImpl = async () => ({ ok: false, status: 500, text: async () => '' });
+  else if (testFeedText) fetchImpl = async () => ({ ok: true, status: 200, text: async () => testFeedText });
 
-const { confirmed, ambiguousRecords, noMatchRecords, newStores } = matchRebarStores(stores, existingRebar);
+  let stores;
+  try {
+    stores = fetchImpl ? await fetchRebarStores(fetchImpl) : await fetchRebarStores();
+  } catch (err) {
+    console.error(`✗ fetch failed: ${err.message}`);
+    process.exitCode = 1;
+    return;
+  }
+  console.log(`Feed entries parsed: ${stores.length}\n`);
 
-const confirmedTrue = confirmed.filter((c) => c.store.kosher === true);
-const confirmedFalse = confirmed.filter((c) => c.store.kosher === false);
-const confirmedOther = confirmed.filter((c) => c.store.kosher !== true && c.store.kosher !== false);
+  const { confirmed, ambiguousRecords, noMatchRecords, newStores } = matchRebarStores(stores, existingRebar);
 
-const kosherFalseCount = stores.filter((s) => s.kosher === false).length;
-const kosherNullCount = stores.filter((s) => s.kosher !== true && s.kosher !== false).length;
+  const confirmedTrue = confirmed.filter((c) => c.store.kosher === true);
+  const confirmedFalse = confirmed.filter((c) => c.store.kosher === false);
+  const confirmedOther = confirmed.filter((c) => c.store.kosher !== true && c.store.kosher !== false);
 
-console.log('--- Summary ---');
-console.log(`  confirmed match, feed says kosher:true                 : ${confirmedTrue.length}`);
-console.log(`  confirmed match, feed says kosher:false — STOP, do not write, do not delete: ${confirmedFalse.length}`);
-console.log(`  confirmed match, feed kosher neither true/false        : ${confirmedOther.length}`);
-console.log(`  AMBIGUOUS — 2+ plausible candidates, never auto-resolved: ${ambiguousRecords.length}`);
-console.log(`  existing records with NO feed candidate at all          : ${noMatchRecords.length}`);
-console.log(`  kosher:true, zero candidates -> NEW record              : ${newStores.length}`);
-console.log(`  (feed-wide: ${kosherFalseCount} kosher:false, ${kosherNullCount} kosher neither true/false — most have no candidate relationship to our 55 and aren't listed below)`);
+  const kosherFalseCount = stores.filter((s) => s.kosher === false).length;
+  const kosherNullCount = stores.filter((s) => s.kosher !== true && s.kosher !== false).length;
 
-if (confirmedFalse.length) {
-  console.log('\n--- CONFIRMED MATCH BUT FEED SAYS kosher:false — owner decision, not ours ---');
-  for (const { record, store } of confirmedFalse) {
-    console.log(`  ${record.id} (${record.name}) <-> "${store.name}" | ${store.address}, ${store.city}`);
+  console.log('--- Summary ---');
+  console.log(`  confirmed match, feed says kosher:true                 : ${confirmedTrue.length}`);
+  console.log(`  confirmed match, feed says kosher:false — STOP, do not write, do not delete: ${confirmedFalse.length}`);
+  console.log(`  confirmed match, feed kosher neither true/false        : ${confirmedOther.length}`);
+  console.log(`  AMBIGUOUS — 2+ plausible candidates, never auto-resolved: ${ambiguousRecords.length}`);
+  console.log(`  existing records with NO feed candidate at all          : ${noMatchRecords.length}`);
+  console.log(`  kosher:true, zero candidates -> NEW record              : ${newStores.length}`);
+  console.log(`  (feed-wide: ${kosherFalseCount} kosher:false, ${kosherNullCount} kosher neither true/false — most have no candidate relationship to our 55 and aren't listed below)`);
+
+  if (confirmedFalse.length) {
+    console.log('\n--- CONFIRMED MATCH BUT FEED SAYS kosher:false — owner decision, not ours ---');
+    for (const { record, store } of confirmedFalse) {
+      console.log(`  ${record.id} (${record.name}) <-> "${store.name}" | ${store.address}, ${store.city}`);
+    }
+  }
+
+  if (ambiguousRecords.length) {
+    console.log('\n--- AMBIGUOUS existing records (2+ candidates — reported, never auto-resolved) ---');
+    for (const { record, candidates } of ambiguousRecords) {
+      console.log(`  ${record.id} (${record.name}) | ${record.address}`);
+      for (const c of candidates) console.log(`      candidate: "${c.name}" | ${c.address}, ${c.city} | kosher=${JSON.stringify(c.kosher)}`);
+    }
+  }
+
+  if (noMatchRecords.length) {
+    console.log('\n--- Existing rebar-* records with NO feed candidate at all (closed? renamed? investigate) ---');
+    for (const r of noMatchRecords) console.log(`  ${r.id}: ${r.name} | ${r.address}`);
+  }
+
+  if (newStores.length) {
+    console.log('\n--- NEW records (kosher:true, zero candidate existing records) ---');
+    for (const s of newStores) console.log(`  ${makeId(s.name)}: ${s.name} | ${s.address}, ${s.city} | (${s.lat}, ${s.lng})`);
+  }
+
+  if (confirmedOther.length) {
+    console.log('\n--- CONFIRMED MATCH, feed kosher field ambiguous (neither true nor false) ---');
+    for (const { record, store } of confirmedOther) {
+      console.log(`  ${record.id} (${record.name}) <-> "${store.name}": kosher=${JSON.stringify(store.kosher)}`);
+    }
+  }
+
+  // Structural gate, not a control-flow gate: the write is reachable ONLY
+  // inside this `else` branch, which requires BOTH `APPLY` true AND
+  // `newStores.length > 0`. This is deliberately NOT an early
+  // exit/return-based guard — an earlier fix attempt used
+  // `if (!APPLY) { ...; return; }` ahead of an UNGUARDED write section
+  // (correct in isolation, since `return` does stop execution here, but
+  // fragile: the write's safety depended entirely on that one early exit
+  // never being edited, reordered, or removed by anyone in the future,
+  // exactly the "nobody will do that again" pattern this project replaces
+  // with "something checks"). With an explicit `if (APPLY) {...}` wrapping
+  // the write itself, reaching it without --apply is impossible by
+  // construction, independent of every other branch's control flow.
+  if (!APPLY) {
+    console.log('\n(dry run — nothing written. Re-run with --apply to add the NEW records listed above.)\n');
+  } else if (newStores.length === 0) {
+    console.log('\nNothing to add.\n');
+  } else {
+    const newPlaces = newStores.map(buildNewPlace);
+
+    const backupDir = join(root, 'data-backups', 'import-rebar');
+    mkdirSync(backupDir, { recursive: true });
+    const stamp = new Date().toISOString().replace(/[:.]/g, '-');
+    copyFileSync(PLACES_PATH, join(backupDir, `places.osm.${stamp}.json`));
+    copyFileSync(RESTAURANTS_PATH, join(backupDir, `restaurants.osm.${stamp}.json`));
+
+    const placesOut = [...places, ...newPlaces];
+    writeNoBom(PLACES_PATH, placesOut);
+
+    const restaurants = readNoBom(RESTAURANTS_PATH);
+    const existingRestaurantIds = new Set(restaurants.map((r) => r.id));
+    const newForRestaurants = newPlaces.filter((p) => !existingRestaurantIds.has(p.id));
+    writeNoBom(RESTAURANTS_PATH, [...restaurants, ...newForRestaurants]);
+
+    console.log(`\n✓ added ${newPlaces.length} new record(s) to places.osm.json, ${newForRestaurants.length} to restaurants.osm.json.`);
+    console.log(`  backup: ${backupDir}\n`);
   }
 }
 
-if (ambiguousRecords.length) {
-  console.log('\n--- AMBIGUOUS existing records (2+ candidates — reported, never auto-resolved) ---');
-  for (const { record, candidates } of ambiguousRecords) {
-    console.log(`  ${record.id} (${record.name}) | ${record.address}`);
-    for (const c of candidates) console.log(`      candidate: "${c.name}" | ${c.address}, ${c.city} | kosher=${JSON.stringify(c.kosher)}`);
-  }
-}
-
-if (noMatchRecords.length) {
-  console.log('\n--- Existing rebar-* records with NO feed candidate at all (closed? renamed? investigate) ---');
-  for (const r of noMatchRecords) console.log(`  ${r.id}: ${r.name} | ${r.address}`);
-}
-
-if (newStores.length) {
-  console.log('\n--- NEW records (kosher:true, zero candidate existing records) ---');
-  for (const s of newStores) console.log(`  ${makeId(s.name)}: ${s.name} | ${s.address}, ${s.city} | (${s.lat}, ${s.lng})`);
-}
-
-if (confirmedOther.length) {
-  console.log('\n--- CONFIRMED MATCH, feed kosher field ambiguous (neither true nor false) ---');
-  for (const { record, store } of confirmedOther) {
-    console.log(`  ${record.id} (${record.name}) <-> "${store.name}": kosher=${JSON.stringify(store.kosher)}`);
-  }
-}
-
-if (!APPLY) {
-  console.log('\n(dry run — nothing written. Re-run with --apply to add the NEW records listed above.)\n');
-  process.exit(0);
-}
-
-if (newStores.length === 0) {
-  console.log('\nNothing to add.\n');
-  process.exit(0);
-}
-
-const newPlaces = newStores.map(buildNewPlace);
-
-const backupDir = join(root, 'data-backups', 'import-rebar');
-mkdirSync(backupDir, { recursive: true });
-const stamp = new Date().toISOString().replace(/[:.]/g, '-');
-copyFileSync(PLACES_PATH, join(backupDir, `places.osm.${stamp}.json`));
-copyFileSync(RESTAURANTS_PATH, join(backupDir, `restaurants.osm.${stamp}.json`));
-
-const placesOut = [...places, ...newPlaces];
-writeNoBom(PLACES_PATH, placesOut);
-
-const restaurants = readNoBom(RESTAURANTS_PATH);
-const existingRestaurantIds = new Set(restaurants.map((r) => r.id));
-const newForRestaurants = newPlaces.filter((p) => !existingRestaurantIds.has(p.id));
-writeNoBom(RESTAURANTS_PATH, [...restaurants, ...newForRestaurants]);
-
-console.log(`\n✓ added ${newPlaces.length} new record(s) to places.osm.json, ${newForRestaurants.length} to restaurants.osm.json.`);
-console.log(`  backup: ${backupDir}\n`);
+await main();
