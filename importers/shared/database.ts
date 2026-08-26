@@ -56,6 +56,16 @@ const APP_TYPES: ImportType[] = ['synagogue', 'restaurant', 'fast_food', 'cafe',
  */
 const OPT_IN_ENV = 'KAROV_ALLOW_DESTRUCTIVE_REBUILD';
 
+/**
+ * Separate opt-in for `writeCategoryGuarded()` below. Kept distinct from
+ * OPT_IN_ENV on purpose: these are two independently-destructive operations
+ * (multi-type app-dataset reconstruction vs. a single category file's own
+ * full overwrite) on different files. Reusing one flag would let opting into
+ * either silently unlock both.
+ */
+const CATEGORY_OVERWRITE_OPT_IN_ENV = 'KAROV_ALLOW_DESTRUCTIVE_CATEGORY_OVERWRITE';
+const CATEGORY_BACKUP_DIR = join(HERE, '..', '..', 'data-backups', 'category-overwrite-guard');
+
 /** A record shaped like the app's Place, as stored in places.osm.json. */
 type StoredPlace = Record<string, unknown> & { id?: unknown; type?: unknown };
 
@@ -270,6 +280,160 @@ export function rebuildAppDataset(): RebuildReport {
   const { records, cities } = buildCandidate();
   writeJson('places.osm.json', records.map(toAppPlace));
   writeJson('cities.osm.json', cities);
+
+  return { ...report, written: true };
+}
+
+/**
+ * ─────────────────────────────────────────────────────────────────────────
+ * Guard for a DIFFERENT destructive shape than the one above: a category
+ * file (e.g. restaurants.osm.json) that a live importer fully overwrites via
+ * `writeJson()`, while 80+ other one-shot scripts write the SAME file
+ * additively (read, append, write back). The importer's candidate is only
+ * ever what its own source currently returns (e.g. a fresh OSM Overpass
+ * query) — it structurally cannot reproduce records any other script added.
+ * A plain overwrite therefore erases them with no merge and no warning.
+ *
+ * This does not generalize from `planAppDatasetRebuild()` above: that
+ * function reconstructs the multi-type places.osm.json from several
+ * category files and its guards (dropped types, stripped fields) are
+ * shaped for that recombination. This is one file compared against its own
+ * prior content — the shape (compute candidate → diff → guard → explicit
+ * opt-in → backup → write) is reused; the guard set is not, because the
+ * failure mode is not.
+ * ─────────────────────────────────────────────────────────────────────────
+ */
+
+export interface CategoryOverwriteGuard {
+  name: string;
+  passed: boolean;
+  detail: string;
+}
+
+/** Full, read-only account of what overwriting a category file WOULD do. */
+export interface CategoryOverwriteReport {
+  file: string;
+  path: string;
+  live: number;
+  candidate: number;
+  /** candidate − live. Negative means records would be destroyed. */
+  recordDelta: number;
+  /** Live ids absent from the candidate. */
+  idsDropped: number;
+  /** Live records with source !== 'osm' (i.e. not reproducible by this importer) absent from the candidate. */
+  manualRecordsDropped: number;
+  guards: CategoryOverwriteGuard[];
+  blocked: boolean;
+  written: boolean;
+}
+
+/**
+ * Read-only: what would overwriting `file` with `candidate` do to its live
+ * content right now? Never writes.
+ */
+export function planCategoryOverwrite(file: string, candidate: StoredPlace[]): CategoryOverwriteReport {
+  const live = readJson<StoredPlace[]>(file, []);
+
+  const liveIds = new Set(live.map((p) => String(p.id)));
+  const candIds = new Set(candidate.map((p) => String(p.id)));
+  const idsDropped = [...liveIds].filter((id) => !candIds.has(id)).length;
+
+  const liveNonOsm = live.filter((p) => String(p.source ?? '') !== 'osm');
+  const manualRecordsDropped = liveNonOsm.filter((p) => !candIds.has(String(p.id))).length;
+
+  const ratio = live.length === 0 ? 1 : candidate.length / live.length;
+
+  const guards: CategoryOverwriteGuard[] = [
+    {
+      name: 'volume',
+      passed: ratio >= 0.95,
+      detail: `candidate ${candidate.length} vs live ${live.length} (${(ratio * 100).toFixed(1)}% — floor is 95%)`,
+    },
+    {
+      name: 'no-dropped-ids',
+      passed: idsDropped === 0,
+      detail: idsDropped === 0 ? 'no live id disappears' : `${idsDropped} live ids absent from the candidate`,
+    },
+    {
+      name: 'no-dropped-manual-records',
+      passed: manualRecordsDropped === 0,
+      detail:
+        manualRecordsDropped === 0
+          ? 'every non-osm-sourced live record survives'
+          : `${manualRecordsDropped} of ${liveNonOsm.length} non-osm-sourced live records would be erased`,
+    },
+  ];
+
+  return {
+    file,
+    path: join(GENERATED_DIR, file),
+    live: live.length,
+    candidate: candidate.length,
+    recordDelta: candidate.length - live.length,
+    idsDropped,
+    manualRecordsDropped,
+    guards,
+    blocked: guards.some((g) => !g.passed),
+    written: false,
+  };
+}
+
+/** Human-readable rendering of a category-overwrite report. */
+export function formatCategoryOverwriteReport(r: CategoryOverwriteReport): string {
+  const lines = [
+    `file      : ${r.file}`,
+    `live      : ${r.live} records`,
+    `candidate : ${r.candidate} records`,
+    `delta     : ${r.recordDelta >= 0 ? '+' : ''}${r.recordDelta} records`,
+    '',
+    'guards:',
+    ...r.guards.map((g) => `  ${g.passed ? 'PASS' : 'FAIL'}  ${g.name.padEnd(24)} ${g.detail}`),
+  ];
+  return lines.join('\n');
+}
+
+/**
+ * Guarded replacement for `writeJson()` when `file` is also written
+ * additively by other importers/patch scripts. Refuses to overwrite unless
+ * the caller has explicitly opted in via
+ * `KAROV_ALLOW_DESTRUCTIVE_CATEGORY_OVERWRITE=1` AND every guard in
+ * `planCategoryOverwrite()` passes; backs up the live file first even then.
+ *
+ * Throws (rather than writing quietly, or silently skipping the write) on
+ * refusal, so a caller that expects to have refreshed the file cannot carry
+ * on believing it did.
+ */
+export function writeCategoryGuarded(file: string, candidate: StoredPlace[]): CategoryOverwriteReport {
+  const report = planCategoryOverwrite(file, candidate);
+
+  if (process.env[CATEGORY_OVERWRITE_OPT_IN_ENV] !== '1') {
+    throw new Error(
+      `writeCategoryGuarded('${file}') is disabled — it would fully overwrite a live category file.\n\n` +
+        formatCategoryOverwriteReport(report) +
+        `\n\nThis file is also written additively by other importers/patch scripts; a full overwrite ` +
+        `here erases anything they added that this run's own source does not reproduce.\n` +
+        `Read-only report: planCategoryOverwrite('${file}', candidate).\n` +
+        `To override anyway: ${CATEGORY_OVERWRITE_OPT_IN_ENV}=1 — and every guard above must still pass.`,
+    );
+  }
+
+  if (report.blocked) {
+    throw new Error(
+      `writeCategoryGuarded('${file}') blocked by ${report.guards.filter((g) => !g.passed).length} failing guard(s).\n\n` +
+        formatCategoryOverwriteReport(report) +
+        '\n\nThe opt-in env var does not bypass guards. Merge the candidate with the live file\'s ' +
+        'non-osm-sourced records instead of overwriting, or fix the guard that is failing.',
+    );
+  }
+
+  // Guards passed and the caller opted in: back up, then write.
+  const stamp = new Date().toISOString().replace(/[:.]/g, '-');
+  const dest = join(CATEGORY_BACKUP_DIR, stamp);
+  mkdirSync(dest, { recursive: true });
+  const src = join(GENERATED_DIR, file);
+  if (existsSync(src)) copyFileSync(src, join(dest, file));
+
+  writeJson(file, candidate);
 
   return { ...report, written: true };
 }

@@ -2,13 +2,24 @@
  * Kosher-restaurant importer — OpenStreetMap (Overpass), all of Israel.
  *
  * Run:  npm run import:restaurants  (or: node importers/kosher-restaurants/importer.ts)
- * Out:  src/data/generated/restaurants.osm.json  (+ rebuilds the app dataset)
+ * Out:  src/data/generated/restaurants.osm.json only — the live places.osm.json
+ *       dataset is never touched by this importer (see the isMain block below).
+ *       The category-file write itself is guarded: restaurants.osm.json is also
+ *       written additively by 80+ one-shot scripts, so a plain overwrite from
+ *       this run's own OSM query would erase whatever they added. See
+ *       writeCategoryGuarded() in ../shared/database.ts.
  *
  * Source notes + the open coverage gap live in this folder's README.md.
  */
 import type { NormalizedPlace } from '../shared/types.ts';
 import { dedupeById, fetchLocalities, fetchOverpass, fillRate, isMain } from '../shared/utils.ts';
-import { CATEGORY_FILES, formatRebuildReport, planAppDatasetRebuild, writeJson } from '../shared/database.ts';
+import {
+  CATEGORY_FILES,
+  formatCategoryOverwriteReport,
+  formatRebuildReport,
+  planAppDatasetRebuild,
+  writeCategoryGuarded,
+} from '../shared/database.ts';
 import { transformRestaurant } from './transform.ts';
 import { validateRestaurants } from './validate.ts';
 
@@ -34,11 +45,17 @@ export async function importRestaurants(): Promise<NormalizedPlace[]> {
   );
 
   const { valid, rejected } = validateRestaurants(normalized);
-  const path = writeJson(CATEGORY_FILES.restaurant, valid);
 
   console.log(`\nKosher restaurants: ${valid.length} valid, ${rejected.length} rejected`);
   console.log(`Field fill: name ${fillRate(valid, 'name')}% · address ${fillRate(valid, 'address')}% · phone ${fillRate(valid, 'phone')}% · hours ${fillRate(valid, 'openingHours')}%`);
-  console.log(`Wrote → ${path}`);
+
+  // restaurants.osm.json is also written additively by 80+ one-shot
+  // scripts; a plain overwrite here would erase every record this run's
+  // own OSM query doesn't reproduce. See writeCategoryGuarded()'s doc
+  // comment in ../shared/database.ts.
+  const report = writeCategoryGuarded(CATEGORY_FILES.restaurant, valid);
+  console.log(`\n${formatCategoryOverwriteReport(report)}`);
+  console.log(`\nWrote → ${report.path}`);
   return valid;
 }
 
