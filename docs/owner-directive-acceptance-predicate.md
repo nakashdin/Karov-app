@@ -184,3 +184,95 @@ authorised they apply with nothing to remember.
 and sample-check its application. If the thirteen are held, my sample-check must cover **held** records too —
 verifying that the resolution *would* be correct, not only that applied ones are. A held record is an
 unverified record unless someone checks it.
+
+---
+
+# Part 2 — criteria for the evidence-re-verification directive
+
+**Reviewer-authored, same caveat as the header.** Written before the work exists. HEAD `14cb928`.
+
+## 6. Wrong-business certificate association
+
+**P6.1 — URL UNIQUENESS PROVES NOTHING HERE, SO DON'T LET IT BE CITED.** Measured: 180 records carry a
+`kosherCertUrl`, across **180 distinct URLs, zero shared**. That is already clean and it is *not evidence*
+about this risk, because the association that can go wrong is between a record and an **entry inside** a
+bundled document — invisible at the URL level. Any report offering URL uniqueness as reassurance has answered
+a different question.
+
+**P6.2 — THE EXTRACTOR MUST RECORD WHICH ENTRY IT READ.** Not the URL: a within-document locator (page, line,
+and the business-name string *as it appeared in the document*). Without it the association is unfalsifiable —
+nobody can ever check whether the date came from the right row, including us.
+
+**P6.3 — MATCH ON AN IDENTIFIER, NEVER ON POSITION OR PROXIMITY.** "The date nearest the name" or "the Nth
+entry" silently reassigns every date when a layout changes. **Adversarial test I will run: permute the entry
+order in a bundle and require every extracted date to be unchanged.** If order matters, the association is
+positional and will break without warning.
+
+**P6.4 — AN UNMATCHED BUSINESS MUST NEVER INHERIT THE BUNDLE'S DATE.** The tempting fallback — "this business
+is in the document, use the document's date" — is precisely how one business's certificate lands on another.
+Unmatched must yield AMBIGUOUS/UNMATCHED and write nothing.
+
+**P6.5 — I WILL ATTACK IT WITH THE DATASET'S OWN NEAR-COLLISIONS.** This data is unusually hostile: multiple
+Aroma branches, many humus-eli branches, and the pair that already defeated a matcher this week. I will feed
+similar-named businesses through the extractor and require no cross-assignment.
+
+## 7. Incorrect DOWNGRADE of supported classifications
+
+The new risk direction, and the machinery built over the past week is a downgrade engine that was never
+designed to be conservative in this direction.
+
+**P7.1 — A DOWNGRADE REQUIRES POSITIVE EVIDENCE OF ABSENCE, NOT ABSENCE OF EVIDENCE IN THE FIELDS WE INDEXED.
+Non-waivable.** `levelAssertedOverNamedBody` flags a record because `certifiedBy` names a body and states no
+level. If that business's own website states a level, the flag is a **false positive** and the downgrade is
+the error. 302 of the 358 have a website and nobody has read one.
+
+**P7.2 — THE DOWNGRADE SET MUST BE PARTITIONED, AND (c) REPORTED SEPARATELY.**
+
+| | |
+|---|---|
+| (a) sources read, no level stated | downgrade justified |
+| (b) sources read, level stated | **not** downgraded; evidence recorded with provenance |
+| (c) sources **not read** | **held** — not downgraded, and counted as its own number |
+
+Folding (c) into (a) is the whole failure. A record whose website has never been opened cannot be downgraded
+on the grounds that a *different* field is silent.
+
+**P7.3 — THIS IS THE FOURTH INSTANCE OF ONE ERROR AND I WILL NAME IT AS SUCH.** *The alias didn't resolve, so
+no body was named.* *The grep returned zero, so the string isn't there.* *It's absent from our artifact, so
+it's absent from the world.* A downgrade on unread sources is the same move, committed by the machinery built
+to prevent the first three.
+
+## 8. City filtering — exhaustive, and the obvious test is the trap
+
+**P8.1 — CLOSURE (exhaustive, mechanical, and it will PASS while certifying nothing).** For every record with
+`cityId` C, `filterPlaces(all, {cityId: C})` must contain it. Group by `cityId` rather than calling the filter
+per record; it is O(n) and needs no sampling. **But this passes today** — the Golda records *are* reachable
+through `tel-aviv`. A test that is exhaustive over the wrong property is still a §17 face.
+
+**P8.2 — REACHABILITY, which is the property the owner actually stated.** Every `cityId` appearing on a record
+must be a city a **user can select**: present in the city list, and not a duplicate or alias of another entry.
+This is what catches the 13 Latin duplicates and the junction entries.
+
+**P8.3 — NO TWO DISTINCT cityIds MAY DENOTE THE SAME LOCALITY.** Normalise for transliteration, gershayim,
+final letters and junction/neighbourhood prefixes, then assert zero collisions.
+
+Passing P8.1 alone must not be reported as "city filtering verified."
+
+## 9. The Tzohar de-supervision list
+
+**P9.1 — A DATELESS WITHDRAWAL LIST IS A TRIGGER, NOT A VERDICT.** It evidences that supervision was withdrawn
+*at some time*, not that a business is *currently* uncertified. Acting on it as current is the exact mirror of
+treating an expired certificate as current, and `place.ts` already rules on the symmetric case: absence of a
+date "means Karov doesn't have the certificate for this branch, NOT that the business lost its certification."
+The list justifies moving a record to needs-re-verification and querying the active source. It does not
+justify asserting a business is uncertified.
+
+**P9.2 — "NO MATCH" IS NOT "NOT IN OUR DATA" WHILE THE MATCHER HAS A MEASURED BLIND SPOT.** A street-number
+matcher cannot see the **33 of 192** Tzohar-sourced records whose address contains no digit (17%), nor the
+**403 of 2,213** food records in the same state. 10-of-12 unmatched must be reported as *unmatched by this
+method*, with the blind spot's size beside it.
+
+**P9.3 — SOME MATCHES ARE UNVERIFIABLE FROM OUR DATA, AND THAT MUST BE SAID.** `tzohar-food-0215` and
+`tzohar-food-0049` hold **no phone and no website**; 0049 has no certificate URL either. Name and address are
+everything we have. These are not *unverified pending work* — no internal work can resolve them, and saying
+so is the honest report.
