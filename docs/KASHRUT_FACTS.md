@@ -879,13 +879,56 @@ prior content, id by id** — it holds the exact prior record and can diff per s
 artifact of the weaker *situation*, not a judgement about this one. **A guard copied between two call sites
 inherits the limits of whichever site it was written for.**
 
-**Design rule adopted: guard what is never legitimate, report what may be.** An OSM re-fetch legitimately
-drops a `phone` tag and nudges coordinates; it structurally *cannot* carry kashrut evidence. So kashrut-field
-movement is a hard block with zero tolerance, while general field loss is reported and not blocking. This is
-not leniency: because the opt-in env var deliberately **cannot** bypass a failing guard, an over-strict guard
-does not make the importer safe — it makes it unusable, and the next person deletes the guard.
+### 18b-i. The replacement guard design was unsatisfiable — and the reason generalises
 
-### 18c. The validator cannot see this file
+The fix proposed for the above was: *guard what is never legitimate, report what may be* — zero tolerance on
+the 7 kashrut fields (an Overpass fetch structurally cannot carry kashrut evidence, so any movement is a
+regression), everything else reported and non-blocking.
+
+**The premise is true and the conclusion does not follow.** `importer.ts:29` uses `diet:kosher` as a *filter*;
+the candidate carries no kashrut field at all. But:
+
+| | |
+|---|---|
+| live | 1,337 |
+| `source === 'osm'` — the only records a fresh fetch can reproduce | 283 |
+| **…of those 283, carrying a kashrut field** | **58** (`kosherType` 58, `certifiedBy` 54, other five 0) |
+
+Those 58 are OSM-sourced records that patch scripts later annotated. A faithful fetch reproduces their ids
+*without* those fields, so **58 survivors lose kashrut fields on every legitimate run.** Zero tolerance blocks
+100% of runs, including the correct one.
+
+**The general form, which is the part worth keeping:** *"the candidate can never carry field X"* and *"no
+survivor may lose field X"* are **jointly unsatisfiable the moment any reproducible record carries X.** The
+strictness is not a judgement that can be tuned down — it is forced by the operation. And relaxing it to
+"may not be downgraded, may be lost" guards nothing, because losing `certifiedBy` on those 54 *is* the damage.
+
+### 18b-ii. The operation is wrong, not the guard
+
+Every guard in this line of work was an attempt to make an overwrite safe on a file holding 1,054
+unreproducible records and 1,112 kashrut claims the overwrite structurally cannot reproduce. **That is not a
+guard gap; it is the wrong operation.** `writeCategoryGuarded` should **merge**, not overwrite:
+
+| Case | Rule |
+|---|---|
+| id in candidate only | add |
+| id in live only | **keep untouched** — required by additive-only; a closure vanishing from OSM must never delete a record |
+| id in both, `live.source === 'osm'` | candidate supplies only what OSM has authority over (`name`, `location`, `address`, `openingHours`, `phone`, `tags`); live supplies everything else |
+| id in both, `live.source !== 'osm'` | keep live **entirely**, log the collision — a hand-curated name may have been deliberately corrected, and OSM has no authority over it |
+
+Under merge the tradeoff dissolves: the 1,054 survive by construction rather than by a guard catching their
+absence, the 58 keep their kashrut fields because the merge never had authority to remove them, and
+**zero tolerance on the 7 fields becomes free** — maximally strict at zero cost, never blocking a correct run.
+
+**The name was the tell.** `writeCategoryGuarded` guards a *write*. The safe thing was never a guarded write;
+it was a different write. A guard added to the wrong operation is paying interest on the wrong loan.
+
+**Why this is not urgent despite being correct:** the destructive path is *already contained* — the function
+throws without the opt-in and throws again on failing guards, which fail today. Nothing can reach it. What is
+left behind is a **booby-trapped tool that throws on correct input** — the exact shape someone eventually
+"fixes" by deleting the guard. Decay-urgent, not data-urgent. Contrast §18c, which *is* live exposure.
+
+### 18c. The validator cannot see this file — the one live exposure here
 
 `scripts/validate-data.mjs` reads **only** `places.osm.json` and `cities.osm.json` (verified by extracting
 every `readFileSync` target). The `certifiedBy` append-only HARD failure, the `lastVerifiedAt` backdate HARD
@@ -894,6 +937,19 @@ failure and `levelAssertedOverNamedBody` all skip `restaurants.osm.json` entirel
 We built a hard guard for the `lastVerifiedAt`-backward signature and **it cannot see the file where that
 regression is most likely.** `f2b15d5` closes erasure; it does not make this file protected, and the
 difference matters for how it is described.
+
+**This is the live hole** — 86 scripts write this file, one reads it, nothing checks it — as against §18b-ii's
+overwrite, which is already contained.
+
+**"Covering it would fail immediately on live data, so it belongs to an owner decision" was a rationalisation,
+and the repo's own precedent refutes it.** `scripts/data-quality-baseline.json` carries
+`"levelAssertedOverNamedBody": 343` — a check shipped against 343 live violations by baselining it at 343, so
+it goes red only on *growth*. Identical situation, solved two commits earlier in the same file. **Baseline,
+don't defer.** The asymmetry decides it: extending costs a few lines that might later be deleted; not
+extending leaves the file unguarded through a decision window of unknown length.
+
+**Generalisable:** when a check would fail immediately on live data, that is an argument for a **ratchet**,
+not for no coverage. The honest form of "it would go red today" produces a baseline, not a deferral.
 
 ### 18d. 30 fabricated `certificateValidUntil` values
 
@@ -918,7 +974,33 @@ a real certificate document (see `kosherCertUrl`) — never inferred, extrapolat
 branch."* Zero of the 30 have a `kosherCertUrl`. **Every record in that file carrying the field breaks the
 rule the field documents.**
 
-### 18e. Note for whoever touches these guards next
+### 18e. It is not a mirror — it is a partially-diverged parallel dataset
+
+Measured against `places.osm.json`:
+
+| | |
+|---|---|
+| mirror records | 1,337 |
+| present in `places.osm.json` | 953 |
+| **absent from `places.osm.json`** | **384** (osm 227 / manual 157) |
+| …of those 384, **carrying kashrut claims** | **205** |
+
+For the 953 shared records — fields the mirror has and `places.osm.json` **lacks**:
+`certifiedBy` 36 · `certificateValidUntil` 29 · `kosherType` 4.
+Fields where the two files **disagree**: **`kosherType` 150 · `certifiedBy` 101.**
+
+**Three consequences:**
+
+1. **"Retire" as a bare option is off the table.** Retiring loses 384 records including 205 kashrut claims —
+   a direct violation of additive-only. The real options are *merge-then-retire* or *keep-and-validate*, and
+   **both require the §18b-ii merge**, which is why specifying that merge does not pre-empt the decision.
+2. **150 `kosherType` and 101 `certifiedBy` disagreements have never been adjudicated.** A merge must not
+   silently resolve them. Working assumption — **unverified and load-bearing** — is that `places.osm.json`
+   wins on kashrut, because that is where `876a562`'s corrections landed and the mirror is stale rather than
+   independent. **If that assumption is wrong the merge policy inverts.**
+3. It reframes what `f2b15d5` protects: not a redundant copy, but 205 kashrut claims existing nowhere else.
+
+### 18f. Note for whoever touches these guards next
 
 `planCategoryOverwrite`'s `volume` guard is **subsumed** by `no-dropped-ids`: the file has no duplicate ids, so
 no-dropped-ids passing implies `candidate >= live`, implies `ratio >= 1`. No candidate exists where volume
@@ -953,3 +1035,6 @@ one flag is how "I opted into the rebuild" silently becomes "and also authorised
 | `kosher.ts:138` null/undefined parity (assumed safe by analogy to certifierId) | **unsafe** — falls through to the legacy `kosherType` label, which still asserts the withheld claim | see §14 |
 | `restaurants.osm.json` fabricated dates = 29, cliff date ×13 | **30**, cliff date **×14** | 29 is the subset also present in `places.osm.json`; one record is an orphan. See §18d |
 | "lifting `no-stripped-fields` closes the content gap" | **it does not** — union-of-keys, so stripping a field from all-but-one record passes | see §18b |
+| "zero-tolerance kashrut guard on the overwrite; guard what is never legitimate" | **unsatisfiable** — 58 reproducible records already carry kashrut fields, so it blocks 100% of legitimate runs | see §18b-i |
+| `restaurants.osm.json` is a redundant mirror | **384 records exist only there, 205 with kashrut**; 150 `kosherType` + 101 `certifiedBy` disagreements | see §18e |
+| "covering the file in `validate-data.mjs` is an owner decision" | **a ratchet, baselined at current counts** — the repo already does this at `levelAssertedOverNamedBody: 343` | see §18c |
