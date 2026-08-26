@@ -1838,6 +1838,62 @@ that are obviously wrong.
 
 ---
 
+## 26. Agreement between two surfaces is evidence-shaped
+
+The mechanism behind §24 and much of §17, stated directly rather than as another instance.
+
+> **Two measurements agreeing does not mean they are independent. It means you will not go looking for a
+> third — because corroboration and completeness feel identical from the inside.**
+
+The condition that conceals a missing surface is **the system working correctly on the surfaces you do
+have**. Nothing prompts the question.
+
+### 26a. Three instances, one shape
+
+| what agreed | what went unexamined |
+|---|---|
+| parsed feed count · the arithmetic that closed against it | **what the source actually contained** — 115 stood as complete against a 120-store feed |
+| the script's stdout · the dataset it wrote | **its exit code** — 127 on every successful run, through 19 tests and a self-containment check |
+| parsed-store count · `"kosher":` anchor count | **a store object with no `kosher` key at all** — invisible to both, because both are downstream of that key existing |
+
+The third is the sharpest because the guard was *built specifically to catch a parse shortfall*, and its
+docstring promises that a shortfall "must be loud, never silent." Measured against the live feed: delete the
+`kosher` key from one store object and `parsed` and `kosherAnchors` **both** drop to 119 while `latitude`
+and `address` stay at 120. The guard is silent. **The failure moves both surfaces equally, so their
+agreement is preserved — and their agreement is the entire check.**
+
+### 26b. The test that distinguishes a real second surface from a shared one
+
+Not "are these two different numbers?" but:
+
+> **Name a failure that moves both. If one exists, you have one surface measured twice.**
+
+`kosher`-anchors and parsed-count fail that test — a missing `kosher` key moves both. `latitude`-anchors
+pass it: no defect in the `kosher` key's handling can change how many `"latitude":` tokens are in the raw
+text.
+
+### 26c. Why "count a second key" is the fix and a floor is not
+
+A **floor** (`stores.length >= N`) was proposed four times and declined. It cannot separate a parse shortfall
+from a branch legitimately closing — the two are indistinguishable by magnitude. Set it at 120 and it
+false-fails the first closure; set it at 100 and it misses 115. **No threshold does the job**, because the
+quantity it measures is one the world is allowed to change.
+
+A **cross-key comparison** measures the same document against itself. It is immune to legitimate change
+(a closed branch removes every key equally) and exact on parse failure (a defect in one field's handling
+moves one count and not the other). Prefer self-consistency checks over threshold checks whenever the
+quantity being guarded is one the source is entitled to vary.
+
+### 26d. Note
+
+The four escalations of the floor proposal happened because a reader took lines 93-100 of `rebar-feed.mjs`
+— **the docstring of `countStoreAnchors`, the function that implements the countermeasure** — as a
+description of something absent. §17a in miniature: prose adjacent to an implementation read as prose
+instead of an implementation. Worth knowing that the failure runs in this direction too, not only toward
+false comfort.
+
+---
+
 ## Superseded numbers — do not requote
 
 | Wrong | Correct | Why |
