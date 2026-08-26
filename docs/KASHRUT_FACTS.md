@@ -706,6 +706,40 @@ permanent furniture that everyone reads as "fine" because it's green. Two obliga
    condition of the Batch B data-write commit being considered complete, not a follow-up TODO to
    rediscover later.
 
+### 15a. The ratchet's predicate under-counts **in the direction of vagueness** — 343 of 398
+
+The counter's name is accurate: it counts a level asserted over a **named** body. But the defect it exists to
+track is *"the level was invented,"* and the predicate reaches that only through a proxy — `alias.authorityId`
+must resolve. **It is blind precisely where the source text is too vague for the registry to resolve, which is
+where the evidence is weakest.** Measured over `places.osm.json`:
+
+| | n |
+|---|---|
+| FOOD records asserting a level via `kosherType`, with `certifiedBy` | 593 |
+| **flagged** — alias resolves to a body | **343** ← matches the baseline exactly |
+| not flagged, but the text itself states a level (`כשר למהדרין`, `גלאט`) — evidence-backed, correctly excluded | 195 |
+| **not flagged, and the text states no level at all — same defect, invisible** | **55** |
+
+**True population: 398. The ratchet holds 343.**
+
+The 55 are the *stronger* cases, not the weaker ones. For the flagged 343 the registry at least resolved a
+body. For these the registry either recorded `authorityId: null, level: null` — declining to name the body
+*or* the level — or **has no entry at all**, several being reviewQueue-deferred strings a human review
+explicitly refused to process:
+
+`בד"ץ` ×5 · `כשר בד"ץ` ×4 · `בד"ץ יורה דעה הרב מחפוד` ×4 · `בד"ץ קהילות` ×3 · `חתם סופר פתח תקווה` ×3 ·
+`חתם סופר` ×2 · `רב רפאל מנת` ×2 · plus ~30 compound multi-authority strings (`בד"ץ בית יוסף + רבנות הר חברון`)
+that hit the §9 compound gap.
+
+**Not a defect in the ratchet and not urgent** — it still blocks growth on 343, and the 55 cannot grow
+silently either, because a new bypass hits the §13 choke point. But: **if the predicate is ever broadened, the
+baseline moves 343 → 398, and that must be a deliberate re-baseline rather than a surprise red build.**
+
+**The generalisable form:** `alias.authorityId` resolving is a *proxy* for "the text names a body." A proxy
+fails asymmetrically — and this one fails in the direction of the weakest evidence, so the records it cannot
+see are systematically the ones that most deserve to be seen. Read alongside §17: a check whose subject is
+narrower than its purpose does not announce the gap.
+
 ---
 
 ## 16. Migrating the re-runnable utilities — order, and why one goes first
@@ -1042,11 +1076,23 @@ Of the 40 shared ids where `places.osm.json` asserts a level and the mirror does
 | | n | `certifiedBy` is | Which file is right |
 |---|---|---|---|
 | **flagged** | **6** | a **body name** — `כשרות בד"ץ הרב רובין`, `כשרות רובין`, `הרב רובין` (all → `rav-rubin`) | **the mirror** — places derived the *level* from the *body*, the inference §5b records as never legitimate |
-| not flagged, alias unresolved | 27 | a **level phrase** — `כשר למהדרין`, `כשר מהדרין`, `כשר בד"ץ` | **places** — the source text itself states mehadrin, so the elevation is evidence-backed |
+| not flagged, alias unresolved, **text states a level** | 20 | `כשר למהדרין`, `כשר מהדרין` | **places** — the source text itself states mehadrin, so the elevation is evidence-backed |
+| **not flagged, alias unresolved, text states NO level** | **7** | `בד"ץ`, `כשר בד"ץ` ×4, `בד"ץ בית שמש`, `כשרות רבנות ובד"ץ` | **the mirror** — same defect as the 6, invisible to the proxy (§15a) |
 | not flagged, no `certifiedBy` | 7 | absent | unadjudicable — leave alone |
 
-The six: `9100003`, `9100006`, `9100007`, `9100062`, `9100063`,
+**The carve-out is 13, not 6.** The validator's predicate finds 6; the *principle* covers 13. The extra 7 are
+records where the registry recorded `authorityId: null, level: null` — declining to identify body **or**
+level — or held no entry at all, and places elevated them to mehadrin regardless. Those are the **stronger**
+cases: a level asserted over a body the registry explicitly said it could not identify.
+
+The six the proxy sees: `9100003`, `9100006`, `9100007`, `9100062`, `9100063`,
 `humus-eli-חומוס-אליהו-ירושלים-הר-חוצבים`.
+The seven it cannot: `osm-node-7541798990`, `humus-eli-חומוס-אליהו-בית-שמש`, `9100000`, `9100005`, `9100030`,
+`9100050`, `9100056`.
+
+**Why this matters beyond the merge:** deriving the carve-out from the validator's predicate rather than from
+the stated principle would have silently under-covered it by more than half. The predicate is a proxy; the
+principle is the rule. See §15a — the same proxy under-counts the shipped ratchet by 55.
 
 **Do not write the rule as "places wins except where flagged."** Write it as:
 
@@ -1095,6 +1141,9 @@ one flag is how "I opted into the rebuild" silently becomes "and also authorised
 | `restaurants.osm.json` is a redundant mirror | **384 records exist only there, 205 with kashrut**; 150 `kosherType` + 101 `certifiedBy` disagreements | see §18e |
 | "covering the file in `validate-data.mjs` is an owner decision" | **a ratchet, baselined at current counts** — the repo already does this at `levelAssertedOverNamedBody: 343` | see §18c |
 | "the mirror is stale rather than independent" | **two claims** — `certifiedBy` 93% stale (holds), `kosherType` 49% (fails, 77 independent) | see §18e-i |
-| merge carve-out = 5 records | **6** — the sixth is `humus-eli-חומוס-אליהו-ירושלים-הר-חוצבים`, same body (`rav-rubin`), same shape | see §18e-ii |
+| merge carve-out = 5 records | **13** — 6 the validator's predicate can see (incl. `humus-eli-…הר-חוצבים`, missed at first) + 7 it cannot | see §18e-ii |
+| `levelAssertedOverNamedBody` covers the whole "invented level" population | **343 of 398** — the predicate is a proxy blind to vague text | see §15a |
+| `extract-cert-expiry.mjs` "caches PDFs and never invalidates" (`DATA_ARCHITECTURE.md` §3.2) | **fixed** — `isCacheStale()` + `--refresh`; the 152 cliff certs are already inside the default 60-day window | corrected in `DATA_ARCHITECTURE.md` |
+| `kosherAuthority` places-has/mirror-lacks = 201 vs 204 | **both** — 204 where the mirror lacks the *key*; 201 where places holds a *non-empty* value | different predicates, not a discrepancy |
 | `levelAssertedOverNamedBody` = 302 (looked like 41 records of ratchet slack) | **343**, matching baseline exactly | a hand-copied `FOOD_TYPES` with 4 of its 8 members; see §17 face 3 |
 | "84 unguarded writers of `restaurants.osm.json`" | **not established** — the scan tests "mentions the file AND writes *something*" | 88 referencing / 4 guarded is sound; the writer count needs a narrower test |

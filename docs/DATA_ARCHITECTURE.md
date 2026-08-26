@@ -179,7 +179,7 @@ Its `business_type` vocabulary is also the state's own catalog, and it is instru
 
 | Source | Category | What breaks it | Current state |
 |---|---|---|---|
-| **Tzohar certificate PDFs** | kashrut evidence | Layout change; new PDF generator | Working, but `extract-cert-expiry.mjs:150` **caches PDFs and never invalidates** — it re-extracts a stale expiry and reports success |
+| **Tzohar certificate PDFs** | kashrut evidence | Layout change; new PDF generator | **Working, and the cache defect is fixed** — `isCacheStale()` re-fetches whenever the known expiry is inside `--window` (default 60 days), whenever fetch metadata is missing, and whenever no date was ever resolved; `--refresh` forces it. A failed re-fetch **never** extends, clears or guesses a date. Consequence for the 2026-09-11 cliff: those 152 certificates are already inside the default window, so an ordinary run re-fetches them without any flag |
 | **Religious-council directories** (`rc-`, 1,208 records) | synagogue, mikveh | Any CMS change on ~20 council sites | Ran once; no re-run path |
 | **Restaurant chain sites** (~40 chains) | food | Every redesign | 40 one-shot scripts, none re-runnable |
 | **Tzohar de-supervision list** (`?page_id=20089`) | **negative kashrut signal** | — | **Not consumed.** This is the only published *withdrawal* signal in Israel and the project's own rule ("no certificate → no record") implies it should be driving corrections |
