@@ -2001,6 +2001,69 @@ wrote is correct.
 
 ---
 
+## 28. The working tree and a fresh checkout differ in bytes for every tracked text file
+
+`core.autocrlf=true` locally, **no `.gitattributes`**. A file written directly by an editor or tool keeps
+**LF** in the working tree; a *fresh* checkout of the same committed blob — a worktree, a clone, CI on
+another machine — receives **CRLF** via autocrlf's conversion.
+
+Measured across the files the guards and tests read:
+
+| file | CRLF | bare LF |
+|---|---|---|
+| `scripts/import-rebar.mjs` | 0 | 289 |
+| `scripts/shared/rebar-feed.mjs` | 0 | 293 |
+| `scripts/shared/kashrut-write.mjs` | 0 | 231 |
+| `scripts/shared/level-assertion-guard.mjs` | 0 | 300 |
+| `scripts/shared/kashrut-conflict-resolution.mjs` | 0 | 290 |
+| `scripts/validate-data.mjs` | 0 | 694 |
+
+**Every one is pure LF on disk and CRLF in any fresh checkout.** This is not a property of one file; it is
+the standing state of the repo.
+
+### 28a. How it surfaced
+
+`import-rebar-write.test.mjs` matched a multi-line **literal** — `'} else {\n    const newPlaces = …'` —
+against content read with `readFileSync(..., 'utf8')`, to locate its sabotage anchor and to assert the
+tracked file was untouched. In the working tree the literal matched. In a fresh worktree the same commit's
+file is CRLF, so the `'\n'`-joined literal **silently failed to find itself**, and `npm run verify` exited 1
+in the worktree minutes after passing clean in the main checkout.
+
+Fixed by normalising `\r\n` → `\n` on both reads before matching. Verified: the surviving literal at
+`import-rebar-write.test.mjs:256` is preceded by that normalisation on line 254.
+
+### 28b. The general rule
+
+> **Any check that matches a multi-line literal against a tracked file's content is checkout-dependent.**
+> Normalise line endings before the comparison, or the check means something different in the working tree,
+> in a worktree, in a clone, and in CI.
+
+Repo-wide scan for the pattern — a file read combined with a literal containing `\n` — found no other
+tracked-source site. The remaining hits (`apply-radak-tehillim.mjs:71`,
+`generate-kashrut-evidence-reports.mjs:167`, `update-pizza-shemesh-hours-urls.mjs:47`) `split('\n')` on
+*fetched* text and trim afterwards; `level-assertion-guard.mjs:175` tests a single character, and `\r\n`
+still contains `\n`, so its state machine terminates line comments correctly — confirmed by 24/24 passing in
+a CRLF worktree.
+
+### 28c. This is AGENTS.md's own warning, arriving through a test
+
+The repo's standing rule is *green in the working tree ≠ the commit is valid*, and its recorded instances
+were **missing symbols** — `876a562` importing `isFoodType` that lived only in an untracked file, `78209ae`
+reading a field never declared in the commit.
+
+**This is a third mechanism for the same failure, and it needs no untracked file and no missing symbol.**
+The commit is complete and self-contained; the *bytes on disk* differ between the two checkouts. A
+self-containment check that only looked for missing dependencies would have passed it.
+
+### 28d. The root fix, not taken here
+
+A `.gitattributes` with `* text=auto eol=lf` would make every checkout consistent and remove the class. It
+is **not** done as part of this work: it renormalises line endings across every tracked text file in the
+repo, which is a large diff touching everything and deserves its own change and its own review. Recorded as
+the real fix, deliberately deferred — not overlooked.
+
+---
+
 ## Superseded numbers — do not requote
 
 | Wrong | Correct | Why |
