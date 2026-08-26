@@ -152,6 +152,11 @@ export function resolveKosherTypeConflict({ id, placesKosherType, placesCertifie
     const conservativeKosherType = placesElevates ? mirrorKosherType : placesKosherType;
     const elevatedCertifiedBy = placesElevates ? placesCertifiedBy : mirrorCertifiedBy;
 
+    // Do not flip this default because it "resolves more records" — that count is exactly
+    // the wrong reason. Silence is not a conservative CLAIM; a record with no kosherType
+    // asserts nothing, so treating its absence as evidence for the lower value is the same
+    // error as treating a named body as evidence for mehadrin, pointed the other way. See
+    // the includeSilentConservative doc comment above for the full reasoning.
     if (!hasValue(conservativeKosherType) && !includeSilentConservative) {
       return {
         id, field: 'kosherType', winner: 'unresolved', resolvedValue: null, conservativeValue: null,
