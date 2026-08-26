@@ -144,17 +144,29 @@ export function parseDetails(lines) {
 /**
  * The business name + address printed at the top of the certificate,
  * between the two boilerplate anchor lines every cert opens with ("אני
- * בעל/ת בית העסק" ... "מצהיר/ה בזאת בפני קהל לקוחותינו") — confirmed on two
- * real certs (hakosem-4.pdf, drayer.pdf, 2026-08-26). Returned as one
- * reversed (readable) text blob rather than split into separate name/
- * address fields: the PDF's line breaks don't reliably mark that boundary
- * (a name can span 1-2 lines before the address starts), so precisely
- * delimiting them would be guessing a boundary the source doesn't mark.
- * Stage 3's identity check treats this as a blob to fuzzy-match our
- * record's name/address against, not as two clean fields.
+ * בעל/ת בית העסק" ... "מצהיר/ה בזאת בפני קהל לקוחותינו") — confirmed on
+ * three real certs of different shapes (hakosem-4.pdf, drayer.pdf,
+ * amaia-1.pdf, 2026-08-26). Returned as one reversed (readable) text blob
+ * rather than split into separate name/address fields: the PDF's line
+ * breaks don't reliably mark that boundary (a name can span 1-2 lines
+ * before the address starts), so precisely delimiting them would be
+ * guessing a boundary the source doesn't mark. Stage 3's identity check
+ * treats this as a blob to fuzzy-match our record's name/address against,
+ * not as two clean fields.
+ *
+ * The start anchor matches on "בעל" ALONE, not "בעל" AND "בית העסק" on the
+ * same line — found necessary on amaia-1.pdf, where the phrase splits
+ * across two lines ("אני בעל/ת בית" then "העסק" starts the next line,
+ * unlike hakosem/drayer where it's one line). Requiring both substrings on
+ * one line silently returned null on that cert, which upstream code was
+ * then reading as "no identity to check" — a parsing gap, not a genuine
+ * identity mismatch, and conflating the two produced a false WRONG_BUSINESS
+ * call on a real record. "בעל" alone is specific enough (part of the
+ * ownership-declaration boilerplate, not business content) not to
+ * false-positive on an unrelated line.
  */
 export function parseIdentity(lines) {
-  const startIdx = lines.findIndex((l) => rev(l).includes('בעל') && rev(l).includes('בית העסק'));
+  const startIdx = lines.findIndex((l) => rev(l).includes('בעל'));
   if (startIdx === -1) return null;
   const endIdx = lines.findIndex((l, i) => i > startIdx && rev(l).includes('בזאת בפני קהל'));
   const slice = endIdx === -1 ? lines.slice(startIdx + 1, startIdx + 8) : lines.slice(startIdx + 1, endIdx);

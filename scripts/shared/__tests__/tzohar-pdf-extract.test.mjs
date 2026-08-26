@@ -89,6 +89,20 @@ test('parseIdentity: no boilerplate anchor at all -> null, not a guess at some o
   assert.equal(parseIdentity(['random', 'lines', 'no anchor here']), null);
 });
 
+// Real lines() output from amaia-1.pdf — the boilerplate "אני בעל/ת בית
+// העסק" splits across TWO lines here ("בית" ends line 0, "העסק" starts
+// line 1), unlike hakosem/drayer where it's one line. Regression fixture
+// for the fix that made the start anchor match on "בעל" alone.
+const AMAIA_LINES = [
+  'תיב ת/לעב ינא', 'קסעה', 'היאמא', '-', 'םחל תיב ךרד', '17', 'םילשורי',
+  'וניתוחוקל להק ינפב תאזב ה/ריהצמ', ':םיאבה םיטרדנטסה לע דיפקמ הז קסע תיב יכ',
+];
+
+test('REAL, REGRESSION: parseIdentity finds the anchor even when "בעל/ת בית העסק" splits across two PDF lines (amaia-1.pdf)', () => {
+  const id = parseIdentity(AMAIA_LINES);
+  assert.ok(id && id.includes('אמאיה'), `expected the business name in: ${id}`);
+});
+
 test('parseDetails: real restaurant cert — matches the documented kosherDetails flags', () => {
   const d = parseDetails(HAKOSEM_LINES);
   assert.equal(d.shabbatClosed, true);
