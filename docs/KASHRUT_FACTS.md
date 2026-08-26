@@ -986,6 +986,19 @@ either.
 to pass while the thing it guards is broken — then go and check *that*. Every one of the faces above answers
 that question in a single sentence, and none of them was found by reading the check.
 
+**A blind spot that CORRELATES with what it should catch is not a coverage gap — it is a filter.** Two
+independent instances now:
+
+| Check | Blind where | Correlation |
+|---|---|---|
+| `levelAssertedOverNamedBody` (§15a) | the text is too vague for the registry to resolve | blind where the **evidence is weakest** |
+| `unknownCityId` (§19b) | the writer also rebuilds the reference set | blind to the **most privileged writers** |
+
+An unbiased blind spot loses a random sample of the signal and still leaves the shape visible. **A correlated
+one removes exactly the part you were looking for**, and the remainder looks clean and representative. When
+assessing any check, ask not only *what does it miss* but *is what it misses systematically the worst of it* —
+because that is the difference between a check with a gap and a check that launders its subject.
+
 **How an incident becomes a class, or fails to.** Both of the newest faces were first filed as stories about
 *people*: §17a as "a doc nobody updated," §17b as "I made an escaping mistake twice." Filed that way, each is
 an anecdote that teaches nothing and recurs. What made them classes was restating them as stories about
@@ -1318,6 +1331,87 @@ one flag is how "I opted into the rebuild" silently becomes "and also authorised
 
 ---
 
+## 19. `cities.osm.json` is a projection, not a registry — and the check that guards it cannot see the worst writers
+
+### 19a. The mechanism
+
+**Five of the six writers that touch `cities.osm.json` rebuild it the same way** — `Object.keys(counts)`
+over the places array — `fetch-osm-places.mjs:182-190`, `importers/shared/database.ts`, and the
+`connect-live.ts` importers for religious-councils, chabad and tzaddik-graves. (`arcgis/connect-modiin-illit.ts`
+is the one that does not.) `scripts/fix-orphan-cities.mjs` is the only *maintainable* path, with a
+hand-curated 23-entry ADD list — all 23 present today, so it has already run.
+
+**Consequence: the locality list is defined as whatever the places data says.** It has no schema, no
+validation, and no source of truth independent of the data it is supposed to validate.
+
+### 19b. The check cannot fail for the writers that matter
+
+`unknownCityId` reads **0** — not because the data is clean, but because a bad `cityId` written by a
+rebuilding writer is **laundered into the registry in the same run**.
+
+> **`unknownCityId` is blind to bad `cityId`s written by the writers that rebuild its reference set. It can
+> only ever catch a bad `cityId` written by a writer that does *not* rebuild the city list.**
+
+Not "structurally incapable of failing" — that overstates it, and it was driven to 9 in a worktree by running
+`import-food.mjs`. The precise claim is that it is blind **precisely to the most privileged writers**, the
+five that maintain the list it validates against.
+
+### 19c. What it has accumulated — 14 records stranded, all invisible to city filtering
+
+| Defect | n | Stranding |
+|---|---|---|
+| Latin-script duplicates of existing Hebrew localities | **13** | **12 records** |
+| non-localities: 1 regional council (`מועצה אזורית עמק הירדן`), 3 junctions | 4 | 2 records |
+| entries referenced by zero places | 9 | — |
+| prospective: localities a non-rebuilding importer introduces | 8 | 9 records (see §19d) |
+| `LOCALITIES_QUERY` is `place~"city|town|village"` — **excludes `hamlet`**, which Israeli kibbutzim and moshavim carry | — | independent second cause |
+
+`ashdod` · `ashkelon` · `bat-yam` · `holon` · `jerusalem` · `kfar-saba` · `lod` · `modiin` · `netanya` ·
+`petah-tikva` · `ramat-gan` · `rishon-lezion` · `tel-aviv` — **a Hebrew twin exists for all thirteen**:
+
+| latin | places | hebrew | places |
+|---|---|---|---|
+| `jerusalem` | 1 | `ירושלים` | 515 |
+| `petah-tikva` | 1 | `פתח תקווה` | 455 |
+| `tel-aviv` | 1 | `תל אביב` | 217 |
+
+**All 12 stranded records are `golda-*` ice-cream branches**, `source: 'manual'`, **every one carrying kashrut
+evidence**. A user filtering by `ירושלים` sees 515 places and not the Jerusalem Golda.
+
+**The laundering step is the interesting part: the golda importer does not write `cities.osm.json` at all.**
+It wrote places with transliterated `cityId`s; a later run of one of the five rebuilding writers minted those
+strings into localities. **The bad value was legitimised by a writer that had nothing to do with creating it.**
+
+The 2 junction records (`manual-aroma-tzomset-urim`, `manual-aroma-tzomset-ruppin`) are a **different defect** —
+those Aroma branches really are at highway junctions. They need a parent locality, not removal. Do not fold
+them in with the 12.
+
+### 19d. "9 records / 8 localities" is a PROSPECTIVE measurement — and re-deriving it destroys it
+
+| State | unknown `cityId` |
+|---|---|
+| live dataset today | **0** |
+| after `node importers/tzohar/import-food.mjs` in a throwaway worktree | **9**, across **8** localities |
+
+`בית אלפא` · `מעגן` · `עין גב` ×2 · `עין גדי` · `אבו גוש` · `משמרות` · `נחשונים` · `נען` — all new
+tzohar-food records.
+
+Also live today, and unrelated: **8 records with no `cityId` at all — all mikvehs** (= the `missingCityId`
+baseline), and 3 records in `restaurants.osm.json` with unknown localities (`אורים`, `צריפין`, `עינת`).
+
+**The lesson here is NOT "a number was carried without re-derivation," and filing it that way would teach the
+wrong countermeasure.** Re-deriving against the live dataset returns 0, which reads as *the number was wrong* —
+and the true finding gets discarded. That is exactly what nearly happened.
+
+> **Attach the STATE to a number, not just its derivation.** "9 records / 8 localities" is true after
+> `import-food` and false today, and neither reading is an arithmetic error. **A number without its state
+> will be refuted by whoever checks it in a different state.**
+
+This is the first case in this register where **re-derivation is the thing that destroys the finding** rather
+than confirming or correcting it — so it belongs beside §17, not inside it.
+
+---
+
 ## Superseded numbers — do not requote
 
 | Wrong | Correct | Why |
@@ -1350,3 +1444,7 @@ one flag is how "I opted into the rebuild" silently becomes "and also authorised
 | `kosherAuthority` places-has/mirror-lacks = 201 vs 204 | **both** — 204 where the mirror lacks the *key*; 201 where places holds a *non-empty* value | different predicates, not a discrepancy |
 | `levelAssertedOverNamedBody` = 302 (looked like 41 records of ratchet slack) | **343**, matching baseline exactly | a hand-copied `FOOD_TYPES` with 4 of its 8 members; see §17 face 3 |
 | "84 unguarded writers of `restaurants.osm.json`" | **not established** — the scan tests "mentions the file AND writes *something*" | 88 referencing / 4 guarded is sound; the writer count needs a narrower test |
+| "9 records reference 8 localities missing from `cities.osm.json`" (as a live figure) | **true only AFTER `import-food.mjs` runs**; live today it is **0** | a prospective measurement carried as a live one; see §19d |
+| "the 9/8 was a conflation of the 8-no-cityId mikvehs and the 9-unreferenced cities" | **wrong diagnosis** — the 9/8 is real and reproducible in the post-import state | filing it as a conflation would teach re-derivation, which is what destroys this finding |
+| "the only way to add a locality is the destructive rebuild" | **five writers rebuild the list**, plus `fix-orphan-cities.mjs` as a safe maintained path | see §19a |
+| `unknownCityId` is "structurally incapable of failing" | **overstated** — it was driven to 9 in a worktree; it is blind *to rebuilding writers* | see §19b |
