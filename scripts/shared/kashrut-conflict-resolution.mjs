@@ -97,8 +97,21 @@ function isExtension(shorter, longer) {
  * 2's (the 358) proposed remediation would also produce, on a subset of
  * the same defect population. Applying this function's output to data
  * before the owner has seen item 2's evidence report performs item 2's
- * downgrade through item 4's door. That is why the owner's authorisation
- * for item 4 is build-and-test only.
+ * downgrade through item 4's door.
+ *
+ * That is why these 13 (and only these 13) carry `held: 'item-2-gated'`
+ * on the returned result, per the owner's own pre-registered acceptance
+ * predicate (docs/owner-directive-acceptance-predicate.md §5): resolve
+ * the full population INCLUDING the thirteen — do not special-case them
+ * out of the function — and mark them for a caller to emit rather than
+ * apply. This keeps the rule complete and verifiable across every
+ * conflict, lets the thirteen appear in item 2's eventual report as
+ * "resolved pending authorisation" (which strengthens that report rather
+ * than requiring item 2 to re-derive them), and means nothing has to be
+ * remembered separately once item 2 is authorised — a caller that
+ * ignores `held` and applies every non-'unresolved' winner unconditionally
+ * is the one thing this module cannot prevent by itself; that check
+ * belongs to whatever eventually calls this, which does not exist yet.
  */
 export function resolveKosherTypeConflict({ id, placesKosherType, placesCertifiedBy, mirrorKosherType, mirrorCertifiedBy, aliasMap }) {
   const placesElevates = LEVEL_ASSERTING_KOSHER_TYPES.has(placesKosherType);
@@ -107,7 +120,7 @@ export function resolveKosherTypeConflict({ id, placesKosherType, placesCertifie
   if (placesKosherType === mirrorKosherType) {
     return {
       id, field: 'kosherType', winner: 'agree', resolvedValue: placesKosherType, conservativeValue: placesKosherType,
-      branch: 'no-conflict', reason: 'both sides already hold the same value',
+      branch: 'no-conflict', held: null, reason: 'both sides already hold the same value',
     };
   }
 
@@ -121,7 +134,7 @@ export function resolveKosherTypeConflict({ id, placesKosherType, placesCertifie
     if (!hasValue(elevatedCertifiedBy)) {
       return {
         id, field: 'kosherType', winner: 'unresolved', resolvedValue: null, conservativeValue: conservativeKosherType,
-        branch: 'no-certifiedBy-unadjudicable',
+        branch: 'no-certifiedBy-unadjudicable', held: null,
         reason: `${elevatedSide} asserts level-asserting kosherType ${JSON.stringify(elevatedKosherType)} with no certifiedBy to resolve it against — cannot adjudicate, left unresolved`,
       };
     }
@@ -130,20 +143,20 @@ export function resolveKosherTypeConflict({ id, placesKosherType, placesCertifie
     if (entry?.authorityId) {
       return {
         id, field: 'kosherType', winner: conservativeSide, resolvedValue: conservativeKosherType, conservativeValue: conservativeKosherType,
-        branch: 'body-name-unsupported',
+        branch: 'body-name-unsupported', held: 'item-2-gated',
         reason: `${elevatedSide}'s certifiedBy ${JSON.stringify(elevatedCertifiedBy)} resolves to a named body (${entry.authorityId}), not a level — the level was inferred from the body, which FACTS §5b records as never legitimate; ${conservativeSide}'s non-elevating value is the evidence-supported one`,
       };
     }
     if (entry?.level === ASSERTED_LEVEL) {
       return {
         id, field: 'kosherType', winner: elevatedSide, resolvedValue: elevatedKosherType, conservativeValue: conservativeKosherType,
-        branch: 'registry-level-match',
+        branch: 'registry-level-match', held: null,
         reason: `${elevatedSide}'s certifiedBy ${JSON.stringify(elevatedCertifiedBy)} resolves in the registry to level "${ASSERTED_LEVEL}" — the source text itself states the level, so the elevation is evidence-supported`,
       };
     }
     return {
       id, field: 'kosherType', winner: conservativeSide, resolvedValue: conservativeKosherType, conservativeValue: conservativeKosherType,
-      branch: 'registry-level-mismatch',
+      branch: 'registry-level-mismatch', held: 'item-2-gated',
       reason: `${elevatedSide}'s certifiedBy ${JSON.stringify(elevatedCertifiedBy)} does not resolve in the registry to level "${ASSERTED_LEVEL}" (${entry ? `resolves to level=${JSON.stringify(entry.level)}, authorityId=${JSON.stringify(entry.authorityId)}` : 'no registry entry at all'}) — same defect as body-name-unsupported, invisible to the validator's narrower proxy (FACTS §15a); ${conservativeSide}'s non-elevating value is the evidence-supported one`,
     };
   }
@@ -156,7 +169,7 @@ export function resolveKosherTypeConflict({ id, placesKosherType, placesCertifie
   return {
     id, field: 'kosherType', winner: 'unresolved', resolvedValue: null,
     conservativeValue: bothElevateDifferently ? null : (placesElevates ? mirrorKosherType : placesElevates === mirrorElevates ? null : placesKosherType),
-    branch: 'unresolved-unspecified-shape',
+    branch: 'unresolved-unspecified-shape', held: null,
     reason: bothElevateDifferently
       ? `both sides assert a level-asserting kosherType but different values (places=${JSON.stringify(placesKosherType)}, mirror=${JSON.stringify(mirrorKosherType)}) — no adjudication rule specified for this shape`
       : `neither side elevates but the values disagree (places=${JSON.stringify(placesKosherType)}, mirror=${JSON.stringify(mirrorKosherType)}) — no principled ordering between two non-elevating values; no adjudication rule specified for this shape`,

@@ -82,6 +82,7 @@ test('body-name-unsupported: places elevates on a certifiedBy that resolves to a
   assert.equal(res.winner, 'mirror');
   assert.equal(res.resolvedValue, 'rabanut');
   assert.equal(res.branch, 'body-name-unsupported');
+  assert.equal(res.held, 'item-2-gated', 'this branch is item 2\'s defect population — owner-directive-acceptance-predicate.md §5 requires it held, not applied');
 });
 
 test('registry-level-match: places elevates on a certifiedBy that resolves to level=mehadrin -> places wins (real registry alias)', () => {
@@ -92,6 +93,7 @@ test('registry-level-match: places elevates on a certifiedBy that resolves to le
   assert.equal(res.winner, 'places');
   assert.equal(res.resolvedValue, 'mehadrin');
   assert.equal(res.branch, 'registry-level-match');
+  assert.equal(res.held, null, 'evidence-supported elevation is NOT item 2\'s defect population — must not be held');
 });
 
 test('registry-level-mismatch: places elevates on a certifiedBy that resolves to neither a body nor the asserted level -> mirror wins (the proxy-invisible case, real registry alias)', () => {
@@ -101,6 +103,7 @@ test('registry-level-mismatch: places elevates on a certifiedBy that resolves to
   });
   assert.equal(res.winner, 'mirror');
   assert.equal(res.branch, 'registry-level-mismatch');
+  assert.equal(res.held, 'item-2-gated', 'same defect population as body-name-unsupported, invisible to the proxy — still held');
 });
 
 test('registry-level-mismatch also fires when certifiedBy has no registry entry at all', () => {
@@ -223,25 +226,31 @@ test('REAL DATA: resolveKosherTypeConflict reproduces the documented 6/20/7/7 sp
     const res = resolveKosherTypeConflict({ id, placesKosherType: p.kosherType, placesCertifiedBy: p.certifiedBy, mirrorKosherType: r.kosherType, mirrorCertifiedBy: r.certifiedBy, aliasMap });
     assert.equal(res.winner, 'mirror', `${id}: body-name-unsupported must resolve to the conservative (mirror) side`);
     assert.equal(res.resolvedValue, r.kosherType);
+    assert.equal(res.held, 'item-2-gated', `${id}: must be held (item 2's defect population)`);
   }
   for (const id of idsByBranch['registry-level-mismatch']) {
     const p = placesById.get(id), r = restsById.get(id);
     const res = resolveKosherTypeConflict({ id, placesKosherType: p.kosherType, placesCertifiedBy: p.certifiedBy, mirrorKosherType: r.kosherType, mirrorCertifiedBy: r.certifiedBy, aliasMap });
     assert.equal(res.winner, 'mirror', `${id}: registry-level-mismatch must resolve to the conservative (mirror) side`);
     assert.equal(res.resolvedValue, r.kosherType);
+    assert.equal(res.held, 'item-2-gated', `${id}: must be held (item 2's defect population)`);
   }
   for (const id of idsByBranch['registry-level-match']) {
     const p = placesById.get(id), r = restsById.get(id);
     const res = resolveKosherTypeConflict({ id, placesKosherType: p.kosherType, placesCertifiedBy: p.certifiedBy, mirrorKosherType: r.kosherType, mirrorCertifiedBy: r.certifiedBy, aliasMap });
     assert.equal(res.winner, 'places', `${id}: registry-level-match must resolve to the elevating (places) side`);
     assert.equal(res.resolvedValue, p.kosherType);
+    assert.equal(res.held, null, `${id}: evidence-supported elevation must NOT be held`);
   }
   for (const id of idsByBranch['no-certifiedBy-unadjudicable']) {
     const p = placesById.get(id), r = restsById.get(id);
     const res = resolveKosherTypeConflict({ id, placesKosherType: p.kosherType, placesCertifiedBy: p.certifiedBy, mirrorKosherType: r.kosherType, mirrorCertifiedBy: r.certifiedBy, aliasMap });
     assert.equal(res.winner, 'unresolved', `${id}: no-certifiedBy-unadjudicable must stay unresolved`);
     assert.equal(res.resolvedValue, null);
+    assert.equal(res.held, null, `${id}: unresolved is not the same thing as held — nothing is being withheld from an unresolved case, there is simply nothing to apply`);
   }
+
+  assert.equal(idsByBranch['body-name-unsupported'].length + idsByBranch['registry-level-mismatch'].length, 13, 'the carve-out is 13, not 6 — FACTS §18e-ii');
 });
 
 test('KNOWN, DELIBERATE SCOPE NOTE (not a defect): the function also resolves 18 records the 40-record audit did not cover — same rule, applied where the conservative side\'s kosherType is entirely absent rather than an explicit non-elevating value', () => {
