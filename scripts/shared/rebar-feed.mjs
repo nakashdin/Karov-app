@@ -19,6 +19,17 @@
  * The feed's full key union has NO level field and NO authority field: that
  * is the evidence ceiling for anything built on this module.
  *
+ * ENTRY COUNT IS NOT STABLE — do not cite one. Independent fetches on
+ * 2026-08-26 returned 107 and 115 parsed entries (an earlier hand-scan by
+ * the Architect, using a stricter anchor requiring a trailing
+ * `"open":(true|false)`, silently dropped 9 and reported 106 — a claim that
+ * was true of a set which no longer exists the moment the page re-renders).
+ * What IS stable, and re-checked across every one of those fetches: the
+ * per-object KEY SET itself (the field names enumerated above) never
+ * varies, and none of them is a level or authority field — that is the
+ * actual evidence ceiling claim, and it does not depend on how many store
+ * objects happen to be present on any one fetch.
+ *
  * EXTRACTION SAFETY — read this before touching the regex below. A first
  * attempt used a generic "escaped string" capture group
  * (`([^\\]*(?:\\.[^\\]*)*)`), meant to tolerate escaped characters inside a
