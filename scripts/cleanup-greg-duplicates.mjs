@@ -1,4 +1,9 @@
 import { readFileSync, writeFileSync } from 'fs';
+import { fileURLToPath } from 'url';
+import path from 'path';
+
+const __dir = path.dirname(fileURLToPath(import.meta.url));
+const ROOT = path.join(__dir, '..');
 
 const BOM = Buffer.from([0xEF, 0xBB, 0xBF]);
 
@@ -39,8 +44,8 @@ const FIXES = {
 };
 
 const FILES = [
-  'C:/Users/User/Desktop/claude plane/kosher-app/src/data/generated/restaurants.osm.json',
-  'C:/Users/User/Desktop/claude plane/kosher-app/src/data/generated/places.osm.json',
+  path.join(ROOT, 'src/data/generated/restaurants.osm.json'),
+  path.join(ROOT, 'src/data/generated/places.osm.json'),
 ];
 
 for (const filePath of FILES) {
@@ -65,7 +70,7 @@ for (const filePath of FILES) {
 }
 
 // אמת
-const raw = readFileSync('C:/Users/User/Desktop/claude plane/kosher-app/src/data/generated/restaurants.osm.json');
+const raw = readFileSync(path.join(ROOT, 'src/data/generated/restaurants.osm.json'));
 const str = raw[0] === 0xEF ? raw.slice(3).toString('utf8') : raw.toString('utf8');
 const data = JSON.parse(str);
 const greg = data.filter(r => r.name && r.name.includes('קפה גרג'));

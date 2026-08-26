@@ -1,4 +1,9 @@
 import { readFileSync, writeFileSync } from 'fs';
+import { fileURLToPath } from 'url';
+import path from 'path';
+
+const __dir = path.dirname(fileURLToPath(import.meta.url));
+const ROOT = path.join(__dir, '..');
 
 const BOM = Buffer.from([0xEF, 0xBB, 0xBF]);
 function readJson(p) {
@@ -11,8 +16,8 @@ function writeJson(p, data) {
 }
 
 const FILES = [
-  'C:/Users/User/Desktop/claude plane/kosher-app/src/data/generated/restaurants.osm.json',
-  'C:/Users/User/Desktop/claude plane/kosher-app/src/data/generated/places.osm.json',
+  path.join(ROOT, 'src/data/generated/restaurants.osm.json'),
+  path.join(ROOT, 'src/data/generated/places.osm.json'),
 ];
 
 // ב-places.osm.json יש manual-pizza-shemesh-* (מאומת)

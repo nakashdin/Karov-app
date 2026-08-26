@@ -1,4 +1,9 @@
 import { readFileSync, writeFileSync } from 'fs';
+import { fileURLToPath } from 'url';
+import path from 'path';
+
+const __dir = path.dirname(fileURLToPath(import.meta.url));
+const ROOT = path.join(__dir, '..');
 
 const BOM = Buffer.from([0xEF, 0xBB, 0xBF]);
 function readJson(p) {
@@ -10,8 +15,8 @@ function writeJson(p, data) {
   writeFileSync(p, Buffer.concat([BOM, Buffer.from(JSON.stringify(data, null, 2), 'utf8')]));
 }
 
-const RESTAURANTS = 'C:/Users/User/Desktop/claude plane/kosher-app/src/data/generated/restaurants.osm.json';
-const PLACES      = 'C:/Users/User/Desktop/claude plane/kosher-app/src/data/generated/places.osm.json';
+const RESTAURANTS = path.join(ROOT, 'src/data/generated/restaurants.osm.json');
+const PLACES      = path.join(ROOT, 'src/data/generated/places.osm.json');
 
 // כפולות OSM למחיקה (יש לנו manual מדויק יותר)
 const DELETE_IDS = new Set([
