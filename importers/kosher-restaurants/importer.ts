@@ -18,6 +18,7 @@ import {
   formatCategoryOverwriteReport,
   formatRebuildReport,
   planAppDatasetRebuild,
+  planCategoryOverwrite,
   writeCategoryGuarded,
 } from '../shared/database.ts';
 import { transformRestaurant } from './transform.ts';
@@ -53,8 +54,19 @@ export async function importRestaurants(): Promise<NormalizedPlace[]> {
   // scripts; a plain overwrite here would erase every record this run's
   // own OSM query doesn't reproduce. See writeCategoryGuarded()'s doc
   // comment in ../shared/database.ts.
+  //
+  // Plan, print, THEN write — not write-then-print. On a blocked run the
+  // report was always visible either way (writeCategoryGuarded throws it
+  // inside the error), but on a PASSING run write-then-print means the
+  // human only sees the per-survivor impact after it is already on disk.
+  // For a design whose second half is "report what may be," that ordering
+  // was backwards. The extra planCategoryOverwrite() call below is
+  // read-only and cheap; not worth threading its result through
+  // writeCategoryGuarded() just to avoid computing it twice.
+  const plan = planCategoryOverwrite(CATEGORY_FILES.restaurant, valid);
+  console.log(`\n${formatCategoryOverwriteReport(plan)}`);
+
   const report = writeCategoryGuarded(CATEGORY_FILES.restaurant, valid);
-  console.log(`\n${formatCategoryOverwriteReport(report)}`);
   console.log(`\nWrote → ${report.path}`);
   return valid;
 }

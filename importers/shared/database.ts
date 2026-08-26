@@ -67,7 +67,7 @@ const CATEGORY_OVERWRITE_OPT_IN_ENV = 'KAROV_ALLOW_DESTRUCTIVE_CATEGORY_OVERWRIT
 const CATEGORY_BACKUP_DIR = join(HERE, '..', '..', 'data-backups', 'category-overwrite-guard');
 
 /** A record shaped like the app's Place, as stored in places.osm.json. */
-type StoredPlace = Record<string, unknown> & { id?: unknown; type?: unknown };
+export type StoredPlace = Record<string, unknown> & { id?: unknown; type?: unknown };
 
 export function writeJson(file: string, data: unknown): string {
   mkdirSync(GENERATED_DIR, { recursive: true });
@@ -301,6 +301,18 @@ export function rebuildAppDataset(): RebuildReport {
  * prior content — the shape (compute candidate → diff → guard → explicit
  * opt-in → backup → write) is reused; the guard set is not, because the
  * failure mode is not.
+ *
+ * A per-record kashrut-field content guard was attempted and withdrawn: 58
+ * of the 283 osm-sourced live records already carry a kashrut field
+ * (kosherType 58, certifiedBy 54) added by later patch scripts, which a
+ * faithful fresh OSM fetch never reproduces — so "no survivor may lose a
+ * kashrut field" would block 100% of runs, including correct ones. The
+ * candidate cannot carry kashrut evidence AND live already has it on
+ * reproducible ids: those two facts make a zero-tolerance content guard on
+ * this operation unsatisfiable, not just strict. Content-level protection
+ * for this file belongs to a MERGE design (candidate supplies only the
+ * fields OSM has authority over) and/or a validate-data.mjs ratchet — not a
+ * guard on a plain overwrite. See docs/ for the merge-authority design.
  * ─────────────────────────────────────────────────────────────────────────
  */
 
@@ -421,8 +433,11 @@ export function writeCategoryGuarded(file: string, candidate: StoredPlace[]): Ca
     throw new Error(
       `writeCategoryGuarded('${file}') blocked by ${report.guards.filter((g) => !g.passed).length} failing guard(s).\n\n` +
         formatCategoryOverwriteReport(report) +
-        '\n\nThe opt-in env var does not bypass guards. Merge the candidate with the live file\'s ' +
-        'non-osm-sourced records instead of overwriting, or fix the guard that is failing.',
+        '\n\nThis is not a guard being overcautious: this importer cannot safely OVERWRITE this file, ' +
+        'because the file holds records its own source cannot reproduce. A merge is required here, not an ' +
+        `override — see docs/KASHRUT_FACTS.md §18b-ii for the field-authority table. Setting ` +
+        `${CATEGORY_OVERWRITE_OPT_IN_ENV}=1 will NOT get you past this: these guards fail independently of ` +
+        'the opt-in, which only gates whether a passing plan is allowed to write, not whether a failing one is.',
     );
   }
 
