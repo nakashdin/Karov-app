@@ -102,7 +102,18 @@ function loadAliasMap() {
   return aliasMapCache;
 }
 
-/** The six fields this choke point covers. */
+/**
+ * The fields this choke point covers. The last three (added Item 4 Unit 3,
+ * 2026-08-27) hold an UNVERIFIED level CLAIM the source states about
+ * itself — never a verified level — so they get no assertsLevel gating
+ * below: the whole point of claimedLevel is to hold what recordKashrutWrite
+ * would otherwise refuse to let kosherLevel/kosherType hold. The two
+ * invariants that keep a claim from being silently promoted to fact
+ * (claimedLevel => kosherLevel null; claimedLevel => Text/Source non-empty)
+ * are enforced in validate-data.mjs as HARD failures, not here — this
+ * choke point is about ATTRIBUTING a write, not about the cross-field
+ * relationship between two different fields.
+ */
 export const KASHRUT_FIELDS = Object.freeze([
   'kosherType',
   'kosherLevel',
@@ -110,6 +121,9 @@ export const KASHRUT_FIELDS = Object.freeze([
   'kosherAuthority',
   'certifierId',
   'certifiedBy',
+  'claimedLevel',
+  'claimedLevelText',
+  'claimedLevelSource',
 ]);
 const KASHRUT_FIELD_SET = new Set(KASHRUT_FIELDS);
 

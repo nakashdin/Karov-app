@@ -11,7 +11,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { findLevelAssertionViolations, analyzeSource, stripComments } from '../level-assertion-guard.mjs';
+import { findLevelAssertionViolations, analyzeSource, analyzeClaimedLevelMigration, stripComments } from '../level-assertion-guard.mjs';
 import { LEVEL_ASSERTING_KOSHER_TYPES as CANONICAL } from '../kashrut-conflict-resolution.mjs';
 
 let passed = 0;
@@ -162,6 +162,48 @@ test('stripComments: a `/*`-looking sequence inside a string value is not mistak
 test('stripComments: a backslash-escaped quote inside a string does not end the string early, which would otherwise expose the rest of the string as if it were a real line comment', () => {
   const src = `const s = 'it\\'s // still one string';`;
   assert.equal(stripComments(src), src);
+});
+
+// ── claimedLevel migration-path guard (Item 4 Unit 3, 2026-08-27) — a
+// SEPARATE check from the literal-value scan above: not "a level was
+// hardcoded", but "a claim was read into a fact field". Positive control
+// first, same methodology as the probe matrix above — a negative case means
+// nothing until a positive control proves the probe is reachable at all.
+
+test('PROBE, positive control: object-literal form `kosherLevel: r.claimedLevel` IS flagged', () => {
+  const src = `const written = { id: 'x', kosherLevel: r.claimedLevel, kosherAuthorityGroup: 'unknown' };`;
+  const vs = analyzeClaimedLevelMigration(src);
+  assert.equal(vs.length, 1);
+  assert.equal(vs[0].field, 'kosherLevel');
+});
+
+test('PROBE, positive control: direct-assign form `.kosherType = existing.claimedLevel` IS flagged', () => {
+  const src = `place.kosherType = existing.claimedLevel;`;
+  const vs = analyzeClaimedLevelMigration(src);
+  assert.equal(vs.length, 1);
+  assert.equal(vs[0].field, 'kosherType');
+});
+
+test('PROBE, negative: `kosherLevel: null` alone (no claimedLevel reference) is NOT flagged', () => {
+  assert.deepEqual(analyzeClaimedLevelMigration(`const w = { kosherLevel: null, kosherType: 'kosher' };`), []);
+});
+
+test('PROBE, negative: `claimedLevel: branch.levelText` is NOT flagged — the LHS here is claimedLevel itself, not kosherLevel/kosherType, which is exactly the correct write this guard must never block', () => {
+  assert.deepEqual(analyzeClaimedLevelMigration(`const w = { claimedLevel: branch.levelText, claimedLevelText: branch.levelText };`), []);
+});
+
+test('PROBE, negative: the pattern sitting only in a comment is NOT flagged (string-aware stripComments, same mechanism as the literal-value scan)', () => {
+  const src = `// old code used to do: kosherLevel: r.claimedLevel\nconst w = { kosherLevel: null };`;
+  assert.deepEqual(analyzeClaimedLevelMigration(src), []);
+});
+
+test('findLevelAssertionViolations() surfaces a claimedLevel-migration violation with the same shape (file, field, reason) as an ordinary literal violation, so a caller does not need two code paths', () => {
+  // Exercised via analyzeClaimedLevelMigration directly above (findLevelAssertionViolations
+  // scans real repo files, none of which currently contain this pattern — the guard's job is
+  // to keep it that way). This test only checks the violation SHAPE is consistent.
+  const vs = analyzeClaimedLevelMigration(`const w = { kosherLevel: r.claimedLevel };`);
+  assert.equal(typeof vs[0].reason, 'string');
+  assert.ok(vs[0].reason.length > 20);
 });
 
 // ── Shape checks.

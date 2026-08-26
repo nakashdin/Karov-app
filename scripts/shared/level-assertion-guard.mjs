@@ -217,6 +217,43 @@ const KOSHER_TYPE_RE = STRING_LITERAL('kosherType');
 const KOSHER_LEVEL_RE = STRING_LITERAL('kosherLevel');
 const CERTIFIED_BY_RE = STRING_LITERAL('certifiedBy');
 
+/**
+ * Item 4 Unit 3 (2026-08-27) addition: a SECOND, unrelated violation shape —
+ * not a hardcoded literal, but the migration-path failure the owner named
+ * directly: someone later writing `kosherLevel: r.claimedLevel` (or the
+ * `.kosherLevel =` direct-assign form, or the same on kosherType) in a
+ * cleanup script. That single line silently promotes an unverified CLAIM
+ * into a FACT field — every downstream count still looks sane, because
+ * nothing about the write is malformed, only its meaning is wrong. This is
+ * a static source check, same posture as the literal-value scan above: it
+ * fires on the SCRIPT, not on data, and it is deliberately dumb (RHS text
+ * contains the word "claimedLevel", full stop) rather than trying to parse
+ * whether the reference is "real" — the literal-scan's own history (see
+ * module header) is the argument for erring toward over-inclusion here too.
+ *
+ * Matches `kosherLevel`/`kosherType` followed by `:` (object literal) or `=`
+ * (direct assignment) whose right-hand side — up to the next comma,
+ * semicolon, closing brace, or newline — contains the word `claimedLevel`.
+ */
+const CLAIMED_LEVEL_MIGRATION_RE = /\b(kosherLevel|kosherType)\b\s*[:=]\s*([^,;}\n]*)/g;
+
+/** Pure core for the migration-path check — exported separately, same reasoning as analyzeSource. */
+export function analyzeClaimedLevelMigration(src) {
+  const stripped = stripComments(src);
+  const violations = [];
+  for (const m of stripped.matchAll(CLAIMED_LEVEL_MIGRATION_RE)) {
+    const [, field, rhs] = m;
+    if (/\bclaimedLevel\b/.test(rhs)) {
+      violations.push({
+        field,
+        rhs: rhs.trim(),
+        reason: `"${field}" is assigned from an expression containing claimedLevel — this silently promotes an unsourced CLAIM into a VERIFIED field. A claim is never sufficient evidence to write kosherType/kosherLevel directly; route through the pipeline's Gate 3 (a level phrase AND a registry-supported body) instead.`,
+      });
+    }
+  }
+  return violations;
+}
+
 /** True only for the specific gershayim-vs-quote mismatch this guard deliberately doesn't fix (see module header). */
 function isGershayimMismatch(alias, aliasMap) {
   if (aliasMap.has(alias)) return false;
@@ -295,6 +332,7 @@ export function findLevelAssertionViolations() {
   for (const f of files) {
     const src = readFileSync(f, 'utf8');
     for (const v of analyzeSource(src, aliasMap)) violations.push({ file: relPath(f), ...v });
+    for (const v of analyzeClaimedLevelMigration(src)) violations.push({ file: relPath(f), ...v });
   }
   return violations;
 }

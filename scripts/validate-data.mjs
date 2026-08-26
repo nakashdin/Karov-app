@@ -338,6 +338,11 @@ function loadHeadLastVerifiedAtMap() {
 const KASHRUT_REGRESSION_FIELDS = [
   'kosherType', 'kosherLevel', 'kosherAuthorityGroup', 'kosherAuthority',
   'certifiedBy', 'certifierId', 'kosherCertUrl', 'certificateValidUntil',
+  // claimedLevel/Text/Source (Item 4 Unit 3, 2026-08-27): a value->absent
+  // transition on these is exactly as much an accidental loss as on any of
+  // the eight above — a claim silently vanishing is not distinguishable
+  // from a claim nobody bothered to protect.
+  'claimedLevel', 'claimedLevelText', 'claimedLevelSource',
 ];
 
 /**
@@ -405,6 +410,8 @@ if (hard.length === 0) {
   const certifiedByOverwrites = [];
   const lastVerifiedAtBackdates = [];
   const kashrutFieldRegressions = [];
+  const claimAndFactBothSet = [];
+  const unsourcedClaimedLevel = [];
   const currentLastVerifiedAt = new Map(); // for the allowlist's own stale-entry check, below
 
   const aliasMap = loadAliasMap();
@@ -441,6 +448,23 @@ if (hard.length === 0) {
       loc.longitude > BBOX.maxLng
     ) {
       outOfBounds.push(`${p.id}: (${loc.latitude}, ${loc.longitude})`);
+    }
+
+    // ── HARD (Item 4 Unit 3, 2026-08-27): claimedLevel and kosherLevel are
+    // mutually exclusive. A claim is what the SOURCE says about itself with
+    // no certifying body behind it; kosherLevel is a VERIFIED level. Both set
+    // on one record means a claim was copied into fact — the exact failure
+    // this schema exists to prevent — so this fails the build rather than
+    // incrementing a counter, same severity as the append-only/regression
+    // guards above it.
+    if (p.claimedLevel != null && p.kosherLevel != null) {
+      claimAndFactBothSet.push(`${p.id}: claimedLevel=${JSON.stringify(p.claimedLevel)} AND kosherLevel=${JSON.stringify(p.kosherLevel)} — a claim was promoted to a verified level, or a verified level was left standing alongside an unrelated claim. Exactly one may be set.`);
+    }
+    // ── HARD: an unsourced claim is a fabrication wearing a claim field's
+    // name. claimedLevel may never be set without BOTH the verbatim phrase
+    // and the exact URL it was read from.
+    if (p.claimedLevel != null && (!p.claimedLevelText || !p.claimedLevelSource)) {
+      unsourcedClaimedLevel.push(`${p.id}: claimedLevel=${JSON.stringify(p.claimedLevel)} but claimedLevelText=${JSON.stringify(p.claimedLevelText ?? null)} claimedLevelSource=${JSON.stringify(p.claimedLevelSource ?? null)} — both are required whenever claimedLevel is set.`);
     }
 
     // ── RATCHET ─────────────────────────────────────────────────────────────
@@ -622,6 +646,17 @@ if (hard.length === 0) {
       '(§B1.3) and passes this check. If this is a deliberate correction, route it through ' +
       'recordKashrutWrite() and write null rather than deleting the field',
     kashrutFieldRegressions,
+  );
+  cap(
+    'claimedLevel and kosherLevel both set (Item 4 Unit 3) — mutually exclusive by construction: a claim ' +
+      'and a verified level may never coexist on one record. Clear whichever one does not belong',
+    claimAndFactBothSet,
+  );
+  cap(
+    'claimedLevel set without both claimedLevelText and claimedLevelSource (Item 4 Unit 3) — an unsourced ' +
+      'claim is a fabrication wearing a claim field\'s name. Route the write through recordKashrutWrite() ' +
+      'and set all three fields together',
+    unsourcedClaimedLevel,
   );
 
   // Stale allowlist entries are an error, not a no-op — same principle as

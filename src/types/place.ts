@@ -102,6 +102,32 @@ export interface Place {
   /** Canonical certifying body (src/data/kashrut/authorities.ts). null when the evidence names a level but no authority. */
   certifierId?: string | null;
   /**
+   * A level phrase the SOURCE states about itself with no certifying body
+   * named anywhere — a CLAIM, never a verified level (Item 4 Unit 3,
+   * 2026-08-27). Mutually exclusive with `kosherLevel`: a record may have
+   * one or the other, never both — validate-data.mjs HARD-fails a record
+   * carrying both, because that shape is exactly a claim silently promoted
+   * to fact. `null`/absent means no unsourced level claim exists for this
+   * record; it does NOT mean the source is silent on kashrut generally.
+   */
+  claimedLevel?: 'mehadrin' | 'glatt' | null;
+  /**
+   * The source's VERBATIM level phrase this claim was read from (e.g. "כשר
+   * למהדרין", "כשר מהדרין") — provenance for `claimedLevel`, since the
+   * verbatim string is the only thing that survives a future change to how
+   * this project normalizes level phrases. Required whenever `claimedLevel`
+   * is set (validate-data.mjs HARD-fails an unsourced claim).
+   */
+  claimedLevelText?: string;
+  /**
+   * The exact URL `claimedLevelText` was read from. Deliberately kept
+   * separate from `sourceUrl` even when they hold the same URL today — if
+   * `sourceUrl` is ever repointed for an unrelated reason, the claim must
+   * not silently inherit new provenance it was never actually read from.
+   * Required whenever `claimedLevel` is set.
+   */
+  claimedLevelSource?: string;
+  /**
    * ISO date (YYYY-MM-DD) the kosher certificate is valid until. Only ever
    * set from a real certificate document (see `kosherCertUrl`) — never
    * inferred, extrapolated, or copied from a sibling branch. Its absence

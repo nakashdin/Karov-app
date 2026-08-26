@@ -6,7 +6,7 @@
 // Purpose: recordKashrutWrite() (scripts/shared/kashrut-write.mjs) is the one
 // place a kashrut-field write is SUPPOSED to happen. This test enumerates
 // every existing script under scripts/ (excluding scripts/reports/, which is
-// analysis output, not a writer) and importers/ that assigns one of the six
+// analysis output, not a writer) and importers/ that assigns one of the
 // kashrut fields directly, and asserts that set is EXACTLY the frozen list
 // below — not a superset (a NEW bypass fails the test), and not a subset
 // either (a STALE entry — a file that no longer bypasses, e.g. because it was
@@ -24,7 +24,7 @@
 // Enumeration was data-derived: every `.mjs` file under scripts/ (excluding
 // scripts/reports/) and every `.mjs`/`.ts` file under importers/ was scanned
 // for a direct assignment (object-literal property or `.field =`) to one of
-// the six fields, cross-referenced against package.json (none are wired to
+// the fields, cross-referenced against package.json (none are wired to
 // an npm script), and spot-checked live/dead against the real dataset by id,
 // name, or certifiedBy substring. `importers/tzohar/import-food.mjs` was
 // found this way — a real writer that a naive `.ts`-only sweep would have
@@ -38,7 +38,12 @@ import { fileURLToPath } from 'node:url';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
 
-const FIELDS = ['kosherType', 'kosherLevel', 'kosherAuthorityGroup', 'kosherAuthority', 'certifierId', 'certifiedBy'];
+// Mirrors KASHRUT_FIELDS in ../kashrut-write.mjs (not imported — this test
+// deliberately re-derives the set by hand so a change to that file's export
+// can't silently narrow what this scan looks for). claimedLevel/Text/Source
+// added Item 4 Unit 3, 2026-08-27 — a level CLAIM, routed through the same
+// choke point as a verified level, per the same reasoning.
+const FIELDS = ['kosherType', 'kosherLevel', 'kosherAuthorityGroup', 'kosherAuthority', 'certifierId', 'certifiedBy', 'claimedLevel', 'claimedLevelText', 'claimedLevelSource'];
 const OBJECT_LITERAL_RE = new RegExp(`\\b(${FIELDS.join('|')})\\s*:`);
 const DIRECT_ASSIGN_RE = new RegExp(`\\.(${FIELDS.join('|')})\\s*=[^=]`);
 const HELPER_IMPORT_RE = /kashrut-write(\.mjs)?['"]/;
