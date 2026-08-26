@@ -983,8 +983,16 @@ either.
    told not to look.**
 
 **And the meta-rule, which is the only one that generalises:** ask what would have to be true for this check
-to pass while the thing it guards is broken — then go and check *that*. Every one of the four above answers
+to pass while the thing it guards is broken — then go and check *that*. Every one of the faces above answers
 that question in a single sentence, and none of them was found by reading the check.
+
+**How an incident becomes a class, or fails to.** Both of the newest faces were first filed as stories about
+*people*: §17a as "a doc nobody updated," §17b as "I made an escaping mistake twice." Filed that way, each is
+an anecdote that teaches nothing and recurs. What made them classes was restating them as stories about
+**mechanisms** — a warning coupled to its subject only by someone remembering; a countermeasure sharing the
+author, idiom and misunderstanding of the thing it defends against. **When an incident's write-up names a
+person, it is not finished.** Ask what about the *mechanism* made that person's mistake the natural one, and
+write that instead — otherwise the lesson leaves with them.
 
 ---
 
