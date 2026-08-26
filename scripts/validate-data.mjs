@@ -164,6 +164,27 @@ const counts = {
   // the ratchet as a preference rather than a bug. This is not a TODO to
   // rediscover later; it is a condition of accepting this ratchet at all.
   levelAssertedOverNamedBody: 0,
+  // The complementary population to levelAssertedOverNamedBody above, not a
+  // narrower slice of it: that check requires a NAMED body (the level was
+  // invented from who's certifying); this one requires NO body at all —
+  // neither certifiedBy nor kosherAuthority — meaning the level was invented
+  // from nothing whatsoever. Found live on the Item 4 rebar remediation
+  // (55-record write, 2026-08-26): removing 53 body-less fabricated mehadrin
+  // records moved this population 249 -> 196 while EVERY existing ratchet
+  // read unchanged — levelAssertedOverNamedBody cannot see a body-less
+  // record by construction (it requires `p.certifiedBy` to be truthy before
+  // it even looks at the alias map), so the single largest class of
+  // unevidenced kashrut claims in this dataset was invisible to every
+  // measurement this file made. Baselined at 196 (places.osm.json) /
+  // 221 (restaurants.osm.json — restaurantsLevelAssertedWithNoBody below),
+  // independently re-derived against the live dataset, not copied from the
+  // 55-record commit's own report. TARGET IS 0, same target-vs-current
+  // distinction as levelAssertedOverNamedBody: Unit 3's remediation is what
+  // drives this down; this ratchet is what makes that progress visible and
+  // makes a fresh body-less fabrication (of the exact shape the original
+  // rebar/arcaffe/etc. importers produced) impossible to reintroduce
+  // silently.
+  levelAssertedWithNoBody: 0,
   // ── restaurants.osm.json (FACTS §18c): 86 scripts write this file, one
   // (the guarded importer) reads it, and until this addition NOTHING
   // validated it. Not app-facing (nothing in src/ imports it — checked by
@@ -207,6 +228,11 @@ const counts = {
   // evidence and is downstream of the owner's Batch B call, not a code
   // change to make here.
   restaurantsLevelAssertedOverNamedBody: 0,
+  // Same complementary-population relationship to restaurantsLevelAssertedOverNamedBody
+  // as levelAssertedWithNoBody has to levelAssertedOverNamedBody above — see
+  // that entry's comment. Measured independently on this file, not derived
+  // from the places.osm.json figure: 221.
+  restaurantsLevelAssertedWithNoBody: 0,
   // NOT a completeness gap — the other three completeness-style checks
   // (missingAddress/missingCityId/missingSource) were deliberately left
   // off this file for exactly that reason, and all measure 0 here anyway.
@@ -446,6 +472,20 @@ if (hard.length === 0) {
     ) {
       counts.levelAssertedOverNamedBody++;
     }
+    // Complementary to the check above: asserts a level, but names NO body
+    // at all — see the counts{} entry for levelAssertedWithNoBody. Checks
+    // BOTH kosherType and kosherLevel (levelAssertedOverNamedBody above only
+    // checks kosherType) — measured live: 0 records today assert via
+    // kosherLevel alone without kosherType also asserting, but the predicate
+    // is written to the full "asserts a level" definition, not the subset
+    // that happens to be non-empty today.
+    if (
+      FOOD_TYPES.has(p.type) &&
+      (LEVEL_ASSERTING_KOSHER_TYPES.has(p.kosherType) || p.kosherLevel === 'mehadrin') &&
+      !p.certifiedBy && !p.kosherAuthority
+    ) {
+      counts.levelAssertedWithNoBody++;
+    }
 
     // ── HARD (B1.1): certifiedBy is append-only relative to HEAD ─────────────
     if (headCertifiedBy && headCertifiedBy.has(p.id)) {
@@ -531,6 +571,13 @@ if (hard.length === 0) {
       ) {
         counts.restaurantsLevelAssertedOverNamedBody++;
       }
+      if (
+        FOOD_TYPES.has(r.type) &&
+        (LEVEL_ASSERTING_KOSHER_TYPES.has(r.kosherType) || r.kosherLevel === 'mehadrin') &&
+        !r.certifiedBy && !r.kosherAuthority
+      ) {
+        counts.restaurantsLevelAssertedWithNoBody++;
+      }
 
       // Same predicate as foodWithoutKashrut above — the merge's refusal
       // count under AGENTS.md's admission rule, not a completeness gap;
@@ -612,11 +659,13 @@ const RATCHET_KEYS = [
   'kashrutAuthorityUnknown',
   'freeTextCertifierUnmapped',
   'levelAssertedOverNamedBody',
+  'levelAssertedWithNoBody',
   'restaurantsDuplicateIds',
   'restaurantsShorthandLocation',
   'restaurantsOutOfBounds',
   'restaurantsCertificateValidUntilWithoutUrl',
   'restaurantsLevelAssertedOverNamedBody',
+  'restaurantsLevelAssertedWithNoBody',
   'restaurantsFoodWithoutKashrut',
 ];
 
