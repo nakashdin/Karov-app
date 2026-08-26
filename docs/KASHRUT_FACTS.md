@@ -1868,9 +1868,45 @@ Not "are these two different numbers?" but:
 
 > **Name a failure that moves both. If one exists, you have one surface measured twice.**
 
-`kosher`-anchors and parsed-count fail that test — a missing `kosher` key moves both. `latitude`-anchors
-pass it: no defect in the `kosher` key's handling can change how many `"latitude":` tokens are in the raw
-text.
+**And the test is only meaningful against a named defect class.** A pair that passes for one defect fails
+for another, so "is this a real second surface?" is not a question with a yes/no answer — it has an answer
+per defect. Name the class before applying it.
+
+Worked through on this guard. Perturbations against the live feed, measured not reasoned:
+
+| perturbation | parsed | `kosher` | `latitude` | parsed-vs-`kosher` | `kosher`-vs-`latitude` |
+|---|---|---|---|---|---|
+| `kosher` key removed from one store | 119 | 119 | 120 | **silent** | **THROW** |
+| `latitude` key removed from one store | 119 | 120 | 119 | **THROW** | **THROW** |
+| both keys removed | 119 | 119 | 119 | silent | silent |
+| whole store object removed | 119 | 119 | 119 | silent | silent |
+
+Row 1 is why the cross-key check was added. **Row 2 is the correction**: a missing `latitude` is already
+caught by the original parsed-vs-`kosher` comparison. The two checks are not redundant — they cover
+*opposite* defects.
+
+**So the earlier claim that `latitude`-anchors are "a second surface for parsed-count" was wrong, and wrong
+in this entry's own way.** Apply §26b to the pair (parsed, `latitude`) and name a failure that moves both:
+removing a `latitude` key does exactly that — row 2 measures it. That pair fails the test just as
+(parsed, `kosher`) does.
+
+> **It is the triple that passes, not any pair.** Neither anchor is a second surface for parsed-count on its
+> own. What works is that the two anchors are second surfaces **for each other**, so any single-key defect
+> leaves one disagreement standing. **Coverage is a property of the set, not of any member of it.**
+
+That correction matters because §26b is written to be reused. Someone applying it later to
+(parsed, `latitude`) would get a clean pass and stop — having done the identical thing §26a documents, one
+substitution over, inside the entry that warns against it.
+
+### 26b-i. The remit boundary — stated, because a known boundary is load-bearing
+
+Rows 3 and 4 are the same row. **Dual-key loss and a legitimately closed branch are numerically
+indistinguishable**, and no count-based check can separate them.
+
+That is §26c holding, not failing: the guard is blind exactly where the world is entitled to change the
+quantity. Recorded as a **boundary of the remit**, not a gap to be closed — because a boundary someone has
+examined and named is load-bearing in a way an unexamined one is not, and the next person to notice the
+blind spot should find the reasoning already here rather than re-derive it and propose a floor.
 
 ### 26c. Why "count a second key" is the fix and a floor is not
 
