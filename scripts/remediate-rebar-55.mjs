@@ -21,12 +21,18 @@
  * cases the many-to-one matcher below exists to catch, and the retired
  * script could not have detected that.
  *
- * REPORT ONLY — this file does not write to places.osm.json or
- * restaurants.osm.json. It reads the real dataset, fetches the real live
- * feed, computes what each record's fields WOULD become under the same
- * evidence ceiling Unit 1 already uses, and prints the full diff. The write
- * itself is a separate, later, explicitly-gated step once the owner has seen
- * this report.
+ * DRY RUN BY DEFAULT. Always prints the full diff. Only writes to
+ * places.osm.json/restaurants.osm.json when called with apply:true (CLI:
+ * --apply) — same structural gate as import-rebar.mjs: the write is
+ * reachable ONLY inside the terminal `else` branch of an `if (!apply) {...}
+ * else if (allWrites.length === 0) {...} else {...}` chain, not behind an
+ * early return, so reaching it without --apply is impossible by
+ * construction rather than by one control-flow detail staying correct.
+ * Creates a timestamped backup of both dataset files before writing.
+ * main() takes NO DEFAULTS on placesPath/restaurantsPath/backupRoot/apply —
+ * same reasoning as import-rebar.mjs: a default of "the real dataset" means
+ * a caller that omits a parameter writes production silently. The one real
+ * call site is this file's own entry-point guard, below.
  *
  * FIVE fields, not three — AGENTS.md: "Provenance לכל רשומה. source +
  * sourceUrl + lastVerifiedAt ככל שאפשר." Writing kosherType/kosherLevel/
@@ -51,16 +57,19 @@
  * matcher Unit 1's importer uses — rather than re-deriving matching logic a
  * second time (§17 face 3: logic imported, never duplicated).
  *
- * Usage: node scripts/remediate-rebar-55.mjs
+ * Usage:
+ *   node scripts/remediate-rebar-55.mjs            # dry-run + report (default)
+ *   node scripts/remediate-rebar-55.mjs --apply     # writes, with backup
  */
-import { readFileSync } from 'node:fs';
-import { resolve, dirname } from 'node:path';
+import { readFileSync, writeFileSync, copyFileSync, mkdirSync } from 'node:fs';
+import { resolve, dirname, join } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { recordKashrutWrite } from './shared/kashrut-write.mjs';
 import { fetchRebarStores, matchRebarStores } from './shared/rebar-feed.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const PLACES_PATH = resolve(root, 'src/data/generated/places.osm.json');
+const RESTAURANTS_PATH = resolve(root, 'src/data/generated/restaurants.osm.json');
 const FEED_URL = 'https://rebar.co.il/our-stores/';
 
 const BASIS = {
@@ -74,6 +83,10 @@ function readNoBom(p) {
   const buf = readFileSync(p);
   const s = (buf[0] === 0xEF && buf[1] === 0xBB && buf[2] === 0xBF) ? buf.slice(3) : buf;
   return JSON.parse(s.toString('utf8'));
+}
+function writeNoBom(p, data) {
+  const BOM = Buffer.from([0xEF, 0xBB, 0xBF]);
+  writeFileSync(p, Buffer.concat([BOM, Buffer.from(JSON.stringify(data, null, 2), 'utf8')]));
 }
 
 /**
@@ -165,7 +178,7 @@ function proposedAfter(record, runDate) {
   return clone;
 }
 
-export async function main({ fetchImpl, placesPath }) {
+export async function main({ fetchImpl, placesPath, restaurantsPath, backupRoot, apply }) {
   const places = readNoBom(placesPath);
   const existingRebar = places.filter((p) => typeof p.id === 'string' && p.id.startsWith('rebar-'));
   // In scope: the 53 asserting the fabricated literal, PLUS the 2 with no
@@ -316,6 +329,36 @@ export async function main({ fetchImpl, placesPath }) {
   }
   for (const line of planLines) console.log(line);
 
+  // Structural gate, not a control-flow gate — same reasoning as
+  // import-rebar.mjs (docs/AGENTS.md's own near-miss: an early-return-based
+  // guard is correct in isolation but depends on nobody ever reordering it;
+  // an `if (apply) {...}` wrapping the write itself makes reaching it
+  // without --apply impossible by construction).
+  if (!apply) {
+    console.log(
+      allWrites.length > 0
+        ? '\n(dry run — nothing written. Re-run with --apply to write the plan above.)\n'
+        : '\n(dry run — nothing written. Nothing to write, so --apply would not write anything either.)\n',
+    );
+  } else if (allWrites.length === 0) {
+    console.log('\nNothing to write.\n');
+  } else {
+    const restaurants = readNoBom(restaurantsPath);
+
+    const backupDir = join(backupRoot, 'data-backups', 'remediate-rebar-55');
+    mkdirSync(backupDir, { recursive: true });
+    const stamp = new Date().toISOString().replace(/[:.]/g, '-');
+    copyFileSync(placesPath, join(backupDir, `places.osm.${stamp}.json`));
+    copyFileSync(restaurantsPath, join(backupDir, `restaurants.osm.${stamp}.json`));
+
+    const { newPlaces, newRestaurants } = applyPlan(places, restaurants, allWrites, runDate);
+    writeNoBom(placesPath, newPlaces);
+    writeNoBom(restaurantsPath, newRestaurants);
+
+    console.log(`\n✓ remediated ${allWrites.length} record(s) in places.osm.json and restaurants.osm.json.`);
+    console.log(`  backup: ${backupDir}\n`);
+  }
+
   return {
     existingRebar, needsRemediation, confirmedTrue, confirmedFalse, confirmedOther,
     ambiguousInScope, ambiguousResolved, noMatchInScope, allWrites, planLines, runDate,
@@ -323,15 +366,14 @@ export async function main({ fetchImpl, placesPath }) {
 }
 
 /**
- * Applies every proposed write to a CLONE of the full places array (never
- * the original) — used only by the disposable-worktree validation step, not
- * by the dry-run report path above. restaurants.osm.json mirrors the same
- * places (Unit 1's importer keeps them in lockstep), so the same field
- * writes are applied to matching ids there too, same as Unit 1. `runDate`
- * must be the SAME value main() computed for this run (its return value
- * includes it) — never recomputed here, or a validation run that straddles
- * a UTC midnight could write two different dates for what should be one
- * consistent verification pass.
+ * Applies every proposed write to a CLONE of the full places/restaurants
+ * arrays (never the originals) — used by main()'s own --apply path above,
+ * and separately importable for a disposable-worktree validation run that
+ * wants to exercise the exact same function without going through the real
+ * dataset paths. `runDate` must be the SAME value main() computed for this
+ * run (its return value includes it) — never recomputed here, or a run
+ * that straddles a UTC midnight could write two different dates for what
+ * should be one consistent verification pass.
  */
 export function applyPlan(places, restaurants, allWrites, runDate) {
   const writeIds = new Set(allWrites.map((w) => w.record.id));
@@ -341,5 +383,10 @@ export function applyPlan(places, restaurants, allWrites, runDate) {
 }
 
 if (import.meta.url === pathToFileURL(process.argv[1]).href) {
-  await main({ placesPath: PLACES_PATH });
+  await main({
+    placesPath: PLACES_PATH,
+    restaurantsPath: RESTAURANTS_PATH,
+    backupRoot: root,
+    apply: process.argv.slice(2).includes('--apply'),
+  });
 }
