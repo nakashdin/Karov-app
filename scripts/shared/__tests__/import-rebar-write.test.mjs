@@ -20,10 +20,10 @@
 // checks specific field VALUES, an exact count delta, and byte-identical
 // backup content — not just "something changed."
 import assert from 'node:assert/strict';
-import { readFileSync, writeFileSync, mkdtempSync, rmSync, existsSync, readdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdtempSync, rmSync, existsSync, readdirSync, cpSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join, resolve, dirname } from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 import { main } from '../../import-rebar.mjs';
 
 let passed = 0;
@@ -184,43 +184,63 @@ test('output validation (what is reachable without validate-data.mjs, which cann
 rmSync(applyResult.dir, { recursive: true, force: true });
 
 // ── FIRE IT: delete the write branch, confirm red, restore, confirm green ─
-// Done by editing the actual source file on disk (not the in-memory
-// import), since the write logic lives inside main()'s closure — this
-// mirrors the sabotage discipline used everywhere else in this project.
-// Safe to do directly in the shared checkout (not a worktree): this test
-// never touches the real dataset regardless of what the source says, since
-// placesPath/restaurantsPath/backupRoot are always temp paths here.
+//
+// NEVER writes the tracked scripts/import-rebar.mjs, not even briefly with
+// a finally-restore. This checkout is shared by multiple sessions
+// (AGENTS.md's own standing warning), and the risk it names is about the
+// MECHANISM — a Ctrl+C, a crash, or another session's `git add` landing
+// inside the write-then-restore window — not about which file, and not
+// about whether the dataset itself is touched. `finally` does not close
+// that window: Node's default SIGINT and any SIGKILL/hard crash terminate
+// without unwinding it, and a "source restored" follow-up test only ever
+// runs in the case that was never actually at risk. The state a crash
+// would leave behind here is the worst available one — a silently
+// disabled write, `} else if (false) {`, committed: `--apply` would report
+// success and write nothing, the exact quiet-failure shape, in the one
+// file whose entire purpose is proving the write path is NOT that.
+//
+// Instead: copy scripts/ WHOLESALE to a temp directory, sabotage the COPY,
+// import from the copy. Every import-rebar.mjs dependency is a relative
+// path inside scripts/ (./shared/rebar-feed.mjs, ./shared/kashrut-write.mjs,
+// which itself resolves ../reports/kashrut-registry.json relative to
+// itself) — copying the whole directory satisfies all of them. `root`
+// inside the copy is never used for anything that matters, since every
+// path main() touches is now an injected parameter with no default. A
+// crash mid-sabotage leaves a stray temp directory, not a corrupted
+// tracked file — no git operation is involved at any point in this test.
 
-const IMPORT_REBAR_PATH = resolve(ROOT, 'scripts', 'import-rebar.mjs');
+const SCRIPTS_DIR = resolve(ROOT, 'scripts');
 
-await asyncTest('FIRE: with the write branch disabled, the record-count-increases-by-1 assertion goes red', async () => {
-  const original = readFileSync(IMPORT_REBAR_PATH, 'utf8');
-  const marker = '  } else {\n    const newPlaces = newStores.map(buildNewPlace);';
-  assert.ok(original.includes(marker), 'sabotage anchor text not found in the current source — update this test\'s anchor to match the real code');
-  const sabotaged = original.replace(marker, '  } else if (false) {\n    const newPlaces = newStores.map(buildNewPlace);');
-  writeFileSync(IMPORT_REBAR_PATH, sabotaged, 'utf8');
-
-  let sabotagedResult;
+await asyncTest('FIRE: with the write branch disabled (in an isolated COPY of scripts/, never the tracked file), the record-count-increases-by-1 assertion goes red', async () => {
+  const copyDir = mkdtempSync(join(tmpdir(), 'import-rebar-scripts-copy-'));
   try {
-    // Re-import with a cache-busting query so Node picks up the just-written sabotaged source.
-    const { main: sabotagedMain } = await import(`../../import-rebar.mjs?sabotage=${Date.now()}`);
+    cpSync(SCRIPTS_DIR, copyDir, { recursive: true });
+    const copiedImportRebarPath = join(copyDir, 'import-rebar.mjs');
+
+    const original = readFileSync(copiedImportRebarPath, 'utf8');
+    const marker = '  } else {\n    const newPlaces = newStores.map(buildNewPlace);';
+    assert.ok(original.includes(marker), 'sabotage anchor text not found in the current source — update this test\'s anchor to match the real code');
+    const sabotaged = original.replace(marker, '  } else if (false) {\n    const newPlaces = newStores.map(buildNewPlace);');
+    writeFileSync(copiedImportRebarPath, sabotaged, 'utf8');
+
+    const { main: sabotagedMain } = await import(pathToFileURL(copiedImportRebarPath).href + `?sabotage=${Date.now()}`);
     const { dir, placesPath, restaurantsPath } = makeTempFixture();
     try {
       await sabotagedMain({ fetchImpl: fakeFetchImpl(SYNTHETIC_FEED_ONE_NEW_STORE), placesPath, restaurantsPath, backupRoot: dir, apply: true });
-      sabotagedResult = readJson(placesPath);
+      const sabotagedResult = readJson(placesPath);
+      assert.equal(sabotagedResult.length, SEED_PLACES.length, 'expected the sabotaged (write-disabled) version to add nothing — if it added a record, the sabotage did not actually disable the branch');
     } finally {
       rmSync(dir, { recursive: true, force: true });
     }
   } finally {
-    writeFileSync(IMPORT_REBAR_PATH, original, 'utf8');
+    rmSync(copyDir, { recursive: true, force: true });
   }
-
-  assert.equal(sabotagedResult.length, SEED_PLACES.length, 'expected the sabotaged (write-disabled) version to add nothing — if it added a record, the sabotage did not actually disable the branch');
 });
 
-test('restored: the source file is back to its original content', () => {
-  const current = readFileSync(IMPORT_REBAR_PATH, 'utf8');
-  assert.ok(current.includes('} else {\n    const newPlaces = newStores.map(buildNewPlace);'), 'source was not correctly restored after the sabotage fire');
+test('the real, tracked scripts/import-rebar.mjs was never modified — the sabotage above operated entirely on a temp copy', () => {
+  const real = readFileSync(resolve(SCRIPTS_DIR, 'import-rebar.mjs'), 'utf8');
+  assert.ok(real.includes('} else {\n    const newPlaces = newStores.map(buildNewPlace);'), 'the real write branch is not in its expected, un-sabotaged form');
+  assert.ok(!real.includes('else if (false)'), 'the real file must never contain the sabotage marker');
 });
 
 // ── apply:false against the SAME live fixture (newStores > 0) ───────────

@@ -64,6 +64,28 @@
  * (top-of-file prose) independently of comment stripping, kept as
  * defense-in-depth alongside it rather than relying on stripComments alone.
  *
+ * STRING-AWARENESS GOVERNS COMMENT DETECTION ONLY — read this before
+ * "fixing" a level literal that shows up inside a STRING value (as opposed
+ * to inside a comment). stripComments tracks string state so it never
+ * mistakes a `/*` or `//` sequence inside a string for a real comment
+ * delimiter; it does NOT, and must not, exempt string CONTENT from
+ * candidate detection afterward. A kosherType/kosherLevel-shaped pattern
+ * sitting inside some OTHER field's string value (e.g. a note or
+ * description that happens to quote the literal, INSIDE a real enclosing
+ * object literal — not the bare top-level case the null-block rule
+ * covers) is still found and still checked. This is deliberate, not an
+ * oversight: distinguishing "real assignment" from "level literal quoted
+ * inside another string" would require exactly the kind of narrowing that
+ * created this file's own worst bug so far — the `/* *\/` strip added to
+ * cure one observed false positive (import-rebar.mjs's own JSDoc) that
+ * introduced a false NEGATIVE (a real violation surviving undetected
+ * whenever a later, unrelated comment existed anywhere in the file). Erring
+ * toward over-inclusion here (a candidate that turns out to resolve fine,
+ * or that a human decides is a false positive on inspection) is far safer
+ * than erring toward under-inclusion (a bypass nobody notices) — the same
+ * "unknown is better than fabricated" posture this whole project runs on.
+ * Do not add a check that treats string CONTENT as exempt.
+ *
  * KNOWN, NOT FIXED HERE: `הרב רובין` (no gershayim) resolves in the
  * registry; `בד״ץ הרב רובין` (with gershayim, U+05F4) does not. Per B1.1,
  * gershayim-normalizing `certifiedBy` is deliberately out of scope for any

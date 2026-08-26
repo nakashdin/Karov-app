@@ -8,7 +8,11 @@
 // and a test asserting an exact total would go stale on every remediation
 // rather than staying a stable proof of the predicate itself.
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import { resolve, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { findLevelAssertionViolations, analyzeSource, stripComments } from '../level-assertion-guard.mjs';
+import { LEVEL_ASSERTING_KOSHER_TYPES as CANONICAL } from '../kashrut-conflict-resolution.mjs';
 
 let passed = 0;
 function test(name, fn) {
@@ -175,5 +179,41 @@ test('a violation with no certifiedBy at all states that plainly, not a registry
   assert.ok(noEvidence, 'expected at least one no-certifiedBy-at-all case (most of the import-*.mjs population)');
   assert.match(noEvidence.reason, /no certifiedBy literal/);
 });
+
+// ── Drift check: the three non-canonical copies of LEVEL_ASSERTING_KOSHER_
+// TYPES/LEVEL_BEARING_TYPES (kashrut-write.mjs, validate-data.mjs,
+// audit-358-level-removal.mjs) must still equal the canonical export this
+// file imports. Not consolidated here — each of those three has its own
+// ratchet/enforcement role and changing them is a separate, separately-
+// reviewed change — but a header comment claiming "kept in sync" is not
+// itself a check, and this repo has been burned by exactly that shape
+// before (§17 face 3). Reads each declaration from its OWN source text
+// (they're unexported module-private consts, so there is nothing to
+// import) rather than re-typing the expected value a fifth time, which
+// would just be a fifth copy to drift.
+
+const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
+
+function extractSetLiteral(filePath, constName) {
+  const src = readFileSync(resolve(ROOT, filePath), 'utf8');
+  const re = new RegExp(`const ${constName}\\s*=\\s*new Set\\(\\[([^\\]]*)\\]\\)`);
+  const m = src.match(re);
+  if (!m) return null;
+  return new Set(m[1].split(',').map((s) => s.trim()).filter(Boolean).map((s) => s.slice(1, -1)));
+}
+
+const DRIFT_TARGETS = [
+  { file: 'scripts/shared/kashrut-write.mjs', constName: 'LEVEL_ASSERTING_KOSHER_TYPES' },
+  { file: 'scripts/validate-data.mjs', constName: 'LEVEL_ASSERTING_KOSHER_TYPES' },
+  { file: 'scripts/reports/audit-358-level-removal.mjs', constName: 'LEVEL_BEARING_TYPES' },
+];
+
+for (const { file, constName } of DRIFT_TARGETS) {
+  test(`DRIFT CHECK: ${file}'s ${constName} still equals the canonical export (kashrut-conflict-resolution.mjs) — not consolidated, just watched`, () => {
+    const found = extractSetLiteral(file, constName);
+    assert.ok(found, `could not find "const ${constName} = new Set([...])" in ${file} — either it moved/renamed (update this test's target) or the extraction regex needs to change`);
+    assert.deepEqual([...found].sort(), [...CANONICAL].sort(), `${file}'s ${constName} has drifted from the canonical export`);
+  });
+}
 
 console.log(`\n${passed} passed${process.exitCode ? ', with failures' : ''}`);
