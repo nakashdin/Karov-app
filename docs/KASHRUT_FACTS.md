@@ -1412,6 +1412,74 @@ than confirming or correcting it — so it belongs beside §17, not inside it.
 
 ---
 
+## 20. Record identity is not `id` — ~205 of the 384 "orphans" already exist under a different id
+
+### 20a. The finding
+
+Every population reported for §18e was computed by comparing the two files **by `id`**. That is not identity.
+
+| | Architect | Reviewer | agreed |
+|---|---|---|---|
+| orphans by id | 384 | 384 | ✔ |
+| **confirmed duplicates** (same business, different id) | 207 | 205 | **205–207** |
+| **real recovery** — new AND evidenced | 43 | 45 | **43–45** |
+| **genuinely evidence-free** | **134** | **134** | **exact** |
+| positively new (unique phone absent from places) | 85 | 77 | 77–85 |
+| undetermined (no phone, no name/address match) | 94 | 88 | 88–94 |
+
+**The owner was told 205 recoverable, then 123. It is ~44.** The salvageable pocket is a fifth of the first
+figure.
+
+**Of the records carrying no kashrut evidence, 45 are duplicates — and all 45 have a twin that carries
+kashrut. Not most: all.** Independently derived twice. Those were never evidence-free businesses; they are
+duplicate rows of businesses already verified. The evidence was never missing — **the identity was.**
+
+**A merge keyed on `id` would create ~205 duplicate businesses in the app, and `data:validate` would pass** —
+different ids, so the duplicate-id check is clean.
+
+### 20b. The mechanism — §19's defect, two levels further down
+
+Transliteration and spelling variance at **record** identity, not just locality identity:
+
+| Shape | Example |
+|---|---|
+| Latin-tail vs Hebrew-tail id | `burgerim-eilat` ↔ `burgerim-אילת` — **all 39 orphan burgerim ids have a Latin tail; 37 of 40 places burgerim ids have a Hebrew tail** |
+| one-letter Hebrew spelling | `humus-eli-…-קריית-מוצקין` ↔ `humus-eli-…-קרית-מוצקין` · `פטרוזיליה` ↔ `פיטרוזיליה` |
+| transliterated **name** | `Meat Night` ↔ `מיט נייט` · `New Deli` ↔ `ניו דלי עזריאלי גבעתיים` |
+| numeric vs slug id | `9400025` ↔ `manual-aroma-tzomset-urim` · `9000094` ↔ `dominos-v2-d47899c8` |
+| chain name vs branch name | `ארומה אספרסו בר` ↔ `ארומה ביג` (same unique phone) |
+
+**§19 is not parallel to this — it is one of its causes.** `פטרוזיליה` / `מלכה` / `Meat Night` / `Bodega` are
+filed under `קריית מאיר` in one file and `תל אביב` in the other. `קריית מאיר` is one of §19c's zero-place
+localities. A business filed under a neighbourhood in one file and the city in the other becomes two records
+that no city-keyed matcher can pair. **Items 3 and 5 are the same defect meeting at different depths.**
+
+Also: **31 duplicate pairs disagree on coordinates by more than 1 km** — worst 111.4 km
+(`humus-eli-…-צמח-טבריה` ↔ `humus-eli-…-צמח`, which also carries a fabricated cert date), then 18.2, 15.0,
+12.0. Both files assert their own.
+
+### 20c. Three matchers failed, and the failure mode was identical each time
+
+| | Result | Why it failed |
+|---|---|---|
+| address alone | **186** | 672 addresses in `places.osm.json` are shared by >1 record, one by **39**. Paired `פיצה האט` with `אצה`. |
+| geography ≤50 m + same type | 106 | dense urban geography is not identity — `לנדוור` vs `רובן` at 13 m |
+| name similarity used to *validate* phone matches | would have cut 205 → 142 | **used a name heuristic to check a phone match, discarding the only thing that made it independent** |
+
+**All three were caught by printing PAIRS rather than counts.** Every one produced a plausible-looking number;
+none was detectable from the number alone. **A count is not reviewable. A sample is.**
+
+The third is the subtlest and worth keeping: when a second signal corroborates a first, validating it with a
+*third* signal correlated to the first destroys the independence that made the corroboration worth anything.
+
+### 20d. What is NOT determined
+
+**88–94 records have no phone and no name/address match — the instruments cannot see them.** That is not
+"probably new"; it is unknown. Reported as a range with its mechanism rather than a fourth confident number,
+because three confident numbers have already been wrong here.
+
+---
+
 ## Superseded numbers — do not requote
 
 | Wrong | Correct | Why |

@@ -1,4 +1,20 @@
-# Acceptance predicate — the owner's directive, pre-registered
+# Acceptance predicate — REVIEWER-authored criteria for judging work on the owner's directive
+
+> ### ⚠️ AUTHORSHIP — read this before treating anything below as a requirement
+>
+> **This document was written by the Reviewer, not by the project owner.** It pre-registers the criteria the
+> *Reviewer* will apply when verifying work on the owner's directive. It is not a statement of the owner's
+> requirements, and nothing in it carries owner authority.
+>
+> The distinction is load-bearing and has already been missed once: an agent read this as *"the owner's own
+> pre-registered, binding acceptance criteria"* and designed against it as though the thresholds here had been
+> chosen by the owner. They were not. Every specific value in this file — ratios, taxonomy members, field
+> lists — is a reviewer's proposal, **challengeable on its merits by anyone including the Implementer**.
+>
+> The owner's actual requirements are their directive text alone. Where this document goes beyond it, that is
+> a reviewer raising the bar, which is legitimate — but it must be argued, not cited.
+>
+> **A peer's document cannot become owner authority by being committed to the repo.**
 
 **Written before any investigation findings exist.** Committed against HEAD `7d17cab`, dataset blob
 `2f041001668b`. Criteria decided from the code and data as they stand, so that none can be shaped by the
