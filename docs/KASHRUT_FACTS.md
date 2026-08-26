@@ -915,6 +915,35 @@ a copied function drifts from its original, or when a count is right about a fil
    with a needle that cannot carry an escape.** Punctuation is where the instrument breaks, so take it out of
    the needle rather than trying to match it correctly.
 
+### 17b. The sixth face — a countermeasure that shares the hazard it was written for
+
+Every face above is a check **decoupled from its subject**. This one is a check decoupled **from itself**.
+
+Asked whether `בד"ץ אגודת ישראל והרבנות המקומית` was reviewQueue-deferred or simply absent, two consecutive
+searches of `kashrut-registry.json` returned **zero**. It is in the reviewQueue.
+
+| Attempt | Why it returned zero |
+|---|---|
+| exact match on `JSON.stringify(entry)` | haystack has `בד\"ץ` (escaped); needle had a bare `"` |
+| **the normalizing pass, written specifically to defeat the §9 gershayim trap** | **stripping quote marks leaves the backslash** — `בד\"ץ` → `בד\ץ`, which never equals `בדץ` |
+| search for `אגודת` | **found it** — a needle containing no quote character at all |
+
+**The countermeasure carried the same hole as the thing it was defending against, and failed silently and
+confidently — a countermeasure returning zero looks exactly like a countermeasure working.**
+
+**The rule, and it is more actionable than face 5's:** when a zero comes back, **retry with a needle that
+cannot carry an escape.** Punctuation is where the instrument breaks, so take it *out* of the needle rather
+than trying to match it correctly. Face 5 says to check; this says how.
+
+**And the generalisation worth keeping: a countermeasure is not automatically outside the hazard it was
+written for.** It is written by the same person, in the same idiom, against the same misunderstanding.
+
+What stopped a *correct-looking refutation of a true finding* from shipping — two zeros and a half-written
+"the string is not in the registry" — was that the claim under test named a **specific state**
+(reviewQueue-deferred) rather than a vague one, making it cheap to check and expensive to dismiss. Hence:
+**state findings at the precision that makes them falsifiable in one step.** Same principle as §17a's rule
+that a warning must carry the test that retires it.
+
 ### 17a. The inverse face — a warning that outlives its defect
 
 All five faces above are artifacts whose **subject went stale while their form stayed intact**. The inverse
