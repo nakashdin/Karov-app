@@ -3,6 +3,11 @@
  * Run: node scripts/import-pizzahut.mjs
  */
 import { readFileSync, writeFileSync } from 'fs';
+import { fileURLToPath } from 'url';
+import path from 'path';
+
+const __dir = path.dirname(fileURLToPath(import.meta.url));
+const ROOT = path.join(__dir, '..');
 
 const BOM = Buffer.from([0xEF, 0xBB, 0xBF]);
 function readNoBom(p) {
@@ -124,8 +129,8 @@ const BRANCHES = readFileSync(
 );
 const data = JSON.parse(BRANCHES.toString('utf8'));
 
-const RPATH = 'src/data/generated/restaurants.osm.json';
-const PPATH = 'src/data/generated/places.osm.json';
+const RPATH = path.join(ROOT, 'src/data/generated/restaurants.osm.json');
+const PPATH = path.join(ROOT, 'src/data/generated/places.osm.json');
 const rests  = readNoBom(RPATH);
 const places = readNoBom(PPATH);
 

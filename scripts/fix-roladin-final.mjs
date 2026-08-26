@@ -7,6 +7,11 @@
  * Run: node scripts/fix-roladin-final.mjs
  */
 import { readFileSync, writeFileSync } from 'fs';
+import { fileURLToPath } from 'url';
+import path from 'path';
+
+const __dir = path.dirname(fileURLToPath(import.meta.url));
+const ROOT = path.join(__dir, '..');
 
 const BOM = Buffer.from([0xEF, 0xBB, 0xBF]);
 function readNoBom(p) {
@@ -223,8 +228,8 @@ function buildNewEntry(r, id) {
 let idCounter = 9200300;
 function makeId() { return String(idCounter++); }
 
-const RPATH = 'src/data/generated/restaurants.osm.json';
-const PPATH = 'src/data/generated/places.osm.json';
+const RPATH = path.join(ROOT, 'src/data/generated/restaurants.osm.json');
+const PPATH = path.join(ROOT, 'src/data/generated/places.osm.json');
 
 function process(data) {
   const stats = { updated: 0, fixed: 0, removed: 0, unchanged: 0 };

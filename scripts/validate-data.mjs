@@ -85,10 +85,28 @@ const LEVEL_ASSERTING_KOSHER_TYPES = new Set(['mehadrin', 'rabanut_mehadrin', 'r
  * investigated.
  *
  * STALE ENTRIES ARE AN ERROR, not a no-op (checked below, same principle as
- * FROZEN_EXCLUSIONS' stale-entry check): if HEAD no longer shows this id at
- * this exact `to` date — because something else changed it again since —
- * the entry no longer describes anything real and must be removed. An
- * allowlist that only ever grows decays into a permission list.
+ * FROZEN_EXCLUSIONS' stale-entry check) — checked against the CURRENT
+ * DATASET being validated, not HEAD: if the current data no longer shows
+ * this id at this exact `to` date — because something else changed it again
+ * since — the entry no longer describes anything real and must be removed.
+ *
+ * A successful correction does NOT make its own entry stale. Once the
+ * corrective write lands, the record permanently shows the `to` date (there
+ * is nothing left to move it away from that value on its own), so the stale
+ * check never fires for an entry that did its job — it only fires if some
+ * LATER, unrelated change moves that same id to a third date. All 7 entries
+ * below are already in this permanent, non-stale state today. Without this,
+ * "decays into a permission list" reads as a promise that entries clean
+ * themselves up after use, which they do not — the mechanism only catches
+ * an entry that has become disconnected from reality, not one that already
+ * served its purpose.
+ *
+ * The BACKWARD-MOVEMENT DETECTION itself (not this list) is HEAD-relative,
+ * same limitation as the certifiedBy append-only check above: a backdate
+ * that gets committed becomes the new HEAD and is invisible to every later
+ * run — this can only catch a regression happening in the same uncommitted
+ * change that introduces it, which is exactly the moment a corrective
+ * commit needs an allowlist entry to get past it.
  */
 const LASTVERIFIEDAT_BACKDATE_ALLOWLIST = [
   // All seven from commit c8857c501, "fix(tzohar): stop the importer
