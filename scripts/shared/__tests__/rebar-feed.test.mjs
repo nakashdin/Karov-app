@@ -5,7 +5,7 @@
 // coordinates/addresses for the three genuine ambiguity cases (labeled),
 // plus constructed-but-realistic cases for the shape checks (also labeled).
 import assert from 'node:assert/strict';
-import { parseRebarStores, countStoreAnchors, matchRebarStores, fetchRebarStores } from '../rebar-feed.mjs';
+import { parseRebarStores, countStoreAnchors, countLatitudeAnchors, matchRebarStores, fetchRebarStores } from '../rebar-feed.mjs';
 
 let passed = 0;
 const queue = [];
@@ -119,12 +119,38 @@ function fakeFetch(text, ok = true, status = 200) {
 }
 
 test('fetchRebarStores throws when the parsed count is LOWER than the anchor count — the actual end-to-end version of the countermeasure that would have caught the missing רמב"ם', async () => {
-  // Two real anchors, but the second store is deliberately malformed (missing "city") so only one parses.
-  const twoAnchorsOneParses = FIXTURE_MAROM_NAVE + '\\"name\\":\\"Broken\\",\\"address\\":\\"x\\",\\"kosher\\":true,';
+  // Two real "kosher" anchors AND two real "latitude" anchors (so the
+  // cross-key check passes and does not fire first), but the second store
+  // is deliberately malformed (missing "city"/"active") so only one parses.
+  const twoAnchorsOneParses = FIXTURE_MAROM_NAVE + '\\"name\\":\\"Broken\\",\\"address\\":\\"x\\",\\"latitude\\":1,\\"kosher\\":true,';
   await assert.rejects(
     () => fetchRebarStores(fakeFetch(twoAnchorsOneParses)),
     /parsed 1 stores but the raw text has 2/,
   );
+});
+
+test('fetchRebarStores throws when the "kosher" and "latitude" anchor counts disagree — a whole store object missing its kosher key entirely, invisible to the parsed-vs-kosher-anchor check alone since both drop together', async () => {
+  // One real store (1 kosher anchor, 1 latitude anchor) plus a second store
+  // object that has a latitude but genuinely no "kosher" key at all.
+  const mismatched = FIXTURE_MAROM_NAVE + '\\"name\\":\\"NoKosherKey\\",\\"address\\":\\"x\\",\\"city\\":\\"y\\",\\"active\\":true,\\"latitude\\":2,\\"longitude\\":2,';
+  await assert.rejects(
+    () => fetchRebarStores(fakeFetch(mismatched)),
+    /"kosher": 1 vs "latitude": 2.*"kosher" key is short/s,
+  );
+});
+
+test('fetchRebarStores throws when "latitude" is the short key (the symmetric direction) — a store object with a kosher value but missing its latitude field entirely', async () => {
+  const mismatched = FIXTURE_MAROM_NAVE + '\\"name\\":\\"NoLatitudeKey\\",\\"address\\":\\"x\\",\\"city\\":\\"y\\",\\"active\\":true,\\"kosher\\":true,';
+  await assert.rejects(
+    () => fetchRebarStores(fakeFetch(mismatched)),
+    /"kosher": 2 vs "latitude": 1.*"latitude" key is short/s,
+  );
+});
+
+test('countLatitudeAnchors counts independently of countStoreAnchors — both read 2 on a real two-store control', () => {
+  const combined = FIXTURE_MAROM_NAVE + FIXTURE_RAMBAM;
+  assert.equal(countStoreAnchors(combined), 2);
+  assert.equal(countLatitudeAnchors(combined), 2);
 });
 
 test('fetchRebarStores does NOT throw when the parsed count matches the anchor count exactly', async () => {

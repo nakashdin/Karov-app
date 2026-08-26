@@ -105,6 +105,31 @@ export function countStoreAnchors(rawText) {
 }
 
 /**
+ * A SECOND, independent structural-key count (`latitude`'s value is also a
+ * bare literal, never a string, for the same reason `kosher`'s is —
+ * confirmed on the live feed: latitude/longitude/hasPickup/forceClose/
+ * accessibleRestroom/weekDaysOpeningHour/address/city/active/hasDelivery
+ * all read the identical count as kosher does; only `name` differs, because
+ * it also occurs outside store objects, which is exactly why anchoring on
+ * `kosher` rather than `name` was right in the first place).
+ *
+ * Necessary because countStoreAnchors() alone shares a blind spot with
+ * parseRebarStores(): both are downstream of the SAME `kosher` key
+ * existing at all. A store object missing its `kosher` key entirely is
+ * invisible to both measurements equally — parsed count and kosher-anchor
+ * count drop together, agree with each other, and the mismatch check never
+ * fires. Two measurements agreeing is not automatically corroboration; it
+ * can be a shared blind spot wearing the shape of one. This is the same
+ * mechanism as the earlier 106-vs-115 discrepancy: two counts that closed
+ * against each other while both were wrong. A genuinely independent third
+ * surface — a different key, not just a different count of the same key —
+ * is the actual countermeasure.
+ */
+export function countLatitudeAnchors(rawText) {
+  return (rawText.match(/\\"latitude\\":/g) ?? []).length;
+}
+
+/**
  * Parses the raw fetched page text into one object per branch. Pure —
  * exported separately from the fetch so it's testable against a captured
  * real fixture without a network call.
@@ -130,19 +155,33 @@ export function parseRebarStores(rawText) {
 /**
  * Fetches and parses in one call. `fetchImpl` is injectable for testing
  * without a real network call. Throws if the parsed store count doesn't
- * match the raw anchor count — a parsing shortfall must be loud, never a
- * silently-smaller array (the exact failure mode that dropped רמב"ם twice).
+ * match the raw "kosher" anchor count (a parsing shortfall — the exact
+ * failure mode that dropped רמב"ם twice) OR if the "kosher" anchor count
+ * disagrees with the independent "latitude" anchor count (a whole store
+ * object missing its kosher key, invisible to the first check alone — see
+ * countLatitudeAnchors' header). Never silently prefers either count when
+ * they disagree; the error names both and which is short.
  */
 export async function fetchRebarStores(fetchImpl = fetch) {
   const res = await fetchImpl(FEED_URL, { headers: FETCH_HEADERS });
   if (!res.ok) throw new Error(`fetchRebarStores: HTTP ${res.status}`);
   const text = await res.text();
   const stores = parseRebarStores(text);
-  const anchors = countStoreAnchors(text);
-  if (stores.length !== anchors) {
+  const kosherAnchors = countStoreAnchors(text);
+  const latitudeAnchors = countLatitudeAnchors(text);
+
+  if (kosherAnchors !== latitudeAnchors) {
+    const shortKey = kosherAnchors < latitudeAnchors ? 'kosher' : 'latitude';
     throw new Error(
-      `fetchRebarStores: parsed ${stores.length} stores but the raw text has ${anchors} "kosher": anchors — ` +
-      `${anchors - stores.length} store(s) failed to parse and would have been silently dropped.`,
+      `fetchRebarStores: independent structural-key counts disagree — "kosher": ${kosherAnchors} vs "latitude": ${latitudeAnchors}. ` +
+      `The "${shortKey}" key is short, meaning at least one store object is missing it entirely — invisible to a same-key ` +
+      `count check, since a missing key drops the same object from every measurement of that key equally.`,
+    );
+  }
+  if (stores.length !== kosherAnchors) {
+    throw new Error(
+      `fetchRebarStores: parsed ${stores.length} stores but the raw text has ${kosherAnchors} "kosher": anchors — ` +
+      `${kosherAnchors - stores.length} store(s) failed to parse and would have been silently dropped.`,
     );
   }
   return stores;
