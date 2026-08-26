@@ -171,7 +171,7 @@ const counts = {
   // record here cannot crash the app today. They exist because the file is
   // the live authority sync-greg-places.mjs restores FROM, and because
   // f2b15d5's writeCategoryGuarded only closed the erasure path, not this
-  // one. All five measured against live data before being baselined —
+  // one. All six measured against live data before being baselined —
   // see scripts/data-quality-baseline.json.
   restaurantsDuplicateIds: 0,
   restaurantsShorthandLocation: 0,
@@ -201,6 +201,26 @@ const counts = {
   // evidence and is downstream of the owner's Batch B call, not a code
   // change to make here.
   restaurantsLevelAssertedOverNamedBody: 0,
+  // NOT a completeness gap — the other three completeness-style checks
+  // (missingAddress/missingCityId/missingSource) were deliberately left
+  // off this file for exactly that reason, and all measure 0 here anyway.
+  // This one is different because of what §18e already establishes: 384
+  // records live ONLY in this file, and under merge-then-retire those
+  // records get ADMITTED into places.osm.json. AGENTS.md's admission rule
+  // is that a food place with no kashrut evidence never enters. Of the 384
+  // orphans, 205 carry a kashrut claim and 179 don't (154 restaurant, 25
+  // fast_food) — 205 + 179 = 384 exactly. So on this file,
+  // foodWithoutKashrut is not measuring a gap to close later; it is THE
+  // MERGE'S REFUSAL COUNT — how many records a merge is obliged to turn
+  // away under the rule that already governs every other admission. That
+  // number has to be visible and non-growing before anyone decides the
+  // file's fate, which is why it is a ratchet and the other three
+  // completeness checks are not. Same predicate as foodWithoutKashrut
+  // above (FOOD_TYPES && !kosherType && !kosherAuthorityGroup &&
+  // !certifiedBy) — whole-file count, not scoped to the 384 orphans; the
+  // 179 orphan figure is the §18e-specific fact this baseline exists to
+  // keep visible, not what the counter itself measures.
+  restaurantsFoodWithoutKashrut: 0,
 };
 
 function fail(msg) {
@@ -412,7 +432,7 @@ if (hard.length === 0) {
 
   // ── restaurants.osm.json (FACTS §18c) — ratchets only, no HARD failures.
   // Not app-facing, so a malformed record here cannot crash the app today;
-  // see the counts{} block above for why these five and not the full
+  // see the counts{} block above for why these six and not the full
   // places.osm.json check set. Reuses aliasMap loaded above rather than
   // reloading the registry a second time.
   if (Array.isArray(restaurants)) {
@@ -442,6 +462,13 @@ if (hard.length === 0) {
         aliasMap?.get(r.certifiedBy)?.authorityId
       ) {
         counts.restaurantsLevelAssertedOverNamedBody++;
+      }
+
+      // Same predicate as foodWithoutKashrut above — the merge's refusal
+      // count under AGENTS.md's admission rule, not a completeness gap;
+      // see the comment on the counts{} entry.
+      if (FOOD_TYPES.has(r.type) && !r.kosherType && !r.kosherAuthorityGroup && !r.certifiedBy) {
+        counts.restaurantsFoodWithoutKashrut++;
       }
     }
   }
@@ -515,6 +542,7 @@ const RATCHET_KEYS = [
   'restaurantsOutOfBounds',
   'restaurantsCertificateValidUntilWithoutUrl',
   'restaurantsLevelAssertedOverNamedBody',
+  'restaurantsFoodWithoutKashrut',
 ];
 
 const baseline = existsSync(BASELINE_PATH)
