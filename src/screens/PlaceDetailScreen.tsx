@@ -49,16 +49,34 @@ const TYPE_EMOJI: Record<string, string> = {
   tzaddik_grave: '🪦',
 };
 
+/**
+ * Shared between the body row and the (optional) claim row below it —
+ * pre-existing hardcoded literal (rule-3 backlog, not introduced here); kept
+ * as ONE constant rather than a second copy so adding the claim row doesn't
+ * add a new instance of the same magic string.
+ */
+const KASHRUT_ROW_LABEL = 'כשרות';
+
 // ─── Chips that appear under the name ────────────────────────────────────────
 
-function buildChips(place: ReturnType<typeof usePlace>['place']): string[] {
+function buildChips(place: ReturnType<typeof usePlace>['place'], strings: Strings): string[] {
   if (!place) return [];
   const chips: string[] = [];
   chips.push(placeTypeLabel[place.type]);
   if (place.category)   chips.push(categoryLabel[place.category]);
-  const kosherLabel = getKosherLabel(place);
-  if (kosherLabel) chips.push(kosherLabel);
-  if (place.certifiedBy) chips.push(place.certifiedBy);
+  // Every kashrut label part becomes its own chip — a named body and a
+  // level claim are independent statements (owner ruling) and must never
+  // be merged into one chip that reads as a single certification.
+  const kosherPartTexts = getKosherLabel(place, strings.kosher).map(p => p.text);
+  chips.push(...kosherPartTexts);
+  // certifiedBy is normally a SEPARATE "attributed source quote" chip from
+  // the resolved kashrut label. But when nothing else resolved,
+  // classifyKosherState's verbatimText fallback (Item 4 Unit 3, owner
+  // ruling 2026-08-27) already surfaces this exact same certifiedBy text as
+  // the kosher label part itself — pushing it again here would duplicate
+  // the identical chip. Only push it as a separate chip when it says
+  // something the kosher label didn't already show.
+  if (place.certifiedBy && !kosherPartTexts.includes(place.certifiedBy)) chips.push(place.certifiedBy);
   if (place.nusach) chips.push(`נוסח ${place.nusach}`);
   if (place.tags)   chips.push(...place.tags.filter(t => !(t in placeTypeLabel)));
   return chips;
@@ -142,8 +160,13 @@ export function PlaceDetailScreen() {
   }
 
   const dist     = location ? distanceKm(location, place.location) : null;
-  const chips    = buildChips(place);
-  const kosherLabel = getKosherLabel(place);
+  const chips    = buildChips(place, t);
+  // Body and claim are kept as separate parts, never joined into one string
+  // (owner ruling: a certifying body and a level claim are different
+  // kashruts) — see the two DetailRows below that render them.
+  const kosherParts = getKosherLabel(place, t.kosher);
+  const kosherBodyLabel  = kosherParts.find(p => p.kind === 'data')?.text ?? null;
+  const kosherClaimLabel = kosherParts.find(p => p.kind === 'claim')?.text ?? null;
   const accent   = theme.primary;
   const mapCenter: [number, number] = [place.location.latitude, place.location.longitude];
 
@@ -431,12 +454,27 @@ export function PlaceDetailScreen() {
             <>
               <DetailRow
                 icon="shield-checkmark-outline"
-                label="כשרות"
-                value={kosherLabel ?? '—'}
+                label={KASHRUT_ROW_LABEL}
+                value={kosherBodyLabel ?? '—'}
                 accent={accent}
-                empty={!kosherLabel}
+                empty={!kosherBodyLabel}
               />
-              {place.certifiedBy ? (
+              {kosherClaimLabel ? (
+                <DetailRow
+                  icon="information-circle-outline"
+                  label={KASHRUT_ROW_LABEL}
+                  value={kosherClaimLabel}
+                  accent={accent}
+                  quiet
+                />
+              ) : null}
+              {/* Suppressed when it would repeat the exact text already shown
+                  above as the kosher label itself — the verbatimText
+                  fallback (classifyKosherState, Item 4 Unit 3) surfaces
+                  place.certifiedBy verbatim when nothing else resolved, so
+                  quoting it again here as "attributed source" would show
+                  the identical string twice with no new information. */}
+              {place.certifiedBy && place.certifiedBy !== kosherBodyLabel ? (
                 <DetailRow
                   icon="chatbox-outline"
                   label={t.detail.attributedSource}

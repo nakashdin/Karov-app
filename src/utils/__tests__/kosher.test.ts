@@ -1,56 +1,59 @@
-import { getKosherLabel } from '../kosher';
+import { getPrimaryKosherLabel } from '../kosher';
+import { he } from '../../i18n/he';
 import places from '../../data/generated/places.osm.json';
 
-describe('getKosherLabel', () => {
+const strings = he.kosher;
+
+describe('getPrimaryKosherLabel / getKosherLabel', () => {
   it('null and absent certifierId produce identical output for the same record', () => {
     const base = { kosherType: undefined, kosherLevel: 'mehadrin' as const, kosherAuthorityGroup: 'unknown' as const, kosherAuthority: undefined };
-    const withNull = getKosherLabel({ ...base, certifierId: null });
-    const withAbsent = getKosherLabel({ ...base });
+    const withNull = getPrimaryKosherLabel({ ...base, certifierId: null }, strings);
+    const withAbsent = getPrimaryKosherLabel({ ...base }, strings);
     expect(withNull).toBe(withAbsent);
     expect(withNull).toBe('מהדרין');
   });
 
   it('a registered certifierId wins over everything else on the record, including a contradicting legacy level', () => {
-    const label = getKosherLabel({
+    const label = getPrimaryKosherLabel({
       certifierId: 'badatz-beit-yosef',
       kosherType: 'rabanut',
       kosherLevel: 'regular',
       kosherAuthorityGroup: 'rabbinate',
       kosherAuthority: undefined,
-    });
+    }, strings);
     expect(label).toBe('בד״ץ בית יוסף');
   });
 
   it('an unresolved certifierId (not in the registry) falls through to the legacy structured fields, not to null', () => {
-    const label = getKosherLabel({
+    const label = getPrimaryKosherLabel({
       certifierId: 'not-a-real-authority-id',
       kosherType: undefined,
       kosherLevel: 'mehadrin',
       kosherAuthorityGroup: 'badatz',
       kosherAuthority: undefined,
-    });
+    }, strings);
     expect(label).toBe('בד״ץ');
   });
 
   it('with no certifierId and no structured fields, falls back to the legacy kosherType label', () => {
-    const label = getKosherLabel({
+    const label = getPrimaryKosherLabel({
       certifierId: undefined,
       kosherType: 'badatz_beit_yosef',
       kosherLevel: undefined,
       kosherAuthorityGroup: undefined,
       kosherAuthority: undefined,
-    });
+    }, strings);
     expect(label).toBe('בד״ץ בית יוסף');
   });
 
   it('with nothing at all, returns null', () => {
-    const label = getKosherLabel({
+    const label = getPrimaryKosherLabel({
       certifierId: undefined,
       kosherType: undefined,
       kosherLevel: undefined,
       kosherAuthorityGroup: undefined,
       kosherAuthority: undefined,
-    });
+    }, strings);
     expect(label).toBeNull();
   });
 
@@ -69,25 +72,28 @@ describe('getKosherLabel', () => {
   // says 'mehadrin'. Reverting the `!== undefined` fix in kosher.ts makes
   // this fail by returning 'מהדרין' instead.
   it('kosherLevel: null does not resurrect the legacy kosherType claim it is withholding', () => {
-    const label = getKosherLabel({
+    const label = getPrimaryKosherLabel({
       certifierId: undefined,
       kosherType: 'mehadrin',
       kosherLevel: null,
       kosherAuthorityGroup: undefined,
       kosherAuthority: undefined,
-    });
+    }, strings);
     expect(label).not.toBe('מהדרין');
-    expect(label).toBe('גוף כשרות לא ידוע');
+    // Owner ruling, Item 4 Unit 3, 2026-08-27 (verbatim: "אם לא ידוע יש
+    // להציג כשר כשרות מקומית") supersedes the earlier Batch B1 string
+    // 'גוף כשרות לא ידוע' — see docs/KASHRUT_FACTS.md.
+    expect(label).toBe('כשר כשרות מקומית');
   });
 
   it('kosherLevel: null with a known rabbinate group renders the group, not the withheld level', () => {
-    const label = getKosherLabel({
+    const label = getPrimaryKosherLabel({
       certifierId: undefined,
       kosherType: 'rabanut_mehadrin',
       kosherLevel: null,
       kosherAuthorityGroup: 'rabbinate',
       kosherAuthority: undefined,
-    });
+    }, strings);
     expect(label).toBe('רבנות');
   });
 
@@ -103,21 +109,21 @@ describe('getKosherLabel', () => {
   // kosherType is also unset). Different meanings, correctly different
   // output — asymmetric with certifierId on purpose.
   it('kosherLevel: null and kosherLevel: undefined deliberately diverge when nothing else is set — unlike certifierId', () => {
-    const withNull = getKosherLabel({
+    const withNull = getPrimaryKosherLabel({
       certifierId: undefined,
       kosherType: undefined,
       kosherLevel: null,
       kosherAuthorityGroup: undefined,
       kosherAuthority: undefined,
-    });
-    const withUndefined = getKosherLabel({
+    }, strings);
+    const withUndefined = getPrimaryKosherLabel({
       certifierId: undefined,
       kosherType: undefined,
       kosherLevel: undefined,
       kosherAuthorityGroup: undefined,
       kosherAuthority: undefined,
-    });
-    expect(withNull).toBe('גוף כשרות לא ידוע');
+    }, strings);
+    expect(withNull).toBe('כשר כשרות מקומית');
     expect(withUndefined).toBeNull();
     expect(withNull).not.toBe(withUndefined);
   });
@@ -129,8 +135,8 @@ describe('getKosherLabel', () => {
     const mismatches: { id: string; withNull: string | null; withAbsent: string | null }[] = [];
     for (const p of places as { id: string; certifierId?: string | null }[]) {
       const { certifierId: _drop, ...rest } = p as { certifierId?: string | null } & Record<string, unknown>;
-      const withNull = getKosherLabel({ ...rest, certifierId: null } as Parameters<typeof getKosherLabel>[0]);
-      const withAbsent = getKosherLabel(rest as Parameters<typeof getKosherLabel>[0]);
+      const withNull = getPrimaryKosherLabel({ ...rest, certifierId: null } as Parameters<typeof getPrimaryKosherLabel>[0], strings);
+      const withAbsent = getPrimaryKosherLabel(rest as Parameters<typeof getPrimaryKosherLabel>[0], strings);
       if (withNull !== withAbsent) mismatches.push({ id: p.id, withNull, withAbsent });
     }
     expect(mismatches).toEqual([]);

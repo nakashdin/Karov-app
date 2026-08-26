@@ -186,4 +186,15 @@ export const en = {
     retry: 'Try again',
     retryLabel: 'Try again',
   },
+
+  kosher: {
+    rabbinate: 'Rabbinate',
+    rabbinateMehadrin: 'Rabbinate Mehadrin',
+    badatzGeneric: 'Badatz',
+    mehadrinGeneric: 'Mehadrin',
+    glattGeneric: 'Glatt',
+    kosherGeneric: 'Kosher',
+    unknownFloor: 'Kosher, local supervision',
+    claimedLevelPrefix: 'Claims kashrut:',
+  },
 } as const;

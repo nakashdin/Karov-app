@@ -6,7 +6,7 @@ import { makeStyles, radius, shadow, spacing, useTheme } from '../theme';
 import type { Tokens } from '../theme';
 import { useLanguage } from '../context/LanguageContext';
 import { transliterateHebrew } from '../utils/transliterate';
-import { categoryLabel, getKosherLabel } from '../utils/kosher';
+import { categoryLabel, getPrimaryKosherLabel } from '../utils/kosher';
 import { isCertificateExpired } from '../utils/certificate';
 import { displayPlaceName, getPlaceEmoji, placeTypeLabel } from '../utils/placeType';
 import { formatDistance } from '../utils/geo';
@@ -107,7 +107,7 @@ export function PlaceCard({ place, distanceKm, onPress }: PlaceCardProps) {
   const openStatus  = isCurrentlyOpen(place.openingHours, place.location);
   const todayHours  = todayHoursStr(place.openingHours);
   const showHoursRow = todayHours !== null || openStatus !== null;
-  const kosherLabel = isFood ? getKosherLabel(place) : null;
+  const kosherLabel = isFood ? getPrimaryKosherLabel(place, t.kosher) : null;
   const kosherColor = kosherBadgeColor(place, theme);
 
   // Second info chip (category / nusach)

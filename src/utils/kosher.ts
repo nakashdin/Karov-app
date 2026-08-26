@@ -1,4 +1,5 @@
 import type { Tokens } from '../theme';
+import type { Strings } from '../i18n';
 import { KosherCategory, KosherType, Place } from '../types';
 import { getKashrutAuthority } from '../data/kashrut/authorities';
 
@@ -115,21 +116,78 @@ export function groupedKosherTypes(rawTypes: Set<KosherType>): KosherType[] {
 }
 
 /**
- * Human-readable kosher label for a place — the single function that decides
- * what kashrut text a user sees, anywhere in the app.
- *
- * Precedence: `certifierId` (the registry — a specific, resolved body) wins
- * over everything below it. `certifierId === null` ("level known, body not
- * identified") and `certifierId` absent (never resolved) MUST fall through
- * to the exact same code path — they are indistinguishable to a user and
- * must be indistinguishable here. Do not special-case null; a null-specific
- * branch is one careless edit away from blanking every unresolved-body
- * record at once.
+ * The legacy hard-coded map from `kosherAuthority` (underscore namespace) to
+ * a display name — kept, NOT deleted, even though `certifierId`/the
+ * registry (hyphen namespace) is the current, correct path. `kosherAuthority`
+ * and `certifierId` are known NOT to be a safe string transform of each
+ * other (see docs/KASHRUT_FACTS.md), so this map is currently the ONLY thing
+ * rendering a name for the 519 records that carry `kosherAuthority` but no
+ * resolved `certifierId` — load-bearing duplication, in tension with
+ * authorities.ts's "nothing else may hard-code a certifier name" invariant,
+ * logged there as a known gap rather than silently carried.
  */
-export function getKosherLabel(place: Pick<Place, 'kosherType' | 'kosherLevel' | 'kosherAuthorityGroup' | 'kosherAuthority' | 'certifierId'>): string | null {
+const LEGACY_AUTHORITY_LABEL: Record<string, string> = {
+  rabbinate_tel_aviv:      'רבנות תל אביב',
+  rabbinate_jerusalem:     'רבנות ירושלים מהדרין',
+  badatz_beit_yosef:       'בד״ץ בית יוסף',
+  badatz_edah_hachareidis: 'בד״ץ העדה החרדית',
+  yoreh_deah_mahfoud:      'הרב מחפוד',
+  chatam_sofer:            'חוג חתם סופר',
+  badatz_kehilot:          'קהילות',
+  badatz_rubin:            'הרב רובין',
+  tzohar:                  'צהר',
+};
+
+/**
+ * The BODY/GROUP half of what a record states about its kashrut — a
+ * discriminated union, not a string, so a new variant with no display case
+ * is a `tsc` failure (see `renderKosherState`'s exhaustive switch below),
+ * never a silent runtime fallback. Deliberately separate from the LEVEL
+ * claim (`KosherClaimState`) — Item 4 Unit 3, owner ruling verbatim "לא, הם
+ * כשרויות שונות": a certifying body and a level word are different kashrut
+ * claims, never merged into one variant or one phrase.
+ */
+export type KosherBodyState =
+  | { kind: 'certifier'; authorityId: string }
+  | { kind: 'legacyAuthority'; authorityKey: string }
+  | { kind: 'rabbinateGroup'; mehadrin: boolean }
+  | { kind: 'badatzGroup' }
+  | { kind: 'independentGroup'; mehadrin: boolean }
+  | { kind: 'unknownGroupWithLevel' }
+  | { kind: 'unknownFloor' }
+  | { kind: 'legacyType'; type: KosherType }
+  | { kind: 'verbatimText'; text: string }
+  | { kind: 'none' };
+
+/** The LEVEL half — a source-stated claim, independent of whether a body was also named. */
+export type KosherClaimState =
+  | { kind: 'claim'; level: 'mehadrin' | 'glatt' }
+  | { kind: 'noClaim' };
+
+/**
+ * Classifies a place's raw kashrut fields into the body/claim state pair —
+ * pure data-in, data-out, no strings. `renderKosherState` turns this into
+ * display text; keeping classification separate from rendering is what lets
+ * the exhaustiveness check work on the classification alone.
+ *
+ * Precedence within the body axis: `certifierId` (the registry — a
+ * specific, resolved body) wins over everything below it. `certifierId ===
+ * null` ("level known, body not identified") and `certifierId` absent
+ * (never resolved) MUST fall through to the exact same variant — they are
+ * indistinguishable to a user and must be indistinguishable here. Do not
+ * special-case null; a null-specific branch is one careless edit away from
+ * blanking every unresolved-body record at once.
+ */
+export function classifyKosherState(
+  place: Pick<Place, 'kosherType' | 'kosherLevel' | 'kosherAuthorityGroup' | 'kosherAuthority' | 'certifierId' | 'claimedLevel' | 'certifiedBy'>,
+): { body: KosherBodyState; claim: KosherClaimState } {
+  const claim: KosherClaimState = place.claimedLevel != null
+    ? { kind: 'claim', level: place.claimedLevel }
+    : { kind: 'noClaim' };
+
   if (place.certifierId != null) {
     const authority = getKashrutAuthority(place.certifierId);
-    if (authority) return authority.nameHe;
+    if (authority) return { body: { kind: 'certifier', authorityId: place.certifierId }, claim };
   }
 
   const { kosherLevel, kosherAuthorityGroup, kosherAuthority } = place;
@@ -137,37 +195,163 @@ export function getKosherLabel(place: Pick<Place, 'kosherType' | 'kosherLevel' |
   // Use structured fields when available. `kosherLevel !== undefined` (not a
   // truthiness check) is deliberate: kosherLevel: null is a meaningful,
   // deliberately-undetermined state (Batch B1), and treating it as falsy
-  // would fall through to the legacy `kosherType` label below — resurrecting
-  // the exact fabricated-level claim the null was recording as withheld.
+  // would fall through to the legacy `kosherType` variant below —
+  // resurrecting the exact fabricated-level claim the null was recording as
+  // withheld.
   if (kosherAuthorityGroup || kosherLevel !== undefined) {
-    if (kosherAuthority) {
-      const byAuthority: Record<string, string> = {
-        rabbinate_tel_aviv:      'רבנות תל אביב',
-        rabbinate_jerusalem:     'רבנות ירושלים מהדרין',
-        badatz_beit_yosef:       'בד״ץ בית יוסף',
-        badatz_edah_hachareidis: 'בד״ץ העדה החרדית',
-        yoreh_deah_mahfoud:      'הרב מחפוד',
-        chatam_sofer:            'חוג חתם סופר',
-        badatz_kehilot:          'קהילות',
-        badatz_rubin:            'הרב רובין',
-        tzohar:                  'צהר',
-      };
-      const label = byAuthority[kosherAuthority];
-      if (label) return label;
+    if (kosherAuthority && LEGACY_AUTHORITY_LABEL[kosherAuthority]) {
+      return { body: { kind: 'legacyAuthority', authorityKey: kosherAuthority }, claim };
     }
-
     if (kosherAuthorityGroup === 'rabbinate') {
-      return kosherLevel === 'mehadrin' ? 'רבנות מהדרין' : 'רבנות';
+      return { body: { kind: 'rabbinateGroup', mehadrin: kosherLevel === 'mehadrin' }, claim };
     }
-    if (kosherAuthorityGroup === 'badatz') return 'בד״ץ';
-    if (kosherAuthorityGroup === 'independent') return kosherLevel === 'mehadrin' ? 'מהדרין' : 'כשר';
+    if (kosherAuthorityGroup === 'badatz') {
+      return { body: { kind: 'badatzGroup' }, claim };
+    }
+    if (kosherAuthorityGroup === 'independent') {
+      return { body: { kind: 'independentGroup', mehadrin: kosherLevel === 'mehadrin' }, claim };
+    }
     // unknown group
-    if (kosherLevel === 'mehadrin') return 'מהדרין';
-    return 'גוף כשרות לא ידוע';
+    if (kosherLevel === 'mehadrin') {
+      return { body: { kind: 'unknownGroupWithLevel' }, claim };
+    }
+    return { body: { kind: 'unknownFloor' }, claim };
   }
 
   // Legacy fallback
-  return place.kosherType ? (kosherTypeLabel[place.kosherType] ?? null) : null;
+  if (place.kosherType) {
+    return { body: { kind: 'legacyType', type: place.kosherType }, claim };
+  }
+  // Owner ruling, verbatim (2026-08-27): when NOTHING else resolved, the
+  // source's own certifiedBy text is still the record's own statement about
+  // itself — strictly better than nothing, and never invented by us. This is
+  // NOT a resolved certifier: no group is inferred, no certifierId is
+  // implied. Some of this population is a generic term (e.g. "רבנות מקומית",
+  // "כשרות מקומית") that happens to already BE the exact floor phrasing the
+  // owner ruled for the unknown case ("אם לא ידוע יש להציג כשר כשרות
+  // מקומית") — displaying it verbatim is not a misrepresentation there,
+  // it's the ruling arriving from the record's own text instead of our
+  // fallback string. Some of it names a real body ("בד\"ץ יורה דעה") that
+  // this function has no way to resolve without the registry's alias table
+  // (scripts/reports/kashrut-registry.json, outside src/ — see
+  // authority-normalize.mjs, which cannot be imported here; jest's roots
+  // and Metro's bundle both stop at src/). Resolving those properly, so
+  // they get a real certifierId/kosherAuthorityGroup instead of just
+  // verbatim text, is a separate, smaller, data-layer fix (Item 4 Unit 3
+  // follow-up) — this variant is deliberately the FLOOR for that population,
+  // not a substitute for actually resolving it.
+  if (place.certifiedBy) {
+    return { body: { kind: 'verbatimText', text: place.certifiedBy }, claim };
+  }
+  return { body: { kind: 'none' }, claim };
+}
+
+/**
+ * One piece of displayable kashrut text, tagged with what KIND of statement
+ * it is — a body/group fact (`data`) versus an unverified level claim
+ * (`claim`) — so a caller can style/order them, or render them as separate
+ * chips, but can never accidentally concatenate a certifying body and a
+ * level claim into one phrase that reads as a single certification (owner
+ * ruling: they are different kashruts).
+ */
+export interface KosherLabelPart {
+  kind: 'data' | 'claim';
+  text: string;
+}
+
+/**
+ * Renders a `KosherBodyState` to display text. The `switch` has NO
+ * `default` and assigns the narrowed-to-`never` remainder to `_exhaustive`
+ * — adding a body variant with no case here is a `tsc --noEmit` failure
+ * (`npm run typecheck`, gated in `verify` and CI), not a silent runtime
+ * fallback. Body names (`certifier`/`legacyAuthority`) are DATA from the
+ * registry/legacy map, never i18n copy — see LEGACY_AUTHORITY_LABEL's
+ * header and authorities.ts's own invariant. Every other variant is
+ * descriptive copy, read from `strings.kosher`.
+ */
+function renderBodyState(state: KosherBodyState, strings: Strings['kosher']): string | null {
+  switch (state.kind) {
+    case 'certifier': {
+      const authority = getKashrutAuthority(state.authorityId);
+      return authority ? authority.nameHe : null;
+    }
+    case 'legacyAuthority':
+      return LEGACY_AUTHORITY_LABEL[state.authorityKey] ?? null;
+    case 'rabbinateGroup':
+      return state.mehadrin ? strings.rabbinateMehadrin : strings.rabbinate;
+    case 'badatzGroup':
+      return strings.badatzGeneric;
+    case 'independentGroup':
+      return state.mehadrin ? strings.mehadrinGeneric : strings.kosherGeneric;
+    case 'unknownGroupWithLevel':
+      return strings.mehadrinGeneric;
+    case 'unknownFloor':
+      return strings.unknownFloor;
+    case 'legacyType':
+      return kosherTypeLabel[state.type] ?? null;
+    case 'verbatimText':
+      // Owner ruling: source text, displayed as source text — same slot as
+      // the floor (no group inferred, no certifierId implied), never styled
+      // or treated as a resolved certifier. See classifyKosherState's
+      // header comment on this variant for the full reasoning.
+      return state.text;
+    case 'none':
+      return null;
+    default: {
+      const _exhaustive: never = state;
+      throw new Error(`renderBodyState: unhandled KosherBodyState variant ${JSON.stringify(_exhaustive)}`);
+    }
+  }
+}
+
+/**
+ * Human-readable kashrut label parts for a place — the single function that
+ * decides what kashrut text a user sees, anywhere in the app. Returns an
+ * ORDERED LIST, not one string: a named body and a level claim are
+ * independent statements (owner ruling) and must never be concatenated into
+ * a phrase that reads as one certification. Callers that only want the
+ * primary line (chip UIs with one slot) take `parts[0]`; callers with room
+ * for multiple lines (PlaceDetailScreen's chip list) render every part.
+ *
+ * `strings` must be the caller's OWN locale (`useLanguage().t.kosher`) —
+ * this function does not call the hook itself (it isn't one; it's called
+ * from plain helpers as well as components), so the caller threads it
+ * through. Never import the static `t` from `src/i18n` here — that binds
+ * every caller to Hebrew regardless of the selected locale (see
+ * PlaceBottomCard's fix in the same change that introduced this doc note).
+ */
+export function getKosherLabel(
+  place: Pick<Place, 'kosherType' | 'kosherLevel' | 'kosherAuthorityGroup' | 'kosherAuthority' | 'certifierId' | 'claimedLevel' | 'claimedLevelText' | 'certifiedBy'>,
+  strings: Strings['kosher'],
+): KosherLabelPart[] {
+  const { body, claim } = classifyKosherState(place);
+  const parts: KosherLabelPart[] = [];
+
+  const bodyText = renderBodyState(body, strings);
+  if (bodyText) parts.push({ kind: 'data', text: bodyText });
+
+  if (claim.kind === 'claim') {
+    // claimedLevelText (the source's verbatim wording) is preferred when
+    // present — it is the actual evidence; the derived `claim.level` enum
+    // is a fallback for callers that never populated the text field
+    // (validate-data.mjs HARD-fails claimedLevel set without it, so this
+    // branch is unreachable against real data — kept only so the function
+    // stays total against its declared input type, not partial on an
+    // invariant enforced elsewhere).
+    const claimText = place.claimedLevelText || (claim.level === 'glatt' ? strings.glattGeneric : strings.mehadrinGeneric);
+    parts.push({ kind: 'claim', text: `${strings.claimedLevelPrefix} ${claimText}` });
+  }
+
+  return parts;
+}
+
+/** Convenience for callers with a single display slot (chip UIs) — the primary line only, never the claim alone. */
+export function getPrimaryKosherLabel(
+  place: Pick<Place, 'kosherType' | 'kosherLevel' | 'kosherAuthorityGroup' | 'kosherAuthority' | 'certifierId' | 'claimedLevel' | 'claimedLevelText' | 'certifiedBy'>,
+  strings: Strings['kosher'],
+): string | null {
+  const parts = getKosherLabel(place, strings);
+  return parts.length > 0 ? parts[0].text : null;
 }
 
 /** Kosher-type keys shown in the restaurant kashruyot filter screen (display order). */

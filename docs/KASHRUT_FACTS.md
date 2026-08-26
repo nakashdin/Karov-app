@@ -2126,6 +2126,83 @@ unregistered spellings. **An alias-registration backlog, not a remediation targe
 
 ---
 
+## 30. The write vocabulary and the display vocabulary were never bound to each other
+
+Owner's own question, verbatim: *"are we testing end to end, or is the data racing ahead of the app?"*
+Measured rather than reassured. **They were right, and the gap was already live in production**, unrelated
+to anything greg was about to write.
+
+### 30a. `getKosherLabel` (`src/utils/kosher.ts`) rewritten as a discriminated union — `KosherBodyState`,
+9 variants (10 after §30c), `classifyKosherState()` classifies, `renderBodyState()` renders through an
+exhaustive `switch` with no `default` — a variant added with no display case is a `tsc --noEmit` failure,
+gated in `verify` and CI, not a silent runtime fallback. Two independent proofs, both sabotage-tested
+(added/removed a synthetic variant → typecheck failed naming it; broke one real renderer branch in a
+detached worktree → both the compile-time example test and a runtime dataset-derived test failed naming
+real record ids). Body (who certifies) and level (what the source claims) are kept as separate axes per the
+owner's ruling in §31 below — never merged into one field or one displayed phrase.
+
+### 30b. `badatzGroup` is dead code today, the same shape as `SOURCE_STATES_A_LEVEL` (pipeline side, Item 4
+Unit 3) — a variant the type declares and the exhaustiveness check protects, that zero real records reach.
+Every record with `kosherAuthorityGroup:'badatz'` and no `certifierId` ALSO has `kosherAuthority` set to a
+value the legacy map (`LEGACY_AUTHORITY_LABEL`) resolves, so `legacyAuthority` wins precedence first — found
+by a sabotage of `badatzGroup`'s renderer that unexpectedly stayed green, then investigating why instead of
+adjusting the test. **Two dead variants now, in two different files, both because an earlier branch in an
+if/else chain always wins first.** Kept, not deleted — the exhaustiveness guarantee is worth more than the
+dead-code tidiness, and which branch reaches which record can change without warning.
+
+### 30c. The `certifiedBy`-evidence-loss population — 67 of 85, not 85 of 85
+
+Original count: 85 food records rendered NO kashrut label at all (`classifyKosherState` → `'none'`).
+**67 of those 85 carry real evidence in `certifiedBy`** (verbatim certifier text — "רבנות מקומית"×27,
+"רבנות תל אביב"×7, "רבנות ירושלים"×7, "בד\"ץ יורה דעה"×2, "בד\"ץ העדה החרדית"×1, "הרבנות הראשית לישראל"×1,
+and 10 more distinct strings) that `classifyKosherState`'s input `Pick<>` didn't even include — the field
+was never read. Only **18 are genuinely evidence-free**, and all 18 are `manual-winery-*` records.
+
+This corrected an owner ruling already in flight: "85 records with no kashrut evidence" had been reported
+and the owner had ruled that no-evidence means not-kosher. Acting on that would have marked 67 businesses
+non-kosher **that name a certifying body in their own record**, including a בד״ץ — the same defect as the
+greg מגדל העמק / גן העיר אשדוד finding on the pipeline side (Item 4 Unit 3, 2026-08-27: a body named on the
+page went unread because the instrument checking for one didn't look correctly), one layer further out: the
+evidence was there and the reader never looked.
+
+**Split of the 67, independently confirmed twice:** 26 resolve to a real registered authority via the
+registry's alias table (`scripts/reports/kashrut-registry.json`, outside `src/`); 37 are generic terms the
+registry's own alias table marks `authorityId: null` ("רבנות מקומית", "כשרות מקומית", "כשר", "רבנות" —
+not real body names); 4 have no alias entry in the registry at all.
+
+**Fix shipped is NOT the full resolution** — `authority-normalize.mjs`'s registry-backed resolver lives in
+`scripts/`, outside both Metro's bundle root and jest's `roots: ['src']`, so it cannot be imported from
+`src/utils/kosher.ts`. Building a second, parallel resolver against `src/data/kashrut/authorities.ts`'s 81
+authorities was considered and rejected — it cannot express the registry's `authorityId: null` exclusion
+(no alias table exists in `src/`), so it would either miss real matches or risk treating a generic term as a
+resolved body, reproducing the exact defect the shared normalizer exists to prevent (two instruments
+answering one question).
+
+**Owner ruling, verbatim: "אם לא ידוע יש להציג כשר כשרות מקומית."** Applied here: display `certifiedBy`
+VERBATIM, in the same slot as the unknown-floor, whenever nothing else resolves — no `kosherAuthorityGroup`
+inferred, no `certifierId` implied (`KosherBodyState`'s `verbatimText` variant). For 37 of the 67 this is not
+a weakened fallback — those records' own text already literally reads "רבנות מקומית" / "כשרות מקומית", which
+IS the owner's specified floor phrasing, arriving from the record's own text instead of the app's fallback
+string. For the other 30 it surfaces a real body name the source stated, unresolved but not discarded.
+`kind=none` moved from **85 → 18**, all 18 confirmed `manual-winery-*` by an assertion, not a log line.
+
+**Resolving the 26 registry-matchable records into real `certifierId`/`kosherAuthorityGroup`** (not just
+verbatim display) is a separate, smaller, deliberately-deferred data-layer write — same shape as the
+greg/rebar pipeline, backup + dry-run + `data:validate` required. Explicitly NOT started under this section;
+raised to the owner alongside the 18-winery evidence-free population as two separate decisions.
+
+### 30d. A census-aggregation bug found twice, same root cause, in two different tests written by two
+different sessions on the same day — grouping records by a "shape key" that omits a field the test is about
+to read a per-record property off of. First instance: this file's §29's `!certifiedBy` vs `!kosherAuthority`
+miss. Second instance, live in the new binding test: `shapeKey()` didn't include `certifiedBy`, so a
+representative `example` stored once per shape (which happened to have `certifiedBy` set) had its property
+applied to the shape's whole `count` — reporting 85/85 "carry certifiedBy" before the bug was caught by
+cross-checking against an independent per-record count. Fixed by iterating every real record directly for
+that specific aggregation, never a deduplicated-shape map, whenever the property being counted isn't part of
+the key the map was grouped on.
+
+---
+
 ## Superseded numbers — do not requote
 
 | Wrong | Correct | Why |

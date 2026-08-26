@@ -186,4 +186,15 @@ export const es = {
     retry: 'Intentar de nuevo',
     retryLabel: 'Intentar de nuevo',
   },
+
+  kosher: {
+    rabbinate: 'Rabinato',
+    rabbinateMehadrin: 'Rabinato Mehadrin',
+    badatzGeneric: 'Badatz',
+    mehadrinGeneric: 'Mehadrin',
+    glattGeneric: 'Glatt',
+    kosherGeneric: 'Kosher',
+    unknownFloor: 'Kosher, supervisión local',
+    claimedLevelPrefix: 'Declara casherut:',
+  },
 } as const;

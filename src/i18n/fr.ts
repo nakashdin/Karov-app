@@ -186,4 +186,15 @@ export const fr = {
     retry: 'Réessayer',
     retryLabel: 'Réessayer',
   },
+
+  kosher: {
+    rabbinate: 'Rabbinat',
+    rabbinateMehadrin: 'Rabbinat Mehadrin',
+    badatzGeneric: 'Badatz',
+    mehadrinGeneric: 'Mehadrin',
+    glattGeneric: 'Glatt',
+    kosherGeneric: 'Casher',
+    unknownFloor: 'Casher, supervision locale',
+    claimedLevelPrefix: 'Revendique une cacherout :',
+  },
 } as const;

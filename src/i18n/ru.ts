@@ -186,4 +186,15 @@ export const ru = {
     retry: 'Попробовать снова',
     retryLabel: 'Попробовать снова',
   },
+
+  kosher: {
+    rabbinate: 'Раввинат',
+    rabbinateMehadrin: 'Раввинат Мехадрин',
+    badatzGeneric: 'Бадац',
+    mehadrinGeneric: 'Мехадрин',
+    glattGeneric: 'Глатт',
+    kosherGeneric: 'Кошерно',
+    unknownFloor: 'Кошерно, местный надзор',
+    claimedLevelPrefix: 'Заявляет кашрут:',
+  },
 } as const;

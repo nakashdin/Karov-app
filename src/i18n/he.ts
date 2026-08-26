@@ -189,4 +189,32 @@ export const he = {
     retry: 'נסה שוב',
     retryLabel: 'נסה שוב',
   },
+
+  // Descriptive kashrut phrases only — NOT certifying-body names. A body's
+  // name (e.g. "בד״ץ בית יוסף", "צהר") is data from src/data/kashrut/
+  // authorities.ts, never copy: authorities.ts's own header says nothing
+  // else may hard-code a certifier name, and translating a proper noun
+  // per-locale would fork identity across 5 files. This section is only the
+  // words wrapped around a body/level fact — group labels, the unverified-
+  // claim framing, and the no-evidence floor (Item 4 Unit 3, 2026-08-27).
+  kosher: {
+    rabbinate: 'רבנות',
+    rabbinateMehadrin: 'רבנות מהדרין',
+    badatzGeneric: 'בד״ץ',
+    mehadrinGeneric: 'מהדרין',
+    glattGeneric: 'גלאט',
+    kosherGeneric: 'כשר',
+    // Owner ruling, verbatim: "אם לא ידוע יש להציג כשר כשרות מקומית" —
+    // supersedes the earlier Batch B1 floor string 'גוף כשרות לא ידוע' (see
+    // docs/KASHRUT_FACTS.md), which read as a warning ("we don't know who
+    // certifies this") rather than the owner's intended statement ("this is
+    // kosher, under local supervision").
+    unknownFloor: 'כשר כשרות מקומית',
+    // The source states this level but names no certifying body Karov can
+    // verify — an unverified CLAIM, never presented as equivalent to a
+    // verified level. claimedLevelText carries the source's own verbatim
+    // wording alongside this framing, never merged into one phrase with a
+    // body name (owner ruling: a body and a level are different kashruts).
+    claimedLevelPrefix: 'טוען לכשרות:',
+  },
 } as const;

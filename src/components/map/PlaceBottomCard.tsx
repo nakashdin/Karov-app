@@ -3,8 +3,9 @@ import { Pressable, Text, View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { Place } from '../../types';
 import { makeStyles, radius, shadow, spacing, useTheme } from '../../theme';
-import { t } from '../../i18n';
-import { getKosherLabel } from '../../utils/kosher';
+import { useLanguage } from '../../context/LanguageContext';
+import type { Strings } from '../../i18n';
+import { getPrimaryKosherLabel } from '../../utils/kosher';
 import { displayPlaceName, placeTypeLabel } from '../../utils/placeType';
 import { NavPickerModal } from '../NavPickerModal';
 import { KosherBadge } from '../KosherBadge';
@@ -15,9 +16,9 @@ interface PlaceBottomCardProps {
   onOpenDetails: () => void;
 }
 
-function subtitle(place: Place): string {
+function subtitle(place: Place, strings: Strings): string {
   if (place.type === 'restaurant') {
-    const label = getKosherLabel(place);
+    const label = getPrimaryKosherLabel(place, strings.kosher);
     if (label) return label;
   }
   if (place.type === 'synagogue') {
@@ -34,6 +35,7 @@ export function PlaceBottomCard({
 }: PlaceBottomCardProps) {
   const theme = useTheme();
   const styles = useStyles();
+  const { t } = useLanguage();
   const [navOpen, setNavOpen] = useState(false);
   return (
     <View style={styles.card}>
@@ -50,7 +52,7 @@ export function PlaceBottomCard({
       </View>
 
       <Text style={styles.subtitle} numberOfLines={1}>
-        {subtitle(place)}
+        {subtitle(place, t)}
       </Text>
       <View style={styles.addressRow}>
         <Ionicons name="location-outline" size={14} color={theme.textMuted} />
