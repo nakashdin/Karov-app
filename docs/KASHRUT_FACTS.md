@@ -795,11 +795,11 @@ level up again.
 
 ---
 
-## 17. Checks that pass while checking nothing — four faces, all hit within two days
+## 17. Checks that pass while checking nothing — five faces, all hit within two days
 
 A failing check is cheap: it tells you where to look. A check that **passes without checking anything** is
 the expensive one, because it is indistinguishable from a check that passed for the right reason, and it
-converts "unverified" into "verified" in every report downstream. Four distinct shapes have now appeared in
+converts "unverified" into "verified" in every report downstream. Five distinct shapes have now appeared in
 this project inside forty-eight hours. They are the same defect wearing different clothes.
 
 | | Shape | Instance | What it looked like |
@@ -808,12 +808,19 @@ this project inside forty-eight hours. They are the same defect wearing differen
 | 2 | **A fixture that matches nothing** | a B1 test fixture citing a gershayim alias string absent from `aliases[].raw` (§9) | The lookup returned nothing, the assertion held vacuously, the guard under test was never exercised. Green. |
 | 3 | **A test that copies the logic instead of importing it** | `migrate-kosher-fields-reviewqueue-guard.test.mjs` held a verbatim copy of the enrichment function | The real script's behaviour changed; the copy did not. The test kept asserting the old result **correctly**, against its own frozen duplicate. Green. |
 | 4 | **A prediction that matches on volume while the output is invalid** | `importers/tzohar/import-food.mjs` run end-to-end | Hand-derived prediction of 7,471 → 7,540 made before the run, matched exactly. The resulting file fails `data:validate` with **37 duplicate ids** and 3 records missing `name`. The prediction was about counts. Nobody asked whether the result was valid. |
+| 5 | **A zero-result scan** | the whole-repo absolute-path sweep | A file-based scan searching only the `\` needle form returned **0 hits** on a repo holding 6 real files in the `/` form. The only result that *hides itself*: a wrong non-zero number invites "why is that so high?", while zero reads simultaneously as a clean answer and as no work done. |
+
+**Why face 5 deserves its own row rather than folding into the others:** every other face produces a *number*,
+and a number invites interrogation. Zero is the single output that is indistinguishable from success by
+inspection. The countermeasure is not to re-run the scan — a second run confirms the same failure with more
+confidence. It is to **test the instrument against a known positive**: open a file you are already certain is
+a hit and confirm the scan finds it. That is the only procedure that detects a needle covering half the space.
 
 **The common mechanism:** in each case the check's *subject* silently became empty or stale while its
 *form* stayed intact. Nothing throws when a test file is never collected, when a fixture lookup misses, when
 a copied function drifts from its original, or when a count is right about a file that cannot be committed.
 
-**The four countermeasures, each earned by one of the above:**
+**The five countermeasures, each earned by one of the above:**
 
 1. **Prove a test runs before relying on it.** `npx jest --listTests` must return it, or it must be wired
    through `test:scripts` **and** `ci.yml`. The suite count not moving after you add a test file is the tell.
@@ -825,10 +832,102 @@ a copied function drifts from its original, or when a count is right about a fil
 4. **A matched prediction is not a passing check.** Predicting an output's *shape* and hitting it says
    nothing about the output's *validity*. Any run that produces a dataset must be followed by
    `data:validate` on the produced dataset, not by a comparison of counters.
+5. **Validate the instrument against a known positive before believing a zero.** Not by re-running it —
+   by opening one file you are already sure is a hit and confirming the scan sees it.
 
 **And the meta-rule, which is the only one that generalises:** ask what would have to be true for this check
 to pass while the thing it guards is broken — then go and check *that*. Every one of the four above answers
 that question in a single sentence, and none of them was found by reading the check.
+
+---
+
+## 18. `restaurants.osm.json` — guarded against erasure, validated by nothing
+
+### 18a. The file itself
+
+1,337 records: **283 `source: 'osm'` + 1,054 hand-curated.** `npm run import:restaurants` (package.json:53)
+was a live full overwrite from a fresh Overpass fetch, no merge — the identical defect class to the
+`rebuildAppDataset` one fixed in Phase 0, sitting untouched on a file every sweep had scoped past. Closed at
+`f2b15d5` via `writeCategoryGuarded()`.
+
+**The scoping lesson, third instance in one day:** a fix scoped to one artifact leaves the identical defect on
+every artifact it did not name. Phase 0 fixed the rebuild path on `places.osm.json` and stopped there.
+
+### 18b. Guards that check presence are not guards on content
+
+`planCategoryOverwrite()`'s original three guards — volume, no-dropped-ids, no-dropped-manual-records — are
+**entirely about record presence.** Five candidates that drop nothing (every live id present, volume 100%) and
+mutate content pass all three:
+
+| Candidate | Original 3 guards | Naive `no-stripped-fields` lift |
+|---|---|---|
+| `certifiedBy` stripped from **all** records | PASS | caught |
+| `kosherCertUrl` + `certificateValidUntil` stripped | PASS | caught |
+| `kosherType` downgraded to bare `kosher` | PASS | **still passes** — key present, value degraded |
+| all coordinates zeroed | PASS | **still passes** |
+| `lastVerifiedAt` moved **backward** | PASS | **still passes** |
+
+**Do not lift `no-stripped-fields` from `planAppDatasetRebuild` (database.ts:176-180).** It is a
+*union-of-keys* set difference: `liveFields − candFields` over all records. If one candidate record retains
+`certifiedBy`, the key is in `candFields` and the guard passes — **stripping it from 1,336 of 1,337 records
+passes clean.** It catches erasure-from-all, not erasure-from-most, which is the realistic shape.
+
+**Why it is weak there and must not be inherited here — the generalisable point:** `planAppDatasetRebuild`
+compares a *reconstruction* against a *different-shaped population*. It holds no per-id prior, so a union over
+key names is the strongest check available to it. `planCategoryOverwrite` compares a file against **its own
+prior content, id by id** — it holds the exact prior record and can diff per survivor. The weak guard is an
+artifact of the weaker *situation*, not a judgement about this one. **A guard copied between two call sites
+inherits the limits of whichever site it was written for.**
+
+**Design rule adopted: guard what is never legitimate, report what may be.** An OSM re-fetch legitimately
+drops a `phone` tag and nudges coordinates; it structurally *cannot* carry kashrut evidence. So kashrut-field
+movement is a hard block with zero tolerance, while general field loss is reported and not blocking. This is
+not leniency: because the opt-in env var deliberately **cannot** bypass a failing guard, an over-strict guard
+does not make the importer safe — it makes it unusable, and the next person deletes the guard.
+
+### 18c. The validator cannot see this file
+
+`scripts/validate-data.mjs` reads **only** `places.osm.json` and `cities.osm.json` (verified by extracting
+every `readFileSync` target). The `certifiedBy` append-only HARD failure, the `lastVerifiedAt` backdate HARD
+failure and `levelAssertedOverNamedBody` all skip `restaurants.osm.json` entirely.
+
+We built a hard guard for the `lastVerifiedAt`-backward signature and **it cannot see the file where that
+regression is most likely.** `f2b15d5` closes erasure; it does not make this file protected, and the
+difference matters for how it is described.
+
+### 18d. 30 fabricated `certificateValidUntil` values
+
+| | |
+|---|---|
+| records with `certificateValidUntil` | **30** |
+| …with a `kosherCertUrl` | **0** |
+| `kosherCertUrl` anywhere in the file | **0** |
+| present in `places.osm.json` | 29 — **one is an orphan** |
+| …where `places.osm.json` also has a date | 0 |
+| all 30 | `humus-eli` ids, `source: 'manual'` |
+
+Dates: `2026-09-11 ×14` · `2027-01-31 ×8` · `2026-12-31 ×6` · `2026-10-11 ×1` · `2026-09-10 ×1`.
+Orphan: `humus-eli-חומוס-אליהו-צמח-טבריה` (`2026-09-11`), absent from the app dataset entirely.
+
+These are the exact fabricated dates `876a562` stripped from `places.osm.json`. **Not a recovery opportunity —
+a defect already fixed, still live in a file nothing validates.** Fourteen carry the Tzohar cliff date with no
+certificate behind them.
+
+They violate the field's own documented invariant. `place.ts` on `certificateValidUntil`: *"Only ever set from
+a real certificate document (see `kosherCertUrl`) — never inferred, extrapolated, or copied from a sibling
+branch."* Zero of the 30 have a `kosherCertUrl`. **Every record in that file carrying the field breaks the
+rule the field documents.**
+
+### 18e. Note for whoever touches these guards next
+
+`planCategoryOverwrite`'s `volume` guard is **subsumed** by `no-dropped-ids`: the file has no duplicate ids, so
+no-dropped-ids passing implies `candidate >= live`, implies `ratio >= 1`. No candidate exists where volume
+fails and no-dropped-ids passes. Defence in depth and a clearer error message, but **not load-bearing** — do
+not relax `no-dropped-ids` believing `volume` still covers you.
+
+`KAROV_ALLOW_DESTRUCTIVE_CATEGORY_OVERWRITE` (`database.ts:66`) is deliberately **separate** from
+`KAROV_ALLOW_DESTRUCTIVE_REBUILD` (`:57`). Two independently destructive operations on different files sharing
+one flag is how "I opted into the rebuild" silently becomes "and also authorised the overwrite."
 
 ---
 
@@ -852,3 +951,5 @@ that question in a single sentence, and none of them was found by reading the ch
 | B1.2 level-guard population = 204 ("site B") | **845** carry a level-asserting `kosherType`; **343** of those violate the general predicate today | 204 is a historical site-B-only count inside the 358; the choke point governs the general population, not one historical mechanism; see §13 |
 | B1.2 starting writer list = golda / coffeetrail / rebar / apply-chains-research | **82 files** (the completeness test's own scan, frozen — 83 before apply-kashrut-authorities.mjs was migrated to the helper); only rebar of the four is a real literal writer at the claimed path | `scripts/import-coffeetrail.mjs` doesn't exist (real: `importers/coffee-carts/scrape-coffeetrail.mjs`); golda/coffeetrail assign dynamically, not literally; ~71/29+42/62 were each superseded estimates, not the scanned count; see §13 |
 | `kosher.ts:138` null/undefined parity (assumed safe by analogy to certifierId) | **unsafe** — falls through to the legacy `kosherType` label, which still asserts the withheld claim | see §14 |
+| `restaurants.osm.json` fabricated dates = 29, cliff date ×13 | **30**, cliff date **×14** | 29 is the subset also present in `places.osm.json`; one record is an orphan. See §18d |
+| "lifting `no-stripped-fields` closes the content gap" | **it does not** — union-of-keys, so stripping a field from all-but-one record passes | see §18b |
