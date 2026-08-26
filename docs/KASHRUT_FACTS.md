@@ -1737,6 +1737,107 @@ scenery.
 
 ---
 
+## 24. The instrument was correct and its input was wrong — four times in one session
+
+### 24a. The instances
+
+| # | what was run | why the result was false |
+|---|---|---|
+| 1 | feed entry count | regex required a trailing `"open":(true\|false)`; **106** instead of 120 |
+| 2 | probe for quote-bearing names | searched at 1 and 2 backslashes; the stream carries **three** (`\\\"`). Returned a confident **ABSENT** on names that were present |
+| 3 | differential probe of the level guard | probes written to `C:\tmp`, but this shell's `/tmp` resolves to `C:/Users/User/AppData/Local/Temp`. **Both** probes came back "not flagged" — which reads exactly like a finding |
+| 4 | design judgement on the guard's comment handling | the case list had **two of three** members; the missing one falsified the conclusion |
+
+In every one the tool worked. The *thing it was pointed at* was wrong. Filed as four slips they look like
+carelessness; filed as one shape they are a checkable habit.
+
+> **Before trusting a result, name what the instrument was pointed at, and verify that separately from
+> whether the instrument works.**
+
+### 24b. The pair — this is §23 on the same axis, pointed the other way
+
+```
+§23   a guard's strength   is a property of its CALL SITES,          not its body
+§24   a probe's validity   is a property of the SUBJECT SEEING IT,   not its contents
+```
+
+Neither is complete without the other, and both times the reasoning felt finished **because the artifact
+itself was correct**. The guard's body really did contain the check. The probes really did contain the
+violation. Reachability was assumed in both directions.
+
+**The operational rule, which costs one extra file:** build the **positive control first** — a case the
+subject *must* flag — and confirm it flags before believing anything about the real probes. Not alongside;
+first. When the positive and negative cases return the same answer, **the instrument is broken, not the
+subject**.
+
+Instance 3 was caught only by luck: the control happened to be run in the same batch. Instance 2 was caught
+only because 2 of 5 probes returned FOUND — had the probe set been narrower it would have stood as a clean
+zero. See §17 face 5: the zero result is the one that hides itself.
+
+### 24c. "Wrong in the appealing direction"
+
+Instance 4 deserves its own note because the reasoning was not sloppy. The proposal — treat a null enclosing
+object literal as a non-match, and delete the `/* */` stripper entirely — was genuinely elegant: one change,
+two defects, less machinery, and it did cover the case the stripper was originally built for.
+
+It was also **the outcome the proposer wanted**, and the check that would have falsified it was the one not
+run. Probing found a third case (prose in a comment *between properties of a real object literal*) that has a
+genuine enclosing block, so the null-block rule cannot reach it — and that the stripper is therefore
+load-bearing.
+
+> When a conclusion is both convenient and simplifying, the case you have not enumerated is the one that
+> decides it. Enumerate before committing, not after.
+
+### 24d. Why the loop caught these
+
+Worth recording, because it is a property to preserve rather than a compliment. Adversarial review supplied
+the pressure, but adversarial pressure alone would not have produced these: two parties each defending a
+position would have surfaced none of them. What produced them is that **neither party was optimising for
+having been right** — an architect overturned his own consolidation an hour after proposing it; a reviewer
+surfaced a fifth copy of a constant *that he had written, under a different name*, while arguing that logic
+must never be duplicated.
+
+Adversarial review supplies the pressure. Willingness to be wrong supplies the direction.
+
+---
+
+## 25. A false positive whose reasoning is better than the true positives'
+
+The level-assertion guard, run against prose in a `//` comment sitting between properties of a real object
+literal, produces this:
+
+> `"רבנות תל אביב"` resolves in the registry to level null, not mehadrin — the source names a body but does
+> not state a level; the level here is inferred, not evidenced (exactly the §5b defect: 0 of 203 registry
+> aliases were ever derived from a body).
+
+About this record:
+
+```js
+kosherType: 'kosher',            // legitimate. no level claim at all.
+certifiedBy: 'רבנות תל אביב',
+```
+
+The finding is **fully reasoned, alias-resolving, and cites the register** — and it is about a record that
+makes no mehadrin claim. It assembled a credible violation from a sentence of prose plus an unrelated
+sibling property. Its explanation is *more thorough than most of the true positives*, which often say only
+"no certifiedBy at all."
+
+**This is not a noisy guard, and severity should not be read as "noise".** This guard exists to drive one
+remediation: *removing unevidenced level claims*. A false positive of this shape points that remediation at
+a record that has none — and the resulting edit (strip the `certifiedBy`, or change the `kosherType`) would
+damage a legitimate record **under a commit message that reads as correct and cites §5b**.
+
+**The connection worth keeping:** the original fear was that a guard firing on all eight known scripts would
+"train us to delete evidence-backed level claims." That fear was *misplaced for the eight* — none of them
+held an evidence-backed claim. It is **exactly right for this failure mode**. The fear was correct; it was
+attached to the wrong population.
+
+Generalised: **judge a guard's false positives by what acting on them would destroy, not by how many there
+are.** A single false positive that is credible, well-argued, and points at a deletion is worse than many
+that are obviously wrong.
+
+---
+
 ## Superseded numbers — do not requote
 
 | Wrong | Correct | Why |
