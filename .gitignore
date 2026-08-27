@@ -36,6 +36,9 @@ yarn-error.*
 # typescript
 *.tsbuildinfo
 
+# jest coverage output (npm run verify / npm test regenerates on every run)
+coverage/
+
 # generated native folders
 /ios
 /android
