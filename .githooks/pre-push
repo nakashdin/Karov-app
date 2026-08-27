@@ -117,7 +117,7 @@ while read -r _local_ref local_sha remote_ref remote_sha; do
 		outgoing_shas=$(git log --format='%H' "$remote_sha..$local_sha" 2>/dev/null)
 	fi
 	if [ -n "$outgoing_shas" ] && [ -n "$REPO_ROOT" ]; then
-		gate_output=$(node "$REPO_ROOT/scripts/shared/review-evidence-gate.mjs" $outgoing_shas 2>&1)
+		gate_output=$(node "$REPO_ROOT/scripts/shared/review-evidence-gate.mjs" "$local_sha" $outgoing_shas 2>&1)
 		gate_status=$?
 		if [ -n "$gate_output" ]; then
 			echo "" >&2

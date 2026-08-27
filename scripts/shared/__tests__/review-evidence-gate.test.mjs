@@ -17,7 +17,7 @@
 // all six of the owner's cases and still permit the real failure.
 import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
-import { mkdtempSync, rmSync, writeFileSync, mkdirSync, readFileSync } from 'node:fs';
+import { mkdtempSync, rmSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join, resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -69,7 +69,25 @@ function treeOf(dir, sha) {
   return git(dir, ['rev-parse', `${sha}^{tree}`]);
 }
 
+/** Writes AND COMMITS evidence — the gate reads from git history, not
+ * disk, so uncommitted evidence must not satisfy it (see CASE 3-disk
+ * below, which deliberately uses the raw fs write instead of this helper
+ * to prove exactly that). Returns the evidence-commit's own SHA. */
 function writeEvidence(dir, sha, overrides = {}) {
+  const evidence = {
+    commit: sha,
+    tree: treeOf(dir, sha),
+    reviewer: 'test-reviewer',
+    verdict: 'approved',
+    note: 'test evidence',
+    ...overrides,
+  };
+  return commitFile(dir, `review-evidence/${sha}.json`, JSON.stringify(evidence, null, 2), `evidence for ${sha}`);
+}
+
+/** Writes evidence to disk WITHOUT committing it — used only by the cases
+ * that specifically prove the gate ignores uncommitted content. */
+function writeUncommittedEvidence(dir, sha, overrides = {}) {
   const evidence = {
     commit: sha,
     tree: treeOf(dir, sha),
@@ -84,10 +102,15 @@ function writeEvidence(dir, sha, overrides = {}) {
 }
 
 /** Runs the gate against a repo for a given list of SHAs, exactly as
- * .githooks/pre-push would invoke it (cwd inside that repo, SHAs as argv). */
-function runGate(dir, shas) {
+ * .githooks/pre-push would invoke it (cwd inside that repo, tip first,
+ * then every outgoing SHA as argv — see review-evidence-gate.mjs's CLI
+ * entry-point comment for why tip is explicit rather than inferred by
+ * position). Defaults tip to the last sha (this file's existing cases all
+ * push a single commit, or a range where the tip is listed last) — callers
+ * pushing a genuinely different tip pass it explicitly as a 3rd arg. */
+function runGate(dir, shas, tip = shas[shas.length - 1]) {
   try {
-    const stdout = execFileSync('node', [GATE_SCRIPT, ...shas], { cwd: dir, encoding: 'utf8' });
+    const stdout = execFileSync('node', [GATE_SCRIPT, tip, ...shas], { cwd: dir, encoding: 'utf8' });
     return { blocked: false, output: stdout };
   } catch (err) {
     // execFileSync throws on non-zero exit; the actual output is on the error.
@@ -127,21 +150,122 @@ rmSync(repo, { recursive: true, force: true });
 repo = makeRepo();
 {
   const sha = commitFile(repo, 'src/foo.ts', 'export const x = 1;\n', 'add foo');
-  writeEvidence(repo, sha);
+  const evSha = writeEvidence(repo, sha);
   test('CASE 3 — evidence for the EXACT current sha -> ALLOWED (the control case — without this passing, a blocked gate is indistinguishable from a broken one)', () => {
-    const { blocked } = runGate(repo, [sha]);
+    const { blocked } = runGate(repo, [sha], evSha);
     assert.equal(blocked, false);
   });
 }
 rmSync(repo, { recursive: true, force: true });
 
+// ── CASE 3-DISK (the Architect's finding, 2026-08-27): evidence written ──
+// to disk but never committed must NOT satisfy the gate — the pre-fix
+// version of this file read straight off the filesystem and was fooled by
+// exactly this, the identical failure shape AGENTS.md's top warning names
+// ("ירוק בעץ העבודה ≠ הקומיט תקין").
+repo = makeRepo();
+{
+  const sha = commitFile(repo, 'src/foo.ts', 'export const x = 1;\n', 'add foo');
+  writeUncommittedEvidence(repo, sha); // written to disk, deliberately never `git add`ed
+  test('CASE 3-DISK — evidence exists on disk but was never committed -> BLOCKED (git-tree lookup cannot see untracked content)', () => {
+    const status = git(repo, ['status', '--porcelain']);
+    assert.match(status, /review-evidence/, 'the evidence file must genuinely be untracked, or this test proves nothing');
+    const { blocked, output } = runGate(repo, [sha], sha);
+    assert.equal(blocked, true);
+    assert.match(output, /no evidence file/);
+  });
+}
+rmSync(repo, { recursive: true, force: true });
+
+// ── CASE 3-CASE (the Architect's finding): git tree paths are exact-byte, ──
+// so an evidence file committed under the WRONG case must not satisfy the
+// gate — pre-fix, this passed on this Windows machine's case-insensitive
+// filesystem and would have failed identically-shaped pushes on Linux CI.
+repo = makeRepo();
+{
+  const sha = commitFile(repo, 'src/foo.ts', 'export const x = 1;\n', 'add foo');
+  const upper = sha.toUpperCase();
+  const evidence = { commit: sha, tree: treeOf(repo, sha), reviewer: 'x', verdict: 'approved', note: 'uppercase filename' };
+  const evSha = commitFile(repo, `review-evidence/${upper}.json`, JSON.stringify(evidence, null, 2), 'evidence, wrong case');
+  test('CASE 3-CASE — evidence committed under an UPPERCASE filename does not satisfy a lookup for the lowercase sha -> BLOCKED', () => {
+    const { blocked, output } = runGate(repo, [sha], evSha);
+    assert.equal(blocked, true);
+    assert.match(output, /no evidence file/);
+  });
+}
+rmSync(repo, { recursive: true, force: true });
+
+// ── CASE 3-DELETED-WORKTREE: evidence committed, then removed from the ──
+// WORKING TREE only (never from history) -> must still ALLOW, since the
+// remote's history still carries it. The Architect's two-direction axis,
+// first half.
+repo = makeRepo();
+{
+  const sha = commitFile(repo, 'src/foo.ts', 'export const x = 1;\n', 'add foo');
+  const evSha = writeEvidence(repo, sha);
+  const evidencePath = join(repo, 'review-evidence', `${sha}.json`);
+  rmSync(evidencePath); // gone from disk, still in git history at evSha
+  test('CASE 3-DELETED-WORKTREE — evidence committed then deleted from the working tree only -> ALLOWED (history, not disk, is what the remote will have)', () => {
+    assert.equal(existsSync(evidencePath), false, 'the file must genuinely be gone from disk, or this test proves nothing');
+    const { blocked } = runGate(repo, [sha], evSha);
+    assert.equal(blocked, false);
+  });
+}
+rmSync(repo, { recursive: true, force: true });
+
+// ── CASE 3-DELETED-HISTORY: evidence committed, then removed in a LATER ──
+// commit that is itself part of the push -> after the push, the remote can
+// no longer see it, so this must BLOCK. The Architect's two-direction
+// axis, second half — without this, only one direction is exercised and a
+// lookup that always returns "found" (or always "not found") could pass
+// CASE 3-DELETED-WORKTREE alone.
+repo = makeRepo();
+{
+  const sha = commitFile(repo, 'src/foo.ts', 'export const x = 1;\n', 'add foo');
+  const evSha = writeEvidence(repo, sha);
+  const evidencePath = join(repo, 'review-evidence', `${sha}.json`);
+  rmSync(evidencePath);
+  git(repo, ['add', '-A']);
+  git(repo, ['commit', '-q', '-m', 'remove evidence file']);
+  const removalSha = git(repo, ['rev-parse', 'HEAD']);
+  test('CASE 3-DELETED-HISTORY — evidence committed then removed by a LATER commit in the same push -> BLOCKED (the tip\'s history no longer carries it)', () => {
+    const { blocked, output } = runGate(repo, [sha], removalSha);
+    assert.equal(blocked, true);
+    assert.match(output, /no evidence file/);
+  });
+}
+rmSync(repo, { recursive: true, force: true });
+
+// ── CASE ISOLATED-PUSH: the Architect's required test axis — exercise the ──
+// gate through a REAL `git push` to a REAL bare remote, not hand-built repo
+// state. The two bugs this correction fixes (disk lookup, case-sensitivity)
+// were both invisible to a gate invoked directly against hand-crafted
+// state; this proves the fix holds through the actual code path .githooks
+// /pre-push drives (tip = the pushed ref's new sha, resolved by git itself,
+// not by test-authored ordering).
+{
+  const remoteDir = mkdtempSync(join(tmpdir(), 'review-evidence-gate-remote-'));
+  git(remoteDir, ['init', '-q', '--bare']);
+  const localDir = makeRepo();
+  git(localDir, ['remote', 'add', 'origin', remoteDir]);
+  const sha = commitFile(localDir, 'src/foo.ts', 'export const x = 1;\n', 'add foo');
+  const evSha = writeEvidence(localDir, sha);
+  git(localDir, ['push', '-q', 'origin', 'HEAD:refs/heads/feature']);
+  test('CASE ISOLATED-PUSH — gate invoked with the real pushed tip (resolved via a real git push to a real bare remote) still ALLOWS a properly reviewed commit', () => {
+    const { blocked } = runGate(localDir, [sha], evSha);
+    assert.equal(blocked, false);
+  });
+  rmSync(remoteDir, { recursive: true, force: true });
+  rmSync(localDir, { recursive: true, force: true });
+}
+
 // ── CASE 4: commit changes after review -> BLOCKED again (freshness) ────
 repo = makeRepo();
 {
   const sha1 = commitFile(repo, 'src/foo.ts', 'export const x = 1;\n', 'add foo');
-  writeEvidence(repo, sha1);
+  const evSha1 = writeEvidence(repo, sha1);
   test('CASE 4a — reviewed commit passes before amend', () => {
-    const { blocked } = runGate(repo, [sha1]);
+    const { blocked } = runGate(repo, [sha1], evSha1);
     assert.equal(blocked, false);
   });
   // Amend the commit — same message, different content, so tree hash changes
@@ -152,7 +276,7 @@ repo = makeRepo();
   const sha2 = git(repo, ['rev-parse', 'HEAD']);
   test('CASE 4b — after amend, the NEW commit has no matching evidence file (old evidence named the pre-amend sha) -> BLOCKED', () => {
     assert.notEqual(sha1, sha2, 'amend must actually change the sha, or this test proves nothing');
-    const { blocked, output } = runGate(repo, [sha2]);
+    const { blocked, output } = runGate(repo, [sha2], sha2);
     assert.equal(blocked, true);
     assert.match(output, /no evidence file/);
   });
@@ -164,9 +288,9 @@ rmSync(repo, { recursive: true, force: true });
 repo = makeRepo();
 {
   const sha = commitFile(repo, 'src/foo.ts', 'export const x = 1;\n', 'add foo');
-  writeEvidence(repo, sha, { tree: '0'.repeat(40) }); // a real-shaped but WRONG tree hash
+  const evSha = writeEvidence(repo, sha, { tree: '0'.repeat(40) }); // a real-shaped but WRONG tree hash
   test('CASE 4c — evidence file names the correct commit sha but a WRONG tree hash -> BLOCKED (tree recomputed and compared, not trusted from the file)', () => {
-    const { blocked, output } = runGate(repo, [sha]);
+    const { blocked, output } = runGate(repo, [sha], evSha);
     assert.equal(blocked, true);
     assert.match(output, /does not match the commit's ACTUAL current tree hash/);
   });
@@ -178,11 +302,9 @@ repo = makeRepo();
 {
   const sha = commitFile(repo, 'src/foo.ts', 'export const x = 1;\n', 'add foo');
   // Write something that LOOKS like reviewer output but isn't the required shape.
-  const evDir = join(repo, 'review-evidence');
-  mkdirSync(evDir, { recursive: true });
-  writeFileSync(join(evDir, `${sha}.json`), JSON.stringify({ note: 'looks fine to me, approved I guess' }));
+  const evSha = commitFile(repo, `review-evidence/${sha}.json`, JSON.stringify({ note: 'looks fine to me, approved I guess' }), 'bad evidence');
   test('CASE 5 — a file exists at the right path but is not well-formed evidence (missing commit/tree/verdict fields) -> BLOCKED', () => {
-    const { blocked, output } = runGate(repo, [sha]);
+    const { blocked, output } = runGate(repo, [sha], evSha);
     assert.equal(blocked, true);
     assert.match(output, /evidence "commit" field is missing/);
   });
@@ -197,14 +319,14 @@ repo = makeRepo();
   // review-evidence/, so it must be structurally invisible to the gate.
   const shaClaim = commitFile(repo, 'docs/REVIEWED.md', `Reviewed commit ${sha}, approved.\n`, 'mark as reviewed');
   test('CASE 6 — a doc/marker file elsewhere claiming review happened does not satisfy the gate (only review-evidence/ is read)', () => {
-    const { blocked } = runGate(repo, [sha]);
+    const { blocked } = runGate(repo, [sha], shaClaim);
     assert.equal(blocked, true, 'the ORIGINAL commit still has no real evidence — the marker commit does not count for it');
   });
   test('CASE 6b — the marker-adding commit ITSELF is also gated, since docs/ is not gated but the marker commit could touch scripts/ instead in a real attack — confirm docs/ alone is correctly NOT gated (this is a scope-boundary check, not a bypass)', () => {
     // docs/ is intentionally outside GATED_PREFIXES — a pure docs commit
     // needs no evidence of its own. Confirms the scope boundary is where
     // it's documented to be, not narrower or wider by accident.
-    const { blocked } = runGate(repo, [shaClaim]);
+    const { blocked } = runGate(repo, [shaClaim], shaClaim);
     assert.equal(blocked, false, 'a commit touching only docs/ is out of this gate\'s scope by design — confirming the boundary, not a loophole being exploited');
   });
 }
@@ -220,7 +342,7 @@ repo = makeRepo();
   const sha2 = commitFile(repo, 'src/b.ts', 'export const b = 1;\n', 'add b'); // NOT reviewed
   const sha3 = commitFile(repo, 'src/c.ts', 'export const c = 1;\n', 'add c'); // NOT reviewed
   test('CASE 7 — three-commit push, evidence for the FIRST only -> BLOCKED, not silently allowed because the tip (or any one commit) has evidence', () => {
-    const { blocked, output } = runGate(repo, [sha1, sha2, sha3]);
+    const { blocked, output } = runGate(repo, [sha1, sha2, sha3], sha3);
     assert.equal(blocked, true);
     // The first commit's evidence must still be recognized (not a
     // false-positive block on the reviewed one)...
@@ -232,8 +354,8 @@ repo = makeRepo();
   });
   test('CASE 7b — the same three-commit set, now with ALL THREE reviewed -> ALLOWED (confirms case 7 is a real gate, not a permanent block once a push has more than one commit)', () => {
     writeEvidence(repo, sha2);
-    writeEvidence(repo, sha3);
-    const { blocked } = runGate(repo, [sha1, sha2, sha3]);
+    const evSha3 = writeEvidence(repo, sha3);
+    const { blocked } = runGate(repo, [sha1, sha2, sha3], evSha3);
     assert.equal(blocked, false);
   });
 }

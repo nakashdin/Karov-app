@@ -19,15 +19,51 @@
  * necessarily lives in a LATER commit; self-review is structurally
  * impossible, not merely discouraged).
  *
+ * Evidence is resolved FROM GIT HISTORY at the tip commit being pushed
+ * (`git rev-parse <tip>:review-evidence/<sha>.json` to the blob's own sha,
+ * then `git cat-file -p <blob-sha>` to read it — see readEvidenceFor's own
+ * header for why it is two calls and not one `git show <tip>:<path>`),
+ * never from the filesystem. This is load-bearing, not stylistic — found
+ * live, 2026-08-27, by the Architect, citing AGENTS.md's own top warning
+ * ("ירוק בעץ העבודה ≠ הקומיט תקין"): a disk-based lookup (existsSync +
+ * readFileSync against process.cwd()) is satisfied by an UNTRACKED evidence
+ * file that was never `git add`ed, never committed, and will not exist for
+ * anyone who clones the repo. That is accidental bypass, the exact class
+ * this gate exists to eliminate — proven live with a real untracked file
+ * before this fix, and again (case-insensitively named file, ALLOWED on
+ * this Windows machine, would BLOCK on Linux) before this fix closed both
+ * at once: a git tree lookup only ever sees committed content, and git
+ * paths are case-sensitive regardless of the host filesystem.
+ *
  * What it achieves: accidental bypass becomes impossible — you cannot
- * forget to write evidence and have the gate silently let you through, and
- * you cannot push stale evidence for a commit that has since been amended,
- * because the tree hash would no longer match. What it does NOT achieve:
- * stopping someone who deliberately writes a false evidence file naming a
- * SHA they never actually reviewed. No local hook can prevent that — it can
- * only make it a visible, attributable act in the diff (a human or another
- * session added a review-evidence/<sha>.json file; that fact is on the
- * record, unlike an unreviewed push with no gate at all).
+ * forget to commit evidence and have the gate silently let you through
+ * (an uncommitted file is invisible to a git-tree lookup), and you cannot
+ * push stale evidence for a commit that has since been amended, because the
+ * tree hash would no longer match. What it does NOT achieve: stopping
+ * someone who deliberately writes and COMMITS a false evidence file naming
+ * a SHA they never actually reviewed. No local hook can prevent that — it
+ * can only make it a visible, attributable act in the repository's history
+ * (a human or another session committed a review-evidence/<sha>.json file;
+ * that fact is on the record, unlike an unreviewed push with no gate at
+ * all). Unlike the pre-fix version of this claim: the evidence does not
+ * have to appear as a diff on THIS push (it may have been committed
+ * earlier, on an ancestor of the tip), but it must exist in the committed
+ * history of the tip being pushed — never merely on disk.
+ *
+ * ACCEPTED LIMITS, STATED NOW SO A FUTURE INVESTIGATION DOESN'T HAVE TO
+ * REDISCOVER THEM: this is a client-side git hook, and every client-side
+ * git hook has the same four holes, unchanged by this fix and not fixable
+ * by one. `git push --no-verify` skips this file entirely. A clone that
+ * never ran `npm install` never had `core.hooksPath` pointed at
+ * `.githooks/` in the first place, so the hook is not installed, not
+ * bypassed. A push from a different machine that also never ran
+ * `npm install` has the same gap. A merge performed in the GitHub UI never
+ * runs a local hook at all — nothing on this machine sees it. None of
+ * these are new; .githooks/pre-push's own header already says this hook
+ * "is not the enforcement" and that server-side branch protection has to
+ * exist too. If a commit is later found on the remote without valid
+ * evidence, the first three questions to ask are these four — not a fresh
+ * investigation into how the gate was defeated.
  *
  * ══════════════════════════════════════════════════════════════════════
  * SCOPE — "CODE PATH" IS AN APPROXIMATION OF "IMPLEMENTER CHANGE"
@@ -71,9 +107,8 @@
  * missing field, "changes-requested", a typo) fails closed.
  */
 import { execFileSync } from 'node:child_process';
-import { readFileSync, existsSync, readdirSync } from 'node:fs';
-import { resolve, dirname, join } from 'node:path';
-import { fileURLToPath, pathToFileURL } from 'node:url';
+import { resolve } from 'node:path';
+import { pathToFileURL } from 'node:url';
 
 // The repo being CHECKED is process.cwd(), not this script's own location —
 // git always invokes a pre-push hook with CWD set to the repo root, and
@@ -84,7 +119,6 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 // writing the test suite: every case failed, all for the same root cause,
 // before this was corrected.
 const REPO_ROOT = resolve(process.cwd());
-const EVIDENCE_DIR = resolve(REPO_ROOT, 'review-evidence');
 
 const SHA_RE = /^[0-9a-f]{40}$/;
 
@@ -156,14 +190,35 @@ function isPureEvidenceCommit(sha) {
   return paths.length > 0 && paths.every((p) => p.startsWith('review-evidence/'));
 }
 
-function readEvidenceFor(sha) {
-  const path = join(EVIDENCE_DIR, `${sha}.json`);
-  if (!existsSync(path)) {
-    return { ok: false, reason: `no evidence file at review-evidence/${sha}.json` };
+/** Reads review-evidence/<sha>.json as it exists in the COMMITTED tree of
+ * `tip` — never off disk. Resolved in two steps, `rev-parse <tip>:<path>`
+ * to the blob's OWN sha, then `cat-file -p <blob-sha>` to read it — not
+ * `git show <tip>:<path>` in one call. Found live, 2026-08-27, running the
+ * real end-to-end integration test (a real push through the real hook),
+ * not the isolated-repo unit suite: `git show <tip>:<path>` fails with
+ * "fatal: failed to stat ...: Filename too long" whenever the REPO'S OWN
+ * working-directory path is deep AND core.longpaths is unset (git for
+ * Windows' default) — regardless of how short the requested path itself
+ * is, and regardless of whether the blob genuinely exists (confirmed via
+ * `cat-file -e`, which succeeded on the exact same ref where `show`
+ * failed). Once resolved to a bare blob sha, `cat-file -p` has no path
+ * component left to overflow, and reproduces clean with core.longpaths
+ * left at its default (unset/false). This is not hypothetical for this
+ * repo — the current checkout's path is short enough to not hit it today,
+ * but the gate must not silently depend on that staying true on every
+ * machine and every clone depth this repo is ever checked out at. */
+function readEvidenceFor(sha, tip) {
+  const evidencePath = `review-evidence/${sha}.json`;
+  const blobRef = `${tip}:${evidencePath}`;
+  let blobSha;
+  try {
+    blobSha = gitQuiet(['rev-parse', '--verify', blobRef]);
+  } catch {
+    return { ok: false, reason: `no evidence file at ${evidencePath} in the committed history of ${tip.slice(0, 12)}` };
   }
   let raw;
   try {
-    raw = readFileSync(path, 'utf8');
+    raw = git(['cat-file', '-p', blobSha]);
   } catch (e) {
     return { ok: false, reason: `evidence file unreadable: ${e.message}` };
   }
@@ -206,11 +261,25 @@ function readEvidenceFor(sha) {
 /**
  * Checks one outgoing push. `outgoingShas` is the full list of commits
  * this push would add to the remote (already-topologically-sorted, oldest
- * first, does not matter for this check). Returns { blocked, messages }.
+ * first, does not matter for this check). `tip` is the commit the pushed
+ * ref will point at once this push completes — evidence for EVERY commit
+ * in `outgoingShas` is resolved from `tip`'s committed tree, not from each
+ * commit's own tree or from disk. This is deliberate: what matters is what
+ * will actually be reachable on the remote after the push, which is tip's
+ * history. It also means evidence committed once and later removed from
+ * the WORKING TREE (but never from history) still satisfies the gate —
+ * correct, since the remote still carries it — while evidence that was
+ * committed and then deleted in a LATER commit within the same push
+ * correctly stops satisfying the gate, since after the push it is
+ * genuinely gone from what the remote can see.
  */
-export function checkPush(outgoingShas) {
+export function checkPush(outgoingShas, tip) {
   const messages = [];
   let blocked = false;
+
+  if (!isValidSha(tip)) {
+    return { blocked: true, messages: [`✖ internal error: tip "${tip}" is not a valid 40-char SHA — refusing to guess what it means`] };
+  }
 
   for (const sha of outgoingShas) {
     if (!isValidSha(sha)) {
@@ -226,7 +295,7 @@ export function checkPush(outgoingShas) {
     if (!isGatedCommit(sha)) {
       continue; // touches nothing under src/, scripts/, importers/, .githooks/
     }
-    const result = readEvidenceFor(sha);
+    const result = readEvidenceFor(sha, tip);
     if (!result.ok) {
       blocked = true;
       messages.push(`✖ ${sha.slice(0, 12)} — BLOCKED: ${result.reason}`);
@@ -238,25 +307,30 @@ export function checkPush(outgoingShas) {
   return { blocked, messages };
 }
 
-/** CLI entry point for .githooks/pre-push: reads newline-separated SHAs
- * from argv (the outgoing commit range, already resolved by the shell
- * hook), prints the result, exits 1 if blocked. Uses pathToFileURL rather
- * than a manual string comparison — found live while building this: a
- * hand-rolled `file://${...}` comparison does not correctly account for
- * Windows drive-letter URL encoding, so the guard silently never matched
- * and the whole CLI body never ran (import-rebar.mjs's own entry-point
- * guard, elsewhere in this repo, already uses this exact pattern for the
- * same reason). */
+/** CLI entry point for .githooks/pre-push: argv is [tip, ...outgoingShas] —
+ * the tip commit first, then every commit the push would add (the hook
+ * passes $local_sha as argv[2], the same value it already put first in its
+ * own `git log --format='%H'` range, so the tip is always outgoingShas[0]
+ * in what the hook sends; this CLI takes it as an explicit separate
+ * argument rather than inferring it by array position, so `checkPush`'s
+ * contract does not depend on the caller's ordering convention). Prints
+ * the result, exits 1 if blocked. Uses pathToFileURL rather than a manual
+ * string comparison — found live while building this: a hand-rolled
+ * `file://${...}` comparison does not correctly account for Windows
+ * drive-letter URL encoding, so the guard silently never matched and the
+ * whole CLI body never ran (import-rebar.mjs's own entry-point guard,
+ * elsewhere in this repo, already uses this exact pattern for the same
+ * reason). */
 if (import.meta.url === pathToFileURL(process.argv[1]).href) {
-  const shas = process.argv.slice(2).filter(Boolean);
-  if (shas.length === 0) {
+  const [tip, ...shas] = process.argv.slice(2).filter(Boolean);
+  if (!tip) {
     // Nothing gated in this push — a shell caller that found zero outgoing
     // commits touching a gated path should not even invoke this script,
-    // but if it does, zero commits to check is unambiguously "nothing to
+    // but if it does, no tip to check against is unambiguously "nothing to
     // block," not an error.
     process.exit(0);
   }
-  const { blocked, messages } = checkPush(shas);
+  const { blocked, messages } = checkPush(shas, tip);
   for (const m of messages) console.error(m);
   process.exit(blocked ? 1 : 0);
 }
