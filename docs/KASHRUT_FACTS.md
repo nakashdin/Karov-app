@@ -2503,3 +2503,50 @@ question as the guard reporting what it knows on every run rather than only the 
 | `unknownCityId` is "structurally incapable of failing" | **overstated** — it was driven to 9 in a worktree; it is blind *to rebuilding writers* | see §19b |
 | "0 records have ever been removed from `places.osm.json`" (asserted **three times**) | **1,143 removed and never restored under the same id**; ≤560 with no successor | `commit^` through `cmd.exe` resolved to the commit itself; see §21c |
 | "commit `7b1a1b7` removed nothing" | it removed **197** | same `^` defect |
+
+---
+
+## 35. A HEAD-relative check cannot be tested by making the working tree older than HEAD
+
+Eight checks in `validate-data.mjs` compare the working dataset against **git HEAD** — `certifiedBy`
+append-only (B1.1), the `lastVerifiedAt` backward-move guard, the owner-§7 field-absence guard. They read
+the previous state out of the repository rather than out of a baseline file.
+
+**That makes the obvious way to test them backwards, and the failure is a false negative.**
+
+Verifying that the §34 slack detector would have caught the incident that motivated it (`880e48d`, a stale
+`foodWithoutKashrut` ceiling), the first reconstruction was: check out the **new** commit carrying the
+detector, overlay the **old** dataset from `880e48d`, run it. Result: three HARD failures, the entire
+comparison block skipped, **no slack line at all** — a clean, plausible, reportable "the detector does not
+fire on the case it was built for," which would have blocked unrelated approved work for a defect that does
+not exist.
+
+The detector was fine. Rolling the working tree back past HEAD made every record look like it had lost
+evidence and moved its date backward — which is precisely what those eight checks exist to catch. **The
+checks fired correctly. They were describing the test rig.**
+
+**The construction has to be inverted:** put the worktree at the *historical* commit, so HEAD **is** the
+historical data and the HEAD-relative checks are self-consistent, then overlay only the new code (and its
+imports) on top. Nothing else changes, so anything that fires is attributable to the new code. Run that way,
+the detector printed `SLACK: foodWithoutKashrut ceiling is 2 above reality (18 actual / 20 baseline)` — exact
+key, exact gap.
+
+| | what is HEAD | what is in the tree | what the HEAD-relative checks see |
+|---|---|---|---|
+| wrong way | new commit | old dataset | every record "lost" evidence — checks fire on the rig |
+| right way | historical commit | its own dataset + new code overlaid | nothing — checks are self-consistent |
+
+**The generalisation, and it applies to any check that reads its own previous state from the repository:**
+such a check has *two* inputs, the working tree and HEAD, and a test that varies only one of them is testing
+the difference, not the check. Before overlaying anything, ask **what this check compares against** — if the
+answer is "the repository," then the repository is part of the fixture and has to be positioned first.
+
+**Why this is worth its own section rather than a note on §34.** The false negative was indistinguishable
+from a real one by inspection: right shape, right absence, and a coherent story (the detector is gated behind
+`hard.length === 0`, so hard failures suppressing it is *true* — it just was not what happened here). It was
+caught only because the hard failures named `greg-77bb14f6` and `greg-9ddc70b3` losing `certifiedBy`, and
+those two records had *gained* it in the write under review. **A finding that contradicts something you
+measured an hour ago is not a discovery; it is a signal that the instrument moved.**
+
+Related: §17c (a probe whose pass and fail cases agree has stopped discriminating) is the general detector;
+this is the specific shape it takes when the fixture includes a git ref.
