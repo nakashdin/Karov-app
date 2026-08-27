@@ -55,6 +55,24 @@ describe('the UTC/local timezone boundary (2026-08-27 finding)', () => {
   // 02:00 local — September 11 in UTC, September 12 in local time. A
   // record whose certificate expires 2026-09-11 has ALREADY lapsed by local
   // clock at this instant; the buggy UTC form would still call it 'valid'.
+  //
+  // "Local" only means "Israel" if the PROCESS's timezone is Israel's. The
+  // first version of this block assumed that — it passed on every developer
+  // machine (all Asia/Jerusalem) and failed on CI's UTC runner (found live,
+  // 2026-08-27: TZ=UTC reproduces the CI failure exactly, one test, this
+  // one). On a UTC runner "local" IS UTC, so there is no divergence left to
+  // observe and 2026-09-11T23:00 UTC has not rolled to a new local day at
+  // all — the test's own premise stops holding, not the code under test.
+  //
+  // A per-file `process.env.TZ` reassignment (beforeAll/afterAll) does NOT
+  // fix this — tried it, still failed under TZ=UTC. jest's fake-timers
+  // machinery reads the timezone at a point this test file's beforeAll runs
+  // too late to affect. The fix lives at jest.config.js instead, pinning
+  // TZ=Asia/Jerusalem for the whole worker process before any test file
+  // loads — see that file's comment for the full reasoning and the matrix
+  // that proves it discriminates the bug (TZ=UTC does not: the assertion
+  // reads the same with or without the regression, which is the trap).
+
   it('reports a cert expiring "today" (2026-09-11) as EXPIRED once local time has already rolled to 2026-09-12, even though UTC has not', () => {
     jest.useFakeTimers().setSystemTime(new Date(Date.UTC(2026, 8, 11, 23, 0, 0)));
     try {
