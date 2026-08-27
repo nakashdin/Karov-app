@@ -12147,7 +12147,7 @@
     "type": "cafe",
     "source": "manual",
     "name": "קפה גרג מגדל העמק",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "website": "https://gregcafe.co.il",
     "cityId": "מגדל העמק",
     "address": "ביג מגדל העמק",
@@ -12157,10 +12157,12 @@
       "latitude": 32.6927233,
       "longitude": 35.2279386
     },
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "phone": "04-6111554",
     "openingHours": "א'-ה' 8:30-22:30 | ו' 7:30-13:30 | ש' סגור",
-    "menu": "https://gregcafe.co.il/menus/"
+    "menu": "https://gregcafe.co.il/menus/",
+    "certifiedBy": "בד\"צ בית יוסף",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%9e%d7%92%d7%93%d7%9c-%d7%94%d7%a2%d7%9e%d7%a7/"
   },
   {
     "facebook": "https://www.facebook.com/gregcafe/",
@@ -12168,7 +12170,7 @@
     "type": "cafe",
     "openingHours": "א'-ה' 9:00-22:00 | ו' 8:30-13:30 | ש' סגור",
     "name": "קפה גרג גן העיר אשדוד",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "website": "https://gregcafe.co.il",
     "cityId": "אשדוד",
     "address": "הגדוד העברי, גן העיר, אשדוד",
@@ -12178,10 +12180,12 @@
       "latitude": 31.7908807,
       "longitude": 34.6381046
     },
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "source": "manual",
     "phone": "08-8675002",
-    "menu": "https://gregcafe.co.il/menus/"
+    "menu": "https://gregcafe.co.il/menus/",
+    "certifiedBy": "בית יוסף",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%92%d7%9f-%d7%94%d7%a2%d7%99%d7%a8-%d7%90%d7%a9%d7%93%d7%95%d7%93/"
   },
   {
     "facebook": "https://www.facebook.com/gregcafe/",
@@ -12189,7 +12193,7 @@
     "type": "cafe",
     "source": "manual",
     "name": "קפה גרג פארק תעשיות אפק",
-    "lastVerifiedAt": "2026-07-24",
+    "lastVerifiedAt": "2026-08-27",
     "website": "https://gregcafe.co.il",
     "cityId": "ראש העין",
     "address": "המלאכה, פארק תעשייה אפק, ראש העין",
@@ -12199,10 +12203,11 @@
       "latitude": 32.1060921,
       "longitude": 34.9687576
     },
-    "kosherType": "rabanut",
+    "kosherType": "kosher",
     "phone": "03-5566667",
     "openingHours": "א'-ה' 8:00-22:00 | ו' 8:00-14:00 | ש' סגור",
-    "menu": "https://gregcafe.co.il/menus/"
+    "menu": "https://gregcafe.co.il/menus/",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%9b%d7%a4%d7%a8-%d7%a7%d7%90%d7%a1%d7%9d/"
   },
   {
     "facebook": "https://www.facebook.com/gregcafe/",
@@ -12210,7 +12215,7 @@
     "type": "cafe",
     "openingHours": "א'-ה' 8:30-22:30 | ו' 8:30-14:00 | מוצ\"ש עד 22:30",
     "name": "קפה גרג דנילוף טבריה",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "website": "https://gregcafe.co.il",
     "cityId": "טבריה",
     "address": "יהודה הלוי 1, טבריה",
@@ -12220,10 +12225,11 @@
       "latitude": 32.7904643,
       "longitude": 35.533805
     },
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "source": "manual",
     "phone": "04-8675566",
-    "menu": "https://gregcafe.co.il/menus/"
+    "menu": "https://gregcafe.co.il/menus/",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%93%d7%a0%d7%99%d7%9c%d7%95%d7%a3/"
   },
   {
     "facebook": "https://www.facebook.com/gregcafe/",
@@ -12231,7 +12237,7 @@
     "type": "cafe",
     "openingHours": "א'-ה' 9:00-21:00 | ו' 9:00-14:00 | ש' סגור",
     "name": "קפה גרג חדרה",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "website": "https://gregcafe.co.il",
     "cityId": "חדרה",
     "address": "שדרות רוטשילד, עופר לב חדרה",
@@ -12241,10 +12247,11 @@
       "latitude": 32.4378941,
       "longitude": 34.9219993
     },
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "source": "manual",
     "phone": "1700-70-4407",
-    "menu": "https://gregcafe.co.il/menus/"
+    "menu": "https://gregcafe.co.il/menus/",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%97%d7%93%d7%a8%d7%94/"
   },
   {
     "facebook": "https://www.facebook.com/gregcafe/",
@@ -12252,7 +12259,7 @@
     "type": "cafe",
     "openingHours": "א'-ה' 9:00-21:15 | ו' 8:00-14:00 | מוצ\"ש עד 22:00",
     "name": "קפה גרג רננים רעננה",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "website": "https://gregcafe.co.il",
     "cityId": "רעננה",
     "address": "המלאכה, קניון רננים, רעננה",
@@ -12262,10 +12269,11 @@
       "latitude": 32.1974472,
       "longitude": 34.8780966
     },
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "source": "manual",
     "phone": "09-8781472",
-    "menu": "https://gregcafe.co.il/menus/"
+    "menu": "https://gregcafe.co.il/menus/",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%a8%d7%a0%d7%a0%d7%99%d7%9d/"
   },
   {
     "facebook": "https://www.facebook.com/gregcafe/",
@@ -12273,7 +12281,7 @@
     "type": "cafe",
     "openingHours": "א'-ה' 9:30-21:45 | ו' 9:00-13:00 | ש' סגור",
     "name": "קפה גרג גוש עציון",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "website": "https://gregcafe.co.il",
     "cityId": "גוש עציון",
     "address": "צומת גוש עציון",
@@ -12283,10 +12291,11 @@
       "latitude": 31.645207,
       "longitude": 35.1309302
     },
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "source": "manual",
     "phone": "055-5573172",
-    "menu": "https://gregcafe.co.il/menus/"
+    "menu": "https://gregcafe.co.il/menus/",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%92%d7%95%d7%a9-%d7%a2%d7%a6%d7%99%d7%95%d7%9f/"
   },
   {
     "facebook": "https://www.facebook.com/gregcafe/",
@@ -12294,7 +12303,7 @@
     "type": "cafe",
     "source": "manual",
     "name": "קפה גרג קניון הדר ירושלים",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "website": "https://gregcafe.co.il",
     "cityId": "ירושלים",
     "address": "פייר קינג 26, ירושלים",
@@ -12304,10 +12313,11 @@
       "latitude": 31.768319,
       "longitude": 35.21371
     },
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "phone": "02-5367870",
     "openingHours": "א'-ה' 9:00-22:00 | ו' 8:00-13:30 | ש' סגור",
-    "menu": "https://gregcafe.co.il/menus/"
+    "menu": "https://gregcafe.co.il/menus/",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%99%d7%a8%d7%95%d7%a9%d7%9c%d7%99%d7%9d-6/"
   },
   {
     "facebook": "https://www.facebook.com/gregcafe/",
@@ -12315,7 +12325,7 @@
     "type": "cafe",
     "source": "manual",
     "name": "קפה גרג ב.ס.ר בני ברק",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "website": "https://gregcafe.co.il",
     "cityId": "בני ברק",
     "address": "מצדה 5, בני ברק",
@@ -12325,10 +12335,11 @@
       "latitude": 32.093639,
       "longitude": 34.8247297
     },
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "phone": "054-9377766",
     "openingHours": "א'-ה' 9:00-23:00 | ו' 8:00-13:00 | מוצ\"ש עד 23:00",
-    "menu": "https://gregcafe.co.il/menus/"
+    "menu": "https://gregcafe.co.il/menus/",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%91%d7%a0%d7%99-%d7%91%d7%a8%d7%a7/"
   },
   {
     "facebook": "https://www.facebook.com/gregcafe/",
@@ -12336,7 +12347,7 @@
     "type": "cafe",
     "source": "manual",
     "name": "קפה גרג פוריה טבריה",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "website": "https://gregcafe.co.il",
     "cityId": "טבריה",
     "address": "המברג 1, טבריה",
@@ -12346,10 +12357,11 @@
       "latitude": 32.7853923,
       "longitude": 35.4984742
     },
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "phone": "04-6735767",
     "openingHours": "א'-ה' 8:00-22:00 | ו' 8:00-13:30 | ש' 17:45-23:00",
-    "menu": "https://gregcafe.co.il/menus/"
+    "menu": "https://gregcafe.co.il/menus/",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%a4%d7%95%d7%a8%d7%99%d7%94/"
   },
   {
     "facebook": "https://www.facebook.com/gregcafe/",
@@ -12357,7 +12369,7 @@
     "type": "cafe",
     "source": "manual",
     "name": "קפה גרג נשר",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "website": "https://gregcafe.co.il",
     "cityId": "נשר",
     "address": "דרך בר יהודה 111, נשר",
@@ -12367,10 +12379,11 @@
       "latitude": 32.771792,
       "longitude": 35.0468566
     },
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "phone": "04-6221199",
     "openingHours": "א'-ה' 7:30-22:00 | ו' 7:30-14:00 | ש' סגור",
-    "menu": "https://gregcafe.co.il/menus/"
+    "menu": "https://gregcafe.co.il/menus/",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%a0%d7%a9%d7%a8/"
   },
   {
     "facebook": "https://www.facebook.com/gregcafe/",
@@ -12378,7 +12391,7 @@
     "type": "cafe",
     "openingHours": "א'-ה' 8:00-22:30 | ו' 8:00-13:00 | מוצ\"ש עד 23:00",
     "name": "קפה גרג בית שאן",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "website": "https://gregcafe.co.il",
     "cityId": "בית שאן",
     "address": "שדרות מנחם בגין, בית שאן",
@@ -12388,10 +12401,11 @@
       "latitude": 32.4991152,
       "longitude": 35.5046608
     },
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "source": "manual",
     "phone": "04-6060260",
-    "menu": "https://gregcafe.co.il/menus/"
+    "menu": "https://gregcafe.co.il/menus/",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%91%d7%99%d7%aa-%d7%a9%d7%90%d7%9f/"
   },
   {
     "facebook": "https://www.facebook.com/gregcafe/",
@@ -12399,7 +12413,7 @@
     "type": "cafe",
     "source": "manual",
     "name": "קפה גרג בית שמש",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "website": "https://gregcafe.co.il",
     "cityId": "בית שמש",
     "address": "שדרות יגאל אלון 1, בית שמש",
@@ -12409,10 +12423,11 @@
       "latitude": 31.7560341,
       "longitude": 34.9904465
     },
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "phone": "02-5401964",
     "openingHours": "א'-ה' 9:00-23:00 | ו' 8:00-14:00 | ש' סגור",
-    "menu": "https://gregcafe.co.il/menus/"
+    "menu": "https://gregcafe.co.il/menus/",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%91%d7%99%d7%aa-%d7%a9%d7%9e%d7%a9/"
   },
   {
     "facebook": "https://www.facebook.com/gregcafe/",
@@ -12420,7 +12435,7 @@
     "type": "cafe",
     "openingHours": "א'-ה' 9:00-21:30 | ו' 9:00-14:00 | ש' סגור",
     "name": "קפה גרג TLV תל אביב",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "website": "https://gregcafe.co.il",
     "cityId": "תל אביב",
     "address": "החשמונאים 100, תל אביב",
@@ -12430,10 +12445,11 @@
       "latitude": 32.0678229,
       "longitude": 34.7834787
     },
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "source": "manual",
     "phone": "03-677-1310",
-    "menu": "https://gregcafe.co.il/menus/"
+    "menu": "https://gregcafe.co.il/menus/",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%92%d7%a8%d7%92-tlv/"
   },
   {
     "facebook": "https://www.facebook.com/gregcafe/",
@@ -12441,7 +12457,7 @@
     "type": "cafe",
     "source": "manual",
     "name": "קפה גרג דיזנגוף סנטר",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "website": "https://gregcafe.co.il",
     "cityId": "תל אביב",
     "address": "דיזנגוף 55, תל אביב",
@@ -12451,10 +12467,11 @@
       "latitude": 32.0754236,
       "longitude": 34.7748328
     },
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "phone": "03-9366514",
     "openingHours": "א'-ה' 9:00-20:00 | ו' 8:30-14:00 | ש' סגור",
-    "menu": "https://gregcafe.co.il/menus/"
+    "menu": "https://gregcafe.co.il/menus/",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%93%d7%99%d7%96%d7%a0%d7%92%d7%95%d7%a3-%d7%a1%d7%a0%d7%98%d7%a8/"
   },
   {
     "facebook": "https://www.facebook.com/gregcafe/",
@@ -12462,7 +12479,7 @@
     "type": "cafe",
     "source": "manual",
     "name": "קפה גרג הקניון הגדול פתח תקווה",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "website": "https://gregcafe.co.il",
     "cityId": "פתח תקווה",
     "address": "ז'בוטינסקי 72, פתח תקווה",
@@ -12472,10 +12489,11 @@
       "latitude": 32.0932981,
       "longitude": 34.8653481
     },
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "phone": "03-6428888",
     "openingHours": "א'-ה' 8:00-23:00 | ו' 7:00-14:30 | ש' סגור",
-    "menu": "https://gregcafe.co.il/menus/"
+    "menu": "https://gregcafe.co.il/menus/",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%90%d7%91%d7%a0%d7%aa-%d7%a4%d7%aa/"
   },
   {
     "facebook": "https://www.facebook.com/gregcafe/",
@@ -12483,7 +12501,7 @@
     "type": "cafe",
     "source": "manual",
     "name": "קפה גרג סירקין פתח תקווה",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "website": "https://gregcafe.co.il",
     "cityId": "פתח תקווה",
     "address": "אלעזר פרידמן 9, פתח תקווה",
@@ -12493,10 +12511,11 @@
       "latitude": 32.0794457,
       "longitude": 34.9025999
     },
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "phone": "03-9075088",
     "openingHours": "א'-ה' 8:30-21:00 | ו' 8:00-13:30 | ש' סגור",
-    "menu": "https://gregcafe.co.il/menus/"
+    "menu": "https://gregcafe.co.il/menus/",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%a4%d7%aa%d7%97-%d7%aa%d7%a7%d7%95%d7%95%d7%94/"
   },
   {
     "facebook": "https://www.facebook.com/gregcafe/",
@@ -12504,7 +12523,7 @@
     "type": "cafe",
     "openingHours": "א'-ה' 8:00-23:00 | ו' 7:45-13:30 | ש' סגור",
     "name": "קפה גרג גבעת שמואל",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "website": "https://gregcafe.co.il",
     "cityId": "גבעת שמואל",
     "address": "שדרות מנחם בגין 30, גבעת שמואל",
@@ -12514,10 +12533,11 @@
       "latitude": 32.0756581,
       "longitude": 34.8545348
     },
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "source": "manual",
     "phone": "03-5504969",
-    "menu": "https://gregcafe.co.il/menus/"
+    "menu": "https://gregcafe.co.il/menus/",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%92%d7%91%d7%a2%d7%aa-%d7%a9%d7%9e%d7%95%d7%90%d7%9c/"
   },
   {
     "facebook": "https://www.facebook.com/gregcafe/",
@@ -12525,7 +12545,7 @@
     "type": "cafe",
     "source": "manual",
     "name": "קפה גרג שרונים הוד השרון",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "website": "https://gregcafe.co.il",
     "cityId": "הוד השרון",
     "address": "הרקון 2, הוד השרון",
@@ -12535,10 +12555,11 @@
       "latitude": 32.1333401,
       "longitude": 34.9014664
     },
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "phone": "09-8800890",
     "openingHours": "א'-ה' 7:30-20:00 | ו' 7:30-15:00 | ש' סגור",
-    "menu": "https://gregcafe.co.il/menus/"
+    "menu": "https://gregcafe.co.il/menus/",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%a9%d7%a8%d7%95%d7%a0%d7%99%d7%9d/"
   },
   {
     "facebook": "https://www.facebook.com/gregcafe/",
@@ -12546,7 +12567,7 @@
     "type": "cafe",
     "source": "manual",
     "name": "קפה גרג נתניה השרון",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "website": "https://gregcafe.co.il",
     "cityId": "נתניה",
     "address": "הרצל 60, נתניה",
@@ -12556,10 +12577,11 @@
       "latitude": 32.3264108,
       "longitude": 34.8618993
     },
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "phone": "053-3374774",
     "openingHours": "א'-ה' 8:30-21:30 | ו' 8:00-14:00 | ש' סגור",
-    "menu": "https://gregcafe.co.il/menus/"
+    "menu": "https://gregcafe.co.il/menus/",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%a0%d7%aa%d7%a0%d7%99%d7%94-%d7%94%d7%a9%d7%a8%d7%95%d7%9f/"
   },
   {
     "facebook": "https://www.facebook.com/gregcafe/",
@@ -12567,7 +12589,7 @@
     "type": "cafe",
     "openingHours": "א'-ה' 7:30-23:00 | ו' 7:30-13:00 | ש' סגור",
     "name": "קפה גרג אריאל",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "website": "https://gregcafe.co.il",
     "cityId": "אריאל",
     "address": "הבנאי 5, אריאל",
@@ -12577,10 +12599,11 @@
       "latitude": 32.1007172,
       "longitude": 35.1701921
     },
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "source": "manual",
     "phone": "03-9303372",
-    "menu": "https://gregcafe.co.il/menus/"
+    "menu": "https://gregcafe.co.il/menus/",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%a7%d7%a0%d7%99%d7%95%d7%9f-%d7%9e%d7%92%d7%94-%d7%90%d7%95%d7%a8-%d7%90%d7%a8%d7%99%d7%90%d7%9c/"
   },
   {
     "facebook": "https://www.facebook.com/gregcafe/",
@@ -12588,7 +12611,7 @@
     "type": "cafe",
     "source": "manual",
     "name": "קפה גרג ביג אילת",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "website": "https://gregcafe.co.il",
     "cityId": "אילת",
     "address": "הסתת 20, אילת",
@@ -12598,10 +12621,11 @@
       "latitude": 29.5664539,
       "longitude": 34.9596748
     },
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "phone": "08-8507828",
     "openingHours": "א'-ה' 9:00-21:30 | ו' 8:30-14:30 | ש' סגור",
-    "menu": "https://gregcafe.co.il/menus/"
+    "menu": "https://gregcafe.co.il/menus/",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%91%d7%99%d7%92-%d7%90%d7%99%d7%9c%d7%aa/"
   },
   {
     "facebook": "https://www.facebook.com/gregcafe/",
@@ -12609,7 +12633,7 @@
     "type": "cafe",
     "source": "manual",
     "name": "קפה גרג דימונה",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "website": "https://gregcafe.co.il",
     "cityId": "דימונה",
     "address": "שדרות גולדה מאיר 1, דימונה",
@@ -12619,10 +12643,11 @@
       "latitude": 31.0742063,
       "longitude": 35.032363
     },
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "phone": "08-6910090",
     "openingHours": "א'-ה' 8:00-22:00 | ו' 8:00-13:30 | ש' סגור",
-    "menu": "https://gregcafe.co.il/menus/"
+    "menu": "https://gregcafe.co.il/menus/",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%93%d7%99%d7%9e%d7%95%d7%a0%d7%94/"
   },
   {
     "facebook": "https://www.facebook.com/gregcafe/",
@@ -12630,7 +12655,7 @@
     "type": "cafe",
     "openingHours": "א'-ה' 8:30-22:30 | ו' 8:30-14:00 | ש' סגור",
     "name": "קפה גרג אופקים",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "website": "https://gregcafe.co.il",
     "cityId": "אופקים",
     "address": "יהדות דרום אפריקה 14, אופקים",
@@ -12640,10 +12665,11 @@
       "latitude": 31.3152934,
       "longitude": 34.6237812
     },
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "source": "manual",
     "phone": "08-9320066",
-    "menu": "https://gregcafe.co.il/menus/"
+    "menu": "https://gregcafe.co.il/menus/",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%90%d7%95%d7%a4%d7%a7%d7%99%d7%9d/"
   },
   {
     "facebook": "https://www.facebook.com/gregcafe/",
@@ -12651,7 +12677,7 @@
     "type": "cafe",
     "source": "manual",
     "name": "קפה גרג שדרות",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "website": "https://gregcafe.co.il",
     "cityId": "שדרות",
     "address": "דרך מנחם בגין 1, שדרות",
@@ -12661,10 +12687,11 @@
       "latitude": 31.5256004,
       "longitude": 34.6031203
     },
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "phone": "08-9292969",
     "openingHours": "א'-ה' 7:30-23:00 | ו' 7:30-13:30 | ש' סגור",
-    "menu": "https://gregcafe.co.il/menus/"
+    "menu": "https://gregcafe.co.il/menus/",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%a9%d7%93%d7%a8%d7%95%d7%aa/"
   },
   {
     "facebook": "https://www.facebook.com/gregcafe/",
@@ -12672,7 +12699,7 @@
     "type": "cafe",
     "source": "manual",
     "name": "קפה גרג נתיבות",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "website": "https://gregcafe.co.il",
     "cityId": "נתיבות",
     "address": "בעלי המלאכה 5, נתיבות",
@@ -12682,10 +12709,11 @@
       "latitude": 31.4183917,
       "longitude": 34.5990347
     },
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "phone": "08-9933287",
     "openingHours": "א'-ה' 8:00-23:00 | ו' 8:00-14:00 | ש' סגור",
-    "menu": "https://gregcafe.co.il/menus/"
+    "menu": "https://gregcafe.co.il/menus/",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%a0%d7%aa%d7%99%d7%91%d7%95%d7%aa/"
   },
   {
     "facebook": "https://www.facebook.com/gregcafe/",
@@ -12693,7 +12721,7 @@
     "type": "cafe",
     "source": "manual",
     "name": "קפה גרג קסטינה",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "website": "https://gregcafe.co.il",
     "cityId": "באר טוביה",
     "address": "ביג קסטינה, שיבולים, באר טוביה",
@@ -12703,10 +12731,11 @@
       "latitude": 31.728028,
       "longitude": 34.7550671
     },
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "phone": "08-6118112",
     "openingHours": "א'-ה' 8:00-22:00 | ו' 8:00-13:30 | מוצ\"ש עד 22:30",
-    "menu": "https://gregcafe.co.il/menus/"
+    "menu": "https://gregcafe.co.il/menus/",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%a7%d7%a1%d7%98%d7%99%d7%a0%d7%94/"
   },
   {
     "facebook": "https://www.facebook.com/gregcafe/",
@@ -12714,7 +12743,7 @@
     "type": "cafe",
     "source": "manual",
     "name": "קפה גרג רמלה",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "website": "https://gregcafe.co.il",
     "cityId": "רמלה",
     "address": "שדרות דוד רזיאל 1, רמלה",
@@ -12724,10 +12753,11 @@
       "latitude": 31.9257549,
       "longitude": 34.8639629
     },
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "phone": "08-9150900",
     "openingHours": "א'-ה' 8:30-22:00 | ו' 8:30-14:30 | ש' סגור",
-    "menu": "https://gregcafe.co.il/menus/"
+    "menu": "https://gregcafe.co.il/menus/",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%a8%d7%9e%d7%9c%d7%94/"
   },
   {
     "facebook": "https://www.facebook.com/gregcafe/",
@@ -12735,7 +12765,7 @@
     "type": "cafe",
     "openingHours": "א'-ה' 8:30-22:00 | ו' 8:30-13:00 | מוצ\"ש עד 23:00",
     "name": "קפה גרג חריש",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "website": "https://gregcafe.co.il",
     "cityId": "חריש",
     "address": "דרך ארץ 1, חריש",
@@ -12745,10 +12775,11 @@
       "latitude": 32.4705038,
       "longitude": 35.0392878
     },
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "source": "manual",
     "phone": "04-8532264",
-    "menu": "https://gregcafe.co.il/menus/"
+    "menu": "https://gregcafe.co.il/menus/",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%97%d7%a8%d7%99%d7%a9/"
   },
   {
     "facebook": "https://www.facebook.com/gregcafe/",
@@ -12756,7 +12787,7 @@
     "type": "cafe",
     "openingHours": "א'-ה' 8:00-24:00 | ו' 8:00-14:00 | ש' סגור",
     "name": "קפה גרג קרית אתא",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "website": "https://gregcafe.co.il",
     "cityId": "קריית אתא",
     "address": "העצמאות 57, קריית אתא",
@@ -12766,10 +12797,11 @@
       "latitude": 32.8061731,
       "longitude": 35.1035172
     },
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "source": "manual",
     "phone": "04-8445522",
-    "menu": "https://gregcafe.co.il/menus/"
+    "menu": "https://gregcafe.co.il/menus/",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%a7%d7%a8%d7%99%d7%aa-%d7%90%d7%aa%d7%90/"
   },
   {
     "facebook": "https://www.facebook.com/gregcafe/",
@@ -12777,7 +12809,7 @@
     "type": "cafe",
     "source": "manual",
     "name": "קפה גרג עתלית",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "website": "https://gregcafe.co.il",
     "cityId": "עתלית",
     "address": "דרך הים 2, עתלית",
@@ -12787,10 +12819,11 @@
       "latitude": 32.7104359,
       "longitude": 34.9481538
     },
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "phone": "04-9962399",
     "openingHours": "א'-ה' 7:30-22:30 | ו' 7:30-14:30 | ש' סגור",
-    "menu": "https://gregcafe.co.il/menus/"
+    "menu": "https://gregcafe.co.il/menus/",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%a2%d7%aa%d7%9c%d7%99%d7%aa/"
   },
   {
     "facebook": "https://www.facebook.com/gregcafe/",
@@ -12798,7 +12831,7 @@
     "type": "cafe",
     "source": "manual",
     "name": "קפה גרג לב המפרץ חיפה",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "website": "https://gregcafe.co.il",
     "cityId": "חיפה",
     "address": "שדרות ההסתדרות 55, חיפה",
@@ -12808,10 +12841,11 @@
       "latitude": 32.7934932,
       "longitude": 35.0377411
     },
-    "kosherType": "rabanut",
+    "kosherType": "kosher",
     "phone": "04-8403333",
     "openingHours": "א'-ה' 8:30-21:00 | ו' 8:30-14:00 | ש' סגור",
-    "menu": "https://gregcafe.co.il/menus/"
+    "menu": "https://gregcafe.co.il/menus/",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%9c%d7%91-%d7%94%d7%9e%d7%a4%d7%a8%d7%a5/"
   },
   {
     "facebook": "https://www.facebook.com/gregcafe/",
@@ -12819,7 +12853,7 @@
     "type": "cafe",
     "openingHours": "א'-ה' 8:00-23:00 | ו' 8:00-15:00 | מוצ\"ש עד חצות",
     "name": "קפה גרג עפולה",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "website": "https://gregcafe.co.il",
     "cityId": "עפולה",
     "address": "השוק 13, עפולה",
@@ -12829,10 +12863,11 @@
       "latitude": 32.6061191,
       "longitude": 35.2929707
     },
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "source": "manual",
     "phone": "04-6490011",
-    "menu": "https://gregcafe.co.il/menus/"
+    "menu": "https://gregcafe.co.il/menus/",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%a2%d7%a4%d7%95%d7%9c%d7%94/"
   },
   {
     "facebook": "https://www.facebook.com/gregcafe/",
@@ -12840,7 +12875,7 @@
     "type": "cafe",
     "source": "manual",
     "name": "קפה גרג קניון נהריה",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "website": "https://gregcafe.co.il",
     "cityId": "נהריה",
     "address": "אירית 2, נהריה",
@@ -12850,10 +12885,11 @@
       "latitude": 32.9901794,
       "longitude": 35.0953318
     },
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "phone": "04-9930090",
     "openingHours": "א'-ה' 8:30-21:00 | ו' 8:00-14:00 | ש' סגור",
-    "menu": "https://gregcafe.co.il/menus/"
+    "menu": "https://gregcafe.co.il/menus/",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%a0%d7%94%d7%a8%d7%99%d7%94-%d7%a7%d7%a0%d7%99%d7%95%d7%9f/"
   },
   {
     "facebook": "https://www.facebook.com/gregcafe/",
@@ -12861,7 +12897,7 @@
     "type": "cafe",
     "openingHours": "א'-ה' 7:30-20:00 | ו' 7:30-12:30 | ש' סגור",
     "name": "קפה גרג מכללת בראודה כרמיאל",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "website": "https://gregcafe.co.il",
     "cityId": "כרמיאל",
     "address": "סנונית 51, כרמיאל",
@@ -12871,10 +12907,11 @@
       "latitude": 32.914671,
       "longitude": 35.292417
     },
-    "kosherType": "rabanut",
+    "kosherType": "kosher",
     "source": "manual",
     "phone": "1700-70-4407",
-    "menu": "https://gregcafe.co.il/menus/"
+    "menu": "https://gregcafe.co.il/menus/",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%91%d7%a8%d7%90%d7%95%d7%93%d7%94/"
   },
   {
     "facebook": "https://www.facebook.com/gregcafe/",
@@ -12882,7 +12919,7 @@
     "type": "cafe",
     "source": "manual",
     "name": "קפה גרג ראש פינה",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "website": "https://gregcafe.co.il",
     "cityId": "ראש פינה",
     "address": "התפוח 5, ראש פינה",
@@ -12892,10 +12929,11 @@
       "latitude": 32.9697787,
       "longitude": 35.5503856
     },
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "phone": "04-6801191",
     "openingHours": "א'-ה' 7:30-23:00 | ו' 8:00-14:30 | ש' סגור",
-    "menu": "https://gregcafe.co.il/menus/"
+    "menu": "https://gregcafe.co.il/menus/",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%a8%d7%90%d7%a9-%d7%a4%d7%99%d7%a0%d7%94/"
   },
   {
     "facebook": "https://www.facebook.com/landwercafe/",
@@ -23015,16 +23053,17 @@
     "locationPrecision": "address",
     "openingHours": "א'-ה' 9:30-20:30 | ו' 9:30-14:00 | ש' סגור",
     "category": "dairy",
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "menu": "https://gregcafe.co.il/menus/",
     "website": "https://gregcafe.co.il",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "tags": [
       "coffee",
       "cafe"
     ],
-    "phone": "08-6255588"
+    "phone": "08-6255588",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%99%d7%9d-%d7%94%d7%9e%d7%9c%d7%97-2/"
   },
   {
     "id": "greg-19589c28",
@@ -23039,16 +23078,17 @@
     "locationPrecision": "address",
     "openingHours": "א'-ה' 9:00-22:00 | ו' 9:00-13:00 | ש' סגור",
     "category": "dairy",
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "menu": "https://gregcafe.co.il/menus/",
     "website": "https://gregcafe.co.il",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "tags": [
       "coffee",
       "cafe"
     ],
-    "phone": "03-6559896"
+    "phone": "03-6559896",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%92%d7%99-2-%d7%a8%d7%90%d7%a9%d7%95%d7%9f/"
   },
   {
     "id": "greg-d99c94fb",
@@ -23063,16 +23103,17 @@
     "locationPrecision": "address",
     "openingHours": "א'-ה' 8:00-22:00 | ו' 8:00-14:30 | ש' סגור",
     "category": "dairy",
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "menu": "https://gregcafe.co.il/menus/",
     "website": "https://gregcafe.co.il",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "tags": [
       "coffee",
       "cafe"
     ],
-    "phone": "050-8773566"
+    "phone": "050-8773566",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%99%d7%a7%d7%a0%d7%a2%d7%9d/"
   },
   {
     "id": "greg-7406930e",
@@ -23087,16 +23128,17 @@
     "locationPrecision": "address",
     "openingHours": "א'-ה' 8:00-23:00 | ו' 8:00-14:30 | ש' סגור",
     "category": "dairy",
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "menu": "https://gregcafe.co.il/menus/",
     "website": "https://gregcafe.co.il",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-27",
+    "lastVerifiedAt": "2026-08-27",
     "tags": [
       "coffee",
       "cafe"
     ],
-    "phone": "04-9531807"
+    "phone": "04-9531807",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%a4%d7%a8%d7%93%d7%a1-%d7%97%d7%a0%d7%94/"
   },
   {
     "id": "greg-d22f70cb",
@@ -23111,16 +23153,17 @@
     "locationPrecision": "address",
     "openingHours": "א'-ה' 9:00-19:00 | ו' 8:30-13:00 | ש' סגור",
     "category": "dairy",
-    "kosherType": "mehadrin",
+    "kosherType": "kosher",
     "menu": "https://gregcafe.co.il/menus/",
     "website": "https://gregcafe.co.il",
     "source": "manual",
-    "lastVerifiedAt": "2026-07-24",
+    "lastVerifiedAt": "2026-08-27",
     "tags": [
       "coffee",
       "cafe"
     ],
-    "phone": "04-8713710"
+    "phone": "04-8713710",
+    "sourceUrl": "https://gregcafe.co.il/branch/%d7%a7%d7%a8%d7%99%d7%aa-%d7%a9%d7%9e%d7%95%d7%a0%d7%94/"
   },
   {
     "id": "manual-maafe-neeman-airport-city",
