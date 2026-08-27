@@ -2627,3 +2627,124 @@ is not silencing a real finding. `stripComments` itself is untouched: the only c
 currently broken by it in production. Logged here as a known, real, unfixed defect in shared infrastructure —
 the next person who adds a regex literal to anything `stripComments` scans, especially one containing a
 quoted character class, should know this before trusting the scan's output on that file.
+
+---
+
+## 37. The manifest at the tag is authority; a release note is not — `upload-artifact@v5` announces node24
+and declares node20
+
+Found live, 2026-08-27, specifying the GitHub Actions Node-20 deprecation fix. `actions/upload-artifact`
+v5.0.0's release note reads, verbatim: **"BREAKING CHANGE: this update supports Node `v24.x`. This is not a**
+**breaking change per-se but we're treating it as such."** The `action.yml` at that same tag reads:
+
+```yaml
+runs:
+  using: 'node20'
+  main: 'dist/upload/index.js'
+```
+
+The floating `v5` tag says `node20` as well. Only `v7` and `main` declare `node24`. **The runner obeys the**
+**manifest.** A bump to `@v5` on the strength of that release note would leave the action on the deprecated
+runtime while removing every visible sign that it is — the deprecation warning names the actions it applies
+to, so a partially-done bump shortens the list and reads as progress.
+
+**The generalisation, and it is not specific to GitHub Actions:** when a dependency's prose and its
+machine-readable manifest disagree, the manifest is what executes and the prose is what someone meant to do.
+Prose is written once, by hand, at release time; the manifest is what the tooling reads on every run. **Check
+the artifact the machine reads, at the exact ref you are pinning** — not the notes, not the README, and not
+the floating major, which is a moving target that can point at either.
+
+**The specific rule for this repo:** take `using:` from `https://raw.githubusercontent.com/<action>/<tag>/action.yml`
+at the tag being pinned. Verified this way, 2026-08-27:
+
+| action | `using:` at v4 | `using:` at v5 | node24 available at |
+|---|---|---|---|
+| `actions/checkout` | node20 | **node24** | v5, v7 |
+| `actions/setup-node` | node20 | **node24** | v5 |
+| `actions/upload-artifact` | node20 | **node20** ← the trap | v7 only |
+| `expo/expo-github-action` | — | — | none published (v8 is node20) |
+
+**A second thing the same investigation turned up, and it changes the urgency rather than the fix.** The
+deprecation is not a future cliff. GitHub's own run annotation reads: **"The following actions target**
+**Node.js 20 but are being forced to run on Node.js 24."** The force-upgrade is already in effect — these
+actions are *already* executing on a runtime they were not built against, silently, on every run. Bumping
+restores a supported combination; it does not avert anything. Nobody was going to discover that from the
+version numbers, because the version numbers describe what the action declares, not what the runner did with it.
+
+---
+
+## 38. The self-concealing *ceiling* — a query's scope silently becomes the apparent scope of reality
+
+§17 Face 5 records the self-concealing **zero**: a scan returning "0 results" looks simultaneously like a
+clean answer and like an absence of work, and nothing external distinguishes them. This is its sibling, and
+**it is worse, because a zero at least advertises that it found nothing. A ceiling looks like a completed**
+**survey.** Both instances below are mine, both from 2026-08-27, and neither was caught by re-reading the
+instrument — in both, the instrument answered exactly the question put to it.
+
+### 38a. The scoped query
+
+Specifying the Actions bump, I fetched `actions/upload-artifact`'s releases page with the prompt *"list
+release versions v4 and v5."* It returned a clean, well-formed table of v4 and v5, and I reasoned from it as
+though v5 were the newest major — concluding, and nearly reporting, that **no released `upload-artifact` on
+node24 existed at all.** v6 and v7 existed. v7 is node24. The conclusion was the exact opposite of the truth.
+
+Nothing in that answer was wrong. Nothing in it marked its own boundary either. **A filtered result and a**
+**complete one are the same shape.** The catch came only from an unrelated follow-up query that happened to
+return `v7.0.1`, contradicting a number I had accepted an hour earlier — the §35 signal (a finding that
+contradicts something you measured recently is a signal that the instrument moved) firing on the far side of
+a mistake it did not prevent.
+
+### 38b. Two surfaces, neither of which announces that the other exists
+
+Reviewing why CI reported "Expo health, exit 1" while `ci.yml` set `continue-on-error: true` on the only step
+that could fail, I read the GitHub **jobs** API: job `success`, and **every step `success`, expo-doctor**
+**included.** Self-consistent, complete-looking, and I reported the premise as false — that the job had never
+failed and the report was mistaken.
+
+The **annotations** API, for that same check run, same commit, same step:
+
+```
+.github:40 — level: failure — "Process completed with exit code 1."
+```
+
+**Both are true.** A `continue-on-error` step is reported as `success` by the steps API — that is what the
+flag means — and as `failure` by the annotations API, which reports what the step did rather than what the
+job concluded. Neither response contains any indication that the other surface exists or would disagree.
+
+The cost of reading one: I told the Architect the failure was imaginary and they carried that to the owner.
+**The owner had been reading the annotation and was right.** The structural reading — that the job cannot
+fail — was also right. Two correct readings of different layers, each concluding the other was wrong,
+because neither surface says what layer it describes.
+
+**And there was a real signal underneath it.** expo-doctor genuinely exits 1, on every run: 20/21 checks
+pass, one fails — 10 packages behind the versions the installed SDK requires, `expo 57.0.15` against
+`~57.0.17`, `react-native 0.86.2` against `0.86.3`, `expo-updates 57.0.16` against `~57.0.18`. That is
+`continue-on-error` **working exactly as designed** — the step was made advisory on purpose, for a defensible
+reason written in the file — and costing a real finding for as long as it has been set, because the only
+surface that reports the finding is not the surface anyone reads to decide whether CI is green.
+
+### The countermeasure, which is one question and covers both faces
+
+> **Before believing a survey, ask what this instrument could not have returned** — and then go get that
+> from somewhere else.
+
+For 38a that is "a version outside the range I named." For 38b it is "a failure the pass/fail surface is
+contractually obliged to call a success." Note that neither is answerable by re-running the query, re-reading
+the output, or checking the instrument against a known positive (§17 Face 5's remedy) — a known positive
+*inside the scope* confirms an instrument that is working correctly and still not telling you the thing.
+**The scope is the defect, and the scope is never in the answer.**
+
+The structural corollary, worth applying whenever a check has a soft-failure mode (`continue-on-error`,
+`warn` severity, "advisory", `|| true`): **the surface that reports pass/fail is by construction not the
+surface that reports the finding.** One of the two has to be read specifically for what the other cannot say.
+Every soft-failure mechanism in this repo has this property — it is what "soft" means.
+
+**Postscript, and it happened while writing this section.** I reported to the Architect that
+`docs/KASHRUT_FACTS.md` had changed from CRLF to LF, having measured it with
+`git show HEAD:docs/KASHRUT_FACTS.md | node -e ...`. It had not changed. `git show` returns the **repository
+blob**, which is LF-normalised; the working tree is CRLF. Both measurements were correct about different
+objects, and the comparison between them was meaningless. This is §17c's postscript — *checking a property
+*through* a pipeline measures the pipeline* — recurring in the same file, in the same session, in the
+paragraph being written to prevent it. **The distance between writing a rule down and applying it can be**
+**zero** (cf. AGENTS.md on the worktree-overlay rule). The append that added this section measures line
+endings from the file itself, and aborts on mixed.
