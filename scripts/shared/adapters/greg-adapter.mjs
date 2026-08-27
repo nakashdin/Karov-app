@@ -76,7 +76,24 @@ const NEGATIVE_PATTERNS = [
   /נשלל.{0,10}כשר/, /פג.{0,10}תוקף.{0,20}כשר/, /טרם\s*קיבל/, /בהמתנה.{0,15}כשר/,
 ];
 
-function findLevelText(plainText) {
+// Document-order-first is a DELIBERATE, STATED rule, not an accident of
+// LEVEL_PHRASE_RE lacking a `g` flag — found live 2026-08-27 (Reviewer,
+// Item 4 Unit 3 follow-up): for the real סניף דיזנגוף סנטר page, the first
+// occurrence of the phrase in document order is the page's own badge/body
+// statement about itself ("כשר מהדרין", ל absent, in the opening-hours
+// block — see module header). A later position in the same tag-stripped
+// text can contain a DIFFERENT branch's badge-style phrasing ("כשר
+// למהדרין", ל present) surfaced by shared page chrome (a "nearby branches"
+// or footer block listing sibling locations) — taking the LAST match, or
+// any match past the first, would silently attribute a sibling branch's
+// level phrasing to this branch. `.exec()` on a non-global regex already
+// returns the leftmost match, which is why this has been correct — but
+// nobody chose leftmost-wins FOR this reason until now. A future refactor
+// that switches to a global regex and takes the last match, or that
+// concatenates snippets in a different order before matching, must not
+// silently invert this. See __tests__/greg-adapter.test.mjs for the pinned
+// case.
+export function findLevelText(plainText) {
   const m = LEVEL_PHRASE_RE.exec(plainText);
   return m ? m[0] : null;
 }

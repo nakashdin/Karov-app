@@ -760,24 +760,48 @@ if (hard.length === 0) {
 
 // ── Ratchet comparison ────────────────────────────────────────────────────────
 
-const RATCHET_KEYS = [
-  'unknownCityId',
-  'missingAddress',
-  'missingCityId',
-  'foodWithoutKashrut',
-  'missingSource',
-  'kashrutAuthorityUnknown',
-  'freeTextCertifierUnmapped',
-  'levelAssertedOverNamedBody',
-  'levelAssertedWithNoBody',
-  'restaurantsDuplicateIds',
-  'restaurantsShorthandLocation',
-  'restaurantsOutOfBounds',
-  'restaurantsCertificateValidUntilWithoutUrl',
-  'restaurantsLevelAssertedOverNamedBody',
-  'restaurantsLevelAssertedWithNoBody',
-  'restaurantsFoodWithoutKashrut',
+// One source of truth, not two parallel lists — each key carries its own
+// family tag rather than being classified by array membership (Reviewer
+// finding, 2026-08-27: splitting into two arrays means the key list exists
+// twice, and the failure mode is a key silently absent from both). 'served'
+// = counted against places.osm.json, the file src/'s OsmPlacesRepository.ts
+// actually loads. 'unread' = counted against restaurants.osm.json, which
+// has ZERO src/ readers (confirmed by direct grep, not assumed — see
+// docs/KASHRUT_FACTS.md §32) — every ratchet in this family still gates the
+// build exactly as before; the tag only changes how the report below groups
+// them, not whether a regression here fails the run.
+const RATCHET_KEYS_SPEC = [
+  { key: 'unknownCityId', family: 'served' },
+  { key: 'missingAddress', family: 'served' },
+  { key: 'missingCityId', family: 'served' },
+  { key: 'foodWithoutKashrut', family: 'served' },
+  { key: 'missingSource', family: 'served' },
+  { key: 'kashrutAuthorityUnknown', family: 'served' },
+  { key: 'freeTextCertifierUnmapped', family: 'served' },
+  { key: 'levelAssertedOverNamedBody', family: 'served' },
+  { key: 'levelAssertedWithNoBody', family: 'served' },
+  { key: 'restaurantsDuplicateIds', family: 'unread' },
+  { key: 'restaurantsShorthandLocation', family: 'unread' },
+  { key: 'restaurantsOutOfBounds', family: 'unread' },
+  { key: 'restaurantsCertificateValidUntilWithoutUrl', family: 'unread' },
+  { key: 'restaurantsLevelAssertedOverNamedBody', family: 'unread' },
+  { key: 'restaurantsLevelAssertedWithNoBody', family: 'unread' },
+  { key: 'restaurantsFoodWithoutKashrut', family: 'unread' },
 ];
+
+// Fail fast, at load time, rather than defaulting an unclassified or
+// mistyped family to either group silently — this is the exhaustiveness
+// check the single-source-of-truth design is supposed to buy; skipping it
+// would leave the same silent-gap failure mode the two-array design had.
+const VALID_FAMILIES = new Set(['served', 'unread']);
+for (const spec of RATCHET_KEYS_SPEC) {
+  if (!VALID_FAMILIES.has(spec.family)) {
+    throw new Error(`RATCHET_KEYS_SPEC: "${spec.key}" has invalid family "${spec.family}" — must be 'served' or 'unread'.`);
+  }
+}
+
+const RATCHET_KEYS = RATCHET_KEYS_SPEC.map((s) => s.key);
+const familyByKey = new Map(RATCHET_KEYS_SPEC.map((s) => [s.key, s.family]));
 
 const baseline = existsSync(BASELINE_PATH)
   ? JSON.parse(readFileSync(BASELINE_PATH, 'utf8'))
@@ -800,6 +824,7 @@ if (baseline && hard.length === 0) {
 
   for (const key of RATCHET_KEYS) {
     const now = counts[key];
+    const family = familyByKey.get(key);
     // A key absent from the baseline is unmeasured, not zero and not infinite.
     // Falling back to Infinity made every first measurement of a new ratchet
     // report as an "improvement" no matter how bad — the exact failure mode
@@ -825,14 +850,14 @@ if (baseline && hard.length === 0) {
             fail(verifyError);
           } else {
             correctedRatchetKeys.add(key);
-            improvements.push(`${key}: ${was} → ${now} (+${now - was}, CORRECTED — a fabrication was removed, not introduced: ${correction.reason})`);
+            improvements.push({ family, text: `${key}: ${was} → ${now} (+${now - was}, CORRECTED — a fabrication was removed, not introduced: ${correction.reason})` });
           }
         }
       } else {
-        regressions.push(`${key}: ${was} → ${now} (+${now - was})`);
+        regressions.push({ family, text: `${key}: ${was} → ${now} (+${now - was})` });
       }
     } else if (now < was) {
-      improvements.push(`${key}: ${was} → ${now} (−${was - now})`);
+      improvements.push({ family, text: `${key}: ${was} → ${now} (−${was - now})` });
     }
   }
   // The dataset is additive-only by project rule: it must never shrink.
@@ -869,10 +894,33 @@ if (process.argv.includes('--update')) {
   process.exit(0);
 }
 
+// Grouped by family so a reader can tell, without consulting anything else,
+// which movements concern places.osm.json (what the app serves) versus
+// restaurants.osm.json (no src/ reader — see docs/KASHRUT_FACTS.md §32).
+// Verification is identical either way — this only changes how the same
+// results are printed; nothing here changes what gates the build.
+function printGrouped(items, servedHeader, unreadHeader, printHeader, printItem) {
+  const served = items.filter((i) => i.family === 'served');
+  const unread = items.filter((i) => i.family === 'unread');
+  if (served.length) {
+    printHeader(servedHeader);
+    served.forEach((i) => printItem(i.text));
+  }
+  if (unread.length) {
+    printHeader(unreadHeader);
+    unread.forEach((i) => printItem(i.text));
+  }
+}
+
 if (improvements.length) {
-  console.log('\n✓ improved:');
-  improvements.forEach((m) => console.log('   ' + m));
-  console.log('   run `node scripts/validate-data.mjs --update` to lock these in.');
+  printGrouped(
+    improvements,
+    '\n✓ improved — dataset the app serves (places.osm.json):',
+    '\n✓ improved — restaurants.osm.json (no src/ reader — see docs/KASHRUT_FACTS.md §32):',
+    (h) => console.log(h),
+    (t) => console.log('   ' + t),
+  );
+  console.log('\n   run `node scripts/validate-data.mjs --update` to lock these in.');
 }
 
 if (hard.length) {
@@ -880,8 +928,13 @@ if (hard.length) {
   hard.forEach((m) => console.error('  • ' + m + '\n'));
 }
 if (regressions.length) {
-  console.error('\n✖ DATA QUALITY REGRESSION\n');
-  regressions.forEach((m) => console.error('  • ' + m));
+  printGrouped(
+    regressions,
+    '\n✖ DATA QUALITY REGRESSION — dataset the app serves (places.osm.json):',
+    '\n✖ DATA QUALITY REGRESSION — restaurants.osm.json (no src/ reader — see docs/KASHRUT_FACTS.md §32):',
+    (h) => console.error(h),
+    (t) => console.error('  • ' + t),
+  );
   console.error('\n  These counts may not grow. Fix the new records, or justify and');
   console.error('  raise the ceiling in scripts/data-quality-baseline.json deliberately.\n');
 }

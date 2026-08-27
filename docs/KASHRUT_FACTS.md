@@ -2214,6 +2214,37 @@ that quietly preserves a field the test believes it changed), same discovery met
 with expectation; investigating why, not adjusting the assertion, found it) — three instances now, by two
 sessions, in one day, across three unrelated files.
 
+### 30f. A fourth instance — a chain-detection audit that grouped Hebrew branch names by splitting on a
+dash, produced a confident zero, and was wrong
+
+Auditing the Reviewer's own chain-propagation finding on the Stage 2 26-record set (Item 4 Unit 3 follow-up,
+2026-08-27): the audit instrument grouped record names by splitting each on `-` to isolate a business name
+from its branch/location suffix. Hebrew branch names on this dataset append the location directly, with no
+separator (`"סושי רחביה רחביה"`, not `"סושי רחביה - רחביה"`) — so every name split into exactly one group of
+one, and the instrument reported "26 distinct names, 0 chains." Printing the 26 names verbatim instead of
+trusting the grouped count showed **17 of 26 are branches of 6 businesses**, each sharing an identical
+`certifiedBy` string, with no date and no `sourceUrl` on any of them.
+
+Same root defect as §30d/§30e: a grouping key that silently fails to capture the real structure of the data
+it's grouping, producing a well-formed, confident answer instead of an error. The specific new wrinkle is
+§17's "0 is not obviously wrong" face, arriving a second time in this same file's own history (see the
+`docs/KASHRUT_FACTS.md`-referencing warning in AGENTS.md about a full-repo path scan that returned "0" on a
+6-file positive population) — a wrong non-zero number invites "why is this so high/low?"; a wrong zero looks
+like a completed, clean audit. The session that built this audit instrument had, twenty minutes earlier, told
+a peer that "a number without its predicate is what produced three different answers to one question today"
+— and then produced a self-concealing zero from a different, unstated assumption (a separator that isn't
+actually used in the data) in the very next check.
+
+**Binding condition this produced**, carried forward into whenever the 26-record write is queued (not yet
+approved to run): the write must set `certifierId` and `kosherAuthorityGroup` **only**. `certifiedBy`,
+`lastVerifiedAt`, and `sourceUrl` must be provably unchanged in the dry-run diff. 23 of the 26 records have no
+date and no source at all — writing a fresh `lastVerifiedAt` alongside the authority fields would manufacture
+provenance for exactly the records that currently have none, the fabrication-in-the-opposite-direction shape
+already ruled out for the winery records (§ the winery display measurement, Item 4 Unit 3, 2026-08-27).
+
+See §31 for the same lesson (predict, then verify against the real thing, not against what you expected to
+find) recurring at the ratchet-arithmetic level rather than the grouping-key level.
+
 ---
 
 ## 31. Predicting a ratchet movement in advance is necessary and not sufficient — a run that matches the
@@ -2252,6 +2283,68 @@ is not evidence the run had no other effects, only that it had none among the ef
 See §30e for a smaller instance of the identical structure inside the very mechanism built to catch this
 class of error: a test's assertion passed, which felt like verification, but the fixture backing the
 assertion wasn't testing what its name claimed until someone noticed the mechanism disagreeing with intent.
+
+## 32. `restaurants.osm.json` is a write target with no `src/` readers — 900 of its 953 shared ids have
+drifted from `places.osm.json`
+
+Found live, 2026-08-27, while scoping the Item 4 Unit 3 Stage 2 dry run: a population count taken across
+both `places.osm.json` and `restaurants.osm.json` (165, resolving 102) did not match the same predicate run
+against `places.osm.json` alone (67, resolving 26) — the same gap the original 85/67 census measured on the
+display side, reappearing on the write side for an unrelated reason.
+
+    places.osm.json      : 7471 records
+    restaurants.osm.json : 1337 records
+    ids present in both  :  953
+      diverging on ≥1 kashrut field : 900
+
+Example: id `9000000` ("פיצה שמש", אופקים) exists in both files. In `places.osm.json` it carries
+`kosherAuthorityGroup: 'rabbinate'`, `kosherLevel: 'mehadrin'`, `kosherType: 'rabanut_mehadrin'` — fully
+remediated. In `restaurants.osm.json` it carries none of those fields — bare `certifiedBy` only, the
+pre-remediation shape. Same id, same real business, two different kashrut states depending which file is
+read.
+
+**`src/` only imports `places.osm.json`.** `OsmPlacesRepository.ts` is the sole repository reading generated
+data, and it loads `places.osm.json` + `cities.osm.json`. `restaurants.osm.json` has no reader anywhere in
+`src/`. It is, however, a live write target: every kashrut remediation script writes it alongside
+`places.osm.json`, `validate-data.mjs` validates it, and a ratchet (`restaurantsLevelAssertedWithNoBody`,
+baseline 221) tracks it — full machinery maintaining a file the app never loads.
+
+This is the exact hazard argued against an archive-file proposal weeks earlier in this same effort (see
+AGENTS.md's own §-level warning on "a file enforces its own inertia through absence of readers"): nothing
+fails when `restaurants.osm.json` drifts from `places.osm.json`, so it drifted — 900 records deep, silently,
+while every check on both files stayed green, because no check compares the two files to each other.
+
+**Not resolved here.** Whether to sync, freeze, retire, or otherwise reconcile `restaurants.osm.json` is a
+data-integrity decision escalated to the owner, not decided by either reviewing session. Until it is decided:
+any population count or ratchet reasoning that spans both files is unreliable, and `places.osm.json` alone is
+the correct source for any question about what the app actually shows.
+
+## 33. `apply-kashrut-authorities.mjs` is committed, tracked, and has never run successfully against the live
+dataset
+
+Found live, 2026-08-27, while checking whether this script (committed at `ff2b3fc`, `ae5af17`) was the right
+instrument for the Item 4 Unit 3 Stage 2 dry run. Running it in dry-run mode against the real
+`places.osm.json` crashes immediately:
+
+    SyntaxError: Unexpected token '﻿', "﻿[\n  {\n   "... is not valid JSON
+        at JSON.parse (...apply-kashrut-authorities.mjs:64:23)
+
+Both `places.osm.json` and `restaurants.osm.json` carry a UTF-8 BOM (`EF BB BF`) at byte 0 — confirmed
+directly, not assumed. `validate-data.mjs` and `kashrut-pipeline.mjs` both already strip it
+(`raw.replace(/^﻿/, '')`, 4+ call sites) before parsing. `apply-kashrut-authorities.mjs`'s own
+`JSON.parse(readFileSync(PLACES, 'utf8'))` at line 64 does not — the one script in this family missing the
+strip, and specifically the script its own commit message (`ff2b3fc`) describes as "the script that will
+actually perform Batch B's dataset write."
+
+**Left uncorrected, on instruction.** A tracked, committed script that crashes on the first file it opens,
+for a dataset write its own header calls out as important enough to migrate onto `recordKashrutWrite` ahead
+of the other two live scripts, is a finding about how it was verified before commit — not a bug to quietly
+patch into working order while investigating something else. It is also out of scope for Item 4 Unit 3's
+Stage 2: its header describes a broader Batch-B operation (whole-dataset `certifiedBy`, exact-string alias
+match only, also sets `kosherLevel`) — a different job from Stage 2's narrower verbatimText-population
+resolution (§30c, §33 population = 67, not this script's full-dataset scope). Do not repurpose it and do not
+fix it without separately deciding it is back in scope; whoever committed it apparently never ran it
+end-to-end against the real dataset.
 
 ---
 
