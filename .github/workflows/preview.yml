@@ -74,10 +74,23 @@ jobs:
       # authenticated account/display name plus every organization account
       # it can access, with role per account — no confirmed `--json` mode in
       # that source, so plain output only. This narrows criterion 3 (which
-      # ACCOUNTS the token can see) but does not fully settle it — actual
-      # access to project b9014104 specifically is still only proven by the
-      # publish step below actually succeeding against it.
-      - name: Whoami (temporary — identity + accessible accounts)
+      # ACCOUNTS the token can see) but does not fully settle it on its own.
+      #
+      # `eas project:info` (read-only, never publishes) is what actually
+      # answers "resolves to which project" — it resolves app.json's
+      # owner/slug/extra.eas.projectId against the authenticated identity
+      # and prints the resolved fullName + id, or fails with the same
+      # not-authorized shape the publish step hits, naming the exact
+      # project id it tried. On a GREEN run, nothing else in this workflow
+      # names the project at all — the Expo preview comment's shape on this
+      # PR is unproven and the failure-path diagnostic below is
+      # `if: failure()` only — so a green publish alone could not have
+      # distinguished "published to the right project" from "published to
+      # a project this token happens to have access to." Confirmed manually
+      # against the correct dindavid token before adding this line: exit 0,
+      # `fullName  @dindavid/kosher-app`, `ID  b9014104-7522-4f9a-8a18-a3bda56e1e17`
+      # — matching app.json exactly.
+      - name: Whoami + project:info (temporary — identity + project resolution)
         run: |
           set +e
           OUTPUT=$(eas whoami 2>&1)
@@ -89,6 +102,16 @@ jobs:
           else
             ESCAPED=$(printf '%s' "$OUTPUT" | sed -e 's/%/%25/g' -e ':a;N;$!ba;s/\n/%0A/g' -e 's/\r/%0D/g')
             echo "::notice title=eas whoami::${ESCAPED}"
+          fi
+          OUTPUT2=$(eas project:info 2>&1)
+          STATUS2=$?
+          echo "$OUTPUT2"
+          if [ $STATUS2 -ne 0 ]; then
+            ESCAPED2=$(printf '%s' "$OUTPUT2" | sed -e 's/%/%25/g' -e ':a;N;$!ba;s/\n/%0A/g' -e 's/\r/%0D/g')
+            echo "::warning title=eas project:info failed::${ESCAPED2}"
+          else
+            ESCAPED2=$(printf '%s' "$OUTPUT2" | sed -e 's/%/%25/g' -e ':a;N;$!ba;s/\n/%0A/g' -e 's/\r/%0D/g')
+            echo "::notice title=eas project:info::${ESCAPED2}"
           fi
         env:
           EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
