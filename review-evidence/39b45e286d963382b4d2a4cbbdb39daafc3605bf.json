@@ -1,0 +1,7 @@
+{
+  "commit": "39b45e286d963382b4d2a4cbbdb39daafc3605bf",
+  "tree": "47a2ff2decca90e997cac642b02b5d1f985ebc25",
+  "reviewer": "Reviewer (kosher-app-39)",
+  "verdict": "approved",
+  "note": "Adversarial review. 28 cases pre-registered at 6bc05f1, before this code existed, and not adjusted to what arrived. First run found 2 defects: evidence accepted from the working tree though never committed, and an uppercase-hex filename accepted on a case-insensitive filesystem. Both closed by a0c4dd2; re-run against the pair gives 28/28. Fired rather than read: nine field-corruption cases each block independently; the tree recompute is real, proven by the case where filename and commit field were both updated to the new SHA and only the tree left stale; the evidence-only exemption cannot carry code and is not satisfied by a prefix directory; the gate is not exempt from itself (.githooks/ and its own script both gated); a range push carrying three commits with evidence for one is blocked and names each. Deadlock checked before it was needed: a pure-evidence commit is ungated, so the repo cannot wedge itself."
+}

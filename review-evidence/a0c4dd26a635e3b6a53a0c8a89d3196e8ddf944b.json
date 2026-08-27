@@ -1,0 +1,7 @@
+{
+  "commit": "a0c4dd26a635e3b6a53a0c8a89d3196e8ddf944b",
+  "tree": "786a3be3a5182ec047968d5a95e64e0747b02c05",
+  "reviewer": "Reviewer (kosher-app-39)",
+  "verdict": "approved",
+  "note": "Verified against this commit itself in a detached worktree, never the working tree - the defect this commit fixes is precisely trusting the working tree over the repository, so reviewing it from the working tree would have repeated it. The 28 pre-registered cases re-run UNCHANGED (the invocation was corrected for the new [tip, ...shas] CLI contract; the cases themselves were not touched): 28/28. Plus a two-direction case proving the lookup is git-based in both directions rather than merely stricter: evidence committed then deleted from disk -> ALLOW, evidence on disk but never committed -> BLOCK. The two directions differ, so the probe discriminates. Note on method: the first re-run reported 21 of 28 failing, which was my harness being stale against the changed CLI signature, not a defect - caught because a near-total result is the signature of a broken instrument. Accepted limits, raised at approval time and knowingly accepted rather than discovered later: this is a pre-push hook, so --no-verify, a clone that never ran npm install, a push from another machine, and a merge performed in the GitHub UI all bypass it; scope-by-path is a stated approximation of \"Implementer change\" because all sessions commit as the same author; reviewer and note are unverified free text; AGENTS.md is not gated and is covered by owner approval instead."
+}
