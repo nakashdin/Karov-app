@@ -58,6 +58,41 @@ jobs:
 
       - run: npm ci
 
+      # TEMPORARY DIAGNOSTIC, ADDED 2026-08-27. Runs BEFORE the publish step,
+      # always (not just on failure) — the owner's four verification
+      # criteria include "resolves to the expected Expo project
+      # (b9014104-7522-4f9a-8a18-a3bda56e1e17, owner dindavid)", which is
+      # independent of whether the publish itself succeeds. A different
+      # valid token could authenticate cleanly and resolve to a DIFFERENT
+      # project, and the job would go green while publishing this app's
+      # preview somewhere else — green alone does not establish criterion 3,
+      # so identity is captured unconditionally, not only in the failure path.
+      #
+      # `eas whoami` (an alias for `eas account:view`, confirmed against
+      # eas-cli's own source — packages/eas-cli/src/commands/account/view.ts
+      # declares `static override aliases = ['whoami']`) prints the
+      # authenticated account/display name plus every organization account
+      # it can access, with role per account — no confirmed `--json` mode in
+      # that source, so plain output only. This narrows criterion 3 (which
+      # ACCOUNTS the token can see) but does not fully settle it — actual
+      # access to project b9014104 specifically is still only proven by the
+      # publish step below actually succeeding against it.
+      - name: Whoami (temporary — identity + accessible accounts)
+        run: |
+          set +e
+          OUTPUT=$(eas whoami 2>&1)
+          STATUS=$?
+          echo "$OUTPUT"
+          if [ $STATUS -ne 0 ]; then
+            ESCAPED=$(printf '%s' "$OUTPUT" | sed -e 's/%/%25/g' -e ':a;N;$!ba;s/\n/%0A/g' -e 's/\r/%0D/g')
+            echo "::warning title=eas whoami failed::${ESCAPED}"
+          else
+            ESCAPED=$(printf '%s' "$OUTPUT" | sed -e 's/%/%25/g' -e ':a;N;$!ba;s/\n/%0A/g' -e 's/\r/%0D/g')
+            echo "::notice title=eas whoami::${ESCAPED}"
+          fi
+        env:
+          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+
       - name: Publish preview
         id: publish
         uses: expo/expo-github-action/preview@v8
