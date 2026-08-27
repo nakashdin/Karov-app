@@ -2463,6 +2463,37 @@ Same root shape as §30d-g (an instrument reports a clean state while the thing 
 degraded) — the sixth instance, and the first where the guard existing at all, correctly, was not the same
 question as the guard reporting what it knows on every run rather than only the run something changed.
 
+### 34a. The detector reports slack on every run that gets far enough to look, which is not every run — found
+one commit later, in the same review pass that confirmed the detector against the real `880e48d` state
+
+The first version above was correct in every respect it was tested against, and still had a hole: `slack` was
+populated inside the same `if (baseline && hard.length === 0)` gate as the rest of the comparison loop. One
+unrelated HARD failure anywhere in the run — a structural problem with no connection to any ratchet count —
+skipped that whole block, and skipped it meant **no slack was reported for any key at all**, for as long as
+the HARD failure persisted. A HARD failure is itself loud (the run already fails), which bounds how long the
+hole stays open in practice — but a countermeasure that carries the exact hazard it exists to defend against
+(a louder problem silencing a quieter one) is a documented shape of §17, and shipping a new instance of it
+knowingly, even a bounded one, was rejected.
+
+**Fixed** by computing `slack` in its own loop, gated only on `baseline` existing — nothing in it depends on
+`hard.length`, since `counts[key]` is already fully computed by this point regardless of any HARD failure
+found elsewhere, and comparing a count to its own baseline needs nothing else. The original `slack.push` call
+inside the HARD-gated loop was removed (would have double-pushed otherwise) and replaced with a comment
+pointing at the standalone loop. A key missing from the baseline entirely is still skipped here (nothing to
+compare) and is still reported — as a HARD failure — by the original gated loop, unchanged.
+
+**Activated with the control as the interesting half**, per the same discipline as §34's original test:
+forced a HARD failure AND a stale baseline simultaneously, in a disposable detached worktree, and confirmed
+(a) the slack line still printed, naming the right key and gap, (b) exit code stayed non-zero — slack must
+never rescue a failing run, never becomes a pass condition. Then the control: same HARD failure, synced
+baseline — no slack line, exit still non-zero. Both pairs passed on the first run.
+
+The corrected guarantee, stated so it cannot be silently narrowed again: **the detector reports slack on
+every run that gets far enough to look, which is not every run** — a run that fails before the counting stage
+completes at all (an unparseable dataset file, for instance) still cannot report slack, because there is
+nothing to compare. What changed is that a HARD failure found DURING or AFTER counting no longer suppresses
+it.
+
 ---
 
 ## Superseded numbers — do not requote

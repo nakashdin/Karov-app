@@ -820,6 +820,30 @@ const improvements = [];
 const slack = [];
 const correctedRatchetKeys = new Set(); // keys --update is allowed to raise, this run only
 
+// Computed OUTSIDE the `hard.length === 0` gate below, deliberately — found
+// live, 2026-08-27 (Reviewer, docs/KASHRUT_FACTS.md §34): the comparison
+// loop that populates `slack` was originally gated on no HARD failures, so
+// one unrelated structural problem (a HARD failure anywhere in the file)
+// suppressed every stale-ceiling report for every key, for as long as it
+// persisted — the same "louder problem hides a quieter one" shape this
+// detector exists to catch, one level up. `counts[key]` is fully computed
+// by this point regardless of `hard`, and `baseline[key]` needs nothing
+// from the dataset's structural validity, so nothing here requires the
+// HARD-failure gate. Only a MISSING baseline entry is skipped (there is no
+// "was" to compare against) — that case is still reported, as a HARD
+// failure, by the loop below.
+if (baseline) {
+  for (const key of RATCHET_KEYS) {
+    const now = counts[key];
+    const family = familyByKey.get(key);
+    if (!(key in baseline)) continue; // reported as a HARD failure below; nothing to compute slack against
+    const was = baseline[key];
+    if (now < was) {
+      slack.push({ family, key, gap: was - now, now, was });
+    }
+  }
+}
+
 if (baseline && hard.length === 0) {
   const placesById = new Map(places.filter((p) => p && typeof p.id === 'string').map((p) => [p.id, p]));
 
@@ -858,22 +882,11 @@ if (baseline && hard.length === 0) {
         regressions.push({ family, text: `${key}: ${was} → ${now} (+${now - was})` });
       }
     } else if (now < was) {
+      // `slack` for this key was already computed above, unconditionally —
+      // not pushed here, so a HARD failure in this run's other checks (which
+      // gates this whole loop) cannot suppress it. See the standalone slack
+      // loop above this block for the full rationale.
       improvements.push({ family, text: `${key}: ${was} → ${now} (−${was - now})` });
-      // A count that FALLS never fails the build — only a rise does — so a
-      // stale-high baseline is invisible by construction: the improvement
-      // that creates the slack is the same event that would otherwise
-      // surface it. Reported on EVERY run the gap persists, not just the
-      // run where it first appeared, and unconditionally (not folded into
-      // `improvements`, which reads as routine good news and stops being
-      // noticed) — found live, 2026-08-27: commit 880e48d moved
-      // foodWithoutKashrut 20 → 18 without updating the baseline, and the
-      // stale ceiling sat undetected through two more commits (2 records
-      // of undetected slack — two new zero-evidence food records could
-      // have been added in that window and data:validate would have
-      // stayed green). Information only: never gates the build, never a
-      // ratchet in the other direction (no HARD failure, no exit(1) — see
-      // the `slack.length` check below, which prints and continues).
-      slack.push({ family, key, gap: was - now, now, was });
     }
   }
   // The dataset is additive-only by project rule: it must never shrink.
