@@ -1,18 +1,20 @@
 // Standalone test (not jest). Run: node scripts/shared/__tests__/greg-adapter.test.mjs
 //
-// Pins findLevelText's document-order-first behavior (Reviewer finding,
-// Item 4 Unit 3 follow-up, 2026-08-27): for the real סניף דיזנגוף סנטר page,
-// the correct level text ("כשר מהדרין", ל absent) is the FIRST occurrence of
-// LEVEL_PHRASE_RE in the tag-stripped page text — it lives in the opening-
-// hours block, not a badge. A later position in the same page can carry a
-// DIFFERENT branch's badge-style phrasing ("כשר למהדרין", ל present),
-// surfaced by shared page chrome (e.g. a "branches near you" block). Taking
-// the last match instead of the first would silently attribute a sibling
-// branch's level wording to Dizengoff. `.exec()` on a non-global regex
-// already returns the leftmost match, which is why this has been correct —
-// this test exists so a future change (switching to a global regex, taking
-// the last match, reordering snippets before matching) fails here by name
-// instead of silently inverting the precedence.
+// Pins findLevelText's document-order-first behavior (leftmost match wins).
+// On the real סניף דיזנגוף סנטר page, the only level phrase present is "כשר
+// מהדרין" (ל absent, in the opening-hours block) — checked directly,
+// 2026-08-27 (Reviewer): that page does NOT contain "כשר למהדרין" anywhere,
+// and 0 of 59 captured greg pages carry a "branches near you" / footer
+// block naming sibling locations. So the sibling-branch-collision scenario
+// below is a HYPOTHETICAL this rule guards against, not something observed
+// on any real page — `.exec()` on a non-global regex already returns the
+// leftmost match, which is why this has been correct, but nobody had
+// chosen leftmost-wins deliberately until it was stated as a rule (see
+// greg-adapter.mjs's header on findLevelText). This test exists so a future
+// change (switching to a global regex, taking the last match, reordering
+// snippets before matching) fails here by name instead of silently
+// inverting the precedence, whether or not the hypothetical is ever
+// realized on a real page.
 import assert from 'node:assert/strict';
 import { findLevelText } from '../adapters/greg-adapter.mjs';
 

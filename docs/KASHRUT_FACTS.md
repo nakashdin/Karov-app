@@ -2245,6 +2245,36 @@ already ruled out for the winery records (§ the winery display measurement, Ite
 See §31 for the same lesson (predict, then verify against the real thing, not against what you expected to
 find) recurring at the ratchet-arithmetic level rather than the grouping-key level.
 
+### 30g. A fifth instance — a verification probe whose own failure was silent, four times in a row
+
+Found live, 2026-08-27, during the Reviewer's cold pass on the ratchet-family-split commit (`f087a4e`): the
+probe's own backup step used `cp source dest || cp source fallbackPath`, and the fallback path resolved
+outside the worktree being checked. The primary `cp` failed, the `||` fallback "succeeded" against a
+location that didn't hold the file it needed, so the subsequent mutation step read a file that didn't exist,
+threw, and left the baseline it was supposed to perturb completely untouched. The probe's own exit code was
+0, four runs in a row — a clean pass that had performed no mutation and therefore proven nothing about what
+it was sent to check. Caught only by printing `fileActuallyChanged` (a direct post-mutation read-back) before
+trusting the exit code, not by re-running the same check again.
+
+Same root defect as §30d/§30e/§30f: an instrument reports success while having done nothing that would let
+it fail — the difference here is the mechanism is a shell fallback (`||`) rather than a grouping key, but the
+shape is identical: a path that silently substitutes "ran without error" for "verified the thing." Five
+instances now, across five different mechanisms (a census shape-key, a test fixture's merge, a chain-name
+split, and now a shell command's error fallback), found by four different people/sessions in the same
+project, on the same class of defect. The generalizable countermeasure is the one already stated at the end
+of §17 and repeated at §31: state what would have to be true for this check to pass while the thing it
+guards is broken, then go verify that specific claim directly — not "did the exit code say 0."
+
+**Sharpening the self-containment rule itself, prompted by this instance:** a self-containment check must run
+from a *checkout of the commit*, not merely from files overlaid onto some worktree — the question being asked
+is "does the commit, as committed, contain everything it needs," not "do these particular files work
+together when placed side by side." The two are indistinguishable in prose (both can be narrated as "ran
+verify in a worktree and it passed") but are different claims, and only the first is the one this rule exists
+to establish. **A verification whose method cannot be recovered from its own report is not one anyone else
+can rely on** — going forward, a self-containment claim must state the exact hash of the commit the worktree
+was checked out at, alongside the pass/fail result, so the claim is reproducible by a reader who was not
+there when it ran.
+
 ---
 
 ## 31. Predicting a ratchet movement in advance is necessary and not sufficient — a run that matches the
