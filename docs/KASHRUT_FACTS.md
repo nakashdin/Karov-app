@@ -2748,3 +2748,84 @@ objects, and the comparison between them was meaningless. This is §17c's postsc
 paragraph being written to prevent it. **The distance between writing a rule down and applying it can be**
 **zero** (cf. AGENTS.md on the worktree-overlay rule). The append that added this section measures line
 endings from the file itself, and aborts on mixed.
+
+---
+
+## 39. A two-point comparison that varies two things at once attributes the difference to whichever one
+you were already thinking about
+
+Found live, 2026-08-27, hunting the third and oldest of the stacked CI failures. **This one was caught by a
+control that was not needed to reach the conclusion, and there was nothing about the conclusion to suggest
+the control was worth running.**
+
+**The setup.** The Architect had hypothesised, hours earlier and reasonably, that `test:scripts` fails in CI
+because `import-rebar-exitcode.test.mjs` makes a live call to `https://rebar.co.il/our-stores/` and the
+runner gets an HTTP 403. It is the only one of 22 guards that touches the network, and the failure predates
+every other candidate. I set out to test it.
+
+**The measurement, two points, taken moments apart:**
+
+| origin | result |
+|---|---|
+| this machine (Israel) | **200**, 137,708 bytes, 120 `kosher` anchors, 0.10s |
+| outside Israel (a different tool's fetcher) | **403 Forbidden** |
+
+Geographic blocking. Israeli retail sites do this. It matched the hypothesis, matched the timeline, matched
+the symptom, and explained why every guard passes locally and one fails in CI. **I had written it up as the
+established root cause and was about to send it.**
+
+**The control, which varied only the User-Agent, from the same machine, on the same instrument:**
+
+| User-Agent | result |
+|---|---|
+| Chrome (**what the script actually sends**) | **200**, 137,608 bytes |
+| `curl/8.19.0` | **403**, 118 bytes |
+| `python-requests/2.31.0` | **403**, 118 bytes |
+| empty | **403**, 118 bytes |
+
+**`rebar.co.il` 403s non-browser User-Agents from inside Israel.** The same 118-byte block page. The
+outside-Israel 403 is fully accounted for by that fetcher's own User-Agent, with **no geographic component
+required at all.** My two points differed in origin *and* in User-Agent, and I attributed the difference to
+origin — because origin was the hypothesis I was holding.
+
+The hypothesis is not confirmed and may be wrong in its mechanism: the script sends a browser User-Agent, so
+the one blocking rule actually demonstrated does not obviously apply to it. **Whether a browser-UA request
+from a datacenter IP succeeds is still unknown**, and untestable from here without a proxy. Naming the
+Architect's hypothesis here rather than leaving it anonymous is deliberate: it was a good hypothesis, it is
+still live, and what the control killed was **my evidence for it**, not the idea.
+
+**Why this is not §38, and not §31b.**
+
+· §38 (the self-concealing ceiling) is about a *scope* that is invisible in the answer. Here the scope was
+  fine — both measurements were accurate, complete, and exactly what they claimed to be.
+· §31b (a partially-correct finding is harder to catch than a wrong one) needs a wrong part to eventually
+  find. **Here there is no wrong part.** Both data points are true. The inference drawn from them is the
+  only defective component, and an inference does not look defective from inside.
+
+A two-point comparison **always** produces a difference, and the difference **always** has an explanation
+available — usually the one already in mind, which is why the measurement was taken. Confirmation arrives
+looking exactly like discovery.
+
+**The countermeasure, and it has to be mechanical because judgement is what fails here:**
+
+> **Before attributing a difference to a cause, hold every variable but that one, on the same instrument,
+> and measure again.** Not a second opinion, not a re-read, not a bigger sample — the *same* comparison with
+> the other variables pinned.
+
+"On the same instrument" is load-bearing and is where this one nearly escaped: the 200 came from `curl` on
+this machine and the 403 came from an entirely different HTTP client with its own headers, redirect policy,
+and TLS stack. **Two instruments plus two origins is three variables presented as one comparison.** Whenever
+the two halves of a comparison were produced by different tools, the tool difference is a candidate cause and
+ranks ahead of the interesting hypothesis, because it is the one nobody is looking at.
+
+**The practical test that costs nothing:** ask *what else changed between these two measurements?* — and
+answer it by listing, not by recalling. Origin, client, headers, credentials, time, cache state, working
+directory, git ref. The list is short and finite; the recall is not, and it returns the hypothesis.
+
+**A corollary that applies to this repo specifically.** Several open questions here have exactly this shape —
+"it works locally and fails in CI" — and *every one* of them varies at minimum: operating system, timezone,
+network origin, HTTP client, Node version, and whether the tree is a fresh clone. **"Works here, fails there"
+names six or more simultaneous variables and feels like one.** Two of the three CI failures resolved today
+were timezone; that is not evidence the third is anything in particular, and the fact that two in a row had
+the same cause makes the third *more* likely to be misattributed, not less.
+
