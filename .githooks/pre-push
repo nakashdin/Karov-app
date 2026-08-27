@@ -16,13 +16,39 @@
 # core.hooksPath at .githooks, so a fresh clone picks this up after install.
 # Until then the hook is inert — an installed-ness a clean clone does not have
 # by default.
+#
+# ── SECOND JOB, ADDED 2026-08-27: print what is actually being pushed ────────
+#
+# `git push` pushes the BRANCH, not your commit. On this shared checkout the
+# branch accumulates commits from sessions that are not yours, so a push of
+# your own one-line docs change can carry someone else's unreviewed work to
+# the remote. That happened: a Reviewer docs push (6bc05f1) shipped an
+# Implementer commit (80f51dc) that the Reviewer had not read.
+#
+# ⚠️ THIS PART PRINTS. IT DOES NOT BLOCK, AND IT CANNOT.
+#
+# Do not read the existence of this output as "foreign commits are prevented."
+# They are not. A true gate would have to decide "this commit is not yours",
+# and git cannot answer that here: all three sessions commit as the same
+# author and the same email, so no repository metadata distinguishes them.
+# (The Co-Authored-By model names happen to differ today. That is a
+# coincidence of which model each session runs, not an identity — it would
+# stop discriminating the moment two sessions share a model, silently, which
+# is exactly the failure shape docs/KASHRUT_FACTS.md §17c is about. Do not
+# build a check on it.)
+#
+# So this is VISIBILITY, deliberately chosen over a gate: it puts the outgoing
+# commit list in front of you at the moment of the push instead of relying on
+# you remembering to run `git log origin/<branch>..HEAD` beforehand. The
+# accepted residual risk is that you can still read past it. See AGENTS.md.
 
 PROTECTED='master main'
 BLOCKED=0
 CURRENT=$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo 'your-branch')
+ZERO='0000000000000000000000000000000000000000'
 
 # git feeds us: <local ref> <local sha> <remote ref> <remote sha>
-while read -r _local_ref _local_sha remote_ref _remote_sha; do
+while read -r _local_ref local_sha remote_ref remote_sha; do
 	[ -z "$remote_ref" ] && continue
 	branch=${remote_ref#refs/heads/}
 	for p in $PROTECTED; do
@@ -40,6 +66,28 @@ while read -r _local_ref _local_sha remote_ref _remote_sha; do
 			echo "" >&2
 		fi
 	done
+
+	# Visibility pass. Never sets BLOCKED — a push is never refused for its
+	# contents, only for its destination (above).
+	[ "$local_sha" = "$ZERO" ] && continue   # branch deletion: nothing outgoing
+	if [ "$remote_sha" = "$ZERO" ]; then
+		# New remote branch: everything not already on some remote.
+		outgoing=$(git log --oneline "$local_sha" --not --remotes 2>/dev/null)
+	else
+		outgoing=$(git log --oneline "$remote_sha..$local_sha" 2>/dev/null)
+	fi
+
+	if [ -n "$outgoing" ]; then
+		count=$(printf '%s\n' "$outgoing" | wc -l | tr -d ' ')
+		echo "" >&2
+		echo "  → pushing $count commit(s) to '$branch':" >&2
+		printf '%s\n' "$outgoing" | sed 's/^/       /' >&2
+		echo "" >&2
+		echo "     A push sends the whole branch. On this shared checkout that can" >&2
+		echo "     include commits from another session. If any line above is not" >&2
+		echo "     yours, you are publishing work you have not reviewed." >&2
+		echo "" >&2
+	fi
 done
 
 exit $BLOCKED

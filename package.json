@@ -75,7 +75,7 @@
     "update:preview": "npx eas-cli@22 update --branch preview --auto",
     "update:production": "npx eas-cli@22 update --branch production --auto",
     "eas": "npx eas-cli@22",
-    "prepare": "git config core.hooksPath .githooks || true"
+    "prepare": "git config core.hooksPath .githooks && git config --get core.hooksPath || echo \"WARNING: could not set core.hooksPath - git hooks are NOT installed, the pre-push master guard is inactive\""
   },
   "private": true
 }
