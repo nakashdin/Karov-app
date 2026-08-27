@@ -63,6 +63,7 @@ const TEST_FILES = [
   'scripts/shared/__tests__/rebar-feed.test.mjs',
   'scripts/shared/__tests__/level-assertion-guard.test.mjs',
   'scripts/shared/__tests__/import-rebar-exitcode.test.mjs',
+  'scripts/shared/__tests__/no-process-exit-guard.test.mjs',
   'scripts/shared/__tests__/import-rebar-write.test.mjs',
   'scripts/shared/__tests__/authority-normalize.test.mjs',
   'scripts/shared/__tests__/kashrut-pipeline.test.mjs',

@@ -60,22 +60,93 @@ const BACKUP_DIR = resolve(ROOT, 'data-backups', 'import-rebar');
 
 // ── SECTION 1: the real-network exit-code regression ────────────────────
 // Deliberately makes a real network call — see module header for why a
-// mock cannot exercise this failure mode.
+// mock cannot exercise this failure mode. Found live, 2026-08-27 (Reviewer's
+// matrix, fired against 3fe80b9 with the real process.exit(0) regression
+// reintroduced): a fixture, a local keep-alive HTTP server, and a blanket
+// try/catch around this whole section ALL return exit 0 whether or not the
+// regression is present — none of them can distinguish "the endpoint
+// refused us" from "the process.exit(0) teardown bug is back." A skip that
+// is not keyed on the SPECIFIC shape of a fetch-layer rejection has exactly
+// that defect: it would convert exit 127 (the actual regression) into a
+// silent, celebrated "SKIPPED" alongside a genuine 403. So the discriminator
+// below is not "did the run fail" — it's "does stderr contain the EXACT
+// message shape fetchRebarStores' own `throw` produces
+// (scripts/shared/rebar-feed.mjs:167, `HTTP ${res.status}`) or a fetch-layer
+// network error (ECONNREFUSED/ETIMEDOUT/ENOTFOUND/EAI_AGAIN) — the only two
+// shapes that mean 'the endpoint or network refused us,' as opposed to any
+// other way this process can end non-zero.
+//
+// Every branch below emits a GitHub Actions workflow command (`::error::`
+// or `::warning::`) naming what happened — found live, same day: this job's
+// log requires admin rights this session doesn't have (confirmed 403,
+// repeatedly), so anything that only reaches stdout is invisible outside
+// the job. A workflow command becomes a public check-run annotation.
+//
+// NOT CONFIRMED, stated plainly: whether CI's actual failures are
+// rebar.co.il rejecting the request is a hypothesis this change is built to
+// answer, not one it assumes. Also recorded live, same day
+// (docs/KASHRUT_FACTS.md §39): rebar.co.il returns 403 to ANY non-browser
+// User-Agent from inside Israel too (curl, python-requests, empty UA) — the
+// Chrome UA this script already sends gets 200 from here. So a 403 in CI
+// would not by itself prove geo-blocking is the mechanism; it would prove
+// the endpoint refused THIS request, which is exactly and only what this
+// change is built to surface, nothing more.
+const REBAR_FILE = 'scripts/shared/__tests__/import-rebar-exitcode.test.mjs';
+// import-rebar.mjs's catch block prints exactly one of two shapes (see its
+// own comment, added alongside this fix): fetchRebarStores' own HTTP-status
+// throw puts the status directly in the message ("fetchRebarStores: HTTP
+// 403"), or a connection-level failure appends the undici cause CODE in
+// parens ("fetch failed (ECONNREFUSED)") — found live, 2026-08-27: Node's
+// native fetch puts connection failures on err.cause.code, NOT in
+// err.message, so a regex expecting the code to appear inline in the
+// message text could never match what the code actually prints, until this
+// same fix added the cause code to the printed line. No `s`/dotAll flag
+// needed — both shapes are on ONE line, deliberately (a multi-line message
+// here was an earlier draft's bug: `.*?` doesn't cross newlines by default,
+// so a wrapped multi-line stderr message would silently never match).
+const FETCH_REJECTION_RE = /✗ fetch failed: (fetchRebarStores: HTTP (\d+)|fetch failed \((ECONNREFUSED|ETIMEDOUT|ENOTFOUND|EAI_AGAIN)\))/;
 
 const realRun = spawnSync(process.execPath, [SCRIPT], { cwd: ROOT, encoding: 'utf8', timeout: 30000 });
+const rejectionMatch = FETCH_REJECTION_RE.exec(realRun.stderr ?? '');
 
-test('a completely successful REAL dry run (real network fetch) exits 0, not 127 — the exact regression: process.exit(0) tore the process down before the fetch\'s keep-alive socket finished closing', () => {
-  assert.equal(realRun.status, 0, `expected exit 0, got ${realRun.status}. stderr: ${realRun.stderr?.slice(0, 500)}`);
-});
+if (realRun.status !== 0 && rejectionMatch) {
+  // The endpoint or network itself refused the request — not a regression
+  // in our own code, and the ONLY thing this branch is permitted to treat
+  // as non-fatal. Reported, not silently passed: this line becomes a
+  // public annotation naming the exact status, so the next CI run answers
+  // "is it really 403" without anyone needing a job-log token.
+  console.log(
+    `::warning file=${REBAR_FILE}::SECTION 1 SKIPPED — rebar.co.il refused the request: ${rejectionMatch[0].replace('✗ fetch failed: ', '')}. ` +
+      'Not counted as a failure of this test (the endpoint refusing us is not a regression in our own code) — ' +
+      'this line is the confirmation the rebar hypothesis needs, whatever it says.',
+  );
+  test('SECTION 1 real-network assertions skipped — see the ::warning:: annotation above for why', () => {
+    // Intentionally empty: the precondition (a reachable endpoint) did not
+    // hold, so the exit-0/127 distinction this section exists to test
+    // cannot be exercised either way. Counted as passed so a legitimate
+    // skip does not fail the suite — the annotation above is what carries
+    // the signal, not this test's pass/fail.
+  });
+} else {
+  test('a completely successful REAL dry run (real network fetch) exits 0, not 127 — the exact regression: process.exit(0) tore the process down before the fetch\'s keep-alive socket finished closing', () => {
+    if (realRun.status !== 0) {
+      console.log(`::error file=${REBAR_FILE}::SECTION 1 failed with a NON-rejection error (not a recognized "endpoint refused us" shape) — exit ${realRun.status}. stderr: ${(realRun.stderr ?? '').slice(0, 500).replace(/\n/g, ' | ')}`);
+    }
+    assert.equal(realRun.status, 0, `expected exit 0, got ${realRun.status}. stderr: ${realRun.stderr?.slice(0, 500)}`);
+  });
 
-test('the real dry run\'s own stdout confirms it actually ran (not a silently-empty success)', () => {
-  assert.match(realRun.stdout, /Rebar import — DRY RUN/);
-  assert.match(realRun.stdout, /dry run — nothing written/);
-});
+  test('the real dry run\'s own stdout confirms it actually ran (not a silently-empty success)', () => {
+    assert.match(realRun.stdout, /Rebar import — DRY RUN/);
+    assert.match(realRun.stdout, /dry run — nothing written/);
+  });
 
-test('no libuv teardown assertion in stderr', () => {
-  assert.doesNotMatch(realRun.stderr ?? '', /UV_HANDLE_CLOSING/);
-});
+  test('no libuv teardown assertion in stderr', () => {
+    if (/UV_HANDLE_CLOSING/.test(realRun.stderr ?? '')) {
+      console.log(`::error file=${REBAR_FILE}::THE REGRESSION IS BACK — libuv UV_HANDLE_CLOSING assertion in stderr, exit ${realRun.status}. This is the exact process.exit(0)-tears-down-open-socket bug SECTION 1 exists to catch.`);
+    }
+    assert.doesNotMatch(realRun.stderr ?? '', /UV_HANDLE_CLOSING/);
+  });
+}
 
 // ── SECTION 2: dry-run write safety, via an injected synthetic feed ─────
 // No network dependency — REBAR_TEST_FETCH_TEXT (import-rebar.mjs's

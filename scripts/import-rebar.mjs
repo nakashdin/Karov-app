@@ -181,7 +181,19 @@ export async function main({ fetchImpl, placesPath, restaurantsPath, backupRoot,
   try {
     stores = resolvedFetchImpl ? await fetchRebarStores(resolvedFetchImpl) : await fetchRebarStores();
   } catch (err) {
-    console.error(`✗ fetch failed: ${err.message}`);
+    // Node's native fetch (undici) wraps a connection-level failure as
+    // `Error: fetch failed`, with the ACTUAL reason (ECONNREFUSED,
+    // ETIMEDOUT, ENOTFOUND, a TLS error) on `err.cause`, not in
+    // `err.message` — printing `err.message` alone here would always read
+    // as the same generic "fetch failed" string regardless of cause. Found
+    // live, 2026-08-27, while proving import-rebar-exitcode.test.mjs's
+    // SECTION 1 skip-vs-fail discriminator: a regex for ECONNREFUSED could
+    // never match anything this line prints, because the code before never
+    // printed it. `fetchRebarStores`'s own HTTP-status throw (rebar-feed.mjs
+    // `HTTP ${res.status}`) already puts the status in err.message directly
+    // — this only adds the cause code for the OTHER failure shape.
+    const causeCode = err.cause?.code;
+    console.error(`✗ fetch failed: ${err.message}${causeCode ? ` (${causeCode})` : ''}`);
     process.exitCode = 1;
     return;
   }
