@@ -159,7 +159,11 @@ function parseDetails(lines) {
 }
 
 // ── Main ─────────────────────────────────────────────────────────────────────
-const places = JSON.parse(readFileSync(PLACES_PATH, 'utf8'));
+// .replace(/^﻿/, '') strips the UTF-8 BOM places.osm.json carries at byte 0
+// — matches validate-data.mjs/kashrut-pipeline.mjs's own readNoBom. Found
+// live, 2026-08-27, running --dry to check the cert cliff (docs/KASHRUT_FACTS.md
+// §33 logs the same defect in a different script).
+const places = JSON.parse(readFileSync(PLACES_PATH, 'utf8').replace(/^﻿/, ''));
 const targets = places.filter(p => p.certifiedBy === 'צהר' && p.kosherCertUrl).slice(0, LIMIT);
 
 console.log(`Tzohar-certified places on record: ${targets.length}`);

@@ -33,7 +33,7 @@
 import { readFileSync, writeFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import path from 'path';
-import { recordKashrutWrite } from '../../scripts/shared/kashrut-write.mjs';
+import { recordKashrutWrite, localDateISO } from '../../scripts/shared/kashrut-write.mjs';
 
 const __dir = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dir, '../..');
@@ -300,7 +300,7 @@ for (const { existing, certUrl, basis } of toUpdate) {
     applyCertPatch(existing, basis);
     existing.kosherCertUrl = certUrl; // not a KASHRUT_FIELD — kosherCertUrl is evidence data, not routed through the helper
     existing.source = 'tzohar';
-    existing.lastVerifiedAt = '2026-08-10';
+    existing.lastVerifiedAt = localDateISO();
 
     const kashrutValueChanged = ['certifiedBy', 'kosherType', 'kosherAuthority', 'kosherAuthorityGroup', 'kosherLevel', 'certifierId']
       .some((f) => before[f] !== existing[f]);
@@ -320,7 +320,7 @@ for (const { existing, certUrl, basis } of toUpdate) {
 for (const { existing } of noEvidenceUpdates) {
   if (updatedIds.has(existing.id)) continue;
   updatedIds.add(existing.id);
-  existing.lastVerifiedAt = '2026-08-10';
+  existing.lastVerifiedAt = localDateISO();
 }
 
 // ── Build new entries ────────────────────────────────────────────────────────
@@ -331,7 +331,7 @@ for (const { base, certUrl, basis } of toInsert) {
     applyCertPatch(place, basis);
     place.kosherCertUrl = certUrl;
     place.source = 'tzohar';
-    place.lastVerifiedAt = '2026-08-10';
+    place.lastVerifiedAt = localDateISO();
     newPlaces.push(place);
   } catch (err) {
     helperViolations.push(`NEW ${base.id} "${base.name}": ${err.message}`);
