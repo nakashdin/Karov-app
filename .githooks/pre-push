@@ -1,0 +1,45 @@
+#!/bin/sh
+# Owner ruling 2026-08-27: master is written only through a merge request.
+#
+# This hook is the LOCAL half of that rule. It is not the enforcement — GitHub
+# branch protection on `master` is, and this hook does not substitute for it.
+# What this hook actually covers is the machine where the risk lives: three
+# Claude sessions share one checkout here, and a `git push origin master` typed
+# in any of them reaches production without review. That is the accident this
+# stops.
+#
+# What it cannot stop: `--no-verify`, a clone that never ran `npm install`, a
+# push from a different machine, or a merge performed in the GitHub UI. Every
+# one of those is a reason branch protection has to exist server-side too.
+#
+# Distribution: `npm run prepare` (run automatically by `npm install`) points
+# core.hooksPath at .githooks, so a fresh clone picks this up after install.
+# Until then the hook is inert — an installed-ness a clean clone does not have
+# by default.
+
+PROTECTED='master main'
+BLOCKED=0
+CURRENT=$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo 'your-branch')
+
+# git feeds us: <local ref> <local sha> <remote ref> <remote sha>
+while read -r _local_ref _local_sha remote_ref _remote_sha; do
+	[ -z "$remote_ref" ] && continue
+	branch=${remote_ref#refs/heads/}
+	for p in $PROTECTED; do
+		if [ "$branch" = "$p" ]; then
+			BLOCKED=1
+			echo "" >&2
+			echo "  ✖  push to '$p' refused by .githooks/pre-push" >&2
+			echo "" >&2
+			echo "     master is written only through a merge request." >&2
+			echo "     Open a PR from your branch instead:" >&2
+			echo "       https://github.com/nakashdin/Karov-app/compare/$p...$CURRENT" >&2
+			echo "" >&2
+			echo "     This hook is local. If you are deliberately overriding it," >&2
+			echo "     that is a decision for the project owner, not a --no-verify." >&2
+			echo "" >&2
+		fi
+	done
+done
+
+exit $BLOCKED

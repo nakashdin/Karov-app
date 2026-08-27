@@ -74,7 +74,8 @@
     "build:production": "npx eas-cli@22 build --profile production --platform all",
     "update:preview": "npx eas-cli@22 update --branch preview --auto",
     "update:production": "npx eas-cli@22 update --branch production --auto",
-    "eas": "npx eas-cli@22"
+    "eas": "npx eas-cli@22",
+    "prepare": "git config core.hooksPath .githooks || true"
   },
   "private": true
 }
