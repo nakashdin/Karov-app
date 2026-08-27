@@ -180,6 +180,26 @@ export const he = {
     winery: 'יקבים',
   },
 
+  about: {
+    headerTitle: 'אודות קרוב',
+    appName: 'קרוב',
+    version: (v: string) => `גרסה ${v}`,
+    missionTitle: 'המטרה שלנו',
+    missionBody: 'קרוב נוצרה מתוך רצון לתרום למען הקהילה היהודית — לרכז את כל המקומות, השירותים והמידע היהודי במקום אחד נגיש, בכל מקום בעולם.',
+    categoriesTitle: 'מה תמצאו באפליקציה',
+    dailyBrachot: 'ברכות יומיות נבחרות',
+    zmanim: 'זמני היום (זמנים הלכתיים)',
+    parasha: 'פרשת השבוע',
+    communityTitle: 'קהילה שבונה יחד',
+    communityBody: 'קרוב מונעת על ידי הקהילה. כל אחד יכול להוסיף מיקום חדש או לדווח על מידע שגוי — כך אנחנו יחד ממקסמים את השירות ליהודים בכל רחבי העולם.',
+    attributionTitle: 'מקורות ורישוי',
+    attributionBody: 'חלק מנתוני המקומות והמפה מגיעים מ‑OpenStreetMap, ומופצים תחת רישיון ODbL. תודה לאלפי המתנדבים שממפים את ישראל.',
+    osmLinkText: '© OpenStreetMap contributors — ODbL',
+    osmLinkAccessibilityLabel: 'רישיון OpenStreetMap',
+    sourcesLine: 'זמנים הלכתיים ולוח עברי: Hebcal · תוכן תורני: Sefaria · מקוואות: data.gov.il · בתי חב״ד: Chabad.org',
+    footerText: 'עשוי באהבה לעם ישראל 🇮🇱',
+  },
+
   menu: {
     title: 'תפריט',
     contact: 'צור קשר',

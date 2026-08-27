@@ -174,6 +174,29 @@ export const en = {
     winery: 'Wineries',
   },
 
+  about: {
+    headerTitle: 'About Karov',
+    appName: 'Karov',
+    version: (v: string) => `Version ${v}`,
+    missionTitle: 'Our mission',
+    missionBody:
+      'Karov was created out of a desire to give back to the Jewish community — bringing together every place, service and piece of Jewish information in one accessible spot, anywhere in the world.',
+    categoriesTitle: "What you'll find in the app",
+    dailyBrachot: 'Selected daily blessings',
+    zmanim: 'Halachic times (zmanim)',
+    parasha: 'Weekly Torah portion',
+    communityTitle: 'A community built together',
+    communityBody:
+      "Karov is powered by the community. Anyone can add a new place or report incorrect information — together we make the service as useful as possible for Jews everywhere.",
+    attributionTitle: 'Sources & licensing',
+    attributionBody:
+      'Some place and map data comes from OpenStreetMap, distributed under the ODbL license. Thank you to the thousands of volunteers mapping Israel.',
+    osmLinkText: '© OpenStreetMap contributors — ODbL',
+    osmLinkAccessibilityLabel: 'OpenStreetMap license',
+    sourcesLine: 'Halachic times and Hebrew calendar: Hebcal · Torah content: Sefaria · Mikvahs: data.gov.il · Chabad Houses: Chabad.org',
+    footerText: 'Made with love for the Jewish people 🇮🇱',
+  },
+
   menu: {
     title: 'Menu',
     contact: 'Contact Us',

@@ -2,6 +2,7 @@ import React from 'react';
 import { Linking, Modal, Pressable, ScrollView, Text, View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { makeStyles, radius, shadow, spacing, useTheme } from '../theme';
+import { useLanguage } from '../context/LanguageContext';
 
 interface Props {
   visible: boolean;
@@ -10,17 +11,19 @@ interface Props {
 
 const VERSION = '1.0.0';
 
-const CATEGORIES = [
-  { icon: '🍽️', label: 'מסעדות כשרות' },
-  { icon: '🕍', label: 'בתי כנסת' },
-  { icon: '💧', label: 'מקוואות' },
-  { icon: '🏠', label: 'בתי חב״ד' },
-  { icon: '🕯️', label: 'קברי צדיקים' },
-];
-
 export function AboutModal({ visible, onClose }: Props) {
   const theme = useTheme();
   const styles = useStyles();
+  const { t } = useLanguage();
+
+  const categories = [
+    { icon: '🍽️', label: t.home.restaurants },
+    { icon: '🕍', label: t.home.synagogues },
+    { icon: '💧', label: t.home.mikvahs },
+    { icon: '🏠', label: t.home.chabadHouses },
+    { icon: '🕯️', label: t.home.tzadikGraves },
+  ];
+
   return (
     <Modal
       visible={visible}
@@ -34,7 +37,7 @@ export function AboutModal({ visible, onClose }: Props) {
 
         {/* Header */}
         <View style={styles.header}>
-          <Text style={styles.headerTitle}>אודות קרוב</Text>
+          <Text style={styles.headerTitle}>{t.about.headerTitle}</Text>
           <Pressable onPress={onClose} hitSlop={10}>
             <Ionicons name="close" size={22} color={theme.text} />
           </Pressable>
@@ -43,23 +46,20 @@ export function AboutModal({ visible, onClose }: Props) {
         <ScrollView showsVerticalScrollIndicator={false}>
           {/* Logo + version */}
           <View style={styles.logoBlock}>
-            <Text style={styles.appName}>קרוב</Text>
-            <Text style={styles.version}>גרסה {VERSION}</Text>
+            <Text style={styles.appName}>{t.about.appName}</Text>
+            <Text style={styles.version}>{t.about.version(VERSION)}</Text>
           </View>
 
           {/* Mission */}
           <View style={styles.section}>
-            <Text style={styles.sectionTitle}>המטרה שלנו</Text>
-            <Text style={styles.body}>
-              קרוב נוצרה מתוך רצון לתרום למען הקהילה היהודית — לרכז את כל המקומות,
-              השירותים והמידע היהודי במקום אחד נגיש, בכל מקום בעולם.
-            </Text>
+            <Text style={styles.sectionTitle}>{t.about.missionTitle}</Text>
+            <Text style={styles.body}>{t.about.missionBody}</Text>
           </View>
 
           {/* Categories */}
           <View style={styles.section}>
-            <Text style={styles.sectionTitle}>מה תמצאו באפליקציה</Text>
-            {CATEGORIES.map((c) => (
+            <Text style={styles.sectionTitle}>{t.about.categoriesTitle}</Text>
+            {categories.map((c) => (
               <View key={c.label} style={styles.categoryRow}>
                 <Text style={styles.categoryIcon}>{c.icon}</Text>
                 <Text style={styles.categoryLabel}>{c.label}</Text>
@@ -67,51 +67,42 @@ export function AboutModal({ visible, onClose }: Props) {
             ))}
             <View style={styles.categoryRow}>
               <Text style={styles.categoryIcon}>📖</Text>
-              <Text style={styles.categoryLabel}>ברכות יומיות נבחרות</Text>
+              <Text style={styles.categoryLabel}>{t.about.dailyBrachot}</Text>
             </View>
             <View style={styles.categoryRow}>
               <Text style={styles.categoryIcon}>🕰️</Text>
-              <Text style={styles.categoryLabel}>זמני היום (זמנים הלכתיים)</Text>
+              <Text style={styles.categoryLabel}>{t.about.zmanim}</Text>
             </View>
             <View style={styles.categoryRow}>
               <Text style={styles.categoryIcon}>📜</Text>
-              <Text style={styles.categoryLabel}>פרשת השבוע</Text>
+              <Text style={styles.categoryLabel}>{t.about.parasha}</Text>
             </View>
           </View>
 
           {/* Community */}
           <View style={styles.section}>
-            <Text style={styles.sectionTitle}>קהילה שבונה יחד</Text>
-            <Text style={styles.body}>
-              קרוב מונעת על ידי הקהילה. כל אחד יכול להוסיף מיקום חדש או לדווח על
-              מידע שגוי — כך אנחנו יחד ממקסמים את השירות ליהודים בכל רחבי העולם.
-            </Text>
+            <Text style={styles.sectionTitle}>{t.about.communityTitle}</Text>
+            <Text style={styles.body}>{t.about.communityBody}</Text>
           </View>
 
           {/* Attribution — ODbL requires crediting OpenStreetMap wherever its
               data is shown. This is a licence obligation, not a courtesy, and
               the app stores check for it. */}
           <View style={styles.section}>
-            <Text style={styles.sectionTitle}>מקורות ורישוי</Text>
-            <Text style={styles.body}>
-              חלק מנתוני המקומות והמפה מגיעים מ‑OpenStreetMap, ומופצים תחת רישיון
-              ODbL. תודה לאלפי המתנדבים שממפים את ישראל.
-            </Text>
+            <Text style={styles.sectionTitle}>{t.about.attributionTitle}</Text>
+            <Text style={styles.body}>{t.about.attributionBody}</Text>
             <Pressable
               onPress={() => Linking.openURL('https://www.openstreetmap.org/copyright')}
               accessibilityRole="link"
-              accessibilityLabel="רישיון OpenStreetMap"
+              accessibilityLabel={t.about.osmLinkAccessibilityLabel}
             >
-              <Text style={styles.link}>© OpenStreetMap contributors — ODbL</Text>
+              <Text style={styles.link}>{t.about.osmLinkText}</Text>
             </Pressable>
-            <Text style={styles.bodyMuted}>
-              זמנים הלכתיים ולוח עברי: Hebcal · תוכן תורני: Sefaria · מקוואות:
-              data.gov.il · בתי חב״ד: Chabad.org
-            </Text>
+            <Text style={styles.bodyMuted}>{t.about.sourcesLine}</Text>
           </View>
 
           <View style={styles.footer}>
-            <Text style={styles.footerText}>עשוי באהבה לעם ישראל 🇮🇱</Text>
+            <Text style={styles.footerText}>{t.about.footerText}</Text>
           </View>
         </ScrollView>
       </View>

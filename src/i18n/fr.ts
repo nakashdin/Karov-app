@@ -173,6 +173,29 @@ export const fr = {
     winery: 'Caves viticoles',
   },
 
+  about: {
+    headerTitle: 'À propos de Karov',
+    appName: 'Karov',
+    version: (v: string) => `Version ${v}`,
+    missionTitle: 'Notre mission',
+    missionBody:
+      "Karov est née de la volonté de contribuer à la communauté juive — rassembler tous les lieux, services et informations juives en un seul endroit accessible, partout dans le monde.",
+    categoriesTitle: "Ce que vous trouverez dans l'application",
+    dailyBrachot: 'Bénédictions quotidiennes sélectionnées',
+    zmanim: 'Horaires halakhiques (zmanim)',
+    parasha: 'Paracha de la semaine',
+    communityTitle: 'Une communauté qui se construit ensemble',
+    communityBody:
+      "Karov fonctionne grâce à la communauté. Chacun peut ajouter un nouveau lieu ou signaler une information incorrecte — ensemble, nous maximisons ainsi le service pour les Juifs du monde entier.",
+    attributionTitle: 'Sources et licences',
+    attributionBody:
+      "Une partie des données de lieux et de carte provient d'OpenStreetMap, distribuées sous licence ODbL. Merci aux milliers de bénévoles qui cartographient Israël.",
+    osmLinkText: '© OpenStreetMap contributors — ODbL',
+    osmLinkAccessibilityLabel: 'Licence OpenStreetMap',
+    sourcesLine: "Horaires halakhiques et calendrier hébraïque : Hebcal · Contenu de Torah : Sefaria · Mikvaot : data.gov.il · Maisons Chabad : Chabad.org",
+    footerText: 'Fait avec amour pour le peuple d\'Israël 🇮🇱',
+  },
+
   menu: {
     title: 'Menu',
     contact: 'Nous contacter',
