@@ -72,7 +72,9 @@ export const es = {
     certExpired: 'Certificado kosher caducado',
     attributedSource: 'Lo que reportó la fuente',
     notVerifiedAgainstRegistry: 'No verificado con nuestro registro de autoridades',
-    lastVerified: 'Última verificación',
+    // Owner ruling, 2026-08-27: was 'Última verificación' ("last
+    // verification") — a false claim (see he.ts for the full reasoning).
+    lastVerified: 'Actualizado en la base de datos',
     buriedPerson: 'Enterrado aquí',
     approxLocation: 'Ubicación aproximada por ciudad',
     distanceAway: (text: string) => `${text} de ti`,

@@ -72,7 +72,9 @@ export const fr = {
     certExpired: 'Certificat cacher expiré',
     attributedSource: 'Ce que la source a indiqué',
     notVerifiedAgainstRegistry: "Non vérifié par rapport à notre registre d'autorités",
-    lastVerified: 'Dernière vérification',
+    // Owner ruling, 2026-08-27: was 'Dernière vérification' ("last
+    // verification") — a false claim (see he.ts for the full reasoning).
+    lastVerified: 'Mis à jour dans la base de données',
     buriedPerson: 'Enterré ici',
     approxLocation: 'Emplacement approximatif par ville',
     distanceAway: (text: string) => `${text} de toi`,

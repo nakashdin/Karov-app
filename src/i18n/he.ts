@@ -72,7 +72,13 @@ export const he = {
     certExpired: 'תעודת כשרות פגה',
     attributedSource: 'מה שנמסר במקור',
     notVerifiedAgainstRegistry: 'לא אומת מול רשימת גופי הכשרות שלנו',
-    lastVerified: 'אומת לאחרונה',
+    // Owner ruling, 2026-08-27: was 'אומת לאחרונה' ("last verified") — a
+    // false claim. 2,038 records share the exact same date because a
+    // script ran that day, not because anyone verified 2,038 places in a
+    // day. The field records when the database was last touched, not a
+    // human verification event — the wording must say that, not remove the
+    // row (removing it hides information rather than correcting a claim).
+    lastVerified: 'עודכן במאגר',
     buriedPerson: 'קבור כאן',
     approxLocation: 'מיקום משוער לפי עיר',
     distanceAway: (text: string) => `${text} ממך`,

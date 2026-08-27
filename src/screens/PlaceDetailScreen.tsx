@@ -660,7 +660,7 @@ export function PlaceDetailScreen() {
           )}
 
           {place.lastVerifiedAt ? (
-            <DetailRow icon="checkmark-done-outline" label="אומת לאחרונה" value={place.lastVerifiedAt} accent={accent} />
+            <DetailRow icon="checkmark-done-outline" label={t.detail.lastVerified} value={place.lastVerifiedAt} accent={accent} />
           ) : null}
 
           {/* sourceUrl / sourceName retained in data for admin panel only */}

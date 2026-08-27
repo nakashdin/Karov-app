@@ -72,7 +72,9 @@ export const ru = {
     certExpired: 'Срок действия сертификата истёк',
     attributedSource: 'Что сообщил источник',
     notVerifiedAgainstRegistry: 'Не проверено по нашему реестру органов кашрута',
-    lastVerified: 'Последняя проверка',
+    // Owner ruling, 2026-08-27: was 'Последняя проверка' ("last check") —
+    // a false claim (see he.ts for the full reasoning).
+    lastVerified: 'Обновлено в базе данных',
     buriedPerson: 'Похоронен здесь',
     approxLocation: 'Приблизительное местоположение по городу',
     distanceAway: (text: string) => `${text} от тебя`,

@@ -72,7 +72,10 @@ export const en = {
     certExpired: 'Kosher certificate expired',
     attributedSource: 'What the source reported',
     notVerifiedAgainstRegistry: 'Not verified against our authority registry',
-    lastVerified: 'Last verified',
+    // Owner ruling, 2026-08-27: was 'Last verified' — a false claim (see
+    // he.ts for the full reasoning). Records when the database entry was
+    // last updated, not a human verification event.
+    lastVerified: 'Updated in database',
     buriedPerson: 'Buried here',
     approxLocation: 'Approximate location by city',
     distanceAway: (text: string) => `${text} from you`,
