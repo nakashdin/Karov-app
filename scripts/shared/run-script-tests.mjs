@@ -72,6 +72,7 @@ const TEST_FILES = [
   'scripts/shared/__tests__/ratchet-family-exhaustiveness.test.mjs',
   'scripts/shared/__tests__/lastverifiedat-literal-guard.test.mjs',
   'scripts/shared/__tests__/local-date-iso-mirror.test.mjs',
+  'scripts/shared/__tests__/review-evidence-gate.test.mjs',
 ];
 
 // GitHub's workflow-command format requires ":", "%", and CRLF inside the

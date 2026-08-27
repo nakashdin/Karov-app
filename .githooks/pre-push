@@ -42,10 +42,28 @@
 # you remembering to run `git log origin/<branch>..HEAD` beforehand. The
 # accepted residual risk is that you can still read past it. See AGENTS.md.
 
+# ── THIRD JOB, ADDED 2026-08-27: require review evidence for every ─────────
+# outgoing commit that touches a code path, not just the pushed tip.
+#
+# Owner ruling: "no Implementer change should be pushed as reviewed unless
+# there is fresh Reviewer evidence for that exact change/commit," failing
+# closed on missing/stale/unparseable evidence. See
+# scripts/shared/review-evidence-gate.mjs for the full invariant, the
+# evidence format, and — importantly — what this gate does NOT prove
+# (read that file before relying on this).
+#
+# Checking only the TIP commit would miss the exact failure mode that
+# motivated this: a push carries the WHOLE outgoing range, and evidence for
+# one commit in that range says nothing about the others (this happened
+# today — a docs push at 6bc05f1 carried an un-reviewed Implementer commit,
+# 80f51dc, that the pusher had not read). So this loops over every commit
+# the push would add, not the ref being updated.
+
 PROTECTED='master main'
 BLOCKED=0
 CURRENT=$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo 'your-branch')
 ZERO='0000000000000000000000000000000000000000'
+REPO_ROOT=$(git rev-parse --show-toplevel 2>/dev/null)
 
 # git feeds us: <local ref> <local sha> <remote ref> <remote sha>
 while read -r _local_ref local_sha remote_ref remote_sha; do
@@ -87,6 +105,32 @@ while read -r _local_ref local_sha remote_ref remote_sha; do
 		echo "     include commits from another session. If any line above is not" >&2
 		echo "     yours, you are publishing work you have not reviewed." >&2
 		echo "" >&2
+	fi
+
+	# Review-evidence gate. Uses the SAME range logic as the visibility
+	# pass above, re-run with full 40-char SHAs (%H) instead of --oneline
+	# -- every commit this push would add, not just $local_sha (the tip).
+	# See the header comment above and scripts/shared/review-evidence-gate.mjs.
+	if [ "$remote_sha" = "$ZERO" ]; then
+		outgoing_shas=$(git log --format='%H' "$local_sha" --not --remotes 2>/dev/null)
+	else
+		outgoing_shas=$(git log --format='%H' "$remote_sha..$local_sha" 2>/dev/null)
+	fi
+	if [ -n "$outgoing_shas" ] && [ -n "$REPO_ROOT" ]; then
+		gate_output=$(node "$REPO_ROOT/scripts/shared/review-evidence-gate.mjs" $outgoing_shas 2>&1)
+		gate_status=$?
+		if [ -n "$gate_output" ]; then
+			echo "" >&2
+			echo "  -- review-evidence gate --" >&2
+			printf '%s\n' "$gate_output" | sed 's/^/     /' >&2
+			echo "" >&2
+		fi
+		if [ "$gate_status" -ne 0 ]; then
+			BLOCKED=1
+			echo "  X  push to '$branch' refused: one or more commits above lack valid review evidence." >&2
+			echo "     See scripts/shared/review-evidence-gate.mjs for the evidence format." >&2
+			echo "" >&2
+		fi
 	fi
 done
 
