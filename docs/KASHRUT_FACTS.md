@@ -1007,6 +1007,53 @@ author, idiom and misunderstanding of the thing it defends against. **When an in
 person, it is not finished.** Ask what about the *mechanism* made that person's mistake the natural one, and
 write that instead — otherwise the lesson leaves with them.
 
+### 17c. The cheapest detector for the whole family: a probe whose pass and fail cases agree
+
+Every face above needed a different countermeasure, and each one needs you to already understand what the
+check was *for*. Face 5 says test the instrument against a known positive; 17b says retry with a needle that
+cannot carry an escape. Both require knowing the subject well enough to construct the right control.
+
+**There is one detector that needs none of that**, and it caught three separate dead probes in a single
+review session:
+
+> **When a probe returns the same verdict for a case that must pass and a case that must fail, the probe has
+> stopped discriminating.** Not "may have" — has. Whatever it is now measuring, it is not the thing whose two
+> outcomes it can no longer tell apart.
+
+The three instances, all mine, all within one session, none related to each other:
+
+| Probe | What it reported | Why it was dead |
+|---|---|---|
+| forced ratchet regression, four keys | 4 × `exit=0` — "the ratchet fails nothing" | the backup copy had a shell fallback whose first branch wrote outside the worktree; the mutation step then read a path that did not exist, threw, and left the baseline untouched. Four runs of an unmodified validator. |
+| `pre-push` hook, nine ref shapes | 9 × `rc=0` — "the hook blocks nothing" | the fixture was emitted without a trailing newline, so the hook's `while read -r` never completed a line and the loop body never executed |
+| registry alias scan over 59 live pages | 59/59 pages "name a certifying body" | a bare substring test on the 3-character alias `צהר`, matching inside `הצהרת נגישות` in the site footer of every page |
+
+The first two report **universal failure**, the third **universal success**. Both extremes are the signature.
+The discriminating detail is identical in all three: **the cases that were supposed to differ, did not.**
+
+**Why this generalises past probes.** Re-reading the instrument does not help — in all three the code did
+exactly what it said, and in the first two it was one character from correct. Nor does re-running it. What
+works is structural and costs nothing: **every probe carries at least one case whose expected verdict is the
+opposite of the others, and their outputs are compared before any result is believed.** A single-case probe
+cannot self-check at all, which is a reason not to write one.
+
+Applied backwards, this catches every face in the table without knowing what any of them guard. A test
+nothing runs has no failing case. A fixture matching nothing asserts vacuously in both directions. A test
+copying its subject's logic agrees with itself whatever the subject does. A count-matching prediction is
+silent on validity either way. A zero-result scan has no positive to contrast. **In each one, the two
+outcomes that should diverge do not** — which is visible without understanding the subject at all, and is why
+this belongs at the end of the section rather than as a seventh face.
+
+**A number too clean is the weaker cousin of the same signal.** 59-of-59 was caught not by the rule above but
+by the count being implausibly total — the shape of an instrument matching site chrome rather than content.
+Useful, but it requires a prior about what a plausible answer looks like. The pass/fail-agreement rule does
+not.
+
+**A postscript that is itself an instance.** Verifying this file's line endings, `sed -n | cat -A` reported
+clean LF — because `sed` had already stripped the CRs before `cat -A` could show them. The file is CRLF. The
+instrument answered a question about its own output rather than about the file, and it took a byte-level
+comparison to see it. Checking a property *through* a pipeline measures the pipeline.
+
 ---
 
 ## 18. `restaurants.osm.json` — guarded against erasure, validated by nothing
