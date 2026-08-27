@@ -26,8 +26,21 @@
 // were written to be safely re-executed inside a shared process. Spawning
 // preserves that contract exactly, and stops at the first failure, the
 // same short-circuit behaviour npm's old `&&` chain had.
+//
+// On the first non-zero exit, also emits a GitHub Actions workflow command
+// (`::error file=...::...`) — found live, 2026-08-27: this step's own job
+// log requires admin rights neither this session nor the Reviewer's had
+// (confirmed 403, repeatedly, across multiple runs), so seven straight red
+// runs of this exact step produced zero readable stderr from outside the
+// job. A workflow command written to stdout becomes a PUBLIC check-run
+// annotation — readable via `/check-runs/{id}/annotations`, no auth
+// required — so this is the one channel available to identify which of
+// the 22 files actually failed without asking the repo owner to fetch a
+// log by hand. A matching `::notice::` fires on a fully clean run, so a
+// green check confirms the emitter path is reachable rather than leaving
+// "did this even run" ambiguous the same way a silent failure would.
 import { spawnSync } from 'node:child_process';
-import { resolve, dirname } from 'node:path';
+import { resolve, dirname, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 process.env.TZ = 'Asia/Jerusalem';
@@ -60,6 +73,19 @@ const TEST_FILES = [
   'scripts/shared/__tests__/local-date-iso-mirror.test.mjs',
 ];
 
+// GitHub's workflow-command format requires ":", "%", and CRLF inside the
+// message/property values to be percent-escaped, or the command is parsed
+// incorrectly (a literal newline would be read as ending the command
+// early). Property values additionally escape ",". This repo's own file
+// paths and error messages can contain any of these.
+function escapeProperty(s) {
+  return String(s).replace(/%/g, '%25').replace(/\r/g, '%0D').replace(/\n/g, '%0A').replace(/:/g, '%3A').replace(/,/g, '%2C');
+}
+function escapeData(s) {
+  return String(s).replace(/%/g, '%25').replace(/\r/g, '%0D').replace(/\n/g, '%0A');
+}
+
+let ranCount = 0;
 for (const relPath of TEST_FILES) {
   const absPath = resolve(ROOT, relPath);
   const result = spawnSync(process.execPath, [absPath], {
@@ -67,7 +93,15 @@ for (const relPath of TEST_FILES) {
     stdio: 'inherit',
     env: process.env,
   });
+  ranCount++;
   if (result.status !== 0) {
+    const exitDesc = result.status === null ? `signal ${result.signal}` : `exit ${result.status}`;
+    console.log(
+      `::error file=${escapeProperty(relative(ROOT, absPath).replace(/\\/g, '/'))}::` +
+        escapeData(`test:scripts failed at ${relPath} (${exitDesc}) — file ${ranCount} of ${TEST_FILES.length}, ${ranCount - 1} passed before it`),
+    );
     process.exit(result.status ?? 1);
   }
 }
+
+console.log(`::notice::test:scripts: all ${TEST_FILES.length} guard files passed`);
