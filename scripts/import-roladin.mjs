@@ -4,6 +4,11 @@
  * Run: node scripts/import-roladin.mjs
  */
 import { readFileSync, writeFileSync } from 'fs';
+import { fileURLToPath } from 'url';
+import path from 'path';
+
+const __dir = path.dirname(fileURLToPath(import.meta.url));
+const ROOT = path.join(__dir, '..');
 
 const BOM = Buffer.from([0xEF, 0xBB, 0xBF]);
 function readNoBom(p) {
@@ -110,8 +115,8 @@ const raw = JSON.parse(readFileSync(
   'C:/Users/User/AppData/Local/Temp/claude/C--Users-User-Desktop-claude-plane/3d5b0d60-6027-4360-b55d-fe1d978d5a05/scratchpad/roladin_branches.json'
 ).toString('utf8'));
 
-const RPATH = 'src/data/generated/restaurants.osm.json';
-const PPATH = 'src/data/generated/places.osm.json';
+const RPATH = path.join(ROOT, 'src/data/generated/restaurants.osm.json');
+const PPATH = path.join(ROOT, 'src/data/generated/places.osm.json');
 const rests  = readNoBom(RPATH);
 const places = readNoBom(PPATH);
 

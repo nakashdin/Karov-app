@@ -3,6 +3,7 @@ import { StyleSheet } from 'react-native';
 import { WebView } from 'react-native-webview';
 import type { MapViewProps } from './MapView';
 import { buildLeafletHtml } from './leafletHtml';
+import { useTheme } from '../../theme';
 
 /**
  * Native map: Leaflet + OpenStreetMap inside a WebView.
@@ -16,9 +17,10 @@ export function LeafletMap({
   initialZoom,
   highlightId,
 }: MapViewProps) {
+  const theme = useTheme();
   const html = useMemo(
-    () => buildLeafletHtml(places, userLocation ?? null, { initialCenter, initialZoom, highlightId }),
-    [places, userLocation, initialCenter, initialZoom, highlightId],
+    () => buildLeafletHtml(places, userLocation ?? null, theme, { initialCenter, initialZoom, highlightId }),
+    [places, userLocation, theme, initialCenter, initialZoom, highlightId],
   );
 
   return (

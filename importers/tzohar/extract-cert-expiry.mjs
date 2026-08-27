@@ -10,7 +10,31 @@
  *   certificateValidUntil : ISO date (YYYY-MM-DD)
  *   kosherDetails         : { shabbatClosed, bishulYisrael, chalavYisrael, ... }
  *
- * Usage: node importers/tzohar/extract-cert-expiry.mjs [--limit N] [--dry]
+ * Refresh policy — the cache is NOT trusted forever. A cached PDF is only
+ * reused as-is when the certificate it describes is still comfortably valid
+ * (more than REFRESH_WINDOW_DAYS from its currently-known expiry) AND we
+ * have fetch metadata proving it was actually downloaded (not just present
+ * on disk from some earlier, possibly-interrupted run). Everything else —
+ * already expired, approaching expiry, or never resolved to a date at all —
+ * is re-fetched from the official source every run, because a locally cached
+ * PDF cannot tell us whether Tzohar has since published a renewal.
+ *
+ * Failure handling is conservative on purpose: if a re-fetch fails, or the
+ * fetched PDF has no parseable date, `certificateValidUntil` is left exactly
+ * as it was. A failed refresh NEVER extends, clears, or guesses a new date —
+ * an already-expired record stays expired until a real renewed certificate
+ * is actually retrieved and parsed.
+ *
+ * Usage:
+ *   node importers/tzohar/extract-cert-expiry.mjs [--limit N] [--dry]
+ *                                                  [--refresh] [--window DAYS]
+ *
+ *   --dry       run retrieval + parsing but don't write places.osm.json
+ *               (cert-cache/ is still updated — it's a local dev cache, not
+ *               production data)
+ *   --refresh   ignore cache freshness entirely; re-fetch every target
+ *   --window N  re-fetch when within N days of the currently-known expiry
+ *               (default 60, matching docs/DATA_ARCHITECTURE.md L8)
  */
 
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
@@ -25,9 +49,27 @@ const CACHE = path.join(__dir, 'cert-cache');
 
 const args = process.argv.slice(2);
 const DRY = args.includes('--dry');
+const FORCE_REFRESH = args.includes('--refresh');
 const LIMIT = args.includes('--limit') ? +args[args.indexOf('--limit') + 1] : Infinity;
+const REFRESH_WINDOW_DAYS = args.includes('--window') ? +args[args.indexOf('--window') + 1] : 60;
 
 if (!existsSync(CACHE)) mkdirSync(CACHE, { recursive: true });
+
+const todayISO = new Date().toISOString().slice(0, 10);
+const daysUntil = (iso) => Math.round((new Date(iso) - new Date(todayISO)) / 86400000);
+
+/**
+ * Whether the cached PDF for this place should be trusted as-is, or whether
+ * the official source needs to be re-checked before we can say anything
+ * about this certificate.
+ */
+function isCacheStale(id, currentValidUntil) {
+  if (FORCE_REFRESH) return true;
+  const metaPath = path.join(CACHE, id + '.meta.json');
+  if (!existsSync(metaPath)) return true; // no fetch record — freshness unknown, don't trust it
+  if (!currentValidUntil) return true;    // never resolved a date — always worth rechecking
+  return daysUntil(currentValidUntil) <= REFRESH_WINDOW_DAYS; // expired (negative) or approaching
+}
 
 // ── PDF text extraction ──────────────────────────────────────────────────────
 function inflateAll(s) {
@@ -117,24 +159,36 @@ function parseDetails(lines) {
 }
 
 // ── Main ─────────────────────────────────────────────────────────────────────
-const places = JSON.parse(readFileSync(PLACES_PATH, 'utf8'));
+// .replace(/^﻿/, '') strips the UTF-8 BOM places.osm.json carries at byte 0
+// — matches validate-data.mjs/kashrut-pipeline.mjs's own readNoBom. Found
+// live, 2026-08-27, running --dry to check the cert cliff (docs/KASHRUT_FACTS.md
+// §33 logs the same defect in a different script).
+const places = JSON.parse(readFileSync(PLACES_PATH, 'utf8').replace(/^﻿/, ''));
 const targets = places.filter(p => p.certifiedBy === 'צהר' && p.kosherCertUrl).slice(0, LIMIT);
 
-console.log(`certificates to process: ${targets.length}\n`);
+console.log(`Tzohar-certified places on record: ${targets.length}`);
+console.log(`refresh window: ${FORCE_REFRESH ? 'forced (--refresh)' : `${REFRESH_WINDOW_DAYS} days before expiry`}\n`);
 
-let ok = 0, noDate = 0, failed = [];
+let refetched = 0, skipped = 0, renewed = 0, unchanged = 0, noDate = 0, failed = [];
 
 for (const p of targets) {
   const fname = path.join(CACHE, p.id + '.pdf');
+  const metaFname = path.join(CACHE, p.id + '.meta.json');
+  const previousValidUntil = p.certificateValidUntil;
+  const stale = isCacheStale(p.id, previousValidUntil);
+
   let buf;
   try {
-    if (existsSync(fname)) {
+    if (existsSync(fname) && !stale) {
       buf = readFileSync(fname);
+      skipped++;
     } else {
       const res = await fetch(p.kosherCertUrl);
       if (!res.ok) throw new Error('HTTP ' + res.status);
       buf = Buffer.from(await res.arrayBuffer());
       writeFileSync(fname, buf);
+      writeFileSync(metaFname, JSON.stringify({ fetchedAt: todayISO, url: p.kosherCertUrl }));
+      refetched++;
     }
     const lines = pdfText(buf);
     const expiry = parseExpiry(lines);
@@ -143,13 +197,20 @@ for (const p of targets) {
     if (expiry) {
       p.certificateValidUntil = expiry;
       p.kosherDetails = details;
-      ok++;
-      console.log(`  ✓ ${p.name.padEnd(34).slice(0, 34)} ${expiry}`);
+      if (previousValidUntil && expiry > previousValidUntil) {
+        renewed++;
+        console.log(`  ✓ RENEWED  ${p.name.padEnd(30).slice(0, 30)} ${previousValidUntil} → ${expiry}`);
+      } else {
+        unchanged++;
+        if (stale) console.log(`  ✓ unchanged ${p.name.padEnd(29).slice(0, 29)} ${expiry} (re-checked, same as before)`);
+      }
     } else {
       noDate++;
-      console.log(`  ? ${p.name.padEnd(34).slice(0, 34)} — no date found`);
+      console.log(`  ? ${p.name.padEnd(34).slice(0, 34)} — no date found${stale ? ' (re-checked)' : ''}`);
     }
   } catch (e) {
+    // Fetch or parse failed — leave certificateValidUntil untouched. An
+    // already-expired record stays expired; we never guess a renewal.
     failed.push(`${p.name}: ${e.message}`);
     console.log(`  ✗ ${p.name.padEnd(34).slice(0, 34)} ${e.message}`);
   }
@@ -158,9 +219,15 @@ for (const p of targets) {
 // places.osm.json is kept minified — it ships in the web bundle.
 if (!DRY) writeFileSync(PLACES_PATH, JSON.stringify(places), 'utf8');
 
-console.log(`\n=== Certificate expiry extraction ===`);
-console.log(`expiry extracted : ${ok}`);
-console.log(`no date in PDF   : ${noDate}`);
-console.log(`download failed  : ${failed.length}`);
-failed.forEach(f => console.log('   ' + f));
-console.log(DRY ? '\n(dry run — nothing written)' : `\nwritten to ${path.relative(ROOT, PLACES_PATH)}`);
+const stillExpired = places.filter(p => p.certificateValidUntil && p.certificateValidUntil < todayISO);
+
+console.log(`\n=== Certificate expiry extraction — ${todayISO} ===`);
+console.log(`businesses checked      : ${targets.length}`);
+console.log(`  re-fetched from source: ${refetched}  (${skipped} served from a still-fresh cache)`);
+console.log(`  renewed (new date)    : ${renewed}`);
+console.log(`  unchanged              : ${unchanged}`);
+console.log(`  no date in PDF         : ${noDate}`);
+console.log(`  retrieval/parse failed : ${failed.length}`);
+failed.forEach(f => console.log('     ' + f));
+console.log(`currently expired (all Tzohar records, after this run): ${stillExpired.length}`);
+console.log(DRY ? '\n(dry run — places.osm.json not written; cert-cache/ was still updated)' : `\nwritten to ${path.relative(ROOT, PLACES_PATH)}`);

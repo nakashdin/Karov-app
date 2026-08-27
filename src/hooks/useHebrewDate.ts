@@ -1,13 +1,18 @@
 import { useEffect, useState } from 'react';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useHalachicDate } from './useHalachicDate';
-
-const CACHE_KEY = '@karov/hebrewDateToday';
+import { hebcal } from '../shared/api';
+import { getJSON, setJSON, StorageKey } from '../shared/storage';
 
 interface Cached {
   hebrew: string;
   gregorianDate: string; // YYYY-MM-DD — invalidate on new day
 }
+
+const isCached = (v: unknown): v is Cached =>
+  typeof v === 'object' &&
+  v !== null &&
+  typeof (v as Cached).hebrew === 'string' &&
+  typeof (v as Cached).gregorianDate === 'string';
 
 export function useHebrewDate(): string | null {
   const [hebrewDate, setHebrewDate] = useState<string | null>(null);
@@ -15,38 +20,34 @@ export function useHebrewDate(): string | null {
   const { iso, year, month, day } = useHalachicDate();
 
   useEffect(() => {
+    const controller = new AbortController();
     let mounted = true;
 
     (async () => {
-      try {
-        const raw = await AsyncStorage.getItem(CACHE_KEY);
-        if (raw) {
-          const cached: Cached = JSON.parse(raw);
-          if (cached.gregorianDate === iso) {
-            if (mounted) setHebrewDate(cached.hebrew);
-            return;
-          }
-        }
-      } catch {}
+      const cached = await getJSON<Cached | null>(StorageKey.hebrewDateToday, null, isCached);
+      if (cached?.gregorianDate === iso) {
+        if (mounted) setHebrewDate(cached.hebrew);
+        return;
+      }
 
       try {
-        const url =
-          `https://www.hebcal.com/converter?cfg=json` +
-          `&gy=${year}&gm=${month}&gd=${day}&g2h=1&strict=1`;
-        const resp = await fetch(url);
-        const json = await resp.json();
-        if (json.hebrew && mounted) {
-          setHebrewDate(json.hebrew);
-          await AsyncStorage.setItem(
-            CACHE_KEY,
-            JSON.stringify({ hebrew: json.hebrew, gregorianDate: iso }),
-          );
-        }
-      } catch {}
+        const result = await hebcal.fetchConversion(year, month, day, true, {
+          signal: controller.signal,
+        });
+        if (!result.hebrew) return;
+        await setJSON<Cached>(StorageKey.hebrewDateToday, {
+          hebrew: result.hebrew,
+          gregorianDate: iso,
+        });
+        if (mounted) setHebrewDate(result.hebrew);
+      } catch {
+        // Yesterday's cached date is still shown; a blank line is the fallback.
+      }
     })();
 
     return () => {
       mounted = false;
+      controller.abort();
     };
   }, [iso, year, month, day]);
 

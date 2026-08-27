@@ -11,7 +11,7 @@ import {
   View,
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { Ionicons } from '@expo/vector-icons';
+import Ionicons from '@expo/vector-icons/Ionicons';
 import { useNavigation } from '@react-navigation/native';
 import { useFocusEffect } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
@@ -22,7 +22,8 @@ import { AppMenu } from '../components/AppMenu';
 import { TodayCard } from '../components/home/TodayCard';
 import { DailyCarousel } from '../components/home/DailyCarousel';
 import { NearbyHorizontalList } from '../components/home/NearbyHorizontalList';
-import { colors, radius, shadow, spacing } from '../theme';
+import { alpha, makeStyles, mix, radius, shadow, spacing, useTheme } from '../theme';
+import type { Tokens } from '../theme';
 import { useLanguage } from '../context/LanguageContext';
 import { usePlaces } from '../hooks/usePlaces';
 import { useParasha } from '../hooks/useParasha';
@@ -31,7 +32,7 @@ import { useHalachicDate } from '../hooks/useHalachicDate';
 import { useCityName } from '../hooks/useCityName';
 import { useSharedLocation } from '../context/LocationContext';
 import { useFilters } from '../context/FiltersContext';
-import { distanceKm } from '../utils/geo';
+import { distanceKm, nearestBy } from '../utils/geo';
 import { emptyFilters, PlaceSubType, PlaceType } from '../types';
 import { RootStackParamList } from '../navigation/types';
 import { Place } from '../types/place';
@@ -40,15 +41,17 @@ type Nav = NativeStackNavigationProp<RootStackParamList>;
 
 const HEBREW_DAYS = ['יום ראשון', 'יום שני', 'יום שלישי', 'יום רביעי', 'יום חמישי', 'יום שישי', 'שבת'];
 
-const ALL_SHORTCUTS = [
-  { icon: 'cafe' as const,          color: colors.categoryCafe,       bg: '#F0EAF8', label: 'בתי קפה',     type: 'cafe' },
-  { icon: 'cafe-outline' as const,  color: colors.categoryCoffeeCart, bg: '#EBF5E6', label: 'עגלות קפה',   type: 'coffee_cart' },
-  { icon: 'wine' as const,          color: colors.categoryWinery,     bg: '#F8EAF0', label: 'ייקבים',      type: 'winery' },
-  { icon: 'business' as const,      color: colors.categorySynagogue,  bg: '#E8F1FC', label: 'בתי כנסת',    type: 'synagogue' },
-  { icon: 'water' as const,         color: colors.categoryMikveh,     bg: '#E5F5FD', label: 'מקוואות',     type: 'mikveh' },
-  { icon: 'home' as const,          color: colors.chabad,             bg: '#F0EBF8', label: 'בתי חב"ד',    type: 'chabad_house' },
-  { icon: 'flower-outline' as const,color: colors.tzaddik,            bg: '#F5EEEA', label: 'קברי צדיקים', type: 'tzaddik_grave' },
-] as const;
+function shortcutsFor(theme: Tokens) {
+  return [
+    { icon: 'cafe' as const,          color: theme.categoryCafe,       label: 'בתי קפה',     type: 'cafe' },
+    { icon: 'cafe-outline' as const,  color: theme.categoryCoffeeCart, label: 'עגלות קפה',   type: 'coffee_cart' },
+    { icon: 'wine' as const,          color: theme.categoryWinery,     label: 'ייקבים',      type: 'winery' },
+    { icon: 'business' as const,      color: theme.categorySynagogue,  label: 'בתי כנסת',    type: 'synagogue' },
+    { icon: 'water' as const,         color: theme.categoryMikveh,     label: 'מקוואות',     type: 'mikveh' },
+    { icon: 'home' as const,          color: theme.chabad,             label: 'בתי חב"ד',    type: 'chabad_house' },
+    { icon: 'flower-outline' as const,color: theme.tzaddik,            label: 'קברי צדיקים', type: 'tzaddik_grave' },
+  ].map((s) => ({ ...s, bg: mix(theme.surface, s.color, 0.12) }));
+}
 
 const EAT_OPTIONS = [
   { emoji: '🍽️', label: 'מסעדות',     placeType: 'restaurant' as PlaceType, subType: null as PlaceSubType | null },
@@ -59,6 +62,8 @@ const EAT_OPTIONS = [
 const FAV_SYN_KEY = '@karov/favoriteSynagogue';
 
 export function HomeScreen() {
+  const theme = useTheme();
+  const styles = useStyles();
   const navigation = useNavigation<Nav>();
   const { t } = useLanguage();
   const { places, loading } = usePlaces();
@@ -100,13 +105,11 @@ export function HomeScreen() {
   );
 
   const nearby = useMemo(() => {
-    const list = [...places];
-    if (location) {
-      list.sort((a, b) => distanceKm(location, a.location) - distanceKm(location, b.location));
-    } else {
-      list.sort((a, b) => (b.rating ?? 0) - (a.rating ?? 0));
-    }
-    return list.slice(0, isDesktop ? 8 : 6);
+    const count = isDesktop ? 8 : 6;
+    // A top-k pass, not a full sort: one haversine per place instead of two per
+    // comparison. On the live dataset that is ~7.5k evaluations, not ~190k.
+    if (location) return nearestBy(location, places, count);
+    return [...places].sort((a, b) => (b.rating ?? 0) - (a.rating ?? 0)).slice(0, count);
   }, [places, location, isDesktop]);
 
   const openType = (placeType: PlaceType) => {
@@ -146,13 +149,13 @@ export function HomeScreen() {
     <View style={[styles.hero, isDesktop && styles.heroDesktop]}>
       <View style={styles.heroTopBar}>
         <View style={styles.heroLeft}>
-          <Ionicons name="notifications-outline" size={20} color={colors.textMuted} />
+          <Ionicons name="notifications-outline" size={20} color={theme.textMuted} />
           <Pressable onPress={() => setLangOpen(true)} hitSlop={12}>
-            <Ionicons name="globe-outline" size={19} color={colors.textMuted} />
+            <Ionicons name="globe-outline" size={19} color={theme.textMuted} />
           </Pressable>
         </View>
         <Pressable onPress={() => setMenuOpen(true)} hitSlop={12}>
-          <Ionicons name="menu-outline" size={22} color={colors.textMuted} />
+          <Ionicons name="menu-outline" size={22} color={theme.textMuted} />
         </Pressable>
       </View>
 
@@ -166,7 +169,7 @@ export function HomeScreen() {
         {locationDisplay && (
           <View style={styles.locationRow}>
             <Text style={styles.locationText}>{locationDisplay}</Text>
-            <Ionicons name="location-outline" size={12} color={colors.textMuted} />
+            <Ionicons name="location-outline" size={12} color={theme.textMuted} />
           </View>
         )}
       </View>
@@ -198,7 +201,7 @@ export function HomeScreen() {
       style={({ pressed }) => [styles.searchBar, pressed && styles.pressed]}
       onPress={() => navigation.navigate('List', undefined)}
     >
-      <Ionicons name="search-outline" size={18} color={colors.textMuted} />
+      <Ionicons name="search-outline" size={18} color={theme.textMuted} />
       <View style={styles.searchDivider} />
       <Text style={styles.searchPlaceholder}>מה אתה מחפש היום?</Text>
     </Pressable>
@@ -214,13 +217,13 @@ export function HomeScreen() {
           {/* לאכול shortcut — opens modal */}
           <ShortcutCompact
             icon="restaurant"
-            color={colors.categoryRestaurant}
-            bgColor="#FEF3E2"
+            color={theme.categoryRestaurant}
+            bgColor={mix(theme.surface, theme.categoryRestaurant, 0.12)}
             label="לאכול"
             onPress={() => setEatMenuOpen(true)}
             desktop
           />
-          {ALL_SHORTCUTS.map((s) => (
+          {shortcutsFor(theme).map((s) => (
             <ShortcutCompact
               key={s.type}
               icon={s.icon}
@@ -241,12 +244,12 @@ export function HomeScreen() {
           {/* לאכול shortcut — opens modal */}
           <ShortcutCompact
             icon="restaurant"
-            color={colors.categoryRestaurant}
-            bgColor="#FEF3E2"
+            color={theme.categoryRestaurant}
+            bgColor={mix(theme.surface, theme.categoryRestaurant, 0.12)}
             label="לאכול"
             onPress={() => setEatMenuOpen(true)}
           />
-          {ALL_SHORTCUTS.map((s) => (
+          {shortcutsFor(theme).map((s) => (
             <ShortcutCompact
               key={s.type}
               icon={s.icon}
@@ -315,8 +318,8 @@ export function HomeScreen() {
             <RefreshControl
               refreshing={refreshing}
               onRefresh={onRefresh}
-              tintColor={colors.primary}
-              colors={[colors.primary]}
+              tintColor={theme.primary}
+              colors={[theme.primary]}
             />
           }
         >
@@ -359,8 +362,8 @@ export function HomeScreen() {
           <RefreshControl
             refreshing={refreshing}
             onRefresh={onRefresh}
-            tintColor={colors.primary}
-            colors={[colors.primary]}
+            tintColor={theme.primary}
+            colors={[theme.primary]}
           />
         }
       >
@@ -394,6 +397,7 @@ function EatMenuModal({
   onClose: () => void;
   onSelect: (placeType: PlaceType, subType: PlaceSubType | null) => void;
 }) {
+  const eatStyles = useEatStyles();
   return (
     <Modal
       visible={visible}
@@ -425,10 +429,10 @@ function EatMenuModal({
   );
 }
 
-const eatStyles = StyleSheet.create({
+const useEatStyles = makeStyles((t) => ({
   container: {
     flex: 1,
-    backgroundColor: colors.background,
+    backgroundColor: t.background,
     paddingHorizontal: spacing.lg,
     paddingTop: spacing.lg,
   },
@@ -436,21 +440,21 @@ const eatStyles = StyleSheet.create({
     width: 40,
     height: 4,
     borderRadius: 2,
-    backgroundColor: colors.border,
+    backgroundColor: t.border,
     alignSelf: 'center',
     marginBottom: spacing.lg,
   },
   title: {
     fontSize: 28,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
     letterSpacing: -0.8,
     marginBottom: 4,
   },
   subtitle: {
     fontSize: 14,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
     marginBottom: spacing.xl,
   },
@@ -458,14 +462,14 @@ const eatStyles = StyleSheet.create({
     gap: 12,
   },
   optionCard: {
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderRadius: radius.xl,
     padding: spacing.lg,
     flexDirection: 'row',
     alignItems: 'center',
     gap: 14,
     borderWidth: 1,
-    borderColor: colors.border,
+    borderColor: t.border,
     ...shadow.card,
   },
   optionPressed: {
@@ -478,7 +482,7 @@ const eatStyles = StyleSheet.create({
   optionLabel: {
     fontSize: 18,
     fontWeight: '700',
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
     flex: 1,
   },
@@ -490,19 +494,22 @@ const eatStyles = StyleSheet.create({
   cancelText: {
     fontSize: 16,
     fontWeight: '600',
-    color: colors.textMuted,
+    color: t.textMuted,
   },
-});
+}));
 
 // ── Jerusalem Illustration ───────────────────────────────────────────────────
 
 function JerusalemIllustration({ isNight, isShabbat }: { isNight: boolean; isShabbat: boolean }) {
-  const skyColor = isShabbat ? '#F5F0E8' : isNight ? '#1a2744' : '#FFF0CC';
-  const buildingColor = isNight ? '#2a3a5c' : '#C9A96E';
-  const buildingDark = isNight ? '#1e2d4a' : '#B08040';
-  const domeColor = isNight ? '#3a4e70' : '#D4A843';
-  const starColor = isNight ? '#FFD700' : '#E8A317';
-  const groundColor = isNight ? '#0f1a30' : '#A67C52';
+  const theme = useTheme();
+  const illStyles = useIllStyles();
+  const ill = isNight ? theme.illustration.night : theme.illustration.day;
+  const skyColor = isShabbat ? theme.illustration.day.skyShabbat : ill.sky;
+  const buildingColor = ill.building;
+  const buildingDark = ill.buildingShade;
+  const domeColor = ill.dome;
+  const starColor = ill.star;
+  const groundColor = ill.ground;
 
   return (
     <View style={illStyles.container}>
@@ -532,8 +539,8 @@ function JerusalemIllustration({ isNight, isShabbat }: { isNight: boolean; isSha
         <View style={[
           illStyles.celestial,
           isNight
-            ? { backgroundColor: '#D4D0C0', borderRadius: 14, width: 28, height: 28, left: 24, top: 10 }
-            : { backgroundColor: '#FFB800', borderRadius: 20, width: 36, height: 36, left: 20, top: 8 },
+            ? { backgroundColor: theme.illustration.night.moon, borderRadius: 14, width: 28, height: 28, left: 24, top: 10 }
+            : { backgroundColor: theme.illustration.day.sun, borderRadius: 20, width: 36, height: 36, left: 20, top: 8 },
         ]} />
       )}
 
@@ -550,7 +557,7 @@ function JerusalemIllustration({ isNight, isShabbat }: { isNight: boolean; isSha
 
         {/* Left tree (stylized) */}
         <View style={[illStyles.tree, { left: '16%' }]}>
-          <View style={[illStyles.treeTop, { backgroundColor: isNight ? '#1a3a2a' : '#2d6a3f' }]} />
+          <View style={[illStyles.treeTop, { backgroundColor: ill.tree }]} />
           <View style={illStyles.treeTrunk} />
         </View>
 
@@ -575,7 +582,7 @@ function JerusalemIllustration({ isNight, isShabbat }: { isNight: boolean; isSha
 
         {/* Right tree */}
         <View style={[illStyles.tree, { right: '6%' }]}>
-          <View style={[illStyles.treeTop, { backgroundColor: isNight ? '#1a3a2a' : '#2d6a3f' }]} />
+          <View style={[illStyles.treeTop, { backgroundColor: ill.tree }]} />
           <View style={illStyles.treeTrunk} />
         </View>
 
@@ -586,7 +593,7 @@ function JerusalemIllustration({ isNight, isShabbat }: { isNight: boolean; isSha
   );
 }
 
-const illStyles = StyleSheet.create({
+const useIllStyles = makeStyles((t) => ({
   container: {
     height: 88,
     overflow: 'hidden',
@@ -600,7 +607,7 @@ const illStyles = StyleSheet.create({
     width: 4,
     height: 4,
     borderRadius: 2,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: t.textInverse,
     opacity: 0.9,
   },
   candleGroup: {
@@ -614,13 +621,13 @@ const illStyles = StyleSheet.create({
     width: 8,
     height: 12,
     borderRadius: 4,
-    backgroundColor: '#FFB800',
+    backgroundColor: t.illustration.day.sun,
     opacity: 0.9,
   },
   candleBody: {
     width: 8,
     height: 20,
-    backgroundColor: '#F5DEB3',
+    backgroundColor: t.illustration.day.sand,
     marginTop: -2,
   },
   celestial: {
@@ -650,7 +657,7 @@ const illStyles = StyleSheet.create({
     left: 4,
     width: 5,
     height: 5,
-    backgroundColor: 'rgba(255,220,100,0.6)',
+    backgroundColor: alpha(t.illustration.glow, 0.6),
     borderRadius: 1,
   },
   towerTop: {
@@ -681,7 +688,7 @@ const illStyles = StyleSheet.create({
     bottom: 6,
     width: 8,
     height: 10,
-    backgroundColor: 'rgba(255,220,100,0.5)',
+    backgroundColor: alpha(t.illustration.glow, 0.5),
     borderRadius: 4,
   },
   tree: {
@@ -698,7 +705,7 @@ const illStyles = StyleSheet.create({
   treeTrunk: {
     width: 5,
     height: 8,
-    backgroundColor: '#7A5C2E',
+    backgroundColor: t.tzaddik,
     marginTop: -2,
   },
   magen: {
@@ -707,7 +714,7 @@ const illStyles = StyleSheet.create({
     top: 2,
     fontSize: 14,
   },
-});
+}));
 
 // ── Shortcut component ───────────────────────────────────────────────────────
 
@@ -715,8 +722,8 @@ function ShortcutCompact({
   icon,
   label,
   onPress,
-  color = colors.primary,
-  bgColor = colors.primaryLight,
+  color,
+  bgColor,
   desktop = false,
 }: {
   icon: keyof typeof Ionicons.glyphMap;
@@ -726,14 +733,18 @@ function ShortcutCompact({
   bgColor?: string;
   desktop?: boolean;
 }) {
+  const theme = useTheme();
+  const styles = useStyles();
+  const resolvedColor = color ?? theme.primary;
+  const resolvedBg = bgColor ?? theme.primaryLight;
   if (desktop) {
     return (
       <Pressable
         onPress={onPress}
         style={({ pressed }) => [styles.shortcutDesktop, pressed && styles.pressed]}
       >
-        <View style={[styles.shortcutDesktopIcon, { backgroundColor: bgColor }]}>
-          <Ionicons name={icon} size={20} color={color} />
+        <View style={[styles.shortcutDesktopIcon, { backgroundColor: resolvedBg }]}>
+          <Ionicons name={icon} size={20} color={resolvedColor} />
         </View>
         <Text style={styles.shortcutDesktopLabel} numberOfLines={1}>{label}</Text>
       </Pressable>
@@ -745,8 +756,8 @@ function ShortcutCompact({
       onPress={onPress}
       style={({ pressed }) => [styles.shortcutH, pressed && styles.pressed]}
     >
-      <View style={[styles.shortcutHIconBox, { backgroundColor: bgColor }]}>
-        <Ionicons name={icon} size={22} color={color} />
+      <View style={[styles.shortcutHIconBox, { backgroundColor: resolvedBg }]}>
+        <Ionicons name={icon} size={22} color={resolvedColor} />
       </View>
       <Text style={styles.shortcutHLabel} numberOfLines={2}>{label}</Text>
     </Pressable>
@@ -755,7 +766,7 @@ function ShortcutCompact({
 
 // ── Styles ───────────────────────────────────────────────────────────────────
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   content: {
     paddingBottom: spacing.xxl + 8,
   },
@@ -808,13 +819,13 @@ const styles = StyleSheet.create({
   greetingName: {
     fontSize: 24,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
     letterSpacing: -0.5,
   },
   greetingDate: {
     fontSize: 13,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
     marginTop: 3,
     fontWeight: '500',
@@ -827,13 +838,13 @@ const styles = StyleSheet.create({
   },
   locationText: {
     fontSize: 12,
-    color: colors.textMuted,
+    color: t.textMuted,
   },
   // ── Section labels ────────────────────────────────────
   sectionLabelSm: {
     fontSize: 12,
     fontWeight: '700',
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
     paddingHorizontal: spacing.lg,
     marginBottom: spacing.sm,
@@ -847,7 +858,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: '800',
     letterSpacing: -0.4,
-    color: colors.text,
+    color: t.text,
   },
   sectionTitleDesktop: {
     fontSize: 16,
@@ -867,7 +878,7 @@ const styles = StyleSheet.create({
   seeAll: {
     fontSize: 13,
     fontWeight: '600',
-    color: colors.primary,
+    color: t.primary,
   },
 
   // ── Search ────────────────────────────────────────────
@@ -875,7 +886,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: spacing.sm,
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderRadius: radius.pill,
     paddingVertical: 15,
     paddingHorizontal: spacing.lg,
@@ -883,18 +894,18 @@ const styles = StyleSheet.create({
     marginTop: spacing.lg,
     marginBottom: spacing.sm,
     borderWidth: 0.5,
-    borderColor: colors.border,
+    borderColor: t.border,
     ...shadow.card,
   },
   searchDivider: {
     width: 1,
     height: 18,
-    backgroundColor: colors.border,
+    backgroundColor: t.border,
   },
   searchPlaceholder: {
     flex: 1,
     fontSize: 15,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
     opacity: 0.7,
   },
@@ -922,7 +933,7 @@ const styles = StyleSheet.create({
   shortcutHLabel: {
     fontSize: 10,
     fontWeight: '600',
-    color: colors.text,
+    color: t.text,
     textAlign: 'center',
     letterSpacing: -0.1,
   },
@@ -941,10 +952,10 @@ const styles = StyleSheet.create({
     gap: 8,
     paddingVertical: 8,
     paddingHorizontal: 10,
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderRadius: radius.md,
     borderWidth: 0.5,
-    borderColor: colors.border,
+    borderColor: t.border,
     minWidth: '30%',
     flex: 1,
   },
@@ -959,7 +970,7 @@ const styles = StyleSheet.create({
   shortcutDesktopLabel: {
     fontSize: 12,
     fontWeight: '600',
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
     flex: 1,
   },
@@ -971,11 +982,11 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   nearbyGridCard: {
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderRadius: radius.md,
     padding: 12,
     borderWidth: 0.5,
-    borderColor: colors.border,
+    borderColor: t.border,
     minWidth: '48%',
     flex: 1,
     ...shadow.card,
@@ -983,13 +994,13 @@ const styles = StyleSheet.create({
   nearbyCardName: {
     fontSize: 14,
     fontWeight: '700',
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
     marginBottom: 4,
   },
   nearbyCardSub: {
     fontSize: 11,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
   },
 
@@ -1002,4 +1013,4 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-});
+}));

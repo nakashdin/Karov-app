@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
+import { Pressable, Text, View } from 'react-native';
+import Ionicons from '@expo/vector-icons/Ionicons';
 import { RouteProp, useNavigation, useRoute } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { MapView } from '../components/map/MapView';
 import { PlaceBottomCard } from '../components/map/PlaceBottomCard';
-import { colors, radius, shadow, spacing } from '../theme';
+import { makeStyles, shadow, spacing, useTheme } from '../theme';
 import { usePlaces } from '../hooks/usePlaces';
 import { useSharedLocation } from '../context/LocationContext';
 import { usePlace } from '../hooks/usePlace';
@@ -17,6 +17,8 @@ type Nav = NativeStackNavigationProp<RootStackParamList>;
 type Route = RouteProp<RootStackParamList, 'MapDetail'>;
 
 export function MapDetailScreen() {
+  const theme = useTheme();
+  const styles = useStyles();
   const navigation = useNavigation<Nav>();
   const { params } = useRoute<Route>();
   const { place: focusPlace } = usePlace(params.placeId);
@@ -47,7 +49,7 @@ export function MapDetailScreen() {
 
         {/* Back button */}
         <Pressable style={styles.backBtn} onPress={() => navigation.goBack()}>
-          <Ionicons name="chevron-forward" size={22} color={colors.text} />
+          <Ionicons name="chevron-forward" size={22} color={theme.text} />
         </Pressable>
 
         {selected && (
@@ -66,8 +68,8 @@ export function MapDetailScreen() {
   );
 }
 
-const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: colors.background },
+const useStyles = makeStyles((t) => ({
+  container: { flex: 1, backgroundColor: t.background },
   mapWrap: { flex: 1, overflow: 'hidden' },
   backBtn: {
     position: 'absolute',
@@ -76,10 +78,10 @@ const styles = StyleSheet.create({
     width: 44,
     height: 44,
     borderRadius: 22,
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     alignItems: 'center',
     justifyContent: 'center',
     zIndex: 10,
     ...shadow.raised,
   },
-});
+}));

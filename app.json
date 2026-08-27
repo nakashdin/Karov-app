@@ -5,7 +5,7 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
     "scheme": "kosherapp",
     "ios": {
       "supportsTablet": true,
@@ -46,6 +46,20 @@
         }
       ],
       "expo-font"
-    ]
+    ],
+    "extra": {
+      "variant": "production",
+      "eas": {
+        "projectId": "b9014104-7522-4f9a-8a18-a3bda56e1e17"
+      }
+    },
+    "owner": "dindavid",
+    "runtimeVersion": {
+      "policy": "fingerprint"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/b9014104-7522-4f9a-8a18-a3bda56e1e17"
+    }
   }
 }

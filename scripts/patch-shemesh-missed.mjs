@@ -1,6 +1,10 @@
 import { readFileSync, writeFileSync } from 'fs';
+import { fileURLToPath } from 'url';
+import path from 'path';
 
-const DATA_PATH = 'C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\places.osm.json';
+const __dir = path.dirname(fileURLToPath(import.meta.url));
+const ROOT = path.join(__dir, '..');
+const DATA_PATH = path.join(ROOT, 'src/data/generated/places.osm.json');
 
 const raw = readFileSync(DATA_PATH, 'utf-8').replace(/^\uFEFF/, '');
 let places = JSON.parse(raw);
@@ -28,7 +32,7 @@ const raanana = {
   category: 'dairy',
   cityId: 'רעננה',
   address: 'רחוב אחוזה 100, רעננה',
-  location: { lat: 32.1838, lng: 34.8709 },
+  location: { latitude: 32.1838, longitude: 34.8709 },
   phone: '',
   kosherType: 'rabanut_mehadrin',
   certifiedBy: 'הרב רובין',

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Pressable, StyleSheet, Text } from 'react-native';
-import { colors, radius, spacing } from '../theme';
+import { Pressable, Text } from 'react-native';
+import { makeStyles, radius, spacing } from '../theme';
 
 interface ChipProps {
   label: string;
@@ -10,6 +10,7 @@ interface ChipProps {
 
 /** Selectable pill used in filter rows. */
 export function Chip({ label, selected = false, onPress }: ChipProps) {
+  const styles = useStyles();
   return (
     <Pressable
       onPress={onPress}
@@ -26,20 +27,20 @@ export function Chip({ label, selected = false, onPress }: ChipProps) {
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   chip: {
     minHeight: 36,
     justifyContent: 'center',
     paddingHorizontal: spacing.md,
     paddingVertical: spacing.sm,
     borderRadius: radius.pill,
-    backgroundColor: colors.surfaceMuted,
+    backgroundColor: t.surfaceMuted,
     borderWidth: 0,
   },
   chipSelected: {
-    backgroundColor: colors.primaryLight,
+    backgroundColor: t.primaryLight,
     borderWidth: 1.5,
-    borderColor: colors.primary,
+    borderColor: t.primary,
   },
   pressed: {
     opacity: 0.7,
@@ -47,9 +48,9 @@ const styles = StyleSheet.create({
   label: {
     fontSize: 14,
     fontWeight: '600',
-    color: colors.textMuted,
+    color: t.textMuted,
   },
   labelSelected: {
-    color: colors.primary,
+    color: t.primary,
   },
-});
+}));

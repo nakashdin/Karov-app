@@ -1,47 +1,51 @@
 import { useEffect, useState } from 'react';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import { GeoPoint } from '../types';
+import { geocode } from '../shared/api';
+import { getString, setString, StorageKeyFor } from '../shared/storage';
 
-function coordKey(loc: GeoPoint): string {
-  return `@karov/cityName_${Math.round(loc.latitude * 100)}_${Math.round(loc.longitude * 100)}`;
-}
-
+/**
+ * Human-readable name of the city the user is standing in.
+ *
+ * Reverse geocoding is rate-limited by Nominatim's usage policy, so the result
+ * is cached per ~1 km grid cell: moving around a city never issues a second
+ * request.
+ */
 export function useCityName(location: GeoPoint | null): string | null {
   const [cityName, setCityName] = useState<string | null>(null);
 
-  useEffect(() => {
-    if (!location) return;
+  const lat = location?.latitude;
+  const lng = location?.longitude;
 
+  useEffect(() => {
+    if (lat === undefined || lng === undefined) return;
+
+    const controller = new AbortController();
+    const key = StorageKeyFor.cityName(lat, lng);
     let mounted = true;
-    const key = coordKey(location);
 
     (async () => {
-      try {
-        const cached = await AsyncStorage.getItem(key);
-        if (cached && mounted) { setCityName(cached); return; }
-      } catch {}
+      const cached = await getString(key);
+      if (cached) {
+        if (mounted) setCityName(cached);
+        return;
+      }
 
       try {
-        const url =
-          `https://nominatim.openstreetmap.org/reverse` +
-          `?lat=${location.latitude}&lon=${location.longitude}&format=json&accept-language=he`;
-        const resp = await fetch(url, {
-          headers: { 'User-Agent': 'Karov/1.0 (kosher-app)', 'Referer': 'https://karov-eta.vercel.app' },
-        });
-        const json = await resp.json();
-        const addr = json.address ?? {};
-        const city =
-          addr.city || addr.town || addr.village || addr.suburb || addr.county || null;
-        if (city && mounted) {
-          setCityName(city);
-          await AsyncStorage.setItem(key, city).catch(() => {});
-        }
-      } catch {}
+        const result = await geocode.fetchReverse(lat, lng, { signal: controller.signal });
+        const name = geocode.cityNameOf(result);
+        if (!name) return;
+        await setString(key, name);
+        if (mounted) setCityName(name);
+      } catch {
+        // No city label is a fine outcome — the UI simply omits it.
+      }
     })();
 
-    return () => { mounted = false; };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [location?.latitude, location?.longitude]);
+    return () => {
+      mounted = false;
+      controller.abort();
+    };
+  }, [lat, lng]);
 
   return cityName;
 }

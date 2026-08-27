@@ -34,8 +34,16 @@ Node 23+ runs the TypeScript directly — no build step.
 npm run import:synagogues     # OSM synagogues → app dataset
 npm run import:restaurants    # OSM kosher restaurants → app dataset
 npm run import:mikvahs        # data.gov.il mikvahs (not merged yet — see its README)
-npm run import:all            # synagogues + restaurants, then rebuild app dataset
 ```
+
+There is no `import:all`. It used to chain synagogues + restaurants and then
+call the legacy `rebuildAppDataset()`, which reconstructed `places.osm.json`
+from six per-type category files and silently deleted every record written by
+any other importer — measured at 60.8% of the dataset (`docs/DATA_ARCHITECTURE.md`
+B2). The command was removed rather than fixed in place, per that document's
+Phase 0 recommendation. `rebuildAppDataset()` still exists (`importers/shared/database.ts`)
+but now refuses to write by default; `npm run data:rebuild-plan` gives a
+read-only report of what it would do.
 
 Outputs land in `src/data/generated/`. The OSM importers each rebuild the
 combined `places.osm.json` + `cities.osm.json` that the app's repository reads.

@@ -1,16 +1,10 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
-import {
-  Pressable,
-  ScrollView,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
+import { Pressable, ScrollView, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { Ionicons } from '@expo/vector-icons';
+import Ionicons from '@expo/vector-icons/Ionicons';
 import { useNavigation, useFocusEffect } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
-import { colors, radius, spacing } from '../theme';
+import { alpha, makeStyles, radius, spacing, useTheme } from '../theme';
 import { RootStackParamList } from '../navigation/types';
 import { PLACEHOLDER_CONTENT } from '../data/jewish-content/placeholder';
 import { JewishContentItem } from '../data/jewish-content/types';
@@ -43,6 +37,8 @@ function getSortedCards(cards: JewishContentItem[]): JewishContentItem[] {
 }
 
 export function KarovLevScreen() {
+  const theme = useTheme();
+  const styles = useStyles();
   const navigation = useNavigation<Nav>();
   const insets = useSafeAreaInsets();
   const { selected, hasDecided, isLoading, setSelected, markDecided } =
@@ -117,7 +113,7 @@ export function KarovLevScreen() {
           hitSlop={8}
           accessibilityLabel="חזור"
         >
-          <Ionicons name="chevron-forward" size={22} color={colors.text} />
+          <Ionicons name="chevron-forward" size={22} color={theme.text} />
         </Pressable>
       </View>
 
@@ -171,7 +167,7 @@ export function KarovLevScreen() {
                 <View style={styles.sectionReadBadge}>
                   {readCount > 0 ? (
                     <>
-                      <Ionicons name="checkmark-circle" size={14} color="#4caf50" />
+                      <Ionicons name="checkmark-circle" size={14} color={theme.success} />
                       <Text style={styles.sectionReadText}>{readCount} היום</Text>
                     </>
                   ) : (
@@ -179,7 +175,7 @@ export function KarovLevScreen() {
                   )}
                 </View>
                 <View style={styles.sectionTitleRow}>
-                  <Text style={[styles.sectionTitle, { color: group.color }]}>
+                  <Text style={[styles.sectionTitle, { color: theme.accent[group.accent].fg }]}>
                     {group.label}
                   </Text>
                   <Text style={styles.sectionEmoji}>{group.emoji}</Text>
@@ -201,7 +197,7 @@ export function KarovLevScreen() {
                         <Text style={styles.middahChipText}>
                           {MIDDAH_LABELS[topic] ?? topic}
                         </Text>
-                        <Ionicons name="close" size={11} color="#5D8A6F" />
+                        <Ionicons name="close" size={11} color={theme.middot} />
                       </Pressable>
                     ))}
 
@@ -210,7 +206,7 @@ export function KarovLevScreen() {
                       style={styles.addMiddahBtn}
                       onPress={() => setMiddahPickerVisible(true)}
                     >
-                      <Ionicons name="add" size={14} color={colors.textMuted} />
+                      <Ionicons name="add" size={14} color={theme.textMuted} />
                       <Text style={styles.addMiddahText}>הוסף מידה</Text>
                     </Pressable>
                   </View>
@@ -282,10 +278,10 @@ export function KarovLevScreen() {
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   root: {
     flex: 1,
-    backgroundColor: colors.background,
+    backgroundColor: t.background,
   },
   header: {
     flexDirection: 'row',
@@ -293,14 +289,14 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingHorizontal: spacing.lg,
     paddingVertical: spacing.md,
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderBottomWidth: 0.5,
-    borderBottomColor: colors.border,
+    borderBottomColor: t.border,
   },
   headerTitle: {
     fontSize: 17,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
   },
   backBtn: {
     width: 36,
@@ -325,12 +321,12 @@ const styles = StyleSheet.create({
     paddingVertical: 8,
     borderRadius: radius.pill,
     borderWidth: 1,
-    borderColor: colors.border,
+    borderColor: t.border,
     borderStyle: 'dashed',
   },
   noPrefsText: {
     fontSize: 13,
-    color: colors.textMuted,
+    color: t.textMuted,
     fontWeight: '600',
   },
 
@@ -363,12 +359,12 @@ const styles = StyleSheet.create({
   },
   sectionReadText: {
     fontSize: 11,
-    color: '#4caf50',
+    color: t.success,
     fontWeight: '600',
   },
   sectionReadTextZero: {
     fontSize: 11,
-    color: colors.textFaint,
+    color: t.textFaint,
     fontWeight: '500',
   },
 
@@ -390,14 +386,14 @@ const styles = StyleSheet.create({
     paddingHorizontal: 11,
     paddingVertical: 6,
     borderRadius: radius.pill,
-    backgroundColor: '#5D8A6F18',
+    backgroundColor: alpha(t.middot, 0.09),
     borderWidth: 1,
-    borderColor: '#5D8A6F40',
+    borderColor: alpha(t.middot, 0.25),
   },
   middahChipText: {
     fontSize: 13,
     fontWeight: '700',
-    color: '#5D8A6F',
+    color: t.middot,
   },
   addMiddahBtn: {
     flexDirection: 'row',
@@ -407,13 +403,13 @@ const styles = StyleSheet.create({
     paddingVertical: 6,
     borderRadius: radius.pill,
     borderWidth: 1,
-    borderColor: colors.border,
+    borderColor: t.border,
     borderStyle: 'dashed',
   },
   addMiddahText: {
     fontSize: 12,
     fontWeight: '600',
-    color: colors.textMuted,
+    color: t.textMuted,
   },
   middahEmptyHint: {
     alignItems: 'center',
@@ -422,9 +418,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: spacing.xl,
     borderRadius: radius.xl,
     borderWidth: 1,
-    borderColor: '#5D8A6F30',
+    borderColor: alpha(t.middot, 0.19),
     borderStyle: 'dashed',
-    backgroundColor: '#5D8A6F08',
+    backgroundColor: alpha(t.middot, 0.03),
   },
   middahEmptyEmoji: {
     fontSize: 28,
@@ -432,12 +428,12 @@ const styles = StyleSheet.create({
   middahEmptyTitle: {
     fontSize: 15,
     fontWeight: '700',
-    color: '#5D8A6F',
+    color: t.middot,
     textAlign: 'center',
   },
   middahEmptyDesc: {
     fontSize: 12,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'center',
     lineHeight: 18,
   },
@@ -448,6 +444,6 @@ const styles = StyleSheet.create({
   },
   emptySectionText: {
     fontSize: 13,
-    color: colors.textFaint,
+    color: t.textFaint,
   },
-});
+}));

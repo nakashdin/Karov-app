@@ -1,13 +1,7 @@
 import React from 'react';
-import {
-  Modal,
-  Pressable,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
-import { colors, radius, shadow, spacing } from '../theme';
+import { Modal, Pressable, Text, View } from 'react-native';
+import Ionicons from '@expo/vector-icons/Ionicons';
+import { makeStyles, radius, shadow, spacing, useTheme } from '../theme';
 import { useLanguage } from '../context/LanguageContext';
 import type { Locale } from '../i18n';
 
@@ -32,6 +26,8 @@ interface Props {
 }
 
 export function LanguagePicker({ visible, onClose }: Props) {
+  const theme = useTheme();
+  const styles = useStyles();
   const { locale, setLocale } = useLanguage();
 
   const pick = async (l: Locale) => {
@@ -54,7 +50,7 @@ export function LanguagePicker({ visible, onClose }: Props) {
         <View style={styles.header}>
           <Text style={styles.title}>🌐 Language / שפה</Text>
           <Pressable onPress={onClose} hitSlop={10}>
-            <Ionicons name="close" size={22} color={colors.text} />
+            <Ionicons name="close" size={22} color={theme.text} />
           </Pressable>
         </View>
 
@@ -78,7 +74,7 @@ export function LanguagePicker({ visible, onClose }: Props) {
                 <Text style={styles.label}>{opt.label}</Text>
               </View>
               {active && (
-                <Ionicons name="checkmark-circle" size={20} color={colors.primary} />
+                <Ionicons name="checkmark-circle" size={20} color={theme.primary} />
               )}
             </Pressable>
           );
@@ -88,13 +84,13 @@ export function LanguagePicker({ visible, onClose }: Props) {
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   backdrop: {
     flex: 1,
-    backgroundColor: colors.overlay,
+    backgroundColor: t.overlay,
   },
   sheet: {
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderTopLeftRadius: radius.xl,
     borderTopRightRadius: radius.xl,
     paddingHorizontal: spacing.lg,
@@ -106,7 +102,7 @@ const styles = StyleSheet.create({
     width: 48,
     height: 4,
     borderRadius: 2,
-    backgroundColor: colors.surfaceMuted,
+    backgroundColor: t.surfaceMuted,
     marginTop: spacing.md,
     marginBottom: spacing.lg,
   },
@@ -117,12 +113,12 @@ const styles = StyleSheet.create({
     paddingBottom: spacing.md,
     marginBottom: spacing.sm,
     borderBottomWidth: 0.5,
-    borderBottomColor: colors.border,
+    borderBottomColor: t.border,
   },
   title: {
     fontSize: 17,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
   },
   row: {
     flexDirection: 'row',
@@ -134,7 +130,7 @@ const styles = StyleSheet.create({
     marginVertical: 2,
   },
   rowActive: {
-    backgroundColor: colors.primaryLight,
+    backgroundColor: t.primaryLight,
   },
   pressed: {
     opacity: 0.75,
@@ -148,14 +144,14 @@ const styles = StyleSheet.create({
   native: {
     fontSize: 16,
     fontWeight: '700',
-    color: colors.text,
+    color: t.text,
   },
   nativeActive: {
-    color: colors.primary,
+    color: t.primary,
   },
   label: {
     fontSize: 12,
-    color: colors.textMuted,
+    color: t.textMuted,
     marginTop: 1,
   },
-});
+}));

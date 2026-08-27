@@ -1,0 +1,111 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+
+# A newer push supersedes an in-flight run on the same ref.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  NODE_VERSION: '22'
+
+jobs:
+  verify:
+    name: Typecheck · Lint · Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Test
+        run: npm run test:ci
+
+      - name: Test (scripts/ guards — not covered by jest's roots)
+        run: npm run test:scripts
+
+      - name: Validate dataset
+        run: npm run data:validate
+
+      - name: Upload coverage
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: coverage
+          path: coverage/
+          retention-days: 7
+
+  doctor:
+    name: Expo health
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+      - run: npm ci
+      # Advisory: dependency drift and SDK regressions should be visible on
+      # every PR, but they must not block an otherwise-good change.
+      - name: expo-doctor
+        run: npx expo-doctor
+        continue-on-error: true
+
+  web-build:
+    name: Web build · bundle budget
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+
+      - run: npm ci
+
+      # A build that does not complete must never reach master.
+      - name: Export web bundle
+        run: npx expo export --platform web
+
+      # The bundle is 5 MB of place data plus the app. This ceiling only ever
+      # moves DOWN — see docs/ARCHITECTURE_REVIEW.md §6.1 (data out of bundle).
+      - name: Enforce bundle budget
+        env:
+          BUDGET_BYTES: 1300000
+        run: |
+          set -euo pipefail
+          total=0
+          for f in dist/_expo/static/js/web/*.js; do
+            size=$(gzip -c "$f" | wc -c)
+            printf '  %-60s %6s KB gzip\n' "$(basename "$f")" "$((size / 1024))"
+            total=$((total + size))
+          done
+          echo "total: $((total / 1024)) KB gzip (budget $((BUDGET_BYTES / 1024)) KB)"
+          if [ "$total" -gt "$BUDGET_BYTES" ]; then
+            echo "::error::Web bundle is $((total / 1024)) KB gzip, over the $((BUDGET_BYTES / 1024)) KB budget."
+            exit 1
+          fi
+
+      - name: Upload web build
+        uses: actions/upload-artifact@v7
+        with:
+          name: web-dist
+          path: dist/
+          retention-days: 7

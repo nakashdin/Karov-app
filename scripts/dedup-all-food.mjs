@@ -1,4 +1,9 @@
 import { readFileSync, writeFileSync } from 'fs';
+import { fileURLToPath } from 'url';
+import path from 'path';
+
+const __dir = path.dirname(fileURLToPath(import.meta.url));
+const ROOT = path.join(__dir, '..');
 
 const BOM = Buffer.from([0xEF, 0xBB, 0xBF]);
 function readJson(p) {
@@ -26,8 +31,8 @@ const FOOD_TYPES = ['restaurant', 'fast_food', 'cafe', 'coffee_cart', 'juice_bar
 const THRESHOLD_M = 100; // מרחק בין שתי רשומות לאותו מקום
 
 const FILES = [
-  'C:/Users/User/Desktop/claude plane/kosher-app/src/data/generated/restaurants.osm.json',
-  'C:/Users/User/Desktop/claude plane/kosher-app/src/data/generated/places.osm.json',
+  path.join(ROOT, 'src/data/generated/restaurants.osm.json'),
+  path.join(ROOT, 'src/data/generated/places.osm.json'),
 ];
 
 // חשב את סט ה-IDs למחיקה פעם אחת לפי places (המלא)

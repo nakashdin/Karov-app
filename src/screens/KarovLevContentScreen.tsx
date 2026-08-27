@@ -1,15 +1,9 @@
 import React, { useMemo, useEffect } from 'react';
-import {
-  Pressable,
-  ScrollView,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
+import { Pressable, ScrollView, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { Ionicons } from '@expo/vector-icons';
+import Ionicons from '@expo/vector-icons/Ionicons';
 import { useNavigation, useRoute, RouteProp } from '@react-navigation/native';
-import { colors, radius, shadow, spacing } from '../theme';
+import { alpha, makeStyles, radius, shadow, spacing, useTheme } from '../theme';
 import { RootStackParamList } from '../navigation/types';
 import { PLACEHOLDER_CONTENT } from '../data/jewish-content/placeholder';
 import { JewishContentItem, TOPIC_LABELS } from '../data/jewish-content/types';
@@ -27,6 +21,8 @@ function resolveItem(id: string): JewishContentItem | undefined {
 }
 
 export function KarovLevContentScreen() {
+  const theme = useTheme();
+  const styles = useStyles();
   const navigation = useNavigation();
   const route = useRoute<Route>();
   const insets = useSafeAreaInsets();
@@ -50,11 +46,10 @@ export function KarovLevContentScreen() {
     );
   }
 
-  const { color, bg } = getTopicStyle(item.topics);
+  const { fg: color, tint: bg } = getTopicStyle(item.topics, theme);
   const topicLabel = getTopicLabel(item.topics);
   const isMiddahCard = Boolean(item.middahTopic);
   const middahLabel = item.middahTopic ? (MIDDAH_LABELS[item.middahTopic] ?? item.middahTopic) : null;
-  const MIDDAH_COLOR = '#5D8A6F';
 
   return (
     <View style={[styles.root, { paddingTop: insets.top }]}>
@@ -68,7 +63,7 @@ export function KarovLevContentScreen() {
           hitSlop={8}
           accessibilityLabel="חזור"
         >
-          <Ionicons name="chevron-forward" size={22} color={colors.text} />
+          <Ionicons name="chevron-forward" size={22} color={theme.text} />
         </Pressable>
       </View>
 
@@ -78,16 +73,16 @@ export function KarovLevContentScreen() {
         showsVerticalScrollIndicator={false}
       >
         {/* Hero section */}
-        <View style={[styles.hero, { backgroundColor: isMiddahCard ? `${MIDDAH_COLOR}10` : bg }]}>
+        <View style={[styles.hero, { backgroundColor: isMiddahCard ? alpha(theme.middot, 0.06) : bg }]}>
           {/* Topic / middah chip */}
           {isMiddahCard ? (
-            <View style={[styles.topicChip, { backgroundColor: `${MIDDAH_COLOR}20` }]}>
-              <Text style={[styles.topicChipText, { color: MIDDAH_COLOR }]}>
+            <View style={[styles.topicChip, { backgroundColor: alpha(theme.middot, 0.13) }]}>
+              <Text style={[styles.topicChipText, { color: theme.middot }]}>
                 מידה שבועית · {middahLabel}
               </Text>
             </View>
           ) : (
-            <View style={[styles.topicChip, { backgroundColor: `${color}1A` }]}>
+            <View style={[styles.topicChip, { backgroundColor: alpha(color, 0.10) }]}>
               <Text style={[styles.topicChipText, { color }]}>{topicLabel}</Text>
             </View>
           )}
@@ -97,9 +92,9 @@ export function KarovLevContentScreen() {
 
           {/* Middah: show originalText as source quote */}
           {isMiddahCard && item.originalText ? (
-            <View style={[styles.quoteBlock, { borderRightColor: MIDDAH_COLOR }]}>
+            <View style={[styles.quoteBlock, { borderRightColor: theme.middot }]}>
               <Text style={styles.quoteText}>״{item.originalText}״</Text>
-              <Text style={[styles.quoteRef, { color: MIDDAH_COLOR }]}>
+              <Text style={[styles.quoteRef, { color: theme.middot }]}>
                 — {item.source.reference}
               </Text>
             </View>
@@ -151,7 +146,7 @@ export function KarovLevContentScreen() {
         {/* Topic tags */}
         <View style={styles.tagsRow}>
           {item.topics.map(t => (
-            <View key={t} style={[styles.tag, { backgroundColor: `${color}18` }]}>
+            <View key={t} style={[styles.tag, { backgroundColor: alpha(color, 0.09) }]}>
               <Text style={[styles.tagText, { color }]}>#{TOPIC_LABELS[t]}</Text>
             </View>
           ))}
@@ -160,7 +155,7 @@ export function KarovLevContentScreen() {
         {/* Actions */}
         <View style={styles.actionsRow}>
           <Pressable style={styles.actionBtn}>
-            <Ionicons name="bookmark-outline" size={20} color={colors.textMuted} />
+            <Ionicons name="bookmark-outline" size={20} color={theme.textMuted} />
             <Text style={styles.actionLabel}>שמור</Text>
           </Pressable>
           <Pressable
@@ -172,14 +167,14 @@ export function KarovLevContentScreen() {
             <Ionicons
               name={isRead(item.id) ? 'checkmark-circle' : 'checkmark-circle-outline'}
               size={20}
-              color={isRead(item.id) ? '#4caf50' : colors.textMuted}
+              color={isRead(item.id) ? theme.success : theme.textMuted}
             />
             <Text style={[styles.actionLabel, isRead(item.id) && styles.actionLabelRead]}>
               {isRead(item.id) ? 'קראת ✓' : 'קראתי'}
             </Text>
           </Pressable>
           <Pressable style={styles.actionBtn}>
-            <Ionicons name="share-outline" size={20} color={colors.textMuted} />
+            <Ionicons name="share-outline" size={20} color={theme.textMuted} />
             <Text style={styles.actionLabel}>שתף</Text>
           </Pressable>
         </View>
@@ -205,10 +200,10 @@ export function KarovLevContentScreen() {
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   root: {
     flex: 1,
-    backgroundColor: colors.background,
+    backgroundColor: t.background,
   },
   header: {
     flexDirection: 'row',
@@ -216,14 +211,14 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingHorizontal: spacing.lg,
     paddingVertical: spacing.md,
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderBottomWidth: 0.5,
-    borderBottomColor: colors.border,
+    borderBottomColor: t.border,
   },
   headerTitle: {
     fontSize: 17,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
   },
   backBtn: {
     width: 36,
@@ -244,7 +239,7 @@ const styles = StyleSheet.create({
 
   errorText: {
     textAlign: 'center',
-    color: colors.textMuted,
+    color: t.textMuted,
     marginTop: 60,
   },
 
@@ -269,7 +264,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 26,
     fontWeight: '900',
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
     letterSpacing: -0.5,
     lineHeight: 36,
@@ -282,12 +277,12 @@ const styles = StyleSheet.create({
     paddingVertical: 8,
     gap: 4,
     borderRadius: 4,
-    backgroundColor: 'rgba(93,138,111,0.06)',
+    backgroundColor: alpha(t.middot, 0.06),
   },
   quoteText: {
     fontSize: 15,
     fontWeight: '600',
-    color: '#1a1a1a',
+    color: t.text,
     textAlign: 'right',
     lineHeight: 24,
     fontStyle: 'italic',
@@ -305,7 +300,7 @@ const styles = StyleSheet.create({
   sectionHeading: {
     fontSize: 12,
     fontWeight: '800',
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
     letterSpacing: 0.5,
     textTransform: 'uppercase',
@@ -313,25 +308,25 @@ const styles = StyleSheet.create({
   summaryText: {
     fontSize: 17,
     lineHeight: 28,
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
     fontWeight: '600',
   },
   bodyText: {
     fontSize: 16,
     lineHeight: 27,
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
   },
   reflectionText: {
     fontStyle: 'italic',
     fontSize: 15,
-    color: colors.textMuted,
+    color: t.textMuted,
   },
 
   divider: {
     height: 1,
-    backgroundColor: colors.border,
+    backgroundColor: t.border,
     marginVertical: -spacing.sm,
   },
 
@@ -360,7 +355,7 @@ const styles = StyleSheet.create({
     paddingVertical: spacing.sm,
     borderTopWidth: 0.5,
     borderBottomWidth: 0.5,
-    borderColor: colors.border,
+    borderColor: t.border,
   },
   actionBtn: {
     alignItems: 'center',
@@ -370,11 +365,11 @@ const styles = StyleSheet.create({
   },
   actionLabel: {
     fontSize: 11,
-    color: colors.textMuted,
+    color: t.textMuted,
     fontWeight: '500',
   },
   actionLabelRead: {
-    color: '#4caf50',
+    color: t.success,
     fontWeight: '700',
   },
 
@@ -385,8 +380,8 @@ const styles = StyleSheet.create({
   relatedTitle: {
     fontSize: 16,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
     letterSpacing: -0.2,
   },
-});
+}));

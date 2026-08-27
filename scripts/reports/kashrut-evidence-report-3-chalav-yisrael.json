@@ -1,0 +1,124 @@
+{
+  "label": "every occurrence of \"חלב ישראל\"",
+  "needle": "חלב ישראל",
+  "datasetHitCount": 1,
+  "datasetHits": [
+    {
+      "id": "golda-ff986d68",
+      "name": "גלידה גולדה",
+      "address": "מנחם בגין 2, מזכרת בתיה",
+      "cityId": "מזכרת-בתיה",
+      "field": "certifiedBy",
+      "rawTextInField": "חלב ישראל",
+      "kosherLevel": "regular",
+      "kosherAuthority": null,
+      "certifiedBy": "חלב ישראל",
+      "sourceFields": {
+        "website": "https://www.goldaglida.co.il",
+        "sourceUrl": null,
+        "provenance": null,
+        "kosherCertUrl": null,
+        "certificateValidUntil": null
+      },
+      "isGolda": true
+    }
+  ],
+  "registryHitCount": 1,
+  "registryHits": [
+    {
+      "section": "reviewQueue",
+      "entry": {
+        "raw": "חלב ישראל",
+        "suggestedAuthorityId": null,
+        "suggestedLevel": null,
+        "why": "Proposer uncertain; challenger found no defect. חלב ישראל is a kashrut attribute, not an authority and not a level; the actual certifier is unrecorded in this field. It probably belongs in a separate attribute column rather than certifiedBy."
+      }
+    }
+  ],
+  "codeHitCount": 5,
+  "codeHits": [
+    {
+      "file": "scripts/import-golda.mjs",
+      "line": 41,
+      "code": "{ id: 912,  nameHe: 'גולדה מזכרת בתיה',        city: 'מזכרת בתיה',       address: 'מנחם בגין 2, מזכרת בתיה',               phone: '077-7242038', kosher: 'חלב ישראל', hours: 'א-ה 8:00-22:00 | ו 8:00-שעה לפני שבת | ש שעה אחרי צאת שבת-22:00' },",
+      "setsAuthorityOrLevel_regexHeuristic": false
+    },
+    {
+      "file": "scripts/import-golda.mjs",
+      "line": 121,
+      "code": "if (s === 'חלב ישראל') return 'rabanut';",
+      "setsAuthorityOrLevel_regexHeuristic": false
+    },
+    {
+      "file": "scripts/import-golda.mjs",
+      "line": 189,
+      "code": "if (b.kosher && b.kosher.trim() === 'חלב ישראל') {",
+      "setsAuthorityOrLevel_regexHeuristic": false
+    },
+    {
+      "file": "scripts/import-golda.mjs",
+      "line": 190,
+      "code": "place.certifiedBy = 'חלב ישראל';",
+      "setsAuthorityOrLevel_regexHeuristic": false
+    },
+    {
+      "file": "importers/tzohar/extract-cert-expiry.mjs",
+      "line": 156,
+      "code": "chalavYisrael:  has(/חלב ישראל/) && !has(/חלב ישראל \\/ חו/),",
+      "setsAuthorityOrLevel_regexHeuristic": false
+    }
+  ],
+  "verifiedInferenceChain": {
+    "claim": "YES — חלב ישראל (a dairy-sourcing kashrut STANDARD, not a certifying body) is used to infer kosherAuthorityGroup=\"rabbinate\" (a certifying-BODY claim the source text never actually made), via a two-script chain.",
+    "steps": [
+      {
+        "file": "scripts/import-golda.mjs",
+        "lines": "114-123",
+        "code": "function mapKosherType(kosherStr) {\n  if (!kosherStr) return 'kosher';\n  const s = kosherStr.trim();\n  if (s.includes('בד\"צ בית יוסף') || s.includes('בד\"ץ בית יוסף') || s.includes(\"כשר בד\\\"צ בית יוסף\")) return 'badatz_beit_yosef';\n  if (s === 'מהדרין') return 'mehadrin';\n  if (s.startsWith('רבנות') && s.length < 10) return 'rabanut';\n  if (s.includes(\"רבנות כפ\\\"ס\") || s.includes(\"רבנות כפ'ס\")) return 'rabanut_mekomi';\n  if (s === 'חלב ישראל') return 'rabanut';\n  return 'kosher';\n}",
+        "effect": "Golda's raw kosher_type string 'חלב ישראל' → kosherType = 'rabanut'. Line 121 is the exact match; note it sits in the same function as the legitimate authority-string matches (lines 117-120), so the same function conflates 'this text names a certifying body' with 'this text names a dairy standard'."
+      },
+      {
+        "file": "scripts/import-golda.mjs",
+        "lines": "162-183",
+        "code": "const kosherType = mapKosherType(b.kosher);\nconst place = {\n  ...\n  kosherType,\n  ...\n};",
+        "effect": "kosherType: 'rabanut' is stored on the place object. Separately (lines 189-191), certifiedBy is also set to the literal raw string 'חלב ישראל' — that part is honest and unchanged by this pass."
+      },
+      {
+        "file": "scripts/migrate-kosher-fields.mjs",
+        "lines": "17",
+        "code": "rabanut: { kosherLevel: 'regular', kosherAuthorityGroup: 'rabbinate', kosherAuthority: null },",
+        "effect": "A later, separate migration reads kosherType='rabanut' off the record and writes kosherAuthorityGroup='rabbinate' (applied at lines 48-52 via `...place, kosherAuthorityGroup: meta.kosherAuthorityGroup`). This is the field the app's kashrut filter actually reads (src/data/repository/filterPlaces.ts)."
+      }
+    ],
+    "liveRecordConfirmation": {
+      "id": "golda-ff986d68",
+      "note": "Confirmed against src/data/generated/places.osm.json as of this report — the chain above is not hypothetical, this is the record it actually produced.",
+      "kosherType": "rabanut",
+      "certifiedBy": "חלב ישראל",
+      "kosherLevel": "regular",
+      "kosherAuthorityGroup": "rabbinate",
+      "kosherAuthority": null
+    }
+  },
+  "goldaRecordsWithChalavYisrael": [
+    {
+      "id": "golda-ff986d68",
+      "name": "גלידה גולדה",
+      "address": "מנחם בגין 2, מזכרת בתיה",
+      "cityId": "מזכרת-בתיה",
+      "field": "certifiedBy",
+      "rawTextInField": "חלב ישראל",
+      "kosherLevel": "regular",
+      "kosherAuthority": null,
+      "certifiedBy": "חלב ישראל",
+      "sourceFields": {
+        "website": "https://www.goldaglida.co.il",
+        "sourceUrl": null,
+        "provenance": null,
+        "kosherCertUrl": null,
+        "certificateValidUntil": null
+      },
+      "isGolda": true
+    }
+  ]
+}

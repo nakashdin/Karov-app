@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { colors, spacing } from '../../theme';
+import { Text, View } from 'react-native';
+import { makeStyles, spacing } from '../../theme';
 import { JewishContentItem } from '../../data/jewish-content/types';
 import { KarovContentCard } from './KarovContentCard';
 
@@ -10,6 +10,7 @@ interface Props {
 }
 
 export function DailyFeedSection({ items, onPress }: Props) {
+  const styles = useStyles();
   if (items.length === 0) return null;
 
   return (
@@ -30,7 +31,7 @@ export function DailyFeedSection({ items, onPress }: Props) {
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   section: {
     gap: spacing.md,
   },
@@ -40,13 +41,13 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 20,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
     letterSpacing: -0.3,
   },
   subtitle: {
     fontSize: 12,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
   },
-});
+}));

@@ -1,15 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import {
-  Modal,
-  Pressable,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TextInput,
-  View,
-} from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
-import { colors, radius, sizes, spacing } from '../theme';
+import { Modal, Pressable, ScrollView, Text, TextInput, View } from 'react-native';
+import Ionicons from '@expo/vector-icons/Ionicons';
+import { makeStyles, radius, sizes, spacing, useTheme } from '../theme';
 import { useLanguage } from '../context/LanguageContext';
 import { useFilters } from '../context/FiltersContext';
 import { useCities } from '../hooks/useCities';
@@ -52,6 +44,8 @@ export function FilterSheet({
   isFoodMode = false,
   hasLocation = false,
 }: FilterSheetProps) {
+  const theme = useTheme();
+  const styles = useStyles();
   const { t } = useLanguage();
   const { filters, setFilters, reset } = useFilters();
   const { cities } = useCities();
@@ -98,7 +92,7 @@ export function FilterSheet({
         <View style={styles.header}>
           <Text style={styles.title}>סינון תוצאות</Text>
           <Pressable onPress={onClose} hitSlop={10}>
-            <Ionicons name="close" size={24} color={colors.text} />
+            <Ionicons name="close" size={24} color={theme.text} />
           </Pressable>
         </View>
 
@@ -135,7 +129,7 @@ export function FilterSheet({
               <Ionicons
                 name={cityPickerOpen ? 'chevron-up' : 'chevron-down'}
                 size={16}
-                color={selectedCityName ? colors.primary : colors.textMuted}
+                color={selectedCityName ? theme.primary : theme.textMuted}
               />
               <Text style={[styles.cityPickerBtnText, !!selectedCityName && styles.cityPickerBtnTextSelected]}>
                 {selectedCityName ?? 'בחר עיר, קיבוץ, מושב...'}
@@ -145,28 +139,28 @@ export function FilterSheet({
                   hitSlop={10}
                   onPress={e => { e.stopPropagation(); setDraft(prev => ({ ...prev, cityId: null })); }}
                 >
-                  <Ionicons name="close-circle" size={18} color={colors.primary} />
+                  <Ionicons name="close-circle" size={18} color={theme.primary} />
                 </Pressable>
               ) : (
-                <Ionicons name="location-outline" size={16} color={colors.textMuted} />
+                <Ionicons name="location-outline" size={16} color={theme.textMuted} />
               )}
             </Pressable>
 
             {cityPickerOpen && (
               <View style={styles.cityDropdown}>
                 <View style={styles.citySearchPill}>
-                  <Ionicons name="search" size={14} color={colors.textMuted} />
+                  <Ionicons name="search" size={14} color={theme.textMuted} />
                   <TextInput
                     style={styles.citySearchInput}
                     placeholder="הקלד לסינון..."
-                    placeholderTextColor={colors.textMuted}
+                    placeholderTextColor={theme.textMuted}
                     value={citySearch}
                     onChangeText={setCitySearch}
                     textAlign="right"
                   />
                   {citySearch.length > 0 && (
                     <Pressable onPress={() => setCitySearch('')} hitSlop={8}>
-                      <Ionicons name="close" size={14} color={colors.textMuted} />
+                      <Ionicons name="close" size={14} color={theme.textMuted} />
                     </Pressable>
                   )}
                 </View>
@@ -187,7 +181,7 @@ export function FilterSheet({
                       }}
                     >
                       {draft.cityId === city.id && (
-                        <Ionicons name="checkmark" size={14} color={colors.primary} />
+                        <Ionicons name="checkmark" size={14} color={theme.primary} />
                       )}
                       <Text style={[styles.cityName, draft.cityId === city.id && styles.cityNameActive]}>
                         {city.name}
@@ -279,6 +273,7 @@ export function FilterSheet({
 }
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
+  const styles = useStyles();
   return (
     <View style={styles.section}>
       <Text style={styles.sectionTitle}>{title}</Text>
@@ -287,10 +282,10 @@ function Section({ title, children }: { title: string; children: React.ReactNode
   );
 }
 
-const styles = StyleSheet.create({
-  backdrop: { flex: 1, backgroundColor: colors.overlay },
+const useStyles = makeStyles((t) => ({
+  backdrop: { flex: 1, backgroundColor: t.overlay },
   sheet: {
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderTopLeftRadius: radius.xl,
     borderTopRightRadius: radius.xl,
     paddingHorizontal: spacing.lg,
@@ -302,7 +297,7 @@ const styles = StyleSheet.create({
     width: 48,
     height: 4,
     borderRadius: 2,
-    backgroundColor: colors.surfaceMuted,
+    backgroundColor: t.surfaceMuted,
     marginTop: spacing.md,
     marginBottom: spacing.lg,
   },
@@ -313,20 +308,20 @@ const styles = StyleSheet.create({
     paddingBottom: spacing.md,
     marginBottom: spacing.sm,
     borderBottomWidth: 0.5,
-    borderBottomColor: colors.border,
+    borderBottomColor: t.border,
   },
   title: {
     fontSize: 18,
     fontWeight: '800',
     letterSpacing: -0.3,
-    color: colors.text,
+    color: t.text,
   },
   section: { marginBottom: spacing.xl },
   sectionTitle: {
     fontSize: 11,
     fontWeight: '700',
     letterSpacing: 0.6,
-    color: colors.textMuted,
+    color: t.textMuted,
     marginBottom: spacing.sm,
     textAlign: 'right',
   },
@@ -343,52 +338,52 @@ const styles = StyleSheet.create({
     paddingHorizontal: 14,
     borderRadius: radius.pill,
     borderWidth: 1,
-    borderColor: colors.border,
-    backgroundColor: colors.surface,
+    borderColor: t.border,
+    backgroundColor: t.surface,
   },
-  distChipActive: { backgroundColor: colors.primary, borderColor: colors.primary },
-  distChipText: { fontSize: 13, fontWeight: '600', color: colors.textMuted },
-  distChipTextActive: { color: '#fff' },
+  distChipActive: { backgroundColor: t.primary, borderColor: t.primary },
+  distChipText: { fontSize: 13, fontWeight: '600', color: t.textMuted },
+  distChipTextActive: { color: t.textInverse },
 
   // City inline dropdown
   cityPickerBtn: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    backgroundColor: colors.background,
+    backgroundColor: t.background,
     borderRadius: radius.md,
     paddingVertical: 12,
     paddingHorizontal: 14,
     borderWidth: 1,
-    borderColor: colors.border,
+    borderColor: t.border,
   },
   cityPickerBtnOpen: {
     borderBottomLeftRadius: 0,
     borderBottomRightRadius: 0,
     borderBottomColor: 'transparent',
   },
-  cityPickerBtnText: { flex: 1, fontSize: 14, color: colors.textMuted, textAlign: 'right', marginHorizontal: 8 },
-  cityPickerBtnTextSelected: { color: colors.primary, fontWeight: '700' },
+  cityPickerBtnText: { flex: 1, fontSize: 14, color: t.textMuted, textAlign: 'right', marginHorizontal: 8 },
+  cityPickerBtnTextSelected: { color: t.primary, fontWeight: '700' },
   cityDropdown: {
     borderWidth: 1,
     borderTopWidth: 0,
-    borderColor: colors.border,
+    borderColor: t.border,
     borderBottomLeftRadius: radius.md,
     borderBottomRightRadius: radius.md,
     overflow: 'hidden',
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
   },
   citySearchPill: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 8,
-    backgroundColor: colors.background,
+    backgroundColor: t.background,
     paddingVertical: 9,
     paddingHorizontal: 12,
     borderBottomWidth: 0.5,
-    borderBottomColor: colors.border,
+    borderBottomColor: t.border,
   },
-  citySearchInput: { flex: 1, fontSize: 14, color: colors.text, paddingVertical: 0 },
+  citySearchInput: { flex: 1, fontSize: 14, color: t.text, paddingVertical: 0 },
   cityList: { maxHeight: 220 },
   cityRow: {
     flexDirection: 'row',
@@ -397,13 +392,13 @@ const styles = StyleSheet.create({
     paddingVertical: 11,
     paddingHorizontal: 14,
     borderBottomWidth: 0.5,
-    borderBottomColor: colors.border,
+    borderBottomColor: t.border,
     justifyContent: 'flex-end',
   },
-  cityRowActive: { backgroundColor: colors.primaryLight },
-  cityName: { fontSize: 14, color: colors.text, textAlign: 'right' },
-  cityNameActive: { fontWeight: '700', color: colors.primary },
-  cityHint: { fontSize: 12, color: colors.textMuted, textAlign: 'center', paddingVertical: 10 },
+  cityRowActive: { backgroundColor: t.primaryLight },
+  cityName: { fontSize: 14, color: t.text, textAlign: 'right' },
+  cityNameActive: { fontWeight: '700', color: t.primary },
+  cityHint: { fontSize: 12, color: t.textMuted, textAlign: 'center', paddingVertical: 10 },
 
   // Actions
   actions: {
@@ -411,26 +406,26 @@ const styles = StyleSheet.create({
     gap: spacing.md,
     paddingTop: spacing.lg,
     borderTopWidth: 0.5,
-    borderTopColor: colors.border,
+    borderTopColor: t.border,
   },
   clearBtn: {
     minHeight: sizes.button,
     paddingHorizontal: spacing.xl,
     borderRadius: radius.pill,
     borderWidth: 1,
-    borderColor: colors.border,
-    backgroundColor: colors.surface,
+    borderColor: t.border,
+    backgroundColor: t.surface,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  clearText: { fontSize: 15, fontWeight: '600', color: colors.textMuted },
+  clearText: { fontSize: 15, fontWeight: '600', color: t.textMuted },
   applyBtn: {
     flex: 1,
     minHeight: sizes.button,
     borderRadius: radius.pill,
-    backgroundColor: colors.primary,
+    backgroundColor: t.primary,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  applyText: { fontSize: 15, fontWeight: '800', color: colors.textInverse, letterSpacing: -0.2 },
-});
+  applyText: { fontSize: 15, fontWeight: '800', color: t.textInverse, letterSpacing: -0.2 },
+}));

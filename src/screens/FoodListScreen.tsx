@@ -1,24 +1,16 @@
 import React, { useMemo, useRef, useState } from 'react';
-import {
-  FlatList,
-  Pressable,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TextInput,
-  View,
-} from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
+import { FlatList, Pressable, ScrollView, Text, TextInput, View } from 'react-native';
+import Ionicons from '@expo/vector-icons/Ionicons';
 import { useNavigation, useRoute, RouteProp } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { Screen } from '../components/Screen';
 import { PlaceCard } from '../components/PlaceCard';
 import { Loading } from '../components/Loading';
-import { colors, radius, shadow, spacing } from '../theme';
+import { makeStyles, radius, shadow, spacing, useTheme } from '../theme';
 import { usePlaces } from '../hooks/usePlaces';
 import { useSharedLocation } from '../context/LocationContext';
-import { distanceKm } from '../utils/geo';
-import { KosherCategory, Place, PlaceType } from '../types';
+import { distanceKm, sortedByDistance, withinRadius } from '../utils/geo';
+import { isFoodType, KosherCategory, Place } from '../types';
 import { RootStackParamList } from '../navigation/types';
 import { searchPlaces } from '../data/search/searchEngine';
 import { MapView } from '../components/map/MapView';
@@ -28,7 +20,8 @@ type Nav = NativeStackNavigationProp<RootStackParamList>;
 type FoodRoute = RouteProp<RootStackParamList, 'FoodList'>;
 type FoodTab = 'all' | KosherCategory;
 
-const ALL_FOOD: PlaceType[] = ['restaurant', 'fast_food', 'cafe', 'coffee_cart', 'juice_bar', 'ice_cream_parlor', 'bakery'];
+// Food types come from the one catalog (src/types/catalog.ts) — a hand-written
+// copy here is how `winery` ended up invisible in this screen.
 
 const TABS: Array<{ key: FoodTab; label: string; emoji: string }> = [
   { key: 'all',   label: 'הכל',   emoji: '🍽️' },
@@ -38,6 +31,8 @@ const TABS: Array<{ key: FoodTab; label: string; emoji: string }> = [
 ];
 
 export function FoodListScreen() {
+  const theme = useTheme();
+  const styles = useStyles();
   const navigation = useNavigation<Nav>();
   const route = useRoute<FoodRoute>();
   const radiusKm = route.params?.radiusKm ?? null;
@@ -56,7 +51,7 @@ export function FoodListScreen() {
   const searchRef = useRef<TextInput>(null);
 
   const allFoodPlaces = useMemo(
-    () => places.filter(p => ALL_FOOD.includes(p.type)),
+    () => places.filter((p) => isFoodType(p.type)),
     [places],
   );
 
@@ -88,7 +83,8 @@ export function FoodListScreen() {
   const filtered = useMemo(() => {
     let list = allFoodPlaces;
     if (radiusKm && location) {
-      list = list.filter(p => distanceKm(location, p.location) <= radiusKm);
+      // Already ordered by distance, so the sort below becomes a no-op pass.
+      list = withinRadius(location, list, radiusKm);
     }
     if (activeTab !== 'all') {
       list = list.filter(p => p.category === activeTab);
@@ -105,11 +101,7 @@ export function FoodListScreen() {
         list = list.filter(p => p.name.toLowerCase().includes(lq));
       }
     }
-    if (location) {
-      return [...list].sort(
-        (a, b) => distanceKm(location, a.location) - distanceKm(location, b.location),
-      );
-    }
+    if (location) return sortedByDistance(location, list);
     return list;
   }, [allFoodPlaces, activeTab, location, radiusKm, searchQuery]);
 
@@ -145,12 +137,12 @@ export function FoodListScreen() {
           style={({ pressed }) => [styles.backBtn, pressed && styles.pressed]}
           onPress={() => navigation.goBack()}
         >
-          <Ionicons name="chevron-forward" size={22} color={colors.text} />
+          <Ionicons name="chevron-forward" size={22} color={theme.text} />
         </Pressable>
         <Text style={styles.title}>🍽 אוכל כשר</Text>
         <View style={styles.countBlock}>
           <Text style={styles.count}>{filtered.length}</Text>
-          {radiusKm && <Text style={styles.radiusBadge}>{radiusKm} ק"מ</Text>}
+          {radiusKm && <Text style={styles.radiusBadge}>{radiusKm} ק״מ</Text>}
           <Pressable
             style={styles.viewToggle}
             onPress={() => { setViewMode(v => v === 'list' ? 'map' : 'list'); setSelectedPlace(null); }}
@@ -158,7 +150,7 @@ export function FoodListScreen() {
             <Ionicons
               name={viewMode === 'list' ? 'map-outline' : 'list-outline'}
               size={20}
-              color={colors.primary}
+              color={theme.primary}
             />
           </Pressable>
         </View>
@@ -167,12 +159,12 @@ export function FoodListScreen() {
       {/* Search bar */}
       <View style={styles.searchContainer}>
         <View style={styles.searchPill}>
-          <Ionicons name="search" size={18} color={colors.textMuted} />
+          <Ionicons name="search" size={18} color={theme.textMuted} />
           <TextInput
             ref={searchRef}
             style={styles.searchInput}
             placeholder="חיפוש לפי שם, רחוב או עיר..."
-            placeholderTextColor={colors.textMuted}
+            placeholderTextColor={theme.textMuted}
             value={inputText}
             onChangeText={handleTextChange}
             onFocus={() => setShowSuggestions(true)}
@@ -182,7 +174,7 @@ export function FoodListScreen() {
           />
           {inputText.length > 0 && (
             <Pressable onPress={handleClear} hitSlop={8}>
-              <Ionicons name="close-circle" size={18} color={colors.textMuted} />
+              <Ionicons name="close-circle" size={18} color={theme.textMuted} />
             </Pressable>
           )}
         </View>
@@ -194,7 +186,7 @@ export function FoodListScreen() {
                 style={styles.suggestionItem}
                 onPress={() => handleSuggestionPress(s)}
               >
-                <Ionicons name="search-outline" size={13} color={colors.textMuted} />
+                <Ionicons name="search-outline" size={13} color={theme.textMuted} />
                 <Text style={styles.suggestionText} numberOfLines={1}>{s}</Text>
               </Pressable>
             ))}
@@ -276,7 +268,7 @@ export function FoodListScreen() {
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   screen: { flex: 1 },
 
   header: {
@@ -291,7 +283,7 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: radius.md,
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     alignItems: 'center',
     justifyContent: 'center',
     flexShrink: 0,
@@ -302,20 +294,20 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: '800',
     letterSpacing: -0.4,
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
   },
   countBlock: { flexDirection: 'row', alignItems: 'center', gap: 6, flexShrink: 0 },
   count: {
     fontSize: 13,
     fontWeight: '700',
-    color: colors.textMuted,
+    color: t.textMuted,
   },
   radiusBadge: {
     fontSize: 11,
     fontWeight: '700',
-    color: colors.primary,
-    backgroundColor: colors.primaryLight,
+    color: t.primary,
+    backgroundColor: t.primaryLight,
     paddingHorizontal: 7,
     paddingVertical: 2,
     borderRadius: 10,
@@ -332,25 +324,25 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: spacing.sm,
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderRadius: radius.pill,
     paddingVertical: 13,
     paddingHorizontal: spacing.lg,
     borderWidth: 0.5,
-    borderColor: colors.border,
+    borderColor: t.border,
     ...shadow.card,
   },
   searchInput: {
     flex: 1,
     fontSize: 15,
-    color: colors.text,
+    color: t.text,
     paddingVertical: 0,
   },
   suggestionBox: {
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderRadius: radius.lg,
     borderWidth: 1,
-    borderColor: colors.border,
+    borderColor: t.border,
     marginTop: 4,
     overflow: 'hidden',
     ...shadow.card,
@@ -364,20 +356,20 @@ const styles = StyleSheet.create({
     paddingVertical: 11,
     paddingHorizontal: 16,
     borderBottomWidth: 0.5,
-    borderBottomColor: colors.border,
+    borderBottomColor: t.border,
   },
   suggestionText: {
     flex: 1,
     fontSize: 14,
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
   },
 
   // Tabs
   tabsScroll: {
-    backgroundColor: colors.background,
+    backgroundColor: t.background,
     borderBottomWidth: 1,
-    borderBottomColor: colors.border,
+    borderBottomColor: t.border,
     flexGrow: 0,
     flexShrink: 0,
   },
@@ -396,16 +388,16 @@ const styles = StyleSheet.create({
     borderBottomColor: 'transparent',
   },
   tabActive: {
-    borderBottomColor: colors.primary,
+    borderBottomColor: t.primary,
   },
   tabEmoji: { fontSize: 14 },
   tabLabel: {
     fontSize: 13,
     fontWeight: '600',
-    color: colors.textMuted,
+    color: t.textMuted,
   },
   tabLabelActive: {
-    color: colors.primary,
+    color: t.primary,
     fontWeight: '700',
   },
 
@@ -413,7 +405,7 @@ const styles = StyleSheet.create({
     width: 34,
     height: 34,
     borderRadius: radius.md,
-    backgroundColor: colors.primaryLight,
+    backgroundColor: t.primaryLight,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -428,8 +420,8 @@ const styles = StyleSheet.create({
   loadingBox: { flex: 1, justifyContent: 'center', alignItems: 'center' },
   empty: {
     textAlign: 'center',
-    color: colors.textMuted,
+    color: t.textMuted,
     fontSize: 15,
     marginTop: 40,
   },
-});
+}));

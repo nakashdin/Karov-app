@@ -1,20 +1,11 @@
 import React, { useState } from 'react';
-import {
-  KeyboardAvoidingView,
-  Platform,
-  Pressable,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TextInput,
-  View,
-} from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
+import { KeyboardAvoidingView, Platform, Pressable, ScrollView, Text, TextInput, View } from 'react-native';
+import Ionicons from '@expo/vector-icons/Ionicons';
 import { RouteProp, useNavigation, useRoute } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { Screen } from '../components/Screen';
 import { Chip } from '../components/Chip';
-import { colors, radius, sizes, spacing } from '../theme';
+import { makeStyles, radius, sizes, spacing, useTheme } from '../theme';
 import { useLanguage } from '../context/LanguageContext';
 import { usePlace } from '../hooks/usePlace';
 import { displayPlaceName } from '../utils/placeType';
@@ -35,6 +26,8 @@ const ISSUE_TYPES: IssueType[] = [
 type SubmitState = 'idle' | 'submitting' | 'success' | 'error';
 
 export function ReportScreen() {
+  const theme = useTheme();
+  const styles = useStyles();
   const { t } = useLanguage();
   const navigation = useNavigation<Nav>();
   const { params } = useRoute<ReportRoute>();
@@ -62,7 +55,7 @@ export function ReportScreen() {
     return (
       <Screen padded>
         <View style={styles.successBox}>
-          <Ionicons name="checkmark-circle" size={64} color={colors.success} />
+          <Ionicons name="checkmark-circle" size={64} color={theme.success} />
           <Text style={styles.successTitle}>{t.report.successTitle}</Text>
           <Text style={styles.successBody}>{t.report.successBody}</Text>
           <Pressable
@@ -112,7 +105,7 @@ export function ReportScreen() {
             <TextInput
               style={styles.textarea}
               placeholder={t.report.detailsPlaceholder}
-              placeholderTextColor={colors.textMuted}
+              placeholderTextColor={theme.textMuted}
               value={details}
               onChangeText={setDetails}
               multiline
@@ -151,6 +144,7 @@ function Field({
   label: string;
   children: React.ReactNode;
 }) {
+  const styles = useStyles();
   return (
     <View style={styles.field}>
       <Text style={styles.fieldLabel}>{label}</Text>
@@ -159,7 +153,7 @@ function Field({
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   flex: { flex: 1 },
   content: {
     paddingVertical: spacing.lg,
@@ -167,7 +161,7 @@ const styles = StyleSheet.create({
   },
   intro: {
     fontSize: 15,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
     marginBottom: spacing.lg,
     lineHeight: 21,
@@ -178,19 +172,19 @@ const styles = StyleSheet.create({
   fieldLabel: {
     fontSize: 15,
     fontWeight: '700',
-    color: colors.text,
+    color: t.text,
     marginBottom: spacing.sm,
     textAlign: 'right',
   },
   placeBox: {
-    backgroundColor: colors.surfaceMuted,
+    backgroundColor: t.surfaceMuted,
     borderRadius: radius.md,
     padding: spacing.md,
   },
   placeName: {
     fontSize: 16,
     fontWeight: '700',
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
   },
   chipsWrap: {
@@ -199,24 +193,24 @@ const styles = StyleSheet.create({
     gap: spacing.sm,
   },
   textarea: {
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderRadius: radius.md,
     borderWidth: 1,
-    borderColor: colors.border,
+    borderColor: t.border,
     padding: spacing.md,
     fontSize: 15,
-    color: colors.text,
+    color: t.text,
     minHeight: 110,
   },
   errorText: {
-    color: colors.danger,
+    color: t.danger,
     fontSize: 14,
     fontWeight: '600',
     textAlign: 'center',
     marginBottom: spacing.md,
   },
   submitBtn: {
-    backgroundColor: colors.primary,
+    backgroundColor: t.primary,
     borderRadius: radius.lg,
     minHeight: sizes.button,
     paddingVertical: spacing.lg,
@@ -228,7 +222,7 @@ const styles = StyleSheet.create({
     opacity: 0.6,
   },
   submitText: {
-    color: '#fff',
+    color: t.textInverse,
     fontSize: 16,
     fontWeight: '800',
   },
@@ -241,11 +235,11 @@ const styles = StyleSheet.create({
   successTitle: {
     fontSize: 22,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
   },
   successBody: {
     fontSize: 15,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'center',
   },
-});
+}));

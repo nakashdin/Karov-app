@@ -1,4 +1,4 @@
-﻿import { JewishContentItem } from '../types';
+import { JewishContentItem } from '../types';
 import { nrSource, unknownLegacySource } from '../source-helpers';
 
 const TANACH = 'תנ"ך';

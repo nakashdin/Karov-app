@@ -1,143 +1,315 @@
 /**
- * Rebar kosher branches importer
- * Source: rebar.co.il/our-stores — filtered by "כשר" label
- * Excluded: non-kosher, Arab cities (שפרעם/טמרה/טייבה/סכנין/אום אל פחם/מג'דל שמס/ירכא/נצרת),
- *           open Shabbat daytime (ש 09:xx+)
- * Total: 52 kosher branches
- * Type: cafe | Category: parve (juice/smoothie bar)
+ * Rebar kosher branches importer — REWRITTEN (Item 4 Unit 1, 2026-08-26;
+ * matcher rewritten again same day after the Architect's independent
+ * re-derivation found both the parser and the original single-nearest-match
+ * design unsafe — see scripts/shared/rebar-feed.mjs for both fixes).
+ *
+ * The original version of this file held a hand-typed array of 53 branches
+ * and stamped `kosherType: 'mehadrin'` as an unconditional literal in
+ * buildPlace() — no fetch, no per-record evidence, the same value on every
+ * single one. Its own header said the list was "filtered by כשר label": a
+ * *kosher* label was transcribed as *mehadrin*. See
+ * docs/KASHRUT_FACTS.md §5b/§22 for the full history.
+ *
+ * This version reads Rebar's own live store-locator feed (see
+ * scripts/shared/rebar-feed.mjs for the fetch/parse/match core — shared
+ * with the separate remediation step for the 53 existing records, so both
+ * paths trust the same evidence through the same code, never a duplicate
+ * copy of the parsing logic).
+ *
+ * SCOPE OF THIS SCRIPT: adds records ONLY for feed stores that are
+ * kosher:true AND have zero candidate existing records at all (genuinely
+ * new — see rebar-feed.mjs's matchRebarStores for what "candidate" means
+ * and why it's many-to-one aware). It does NOT touch any existing record's
+ * fields; remediating the 53 already-present records is a separate, gated
+ * step (Item 4 Unit 2), which now depends on this matcher being correct —
+ * three of the existing records surfaced as genuinely AMBIGUOUS (more than
+ * one plausible feed match), including rebar-bs-central-station itself.
+ *
+ * Mapping — the evidence ceiling, and this importer is structurally
+ * incapable of exceeding it (no kosherAuthority/certifiedBy field exists
+ * anywhere in this file to accidentally set):
+ *   kosher:true, zero candidates          -> new record: kosherType:'kosher',
+ *                                             kosherLevel:null, kosherAuthorityGroup:'unknown'
+ *   confirmed match (exactly one, mutual) -> nothing written here (Unit 2's job);
+ *                                             reported, split by the matched store's kosher value
+ *   ambiguous (2+ candidates, either side)-> nothing written, reported, NEVER resolved by nearest/address-wins
+ *   kosher:false / neither true nor false -> nothing written, reported only
+ *
+ * Usage:
+ *   node scripts/import-rebar.mjs             # dry-run + report (default)
+ *   node scripts/import-rebar.mjs --apply      # writes, with backup
  */
-import { readFileSync, writeFileSync } from 'fs';
-import { createHash } from 'crypto';
-import { fileURLToPath } from 'url';
-import path from 'path';
+import { readFileSync, writeFileSync, copyFileSync, mkdirSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+import { resolve, dirname, join } from 'node:path';
+import { fileURLToPath, pathToFileURL } from 'node:url';
+import { recordKashrutWrite, localDateISO } from './shared/kashrut-write.mjs';
+import { fetchRebarStores, matchRebarStores } from './shared/rebar-feed.mjs';
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const DATA_DIR = path.join(__dirname, '../src/data/generated');
-const BOM = Buffer.from([0xEF, 0xBB, 0xBF]);
+const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
+const PLACES_PATH = resolve(root, 'src/data/generated/places.osm.json');
+const RESTAURANTS_PATH = resolve(root, 'src/data/generated/restaurants.osm.json');
+const FEED_URL = 'https://rebar.co.il/our-stores/';
+// Computed at call time, never a literal — a hardcoded date here is exactly
+// the defect this whole effort exists to fix (see remediate-rebar-55.mjs's
+// header: the original importer's `lastVerifiedAt: '2026-07-14'` constant is
+// why all 53 records it touched carry an identical, meaningless date). This
+// one was ALSO a literal until 2026-08-26, correct only because that was
+// today when it was written — every run after today would have silently
+// backdated every new record's lastVerifiedAt to a date that never happened,
+// undetected by validate-data.mjs's backward-date guard (it only compares
+// against a record's PRIOR value at HEAD; a brand-new record has none).
+//
+// localDateISO(), not `new Date().toISOString().slice(0,10)` — found live,
+// 2026-08-27 ~02:47 Israel time (UTC+3): toISOString() is UTC, so any run in
+// the ~2-3 hours after local midnight stamps the PREVIOUS day. See
+// localDateISO()'s own header in kashrut-write.mjs.
+const RUN_DATE = localDateISO();
 
-const REBAR_BRANCHES = [
-  // ── גוש דן / מרכז ─────────────────────────────────────────────────────
-  { name: 'רי בר קניון איילון רמת גן',        city: 'רמת גן',        address: 'אבא הלל 301, קניון איילון, רמת גן',        lat: 32.1004, lng: 34.8266, hours: 'א-ה 08:30-22:00 | ו 08:30-16:00 | מוצ"ש 21:00-23:00' },
-  { name: 'רי בר רמת אפעל רמת גן',            city: 'רמת גן',        address: 'דרך שיבא 14, רמת גן',                       lat: 32.047,  lng: 34.862,  hours: 'א-ה 08:30-21:30 | ו 08:30-15:00 | ש סגור' },
-  { name: 'רי בר ביאליק רמת גן',              city: 'רמת גן',        address: 'ביאליק 76, פינת ז\'בוטינסקי, רמת גן',        lat: 32.082,  lng: 34.811,  hours: 'א-ה 08:30-21:30 | ו 08:30-16:00 | ש סגור' },
-  { name: 'רי בר גבעת שמואל',                 city: 'גבעת שמואל',   address: 'שדרות מנחם בגין 38, גבעת שמואל',             lat: 32.077,  lng: 34.854,  hours: 'א-ה 08:30-20:00 | ו 08:00-14:45 | ש סגור' },
-  { name: 'רי בר גני תקווה',                  city: 'גני תקווה',    address: 'ההדרים 7, גני תקווה',                        lat: 32.067,  lng: 34.882,  hours: 'א-ה 08:30-22:30 | ו 08:30-15:00 | מוצ"ש 19:45-22:00' },
-  { name: 'רי בר קריית אונו',                 city: 'קריית אונו',   address: 'הקריה האקדמית אונו',                          lat: 32.062,  lng: 34.856,  hours: 'א-ה 08:30-22:30 | ו 08:30-15:30 | מוצ"ש 21:00-23:00' },
-  { name: 'רי בר חולון עזריאלי',              city: 'חולון',         address: 'גולדה מאיר 7, עזריאלי חולון',                lat: 32.007,  lng: 34.801,  hours: 'א-ה 08:30-22:00 | ו 08:30-16:00 | מוצ"ש 20:30-23:00' },
-  // ── פתח תקווה ──────────────────────────────────────────────────────────
-  { name: 'רי בר הקניון הגדול פתח תקווה',    city: 'פתח תקווה',    address: 'ז\'בוטינסקי 72, הקניון הגדול, פתח תקווה',    lat: 32.093,  lng: 34.865,  hours: 'א-ה 09:00-22:00 | ו 08:30-14:30 | מוצ"ש 21:00-23:00' },
-  { name: 'רי בר אם המושבות פתח תקווה',      city: 'פתח תקווה',    address: 'ראשון לציון 1, meex אם המושבות, פתח תקווה',  lat: 32.098,  lng: 34.880,  hours: 'א-ה 08:30-21:30 | ו 08:30-15:00 | ש סגור' },
-  { name: 'רי בר סירקין פתח תקווה',          city: 'פתח תקווה',    address: 'אלעזר פרידמן 9, פתח תקווה',                  lat: 32.079,  lng: 34.902,  hours: 'א-ה 09:00-21:00 | ו 08:30-14:30 | ש סגור' },
-  // ── ראשון לציון ────────────────────────────────────────────────────────
-  { name: 'רי בר קניון הזהב ראשון לציון',    city: 'ראשון לציון',  address: 'דוד סחרוב 21, קניון הזהב, ראשון לציון',      lat: 31.972,  lng: 34.789,  hours: 'א-ה 08:30-22:00 | ו 08:30-16:00 | מוצ"ש 20:45-23:00' },
-  { name: 'רי בר קניון ראשונים ראשון לציון', city: 'ראשון לציון',  address: 'שדרות נים 2, קניון עזריאלי ראשונים',         lat: 31.950,  lng: 34.803,  hours: 'א-ה 08:15-22:00 | ו 08:30-16:00 | מוצ"ש 20:45-23:00' },
-  // ── נס ציונה / רמלה / באר יעקב ────────────────────────────────────────
-  { name: 'רי בר קניותר נס ציונה',           city: 'נס ציונה',     address: 'האירוסים 53, קניותר, נס ציונה',               lat: 31.930,  lng: 34.797,  hours: 'א-ה 09:00-21:00 | ו 08:30-14:30 | ש סגור' },
-  { name: 'רי בר עזריאלי רמלה',              city: 'רמלה',          address: 'שדרות דוד ריזאל 1, קניון עזריאלי, רמלה',     lat: 31.929,  lng: 34.875,  hours: 'א-ה 08:30-22:00 | ו 08:30-15:30 | מוצ"ש 20:15-23:00' },
-  { name: 'רי בר באר יעקב',                  city: 'באר יעקב',     address: 'יהלום 4, באר יעקב',                           lat: 31.946,  lng: 34.840,  hours: 'א-ה 09:00-22:15 | ו 09:00-15:30 | מוצ"ש 20:30-23:00' },
-  // ── רחובות / מודיעין ───────────────────────────────────────────────────
-  { name: 'רי בר meex רחובות',               city: 'רחובות',        address: 'דרך הים 1, רחובות',                           lat: 31.894,  lng: 34.811,  hours: 'א-ה 08:30-22:00 | ו 08:30-16:00 | ש סגור' },
-  { name: 'רי בר עזריאלי מודיעין',           city: 'מודיעין',       address: 'לב העיר 2, עזריאלי, מודיעין',                lat: 31.898,  lng: 35.010,  hours: 'א-ה 08:30-22:00 | ו 08:30-15:00 | מוצ"ש 20:30-23:00' },
-  { name: 'רי בר מוריה מודיעין',             city: 'מודיעין',       address: 'לאה אימנו 1, מודיעין',                        lat: 31.895,  lng: 35.005,  hours: 'א-ה 08:30-22:00 | ו 08:30-16:00 | מוצ"ש 20:00-23:00' },
-  // ── שוהם ───────────────────────────────────────────────────────────────
-  { name: 'רי בר שוהם',                       city: 'שוהם',          address: 'שד\' עמק איילון 30, שוהם',                    lat: 31.999,  lng: 34.943,  hours: 'א-ה 07:45-22:00 | ו 07:45-15:30 | ש סגור' },
-  // ── בית שמש / ירושלים / יהודה ──────────────────────────────────────────
-  { name: 'רי בר ביג פאשן בית שמש',          city: 'בית שמש',      address: 'יגאל אלון 1, ביג פאשן, בית שמש',              lat: 31.756,  lng: 34.990,  hours: 'א-ה 08:30-22:15 | ו 08:30-15:00 | מוצ"ש 21:00-23:00' },
-  { name: 'רי בר קניון מלחה ירושלים',        city: 'ירושלים',       address: 'אגודת ספורט בית"ר 1, קניון מלחה, ירושלים',   lat: 31.748,  lng: 35.172,  hours: 'א-ה 08:45-22:00 | ו 08:30-15:30 | מוצ"ש 21:00-23:30' },
-  { name: 'רי בר הרובע היהודי ירושלים',      city: 'ירושלים',       address: 'תפארת ישראל 8, הרובע היהודי, ירושלים',        lat: 31.774,  lng: 35.229,  hours: 'א-ה 08:30-22:30 | ו 08:30-15:00 | ש סגור' },
-  { name: 'רי בר קניון הדר ירושלים',         city: 'ירושלים',       address: 'גנרל פייר קניג 26, קניון הדר, ירושלים',       lat: 31.768,  lng: 35.214,  hours: 'א-ה 08:15-22:00 | ו 08:15-15:00 | מוצ"ש 20:00-23:15' },
-  { name: 'רי בר מעלה אדומים',               city: 'מעלה אדומים',  address: 'דרך קדם 5, מעלה אדומים',                      lat: 31.771,  lng: 35.298,  hours: 'א-ה 08:00-21:45 | ו 08:00-15:00 | מוצ"ש 21:30-23:00' },
-  // ── שרון ───────────────────────────────────────────────────────────────
-  { name: 'רי בר קריית השרון נתניה',         city: 'נתניה',         address: 'טוס לנטוס, מרכז אלון, נתניה',                 lat: 32.307,  lng: 34.869,  hours: 'א-ה 08:30-22:00 | ו 08:30-15:00 | ש סגור' },
-  { name: 'רי בר קניון השרון נתניה',         city: 'נתניה',         address: 'הרצל 60, קניון השרון, נתניה',                 lat: 32.326,  lng: 34.862,  hours: 'א-ה 08:30-21:30 | ו 08:30-15:00 | מוצ"ש 20:45-22:30' },
-  { name: 'רי בר עיר ימים נתניה',            city: 'נתניה',         address: 'בני ברמן 2, עיר ימים, נתניה',                 lat: 32.300,  lng: 34.840,  hours: 'א-ה 08:30-22:00 | ו 08:30-15:45 | מוצ"ש 21:15-23:00' },
-  { name: 'רי בר רעננה רננים',               city: 'רעננה',         address: 'המלאכה 2, קניון רננים, רעננה',                lat: 32.185,  lng: 34.871,  hours: 'א-ה 08:45-22:00 | ו 08:30-15:00 | מוצ"ש 20:45-23:00' },
-  // ── חדרה / אור עקיבא ───────────────────────────────────────────────────
-  { name: 'רי בר קניון לב חדרה',             city: 'חדרה',          address: 'רוטשילד 40, קניון לב חדרה, חדרה',             lat: 32.437,  lng: 34.919,  hours: 'א-ה 08:30-21:30 | ו 08:30-15:30 | מוצ"ש לאחר צאת שבת עד 00:15' },
-  { name: 'רי בר ביג אור עקיבא',             city: 'אור עקיבא',    address: 'שדרות הנשיא ויצמן 4, ביג, אור עקיבא',         lat: 32.506,  lng: 34.912,  hours: 'א-ה 08:30-22:00 | ו 08:30-14:45 | מוצ"ש 21:15-23:00' },
-  // ── חיפה ───────────────────────────────────────────────────────────────
-  { name: 'רי בר סינמול לב המפרץ חיפה',     city: 'חיפה',          address: 'שד\' ההסתדרות 55, סינמול לב המפרץ, חיפה',    lat: 32.793,  lng: 35.038,  hours: 'א-ה 08:30-22:00 | ו 08:00-17:15 | מוצ"ש 20:45-23:00' },
-  { name: 'רי בר רמב"ם חיפה',               city: 'חיפה',          address: 'העלייה השנייה 8, חיפה',                        lat: 32.813,  lng: 35.007,  hours: 'א-ה 08:00-22:00 | ו 08:00-14:30 | מוצ"ש 21:15-22:30' },
-  { name: 'רי בר עיר תחתית חיפה',           city: 'חיפה',          address: 'נתנזון 11, עיר תחתית, חיפה',                  lat: 32.819,  lng: 34.997,  hours: 'א-ה 08:30-23:00 | ו 08:15-17:30 | מוצ"ש 20:45-23:30' },
-  { name: 'רי בר עזריאלי חיפה',             city: 'חיפה',          address: 'משה פלימן 4, קניון חיפה עזריאלי',             lat: 32.790,  lng: 34.966,  hours: 'א-ה 08:30-21:45 | ו 08:00-15:30 | מוצ"ש 21:00-22:45' },
-  // ── קריות ──────────────────────────────────────────────────────────────
-  { name: 'רי בר קיריון קרית ביאליק',       city: 'קריית ביאליק', address: 'דרך עכו חיפה 192, קיריון',                    lat: 32.833,  lng: 35.073,  hours: 'א-ה 08:30-22:30 | ו 08:00-15:30 | מוצ"ש 21:15-23:45' },
-  { name: 'רי בר שער הצפון קרית אתא',       city: 'קריית אתא',    address: 'דרך חיפה 52, שער הצפון',                      lat: 32.806,  lng: 35.104,  hours: 'א-ה 08:30-22:00 | ו 08:30-15:00 | מוצ"ש 20:30-22:00' },
-  // ── צפון ───────────────────────────────────────────────────────────────
-  { name: 'רי בר סנטר הגליל ראש פינה',      city: 'ראש פינה',     address: 'סנטר הגליל, ראש פינה',                        lat: 32.970,  lng: 35.550,  hours: 'א-ה 08:45-22:00 | ו 08:45-15:00 | מוצ"ש 20:45-23:00' },
-  { name: 'רי בר ביג פאשן טבריה',           city: 'טבריה',         address: 'יהודה הלוי 9990, ביג פאשן, טבריה',            lat: 32.792,  lng: 35.531,  hours: 'א-ה 08:45-22:00 | ו 08:30-15:00 | מוצ"ש 21:15-23:00' },
-  { name: 'רי בר ביג פוריה טבריה',          city: 'טבריה',         address: 'המברג 1, ביג פוריה, טבריה',                   lat: 32.785,  lng: 35.498,  hours: 'א-ה 08:30-22:30 | ו 08:30-16:00 | מוצ"ש 20:30-23:00' },
-  { name: 'רי בר עמק סנטר עפולה',           city: 'עפולה',         address: 'שדרות יצחק רבין 18, עמק סנטר פרנדלי, עפולה', lat: 32.607,  lng: 35.290,  hours: 'א-ה 08:30-22:00 | ו 08:30-15:00 | מוצ"ש 21:00-22:30' },
-  { name: 'רי בר תחנה מרכזית עפולה',        city: 'עפולה',         address: 'קהילת ציון 3, תחנה מרכזית, עפולה',            lat: 32.607,  lng: 35.294,  hours: 'א-ה 07:00-21:30 | ו 07:00-15:00 | מוצ"ש 21:00-22:45' },
-  { name: 'רי בר ביג יקנעם',                city: 'יוקנעם',        address: 'שד\' יצחק רבין 9, ביג, יקנעם',               lat: 32.660,  lng: 35.105,  hours: 'א-ה 08:30-21:30 | ו 08:00-15:00 | מוצ"ש לאחר צאת שבת' },
-  { name: 'רי בר בית שאן',                  city: 'בית שאן',      address: 'צים סנטר, בית שאן',                           lat: 32.499,  lng: 35.497,  hours: 'א-ה 08:30-22:00 | ו 08:30-15:00 | מוצ"ש 20:15-23:00' },
-  // ── דרום ───────────────────────────────────────────────────────────────
-  { name: 'רי בר ביג באר שבע',              city: 'באר שבע',      address: 'חיל ההנדסה 6, ביג, באר שבע',                  lat: 31.243,  lng: 34.812,  hours: 'א-ה 09:00-22:00 | ו 08:30-15:30 | מוצ"ש 20:15-22:30' },
-  { name: 'רי בר גרנד קניון באר שבע',       city: 'באר שבע',      address: 'שדרות דוד טוביהו 125, גרנד קניון, באר שבע',   lat: 31.250,  lng: 34.769,  hours: 'א-ה 08:30-22:15 | ו 08:30-15:30 | מוצ"ש 20:15-23:15' },
-  { name: 'רי בר קניון הנגב באר שבע',       city: 'באר שבע',      address: 'שדרות יצחק רגר 2, קניון הנגב, באר שבע',       lat: 31.247,  lng: 34.800,  hours: 'א-ה 09:00-21:30 | ו 09:00-15:00 | מוצ"ש 20:30-22:30' },
-  { name: 'רי בר קניון סימול אשדוד',        city: 'אשדוד',         address: 'הגדוד העברי 6, קניון סימול, אשדוד',           lat: 31.800,  lng: 34.650,  hours: 'א-ה 09:00-22:00 | ו 09:00-15:00 | מוצ"ש 20:30-23:00' },
-  { name: 'רי בר מרינה אשקלון',             city: 'אשקלון',        address: 'הנמל 9, מרינה, אשקלון',                       lat: 31.682,  lng: 34.556,  hours: 'א-ה 09:00-23:00 | ו 09:00-16:45 | מוצ"ש 20:30-23:45' },
-  { name: 'רי בר נתיבות',                   city: 'נתיבות',        address: 'מתחם פריז, נתיבות',                            lat: 31.418,  lng: 34.599,  hours: 'א-ה 08:45-22:45 | ו 08:45-15:00 | מוצ"ש 20:45-23:00' },
-  { name: 'רי בר כרמי גת',                  city: 'כרמי גת',      address: 'אבני חושן 1, סנטר כרמי גת',                   lat: 31.577,  lng: 34.785,  hours: 'א-ה 08:30-22:00 | ו 08:30-15:00 | מוצ"ש 20:15-22:30' },
-  { name: 'רי בר ערד',                       city: 'ערד',           address: 'התעשייה 60, ערד',                              lat: 31.258,  lng: 35.213,  hours: 'א-ה 08:30-22:00 | ו 08:30-15:45 | מוצ"ש 20:45-22:30' },
-  { name: 'רי בר דימונה',                    city: 'דימונה',        address: 'מתחם פרץ, דימונה',                             lat: 31.069,  lng: 35.032,  hours: 'א-ה 09:00-21:30 | ו 09:00-15:00 | מוצ"ש 20:30-23:00' },
-  { name: 'רי בר מצפה רמון',                city: 'מצפה רמון',    address: 'שדרות בן גוריון 2, מצפה רמון',                lat: 30.608,  lng: 34.800,  hours: 'א-ה 08:00-22:00 | ו 08:00-16:00 | מוצ"ש 20:45-22:00' },
-];
+const BASIS = {
+  kind: 'human-review',
+  note: 'rebar.co.il/our-stores/ store-locator feed: kosher:true for this branch. Feed has no level/authority ' +
+    'field anywhere in its key union — verified against the full union across every entry, not a sample.',
+};
 
-// ---------------------------------------------------------------------------
+function readNoBom(p) {
+  const buf = readFileSync(p);
+  const s = (buf[0] === 0xEF && buf[1] === 0xBB && buf[2] === 0xBF) ? buf.slice(3) : buf;
+  return JSON.parse(s.toString('utf8'));
+}
+function writeNoBom(p, data) {
+  const BOM = Buffer.from([0xEF, 0xBB, 0xBF]);
+  writeFileSync(p, Buffer.concat([BOM, Buffer.from(JSON.stringify(data, null, 2), 'utf8')]));
+}
+
 function makeId(name) {
   const hash = createHash('md5').update(name).digest('hex').slice(0, 8);
   return `rebar-${hash}`;
 }
 
-function buildPlace(b) {
-  return {
-    id: makeId(b.name),
-    name: b.name,
-    type: 'cafe',
-    cityId: b.city,
-    address: b.address,
-    location: { latitude: b.lat, longitude: b.lng },
-    locationPrecision: 'city',
+function buildNewPlace(store) {
+  const place = {
+    id: makeId(store.name),
+    name: `רי בר rebar ${store.name}`,
+    type: 'juice_bar',
+    category: 'dairy',
+    cityId: store.city,
+    address: store.address,
+    location: { latitude: store.lat, longitude: store.lng },
+    locationPrecision: 'exact',
     website: 'https://rebar.co.il',
-    instagram: 'https://www.instagram.com/rebar_israel/',
-    openingHours: b.hours,
-    category: 'parve',
-    kosherType: 'mehadrin',
+    instagram: 'https://www.instagram.com/rebarisrael/',
     source: 'manual',
-    lastVerifiedAt: '2026-07-14',
+    sourceUrl: FEED_URL,
+    lastVerifiedAt: RUN_DATE,
   };
+  recordKashrutWrite(place, 'kosherType', 'kosher', BASIS);
+  recordKashrutWrite(place, 'kosherLevel', null, BASIS);
+  recordKashrutWrite(place, 'kosherAuthorityGroup', 'unknown', BASIS);
+  return place;
 }
 
-function readJson(filePath) {
-  const raw = readFileSync(filePath);
-  const str = raw[0] === 0xEF ? raw.slice(3).toString('utf8') : raw.toString('utf8');
-  return JSON.parse(str);
+/**
+ * Wrapped in a function (rather than flat top-level script code) instead of
+ * using `process.exit()` for control flow. Found necessary on a real run:
+ * `process.exit()` tears the process down immediately, before the fetch's
+ * keep-alive socket has finished closing — libuv then aborts with
+ * "Assertion failed: !(handle->flags & UV_HANDLE_CLOSING)" and the process
+ * exits 127, on a completely successful run. A non-zero exit on success is
+ * dangerous specifically in this repo: it reads as failure, inviting a
+ * re-run, which for --apply is the one-shot-script-re-applied hazard
+ * (docs/AGENTS.md) — arriving disguised as "the first run failed."
+ *
+ * The write itself (below) is gated by an explicit `if (apply) {...} else`
+ * branch, not by an early return/exit — that gate is what actually keeps a
+ * dry run from writing anything, independent of any control-flow detail up
+ * here. The only `return` in this function is on the fetch-failure path,
+ * paired with `process.exitCode = 1` so Node still exits non-zero — just
+ * without the forced, premature teardown that produced 127 instead.
+ *
+ * EXPORTED and PARAMETERIZED specifically so the write path itself can be
+ * tested — every earlier test in this file's test suite could only assert
+ * NEGATIVES (nothing written, byte-identical, no backup); none of them
+ * could prove the write path actually works, because none of them could
+ * reach it without touching the real shared dataset. With `placesPath`/
+ * `restaurantsPath`/`backupRoot`/`apply` as parameters, a test can point
+ * this function at temp files it created itself — the real dataset is
+ * never even a candidate value, so it cannot be reached even by a bug in
+ * the test, which is stronger than worktree isolation (isolated by
+ * discipline) or dry-run-only testing (isolated by never exercising the
+ * write at all).
+ *
+ * DELIBERATELY NO DEFAULTS on any of the four — not even the real paths.
+ * A default of "the real dataset" means a test that omits a parameter (a
+ * typo, a forgotten arg, a copied call site) writes production silently
+ * and looks like it worked; that puts the safety burden back on every call
+ * site, defeating the entire point of parameterizing this. The one real
+ * caller (this file's own entry-point block, below) supplies all four
+ * explicitly — production paths then exist at exactly one call site in the
+ * whole file, and a missing one fails loudly (undefined path -> readFileSync
+ * throws) instead of silently falling back to the most dangerous value
+ * available. `apply` itself is included in this for the same reason: it
+ * used to be a module-level `APPLY` read from `process.argv` and consulted
+ * at two separate sites inside this function — two sources of truth on the
+ * one flag that gates a write is the worst possible place to have one, so
+ * it is now solely a parameter, computed once, at the entry point only.
+ */
+export async function main({ fetchImpl, placesPath, restaurantsPath, backupRoot, apply }) {
+  console.log(`=== Rebar import — ${apply ? 'APPLY' : 'DRY RUN'} ===\n`);
+
+  const places = readNoBom(placesPath);
+  const existingRebar = places.filter((p) => typeof p.id === 'string' && p.id.startsWith('rebar-'));
+  console.log(`Existing rebar-* records in places.osm.json: ${existingRebar.length}`);
+
+  // Test-only seam (subprocess level): when set and no `fetchImpl` param was
+  // passed, a spawned child process uses this instead of a real network
+  // call — needed for tests that must observe the actual process exit code,
+  // which only exists at the subprocess level and can't be reached by
+  // calling main() directly in-process. Absent, and with no `fetchImpl`
+  // param either (every real run), behavior is unchanged: fetchRebarStores()
+  // uses the real network fetch.
+  let resolvedFetchImpl = fetchImpl;
+  if (!resolvedFetchImpl) {
+    const testFeedText = process.env.REBAR_TEST_FETCH_TEXT;
+    const testFetchFail = process.env.REBAR_TEST_FETCH_FAIL === '1';
+    if (testFetchFail) resolvedFetchImpl = async () => ({ ok: false, status: 500, text: async () => '' });
+    else if (testFeedText) resolvedFetchImpl = async () => ({ ok: true, status: 200, text: async () => testFeedText });
+  }
+
+  let stores;
+  try {
+    stores = resolvedFetchImpl ? await fetchRebarStores(resolvedFetchImpl) : await fetchRebarStores();
+  } catch (err) {
+    // Node's native fetch (undici) wraps a connection-level failure as
+    // `Error: fetch failed`, with the ACTUAL reason (ECONNREFUSED,
+    // ETIMEDOUT, ENOTFOUND, a TLS error) on `err.cause`, not in
+    // `err.message` — printing `err.message` alone here would always read
+    // as the same generic "fetch failed" string regardless of cause. Found
+    // live, 2026-08-27, while proving import-rebar-exitcode.test.mjs's
+    // SECTION 1 skip-vs-fail discriminator: a regex for ECONNREFUSED could
+    // never match anything this line prints, because the code before never
+    // printed it. `fetchRebarStores`'s own HTTP-status throw (rebar-feed.mjs
+    // `HTTP ${res.status}`) already puts the status in err.message directly
+    // — this only adds the cause code for the OTHER failure shape.
+    const causeCode = err.cause?.code;
+    console.error(`✗ fetch failed: ${err.message}${causeCode ? ` (${causeCode})` : ''}`);
+    process.exitCode = 1;
+    return;
+  }
+  console.log(`Feed entries parsed: ${stores.length}\n`);
+
+  const { confirmed, ambiguousRecords, noMatchRecords, newStores } = matchRebarStores(stores, existingRebar);
+
+  const confirmedTrue = confirmed.filter((c) => c.store.kosher === true);
+  const confirmedFalse = confirmed.filter((c) => c.store.kosher === false);
+  const confirmedOther = confirmed.filter((c) => c.store.kosher !== true && c.store.kosher !== false);
+
+  const kosherFalseCount = stores.filter((s) => s.kosher === false).length;
+  const kosherNullCount = stores.filter((s) => s.kosher !== true && s.kosher !== false).length;
+
+  console.log('--- Summary ---');
+  console.log(`  confirmed match, feed says kosher:true                 : ${confirmedTrue.length}`);
+  console.log(`  confirmed match, feed says kosher:false — STOP, do not write, do not delete: ${confirmedFalse.length}`);
+  console.log(`  confirmed match, feed kosher neither true/false        : ${confirmedOther.length}`);
+  console.log(`  AMBIGUOUS — 2+ plausible candidates, never auto-resolved: ${ambiguousRecords.length}`);
+  console.log(`  existing records with NO feed candidate at all          : ${noMatchRecords.length}`);
+  console.log(`  kosher:true, zero candidates -> NEW record              : ${newStores.length}`);
+  console.log(`  (feed-wide: ${kosherFalseCount} kosher:false, ${kosherNullCount} kosher neither true/false — most have no candidate relationship to our 55 and aren't listed below)`);
+
+  if (confirmedFalse.length) {
+    console.log('\n--- CONFIRMED MATCH BUT FEED SAYS kosher:false — owner decision, not ours ---');
+    for (const { record, store } of confirmedFalse) {
+      console.log(`  ${record.id} (${record.name}) <-> "${store.name}" | ${store.address}, ${store.city}`);
+    }
+  }
+
+  if (ambiguousRecords.length) {
+    console.log('\n--- AMBIGUOUS existing records (2+ candidates — reported, never auto-resolved) ---');
+    for (const { record, candidates } of ambiguousRecords) {
+      console.log(`  ${record.id} (${record.name}) | ${record.address}`);
+      for (const c of candidates) console.log(`      candidate: "${c.name}" | ${c.address}, ${c.city} | kosher=${JSON.stringify(c.kosher)}`);
+    }
+  }
+
+  if (noMatchRecords.length) {
+    console.log('\n--- Existing rebar-* records with NO feed candidate at all (closed? renamed? investigate) ---');
+    for (const r of noMatchRecords) console.log(`  ${r.id}: ${r.name} | ${r.address}`);
+  }
+
+  if (newStores.length) {
+    console.log('\n--- NEW records (kosher:true, zero candidate existing records) ---');
+    for (const s of newStores) console.log(`  ${makeId(s.name)}: ${s.name} | ${s.address}, ${s.city} | (${s.lat}, ${s.lng})`);
+  }
+
+  if (confirmedOther.length) {
+    console.log('\n--- CONFIRMED MATCH, feed kosher field ambiguous (neither true nor false) ---');
+    for (const { record, store } of confirmedOther) {
+      console.log(`  ${record.id} (${record.name}) <-> "${store.name}": kosher=${JSON.stringify(store.kosher)}`);
+    }
+  }
+
+  // Structural gate, not a control-flow gate: the write is reachable ONLY
+  // inside this `else` branch, which requires BOTH `apply` true AND
+  // `newStores.length > 0`. This is deliberately NOT an early
+  // exit/return-based guard — an earlier fix attempt used
+  // `if (!apply) { ...; return; }` ahead of an UNGUARDED write section
+  // (correct in isolation, since `return` does stop execution here, but
+  // fragile: the write's safety depended entirely on that one early exit
+  // never being edited, reordered, or removed by anyone in the future,
+  // exactly the "nobody will do that again" pattern this project replaces
+  // with "something checks"). With an explicit `if (apply) {...}` wrapping
+  // the write itself, reaching it without --apply is impossible by
+  // construction, independent of every other branch's control flow.
+  if (!apply) {
+    // Conditional on newStores.length, not unconditional — a real run
+    // reported "NEW record: 0" and this line still said "Re-run with
+    // --apply to add the NEW records listed above" three lines below it.
+    // This report is the artifact a gated, irreversible action gets
+    // decided from in this project's own analyse -> dry-run -> report ->
+    // verify -> apply ordering; inviting --apply when there is nothing to
+    // add is not cosmetic in that context, even though --apply would
+    // currently write nothing regardless (newStores.length === 0 today).
+    console.log(
+      newStores.length > 0
+        ? '\n(dry run — nothing written. Re-run with --apply to add the NEW records listed above.)\n'
+        : '\n(dry run — nothing written. Nothing to add, so --apply would not write anything either.)\n',
+    );
+  } else if (newStores.length === 0) {
+    console.log('\nNothing to add.\n');
+  } else {
+    const newPlaces = newStores.map(buildNewPlace);
+
+    const backupDir = join(backupRoot, 'data-backups', 'import-rebar');
+    mkdirSync(backupDir, { recursive: true });
+    const stamp = new Date().toISOString().replace(/[:.]/g, '-');
+    copyFileSync(placesPath, join(backupDir, `places.osm.${stamp}.json`));
+    copyFileSync(restaurantsPath, join(backupDir, `restaurants.osm.${stamp}.json`));
+
+    const placesOut = [...places, ...newPlaces];
+    writeNoBom(placesPath, placesOut);
+
+    const restaurants = readNoBom(restaurantsPath);
+    const existingRestaurantIds = new Set(restaurants.map((r) => r.id));
+    const newForRestaurants = newPlaces.filter((p) => !existingRestaurantIds.has(p.id));
+    writeNoBom(restaurantsPath, [...restaurants, ...newForRestaurants]);
+
+    console.log(`\n✓ added ${newPlaces.length} new record(s) to places.osm.json, ${newForRestaurants.length} to restaurants.osm.json.`);
+    console.log(`  backup: ${backupDir}\n`);
+  }
 }
 
-function writeJson(filePath, data) {
-  const json = JSON.stringify(data, null, 2);
-  writeFileSync(filePath, Buffer.concat([BOM, Buffer.from(json, 'utf8')]));
+// Self-executes only when this file is the entry module Node was invoked
+// with — not on import (e.g. by a test importing `main` directly). Not an
+// `endsWith` on argv[1]: that breaks on symlinks and Windows path-case
+// differences, and getting it wrong means importing this module runs it —
+// precisely what this guard exists to prevent, and the test file is
+// exactly what imports it.
+if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+  await main({
+    placesPath: PLACES_PATH,
+    restaurantsPath: RESTAURANTS_PATH,
+    backupRoot: root,
+    apply: process.argv.slice(2).includes('--apply'),
+  });
 }
-
-function mergeInto(existing, newRecords) {
-  const existingIds = new Set(existing.map(r => r.id));
-  const toAdd = newRecords.filter(r => !existingIds.has(r.id));
-  return { merged: [...existing, ...toAdd], added: toAdd.length, skipped: newRecords.length - toAdd.length };
-}
-
-console.log('=== Rebar Import ===');
-const places = REBAR_BRANCHES.map(buildPlace);
-console.log(`Building ${places.length} records...`);
-
-const restaurantsPath = path.join(DATA_DIR, 'restaurants.osm.json');
-const r = mergeInto(readJson(restaurantsPath), places);
-writeJson(restaurantsPath, r.merged);
-console.log(`restaurants.osm.json: +${r.added} added, ${r.skipped} skipped`);
-
-const placesPath = path.join(DATA_DIR, 'places.osm.json');
-const p = mergeInto(readJson(placesPath), places);
-writeJson(placesPath, p.merged);
-console.log(`places.osm.json:      +${p.added} added, ${p.skipped} skipped`);
-
-console.log('\nDone!');

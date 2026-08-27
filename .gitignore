@@ -36,6 +36,9 @@ yarn-error.*
 # typescript
 *.tsbuildinfo
 
+# jest coverage output (npm run verify / npm test regenerates on every run)
+coverage/
+
 # generated native folders
 /ios
 /android
@@ -45,3 +48,15 @@ yarn-error.*
 
 # Downloaded kashrut certificate PDFs (regenerate with importers/tzohar/extract-cert-expiry.mjs)
 importers/tzohar/cert-cache/
+
+# Historical dataset snapshots — kept on disk, out of git (see docs/ARCHITECTURE_REVIEW.md P1-11)
+data-backups/
+*.bak-location-shape
+*.bak-dedupe
+*.bak-orphan-cities
+
+# Store credentials — never commit (referenced by eas.json submit profiles)
+secrets/
+*-service-account.json
+*.keystore
+AuthKey_*.p8

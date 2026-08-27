@@ -1,0 +1,468 @@
+{
+  "label": "COMPOUND (21 reviewQueue raw strings)",
+  "rawStringCount": 21,
+  "totalRecordsMatched": 22,
+  "rawStringsWithNoMatchingRecord": [],
+  "byRawString": {
+    "בד\"צ בית ישראל, העדה החרדית": [
+      {
+        "id": "9000053",
+        "name": "פיצה שמש",
+        "address": "בן גוריון 5, לוד",
+        "cityId": "לוד",
+        "certifiedBy_raw": "בד\"צ בית ישראל, העדה החרדית",
+        "kosherAuthority": "badatz_edah_hachareidis",
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://pizza-shemesh.co.il/סניף-לוד-רחוב-בן-גוריון-5/",
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": null,
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. Two badatz names in one field (בד\"צ בית ישראל and העדה החרדית) — may be two certifications or a sub-body; collapsing them is forbidden (Rule 2), so only the shared group (badatz) is safe."
+      },
+      {
+        "id": "manual-pizza-shemesh-lod-foodtruck",
+        "name": "פיצה שמש (פודטראק)",
+        "address": "שבט ראובן, גני איילון, לוד",
+        "cityId": "לוד",
+        "certifiedBy_raw": "בד\"צ בית ישראל, העדה החרדית",
+        "kosherAuthority": "badatz_edah_hachareidis",
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://pizza-shemesh.co.il/סניף-לוד-פודטראק-לוד-שבט-ראובן-גני-אי/",
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": null,
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. Two badatz names in one field (בד\"צ בית ישראל and העדה החרדית) — may be two certifications or a sub-body; collapsing them is forbidden (Rule 2), so only the shared group (badatz) is safe."
+      }
+    ],
+    "בד\"ץ העדה החרדית + בית יוסף": [
+      {
+        "id": "manual-winery-1848",
+        "name": "יקב 1848",
+        "address": "אזור תעשייה מישור אדומים",
+        "cityId": "מישור אדומים",
+        "certifiedBy_raw": "בד\"ץ העדה החרדית + בית יוסף",
+        "kosherAuthority": null,
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://1848.co.il",
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": null,
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. Two distinct badatzim in one field (העדה החרדית + בית יוסף); it cannot be reduced to a single authority (Rule 2). Needs a multi-authority representation."
+      }
+    ],
+    "רבנות מטה בנימין + בית יוסף + הרב לנדא": [
+      {
+        "id": "manual-winery-psagot",
+        "name": "יקב פסגות",
+        "address": "רחוב הכורם 8, אזור תעשייה שער בנימין",
+        "cityId": "שער בנימין",
+        "certifiedBy_raw": "רבנות מטה בנימין + בית יוסף + הרב לנדא",
+        "kosherAuthority": null,
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://psagotwines.com",
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": null,
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. Three certifiers across different groups (רבנות מטה בנימין, בית יוסף, הרב לנדא); no single authority or group can be assigned. Needs a multi-authority representation."
+      }
+    ],
+    "מכון אונגר + רבנות מטה בנימין": [
+      {
+        "id": "manual-winery-tanya",
+        "name": "יקב תניא",
+        "address": "עפרה, ארץ בנימין",
+        "cityId": "עפרה",
+        "certifiedBy_raw": "מכון אונגר + רבנות מטה בנימין",
+        "kosherAuthority": null,
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://tanyawinery.co.il",
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": null,
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. Compound value; מכון אונגר is a separate supervision body whose role alongside the Mateh Binyamin rabbinate is unclear."
+      }
+    ],
+    "בד\"ץ העדה החרדית ורבנות מודיעין עילית": [
+      {
+        "id": "manual-pastella-kiryat-sefer",
+        "name": "פסטלה",
+        "address": "שערי תשובה 31, מודיעין עילית",
+        "cityId": "קריית ספר",
+        "certifiedBy_raw": "בד\"ץ העדה החרדית ורבנות מודיעין עילית",
+        "kosherAuthority": null,
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": null,
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": null,
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. Two certifiers from different groups (העדה החרדית + רבנות מודיעין עילית) joined by \"ו\"; cannot be reduced to one authority."
+      }
+    ],
+    "בד\"ץ בית יוסף / רבנות מהדרין": [
+      {
+        "id": "manual-maafe-neeman-ashdod-star",
+        "name": "מאפה נאמן אשדוד סטאר סנטר",
+        "address": "ז'בוטינסקי 45, אשדוד",
+        "cityId": "אשדוד",
+        "certifiedBy_raw": "בד\"ץ בית יוסף / רבנות מהדרין",
+        "kosherAuthority": "badatz_beit_yosef",
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://www.maafe.co.il",
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": null,
+        "registry_suggestedLevel": "mehadrin",
+        "registry_why": "Proposer uncertain; challenger found no defect. The slash offers two alternative certifiers (בד\"ץ בית יוסף or an unnamed mehadrin rabbanut); naming one would over-claim. Only the mehadrin level is safe."
+      }
+    ],
+    "רבנות ירושלים / בד\"צ קהילות": [
+      {
+        "id": "osm-node-13799211350",
+        "name": "שאבעסBISTRO",
+        "address": "רחוב אבן שפרוט 7, ירושלים",
+        "cityId": "ירושלים",
+        "certifiedBy_raw": "רבנות ירושלים / בד\"צ קהילות",
+        "kosherAuthority": null,
+        "kosherLevel": null,
+        "sourceFields": {
+          "website": null,
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rabbinate-jerusalem",
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. Two authorities in one value: the Jerusalem rabbinate (clear) plus \"בד\"צ קהילות\", which the proposer could not identify. The second certifier must not be dropped — needs multi-authority handling."
+      }
+    ],
+    "בד\"ץ בית יוסף + רבנות הר חברון": [
+      {
+        "id": "manual-winery-la-foret-blanche",
+        "name": "יקב לה פורה בלאנש",
+        "address": "מושב בית יתיר, מצדות יהודה",
+        "cityId": "בית יתיר",
+        "certifiedBy_raw": "בד\"ץ בית יוסף + רבנות הר חברון",
+        "kosherAuthority": null,
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://lfbwinery.com",
+          "sourceUrl": "https://lfbwinery.com",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "badatz-beit-yosef",
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. Two certifiers: בד\"ץ בית יוסף and the Har Hevron regional rabbinate. The primary was recorded but the second must not be lost — needs a multi-authority representation."
+      }
+    ],
+    "בד\"ץ מחזיקי הדת (בעלז) + בית יוסף": [
+      {
+        "id": "manual-winery-abouhav",
+        "name": "יקב אבוהב",
+        "address": "סמטת אבוהב 1, הרובע האמנים, צפת",
+        "cityId": "צפת",
+        "certifiedBy_raw": "בד\"ץ מחזיקי הדת (בעלז) + בית יוסף",
+        "kosherAuthority": null,
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://www.abouhav-winery.com",
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "badatz-machzikei-hadass-belz",
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. Two certifiers: Badatz Machzikei Hadass (Belz) and בד\"ץ בית יוסף. The second must not be lost — needs a multi-authority representation. badatz-machzikei-hadass-belz is suggested but not registered; it enters the registry only when this record is resolved."
+      }
+    ],
+    "בד\"ץ העדה החרדית + רבנות מטה יהודה": [
+      {
+        "id": "manual-winery-teperberg",
+        "name": "יקב טפרברג",
+        "address": "קיבוץ צרעה, ד.נ. שמשון",
+        "cityId": "צרעה",
+        "certifiedBy_raw": "בד\"ץ העדה החרדית + רבנות מטה יהודה",
+        "kosherAuthority": null,
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://teperbergwinery.co.il",
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "badatz-edah-hachareidis",
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. Two certifiers: the Edah HaChareidis and the Mateh Yehuda regional rabbinate. The second must not be lost — needs a multi-authority representation."
+      }
+    ],
+    "רבנות מודיעין מהדרין ובד\"ץ בית יוסף": [
+      {
+        "id": "manual-roza-modiin",
+        "name": "רוזה",
+        "address": "שד' המלאכות 1, ישפרו סנטר, מודיעין",
+        "cityId": "מודיעין",
+        "certifiedBy_raw": "רבנות מודיעין מהדרין ובד\"ץ בית יוסף",
+        "kosherAuthority": null,
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://rozamodiin.co.il",
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "rabbinate-modiin-maccabim-reut",
+        "registry_suggestedLevel": "mehadrin",
+        "registry_why": "Proposer uncertain; challenger found no defect. Two certifiers: the Modiin rabbinate at mehadrin and בד\"ץ בית יוסף. The level is certain and the primary authority is recorded, but the Beit Yosef certification must not be lost."
+      }
+    ],
+    "OU + רבנות גליל עליון + בית דין יורה דעה": [
+      {
+        "id": "manual-winery-dalton",
+        "name": "יקב דלתון",
+        "address": "פארק התעשייה דלתון, מרום גליל",
+        "cityId": "דלתון",
+        "certifiedBy_raw": "OU + רבנות גליל עליון + בית דין יורה דעה",
+        "kosherAuthority": null,
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://www.dalton-winery.com",
+          "sourceUrl": "https://ontopo.com/he/il/wineries/tags/kosher",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": null,
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. Names three distinct authorities (OU, רבנות גליל עליון, בית דין יורה דעה) spanning different groups; a one-authority schema cannot hold them."
+      }
+    ],
+    "בד\"ץ בית יוסף + OK": [
+      {
+        "id": "manual-winery-tulip",
+        "name": "יקב טוליפ",
+        "address": "כפר תקווה, קריית טבעון",
+        "cityId": "קריית טבעון",
+        "certifiedBy_raw": "בד\"ץ בית יוסף + OK",
+        "kosherAuthority": null,
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://tulip-winery.co.il",
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": null,
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. Two authorities named (בד\"ץ בית יוסף and the American OK); neither may be silently dropped — a human should decide the primary or record both."
+      }
+    ],
+    "הרב אליעזר מלמד + OK": [
+      {
+        "id": "manual-winery-har-bracha",
+        "name": "יקב הר ברכה",
+        "address": "הר ברכה 84, לב השומרון",
+        "cityId": "הר ברכה",
+        "certifiedBy_raw": "הרב אליעזר מלמד + OK",
+        "kosherAuthority": null,
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://brachawineries.com",
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": null,
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. Two authorities named (Rav Eliezer Melamed and the American OK), and Rav Melamed cannot be verified as a kashrut-issuing body or placed in a group."
+      }
+    ],
+    "בד\"ץ עדה חרדית ובד\"ץ בית יוסף": [
+      {
+        "id": "manual-hindik-safed",
+        "name": "הינדיק",
+        "address": "אזור תעשייה, צפת",
+        "cityId": "צפת",
+        "certifiedBy_raw": "בד\"ץ עדה חרדית ובד\"ץ בית יוסף",
+        "kosherAuthority": null,
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://hindik-tzfat.co.il",
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": null,
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. Two distinct badatzim named (העדה החרדית and בית יוסף) with equal standing; the group is safe but the single-authority field cannot hold both."
+      }
+    ],
+    "בד\"ץ בית יוסף ובהשגחת הרב מחפוד": [
+      {
+        "id": "manual-gehalim-rehovot",
+        "name": "גחלים",
+        "address": "המדע 1, פארק המדע, רחובות",
+        "cityId": "רחובות",
+        "certifiedBy_raw": "בד\"ץ בית יוסף ובהשגחת הרב מחפוד",
+        "kosherAuthority": null,
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://gehalim-rehovot.co.il",
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": null,
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. Two distinct badatzim named (בית יוסף and הרב מחפוד); the group is safe but the single-authority field cannot hold both."
+      }
+    ],
+    "רבנות ירושלים ובד\"צ העדה החרדית": [
+      {
+        "id": "osm-node-13431169858",
+        "name": "פיצה יהלי סנדויץ",
+        "address": "רחוב רמת הגולן 8, ירושלים",
+        "cityId": "ירושלים",
+        "certifiedBy_raw": "רבנות ירושלים ובד\"צ העדה החרדית",
+        "kosherAuthority": null,
+        "kosherLevel": null,
+        "sourceFields": {
+          "website": null,
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": null,
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. Names TWO distinct authorities (rabbinate-jerusalem AND badatz-edah-hachareidis); a single-value mapping would silently drop one, so this needs multi-authority handling."
+      }
+    ],
+    "בד\"ץ יורה דעה + OUP": [
+      {
+        "id": "manual-winery-ramat-hebron",
+        "name": "יקב רמת חברון",
+        "address": "קרית ארבע-חברון",
+        "cityId": "קרית ארבע",
+        "certifiedBy_raw": "בד\"ץ יורה דעה + OUP",
+        "kosherAuthority": null,
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": null,
+          "sourceUrl": "https://gushetzion-winery.co.il",
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": null,
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. Two certifiers: בד\"ץ יורה דעה (which per Rule 2 cannot be confidently equated with Rav Machpud's body from this string alone) plus \"OUP\", an acronym that cannot be identified. No safe single mapping."
+      }
+    ],
+    "OK + עדה חרדית + רבנות מטה בנימין": [
+      {
+        "id": "manual-winery-shiloh",
+        "name": "יקב שילה",
+        "address": "אזור תעשייה שילה",
+        "cityId": "שילה",
+        "certifiedBy_raw": "OK + עדה חרדית + רבנות מטה בנימין",
+        "kosherAuthority": null,
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://www.shilohwinery.com",
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": null,
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. Three distinct certifiers (OK Kosher Certification, בד\"ץ העדה החרדית, and the Mateh Binyamin regional rabbinate); a single-value mapping would drop two."
+      }
+    ],
+    "בד\"ץ קהילות ורבנות ירושלים מהדרין": [
+      {
+        "id": "manual-ricotta-jerusalem",
+        "name": "ריקוטה",
+        "address": "קריית המדע 3, ירושלים",
+        "cityId": "ירושלים",
+        "certifiedBy_raw": "בד\"ץ קהילות ורבנות ירושלים מהדרין",
+        "kosherAuthority": null,
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://ricotta.co.il/",
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": null,
+        "registry_suggestedLevel": "mehadrin",
+        "registry_why": "Proposer uncertain; challenger found no defect. Two authorities (בד\"ץ קהילות AND the Jerusalem local rabbinate); only the explicitly stated mehadrin level can be recorded safely."
+      }
+    ],
+    "בד\"ץ אגודת ישראל והרבנות המקומית": [
+      {
+        "id": "manual-maafe-neeman-bnei-brak-baser",
+        "name": "מאפה נאמן בני ברק מגדלי בסר",
+        "address": "כינרת 2, בני ברק",
+        "cityId": "בני ברק",
+        "certifiedBy_raw": "בד\"ץ אגודת ישראל והרבנות המקומית",
+        "kosherAuthority": null,
+        "kosherLevel": "mehadrin",
+        "sourceFields": {
+          "website": "https://www.maafe.co.il",
+          "sourceUrl": null,
+          "provenance": null,
+          "kosherCertUrl": null,
+          "certificateValidUntil": null
+        },
+        "registry_suggestedAuthorityId": "badatz-agudat-yisrael",
+        "registry_suggestedLevel": null,
+        "registry_why": "Proposer uncertain; challenger found no defect. Badatz Agudat Yisrael is the only identifiable body here; the co-certifier \"הרבנות המקומית\" names no specific rabbinate (Rule 1) and would be dropped by a single-value mapping — flagged so a human can attach the local rabbinate from the record's city."
+      }
+    ]
+  }
+}

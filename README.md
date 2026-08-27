@@ -1,95 +1,118 @@
-# קרוב — Kosher Places (Israel) · MVP
+# קרוב (Karov) — כל מה שיהודי צריך, קרוב אליך
 
-אפליקציית מובייל למציאת מקומות כשרים בישראל. עברית, RTL, מהירה ופשוטה.
-A native mobile MVP for finding kosher places in Israel. Hebrew, RTL, mock-data first, built to later connect to real data via Supabase.
+אפליקציה למציאת מקומות שיהודי צריך בקרבת מקום — מסעדות כשרות, בתי כנסת, מקוואות, בתי חב״ד וקברי צדיקים — יחד עם תוכן יומי (פרשת שבוע, זמני היום, ברכות, תהילים).
+עברית, RTL, ו‑**7,506 מקומות אמיתיים ב‑656 ערים**, שנארזים עם האפליקציה ועובדים גם ללא רשת.
+
+A Hebrew-first, RTL app for finding kosher places across Israel, plus daily Jewish content. Runs on iOS, Android and the web from one React Native codebase.
+
+---
 
 ## Stack
-- **Expo** (SDK 56) + **React Native** + **TypeScript**
-- **React Navigation** — bottom tabs (בית / מפה / רשימה) + native stack
-- **MapLibre** + **OpenStreetMap** raster tiles (no Google, no API keys, no paid services)
-- **Supabase** — wired as a future data source; the app currently runs on mock data
-- No authentication yet
 
-## Running
+| | |
+|---|---|
+| Runtime | **Expo SDK 57** · React Native 0.86 · React 19.2 · TypeScript 6 (`strict`) |
+| Navigation | React Navigation — native stack + bottom tabs |
+| מפה | **Leaflet + OpenStreetMap** — WebView ב‑native, iframe ב‑web. בלי Google, בלי מפתחות API |
+| חיפוש | MiniSearch, עם נרמול עברית (ניקוד, גרשיים) |
+| שפות | he · en · es · ru · fr (`src/i18n`) |
+| גופן | Heebo (`@expo-google-fonts/heebo`) |
+| Backend | אין. הדאטה נארז עם האפליקציה. Supabase מחווט כמקור עתידי (`DATA_SOURCE`) |
+
+**אילוצים:** בלי Google Maps · בלי שירותים בתשלום · דאטה חוקי/חינמי/מבוסס‑אמת · additive‑only, בלי מחיקות.
+
+---
+
+## הרצה
 
 ```bash
 npm install
-npx expo start
+npm start          # Expo — a לאנדרואיד, i ל-iOS, w לדפדפן
 ```
 
-- **Expo Go**: the whole app runs, including a functional list-based map fallback.
-- **Map (real MapLibre)**: MapLibre is a native module and does **not** run in Expo Go.
-  To see the real map, build a dev client:
-  ```bash
-  npx expo prebuild
-  npx expo run:android   # or run:ios (macOS)
-  ```
-  The app auto-detects the runtime: Expo Go → fallback, dev/standalone build → MapLibre.
+| פקודה | מה היא עושה |
+|---|---|
+| `npm run web` / `android` / `ios` | הרצה על פלטפורמה מסוימת |
+| `npm run verify` | **הצ'ק שה‑CI מריץ**: typecheck + lint + test + ולידציית דאטה |
+| `npm run typecheck` | `tsc --noEmit` |
+| `npm run lint` / `lint:fix` | ESLint (כולל שומרי הסף של ה‑design system וה‑i18n) |
+| `npm test` / `test:watch` | Jest |
+| `npm run data:validate` | בדיקת שלמות של `places.osm.json` |
+| `npm run build:web` | `expo export --platform web` → `dist/` |
 
-## Project structure
+---
+
+## מבנה הפרויקט
 
 ```
 src/
-  components/        Reusable UI (PlaceCard, KosherBadge, Chip, FilterSheet, …)
-    map/             MapView abstraction (Leaflet + OSM in a WebView / iframe)
-  context/           Filters, Location, Favorites — app-wide state
+  components/        רכיבים משותפים (PlaceCard, KosherBadge, FilterSheet, …)
+    map/             MapView → LeafletMap (.tsx = WebView, .web.tsx = iframe)
+    home/            כרטיסי מסך הבית
+    karov-lev/       "קרוב ללב" — מידות ותוכן אישי
+  context/           Filters · Location · Favorites · Language
   data/
-    placesRepository.ts  THE data entry point — exports the placesRepository singleton
-    config.ts        DATA_SOURCE switch ('mock' | 'supabase')
-    seed/            ADMIN SEED DATA (places.seed.ts, cities.seed.ts) — edit these
-    repository/      PlacesRepository interface + Mock + Supabase implementations
-  lib/
-    supabase.ts      Supabase client placeholder + setup notes (not wired yet)
-  hooks/             usePlaces, usePlace, useCities, useLocation
-  i18n/              Hebrew strings (single source of truth for UI text)
-  navigation/        RootNavigator, TabNavigator, route types
-  screens/           Home, Map, List, PlaceDetail, Report, Favorites
-  theme/             colors, spacing, typography
-  types/             Place, City, PlaceFilters, IssueReport
-  utils/             geo (distance), navigation (Waze/dialer), kosher, placeType
+    placesRepository.ts   נקודת הכניסה היחידה לדאטה (singleton)
+    config.ts             מתג DATA_SOURCE: 'osm' (פעיל) | 'mock' | 'supabase'
+    repository/           ממשק PlacesRepository + Osm/Mock/Supabase
+    generated/            הדאטה החי — נבנה ע"י importers/ ו-scripts/
+    seed/                 seed לדמו בלבד. אסור לייבא מחוץ ל-data/
+    search/               אינדקס MiniSearch
+    jewish-content/       קטלוג תוכן יומי + דירוג דטרמיניסטי
+  hooks/             usePlaces, useParasha, useHalachicDate, …
+  i18n/              כל טקסט ה-UI
+  navigation/        RootNavigator · TabNavigator · טיפוסי מסלולים
+  screens/           מסכים
+  theme/             colors · spacing · typography — מקור האמת לעיצוב
+  types/             Place · City · PlaceFilters · IssueReport
+  utils/             geo · zmanim · openingHours · kosher · navigation
 ```
 
-All screens read data through hooks/actions that call `data/placesRepository.ts`.
-No screen imports the seed/mock files directly.
+### חוקי הארכיטקטורה (נאכפים ב-ESLint)
 
-## Features
-1. **Home** — "מה יש סביבי?" CTA, shortcuts (restaurants / synagogues / favorites), nearby places
-2. **Map** — Leaflet + OpenStreetMap (WebView/iframe), pins per place, tap → bottom card
-3. **List** — search by name/city + sort (name / distance)
-4. **Place detail** — info, Waze navigation, call, report, favorite toggle
-5. **Filters** — city · kosher type · meat/dairy/parve
-6. **Location** — foreground permission, shared across screens, default to central Israel
-7. **Waze** — `openWaze()` deep-links into the app (web fallback) — `utils/navigation.ts`
-8. **Report wrong info** — issue type + free text
-9. **Admin seed** — `src/data/seed/*.seed.ts`
-10. **Clean data layer** — screens depend only on `data/placesRepository.ts`
+1. **מסכים לא נוגעים בדאטה ישירות.** הכל דרך `placesRepository`. אסור לייבא מ-`data/generated/*` או מ-`data/seed/*` מחוץ לשכבת הדאטה.
+2. **אין צבע גולמי מחוץ ל-`src/theme/`.** צבע חדש נכנס ל-`colors.ts`.
+3. **אין מחרוזת עברית קשיחה** ב-`screens/`, `components/` או `navigation/` — הכל דרך `src/i18n` ו-`useLanguage()`.
 
-## Data
+כללים 2–3 הם כרגע `warn` עם backlog ידוע (ראה `docs/ARCHITECTURE_REVIEW.md`); הם עולים ל-`error` ספרייה‑ספרייה ככל שהיא מנוקה.
 
-Real places come from **OpenStreetMap** (free, ODbL — attribution shown on the map).
+---
 
-```bash
-node scripts/fetch-osm-places.mjs   # refresh src/data/generated/places.osm.json
-```
+## הדאטה
 
-It pulls synagogues + `diet:kosher` food places around the 8 cities (~895 places).
-OSM has no official kosher-certification data, so those fields are intentionally
-left empty — never fabricated. Switch sources with `DATA_SOURCE` in `data/config.ts`
-(`osm` | `mock` | `supabase`).
+`src/data/generated/places.osm.json` הוא מקור האמת בזמן ריצה. הוא נבנה מ:
 
-## Connecting Supabase later
+| מקור | תפקיד |
+|---|---|
+| OpenStreetMap (Overpass) | בסיס — בתי כנסת, מסעדות, מקוואות |
+| data.gov.il / CKAN | מקוואות רשמיים |
+| ArcGIS REST (לפי עיר) | ספריות בתי כנסת עירוניות |
+| מועצות דתיות (SabaiApps) | בתי כנסת ומקוואות |
+| Chabad.org | בתי חב״ד |
+| תעודות כשרות צהר | תוקף תעודה ופרטי כשרות |
 
-The data layer is the only thing that changes:
+הפרטים המלאים ב-[`DATA_SOURCES.md`](DATA_SOURCES.md) וב-[`importers/README.md`](importers/README.md).
 
-1. `npx expo install @supabase/supabase-js`
-2. Fill `.env` from `.env.example`
-3. Wire up `src/lib/supabase.ts` (`createClient`)
-4. Implement `SupabasePlacesRepository` (map snake_case rows → domain types)
-5. Flip `DATA_SOURCE` to `'supabase'` in `src/data/config.ts`
+**כללי ברזל:** additive‑only · אפס מחיקות · provenance לכל רשומה · גיבוי + שער ולידציה בכל merge.
 
-No screen or hook needs to change.
+`npm run data:validate` אוכף את זה: כשלים מבניים (id כפול, קואורדינטה מחוץ לישראל, טיפוס לא מוכר, `location` בצורת `{lat,lng}` שנופלת בשקט) מפילים את הבנייה; פערי איכות ידועים נעולים בתקרה ב-`scripts/data-quality-baseline.json` ואסור להם לגדול.
 
-## Editing the data (admin)
+גיבויים היסטוריים של הדאטה יושבים ב-`data-backups/` — על הדיסק, מחוץ ל-git.
 
-Open `src/data/seed/places.seed.ts` and copy an entry. Each place needs a unique
-`id`, a `cityId` that exists in `cities.seed.ts`, and a `location { latitude, longitude }`.
+---
+
+## תיעוד
+
+| מסמך | תוכן |
+|---|---|
+| [`docs/ARCHITECTURE_REVIEW.md`](docs/ARCHITECTURE_REVIEW.md) | סקירה ארכיטקטונית, ממצאים לפי חומרה, ארכיטקטורת יעד, תוכנית CI/CD |
+| [`STATUS.md`](STATUS.md) | דוח מצב — מה נבנה, כמה רשומות, מה פתוח |
+| [`DATA_SOURCES.md`](DATA_SOURCES.md) | כל מקור דאטה ורישיונו |
+| [`AGENTS.md`](AGENTS.md) | הנחיות לסוכנים העובדים על הריפו |
+
+---
+
+## רישוי וייחוס
+
+הקוד: MIT ([`LICENSE`](LICENSE)).
+הדאטה כולל רשומות מ‑OpenStreetMap, שמופצות תחת **ODbL** ומחייבות ייחוס — ראה `DATA_SOURCES.md`.

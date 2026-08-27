@@ -1,4 +1,4 @@
-import { Ionicons } from '@expo/vector-icons';
+import Ionicons from '@expo/vector-icons/Ionicons';
 import { Place, PlaceType } from '../types';
 
 /** Hebrew label for a place type. */

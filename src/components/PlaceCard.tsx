@@ -1,41 +1,50 @@
 import React, { useState } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
-import { Place } from '../types';
-import { colors, radius, shadow, spacing } from '../theme';
+import { Pressable, Text, View } from 'react-native';
+import Ionicons from '@expo/vector-icons/Ionicons';
+import { isFoodType, Place } from '../types';
+import { makeStyles, radius, shadow, spacing, useTheme } from '../theme';
+import type { Tokens } from '../theme';
 import { useLanguage } from '../context/LanguageContext';
 import { transliterateHebrew } from '../utils/transliterate';
-import { categoryLabel, getKosherLabel } from '../utils/kosher';
+import { categoryLabel, getPrimaryKosherLabel } from '../utils/kosher';
+import { isCertificateExpired } from '../utils/certificate';
 import { displayPlaceName, getPlaceEmoji, placeTypeLabel } from '../utils/placeType';
 import { formatDistance } from '../utils/geo';
 import { isCurrentlyOpen, todayHoursStr } from '../utils/openingHours';
 import { NavPickerModal } from './NavPickerModal';
 
 
-const CHIP_COLOR: Record<Place['type'], string> = {
-  restaurant:      colors.categoryRestaurant,
-  fast_food:       colors.categoryFastFood,
-  cafe:            colors.categoryCafe,
-  coffee_cart:     colors.categoryCoffeeCart,
-  juice_bar:       colors.categoryCoffeeCart,
-  ice_cream_parlor:colors.categoryCafe,
-  bakery:          colors.categoryFastFood,
-  winery:          colors.categoryWinery,
-  synagogue:       colors.categorySynagogue,
-  mikveh:          colors.categoryMikveh,
-  chabad_house:    colors.chabad,
-  tzaddik_grave:   colors.tzaddik,
-};
+function chipColorFor(theme: Tokens): Record<Place['type'], string> {
+  return {
+    restaurant:      theme.categoryRestaurant,
+    fast_food:       theme.categoryFastFood,
+    cafe:            theme.categoryCafe,
+    coffee_cart:     theme.categoryCoffeeCart,
+    juice_bar:       theme.categoryCoffeeCart,
+    ice_cream_parlor:theme.categoryCafe,
+    bakery:          theme.categoryFastFood,
+    winery:          theme.categoryWinery,
+    synagogue:       theme.categorySynagogue,
+    mikveh:          theme.categoryMikveh,
+    chabad_house:    theme.chabad,
+    tzaddik_grave:   theme.tzaddik,
+  };
+}
 
 // Kashrut badge color by authority group
-function kosherBadgeColor(place: { kosherLevel?: string | null; kosherAuthorityGroup?: string | null }): string {
-  if (place.kosherAuthorityGroup === 'badatz') return '#166534';
-  if (place.kosherLevel === 'mehadrin') return '#166534';
-  if (place.kosherAuthorityGroup === 'rabbinate') return '#1e40af';
-  return colors.primary;
+function kosherBadgeColor(
+  place: { kosherLevel?: string | null; kosherAuthorityGroup?: string | null },
+  theme: Tokens,
+): string {
+  if (place.kosherAuthorityGroup === 'badatz') return theme.kosherPremium;
+  if (place.kosherLevel === 'mehadrin') return theme.kosherPremium;
+  if (place.kosherAuthorityGroup === 'rabbinate') return theme.info;
+  return theme.primary;
 }
 
 function StarRow({ rating }: { rating: number | null | undefined }) {
+  const theme = useTheme();
+  const starStyles = useStarStyles();
   const filled = rating != null ? Math.round(rating) : 0;
   return (
     <View style={starStyles.row}>
@@ -44,7 +53,7 @@ function StarRow({ rating }: { rating: number | null | undefined }) {
           key={i}
           name={i <= filled ? 'star' : 'star-outline'}
           size={13}
-          color={i <= filled ? colors.star : colors.border}
+          color={i <= filled ? theme.star : theme.border}
         />
       ))}
       {rating != null ? (
@@ -56,11 +65,11 @@ function StarRow({ rating }: { rating: number | null | undefined }) {
   );
 }
 
-const starStyles = StyleSheet.create({
+const useStarStyles = makeStyles((t) => ({
   row: { flexDirection: 'row', alignItems: 'center', gap: 3 },
-  value: { fontSize: 12, fontWeight: '700', color: colors.text, marginRight: 2 },
-  none: { fontSize: 11, color: colors.textFaint, marginRight: 2 },
-});
+  value: { fontSize: 12, fontWeight: '700', color: t.text, marginRight: 2 },
+  none: { fontSize: 11, color: t.textFaint, marginRight: 2 },
+}));
 
 interface PlaceCardProps {
   place: Place;
@@ -73,37 +82,44 @@ const SUB_TYPE_LABEL: Record<string, string> = {
   chef_restaurant: 'מסעדת שף',
 };
 
-const SUB_TYPE_COLOR: Record<string, string> = {
-  fast_food: colors.categoryFastFood,
-  chef_restaurant: '#B5451B',
-};
+function subTypeColorFor(theme: Tokens): Record<string, string> {
+  return {
+    fast_food: theme.categoryFastFood,
+    chef_restaurant: theme.categoryChefRestaurant,
+  };
+}
 
 export function PlaceCard({ place, distanceKm, onPress }: PlaceCardProps) {
+  const theme = useTheme();
+  const styles = useStyles();
   const { t, locale } = useLanguage();
   const [navOpen, setNavOpen] = useState(false);
   const isHe = locale === 'he';
   const heName = displayPlaceName(place);
   const displayName = isHe ? heName : transliterateHebrew(heName);
   const emoji = getPlaceEmoji(place);
-  const chipColor = place.subType ? (SUB_TYPE_COLOR[place.subType] ?? CHIP_COLOR[place.type]) : CHIP_COLOR[place.type];
+  const chipColor = place.subType
+    ? (subTypeColorFor(theme)[place.subType] ?? chipColorFor(theme)[place.type])
+    : chipColorFor(theme)[place.type];
   const typeLabel = place.subType ? (SUB_TYPE_LABEL[place.subType] ?? placeTypeLabel[place.type]) : placeTypeLabel[place.type];
 
-  const isFoodType = ['restaurant', 'fast_food', 'cafe', 'coffee_cart', 'juice_bar', 'ice_cream_parlor', 'bakery'].includes(place.type);
+  const isFood = isFoodType(place.type);
   const openStatus  = isCurrentlyOpen(place.openingHours, place.location);
   const todayHours  = todayHoursStr(place.openingHours);
   const showHoursRow = todayHours !== null || openStatus !== null;
-  const kosherLabel = isFoodType ? getKosherLabel(place) : null;
-  const kosherColor = kosherBadgeColor(place);
+  const kosherLabel = isFood ? getPrimaryKosherLabel(place, t.kosher) : null;
+  const kosherColor = kosherBadgeColor(place, theme);
 
   // Second info chip (category / nusach)
   const subChip =
-    isFoodType && place.category ? categoryLabel[place.category]
+    isFood && place.category ? categoryLabel[place.category]
     : place.type === 'synagogue' && place.nusach ? place.nusach
     : place.type === 'mikveh' && place.mikvehGender ? place.mikvehGender
     : null;
 
   // Certification line
-  const certLine = isFoodType && place.certifiedBy ? place.certifiedBy : null;
+  const certLine = isFood && place.certifiedBy ? place.certifiedBy : null;
+  const certExpired = isFood && isCertificateExpired(place);
 
   return (
     <Pressable
@@ -150,7 +166,7 @@ export function PlaceCard({ place, distanceKm, onPress }: PlaceCardProps) {
 
       {/* Address + navigate button */}
       <View style={styles.addressRow}>
-        <Ionicons name="location-outline" size={12} color={colors.textMuted} />
+        <Ionicons name="location-outline" size={12} color={theme.textMuted} />
         <Text style={styles.address} numberOfLines={2}>
           {place.locationPrecision === 'city'
             ? `${place.address} · ${t.detail.approxLocation}`
@@ -161,20 +177,22 @@ export function PlaceCard({ place, distanceKm, onPress }: PlaceCardProps) {
           onPress={(e) => { e.stopPropagation?.(); setNavOpen(true); }}
           hitSlop={8}
         >
-          <Ionicons name="navigate" size={14} color={colors.primary} />
+          <Ionicons name="navigate" size={14} color={theme.primary} />
           <Text style={styles.navText}>נווט</Text>
         </Pressable>
       </View>
 
       {/* Certification */}
       {certLine && (
-        <Text style={styles.cert} numberOfLines={1}>🏛 הכשר: {certLine}</Text>
+        <Text style={[styles.cert, certExpired && { color: theme.danger }]} numberOfLines={1}>
+          {certExpired ? `⚠️ ${t.detail.certExpired} — ${certLine}` : `🏛 הכשר: ${certLine}`}
+        </Text>
       )}
 
       {/* Opening hours */}
       {showHoursRow && (
         <View style={styles.hoursRow}>
-          <Ionicons name="time-outline" size={12} color={colors.textMuted} />
+          <Ionicons name="time-outline" size={12} color={theme.textMuted} />
           {todayHours && (
             <Text style={styles.hoursText} numberOfLines={1}>{todayHours}</Text>
           )}
@@ -193,9 +211,9 @@ export function PlaceCard({ place, distanceKm, onPress }: PlaceCardProps) {
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   card: {
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderRadius: radius.lg,
     padding: 16,
     marginBottom: 10,
@@ -223,19 +241,19 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '700',
     letterSpacing: -0.3,
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
   },
   nameHe: {
     fontSize: 11,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
     marginTop: 1,
   },
   distance: {
     fontSize: 13,
     fontWeight: '700',
-    color: colors.primary,
+    color: t.primary,
     flexShrink: 0,
     paddingTop: 2,
   },
@@ -254,13 +272,13 @@ const styles = StyleSheet.create({
   },
   chipText: { fontSize: 11, fontWeight: '600' },
   chipSecondary: {
-    backgroundColor: colors.surfaceMuted,
+    backgroundColor: t.surfaceMuted,
     borderRadius: radius.pill,
     paddingHorizontal: 9,
     paddingVertical: 3,
     maxWidth: 130,
   },
-  chipSecondaryText: { fontSize: 11, fontWeight: '500', color: colors.textMuted },
+  chipSecondaryText: { fontSize: 11, fontWeight: '500', color: t.textMuted },
 
   addressRow: {
     flexDirection: 'row',
@@ -270,14 +288,14 @@ const styles = StyleSheet.create({
   },
   address: {
     fontSize: 12,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
     flex: 1,
   },
 
   cert: {
     fontSize: 11,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
   },
 
@@ -289,7 +307,7 @@ const styles = StyleSheet.create({
   },
   hoursText: {
     fontSize: 11,
-    color: colors.textMuted,
+    color: t.textMuted,
     flex: 1,
     textAlign: 'right',
   },
@@ -299,19 +317,19 @@ const styles = StyleSheet.create({
     paddingVertical: 2,
     flexShrink: 0,
   },
-  badgeOpen:   { backgroundColor: '#dcfce7' },
-  badgeClosed: { backgroundColor: '#fee2e2' },
+  badgeOpen:   { backgroundColor: t.successSurface },
+  badgeClosed: { backgroundColor: t.dangerSurface },
   badgeText: {
     fontSize: 10,
     fontWeight: '700',
-    color: '#374151',
+    color: t.text,
   },
 
   navBtn: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 3,
-    backgroundColor: colors.primaryLight,
+    backgroundColor: t.primaryLight,
     paddingHorizontal: 8,
     paddingVertical: 4,
     borderRadius: radius.pill,
@@ -320,6 +338,6 @@ const styles = StyleSheet.create({
   navText: {
     fontSize: 11,
     fontWeight: '700',
-    color: colors.primary,
+    color: t.primary,
   },
-});
+}));

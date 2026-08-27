@@ -1,0 +1,5 @@
+# core.autocrlf=true on the Windows checkout rewrites LF to CRLF on checkout.
+# For a POSIX shell script that is fatal-but-quiet: the shebang becomes
+# `#!/bin/sh\r`, and the hook either dies with "bad interpreter" or is skipped.
+# The guard would look installed and check nothing.
+.githooks/* text eol=lf

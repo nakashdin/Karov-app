@@ -1,14 +1,7 @@
 import React from 'react';
-import {
-  Modal,
-  Pressable,
-  ScrollView,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
-import { colors, radius, spacing } from '../theme';
+import { Modal, Pressable, ScrollView, Text, View } from 'react-native';
+import Ionicons from '@expo/vector-icons/Ionicons';
+import { makeStyles, radius, spacing, useTheme } from '../theme';
 import { BIRKAT_HAMAZON } from '../data/birkatHamazon';
 import { useNusach } from '../hooks/useNusach';
 
@@ -20,6 +13,8 @@ interface Props {
 const NUSACH_LABEL = { ashkenaz: 'נוסח אשכנז', sfarad: 'נוסח ספרד', edot_hamizrach: 'נוסח עדות המזרח' } as const;
 
 export function BirkatHamazonModal({ visible, onClose }: Props) {
+  const theme = useTheme();
+  const styles = useStyles();
   const { nusach } = useNusach();
   const resolvedKey = nusach === 'edot_hamizrach' ? 'sfarad' : (nusach ?? 'sfarad');
   const paragraphs = BIRKAT_HAMAZON[resolvedKey];
@@ -39,7 +34,7 @@ export function BirkatHamazonModal({ visible, onClose }: Props) {
           <View />
           <Text style={styles.headerTitle}>ברכת המזון</Text>
           <Pressable onPress={onClose} hitSlop={10}>
-            <Ionicons name="close" size={22} color={colors.textMuted} />
+            <Ionicons name="close" size={22} color={theme.textMuted} />
           </Pressable>
         </View>
 
@@ -66,13 +61,13 @@ export function BirkatHamazonModal({ visible, onClose }: Props) {
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   backdrop: {
     flex: 1,
-    backgroundColor: 'rgba(0,0,0,0.4)',
+    backgroundColor: t.overlay,
   },
   sheet: {
-    backgroundColor: colors.background,
+    backgroundColor: t.background,
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
     maxHeight: '85%',
@@ -86,12 +81,12 @@ const styles = StyleSheet.create({
     paddingTop: spacing.lg,
     paddingBottom: spacing.md,
     borderBottomWidth: 0.5,
-    borderBottomColor: colors.border,
+    borderBottomColor: t.border,
   },
   headerTitle: {
     fontSize: 17,
     fontWeight: '700',
-    color: colors.text,
+    color: t.text,
   },
   backBtn: {
     flexDirection: 'row',
@@ -101,7 +96,7 @@ const styles = StyleSheet.create({
   backText: {
     fontSize: 14,
     fontWeight: '600',
-    color: colors.primary,
+    color: t.primary,
   },
 
   // Nusach selector
@@ -111,7 +106,7 @@ const styles = StyleSheet.create({
   },
   selectorHint: {
     fontSize: 14,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'center',
     marginBottom: 8,
   },
@@ -119,17 +114,17 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 14,
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderRadius: radius.lg,
     padding: spacing.lg,
     borderWidth: 0.5,
-    borderColor: colors.border,
+    borderColor: t.border,
   },
   nusachIcon: {
     width: 44,
     height: 44,
     borderRadius: 22,
-    backgroundColor: colors.primaryLight,
+    backgroundColor: t.primaryLight,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -142,12 +137,12 @@ const styles = StyleSheet.create({
   nusachTitle: {
     fontSize: 16,
     fontWeight: '700',
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
   },
   nusachSub: {
     fontSize: 12,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'right',
     marginTop: 2,
   },
@@ -162,7 +157,7 @@ const styles = StyleSheet.create({
   nusachLabel: {
     fontSize: 13,
     fontWeight: '700',
-    color: colors.primary,
+    color: t.primary,
     textAlign: 'center',
     marginBottom: spacing.lg,
     letterSpacing: 0.3,
@@ -173,21 +168,21 @@ const styles = StyleSheet.create({
   paraTitle: {
     fontSize: 14,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
     marginBottom: 8,
     borderRightWidth: 3,
-    borderRightColor: colors.primary,
+    borderRightColor: t.primary,
     paddingRight: 8,
   },
   paraText: {
     fontSize: 17,
     lineHeight: 30,
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
     fontFamily: 'System',
   },
   bottomPad: {
     height: 40,
   },
-});
+}));

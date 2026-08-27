@@ -69,7 +69,13 @@ export const en = {
     source: 'Source',
     certifiedBy: 'Kosher certificate',
     validUntil: 'Valid until',
-    lastVerified: 'Last verified',
+    certExpired: 'Kosher certificate expired',
+    attributedSource: 'What the source reported',
+    notVerifiedAgainstRegistry: 'Not verified against our authority registry',
+    // Owner ruling, 2026-08-27: was 'Last verified' — a false claim (see
+    // he.ts for the full reasoning). Records when the database entry was
+    // last updated, not a human verification event.
+    lastVerified: 'Updated in database',
     buriedPerson: 'Buried here',
     approxLocation: 'Approximate location by city',
     distanceAway: (text: string) => `${text} from you`,
@@ -155,6 +161,42 @@ export const en = {
     tzaddik_grave: 'Tzaddik Graves',
   },
 
+  foodCategories: {
+    all: 'All',
+    restaurant: 'Restaurants',
+    chef_restaurant: 'Chef Restaurants',
+    cafe: 'Cafés',
+    coffee_cart: 'Coffee Carts',
+    fast_food: 'Fast Food',
+    bakery: 'Bakeries',
+    juice_bar: 'Juice Bars',
+    ice_cream_parlor: 'Ice Cream',
+    winery: 'Wineries',
+  },
+
+  about: {
+    headerTitle: 'About Karov',
+    appName: 'Karov',
+    version: (v: string) => `Version ${v}`,
+    missionTitle: 'Our mission',
+    missionBody:
+      'Karov was created out of a desire to give back to the Jewish community — bringing together every place, service and piece of Jewish information in one accessible spot, anywhere in the world.',
+    categoriesTitle: "What you'll find in the app",
+    dailyBrachot: 'Selected daily blessings',
+    zmanim: 'Halachic times (zmanim)',
+    parasha: 'Weekly Torah portion',
+    communityTitle: 'A community built together',
+    communityBody:
+      "Karov is powered by the community. Anyone can add a new place or report incorrect information — together we make the service as useful as possible for Jews everywhere.",
+    attributionTitle: 'Sources & licensing',
+    attributionBody:
+      'Some place and map data comes from OpenStreetMap, distributed under the ODbL license. Thank you to the thousands of volunteers mapping Israel.',
+    osmLinkText: '© OpenStreetMap contributors — ODbL',
+    osmLinkAccessibilityLabel: 'OpenStreetMap license',
+    sourcesLine: 'Halachic times and Hebrew calendar: Hebcal · Torah content: Sefaria · Mikvahs: data.gov.il · Chabad Houses: Chabad.org',
+    footerText: 'Made with love for the Jewish people 🇮🇱',
+  },
+
   menu: {
     title: 'Menu',
     contact: 'Contact Us',
@@ -163,5 +205,22 @@ export const en = {
     about: 'About',
     language: 'Language',
     shareMessage: 'Karov – Everything a Jew needs, close to you:',
+  },
+  errorBoundary: {
+    title: 'Something went wrong',
+    body: "An unexpected error occurred. You can try again — and if it keeps happening, we'd appreciate a report.",
+    retry: 'Try again',
+    retryLabel: 'Try again',
+  },
+
+  kosher: {
+    rabbinate: 'Rabbinate',
+    rabbinateMehadrin: 'Rabbinate Mehadrin',
+    badatzGeneric: 'Badatz',
+    mehadrinGeneric: 'Mehadrin',
+    glattGeneric: 'Glatt',
+    kosherGeneric: 'Kosher',
+    unknownFloor: 'Kosher, local supervision',
+    claimedLevelPrefix: 'Claims kashrut:',
   },
 } as const;

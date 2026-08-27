@@ -70,25 +70,82 @@ export interface Place {
   /** Where this record came from (for attribution / trust). */
   source?: 'osm' | 'seed' | 'wikidata' | 'manual' | 'tzohar';
   /**
-   * Accuracy of `location`. 'address' = an exact address geocode; 'city' = an
-   * approximate city-centre point (show an "approximate location" hint). Absent
-   * means an exact/native coordinate (e.g. OSM). */
-  locationPrecision?: 'address' | 'city';
+   * Accuracy of `location`. 'exact' = synced against Waze, the most accurate
+   * source available in Israel (see docs/coordinates-backlog.md); 'address' =
+   * a geocoded street address; 'city' = an approximate city-centre point (show
+   * an "approximate location" hint — see PlaceCard/PlaceBottomCard/
+   * PlaceDetailScreen). Absent means an untouched native coordinate (e.g. OSM),
+   * which is not the same claim as 'exact' and should not be treated as one.
+   */
+  locationPrecision?: 'exact' | 'address' | 'city';
+  /** Which geocoder produced `location`, when it didn't come from the original source as-is. */
+  locationSource?: 'waze' | 'nominatim';
 
   // --- Restaurant-specific (optional) ---
   category?: KosherCategory;
   /** Legacy field — original certification key. Do not remove. */
   kosherType?: KosherType;
-  /** 'regular' | 'mehadrin' — the kashrut standard level. */
-  kosherLevel?: 'regular' | 'mehadrin';
+  /**
+   * 'regular' | 'mehadrin' — the kashrut standard level. `null` means
+   * deliberately undetermined: the evidence names a certifying authority but
+   * states no level (the mirror of `certifierId: null`, opposite axis — see
+   * that field's comment). Absence means never migrated / genuinely unknown.
+   * Do not conflate the two — that collapse is exactly the Batch B1 defect.
+   */
+  kosherLevel?: 'regular' | 'mehadrin' | null;
   /** High-level certification group: 'rabbinate' | 'badatz' | 'independent' | 'unknown'. */
   kosherAuthorityGroup?: 'rabbinate' | 'badatz' | 'independent' | 'unknown';
   /** Specific certifying body key (null when group is known but body is not). */
   kosherAuthority?: string | null;
   /** Name of the certifying authority as printed on the certificate. */
   certifiedBy?: string;
-  /** ISO date (YYYY-MM-DD) the kosher certificate is valid until. */
+  /** Canonical certifying body (src/data/kashrut/authorities.ts). null when the evidence names a level but no authority. */
+  certifierId?: string | null;
+  /**
+   * A level phrase the SOURCE states about itself with no certifying body
+   * named anywhere — a CLAIM, never a verified level (Item 4 Unit 3,
+   * 2026-08-27). Mutually exclusive with `kosherLevel`: a record may have
+   * one or the other, never both — validate-data.mjs HARD-fails a record
+   * carrying both, because that shape is exactly a claim silently promoted
+   * to fact. `null`/absent means no unsourced level claim exists for this
+   * record; it does NOT mean the source is silent on kashrut generally.
+   */
+  claimedLevel?: 'mehadrin' | 'glatt' | null;
+  /**
+   * The source's VERBATIM level phrase this claim was read from (e.g. "כשר
+   * למהדרין", "כשר מהדרין") — provenance for `claimedLevel`, since the
+   * verbatim string is the only thing that survives a future change to how
+   * this project normalizes level phrases. Required whenever `claimedLevel`
+   * is set (validate-data.mjs HARD-fails an unsourced claim).
+   */
+  claimedLevelText?: string;
+  /**
+   * The exact URL `claimedLevelText` was read from. Deliberately kept
+   * separate from `sourceUrl` even when they hold the same URL today — if
+   * `sourceUrl` is ever repointed for an unrelated reason, the claim must
+   * not silently inherit new provenance it was never actually read from.
+   * Required whenever `claimedLevel` is set.
+   */
+  claimedLevelSource?: string;
+  /**
+   * ISO date (YYYY-MM-DD) the kosher certificate is valid until. Only ever
+   * set from a real certificate document (see `kosherCertUrl`) — never
+   * inferred, extrapolated, or copied from a sibling branch. Its absence
+   * means Karov doesn't have the certificate for this branch, NOT that the
+   * business lost its certification; see `utils/certificate.ts` for the
+   * runtime state this drives (valid / expired / unknown / none). Currently
+   * only populated for Tzohar (the one certifying body we have permission to
+   * publish certificate data for), but the field itself is authority-agnostic
+   * — any future authorized source sets the same three fields together
+   * (`certifiedBy`, `kosherCertUrl`, `certificateValidUntil`).
+   */
   certificateValidUntil?: string;
+  /**
+   * ISO date (YYYY-MM-DD) the certificate was issued, when the source
+   * publishes it. Not currently extracted from any source — modeled for
+   * forward compatibility, left unset rather than guessed.
+   */
+  certificateIssuedAt?: string;
   /**
    * Kashrut standards printed on the certificate itself. Populated from the
    * Tzohar certificate PDFs by importers/tzohar/extract-cert-expiry.mjs.

@@ -1,0 +1,32 @@
+name: Dataset
+
+on:
+  pull_request:
+    paths:
+      - 'src/data/generated/**'
+      - 'scripts/validate-data.mjs'
+      - 'scripts/data-quality-baseline.json'
+  push:
+    branches: [master]
+    paths:
+      - 'src/data/generated/**'
+
+concurrency:
+  group: data-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Validate places dataset
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+
+      # No npm install needed — the validator is dependency-free on purpose,
+      # so a data-only PR gets its answer in seconds.
+      - name: Validate
+        run: node scripts/validate-data.mjs

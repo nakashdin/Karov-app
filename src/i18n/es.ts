@@ -69,7 +69,12 @@ export const es = {
     source: 'Fuente',
     certifiedBy: 'Certificado kosher',
     validUntil: 'Válido hasta',
-    lastVerified: 'Última verificación',
+    certExpired: 'Certificado kosher caducado',
+    attributedSource: 'Lo que reportó la fuente',
+    notVerifiedAgainstRegistry: 'No verificado con nuestro registro de autoridades',
+    // Owner ruling, 2026-08-27: was 'Última verificación' ("last
+    // verification") — a false claim (see he.ts for the full reasoning).
+    lastVerified: 'Actualizado en la base de datos',
     buriedPerson: 'Enterrado aquí',
     approxLocation: 'Ubicación aproximada por ciudad',
     distanceAway: (text: string) => `${text} de ti`,
@@ -155,6 +160,42 @@ export const es = {
     tzaddik_grave: 'Tumbas de Tzadikim',
   },
 
+  foodCategories: {
+    all: 'Todo',
+    restaurant: 'Restaurantes',
+    chef_restaurant: 'Restaurantes de autor',
+    cafe: 'Cafeterías',
+    coffee_cart: 'Carritos de café',
+    fast_food: 'Comida rápida',
+    bakery: 'Panaderías',
+    juice_bar: 'Zumerías',
+    ice_cream_parlor: 'Heladerías',
+    winery: 'Bodegas',
+  },
+
+  about: {
+    headerTitle: 'Acerca de Karov',
+    appName: 'Karov',
+    version: (v: string) => `Versión ${v}`,
+    missionTitle: 'Nuestra misión',
+    missionBody:
+      'Karov nació del deseo de contribuir a la comunidad judía — reunir todos los lugares, servicios e información judía en un solo sitio accesible, en cualquier parte del mundo.',
+    categoriesTitle: 'Qué encontrarás en la app',
+    dailyBrachot: 'Bendiciones diarias seleccionadas',
+    zmanim: 'Horarios halájicos (zmanim)',
+    parasha: 'Parashá semanal',
+    communityTitle: 'Una comunidad construida en conjunto',
+    communityBody:
+      'Karov es impulsada por la comunidad. Cualquiera puede añadir un lugar nuevo o reportar información incorrecta — así, juntos, maximizamos el servicio para los judíos en todo el mundo.',
+    attributionTitle: 'Fuentes y licencias',
+    attributionBody:
+      'Parte de los datos de lugares y del mapa provienen de OpenStreetMap, distribuidos bajo la licencia ODbL. Gracias a los miles de voluntarios que mapean Israel.',
+    osmLinkText: '© OpenStreetMap contributors — ODbL',
+    osmLinkAccessibilityLabel: 'Licencia de OpenStreetMap',
+    sourcesLine: 'Horarios halájicos y calendario hebreo: Hebcal · Contenido de Torá: Sefaria · Mikvaot: data.gov.il · Casas Jabad: Chabad.org',
+    footerText: 'Hecho con amor para el pueblo de Israel 🇮🇱',
+  },
+
   menu: {
     title: 'Menú',
     contact: 'Contáctanos',
@@ -163,5 +204,22 @@ export const es = {
     about: 'Acerca de',
     language: 'Idioma',
     shareMessage: 'Karov – Todo lo que un judío necesita, cerca de ti:',
+  },
+  errorBoundary: {
+    title: 'Algo salió mal',
+    body: 'Se produjo un error inesperado. Puedes intentarlo de nuevo — y si sigue ocurriendo, agradeceríamos que lo reportaras.',
+    retry: 'Intentar de nuevo',
+    retryLabel: 'Intentar de nuevo',
+  },
+
+  kosher: {
+    rabbinate: 'Rabinato',
+    rabbinateMehadrin: 'Rabinato Mehadrin',
+    badatzGeneric: 'Badatz',
+    mehadrinGeneric: 'Mehadrin',
+    glattGeneric: 'Glatt',
+    kosherGeneric: 'Kosher',
+    unknownFloor: 'Kosher, supervisión local',
+    claimedLevelPrefix: 'Declara casherut:',
   },
 } as const;

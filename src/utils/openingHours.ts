@@ -190,6 +190,16 @@ function evalHebrew(s: string, today: number, nowMin: number, z: Zmanim | null, 
 
 // ── OSM clause parser (restaurants / synagogues) ─────────────────────────────
 
+/**
+ * `today`-only day matching plus a bidirectional `inRange` produces a
+ * midnight-crossing window on BOTH sides of its own start — e.g. "We
+ * 22:00-02:00" read as open at Wednesday 01:00, hours before it starts,
+ * while the actual pre-dawn coverage (Tuesday night bleeding into Wednesday
+ * morning) is never checked at all. A window that wraps past midnight can
+ * only be entered from its own day (`nowMin >= from`); the wrapped tail is
+ * entered from the FOLLOWING day (`nowMin < to`), which is why the day-spec
+ * is tested against both `today` and `yesterday` below.
+ */
 function evalClause(raw: string, today: number, nowMin: number): boolean | null {
   let clause = raw.replace(/"[^"]*"/g, '').trim();
   if (!clause) return null;
@@ -199,17 +209,44 @@ function evalClause(raw: string, today: number, nowMin: number): boolean | null 
   const om = clause.match(/^([A-Za-z]{2}(?:[-,][A-Za-z]{2})*)\s+(.+)$/);
   let daySpec: string | null = null, timeBlock: string;
   if (om) { daySpec = om[1]; timeBlock = om[2]; } else { timeBlock = clause; }
-  if (daySpec) { const days = parseDaySpec(daySpec, false); if (days.length === 0) return null; if (!days.includes(today)) return null; }
+
+  const yesterday = (today + 6) % 7;
+  let matchesToday = true;
+  let matchesYesterday = true;
+  if (daySpec) {
+    const days = parseDaySpec(daySpec, false);
+    if (days.length === 0) return null;
+    matchesToday = days.includes(today);
+    matchesYesterday = days.includes(yesterday);
+    if (!matchesToday && !matchesYesterday) return null;
+  }
 
   timeBlock = timeBlock.trim();
-  if (/^(off|closed)$/i.test(timeBlock)) return false;
+  if (/^(off|closed)$/i.test(timeBlock)) return matchesToday ? false : null;
   const normalized = timeBlock.replace(/\s*[–—]\s*/g, '-').replace(/\s+-\s+/g, '-');
   for (const slot of normalized.split(',').map(x => x.trim()).filter(Boolean)) {
-    if (slot.endsWith('+')) { const from = parseTime(slot.slice(0, -1)); if (from != null && (nowMin >= from || nowMin < 180)) return true; continue; }
+    if (slot.endsWith('+')) {
+      const from = parseTime(slot.slice(0, -1));
+      if (from == null) continue;
+      if (matchesToday && nowMin >= from) return true;
+      if (matchesYesterday && nowMin < 180) return true;
+      continue;
+    }
     const dashIdx = slot.lastIndexOf('-');
-    if (dashIdx > 0) { const from = parseTime(slot.slice(0, dashIdx)); const to = parseTime(slot.slice(dashIdx + 1)); if (from != null && to != null && inRange(nowMin, from, to)) return true; }
+    if (dashIdx <= 0) continue;
+    const from = parseTime(slot.slice(0, dashIdx));
+    const to = parseTime(slot.slice(dashIdx + 1));
+    if (from == null || to == null) continue;
+    if (to <= from) {
+      // Wraps past midnight: entered from `from` on this clause's own day,
+      // exited before `to` on the day after.
+      if (matchesToday && nowMin >= from) return true;
+      if (matchesYesterday && nowMin < to) return true;
+    } else if (matchesToday && inRange(nowMin, from, to)) {
+      return true;
+    }
   }
-  return false;
+  return matchesToday ? false : null;
 }
 
 // ── Public API ────────────────────────────────────────────────────────────────

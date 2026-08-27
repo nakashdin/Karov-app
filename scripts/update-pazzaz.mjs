@@ -1,5 +1,10 @@
 import { readFileSync, writeFileSync } from 'fs';
-const DATA_PATH = 'C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\places.osm.json';
+import { fileURLToPath } from 'url';
+import path from 'path';
+
+const __dir = path.dirname(fileURLToPath(import.meta.url));
+const ROOT = path.join(__dir, '..');
+const DATA_PATH = path.join(ROOT, 'src/data/generated/places.osm.json');
 
 const raw = readFileSync(DATA_PATH, 'utf-8').replace(/^\uFEFF/, '');
 let places = JSON.parse(raw);
@@ -37,7 +42,7 @@ const NEW_PAZZAZ = [
     id: 'manual-pazzaz-or-akiva',
     name: 'פיצה פצץ', type: 'restaurant', cityId: 'אור עקיבא',
     address: 'מרכז מסחרי אור עקיבא',
-    location: {lat: 32.5100, lng: 34.9205},
+    location: { latitude: 32.5100, longitude: 34.9205 },
     phone: '04-6101601',
     kosherType: 'kosher', category: 'dairy',
     openingHours: 'Su-Th 10:00-00:00; Sa 22:00-00:00',
@@ -48,7 +53,7 @@ const NEW_PAZZAZ = [
     id: 'manual-pazzaz-kiryat-ata',
     name: 'פיצה פצץ', type: 'restaurant', cityId: 'קריית אתא',
     address: 'חנקין 2, קריית אתא',
-    location: {lat: 32.8016, lng: 35.1085},
+    location: { latitude: 32.8016, longitude: 35.1085 },
     phone: '077-3331551',
     kosherType: 'kosher', category: 'dairy',
     openingHours: 'Su-Th 10:30-23:30; Fr 11:30-14:00; Sa 22:00-00:00',
@@ -59,7 +64,7 @@ const NEW_PAZZAZ = [
     id: 'manual-pazzaz-jerusalem',
     name: 'פיצה פצץ', type: 'restaurant', cityId: 'ירושלים',
     address: 'נעמי 4, יס פלאנט, ירושלים',
-    location: {lat: 31.7767, lng: 35.2345},
+    location: { latitude: 31.7767, longitude: 35.2345 },
     phone: '02-5313403',
     kosherType: 'kosher', category: 'dairy',
     openingHours: 'Su-W 13:00-23:00; Th 13:00-01:00; Fr off; Sa 22:30-01:00',
@@ -70,7 +75,7 @@ const NEW_PAZZAZ = [
     id: 'manual-pazzaz-raanana',
     name: 'פיצה פצץ', type: 'restaurant', cityId: 'רעננה',
     address: 'אחוזה 106, רעננה',
-    location: {lat: 32.1838, lng: 34.8709},
+    location: { latitude: 32.1838, longitude: 34.8709 },
     phone: '09-7450342',
     kosherType: 'kosher', category: 'dairy',
     openingHours: 'Su-Th 10:00-00:00',
@@ -81,7 +86,7 @@ const NEW_PAZZAZ = [
     id: 'manual-pazzaz-kfar-yona',
     name: 'פיצה פצץ', type: 'restaurant', cityId: 'כפר יונה',
     address: "שד' בגין 44, כפר יונה",
-    location: {lat: 32.3145, lng: 34.9323},
+    location: { latitude: 32.3145, longitude: 34.9323 },
     phone: '053-6112028',
     kosherType: 'kosher', category: 'dairy',
     openingHours: 'Su-Th 12:00-23:00; Sa 22:00-23:00',
@@ -92,7 +97,7 @@ const NEW_PAZZAZ = [
     id: 'manual-pazzaz-nes-ziona',
     name: 'פיצה פצץ', type: 'restaurant', cityId: 'נס ציונה',
     address: 'נורדאו 3, נס ציונה',
-    location: {lat: 31.9278, lng: 34.7985},
+    location: { latitude: 31.9278, longitude: 34.7985 },
     phone: '077-6707407',
     kosherType: 'kosher', category: 'dairy',
     openingHours: 'Su-Th 11:00-02:00; Sa 22:00-02:00',
@@ -103,7 +108,7 @@ const NEW_PAZZAZ = [
     id: 'manual-pazzaz-rehovot',
     name: 'פיצה פצץ', type: 'restaurant', cityId: 'רחובות',
     address: 'הרצל 171, רחובות',
-    location: {lat: 31.8929, lng: 34.8063},
+    location: { latitude: 31.8929, longitude: 34.8063 },
     phone: '08-9585888',
     kosherType: 'kosher', category: 'dairy',
     openingHours: 'Su-Th 11:00-03:00; Fr 10:30-16:30; Sa 22:00-03:00',
@@ -114,7 +119,7 @@ const NEW_PAZZAZ = [
     id: 'manual-pazzaz-dimona',
     name: 'פיצה פצץ', type: 'restaurant', cityId: 'דימונה',
     address: "דרך בן גוריון 1045, דימונה",
-    location: {lat: 31.0697, lng: 35.0320},
+    location: { latitude: 31.0697, longitude: 35.0320 },
     phone: '08-6570550',
     kosherType: 'kosher', category: 'dairy',
     openingHours: 'Su-Th 16:00-00:30; Fr 10:00-15:00; Sa 22:00-00:00',
@@ -125,7 +130,7 @@ const NEW_PAZZAZ = [
     id: 'manual-pazzaz-yeruham',
     name: 'פיצה פצץ', type: 'restaurant', cityId: 'ירוחם',
     address: 'צבי ברונשטיין 312/19, ירוחם',
-    location: {lat: 30.9887, lng: 34.9259},
+    location: { latitude: 30.9887, longitude: 34.9259 },
     phone: '08-6595522',
     kosherType: 'kosher', category: 'dairy',
     openingHours: 'Su-Th 16:00-00:00; Sa 22:00-01:00',

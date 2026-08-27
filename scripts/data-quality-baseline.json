@@ -1,0 +1,19 @@
+{
+  "total": 7471,
+  "unknownCityId": 0,
+  "missingAddress": 7,
+  "missingCityId": 8,
+  "foodWithoutKashrut": 18,
+  "missingSource": 3327,
+  "kashrutAuthorityUnknown": 1184,
+  "freeTextCertifierUnmapped": 1562,
+  "levelAssertedOverNamedBody": 343,
+  "levelAssertedWithNoBody": 158,
+  "restaurantsDuplicateIds": 0,
+  "restaurantsShorthandLocation": 0,
+  "restaurantsOutOfBounds": 0,
+  "restaurantsCertificateValidUntilWithoutUrl": 30,
+  "restaurantsLevelAssertedOverNamedBody": 37,
+  "restaurantsLevelAssertedWithNoBody": 183,
+  "restaurantsFoodWithoutKashrut": 225
+}

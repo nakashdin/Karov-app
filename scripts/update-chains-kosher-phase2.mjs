@@ -1,6 +1,10 @@
 import { readFileSync, writeFileSync } from 'fs';
+import { fileURLToPath } from 'url';
+import path from 'path';
 
-const DATA_PATH = 'C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\places.osm.json';
+const __dir = path.dirname(fileURLToPath(import.meta.url));
+const ROOT = path.join(__dir, '..');
+const DATA_PATH = path.join(ROOT, 'src/data/generated/places.osm.json');
 
 function normalizePhone(p) {
   if (!p) return '';
@@ -296,7 +300,7 @@ const NEW_SHEMESH = [
     name: 'פיצה שמש',
     type: 'restaurant', cityId: 'באר יעקב',
     address: 'הגפן 2, באר יעקב',
-    location: {lat: 31.9325, lng: 34.8390},
+    location: { latitude: 31.9325, longitude: 34.8390 },
     phone: '08-8565139',
     kosherType: 'badatz_beit_yosef', certifiedBy: 'בד"צ בית יוסף',
     category: 'dairy', source: 'manual', locationPrecision: 'city',
@@ -307,7 +311,7 @@ const NEW_SHEMESH = [
     name: 'פיצה שמש',
     type: 'restaurant', cityId: 'נתניה',
     address: 'פנחס לבון 39, נתניה',
-    location: {lat: 32.3223, lng: 34.8532},
+    location: { latitude: 32.3223, longitude: 34.8532 },
     phone: '09-8333212',
     kosherType: 'badatz_edah', certifiedBy: 'העדה החרדית',
     category: 'dairy', source: 'manual', locationPrecision: 'city',
@@ -318,7 +322,7 @@ const NEW_SHEMESH = [
     name: 'פיצה שמש (פודטראק)',
     type: 'restaurant', cityId: 'לוד',
     address: 'שבט ראובן, גני איילון, לוד',
-    location: {lat: 31.9538, lng: 34.8894},
+    location: { latitude: 31.9538, longitude: 34.8894 },
     phone: '074-7132403',
     kosherType: 'badatz_edah', certifiedBy: 'בד"צ בית ישראל, העדה החרדית',
     category: 'dairy', source: 'manual', locationPrecision: 'city',

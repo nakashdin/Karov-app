@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { AppState, Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
+import { AppState, Platform, Pressable, ScrollView, Text, View } from 'react-native';
+import Ionicons from '@expo/vector-icons/Ionicons';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../navigation/types';
@@ -19,13 +19,15 @@ import {
   resolveLocationSilently,
   wasBlockedBeforeReload,
 } from '../utils/locationPermission';
-import { colors, radius, spacing } from '../theme';
+import { makeStyles, radius, spacing, useTheme } from '../theme';
 
 type Nav = NativeStackNavigationProp<RootStackParamList>;
 
 type Phase = 'idle' | 'loading' | 'blocked' | 'retryable';
 
 export function LocationPermissionScreen() {
+  const theme = useTheme();
+  const styles = useStyles();
   const navigation = useNavigation<Nav>();
   const { setGranted } = useSharedLocation();
   const [phase, setPhase] = useState<Phase>('idle');
@@ -233,7 +235,7 @@ export function LocationPermissionScreen() {
           <Ionicons
             name={phase === 'blocked' ? 'settings' : 'location'}
             size={52}
-            color={colors.primary}
+            color={theme.primary}
           />
         </View>
 
@@ -313,6 +315,8 @@ function PrimaryButton({
   onPress: () => void;
   disabled: boolean;
 }) {
+  const theme = useTheme();
+  const styles = useStyles();
   if (Platform.OS === 'web') {
     return (
       <button
@@ -321,7 +325,7 @@ function PrimaryButton({
         style={
           {
             width: '100%',
-            backgroundColor: disabled ? '#5a9e72' : '#1E7A46',
+            backgroundColor: disabled ? theme.primarySoft : theme.primary,
             border: 'none',
             borderRadius: 50,
             padding: '16px',
@@ -347,18 +351,20 @@ function PrimaryButton({
 }
 
 function Feature({ icon, text }: { icon: keyof typeof Ionicons.glyphMap; text: string }) {
+  const theme = useTheme();
+  const styles = useStyles();
   return (
     <View style={styles.feature}>
-      <Ionicons name={icon} size={20} color={colors.primary} />
+      <Ionicons name={icon} size={20} color={theme.primary} />
       <Text style={styles.featureText}>{text}</Text>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = makeStyles((t) => ({
   root: {
     flex: 1,
-    backgroundColor: colors.background,
+    backgroundColor: t.background,
     paddingHorizontal: spacing.lg,
     paddingBottom: 48,
     justifyContent: 'space-between',
@@ -377,7 +383,7 @@ const styles = StyleSheet.create({
     width: 100,
     height: 100,
     borderRadius: 50,
-    backgroundColor: colors.primaryLight,
+    backgroundColor: t.primaryLight,
     alignItems: 'center',
     justifyContent: 'center',
     marginBottom: 8,
@@ -385,14 +391,14 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 30,
     fontWeight: '800',
-    color: colors.text,
+    color: t.text,
     letterSpacing: -1,
     textAlign: 'center',
   },
   subtitle: {
     fontSize: 15,
     lineHeight: 24,
-    color: colors.textMuted,
+    color: t.textMuted,
     textAlign: 'center',
     maxWidth: 320,
   },
@@ -405,7 +411,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 12,
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderRadius: radius.md,
     paddingVertical: 14,
     paddingHorizontal: 16,
@@ -413,7 +419,7 @@ const styles = StyleSheet.create({
   featureText: {
     fontSize: 15,
     fontWeight: '600',
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
     flex: 1,
   },
@@ -421,7 +427,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 12,
-    backgroundColor: colors.surface,
+    backgroundColor: t.surface,
     borderRadius: radius.md,
     paddingVertical: 12,
     paddingHorizontal: 14,
@@ -430,20 +436,20 @@ const styles = StyleSheet.create({
     width: 24,
     height: 24,
     borderRadius: 12,
-    backgroundColor: colors.primaryLight,
+    backgroundColor: t.primaryLight,
     alignItems: 'center',
     justifyContent: 'center',
   },
   stepNumText: {
     fontSize: 13,
     fontWeight: '800',
-    color: colors.primary,
+    color: t.primary,
   },
   stepText: {
     fontSize: 14,
     lineHeight: 20,
     fontWeight: '600',
-    color: colors.text,
+    color: t.text,
     textAlign: 'right',
     flex: 1,
   },
@@ -453,7 +459,7 @@ const styles = StyleSheet.create({
   },
   btnAllow: {
     width: '100%',
-    backgroundColor: colors.primary,
+    backgroundColor: t.primary,
     borderRadius: 50,
     paddingVertical: 16,
     alignItems: 'center',
@@ -461,19 +467,19 @@ const styles = StyleSheet.create({
   btnAllowText: {
     fontSize: 16,
     fontWeight: '700',
-    color: '#fff',
+    color: t.textInverse,
   },
   btnSecondary: {
     paddingVertical: 10,
     paddingHorizontal: 24,
     borderRadius: 50,
     borderWidth: 1,
-    borderColor: colors.primary,
+    borderColor: t.primary,
   },
   btnSecondaryText: {
     fontSize: 15,
     fontWeight: '700',
-    color: colors.primary,
+    color: t.primary,
   },
   btnSkip: {
     paddingVertical: 12,
@@ -482,28 +488,28 @@ const styles = StyleSheet.create({
   btnSkipText: {
     fontSize: 15,
     fontWeight: '600',
-    color: colors.textMuted,
+    color: t.textMuted,
   },
   errorText: {
     fontSize: 13,
-    color: colors.danger,
+    color: t.danger,
     textAlign: 'center',
     lineHeight: 20,
   },
   note: {
     fontSize: 12,
-    color: colors.textFaint,
+    color: t.textFaint,
     textAlign: 'center',
   },
   guideNote: {
     fontSize: 13,
     fontWeight: '600',
-    color: colors.primary,
+    color: t.primary,
     textAlign: 'center',
-    backgroundColor: colors.primaryLight,
+    backgroundColor: t.primaryLight,
     borderRadius: radius.md,
     paddingVertical: 10,
     paddingHorizontal: 14,
     overflow: 'hidden',
   },
-});
+}));

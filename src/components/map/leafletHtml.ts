@@ -1,6 +1,29 @@
 import { GeoPoint, Place } from '../../types';
-import { colors } from '../../theme';
-import { categoryColor } from '../../utils/kosher';
+import type { Tokens } from '../../theme';
+import { categoryColorFor } from '../../utils/kosher';
+import {
+  LEAFLET_CSS,
+  LEAFLET_JS,
+  CLUSTER_CSS,
+  CLUSTER_DEFAULT_CSS,
+  CLUSTER_JS,
+} from './vendor/leaflet-assets';
+
+/**
+ * `JSON.stringify` for a value being embedded straight into a `<script>`
+ * block via a template literal.
+ *
+ * Plain `JSON.stringify` does not escape `<`, so a place name containing the
+ * literal text `</script>` — a name from OSM, Wikidata, or a community
+ * submission, none of which are trusted to be free of it — closes the tag
+ * early and lets whatever text follows execute as markup/script in this page.
+ * That page runs same-origin: a native WebView with `originWhitelist: ['*']`,
+ * or a `srcDoc` iframe on web. Escaping every `<` (not just the exact
+ * `</script` substring) also blocks other tag-opening sequences the same way.
+ */
+function jsonForScript(value: unknown): string {
+  return JSON.stringify(value).replace(/</g, '\\u003c');
+}
 
 /** Default center / zoom (central Israel) when there is no user location. */
 export const ISRAEL_CENTER: [number, number] = [31.5, 34.9]; // [lat, lng]
@@ -8,15 +31,20 @@ export const DEFAULT_ZOOM = 7.5;
 export const USER_ZOOM = 13;
 
 /** Marker color: food category for restaurants, water-blue for mikvahs, violet for Chabad houses, brand green otherwise. */
-function markerColor(place: Place): string {
-  if (place.type === 'chabad_house') return colors.chabad;
-  if (place.category) return categoryColor[place.category];
-  if (place.type === 'mikveh') return '#2b8cbe';
-  return colors.primary;
+function markerColor(place: Place, theme: Tokens): string {
+  if (place.type === 'chabad_house') return theme.chabad;
+  if (place.category) return categoryColorFor(theme)[place.category];
+  if (place.type === 'mikveh') return theme.map.clusterAccent;
+  return theme.primary;
 }
 
 /**
  * Build a self-contained Leaflet + OpenStreetMap HTML document.
+ *
+ * Leaflet and markercluster are inlined from src/components/map/vendor rather
+ * than fetched from a CDN: the map then works with no connection (every place
+ * is already bundled), and no third-party script is loaded into a WebView whose
+ * originWhitelist is ['*']. Only the map TILES still need the network.
  *
  * Free, no API key, no Google. Rendered inside a WebView (native) or an
  * iframe (web). Tapping a marker posts `{type:'select', id}` back to the host:
@@ -25,6 +53,7 @@ function markerColor(place: Place): string {
 export function buildLeafletHtml(
   places: Place[],
   userLocation: GeoPoint | null,
+  theme: Tokens,
   options?: { initialCenter?: [number, number]; initialZoom?: number; highlightId?: string },
 ): string {
   const markers = places.map((p) => ({
@@ -32,7 +61,7 @@ export function buildLeafletHtml(
     name: p.name,
     lat: p.location.latitude,
     lng: p.location.longitude,
-    color: markerColor(p),
+    color: markerColor(p, theme),
   }));
 
   const center = options?.initialCenter
@@ -52,21 +81,21 @@ export function buildLeafletHtml(
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+  <style>${LEAFLET_CSS}</style>
+  <style>${CLUSTER_CSS}</style>
+  <style>${CLUSTER_DEFAULT_CSS}</style>
   <style>html,body,#map{height:100%;margin:0;padding:0;background:#f7f8fa}
   .pin{width:24px;height:24px;border-radius:50%;border:3px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,0.18),0 2px 6px rgba(0,0,0,0.18)}</style>
 </head>
 <body>
   <div id="map"></div>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+  <script>${LEAFLET_JS}</script>
+  <script>${CLUSTER_JS}</script>
   <script>
-    var PLACES = ${JSON.stringify(markers)};
-    var USER = ${JSON.stringify(user)};
-    var HIGHLIGHT_ID = ${JSON.stringify(highlightId)};
-    var map = L.map('map', { zoomControl: false }).setView(${JSON.stringify(center)}, ${zoom});
+    var PLACES = ${jsonForScript(markers)};
+    var USER = ${jsonForScript(user)};
+    var HIGHLIGHT_ID = ${jsonForScript(highlightId)};
+    var map = L.map('map', { zoomControl: false }).setView(${jsonForScript(center)}, ${zoom});
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
       attribution: '© OpenStreetMap'
@@ -100,7 +129,7 @@ export function buildLeafletHtml(
 
     if (USER) {
       L.circleMarker(USER, {
-        radius: 8, color: '#ffffff', weight: 3, fillColor: '${colors.primary}', fillOpacity: 1
+        radius: 8, color: '${theme.map.markerLabel}', weight: 3, fillColor: '${theme.primary}', fillOpacity: 1
       }).addTo(map);
     }
   </script>

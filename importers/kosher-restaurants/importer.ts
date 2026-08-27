@@ -2,13 +2,25 @@
  * Kosher-restaurant importer — OpenStreetMap (Overpass), all of Israel.
  *
  * Run:  npm run import:restaurants  (or: node importers/kosher-restaurants/importer.ts)
- * Out:  src/data/generated/restaurants.osm.json  (+ rebuilds the app dataset)
+ * Out:  src/data/generated/restaurants.osm.json only — the live places.osm.json
+ *       dataset is never touched by this importer (see the isMain block below).
+ *       The category-file write itself is guarded: restaurants.osm.json is also
+ *       written additively by 80+ one-shot scripts, so a plain overwrite from
+ *       this run's own OSM query would erase whatever they added. See
+ *       writeCategoryGuarded() in ../shared/database.ts.
  *
  * Source notes + the open coverage gap live in this folder's README.md.
  */
 import type { NormalizedPlace } from '../shared/types.ts';
 import { dedupeById, fetchLocalities, fetchOverpass, fillRate, isMain } from '../shared/utils.ts';
-import { CATEGORY_FILES, rebuildAppDataset, writeJson } from '../shared/database.ts';
+import {
+  CATEGORY_FILES,
+  formatCategoryOverwriteReport,
+  formatRebuildReport,
+  planAppDatasetRebuild,
+  planCategoryOverwrite,
+  writeCategoryGuarded,
+} from '../shared/database.ts';
 import { transformRestaurant } from './transform.ts';
 import { validateRestaurants } from './validate.ts';
 
@@ -34,19 +46,42 @@ export async function importRestaurants(): Promise<NormalizedPlace[]> {
   );
 
   const { valid, rejected } = validateRestaurants(normalized);
-  const path = writeJson(CATEGORY_FILES.restaurant, valid);
 
   console.log(`\nKosher restaurants: ${valid.length} valid, ${rejected.length} rejected`);
   console.log(`Field fill: name ${fillRate(valid, 'name')}% · address ${fillRate(valid, 'address')}% · phone ${fillRate(valid, 'phone')}% · hours ${fillRate(valid, 'openingHours')}%`);
-  console.log(`Wrote → ${path}`);
+
+  // restaurants.osm.json is also written additively by 80+ one-shot
+  // scripts; a plain overwrite here would erase every record this run's
+  // own OSM query doesn't reproduce. See writeCategoryGuarded()'s doc
+  // comment in ../shared/database.ts.
+  //
+  // Plan, print, THEN write — not write-then-print. On a blocked run the
+  // report was always visible either way (writeCategoryGuarded throws it
+  // inside the error), but on a PASSING run write-then-print means the
+  // human only sees the per-survivor impact after it is already on disk.
+  // For a design whose second half is "report what may be," that ordering
+  // was backwards. The extra planCategoryOverwrite() call below is
+  // read-only and cheap; not worth threading its result through
+  // writeCategoryGuarded() just to avoid computing it twice.
+  const plan = planCategoryOverwrite(CATEGORY_FILES.restaurant, valid);
+  console.log(`\n${formatCategoryOverwriteReport(plan)}`);
+
+  const report = writeCategoryGuarded(CATEGORY_FILES.restaurant, valid);
+  console.log(`\nWrote → ${report.path}`);
   return valid;
 }
 
 if (isMain(import.meta.url)) {
   importRestaurants()
     .then(() => {
-      const r = rebuildAppDataset();
-      console.log(`App dataset rebuilt: ${r.places} places · ${r.cities} cities`);
+      // This used to call rebuildAppDataset(), which reconstructed
+      // places.osm.json from the per-type category files and therefore deleted
+      // every record written by any other importer (measured: 60.8% of the
+      // dataset). The import above writes ONLY its own category file; the live
+      // dataset is untouched. See docs/DATA_ARCHITECTURE.md §6.
+      const plan = planAppDatasetRebuild();
+      console.log('\nLive dataset NOT modified. A legacy rebuild would have:\n');
+      console.log(formatRebuildReport(plan));
     })
     .catch((e) => {
       console.error('Failed:', e);

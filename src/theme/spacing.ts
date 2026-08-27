@@ -25,6 +25,14 @@ export const sizes = {
   tabBar: 64, // bottom tab bar (excl. safe-area inset)
 } as const;
 
+/**
+ * Shadows stay black in both colour schemes — the usual cross-platform
+ * convention, since a "shadow" that flips to white in dark mode reads as a
+ * glow instead. Exported separately for the rare screen-level custom shadow
+ * that doesn't fit `shadow.card` / `shadow.raised`.
+ */
+export const shadowColor = '#000000';
+
 export const shadow = {
   // Diffused, Airbnb-style card shadow — very soft, premium feel.
   card: {

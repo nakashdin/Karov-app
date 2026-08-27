@@ -1,6 +1,10 @@
 import { readFileSync, writeFileSync } from 'fs';
+import { fileURLToPath } from 'url';
+import path from 'path';
 
-const DATA_PATH = 'C:\\Users\\User\\Desktop\\claude plane\\kosher-app\\src\\data\\generated\\places.osm.json';
+const __dir = path.dirname(fileURLToPath(import.meta.url));
+const ROOT = path.join(__dir, '..');
+const DATA_PATH = path.join(ROOT, 'src/data/generated/places.osm.json');
 const raw = readFileSync(DATA_PATH, 'utf-8').replace(/^\uFEFF/, '');
 let places = JSON.parse(raw);
 
@@ -28,7 +32,7 @@ const bakikar = {
   category: 'dairy',
   cityId: 'חולון',
   address: 'סוקולוב 22, חולון',
-  location: { lat: 32.0174, lng: 34.7791 },
+  location: { latitude: 32.0174, longitude: 34.7791 },
   phone: '',
   kosherType: 'mehadrin',
   openingHours: 'Su-Th 11:00-21:15; Sa 21:15-23:00',

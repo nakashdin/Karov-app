@@ -69,7 +69,12 @@ export const ru = {
     source: 'Источник',
     certifiedBy: 'Сертификат кашрута',
     validUntil: 'Действителен до',
-    lastVerified: 'Последняя проверка',
+    certExpired: 'Срок действия сертификата истёк',
+    attributedSource: 'Что сообщил источник',
+    notVerifiedAgainstRegistry: 'Не проверено по нашему реестру органов кашрута',
+    // Owner ruling, 2026-08-27: was 'Последняя проверка' ("last check") —
+    // a false claim (see he.ts for the full reasoning).
+    lastVerified: 'Обновлено в базе данных',
     buriedPerson: 'Похоронен здесь',
     approxLocation: 'Приблизительное местоположение по городу',
     distanceAway: (text: string) => `${text} от тебя`,
@@ -155,6 +160,42 @@ export const ru = {
     tzaddik_grave: 'Могилы праведников',
   },
 
+  foodCategories: {
+    all: 'Все',
+    restaurant: 'Рестораны',
+    chef_restaurant: 'Авторские рестораны',
+    cafe: 'Кафе',
+    coffee_cart: 'Кофейные киоски',
+    fast_food: 'Фастфуд',
+    bakery: 'Пекарни',
+    juice_bar: 'Фреш-бары',
+    ice_cream_parlor: 'Мороженое',
+    winery: 'Винодельни',
+  },
+
+  about: {
+    headerTitle: 'О приложении Каров',
+    appName: 'Каров',
+    version: (v: string) => `Версия ${v}`,
+    missionTitle: 'Наша миссия',
+    missionBody:
+      'Каров создан из желания внести вклад в жизнь еврейской общины — собрать все места, услуги и еврейскую информацию в одном доступном месте, в любой точке мира.',
+    categoriesTitle: 'Что вы найдёте в приложении',
+    dailyBrachot: 'Избранные ежедневные благословения',
+    zmanim: 'Галахические времена (зманим)',
+    parasha: 'Недельная глава Торы',
+    communityTitle: 'Сообщество, которое строим вместе',
+    communityBody:
+      'Каров работает благодаря сообществу. Каждый может добавить новое место или сообщить о неверной информации — вместе мы делаем сервис максимально полезным для евреев по всему миру.',
+    attributionTitle: 'Источники и лицензии',
+    attributionBody:
+      'Часть данных о местах и карте предоставлена OpenStreetMap и распространяется по лицензии ODbL. Спасибо тысячам волонтёров, картографирующих Израиль.',
+    osmLinkText: '© OpenStreetMap contributors — ODbL',
+    osmLinkAccessibilityLabel: 'Лицензия OpenStreetMap',
+    sourcesLine: 'Галахические времена и еврейский календарь: Hebcal · Материалы по Торе: Sefaria · Миквы: data.gov.il · Дома Хабада: Chabad.org',
+    footerText: 'Сделано с любовью для народа Израиля 🇮🇱',
+  },
+
   menu: {
     title: 'Меню',
     contact: 'Связаться с нами',
@@ -163,5 +204,22 @@ export const ru = {
     about: 'О приложении',
     language: 'Язык',
     shareMessage: 'Каров – всё необходимое для еврея, рядом с тобой:',
+  },
+  errorBoundary: {
+    title: 'Что-то пошло не так',
+    body: 'Произошла непредвиденная ошибка. Можно попробовать ещё раз — а если это повторяется, будем благодарны за сообщение об этом.',
+    retry: 'Попробовать снова',
+    retryLabel: 'Попробовать снова',
+  },
+
+  kosher: {
+    rabbinate: 'Раввинат',
+    rabbinateMehadrin: 'Раввинат Мехадрин',
+    badatzGeneric: 'Бадац',
+    mehadrinGeneric: 'Мехадрин',
+    glattGeneric: 'Глатт',
+    kosherGeneric: 'Кошерно',
+    unknownFloor: 'Кошерно, местный надзор',
+    claimedLevelPrefix: 'Заявляет кашрут:',
   },
 } as const;

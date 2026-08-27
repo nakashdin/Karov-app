@@ -1,0 +1,93 @@
+name: EAS Update (production)
+
+# The fast release lane. Every JS or dataset change on master reaches installed
+# apps over the air in minutes — no store review.
+#
+# Anything that changes the NATIVE runtime is excluded below and must go through
+# eas-build.yml instead. runtimeVersion uses the `fingerprint` policy, so even
+# if something slips through here, EAS refuses to serve the update to a binary
+# that cannot run it.
+on:
+  push:
+    branches: [master]
+    paths-ignore:
+      - 'app.json'
+      - 'app.config.ts'
+      - 'eas.json'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'assets/**'
+      - '.github/**'
+      - 'docs/**'
+      - '**.md'
+  workflow_dispatch:
+
+concurrency:
+  group: eas-update-production
+  cancel-in-progress: false
+
+# Least privilege by default; the update job needs write to comment/publish
+# nothing here, only EXPO_TOKEN (a repo secret, not a GITHUB_TOKEN permission).
+permissions:
+  contents: read
+
+jobs:
+  # `secrets` is not available in a job-level `if`, so the check is its own job.
+  check:
+    name: Check EAS credentials
+    runs-on: ubuntu-latest
+    outputs:
+      configured: ${{ steps.guard.outputs.configured }}
+    steps:
+      - id: guard
+        run: |
+          if [ -z "${{ secrets.EXPO_TOKEN }}" ]; then
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Update skipped::EXPO_TOKEN is not set. Create one at https://expo.dev/settings/access-tokens and add it as a repository secret."
+          else
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          fi
+
+  update:
+    name: Publish OTA update
+    needs: check
+    if: needs.check.outputs.configured == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+          cache: npm
+
+      # Knowingly still on v8 (node20) — no node24 major exists for this
+      # action as of this bump (2026-08-27). See ci.yml's Node migration
+      # for the checkout/setup-node/upload-artifact bumps; this one is a
+      # separate, accepted gap. Retire once expo/expo-github-action ships a
+      # node24 major, or sooner if GitHub stops force-running node20
+      # actions on node24 (it does so today; that is transition behavior,
+      # not a guarantee).
+      - uses: expo/expo-github-action@v8
+        with:
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
+
+      - run: npm ci
+
+      # Never ship an OTA update that would not have passed the PR gate.
+      - name: Verify
+        run: npm run verify
+
+      - name: Publish
+        # The commit message carries attacker-influenced text on a squash-merge
+        # (it becomes the PR title) and this job's environment holds EXPO_TOKEN.
+        # Interpolating it into the `run:` line via `${{ }}` — as this used to —
+        # is a shell-injection path straight to that token. Passing it through
+        # `env:` and expanding it as a shell variable keeps GitHub's expression
+        # engine from ever writing untrusted text into the script.
+        env:
+          COMMIT_MSG: ${{ github.event.head_commit.message || 'manual dispatch' }}
+        run: eas update --branch production --message "$COMMIT_MSG" --non-interactive
