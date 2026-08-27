@@ -2423,6 +2423,46 @@ resolution (§30c, §33 population = 67, not this script's full-dataset scope). 
 fix it without separately deciding it is back in scope; whoever committed it apparently never ran it
 end-to-end against the real dataset.
 
+## 34. A stale-high ratchet baseline is invisible by construction — the improvement that creates it is the
+same event that would otherwise surface it
+
+Found live, 2026-08-27, in the greg-apply commit's (`f7e0419`) own post-write report: `foodWithoutKashrut`
+showed `18 → 18` (no movement) against the baseline, but the actual commit had not moved that metric at all —
+the baseline was already stale. Traced to `880e48d` (the rebar 55-record write), which moved
+`foodWithoutKashrut` 20 → 18 without running `--update` afterward. The stale ceiling of 20 then sat
+undetected through `6962a11` and `100f02a` — two more commits — until an unrelated `--update` run (during the
+greg-apply write) absorbed it.
+
+**The mechanism.** `validate-data.mjs`'s ratchet comparison only ever FAILS the build when a count RISES
+above its baseline. A count that FALLS is reported as `✓ improved` — genuinely true, but the same reporting
+also IS the only signal that a gap now exists between the ceiling and reality, and that signal reads as
+routine good news rather than a standing gap, so nothing forces anyone to act on it. During the window between
+`880e48d` and the eventual `--update`, the guard carried real, measured slack: **the ceiling was 2 higher than
+reality**, meaning two new zero-evidence food records could have been added in that window and
+`data:validate` would have stayed fully green — a HARD-failure-shaped hole in a RATCHET check, created by the
+same commit that improved the metric.
+
+**The fix.** A new, distinct, unconditional report — `SLACK: <key> ceiling is <gap> above reality (<now>
+actual / <baseline> baseline)` — computed from the same `now < was` comparison `improvements` already makes,
+but printed as its own section on EVERY run the gap persists, not folded into `improvements` (which is exactly
+the framing that let this go unnoticed for two commits) and not gated on `--update` having just been run.
+Purely informational: never fails the build, never becomes a ratchet in the other direction. Covers every key
+in `RATCHET_KEYS_SPEC`, grouped by family (§32) like every other section of this report, not a hand-picked
+subset.
+
+**Activated, not merely read**, per this project's own standing rule (§ the guard-must-be-activated warning in
+AGENTS.md): in a disposable detached worktree at `f7e0419` (never the shared checkout), hand-edited
+`levelAssertedWithNoBody`'s baseline upward (158 → 196, an artificial stale-high value), confirmed the SLACK
+line appeared naming the exact key and the exact gap (38), confirmed `data:validate` still exited 0. Then ran
+the control: restored the baseline to synced, confirmed NO slack line appeared for that key. Repeated both
+halves for a `restaurants*`-family key to confirm the grouping header selects correctly. Without the control
+half, a detector that prints unconditionally would look identical to one that actually discriminates —
+exactly the caution logged in AGENTS.md's own §30g-adjacent guard-activation rule.
+
+Same root shape as §30d-g (an instrument reports a clean state while the thing it's supposed to guard is
+degraded) — the sixth instance, and the first where the guard existing at all, correctly, was not the same
+question as the guard reporting what it knows on every run rather than only the run something changed.
+
 ---
 
 ## Superseded numbers — do not requote

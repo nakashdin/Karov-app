@@ -817,6 +817,7 @@ const RATCHET_CORRECTION_PREDICATES = {
 
 const regressions = [];
 const improvements = [];
+const slack = [];
 const correctedRatchetKeys = new Set(); // keys --update is allowed to raise, this run only
 
 if (baseline && hard.length === 0) {
@@ -858,6 +859,21 @@ if (baseline && hard.length === 0) {
       }
     } else if (now < was) {
       improvements.push({ family, text: `${key}: ${was} → ${now} (−${was - now})` });
+      // A count that FALLS never fails the build — only a rise does — so a
+      // stale-high baseline is invisible by construction: the improvement
+      // that creates the slack is the same event that would otherwise
+      // surface it. Reported on EVERY run the gap persists, not just the
+      // run where it first appeared, and unconditionally (not folded into
+      // `improvements`, which reads as routine good news and stops being
+      // noticed) — found live, 2026-08-27: commit 880e48d moved
+      // foodWithoutKashrut 20 → 18 without updating the baseline, and the
+      // stale ceiling sat undetected through two more commits (2 records
+      // of undetected slack — two new zero-evidence food records could
+      // have been added in that window and data:validate would have
+      // stayed green). Information only: never gates the build, never a
+      // ratchet in the other direction (no HARD failure, no exit(1) — see
+      // the `slack.length` check below, which prints and continues).
+      slack.push({ family, key, gap: was - now, now, was });
     }
   }
   // The dataset is additive-only by project rule: it must never shrink.
@@ -921,6 +937,21 @@ if (improvements.length) {
     (t) => console.log('   ' + t),
   );
   console.log('\n   run `node scripts/validate-data.mjs --update` to lock these in.');
+}
+
+// Unconditional, informational, never gates the build — deliberately not
+// framed as an "improvement" (that framing is exactly why a stale ceiling
+// goes unnoticed). Reported every run the gap exists, not only the run
+// where it first appeared, so it cannot be seen once and then forgotten.
+if (slack.length) {
+  printGrouped(
+    slack.map((s) => ({ family: s.family, text: `SLACK: ${s.key} ceiling is ${s.gap} above reality (${s.now} actual / ${s.was} baseline)` })),
+    '\nℹ baseline slack — dataset the app serves (places.osm.json):',
+    '\nℹ baseline slack — restaurants.osm.json (no src/ reader — see docs/KASHRUT_FACTS.md §32):',
+    (h) => console.log(h),
+    (t) => console.log('   ' + t),
+  );
+  console.log('\n   run `node scripts/validate-data.mjs --update` to close this gap.');
 }
 
 if (hard.length) {
