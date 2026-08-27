@@ -53,6 +53,35 @@ jobs:
       - run: npm ci
 
       - name: Publish preview
+        id: publish
         uses: expo/expo-github-action/preview@v8
         with:
           command: eas update --branch pr-${{ github.event.pull_request.number }} --auto
+
+      # TEMPORARY DIAGNOSTIC, ADDED 2026-08-27, TO BE REMOVED once the real
+      # cause of "Could not create a new EAS Update" is found and fixed.
+      #
+      # expo/expo-github-action/preview@v8 wraps `eas update` via
+      # @actions/exec's getExecOutput and only surfaces a generic
+      # "Could not create a new EAS Update" as a check-run annotation —
+      # the real eas-cli stderr (attached as `error.cause` in the action's
+      # own source, src/eas.ts's createUpdate()) is never turned into an
+      # annotation, only into the raw job log, which this session and the
+      # Reviewer's both hit a confirmed, repeated 403 ("Must have admin
+      # rights to Repository") trying to read directly. Re-running the
+      # exact same command here, un-wrapped, turns that stderr into a
+      # public ::error:: annotation instead — the same technique already
+      # proven today for scripts/shared/run-script-tests.mjs.
+      - name: Diagnose EAS Update failure (temporary)
+        if: failure() && steps.publish.outcome == 'failure'
+        run: |
+          set +e
+          OUTPUT=$(eas update --branch "pr-${{ github.event.pull_request.number }}" --auto --non-interactive 2>&1)
+          STATUS=$?
+          echo "$OUTPUT"
+          if [ $STATUS -ne 0 ]; then
+            ESCAPED=$(printf '%s' "$OUTPUT" | sed -e 's/%/%25/g' -e ':a;N;$!ba;s/\n/%0A/g' -e 's/\r/%0D/g')
+            echo "::error title=Real eas-cli stderr::${ESCAPED}"
+          fi
+        env:
+          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
