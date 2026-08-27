@@ -1,4 +1,5 @@
 import type { Place } from '../types';
+import { localDateISO } from './date';
 
 /**
  * Runtime certificate state for a place's kashrut certification.
@@ -32,12 +33,23 @@ const hasKashrutInfo = (place: CertifiablePlace): boolean =>
  * into the build at build time. A missing `certificateValidUntil` is never
  * treated as expired: it means Karov doesn't have the certificate for that
  * branch, not that a certificate lapsed.
+ *
+ * Uses `localDateISO()`, never `new Date().toISOString().slice(0, 10)`
+ * (UTC) — found live, 2026-08-27, as the SAME bug already fixed twice in
+ * scripts/ write paths, this time in already-live display/filter code.
+ * Israel is UTC+3: on the night 152 certificates all expire simultaneously
+ * (2026-09-11 → 09-12), the UTC form would make this function report
+ * 'valid' for all 152 during the ~2-3 hours after Israeli local midnight
+ * when they have, in fact, already lapsed — the app asserting a
+ * certificate is current at the exact hour it stops being true, across
+ * every one of them at once. This is the highest-stakes claim this app
+ * makes about a place; do not revert this to `toISOString()`.
  */
 export function getCertificateState(place: CertifiablePlace): CertificateState {
   if (!place.certificateValidUntil) {
     return hasKashrutInfo(place) ? 'unknown' : 'none';
   }
-  const todayISO = new Date().toISOString().slice(0, 10);
+  const todayISO = localDateISO();
   return place.certificateValidUntil < todayISO ? 'expired' : 'valid';
 }
 

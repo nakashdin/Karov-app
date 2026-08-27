@@ -3,32 +3,45 @@
  * `certifierId` is an INERT field. It attests that a `certifiedBy` string
  * resolved against the registry's alias table, not that a body actually
  * certified anything, and must never be treated as a higher-quality signal
- * than plain `certifiedBy` text. Built before the 910-population write
- * populates the field broadly — a ruling is not a mechanism.
+ * than plain `certifiedBy` text.
  *
- * RESPECIFIED (Reviewer finding on the original guard, 2026-08-27): the
- * first draft of this guard only covered `certifierId` itself and only
- * scanned `src/`. The Reviewer found the write was ALSO about to set
- * `kosherAuthorityGroup` alongside `certifierId` — a field with two live
- * consumers (`PlaceCard.tsx`'s badge colour, `filterPlaces.ts`'s kashrut
- * filter) that the original guard never touched, because it only asked
- * "does this branch on certifierId," not "does this branch on anything
- * this write makes distinguishable." Measured before the fix: 461 records
- * would have changed kosherAuthorityGroup, 212 would have gained a premium
- * badge, 192 would have newly appeared under the "בד״ץ" filter — the
- * owner's inert-field ruling would have been satisfied in letter (no
- * branch on `certifierId`) and violated in effect (the write still made
- * records visibly, functionally distinguishable) by the same commit. The
- * invariant is about what a write makes distinguishable, not which field
- * name appears in a branch condition — so this guard is scoped to the SET
- * of fields the current write touches, stated explicitly below, not to
- * `certifierId` alone.
+ * STATUS (2026-08-27): the 910-population write this guard was originally
+ * built ahead of is CANCELLED. Once `kosherAuthorityGroup` was excluded
+ * from that write, it became harmless — and therefore pointless: it would
+ * have persisted the output of a pure function of a field already stored
+ * (`certifiedBy`), then this very guard would have permanently forbidden
+ * using it. The Architect and the owner agreed the write itself dies; this
+ * guard does NOT. The ruling ("certifierId is inert") is a statement about
+ * the FIELD, not about the cancelled write — `certifierId` exists in the
+ * type system and in the registry today regardless of whether any current
+ * write populates it broadly, and nothing prevents a future one. The rule
+ * outlives the write. This file stays, at zero ongoing cost, as the
+ * mechanism for a ruling that is still in force — read WRITE_FIELDS below
+ * as "the fields this rule currently applies to," not as a description of
+ * an operation in flight.
  *
- * The 910-population write (Item 4 Unit 3, revised) sets `certifierId`
- * ONLY — `kosherAuthorityGroup` is explicitly NOT written by this stage
- * (owner ruling). WRITE_FIELDS below reflects that. If a future stage
- * starts writing kosherAuthorityGroup (or any other field) as part of
- * resolving certifierId, WRITE_FIELDS must grow with it, or this guard
+ * RESPECIFIED (Reviewer finding on the original guard, while the write was
+ * still planned, 2026-08-27): the first draft of this guard only covered
+ * `certifierId` itself and only scanned `src/`. The Reviewer found the
+ * (then-planned) write was ALSO about to set `kosherAuthorityGroup`
+ * alongside `certifierId` — a field with two live consumers
+ * (`PlaceCard.tsx`'s badge colour, `filterPlaces.ts`'s kashrut filter) that
+ * the original guard never touched, because it only asked "does this
+ * branch on certifierId," not "does this branch on anything this write
+ * makes distinguishable." Measured before the fix: 461 records would have
+ * changed kosherAuthorityGroup, 212 would have gained a premium badge, 192
+ * would have newly appeared under the "בד״ץ" filter — the owner's
+ * inert-field ruling would have been satisfied in letter (no branch on
+ * `certifierId`) and violated in effect (the write still made records
+ * visibly, functionally distinguishable) by the same commit. The invariant
+ * is about what a write makes distinguishable, not which field name
+ * appears in a branch condition — so this guard is scoped to the SET of
+ * fields WRITE_FIELDS names, not to `certifierId` alone.
+ *
+ * WRITE_FIELDS currently holds `certifierId` ONLY — `kosherAuthorityGroup`
+ * was explicitly ruled out for the (now-cancelled) write. If a future
+ * write ever populates `certifierId` again and touches any other field as
+ * part of that operation, WRITE_FIELDS must grow with it, or this guard
  * stops covering what it claims to.
  *
  * Scoped beyond src/ deliberately — the Reviewer's point was that

@@ -2581,3 +2581,49 @@ measured an hour ago is not a discovery; it is a signal that the instrument move
 
 Related: §17c (a probe whose pass and fail cases agree has stopped discriminating) is the general detector;
 this is the specific shape it takes when the fixture includes a git ref.
+
+## 36. `stripComments` has no concept of a regex literal — a character class containing both quote marks
+corrupts its own state machine
+
+Found live, 2026-08-27, building `scripts/shared/lastverifiedat-literal-guard.mjs` (the guard for the
+`lastVerifiedAt` hardcoded-literal defect, itself found the same day). That guard reuses `stripComments`
+(`scripts/shared/level-assertion-guard.mjs`) rather than reimplementing comment-awareness — a deliberate
+choice, since that function's own header already documents two prior, carefully-fixed bugs from earlier
+comment-stripping attempts (§22/§23-adjacent history). Running the new guard against **its own source file**
+produced a false positive: a doc comment describing the guard's design (mentioning the identifier `VERIFIED`
+as prose) survived into the "stripped" output and was read as live code referencing an undeclared constant.
+
+**Root cause, isolated by minimal reproduction, not assumed:**
+
+```js
+const test = "const X = /(['\"])/g;\n\n/**\n * comment mentioning VERIFIED here\n */\nconst Y = 1;";
+stripComments(test); // returns the input UNCHANGED — the /** */ block is never recognized as a comment
+```
+
+`stripComments`'s state machine has three states — `code`, `string`, `comment` — and treats `"`, `'`, and
+`` ` `` as string delimiters whenever it is in `code` state and encounters one. It has **no fourth state for
+"inside a regex literal."** The guard's own `LITERAL_DATE_RE` constant is declared as
+`/\blastVerifiedAt\s*[:=]\s*(['"])(\d{4}-\d{2}-\d{2})\1/g` — a regex literal whose own body contains a
+character class with BOTH quote characters, `(['"])`. Scanning that line in `code` state: the scanner sees
+the first `/` (correctly not a comment opener, since the next char isn't `/` or `*`), continues character by
+character, hits `'` — and treats it as a STRING delimiter, entering `string` state. It stays in `string`
+state searching for a matching `'`, but the very next character is `"`, which does not close it. The scanner
+remains in `string` state, silently consuming everything after — including the next real `/**` block comment,
+which is never recognized as a comment opener because the state machine believes it is still inside an
+unterminated string.
+
+**No other file in this repo currently contains a regex literal shaped this way**, which is why this had never
+manifested against `level-assertion-guard.mjs`'s own real-file scans before — `KOSHER_TYPE_RE`,
+`KOSHER_LEVEL_RE`, `CERTIFIED_BY_RE`, and `CLAIMED_LEVEL_MIGRATION_RE` (that file's own regex constants) do
+not contain a quoted character class shaped this way. This is a **latent** bug, not (yet) a live false
+negative — but it means any future regex literal added to a file `stripComments` scans, if shaped like this
+one, will silently corrupt comment detection for the rest of that file.
+
+**Not fixed here — worked around narrowly instead.** `lastverifiedat-literal-guard.mjs` excludes its own file
+from its own scan (documented in that file's header, with the reproduction) — a guard that does not itself
+assign `lastVerifiedAt` anywhere as real code was never a legitimate target of its own check, so the exclusion
+is not silencing a real finding. `stripComments` itself is untouched: the only consumer of it today is
+`level-assertion-guard.mjs`, and none of that file's own regex constants trigger the bug, so nothing is
+currently broken by it in production. Logged here as a known, real, unfixed defect in shared infrastructure —
+the next person who adds a regex literal to anything `stripComments` scans, especially one containing a
+quoted character class, should know this before trusting the scan's output on that file.

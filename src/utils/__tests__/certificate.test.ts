@@ -44,3 +44,33 @@ describe('isCertificateExpired', () => {
     expect(isCertificateExpired({ certificateValidUntil: '2026-08-25' })).toBe(false);
   });
 });
+
+describe('the UTC/local timezone boundary (2026-08-27 finding)', () => {
+  // getCertificateState previously used new Date().toISOString().slice(0,10)
+  // (UTC) instead of localDateISO() (local). The bug only shows up for an
+  // instant that falls on DIFFERENT calendar days in UTC vs. Israel's local
+  // time (UTC+3) — the beforeEach above (UTC noon) never touches that
+  // window, so it could not have caught this. This block deliberately picks
+  // an instant inside that window: 2026-09-11T23:00:00Z is 2026-09-12
+  // 02:00 local — September 11 in UTC, September 12 in local time. A
+  // record whose certificate expires 2026-09-11 has ALREADY lapsed by local
+  // clock at this instant; the buggy UTC form would still call it 'valid'.
+  it('reports a cert expiring "today" (2026-09-11) as EXPIRED once local time has already rolled to 2026-09-12, even though UTC has not', () => {
+    jest.useFakeTimers().setSystemTime(new Date(Date.UTC(2026, 8, 11, 23, 0, 0)));
+    try {
+      expect(getCertificateState({ certificateValidUntil: '2026-09-11' })).toBe('expired');
+      expect(isCertificateExpired({ certificateValidUntil: '2026-09-11' })).toBe(true);
+    } finally {
+      jest.useRealTimers();
+    }
+  });
+
+  it('still reports the same cert as VALID for an instant safely inside 2026-09-11 local time (the day it actually expires)', () => {
+    jest.useFakeTimers().setSystemTime(new Date(Date.UTC(2026, 8, 11, 6, 0, 0))); // 2026-09-11T09:00 local
+    try {
+      expect(getCertificateState({ certificateValidUntil: '2026-09-11' })).toBe('valid');
+    } finally {
+      jest.useRealTimers();
+    }
+  });
+});

@@ -1,11 +1,21 @@
 // Standalone test (not jest). Run: node scripts/shared/__tests__/lastverifiedat-literal-guard.test.mjs
 //
 // This guard scans REAL repo files, not injectable fixtures — same shape as
-// level-assertion-guard.test.mjs. Assertions are pinned to specific known-
-// positive/known-negative files, not to a total count: the total will
-// shrink as scripts get remediated, and a test asserting an exact total
-// would go stale on every fix rather than staying a stable proof of the
-// predicate itself.
+// level-assertion-guard.test.mjs. Two DIFFERENT mechanisms, not one, and
+// they prove different things (Reviewer question, 2026-08-27 — see the
+// RATCHET test below for the full answer):
+//   - Known-positive/known-negative tests, pinned to specific named files,
+//     prove the PREDICATE is correct (it finds real violations, it does not
+//     flag already-fixed files). These say nothing about the TOTAL.
+//   - The RATCHET test bounds the TOTAL count and can only be lowered, never
+//     raised — this is what actually stops a brand-new, unlisted violation
+//     from slipping in silently. There is NO exclusion list of the 55
+//     already-shipped-and-not-yet-fixed files anywhere in this guard or its
+//     module — they are scanned, they DO appear in violations, and the
+//     ratchet ceiling already accounts for them. Confirmed empirically
+//     before writing this comment: violations.length is 187 right now, with
+//     this test suite green — the guard passes WHILE the 55 old files still
+//     show up, not because they're hidden.
 import assert from 'node:assert/strict';
 import { findLastVerifiedAtLiteralViolations, analyzeSourceForLiteralLastVerifiedAt } from '../lastverifiedat-literal-guard.mjs';
 
@@ -91,6 +101,27 @@ test('scripts/shared/lastverifiedat-literal-guard.mjs does not flag itself', () 
 // as files get remediated) keeps this test meaningful without going stale.
 test('sanity: at least one violation found in the real repo — a scan returning zero here would be indistinguishable from a broken scan', () => {
   assert.ok(violations.length > 0, 'expected at least one real violation; if this is genuinely zero, verify manually before trusting it');
+});
+
+// ── RATCHET, not a frozen exclusion list — this is the actual mechanism
+// that stops a 57th violation from slipping in silently. The known-
+// positive/known-negative tests above prove the PREDICATE works; neither
+// one bounds the TOTAL. Without this, a brand-new hardcoded literal in a
+// file not already named above would raise violations.length from 187 to
+// 188 and every test above would still pass — the exact gap the Reviewer
+// asked about directly. This ceiling can only be LOWERED (as files get
+// fixed, per Task B's own explicit choice not to rewrite the 55 shipped
+// ones in this same commit) and must never be raised to accommodate a new
+// violation — raising it is the tell that someone is silencing this guard
+// instead of fixing the code, exactly the failure mode AGENTS.md names.
+const KNOWN_VIOLATION_CEILING = 187;
+test(`RATCHET: total violation count must not exceed ${KNOWN_VIOLATION_CEILING} (currently known-shipped-and-not-yet-fixed sites) — a HIGHER count means a NEW hardcoded literal was introduced somewhere`, () => {
+  assert.ok(
+    violations.length <= KNOWN_VIOLATION_CEILING,
+    `violations.length is ${violations.length}, exceeding the ceiling of ${KNOWN_VIOLATION_CEILING} — ` +
+      'a new hardcoded lastVerifiedAt literal was introduced. Fix it; do not raise this ceiling to make the count fit. ' +
+      `Extra violations: ${JSON.stringify(violations.slice(KNOWN_VIOLATION_CEILING))}`,
+  );
 });
 
 // ── Pure-function tests against synthetic source, proving the two detection

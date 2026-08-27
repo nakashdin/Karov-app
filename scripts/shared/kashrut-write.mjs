@@ -132,12 +132,30 @@ function loadAliasMap() {
  * use, which is why every caller in this codebase that stamps
  * `lastVerifiedAt` routes through this function instead of calling it
  * directly.
+ *
+ * CANONICAL IMPLEMENTATION LIVES IN src/utils/date.ts, not here — this is
+ * a deliberate MIRROR, not a second independent implementation. `scripts/`
+ * cannot import `src/` reliably: this repo's own CI pins Node 22
+ * (unpinned patch, ci.yml NODE_VERSION), and TypeScript-file stripping by
+ * plain `node` was not dependably available across the 22.x line — tested
+ * live, 2026-08-27: `node -e "import('./src/utils/date.ts')"` succeeds on
+ * this machine's Node 24 but is not something to bet CI's entire verify
+ * pipeline on. The two copies are kept identical by a test
+ * (scripts/shared/__tests__/local-date-iso-mirror.test.mjs) that reads both
+ * files' source text and asserts the function bodies match byte-for-byte —
+ * if this function ever changes without the other, that test fails by
+ * name, closing the "two copies is how they diverge" risk without an
+ * unreliable cross-directory import.
+ *
+ * `when` is injectable (see src/utils/date.ts's header for the full
+ * reasoning) so this can be pinned against a known UTC instant near local
+ * midnight, not only tested "because the machine happens to be run at a
+ * moment where UTC and local agree."
  */
-export function localDateISO() {
-  const d = new Date();
-  const y = d.getFullYear();
-  const m = String(d.getMonth() + 1).padStart(2, '0');
-  const day = String(d.getDate()).padStart(2, '0');
+export function localDateISO(when = new Date()) {
+  const y = when.getFullYear();
+  const m = String(when.getMonth() + 1).padStart(2, '0');
+  const day = String(when.getDate()).padStart(2, '0');
   return `${y}-${m}-${day}`;
 }
 
