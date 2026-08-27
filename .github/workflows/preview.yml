@@ -38,13 +38,19 @@ jobs:
       contents: read
       pull-requests: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version: '22'
           cache: npm
 
+      # Both expo/expo-github-action uses below (this one and
+      # /preview@v8 further down) are knowingly still on v8 (node20) — no
+      # node24 major exists for this action as of this bump (2026-08-27).
+      # Retire once one ships, or sooner if GitHub stops force-running
+      # node20 actions on node24 (it does so today; that is transition
+      # behavior, not a guarantee).
       - uses: expo/expo-github-action@v8
         with:
           eas-version: latest

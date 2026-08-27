@@ -54,15 +54,22 @@ jobs:
     if: needs.check.outputs.configured == 'true'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           persist-credentials: false
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version: '22'
           cache: npm
 
+      # Knowingly still on v8 (node20) — no node24 major exists for this
+      # action as of this bump (2026-08-27). See ci.yml's Node migration
+      # for the checkout/setup-node/upload-artifact bumps; this one is a
+      # separate, accepted gap. Retire once expo/expo-github-action ships a
+      # node24 major, or sooner if GitHub stops force-running node20
+      # actions on node24 (it does so today; that is transition behavior,
+      # not a guarantee).
       - uses: expo/expo-github-action@v8
         with:
           eas-version: latest
